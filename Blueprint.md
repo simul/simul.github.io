@@ -1,6 +1,6 @@
 ---
 title: Blueprint
-layout: post
+layout: home
 ---
 
 trueSKY Lighting

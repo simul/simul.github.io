@@ -1,6 +1,6 @@
 ---
 title: Clouds
-layout: post
+layout: home
 ---
 
 Cloud Layers and Cloud Keyframes
