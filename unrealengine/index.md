@@ -1,6 +1,6 @@
 ---
 title: Home
-layout: home
+layout: unreal
 ---
 How to build it
 ---
