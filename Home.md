@@ -1,3 +1,7 @@
+---
+title: Home
+layout: post
+---
 How to build it
 ---
 * Register your username at [https://simul.co/register](https://simul.co/register)

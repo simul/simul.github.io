@@ -1,3 +1,8 @@
+---
+title: Sky
+layout: post
+---
+
 Editing the sky in the Sequencer
 -------------------------
 

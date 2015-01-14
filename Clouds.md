@@ -1,3 +1,8 @@
+---
+title: Clouds
+layout: post
+---
+
 Cloud Layers and Cloud Keyframes
 ========
 

@@ -1,3 +1,8 @@
+---
+title: Blueprint
+layout: post
+---
+
 trueSKY Lighting
 --------------
 Place a reference to the trueSKY actor, and the directional light, on the master Level Blueprint. Connect the Get Sun Rotation output from trueSKY to the Directional Light's Rotator input; and connect the Sun Colour ouput from trueSKY to the SetLightColor input of the light.
