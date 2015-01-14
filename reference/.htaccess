@@ -1,2 +1,0 @@
-RewriteEngine On
-RedirectMatch ^/reference/ http://simul.co/wp-content/uploads/documentation/html/
