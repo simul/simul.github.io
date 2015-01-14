@@ -5,9 +5,19 @@ layout: home
 
 trueSKY Lighting
 --------------
-Place a reference to the trueSKY actor, and the directional light, on the master Level Blueprint. Connect the Get Sun Rotation output from trueSKY to the Directional Light's Rotator input; and connect the Sun Colour ouput from trueSKY to the SetLightColor input of the light.
 
-<a href="SetLightColourDirection.png"><img src="https://simul.co/wp-content/uploads/documentation/html/SetLightColourDirection.png" alt="Blueprint"/></a>
+The simplest way to drive Unreal Engine lighting from trueSKY is to use the trueSKY macros - [UE4]/Engine/Plugins/TrueSkyPlugin/Blueprint/trueSkyMacros.uasset. Copy this file into your project's assets directory to make the macros available.
+
+To set the direction and colour of a Directional Light, find the trueSKYLightColourAndRotation macro, and connect references for the trueSkySequenceActor and the DirectionalLight to the inputs. Make sure that the "Exec" input is hit once per frame by an event tick. 
+
+<img src="images/MacroLightColourRotation.png" alt="Blueprint"/>
+
+Alternatively, use the GetSunRotation and Get Sun Colour functions directly. Place a reference to the trueSKY actor, and the directional light, on the master Level Blueprint. Connect the Get Sun Rotation output from trueSKY to the Directional Light's Rotator input; and connect the Sun Colour output from trueSKY to the SetLightColor input of the light.
+
+<img src="https://simul.co/wp-content/uploads/documentation/html/SetLightColourDirection.png" alt="Blueprint"/>
+
+Time of Day
+------------
 
 To change the time of day, use the SetTime function of the trueSKY sequence actor (time is in days, from midnight on the first day (0.0):
 
