@@ -1,6 +1,6 @@
 ---
 title: Clouds
-layout: home
+layout: unity
 ---
 
 trueSKY alpha for Unity
