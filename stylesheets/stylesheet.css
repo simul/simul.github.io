@@ -62,9 +62,12 @@ a {
 a:hover {
   color: #c5000c;
 }
+#header-social
+{
+background-color: #0037e2;
+}
 
 header {
-background: #003e72;
   padding-top: 35px;
   padding-bottom: 25px;
 }
