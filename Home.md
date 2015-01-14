@@ -1,6 +1,6 @@
 ---
 title: Home
-layout: default
+layout: home
 ---
 How to build it
 ---
