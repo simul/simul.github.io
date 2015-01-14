@@ -1,6 +1,6 @@
 ---
 title: Sky
-layout: post
+layout: home
 ---
 
 Editing the sky in the Sequencer
