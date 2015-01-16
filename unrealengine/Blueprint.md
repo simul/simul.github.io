@@ -14,7 +14,7 @@ To set the direction and colour of a Directional Light, find the trueSKYLightCol
 
 Alternatively, use the GetSunRotation and Get Sun Colour functions directly. Place a reference to the trueSKY actor, and the directional light, on the master Level Blueprint. Connect the Get Sun Rotation output from trueSKY to the Directional Light's Rotator input; and connect the Sun Colour output from trueSKY to the SetLightColor input of the light.
 
-<img src="https://simul.co/wp-content/uploads/documentation/html/SetLightColourDirection.png" alt="Blueprint"/>
+<img src="http://docs.simul.co/unrealengine/images/SetLightColourDirection.png" alt="Blueprint"/>
 
 Time of Day
 ------------
