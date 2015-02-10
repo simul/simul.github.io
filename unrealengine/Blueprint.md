@@ -21,7 +21,7 @@ Time of Day
 
 To change the time of day, use the SetTime function of the trueSKY sequence actor (time is in days, from midnight on the first day (0.0):
 
-<a href="SetTime.png"><img src="https://simul.co/wp-content/uploads/documentation/html/SetTime.png" alt="Blueprint" /></a>
+<a href="SetTime.png"><img src="https://docs.simul.co/unrealengine/images/SetTime.png" alt="Blueprint" /></a>
 
 
 Setting keyframe properties from Blueprint
