@@ -35,8 +35,11 @@ To test if there is cloud between two points, use CloudLineTest:
 
 Lighting
 --------
-Point lights can be used to illuminate the clouds.
+Point lights can be used to illuminate the clouds. Because of the relative scale of clouds to the UE scene, the intensity of the light must be very large in order to have a visible effect.
+
 <a href="SetPointLight.png"><img src="http://docs.simul.co/unrealengine/images/SetPointLight.png" alt="Blueprint" /></a>
+
+If you do not have a PointLight actor, you can use SetPointLightSource to apply individually the position, colour and intensity of a light to the clouds.
 
 Setting keyframe properties from Blueprint
 --------------------------------------------------------------------------------------------------
