@@ -23,6 +23,16 @@ To change the time of day, use the SetTime function of the trueSKY sequence acto
 
 <a href="SetTime.png"><img src="http://docs.simul.co/unrealengine/images/SetTime.png" alt="Blueprint" /></a>
 
+Queries
+-------
+To test the cloud properties at a specified point, use the function CloudPointTest.
+
+<a href="CloudPointTest.png"><img src="http://docs.simul.co/unrealengine/images/CloudPointTest.png" alt="Blueprint" /></a>
+
+To test if there is cloud between two points, use CloudLineTest:
+
+<a href="CloudLineTest.png"><img src="http://docs.simul.co/unrealengine/images/CloudLineTest.png" alt="Blueprint" /></a>
+
 
 Setting keyframe properties from Blueprint
 --------------------------------------------------------------------------------------------------
