@@ -61,4 +61,4 @@ This actor provides a reference to a sequence asset which is rendered. Choose th
 * A TrueSkySequenceActor can be added to the level only through "Window->Add Sequence to Scene" menu command. This prevents more than one such actor being present on the level.
 
 			
-Next: <a href="/unrealengine/blueprint">Blueprint</a>
+Next: <a href="/unrealengine/Blueprint">Blueprint</a>
