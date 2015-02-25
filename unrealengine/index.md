@@ -34,6 +34,7 @@ How to run it
   <a href="http://docs.simul.co/unrealengine/images/EnableTrueSKY.png"><img src="http://docs.simul.co/unrealengine/images/EnableTrueSKY.png" /></a>
 
 Restart the editor! The plugin adds the "TrueSky" section into the "Window" menu.
+
 * Press "Window->Add Sequence to Scene" -- this adds a TrueSkySequenceActor to the current level.
 
  <a href="http://simul.co/wp-content/uploads/2014/07/UE4_AddSequence.png"><img src="http://simul.co/wp-content/uploads/2014/07/UE4_AddSequence-81x300.png"/></a> 
