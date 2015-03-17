@@ -63,5 +63,18 @@ This actor provides a reference to a sequence asset which is rendered. Choose th
 
 * A TrueSkySequenceActor can be added to the level only through "Window->Add Sequence to Scene" menu command. This prevents more than one such actor being present on the level.
 
-			
+Modified Files in the Unreal Engine
+===================================
+
+	Engine\Source\Runtime\Renderer\Private\DeferredShadingRenderer.cpp
+	Engine\Source\Runtime\Renderer\Public\RendererInterface.h
+	Engine\Source\Runtime\Renderer\Private\RendererPrivate.h
+	Engine\Source\Runtime\Renderer\Private\SceneRendering.cpp
+
+	Engine\Source\Runtime\XboxOne\XboxOneD3D11RHI\Private\D3D11Device.cpp
+
+	Engine\Source\Programs\AutomationTool\PS4\PS4Platform.Automation.cs
+	Engine\Source\Programs\AutomationTool\Win\WinPlatform.Automation.cs
+	Engine\Source\Programs\AutomationTool\XboxOne\XboxOnePlatform.Automation.cs
+
 Next: <a href="/unrealengine/Blueprint">Blueprint</a>
