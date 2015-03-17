@@ -16,6 +16,7 @@ To activating trueSKY alpha, got to the GameObject menu, and select "*initialize
 * A Sequence asset containing sky and cloud data.
 * A trueSKY object in the scene.
 * A TrueSkyCamera component for the main camera.
+* A TransparencyCamera component for the main camera.
 * A SimulSun component for the Directional Light in the scene.
 
 If there is no Directional Light, one will be created.
@@ -23,6 +24,15 @@ If there is no Directional Light, one will be created.
 After initialization, select your main Camera, and find the TrueSkyCamera component. This component has a checkbox for "Flipped View". If you are using Forward rendering (under "Rendering Path" in the Camera component), and have extra post-processing components attached and enabled, you may need to set the "Flipped View" box. This is because Unity reverses the y-component of its framebuffers when performing post-processing.
 
 trueSKY performs best with a near clipping plane around 1m, and a far plane between 100,000 and 500,000 metres. This is because the appearance of the atmospheric effects is dependent on the numerical precision of the depth buffer.
+
+The Transparency Camera
+-----------------------
+trueSKY rendering with **TrueSkyCamera** is performed using the Unity plugin event command **GL.IssuePluginEvent**. This causes a callout to the trueSKY environment renderer after the camera has completed all its rendering, including transparencies. There is no system in Unity currently to insert rendering in between solid and transparent rendering.
+This means that Unity will render transparent objects before the trueSKY call, then trueSKY will overwrite those objects as it has no depth information for them.
+
+As a workaround, there is the **TransparencyCamera** component which we add to the main camera. This renders transparent objects (i.e. objects with the transparentFX tag) to a texture, which is then composited over the final image.
+
+To take advantage of this, you must ensure that 
 
 The trueSKY object
 ---------------
@@ -59,13 +69,7 @@ Script control of the sky is via the trueSKY object. While the Sequence asset re
 
 To obtain a reference to the trueSKY object in the scene (there should only be one):
 
-		simul.trueSKY trueSky=null;
-		UnityEngine.Object[] trueSkies;
-		trueSkies=FindObjectsOfType(typeof(trueSKY));
-		foreach(UnityEngine.Object t in trueSkies)
-		{
-			trueSky=(trueSKY)t;
-		}
+		simul.trueSKY trueSky=simul.trueSKY.GetTrueSky();
 
 This is something you can do on initialization.
 
@@ -75,7 +79,7 @@ This is something you can do on initialization.
 
 **int GetNumCloud2DKeyframes()**: Returns the number of 2D cloud keyframes.
 
-We use uint's as unique identifiers (uid's) to represent keyframes. Note: these are unique and persistent for the session, but not across saves or restarts, so don't store these uid's.
+We use uint's as unique identifiers (uid's) to represent keyframes. Note: these are unique and persistent for the session, but not across saves or restarts, so don't store these.
 		
 **uint GetSkyKeyframeByIndex(int index)**: Get a uid for the specified sky keyframe, between zero and (1-GetNumSkyKeyframes()).
 
