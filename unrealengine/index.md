@@ -2,31 +2,35 @@
 title: Home
 layout: unreal
 ---
-How to build it
+Getting started
 ---
 * Register your username at [https://simul.co/register](https://simul.co/register)
-* Enter your GitHub username at [https://simul.co/wp-admin/profile.php](http://simul.co/wp-admin/profile.php)
-* Get the trueSKY UE4 fork from [GitHub](https://github.com/simul/UnrealEngine).
-If you are using a different UE4 codebase, pull changes from the Simul fork, and diff.
+* You'll find your licence at [simul.co/account](https://simul.co/account).
+* After evaluating, to get a full licence head to [simul.co/truesky-ue4](https://simul.co/truesky-ue4).
 
-* Run Setup.bat and GenerateProjectFiles.bat from UE4. This will generate projects and the solution file (UE4.sln)
+How to build it
+---
+* Enter your GitHub username at [https://simul.co/wp-admin/profile.php](http://simul.co/wp-admin/profile.php). This needs to be the same username connected to your Unreal Engine account at [www.unrealengine.com/settings](https://www.unrealengine.com/settings)
+* Get the trueSKY UE4 fork from [GitHub](https://github.com/simul/UnrealEngine).
+If you are using a different UE4 codebase, pull changes from the Simul fork, and merge.
+
+* As described in the UE4 readme (in the root UnrealEngine directory), Run Setup.bat and GenerateProjectFiles.bat from UE4. This will generate projects and the solution file (UE4.sln)
 
 * Use UE4.sln (UE4.vcxproj).
+The UE4 project contains the "TrueSkyPlugin" folder in Engine/UE4/Plugins.The plugin is in the “[UE4]\Engine\Plugins\TrueSkyPlugin” directory in your UE4 installation.
+The trueSKY binaries are in “[UE4]\Engine\Binaries\ThirdParty\Simul”. 
+There are two trueSKY modules in the UE4 project – TrueSkyPlugin, and TrueSkyEditorPlugin.
 
-* UE4 project contains the "TrueSkyPlugin" folder in Engine/UE4/Plugins.
 
-* There is also a folder of trueSKY binaries in Engine/Binary/ThirdParty/Simul
+* Build the UE4 project in the "Development Editor" configuration.
 
-* Build the UE4 project.
-
-TrueSkyPlugin loads "TrueSkyUI_MD.dll" and "UE4PluginRenderInterface_MT.dll" from [UE4]\Engine\Plugins\TrueSkyPlugin\Binaries\Win64
-
-TrueSkyUI_MD.dll further loads the Qt libraries. For that, the PATH environment-variable is extended temporarily by the plugin to include "Engine/Binary/ThirdParty/Simul/Win64"
 
 
 How to run it
 ---
 * Run UE4, either standalone or with the debugger.
+The TrueSkyPlugin loads "TrueSkyUI_MD.dll" and "UE4PluginRenderInterface_MT.dll" from [UE4]\Engine\Plugins\TrueSkyPlugin\Binaries\Win64.
+TrueSkyUI_MD.dll further loads the Qt libraries. For that, the PATH environment-variable is extended temporarily by the plugin to include "Engine/Binary/ThirdParty/Simul/Win64"
 * When the UE4 editor is running, go to Windows->Plugin and type "trueSKY" into the search box to find the plugin, and check its "enabled" box, to enable the TrueSky plugin.
 
   <a href="http://simul.co/wp-content/uploads/2014/07/UE4_ShowPlugins.png"><img src="http://simul.co/wp-content/uploads/2014/07/UE4_ShowPlugins-96x300.png" /></a>
@@ -52,6 +56,8 @@ This actor provides a reference to a sequence asset which is rendered. Choose th
 * To edit the TrueSkySequence asset just double-click on it:
 
 <a class=" id=" title="" href="http://simul.co/wp-content/uploads/2014/07/Editor.png"><img src="http://simul.co/wp-content/uploads/2014/07/Editor-150x150.png" /></a>
+
+* Enter your licence key in the Sequencer Window. This enables the window's editing functions.
 
 * You can see changes to the properties (e.g. "preview") only if the edited asset is also assigned to the level's TrueSkySequenceActor! The trueSky plugin renderer uses only the asset which is referenced from that actor. If you are editing some other asset (which is not assigned to the TrueSky actor of the current level) then you won't see any visualization of it.
 
