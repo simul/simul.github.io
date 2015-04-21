@@ -54,7 +54,9 @@ This is your connection to trueSKY within a scene. Its controls are:
 
 **Diagnostics**: A set of overlays for debugging. Of particular interest is "Show Celestial Display", which tracks the motion of the Sun and Moon in the sky.
 
-**SimulationTimeRain:** Set true or false - if true, rain falls at simulation speeds - faster if time is progressing more quickly. If false, rain falls relative to real time.
+**Simulation Time Rain:** Set true or false - if true, rain falls at simulation speeds - faster if time is progressing more quickly. If false, rain falls relative to real time.
+
+**Performance** If true, this enables CPU and GPU profiling for trueSKY. The results will be updated every few frames, and shown in the text area beneath the "Performance" checkbox. The sliders "CPU level" and "GPU level" let you set the depth of the profiling tree for CPU and GPU respectively.
 
 The Sky Sequence
 ---------------
@@ -81,6 +83,10 @@ This is something you can do on initialization.
 
 We use uint's as unique identifiers (uid's) to represent keyframes. Note: these are unique and persistent for the session, but not across saves or restarts, so don't store these.
 		
+**uint GetInterpolatedCloudKeyframe(int layer)**: Get the special uid that refers to the interpolated cloud keyframe, i.e. the *current* values. The layer specifies 0=3D clouds, 1=2D clouds.
+
+**uint GetInterpolatedSkyKeyframe()**: Get the special uid that refers to the interpolated sky keyframe, i.e. the *current* values.
+
 **uint GetSkyKeyframeByIndex(int index)**: Get a uid for the specified sky keyframe, between zero and (1-GetNumSkyKeyframes()).
 
 **uint GetCloudKeyframeByIndex(int index)**: Get a uid for the specified 3D cloud keyframe, between zero and (1-GetNumCloudKeyframes()).
@@ -93,11 +99,15 @@ We use uint's as unique identifiers (uid's) to represent keyframes. Note: these 
 
 **uint Insert2DCloudKeyframe(float t)**: Insert a 2D cloud keyframe.
 
+We can get keyframe properties if we know the uid.
+
+**object GetKeyframeValue(uint uid,string name)**: Returns property *name* of keyframe *uid*. The result will be a *float*, or an *int*.
+
+We can modify and delete keyframes at any point, but this only works on keyframes in the sequence, not on the interpolated keyframes - as these represent the current, calculated state.
+
 **void DeleteKeyframe(uint uid)**: Delete the keyframe (sky or clouds).
 
 **void SetKeyframeValue(uint uid,string name,object value)**: Set the property of keyframe *uid* named by *name* to the *value* given, which should be a *float* or an *int* (*double*s are accepted for *float* values, but *float* values can't be passed to *int* properties and vice versa).
-
-**object GetKeyframeValue(uint uid,string name)**: Returns property *name* of keyframe *uid*. The result will be a *float*, or an *int*.
 
 For example,in the script KeyframeTesting.cs in the Simul directory, is a function that sets all the cloud keyframes to have a "cloudiness" of 0.8 when the game is run:
 
