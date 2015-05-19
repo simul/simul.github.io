@@ -45,8 +45,6 @@ Restart the editor! The plugin adds the "TrueSky" section into the "Window" menu
 
 This actor provides a reference to a sequence asset which is rendered. Choose the actor (from "Scene Outliner" window). In the "Details" window, set the reference to a TrueSky Sequence asset (read below how to create one) in the "Active Sequence" property.
 
-* It may be that the default UE4 sky obscures the trueSKY image. Remove the Atmospheric Fog and Sky Sphere objects from your scene.
-
 * To create a new TrueSkySeqence asset, go to the "Content Browser" window. Press "New Asset" button (or do a right mouse click inside the window) to open an asset selection window. Choose "Miscellaneous / TrueSky Sequence Asset". A new asset will be created. Now you can rename/save/delete it.
 
 <a href="http://simul.co/wp-content/uploads/2014/07/UE4_CreateAsset.png"><img src="http://simul.co/wp-content/uploads/2014/07/UE4_CreateAsset-233x300.png"/></a> 
@@ -73,6 +71,10 @@ This actor provides a reference to a sequence asset which is rendered. Choose th
 
 * To add clouds, double-click the TrueSKY Sequence Asset and right-click on the timeline to add cloud keyframes.
 
+* It may be that the default UE4 sky obscures the trueSKY image. Remove the Atmospheric Fog and Sky Sphere objects from your scene.
+
+
+Modified Files in the Unreal Engine
 ===================================
 
 	Engine\Source\Runtime\Renderer\Private\DeferredShadingRenderer.cpp
