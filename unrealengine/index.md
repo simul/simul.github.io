@@ -12,9 +12,7 @@ How to build it
 ---
 * Enter your GitHub username at [https://simul.co/wp-admin/profile.php](http://simul.co/wp-admin/profile.php). This needs to be the same username connected to your Unreal Engine account at [www.unrealengine.com/settings](https://www.unrealengine.com/settings)
 * Get the trueSKY UE4 fork from [GitHub](https://github.com/simul/UnrealEngine).
-If you are using a different UE4 codebase, pull changes from the Simul fork, and merge.
-
-This file contains only the modified files:
+If you are using a different UE4 codebase, pull changes from the Simul fork, and merge. Alternatively, download only the modified files:
 [DeployUE4TrueSKY4.8.zip](https://simul.co/wp-content/uploads/private/master/DeployUE4TrueSKY4.8.zip)
 
 * As described in the UE4 readme (in the root UnrealEngine directory), Run Setup.bat and GenerateProjectFiles.bat from UE4. This will generate projects and the solution file (UE4.sln)
