@@ -83,6 +83,7 @@ Modified Files in the Unreal Engine
 	Engine\Source\Runtime\Renderer\Public\RendererInterface.h
 	Engine\Source\Runtime\Renderer\Private\RendererPrivate.h
 	Engine\Source\Runtime\Renderer\Private\SceneRendering.cpp
+	Engine\Source\Runtime\Renderer\Private\RendererScene.cpp
 
 	Engine\Source\Runtime\XboxOne\XboxOneD3D11RHI\Private\D3D11Device.cpp
 
