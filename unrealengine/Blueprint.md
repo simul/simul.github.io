@@ -48,6 +48,28 @@ To set a keyframe's value from Blueprint, use the SetKeyframeFloat, or SetKeyfra
 
 Similarly, GetKefyrameFloat and GetKeyframeInt are used to obtain current values.
 
-You can get the next uid in the future that can be modified without recalculation using GetNextModifiableCloudKeyframe. 
+You can get the next uid in the future that can be modified without recalculation using GetNextModifiableCloudKeyframe - that's needed if the cloud keyframer's Update property is set to "Instant". If it's "Gradual", any keyframe can be modified at any time.
+
+* GetCloudKeyframeByIndex: To get an identifier for the cloud keyframe at the specified index, returns 0 if out of range.
+
+* GetNextCloudKeyframeAfterTime: Get an identifier for the next cloud keyframe at or after the specified time.
+
+* GetPreviousCloudKeyframeBeforeTime: Get an identifier for the last cloud keyframe before the specified time.
+	
+* GetSkyKeyframeByIndex Get an identifier for the cloud keyframe at the specified index. Returns zero if there is none at that index (e.g. you have gone past the end of the list).
+
+* GetNextSkyKeyframeAfterTime: Get an identifier for the next cloud keyframe at or after the specified time.
+
+* GetPreviousSkyKeyframeBeforeTime: Get an identifier for the last sky keyframe before the specified time.
+
+
+Setting sun and moon position from Blueprint
+---------------------
+
+<img src="http://docs.simul.co/unrealengine/images/SetFromSunAndMoon.png" alt="Blueprint" />
+
+In a reversal of the default setup, SetSunDirection and SetMoonDirection can be used to drive the trueSKY sun and moon directly from an Unreal Engine direction light (or some other object). In order to user this feature, it is recommended to set the Mode properties of the Sky keyframer to "Fixed Intervals (real time)", and "Gradual" update. This is so that any changes to the sun and moon direction will affect the trueSKY atmospherics regardless of whether game time is changing, and so that slight or slow changes in sun direction will not cause a per-frame recalculation of the atmospheric tables.
+
+<img src="http://docs.simul.co/unrealengine/images/SkyModeForSetSunDirection.png" alt="Blueprint" />
 
 Next: <a href="/unrealengine/Clouds">Clouds</a>
