@@ -1,9 +1,26 @@
-{% include header.html %}
+<!DOCTYPE html>
+<html>
+    <head>
+        {% include head.html %}
+    </head>
 
-  {% include banner.html %}
+    <body>
+        <div class="container">
+            <div class="overview">
+                <span class="toggle">close</span>
+                {% include header.html %}
+                {% include nav.html %}
+            </div>
 
-    {% include page-nav.html %}
+            <div class="content">
+                <span class="toggle">open</span>
+                {{ content }}
+            </div>
+        </div>
 
-	{{ content }}
-
-{% include footer.html %}
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script scr="js/jquery.scrollTo.js"></script>
+        <script src="js/jquery.nav.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
