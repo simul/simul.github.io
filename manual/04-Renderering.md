@@ -1,5 +1,7 @@
-Rendering the Environment	{#rendering}
-=========================
+---
+title: Rendering
+layout: manual
+---
 
 Weather Rendering is handled by  \link simul::clouds::BaseWeatherRenderer BaseWeatherRenderer\endlink, or (if necessary) a derived class of this.
 

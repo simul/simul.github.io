@@ -1,4 +1,9 @@
-Introduction	{#introduction}
+---
+title: Introduction
+layout: manual
+---
+
+Introduction
 ============
 
 True Sky is the culmination of many years' research and development. It is based on physical principles

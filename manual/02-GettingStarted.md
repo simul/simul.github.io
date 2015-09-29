@@ -1,5 +1,7 @@
-Getting Started	{#gettingstarted}
-===============
+---
+title: Getting Started
+layout: manual
+---
 
 The simplest approach to rendering Simul skies is to use the existing renderer classes from the Simul/Platform directory.
 These can be seen in action in the samples. To build the samples, use the solution file appropriate to your Visual Studio version:

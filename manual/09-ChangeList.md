@@ -1,5 +1,7 @@
-Change List	{#changelist}
-===========
+---
+title: Change List
+layout: manual
+---
 \verbinclude ChangeList.txt
 
 <hr>

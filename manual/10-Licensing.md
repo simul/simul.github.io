@@ -1,5 +1,8 @@
-Licensing {#licensing}
-===========
+---
+title: Licensing {#licensing}
+layout: manual
+---
+
 Set your licence key with:
 		
     simul::base::SetLicence("XXXXXXXXX");

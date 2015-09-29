@@ -1,5 +1,7 @@
-Controlling the Environment	{#environment}
-===========================
+---
+title: Controlling the Environment
+layout: manual
+---
 
 Updating
 --------
