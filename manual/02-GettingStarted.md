@@ -9,7 +9,7 @@ These can be seen in action in the samples. To build the samples, use the soluti
 	- SimulSamples_Win32_VC10.sln
 	- SimulSamples_x64_VC11.sln
 
-<img src="SimulOverview.png" />
+<img src="/manual/images/SimulOverview.png" />
 
 The two main elements to implementing trueSKY in a project are: an Environment object, which will encapsulate sky and cloud data;
  a WeatherRenderer, and a RenderPlatform.
