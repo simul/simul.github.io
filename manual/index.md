@@ -16,21 +16,21 @@ Simul trueSKY is a software development kit that renders realistic skies, clouds
 <tr valign="top" rowspan="2">
 	<td style="width:200px">
 
-<a href="http://docs.simul.co/manual/01-Intro.html">Introduction</a><br/>
+<a href="http://docs.simul.co/manual/01-Intro">Introduction</a><br/>
 
-<a href="http://docs.simul.co/manual/02-GettingStarted.html">Getting Started</a><br/>
+<a href="http://docs.simul.co/manual/02-GettingStarted">Getting Started</a><br/>
 
-<a href="http://docs.simul.co/manual/03-Environment.html">Environment</a><br/>
+<a href="http://docs.simul.co/manual/03-Environment">Environment</a><br/>
 
-<a href="http://docs.simul.co/manual/04-Rendering.html">Rendering</a><br/>
+<a href="http://docs.simul.co/manual/04-Rendering">Rendering</a><br/>
 
-<a href="http://docs.simul.co/manual/05-MixedResolution.html">Mixed Resolution</a><br/>
+<a href="http://docs.simul.co/manual/05-MixedResolution">Mixed Resolution</a><br/>
 
-<a href="http://docs.simul.co/manual/06-Sequencer.html">Sequencer</a><br/>
+<a href="http://docs.simul.co/manual/06-Sequencer">Sequencer</a><br/>
 
-<a href="http://docs.simul.co/manual/07-Licensing.html">Licensing</a><br/>
+<a href="http://docs.simul.co/manual/07-Licensing">Licensing</a><br/>
 
-<a href="http://docs.simul.co/manual/09-ChangeList.html">Change List</a><br/>
+<a href="http://docs.simul.co/manual/09-ChangeList">Change List</a><br/>
 	
 	
 	</td>
