@@ -30,7 +30,7 @@ Simul trueSKY is a software development kit that renders realistic skies, clouds
 
 <a href="http://docs.simul.co/manual/07-Licensing">Licensing</a><br/>
 
-<a href="http://docs.simul.co/manual/09-ChangeList">Change List</a><br/>
+<a href="http://docs.simul.co/manual/08-ChangeList">Change List</a><br/>
 	
 	
 	</td>
