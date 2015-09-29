@@ -1,6 +1,10 @@
 ---
 title: Home
 layout: index
+sectionid: main
+sectionclass: h1
+title: Home
+is-parent: yes
 ---
 
 [Manual](manual/)

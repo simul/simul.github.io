@@ -5,6 +5,7 @@ sectionid: manual
 sectionclass: h1
 title: Manual
 is-parent: yes
+parent-id: main
 ---
 
 
