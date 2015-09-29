@@ -36,49 +36,49 @@ The Environment is API-neutral, it calculates and updates environment data. We w
 whose class depends on the graphics API we use:
 
 
-```cpp
+{% highlight cpp %}
 	simul::dx11::RenderPlatform renderPlatformDx11;
-```
+{% endhighlight %}
 
 
 The RenderPlatform classes implement platform-specific rendering functions called from a cross-platform interface.
 And we will create a weather renderer, which is also API-neutral:
 
-```cpp
+{% highlight cpp %}
 	simul::clouds::BaseWeatherRenderer *weatherRenderer=new simul::clouds::BaseWeatherRenderer(environment);
-```
+{% endhighlight %}
 
 
 In the case of
 DirectX 11, we initialize the RenderPlatform with a pointer to our ID3D11Device:
 
-```cpp
+{% highlight cpp %}
 	void OnD3D11CreateDevice(struct ID3D11Device* pd3dDevice)
 	{
 		renderPlatformDx11.RestoreDeviceObjects(pd3dDevice);
-```
+{% endhighlight %}
 
 
 Having done this, we can now pass the render platform pointer to the device-specific initialization of our renderers:
 
-```cpp
+{% highlight cpp %}
 		weatherRenderer->RestoreDeviceObjects(&renderPlatformDx11);
 	}
-```
+{% endhighlight %}
 
 
 In-game, we update the environment, usually once per frame:
 
-```cpp
+{% highlight cpp %}
 	environment->update(time_step_days);
-```
+{% endhighlight %}
 
 
 The time step is given in days - a floating point value, usually some small fraction less than one.
 This is the simulation time step, rather than real-time.
 Then to render:
 
-```cpp
+{% highlight cpp %}
 void Render(ID3D11DeviceContext* pContext)
 {
 	simul::crossplatform::DeviceContext	deviceContext;
@@ -88,7 +88,7 @@ void Render(ID3D11DeviceContext* pContext)
 	deviceContext.viewStruct.depthTextureStyle	=crossplatform::PROJECTION;
 	deviceContext.viewStruct.view				=viewMatrix;
 	deviceContext.viewStruct.proj				=projectionMatrix;
-```
+{% endhighlight %}
 
 We've created a \link simul::crossplatform::DeviceContext deviceContext\endlink object that we will pass to the render functions.
 This object encapsulates the platform-specific context - in this case it's
@@ -103,9 +103,9 @@ visual results from trueSKY. The projection matrix that you send to trueSKY shou
 Each individual view that you want to draw simultaneously on screen should have its own unique view_id.
 You don't have to explicitly create views, but you should call:
 
-
+{% highlight cpp %}
 	weatherRenderer->RemoveView(view_id);
-
+{% endhighlight %}
 
 to free up GPU memory if a view is removed.
 
@@ -115,18 +115,22 @@ depth information you pass to it. The matrices (\link simul::math::Matrix4x4 Mat
 Once per frame, before rendering , we must call \link simul::clouds::BaseWeatherRenderer::PreRenderUpdate PreRenderUpdate\endlink, passing
 a deviceContext that refers to \em main \em view.
 
+{% highlight cpp %}
 	weatherRenderer->PreRenderUpdate(deviceContext,real_time_s);
+{% endhighlight %}
 
 The parameter *real_time_s* is real time in seconds - as distinct from simulation time, which might be greatly accelerated, or change instantly, real time is used mainly for effects like rain that we might not want to appear accelerated. 
 
 For each view, we render the sky, passing an appropriate device context.
 
+{% highlight cpp %}
 	weatherRenderer->Render(deviceContext,
 							,(bool)is_cubemap
 							,(float) exposure
 							,(float) gamma
 							,mainDepthTexture
 							,depthViewport);
+{% endhighlight %}
 
 
 The *exposure* is a brightness multiplier - 1.0 is a good value,
@@ -172,10 +176,12 @@ where VC11 should be replaced by VC12 etc for different Visual Studio versions, 
 
 * In your initialization code, setup file loading and paths if needed, before creating the weather renderer:
 
+{% highlight cpp %}
 	simul::dx11::SetFileLoader(myFileLoader);
 	simul::dx11::PushShaderPath("my_shader_path");
 	simul::dx11::PushTexturePath("my_texture_path");
 	simul::dx11::SetShaderBinaryPath("my_binary_path");
+{% endhighlight %}
 
 For example, the DirectX11 sample uses the default file loader, and the paths to shaders in "Simul/Platform/DirectX11/HLSL" and textures in "Simul/Media/Textures".
 
