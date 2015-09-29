@@ -3,6 +3,9 @@ title: Home
 layout: default
 ---
 
+[Manual](manual/)
+---
+
 [Unreal Engine](unrealengine/)
 ---
 
