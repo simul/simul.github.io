@@ -1,6 +1,6 @@
 ---
 title: Manual
-layout: unreal
+layout: manual
 ---
 
 
