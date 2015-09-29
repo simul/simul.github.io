@@ -1,6 +1,9 @@
 ---
 title: Home
-layout: unreal
+layout: index
+sectionid: unreal
+sectionclass: h1
+title: Unreal
 ---
 Getting started
 ---
