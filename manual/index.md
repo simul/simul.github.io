@@ -1,9 +1,10 @@
 ---
 title: Manual
-layout: index
+layout: manual
 sectionid: manual
 sectionclass: h1
 title: Manual
+is-parent: yes
 ---
 
 

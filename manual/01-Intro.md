@@ -1,6 +1,10 @@
 ---
 title: Introduction
 layout: manual
+sectionid: introduction
+sectionclass: h2
+title: Manual
+parent-id: manual
 ---
 
 Introduction
