@@ -11,15 +11,14 @@ However, clouds and Simul's other volumetric effects can be blended seamlessly w
 anti-aliasing. To do this, trueSKY uses a mixed-resolution compositor.
 
 
-<img src="Compositing.png"/>
+<img src="/manual/images/Compositing.png"/>
 *Mixed-resolution compositing in trueSKY*
 
 
 The downscaling is set as a property of the weather renderer:
 
-~~~~~~~~~~~~~~~{.c}
 	weatherRenderer->SetDownscale(4);
-~~~~~~~~~~~~~~~
+
 
 The depth values passed to the weather renderer in your depth texture are processed to obtain the needed information for the compositing. This processing uses the projection matrix passed in in your DeviceContext object. The most efficient projection is usually the depth-reversed style, for which the far plane is at z=0.
 
