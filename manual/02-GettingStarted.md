@@ -5,74 +5,86 @@ layout: manual
 
 The simplest approach to rendering Simul skies is to use the existing renderer classes from the Simul/Platform directory.
 These can be seen in action in the samples. To build the samples, use the solution file appropriate to your Visual Studio version:
-
+```cpp
 	- SimulSamples_Win32_VC10.sln
 	- SimulSamples_x64_VC11.sln
-
+```
 <img src="/manual/images/SimulOverview.png" />
 
 The two main elements to implementing trueSKY in a project are: an Environment object, which will encapsulate sky and cloud data;
  a WeatherRenderer, and a RenderPlatform.
 
 You should create an instance of simul::clouds::Environment, which is persistent.
-
+```cpp
 	#include "Simul/LicenseKey.h"
 	#include "Simul/Base/EnvironmentVariables.h"
 	simul::clouds::Environment *environment=NULL;
-
+```
 
 Apply your trueSKY licence key (see \ref licensing for more details), and initialize the Environment instance:
-
+```cpp
 	simul::base::SetLicence(SIMUL_LICENSE_KEY);
 	environment=new simul::clouds::Environment();
+```
 
 
 The Environment is API-neutral, it calculates and updates environment data. We will create a persistent \link simul::crossplatform::RenderPlatform RenderPlatform\endlink,
 whose class depends on the graphics API we use:
 
 
+```cpp
 	simul::dx11::RenderPlatform renderPlatformDx11;
+```
 
 
 The RenderPlatform classes implement platform-specific rendering functions called from a cross-platform interface.
 And we will create a weather renderer, which is also API-neutral:
 
+```cpp
 	simul::clouds::BaseWeatherRenderer *weatherRenderer=new simul::clouds::BaseWeatherRenderer(environment);
+```
 
 
 In the case of
 DirectX 11, we initialize the RenderPlatform with a pointer to our ID3D11Device:
 
+```cpp
 	void OnD3D11CreateDevice(struct ID3D11Device* pd3dDevice)
 	{
 		renderPlatformDx11.RestoreDeviceObjects(pd3dDevice);
+```
 
 
 Having done this, we can now pass the render platform pointer to the device-specific initialization of our renderers:
 
+```cpp
 		weatherRenderer->RestoreDeviceObjects(&renderPlatformDx11);
 	}
+```
 
 
 In-game, we update the environment, usually once per frame:
 
+```cpp
 	environment->update(time_step_days);
+```
 
 
 The time step is given in days - a floating point value, usually some small fraction less than one.
 This is the simulation time step, rather than real-time.
 Then to render:
 
-
-	void Render(ID3D11DeviceContext* pContext)
-	{
-		simul::crossplatform::DeviceContext	deviceContext;
-		deviceContext.platform_context				=pContext;
-		deviceContext.renderPlatform				=&renderPlatformDx11;
-		deviceContext.viewStruct.view_id			=view_id;
-		deviceContext.viewStruct.depthTextureStyle	=crossplatform::PROJECTION;
-		deviceContext.viewStruct.view				=viewMatrix;
-		deviceContext.viewStruct.proj				=projectionMatrix;
+```cpp
+void Render(ID3D11DeviceContext* pContext)
+{
+	simul::crossplatform::DeviceContext	deviceContext;
+	deviceContext.platform_context				=pContext;
+	deviceContext.renderPlatform				=&renderPlatformDx11;
+	deviceContext.viewStruct.view_id			=view_id;
+	deviceContext.viewStruct.depthTextureStyle	=crossplatform::PROJECTION;
+	deviceContext.viewStruct.view				=viewMatrix;
+	deviceContext.viewStruct.proj				=projectionMatrix;
+```
 
 We've created a \link simul::crossplatform::DeviceContext deviceContext\endlink object that we will pass to the render functions.
 This object encapsulates the platform-specific context - in this case it's
