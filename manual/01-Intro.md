@@ -56,9 +56,7 @@ because they are self-contained.
 For Windows, the Debug and Release configurations are supplied as DLL's linked against the dynamic, MD runtime.
 The Static Debug and Static Release configuratons are supplied as static libraries linked against the static, MT runtime.
 
-\image latex "customform_blue_bg_top.png" width=0
-\image latex "customform_blue_bg_bottom.png" width=0
 
 <hr size="1">
-Next: \ref gettingstarted
+Next: [Getting Started](/manual/02-GettingStarted)
 

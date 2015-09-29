@@ -191,4 +191,4 @@ To add True Sky to an OpenGL project:
 ~~~~~~~~~~~~~~~
 
 <hr size="1">
-Next: \ref environment
+Next: [The Environment](/manual/03-Environment)
