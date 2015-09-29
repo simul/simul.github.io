@@ -1,7 +1,7 @@
 full_rebuild: true
-name: Docster Documentation
-author: DigitalMind
-version: V 1.0
+name: trueSKY Documentation
+author: Simul
+version: V 4.0
 encoding: utf-8
 defaults:
   -

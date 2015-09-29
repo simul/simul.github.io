@@ -1,6 +1,9 @@
 ---
 title: Manual
-layout: manual
+layout: index
+sectionid: manual
+sectionclass: h1
+title: Manual
 ---
 
 
