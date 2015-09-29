@@ -19,7 +19,7 @@ See the \ref changelist for API and feature changes.
 <tr valign="top" rowspan="2">
 	<td style="width:200px">
 
-	\subpage introduction
+[1. Introduction](/manual/01-Intro.md)
 
 	\subpage gettingstarted
 
