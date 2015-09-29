@@ -5,7 +5,6 @@ layout: unreal
 
 
 <img src="/manual/images/MainPageScreenshot.png" alt="trueSKY"/>
-\image html ".png"
 
 <table class="nice" width="100%">
 <tr valign="top">
@@ -19,21 +18,21 @@ See the \ref changelist for API and feature changes.
 <tr valign="top" rowspan="2">
 	<td style="width:200px">
 
-[1. Introduction](/manual/01-Intro.md)
+[Introduction](https://docs.simul.co/manual/01-Intro)
 
-	\subpage gettingstarted
+[Getting Started](https://docs.simul.co/manual/02-GettingStarted)
 
-	\subpage environment
+[Environment](https://docs.simul.co/manual/03-Environment)
 
-	\subpage rendering
+[Rendering](https://docs.simul.co/manual/04-Rendering)
 
-	\subpage mixed_resolution
+[Mixed Resolution](https://docs.simul.co/manual/05-MixedResolution)
 
-	\subpage sequencer
+[Sequencer](https://docs.simul.co/manual/06-Sequencer)
 
-	\subpage licensing
-	
-	\subpage changelist
+[Licensing](https://docs.simul.co/manual/07-Licensing)
+
+[Change List](https://docs.simul.co/manual/09-ChangeList)
 	
 	
 	</td>
