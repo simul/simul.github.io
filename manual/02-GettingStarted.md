@@ -5,10 +5,12 @@ layout: manual
 
 The simplest approach to rendering Simul skies is to use the existing renderer classes from the Simul/Platform directory.
 These can be seen in action in the samples. To build the samples, use the solution file appropriate to your Visual Studio version:
-```
-	- SimulSamples_Win32_VC10.sln
-	- SimulSamples_x64_VC11.sln
-```
+
+{% highlight ruby %}
+- SimulSamples_Win32_VC10.sln
+- SimulSamples_x64_VC11.sln
+{% endhighlight %}
+
 <img src="/manual/images/SimulOverview.png" />
 
 The two main elements to implementing trueSKY in a project are: an Environment object, which will encapsulate sky and cloud data;
