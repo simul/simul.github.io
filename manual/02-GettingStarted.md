@@ -15,18 +15,18 @@ The two main elements to implementing trueSKY in a project are: an Environment o
  a WeatherRenderer, and a RenderPlatform.
 
 You should create an instance of simul::clouds::Environment, which is persistent.
-'''cpp
+```
 #include "Simul/LicenseKey.h"
 #include "Simul/Base/EnvironmentVariables.h"
 simul::clouds::Environment *environment=NULL;
-'''
+```
 
 Apply your trueSKY licence key (see \ref licensing for more details), and initialize the Environment instance:
 
-```cpp
+
 	simul::base::SetLicence(SIMUL_LICENSE_KEY);
 	environment=new simul::clouds::Environment();
-```
+
 
 
 The Environment is API-neutral, it calculates and updates environment data. We will create a persistent \link simul::crossplatform::RenderPlatform RenderPlatform\endlink,
