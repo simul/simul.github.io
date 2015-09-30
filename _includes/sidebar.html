@@ -46,6 +46,8 @@
           {% if url_parts_size == node_url_parts_size and filename != 'index.html' %}
             <li><a href='{{node.url}}'>{{node.title}}</a></li>
           {% endif %}
+        {% else %}
+          {{node.url}}
         {% endif %}
       {% endfor %}
       </ul>
