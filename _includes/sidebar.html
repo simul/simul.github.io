@@ -43,10 +43,8 @@
           {% assign node_url_parts = node.url | split: '/' %}
           {% assign node_url_parts_size = node_url_parts | size %}
           {% assign filename = node_url_parts | last %}
-          {% if url_parts_size == node_url_parts_size and filename != 'index.html' %}
+          {% if url_parts_size == node_url_parts_size or node_url_parts_size<3 %}
             <li><a href='{{node.url}}'>{{node.title}}</a></li>
-          {% else %}
-            1 {{node_url_parts_size}} 
           {% endif %}
         {% endif %}
       {% endfor %}
