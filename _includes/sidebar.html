@@ -17,8 +17,6 @@
         `layout: page` in the front-matter. See readme for usage.
       {% endcomment %}
 
-      {% assign pages_list = site.pages %}
-
       {% assign url_parts = page.url | split: '/' %}
       {% assign url_parts_size = url_parts | size %}
       {% if url_parts_size != 0 %}
@@ -28,11 +26,11 @@
         {% assign base_url = page.url %}
       {% endif %}
       <ul>
-      {% for node in site.pages %}
+      {% for node in site.pages | sort: "url" %}
         {% assign node_url_parts = node.url | split: '/' %}
         {% assign node_url_parts_size = node_url_parts | size %}
         {% assign filename = node_url_parts | last %}
-       
+
         {% if node_url_parts_size == 2  %}
             <li>
             <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a></li>
