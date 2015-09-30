@@ -39,12 +39,12 @@
               {% assign level2 = site.array %}
               {% for node2 in site.pages %}
                 {% if node2.url contains node.url and node2.url != node.url %}
-                  {% assign level2 = level2 | push: node2.title %}
+                  {% assign level2 = level2 | push: node2 %}
                 {% endif %}
               {% endfor %}
               {% if level2.size > 0 %}
                 <ul>
-                {%for m2 in level2%}
+                {%for m2 in level2 %}
                   <li><a href='{{m2.url}}'>{{m2.title}}</a></li>
                 {% endfor %}
                 </ul>
