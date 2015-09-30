@@ -35,12 +35,12 @@
        
         {% if node_url_parts_size == 2  %}
             <li>
-            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>,{{node.url}}</li>
+            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a></li>
             {% if page.url contains node.url %}
               <ul>
               {% for node2 in site.pages %}
                 {% if node2.url contains node.url %}
-                  <li><a href='{{node2.url}}'>{{node2.title}},{{node2.url}}</a></li>
+                  <li><a href='{{node2.url}}'>{{node2.title}}</a></li>
                 {% endif %}
               {% endfor %}
               </ul>
