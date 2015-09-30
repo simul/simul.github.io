@@ -62,6 +62,9 @@
         2
         {% endif %}
       {% endfor %}
+      {% for num in (1...menu_level) %}
+        </ul>
+      {% endfor %}
       </ul>
 
       <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
