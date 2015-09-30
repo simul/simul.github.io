@@ -38,7 +38,7 @@
         {% assign base_url = page.url %}
       {% endif %}
       <ul>
-      {%assign menu_level = 0 %}
+      {% assign menu_level = 0 %}
       {% for node in site.pages %}
         {% assign node_url_parts = node.url | split: '/' %}
         {% assign node_url_parts_size = node_url_parts | size %}
