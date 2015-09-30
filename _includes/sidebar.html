@@ -41,10 +41,11 @@
                 {% if node2.url contains node.url and node2.url != node.url %}
                   {% assign level2 = level2 | push: node2.title %}
                 {% endif %}
+                {{level2}}
               {% if level2.size > 0 %}
                 <ul>
-                {%for node2 in level2%}
-                  <li><a href='{{node2.url}}'>{{node2.title}}</a></li>
+                {%for m2 in level2%}
+                  <li><a href='{{m2.url}}'>{{m2.title}}</a></li>
                 {% endfor %}
                 </ul>
               {% endif%}
