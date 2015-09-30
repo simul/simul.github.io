@@ -46,7 +46,7 @@
           {% if url_parts_size == node_url_parts_size or node_url_parts_size<3 %}
             <li><a href='{{node.url}}'>{{node.title}}</a></li>
           {% else %}
-          1
+          {{node_url_parts_size}}
           {% endif %}
         {% else %}
         2
