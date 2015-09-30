@@ -27,7 +27,7 @@
       {% endfor %}
 
       {% assign url_parts = page.url | split: '/' %}
-      url_parts {url_parts}
+      url_parts {{url_parts}}
       </ul>
 
       <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
