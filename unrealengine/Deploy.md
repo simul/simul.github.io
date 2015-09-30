@@ -1,6 +1,6 @@
 ---
-title: Home
-layout: page
+title: Deployment
+layout: default
 ---
 Deployment
 ---

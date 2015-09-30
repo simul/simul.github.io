@@ -1,6 +1,6 @@
 ---
-title: Clouds
-layout: unity
+title: Time of Day
+layout: default
 ---
 
 Fixing Time-of-Day

@@ -1,6 +1,6 @@
 ---
 title: Clouds
-layout: page
+layout: default
 ---
 
 Cloud Layers and Cloud Keyframes
