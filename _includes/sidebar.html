@@ -43,10 +43,10 @@
         {% assign node_url_parts_size = node_url_parts | size %}
         {% if node.url contains base_url or url_parts_size == 0 or node_url_parts_size<3 %}
           {% assign filename = node_url_parts | last %}
-          {% if url_parts_size == node_url_parts_size or node_url_parts_size<3 %}
+          {% if node_url_parts_size < 3 %}
             <li><a href='{{node.url}}'>{{node.title}}</a></li>
           {% else %}
-          {{node_url_parts_size}}
+            {{node_url_parts_size}}
           {% endif %}
         {% else %}
         2
