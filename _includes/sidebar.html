@@ -26,12 +26,29 @@
         {% endif %}
       {% endfor %}
 
+      page.url {{page.url}}
       {% assign url_parts = page.url | split: '/' %}
       {% assign url_parts_size = url_parts | size %}
       url_parts_size {{url_parts_size}}
-      {% assign rm = url_parts | last %}
-      {% assign base_url = page.url | replace: rm %}
-      base_url {base_url}
+      {% if url_parts_size != 0 %}
+        {% assign rm = url_parts | last %}
+        {% assign base_url = page.url | replace: rm %}
+        base_url {base_url}
+      {% else %}
+        {% assign base_url = page.url %}
+      {% endif %}
+      <ul>
+      {% for node in site.pages %}
+        {% if node.url contains base_url %}
+          {% assign node_url_parts = node.url | split: '/' %}
+          {% assign node_url_parts_size = node_url_parts | size %}
+          {% assign filename = node_url_parts | last %}
+          {% if url_parts_size == node_url_parts_size and filename != 'index.html' %}
+            <li><a href='{{node.url}}'>{{node.title}}</a></li>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+      </ul>
 
       <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
       <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
