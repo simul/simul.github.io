@@ -1,6 +1,6 @@
 ---
-title: Clouds
-layout: unity
+title: Sky
+layout: default
 ---
 
 

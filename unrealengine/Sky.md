@@ -1,6 +1,6 @@
 ---
 title: Sky
-layout: page
+layout: default
 ---
 
 Editing the sky in the Sequencer

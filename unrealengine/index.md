@@ -1,6 +1,6 @@
 ---
-title: Home
-layout: page
+title: Unreal
+layout: default
 ---
 Getting started
 ---
