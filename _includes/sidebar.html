@@ -32,14 +32,14 @@
         {% assign node_url_parts = node.url | split: '/' %}
         {% assign node_url_parts_size = node_url_parts | size %}
         {% assign filename = node_url_parts | last %}
-        {% if node_url_parts_size == 2  and filename != '404.html' %}
+        {% if node_url_parts_size == 2 and filename == 'index.html' %}
             <li>
-            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>{{node.url}}</li>
+            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>,{{node.url}}</li>
             {% if page.url contains node.url %}
               <ul>
               {% for node2 in site.pages %}
                 {% if node2.url contains node.url %}
-                  <li><a href='{{node2.url}}'>{{node2.title}}{{node2.url}}</a></li>
+                  <li><a href='{{node2.url}}'>{{node2.title}},{{node2.url}}</a></li>
                 {% endif %}
               {% endfor %}
               </ul>
