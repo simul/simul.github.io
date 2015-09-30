@@ -37,29 +37,20 @@
       {% else %}
         {% assign base_url = page.url %}
       {% endif %}
-      {% assign level = 0 %}
       level {{level}}
       <ul>
       {% for node in site.pages %}
         {% assign node_url_parts = node.url | split: '/' %}
         {% assign node_url_parts_size = node_url_parts | size %}
-        {% if node_url_parts_size > menu_level %}
-          {% assign menu_level = node_url_parts_size %}
-          <ul>
-        {% endif %}
-        {% if node_url_parts_size < menu_level %}
-          {% assign menu_level = node_url_parts_size %}
-          </ul>
-        {% endif %}
-        {% if node.url contains base_url or url_parts_size == 0 or node_url_parts_size<4 %}
-          {% assign filename = node_url_parts | last %}
-          {% if node_url_parts_size < 4 %}
+        {% if node_url_parts_size==2 %}
             <li><a href='{{node.url}}'>{{node.title}}</a></li>
-          {% else %}
-            {{node_url_parts_size}}
-          {% endif %}
-        {% else %}
-        2
+            <ul>
+            {% for node2 in site.pages %}
+              {% if node2.url contains node.url %}
+                <li><a href='{{node2.url}}'>{{node2.title}}</a></li>
+              {% endif %}
+            {% endfor %}
+            </ul>
         {% endif %}
       {% endfor %}
       {% for num in (1...menu_level) %}
