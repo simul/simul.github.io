@@ -43,6 +43,7 @@
                 {% endif %}
               {% endfor %}
               {% if level2.size > 0 %}
+              {{level2}}
                 <ul>
                 {%for m2 in level2 %}
                   <li><a href='{{m2.url}}'>{{m2.title}}</a></li>

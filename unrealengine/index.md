@@ -1,6 +1,6 @@
 ---
 title: Unreal
-layout: default
+layout: unreal
 ---
 Getting started
 ---

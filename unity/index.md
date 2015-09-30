@@ -1,6 +1,6 @@
 ---
 title: Unity
-layout: default
+layout: unity
 ---
 
 trueSKY alpha for Unity

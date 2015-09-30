@@ -1,6 +1,6 @@
 ---
 title: Blueprint
-layout: default
+layout: unreal
 ---
 
 trueSKY Lighting
