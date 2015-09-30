@@ -38,14 +38,10 @@
         {% assign base_url = page.url %}
       {% endif %}
       <ul>
-      {%assign level = 0 %}
+      {%assign menu_level = 0 %}
       {% for node in site.pages %}
         {% assign node_url_parts = node.url | split: '/' %}
         {% assign node_url_parts_size = node_url_parts | size %}
-        {% if node_url_parts_size > level %}
-          {% assign level = level + 1 %}
-          <ul>
-        {% endif %}
         {% if node.url contains base_url or url_parts_size == 0 or node_url_parts_size<3 %}
           {% assign filename = node_url_parts | last %}
           {% if node_url_parts_size < 3 %}
