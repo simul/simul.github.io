@@ -36,13 +36,19 @@
             <li>
             <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a></li>
             {% if page.url contains node.url %}
-              <ul>
+              {% assign level2 = site.array %}
               {% for node2 in site.pages %}
                 {% if node2.url contains node.url and node2.url != node.url %}
-                  <li><a href='{{node2.url}}'>{{node2.title}}</a></li>
+                  {% assign level2 = level2 | push: node2.title %}
                 {% endif %}
+              {% if level2.size > 0 %}
+                <ul>
+                {%for node2 in level2%}
+                  <li><a href='{{node2.url}}'>{{node2.title}}</a></li>
+                {% endfor %}
+                </ul>
+              {% endif%}
               {% endfor %}
-              </ul>
             {% endif %}
         {% endif %}
       {% endfor %}
