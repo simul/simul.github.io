@@ -1,6 +1,6 @@
 ---
 title: Clouds
-layout: unreal
+layout: page
 ---
 
 Cloud Layers and Cloud Keyframes

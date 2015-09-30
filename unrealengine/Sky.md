@@ -1,6 +1,6 @@
 ---
 title: Sky
-layout: unreal
+layout: page
 ---
 
 Editing the sky in the Sequencer

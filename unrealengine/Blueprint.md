@@ -1,6 +1,6 @@
 ---
 title: Blueprint
-layout: unreal
+layout: page
 ---
 
 trueSKY Lighting
