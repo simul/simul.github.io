@@ -54,7 +54,7 @@ The runtime is the set of libraries provided by Microsoft that provides basic sy
 You should generally use the same runtime all the way through a project, although different runtimes can be used for DLL's,
 because they are self-contained.
 For Windows, the Debug and Release configurations are supplied as DLL's linked against the dynamic, MD runtime.
-The Static Debug and Static Release configuratons are supplied as static libraries linked against the static, MT runtime.
+The Static Debug and Static Release configurations are supplied as static libraries linked against the static, MT runtime.
 
 
 <hr size="1">
