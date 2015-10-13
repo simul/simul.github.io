@@ -17,20 +17,20 @@ Cloud Keyframe Properties
 -------------------------
 **Floating-point**
 
-Name				|			function
+Name						|			function
 ----------------------------|------------------------------------------------------------
-cloudiness			| density of the cloud layer at this time.
+cloudiness					| density of the cloud layer at this time.
 distributionBaseLayer		| Start of the transition from the cloud base to the upper cloud (0 to 1)
 distributionTransition		| transition from the cloud base to the upper cloud (0 to 1)
-upperDensity			| proportion of cloud density retained in the upper layer, above the distribution_transition.
-localDensity			| local, small-scale density of clouds for 2D cloud layer.
-windSpeed			| wind speed in m/s
-windDirection			| wind direction
-persistence			| fractal persistence for generating the clouds, default 0.45.
-cloudBase			| base altitude of this cloud layer.
-cloudHeight			| height of the cloud layer, above its base altitude.
-cloudWidth			| width of the cloud layer in km, or the repeat-length.
-directLight			| amount of direct light to be used for rendering.
+upperDensity				| proportion of cloud density retained in the upper layer, above the distribution_transition.
+localDensity				| local, small-scale density of clouds for 2D cloud layer.
+windSpeed					| wind speed in m/s
+windDirection				| wind direction
+persistence					| fractal persistence for generating the clouds, default 0.45.
+cloudBase					| base altitude of this cloud layer.
+cloudHeight					| height of the cloud layer, above its base altitude.
+cloudWidth					| width of the cloud layer in km, or the repeat-length.
+directLight					| amount of direct light to be used for rendering.
 lightAsymmetry			| amount of indirect or secondary light to be used for rendering.
 indirectLight			| amount of ambient light to be used for rendering.
 ambientLight			| anisotropic distribution of direct lighting, or eccentricity.
