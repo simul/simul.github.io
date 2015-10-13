@@ -18,13 +18,13 @@ Cloud Keyframe Properties
 **Floating-point**
 
 
-Name									function
--------------------------- -------------------------------------------------------------
-cloudiness					 density of the cloud layer at this time.
-distributionBaseLayer		 Start of the transition from the cloud base to the upper cloud (0 to 1)
-distributionTransition		 transition from the cloud base to the upper cloud (0 to 1)
-upperDensity				 proportion of cloud density retained in the upper layer, above the distribution_transition.
-localDensity				 local, small-scale density of clouds for 2D cloud layer.
+Name						| 			function
+-------------------------- | -------------------------------------------------------------
+cloudiness					|  density of the cloud layer at this time.
+distributionBaseLayer		|  Start of the transition from the cloud base to the upper cloud (0 to 1)
+distributionTransition		|  transition from the cloud base to the upper cloud (0 to 1)
+upperDensity				|  proportion of cloud density retained in the upper layer, above the distribution_transition.
+localDensity				|  local, small-scale density of clouds for 2D cloud layer.
 
 windSpeed					| wind speed in m/s
 windDirection				| wind direction
