@@ -17,8 +17,18 @@ Cloud Keyframe Properties
 -------------------------
 **Floating-point**
 
++-----+---------+
+|  x  |    y    |
++=====+=========+
+|  1  | -1.3666 |
++-----+---------+
+|  2  | -0.9967 |
++-----+---------+
+|  3  | -0.6870 |
++-----+---------+
+
 Name									function
-----------------------------------------------------------------------------------------
+-------------------------- -------------------------------------------------------------
 cloudiness					 density of the cloud layer at this time.
 distributionBaseLayer		 Start of the transition from the cloud base to the upper cloud (0 to 1)
 distributionTransition		 transition from the cloud base to the upper cloud (0 to 1)
