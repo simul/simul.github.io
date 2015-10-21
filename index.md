@@ -15,5 +15,5 @@ layout: default
 [SimulFX](simulfx/)
 ---
 
-[Reference](http://simul.co/wp-content/uploads/documentation/html)
+[Reference](reference/)
 ---
