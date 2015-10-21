@@ -63,6 +63,14 @@
             <section title="simul::clouds::BaseLightningRenderer" ref="classsimul_1_1clouds_1_1BaseLightningRenderer.html" />
             <section title="simul::crossplatform::BaseOpticsRenderer" ref="classsimul_1_1crossplatform_1_1BaseOpticsRenderer.html" />
             <section title="simul::clouds::BasePrecipitationRenderer" ref="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html" />
+            <section title="simul::base::BaseProfilingInterface" ref="classsimul_1_1base_1_1BaseProfilingInterface.html">
+              <section title="simul::base::GpuProfilingInterface" ref="classsimul_1_1base_1_1GpuProfilingInterface.html">
+                <section title="simul::dx11::Profiler" ref="classsimul_1_1dx11_1_1Profiler.html" />
+              </section>
+              <section title="simul::base::ProfilingInterface" ref="classsimul_1_1base_1_1ProfilingInterface.html">
+                <section title="simul::base::DefaultProfiler" ref="classsimul_1_1base_1_1DefaultProfiler.html" />
+              </section>
+            </section>
             <section title="simul::crossplatform::BaseRenderer" ref="classsimul_1_1crossplatform_1_1BaseRenderer.html">
               <section title="simul::sky::BaseSkyRenderer" ref="classsimul_1_1sky_1_1BaseSkyRenderer.html" />
             </section>
@@ -110,9 +118,6 @@
             <section title="simul::base::FileLoader" ref="classsimul_1_1base_1_1FileLoader.html" />
             <section title="simul::crossplatform::Frustum" ref="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1Frustum" />
             <section title="simul::graph::meta::GenericTracker&lt; ownerType &gt;" ref="classsimul_1_1graph_1_1meta_1_1GenericTracker.html" />
-            <section title="simul::base::GpuProfilingInterface" ref="classsimul_1_1base_1_1GpuProfilingInterface.html">
-              <section title="simul::dx11::Profiler" ref="classsimul_1_1dx11_1_1Profiler.html" />
-            </section>
             <section title="simul::sky::HazeStruct" ref="structsimul_1_1sky_1_1HazeStruct.html" />
             <section title="simul::clouds::HumidityCallbackInterface" ref="classsimul_1_1clouds_1_1HumidityCallbackInterface.html" />
             <section title="simul::sky::Input" ref="structsimul_1_1sky_1_1Input.html" />
@@ -153,9 +158,6 @@
             <section title="simul::clouds::PointSource" ref="namespacesimul_1_1clouds.html#structsimul_1_1clouds_1_1PointSource" />
             <section title="simul::crossplatform::PosColourVertex" ref="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1PosColourVertex" />
             <section title="simul::clouds::PrecipitationRegion" ref="structsimul_1_1clouds_1_1PrecipitationRegion.html" />
-            <section title="simul::base::ProfilingInterface" ref="classsimul_1_1base_1_1ProfilingInterface.html">
-              <section title="simul::base::DefaultProfiler" ref="classsimul_1_1base_1_1DefaultProfiler.html" />
-            </section>
             <section title="simul::math::Quaternion" ref="classsimul_1_1math_1_1Quaternion.html" />
             <section title="simul::base::Referenced" ref="classsimul_1_1base_1_1Referenced.html">
               <section title="simul::clouds::CellularCloudNode" ref="classsimul_1_1clouds_1_1CellularCloudNode.html" />
@@ -295,11 +297,14 @@
       <keyword name="SetUseExternalTextures" id="simul::base::SetUseExternalTextures" ref="namespacesimul_1_1base.html#a6bf88d52dfbb916a7d121196bcc372bc" />
       <keyword name="split" id="simul::base::split" ref="namespacesimul_1_1base.html#a92f6bef69302722fc0bfbb21ea738981" />
       <keyword name="stringFormat" id="simul::base::stringFormat" ref="namespacesimul_1_1base.html#a22fb2ef096f90fbfb6bea2e666588ef2" />
+      <keyword name="simul::base::BaseProfilingInterface" id="simul::base::BaseProfilingInterface" ref="classsimul_1_1base_1_1BaseProfilingInterface.html" />
+      <keyword name="GetEvent" id="simul::base::BaseProfilingInterface::GetEvent" ref="classsimul_1_1base_1_1BaseProfilingInterface.html#aeefa3778772c45fc2d8ed16978784ad1" />
       <keyword name="simul::base::DefaultProfiler" id="simul::base::DefaultProfiler" ref="classsimul_1_1base_1_1DefaultProfiler.html" />
       <keyword name="Begin" id="simul::base::DefaultProfiler::Begin" ref="classsimul_1_1base_1_1DefaultProfiler.html#ab4c45a2e98f72463956534c2352f410d" />
       <keyword name="End" id="simul::base::DefaultProfiler::End" ref="classsimul_1_1base_1_1DefaultProfiler.html#ad2716309ddc9f8d18116b7ebb604e75b" />
       <keyword name="EndFrame" id="simul::base::DefaultProfiler::EndFrame" ref="classsimul_1_1base_1_1DefaultProfiler.html#aa894143b64287878d33dfaf536b85e49" />
       <keyword name="GetDebugText" id="simul::base::DefaultProfiler::GetDebugText" ref="classsimul_1_1base_1_1DefaultProfiler.html#af50cd69364d89c9d4174c1b6f5eaa5f6" />
+      <keyword name="GetEvent" id="simul::base::DefaultProfiler::GetEvent" ref="classsimul_1_1base_1_1DefaultProfiler.html#aeefa3778772c45fc2d8ed16978784ad1" />
       <keyword name="GetMaxLevel" id="simul::base::DefaultProfiler::GetMaxLevel" ref="classsimul_1_1base_1_1DefaultProfiler.html#a6d90c9251354241302f59e66d03f1a26" />
       <keyword name="SetMaxLevel" id="simul::base::DefaultProfiler::SetMaxLevel" ref="classsimul_1_1base_1_1DefaultProfiler.html#a5c7de10d6d974ac501332404b36e8064" />
       <keyword name="StartFrame" id="simul::base::DefaultProfiler::StartFrame" ref="classsimul_1_1base_1_1DefaultProfiler.html#a0e6423802e1483e079bc5d8ec0a698d6" />
@@ -323,6 +328,7 @@
       <keyword name="End" id="simul::base::GpuProfilingInterface::End" ref="classsimul_1_1base_1_1GpuProfilingInterface.html#ae13f3f4b70318b8e0e4b1b4dbb892c88" />
       <keyword name="EndFrame" id="simul::base::GpuProfilingInterface::EndFrame" ref="classsimul_1_1base_1_1GpuProfilingInterface.html#a38c97b86b24b01b225572bfbc73bb53e" />
       <keyword name="GetDebugText" id="simul::base::GpuProfilingInterface::GetDebugText" ref="classsimul_1_1base_1_1GpuProfilingInterface.html#aa6d34c8419510e62ef0e4c43d3cc7d6d" />
+      <keyword name="GetEvent" id="simul::base::GpuProfilingInterface::GetEvent" ref="classsimul_1_1base_1_1GpuProfilingInterface.html#aeefa3778772c45fc2d8ed16978784ad1" />
       <keyword name="GetMaxLevel" id="simul::base::GpuProfilingInterface::GetMaxLevel" ref="classsimul_1_1base_1_1GpuProfilingInterface.html#a4eb14d82a41bbd9cc8166370ebc70664" />
       <keyword name="SetMaxLevel" id="simul::base::GpuProfilingInterface::SetMaxLevel" ref="classsimul_1_1base_1_1GpuProfilingInterface.html#a11312710ffdf4ff82fc2df5f5958f200" />
       <keyword name="StartFrame" id="simul::base::GpuProfilingInterface::StartFrame" ref="classsimul_1_1base_1_1GpuProfilingInterface.html#a01ae7cc3bc6a4e1ff29169ac7fdc9df3" />
@@ -340,6 +346,7 @@
       <keyword name="Begin" id="simul::base::ProfilingInterface::Begin" ref="classsimul_1_1base_1_1ProfilingInterface.html#a6eb2bef676837afbbce0a432010d05c3" />
       <keyword name="End" id="simul::base::ProfilingInterface::End" ref="classsimul_1_1base_1_1ProfilingInterface.html#a249290641f1ae464ce288fd766a2be85" />
       <keyword name="EndFrame" id="simul::base::ProfilingInterface::EndFrame" ref="classsimul_1_1base_1_1ProfilingInterface.html#a3172e473c241add225b5ce10d3c8d38f" />
+      <keyword name="GetEvent" id="simul::base::ProfilingInterface::GetEvent" ref="classsimul_1_1base_1_1ProfilingInterface.html#aeefa3778772c45fc2d8ed16978784ad1" />
       <keyword name="GetMaxLevel" id="simul::base::ProfilingInterface::GetMaxLevel" ref="classsimul_1_1base_1_1ProfilingInterface.html#a6d90c9251354241302f59e66d03f1a26" />
       <keyword name="SetMaxLevel" id="simul::base::ProfilingInterface::SetMaxLevel" ref="classsimul_1_1base_1_1ProfilingInterface.html#a5c7de10d6d974ac501332404b36e8064" />
       <keyword name="StartFrame" id="simul::base::ProfilingInterface::StartFrame" ref="classsimul_1_1base_1_1ProfilingInterface.html#a3f7c617359d37baa7143015c355ec7ec" />
@@ -508,6 +515,8 @@
       <keyword name="SetShowRainTextures" id="simul::clouds::BaseWeatherRenderer::SetShowRainTextures" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a23676027616f4ef970c486a48bbaa3e0" />
       <keyword name="GetCelestialDisplay" id="simul::clouds::BaseWeatherRenderer::GetCelestialDisplay" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aab542af56ea084c5a66e578e81b023ba" />
       <keyword name="SetCelestialDisplay" id="simul::clouds::BaseWeatherRenderer::SetCelestialDisplay" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aa37e62b6749b11d261ff805a6af51606" />
+      <keyword name="GetCloudEditDisplay" id="simul::clouds::BaseWeatherRenderer::GetCloudEditDisplay" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a162442b7256e607fc880adff7eabc7ab" />
+      <keyword name="SetCloudEditDisplay" id="simul::clouds::BaseWeatherRenderer::SetCloudEditDisplay" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a540dc53f30421c2ef2953701f4d5e6d6" />
       <keyword name="GetShowQueries" id="simul::clouds::BaseWeatherRenderer::GetShowQueries" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a0f13ff80326498a53c2915bfd926bc2a" />
       <keyword name="SetShowQueries" id="simul::clouds::BaseWeatherRenderer::SetShowQueries" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aae74e16237e36aac147e7fea1ea12cb4" />
       <keyword name="GetUseSimulationTime" id="simul::clouds::BaseWeatherRenderer::GetUseSimulationTime" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a6b29aab3d0b31dbfc74c83a88d8c8509" />
@@ -833,7 +842,7 @@
       <keyword name="SetRecalculate" id="simul::clouds::CloudKeyframer::SetRecalculate" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#abfdad75a4c1fb7fa97b2d31b3b50ea47" />
       <keyword name="SetSkyInterface" id="simul::clouds::CloudKeyframer::SetSkyInterface" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a9f6da9b9dd7e0ba46af29f69882fa2b8" />
       <keyword name="SetUniformKeyframes" id="simul::clouds::CloudKeyframer::SetUniformKeyframes" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a63d8e5ab9248b17237042dfe543e0088" />
-      <keyword name="SetVolume" id="simul::clouds::CloudKeyframer::SetVolume" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#aaed75ed2c2d863269f0ab80338996021" />
+      <keyword name="SetVolume" id="simul::clouds::CloudKeyframer::SetVolume" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#ad6459629d542666f1b0b4012b7cc3497" />
       <keyword name="SortKeyframes" id="simul::clouds::CloudKeyframer::SortKeyframes" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a8a68a9e4f588b0aab84c3853145c0f35" />
       <keyword name="Synchronize" id="simul::clouds::CloudKeyframer::Synchronize" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a6ae592c818191983b044f3fe6ffd488d" />
       <keyword name="Update" id="simul::clouds::CloudKeyframer::Update" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a5c39641c3c57fb42a4dbb94c468b69fc" />
@@ -1310,6 +1319,7 @@
       <keyword name="End" id="simul::dx11::Profiler::End" ref="classsimul_1_1dx11_1_1Profiler.html#a08334b4aaea71cbf7c28b1c0da65f9d8" />
       <keyword name="EndFrame" id="simul::dx11::Profiler::EndFrame" ref="classsimul_1_1dx11_1_1Profiler.html#aaea74a30848b239b73362aad8b425325" />
       <keyword name="GetDebugText" id="simul::dx11::Profiler::GetDebugText" ref="classsimul_1_1dx11_1_1Profiler.html#a356462b60ec07b356638d13648c9bf2b" />
+      <keyword name="GetEvent" id="simul::dx11::Profiler::GetEvent" ref="classsimul_1_1dx11_1_1Profiler.html#a0fa1ab300bac21cc2db26b6eecf81e2d" />
       <keyword name="GetMaxLevel" id="simul::dx11::Profiler::GetMaxLevel" ref="classsimul_1_1dx11_1_1Profiler.html#a4eb14d82a41bbd9cc8166370ebc70664" />
       <keyword name="Initialize" id="simul::dx11::Profiler::Initialize" ref="classsimul_1_1dx11_1_1Profiler.html#a5e37fe74ef58017ec993db4f6e4a93d2" />
       <keyword name="SetMaxLevel" id="simul::dx11::Profiler::SetMaxLevel" ref="classsimul_1_1dx11_1_1Profiler.html#a11312710ffdf4ff82fc2df5f5958f200" />
@@ -1711,6 +1721,7 @@
       <keyword name="HasInt" id="simul::plugin::PluginTrueSkyRenderer::HasInt" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a65043e98d6ef66448dcb9355c14334a2" />
       <keyword name="PluginTrueSkyRenderer" id="simul::plugin::PluginTrueSkyRenderer::PluginTrueSkyRenderer" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a6f569ef3a71b177755dc70a44f1de828" />
       <keyword name="SetBool" id="simul::plugin::PluginTrueSkyRenderer::SetBool" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a78de9b087c6af84d197e08e50e6cb89e" />
+      <keyword name="SetCloudPlacementTexture" id="simul::plugin::PluginTrueSkyRenderer::SetCloudPlacementTexture" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a9fee95116fe52801aea8b89c10904277" />
       <keyword name="SetFloat" id="simul::plugin::PluginTrueSkyRenderer::SetFloat" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#ab187635c1a4b00d5a4696d47fe42b318" />
       <keyword name="SetInt" id="simul::plugin::PluginTrueSkyRenderer::SetInt" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a529f2c7a99b6ba3cec7ae3fa096c633a" />
       <keyword name="SetMatrix4x4" id="simul::plugin::PluginTrueSkyRenderer::SetMatrix4x4" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#ae3497b74bbb3e4b0ea31f1840afefe36" />
@@ -2510,6 +2521,8 @@
       <file>structObj_1_1VertexBuffer.html</file>
       <file>structObj_1_1VertexBuffer-members.html</file>
       <file>namespacesimul_1_1base.html</file>
+      <file>classsimul_1_1base_1_1BaseProfilingInterface.html</file>
+      <file>classsimul_1_1base_1_1BaseProfilingInterface-members.html</file>
       <file>classsimul_1_1base_1_1DefaultProfiler.html</file>
       <file>classsimul_1_1base_1_1DefaultProfiler-members.html</file>
       <file>classsimul_1_1base_1_1EnvironmentVariables.html</file>
