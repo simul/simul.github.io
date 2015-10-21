@@ -25,6 +25,34 @@
         {% assign base_url = page.url %}
       {% endif %}
       <ul>
+      {% assign sorted_pages = site.pages | sort: "url" %}
+      {% for node in sorted_pages %}
+        {% assign node_url_parts = node.url | split: '/' %}
+        {% assign node_url_parts_size = node_url_parts | size %}
+        {% assign filename = node_url_parts | last %}
+
+        {% if node_url_parts_size == 2 and filename != "404.html" and node.layout != "nonav" %}
+            <li>
+            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a></li>
+            {% if page.url contains node.url %}
+              {% assign level2 = site.array %}
+              {% for node2 in site.pages %}
+                {% if node2.url contains node.url and node2.url != node.url %}
+                  {% assign level2 = level2 | push: node2 %}
+                {% endif %}
+              {% endfor %}
+              {% if level2.size > 0 %}
+                <ul>
+                {%for m2 in level2 %}
+                {% endfor %}
+                </ul>
+              {% endif%}
+            {% endif %}
+        {% endif %}
+      {% endfor %}
+      {% for num in (1...menu_level) %}
+        </ul>
+      {% endfor %}
       </ul>
 
     </nav>
