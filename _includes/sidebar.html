@@ -27,7 +27,7 @@
       <ul>
       {% assign sorted_pages = site.pages | sort: "url" %}
       {% for node in sorted_pages %}
-        {% assign node_url {{ node.url | remove: ".html" }} %}
+        {% assign node_url = {{ node.url | remove: ".html" }} %}
         {% assign node_url_parts = node_url | split: '/' %}
         {% assign node_url_parts_size = node_url_parts | size %}
         {% assign filename = node_url_parts | last %}
