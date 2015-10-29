@@ -72,4 +72,12 @@ In a reversal of the default setup, SetSunDirection and SetMoonDirection can be 
 
 <img src="http://docs.simul.co/unrealengine/images/SkyModeForSetSunDirection.png" alt="Blueprint" />
 
+Measuring performance
+---------------------
+trueSKY has a built-in profiler for GPU and CPU performance. Use "Get Profiling Text" to obtain the values, with the inputs "cpu_level" and "gpu_level" to determine how far down the call tree to display.
+
+The outputs are in milliseconds.
+
+<img src="http://docs.simul.co/unrealengine/images/GetProfilingText.png" alt="Blueprint" />
+
 Next: <a href="/unrealengine/Clouds">Clouds</a>
