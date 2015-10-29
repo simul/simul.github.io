@@ -33,8 +33,8 @@
 
         {% if node_url_parts_size == 2 and filename != "404.html" and node.layout != "nonav" %}
             <li>
-            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a></li>
-            {% if page.url contains node.url %}
+            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a></li>y
+            {% if {{ page.url | replace:'.html' }} contains node.url %}
               {% assign level2 = site.array %}
               {% for node2 in site.pages %}
                 {% if node2.url contains node.url and node2.url != node.url %}
