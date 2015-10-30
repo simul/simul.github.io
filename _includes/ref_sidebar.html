@@ -24,26 +24,31 @@
       {% else %}
         {% assign base_url = page.url %}
       {% endif %}
+        {% assign page_url =  page.url | remove: "/index.html"  %}
+        {{ page.url }}m
+        {{ page_url }}
+
       <ul>
       {% assign sorted_pages = site.pages | sort: "url" %}
       {% for node in sorted_pages %}
-        {% assign node_url_parts = node.url | split: '/' %}
+        {% assign node_url =  node.url | remove: "/index.html"  %}
+        {% assign node_url_parts = node_url | split: '/' %}
         {% assign node_url_parts_size = node_url_parts | size %}
         {% assign filename = node_url_parts | last %}
-
         {% if node_url_parts_size == 2 and filename != "404.html" and node.layout != "nonav" %}
             <li>
             <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a></li>
-            {% if page.url contains node.url %}
+            {% if page.url contains node_url %}
               {% assign level2 = site.array %}
               {% for node2 in site.pages %}
-                {% if node2.url contains node.url and node2.url != node.url %}
+                {% if node2.url contains node_url and node2.url != node_url %}
                   {% assign level2 = level2 | push: node2 %}
                 {% endif %}
               {% endfor %}
               {% if level2.size > 0 %}
                 <ul>
                 {%for m2 in level2 %}
+                  <li><a href='{{m2.url}}'>{{m2.title}}</a></li>
                 {% endfor %}
                 </ul>
               {% endif%}
@@ -56,7 +61,6 @@
       </ul>
 
     </nav>
-
     <p>&copy; {{ site.time | date: '%Y' }} Simul Software Ltd. All rights reserved.</p>
   </div>
 </div>
