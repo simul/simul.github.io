@@ -25,7 +25,6 @@
         {% assign base_url = page.url %}
       {% endif %}
       {% assign page_url =  page.url | remove: ".html"  %}
-{{ page.url }} 1 {{ page_url }}
 
       <ul>
       {% assign sorted_pages = site.pages | sort: "url" %}
