@@ -26,7 +26,7 @@
       {% endif %}
       {% assign page_url =  page.url | remove: ".html"  %}
 
-         page_url{{ page_url }}
+         page_url {{ page_url }}
       <ul>
       {% assign sorted_pages = site.pages | sort: "url" %}
       {% for node in sorted_pages %}
@@ -36,9 +36,9 @@
         {% assign node_url_parts_size = node_url_parts | size %}
         {% assign filename = node_url_parts | last %}
         {% if node_url_parts_size == 3 and filename != "404.html" and node.layout != "nonav" %}
-            {% assign node_title1 = node.title | remove: ".md Source File" %}
-            {% assign node_title2 = node_title1 | remove: "Files (x86)/Jenkins/jobs/Simul Installers/workspace/" %}
-            {% assign node_title = node_title2 | remove: "Simul/PRODUCTS/TrueSky/Help/" %}
+            {% if node_title contains "Source File" %}
+              {% continue %}
+            {% endif %}
             <li>
             <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node_title }}</a></li>
             {% if page_url contains node_url %}
