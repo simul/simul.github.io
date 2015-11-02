@@ -26,12 +26,12 @@
       {% endif %}
       {% assign page_url =  page.url | remove: ".html"  %}
 
-        A{{ page_url }}
+         <!-- A{{ page_url }}-->
       <ul>
       {% assign sorted_pages = site.pages | sort: "url" %}
       {% for node in sorted_pages %}
         {% assign node_url =  node.url | remove: ".html"  %}
-        B{{ node_url }}
+        <!--B{{ node_url }}-->
         {% assign node_url_parts = node_url | split: '/' %}
         {% assign node_url_parts_size = node_url_parts | size %}
         {% assign filename = node_url_parts | last %}
