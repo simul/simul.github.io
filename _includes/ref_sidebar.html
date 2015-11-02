@@ -39,6 +39,10 @@
             {% if node_title contains "Source File" %}
               {% continue %}
             {% endif %}
+            {% assign sz = node_title | size %}
+            {% if  sz < 2 %}
+              {% continue %}
+            {% endif %}
             <li>
             <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node_title }}</a></li>
             {% if page_url contains node_url %}
