@@ -41,6 +41,7 @@
               {% continue %}
             {% endif %}
             {% assign sz = node_title | size %}
+            {% if sz < 2 %}
               {% continue %}
             {% endif %}
             <li>
