@@ -37,7 +37,7 @@
         {% assign filename = node_url_parts | last %}
         {% if node_url_parts_size == 3 and filename != "404.html" and node.layout != "nonav" %}
           {% assign node_title = node.title %}
-            {% if node_title == "Home" node_title contains "Source File" or node_title contains "Class Reference" or node_title contains "Template Reference" or node_title contains "Member List" or node_title contains "Directory Reference" %}
+            {% if node_title == "Home" or node_title contains "Source File" or node_title contains "Class Reference" or node_title contains "Template Reference" or node_title contains "Member List" or node_title contains "Directory Reference" %}
               {% continue %}
             {% endif %}
             {% assign sz = node_title | size %}
