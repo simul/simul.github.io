@@ -1,5 +1,5 @@
 ---
-title: Reference
+title: simul::crossplatform::MixedResolutionViewManager Class Reference
 layout: reference
 ---
 <!-- HTML header for doxygen 1.8.9.1-->
@@ -24,7 +24,7 @@ layout: reference
   <td id="projectlogo"><img alt="Logo" src="Simul-Logo-200x60.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">trueSKY
-   &#160;<span id="projectnumber">3.8.2</span>
+   &#160;<span id="projectnumber">3.9.0.149</span>
    </div>
   </td>
  </tr>
@@ -62,8 +62,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:af75ad4edb5446e611ffe5a34d03385cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0dd3192ff61632792e0b3095d764b78"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsimul_1_1crossplatform_1_1MixedResolutionView.html">MixedResolutionView</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1MixedResolutionViewManager.html#aa0dd3192ff61632792e0b3095d764b78">GetView</a> (int view_id)</td></tr>
 <tr class="separator:aa0dd3192ff61632792e0b3095d764b78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a206408bcfb8e991e35b35f7871592cfc"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="classsimul_1_1crossplatform_1_1MixedResolutionView.html">MixedResolutionView</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1MixedResolutionViewManager.html#a206408bcfb8e991e35b35f7871592cfc">GetViews</a> ()</td></tr>
-<tr class="separator:a206408bcfb8e991e35b35f7871592cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f9adf44e6ca0baf8010926669dc5193"><td class="memItemLeft" align="right" valign="top">const ViewMap &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1MixedResolutionViewManager.html#a6f9adf44e6ca0baf8010926669dc5193">GetViews</a> () const </td></tr>
+<tr class="separator:a6f9adf44e6ca0baf8010926669dc5193"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5541f855b1de68bc6b8a649fd64343b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5541f855b1de68bc6b8a649fd64343b4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1MixedResolutionViewManager.html#a5541f855b1de68bc6b8a649fd64343b4">InvalidateDeviceObjects</a> ()</td></tr>
 <tr class="memdesc:a5541f855b1de68bc6b8a649fd64343b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalidate device objects. <br /></td></tr>
@@ -80,7 +80,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class to store a set of <a class="el" href="classsimul_1_1crossplatform_1_1MixedResolutionView.html">MixedResolutionView</a> objects, one per view id. </p>
 
-<p>Definition at line <a class="el" href="MixedResolutionView_8h_source.html#l00102">102</a> of file <a class="el" href="MixedResolutionView_8h_source.html">MixedResolutionView.h</a>.</p>
+<p>Definition at line <a class="el" href="MixedResolutionView_8h_source.html#l00106">106</a> of file <a class="el" href="MixedResolutionView_8h_source.html">MixedResolutionView.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ad05e180bd65e779d7a64dd50167feaf4"></a>
 <div class="memitem">
@@ -129,20 +129,20 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a class="anchor" id="a206408bcfb8e991e35b35f7871592cfc"></a>
+<a class="anchor" id="a6f9adf44e6ca0baf8010926669dc5193"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::set&lt;<a class="el" href="classsimul_1_1crossplatform_1_1MixedResolutionView.html">MixedResolutionView</a>*&gt; simul::crossplatform::MixedResolutionViewManager::GetViews </td>
+          <td class="memname">const ViewMap&amp; simul::crossplatform::MixedResolutionViewManager::GetViews </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Gets the views.</p>
-<dl class="section return"><dt>Returns</dt><dd>null if it fails, else the views. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the views. </dd></dl>
 
 </div>
 </div>
@@ -200,7 +200,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/>
-<address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Thu Oct 22 2015 16:03:12</small></address>
+<address style="text-align: right;">trueSKY VERSION 3.9.0.149<small>
+Fri Oct 30 2015 09:42:52</small></address>
 </body>
 </html>

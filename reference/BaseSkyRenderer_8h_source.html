@@ -1,5 +1,5 @@
 ---
-title: Reference
+title:  Files (x86)/Jenkins/jobs/Simul Installers/workspace/Simul/Sky/BaseSkyRenderer.h Source File
 layout: reference
 ---
 <!-- HTML header for doxygen 1.8.9.1-->
@@ -24,7 +24,7 @@ layout: reference
   <td id="projectlogo"><img alt="Logo" src="Simul-Logo-200x60.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">trueSKY
-   &#160;<span id="projectnumber">3.8.2</span>
+   &#160;<span id="projectnumber">3.9.0.149</span>
    </div>
   </td>
  </tr>
@@ -237,7 +237,7 @@ layout: reference
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> CycleTexturesForward();</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;            simul::sky::seq_texture_iterator fade_texture_iterator[3];</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> FillFadeTextureBlocks(<span class="keywordtype">int</span> ,<span class="keywordtype">int</span> ,<span class="keywordtype">int</span> ,<span class="keywordtype">int</span> ,<span class="keywordtype">int</span> ,<span class="keywordtype">int</span> ,<span class="keywordtype">int</span> ,<span class="keyword">const</span> <span class="keywordtype">float</span> *,<span class="keyword">const</span> <span class="keywordtype">float</span> *,<span class="keyword">const</span> <span class="keywordtype">float</span> *){}</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;            <span class="comment">//platform-specific</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;            </div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;            <span class="keywordtype">bool</span>        initialized;</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;            <span class="keywordtype">unsigned</span>                cloud_texel_index;</div>
@@ -247,21 +247,23 @@ layout: reference
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;            <span class="keywordtype">void</span> SetIlluminationConstants(EarthShadowUniforms &amp;earthShadowUniforms,SkyConstants &amp;skyConstants,<span class="keyword">const</span> <span class="keywordtype">float</span> *cam_pos);</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;            <span class="keywordtype">void</span> HighlightConstellation(crossplatform::DeviceContext &amp;deviceContext,<span class="keyword">const</span> std::string &amp;str);</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            crossplatform::PosColourVertex *lines;</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        };</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    }</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;}</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="preprocessor">    #pragma warning(pop)</span></div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;            <span class="comment">// Map from view_id to lighting query values.</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        <span class="comment">//  std::map&lt;int,LightingQueryResult&gt; lightingQueries;</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        };</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    }</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;}</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="preprocessor">    #pragma warning(pop)</span></div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="classsimul_1_1crossplatform_1_1BaseRenderer_html"><div class="ttname"><a href="classsimul_1_1crossplatform_1_1BaseRenderer.html">simul::crossplatform::BaseRenderer</a></div><div class="ttdoc">The base class for renderers. Placeholder for now. </div><div class="ttdef"><b>Definition:</b> <a href="BaseRenderer_8h_source.html#l00081">BaseRenderer.h:81</a></div></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classsimul_1_1crossplatform_1_1BaseRenderer_html"><div class="ttname"><a href="classsimul_1_1crossplatform_1_1BaseRenderer.html">simul::crossplatform::BaseRenderer</a></div><div class="ttdoc">The base class for renderers. Placeholder for now. </div><div class="ttdef"><b>Definition:</b> <a href="BaseRenderer_8h_source.html#l00092">BaseRenderer.h:92</a></div></div>
 <div class="ttc" id="classsimul_1_1crossplatform_1_1Effect_html"><div class="ttname"><a href="classsimul_1_1crossplatform_1_1Effect.html">simul::crossplatform::Effect</a></div><div class="ttdoc">The cross-platform base class for shader effects. </div><div class="ttdef"><b>Definition:</b> <a href="CrossPlatform_2Effect_8h_source.html#l00436">Effect.h:436</a></div></div>
 <div class="ttc" id="classsimul_1_1crossplatform_1_1StructuredBuffer_html"><div class="ttname"><a href="classsimul_1_1crossplatform_1_1StructuredBuffer.html">simul::crossplatform::StructuredBuffer&lt; LightingQueryResult &gt;</a></div></div>
-<div class="ttc" id="classsimul_1_1sky_1_1SiderealSkyInterface_html"><div class="ttname"><a href="classsimul_1_1sky_1_1SiderealSkyInterface.html">simul::sky::SiderealSkyInterface</a></div><div class="ttdoc">An abstract interface class for a sky that is calculated using sidereal data. </div><div class="ttdef"><b>Definition:</b> <a href="SkyInterface_8h_source.html#l00200">SkyInterface.h:200</a></div></div>
+<div class="ttc" id="classsimul_1_1sky_1_1SiderealSkyInterface_html"><div class="ttname"><a href="classsimul_1_1sky_1_1SiderealSkyInterface.html">simul::sky::SiderealSkyInterface</a></div><div class="ttdoc">An abstract interface class for a sky that is calculated using sidereal data. </div><div class="ttdef"><b>Definition:</b> <a href="SkyInterface_8h_source.html#l00201">SkyInterface.h:201</a></div></div>
 <div class="ttc" id="classsimul_1_1sky_1_1BaseSkyRenderer_html"><div class="ttname"><a href="classsimul_1_1sky_1_1BaseSkyRenderer.html">simul::sky::BaseSkyRenderer</a></div><div class="ttdoc">The base class for real-time sky renderers. </div><div class="ttdef"><b>Definition:</b> <a href="BaseSkyRenderer_8h_source.html#l00122">BaseSkyRenderer.h:122</a></div></div>
-<div class="ttc" id="classsimul_1_1sky_1_1BaseSkyInterface_html"><div class="ttname"><a href="classsimul_1_1sky_1_1BaseSkyInterface.html">simul::sky::BaseSkyInterface</a></div><div class="ttdoc">An abstract interface class for skies. </div><div class="ttdef"><b>Definition:</b> <a href="SkyInterface_8h_source.html#l00228">SkyInterface.h:228</a></div></div>
+<div class="ttc" id="classsimul_1_1sky_1_1BaseSkyInterface_html"><div class="ttname"><a href="classsimul_1_1sky_1_1BaseSkyInterface.html">simul::sky::BaseSkyInterface</a></div><div class="ttdoc">An abstract interface class for skies. </div><div class="ttdef"><b>Definition:</b> <a href="SkyInterface_8h_source.html#l00229">SkyInterface.h:229</a></div></div>
 <div class="ttc" id="classsimul_1_1sky_1_1SkyKeyframer_html"><div class="ttname"><a href="classsimul_1_1sky_1_1SkyKeyframer.html">simul::sky::SkyKeyframer</a></div><div class="ttdoc">A class that maintains sky properties and interpolates them based on keyframe values. </div><div class="ttdef"><b>Definition:</b> <a href="SkyKeyframer_8h_source.html#l00047">SkyKeyframer.h:47</a></div></div>
 <div class="ttc" id="classsimul_1_1base_1_1Referenced_html"><div class="ttname"><a href="classsimul_1_1base_1_1Referenced.html">simul::base::Referenced</a></div><div class="ttdef"><b>Definition:</b> <a href="Referenced_8h_source.html#l00015">Referenced.h:15</a></div></div>
 <div class="ttc" id="classsimul_1_1base_1_1MemoryInterface_html"><div class="ttname"><a href="classsimul_1_1base_1_1MemoryInterface.html">simul::base::MemoryInterface</a></div><div class="ttdoc">A virtual interface class for classes that can allocate and de-allocate memory. </div><div class="ttdef"><b>Definition:</b> <a href="MemoryInterface_8h_source.html#l00045">MemoryInterface.h:45</a></div></div>
@@ -276,7 +278,7 @@ layout: reference
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/>
-<address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Thu Oct 22 2015 16:03:11</small></address>
+<address style="text-align: right;">trueSKY VERSION 3.9.0.149<small>
+Fri Oct 30 2015 09:42:52</small></address>
 </body>
 </html>

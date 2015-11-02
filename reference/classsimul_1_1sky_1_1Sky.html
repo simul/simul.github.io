@@ -1,5 +1,5 @@
 ---
-title: Reference
+title: simul::sky::Sky Class Reference
 layout: reference
 ---
 <!-- HTML header for doxygen 1.8.9.1-->
@@ -24,7 +24,7 @@ layout: reference
   <td id="projectlogo"><img alt="Logo" src="Simul-Logo-200x60.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">trueSKY
-   &#160;<span id="projectnumber">3.8.2</span>
+   &#160;<span id="projectnumber">3.9.0.149</span>
    </div>
   </td>
  </tr>
@@ -54,12 +54,12 @@ layout: reference
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a728d7a8acd7ab0b18b3994f8d0e2c3ec"><td class="memItemLeft" align="right" valign="top">float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1Sky.html#a728d7a8acd7ab0b18b3994f8d0e2c3ec">GetAnisotropicInscatterFactor</a> (bool include_sunlight, float view_alt_km, float elevation, float min_dist_km, float max_dist_km, const float4 &amp;sun_irradiance, float moon_albedo, const float4 &amp;starlight, const float4 &amp;dir_to_sun, const float4 &amp;dir_to_moon, <a class="el" href="structsimul_1_1sky_1_1HazeStruct.html">HazeStruct</a> hazeStruct, float4 wavelengthsNm, const OvercastStruct &amp;overcast, bool earth_test, int steps) const </td></tr>
-<tr class="separator:a728d7a8acd7ab0b18b3994f8d0e2c3ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc7dad3c899be7fc2046dbc14f7fe393"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc7dad3c899be7fc2046dbc14f7fe393"></a>
-float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1Sky.html#afc7dad3c899be7fc2046dbc14f7fe393">GetBlackbodyInscatter</a> (float alt_km, float elevation, float min_dist_km, float max_dist_km, const float4 &amp;sun_irradiance, float moon_albedo, const float4 &amp;starlight, const float4 &amp;dir_to_sun, const float4 &amp;dir_to_moon, <a class="el" href="structsimul_1_1sky_1_1HazeStruct.html">HazeStruct</a> hazeStruct, float4 wavelengthsNm, bool earth_test=false, int steps=0, float emissivity=0.f) const </td></tr>
-<tr class="memdesc:afc7dad3c899be7fc2046dbc14f7fe393"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the radiance due to blackbody radiation. <br /></td></tr>
-<tr class="separator:afc7dad3c899be7fc2046dbc14f7fe393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e70d25ad1d373100f7f11d42a8a1e25"><td class="memItemLeft" align="right" valign="top">float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1Sky.html#a9e70d25ad1d373100f7f11d42a8a1e25">GetAnisotropicInscatterFactor</a> (bool include_sunlight, float view_alt_km, float elevation, float min_dist_km, float max_dist_km, const float4 &amp;sun_irradiance, vec3 moon_albedo, const float4 &amp;starlight, const float4 &amp;dir_to_sun, const float4 &amp;dir_to_moon, <a class="el" href="structsimul_1_1sky_1_1HazeStruct.html">HazeStruct</a> hazeStruct, float4 wavelengthsNm, const OvercastStruct &amp;overcast, bool earth_test, int steps) const </td></tr>
+<tr class="separator:a9e70d25ad1d373100f7f11d42a8a1e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e179f9860dbf50bd6b1f8139de9427c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e179f9860dbf50bd6b1f8139de9427c"></a>
+float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1Sky.html#a8e179f9860dbf50bd6b1f8139de9427c">GetBlackbodyInscatter</a> (float alt_km, float elevation, float min_dist_km, float max_dist_km, const float4 &amp;sun_irradiance, vec3 moon_albedo, const float4 &amp;starlight, const float4 &amp;dir_to_sun, const float4 &amp;dir_to_moon, <a class="el" href="structsimul_1_1sky_1_1HazeStruct.html">HazeStruct</a> hazeStruct, float4 wavelengthsNm, bool earth_test=false, int steps=0, float emissivity=0.f) const </td></tr>
+<tr class="memdesc:a8e179f9860dbf50bd6b1f8139de9427c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the radiance due to blackbody radiation. <br /></td></tr>
+<tr class="separator:a8e179f9860dbf50bd6b1f8139de9427c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c87fd6dfbcd4014cc5a4f7898146a93"><td class="memItemLeft" align="right" valign="top">float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1Sky.html#a0c87fd6dfbcd4014cc5a4f7898146a93">GetColourLossFactor</a> (const float4 &amp;view_pos_km, const float4 &amp;pos_km, <a class="el" href="structsimul_1_1sky_1_1HazeStruct.html">HazeStruct</a> hazeStruct, bool earth_test=false, int steps=0) const </td></tr>
 <tr class="memdesc:a0c87fd6dfbcd4014cc5a4f7898146a93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the loss factor of an object at position <em>pos_km</em> seen from <em>view_pos_km</em>.  <a href="#a0c87fd6dfbcd4014cc5a4f7898146a93">More...</a><br /></td></tr>
 <tr class="separator:a0c87fd6dfbcd4014cc5a4f7898146a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -91,12 +91,12 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <tr class="separator:acf0e8f6af552baff3937c6e035539c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ee43a52d6e1841f3d6d63e420d67abd"><td class="memItemLeft" align="right" valign="top">float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1Sky.html#a9ee43a52d6e1841f3d6d63e420d67abd">GetIsotropicColourLossFactor</a> (float view_alt_km, float elevation, float min_dist_km, float max_dist_km, <a class="el" href="structsimul_1_1sky_1_1HazeStruct.html">HazeStruct</a> hazeStruct, bool earth_test=false, int steps=0, bool do_blackbody=false, float emissivity=0.f) const </td></tr>
 <tr class="separator:a9ee43a52d6e1841f3d6d63e420d67abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad56fc568606e68f294ffbf8742c2ba89"><td class="memItemLeft" align="right" valign="top">float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1Sky.html#ad56fc568606e68f294ffbf8742c2ba89">GetIsotropicInscatter</a> (float alt_km, float elevation, float min_dist_km, float max_dist_km, const float4 &amp;sun_irradiance, float moon_albedo, const float4 &amp;starlight, const float4 &amp;dir_to_sun, const float4 &amp;dir_to_moon, <a class="el" href="structsimul_1_1sky_1_1HazeStruct.html">HazeStruct</a> hazeStruct, float4 wavelengthsNm, const OvercastStruct &amp;overcast, bool earth_test=false, int steps=0) const </td></tr>
-<tr class="separator:ad56fc568606e68f294ffbf8742c2ba89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1aa81d5f25587c10a6c41efc3e7b1045"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1aa81d5f25587c10a6c41efc3e7b1045"></a>
-float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1Sky.html#a1aa81d5f25587c10a6c41efc3e7b1045">GetMoonIrradiance</a> (const float4 &amp;dir_to_moon, const float4 &amp;dir_to_sun, const float4 &amp;sun_irradiance, float moon_albedo) const </td></tr>
-<tr class="memdesc:a1aa81d5f25587c10a6c41efc3e7b1045"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the moonlight irradiance in space. <br /></td></tr>
-<tr class="separator:a1aa81d5f25587c10a6c41efc3e7b1045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d85eaa111f94295bc7f47e2c31fdb9a"><td class="memItemLeft" align="right" valign="top">float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1Sky.html#a0d85eaa111f94295bc7f47e2c31fdb9a">GetIsotropicInscatter</a> (float alt_km, float elevation, float min_dist_km, float max_dist_km, const float4 &amp;sun_irradiance, vec3 moon_albedo, const float4 &amp;starlight, const float4 &amp;dir_to_sun, const float4 &amp;dir_to_moon, <a class="el" href="structsimul_1_1sky_1_1HazeStruct.html">HazeStruct</a> hazeStruct, float4 wavelengthsNm, const OvercastStruct &amp;overcast, bool earth_test=false, int steps=0) const </td></tr>
+<tr class="separator:a0d85eaa111f94295bc7f47e2c31fdb9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c8ae3d3d9d1497cd5197535a7521822"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c8ae3d3d9d1497cd5197535a7521822"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1Sky.html#a5c8ae3d3d9d1497cd5197535a7521822">GetMoonIrradianceFactor</a> (const float4 &amp;dir_to_moon, const float4 &amp;dir_to_sun) const </td></tr>
+<tr class="memdesc:a5c8ae3d3d9d1497cd5197535a7521822"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moon irradiance as a multiple of sun irradiance. <br /></td></tr>
+<tr class="separator:a5c8ae3d3d9d1497cd5197535a7521822"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac617bd7cf0e58a332d3152635f1ed5f2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1Sky.html#ac617bd7cf0e58a332d3152635f1ed5f2">GetOpticalLength</a> (float Elevation, float h_km) const </td></tr>
 <tr class="separator:ac617bd7cf0e58a332d3152635f1ed5f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65b7a901819c9c991eb34890cb1fceeb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65b7a901819c9c991eb34890cb1fceeb"></a>
@@ -180,18 +180,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>InitializePropertiesS
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseSky.html#a550ae6cdd82f5f707c7c72d10e29f29c">GetOvercastAtAltitude</a> (const OvercastStruct &amp;o, float alt_km) const </td></tr>
 <tr class="memdesc:a550ae6cdd82f5f707c7c72d10e29f29c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the strength of the overcast effect at a given altitude, determined by Overcast, OvercastBaseKm, and OvercastRangeKm. <br /></td></tr>
 <tr class="separator:a550ae6cdd82f5f707c7c72d10e29f29c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7205ed88cbe84d18c1b93b7898edae2f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7205ed88cbe84d18c1b93b7898edae2f"></a>
-float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseSky.html#a7205ed88cbe84d18c1b93b7898edae2f">GetAmbientLight</a> (float4 wavelengthsNm, float altitude_km, const float4 &amp;sun_irradiance, float moon_albedo, const float4 &amp;starlight, const float4 &amp;dir_to_sun, const float4 &amp;dir_to_moon, <a class="el" href="structsimul_1_1sky_1_1HazeStruct.html">HazeStruct</a> hazeStruct, const OvercastStruct &amp;o) const </td></tr>
-<tr class="memdesc:a7205ed88cbe84d18c1b93b7898edae2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ambient light irradiance at the specified altitude. <br /></td></tr>
-<tr class="separator:a7205ed88cbe84d18c1b93b7898edae2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a0611700845ceca81d32af1d08303a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a0611700845ceca81d32af1d08303a7"></a>
+float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseSky.html#a3a0611700845ceca81d32af1d08303a7">GetAmbientLight</a> (float4 wavelengthsNm, float altitude_km, const float4 &amp;sun_irradiance, vec3 moon_albedo, const float4 &amp;starlight, const float4 &amp;dir_to_sun, const float4 &amp;dir_to_moon, <a class="el" href="structsimul_1_1sky_1_1HazeStruct.html">HazeStruct</a> hazeStruct, const OvercastStruct &amp;o) const </td></tr>
+<tr class="memdesc:a3a0611700845ceca81d32af1d08303a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ambient light irradiance at the specified altitude. <br /></td></tr>
+<tr class="separator:a3a0611700845ceca81d32af1d08303a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a260ed00f9947a482f30e9191c71eefd7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a260ed00f9947a482f30e9191c71eefd7"></a>
 float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseSky.html#a260ed00f9947a482f30e9191c71eefd7">GetLocalSunIrradiance</a> (float altitude_km, const float4 &amp;sun_irradiance, const float4 &amp;DirectionToSun, <a class="el" href="structsimul_1_1sky_1_1HazeStruct.html">HazeStruct</a> hazeStruct) const </td></tr>
 <tr class="memdesc:a260ed00f9947a482f30e9191c71eefd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the sunlight that reaches the altitude <em>altitude_km</em>. <br /></td></tr>
 <tr class="separator:a260ed00f9947a482f30e9191c71eefd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c6650fa5cdacee7a7bb139a97a2b098"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c6650fa5cdacee7a7bb139a97a2b098"></a>
-float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseSky.html#a4c6650fa5cdacee7a7bb139a97a2b098">GetLocalMoonIrradiance</a> (float altitude_km, const float4 &amp;sun_irradiance, float moon_albedo, const float4 &amp;dir_to_moon, const float4 &amp;dir_to_sun, <a class="el" href="structsimul_1_1sky_1_1HazeStruct.html">HazeStruct</a> hazeStruct) const </td></tr>
-<tr class="memdesc:a4c6650fa5cdacee7a7bb139a97a2b098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the moonlight that reaches the altitude <em>altitude_km</em>. <br /></td></tr>
-<tr class="separator:a4c6650fa5cdacee7a7bb139a97a2b098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf5cf56f72731eff1d423a262be925ed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf5cf56f72731eff1d423a262be925ed"></a>
+float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseSky.html#acf5cf56f72731eff1d423a262be925ed">GetLocalMoonIrradianceFactor</a> (float altitude_km, const float4 &amp;dir_to_moon, const float4 &amp;dir_to_sun, <a class="el" href="structsimul_1_1sky_1_1HazeStruct.html">HazeStruct</a> hazeStruct) const </td></tr>
+<tr class="memdesc:acf5cf56f72731eff1d423a262be925ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the moonlight that reaches the altitude <em>altitude_km</em>. <br /></td></tr>
+<tr class="separator:acf5cf56f72731eff1d423a262be925ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a155557883c28a01cf80652ecffc74855"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a155557883c28a01cf80652ecffc74855"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>GetShortestDistanceToAltitude</b> (float Elevation, float start_h_km, float finish_h_km) const </td></tr>
 <tr class="separator:a155557883c28a01cf80652ecffc74855"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -326,7 +326,7 @@ Transient Sky Properties</h1>
 
 </div>
 </div>
-<a class="anchor" id="ad56fc568606e68f294ffbf8742c2ba89"></a>
+<a class="anchor" id="a0d85eaa111f94295bc7f47e2c31fdb9a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -366,7 +366,7 @@ Transient Sky Properties</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
+          <td class="paramtype">vec3&#160;</td>
           <td class="paramname"><em>moon_albedo</em>, </td>
         </tr>
         <tr>
@@ -431,7 +431,7 @@ Transient Sky Properties</h1>
 </div><div class="memdoc">
 <p>Get the approximate isotropic inscatter, i.e. the inscatter without a dependence on the angle to the strongest light source. In particular, this includes skylight and starlight. </p>
 
-<p>Implements <a class="el" href="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a3a030f4e157cb5f7d1bfcb0af770ce27">simul::sky::AtmosphericScatteringInterface</a>.</p>
+<p>Implements <a class="el" href="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a80278e546d018a2e0759def5c22b1a93">simul::sky::AtmosphericScatteringInterface</a>.</p>
 
 </div>
 </div>
@@ -514,7 +514,7 @@ Transient Sky Properties</h1>
 
 </div>
 </div>
-<a class="anchor" id="a728d7a8acd7ab0b18b3994f8d0e2c3ec"></a>
+<a class="anchor" id="a9e70d25ad1d373100f7f11d42a8a1e25"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -560,7 +560,7 @@ Transient Sky Properties</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
+          <td class="paramtype">vec3&#160;</td>
           <td class="paramname"><em>moon_albedo</em>, </td>
         </tr>
         <tr>
@@ -623,9 +623,9 @@ Transient Sky Properties</h1>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get the inscatter factor in the xyz - the 3-element factor which is multiplied by the 3-element factor Beta to get the inscattered colour. In the w element is the haze factor. This excludes skylight and starlight, which are not considered to be strongly anisotropic. See <a class="el" href="classsimul_1_1sky_1_1Sky.html#ad56fc568606e68f294ffbf8742c2ba89">GetIsotropicInscatter()</a>. </p>
+<p>Get the inscatter factor in the xyz - the 3-element factor which is multiplied by the 3-element factor Beta to get the inscattered colour. In the w element is the haze factor. This excludes skylight and starlight, which are not considered to be strongly anisotropic. See <a class="el" href="classsimul_1_1sky_1_1Sky.html#a0d85eaa111f94295bc7f47e2c31fdb9a">GetIsotropicInscatter()</a>. </p>
 
-<p>Implements <a class="el" href="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#ae93b45194d2c3c12690d7d58a291e1c0">simul::sky::AtmosphericScatteringInterface</a>.</p>
+<p>Implements <a class="el" href="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a13fa789aae88d2f03f26be726fc5c760">simul::sky::AtmosphericScatteringInterface</a>.</p>
 
 </div>
 </div>
@@ -1145,7 +1145,7 @@ Transient Sky Properties</h1>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/>
-<address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Thu Oct 22 2015 16:03:12</small></address>
+<address style="text-align: right;">trueSKY VERSION 3.9.0.149<small>
+Fri Oct 30 2015 09:42:52</small></address>
 </body>
 </html>

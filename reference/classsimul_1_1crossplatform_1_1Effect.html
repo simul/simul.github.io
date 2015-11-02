@@ -1,5 +1,5 @@
 ---
-title: Reference
+title: simul::crossplatform::Effect Class Reference
 layout: reference
 ---
 <!-- HTML header for doxygen 1.8.9.1-->
@@ -24,7 +24,7 @@ layout: reference
   <td id="projectlogo"><img alt="Logo" src="Simul-Logo-200x60.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">trueSKY
-   &#160;<span id="projectnumber">3.8.2</span>
+   &#160;<span id="projectnumber">3.9.0.149</span>
    </div>
   </td>
  </tr>
@@ -70,14 +70,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1Effect.html#a31169b54fa083b3d4fcf04975e51a555">SetSamplerState</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">DeviceContext</a> &amp;deviceContext, const char *name, SamplerState *s)=0</td></tr>
 <tr class="memdesc:a31169b54fa083b3d4fcf04975e51a555"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the texture for this effect. <br /></td></tr>
 <tr class="separator:a31169b54fa083b3d4fcf04975e51a555"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38ad414ba63f756c1d920db12babe547"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38ad414ba63f756c1d920db12babe547"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1Effect.html#a38ad414ba63f756c1d920db12babe547">SetTexture</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">DeviceContext</a> &amp;deviceContext, const char *name, Texture *tex)=0</td></tr>
-<tr class="memdesc:a38ad414ba63f756c1d920db12babe547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the texture for this effect. <br /></td></tr>
-<tr class="separator:a38ad414ba63f756c1d920db12babe547"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70bff2c2d5e5503094ee9e29a13a304f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70bff2c2d5e5503094ee9e29a13a304f"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1Effect.html#a70bff2c2d5e5503094ee9e29a13a304f">SetTexture</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">DeviceContext</a> &amp;deviceContext, const char *name, Texture &amp;t)=0</td></tr>
-<tr class="memdesc:a70bff2c2d5e5503094ee9e29a13a304f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the texture for this effect. <br /></td></tr>
-<tr class="separator:a70bff2c2d5e5503094ee9e29a13a304f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bc51995850642813dee1156c772b2db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1bc51995850642813dee1156c772b2db"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1Effect.html#a1bc51995850642813dee1156c772b2db">SetTexture</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">DeviceContext</a> &amp;deviceContext, const char *name, Texture *tex, int mip=-1)=0</td></tr>
+<tr class="memdesc:a1bc51995850642813dee1156c772b2db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the texture for this effect. If mip is specified, the specific mipmap will be used, otherwise it's the full texture with all its mipmaps. <br /></td></tr>
+<tr class="separator:a1bc51995850642813dee1156c772b2db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd7b698c26cb2bbdaf0684dfcbf1e01c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd7b698c26cb2bbdaf0684dfcbf1e01c"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1Effect.html#afd7b698c26cb2bbdaf0684dfcbf1e01c">SetUnorderedAccessView</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">DeviceContext</a> &amp;deviceContext, const char *name, Texture *tex, int mip=0)=0</td></tr>
 <tr class="memdesc:afd7b698c26cb2bbdaf0684dfcbf1e01c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the texture for read-write access by compute shaders in this effect. <br /></td></tr>
@@ -102,7 +98,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/>
-<address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Thu Oct 22 2015 16:03:12</small></address>
+<address style="text-align: right;">trueSKY VERSION 3.9.0.149<small>
+Fri Oct 30 2015 09:42:52</small></address>
 </body>
 </html>

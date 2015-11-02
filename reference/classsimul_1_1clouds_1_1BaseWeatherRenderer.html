@@ -1,5 +1,5 @@
 ---
-title: Reference
+title: simul::clouds::BaseWeatherRenderer Class Reference
 layout: reference
 ---
 <!-- HTML header for doxygen 1.8.9.1-->
@@ -24,7 +24,7 @@ layout: reference
   <td id="projectlogo"><img alt="Logo" src="Simul-Logo-200x60.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">trueSKY
-   &#160;<span id="projectnumber">3.8.2</span>
+   &#160;<span id="projectnumber">3.9.0.149</span>
    </div>
   </td>
  </tr>
@@ -153,6 +153,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a6d02e91268b6f14bbccc386867a73f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72de865052f574a909e0700a7fb5d303"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a72de865052f574a909e0700a7fb5d303">RestoreDeviceObjects</a> (<a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html">crossplatform::RenderPlatform</a> *renderPlatform)</td></tr>
 <tr class="separator:a72de865052f574a909e0700a7fb5d303"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90be7b86481fd34ff20ea0d7b996eb45"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90be7b86481fd34ff20ea0d7b996eb45"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a90be7b86481fd34ff20ea0d7b996eb45">SetAllDownscale</a> (int)</td></tr>
+<tr class="memdesc:a90be7b86481fd34ff20ea0d7b996eb45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override the downscale for all current views; does not affect the default - see SetDefaultDownscale. <br /></td></tr>
+<tr class="separator:a90be7b86481fd34ff20ea0d7b996eb45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0c05a43c67c63d4bf316c362c3e4a85"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0c05a43c67c63d4bf316c362c3e4a85"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aa0c05a43c67c63d4bf316c362c3e4a85">SetBlurTexture</a> (crossplatform::Texture *t)</td></tr>
 <tr class="memdesc:aa0c05a43c67c63d4bf316c362c3e4a85"><td class="mdescLeft">&#160;</td><td class="mdescRight">A blurred texture, to be drawn usually per-frame. <br /></td></tr>
@@ -228,13 +232,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a8e0f0efa692b44b46caed4f4880d9392"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84e2febc393b3e1eb2ffcd2f3a0b4fd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a84e2febc393b3e1eb2ffcd2f3a0b4fd4">SetShowAtmospherics</a> (bool value)</td></tr>
 <tr class="separator:a84e2febc393b3e1eb2ffcd2f3a0b4fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Property: int Downscale</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p>"How much to reduce resolution in the cloud buffers." </p>
-</div></td></tr>
-<tr class="memitem:acbf6fcda877349786ea3e051679e15e8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#acbf6fcda877349786ea3e051679e15e8">GetDownscale</a> () const </td></tr>
-<tr class="separator:acbf6fcda877349786ea3e051679e15e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08c2fc4436b30808da4ffd79a6ba83f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a08c2fc4436b30808da4ffd79a6ba83f1">SetDownscale</a> (int value)</td></tr>
-<tr class="separator:a08c2fc4436b30808da4ffd79a6ba83f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Property: bool ShowCloudCrossSections</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>"Show the cloud textures as an overlay." </p>
 </div></td></tr>
@@ -291,12 +288,19 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a6b29aab3d0b31dbfc74c83a88d8c8509"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a483a9a711868cdaa2a5482493dfbe549"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a483a9a711868cdaa2a5482493dfbe549">SetUseSimulationTime</a> (bool value)</td></tr>
 <tr class="separator:a483a9a711868cdaa2a5482493dfbe549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Property: int DefaultDownscale</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>"the downscale to be used for any new views. For existing views use GetFramebuffer(view_id) and set its Downscale, or use SetAllDownscale to override all." </p>
+</div></td></tr>
+<tr class="memitem:a5090b422d5c2487a61bfd9ad95bd4e5d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a5090b422d5c2487a61bfd9ad95bd4e5d">GetDefaultDownscale</a> () const </td></tr>
+<tr class="separator:a5090b422d5c2487a61bfd9ad95bd4e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61c0a798c5717754a2b25f6871c85c88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a61c0a798c5717754a2b25f6871c85c88">SetDefaultDownscale</a> (int value)</td></tr>
+<tr class="separator:a61c0a798c5717754a2b25f6871c85c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The main base class for all weather renderers, such as SimulGLWeatherRenderer, SimulWeatherRenderer (DX11) etc.</p>
 <p>The derived classes of <a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html">BaseWeatherRenderer</a> create and maintain the renderers for weather elements such as clouds, sky, rain and so on. So to use these sub-renderers it is usual to create an instance of one of the weather renderers, and allow this instance to manage the others. </p>
 
-<p>Definition at line <a class="el" href="BaseWeatherRenderer_8h_source.html#l00079">79</a> of file <a class="el" href="BaseWeatherRenderer_8h_source.html">BaseWeatherRenderer.h</a>.</p>
+<p>Definition at line <a class="el" href="BaseWeatherRenderer_8h_source.html#l00080">80</a> of file <a class="el" href="BaseWeatherRenderer_8h_source.html">BaseWeatherRenderer.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ae2485b5d0f5a08a8076632c41d407acf"></a>
 <div class="memitem">
@@ -595,39 +599,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a class="anchor" id="acbf6fcda877349786ea3e051679e15e8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int simul::clouds::BaseWeatherRenderer::GetDownscale </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Get the value of Downscale . </p>
-
-</div>
-</div>
-<a class="anchor" id="a08c2fc4436b30808da4ffd79a6ba83f1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void simul::clouds::BaseWeatherRenderer::SetDownscale </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set the value of Downscale . </p>
-
-</div>
-</div>
 <a class="anchor" id="a14e3ddc6231f2dc5dfbbefeca4509075"></a>
 <div class="memitem">
 <div class="memproto">
@@ -889,6 +860,39 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
       </table>
 </div><div class="memdoc">
 <p>Set the value of UseSimulationTime . </p>
+
+</div>
+</div>
+<a class="anchor" id="a5090b422d5c2487a61bfd9ad95bd4e5d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int simul::clouds::BaseWeatherRenderer::GetDefaultDownscale </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the value of DefaultDownscale . </p>
+
+</div>
+</div>
+<a class="anchor" id="a61c0a798c5717754a2b25f6871c85c88"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void simul::clouds::BaseWeatherRenderer::SetDefaultDownscale </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the value of DefaultDownscale . </p>
 
 </div>
 </div>
@@ -1232,7 +1236,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/>
-<address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Thu Oct 22 2015 16:03:12</small></address>
+<address style="text-align: right;">trueSKY VERSION 3.9.0.149<small>
+Fri Oct 30 2015 09:42:52</small></address>
 </body>
 </html>

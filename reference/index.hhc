@@ -50,6 +50,7 @@
       <UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::base::MemoryInterfaceAllocator&lt; T &gt;"><param name="Local" value="classsimul_1_1base_1_1MemoryInterfaceAllocator.html"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::crossplatform::AmortizationStruct"><param name="Local" value="structsimul_1_1crossplatform_1_1AmortizationStruct.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::sky::AtmosphericScatteringInterface"><param name="Local" value="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::sky::BaseSky"><param name="Local" value="classsimul_1_1sky_1_1BaseSky.html"><param name="ImageNumber" value="1"></OBJECT>

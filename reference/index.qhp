@@ -5,7 +5,7 @@
   <filterSection>
     <filterAttribute>doxygen</filterAttribute>
     <toc>
-      <section title="trueSKY 3.8.2" ref="index.html">
+      <section title="trueSKY 3.9.0.149" ref="index.html">
         <section title="Developer Manual" ref="index.html">
           <section title="Introduction" ref="introduction.html" />
           <section title="Getting Started" ref="gettingstarted.html" />
@@ -42,6 +42,7 @@
             <section title="std::allocator&lt; T &gt;">
               <section title="simul::base::MemoryInterfaceAllocator&lt; T &gt;" ref="classsimul_1_1base_1_1MemoryInterfaceAllocator.html" />
             </section>
+            <section title="simul::crossplatform::AmortizationStruct" ref="structsimul_1_1crossplatform_1_1AmortizationStruct.html" />
             <section title="simul::sky::AtmosphericScatteringInterface" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html">
               <section title="simul::sky::BaseSky" ref="classsimul_1_1sky_1_1BaseSky.html">
                 <section title="simul::sky::Sky" ref="classsimul_1_1sky_1_1Sky.html" />
@@ -298,13 +299,13 @@
       <keyword name="split" id="simul::base::split" ref="namespacesimul_1_1base.html#a92f6bef69302722fc0bfbb21ea738981" />
       <keyword name="stringFormat" id="simul::base::stringFormat" ref="namespacesimul_1_1base.html#a22fb2ef096f90fbfb6bea2e666588ef2" />
       <keyword name="simul::base::BaseProfilingInterface" id="simul::base::BaseProfilingInterface" ref="classsimul_1_1base_1_1BaseProfilingInterface.html" />
-      <keyword name="GetEvent" id="simul::base::BaseProfilingInterface::GetEvent" ref="classsimul_1_1base_1_1BaseProfilingInterface.html#aeefa3778772c45fc2d8ed16978784ad1" />
+      <keyword name="GetEvent" id="simul::base::BaseProfilingInterface::GetEvent" ref="classsimul_1_1base_1_1BaseProfilingInterface.html#ae59d8c2a3538fe1bf204bb1e8f323e33" />
       <keyword name="simul::base::DefaultProfiler" id="simul::base::DefaultProfiler" ref="classsimul_1_1base_1_1DefaultProfiler.html" />
       <keyword name="Begin" id="simul::base::DefaultProfiler::Begin" ref="classsimul_1_1base_1_1DefaultProfiler.html#ab4c45a2e98f72463956534c2352f410d" />
       <keyword name="End" id="simul::base::DefaultProfiler::End" ref="classsimul_1_1base_1_1DefaultProfiler.html#ad2716309ddc9f8d18116b7ebb604e75b" />
       <keyword name="EndFrame" id="simul::base::DefaultProfiler::EndFrame" ref="classsimul_1_1base_1_1DefaultProfiler.html#aa894143b64287878d33dfaf536b85e49" />
       <keyword name="GetDebugText" id="simul::base::DefaultProfiler::GetDebugText" ref="classsimul_1_1base_1_1DefaultProfiler.html#af50cd69364d89c9d4174c1b6f5eaa5f6" />
-      <keyword name="GetEvent" id="simul::base::DefaultProfiler::GetEvent" ref="classsimul_1_1base_1_1DefaultProfiler.html#aeefa3778772c45fc2d8ed16978784ad1" />
+      <keyword name="GetEvent" id="simul::base::DefaultProfiler::GetEvent" ref="classsimul_1_1base_1_1DefaultProfiler.html#ae59d8c2a3538fe1bf204bb1e8f323e33" />
       <keyword name="GetMaxLevel" id="simul::base::DefaultProfiler::GetMaxLevel" ref="classsimul_1_1base_1_1DefaultProfiler.html#a6d90c9251354241302f59e66d03f1a26" />
       <keyword name="SetMaxLevel" id="simul::base::DefaultProfiler::SetMaxLevel" ref="classsimul_1_1base_1_1DefaultProfiler.html#a5c7de10d6d974ac501332404b36e8064" />
       <keyword name="StartFrame" id="simul::base::DefaultProfiler::StartFrame" ref="classsimul_1_1base_1_1DefaultProfiler.html#a0e6423802e1483e079bc5d8ec0a698d6" />
@@ -328,7 +329,7 @@
       <keyword name="End" id="simul::base::GpuProfilingInterface::End" ref="classsimul_1_1base_1_1GpuProfilingInterface.html#ae13f3f4b70318b8e0e4b1b4dbb892c88" />
       <keyword name="EndFrame" id="simul::base::GpuProfilingInterface::EndFrame" ref="classsimul_1_1base_1_1GpuProfilingInterface.html#a38c97b86b24b01b225572bfbc73bb53e" />
       <keyword name="GetDebugText" id="simul::base::GpuProfilingInterface::GetDebugText" ref="classsimul_1_1base_1_1GpuProfilingInterface.html#a8f2cf041f91d25808ce5d25844f97f9b" />
-      <keyword name="GetEvent" id="simul::base::GpuProfilingInterface::GetEvent" ref="classsimul_1_1base_1_1GpuProfilingInterface.html#aeefa3778772c45fc2d8ed16978784ad1" />
+      <keyword name="GetEvent" id="simul::base::GpuProfilingInterface::GetEvent" ref="classsimul_1_1base_1_1GpuProfilingInterface.html#ae59d8c2a3538fe1bf204bb1e8f323e33" />
       <keyword name="GetMaxLevel" id="simul::base::GpuProfilingInterface::GetMaxLevel" ref="classsimul_1_1base_1_1GpuProfilingInterface.html#a4eb14d82a41bbd9cc8166370ebc70664" />
       <keyword name="SetMaxLevel" id="simul::base::GpuProfilingInterface::SetMaxLevel" ref="classsimul_1_1base_1_1GpuProfilingInterface.html#a11312710ffdf4ff82fc2df5f5958f200" />
       <keyword name="StartFrame" id="simul::base::GpuProfilingInterface::StartFrame" ref="classsimul_1_1base_1_1GpuProfilingInterface.html#a01ae7cc3bc6a4e1ff29169ac7fdc9df3" />
@@ -346,7 +347,7 @@
       <keyword name="Begin" id="simul::base::ProfilingInterface::Begin" ref="classsimul_1_1base_1_1ProfilingInterface.html#a6eb2bef676837afbbce0a432010d05c3" />
       <keyword name="End" id="simul::base::ProfilingInterface::End" ref="classsimul_1_1base_1_1ProfilingInterface.html#a249290641f1ae464ce288fd766a2be85" />
       <keyword name="EndFrame" id="simul::base::ProfilingInterface::EndFrame" ref="classsimul_1_1base_1_1ProfilingInterface.html#a3172e473c241add225b5ce10d3c8d38f" />
-      <keyword name="GetEvent" id="simul::base::ProfilingInterface::GetEvent" ref="classsimul_1_1base_1_1ProfilingInterface.html#aeefa3778772c45fc2d8ed16978784ad1" />
+      <keyword name="GetEvent" id="simul::base::ProfilingInterface::GetEvent" ref="classsimul_1_1base_1_1ProfilingInterface.html#ae59d8c2a3538fe1bf204bb1e8f323e33" />
       <keyword name="GetMaxLevel" id="simul::base::ProfilingInterface::GetMaxLevel" ref="classsimul_1_1base_1_1ProfilingInterface.html#a6d90c9251354241302f59e66d03f1a26" />
       <keyword name="SetMaxLevel" id="simul::base::ProfilingInterface::SetMaxLevel" ref="classsimul_1_1base_1_1ProfilingInterface.html#a5c7de10d6d974ac501332404b36e8064" />
       <keyword name="StartFrame" id="simul::base::ProfilingInterface::StartFrame" ref="classsimul_1_1base_1_1ProfilingInterface.html#a3f7c617359d37baa7143015c355ec7ec" />
@@ -387,7 +388,7 @@
       <keyword name="IsCameraAboveCloudBase" id="simul::clouds::BaseCloudRenderer::IsCameraAboveCloudBase" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a41f9007498f3d39428d7e2d6c619fab0" />
       <keyword name="PreRenderUpdate" id="simul::clouds::BaseCloudRenderer::PreRenderUpdate" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ae15f20c0ff731ccf3cccb85a9eb4734c" />
       <keyword name="RecompileShaders" id="simul::clouds::BaseCloudRenderer::RecompileShaders" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a689bba2dd0ae007cb327f679e4e37f8f" />
-      <keyword name="Render" id="simul::clouds::BaseCloudRenderer::Render" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a4f7c0be327058de93def0d8b2fadc25a" />
+      <keyword name="Render" id="simul::clouds::BaseCloudRenderer::Render" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ac7ddbcfead8aec4bb512497ab77d4aea" />
       <keyword name="RenderCloudShadowTexture" id="simul::clouds::BaseCloudRenderer::RenderCloudShadowTexture" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ae50ae2aa01480689b15cef2898abe056" />
       <keyword name="RenderCrossSections" id="simul::clouds::BaseCloudRenderer::RenderCrossSections" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ad811fdc6aaa8be177802b76e015e7dcd" />
       <keyword name="RenderQueries" id="simul::clouds::BaseCloudRenderer::RenderQueries" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a7b1e3a45b4b786862bb191cf96f0af2d" />
@@ -482,6 +483,7 @@
       <keyword name="RenderOverlays" id="simul::clouds::BaseWeatherRenderer::RenderOverlays" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a15d8a87644e651a7d997c2e08658ed5b" />
       <keyword name="RenderSkyAsOverlay" id="simul::clouds::BaseWeatherRenderer::RenderSkyAsOverlay" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a6d02e91268b6f14bbccc386867a73f0c" />
       <keyword name="RestoreDeviceObjects" id="simul::clouds::BaseWeatherRenderer::RestoreDeviceObjects" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a72de865052f574a909e0700a7fb5d303" />
+      <keyword name="SetAllDownscale" id="simul::clouds::BaseWeatherRenderer::SetAllDownscale" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a90be7b86481fd34ff20ea0d7b996eb45" />
       <keyword name="SetBlurTexture" id="simul::clouds::BaseWeatherRenderer::SetBlurTexture" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aa0c05a43c67c63d4bf316c362c3e4a85" />
       <keyword name="SetCubemapTexture" id="simul::clouds::BaseWeatherRenderer::SetCubemapTexture" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a1283aebee5e7a059395ad162e9f9d997" />
       <keyword name="SetCubemapTransform" id="simul::clouds::BaseWeatherRenderer::SetCubemapTransform" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a31b8c658eb917996da998ae44fe7c5ed" />
@@ -503,8 +505,6 @@
       <keyword name="SetShowRain" id="simul::clouds::BaseWeatherRenderer::SetShowRain" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a1312647c60805f70dbc08e61f730717f" />
       <keyword name="GetShowAtmospherics" id="simul::clouds::BaseWeatherRenderer::GetShowAtmospherics" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a8e0f0efa692b44b46caed4f4880d9392" />
       <keyword name="SetShowAtmospherics" id="simul::clouds::BaseWeatherRenderer::SetShowAtmospherics" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a84e2febc393b3e1eb2ffcd2f3a0b4fd4" />
-      <keyword name="GetDownscale" id="simul::clouds::BaseWeatherRenderer::GetDownscale" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#acbf6fcda877349786ea3e051679e15e8" />
-      <keyword name="SetDownscale" id="simul::clouds::BaseWeatherRenderer::SetDownscale" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a08c2fc4436b30808da4ffd79a6ba83f1" />
       <keyword name="GetShowCloudCrossSections" id="simul::clouds::BaseWeatherRenderer::GetShowCloudCrossSections" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a14e3ddc6231f2dc5dfbbefeca4509075" />
       <keyword name="SetShowCloudCrossSections" id="simul::clouds::BaseWeatherRenderer::SetShowCloudCrossSections" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a440ba99e2b63bef0816dda8cf4506f31" />
       <keyword name="GetShow2DCloudTextures" id="simul::clouds::BaseWeatherRenderer::GetShow2DCloudTextures" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#af682c7b4eb1a77d52305aada30b8a91a" />
@@ -521,6 +521,8 @@
       <keyword name="SetShowQueries" id="simul::clouds::BaseWeatherRenderer::SetShowQueries" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aae74e16237e36aac147e7fea1ea12cb4" />
       <keyword name="GetUseSimulationTime" id="simul::clouds::BaseWeatherRenderer::GetUseSimulationTime" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a6b29aab3d0b31dbfc74c83a88d8c8509" />
       <keyword name="SetUseSimulationTime" id="simul::clouds::BaseWeatherRenderer::SetUseSimulationTime" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a483a9a711868cdaa2a5482493dfbe549" />
+      <keyword name="GetDefaultDownscale" id="simul::clouds::BaseWeatherRenderer::GetDefaultDownscale" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a5090b422d5c2487a61bfd9ad95bd4e5d" />
+      <keyword name="SetDefaultDownscale" id="simul::clouds::BaseWeatherRenderer::SetDefaultDownscale" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a61c0a798c5717754a2b25f6871c85c88" />
       <keyword name="simul::clouds::CellularCloudGrid" id="simul::clouds::CellularCloudGrid" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html" />
       <keyword name="GetCloudDensity" id="simul::clouds::CellularCloudGrid::GetCloudDensity" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#a583904a772d7a4a18dbcc27d771451ed" />
       <keyword name="GetExtents" id="simul::clouds::CellularCloudGrid::GetExtents" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#a350f598f52380797ea0386ed28fad8b9" />
@@ -1129,6 +1131,8 @@
       <keyword name="MakeWorldViewProjMatrix" id="simul::crossplatform::MakeWorldViewProjMatrix" ref="namespacesimul_1_1crossplatform.html#ac1f2e6b896281a06195eb44853999e69" />
       <keyword name="ViewportToTexCoordsXYWH" id="simul::crossplatform::ViewportToTexCoordsXYWH" ref="namespacesimul_1_1crossplatform.html#acd76431ec45b4f38fbe3f5f93b262a78" />
       <keyword name="PROJECTION" id="simul::crossplatform::PROJECTION" ref="namespacesimul_1_1crossplatform.html#a3384172e390763ce0f9d6f58e3a0bcd0a1fcd87c6f10e871a5aeb9797895d270a" />
+      <keyword name="simul::crossplatform::AmortizationStruct" id="simul::crossplatform::AmortizationStruct" ref="structsimul_1_1crossplatform_1_1AmortizationStruct.html" />
+      <keyword name="reset" id="simul::crossplatform::AmortizationStruct::reset" ref="structsimul_1_1crossplatform_1_1AmortizationStruct.html#ab340a33d4d6263f02f3d45e46273c83f" />
       <keyword name="simul::crossplatform::BaseFramebuffer" id="simul::crossplatform::BaseFramebuffer" ref="classsimul_1_1crossplatform_1_1BaseFramebuffer.html" />
       <keyword name="Width" id="simul::crossplatform::BaseFramebuffer::Width" ref="classsimul_1_1crossplatform_1_1BaseFramebuffer.html#ab76d3a6cbb4bc2a3af26522c14baa99a" />
       <keyword name="Activate" id="simul::crossplatform::BaseFramebuffer::Activate" ref="classsimul_1_1crossplatform_1_1BaseFramebuffer.html#ae0def98a9ee12aeaf070d8c61aeca338" />
@@ -1174,8 +1178,7 @@
       <keyword name="Apply" id="simul::crossplatform::Effect::Apply" ref="classsimul_1_1crossplatform_1_1Effect.html#aa1552fb0fe232651e62bf648f7413ed4" />
       <keyword name="Reapply" id="simul::crossplatform::Effect::Reapply" ref="classsimul_1_1crossplatform_1_1Effect.html#a880190eda9cf00f3fd5ce4e160f09735" />
       <keyword name="SetSamplerState" id="simul::crossplatform::Effect::SetSamplerState" ref="classsimul_1_1crossplatform_1_1Effect.html#a31169b54fa083b3d4fcf04975e51a555" />
-      <keyword name="SetTexture" id="simul::crossplatform::Effect::SetTexture" ref="classsimul_1_1crossplatform_1_1Effect.html#a38ad414ba63f756c1d920db12babe547" />
-      <keyword name="SetTexture" id="simul::crossplatform::Effect::SetTexture" ref="classsimul_1_1crossplatform_1_1Effect.html#a70bff2c2d5e5503094ee9e29a13a304f" />
+      <keyword name="SetTexture" id="simul::crossplatform::Effect::SetTexture" ref="classsimul_1_1crossplatform_1_1Effect.html#a1bc51995850642813dee1156c772b2db" />
       <keyword name="SetUnorderedAccessView" id="simul::crossplatform::Effect::SetUnorderedAccessView" ref="classsimul_1_1crossplatform_1_1Effect.html#afd7b698c26cb2bbdaf0684dfcbf1e01c" />
       <keyword name="Unapply" id="simul::crossplatform::Effect::Unapply" ref="classsimul_1_1crossplatform_1_1Effect.html#a06d5b49a24849556844ccf4342851992" />
       <keyword name="UnbindTextures" id="simul::crossplatform::Effect::UnbindTextures" ref="classsimul_1_1crossplatform_1_1Effect.html#a95f90ea474e9cf85b32f26ce6316b408" />
@@ -1210,7 +1213,7 @@
       <keyword name="AddView" id="simul::crossplatform::MixedResolutionViewManager::AddView" ref="classsimul_1_1crossplatform_1_1MixedResolutionViewManager.html#aa551d3f7a793cd022edc1ee8abf3ee35" />
       <keyword name="Clear" id="simul::crossplatform::MixedResolutionViewManager::Clear" ref="classsimul_1_1crossplatform_1_1MixedResolutionViewManager.html#af75ad4edb5446e611ffe5a34d03385cd" />
       <keyword name="GetView" id="simul::crossplatform::MixedResolutionViewManager::GetView" ref="classsimul_1_1crossplatform_1_1MixedResolutionViewManager.html#aa0dd3192ff61632792e0b3095d764b78" />
-      <keyword name="GetViews" id="simul::crossplatform::MixedResolutionViewManager::GetViews" ref="classsimul_1_1crossplatform_1_1MixedResolutionViewManager.html#a206408bcfb8e991e35b35f7871592cfc" />
+      <keyword name="GetViews" id="simul::crossplatform::MixedResolutionViewManager::GetViews" ref="classsimul_1_1crossplatform_1_1MixedResolutionViewManager.html#a6f9adf44e6ca0baf8010926669dc5193" />
       <keyword name="InvalidateDeviceObjects" id="simul::crossplatform::MixedResolutionViewManager::InvalidateDeviceObjects" ref="classsimul_1_1crossplatform_1_1MixedResolutionViewManager.html#a5541f855b1de68bc6b8a649fd64343b4" />
       <keyword name="MixedResolutionViewManager" id="simul::crossplatform::MixedResolutionViewManager::MixedResolutionViewManager" ref="classsimul_1_1crossplatform_1_1MixedResolutionViewManager.html#a327f0f837c7feabdfec431378ca0f3fb" />
       <keyword name="RemoveView" id="simul::crossplatform::MixedResolutionViewManager::RemoveView" ref="classsimul_1_1crossplatform_1_1MixedResolutionViewManager.html#ad7907bd1204d3d7bd5f3cac6d82d526b" />
@@ -1273,7 +1276,9 @@
       <keyword name="StoreRenderState" id="simul::crossplatform::RenderPlatform::StoreRenderState" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#a42ab82829f99cb67faca26374a90045b" />
       <keyword name="simul::crossplatform::StructuredBuffer" id="simul::crossplatform::StructuredBuffer" ref="classsimul_1_1crossplatform_1_1StructuredBuffer.html" />
       <keyword name="simul::crossplatform::TwoResFramebuffer" id="simul::crossplatform::TwoResFramebuffer" ref="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html" />
+      <keyword name="pixelOffset" id="simul::crossplatform::TwoResFramebuffer::pixelOffset" ref="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html#af0c140c56475b2c72f8733475fb9ec84" />
       <keyword name="ActivateLowRes" id="simul::crossplatform::TwoResFramebuffer::ActivateLowRes" ref="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html#af011f4ae168c5b18eb1b19293884158f" />
+      <keyword name="CompleteFrame" id="simul::crossplatform::TwoResFramebuffer::CompleteFrame" ref="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html#ac2f106c653ed801661ca69e2fb487e9b" />
       <keyword name="DeactivateDepth" id="simul::crossplatform::TwoResFramebuffer::DeactivateDepth" ref="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html#a7e40f08c4f6c7ee803e8f4dfbe415e37" />
       <keyword name="DeactivateLowRes" id="simul::crossplatform::TwoResFramebuffer::DeactivateLowRes" ref="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html#abd0125d249494193ccff57dddeb38620" />
       <keyword name="GetLowResDepthTexture" id="simul::crossplatform::TwoResFramebuffer::GetLowResDepthTexture" ref="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html#aa0ccb8c69a873991ec9c157681f9293d" />
@@ -1379,6 +1384,7 @@
       <keyword name="SetVertexBuffers" id="simul::dx11::RenderPlatform::SetVertexBuffers" ref="classsimul_1_1dx11_1_1RenderPlatform.html#a1845e3c9af7224c7316d0d02e1aba30f" />
       <keyword name="StoreRenderState" id="simul::dx11::RenderPlatform::StoreRenderState" ref="classsimul_1_1dx11_1_1RenderPlatform.html#a2ffad4229d772bb6e61d4773960fffbf" />
       <keyword name="simul::dx11::TrueSkyRenderer" id="simul::dx11::TrueSkyRenderer" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html" />
+      <keyword name="SetAmortization" id="simul::dx11::TrueSkyRenderer::SetAmortization" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#aa63a54f0ccfea9f7e261fdb87589a919" />
       <keyword name="TrueSkyRenderer" id="simul::dx11::TrueSkyRenderer::TrueSkyRenderer" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#acdeb6c00610a3a0f9f8258ba86092c35" />
       <keyword name="GetPaused" id="simul::dx11::TrueSkyRenderer::GetPaused" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#a748538d9c66ccd9c6dd528a9a3fa9b22" />
       <keyword name="SetPaused" id="simul::dx11::TrueSkyRenderer::SetPaused" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#a2c9e6d63ef9436596158fa5778462763" />
@@ -1645,8 +1651,7 @@
       <keyword name="Apply" id="simul::opengl::Effect::Apply" ref="classsimul_1_1opengl_1_1Effect.html#aa72c179704489fa622ed85cb04db20fe" />
       <keyword name="Reapply" id="simul::opengl::Effect::Reapply" ref="classsimul_1_1opengl_1_1Effect.html#a0807584ba5af25c68e461062e93d72aa" />
       <keyword name="SetSamplerState" id="simul::opengl::Effect::SetSamplerState" ref="classsimul_1_1opengl_1_1Effect.html#a05444ef4aeafa6ddeb9cf2fc7cd7b2af" />
-      <keyword name="SetTexture" id="simul::opengl::Effect::SetTexture" ref="classsimul_1_1opengl_1_1Effect.html#ab25ab92537aaaaa652459e5559667941" />
-      <keyword name="SetTexture" id="simul::opengl::Effect::SetTexture" ref="classsimul_1_1opengl_1_1Effect.html#a508d13045020fd2876e75c47b22d32c1" />
+      <keyword name="SetTexture" id="simul::opengl::Effect::SetTexture" ref="classsimul_1_1opengl_1_1Effect.html#ab48f92838a74ba5aafd650fb87e677ab" />
       <keyword name="SetUnorderedAccessView" id="simul::opengl::Effect::SetUnorderedAccessView" ref="classsimul_1_1opengl_1_1Effect.html#aad39cbd79066bb4b29f20422ce6ba16d" />
       <keyword name="Unapply" id="simul::opengl::Effect::Unapply" ref="classsimul_1_1opengl_1_1Effect.html#aca818604351d2a3cb9b5df5dd20f0b12" />
       <keyword name="UnbindTextures" id="simul::opengl::Effect::UnbindTextures" ref="classsimul_1_1opengl_1_1Effect.html#a43fdf10da2ef2e596eebee5d1f6b8852" />
@@ -1720,6 +1725,7 @@
       <keyword name="HasFloat" id="simul::plugin::PluginTrueSkyRenderer::HasFloat" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a932cad1ebd513ea354a3037f0bb11d8a" />
       <keyword name="HasInt" id="simul::plugin::PluginTrueSkyRenderer::HasInt" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a65043e98d6ef66448dcb9355c14334a2" />
       <keyword name="PluginTrueSkyRenderer" id="simul::plugin::PluginTrueSkyRenderer::PluginTrueSkyRenderer" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a6f569ef3a71b177755dc70a44f1de828" />
+      <keyword name="SetAmortization" id="simul::plugin::PluginTrueSkyRenderer::SetAmortization" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#aa63a54f0ccfea9f7e261fdb87589a919" />
       <keyword name="SetBool" id="simul::plugin::PluginTrueSkyRenderer::SetBool" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a78de9b087c6af84d197e08e50e6cb89e" />
       <keyword name="SetCloudPlacementTexture" id="simul::plugin::PluginTrueSkyRenderer::SetCloudPlacementTexture" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a9fee95116fe52801aea8b89c10904277" />
       <keyword name="SetFloat" id="simul::plugin::PluginTrueSkyRenderer::SetFloat" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#ab187635c1a4b00d5a4696d47fe42b318" />
@@ -1730,6 +1736,7 @@
       <keyword name="SetTexture" id="simul::plugin::PluginTrueSkyRenderer::SetTexture" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a3e1f951258ed19ab368e7ffac367aaf8" />
       <keyword name="Tick" id="simul::plugin::PluginTrueSkyRenderer::Tick" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a7c5622b758cf4b0712901649addaacb5" />
       <keyword name="TriggerAction" id="simul::plugin::PluginTrueSkyRenderer::TriggerAction" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a1c88fd79091297f9c35a222a12b0cd8e" />
+      <keyword name="UpdateProfilingText" id="simul::plugin::PluginTrueSkyRenderer::UpdateProfilingText" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a4f9d1796f82bd7f7c3b31c8c3f233fc9" />
       <keyword name="~PluginTrueSkyRenderer" id="simul::plugin::PluginTrueSkyRenderer::~PluginTrueSkyRenderer" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a2b26f5bd3b51910e9212f7914001a023" />
       <keyword name="GetPaused" id="simul::plugin::PluginTrueSkyRenderer::GetPaused" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a748538d9c66ccd9c6dd528a9a3fa9b22" />
       <keyword name="SetPaused" id="simul::plugin::PluginTrueSkyRenderer::SetPaused" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a2c9e6d63ef9436596158fa5778462763" />
@@ -1791,19 +1798,19 @@
       <keyword name="GetDirectionToLight" id="simul::sky::AtmosphericScatteringInterface::GetDirectionToLight" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#ac13143e92a54ac6e8eb19c0539751331" />
       <keyword name="GetDirectionToSun" id="simul::sky::AtmosphericScatteringInterface::GetDirectionToSun" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#ac45fa281b4010d8454c54bf541bdec05" />
       <keyword name="GetDirectionToMoon" id="simul::sky::AtmosphericScatteringInterface::GetDirectionToMoon" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a41a8bf7ae13098de8f592264918b6013" />
-      <keyword name="GetMoonIrradiance" id="simul::sky::AtmosphericScatteringInterface::GetMoonIrradiance" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#ad4425e32731d8406272cc08d3d761f8d" />
-      <keyword name="GetLocalMoonIrradiance" id="simul::sky::AtmosphericScatteringInterface::GetLocalMoonIrradiance" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a385dc8d82593a0b3821fbbc2cc4e3097" />
+      <keyword name="GetMoonIrradianceFactor" id="simul::sky::AtmosphericScatteringInterface::GetMoonIrradianceFactor" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#ad4c6f39bc8cf63ce4625e2da2eca58cf" />
+      <keyword name="GetLocalMoonIrradianceFactor" id="simul::sky::AtmosphericScatteringInterface::GetLocalMoonIrradianceFactor" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a67c83b37af9a4a123b59f370b1234c45" />
       <keyword name="GetLocalSunIrradiance" id="simul::sky::AtmosphericScatteringInterface::GetLocalSunIrradiance" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a966f9278b8a21d534f1b6aea7a476168" />
-      <keyword name="GetAmbientLight" id="simul::sky::AtmosphericScatteringInterface::GetAmbientLight" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a665a9c318fbc6d59ab96efe757665dd6" />
+      <keyword name="GetAmbientLight" id="simul::sky::AtmosphericScatteringInterface::GetAmbientLight" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a8953437a290687f0fbbc87884a06fe7a" />
       <keyword name="GetAtmosphericPropertiesChecksum" id="simul::sky::AtmosphericScatteringInterface::GetAtmosphericPropertiesChecksum" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#ad4bb99ce45c29f897bc8e9b2c5ae1c95" />
       <keyword name="GetAtmosphericStateChecksum" id="simul::sky::AtmosphericScatteringInterface::GetAtmosphericStateChecksum" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#ac0c6b3cda822d27d22b1684b6a854e37" />
       <keyword name="GetColourLossFactor" id="simul::sky::AtmosphericScatteringInterface::GetColourLossFactor" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a674275a4eb3822c8d7603a175b9f218f" />
       <keyword name="GetHorizonElevation" id="simul::sky::AtmosphericScatteringInterface::GetHorizonElevation" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a2432b97c2a1a51873367b0dea0a38895" />
       <keyword name="GetEarthShadow" id="simul::sky::AtmosphericScatteringInterface::GetEarthShadow" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a71cf4cba51a814950782309908eef356" />
       <keyword name="GetIsotropicColourLossFactor" id="simul::sky::AtmosphericScatteringInterface::GetIsotropicColourLossFactor" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a239fe2e6772d8220870a66d29ee2a07a" />
-      <keyword name="GetAnisotropicInscatterFactor" id="simul::sky::AtmosphericScatteringInterface::GetAnisotropicInscatterFactor" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#ae93b45194d2c3c12690d7d58a291e1c0" />
-      <keyword name="GetIsotropicInscatter" id="simul::sky::AtmosphericScatteringInterface::GetIsotropicInscatter" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a3a030f4e157cb5f7d1bfcb0af770ce27" />
-      <keyword name="GetBlackbodyInscatter" id="simul::sky::AtmosphericScatteringInterface::GetBlackbodyInscatter" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#acafb8a21053c94a2691403f8c19d1674" />
+      <keyword name="GetAnisotropicInscatterFactor" id="simul::sky::AtmosphericScatteringInterface::GetAnisotropicInscatterFactor" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a13fa789aae88d2f03f26be726fc5c760" />
+      <keyword name="GetIsotropicInscatter" id="simul::sky::AtmosphericScatteringInterface::GetIsotropicInscatter" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a80278e546d018a2e0759def5c22b1a93" />
+      <keyword name="GetBlackbodyInscatter" id="simul::sky::AtmosphericScatteringInterface::GetBlackbodyInscatter" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#af70742632c675c2efa1a57fee52f883b" />
       <keyword name="GetInscatterAngularMultiplier" id="simul::sky::AtmosphericScatteringInterface::GetInscatterAngularMultiplier" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#aef3cf69c90bbe853b1d309c0c8d930c7" />
       <keyword name="GetVisibilityDistance" id="simul::sky::AtmosphericScatteringInterface::GetVisibilityDistance" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#ab1e1bc753f1f9fd945d89e1149b0eac2" />
       <keyword name="GetHazeForVisibilityDistance" id="simul::sky::AtmosphericScatteringInterface::GetHazeForVisibilityDistance" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a657021ae48f347e36de9de361f38e61f" />
@@ -1903,16 +1910,16 @@
       <keyword name="SetMoonRadiusArcMinutes" id="simul::sky::BaseSky::SetMoonRadiusArcMinutes" ref="classsimul_1_1sky_1_1BaseSky.html#a29a38f941bb64293e2e0299be48808a7" />
       <keyword name="GetDirectionToSun" id="simul::sky::BaseSky::GetDirectionToSun" ref="classsimul_1_1sky_1_1BaseSky.html#ac45fa281b4010d8454c54bf541bdec05" />
       <keyword name="GetDirectionToMoon" id="simul::sky::BaseSky::GetDirectionToMoon" ref="classsimul_1_1sky_1_1BaseSky.html#a41a8bf7ae13098de8f592264918b6013" />
-      <keyword name="GetMoonIrradiance" id="simul::sky::BaseSky::GetMoonIrradiance" ref="classsimul_1_1sky_1_1BaseSky.html#ad4425e32731d8406272cc08d3d761f8d" />
+      <keyword name="GetMoonIrradianceFactor" id="simul::sky::BaseSky::GetMoonIrradianceFactor" ref="classsimul_1_1sky_1_1BaseSky.html#ad4c6f39bc8cf63ce4625e2da2eca58cf" />
       <keyword name="GetAtmosphericPropertiesChecksum" id="simul::sky::BaseSky::GetAtmosphericPropertiesChecksum" ref="classsimul_1_1sky_1_1BaseSky.html#ad4bb99ce45c29f897bc8e9b2c5ae1c95" />
       <keyword name="GetAtmosphericStateChecksum" id="simul::sky::BaseSky::GetAtmosphericStateChecksum" ref="classsimul_1_1sky_1_1BaseSky.html#ac0c6b3cda822d27d22b1684b6a854e37" />
       <keyword name="GetColourLossFactor" id="simul::sky::BaseSky::GetColourLossFactor" ref="classsimul_1_1sky_1_1BaseSky.html#a674275a4eb3822c8d7603a175b9f218f" />
       <keyword name="GetHorizonElevation" id="simul::sky::BaseSky::GetHorizonElevation" ref="classsimul_1_1sky_1_1BaseSky.html#a2432b97c2a1a51873367b0dea0a38895" />
       <keyword name="GetEarthShadow" id="simul::sky::BaseSky::GetEarthShadow" ref="classsimul_1_1sky_1_1BaseSky.html#a71cf4cba51a814950782309908eef356" />
       <keyword name="GetIsotropicColourLossFactor" id="simul::sky::BaseSky::GetIsotropicColourLossFactor" ref="classsimul_1_1sky_1_1BaseSky.html#a239fe2e6772d8220870a66d29ee2a07a" />
-      <keyword name="GetAnisotropicInscatterFactor" id="simul::sky::BaseSky::GetAnisotropicInscatterFactor" ref="classsimul_1_1sky_1_1BaseSky.html#ae93b45194d2c3c12690d7d58a291e1c0" />
-      <keyword name="GetIsotropicInscatter" id="simul::sky::BaseSky::GetIsotropicInscatter" ref="classsimul_1_1sky_1_1BaseSky.html#a3a030f4e157cb5f7d1bfcb0af770ce27" />
-      <keyword name="GetBlackbodyInscatter" id="simul::sky::BaseSky::GetBlackbodyInscatter" ref="classsimul_1_1sky_1_1BaseSky.html#acafb8a21053c94a2691403f8c19d1674" />
+      <keyword name="GetAnisotropicInscatterFactor" id="simul::sky::BaseSky::GetAnisotropicInscatterFactor" ref="classsimul_1_1sky_1_1BaseSky.html#a13fa789aae88d2f03f26be726fc5c760" />
+      <keyword name="GetIsotropicInscatter" id="simul::sky::BaseSky::GetIsotropicInscatter" ref="classsimul_1_1sky_1_1BaseSky.html#a80278e546d018a2e0759def5c22b1a93" />
+      <keyword name="GetBlackbodyInscatter" id="simul::sky::BaseSky::GetBlackbodyInscatter" ref="classsimul_1_1sky_1_1BaseSky.html#af70742632c675c2efa1a57fee52f883b" />
       <keyword name="GetInscatterAngularMultiplier" id="simul::sky::BaseSky::GetInscatterAngularMultiplier" ref="classsimul_1_1sky_1_1BaseSky.html#aef3cf69c90bbe853b1d309c0c8d930c7" />
       <keyword name="GetVisibilityDistance" id="simul::sky::BaseSky::GetVisibilityDistance" ref="classsimul_1_1sky_1_1BaseSky.html#ab1e1bc753f1f9fd945d89e1149b0eac2" />
       <keyword name="GetHazeForVisibilityDistance" id="simul::sky::BaseSky::GetHazeForVisibilityDistance" ref="classsimul_1_1sky_1_1BaseSky.html#a657021ae48f347e36de9de361f38e61f" />
@@ -1924,9 +1931,9 @@
       <keyword name="GetDirectionToLight" id="simul::sky::BaseSky::GetDirectionToLight" ref="classsimul_1_1sky_1_1BaseSky.html#a37e5ec9cbb3e2d6a245e3250b2a62af9" />
       <keyword name="GetHazeFactorAtAltitude" id="simul::sky::BaseSky::GetHazeFactorAtAltitude" ref="classsimul_1_1sky_1_1BaseSky.html#a07013f1dd255dd5c7266e18e4c1b4d96" />
       <keyword name="GetOvercastAtAltitude" id="simul::sky::BaseSky::GetOvercastAtAltitude" ref="classsimul_1_1sky_1_1BaseSky.html#a550ae6cdd82f5f707c7c72d10e29f29c" />
-      <keyword name="GetAmbientLight" id="simul::sky::BaseSky::GetAmbientLight" ref="classsimul_1_1sky_1_1BaseSky.html#a7205ed88cbe84d18c1b93b7898edae2f" />
+      <keyword name="GetAmbientLight" id="simul::sky::BaseSky::GetAmbientLight" ref="classsimul_1_1sky_1_1BaseSky.html#a3a0611700845ceca81d32af1d08303a7" />
       <keyword name="GetLocalSunIrradiance" id="simul::sky::BaseSky::GetLocalSunIrradiance" ref="classsimul_1_1sky_1_1BaseSky.html#a260ed00f9947a482f30e9191c71eefd7" />
-      <keyword name="GetLocalMoonIrradiance" id="simul::sky::BaseSky::GetLocalMoonIrradiance" ref="classsimul_1_1sky_1_1BaseSky.html#a4c6650fa5cdacee7a7bb139a97a2b098" />
+      <keyword name="GetLocalMoonIrradianceFactor" id="simul::sky::BaseSky::GetLocalMoonIrradianceFactor" ref="classsimul_1_1sky_1_1BaseSky.html#acf5cf56f72731eff1d423a262be925ed" />
       <keyword name="GetShortestDistanceToAltitude" id="simul::sky::BaseSky::GetShortestDistanceToAltitude" ref="classsimul_1_1sky_1_1BaseSky.html#a155557883c28a01cf80652ecffc74855" />
       <keyword name="GetLongestDistanceToAltitude" id="simul::sky::BaseSky::GetLongestDistanceToAltitude" ref="classsimul_1_1sky_1_1BaseSky.html#af1001dfdb36f070b811eed55d680371a" />
       <keyword name="GetDistanceToSpace" id="simul::sky::BaseSky::GetDistanceToSpace" ref="classsimul_1_1sky_1_1BaseSky.html#a165cfea7cb2e7d0b7262c567667f00b3" />
@@ -2021,8 +2028,8 @@
       <keyword name="simul::sky::SiderealSkyInterface" id="simul::sky::SiderealSkyInterface" ref="classsimul_1_1sky_1_1SiderealSkyInterface.html" />
       <keyword name="SiderealToEarthMatrix" id="simul::sky::SiderealSkyInterface::SiderealToEarthMatrix" ref="classsimul_1_1sky_1_1SiderealSkyInterface.html#a8899b5a5cd4625a0ae576f699d92d342" />
       <keyword name="simul::sky::Sky" id="simul::sky::Sky" ref="classsimul_1_1sky_1_1Sky.html" />
-      <keyword name="GetAnisotropicInscatterFactor" id="simul::sky::Sky::GetAnisotropicInscatterFactor" ref="classsimul_1_1sky_1_1Sky.html#a728d7a8acd7ab0b18b3994f8d0e2c3ec" />
-      <keyword name="GetBlackbodyInscatter" id="simul::sky::Sky::GetBlackbodyInscatter" ref="classsimul_1_1sky_1_1Sky.html#afc7dad3c899be7fc2046dbc14f7fe393" />
+      <keyword name="GetAnisotropicInscatterFactor" id="simul::sky::Sky::GetAnisotropicInscatterFactor" ref="classsimul_1_1sky_1_1Sky.html#a9e70d25ad1d373100f7f11d42a8a1e25" />
+      <keyword name="GetBlackbodyInscatter" id="simul::sky::Sky::GetBlackbodyInscatter" ref="classsimul_1_1sky_1_1Sky.html#a8e179f9860dbf50bd6b1f8139de9427c" />
       <keyword name="GetColourLossFactor" id="simul::sky::Sky::GetColourLossFactor" ref="classsimul_1_1sky_1_1Sky.html#a0c87fd6dfbcd4014cc5a4f7898146a93" />
       <keyword name="GetDirectionToLight" id="simul::sky::Sky::GetDirectionToLight" ref="classsimul_1_1sky_1_1Sky.html#ac3c9f017a0f737ad4b3093e9d01d9643" />
       <keyword name="GetDirectionToMoon" id="simul::sky::Sky::GetDirectionToMoon" ref="classsimul_1_1sky_1_1Sky.html#a23613c1b2ae4d10771c3446e1443caea" />
@@ -2032,8 +2039,8 @@
       <keyword name="GetHorizonElevation" id="simul::sky::Sky::GetHorizonElevation" ref="classsimul_1_1sky_1_1Sky.html#aa7de200e230abe50d6e205d45d6490bb" />
       <keyword name="GetInscatterAngularMultiplier" id="simul::sky::Sky::GetInscatterAngularMultiplier" ref="classsimul_1_1sky_1_1Sky.html#acf0e8f6af552baff3937c6e035539c20" />
       <keyword name="GetIsotropicColourLossFactor" id="simul::sky::Sky::GetIsotropicColourLossFactor" ref="classsimul_1_1sky_1_1Sky.html#a9ee43a52d6e1841f3d6d63e420d67abd" />
-      <keyword name="GetIsotropicInscatter" id="simul::sky::Sky::GetIsotropicInscatter" ref="classsimul_1_1sky_1_1Sky.html#ad56fc568606e68f294ffbf8742c2ba89" />
-      <keyword name="GetMoonIrradiance" id="simul::sky::Sky::GetMoonIrradiance" ref="classsimul_1_1sky_1_1Sky.html#a1aa81d5f25587c10a6c41efc3e7b1045" />
+      <keyword name="GetIsotropicInscatter" id="simul::sky::Sky::GetIsotropicInscatter" ref="classsimul_1_1sky_1_1Sky.html#a0d85eaa111f94295bc7f47e2c31fdb9a" />
+      <keyword name="GetMoonIrradianceFactor" id="simul::sky::Sky::GetMoonIrradianceFactor" ref="classsimul_1_1sky_1_1Sky.html#a5c8ae3d3d9d1497cd5197535a7521822" />
       <keyword name="GetOpticalLength" id="simul::sky::Sky::GetOpticalLength" ref="classsimul_1_1sky_1_1Sky.html#ac617bd7cf0e58a332d3152635f1ed5f2" />
       <keyword name="GetOzoneAtAltitude" id="simul::sky::Sky::GetOzoneAtAltitude" ref="classsimul_1_1sky_1_1Sky.html#a65b7a901819c9c991eb34890cb1fceeb" />
       <keyword name="GetOzoneOpticalLength" id="simul::sky::Sky::GetOzoneOpticalLength" ref="classsimul_1_1sky_1_1Sky.html#a1d33ed66186dfed20dd34812d4e9e464" />
@@ -2058,9 +2065,9 @@
       <keyword name="InitializePropertiesState" id="simul::sky::Sky::InitializePropertiesState" ref="classsimul_1_1sky_1_1Sky.html#acb5709db7f5ad51b56f13cab74b7134f" />
       <keyword name="GetHazeFactorAtAltitude" id="simul::sky::Sky::GetHazeFactorAtAltitude" ref="classsimul_1_1sky_1_1Sky.html#a07013f1dd255dd5c7266e18e4c1b4d96" />
       <keyword name="GetOvercastAtAltitude" id="simul::sky::Sky::GetOvercastAtAltitude" ref="classsimul_1_1sky_1_1Sky.html#a550ae6cdd82f5f707c7c72d10e29f29c" />
-      <keyword name="GetAmbientLight" id="simul::sky::Sky::GetAmbientLight" ref="classsimul_1_1sky_1_1Sky.html#a7205ed88cbe84d18c1b93b7898edae2f" />
+      <keyword name="GetAmbientLight" id="simul::sky::Sky::GetAmbientLight" ref="classsimul_1_1sky_1_1Sky.html#a3a0611700845ceca81d32af1d08303a7" />
       <keyword name="GetLocalSunIrradiance" id="simul::sky::Sky::GetLocalSunIrradiance" ref="classsimul_1_1sky_1_1Sky.html#a260ed00f9947a482f30e9191c71eefd7" />
-      <keyword name="GetLocalMoonIrradiance" id="simul::sky::Sky::GetLocalMoonIrradiance" ref="classsimul_1_1sky_1_1Sky.html#a4c6650fa5cdacee7a7bb139a97a2b098" />
+      <keyword name="GetLocalMoonIrradianceFactor" id="simul::sky::Sky::GetLocalMoonIrradianceFactor" ref="classsimul_1_1sky_1_1Sky.html#acf5cf56f72731eff1d423a262be925ed" />
       <keyword name="GetShortestDistanceToAltitude" id="simul::sky::Sky::GetShortestDistanceToAltitude" ref="classsimul_1_1sky_1_1Sky.html#a155557883c28a01cf80652ecffc74855" />
       <keyword name="GetLongestDistanceToAltitude" id="simul::sky::Sky::GetLongestDistanceToAltitude" ref="classsimul_1_1sky_1_1Sky.html#af1001dfdb36f070b811eed55d680371a" />
       <keyword name="GetDistanceToSpace" id="simul::sky::Sky::GetDistanceToSpace" ref="classsimul_1_1sky_1_1Sky.html#a165cfea7cb2e7d0b7262c567667f00b3" />
@@ -2223,6 +2230,8 @@
       <keyword name="SetSunBrightnessLimit" id="simul::sky::SkyKeyframer::SetSunBrightnessLimit" ref="classsimul_1_1sky_1_1SkyKeyframer.html#ad88d4486b4a5ace8f75467a4874c0da3" />
       <keyword name="GetMoonAlbedo" id="simul::sky::SkyKeyframer::GetMoonAlbedo" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a0086d9a7b0f78725422636b07cf34805" />
       <keyword name="SetMoonAlbedo" id="simul::sky::SkyKeyframer::SetMoonAlbedo" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a34f4535bfde83477e5796b42625efbcd" />
+      <keyword name="GetMoonColour" id="simul::sky::SkyKeyframer::GetMoonColour" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a0fab1a85b0a0a9a9edba3224d8b4f2f5" />
+      <keyword name="SetMoonColour" id="simul::sky::SkyKeyframer::SetMoonColour" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a182feb5afc00a9d90c189900123087e1" />
       <keyword name="GetDayLoop" id="simul::sky::SkyKeyframer::GetDayLoop" ref="classsimul_1_1sky_1_1SkyKeyframer.html#ac1207f34fb3216473ee1ce546c3b50f5" />
       <keyword name="SetDayLoop" id="simul::sky::SkyKeyframer::SetDayLoop" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a43fa77a3a5917d2680ad36efe3c13725" />
       <keyword name="GetLoopStart" id="simul::sky::SkyKeyframer::GetLoopStart" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a3971f737379804db154facbc0d37377d" />
@@ -2600,6 +2609,8 @@
       <file>classsimul_1_1clouds_1_1TimedNoise3D-members.html</file>
       <file>namespacesimul_1_1clouds_1_1TextureGenerator.html</file>
       <file>namespacesimul_1_1crossplatform.html</file>
+      <file>structsimul_1_1crossplatform_1_1AmortizationStruct.html</file>
+      <file>structsimul_1_1crossplatform_1_1AmortizationStruct-members.html</file>
       <file>classsimul_1_1crossplatform_1_1BaseFramebuffer.html</file>
       <file>classsimul_1_1crossplatform_1_1BaseFramebuffer-members.html</file>
       <file>classsimul_1_1crossplatform_1_1BaseOpticsRenderer.html</file>

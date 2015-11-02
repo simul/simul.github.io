@@ -1,5 +1,5 @@
 ---
-title: Reference
+title:  Files (x86)/Jenkins/jobs/Simul Installers/workspace/Simul/Base/ProfilingInterface.h Source File
 layout: reference
 ---
 <!-- HTML header for doxygen 1.8.9.1-->
@@ -24,7 +24,7 @@ layout: reference
   <td id="projectlogo"><img alt="Logo" src="Simul-Logo-200x60.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">trueSKY
-   &#160;<span id="projectnumber">3.8.2</span>
+   &#160;<span id="projectnumber">3.9.0.149</span>
    </div>
   </td>
  </tr>
@@ -82,7 +82,7 @@ layout: reference
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classsimul_1_1base_1_1BaseProfilingInterface.html">   39</a></span>&#160;        <span class="keyword">class </span>SIMUL_BASE_EXPORT <a class="code" href="classsimul_1_1base_1_1BaseProfilingInterface.html">BaseProfilingInterface</a></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        {</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classsimul_1_1base_1_1BaseProfilingInterface.html#aeefa3778772c45fc2d8ed16978784ad1">   44</a></span>&#160;            <span class="keyword">virtual</span> <span class="keyword">const</span> ProfileData *<a class="code" href="classsimul_1_1base_1_1BaseProfilingInterface.html#aeefa3778772c45fc2d8ed16978784ad1">GetEvent</a>(<span class="keyword">const</span> ProfileData *parent,<span class="keywordtype">int</span> i)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classsimul_1_1base_1_1BaseProfilingInterface.html#ae59d8c2a3538fe1bf204bb1e8f323e33">   44</a></span>&#160;            <span class="keyword">virtual</span> <span class="keyword">const</span> ProfileData *<a class="code" href="classsimul_1_1base_1_1BaseProfilingInterface.html#ae59d8c2a3538fe1bf204bb1e8f323e33">GetEvent</a>(<span class="keyword">const</span> ProfileData *,<span class="keywordtype">int</span> )<span class="keyword"> const</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">            </span>{</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            }</div>
@@ -262,10 +262,10 @@ layout: reference
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="classsimul_1_1base_1_1GpuProfilingInterface_html_a4eb14d82a41bbd9cc8166370ebc70664"><div class="ttname"><a href="classsimul_1_1base_1_1GpuProfilingInterface.html#a4eb14d82a41bbd9cc8166370ebc70664">simul::base::GpuProfilingInterface::GetMaxLevel</a></div><div class="ttdeci">virtual int GetMaxLevel() const </div><div class="ttdoc">Call this to get the maximum level of the profiling tree. </div><div class="ttdef"><b>Definition:</b> <a href="ProfilingInterface_8h_source.html#l00095">ProfilingInterface.h:95</a></div></div>
-<div class="ttc" id="classsimul_1_1base_1_1BaseProfilingInterface_html_aeefa3778772c45fc2d8ed16978784ad1"><div class="ttname"><a href="classsimul_1_1base_1_1BaseProfilingInterface.html#aeefa3778772c45fc2d8ed16978784ad1">simul::base::BaseProfilingInterface::GetEvent</a></div><div class="ttdeci">virtual const ProfileData * GetEvent(const ProfileData *parent, int i) const </div><div class="ttdef"><b>Definition:</b> <a href="ProfilingInterface_8h_source.html#l00044">ProfilingInterface.h:44</a></div></div>
 <div class="ttc" id="namespacesimul_1_1base_html_a9fcc41a591adc1c69a44054a57370345"><div class="ttname"><a href="namespacesimul_1_1base.html#a9fcc41a591adc1c69a44054a57370345">simul::base::SetProfilingInterface</a></div><div class="ttdeci">void SetProfilingInterface(ProfilingInterface *p)</div><div class="ttdoc">Set the CPU profiler. Future use of SIMUL_PROFILE_START or SIMUL_COMBINED_PROFILE_START will use that...</div></div>
 <div class="ttc" id="classsimul_1_1base_1_1ProfilingInterface_html_a5c7de10d6d974ac501332404b36e8064"><div class="ttname"><a href="classsimul_1_1base_1_1ProfilingInterface.html#a5c7de10d6d974ac501332404b36e8064">simul::base::ProfilingInterface::SetMaxLevel</a></div><div class="ttdeci">virtual void SetMaxLevel(int m)</div><div class="ttdoc">Call this to set the maximum level of the profiling tree. </div><div class="ttdef"><b>Definition:</b> <a href="ProfilingInterface_8h_source.html#l00063">ProfilingInterface.h:63</a></div></div>
 <div class="ttc" id="classsimul_1_1base_1_1ProfilingInterface_html"><div class="ttname"><a href="classsimul_1_1base_1_1ProfilingInterface.html">simul::base::ProfilingInterface</a></div><div class="ttdoc">simul::base::DefaultProfiler inherits from ProfilingInterface to measure CPU performance. </div><div class="ttdef"><b>Definition:</b> <a href="ProfilingInterface_8h_source.html#l00050">ProfilingInterface.h:50</a></div></div>
+<div class="ttc" id="classsimul_1_1base_1_1BaseProfilingInterface_html_ae59d8c2a3538fe1bf204bb1e8f323e33"><div class="ttname"><a href="classsimul_1_1base_1_1BaseProfilingInterface.html#ae59d8c2a3538fe1bf204bb1e8f323e33">simul::base::BaseProfilingInterface::GetEvent</a></div><div class="ttdeci">virtual const ProfileData * GetEvent(const ProfileData *, int) const </div><div class="ttdef"><b>Definition:</b> <a href="ProfilingInterface_8h_source.html#l00044">ProfilingInterface.h:44</a></div></div>
 <div class="ttc" id="classsimul_1_1base_1_1GpuProfilingInterface_html"><div class="ttname"><a href="classsimul_1_1base_1_1GpuProfilingInterface.html">simul::base::GpuProfilingInterface</a></div><div class="ttdoc">A virtual interface base class for GPU performance measurement. </div><div class="ttdef"><b>Definition:</b> <a href="ProfilingInterface_8h_source.html#l00076">ProfilingInterface.h:76</a></div></div>
 <div class="ttc" id="classsimul_1_1base_1_1BaseProfilingInterface_html"><div class="ttname"><a href="classsimul_1_1base_1_1BaseProfilingInterface.html">simul::base::BaseProfilingInterface</a></div><div class="ttdoc">A virtual interface base class for classes that can profile for performance. </div><div class="ttdef"><b>Definition:</b> <a href="ProfilingInterface_8h_source.html#l00039">ProfilingInterface.h:39</a></div></div>
 <div class="ttc" id="namespacesimul_1_1base_html_a62bae082e52cb6c75eb0f9d5694f5fba"><div class="ttname"><a href="namespacesimul_1_1base.html#a62bae082e52cb6c75eb0f9d5694f5fba">simul::base::GetProfilingInterface</a></div><div class="ttdeci">ProfilingInterface * GetProfilingInterface()</div><div class="ttdoc">Returns a pointer to the current CPU profiler. </div></div>
@@ -280,7 +280,7 @@ layout: reference
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/>
-<address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Thu Oct 22 2015 16:03:11</small></address>
+<address style="text-align: right;">trueSKY VERSION 3.9.0.149<small>
+Fri Oct 30 2015 09:42:51</small></address>
 </body>
 </html>
