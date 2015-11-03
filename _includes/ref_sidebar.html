@@ -51,6 +51,7 @@
               {% assign level2 = site.array %}
               {% for node2 in site.pages %}
                 {% assign node2_url =  node2.url | remove: ".html"  %}
+                {% assign node2_url = node2_url | replace: "_1_1","/" %}
                 {% if node2_url contains node_url and node2_url != node_url %}
                   {% assign level2 = level2 | push: node2 %}
                 {% endif %}
@@ -59,6 +60,23 @@
                 <ul>
                 {%for m2 in level2 %}
                   <li><a href='{{m2.url}}'>{{m2.title}}</a></li>
+                  {% if page_url contains node_url %}
+                    {% assign level3 = site.array %}
+                    {% for node3 in site.pages %}
+                      {% assign node3_url =  node3.url | remove: ".html"  %}
+                      {% assign node3_url = node3_url | replace: "_1_1","/" %}
+                      {% if node3_url contains node_url and node3_url != node_url %}
+                        {% assign level3 = level3 | push: node3 %}
+                      {% endif %}
+                    {% endfor %}
+                    {% if level3.size > 0 %}
+                      <ul>
+                      {%for m3 in level3 %}
+                        <li><a href='{{m3.url}}'>{{m3.title}}</a></li>
+                      {% endfor %}
+                      </ul>
+                    {% endif%}
+                  {% endif %}
                 {% endfor %}
                 </ul>
               {% endif%}
