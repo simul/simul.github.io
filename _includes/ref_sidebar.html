@@ -29,8 +29,13 @@
          page_url {{ page_url }}
       <ul>
       {% assign sorted_pages = site.pages | sort: "url" %}
+      
       {% for node in sorted_pages %}
-        {% assign node_url =  node.url | remove: ".html"  %}
+        {% assign node.path =  node.url | remove: ".html"  %}
+      {% endfor %}
+
+      {% for node in sorted_pages %}
+        {% assign node_url =  node.path %}
         {% assign node_url = node_url | replace: "_1_1","/" %}
         <!--B{{ node_url }}-->
         {% assign node_url_parts = node_url | split: '/' %}
