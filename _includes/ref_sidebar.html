@@ -30,13 +30,14 @@
       {% assign sorted_pages = site.pages | sort: "url" %}
 
       {% for node in sorted_pages %}
-        {% assign node.path =  node.url | remove: ".html"  %}
+        {% assign node.path = node.url | remove: ".html" %}
+        {% assign node.path = node.path | replace: "_1_1","/" %}
         {% if node.url == page.url %}
           {% assign this_node = node %}
         {% endif %}
       {% endfor %}
 
-         this_node {{ this_node.path }}
+         this_node.path {{ this_node.path }}
       {% for node in sorted_pages %}
         {% assign node_url =  node.path %}
         {% assign node_url = node_url | replace: "_1_1","/" %}
