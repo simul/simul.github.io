@@ -40,8 +40,8 @@
          this_node.path {{ this_node.path }}
       {% for node in sorted_pages %}
         {% assign node_url =  node.path %}
+B{{ node_url }}
         {% assign node_url = node_url | replace: "_1_1","/" %}
-        <!--B{{ node_url }}-->
         {% assign node_url_parts = node_url | split: '/' %}
         {% assign node_url_parts_size = node_url_parts | size %}
         {% assign filename = node_url_parts | last %}
