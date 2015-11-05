@@ -29,7 +29,7 @@
       <ul>
       {% assign sorted_pages = site.pages | sort: "url" %}
 
-      page.url is {{ page.url }}
+      page url is {{ page.url }}
 
       {% assign paths = site.array %}
       {% for node in sorted_pages %}
