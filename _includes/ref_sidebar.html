@@ -41,7 +41,7 @@
         {% assign path = path | remove: ".html" %}
         {% assign path = path | replace: "_1_1","/" %}
         {% assign path = path | remove_first: "/" %}
-
+{{ path }}
         {% assign psz = path | size %}
         {% if psz == 0 %}
           {% assign path = "/" %}
