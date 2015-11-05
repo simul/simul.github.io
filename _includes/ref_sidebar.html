@@ -54,10 +54,9 @@
         {% endif %}
       {% endfor %}
 
-A {{ this_path }}
+V {{ this_path }}
       {% for node in sorted_pages %}
         {% assign node_path = paths[forloop.index] %}
-        {% assign node_title = titles[forloop.index] %}
         {% assign node_url =  node_path %}
         {% assign node_url = node_url | remove: ".html" %}
         {% assign node_url = node_url | replace: "_1_1","/" %}
@@ -69,6 +68,7 @@ A {{ this_path }}
            {% continue %}
         {% endif %}
         {% if node_url contains "_8md" or node_url_parts_size == 1 %} 
+          {% assign node_title = titles[forloop.index] %}
             {% assign sz = node_title | size %}
             {% if sz < 2 %}
               {% continue %}
