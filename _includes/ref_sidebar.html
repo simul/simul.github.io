@@ -39,7 +39,7 @@
 
          this_node.path {{ this_node.path }}
       {% for node in sorted_pages %}
-        {% assign node_url =  node.path %}
+        {% assign node_url =  node.url %}
 B{{ node_url }}
         {% assign node_url = node_url | replace: "_1_1","/" %}
         {% assign node_url_parts = node_url | split: '/' %}
