@@ -39,9 +39,9 @@
         {% endif %}
       {% endfor %}
 
-         U {{ paths[0] }}
       {% for node in sorted_pages %}
         {% assign node_path = paths[forloop.index] %}
+         V {{ node_path }}
         {% assign node_url =  node.url %}
         {% assign node_url = node_url | remove: ".html" %}
         {% assign node_url = node_url | replace: "_1_1","/" %}
