@@ -39,7 +39,7 @@
         {% endif %}
       {% endfor %}
 
-         this_path {{ this_node.path }}
+         U {{ paths[0] }}
       {% for node in sorted_pages %}
         {% assign node_path = paths[forloop.index] %}
         {% assign node_url =  node.url %}
