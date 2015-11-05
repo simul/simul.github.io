@@ -1,6 +1,7 @@
 ---
 title: simul::clouds::BaseWeatherRenderer Class Reference
 layout: reference
+url: simul::clouds::BaseWeatherRenderer Class Reference
 ---
 <!-- HTML header for doxygen 1.8.9.1-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -24,7 +25,7 @@ layout: reference
   <td id="projectlogo"><img alt="Logo" src="Simul-Logo-200x60.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">trueSKY
-   &#160;<span id="projectnumber">3.9.0.149</span>
+   &#160;<span id="projectnumber">3.9.0.150</span>
    </div>
   </td>
  </tr>
@@ -63,10 +64,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ab46b9cef3db6ffe62161344329f93ba8">CreateSubObjects</a> ()</td></tr>
 <tr class="memdesc:ab46b9cef3db6ffe62161344329f93ba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the member sub-objects: CloudRenderer etc. <br /></td></tr>
 <tr class="separator:ab46b9cef3db6ffe62161344329f93ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ed8c2c047dae95fceb92a75c4daf61e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ed8c2c047dae95fceb92a75c4daf61e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a0ed8c2c047dae95fceb92a75c4daf61e">DoOcclusionTests</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext)</td></tr>
-<tr class="memdesc:a0ed8c2c047dae95fceb92a75c4daf61e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Using depth culling and occlusion queries, work out if the sun is visible. <br /></td></tr>
-<tr class="separator:a0ed8c2c047dae95fceb92a75c4daf61e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08d0b4de5a2abca54ea8e1694f5e65da"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08d0b4de5a2abca54ea8e1694f5e65da"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a08d0b4de5a2abca54ea8e1694f5e65da">EnableSky</a> (bool s)</td></tr>
 <tr class="memdesc:a08d0b4de5a2abca54ea8e1694f5e65da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable the sky. <br /></td></tr>
@@ -134,23 +131,20 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a7170fc074f1733f44941a2ec26314141">RemoveView</a> (int view_id)</td></tr>
 <tr class="memdesc:a7170fc074f1733f44941a2ec26314141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensure that per-view objects are destroyed for the view in question: they will be rebuilt if needed later. <br /></td></tr>
 <tr class="separator:a7170fc074f1733f44941a2ec26314141"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a130259c62a9fb2ea74e1cec7170985c4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a130259c62a9fb2ea74e1cec7170985c4">Render</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, TrueSkyRenderMode renderMode, float exposure, float gamma, crossplatform::Texture *mainDepthTexture, const <a class="el" href="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1Viewport">crossplatform::Viewport</a> *depthViewport)</td></tr>
+<tr class="memitem:a130259c62a9fb2ea74e1cec7170985c4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a130259c62a9fb2ea74e1cec7170985c4">Render</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, <a class="el" href="namespacesimul_1_1clouds.html#a1dc56c71e4d8698ef947bc727ca3124d">TrueSkyRenderMode</a> renderMode, float exposure, float gamma, crossplatform::Texture *mainDepthTexture, const <a class="el" href="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1Viewport">crossplatform::Viewport</a> *depthViewport)</td></tr>
 <tr class="memdesc:a130259c62a9fb2ea74e1cec7170985c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the sky including atmospherics, into the current rendertarget, using a supplied depth texture.  <a href="#a130259c62a9fb2ea74e1cec7170985c4">More...</a><br /></td></tr>
 <tr class="separator:a130259c62a9fb2ea74e1cec7170985c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5680cd0fc2ca00886af03dd1081e58d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5680cd0fc2ca00886af03dd1081e58d6"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a5680cd0fc2ca00886af03dd1081e58d6">RenderCelestialBackground</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, crossplatform::Texture *depthTexture, vec4 viewportTextureRegionXYWH, float exposure)</td></tr>
 <tr class="memdesc:a5680cd0fc2ca00886af03dd1081e58d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the sun, moon and stars - call this while the depth buffer is bound. <br /></td></tr>
 <tr class="separator:a5680cd0fc2ca00886af03dd1081e58d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfe4b8ebbb6154e93a7d573c93d7b643"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#abfe4b8ebbb6154e93a7d573c93d7b643">RenderMixedResolution</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, bool is_cubemap, float exposure, float gamma, crossplatform::Texture *mainDepthTexture, const vec4 &amp;depthViewportXYWH)</td></tr>
-<tr class="memdesc:abfe4b8ebbb6154e93a7d573c93d7b643"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the sky including atmospherics as an overlay, using a supplied platform-dependent depth texture.  <a href="#abfe4b8ebbb6154e93a7d573c93d7b643">More...</a><br /></td></tr>
-<tr class="separator:abfe4b8ebbb6154e93a7d573c93d7b643"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15d8a87644e651a7d997c2e08658ed5b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a15d8a87644e651a7d997c2e08658ed5b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a15d8a87644e651a7d997c2e08658ed5b">RenderOverlays</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext)</td></tr>
-<tr class="memdesc:a15d8a87644e651a7d997c2e08658ed5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the debug overlays. <br /></td></tr>
-<tr class="separator:a15d8a87644e651a7d997c2e08658ed5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d02e91268b6f14bbccc386867a73f0c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a6d02e91268b6f14bbccc386867a73f0c">RenderSkyAsOverlay</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, bool is_cubemap, float exposure, float gamma, bool buffered, crossplatform::Texture *depthTexture, const vec4 &amp;depthViewportXYWH, bool doFinalCloudBufferToScreenComposite, vec2 pixelOffset)</td></tr>
-<tr class="memdesc:a6d02e91268b6f14bbccc386867a73f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the sky including atmospherics as an overlay, using a supplied platform-dependent depth texture.  <a href="#a6d02e91268b6f14bbccc386867a73f0c">More...</a><br /></td></tr>
-<tr class="separator:a6d02e91268b6f14bbccc386867a73f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac3ecaa5a9128ea4d7afc46d9eecb23b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aac3ecaa5a9128ea4d7afc46d9eecb23b">RenderMixedResolution</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, <a class="el" href="namespacesimul_1_1clouds.html#a1dc56c71e4d8698ef947bc727ca3124d">TrueSkyRenderMode</a> renderMode, float exposure, float gamma, crossplatform::Texture *mainDepthTexture, const vec4 &amp;depthViewportXYWH)</td></tr>
+<tr class="memdesc:aac3ecaa5a9128ea4d7afc46d9eecb23b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the sky including atmospherics as an overlay, using a supplied platform-dependent depth texture.  <a href="#aac3ecaa5a9128ea4d7afc46d9eecb23b">More...</a><br /></td></tr>
+<tr class="separator:aac3ecaa5a9128ea4d7afc46d9eecb23b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3bb208131941ffec282235785ea9028"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad3bb208131941ffec282235785ea9028"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ad3bb208131941ffec282235785ea9028">RenderOverlays</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, int view_id=-1)</td></tr>
+<tr class="memdesc:ad3bb208131941ffec282235785ea9028"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the debug overlays. <br /></td></tr>
+<tr class="separator:ad3bb208131941ffec282235785ea9028"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72de865052f574a909e0700a7fb5d303"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a72de865052f574a909e0700a7fb5d303">RestoreDeviceObjects</a> (<a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html">crossplatform::RenderPlatform</a> *renderPlatform)</td></tr>
 <tr class="separator:a72de865052f574a909e0700a7fb5d303"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90be7b86481fd34ff20ea0d7b996eb45"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90be7b86481fd34ff20ea0d7b996eb45"></a>
@@ -300,7 +294,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div class="textblock"><p>The main base class for all weather renderers, such as SimulGLWeatherRenderer, SimulWeatherRenderer (DX11) etc.</p>
 <p>The derived classes of <a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html">BaseWeatherRenderer</a> create and maintain the renderers for weather elements such as clouds, sky, rain and so on. So to use these sub-renderers it is usual to create an instance of one of the weather renderers, and allow this instance to manage the others. </p>
 
-<p>Definition at line <a class="el" href="BaseWeatherRenderer_8h_source.html#l00080">80</a> of file <a class="el" href="BaseWeatherRenderer_8h_source.html">BaseWeatherRenderer.h</a>.</p>
+<p>Definition at line <a class="el" href="BaseWeatherRenderer_8h_source.html#l00068">68</a> of file <a class="el" href="BaseWeatherRenderer_8h_source.html">BaseWeatherRenderer.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ae2485b5d0f5a08a8076632c41d407acf"></a>
 <div class="memitem">
@@ -921,85 +915,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a class="anchor" id="a6d02e91268b6f14bbccc386867a73f0c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void simul::clouds::BaseWeatherRenderer::RenderSkyAsOverlay </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;&#160;</td>
-          <td class="paramname"><em>deviceContext</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>is_cubemap</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>exposure</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>gamma</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>buffered</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">crossplatform::Texture *&#160;</td>
-          <td class="paramname"><em>depthTexture</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const vec4 &amp;&#160;</td>
-          <td class="paramname"><em>depthViewportXYWH</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>doFinalCloudBufferToScreenComposite</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vec2&#160;</td>
-          <td class="paramname"><em>pixelOffset</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Render the sky including atmospherics as an overlay, using a supplied platform-dependent depth texture. </p>
-<p><em>deviceContext</em> is the platform-dependent render context, <em>exposure</em> is a multiplier for the rendered sky brightness, <em>buffered</em> determines whether to render to a low-res buffer If <em>is_cubemap</em> is set, low-definition rendering is used. The <em>mainDepthTexture</em> is an API-dependent texture or texture resource pointer. The <em>lowResDepthTexture</em> is an API-dependent texture or texture resource pointer. If lowResDepthTexture is non-null then we do low-res cloud rendering to an off-screen target of matching dimensions for compositing onto the full-res target. The <em>view_id</em> is an integer that distinguishes between multiple simultaneous viewports onscreen. By convention, viewport 0 is the main view, and viewport 1 is the cubemap for reflections and lighting. <em>Always</em> use a separate viewport id when rendering cubemaps and lightprobe view, from when rendering the main view. The <em>depthViewportXYWH</em> determines what part of the depth texture is to be used. <em>doFinalCloudBufferToScreenComposite</em> indicates whether truesky should do a final low-res cloud up-sample to the main target </p>
-
-</div>
-</div>
 <a class="anchor" id="a130259c62a9fb2ea74e1cec7170985c4"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1016,7 +931,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">TrueSkyRenderMode&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacesimul_1_1clouds.html#a1dc56c71e4d8698ef947bc727ca3124d">TrueSkyRenderMode</a>&#160;</td>
           <td class="paramname"><em>renderMode</em>, </td>
         </tr>
         <tr>
@@ -1061,7 +976,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a class="anchor" id="abfe4b8ebbb6154e93a7d573c93d7b643"></a>
+<a class="anchor" id="aac3ecaa5a9128ea4d7afc46d9eecb23b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1077,8 +992,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>is_cubemap</em>, </td>
+          <td class="paramtype"><a class="el" href="namespacesimul_1_1clouds.html#a1dc56c71e4d8698ef947bc727ca3124d">TrueSkyRenderMode</a>&#160;</td>
+          <td class="paramname"><em>renderMode</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1236,7 +1151,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/>
-<address style="text-align: right;">trueSKY VERSION 3.9.0.149<small>
-Fri Oct 30 2015 09:42:52</small></address>
+<address style="text-align: right;">trueSKY VERSION 3.9.0.150<small>
+Thu Nov 5 2015 06:19:56</small></address>
 </body>
 </html>

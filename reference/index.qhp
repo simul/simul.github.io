@@ -5,7 +5,7 @@
   <filterSection>
     <filterAttribute>doxygen</filterAttribute>
     <toc>
-      <section title="trueSKY 3.9.0.149" ref="index.html">
+      <section title="trueSKY 3.9.0.150" ref="index.html">
         <section title="Developer Manual" ref="index.html">
           <section title="Introduction" ref="introduction.html" />
           <section title="Getting Started" ref="gettingstarted.html" />
@@ -388,7 +388,7 @@
       <keyword name="IsCameraAboveCloudBase" id="simul::clouds::BaseCloudRenderer::IsCameraAboveCloudBase" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a41f9007498f3d39428d7e2d6c619fab0" />
       <keyword name="PreRenderUpdate" id="simul::clouds::BaseCloudRenderer::PreRenderUpdate" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ae15f20c0ff731ccf3cccb85a9eb4734c" />
       <keyword name="RecompileShaders" id="simul::clouds::BaseCloudRenderer::RecompileShaders" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a689bba2dd0ae007cb327f679e4e37f8f" />
-      <keyword name="Render" id="simul::clouds::BaseCloudRenderer::Render" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ac7ddbcfead8aec4bb512497ab77d4aea" />
+      <keyword name="Render" id="simul::clouds::BaseCloudRenderer::Render" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a55069cc5afcba3c90718b3dc8cbb498b" />
       <keyword name="RenderCloudShadowTexture" id="simul::clouds::BaseCloudRenderer::RenderCloudShadowTexture" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ae50ae2aa01480689b15cef2898abe056" />
       <keyword name="RenderCrossSections" id="simul::clouds::BaseCloudRenderer::RenderCrossSections" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ad811fdc6aaa8be177802b76e015e7dcd" />
       <keyword name="RenderQueries" id="simul::clouds::BaseCloudRenderer::RenderQueries" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a7b1e3a45b4b786862bb191cf96f0af2d" />
@@ -458,7 +458,6 @@
       <keyword name="BaseWeatherRenderer" id="simul::clouds::BaseWeatherRenderer::BaseWeatherRenderer" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a913f9cdf54967ed3cab0c4dbf0e649cd" />
       <keyword name="ConnectInterfaces" id="simul::clouds::BaseWeatherRenderer::ConnectInterfaces" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aa776a6b711992de94dd2752cffeb49cc" />
       <keyword name="CreateSubObjects" id="simul::clouds::BaseWeatherRenderer::CreateSubObjects" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ab46b9cef3db6ffe62161344329f93ba8" />
-      <keyword name="DoOcclusionTests" id="simul::clouds::BaseWeatherRenderer::DoOcclusionTests" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a0ed8c2c047dae95fceb92a75c4daf61e" />
       <keyword name="EnableSky" id="simul::clouds::BaseWeatherRenderer::EnableSky" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a08d0b4de5a2abca54ea8e1694f5e65da" />
       <keyword name="GetAmbientLightColour" id="simul::clouds::BaseWeatherRenderer::GetAmbientLightColour" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a69309de7781285fd08f7b07dd7ab56d7" />
       <keyword name="GetBase2DCloudRenderer" id="simul::clouds::BaseWeatherRenderer::GetBase2DCloudRenderer" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ab9193041c8e3f71a296f82ff4e69d1d5" />
@@ -479,9 +478,8 @@
       <keyword name="RemoveView" id="simul::clouds::BaseWeatherRenderer::RemoveView" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a7170fc074f1733f44941a2ec26314141" />
       <keyword name="Render" id="simul::clouds::BaseWeatherRenderer::Render" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a130259c62a9fb2ea74e1cec7170985c4" />
       <keyword name="RenderCelestialBackground" id="simul::clouds::BaseWeatherRenderer::RenderCelestialBackground" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a5680cd0fc2ca00886af03dd1081e58d6" />
-      <keyword name="RenderMixedResolution" id="simul::clouds::BaseWeatherRenderer::RenderMixedResolution" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#abfe4b8ebbb6154e93a7d573c93d7b643" />
-      <keyword name="RenderOverlays" id="simul::clouds::BaseWeatherRenderer::RenderOverlays" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a15d8a87644e651a7d997c2e08658ed5b" />
-      <keyword name="RenderSkyAsOverlay" id="simul::clouds::BaseWeatherRenderer::RenderSkyAsOverlay" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a6d02e91268b6f14bbccc386867a73f0c" />
+      <keyword name="RenderMixedResolution" id="simul::clouds::BaseWeatherRenderer::RenderMixedResolution" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aac3ecaa5a9128ea4d7afc46d9eecb23b" />
+      <keyword name="RenderOverlays" id="simul::clouds::BaseWeatherRenderer::RenderOverlays" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ad3bb208131941ffec282235785ea9028" />
       <keyword name="RestoreDeviceObjects" id="simul::clouds::BaseWeatherRenderer::RestoreDeviceObjects" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a72de865052f574a909e0700a7fb5d303" />
       <keyword name="SetAllDownscale" id="simul::clouds::BaseWeatherRenderer::SetAllDownscale" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a90be7b86481fd34ff20ea0d7b996eb45" />
       <keyword name="SetBlurTexture" id="simul::clouds::BaseWeatherRenderer::SetBlurTexture" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aa0c05a43c67c63d4bf316c362c3e4a85" />
@@ -1283,7 +1281,7 @@
       <keyword name="DeactivateLowRes" id="simul::crossplatform::TwoResFramebuffer::DeactivateLowRes" ref="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html#abd0125d249494193ccff57dddeb38620" />
       <keyword name="GetLowResDepthTexture" id="simul::crossplatform::TwoResFramebuffer::GetLowResDepthTexture" ref="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html#aa0ccb8c69a873991ec9c157681f9293d" />
       <keyword name="RenderDepthBuffers" id="simul::crossplatform::TwoResFramebuffer::RenderDepthBuffers" ref="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html#ad581de9f35a0d0c4327e894d7de5fed5" />
-      <keyword name="UpdatePixelOffset" id="simul::crossplatform::TwoResFramebuffer::UpdatePixelOffset" ref="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html#ac64001cf31a359c84f2f169528e03c0e" />
+      <keyword name="UpdatePixelOffset" id="simul::crossplatform::TwoResFramebuffer::UpdatePixelOffset" ref="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html#ac0bd3bdfe30084a0b7ab6b3293e833fc" />
       <keyword name="simul::dx11::ConstantBuffer" id="simul::dx11::ConstantBuffer" ref="classsimul_1_1dx11_1_1ConstantBuffer.html" />
       <keyword name="Apply" id="simul::dx11::ConstantBuffer::Apply" ref="classsimul_1_1dx11_1_1ConstantBuffer.html#ae0a51dde8ecda8c835d676c63a1c6bb8" />
       <keyword name="InvalidateDeviceObjects" id="simul::dx11::ConstantBuffer::InvalidateDeviceObjects" ref="classsimul_1_1dx11_1_1ConstantBuffer.html#a5f38cd4f3cac16d28ab53e6ecbd449cd" />
@@ -1428,6 +1426,8 @@
       <keyword name="SetAntialiasing" id="simul::dx11::TrueSkyRenderer::SetAntialiasing" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#aa28c35e099df6fafdbd575179e39fa47" />
       <keyword name="GetSphericalHarmonicsBands" id="simul::dx11::TrueSkyRenderer::GetSphericalHarmonicsBands" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#aaddf49680078cd8bbef17194cece3631" />
       <keyword name="SetSphericalHarmonicsBands" id="simul::dx11::TrueSkyRenderer::SetSphericalHarmonicsBands" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#ab9729135868f2e1caa18ab804725a2d6" />
+      <keyword name="GetOverlayViewId" id="simul::dx11::TrueSkyRenderer::GetOverlayViewId" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#af12858c7c146e1334e57091795323269" />
+      <keyword name="SetOverlayViewId" id="simul::dx11::TrueSkyRenderer::SetOverlayViewId" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#adc20bafb776d963ec5c01726379bedad" />
       <keyword name="simul::dx11::VertexBuffer" id="simul::dx11::VertexBuffer" ref="structsimul_1_1dx11_1_1VertexBuffer.html" />
       <keyword name="apply" id="simul::dx11::VertexBuffer::apply" ref="structsimul_1_1dx11_1_1VertexBuffer.html#aff39d40d2bdae3ebdab931adf5982f65" />
       <keyword name="ensureBufferSize" id="simul::dx11::VertexBuffer::ensureBufferSize" ref="structsimul_1_1dx11_1_1VertexBuffer.html#af31f6ab343f6d0d640cdab9bef29a15c" />
@@ -1780,6 +1780,8 @@
       <keyword name="SetAntialiasing" id="simul::plugin::PluginTrueSkyRenderer::SetAntialiasing" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#aa28c35e099df6fafdbd575179e39fa47" />
       <keyword name="GetSphericalHarmonicsBands" id="simul::plugin::PluginTrueSkyRenderer::GetSphericalHarmonicsBands" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#aaddf49680078cd8bbef17194cece3631" />
       <keyword name="SetSphericalHarmonicsBands" id="simul::plugin::PluginTrueSkyRenderer::SetSphericalHarmonicsBands" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#ab9729135868f2e1caa18ab804725a2d6" />
+      <keyword name="GetOverlayViewId" id="simul::plugin::PluginTrueSkyRenderer::GetOverlayViewId" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#af12858c7c146e1334e57091795323269" />
+      <keyword name="SetOverlayViewId" id="simul::plugin::PluginTrueSkyRenderer::SetOverlayViewId" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#adc20bafb776d963ec5c01726379bedad" />
       <keyword name="simul::sky" id="simul::sky" ref="namespacesimul_1_1sky.html" />
       <keyword name="CalcMieCoefficients" id="simul::sky::CalcMieCoefficients" ref="namespacesimul_1_1sky.html#a283fe89a61994da0d00d10b19c2b41de" />
       <keyword name="simul::sky::AtmosphericScatteringInterface" id="simul::sky::AtmosphericScatteringInterface" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html" />

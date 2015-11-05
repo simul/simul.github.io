@@ -1,6 +1,7 @@
 ---
 title: simul::sky::BaseSkyRenderer Class Reference
 layout: reference
+url: simul::sky::BaseSkyRenderer Class Reference
 ---
 <!-- HTML header for doxygen 1.8.9.1-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -24,7 +25,7 @@ layout: reference
   <td id="projectlogo"><img alt="Logo" src="Simul-Logo-200x60.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">trueSKY
-   &#160;<span id="projectnumber">3.9.0.149</span>
+   &#160;<span id="projectnumber">3.9.0.150</span>
    </div>
   </td>
  </tr>
@@ -210,12 +211,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <li>Rendering planets (e.g. the Moon): using RenderPlanets(void *context,float exposure)</li>
 <li>Rendering the sun, using RenderSun(void *context,float exposure)</li>
 </ul>
-<p>See <a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a6d02e91268b6f14bbccc386867a73f0c">BaseWeatherRenderer::RenderSkyAsOverlay</a> and <a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#abfe4b8ebbb6154e93a7d573c93d7b643">RenderMixedResolution</a>.</p>
+<p>See <a class="el" href="">BaseWeatherRenderer::RenderSkyAsOverlay</a> and <a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aac3ecaa5a9128ea4d7afc46d9eecb23b">RenderMixedResolution</a>.</p>
 <p>The rendering of the sky is no longer handled by <a class="el" href="classsimul_1_1sky_1_1BaseSkyRenderer.html" title="The base class for real-time sky renderers. ">BaseSkyRenderer</a> or its derived classes because the <a class="el" href="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html">atmospherics renderer</a> now does this in a single pass including both sky and atmospherics.</p>
 <p>It is the job of the <a class="el" href="classsimul_1_1sky_1_1Sky.html" title="A class that calculates the sky colour. ">Sky</a> Renderer to update the atmospherics textures to be used by the other render classes, and render celestial objects.</p>
 <p>The fade tables are stored as 3D textures - an axis for distance, one for elevation, one for altitude. The table size is given by NumElevations, NumDistances and SetNumAltitudes() of <a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html">SkyKeyframer</a>. Try to minimize the number of altitudes required, in order to maximize performance, and use SetAltitudeRangeKm on initialization to the range you will use.</p>
 <p><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a475e35931efc000687a8d66251e86505">BaseWeatherRenderer::PreRenderUpdate</a> first calls <a class="el" href="">EnsureTexturesAreUpToDate</a>, which fills in the fade textures with loss and inscatter values.</p>
-<p>Then, the sky and atmospheric scattering (atmospherics, or distance-fades) are drawn together as an overlay after the depth-buffer has been filled by any solids in the scene (see <a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a6d02e91268b6f14bbccc386867a73f0c">clouds::BaseWeatherRenderer::RenderSkyAsOverlay</a>).</p>
+<p>Then, the sky and atmospheric scattering (atmospherics, or distance-fades) are drawn together as an overlay after the depth-buffer has been filled by any solids in the scene (see <a class="el" href="">clouds::BaseWeatherRenderer::RenderSkyAsOverlay</a>).</p>
 <p>There are two main elements to realistic atmospherics: Loss, and Inscatter.</p>
 <div class="image">
 <img src="FadeLogic.png" alt="FadeLogic.png"/>
@@ -451,7 +452,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/>
-<address style="text-align: right;">trueSKY VERSION 3.9.0.149<small>
-Fri Oct 30 2015 09:42:52</small></address>
+<address style="text-align: right;">trueSKY VERSION 3.9.0.150<small>
+Thu Nov 5 2015 06:19:56</small></address>
 </body>
 </html>
