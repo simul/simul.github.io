@@ -54,11 +54,13 @@
         {% endif %}
       {% endfor %}
 
-this_path {{ this_path }}<br>
+this_path {{ this_path }}<br/>
       {% for node in sorted_pages %}
         {% assign node_path = paths[forloop.index] %}
         {% assign node_title = titles[forloop.index] %}
         {% assign node_url =  node_path %}
+        {% assign node_url = node_url | remove: ".html" %}
+        {% assign node_url = node_url | replace: "_1_1","/" %}
 
         {% assign node_url_parts = node_url | split: '/' %}
         {% assign node_url_parts_size = node_url_parts | size %}
@@ -66,13 +68,13 @@ this_path {{ this_path }}<br>
         {% if node_url_parts_size > 2 or filename == "404.html" and node.layout == "nonav" %}
            {% continue %}
         {% endif %}
-        {% if node_path contains "_8md" or node_url_parts_size == 1 %} 
+        {% if node_url contains "_8md" or node_url_parts_size == 1 %} 
             {% assign sz = node_title | size %}
             {% if sz < 2 %}
               {% continue %}
             {% endif %}
 
-        {{ node.url }}:{{ node_path }}:{{ node_url_parts_size }}:{{ node_title }}
+        {{ node_url }}:{{ node_url_parts_size }}:{{ node_title }}
 
             <li>
             <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node_title }}</a></li>
