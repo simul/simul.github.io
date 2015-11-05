@@ -41,13 +41,12 @@
         {% assign path = path | remove_first: "/" %}
         {% assign paths = paths | push: path %}
         {% if node.url == page.url %}
-          found page
           {% assign this_node = node %}
           {% assign this_path = path %}
+found {{ this_path }}
         {% endif %}
       {% endfor %}
 
-this_path {{ this_path }}
       {% for node in sorted_pages %}
         {% assign node_path = paths[forloop.index] %}
         {% assign node_url =  node_path %}
