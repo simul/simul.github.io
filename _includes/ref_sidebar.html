@@ -29,20 +29,32 @@
       <ul>
       {% assign sorted_pages = site.pages | sort: "url" %}
 
-
+      {% assign paths = site.array %}
       {% for node in sorted_pages %}
+        {% assign path = node.url | remove: ".html" %}
+        {% assign path = path | replace: "_1_1","/" %}
+        {% assign paths = paths | push: path %}
+        {% if node.url == page.url %}
+          {% assign this_node = node %}
+        {% endif %}
+      {% endfor %}
+
+         this_path {{ this_node.path }}
+      {% for node in sorted_pages %}
+        {% assign node_path = paths[forloop.index] %}
         {% assign node_url =  node.url %}
         {% assign node_url = node_url | remove: ".html" %}
         {% assign node_url = node_url | replace: "_1_1","/" %}
 
         {% assign node_url_parts = node_url | split: '/' %}
         {% assign node_url_parts_size = node_url_parts | size %}
+   A{{ node_url }} {{ node_url_parts_size }} {{ node_path }}
         {% assign filename = node_url_parts | last %}
         {% if node_url_parts_size != 2 or filename == "404.html" and node.layout == "nonav" %}
            {% continue %}
         {% endif %}
         {% if node_url contains "_8md" %} 
-        B{{ node_url }} {{ node_url_parts_size }} 
+        B{{ node_url }} {{ node_url_parts_size }} {{ node_path }}
           {% assign node_title = node.title %}
             {% if node_title == "Home" or node_title contains "Source File" or node_title contains "Class Reference" or node_title contains "Template Reference" or node_title contains "Member List" or node_title contains " Reference" or node_title contains "Class Members" or node_title contains " Members" %}
               {% continue %}
