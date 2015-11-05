@@ -52,6 +52,7 @@
 
         {% assign title_parts = node.title | split: '/' %}
         {% assign title = title_parts.last %}
+        {% assign title = title | remove: ".md Source File" %}
         {% assign titles = titles | push: title %}
 
         {% if node.url == page.url %}
