@@ -74,16 +74,6 @@ this_path {{ this_path }}
             {% endif %}
             <li>
             <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node_title }}</a></li>
-            {% if this_path contains node_path %}
-              {% assign level2 = site.array %}
-              {% for node2 in site.pages %}
-                {% assign node2_url =  node2.url | remove: ".html"  %}
-                {% assign node2_url = node2_url | replace: "_1_1","/" %}
-                {% if node2_url contains node_url and node2_url != node_url %}
-                  {% assign level2 = level2 | push: node2 %}
-                {% endif %}
-              {% endfor %}
-            {% endif %}
         {% endif %}
       {% endfor %}
       {% for num in (1...menu_level) %}
