@@ -46,7 +46,10 @@
         {% assign node_url_parts = node_url | split: '/' %}
         {% assign node_url_parts_size = node_url_parts | size %}
         {% assign filename = node_url_parts | last %}
-        {% if node_url_parts_size == 2 and filename != "404.html" and node.layout != "nonav" and node_url contains "_8md" %}
+        {% if node_url_parts_size != 2 or filename == "404.html" and node.layout == "nonav" %}
+           {% continue %}
+        {% endif %}
+        {% if node_url contains "_8md" %} 
         B{{ node_url }} {{ node_url_parts_size }}
           {% assign node_title = node.title %}
             {% if node_title == "Home" or node_title contains "Source File" or node_title contains "Class Reference" or node_title contains "Template Reference" or node_title contains "Member List" or node_title contains " Reference" or node_title contains "Class Members" or node_title contains " Members" %}
