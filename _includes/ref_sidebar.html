@@ -60,7 +60,7 @@ this_path {{ this_path }}
         {% if node_url_parts_size > 2 or filename == "404.html" and node.layout == "nonav" %}
            {% continue %}
         {% endif %}
-        {% if node_url contains "_8md" or node_url_parts_size < 2 %} 
+        {% if node_url contains "_8md" or node_url_parts_size == 1 %} 
           {% assign node_title = node.title %}
 
         H{{ node_url }} {{ node_url_parts_size }} {{ node_path }}
