@@ -41,13 +41,11 @@
         {% assign path = path | remove_first: "/" %}
         {% assign paths = paths | push: path %}
         {% if node.url == page.url %}
-          found page
           {% assign this_node = node %}
           {% assign this_path = path %}
         {% endif %}
       {% endfor %}
 
-this_path {{ this_path }}
       {% for node in sorted_pages %}
         {% assign node_path = paths[forloop.index] %}
         {% assign node_url =  node_path %}
@@ -57,7 +55,7 @@ this_path {{ this_path }}
         {% assign node_url_parts = node_url | split: '/' %}
         {% assign node_url_parts_size = node_url_parts | size %}
         {% assign filename = node_url_parts | last %}
-        {% if node_url_parts_size > 2 or filename == "404.html" and node.layout == "nonav" %}
+        {% if node_url_parts_size > 2 or filename == "404.html" or node.layout == "nonav" %}
            {% continue %}
         {% endif %}
         {% if node_url contains "_8md" or node_url_parts_size < 2 %} 
