@@ -41,12 +41,13 @@
         {% assign path = path | remove_first: "/" %}
         {% assign paths = paths | push: path %}
         {% if node.url == page.url %}
+          found page
           {% assign this_node = node %}
           {% assign this_path = path %}
-found {{ this_path }}
         {% endif %}
       {% endfor %}
 
+this_path {{ this_path }}
       {% for node in sorted_pages %}
         {% assign node_path = paths[forloop.index] %}
         {% assign node_url =  node_path %}
@@ -62,7 +63,7 @@ found {{ this_path }}
         {% if node_url contains "_8md" or node_url_parts_size == 1 %} 
           {% assign node_title = node.title %}
 
-        H{{ node_url }} {{ node_url_parts_size }} {{ node_path }}
+        I{{ node_url }} {{ node_url_parts_size }} {{ node_title }}
 
             {% if node_title == "Home" or node_title contains "Source File" or node_title contains "Class Reference" or node_title contains "Template Reference" or node_title contains "Member List" or node_title contains " Reference" or node_title contains "Class Members" or node_title contains " Members" %}
               {% continue %}
@@ -73,6 +74,16 @@ found {{ this_path }}
             {% endif %}
             <li>
             <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node_title }}</a></li>
+            {% if this_path contains node_path %}
+              {% assign level2 = site.array %}
+              {% for node2 in site.pages %}
+                {% assign node2_url =  node2.url | remove: ".html"  %}
+                {% assign node2_url = node2_url | replace: "_1_1","/" %}
+                {% if node2_url contains node_url and node2_url != node_url %}
+                  {% assign level2 = level2 | push: node2 %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
         {% endif %}
       {% endfor %}
       {% for num in (1...menu_level) %}
