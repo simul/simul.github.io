@@ -30,7 +30,6 @@
       {% assign sorted_pages = site.pages | sort: "url" %}
 
       {% assign paths = site.array %}
-      {% assign this_path = "unknown path" %}
       
       page.url is {{ page.url }}
 
@@ -41,11 +40,10 @@
         {% assign paths = paths | push: path %}
         {% if node.url == page.url %}
           {% assign this_node = node %}
-          {% assign this_path = path %}
-          page found
+          
         {% endif %}
       {% endfor %}
-      this_path {{ this_path }}
+
       {% for node in sorted_pages %}
         {% assign node_url = paths[forloop.index] %}
 
