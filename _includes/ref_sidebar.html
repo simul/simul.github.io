@@ -45,6 +45,7 @@
         {% assign psz = path | size %}
         {% if psz == 0 %}
           {% assign path = "/" %}
+          found home
         {% endif %}
 
         {% assign paths = paths | push: path %}
@@ -54,7 +55,6 @@
         {% assign titles = titles | push: title %}
 
         {% if node.url == page.url %}
-          found page
           {% assign this_node = node %}
           {% assign this_path = path %}
         {% endif %}
