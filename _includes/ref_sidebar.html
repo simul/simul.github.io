@@ -29,7 +29,7 @@
       <ul>
       {% assign sorted_pages = site.pages | sort: "url" %}
 
-      ur l is {{ page.url }}
+      page url is {{ page.url }}
 
        {% assign this_path = "" %}
 
@@ -60,10 +60,10 @@
         {% endif %}
         {% if node_url contains "_8md" or node_url_parts_size < 2 %} 
           {% assign node_title = node.title %}
-            {% if node_title == "Home" or node_title contains "Source File" or node_title contains "Class Reference" or node_title contains "Template Reference" or node_title contains "Member List" or node_title contains " Reference" or node_title contains "Class Members" or node_title contains " Members" %}
+          B{{ node_url }} {{ node_url_parts_size }} {{ node_title }}
+          {% if node_title == "Home" or node_title contains "Source File" or node_title contains "Class Reference" or node_title contains "Template Reference" or node_title contains "Member List" or node_title contains " Reference" or node_title contains "Class Members" or node_title contains " Members" %}
               {% continue %}
-            {% endif %}
-        B{{ node_url }} {{ node_url_parts_size }} {{ node_title }}
+          {% endif %}
             {% assign sz = node_title | size %}
             {% if sz < 2 %}
               {% continue %}
