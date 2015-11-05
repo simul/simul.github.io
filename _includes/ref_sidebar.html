@@ -33,6 +33,9 @@
       {% for node in sorted_pages %}
         {% assign path = node.url | remove: ".html" %}
         {% assign path = path | replace: "_1_1","/" %}
+        {% if path.first == "/" %}
+          {% assign path = path | remove_first: "/" %}
+        {% endif %}
         {% assign paths = paths | push: path %}
         {% if node.url == page.url %}
           {% assign this_node = node %}
