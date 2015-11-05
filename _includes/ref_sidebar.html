@@ -30,6 +30,10 @@
       {% assign sorted_pages = site.pages | sort: "url" %}
 
       {% assign paths = site.array %}
+      {% assign this_path = "unknown path" %}
+      
+      page.url is {{ page.url }}
+
       {% for node in sorted_pages %}
         {% assign path = node.url | remove: ".html" %}
         {% assign path = path | replace: "_1_1","/" %}
@@ -38,6 +42,7 @@
         {% if node.url == page.url %}
           {% assign this_node = node %}
           {% assign this_path = path %}
+          page found
         {% endif %}
       {% endfor %}
       this_path {% this_path %}
