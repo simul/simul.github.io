@@ -35,7 +35,8 @@
 
       {% assign paths = site.array %}
       {% for node in sorted_pages %}
-        {% assign path = node.url | remove: ".html" %}
+        {% assign path = node.url | remove: "/index.html" %}
+        {% assign path = path | remove: ".html" %}
         {% assign path = path | replace: "_1_1","/" %}
         {% assign path = path | remove_first: "/" %}
         {% assign paths = paths | push: path %}
