@@ -34,12 +34,19 @@
        {% assign this_path = "" %}
 
       {% assign paths = site.array %}
+      {% assign titles = site.array %}
+
       {% for node in sorted_pages %}
         {% assign path = node.url | remove: "/index.html" %}
         {% assign path = path | remove: ".html" %}
         {% assign path = path | replace: "_1_1","/" %}
         {% assign path = path | remove_first: "/" %}
         {% assign paths = paths | push: path %}
+
+        {% assign title_parts = node.title | split: '/' %}
+        {% assign title = title_parts.last %}
+        {% assign titles = titles | push: title %}
+
         {% if node.url == page.url %}
           found page
           {% assign this_node = node %}
@@ -61,7 +68,7 @@ this_path {{ this_path }}
            {% continue %}
         {% endif %}
         {% if node_url contains "_8md" or node_url_parts_size == 1 %} 
-          {% assign node_title = node.title %}
+          {% assign node_title = titles[forloop.index] %}
             {% assign sz = node_title | size %}
             {% if sz < 2 %}
               {% continue %}
