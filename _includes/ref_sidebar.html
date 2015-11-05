@@ -48,7 +48,6 @@
 
         {% assign node_url_parts = node_url | split: '/' %}
         {% assign node_url_parts_size = node_url_parts | size %}
-   A{{ node_url }} {{ node_url_parts_size }} {{ node_path }}
         {% assign filename = node_url_parts | last %}
         {% if node_url_parts_size != 2 or filename == "404.html" and node.layout == "nonav" %}
            {% continue %}
