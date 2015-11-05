@@ -41,11 +41,13 @@
         {% assign path = path | remove_first: "/" %}
         {% assign paths = paths | push: path %}
         {% if node.url == page.url %}
+          found page
           {% assign this_node = node %}
           {% assign this_path = path %}
         {% endif %}
       {% endfor %}
 
+this_path {{ this_path }}
       {% for node in sorted_pages %}
         {% assign node_path = paths[forloop.index] %}
         {% assign node_url =  node_path %}
@@ -59,7 +61,7 @@
            {% continue %}
         {% endif %}
         {% if node_url contains "_8md" or node_url_parts_size < 2 %} 
-        C{{ node_url }} {{ node_url_parts_size }} {{ node_path }}
+        B{{ node_url }} {{ node_url_parts_size }} {{ node_path }}
           {% assign node_title = node.title %}
             {% if node_title == "Home" or node_title contains "Source File" or node_title contains "Class Reference" or node_title contains "Template Reference" or node_title contains "Member List" or node_title contains " Reference" or node_title contains "Class Members" or node_title contains " Members" %}
               {% continue %}
