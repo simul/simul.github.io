@@ -68,7 +68,7 @@ V {{ this_path }}
         {% assign node_path = paths[forloop.index] %}
         {% assign node_title = titles[forloop.index] %}
         {% assign node_url =  node_path %}
-        {{ node.url }} {{ node_path }} {{ node_title }}
+        {{ node.url }}
 
         {% assign node_url_parts = node_url | split: '/' %}
         {% assign node_url_parts_size = node_url_parts | size %}
