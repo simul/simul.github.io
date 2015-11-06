@@ -63,7 +63,7 @@
 
       {% assign menu_level = 0 %}
 
-A {{ this_path }} <br>
+B {{ this_path }} <br>
       {% for node in sorted_pages %}
         {% assign node_path = paths[forloop.index] %}
         {% assign node_url =  node_path %}
@@ -76,10 +76,10 @@ A {{ this_path }} <br>
         {{ node.url }} a {{ node_path }} b {{ title }}
 
         {% assign filename = node_url_parts | last %}
+        {% assign node_title = titles[forloop.index] %}
         {% if node_url_parts_size > 2 or filename == "404.html" and node.layout == "nonav" %}
            {% continue %}
         {% endif %}
-        {% assign node_title = titles[forloop.index] %}
         {% if node_path contains "_8md" or node_url_parts_size == 1 %} 
             {% assign sz = node_title | size %}
             {% if sz < 2 %}
