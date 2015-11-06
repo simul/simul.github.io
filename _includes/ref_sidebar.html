@@ -82,8 +82,7 @@ V {{ this_path }}
               {% continue %}
             {% endif %}
 
-        {{ node.url }}:{{ node_url_parts_size }}:{{ node_title }}
-
+        {{ node.url }}
             <li>
             <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node_title }}</a></li>
         {% endif %}
