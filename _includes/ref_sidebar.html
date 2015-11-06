@@ -50,13 +50,8 @@
         {% assign paths = paths | push: path %}
 
         {% assign title_parts = node.title | split: '/' %}
-        {% assign title_parts_size = title_parts | size %}
-        {% if title_parts_size > 0 %}
-          {% assign title = title_parts.last %}
-          {% assign title = title | remove: ".md Source File" %}
-        {% else %}
-          {% assign title = "Page" %}
-        {% endif %}
+        {% assign title = title_parts.last %}
+        {% assign title = title | remove: ".md Source File" %}
         {% assign titles = titles | push: title %}
 
         {% if node.url == page.url %}
@@ -78,14 +73,14 @@ X {{ this_path }}
         {% assign node_url_parts = node_url | split: '/' %}
         {% assign node_url_parts_size = node_url_parts | size %}
         
-        {{ node.url }} a {{ node_path }} 
+        {{ node.url }} a {{ node_path }} b {{ title }}
 
         {% assign filename = node_url_parts | last %}
         {% if node_url_parts_size > 2 or filename == "404.html" and node.layout == "nonav" %}
            {% continue %}
         {% endif %}
-        {% assign node_title = titles[forloop.index] %}
         {% if node_url contains "_8md" or node_url_parts_size == 1 %} 
+          {% assign node_title = titles[forloop.index] %}
             {% assign sz = node_title | size %}
             {% if sz < 2 %}
               {% continue %}
