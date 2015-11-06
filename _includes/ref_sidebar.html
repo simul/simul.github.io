@@ -42,7 +42,7 @@
         {% assign path = path | replace: "_1_1","/" %}
         {% assign path = path | remove_first: "/" %}
         {% assign psz = path | size %}
-        {% if node.url == "/index.html" %}
+        {% if psz == 0 %}
           {% assign path = "/" %}
           found home
         {% endif %}
@@ -63,26 +63,31 @@
 
       {% assign menu_level = 0 %}
 
-V {{ this_path }}
+W {{ this_path }}
       {% for node in sorted_pages %}
         {% assign node_path = paths[forloop.index] %}
-        {% assign node_title = titles[forloop.index] %}
         {% assign node_url =  node_path %}
-        {{ node.url }}
+        {% assign node_url = node_url | remove: ".html" %}
+        {% assign node_url = node_url | replace: "_1_1","/" %}
 
         {% assign node_url_parts = node_url | split: '/' %}
         {% assign node_url_parts_size = node_url_parts | size %}
+        
+        {{ node.url }} a {{ path }} b {{ title }}
+
         {% assign filename = node_url_parts | last %}
         {% if node_url_parts_size > 2 or filename == "404.html" and node.layout == "nonav" %}
            {% continue %}
         {% endif %}
         {% if node_url contains "_8md" or node_url_parts_size == 1 %} 
+          {% assign node_title = titles[forloop.index] %}
             {% assign sz = node_title | size %}
             {% if sz < 2 %}
               {% continue %}
             {% endif %}
 
-        {{ node.url }}
+        {{ node.url }}:{{ node_url_parts_size }}:{{ node_title }}
+
             <li>
             <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node_title }}</a></li>
         {% endif %}
