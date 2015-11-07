@@ -34,6 +34,7 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="TextureGenerator"><param name="Local" value="namespacesimul_1_1clouds_1_1TextureGenerator.html"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="crossplatform"><param name="Local" value="namespacesimul_1_1crossplatform.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="dx11"><param name="Local" value="namespacesimul_1_1dx11.html"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="geometry"><param name="Local" value="namespacesimul_1_1geometry.html"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="graph"><param name="ImageNumber" value="1"></OBJECT>
         <UL>

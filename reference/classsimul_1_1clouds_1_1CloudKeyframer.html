@@ -25,7 +25,7 @@ url: simul::clouds::CloudKeyframer Class Reference
   <td id="projectlogo"><img alt="Logo" src="Simul-Logo-200x60.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">trueSKY
-   &#160;<span id="projectnumber">3.9.0.150</span>
+   &#160;<span id="projectnumber">3.8.2</span>
    </div>
   </td>
  </tr>
@@ -378,6 +378,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a6fdbdad892bcbd9e90e7e0a834263b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0385666aa19568d7544c73c53bc9f01a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#a0385666aa19568d7544c73c53bc9f01a">SetExplicitOffsets</a> (bool value)</td></tr>
 <tr class="separator:a0385666aa19568d7544c73c53bc9f01a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Property: float CloudShadowStrength</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>"The strength of the cloud shadow effect, from 0 to 1. Usage is determined by the renderer." </p>
+</div></td></tr>
+<tr class="memitem:ab7776eaf56a0e5849f9cfc2204e36df6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#ab7776eaf56a0e5849f9cfc2204e36df6">GetCloudShadowStrength</a> () const </td></tr>
+<tr class="separator:ab7776eaf56a0e5849f9cfc2204e36df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a346c83eac54a8f2696512d9468fe18ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#a346c83eac54a8f2696512d9468fe18ae">SetCloudShadowStrength</a> (float value)</td></tr>
+<tr class="separator:a346c83eac54a8f2696512d9468fe18ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Property: float CloudShadowRange</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>"The range, in metres, of the cloud shadow texture." </p>
 </div></td></tr>
@@ -516,7 +523,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div class="textblock"><p>A class to manage interpolation between cloud states over time. Typically, a <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html">CloudKeyframer</a> is created and updated by its <a class="el" href="classsimul_1_1clouds_1_1Environment.html">Environment</a>.</p>
 <p>If time and daytime are linked in the SkyKeyframer, time is in days, otherwise the timescale is in arbitrary units. </p>
 
-<p>Definition at line <a class="el" href="CloudKeyframer_8h_source.html#l00142">142</a> of file <a class="el" href="CloudKeyframer_8h_source.html">CloudKeyframer.h</a>.</p>
+<p>Definition at line <a class="el" href="CloudKeyframer_8h_source.html#l00143">143</a> of file <a class="el" href="CloudKeyframer_8h_source.html">CloudKeyframer.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="acc1f37080b0009da354d7669f65a6b3a"></a>
 <div class="memitem">
@@ -1046,6 +1053,39 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
+<a class="anchor" id="ab7776eaf56a0e5849f9cfc2204e36df6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float simul::clouds::CloudKeyframer::GetCloudShadowStrength </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the value of CloudShadowStrength . </p>
+
+</div>
+</div>
+<a class="anchor" id="a346c83eac54a8f2696512d9468fe18ae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void simul::clouds::CloudKeyframer::SetCloudShadowStrength </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the value of CloudShadowStrength . </p>
+
+</div>
+</div>
 <a class="anchor" id="a0f8ce790e7870940419bc129fc9b6068"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1451,7 +1491,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><div class="memdoc">
 <p>Get the current <em>interpolated</em> keyframe, which holds the values interpolated from the two surrounding keyframes at any given time. </p>
 
-<p>Definition at line <a class="el" href="CloudKeyframer_8h_source.html#l00283">283</a> of file <a class="el" href="CloudKeyframer_8h_source.html">CloudKeyframer.h</a>.</p>
+<p>Definition at line <a class="el" href="CloudKeyframer_8h_source.html#l00285">285</a> of file <a class="el" href="CloudKeyframer_8h_source.html">CloudKeyframer.h</a>.</p>
 
 </div>
 </div>
@@ -1502,7 +1542,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><div class="memdoc">
 <p>Get the interpolation - between zero and one. This is based on InterpStepTime and the sky's Daytime property. When the interpolation reaches one, the textures will be cycled. </p>
 
-<p>Definition at line <a class="el" href="CloudKeyframer_8h_source.html#l00346">346</a> of file <a class="el" href="CloudKeyframer_8h_source.html">CloudKeyframer.h</a>.</p>
+<p>Definition at line <a class="el" href="CloudKeyframer_8h_source.html#l00348">348</a> of file <a class="el" href="CloudKeyframer_8h_source.html">CloudKeyframer.h</a>.</p>
 
 </div>
 </div>
@@ -1922,7 +1962,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/>
-<address style="text-align: right;">trueSKY VERSION 3.9.0.150<small>
-Thu Nov 5 2015 06:19:56</small></address>
+<address style="text-align: right;">trueSKY VERSION 3.8.2<small>
+Sat Nov 7 2015 01:56:29</small></address>
 </body>
 </html>
