@@ -22,7 +22,7 @@
 
       {% for node in sorted_pages %}
         {% assign path = node.url | remove: "/index.html" %}
-        {% if path contains "/dir_" or path contains "/struct" or path contains "/functions" or path contains "/namespacemembers" %}
+        {% if path contains "/dir_" or path contains "/struct" or path contains "/functions" or path contains "/namespacemembers" or path contains "graph_legend" %}
           {% continue %}
         {% endif %}
         {% if path contains "_source.html" %}
