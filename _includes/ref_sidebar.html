@@ -11,7 +11,7 @@
 
     <nav class="sidebar-nav">
 
-S {{ page.url }} <br>
+T {{ page.url }} <br>
       <ul>
       {% assign sorted_pages = site.pages | sort: "url" %}
 
@@ -30,6 +30,7 @@ S {{ page.url }} <br>
         {% assign psz = path | size %}
         {% assign paths = paths | push: path %}
         {% assign title = node.title %}
+        {% assign title_parts = title | split: '/' %}
         {% assign titles = titles | push: title %}
         {% if node.url == page.url %}
           {% assign this_node = node %}
