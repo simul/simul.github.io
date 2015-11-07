@@ -61,7 +61,7 @@
           {% continue %}
         {% endunless %}
             <li>
-            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node_title }}</a></li>
+            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %} sidebar-1" href="{{ node.url }}">{{ node_title }}</a></li>
             {% if this_path contains node_path %}
               {% assign pages2 = site.array %}
               {% assign titles2 = site.array %}
@@ -79,7 +79,7 @@
                 {% assign menu_level = 1 %}
                 <ul>
                 {% for node2 in pages2 %}
-                  <li><a class="sidebar-nav-item{% if page.url == node2.url %} active{% endif %}" href='{{node2.url}}'>{{ titles2[forloop.index0] }}</a></li>
+                  <li><a class="sidebar-nav-item{% if page.url == node2.url %} active{% endif %} sidebar-2" href='{{node2.url}}'>{{ titles2[forloop.index0] }}</a></li>
                 {% endfor %}
                 </ul>
               {% endif%}
@@ -89,7 +89,7 @@
         </ul>
       {% endfor %}
       </ul>
-M
+N
 
     </nav>
     <p>&copy; {{ site.time | date: '%Y' }} Simul Software Ltd. All rights reserved.</p>
