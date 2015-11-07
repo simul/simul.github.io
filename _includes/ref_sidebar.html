@@ -9,6 +9,94 @@
       <p class="lead">{{ site.description }}</p>
     </div>
 
+    <nav class="sidebar-nav">
+
+      {% comment %}
+        The code below dynamically generates a sidebar nav of pages with
+        `layout: page` in the front-matter. See readme for usage.
+      {% endcomment %}
+
+      {% assign url_parts = page.url | split: '/' %}
+      {% assign url_parts_size = url_parts | size %}
+      {% if url_parts_size != 0 %}
+        {% assign rm = url_parts | last %}
+        {% assign base_url = page.url | replace: rm %}
+      {% else %}
+        {% assign base_url = page.url %}
+      {% endif %}
+      {% assign page_url =  page.url | remove: ".html"  %}
+      {% assign page_url = page_url | replace: "_1_1","/" %}
+      <ul>
+      {% assign sorted_pages = site.pages | sort: "url" %}
+
+      page url is {{ page.url }}
+
+       {% assign this_path = "" %}
+
+      {% assign paths = site.array %}
+      {% assign titles = site.array %}
+
+      {% for node in sorted_pages %}
+        {% assign path = node.url | remove: "/index.html" %}
+        {% assign path = path | remove: ".html" %}
+        {% assign path = path | replace: "_1_1","/" %}
+        {% assign path = path | remove_first: "/" %}
+        {% assign psz = path | size %}
+        {% if psz == 0 %}
+          {% assign path = "/" %}
+          found home
+        {% endif %}
+
+        {% assign paths = paths | push: path %}
+
+        {% assign title_parts = node.title | split: '/' %}
+        {% assign title = title_parts.last %}
+        {% assign title = title | remove: ".md Source File" %}
+        {% assign titles = titles | push: title %}
+
+        {% if node.url == page.url %}
+          {% assign this_node = node %}
+          {% assign this_path = path %}
+        {% endif %}
+
+      {% endfor %}
+
+      {% assign menu_level = 0 %}
+
+L {{ this_path }} <br>
+      {% for node in sorted_pages %}
+        {% assign node_path = paths[forloop.index0] %}
+        {% assign node_url =  node_path %}
+        {% assign node_url = node_url | remove: ".html" %}
+
+        {% assign node_url_parts = node_url | split: '/' %}
+        {% assign filename = node_url_parts | last %}
+        {% assign node_url_parts_size = node_url_parts | size %}
+        
+        {% assign node_title = titles[forloop.index0] %}
+        {{ node.url }} a {{ node_path }} b {{ node_title }}
+
+        {% if node_url_parts_size > 2 or filename == "404.html" or node.layout == "nonav" %}
+           {% continue %}
+        {% endif %}
+        {% if node_path contains "_8md" or node_url_parts_size == 1 %} 
+            {% assign sz = node_title | size %}
+            {% if sz < 2 %}
+              {% continue %}
+            {% endif %}
+
+        {{ node.url }}:{{ node_url_parts_size }}:{{ node_title }}
+
+            <li>
+            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node_title }}</a></li>
+        {% endif %}
+      {% endfor %}
+      {% for num in (1...menu_level) %}
+        </ul>
+      {% endfor %}
+      </ul>
+
+    </nav>
     <p>&copy; {{ site.time | date: '%Y' }} Simul Software Ltd. All rights reserved.</p>
   </div>
 </div>
