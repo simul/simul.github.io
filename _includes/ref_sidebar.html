@@ -8,6 +8,7 @@
       </h1>
       <p class="lead">{{ site.description }}</p>
     </div>
+    <br>D<br>
 
     <nav class="sidebar-nav">
 
@@ -22,6 +23,9 @@
 
       {% for node in sorted_pages %}
         {% assign path = node.url | remove: "/index.html" %}
+        {% if path contains "_source.html" %}
+          {% assign path = path | replace: "reference/","reference/source/" %}
+        {% endif %}
         {% assign path = path | remove: ".html" %}
         {% assign path = path | replace: "_1_1","/" | replace: "_01"," " | replace: "_8","." %}
         {% assign path = path | remove_first: "/" %}
@@ -69,7 +73,7 @@
                 {% assign menu_level = 1 %}
                 <ul>
                 {% for m2 in level2 %}
-                  <li><a href='{{m2.url}}'>{{titles2}}</a></li>
+                  <li><a href='{{m2.url}}'>{{titles2[forloop.index0]}}</a></li>
                 {% endfor %}
                 </ul>
               {% endif%}
@@ -81,7 +85,6 @@
       </ul>
 
     </nav>
-    <br>B <br>
     <p>&copy; {{ site.time | date: '%Y' }} Simul Software Ltd. All rights reserved.</p>
   </div>
 </div>
