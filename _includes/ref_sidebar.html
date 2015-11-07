@@ -27,7 +27,7 @@ V {{ page.url }} <br>
         {% assign path = path | remove_first: "/" %}
         {% assign psz = path | size %}
         {% assign paths = paths | push: path %}
-        {% assign title = node.title | remove: " Files (x86)/Jenkins/jobs/Simul Installers/workspace/Simul/PRODUCTS/TrueSky/Help/" %}
+        {% assign title = node.title | remove: "Files (x86)/Jenkins/jobs/Simul Installers/workspace/Simul/PRODUCTS/TrueSky/Help/" %}
         {% assign titles = titles | push: title %}
         {% if node.url == page.url %}
           {% assign this_node = node %}
