@@ -63,7 +63,7 @@
 
       {% assign menu_level = 0 %}
 
-K {{ this_path }} <br>
+L {{ this_path }} <br>
       {% for node in sorted_pages %}
       <br>
         {% assign node_path = paths[forloop.index0] %}
@@ -74,9 +74,9 @@ K {{ this_path }} <br>
         {% assign node_path_parts_size = node_path_parts | size %}
         
         {% assign node_title = titles[forloop.index0] %}
+        {% assign filename = node_path_parts | last %}
         u {{ node.url }} a {{ node_path }} b {{ node_title }} c {{ filename }}
 
-        {% assign filename = node_path_parts | last %}
         {% if node_path_parts_size > 2 %}
             parts {{ node_path_parts_size }}<br>
            {% continue %}
