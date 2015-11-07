@@ -11,7 +11,7 @@
 
     <nav class="sidebar-nav">
 
-Q {{ page.url }} <br>
+R {{ page.url }} <br>
       <ul>
       {% assign sorted_pages = site.pages | sort: "url" %}
 
@@ -31,8 +31,18 @@ Q {{ page.url }} <br>
         {% assign paths = paths | push: path %}
         {% assign title = node.title %}
         {% assign titles = titles | push: title %}
+        {% if node.url == page.url %}
+          {% assign this_node = node %}
+          {% assign this_index = forloop.index0 %}
+        {% endif %}
       {% endfor %}
 
+      {% assign menu_level = 0 %}
+      
+      {% for node in sorted_pages %}
+        {% assign node_path = paths[forloop.index0] %}
+        {{ node_path }}
+      {% endfor %}
       </ul>
 
     </nav>
