@@ -131,7 +131,7 @@ a.sidebar-nav-item:focus {
  */
 
 .content {
-  padding-top:    4rem;
+  /*padding-top:    4rem; Simul: won't pad because we put the search bar at the top.*/
   padding-bottom: 4rem;
 }
 
