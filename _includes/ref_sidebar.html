@@ -66,6 +66,7 @@
 G {{ this_path }} <br>
       {% for node in nodes %}
         {% assign node_path = paths[forloop.index] %}
+        {{ node_path }}
         {% assign node_url =  node_path %}
         {% assign node_url = node_url | remove: ".html" %}
         {% assign node_url = node_url | replace: "_1_1","/" %}
