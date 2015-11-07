@@ -22,7 +22,7 @@
 
       {% for node in sorted_pages %}
         {% assign path = node.url | remove: "/index.html" %}
-        {% if path contains "/dir_" or path contains "/functions" or path contains "/namespacemembers" %}
+        {% if path contains "/dir_" or path contains "/struct" or path contains "/functions" or path contains "/namespacemembers" %}
           {% continue %}
         {% endif %}
         {% if path contains "_source.html" %}
@@ -65,7 +65,6 @@
             {% if this_path contains node_path %}
               {% assign pages2 = site.array %}
               {% assign titles2 = site.array %}
-              {% assign paths2 = site.array %}
               {% for node2 in pages %}
                 {% unless path_sizes[forloop.index0] == 2 %}
                   {% continue %}
@@ -74,7 +73,6 @@
                 {% if path2 contains node_path and node2.url != node.url  %}
                   {% assign pages2 = pages2 | push: node2 %}
                   {% assign titles2 = titles2 | push: titles[forloop.index0] %}
-                  {% assign paths2 = paths2 | push: paths[forloop.index0] %}
                 {% endif %}
               {% endfor %}
               {% if pages2.size > 0 %}
@@ -91,7 +89,7 @@
         </ul>
       {% endfor %}
       </ul>
-K
+L
 
     </nav>
     <p>&copy; {{ site.time | date: '%Y' }} Simul Software Ltd. All rights reserved.</p>
