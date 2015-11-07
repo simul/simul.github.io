@@ -61,6 +61,14 @@
                   {% assign level2 = level2 | push: node2 %}
                 {% endif %}
               {% endfor %}
+              {% if level2.size > 0 %}
+                {% assign menu_level = 1 %}
+                <ul>
+                {% for m2 in level2 %}
+                  <li><a href='{{m2.url}}'>{{m2.title}}</a></li>
+                {% endfor %}
+                </ul>
+              {% endif%}
             {% endif %}
       {% endfor %}
       {% for num in (1...menu_level) %}
@@ -69,7 +77,7 @@
       </ul>
 
     </nav>
-    <br>Y <br>
+    <br>Z <br>
     <p>&copy; {{ site.time | date: '%Y' }} Simul Software Ltd. All rights reserved.</p>
   </div>
 </div>
