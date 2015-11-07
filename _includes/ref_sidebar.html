@@ -76,7 +76,7 @@ L {{ this_path }} <br>
         {% assign node_title = titles[forloop.index0] %}
         {{ node.url }} a {{ node_path }} b {{ node_title }}
 
-        {% if node_url_parts_size > 2 or filename == "404.html" and node.layout == "nonav" %}
+        {% if node_url_parts_size > 2 or filename == "404.html" or node.layout == "nonav" %}
            {% continue %}
         {% endif %}
         {% if node_path contains "_8md" or node_url_parts_size == 1 %} 
