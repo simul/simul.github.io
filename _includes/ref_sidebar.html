@@ -18,6 +18,7 @@ W <br>
 
       {% assign paths = site.array %}
       {% assign titles = site.array %}
+      {% assign this_index = 100000000 %}
 
       {% for node in sorted_pages %}
         {% assign path = node.url | remove: "/index.html" %}
@@ -29,6 +30,7 @@ W <br>
         {% assign title = node.title | remove: "Files (x86)/Jenkins/jobs/Simul Installers/workspace/Simul/PRODUCTS/TrueSky/Help/" %}
         {% assign titles = titles | push: title %}
         {% if node.url == page.url %}
+          {% assign this_path = path %}
           {% assign this_node = node %}
           {% assign this_index = forloop.index0 %}
         {% endif %}
@@ -44,12 +46,15 @@ W <br>
         {% if node_title == "404" %}
           {% continue %}
         {% endif %}
-        {% unless node_path contains ".md" or node_path_parts_size == 1 %}
+        {% unless node_path_parts_size == 1 %}
           {% continue %}
         {% endunless %}
         {{ node_path }}-{{ node_path_parts_size }}-{{ node_title }}<br>
             <li>
             <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node_title }}</a></li>
+            {% if this_path contains node_path %}
+            this
+            {% endif %}
       {% endfor %}
       </ul>
 
