@@ -45,7 +45,6 @@ O {{ page_url }} <br>
         {% assign psz = path | size %}
         {% assign paths = paths | push: path %}
         {% assign title_parts = node.title | split: '/' %}
-        {% assign title = title_parts.last %}
       {% endfor %}
 
       </ul>
