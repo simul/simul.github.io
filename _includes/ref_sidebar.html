@@ -8,7 +8,7 @@
       </h1>
       <p class="lead">{{ site.description }}</p>
     </div>
-H<br>
+I<br>
 
     <nav class="sidebar-nav">
       <ul>
@@ -24,7 +24,7 @@ H<br>
 
       {% for node in sorted_pages %}
         {% assign path = node.url | remove: "/index.html" %}
-        {% if path contains "/dir_" or path contains "/functions" %}
+        {% if path contains "/dir_" or path contains "/functions" or path contains "/namespacemembers" %}
           {% continue %}
         {% endif %}
         {% if path contains "_source.html" %}
@@ -78,11 +78,9 @@ H<br>
                 {% endunless %}
                 {% assign path2 = paths[forloop.index0] %}
                 {% if path2 contains node_path and node2.url != node.url  %}
-                  {% assign path2 = paths[forloop.index0] %}
-                  {% assign title2 = titles[forloop.index0] %}
                   {% assign level2 = level2 | push: node2 %}
                   {% assign titles2 = titles2 | push: titles[forloop.index0] %}
-                  {% assign paths2 = paths2 | push: path2 %}
+                  {% assign paths2 = paths2 | push: paths[forloop.index0] %}
                 {% endif %}
               {% endfor %}
               {% if level2.size > 0 %}
