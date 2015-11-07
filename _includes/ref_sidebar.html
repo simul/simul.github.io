@@ -8,7 +8,7 @@
       </h1>
       <p class="lead">{{ site.description }}</p>
     </div>
-G<br>
+H<br>
 
     <nav class="sidebar-nav">
       <ul>
@@ -24,7 +24,7 @@ G<br>
 
       {% for node in sorted_pages %}
         {% assign path = node.url | remove: "/index.html" %}
-        {% if path contains "/dir_" %}
+        {% if path contains "/dir_" or path contains "/functions" %}
           {% continue %}
         {% endif %}
         {% if path contains "_source.html" %}
