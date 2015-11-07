@@ -2,6 +2,9 @@
 .custom-search {
     min-height: 49px;
 }
+.banner-search {
+   float:right;
+}
 .content {
 	top:60px;
   padding-top:    1rem;
