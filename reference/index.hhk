@@ -1812,12 +1812,12 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structObj_1_1VertexBuffer.html#a4c44990fde95c9d557defc4e77edd0c6"><param name="Name" value="Obj::VertexBuffer"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1math_1_1Vector3.html#a5d753f142a722a875403aaeec8aeb7c4"><param name="Name" value="Magnitude"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1clouds_1_1TextureGenerator.html#a5e8b8871f8e73113834775ad19a9db43"><param name="Name" value="Make2DNoiseTexture"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1clouds_1_1TextureGenerator.html#aa1af99e02fe8179e5021eff20183b90b"><param name="Name" value="Make2DRandomTexture"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseGpuCloudGenerator.html#ad1ce1c39197e30286c7cbdc08b677f4c"><param name="Name" value="Make3DNoiseTexture"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1clouds.html#ac75fa67627a1511e3b02fd8eb86fc18c"><param name="Name" value="Make2DNoiseTexture"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1clouds.html#a835c7f632472f09123bd2180d325ee7e"><param name="Name" value="Make2DRandomTexture"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1clouds.html#aa7bbaee090568705e8c7b93226e5b021"><param name="Name" value="Make3DNoiseTexture"></OBJECT>
   <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1clouds.html#aa7bbaee090568705e8c7b93226e5b021"><param name="Name" value="simul::clouds"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseGpuCloudGenerator.html#ad1ce1c39197e30286c7cbdc08b677f4c"><param name="Name" value="simul::clouds::BaseGpuCloudGenerator"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1clouds_1_1TextureGenerator.html#abdada01b39342c5c166296026869398b"><param name="Name" value="simul::clouds::TextureGenerator"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a502a2ec7e0fd9de9627d3df8d6dc5cbc"><param name="Name" value="MakeCentredViewProjMatrix"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudGeometryHelper.html#a41a7739c95598c6ea8ea77690430af1f"><param name="Name" value="MakeGeometry"></OBJECT>
@@ -1960,7 +1960,6 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1math_1_1Vector3.html#aa19adab499bcc6634d401e941e507c7d"><param name="Name" value="operator>"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1math_1_1Vector.html#a361949077ebdcc9b4b90861b3f897f90"><param name="Name" value="operator^"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1clouds_1_1TextureGenerator.html#a35b68c9aa5f900a627847c5a7ea01215"><param name="Name" value="Partial2DCloudTextureFill"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classPathTracker.html"><param name="Name" value="PathTracker"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classPathTracker.html#a0647a506e236756444ef27587b1355e0"><param name="Name" value="ChildAdded"></OBJECT>
@@ -2246,7 +2245,6 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyKeyframer.html#a5a7e3a83217d09e8393647711aacfaaa"><param name="Name" value="simul::sky::SkyKeyframer"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyKeyframer.html#a67512f6af49d7a3e06fa5a90f032dda8"><param name="Name" value="SetBaseOzone"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1clouds_1_1TextureGenerator.html#a1b927bf0a157eb63a4ffa1d714349f1b"><param name="Name" value="SetBits"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aa0c05a43c67c63d4bf316c362c3e4a85"><param name="Name" value="SetBlurTexture"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a78de9b087c6af84d197e08e50e6cb89e"><param name="Name" value="SetBool"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyKeyframer.html#a65deee493a836a0d69d11c1cf11764be"><param name="Name" value="SetBrightnessPower"></OBJECT>
@@ -3856,14 +3854,6 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1clouds_1_1PrecipitationRegion.html#aab5a20f373231b6fa9cccf8375a2ef40"><param name="Name" value="regional"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1clouds_1_1SelectionIdentifier.html"><param name="Name" value="simul::clouds::SelectionIdentifier"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1clouds_1_1TextureGenerator.html"><param name="Name" value="simul::clouds::TextureGenerator"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1clouds_1_1TextureGenerator.html#a5e8b8871f8e73113834775ad19a9db43"><param name="Name" value="Make2DNoiseTexture"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1clouds_1_1TextureGenerator.html#aa1af99e02fe8179e5021eff20183b90b"><param name="Name" value="Make2DRandomTexture"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1clouds_1_1TextureGenerator.html#abdada01b39342c5c166296026869398b"><param name="Name" value="Make3DNoiseTexture"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1clouds_1_1TextureGenerator.html#a35b68c9aa5f900a627847c5a7ea01215"><param name="Name" value="Partial2DCloudTextureFill"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1clouds_1_1TextureGenerator.html#a1b927bf0a157eb63a4ffa1d714349f1b"><param name="Name" value="SetBits"></OBJECT>
-  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1TimedNoise3D.html"><param name="Name" value="simul::clouds::TimedNoise3D"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1TimedNoise3D.html#ac96b95c54ce2e5d008f5a3fee275b901"><param name="Name" value="SetTime"></OBJECT>
@@ -3872,6 +3862,9 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1clouds.html"><param name="Name" value="simul::clouds"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1clouds.html#a4fb446340b2fb4b138b7d8240bffcf69"><param name="Name" value="CloudTexelType"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1clouds.html#ac75fa67627a1511e3b02fd8eb86fc18c"><param name="Name" value="Make2DNoiseTexture"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1clouds.html#a835c7f632472f09123bd2180d325ee7e"><param name="Name" value="Make2DRandomTexture"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1clouds.html#aa7bbaee090568705e8c7b93226e5b021"><param name="Name" value="Make3DNoiseTexture"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1clouds.html#ab79ccfe3f57cc1c3c4fef8b7f1c59d4b"><param name="Name" value="VolumeMap"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html"><param name="Name" value="simul::crossplatform"></OBJECT>

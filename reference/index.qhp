@@ -6,25 +6,24 @@
     <filterAttribute>doxygen</filterAttribute>
     <toc>
       <section title="trueSKY 3.8.2" ref="index.html">
-        <section title="Developer Manual" ref="index.html" />
-        <section title="1 Introduction" ref="man_1_introduction.html" />
-        <section title="2 Getting Started" ref="man_2_gettingstarted.html" />
-        <section title="Controlling the Environment" ref="man_3_environment.html" />
+        <section title="Developer Manual" ref="index.html">
+          <section title="1 Introduction" ref="man_1_introduction.html" />
+          <section title="2 Getting Started" ref="man_2_gettingstarted.html" />
+          <section title="Controlling the Environment" ref="man_3_environment.html" />
+          <section title="4 Rendering the Environment" ref="man_4_rendering.html" />
+          <section title="5 Mixed Resolution Compositing" ref="man_5_mixed_resolution.html" />
+          <section title="6 The Sky Sequencer" ref="man_8_sequencer.html" />
+          <section title="Licensing" ref="man_a_licensing.html" />
+        </section>
         <section title="3.1 The Sky Keyframer" ref="man_31_sky_keyframer.html" />
         <section title="3.2 The Cloud Keyframer" ref="man_32_cloud_keyframer.html" />
-        <section title="4 Rendering the Environment" ref="man_4_rendering.html" />
         <section title="4.1 Shaders" ref="man_46_shaders.html" />
-        <section title="5 Mixed Resolution Compositing" ref="man_5_mixed_resolution.html" />
-        <section title="6 The Sky Sequencer" ref="man_8_sequencer.html" />
         <section title="Change List" ref="man_9_changelist.html" />
-        <section title="Licensing" ref="man_a_licensing.html" />
         <section title="REFERENCE">
           <section title="Namespace List" ref="namespaces.html">
             <section title="simul">
               <section title="base" ref="namespacesimul_1_1base.html" />
-              <section title="clouds" ref="namespacesimul_1_1clouds.html">
-                <section title="TextureGenerator" ref="namespacesimul_1_1clouds_1_1TextureGenerator.html" />
-              </section>
+              <section title="clouds" ref="namespacesimul_1_1clouds.html" />
               <section title="crossplatform" ref="namespacesimul_1_1crossplatform.html" />
               <section title="dx11" ref="namespacesimul_1_1dx11.html" />
               <section title="geometry" ref="namespacesimul_1_1geometry.html" />
@@ -364,6 +363,9 @@
       <keyword name="simul::clouds" id="simul::clouds" ref="namespacesimul_1_1clouds.html" />
       <keyword name="CloudTexelType" id="simul::clouds::CloudTexelType" ref="namespacesimul_1_1clouds.html#a4fb446340b2fb4b138b7d8240bffcf69" />
       <keyword name="VolumeMap" id="simul::clouds::VolumeMap" ref="namespacesimul_1_1clouds.html#ab79ccfe3f57cc1c3c4fef8b7f1c59d4b" />
+      <keyword name="Make2DNoiseTexture" id="simul::clouds::Make2DNoiseTexture" ref="namespacesimul_1_1clouds.html#ac75fa67627a1511e3b02fd8eb86fc18c" />
+      <keyword name="Make2DRandomTexture" id="simul::clouds::Make2DRandomTexture" ref="namespacesimul_1_1clouds.html#a835c7f632472f09123bd2180d325ee7e" />
+      <keyword name="Make3DNoiseTexture" id="simul::clouds::Make3DNoiseTexture" ref="namespacesimul_1_1clouds.html#aa7bbaee090568705e8c7b93226e5b021" />
       <keyword name="simul::clouds::BaseCloudRenderer" id="simul::clouds::BaseCloudRenderer" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html" />
       <keyword name="BaseCloudRenderer" id="simul::clouds::BaseCloudRenderer::BaseCloudRenderer" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a1bb1168c813b2239a2b254288d5b1fec" />
       <keyword name="CreateCloudGeometryHelper" id="simul::clouds::BaseCloudRenderer::CreateCloudGeometryHelper" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#aacc0e8648488515677f8b9d722aad557" />
@@ -1109,12 +1111,6 @@
       <keyword name="simul::clouds::TimedNoise3D" id="simul::clouds::TimedNoise3D" ref="classsimul_1_1clouds_1_1TimedNoise3D.html" />
       <keyword name="SetTime" id="simul::clouds::TimedNoise3D::SetTime" ref="classsimul_1_1clouds_1_1TimedNoise3D.html#ac96b95c54ce2e5d008f5a3fee275b901" />
       <keyword name="Setup" id="simul::clouds::TimedNoise3D::Setup" ref="classsimul_1_1clouds_1_1TimedNoise3D.html#a05ea1f6c189b7c974f0b48cee4bbe302" />
-      <keyword name="simul::clouds::TextureGenerator" id="simul::clouds::TextureGenerator" ref="namespacesimul_1_1clouds_1_1TextureGenerator.html" />
-      <keyword name="Make2DNoiseTexture" id="simul::clouds::TextureGenerator::Make2DNoiseTexture" ref="namespacesimul_1_1clouds_1_1TextureGenerator.html#a5e8b8871f8e73113834775ad19a9db43" />
-      <keyword name="Make2DRandomTexture" id="simul::clouds::TextureGenerator::Make2DRandomTexture" ref="namespacesimul_1_1clouds_1_1TextureGenerator.html#aa1af99e02fe8179e5021eff20183b90b" />
-      <keyword name="Make3DNoiseTexture" id="simul::clouds::TextureGenerator::Make3DNoiseTexture" ref="namespacesimul_1_1clouds_1_1TextureGenerator.html#abdada01b39342c5c166296026869398b" />
-      <keyword name="Partial2DCloudTextureFill" id="simul::clouds::TextureGenerator::Partial2DCloudTextureFill" ref="namespacesimul_1_1clouds_1_1TextureGenerator.html#a35b68c9aa5f900a627847c5a7ea01215" />
-      <keyword name="SetBits" id="simul::clouds::TextureGenerator::SetBits" ref="namespacesimul_1_1clouds_1_1TextureGenerator.html#a1b927bf0a157eb63a4ffa1d714349f1b" />
       <keyword name="simul::crossplatform" id="simul::crossplatform" ref="namespacesimul_1_1crossplatform.html" />
       <keyword name="DrawGrid" id="simul::crossplatform::DrawGrid" ref="namespacesimul_1_1crossplatform.html#a325b9bba7be512d1f625c4ceea2b798c" />
       <keyword name="GetCameraPosVector" id="simul::crossplatform::GetCameraPosVector" ref="namespacesimul_1_1crossplatform.html#a2e761a25e6f8fb3675568ab788cc0b17" />
@@ -2612,7 +2608,6 @@
       <file>structsimul_1_1clouds_1_1SelectionIdentifier-members.html</file>
       <file>classsimul_1_1clouds_1_1TimedNoise3D.html</file>
       <file>classsimul_1_1clouds_1_1TimedNoise3D-members.html</file>
-      <file>namespacesimul_1_1clouds_1_1TextureGenerator.html</file>
       <file>namespacesimul_1_1crossplatform.html</file>
       <file>structsimul_1_1crossplatform_1_1AmortizationStruct.html</file>
       <file>structsimul_1_1crossplatform_1_1AmortizationStruct-members.html</file>
