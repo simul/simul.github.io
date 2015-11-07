@@ -27,7 +27,7 @@
         {% assign path = path | remove_first: "/" %}
         {% assign psz = path | size %}
         {% assign paths = paths | push: path %}
-        {% assign title = node.title | remove: "Files (x86)/Jenkins/jobs/Simul Installers/workspace/Simul/PRODUCTS/TrueSky/Help/" %}
+        {% assign title = node.title | remove: "Files (x86)/Jenkins/jobs/Simul Installers/workspace/Simul/PRODUCTS/TrueSky/Help/" | remove " Source File" %}
         {% assign titles = titles | push: title %}
         {% if node.url == page.url %}
           {% assign this_path = path %}
@@ -57,7 +57,7 @@
               {% assign paths2 = site.array %}
               {% for node2 in sorted_pages %}
                 {% assign path2 = paths[forloop.index0] %}
-                {% if path2 contains node_path and node2.url != node.url and path2 contains ".md" %}
+                {% if path2 contains node_path and node2.url != node.url %}
                   {% assign path2 = paths[forloop.index0] %}
                   {% assign title2 = titles[forloop.index0] %}
                   {% assign level2 = level2 | push: node2 %}
@@ -81,7 +81,7 @@
       </ul>
 
     </nav>
-    <br>A <br>
+    <br>B <br>
     <p>&copy; {{ site.time | date: '%Y' }} Simul Software Ltd. All rights reserved.</p>
   </div>
 </div>
