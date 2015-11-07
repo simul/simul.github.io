@@ -12,6 +12,7 @@
 }
 
 #banner-index {
+	position: fixed;
 	padding-left: 20px;
 	height: 60px;
 }
