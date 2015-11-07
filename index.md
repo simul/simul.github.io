@@ -11,9 +11,10 @@ Search
 {% capture my-include %}
 {% include searchbar.html %}
 {% endcapture %}
-{{ my-include | replace: '    ', '' }}
+{{ my-include | replace: '  ', '' }}
+s
 
-
+{% include searchbar.html %}
 [Developer Manual](manual/)
 ---
 
