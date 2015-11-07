@@ -11,7 +11,7 @@
 
     <nav class="sidebar-nav">
 
-R {{ page.url }} <br>
+S {{ page.url }} <br>
       <ul>
       {% assign sorted_pages = site.pages | sort: "url" %}
 
@@ -38,10 +38,12 @@ R {{ page.url }} <br>
       {% endfor %}
 
       {% assign menu_level = 0 %}
-      
+
       {% for node in sorted_pages %}
         {% assign node_path = paths[forloop.index0] %}
-        {{ node_path }}
+        {% assign node_path_parts = node_path | split: '/' %}
+        {% assign node_path_parts_size = node_url_parts | size %}
+        {{ node_path }} {{ node_path_parts_size }}
       {% endfor %}
       </ul>
 
