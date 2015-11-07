@@ -26,7 +26,7 @@
       {% endif %}
       {% assign page_url =  page.url | remove: ".html"  %}
       {% assign page_url = page_url | replace: "_1_1","/" %}
-L {{ page_url }} <br>
+M {{ page_url }} <br>
       <ul>
       {% assign sorted_pages = site.pages | sort: "url" %}
 
@@ -43,6 +43,17 @@ L {{ page_url }} <br>
         {% assign path = path | replace: "_1_1","/" %}
         {% assign path = path | remove_first: "/" %}
         {% assign psz = path | size %}
+        {% assign paths = paths | push: path %}
+
+        {% assign title_parts = node.title | split: '/' %}
+        {% assign title = title_parts.last %}
+        {% assign title = title | remove: ".md Source File" %}
+        {% assign titles = titles | push: title %}
+
+        {% if node.url == page.url %}
+          {% assign this_node = node %}
+          {% assign this_path = path %}
+        {% endif %}
       {% endfor %}
 
       </ul>
