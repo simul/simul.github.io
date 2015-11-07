@@ -41,9 +41,10 @@ T {{ page.url }} <br>
 
       {% for node in sorted_pages %}
         {% assign node_path = paths[forloop.index0] %}
+        {% assign node_title = titles[forloop.index0] %}
         {% assign node_path_parts = node_path | split: '/' %}
         {% assign node_path_parts_size = node_path_parts | size %}
-        {{ node_path }} {{ node_path_parts_size }}
+        {{ node_path }}-{{ node_path_parts_size }}-{{ node_title }}<br>
       {% endfor %}
       </ul>
 
