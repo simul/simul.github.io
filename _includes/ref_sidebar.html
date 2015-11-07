@@ -42,6 +42,9 @@ V {{ page.url }} <br>
         {% assign node_title = titles[forloop.index0] %}
         {% assign node_path_parts = node_path | split: '/' %}
         {% assign node_path_parts_size = node_path_parts | size %}
+        {% if node_title == "404" %}
+          {% continue %}
+        {% endif %}
         {% unless node_path contains ".md" or node_path_parts_size == 1 %}
           {% continue %}
         {% endunless %}
