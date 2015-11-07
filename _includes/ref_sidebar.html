@@ -11,11 +11,9 @@
 
     <nav class="sidebar-nav">
 
-T {{ page.url }} <br>
+U {{ page.url }} <br>
       <ul>
       {% assign sorted_pages = site.pages | sort: "url" %}
-
-      page url is {{ page.url }}
 
       {% assign this_path = "" %}
 
@@ -48,6 +46,8 @@ T {{ page.url }} <br>
           {% continue %}
         {% endunless %}
         {{ node_path }}-{{ node_path_parts_size }}-{{ node_title }}<br>
+            <li>
+            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node_title }}</a></li>
       {% endfor %}
       </ul>
 
