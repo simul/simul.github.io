@@ -9,15 +9,15 @@
         <section title="Developer Manual" ref="index.html">
           <section title="1 Introduction" ref="man_1_introduction.html" />
           <section title="2 Getting Started" ref="man_2_gettingstarted.html" />
-          <section title="Controlling the Environment" ref="man_3_environment.html" />
+          <section title="3 Controlling the Environment" ref="man_3_environment.html" />
           <section title="4 Rendering the Environment" ref="man_4_rendering.html" />
           <section title="5 Mixed Resolution Compositing" ref="man_5_mixed_resolution.html" />
           <section title="6 The Sky Sequencer" ref="man_8_sequencer.html" />
           <section title="Licensing" ref="man_a_licensing.html" />
         </section>
-        <section title="3.1 The Sky Keyframer" ref="man_31_sky_keyframer.html" />
-        <section title="3.2 The Cloud Keyframer" ref="man_32_cloud_keyframer.html" />
-        <section title="4.1 Shaders" ref="man_46_shaders.html" />
+        <section title="3.1 The Sky Keyframer" ref="man_3_environment_ooo2_sky_keyframer.html" />
+        <section title="3.2 The Cloud Keyframer" ref="man_3_environment_ooo2_cloud_keyframer.html" />
+        <section title="4.1 Shaders" ref="man_4_rendering_ooo6_shaders.html" />
         <section title="Change List" ref="man_9_changelist.html" />
         <section title="REFERENCE">
           <section title="Namespace List" ref="namespaces.html">
@@ -222,11 +222,11 @@
     <keywords>
       <keyword name="1 Introduction" id="1 Introduction" ref="man_1_introduction.html" />
       <keyword name="2 Getting Started" id="2 Getting Started" ref="man_2_gettingstarted.html" />
-      <keyword name="Controlling the Environment" id="Controlling the Environment" ref="man_3_environment.html" />
-      <keyword name="3.1 The Sky Keyframer" id="3.1 The Sky Keyframer" ref="man_31_sky_keyframer.html" />
-      <keyword name="3.2 The Cloud Keyframer" id="3.2 The Cloud Keyframer" ref="man_32_cloud_keyframer.html" />
+      <keyword name="3 Controlling the Environment" id="3 Controlling the Environment" ref="man_3_environment.html" />
+      <keyword name="3.1 The Sky Keyframer" id="3.1 The Sky Keyframer" ref="man_3_environment_ooo2_sky_keyframer.html" />
+      <keyword name="3.2 The Cloud Keyframer" id="3.2 The Cloud Keyframer" ref="man_3_environment_ooo2_cloud_keyframer.html" />
       <keyword name="4 Rendering the Environment" id="4 Rendering the Environment" ref="man_4_rendering.html" />
-      <keyword name="4.1 Shaders" id="4.1 Shaders" ref="man_46_shaders.html" />
+      <keyword name="4.1 Shaders" id="4.1 Shaders" ref="man_4_rendering_ooo6_shaders.html" />
       <keyword name="5 Mixed Resolution Compositing" id="5 Mixed Resolution Compositing" ref="man_5_mixed_resolution.html" />
       <keyword name="6 The Sky Sequencer" id="6 The Sky Sequencer" ref="man_8_sequencer.html" />
       <keyword name="Change List" id="Change List" ref="man_9_changelist.html" />
@@ -2497,13 +2497,13 @@
       <file>man_1_introduction.html</file>
       <file>man_2_gettingstarted.html</file>
       <file>man_3_environment.html</file>
-      <file>man_31_sky_keyframer.html</file>
+      <file>man_3_environment_ooo2_sky_keyframer.html</file>
       <file>SkyKeyframerLinked.png</file>
-      <file>man_32_cloud_keyframer.html</file>
+      <file>man_3_environment_ooo2_cloud_keyframer.html</file>
       <file>man_4_rendering.html</file>
       <file>rain.jpg</file>
       <file>Lightning-RainStreaks.jpg</file>
-      <file>man_46_shaders.html</file>
+      <file>man_4_rendering_ooo6_shaders.html</file>
       <file>man_5_mixed_resolution.html</file>
       <file>man_8_sequencer.html</file>
       <file>Timeline.png</file>
