@@ -63,9 +63,9 @@
 
       {% assign menu_level = 0 %}
 
-F {{ this_path }} <br>
+G {{ this_path }} <br>
       {% for node in nodes %}
-        {% assign node_path = paths[forloop.index0] %}
+        {% assign node_path = paths[forloop.index] %}
         {% assign node_url =  node_path %}
         {% assign node_url = node_url | remove: ".html" %}
         {% assign node_url = node_url | replace: "_1_1","/" %}
@@ -73,7 +73,7 @@ F {{ this_path }} <br>
         {% assign node_url_parts = node_url | split: '/' %}
         {% assign node_url_parts_size = node_url_parts | size %}
         
-        {% assign node_title = titles[forloop.index0] %}
+        {% assign node_title = titles[forloop.index] %}
         {{ node.url }} a {{ node_path }} b {{ node_title }}
 
         {% assign filename = node_url_parts | last %}
