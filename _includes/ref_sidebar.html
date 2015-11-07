@@ -8,7 +8,7 @@
       </h1>
       <p class="lead">{{ site.description }}</p>
     </div>
-I<br>
+J
 
     <nav class="sidebar-nav">
       <ul>
@@ -30,11 +30,7 @@ I<br>
         {% if path contains "_source.html" %}
           {% assign path = path | replace: "reference/","reference/source/" %}
         {% endif %}
-        {% assign path = path | replace: "reference/class","reference/classes/" %}
-        {% assign path = path | replace: "reference/classeses","reference/classes" %}
-        {% assign path = path | remove: ".html" %}
-        {% assign path = path | replace: "_1_1","/" | replace: "_01"," " | replace: "_8","." %}
-        {% assign path = path | remove_first: "/" %}
+        {% assign path = path | replace: "reference/class","reference/classes/" | replace: "reference/classeses","reference/classes" | remove: ".html" | replace: "_1_1","/" | replace: "_01"," " | replace: "_8","." | remove_first: "/" %}
         {% assign psz = path | size %}
 
         {% assign path_parts = path | split: '/' %}
