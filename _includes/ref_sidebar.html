@@ -70,7 +70,7 @@ F<br>
                   {% continue %}
                 {% endunless %}
                 {% assign path2 = paths[forloop.index0] %}
-                {% if path2 contains node_path and node2.url != node.url and path2 contains ".md" %}
+                {% if path2 contains node_path and node2.url != node.url  %}
                   {% assign path2 = paths[forloop.index0] %}
                   {% assign title2 = titles[forloop.index0] %}
                   {% assign level2 = level2 | push: node2 %}
