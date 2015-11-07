@@ -8,7 +8,8 @@ trueSKY Documentation
 
 Search
 ------
-{% include searchbar.html %}
+{% capture my-include %}{% include searchbar.html %}{% endcapture %}
+{{ my-include }}
 
 
 [Developer Manual](manual/)
