@@ -4,6 +4,7 @@
 }
 .banner-search {
    float:right;
+   display: block;
 }
 .content {
 	top:60px;
