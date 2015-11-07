@@ -53,6 +53,14 @@
             <li>
             <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node_title }}</a></li>
             {% if this_path contains node_path %}
+              {% assign level2 = site.array %}
+              {% for node2 in sorted_pages %}
+                {% assign path2 = paths[forloop.index0] %}
+                {% if path2 contains node_path and node2.url != node.url and path2 contains ".md" %}
+                  {{ path2 }}
+                  {% assign level2 = level2 | push: node2 %}
+                {% endif %}
+              {% endfor %}
             {% endif %}
       {% endfor %}
       {% for num in (1...menu_level) %}
@@ -61,7 +69,7 @@
       </ul>
 
     </nav>
-    <br>X <br>
+    <br>Y <br>
     <p>&copy; {{ site.time | date: '%Y' }} Simul Software Ltd. All rights reserved.</p>
   </div>
 </div>
