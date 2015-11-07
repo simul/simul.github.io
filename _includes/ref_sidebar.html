@@ -8,7 +8,7 @@
       </h1>
       <p class="lead">{{ site.description }}</p>
     </div>
-F<br>
+G<br>
 
     <nav class="sidebar-nav">
       <ul>
@@ -16,6 +16,7 @@ F<br>
 
       {% assign this_path = "" %}
 
+      {% assign pages = site.array %}
       {% assign paths = site.array %}
       {% assign titles = site.array %}
       {% assign path_sizes = site.array %}
@@ -23,9 +24,14 @@ F<br>
 
       {% for node in sorted_pages %}
         {% assign path = node.url | remove: "/index.html" %}
+        {% if path contains "/dir_" %}
+          {% continue %}
+        {% endif %}
         {% if path contains "_source.html" %}
           {% assign path = path | replace: "reference/","reference/source/" %}
         {% endif %}
+        {% assign path = path | replace: "reference/class","reference/classes/" %}
+        {% assign path = path | replace: "reference/classeses","reference/classes" %}
         {% assign path = path | remove: ".html" %}
         {% assign path = path | replace: "_1_1","/" | replace: "_01"," " | replace: "_8","." %}
         {% assign path = path | remove_first: "/" %}
@@ -35,9 +41,10 @@ F<br>
         {% assign path_parts_size = path_parts | size %}
 
         {% assign paths = paths | push: path %}
+        {% assign pages = pages | push: node %}
         {% assign path_sizes = path_sizes | push: path_parts_size %}
 
-        {% assign title = node.title | remove: "Files (x86)/Jenkins/jobs/Simul Installers/workspace/Simul/PRODUCTS/TrueSky/Help/" | remove: " Source File" %}
+        {% assign title = node.title | remove: "Files (x86)/Jenkins/jobs/Simul Installers/workspace/Simul/PRODUCTS/TrueSky/Help/" | remove: " Source File" | remove: " Class Reference" %}
         {% assign titles = titles | push: title %}
         {% if node.url == page.url %}
           {% assign this_path = path %}
@@ -48,7 +55,7 @@ F<br>
 
       {% assign menu_level = 0 %}
 
-      {% for node in sorted_pages %}
+      {% for node in pages %}
         {% assign node_path = paths[forloop.index0] %}
         {% assign node_title = titles[forloop.index0] %}
         {% assign node_path_parts = node_path | split: '/' %}
@@ -65,7 +72,7 @@ F<br>
               {% assign level2 = site.array %}
               {% assign titles2 = site.array %}
               {% assign paths2 = site.array %}
-              {% for node2 in sorted_pages %}
+              {% for node2 in pages %}
                 {% unless path_sizes[forloop.index0] == 2 %}
                   {% continue %}
                 {% endunless %}
