@@ -63,11 +63,12 @@
 
       {% assign menu_level = 0 %}
 
-H {{ this_path }} <br>
+D {{ this_path }} <br>
       {% for node in sorted_pages %}
         {% assign node_path = paths[forloop.index0] %}
         {% assign node_url =  node_path %}
         {% assign node_url = node_url | remove: ".html" %}
+        {% assign node_url = node_url | replace: "_1_1","/" %}
 
         {% assign node_url_parts = node_url | split: '/' %}
         {% assign node_url_parts_size = node_url_parts | size %}
