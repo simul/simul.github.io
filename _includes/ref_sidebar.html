@@ -8,7 +8,7 @@
       </h1>
       <p class="lead">{{ site.description }}</p>
     </div>
-E<br>
+F<br>
 
     <nav class="sidebar-nav">
       <ul>
@@ -37,7 +37,7 @@ E<br>
         {% assign paths = paths | push: path %}
         {% assign path_sizes = path_sizes | push: path_parts_size %}
 
-        {% assign title = node.title | remove: "Files (x86)/Jenkins/jobs/Simul Installers/workspace/Simul/PRODUCTS/TrueSky/Help/" %}
+        {% assign title = node.title | remove: "Files (x86)/Jenkins/jobs/Simul Installers/workspace/Simul/PRODUCTS/TrueSky/Help/" | remove: " Source File" %}
         {% assign titles = titles | push: title %}
         {% if node.url == page.url %}
           {% assign this_path = path %}
@@ -82,7 +82,7 @@ E<br>
                 {% assign menu_level = 1 %}
                 <ul>
                 {% for m2 in level2 %}
-                  <li><a href='{{m2.url}}'>{{ paths2[forloop.index0] }} {{ titles2[forloop.index0] }}</a></li>
+                  <li><a href='{{m2.url}}'>{{ titles2[forloop.index0] }}</a></li>
                 {% endfor %}
                 </ul>
               {% endif%}
