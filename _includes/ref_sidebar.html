@@ -30,7 +30,7 @@ Q {{ page.url }} <br>
         {% assign psz = path | size %}
         {% assign paths = paths | push: path %}
         {% if node.title contains "/" %}
-          {% assign title_parts = node.title | split: '/' %}
+          {% assign title_parts = node.title | split: "/" %}
         {% endif %}
       {% endfor %}
 
