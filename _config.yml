@@ -1,0 +1,24 @@
+# Dependencies
+highlighter:      pygments
+
+# Permalinks
+permalink:        none
+relative_permalinks: true
+
+# Setup
+title:            trueSKY Documentation
+tagline:          ''
+description:      ''
+url:              http://docs.simul.co
+baseurl:          /
+
+author:
+  name:           ''
+  url:            
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+array: []
