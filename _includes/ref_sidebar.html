@@ -8,10 +8,9 @@
       </h1>
       <p class="lead">{{ site.description }}</p>
     </div>
-    <br>D<br>
+E<br>
 
     <nav class="sidebar-nav">
-
       <ul>
       {% assign sorted_pages = site.pages | sort: "url" %}
 
@@ -65,7 +64,7 @@
                   {% assign path2 = paths[forloop.index0] %}
                   {% assign title2 = titles[forloop.index0] %}
                   {% assign level2 = level2 | push: node2 %}
-                  {% assign titles2 = titles2 | push: title2 %}
+                  {% assign titles2 = titles2 | push: titles[forloop.index0] %}
                   {% assign paths2 = paths2 | push: path2 %}
                 {% endif %}
               {% endfor %}
@@ -73,7 +72,7 @@
                 {% assign menu_level = 1 %}
                 <ul>
                 {% for m2 in level2 %}
-                  <li><a href='{{m2.url}}'>{{titles2[forloop.index0]}}</a></li>
+                  <li><a href='{{m2.url}}'>{{ paths2[forloop.index0] }} {{ titles2[forloop.index0] }}</a></li>
                 {% endfor %}
                 </ul>
               {% endif%}
