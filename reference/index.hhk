@@ -6,10 +6,11 @@
 <UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="man_1_introduction.html"><param name="Name" value="1 Introduction"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="man_2_gettingstarted.html"><param name="Name" value="2 Getting Started"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="man_31_sky_keyframer.html"><param name="Name" value="3.1 The Sky Keyframer"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="man_32_cloud_keyframer.html"><param name="Name" value="3.2 The Cloud Keyframer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="man_3_environment.html"><param name="Name" value="3 Controlling the Environment"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="man_3_environment_ooo2_sky_keyframer.html"><param name="Name" value="3.1 The Sky Keyframer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="man_3_environment_ooo2_cloud_keyframer.html"><param name="Name" value="3.2 The Cloud Keyframer"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="man_4_rendering.html"><param name="Name" value="4 Rendering the Environment"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="man_46_shaders.html"><param name="Name" value="4.1 Shaders"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="man_4_rendering_ooo6_shaders.html"><param name="Name" value="4.1 Shaders"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="man_5_mixed_resolution.html"><param name="Name" value="5 Mixed Resolution Compositing"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="man_8_sequencer.html"><param name="Name" value="6 The Sky Sequencer"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1FileLoader.html#a667badf6e526183d4ede963335973312"><param name="Name" value="AcquireFileContents"></OBJECT>
@@ -174,7 +175,6 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1math_1_1Vector.html#af870aae9aec0b98ef8730664fea7b6e5"><param name="Name" value="simul::math::Vector"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1math_1_1Vector.html#af870aae9aec0b98ef8730664fea7b6e5"><param name="Name" value="simul::math::VirtualVector"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="man_3_environment.html"><param name="Name" value="Controlling the Environment"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudNode.html#a6b307008cf1145789e474e8ad1fd4dc4"><param name="Name" value="ConvertLightCoordsToReal"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudNode.html#a6b307008cf1145789e474e8ad1fd4dc4"><param name="Name" value="simul::clouds::CellularCloudNode"></OBJECT>
