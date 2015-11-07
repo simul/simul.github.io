@@ -70,16 +70,16 @@
                   {% continue %}
                 {% endunless %}
                 {% assign path2 = paths[forloop.index0] %}
-                {% if path2 contains node_path and node2.url != node.url  %}
-                  {% assign pages2 = pages2 | push: node2 %}
+                {% if path2 contains node_path and page2.url != node.url  %}
+                  {% assign pages2 = pages2 | push: page2 %}
                   {% assign titles2 = titles2 | push: titles[forloop.index0] %}
                 {% endif %}
               {% endfor %}
               {% if pages2.size > 0 %}
                 {% assign menu_level = 1 %}
                 <ul>
-                {% for m2 in pages2 %}
-                  <li><a href='{{m2.url}}'>{{ titles2[forloop.index0] }}</a></li>
+                {% for page2 in pages2 %}
+                  <li><a class="sidebar-nav-item{% if page2.url == node.url %} active{% endif %}" href='{{page2.url}}'>{{ titles2[forloop.index0] }}</a></li>
                 {% endfor %}
                 </ul>
               {% endif%}
