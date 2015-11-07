@@ -3,7 +3,7 @@ title: Home
 layout: default
 ---
 
-[Manual](manual/)
+[Developer Manual](manual/)
 ---
 
 [Unreal Engine](unrealengine/)
@@ -13,7 +13,4 @@ layout: default
 ---
 
 [SimulFX](simulfx/)
----
-
-[Reference](reference/)
 ---
