@@ -25,7 +25,7 @@ url: Member List
   <td id="projectlogo"><img alt="Logo" src="Simul-Logo-200x60.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">trueSKY
-   &#160;<span id="projectnumber">3.9.0.150</span>
+   &#160;<span id="projectnumber">3.8.2</span>
    </div>
   </td>
  </tr>
@@ -50,16 +50,17 @@ url: Member List
   <tr class="even"><td class="entry"><a class="el" href="classsimul_1_1base_1_1FileLoader.html#a667badf6e526183d4ede963335973312">AcquireFileContents</a>(void *&amp;pointer, unsigned int &amp;bytes, const char *filename_utf8, bool open_as_text)=0</td><td class="entry"><a class="el" href="classsimul_1_1base_1_1FileLoader.html">simul::base::FileLoader</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classsimul_1_1base_1_1FileLoader.html#a83156efb5a0fa089f0ef23f6752153bd">FileExists</a>(const char *filename_utf8) const  =0</td><td class="entry"><a class="el" href="classsimul_1_1base_1_1FileLoader.html">simul::base::FileLoader</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classsimul_1_1base_1_1FileLoader.html#a7f013d417bab1931bc30775de68c1dfa">FindFileInPathStack</a>(const char *filename_utf8, const std::vector&lt; std::string &gt; &amp;path_stack_utf8) const  =0</td><td class="entry"><a class="el" href="classsimul_1_1base_1_1FileLoader.html">simul::base::FileLoader</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classsimul_1_1base_1_1FileLoader.html#afc9e427232927c361d19de608bfc3d85">GetFileDate</a>(const char *filename_utf8)=0</td><td class="entry"><a class="el" href="classsimul_1_1base_1_1FileLoader.html">simul::base::FileLoader</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classsimul_1_1base_1_1FileLoader.html#a622cf5572d5b988e48dcb338c65150c7">GetFileLoader</a>()</td><td class="entry"><a class="el" href="classsimul_1_1base_1_1FileLoader.html">simul::base::FileLoader</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classsimul_1_1base_1_1FileLoader.html#a017ce3956e0d3830ee87c73d693b2934">ReleaseFileContents</a>(void *pointer)=0</td><td class="entry"><a class="el" href="classsimul_1_1base_1_1FileLoader.html">simul::base::FileLoader</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classsimul_1_1base_1_1FileLoader.html#aac6ffd588cc9a6587811310b27c8cce9">Save</a>(void *pointer, unsigned int bytes, const char *filename_utf8, bool save_as_text)=0</td><td class="entry"><a class="el" href="classsimul_1_1base_1_1FileLoader.html">simul::base::FileLoader</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classsimul_1_1base_1_1FileLoader.html#a03e7a35033f97665ff86ac368c5d85ed">SetFileLoader</a>(FileLoader *f)</td><td class="entry"><a class="el" href="classsimul_1_1base_1_1FileLoader.html">simul::base::FileLoader</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classsimul_1_1base_1_1FileLoader.html#aac425365a47886968337e6822248161a">FindIndexInPathStack</a>(const char *filename_utf8, const std::vector&lt; std::string &gt; &amp;path_stack_utf8) const  =0</td><td class="entry"><a class="el" href="classsimul_1_1base_1_1FileLoader.html">simul::base::FileLoader</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classsimul_1_1base_1_1FileLoader.html#afc9e427232927c361d19de608bfc3d85">GetFileDate</a>(const char *filename_utf8)=0</td><td class="entry"><a class="el" href="classsimul_1_1base_1_1FileLoader.html">simul::base::FileLoader</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classsimul_1_1base_1_1FileLoader.html#a622cf5572d5b988e48dcb338c65150c7">GetFileLoader</a>()</td><td class="entry"><a class="el" href="classsimul_1_1base_1_1FileLoader.html">simul::base::FileLoader</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classsimul_1_1base_1_1FileLoader.html#a017ce3956e0d3830ee87c73d693b2934">ReleaseFileContents</a>(void *pointer)=0</td><td class="entry"><a class="el" href="classsimul_1_1base_1_1FileLoader.html">simul::base::FileLoader</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classsimul_1_1base_1_1FileLoader.html#a6357955ad6d3e43d76adb786f44c5c7b">Save</a>(void *pointer, unsigned int bytes, const char *filename_utf8, bool save_as_text)=0</td><td class="entry"><a class="el" href="classsimul_1_1base_1_1FileLoader.html">simul::base::FileLoader</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classsimul_1_1base_1_1FileLoader.html#a03e7a35033f97665ff86ac368c5d85ed">SetFileLoader</a>(FileLoader *f)</td><td class="entry"><a class="el" href="classsimul_1_1base_1_1FileLoader.html">simul::base::FileLoader</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
 </table></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/>
-<address style="text-align: right;">trueSKY VERSION 3.9.0.150<small>
-Thu Nov 5 2015 06:19:56</small></address>
+<address style="text-align: right;">trueSKY VERSION 3.8.2<small>
+Sat Nov 7 2015 01:56:29</small></address>
 </body>
 </html>

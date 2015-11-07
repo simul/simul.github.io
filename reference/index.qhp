@@ -5,7 +5,7 @@
   <filterSection>
     <filterAttribute>doxygen</filterAttribute>
     <toc>
-      <section title="trueSKY 3.9.0.150" ref="index.html">
+      <section title="trueSKY 3.8.2" ref="index.html">
         <section title="Developer Manual" ref="index.html">
           <section title="Introduction" ref="introduction.html" />
           <section title="Getting Started" ref="gettingstarted.html" />
@@ -29,6 +29,7 @@
                 <section title="TextureGenerator" ref="namespacesimul_1_1clouds_1_1TextureGenerator.html" />
               </section>
               <section title="crossplatform" ref="namespacesimul_1_1crossplatform.html" />
+              <section title="dx11" ref="namespacesimul_1_1dx11.html" />
               <section title="geometry" ref="namespacesimul_1_1geometry.html" />
               <section title="graph">
                 <section title="meta" ref="namespacesimul_1_1graph_1_1meta.html" />
@@ -319,9 +320,10 @@
       <keyword name="AcquireFileContents" id="simul::base::FileLoader::AcquireFileContents" ref="classsimul_1_1base_1_1FileLoader.html#a667badf6e526183d4ede963335973312" />
       <keyword name="FileExists" id="simul::base::FileLoader::FileExists" ref="classsimul_1_1base_1_1FileLoader.html#a83156efb5a0fa089f0ef23f6752153bd" />
       <keyword name="FindFileInPathStack" id="simul::base::FileLoader::FindFileInPathStack" ref="classsimul_1_1base_1_1FileLoader.html#a7f013d417bab1931bc30775de68c1dfa" />
+      <keyword name="FindIndexInPathStack" id="simul::base::FileLoader::FindIndexInPathStack" ref="classsimul_1_1base_1_1FileLoader.html#aac425365a47886968337e6822248161a" />
       <keyword name="GetFileDate" id="simul::base::FileLoader::GetFileDate" ref="classsimul_1_1base_1_1FileLoader.html#afc9e427232927c361d19de608bfc3d85" />
       <keyword name="ReleaseFileContents" id="simul::base::FileLoader::ReleaseFileContents" ref="classsimul_1_1base_1_1FileLoader.html#a017ce3956e0d3830ee87c73d693b2934" />
-      <keyword name="Save" id="simul::base::FileLoader::Save" ref="classsimul_1_1base_1_1FileLoader.html#aac6ffd588cc9a6587811310b27c8cce9" />
+      <keyword name="Save" id="simul::base::FileLoader::Save" ref="classsimul_1_1base_1_1FileLoader.html#a6357955ad6d3e43d76adb786f44c5c7b" />
       <keyword name="GetFileLoader" id="simul::base::FileLoader::GetFileLoader" ref="classsimul_1_1base_1_1FileLoader.html#a622cf5572d5b988e48dcb338c65150c7" />
       <keyword name="SetFileLoader" id="simul::base::FileLoader::SetFileLoader" ref="classsimul_1_1base_1_1FileLoader.html#a03e7a35033f97665ff86ac368c5d85ed" />
       <keyword name="simul::base::GpuProfilingInterface" id="simul::base::GpuProfilingInterface" ref="classsimul_1_1base_1_1GpuProfilingInterface.html" />
@@ -489,8 +491,6 @@
       <keyword name="SetFogAmbientBrightness" id="simul::clouds::BaseWeatherRenderer::SetFogAmbientBrightness" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aadb4fcf08556697d88fe19a2bf795223" />
       <keyword name="GetFogLightBrightness" id="simul::clouds::BaseWeatherRenderer::GetFogLightBrightness" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ab731cb21f53d3308e556c6441b4c16fe" />
       <keyword name="SetFogLightBrightness" id="simul::clouds::BaseWeatherRenderer::SetFogLightBrightness" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ace42837c26a94ae18332c7eee8b31dc2" />
-      <keyword name="GetSimpleCloudShadowing" id="simul::clouds::BaseWeatherRenderer::GetSimpleCloudShadowing" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a82f562b931f08995b37cab29ba77307e" />
-      <keyword name="SetSimpleCloudShadowing" id="simul::clouds::BaseWeatherRenderer::SetSimpleCloudShadowing" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a9d26843956506ec5d86b0d3def71ced3" />
       <keyword name="GetSimpleCloudShadowSharpness" id="simul::clouds::BaseWeatherRenderer::GetSimpleCloudShadowSharpness" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a68ffbff4d7008bd2c20a872a2bc58996" />
       <keyword name="SetSimpleCloudShadowSharpness" id="simul::clouds::BaseWeatherRenderer::SetSimpleCloudShadowSharpness" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a4a545c6643c555d163c5df75d231d298" />
       <keyword name="GetShowPlanets" id="simul::clouds::BaseWeatherRenderer::GetShowPlanets" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a044333b4fc09a74d82eb5f4cc6b953a7" />
@@ -878,6 +878,8 @@
       <keyword name="SetDefaultNumSlices" id="simul::clouds::CloudKeyframer::SetDefaultNumSlices" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a48d4110392314f6a6a83a36d615b6067" />
       <keyword name="GetExplicitOffsets" id="simul::clouds::CloudKeyframer::GetExplicitOffsets" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a6fdbdad892bcbd9e90e7e0a834263b99" />
       <keyword name="SetExplicitOffsets" id="simul::clouds::CloudKeyframer::SetExplicitOffsets" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a0385666aa19568d7544c73c53bc9f01a" />
+      <keyword name="GetCloudShadowStrength" id="simul::clouds::CloudKeyframer::GetCloudShadowStrength" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#ab7776eaf56a0e5849f9cfc2204e36df6" />
+      <keyword name="SetCloudShadowStrength" id="simul::clouds::CloudKeyframer::SetCloudShadowStrength" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a346c83eac54a8f2696512d9468fe18ae" />
       <keyword name="GetCloudShadowRange" id="simul::clouds::CloudKeyframer::GetCloudShadowRange" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a0f8ce790e7870940419bc129fc9b6068" />
       <keyword name="SetCloudShadowRange" id="simul::clouds::CloudKeyframer::SetCloudShadowRange" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#af52677281baee28bef2e44fc62a4dd31" />
       <keyword name="GetShadowTextureSize" id="simul::clouds::CloudKeyframer::GetShadowTextureSize" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a335d97405bc03c02d813e1714398d922" />
@@ -1282,6 +1284,10 @@
       <keyword name="GetLowResDepthTexture" id="simul::crossplatform::TwoResFramebuffer::GetLowResDepthTexture" ref="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html#aa0ccb8c69a873991ec9c157681f9293d" />
       <keyword name="RenderDepthBuffers" id="simul::crossplatform::TwoResFramebuffer::RenderDepthBuffers" ref="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html#ad581de9f35a0d0c4327e894d7de5fed5" />
       <keyword name="UpdatePixelOffset" id="simul::crossplatform::TwoResFramebuffer::UpdatePixelOffset" ref="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html#ac0bd3bdfe30084a0b7ab6b3293e833fc" />
+      <keyword name="simul::dx11" id="simul::dx11" ref="namespacesimul_1_1dx11.html" />
+      <keyword name="CreateEffect" id="simul::dx11::CreateEffect" ref="namespacesimul_1_1dx11.html#a438f29efd3ada4ea0773a98d8065ac37" />
+      <keyword name="CreateEffect" id="simul::dx11::CreateEffect" ref="namespacesimul_1_1dx11.html#aef9a1d177d9334a5fc06a27117c5c770" />
+      <keyword name="PipeCompilerOutput" id="simul::dx11::PipeCompilerOutput" ref="namespacesimul_1_1dx11.html#af90cac6f3a6fad74194283824372d296" />
       <keyword name="simul::dx11::ConstantBuffer" id="simul::dx11::ConstantBuffer" ref="classsimul_1_1dx11_1_1ConstantBuffer.html" />
       <keyword name="Apply" id="simul::dx11::ConstantBuffer::Apply" ref="classsimul_1_1dx11_1_1ConstantBuffer.html#ae0a51dde8ecda8c835d676c63a1c6bb8" />
       <keyword name="InvalidateDeviceObjects" id="simul::dx11::ConstantBuffer::InvalidateDeviceObjects" ref="classsimul_1_1dx11_1_1ConstantBuffer.html#a5f38cd4f3cac16d28ab53e6ecbd449cd" />
@@ -2650,6 +2656,7 @@
       <file>classsimul_1_1crossplatform_1_1StructuredBuffer-members.html</file>
       <file>classsimul_1_1crossplatform_1_1TwoResFramebuffer.html</file>
       <file>classsimul_1_1crossplatform_1_1TwoResFramebuffer-members.html</file>
+      <file>namespacesimul_1_1dx11.html</file>
       <file>classsimul_1_1dx11_1_1ConstantBuffer.html</file>
       <file>classsimul_1_1dx11_1_1ConstantBuffer-members.html</file>
       <file>classsimul_1_1dx11_1_1Direct3D11Manager.html</file>

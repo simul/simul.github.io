@@ -25,7 +25,7 @@ url:  Files (x86)/Jenkins/jobs/Simul Installers/workspace/Simul/Base/DefaultFile
   <td id="projectlogo"><img alt="Logo" src="Simul-Logo-200x60.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">trueSKY
-   &#160;<span id="projectnumber">3.9.0.150</span>
+   &#160;<span id="projectnumber">3.8.2</span>
    </div>
   </td>
  </tr>
@@ -58,20 +58,21 @@ url:  Files (x86)/Jenkins/jobs/Simul Installers/workspace/Simul/Base/DefaultFile
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;            DefaultFileLoader();</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;            <span class="keywordtype">bool</span> FileExists(<span class="keyword">const</span> <span class="keywordtype">char</span> *filename_utf8) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            std::string FindFileInPathStack(<span class="keyword">const</span> <span class="keywordtype">char</span> *filename_utf8,<span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;path_stack_utf8) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            <span class="keywordtype">void</span> AcquireFileContents(<span class="keywordtype">void</span>*&amp; pointer, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>&amp; bytes, <span class="keyword">const</span> <span class="keywordtype">char</span>* filename_utf8,<span class="keywordtype">bool</span> open_as_text);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            <span class="keywordtype">double</span> GetFileDate(<span class="keyword">const</span> <span class="keywordtype">char</span>* filename_utf8);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            <span class="keywordtype">void</span> ReleaseFileContents(<span class="keywordtype">void</span>* pointer);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <span class="keywordtype">void</span> Save(<span class="keywordtype">void</span>* pointer, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> bytes, <span class="keyword">const</span> <span class="keywordtype">char</span>* filename_utf8,<span class="keywordtype">bool</span> save_as_text);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        };</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            <span class="keywordtype">int</span> FindIndexInPathStack(<span class="keyword">const</span> <span class="keywordtype">char</span> *filename_utf8,<span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;path_stack_utf8) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            <span class="keywordtype">void</span> AcquireFileContents(<span class="keywordtype">void</span>*&amp; pointer, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>&amp; bytes, <span class="keyword">const</span> <span class="keywordtype">char</span>* filename_utf8,<span class="keywordtype">bool</span> open_as_text);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            <span class="keywordtype">double</span> GetFileDate(<span class="keyword">const</span> <span class="keywordtype">char</span>* filename_utf8);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <span class="keywordtype">void</span> ReleaseFileContents(<span class="keywordtype">void</span>* pointer);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keywordtype">bool</span> Save(<span class="keywordtype">void</span>* pointer, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> bytes, <span class="keyword">const</span> <span class="keywordtype">char</span>* filename_utf8,<span class="keywordtype">bool</span> save_as_text);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        };</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
 <div class="ttc" id="classsimul_1_1base_1_1FileLoader_html"><div class="ttname"><a href="classsimul_1_1base_1_1FileLoader.html">simul::base::FileLoader</a></div><div class="ttdef"><b>Definition:</b> <a href="FileLoader_8h_source.html#l00013">FileLoader.h:13</a></div></div>
 <div class="ttc" id="namespacesimul_html"><div class="ttname"><a href="namespacesimul.html">simul</a></div><div class="ttdef"><b>Definition:</b> <a href="Base_8h_source.html#l00001">Base.h:1</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/>
-<address style="text-align: right;">trueSKY VERSION 3.9.0.150<small>
-Thu Nov 5 2015 06:19:55</small></address>
+<address style="text-align: right;">trueSKY VERSION 3.8.2<small>
+Sat Nov 7 2015 01:56:28</small></address>
 </body>
 </html>

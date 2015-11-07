@@ -25,7 +25,7 @@ url: simul::base::FileLoader Class Reference
   <td id="projectlogo"><img alt="Logo" src="Simul-Logo-200x60.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">trueSKY
-   &#160;<span id="projectnumber">3.9.0.150</span>
+   &#160;<span id="projectnumber">3.8.2</span>
    </div>
   </td>
  </tr>
@@ -63,6 +63,10 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1FileLoader.html#a7f013d417bab1931bc30775de68c1dfa">FindFileInPathStack</a> (const char *filename_utf8, const std::vector&lt; std::string &gt; &amp;path_stack_utf8) const  =0</td></tr>
 <tr class="memdesc:a7f013d417bab1931bc30775de68c1dfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the named file relative to one of a given list of paths. Searches from the top of the stack. <br /></td></tr>
 <tr class="separator:a7f013d417bab1931bc30775de68c1dfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac425365a47886968337e6822248161a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac425365a47886968337e6822248161a"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1FileLoader.html#aac425365a47886968337e6822248161a">FindIndexInPathStack</a> (const char *filename_utf8, const std::vector&lt; std::string &gt; &amp;path_stack_utf8) const  =0</td></tr>
+<tr class="memdesc:aac425365a47886968337e6822248161a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the named file relative to one of a given list of paths, and return the index in the list, -1 if the file was found on the general search path, or path_stack_utf8.size() if it was not found. Searches from the top of the stack. <br /></td></tr>
+<tr class="separator:aac425365a47886968337e6822248161a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc9e427232927c361d19de608bfc3d85"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc9e427232927c361d19de608bfc3d85"></a>
 virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1FileLoader.html#afc9e427232927c361d19de608bfc3d85">GetFileDate</a> (const char *filename_utf8)=0</td></tr>
 <tr class="memdesc:afc9e427232927c361d19de608bfc3d85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the file date as a julian day number. Return zero if the file doesn't exist. <br /></td></tr>
@@ -71,10 +75,10 @@ virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1FileLoader.html#a017ce3956e0d3830ee87c73d693b2934">ReleaseFileContents</a> (void *pointer)=0</td></tr>
 <tr class="memdesc:a017ce3956e0d3830ee87c73d693b2934"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the memory allocated by AcquireFileContents. <br /></td></tr>
 <tr class="separator:a017ce3956e0d3830ee87c73d693b2934"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac6ffd588cc9a6587811310b27c8cce9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac6ffd588cc9a6587811310b27c8cce9"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1FileLoader.html#aac6ffd588cc9a6587811310b27c8cce9">Save</a> (void *pointer, unsigned int bytes, const char *filename_utf8, bool save_as_text)=0</td></tr>
-<tr class="memdesc:aac6ffd588cc9a6587811310b27c8cce9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the chunk of memory to storage. <br /></td></tr>
-<tr class="separator:aac6ffd588cc9a6587811310b27c8cce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6357955ad6d3e43d76adb786f44c5c7b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6357955ad6d3e43d76adb786f44c5c7b"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1FileLoader.html#a6357955ad6d3e43d76adb786f44c5c7b">Save</a> (void *pointer, unsigned int bytes, const char *filename_utf8, bool save_as_text)=0</td></tr>
+<tr class="memdesc:a6357955ad6d3e43d76adb786f44c5c7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the chunk of memory to storage. <br /></td></tr>
+<tr class="separator:a6357955ad6d3e43d76adb786f44c5c7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -146,7 +150,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/>
-<address style="text-align: right;">trueSKY VERSION 3.9.0.150<small>
-Thu Nov 5 2015 06:19:56</small></address>
+<address style="text-align: right;">trueSKY VERSION 3.8.2<small>
+Sat Nov 7 2015 01:56:29</small></address>
 </body>
 </html>
