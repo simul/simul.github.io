@@ -26,3 +26,8 @@
 {
 	top:60px;
 }
+
+.gsc-option-menu-container
+{
+	min-width:96px;
+}
