@@ -3,8 +3,10 @@
     min-height: 49px;
 }
 .banner-search {
-   float:right;
-   display: inline-block;
+     right: 0px;
+    width: 512px;
+    position: fixed;
+    top: 0px;
 }
 .content {
 	top:60px;
