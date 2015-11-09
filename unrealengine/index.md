@@ -6,7 +6,11 @@ Getting started
 ---
 * Register your username at [https://simul.co/register](https://simul.co/register)
 * You'll find your licence at [simul.co/account](https://simul.co/account).
-* After evaluating, to get a full licence head to [simul.co/truesky-ue4](https://simul.co/truesky-ue4).
+* After evaluating, to get a full indie licence, head to [simul.co/truesky-ue4](https://simul.co/truesky-ue4). For all other licences, write to [contact@simul.co](mailto:contact@simul.co).
+
+Installing the Plugin
+---
+From Unreal Engine 4.9.2 onwards, binary installers are available from [https://simul.co/truesky/download](https://simul.co/truesky/download). For other versions, or if you have a version of Unreal Engine built from source, you will need to build the plugin.
 
 How to build it
 ---
@@ -14,16 +18,12 @@ How to build it
 * Get the trueSKY UE4 fork from [GitHub](https://github.com/simul/UnrealEngine).
 If you are using a different UE4 codebase, pull changes from the Simul fork, and merge.
 
-This file contains only the modified files:
-[DeployUE4TrueSKY4.8.zip](https://simul.co/wp-content/uploads/private/master/DeployUE4TrueSKY4.8.zip)
-
 * As described in the UE4 readme (in the root UnrealEngine directory), Run Setup.bat and GenerateProjectFiles.bat from UE4. This will generate projects and the solution file (UE4.sln)
 
 * Use UE4.sln (UE4.vcxproj).
 The UE4 project contains the "TrueSkyPlugin" folder in Engine/UE4/Plugins.The plugin is in the “[UE4]\Engine\Plugins\TrueSkyPlugin” directory in your UE4 installation.
 The trueSKY binaries are in “[UE4]\Engine\Binaries\ThirdParty\Simul”. 
 There are two trueSKY modules in the UE4 project – TrueSkyPlugin, and TrueSkyEditorPlugin.
-
 
 * Build the UE4 project in the "Development Editor" configuration.
 
