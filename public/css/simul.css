@@ -11,6 +11,7 @@
 		 width: 183.333px;
 		 line-height: 55px;
 		 margin-top: 5px;
+		padding-left:20px;
 	}
 
 	.banner-search {
@@ -28,6 +29,7 @@
 
 #banner-index {
 	width: 100%;
+	padding:0px;
 	position: fixed;
 	padding-left: 20px;
 	height: 60px;
