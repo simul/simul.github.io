@@ -6,7 +6,7 @@ layout: unreal
 trueSKY Lighting
 --------------
 
-The simplest way to drive Unreal Engine lighting from trueSKY is to use the trueSKY macros - [UE4]/Engine/Plugins/TrueSkyPlugin/Blueprint/trueSkyMacros.uasset. Copy this file into your project's assets directory to make the macros available.
+The simplest way to drive Unreal Engine lighting from trueSKY is to use the trueSKY macros. These are in the file trueSkyMacros.uasset, which is automatically copied into your project Content/TrueSky folder when you add a trueSKY Sequence Actor. It can also be found in [UE4]/Engine/Plugins/TrueSkyPlugin/Content.
 
 To set the direction and colour of a Directional Light, find the trueSKYLightColourAndRotation macro, and connect references for the trueSkySequenceActor and the DirectionalLight to the inputs. Make sure that the "Exec" input is hit once per frame by an event tick. 
 
