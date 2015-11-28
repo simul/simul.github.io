@@ -55,7 +55,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for generating cloud volumes on the GPU.  <a href="classsimul_1_1clouds_1_1BaseGpuCloudGenerator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseLightningRenderer.html">BaseLightningRenderer</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main base class for all Lightning renderers, such as SimulGLLightningRenderer, SimulLightningRenderer (DX9) etc.  <a href="classsimul_1_1clouds_1_1BaseLightningRenderer.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The renderer for lightning.  <a href="classsimul_1_1clouds_1_1BaseLightningRenderer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html">BasePrecipitationRenderer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main base class for all Precipitation renderers.  <a href="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#details">More...</a><br /></td></tr>
@@ -130,16 +130,16 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac75fa67627a1511e3b02fd8eb86fc18c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac75fa67627a1511e3b02fd8eb86fc18c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesimul_1_1clouds.html#ac75fa67627a1511e3b02fd8eb86fc18c">Make2DNoiseTexture</a> (char *image_ptr, int texSize, int noiseSize, int octaves, float persistence=0.5f, simul::graph::standardnodes::ShowProgressInterface *progress=0, simul::graph::meta::Node *sender=0, bool make_unsigned=false)</td></tr>
-<tr class="memdesc:ac75fa67627a1511e3b02fd8eb86fc18c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 2D Perlin noise texture of size <code>texSize</code>, with a specified number of noise <code>octaves</code>, at memory location <code>image_ptr</code>. <br /></td></tr>
-<tr class="separator:ac75fa67627a1511e3b02fd8eb86fc18c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae1d601d1b2f1ba340a310dfeafa02c1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae1d601d1b2f1ba340a310dfeafa02c1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesimul_1_1clouds.html#aae1d601d1b2f1ba340a310dfeafa02c1">Make2DNoiseTexture</a> (char *image_ptr, int texSize, int noiseSize, int octaves, float persistence=0.5f, simul::base::ShowProgressInterface *progress=0, void *sender=0, bool make_unsigned=false)</td></tr>
+<tr class="memdesc:aae1d601d1b2f1ba340a310dfeafa02c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 2D Perlin noise texture of size <code>texSize</code>, with a specified number of noise <code>octaves</code>, at memory location <code>image_ptr</code>. <br /></td></tr>
+<tr class="separator:aae1d601d1b2f1ba340a310dfeafa02c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a835c7f632472f09123bd2180d325ee7e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a835c7f632472f09123bd2180d325ee7e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesimul_1_1clouds.html#a835c7f632472f09123bd2180d325ee7e">Make2DRandomTexture</a> (unsigned char *image_ptr, int texSize, int seed=1)</td></tr>
 <tr class="memdesc:a835c7f632472f09123bd2180d325ee7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 2D noise texture of size <code>texSize</code>, at memory location <code>image_ptr</code>. <br /></td></tr>
 <tr class="separator:a835c7f632472f09123bd2180d325ee7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7bbaee090568705e8c7b93226e5b021"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesimul_1_1clouds.html#aa7bbaee090568705e8c7b93226e5b021">Make3DNoiseTexture</a> (unsigned char *image_ptr, int texSize, int octaves, simul::graph::standardnodes::ShowProgressInterface *progress=0, simul::graph::meta::Node *sender=0)</td></tr>
-<tr class="separator:aa7bbaee090568705e8c7b93226e5b021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac39ab506f7fc92c62fdcc36228579c5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesimul_1_1clouds.html#ac39ab506f7fc92c62fdcc36228579c5d">Make3DNoiseTexture</a> (unsigned char *image_ptr, int texSize, int octaves, <a class="el" href="classsimul_1_1base_1_1ShowProgressInterface.html">simul::base::ShowProgressInterface</a> *progress=0, void *sender=0)</td></tr>
+<tr class="separator:ac39ab506f7fc92c62fdcc36228579c5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The namespace for the clouds library. </p>
@@ -147,7 +147,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name
 <img src="CloudsInheritance.png" alt="CloudsInheritance.png"/>
 </div>
  </div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="aa7bbaee090568705e8c7b93226e5b021"></a>
+<a class="anchor" id="ac39ab506f7fc92c62fdcc36228579c5d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -172,13 +172,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">simul::graph::standardnodes::ShowProgressInterface *&#160;</td>
+          <td class="paramtype"><a class="el" href="classsimul_1_1base_1_1ShowProgressInterface.html">simul::base::ShowProgressInterface</a> *&#160;</td>
           <td class="paramname"><em>progress</em> = <code>0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">simul::graph::meta::Node *&#160;</td>
+          <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>sender</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
@@ -197,6 +197,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Wed Nov 11 2015 18:13:50</small></address>
+Sat Nov 28 2015 15:11:03</small></address>
 </body>
 </html>

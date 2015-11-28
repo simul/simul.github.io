@@ -27,9 +27,6 @@
               <section title="crossplatform" ref="namespacesimul_1_1crossplatform.html" />
               <section title="dx11" ref="namespacesimul_1_1dx11.html" />
               <section title="geometry" ref="namespacesimul_1_1geometry.html" />
-              <section title="graph">
-                <section title="meta" ref="namespacesimul_1_1graph_1_1meta.html" />
-              </section>
               <section title="math" ref="namespacesimul_1_1math.html" />
               <section title="plugin" ref="namespacesimul_1_1plugin.html" />
               <section title="sky" ref="namespacesimul_1_1sky.html" />
@@ -115,7 +112,6 @@
             <section title="Obj::File" ref="classObj_1_1File.html" />
             <section title="simul::base::FileLoader" ref="classsimul_1_1base_1_1FileLoader.html" />
             <section title="simul::crossplatform::Frustum" ref="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1Frustum" />
-            <section title="simul::graph::meta::GenericTracker&lt; ownerType &gt;" ref="classsimul_1_1graph_1_1meta_1_1GenericTracker.html" />
             <section title="simul::sky::HazeStruct" ref="structsimul_1_1sky_1_1HazeStruct.html" />
             <section title="simul::clouds::HumidityCallbackInterface" ref="classsimul_1_1clouds_1_1HumidityCallbackInterface.html" />
             <section title="simul::sky::Input" ref="structsimul_1_1sky_1_1Input.html" />
@@ -127,17 +123,17 @@
             <section title="simul::math::Matrix" ref="classsimul_1_1math_1_1Matrix.html" />
             <section title="simul::math::Matrix4x4" ref="classsimul_1_1math_1_1Matrix4x4.html" />
             <section title="simul::base::MemoryInterface" ref="classsimul_1_1base_1_1MemoryInterface.html" />
+            <section title="simul::base::MemoryUsageInterface" ref="classsimul_1_1base_1_1MemoryUsageInterface.html">
+              <section title="simul::clouds::CellularCloudGrid" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html" />
+              <section title="simul::clouds::Cloud2DGeometryHelper" ref="classsimul_1_1clouds_1_1Cloud2DGeometryHelper.html" />
+              <section title="simul::clouds::CloudGeometryHelper" ref="classsimul_1_1clouds_1_1CloudGeometryHelper.html" />
+            </section>
             <section title="simul::clouds::MixedResolutionCompositor" ref="classsimul_1_1clouds_1_1MixedResolutionCompositor.html" />
             <section title="simul::crossplatform::MixedResolutionStruct" ref="structsimul_1_1crossplatform_1_1MixedResolutionStruct.html" />
             <section title="simul::crossplatform::MixedResolutionView" ref="classsimul_1_1crossplatform_1_1MixedResolutionView.html" />
             <section title="simul::crossplatform::MixedResolutionViewManager" ref="classsimul_1_1crossplatform_1_1MixedResolutionViewManager.html" />
             <section title="simul::crossplatform::MouseCameraInput" ref="structsimul_1_1crossplatform_1_1MouseCameraInput.html" />
             <section title="simul::crossplatform::MouseCameraState" ref="structsimul_1_1crossplatform_1_1MouseCameraState.html" />
-            <section title="simul::graph::meta::NearestClientTracker&lt; ownerType, childInterface, clientInterface &gt;" ref="classsimul_1_1graph_1_1meta_1_1NearestClientTracker.html" />
-            <section title="simul::graph::meta::NodeVisitor" ref="classsimul_1_1graph_1_1meta_1_1NodeVisitor.html">
-              <section title="simul::graph::meta::NodeFinderVisitor&lt; T &gt;" ref="classsimul_1_1graph_1_1meta_1_1NodeFinderVisitor.html" />
-              <section title="simul::graph::meta::TimeStepVisitor" ref="classsimul_1_1graph_1_1meta_1_1TimeStepVisitor.html" />
-            </section>
             <section title="simul::math::Noise1D" ref="classsimul_1_1math_1_1Noise1D.html" />
             <section title="simul::math::Noise2D" ref="classsimul_1_1math_1_1Noise2D.html" />
             <section title="simul::math::Noise3D" ref="classsimul_1_1math_1_1Noise3D.html">
@@ -150,7 +146,6 @@
             <section title="simul::sky::OvercastCallback" ref="classsimul_1_1sky_1_1OvercastCallback.html">
               <section title="simul::clouds::CloudKeyframer" ref="classsimul_1_1clouds_1_1CloudKeyframer.html" />
             </section>
-            <section title="PathTracker&lt; ownerType, nodeType, dataType &gt;" ref="classPathTracker.html" />
             <section title="simul::crossplatform::PlatformStructuredBuffer" ref="classsimul_1_1crossplatform_1_1PlatformStructuredBuffer.html" />
             <section title="simul::plugin::PluginTrueSkyRenderer" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html" />
             <section title="simul::clouds::PointSource" ref="namespacesimul_1_1clouds.html#structsimul_1_1clouds_1_1PointSource" />
@@ -170,24 +165,17 @@
               <section title="simul::opengl::RenderPlatform" ref="classsimul_1_1opengl_1_1RenderPlatform.html" />
             </section>
             <section title="simul::crossplatform::RenderStateDesc" ref="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1RenderStateDesc" />
-            <section title="simul::graph::meta::Resource&lt; resourceInterfaceType &gt;" ref="classsimul_1_1graph_1_1meta_1_1Resource.html" />
-            <section title="simul::graph::meta::Resource&lt; resourceInterfaceType1 &gt;" ref="classsimul_1_1graph_1_1meta_1_1Resource.html" />
-            <section title="simul::graph::meta::Resource&lt; resourceInterfaceType2 &gt;" ref="classsimul_1_1graph_1_1meta_1_1Resource.html" />
-            <section title="simul::graph::meta::ResourceUser&lt; resourceInterfaceType &gt;" ref="classsimul_1_1graph_1_1meta_1_1ResourceUser.html" />
             <section title="simul::clouds::SelectionIdentifier" ref="structsimul_1_1clouds_1_1SelectionIdentifier.html" />
             <section title="ShaderIncludeHandler" ref="classShaderIncludeHandler.html" />
+            <section title="simul::base::ShowProgressInterface" ref="classsimul_1_1base_1_1ShowProgressInterface.html" />
             <section title="simul::sky::SiderealSkyInterface" ref="classsimul_1_1sky_1_1SiderealSkyInterface.html">
               <section title="simul::sky::SiderealSky" ref="classsimul_1_1sky_1_1SiderealSky.html" />
             </section>
-            <section title="SimpleTracker&lt; ownerType, nodeType &gt;" ref="classSimpleTracker.html" />
             <section title="simul::geometry::SimulOrientation" ref="classsimul_1_1geometry_1_1SimulOrientation.html">
               <section title="simul::geometry::SimulReferenceFrame" ref="classsimul_1_1geometry_1_1SimulReferenceFrame.html" />
             </section>
-            <section title="simul::graph::meta::SingleClientTracker&lt; ownerType, childInterface, clientInterface &gt;" ref="classsimul_1_1graph_1_1meta_1_1SingleClientTracker.html" />
             <section title="simul::sky::SkyTexturesCallback" ref="classsimul_1_1sky_1_1SkyTexturesCallback.html" />
             <section title="simul::base::SmartPtr&lt; T &gt;" ref="classsimul_1_1base_1_1SmartPtr.html" />
-            <section title="simul::base::SmartPtr&lt; HandlerClass &gt;" ref="classsimul_1_1base_1_1SmartPtr.html" />
-            <section title="simul::base::SmartPtr&lt; Node &gt;" ref="classsimul_1_1base_1_1SmartPtr.html" />
             <section title="simul::sky::Stars" ref="classsimul_1_1sky_1_1Stars.html" />
             <section title="simul::clouds::CloudKeyframer::Storm" ref="structsimul_1_1clouds_1_1CloudKeyframer_1_1Storm.html" />
             <section title="simul::crossplatform::StructuredBuffer&lt; T &gt;" ref="classsimul_1_1crossplatform_1_1StructuredBuffer.html" />
@@ -201,9 +189,8 @@
             <section title="simul::crossplatform::StructuredBuffer&lt; VolumeQueryResult &gt;" ref="classsimul_1_1crossplatform_1_1StructuredBuffer.html" />
             <section title="simul::sky::SubdivInterpolation" ref="structsimul_1_1sky_1_1SubdivInterpolation.html" />
             <section title="Obj::Surface" ref="structObj_1_1Surface.html" />
+            <section title="simul::sky::Texture3D4" ref="classsimul_1_1sky_1_1Texture3D4.html" />
             <section title="simul::base::Timer" ref="classsimul_1_1base_1_1Timer.html" />
-            <section title="Tracker&lt; ownerType, nodeType, dataType &gt;" ref="classTracker.html" />
-            <section title="simul::graph::meta::TrackerResource&lt; resourceInterfaceType, dataType &gt;" ref="classsimul_1_1graph_1_1meta_1_1TrackerResource.html" />
             <section title="simul::dx11::TrueSkyRenderer" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html" />
             <section title="simul::crossplatform::TwoResFramebuffer" ref="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html" />
             <section title="simul::sky::Variant32" ref="namespacesimul_1_1sky.html#structsimul_1_1sky_1_1Variant32" />
@@ -238,14 +225,7 @@
       <keyword name="AddView" id="Direct3D11CallbackInterface::AddView" ref="classDirect3D11CallbackInterface.html#a1c1a7efbd1c035762f3a32b75cd820c3" />
       <keyword name="Render" id="Direct3D11CallbackInterface::Render" ref="classDirect3D11CallbackInterface.html#a77353b0c7ec7a2e2cf4954f2b2d4b3fa" />
       <keyword name="ResizeView" id="Direct3D11CallbackInterface::ResizeView" ref="classDirect3D11CallbackInterface.html#acdd6cec427762b6ba086b01389c2429b" />
-      <keyword name="PathTracker" id="PathTracker" ref="classPathTracker.html" />
-      <keyword name="ChildAdded" id="PathTracker::ChildAdded" ref="classPathTracker.html#a0647a506e236756444ef27587b1355e0" />
       <keyword name="ShaderIncludeHandler" id="ShaderIncludeHandler" ref="classShaderIncludeHandler.html" />
-      <keyword name="SimpleTracker" id="SimpleTracker" ref="classSimpleTracker.html" />
-      <keyword name="ChildAdded" id="SimpleTracker::ChildAdded" ref="classSimpleTracker.html#a330b55b2535d5ff6236e1745e8f2d538" />
-      <keyword name="Tracker" id="Tracker" ref="classTracker.html" />
-      <keyword name="ChildAdded" id="Tracker::ChildAdded" ref="classTracker.html#aa637294359e8fcdce5d164680c74eb33" />
-      <keyword name="FindNode" id="Tracker::FindNode" ref="classTracker.html#ae6d285573a072526bca66bb68b2cd296" />
       <keyword name="Obj::File" id="Obj::File" ref="classObj_1_1File.html" />
       <keyword name="CalculateNormals" id="Obj::File::CalculateNormals" ref="classObj_1_1File.html#a56c1e5376cade8453f411fa54acd8432" />
       <keyword name="Draw" id="Obj::File::Draw" ref="classObj_1_1File.html#a3e04b0e38e03e84cf995e916ee124b74" />
@@ -341,6 +321,8 @@
       <keyword name="DeallocateVideoMemory" id="simul::base::MemoryInterface::DeallocateVideoMemory" ref="classsimul_1_1base_1_1MemoryInterface.html#af8472b7c3a99d2bad9daa11d2630df66" />
       <keyword name="simul::base::MemoryInterfaceAllocator" id="simul::base::MemoryInterfaceAllocator" ref="classsimul_1_1base_1_1MemoryInterfaceAllocator.html" />
       <keyword name="elements" id="simul::base::MemoryInterfaceAllocator::elements" ref="classsimul_1_1base_1_1MemoryInterfaceAllocator.html#a55f88dab1194d6b8a34e46017c4dfd79" />
+      <keyword name="simul::base::MemoryUsageInterface" id="simul::base::MemoryUsageInterface" ref="classsimul_1_1base_1_1MemoryUsageInterface.html" />
+      <keyword name="GetMemoryUsage" id="simul::base::MemoryUsageInterface::GetMemoryUsage" ref="classsimul_1_1base_1_1MemoryUsageInterface.html#af15ecad7a8afa254c2bb99c477248df3" />
       <keyword name="simul::base::ProfilingInterface" id="simul::base::ProfilingInterface" ref="classsimul_1_1base_1_1ProfilingInterface.html" />
       <keyword name="Begin" id="simul::base::ProfilingInterface::Begin" ref="classsimul_1_1base_1_1ProfilingInterface.html#a6eb2bef676837afbbce0a432010d05c3" />
       <keyword name="End" id="simul::base::ProfilingInterface::End" ref="classsimul_1_1base_1_1ProfilingInterface.html#a249290641f1ae464ce288fd766a2be85" />
@@ -354,6 +336,7 @@
       <keyword name="intrusive_ptr_release" id="simul::base::Referenced::intrusive_ptr_release" ref="classsimul_1_1base_1_1Referenced.html#a1b15d531ebb1578a502a3579660c3148" />
       <keyword name="referenceCount" id="simul::base::Referenced::referenceCount" ref="classsimul_1_1base_1_1Referenced.html#ad26fe1c55ab6384e001173f57d863072" />
       <keyword name="simul::base::RuntimeError" id="simul::base::RuntimeError" ref="classsimul_1_1base_1_1RuntimeError.html" />
+      <keyword name="simul::base::ShowProgressInterface" id="simul::base::ShowProgressInterface" ref="classsimul_1_1base_1_1ShowProgressInterface.html" />
       <keyword name="simul::base::SmartPtr" id="simul::base::SmartPtr" ref="classsimul_1_1base_1_1SmartPtr.html" />
       <keyword name="simul::base::Timer" id="simul::base::Timer" ref="classsimul_1_1base_1_1Timer.html" />
       <keyword name="FinishTime" id="simul::base::Timer::FinishTime" ref="classsimul_1_1base_1_1Timer.html#a264cf3233d8221244e196be77e96f7df" />
@@ -363,9 +346,9 @@
       <keyword name="simul::clouds" id="simul::clouds" ref="namespacesimul_1_1clouds.html" />
       <keyword name="CloudTexelType" id="simul::clouds::CloudTexelType" ref="namespacesimul_1_1clouds.html#a4fb446340b2fb4b138b7d8240bffcf69" />
       <keyword name="VolumeMap" id="simul::clouds::VolumeMap" ref="namespacesimul_1_1clouds.html#ab79ccfe3f57cc1c3c4fef8b7f1c59d4b" />
-      <keyword name="Make2DNoiseTexture" id="simul::clouds::Make2DNoiseTexture" ref="namespacesimul_1_1clouds.html#ac75fa67627a1511e3b02fd8eb86fc18c" />
+      <keyword name="Make2DNoiseTexture" id="simul::clouds::Make2DNoiseTexture" ref="namespacesimul_1_1clouds.html#aae1d601d1b2f1ba340a310dfeafa02c1" />
       <keyword name="Make2DRandomTexture" id="simul::clouds::Make2DRandomTexture" ref="namespacesimul_1_1clouds.html#a835c7f632472f09123bd2180d325ee7e" />
-      <keyword name="Make3DNoiseTexture" id="simul::clouds::Make3DNoiseTexture" ref="namespacesimul_1_1clouds.html#aa7bbaee090568705e8c7b93226e5b021" />
+      <keyword name="Make3DNoiseTexture" id="simul::clouds::Make3DNoiseTexture" ref="namespacesimul_1_1clouds.html#ac39ab506f7fc92c62fdcc36228579c5d" />
       <keyword name="simul::clouds::BaseCloudRenderer" id="simul::clouds::BaseCloudRenderer" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html" />
       <keyword name="BaseCloudRenderer" id="simul::clouds::BaseCloudRenderer::BaseCloudRenderer" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a1bb1168c813b2239a2b254288d5b1fec" />
       <keyword name="CreateCloudGeometryHelper" id="simul::clouds::BaseCloudRenderer::CreateCloudGeometryHelper" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#aacc0e8648488515677f8b9d722aad557" />
@@ -1109,6 +1092,7 @@
       <keyword name="regional" id="simul::clouds::PrecipitationRegion::regional" ref="structsimul_1_1clouds_1_1PrecipitationRegion.html#aab5a20f373231b6fa9cccf8375a2ef40" />
       <keyword name="simul::clouds::SelectionIdentifier" id="simul::clouds::SelectionIdentifier" ref="structsimul_1_1clouds_1_1SelectionIdentifier.html" />
       <keyword name="simul::clouds::TimedNoise3D" id="simul::clouds::TimedNoise3D" ref="classsimul_1_1clouds_1_1TimedNoise3D.html" />
+      <keyword name="GetMemoryUsage" id="simul::clouds::TimedNoise3D::GetMemoryUsage" ref="classsimul_1_1clouds_1_1TimedNoise3D.html#a88de09356574f69d5070651a8c38e851" />
       <keyword name="SetTime" id="simul::clouds::TimedNoise3D::SetTime" ref="classsimul_1_1clouds_1_1TimedNoise3D.html#ac96b95c54ce2e5d008f5a3fee275b901" />
       <keyword name="Setup" id="simul::clouds::TimedNoise3D::Setup" ref="classsimul_1_1clouds_1_1TimedNoise3D.html#a05ea1f6c189b7c974f0b48cee4bbe302" />
       <keyword name="simul::crossplatform" id="simul::crossplatform" ref="namespacesimul_1_1crossplatform.html" />
@@ -1276,6 +1260,7 @@
       <keyword name="DeactivateLowRes" id="simul::crossplatform::TwoResFramebuffer::DeactivateLowRes" ref="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html#abd0125d249494193ccff57dddeb38620" />
       <keyword name="GetLowResDepthTexture" id="simul::crossplatform::TwoResFramebuffer::GetLowResDepthTexture" ref="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html#aa0ccb8c69a873991ec9c157681f9293d" />
       <keyword name="RenderDepthBuffers" id="simul::crossplatform::TwoResFramebuffer::RenderDepthBuffers" ref="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html#ad581de9f35a0d0c4327e894d7de5fed5" />
+      <keyword name="Swap" id="simul::crossplatform::TwoResFramebuffer::Swap" ref="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html#aa0e2645047979b8606cb90fad218ba1a" />
       <keyword name="UpdatePixelOffset" id="simul::crossplatform::TwoResFramebuffer::UpdatePixelOffset" ref="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html#ac0bd3bdfe30084a0b7ab6b3293e833fc" />
       <keyword name="simul::dx11" id="simul::dx11" ref="namespacesimul_1_1dx11.html" />
       <keyword name="CreateEffect" id="simul::dx11::CreateEffect" ref="namespacesimul_1_1dx11.html#a438f29efd3ada4ea0773a98d8065ac37" />
@@ -1486,46 +1471,6 @@
       <keyword name="GetLocalAngularVelocity" id="simul::geometry::SimulReferenceFrame::GetLocalAngularVelocity" ref="classsimul_1_1geometry_1_1SimulReferenceFrame.html#aab1b206407734e32c333beb74ac62ba5" />
       <keyword name="PositionToVelocity" id="simul::geometry::SimulReferenceFrame::PositionToVelocity" ref="classsimul_1_1geometry_1_1SimulReferenceFrame.html#a8539adf390cce7cee209658783ed2a19" />
       <keyword name="LocalPositionToGlobalVelocity" id="simul::geometry::SimulReferenceFrame::LocalPositionToGlobalVelocity" ref="classsimul_1_1geometry_1_1SimulReferenceFrame.html#a849f2296e02a9c223366b19ac3c960c4" />
-      <keyword name="simul::graph::meta" id="simul::graph::meta" ref="namespacesimul_1_1graph_1_1meta.html" />
-      <keyword name="NodeStack" id="simul::graph::meta::NodeStack" ref="namespacesimul_1_1graph_1_1meta.html#a46adc5cadb4265afe1fe22f21f002fb5" />
-      <keyword name="FindAll" id="simul::graph::meta::FindAll" ref="namespacesimul_1_1graph_1_1meta.html#a61a2de7996e4998f1290d72b243f2477" />
-      <keyword name="FindFirst" id="simul::graph::meta::FindFirst" ref="namespacesimul_1_1graph_1_1meta.html#a8e1f14350e83ee6c863d835907620dc3" />
-      <keyword name="FindFirst" id="simul::graph::meta::FindFirst" ref="namespacesimul_1_1graph_1_1meta.html#ae0413db625d5ac6bfd53409380584091" />
-      <keyword name="FindHighestInStack" id="simul::graph::meta::FindHighestInStack" ref="namespacesimul_1_1graph_1_1meta.html#a34f55495d1b564a3bcf95ce5a7021ee6" />
-      <keyword name="simul::graph::meta::GenericTracker" id="simul::graph::meta::GenericTracker" ref="classsimul_1_1graph_1_1meta_1_1GenericTracker.html" />
-      <keyword name="typeMap" id="simul::graph::meta::GenericTracker::typeMap" ref="classsimul_1_1graph_1_1meta_1_1GenericTracker.html#a46f00c44796285e87b2c71eda56cb3f8" />
-      <keyword name="ChildAdded" id="simul::graph::meta::GenericTracker::ChildAdded" ref="classsimul_1_1graph_1_1meta_1_1GenericTracker.html#a9159439b2fb0ad4ebb32f172c0e22321" />
-      <keyword name="GetHandler" id="simul::graph::meta::GenericTracker::GetHandler" ref="classsimul_1_1graph_1_1meta_1_1GenericTracker.html#a3357adea17fb966beb268dff0abfa4fd" />
-      <keyword name="simul::graph::meta::NearestClientTracker" id="simul::graph::meta::NearestClientTracker" ref="classsimul_1_1graph_1_1meta_1_1NearestClientTracker.html" />
-      <keyword name="ChildAdded" id="simul::graph::meta::NearestClientTracker::ChildAdded" ref="classsimul_1_1graph_1_1meta_1_1NearestClientTracker.html#a9a4cd6c1c91c5afa54de1abb275f9494" />
-      <keyword name="simul::graph::meta::NodeFinderVisitor" id="simul::graph::meta::NodeFinderVisitor" ref="classsimul_1_1graph_1_1meta_1_1NodeFinderVisitor.html" />
-      <keyword name="GetResults" id="simul::graph::meta::NodeFinderVisitor::GetResults" ref="classsimul_1_1graph_1_1meta_1_1NodeFinderVisitor.html#ae507bbea5722836dca252a0a3df1260e" />
-      <keyword name="NodeFinderVisitor" id="simul::graph::meta::NodeFinderVisitor::NodeFinderVisitor" ref="classsimul_1_1graph_1_1meta_1_1NodeFinderVisitor.html#a4bf918d140e7a5a99303616a9e7fb598" />
-      <keyword name="PostTraversal" id="simul::graph::meta::NodeFinderVisitor::PostTraversal" ref="classsimul_1_1graph_1_1meta_1_1NodeFinderVisitor.html#a02fad000374eeb0d458fcfb109ae51a3" />
-      <keyword name="ShouldTraverseChildren" id="simul::graph::meta::NodeFinderVisitor::ShouldTraverseChildren" ref="classsimul_1_1graph_1_1meta_1_1NodeFinderVisitor.html#afbb7b0b8067bdeb3bceb9e37f7b3ba3d" />
-      <keyword name="ShouldTraverseParents" id="simul::graph::meta::NodeFinderVisitor::ShouldTraverseParents" ref="classsimul_1_1graph_1_1meta_1_1NodeFinderVisitor.html#af02ecdef6ec9b59d391338ee7f6e309a" />
-      <keyword name="simul::graph::meta::NodeVisitor" id="simul::graph::meta::NodeVisitor" ref="classsimul_1_1graph_1_1meta_1_1NodeVisitor.html" />
-      <keyword name="Apply" id="simul::graph::meta::NodeVisitor::Apply" ref="classsimul_1_1graph_1_1meta_1_1NodeVisitor.html#ab7fd76505f608d97af938a30335a525b" />
-      <keyword name="PostTraversal" id="simul::graph::meta::NodeVisitor::PostTraversal" ref="classsimul_1_1graph_1_1meta_1_1NodeVisitor.html#a02fad000374eeb0d458fcfb109ae51a3" />
-      <keyword name="ShouldTraverseChildren" id="simul::graph::meta::NodeVisitor::ShouldTraverseChildren" ref="classsimul_1_1graph_1_1meta_1_1NodeVisitor.html#afbb7b0b8067bdeb3bceb9e37f7b3ba3d" />
-      <keyword name="ShouldTraverseParents" id="simul::graph::meta::NodeVisitor::ShouldTraverseParents" ref="classsimul_1_1graph_1_1meta_1_1NodeVisitor.html#af02ecdef6ec9b59d391338ee7f6e309a" />
-      <keyword name="simul::graph::meta::Resource" id="simul::graph::meta::Resource" ref="classsimul_1_1graph_1_1meta_1_1Resource.html" />
-      <keyword name="ChildAdded" id="simul::graph::meta::Resource::ChildAdded" ref="classsimul_1_1graph_1_1meta_1_1Resource.html#ae775cfb9ca4505c6e700c1391e73a38c" />
-      <keyword name="simul::graph::meta::ResourceUser" id="simul::graph::meta::ResourceUser" ref="classsimul_1_1graph_1_1meta_1_1ResourceUser.html" />
-      <keyword name="GetResourceInterface" id="simul::graph::meta::ResourceUser::GetResourceInterface" ref="classsimul_1_1graph_1_1meta_1_1ResourceUser.html#a32254e22d773947c747b8bce1757096e" />
-      <keyword name="GetResourceInterface" id="simul::graph::meta::ResourceUser::GetResourceInterface" ref="classsimul_1_1graph_1_1meta_1_1ResourceUser.html#aac63523e43ba16274046fd2f86f8e726" />
-      <keyword name="SetResourceInterface" id="simul::graph::meta::ResourceUser::SetResourceInterface" ref="classsimul_1_1graph_1_1meta_1_1ResourceUser.html#abda9cd6cb4bfbb3e02115167e44bf591" />
-      <keyword name="simul::graph::meta::SingleClientTracker" id="simul::graph::meta::SingleClientTracker" ref="classsimul_1_1graph_1_1meta_1_1SingleClientTracker.html" />
-      <keyword name="ChildAdded" id="simul::graph::meta::SingleClientTracker::ChildAdded" ref="classsimul_1_1graph_1_1meta_1_1SingleClientTracker.html#ac6d58a6d7183615cef8b001a7dbab656" />
-      <keyword name="simul::graph::meta::TimeStepVisitor" id="simul::graph::meta::TimeStepVisitor" ref="classsimul_1_1graph_1_1meta_1_1TimeStepVisitor.html" />
-      <keyword name="Apply" id="simul::graph::meta::TimeStepVisitor::Apply" ref="classsimul_1_1graph_1_1meta_1_1TimeStepVisitor.html#af9306be795913a552b5774961fad8bf3" />
-      <keyword name="GetTimeStep" id="simul::graph::meta::TimeStepVisitor::GetTimeStep" ref="classsimul_1_1graph_1_1meta_1_1TimeStepVisitor.html#aa71d607181ce4da8ac9df075ee1a3b5d" />
-      <keyword name="PostTraversal" id="simul::graph::meta::TimeStepVisitor::PostTraversal" ref="classsimul_1_1graph_1_1meta_1_1TimeStepVisitor.html#a02fad000374eeb0d458fcfb109ae51a3" />
-      <keyword name="SetTimeStep" id="simul::graph::meta::TimeStepVisitor::SetTimeStep" ref="classsimul_1_1graph_1_1meta_1_1TimeStepVisitor.html#ac88dee81b7dc0ab14f7f18c9d3bd4822" />
-      <keyword name="ShouldTraverseChildren" id="simul::graph::meta::TimeStepVisitor::ShouldTraverseChildren" ref="classsimul_1_1graph_1_1meta_1_1TimeStepVisitor.html#afbb7b0b8067bdeb3bceb9e37f7b3ba3d" />
-      <keyword name="ShouldTraverseParents" id="simul::graph::meta::TimeStepVisitor::ShouldTraverseParents" ref="classsimul_1_1graph_1_1meta_1_1TimeStepVisitor.html#af02ecdef6ec9b59d391338ee7f6e309a" />
-      <keyword name="simul::graph::meta::TrackerResource" id="simul::graph::meta::TrackerResource" ref="classsimul_1_1graph_1_1meta_1_1TrackerResource.html" />
-      <keyword name="ChildAdded" id="simul::graph::meta::TrackerResource::ChildAdded" ref="classsimul_1_1graph_1_1meta_1_1TrackerResource.html#a3b91e6ef673ade5ab30aa41a22106f7f" />
       <keyword name="simul::math" id="simul::math" ref="namespacesimul_1_1math.html" />
       <keyword name="FirstOrderDecay" id="simul::math::FirstOrderDecay" ref="namespacesimul_1_1math.html#a68b81e7fbb8e6b7d2953e6f12d1624f9" />
       <keyword name="simul::math::Matrix" id="simul::math::Matrix" ref="classsimul_1_1math_1_1Matrix.html" />
@@ -1552,8 +1497,10 @@
       <keyword name="simul::math::Noise1D" id="simul::math::Noise1D" ref="classsimul_1_1math_1_1Noise1D.html" />
       <keyword name="Setup" id="simul::math::Noise1D::Setup" ref="classsimul_1_1math_1_1Noise1D.html#ad68f3430f525b257dd5e2b639c1af64a" />
       <keyword name="simul::math::Noise2D" id="simul::math::Noise2D" ref="classsimul_1_1math_1_1Noise2D.html" />
+      <keyword name="GetMemoryUsage" id="simul::math::Noise2D::GetMemoryUsage" ref="classsimul_1_1math_1_1Noise2D.html#a53786f146476006a01b8d7aae2ff5f33" />
       <keyword name="Setup" id="simul::math::Noise2D::Setup" ref="classsimul_1_1math_1_1Noise2D.html#a6fc048a950a4fa99853fc8011811d5d5" />
       <keyword name="simul::math::Noise3D" id="simul::math::Noise3D" ref="classsimul_1_1math_1_1Noise3D.html" />
+      <keyword name="GetMemoryUsage" id="simul::math::Noise3D::GetMemoryUsage" ref="classsimul_1_1math_1_1Noise3D.html#a88de09356574f69d5070651a8c38e851" />
       <keyword name="Setup" id="simul::math::Noise3D::Setup" ref="classsimul_1_1math_1_1Noise3D.html#a05ea1f6c189b7c974f0b48cee4bbe302" />
       <keyword name="simul::math::Quaternion" id="simul::math::Quaternion" ref="classsimul_1_1math_1_1Quaternion.html" />
       <keyword name="operator!" id="simul::math::Quaternion::operator!" ref="classsimul_1_1math_1_1Quaternion.html#afba21c4d4f64602cf476a6c830ddd97b" />
@@ -2262,6 +2209,8 @@
       <keyword name="UseUrsaMajor" id="simul::sky::Stars::UseUrsaMajor" ref="classsimul_1_1sky_1_1Stars.html#a9a80b20205b88fc1b5e983a928866ca8" />
       <keyword name="simul::sky::SubdivInterpolation" id="simul::sky::SubdivInterpolation" ref="structsimul_1_1sky_1_1SubdivInterpolation.html" />
       <keyword name="subdivision" id="simul::sky::SubdivInterpolation::subdivision" ref="structsimul_1_1sky_1_1SubdivInterpolation.html#a37439a59e2f538353c230ace17a2e09f" />
+      <keyword name="simul::sky::Texture3D4" id="simul::sky::Texture3D4" ref="classsimul_1_1sky_1_1Texture3D4.html" />
+      <keyword name="GetChecksum" id="simul::sky::Texture3D4::GetChecksum" ref="classsimul_1_1sky_1_1Texture3D4.html#a78ba7a9e017bf8dd1a81fa6e620e3fce" />
     </keywords>
     <files>
       <file>tabs.css</file>
@@ -2296,7 +2245,6 @@
       <file>Geometry_2Export_8h_source.html</file>
       <file>Sky_2Export_8h_source.html</file>
       <file>Clouds_2Export_8h_source.html</file>
-      <file>Graph_2Meta_2Export_8h_source.html</file>
       <file>Platform_2CrossPlatform_2Export_8h_source.html</file>
       <file>Platform_2OpenGL_2Export_8h_source.html</file>
       <file>Platform_2DirectX11_2Export_8h_source.html</file>
@@ -2305,6 +2253,7 @@
       <file>inifile_8h_source.html</file>
       <file>InitializeAndDetectProcessor_8h_source.html</file>
       <file>MemoryInterface_8h_source.html</file>
+      <file>MemoryUsageInterface_8h_source.html</file>
       <file>ProfilingInterface_8h_source.html</file>
       <file>PropertyMacros_8h_source.html</file>
       <file>ReadWriteMutex_8h_source.html</file>
@@ -2315,10 +2264,10 @@
       <file>Math_2resource_8h_source.html</file>
       <file>Geometry_2resource_8h_source.html</file>
       <file>Clouds_2resource_8h_source.html</file>
-      <file>Graph_2Meta_2resource_8h_source.html</file>
       <file>Platform_2OpenGL_2resource_8h_source.html</file>
       <file>Platform_2DirectX11_2resource_8h_source.html</file>
       <file>RuntimeError_8h_source.html</file>
+      <file>ShowProgressInterface_8h_source.html</file>
       <file>SmartPtr_8h_source.html</file>
       <file>StringFunctions_8h_source.html</file>
       <file>StringToWString_8h_source.html</file>
@@ -2349,25 +2298,9 @@
       <file>Orientation_8h_source.html</file>
       <file>OrientationInterface_8h_source.html</file>
       <file>ReferenceFrame_8h_source.html</file>
-      <file>Client_8h_source.html</file>
-      <file>GenericTracker_8h_source.html</file>
-      <file>Group_8h_source.html</file>
-      <file>Meta_8h_source.html</file>
-      <file>Node_8h_source.html</file>
-      <file>NodeFinderVisitor_8h_source.html</file>
-      <file>NodeStack_8h_source.html</file>
-      <file>NodeVisitor_8h_source.html</file>
-      <file>PathTracker_8h_source.html</file>
-      <file>resource1_8h_source.html</file>
-      <file>ResourceGroup_8h_source.html</file>
-      <file>SingleTracker_8h_source.html</file>
-      <file>Tracker_8h_source.html</file>
-      <file>TrackerMacros_8h_source.html</file>
-      <file>TrackerNode_8h_source.html</file>
       <file>Math_2afxres_8h_source.html</file>
       <file>Geometry_2afxres_8h_source.html</file>
       <file>Clouds_2afxres_8h_source.html</file>
-      <file>Graph_2Meta_2afxres_8h_source.html</file>
       <file>Align_8h_source.html</file>
       <file>Decay_8h_source.html</file>
       <file>Float2_8h_source.html</file>
@@ -2517,14 +2450,8 @@
       <file>classDetectChangesIncludeHandler-members.html</file>
       <file>classDirect3D11CallbackInterface.html</file>
       <file>classDirect3D11CallbackInterface-members.html</file>
-      <file>classPathTracker.html</file>
-      <file>classPathTracker-members.html</file>
       <file>classShaderIncludeHandler.html</file>
       <file>classShaderIncludeHandler-members.html</file>
-      <file>classSimpleTracker.html</file>
-      <file>classSimpleTracker-members.html</file>
-      <file>classTracker.html</file>
-      <file>classTracker-members.html</file>
       <file>classObj_1_1File.html</file>
       <file>classObj_1_1File-members.html</file>
       <file>structObj_1_1Surface.html</file>
@@ -2546,12 +2473,16 @@
       <file>classsimul_1_1base_1_1MemoryInterface-members.html</file>
       <file>classsimul_1_1base_1_1MemoryInterfaceAllocator.html</file>
       <file>classsimul_1_1base_1_1MemoryInterfaceAllocator-members.html</file>
+      <file>classsimul_1_1base_1_1MemoryUsageInterface.html</file>
+      <file>classsimul_1_1base_1_1MemoryUsageInterface-members.html</file>
       <file>classsimul_1_1base_1_1ProfilingInterface.html</file>
       <file>classsimul_1_1base_1_1ProfilingInterface-members.html</file>
       <file>classsimul_1_1base_1_1Referenced.html</file>
       <file>classsimul_1_1base_1_1Referenced-members.html</file>
       <file>classsimul_1_1base_1_1RuntimeError.html</file>
       <file>classsimul_1_1base_1_1RuntimeError-members.html</file>
+      <file>classsimul_1_1base_1_1ShowProgressInterface.html</file>
+      <file>classsimul_1_1base_1_1ShowProgressInterface-members.html</file>
       <file>classsimul_1_1base_1_1SmartPtr.html</file>
       <file>classsimul_1_1base_1_1SmartPtr-members.html</file>
       <file>classsimul_1_1base_1_1Timer.html</file>
@@ -2669,25 +2600,6 @@
       <file>classsimul_1_1geometry_1_1SimulOrientation-members.html</file>
       <file>classsimul_1_1geometry_1_1SimulReferenceFrame.html</file>
       <file>classsimul_1_1geometry_1_1SimulReferenceFrame-members.html</file>
-      <file>namespacesimul_1_1graph_1_1meta.html</file>
-      <file>classsimul_1_1graph_1_1meta_1_1GenericTracker.html</file>
-      <file>classsimul_1_1graph_1_1meta_1_1GenericTracker-members.html</file>
-      <file>classsimul_1_1graph_1_1meta_1_1NearestClientTracker.html</file>
-      <file>classsimul_1_1graph_1_1meta_1_1NearestClientTracker-members.html</file>
-      <file>classsimul_1_1graph_1_1meta_1_1NodeFinderVisitor.html</file>
-      <file>classsimul_1_1graph_1_1meta_1_1NodeFinderVisitor-members.html</file>
-      <file>classsimul_1_1graph_1_1meta_1_1NodeVisitor.html</file>
-      <file>classsimul_1_1graph_1_1meta_1_1NodeVisitor-members.html</file>
-      <file>classsimul_1_1graph_1_1meta_1_1Resource.html</file>
-      <file>classsimul_1_1graph_1_1meta_1_1Resource-members.html</file>
-      <file>classsimul_1_1graph_1_1meta_1_1ResourceUser.html</file>
-      <file>classsimul_1_1graph_1_1meta_1_1ResourceUser-members.html</file>
-      <file>classsimul_1_1graph_1_1meta_1_1SingleClientTracker.html</file>
-      <file>classsimul_1_1graph_1_1meta_1_1SingleClientTracker-members.html</file>
-      <file>classsimul_1_1graph_1_1meta_1_1TimeStepVisitor.html</file>
-      <file>classsimul_1_1graph_1_1meta_1_1TimeStepVisitor-members.html</file>
-      <file>classsimul_1_1graph_1_1meta_1_1TrackerResource.html</file>
-      <file>classsimul_1_1graph_1_1meta_1_1TrackerResource-members.html</file>
       <file>namespacesimul_1_1math.html</file>
       <file>classsimul_1_1math_1_1Matrix.html</file>
       <file>classsimul_1_1math_1_1Matrix-members.html</file>
@@ -2767,23 +2679,28 @@
       <file>classsimul_1_1sky_1_1Stars-members.html</file>
       <file>structsimul_1_1sky_1_1SubdivInterpolation.html</file>
       <file>structsimul_1_1sky_1_1SubdivInterpolation-members.html</file>
+      <file>classsimul_1_1sky_1_1Texture3D4.html</file>
+      <file>classsimul_1_1sky_1_1Texture3D4-members.html</file>
       <file>graph_legend.png</file>
       <file>graph_legend.html</file>
-      <file>dir_93a68a5a515a667df91691e74c3d8965.html</file>
-      <file>dir_70c9c40680dd21af3132864279f1cd73.html</file>
-      <file>dir_d8f7a6fbaa0a130889320d9f323aecb6.html</file>
-      <file>dir_58d6b535101ff51ba88993576a33abe2.html</file>
-      <file>dir_b5155af1dd69a57b4d19905b70b753b1.html</file>
-      <file>dir_f49d4fd63f4124ed8e5211e95bdf712d.html</file>
-      <file>dir_07db93c1b18aa1d0fa68a2c6832e5192.html</file>
-      <file>dir_26d7ba91b55def6fa0553a5489a1fb5d.html</file>
-      <file>dir_7c4c794c08681e3d269a2afdbd17f1e5.html</file>
-      <file>dir_efd9caedf5c5248a361f0edf4ea3906e.html</file>
-      <file>dir_ea2f5f47a224b7fa4456766a60d50b7d.html</file>
-      <file>dir_954a4dbdf46bb23190e81c85f668c59e.html</file>
-      <file>dir_beaf6350625f40cba10f37349f035602.html</file>
-      <file>dir_146346ad1b266349ecb82355073ad5f6.html</file>
-      <file>dir_88798d151fe33ff6d78cd91cc388de10.html</file>
+      <file>dir_607d5b5c55a289199af27a28c21d80c6.html</file>
+      <file>dir_772ddb27af97586ca1859fd092d04461.html</file>
+      <file>dir_c6185555e86278140b6f6867f3414ff3.html</file>
+      <file>dir_c7a79b73b70d16493288e8d486063fff.html</file>
+      <file>dir_3f9a1f0ed5c107f21c135f9fef90dd64.html</file>
+      <file>dir_94ef2b60b1083ba79cdb2b1bc4df2fad.html</file>
+      <file>dir_d8d2cbd47b8dbb59e10190191398648f.html</file>
+      <file>dir_447d8cea64b1e425b20e9b8d9bde6c67.html</file>
+      <file>dir_71e5554444057be0c9bcc60d8f3e40f6.html</file>
+      <file>dir_719f6348c8fe662c613d4898723b24ca.html</file>
+      <file>dir_7cc577105533b07fa3c234b25e94020b.html</file>
+      <file>dir_6b5b719dd2b5324649d4e1bbb2b1fbec.html</file>
+      <file>dir_7ff9e7d569d3b2e6e754f42ec3be93bf.html</file>
+      <file>dir_ebd37a220ad9eda4654b1cb4a5ac718d.html</file>
+      <file>dir_04c988aaf79b08d466f6184a4a53a1f7.html</file>
+      <file>dir_64d6295139e7ef71e3f254c7a0378970.html</file>
+      <file>dir_fc02c1b6ed7681000e56639348910271.html</file>
+      <file>dir_e4d8e7f2be4864a3cfdfd1d5e4eee86d.html</file>
       <file>index.html</file>
       <file>MainPageScreenshot.png</file>
       <file>pages.html</file>
@@ -2809,7 +2726,6 @@
       <file>namespacemembers_func.html</file>
       <file>namespacemembers_func.html</file>
       <file>namespacemembers_func.html</file>
-      <file>namespacemembers_type.html</file>
       <file>namespacemembers_type.html</file>
       <file>namespacemembers_type.html</file>
       <file>namespacemembers_enum.html</file>
