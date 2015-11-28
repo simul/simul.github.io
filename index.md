@@ -11,7 +11,7 @@ Search
 
 {% include searchbar.html %}
 
-[Developer Manual](manual/)
+[Developer Manual](reference/)
 ---
 
 [Unreal Engine](unrealengine/)
