@@ -32,7 +32,7 @@
         {% assign psz = path | size %}
 
         {% assign title = node.title | remove: "Files (x86)/Jenkins/jobs/Simul Installers/workspace/Simul/PRODUCTS/TrueSky/Help/" | remove: " Source File" | remove: " Class Reference" %}
-        {% if node_title == "404" or path contains "search-results" %}
+        {% if title == "404" or path contains "search-results" %}
           {% continue %}
         {% endif %}
         {% assign path_parts = path | split: '/' %}
