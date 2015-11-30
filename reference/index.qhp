@@ -1151,7 +1151,9 @@
       <keyword name="simul::crossplatform::CommandLineParams" id="simul::crossplatform::CommandLineParams" ref="structsimul_1_1crossplatform_1_1CommandLineParams.html" />
       <keyword name="simul::crossplatform::DeviceContext" id="simul::crossplatform::DeviceContext" ref="structsimul_1_1crossplatform_1_1DeviceContext.html" />
       <keyword name="simul::crossplatform::Effect" id="simul::crossplatform::Effect" ref="classsimul_1_1crossplatform_1_1Effect.html" />
-      <keyword name="Apply" id="simul::crossplatform::Effect::Apply" ref="classsimul_1_1crossplatform_1_1Effect.html#ad6846d37f4c2cfe4880dd366b7f2bf61" />
+      <keyword name="Apply" id="simul::crossplatform::Effect::Apply" ref="classsimul_1_1crossplatform_1_1Effect.html#aa794b0e089725f142dbb92eb21557181" />
+      <keyword name="Apply" id="simul::crossplatform::Effect::Apply" ref="classsimul_1_1crossplatform_1_1Effect.html#a2fa7a21064b9847ef64f8821f43e36c0" />
+      <keyword name="Apply" id="simul::crossplatform::Effect::Apply" ref="classsimul_1_1crossplatform_1_1Effect.html#a438a53aee44805f3cc185e32d56e2865" />
       <keyword name="Apply" id="simul::crossplatform::Effect::Apply" ref="classsimul_1_1crossplatform_1_1Effect.html#aa1552fb0fe232651e62bf648f7413ed4" />
       <keyword name="Reapply" id="simul::crossplatform::Effect::Reapply" ref="classsimul_1_1crossplatform_1_1Effect.html#a880190eda9cf00f3fd5ce4e160f09735" />
       <keyword name="SetSamplerState" id="simul::crossplatform::Effect::SetSamplerState" ref="classsimul_1_1crossplatform_1_1Effect.html#a31169b54fa083b3d4fcf04975e51a555" />
@@ -1595,6 +1597,8 @@
       <keyword name="simul::opengl::Effect" id="simul::opengl::Effect" ref="classsimul_1_1opengl_1_1Effect.html" />
       <keyword name="Apply" id="simul::opengl::Effect::Apply" ref="classsimul_1_1opengl_1_1Effect.html#a1ac6003d573286ce0e5761fffe5e5c0a" />
       <keyword name="Apply" id="simul::opengl::Effect::Apply" ref="classsimul_1_1opengl_1_1Effect.html#aa72c179704489fa622ed85cb04db20fe" />
+      <keyword name="Apply" id="simul::opengl::Effect::Apply" ref="classsimul_1_1opengl_1_1Effect.html#aa794b0e089725f142dbb92eb21557181" />
+      <keyword name="Apply" id="simul::opengl::Effect::Apply" ref="classsimul_1_1opengl_1_1Effect.html#a2fa7a21064b9847ef64f8821f43e36c0" />
       <keyword name="Reapply" id="simul::opengl::Effect::Reapply" ref="classsimul_1_1opengl_1_1Effect.html#a0807584ba5af25c68e461062e93d72aa" />
       <keyword name="SetSamplerState" id="simul::opengl::Effect::SetSamplerState" ref="classsimul_1_1opengl_1_1Effect.html#a05444ef4aeafa6ddeb9cf2fc7cd7b2af" />
       <keyword name="SetTexture" id="simul::opengl::Effect::SetTexture" ref="classsimul_1_1opengl_1_1Effect.html#ab48f92838a74ba5aafd650fb87e677ab" />
@@ -1617,7 +1621,7 @@
       <keyword name="CreateQuery" id="simul::opengl::RenderPlatform::CreateQuery" ref="classsimul_1_1opengl_1_1RenderPlatform.html#a7672b8c53e6d8aa78a69d25ac7efd5fa" />
       <keyword name="CreateRenderState" id="simul::opengl::RenderPlatform::CreateRenderState" ref="classsimul_1_1opengl_1_1RenderPlatform.html#a490870865fe600b6a7baeb285be31035" />
       <keyword name="CreateSamplerState" id="simul::opengl::RenderPlatform::CreateSamplerState" ref="classsimul_1_1opengl_1_1RenderPlatform.html#a7689543925146a8d417faac34c88bf2b" />
-      <keyword name="CreateTexture" id="simul::opengl::RenderPlatform::CreateTexture" ref="classsimul_1_1opengl_1_1RenderPlatform.html#aeb82ed578c153bb7f8ed861dcb06ae0e" />
+      <keyword name="CreateTexture" id="simul::opengl::RenderPlatform::CreateTexture" ref="classsimul_1_1opengl_1_1RenderPlatform.html#a0d53957a3e259b6096195552f28094cf" />
       <keyword name="DispatchCompute" id="simul::opengl::RenderPlatform::DispatchCompute" ref="classsimul_1_1opengl_1_1RenderPlatform.html#a71752f7d09400f506f54fac11463e80c" />
       <keyword name="Draw" id="simul::opengl::RenderPlatform::Draw" ref="classsimul_1_1opengl_1_1RenderPlatform.html#af0b94545879468d454dd10b328e8421c" />
       <keyword name="DrawCircle" id="simul::opengl::RenderPlatform::DrawCircle" ref="classsimul_1_1opengl_1_1RenderPlatform.html#a19600362c5000b3a4d384b07c614362d" />
