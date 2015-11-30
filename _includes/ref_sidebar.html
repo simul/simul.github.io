@@ -28,7 +28,7 @@
         {% if path contains "_source.html" %}
           {% assign path = path | replace: "reference/","reference/source/" %}
         {% endif %}
-        {% assign path = path | replace: "reference/class","reference/classes/" | replace: "reference/classeses","reference/classes" | remove: ".html" | replace: "_1_1","/" | replace: "_01"," " | replace: "_8","." | remove_first: "/" | replace: "_ooo","/" %}
+        {% assign path = path | replace: "reference/class","reference/classes/" | replace: "reference/classeses","reference/classes" | replace: "reference/namespaces","reference/classes" | remove: ".html" | replace: "_1_1","/" | replace: "_01"," " | replace: "_8","." | remove_first: "/" | replace: "_ooo","/" %}
         {% assign psz = path | size %}
 
         {% assign title = node.title | remove: "Files (x86)/Jenkins/jobs/Simul Installers/workspace/Simul/PRODUCTS/TrueSky/Help/" | remove: " Source File" | remove: " Class Reference" %}
@@ -86,7 +86,7 @@
             {% endif %}
       {% endfor %}
       </ul>
-S
+T
     </nav>
     <p>&copy; {{ site.time | date: '%Y' }} Simul Software Ltd. All rights reserved.</p>
   </div>
