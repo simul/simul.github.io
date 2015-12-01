@@ -138,14 +138,14 @@ a.sidebar-nav-item:focus {
 @media (min-width: 48em) {
   .content {
     max-width: 38rem;
-    margin-left: 2rem;
+    margin-left: 10rem;
     margin-right: 2rem;
   }
 }
 
 @media (min-width: 64em) {
   .content {
-    margin-left: 4rem;
+    margin-left: 12rem;
     margin-right: 4rem;
   }
 }
@@ -164,14 +164,14 @@ a.sidebar-nav-item:focus {
   }
   .layout-reverse .content {
     margin-left: 2rem;
-    margin-right: 2rem;
+    margin-right: 10rem;
   }
 }
 
 @media (min-width: 64em) {
   .layout-reverse .content {
     margin-left: 4rem;
-    margin-right: 4rem;
+    margin-right: 12rem;
   }
 }
 
