@@ -271,6 +271,10 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1math_1_1Vector.html#a43ee429f5aad97991e64197e8c9b51fc"><param name="Name" value="simul::math::VirtualVector"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyTexturesCallback.html#a70d5d69ee5b1965ef69ac70d5de1e8e1"><param name="Name" value="CycleTexturesForward"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyTexturesCallback.html#a70d5d69ee5b1965ef69ac70d5de1e8e1"><param name="Name" value="simul::sky::SkyTexturesCallback"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyTexturesCallback.html#a70d5d69ee5b1965ef69ac70d5de1e8e1"><param name="Name" value="simul::terrain::BaseUnderwaterRenderer"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SiderealSky.html#ace41205d5fed471f7db998e99a4af2b3"><param name="Name" value="DaysInTheYear"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1sky_1_1SkyKeyframe.html#aa2e71e97bce93e87dbe95180c23abe46"><param name="Name" value="daytime"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyKeyframer.html#ad169fdb30c7a3b799c2d28a037b32781"><param name="Name" value="DaytimeToClockTime"></OBJECT>
@@ -380,6 +384,10 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1FileLoader.html#a83156efb5a0fa089f0ef23f6752153bd"><param name="Name" value="FileExists"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseGpuCloudGenerator.html#af04c225d2b0a5e808ceb191ca29b6623"><param name="Name" value="FillDensityGrid"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyTexturesCallback.html#a83e93d79b8c4efbdf2a8ed37b2cc31c7"><param name="Name" value="FillFadeTexturesSequentially"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyTexturesCallback.html#a83e93d79b8c4efbdf2a8ed37b2cc31c7"><param name="Name" value="simul::sky::SkyTexturesCallback"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyTexturesCallback.html#a83e93d79b8c4efbdf2a8ed37b2cc31c7"><param name="Name" value="simul::terrain::BaseUnderwaterRenderer"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1base.html#ae28e726b0ae50c4c0552e4c790172484"><param name="Name" value="find_and_replace"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1FileLoader.html#a7f013d417bab1931bc30775de68c1dfa"><param name="Name" value="FindFileInPathStack"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1FileLoader.html#aac425365a47886968337e6822248161a"><param name="Name" value="FindIndexInPathStack"></OBJECT>
@@ -541,6 +549,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyKeyframer.html#a64f8a66794fedbd6f927a49275268068"><param name="Name" value="simul::sky::SkyKeyframer"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a9b34a100e7adbc2a4001533ed788ec69"><param name="Name" value="GetCommandLineParams"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1terrain_1_1Cutout.html#a5253de132abec1f8443e536911068df3"><param name="Name" value="GetCrossover"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseKeyframer.html#a7cb5ae7caa7e1ce9d5f3fcd05c38600a"><param name="Name" value="GetCurrentSubdivision"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseKeyframer.html#a7cb5ae7caa7e1ce9d5f3fcd05c38600a"><param name="Name" value="simul::clouds::CloudKeyframer"></OBJECT>
@@ -2299,6 +2308,10 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudNode.html#ad60d8566906c1977452e33ed6dca9865"><param name="Name" value="simul::clouds::FastCloudNode"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyTexturesCallback.html#a0e63583485666138b44a7e88ee3211e6"><param name="Name" value="SetFadeTextureSize"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyTexturesCallback.html#a0e63583485666138b44a7e88ee3211e6"><param name="Name" value="simul::sky::SkyTexturesCallback"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyTexturesCallback.html#a0e63583485666138b44a7e88ee3211e6"><param name="Name" value="simul::terrain::BaseUnderwaterRenderer"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1base.html#a78f18408dee7179d096eae78e5bcabe8"><param name="Name" value="SetFeatureLevel"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1FileLoader.html#a03e7a35033f97665ff86ac368c5d85ed"><param name="Name" value="SetFileLoader"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1clouds_1_1CloudKeyframe.html#aed8eba907ea9444adcb73e16e1cbf845"><param name="Name" value="SetFloat"></OBJECT>
@@ -2746,6 +2759,10 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a9f6da9b9dd7e0ba46af29f69882fa2b8"><param name="Name" value="simul::clouds::CloudKeyframer"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyTexturesCallback.html#a44f6b1a39ee5946d43060e0d4609bcb8"><param name="Name" value="SetSkyTextureSize"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyTexturesCallback.html#a44f6b1a39ee5946d43060e0d4609bcb8"><param name="Name" value="simul::sky::SkyTexturesCallback"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyTexturesCallback.html#a44f6b1a39ee5946d43060e0d4609bcb8"><param name="Name" value="simul::terrain::BaseUnderwaterRenderer"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1TrueSkyRenderer.html#ab9729135868f2e1caa18ab804725a2d6"><param name="Name" value="SetSphericalHarmonicsBands"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1TrueSkyRenderer.html#ab9729135868f2e1caa18ab804725a2d6"><param name="Name" value="simul::dx11::TrueSkyRenderer"></OBJECT>
@@ -5011,6 +5028,18 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1Texture3D4.html#a78ba7a9e017bf8dd1a81fa6e620e3fce"><param name="Name" value="GetChecksum"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1sky.html"><param name="Name" value="simul::sky"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1terrain_1_1BaseUnderwaterRenderer.html"><param name="Name" value="simul::terrain::BaseUnderwaterRenderer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1terrain_1_1BaseUnderwaterRenderer.html#a70d5d69ee5b1965ef69ac70d5de1e8e1"><param name="Name" value="CycleTexturesForward"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1terrain_1_1BaseUnderwaterRenderer.html#a83e93d79b8c4efbdf2a8ed37b2cc31c7"><param name="Name" value="FillFadeTexturesSequentially"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1terrain_1_1BaseUnderwaterRenderer.html#a0e63583485666138b44a7e88ee3211e6"><param name="Name" value="SetFadeTextureSize"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1terrain_1_1BaseUnderwaterRenderer.html#a44f6b1a39ee5946d43060e0d4609bcb8"><param name="Name" value="SetSkyTextureSize"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1terrain_1_1Cutout.html"><param name="Name" value="simul::terrain::Cutout"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1terrain_1_1Cutout.html#a5253de132abec1f8443e536911068df3"><param name="Name" value="GetCrossover"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1terrain_1_1SeaKeyframer.html"><param name="Name" value="simul::terrain::SeaKeyframer"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1clouds_1_1CloudKeyframe.html#aa10849329dcd4d8fd46598e4dbac82c5"><param name="Name" value="simulation"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1Environment.html#a05daca15edd8341baed29240db6277a2"><param name="Name" value="skyKeyframer"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1sky_1_1SkyKeyframe.html#a6c94679420598b8c1eb0c0423c5d4659"><param name="Name" value="skyl"></OBJECT>
