@@ -49,7 +49,7 @@
           {% assign this_index = forloop.index0 %}
         {% endif %}
       {% endfor %}
-
+this_path {{ this_path }}
       {% assign menu_level = 0 %}
 
       {% for node in pages %}
@@ -63,6 +63,7 @@
             <li>
             <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %} sidebar-1" href="{{ node.url }}">{{ node_title }}</a></li>
             {% if this_path contains node_path %}
+              {% assign paths2 = site.array %}
               {% assign pages2 = site.array %}
               {% assign titles2 = site.array %}
               {% for node2 in pages %}
@@ -71,6 +72,7 @@
                 {% endunless %}
                 {% assign path2 = paths[forloop.index0] %}
                 {% if path2 contains node_path and node2.url != node.url  %}
+                  {% assign paths2 = paths2 | push: path2 %}
                   {% assign pages2 = pages2 | push: node2 %}
                   {% assign titles2 = titles2 | push: titles[forloop.index0] %}
                 {% endif %}
@@ -80,32 +82,33 @@
                 <ul>
                 {% for node2 in pages2 %}
                   <li><a class="sidebar-nav-item{% if page.url == node2.url %} active{% endif %} sidebar-2" href='{{node2.url}}'>{{ titles2[forloop.index0] }}</a></li>
-                {% endfor %}
+                  {% assign path2 = paths2[forloop.index0] %}
 
-                {% if this_path contains path2 %}
-                xxxx
-                  {% assign pages3 = site.array %}
-                  {% assign titles3 = site.array %}
-                  {% for node3 in pages %}
-                    {% unless path_sizes[forloop.index0] == 3 %}
-                      {% continue %}
-                    {% endunless %}
-                    {% assign path3 = paths[forloop.index0] %}
-                    {% if path3 contains this_path and node3.url != node.url  %}
-                      {% assign pages3 = pages3 | push: node3 %}
-                      {% assign titles3 = titles3 | push: titles[forloop.index0] %}
-                    {% endif %}
-                  {% endfor %}
-                  {% if pages3.size > 0 %}
-                    {% assign menu_level = 1 %}
-                    <ul>
-                    {% for node3 in pages3 %}
-                      <li><a class="sidebar-nav-item{% if page.url == node3.url %} active{% endif %} sidebar-3" href='{{node3.url}}'>{{ titles3[forloop.index0] }}</a></li>
+                  {% if this_path contains path2 %}
+                  xxxx
+                    {% assign pages3 = site.array %}
+                    {% assign titles3 = site.array %}
+                    {% for node3 in pages %}
+                      {% unless path_sizes[forloop.index0] == 3 %}
+                        {% continue %}
+                      {% endunless %}
+                      {% assign path3 = paths[forloop.index0] %}
+                      {% if path3 contains this_path and node3.url != node.url  %}
+                        {% assign pages3 = pages3 | push: node3 %}
+                        {% assign titles3 = titles3 | push: titles[forloop.index0] %}
+                      {% endif %}
                     {% endfor %}
-                    </ul>
-                  {% endif%}
-                {% endif %}
+                    {% if pages3.size > 0 %}
+                      {% assign menu_level = 1 %}
+                      <ul>
+                      {% for node3 in pages3 %}
+                        <li><a class="sidebar-nav-item{% if page.url == node3.url %} active{% endif %} sidebar-3" href='{{node3.url}}'>{{ titles3[forloop.index0] }}</a></li>
+                      {% endfor %}
+                      </ul>
+                    {% endif%}
+                  {% endif %}
 
+                {% endfor %}
                 </ul>
               {% endif%}
             {% endif %}
