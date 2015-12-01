@@ -31,7 +31,7 @@
         {% assign path = path | replace: "reference/class","reference/classes/" | replace: "reference/classeses","reference/classes" | replace: "reference/namespaces","reference/classes" | remove: ".html" | replace: "_1_1","/" | replace: "_01"," " | replace: "_8","." | remove_first: "/" | replace: "_ooo","/" %}
         {% assign psz = path | size %}
 
-        {% assign title = node.title | remove: "Files (x86)/Jenkins/jobs/Simul Installers/workspace/Simul/PRODUCTS/TrueSky/Help/" | remove: " Source File" | remove: " Class Reference" %}
+        {% assign title = node.title | remove: "Files (x86)/Jenkins/jobs/Simul Installers/workspace/Simul/PRODUCTS/TrueSky/Help/" | remove: " Source File" | remove: " Class Reference" | replace "Namespace List","Reference" %}
         {% if title == "404" or path contains "search-results" %}
           {% continue %}
         {% endif %}
@@ -86,7 +86,7 @@
             {% endif %}
       {% endfor %}
       </ul>
-U
+V
     </nav>
     <p>&copy; {{ site.time | date: '%Y' }} Simul Software Ltd. All rights reserved.</p>
   </div>
