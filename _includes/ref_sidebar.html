@@ -71,7 +71,7 @@
                   {% continue %}
                 {% endunless %}
                 {% assign path3 = paths[forloop.index0] %}
-                {% if path3 contains node_path and node3.url != node.url  %}
+                {% if path3 contains this_path and node3.url != node.url  %}
                   {% assign pages3 = pages3 | push: node3 %}
                   {% assign titles3 = titles3 | push: titles[forloop.index0] %}
                 {% endif %}
@@ -83,8 +83,6 @@
                   <li><a class="sidebar-nav-item{% if page.url == node3.url %} active{% endif %} sidebar-3" href='{{node3.url}}'>{{ titles3[forloop.index0] }}</a></li>
                 {% endfor %}
 
-
-
                 {% if this_path contains path2 %}
                   {% assign pages3 = site.array %}
                   {% assign titles3 = site.array %}
@@ -93,7 +91,7 @@
                       {% continue %}
                     {% endunless %}
                     {% assign path3 = paths[forloop.index0] %}
-                    {% if path3 contains node_path and node3.url != node.url  %}
+                    {% if path3 contains this_path and node3.url != node.url  %}
                       {% assign pages3 = pages3 | push: node3 %}
                       {% assign titles3 = titles3 | push: titles[forloop.index0] %}
                     {% endif %}
