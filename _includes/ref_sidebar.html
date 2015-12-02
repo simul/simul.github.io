@@ -81,11 +81,11 @@ this_path {{ this_path }}
                 {% assign menu_level = 1 %}
                 <ul>
                 {% for node2 in pages2 %}
-                  <li><a class="sidebar-nav-item{% if page.url == node2.url %} active{% endif %} sidebar-2" href='{{node2.url}}'>{{ titles2[forloop.index0] }}</a></li>
+                  <li><a class="sidebar-nav-item{% if page.url == node2.url %} active{% endif %} sidebar-2" href='{{node2.url}}'>{{ titles2[forloop.index0] }}</a> {{ paths2[forloop.index0] }}</li>
                   {% assign path2 = paths2[forloop.index0] %}
 
                   {% if this_path contains path2 %}
-                  xxxx
+                  xxx
                     {% assign pages3 = site.array %}
                     {% assign titles3 = site.array %}
                     {% for node3 in pages %}
@@ -94,6 +94,7 @@ this_path {{ this_path }}
                       {% endunless %}
                       {% assign path3 = paths[forloop.index0] %}
                       {% if path3 contains this_path and node3.url != node.url  %}
+                        {% assign paths3 = paths3 | push: path3 %}
                         {% assign pages3 = pages3 | push: node3 %}
                         {% assign titles3 = titles3 | push: titles[forloop.index0] %}
                       {% endif %}
@@ -102,7 +103,7 @@ this_path {{ this_path }}
                       {% assign menu_level = 1 %}
                       <ul>
                       {% for node3 in pages3 %}
-                        <li><a class="sidebar-nav-item{% if page.url == node3.url %} active{% endif %} sidebar-3" href='{{node3.url}}'>{{ titles3[forloop.index0] }}</a></li>
+                        <li><a class="sidebar-nav-item{% if page.url == node3.url %} active{% endif %} sidebar-3" href='{{node3.url}}'>{{ titles3[forloop.index0] }}</a> {{ paths3[forloop.index0] }}</li>
                       {% endfor %}
                       </ul>
                     {% endif%}
@@ -115,7 +116,7 @@ this_path {{ this_path }}
 
       {% endfor %}
       </ul>
-Y
+Z
     </nav>
     <p>&copy; {{ site.time | date: '%Y' }} Simul Software Ltd. All rights reserved.</p>
   </div>
