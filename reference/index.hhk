@@ -1490,6 +1490,7 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1sky_1_1SkyKeyframe.html#afd256aa127f6cd671ff906d94546d19f"><param name="Name" value="GetTransientChecksum"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a15b17a59c91ea2f514604308d49d38ec"><param name="Name" value="GetTransparencyAtmospherics"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html#a8ce839c006946c410e5bf46eb57cfabc"><param name="Name" value="GetUpdateTexture"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudGrid.html#aa5163a5e63e494925cabb99fe1acdc3c"><param name="Name" value="GetUpperDensity"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudGrid.html#aa5163a5e63e494925cabb99fe1acdc3c"><param name="Name" value="simul::clouds::CellularCloudGrid"></OBJECT>
@@ -4010,6 +4011,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html#a7e40f08c4f6c7ee803e8f4dfbe415e37"><param name="Name" value="DeactivateDepth"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html#abd0125d249494193ccff57dddeb38620"><param name="Name" value="DeactivateLowRes"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html#aa0ccb8c69a873991ec9c157681f9293d"><param name="Name" value="GetLowResDepthTexture"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html#a8ce839c006946c410e5bf46eb57cfabc"><param name="Name" value="GetUpdateTexture"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html#af0c140c56475b2c72f8733475fb9ec84"><param name="Name" value="pixelOffset"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html#ad581de9f35a0d0c4327e894d7de5fed5"><param name="Name" value="RenderDepthBuffers"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html#aa0e2645047979b8606cb90fad218ba1a"><param name="Name" value="Swap"></OBJECT>

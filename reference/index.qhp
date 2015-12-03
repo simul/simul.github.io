@@ -1267,6 +1267,7 @@
       <keyword name="DeactivateDepth" id="simul::crossplatform::TwoResFramebuffer::DeactivateDepth" ref="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html#a7e40f08c4f6c7ee803e8f4dfbe415e37" />
       <keyword name="DeactivateLowRes" id="simul::crossplatform::TwoResFramebuffer::DeactivateLowRes" ref="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html#abd0125d249494193ccff57dddeb38620" />
       <keyword name="GetLowResDepthTexture" id="simul::crossplatform::TwoResFramebuffer::GetLowResDepthTexture" ref="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html#aa0ccb8c69a873991ec9c157681f9293d" />
+      <keyword name="GetUpdateTexture" id="simul::crossplatform::TwoResFramebuffer::GetUpdateTexture" ref="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html#a8ce839c006946c410e5bf46eb57cfabc" />
       <keyword name="RenderDepthBuffers" id="simul::crossplatform::TwoResFramebuffer::RenderDepthBuffers" ref="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html#ad581de9f35a0d0c4327e894d7de5fed5" />
       <keyword name="Swap" id="simul::crossplatform::TwoResFramebuffer::Swap" ref="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html#aa0e2645047979b8606cb90fad218ba1a" />
       <keyword name="UpdatePixelOffset" id="simul::crossplatform::TwoResFramebuffer::UpdatePixelOffset" ref="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html#ac0bd3bdfe30084a0b7ab6b3293e833fc" />

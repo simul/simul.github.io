@@ -102,74 +102,69 @@ url: Simul/Platform/CrossPlatform/Texture.h Source File
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        };</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keyword">class </span>SIMUL_CROSSPLATFORM_EXPORT Texture</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            Texture()</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                :width(0)</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                ,length(0)</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                ,depth(0)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                ,dim(0)</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                ,mips(1)</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                ,pixelFormat(crossplatform::UNKNOWN)</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                ,renderPlatform(NULL)</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                ,num_rt(0){}</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keyword">virtual</span> ~Texture();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> LoadFromFile(RenderPlatform *r,<span class="keyword">const</span> <span class="keywordtype">char</span> *pFilePathUtf8)=0;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> LoadTextureArray(RenderPlatform *r,<span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;texture_files)=0;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">bool</span> IsValid() <span class="keyword">const</span>=0;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> InvalidateDeviceObjects()=0;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keyword">virtual</span> sce::Gnm::Texture *AsGnmTexture(<span class="keywordtype">int</span>){<span class="keywordflow">return</span> 0;}</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keyword">virtual</span> ID3D11Texture2D *AsD3D11Texture2D(){<span class="keywordflow">return</span> 0;}</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keyword">virtual</span> ID3D11ShaderResourceView *AsD3D11ShaderResourceView(<span class="keywordtype">int</span> =-1){<span class="keywordflow">return</span> 0;}</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keyword">virtual</span> ID3D11UnorderedAccessView *AsD3D11UnorderedAccessView(<span class="keywordtype">int</span> =0){<span class="keywordflow">return</span> 0;}</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keyword">virtual</span> ID3D11DepthStencilView *AsD3D11DepthStencilView(){<span class="keywordflow">return</span> 0;}</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keyword">virtual</span> ID3D11RenderTargetView *AsD3D11RenderTargetView(){<span class="keywordflow">return</span> 0;}</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">bool</span> HasRenderTargets()<span class="keyword"> const</span>{<span class="keywordflow">return</span> (num_rt&gt;0);}</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> MoveToFastRAM() {}</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> MoveToSlowRAM() {}</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> DiscardFromFastRAM() {}</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keyword">virtual</span> GLuint AsGLuint(){<span class="keywordflow">return</span> 0;}</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <a class="code" href="namespacesimul_1_1crossplatform.html#a29c5057471bee180c1cec3a2ccdd9940">PixelFormat</a> GetFormat()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">            </span>{</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                <span class="keywordflow">return</span> pixelFormat;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            }</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> InitFromExternalTexture2D(crossplatform::RenderPlatform *renderPlatform,<span class="keywordtype">void</span> *t,<span class="keywordtype">void</span> *srv,<span class="keywordtype">bool</span> make_rt=<span class="keyword">false</span>)=0;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> ensureTexture2DSizeAndFormat(RenderPlatform *renderPlatform,<span class="keywordtype">int</span> w,<span class="keywordtype">int</span> l</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                ,<a class="code" href="namespacesimul_1_1crossplatform.html#a29c5057471bee180c1cec3a2ccdd9940">PixelFormat</a> f,<span class="keywordtype">bool</span> computable=<span class="keyword">false</span>,<span class="keywordtype">bool</span> rendertarget=<span class="keyword">false</span>,<span class="keywordtype">bool</span> depthstencil=<span class="keyword">false</span>,<span class="keywordtype">int</span> num_samples=1,<span class="keywordtype">int</span> aa_quality=0,<span class="keywordtype">bool</span> wrap=<span class="keyword">false</span>)=0;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> ensureTextureArraySizeAndFormat(RenderPlatform *renderPlatform,<span class="keywordtype">int</span> w,<span class="keywordtype">int</span> l,<span class="keywordtype">int</span> num,<a class="code" href="namespacesimul_1_1crossplatform.html#a29c5057471bee180c1cec3a2ccdd9940">PixelFormat</a> f,<span class="keywordtype">bool</span> computable=<span class="keyword">false</span>,<span class="keywordtype">bool</span> rendertarget=<span class="keyword">false</span>,<span class="keywordtype">bool</span> cubemap=<span class="keyword">false</span>)=0;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> ensureTexture3DSizeAndFormat(RenderPlatform *renderPlatform,<span class="keywordtype">int</span> w,<span class="keywordtype">int</span> l,<span class="keywordtype">int</span> d,<a class="code" href="namespacesimul_1_1crossplatform.html#a29c5057471bee180c1cec3a2ccdd9940">PixelFormat</a> frmt,<span class="keywordtype">bool</span> computable=<span class="keyword">false</span>,<span class="keywordtype">int</span> mips=1,<span class="keywordtype">bool</span> rendertargets=<span class="keyword">false</span>)=0;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> GenerateMips(DeviceContext &amp;deviceContext)=0;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> setTexels(crossplatform::DeviceContext &amp;deviceContext,<span class="keyword">const</span> <span class="keywordtype">void</span> *src,<span class="keywordtype">int</span> texel_index,<span class="keywordtype">int</span> num_texels)=0;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> activateRenderTarget(DeviceContext &amp;deviceContext)=0;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> deactivateRenderTarget()=0;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetLength()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">            </span>{</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                <span class="keywordflow">return</span> length;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            }</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetWidth()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">            </span>{</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                <span class="keywordflow">return</span> width;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            }</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetDepth()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keyword">            </span>{</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                <span class="keywordflow">return</span> depth;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            }</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetDimension()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keyword">            </span>{</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                <span class="keywordflow">return</span> dim;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            }</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <span class="keywordtype">int</span> GetMipCount()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keyword">            </span>{</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                <span class="keywordflow">return</span> mips;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            }</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetSampleCount() <span class="keyword">const</span>=0;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> copyToMemory(DeviceContext &amp;deviceContext,<span class="keywordtype">void</span> *target,<span class="keywordtype">int</span> start_texel,<span class="keywordtype">int</span> num_texels)=0;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            <span class="keywordtype">int</span> width,length,depth,dim,mips;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            <a class="code" href="namespacesimul_1_1crossplatform.html#a29c5057471bee180c1cec3a2ccdd9940">PixelFormat</a> pixelFormat;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            RenderPlatform *renderPlatform;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            <span class="keywordtype">int</span> num_rt;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        };</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    }</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordtype">bool</span> cubemap;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            Texture();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keyword">virtual</span> ~Texture();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> LoadFromFile(RenderPlatform *r,<span class="keyword">const</span> <span class="keywordtype">char</span> *pFilePathUtf8)=0;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> LoadTextureArray(RenderPlatform *r,<span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;texture_files)=0;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">bool</span> IsValid() <span class="keyword">const</span>=0;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> InvalidateDeviceObjects()=0;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keyword">virtual</span> sce::Gnm::Texture *AsGnmTexture(<span class="keywordtype">int</span>){<span class="keywordflow">return</span> 0;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keyword">virtual</span> ID3D11Texture2D *AsD3D11Texture2D(){<span class="keywordflow">return</span> 0;}</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keyword">virtual</span> ID3D11ShaderResourceView *AsD3D11ShaderResourceView(<span class="keywordtype">int</span> =-1){<span class="keywordflow">return</span> 0;}</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keyword">virtual</span> ID3D11UnorderedAccessView *AsD3D11UnorderedAccessView(<span class="keywordtype">int</span> =0){<span class="keywordflow">return</span> 0;}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keyword">virtual</span> ID3D11DepthStencilView *AsD3D11DepthStencilView(){<span class="keywordflow">return</span> 0;}</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keyword">virtual</span> ID3D11RenderTargetView *AsD3D11RenderTargetView(){<span class="keywordflow">return</span> 0;}</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">bool</span> HasRenderTargets()<span class="keyword"> const</span>{<span class="keywordflow">return</span> (num_rt&gt;0);}</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> MoveToFastRAM() {}</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> MoveToSlowRAM() {}</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> DiscardFromFastRAM() {}</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keyword">virtual</span> GLuint AsGLuint(){<span class="keywordflow">return</span> 0;}</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <a class="code" href="namespacesimul_1_1crossplatform.html#a29c5057471bee180c1cec3a2ccdd9940">PixelFormat</a> GetFormat()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">            </span>{</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                <span class="keywordflow">return</span> pixelFormat;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> InitFromExternalTexture2D(crossplatform::RenderPlatform *renderPlatform,<span class="keywordtype">void</span> *t,<span class="keywordtype">void</span> *srv,<span class="keywordtype">bool</span> make_rt=<span class="keyword">false</span>)=0;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> ensureTexture2DSizeAndFormat(RenderPlatform *renderPlatform,<span class="keywordtype">int</span> w,<span class="keywordtype">int</span> l</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                ,<a class="code" href="namespacesimul_1_1crossplatform.html#a29c5057471bee180c1cec3a2ccdd9940">PixelFormat</a> f,<span class="keywordtype">bool</span> computable=<span class="keyword">false</span>,<span class="keywordtype">bool</span> rendertarget=<span class="keyword">false</span>,<span class="keywordtype">bool</span> depthstencil=<span class="keyword">false</span>,<span class="keywordtype">int</span> num_samples=1,<span class="keywordtype">int</span> aa_quality=0,<span class="keywordtype">bool</span> wrap=<span class="keyword">false</span>)=0;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> ensureTextureArraySizeAndFormat(RenderPlatform *renderPlatform,<span class="keywordtype">int</span> w,<span class="keywordtype">int</span> l,<span class="keywordtype">int</span> num,<a class="code" href="namespacesimul_1_1crossplatform.html#a29c5057471bee180c1cec3a2ccdd9940">PixelFormat</a> f,<span class="keywordtype">bool</span> computable=<span class="keyword">false</span>,<span class="keywordtype">bool</span> rendertarget=<span class="keyword">false</span>,<span class="keywordtype">bool</span> cubemap=<span class="keyword">false</span>)=0;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> ensureTexture3DSizeAndFormat(RenderPlatform *renderPlatform,<span class="keywordtype">int</span> w,<span class="keywordtype">int</span> l,<span class="keywordtype">int</span> d,<a class="code" href="namespacesimul_1_1crossplatform.html#a29c5057471bee180c1cec3a2ccdd9940">PixelFormat</a> frmt,<span class="keywordtype">bool</span> computable=<span class="keyword">false</span>,<span class="keywordtype">int</span> mips=1,<span class="keywordtype">bool</span> rendertargets=<span class="keyword">false</span>)=0;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> GenerateMips(DeviceContext &amp;deviceContext)=0;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> setTexels(crossplatform::DeviceContext &amp;deviceContext,<span class="keyword">const</span> <span class="keywordtype">void</span> *src,<span class="keywordtype">int</span> texel_index,<span class="keywordtype">int</span> num_texels)=0;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> activateRenderTarget(DeviceContext &amp;deviceContext)=0;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> deactivateRenderTarget()=0;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetLength()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">            </span>{</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                <span class="keywordflow">return</span> length;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetWidth()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">            </span>{</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                <span class="keywordflow">return</span> width;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetDepth()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keyword">            </span>{</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                <span class="keywordflow">return</span> depth;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetDimension()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keyword">            </span>{</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                <span class="keywordflow">return</span> dim;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            <span class="keywordtype">int</span> GetMipCount()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keyword">            </span>{</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                <span class="keywordflow">return</span> mips;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            }</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetSampleCount() <span class="keyword">const</span>=0;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">bool</span> IsCubemap() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> copyToMemory(DeviceContext &amp;deviceContext,<span class="keywordtype">void</span> *target,<span class="keywordtype">int</span> start_texel,<span class="keywordtype">int</span> num_texels)=0;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            <span class="keywordtype">int</span> width,length,depth,dim,mips;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            <a class="code" href="namespacesimul_1_1crossplatform.html#a29c5057471bee180c1cec3a2ccdd9940">PixelFormat</a> pixelFormat;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            RenderPlatform *renderPlatform;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            <span class="keywordtype">int</span> num_rt;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        };</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    }</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;}</div>
 <div class="ttc" id="namespacesce_html"><div class="ttname"><a href="namespacesce.html">sce</a></div><div class="ttdef"><b>Definition:</b> <a href="DeviceContext_8h_source.html#l00006">DeviceContext.h:6</a></div></div>
 <div class="ttc" id="namespacesimul_1_1crossplatform_html_a29c5057471bee180c1cec3a2ccdd9940"><div class="ttname"><a href="namespacesimul_1_1crossplatform.html#a29c5057471bee180c1cec3a2ccdd9940">simul::crossplatform::PixelFormat</a></div><div class="ttdeci">PixelFormat</div><div class="ttdoc">A cross-platform equivalent to the OpenGL and DirectX pixel formats. </div><div class="ttdef"><b>Definition:</b> <a href="PixelFormat_8h_source.html#l00007">PixelFormat.h:7</a></div></div>
 <div class="ttc" id="namespacesimul_html"><div class="ttname"><a href="namespacesimul.html">simul</a></div><div class="ttdef"><b>Definition:</b> <a href="Base_8h_source.html#l00001">Base.h:1</a></div></div>
@@ -178,6 +173,6 @@ url: Simul/Platform/CrossPlatform/Texture.h Source File
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Wed Dec 2 2015 07:46:26</small></address>
+Thu Dec 3 2015 07:46:28</small></address>
 </body>
 </html>

@@ -176,26 +176,28 @@ url: Simul/Base/RuntimeError.h Source File
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor">        if(errno!=0)\</span></div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="preprocessor">        {\</span></div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="preprocessor">            char e[101];\</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="preprocessor">            strerror_r(errno,e,100);\</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">            std::cerr&lt;&lt;__FILE__&lt;&lt;&quot;(&quot;&lt;&lt;__LINE__&lt;&lt;&quot;): warning B0001: &quot;&lt;&lt;&quot;WARNING: errno!=0: &quot;&lt;&lt;e&lt;&lt;std::endl;\</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor">            errno=0;\</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">            SIMUL_THROW(e);\</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor">        }</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor">#define ERRNO_BREAK \</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor">        if(errno!=0)\</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">        {\</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">            char e[101];\</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">            strerror_r(errno,e,100);\</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor">            std::cerr&lt;&lt;__FILE__&lt;&lt;&quot;(&quot;&lt;&lt;__LINE__&lt;&lt;&quot;): warning B0001: &quot;&lt;&lt;&quot;WARNING: errno!=0: &quot;&lt;&lt;e&lt;&lt;std::endl;\</span></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">            BREAK_IF_DEBUGGING  \</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">            errno=0;\</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor">        }</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor">    #pragma warning(pop)</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="preprocessor">            int err=errno;\</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">            strerror_r(err,e,100);\</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor">            std::cerr&lt;&lt;__FILE__&lt;&lt;&quot;(&quot;&lt;&lt;__LINE__&lt;&lt;&quot;): warning B0001: &quot;&lt;&lt;&quot;WARNING: errno==&quot;&lt;&lt;err&lt;&lt;&quot;: &quot;&lt;&lt;e&lt;&lt;std::endl;\</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">            errno=0;\</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor">            SIMUL_THROW(e);\</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor">        }</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">#define ERRNO_BREAK \</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">        if(errno!=0)\</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">        {\</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">            char e[101];\</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor">            int err=errno;\</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">            strerror_r(err,e,100);\</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">            std::cerr&lt;&lt;__FILE__&lt;&lt;&quot;(&quot;&lt;&lt;__LINE__&lt;&lt;&quot;): warning B0001: &quot;&lt;&lt;&quot;WARNING: errno==&quot;&lt;&lt;err&lt;&lt;&quot;: &quot;&lt;&lt;e&lt;&lt;std::endl;\</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor">            BREAK_IF_DEBUGGING  \</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor">            errno=0;\</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">        }</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor">    #pragma warning(pop)</span></div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="classsimul_1_1base_1_1RuntimeError_html"><div class="ttname"><a href="classsimul_1_1base_1_1RuntimeError.html">simul::base::RuntimeError</a></div><div class="ttdef"><b>Definition:</b> <a href="RuntimeError_8h_source.html#l00032">RuntimeError.h:32</a></div></div>
 <div class="ttc" id="namespacesimul_html"><div class="ttname"><a href="namespacesimul.html">simul</a></div><div class="ttdef"><b>Definition:</b> <a href="Base_8h_source.html#l00001">Base.h:1</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -203,6 +205,6 @@ url: Simul/Base/RuntimeError.h Source File
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Wed Dec 2 2015 07:46:26</small></address>
+Thu Dec 3 2015 07:46:27</small></address>
 </body>
 </html>
