@@ -23,13 +23,13 @@
 
       {% for node in sorted_pages %}
         {% assign path = node.url | remove: "/index.html" %}
-        {% if path contains "/dir_" or path contains "/struct" or path contains "/functions" or path contains "/namespacemembers" or path contains "graph_legend" or path contains "google" or path contains "-members.html"  %}
+        {% if path contains "/dir_" or path contains "/struct" or path contains "/functions" or path contains "/namespacemembers" or path contains "graph_legend" or path contains "google" or path contains "-members.html" or path contains "/classes.html" %}
           {% continue %}
         {% endif %}
         {% if path contains "_source.html" %}
           {% assign path = path | replace: "reference/","reference/source/" %}
         {% endif %}
-        {% assign path = path | replace: "reference/class","reference/classes/" | replace: "reference/classeses","reference/classes" | replace: "reference/namespaces","reference/classes" | remove: ".html" | replace: "_1_1","/" | replace: "_01"," " | replace: "_8","." | remove_first: "/" | replace: "_ooo","/" %}
+        {% assign path = path | replace: "reference/class","reference/classes/" | replace: "reference/classes/es","reference/classes" | replace: "reference/namespaces","reference/classes" | remove: ".html" | replace: "_1_1","/" | replace: "_01"," " | replace: "_8","." | remove_first: "/" | replace: "_ooo","/" %}
         {% assign psz = path | size %}
 
         {% assign title = node.title | remove: "Files (x86)/Jenkins/jobs/Simul Installers/workspace/Simul/PRODUCTS/TrueSky/Help/" | remove: " Source File" | remove: " Class Reference" | replace "Namespace List","Reference" %}
