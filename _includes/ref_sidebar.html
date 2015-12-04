@@ -93,7 +93,7 @@ this_path {{ this_path }}
                         {% continue %}
                       {% endunless %}
                       {% assign path3 = paths[forloop.index0] %}
-                      {% if path3 contains this_path and node3.url != node.url  %}
+                      {% if path3 contains path2 and node3.url != node.url  %}
                         {% assign paths3 = paths3 | push: path3 %}
                         {% assign pages3 = pages3 | push: node3 %}
                         {% assign titles3 = titles3 | push: titles[forloop.index0] %}
