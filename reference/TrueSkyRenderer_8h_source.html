@@ -120,7 +120,7 @@ url: Simul/Clouds/TrueSkyRenderer.h Source File
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordtype">void</span> RenderStandard(crossplatform::DeviceContext &amp;deviceContext,<span class="keyword">const</span> crossplatform::CameraViewStruct &amp;cameraViewStruct);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keywordtype">void</span> RenderToOculus(crossplatform::DeviceContext &amp;deviceContext,<span class="keyword">const</span> crossplatform::CameraViewStruct &amp;cameraViewStruct);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordtype">void</span> RenderOverlays(crossplatform::DeviceContext &amp;deviceContext,crossplatform::Texture *texture,<span class="keywordtype">float</span> exposure,<span class="keywordtype">float</span> gamma);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordtype">void</span>    RenderCubemap(crossplatform::DeviceContext &amp;deviceContext,<span class="keyword">const</span> <span class="keywordtype">float</span> *cam_pos);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordtype">void</span>    RenderCubemap(crossplatform::DeviceContext &amp;parentDeviceContext,crossplatform::BaseFramebuffer *fb,<span class="keyword">const</span> <span class="keywordtype">float</span> *cam_pos,<span class="keywordtype">int</span> faceIndex);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordtype">void</span>    RenderEnvmap(crossplatform::DeviceContext &amp;deviceContext);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keywordtype">void</span>    ReloadTextures();</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordtype">void</span>    SetToolDir(<span class="keywordtype">int</span> view_id  ,vec3 t,<span class="keywordtype">float</span> press,<span class="keywordtype">float</span> szKm);</div>
@@ -236,6 +236,6 @@ url: Simul/Clouds/TrueSkyRenderer.h Source File
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Thu Dec 3 2015 07:46:28</small></address>
+Fri Dec 4 2015 07:46:28</small></address>
 </body>
 </html>
