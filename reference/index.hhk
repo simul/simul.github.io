@@ -83,9 +83,9 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1DefaultProfiler.html#ab4c45a2e98f72463956534c2352f410d"><param name="Name" value="Begin"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1DefaultProfiler.html#ab4c45a2e98f72463956534c2352f410d"><param name="Name" value="simul::base::DefaultProfiler"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1GpuProfilingInterface.html#aa30fe42766cd33347345ab5cfc5c9470"><param name="Name" value="simul::base::GpuProfilingInterface"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1ProfilingInterface.html#a6eb2bef676837afbbce0a432010d05c3"><param name="Name" value="simul::base::ProfilingInterface"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1Profiler.html#ac185e80d207ea6db2727f992248c103a"><param name="Name" value="simul::dx11::Profiler"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#a93cd98b76eba1dd5956b5154b9717e89"><param name="Name" value="simul::crossplatform::GpuProfilingInterface"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1Profiler.html#a2a5fe9246ec46e679c6346fa50265b94"><param name="Name" value="simul::dx11::Profiler"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1clouds_1_1CloudKeyframer_1_1Storm.html#a8aef677eaf5ed8286308bbdbde0fea89"><param name="Name" value="branchAngleDegrees"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudNode.html#a6317574705a78bc2ecf1b3aa4440349c"><param name="Name" value="CalcLightingSetup"></OBJECT>
@@ -358,17 +358,17 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1DefaultProfiler.html#ad2716309ddc9f8d18116b7ebb604e75b"><param name="Name" value="End"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1DefaultProfiler.html#ad2716309ddc9f8d18116b7ebb604e75b"><param name="Name" value="simul::base::DefaultProfiler"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1GpuProfilingInterface.html#ae13f3f4b70318b8e0e4b1b4dbb892c88"><param name="Name" value="simul::base::GpuProfilingInterface"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1ProfilingInterface.html#a249290641f1ae464ce288fd766a2be85"><param name="Name" value="simul::base::ProfilingInterface"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#af7ddb9db83e9d182053e2d83106d42e5"><param name="Name" value="simul::crossplatform::GpuProfilingInterface"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1Profiler.html#a08334b4aaea71cbf7c28b1c0da65f9d8"><param name="Name" value="simul::dx11::Profiler"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1clouds_1_1CloudKeyframer_1_1Storm.html#a92f5c8a309905a8653ea2178d6bc1e76"><param name="Name" value="end_time"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1DefaultProfiler.html#aa894143b64287878d33dfaf536b85e49"><param name="Name" value="EndFrame"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1DefaultProfiler.html#aa894143b64287878d33dfaf536b85e49"><param name="Name" value="simul::base::DefaultProfiler"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1GpuProfilingInterface.html#a38c97b86b24b01b225572bfbc73bb53e"><param name="Name" value="simul::base::GpuProfilingInterface"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1ProfilingInterface.html#a3172e473c241add225b5ce10d3c8d38f"><param name="Name" value="simul::base::ProfilingInterface"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1Profiler.html#aaea74a30848b239b73362aad8b425325"><param name="Name" value="simul::dx11::Profiler"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#aee42b1dcf15230f3fe3a4dd8d748747e"><param name="Name" value="simul::crossplatform::GpuProfilingInterface"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1Profiler.html#a00273974b141808b963b5e96a402adad"><param name="Name" value="simul::dx11::Profiler"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1dx11_1_1VertexBuffer.html#af31f6ab343f6d0d640cdab9bef29a15c"><param name="Name" value="ensureBufferSize"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#a02c50321136c7d835fbab0821959701f"><param name="Name" value="EnsureEffectIsBuilt"></OBJECT>
@@ -556,6 +556,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseKeyframer.html#a7cb5ae7caa7e1ce9d5f3fcd05c38600a"><param name="Name" value="simul::sky::BaseKeyframer"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseKeyframer.html#a7cb5ae7caa7e1ce9d5f3fcd05c38600a"><param name="Name" value="simul::sky::SkyKeyframer"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1crossplatform_1_1Query.html#a2832853f03b6223cc74807091a3f41de"><param name="Name" value="GetData"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SiderealSky.html#a607a6365f170079c795e6a791dedd81c"><param name="Name" value="GetDate"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseKeyframer.html#ac1207f34fb3216473ee1ce546c3b50f5"><param name="Name" value="GetDayLoop"></OBJECT>
   <UL>
@@ -567,9 +568,9 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1DefaultProfiler.html#af50cd69364d89c9d4174c1b6f5eaa5f6"><param name="Name" value="GetDebugText"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1DefaultProfiler.html#af50cd69364d89c9d4174c1b6f5eaa5f6"><param name="Name" value="simul::base::DefaultProfiler"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1GpuProfilingInterface.html#a8f2cf041f91d25808ce5d25844f97f9b"><param name="Name" value="simul::base::GpuProfilingInterface"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a2d5d3f4130142ce4de4fe06e0e882072"><param name="Name" value="simul::clouds::BaseCloudRenderer"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aaed9c494663cd8d7851f39fe5fade3a9"><param name="Name" value="simul::clouds::BaseWeatherRenderer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#aa057d60cddaf5f9816cc26e432e75926"><param name="Name" value="simul::crossplatform::GpuProfilingInterface"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1Profiler.html#a356462b60ec07b356638d13648c9bf2b"><param name="Name" value="simul::dx11::Profiler"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseSkyRenderer.html#a2a56d85d628a2f41856d6ddd5a1777f5"><param name="Name" value="simul::sky::BaseSkyRenderer"></OBJECT>
   </UL>
@@ -673,8 +674,8 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1BaseProfilingInterface.html#ae59d8c2a3538fe1bf204bb1e8f323e33"><param name="Name" value="simul::base::BaseProfilingInterface"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1BaseProfilingInterface.html#ae59d8c2a3538fe1bf204bb1e8f323e33"><param name="Name" value="simul::base::DefaultProfiler"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1BaseProfilingInterface.html#ae59d8c2a3538fe1bf204bb1e8f323e33"><param name="Name" value="simul::base::GpuProfilingInterface"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1BaseProfilingInterface.html#ae59d8c2a3538fe1bf204bb1e8f323e33"><param name="Name" value="simul::base::ProfilingInterface"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1BaseProfilingInterface.html#ae59d8c2a3538fe1bf204bb1e8f323e33"><param name="Name" value="simul::crossplatform::GpuProfilingInterface"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1Profiler.html#a0fa1ab300bac21cc2db26b6eecf81e2d"><param name="Name" value="simul::dx11::Profiler"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1EnvironmentVariables.html#ad5ae49d858de544327bf97fe358bb859"><param name="Name" value="GetExecutableDirectory"></OBJECT>
@@ -718,7 +719,7 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1opengl_1_1RenderPlatform.html#a7607d2df0885a12dbd1049cc6230ac23"><param name="Name" value="GetGlslangValidation"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a6af0288bccf19258839eaf8b8a4871e6"><param name="Name" value="GetGodraysSteps"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1base.html#ab9603a6beb7d0ead53b10e263347cf6c"><param name="Name" value="GetGpuProfilingInterface"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a30c1e36d179d9ef4808ac7b2744bd2c0"><param name="Name" value="GetGpuProfilingInterface"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyKeyframer.html#a0f8fdf6cb643058fbf25526a4ad0f5bc"><param name="Name" value="GetGpuSkyParameters"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudNode.html#a1f41b02937af377f155803ab7f0ec0da"><param name="Name" value="GetGrid"></OBJECT>
   <UL>
@@ -989,9 +990,9 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1ProfilingInterface.html#a6d90c9251354241302f59e66d03f1a26"><param name="Name" value="GetMaxLevel"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1ProfilingInterface.html#a6d90c9251354241302f59e66d03f1a26"><param name="Name" value="simul::base::DefaultProfiler"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1GpuProfilingInterface.html#a4eb14d82a41bbd9cc8166370ebc70664"><param name="Name" value="simul::base::GpuProfilingInterface"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1ProfilingInterface.html#a6d90c9251354241302f59e66d03f1a26"><param name="Name" value="simul::base::ProfilingInterface"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1GpuProfilingInterface.html#a4eb14d82a41bbd9cc8166370ebc70664"><param name="Name" value="simul::dx11::Profiler"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#aa7a4e0aed572e5d74e23fc98a9ca98fe"><param name="Name" value="simul::crossplatform::GpuProfilingInterface"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#aa7a4e0aed572e5d74e23fc98a9ca98fe"><param name="Name" value="simul::dx11::Profiler"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a86085fd1e22014ed7accb7c93da46b58"><param name="Name" value="GetMaxParticles"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#ada5a012b73e057b93387ab47f073d592"><param name="Name" value="GetMaxPrecipitationParticles"></OBJECT>
@@ -2336,7 +2337,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudGeometryHelper.html#aee7107117241b5c7306175c5241628f9"><param name="Name" value="SetFrustum"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1opengl_1_1RenderPlatform.html#a25242589753344f5e629b10647161fc4"><param name="Name" value="SetGlslangValidation"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a4c2a60d3209a3d9200ac3035cd66912d"><param name="Name" value="SetGodraysSteps"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1base.html#a4821ae671860e00f4a6144255a863ee6"><param name="Name" value="SetGpuProfilingInterface"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a97bd4c6a9b481a57974a9b2caf85e099"><param name="Name" value="SetGpuProfilingInterface"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudGridInterface.html#a35aaea06421b0fecbdad73e273bc2120"><param name="Name" value="SetGrid"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudGridInterface.html#a35aaea06421b0fecbdad73e273bc2120"><param name="Name" value="simul::clouds::CellularCloudGrid"></OBJECT>
@@ -2459,9 +2460,9 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1ProfilingInterface.html#a5c7de10d6d974ac501332404b36e8064"><param name="Name" value="SetMaxLevel"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1ProfilingInterface.html#a5c7de10d6d974ac501332404b36e8064"><param name="Name" value="simul::base::DefaultProfiler"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1GpuProfilingInterface.html#a11312710ffdf4ff82fc2df5f5958f200"><param name="Name" value="simul::base::GpuProfilingInterface"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1ProfilingInterface.html#a5c7de10d6d974ac501332404b36e8064"><param name="Name" value="simul::base::ProfilingInterface"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1GpuProfilingInterface.html#a11312710ffdf4ff82fc2df5f5958f200"><param name="Name" value="simul::dx11::Profiler"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#a1727cd854f1cbb43e52e7bf347f56f96"><param name="Name" value="simul::crossplatform::GpuProfilingInterface"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#a1727cd854f1cbb43e52e7bf347f56f96"><param name="Name" value="simul::dx11::Profiler"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a5514afcc0962a4ae7b7c2ca6dfffa319"><param name="Name" value="SetMaxParticles"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a33e4ff72c8ce6c69e238f70a7a608142"><param name="Name" value="SetMaxPrecipitationParticles"></OBJECT>
@@ -2979,17 +2980,6 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1FileLoader.html#a6357955ad6d3e43d76adb786f44c5c7b"><param name="Name" value="Save"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1FileLoader.html#a03e7a35033f97665ff86ac368c5d85ed"><param name="Name" value="SetFileLoader"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1GpuProfilingInterface.html"><param name="Name" value="simul::base::GpuProfilingInterface"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1GpuProfilingInterface.html#aa30fe42766cd33347345ab5cfc5c9470"><param name="Name" value="Begin"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1GpuProfilingInterface.html#ae13f3f4b70318b8e0e4b1b4dbb892c88"><param name="Name" value="End"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1GpuProfilingInterface.html#a38c97b86b24b01b225572bfbc73bb53e"><param name="Name" value="EndFrame"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1GpuProfilingInterface.html#a8f2cf041f91d25808ce5d25844f97f9b"><param name="Name" value="GetDebugText"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1GpuProfilingInterface.html#ae59d8c2a3538fe1bf204bb1e8f323e33"><param name="Name" value="GetEvent"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1GpuProfilingInterface.html#a4eb14d82a41bbd9cc8166370ebc70664"><param name="Name" value="GetMaxLevel"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1GpuProfilingInterface.html#a11312710ffdf4ff82fc2df5f5958f200"><param name="Name" value="SetMaxLevel"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1GpuProfilingInterface.html#a01ae7cc3bc6a4e1ff29169ac7fdc9df3"><param name="Name" value="StartFrame"></OBJECT>
-  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1MemoryInterface.html"><param name="Name" value="simul::base::MemoryInterface"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1MemoryInterface.html#abb9cf3eb3ce599d730fa40a29424a09e"><param name="Name" value="Allocate"></OBJECT>
@@ -3037,14 +3027,12 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1base.html#ae28e726b0ae50c4c0552e4c790172484"><param name="Name" value="find_and_replace"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1base.html#acf7a738812d3a4606b1564e2e0b8207c"><param name="Name" value="GetFeatureLevel"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1base.html#ab9603a6beb7d0ead53b10e263347cf6c"><param name="Name" value="GetGpuProfilingInterface"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1base.html#a2736c8fefcae3a7fe23645dd84b69f01"><param name="Name" value="GetLicenceInfo"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1base.html#af074d8683cc9a312ed1b6edd370dce33"><param name="Name" value="GetMaximumFeatureLevel"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1base.html#a62bae082e52cb6c75eb0f9d5694f5fba"><param name="Name" value="GetProfilingInterface"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1base.html#aa39d142f4ef4fab60f3bf875c8c7013e"><param name="Name" value="GetUseExternalTextures"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1base.html#abc63e254b9c66f72cfec8a747b916e2b"><param name="Name" value="QuickFormat"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1base.html#a78f18408dee7179d096eae78e5bcabe8"><param name="Name" value="SetFeatureLevel"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1base.html#a4821ae671860e00f4a6144255a863ee6"><param name="Name" value="SetGpuProfilingInterface"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1base.html#a9fcc41a591adc1c69a44054a57370345"><param name="Name" value="SetProfilingInterface"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1base.html#a6bf88d52dfbb916a7d121196bcc372bc"><param name="Name" value="SetUseExternalTextures"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1base.html#a92f6bef69302722fc0bfbb21ea738981"><param name="Name" value="split"></OBJECT>
@@ -3904,6 +3892,17 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Effect.html#a95f90ea474e9cf85b32f26ce6316b408"><param name="Name" value="UnbindTextures"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1EffectTechniqueGroup.html"><param name="Name" value="simul::crossplatform::EffectTechniqueGroup"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html"><param name="Name" value="simul::crossplatform::GpuProfilingInterface"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#a93cd98b76eba1dd5956b5154b9717e89"><param name="Name" value="Begin"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#af7ddb9db83e9d182053e2d83106d42e5"><param name="Name" value="End"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#aee42b1dcf15230f3fe3a4dd8d748747e"><param name="Name" value="EndFrame"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#aa057d60cddaf5f9816cc26e432e75926"><param name="Name" value="GetDebugText"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#ae59d8c2a3538fe1bf204bb1e8f323e33"><param name="Name" value="GetEvent"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#aa7a4e0aed572e5d74e23fc98a9ca98fe"><param name="Name" value="GetMaxLevel"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#a1727cd854f1cbb43e52e7bf347f56f96"><param name="Name" value="SetMaxLevel"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#aec96d2d198cf3a80b33c0f871857051b"><param name="Name" value="StartFrame"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Layout.html"><param name="Name" value="simul::crossplatform::Layout"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1LensFlare.html"><param name="Name" value="simul::crossplatform::LensFlare"></OBJECT>
   <UL>
@@ -3950,6 +3949,10 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1crossplatform_1_1MouseCameraInput.html"><param name="Name" value="simul::crossplatform::MouseCameraInput"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1crossplatform_1_1MouseCameraState.html"><param name="Name" value="simul::crossplatform::MouseCameraState"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1PlatformStructuredBuffer.html"><param name="Name" value="simul::crossplatform::PlatformStructuredBuffer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1crossplatform_1_1Query.html"><param name="Name" value="simul::crossplatform::Query"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1crossplatform_1_1Query.html#a2832853f03b6223cc74807091a3f41de"><param name="Name" value="GetData"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html"><param name="Name" value="simul::crossplatform::RenderPlatform"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#a41511aa8e73ed2f5e5a98f16e2faa8b8"><param name="Name" value="ActivateRenderTargets"></OBJECT>
@@ -4022,12 +4025,14 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a325b9bba7be512d1f625c4ceea2b798c"><param name="Name" value="DrawGrid"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a2e761a25e6f8fb3675568ab788cc0b17"><param name="Name" value="GetCameraPosVector"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a9b34a100e7adbc2a4001533ed788ec69"><param name="Name" value="GetCommandLineParams"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a30c1e36d179d9ef4808ac7b2744bd2c0"><param name="Name" value="GetGpuProfilingInterface"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a502a2ec7e0fd9de9627d3df8d6dc5cbc"><param name="Name" value="MakeCentredViewProjMatrix"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a16981dc69db4d6ed41a6a51d8cafe9ac"><param name="Name" value="MakeInvViewProjMatrix"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#af48addf25e647ba80e905b2d628b52b0"><param name="Name" value="MakeInvWorldViewProjMatrix"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a56fe06aaa7e7c57a377c48ef99d0e755"><param name="Name" value="MakeViewProjMatrix"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#ac1f2e6b896281a06195eb44853999e69"><param name="Name" value="MakeWorldViewProjMatrix"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a3384172e390763ce0f9d6f58e3a0bcd0a1fcd87c6f10e871a5aeb9797895d270a"><param name="Name" value="PROJECTION"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a97bd4c6a9b481a57974a9b2caf85e099"><param name="Name" value="SetGpuProfilingInterface"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#acd76431ec45b4f38fbe3f5f93b262a78"><param name="Name" value="ViewportToTexCoordsXYWH"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1dx11.html"><param name="Name" value="simul::dx11"></OBJECT>
@@ -4074,15 +4079,15 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1Profiler.html"><param name="Name" value="simul::dx11::Profiler"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1Profiler.html#ac185e80d207ea6db2727f992248c103a"><param name="Name" value="Begin"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1Profiler.html#a2a5fe9246ec46e679c6346fa50265b94"><param name="Name" value="Begin"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1Profiler.html#a08334b4aaea71cbf7c28b1c0da65f9d8"><param name="Name" value="End"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1Profiler.html#aaea74a30848b239b73362aad8b425325"><param name="Name" value="EndFrame"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1Profiler.html#a00273974b141808b963b5e96a402adad"><param name="Name" value="EndFrame"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1Profiler.html#a356462b60ec07b356638d13648c9bf2b"><param name="Name" value="GetDebugText"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1Profiler.html#a0fa1ab300bac21cc2db26b6eecf81e2d"><param name="Name" value="GetEvent"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1Profiler.html#a4eb14d82a41bbd9cc8166370ebc70664"><param name="Name" value="GetMaxLevel"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1Profiler.html#aa7a4e0aed572e5d74e23fc98a9ca98fe"><param name="Name" value="GetMaxLevel"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1Profiler.html#a5e37fe74ef58017ec993db4f6e4a93d2"><param name="Name" value="Initialize"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1Profiler.html#a11312710ffdf4ff82fc2df5f5958f200"><param name="Name" value="SetMaxLevel"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1Profiler.html#a201f6edfb94efb057d589a482019d4b1"><param name="Name" value="StartFrame"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1Profiler.html#a1727cd854f1cbb43e52e7bf347f56f96"><param name="Name" value="SetMaxLevel"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1Profiler.html#aa294ae6c7d8bac421e34fe206ded4f13"><param name="Name" value="StartFrame"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1Profiler.html#a8b99759bc8089ae0f0ef86c1ae1a5b0c"><param name="Name" value="Uninitialize"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1RenderPlatform.html"><param name="Name" value="simul::dx11::RenderPlatform"></OBJECT>
@@ -5057,9 +5062,9 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1DefaultProfiler.html#a0e6423802e1483e079bc5d8ec0a698d6"><param name="Name" value="StartFrame"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1DefaultProfiler.html#a0e6423802e1483e079bc5d8ec0a698d6"><param name="Name" value="simul::base::DefaultProfiler"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1GpuProfilingInterface.html#a01ae7cc3bc6a4e1ff29169ac7fdc9df3"><param name="Name" value="simul::base::GpuProfilingInterface"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1ProfilingInterface.html#a3f7c617359d37baa7143015c355ec7ec"><param name="Name" value="simul::base::ProfilingInterface"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1Profiler.html#a201f6edfb94efb057d589a482019d4b1"><param name="Name" value="simul::dx11::Profiler"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#aec96d2d198cf3a80b33c0f871857051b"><param name="Name" value="simul::crossplatform::GpuProfilingInterface"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1Profiler.html#aa294ae6c7d8bac421e34fe206ded4f13"><param name="Name" value="simul::dx11::Profiler"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1Timer.html#a56318aa7a88a576ff6e84d5acebd1122"><param name="Name" value="StartTime"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudNode.html#a4ccb8f8ad7c94e1dba6bfe402c152143"><param name="Name" value="StateStreamIn"></OBJECT>
