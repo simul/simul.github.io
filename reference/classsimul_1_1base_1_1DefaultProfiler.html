@@ -85,14 +85,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   ...
   simul::base::SetProfilingInterface(&amp;cpuProfiler);
 </pre><p>Per-frame, at the start of the frame: </p><pre class="fragment">  SIMUL_COMBINED_PROFILE_STARTFRAME(deviceContext.platform_context)
-</pre><p>Wrap these around anything you want to measure: </p><pre class="fragment"> SIMUL_COMBINED_PROFILE_START(deviceContext.platform_context,"Element name")
- SIMUL_COMBINED_PROFILE_END(deviceContext.platform_context)
-</pre><p>At frame-end: </p><pre class="fragment">  SIMUL_COMBINED_PROFILE_END(deviceContext.platform_context)
+</pre><p>Wrap these around anything you want to measure: </p><pre class="fragment"> SIMUL_COMBINED_PROFILE_START(deviceContext,"Element name")
+ SIMUL_COMBINED_PROFILE_END(deviceContext)
+</pre><p>At frame-end: </p><pre class="fragment">  SIMUL_COMBINED_PROFILE_END(deviceContext)
 </pre><p>To obtain the profiling results </p><pre class="fragment">  cpuProfiler.SetMaxLevel(any number from 0 up);
   const char *text=cpuProfiler.GetDebugText(false);
 </pre><p>and print this text to screen. </p>
 
-<p>Definition at line <a class="el" href="ProfilingInterface_8h_source.html#l00223">223</a> of file <a class="el" href="ProfilingInterface_8h_source.html">ProfilingInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="ProfilingInterface_8h_source.html#l00128">128</a> of file <a class="el" href="ProfilingInterface_8h_source.html">ProfilingInterface.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="af50cd69364d89c9d4174c1b6f5eaa5f6"></a>
 <div class="memitem">
@@ -153,7 +153,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 <p>Reimplemented in <a class="el" href="classsimul_1_1dx11_1_1Profiler.html#a0fa1ab300bac21cc2db26b6eecf81e2d">simul::dx11::Profiler</a>.</p>
 
-<p>Definition at line <a class="el" href="ProfilingInterface_8h_source.html#l00044">44</a> of file <a class="el" href="ProfilingInterface_8h_source.html">ProfilingInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="ProfilingInterface_8h_source.html#l00063">63</a> of file <a class="el" href="ProfilingInterface_8h_source.html">ProfilingInterface.h</a>.</p>
 
 </div>
 </div>
@@ -165,6 +165,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Thu Dec 3 2015 07:46:28</small></address>
+Wed Dec 9 2015 07:46:28</small></address>
 </body>
 </html>

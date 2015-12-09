@@ -46,40 +46,40 @@ url: simul::dx11::Profiler Class Reference
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac185e80d207ea6db2727f992248c103a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac185e80d207ea6db2727f992248c103a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1dx11_1_1Profiler.html#ac185e80d207ea6db2727f992248c103a">Begin</a> (void *context, const char *name)</td></tr>
-<tr class="memdesc:ac185e80d207ea6db2727f992248c103a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the start of a render profiling block. Some API's require a context pointer. <br /></td></tr>
-<tr class="separator:ac185e80d207ea6db2727f992248c103a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a5fe9246ec46e679c6346fa50265b94"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a5fe9246ec46e679c6346fa50265b94"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1dx11_1_1Profiler.html#a2a5fe9246ec46e679c6346fa50265b94">Begin</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, const char *name)</td></tr>
+<tr class="memdesc:a2a5fe9246ec46e679c6346fa50265b94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the start of a render profiling block. Some API's require a context pointer. <br /></td></tr>
+<tr class="separator:a2a5fe9246ec46e679c6346fa50265b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08334b4aaea71cbf7c28b1c0da65f9d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08334b4aaea71cbf7c28b1c0da65f9d8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1dx11_1_1Profiler.html#a08334b4aaea71cbf7c28b1c0da65f9d8">End</a> ()</td></tr>
 <tr class="memdesc:a08334b4aaea71cbf7c28b1c0da65f9d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the end of the current render profiling block. <br /></td></tr>
 <tr class="separator:a08334b4aaea71cbf7c28b1c0da65f9d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaea74a30848b239b73362aad8b425325"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaea74a30848b239b73362aad8b425325"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1dx11_1_1Profiler.html#aaea74a30848b239b73362aad8b425325">EndFrame</a> (void *context)</td></tr>
-<tr class="memdesc:aaea74a30848b239b73362aad8b425325"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this at the end of the frame to prepare the data to be read. <br /></td></tr>
-<tr class="separator:aaea74a30848b239b73362aad8b425325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00273974b141808b963b5e96a402adad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00273974b141808b963b5e96a402adad"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1dx11_1_1Profiler.html#a00273974b141808b963b5e96a402adad">EndFrame</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext)</td></tr>
+<tr class="memdesc:a00273974b141808b963b5e96a402adad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this at the end of the frame to prepare the data to be read. <br /></td></tr>
+<tr class="separator:a00273974b141808b963b5e96a402adad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a356462b60ec07b356638d13648c9bf2b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a356462b60ec07b356638d13648c9bf2b"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1dx11_1_1Profiler.html#a356462b60ec07b356638d13648c9bf2b">GetDebugText</a> (base::TextStyle style=base::PLAINTEXT) const </td></tr>
 <tr class="memdesc:a356462b60ec07b356638d13648c9bf2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all the active profilers as a text report. <br /></td></tr>
 <tr class="separator:a356462b60ec07b356638d13648c9bf2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fa1ab300bac21cc2db26b6eecf81e2d"><td class="memItemLeft" align="right" valign="top">const base::ProfileData *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1dx11_1_1Profiler.html#a0fa1ab300bac21cc2db26b6eecf81e2d">GetEvent</a> (const base::ProfileData *parent, int i) const </td></tr>
 <tr class="separator:a0fa1ab300bac21cc2db26b6eecf81e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4eb14d82a41bbd9cc8166370ebc70664"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4eb14d82a41bbd9cc8166370ebc70664"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1GpuProfilingInterface.html#a4eb14d82a41bbd9cc8166370ebc70664">GetMaxLevel</a> () const </td></tr>
-<tr class="memdesc:a4eb14d82a41bbd9cc8166370ebc70664"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this to get the maximum level of the profiling tree. <br /></td></tr>
-<tr class="separator:a4eb14d82a41bbd9cc8166370ebc70664"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7a4e0aed572e5d74e23fc98a9ca98fe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa7a4e0aed572e5d74e23fc98a9ca98fe"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#aa7a4e0aed572e5d74e23fc98a9ca98fe">GetMaxLevel</a> () const </td></tr>
+<tr class="memdesc:aa7a4e0aed572e5d74e23fc98a9ca98fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this to get the maximum level of the profiling tree. <br /></td></tr>
+<tr class="separator:aa7a4e0aed572e5d74e23fc98a9ca98fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e37fe74ef58017ec993db4f6e4a93d2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e37fe74ef58017ec993db4f6e4a93d2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1dx11_1_1Profiler.html#a5e37fe74ef58017ec993db4f6e4a93d2">Initialize</a> (ID3D11Device *device)</td></tr>
 <tr class="memdesc:a5e37fe74ef58017ec993db4f6e4a93d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this when the profiler is to be initialized with a device pointer - must be done before use. <br /></td></tr>
 <tr class="separator:a5e37fe74ef58017ec993db4f6e4a93d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11312710ffdf4ff82fc2df5f5958f200"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11312710ffdf4ff82fc2df5f5958f200"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1GpuProfilingInterface.html#a11312710ffdf4ff82fc2df5f5958f200">SetMaxLevel</a> (int m)</td></tr>
-<tr class="memdesc:a11312710ffdf4ff82fc2df5f5958f200"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this to set the maximum level of the profiling tree. <br /></td></tr>
-<tr class="separator:a11312710ffdf4ff82fc2df5f5958f200"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a201f6edfb94efb057d589a482019d4b1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a201f6edfb94efb057d589a482019d4b1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1dx11_1_1Profiler.html#a201f6edfb94efb057d589a482019d4b1">StartFrame</a> (void *context)</td></tr>
-<tr class="memdesc:a201f6edfb94efb057d589a482019d4b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this at the start of the frame to reset values. <br /></td></tr>
-<tr class="separator:a201f6edfb94efb057d589a482019d4b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1727cd854f1cbb43e52e7bf347f56f96"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1727cd854f1cbb43e52e7bf347f56f96"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#a1727cd854f1cbb43e52e7bf347f56f96">SetMaxLevel</a> (int m)</td></tr>
+<tr class="memdesc:a1727cd854f1cbb43e52e7bf347f56f96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this to set the maximum level of the profiling tree. <br /></td></tr>
+<tr class="separator:a1727cd854f1cbb43e52e7bf347f56f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa294ae6c7d8bac421e34fe206ded4f13"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa294ae6c7d8bac421e34fe206ded4f13"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1dx11_1_1Profiler.html#aa294ae6c7d8bac421e34fe206ded4f13">StartFrame</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext)</td></tr>
+<tr class="memdesc:aa294ae6c7d8bac421e34fe206ded4f13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this at the start of the frame to reset values. <br /></td></tr>
+<tr class="separator:aa294ae6c7d8bac421e34fe206ded4f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b99759bc8089ae0f0ef86c1ae1a5b0c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b99759bc8089ae0f0ef86c1ae1a5b0c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1dx11_1_1Profiler.html#a8b99759bc8089ae0f0ef86c1ae1a5b0c">Uninitialize</a> ()</td></tr>
 <tr class="memdesc:a8b99759bc8089ae0f0ef86c1ae1a5b0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this when the profiler is to be shut-down, or the device pointer has been lost or changed. <br /></td></tr>
@@ -91,11 +91,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </pre><p>On shutdown, or whenever the device is changed or lost: </p><pre class="fragment">  simul::dx11::Profiler::GetGlobalProfiler().Uninitialize();
 </pre><p>Per-frame, at the start of the frame: </p><pre class="fragment">  simul::base::SetGpuProfilingInterface(deviceContext.platform_context,&amp;simul::dx11::Profiler::GetGlobalProfiler());
   SIMUL_COMBINED_PROFILE_STARTFRAME(deviceContext.platform_context)
-</pre><p>Wrap these around anything you want to measure: </p><pre class="fragment"> SIMUL_COMBINED_PROFILE_START(deviceContext.platform_context,"Element name")
- SIMUL_COMBINED_PROFILE_END(deviceContext.platform_context)
-</pre><p>At frame-end: </p><pre class="fragment">  SIMUL_COMBINED_PROFILE_END(deviceContext.platform_context)
+</pre><p>Wrap these around anything you want to measure: </p><pre class="fragment"> SIMUL_COMBINED_PROFILE_START(deviceContext,"Element name")
+ SIMUL_COMBINED_PROFILE_END(deviceContext)
+</pre><p>At frame-end: </p><pre class="fragment">  SIMUL_COMBINED_PROFILE_END(deviceContext)
 </pre><p>To obtain the profiling results - pass true if you want HTML output: </p><pre class="fragment">  const char *text=simul::dx11::Profiler::GetGlobalProfiler().GetDebugText(as_html);</pre> 
-<p>Definition at line <a class="el" href="DirectX11_2Profiler_8h_source.html#l00079">79</a> of file <a class="el" href="DirectX11_2Profiler_8h_source.html">Profiler.h</a>.</p>
+<p>Definition at line <a class="el" href="DirectX11_2Profiler_8h_source.html#l00081">81</a> of file <a class="el" href="DirectX11_2Profiler_8h_source.html">Profiler.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a0fa1ab300bac21cc2db26b6eecf81e2d"></a>
 <div class="memitem">
@@ -142,6 +142,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Thu Dec 3 2015 07:46:28</small></address>
+Wed Dec 9 2015 07:46:28</small></address>
 </body>
 </html>
