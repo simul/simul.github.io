@@ -61,6 +61,10 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1opengl_1_1RenderPlatform.html#a36a8c03f85206213d950c06506cd7617">ActivateRenderTargets</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, int num, crossplatform::Texture **targs, crossplatform::Texture *depth)</td></tr>
 <tr class="memdesc:a36a8c03f85206213d950c06506cd7617"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make the specified rendertargets and optional depth target active. <br /></td></tr>
 <tr class="separator:a36a8c03f85206213d950c06506cd7617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a763c06ea4a66290c5fec8b7824b7c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a763c06ea4a66290c5fec8b7824b7c4"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#a8a763c06ea4a66290c5fec8b7824b7c4">BeginEvent</a> (DeviceContext &amp;deviceContext, const char *name)</td></tr>
+<tr class="memdesc:a8a763c06ea4a66290c5fec8b7824b7c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">For platforms that support named events, e.g. PIX in DirectX. Use <a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#a8a763c06ea4a66290c5fec8b7824b7c4" title="For platforms that support named events, e.g. PIX in DirectX. Use BeginEvent(), EndEvent() as pairs...">BeginEvent()</a>, <a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#aa6b6bdcd7342dadad16d57eb44bdfe82" title="For platforms that support named events, e.g. PIX in DirectX. Use BeginEvent(), EndEvent() as pairs...">EndEvent()</a> as pairs. <br /></td></tr>
+<tr class="separator:a8a763c06ea4a66290c5fec8b7824b7c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c3a232e38606eb10742e74af59f7613"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c3a232e38606eb10742e74af59f7613"></a>
 crossplatform::Buffer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1opengl_1_1RenderPlatform.html#a4c3a232e38606eb10742e74af59f7613">CreateBuffer</a> ()</td></tr>
 <tr class="memdesc:a4c3a232e38606eb10742e74af59f7613"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a platform-specific buffer instance - e.g. vertex buffers, index buffers etc. <br /></td></tr>
@@ -133,6 +137,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1opengl_1_1RenderPlatform.html#a3d4f3cd6be81e98f51742868bd3f082f">DrawIndexed</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, int num_indices, int start_index=0, int base_vertex=0)</td></tr>
 <tr class="memdesc:a3d4f3cd6be81e98f51742868bd3f082f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the specified number of vertices using the bound index arrays. <br /></td></tr>
 <tr class="separator:a3d4f3cd6be81e98f51742868bd3f082f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6b6bdcd7342dadad16d57eb44bdfe82"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa6b6bdcd7342dadad16d57eb44bdfe82"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#aa6b6bdcd7342dadad16d57eb44bdfe82">EndEvent</a> (DeviceContext &amp;deviceContext)</td></tr>
+<tr class="memdesc:aa6b6bdcd7342dadad16d57eb44bdfe82"><td class="mdescLeft">&#160;</td><td class="mdescRight">For platforms that support named events, e.g. PIX in DirectX. Use <a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#a8a763c06ea4a66290c5fec8b7824b7c4" title="For platforms that support named events, e.g. PIX in DirectX. Use BeginEvent(), EndEvent() as pairs...">BeginEvent()</a>, <a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#aa6b6bdcd7342dadad16d57eb44bdfe82" title="For platforms that support named events, e.g. PIX in DirectX. Use BeginEvent(), EndEvent() as pairs...">EndEvent()</a> as pairs. <br /></td></tr>
+<tr class="separator:aa6b6bdcd7342dadad16d57eb44bdfe82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae31210652b369919725f0081a6174d4d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae31210652b369919725f0081a6174d4d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1opengl_1_1RenderPlatform.html#ae31210652b369919725f0081a6174d4d">EnsureEffectIsBuilt</a> (const char *filename_utf8, const std::vector&lt; <a class="el" href="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1EffectDefineOptions">crossplatform::EffectDefineOptions</a> &gt; &amp;options)</td></tr>
 <tr class="memdesc:ae31210652b369919725f0081a6174d4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called to ensure that the named shader is compiled with all the possible combinations of #define's given in <em>options</em>. <br /></td></tr>
@@ -414,6 +422,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Wed Dec 9 2015 07:46:28</small></address>
+Thu Dec 10 2015 07:50:12</small></address>
 </body>
 </html>
