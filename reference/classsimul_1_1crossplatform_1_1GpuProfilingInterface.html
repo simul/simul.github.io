@@ -67,14 +67,14 @@ virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class
 <tr class="separator:aa057d60cddaf5f9816cc26e432e75926"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae59d8c2a3538fe1bf204bb1e8f323e33"><td class="memItemLeft" align="right" valign="top">virtual const ProfileData *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1BaseProfilingInterface.html#ae59d8c2a3538fe1bf204bb1e8f323e33">GetEvent</a> (const ProfileData *, int) const </td></tr>
 <tr class="separator:ae59d8c2a3538fe1bf204bb1e8f323e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7a4e0aed572e5d74e23fc98a9ca98fe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa7a4e0aed572e5d74e23fc98a9ca98fe"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#aa7a4e0aed572e5d74e23fc98a9ca98fe">GetMaxLevel</a> () const </td></tr>
-<tr class="memdesc:aa7a4e0aed572e5d74e23fc98a9ca98fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this to get the maximum level of the profiling tree. <br /></td></tr>
-<tr class="separator:aa7a4e0aed572e5d74e23fc98a9ca98fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1727cd854f1cbb43e52e7bf347f56f96"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1727cd854f1cbb43e52e7bf347f56f96"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#a1727cd854f1cbb43e52e7bf347f56f96">SetMaxLevel</a> (int m)</td></tr>
-<tr class="memdesc:a1727cd854f1cbb43e52e7bf347f56f96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this to set the maximum level of the profiling tree. <br /></td></tr>
-<tr class="separator:a1727cd854f1cbb43e52e7bf347f56f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38c7a8173f246603e7a70926ed56ba2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38c7a8173f246603e7a70926ed56ba2d"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1BaseProfilingInterface.html#a38c7a8173f246603e7a70926ed56ba2d">GetMaxLevel</a> () const </td></tr>
+<tr class="memdesc:a38c7a8173f246603e7a70926ed56ba2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this to get the maximum level of the profiling tree. <br /></td></tr>
+<tr class="separator:a38c7a8173f246603e7a70926ed56ba2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61f26aa1c78d306c372160bc68c15dd9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61f26aa1c78d306c372160bc68c15dd9"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1BaseProfilingInterface.html#a61f26aa1c78d306c372160bc68c15dd9">SetMaxLevel</a> (int m)</td></tr>
+<tr class="memdesc:a61f26aa1c78d306c372160bc68c15dd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this to set the maximum level of the profiling tree. <br /></td></tr>
+<tr class="separator:a61f26aa1c78d306c372160bc68c15dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec96d2d198cf3a80b33c0f871857051b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec96d2d198cf3a80b33c0f871857051b"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#aec96d2d198cf3a80b33c0f871857051b">StartFrame</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext)=0</td></tr>
 <tr class="memdesc:aec96d2d198cf3a80b33c0f871857051b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this at the start of the frame to reset values. <br /></td></tr>
@@ -83,7 +83,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A virtual interface base class for GPU performance measurement. </p>
 
-<p>Definition at line <a class="el" href="GpuProfiler_8h_source.html#l00012">12</a> of file <a class="el" href="GpuProfiler_8h_source.html">GpuProfiler.h</a>.</p>
+<p>Definition at line <a class="el" href="GpuProfiler_8h_source.html#l00014">14</a> of file <a class="el" href="GpuProfiler_8h_source.html">GpuProfiler.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ae59d8c2a3538fe1bf204bb1e8f323e33"></a>
 <div class="memitem">
@@ -118,9 +118,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 <p>Get profile data for the event at index i. Returns NULL for i&lt;0 or i&gt;= number of events. Null parent means the top-level events. </p>
 
-<p>Reimplemented in <a class="el" href="classsimul_1_1dx11_1_1Profiler.html#a0fa1ab300bac21cc2db26b6eecf81e2d">simul::dx11::Profiler</a>.</p>
+<p>Reimplemented in <a class="el" href="classsimul_1_1base_1_1DefaultProfiler.html#a1804d42a2084c495cbea377046cd53d4">simul::base::DefaultProfiler</a>, and <a class="el" href="classsimul_1_1crossplatform_1_1GpuProfiler.html#abc728bf189c6565ef722e05db77dd583">simul::crossplatform::GpuProfiler</a>.</p>
 
-<p>Definition at line <a class="el" href="ProfilingInterface_8h_source.html#l00063">63</a> of file <a class="el" href="ProfilingInterface_8h_source.html">ProfilingInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="ProfilingInterface_8h_source.html#l00075">75</a> of file <a class="el" href="ProfilingInterface_8h_source.html">ProfilingInterface.h</a>.</p>
 
 </div>
 </div>
@@ -132,6 +132,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Wed Dec 9 2015 07:46:28</small></address>
+Thu Dec 10 2015 07:50:12</small></address>
 </body>
 </html>

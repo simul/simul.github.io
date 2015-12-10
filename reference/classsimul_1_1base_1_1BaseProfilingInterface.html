@@ -38,7 +38,7 @@ url: simul::base::BaseProfilingInterface Class Reference
 <a href="classsimul_1_1base_1_1BaseProfilingInterface-members.html">List of all members</a> &#124;
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">simul::base::BaseProfilingInterface Class Reference</div>  </div>
+<div class="title">simul::base::BaseProfilingInterface Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -51,11 +51,19 @@ url: simul::base::BaseProfilingInterface Class Reference
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae59d8c2a3538fe1bf204bb1e8f323e33"><td class="memItemLeft" align="right" valign="top">virtual const ProfileData *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1BaseProfilingInterface.html#ae59d8c2a3538fe1bf204bb1e8f323e33">GetEvent</a> (const ProfileData *, int) const </td></tr>
 <tr class="separator:ae59d8c2a3538fe1bf204bb1e8f323e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38c7a8173f246603e7a70926ed56ba2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38c7a8173f246603e7a70926ed56ba2d"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1BaseProfilingInterface.html#a38c7a8173f246603e7a70926ed56ba2d">GetMaxLevel</a> () const </td></tr>
+<tr class="memdesc:a38c7a8173f246603e7a70926ed56ba2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this to get the maximum level of the profiling tree. <br /></td></tr>
+<tr class="separator:a38c7a8173f246603e7a70926ed56ba2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61f26aa1c78d306c372160bc68c15dd9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61f26aa1c78d306c372160bc68c15dd9"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1BaseProfilingInterface.html#a61f26aa1c78d306c372160bc68c15dd9">SetMaxLevel</a> (int m)</td></tr>
+<tr class="memdesc:a61f26aa1c78d306c372160bc68c15dd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this to set the maximum level of the profiling tree. <br /></td></tr>
+<tr class="separator:a61f26aa1c78d306c372160bc68c15dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A virtual interface base class for classes that can profile for performance. </p>
 
-<p>Definition at line <a class="el" href="ProfilingInterface_8h_source.html#l00058">58</a> of file <a class="el" href="ProfilingInterface_8h_source.html">ProfilingInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="ProfilingInterface_8h_source.html#l00062">62</a> of file <a class="el" href="ProfilingInterface_8h_source.html">ProfilingInterface.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ae59d8c2a3538fe1bf204bb1e8f323e33"></a>
 <div class="memitem">
@@ -90,9 +98,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Get profile data for the event at index i. Returns NULL for i&lt;0 or i&gt;= number of events. Null parent means the top-level events. </p>
 
-<p>Reimplemented in <a class="el" href="classsimul_1_1dx11_1_1Profiler.html#a0fa1ab300bac21cc2db26b6eecf81e2d">simul::dx11::Profiler</a>.</p>
+<p>Reimplemented in <a class="el" href="classsimul_1_1base_1_1DefaultProfiler.html#a1804d42a2084c495cbea377046cd53d4">simul::base::DefaultProfiler</a>, and <a class="el" href="classsimul_1_1crossplatform_1_1GpuProfiler.html#abc728bf189c6565ef722e05db77dd583">simul::crossplatform::GpuProfiler</a>.</p>
 
-<p>Definition at line <a class="el" href="ProfilingInterface_8h_source.html#l00063">63</a> of file <a class="el" href="ProfilingInterface_8h_source.html">ProfilingInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="ProfilingInterface_8h_source.html#l00075">75</a> of file <a class="el" href="ProfilingInterface_8h_source.html">ProfilingInterface.h</a>.</p>
 
 </div>
 </div>
@@ -104,6 +112,6 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Wed Dec 9 2015 07:46:28</small></address>
+Thu Dec 10 2015 07:50:09</small></address>
 </body>
 </html>

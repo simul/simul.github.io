@@ -62,7 +62,9 @@
               <section title="simul::base::ProfilingInterface" ref="classsimul_1_1base_1_1ProfilingInterface.html">
                 <section title="simul::base::DefaultProfiler" ref="classsimul_1_1base_1_1DefaultProfiler.html" />
               </section>
-              <section title="simul::crossplatform::GpuProfilingInterface" ref="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html" />
+              <section title="simul::crossplatform::GpuProfilingInterface" ref="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html">
+                <section title="simul::crossplatform::GpuProfiler" ref="classsimul_1_1crossplatform_1_1GpuProfiler.html" />
+              </section>
             </section>
             <section title="simul::crossplatform::BaseRenderer" ref="classsimul_1_1crossplatform_1_1BaseRenderer.html">
               <section title="simul::sky::BaseSkyRenderer" ref="classsimul_1_1sky_1_1BaseSkyRenderer.html" />
@@ -95,6 +97,7 @@
             <section title="simul::crossplatform::DeviceContext" ref="structsimul_1_1crossplatform_1_1DeviceContext.html" />
             <section title="Direct3D11CallbackInterface" ref="classDirect3D11CallbackInterface.html" />
             <section title="simul::dx11::Direct3D11Manager" ref="classsimul_1_1dx11_1_1Direct3D11Manager.html" />
+            <section title="simul::crossplatform::DisjointQueryStruct" ref="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1DisjointQueryStruct" />
             <section title="simul::sky::EarthShadow" ref="namespacesimul_1_1sky.html#structsimul_1_1sky_1_1EarthShadow" />
             <section title="simul::crossplatform::Effect" ref="classsimul_1_1crossplatform_1_1Effect.html">
               <section title="simul::opengl::Effect" ref="classsimul_1_1opengl_1_1Effect.html" />
@@ -150,7 +153,6 @@
             <section title="simul::clouds::PointSource" ref="namespacesimul_1_1clouds.html#structsimul_1_1clouds_1_1PointSource" />
             <section title="simul::crossplatform::PosColourVertex" ref="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1PosColourVertex" />
             <section title="simul::clouds::PrecipitationRegion" ref="structsimul_1_1clouds_1_1PrecipitationRegion.html" />
-            <section title="simul::dx11::Profiler" ref="classsimul_1_1dx11_1_1Profiler.html" />
             <section title="simul::math::Quaternion" ref="classsimul_1_1math_1_1Quaternion.html" />
             <section title="simul::crossplatform::Query" ref="structsimul_1_1crossplatform_1_1Query.html" />
             <section title="simul::base::Referenced" ref="classsimul_1_1base_1_1Referenced.html">
@@ -204,8 +206,8 @@
               <section title="simul::math::VirtualVector" ref="classsimul_1_1math_1_1VirtualVector.html" />
             </section>
             <section title="simul::math::Vector3" ref="classsimul_1_1math_1_1Vector3.html" />
-            <section title="Obj::VertexBuffer" ref="structObj_1_1VertexBuffer.html" />
             <section title="simul::dx11::VertexBuffer&lt; T &gt;" ref="structsimul_1_1dx11_1_1VertexBuffer.html" />
+            <section title="Obj::VertexBuffer" ref="structObj_1_1VertexBuffer.html" />
             <section title="simul::crossplatform::Viewport" ref="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1Viewport" />
             <section title="simul::crossplatform::ViewStruct" ref="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1ViewStruct" />
           </section>
@@ -281,14 +283,16 @@
       <keyword name="stringFormat" id="simul::base::stringFormat" ref="namespacesimul_1_1base.html#a22fb2ef096f90fbfb6bea2e666588ef2" />
       <keyword name="simul::base::BaseProfilingInterface" id="simul::base::BaseProfilingInterface" ref="classsimul_1_1base_1_1BaseProfilingInterface.html" />
       <keyword name="GetEvent" id="simul::base::BaseProfilingInterface::GetEvent" ref="classsimul_1_1base_1_1BaseProfilingInterface.html#ae59d8c2a3538fe1bf204bb1e8f323e33" />
+      <keyword name="GetMaxLevel" id="simul::base::BaseProfilingInterface::GetMaxLevel" ref="classsimul_1_1base_1_1BaseProfilingInterface.html#a38c7a8173f246603e7a70926ed56ba2d" />
+      <keyword name="SetMaxLevel" id="simul::base::BaseProfilingInterface::SetMaxLevel" ref="classsimul_1_1base_1_1BaseProfilingInterface.html#a61f26aa1c78d306c372160bc68c15dd9" />
       <keyword name="simul::base::DefaultProfiler" id="simul::base::DefaultProfiler" ref="classsimul_1_1base_1_1DefaultProfiler.html" />
       <keyword name="Begin" id="simul::base::DefaultProfiler::Begin" ref="classsimul_1_1base_1_1DefaultProfiler.html#ab4c45a2e98f72463956534c2352f410d" />
       <keyword name="End" id="simul::base::DefaultProfiler::End" ref="classsimul_1_1base_1_1DefaultProfiler.html#ad2716309ddc9f8d18116b7ebb604e75b" />
       <keyword name="EndFrame" id="simul::base::DefaultProfiler::EndFrame" ref="classsimul_1_1base_1_1DefaultProfiler.html#aa894143b64287878d33dfaf536b85e49" />
       <keyword name="GetDebugText" id="simul::base::DefaultProfiler::GetDebugText" ref="classsimul_1_1base_1_1DefaultProfiler.html#af50cd69364d89c9d4174c1b6f5eaa5f6" />
-      <keyword name="GetEvent" id="simul::base::DefaultProfiler::GetEvent" ref="classsimul_1_1base_1_1DefaultProfiler.html#ae59d8c2a3538fe1bf204bb1e8f323e33" />
-      <keyword name="GetMaxLevel" id="simul::base::DefaultProfiler::GetMaxLevel" ref="classsimul_1_1base_1_1DefaultProfiler.html#a6d90c9251354241302f59e66d03f1a26" />
-      <keyword name="SetMaxLevel" id="simul::base::DefaultProfiler::SetMaxLevel" ref="classsimul_1_1base_1_1DefaultProfiler.html#a5c7de10d6d974ac501332404b36e8064" />
+      <keyword name="GetEvent" id="simul::base::DefaultProfiler::GetEvent" ref="classsimul_1_1base_1_1DefaultProfiler.html#a1804d42a2084c495cbea377046cd53d4" />
+      <keyword name="GetMaxLevel" id="simul::base::DefaultProfiler::GetMaxLevel" ref="classsimul_1_1base_1_1DefaultProfiler.html#a38c7a8173f246603e7a70926ed56ba2d" />
+      <keyword name="SetMaxLevel" id="simul::base::DefaultProfiler::SetMaxLevel" ref="classsimul_1_1base_1_1DefaultProfiler.html#a61f26aa1c78d306c372160bc68c15dd9" />
       <keyword name="StartFrame" id="simul::base::DefaultProfiler::StartFrame" ref="classsimul_1_1base_1_1DefaultProfiler.html#a0e6423802e1483e079bc5d8ec0a698d6" />
       <keyword name="simul::base::EnvironmentVariables" id="simul::base::EnvironmentVariables" ref="classsimul_1_1base_1_1EnvironmentVariables.html" />
       <keyword name="GetExecutableDirectory" id="simul::base::EnvironmentVariables::GetExecutableDirectory" ref="classsimul_1_1base_1_1EnvironmentVariables.html#ad5ae49d858de544327bf97fe358bb859" />
@@ -323,8 +327,8 @@
       <keyword name="End" id="simul::base::ProfilingInterface::End" ref="classsimul_1_1base_1_1ProfilingInterface.html#a249290641f1ae464ce288fd766a2be85" />
       <keyword name="EndFrame" id="simul::base::ProfilingInterface::EndFrame" ref="classsimul_1_1base_1_1ProfilingInterface.html#a3172e473c241add225b5ce10d3c8d38f" />
       <keyword name="GetEvent" id="simul::base::ProfilingInterface::GetEvent" ref="classsimul_1_1base_1_1ProfilingInterface.html#ae59d8c2a3538fe1bf204bb1e8f323e33" />
-      <keyword name="GetMaxLevel" id="simul::base::ProfilingInterface::GetMaxLevel" ref="classsimul_1_1base_1_1ProfilingInterface.html#a6d90c9251354241302f59e66d03f1a26" />
-      <keyword name="SetMaxLevel" id="simul::base::ProfilingInterface::SetMaxLevel" ref="classsimul_1_1base_1_1ProfilingInterface.html#a5c7de10d6d974ac501332404b36e8064" />
+      <keyword name="GetMaxLevel" id="simul::base::ProfilingInterface::GetMaxLevel" ref="classsimul_1_1base_1_1ProfilingInterface.html#a38c7a8173f246603e7a70926ed56ba2d" />
+      <keyword name="SetMaxLevel" id="simul::base::ProfilingInterface::SetMaxLevel" ref="classsimul_1_1base_1_1ProfilingInterface.html#a61f26aa1c78d306c372160bc68c15dd9" />
       <keyword name="StartFrame" id="simul::base::ProfilingInterface::StartFrame" ref="classsimul_1_1base_1_1ProfilingInterface.html#a3f7c617359d37baa7143015c355ec7ec" />
       <keyword name="simul::base::Referenced" id="simul::base::Referenced" ref="classsimul_1_1base_1_1Referenced.html" />
       <keyword name="intrusive_ptr_add_ref" id="simul::base::Referenced::intrusive_ptr_add_ref" ref="classsimul_1_1base_1_1Referenced.html#aae2efb757b2dd8c02934bceb8214691c" />
@@ -362,7 +366,7 @@
       <keyword name="GetPointQuery" id="simul::clouds::BaseCloudRenderer::GetPointQuery" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a26a30f78e47caf2eab062fa6521643aa" />
       <keyword name="GetQueryIdForViewId" id="simul::clouds::BaseCloudRenderer::GetQueryIdForViewId" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#aced10a020bcc3b2df715c2006349dd04" />
       <keyword name="GetRandomTexture3D" id="simul::clouds::BaseCloudRenderer::GetRandomTexture3D" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#aac7e68f9512afaf51024107e40f7174e" />
-      <keyword name="GetSunOcclusion" id="simul::clouds::BaseCloudRenderer::GetSunOcclusion" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a282c33d9886138258b5580a27ec730e5" />
+      <keyword name="GetSunOcclusion" id="simul::clouds::BaseCloudRenderer::GetSunOcclusion" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a15147fd3431de3ea3d3f92b11f8f33c3" />
       <keyword name="InvalidateDeviceObjects" id="simul::clouds::BaseCloudRenderer::InvalidateDeviceObjects" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ac22ae70c0b4e989b60307b57bf3937c9" />
       <keyword name="IsCameraAboveCloudBase" id="simul::clouds::BaseCloudRenderer::IsCameraAboveCloudBase" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a41f9007498f3d39428d7e2d6c619fab0" />
       <keyword name="PreRenderUpdate" id="simul::clouds::BaseCloudRenderer::PreRenderUpdate" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ae15f20c0ff731ccf3cccb85a9eb4734c" />
@@ -1159,14 +1163,25 @@
       <keyword name="Unapply" id="simul::crossplatform::Effect::Unapply" ref="classsimul_1_1crossplatform_1_1Effect.html#a06d5b49a24849556844ccf4342851992" />
       <keyword name="UnbindTextures" id="simul::crossplatform::Effect::UnbindTextures" ref="classsimul_1_1crossplatform_1_1Effect.html#a95f90ea474e9cf85b32f26ce6316b408" />
       <keyword name="simul::crossplatform::EffectTechniqueGroup" id="simul::crossplatform::EffectTechniqueGroup" ref="classsimul_1_1crossplatform_1_1EffectTechniqueGroup.html" />
+      <keyword name="simul::crossplatform::GpuProfiler" id="simul::crossplatform::GpuProfiler" ref="classsimul_1_1crossplatform_1_1GpuProfiler.html" />
+      <keyword name="Begin" id="simul::crossplatform::GpuProfiler::Begin" ref="classsimul_1_1crossplatform_1_1GpuProfiler.html#ab4b284991ebe14538245e18a87c8359d" />
+      <keyword name="End" id="simul::crossplatform::GpuProfiler::End" ref="classsimul_1_1crossplatform_1_1GpuProfiler.html#ae077cf78b1c32b069c9de1085112fbfc" />
+      <keyword name="EndFrame" id="simul::crossplatform::GpuProfiler::EndFrame" ref="classsimul_1_1crossplatform_1_1GpuProfiler.html#a54521531b088e195134d37a6c26f6b24" />
+      <keyword name="GetDebugText" id="simul::crossplatform::GpuProfiler::GetDebugText" ref="classsimul_1_1crossplatform_1_1GpuProfiler.html#aad1b044f98c3939e5b45d1844048ef9e" />
+      <keyword name="GetEvent" id="simul::crossplatform::GpuProfiler::GetEvent" ref="classsimul_1_1crossplatform_1_1GpuProfiler.html#abc728bf189c6565ef722e05db77dd583" />
+      <keyword name="GetMaxLevel" id="simul::crossplatform::GpuProfiler::GetMaxLevel" ref="classsimul_1_1crossplatform_1_1GpuProfiler.html#a38c7a8173f246603e7a70926ed56ba2d" />
+      <keyword name="InvalidateDeviceObjects" id="simul::crossplatform::GpuProfiler::InvalidateDeviceObjects" ref="classsimul_1_1crossplatform_1_1GpuProfiler.html#a79e5170d614c5d7a4fabf2dd37833cfe" />
+      <keyword name="RestoreDeviceObjects" id="simul::crossplatform::GpuProfiler::RestoreDeviceObjects" ref="classsimul_1_1crossplatform_1_1GpuProfiler.html#a5e30350670fe7130d8c52a6b15ee3fad" />
+      <keyword name="SetMaxLevel" id="simul::crossplatform::GpuProfiler::SetMaxLevel" ref="classsimul_1_1crossplatform_1_1GpuProfiler.html#a61f26aa1c78d306c372160bc68c15dd9" />
+      <keyword name="StartFrame" id="simul::crossplatform::GpuProfiler::StartFrame" ref="classsimul_1_1crossplatform_1_1GpuProfiler.html#a767f045e81b44530485901e668c1e1b7" />
       <keyword name="simul::crossplatform::GpuProfilingInterface" id="simul::crossplatform::GpuProfilingInterface" ref="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html" />
       <keyword name="Begin" id="simul::crossplatform::GpuProfilingInterface::Begin" ref="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#a93cd98b76eba1dd5956b5154b9717e89" />
       <keyword name="End" id="simul::crossplatform::GpuProfilingInterface::End" ref="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#af7ddb9db83e9d182053e2d83106d42e5" />
       <keyword name="EndFrame" id="simul::crossplatform::GpuProfilingInterface::EndFrame" ref="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#aee42b1dcf15230f3fe3a4dd8d748747e" />
       <keyword name="GetDebugText" id="simul::crossplatform::GpuProfilingInterface::GetDebugText" ref="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#aa057d60cddaf5f9816cc26e432e75926" />
       <keyword name="GetEvent" id="simul::crossplatform::GpuProfilingInterface::GetEvent" ref="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#ae59d8c2a3538fe1bf204bb1e8f323e33" />
-      <keyword name="GetMaxLevel" id="simul::crossplatform::GpuProfilingInterface::GetMaxLevel" ref="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#aa7a4e0aed572e5d74e23fc98a9ca98fe" />
-      <keyword name="SetMaxLevel" id="simul::crossplatform::GpuProfilingInterface::SetMaxLevel" ref="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#a1727cd854f1cbb43e52e7bf347f56f96" />
+      <keyword name="GetMaxLevel" id="simul::crossplatform::GpuProfilingInterface::GetMaxLevel" ref="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#a38c7a8173f246603e7a70926ed56ba2d" />
+      <keyword name="SetMaxLevel" id="simul::crossplatform::GpuProfilingInterface::SetMaxLevel" ref="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#a61f26aa1c78d306c372160bc68c15dd9" />
       <keyword name="StartFrame" id="simul::crossplatform::GpuProfilingInterface::StartFrame" ref="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#aec96d2d198cf3a80b33c0f871857051b" />
       <keyword name="simul::crossplatform::Layout" id="simul::crossplatform::Layout" ref="classsimul_1_1crossplatform_1_1Layout.html" />
       <keyword name="simul::crossplatform::LensFlare" id="simul::crossplatform::LensFlare" ref="classsimul_1_1crossplatform_1_1LensFlare.html" />
@@ -1211,6 +1226,7 @@
       <keyword name="simul::crossplatform::RenderPlatform" id="simul::crossplatform::RenderPlatform" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html" />
       <keyword name="mirrorY" id="simul::crossplatform::RenderPlatform::mirrorY" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#a3eca374469ab576406ed175b1cc7743c" />
       <keyword name="ActivateRenderTargets" id="simul::crossplatform::RenderPlatform::ActivateRenderTargets" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#a41511aa8e73ed2f5e5a98f16e2faa8b8" />
+      <keyword name="BeginEvent" id="simul::crossplatform::RenderPlatform::BeginEvent" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#a8a763c06ea4a66290c5fec8b7824b7c4" />
       <keyword name="CreateBuffer" id="simul::crossplatform::RenderPlatform::CreateBuffer" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#a6879238ac9cd71b36a9454f72ffce905" />
       <keyword name="CreateEffect" id="simul::crossplatform::RenderPlatform::CreateEffect" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#ab932243b462874e6cb2d4581b0000f09" />
       <keyword name="CreateEffect" id="simul::crossplatform::RenderPlatform::CreateEffect" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#a5cb9f85e7d8debdf6c07b3f3382a8bfc" />
@@ -1230,6 +1246,7 @@
       <keyword name="DrawCircle" id="simul::crossplatform::RenderPlatform::DrawCircle" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#af17c6734037a2873a228b0c49b20d464" />
       <keyword name="DrawCircle" id="simul::crossplatform::RenderPlatform::DrawCircle" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#aefc841befa56b552a0351a2f39ede562" />
       <keyword name="DrawIndexed" id="simul::crossplatform::RenderPlatform::DrawIndexed" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#a0395ef4e8c10e5d2943fe56a1ac04481" />
+      <keyword name="EndEvent" id="simul::crossplatform::RenderPlatform::EndEvent" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#aa6b6bdcd7342dadad16d57eb44bdfe82" />
       <keyword name="EnsureEffectIsBuilt" id="simul::crossplatform::RenderPlatform::EnsureEffectIsBuilt" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#a02c50321136c7d835fbab0821959701f" />
       <keyword name="GetImmediateContext" id="simul::crossplatform::RenderPlatform::GetImmediateContext" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#a2369742236719dab6969b87ad82ff995" />
       <keyword name="GetName" id="simul::crossplatform::RenderPlatform::GetName" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#ae5f5de722c0a2ac96a4a5e567aef2c83" />
@@ -1312,20 +1329,10 @@
       <keyword name="SetFormat" id="simul::dx11::Framebuffer::SetFormat" ref="classsimul_1_1dx11_1_1Framebuffer.html#a51ddf88a8290809f40fad110e0ca907e" />
       <keyword name="SetUseFastRAM" id="simul::dx11::Framebuffer::SetUseFastRAM" ref="classsimul_1_1dx11_1_1Framebuffer.html#a66732be5b865c94c8551429427e322a0" />
       <keyword name="SetWidthAndHeight" id="simul::dx11::Framebuffer::SetWidthAndHeight" ref="classsimul_1_1dx11_1_1Framebuffer.html#a93b2507c34153ab6aa54bb702993517a" />
-      <keyword name="simul::dx11::Profiler" id="simul::dx11::Profiler" ref="classsimul_1_1dx11_1_1Profiler.html" />
-      <keyword name="Begin" id="simul::dx11::Profiler::Begin" ref="classsimul_1_1dx11_1_1Profiler.html#a2a5fe9246ec46e679c6346fa50265b94" />
-      <keyword name="End" id="simul::dx11::Profiler::End" ref="classsimul_1_1dx11_1_1Profiler.html#a08334b4aaea71cbf7c28b1c0da65f9d8" />
-      <keyword name="EndFrame" id="simul::dx11::Profiler::EndFrame" ref="classsimul_1_1dx11_1_1Profiler.html#a00273974b141808b963b5e96a402adad" />
-      <keyword name="GetDebugText" id="simul::dx11::Profiler::GetDebugText" ref="classsimul_1_1dx11_1_1Profiler.html#a356462b60ec07b356638d13648c9bf2b" />
-      <keyword name="GetEvent" id="simul::dx11::Profiler::GetEvent" ref="classsimul_1_1dx11_1_1Profiler.html#a0fa1ab300bac21cc2db26b6eecf81e2d" />
-      <keyword name="GetMaxLevel" id="simul::dx11::Profiler::GetMaxLevel" ref="classsimul_1_1dx11_1_1Profiler.html#aa7a4e0aed572e5d74e23fc98a9ca98fe" />
-      <keyword name="Initialize" id="simul::dx11::Profiler::Initialize" ref="classsimul_1_1dx11_1_1Profiler.html#a5e37fe74ef58017ec993db4f6e4a93d2" />
-      <keyword name="SetMaxLevel" id="simul::dx11::Profiler::SetMaxLevel" ref="classsimul_1_1dx11_1_1Profiler.html#a1727cd854f1cbb43e52e7bf347f56f96" />
-      <keyword name="StartFrame" id="simul::dx11::Profiler::StartFrame" ref="classsimul_1_1dx11_1_1Profiler.html#aa294ae6c7d8bac421e34fe206ded4f13" />
-      <keyword name="Uninitialize" id="simul::dx11::Profiler::Uninitialize" ref="classsimul_1_1dx11_1_1Profiler.html#a8b99759bc8089ae0f0ef86c1ae1a5b0c" />
       <keyword name="simul::dx11::RenderPlatform" id="simul::dx11::RenderPlatform" ref="classsimul_1_1dx11_1_1RenderPlatform.html" />
       <keyword name="mirrorY" id="simul::dx11::RenderPlatform::mirrorY" ref="classsimul_1_1dx11_1_1RenderPlatform.html#a3eca374469ab576406ed175b1cc7743c" />
       <keyword name="ActivateRenderTargets" id="simul::dx11::RenderPlatform::ActivateRenderTargets" ref="classsimul_1_1dx11_1_1RenderPlatform.html#a8e40501e4aaffa473cd6ac83a37e38ca" />
+      <keyword name="BeginEvent" id="simul::dx11::RenderPlatform::BeginEvent" ref="classsimul_1_1dx11_1_1RenderPlatform.html#a92aca21c7e9c01b190938a2be1bded86" />
       <keyword name="CreateBuffer" id="simul::dx11::RenderPlatform::CreateBuffer" ref="classsimul_1_1dx11_1_1RenderPlatform.html#abdbc5f5bd74d174debaa3fe99ccb0752" />
       <keyword name="CreateEffect" id="simul::dx11::RenderPlatform::CreateEffect" ref="classsimul_1_1dx11_1_1RenderPlatform.html#a463f68d4519b71da67a0b3b4b0e9327d" />
       <keyword name="CreateEffect" id="simul::dx11::RenderPlatform::CreateEffect" ref="classsimul_1_1dx11_1_1RenderPlatform.html#ab932243b462874e6cb2d4581b0000f09" />
@@ -1345,6 +1352,7 @@
       <keyword name="DrawCircle" id="simul::dx11::RenderPlatform::DrawCircle" ref="classsimul_1_1dx11_1_1RenderPlatform.html#a3f801fb549186e98e44eccf2dc7fd84b" />
       <keyword name="DrawCircle" id="simul::dx11::RenderPlatform::DrawCircle" ref="classsimul_1_1dx11_1_1RenderPlatform.html#aefc841befa56b552a0351a2f39ede562" />
       <keyword name="DrawIndexed" id="simul::dx11::RenderPlatform::DrawIndexed" ref="classsimul_1_1dx11_1_1RenderPlatform.html#a248d8fee87ecda59093cb93337071d82" />
+      <keyword name="EndEvent" id="simul::dx11::RenderPlatform::EndEvent" ref="classsimul_1_1dx11_1_1RenderPlatform.html#a565d1458b894e6aa4f5c168408becd91" />
       <keyword name="EnsureEffectIsBuilt" id="simul::dx11::RenderPlatform::EnsureEffectIsBuilt" ref="classsimul_1_1dx11_1_1RenderPlatform.html#a02c50321136c7d835fbab0821959701f" />
       <keyword name="GetImmediateContext" id="simul::dx11::RenderPlatform::GetImmediateContext" ref="classsimul_1_1dx11_1_1RenderPlatform.html#a2369742236719dab6969b87ad82ff995" />
       <keyword name="GetName" id="simul::dx11::RenderPlatform::GetName" ref="classsimul_1_1dx11_1_1RenderPlatform.html#a2a29729c1ec9ffbf74389fe6adc54574" />
@@ -1617,6 +1625,7 @@
       <keyword name="simul::opengl::RenderPlatform" id="simul::opengl::RenderPlatform" ref="classsimul_1_1opengl_1_1RenderPlatform.html" />
       <keyword name="mirrorY" id="simul::opengl::RenderPlatform::mirrorY" ref="classsimul_1_1opengl_1_1RenderPlatform.html#a3eca374469ab576406ed175b1cc7743c" />
       <keyword name="ActivateRenderTargets" id="simul::opengl::RenderPlatform::ActivateRenderTargets" ref="classsimul_1_1opengl_1_1RenderPlatform.html#a36a8c03f85206213d950c06506cd7617" />
+      <keyword name="BeginEvent" id="simul::opengl::RenderPlatform::BeginEvent" ref="classsimul_1_1opengl_1_1RenderPlatform.html#a8a763c06ea4a66290c5fec8b7824b7c4" />
       <keyword name="CreateBuffer" id="simul::opengl::RenderPlatform::CreateBuffer" ref="classsimul_1_1opengl_1_1RenderPlatform.html#a4c3a232e38606eb10742e74af59f7613" />
       <keyword name="CreateEffect" id="simul::opengl::RenderPlatform::CreateEffect" ref="classsimul_1_1opengl_1_1RenderPlatform.html#ac377451d1ed45f266ac7dd68cc7ab478" />
       <keyword name="CreateEffect" id="simul::opengl::RenderPlatform::CreateEffect" ref="classsimul_1_1opengl_1_1RenderPlatform.html#ab932243b462874e6cb2d4581b0000f09" />
@@ -1636,6 +1645,7 @@
       <keyword name="DrawCircle" id="simul::opengl::RenderPlatform::DrawCircle" ref="classsimul_1_1opengl_1_1RenderPlatform.html#a19600362c5000b3a4d384b07c614362d" />
       <keyword name="DrawCircle" id="simul::opengl::RenderPlatform::DrawCircle" ref="classsimul_1_1opengl_1_1RenderPlatform.html#aefc841befa56b552a0351a2f39ede562" />
       <keyword name="DrawIndexed" id="simul::opengl::RenderPlatform::DrawIndexed" ref="classsimul_1_1opengl_1_1RenderPlatform.html#a3d4f3cd6be81e98f51742868bd3f082f" />
+      <keyword name="EndEvent" id="simul::opengl::RenderPlatform::EndEvent" ref="classsimul_1_1opengl_1_1RenderPlatform.html#aa6b6bdcd7342dadad16d57eb44bdfe82" />
       <keyword name="EnsureEffectIsBuilt" id="simul::opengl::RenderPlatform::EnsureEffectIsBuilt" ref="classsimul_1_1opengl_1_1RenderPlatform.html#ae31210652b369919725f0081a6174d4d" />
       <keyword name="GetGlslangValidation" id="simul::opengl::RenderPlatform::GetGlslangValidation" ref="classsimul_1_1opengl_1_1RenderPlatform.html#a7607d2df0885a12dbd1049cc6230ac23" />
       <keyword name="GetImmediateContext" id="simul::opengl::RenderPlatform::GetImmediateContext" ref="classsimul_1_1opengl_1_1RenderPlatform.html#a2369742236719dab6969b87ad82ff995" />
@@ -2410,8 +2420,7 @@
       <file>OpenGLCallbackInterface_8h_source.html</file>
       <file>OpenGLRenderer_8h_source.html</file>
       <file>PrintEffectLog_8h_source.html</file>
-      <file>OpenGL_2Profiler_8h_source.html</file>
-      <file>DirectX11_2Profiler_8h_source.html</file>
+      <file>Profiler_8h_source.html</file>
       <file>SimulGLUtilities_8h_source.html</file>
       <file>FbxConverter_8h_source.html</file>
       <file>PluginTrueSkyRenderer_8h_source.html</file>
@@ -2595,6 +2604,8 @@
       <file>classsimul_1_1crossplatform_1_1Effect-members.html</file>
       <file>classsimul_1_1crossplatform_1_1EffectTechniqueGroup.html</file>
       <file>classsimul_1_1crossplatform_1_1EffectTechniqueGroup-members.html</file>
+      <file>classsimul_1_1crossplatform_1_1GpuProfiler.html</file>
+      <file>classsimul_1_1crossplatform_1_1GpuProfiler-members.html</file>
       <file>classsimul_1_1crossplatform_1_1GpuProfilingInterface.html</file>
       <file>classsimul_1_1crossplatform_1_1GpuProfilingInterface-members.html</file>
       <file>classsimul_1_1crossplatform_1_1Layout.html</file>
@@ -2628,8 +2639,6 @@
       <file>classsimul_1_1dx11_1_1Direct3D11Manager-members.html</file>
       <file>classsimul_1_1dx11_1_1Framebuffer.html</file>
       <file>classsimul_1_1dx11_1_1Framebuffer-members.html</file>
-      <file>classsimul_1_1dx11_1_1Profiler.html</file>
-      <file>classsimul_1_1dx11_1_1Profiler-members.html</file>
       <file>classsimul_1_1dx11_1_1RenderPlatform.html</file>
       <file>classsimul_1_1dx11_1_1RenderPlatform-members.html</file>
       <file>classsimul_1_1dx11_1_1TrueSkyRenderer.html</file>
