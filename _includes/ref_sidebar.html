@@ -8,7 +8,7 @@
       </h1>
       <p class="lead">{{ site.description }}</p>
     </div>
-    c
+    d
     <nav class="sidebar-nav">
       <ul>
       {% assign sorted_pages = site.pages | sort: "url" %}
@@ -81,7 +81,7 @@
                 {% assign menu_level = 1 %}
                 <ul>
                 {% for node2 in pages2 %}
-                  <li><a class="sidebar-nav-item{% if page.url == node2.url %} active{% endif %} sidebar-2" href='{{node2.url}}'>{{ titles2[forloop.index0] }}</a> {{ paths2[forloop.index0] }}</li>
+                  <li><a class="sidebar-nav-item{% if page.url == node2.url %} active{% endif %} sidebar-2" href='{{node2.url}}'>{{ titles2[forloop.index0] }}</a></li>
                   {% assign path2 = paths2[forloop.index0] %}
 
                   {% if this_path contains path2 %}
