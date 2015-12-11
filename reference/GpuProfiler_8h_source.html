@@ -63,129 +63,125 @@ url: Simul/Platform/CrossPlatform/GpuProfiler.h Source File
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keyword">extern</span> SIMUL_CROSSPLATFORM_EXPORT <a class="code" href="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html">GpuProfilingInterface</a> *<a class="code" href="namespacesimul_1_1crossplatform.html#a30c1e36d179d9ef4808ac7b2744bd2c0">GetGpuProfilingInterface</a>(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;context);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">struct </span>ProfileData;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">typedef</span> std::map&lt;std::string,base::ProfileData*&gt; ProfileMap;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">typedef</span> std::map&lt;int,base::ProfileData*&gt; ChildMap;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">struct </span>SIMUL_CROSSPLATFORM_EXPORT ProfileData:<span class="keyword">public</span> base::ProfileData</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                <a class="code" href="structsimul_1_1crossplatform_1_1Query.html">simul::crossplatform::Query</a> *DisjointQuery;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                <a class="code" href="structsimul_1_1crossplatform_1_1Query.html">simul::crossplatform::Query</a> *TimestampStartQuery;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                <a class="code" href="structsimul_1_1crossplatform_1_1Query.html">simul::crossplatform::Query</a> *TimestampEndQuery;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                ProfileData();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                ~ProfileData();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            ChildMap children;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        };</div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classsimul_1_1crossplatform_1_1GpuProfiler.html">   74</a></span>&#160;        SIMUL_CROSSPLATFORM_EXPORT_CLASS <a class="code" href="classsimul_1_1crossplatform_1_1GpuProfiler.html">GpuProfiler</a>:<span class="keyword">public</span> <a class="code" href="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html">GpuProfilingInterface</a></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">struct </span>SIMUL_CROSSPLATFORM_EXPORT ProfileData:<span class="keyword">public</span> base::ProfileData</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <a class="code" href="structsimul_1_1crossplatform_1_1Query.html">simul::crossplatform::Query</a> *DisjointQuery;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <a class="code" href="structsimul_1_1crossplatform_1_1Query.html">simul::crossplatform::Query</a> *TimestampStartQuery;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <a class="code" href="structsimul_1_1crossplatform_1_1Query.html">simul::crossplatform::Query</a> *TimestampEndQuery;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            ProfileData();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            ~ProfileData();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        };</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classsimul_1_1crossplatform_1_1GpuProfiler.html">   71</a></span>&#160;        SIMUL_CROSSPLATFORM_EXPORT_CLASS <a class="code" href="classsimul_1_1crossplatform_1_1GpuProfiler.html">GpuProfiler</a>:<span class="keyword">public</span> <a class="code" href="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html">GpuProfilingInterface</a></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1GpuProfiler.html">GpuProfiler</a>();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keyword">virtual</span> ~<a class="code" href="classsimul_1_1crossplatform_1_1GpuProfiler.html">GpuProfiler</a>();</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1GpuProfiler.html">GpuProfiler</a>();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keyword">virtual</span> ~<a class="code" href="classsimul_1_1crossplatform_1_1GpuProfiler.html">GpuProfiler</a>();</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keyword">virtual</span> ProfileData *CreateProfileData()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">            </span>{</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> ProfileData;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> RestoreDeviceObjects(<a class="code" href="classsimul_1_1crossplatform_1_1RenderPlatform.html">crossplatform::RenderPlatform</a> *r);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> InvalidateDeviceObjects();</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> Begin(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext,<span class="keyword">const</span> <span class="keywordtype">char</span> *) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> End() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> StartFrame(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> EndFrame(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *GetDebugText(simul::base::TextStyle st = simul::base::PLAINTEXT) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keyword">const</span> base::ProfileData *GetEvent(<span class="keyword">const</span> base::ProfileData *parent,<span class="keywordtype">int</span> i) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            std::string GetChildText(<span class="keyword">const</span> <span class="keywordtype">char</span> *name,std::string tab) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordtype">float</span> GetTime(<span class="keyword">const</span> std::string &amp;name) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            std::string Walk(base::ProfileData *p, <span class="keywordtype">int</span> tab, <span class="keywordtype">float</span> parent_time, base::TextStyle style) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keywordtype">int</span> level;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            __int64 currFrame;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <a class="code" href="classsimul_1_1base_1_1Timer.html">simul::base::Timer</a> timer;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keywordtype">float</span> queryTime;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1RenderPlatform.html">crossplatform::RenderPlatform</a> *renderPlatform;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            ProfileMap profileMap;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keywordtype">bool</span> enabled;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            std::vector&lt;std::string&gt; last_name;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            std::vector&lt;crossplatform::DeviceContext *&gt; last_context;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        };</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keyword">class </span>ProfileBlock</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            ProfileBlock(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;c,<a class="code" href="classsimul_1_1crossplatform_1_1GpuProfiler.html">GpuProfiler</a> *prof,<span class="keyword">const</span> std::string&amp; name);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            ~ProfileBlock();</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <span class="keywordtype">float</span> GetTime() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1GpuProfiler.html">GpuProfiler</a> *profiler;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            <a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a>* context;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            std::string name;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        };</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#ifdef SIMUL_INTERNAL_PROFILING</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        </div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">        #define SIMUL_GPU_PROFILE_STARTFRAME(ctx) \</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keyword">virtual</span> ProfileData *CreateProfileData()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">            </span>{</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> ProfileData;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> RestoreDeviceObjects(<a class="code" href="classsimul_1_1crossplatform_1_1RenderPlatform.html">crossplatform::RenderPlatform</a> *r);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> InvalidateDeviceObjects();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> Begin(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext,<span class="keyword">const</span> <span class="keywordtype">char</span> *) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> End() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> StartFrame(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> EndFrame(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *GetDebugText(simul::base::TextStyle st = simul::base::PLAINTEXT) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keyword">const</span> base::ProfileData *GetEvent(<span class="keyword">const</span> base::ProfileData *parent,<span class="keywordtype">int</span> i) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            std::string GetChildText(<span class="keyword">const</span> <span class="keywordtype">char</span> *name,std::string tab) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordtype">float</span> GetTime(<span class="keyword">const</span> std::string &amp;name) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            std::string Walk(base::ProfileData *p, <span class="keywordtype">int</span> tab, <span class="keywordtype">float</span> parent_time, base::TextStyle style) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordtype">int</span> level;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            __int64 currFrame;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <a class="code" href="classsimul_1_1base_1_1Timer.html">simul::base::Timer</a> timer;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keywordtype">float</span> queryTime;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1RenderPlatform.html">crossplatform::RenderPlatform</a> *renderPlatform;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keywordtype">bool</span> enabled;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            std::vector&lt;std::string&gt; last_name;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            std::vector&lt;crossplatform::DeviceContext *&gt; last_context;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        };</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keyword">class </span>ProfileBlock</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            ProfileBlock(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;c,<a class="code" href="classsimul_1_1crossplatform_1_1GpuProfiler.html">GpuProfiler</a> *prof,<span class="keyword">const</span> std::string&amp; name);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            ~ProfileBlock();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <span class="keywordtype">float</span> GetTime() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1GpuProfiler.html">GpuProfiler</a> *profiler;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a>* context;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            std::string name;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        };</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#ifdef SIMUL_INTERNAL_PROFILING</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">        #define SIMUL_GPU_PROFILE_STARTFRAME(ctx) \</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">            {simul::crossplatform::GpuProfilingInterface *gpuProfilingInterface=simul::crossplatform::GetGpuProfilingInterface(ctx); \</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">            if(gpuProfilingInterface) \</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">                gpuProfilingInterface-&gt;StartFrame(ctx);}</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">        #define SIMUL_GPU_PROFILE_ENDFRAME(ctx) \</span></div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">            {simul::crossplatform::GpuProfilingInterface *gpuProfilingInterface=simul::crossplatform::GetGpuProfilingInterface(ctx); \</span></div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">            if(gpuProfilingInterface) \</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">                gpuProfilingInterface-&gt;StartFrame(ctx);}</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">        #define SIMUL_GPU_PROFILE_ENDFRAME(ctx) \</span></div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor">            {simul::crossplatform::GpuProfilingInterface *gpuProfilingInterface=simul::crossplatform::GetGpuProfilingInterface(ctx); \</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor">            if(gpuProfilingInterface) \</span></div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="preprocessor">                gpuProfilingInterface-&gt;EndFrame(ctx);}</span></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        </div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor">        #define SIMUL_GPU_PROFILE_START(ctx,name) \</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">                gpuProfilingInterface-&gt;EndFrame(ctx);}</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor">        #define SIMUL_GPU_PROFILE_START(ctx,name) \</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor">            {simul::crossplatform::GpuProfilingInterface *gpuProfilingInterface=simul::crossplatform::GetGpuProfilingInterface(ctx); \</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="preprocessor">            if(gpuProfilingInterface) \</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="preprocessor">                gpuProfilingInterface-&gt;Begin(ctx,name);}</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor">        #define SIMUL_GPU_PROFILE_END(ctx) \</span></div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="preprocessor">            {simul::crossplatform::GpuProfilingInterface *gpuProfilingInterface=simul::crossplatform::GetGpuProfilingInterface(ctx); \</span></div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="preprocessor">            if(gpuProfilingInterface) \</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="preprocessor">                gpuProfilingInterface-&gt;Begin(ctx,name);}</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">        #define SIMUL_GPU_PROFILE_END(ctx) \</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor">            {simul::crossplatform::GpuProfilingInterface *gpuProfilingInterface=simul::crossplatform::GetGpuProfilingInterface(ctx); \</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">            if(gpuProfilingInterface) \</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor">                gpuProfilingInterface-&gt;End();}</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        </div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">        #define SIMUL_COMBINED_PROFILE_START(ctx,name) \</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor">            SIMUL_GPU_PROFILE_START(ctx,name) \</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">            SIMUL_PROFILE_START(name)</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">        #define SIMUL_COMBINED_PROFILE_END(ctx) \</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">            SIMUL_PROFILE_END \</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor">            SIMUL_GPU_PROFILE_END(ctx)</span></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        </div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">        #define SIMUL_COMBINED_PROFILE_STARTFRAME(ctx) \</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor">            SIMUL_GPU_PROFILE_STARTFRAME(ctx) \</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor">            SIMUL_PROFILE_STARTFRAME</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">        #define SIMUL_COMBINED_PROFILE_ENDFRAME(ctx) \</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor">            SIMUL_GPU_PROFILE_ENDFRAME(ctx) \</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">            SIMUL_PROFILE_ENDFRAME</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor">        #define SIMUL_DISABLE_PROFILING \</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="preprocessor">            #undef SIMUL_PROFILE_START \</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor">            #undef SIMUL_PROFILE_END \</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="preprocessor">            #undef SIMUL_GPU_PROFILE_START \</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="preprocessor">            #undef SIMUL_GPU_PROFILE_END \</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="preprocessor">            #define SIMUL_PROFILE_START(name) \</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="preprocessor">            #define SIMUL_PROFILE_END \</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="preprocessor">            #define SIMUL_GPU_PROFILE_START(ctx,name) \</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="preprocessor">            #define SIMUL_GPU_PROFILE_END</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="preprocessor">        #define SIMUL_PROFILE_STARTFRAME</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="preprocessor">        #define SIMUL_PROFILE_ENDFRAME</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="preprocessor">        #define SIMUL_PROFILE_START(name)</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="preprocessor">        #define SIMUL_PROFILE_END</span></div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="preprocessor">        #define SIMUL_GPU_PROFILE_STARTFRAME(ctx)</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="preprocessor">        #define SIMUL_GPU_PROFILE_ENDFRAME(ctx)</span></div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="preprocessor">        #define SIMUL_GPU_PROFILE_START(ctx,name)</span></div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="preprocessor">        #define SIMUL_GPU_PROFILE_END(ctx)</span></div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="preprocessor">        #define SIMUL_COMBINED_PROFILE_START(ctx,name)</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="preprocessor">        #define SIMUL_COMBINED_PROFILE_END(ctx)</span></div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="preprocessor">        #define SIMUL_COMBINED_PROFILE_STARTFRAME(ctx)</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="preprocessor">        #define SIMUL_COMBINED_PROFILE_ENDFRAME(ctx)</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="preprocessor">        #define SIMUL_DISABLE_PROFILING</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="classsimul_1_1crossplatform_1_1GpuProfiler_html"><div class="ttname"><a href="classsimul_1_1crossplatform_1_1GpuProfiler.html">simul::crossplatform::GpuProfiler</a></div><div class="ttdef"><b>Definition:</b> <a href="GpuProfiler_8h_source.html#l00074">GpuProfiler.h:74</a></div></div>
-<div class="ttc" id="classsimul_1_1base_1_1BaseProfilingInterface_html"><div class="ttname"><a href="classsimul_1_1base_1_1BaseProfilingInterface.html">simul::base::BaseProfilingInterface</a></div><div class="ttdoc">A virtual interface base class for classes that can profile for performance. </div><div class="ttdef"><b>Definition:</b> <a href="ProfilingInterface_8h_source.html#l00062">ProfilingInterface.h:62</a></div></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="preprocessor">                gpuProfilingInterface-&gt;End();}</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor">        #define SIMUL_COMBINED_PROFILE_START(ctx,name) \</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">            SIMUL_GPU_PROFILE_START(ctx,name) \</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor">            SIMUL_PROFILE_START(name)</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor">        #define SIMUL_COMBINED_PROFILE_END(ctx) \</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">            SIMUL_PROFILE_END \</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor">            SIMUL_GPU_PROFILE_END(ctx)</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">        #define SIMUL_COMBINED_PROFILE_STARTFRAME(ctx) \</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">            SIMUL_GPU_PROFILE_STARTFRAME(ctx) \</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor">            SIMUL_PROFILE_STARTFRAME</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">        #define SIMUL_COMBINED_PROFILE_ENDFRAME(ctx) \</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">            SIMUL_GPU_PROFILE_ENDFRAME(ctx) \</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor">            SIMUL_PROFILE_ENDFRAME</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">        #define SIMUL_DISABLE_PROFILING \</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor">            #undef SIMUL_PROFILE_START \</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">            #undef SIMUL_PROFILE_END \</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor">            #undef SIMUL_GPU_PROFILE_START \</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor">            #undef SIMUL_GPU_PROFILE_END \</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="preprocessor">            #define SIMUL_PROFILE_START(name) \</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor">            #define SIMUL_PROFILE_END \</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="preprocessor">            #define SIMUL_GPU_PROFILE_START(ctx,name) \</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="preprocessor">            #define SIMUL_GPU_PROFILE_END</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="preprocessor">        #define SIMUL_PROFILE_STARTFRAME</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="preprocessor">        #define SIMUL_PROFILE_ENDFRAME</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="preprocessor">        #define SIMUL_PROFILE_START(name)</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="preprocessor">        #define SIMUL_PROFILE_END</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="preprocessor">        #define SIMUL_GPU_PROFILE_STARTFRAME(ctx)</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="preprocessor">        #define SIMUL_GPU_PROFILE_ENDFRAME(ctx)</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="preprocessor">        #define SIMUL_GPU_PROFILE_START(ctx,name)</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="preprocessor">        #define SIMUL_GPU_PROFILE_END(ctx)</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="preprocessor">        #define SIMUL_COMBINED_PROFILE_START(ctx,name)</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="preprocessor">        #define SIMUL_COMBINED_PROFILE_END(ctx)</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="preprocessor">        #define SIMUL_COMBINED_PROFILE_STARTFRAME(ctx)</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="preprocessor">        #define SIMUL_COMBINED_PROFILE_ENDFRAME(ctx)</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="preprocessor">        #define SIMUL_DISABLE_PROFILING</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classsimul_1_1crossplatform_1_1GpuProfiler_html"><div class="ttname"><a href="classsimul_1_1crossplatform_1_1GpuProfiler.html">simul::crossplatform::GpuProfiler</a></div><div class="ttdef"><b>Definition:</b> <a href="GpuProfiler_8h_source.html#l00071">GpuProfiler.h:71</a></div></div>
+<div class="ttc" id="classsimul_1_1base_1_1BaseProfilingInterface_html"><div class="ttname"><a href="classsimul_1_1base_1_1BaseProfilingInterface.html">simul::base::BaseProfilingInterface</a></div><div class="ttdoc">A virtual interface base class for classes that can profile for performance. </div><div class="ttdef"><b>Definition:</b> <a href="ProfilingInterface_8h_source.html#l00066">ProfilingInterface.h:66</a></div></div>
 <div class="ttc" id="namespacesimul_1_1crossplatform_html_a30c1e36d179d9ef4808ac7b2744bd2c0"><div class="ttname"><a href="namespacesimul_1_1crossplatform.html#a30c1e36d179d9ef4808ac7b2744bd2c0">simul::crossplatform::GetGpuProfilingInterface</a></div><div class="ttdeci">GpuProfilingInterface * GetGpuProfilingInterface(crossplatform::DeviceContext &amp;context)</div><div class="ttdoc">Returns a pointer to the current GPU profiler. </div></div>
 <div class="ttc" id="structsimul_1_1crossplatform_1_1DeviceContext_html"><div class="ttname"><a href="structsimul_1_1crossplatform_1_1DeviceContext.html">simul::crossplatform::DeviceContext</a></div><div class="ttdef"><b>Definition:</b> <a href="DeviceContext_8h_source.html#l00022">DeviceContext.h:22</a></div></div>
 <div class="ttc" id="namespacesimul_html"><div class="ttname"><a href="namespacesimul.html">simul</a></div><div class="ttdef"><b>Definition:</b> <a href="Base_8h_source.html#l00001">Base.h:1</a></div></div>
@@ -199,6 +195,6 @@ url: Simul/Platform/CrossPlatform/GpuProfiler.h Source File
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Thu Dec 10 2015 07:50:08</small></address>
+Fri Dec 11 2015 07:46:24</small></address>
 </body>
 </html>

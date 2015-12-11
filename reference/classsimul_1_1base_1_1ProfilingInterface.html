@@ -61,6 +61,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1ProfilingInterface.html#a3172e473c241add225b5ce10d3c8d38f">EndFrame</a> ()=0</td></tr>
 <tr class="memdesc:a3172e473c241add225b5ce10d3c8d38f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this at the end of the frame to prepare the data to be read. <br /></td></tr>
 <tr class="separator:a3172e473c241add225b5ce10d3c8d38f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc6765fbbd54354e60131dadf0272b5d"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1BaseProfilingInterface.html#afc6765fbbd54354e60131dadf0272b5d">GetDebugText</a> (TextStyle st=PLAINTEXT) const </td></tr>
+<tr class="separator:afc6765fbbd54354e60131dadf0272b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae59d8c2a3538fe1bf204bb1e8f323e33"><td class="memItemLeft" align="right" valign="top">virtual const ProfileData *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1BaseProfilingInterface.html#ae59d8c2a3538fe1bf204bb1e8f323e33">GetEvent</a> (const ProfileData *, int) const </td></tr>
 <tr class="separator:ae59d8c2a3538fe1bf204bb1e8f323e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38c7a8173f246603e7a70926ed56ba2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38c7a8173f246603e7a70926ed56ba2d"></a>
@@ -79,7 +81,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classsimul_1_1base_1_1DefaultProfiler.html" title="A simple profiler using simul::base::Timer. ">simul::base::DefaultProfiler</a> inherits from <a class="el" href="classsimul_1_1base_1_1ProfilingInterface.html" title="simul::base::DefaultProfiler inherits from ProfilingInterface to measure CPU performance. ">ProfilingInterface</a> to measure CPU performance. </p>
 
-<p>Definition at line <a class="el" href="ProfilingInterface_8h_source.html#l00093">93</a> of file <a class="el" href="ProfilingInterface_8h_source.html">ProfilingInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="ProfilingInterface_8h_source.html#l00105">105</a> of file <a class="el" href="ProfilingInterface_8h_source.html">ProfilingInterface.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ae59d8c2a3538fe1bf204bb1e8f323e33"></a>
 <div class="memitem">
@@ -116,7 +118,39 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 <p>Reimplemented in <a class="el" href="classsimul_1_1base_1_1DefaultProfiler.html#a1804d42a2084c495cbea377046cd53d4">simul::base::DefaultProfiler</a>, and <a class="el" href="classsimul_1_1crossplatform_1_1GpuProfiler.html#abc728bf189c6565ef722e05db77dd583">simul::crossplatform::GpuProfiler</a>.</p>
 
-<p>Definition at line <a class="el" href="ProfilingInterface_8h_source.html#l00075">75</a> of file <a class="el" href="ProfilingInterface_8h_source.html">ProfilingInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="ProfilingInterface_8h_source.html#l00081">81</a> of file <a class="el" href="ProfilingInterface_8h_source.html">ProfilingInterface.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afc6765fbbd54354e60131dadf0272b5d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* simul::base::BaseProfilingInterface::GetDebugText </td>
+          <td>(</td>
+          <td class="paramtype">TextStyle&#160;</td>
+          <td class="paramname"><em>st</em> = <code>PLAINTEXT</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Gets the profiling report as text.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">as_html</td><td>Determines if the text should be returned as HTML, including colour formatting.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>null if it fails, else the debug text. </dd></dl>
 
 </div>
 </div>
@@ -128,6 +162,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Thu Dec 10 2015 07:50:09</small></address>
+Fri Dec 11 2015 07:46:24</small></address>
 </body>
 </html>

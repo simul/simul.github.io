@@ -206,8 +206,8 @@
               <section title="simul::math::VirtualVector" ref="classsimul_1_1math_1_1VirtualVector.html" />
             </section>
             <section title="simul::math::Vector3" ref="classsimul_1_1math_1_1Vector3.html" />
-            <section title="simul::dx11::VertexBuffer&lt; T &gt;" ref="structsimul_1_1dx11_1_1VertexBuffer.html" />
             <section title="Obj::VertexBuffer" ref="structObj_1_1VertexBuffer.html" />
+            <section title="simul::dx11::VertexBuffer&lt; T &gt;" ref="structsimul_1_1dx11_1_1VertexBuffer.html" />
             <section title="simul::crossplatform::Viewport" ref="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1Viewport" />
             <section title="simul::crossplatform::ViewStruct" ref="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1ViewStruct" />
           </section>
@@ -282,6 +282,7 @@
       <keyword name="split" id="simul::base::split" ref="namespacesimul_1_1base.html#a92f6bef69302722fc0bfbb21ea738981" />
       <keyword name="stringFormat" id="simul::base::stringFormat" ref="namespacesimul_1_1base.html#a22fb2ef096f90fbfb6bea2e666588ef2" />
       <keyword name="simul::base::BaseProfilingInterface" id="simul::base::BaseProfilingInterface" ref="classsimul_1_1base_1_1BaseProfilingInterface.html" />
+      <keyword name="GetDebugText" id="simul::base::BaseProfilingInterface::GetDebugText" ref="classsimul_1_1base_1_1BaseProfilingInterface.html#afc6765fbbd54354e60131dadf0272b5d" />
       <keyword name="GetEvent" id="simul::base::BaseProfilingInterface::GetEvent" ref="classsimul_1_1base_1_1BaseProfilingInterface.html#ae59d8c2a3538fe1bf204bb1e8f323e33" />
       <keyword name="GetMaxLevel" id="simul::base::BaseProfilingInterface::GetMaxLevel" ref="classsimul_1_1base_1_1BaseProfilingInterface.html#a38c7a8173f246603e7a70926ed56ba2d" />
       <keyword name="SetMaxLevel" id="simul::base::BaseProfilingInterface::SetMaxLevel" ref="classsimul_1_1base_1_1BaseProfilingInterface.html#a61f26aa1c78d306c372160bc68c15dd9" />
@@ -289,7 +290,7 @@
       <keyword name="Begin" id="simul::base::DefaultProfiler::Begin" ref="classsimul_1_1base_1_1DefaultProfiler.html#ab4c45a2e98f72463956534c2352f410d" />
       <keyword name="End" id="simul::base::DefaultProfiler::End" ref="classsimul_1_1base_1_1DefaultProfiler.html#ad2716309ddc9f8d18116b7ebb604e75b" />
       <keyword name="EndFrame" id="simul::base::DefaultProfiler::EndFrame" ref="classsimul_1_1base_1_1DefaultProfiler.html#aa894143b64287878d33dfaf536b85e49" />
-      <keyword name="GetDebugText" id="simul::base::DefaultProfiler::GetDebugText" ref="classsimul_1_1base_1_1DefaultProfiler.html#af50cd69364d89c9d4174c1b6f5eaa5f6" />
+      <keyword name="GetDebugText" id="simul::base::DefaultProfiler::GetDebugText" ref="classsimul_1_1base_1_1DefaultProfiler.html#afc6765fbbd54354e60131dadf0272b5d" />
       <keyword name="GetEvent" id="simul::base::DefaultProfiler::GetEvent" ref="classsimul_1_1base_1_1DefaultProfiler.html#a1804d42a2084c495cbea377046cd53d4" />
       <keyword name="GetMaxLevel" id="simul::base::DefaultProfiler::GetMaxLevel" ref="classsimul_1_1base_1_1DefaultProfiler.html#a38c7a8173f246603e7a70926ed56ba2d" />
       <keyword name="SetMaxLevel" id="simul::base::DefaultProfiler::SetMaxLevel" ref="classsimul_1_1base_1_1DefaultProfiler.html#a61f26aa1c78d306c372160bc68c15dd9" />
@@ -326,6 +327,7 @@
       <keyword name="Begin" id="simul::base::ProfilingInterface::Begin" ref="classsimul_1_1base_1_1ProfilingInterface.html#a6eb2bef676837afbbce0a432010d05c3" />
       <keyword name="End" id="simul::base::ProfilingInterface::End" ref="classsimul_1_1base_1_1ProfilingInterface.html#a249290641f1ae464ce288fd766a2be85" />
       <keyword name="EndFrame" id="simul::base::ProfilingInterface::EndFrame" ref="classsimul_1_1base_1_1ProfilingInterface.html#a3172e473c241add225b5ce10d3c8d38f" />
+      <keyword name="GetDebugText" id="simul::base::ProfilingInterface::GetDebugText" ref="classsimul_1_1base_1_1ProfilingInterface.html#afc6765fbbd54354e60131dadf0272b5d" />
       <keyword name="GetEvent" id="simul::base::ProfilingInterface::GetEvent" ref="classsimul_1_1base_1_1ProfilingInterface.html#ae59d8c2a3538fe1bf204bb1e8f323e33" />
       <keyword name="GetMaxLevel" id="simul::base::ProfilingInterface::GetMaxLevel" ref="classsimul_1_1base_1_1ProfilingInterface.html#a38c7a8173f246603e7a70926ed56ba2d" />
       <keyword name="SetMaxLevel" id="simul::base::ProfilingInterface::SetMaxLevel" ref="classsimul_1_1base_1_1ProfilingInterface.html#a61f26aa1c78d306c372160bc68c15dd9" />
