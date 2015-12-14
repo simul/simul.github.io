@@ -179,92 +179,97 @@ url: Simul/Sky/BaseSkyRenderer.h Source File
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            crossplatform::Texture*                     background_texture;</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            crossplatform::Texture*                     overrideBackgroundTexture;</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1Layout.html">crossplatform::Layout</a>*                      starsLayout;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    </div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            <a class="code" href="structsimul_1_1crossplatform_1_1Query.html">crossplatform::Query</a>                        *sunQuery;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;            <span class="keywordtype">void</span> SetConstantsForPlanet(SkyConstants &amp;skyConstants, <span class="keyword">const</span> <span class="keywordtype">float</span> *viewmatrix, <span class="keyword">const</span> <span class="keywordtype">float</span> *projmatrix, <span class="keyword">const</span> <span class="keywordtype">float</span> *dir, <span class="keywordtype">float</span> radiusRadians,<span class="keywordtype">float</span> glowRadiusMultiple</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                ,<span class="keyword">const</span> <span class="keywordtype">float</span> *colour, <span class="keyword">const</span> <span class="keywordtype">float</span> *light_dir, vec4 viewportTextureRegionXYWH,<span class="keywordtype">float</span> exposure);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    fadeTexture1</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    fadeTexture2</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        effect-&gt;<a class="code" href="classsimul_1_1crossplatform_1_1Effect.html#af483d17baa3dc8c52e423dae280689eb">SetTexture</a>(deviceContext,<span class="stringliteral">&quot;sourceTexture&quot;</span>                ,light_table);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        effect-&gt;<a class="code" href="classsimul_1_1crossplatform_1_1Effect.html#afd7b698c26cb2bbdaf0684dfcbf1e01c">SetUnorderedAccessView</a>(deviceContext,<span class="stringliteral">&quot;targetTexture&quot;</span>    ,light_table_2d);</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            <a class="code" href="structsimul_1_1crossplatform_1_1Query.html">crossplatform::Query</a>                        *sunQuery;</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            <span class="keyword">struct </span>StarVertext</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;            {</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                <span class="keywordtype">float</span> x,y,z;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                <span class="keywordtype">float</span> b;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;            };</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;            <a class="code" href="classsimul_1_1base_1_1MemoryInterface.html">simul::base::MemoryInterface</a> *memoryInterface;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1RenderPlatform.html">crossplatform::RenderPlatform</a> *renderPlatform;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">float</span> minimumStarBrightness;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;            <span class="keywordtype">float</span> interp_at_last_render;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            <span class="keywordtype">float</span> gpu_time;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            <span class="keywordtype">float</span> cpu_time;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;            <span class="keywordtype">float</span> texture_update_time;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            <span class="keywordtype">int</span> texture_cycle;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            <span class="keywordtype">int</span> num_stars;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;            StarVertext *star_vertices;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            <span class="keywordtype">bool</span> moon_enabled;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            std::map&lt;int,PlanetStruct&gt; planets;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            <a class="code" href="classsimul_1_1sky_1_1SkyKeyframer.html">simul::sky::SkyKeyframer</a> *skyKeyframer;</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;            <span class="keywordtype">float</span> sun_occlusion;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;            <span class="keywordtype">int</span> numAltitudes;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;            <span class="keywordtype">int</span> numFadeDistances,numFadeElevations;</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;            <span class="keywordtype">int</span> moon_index;</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            <span class="keyword">typedef</span> std::map&lt;int,LightingQueryResult&gt; LightingQueryResults;</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;            LightingQueryResults lightingQueryResults;</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1StructuredBuffer.html">crossplatform::StructuredBuffer&lt;LightingQueryResult&gt;</a> lightingQueryResultsSB;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1StructuredBuffer.html">crossplatform::StructuredBuffer&lt;vec3&gt;</a> lightingQueryInputs;</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;            crossplatform::Texture*         moon_texture;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            crossplatform::Texture*         overrideMoonTexture;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;            crossplatform::Texture*         flare_texture;</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;            crossplatform::Buffer*          m_pStarsVertexBuffer;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;            <span class="keywordtype">void</span> ClearIterators();</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="comment">// Make up to date with respect to keyframer:</span></div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> EnsureCorrectTextureSizes();</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            <span class="keywordtype">void</span> BuildStarsBuffer();</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> PreRenderUpdate(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext);</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> RenderIlluminationBuffer(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext);</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> EnsureTexturesAreUpToDate(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext);</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;            <span class="comment">// Get the inscatter colours from the given keyframe</span></div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;            <span class="keywordtype">void</span> GetColourTable(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, <span class="keyword">const</span> SkyKeyframe *K, int3 size, vec4 *target);</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">bool</span> Render2DFades(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext);</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;            <span class="keywordtype">void</span> Recompile();</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> EnsureTextureCycle();</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> CycleTexturesForward();</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;            simul::sky::seq_texture_iterator fade_texture_iterator[3];</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> FillFadeTextureBlocks(<span class="keywordtype">int</span> ,<span class="keywordtype">int</span> ,<span class="keywordtype">int</span> ,<span class="keywordtype">int</span> ,<span class="keywordtype">int</span> ,<span class="keywordtype">int</span> ,<span class="keywordtype">int</span> ,<span class="keyword">const</span> <span class="keywordtype">float</span> *,<span class="keyword">const</span> <span class="keywordtype">float</span> *,<span class="keyword">const</span> <span class="keywordtype">float</span> *){}</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;            </div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;            <span class="keywordtype">bool</span>        initialized;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;            <span class="keywordtype">unsigned</span>                cloud_texel_index;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;            <span class="keywordtype">void</span> FillInLightingQueries(crossplatform::DeviceContext &amp;deviceContext);</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> CreateFadeTextures();</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;            <span class="keywordtype">bool</span> GetSiderealTransform(<span class="keywordtype">float</span> *world);</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;            <span class="keywordtype">void</span> SetIlluminationConstants(EarthShadowUniforms &amp;earthShadowUniforms,SkyConstants &amp;skyConstants,<span class="keyword">const</span> <span class="keywordtype">float</span> *cam_pos);</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;            <span class="keywordtype">void</span> HighlightConstellation(crossplatform::DeviceContext &amp;deviceContext,<span class="keyword">const</span> std::string &amp;str);</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            crossplatform::PosColourVertex *lines;</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;            <span class="comment">// Map from view_id to lighting query values.</span></div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        <span class="comment">//  std::map&lt;int,LightingQueryResult&gt; lightingQueries;</span></div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        };</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    }</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;}</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="preprocessor">    #pragma warning(pop)</span></div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            <span class="keywordtype">void</span> SetConstantsForPlanet(SkyConstants &amp;skyConstants, <span class="keyword">const</span> <span class="keywordtype">float</span> *viewmatrix, <span class="keyword">const</span> <span class="keywordtype">float</span> *projmatrix, <span class="keyword">const</span> <span class="keywordtype">float</span> *dir, <span class="keywordtype">float</span> radiusRadians,<span class="keywordtype">float</span> glowRadiusMultiple</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                ,<span class="keyword">const</span> <span class="keywordtype">float</span> *colour, <span class="keyword">const</span> <span class="keywordtype">float</span> *light_dir, vec4 viewportTextureRegionXYWH,<span class="keywordtype">float</span> exposure);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;            <span class="keyword">struct </span>StarVertext</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;            {</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                <span class="keywordtype">float</span> x,y,z;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                <span class="keywordtype">float</span> b;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            };</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;            <a class="code" href="classsimul_1_1base_1_1MemoryInterface.html">simul::base::MemoryInterface</a> *memoryInterface;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1RenderPlatform.html">crossplatform::RenderPlatform</a> *renderPlatform;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">float</span> minimumStarBrightness;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;            <span class="keywordtype">float</span> interp_at_last_render;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            <span class="keywordtype">float</span> gpu_time;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            <span class="keywordtype">float</span> cpu_time;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;            <span class="keywordtype">float</span> texture_update_time;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            <span class="keywordtype">int</span> texture_cycle;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            <span class="keywordtype">int</span> num_stars;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            StarVertext *star_vertices;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;            <span class="keywordtype">bool</span> moon_enabled;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;            std::map&lt;int,PlanetStruct&gt; planets;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;            <a class="code" href="classsimul_1_1sky_1_1SkyKeyframer.html">simul::sky::SkyKeyframer</a> *skyKeyframer;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;            <span class="keywordtype">float</span> sun_occlusion;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            <span class="keywordtype">int</span> numAltitudes;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;            <span class="keywordtype">int</span> numFadeDistances,numFadeElevations;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;            <span class="keywordtype">int</span> moon_index;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;            <span class="keyword">typedef</span> std::map&lt;int,LightingQueryResult&gt; LightingQueryResults;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;            LightingQueryResults lightingQueryResults;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1StructuredBuffer.html">crossplatform::StructuredBuffer&lt;LightingQueryResult&gt;</a> lightingQueryResultsSB;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1StructuredBuffer.html">crossplatform::StructuredBuffer&lt;vec3&gt;</a> lightingQueryInputs;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;            crossplatform::Texture*         moon_texture;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;            crossplatform::Texture*         overrideMoonTexture;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;            crossplatform::Texture*         flare_texture;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;            crossplatform::Buffer*          m_pStarsVertexBuffer;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            <span class="keywordtype">void</span> ClearIterators();</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="comment">// Make up to date with respect to keyframer:</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> EnsureCorrectTextureSizes();</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;            <span class="keywordtype">void</span> BuildStarsBuffer();</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> PreRenderUpdate(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext);</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> RenderIlluminationBuffer(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext);</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> EnsureTexturesAreUpToDate(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext);</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;            <span class="comment">// Get the inscatter colours from the given keyframe</span></div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;            <span class="keywordtype">void</span> GetColourTable(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, <span class="keyword">const</span> SkyKeyframe *K, int3 size, vec4 *target);</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">bool</span> Render2DFades(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;            <span class="keywordtype">void</span> Recompile();</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> EnsureTextureCycle();</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> CycleTexturesForward();</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;            simul::sky::seq_texture_iterator fade_texture_iterator[3];</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> FillFadeTextureBlocks(<span class="keywordtype">int</span> ,<span class="keywordtype">int</span> ,<span class="keywordtype">int</span> ,<span class="keywordtype">int</span> ,<span class="keywordtype">int</span> ,<span class="keywordtype">int</span> ,<span class="keywordtype">int</span> ,<span class="keyword">const</span> <span class="keywordtype">float</span> *,<span class="keyword">const</span> <span class="keywordtype">float</span> *,<span class="keyword">const</span> <span class="keywordtype">float</span> *){}</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;            </div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;            <span class="keywordtype">bool</span>        initialized;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;            <span class="keywordtype">unsigned</span>                cloud_texel_index;</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;            <span class="keywordtype">void</span> FillInLightingQueries(crossplatform::DeviceContext &amp;deviceContext);</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> CreateFadeTextures();</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            <span class="keywordtype">bool</span> GetSiderealTransform(<span class="keywordtype">float</span> *world);</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;            <span class="keywordtype">void</span> SetIlluminationConstants(EarthShadowUniforms &amp;earthShadowUniforms,SkyConstants &amp;skyConstants,<span class="keyword">const</span> <span class="keywordtype">float</span> *cam_pos);</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;            <span class="keywordtype">void</span> HighlightConstellation(crossplatform::DeviceContext &amp;deviceContext,<span class="keyword">const</span> std::string &amp;str);</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;            crossplatform::PosColourVertex *lines;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;            <span class="comment">// Map from view_id to lighting query values.</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        <span class="comment">//  std::map&lt;int,LightingQueryResult&gt; lightingQueries;</span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        };</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    }</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;}</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="preprocessor">    #pragma warning(pop)</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="classsimul_1_1crossplatform_1_1BaseRenderer_html"><div class="ttname"><a href="classsimul_1_1crossplatform_1_1BaseRenderer.html">simul::crossplatform::BaseRenderer</a></div><div class="ttdoc">The base class for renderers. Placeholder for now. </div><div class="ttdef"><b>Definition:</b> <a href="BaseRenderer_8h_source.html#l00094">BaseRenderer.h:94</a></div></div>
-<div class="ttc" id="classsimul_1_1crossplatform_1_1Effect_html"><div class="ttname"><a href="classsimul_1_1crossplatform_1_1Effect.html">simul::crossplatform::Effect</a></div><div class="ttdoc">The cross-platform base class for shader effects. </div><div class="ttdef"><b>Definition:</b> <a href="CrossPlatform_2Effect_8h_source.html#l00462">Effect.h:462</a></div></div>
+<div class="ttc" id="classsimul_1_1crossplatform_1_1Effect_html"><div class="ttname"><a href="classsimul_1_1crossplatform_1_1Effect.html">simul::crossplatform::Effect</a></div><div class="ttdoc">The cross-platform base class for shader effects. </div><div class="ttdef"><b>Definition:</b> <a href="CrossPlatform_2Effect_8h_source.html#l00458">Effect.h:458</a></div></div>
+<div class="ttc" id="classsimul_1_1crossplatform_1_1Effect_html_af483d17baa3dc8c52e423dae280689eb"><div class="ttname"><a href="classsimul_1_1crossplatform_1_1Effect.html#af483d17baa3dc8c52e423dae280689eb">simul::crossplatform::Effect::SetTexture</a></div><div class="ttdeci">virtual void SetTexture(DeviceContext &amp;deviceContext, ShaderResource &amp;name, Texture *tex, int mip=-1)=0</div><div class="ttdoc">Set the texture for this effect. If mip is specified, the specific mipmap will be used...</div></div>
 <div class="ttc" id="classsimul_1_1crossplatform_1_1StructuredBuffer_html"><div class="ttname"><a href="classsimul_1_1crossplatform_1_1StructuredBuffer.html">simul::crossplatform::StructuredBuffer&lt; LightingQueryResult &gt;</a></div></div>
 <div class="ttc" id="classsimul_1_1sky_1_1SiderealSkyInterface_html"><div class="ttname"><a href="classsimul_1_1sky_1_1SiderealSkyInterface.html">simul::sky::SiderealSkyInterface</a></div><div class="ttdoc">An abstract interface class for a sky that is calculated using sidereal data. </div><div class="ttdef"><b>Definition:</b> <a href="SkyInterface_8h_source.html#l00201">SkyInterface.h:201</a></div></div>
 <div class="ttc" id="classsimul_1_1sky_1_1BaseSkyRenderer_html"><div class="ttname"><a href="classsimul_1_1sky_1_1BaseSkyRenderer.html">simul::sky::BaseSkyRenderer</a></div><div class="ttdoc">The base class for real-time sky renderers. </div><div class="ttdef"><b>Definition:</b> <a href="BaseSkyRenderer_8h_source.html#l00122">BaseSkyRenderer.h:122</a></div></div>
 <div class="ttc" id="classsimul_1_1sky_1_1BaseSkyInterface_html"><div class="ttname"><a href="classsimul_1_1sky_1_1BaseSkyInterface.html">simul::sky::BaseSkyInterface</a></div><div class="ttdoc">An abstract interface class for skies. </div><div class="ttdef"><b>Definition:</b> <a href="SkyInterface_8h_source.html#l00229">SkyInterface.h:229</a></div></div>
+<div class="ttc" id="classsimul_1_1crossplatform_1_1Effect_html_afd7b698c26cb2bbdaf0684dfcbf1e01c"><div class="ttname"><a href="classsimul_1_1crossplatform_1_1Effect.html#afd7b698c26cb2bbdaf0684dfcbf1e01c">simul::crossplatform::Effect::SetUnorderedAccessView</a></div><div class="ttdeci">virtual void SetUnorderedAccessView(DeviceContext &amp;deviceContext, const char *name, Texture *tex, int mip=0)=0</div><div class="ttdoc">Set the texture for read-write access by compute shaders in this effect. </div></div>
 <div class="ttc" id="classsimul_1_1sky_1_1SkyKeyframer_html"><div class="ttname"><a href="classsimul_1_1sky_1_1SkyKeyframer.html">simul::sky::SkyKeyframer</a></div><div class="ttdoc">A class that maintains sky properties and interpolates them based on keyframe values. </div><div class="ttdef"><b>Definition:</b> <a href="SkyKeyframer_8h_source.html#l00047">SkyKeyframer.h:47</a></div></div>
 <div class="ttc" id="classsimul_1_1base_1_1Referenced_html"><div class="ttname"><a href="classsimul_1_1base_1_1Referenced.html">simul::base::Referenced</a></div><div class="ttdef"><b>Definition:</b> <a href="Referenced_8h_source.html#l00015">Referenced.h:15</a></div></div>
 <div class="ttc" id="classsimul_1_1base_1_1MemoryInterface_html"><div class="ttname"><a href="classsimul_1_1base_1_1MemoryInterface.html">simul::base::MemoryInterface</a></div><div class="ttdoc">A virtual interface class for classes that can allocate and de-allocate memory. </div><div class="ttdef"><b>Definition:</b> <a href="MemoryInterface_8h_source.html#l00045">MemoryInterface.h:45</a></div></div>
 <div class="ttc" id="structsimul_1_1crossplatform_1_1DeviceContext_html"><div class="ttname"><a href="structsimul_1_1crossplatform_1_1DeviceContext.html">simul::crossplatform::DeviceContext</a></div><div class="ttdef"><b>Definition:</b> <a href="DeviceContext_8h_source.html#l00022">DeviceContext.h:22</a></div></div>
 <div class="ttc" id="classsimul_1_1sky_1_1OvercastCallback_html"><div class="ttname"><a href="classsimul_1_1sky_1_1OvercastCallback.html">simul::sky::OvercastCallback</a></div><div class="ttdoc">A virtual callback class for skies to get overcast information from cloud classes. </div><div class="ttdef"><b>Definition:</b> <a href="OvercastCallback_8h_source.html#l00017">OvercastCallback.h:17</a></div></div>
-<div class="ttc" id="namespacesimul_html"><div class="ttname"><a href="namespacesimul.html">simul</a></div><div class="ttdef"><b>Definition:</b> <a href="Base_8h_source.html#l00001">Base.h:1</a></div></div>
+<div class="ttc" id="namespacesimul_html"><div class="ttname"><a href="namespacesimul.html">simul</a></div><div class="ttdoc">Define this to enable internal calls to the profiler, if it has been set with simul::base::SetProfili...</div><div class="ttdef"><b>Definition:</b> <a href="Base_8h_source.html#l00001">Base.h:1</a></div></div>
 <div class="ttc" id="structsimul_1_1crossplatform_1_1Query_html"><div class="ttname"><a href="structsimul_1_1crossplatform_1_1Query.html">simul::crossplatform::Query</a></div><div class="ttdoc">Crossplatform GPU query class. </div><div class="ttdef"><b>Definition:</b> <a href="CrossPlatform_2Effect_8h_source.html#l00078">Effect.h:78</a></div></div>
 <div class="ttc" id="classsimul_1_1crossplatform_1_1RenderPlatform_html"><div class="ttname"><a href="classsimul_1_1crossplatform_1_1RenderPlatform.html">simul::crossplatform::RenderPlatform</a></div><div class="ttdoc">A base class for API-specific rendering. </div><div class="ttdef"><b>Definition:</b> <a href="CrossPlatform_2RenderPlatform_8h_source.html#l00082">RenderPlatform.h:82</a></div></div>
 <div class="ttc" id="classsimul_1_1sky_1_1BaseSkyRenderer_html_af582492416f61a9f0197de87c4304608"><div class="ttname"><a href="classsimul_1_1sky_1_1BaseSkyRenderer.html#af582492416f61a9f0197de87c4304608">simul::sky::BaseSkyRenderer::GetSunOcclusion</a></div><div class="ttdeci">float GetSunOcclusion() const </div><div class="ttdoc">Get a value, from zero to one, which represents how much of the sun is visible. </div><div class="ttdef"><b>Definition:</b> <a href="BaseSkyRenderer_8h_source.html#l00176">BaseSkyRenderer.h:176</a></div></div>
@@ -275,6 +280,6 @@ url: Simul/Sky/BaseSkyRenderer.h Source File
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Sun Dec 13 2015 07:47:19</small></address>
+Mon Dec 14 2015 07:47:24</small></address>
 </body>
 </html>
