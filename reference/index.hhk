@@ -271,6 +271,10 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1math_1_1Vector.html#ad02ae57dc3302f7793dae5a4892d993f"><param name="Name" value="simul::math::Vector"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1math_1_1Vector3.html#af0c60c421c72d6df13e771b9ae47976e"><param name="Name" value="simul::math::Vector3"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a66d4e03671bbf52d1204d1abb35268f9a7e9bdef78c12973080b180e980bc99a4"><param name="Name" value="CULL_FACE_BACK"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a66d4e03671bbf52d1204d1abb35268f9aebd2d18563a38d9c8527925accae8f60"><param name="Name" value="CULL_FACE_FRONT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a66d4e03671bbf52d1204d1abb35268f9a84a4fe82a13c6d6188f7252521cab943"><param name="Name" value="CULL_FACE_FRONTANDBACK"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a66d4e03671bbf52d1204d1abb35268f9a2e24f25300aa29ac174d8e3af594d93f"><param name="Name" value="CULL_FACE_NONE"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1math_1_1Vector.html#a43ee429f5aad97991e64197e8c9b51fc"><param name="Name" value="Cut"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1math_1_1Vector.html#a43ee429f5aad97991e64197e8c9b51fc"><param name="Name" value="simul::math::Vector"></OBJECT>
@@ -417,6 +421,8 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1clouds_1_1CloudKeyframe.html#a9c115961ade45f1a5e73370cb34a118a"><param name="Name" value="fractal_amplitude"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1clouds_1_1CloudKeyframe.html#aaff57d0c641b4fc963d2f994edf81943"><param name="Name" value="fractal_wavelength"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a3d2ee9efadeb2bf23fbc2cfd202c534cac6b1fedf0d498e34cdfef714cf150b3b"><param name="Name" value="FRONTFACE_CLOCKWISE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a3d2ee9efadeb2bf23fbc2cfd202c534ca4f9f64312f78a720fa18d8603f7bea2e"><param name="Name" value="FRONTFACE_COUNTERCLOCKWISE"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudNode.html#afdf4158b78babf4fc0645ad26ac251c3"><param name="Name" value="Generate"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudNode.html#afdf4158b78babf4fc0645ad26ac251c3"><param name="Name" value="simul::clouds::CellularCloudNode"></OBJECT>
@@ -1975,6 +1981,11 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a6f569ef3a71b177755dc70a44f1de828"><param name="Name" value="PluginTrueSkyRenderer"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1math_1_1VirtualVector.html#aad91b720567e66576298a126ed8428c1"><param name="Name" value="PointTo"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a490f5e58184e8c76ab6fc0bb6c42d6d6a3cc5103553e1d62bb22bcb34ebcdd77a"><param name="Name" value="POLYGON_MODE_FILL"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a490f5e58184e8c76ab6fc0bb6c42d6d6aedefe646d43bc4156a0d6207571ce691"><param name="Name" value="POLYGON_MODE_LINE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a490f5e58184e8c76ab6fc0bb6c42d6d6a7925b730554b30c329af9ed49de57c5d"><param name="Name" value="POLYGON_MODE_POINT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#aa54f27499029d8d3b2a638b7cdff7143a7f4261f435f8c6c464db471ec0885a56"><param name="Name" value="POLYGON_OFFSET_DISABLE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#aa54f27499029d8d3b2a638b7cdff7143a1ba51162517c770620394a48695a6855"><param name="Name" value="POLYGON_OFFSET_ENABLE"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#af58449a1ff9b912fad3b297d3048156d"><param name="Name" value="PopRenderTargets"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#af58449a1ff9b912fad3b297d3048156d"><param name="Name" value="simul::crossplatform::RenderPlatform"></OBJECT>
@@ -4059,7 +4070,13 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html"><param name="Name" value="simul::crossplatform"></OBJECT>
   <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a66d4e03671bbf52d1204d1abb35268f9a7e9bdef78c12973080b180e980bc99a4"><param name="Name" value="CULL_FACE_BACK"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a66d4e03671bbf52d1204d1abb35268f9aebd2d18563a38d9c8527925accae8f60"><param name="Name" value="CULL_FACE_FRONT"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a66d4e03671bbf52d1204d1abb35268f9a84a4fe82a13c6d6188f7252521cab943"><param name="Name" value="CULL_FACE_FRONTANDBACK"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a66d4e03671bbf52d1204d1abb35268f9a2e24f25300aa29ac174d8e3af594d93f"><param name="Name" value="CULL_FACE_NONE"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a325b9bba7be512d1f625c4ceea2b798c"><param name="Name" value="DrawGrid"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a3d2ee9efadeb2bf23fbc2cfd202c534cac6b1fedf0d498e34cdfef714cf150b3b"><param name="Name" value="FRONTFACE_CLOCKWISE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a3d2ee9efadeb2bf23fbc2cfd202c534ca4f9f64312f78a720fa18d8603f7bea2e"><param name="Name" value="FRONTFACE_COUNTERCLOCKWISE"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a2e761a25e6f8fb3675568ab788cc0b17"><param name="Name" value="GetCameraPosVector"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a9b34a100e7adbc2a4001533ed788ec69"><param name="Name" value="GetCommandLineParams"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a30c1e36d179d9ef4808ac7b2744bd2c0"><param name="Name" value="GetGpuProfilingInterface"></OBJECT>
@@ -4068,8 +4085,15 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#af48addf25e647ba80e905b2d628b52b0"><param name="Name" value="MakeInvWorldViewProjMatrix"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a56fe06aaa7e7c57a377c48ef99d0e755"><param name="Name" value="MakeViewProjMatrix"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#ac1f2e6b896281a06195eb44853999e69"><param name="Name" value="MakeWorldViewProjMatrix"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a490f5e58184e8c76ab6fc0bb6c42d6d6a3cc5103553e1d62bb22bcb34ebcdd77a"><param name="Name" value="POLYGON_MODE_FILL"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a490f5e58184e8c76ab6fc0bb6c42d6d6aedefe646d43bc4156a0d6207571ce691"><param name="Name" value="POLYGON_MODE_LINE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a490f5e58184e8c76ab6fc0bb6c42d6d6a7925b730554b30c329af9ed49de57c5d"><param name="Name" value="POLYGON_MODE_POINT"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#aa54f27499029d8d3b2a638b7cdff7143a7f4261f435f8c6c464db471ec0885a56"><param name="Name" value="POLYGON_OFFSET_DISABLE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#aa54f27499029d8d3b2a638b7cdff7143a1ba51162517c770620394a48695a6855"><param name="Name" value="POLYGON_OFFSET_ENABLE"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a3384172e390763ce0f9d6f58e3a0bcd0a1fcd87c6f10e871a5aeb9797895d270a"><param name="Name" value="PROJECTION"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a97bd4c6a9b481a57974a9b2caf85e099"><param name="Name" value="SetGpuProfilingInterface"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#aa8efb1c1f35c711ce69588fee6ccd816a7b066e3326dc4ada8a4334ab8217e3aa"><param name="Name" value="VIEWPORT_SCISSOR_DISABLE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#aa8efb1c1f35c711ce69588fee6ccd816aaea0ee4741deba74ad469f1799ea664e"><param name="Name" value="VIEWPORT_SCISSOR_ENABLE"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#acd76431ec45b4f38fbe3f5f93b262a78"><param name="Name" value="ViewportToTexCoordsXYWH"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1dx11.html"><param name="Name" value="simul::dx11"></OBJECT>
@@ -5244,6 +5268,8 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1math_1_1Vector3.html#a286967273614b8c49096fdf8e98b6ca3"><param name="Name" value="VectorOntoOriginPlane"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1math_1_1Vector3.html#a84b4b220d8be5d65d041b550d2736f11"><param name="Name" value="VectorOntoSurface"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structObj_1_1VertexBuffer.html#a09716eebe995240f0a0e2489120d5b76"><param name="Name" value="VertexBuffer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#aa8efb1c1f35c711ce69588fee6ccd816a7b066e3326dc4ada8a4334ab8217e3aa"><param name="Name" value="VIEWPORT_SCISSOR_DISABLE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#aa8efb1c1f35c711ce69588fee6ccd816aaea0ee4741deba74ad469f1799ea664e"><param name="Name" value="VIEWPORT_SCISSOR_ENABLE"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#acd76431ec45b4f38fbe3f5f93b262a78"><param name="Name" value="ViewportToTexCoordsXYWH"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1MixedResolutionView.html#ab6e51be595623dc4ef5bccbb61464c04"><param name="Name" value="viewType"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1clouds.html#ab79ccfe3f57cc1c3c4fef8b7f1c59d4b"><param name="Name" value="VolumeMap"></OBJECT>

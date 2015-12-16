@@ -198,113 +198,116 @@ url: Simul/Clouds/BaseCloudRenderer.h Source File
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;            <span class="keywordtype">bool</span> recompile_shaders;</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1RenderPlatform.html">crossplatform::RenderPlatform</a>   *renderPlatform;</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1Effect.html">crossplatform::Effect</a>           *effect;</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;            std::vector&lt;int3&gt; amortizeOffsets;</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;            <span class="comment">// Identify the textures etc within the effect:</span></div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;            crossplatform::ShaderResource _cloudDensity;            </div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;            crossplatform::ShaderResource _noiseTexture3D;  </div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;            crossplatform::ShaderResource _largeWorleyTexture3D;</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;            crossplatform::ShaderResource _smallWorleyTexture3D;    </div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;            crossplatform::ShaderResource _lossTexture;</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;            crossplatform::ShaderResource _inscTexture;</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;            crossplatform::ShaderResource _skylTexture;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;            crossplatform::ShaderResource _depthTexture;            </div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;            crossplatform::ShaderResource _lightTableTexture;       </div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;            crossplatform::ShaderResource _rainMapTexture;  </div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;            crossplatform::ShaderResource _illuminationTexture; </div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;            crossplatform::ShaderResource _volumeInscatterTexture;</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;            crossplatform::ShaderResource _rainbowLookupTexture;</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;            crossplatform::ShaderResource _coronaLookupTexture; </div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;            crossplatform::RenderState*                     blendAndWriteAlpha;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;            crossplatform::RenderState*                     blendAndDontWriteAlpha;</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;            crossplatform::ConstantBuffer&lt;CloudConstants&gt; cloudConstants;</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;            crossplatform::ConstantBuffer&lt;CloudPerViewConstants&gt; cloudPerViewConstants;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;            crossplatform::ConstantBuffer&lt;CloudLightpassConstants&gt; cloudLightpassConstants;</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;            <a class="code" href="classsimul_1_1base_1_1MemoryInterface.html">simul::base::MemoryInterface</a>    *memoryInterface;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> CreateNoiseTexture(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext);</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;            <span class="keywordtype">void</span> Create3DNoiseTexture(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext);</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetCloudConstants(CloudConstants &amp;cloudConstants,<span class="keywordtype">float</span> real_time);</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetCloudPerViewConstants(CloudPerViewConstants &amp;cloudPerViewConstants</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                                                    ,<span class="keyword">const</span> <a class="code" href="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1ViewStruct">crossplatform::ViewStruct</a> &amp;viewStruct</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                                                    ,<span class="keywordtype">float</span> exposure</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                                                    ,<span class="keyword">const</span> vec4&amp; viewportTextureRegionXYWH</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                                                    ,<span class="keyword">const</span> vec4&amp; mixedResTransformXYWH</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                                                    , <span class="keyword">const</span> mat4 &amp;worldToScatteringVolumeMatrix</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                                                    ,<span class="keyword">const</span> <a class="code" href="structsimul_1_1crossplatform_1_1AmortizationStruct.html">crossplatform::AmortizationStruct</a> &amp;amortizationStruct);</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetCloudShadowPerViewConstants(CloudPerViewConstants &amp;c,<a class="code" href="classsimul_1_1math_1_1Vector3.html">math::Vector3</a> cam_pos);</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;            <span class="keywordtype">void</span> FillInQueries(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext);</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;            <span class="keywordtype">void</span> ClearIterators();</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> EnsureCorrectTextureSizes();</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> EnsureTexturesAreUpToDate(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext);</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> EnsureCorrectIlluminationTextureSizes();</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> EnsureIlluminationTexturesAreUpToDate();</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> EnsureTextureCycle();</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;            simul::sky::seq_texture_iterator seq_texture_iterator[3];</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;            simul::sky::seq_texture_iterator seq_illum_texture_iterator[4];</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;            <span class="comment">//LayerConstants layerConstants;</span></div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;            <span class="keywordtype">int</span> texture_cycle;</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;            <span class="keywordtype">float</span> max_fade_distance_metres;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;            <span class="keywordtype">float</span> max_fade_altitude_metres;</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;            <span class="keywordtype">unsigned</span> noise_checksum;</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;            <span class="keywordtype">int</span> realtime_3d_octaves;</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;            </div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;            <span class="keywordtype">unsigned</span> illumination_texel_index[4];</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;            <span class="keywordtype">void</span> DetailChanged();</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;            simul::clouds::LightningRenderInterface* lightningRenderInterface;</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;            <a class="code" href="classsimul_1_1clouds_1_1CloudKeyframer.html">simul::clouds::CloudKeyframer</a>* cloudKeyframer;</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;            <a class="code" href="classsimul_1_1sky_1_1BaseSkyInterface.html">simul::sky::BaseSkyInterface</a> *skyInterface;</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;            <span class="keywordtype">int</span> cloud_tex_width_x,cloud_tex_length_y,cloud_tex_depth_z;</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;            <span class="keywordtype">int</span> illum_tex_width_x,illum_tex_length_y,illum_tex_depth_z;</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;            <span class="keywordtype">float</span> thunder_volume;</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;            <span class="keywordtype">bool</span> enable_lightning;</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;            <span class="keywordtype">float</span> last_time;</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;            <span class="keywordtype">int</span>                                         last_update_frame;</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;            <span class="keywordtype">bool</span> FailedNoiseChecksum();</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;            </div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;            crossplatform::Texture  *cloud_textures[3];</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;            crossplatform::Texture  *skyLossTexture;</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;            crossplatform::Texture  *skyInscatterTexture;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;            crossplatform::Texture  *overcInscTexture;</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;            crossplatform::Texture  *skylightTexture;</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;            crossplatform::Texture  *shadow_fb;</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;            <span class="comment">// A texture whose x-axis represents azimuth, and whose y-axis represents distance</span></div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;            <span class="comment">// as a proportion of shadow range. The texels represent how much illumination accumulates between the viewer</span></div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;            <span class="comment">// and that distance.</span></div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;            crossplatform::Texture  *cloud_texture;<span class="comment">// blended</span></div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;            <span class="comment">//crossplatform::Texture    *moisture_fb;</span></div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;            crossplatform::Texture  *rain_map;</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;            crossplatform::Texture  *largeWorleyTexture3D;</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            crossplatform::Texture  *smallWorleyTexture3D;</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;            crossplatform::Texture  *noise_texture_3D;</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;            crossplatform::Texture  *random_3d;</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;            </div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;            crossplatform::Texture  *illuminationTexture;</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;            crossplatform::Texture  *lightTableTexture;</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;            crossplatform::Texture  *rainbowLookupTexture;</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;            crossplatform::Texture  *coronaLookupTexture;</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;            crossplatform::SamplerState*    m_pWrapSamplerState;</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;            crossplatform::SamplerState*    m_pClampSamplerState;</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1StructuredBuffer.html">crossplatform::StructuredBuffer&lt;VolumeQueryResult&gt;</a> volumeQueriesSB;</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1StructuredBuffer.html">crossplatform::StructuredBuffer&lt;vec3&gt;</a> queryInputs;</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;            </div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1StructuredBuffer.html">crossplatform::StructuredBuffer&lt;LineQueryResult&gt;</a> lineQueryResultsSB;</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;            <span class="keyword">typedef</span> std::map&lt;int,simul::clouds::CloudGeometryHelper*&gt; HelperMap;</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;            HelperMap helpers;</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;            std::map&lt;int,int&gt; overrideSliceCount;</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        };</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    }</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;}</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="preprocessor">    #pragma warning(pop)</span></div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;            crossplatform::EffectTechnique  *mixCloudsTechnique;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;            std::vector&lt;int3&gt; amortizeOffsets;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;            <span class="comment">// Identify the textures etc within the effect:</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;            crossplatform::ShaderResource _cloudDensity;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;            crossplatform::ShaderResource _cloudDensity2;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;            crossplatform::ShaderResource _outputTexture3d;         </div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;            crossplatform::ShaderResource _noiseTexture3D;  </div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;            crossplatform::ShaderResource _largeWorleyTexture3D;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;            crossplatform::ShaderResource _smallWorleyTexture3D;    </div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;            crossplatform::ShaderResource _lossTexture;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;            crossplatform::ShaderResource _inscTexture;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;            crossplatform::ShaderResource _skylTexture;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;            crossplatform::ShaderResource _depthTexture;            </div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;            crossplatform::ShaderResource _lightTableTexture;       </div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;            crossplatform::ShaderResource _rainMapTexture;  </div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;            crossplatform::ShaderResource _illuminationTexture; </div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;            crossplatform::ShaderResource _volumeInscatterTexture;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;            crossplatform::ShaderResource _rainbowLookupTexture;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;            crossplatform::ShaderResource _coronaLookupTexture; </div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;            crossplatform::RenderState*                     blendAndWriteAlpha;</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;            crossplatform::RenderState*                     blendAndDontWriteAlpha;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;            crossplatform::ConstantBuffer&lt;CloudConstants&gt; cloudConstants;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            crossplatform::ConstantBuffer&lt;CloudPerViewConstants&gt; cloudPerViewConstants;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;            crossplatform::ConstantBuffer&lt;CloudLightpassConstants&gt; cloudLightpassConstants;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;            <a class="code" href="classsimul_1_1base_1_1MemoryInterface.html">simul::base::MemoryInterface</a>    *memoryInterface;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> CreateNoiseTexture(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext);</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;            <span class="keywordtype">void</span> Create3DNoiseTexture(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext);</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetCloudConstants(CloudConstants &amp;cloudConstants,<span class="keywordtype">float</span> real_time);</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetCloudPerViewConstants(CloudPerViewConstants &amp;cloudPerViewConstants</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                                                    ,<span class="keyword">const</span> <a class="code" href="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1ViewStruct">crossplatform::ViewStruct</a> &amp;viewStruct</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                                                    ,<span class="keywordtype">float</span> exposure</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                                                    ,<span class="keyword">const</span> vec4&amp; viewportTextureRegionXYWH</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                                                    ,<span class="keyword">const</span> vec4&amp; mixedResTransformXYWH</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                                                    , <span class="keyword">const</span> mat4 &amp;worldToScatteringVolumeMatrix</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                                                    ,<span class="keyword">const</span> <a class="code" href="structsimul_1_1crossplatform_1_1AmortizationStruct.html">crossplatform::AmortizationStruct</a> &amp;amortizationStruct);</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetCloudShadowPerViewConstants(CloudPerViewConstants &amp;c,<a class="code" href="classsimul_1_1math_1_1Vector3.html">math::Vector3</a> cam_pos);</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;            <span class="keywordtype">void</span> FillInQueries(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext);</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            <span class="keywordtype">void</span> ClearIterators();</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> EnsureCorrectTextureSizes();</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> EnsureTexturesAreUpToDate(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext);</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> EnsureCorrectIlluminationTextureSizes();</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> EnsureIlluminationTexturesAreUpToDate();</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> EnsureTextureCycle();</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;            simul::sky::seq_texture_iterator seq_texture_iterator[3];</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;            simul::sky::seq_texture_iterator seq_illum_texture_iterator[4];</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;            <span class="comment">//LayerConstants layerConstants;</span></div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;            <span class="keywordtype">int</span> texture_cycle;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;            <span class="keywordtype">float</span> max_fade_distance_metres;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;            <span class="keywordtype">float</span> max_fade_altitude_metres;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;            <span class="keywordtype">unsigned</span> noise_checksum;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;            <span class="keywordtype">int</span> realtime_3d_octaves;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;            </div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;            <span class="keywordtype">unsigned</span> illumination_texel_index[4];</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;            <span class="keywordtype">void</span> DetailChanged();</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;            simul::clouds::LightningRenderInterface* lightningRenderInterface;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;            <a class="code" href="classsimul_1_1clouds_1_1CloudKeyframer.html">simul::clouds::CloudKeyframer</a>* cloudKeyframer;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;            <a class="code" href="classsimul_1_1sky_1_1BaseSkyInterface.html">simul::sky::BaseSkyInterface</a> *skyInterface;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;            <span class="keywordtype">int</span> cloud_tex_width_x,cloud_tex_length_y,cloud_tex_depth_z;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;            <span class="keywordtype">int</span> illum_tex_width_x,illum_tex_length_y,illum_tex_depth_z;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;            <span class="keywordtype">float</span> thunder_volume;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;            <span class="keywordtype">bool</span> enable_lightning;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;            <span class="keywordtype">float</span> last_time;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;            <span class="keywordtype">int</span>                                         last_update_frame;</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;            <span class="keywordtype">bool</span> FailedNoiseChecksum();</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;            </div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;            crossplatform::Texture  *cloud_textures[3];</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;            crossplatform::Texture  *skyLossTexture;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;            crossplatform::Texture  *skyInscatterTexture;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;            crossplatform::Texture  *overcInscTexture;</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;            crossplatform::Texture  *skylightTexture;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;            crossplatform::Texture  *shadow_fb;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;            <span class="comment">// A texture whose x-axis represents azimuth, and whose y-axis represents distance</span></div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;            <span class="comment">// as a proportion of shadow range. The texels represent how much illumination accumulates between the viewer</span></div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;            <span class="comment">// and that distance.</span></div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;            crossplatform::Texture  *cloud_texture;<span class="comment">// blended</span></div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            <span class="comment">//crossplatform::Texture    *moisture_fb;</span></div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;            crossplatform::Texture  *rain_map;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;            crossplatform::Texture  *largeWorleyTexture3D;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;            crossplatform::Texture  *smallWorleyTexture3D;</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;            crossplatform::Texture  *noise_texture_3D;</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;            crossplatform::Texture  *random_3d;</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;            </div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;            crossplatform::Texture  *illuminationTexture;</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;            crossplatform::Texture  *lightTableTexture;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;            crossplatform::Texture  *rainbowLookupTexture;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;            crossplatform::Texture  *coronaLookupTexture;</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;            crossplatform::SamplerState*    m_pWrapSamplerState;</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;            crossplatform::SamplerState*    m_pClampSamplerState;</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1StructuredBuffer.html">crossplatform::StructuredBuffer&lt;VolumeQueryResult&gt;</a> volumeQueriesSB;</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1StructuredBuffer.html">crossplatform::StructuredBuffer&lt;vec3&gt;</a> queryInputs;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;            </div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1StructuredBuffer.html">crossplatform::StructuredBuffer&lt;LineQueryResult&gt;</a> lineQueryResultsSB;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;            <span class="keyword">typedef</span> std::map&lt;int,simul::clouds::CloudGeometryHelper*&gt; HelperMap;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;            HelperMap helpers;</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;            std::map&lt;int,int&gt; overrideSliceCount;</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        };</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    }</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;}</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="preprocessor">    #pragma warning(pop)</span></div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="namespacesimul_1_1crossplatform_html_a667774e92bf043892a3f73c9baa23c68"><div class="ttname"><a href="namespacesimul_1_1crossplatform.html#a667774e92bf043892a3f73c9baa23c68">simul::crossplatform::NearFarPass</a></div><div class="ttdeci">NearFarPass</div><div class="ttdoc">Values that represent what pass to render, be it the near pass, the far, or both: far to render targe...</div><div class="ttdef"><b>Definition:</b> <a href="BaseRenderer_8h_source.html#l00027">BaseRenderer.h:27</a></div></div>
 <div class="ttc" id="classsimul_1_1clouds_1_1BaseCloudRenderer_html"><div class="ttname"><a href="classsimul_1_1clouds_1_1BaseCloudRenderer.html">simul::clouds::BaseCloudRenderer</a></div><div class="ttdef"><b>Definition:</b> <a href="BaseCloudRenderer_8h_source.html#l00165">BaseCloudRenderer.h:165</a></div></div>
 <div class="ttc" id="classsimul_1_1clouds_1_1CloudInterface_html"><div class="ttname"><a href="classsimul_1_1clouds_1_1CloudInterface.html">simul::clouds::CloudInterface</a></div><div class="ttdoc">The virtual interface for controlling and reading cloud data. </div><div class="ttdef"><b>Definition:</b> <a href="CloudInterface_8h_source.html#l00080">CloudInterface.h:80</a></div></div>
-<div class="ttc" id="classsimul_1_1crossplatform_1_1Effect_html"><div class="ttname"><a href="classsimul_1_1crossplatform_1_1Effect.html">simul::crossplatform::Effect</a></div><div class="ttdoc">The cross-platform base class for shader effects. </div><div class="ttdef"><b>Definition:</b> <a href="CrossPlatform_2Effect_8h_source.html#l00458">Effect.h:458</a></div></div>
+<div class="ttc" id="classsimul_1_1crossplatform_1_1Effect_html"><div class="ttname"><a href="classsimul_1_1crossplatform_1_1Effect.html">simul::crossplatform::Effect</a></div><div class="ttdoc">The cross-platform base class for shader effects. </div><div class="ttdef"><b>Definition:</b> <a href="CrossPlatform_2Effect_8h_source.html#l00495">Effect.h:495</a></div></div>
 <div class="ttc" id="classsimul_1_1clouds_1_1CloudGeometryHelper_html"><div class="ttname"><a href="classsimul_1_1clouds_1_1CloudGeometryHelper.html">simul::clouds::CloudGeometryHelper</a></div><div class="ttdef"><b>Definition:</b> <a href="CloudGeometryHelper_8h_source.html#l00068">CloudGeometryHelper.h:68</a></div></div>
 <div class="ttc" id="classsimul_1_1clouds_1_1CloudKeyframer_html"><div class="ttname"><a href="classsimul_1_1clouds_1_1CloudKeyframer.html">simul::clouds::CloudKeyframer</a></div><div class="ttdef"><b>Definition:</b> <a href="CloudKeyframer_8h_source.html#l00141">CloudKeyframer.h:141</a></div></div>
 <div class="ttc" id="classsimul_1_1crossplatform_1_1StructuredBuffer_html"><div class="ttname"><a href="classsimul_1_1crossplatform_1_1StructuredBuffer.html">simul::crossplatform::StructuredBuffer&lt; VolumeQueryResult &gt;</a></div></div>
@@ -326,6 +329,6 @@ url: Simul/Clouds/BaseCloudRenderer.h Source File
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Mon Dec 14 2015 07:47:23</small></address>
+Wed Dec 16 2015 07:46:26</small></address>
 </body>
 </html>
