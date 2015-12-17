@@ -80,15 +80,15 @@ url: Simul/Platform/DirectX11/Texture.h Source File
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            }</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            ID3D11ShaderResourceView *AsD3D11ShaderResourceView(<span class="keywordtype">int</span> mip=-1)</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <span class="keywordflow">if</span>(mip&lt;0||mips&lt;=1)</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                <span class="keywordflow">return</span> shaderResourceView;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                <span class="keywordflow">if</span>(mip&lt;mips)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <span class="keywordflow">if</span>(mip&lt;0||numSrv&lt;=1)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                    <span class="keywordflow">return</span> shaderResourceView;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                <span class="keywordflow">if</span>(mip&lt;numSrv)</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                    <span class="keywordflow">return</span> mipShaderResourceViews[mip];</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            }</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            ID3D11UnorderedAccessView *AsD3D11UnorderedAccessView(<span class="keywordtype">int</span> mip=0)</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                <span class="keywordflow">if</span>(mip&lt;0||mip&gt;=mips)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                <span class="keywordflow">if</span>(mip&lt;0||mip&gt;=numUav)</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                    <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <span class="keywordflow">if</span>(!unorderedAccessViews)</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                    <span class="keywordflow">return</span> NULL;</div>
@@ -163,17 +163,19 @@ url: Simul/Platform/DirectX11/Texture.h Source File
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            D3D11_VIEWPORT              m_OldViewports[16];</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <span class="keywordtype">unsigned</span>                    num_OldViewports;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            <span class="keyword">friend</span> <span class="keyword">class </span>CubemapFramebuffer;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        };</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacestd.html">std</a></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;{</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keyword">template</span>&lt;&gt; <span class="keyword">inline</span> <span class="keywordtype">void</span> swap(simul::dx11::Texture&amp; _Left, simul::dx11::Texture&amp; _Right)</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    {</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        SIMUL_BREAK(<span class="stringliteral">&quot;No more swapping of dx11::Texture&#39;s&quot;</span>);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    }</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            <span class="keywordtype">int</span> numUav;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <span class="keywordtype">int</span> numSrv;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        };</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacestd.html">std</a></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;{</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keyword">template</span>&lt;&gt; <span class="keyword">inline</span> <span class="keywordtype">void</span> swap(simul::dx11::Texture&amp; _Left, simul::dx11::Texture&amp; _Right)</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    {</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        SIMUL_BREAK(<span class="stringliteral">&quot;No more swapping of dx11::Texture&#39;s&quot;</span>);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    }</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;}</div>
 <div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace. </div></div>
 <div class="ttc" id="namespacesimul_1_1crossplatform_html_a29c5057471bee180c1cec3a2ccdd9940"><div class="ttname"><a href="namespacesimul_1_1crossplatform.html#a29c5057471bee180c1cec3a2ccdd9940">simul::crossplatform::PixelFormat</a></div><div class="ttdeci">PixelFormat</div><div class="ttdoc">A cross-platform equivalent to the OpenGL and DirectX pixel formats. </div><div class="ttdef"><b>Definition:</b> <a href="PixelFormat_8h_source.html#l00007">PixelFormat.h:7</a></div></div>
 <div class="ttc" id="namespacesimul_html"><div class="ttname"><a href="namespacesimul.html">simul</a></div><div class="ttdoc">Define this to enable internal calls to the profiler, if it has been set with simul::base::SetProfili...</div><div class="ttdef"><b>Definition:</b> <a href="Base_8h_source.html#l00001">Base.h:1</a></div></div>
@@ -182,6 +184,6 @@ url: Simul/Platform/DirectX11/Texture.h Source File
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Wed Dec 16 2015 07:46:27</small></address>
+Thu Dec 17 2015 07:46:31</small></address>
 </body>
 </html>
