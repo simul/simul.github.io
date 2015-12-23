@@ -78,15 +78,16 @@ url: Simul/Platform/CrossPlatform/Mesh.h Source File
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> EndDraw(crossplatform::DeviceContext &amp;deviceContext) <span class="keyword">const</span>=0;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="comment">// Get the count of material groups</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordtype">int</span> GetSubMeshCount() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">int</span> VERTEX_STRIDE ;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">int</span> NORMAL_STRIDE ;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">int</span> UV_STRIDE ;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">int</span> VERTEX_STRIDE;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">int</span> NORMAL_STRIDE;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">int</span> UV_STRIDE;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">int</span> TRIANGLE_VERTEX_COUNT;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keyword">struct </span>SubMesh</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            {</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                SubMesh() : IndexOffset(0), TriangleCount(0),drawAs(AS_TRIANGLES) {}</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                <span class="keywordtype">int</span> IndexOffset;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                <span class="keywordtype">int</span> TriangleCount;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                <span class="keyword">enum</span> DrawAs {AS_TRIANGLES,AS_TRISTRIP};</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                DrawAs drawAs;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            };</div>
@@ -111,12 +112,12 @@ url: Simul/Platform/CrossPlatform/Mesh.h Source File
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="namespacesimul_html"><div class="ttname"><a href="namespacesimul.html">simul</a></div><div class="ttdoc">Define this to enable internal calls to the profiler, if it has been set with simul::base::SetProfili...</div><div class="ttdef"><b>Definition:</b> <a href="Base_8h_source.html#l00001">Base.h:1</a></div></div>
+<div class="ttc" id="namespacesimul_html"><div class="ttname"><a href="namespacesimul.html">simul</a></div><div class="ttdef"><b>Definition:</b> <a href="Base_8h_source.html#l00001">Base.h:1</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Fri Dec 18 2015 07:46:29</small></address>
+Wed Dec 23 2015 03:07:57</small></address>
 </body>
 </html>
