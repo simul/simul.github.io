@@ -159,16 +159,15 @@ url: Simul/Platform/DirectX11/Effect.h Source File
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <span class="keywordtype">void</span> SetTexture     (crossplatform::DeviceContext &amp;,crossplatform::ShaderResource &amp;shaderResource,crossplatform::Texture *t,<span class="keywordtype">int</span> mip=-1) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <span class="keywordtype">void</span> SetTexture     (crossplatform::DeviceContext &amp;deviceContext,<span class="keyword">const</span> <span class="keywordtype">char</span> *name,crossplatform::Texture *tex,<span class="keywordtype">int</span> mip=-1);</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <span class="keywordtype">void</span> SetSamplerState(crossplatform::DeviceContext&amp;,<span class="keyword">const</span> <span class="keywordtype">char</span> *name ,crossplatform::SamplerState *s);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <span class="keywordtype">void</span> SetTexture(<span class="keyword">const</span> <span class="keywordtype">char</span> *name,ID3D11ShaderResourceView *tex);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <span class="keywordtype">void</span> SetConstantBuffer(crossplatform::DeviceContext &amp;deviceContext,<span class="keyword">const</span> <span class="keywordtype">char</span> *name ,crossplatform::ConstantBufferBase *s);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <span class="keywordtype">void</span> Apply(crossplatform::DeviceContext &amp;deviceContext,crossplatform::EffectTechnique *effectTechnique,<span class="keywordtype">int</span> pass);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            <span class="keywordtype">void</span> Apply(crossplatform::DeviceContext &amp;deviceContext,crossplatform::EffectTechnique *effectTechnique,<span class="keyword">const</span> <span class="keywordtype">char</span> *pass);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            <span class="keywordtype">void</span> Reapply(crossplatform::DeviceContext &amp;deviceContext);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <span class="keywordtype">void</span> Unapply(crossplatform::DeviceContext &amp;deviceContext);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <span class="keywordtype">void</span> UnbindTextures(crossplatform::DeviceContext &amp;deviceContext);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        };</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    }</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <span class="keywordtype">void</span> SetConstantBuffer(crossplatform::DeviceContext &amp;deviceContext,<span class="keyword">const</span> <span class="keywordtype">char</span> *name ,crossplatform::ConstantBufferBase *s);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <span class="keywordtype">void</span> Apply(crossplatform::DeviceContext &amp;deviceContext,crossplatform::EffectTechnique *effectTechnique,<span class="keywordtype">int</span> pass);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <span class="keywordtype">void</span> Apply(crossplatform::DeviceContext &amp;deviceContext,crossplatform::EffectTechnique *effectTechnique,<span class="keyword">const</span> <span class="keywordtype">char</span> *pass);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            <span class="keywordtype">void</span> Reapply(crossplatform::DeviceContext &amp;deviceContext);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            <span class="keywordtype">void</span> Unapply(crossplatform::DeviceContext &amp;deviceContext);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <span class="keywordtype">void</span> UnbindTextures(crossplatform::DeviceContext &amp;deviceContext);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        };</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div>
 <div class="ttc" id="classsimul_1_1crossplatform_1_1Effect_html"><div class="ttname"><a href="classsimul_1_1crossplatform_1_1Effect.html">simul::crossplatform::Effect</a></div><div class="ttdoc">The cross-platform base class for shader effects. </div><div class="ttdef"><b>Definition:</b> <a href="CrossPlatform_2Effect_8h_source.html#l00510">Effect.h:510</a></div></div>
 <div class="ttc" id="structsimul_1_1crossplatform_1_1DeviceContext_html"><div class="ttname"><a href="structsimul_1_1crossplatform_1_1DeviceContext.html">simul::crossplatform::DeviceContext</a></div><div class="ttdef"><b>Definition:</b> <a href="DeviceContext_8h_source.html#l00022">DeviceContext.h:22</a></div></div>
 <div class="ttc" id="namespacesimul_html"><div class="ttname"><a href="namespacesimul.html">simul</a></div><div class="ttdef"><b>Definition:</b> <a href="Base_8h_source.html#l00001">Base.h:1</a></div></div>
@@ -177,6 +176,6 @@ url: Simul/Platform/DirectX11/Effect.h Source File
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Tue Dec 29 2015 07:46:29</small></address>
+Wed Dec 30 2015 07:46:29</small></address>
 </body>
 </html>
