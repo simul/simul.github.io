@@ -6,22 +6,29 @@ layout: unreal
 trueSKY Lighting
 --------------
 
-The simplest way to drive Unreal Engine lighting from trueSKY is to use the trueSKY macros. These are in the file trueSkyMacros.uasset, which is automatically copied into your project Content/TrueSky folder when you add a trueSKY Sequence Actor. It can also be found in [UE4]/Engine/Plugins/TrueSkyPlugin/Content.
+The simplest way to drive Unreal Engine lighting from trueSKY is to use the trueSKY macros. These are in the file trueSkyMacros.uasset, which is to be found in [UE4]/Engine/Plugins/TrueSkyPlugin/Content.
 
-To set the direction and colour of a Directional Light, find the trueSKYLightColourAndRotation macro, and connect references for the trueSkySequenceActor and the DirectionalLight to the inputs. Make sure that the "Exec" input is hit once per frame by an event tick. 
+To set the direction and colour of a Directional Light, find the trueSKYSun or trueSKYMoon macro, and connect a reference to the DirectionalLight to the input. Make sure that the "Exec" input is hit once per frame by an event tick. 
 
-<img src="http://docs.simul.co/unrealengine/images/MacroLightColourRotation.png" alt="Blueprint"/>
+<img src="http://docs.simul.co/unrealengine/images/trueSKYSun.png" alt="Blueprint"/>
 
-Alternatively, use the GetSunRotation and Get Sun Colour functions directly. Place a reference to the trueSKY actor, and the directional light, on the master Level Blueprint. Connect the Get Sun Rotation output from trueSKY to the Directional Light's Rotator input; and connect the Sun Colour output from trueSKY to the SetLightColor input of the light.
+Alternatively, use the TrueSkyLighting macro - this also allows time of day to be set.
 
-<img src="http://docs.simul.co/unrealengine/images/SetLightColourDirection.png" alt="Blueprint"/>
+<img src="http://docs.simul.co/unrealengine/images/trueSkyLighting.png" alt="Blueprint"/>
 
 Time of Day
 ------------
 
 To change the time of day, use the SetTime function of the trueSKY sequence actor (time is in days, from midnight on the first day (0.0):
 
-<a href="SetTime.png"><img src="http://docs.simul.co/unrealengine/images/SetTime.png" alt="Blueprint" /></a>
+<img src="http://docs.simul.co/unrealengine/images/SetTime.png" alt="Blueprint" />
+
+Transparency
+------------
+
+To correctly affect transparent objects, trueSKY will write loss and inscatter textures once per frame. Connect the textures from the (automatically created) trueSky folder, to the texture properties in the trueSKY Sequence Actor to enable this.
+
+<img src="http://docs.simul.co/unrealengine/images/TrueSkyRenderTargets.png" alt="Blueprint" />
 
 Queries
 -------
