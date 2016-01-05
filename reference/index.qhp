@@ -1170,8 +1170,8 @@
       <keyword name="SetSamplerState" id="simul::crossplatform::Effect::SetSamplerState" ref="classsimul_1_1crossplatform_1_1Effect.html#a31169b54fa083b3d4fcf04975e51a555" />
       <keyword name="SetTexture" id="simul::crossplatform::Effect::SetTexture" ref="classsimul_1_1crossplatform_1_1Effect.html#af483d17baa3dc8c52e423dae280689eb" />
       <keyword name="SetTexture" id="simul::crossplatform::Effect::SetTexture" ref="classsimul_1_1crossplatform_1_1Effect.html#a1bc51995850642813dee1156c772b2db" />
-      <keyword name="SetUnorderedAccessView" id="simul::crossplatform::Effect::SetUnorderedAccessView" ref="classsimul_1_1crossplatform_1_1Effect.html#afd7b698c26cb2bbdaf0684dfcbf1e01c" />
-      <keyword name="SetUnorderedAccessView" id="simul::crossplatform::Effect::SetUnorderedAccessView" ref="classsimul_1_1crossplatform_1_1Effect.html#acb259ad746a9bc6538caec0e22742a08" />
+      <keyword name="SetUnorderedAccessView" id="simul::crossplatform::Effect::SetUnorderedAccessView" ref="classsimul_1_1crossplatform_1_1Effect.html#a9c60d50ad54f12fa67088c2052925cd0" />
+      <keyword name="SetUnorderedAccessView" id="simul::crossplatform::Effect::SetUnorderedAccessView" ref="classsimul_1_1crossplatform_1_1Effect.html#a468109e044c9239ca0bdcec8e2447be5" />
       <keyword name="Unapply" id="simul::crossplatform::Effect::Unapply" ref="classsimul_1_1crossplatform_1_1Effect.html#a06d5b49a24849556844ccf4342851992" />
       <keyword name="UnbindTextures" id="simul::crossplatform::Effect::UnbindTextures" ref="classsimul_1_1crossplatform_1_1Effect.html#a95f90ea474e9cf85b32f26ce6316b408" />
       <keyword name="simul::crossplatform::EffectTechniqueGroup" id="simul::crossplatform::EffectTechniqueGroup" ref="classsimul_1_1crossplatform_1_1EffectTechniqueGroup.html" />

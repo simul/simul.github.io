@@ -2877,9 +2877,9 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a63d8e5ab9248b17237042dfe543e0088"><param name="Name" value="simul::clouds::CloudKeyframer"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyKeyframer.html#aedda8d0017496421b509bc9ecc4f9dd1"><param name="Name" value="simul::sky::SkyKeyframer"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Effect.html#afd7b698c26cb2bbdaf0684dfcbf1e01c"><param name="Name" value="SetUnorderedAccessView"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Effect.html#a9c60d50ad54f12fa67088c2052925cd0"><param name="Name" value="SetUnorderedAccessView"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Effect.html#afd7b698c26cb2bbdaf0684dfcbf1e01c"><param name="Name" value="simul::crossplatform::Effect"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Effect.html#a9c60d50ad54f12fa67088c2052925cd0"><param name="Name" value="simul::crossplatform::Effect"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1opengl_1_1Effect.html#aad39cbd79066bb4b29f20422ce6ba16d"><param name="Name" value="simul::opengl::Effect"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1math_1_1Noise3D.html#a05ea1f6c189b7c974f0b48cee4bbe302"><param name="Name" value="Setup"></OBJECT>
@@ -3911,7 +3911,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Effect.html#a97882a72e1f3d76a2a8d4976178760bb"><param name="Name" value="SetConstantBuffer"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Effect.html#a31169b54fa083b3d4fcf04975e51a555"><param name="Name" value="SetSamplerState"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Effect.html#af483d17baa3dc8c52e423dae280689eb"><param name="Name" value="SetTexture"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Effect.html#afd7b698c26cb2bbdaf0684dfcbf1e01c"><param name="Name" value="SetUnorderedAccessView"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Effect.html#a9c60d50ad54f12fa67088c2052925cd0"><param name="Name" value="SetUnorderedAccessView"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Effect.html#a06d5b49a24849556844ccf4342851992"><param name="Name" value="Unapply"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Effect.html#a95f90ea474e9cf85b32f26ce6316b408"><param name="Name" value="UnbindTextures"></OBJECT>
   </UL>
