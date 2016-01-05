@@ -30,6 +30,8 @@ To correctly affect transparent objects, trueSKY will write loss and inscatter t
 
 <img src="http://docs.simul.co/unrealengine/images/TrueSkyRenderTargets.png" alt="Blueprint" />
 
+<img src="http://docs.simul.co/unrealengine/images/Transparency.png" alt="Blueprint" />
+
 Queries
 -------
 To test how much cloud (from 0 to 1) is at a specified point, use the function CloudPointTest.
