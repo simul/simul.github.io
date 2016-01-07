@@ -10,27 +10,32 @@ The simplest way to drive Unreal Engine lighting from trueSKY is to use the true
 
 To set the direction and colour of a Directional Light, find the trueSKYSun or trueSKYMoon macro, and connect a reference to the DirectionalLight to the input. Make sure that the "Exec" input is hit once per frame by an event tick. 
 
-<img src="http://docs.simul.co/unrealengine/images/trueSKYSun.png" alt="Blueprint"/>
+
+<a href="http://docs.simul.co/unrealengine/images/trueSKYSun.png"><img src="http://docs.simul.co/unrealengine/images/trueSKYSun.png" alt="Blueprint"/></a>
 
 Alternatively, use the TrueSkyLighting macro - this also allows time of day to be set.
 
-<img src="http://docs.simul.co/unrealengine/images/trueSkyLighting.png" alt="Blueprint"/>
+
+<a href="http://docs.simul.co/unrealengine/images/trueSkyLighting.png"><img src="http://docs.simul.co/unrealengine/images/trueSkyLighting.png" alt="Blueprint"/></a>
 
 Time of Day
 ------------
 
 To change the time of day, use the SetTime function of the trueSKY sequence actor (time is in days, from midnight on the first day (0.0):
 
-<img src="http://docs.simul.co/unrealengine/images/SetTime.png" alt="Blueprint" />
+
+<a href="http://docs.simul.co/unrealengine/images/SetTime.png"><img src="http://docs.simul.co/unrealengine/images/SetTime.png" alt="Blueprint" /></a>
 
 Transparency
 ------------
 
-To correctly affect transparent objects, trueSKY will write loss and inscatter textures once per frame. Connect the textures from the (automatically created) trueSky folder, to the texture properties in the trueSKY Sequence Actor to enable this.
+To correctly affect transparent objects, trueSKY will write loss, inscatter and cloud transparency textures once per frame. Connect the textures from the (automatically created) trueSky folder, to the texture properties in the trueSKY Sequence Actor to enable this.
 
-<img src="http://docs.simul.co/unrealengine/images/TrueSkyRenderTargets.png" alt="Blueprint" />
+<a href="http://docs.simul.co/unrealengine/images/TrueSkyRenderTargets.png"><img src="http://docs.simul.co/unrealengine/images/TrueSkyRenderTargets.png" alt="Blueprint" /></a>
 
-<img src="http://docs.simul.co/unrealengine/images/Transparency.png" alt="Blueprint" />
+In a material that uses transparency, insert the trueSKYTransparencyModifier function between the inputs and the final output node:
+
+<a href="http://docs.simul.co/unrealengine/images/Transparency.png"><img src="http://docs.simul.co/unrealengine/images/Transparency.png" alt="Blueprint" /></a>
 
 Queries
 -------
