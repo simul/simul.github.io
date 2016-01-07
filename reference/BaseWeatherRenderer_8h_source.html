@@ -145,12 +145,12 @@ url: Simul/Clouds/BaseWeatherRenderer.h Source File
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                                                    ,crossplatform::Texture* mainDepthTexture</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                                                    ,<span class="keyword">const</span> <a class="code" href="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1Viewport">crossplatform::Viewport</a> *depthViewport</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                                                    );</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> RenderMixedResolution( <a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                                                ,<a class="code" href="namespacesimul_1_1clouds.html#a1dc56c71e4d8698ef947bc727ca3124d">TrueSkyRenderMode</a> renderMode</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                                                ,<span class="keywordtype">float</span> exposure</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                                                ,<span class="keywordtype">float</span> gamma</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                                                ,crossplatform::Texture *mainDepthTexture</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            <span class="keywordtype">void</span> RenderScreenspaceVisibility(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext,crossplatform::Texture *targetTexture);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> RenderMixedResolution( <a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                                                ,<a class="code" href="namespacesimul_1_1clouds.html#a1dc56c71e4d8698ef947bc727ca3124d">TrueSkyRenderMode</a> renderMode</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                                                ,<span class="keywordtype">float</span> exposure</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                                                ,<span class="keywordtype">float</span> gamma</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                                                ,<span class="keyword">const</span> vec4&amp; depthViewportXYWH);</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            <span class="comment">// This composites the clouds and other buffers to the screen.</span></div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> CompositeCloudsToScreen(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext</div>
@@ -270,6 +270,6 @@ url: Simul/Clouds/BaseWeatherRenderer.h Source File
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Wed Jan 6 2016 07:46:30</small></address>
+Thu Jan 7 2016 07:46:33</small></address>
 </body>
 </html>

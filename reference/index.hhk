@@ -2105,7 +2105,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1BaseOpticsRenderer.html#a2d661b1ea2b524a39efe0ff01fe55fe7"><param name="Name" value="RenderFlare"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseSkyRenderer.html#a7a11ceeb09192bd9eba4cd9ae36f1820"><param name="Name" value="RenderIlluminationBuffer"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#ade050dd1dd11be1edfcdab81051c63a1"><param name="Name" value="RenderLoss"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aac3ecaa5a9128ea4d7afc46d9eecb23b"><param name="Name" value="RenderMixedResolution"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a9711dc6925ead27e1b6a3ca226073f06"><param name="Name" value="RenderMixedResolution"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ad3bb208131941ffec282235785ea9028"><param name="Name" value="RenderOverlays"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseSkyRenderer.html#a09413cd79516666fb840d28d18317ccf"><param name="Name" value="RenderPlanet"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseSkyRenderer.html#ab8e18ef805104b6eb02264f88f4fb305"><param name="Name" value="RenderPlanets"></OBJECT>
@@ -3199,7 +3199,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a7170fc074f1733f44941a2ec26314141"><param name="Name" value="RemoveView"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a130259c62a9fb2ea74e1cec7170985c4"><param name="Name" value="Render"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a5680cd0fc2ca00886af03dd1081e58d6"><param name="Name" value="RenderCelestialBackground"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aac3ecaa5a9128ea4d7afc46d9eecb23b"><param name="Name" value="RenderMixedResolution"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a9711dc6925ead27e1b6a3ca226073f06"><param name="Name" value="RenderMixedResolution"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ad3bb208131941ffec282235785ea9028"><param name="Name" value="RenderOverlays"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a72de865052f574a909e0700a7fb5d303"><param name="Name" value="RestoreDeviceObjects"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a90be7b86481fd34ff20ea0d7b996eb45"><param name="Name" value="SetAllDownscale"></OBJECT>

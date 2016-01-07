@@ -457,7 +457,7 @@
       <keyword name="RemoveView" id="simul::clouds::BaseWeatherRenderer::RemoveView" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a7170fc074f1733f44941a2ec26314141" />
       <keyword name="Render" id="simul::clouds::BaseWeatherRenderer::Render" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a130259c62a9fb2ea74e1cec7170985c4" />
       <keyword name="RenderCelestialBackground" id="simul::clouds::BaseWeatherRenderer::RenderCelestialBackground" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a5680cd0fc2ca00886af03dd1081e58d6" />
-      <keyword name="RenderMixedResolution" id="simul::clouds::BaseWeatherRenderer::RenderMixedResolution" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aac3ecaa5a9128ea4d7afc46d9eecb23b" />
+      <keyword name="RenderMixedResolution" id="simul::clouds::BaseWeatherRenderer::RenderMixedResolution" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a9711dc6925ead27e1b6a3ca226073f06" />
       <keyword name="RenderOverlays" id="simul::clouds::BaseWeatherRenderer::RenderOverlays" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ad3bb208131941ffec282235785ea9028" />
       <keyword name="RestoreDeviceObjects" id="simul::clouds::BaseWeatherRenderer::RestoreDeviceObjects" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a72de865052f574a909e0700a7fb5d303" />
       <keyword name="SetAllDownscale" id="simul::clouds::BaseWeatherRenderer::SetAllDownscale" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a90be7b86481fd34ff20ea0d7b996eb45" />

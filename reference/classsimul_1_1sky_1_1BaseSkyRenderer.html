@@ -205,7 +205,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <li>Rendering planets (e.g. the Moon): using RenderPlanets(void *context,float exposure)</li>
 <li>Rendering the sun, using RenderSun(void *context,float exposure)</li>
 </ul>
-<p>See <a class="el" href="">BaseWeatherRenderer::RenderSkyAsOverlay</a> and <a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aac3ecaa5a9128ea4d7afc46d9eecb23b">RenderMixedResolution</a>.</p>
+<p>See <a class="el" href="">BaseWeatherRenderer::RenderSkyAsOverlay</a> and <a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a9711dc6925ead27e1b6a3ca226073f06">RenderMixedResolution</a>.</p>
 <p>The rendering of the sky is no longer handled by <a class="el" href="classsimul_1_1sky_1_1BaseSkyRenderer.html" title="The base class for real-time sky renderers. ">BaseSkyRenderer</a> or its derived classes because the <a class="el" href="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html">atmospherics renderer</a> now does this in a single pass including both sky and atmospherics.</p>
 <p>It is the job of the <a class="el" href="classsimul_1_1sky_1_1Sky.html" title="A class that calculates the sky colour. ">Sky</a> Renderer to update the atmospherics textures to be used by the other render classes, and render celestial objects.</p>
 <p>The fade tables are stored as 3D textures - an axis for distance, one for elevation, one for altitude. The table size is given by NumElevations, NumDistances and SetNumAltitudes() of <a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html">SkyKeyframer</a>. Try to minimize the number of altitudes required, in order to maximize performance, and use SetAltitudeRangeKm on initialization to the range you will use.</p>
@@ -447,6 +447,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Wed Jan 6 2016 07:46:32</small></address>
+Thu Jan 7 2016 07:46:35</small></address>
 </body>
 </html>
