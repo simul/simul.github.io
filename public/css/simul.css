@@ -30,6 +30,7 @@
 #banner-index {
 	width: 100%;
 	padding:0px;
+	margin-top: 0px;
 	position: fixed;
 	padding-left: 20px;
 	height: 60px;
