@@ -14,4 +14,5 @@ layout: default
     s.parentNode.insertBefore(gcse, s);
 })();
 </script>
+<link rel="stylesheet" href="{{ site.baseurl }}public/css/search.css">
 <gcse:searchresults-only></gcse:searchresults-only>
