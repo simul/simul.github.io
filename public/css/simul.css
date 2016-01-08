@@ -48,7 +48,7 @@
 /* Use a different font family for search results */
 .gs-title, .gs-snippet
 {
-    font-family: courier;
+    font-family: Arial;
 }
 
 /* Add a border between individual search results */
@@ -85,7 +85,8 @@
 /* Change the font size of the title of search results */
 .gs-title a
 { 
-    font-size: 16px;  
+    font-size: 16px;
+    color: blue; 
 }
 
 /* Change the font size of snippets inside search results */
@@ -116,10 +117,10 @@
     
 .gsc-option-menu-container
 {
-	min-width:104px;
+	min-width:128px;
 }
 
 .gsc-selected-option-container
 {
-	min-width:96px;
+	min-width:120px;
 }
