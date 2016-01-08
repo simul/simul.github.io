@@ -47,5 +47,10 @@
 
 .gsc-option-menu-container
 {
+	min-width:104px;
+}
+
+.gsc-selected-option-container
+{
 	min-width:96px;
 }
