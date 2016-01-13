@@ -341,9 +341,6 @@
       <keyword name="simul::clouds" id="simul::clouds" ref="namespacesimul_1_1clouds.html" />
       <keyword name="CloudTexelType" id="simul::clouds::CloudTexelType" ref="namespacesimul_1_1clouds.html#a4fb446340b2fb4b138b7d8240bffcf69" />
       <keyword name="VolumeMap" id="simul::clouds::VolumeMap" ref="namespacesimul_1_1clouds.html#ab79ccfe3f57cc1c3c4fef8b7f1c59d4b" />
-      <keyword name="Make2DNoiseTexture" id="simul::clouds::Make2DNoiseTexture" ref="namespacesimul_1_1clouds.html#aae1d601d1b2f1ba340a310dfeafa02c1" />
-      <keyword name="Make2DRandomTexture" id="simul::clouds::Make2DRandomTexture" ref="namespacesimul_1_1clouds.html#a835c7f632472f09123bd2180d325ee7e" />
-      <keyword name="Make3DNoiseTexture" id="simul::clouds::Make3DNoiseTexture" ref="namespacesimul_1_1clouds.html#ac39ab506f7fc92c62fdcc36228579c5d" />
       <keyword name="simul::clouds::BaseCloudRenderer" id="simul::clouds::BaseCloudRenderer" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html" />
       <keyword name="BaseCloudRenderer" id="simul::clouds::BaseCloudRenderer::BaseCloudRenderer" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a1bb1168c813b2239a2b254288d5b1fec" />
       <keyword name="CreateCloudGeometryHelper" id="simul::clouds::BaseCloudRenderer::CreateCloudGeometryHelper" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#aacc0e8648488515677f8b9d722aad557" />
@@ -499,12 +496,12 @@
       <keyword name="GetDefaultDownscale" id="simul::clouds::BaseWeatherRenderer::GetDefaultDownscale" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a5090b422d5c2487a61bfd9ad95bd4e5d" />
       <keyword name="SetDefaultDownscale" id="simul::clouds::BaseWeatherRenderer::SetDefaultDownscale" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a61c0a798c5717754a2b25f6871c85c88" />
       <keyword name="simul::clouds::CellularCloudGrid" id="simul::clouds::CellularCloudGrid" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html" />
-      <keyword name="GetCloudDensity" id="simul::clouds::CellularCloudGrid::GetCloudDensity" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#a583904a772d7a4a18dbcc27d771451ed" />
+      <keyword name="GetCloudDensity" id="simul::clouds::CellularCloudGrid::GetCloudDensity" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#a514159d068b641d164fb858e251eeff5" />
       <keyword name="GetExtents" id="simul::clouds::CellularCloudGrid::GetExtents" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#a350f598f52380797ea0386ed28fad8b9" />
       <keyword name="GetGenerationNumber" id="simul::clouds::CellularCloudGrid::GetGenerationNumber" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#ab54b756f7d25a656eec83c28e450ed6d" />
       <keyword name="GetInverseScales" id="simul::clouds::CellularCloudGrid::GetInverseScales" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#ae70869b5bef4b7cb1f89a31936b5af8d" />
       <keyword name="GetNoiseInterface" id="simul::clouds::CellularCloudGrid::GetNoiseInterface" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#aec3475c8b1eb0b65c5baf40a75f4179a" />
-      <keyword name="GetOpticalPathLength" id="simul::clouds::CellularCloudGrid::GetOpticalPathLength" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#a9ba78a018ae4ab98c6496c83719f1e71" />
+      <keyword name="GetOpticalPathLength" id="simul::clouds::CellularCloudGrid::GetOpticalPathLength" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#adcfffa009af905acf274f1e03d52e620" />
       <keyword name="GetOrigin" id="simul::clouds::CellularCloudGrid::GetOrigin" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#abe5181041878f5163157f1d6767f3cf8" />
       <keyword name="GetTransformLightspaceToCloudspaceMatrix" id="simul::clouds::CellularCloudGrid::GetTransformLightspaceToCloudspaceMatrix" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#a21895d20947109eaecea8727af25e286" />
       <keyword name="GetTransformToLightspaceMatrix" id="simul::clouds::CellularCloudGrid::GetTransformToLightspaceMatrix" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#afde80fe4a614f83486925e7c7ed203c5" />
@@ -515,12 +512,6 @@
       <keyword name="SetGridWidth" id="simul::clouds::CellularCloudGrid::SetGridWidth" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#a7d5cd1e253fa57158c7f40a165c1c71e" />
       <keyword name="GetGridHeight" id="simul::clouds::CellularCloudGrid::GetGridHeight" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#aed42f5f9de967f4192f19ddf3518c328" />
       <keyword name="SetGridHeight" id="simul::clouds::CellularCloudGrid::SetGridHeight" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#a247aaa1bd7dab46c7551e3fc3504805f" />
-      <keyword name="GetDistributionBaseLayer" id="simul::clouds::CellularCloudGrid::GetDistributionBaseLayer" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#aa4793344dc76a0cb16d0f6e2a8268e88" />
-      <keyword name="SetDistributionBaseLayer" id="simul::clouds::CellularCloudGrid::SetDistributionBaseLayer" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#a09ae7818ae0e46a74c65397978646211" />
-      <keyword name="GetDistributionTransition" id="simul::clouds::CellularCloudGrid::GetDistributionTransition" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#ae3c7ff18c8696302d8abce37313eb212" />
-      <keyword name="SetDistributionTransition" id="simul::clouds::CellularCloudGrid::SetDistributionTransition" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#aa2d13afa9f1be656eb18a3a39949019e" />
-      <keyword name="GetUpperDensity" id="simul::clouds::CellularCloudGrid::GetUpperDensity" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#aa5163a5e63e494925cabb99fe1acdc3c" />
-      <keyword name="SetUpperDensity" id="simul::clouds::CellularCloudGrid::SetUpperDensity" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#a863f5474e1bc186eda4855b40a88cf44" />
       <keyword name="GetRandomSeed" id="simul::clouds::CellularCloudGrid::GetRandomSeed" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#ab6aeea62991f24a51abc277a8256bacf" />
       <keyword name="SetRandomSeed" id="simul::clouds::CellularCloudGrid::SetRandomSeed" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#a9fb12639da5345e1b388f15a2a4fa828" />
       <keyword name="GetWrap" id="simul::clouds::CellularCloudGrid::GetWrap" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#a8e696b4851f8e64ad6957c0186653a85" />
@@ -548,8 +539,8 @@
       <keyword name="StreamOutAutoPropertiesDefinition" id="simul::clouds::CellularCloudGrid::StreamOutAutoPropertiesDefinition" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#ac6c36500b25fc73e895a348bfe46098c" />
       <keyword name="StreamInAutoPropertiesDefinition" id="simul::clouds::CellularCloudGrid::StreamInAutoPropertiesDefinition" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#ab3d20723a2b55fc3fd70f97c5eaa0eba" />
       <keyword name="InitializePropertiesDefinition" id="simul::clouds::CellularCloudGrid::InitializePropertiesDefinition" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#ab6d438fd61053ab980cfb3a025c7bac7" />
-      <keyword name="GetCloud" id="simul::clouds::CellularCloudGrid::GetCloud" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#a99849f9b1b2accf960cc94e358908b5d" />
-      <keyword name="InterpCloud" id="simul::clouds::CellularCloudGrid::InterpCloud" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#adecdf0cae5c12cb4b7da9729614af74c" />
+      <keyword name="GetCloud" id="simul::clouds::CellularCloudGrid::GetCloud" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#a2b5c2b84e12a7c054585a9b4afb661fb" />
+      <keyword name="InterpCloud" id="simul::clouds::CellularCloudGrid::InterpCloud" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#abb5d4e57264983aec4a887c7eacb6b86" />
       <keyword name="SetNoise" id="simul::clouds::CellularCloudGrid::SetNoise" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#a5d8fcccac8d08a0b1fdb86acb0743032" />
       <keyword name="Init" id="simul::clouds::CellularCloudGrid::Init" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#a92840692f236b7580ae77c782b3ae053" />
       <keyword name="SaveGrid" id="simul::clouds::CellularCloudGrid::SaveGrid" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#a662dfd3247f539f0ee5b212f58d84317" />
@@ -565,10 +556,6 @@
       <keyword name="referenceCount" id="simul::clouds::CellularCloudNode::referenceCount" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#ad26fe1c55ab6384e001173f57d863072" />
       <keyword name="GetNoisePersistence" id="simul::clouds::CellularCloudNode::GetNoisePersistence" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a9b0cae4bd9bca373cdfad801df34c89e" />
       <keyword name="SetNoisePersistence" id="simul::clouds::CellularCloudNode::SetNoisePersistence" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a7347dc9c135c1fa06bf543121632ce11" />
-      <keyword name="GetDiffusivity" id="simul::clouds::CellularCloudNode::GetDiffusivity" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#ac61fde396c9e86f83b779262a4393d5c" />
-      <keyword name="SetDiffusivity" id="simul::clouds::CellularCloudNode::SetDiffusivity" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a92f5726102b24b32107e7fa033cb6e38" />
-      <keyword name="GetExtinction" id="simul::clouds::CellularCloudNode::GetExtinction" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a32b83694b9c42cb532f8e46e1c5f6e82" />
-      <keyword name="SetExtinction" id="simul::clouds::CellularCloudNode::SetExtinction" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#ad60d8566906c1977452e33ed6dca9865" />
       <keyword name="GetLightResponse" id="simul::clouds::CellularCloudNode::GetLightResponse" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a9a02ce016acfc1e6faeb765282110542" />
       <keyword name="SetLightResponse" id="simul::clouds::CellularCloudNode::SetLightResponse" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a15465feb8300994a5d1f7c665ef26dd1" />
       <keyword name="GetMieAsymmetry" id="simul::clouds::CellularCloudNode::GetMieAsymmetry" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a98f47367eddf8a7ee9786e6b98ef8c45" />
@@ -603,12 +590,6 @@
       <keyword name="SetGridWidth" id="simul::clouds::CellularCloudNode::SetGridWidth" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a7d5cd1e253fa57158c7f40a165c1c71e" />
       <keyword name="GetGridHeight" id="simul::clouds::CellularCloudNode::GetGridHeight" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#aed42f5f9de967f4192f19ddf3518c328" />
       <keyword name="SetGridHeight" id="simul::clouds::CellularCloudNode::SetGridHeight" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a247aaa1bd7dab46c7551e3fc3504805f" />
-      <keyword name="GetDistributionBaseLayer" id="simul::clouds::CellularCloudNode::GetDistributionBaseLayer" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#aa4793344dc76a0cb16d0f6e2a8268e88" />
-      <keyword name="SetDistributionBaseLayer" id="simul::clouds::CellularCloudNode::SetDistributionBaseLayer" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a09ae7818ae0e46a74c65397978646211" />
-      <keyword name="GetDistributionTransition" id="simul::clouds::CellularCloudNode::GetDistributionTransition" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#ae3c7ff18c8696302d8abce37313eb212" />
-      <keyword name="SetDistributionTransition" id="simul::clouds::CellularCloudNode::SetDistributionTransition" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#aa2d13afa9f1be656eb18a3a39949019e" />
-      <keyword name="GetUpperDensity" id="simul::clouds::CellularCloudNode::GetUpperDensity" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#aa5163a5e63e494925cabb99fe1acdc3c" />
-      <keyword name="SetUpperDensity" id="simul::clouds::CellularCloudNode::SetUpperDensity" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a863f5474e1bc186eda4855b40a88cf44" />
       <keyword name="GetRandomSeed" id="simul::clouds::CellularCloudNode::GetRandomSeed" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#ab6aeea62991f24a51abc277a8256bacf" />
       <keyword name="SetRandomSeed" id="simul::clouds::CellularCloudNode::SetRandomSeed" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a9fb12639da5345e1b388f15a2a4fa828" />
       <keyword name="GetWrap" id="simul::clouds::CellularCloudNode::GetWrap" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a8e696b4851f8e64ad6957c0186653a85" />
@@ -617,8 +598,8 @@
       <keyword name="SetNoiseResolution" id="simul::clouds::CellularCloudNode::SetNoiseResolution" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a49fcde1702b117025dfbb0ffe4198ddd" />
       <keyword name="GetNoiseOctaves" id="simul::clouds::CellularCloudNode::GetNoiseOctaves" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#ace3ac39f47ad2dcd4771f70d32ab5bce" />
       <keyword name="SetNoiseOctaves" id="simul::clouds::CellularCloudNode::SetNoiseOctaves" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a17d11ec39c4211a30cf97fb0d09492e0" />
-      <keyword name="GetCloud" id="simul::clouds::CellularCloudNode::GetCloud" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a99849f9b1b2accf960cc94e358908b5d" />
-      <keyword name="InterpCloud" id="simul::clouds::CellularCloudNode::InterpCloud" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#adecdf0cae5c12cb4b7da9729614af74c" />
+      <keyword name="GetCloud" id="simul::clouds::CellularCloudNode::GetCloud" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a2b5c2b84e12a7c054585a9b4afb661fb" />
+      <keyword name="InterpCloud" id="simul::clouds::CellularCloudNode::InterpCloud" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#abb5d4e57264983aec4a887c7eacb6b86" />
       <keyword name="SetNoise" id="simul::clouds::CellularCloudNode::SetNoise" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a5d8fcccac8d08a0b1fdb86acb0743032" />
       <keyword name="Init" id="simul::clouds::CellularCloudNode::Init" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a92840692f236b7580ae77c782b3ae053" />
       <keyword name="SetLicense" id="simul::clouds::CellularCloudNode::SetLicense" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#ae89a72122428d4653d25c11400fb73e4" />
@@ -630,7 +611,6 @@
       <keyword name="InitializePropertiesDefinition" id="simul::clouds::CellularCloudNode::InitializePropertiesDefinition" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a02fae11e1dc06413f47d05af8c4d96b9" />
       <keyword name="GetTransformToLightspaceMatrix" id="simul::clouds::CellularCloudNode::GetTransformToLightspaceMatrix" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a47d9831366553cec839bb06ac6b5b272" />
       <keyword name="GetTransformLightspaceToCloudspaceMatrix" id="simul::clouds::CellularCloudNode::GetTransformLightspaceToCloudspaceMatrix" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a6552c36fa19463c108510b7f66608793" />
-      <keyword name="GetLightspaceExtinctions" id="simul::clouds::CellularCloudNode::GetLightspaceExtinctions" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a08a42864232d128e9d206e33457a5b7e" />
       <keyword name="GetNoiseInterface" id="simul::clouds::CellularCloudNode::GetNoiseInterface" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a8b689b66f998bbcbf2f78347d5b16d72" />
       <keyword name="SetRecalculate" id="simul::clouds::CellularCloudNode::SetRecalculate" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a6595d49c3d0038229d74fcb2712ad602" />
       <keyword name="SetRelight" id="simul::clouds::CellularCloudNode::SetRelight" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a2590c5acc87876c41c0df10d29952b71" />
@@ -639,18 +619,18 @@
       <keyword name="LoadGrid" id="simul::clouds::CellularCloudNode::LoadGrid" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a9efe08bfafd6898fa8ed312e882cf7e2" />
       <keyword name="Generate" id="simul::clouds::CellularCloudNode::Generate" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#afdf4158b78babf4fc0645ad26ac251c3" />
       <keyword name="GetGenerationNumber" id="simul::clouds::CellularCloudNode::GetGenerationNumber" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a8aff7f056cf4cbb016fdb740d6912d5d" />
-      <keyword name="GetOpticalPathLength" id="simul::clouds::CellularCloudNode::GetOpticalPathLength" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#aaf09e21331683a650d1556f1a8501eb8" />
-      <keyword name="GetOpticalPathLengthBetween" id="simul::clouds::CellularCloudNode::GetOpticalPathLengthBetween" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#aeef5ca88d71ff65e9e3ab19caeb8ef8d" />
+      <keyword name="GetOpticalPathLength" id="simul::clouds::CellularCloudNode::GetOpticalPathLength" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#ac1c10f05aac06141a7c7b7326e9a63ce" />
+      <keyword name="GetOpticalPathLengthBetween" id="simul::clouds::CellularCloudNode::GetOpticalPathLengthBetween" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a5b767116e53b9602b90ef1f8ca0f26bb" />
       <keyword name="GetAmbient" id="simul::clouds::CellularCloudNode::GetAmbient" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a588dfb7e29aed9a3f7f70d9b28ce88e9" />
       <keyword name="GetLight" id="simul::clouds::CellularCloudNode::GetLight" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#af97dd76948af42c373fa00b985e3fdf4" />
       <keyword name="GetSecondaryLight" id="simul::clouds::CellularCloudNode::GetSecondaryLight" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a32d28413cf0325938e2999da5c1b826e" />
       <keyword name="GetExtents" id="simul::clouds::CellularCloudNode::GetExtents" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a77b29740e26bbca16c36e8af664a5072" />
       <keyword name="GetOrigin" id="simul::clouds::CellularCloudNode::GetOrigin" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#ac6188a2e5f1a0de12bf7ecf8361314db" />
       <keyword name="GetInverseScales" id="simul::clouds::CellularCloudNode::GetInverseScales" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a4a11114fb1bd73f1cf396da3083e17cf" />
-      <keyword name="GetCloudDensity" id="simul::clouds::CellularCloudNode::GetCloudDensity" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a4b36c0536d8977572d4702c483658480" />
+      <keyword name="GetCloudDensity" id="simul::clouds::CellularCloudNode::GetCloudDensity" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#af6b16320824b228510f66ac38efd6048" />
       <keyword name="GetGrid" id="simul::clouds::CellularCloudNode::GetGrid" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a1f41b02937af377f155803ab7f0ec0da" />
       <keyword name="SetGrid" id="simul::clouds::CellularCloudNode::SetGrid" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#aeef4d82a72f77344a41e7e040061a499" />
-      <keyword name="GetGridValues" id="simul::clouds::CellularCloudNode::GetGridValues" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a9b3f3e444eee981818e07d0b72d2cb7b" />
+      <keyword name="GetGridValues" id="simul::clouds::CellularCloudNode::GetGridValues" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#acfb83a6c546c90c327e15d57621d3234" />
       <keyword name="CalcLightingSetup" id="simul::clouds::CellularCloudNode::CalcLightingSetup" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a6317574705a78bc2ecf1b3aa4440349c" />
       <keyword name="ReLightPartial" id="simul::clouds::CellularCloudNode::ReLightPartial" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#abea7442e29dd053f59660ae077a3f726" />
       <keyword name="StreamOut" id="simul::clouds::CellularCloudNode::StreamOut" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a2f8e03b35e726f14ba30edf3757b648a" />
@@ -710,9 +690,9 @@
       <keyword name="GetGridHeight" id="simul::clouds::CloudGridInterface::GetGridHeight" ref="classsimul_1_1clouds_1_1CloudGridInterface.html#a64b3d399495426051c62fedeff541159" />
       <keyword name="SetGridHeight" id="simul::clouds::CloudGridInterface::SetGridHeight" ref="classsimul_1_1clouds_1_1CloudGridInterface.html#ac2947d67132e98628a2d4f792eba2c19" />
       <keyword name="simul::clouds::CloudInterface" id="simul::clouds::CloudInterface" ref="classsimul_1_1clouds_1_1CloudInterface.html" />
-      <keyword name="GetCloudDensity" id="simul::clouds::CloudInterface::GetCloudDensity" ref="classsimul_1_1clouds_1_1CloudInterface.html#a583904a772d7a4a18dbcc27d771451ed" />
+      <keyword name="GetCloudDensity" id="simul::clouds::CloudInterface::GetCloudDensity" ref="classsimul_1_1clouds_1_1CloudInterface.html#a514159d068b641d164fb858e251eeff5" />
       <keyword name="GetNoiseInterface" id="simul::clouds::CloudInterface::GetNoiseInterface" ref="classsimul_1_1clouds_1_1CloudInterface.html#aec3475c8b1eb0b65c5baf40a75f4179a" />
-      <keyword name="GetOpticalPathLength" id="simul::clouds::CloudInterface::GetOpticalPathLength" ref="classsimul_1_1clouds_1_1CloudInterface.html#a9ba78a018ae4ab98c6496c83719f1e71" />
+      <keyword name="GetOpticalPathLength" id="simul::clouds::CloudInterface::GetOpticalPathLength" ref="classsimul_1_1clouds_1_1CloudInterface.html#adcfffa009af905acf274f1e03d52e620" />
       <keyword name="simul::clouds::CloudKeyframe" id="simul::clouds::CloudKeyframe" ref="structsimul_1_1clouds_1_1CloudKeyframe.html" />
       <keyword name="ambient_light" id="simul::clouds::CloudKeyframe::ambient_light" ref="structsimul_1_1clouds_1_1CloudKeyframe.html#aa8264bb1745b8c819bcf2dd07598d6c4" />
       <keyword name="base_noise_factor" id="simul::clouds::CloudKeyframe::base_noise_factor" ref="structsimul_1_1clouds_1_1CloudKeyframe.html#a1a07e774dc85cb53856256503fcdd3a0" />
@@ -971,7 +951,7 @@
       <keyword name="simul::clouds::FastCloudNode" id="simul::clouds::FastCloudNode" ref="classsimul_1_1clouds_1_1FastCloudNode.html" />
       <keyword name="AddHumidityCallback" id="simul::clouds::FastCloudNode::AddHumidityCallback" ref="classsimul_1_1clouds_1_1FastCloudNode.html#aa3f41590a39e4e5f7980e5e662c4aec5" />
       <keyword name="ClearHumidityCallbacks" id="simul::clouds::FastCloudNode::ClearHumidityCallbacks" ref="classsimul_1_1clouds_1_1FastCloudNode.html#af371e40d49ed3acfe404b0471c83f620" />
-      <keyword name="GetCloudDensity" id="simul::clouds::FastCloudNode::GetCloudDensity" ref="classsimul_1_1clouds_1_1FastCloudNode.html#ab0f66eee1a5a84a8006903c937934f4b" />
+      <keyword name="GetCloudDensity" id="simul::clouds::FastCloudNode::GetCloudDensity" ref="classsimul_1_1clouds_1_1FastCloudNode.html#ab8f4c2214683b70267cb40e0ff5b7f99" />
       <keyword name="intrusive_ptr_add_ref" id="simul::clouds::FastCloudNode::intrusive_ptr_add_ref" ref="classsimul_1_1clouds_1_1FastCloudNode.html#aae2efb757b2dd8c02934bceb8214691c" />
       <keyword name="intrusive_ptr_release" id="simul::clouds::FastCloudNode::intrusive_ptr_release" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a1b15d531ebb1578a502a3579660c3148" />
       <keyword name="referenceCount" id="simul::clouds::FastCloudNode::referenceCount" ref="classsimul_1_1clouds_1_1FastCloudNode.html#ad26fe1c55ab6384e001173f57d863072" />
@@ -982,10 +962,6 @@
       <keyword name="StreamOut" id="simul::clouds::FastCloudNode::StreamOut" ref="classsimul_1_1clouds_1_1FastCloudNode.html#aa2552e47b7581bda34a6f179b3b74721" />
       <keyword name="GetNoisePersistence" id="simul::clouds::FastCloudNode::GetNoisePersistence" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a9b0cae4bd9bca373cdfad801df34c89e" />
       <keyword name="SetNoisePersistence" id="simul::clouds::FastCloudNode::SetNoisePersistence" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a7347dc9c135c1fa06bf543121632ce11" />
-      <keyword name="GetDiffusivity" id="simul::clouds::FastCloudNode::GetDiffusivity" ref="classsimul_1_1clouds_1_1FastCloudNode.html#ac61fde396c9e86f83b779262a4393d5c" />
-      <keyword name="SetDiffusivity" id="simul::clouds::FastCloudNode::SetDiffusivity" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a92f5726102b24b32107e7fa033cb6e38" />
-      <keyword name="GetExtinction" id="simul::clouds::FastCloudNode::GetExtinction" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a32b83694b9c42cb532f8e46e1c5f6e82" />
-      <keyword name="SetExtinction" id="simul::clouds::FastCloudNode::SetExtinction" ref="classsimul_1_1clouds_1_1FastCloudNode.html#ad60d8566906c1977452e33ed6dca9865" />
       <keyword name="GetLightResponse" id="simul::clouds::FastCloudNode::GetLightResponse" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a9a02ce016acfc1e6faeb765282110542" />
       <keyword name="SetLightResponse" id="simul::clouds::FastCloudNode::SetLightResponse" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a15465feb8300994a5d1f7c665ef26dd1" />
       <keyword name="GetMieAsymmetry" id="simul::clouds::FastCloudNode::GetMieAsymmetry" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a98f47367eddf8a7ee9786e6b98ef8c45" />
@@ -1019,7 +995,6 @@
       <keyword name="InitializePropertiesDefinition" id="simul::clouds::FastCloudNode::InitializePropertiesDefinition" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a02fae11e1dc06413f47d05af8c4d96b9" />
       <keyword name="GetTransformToLightspaceMatrix" id="simul::clouds::FastCloudNode::GetTransformToLightspaceMatrix" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a47d9831366553cec839bb06ac6b5b272" />
       <keyword name="GetTransformLightspaceToCloudspaceMatrix" id="simul::clouds::FastCloudNode::GetTransformLightspaceToCloudspaceMatrix" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a6552c36fa19463c108510b7f66608793" />
-      <keyword name="GetLightspaceExtinctions" id="simul::clouds::FastCloudNode::GetLightspaceExtinctions" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a08a42864232d128e9d206e33457a5b7e" />
       <keyword name="GetNoiseInterface" id="simul::clouds::FastCloudNode::GetNoiseInterface" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a8b689b66f998bbcbf2f78347d5b16d72" />
       <keyword name="SetRecalculate" id="simul::clouds::FastCloudNode::SetRecalculate" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a6595d49c3d0038229d74fcb2712ad602" />
       <keyword name="SetRelight" id="simul::clouds::FastCloudNode::SetRelight" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a2590c5acc87876c41c0df10d29952b71" />
@@ -1028,8 +1003,8 @@
       <keyword name="LoadGrid" id="simul::clouds::FastCloudNode::LoadGrid" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a9efe08bfafd6898fa8ed312e882cf7e2" />
       <keyword name="Generate" id="simul::clouds::FastCloudNode::Generate" ref="classsimul_1_1clouds_1_1FastCloudNode.html#afdf4158b78babf4fc0645ad26ac251c3" />
       <keyword name="GetGenerationNumber" id="simul::clouds::FastCloudNode::GetGenerationNumber" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a8aff7f056cf4cbb016fdb740d6912d5d" />
-      <keyword name="GetOpticalPathLength" id="simul::clouds::FastCloudNode::GetOpticalPathLength" ref="classsimul_1_1clouds_1_1FastCloudNode.html#aaf09e21331683a650d1556f1a8501eb8" />
-      <keyword name="GetOpticalPathLengthBetween" id="simul::clouds::FastCloudNode::GetOpticalPathLengthBetween" ref="classsimul_1_1clouds_1_1FastCloudNode.html#aeef5ca88d71ff65e9e3ab19caeb8ef8d" />
+      <keyword name="GetOpticalPathLength" id="simul::clouds::FastCloudNode::GetOpticalPathLength" ref="classsimul_1_1clouds_1_1FastCloudNode.html#ac1c10f05aac06141a7c7b7326e9a63ce" />
+      <keyword name="GetOpticalPathLengthBetween" id="simul::clouds::FastCloudNode::GetOpticalPathLengthBetween" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a5b767116e53b9602b90ef1f8ca0f26bb" />
       <keyword name="GetAmbient" id="simul::clouds::FastCloudNode::GetAmbient" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a588dfb7e29aed9a3f7f70d9b28ce88e9" />
       <keyword name="GetLight" id="simul::clouds::FastCloudNode::GetLight" ref="classsimul_1_1clouds_1_1FastCloudNode.html#af97dd76948af42c373fa00b985e3fdf4" />
       <keyword name="GetSecondaryLight" id="simul::clouds::FastCloudNode::GetSecondaryLight" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a32d28413cf0325938e2999da5c1b826e" />
@@ -1038,7 +1013,7 @@
       <keyword name="GetInverseScales" id="simul::clouds::FastCloudNode::GetInverseScales" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a4a11114fb1bd73f1cf396da3083e17cf" />
       <keyword name="GetGrid" id="simul::clouds::FastCloudNode::GetGrid" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a1f41b02937af377f155803ab7f0ec0da" />
       <keyword name="SetGrid" id="simul::clouds::FastCloudNode::SetGrid" ref="classsimul_1_1clouds_1_1FastCloudNode.html#aeef4d82a72f77344a41e7e040061a499" />
-      <keyword name="GetGridValues" id="simul::clouds::FastCloudNode::GetGridValues" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a9b3f3e444eee981818e07d0b72d2cb7b" />
+      <keyword name="GetGridValues" id="simul::clouds::FastCloudNode::GetGridValues" ref="classsimul_1_1clouds_1_1FastCloudNode.html#acfb83a6c546c90c327e15d57621d3234" />
       <keyword name="CalcLightingSetup" id="simul::clouds::FastCloudNode::CalcLightingSetup" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a6317574705a78bc2ecf1b3aa4440349c" />
       <keyword name="ReLightPartial" id="simul::clouds::FastCloudNode::ReLightPartial" ref="classsimul_1_1clouds_1_1FastCloudNode.html#abea7442e29dd053f59660ae077a3f726" />
       <keyword name="GetMemoryUsage" id="simul::clouds::FastCloudNode::GetMemoryUsage" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a41ae3f2967bc04064028761fd1e2efb1" />
@@ -1050,12 +1025,6 @@
       <keyword name="SetGridWidth" id="simul::clouds::FastCloudNode::SetGridWidth" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a7d5cd1e253fa57158c7f40a165c1c71e" />
       <keyword name="GetGridHeight" id="simul::clouds::FastCloudNode::GetGridHeight" ref="classsimul_1_1clouds_1_1FastCloudNode.html#aed42f5f9de967f4192f19ddf3518c328" />
       <keyword name="SetGridHeight" id="simul::clouds::FastCloudNode::SetGridHeight" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a247aaa1bd7dab46c7551e3fc3504805f" />
-      <keyword name="GetDistributionBaseLayer" id="simul::clouds::FastCloudNode::GetDistributionBaseLayer" ref="classsimul_1_1clouds_1_1FastCloudNode.html#aa4793344dc76a0cb16d0f6e2a8268e88" />
-      <keyword name="SetDistributionBaseLayer" id="simul::clouds::FastCloudNode::SetDistributionBaseLayer" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a09ae7818ae0e46a74c65397978646211" />
-      <keyword name="GetDistributionTransition" id="simul::clouds::FastCloudNode::GetDistributionTransition" ref="classsimul_1_1clouds_1_1FastCloudNode.html#ae3c7ff18c8696302d8abce37313eb212" />
-      <keyword name="SetDistributionTransition" id="simul::clouds::FastCloudNode::SetDistributionTransition" ref="classsimul_1_1clouds_1_1FastCloudNode.html#aa2d13afa9f1be656eb18a3a39949019e" />
-      <keyword name="GetUpperDensity" id="simul::clouds::FastCloudNode::GetUpperDensity" ref="classsimul_1_1clouds_1_1FastCloudNode.html#aa5163a5e63e494925cabb99fe1acdc3c" />
-      <keyword name="SetUpperDensity" id="simul::clouds::FastCloudNode::SetUpperDensity" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a863f5474e1bc186eda4855b40a88cf44" />
       <keyword name="GetRandomSeed" id="simul::clouds::FastCloudNode::GetRandomSeed" ref="classsimul_1_1clouds_1_1FastCloudNode.html#ab6aeea62991f24a51abc277a8256bacf" />
       <keyword name="SetRandomSeed" id="simul::clouds::FastCloudNode::SetRandomSeed" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a9fb12639da5345e1b388f15a2a4fa828" />
       <keyword name="GetWrap" id="simul::clouds::FastCloudNode::GetWrap" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a8e696b4851f8e64ad6957c0186653a85" />
@@ -1064,7 +1033,7 @@
       <keyword name="SetNoiseResolution" id="simul::clouds::FastCloudNode::SetNoiseResolution" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a49fcde1702b117025dfbb0ffe4198ddd" />
       <keyword name="GetNoiseOctaves" id="simul::clouds::FastCloudNode::GetNoiseOctaves" ref="classsimul_1_1clouds_1_1FastCloudNode.html#ace3ac39f47ad2dcd4771f70d32ab5bce" />
       <keyword name="SetNoiseOctaves" id="simul::clouds::FastCloudNode::SetNoiseOctaves" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a17d11ec39c4211a30cf97fb0d09492e0" />
-      <keyword name="InterpCloud" id="simul::clouds::FastCloudNode::InterpCloud" ref="classsimul_1_1clouds_1_1FastCloudNode.html#adecdf0cae5c12cb4b7da9729614af74c" />
+      <keyword name="InterpCloud" id="simul::clouds::FastCloudNode::InterpCloud" ref="classsimul_1_1clouds_1_1FastCloudNode.html#abb5d4e57264983aec4a887c7eacb6b86" />
       <keyword name="SetNoise" id="simul::clouds::FastCloudNode::SetNoise" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a5d8fcccac8d08a0b1fdb86acb0743032" />
       <keyword name="Init" id="simul::clouds::FastCloudNode::Init" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a92840692f236b7580ae77c782b3ae053" />
       <keyword name="SetLicense" id="simul::clouds::FastCloudNode::SetLicense" ref="classsimul_1_1clouds_1_1FastCloudNode.html#ae89a72122428d4653d25c11400fb73e4" />

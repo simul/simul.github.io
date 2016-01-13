@@ -55,41 +55,15 @@ url: Simul/Clouds/TextureGenerator.h Source File
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        }</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">namespace </span>clouds</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">struct </span>LightingSetupStruct;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">class </span>CloudGridInterface;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">class </span>LightningRenderInterface;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordtype">void</span> SIMUL_CLOUDS_EXPORT_FN SetBits(<span class="keywordtype">unsigned</span> density,<span class="keywordtype">unsigned</span> brightness,<span class="keywordtype">unsigned</span> secondary,<span class="keywordtype">unsigned</span> ambient,</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordtype">unsigned</span> Bytes_per_texel,<span class="keywordtype">bool</span> bigendian);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordtype">bool</span> SIMUL_CLOUDS_EXPORT_FN Partial2DCloudTextureFill(<a class="code" href="classsimul_1_1clouds_1_1CloudGridInterface.html">simul::clouds::CloudGridInterface</a> *ci,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                    <a class="code" href="classsimul_1_1base_1_1ShowProgressInterface.html">simul::base::ShowProgressInterface</a> *progress,</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                    <span class="keywordtype">int</span> index,</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                    <span class="keywordtype">int</span> texels,</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *image_ptr</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                    ,<span class="keyword">const</span> <span class="keywordtype">float</span> *light_grid</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                    ,<span class="keyword">const</span> <span class="keywordtype">float</span> *amb_grid);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordtype">void</span> SIMUL_CLOUDS_EXPORT_FN <a class="code" href="namespacesimul_1_1clouds.html#ac39ab506f7fc92c62fdcc36228579c5d">Make3DNoiseTexture</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *image_ptr,<span class="keywordtype">int</span> texSize,<span class="keywordtype">int</span> octaves,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <a class="code" href="classsimul_1_1base_1_1ShowProgressInterface.html">simul::base::ShowProgressInterface</a> *progress=0,<span class="keywordtype">void</span> *sender=0);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">void</span> SIMUL_CLOUDS_EXPORT_FN Make2DNoiseTexture(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *image_ptr,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                    <span class="keywordtype">int</span> texSize,<span class="keywordtype">int</span> noiseSize,<span class="keywordtype">int</span> octaves,<span class="keywordtype">float</span> persistence,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                    <a class="code" href="classsimul_1_1base_1_1ShowProgressInterface.html">simul::base::ShowProgressInterface</a> *progress=0,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                    <span class="keywordtype">void</span> *sender=0);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordtype">void</span> SIMUL_CLOUDS_EXPORT_FN Make2DNoiseTexture( <span class="keywordtype">char</span> *image_ptr,<span class="keywordtype">int</span> texSize,<span class="keywordtype">int</span> noiseSize,<span class="keywordtype">int</span> octaves,<span class="keywordtype">float</span> persistence=0.5f,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <a class="code" href="classsimul_1_1base_1_1ShowProgressInterface.html">simul::base::ShowProgressInterface</a> *progress=0,<span class="keywordtype">void</span> *sender=0,<span class="keywordtype">bool</span> make_unsigned=<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordtype">void</span> SIMUL_CLOUDS_EXPORT_FN <a class="code" href="namespacesimul_1_1clouds.html#a835c7f632472f09123bd2180d325ee7e">Make2DRandomTexture</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *image_ptr,<span class="keywordtype">int</span> texSize,<span class="keywordtype">int</span> seed=1);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">void</span> SIMUL_CLOUDS_EXPORT_FN Make2DCirrusNoiseTexture(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *image_ptr,<span class="keywordtype">int</span> texSize,<span class="keywordtype">int</span> noiseSize,<span class="keywordtype">int</span> octaves);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="namespacesimul_1_1clouds_html_ac39ab506f7fc92c62fdcc36228579c5d"><div class="ttname"><a href="namespacesimul_1_1clouds.html#ac39ab506f7fc92c62fdcc36228579c5d">simul::clouds::Make3DNoiseTexture</a></div><div class="ttdeci">void Make3DNoiseTexture(unsigned char *image_ptr, int texSize, int octaves, simul::base::ShowProgressInterface *progress=0, void *sender=0)</div></div>
-<div class="ttc" id="namespacesimul_1_1clouds_html_a835c7f632472f09123bd2180d325ee7e"><div class="ttname"><a href="namespacesimul_1_1clouds.html#a835c7f632472f09123bd2180d325ee7e">simul::clouds::Make2DRandomTexture</a></div><div class="ttdeci">void Make2DRandomTexture(unsigned char *image_ptr, int texSize, int seed=1)</div><div class="ttdoc">Create a 2D noise texture of size texSize, at memory location image_ptr. </div></div>
-<div class="ttc" id="classsimul_1_1base_1_1ShowProgressInterface_html"><div class="ttname"><a href="classsimul_1_1base_1_1ShowProgressInterface.html">simul::base::ShowProgressInterface</a></div><div class="ttdoc">ShowProgressInterface. </div><div class="ttdef"><b>Definition:</b> <a href="ShowProgressInterface_8h_source.html#l00009">ShowProgressInterface.h:9</a></div></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    }</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="namespacesimul_html"><div class="ttname"><a href="namespacesimul.html">simul</a></div><div class="ttdef"><b>Definition:</b> <a href="Base_8h_source.html#l00001">Base.h:1</a></div></div>
-<div class="ttc" id="classsimul_1_1clouds_1_1CloudGridInterface_html"><div class="ttname"><a href="classsimul_1_1clouds_1_1CloudGridInterface.html">simul::clouds::CloudGridInterface</a></div><div class="ttdoc">The virtual interface for controlling and reading a grid of cloud data. </div><div class="ttdef"><b>Definition:</b> <a href="CloudInterface_8h_source.html#l00094">CloudInterface.h:94</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Tue Jan 12 2016 07:46:27</small></address>
+Wed Jan 13 2016 07:48:29</small></address>
 </body>
 </html>
