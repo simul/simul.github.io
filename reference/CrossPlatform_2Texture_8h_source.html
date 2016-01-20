@@ -111,7 +111,7 @@ url: Simul/Platform/CrossPlatform/Texture.h Source File
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> LoadTextureArray(RenderPlatform *r,<span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;texture_files)=0;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">bool</span> IsValid() <span class="keyword">const</span>=0;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> InvalidateDeviceObjects()=0;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keyword">virtual</span> sce::Gnm::Texture *AsGnmTexture(<span class="keywordtype">int</span>){<span class="keywordflow">return</span> 0;}</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keyword">virtual</span> sce::Gnm::Texture *AsGnmTexture(<span class="keywordtype">int</span>=-1){<span class="keywordflow">return</span> 0;}</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keyword">virtual</span> ID3D11Texture2D *AsD3D11Texture2D(){<span class="keywordflow">return</span> 0;}</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keyword">virtual</span> ID3D11ShaderResourceView *AsD3D11ShaderResourceView(<span class="keywordtype">int</span> =-1){<span class="keywordflow">return</span> 0;}</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keyword">virtual</span> ID3D11UnorderedAccessView *AsD3D11UnorderedAccessView(<span class="keywordtype">int</span> =0){<span class="keywordflow">return</span> 0;}</div>
@@ -173,6 +173,6 @@ url: Simul/Platform/CrossPlatform/Texture.h Source File
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Fri Jan 15 2016 07:46:22</small></address>
+Wed Jan 20 2016 07:46:33</small></address>
 </body>
 </html>

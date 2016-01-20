@@ -351,11 +351,11 @@
       <keyword name="GetCloudScales" id="simul::clouds::BaseCloudRenderer::GetCloudScales" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ae7fdc21a767e56fc54f9cfe366d0eebc" />
       <keyword name="GetCloudShadowTexture" id="simul::clouds::BaseCloudRenderer::GetCloudShadowTexture" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a5c9febc5de6f549315861adb20920f52" />
       <keyword name="GetDebugText" id="simul::clouds::BaseCloudRenderer::GetDebugText" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a2d5d3f4130142ce4de4fe06e0e882072" />
-      <keyword name="GetLineQuery" id="simul::clouds::BaseCloudRenderer::GetLineQuery" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a404aabbafcc14b361ebb01327a460a13" />
+      <keyword name="GetLineQuery" id="simul::clouds::BaseCloudRenderer::GetLineQuery" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a72732e1b2ae7d87944c11569858f98ab" />
       <keyword name="GetMaxSlices" id="simul::clouds::BaseCloudRenderer::GetMaxSlices" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a01b5c4dc3879055f9acbd8aa0973360d" />
       <keyword name="GetOvercastCallback" id="simul::clouds::BaseCloudRenderer::GetOvercastCallback" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a6a8d9545dc9b2f5d53ccf55b74ac05ba" />
       <keyword name="GetOvercastCallback" id="simul::clouds::BaseCloudRenderer::GetOvercastCallback" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ad32109338283c380028127cea0944e1b" />
-      <keyword name="GetPointQuery" id="simul::clouds::BaseCloudRenderer::GetPointQuery" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#aca9b230fcaffda90606a748d7939c2ed" />
+      <keyword name="GetPointQuery" id="simul::clouds::BaseCloudRenderer::GetPointQuery" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a45047ea6479c18cd83ce44a6558fdc1b" />
       <keyword name="GetPointQuery" id="simul::clouds::BaseCloudRenderer::GetPointQuery" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a26a30f78e47caf2eab062fa6521643aa" />
       <keyword name="GetQueryIdForViewId" id="simul::clouds::BaseCloudRenderer::GetQueryIdForViewId" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#aced10a020bcc3b2df715c2006349dd04" />
       <keyword name="GetRandomTexture3D" id="simul::clouds::BaseCloudRenderer::GetRandomTexture3D" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#aac7e68f9512afaf51024107e40f7174e" />
