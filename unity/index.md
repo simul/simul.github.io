@@ -25,14 +25,16 @@ After initialization, select your main Camera, and find the TrueSkyCamera compon
 
 trueSKY performs best with a near clipping plane around 1m, and a far plane between 100,000 and 500,000 metres. This is because the appearance of the atmospheric effects is dependent on the numerical precision of the depth buffer.
 
-The Transparency Camera
+User Interface
+--------------
+The wizard to add trueSKY to a scene is found in the GameObject menu.
+Under the Window menu are toggles for the trueSKY debug overlays.
+General trueSKY properties are found by selecting the trueSKY object in the scene.
+Sequence properties are found by editing Sequence assets. 
+
+Transparencies
 -----------------------
-trueSKY rendering with **TrueSkyCamera** is performed using the Unity plugin event command **GL.IssuePluginEvent**. This causes a callout to the trueSKY environment renderer after the camera has completed all its rendering, including transparencies. There is no system in Unity currently to insert rendering in between solid and transparent rendering.
-This means that Unity will render transparent objects before the trueSKY call, then trueSKY will overwrite those objects as it has no depth information for them.
-
-As a workaround, there is the **TransparencyCamera** component which we add to the main camera. This renders transparent objects (i.e. objects with the transparentFX tag) to a texture, which is then composited over the final image.
-
-To take advantage of this, you must ensure that 
+trueSKY rendering now occurs between the solid and transparent rendering in Unity. Therefore  the **TransparencyCamera** component is no longer required.
 
 The trueSKY object
 ---------------
