@@ -84,7 +84,7 @@ url: Simul/Clouds/BaseLightningRenderer.h Source File
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordtype">void</span> RestoreDeviceObjects(<a class="code" href="classsimul_1_1crossplatform_1_1RenderPlatform.html">crossplatform::RenderPlatform</a> *r);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordtype">void</span> InvalidateDeviceObjects();</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordtype">void</span> PreRenderUpdate(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext,<span class="keywordtype">float</span> real_time);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordtype">void</span> Render(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;,crossplatform::Texture *depth_tex,vec4 depthViewportXYWH,<span class="keyword">const</span> clouds::TransparencyAtmospherics &amp;t</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordtype">void</span> Render(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;,<a class="code" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *depth_tex,vec4 depthViewportXYWH,<span class="keyword">const</span> clouds::TransparencyAtmospherics &amp;t</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                , <span class="keywordtype">float</span> brightnessToUnity);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">void</span> EnsureEffectsAreBuilt(<a class="code" href="classsimul_1_1crossplatform_1_1RenderPlatform.html">crossplatform::RenderPlatform</a> *r);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordtype">void</span> RecompileShaders();</div>
@@ -94,7 +94,7 @@ url: Simul/Clouds/BaseLightningRenderer.h Source File
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1RenderPlatform.html">crossplatform::RenderPlatform</a> *renderPlatform;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <a class="code" href="classsimul_1_1clouds_1_1CloudKeyframer.html">simul::clouds::CloudKeyframer</a> *cloudKeyframer;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <a class="code" href="classsimul_1_1sky_1_1BaseSkyInterface.html">simul::sky::BaseSkyInterface</a> *baseSkyInterface;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            crossplatform::Texture  *randomTexture;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a>  *randomTexture;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1Effect.html">crossplatform::Effect</a>   *effect;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1Layout.html">crossplatform::Layout</a>   *layout;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            crossplatform::Buffer   *vertexBuffers[4];</div>
@@ -112,6 +112,7 @@ url: Simul/Clouds/BaseLightningRenderer.h Source File
 <div class="ttc" id="classsimul_1_1crossplatform_1_1Effect_html"><div class="ttname"><a href="classsimul_1_1crossplatform_1_1Effect.html">simul::crossplatform::Effect</a></div><div class="ttdoc">The cross-platform base class for shader effects. </div><div class="ttdef"><b>Definition:</b> <a href="CrossPlatform_2Effect_8h_source.html#l00541">Effect.h:541</a></div></div>
 <div class="ttc" id="classsimul_1_1clouds_1_1CloudKeyframer_html"><div class="ttname"><a href="classsimul_1_1clouds_1_1CloudKeyframer.html">simul::clouds::CloudKeyframer</a></div><div class="ttdef"><b>Definition:</b> <a href="CloudKeyframer_8h_source.html#l00141">CloudKeyframer.h:141</a></div></div>
 <div class="ttc" id="classsimul_1_1sky_1_1BaseSkyInterface_html"><div class="ttname"><a href="classsimul_1_1sky_1_1BaseSkyInterface.html">simul::sky::BaseSkyInterface</a></div><div class="ttdoc">An abstract interface class for skies. </div><div class="ttdef"><b>Definition:</b> <a href="SkyInterface_8h_source.html#l00229">SkyInterface.h:229</a></div></div>
+<div class="ttc" id="classsimul_1_1crossplatform_1_1Texture_html"><div class="ttname"><a href="classsimul_1_1crossplatform_1_1Texture.html">simul::crossplatform::Texture</a></div><div class="ttdoc">A Texture base class. </div><div class="ttdef"><b>Definition:</b> <a href="CrossPlatform_2Texture_8h_source.html#l00070">Texture.h:70</a></div></div>
 <div class="ttc" id="structsimul_1_1crossplatform_1_1DeviceContext_html"><div class="ttname"><a href="structsimul_1_1crossplatform_1_1DeviceContext.html">simul::crossplatform::DeviceContext</a></div><div class="ttdef"><b>Definition:</b> <a href="DeviceContext_8h_source.html#l00022">DeviceContext.h:22</a></div></div>
 <div class="ttc" id="classsimul_1_1clouds_1_1BaseLightningRenderer_html"><div class="ttname"><a href="classsimul_1_1clouds_1_1BaseLightningRenderer.html">simul::clouds::BaseLightningRenderer</a></div><div class="ttdoc">The renderer for lightning. </div><div class="ttdef"><b>Definition:</b> <a href="BaseLightningRenderer_8h_source.html#l00037">BaseLightningRenderer.h:37</a></div></div>
 <div class="ttc" id="namespacesimul_html"><div class="ttname"><a href="namespacesimul.html">simul</a></div><div class="ttdef"><b>Definition:</b> <a href="Base_8h_source.html#l00001">Base.h:1</a></div></div>
@@ -122,6 +123,6 @@ url: Simul/Clouds/BaseLightningRenderer.h Source File
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Thu Jan 21 2016 07:46:38</small></address>
+Fri Jan 22 2016 07:46:29</small></address>
 </body>
 </html>

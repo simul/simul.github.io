@@ -120,25 +120,17 @@ url: Simul/PlugIns/UE4/PluginRenderInterface/UnityPluginInterface.h Source File
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;UE4RENDERINTERFACE_EXPORT <span class="keywordtype">int</span> StaticTick( <span class="keywordtype">float</span> deltaTime );</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;UE4RENDERINTERFACE_EXPORT <span class="keywordtype">int</span> StaticOnDeviceChanged(<span class="keywordtype">void</span> * device);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;UE4RENDERINTERFACE_EXPORT <span class="keywordtype">void</span> UnitySetGraphicsDevice(<span class="keywordtype">void</span>* device, GfxDeviceRenderer deviceType, GfxDeviceEventType eventType);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;UE4RENDERINTERFACE_EXPORT <span class="keywordtype">void</span> UnityRenderEvent (<span class="keywordtype">int</span> eventID);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;UE4RENDERINTERFACE_EXPORT <span class="keywordtype">int</span> StaticSetSequenceTxt( <span class="keyword">const</span> <span class="keywordtype">char</span> *txt );</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;UE4RENDERINTERFACE_EXPORT <span class="keywordtype">int</span> StaticSetSequence( std::string&amp; SequenceInput );</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;UE4RENDERINTERFACE_EXPORT <span class="keywordtype">void</span>* StaticGetEnvironment();</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">// If exported by a plugin, this function will be called for GL.IssuePluginEvent script calls.</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">// The function will be called on a rendering thread; note that when multithreaded rendering is used,</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">// the rendering thread WILL BE DIFFERENT from the thread that all scripts &amp; other game logic happens!</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">// You have to ensure any synchronization with other plugin script calls is properly done by you.</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> EXPORT_API UnityRenderEvent (<span class="keywordtype">int</span> eventID);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;UE4RENDERINTERFACE_EXPORT <span class="keywordtype">int</span> StaticSetSequenceTxt( <span class="keyword">const</span> <span class="keywordtype">char</span> *txt );</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;UE4RENDERINTERFACE_EXPORT <span class="keywordtype">int</span> StaticSetSequence( std::string&amp; SequenceInput );</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;UE4RENDERINTERFACE_EXPORT <span class="keywordtype">void</span>* StaticGetEnvironment();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
 <div class="ttc" id="namespacesimul_html"><div class="ttname"><a href="namespacesimul.html">simul</a></div><div class="ttdef"><b>Definition:</b> <a href="Base_8h_source.html#l00001">Base.h:1</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Thu Jan 21 2016 07:46:39</small></address>
+Fri Jan 22 2016 07:46:29</small></address>
 </body>
 </html>

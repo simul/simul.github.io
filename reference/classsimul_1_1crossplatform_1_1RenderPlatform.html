@@ -58,7 +58,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a41511aa8e73ed2f5e5a98f16e2faa8b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41511aa8e73ed2f5e5a98f16e2faa8b8"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#a41511aa8e73ed2f5e5a98f16e2faa8b8">ActivateRenderTargets</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">DeviceContext</a> &amp;deviceContext, int num, Texture **targs, Texture *depth)=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#a41511aa8e73ed2f5e5a98f16e2faa8b8">ActivateRenderTargets</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">DeviceContext</a> &amp;deviceContext, int num, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">Texture</a> **targs, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">Texture</a> *depth)=0</td></tr>
 <tr class="memdesc:a41511aa8e73ed2f5e5a98f16e2faa8b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make the specified rendertargets and optional depth target active. <br /></td></tr>
 <tr class="separator:a41511aa8e73ed2f5e5a98f16e2faa8b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a763c06ea4a66290c5fec8b7824b7c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a763c06ea4a66290c5fec8b7824b7c4"></a>
@@ -70,7 +70,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memdesc:a7f3c079223a055293262058b168242f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the current render target (i.e. the screen). In most API's this is simply a case of drawing a full-screen quad in the specified rgba colour. <br /></td></tr>
 <tr class="separator:a7f3c079223a055293262058b168242f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a492c78c5be7ffc7e1dd7cb2e0a292442"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a492c78c5be7ffc7e1dd7cb2e0a292442"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#a492c78c5be7ffc7e1dd7cb2e0a292442">ClearTexture</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, crossplatform::Texture *texture, const vec4 &amp;colour)</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#a492c78c5be7ffc7e1dd7cb2e0a292442">ClearTexture</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *texture, const vec4 &amp;colour)</td></tr>
 <tr class="memdesc:a492c78c5be7ffc7e1dd7cb2e0a292442"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the contents of the given texture to the specified colour. <br /></td></tr>
 <tr class="separator:a492c78c5be7ffc7e1dd7cb2e0a292442"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6879238ac9cd71b36a9454f72ffce905"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6879238ac9cd71b36a9454f72ffce905"></a>
@@ -126,7 +126,7 @@ virtual SamplerState *&#160;</td><td class="memItemRight" valign="bottom"><a cla
 <tr class="memdesc:a445eadd988b19b7dc960a004f65ad533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a platform-specific sampler state instance. <br /></td></tr>
 <tr class="separator:a445eadd988b19b7dc960a004f65ad533"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1eb21fdc965a63ec8d2eb5982afc34ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1eb21fdc965a63ec8d2eb5982afc34ad"></a>
-virtual Texture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#a1eb21fdc965a63ec8d2eb5982afc34ad">CreateTexture</a> (const char *lFileNameUtf8=NULL)=0</td></tr>
+virtual <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#a1eb21fdc965a63ec8d2eb5982afc34ad">CreateTexture</a> (const char *lFileNameUtf8=NULL)=0</td></tr>
 <tr class="memdesc:a1eb21fdc965a63ec8d2eb5982afc34ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a platform-specific texture instance. <br /></td></tr>
 <tr class="separator:a1eb21fdc965a63ec8d2eb5982afc34ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef7eab1870b1420940461db8e879a26d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef7eab1870b1420940461db8e879a26d"></a>
@@ -216,7 +216,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memdesc:a263d4d2edac3c8d89602563e0b8444e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional - call this to recompile the standard shaders. <br /></td></tr>
 <tr class="separator:a263d4d2edac3c8d89602563e0b8444e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bf11a07959724c81e067f3dfccb582c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7bf11a07959724c81e067f3dfccb582c"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#a7bf11a07959724c81e067f3dfccb582c">Resolve</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">DeviceContext</a> &amp;deviceContext, Texture *destination, Texture *source)=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#a7bf11a07959724c81e067f3dfccb582c">Resolve</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">DeviceContext</a> &amp;deviceContext, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">Texture</a> *destination, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">Texture</a> *source)=0</td></tr>
 <tr class="memdesc:a7bf11a07959724c81e067f3dfccb582c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolve a MSAA texture to a normal texture. <br /></td></tr>
 <tr class="separator:a7bf11a07959724c81e067f3dfccb582c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0c27b1c85345571593bead14d9b7f07"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae0c27b1c85345571593bead14d9b7f07"></a>
@@ -226,7 +226,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:a5371e8bdaed969b01bd0c09624796da9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#a5371e8bdaed969b01bd0c09624796da9">RestoreRenderState</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">DeviceContext</a> &amp;deviceContext)=0</td></tr>
 <tr class="separator:a5371e8bdaed969b01bd0c09624796da9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae58ec0f35cdabf7f908e350d29d5e3a3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae58ec0f35cdabf7f908e350d29d5e3a3"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#ae58ec0f35cdabf7f908e350d29d5e3a3">SaveTexture</a> (Texture *texture, const char *lFileNameUtf8)=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#ae58ec0f35cdabf7f908e350d29d5e3a3">SaveTexture</a> (<a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">Texture</a> *texture, const char *lFileNameUtf8)=0</td></tr>
 <tr class="memdesc:ae58ec0f35cdabf7f908e350d29d5e3a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save a texture to disk. <br /></td></tr>
 <tr class="separator:ae58ec0f35cdabf7f908e350d29d5e3a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab79c53fd690177997364b0e3069de2f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab79c53fd690177997364b0e3069de2f3"></a>
@@ -420,6 +420,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Thu Jan 21 2016 07:46:40</small></address>
+Fri Jan 22 2016 07:46:30</small></address>
 </body>
 </html>

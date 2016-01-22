@@ -190,12 +190,12 @@ url: Simul/Clouds/TrueSkyRenderer.h Source File
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1BaseFramebuffer.html">simul::crossplatform::BaseFramebuffer</a>       *msaaFramebuffer;</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            crossplatform::ConstantBuffer&lt;LightProbeConstants&gt;          lightProbeConstants;</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            <a class="code" href="classsimul_1_1base_1_1MemoryInterface.html">simul::base::MemoryInterface</a>                *memoryInterface;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            simul::crossplatform::Texture               *linearDepthTexture;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            simul::crossplatform::Texture *loss2DTexture;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            simul::crossplatform::Texture *inscatter2DTexture;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            simul::crossplatform::Texture *cloudVisibilityRT;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            simul::crossplatform::Texture *skylightCubemap;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            simul::crossplatform::Texture *reflectionCubemap;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1Texture.html">simul::crossplatform::Texture</a>               *linearDepthTexture;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1Texture.html">simul::crossplatform::Texture</a> *loss2DTexture;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1Texture.html">simul::crossplatform::Texture</a> *inscatter2DTexture;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1Texture.html">simul::crossplatform::Texture</a> *cloudVisibilityRT;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1Texture.html">simul::crossplatform::Texture</a> *skylightCubemap;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1Texture.html">simul::crossplatform::Texture</a> *reflectionCubemap;</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            std::map&lt;int,const simul::crossplatform::CameraOutputInterface *&gt; cameras;</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            <span class="keywordtype">bool</span> AllOsds;</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            crossplatform::DemoOverlay *demoOverlay;        </div>
@@ -230,6 +230,7 @@ url: Simul/Clouds/TrueSkyRenderer.h Source File
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;}</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="preprocessor">#pragma warning(pop)</span></div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classsimul_1_1crossplatform_1_1Texture_html"><div class="ttname"><a href="classsimul_1_1crossplatform_1_1Texture.html">simul::crossplatform::Texture</a></div><div class="ttdoc">A Texture base class. </div><div class="ttdef"><b>Definition:</b> <a href="CrossPlatform_2Texture_8h_source.html#l00070">Texture.h:70</a></div></div>
 <div class="ttc" id="classsimul_1_1base_1_1MemoryInterface_html"><div class="ttname"><a href="classsimul_1_1base_1_1MemoryInterface.html">simul::base::MemoryInterface</a></div><div class="ttdoc">A virtual interface class for classes that can allocate and de-allocate memory. </div><div class="ttdef"><b>Definition:</b> <a href="MemoryInterface_8h_source.html#l00045">MemoryInterface.h:45</a></div></div>
 <div class="ttc" id="namespacesimul_html"><div class="ttname"><a href="namespacesimul.html">simul</a></div><div class="ttdef"><b>Definition:</b> <a href="Base_8h_source.html#l00001">Base.h:1</a></div></div>
 <div class="ttc" id="classsimul_1_1base_1_1Timer_html"><div class="ttname"><a href="classsimul_1_1base_1_1Timer.html">simul::base::Timer</a></div><div class="ttdoc">A microsecond timer. Provides timing to microsecond accuracy; results are reported in milliseconds...</div><div class="ttdef"><b>Definition:</b> <a href="Timer_8h_source.html#l00021">Timer.h:21</a></div></div>
@@ -241,6 +242,6 @@ url: Simul/Clouds/TrueSkyRenderer.h Source File
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Thu Jan 21 2016 07:46:38</small></address>
+Fri Jan 22 2016 07:46:29</small></address>
 </body>
 </html>

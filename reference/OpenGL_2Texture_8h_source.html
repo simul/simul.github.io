@@ -61,7 +61,7 @@ url: Simul/Platform/OpenGL/Texture.h Source File
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                <span class="keywordflow">return</span> sampler_state;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            }</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        };</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">class </span>SIMUL_OPENGL_EXPORT Texture:<span class="keyword">public</span> simul::crossplatform::Texture</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">class </span>SIMUL_OPENGL_EXPORT Texture:<span class="keyword">public</span> <a class="code" href="classsimul_1_1crossplatform_1_1Texture.html">simul::crossplatform::Texture</a></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        {</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            GLuint m_fb;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <span class="keywordtype">int</span> main_viewport[4];</div>
@@ -92,7 +92,7 @@ url: Simul/Platform/OpenGL/Texture.h Source File
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordtype">int</span> GetWidth() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordtype">int</span> GetDimension() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keywordtype">int</span> GetSampleCount() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordtype">bool</span> IsComputable() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordtype">bool</span> IsComputable() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordtype">void</span> copyToMemory(crossplatform::DeviceContext &amp;deviceContext,<span class="keywordtype">void</span> *target,<span class="keywordtype">int</span> start_texel,<span class="keywordtype">int</span> num_texels);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            GLuint pTextureObject;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            GLuint *pViewObjects;</div>
@@ -102,6 +102,7 @@ url: Simul/Platform/OpenGL/Texture.h Source File
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        };</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
+<div class="ttc" id="classsimul_1_1crossplatform_1_1Texture_html"><div class="ttname"><a href="classsimul_1_1crossplatform_1_1Texture.html">simul::crossplatform::Texture</a></div><div class="ttdoc">A Texture base class. </div><div class="ttdef"><b>Definition:</b> <a href="CrossPlatform_2Texture_8h_source.html#l00070">Texture.h:70</a></div></div>
 <div class="ttc" id="namespacesimul_1_1crossplatform_html_a29c5057471bee180c1cec3a2ccdd9940"><div class="ttname"><a href="namespacesimul_1_1crossplatform.html#a29c5057471bee180c1cec3a2ccdd9940">simul::crossplatform::PixelFormat</a></div><div class="ttdeci">PixelFormat</div><div class="ttdoc">A cross-platform equivalent to the OpenGL and DirectX pixel formats. </div><div class="ttdef"><b>Definition:</b> <a href="PixelFormat_8h_source.html#l00007">PixelFormat.h:7</a></div></div>
 <div class="ttc" id="namespacesimul_html"><div class="ttname"><a href="namespacesimul.html">simul</a></div><div class="ttdef"><b>Definition:</b> <a href="Base_8h_source.html#l00001">Base.h:1</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -109,6 +110,6 @@ url: Simul/Platform/OpenGL/Texture.h Source File
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Thu Jan 21 2016 07:46:38</small></address>
+Fri Jan 22 2016 07:46:29</small></address>
 </body>
 </html>
