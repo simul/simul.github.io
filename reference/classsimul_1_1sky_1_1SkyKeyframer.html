@@ -50,6 +50,8 @@ url: simul::sky::SkyKeyframer Class Reference
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a19d53ad4f1fe999fb4bc4139b8d98c11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseKeyframer.html#a19d53ad4f1fe999fb4bc4139b8d98c11">BumpKeyframe</a> (<a class="el" href="structsimul_1_1sky_1_1BaseKeyframe.html">BaseKeyframe</a> *K, float time_scale)</td></tr>
+<tr class="separator:a19d53ad4f1fe999fb4bc4139b8d98c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9d448c0c8bc33fbb408820ea50eba24"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab9d448c0c8bc33fbb408820ea50eba24"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#ab9d448c0c8bc33fbb408820ea50eba24">ClearHighlightConstellations</a> ()</td></tr>
 <tr class="memdesc:ab9d448c0c8bc33fbb408820ea50eba24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the highlighted constellations. <br /></td></tr>
@@ -2229,6 +2231,41 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 </div>
 </div>
+<a class="anchor" id="a19d53ad4f1fe999fb4bc4139b8d98c11"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void simul::sky::BaseKeyframer::BumpKeyframe </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsimul_1_1sky_1_1BaseKeyframe.html">BaseKeyframe</a> *&#160;</td>
+          <td class="paramname"><em>K</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>time_scale</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check if this keyframe is too close to any others. This is done by seeing if it's closer than time_scale. If so, the specified keyframe is moved away. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Simul/Sky/<a class="el" href="SkyKeyframer_8h_source.html">SkyKeyframer.h</a></li>
 </ul>
@@ -2237,6 +2274,6 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Sun Jan 24 2016 07:46:39</small></address>
+Mon Jan 25 2016 07:46:37</small></address>
 </body>
 </html>

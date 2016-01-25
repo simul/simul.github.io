@@ -124,23 +124,25 @@ url: Simul/Platform/CrossPlatform/MixedResolutionView.h Source File
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="keyword">const</span> <a class="code" href="classsimul_1_1crossplatform_1_1MixedResolutionView.html">MixedResolutionView</a>       *GetView        (<span class="keywordtype">int</span> view_id) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            <span class="keyword">const</span> ViewMap &amp;GetViews() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            <span class="keywordtype">int</span>                             AddView                 (<span class="keywordtype">bool</span> external_framebuffer);</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <span class="keywordtype">void</span>                            RemoveView              (<span class="keywordtype">int</span> view_id);</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <span class="keywordtype">void</span>                            Clear                   ();</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1RenderPlatform.html">crossplatform::RenderPlatform</a>               *renderPlatform;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            ViewMap                         views;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            <span class="keywordtype">int</span>                             last_created_view_id;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        };</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    }</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;}</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor">    #pragma warning(pop)</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            <span class="keywordtype">void</span> CleanUp(<span class="keywordtype">int</span> current_framenumber,<span class="keywordtype">int</span> max_age);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <span class="keyword">const</span> ViewMap &amp;GetViews() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <span class="keywordtype">int</span>                             AddView                 (<span class="keywordtype">bool</span> external_framebuffer);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            <span class="keywordtype">void</span>                            RemoveView              (<span class="keywordtype">int</span> view_id);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            <span class="keywordtype">void</span>                            Clear                   ();</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1RenderPlatform.html">crossplatform::RenderPlatform</a>               *renderPlatform;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            ViewMap                         views;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            <span class="keywordtype">int</span>                             last_created_view_id;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        };</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    }</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;}</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor">    #pragma warning(pop)</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="classsimul_1_1crossplatform_1_1MixedResolutionView_html_a9285ff4c4d0646c784c4b4de954a2316"><div class="ttname"><a href="classsimul_1_1crossplatform_1_1MixedResolutionView.html#a9285ff4c4d0646c784c4b4de954a2316">simul::crossplatform::MixedResolutionView::ScreenHeight</a></div><div class="ttdeci">int ScreenHeight</div><div class="ttdoc">Height of the screen. </div><div class="ttdef"><b>Definition:</b> <a href="MixedResolutionView_8h_source.html#l00097">MixedResolutionView.h:97</a></div></div>
 <div class="ttc" id="classsimul_1_1crossplatform_1_1MixedResolutionViewManager_html"><div class="ttname"><a href="classsimul_1_1crossplatform_1_1MixedResolutionViewManager.html">simul::crossplatform::MixedResolutionViewManager</a></div><div class="ttdoc">A class to store a set of MixedResolutionView objects, one per view id. </div><div class="ttdef"><b>Definition:</b> <a href="MixedResolutionView_8h_source.html#l00106">MixedResolutionView.h:106</a></div></div>
 <div class="ttc" id="classsimul_1_1crossplatform_1_1MixedResolutionView_html_adfde807188ac4dc12b388818b555c05e"><div class="ttname"><a href="classsimul_1_1crossplatform_1_1MixedResolutionView.html#adfde807188ac4dc12b388818b555c05e">simul::crossplatform::MixedResolutionView::ScreenWidth</a></div><div class="ttdeci">int ScreenWidth</div><div class="ttdoc">Width of the screen. </div><div class="ttdef"><b>Definition:</b> <a href="MixedResolutionView_8h_source.html#l00095">MixedResolutionView.h:95</a></div></div>
@@ -158,6 +160,6 @@ url: Simul/Platform/CrossPlatform/MixedResolutionView.h Source File
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Sun Jan 24 2016 07:46:38</small></address>
+Mon Jan 25 2016 07:46:36</small></address>
 </body>
 </html>

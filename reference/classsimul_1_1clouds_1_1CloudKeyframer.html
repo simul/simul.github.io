@@ -57,6 +57,8 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="structsimul_1_1clouds_1_1CloudKeyframer_1_1Storm.html">Storm</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#a0a73fdeb2831473b54d1ef6d46691f99">AddStorm</a> (float t0, float t1, vec2 centre_km, float r_km)</td></tr>
 <tr class="memdesc:a0a73fdeb2831473b54d1ef6d46691f99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a storm between the times specified, at the given centre <em>c</em>, with horizontal radius r (km). <br /></td></tr>
 <tr class="separator:a0a73fdeb2831473b54d1ef6d46691f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19d53ad4f1fe999fb4bc4139b8d98c11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseKeyframer.html#a19d53ad4f1fe999fb4bc4139b8d98c11">BumpKeyframe</a> (BaseKeyframe *K, float time_scale)</td></tr>
+<tr class="separator:a19d53ad4f1fe999fb4bc4139b8d98c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade9fe57965add1153fbc1d4a0a87333c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade9fe57965add1153fbc1d4a0a87333c"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseKeyframer.html#ade9fe57965add1153fbc1d4a0a87333c">DeleteKeyframeByUniqueId</a> (unsigned id)</td></tr>
 <tr class="memdesc:ade9fe57965add1153fbc1d4a0a87333c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete the keyframe if it exists (return true), else return false;. <br /></td></tr>
@@ -1949,6 +1951,41 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
+<a class="anchor" id="a19d53ad4f1fe999fb4bc4139b8d98c11"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void simul::sky::BaseKeyframer::BumpKeyframe </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsimul_1_1sky_1_1BaseKeyframe.html">BaseKeyframe</a> *&#160;</td>
+          <td class="paramname"><em>K</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>time_scale</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check if this keyframe is too close to any others. This is done by seeing if it's closer than time_scale. If so, the specified keyframe is moved away. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Simul/Clouds/<a class="el" href="CloudKeyframer_8h_source.html">CloudKeyframer.h</a></li>
 </ul>
@@ -1957,6 +1994,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Sun Jan 24 2016 07:46:38</small></address>
+Mon Jan 25 2016 07:46:36</small></address>
 </body>
 </html>

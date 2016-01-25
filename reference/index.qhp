@@ -434,6 +434,7 @@
       <keyword name="SetRainDropSizeMm" id="simul::clouds::BasePrecipitationRenderer::SetRainDropSizeMm" ref="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a55c38b653dfead1cea840c210ea99c58" />
       <keyword name="simul::clouds::BaseWeatherRenderer" id="simul::clouds::BaseWeatherRenderer" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html" />
       <keyword name="BaseWeatherRenderer" id="simul::clouds::BaseWeatherRenderer::BaseWeatherRenderer" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a913f9cdf54967ed3cab0c4dbf0e649cd" />
+      <keyword name="CleanUpFramebuffers" id="simul::clouds::BaseWeatherRenderer::CleanUpFramebuffers" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a6d04322cd5166ac45d8c8a1fe161f836" />
       <keyword name="ConnectInterfaces" id="simul::clouds::BaseWeatherRenderer::ConnectInterfaces" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aa776a6b711992de94dd2752cffeb49cc" />
       <keyword name="CreateSubObjects" id="simul::clouds::BaseWeatherRenderer::CreateSubObjects" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ab46b9cef3db6ffe62161344329f93ba8" />
       <keyword name="EnableSky" id="simul::clouds::BaseWeatherRenderer::EnableSky" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a08d0b4de5a2abca54ea8e1694f5e65da" />
@@ -752,6 +753,7 @@
       <keyword name="SetInt" id="simul::clouds::CloudKeyframe::SetInt" ref="structsimul_1_1clouds_1_1CloudKeyframe.html#a3c0cb3824cd45bf2dd74e0cd45b74f2e" />
       <keyword name="simul::clouds::CloudKeyframer" id="simul::clouds::CloudKeyframer" ref="classsimul_1_1clouds_1_1CloudKeyframer.html" />
       <keyword name="AddStorm" id="simul::clouds::CloudKeyframer::AddStorm" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a0a73fdeb2831473b54d1ef6d46691f99" />
+      <keyword name="BumpKeyframe" id="simul::clouds::CloudKeyframer::BumpKeyframe" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a19d53ad4f1fe999fb4bc4139b8d98c11" />
       <keyword name="DeleteKeyframeByUniqueId" id="simul::clouds::CloudKeyframer::DeleteKeyframeByUniqueId" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#ade9fe57965add1153fbc1d4a0a87333c" />
       <keyword name="DeleteStorm" id="simul::clouds::CloudKeyframer::DeleteStorm" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#aacf4a493e72a9571153bcd6c245fcf8e" />
       <keyword name="ForceRelight" id="simul::clouds::CloudKeyframer::ForceRelight" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a6eea5900908df2f5836210fd7269ec1d" />
@@ -1194,6 +1196,7 @@
       <keyword name="~MixedResolutionView" id="simul::crossplatform::MixedResolutionView::~MixedResolutionView" ref="classsimul_1_1crossplatform_1_1MixedResolutionView.html#af37a52c2e0339dc4deedc9b1b851a4a7" />
       <keyword name="simul::crossplatform::MixedResolutionViewManager" id="simul::crossplatform::MixedResolutionViewManager" ref="classsimul_1_1crossplatform_1_1MixedResolutionViewManager.html" />
       <keyword name="AddView" id="simul::crossplatform::MixedResolutionViewManager::AddView" ref="classsimul_1_1crossplatform_1_1MixedResolutionViewManager.html#aa551d3f7a793cd022edc1ee8abf3ee35" />
+      <keyword name="CleanUp" id="simul::crossplatform::MixedResolutionViewManager::CleanUp" ref="classsimul_1_1crossplatform_1_1MixedResolutionViewManager.html#ac36d5f722967e48fb239a82ff4ec799b" />
       <keyword name="Clear" id="simul::crossplatform::MixedResolutionViewManager::Clear" ref="classsimul_1_1crossplatform_1_1MixedResolutionViewManager.html#af75ad4edb5446e611ffe5a34d03385cd" />
       <keyword name="GetView" id="simul::crossplatform::MixedResolutionViewManager::GetView" ref="classsimul_1_1crossplatform_1_1MixedResolutionViewManager.html#aa0dd3192ff61632792e0b3095d764b78" />
       <keyword name="GetViews" id="simul::crossplatform::MixedResolutionViewManager::GetViews" ref="classsimul_1_1crossplatform_1_1MixedResolutionViewManager.html#a6f9adf44e6ca0baf8010926669dc5193" />
@@ -1832,6 +1835,7 @@
       <keyword name="SetFloat" id="simul::sky::BaseKeyframe::SetFloat" ref="structsimul_1_1sky_1_1BaseKeyframe.html#ae2d66d5d65be772337fb41fe49d6c700" />
       <keyword name="SetInt" id="simul::sky::BaseKeyframe::SetInt" ref="structsimul_1_1sky_1_1BaseKeyframe.html#a702d9fef6645f471cd996ace2989948b" />
       <keyword name="simul::sky::BaseKeyframer" id="simul::sky::BaseKeyframer" ref="classsimul_1_1sky_1_1BaseKeyframer.html" />
+      <keyword name="BumpKeyframe" id="simul::sky::BaseKeyframer::BumpKeyframe" ref="classsimul_1_1sky_1_1BaseKeyframer.html#a19d53ad4f1fe999fb4bc4139b8d98c11" />
       <keyword name="DeleteKeyframe" id="simul::sky::BaseKeyframer::DeleteKeyframe" ref="classsimul_1_1sky_1_1BaseKeyframer.html#a90ae7c7419a88526fc6de21c06b88f04" />
       <keyword name="DeleteKeyframeByUniqueId" id="simul::sky::BaseKeyframer::DeleteKeyframeByUniqueId" ref="classsimul_1_1sky_1_1BaseKeyframer.html#ade9fe57965add1153fbc1d4a0a87333c" />
       <keyword name="GetAllModifiableKeyframes" id="simul::sky::BaseKeyframer::GetAllModifiableKeyframes" ref="classsimul_1_1sky_1_1BaseKeyframer.html#a485eb9589bf63a7b5a536d87c6de07ab" />
@@ -2087,6 +2091,7 @@
       <keyword name="SetFloat" id="simul::sky::SkyKeyframe::SetFloat" ref="structsimul_1_1sky_1_1SkyKeyframe.html#a66435533d28f9ad22b159f4a9dc95097" />
       <keyword name="SetInt" id="simul::sky::SkyKeyframe::SetInt" ref="structsimul_1_1sky_1_1SkyKeyframe.html#a629b0364e6fd6c9256e170e4e32da13d" />
       <keyword name="simul::sky::SkyKeyframer" id="simul::sky::SkyKeyframer" ref="classsimul_1_1sky_1_1SkyKeyframer.html" />
+      <keyword name="BumpKeyframe" id="simul::sky::SkyKeyframer::BumpKeyframe" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a19d53ad4f1fe999fb4bc4139b8d98c11" />
       <keyword name="ClearHighlightConstellations" id="simul::sky::SkyKeyframer::ClearHighlightConstellations" ref="classsimul_1_1sky_1_1SkyKeyframer.html#ab9d448c0c8bc33fbb408820ea50eba24" />
       <keyword name="DeleteKeyframeByUniqueId" id="simul::sky::SkyKeyframer::DeleteKeyframeByUniqueId" ref="classsimul_1_1sky_1_1SkyKeyframer.html#ade9fe57965add1153fbc1d4a0a87333c" />
       <keyword name="GetAllModifiableKeyframes" id="simul::sky::SkyKeyframer::GetAllModifiableKeyframes" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a485eb9589bf63a7b5a536d87c6de07ab" />
