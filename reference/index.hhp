@@ -72,6 +72,7 @@ MixedResolutionCompositor_8h_source.html
 TextureGenerator_8h_source.html
 TimedNoise3D_8h_source.html
 TrueSkyRenderer_8h_source.html
+TwoResFramebuffer_8h_source.html
 Geometry_8h_source.html
 Orientation_8h_source.html
 OrientationInterface_8h_source.html
@@ -143,7 +144,6 @@ CrossPlatform_2Texture_8h_source.html
 OpenGL_2Texture_8h_source.html
 DirectX11_2Texture_8h_source.html
 Topology_8h_source.html
-TwoResFramebuffer_8h_source.html
 CompileShaderDX1x_8h_source.html
 CreateEffectDX1x_8h_source.html
 Direct3D11CallbackInterface_8h_source.html
@@ -302,6 +302,8 @@ structsimul_1_1clouds_1_1SelectionIdentifier.html
 structsimul_1_1clouds_1_1SelectionIdentifier-members.html
 classsimul_1_1clouds_1_1TimedNoise3D.html
 classsimul_1_1clouds_1_1TimedNoise3D-members.html
+classsimul_1_1clouds_1_1TwoResFramebuffer.html
+classsimul_1_1clouds_1_1TwoResFramebuffer-members.html
 namespacesimul_1_1crossplatform.html
 structsimul_1_1crossplatform_1_1AmortizationStruct.html
 structsimul_1_1crossplatform_1_1AmortizationStruct-members.html
@@ -350,8 +352,6 @@ classsimul_1_1crossplatform_1_1Texture.html
 classsimul_1_1crossplatform_1_1Texture-members.html
 classsimul_1_1crossplatform_1_1TextureView.html
 classsimul_1_1crossplatform_1_1TextureView-members.html
-classsimul_1_1crossplatform_1_1TwoResFramebuffer.html
-classsimul_1_1crossplatform_1_1TwoResFramebuffer-members.html
 namespacesimul_1_1dx11.html
 classsimul_1_1dx11_1_1ConstantBuffer.html
 classsimul_1_1dx11_1_1ConstantBuffer-members.html

@@ -111,6 +111,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="separator:adc670526175f818bd251cc510031911c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ea66f629272af3262bf909fbf6614d2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#a3ea66f629272af3262bf909fbf6614d2">GetInterpolation</a> () const </td></tr>
 <tr class="separator:a3ea66f629272af3262bf909fbf6614d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceb561b2543f910aafa98daa5f7254b6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aceb561b2543f910aafa98daa5f7254b6"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#aceb561b2543f910aafa98daa5f7254b6">GetInterpolationChecksum</a> () const </td></tr>
+<tr class="memdesc:aceb561b2543f910aafa98daa5f7254b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checksum for the interpolated state. <br /></td></tr>
+<tr class="separator:aceb561b2543f910aafa98daa5f7254b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fa0664bbe3f09f56ba4452671b48237"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2fa0664bbe3f09f56ba4452671b48237"></a>
 <a class="el" href="structsimul_1_1sky_1_1BaseKeyframe.html">sky::BaseKeyframe</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#a2fa0664bbe3f09f56ba4452671b48237">GetKeyframe</a> (int i)</td></tr>
 <tr class="memdesc:a2fa0664bbe3f09f56ba4452671b48237"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the i'th keyframe. <br /></td></tr>
@@ -179,6 +183,10 @@ const <a class="el" href="structsimul_1_1clouds_1_1CloudKeyframer_1_1Storm.html"
 <a class="el" href="structsimul_1_1clouds_1_1CloudKeyframer_1_1Storm.html">Storm</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#a0ac4d037228ca36e39899105fdd6fb63">GetStormByUniqueId</a> (unsigned uid)</td></tr>
 <tr class="memdesc:a0ac4d037228ca36e39899105fdd6fb63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the storm with unique identifier <em>uid</em>. <br /></td></tr>
 <tr class="separator:a0ac4d037228ca36e39899105fdd6fb63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5621eefb0318d22d72475abc721b985"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae5621eefb0318d22d72475abc721b985"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#ae5621eefb0318d22d72475abc721b985">GetSubdivisionChecksum</a> () const </td></tr>
+<tr class="memdesc:ae5621eefb0318d22d72475abc721b985"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a checksum that only changes if an in-use subdivision has modified (cycling does not change it). <br /></td></tr>
+<tr class="separator:ae5621eefb0318d22d72475abc721b985"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a960196e1b20bb54e0daa83f629582a3a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a960196e1b20bb54e0daa83f629582a3a"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#a960196e1b20bb54e0daa83f629582a3a">GetVisibility</a> (const float *pos, const float *dir)</td></tr>
 <tr class="memdesc:a960196e1b20bb54e0daa83f629582a3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get offset in metres - loops by wavelength. <br /></td></tr>
@@ -199,10 +207,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#a9f8a9b7db598e0bcda7d5b1919c651ac">Load</a> (<a class="el" href="structsimul_1_1sky_1_1Input.html">simul::sky::Input</a> &amp;is)</td></tr>
 <tr class="memdesc:a9f8a9b7db598e0bcda7d5b1919c651ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load from a binary stream: <br /></td></tr>
 <tr class="separator:a9f8a9b7db598e0bcda7d5b1919c651ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae48951bae93c5701594f430981ba04e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae48951bae93c5701594f430981ba04e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#aae48951bae93c5701594f430981ba04e">LoadFromText</a> (simul::crossplatform::TextInput &amp;input)</td></tr>
-<tr class="memdesc:aae48951bae93c5701594f430981ba04e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load from a textual input. <br /></td></tr>
-<tr class="separator:aae48951bae93c5701594f430981ba04e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a805e4ad544d48fe3528acf7efa0553e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a805e4ad544d48fe3528acf7efa0553e2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#a805e4ad544d48fe3528acf7efa0553e2">LoadFromText</a> (simul::crossplatform::TextInput &amp;input) override</td></tr>
+<tr class="memdesc:a805e4ad544d48fe3528acf7efa0553e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load from a textual input. <br /></td></tr>
+<tr class="separator:a805e4ad544d48fe3528acf7efa0553e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9780e38b5891a23bf7439f254464f51"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa9780e38b5891a23bf7439f254464f51"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#aa9780e38b5891a23bf7439f254464f51">New</a> ()</td></tr>
 <tr class="memdesc:aa9780e38b5891a23bf7439f254464f51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear keyframes. <br /></td></tr>
@@ -223,10 +231,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#a2989ee2b94c4dccc9b38913efda3e55a">Save</a> (<a class="el" href="structsimul_1_1sky_1_1Output.html">simul::sky::Output</a> &amp;os) const </td></tr>
 <tr class="memdesc:a2989ee2b94c4dccc9b38913efda3e55a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save to a binary stream: <br /></td></tr>
 <tr class="separator:a2989ee2b94c4dccc9b38913efda3e55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2e342f2f1c9147307ae212d245b6b25"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af2e342f2f1c9147307ae212d245b6b25"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#af2e342f2f1c9147307ae212d245b6b25">SaveToText</a> (simul::crossplatform::TextOutput &amp;output, bool include_keyframes) const </td></tr>
-<tr class="memdesc:af2e342f2f1c9147307ae212d245b6b25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save this keyframer's values to textual output. <br /></td></tr>
-<tr class="separator:af2e342f2f1c9147307ae212d245b6b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97992a3d49ce58a1d30219bf040e95b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a97992a3d49ce58a1d30219bf040e95b8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#a97992a3d49ce58a1d30219bf040e95b8">SaveToText</a> (simul::crossplatform::TextOutput &amp;output, bool include_keyframes) const  override</td></tr>
+<tr class="memdesc:a97992a3d49ce58a1d30219bf040e95b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save this keyframer's values to textual output. <br /></td></tr>
+<tr class="separator:a97992a3d49ce58a1d30219bf040e95b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51ee79ee8d5e35a9080718f0f769a217"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51ee79ee8d5e35a9080718f0f769a217"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#a51ee79ee8d5e35a9080718f0f769a217">SetFloat</a> (const char *name, float val)</td></tr>
 <tr class="memdesc:a51ee79ee8d5e35a9080718f0f769a217"><td class="mdescLeft">&#160;</td><td class="mdescRight">Text-based interface - sets the named value if it exists. <br /></td></tr>
@@ -1994,6 +2002,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Sat Jan 30 2016 07:46:33</small></address>
+Sun Jan 31 2016 07:46:34</small></address>
 </body>
 </html>

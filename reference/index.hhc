@@ -226,7 +226,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::crossplatform::TextureView"><param name="Local" value="classsimul_1_1crossplatform_1_1TextureView.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::base::Timer"><param name="Local" value="classsimul_1_1base_1_1Timer.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::dx11::TrueSkyRenderer"><param name="Local" value="classsimul_1_1dx11_1_1TrueSkyRenderer.html"><param name="ImageNumber" value="11"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::crossplatform::TwoResFramebuffer"><param name="Local" value="classsimul_1_1crossplatform_1_1TwoResFramebuffer.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::clouds::TwoResFramebuffer"><param name="Local" value="classsimul_1_1clouds_1_1TwoResFramebuffer.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::sky::Variant32"><param name="Local" value="namespacesimul_1_1sky.html#structsimul_1_1sky_1_1Variant32"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::math::Vector"><param name="Local" value="classsimul_1_1math_1_1Vector.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
