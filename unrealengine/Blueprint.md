@@ -3,6 +3,9 @@ title: Blueprint
 layout: unreal
 ---
 
+The trueSKY Blueprint macros provide a wide array of functionality
+Blueprint only functions while your game is playing or simulating, so these macros will not take effect unless you are in one of these modes. To permanently change the properties of a light, start simulating, and right-click your Directional Light, then select "Keep Simulation Changes".
+
 trueSKY Lighting
 --------------
 
