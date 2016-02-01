@@ -825,8 +825,6 @@
       <keyword name="SetOvercastEffect" id="simul::clouds::CloudKeyframer::SetOvercastEffect" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#af29dab197c366143d24f793d333b2143" />
       <keyword name="GetVisible" id="simul::clouds::CloudKeyframer::GetVisible" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#abfa01114b65a04f69bd23b908356874a" />
       <keyword name="SetVisible" id="simul::clouds::CloudKeyframer::SetVisible" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a8bebb1e3f837adb7867903d96eebed27" />
-      <keyword name="GetMeetHorizon" id="simul::clouds::CloudKeyframer::GetMeetHorizon" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a2cc60b5a20f2556e175cc165b258844b" />
-      <keyword name="SetMeetHorizon" id="simul::clouds::CloudKeyframer::SetMeetHorizon" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#af40ec3e3d6b4eb46b97fac983d9785e7" />
       <keyword name="GetRenderMode" id="simul::clouds::CloudKeyframer::GetRenderMode" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#aaca74226b9e00a11794425b6fa161ff0" />
       <keyword name="SetRenderMode" id="simul::clouds::CloudKeyframer::SetRenderMode" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#aab21b1efc4b0e429b34c5ab896b2420e" />
       <keyword name="GetEdgeNoisePersistence" id="simul::clouds::CloudKeyframer::GetEdgeNoisePersistence" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a38baa8eda179a10c0370e9b88118064a" />
@@ -1811,8 +1809,6 @@
       <keyword name="intrusive_ptr_release" id="simul::sky::BaseAtmosphericsRenderer::intrusive_ptr_release" ref="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#a1b15d531ebb1578a502a3579660c3148" />
       <keyword name="RecompileShaders" id="simul::sky::BaseAtmosphericsRenderer::RecompileShaders" ref="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#a00f49c5c04b89809ce36e6368f7d16c6" />
       <keyword name="referenceCount" id="simul::sky::BaseAtmosphericsRenderer::referenceCount" ref="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#ad26fe1c55ab6384e001173f57d863072" />
-      <keyword name="RenderAsOverlay" id="simul::sky::BaseAtmosphericsRenderer::RenderAsOverlay" ref="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#a0e35446803171b2944a741cd8b23c3ba" />
-      <keyword name="RenderLoss" id="simul::sky::BaseAtmosphericsRenderer::RenderLoss" ref="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#ade050dd1dd11be1edfcdab81051c63a1" />
       <keyword name="SetCloudShadowTexture" id="simul::sky::BaseAtmosphericsRenderer::SetCloudShadowTexture" ref="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#ad4e0dfcde5e87fe500dedd96d8f1e092" />
       <keyword name="SetIlluminationTexture" id="simul::sky::BaseAtmosphericsRenderer::SetIlluminationTexture" ref="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#afe13e71b42cf3ed8dffcfb5ac3a05873" />
       <keyword name="SetLossAndInscatterTextures" id="simul::sky::BaseAtmosphericsRenderer::SetLossAndInscatterTextures" ref="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#a92bf1d0f9949e2595fe1dfffc58fad49" />
