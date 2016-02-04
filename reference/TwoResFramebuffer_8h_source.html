@@ -96,72 +96,73 @@ url: Simul/Clouds/TwoResFramebuffer.h Source File
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="comment">// set the range of the cubemap that&#39;s in the current frustum.</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordtype">void</span> SetCubeFrustumRange(<span class="keywordtype">int</span> i,vec4 r);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            vec4 GetCubeFrustumRange(<span class="keywordtype">int</span> i) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            int4 GetLastRange(<span class="keywordtype">int</span> i) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordtype">void</span> SetLastRange(<span class="keywordtype">int</span> i,int4 r);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordtype">void</span> SetDownscale(<span class="keywordtype">float</span> d);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> ActivateLowRes(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> DeactivateLowRes(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> DeactivateDepth(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> ActivateVolume(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;,<span class="keywordtype">int</span> num);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> DeactivateVolume(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="keywordtype">void</span> CompleteFrame();</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordtype">void</span> RenderDepthBuffers(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext,<a class="code" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *depthTexture,<span class="keyword">const</span> <a class="code" href="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1Viewport">crossplatform::Viewport</a> *viewport,<span class="keywordtype">int</span> x0,<span class="keywordtype">int</span> y0,<span class="keywordtype">int</span> dx,<span class="keywordtype">int</span> dy);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordtype">void</span> UpdatePixelOffset(<span class="keyword">const</span> <a class="code" href="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1ViewStruct">crossplatform::ViewStruct</a> &amp;viewStruct);</div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classsimul_1_1clouds_1_1TwoResFramebuffer.html#aa4c7455d2b00de55cb4f16b982bc955a">   87</a></span>&#160;            vec2                                <a class="code" href="classsimul_1_1clouds_1_1TwoResFramebuffer.html#aa4c7455d2b00de55cb4f16b982bc955a">pixelOffset</a>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordtype">void</span> Swap();</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordtype">void</span> SwapUpdateTextures();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a>              *GetLowResDepthTexture(<span class="keywordtype">int</span> idx=-1);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a>              *GetUpdateTexture(<span class="keywordtype">int</span> idx);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <a class="code" href="namespacesimul_1_1crossplatform.html#a29c5057471bee180c1cec3a2ccdd9940">crossplatform::PixelFormat</a> GetDepthFormat() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordtype">void</span> SetDepthFormat(<a class="code" href="namespacesimul_1_1crossplatform.html#a29c5057471bee180c1cec3a2ccdd9940">crossplatform::PixelFormat</a> p);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordtype">int</span>                                 final_octave;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            vec2                                GetPixelOffset()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">            </span>{</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                <span class="keywordflow">return</span> pixelOffset;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            }</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keywordtype">void</span>                                SetAmortization(<span class="keywordtype">int</span> a)</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                amortizationStruct.setAmortization(a);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            }</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keywordtype">int</span>                                 GetAmortization()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">            </span>{</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                <span class="keywordflow">return</span> amortizationStruct.getAmortization();</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            }</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="keyword">const</span> crossplatform::AmortizationStruct         &amp;GetAmortizationStruct()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">            </span>{</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                <span class="keywordflow">return</span> amortizationStruct;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            }</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            vec4                                cubeFrustumRange[6];</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            int4                                cubeTargetRange[6];</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            int4                                swapTargetRange[6];</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            mat4                                proj;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <span class="keywordtype">int</span>                                 Width,Height,BufferWidth,BufferHeight;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <span class="keywordtype">float</span>                               Downscale;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            crossplatform::AmortizationStruct                   amortizationStruct;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <span class="keywordtype">int</span>                                 volume_num;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <a class="code" href="namespacesimul_1_1crossplatform.html#a29c5057471bee180c1cec3a2ccdd9940">crossplatform::PixelFormat</a>          depthFormat;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <a class="code" href="classsimul_1_1geometry_1_1SimulOrientation.html">simul::geometry::SimulOrientation</a>   view_o;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            crossplatform::RenderPlatform       *renderPlatform;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            crossplatform::Texture              *nearFarTextures[5];</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            crossplatform::Texture              *updateTextures[2];</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            crossplatform::Texture              *lossTexture;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            crossplatform::Texture              *volumeTextures[2];</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            crossplatform::Texture              *lowResFramebuffers[4];</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        };</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">    #pragma warning(pop)</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            uint4 GetCubeIntegerFrustumRange(<span class="keywordtype">int</span> i) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            uint4 GetLastRange(<span class="keywordtype">int</span> i) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordtype">void</span> SetLastRange(<span class="keywordtype">int</span> i,uint4 r);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordtype">void</span> SetDownscale(<span class="keywordtype">float</span> d);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> ActivateLowRes(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> DeactivateLowRes(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> DeactivateDepth(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> ActivateVolume(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;,<span class="keywordtype">int</span> num);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> DeactivateVolume(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keywordtype">void</span> CompleteFrame();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keywordtype">void</span> RenderDepthBuffers(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext,<a class="code" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *depthTexture,<span class="keyword">const</span> <a class="code" href="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1Viewport">crossplatform::Viewport</a> *viewport,<span class="keywordtype">int</span> x0,<span class="keywordtype">int</span> y0,<span class="keywordtype">int</span> dx,<span class="keywordtype">int</span> dy);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordtype">void</span> UpdatePixelOffset(<span class="keyword">const</span> <a class="code" href="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1ViewStruct">crossplatform::ViewStruct</a> &amp;viewStruct);</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classsimul_1_1clouds_1_1TwoResFramebuffer.html#aa4c7455d2b00de55cb4f16b982bc955a">   89</a></span>&#160;            vec2                                <a class="code" href="classsimul_1_1clouds_1_1TwoResFramebuffer.html#aa4c7455d2b00de55cb4f16b982bc955a">pixelOffset</a>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordtype">void</span> Swap();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keywordtype">void</span> SwapUpdateTextures();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a>              *GetLowResDepthTexture(<span class="keywordtype">int</span> idx=-1);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a>              *GetUpdateTexture(<span class="keywordtype">int</span> idx);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <a class="code" href="namespacesimul_1_1crossplatform.html#a29c5057471bee180c1cec3a2ccdd9940">crossplatform::PixelFormat</a> GetDepthFormat() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keywordtype">void</span> SetDepthFormat(<a class="code" href="namespacesimul_1_1crossplatform.html#a29c5057471bee180c1cec3a2ccdd9940">crossplatform::PixelFormat</a> p);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <span class="keywordtype">int</span>                                 final_octave;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            vec2                                GetPixelOffset()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">            </span>{</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                <span class="keywordflow">return</span> pixelOffset;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keywordtype">void</span>                                SetAmortization(<span class="keywordtype">int</span> a)</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                amortizationStruct.setAmortization(a);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keywordtype">int</span>                                 GetAmortization()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">            </span>{</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                <span class="keywordflow">return</span> amortizationStruct.getAmortization();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keyword">const</span> crossplatform::AmortizationStruct         &amp;GetAmortizationStruct()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keyword">            </span>{</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                <span class="keywordflow">return</span> amortizationStruct;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            vec4                                cubeFrustumRange[6];</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            uint4                               cubeTargetRange[6];</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            uint4                               swapTargetRange[6];</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            mat4                                proj;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <span class="keywordtype">int</span>                                 Width,Height,BufferWidth,BufferHeight;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <span class="keywordtype">float</span>                               Downscale;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            crossplatform::AmortizationStruct                   amortizationStruct;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <span class="keywordtype">int</span>                                 volume_num;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            <a class="code" href="namespacesimul_1_1crossplatform.html#a29c5057471bee180c1cec3a2ccdd9940">crossplatform::PixelFormat</a>          depthFormat;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            <a class="code" href="classsimul_1_1geometry_1_1SimulOrientation.html">simul::geometry::SimulOrientation</a>   view_o;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            crossplatform::RenderPlatform       *renderPlatform;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            crossplatform::Texture              *nearFarTextures[5];</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            crossplatform::Texture              *updateTextures[2];</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            crossplatform::Texture              *lossTexture;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            crossplatform::Texture              *volumeTextures[2];</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            crossplatform::Texture              *lowResFramebuffers[4];</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        };</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;}</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">    #pragma warning(pop)</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="classsimul_1_1geometry_1_1SimulOrientation_html"><div class="ttname"><a href="classsimul_1_1geometry_1_1SimulOrientation.html">simul::geometry::SimulOrientation</a></div><div class="ttdoc">A spatial orientation comprising position and rotation. </div><div class="ttdef"><b>Definition:</b> <a href="Orientation_8h_source.html#l00023">Orientation.h:23</a></div></div>
 <div class="ttc" id="classsimul_1_1crossplatform_1_1Texture_html"><div class="ttname"><a href="classsimul_1_1crossplatform_1_1Texture.html">simul::crossplatform::Texture</a></div><div class="ttdoc">A Texture base class. </div><div class="ttdef"><b>Definition:</b> <a href="CrossPlatform_2Texture_8h_source.html#l00070">Texture.h:70</a></div></div>
 <div class="ttc" id="classsimul_1_1clouds_1_1TwoResFramebuffer_html"><div class="ttname"><a href="classsimul_1_1clouds_1_1TwoResFramebuffer.html">simul::clouds::TwoResFramebuffer</a></div><div class="ttdoc">A framebuffer class for mixed-resolution rendering. </div><div class="ttdef"><b>Definition:</b> <a href="TwoResFramebuffer_8h_source.html#l00025">TwoResFramebuffer.h:25</a></div></div>
 <div class="ttc" id="namespacesimul_1_1crossplatform_html_a29c5057471bee180c1cec3a2ccdd9940"><div class="ttname"><a href="namespacesimul_1_1crossplatform.html#a29c5057471bee180c1cec3a2ccdd9940">simul::crossplatform::PixelFormat</a></div><div class="ttdeci">PixelFormat</div><div class="ttdoc">A cross-platform equivalent to the OpenGL and DirectX pixel formats. </div><div class="ttdef"><b>Definition:</b> <a href="PixelFormat_8h_source.html#l00007">PixelFormat.h:7</a></div></div>
 <div class="ttc" id="structsimul_1_1crossplatform_1_1DeviceContext_html"><div class="ttname"><a href="structsimul_1_1crossplatform_1_1DeviceContext.html">simul::crossplatform::DeviceContext</a></div><div class="ttdef"><b>Definition:</b> <a href="DeviceContext_8h_source.html#l00022">DeviceContext.h:22</a></div></div>
-<div class="ttc" id="classsimul_1_1clouds_1_1TwoResFramebuffer_html_aa4c7455d2b00de55cb4f16b982bc955a"><div class="ttname"><a href="classsimul_1_1clouds_1_1TwoResFramebuffer.html#aa4c7455d2b00de55cb4f16b982bc955a">simul::clouds::TwoResFramebuffer::pixelOffset</a></div><div class="ttdeci">vec2 pixelOffset</div><div class="ttdoc">Offset in pixels from top-left of the low-res view to top-left of the full-res. </div><div class="ttdef"><b>Definition:</b> <a href="TwoResFramebuffer_8h_source.html#l00087">TwoResFramebuffer.h:87</a></div></div>
+<div class="ttc" id="classsimul_1_1clouds_1_1TwoResFramebuffer_html_aa4c7455d2b00de55cb4f16b982bc955a"><div class="ttname"><a href="classsimul_1_1clouds_1_1TwoResFramebuffer.html#aa4c7455d2b00de55cb4f16b982bc955a">simul::clouds::TwoResFramebuffer::pixelOffset</a></div><div class="ttdeci">vec2 pixelOffset</div><div class="ttdoc">Offset in pixels from top-left of the low-res view to top-left of the full-res. </div><div class="ttdef"><b>Definition:</b> <a href="TwoResFramebuffer_8h_source.html#l00089">TwoResFramebuffer.h:89</a></div></div>
 <div class="ttc" id="namespacesimul_html"><div class="ttname"><a href="namespacesimul.html">simul</a></div><div class="ttdef"><b>Definition:</b> <a href="Base_8h_source.html#l00001">Base.h:1</a></div></div>
 <div class="ttc" id="classsimul_1_1crossplatform_1_1RenderPlatform_html"><div class="ttname"><a href="classsimul_1_1crossplatform_1_1RenderPlatform.html">simul::crossplatform::RenderPlatform</a></div><div class="ttdoc">A base class for API-specific rendering. </div><div class="ttdef"><b>Definition:</b> <a href="CrossPlatform_2RenderPlatform_8h_source.html#l00082">RenderPlatform.h:82</a></div></div>
 <div class="ttc" id="namespacesimul_1_1crossplatform_html_structsimul_1_1crossplatform_1_1ViewStruct"><div class="ttname"><a href="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1ViewStruct">simul::crossplatform::ViewStruct</a></div><div class="ttdoc">A simple struct encapsulating a view and a projection matrix. </div><div class="ttdef"><b>Definition:</b> <a href="BaseRenderer_8h_source.html#l00019">BaseRenderer.h:19</a></div></div>
@@ -171,6 +172,6 @@ url: Simul/Clouds/TwoResFramebuffer.h Source File
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Wed Feb 3 2016 07:46:32</small></address>
+Thu Feb 4 2016 07:46:33</small></address>
 </body>
 </html>

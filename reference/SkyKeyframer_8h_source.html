@@ -309,8 +309,8 @@ url: Simul/Sky/SkyKeyframer.h Source File
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;            <span class="keywordtype">bool</span>                            InterpolateKeyframe(SkyKeyframe *K) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;            <span class="keywordtype">bool</span>                            InterpolateKeyframe(SkyKeyframe* K,<span class="keyword">const</span> SkyKeyframe* K1,<span class="keyword">const</span> SkyKeyframe* K2,<span class="keywordtype">float</span> interp) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;            <span class="keywordtype">bool</span>                            InterpolateKeyframeFromSubdivisions(SkyKeyframe* K) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;            <span class="keywordtype">void</span>                            CycleTexturesForward();</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;            <span class="keywordtype">void</span>                            CycleTexturesBackward();</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;            <span class="keywordtype">void</span>                            CycleTexturesForward() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;            <span class="keywordtype">void</span>                            CycleTexturesBackward() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;            <span class="keywordtype">void</span>                            EnsureKeyframeCalculationForSubdivision(<span class="keywordtype">int</span> index);</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;            <span class="keywordtype">void</span>                            EnsureSubdivisionValidity(<span class="keywordtype">int</span> i);</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;            <span class="keywordtype">void</span>                            EnsureUseStateValidity(KeyframeInUseState &amp;U,<span class="keyword">const</span> SubdivInterpolation &amp;s) <span class="keyword">const</span>;</div>
@@ -370,6 +370,6 @@ url: Simul/Sky/SkyKeyframer.h Source File
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Wed Feb 3 2016 07:46:33</small></address>
+Thu Feb 4 2016 07:46:34</small></address>
 </body>
 </html>

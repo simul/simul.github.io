@@ -269,11 +269,11 @@
       <keyword name="GetFeatureLevel" id="simul::base::GetFeatureLevel" ref="namespacesimul_1_1base.html#acf7a738812d3a4606b1564e2e0b8207c" />
       <keyword name="GetLicenceInfo" id="simul::base::GetLicenceInfo" ref="namespacesimul_1_1base.html#a2736c8fefcae3a7fe23645dd84b69f01" />
       <keyword name="GetMaximumFeatureLevel" id="simul::base::GetMaximumFeatureLevel" ref="namespacesimul_1_1base.html#af074d8683cc9a312ed1b6edd370dce33" />
-      <keyword name="GetProfilingInterface" id="simul::base::GetProfilingInterface" ref="namespacesimul_1_1base.html#a62bae082e52cb6c75eb0f9d5694f5fba" />
+      <keyword name="GetProfilingInterface" id="simul::base::GetProfilingInterface" ref="namespacesimul_1_1base.html#a223c6b03971b5bb919734c9ce1dd5a53" />
       <keyword name="GetUseExternalTextures" id="simul::base::GetUseExternalTextures" ref="namespacesimul_1_1base.html#aa39d142f4ef4fab60f3bf875c8c7013e" />
       <keyword name="QuickFormat" id="simul::base::QuickFormat" ref="namespacesimul_1_1base.html#abc63e254b9c66f72cfec8a747b916e2b" />
       <keyword name="SetFeatureLevel" id="simul::base::SetFeatureLevel" ref="namespacesimul_1_1base.html#a78f18408dee7179d096eae78e5bcabe8" />
-      <keyword name="SetProfilingInterface" id="simul::base::SetProfilingInterface" ref="namespacesimul_1_1base.html#a9fcc41a591adc1c69a44054a57370345" />
+      <keyword name="SetProfilingInterface" id="simul::base::SetProfilingInterface" ref="namespacesimul_1_1base.html#a63c16bc604791a899f34f59f18ca681b" />
       <keyword name="SetUseExternalTextures" id="simul::base::SetUseExternalTextures" ref="namespacesimul_1_1base.html#a6bf88d52dfbb916a7d121196bcc372bc" />
       <keyword name="split" id="simul::base::split" ref="namespacesimul_1_1base.html#a92f6bef69302722fc0bfbb21ea738981" />
       <keyword name="stringFormat" id="simul::base::stringFormat" ref="namespacesimul_1_1base.html#a22fb2ef096f90fbfb6bea2e666588ef2" />
@@ -300,8 +300,8 @@
       <keyword name="simul::base::FileLoader" id="simul::base::FileLoader" ref="classsimul_1_1base_1_1FileLoader.html" />
       <keyword name="AcquireFileContents" id="simul::base::FileLoader::AcquireFileContents" ref="classsimul_1_1base_1_1FileLoader.html#a667badf6e526183d4ede963335973312" />
       <keyword name="FileExists" id="simul::base::FileLoader::FileExists" ref="classsimul_1_1base_1_1FileLoader.html#a83156efb5a0fa089f0ef23f6752153bd" />
-      <keyword name="FindFileInPathStack" id="simul::base::FileLoader::FindFileInPathStack" ref="classsimul_1_1base_1_1FileLoader.html#a7f013d417bab1931bc30775de68c1dfa" />
-      <keyword name="FindIndexInPathStack" id="simul::base::FileLoader::FindIndexInPathStack" ref="classsimul_1_1base_1_1FileLoader.html#aac425365a47886968337e6822248161a" />
+      <keyword name="FindFileInPathStack" id="simul::base::FileLoader::FindFileInPathStack" ref="classsimul_1_1base_1_1FileLoader.html#a00e7e48426971067cb8b64eb7269840a" />
+      <keyword name="FindIndexInPathStack" id="simul::base::FileLoader::FindIndexInPathStack" ref="classsimul_1_1base_1_1FileLoader.html#a8a4e06fd574319b5c3aa96eb1044f38d" />
       <keyword name="GetFileDate" id="simul::base::FileLoader::GetFileDate" ref="classsimul_1_1base_1_1FileLoader.html#afc9e427232927c361d19de608bfc3d85" />
       <keyword name="ReleaseFileContents" id="simul::base::FileLoader::ReleaseFileContents" ref="classsimul_1_1base_1_1FileLoader.html#a017ce3956e0d3830ee87c73d693b2934" />
       <keyword name="Save" id="simul::base::FileLoader::Save" ref="classsimul_1_1base_1_1FileLoader.html#a6357955ad6d3e43d76adb786f44c5c7b" />
@@ -1069,6 +1069,7 @@
       <keyword name="CompleteFrame" id="simul::clouds::TwoResFramebuffer::CompleteFrame" ref="classsimul_1_1clouds_1_1TwoResFramebuffer.html#a3f924d91aa999f6e412e84b495b9dace" />
       <keyword name="DeactivateDepth" id="simul::clouds::TwoResFramebuffer::DeactivateDepth" ref="classsimul_1_1clouds_1_1TwoResFramebuffer.html#a3bfdde51dfc21ac1a739f60054e7fab5" />
       <keyword name="DeactivateLowRes" id="simul::clouds::TwoResFramebuffer::DeactivateLowRes" ref="classsimul_1_1clouds_1_1TwoResFramebuffer.html#a92ea230f30e1a4b3ff1a738d3cbd4f5f" />
+      <keyword name="GetCubeIntegerFrustumRange" id="simul::clouds::TwoResFramebuffer::GetCubeIntegerFrustumRange" ref="classsimul_1_1clouds_1_1TwoResFramebuffer.html#a37cdd5d6b2ca8c99e1a31d74bbda3990" />
       <keyword name="GetLowResDepthTexture" id="simul::clouds::TwoResFramebuffer::GetLowResDepthTexture" ref="classsimul_1_1clouds_1_1TwoResFramebuffer.html#a65dd698329673346f559d55b8978759e" />
       <keyword name="GetUpdateTexture" id="simul::clouds::TwoResFramebuffer::GetUpdateTexture" ref="classsimul_1_1clouds_1_1TwoResFramebuffer.html#a322fc3e5df065fd772da373c5340e5b7" />
       <keyword name="RenderDepthBuffers" id="simul::clouds::TwoResFramebuffer::RenderDepthBuffers" ref="classsimul_1_1clouds_1_1TwoResFramebuffer.html#aa661fb85ac3d6b6ecf8cda103333dcf8" />
@@ -1702,7 +1703,7 @@
       <keyword name="GetFloatAtPosition" id="simul::plugin::PluginTrueSkyRenderer::GetFloatAtPosition" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a73d93c1f524f3ce8ca1950c63b3590d6" />
       <keyword name="GetInt" id="simul::plugin::PluginTrueSkyRenderer::GetInt" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#ad55526a0658ee6ed15698707b2926e47" />
       <keyword name="GetLightning" id="simul::plugin::PluginTrueSkyRenderer::GetLightning" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#aef5a38a5ae9fa617b81375f9f27ecc4e" />
-      <keyword name="GetString" id="simul::plugin::PluginTrueSkyRenderer::GetString" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a10720935381c7f5bff26bad39541fefc" />
+      <keyword name="GetString" id="simul::plugin::PluginTrueSkyRenderer::GetString" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#abe8a11af2b49ccc284e98798ebe6081b" />
       <keyword name="HasFloat" id="simul::plugin::PluginTrueSkyRenderer::HasFloat" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a932cad1ebd513ea354a3037f0bb11d8a" />
       <keyword name="HasInt" id="simul::plugin::PluginTrueSkyRenderer::HasInt" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a65043e98d6ef66448dcb9355c14334a2" />
       <keyword name="PluginTrueSkyRenderer" id="simul::plugin::PluginTrueSkyRenderer::PluginTrueSkyRenderer" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a6f569ef3a71b177755dc70a44f1de828" />

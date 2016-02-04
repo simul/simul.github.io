@@ -53,14 +53,14 @@ Public Member Functions</h2></td></tr>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1FileLoader.html#a83156efb5a0fa089f0ef23f6752153bd">FileExists</a> (const char *filename_utf8) const  =0</td></tr>
 <tr class="memdesc:a83156efb5a0fa089f0ef23f6752153bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if and only if the named file exists. If it has a relative path, it is relative to the current directory. <br /></td></tr>
 <tr class="separator:a83156efb5a0fa089f0ef23f6752153bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f013d417bab1931bc30775de68c1dfa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f013d417bab1931bc30775de68c1dfa"></a>
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1FileLoader.html#a7f013d417bab1931bc30775de68c1dfa">FindFileInPathStack</a> (const char *filename_utf8, const std::vector&lt; std::string &gt; &amp;path_stack_utf8) const  =0</td></tr>
-<tr class="memdesc:a7f013d417bab1931bc30775de68c1dfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the named file relative to one of a given list of paths. Searches from the top of the stack. <br /></td></tr>
-<tr class="separator:a7f013d417bab1931bc30775de68c1dfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac425365a47886968337e6822248161a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac425365a47886968337e6822248161a"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1FileLoader.html#aac425365a47886968337e6822248161a">FindIndexInPathStack</a> (const char *filename_utf8, const std::vector&lt; std::string &gt; &amp;path_stack_utf8) const  =0</td></tr>
-<tr class="memdesc:aac425365a47886968337e6822248161a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the named file relative to one of a given list of paths, and return the index in the list, -1 if the file was found on the general search path, or path_stack_utf8.size() if it was not found. Searches from the top of the stack. <br /></td></tr>
-<tr class="separator:aac425365a47886968337e6822248161a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00e7e48426971067cb8b64eb7269840a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00e7e48426971067cb8b64eb7269840a"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1FileLoader.html#a00e7e48426971067cb8b64eb7269840a">FindFileInPathStack</a> (const char *filename_utf8, const std::vector&lt; std::string &gt; &amp;path_stack_utf8) const </td></tr>
+<tr class="memdesc:a00e7e48426971067cb8b64eb7269840a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the named file relative to one of a given list of paths. Searches from the top of the stack. <br /></td></tr>
+<tr class="separator:a00e7e48426971067cb8b64eb7269840a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a4e06fd574319b5c3aa96eb1044f38d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a4e06fd574319b5c3aa96eb1044f38d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1FileLoader.html#a8a4e06fd574319b5c3aa96eb1044f38d">FindIndexInPathStack</a> (const char *filename_utf8, const std::vector&lt; std::string &gt; &amp;path_stack_utf8) const </td></tr>
+<tr class="memdesc:a8a4e06fd574319b5c3aa96eb1044f38d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the named file relative to one of a given list of paths, and return the index in the list, -1 if the file was found on the general search path, or path_stack_utf8.size() if it was not found. Searches from the top of the stack. <br /></td></tr>
+<tr class="separator:a8a4e06fd574319b5c3aa96eb1044f38d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc9e427232927c361d19de608bfc3d85"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc9e427232927c361d19de608bfc3d85"></a>
 virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1FileLoader.html#afc9e427232927c361d19de608bfc3d85">GetFileDate</a> (const char *filename_utf8)=0</td></tr>
 <tr class="memdesc:afc9e427232927c361d19de608bfc3d85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the file date as a julian day number. Return zero if the file doesn't exist. <br /></td></tr>
@@ -145,6 +145,6 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Wed Feb 3 2016 07:46:33</small></address>
+Thu Feb 4 2016 07:46:35</small></address>
 </body>
 </html>

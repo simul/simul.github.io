@@ -111,10 +111,10 @@ LicenceInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <a class="el" href="namespacesimul_1_1base.html#a527d65bd6b327f8904aeb31e3d3a83e4">FeatureLevel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesimul_1_1base.html#af074d8683cc9a312ed1b6edd370dce33">GetMaximumFeatureLevel</a> ()</td></tr>
 <tr class="memdesc:af074d8683cc9a312ed1b6edd370dce33"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum feature level (see GetFeatureLevel), determined by the current licence. <br /></td></tr>
 <tr class="separator:af074d8683cc9a312ed1b6edd370dce33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62bae082e52cb6c75eb0f9d5694f5fba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a62bae082e52cb6c75eb0f9d5694f5fba"></a>
-<a class="el" href="classsimul_1_1base_1_1ProfilingInterface.html">ProfilingInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesimul_1_1base.html#a62bae082e52cb6c75eb0f9d5694f5fba">GetProfilingInterface</a> ()</td></tr>
-<tr class="memdesc:a62bae082e52cb6c75eb0f9d5694f5fba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the current CPU profiler. <br /></td></tr>
-<tr class="separator:a62bae082e52cb6c75eb0f9d5694f5fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a223c6b03971b5bb919734c9ce1dd5a53"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a223c6b03971b5bb919734c9ce1dd5a53"></a>
+<a class="el" href="classsimul_1_1base_1_1ProfilingInterface.html">ProfilingInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesimul_1_1base.html#a223c6b03971b5bb919734c9ce1dd5a53">GetProfilingInterface</a> (pthread_t thread_id)</td></tr>
+<tr class="memdesc:a223c6b03971b5bb919734c9ce1dd5a53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the current CPU profiler. <br /></td></tr>
+<tr class="separator:a223c6b03971b5bb919734c9ce1dd5a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa39d142f4ef4fab60f3bf875c8c7013e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa39d142f4ef4fab60f3bf875c8c7013e"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesimul_1_1base.html#aa39d142f4ef4fab60f3bf875c8c7013e">GetUseExternalTextures</a> ()</td></tr>
 <tr class="memdesc:aa39d142f4ef4fab60f3bf875c8c7013e"><td class="mdescLeft">&#160;</td><td class="mdescRight">See SetUseExternalTextures. <br /></td></tr>
@@ -127,10 +127,10 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesimul_1_1base.html#a78f18408dee7179d096eae78e5bcabe8">SetFeatureLevel</a> (<a class="el" href="namespacesimul_1_1base.html#a527d65bd6b327f8904aeb31e3d3a83e4">FeatureLevel</a> f)</td></tr>
 <tr class="memdesc:a78f18408dee7179d096eae78e5bcabe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the feature level. It is only possible to change to a lower feature level than the maximum one (see GetMaximumFeatureLevel). <br /></td></tr>
 <tr class="separator:a78f18408dee7179d096eae78e5bcabe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fcc41a591adc1c69a44054a57370345"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9fcc41a591adc1c69a44054a57370345"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesimul_1_1base.html#a9fcc41a591adc1c69a44054a57370345">SetProfilingInterface</a> (<a class="el" href="classsimul_1_1base_1_1ProfilingInterface.html">ProfilingInterface</a> *p)</td></tr>
-<tr class="memdesc:a9fcc41a591adc1c69a44054a57370345"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the CPU profiler. Future use of SIMUL_PROFILE_START or SIMUL_COMBINED_PROFILE_START will use that profiler. <br /></td></tr>
-<tr class="separator:a9fcc41a591adc1c69a44054a57370345"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63c16bc604791a899f34f59f18ca681b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63c16bc604791a899f34f59f18ca681b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesimul_1_1base.html#a63c16bc604791a899f34f59f18ca681b">SetProfilingInterface</a> (pthread_t thread_id, <a class="el" href="classsimul_1_1base_1_1ProfilingInterface.html">ProfilingInterface</a> *p)</td></tr>
+<tr class="memdesc:a63c16bc604791a899f34f59f18ca681b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the CPU profiler. Future use of SIMUL_PROFILE_START or SIMUL_COMBINED_PROFILE_START will use that profiler. <br /></td></tr>
+<tr class="separator:a63c16bc604791a899f34f59f18ca681b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bf88d52dfbb916a7d121196bcc372bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6bf88d52dfbb916a7d121196bcc372bc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesimul_1_1base.html#a6bf88d52dfbb916a7d121196bcc372bc">SetUseExternalTextures</a> (bool t)</td></tr>
 <tr class="memdesc:a6bf88d52dfbb916a7d121196bcc372bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current feature level, which determines whether this is the feature-limited trueSKY alpha, or full trueSKY. <br /></td></tr>
@@ -155,6 +155,6 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Wed Feb 3 2016 07:46:33</small></address>
+Thu Feb 4 2016 07:46:35</small></address>
 </body>
 </html>
