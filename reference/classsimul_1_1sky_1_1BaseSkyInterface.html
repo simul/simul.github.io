@@ -107,13 +107,15 @@ virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseSkyInterface.html#a8ffb0ef6e480c2d33400e453e26734c8">GetMieRayleighRatio</a> () const  =0</td></tr>
 <tr class="memdesc:a8ffb0ef6e480c2d33400e453e26734c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ratio of Mie to Rayleigh scattering at unit air and haze density. A useful helper function as some shaders use this ratio. <br /></td></tr>
 <tr class="separator:a8ffb0ef6e480c2d33400e453e26734c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcd2a673c8b0c27c8e148839cd7e6838"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afcd2a673c8b0c27c8e148839cd7e6838"></a>
+virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseSkyInterface.html#afcd2a673c8b0c27c8e148839cd7e6838">GetSubdivisionChecksum</a> () const  =0</td></tr>
+<tr class="memdesc:afcd2a673c8b0c27c8e148839cd7e6838"><td class="mdescLeft">&#160;</td><td class="mdescRight">When this checksum changes, the atmosphere has been modified sufficiently to warrant regeneration of tables. <br /></td></tr>
+<tr class="separator:afcd2a673c8b0c27c8e148839cd7e6838"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a445f014b7495fe8f422cd2739f09952b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a445f014b7495fe8f422cd2739f09952b"></a>
 virtual vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseSkyInterface.html#a445f014b7495fe8f422cd2739f09952b">GetSunlightTableTransformKm</a> () const  =0</td></tr>
 <tr class="memdesc:a445f014b7495fe8f422cd2739f09952b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the transform vector to convert an altitude in km into a 1D texture coordinate for the sunlight table. x = multiplier, y=offset, so texcoord u=t.x*zkm+t.y;. <br /></td></tr>
 <tr class="separator:a445f014b7495fe8f422cd2739f09952b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6953ff87e16a7130295e3a5dce8cf17"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6953ff87e16a7130295e3a5dce8cf17"></a>
-virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseSkyInterface.html#ac6953ff87e16a7130295e3a5dce8cf17">GetTemperatureKelvins</a> (float h_km) const  =0</td></tr>
-<tr class="memdesc:ac6953ff87e16a7130295e3a5dce8cf17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the temperature at the stated altitude in kelvins (subtract 273.15 to get celsius). <br /></td></tr>
+<tr class="memitem:ac6953ff87e16a7130295e3a5dce8cf17"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseSkyInterface.html#ac6953ff87e16a7130295e3a5dce8cf17">GetTemperatureKelvins</a> (float h_km) const  =0</td></tr>
 <tr class="separator:ac6953ff87e16a7130295e3a5dce8cf17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab0f456d22670474cc713ec63f493210"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab0f456d22670474cc713ec63f493210"></a>
 virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseSkyInterface.html#aab0f456d22670474cc713ec63f493210">GetVisibilityDistance</a> (float view_alt_km)=0</td></tr>
@@ -290,6 +292,33 @@ virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 
 </div>
 </div>
+<a class="anchor" id="ac6953ff87e16a7130295e3a5dce8cf17"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual float simul::sky::BaseSkyInterface::GetTemperatureKelvins </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>h_km</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the temperature at the stated altitude in kelvins (subtract 273.15 to get celsius). </p>
+
+<p>Implemented in <a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a2fb936cbd413f3772823877af25d8754">simul::sky::SkyKeyframer</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Simul/Sky/<a class="el" href="SkyInterface_8h_source.html">SkyInterface.h</a></li>
 </ul>
@@ -298,6 +327,6 @@ virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Fri Feb 5 2016 07:46:33</small></address>
+Sat Feb 6 2016 07:46:30</small></address>
 </body>
 </html>

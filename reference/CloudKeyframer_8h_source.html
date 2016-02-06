@@ -299,7 +299,7 @@ url: Simul/Clouds/CloudKeyframer.h Source File
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;            }</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            <span class="keywordtype">void</span> SetRecalculate();</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;            CloudKeyframe *GetNextModifiableKeyframe();</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            CloudKeyframe *InsertKeyframe(<span class="keywordtype">float</span> t);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            CloudKeyframe *InsertKeyframe(<span class="keywordtype">float</span> t) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;            <span class="keywordtype">void</span> DeleteKeyframe(<span class="keywordtype">int</span> i);</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetNumKeyframes() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;            <a class="code" href="structsimul_1_1sky_1_1BaseKeyframe.html">sky::BaseKeyframe</a> *GetKeyframe(<span class="keywordtype">int</span> i);</div>
@@ -313,7 +313,7 @@ url: Simul/Clouds/CloudKeyframer.h Source File
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;            <span class="keywordtype">float</span> GetDefaultFloat(<span class="keyword">const</span> <span class="keywordtype">char</span> *name) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;            <span class="keywordtype">void</span> SetFloat(<span class="keyword">const</span> <span class="keywordtype">char</span> *name,<span class="keywordtype">float</span> val);</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;            </div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;            <span class="keywordtype">bool</span> HasInt(<span class="keyword">const</span> <span class="keywordtype">char</span> *name) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;            <span class="keywordtype">bool</span> HasInt(<span class="keyword">const</span> <span class="keywordtype">char</span> *name) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;            <span class="keywordtype">int</span> GetInt(<span class="keyword">const</span> <span class="keywordtype">char</span> *name,<span class="keyword">const</span> <a class="code" href="namespacesimul_1_1sky.html#structsimul_1_1sky_1_1Variant32">sky::Variant32</a> *params=NULL) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;            <span class="keywordtype">int</span> GetDefaultInt(<span class="keyword">const</span> <span class="keywordtype">char</span> *name) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;            <span class="keywordtype">void</span> SetInt(<span class="keyword">const</span> <span class="keywordtype">char</span> *name,<span class="keywordtype">int</span> val);</div>
@@ -376,7 +376,7 @@ url: Simul/Clouds/CloudKeyframer.h Source File
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;            GpuCloudsParameters gpuCloudsParameters[4];</div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;            std::map&lt;int,CloudVolume&gt; cloudVolumes;</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;            <span class="keywordtype">void</span> EnsureSubdivisionValidity(<span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;            <span class="keywordtype">void</span> EnsureUseStateValidity(KeyframeInUse &amp;U,<span class="keyword">const</span> sky::SubdivInterpolation &amp;s);</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;            <span class="keywordtype">void</span> EnsureUseStateValidity(KeyframeInUse &amp;U,<span class="keyword">const</span> sky::SubdivInterpolation &amp;s,<span class="keywordtype">int</span> index);</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;            sky::KeyframeInterpolation lastKeyframeInterpolation_TEST;</div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;            <a class="code" href="classsimul_1_1clouds_1_1FastCloudNode.html">simul::clouds::FastCloudNode</a> cloudNode;</div>
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;            <span class="keywordtype">void</span> ApplyCloudKeyframe(<span class="keyword">const</span> CloudKeyframe *K);</div>
@@ -484,6 +484,6 @@ url: Simul/Clouds/CloudKeyframer.h Source File
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Fri Feb 5 2016 07:46:32</small></address>
+Sat Feb 6 2016 07:46:29</small></address>
 </body>
 </html>

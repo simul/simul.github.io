@@ -204,13 +204,15 @@ virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a2ca351a33f14fcc57de7b88f3545edb5">GetStartDate</a> (int &amp;y, int &amp;m, int &amp;d) const </td></tr>
 <tr class="memdesc:a2ca351a33f14fcc57de7b88f3545edb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">What date is referred to as time zero. <br /></td></tr>
 <tr class="separator:a2ca351a33f14fcc57de7b88f3545edb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addc9aa15191a0a82e9137ea89ce19829"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="addc9aa15191a0a82e9137ea89ce19829"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#addc9aa15191a0a82e9137ea89ce19829">GetSubdivisionChecksum</a> () const  override</td></tr>
+<tr class="memdesc:addc9aa15191a0a82e9137ea89ce19829"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a checksum that only changes if an in-use subdivision has modified (cycling does not change it). <br /></td></tr>
+<tr class="separator:addc9aa15191a0a82e9137ea89ce19829"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b6701022e5841413011a097a3112af1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b6701022e5841413011a097a3112af1"></a>
 virtual vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a4b6701022e5841413011a097a3112af1">GetSunlightTableTransformKm</a> () const </td></tr>
 <tr class="memdesc:a4b6701022e5841413011a097a3112af1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the transform vector to convert an altitude in km into a 1D texture coordinate for the sunlight table. x = multiplier, y=offset, so texcoord u=t.x*zkm+t.y;. <br /></td></tr>
 <tr class="separator:a4b6701022e5841413011a097a3112af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fb936cbd413f3772823877af25d8754"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2fb936cbd413f3772823877af25d8754"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a2fb936cbd413f3772823877af25d8754">GetTemperatureKelvins</a> (float h_km) const </td></tr>
-<tr class="memdesc:a2fb936cbd413f3772823877af25d8754"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the temperature at the stated altitude in kelvins (subtract 273.15 to get celsius). <br /></td></tr>
+<tr class="memitem:a2fb936cbd413f3772823877af25d8754"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a2fb936cbd413f3772823877af25d8754">GetTemperatureKelvins</a> (float h_km) const </td></tr>
 <tr class="separator:a2fb936cbd413f3772823877af25d8754"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6537c7f77a019b0b80c8dfa51ff0c910"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a6537c7f77a019b0b80c8dfa51ff0c910">GetTime</a> () const </td></tr>
 <tr class="separator:a6537c7f77a019b0b80c8dfa51ff0c910"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1839,6 +1841,33 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 </div>
 </div>
+<a class="anchor" id="a2fb936cbd413f3772823877af25d8754"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float simul::sky::SkyKeyframer::GetTemperatureKelvins </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>h_km</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the temperature at the stated altitude in kelvins (subtract 273.15 to get celsius). </p>
+
+<p>Implements <a class="el" href="classsimul_1_1sky_1_1BaseSkyInterface.html#ac6953ff87e16a7130295e3a5dce8cf17">simul::sky::BaseSkyInterface</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ac1207f34fb3216473ee1ce546c3b50f5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2274,6 +2303,6 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Fri Feb 5 2016 07:46:33</small></address>
+Sat Feb 6 2016 07:46:30</small></address>
 </body>
 </html>
