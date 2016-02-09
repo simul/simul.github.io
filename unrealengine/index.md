@@ -33,25 +33,26 @@ How to run it
 * Run UE4, either standalone or with the debugger.
 The TrueSkyPlugin loads "TrueSkyUI_MD.dll" and "UE4PluginRenderInterface_MT.dll" from [UE4]\Engine\Plugins\TrueSkyPlugin\Binaries\Win64.
 TrueSkyUI_MD.dll further loads the Qt libraries. For that, the PATH environment-variable is extended temporarily by the plugin to include "Engine/Binary/ThirdParty/Simul/Win64"
-* When the UE4 editor is running, go to Windows->Plugin and type "trueSKY" into the search box to find the plugin, and check its "enabled" box, to enable the TrueSky plugin.
+
+When you run the UE4 editro, the trueSKY plugin should be enabled by default. If not, go to Edit->Plugin and type "trueSKY" into the search box to find the plugin, and check its "enabled" box, to enable the TrueSky plugin.
 
   <a href="http://simul.co/wp-content/uploads/2014/07/UE4_ShowPlugins.png"><img src="http://simul.co/wp-content/uploads/2014/07/UE4_ShowPlugins-96x300.png" /></a>
 
   <a href="http://docs.simul.co/unrealengine/images/EnableTrueSKY.png"><img src="http://docs.simul.co/unrealengine/images/EnableTrueSKY.png" /></a>
 
-Restart the editor! The plugin adds the "TrueSky" section into the "Window" menu.
+After this, restart the editor.
 
 * Press "Window->Add Sequence to Scene" -- this adds a TrueSkySequenceActor to the current level.
 
  <a href="http://simul.co/wp-content/uploads/2014/07/UE4_AddSequence.png"><img src="http://simul.co/wp-content/uploads/2014/07/UE4_AddSequence-81x300.png"/></a> 
 
-This actor provides a reference to a sequence asset which is rendered. Choose the actor (from "Scene Outliner" window). In the "Details" window, set the reference to a TrueSky Sequence asset (read below how to create one) in the "Active Sequence" property.
+This actor provides a reference to a sequence asset which is rendered. Choose the actor (from "World Outliner" window). In the "Details" window, set the reference to a TrueSky Sequence asset (read below how to create one) in the "Active Sequence" property.
 
 * To create a new TrueSkySeqence asset, go to the "Content Browser" window. Press "New Asset" button (or do a right mouse click inside the window) to open an asset selection window. Choose "Miscellaneous / TrueSky Sequence Asset". A new asset will be created. Now you can rename/save/delete it.
 
 <a href="http://simul.co/wp-content/uploads/2014/07/UE4_CreateAsset.png"><img src="http://simul.co/wp-content/uploads/2014/07/UE4_CreateAsset-233x300.png"/></a> 
 
- In the Scene Outliner, select your trueSKY sequence actor , and in the Details panel, set its Active Sequence to be the newly created asset: 
+ In the World Outliner, select your trueSKY sequence actor , and in the Details panel, set its Active Sequence to be the newly created asset: 
  
 <a href="http://simul.co/wp-content/uploads/2014/07/Clipboard-Image-8.png"><img src="http://simul.co/wp-content/uploads/2014/07/Clipboard-Image-8-150x150.png"/></a> 
 
