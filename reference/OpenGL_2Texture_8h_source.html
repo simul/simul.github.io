@@ -86,8 +86,8 @@ url: Simul/Platform/OpenGL/Texture.h Source File
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordtype">bool</span> ensureTexture3DSizeAndFormat(crossplatform::RenderPlatform *renderPlatform,<span class="keywordtype">int</span> w,<span class="keywordtype">int</span> l,<span class="keywordtype">int</span> d,<a class="code" href="namespacesimul_1_1crossplatform.html#a29c5057471bee180c1cec3a2ccdd9940">crossplatform::PixelFormat</a> frmt,<span class="keywordtype">bool</span> computable=<span class="keyword">false</span>,<span class="keywordtype">int</span> mips=1,<span class="keywordtype">bool</span> rendertargets=<span class="keyword">false</span>);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordtype">void</span> GenerateMips(crossplatform::DeviceContext &amp;deviceContext);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordtype">void</span> setTexels(crossplatform::DeviceContext &amp;deviceContext,<span class="keyword">const</span> <span class="keywordtype">void</span> *src,<span class="keywordtype">int</span> texel_index,<span class="keywordtype">int</span> num_texels);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordtype">void</span> activateRenderTarget(crossplatform::DeviceContext &amp;deviceContext);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordtype">void</span> deactivateRenderTarget();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordtype">void</span> activateRenderTarget(crossplatform::DeviceContext &amp;deviceContext,<span class="keywordtype">int</span> array_index=-1);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordtype">void</span> deactivateRenderTarget(crossplatform::DeviceContext &amp;deviceContext);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordtype">int</span> GetLength() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordtype">int</span> GetWidth() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordtype">int</span> GetDimension() <span class="keyword">const</span>;</div>
@@ -110,6 +110,6 @@ url: Simul/Platform/OpenGL/Texture.h Source File
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Wed Feb 10 2016 07:46:28</small></address>
+Thu Feb 11 2016 07:46:29</small></address>
 </body>
 </html>

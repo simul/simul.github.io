@@ -25,7 +25,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1Framebuffer.html#a76374717d6b6311dbc36bf14f623e4fc"><param name="Name" value="simul::dx11::Framebuffer"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1TwoResFramebuffer.html#a8cb185f7e58d2182f80d44e218f48abf"><param name="Name" value="ActivateLowRes"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Texture.html#aa79a76dee4532b59fb9c3f8fdb57a98c"><param name="Name" value="activateRenderTarget"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Texture.html#aa7724f6c0654607a092ef34e8469820b"><param name="Name" value="activateRenderTarget"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#a41511aa8e73ed2f5e5a98f16e2faa8b8"><param name="Name" value="ActivateRenderTargets"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#a41511aa8e73ed2f5e5a98f16e2faa8b8"><param name="Name" value="simul::crossplatform::RenderPlatform"></OBJECT>
@@ -314,7 +314,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1Framebuffer.html#a4f003e2796269fce3a8c25d57b9e8657"><param name="Name" value="simul::dx11::Framebuffer"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1TwoResFramebuffer.html#a92ea230f30e1a4b3ff1a738d3cbd4f5f"><param name="Name" value="DeactivateLowRes"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Texture.html#a25f4b52acd1011fe003fd80048868753"><param name="Name" value="deactivateRenderTarget"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Texture.html#af41b0a4d1510cbab224aaebc6187f982"><param name="Name" value="deactivateRenderTarget"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1MemoryInterface.html#a20be17ab73a24143736f2eddb262fedd"><param name="Name" value="Deallocate"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1MemoryInterface.html#af8472b7c3a99d2bad9daa11d2630df66"><param name="Name" value="DeallocateVideoMemory"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1math_1_1Vector3.html#a64525f858986c37ebcea44f8b6536995"><param name="Name" value="Define"></OBJECT>
@@ -4002,8 +4002,8 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1StructuredBuffer.html"><param name="Name" value="simul::crossplatform::StructuredBuffer"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Texture.html"><param name="Name" value="simul::crossplatform::Texture"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Texture.html#aa79a76dee4532b59fb9c3f8fdb57a98c"><param name="Name" value="activateRenderTarget"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Texture.html#a25f4b52acd1011fe003fd80048868753"><param name="Name" value="deactivateRenderTarget"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Texture.html#aa7724f6c0654607a092ef34e8469820b"><param name="Name" value="activateRenderTarget"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Texture.html#af41b0a4d1510cbab224aaebc6187f982"><param name="Name" value="deactivateRenderTarget"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Texture.html#af490433a839a63bfb80baaae448384de"><param name="Name" value="ensureTexture2DSizeAndFormat"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Texture.html#a50adeb28785744067fa16707b741e59f"><param name="Name" value="ensureTexture3DSizeAndFormat"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Texture.html#ad6191600ce2f5903ed3dc03d004b0c1b"><param name="Name" value="ensureTextureArraySizeAndFormat"></OBJECT>

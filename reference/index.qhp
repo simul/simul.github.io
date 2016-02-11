@@ -1281,8 +1281,8 @@
       <keyword name="StoreRenderState" id="simul::crossplatform::RenderPlatform::StoreRenderState" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#a42ab82829f99cb67faca26374a90045b" />
       <keyword name="simul::crossplatform::StructuredBuffer" id="simul::crossplatform::StructuredBuffer" ref="classsimul_1_1crossplatform_1_1StructuredBuffer.html" />
       <keyword name="simul::crossplatform::Texture" id="simul::crossplatform::Texture" ref="classsimul_1_1crossplatform_1_1Texture.html" />
-      <keyword name="activateRenderTarget" id="simul::crossplatform::Texture::activateRenderTarget" ref="classsimul_1_1crossplatform_1_1Texture.html#aa79a76dee4532b59fb9c3f8fdb57a98c" />
-      <keyword name="deactivateRenderTarget" id="simul::crossplatform::Texture::deactivateRenderTarget" ref="classsimul_1_1crossplatform_1_1Texture.html#a25f4b52acd1011fe003fd80048868753" />
+      <keyword name="activateRenderTarget" id="simul::crossplatform::Texture::activateRenderTarget" ref="classsimul_1_1crossplatform_1_1Texture.html#aa7724f6c0654607a092ef34e8469820b" />
+      <keyword name="deactivateRenderTarget" id="simul::crossplatform::Texture::deactivateRenderTarget" ref="classsimul_1_1crossplatform_1_1Texture.html#af41b0a4d1510cbab224aaebc6187f982" />
       <keyword name="ensureTexture2DSizeAndFormat" id="simul::crossplatform::Texture::ensureTexture2DSizeAndFormat" ref="classsimul_1_1crossplatform_1_1Texture.html#af490433a839a63bfb80baaae448384de" />
       <keyword name="ensureTexture3DSizeAndFormat" id="simul::crossplatform::Texture::ensureTexture3DSizeAndFormat" ref="classsimul_1_1crossplatform_1_1Texture.html#a50adeb28785744067fa16707b741e59f" />
       <keyword name="ensureTextureArraySizeAndFormat" id="simul::crossplatform::Texture::ensureTextureArraySizeAndFormat" ref="classsimul_1_1crossplatform_1_1Texture.html#ad6191600ce2f5903ed3dc03d004b0c1b" />

@@ -134,8 +134,8 @@ url: Simul/Platform/DirectX11/Texture.h Source File
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordtype">bool</span> isMapped() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordtype">void</span> unmap();</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            vec4 GetTexel(crossplatform::DeviceContext &amp;deviceContext,vec2 texCoords,<span class="keywordtype">bool</span> wrap);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordtype">void</span> activateRenderTarget(crossplatform::DeviceContext &amp;deviceContext);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keywordtype">void</span> deactivateRenderTarget();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordtype">void</span> activateRenderTarget(crossplatform::DeviceContext &amp;deviceContext,<span class="keywordtype">int</span> array_index=-1);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keywordtype">void</span> deactivateRenderTarget(crossplatform::DeviceContext &amp;deviceContext);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetLength()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">            </span>{</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                <span class="keywordflow">return</span> length;</div>
@@ -183,6 +183,6 @@ url: Simul/Platform/DirectX11/Texture.h Source File
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Wed Feb 10 2016 07:46:29</small></address>
+Thu Feb 11 2016 07:46:29</small></address>
 </body>
 </html>
