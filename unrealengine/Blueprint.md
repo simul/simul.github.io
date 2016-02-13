@@ -1,6 +1,7 @@
 ---
 title: Blueprint
 layout: unreal
+weight : 3
 ---
 
 The trueSKY Blueprint macros provide a wide array of functionality

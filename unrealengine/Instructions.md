@@ -1,6 +1,7 @@
 ---
 title: Instructions
 layout: unreal
+weight : 2
 ---
 
 Adding trueSKY to your level
@@ -27,13 +28,9 @@ This actor provides a reference to a sequence asset which is rendered. Choose th
 
 * You can see changes to the properties (e.g. "preview") only if the edited asset is also assigned to the level's TrueSkySequenceActor! The trueSky plugin renderer uses only the asset which is referenced from that actor. If you are editing some other asset (which is not assigned to the TrueSky actor of the current level) then you won't see any visualization of it.
 
-* Your changes in TrueSky properties are saved to the asset when you close the editing window. If the plugin has been compiled with autosaving on (#define ENABLE_AUTO_SAVING), it saves changes automatically every X seconds (currently X=4).
-
-* If the TrueSkySequence asset has been changed, it can be saved to the disc by right-clicking on it and choosing "Save". You are also prompted about any unsaved assets when closing Unreal Editor.
+* If the TrueSkySequence asset has been changed, it can be saved to the disc by right-clicking on it and choosing "Save".
 
 * You can edit any number of TrueSkySequence assets at once. However, only that which is also assigned to the active TrueSkySequenceActor is visible in editor's rendering window.
-
-* Multiple TrueSkySequenceActors can be added to the level, but only one is active at any time.
 
 * To add clouds, double-click the TrueSKY Sequence Asset and right-click on the timeline to add cloud keyframes.
 
@@ -41,7 +38,7 @@ This actor provides a reference to a sequence asset which is rendered. Choose th
 
 Multiple Sequence Actors and Transitions
 ---
-You can have any number of trueSKY Sequence Actors in your level, all with different Sequence Assets assigned. In the Editor, check the Actor's property "Active in Editor" to make it the active Sequence Actor. In-game, the active Sequence Actor is determined by bounds. By default, a Sequence Actor is unbounded - it is always active. You can create bounding by adding a Box Collision component to the Actor.
+You can have any number of trueSKY Sequence Actors in your level, all with different Sequence Assets assigned. In the Editor, check the Actor's property "Active in Editor" to see its weather state in the 3D view. In-game, the active Actor is determined by bounds. By default, a Sequence Actor is unbounded - it is always active. You can create bounding by adding a Box Collision component to the Actor.
 
 <a href="http://docs.simul.co/unrealengine/images/AddBounds.png"><img src="http://docs.simul.co/unrealengine/images/AddBounds.png" alt="Add Bounds"/></a>
 

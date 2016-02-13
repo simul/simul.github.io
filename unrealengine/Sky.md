@@ -1,6 +1,7 @@
 ---
 title: Sky
 layout: unreal
+weight : 5
 ---
 
 Editing the sky in the Sequencer
