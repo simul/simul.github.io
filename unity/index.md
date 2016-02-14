@@ -1,6 +1,7 @@
 ---
 title: Unity
 layout: unity
+weight : 1
 ---
 
 trueSKY alpha for Unity
@@ -121,14 +122,6 @@ For example,in the script KeyframeTesting.cs in the Simul directory, is a functi
 		trueSky.SetKeyframeValue(uid,"cloudiness",0.8);
 	}
 
-For details of the properties you can change, see the Reference pages below.
+For details of the properties you can change, see the Clouds and Sky Reference pages.
 
-Reference
----------
-[Sky and Atmospherics](Sky.html)
-
-[Clouds](Clouds.html)
-
-Techniques
-----------
-[Fixing Time of Day](FixingDaytime.html)
+Next: <a href="/unity/Instructions">Instructions</a>

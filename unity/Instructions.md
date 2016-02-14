@@ -1,7 +1,13 @@
 ---
-title: Time of Day
+title: Instructions
 layout: unity
+weight : 2
 ---
+
+Lighting
+---
+
+
 
 Fixing Time-of-Day
 ------------------
