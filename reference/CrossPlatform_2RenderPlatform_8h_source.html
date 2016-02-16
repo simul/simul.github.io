@@ -164,7 +164,7 @@ url: Simul/Platform/CrossPlatform/RenderPlatform.h Source File
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            <span class="keyword">virtual</span> Mesh                    *CreateMesh                     ()  =0;</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            <span class="keyword">virtual</span> Light                   *CreateLight                    ()  =0;</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            <span class="keyword">virtual</span> <a class="code" href="classsimul_1_1crossplatform_1_1Texture.html">Texture</a>                 *CreateTexture                  (<span class="keyword">const</span> <span class="keywordtype">char</span> *lFileNameUtf8=NULL)    =0;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <span class="keyword">virtual</span> <a class="code" href="classsimul_1_1crossplatform_1_1BaseFramebuffer.html">BaseFramebuffer</a>         *CreateFramebuffer              ()  =0;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <span class="keyword">virtual</span> <a class="code" href="classsimul_1_1crossplatform_1_1BaseFramebuffer.html">BaseFramebuffer</a>         *CreateFramebuffer              (<span class="keyword">const</span> <span class="keywordtype">char</span> *)  =0;</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <span class="keyword">virtual</span> SamplerState            *CreateSamplerState             (SamplerStateDesc *)    =0;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            SamplerState                    *GetOrCreateSamplerStateByName  (<span class="keyword">const</span> <span class="keywordtype">char</span> *name_utf8,simul::crossplatform::SamplerStateDesc *desc=0);</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1Effect.html">Effect</a>                          *CreateEffect                   (<span class="keyword">const</span> <span class="keywordtype">char</span> *filename_utf8);</div>
@@ -312,6 +312,6 @@ url: Simul/Platform/CrossPlatform/RenderPlatform.h Source File
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Mon Feb 15 2016 07:46:40</small></address>
+Tue Feb 16 2016 07:46:38</small></address>
 </body>
 </html>

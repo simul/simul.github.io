@@ -344,114 +344,115 @@ url: Simul/Clouds/BaseGpuCloudGenerator.h Source File
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="keyword">            </span>{</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;                <span class="keywordflow">return</span> Enabled&amp;&amp;renderPlatform!=NULL;</div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;            }</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;            <span class="keywordtype">void</span> Update(<span class="keywordtype">int</span> cycled_index,<span class="keyword">const</span> clouds::GpuCloudsParameters &amp;params,FillTarget *T=NULL);</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;            <span class="keywordtype">void</span> Update(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext,<span class="keywordtype">int</span> cycled_index,<span class="keyword">const</span> clouds::GpuCloudsParameters &amp;params,FillTarget *T=NULL);</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetDensityGridsize(<span class="keyword">const</span> <span class="keywordtype">int</span> *grid);</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;            <span class="keyword">virtual</span> <a class="code" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a>* Make3DNoiseTexture(<span class="keywordtype">int</span> noise_size,</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;            <span class="keyword">virtual</span> <a class="code" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a>* Make3DNoiseTexture(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext,<span class="keywordtype">int</span> noise_size,</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                                            <span class="keyword">const</span> <span class="keywordtype">float</span>  *noise_src_ptr,<span class="keywordtype">int</span> generation_number);</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> FillDensityGrid(<span class="keywordtype">int</span> index,<span class="keyword">const</span> GpuCloudsParameters &amp;params</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;                                            ,<span class="keywordtype">int</span> start_texel</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;                                            ,<span class="keywordtype">int</span> texels);</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> PerformGPURelight(<span class="keywordtype">int</span> light_index</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;                                            ,<span class="keyword">const</span> clouds::GpuCloudsParameters &amp;params</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;                                            ,<span class="keywordtype">float</span> *target</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;                                            ,<span class="keywordtype">int</span> start_texel</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;                                            ,<span class="keywordtype">int</span> texels);</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> GPUTransferDataToTexture(<span class="keywordtype">int</span> cycled_index</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                                                ,<span class="keyword">const</span> clouds::GpuCloudsParameters &amp;params</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                                                ,<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *target</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;                                                ,<span class="keywordtype">int</span> start_texel</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;                                                ,<span class="keywordtype">int</span> texels);</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;            <span class="comment">// For onscreen debug</span></div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;            <span class="keywordtype">void</span> RenderSimulationTextures(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;context,<span class="keywordtype">int</span> x0,<span class="keywordtype">int</span> y0,<span class="keywordtype">int</span> width,<span class="keywordtype">int</span> height);</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;            <span class="keywordtype">void</span> SimulationStep(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;                                ,<span class="keyword">const</span> clouds::GpuCloudsParameters &amp;params</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;                                ,<a class="code" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *target</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;                                ,<span class="keywordtype">float</span> dt</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;                                ,<span class="keywordtype">bool</span> init</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;                                ,<span class="keyword">const</span> clouds::CloudSimulationParameters &amp;sim_params</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;                                ,std::map&lt;int,CloudAffector&gt; aff);</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">float</span> GetOpticalPathLength(<span class="keywordtype">int</span> <span class="comment">/*cycled_index*/</span>,<span class="keyword">const</span> <span class="keywordtype">float</span> * <span class="comment">/*pos*/</span>,<span class="keyword">const</span> <span class="keywordtype">float</span> * <span class="comment">/*dir*/</span>,<span class="keyword">const</span> <span class="keywordtype">float</span> * <span class="comment">/*scales*/</span>)</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;            {</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;                <span class="keywordflow">return</span> 0.f;</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;            }</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;            <span class="keyword">const</span> FillState &amp;GetFillState(<span class="keywordtype">int</span> cycled_index)</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;            {</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;                <span class="keywordflow">return</span> fillStates[cycled_index];</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;            }</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;            <span class="comment">// If we want the generator to put the data directly into 3d textures:</span></div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetDirectTargets(crossplatform::Texture **textures)</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;            {</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;3;i++)</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;                {</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;                    <span class="keywordflow">if</span>(textures)</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;                        finalTexture[i]=textures[i];</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;                    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;                        finalTexture[i]=NULL;</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;                }</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;            }</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;            <span class="keywordtype">void</span> SetWorleyTexture(crossplatform::Texture *t)</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;            {</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;                worleyTexture3D=t;</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;            }</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;            crossplatform::RenderPlatform       *renderPlatform;</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;            crossplatform::BaseFramebuffer      *mask_fb;</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;            </div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;            crossplatform::Effect*              effect;</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;            crossplatform::EffectTechnique*     densityComputeTechnique;</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;            crossplatform::EffectTechnique*     maskTechnique;</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;            crossplatform::EffectTechnique*     lightingComputeTechnique;</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;            crossplatform::EffectTechnique*     secondaryLightingComputeTechnique;</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;            crossplatform::EffectTechnique*     secondaryHarmonicTechnique;</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;            crossplatform::EffectTechnique*     transformComputeTechnique;</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;            crossplatform::Texture              *volume_noise_tex;</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;            crossplatform::Texture              *worleyTexture3D;</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;            <span class="comment">// Simulation textures:The basic quantities necessary to simulate clouds are</span></div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;            <span class="comment">// velocity, u=(u, v, w), air pressure, p, temperature T, water</span></div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;            <span class="comment">// vapor, qv, and condensed cloud water, qc. These water</span></div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;            <span class="comment">// content variables are mixing ratios: quantity per unit air mass</span></div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;            crossplatform::Texture              *simulationVelocityDensity1;</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;            crossplatform::Texture              *simulationVelocityDensity2;</div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;            crossplatform::Texture              *velocityDivergence;</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;            crossplatform::Texture              *simulationPressure1;</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;            crossplatform::Texture              *simulationPressure2;</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;            crossplatform::Texture              *simulationProperties1;</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;            crossplatform::Texture              *simulationProperties2;</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;            crossplatform::Texture              *simulationVorticity;</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;            crossplatform::Texture              *simulationVorticityField;</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;            </div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;            crossplatform::Texture              *density_texture;</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;            crossplatform::Texture              *finalTexture[3];</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;            crossplatform::Texture              *directLightTextures[2];</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;            crossplatform::Texture              *indirectLightTextures[2];</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;            crossplatform::ConstantBuffer&lt;GpuCloudConstants&gt;    gpuCloudConstants;</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;            </div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;            crossplatform::StructuredBuffer&lt;CloudAffector&gt; cloudAffectors;</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;            crossplatform::StructuredBuffer&lt;CloudVolume_densityspace&gt; cloudVolumes;</div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;            crossplatform::SamplerState         *m_pWwcSamplerState;</div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;            crossplatform::SamplerState         *m_pWccSamplerState;</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;            crossplatform::SamplerState         *m_pCwcSamplerState;</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;            crossplatform::SamplerState         *m_pCccSamplerState;</div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;            LightingMethod lightingMethod;</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;            FillState fillStates[3];</div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;            <span class="keywordtype">int</span> texture_cycle;</div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;            <span class="keywordtype">int</span> noiseSize;</div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;            <span class="keywordtype">int</span> last_generation_number;</div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">void</span> SetGpuCloudConstants(GpuCloudConstants &amp;g,<span class="keyword">const</span> clouds::GpuCloudsParameters &amp;params,<span class="keywordtype">float</span> y_start,<span class="keywordtype">float</span> y_range);</div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;            <span class="keyword">struct </span>CloudPlacementTexture</div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;            {</div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;                crossplatform::Texture *texture;</div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;                vec2 pos_km,ext_km;</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;            };</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;            std::map&lt;int,CloudPlacementTexture&gt; cloudPlacementTextures;</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        };</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    }</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;}</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;<span class="preprocessor">    #pragma warning(pop)</span></div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> FillDensityGrid(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;                ,<span class="keywordtype">int</span> index,<span class="keyword">const</span> GpuCloudsParameters &amp;params</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;                                            ,<span class="keywordtype">int</span> start_texel</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;                                            ,<span class="keywordtype">int</span> texels);</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> PerformGPURelight(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext,<span class="keywordtype">int</span> light_index</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;                                            ,<span class="keyword">const</span> clouds::GpuCloudsParameters &amp;params</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;                                            ,<span class="keywordtype">float</span> *target</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;                                            ,<span class="keywordtype">int</span> start_texel</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;                                            ,<span class="keywordtype">int</span> texels);</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> GPUTransferDataToTexture(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext,<span class="keywordtype">int</span> cycled_index</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                                                ,<span class="keyword">const</span> clouds::GpuCloudsParameters &amp;params</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;                                                ,<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *target</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;                                                ,<span class="keywordtype">int</span> start_texel</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;                                                ,<span class="keywordtype">int</span> texels);</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;            <span class="comment">// For onscreen debug</span></div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;            <span class="keywordtype">void</span> RenderSimulationTextures(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;context,<span class="keywordtype">int</span> x0,<span class="keywordtype">int</span> y0,<span class="keywordtype">int</span> width,<span class="keywordtype">int</span> height);</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;            <span class="keywordtype">void</span> SimulationStep(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;                                ,<span class="keyword">const</span> clouds::GpuCloudsParameters &amp;params</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;                                ,<a class="code" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *target</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;                                ,<span class="keywordtype">float</span> dt</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;                                ,<span class="keywordtype">bool</span> init</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;                                ,<span class="keyword">const</span> clouds::CloudSimulationParameters &amp;sim_params</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;                                ,std::map&lt;int,CloudAffector&gt; aff);</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">float</span> GetOpticalPathLength(<span class="keywordtype">int</span> <span class="comment">/*cycled_index*/</span>,<span class="keyword">const</span> <span class="keywordtype">float</span> * <span class="comment">/*pos*/</span>,<span class="keyword">const</span> <span class="keywordtype">float</span> * <span class="comment">/*dir*/</span>,<span class="keyword">const</span> <span class="keywordtype">float</span> * <span class="comment">/*scales*/</span>)</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;            {</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;                <span class="keywordflow">return</span> 0.f;</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;            }</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;            <span class="keyword">const</span> FillState &amp;GetFillState(<span class="keywordtype">int</span> cycled_index)</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;            {</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;                <span class="keywordflow">return</span> fillStates[cycled_index];</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;            }</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;            <span class="comment">// If we want the generator to put the data directly into 3d textures:</span></div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetDirectTargets(crossplatform::Texture **textures)</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;            {</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;3;i++)</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;                {</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;                    <span class="keywordflow">if</span>(textures)</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;                        finalTexture[i]=textures[i];</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;                    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;                        finalTexture[i]=NULL;</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;                }</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;            }</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;            <span class="keywordtype">void</span> SetWorleyTexture(crossplatform::Texture *t)</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;            {</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;                worleyTexture3D=t;</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;            }</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;        <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;            crossplatform::RenderPlatform       *renderPlatform;</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;            crossplatform::BaseFramebuffer      *mask_fb;</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;            </div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;            crossplatform::Effect*              effect;</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;            crossplatform::EffectTechnique*     densityComputeTechnique;</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;            crossplatform::EffectTechnique*     maskTechnique;</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;            crossplatform::EffectTechnique*     lightingComputeTechnique;</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;            crossplatform::EffectTechnique*     secondaryLightingComputeTechnique;</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;            crossplatform::EffectTechnique*     secondaryHarmonicTechnique;</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;            crossplatform::EffectTechnique*     transformComputeTechnique;</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;            crossplatform::Texture              *volume_noise_tex;</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;            crossplatform::Texture              *worleyTexture3D;</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;            <span class="comment">// Simulation textures:The basic quantities necessary to simulate clouds are</span></div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;            <span class="comment">// velocity, u=(u, v, w), air pressure, p, temperature T, water</span></div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;            <span class="comment">// vapor, qv, and condensed cloud water, qc. These water</span></div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;            <span class="comment">// content variables are mixing ratios: quantity per unit air mass</span></div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;            crossplatform::Texture              *simulationVelocityDensity1;</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;            crossplatform::Texture              *simulationVelocityDensity2;</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;            crossplatform::Texture              *velocityDivergence;</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;            crossplatform::Texture              *simulationPressure1;</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;            crossplatform::Texture              *simulationPressure2;</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;            crossplatform::Texture              *simulationProperties1;</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;            crossplatform::Texture              *simulationProperties2;</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;            crossplatform::Texture              *simulationVorticity;</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;            crossplatform::Texture              *simulationVorticityField;</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;            </div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;            crossplatform::Texture              *density_texture;</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;            crossplatform::Texture              *finalTexture[3];</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;            crossplatform::Texture              *directLightTextures[2];</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;            crossplatform::Texture              *indirectLightTextures[2];</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;            crossplatform::ConstantBuffer&lt;GpuCloudConstants&gt;    gpuCloudConstants;</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;            </div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;            crossplatform::StructuredBuffer&lt;CloudAffector&gt; cloudAffectors;</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;            crossplatform::StructuredBuffer&lt;CloudVolume_densityspace&gt; cloudVolumes;</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;            crossplatform::SamplerState         *m_pWwcSamplerState;</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;            crossplatform::SamplerState         *m_pWccSamplerState;</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;            crossplatform::SamplerState         *m_pCwcSamplerState;</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;            crossplatform::SamplerState         *m_pCccSamplerState;</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;            LightingMethod lightingMethod;</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;            FillState fillStates[3];</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;            <span class="keywordtype">int</span> texture_cycle;</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;            <span class="keywordtype">int</span> noiseSize;</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;            <span class="keywordtype">int</span> last_generation_number;</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">void</span> SetGpuCloudConstants(GpuCloudConstants &amp;g,<span class="keyword">const</span> clouds::GpuCloudsParameters &amp;params,<span class="keywordtype">float</span> y_start,<span class="keywordtype">float</span> y_range);</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;            <span class="keyword">struct </span>CloudPlacementTexture</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;            {</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;                crossplatform::Texture *texture;</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;                vec2 pos_km,ext_km;</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;            };</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;            std::map&lt;int,CloudPlacementTexture&gt; cloudPlacementTextures;</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;        };</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    }</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;}</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;<span class="preprocessor">    #pragma warning(pop)</span></div>
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="structsimul_1_1clouds_1_1CloudKeyframe_html_a4df254708b4c0aa3869c2bf323bc74c7"><div class="ttname"><a href="structsimul_1_1clouds_1_1CloudKeyframe.html#a4df254708b4c0aa3869c2bf323bc74c7">simul::clouds::CloudKeyframe::cloudiness</a></div><div class="ttdeci">float cloudiness</div><div class="ttdoc">The density of the cloud layer at this time. </div><div class="ttdef"><b>Definition:</b> <a href="BaseGpuCloudGenerator_8h_source.html#l00078">BaseGpuCloudGenerator.h:78</a></div></div>
 <div class="ttc" id="structsimul_1_1sky_1_1Output_html"><div class="ttname"><a href="structsimul_1_1sky_1_1Output.html">simul::sky::Output</a></div><div class="ttdoc">A virtual base class to save objects to binary. </div><div class="ttdef"><b>Definition:</b> <a href="ChunkInputOutput_8h_source.html#l00024">ChunkInputOutput.h:24</a></div></div>
 <div class="ttc" id="structsimul_1_1clouds_1_1CloudKeyframe_html_a0b854db56e8a274e57b9abd98ff22c47"><div class="ttname"><a href="structsimul_1_1clouds_1_1CloudKeyframe.html#a0b854db56e8a274e57b9abd98ff22c47">simul::clouds::CloudKeyframe::wind_speed</a></div><div class="ttdeci">float wind_speed</div><div class="ttdoc">The wind speed in m/s. </div><div class="ttdef"><b>Definition:</b> <a href="BaseGpuCloudGenerator_8h_source.html#l00082">BaseGpuCloudGenerator.h:82</a></div></div>
@@ -518,6 +519,6 @@ url: Simul/Clouds/BaseGpuCloudGenerator.h Source File
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Mon Feb 15 2016 07:46:40</small></address>
+Tue Feb 16 2016 07:46:38</small></address>
 </body>
 </html>
