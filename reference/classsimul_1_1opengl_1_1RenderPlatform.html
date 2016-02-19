@@ -89,10 +89,10 @@ crossplatform::Buffer *&#160;</td><td class="memItemRight" valign="bottom"><a cl
 <a class="el" href="classsimul_1_1opengl_1_1Effect.html">Effect</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#ab932243b462874e6cb2d4581b0000f09">CreateEffect</a> (const char *filename_utf8)</td></tr>
 <tr class="memdesc:ab932243b462874e6cb2d4581b0000f09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a platform-specific effect instance. <br /></td></tr>
 <tr class="separator:ab932243b462874e6cb2d4581b0000f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a392556f7acabee60716bdca32049a5b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a392556f7acabee60716bdca32049a5b2"></a>
-<a class="el" href="classsimul_1_1crossplatform_1_1BaseFramebuffer.html">crossplatform::BaseFramebuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1opengl_1_1RenderPlatform.html#a392556f7acabee60716bdca32049a5b2">CreateFramebuffer</a> (const char *name)</td></tr>
-<tr class="memdesc:a392556f7acabee60716bdca32049a5b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a platform-specific framebuffer instance - i.e. an optional colour and an optional depth rendertarget. Optionally takes a name string. <br /></td></tr>
-<tr class="separator:a392556f7acabee60716bdca32049a5b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d9ab9fa30239dd9800349d3da47e016"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d9ab9fa30239dd9800349d3da47e016"></a>
+<a class="el" href="classsimul_1_1crossplatform_1_1BaseFramebuffer.html">crossplatform::BaseFramebuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1opengl_1_1RenderPlatform.html#a8d9ab9fa30239dd9800349d3da47e016">CreateFramebuffer</a> (const char *name=nullptr) override</td></tr>
+<tr class="memdesc:a8d9ab9fa30239dd9800349d3da47e016"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a platform-specific framebuffer instance - i.e. an optional colour and an optional depth rendertarget. Optionally takes a name string. <br /></td></tr>
+<tr class="separator:a8d9ab9fa30239dd9800349d3da47e016"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f592dbb2d4ce76483c911ccbbec1ce0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f592dbb2d4ce76483c911ccbbec1ce0"></a>
 <a class="el" href="classsimul_1_1crossplatform_1_1Layout.html">crossplatform::Layout</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1opengl_1_1RenderPlatform.html#a3f592dbb2d4ce76483c911ccbbec1ce0">CreateLayout</a> (int num_elements, const <a class="el" href="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1LayoutDesc">crossplatform::LayoutDesc</a> *)</td></tr>
 <tr class="memdesc:a3f592dbb2d4ce76483c911ccbbec1ce0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a platform-specific layout instance based on the given layout description <em>layoutDesc</em> and buffer <em>buffer</em>. <br /></td></tr>
@@ -125,10 +125,10 @@ crossplatform::RenderState *&#160;</td><td class="memItemRight" valign="bottom">
 crossplatform::SamplerState *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1opengl_1_1RenderPlatform.html#a7689543925146a8d417faac34c88bf2b">CreateSamplerState</a> (crossplatform::SamplerStateDesc *)</td></tr>
 <tr class="memdesc:a7689543925146a8d417faac34c88bf2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a platform-specific sampler state instance. <br /></td></tr>
 <tr class="separator:a7689543925146a8d417faac34c88bf2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d53957a3e259b6096195552f28094cf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d53957a3e259b6096195552f28094cf"></a>
-<a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1opengl_1_1RenderPlatform.html#a0d53957a3e259b6096195552f28094cf">CreateTexture</a> (const char *lFileNameUtf8=NULL)</td></tr>
-<tr class="memdesc:a0d53957a3e259b6096195552f28094cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a platform-specific texture instance. <br /></td></tr>
-<tr class="separator:a0d53957a3e259b6096195552f28094cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad910eb7021ca67154e35c0d4a1f04d60"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad910eb7021ca67154e35c0d4a1f04d60"></a>
+<a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1opengl_1_1RenderPlatform.html#ad910eb7021ca67154e35c0d4a1f04d60">CreateTexture</a> (const char *lFileNameUtf8=nullptr) override</td></tr>
+<tr class="memdesc:ad910eb7021ca67154e35c0d4a1f04d60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a platform-specific texture instance. <br /></td></tr>
+<tr class="separator:ad910eb7021ca67154e35c0d4a1f04d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71752f7d09400f506f54fac11463e80c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71752f7d09400f506f54fac11463e80c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1opengl_1_1RenderPlatform.html#a71752f7d09400f506f54fac11463e80c">DispatchCompute</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, int w, int l, int d)</td></tr>
 <tr class="memdesc:a71752f7d09400f506f54fac11463e80c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute the currently applied compute shader. <br /></td></tr>
@@ -434,6 +434,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Thu Feb 18 2016 07:49:43</small></address>
+Fri Feb 19 2016 07:47:16</small></address>
 </body>
 </html>

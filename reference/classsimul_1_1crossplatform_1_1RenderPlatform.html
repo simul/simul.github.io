@@ -89,10 +89,10 @@ virtual <a class="el" href="classsimul_1_1crossplatform_1_1Effect.html">Effect</
 virtual <a class="el" href="classsimul_1_1crossplatform_1_1Effect.html">Effect</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#ac964df33a4f0d7b8568079865f3b074c">CreateEffect</a> (const char *filename_utf8, const std::map&lt; std::string, std::string &gt; &amp;defines)</td></tr>
 <tr class="memdesc:ac964df33a4f0d7b8568079865f3b074c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a platform-specific effect instance. <br /></td></tr>
 <tr class="separator:ac964df33a4f0d7b8568079865f3b074c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67a78e03b79c85b6a64bec0c82192687"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67a78e03b79c85b6a64bec0c82192687"></a>
-virtual <a class="el" href="classsimul_1_1crossplatform_1_1BaseFramebuffer.html">BaseFramebuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#a67a78e03b79c85b6a64bec0c82192687">CreateFramebuffer</a> (const char *)=0</td></tr>
-<tr class="memdesc:a67a78e03b79c85b6a64bec0c82192687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a platform-specific framebuffer instance - i.e. an optional colour and an optional depth rendertarget. Optionally takes a name string. <br /></td></tr>
-<tr class="separator:a67a78e03b79c85b6a64bec0c82192687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af72b571e259510550c4d09b8d394181d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af72b571e259510550c4d09b8d394181d"></a>
+virtual <a class="el" href="classsimul_1_1crossplatform_1_1BaseFramebuffer.html">BaseFramebuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#af72b571e259510550c4d09b8d394181d">CreateFramebuffer</a> (const char *=nullptr)=0</td></tr>
+<tr class="memdesc:af72b571e259510550c4d09b8d394181d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a platform-specific framebuffer instance - i.e. an optional colour and an optional depth rendertarget. Optionally takes a name string. <br /></td></tr>
+<tr class="separator:af72b571e259510550c4d09b8d394181d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe05729b08dd9b72745baacfd729c736"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe05729b08dd9b72745baacfd729c736"></a>
 virtual <a class="el" href="classsimul_1_1crossplatform_1_1Layout.html">Layout</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#afe05729b08dd9b72745baacfd729c736">CreateLayout</a> (int num_elements, const <a class="el" href="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1LayoutDesc">LayoutDesc</a> *layoutDesc)=0</td></tr>
 <tr class="memdesc:afe05729b08dd9b72745baacfd729c736"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a platform-specific layout instance based on the given layout description <em>layoutDesc</em> and buffer <em>buffer</em>. <br /></td></tr>
@@ -125,10 +125,10 @@ virtual RenderState *&#160;</td><td class="memItemRight" valign="bottom"><a clas
 virtual SamplerState *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#a445eadd988b19b7dc960a004f65ad533">CreateSamplerState</a> (SamplerStateDesc *)=0</td></tr>
 <tr class="memdesc:a445eadd988b19b7dc960a004f65ad533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a platform-specific sampler state instance. <br /></td></tr>
 <tr class="separator:a445eadd988b19b7dc960a004f65ad533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1eb21fdc965a63ec8d2eb5982afc34ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1eb21fdc965a63ec8d2eb5982afc34ad"></a>
-virtual <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#a1eb21fdc965a63ec8d2eb5982afc34ad">CreateTexture</a> (const char *lFileNameUtf8=NULL)=0</td></tr>
-<tr class="memdesc:a1eb21fdc965a63ec8d2eb5982afc34ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a platform-specific texture instance. <br /></td></tr>
-<tr class="separator:a1eb21fdc965a63ec8d2eb5982afc34ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d024d69ed78eb9d666f7b12e644089c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d024d69ed78eb9d666f7b12e644089c"></a>
+virtual <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#a3d024d69ed78eb9d666f7b12e644089c">CreateTexture</a> (const char *lFileNameUtf8=nullptr)=0</td></tr>
+<tr class="memdesc:a3d024d69ed78eb9d666f7b12e644089c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a platform-specific texture instance. <br /></td></tr>
+<tr class="separator:a3d024d69ed78eb9d666f7b12e644089c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef7eab1870b1420940461db8e879a26d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef7eab1870b1420940461db8e879a26d"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#aef7eab1870b1420940461db8e879a26d">DispatchCompute</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">DeviceContext</a> &amp;deviceContext, int w, int l, int d)=0</td></tr>
 <tr class="memdesc:aef7eab1870b1420940461db8e879a26d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute the currently applied compute shader. <br /></td></tr>
@@ -420,6 +420,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Thu Feb 18 2016 07:49:43</small></address>
+Fri Feb 19 2016 07:47:16</small></address>
 </body>
 </html>
