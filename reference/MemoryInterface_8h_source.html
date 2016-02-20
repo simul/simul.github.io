@@ -274,7 +274,11 @@ url: Simul/Base/MemoryInterface.h Source File
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        }; </div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    }</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;}</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="preprocessor">#ifdef SIMUL_TRACK_ALLOCS</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="preprocessor">#undef Allocate</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="preprocessor">#undef AllocateVideoMemory</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="classsimul_1_1base_1_1MemoryInterface_html_a20be17ab73a24143736f2eddb262fedd"><div class="ttname"><a href="classsimul_1_1base_1_1MemoryInterface.html#a20be17ab73a24143736f2eddb262fedd">simul::base::MemoryInterface::Deallocate</a></div><div class="ttdeci">virtual void Deallocate(void *address)=0</div></div>
 <div class="ttc" id="classsimul_1_1base_1_1MemoryInterface_html_ab7c7fa2d5d5d45a3f1d704ca502b6894"><div class="ttname"><a href="classsimul_1_1base_1_1MemoryInterface.html#ab7c7fa2d5d5d45a3f1d704ca502b6894">simul::base::MemoryInterface::AllocateTracked</a></div><div class="ttdeci">virtual void * AllocateTracked(size_t, size_t, const char *)</div><div class="ttdoc">Reimplement this if needed in the derived class. The function_name can be ignored if you are not trac...</div><div class="ttdef"><b>Definition:</b> <a href="MemoryInterface_8h_source.html#l00067">MemoryInterface.h:67</a></div></div>
 <div class="ttc" id="classsimul_1_1base_1_1MemoryInterface_html"><div class="ttname"><a href="classsimul_1_1base_1_1MemoryInterface.html">simul::base::MemoryInterface</a></div><div class="ttdoc">A virtual interface class for classes that can allocate and de-allocate memory. </div><div class="ttdef"><b>Definition:</b> <a href="MemoryInterface_8h_source.html#l00045">MemoryInterface.h:45</a></div></div>
@@ -289,6 +293,6 @@ url: Simul/Base/MemoryInterface.h Source File
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Fri Feb 19 2016 07:47:14</small></address>
+Sat Feb 20 2016 07:47:15</small></address>
 </body>
 </html>
