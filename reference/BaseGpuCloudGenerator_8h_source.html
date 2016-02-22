@@ -424,35 +424,33 @@ url: Simul/Clouds/BaseGpuCloudGenerator.h Source File
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;            </div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;            crossplatform::Texture              *density_texture;</div>
 <div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;            crossplatform::Texture              *finalTexture[3];</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;            crossplatform::Texture              *directLightTextures[2];</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;            crossplatform::Texture              *indirectLightTextures[2];</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;            crossplatform::ConstantBuffer&lt;GpuCloudConstants&gt;    gpuCloudConstants;</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;            </div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;            crossplatform::StructuredBuffer&lt;CloudAffector&gt; cloudAffectors;</div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;            crossplatform::StructuredBuffer&lt;CloudVolume_densityspace&gt; cloudVolumes;</div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;            crossplatform::SamplerState         *m_pWwcSamplerState;</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;            crossplatform::SamplerState         *m_pWccSamplerState;</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;            crossplatform::SamplerState         *m_pCwcSamplerState;</div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;            crossplatform::SamplerState         *m_pCccSamplerState;</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;            LightingMethod lightingMethod;</div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;            FillState fillStates[3];</div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;            <span class="keywordtype">int</span> texture_cycle;</div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;            <span class="keywordtype">int</span> noiseSize;</div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;            <span class="keywordtype">int</span> last_generation_number;</div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">void</span> SetGpuCloudConstants(GpuCloudConstants &amp;g,<span class="keyword">const</span> clouds::GpuCloudsParameters &amp;params,<span class="keywordtype">float</span> y_start,<span class="keywordtype">float</span> y_range);</div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;            <span class="keyword">struct </span>CloudPlacementTexture</div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;            {</div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;                crossplatform::Texture *texture;</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;                vec2 pos_km,ext_km;</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;            };</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;            std::map&lt;int,CloudPlacementTexture&gt; cloudPlacementTextures;</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;        };</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    }</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;}</div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;<span class="preprocessor">    #pragma warning(pop)</span></div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;            crossplatform::ConstantBuffer&lt;GpuCloudConstants&gt;    gpuCloudConstants;</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;            </div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;            crossplatform::StructuredBuffer&lt;CloudAffector&gt; cloudAffectors;</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;            crossplatform::StructuredBuffer&lt;CloudVolume_densityspace&gt; cloudVolumes;</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;            crossplatform::SamplerState         *m_pWwcSamplerState;</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;            crossplatform::SamplerState         *m_pWccSamplerState;</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;            crossplatform::SamplerState         *m_pCwcSamplerState;</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;            crossplatform::SamplerState         *m_pCccSamplerState;</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;            LightingMethod lightingMethod;</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;            FillState fillStates[3];</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;            <span class="keywordtype">int</span> texture_cycle;</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;            <span class="keywordtype">int</span> noiseSize;</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;            <span class="keywordtype">int</span> last_generation_number;</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">void</span> SetGpuCloudConstants(GpuCloudConstants &amp;g,<span class="keyword">const</span> clouds::GpuCloudsParameters &amp;params,<span class="keywordtype">float</span> y_start,<span class="keywordtype">float</span> y_range);</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;            <span class="keyword">struct </span>CloudPlacementTexture</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;            {</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;                crossplatform::Texture *texture;</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;                vec2 pos_km,ext_km;</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;            };</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;            std::map&lt;int,CloudPlacementTexture&gt; cloudPlacementTextures;</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;        };</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    }</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;}</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;<span class="preprocessor">    #pragma warning(pop)</span></div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="structsimul_1_1clouds_1_1CloudKeyframe_html_a4df254708b4c0aa3869c2bf323bc74c7"><div class="ttname"><a href="structsimul_1_1clouds_1_1CloudKeyframe.html#a4df254708b4c0aa3869c2bf323bc74c7">simul::clouds::CloudKeyframe::cloudiness</a></div><div class="ttdeci">float cloudiness</div><div class="ttdoc">The density of the cloud layer at this time. </div><div class="ttdef"><b>Definition:</b> <a href="BaseGpuCloudGenerator_8h_source.html#l00078">BaseGpuCloudGenerator.h:78</a></div></div>
 <div class="ttc" id="structsimul_1_1sky_1_1Output_html"><div class="ttname"><a href="structsimul_1_1sky_1_1Output.html">simul::sky::Output</a></div><div class="ttdoc">A virtual base class to save objects to binary. </div><div class="ttdef"><b>Definition:</b> <a href="ChunkInputOutput_8h_source.html#l00024">ChunkInputOutput.h:24</a></div></div>
 <div class="ttc" id="structsimul_1_1clouds_1_1CloudKeyframe_html_a0b854db56e8a274e57b9abd98ff22c47"><div class="ttname"><a href="structsimul_1_1clouds_1_1CloudKeyframe.html#a0b854db56e8a274e57b9abd98ff22c47">simul::clouds::CloudKeyframe::wind_speed</a></div><div class="ttdeci">float wind_speed</div><div class="ttdoc">The wind speed in m/s. </div><div class="ttdef"><b>Definition:</b> <a href="BaseGpuCloudGenerator_8h_source.html#l00082">BaseGpuCloudGenerator.h:82</a></div></div>
@@ -519,6 +517,6 @@ url: Simul/Clouds/BaseGpuCloudGenerator.h Source File
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Sun Feb 21 2016 07:47:21</small></address>
+Mon Feb 22 2016 07:47:18</small></address>
 </body>
 </html>
