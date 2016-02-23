@@ -13,7 +13,7 @@ To find out if there is cloud at a given 3D position, use **trueSKY.GetCloudAtPo
 
 3D Cloud properties can be set using ***trueSKY.SetCloudFloat*** and ***trueSKY.SetCloudFloat***. These are the properties that can be set:
 
-**CloudWidth:**("CloudWidth","CloudWidthKm" or "CloudWidthMetres") Width of the clouds in km or metres (will default to km). 
+**CloudWidth:**("CloudWidth", "CloudWidthKm" or "CloudWidthMetres") Width of the clouds in km or metres (will default to km). 
 
 **NoisePeriod:** Period in days of the fractal noise function.
 
@@ -85,9 +85,9 @@ Some are used as interpolated values per-frame when rendering, either to determi
 
 **Wind direction:** ("WindHeadingDegrees") Direction in compass degrees.
 
-**Cloud base:** ("cloudBaseKm") Height of the cloudbase in km above sea level.
+**Cloud base:** ("cloudBase") Height of the cloudbase in km above sea level.
 
-**Cloud height:** ("cloudHeightKm") Height of the clouds in km.
+**Cloud height:** ("cloudHeight") Height of the clouds in km.
 
 **Offset:**("offsetxKm","offsetyKm") If absolute positioning (see cloud layer property "ExplicitOffsets") is enabled, the offset in km.
 
