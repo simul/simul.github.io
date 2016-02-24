@@ -72,159 +72,17 @@ keyframe..." or "Add cloud keyframe..." option.</p>
 <p>The Grid height and width determine the amount of detail in a cloud volume.</p>
 <h3>Cloud volume width</h3>
 <p>The cloud volume may be typically 10-100km wide. It can repeat (wrap), so that it covers the whole sky. Alternatively, a non-wrapping cloud volume can represent a specific area of cloud in a clear sky.</p>
-<h3>Cloud Layer Features</h3>
-<p>Cloud layer properties are more general, and will affect all cloud keyframes. Note that for 2D clouds, there is no Precipitation section. The cloud layer properties accessible in the sequencer are:</p>
+<h3>Keyframe features</h3>
+<p>The main properties for controlling the weather are:</p>
 <table  style="width: 718px; background-color: #E3EEFB; margin-left: 56px;">
 <tr>
 <th>Feature</th><th><b>Description</b> </th></tr>
 <tr>
-<td><b>Mode</b></td><td> </td></tr>
+<td>cloudiness</td><td>How much cloud in the layer at this time. </td></tr>
 <tr>
-<td>Loop</td><td>Whether or not to loop the keyframes. </td></tr>
+<td>cloudbase (km)</td><td>Base altitude. </td></tr>
 <tr>
-<td>Keyframe Subdivision</td><td>How keyframes are transitionsed between (real time is simplest). </td></tr>
-<tr>
-<td>Update</td><td>Whether to apply updates instantly or gradually. If gradually, any keyframe can be modifeid at any time. If instant, only the next keyframe can be modified. </td></tr>
-<tr>
-<td>Number</td><td>If using fixed intervals, this is the total number of seconds/minutes/days/months. </td></tr>
-<tr>
-<td>Interval</td><td>Interval between keyframes in minutes/days/months (if game time). </td></tr>
-<tr>
-<td>Interval (s)</td><td>Interval between keyframes in seconds (if real time). </td></tr>
-<tr>
-<td><b>Main</b></td><td> </td></tr>
-<tr>
-<td>Enabled</td><td>Whether GPU cloud generator should calculate clouds; turns clouds on or off. </td></tr>
-<tr>
-<td>Wrap Horizontally</td><td>Whether to wrap clouds horizontally. </td></tr>
-<tr>
-<td>Overide Wind</td><td>Whether to set wind speed and direction directly, or use the keyframe values. </td></tr>
-<tr>
-<td>Render Mode</td><td>A hint for the renderer on how to raytrace these clouds. </td></tr>
-<tr>
-<td><b>Precipitation </b></td><td> </td></tr>
-<tr>
-<td>Max Particles</td><td>The maximum number of rain particles to render. </td></tr>
-<tr>
-<td>Threshold (km)</td><td>What local thickness of cloud is needed for rain to fall. </td></tr>
-<tr> 
-<td>Radius (metres)</td><td>Size of the particle zone. </td></tr>
-<tr>
-<td>Rain Speed (m/s)</td><td>Speed of falling precipitation. </td></tr>
-<tr>
-<td>Raindrop Size (mm)</td><td>Size of a single raindrop. </td></tr>
-<tr>
-<td><b>Rendering</b></td><td> </td></tr>
-<tr>
-<td></td><td> </td></tr>
-<tr>
-<td></td><td></td></tr>
-<tr>
-<td></td><td> </td></tr>
-<tr>
-<td><b>Grid</b></td><td> </td></tr>
-<tr>
-<td></td><td> </td></tr>
-<tr>
-<td></td><td></td></tr> 
-<tr>
-<td><b>Generation Noise</b></td><td> </td></tr>
-<tr>
-<td></td><td> </td></tr>
-<tr>
-<td></td><td></td></tr>
-<tr>
-<td><b>Edge Noise</b></td><td> </td></tr>
-<tr>
-<td></td><td> </td></tr>
-<tr>
-<td></td><td></td></tr>
-</table>
-<h3>Cloud Keyframe Features</h3>
-<p>Cloud keyframe properties allow you to change particular elements of one or more keyframes at a time. Note that for 2D clouds, there is no Weather Effects section. The cloud keyframe properties accessible in the sequencer are:</p>
-<table  style="width: 718px; background-color: #E3EEFB; margin-left: 56px;">
-<tr>
-<th>Feature</th><th><b>Description</b> </th></tr>
-<tr>
-<td><b>Main</b></td><td> </td></tr>
-<tr>
-<td>Cloudiness</td><td>How much cloud in the layer at this time. </td></tr>
-<tr>
-<td>Cloudbase</td><td>Base altitude, in km. </td></tr>
-<tr>
-<td>Layer Height </td><td>How tall the cloud layer is, in km. </td></tr>
-<tr>
-<td>Volume Width</td><td>The width of the cloud layer, in km. Typically between 10 and 100. </td></tr>
-<tr>
-<td>Wind Speed</td><td>Wind speed, in m/s. </td></tr>
-<tr>
-<td>Wind Heading</td><td>Wind motion of the clouds, in degrees. Defines the horizontal direction the clouds move in. </td></tr>
-<tr>
-<td><b>Shape</b></td><td> </td></tr>
-<tr>
-<td>Base Layer</td><td>Proportion of the volume vertically that forms the base of the clouds. </td></tr>
-<tr>
-<td>Transition</td><td>Proportion that transitions from the cloudbase to the upper layer. </td></tr>
-<tr>
-<td>Upper Density</td><td>Density of the upper layer as a proportion of the base density. </td></tr>
-<tr>
-<td>Octaves</td><td>How many fractal octaves to use. </td></tr>
-<tr>
-<td>Persistence</td><td>Fractal persistence. </td></tr>
-<tr>
-<td>Worley Noise</td><td>How much Worley (cell) noise to apply in cloud generation. </td></tr>
-<tr>
-<td>Worley Scale</td><td>Scale of the Worley noise. Will be locked to an integer if clouds are wrapping.  </td></tr>
-<tr>
-<td>Diffusivity</td><td>How much the edges of clouds should be diffused. </td></tr>
-<tr>
-<td><b>Lighting</b></td><td> </td></tr>
-<tr>
-<td>Direct Light</td><td>The amount of direct light to be used. </td></tr>
-<tr>
-<td>Asymmetry</td><td>The anisotropic distribution of direct lighting, or eccentricity.  </td></tr>
-<tr>
-<td>Indirect Light</td><td>The amount of indirect or secondary light to be used.  </td></tr>
-<tr>
-<td>Ambient Light</td><td>The amount of ambient light to be used. </td></tr>
-<tr>
-<td>Extinction</td><td>The amount of light scattered per metre. Larger values produce darker clouds.  </td></tr>
-<tr>
-<td>Godrays</td><td>Strength of the godrays effect, between 0 and 1. </td></tr>
-<tr>
-<td><b>Edge Noise</b></td><td> </td></tr>
-<tr>
-<td>Scale</td><td>The wavelength of the edge noise. </td></tr>
-<tr>
-<td>Amplitude</td><td>The strength of the edge noise. </td></tr>
-<tr>
-<td>Worley Scale</td><td>The wavelength of the fractal worley edge noise. </td></tr>
-<tr>
-<td>Worley Amplitude</td><td>The strength of the fractal worley edge noise.  </td></tr>
-<tr>
-<td>Sharpness</td><td>The sharpness to be applied when rendering the boundary.  </td></tr>
-<tr>
-<td>Base Factor</td><td>What proportion of noise is applied at the cloudbase, between 0 and 1.  </td></tr>
-<tr>
-<td>Churn</td><td>The strength of the cloud edge churning effect. Larger values produce more turbulent clouds.  </td></tr>
-<tr>
-<td><b>Weather Effects</b></td><td> </td></tr>
-<tr>
-<td>Regional</td><td>If checked then rain/snow will be limited to the specified region.  </td></tr>
-<tr>
-<td>Lock to cloud</td><td>Locks the precipitation region to the cloud wind motion.  </td></tr>
-<tr>
-<td>Radius (km)</td><td>The precipitation region, in km.  </td></tr>
-<tr>
-<td>Strength</td><td>How much rain or snow.  </td></tr>
-<tr>
-<td>Rain Streaks</td><td>The visual strength of the rain-streak effect.  </td></tr>
-<tr>
-<td>Rain - Snow</td><td>Set this to 0 for rain, or 1 for snow.  </td></tr>
-<tr>
-<td>Wind effect</td><td>Strength of the effect of wind on precipitation direction.  </td></tr>
-<tr>
-<td>Waver</td><td>How much precipitation layers waver as they fall. </td></tr>
+<td>cloud height (km)</td><td>How tall the cloud layer is. </td></tr>
 </table>
 <p>See the public attributes of <a class="el" href="structsimul_1_1clouds_1_1CloudKeyframe.html">CloudKeyframe</a> for a full description of all the cloud keyframe properties.</p>
 <h2>Sky features</h2>
@@ -237,8 +95,7 @@ keyframe..." or "Add cloud keyframe..." option.</p>
 <p>If enabled, the moon is automatically placed in the sky based on time, day, month, and year. Otherwise, each sky keyframe has moon position settings.</p>
 <h3>Colour Sky</h3>
 <p>A colour sky has colours for sky and fade determined by a choice from a colour dialog. The default behaviour (non-colour sky) is to generate the colours from physical properties). </p>
-<h3>Sky Layer Features</h3>
-<h3>Sky Keyframe Features</h3>
+<h3>Keyframe features</h3>
 <p>See the class definition for <a class="el" href="structsimul_1_1sky_1_1SkyKeyframe.html">simul::sky::SkyKeyframe</a>. The main sky keyframe properties are:</p>
 <table  style="width: 718px; background-color: #E3EEFB; margin-left: 56px;">
 <tr>
@@ -262,6 +119,6 @@ keyframe..." or "Add cloud keyframe..." option.</p>
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Tue Feb 23 2016 07:47:26</small></address>
+Wed Feb 24 2016 07:47:22</small></address>
 </body>
 </html>
