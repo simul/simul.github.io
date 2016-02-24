@@ -9,6 +9,8 @@ Cloud Layers and Cloud Keyframes
 
 To select a cloud keyframe, click it. To select all the keyframes of a cloud layer, double-click on the space between them. To select and modify the properties of a whole cloud layer, click on the "Clouds" text at left.
 
+Read more about editing the Cloud Layer or Cloud Keyframes on [The Sky Sequencer Page](http://docs.simul.co/reference/man_8_sequencer.html).
+
 To find out if there is cloud at a given 3D position, use **trueSKY.GetCloudAtPosition**; for rain, use **trueSKY.GetPrecipitationAtPosition**.
 
 3D Cloud properties can be set using ***trueSKY.SetCloudFloat*** and ***trueSKY.SetCloudFloat***. These are the properties that can be set:

@@ -70,9 +70,9 @@ keyframe..." or "Add cloud keyframe..." option.</p>
 <h2>Cloud features </h2>
 <h3>Grid</h3>
 <p>The Grid height and width determine the amount of detail in a cloud volume.</p>
-<h3>Cloud volume width</h3>
+<h3>Cloud Volume Width</h3>
 <p>The cloud volume may be typically 10-100km wide. It can repeat (wrap), so that it covers the whole sky. Alternatively, a non-wrapping cloud volume can represent a specific area of cloud in a clear sky.</p>
-<h3>Cloud Layer Features</h3>
+<h3>Cloud Layer Properties</h3>
 <p>Cloud layer properties are more general, and will affect all cloud keyframes. Note that for 2D clouds, there is no Precipitation section. The cloud layer properties accessible in the sequencer are:</p>
 <table  style="width: 718px; background-color: #E3EEFB; margin-left: 56px;">
 <tr>
@@ -84,7 +84,7 @@ keyframe..." or "Add cloud keyframe..." option.</p>
 <tr>
 <td>Keyframe Subdivision</td><td>How keyframes are transitionsed between (real time is simplest). </td></tr>
 <tr>
-<td>Update</td><td>Whether to apply updates instantly or gradually. If gradually, any keyframe can be modifeid at any time. If instant, only the next keyframe can be modified. </td></tr>
+<td>Update</td><td>Whether to apply updates instantly or gradually. If gradually, any keyframe can be modified at any time. If instant, only the next keyframe can be modified. </td></tr>
 <tr>
 <td>Number</td><td>If using fixed intervals, this is the total number of seconds/minutes/days/months. </td></tr>
 <tr>
@@ -94,7 +94,7 @@ keyframe..." or "Add cloud keyframe..." option.</p>
 <tr>
 <td><b>Main</b></td><td> </td></tr>
 <tr>
-<td>Enabled</td><td>Whether GPU cloud generator should calculate clouds; turns clouds on or off. </td></tr>
+<td>Enabled</td><td>Whether or not GPU cloud generator should calculate clouds. </td></tr>
 <tr>
 <td>Wrap Horizontally</td><td>Whether to wrap clouds horizontally. </td></tr>
 <tr>
@@ -106,41 +106,50 @@ keyframe..." or "Add cloud keyframe..." option.</p>
 <tr>
 <td>Max Particles</td><td>The maximum number of rain particles to render. </td></tr>
 <tr>
-<td>Threshold (km)</td><td>What local thickness of cloud is needed for rain to fall. </td></tr>
+<td>Threshold</td><td>What local thickness of cloud is needed for rain to fall, in km. </td></tr>
 <tr> 
-<td>Radius (metres)</td><td>Size of the particle zone. </td></tr>
+<td>Radius</td><td>Size of the particle zone, in metres. </td></tr>
 <tr>
-<td>Rain Speed (m/s)</td><td>Speed of falling precipitation. </td></tr>
+<td>Rain Speed</td><td>Speed of falling precipitation, in m/s. </td></tr>
 <tr>
-<td>Raindrop Size (mm)</td><td>Size of a single raindrop. </td></tr>
+<td>Raindrop Size</td><td>Size of a single raindrop, in mm. </td></tr>
 <tr>
 <td><b>Rendering</b></td><td> </td></tr>
 <tr>
-<td></td><td> </td></tr>
+<td>Default Slices</td><td>Number of slices in the main view. </td></tr>
 <tr>
-<td></td><td></td></tr>
+<td>Shadow</td><td>Amount of shadow between 0 and 1. </td></tr>
 <tr>
-<td></td><td> </td></tr>
+<td>Shadow Range</td><td>Range of the cloud shadow texture, in km. </td></tr>
+<tr>
+<td>Shadow Texture Size</td><td>Size of the cloud shadow texture.  </td></tr>
+<tr>
+<td>Max cloud dist</td><td>Distance of the furthest cloud layer. </td></tr> 
 <tr>
 <td><b>Grid</b></td><td> </td></tr>
 <tr>
-<td></td><td> </td></tr>
+<td>Grid Width</td><td>Width of the grid, in powers of 2 (determines cloud detail). </td></tr>
 <tr>
-<td></td><td></td></tr> 
-<tr>
+<td>Grid Height</td><td>Height of the grid, in powers of 2 (determines cloud detail).</td></tr> 
+<tr> 
 <td><b>Generation Noise</b></td><td> </td></tr>
 <tr>
-<td></td><td> </td></tr>
+<td>Noise Period</td><td>Period in days of the fractal noise function. </td></tr>
 <tr>
-<td></td><td></td></tr>
+<td>Noise Phase</td><td>Offset for Noise Period.</td></tr>
+<tr>
+<td>Noise Resolution</td><td>Resolution of the 3D Perlin noise used to generate clouds. </td></tr>
 <tr>
 <td><b>Edge Noise</b></td><td> </td></tr>
 <tr>
-<td></td><td> </td></tr>
+<td>Frequency</td><td>Frequency (power of 2) of the edge noise effect. </td></tr>
 <tr>
-<td></td><td></td></tr>
-</table>
-<h3>Cloud Keyframe Features</h3>
+<td>Resolution</td><td>Resolution of the 3D Perlin noise used to generate clouds. </td></tr>
+<tr>
+<td>Persistence</td><td>Fractal persistence to use when generating the noise texture. </td></tr>
+</table> 
+<p>See the public attributes of <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html">CloudKeyframer</a> for a full description of all the cloud layer properties.</p>
+<h3>Cloud Keyframe Properties</h3>
 <p>Cloud keyframe properties allow you to change particular elements of one or more keyframes at a time. Note that for 2D clouds, there is no Weather Effects section. The cloud keyframe properties accessible in the sequencer are:</p>
 <table  style="width: 718px; background-color: #E3EEFB; margin-left: 56px;">
 <tr>
@@ -237,22 +246,114 @@ keyframe..." or "Add cloud keyframe..." option.</p>
 <p>If enabled, the moon is automatically placed in the sky based on time, day, month, and year. Otherwise, each sky keyframe has moon position settings.</p>
 <h3>Colour Sky</h3>
 <p>A colour sky has colours for sky and fade determined by a choice from a colour dialog. The default behaviour (non-colour sky) is to generate the colours from physical properties). </p>
-<h3>Sky Layer Features</h3>
-<h3>Sky Keyframe Features</h3>
-<p>See the class definition for <a class="el" href="structsimul_1_1sky_1_1SkyKeyframe.html">simul::sky::SkyKeyframe</a>. The main sky keyframe properties are:</p>
+<h3>Sky Layer Properties</h3> 
+<p>Sky layer properties are more general, and will affect all sky keyframes. The sky layer properties accessible in the sequencer are:</p>
+<table  style="width: 718px; background-color: #E3EEFB; margin-left: 56px;">
+<tr>
+<th>Feature</th><th><b>Description</b> </th></tr>
+<tr> 
+<td><b>Atmospheric Scattering Tables</b></td><td> </td></tr>
+<tr>
+<td>Brightness Power</td><td> Set the brightness power (see above). </td></tr>
+<tr>
+<td>Altitudes</td><td>The number of altitudes to calculate / in atmospheric table textures. </td></tr>
+<tr>
+<td>Max Altitude</td><td>Maximum altitude (km) that will be used for fade and sky colour calculations. </td></tr>
+<tr>
+<td>Elevations</td><td>Number of elevations / height of table. </td></tr>
+<tr>
+<td>Distances</td><td>Number of distances / width of table. </td></tr>
+<tr>
+<td>Distance Range</td><td>The maximum distance for the fade. </td></tr>
+<tr>
+<td>Overcast Effect</td><td>How strongly the cloud layer blocks light when generating inscatter tables.</td></tr>
+<tr>
+<td>Reyleigh Coefficients</td><td>Rayleigh scattering coeeficients at standard sea level density, xyz = RGB. </td></tr>
+<tr>
+<td>Light Wavelengths</td><td>Red, green and blue wavelengths in nanometres. </td></tr>
+<tr>
+<td><b>The Atmosphere</b></td><td> </td></tr>
+<tr>
+<td>Ozone</td><td>The amount of ozone. </td></tr>
+<tr>
+<td>Emissivity</td><td>The blackbody emissivity of the atmosphere, between 0 and 1. </td></tr>
+<tr>
+<td><b>Sun</b></td><td> </td></tr>
+<tr>
+<td>Diameter</td><td>Diameter of the sun. </td></tr>
+<tr>
+<td>Start Date</td><td>Used to calculate start positions of sun and moon (if automatic position set). </td></tr>
+<tr>
+<td>Latitude & Longitude</td><td>The position of the sun. </td></tr>
+<tr>
+<td>Timezone +-</td><td>Where 0 is GMT. </td></tr>
+<tr>
+<td>Link Keyframe time and daytime</td><td>Will make daytime value = keyframe value. Otherwise these values are independent. </td></tr>
+<tr>
+<td><b>Moon</b></td><td> </td></tr>
+<tr>
+<td>Albedo</td><td>Albedo value of the moon (will affect colour). </td></tr>
+<tr>
+<td>Diameter</td><td>Diameter of the moon, in degrees. </td></tr>
+<tr>
+<td>Texture</td><td>Texture to be drawn on moon object. </td></tr>
+<tr>
+<td>Colour</td><td>The base colour of the moon (will be affected by albedo). </td></tr>
+<tr>
+<td><b>Stars</b></td><td> </td></tr>
+<tr>
+<td>Max Magnitude</td><td>Maximum magnitude of star to be visible. Between 0 (brightest) and 9 (dimmest). </td></tr>
+<tr>
+<td>Brightness</td><td>Brightness multiplier value. </td></tr>
+<tr>
+<td>Background</td><td>Multiplier for the brightness of cosmic background texture. </td></tr>
+<tr>
+<td>Find Constellation</td><td>Find a star constellation at given coordinates. </td></tr>
+</table>
+<p>See the public attributes of <a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html">SkyKeyframer</a> for a full description of all the sky layer properties.</p>
+<h3>Sky Keyframe Properties</h3>
+<p>Sky keyframe properties allow you to change particular elements of one or more keyframes at a time. The sky keyframe properties accessible in the sequencer are:</p>
 <table  style="width: 718px; background-color: #E3EEFB; margin-left: 56px;">
 <tr>
 <th>Feature</th><th><b>Description</b> </th></tr>
 <tr>
-<td>Haze</td><td>How much haze, or fog is present at this time. </td></tr>
+<td><b>Colours</b></td><td></td></tr>
 <tr>
-<td>Sun azimuth</td><td>If sun position is not automatic, this controls the horizontal angle of the sun. </td></tr>
+<td>Altitudes</td><td>Number of altitudes for use in custom atmospheric table texture. </td></tr>
 <tr>
-<td>Sun elevation</td><td>If sun position is not automatic, this controls how high the sun is in the sky. </td></tr>
+<td>Elevations</td><td>Number of elevations for use in custom atmospheric table texture. </td></tr>
 <tr>
-<td>Moon azimuth</td><td>If moon position is not automatic, this controls its horizontal angle. </td></tr>
+<td>Distances</td><td>Number of distances for use in custom atmospheric table texture. </td></tr>
 <tr>
-<td>Moon elevation</td><td>If not automatic, this controls the moon's elevation </td></tr>
+<td><b>Temperature</b></td><td></td></tr>
+<tr>
+<td>Sea Level deg. C </td><td>For infrared rendering. </td></tr>
+<tr>
+<td><b>Haze/Fog/Mist/Dust</b></td><td></td></tr>
+<tr>
+<td>Visibility </td><td>Visibility distance, in km. Fog = <1km, Mist = 1-2km, Haze = >2km. This will alter Haze/fog. </td></tr>
+<tr>
+<td>Haze/fog </td><td>Amount of haze, mist or fog. This will alter Visibility. </td></tr>
+<tr>
+<td>Haze base </td><td>Base altitude above which haze starts to decrease in density, in km. </td></tr>
+<tr>
+<td>Haze scale </td><td>Vertical scale over which haze reduces with altitude, in km. </td></tr>
+<tr>
+<td>Eccentricity </td><td>The anisotropy of Mie scattering. </td></tr>
+<tr>
+<td>Mie Coefficients </td><td>The Mie scattering coefficients, xyz = RGB. </td></tr>
+<tr>
+<td><b>Sun and Moon</b></td><td></td></tr>
+<tr>
+<td>Haze</td><td>How much haze or fog is present at this time. </td></tr>
+<tr>
+<td>Sun azimuth</td><td>Controls the horizontal angle of the sun (if sun position not automatic). </td></tr>
+<tr>
+<td>Sun elevation</td><td>Controls how high the sun is in the sky (if sun position not automatic). </td></tr>
+<tr>
+<td>Moon azimuth</td><td>Controls the horizontal angle of the moon (if moon position not automatic). </td></tr>
+<tr>
+<td>Moon elevation</td><td>Controls how high the moon is in the sky (if moon position not automatic). </td></tr>
 </table>
 <p>See the public attributes of <a class="el" href="structsimul_1_1sky_1_1SkyKeyframe.html">SkyKeyframe</a> for a full description of all the sky keyframe properties.</p>
 <hr/>

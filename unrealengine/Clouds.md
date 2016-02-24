@@ -11,6 +11,8 @@ Editing clouds in the Sequencer
 -------------------------------
 To select a cloud keyframe, click it. To select all the keyframes of a cloud layer, double-click on the space between them. To select and modify the properties of a whole cloud layer, click on the "Clouds" text at left.
 
+Read more about editing the Cloud Layer or Cloud Keyframes on [The Sky Sequencer Page](http://docs.simul.co/reference/man_8_sequencer.html).
+
 Modifying clouds in Blueprint
 -----------------------------
 

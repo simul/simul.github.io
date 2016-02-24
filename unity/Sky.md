@@ -10,6 +10,8 @@ Sky and Atmospherics
 
 To select a sky keyframe, click on it in the timeline; to select the overall sky properties, click "Sky" on the left of the timeline.
 
+Read more about editing the Sky Layer or Sky Keyframes on [The Sky Sequencer Page](http://docs.simul.co/reference/man_8_sequencer.html).
+
 Sky properties can be set using ***trueSKY.SetSkyFloat*** and ***trueSKY.GetSkyFloat***. These are the properties that can be set:
 
 **LatitudeRadians:** Latitude, in radians.

@@ -57,7 +57,7 @@ This actor provides a reference to a sequence asset which is rendered. Choose th
  
 <a href="http://simul.co/wp-content/uploads/2014/07/Clipboard-Image-8.png"><img src="http://simul.co/wp-content/uploads/2014/07/Clipboard-Image-8-150x150.png"/></a> 
 
-* To edit the TrueSkySequence asset just double-click on it:
+* To edit the TrueSkySequence asset just double-click on it. Read more about editing properties in the sequencer on [The Sky Sequencer Page](http://docs.simul.co/reference/man_8_sequencer.html).
 
 <a class=" id=" title="" href="http://simul.co/wp-content/uploads/2014/07/Editor.png"><img src="http://simul.co/wp-content/uploads/2014/07/Editor-150x150.png" /></a>
 

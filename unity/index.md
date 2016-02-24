@@ -67,6 +67,8 @@ To control the sky properties from within the Editor, you can edit the sequence 
 
 Select the Properties tab or the Map. Click a keyframe to edit its properties. Double-click a line to edit all the keyframes in that line. Click on the title text to the left to edit the properties of the whole layer (sky or clouds).
 
+Read more about editing Sky and Cloud properties on [The Sky Sequencer Page](http://docs.simul.co/reference/man_8_sequencer.html).
+
 Scripting
 ---------
 Script control of the sky is via the trueSKY object. While the Sequence asset represents the initial state, you can change any value in-game from script.
