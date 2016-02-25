@@ -82,12 +82,12 @@ url: 4 Rendering the Environment
 <div class="image">
 <img src="rain.jpg" alt="rain.jpg"/>
 </div>
-<p> The <a class="el" href="structsimul_1_1clouds_1_1CloudKeyframe.html#a0a5a9c5304551568bc287477cacceedc">precipitation</a> is used to control the amount of rain or snowfall at a given time, while <a class="el" href="structsimul_1_1clouds_1_1CloudKeyframe.html#ac141d40dd98c57ba064b7b55857ce464">rain_to_snow</a> determines the type.</p>
-<p>Each cloud keyframe has a <a class="el" href="structsimul_1_1clouds_1_1PrecipitationRegion.html">PrecipitationRegion</a>, which defines the local area of precipitation, if it is not global for the keyframe.</p>
+<p> The <a class="el" href="structsimul_1_1clouds_1_1CloudKeyframe.html#a0a5a9c5304551568bc287477cacceedc">precipitation</a> is used to control the amount of rain or snowfall at a given time, whilst the <a class="el" href="">PrecipitationThresholdKm</a> property is used to set the thickness of cloud required for rain to fall (setting this to 0 will allow even the smallest of clouds to produce rain). To switch between snow and rain use <a class="el" href="structsimul_1_1clouds_1_1CloudKeyframe.html#ac141d40dd98c57ba064b7b55857ce464">rain_to_snow</a> (where 0 is rain, 1 is snow).</p>
+<p>Each cloud keyframe has a <a class="el" href="structsimul_1_1clouds_1_1PrecipitationRegion.html">PrecipitationRegion</a>, which defines the local area of precipitation, if it is not global for the keyframe. The amount of particles used for precipitation can be altered with the <a class="el" href="">MaxParticles</a> property.</p>
 <div class="image">
 <img src="Lightning-RainStreaks.jpg" alt="Lightning-RainStreaks.jpg"/>
 </div>
-<p> Classes derived from <a class="el" href="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html" title="The main base class for all Precipitation renderers. ">simul::clouds::BasePrecipitationRenderer</a> are used to draw the rain or snow particles, while distant rain streaks are drawn by the cloud renderer. This class has a property "UseSimulationTime" which determines whether rain and snow speed is based on the simulated time-of-day, or real time in seconds.</p>
+<p> Classes derived from <a class="el" href="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html" title="The main base class for all Precipitation renderers. ">simul::clouds::BasePrecipitationRenderer</a> are used to draw the rain or snow particles, while the <a class="el" href="">rain streak effect</a> is drawn by the cloud renderer. This class has a property "UseSimulationTime" which determines whether rain and snow speed is based on the simulated time-of-day, or real time in seconds.</p>
 <h2>Shaders </h2>
 <p>Shaders are provided as source in the shader subdirectories of the platform directories.</p><ul>
 <li>shaders</li>
@@ -99,6 +99,6 @@ url: 4 Rendering the Environment
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Wed Feb 24 2016 07:47:22</small></address>
+Thu Feb 25 2016 07:47:39</small></address>
 </body>
 </html>
