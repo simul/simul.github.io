@@ -559,6 +559,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a0f8ce790e7870940419bc129fc9b6068"><param name="Name" value="GetCloudShadowRange"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#ab7776eaf56a0e5849f9cfc2204e36df6"><param name="Name" value="GetCloudShadowStrength"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a5c9febc5de6f549315861adb20920f52"><param name="Name" value="GetCloudShadowTexture"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ad61d306ff6ec7908cee46ab61c39fe5c"><param name="Name" value="GetCloudThresholdDistanceKm"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1TrueSkyRenderer.html#afe4546fafd1659caf51beb8976f30249"><param name="Name" value="GetCloudTool"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1TrueSkyRenderer.html#afe4546fafd1659caf51beb8976f30249"><param name="Name" value="simul::dx11::TrueSkyRenderer"></OBJECT>
@@ -992,6 +993,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1TrueSkyRenderer.html#aab491ba1d97ff792a64a5f4d62db7bde"><param name="Name" value="simul::plugin::PluginTrueSkyRenderer"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyKeyframer.html#afbe1853fc080614a5bfa9286a2f0ed5a"><param name="Name" value="GetMaxAltitudeKm"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#ac5e6d188fd71a95400f3c764435fcf4b"><param name="Name" value="GetMaxAmortization"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudGeometryHelper.html#ae061748d42c132fe7dbd001760b5ba54"><param name="Name" value="GetMaxCloudDistance"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a6346f4aca5608553745bc31f2ebc7397"><param name="Name" value="GetMaxCloudDistanceKm"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyKeyframer.html#a7fba96d7271dff0ab95d53695addc6e7"><param name="Name" value="GetMaxDistanceKm"></OBJECT>
@@ -2257,6 +2259,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#af52677281baee28bef2e44fc62a4dd31"><param name="Name" value="SetCloudShadowRange"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a346c83eac54a8f2696512d9468fe18ae"><param name="Name" value="SetCloudShadowStrength"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#ad4e0dfcde5e87fe500dedd96d8f1e092"><param name="Name" value="SetCloudShadowTexture"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#afe9deff635032e7db648aabc1778638d"><param name="Name" value="SetCloudThresholdDistanceKm"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1TrueSkyRenderer.html#ab3a29f637c529a21c4eca3cab225af60"><param name="Name" value="SetCloudTool"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1TrueSkyRenderer.html#ab3a29f637c529a21c4eca3cab225af60"><param name="Name" value="simul::dx11::TrueSkyRenderer"></OBJECT>
@@ -2449,6 +2452,7 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#ae3497b74bbb3e4b0ea31f1840afefe36"><param name="Name" value="SetMatrix4x4"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyKeyframer.html#ab83be3725be774dcdcdb427c2013a1e3"><param name="Name" value="SetMaxAltitudeKm"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#a38e295eb0a14416022fc95eb074df657"><param name="Name" value="SetMaxAmortization"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#adcb35cfc45559ff62dd8edb50c3bc9fa"><param name="Name" value="SetMaxCloudDistanceKm"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyKeyframer.html#ad7851b6d2cb9fee0211f3450c275e967"><param name="Name" value="SetMaxDistanceKm"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1BaseProfilingInterface.html#a61f26aa1c78d306c372160bc68c15dd9"><param name="Name" value="SetMaxLevel"></OBJECT>
@@ -3138,6 +3142,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aab542af56ea084c5a66e578e81b023ba"><param name="Name" value="GetCelestialDisplay"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a162442b7256e607fc880adff7eabc7ab"><param name="Name" value="GetCloudEditDisplay"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a45648cff7c3f000ddd57c13089379fac"><param name="Name" value="GetCloudKeyframer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ad61d306ff6ec7908cee46ab61c39fe5c"><param name="Name" value="GetCloudThresholdDistanceKm"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aaed9c494663cd8d7851f39fe5fade3a9"><param name="Name" value="GetDebugText"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#acdba32f505852e003b41e61134571ba7"><param name="Name" value="GetDefaultDownscale"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ae2485b5d0f5a08a8076632c41d407acf"><param name="Name" value="GetFogAmbientBrightness"></OBJECT>
@@ -3173,6 +3178,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aa0c05a43c67c63d4bf316c362c3e4a85"><param name="Name" value="SetBlurTexture"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aa37e62b6749b11d261ff805a6af51606"><param name="Name" value="SetCelestialDisplay"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a540dc53f30421c2ef2953701f4d5e6d6"><param name="Name" value="SetCloudEditDisplay"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#afe9deff635032e7db648aabc1778638d"><param name="Name" value="SetCloudThresholdDistanceKm"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a1283aebee5e7a059395ad162e9f9d997"><param name="Name" value="SetCubemapTexture"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a31b8c658eb917996da998ae44fe7c5ed"><param name="Name" value="SetCubemapTransform"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a624ec44f492aad4084b0be23db1178fb"><param name="Name" value="SetDefaultDownscale"></OBJECT>
@@ -4572,6 +4578,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html"><param name="Name" value="simul::sky::BaseAtmosphericsRenderer"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#afacf76958fb1143626f9e6aa1494ee32"><param name="Name" value="GetInfraRed"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#ac5e6d188fd71a95400f3c764435fcf4b"><param name="Name" value="GetMaxAmortization"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#ae17b4f3ca25bb336d753803f501ebbcf"><param name="Name" value="GetScatteringVolume"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#a6a1b31fc5a6a3c5faa65c54205e0689b"><param name="Name" value="GetShowGodrays"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#aae2efb757b2dd8c02934bceb8214691c"><param name="Name" value="intrusive_ptr_add_ref"></OBJECT>
@@ -4582,6 +4589,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#afe13e71b42cf3ed8dffcfb5ac3a05873"><param name="Name" value="SetIlluminationTexture"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#a29c5454cd417c4595d2faa93101b2ffd"><param name="Name" value="SetInfraRed"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#a92bf1d0f9949e2595fe1dfffc58fad49"><param name="Name" value="SetLossAndInscatterTextures"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#a38e295eb0a14416022fc95eb074df657"><param name="Name" value="SetMaxAmortization"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#ada0afef210b6da728e21e56362a0803d"><param name="Name" value="SetOvercastFactor"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#acf3ed8b7a273aa9b1d34f15344d15098"><param name="Name" value="SetShowGodrays"></OBJECT>
   </UL>

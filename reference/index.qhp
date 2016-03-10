@@ -470,6 +470,8 @@
       <keyword name="SetFogLightBrightness" id="simul::clouds::BaseWeatherRenderer::SetFogLightBrightness" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ace42837c26a94ae18332c7eee8b31dc2" />
       <keyword name="GetSimpleCloudShadowSharpness" id="simul::clouds::BaseWeatherRenderer::GetSimpleCloudShadowSharpness" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a68ffbff4d7008bd2c20a872a2bc58996" />
       <keyword name="SetSimpleCloudShadowSharpness" id="simul::clouds::BaseWeatherRenderer::SetSimpleCloudShadowSharpness" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a4a545c6643c555d163c5df75d231d298" />
+      <keyword name="GetCloudThresholdDistanceKm" id="simul::clouds::BaseWeatherRenderer::GetCloudThresholdDistanceKm" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ad61d306ff6ec7908cee46ab61c39fe5c" />
+      <keyword name="SetCloudThresholdDistanceKm" id="simul::clouds::BaseWeatherRenderer::SetCloudThresholdDistanceKm" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#afe9deff635032e7db648aabc1778638d" />
       <keyword name="GetShowPlanets" id="simul::clouds::BaseWeatherRenderer::GetShowPlanets" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a044333b4fc09a74d82eb5f4cc6b953a7" />
       <keyword name="SetShowPlanets" id="simul::clouds::BaseWeatherRenderer::SetShowPlanets" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a8b9012a26480ed5687adac489c5d0fcb" />
       <keyword name="GetShowSky" id="simul::clouds::BaseWeatherRenderer::GetShowSky" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a3936a0725d7a5fbf572afad5f44e1cd6" />
@@ -1818,6 +1820,8 @@
       <keyword name="SetShowGodrays" id="simul::sky::BaseAtmosphericsRenderer::SetShowGodrays" ref="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#acf3ed8b7a273aa9b1d34f15344d15098" />
       <keyword name="GetInfraRed" id="simul::sky::BaseAtmosphericsRenderer::GetInfraRed" ref="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#afacf76958fb1143626f9e6aa1494ee32" />
       <keyword name="SetInfraRed" id="simul::sky::BaseAtmosphericsRenderer::SetInfraRed" ref="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#a29c5454cd417c4595d2faa93101b2ffd" />
+      <keyword name="GetMaxAmortization" id="simul::sky::BaseAtmosphericsRenderer::GetMaxAmortization" ref="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#ac5e6d188fd71a95400f3c764435fcf4b" />
+      <keyword name="SetMaxAmortization" id="simul::sky::BaseAtmosphericsRenderer::SetMaxAmortization" ref="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#a38e295eb0a14416022fc95eb074df657" />
       <keyword name="simul::sky::BaseKeyframe" id="simul::sky::BaseKeyframe" ref="structsimul_1_1sky_1_1BaseKeyframe.html" />
       <keyword name="time" id="simul::sky::BaseKeyframe::time" ref="structsimul_1_1sky_1_1BaseKeyframe.html#a8090c3824cb8b2b3f62be0309d3c2574" />
       <keyword name="unique_id" id="simul::sky::BaseKeyframe::unique_id" ref="structsimul_1_1sky_1_1BaseKeyframe.html#aef4c61d5a3f818b2df0d4c4b6662e972" />
