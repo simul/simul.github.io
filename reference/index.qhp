@@ -202,8 +202,8 @@
               <section title="simul::math::VirtualVector" ref="classsimul_1_1math_1_1VirtualVector.html" />
             </section>
             <section title="simul::math::Vector3" ref="classsimul_1_1math_1_1Vector3.html" />
-            <section title="simul::dx11::VertexBuffer&lt; T &gt;" ref="structsimul_1_1dx11_1_1VertexBuffer.html" />
             <section title="Obj::VertexBuffer" ref="structObj_1_1VertexBuffer.html" />
+            <section title="simul::dx11::VertexBuffer&lt; T &gt;" ref="structsimul_1_1dx11_1_1VertexBuffer.html" />
             <section title="simul::crossplatform::Viewport" ref="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1Viewport" />
             <section title="simul::crossplatform::ViewStruct" ref="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1ViewStruct" />
           </section>
@@ -496,6 +496,8 @@
       <keyword name="SetCloudEditDisplay" id="simul::clouds::BaseWeatherRenderer::SetCloudEditDisplay" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a540dc53f30421c2ef2953701f4d5e6d6" />
       <keyword name="GetShowQueries" id="simul::clouds::BaseWeatherRenderer::GetShowQueries" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a0f13ff80326498a53c2915bfd926bc2a" />
       <keyword name="SetShowQueries" id="simul::clouds::BaseWeatherRenderer::SetShowQueries" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aae74e16237e36aac147e7fea1ea12cb4" />
+      <keyword name="GetDepthBlending" id="simul::clouds::BaseWeatherRenderer::GetDepthBlending" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a41d44af190eb5b105cc977581b7768b9" />
+      <keyword name="SetDepthBlending" id="simul::clouds::BaseWeatherRenderer::SetDepthBlending" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a21e8369093075d7b158f5bdeb309d40f" />
       <keyword name="GetUseSimulationTime" id="simul::clouds::BaseWeatherRenderer::GetUseSimulationTime" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a6b29aab3d0b31dbfc74c83a88d8c8509" />
       <keyword name="SetUseSimulationTime" id="simul::clouds::BaseWeatherRenderer::SetUseSimulationTime" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a483a9a711868cdaa2a5482493dfbe549" />
       <keyword name="GetDefaultDownscale" id="simul::clouds::BaseWeatherRenderer::GetDefaultDownscale" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#acdba32f505852e003b41e61134571ba7" />
@@ -764,6 +766,7 @@
       <keyword name="GetCurrentSubdivision" id="simul::clouds::CloudKeyframer::GetCurrentSubdivision" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a7cb5ae7caa7e1ce9d5f3fcd05c38600a" />
       <keyword name="GetDefaultFloat" id="simul::clouds::CloudKeyframer::GetDefaultFloat" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#abea5af3533f13d193367d9928c7054a4" />
       <keyword name="GetDefaultInt" id="simul::clouds::CloudKeyframer::GetDefaultInt" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a206bfd7121ca588a22d85b01e38e0021" />
+      <keyword name="GetExportLightningStrikes" id="simul::clouds::CloudKeyframer::GetExportLightningStrikes" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a6fabe17be9df67fabb1730073dab11b7" />
       <keyword name="GetFloat" id="simul::clouds::CloudKeyframer::GetFloat" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a6276bedb7384e9461c61a1af15ec327a" />
       <keyword name="GetGridOrigin" id="simul::clouds::CloudKeyframer::GetGridOrigin" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a1f1e72d11d06cd9a532a87ff296ec547" />
       <keyword name="GetInitialOffset" id="simul::clouds::CloudKeyframer::GetInitialOffset" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#ae93b47be64d2465341f5a7d9d77ba9b4" />

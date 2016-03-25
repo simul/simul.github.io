@@ -307,14 +307,15 @@ url: Simul/Clouds/BaseCloudRenderer.h Source File
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;            <span class="keywordtype">unsigned</span> last_subdivision_checksum;</div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;            <span class="keywordtype">void</span> RenderPointSource(<a class="code" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext,<a class="code" href="classsimul_1_1clouds_1_1TwoResFramebuffer.html">clouds::TwoResFramebuffer</a> *fb</div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;                ,<span class="keywordtype">float</span> exposure,<span class="keyword">const</span> vec4&amp; viewportTextureRegionXYWH,<span class="keyword">const</span> vec4&amp; mixedResTransformXYWH);</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        };</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    }</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;}</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="preprocessor">    #pragma warning(pop)</span></div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;            <span class="keywordtype">float</span> previous_precipitiation;<span class="comment">// that was used to render precip map</span></div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;        };</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    }</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;}</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="preprocessor">    #pragma warning(pop)</span></div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="namespacesimul_1_1crossplatform_html_a667774e92bf043892a3f73c9baa23c68"><div class="ttname"><a href="namespacesimul_1_1crossplatform.html#a667774e92bf043892a3f73c9baa23c68">simul::crossplatform::NearFarPass</a></div><div class="ttdeci">NearFarPass</div><div class="ttdoc">Values that represent what pass to render, be it the near pass, the far, or both: far to render targe...</div><div class="ttdef"><b>Definition:</b> <a href="BaseRenderer_8h_source.html#l00027">BaseRenderer.h:27</a></div></div>
 <div class="ttc" id="classsimul_1_1clouds_1_1BaseCloudRenderer_html"><div class="ttname"><a href="classsimul_1_1clouds_1_1BaseCloudRenderer.html">simul::clouds::BaseCloudRenderer</a></div><div class="ttdef"><b>Definition:</b> <a href="BaseCloudRenderer_8h_source.html#l00166">BaseCloudRenderer.h:166</a></div></div>
 <div class="ttc" id="classsimul_1_1clouds_1_1CloudInterface_html"><div class="ttname"><a href="classsimul_1_1clouds_1_1CloudInterface.html">simul::clouds::CloudInterface</a></div><div class="ttdoc">The virtual interface for controlling and reading cloud data. </div><div class="ttdef"><b>Definition:</b> <a href="CloudInterface_8h_source.html#l00080">CloudInterface.h:80</a></div></div>
@@ -342,6 +343,6 @@ url: Simul/Clouds/BaseCloudRenderer.h Source File
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Thu Mar 24 2016 07:46:34</small></address>
+Fri Mar 25 2016 07:46:32</small></address>
 </body>
 </html>
