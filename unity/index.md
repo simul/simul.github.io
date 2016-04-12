@@ -127,8 +127,9 @@ For details of the properties you can change, see the Reference pages below.
 
 **Vector3 TrueSkyToUnityPosition(Vector3 ts_pos)**
 **Vector3 TrueSkyToUnityDirection(Vector3 ts_dir)**
-**Vector3 UnityToTrueSkyPosition(Vector3 upos)**
+**Vector3 UnityToTrueSkyPosition(Vector3 upos)** 
 **Vector3 UnityToTrueSkyDirection(Vector3 u_dir)**
+
 As Unity and trueSKY treat coordinates differently -- for example, which axis is considered "up" -- these functions are provided to convert between them when needed.
 
 Reference
