@@ -48,4 +48,12 @@ To allow a smooth transition between weather states, you should adjust the Mode 
 
 <a href="http://docs.simul.co/unrealengine/images/GradualMode.png"><img src="http://docs.simul.co/unrealengine/images/GradualMode.png" alt="Gradual Mode"/></a>
 
+Console commands
+---
+*ts\_cross\_sections* Show/hide cloud cross-sections.
+
+*ts\_compositing* Show/hide compositing overlay.
+
+*ts\_profile* Dump profiling text to output.
+
 Next: <a href="/unrealengine/Blueprint">Blueprint</a>

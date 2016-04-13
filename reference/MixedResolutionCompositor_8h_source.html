@@ -79,7 +79,7 @@ url: Simul/Clouds/MixedResolutionCompositor.h Source File
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                ,<a class="code" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *depthTexture</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                ,<span class="keyword">const</span> <a class="code" href="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1Viewport">crossplatform::Viewport</a> *simulViewport</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                ,<a class="code" href="classsimul_1_1clouds_1_1TwoResFramebuffer.html">clouds::TwoResFramebuffer</a> *fb</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                ,<span class="keywordtype">float</span> max_dist_metres,<span class="keywordtype">bool</span> split_view</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                ,<span class="keywordtype">float</span> max_dist_metres,<span class="keywordtype">float</span> thresholdMetres,<span class="keywordtype">bool</span> split_view</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                                ,<span class="keywordtype">bool</span> cube_face=<span class="keyword">false</span>);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <a class="code" href="classsimul_1_1crossplatform_1_1RenderPlatform.html">crossplatform::RenderPlatform</a>               *renderPlatform;</div>
@@ -101,8 +101,8 @@ url: Simul/Clouds/MixedResolutionCompositor.h Source File
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">    #pragma warning(pop)</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="classsimul_1_1crossplatform_1_1Effect_html"><div class="ttname"><a href="classsimul_1_1crossplatform_1_1Effect.html">simul::crossplatform::Effect</a></div><div class="ttdoc">The cross-platform base class for shader effects. </div><div class="ttdef"><b>Definition:</b> <a href="CrossPlatform_2Effect_8h_source.html#l00541">Effect.h:541</a></div></div>
-<div class="ttc" id="classsimul_1_1crossplatform_1_1Texture_html"><div class="ttname"><a href="classsimul_1_1crossplatform_1_1Texture.html">simul::crossplatform::Texture</a></div><div class="ttdoc">A Texture base class. </div><div class="ttdef"><b>Definition:</b> <a href="CrossPlatform_2Texture_8h_source.html#l00070">Texture.h:70</a></div></div>
+<div class="ttc" id="classsimul_1_1crossplatform_1_1Effect_html"><div class="ttname"><a href="classsimul_1_1crossplatform_1_1Effect.html">simul::crossplatform::Effect</a></div><div class="ttdoc">The cross-platform base class for shader effects. </div><div class="ttdef"><b>Definition:</b> <a href="CrossPlatform_2Effect_8h_source.html#l00542">Effect.h:542</a></div></div>
+<div class="ttc" id="classsimul_1_1crossplatform_1_1Texture_html"><div class="ttname"><a href="classsimul_1_1crossplatform_1_1Texture.html">simul::crossplatform::Texture</a></div><div class="ttdoc">A Texture base class. </div><div class="ttdef"><b>Definition:</b> <a href="CrossPlatform_2Texture_8h_source.html#l00075">Texture.h:75</a></div></div>
 <div class="ttc" id="classsimul_1_1clouds_1_1TwoResFramebuffer_html"><div class="ttname"><a href="classsimul_1_1clouds_1_1TwoResFramebuffer.html">simul::clouds::TwoResFramebuffer</a></div><div class="ttdoc">A framebuffer class for mixed-resolution rendering. </div><div class="ttdef"><b>Definition:</b> <a href="TwoResFramebuffer_8h_source.html#l00025">TwoResFramebuffer.h:25</a></div></div>
 <div class="ttc" id="structsimul_1_1crossplatform_1_1DeviceContext_html"><div class="ttname"><a href="structsimul_1_1crossplatform_1_1DeviceContext.html">simul::crossplatform::DeviceContext</a></div><div class="ttdef"><b>Definition:</b> <a href="DeviceContext_8h_source.html#l00022">DeviceContext.h:22</a></div></div>
 <div class="ttc" id="namespacesimul_html"><div class="ttname"><a href="namespacesimul.html">simul</a></div><div class="ttdef"><b>Definition:</b> <a href="Base_8h_source.html#l00001">Base.h:1</a></div></div>
@@ -114,6 +114,6 @@ url: Simul/Clouds/MixedResolutionCompositor.h Source File
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Sat Feb 13 2016 07:46:37</small></address>
+Wed Apr 13 2016 07:46:33</small></address>
 </body>
 </html>

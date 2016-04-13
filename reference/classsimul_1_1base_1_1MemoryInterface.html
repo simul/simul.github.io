@@ -49,24 +49,25 @@ url: simul::base::MemoryInterface Class Reference
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abb9cf3eb3ce599d730fa40a29424a09e"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1MemoryInterface.html#abb9cf3eb3ce599d730fa40a29424a09e">Allocate</a> (size_t nbytes)</td></tr>
-<tr class="separator:abb9cf3eb3ce599d730fa40a29424a09e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a7d675e7e1f019e2e8acb7e5e910aea"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1MemoryInterface.html#a6a7d675e7e1f019e2e8acb7e5e910aea">Allocate</a> (size_t nbytes, size_t align)</td></tr>
-<tr class="separator:a6a7d675e7e1f019e2e8acb7e5e910aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96ac197ad23e55f4efccf8080decee99"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1MemoryInterface.html#a96ac197ad23e55f4efccf8080decee99">Allocate</a> (size_t nbytes)</td></tr>
+<tr class="separator:a96ac197ad23e55f4efccf8080decee99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9998fdf0e97dd5daf7c6c61907a6de70"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1MemoryInterface.html#a9998fdf0e97dd5daf7c6c61907a6de70">Allocate</a> (size_t nbytes, size_t align)</td></tr>
+<tr class="separator:a9998fdf0e97dd5daf7c6c61907a6de70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7c7fa2d5d5d45a3f1d704ca502b6894"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7c7fa2d5d5d45a3f1d704ca502b6894"></a>
 virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1MemoryInterface.html#ab7c7fa2d5d5d45a3f1d704ca502b6894">AllocateTracked</a> (size_t, size_t, const char *)</td></tr>
 <tr class="memdesc:ab7c7fa2d5d5d45a3f1d704ca502b6894"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reimplement this if needed in the derived class. The function_name can be ignored if you are not tracking memory allocations. <br /></td></tr>
 <tr class="separator:ab7c7fa2d5d5d45a3f1d704ca502b6894"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a396cf57fc9d345e016be69d0cfdd6a0f"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1MemoryInterface.html#a396cf57fc9d345e016be69d0cfdd6a0f">AllocateVideoMemory</a> (size_t nbytes, size_t align)</td></tr>
-<tr class="separator:a396cf57fc9d345e016be69d0cfdd6a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12746f7d422866a49b4c54291705d326"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1MemoryInterface.html#a12746f7d422866a49b4c54291705d326">AllocateVideoMemory</a> (size_t nbytes, size_t align)</td></tr>
+<tr class="separator:a12746f7d422866a49b4c54291705d326"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad9bec429b165ece647edba077bc9de6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aad9bec429b165ece647edba077bc9de6"></a>
 virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1MemoryInterface.html#aad9bec429b165ece647edba077bc9de6">AllocateVideoMemoryTracked</a> (size_t, size_t, const char *)</td></tr>
 <tr class="memdesc:aad9bec429b165ece647edba077bc9de6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reimplement this if needed in the derived class. The function_name can be ignored if you are not tracking memory allocations. <br /></td></tr>
 <tr class="separator:aad9bec429b165ece647edba077bc9de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20be17ab73a24143736f2eddb262fedd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1MemoryInterface.html#a20be17ab73a24143736f2eddb262fedd">Deallocate</a> (void *address)=0</td></tr>
 <tr class="separator:a20be17ab73a24143736f2eddb262fedd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8472b7c3a99d2bad9daa11d2630df66"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1MemoryInterface.html#af8472b7c3a99d2bad9daa11d2630df66">DeallocateVideoMemory</a> (void *address)=0</td></tr>
-<tr class="memdesc:af8472b7c3a99d2bad9daa11d2630df66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate some video memory.  <a href="#af8472b7c3a99d2bad9daa11d2630df66">More...</a><br /></td></tr>
+<tr class="memitem:af8472b7c3a99d2bad9daa11d2630df66"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af8472b7c3a99d2bad9daa11d2630df66"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1MemoryInterface.html#af8472b7c3a99d2bad9daa11d2630df66">DeallocateVideoMemory</a> (void *address)=0</td></tr>
+<tr class="memdesc:af8472b7c3a99d2bad9daa11d2630df66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free some Video memory Implementations MUST ignore NULL values. <br /></td></tr>
 <tr class="separator:af8472b7c3a99d2bad9daa11d2630df66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -75,42 +76,31 @@ virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 
 <p>Definition at line <a class="el" href="MemoryInterface_8h_source.html#l00045">45</a> of file <a class="el" href="MemoryInterface_8h_source.html">MemoryInterface.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="abb9cf3eb3ce599d730fa40a29424a09e"></a>
+<a class="anchor" id="a96ac197ad23e55f4efccf8080decee99"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void* simul::base::MemoryInterface::Allocate </td>
+          <td class="memname">void* simul::base::MemoryInterface::Allocate </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>nbytes</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Allocate <em>nbytes</em> bytes of memory and return a pointer to them. Reimplement this in the derived class. </p>
 
-<p>Definition at line <a class="el" href="MemoryInterface_8h_source.html#l00051">51</a> of file <a class="el" href="MemoryInterface_8h_source.html">MemoryInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="MemoryInterface_8h_source.html#l00050">50</a> of file <a class="el" href="MemoryInterface_8h_source.html">MemoryInterface.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a6a7d675e7e1f019e2e8acb7e5e910aea"></a>
+<a class="anchor" id="a9998fdf0e97dd5daf7c6c61907a6de70"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void* simul::base::MemoryInterface::Allocate </td>
+          <td class="memname">void* simul::base::MemoryInterface::Allocate </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>nbytes</em>, </td>
@@ -127,27 +117,19 @@ virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Allocate <em>nbytes</em> bytes of memory, aligned to <em>align</em> and return a pointer to them. for unaligned, use align=0. Reimplement this in the derived class. </p>
 
-<p>Definition at line <a class="el" href="MemoryInterface_8h_source.html#l00057">57</a> of file <a class="el" href="MemoryInterface_8h_source.html">MemoryInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="MemoryInterface_8h_source.html#l00056">56</a> of file <a class="el" href="MemoryInterface_8h_source.html">MemoryInterface.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a396cf57fc9d345e016be69d0cfdd6a0f"></a>
+<a class="anchor" id="a12746f7d422866a49b4c54291705d326"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void* simul::base::MemoryInterface::AllocateVideoMemory </td>
+          <td class="memname">void* simul::base::MemoryInterface::AllocateVideoMemory </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>nbytes</em>, </td>
@@ -164,15 +146,10 @@ virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Allocate <em>nbytes</em> bytes of memory, aligned to <em>align</em> and return a pointer to them. for unaligned, use align=0. Reimplement this in the derived class. </p>
 
-<p>Definition at line <a class="el" href="MemoryInterface_8h_source.html#l00063">63</a> of file <a class="el" href="MemoryInterface_8h_source.html">MemoryInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="MemoryInterface_8h_source.html#l00062">62</a> of file <a class="el" href="MemoryInterface_8h_source.html">MemoryInterface.h</a>.</p>
 
 </div>
 </div>
@@ -199,37 +176,10 @@ virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 </div><div class="memdoc">
 <p>De-allocate the memory at </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">address</td><td>(requires that this memory was allocated with <a class="el" href="classsimul_1_1base_1_1MemoryInterface.html#abb9cf3eb3ce599d730fa40a29424a09e">Allocate()</a>). Implementations MUST ignore NULL values. </td></tr>
+    <tr><td class="paramname">address</td><td>(requires that this memory was allocated with <a class="el" href="classsimul_1_1base_1_1MemoryInterface.html#a96ac197ad23e55f4efccf8080decee99">Allocate()</a>). Implementations MUST ignore NULL values. </td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a class="anchor" id="af8472b7c3a99d2bad9daa11d2630df66"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void simul::base::MemoryInterface::DeallocateVideoMemory </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>address</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Allocate some video memory. </p>
-<p>Free some Video memory Implementations MUST ignore NULL values. </p>
 
 </div>
 </div>
@@ -241,6 +191,6 @@ virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Sat Feb 13 2016 07:46:37</small></address>
+Wed Apr 13 2016 07:46:34</small></address>
 </body>
 </html>

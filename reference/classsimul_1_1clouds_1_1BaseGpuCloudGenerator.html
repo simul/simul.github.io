@@ -53,20 +53,20 @@ Public Member Functions</h2></td></tr>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseGpuCloudGenerator.html#a71d5ab53aa76f521c5638023f78d5f49">CanPerformGPULighting</a> () const </td></tr>
 <tr class="memdesc:a71d5ab53aa76f521c5638023f78d5f49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the derived class can relight clouds using the GPU. <br /></td></tr>
 <tr class="separator:a71d5ab53aa76f521c5638023f78d5f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af04c225d2b0a5e808ceb191ca29b6623"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseGpuCloudGenerator.html#af04c225d2b0a5e808ceb191ca29b6623">FillDensityGrid</a> (int index, const GpuCloudsParameters &amp;params, int start_texel, int texels)</td></tr>
-<tr class="separator:af04c225d2b0a5e808ceb191ca29b6623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2e7c7b4730c1df259cb8f76e40b7fa2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseGpuCloudGenerator.html#ae2e7c7b4730c1df259cb8f76e40b7fa2">FillDensityGrid</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, int index, const GpuCloudsParameters &amp;params, int start_texel, int texels)</td></tr>
+<tr class="separator:ae2e7c7b4730c1df259cb8f76e40b7fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b729143a1641e0104931a36eefcd710"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseGpuCloudGenerator.html#a1b729143a1641e0104931a36eefcd710">GetDensityGridsize</a> (const int *grid)</td></tr>
 <tr class="separator:a1b729143a1641e0104931a36eefcd710"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd4417a1140e37b6a17e09e09cb814a4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd4417a1140e37b6a17e09e09cb814a4"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseGpuCloudGenerator.html#acd4417a1140e37b6a17e09e09cb814a4">GPUTransferDataToTexture</a> (int cycled_index, const clouds::GpuCloudsParameters &amp;params, unsigned char *target, int start_texel, int texels)</td></tr>
-<tr class="memdesc:acd4417a1140e37b6a17e09e09cb814a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">If GPU lighting is supported, transfer cloud light data to the target texture, transforming from lightspace to density space. <br /></td></tr>
-<tr class="separator:acd4417a1140e37b6a17e09e09cb814a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1ce1c39197e30286c7cbdc08b677f4c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1ce1c39197e30286c7cbdc08b677f4c"></a>
-virtual <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseGpuCloudGenerator.html#ad1ce1c39197e30286c7cbdc08b677f4c">Make3DNoiseTexture</a> (int noise_size, const float *noise_src_ptr, int generation_number)</td></tr>
-<tr class="memdesc:ad1ce1c39197e30286c7cbdc08b677f4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an API-specific noise texture, and return its pointer/identifier etc. as a void pointer. <br /></td></tr>
-<tr class="separator:ad1ce1c39197e30286c7cbdc08b677f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90a527953c7cc5e30be2cd7c4e3251d3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseGpuCloudGenerator.html#a90a527953c7cc5e30be2cd7c4e3251d3">PerformGPURelight</a> (int light_index, const clouds::GpuCloudsParameters &amp;params, float *target, int start_texel, int texels)</td></tr>
-<tr class="separator:a90a527953c7cc5e30be2cd7c4e3251d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75f5eca7d661f2057dd7fbb80526d910"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75f5eca7d661f2057dd7fbb80526d910"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseGpuCloudGenerator.html#a75f5eca7d661f2057dd7fbb80526d910">GPUTransferDataToTexture</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, int cycled_index, const clouds::GpuCloudsParameters &amp;params, unsigned char *target, int start_texel, int texels)</td></tr>
+<tr class="memdesc:a75f5eca7d661f2057dd7fbb80526d910"><td class="mdescLeft">&#160;</td><td class="mdescRight">If GPU lighting is supported, transfer cloud light data to the target texture, transforming from lightspace to density space. <br /></td></tr>
+<tr class="separator:a75f5eca7d661f2057dd7fbb80526d910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb897091b534211596293b6951709b0b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb897091b534211596293b6951709b0b"></a>
+virtual <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseGpuCloudGenerator.html#abb897091b534211596293b6951709b0b">Make3DNoiseTexture</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, int noise_size, const float *noise_src_ptr, int generation_number)</td></tr>
+<tr class="memdesc:abb897091b534211596293b6951709b0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an API-specific noise texture, and return its pointer/identifier etc. as a void pointer. <br /></td></tr>
+<tr class="separator:abb897091b534211596293b6951709b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad389d7686e52fe09f4a9ad6240061445"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseGpuCloudGenerator.html#ad389d7686e52fe09f4a9ad6240061445">PerformGPURelight</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, int light_index, const clouds::GpuCloudsParameters &amp;params, float *target, int start_texel, int texels)</td></tr>
+<tr class="separator:ad389d7686e52fe09f4a9ad6240061445"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Property: bool Enabled</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>"Whether this GPU cloud generator should be used to calculate the clouds." </p>
 </div></td></tr>
@@ -138,7 +138,7 @@ virtual <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crosspl
 
 </div>
 </div>
-<a class="anchor" id="af04c225d2b0a5e808ceb191ca29b6623"></a>
+<a class="anchor" id="ae2e7c7b4730c1df259cb8f76e40b7fa2"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -148,6 +148,12 @@ virtual <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crosspl
         <tr>
           <td class="memname">virtual void simul::clouds::BaseGpuCloudGenerator::FillDensityGrid </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>deviceContext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>index</em>, </td>
         </tr>
@@ -185,7 +191,7 @@ virtual <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crosspl
 
 </div>
 </div>
-<a class="anchor" id="a90a527953c7cc5e30be2cd7c4e3251d3"></a>
+<a class="anchor" id="ad389d7686e52fe09f4a9ad6240061445"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -195,6 +201,12 @@ virtual <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crosspl
         <tr>
           <td class="memname">virtual void simul::clouds::BaseGpuCloudGenerator::PerformGPURelight </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>deviceContext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>light_index</em>, </td>
         </tr>
@@ -246,6 +258,6 @@ virtual <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crosspl
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Sat Feb 13 2016 07:46:38</small></address>
+Wed Apr 13 2016 07:46:34</small></address>
 </body>
 </html>

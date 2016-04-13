@@ -111,14 +111,14 @@ url: Simul/PRODUCTS/TrueSky/Help/4 Renderering.md Source File
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;\image html &quot;rain.jpg&quot; &quot;&quot;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;The \link simul::clouds::CloudKeyframe::precipitation precipitation\endlink is used to control the amount of rain or snowfall</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;at a given time, while \link simul::clouds::CloudKeyframe::rain_to_snow rain_to_snow\endlink determines the type.</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;at a given time, whilst the \link simul::clouds::CloudKeyframer PrecipitationThresholdKm\endlink property is used to set the thickness of cloud required for rain to fall (setting this to 0 will allow even the smallest of clouds to produce rain). To switch between snow and rain use \link simul::clouds::CloudKeyframe rain_to_snow\endlink (where 0 is rain, 1 is snow). </div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;Each cloud keyframe has a \link simul::clouds::PrecipitationRegion PrecipitationRegion\endlink, which defines the local area of precipitation,</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;if it is not global for the keyframe.</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;if it is not global for the keyframe. The amount of particles used for precipitation can be altered with the \link simul::clouds::BasePrecipitationRenderer MaxParticles\endlink property.</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;\image html &quot;Lightning-RainStreaks.jpg&quot; &quot;&quot;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;Classes derived from simul::clouds::BasePrecipitationRenderer are used to draw the rain or snow particles, while distant rain streaks are drawn by the cloud renderer. This class has a property &quot;UseSimulationTime&quot; which determines whether rain and snow speed is based on the simulated time-of-day, or real time in seconds.</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;Classes derived from simul::clouds::BasePrecipitationRenderer are used to draw the rain or snow particles, while the \link simul::clouds::PrecipitationRegion:rainEffectStrength rain streak effect\endlink is drawn by the cloud renderer. This class has a property &quot;UseSimulationTime&quot; which determines whether rain and snow speed is based on the simulated time-of-day, or real time in seconds.</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;Shaders</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;-------</div>
@@ -132,6 +132,6 @@ url: Simul/PRODUCTS/TrueSky/Help/4 Renderering.md Source File
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Sat Feb 13 2016 07:46:37</small></address>
+Wed Apr 13 2016 07:46:34</small></address>
 </body>
 </html>

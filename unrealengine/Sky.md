@@ -9,6 +9,8 @@ Editing the sky in the Sequencer
 
 To select a sky keyframe, click on it in the timeline; to select the overall sky properties, click "Sky" on the left of the timeline.
 
+Read more about editing the Sky Layer or Sky Keyframes on [The Sky Sequencer Page](http://docs.simul.co/reference/man_8_sequencer.html).
+
 Modifying the sky in Blueprint
 -------------------------
 These are the editable properties - in brackets are given the properties as you would specify them when scripting with GetKeyframeValue and SetKeyframeValue.

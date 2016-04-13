@@ -68,6 +68,8 @@ To control the sky properties from within the Editor, you can edit the sequence 
 
 Select the Properties tab or the Map. Click a keyframe to edit its properties. Double-click a line to edit all the keyframes in that line. Click on the title text to the left to edit the properties of the whole layer (sky or clouds).
 
+Read more about editing Sky and Cloud properties on [The Sky Sequencer Page](http://docs.simul.co/reference/man_8_sequencer.html).
+
 Scripting
 ---------
 Script control of the sky is via the trueSKY object. While the Sequence asset represents the initial state, you can change any value in-game from script.
@@ -124,4 +126,23 @@ For example,in the script KeyframeTesting.cs in the Simul directory, is a functi
 
 For details of the properties you can change, see the Clouds and Sky Reference pages.
 
+<<<<<<< HEAD
 Next: <a href="/unity/Instructions">Instructions</a>
+=======
+**Vector3 TrueSkyToUnityPosition(Vector3 ts_pos)**
+**Vector3 TrueSkyToUnityDirection(Vector3 ts_dir)**
+**Vector3 UnityToTrueSkyPosition(Vector3 upos)** 
+**Vector3 UnityToTrueSkyDirection(Vector3 u_dir)**
+
+As Unity and trueSKY treat coordinates differently -- for example, which axis is considered "up" -- these functions are provided to convert between them when needed.
+
+Reference
+---------
+[Sky and Atmospherics](Sky.html)
+
+[Clouds](Clouds.html)
+
+Techniques
+----------
+[Fixing Time of Day](FixingDaytime.html)
+>>>>>>> 7c6100964bff71115052434ae5e7fc1918517b49
