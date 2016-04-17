@@ -1433,6 +1433,8 @@
       <keyword name="SetPerformanceTest" id="simul::dx11::TrueSkyRenderer::SetPerformanceTest" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#a978acece14273464f24c0b1bcc6d294d" />
       <keyword name="GetShowOSD" id="simul::dx11::TrueSkyRenderer::GetShowOSD" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#aab10c23031eb6a3ef947187572b84477" />
       <keyword name="SetShowOSD" id="simul::dx11::TrueSkyRenderer::SetShowOSD" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#a05ee7e5c7324c2e3914e6a0c73da802b" />
+      <keyword name="GetShowTransparencyOverlay" id="simul::dx11::TrueSkyRenderer::GetShowTransparencyOverlay" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#a0c043a23248c8785d338803f939c7870" />
+      <keyword name="SetShowTransparencyOverlay" id="simul::dx11::TrueSkyRenderer::SetShowTransparencyOverlay" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#ac6f4396bb3ada7addfd79e0f9b4613fc" />
       <keyword name="GetCloudTool" id="simul::dx11::TrueSkyRenderer::GetCloudTool" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#afe4546fafd1659caf51beb8976f30249" />
       <keyword name="SetCloudTool" id="simul::dx11::TrueSkyRenderer::SetCloudTool" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#ab3a29f637c529a21c4eca3cab225af60" />
       <keyword name="GetSkyBrightness" id="simul::dx11::TrueSkyRenderer::GetSkyBrightness" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#aa041fb457ca4848919fe751aa7ed80a5" />
@@ -1759,6 +1761,8 @@
       <keyword name="SetPerformanceTest" id="simul::plugin::PluginTrueSkyRenderer::SetPerformanceTest" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a978acece14273464f24c0b1bcc6d294d" />
       <keyword name="GetShowOSD" id="simul::plugin::PluginTrueSkyRenderer::GetShowOSD" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#aab10c23031eb6a3ef947187572b84477" />
       <keyword name="SetShowOSD" id="simul::plugin::PluginTrueSkyRenderer::SetShowOSD" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a05ee7e5c7324c2e3914e6a0c73da802b" />
+      <keyword name="GetShowTransparencyOverlay" id="simul::plugin::PluginTrueSkyRenderer::GetShowTransparencyOverlay" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a0c043a23248c8785d338803f939c7870" />
+      <keyword name="SetShowTransparencyOverlay" id="simul::plugin::PluginTrueSkyRenderer::SetShowTransparencyOverlay" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#ac6f4396bb3ada7addfd79e0f9b4613fc" />
       <keyword name="GetCloudTool" id="simul::plugin::PluginTrueSkyRenderer::GetCloudTool" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#afe4546fafd1659caf51beb8976f30249" />
       <keyword name="SetCloudTool" id="simul::plugin::PluginTrueSkyRenderer::SetCloudTool" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#ab3a29f637c529a21c4eca3cab225af60" />
       <keyword name="GetSkyBrightness" id="simul::plugin::PluginTrueSkyRenderer::GetSkyBrightness" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#aa041fb457ca4848919fe751aa7ed80a5" />
