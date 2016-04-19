@@ -372,6 +372,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:ac3565ae13a2e298100f23e7f2c9feab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48d4110392314f6a6a83a36d615b6067"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#a48d4110392314f6a6a83a36d615b6067">SetDefaultNumSlices</a> (int value)</td></tr>
 <tr class="separator:a48d4110392314f6a6a83a36d615b6067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Property: float Phase</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>"Phase for edge noise." </p>
+</div></td></tr>
+<tr class="memitem:a8c74f40e99a227ae2ba80106bfc0b091"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#a8c74f40e99a227ae2ba80106bfc0b091">GetPhase</a> () const </td></tr>
+<tr class="separator:a8c74f40e99a227ae2ba80106bfc0b091"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd28ecc757e339eaa09065f471cce24d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#abd28ecc757e339eaa09065f471cce24d">SetPhase</a> (float value)</td></tr>
+<tr class="separator:abd28ecc757e339eaa09065f471cce24d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Property: bool ExplicitOffsets</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>"If true, the cloud offset (i.e. wind motion) is set as an absolute position, instead of using WindSpeed." </p>
 </div></td></tr>
@@ -988,6 +995,39 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
+<a class="anchor" id="a8c74f40e99a227ae2ba80106bfc0b091"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float simul::clouds::CloudKeyframer::GetPhase </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the value of Phase . </p>
+
+</div>
+</div>
+<a class="anchor" id="abd28ecc757e339eaa09065f471cce24d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void simul::clouds::CloudKeyframer::SetPhase </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the value of Phase . </p>
+
+</div>
+</div>
 <a class="anchor" id="a6fdbdad892bcbd9e90e7e0a834263b99"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1459,7 +1499,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><div class="memdoc">
 <p>Get the current <em>interpolated</em> keyframe, which holds the values interpolated from the two surrounding keyframes at any given time. </p>
 
-<p>Definition at line <a class="el" href="CloudKeyframer_8h_source.html#l00287">287</a> of file <a class="el" href="CloudKeyframer_8h_source.html">CloudKeyframer.h</a>.</p>
+<p>Definition at line <a class="el" href="CloudKeyframer_8h_source.html#l00290">290</a> of file <a class="el" href="CloudKeyframer_8h_source.html">CloudKeyframer.h</a>.</p>
 
 </div>
 </div>
@@ -1510,7 +1550,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><div class="memdoc">
 <p>Get the interpolation - between zero and one. This is based on InterpStepTime and the sky's Daytime property. When the interpolation reaches one, the textures will be cycled. </p>
 
-<p>Definition at line <a class="el" href="CloudKeyframer_8h_source.html#l00350">350</a> of file <a class="el" href="CloudKeyframer_8h_source.html">CloudKeyframer.h</a>.</p>
+<p>Definition at line <a class="el" href="CloudKeyframer_8h_source.html#l00353">353</a> of file <a class="el" href="CloudKeyframer_8h_source.html">CloudKeyframer.h</a>.</p>
 
 </div>
 </div>
@@ -1966,6 +2006,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Mon Apr 18 2016 07:46:37</small></address>
+Tue Apr 19 2016 07:46:37</small></address>
 </body>
 </html>

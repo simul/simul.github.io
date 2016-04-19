@@ -842,6 +842,8 @@
       <keyword name="SetEdgeNoiseTextureSize" id="simul::clouds::CloudKeyframer::SetEdgeNoiseTextureSize" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#af2a1a33993bee2dea560d2966b438a90" />
       <keyword name="GetDefaultNumSlices" id="simul::clouds::CloudKeyframer::GetDefaultNumSlices" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#ac3565ae13a2e298100f23e7f2c9feab6" />
       <keyword name="SetDefaultNumSlices" id="simul::clouds::CloudKeyframer::SetDefaultNumSlices" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a48d4110392314f6a6a83a36d615b6067" />
+      <keyword name="GetPhase" id="simul::clouds::CloudKeyframer::GetPhase" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a8c74f40e99a227ae2ba80106bfc0b091" />
+      <keyword name="SetPhase" id="simul::clouds::CloudKeyframer::SetPhase" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#abd28ecc757e339eaa09065f471cce24d" />
       <keyword name="GetExplicitOffsets" id="simul::clouds::CloudKeyframer::GetExplicitOffsets" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a6fdbdad892bcbd9e90e7e0a834263b99" />
       <keyword name="SetExplicitOffsets" id="simul::clouds::CloudKeyframer::SetExplicitOffsets" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a0385666aa19568d7544c73c53bc9f01a" />
       <keyword name="GetCloudShadowStrength" id="simul::clouds::CloudKeyframer::GetCloudShadowStrength" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#ab7776eaf56a0e5849f9cfc2204e36df6" />
@@ -1288,7 +1290,7 @@
       <keyword name="simul::crossplatform::Texture" id="simul::crossplatform::Texture" ref="classsimul_1_1crossplatform_1_1Texture.html" />
       <keyword name="activateRenderTarget" id="simul::crossplatform::Texture::activateRenderTarget" ref="classsimul_1_1crossplatform_1_1Texture.html#aa7724f6c0654607a092ef34e8469820b" />
       <keyword name="deactivateRenderTarget" id="simul::crossplatform::Texture::deactivateRenderTarget" ref="classsimul_1_1crossplatform_1_1Texture.html#af41b0a4d1510cbab224aaebc6187f982" />
-      <keyword name="ensureTexture2DSizeAndFormat" id="simul::crossplatform::Texture::ensureTexture2DSizeAndFormat" ref="classsimul_1_1crossplatform_1_1Texture.html#af490433a839a63bfb80baaae448384de" />
+      <keyword name="ensureTexture2DSizeAndFormat" id="simul::crossplatform::Texture::ensureTexture2DSizeAndFormat" ref="classsimul_1_1crossplatform_1_1Texture.html#aa633d6b0abcf10992729d261f0d79a80" />
       <keyword name="ensureTexture3DSizeAndFormat" id="simul::crossplatform::Texture::ensureTexture3DSizeAndFormat" ref="classsimul_1_1crossplatform_1_1Texture.html#a50adeb28785744067fa16707b741e59f" />
       <keyword name="ensureTextureArraySizeAndFormat" id="simul::crossplatform::Texture::ensureTextureArraySizeAndFormat" ref="classsimul_1_1crossplatform_1_1Texture.html#ad6191600ce2f5903ed3dc03d004b0c1b" />
       <keyword name="GenerateMips" id="simul::crossplatform::Texture::GenerateMips" ref="classsimul_1_1crossplatform_1_1Texture.html#a50bcc6c90d50477b6fcc6988be59fbeb" />
