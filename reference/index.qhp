@@ -1824,7 +1824,6 @@
       <keyword name="SetCloudShadowTexture" id="simul::sky::BaseAtmosphericsRenderer::SetCloudShadowTexture" ref="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#ad4e0dfcde5e87fe500dedd96d8f1e092" />
       <keyword name="SetIlluminationTexture" id="simul::sky::BaseAtmosphericsRenderer::SetIlluminationTexture" ref="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#afe13e71b42cf3ed8dffcfb5ac3a05873" />
       <keyword name="SetLossAndInscatterTextures" id="simul::sky::BaseAtmosphericsRenderer::SetLossAndInscatterTextures" ref="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#a92bf1d0f9949e2595fe1dfffc58fad49" />
-      <keyword name="SetOvercastFactor" id="simul::sky::BaseAtmosphericsRenderer::SetOvercastFactor" ref="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#ada0afef210b6da728e21e56362a0803d" />
       <keyword name="GetShowGodrays" id="simul::sky::BaseAtmosphericsRenderer::GetShowGodrays" ref="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#a6a1b31fc5a6a3c5faa65c54205e0689b" />
       <keyword name="SetShowGodrays" id="simul::sky::BaseAtmosphericsRenderer::SetShowGodrays" ref="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#acf3ed8b7a273aa9b1d34f15344d15098" />
       <keyword name="GetInfraRed" id="simul::sky::BaseAtmosphericsRenderer::GetInfraRed" ref="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#afacf76958fb1143626f9e6aa1494ee32" />
