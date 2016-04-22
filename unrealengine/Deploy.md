@@ -27,5 +27,16 @@ If you're using the binary distribution of UE with the trueSKY plugin binary ins
 * (UE)/Engine/Plugins/TrueSkyPlugin/shaderbin to (GAME)/Engine/Plugins/TrueSkyPlugin/shaderbin
 
 Now you are ready to run your game with trueSKY.
+
+**Console Deployment**
+
+As the console automation files are not in the Git repository, it is not possible to distribute the necessary changes. So you must modify by hand the console Platform.Automation.cs files, in the function GetFilesToDeployOrStage(), add:
+
+		/// BEGIN trueSKY Additional code
+		SC.StageFiles(StagedFileType.NonUFS, CombinePaths(SC.LocalRoot, "Engine/Binaries/ThirdParty/Simul", SC.PlatformDir), "*.*", true, null, null, true);
+		SC.StageFiles(StagedFileType.NonUFS, CombinePaths(SC.LocalRoot, "Engine/Plugins/TrueSkyPlugin/Resources"), "*.*", true, null, null, true);
+		SC.StageFiles(StagedFileType.NonUFS, CombinePaths(SC.LocalRoot, "Engine/Plugins/TrueSkyPlugin/Content"), "*.*", true, null, null, true);
+		SC.StageFiles(StagedFileType.NonUFS, CombinePaths(SC.LocalRoot, "Engine/Plugins/TrueSkyPlugin/shaderbin"), "*.*", true, null, null, true);
+		/// END trueSKY Additional code
 			
 Next: <a href="/unrealengine/index">Home</a>
