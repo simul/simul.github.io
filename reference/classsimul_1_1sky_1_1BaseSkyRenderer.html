@@ -57,10 +57,6 @@ virtual BaseGpuSkyGenerator *&#160;</td><td class="memItemRight" valign="bottom"
 <tr class="separator:a254e194a3001a43574eb24c280375de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2968f5d6d4933c2ee1629ca3fa303691"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseSkyRenderer.html#a2968f5d6d4933c2ee1629ca3fa303691">EnableMoon</a> (bool val)</td></tr>
 <tr class="separator:a2968f5d6d4933c2ee1629ca3fa303691"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd4c8c4ac22a7254bb7989fdb9bba3a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd4c8c4ac22a7254bb7989fdb9bba3a2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseSkyRenderer.html#acd4c8c4ac22a7254bb7989fdb9bba3a2">Get2DLossAndInscatterTextures</a> (<a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> **loss, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> **inscatter, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> **skylight, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> **overcast)</td></tr>
-<tr class="memdesc:acd4c8c4ac22a7254bb7989fdb9bba3a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get atmospherics Texture values to be cast to API-dependent texture identifiers, e.g. OpenGL GLuints, DX9 LPDIRECT3D9TEXTURE's or DX11 ShaderResourceViews. <br /></td></tr>
-<tr class="separator:acd4c8c4ac22a7254bb7989fdb9bba3a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2da4743e17e6b8b6c73b4756165b2ac1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2da4743e17e6b8b6c73b4756165b2ac1"></a>
 simul::sky::float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseSkyRenderer.html#a2da4743e17e6b8b6c73b4756165b2ac1">GetAmbientColour</a> (float alt_km)</td></tr>
 <tr class="memdesc:a2da4743e17e6b8b6c73b4756165b2ac1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current ambient light colour as a float4 (x=red, y=green, z=blue, w unused), i.e. sunlight or moonlight. This is a high-dynamic range value. <br /></td></tr>
@@ -69,10 +65,6 @@ simul::sky::float4&#160;</td><td class="memItemRight" valign="bottom"><a class="
 <a class="el" href="classsimul_1_1sky_1_1BaseSkyInterface.html">simul::sky::BaseSkyInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseSkyRenderer.html#a185c94cc85f171574aca0af3b4048937">GetBaseSkyInterface</a> ()</td></tr>
 <tr class="memdesc:a185c94cc85f171574aca0af3b4048937"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the interface to the sky object so that other classes can use it for lighting, distance fades etc. <br /></td></tr>
 <tr class="separator:a185c94cc85f171574aca0af3b4048937"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a56d85d628a2f41856d6ddd5a1777f5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a56d85d628a2f41856d6ddd5a1777f5"></a>
-virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseSkyRenderer.html#a2a56d85d628a2f41856d6ddd5a1777f5">GetDebugText</a> () const </td></tr>
-<tr class="memdesc:a2a56d85d628a2f41856d6ddd5a1777f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get some per-frame text information for debugging - usually timing data. <br /></td></tr>
-<tr class="separator:a2a56d85d628a2f41856d6ddd5a1777f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf3aabc1db84449e2947eaf3fc6f4474"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseSkyRenderer.html#aaf3aabc1db84449e2947eaf3fc6f4474">GetIlluminationTexture</a> ()</td></tr>
 <tr class="separator:aaf3aabc1db84449e2947eaf3fc6f4474"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87be2cfd99944d1268963d8a64fd8227"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87be2cfd99944d1268963d8a64fd8227"></a>
@@ -236,7 +228,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p> The fade textures are 3D, with co-ordinates representing x=altitude/max altitude, y=1+sine(elevation))/2, z=distance/max distance. Each frame, these three pairs of 3D textures (Keyframe X and X+1) are combined into three individual 2D textures, with x=distance/max distance, y=1+sine(elevation))/2, representing the fade colours as seen at the present time, from the current viewing altitude.</p>
 <p>The last texel in the x direction is considered to represent infinity, irrespective of the specified MaxDistanceKm parameter, so a distance texture coordinate of 1.0 in the inscatter and skylight textures represents the sky, with values less than one used for atmospheric scattering over solid objects. </p>
 
-<p>Definition at line <a class="el" href="BaseSkyRenderer_8h_source.html#l00122">122</a> of file <a class="el" href="BaseSkyRenderer_8h_source.html">BaseSkyRenderer.h</a>.</p>
+<p>Definition at line <a class="el" href="BaseSkyRenderer_8h_source.html#l00132">132</a> of file <a class="el" href="BaseSkyRenderer_8h_source.html">BaseSkyRenderer.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a6ed4c3c7c11b10b4f43ca3ca0e23ab75"></a>
 <div class="memitem">
@@ -447,6 +439,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Sat Apr 23 2016 07:46:43</small></address>
+Tue Apr 26 2016 07:57:25</small></address>
 </body>
 </html>

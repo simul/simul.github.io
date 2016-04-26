@@ -109,7 +109,7 @@ VolumeQueryResult&#160;</td><td class="memItemRight" valign="bottom"><a class="e
 <tr class="separator:a26a30f78e47caf2eab062fa6521643aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aced10a020bcc3b2df715c2006349dd04"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aced10a020bcc3b2df715c2006349dd04"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#aced10a020bcc3b2df715c2006349dd04">GetQueryIdForViewId</a> (int view_id) const </td></tr>
-<tr class="memdesc:aced10a020bcc3b2df715c2006349dd04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the query id for the specified view. If <a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#aca8e392acd6b63ddab25e6bc90f59845" title="Platform-dependent render function. ">Render()</a> has been called for the view, the query should have a valid set of results for the last frame rendered. <br /></td></tr>
+<tr class="memdesc:aced10a020bcc3b2df715c2006349dd04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the query id for the specified view. If <a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ad7915ee08913f21fde0410c4d0b330bf" title="Platform-dependent render function. ">Render()</a> has been called for the view, the query should have a valid set of results for the last frame rendered. <br /></td></tr>
 <tr class="separator:aced10a020bcc3b2df715c2006349dd04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac7e68f9512afaf51024107e40f7174e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac7e68f9512afaf51024107e40f7174e"></a>
 virtual <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#aac7e68f9512afaf51024107e40f7174e">GetRandomTexture3D</a> ()</td></tr>
@@ -135,10 +135,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a689bba2dd0ae007cb327f679e4e37f8f">RecompileShaders</a> ()</td></tr>
 <tr class="memdesc:a689bba2dd0ae007cb327f679e4e37f8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Platform-dependent function to reload the shaders - only use this for debug purposes. <br /></td></tr>
 <tr class="separator:a689bba2dd0ae007cb327f679e4e37f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca8e392acd6b63ddab25e6bc90f59845"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca8e392acd6b63ddab25e6bc90f59845"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#aca8e392acd6b63ddab25e6bc90f59845">Render</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, float exposure, <a class="el" href="namespacesimul_1_1clouds.html#a1dc56c71e4d8698ef947bc727ca3124d">TrueSkyRenderMode</a> renderMode, <a class="el" href="namespacesimul_1_1crossplatform.html#a667774e92bf043892a3f73c9baa23c68">crossplatform::NearFarPass</a> nearFarPass, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *depth_tex, const sky::ScatteringVolume &amp;scatteringVolume, bool write_alpha, const vec4 &amp;viewportTextureRegionXYWH, const vec4 &amp;mixedResTransformXYWH, const <a class="el" href="structsimul_1_1crossplatform_1_1AmortizationStruct.html">crossplatform::AmortizationStruct</a> &amp;amortizationStruct, <a class="el" href="classsimul_1_1clouds_1_1TwoResFramebuffer.html">clouds::TwoResFramebuffer</a> *fb)</td></tr>
-<tr class="memdesc:aca8e392acd6b63ddab25e6bc90f59845"><td class="mdescLeft">&#160;</td><td class="mdescRight">Platform-dependent render function. <br /></td></tr>
-<tr class="separator:aca8e392acd6b63ddab25e6bc90f59845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7915ee08913f21fde0410c4d0b330bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7915ee08913f21fde0410c4d0b330bf"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ad7915ee08913f21fde0410c4d0b330bf">Render</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, float exposure, <a class="el" href="namespacesimul_1_1clouds.html#a1dc56c71e4d8698ef947bc727ca3124d">TrueSkyRenderMode</a> renderMode, <a class="el" href="namespacesimul_1_1crossplatform.html#a667774e92bf043892a3f73c9baa23c68">crossplatform::NearFarPass</a> nearFarPass, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *depth_tex, const sky::ScatteringVolume *scatteringVolume, bool write_alpha, const vec4 &amp;viewportTextureRegionXYWH, const <a class="el" href="structsimul_1_1crossplatform_1_1AmortizationStruct.html">crossplatform::AmortizationStruct</a> &amp;amortizationStruct, <a class="el" href="classsimul_1_1clouds_1_1TwoResFramebuffer.html">clouds::TwoResFramebuffer</a> *fb, sky::LocalFadeTextures *localFadeTextures)</td></tr>
+<tr class="memdesc:ad7915ee08913f21fde0410c4d0b330bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Platform-dependent render function. <br /></td></tr>
+<tr class="separator:ad7915ee08913f21fde0410c4d0b330bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae50ae2aa01480689b15cef2898abe056"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ae50ae2aa01480689b15cef2898abe056">RenderCloudShadowTexture</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext)</td></tr>
 <tr class="separator:ae50ae2aa01480689b15cef2898abe056"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad811fdc6aaa8be177802b76e015e7dcd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad811fdc6aaa8be177802b76e015e7dcd"></a>
@@ -157,10 +157,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a6dfd00378670b71a4d31aa5a54618899">SetEnableStorms</a> (bool s)</td></tr>
 <tr class="memdesc:a6dfd00378670b71a4d31aa5a54618899"><td class="mdescLeft">&#160;</td><td class="mdescRight">Where supported, enable lightning generation. <br /></td></tr>
 <tr class="separator:a6dfd00378670b71a4d31aa5a54618899"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56d6120b888b52b3b2d3dd9541b8a035"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56d6120b888b52b3b2d3dd9541b8a035"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a56d6120b888b52b3b2d3dd9541b8a035">SetLossAndInscatterTextures</a> (<a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *)</td></tr>
-<tr class="memdesc:a56d6120b888b52b3b2d3dd9541b8a035"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the platform-dependent atmospheric inscatter texture. <br /></td></tr>
-<tr class="separator:a56d6120b888b52b3b2d3dd9541b8a035"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a2b33830fe844543c5fafdc2948c842"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a2b33830fe844543c5fafdc2948c842"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a1a2b33830fe844543c5fafdc2948c842">SetMaxSlices</a> (int viewport_id, int maxs)</td></tr>
 <tr class="memdesc:a1a2b33830fe844543c5fafdc2948c842"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cloud rendering detail is determined by the number of slices. If not set the value from the <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html">CloudKeyframer</a> will be used (GetDefaultNumSlices), but each viewport id can have a separate setting. <br /></td></tr>
@@ -270,7 +266,7 @@ The Cloud Grid</div></div>
 <div class="caption">
 The Cloud Grid</div></div>
 
-<p>Definition at line <a class="el" href="BaseCloudRenderer_8h_source.html#l00166">166</a> of file <a class="el" href="BaseCloudRenderer_8h_source.html">BaseCloudRenderer.h</a>.</p>
+<p>Definition at line <a class="el" href="BaseCloudRenderer_8h_source.html#l00167">167</a> of file <a class="el" href="BaseCloudRenderer_8h_source.html">BaseCloudRenderer.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a813855956b7ec95c605b89656dff3f33"></a>
 <div class="memitem">
@@ -404,6 +400,6 @@ The Cloud Grid</div></div>
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Sat Apr 23 2016 07:46:43</small></address>
+Tue Apr 26 2016 07:57:16</small></address>
 </body>
 </html>

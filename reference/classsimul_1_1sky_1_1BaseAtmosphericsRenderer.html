@@ -49,10 +49,10 @@ url: simul::sky::BaseAtmosphericsRenderer Class Reference
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae17b4f3ca25bb336d753803f501ebbcf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae17b4f3ca25bb336d753803f501ebbcf"></a>
-ScatteringVolume&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#ae17b4f3ca25bb336d753803f501ebbcf">GetScatteringVolume</a> (int view_id)</td></tr>
-<tr class="memdesc:ae17b4f3ca25bb336d753803f501ebbcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the per-frame 3D volume scattering texture for the given view id. <br /></td></tr>
-<tr class="separator:ae17b4f3ca25bb336d753803f501ebbcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f242f8a6cdd9cc60ec0ebd01998461c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f242f8a6cdd9cc60ec0ebd01998461c"></a>
+const ScatteringVolume *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#a6f242f8a6cdd9cc60ec0ebd01998461c">GetScatteringVolume</a> (int view_id)</td></tr>
+<tr class="memdesc:a6f242f8a6cdd9cc60ec0ebd01998461c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the per-frame 3D volume scattering texture for the given view id. <br /></td></tr>
+<tr class="separator:a6f242f8a6cdd9cc60ec0ebd01998461c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae2efb757b2dd8c02934bceb8214691c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae2efb757b2dd8c02934bceb8214691c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1Referenced.html#aae2efb757b2dd8c02934bceb8214691c">intrusive_ptr_add_ref</a> () const </td></tr>
 <tr class="memdesc:aae2efb757b2dd8c02934bceb8214691c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment the reference count by one. <br /></td></tr>
@@ -77,10 +77,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#afe13e71b42cf3ed8dffcfb5ac3a05873">SetIlluminationTexture</a> (<a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *)</td></tr>
 <tr class="memdesc:afe13e71b42cf3ed8dffcfb5ac3a05873"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the texture defining the extent of illuminated inscatter. R=near, G=far, B and A unused. <br /></td></tr>
 <tr class="separator:afe13e71b42cf3ed8dffcfb5ac3a05873"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92bf1d0f9949e2595fe1dfffc58fad49"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92bf1d0f9949e2595fe1dfffc58fad49"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#a92bf1d0f9949e2595fe1dfffc58fad49">SetLossAndInscatterTextures</a> (<a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *l, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *i, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *s, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *o)</td></tr>
-<tr class="memdesc:a92bf1d0f9949e2595fe1dfffc58fad49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the 2D textures to be used for inscattered atmospheric light, the anisotropic (main) texture, and the isotropic (skylight/blackbody) texture. <br /></td></tr>
-<tr class="separator:a92bf1d0f9949e2595fe1dfffc58fad49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Property: bool ShowGodrays</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>"If true, draw the atmospheric fades with godrays." </p>
 </div></td></tr>
@@ -106,7 +102,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The graphics API-independent base class for atmospherics renderers, which draw distance fades, aerial perspective, fog and so on. </p>
 
-<p>Definition at line <a class="el" href="BaseAtmosphericsRenderer_8h_source.html#l00046">46</a> of file <a class="el" href="BaseAtmosphericsRenderer_8h_source.html">BaseAtmosphericsRenderer.h</a>.</p>
+<p>Definition at line <a class="el" href="BaseAtmosphericsRenderer_8h_source.html#l00048">48</a> of file <a class="el" href="BaseAtmosphericsRenderer_8h_source.html">BaseAtmosphericsRenderer.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a6a1b31fc5a6a3c5faa65c54205e0689b"></a>
 <div class="memitem">
@@ -215,6 +211,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Sat Apr 23 2016 07:46:43</small></address>
+Tue Apr 26 2016 07:57:24</small></address>
 </body>
 </html>

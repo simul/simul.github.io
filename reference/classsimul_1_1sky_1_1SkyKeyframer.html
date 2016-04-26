@@ -76,10 +76,14 @@ virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseKeyframer.html#a7cb5ae7caa7e1ce9d5f3fcd05c38600a">GetCurrentSubdivision</a> () const </td></tr>
 <tr class="memdesc:a7cb5ae7caa7e1ce9d5f3fcd05c38600a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index of the current keyframe. <br /></td></tr>
 <tr class="separator:a7cb5ae7caa7e1ce9d5f3fcd05c38600a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cf2b004bb3d3383c47f7b91f486ac54"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6cf2b004bb3d3383c47f7b91f486ac54"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a6cf2b004bb3d3383c47f7b91f486ac54">GetDefaultFloat</a> (const char *name) const </td></tr>
-<tr class="memdesc:a6cf2b004bb3d3383c47f7b91f486ac54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the default float value with the given, case-insensitive, name. <br /></td></tr>
-<tr class="separator:a6cf2b004bb3d3383c47f7b91f486ac54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33698a1261bd8e07b6329554b3167568"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33698a1261bd8e07b6329554b3167568"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a33698a1261bd8e07b6329554b3167568">GetDefaultFloat</a> (const char *name) const  override</td></tr>
+<tr class="memdesc:a33698a1261bd8e07b6329554b3167568"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the default float value with the given, case-insensitive, name. <br /></td></tr>
+<tr class="separator:a33698a1261bd8e07b6329554b3167568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f25797ff4029046f2c2dde3a3112cea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f25797ff4029046f2c2dde3a3112cea"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a4f25797ff4029046f2c2dde3a3112cea">GetDefaultInt</a> (const char *name) const  override</td></tr>
+<tr class="memdesc:a4f25797ff4029046f2c2dde3a3112cea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the default int value with the given, case-insensitive, name. <br /></td></tr>
+<tr class="separator:a4f25797ff4029046f2c2dde3a3112cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab426a227179145c8f0bc2769dfed44fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab426a227179145c8f0bc2769dfed44fd"></a>
 virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#ab426a227179145c8f0bc2769dfed44fd">GetDirectionToLight</a> (float alt_km) const </td></tr>
 <tr class="memdesc:ab426a227179145c8f0bc2769dfed44fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the direction to the current strongest light source - could be the sun or the moon. <br /></td></tr>
@@ -108,10 +112,10 @@ virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 <a class="el" href="namespacesimul_1_1sky.html#structsimul_1_1sky_1_1EarthShadow">EarthShadow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a44b71a1928f2b562832b6942a4c1b9c6">GetEarthShadow</a> (float h_km, const float4 &amp;lightDir) const </td></tr>
 <tr class="memdesc:a44b71a1928f2b562832b6942a4c1b9c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Earth's shadow, as seen from the given altitude. <br /></td></tr>
 <tr class="separator:a44b71a1928f2b562832b6942a4c1b9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefd69ae74e7004b59adb2216859c83ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aefd69ae74e7004b59adb2216859c83ae"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#aefd69ae74e7004b59adb2216859c83ae">GetFloat</a> (const char *name, const <a class="el" href="namespacesimul_1_1sky.html#structsimul_1_1sky_1_1Variant32">Variant32</a> *params=NULL) const </td></tr>
-<tr class="memdesc:aefd69ae74e7004b59adb2216859c83ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Text-based interface - returns the named value if it exists. <br /></td></tr>
-<tr class="separator:aefd69ae74e7004b59adb2216859c83ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44f107ab62e110ad1e930f2bd97a6ca6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44f107ab62e110ad1e930f2bd97a6ca6"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a44f107ab62e110ad1e930f2bd97a6ca6">GetFloat</a> (const char *name, const <a class="el" href="namespacesimul_1_1sky.html#structsimul_1_1sky_1_1Variant32">Variant32</a> *params=NULL) const  override</td></tr>
+<tr class="memdesc:a44f107ab62e110ad1e930f2bd97a6ca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Text-based interface - returns the named value if it exists. <br /></td></tr>
+<tr class="separator:a44f107ab62e110ad1e930f2bd97a6ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f8fdf6cb643058fbf25526a4ad0f5bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0f8fdf6cb643058fbf25526a4ad0f5bc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a0f8fdf6cb643058fbf25526a4ad0f5bc">GetGpuSkyParameters</a> (GpuSkyParameters &amp;p, GpuSkyAtmosphereParameters &amp;a, GpuSkyInfraredParameters &amp;ir, int index)</td></tr>
 <tr class="memdesc:a0f8fdf6cb643058fbf25526a4ad0f5bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the GPU sky parameters corresponding to the given subdivision triplet index, and factor in eclipses and brightness power modifiers. <br /></td></tr>
@@ -134,10 +138,10 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <tr class="separator:a2437b2dc88421eff146c48e62fdfe2a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a133d38e1e450d05e41dc604f4e1e2e85"><td class="memItemLeft" align="right" valign="top">virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a133d38e1e450d05e41dc604f4e1e2e85">GetInscatterAngularMultiplier</a> (float cosine, float mie_factor, float alt_km=0) const </td></tr>
 <tr class="separator:a133d38e1e450d05e41dc604f4e1e2e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8101439da81ee773071b7fca221438d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8101439da81ee773071b7fca221438d4"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a8101439da81ee773071b7fca221438d4">GetInt</a> (const char *name, const <a class="el" href="namespacesimul_1_1sky.html#structsimul_1_1sky_1_1Variant32">Variant32</a> *params=NULL) const </td></tr>
-<tr class="memdesc:a8101439da81ee773071b7fca221438d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Text-based interface - returns the named value if it exists. <br /></td></tr>
-<tr class="separator:a8101439da81ee773071b7fca221438d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1496f6a05a8cdcdd419afa23220961e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1496f6a05a8cdcdd419afa23220961e9"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a1496f6a05a8cdcdd419afa23220961e9">GetInt</a> (const char *name, const <a class="el" href="namespacesimul_1_1sky.html#structsimul_1_1sky_1_1Variant32">Variant32</a> *params=NULL) const  override</td></tr>
+<tr class="memdesc:a1496f6a05a8cdcdd419afa23220961e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Text-based interface - returns the named value if it exists. <br /></td></tr>
+<tr class="separator:a1496f6a05a8cdcdd419afa23220961e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd61a2339bcc365d6ce1140fc43f9534"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd61a2339bcc365d6ce1140fc43f9534"></a>
 <a class="el" href="structsimul_1_1sky_1_1BaseKeyframe.html">BaseKeyframe</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#acd61a2339bcc365d6ce1140fc43f9534">GetKeyframe</a> (int index)</td></tr>
 <tr class="memdesc:acd61a2339bcc365d6ce1140fc43f9534"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the i'th keyframe. <br /></td></tr>
@@ -220,10 +224,10 @@ virtual vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a5b6ea6818c152d59525d89f0b07615af">GetVisibilityDistance</a> (float view_alt_km)</td></tr>
 <tr class="memdesc:a5b6ea6818c152d59525d89f0b07615af"><td class="mdescLeft">&#160;</td><td class="mdescRight">From the altitude specified, the distance in km to 10% visibility (mainly a factor of fog/haze). <br /></td></tr>
 <tr class="separator:a5b6ea6818c152d59525d89f0b07615af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2588dbe99424abdd2dfd9314e7874b49"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a2588dbe99424abdd2dfd9314e7874b49">HasFloat</a> (const char *name) const </td></tr>
-<tr class="separator:a2588dbe99424abdd2dfd9314e7874b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0b1f080f018958a434b20e291ea7194"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#ac0b1f080f018958a434b20e291ea7194">HasInt</a> (const char *name) const </td></tr>
-<tr class="separator:ac0b1f080f018958a434b20e291ea7194"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a766d94f697c8b8cdc930e9d3b7b0ee4b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a766d94f697c8b8cdc930e9d3b7b0ee4b">HasFloat</a> (const char *name) const  override</td></tr>
+<tr class="separator:a766d94f697c8b8cdc930e9d3b7b0ee4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada61959df6f1a7f2ee5844d7fd268501"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#ada61959df6f1a7f2ee5844d7fd268501">HasInt</a> (const char *name) const  override</td></tr>
+<tr class="separator:ada61959df6f1a7f2ee5844d7fd268501"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64e3f6986294328b875f4ac1e0c91078"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64e3f6986294328b875f4ac1e0c91078"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a64e3f6986294328b875f4ac1e0c91078">HighlightConstellation</a> (const char *)</td></tr>
 <tr class="memdesc:a64e3f6986294328b875f4ac1e0c91078"><td class="mdescLeft">&#160;</td><td class="mdescRight">Highlight the named constellation in debug views: <br /></td></tr>
@@ -260,10 +264,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a35c4acd06efc21a546a1597a3cb47d3e">SaveToText</a> (crossplatform::TextOutput &amp;output, bool include_keyframes) const </td></tr>
 <tr class="memdesc:a35c4acd06efc21a546a1597a3cb47d3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save this keyframer's values to textual output. <br /></td></tr>
 <tr class="separator:a35c4acd06efc21a546a1597a3cb47d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef250b5f88e08489ebc0a67261aee27a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef250b5f88e08489ebc0a67261aee27a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#aef250b5f88e08489ebc0a67261aee27a">SetFloat</a> (const char *name, float val)</td></tr>
-<tr class="memdesc:aef250b5f88e08489ebc0a67261aee27a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Text-based interface - sets the named value if it exists. <br /></td></tr>
-<tr class="separator:aef250b5f88e08489ebc0a67261aee27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d57be0a30483cbee08b4916c2dc4ff8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d57be0a30483cbee08b4916c2dc4ff8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a1d57be0a30483cbee08b4916c2dc4ff8">SetFloat</a> (const char *name, float val) override</td></tr>
+<tr class="memdesc:a1d57be0a30483cbee08b4916c2dc4ff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Text-based interface - sets the named value if it exists. <br /></td></tr>
+<tr class="separator:a1d57be0a30483cbee08b4916c2dc4ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b549ffe4d14e834bbb2ee0678e6e5b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b549ffe4d14e834bbb2ee0678e6e5b4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a9b549ffe4d14e834bbb2ee0678e6e5b4">SetStartDate</a> (int y, int m, int d)</td></tr>
 <tr class="memdesc:a9b549ffe4d14e834bbb2ee0678e6e5b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the date for time=0. <br /></td></tr>
@@ -1646,7 +1650,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 </div>
 </div>
-<a class="anchor" id="a2588dbe99424abdd2dfd9314e7874b49"></a>
+<a class="anchor" id="a766d94f697c8b8cdc930e9d3b7b0ee4b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1663,7 +1667,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1686,7 +1690,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 </div>
 </div>
-<a class="anchor" id="ac0b1f080f018958a434b20e291ea7194"></a>
+<a class="anchor" id="ada61959df6f1a7f2ee5844d7fd268501"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1703,7 +1707,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2303,6 +2307,6 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Sat Apr 23 2016 07:46:43</small></address>
+Tue Apr 26 2016 07:57:26</small></address>
 </body>
 </html>
