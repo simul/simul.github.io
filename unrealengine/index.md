@@ -87,8 +87,6 @@ Modified Files in the Unreal Engine
 	Engine\Source\Runtime\Renderer\Private\SceneRendering.cpp
 	Engine\Source\Runtime\Renderer\Private\RendererScene.cpp
 
-	Engine\Source\Runtime\XboxOne\XboxOneD3D11RHI\Private\D3D11Device.cpp
-
 	Engine\Source\Programs\AutomationTool\PS4\PS4Platform.Automation.cs
 	Engine\Source\Programs\AutomationTool\Win\WinPlatform.Automation.cs
 	Engine\Source\Programs\AutomationTool\XboxOne\XboxOnePlatform.Automation.cs
