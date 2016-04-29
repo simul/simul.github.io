@@ -367,6 +367,12 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1RenderPlatform.html#a3f801fb549186e98e44eccf2dc7fd84b"><param name="Name" value="simul::dx11::RenderPlatform"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1opengl_1_1RenderPlatform.html#a19600362c5000b3a4d384b07c614362d"><param name="Name" value="simul::opengl::RenderPlatform"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#a6a2b0c973a03afce34c9ff21b295dfda"><param name="Name" value="DrawCubemap"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#a6a2b0c973a03afce34c9ff21b295dfda"><param name="Name" value="simul::crossplatform::RenderPlatform"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1RenderPlatform.html#ab51c0726a802539e2408513131835fdd"><param name="Name" value="simul::dx11::RenderPlatform"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#a6a2b0c973a03afce34c9ff21b295dfda"><param name="Name" value="simul::opengl::RenderPlatform"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a325b9bba7be512d1f625c4ceea2b798c"><param name="Name" value="DrawGrid"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#a0395ef4e8c10e5d2943fe56a1ac04481"><param name="Name" value="DrawIndexed"></OBJECT>
   <UL>
@@ -3987,6 +3993,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#aef7eab1870b1420940461db8e879a26d"><param name="Name" value="DispatchCompute"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#a8810284b4ae959616f4d0b260c3b0b01"><param name="Name" value="Draw"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#af17c6734037a2873a228b0c49b20d464"><param name="Name" value="DrawCircle"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#a6a2b0c973a03afce34c9ff21b295dfda"><param name="Name" value="DrawCubemap"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#a0395ef4e8c10e5d2943fe56a1ac04481"><param name="Name" value="DrawIndexed"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#aa6b6bdcd7342dadad16d57eb44bdfe82"><param name="Name" value="EndEvent"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#a02c50321136c7d835fbab0821959701f"><param name="Name" value="EnsureEffectIsBuilt"></OBJECT>
@@ -4021,6 +4028,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#adbb96622941661367c756951677be031"><param name="Name" value="SetTopology"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#acf31ad1b4f8bc026440dc3a7cb3654a3"><param name="Name" value="SetVertexBuffers"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#a42ab82829f99cb67faca26374a90045b"><param name="Name" value="StoreRenderState"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#ae7e1b9f67ee9807cdbfd0e7b737fef09"><param name="Name" value="SynchronizeCacheAndState"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1StructuredBuffer.html"><param name="Name" value="simul::crossplatform::StructuredBuffer"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Texture.html"><param name="Name" value="simul::crossplatform::Texture"></OBJECT>
@@ -4131,6 +4139,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1RenderPlatform.html#a9ce134448075a6274af69e2c76381a32"><param name="Name" value="DispatchCompute"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1RenderPlatform.html#a4461b25cb847e8c6d9beeb15e51b49ab"><param name="Name" value="Draw"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1RenderPlatform.html#a3f801fb549186e98e44eccf2dc7fd84b"><param name="Name" value="DrawCircle"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1RenderPlatform.html#ab51c0726a802539e2408513131835fdd"><param name="Name" value="DrawCubemap"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1RenderPlatform.html#a248d8fee87ecda59093cb93337071d82"><param name="Name" value="DrawIndexed"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1RenderPlatform.html#a565d1458b894e6aa4f5c168408becd91"><param name="Name" value="EndEvent"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1RenderPlatform.html#a02c50321136c7d835fbab0821959701f"><param name="Name" value="EnsureEffectIsBuilt"></OBJECT>
@@ -4165,6 +4174,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1RenderPlatform.html#a20080cf41a8705608cfb72af736f8120"><param name="Name" value="SetTopology"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1RenderPlatform.html#a1845e3c9af7224c7316d0d02e1aba30f"><param name="Name" value="SetVertexBuffers"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1RenderPlatform.html#a2ffad4229d772bb6e61d4773960fffbf"><param name="Name" value="StoreRenderState"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1RenderPlatform.html#ae7e1b9f67ee9807cdbfd0e7b737fef09"><param name="Name" value="SynchronizeCacheAndState"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1TrueSkyRenderer.html"><param name="Name" value="simul::dx11::TrueSkyRenderer"></OBJECT>
   <UL>
@@ -4442,6 +4452,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1opengl_1_1RenderPlatform.html#a71752f7d09400f506f54fac11463e80c"><param name="Name" value="DispatchCompute"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1opengl_1_1RenderPlatform.html#af0b94545879468d454dd10b328e8421c"><param name="Name" value="Draw"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1opengl_1_1RenderPlatform.html#a19600362c5000b3a4d384b07c614362d"><param name="Name" value="DrawCircle"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1opengl_1_1RenderPlatform.html#a6a2b0c973a03afce34c9ff21b295dfda"><param name="Name" value="DrawCubemap"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1opengl_1_1RenderPlatform.html#a3d4f3cd6be81e98f51742868bd3f082f"><param name="Name" value="DrawIndexed"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1opengl_1_1RenderPlatform.html#aa6b6bdcd7342dadad16d57eb44bdfe82"><param name="Name" value="EndEvent"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1opengl_1_1RenderPlatform.html#ae31210652b369919725f0081a6174d4d"><param name="Name" value="EnsureEffectIsBuilt"></OBJECT>
@@ -4478,6 +4489,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1opengl_1_1RenderPlatform.html#a68374e387b29986e788c3a4e479fdea3"><param name="Name" value="SetTopology"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1opengl_1_1RenderPlatform.html#adeb00bf62cf356772f05c10e25fb8e7a"><param name="Name" value="SetVertexBuffers"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1opengl_1_1RenderPlatform.html#a2db76d110beba951c08a4d476b1cec11"><param name="Name" value="StoreRenderState"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1opengl_1_1RenderPlatform.html#ae7e1b9f67ee9807cdbfd0e7b737fef09"><param name="Name" value="SynchronizeCacheAndState"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1plugin.html"><param name="Name" value="simul::plugin"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html"><param name="Name" value="simul::plugin::PluginTrueSkyRenderer"></OBJECT>
@@ -5159,6 +5171,12 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudGeometryHelper.html#a28f64b632498785cb0568e4007c8b474"><param name="Name" value="simul::clouds::CloudGeometryHelper"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a6ae592c818191983b044f3fe6ffd488d"><param name="Name" value="simul::clouds::CloudKeyframer"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#ae7e1b9f67ee9807cdbfd0e7b737fef09"><param name="Name" value="SynchronizeCacheAndState"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#ae7e1b9f67ee9807cdbfd0e7b737fef09"><param name="Name" value="simul::crossplatform::RenderPlatform"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#ae7e1b9f67ee9807cdbfd0e7b737fef09"><param name="Name" value="simul::dx11::RenderPlatform"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#ae7e1b9f67ee9807cdbfd0e7b737fef09"><param name="Name" value="simul::opengl::RenderPlatform"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a7c5622b758cf4b0712901649addaacb5"><param name="Name" value="Tick"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1sky_1_1BaseKeyframe.html#a8090c3824cb8b2b3f62be0309d3c2574"><param name="Name" value="time"></OBJECT>

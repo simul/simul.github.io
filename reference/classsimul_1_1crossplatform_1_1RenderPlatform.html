@@ -145,6 +145,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#aefc841befa56b552a0351a2f39ede562">DrawCircle</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">DeviceContext</a> &amp;deviceContext, const float *pos, const float *dir, float radius, const float *colr, bool fill=false)</td></tr>
 <tr class="memdesc:aefc841befa56b552a0351a2f39ede562"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a circle in 3D space at pos. <br /></td></tr>
 <tr class="separator:aefc841befa56b552a0351a2f39ede562"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a2b0c973a03afce34c9ff21b295dfda"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a2b0c973a03afce34c9ff21b295dfda"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#a6a2b0c973a03afce34c9ff21b295dfda">DrawCubemap</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">DeviceContext</a> &amp;deviceContext, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">Texture</a> *cubemap, float offsetx, float offsety, float size, float exposure, float gamma)</td></tr>
+<tr class="memdesc:a6a2b0c973a03afce34c9ff21b295dfda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a cubemap as a sphere at the specified screen position and size. <br /></td></tr>
+<tr class="separator:a6a2b0c973a03afce34c9ff21b295dfda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0395ef4e8c10e5d2943fe56a1ac04481"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0395ef4e8c10e5d2943fe56a1ac04481"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#a0395ef4e8c10e5d2943fe56a1ac04481">DrawIndexed</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">DeviceContext</a> &amp;deviceContext, int num_indices, int start_index=0, int base_vertex=0)=0</td></tr>
 <tr class="memdesc:a0395ef4e8c10e5d2943fe56a1ac04481"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the specified number of vertices using the bound index arrays. <br /></td></tr>
@@ -271,6 +275,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:acf31ad1b4f8bc026440dc3a7cb3654a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42ab82829f99cb67faca26374a90045b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#a42ab82829f99cb67faca26374a90045b">StoreRenderState</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">DeviceContext</a> &amp;deviceContext)=0</td></tr>
 <tr class="separator:a42ab82829f99cb67faca26374a90045b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7e1b9f67ee9807cdbfd0e7b737fef09"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#ae7e1b9f67ee9807cdbfd0e7b737fef09">SynchronizeCacheAndState</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;)</td></tr>
+<tr class="separator:ae7e1b9f67ee9807cdbfd0e7b737fef09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A base class for API-specific rendering. </p>
@@ -279,6 +285,33 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 <p>Definition at line <a class="el" href="CrossPlatform_2RenderPlatform_8h_source.html#l00082">82</a> of file <a class="el" href="CrossPlatform_2RenderPlatform_8h_source.html">RenderPlatform.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ae7e1b9f67ee9807cdbfd0e7b737fef09"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void simul::crossplatform::RenderPlatform::SynchronizeCacheAndState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Implementations of <a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html" title="A base class for API-specific rendering. ">RenderPlatform</a> will cache the API state in order to reduce driver overhead. But we can't always be sure that external render code hasn't modified the API state. So by calling <a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#ae7e1b9f67ee9807cdbfd0e7b737fef09">SynchronizeCacheAndState()</a> the API state is forced to the cached state. This can be called at the start of Renderplatform's rendering per-frame. </p>
+
+<p>Definition at line <a class="el" href="CrossPlatform_2RenderPlatform_8h_source.html#l00100">100</a> of file <a class="el" href="CrossPlatform_2RenderPlatform_8h_source.html">RenderPlatform.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="acf43ff901a5e61c201dec0bf4abaf80b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -420,6 +453,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Thu Apr 28 2016 07:46:35</small></address>
+Fri Apr 29 2016 07:46:28</small></address>
 </body>
 </html>
