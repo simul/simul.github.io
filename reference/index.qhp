@@ -1130,11 +1130,11 @@
       <keyword name="IsDepthActive" id="simul::crossplatform::BaseFramebuffer::IsDepthActive" ref="classsimul_1_1crossplatform_1_1BaseFramebuffer.html#a60a24235b8f512f3180676527767f7a6" />
       <keyword name="IsValid" id="simul::crossplatform::BaseFramebuffer::IsValid" ref="classsimul_1_1crossplatform_1_1BaseFramebuffer.html#a30d116f71c48f44f42a53e5c17261bc1" />
       <keyword name="RestoreDeviceObjects" id="simul::crossplatform::BaseFramebuffer::RestoreDeviceObjects" ref="classsimul_1_1crossplatform_1_1BaseFramebuffer.html#a6d10e73fc1551ece32cb6fde9d084bd1" />
-      <keyword name="SetAsCubemap" id="simul::crossplatform::BaseFramebuffer::SetAsCubemap" ref="classsimul_1_1crossplatform_1_1BaseFramebuffer.html#ac4b82e10c25fc6ee65d1ceb9b29e3014" />
+      <keyword name="SetAsCubemap" id="simul::crossplatform::BaseFramebuffer::SetAsCubemap" ref="classsimul_1_1crossplatform_1_1BaseFramebuffer.html#adf0885f82d523fb3d355f50bb8895114" />
       <keyword name="SetDepthFormat" id="simul::crossplatform::BaseFramebuffer::SetDepthFormat" ref="classsimul_1_1crossplatform_1_1BaseFramebuffer.html#a871c9bc605cdca779d754f0749c3bf8f" />
       <keyword name="SetFormat" id="simul::crossplatform::BaseFramebuffer::SetFormat" ref="classsimul_1_1crossplatform_1_1BaseFramebuffer.html#a51ddf88a8290809f40fad110e0ca907e" />
       <keyword name="SetUseFastRAM" id="simul::crossplatform::BaseFramebuffer::SetUseFastRAM" ref="classsimul_1_1crossplatform_1_1BaseFramebuffer.html#a3bce2dc4f7428d2e51079756a168c945" />
-      <keyword name="SetWidthAndHeight" id="simul::crossplatform::BaseFramebuffer::SetWidthAndHeight" ref="classsimul_1_1crossplatform_1_1BaseFramebuffer.html#a93b2507c34153ab6aa54bb702993517a" />
+      <keyword name="SetWidthAndHeight" id="simul::crossplatform::BaseFramebuffer::SetWidthAndHeight" ref="classsimul_1_1crossplatform_1_1BaseFramebuffer.html#a1f4e79a3bbbc215c06b8eb7a717b233f" />
       <keyword name="simul::crossplatform::BaseOpticsRenderer" id="simul::crossplatform::BaseOpticsRenderer" ref="classsimul_1_1crossplatform_1_1BaseOpticsRenderer.html" />
       <keyword name="InvalidateDeviceObjects" id="simul::crossplatform::BaseOpticsRenderer::InvalidateDeviceObjects" ref="classsimul_1_1crossplatform_1_1BaseOpticsRenderer.html#a3c8c1dbfa9825ed9f9cd101efe116ee3" />
       <keyword name="RenderFlare" id="simul::crossplatform::BaseOpticsRenderer::RenderFlare" ref="classsimul_1_1crossplatform_1_1BaseOpticsRenderer.html#a2d661b1ea2b524a39efe0ff01fe55fe7" />
@@ -1158,8 +1158,8 @@
       <keyword name="Reapply" id="simul::crossplatform::Effect::Reapply" ref="classsimul_1_1crossplatform_1_1Effect.html#a880190eda9cf00f3fd5ce4e160f09735" />
       <keyword name="SetConstantBuffer" id="simul::crossplatform::Effect::SetConstantBuffer" ref="classsimul_1_1crossplatform_1_1Effect.html#a97882a72e1f3d76a2a8d4976178760bb" />
       <keyword name="SetSamplerState" id="simul::crossplatform::Effect::SetSamplerState" ref="classsimul_1_1crossplatform_1_1Effect.html#a31169b54fa083b3d4fcf04975e51a555" />
-      <keyword name="SetTexture" id="simul::crossplatform::Effect::SetTexture" ref="classsimul_1_1crossplatform_1_1Effect.html#af483d17baa3dc8c52e423dae280689eb" />
-      <keyword name="SetTexture" id="simul::crossplatform::Effect::SetTexture" ref="classsimul_1_1crossplatform_1_1Effect.html#a1bc51995850642813dee1156c772b2db" />
+      <keyword name="SetTexture" id="simul::crossplatform::Effect::SetTexture" ref="classsimul_1_1crossplatform_1_1Effect.html#abb42fabb54261a3b0d1867ded8aaa6a9" />
+      <keyword name="SetTexture" id="simul::crossplatform::Effect::SetTexture" ref="classsimul_1_1crossplatform_1_1Effect.html#a0ac716faf24b141fd07b10416825480e" />
       <keyword name="SetUnorderedAccessView" id="simul::crossplatform::Effect::SetUnorderedAccessView" ref="classsimul_1_1crossplatform_1_1Effect.html#a9c60d50ad54f12fa67088c2052925cd0" />
       <keyword name="SetUnorderedAccessView" id="simul::crossplatform::Effect::SetUnorderedAccessView" ref="classsimul_1_1crossplatform_1_1Effect.html#a468109e044c9239ca0bdcec8e2447be5" />
       <keyword name="Unapply" id="simul::crossplatform::Effect::Unapply" ref="classsimul_1_1crossplatform_1_1Effect.html#a06d5b49a24849556844ccf4342851992" />
@@ -1251,7 +1251,7 @@
       <keyword name="Draw" id="simul::crossplatform::RenderPlatform::Draw" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#a8810284b4ae959616f4d0b260c3b0b01" />
       <keyword name="DrawCircle" id="simul::crossplatform::RenderPlatform::DrawCircle" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#af17c6734037a2873a228b0c49b20d464" />
       <keyword name="DrawCircle" id="simul::crossplatform::RenderPlatform::DrawCircle" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#aefc841befa56b552a0351a2f39ede562" />
-      <keyword name="DrawCubemap" id="simul::crossplatform::RenderPlatform::DrawCubemap" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#a6a2b0c973a03afce34c9ff21b295dfda" />
+      <keyword name="DrawCubemap" id="simul::crossplatform::RenderPlatform::DrawCubemap" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#a3b332a990936ae58c803fe54e8ec8565" />
       <keyword name="DrawIndexed" id="simul::crossplatform::RenderPlatform::DrawIndexed" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#a0395ef4e8c10e5d2943fe56a1ac04481" />
       <keyword name="EndEvent" id="simul::crossplatform::RenderPlatform::EndEvent" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#aa6b6bdcd7342dadad16d57eb44bdfe82" />
       <keyword name="EnsureEffectIsBuilt" id="simul::crossplatform::RenderPlatform::EnsureEffectIsBuilt" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#a02c50321136c7d835fbab0821959701f" />
@@ -1288,11 +1288,11 @@
       <keyword name="SynchronizeCacheAndState" id="simul::crossplatform::RenderPlatform::SynchronizeCacheAndState" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#ae7e1b9f67ee9807cdbfd0e7b737fef09" />
       <keyword name="simul::crossplatform::StructuredBuffer" id="simul::crossplatform::StructuredBuffer" ref="classsimul_1_1crossplatform_1_1StructuredBuffer.html" />
       <keyword name="simul::crossplatform::Texture" id="simul::crossplatform::Texture" ref="classsimul_1_1crossplatform_1_1Texture.html" />
-      <keyword name="activateRenderTarget" id="simul::crossplatform::Texture::activateRenderTarget" ref="classsimul_1_1crossplatform_1_1Texture.html#aa7724f6c0654607a092ef34e8469820b" />
+      <keyword name="activateRenderTarget" id="simul::crossplatform::Texture::activateRenderTarget" ref="classsimul_1_1crossplatform_1_1Texture.html#acfb6f789478d38eadbde095fc23fcec4" />
       <keyword name="deactivateRenderTarget" id="simul::crossplatform::Texture::deactivateRenderTarget" ref="classsimul_1_1crossplatform_1_1Texture.html#af41b0a4d1510cbab224aaebc6187f982" />
       <keyword name="ensureTexture2DSizeAndFormat" id="simul::crossplatform::Texture::ensureTexture2DSizeAndFormat" ref="classsimul_1_1crossplatform_1_1Texture.html#aa633d6b0abcf10992729d261f0d79a80" />
       <keyword name="ensureTexture3DSizeAndFormat" id="simul::crossplatform::Texture::ensureTexture3DSizeAndFormat" ref="classsimul_1_1crossplatform_1_1Texture.html#a50adeb28785744067fa16707b741e59f" />
-      <keyword name="ensureTextureArraySizeAndFormat" id="simul::crossplatform::Texture::ensureTextureArraySizeAndFormat" ref="classsimul_1_1crossplatform_1_1Texture.html#ad6191600ce2f5903ed3dc03d004b0c1b" />
+      <keyword name="ensureTextureArraySizeAndFormat" id="simul::crossplatform::Texture::ensureTextureArraySizeAndFormat" ref="classsimul_1_1crossplatform_1_1Texture.html#a181511a508b7445f7ea22d910a282eff" />
       <keyword name="GenerateMips" id="simul::crossplatform::Texture::GenerateMips" ref="classsimul_1_1crossplatform_1_1Texture.html#a50bcc6c90d50477b6fcc6988be59fbeb" />
       <keyword name="GetFormat" id="simul::crossplatform::Texture::GetFormat" ref="classsimul_1_1crossplatform_1_1Texture.html#a774075429b663c200059edc96f47a1f5" />
       <keyword name="GetSampleCount" id="simul::crossplatform::Texture::GetSampleCount" ref="classsimul_1_1crossplatform_1_1Texture.html#a2691b4defed710d02e7ac25aa93a91f7" />
@@ -1335,11 +1335,11 @@
       <keyword name="IsValid" id="simul::dx11::Framebuffer::IsValid" ref="classsimul_1_1dx11_1_1Framebuffer.html#a30d116f71c48f44f42a53e5c17261bc1" />
       <keyword name="MoveToFastRAM" id="simul::dx11::Framebuffer::MoveToFastRAM" ref="classsimul_1_1dx11_1_1Framebuffer.html#a2bf2f5204bd33505c87ff51901abc7c4" />
       <keyword name="RestoreDeviceObjects" id="simul::dx11::Framebuffer::RestoreDeviceObjects" ref="classsimul_1_1dx11_1_1Framebuffer.html#ad527f3dd4cf081465bdb961f0384e9a8" />
-      <keyword name="SetAsCubemap" id="simul::dx11::Framebuffer::SetAsCubemap" ref="classsimul_1_1dx11_1_1Framebuffer.html#ac4b82e10c25fc6ee65d1ceb9b29e3014" />
+      <keyword name="SetAsCubemap" id="simul::dx11::Framebuffer::SetAsCubemap" ref="classsimul_1_1dx11_1_1Framebuffer.html#adf0885f82d523fb3d355f50bb8895114" />
       <keyword name="SetDepthFormat" id="simul::dx11::Framebuffer::SetDepthFormat" ref="classsimul_1_1dx11_1_1Framebuffer.html#a871c9bc605cdca779d754f0749c3bf8f" />
       <keyword name="SetFormat" id="simul::dx11::Framebuffer::SetFormat" ref="classsimul_1_1dx11_1_1Framebuffer.html#a51ddf88a8290809f40fad110e0ca907e" />
       <keyword name="SetUseFastRAM" id="simul::dx11::Framebuffer::SetUseFastRAM" ref="classsimul_1_1dx11_1_1Framebuffer.html#a66732be5b865c94c8551429427e322a0" />
-      <keyword name="SetWidthAndHeight" id="simul::dx11::Framebuffer::SetWidthAndHeight" ref="classsimul_1_1dx11_1_1Framebuffer.html#a93b2507c34153ab6aa54bb702993517a" />
+      <keyword name="SetWidthAndHeight" id="simul::dx11::Framebuffer::SetWidthAndHeight" ref="classsimul_1_1dx11_1_1Framebuffer.html#a1f4e79a3bbbc215c06b8eb7a717b233f" />
       <keyword name="simul::dx11::RenderPlatform" id="simul::dx11::RenderPlatform" ref="classsimul_1_1dx11_1_1RenderPlatform.html" />
       <keyword name="mirrorY" id="simul::dx11::RenderPlatform::mirrorY" ref="classsimul_1_1dx11_1_1RenderPlatform.html#a3eca374469ab576406ed175b1cc7743c" />
       <keyword name="ActivateRenderTargets" id="simul::dx11::RenderPlatform::ActivateRenderTargets" ref="classsimul_1_1dx11_1_1RenderPlatform.html#a8e40501e4aaffa473cd6ac83a37e38ca" />
@@ -1365,7 +1365,7 @@
       <keyword name="Draw" id="simul::dx11::RenderPlatform::Draw" ref="classsimul_1_1dx11_1_1RenderPlatform.html#a4461b25cb847e8c6d9beeb15e51b49ab" />
       <keyword name="DrawCircle" id="simul::dx11::RenderPlatform::DrawCircle" ref="classsimul_1_1dx11_1_1RenderPlatform.html#a3f801fb549186e98e44eccf2dc7fd84b" />
       <keyword name="DrawCircle" id="simul::dx11::RenderPlatform::DrawCircle" ref="classsimul_1_1dx11_1_1RenderPlatform.html#aefc841befa56b552a0351a2f39ede562" />
-      <keyword name="DrawCubemap" id="simul::dx11::RenderPlatform::DrawCubemap" ref="classsimul_1_1dx11_1_1RenderPlatform.html#ab51c0726a802539e2408513131835fdd" />
+      <keyword name="DrawCubemap" id="simul::dx11::RenderPlatform::DrawCubemap" ref="classsimul_1_1dx11_1_1RenderPlatform.html#a3b332a990936ae58c803fe54e8ec8565" />
       <keyword name="DrawIndexed" id="simul::dx11::RenderPlatform::DrawIndexed" ref="classsimul_1_1dx11_1_1RenderPlatform.html#a248d8fee87ecda59093cb93337071d82" />
       <keyword name="EndEvent" id="simul::dx11::RenderPlatform::EndEvent" ref="classsimul_1_1dx11_1_1RenderPlatform.html#a565d1458b894e6aa4f5c168408becd91" />
       <keyword name="EnsureEffectIsBuilt" id="simul::dx11::RenderPlatform::EnsureEffectIsBuilt" ref="classsimul_1_1dx11_1_1RenderPlatform.html#a02c50321136c7d835fbab0821959701f" />
@@ -1401,6 +1401,7 @@
       <keyword name="StoreRenderState" id="simul::dx11::RenderPlatform::StoreRenderState" ref="classsimul_1_1dx11_1_1RenderPlatform.html#a2ffad4229d772bb6e61d4773960fffbf" />
       <keyword name="SynchronizeCacheAndState" id="simul::dx11::RenderPlatform::SynchronizeCacheAndState" ref="classsimul_1_1dx11_1_1RenderPlatform.html#ae7e1b9f67ee9807cdbfd0e7b737fef09" />
       <keyword name="simul::dx11::TrueSkyRenderer" id="simul::dx11::TrueSkyRenderer" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html" />
+      <keyword name="CopySkylight" id="simul::dx11::TrueSkyRenderer::CopySkylight" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#a3d4e2e2ad6c8c85488f4836a7772e29c" />
       <keyword name="SetAmortization" id="simul::dx11::TrueSkyRenderer::SetAmortization" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#aa63a54f0ccfea9f7e261fdb87589a919" />
       <keyword name="TrueSkyRenderer" id="simul::dx11::TrueSkyRenderer::TrueSkyRenderer" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#acdeb6c00610a3a0f9f8258ba86092c35" />
       <keyword name="GetPaused" id="simul::dx11::TrueSkyRenderer::GetPaused" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#a748538d9c66ccd9c6dd528a9a3fa9b22" />
@@ -1637,8 +1638,8 @@
       <keyword name="Reapply" id="simul::opengl::Effect::Reapply" ref="classsimul_1_1opengl_1_1Effect.html#a0807584ba5af25c68e461062e93d72aa" />
       <keyword name="SetConstantBuffer" id="simul::opengl::Effect::SetConstantBuffer" ref="classsimul_1_1opengl_1_1Effect.html#ad158fabb2956feda807d5578af581402" />
       <keyword name="SetSamplerState" id="simul::opengl::Effect::SetSamplerState" ref="classsimul_1_1opengl_1_1Effect.html#a05444ef4aeafa6ddeb9cf2fc7cd7b2af" />
-      <keyword name="SetTexture" id="simul::opengl::Effect::SetTexture" ref="classsimul_1_1opengl_1_1Effect.html#a4903f6c1ba4283b6b3c67bcf39b8d22a" />
-      <keyword name="SetTexture" id="simul::opengl::Effect::SetTexture" ref="classsimul_1_1opengl_1_1Effect.html#ab48f92838a74ba5aafd650fb87e677ab" />
+      <keyword name="SetTexture" id="simul::opengl::Effect::SetTexture" ref="classsimul_1_1opengl_1_1Effect.html#a01e1141410519cfdce7aa65e2066564a" />
+      <keyword name="SetTexture" id="simul::opengl::Effect::SetTexture" ref="classsimul_1_1opengl_1_1Effect.html#a6d2114320f55a5683e20741e86498312" />
       <keyword name="SetUnorderedAccessView" id="simul::opengl::Effect::SetUnorderedAccessView" ref="classsimul_1_1opengl_1_1Effect.html#aad39cbd79066bb4b29f20422ce6ba16d" />
       <keyword name="SetUnorderedAccessView" id="simul::opengl::Effect::SetUnorderedAccessView" ref="classsimul_1_1opengl_1_1Effect.html#abeeff97fd7ec6830441b9236ccaa2c7f" />
       <keyword name="Unapply" id="simul::opengl::Effect::Unapply" ref="classsimul_1_1opengl_1_1Effect.html#aca818604351d2a3cb9b5df5dd20f0b12" />
@@ -1668,7 +1669,7 @@
       <keyword name="Draw" id="simul::opengl::RenderPlatform::Draw" ref="classsimul_1_1opengl_1_1RenderPlatform.html#af0b94545879468d454dd10b328e8421c" />
       <keyword name="DrawCircle" id="simul::opengl::RenderPlatform::DrawCircle" ref="classsimul_1_1opengl_1_1RenderPlatform.html#a19600362c5000b3a4d384b07c614362d" />
       <keyword name="DrawCircle" id="simul::opengl::RenderPlatform::DrawCircle" ref="classsimul_1_1opengl_1_1RenderPlatform.html#aefc841befa56b552a0351a2f39ede562" />
-      <keyword name="DrawCubemap" id="simul::opengl::RenderPlatform::DrawCubemap" ref="classsimul_1_1opengl_1_1RenderPlatform.html#a6a2b0c973a03afce34c9ff21b295dfda" />
+      <keyword name="DrawCubemap" id="simul::opengl::RenderPlatform::DrawCubemap" ref="classsimul_1_1opengl_1_1RenderPlatform.html#a3b332a990936ae58c803fe54e8ec8565" />
       <keyword name="DrawIndexed" id="simul::opengl::RenderPlatform::DrawIndexed" ref="classsimul_1_1opengl_1_1RenderPlatform.html#a3d4f3cd6be81e98f51742868bd3f082f" />
       <keyword name="EndEvent" id="simul::opengl::RenderPlatform::EndEvent" ref="classsimul_1_1opengl_1_1RenderPlatform.html#aa6b6bdcd7342dadad16d57eb44bdfe82" />
       <keyword name="EnsureEffectIsBuilt" id="simul::opengl::RenderPlatform::EnsureEffectIsBuilt" ref="classsimul_1_1opengl_1_1RenderPlatform.html#ae31210652b369919725f0081a6174d4d" />
@@ -1709,6 +1710,7 @@
       <keyword name="simul::plugin::PluginTrueSkyRenderer" id="simul::plugin::PluginTrueSkyRenderer" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html" />
       <keyword name="CloudLineQuery" id="simul::plugin::PluginTrueSkyRenderer::CloudLineQuery" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a505f746056166e0ac654b0d6fc44687a" />
       <keyword name="CloudSphereInteraction" id="simul::plugin::PluginTrueSkyRenderer::CloudSphereInteraction" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a90f0f27a86e872b0ed2a6be702c3ea38" />
+      <keyword name="CopySkylight" id="simul::plugin::PluginTrueSkyRenderer::CopySkylight" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a3d4e2e2ad6c8c85488f4836a7772e29c" />
       <keyword name="GetBool" id="simul::plugin::PluginTrueSkyRenderer::GetBool" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a1b3a2b29eb22bc0bf0951f681c52992e" />
       <keyword name="GetCloudPointQuery" id="simul::plugin::PluginTrueSkyRenderer::GetCloudPointQuery" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#ad23cfbbef0a61420decd51e0d61f6c12" />
       <keyword name="GetEnvironment" id="simul::plugin::PluginTrueSkyRenderer::GetEnvironment" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a103c072185123e2862504549ead626e7" />
@@ -2443,6 +2445,7 @@
       <file>SimulGLUtilities_8h_source.html</file>
       <file>FbxConverter_8h_source.html</file>
       <file>PluginTrueSkyRenderer_8h_source.html</file>
+      <file>RenderingPlugin_8cpp_source.html</file>
       <file>UE4PluginRenderInterfaceDll_8h_source.html</file>
       <file>UnityPluginInterface_8h_source.html</file>
       <file>0_01Main_8md_source.html</file>

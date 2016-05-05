@@ -63,27 +63,29 @@ url: Simul/Platform/CrossPlatform/TextRenderer.h Source File
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <span class="keywordtype">void</span> RestoreDeviceObjects(crossplatform::RenderPlatform *r);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="keywordtype">void</span> InvalidateDeviceObjects();</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordtype">void</span> RecompileShaders();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keywordtype">void</span> Render(crossplatform::DeviceContext &amp;deviceContext, <span class="keywordtype">float</span> x,<span class="keywordtype">float</span> y,<span class="keywordtype">float</span> screen_width,<span class="keywordtype">float</span> screen_height,<span class="keyword">const</span> <span class="keywordtype">char</span> *txt,<span class="keyword">const</span> <span class="keywordtype">float</span> *clr=NULL,<span class="keyword">const</span> <span class="keywordtype">float</span> *bck=NULL,<span class="keywordtype">bool</span> mirrorY=<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keywordtype">void</span> Render(crossplatform::DeviceContext &amp;deviceContext,<span class="keywordtype">float</span> x,<span class="keywordtype">float</span> y,<span class="keywordtype">float</span> screen_width,<span class="keywordtype">float</span> screen_height,<span class="keyword">const</span> <span class="keywordtype">char</span> *txt,<span class="keyword">const</span> <span class="keywordtype">float</span> *clr=NULL,<span class="keyword">const</span> <span class="keywordtype">float</span> *bck=NULL,<span class="keywordtype">bool</span> mirrorY=<span class="keyword">false</span>);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <span class="keywordtype">void</span> R1(crossplatform::DeviceContext &amp;deviceContext,<span class="keywordtype">float</span> x,<span class="keywordtype">float</span> y,<span class="keywordtype">float</span> screen_width,<span class="keywordtype">float</span> screen_height,<span class="keyword">const</span> <span class="keywordtype">char</span> *txt,<span class="keyword">const</span> <span class="keywordtype">float</span> *clr,<span class="keyword">const</span> <span class="keywordtype">float</span> *bck,<span class="keywordtype">bool</span> mirrorY);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordtype">void</span> Recompile();</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            crossplatform::Effect                       *effect;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            crossplatform::ConstantBuffer&lt;TextConstants&gt;    constantBuffer;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            crossplatform::Texture*         font_texture;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            crossplatform::RenderPlatform *renderPlatform;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keywordtype">bool</span> recompile;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        };</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            crossplatform::EffectTechnique              *backgTech;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            crossplatform::EffectTechnique              *textTech;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            crossplatform::ShaderResource               textureResource;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            crossplatform::ConstantBuffer&lt;TextConstants&gt;    constantBuffer;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            crossplatform::Texture*         font_texture;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            crossplatform::RenderPlatform *renderPlatform;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordtype">bool</span> recompile;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        };</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="namespacesimul_html"><div class="ttname"><a href="namespacesimul.html">simul</a></div><div class="ttdef"><b>Definition:</b> <a href="Base_8h_source.html#l00001">Base.h:1</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Wed May 4 2016 07:46:38</small></address>
+Thu May 5 2016 07:46:32</small></address>
 </body>
 </html>

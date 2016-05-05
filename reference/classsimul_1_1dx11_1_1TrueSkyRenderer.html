@@ -49,6 +49,8 @@ url: simul::dx11::TrueSkyRenderer Class Reference
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a3d4e2e2ad6c8c85488f4836a7772e29c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><b>CopySkylight</b> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *targetTexture, float *targetShValues, int shOrder)</td></tr>
+<tr class="separator:a3d4e2e2ad6c8c85488f4836a7772e29c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa63a54f0ccfea9f7e261fdb87589a919"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa63a54f0ccfea9f7e261fdb87589a919"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAmortization</b> (int view_id, int a)</td></tr>
 <tr class="memdesc:aa63a54f0ccfea9f7e261fdb87589a919"><td class="mdescLeft">&#160;</td><td class="mdescRight">How often to update each cloud texel; 1:always, 2:every 4 frames, n:every n^2 frames. <br /></td></tr>
@@ -1351,6 +1353,53 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAmortization</b> (
 
 </div>
 </div>
+<a class="anchor" id="a3d4e2e2ad6c8c85488f4836a7772e29c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void simul::clouds::TrueSkyRenderer::CopySkylight </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>deviceContext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *&#160;</td>
+          <td class="paramname"><em>targetTexture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>targetShValues</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>shOrder</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Update the specified texture as a cubemap, and its spherical harmonics. Copy the specified skylight into the target texture. This texture MUST be the same size, format and mip count as was specified for this cubemap id when GetSkylight was called. This function has latency depending on the platform. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Simul/Platform/DirectX11/<a class="el" href="Direct3D11Renderer_8h_source.html">Direct3D11Renderer.h</a></li>
 </ul>
@@ -1359,6 +1408,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAmortization</b> (
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Wed May 4 2016 07:46:40</small></address>
+Thu May 5 2016 07:46:34</small></address>
 </body>
 </html>

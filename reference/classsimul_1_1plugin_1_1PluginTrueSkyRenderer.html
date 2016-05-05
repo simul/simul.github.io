@@ -57,6 +57,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a90f0f27a86e872b0ed2a6be702c3ea38">CloudSphereInteraction</a> (int id, const float *pos, const float *vel, float radius)</td></tr>
 <tr class="memdesc:a90f0f27a86e872b0ed2a6be702c3ea38"><td class="mdescLeft">&#160;</td><td class="mdescRight">update a sphere that will push clouds aside. <br /></td></tr>
 <tr class="separator:a90f0f27a86e872b0ed2a6be702c3ea38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d4e2e2ad6c8c85488f4836a7772e29c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><b>CopySkylight</b> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *targetTexture, float *targetShValues, int shOrder)</td></tr>
+<tr class="separator:a3d4e2e2ad6c8c85488f4836a7772e29c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b3a2b29eb22bc0bf0951f681c52992e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b3a2b29eb22bc0bf0951f681c52992e"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a1b3a2b29eb22bc0bf0951f681c52992e">GetBool</a> (const char *name) const </td></tr>
 <tr class="memdesc:a1b3a2b29eb22bc0bf0951f681c52992e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a boolean value. See <a class="el" href="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a78de9b087c6af84d197e08e50e6cb89e">SetBool</a>. <br /></td></tr>
@@ -1515,6 +1517,53 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
+<a class="anchor" id="a3d4e2e2ad6c8c85488f4836a7772e29c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void simul::clouds::TrueSkyRenderer::CopySkylight </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>deviceContext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *&#160;</td>
+          <td class="paramname"><em>targetTexture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>targetShValues</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>shOrder</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Update the specified texture as a cubemap, and its spherical harmonics. Copy the specified skylight into the target texture. This texture MUST be the same size, format and mip count as was specified for this cubemap id when GetSkylight was called. This function has latency depending on the platform. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Simul/PlugIns/UE4/PluginRenderInterface/<a class="el" href="PluginTrueSkyRenderer_8h_source.html">PluginTrueSkyRenderer.h</a></li>
 </ul>
@@ -1523,6 +1572,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Wed May 4 2016 07:46:40</small></address>
+Thu May 5 2016 07:46:34</small></address>
 </body>
 </html>

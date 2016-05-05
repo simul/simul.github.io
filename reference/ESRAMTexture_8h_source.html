@@ -113,10 +113,10 @@ url: Simul/Platform/DirectX11/ESRAMTexture.h Source File
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keyword">virtual</span> ~ESRAMTexture();</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="comment">// </span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keyword">virtual</span> ID3D11Texture2D *AsD3D11Texture2D();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keyword">virtual</span> ID3D11ShaderResourceView *AsD3D11ShaderResourceView();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keyword">virtual</span> ID3D11UnorderedAccessView *AsD3D11UnorderedAccessView(<span class="keywordtype">int</span> mip=0);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keyword">virtual</span> ID3D11ShaderResourceView *AsD3D11ShaderResourceView(<span class="keywordtype">int</span> index=-1,<span class="keywordtype">int</span> mip=-1);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keyword">virtual</span> ID3D11UnorderedAccessView *AsD3D11UnorderedAccessView(<span class="keywordtype">int</span> mip=-1);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keyword">virtual</span> ID3D11DepthStencilView *AsD3D11DepthStencilView();</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keyword">virtual</span> ID3D11RenderTargetView *AsD3D11RenderTargetView();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keyword">virtual</span> ID3D11RenderTargetView *AsD3D11RenderTargetView(<span class="keywordtype">int</span> index=-1,<span class="keywordtype">int</span> mip=-1);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">bool</span> ensureTexture2DSizeAndFormat(crossplatform::RenderPlatform *renderPlatform</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                ,<span class="keywordtype">int</span> w</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                ,<span class="keywordtype">int</span> l</div>
@@ -141,6 +141,6 @@ url: Simul/Platform/DirectX11/ESRAMTexture.h Source File
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Wed May 4 2016 07:46:38</small></address>
+Thu May 5 2016 07:46:32</small></address>
 </body>
 </html>

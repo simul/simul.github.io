@@ -153,8 +153,8 @@ url: Simul/Platform/DirectX11/Effect.h Source File
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="keywordtype">void</span> SetUnorderedAccessView(crossplatform::DeviceContext &amp;deviceContext,crossplatform::ShaderResource &amp;shaderResource,crossplatform::Texture *tex,<span class="keywordtype">int</span> mip=0);</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            </div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            crossplatform::ShaderResource GetShaderResource(<span class="keyword">const</span> <span class="keywordtype">char</span> *name) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="keywordtype">void</span> SetTexture     (crossplatform::DeviceContext &amp;,crossplatform::ShaderResource &amp;shaderResource,crossplatform::Texture *t,<span class="keywordtype">int</span> mip=-1) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keywordtype">void</span> SetTexture     (crossplatform::DeviceContext &amp;deviceContext,<span class="keyword">const</span> <span class="keywordtype">char</span> *name,crossplatform::Texture *tex,<span class="keywordtype">int</span> mip=-1);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="keywordtype">void</span> SetTexture     (crossplatform::DeviceContext &amp;,crossplatform::ShaderResource &amp;shaderResource,crossplatform::Texture *t,<span class="keywordtype">int</span> index=-1,<span class="keywordtype">int</span> mip=-1) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keywordtype">void</span> SetTexture     (crossplatform::DeviceContext &amp;deviceContext,<span class="keyword">const</span> <span class="keywordtype">char</span> *name,crossplatform::Texture *tex,<span class="keywordtype">int</span> index=-1,<span class="keywordtype">int</span> mip=-1) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <span class="keywordtype">void</span> SetSamplerState(crossplatform::DeviceContext&amp;,<span class="keyword">const</span> <span class="keywordtype">char</span> *name ,crossplatform::SamplerState *s);</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <span class="keywordtype">void</span> SetConstantBuffer(crossplatform::DeviceContext &amp;deviceContext,<span class="keyword">const</span> <span class="keywordtype">char</span> *name ,crossplatform::ConstantBufferBase *s);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <span class="keywordtype">void</span> Apply(crossplatform::DeviceContext &amp;deviceContext,crossplatform::EffectTechnique *effectTechnique,<span class="keywordtype">int</span> pass);</div>
@@ -173,6 +173,6 @@ url: Simul/Platform/DirectX11/Effect.h Source File
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Wed May 4 2016 07:46:38</small></address>
+Thu May 5 2016 07:46:32</small></address>
 </body>
 </html>

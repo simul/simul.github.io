@@ -49,10 +49,10 @@ url: simul::crossplatform::Texture Class Reference
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa7724f6c0654607a092ef34e8469820b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa7724f6c0654607a092ef34e8469820b"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1Texture.html#aa7724f6c0654607a092ef34e8469820b">activateRenderTarget</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">DeviceContext</a> &amp;deviceContext, int array_index=-1)=0</td></tr>
-<tr class="memdesc:aa7724f6c0654607a092ef34e8469820b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate as a rendertarget - must call deactivateRenderTarget afterwards. <br /></td></tr>
-<tr class="separator:aa7724f6c0654607a092ef34e8469820b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfb6f789478d38eadbde095fc23fcec4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acfb6f789478d38eadbde095fc23fcec4"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1Texture.html#acfb6f789478d38eadbde095fc23fcec4">activateRenderTarget</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">DeviceContext</a> &amp;deviceContext, int array_index=-1, int mip_index=0)=0</td></tr>
+<tr class="memdesc:acfb6f789478d38eadbde095fc23fcec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate as a rendertarget - must call deactivateRenderTarget afterwards. <br /></td></tr>
+<tr class="separator:acfb6f789478d38eadbde095fc23fcec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af41b0a4d1510cbab224aaebc6187f982"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af41b0a4d1510cbab224aaebc6187f982"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1Texture.html#af41b0a4d1510cbab224aaebc6187f982">deactivateRenderTarget</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">DeviceContext</a> &amp;deviceContext)=0</td></tr>
 <tr class="memdesc:af41b0a4d1510cbab224aaebc6187f982"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deactivate as a rendertarget. <br /></td></tr>
@@ -65,10 +65,10 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1Texture.html#a50adeb28785744067fa16707b741e59f">ensureTexture3DSizeAndFormat</a> (<a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html">RenderPlatform</a> *renderPlatform, int w, int l, int d, <a class="el" href="namespacesimul_1_1crossplatform.html#a29c5057471bee180c1cec3a2ccdd9940">PixelFormat</a> frmt, bool computable=false, int mips=1, bool rendertargets=false)=0</td></tr>
 <tr class="memdesc:a50adeb28785744067fa16707b741e59f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize as a volume texture. <br /></td></tr>
 <tr class="separator:a50adeb28785744067fa16707b741e59f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6191600ce2f5903ed3dc03d004b0c1b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6191600ce2f5903ed3dc03d004b0c1b"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1Texture.html#ad6191600ce2f5903ed3dc03d004b0c1b">ensureTextureArraySizeAndFormat</a> (<a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html">RenderPlatform</a> *renderPlatform, int w, int l, int num, <a class="el" href="namespacesimul_1_1crossplatform.html#a29c5057471bee180c1cec3a2ccdd9940">PixelFormat</a> f, bool computable=false, bool rendertarget=false, bool cubemap=false)=0</td></tr>
-<tr class="memdesc:ad6191600ce2f5903ed3dc03d004b0c1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize as an array texture if necessary. Returns true if the texture was initialized, or false if it was already in the required format. <br /></td></tr>
-<tr class="separator:ad6191600ce2f5903ed3dc03d004b0c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a181511a508b7445f7ea22d910a282eff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a181511a508b7445f7ea22d910a282eff"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1Texture.html#a181511a508b7445f7ea22d910a282eff">ensureTextureArraySizeAndFormat</a> (<a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html">RenderPlatform</a> *renderPlatform, int w, int l, int num, int mips, <a class="el" href="namespacesimul_1_1crossplatform.html#a29c5057471bee180c1cec3a2ccdd9940">PixelFormat</a> f, bool computable=false, bool rendertarget=false, bool cubemap=false)=0</td></tr>
+<tr class="memdesc:a181511a508b7445f7ea22d910a282eff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize as an array texture if necessary. Returns true if the texture was initialized, or false if it was already in the required format. <br /></td></tr>
+<tr class="separator:a181511a508b7445f7ea22d910a282eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50bcc6c90d50477b6fcc6988be59fbeb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a50bcc6c90d50477b6fcc6988be59fbeb"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1Texture.html#a50bcc6c90d50477b6fcc6988be59fbeb">GenerateMips</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">DeviceContext</a> &amp;deviceContext)=0</td></tr>
 <tr class="memdesc:a50bcc6c90d50477b6fcc6988be59fbeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the mipmaps automatically. <br /></td></tr>
@@ -157,6 +157,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Wed May 4 2016 07:46:40</small></address>
+Thu May 5 2016 07:46:33</small></address>
 </body>
 </html>

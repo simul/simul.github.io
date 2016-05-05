@@ -131,10 +131,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1dx11_1_1Framebuffer.html#ad527f3dd4cf081465bdb961f0384e9a8">RestoreDeviceObjects</a> (<a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html">crossplatform::RenderPlatform</a> *r)</td></tr>
 <tr class="memdesc:ad527f3dd4cf081465bdb961f0384e9a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this when the API-dependent device has been created. <br /></td></tr>
 <tr class="separator:ad527f3dd4cf081465bdb961f0384e9a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4b82e10c25fc6ee65d1ceb9b29e3014"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac4b82e10c25fc6ee65d1ceb9b29e3014"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1BaseFramebuffer.html#ac4b82e10c25fc6ee65d1ceb9b29e3014">SetAsCubemap</a> (int face_size)</td></tr>
-<tr class="memdesc:ac4b82e10c25fc6ee65d1ceb9b29e3014"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set this to be a cubemap framebuffer, so that its texture object will be a cubemap. Equivalent to SetWidthAndHeight. <br /></td></tr>
-<tr class="separator:ac4b82e10c25fc6ee65d1ceb9b29e3014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf0885f82d523fb3d355f50bb8895114"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf0885f82d523fb3d355f50bb8895114"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1BaseFramebuffer.html#adf0885f82d523fb3d355f50bb8895114">SetAsCubemap</a> (int face_size, int num_mips=1)</td></tr>
+<tr class="memdesc:adf0885f82d523fb3d355f50bb8895114"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set this to be a cubemap framebuffer, so that its texture object will be a cubemap. Equivalent to SetWidthAndHeight. <br /></td></tr>
+<tr class="separator:adf0885f82d523fb3d355f50bb8895114"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a871c9bc605cdca779d754f0749c3bf8f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a871c9bc605cdca779d754f0749c3bf8f"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1BaseFramebuffer.html#a871c9bc605cdca779d754f0749c3bf8f">SetDepthFormat</a> (PixelFormat)</td></tr>
 <tr class="memdesc:a871c9bc605cdca779d754f0749c3bf8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the API-dependent colour depth format for this framebuffer. Across all API's, setting 0 means no rendering to depth. <br /></td></tr>
@@ -147,10 +147,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1dx11_1_1Framebuffer.html#a66732be5b865c94c8551429427e322a0">SetUseFastRAM</a> (bool colour, bool depth)</td></tr>
 <tr class="memdesc:a66732be5b865c94c8551429427e322a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Some hardware has fast RAM that's good for framebuffers. <br /></td></tr>
 <tr class="separator:a66732be5b865c94c8551429427e322a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93b2507c34153ab6aa54bb702993517a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93b2507c34153ab6aa54bb702993517a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1BaseFramebuffer.html#a93b2507c34153ab6aa54bb702993517a">SetWidthAndHeight</a> (int w, int h)</td></tr>
-<tr class="memdesc:a93b2507c34153ab6aa54bb702993517a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the size of the framebuffer. <br /></td></tr>
-<tr class="separator:a93b2507c34153ab6aa54bb702993517a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f4e79a3bbbc215c06b8eb7a717b233f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1f4e79a3bbbc215c06b8eb7a717b233f"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1BaseFramebuffer.html#a1f4e79a3bbbc215c06b8eb7a717b233f">SetWidthAndHeight</a> (int w, int h, int num_mips=1)</td></tr>
+<tr class="memdesc:a1f4e79a3bbbc215c06b8eb7a717b233f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the size of the framebuffer. <br /></td></tr>
+<tr class="separator:a1f4e79a3bbbc215c06b8eb7a717b233f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A DirectX 11 framebuffer class. </p>
@@ -190,6 +190,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Wed May 4 2016 07:46:40</small></address>
+Thu May 5 2016 07:46:34</small></address>
 </body>
 </html>
