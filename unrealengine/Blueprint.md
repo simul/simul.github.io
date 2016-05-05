@@ -43,7 +43,7 @@ In a material that uses transparency, insert the trueSKYTransparencyModifier fun
 
 Queries
 -------
-To test how much cloud (from 0 to 1) is at a specified point, use the function CloudPointTest.
+To test how much cloud (from 0 to 1) is at a specified point, use the function CloudPointTest. NOTE: The Query Id can be set to any integer value, but should differ from any Query Ids used in different queries.
 
 <a href="CloudPointTest.png"><img src="http://docs.simul.co/unrealengine/images/CloudPointTest.png" alt="Blueprint" /></a>
 
