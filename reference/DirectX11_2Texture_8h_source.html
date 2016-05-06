@@ -152,7 +152,7 @@ url: Simul/Platform/DirectX11/Texture.h Source File
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            ID3D11Resource              *stagingBuffer;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            D3D11_MAPPED_SUBRESOURCE    mapped;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            DXGI_FORMAT                 format;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            DXGI_FORMAT                 dxgi_format;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="keywordtype">void</span> copyToMemory(crossplatform::DeviceContext &amp;deviceContext,<span class="keywordtype">void</span> *target,<span class="keywordtype">int</span> start_texel=0,<span class="keywordtype">int</span> texels=0);</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keywordtype">void</span> setTexels(crossplatform::DeviceContext &amp;deviceContext,<span class="keyword">const</span> <span class="keywordtype">void</span> *src,<span class="keywordtype">int</span> texel_index,<span class="keywordtype">int</span> num_texels);</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <span class="keywordtype">void</span> init(ID3D11Device *pd3dDevice,<span class="keywordtype">int</span> w,<span class="keywordtype">int</span> l,DXGI_FORMAT f);</div>
@@ -212,6 +212,6 @@ url: Simul/Platform/DirectX11/Texture.h Source File
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Thu May 5 2016 07:46:32</small></address>
+Fri May 6 2016 07:46:37</small></address>
 </body>
 </html>

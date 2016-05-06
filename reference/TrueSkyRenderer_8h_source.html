@@ -122,9 +122,9 @@ url: Simul/Clouds/TrueSkyRenderer.h Source File
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordtype">void</span> RenderToOculus(crossplatform::DeviceContext &amp;deviceContext,<span class="keyword">const</span> crossplatform::CameraViewStruct &amp;cameraViewStruct);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordtype">void</span> RenderOverlays(crossplatform::DeviceContext &amp;deviceContext,crossplatform::Texture *texture,<span class="keywordtype">float</span> exposure,<span class="keywordtype">float</span> gamma);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordtype">void</span> ShowSkylights(crossplatform::DeviceContext &amp;deviceContext);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keywordtype">void</span>    RenderCubemap(crossplatform::DeviceContext &amp;parentDeviceContext,crossplatform::BaseFramebuffer *fb,<span class="keyword">const</span> <span class="keywordtype">float</span> *cam_pos,<span class="keywordtype">int</span> faceIndex);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keywordtype">void</span>    RenderCubemap(crossplatform::DeviceContext &amp;parentDeviceContext,crossplatform::BaseFramebuffer *fb,<span class="keyword">const</span> <span class="keywordtype">float</span> *cam_pos,<span class="keywordtype">int</span> faceIndex,<span class="keyword">const</span> mat4 &amp;engineToSimulMatrix4x4);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordtype">void</span>    RenderEnvmap(crossplatform::DeviceContext &amp;deviceContext);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordtype">void</span>    CopySkylight(crossplatform::DeviceContext &amp;deviceContext,crossplatform::Texture *targetTexture,<span class="keywordtype">float</span> *targetShValues,<span class="keywordtype">int</span> shOrder);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordtype">void</span>    CopySkylight(crossplatform::DeviceContext &amp;deviceContext,crossplatform::Texture *targetTexture,<span class="keywordtype">float</span> *targetShValues,<span class="keywordtype">int</span> shOrder,<span class="keyword">const</span> mat4 *engineToSimulMatrix4x4);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordtype">void</span>    ReloadTextures();</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordtype">void</span>    SetToolDir(<span class="keywordtype">int</span> view_id  ,vec3 t,<span class="keywordtype">float</span> press,<span class="keywordtype">float</span> szKm);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordtype">int</span>     AddView         (<span class="keywordtype">bool</span> external_fb);</div>
@@ -248,16 +248,17 @@ url: Simul/Clouds/TrueSkyRenderer.h Source File
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                <span class="keywordtype">int</span> face;</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                <span class="keywordtype">int</span> bands;</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                <span class="keywordtype">int</span> last_update;</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            };</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            std::map&lt;int,Skylight *&gt; skylights;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            std::map&lt;int,int &gt; skylightFaces;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        };</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <span class="keyword">extern</span> SIMUL_CLOUDS_EXPORT <span class="keywordtype">void</span> ExportCloudLayer(simul::scene::BaseSceneRenderer *sceneRenderer,simul::scene::Provider *p,clouds::BaseWeatherRenderer *weatherRenderer,crossplatform::RenderPlatform *renderPlatform,<span class="keyword">const</span> <span class="keywordtype">char</span> *filenameUtf8);</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    }</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;}</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="preprocessor">#pragma warning(pop)</span></div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                mat4 engineToSimulMatrix4x4;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            };</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            std::map&lt;int,Skylight *&gt; skylights;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            std::map&lt;int,int &gt; skylightFaces;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        };</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="keyword">extern</span> SIMUL_CLOUDS_EXPORT <span class="keywordtype">void</span> ExportCloudLayer(simul::scene::BaseSceneRenderer *sceneRenderer,simul::scene::Provider *p,clouds::BaseWeatherRenderer *weatherRenderer,crossplatform::RenderPlatform *renderPlatform,<span class="keyword">const</span> <span class="keywordtype">char</span> *filenameUtf8);</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    }</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;}</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="preprocessor">#pragma warning(pop)</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="classsimul_1_1crossplatform_1_1Texture_html"><div class="ttname"><a href="classsimul_1_1crossplatform_1_1Texture.html">simul::crossplatform::Texture</a></div><div class="ttdoc">A Texture base class. </div><div class="ttdef"><b>Definition:</b> <a href="CrossPlatform_2Texture_8h_source.html#l00075">Texture.h:75</a></div></div>
 <div class="ttc" id="classsimul_1_1base_1_1MemoryInterface_html"><div class="ttname"><a href="classsimul_1_1base_1_1MemoryInterface.html">simul::base::MemoryInterface</a></div><div class="ttdoc">A virtual interface class for classes that can allocate and de-allocate memory. </div><div class="ttdef"><b>Definition:</b> <a href="MemoryInterface_8h_source.html#l00045">MemoryInterface.h:45</a></div></div>
 <div class="ttc" id="structsimul_1_1crossplatform_1_1DeviceContext_html"><div class="ttname"><a href="structsimul_1_1crossplatform_1_1DeviceContext.html">simul::crossplatform::DeviceContext</a></div><div class="ttdef"><b>Definition:</b> <a href="DeviceContext_8h_source.html#l00022">DeviceContext.h:22</a></div></div>
@@ -271,6 +272,6 @@ url: Simul/Clouds/TrueSkyRenderer.h Source File
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Thu May 5 2016 07:46:32</small></address>
+Fri May 6 2016 07:46:37</small></address>
 </body>
 </html>
