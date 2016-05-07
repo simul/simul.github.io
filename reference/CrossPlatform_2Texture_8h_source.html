@@ -123,7 +123,7 @@ url: Simul/Platform/CrossPlatform/Texture.h Source File
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> LoadTextureArray(<a class="code" href="classsimul_1_1crossplatform_1_1RenderPlatform.html">RenderPlatform</a> *r,<span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;texture_files)=0;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">bool</span> IsValid() <span class="keyword">const</span>=0;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> InvalidateDeviceObjects()=0;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keyword">virtual</span> sce::Gnm::Texture *AsGnmTexture(<span class="keywordtype">int</span>=-1){<span class="keywordflow">return</span> 0;}</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keyword">virtual</span> sce::Gnm::Texture *AsGnmTexture(<span class="keywordtype">int</span>=-1,<span class="keywordtype">int</span>=-1){<span class="keywordflow">return</span> 0;}</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keyword">virtual</span> ID3D11Texture2D *AsD3D11Texture2D(){<span class="keywordflow">return</span> 0;}</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keyword">virtual</span> ID3D11ShaderResourceView *AsD3D11ShaderResourceView(<span class="keywordtype">int</span>=-1,<span class="keywordtype">int</span>=-1){<span class="keywordflow">return</span> 0;}</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keyword">virtual</span> ID3D11UnorderedAccessView *AsD3D11UnorderedAccessView(<span class="keywordtype">int</span>=-1){<span class="keywordflow">return</span> 0;}</div>
@@ -200,6 +200,6 @@ url: Simul/Platform/CrossPlatform/Texture.h Source File
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Fri May 6 2016 07:46:37</small></address>
+Sat May 7 2016 07:46:38</small></address>
 </body>
 </html>
