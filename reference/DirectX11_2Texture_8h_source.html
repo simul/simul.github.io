@@ -87,7 +87,7 @@ url: Simul/Platform/DirectX11/Texture.h Source File
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                    <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                }</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                <span class="keywordflow">if</span>(mips&lt;=1&amp;&amp;arraySize&lt;=1)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                <span class="keywordflow">if</span>(mips&lt;=1&amp;&amp;arraySize&lt;=1||(index&lt;0&amp;&amp;mip&lt;0))</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                {</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                    <span class="keywordflow">return</span> mainShaderResourceView;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                }</div>
@@ -187,13 +187,13 @@ url: Simul/Platform/DirectX11/Texture.h Source File
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            ID3D11RenderTargetView*     m_pOldRenderTargets[16];</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            ID3D11DepthStencilView*     m_pOldDepthSurface;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            ID3D11Resource*             texture;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            ID3D11ShaderResourceView*   mainShaderResourceView;     <span class="comment">// SRV for the whole texture including all layers and mips. </span></div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            ID3D11ShaderResourceView**  layerShaderResourceViews;   <span class="comment">// SRV&#39;s for each layer, including all mips</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            ID3D11ShaderResourceView**  mainMipShaderResourceViews; <span class="comment">// SRV&#39;s for the whole texture at different mips.</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            ID3D11ShaderResourceView*** layerMipShaderResourceViews;<span class="comment">// SRV&#39;s for each layer at different mips.</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            ID3D11ShaderResourceView*   mainShaderResourceView;         <span class="comment">// SRV for the whole texture including all layers and mips. </span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            ID3D11ShaderResourceView**  layerShaderResourceViews;       <span class="comment">// SRV&#39;s for each layer, including all mips</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            ID3D11ShaderResourceView**  mainMipShaderResourceViews;     <span class="comment">// SRV&#39;s for the whole texture at different mips.</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            ID3D11ShaderResourceView*** layerMipShaderResourceViews;    <span class="comment">// SRV&#39;s for each layer at different mips.</span></div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            ID3D11UnorderedAccessView**  unorderedAccessViews;</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            ID3D11DepthStencilView*     depthStencilView;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            ID3D11RenderTargetView***   renderTargetViews;          <span class="comment">// 2D table: layers and mips.</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            ID3D11RenderTargetView***   renderTargetViews;              <span class="comment">// 2D table: layers and mips.</span></div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            D3D11_VIEWPORT              m_OldViewports[16];</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <span class="keywordtype">unsigned</span>                    num_OldViewports;</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            <span class="keywordtype">void</span> InitSRVTables(<span class="keywordtype">int</span> l,<span class="keywordtype">int</span> m);</div>
@@ -212,6 +212,6 @@ url: Simul/Platform/DirectX11/Texture.h Source File
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Sat May 7 2016 07:46:38</small></address>
+Sun May 8 2016 07:46:43</small></address>
 </body>
 </html>
