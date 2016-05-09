@@ -10,9 +10,9 @@ trueSKY alpha for Unity
 Getting started
 --------------
 
-Because the current version works only with DirectX 11, you will need to switch your project to DirectX 11 mode to see the rendered output. Do this using Edit:Project Settings:Player. In the Inspector, under "Settings for PC, Mac and Linux Standalone", in "Other Settings", chose "Use Direct3D 11*".
+Because the current version works only with DirectX 11, you will need to switch your project to DirectX 11 mode to see the rendered output. Do this using Edit:Project Settings:Player. In the Inspector, under "Settings for PC, Mac and Linux Standalone", in "Other Settings", chose "Use Direct3D 11*". Additionally, if you are using the PopcornFX plugin, you will need to set native rendering to "Before Image Effect" for it to work alongside trueSKY.
 
-To activating trueSKY alpha, got to the GameObject menu, and select "*initialize trueSKY in scene*". This launches a dialogue - usually the default options will be fine. At the last step, this dialog will create:
+To activate trueSKY alpha, go to the GameObject menu, and select "*initialize trueSKY in scene*". This launches a dialogue - usually the default options will be fine. At the last step, this dialog will create:
 
 * A Sequence asset containing sky and cloud data.
 * A trueSKY object in the scene.
