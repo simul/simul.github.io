@@ -454,7 +454,7 @@
       <keyword name="RecompileShaders" id="simul::clouds::BaseWeatherRenderer::RecompileShaders" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a0914c993553eee26703d62b8d04c745d" />
       <keyword name="RemoveView" id="simul::clouds::BaseWeatherRenderer::RemoveView" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a7170fc074f1733f44941a2ec26314141" />
       <keyword name="Render" id="simul::clouds::BaseWeatherRenderer::Render" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a130259c62a9fb2ea74e1cec7170985c4" />
-      <keyword name="RenderCelestialBackground" id="simul::clouds::BaseWeatherRenderer::RenderCelestialBackground" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a5680cd0fc2ca00886af03dd1081e58d6" />
+      <keyword name="RenderCelestialBackground" id="simul::clouds::BaseWeatherRenderer::RenderCelestialBackground" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a9429a8aa0531ceb7ed1fcd0b2c55d71e" />
       <keyword name="RenderMixedResolution" id="simul::clouds::BaseWeatherRenderer::RenderMixedResolution" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a9711dc6925ead27e1b6a3ca226073f06" />
       <keyword name="RenderOverlays" id="simul::clouds::BaseWeatherRenderer::RenderOverlays" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ad3bb208131941ffec282235785ea9028" />
       <keyword name="RestoreDeviceObjects" id="simul::clouds::BaseWeatherRenderer::RestoreDeviceObjects" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a72de865052f574a909e0700a7fb5d303" />
@@ -1985,7 +1985,7 @@
       <keyword name="RecompileShaders" id="simul::sky::BaseSkyRenderer::RecompileShaders" ref="classsimul_1_1sky_1_1BaseSkyRenderer.html#ab55e4ba60e7bd2af46429fb4c094f06b" />
       <keyword name="referenceCount" id="simul::sky::BaseSkyRenderer::referenceCount" ref="classsimul_1_1sky_1_1BaseSkyRenderer.html#ad26fe1c55ab6384e001173f57d863072" />
       <keyword name="ReloadTextures" id="simul::sky::BaseSkyRenderer::ReloadTextures" ref="classsimul_1_1sky_1_1BaseSkyRenderer.html#a0ae179bcc0ad404524036622ddfad810" />
-      <keyword name="Render2DFades" id="simul::sky::BaseSkyRenderer::Render2DFades" ref="classsimul_1_1sky_1_1BaseSkyRenderer.html#a1ad111b296a3ee3902d49abb93ca883a" />
+      <keyword name="Render2DFades" id="simul::sky::BaseSkyRenderer::Render2DFades" ref="classsimul_1_1sky_1_1BaseSkyRenderer.html#a8b8b5d9cf97423d052020935a50848c6" />
       <keyword name="RenderCelestialDisplay" id="simul::sky::BaseSkyRenderer::RenderCelestialDisplay" ref="classsimul_1_1sky_1_1BaseSkyRenderer.html#a843e2fe6738aa970f6dff68020f7f711" />
       <keyword name="RenderFades" id="simul::sky::BaseSkyRenderer::RenderFades" ref="classsimul_1_1sky_1_1BaseSkyRenderer.html#ad4340f78ac4c9a23bca71a8812d77ee3" />
       <keyword name="RenderIlluminationBuffer" id="simul::sky::BaseSkyRenderer::RenderIlluminationBuffer" ref="classsimul_1_1sky_1_1BaseSkyRenderer.html#a7a11ceeb09192bd9eba4cd9ae36f1820" />
@@ -2490,6 +2490,7 @@
       <file>SkyKeyframerLinked.png</file>
       <file>man_3_environment_ooo2_cloud_keyframer.html</file>
       <file>man_4_rendering.html</file>
+      <file>MilkyWay.png</file>
       <file>rain.jpg</file>
       <file>Lightning-RainStreaks.jpg</file>
       <file>man_4_rendering_ooo6_shaders.html</file>

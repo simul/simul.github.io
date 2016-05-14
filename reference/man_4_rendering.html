@@ -64,6 +64,13 @@ url: 4 Rendering the Environment
 </table>
 <h2>Cosmic Background </h2>
 <p>The cosmic background texture is drawn first, at an orientation that corresponds to the plane of the Milky Way galaxy - see <a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a028832b8b1bb2d2d314000aa6c8763ab">BackgroundBrightness</a>.</p>
+<p>It uses a plate-carree projection, aligned with the galactic horizon. Given the vector "view", which is the direction in galactic co-ordinates, the calculation is: </p><pre class="fragment">float az       =atan2(view.y,-view.x);
+vec2 texcoord  =vec2((ang/(pi*2.0)),0.5-asin(view.z)/pi);
+</pre><p>i.e. the x coordinate is proportional to the azimuth, and the y coordinate is proportional to the elevation</p>
+<div class="image">
+<img src="MilkyWay.png" alt="MilkyWay.png"/>
+</div>
+<p> You may see some stretching at the top and bottom of the image due to degeneracy of the projection, so it is preferable to have the texture fade to black at the top and bottom edges.</p>
 <h2>Stars </h2>
 <p>Stars are drawn as points, and spun around the axis of the Earth's rotation, in the same direction as the sun. Stars are usually drawn to the highest-resolution buffer (i.e. the frame buffer or final buffer). See <a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#aca72f191a74c77fd8482695b3b129b06">StarBrightness</a> and <a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#aee0d91276a44a95e5f4e5182e1f4e135">MaxStarMagnitude</a>.</p>
 <h2>The Sun </h2>
@@ -99,6 +106,6 @@ url: 4 Rendering the Environment
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Fri May 13 2016 07:46:32</small></address>
+Sat May 14 2016 07:46:40</small></address>
 </body>
 </html>
