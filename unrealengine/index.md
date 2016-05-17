@@ -77,6 +77,8 @@ This actor provides a reference to a sequence asset which is rendered. Choose th
 
 * It may be that the default UE4 sky obscures the trueSKY image. Remove the Atmospheric Fog and Sky Sphere objects from your scene.
 
+* For optimal performance, you can replace the default Skylight with the custom True Sky Light (found in Modes -> All Classes). Simply drag it into the scene to use. 
+
 
 Modified Files in the Unreal Engine
 ===================================

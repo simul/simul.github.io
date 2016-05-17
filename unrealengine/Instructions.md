@@ -36,6 +36,8 @@ This actor provides a reference to a sequence asset which is rendered. Choose th
 
 * It may be that the default UE4 sky obscures the trueSKY image. Remove the Atmospheric Fog and Sky Sphere objects from your scene.
 
+* For optimal performance, you can replace the default Skylight with the custom True Sky Light (found in Modes -> All Classes). Simply drag it into the scene to use. 
+
 Multiple Sequence Actors and Transitions
 ---
 You can have any number of trueSKY Sequence Actors in your level, all with different Sequence Assets assigned. In the Editor, check the Actor's property "Active in Editor" to see its weather state in the 3D view. In-game, the active Actor is determined by bounds. By default, a Sequence Actor is unbounded - it is always active. You can create bounding by adding a Box Collision component to the Actor.
