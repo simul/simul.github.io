@@ -59,7 +59,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:ad2716309ddc9f8d18116b7ebb604e75b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa894143b64287878d33dfaf536b85e49"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa894143b64287878d33dfaf536b85e49"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1DefaultProfiler.html#aa894143b64287878d33dfaf536b85e49">EndFrame</a> ()</td></tr>
-<tr class="memdesc:aa894143b64287878d33dfaf536b85e49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this at the end of the frame to prepare the data to be read. <br /></td></tr>
+<tr class="memdesc:aa894143b64287878d33dfaf536b85e49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this at the start of the frame to set-up the profiler for data-gathering. <br /></td></tr>
 <tr class="separator:aa894143b64287878d33dfaf536b85e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc6765fbbd54354e60131dadf0272b5d"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1BaseProfilingInterface.html#afc6765fbbd54354e60131dadf0272b5d">GetDebugText</a> (TextStyle st=PLAINTEXT) const </td></tr>
 <tr class="separator:afc6765fbbd54354e60131dadf0272b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -73,10 +73,10 @@ virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1BaseProfilingInterface.html#a61f26aa1c78d306c372160bc68c15dd9">SetMaxLevel</a> (int m)</td></tr>
 <tr class="memdesc:a61f26aa1c78d306c372160bc68c15dd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this to set the maximum level of the profiling tree. <br /></td></tr>
 <tr class="separator:a61f26aa1c78d306c372160bc68c15dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e6423802e1483e079bc5d8ec0a698d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e6423802e1483e079bc5d8ec0a698d6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1DefaultProfiler.html#a0e6423802e1483e079bc5d8ec0a698d6">StartFrame</a> ()</td></tr>
-<tr class="memdesc:a0e6423802e1483e079bc5d8ec0a698d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this at the start of the frame to set-up the profiler for data-gathering. <br /></td></tr>
-<tr class="separator:a0e6423802e1483e079bc5d8ec0a698d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bbaa03f95852a72bf27ec7e4a379a76"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5bbaa03f95852a72bf27ec7e4a379a76"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1BaseProfilingInterface.html#a5bbaa03f95852a72bf27ec7e4a379a76">StartFrame</a> ()</td></tr>
+<tr class="memdesc:a5bbaa03f95852a72bf27ec7e4a379a76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this at the start of the frame to reset values. <br /></td></tr>
+<tr class="separator:a5bbaa03f95852a72bf27ec7e4a379a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A simple profiler using <a class="el" href="classsimul_1_1base_1_1Timer.html" title="A microsecond timer. Provides timing to microsecond accuracy; results are reported in milliseconds...">simul::base::Timer</a>. </p>
@@ -92,7 +92,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   const char *text=cpuProfiler.GetDebugText(false);
 </pre><p>and print this text to screen. </p>
 
-<p>Definition at line <a class="el" href="ProfilingInterface_8h_source.html#l00173">173</a> of file <a class="el" href="ProfilingInterface_8h_source.html">ProfilingInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="ProfilingInterface_8h_source.html#l00181">181</a> of file <a class="el" href="ProfilingInterface_8h_source.html">ProfilingInterface.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a1804d42a2084c495cbea377046cd53d4"></a>
 <div class="memitem">
@@ -171,6 +171,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Fri May 20 2016 07:46:30</small></address>
+Sat May 21 2016 07:46:34</small></address>
 </body>
 </html>

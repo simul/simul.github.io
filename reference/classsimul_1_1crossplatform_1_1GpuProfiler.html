@@ -50,26 +50,26 @@ Public Member Functions</h2></td></tr>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1GpuProfiler.html#ab4b284991ebe14538245e18a87c8359d">Begin</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, const char *) override</td></tr>
 <tr class="memdesc:ab4b284991ebe14538245e18a87c8359d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the start of a render profiling block. Some API's require a context pointer. <br /></td></tr>
 <tr class="separator:ab4b284991ebe14538245e18a87c8359d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae077cf78b1c32b069c9de1085112fbfc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae077cf78b1c32b069c9de1085112fbfc"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1GpuProfiler.html#ae077cf78b1c32b069c9de1085112fbfc">End</a> () override</td></tr>
-<tr class="memdesc:ae077cf78b1c32b069c9de1085112fbfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the end of the current render profiling block. <br /></td></tr>
-<tr class="separator:ae077cf78b1c32b069c9de1085112fbfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0737e473f38a436f8b93355eac9abd5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae0737e473f38a436f8b93355eac9abd5"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1GpuProfiler.html#ae0737e473f38a436f8b93355eac9abd5">End</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext) override</td></tr>
+<tr class="memdesc:ae0737e473f38a436f8b93355eac9abd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the end of the current render profiling block. <br /></td></tr>
+<tr class="separator:ae0737e473f38a436f8b93355eac9abd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54521531b088e195134d37a6c26f6b24"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1GpuProfiler.html#a54521531b088e195134d37a6c26f6b24">EndFrame</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext) override</td></tr>
 <tr class="separator:a54521531b088e195134d37a6c26f6b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad1b044f98c3939e5b45d1844048ef9e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aad1b044f98c3939e5b45d1844048ef9e"></a>
 virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1GpuProfiler.html#aad1b044f98c3939e5b45d1844048ef9e">GetDebugText</a> (simul::base::TextStyle st=simul::base::PLAINTEXT) const  override</td></tr>
 <tr class="memdesc:aad1b044f98c3939e5b45d1844048ef9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the timing text per-frame. <br /></td></tr>
 <tr class="separator:aad1b044f98c3939e5b45d1844048ef9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc728bf189c6565ef722e05db77dd583"><td class="memItemLeft" align="right" valign="top">const base::ProfileData *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1GpuProfiler.html#abc728bf189c6565ef722e05db77dd583">GetEvent</a> (const base::ProfileData *parent, int i) const </td></tr>
-<tr class="separator:abc728bf189c6565ef722e05db77dd583"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ef29184e3f7da63df660c424af27df7"><td class="memItemLeft" align="right" valign="top">const base::ProfileData *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1GpuProfiler.html#a8ef29184e3f7da63df660c424af27df7">GetEvent</a> (const base::ProfileData *parent, int i) const  override</td></tr>
+<tr class="separator:a8ef29184e3f7da63df660c424af27df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38c7a8173f246603e7a70926ed56ba2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38c7a8173f246603e7a70926ed56ba2d"></a>
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1BaseProfilingInterface.html#a38c7a8173f246603e7a70926ed56ba2d">GetMaxLevel</a> () const </td></tr>
 <tr class="memdesc:a38c7a8173f246603e7a70926ed56ba2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this to get the maximum level of the profiling tree. <br /></td></tr>
 <tr class="separator:a38c7a8173f246603e7a70926ed56ba2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79e5170d614c5d7a4fabf2dd37833cfe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a79e5170d614c5d7a4fabf2dd37833cfe"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1GpuProfiler.html#a79e5170d614c5d7a4fabf2dd37833cfe">InvalidateDeviceObjects</a> ()</td></tr>
-<tr class="memdesc:a79e5170d614c5d7a4fabf2dd37833cfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this when the profiler is to be shut-down, or the device pointer has been lost or changed. <br /></td></tr>
-<tr class="separator:a79e5170d614c5d7a4fabf2dd37833cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3622cb0d1fb7a891038243930e687e3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab3622cb0d1fb7a891038243930e687e3"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1GpuProfiler.html#ab3622cb0d1fb7a891038243930e687e3">InvalidateDeviceObjects</a> () override</td></tr>
+<tr class="memdesc:ab3622cb0d1fb7a891038243930e687e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this when the profiler is to be shut-down, or the device pointer has been lost or changed. <br /></td></tr>
+<tr class="separator:ab3622cb0d1fb7a891038243930e687e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e30350670fe7130d8c52a6b15ee3fad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e30350670fe7130d8c52a6b15ee3fad"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1GpuProfiler.html#a5e30350670fe7130d8c52a6b15ee3fad">RestoreDeviceObjects</a> (<a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html">crossplatform::RenderPlatform</a> *r)</td></tr>
 <tr class="memdesc:a5e30350670fe7130d8c52a6b15ee3fad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this when the profiler is to be initialized with a device pointer - must be done before use. <br /></td></tr>
@@ -82,6 +82,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1GpuProfiler.html#a767f045e81b44530485901e668c1e1b7">StartFrame</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext) override</td></tr>
 <tr class="memdesc:a767f045e81b44530485901e668c1e1b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this before any timeable events in a frame. <br /></td></tr>
 <tr class="separator:a767f045e81b44530485901e668c1e1b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bbaa03f95852a72bf27ec7e4a379a76"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5bbaa03f95852a72bf27ec7e4a379a76"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1BaseProfilingInterface.html#a5bbaa03f95852a72bf27ec7e4a379a76">StartFrame</a> ()</td></tr>
+<tr class="memdesc:a5bbaa03f95852a72bf27ec7e4a379a76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this at the start of the frame to reset values. <br /></td></tr>
+<tr class="separator:a5bbaa03f95852a72bf27ec7e4a379a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The Simul GPU profiler. Usage is as follows:</p>
@@ -93,7 +97,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
  SIMUL_COMBINED_PROFILE_END(deviceContext)
 </pre><p>At frame-end: </p><pre class="fragment">  SIMUL_COMBINED_PROFILE_END(deviceContext)
 </pre><p>To obtain the profiling results - pass true if you want HTML output: </p><pre class="fragment">  const char *text=simul::dx11::Profiler::GetGlobalProfiler().GetDebugText(as_html);</pre> 
-<p>Definition at line <a class="el" href="GpuProfiler_8h_source.html#l00076">76</a> of file <a class="el" href="GpuProfiler_8h_source.html">GpuProfiler.h</a>.</p>
+<p>Definition at line <a class="el" href="GpuProfiler_8h_source.html#l00077">77</a> of file <a class="el" href="GpuProfiler_8h_source.html">GpuProfiler.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a54521531b088e195134d37a6c26f6b24"></a>
 <div class="memitem">
@@ -116,13 +120,13 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Call this after all timeable events in a frame have completed. It is acceptable to call <a class="el" href="classsimul_1_1crossplatform_1_1GpuProfiler.html#a54521531b088e195134d37a6c26f6b24">EndFrame()</a> without having first called <a class="el" href="classsimul_1_1crossplatform_1_1GpuProfiler.html#a767f045e81b44530485901e668c1e1b7" title="Call this before any timeable events in a frame. ">StartFrame()</a> - this has no effect. </p>
+<p>Call this after all timeable events in a frame have completed. It is acceptable to call <a class="el" href="classsimul_1_1crossplatform_1_1GpuProfiler.html#a54521531b088e195134d37a6c26f6b24">EndFrame()</a> without having first called <a class="el" href="classsimul_1_1base_1_1BaseProfilingInterface.html#a5bbaa03f95852a72bf27ec7e4a379a76" title="Call this at the start of the frame to reset values. ">StartFrame()</a> - this has no effect. </p>
 
 <p>Implements <a class="el" href="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#aee42b1dcf15230f3fe3a4dd8d748747e">simul::crossplatform::GpuProfilingInterface</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="abc728bf189c6565ef722e05db77dd583"></a>
+<a class="anchor" id="a8ef29184e3f7da63df660c424af27df7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -149,7 +153,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -167,6 +171,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Fri May 20 2016 07:46:30</small></address>
+Sat May 21 2016 07:46:35</small></address>
 </body>
 </html>

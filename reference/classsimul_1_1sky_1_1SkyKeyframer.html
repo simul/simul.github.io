@@ -68,10 +68,10 @@ std::vector&lt; <a class="el" href="structsimul_1_1sky_1_1BaseKeyframe.html">Bas
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a78f99027a4e4750f17eb92b4e16661ee">GetAltitudeTexCoord</a> (float h_km) const </td></tr>
 <tr class="memdesc:a78f99027a4e4750f17eb92b4e16661ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the texture coordinate for the given altitude - constant per-frame. <br /></td></tr>
 <tr class="separator:a78f99027a4e4750f17eb92b4e16661ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74e91310bb892498a3350a905256864a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74e91310bb892498a3350a905256864a"></a>
-virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a74e91310bb892498a3350a905256864a">GetAmbientLight</a> (float altitude_km) const </td></tr>
-<tr class="memdesc:a74e91310bb892498a3350a905256864a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ambient light irradiance at the specified altitude. <br /></td></tr>
-<tr class="separator:a74e91310bb892498a3350a905256864a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8ab5609e2ba2f1152a124cab5ece366"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8ab5609e2ba2f1152a124cab5ece366"></a>
+virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#ab8ab5609e2ba2f1152a124cab5ece366">GetAmbientLight</a> (float altitude_km) const  override</td></tr>
+<tr class="memdesc:ab8ab5609e2ba2f1152a124cab5ece366"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ambient light irradiance at the specified altitude. <br /></td></tr>
+<tr class="separator:ab8ab5609e2ba2f1152a124cab5ece366"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cb5ae7caa7e1ce9d5f3fcd05c38600a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7cb5ae7caa7e1ce9d5f3fcd05c38600a"></a>
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseKeyframer.html#a7cb5ae7caa7e1ce9d5f3fcd05c38600a">GetCurrentSubdivision</a> () const </td></tr>
 <tr class="memdesc:a7cb5ae7caa7e1ce9d5f3fcd05c38600a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index of the current keyframe. <br /></td></tr>
@@ -84,30 +84,30 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a4f25797ff4029046f2c2dde3a3112cea">GetDefaultInt</a> (const char *name) const  override</td></tr>
 <tr class="memdesc:a4f25797ff4029046f2c2dde3a3112cea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the default int value with the given, case-insensitive, name. <br /></td></tr>
 <tr class="separator:a4f25797ff4029046f2c2dde3a3112cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab426a227179145c8f0bc2769dfed44fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab426a227179145c8f0bc2769dfed44fd"></a>
-virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#ab426a227179145c8f0bc2769dfed44fd">GetDirectionToLight</a> (float alt_km) const </td></tr>
-<tr class="memdesc:ab426a227179145c8f0bc2769dfed44fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the direction to the current strongest light source - could be the sun or the moon. <br /></td></tr>
-<tr class="separator:ab426a227179145c8f0bc2769dfed44fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac24540678cc69c333639e8af1babc264"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac24540678cc69c333639e8af1babc264"></a>
-virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#ac24540678cc69c333639e8af1babc264">GetDirectionToLight</a> (double time, float alt_km) const </td></tr>
-<tr class="memdesc:ac24540678cc69c333639e8af1babc264"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the direction to the current strongest light source - could be the sun or the moon. <br /></td></tr>
-<tr class="separator:ac24540678cc69c333639e8af1babc264"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa538a6ad83e1bfe376eb18f9a5a1cba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa538a6ad83e1bfe376eb18f9a5a1cba"></a>
-virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#aaa538a6ad83e1bfe376eb18f9a5a1cba">GetDirectionToMoon</a> () const </td></tr>
-<tr class="memdesc:aaa538a6ad83e1bfe376eb18f9a5a1cba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current direction to the Moon. <br /></td></tr>
-<tr class="separator:aaa538a6ad83e1bfe376eb18f9a5a1cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d8c9db669086b5a4857793af9cd1101"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d8c9db669086b5a4857793af9cd1101"></a>
-virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a3d8c9db669086b5a4857793af9cd1101">GetDirectionToMoon</a> (double time) const </td></tr>
-<tr class="memdesc:a3d8c9db669086b5a4857793af9cd1101"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the direction to the Moon at the given time. <br /></td></tr>
-<tr class="separator:a3d8c9db669086b5a4857793af9cd1101"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab45f97a309bbaef405075c70e94ca059"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab45f97a309bbaef405075c70e94ca059"></a>
-virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#ab45f97a309bbaef405075c70e94ca059">GetDirectionToSun</a> () const </td></tr>
-<tr class="memdesc:ab45f97a309bbaef405075c70e94ca059"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current direction to the sun. <br /></td></tr>
-<tr class="separator:ab45f97a309bbaef405075c70e94ca059"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fb0bcb00d19a3a5fe9607f60e34c64a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9fb0bcb00d19a3a5fe9607f60e34c64a"></a>
-virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a9fb0bcb00d19a3a5fe9607f60e34c64a">GetDirectionToSun</a> (double time) const </td></tr>
-<tr class="memdesc:a9fb0bcb00d19a3a5fe9607f60e34c64a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the direction to the Sun at the given time. <br /></td></tr>
-<tr class="separator:a9fb0bcb00d19a3a5fe9607f60e34c64a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73b6bafdc3baab2a4c345b5211bdea51"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a73b6bafdc3baab2a4c345b5211bdea51"></a>
+virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a73b6bafdc3baab2a4c345b5211bdea51">GetDirectionToLight</a> (float alt_km) const  override</td></tr>
+<tr class="memdesc:a73b6bafdc3baab2a4c345b5211bdea51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the direction to the current strongest light source - could be the sun or the moon. <br /></td></tr>
+<tr class="separator:a73b6bafdc3baab2a4c345b5211bdea51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dbbc89386d430a223534c83dfca6370"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3dbbc89386d430a223534c83dfca6370"></a>
+virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a3dbbc89386d430a223534c83dfca6370">GetDirectionToLight</a> (double time, float alt_km) const  override</td></tr>
+<tr class="memdesc:a3dbbc89386d430a223534c83dfca6370"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the direction to the current strongest light source - could be the sun or the moon. <br /></td></tr>
+<tr class="separator:a3dbbc89386d430a223534c83dfca6370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0f75cf0ad33f1026046741dad2e2832"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0f75cf0ad33f1026046741dad2e2832"></a>
+virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#ab0f75cf0ad33f1026046741dad2e2832">GetDirectionToMoon</a> () const  override</td></tr>
+<tr class="memdesc:ab0f75cf0ad33f1026046741dad2e2832"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current direction to the Moon. <br /></td></tr>
+<tr class="separator:ab0f75cf0ad33f1026046741dad2e2832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fcb6e7f27c44ce219c6b1bb1a545361"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2fcb6e7f27c44ce219c6b1bb1a545361"></a>
+virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a2fcb6e7f27c44ce219c6b1bb1a545361">GetDirectionToMoon</a> (double time) const  override</td></tr>
+<tr class="memdesc:a2fcb6e7f27c44ce219c6b1bb1a545361"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the direction to the Moon at the given time. <br /></td></tr>
+<tr class="separator:a2fcb6e7f27c44ce219c6b1bb1a545361"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bd6217a3528d94586676abe046ceb7c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1bd6217a3528d94586676abe046ceb7c"></a>
+virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a1bd6217a3528d94586676abe046ceb7c">GetDirectionToSun</a> () const  override</td></tr>
+<tr class="memdesc:a1bd6217a3528d94586676abe046ceb7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current direction to the sun. <br /></td></tr>
+<tr class="separator:a1bd6217a3528d94586676abe046ceb7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5fd5b61c28c13302b9970119194d1a4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5fd5b61c28c13302b9970119194d1a4"></a>
+virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#ab5fd5b61c28c13302b9970119194d1a4">GetDirectionToSun</a> (double time) const  override</td></tr>
+<tr class="memdesc:ab5fd5b61c28c13302b9970119194d1a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the direction to the Sun at the given time. <br /></td></tr>
+<tr class="separator:ab5fd5b61c28c13302b9970119194d1a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44b71a1928f2b562832b6942a4c1b9c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44b71a1928f2b562832b6942a4c1b9c6"></a>
 <a class="el" href="namespacesimul_1_1sky.html#structsimul_1_1sky_1_1EarthShadow">EarthShadow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a44b71a1928f2b562832b6942a4c1b9c6">GetEarthShadow</a> (float h_km, const float4 &amp;lightDir) const </td></tr>
 <tr class="memdesc:a44b71a1928f2b562832b6942a4c1b9c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Earth's shadow, as seen from the given altitude. <br /></td></tr>
@@ -142,14 +142,14 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a1496f6a05a8cdcdd419afa23220961e9">GetInt</a> (const char *name, const <a class="el" href="namespacesimul_1_1sky.html#structsimul_1_1sky_1_1Variant32">Variant32</a> *params=NULL) const  override</td></tr>
 <tr class="memdesc:a1496f6a05a8cdcdd419afa23220961e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Text-based interface - returns the named value if it exists. <br /></td></tr>
 <tr class="separator:a1496f6a05a8cdcdd419afa23220961e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd61a2339bcc365d6ce1140fc43f9534"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd61a2339bcc365d6ce1140fc43f9534"></a>
-<a class="el" href="structsimul_1_1sky_1_1BaseKeyframe.html">BaseKeyframe</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#acd61a2339bcc365d6ce1140fc43f9534">GetKeyframe</a> (int index)</td></tr>
-<tr class="memdesc:acd61a2339bcc365d6ce1140fc43f9534"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the i'th keyframe. <br /></td></tr>
-<tr class="separator:acd61a2339bcc365d6ce1140fc43f9534"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ab7f4cef2d685f4c7c28f054b036b5e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ab7f4cef2d685f4c7c28f054b036b5e"></a>
-const <a class="el" href="structsimul_1_1sky_1_1BaseKeyframe.html">BaseKeyframe</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a8ab7f4cef2d685f4c7c28f054b036b5e">GetKeyframe</a> (int i) const </td></tr>
-<tr class="memdesc:a8ab7f4cef2d685f4c7c28f054b036b5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the i'th keyframe. <br /></td></tr>
-<tr class="separator:a8ab7f4cef2d685f4c7c28f054b036b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a837c134edae95673b706904a65044f7a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a837c134edae95673b706904a65044f7a"></a>
+<a class="el" href="structsimul_1_1sky_1_1BaseKeyframe.html">BaseKeyframe</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a837c134edae95673b706904a65044f7a">GetKeyframe</a> (int index) override</td></tr>
+<tr class="memdesc:a837c134edae95673b706904a65044f7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the i'th keyframe. <br /></td></tr>
+<tr class="separator:a837c134edae95673b706904a65044f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfb6f831346a240502592652c6989822"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acfb6f831346a240502592652c6989822"></a>
+const <a class="el" href="structsimul_1_1sky_1_1BaseKeyframe.html">BaseKeyframe</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#acfb6f831346a240502592652c6989822">GetKeyframe</a> (int i) const  override</td></tr>
+<tr class="memdesc:acfb6f831346a240502592652c6989822"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the i'th keyframe. <br /></td></tr>
+<tr class="separator:acfb6f831346a240502592652c6989822"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d74b8714e3bb8c2f0dd95e363d6c6e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d74b8714e3bb8c2f0dd95e363d6c6e4"></a>
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseKeyframer.html#a4d74b8714e3bb8c2f0dd95e363d6c6e4">GetKeyframeAtTime</a> (double t) const </td></tr>
 <tr class="memdesc:a4d74b8714e3bb8c2f0dd95e363d6c6e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the keyframe BEFORE or AT time t: <br /></td></tr>
@@ -178,24 +178,24 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 const LightingState &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#ab4e4c0c274eff37dbf30af72cdcdc278">GetLightingState</a> () const </td></tr>
 <tr class="memdesc:ab4e4c0c274eff37dbf30af72cdcdc278"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the per-frame cached lighting state. <br /></td></tr>
 <tr class="separator:ab4e4c0c274eff37dbf30af72cdcdc278"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49418a72b130ee506ec2b2de8aa188df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49418a72b130ee506ec2b2de8aa188df"></a>
-virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a49418a72b130ee506ec2b2de8aa188df">GetLocalIrradiance</a> (float altitude_km) const </td></tr>
-<tr class="memdesc:a49418a72b130ee506ec2b2de8aa188df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the sunlight that reaches the altitude <em>altitude_km</em>. <br /></td></tr>
-<tr class="separator:a49418a72b130ee506ec2b2de8aa188df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6dea1437ad290178852b30a69154890"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6dea1437ad290178852b30a69154890"></a>
-virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#ac6dea1437ad290178852b30a69154890">GetLocalMoonIrradiance</a> (double time, float altitude_km) const </td></tr>
-<tr class="memdesc:ac6dea1437ad290178852b30a69154890"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the moonlight that reaches the altitude <em>altitude_km</em>. <br /></td></tr>
-<tr class="separator:ac6dea1437ad290178852b30a69154890"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2eff8ec762bb7344b66a90dc1c0612cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2eff8ec762bb7344b66a90dc1c0612cd"></a>
-virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a2eff8ec762bb7344b66a90dc1c0612cd">GetLocalSunIrradiance</a> (double t, float altitude_km) const </td></tr>
-<tr class="memdesc:a2eff8ec762bb7344b66a90dc1c0612cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the moonlight that reaches the altitude <em>altitude_km</em>. <br /></td></tr>
-<tr class="separator:a2eff8ec762bb7344b66a90dc1c0612cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af485c5009724dc7a62baeccfbae9363e"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#af485c5009724dc7a62baeccfbae9363e">GetMieEccentricity</a> () const </td></tr>
-<tr class="separator:af485c5009724dc7a62baeccfbae9363e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60d05d8a1258694df44d3a34c228a17f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a60d05d8a1258694df44d3a34c228a17f"></a>
-virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a60d05d8a1258694df44d3a34c228a17f">GetMieRayleighRatio</a> () const </td></tr>
-<tr class="memdesc:a60d05d8a1258694df44d3a34c228a17f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ratio of Mie to Rayleigh scattering at unit air and haze density. A useful helper function as some shaders use this ratio. <br /></td></tr>
-<tr class="separator:a60d05d8a1258694df44d3a34c228a17f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00fbd43981831c0cbdd61f63252dff16"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00fbd43981831c0cbdd61f63252dff16"></a>
+virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a00fbd43981831c0cbdd61f63252dff16">GetLocalIrradiance</a> (float altitude_km) const  override</td></tr>
+<tr class="memdesc:a00fbd43981831c0cbdd61f63252dff16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the sunlight that reaches the altitude <em>altitude_km</em>. <br /></td></tr>
+<tr class="separator:a00fbd43981831c0cbdd61f63252dff16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66285512d6f25f0dd896861f1de8d63e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a66285512d6f25f0dd896861f1de8d63e"></a>
+virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a66285512d6f25f0dd896861f1de8d63e">GetLocalMoonIrradiance</a> (double time, float altitude_km) const  override</td></tr>
+<tr class="memdesc:a66285512d6f25f0dd896861f1de8d63e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the moonlight that reaches the altitude <em>altitude_km</em>. <br /></td></tr>
+<tr class="separator:a66285512d6f25f0dd896861f1de8d63e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dc5b8c788ab0e993958cba519a0a3e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6dc5b8c788ab0e993958cba519a0a3e1"></a>
+virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a6dc5b8c788ab0e993958cba519a0a3e1">GetLocalSunIrradiance</a> (double t, float altitude_km) const  override</td></tr>
+<tr class="memdesc:a6dc5b8c788ab0e993958cba519a0a3e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the moonlight that reaches the altitude <em>altitude_km</em>. <br /></td></tr>
+<tr class="separator:a6dc5b8c788ab0e993958cba519a0a3e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b474056315d2ed89dc30afd1648263b"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a8b474056315d2ed89dc30afd1648263b">GetMieEccentricity</a> () const  override</td></tr>
+<tr class="separator:a8b474056315d2ed89dc30afd1648263b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e75019c2c6ab63d258b41f75067cb40"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e75019c2c6ab63d258b41f75067cb40"></a>
+virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a8e75019c2c6ab63d258b41f75067cb40">GetMieRayleighRatio</a> () const  override</td></tr>
+<tr class="memdesc:a8e75019c2c6ab63d258b41f75067cb40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ratio of Mie to Rayleigh scattering at unit air and haze density. A useful helper function as some shaders use this ratio. <br /></td></tr>
+<tr class="separator:a8e75019c2c6ab63d258b41f75067cb40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2f940bd5aa799a2a75372160a38c286"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2f940bd5aa799a2a75372160a38c286"></a>
 <a class="el" href="structsimul_1_1sky_1_1SkyKeyframe.html">SkyKeyframe</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#ae2f940bd5aa799a2a75372160a38c286">GetNextModifiableKeyframe</a> ()</td></tr>
 <tr class="memdesc:ae2f940bd5aa799a2a75372160a38c286"><td class="mdescLeft">&#160;</td><td class="mdescRight">The next keyframe not partially built or being used. This keyframe's properties can be modified without any pause or rebuild. <br /></td></tr>
@@ -212,14 +212,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#addc9aa15191a0a82e9137ea89ce19829">GetSubdivisionChecksum</a> () const  override</td></tr>
 <tr class="memdesc:addc9aa15191a0a82e9137ea89ce19829"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a checksum that only changes if an in-use subdivision has modified (cycling does not change it). <br /></td></tr>
 <tr class="separator:addc9aa15191a0a82e9137ea89ce19829"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b6701022e5841413011a097a3112af1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b6701022e5841413011a097a3112af1"></a>
-virtual vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a4b6701022e5841413011a097a3112af1">GetSunlightTableTransformKm</a> () const </td></tr>
-<tr class="memdesc:a4b6701022e5841413011a097a3112af1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the transform vector to convert an altitude in km into a 1D texture coordinate for the sunlight table. x = multiplier, y=offset, so texcoord u=t.x*zkm+t.y;. <br /></td></tr>
-<tr class="separator:a4b6701022e5841413011a097a3112af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fb936cbd413f3772823877af25d8754"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a2fb936cbd413f3772823877af25d8754">GetTemperatureKelvins</a> (float h_km) const </td></tr>
-<tr class="separator:a2fb936cbd413f3772823877af25d8754"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6537c7f77a019b0b80c8dfa51ff0c910"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a6537c7f77a019b0b80c8dfa51ff0c910">GetTime</a> () const </td></tr>
-<tr class="separator:a6537c7f77a019b0b80c8dfa51ff0c910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ec5382d07eed88d3ecb251f627ab015"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ec5382d07eed88d3ecb251f627ab015"></a>
+virtual vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a1ec5382d07eed88d3ecb251f627ab015">GetSunlightTableTransformKm</a> () const  override</td></tr>
+<tr class="memdesc:a1ec5382d07eed88d3ecb251f627ab015"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the transform vector to convert an altitude in km into a 1D texture coordinate for the sunlight table. x = multiplier, y=offset, so texcoord u=t.x*zkm+t.y;. <br /></td></tr>
+<tr class="separator:a1ec5382d07eed88d3ecb251f627ab015"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d0de53d8683ac4bdef82446b65fbdcf"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a3d0de53d8683ac4bdef82446b65fbdcf">GetTemperatureKelvins</a> (float h_km) const  override</td></tr>
+<tr class="separator:a3d0de53d8683ac4bdef82446b65fbdcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a829ae63a590c21620e7e3d2e77c5816a"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a829ae63a590c21620e7e3d2e77c5816a">GetTime</a> () const  override</td></tr>
+<tr class="separator:a829ae63a590c21620e7e3d2e77c5816a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b6ea6818c152d59525d89f0b07615af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b6ea6818c152d59525d89f0b07615af"></a>
 virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a5b6ea6818c152d59525d89f0b07615af">GetVisibilityDistance</a> (float view_alt_km)</td></tr>
 <tr class="memdesc:a5b6ea6818c152d59525d89f0b07615af"><td class="mdescLeft">&#160;</td><td class="mdescRight">From the altitude specified, the distance in km to 10% visibility (mainly a factor of fog/haze). <br /></td></tr>
@@ -232,10 +232,10 @@ virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a64e3f6986294328b875f4ac1e0c91078">HighlightConstellation</a> (const char *)</td></tr>
 <tr class="memdesc:a64e3f6986294328b875f4ac1e0c91078"><td class="mdescLeft">&#160;</td><td class="mdescRight">Highlight the named constellation in debug views: <br /></td></tr>
 <tr class="separator:a64e3f6986294328b875f4ac1e0c91078"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95ab120763e9c8352d72ac4b6a6010a0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95ab120763e9c8352d72ac4b6a6010a0"></a>
-<a class="el" href="structsimul_1_1sky_1_1BaseKeyframe.html">BaseKeyframe</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a95ab120763e9c8352d72ac4b6a6010a0">InsertKeyframe</a> (float t)</td></tr>
-<tr class="memdesc:a95ab120763e9c8352d72ac4b6a6010a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a keyframe at the given time and return a pointer to it. <br /></td></tr>
-<tr class="separator:a95ab120763e9c8352d72ac4b6a6010a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a230a1537138fb43beb186dfe5cecf6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a230a1537138fb43beb186dfe5cecf6"></a>
+<a class="el" href="structsimul_1_1sky_1_1BaseKeyframe.html">BaseKeyframe</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a3a230a1537138fb43beb186dfe5cecf6">InsertKeyframe</a> (float t) override</td></tr>
+<tr class="memdesc:a3a230a1537138fb43beb186dfe5cecf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a keyframe at the given time and return a pointer to it. <br /></td></tr>
+<tr class="separator:a3a230a1537138fb43beb186dfe5cecf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae2efb757b2dd8c02934bceb8214691c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae2efb757b2dd8c02934bceb8214691c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1Referenced.html#aae2efb757b2dd8c02934bceb8214691c">intrusive_ptr_add_ref</a> () const </td></tr>
 <tr class="memdesc:aae2efb757b2dd8c02934bceb8214691c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment the reference count by one. <br /></td></tr>
@@ -244,26 +244,26 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1Referenced.html#a1b15d531ebb1578a502a3579660c3148">intrusive_ptr_release</a> ()</td></tr>
 <tr class="memdesc:a1b15d531ebb1578a502a3579660c3148"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrement the reference count by one, delete if zero. <br /></td></tr>
 <tr class="separator:a1b15d531ebb1578a502a3579660c3148"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afefa782fe8d8f277520efe3da7678c8f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afefa782fe8d8f277520efe3da7678c8f"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#afefa782fe8d8f277520efe3da7678c8f">Load</a> (<a class="el" href="structsimul_1_1sky_1_1Input.html">Input</a> &amp;is)</td></tr>
-<tr class="memdesc:afefa782fe8d8f277520efe3da7678c8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream/load from the std::isteam is. <br /></td></tr>
-<tr class="separator:afefa782fe8d8f277520efe3da7678c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16531516a55a0df8c0efbf0492526b44"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a16531516a55a0df8c0efbf0492526b44"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a16531516a55a0df8c0efbf0492526b44">LoadFromText</a> (crossplatform::TextInput &amp;input)</td></tr>
-<tr class="memdesc:a16531516a55a0df8c0efbf0492526b44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load from a textual input. <br /></td></tr>
-<tr class="separator:a16531516a55a0df8c0efbf0492526b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ef557efb3d9f8622943c017bcba1135"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ef557efb3d9f8622943c017bcba1135"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a3ef557efb3d9f8622943c017bcba1135">Load</a> (<a class="el" href="structsimul_1_1sky_1_1Input.html">Input</a> &amp;is) override</td></tr>
+<tr class="memdesc:a3ef557efb3d9f8622943c017bcba1135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream/load from the std::isteam is. <br /></td></tr>
+<tr class="separator:a3ef557efb3d9f8622943c017bcba1135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a142eb24d0939d6b44d38b8e2793b3651"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a142eb24d0939d6b44d38b8e2793b3651"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a142eb24d0939d6b44d38b8e2793b3651">LoadFromText</a> (crossplatform::TextInput &amp;input) override</td></tr>
+<tr class="memdesc:a142eb24d0939d6b44d38b8e2793b3651"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load from a textual input. <br /></td></tr>
+<tr class="separator:a142eb24d0939d6b44d38b8e2793b3651"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad26fe1c55ab6384e001173f57d863072"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad26fe1c55ab6384e001173f57d863072"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1Referenced.html#ad26fe1c55ab6384e001173f57d863072">referenceCount</a> () const </td></tr>
 <tr class="memdesc:ad26fe1c55ab6384e001173f57d863072"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of pointers referencing this object. <br /></td></tr>
 <tr class="separator:ad26fe1c55ab6384e001173f57d863072"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f2553305cd7f6839cbff43d18543301"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f2553305cd7f6839cbff43d18543301"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a3f2553305cd7f6839cbff43d18543301">Save</a> (<a class="el" href="structsimul_1_1sky_1_1Output.html">Output</a> &amp;os) const </td></tr>
-<tr class="memdesc:a3f2553305cd7f6839cbff43d18543301"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream/save to the std::osteam os. <br /></td></tr>
-<tr class="separator:a3f2553305cd7f6839cbff43d18543301"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35c4acd06efc21a546a1597a3cb47d3e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35c4acd06efc21a546a1597a3cb47d3e"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a35c4acd06efc21a546a1597a3cb47d3e">SaveToText</a> (crossplatform::TextOutput &amp;output, bool include_keyframes) const </td></tr>
-<tr class="memdesc:a35c4acd06efc21a546a1597a3cb47d3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save this keyframer's values to textual output. <br /></td></tr>
-<tr class="separator:a35c4acd06efc21a546a1597a3cb47d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32f791e01a89511373a8ae1579760eb5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32f791e01a89511373a8ae1579760eb5"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a32f791e01a89511373a8ae1579760eb5">Save</a> (<a class="el" href="structsimul_1_1sky_1_1Output.html">Output</a> &amp;os) const  override</td></tr>
+<tr class="memdesc:a32f791e01a89511373a8ae1579760eb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream/save to the std::osteam os. <br /></td></tr>
+<tr class="separator:a32f791e01a89511373a8ae1579760eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f9738fcc82fb4d613bdb4049ce85451"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1f9738fcc82fb4d613bdb4049ce85451"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a1f9738fcc82fb4d613bdb4049ce85451">SaveToText</a> (crossplatform::TextOutput &amp;output, bool include_keyframes) const  override</td></tr>
+<tr class="memdesc:a1f9738fcc82fb4d613bdb4049ce85451"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save this keyframer's values to textual output. <br /></td></tr>
+<tr class="separator:a1f9738fcc82fb4d613bdb4049ce85451"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d57be0a30483cbee08b4916c2dc4ff8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d57be0a30483cbee08b4916c2dc4ff8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a1d57be0a30483cbee08b4916c2dc4ff8">SetFloat</a> (const char *name, float val) override</td></tr>
 <tr class="memdesc:a1d57be0a30483cbee08b4916c2dc4ff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Text-based interface - sets the named value if it exists. <br /></td></tr>
@@ -272,16 +272,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a9b549ffe4d14e834bbb2ee0678e6e5b4">SetStartDate</a> (int y, int m, int d)</td></tr>
 <tr class="memdesc:a9b549ffe4d14e834bbb2ee0678e6e5b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the date for time=0. <br /></td></tr>
 <tr class="separator:a9b549ffe4d14e834bbb2ee0678e6e5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37cf68c4bfbcad622628a7fd248229c0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a37cf68c4bfbcad622628a7fd248229c0">SetTime</a> (float d)</td></tr>
-<tr class="separator:a37cf68c4bfbcad622628a7fd248229c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9acff893b75481c9e5242412a2b31ad"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#aa9acff893b75481c9e5242412a2b31ad">SetTime</a> (float d) override</td></tr>
+<tr class="separator:aa9acff893b75481c9e5242412a2b31ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedda8d0017496421b509bc9ecc4f9dd1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aedda8d0017496421b509bc9ecc4f9dd1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#aedda8d0017496421b509bc9ecc4f9dd1">SetUniformKeyframes</a> (int Steps, float range=1.f)</td></tr>
 <tr class="memdesc:aedda8d0017496421b509bc9ecc4f9dd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a number of evenly spaced keyframes. <br /></td></tr>
 <tr class="separator:aedda8d0017496421b509bc9ecc4f9dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc87e189e1aae95ffa56a1d6916a2d07"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc87e189e1aae95ffa56a1d6916a2d07"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#afc87e189e1aae95ffa56a1d6916a2d07">SortKeyframes</a> ()</td></tr>
-<tr class="memdesc:afc87e189e1aae95ffa56a1d6916a2d07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make sure the keyframes are in ascending order of <em>time</em>. <br /></td></tr>
-<tr class="separator:afc87e189e1aae95ffa56a1d6916a2d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dcdc1ef43696fd2aaee7ffcb2a7faa4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1dcdc1ef43696fd2aaee7ffcb2a7faa4"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a1dcdc1ef43696fd2aaee7ffcb2a7faa4">SortKeyframes</a> () override</td></tr>
+<tr class="memdesc:a1dcdc1ef43696fd2aaee7ffcb2a7faa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make sure the keyframes are in ascending order of <em>time</em>. <br /></td></tr>
+<tr class="separator:a1dcdc1ef43696fd2aaee7ffcb2a7faa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f67e94d59f923fbe18f42b1a2b68d2c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f67e94d59f923fbe18f42b1a2b68d2c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a2f67e94d59f923fbe18f42b1a2b68d2c">UnHighlightConstellation</a> (const char *)</td></tr>
 <tr class="memdesc:a2f67e94d59f923fbe18f42b1a2b68d2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the named constellation from the highlighted list. <br /></td></tr>
@@ -1723,7 +1723,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 </div>
 </div>
-<a class="anchor" id="a6537c7f77a019b0b80c8dfa51ff0c910"></a>
+<a class="anchor" id="a829ae63a590c21620e7e3d2e77c5816a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1739,7 +1739,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1749,7 +1749,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 </div>
 </div>
-<a class="anchor" id="a37cf68c4bfbcad622628a7fd248229c0"></a>
+<a class="anchor" id="aa9acff893b75481c9e5242412a2b31ad"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1766,7 +1766,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1776,7 +1776,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 </div>
 </div>
-<a class="anchor" id="af485c5009724dc7a62baeccfbae9363e"></a>
+<a class="anchor" id="a8b474056315d2ed89dc30afd1648263b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1792,7 +1792,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1845,7 +1845,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 </div>
 </div>
-<a class="anchor" id="a2fb936cbd413f3772823877af25d8754"></a>
+<a class="anchor" id="a3d0de53d8683ac4bdef82446b65fbdcf"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1862,7 +1862,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2307,6 +2307,6 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Fri May 20 2016 07:46:31</small></address>
+Sat May 21 2016 07:46:35</small></address>
 </body>
 </html>

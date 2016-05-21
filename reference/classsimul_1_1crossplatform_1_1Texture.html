@@ -53,6 +53,20 @@ Public Member Functions</h2></td></tr>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1Texture.html#acfb6f789478d38eadbde095fc23fcec4">activateRenderTarget</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">DeviceContext</a> &amp;deviceContext, int array_index=-1, int mip_index=0)=0</td></tr>
 <tr class="memdesc:acfb6f789478d38eadbde095fc23fcec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate as a rendertarget - must call deactivateRenderTarget afterwards. <br /></td></tr>
 <tr class="separator:acfb6f789478d38eadbde095fc23fcec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac1f5f80ac0db31ff5b3a4df9ba7d1df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac1f5f80ac0db31ff5b3a4df9ba7d1df"></a>
+virtual ID3D11RenderTargetView *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1Texture.html#aac1f5f80ac0db31ff5b3a4df9ba7d1df">AsD3D11RenderTargetView</a> (int=-1, int=-1)</td></tr>
+<tr class="memdesc:aac1f5f80ac0db31ff5b3a4df9ba7d1df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the RTV specified by layer,mip. Layer -1 means all layers at the given mip, while mip -1 defaults to mip zero. <br /></td></tr>
+<tr class="separator:aac1f5f80ac0db31ff5b3a4df9ba7d1df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a193842ffa6a89ab94c232fa5a66132ab"><td class="memItemLeft" align="right" valign="top">virtual ID3D11ShaderResourceView *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1Texture.html#a193842ffa6a89ab94c232fa5a66132ab">AsD3D11ShaderResourceView</a> (<a class="el" href="namespacesimul_1_1crossplatform.html#a14a40225f9ee0bef2e83357b8b91fc80">crossplatform::ShaderResourceType</a> t=crossplatform::ShaderResourceType::UNKNOWN, int=-1, int=-1)</td></tr>
+<tr class="separator:a193842ffa6a89ab94c232fa5a66132ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfaccb2d8ae59d2d6a328c22119bf53b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acfaccb2d8ae59d2d6a328c22119bf53b"></a>
+virtual ID3D11UnorderedAccessView *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1Texture.html#acfaccb2d8ae59d2d6a328c22119bf53b">AsD3D11UnorderedAccessView</a> (int=-1, int=-1)</td></tr>
+<tr class="memdesc:acfaccb2d8ae59d2d6a328c22119bf53b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the UAV specified by layer,mip. Layer -1 means all layers at the given mip, while mip -1 defaults to mip zero. <br /></td></tr>
+<tr class="separator:acfaccb2d8ae59d2d6a328c22119bf53b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1374d43dc24871128c17aade8d39829"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab1374d43dc24871128c17aade8d39829"></a>
+virtual sce::Gnm::Texture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1Texture.html#ab1374d43dc24871128c17aade8d39829">AsGnmTexture</a> (<a class="el" href="namespacesimul_1_1crossplatform.html#a14a40225f9ee0bef2e83357b8b91fc80">crossplatform::ShaderResourceType</a>=crossplatform::ShaderResourceType::UNKNOWN, int=-1, int=-1)</td></tr>
+<tr class="memdesc:ab1374d43dc24871128c17aade8d39829"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the GnmTexture specified by layer,mip. Default values of -1 mean "all". <br /></td></tr>
+<tr class="separator:ab1374d43dc24871128c17aade8d39829"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af41b0a4d1510cbab224aaebc6187f982"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af41b0a4d1510cbab224aaebc6187f982"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1Texture.html#af41b0a4d1510cbab224aaebc6187f982">deactivateRenderTarget</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">DeviceContext</a> &amp;deviceContext)=0</td></tr>
 <tr class="memdesc:af41b0a4d1510cbab224aaebc6187f982"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deactivate as a rendertarget. <br /></td></tr>
@@ -99,6 +113,49 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 <p>Definition at line <a class="el" href="CrossPlatform_2Texture_8h_source.html#l00075">75</a> of file <a class="el" href="CrossPlatform_2Texture_8h_source.html">Texture.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a193842ffa6a89ab94c232fa5a66132ab"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ID3D11ShaderResourceView* simul::crossplatform::Texture::AsD3D11ShaderResourceView </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacesimul_1_1crossplatform.html#a14a40225f9ee0bef2e83357b8b91fc80">crossplatform::ShaderResourceType</a>&#160;</td>
+          <td class="paramname"><em>t</em> = <code>crossplatform::ShaderResourceType::UNKNOWN</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"> = <code>-1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the SRV specified by layer,mip. The type t ensures that the assigned resource is compatible (UNKNWON matches anything). Layer -1 means all layers at the given mip, while mip -1 defaults to the whole texture/layer. </p>
+
+<p>Definition at line <a class="el" href="CrossPlatform_2Texture_8h_source.html#l00093">93</a> of file <a class="el" href="CrossPlatform_2Texture_8h_source.html">Texture.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ab9bcf54d34fbdbd6d2c7743934b70770"></a>
 <div class="memitem">
 <div class="memproto">
@@ -121,7 +178,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 <p>Asynchronously move this texture to fast RAM. Some hardware has "fast RAM" that we can prefetch textures into. </p>
 
-<p>Definition at line <a class="el" href="CrossPlatform_2Texture_8h_source.html#l00098">98</a> of file <a class="el" href="CrossPlatform_2Texture_8h_source.html">Texture.h</a>.</p>
+<p>Definition at line <a class="el" href="CrossPlatform_2Texture_8h_source.html#l00103">103</a> of file <a class="el" href="CrossPlatform_2Texture_8h_source.html">Texture.h</a>.</p>
 
 </div>
 </div>
@@ -157,6 +214,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Fri May 20 2016 07:46:31</small></address>
+Sat May 21 2016 07:46:35</small></address>
 </body>
 </html>

@@ -152,7 +152,7 @@ url: Simul/Sky/SkyKeyframer.h Source File
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            <span class="keywordtype">int</span> GetDefaultInt(<span class="keyword">const</span> <span class="keywordtype">char</span> *name) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            <span class="keywordtype">void</span> SetInt(<span class="keyword">const</span> <span class="keywordtype">char</span> *name,<span class="keywordtype">int</span> val) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            </div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> SortKeyframes();</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> SortKeyframes() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <span class="keywordtype">double</span> DaytimeToEpochTime(<span class="keywordtype">float</span> t) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
@@ -160,15 +160,15 @@ url: Simul/Sky/SkyKeyframer.h Source File
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            <span class="keywordtype">float</span> GetCurrentStarBrightness      () <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            <span class="keywordtype">float</span> GetCurrentBackgroundBrightness() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            <span class="comment">// Implementing BaseSkyInterface:</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">float</span> GetTime               () <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetTime                (<span class="keywordtype">float</span> d);</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">float</span> GetMieEccentricity    () <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            <span class="keyword">virtual</span> float4 GetDirectionToLight  (<span class="keywordtype">float</span> alt_km) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <span class="keyword">virtual</span> float4 GetDirectionToLight  (<span class="keywordtype">double</span> time,<span class="keywordtype">float</span> alt_km) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            <span class="keyword">virtual</span> float4 GetDirectionToSun    () <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <span class="keyword">virtual</span> float4 GetDirectionToMoon   () <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="keyword">virtual</span> float4 GetDirectionToSun    (<span class="keywordtype">double</span> time) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <span class="keyword">virtual</span> float4 GetDirectionToMoon   (<span class="keywordtype">double</span> time) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">float</span> GetTime               () <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetTime                (<span class="keywordtype">float</span> d) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">float</span> GetMieEccentricity    () <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            <span class="keyword">virtual</span> float4 GetDirectionToLight  (<span class="keywordtype">float</span> alt_km) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <span class="keyword">virtual</span> float4 GetDirectionToLight  (<span class="keywordtype">double</span> time,<span class="keywordtype">float</span> alt_km) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            <span class="keyword">virtual</span> float4 GetDirectionToSun    () <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <span class="keyword">virtual</span> float4 GetDirectionToMoon   () <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="keyword">virtual</span> float4 GetDirectionToSun    (<span class="keywordtype">double</span> time) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <span class="keyword">virtual</span> float4 GetDirectionToMoon   (<span class="keywordtype">double</span> time) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            </div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            vec3 GetDirectionToSun(<span class="keywordtype">int</span> keyframe) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            vec3 GetDirectionToMoon(<span class="keywordtype">int</span> keyframe) <span class="keyword">const</span>;</div>
@@ -176,13 +176,13 @@ url: Simul/Sky/SkyKeyframer.h Source File
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            vec3 GetMoonRadiance() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <span class="keyword">virtual</span> float4  GetMoonIrradiance           () <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            <span class="keyword">virtual</span> float4  GetLocalIrradiance          (<span class="keywordtype">float</span> altitude_km) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <span class="keyword">virtual</span> float4  GetLocalSunIrradiance       (<span class="keywordtype">double</span> t,<span class="keywordtype">float</span> altitude_km) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            <span class="keyword">virtual</span> float4  GetLocalMoonIrradiance      (<span class="keywordtype">double</span> time,<span class="keywordtype">float</span> altitude_km) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            <span class="keyword">virtual</span> float4  GetLocalIrradiance          (<span class="keywordtype">float</span> altitude_km) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <span class="keyword">virtual</span> float4  GetLocalSunIrradiance       (<span class="keywordtype">double</span> t,<span class="keywordtype">float</span> altitude_km) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            <span class="keyword">virtual</span> float4  GetLocalMoonIrradiance      (<span class="keywordtype">double</span> time,<span class="keywordtype">float</span> altitude_km) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            <span class="keyword">virtual</span> float4  GetLocalIrradiance          (<span class="keywordtype">double</span> time,<span class="keywordtype">float</span> altitude_km) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            <span class="keyword">virtual</span> float4  GetAmbientLight             (<span class="keywordtype">float</span> altitude_km) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            <span class="keyword">virtual</span> float4  GetMieRayleighRatio         () <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            <span class="keyword">virtual</span> vec2    GetSunlightTableTransformKm () <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            <span class="keyword">virtual</span> float4  GetAmbientLight             (<span class="keywordtype">float</span> altitude_km) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            <span class="keyword">virtual</span> float4  GetMieRayleighRatio         () <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            <span class="keyword">virtual</span> vec2    GetSunlightTableTransformKm () <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            <span class="keyword">virtual</span> float4  GetIsotropicColourLossFactor    (<span class="keywordtype">float</span> alt_km,<span class="keywordtype">float</span> elevation,<span class="keywordtype">float</span> min_dist_km,<span class="keywordtype">float</span> max_dist_km,<span class="keywordtype">bool</span> earth_test=<span class="keyword">false</span>,<span class="keywordtype">int</span> steps=0) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            <span class="keyword">virtual</span> float4  GetAnisotropicInscatterFactor   (<span class="keywordtype">bool</span> include_sunlight,<span class="keywordtype">float</span> alt_km,<span class="keywordtype">float</span> elevation,<span class="keywordtype">float</span> min_dist_km,<span class="keywordtype">float</span> max_dist_km,<span class="keywordtype">bool</span> earth_test,<span class="keywordtype">int</span> steps) <span class="keyword">const</span>;</div>
@@ -231,12 +231,12 @@ url: Simul/Sky/SkyKeyframer.h Source File
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                <span class="keyword">const</span> KeyframeInUseState &amp;U =keyframeInUseStates[(texture_cycle+s)%3];</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                <span class="keywordflow">return</span> U.lightingState;</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            }</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            <span class="keywordtype">float</span> GetTemperatureKelvins(<span class="keywordtype">float</span> h_km)         <span class="keyword">const</span>;  </div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            <span class="keywordtype">float</span> GetTemperatureKelvins(<span class="keywordtype">float</span> h_km)         <span class="keyword">const override</span>; </div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            <span class="keyword">const</span> OvercastStruct &amp;GetCurrentOvercastState()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="keyword">            </span>{</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                <span class="keywordflow">return</span> overcastStruct;</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            }</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            BaseKeyframe *InsertKeyframe(<span class="keywordtype">float</span> t);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            BaseKeyframe *InsertKeyframe(<span class="keywordtype">float</span> t) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            <span class="keywordtype">void</span> DeleteKeyframe(<span class="keywordtype">int</span> i);</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            SkyKeyframe *GetNextModifiableKeyframe();</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            <span class="keyword">const</span> BaseKeyframe *GetInterpolatedBaseKeyframe()<span class="keyword"> const</span></div>
@@ -251,10 +251,10 @@ url: Simul/Sky/SkyKeyframer.h Source File
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="keyword">            </span>{</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                <span class="keywordflow">return</span> &amp;interpolatedKeyframe;</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            }</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> Save(Output &amp;os) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> Load(Input &amp;is);</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> SaveToText(crossplatform::TextOutput &amp;output,<span class="keywordtype">bool</span> include_keyframes) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> LoadFromText(crossplatform::TextInput &amp;input);</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> Save(Output &amp;os) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> Load(Input &amp;is) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> SaveToText(crossplatform::TextOutput &amp;output,<span class="keywordtype">bool</span> include_keyframes) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> LoadFromText(crossplatform::TextInput &amp;input) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            <span class="comment">// Clear the keyframe sequence:</span></div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> New();</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            <span class="comment">//</span></div>
@@ -317,11 +317,11 @@ url: Simul/Sky/SkyKeyframer.h Source File
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;                }</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;            }</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;            <span class="keyword">virtual</span> <span class="keyword">const</span> BaseKeyframe *GetSubdivisionKeyframe(<span class="keywordtype">int</span> index) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;            <span class="keyword">virtual</span> BaseKeyframe *GetSubdivisionKeyframe(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;            <span class="keyword">virtual</span> <span class="keyword">const</span> BaseKeyframe *GetSubdivisionKeyframe(<span class="keywordtype">int</span> index) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;            <span class="keyword">virtual</span> BaseKeyframe *GetSubdivisionKeyframe(<span class="keywordtype">int</span> index) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;            BaseKeyframe *GetKeyframe(<span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;            <span class="keyword">const</span> BaseKeyframe *GetKeyframe(<span class="keywordtype">int</span> i) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;            BaseKeyframe *GetKeyframe(<span class="keywordtype">int</span> index) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;            <span class="keyword">const</span> BaseKeyframe *GetKeyframe(<span class="keywordtype">int</span> i) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;            <span class="keywordtype">void</span> HighlightConstellation(<span class="keyword">const</span> <span class="keywordtype">char</span> *);</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            <span class="keywordtype">void</span> UnHighlightConstellation(<span class="keyword">const</span> <span class="keywordtype">char</span> *);</div>
@@ -329,7 +329,7 @@ url: Simul/Sky/SkyKeyframer.h Source File
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;            <span class="keyword">const</span> std::set&lt;std::string&gt; GetHighlightConstellations() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;            <span class="keywordtype">unsigned</span> GetSubdivisionChecksum() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">bool</span> IsKeyframeInUse(<span class="keywordtype">int</span> k) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">bool</span> IsKeyframeInUse(<span class="keywordtype">int</span> k) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;            <span class="keywordtype">void</span> SubdivisionMethodChanged() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;            <span class="keywordtype">void</span> StarsChanged();</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;            <span class="keywordtype">float</span> CalcMaxDistanceKm(<span class="keywordtype">float</span> alt_km,<span class="keywordtype">float</span> elev) <span class="keyword">const</span>;</div>
@@ -358,7 +358,7 @@ url: Simul/Sky/SkyKeyframer.h Source File
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;            <span class="keywordtype">void</span>                            CycleTexturesForward() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;            <span class="keywordtype">void</span>                            CycleTexturesBackward() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;            <span class="keywordtype">void</span>                            EnsureKeyframeCalculationForSubdivision(<span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;            <span class="keywordtype">void</span>                            EnsureSubdivisionValidity(<span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;            <span class="keywordtype">void</span>                            EnsureSubdivisionValidity(<span class="keywordtype">int</span> i) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;            <span class="keywordtype">void</span>                            EnsureUseStateValidity(KeyframeInUseState &amp;U,<span class="keyword">const</span> SubdivInterpolation &amp;s,<span class="keywordtype">int</span> index) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;            <span class="keywordtype">void</span>                            GetUseStates(<span class="keyword">const</span> SubdivInterpolation &amp;s,<span class="keyword">const</span> KeyframeInUseState *&amp;U1,<span class="keyword">const</span> KeyframeInUseState *&amp;U2) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span>                    StoreSky();</div>
@@ -418,6 +418,6 @@ url: Simul/Sky/SkyKeyframer.h Source File
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Fri May 20 2016 07:46:30</small></address>
+Sat May 21 2016 07:46:34</small></address>
 </body>
 </html>

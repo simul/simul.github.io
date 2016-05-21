@@ -53,10 +53,10 @@ Public Member Functions</h2></td></tr>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#a93cd98b76eba1dd5956b5154b9717e89">Begin</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, const char *)=0</td></tr>
 <tr class="memdesc:a93cd98b76eba1dd5956b5154b9717e89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the start of a render profiling block. Some API's require a context pointer. <br /></td></tr>
 <tr class="separator:a93cd98b76eba1dd5956b5154b9717e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7ddb9db83e9d182053e2d83106d42e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7ddb9db83e9d182053e2d83106d42e5"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#af7ddb9db83e9d182053e2d83106d42e5">End</a> ()=0</td></tr>
-<tr class="memdesc:af7ddb9db83e9d182053e2d83106d42e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the end of the current render profiling block. <br /></td></tr>
-<tr class="separator:af7ddb9db83e9d182053e2d83106d42e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d95e0f9a8cbb69ff99128aacf39c07d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d95e0f9a8cbb69ff99128aacf39c07d"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#a1d95e0f9a8cbb69ff99128aacf39c07d">End</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext)=0</td></tr>
+<tr class="memdesc:a1d95e0f9a8cbb69ff99128aacf39c07d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the end of the current render profiling block. <br /></td></tr>
+<tr class="separator:a1d95e0f9a8cbb69ff99128aacf39c07d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee42b1dcf15230f3fe3a4dd8d748747e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aee42b1dcf15230f3fe3a4dd8d748747e"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#aee42b1dcf15230f3fe3a4dd8d748747e">EndFrame</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext)=0</td></tr>
 <tr class="memdesc:aee42b1dcf15230f3fe3a4dd8d748747e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this at the end of the frame to prepare the data to be read. <br /></td></tr>
@@ -79,6 +79,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1GpuProfilingInterface.html#aec96d2d198cf3a80b33c0f871857051b">StartFrame</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext)=0</td></tr>
 <tr class="memdesc:aec96d2d198cf3a80b33c0f871857051b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this at the start of the frame to reset values. <br /></td></tr>
 <tr class="separator:aec96d2d198cf3a80b33c0f871857051b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bbaa03f95852a72bf27ec7e4a379a76"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5bbaa03f95852a72bf27ec7e4a379a76"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1BaseProfilingInterface.html#a5bbaa03f95852a72bf27ec7e4a379a76">StartFrame</a> ()</td></tr>
+<tr class="memdesc:a5bbaa03f95852a72bf27ec7e4a379a76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this at the start of the frame to reset values. <br /></td></tr>
+<tr class="separator:a5bbaa03f95852a72bf27ec7e4a379a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A virtual interface base class for GPU performance measurement. </p>
@@ -118,9 +122,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 <p>Get profile data for the event at index i. Returns NULL for i&lt;0 or i&gt;= number of events. Null parent means the top-level events. </p>
 
-<p>Reimplemented in <a class="el" href="classsimul_1_1base_1_1DefaultProfiler.html#a1804d42a2084c495cbea377046cd53d4">simul::base::DefaultProfiler</a>, and <a class="el" href="classsimul_1_1crossplatform_1_1GpuProfiler.html#abc728bf189c6565ef722e05db77dd583">simul::crossplatform::GpuProfiler</a>.</p>
+<p>Reimplemented in <a class="el" href="classsimul_1_1base_1_1DefaultProfiler.html#a1804d42a2084c495cbea377046cd53d4">simul::base::DefaultProfiler</a>, and <a class="el" href="classsimul_1_1crossplatform_1_1GpuProfiler.html#a8ef29184e3f7da63df660c424af27df7">simul::crossplatform::GpuProfiler</a>.</p>
 
-<p>Definition at line <a class="el" href="ProfilingInterface_8h_source.html#l00100">100</a> of file <a class="el" href="ProfilingInterface_8h_source.html">ProfilingInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="ProfilingInterface_8h_source.html#l00105">105</a> of file <a class="el" href="ProfilingInterface_8h_source.html">ProfilingInterface.h</a>.</p>
 
 </div>
 </div>
@@ -132,6 +136,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Fri May 20 2016 07:46:30</small></address>
+Sat May 21 2016 07:46:35</small></address>
 </body>
 </html>
