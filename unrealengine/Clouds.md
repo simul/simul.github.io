@@ -7,17 +7,46 @@ weight : 4
 Cloud Layers and Cloud Keyframes
 ========
 
-Editing clouds in the Sequencer
+
+Clouds in trueSKY
+-------------------------------
+
+In trueSKY, clouds are split into two layers: 3D clouds and 2D clouds. They have similar properties, with the exception of precipitation, which is strictly for 3D clouds. These properties can be modified via the sequencer and via Blueprint visual scripting.
+
+Each layer has its own properties and its own keyframes. Layer properties will affect the entire sequence. Keyframe properties will only affect the keyframe in question, unless there is only one keyframe present, in which case this will be used continously. Otherwise the clouds will use interpolation to move between specified properties at adjacent keyframes. 
+
+
+Editing Clouds in the Sequencer
 -------------------------------
 To select a cloud keyframe, click it. To select all the keyframes of a cloud layer, double-click on the space between them. To select and modify the properties of a whole cloud layer, click on the "Clouds" text at left.
 
 Read more about editing the Cloud Layer or Cloud Keyframes on [The Sky Sequencer Page](http://docs.simul.co/reference/man_8_sequencer.html).
 
-Modifying clouds in Blueprint
------------------------------
 
-Cloud Keyframe Properties
+Editing Clouds in Blueprint
 -------------------------
+
+Though the primary means of manipulating the cloud layer is via the sequencer, there are a selection of accessible Get and Set variables provided. To use them, make a reference to the TrueSkySequenceActor and drag the output pin onto an empty space. Uncheck "Context Sensitive", and navigate to Class->TrueSkySequenceActor.
+
+<a href="http://docs.simul.co/unrealengine/images/SetGetCloudLayer.png"><img src="http://docs.simul.co/unrealengine/images/SetGetCloudLayer.png" alt="Blueprint"/></a>
+
+To get a cloud keyframe's properties, you will first need its Unique ID (Uid) to identify it. This can be entered manually (each keyframe's Uid is viewable and editable in the sequencer), but there are also Blueprint functions provided. These functions have a Layer Int parameter, which should be set to 1 for 3D Clouds or 2 for 2D Clouds. The functions are as follows:
+
+* GetCloudKeyframebyIndex: Returns a cloud keyframe's Uid, given a cloud layer and an index (where the first cloud keyframe in a scene is 0).
+* GetPreviousCloudKeyframeBeforeTime: Given a cloud layer and a time, returns the Uid of the last cloud keyframe before said time.
+* GetNextCloudKeyframeAfterTime: Given a cloud layer and a time, returns the Uid of the next cloud keyframe after said time.
+* GetNextModifiableCloudKeyframe: Given a cloud layer, returns the Uid of the next cloud keyframe that can be modified without requiring any 3D textures to be recalculated (this will be the next cloud keyframe + 1).
+* GetInterpolatedCloudKeyframe: Returns the current interpolated cloud keyframe's Uid (Note: this cannot be used to set any values; it is read-only).
+
+
+Once you have a cloud keyframe's Uid, you can Get and Set its properties. These functions have a Name parameter, which must be set to the matching string for the property required (see the table below). The functions are as follows:
+
+* GetKeyFrameFloat: Given a keyframe Uid and a name string, returns the float value matching the name.
+* GetKeyframeInt: Given a keyframe Uid and a name string, returns the integer value matching the name.
+* SetKeyframeFloat: Given a keyframe Uid, a name string and a float value, will set the matching property for the Name to the specified float value.
+* SetKeyframeInt: Given a keyframe Uid, a name string and an integer value, will set the matching property for the Name to the specified integer value.
+
+
 **Floating-point**
 
 

@@ -35,7 +35,7 @@ How to run it
 The TrueSkyPlugin loads "TrueSkyUI_MD.dll" and "UE4PluginRenderInterface_MT.dll" from [UE4]\Engine\Plugins\TrueSkyPlugin\Binaries\Win64.
 TrueSkyUI_MD.dll further loads the Qt libraries. For that, the PATH environment-variable is extended temporarily by the plugin to include "Engine/Binary/ThirdParty/Simul/Win64"
 
-When you run the UE4 editro, the trueSKY plugin should be enabled by default. If not, go to Edit->Plugin and type "trueSKY" into the search box to find the plugin, and check its "enabled" box, to enable the TrueSky plugin.
+When you run the UE4 editor, the trueSKY plugin should be enabled by default. If not, go to Edit->Plugin and type "trueSKY" into the search box to find the plugin, and check its "enabled" box, to enable the trueSKY plugin.
 
   <a href="http://simul.co/wp-content/uploads/2014/07/UE4_ShowPlugins.png"><img src="http://simul.co/wp-content/uploads/2014/07/UE4_ShowPlugins-96x300.png" /></a>
 
@@ -43,13 +43,15 @@ When you run the UE4 editro, the trueSKY plugin should be enabled by default. If
 
 After this, restart the editor.
 
+Adding trueSKY to your level
+---
 * Press "Window->Add Sequence to Scene" -- this adds a TrueSkySequenceActor to the current level.
 
  <a href="http://simul.co/wp-content/uploads/2014/07/UE4_AddSequence.png"><img src="http://simul.co/wp-content/uploads/2014/07/UE4_AddSequence-81x300.png"/></a> 
 
-This actor provides a reference to a sequence asset which is rendered. Choose the actor (from "World Outliner" window). In the "Details" window, set the reference to a TrueSky Sequence asset (read below how to create one) in the "Active Sequence" property.
+This actor provides a reference to a sequence asset which is rendered. Choose the actor (from "World Outliner" window). In the "Details" window, set the reference to a TrueSky Sequence asset (see below for information on how to create one) in the "Active Sequence" property.
 
-* To create a new TrueSkySequence asset, go to the "Content Browser" window. Press "New Asset" button (or do a right mouse click inside the window) to open an asset selection window. Choose "Miscellaneous / TrueSky Sequence Asset". A new asset will be created. Now you can rename/save/delete it.
+* To create a new TrueSkySequence asset, go to the "Content Browser" window. Press "New Asset" button (or do a right mouse click inside the window) to open an asset selection window. Choose "Miscellaneous / trueSKY Sequence Asset". A new asset will be created. Now you can rename/save/delete it.
 
 <a href="http://simul.co/wp-content/uploads/2014/07/UE4_CreateAsset.png"><img src="http://simul.co/wp-content/uploads/2014/07/UE4_CreateAsset-233x300.png"/></a> 
 
@@ -57,7 +59,7 @@ This actor provides a reference to a sequence asset which is rendered. Choose th
  
 <a href="http://simul.co/wp-content/uploads/2014/07/Clipboard-Image-8.png"><img src="http://simul.co/wp-content/uploads/2014/07/Clipboard-Image-8-150x150.png"/></a> 
 
-* To edit the TrueSkySequence asset just double-click on it. Read more about editing properties in the sequencer on [The Sky Sequencer Page](http://docs.simul.co/reference/man_8_sequencer.html).
+* To edit the TrueSkySequence asset just double-click on it:
 
 <a class=" id=" title="" href="http://simul.co/wp-content/uploads/2014/07/Editor.png"><img src="http://simul.co/wp-content/uploads/2014/07/Editor-150x150.png" /></a>
 
@@ -65,20 +67,35 @@ This actor provides a reference to a sequence asset which is rendered. Choose th
 
 * You can see changes to the properties (e.g. "preview") only if the edited asset is also assigned to the level's TrueSkySequenceActor! The trueSky plugin renderer uses only the asset which is referenced from that actor. If you are editing some other asset (which is not assigned to the TrueSky actor of the current level) then you won't see any visualization of it.
 
-* Your changes in TrueSky properties are saved to the asset when you close the editing window. If the plugin has been compiled with autosaving on (#define ENABLE_AUTO_SAVING), it saves changes automatically every X seconds (currently X=4).
+* If the TrueSkySequence asset has been changed, it can be saved to the disc by right-clicking on it and choosing "Save".
 
-* If the TrueSkySequence asset has been changed, it can be saved to the disc by right-clicking on it and choosing "Save". You are also prompted about any unsaved assets when closing Unreal Editor.
+* You can edit any number of TrueSkySequence assets at once. However, only that which is also assigned to the active TrueSkySequenceActor is visible in editor's rendering window.
 
-* You can edit any number of TrueSkySequence assets at once. However, only that which is also set to the current level's TrueSkySequenceActor is visible in editor's rendering window.
-
-* A TrueSkySequenceActor can be added to the level only through "Window->Add Sequence to Scene" menu command. This prevents more than one such actor being present on the level.
-
-* To add clouds, double-click the TrueSKY Sequence Asset and right-click on the timeline to add cloud keyframes.
+* To add clouds, double-click the trueSKY Sequence Asset and right-click on the timeline to add cloud keyframes.
 
 * It may be that the default UE4 sky obscures the trueSKY image. Remove the Atmospheric Fog and Sky Sphere objects from your scene.
 
 * For optimal performance, you can replace the default Skylight with the custom True Sky Light (found in Modes -> All Classes). Simply drag it into the scene to use. 
 
+Multiple Sequence Actors and Transitions
+---
+You can have any number of trueSKY Sequence Actors in your level, all with different Sequence Assets assigned. In the Editor, check the Actor's property "Active in Editor" to see its weather state in the 3D view. In-game, the active Actor is determined by bounds. By default, a Sequence Actor is unbounded - it is always active. You can create bounding by adding a Box Collision component to the Actor.
+
+<a href="http://docs.simul.co/unrealengine/images/AddBounds.png"><img src="http://docs.simul.co/unrealengine/images/AddBounds.png" alt="Add Bounds"/></a>
+
+When this is done, the Actor will have limited bounds, and only affect the weather when the player is within the bounding box. You should have at most one unbounded trueSKY Sequence Actor in your level: this will apply when the player is not in the bounds of any other Sequence Actor.
+
+To allow a smooth transition between weather states, you should adjust the Mode property of the Sky and Cloud Layers in all the Sequence Assets to allow a gradual transition between the different weather states. If you're using real-time transition (this is simplest), you can adjust the Interval in seconds (default 10.0) to determine how quickly the change takes place. Otherwise, use the Interval in days.
+
+<a href="http://docs.simul.co/unrealengine/images/GradualMode.png"><img src="http://docs.simul.co/unrealengine/images/GradualMode.png" alt="Gradual Mode"/></a>
+
+Console commands
+---
+*ts\_cross\_sections* Show/hide cloud cross-sections.
+
+*ts\_compositing* Show/hide compositing overlay.
+
+*ts\_profile* Dump profiling text to output.
 
 Modified Files in the Unreal Engine
 ===================================
@@ -93,4 +110,10 @@ Modified Files in the Unreal Engine
 	Engine\Source\Programs\AutomationTool\Win\WinPlatform.Automation.cs
 	Engine\Source\Programs\AutomationTool\XboxOne\XboxOnePlatform.Automation.cs
 
-Next: <a href="/unrealengine/Blueprint">Blueprint</a>
+
+Further Information
+---
+
+To help get to grips with trueSKY for Unreal Engine 4, you can [view the tutorial here](http://docs.simul.co/unrealengine/Tutorial.html)
+
+Next: <a href="/unrealengine/Tutorial">Tutorial</a>

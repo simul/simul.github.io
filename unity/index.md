@@ -125,9 +125,7 @@ For example,in the script KeyframeTesting.cs in the Simul directory, is a functi
 	}
 
 For details of the properties you can change, see the Clouds and Sky Reference pages.
-
-Next: <a href="/unity/Instructions">Instructions</a>
-=======
+ 
 **Vector3 TrueSkyToUnityPosition(Vector3 ts_pos)**
 **Vector3 TrueSkyToUnityDirection(Vector3 ts_dir)**
 **Vector3 UnityToTrueSkyPosition(Vector3 upos)** 
@@ -144,3 +142,6 @@ Reference
 Techniques
 ----------
 [Fixing Time of Day](FixingDaytime.html)
+
+
+Next: <a href="/unity/Instructions">Instructions</a>
