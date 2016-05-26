@@ -53,46 +53,52 @@ url: Simul/Platform/DirectX11/CompileShaderDX1x.h Source File
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classShaderIncludeHandler.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="classShaderIncludeHandler.html">ShaderIncludeHandler</a> : <span class="keyword">public</span> ID3DInclude</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="classShaderIncludeHandler.html">ShaderIncludeHandler</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* shaderDirUtf8, <span class="keyword">const</span> <span class="keywordtype">char</span>* systemDirUtf8,<span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;shaderPathsUtf8);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    HRESULT __stdcall Open(D3D_INCLUDE_TYPE IncludeType,LPCSTR pFileNameUtf8, LPCVOID pParentData, LPCVOID *ppData, UINT *pBytes);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    HRESULT __stdcall Close(LPCVOID pData);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    std::vector&lt;std::string&gt; m_pathsUtf8;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    std::string m_ShaderDirUtf8;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    std::string m_SystemDirUtf8;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classDetectChangesIncludeHandler.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDetectChangesIncludeHandler.html">DetectChangesIncludeHandler</a> : <span class="keyword">public</span> ID3DInclude</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classDetectChangesIncludeHandler.html">DetectChangesIncludeHandler</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* shaderDirUtf8,<span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;shaderPathsUtf8, <span class="keywordtype">double</span> binaryTime = 0.0);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    HRESULT __stdcall Open(D3D_INCLUDE_TYPE IncludeType,LPCSTR pFileNameUtf8, LPCVOID pParentData, LPCVOID *ppData, UINT *pBytes);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    HRESULT __stdcall Close(LPCVOID pData);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classDetectChangesIncludeHandler.html#a4777b66cd40f53c48c291d7e4be76275">   38</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classDetectChangesIncludeHandler.html#a4777b66cd40f53c48c291d7e4be76275">GetNewestIncludeDateJDN</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">return</span> newest;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    std::vector&lt;std::string&gt; m_pathsUtf8;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    std::string m_ShaderDirUtf8;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    std::string m_SystemDirUtf8;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">double</span> lastCompileTime;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">double</span> newest;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="classDetectChangesIncludeHandler_html_a4777b66cd40f53c48c291d7e4be76275"><div class="ttname"><a href="classDetectChangesIncludeHandler.html#a4777b66cd40f53c48c291d7e4be76275">DetectChangesIncludeHandler::GetNewestIncludeDateJDN</a></div><div class="ttdeci">double GetNewestIncludeDateJDN() const </div><div class="ttdoc">The newest file. If the d3d process fails and this is 0, it means we had a missing file...</div><div class="ttdef"><b>Definition:</b> <a href="CompileShaderDX1x_8h_source.html#l00038">CompileShaderDX1x.h:38</a></div></div>
-<div class="ttc" id="classShaderIncludeHandler_html"><div class="ttname"><a href="classShaderIncludeHandler.html">ShaderIncludeHandler</a></div><div class="ttdoc">An include-handler for Direct3D 11 shader compilation. </div><div class="ttdef"><b>Definition:</b> <a href="CompileShaderDX1x_8h_source.html#l00017">CompileShaderDX1x.h:17</a></div></div>
-<div class="ttc" id="classDetectChangesIncludeHandler_html"><div class="ttname"><a href="classDetectChangesIncludeHandler.html">DetectChangesIncludeHandler</a></div><div class="ttdoc">An include-handler that detects whether any include file has been changed since a given date/time...</div><div class="ttdef"><b>Definition:</b> <a href="CompileShaderDX1x_8h_source.html#l00030">CompileShaderDX1x.h:30</a></div></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacesimul.html">simul</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">namespace </span>dx11</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classsimul_1_1dx11_1_1ShaderIncludeHandler.html">   21</a></span>&#160;        <span class="keyword">class </span><a class="code" href="classsimul_1_1dx11_1_1ShaderIncludeHandler.html">ShaderIncludeHandler</a> : <span class="keyword">public</span> ID3DInclude</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <a class="code" href="classsimul_1_1dx11_1_1ShaderIncludeHandler.html">ShaderIncludeHandler</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* shaderDirUtf8, <span class="keyword">const</span> <span class="keywordtype">char</span>* systemDirUtf8,<span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;shaderPathsUtf8);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            HRESULT __stdcall Open(D3D_INCLUDE_TYPE IncludeType,LPCSTR pFileNameUtf8, LPCVOID pParentData, LPCVOID *ppData, UINT *pBytes);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            HRESULT __stdcall Close(LPCVOID pData);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            std::vector&lt;std::string&gt; m_pathsUtf8;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            std::string m_ShaderDirUtf8;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            std::string m_SystemDirUtf8;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        };</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classsimul_1_1dx11_1_1DetectChangesIncludeHandler.html">   34</a></span>&#160;        <span class="keyword">class </span><a class="code" href="classsimul_1_1dx11_1_1DetectChangesIncludeHandler.html">DetectChangesIncludeHandler</a> : <span class="keyword">public</span> ID3DInclude</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <a class="code" href="classsimul_1_1dx11_1_1DetectChangesIncludeHandler.html">DetectChangesIncludeHandler</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* shaderDirUtf8,<span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;shaderPathsUtf8, <span class="keywordtype">double</span> binaryTime = 0.0);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            HRESULT __stdcall Open(D3D_INCLUDE_TYPE IncludeType,LPCSTR pFileNameUtf8, LPCVOID pParentData, LPCVOID *ppData, UINT *pBytes);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            HRESULT __stdcall Close(LPCVOID pData);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classsimul_1_1dx11_1_1DetectChangesIncludeHandler.html#a14c02f144ccc082a5099940e9e20daa8">   42</a></span>&#160;            <span class="keywordtype">double</span> <a class="code" href="classsimul_1_1dx11_1_1DetectChangesIncludeHandler.html#a14c02f144ccc082a5099940e9e20daa8">GetNewestIncludeDateJDN</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">            </span>{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                <span class="keywordflow">return</span> newest;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            std::vector&lt;std::string&gt; m_pathsUtf8;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            std::string m_ShaderDirUtf8;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            std::string m_SystemDirUtf8;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordtype">double</span> lastCompileTime;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordtype">double</span> newest;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        };</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classsimul_1_1dx11_1_1DetectChangesIncludeHandler_html"><div class="ttname"><a href="classsimul_1_1dx11_1_1DetectChangesIncludeHandler.html">simul::dx11::DetectChangesIncludeHandler</a></div><div class="ttdoc">An include-handler that detects whether any include file has been changed since a given date/time...</div><div class="ttdef"><b>Definition:</b> <a href="CompileShaderDX1x_8h_source.html#l00034">CompileShaderDX1x.h:34</a></div></div>
+<div class="ttc" id="classsimul_1_1dx11_1_1ShaderIncludeHandler_html"><div class="ttname"><a href="classsimul_1_1dx11_1_1ShaderIncludeHandler.html">simul::dx11::ShaderIncludeHandler</a></div><div class="ttdoc">An include-handler for Direct3D 11 shader compilation. </div><div class="ttdef"><b>Definition:</b> <a href="CompileShaderDX1x_8h_source.html#l00021">CompileShaderDX1x.h:21</a></div></div>
+<div class="ttc" id="namespacesimul_html"><div class="ttname"><a href="namespacesimul.html">simul</a></div><div class="ttdef"><b>Definition:</b> <a href="Base_8h_source.html#l00001">Base.h:1</a></div></div>
+<div class="ttc" id="classsimul_1_1dx11_1_1DetectChangesIncludeHandler_html_a14c02f144ccc082a5099940e9e20daa8"><div class="ttname"><a href="classsimul_1_1dx11_1_1DetectChangesIncludeHandler.html#a14c02f144ccc082a5099940e9e20daa8">simul::dx11::DetectChangesIncludeHandler::GetNewestIncludeDateJDN</a></div><div class="ttdeci">double GetNewestIncludeDateJDN() const </div><div class="ttdoc">The newest file. If the d3d process fails and this is 0, it means we had a missing file...</div><div class="ttdef"><b>Definition:</b> <a href="CompileShaderDX1x_8h_source.html#l00042">CompileShaderDX1x.h:42</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Wed May 25 2016 16:27:42</small></address>
+Thu May 26 2016 07:46:33</small></address>
 </body>
 </html>

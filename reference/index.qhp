@@ -9,16 +9,18 @@
         <section title="Developer Manual" ref="index.html">
           <section title="1 Introduction" ref="man_1_introduction.html" />
           <section title="2 Getting Started" ref="man_2_gettingstarted.html" />
-          <section title="3 Controlling the Environment" ref="man_3_environment.html" />
-          <section title="4 Rendering the Environment" ref="man_4_rendering.html" />
+          <section title="3 Controlling the Environment" ref="man_3_environment.html">
+            <section title="3.1 The Sky Keyframer" ref="man_3_environment_ooo1_sky_keyframer.html" />
+            <section title="3.2 The Cloud Keyframer" ref="man_3_environment_ooo2_cloud_keyframer.html" />
+          </section>
+          <section title="4 Rendering the Environment" ref="man_4_rendering.html">
+            <section title="4.1 Shaders" ref="man_4_rendering_ooo1_shaders.html" />
+          </section>
           <section title="5 Mixed Resolution Compositing" ref="man_5_mixed_resolution.html" />
           <section title="6 The Sky Sequencer" ref="man_8_sequencer.html" />
           <section title="Licensing" ref="man_a_licensing.html" />
+          <section title="Change List" ref="man_9_changelist.html" />
         </section>
-        <section title="3.1 The Sky Keyframer" ref="man_3_environment_ooo2_sky_keyframer.html" />
-        <section title="3.2 The Cloud Keyframer" ref="man_3_environment_ooo2_cloud_keyframer.html" />
-        <section title="4.1 Shaders" ref="man_4_rendering_ooo6_shaders.html" />
-        <section title="Change List" ref="man_9_changelist.html" />
         <section title="REFERENCE">
           <section title="Namespace List" ref="namespaces.html">
             <section title="simul">
@@ -92,10 +94,12 @@
             <section title="simul::dx11::ConstantBuffer&lt; T &gt;" ref="classsimul_1_1dx11_1_1ConstantBuffer.html" />
             <section title="simul::sky::CpuSkyGenerator" ref="classsimul_1_1sky_1_1CpuSkyGenerator.html" />
             <section title="DepthTextureStruct" ref="structDepthTextureStruct.html" />
-            <section title="DetectChangesIncludeHandler" ref="classDetectChangesIncludeHandler.html" />
+            <section title="simul::dx11::DetectChangesIncludeHandler" ref="classsimul_1_1dx11_1_1DetectChangesIncludeHandler.html" />
             <section title="simul::crossplatform::DeviceContext" ref="structsimul_1_1crossplatform_1_1DeviceContext.html" />
-            <section title="Direct3D11CallbackInterface" ref="classDirect3D11CallbackInterface.html" />
-            <section title="simul::dx11::Direct3D11Manager" ref="classsimul_1_1dx11_1_1Direct3D11Manager.html" />
+            <section title="simul::dx11::Direct3D11CallbackInterface" ref="classsimul_1_1dx11_1_1Direct3D11CallbackInterface.html" />
+            <section title="simul::dx11::Direct3D11ManagerInterface" ref="classsimul_1_1dx11_1_1Direct3D11ManagerInterface.html">
+              <section title="simul::dx11::Direct3D11Manager" ref="classsimul_1_1dx11_1_1Direct3D11Manager.html" />
+            </section>
             <section title="simul::crossplatform::DisjointQueryStruct" ref="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1DisjointQueryStruct" />
             <section title="simul::sky::EarthShadow" ref="namespacesimul_1_1sky.html#structsimul_1_1sky_1_1EarthShadow" />
             <section title="simul::crossplatform::Effect" ref="classsimul_1_1crossplatform_1_1Effect.html">
@@ -168,7 +172,7 @@
             </section>
             <section title="simul::crossplatform::RenderStateDesc" ref="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1RenderStateDesc" />
             <section title="simul::clouds::SelectionIdentifier" ref="structsimul_1_1clouds_1_1SelectionIdentifier.html" />
-            <section title="ShaderIncludeHandler" ref="classShaderIncludeHandler.html" />
+            <section title="simul::dx11::ShaderIncludeHandler" ref="classsimul_1_1dx11_1_1ShaderIncludeHandler.html" />
             <section title="simul::base::ShowProgressInterface" ref="classsimul_1_1base_1_1ShowProgressInterface.html" />
             <section title="simul::sky::SiderealSkyInterface" ref="classsimul_1_1sky_1_1SiderealSkyInterface.html">
               <section title="simul::sky::SiderealSky" ref="classsimul_1_1sky_1_1SiderealSky.html" />
@@ -214,22 +218,15 @@
       <keyword name="1 Introduction" id="1 Introduction" ref="man_1_introduction.html" />
       <keyword name="2 Getting Started" id="2 Getting Started" ref="man_2_gettingstarted.html" />
       <keyword name="3 Controlling the Environment" id="3 Controlling the Environment" ref="man_3_environment.html" />
-      <keyword name="3.1 The Sky Keyframer" id="3.1 The Sky Keyframer" ref="man_3_environment_ooo2_sky_keyframer.html" />
+      <keyword name="3.1 The Sky Keyframer" id="3.1 The Sky Keyframer" ref="man_3_environment_ooo1_sky_keyframer.html" />
       <keyword name="3.2 The Cloud Keyframer" id="3.2 The Cloud Keyframer" ref="man_3_environment_ooo2_cloud_keyframer.html" />
       <keyword name="4 Rendering the Environment" id="4 Rendering the Environment" ref="man_4_rendering.html" />
-      <keyword name="4.1 Shaders" id="4.1 Shaders" ref="man_4_rendering_ooo6_shaders.html" />
+      <keyword name="4.1 Shaders" id="4.1 Shaders" ref="man_4_rendering_ooo1_shaders.html" />
       <keyword name="5 Mixed Resolution Compositing" id="5 Mixed Resolution Compositing" ref="man_5_mixed_resolution.html" />
       <keyword name="6 The Sky Sequencer" id="6 The Sky Sequencer" ref="man_8_sequencer.html" />
       <keyword name="Change List" id="Change List" ref="man_9_changelist.html" />
       <keyword name="Licensing" id="Licensing" ref="man_a_licensing.html" />
       <keyword name="DepthTextureStruct" id="DepthTextureStruct" ref="structDepthTextureStruct.html" />
-      <keyword name="DetectChangesIncludeHandler" id="DetectChangesIncludeHandler" ref="classDetectChangesIncludeHandler.html" />
-      <keyword name="GetNewestIncludeDateJDN" id="DetectChangesIncludeHandler::GetNewestIncludeDateJDN" ref="classDetectChangesIncludeHandler.html#a4777b66cd40f53c48c291d7e4be76275" />
-      <keyword name="Direct3D11CallbackInterface" id="Direct3D11CallbackInterface" ref="classDirect3D11CallbackInterface.html" />
-      <keyword name="AddView" id="Direct3D11CallbackInterface::AddView" ref="classDirect3D11CallbackInterface.html#a1c1a7efbd1c035762f3a32b75cd820c3" />
-      <keyword name="Render" id="Direct3D11CallbackInterface::Render" ref="classDirect3D11CallbackInterface.html#a77353b0c7ec7a2e2cf4954f2b2d4b3fa" />
-      <keyword name="ResizeView" id="Direct3D11CallbackInterface::ResizeView" ref="classDirect3D11CallbackInterface.html#acdd6cec427762b6ba086b01389c2429b" />
-      <keyword name="ShaderIncludeHandler" id="ShaderIncludeHandler" ref="classShaderIncludeHandler.html" />
       <keyword name="Obj::File" id="Obj::File" ref="classObj_1_1File.html" />
       <keyword name="CalculateNormals" id="Obj::File::CalculateNormals" ref="classObj_1_1File.html#a56c1e5376cade8453f411fa54acd8432" />
       <keyword name="Draw" id="Obj::File::Draw" ref="classObj_1_1File.html#a3e04b0e38e03e84cf995e916ee124b74" />
@@ -1318,9 +1315,16 @@
       <keyword name="LinkToEffect" id="simul::dx11::ConstantBuffer::LinkToEffect" ref="classsimul_1_1dx11_1_1ConstantBuffer.html#a76f88050fceba025f6dada677c72d0a0" />
       <keyword name="RestoreDeviceObjects" id="simul::dx11::ConstantBuffer::RestoreDeviceObjects" ref="classsimul_1_1dx11_1_1ConstantBuffer.html#a4eec92990058ced0ff60aadefb664cb2" />
       <keyword name="Unbind" id="simul::dx11::ConstantBuffer::Unbind" ref="classsimul_1_1dx11_1_1ConstantBuffer.html#af0714c74978ac352cd143470ec70d535" />
+      <keyword name="simul::dx11::DetectChangesIncludeHandler" id="simul::dx11::DetectChangesIncludeHandler" ref="classsimul_1_1dx11_1_1DetectChangesIncludeHandler.html" />
+      <keyword name="GetNewestIncludeDateJDN" id="simul::dx11::DetectChangesIncludeHandler::GetNewestIncludeDateJDN" ref="classsimul_1_1dx11_1_1DetectChangesIncludeHandler.html#a14c02f144ccc082a5099940e9e20daa8" />
+      <keyword name="simul::dx11::Direct3D11CallbackInterface" id="simul::dx11::Direct3D11CallbackInterface" ref="classsimul_1_1dx11_1_1Direct3D11CallbackInterface.html" />
+      <keyword name="AddView" id="simul::dx11::Direct3D11CallbackInterface::AddView" ref="classsimul_1_1dx11_1_1Direct3D11CallbackInterface.html#a84513936b0a09832f15ecc42f5277b55" />
+      <keyword name="Render" id="simul::dx11::Direct3D11CallbackInterface::Render" ref="classsimul_1_1dx11_1_1Direct3D11CallbackInterface.html#a911a1d8ace319199efc410b3c57970e9" />
+      <keyword name="ResizeView" id="simul::dx11::Direct3D11CallbackInterface::ResizeView" ref="classsimul_1_1dx11_1_1Direct3D11CallbackInterface.html#a3282ccba6a4a059a2f1ae3829074a70a" />
       <keyword name="simul::dx11::Direct3D11Manager" id="simul::dx11::Direct3D11Manager" ref="classsimul_1_1dx11_1_1Direct3D11Manager.html" />
       <keyword name="AddWindow" id="simul::dx11::Direct3D11Manager::AddWindow" ref="classsimul_1_1dx11_1_1Direct3D11Manager.html#ab118dcfe8334de7517a93fdab85f7e86" />
       <keyword name="RemoveWindow" id="simul::dx11::Direct3D11Manager::RemoveWindow" ref="classsimul_1_1dx11_1_1Direct3D11Manager.html#a922906a4727ef5d66a31c8267f9905cf" />
+      <keyword name="simul::dx11::Direct3D11ManagerInterface" id="simul::dx11::Direct3D11ManagerInterface" ref="classsimul_1_1dx11_1_1Direct3D11ManagerInterface.html" />
       <keyword name="simul::dx11::Framebuffer" id="simul::dx11::Framebuffer" ref="classsimul_1_1dx11_1_1Framebuffer.html" />
       <keyword name="Width" id="simul::dx11::Framebuffer::Width" ref="classsimul_1_1dx11_1_1Framebuffer.html#ab76d3a6cbb4bc2a3af26522c14baa99a" />
       <keyword name="Activate" id="simul::dx11::Framebuffer::Activate" ref="classsimul_1_1dx11_1_1Framebuffer.html#ab329e44f6420c9539e36664fbd32595d" />
@@ -1407,6 +1411,7 @@
       <keyword name="SetVertexBuffers" id="simul::dx11::RenderPlatform::SetVertexBuffers" ref="classsimul_1_1dx11_1_1RenderPlatform.html#a1845e3c9af7224c7316d0d02e1aba30f" />
       <keyword name="StoreRenderState" id="simul::dx11::RenderPlatform::StoreRenderState" ref="classsimul_1_1dx11_1_1RenderPlatform.html#a2ffad4229d772bb6e61d4773960fffbf" />
       <keyword name="SynchronizeCacheAndState" id="simul::dx11::RenderPlatform::SynchronizeCacheAndState" ref="classsimul_1_1dx11_1_1RenderPlatform.html#ae7e1b9f67ee9807cdbfd0e7b737fef09" />
+      <keyword name="simul::dx11::ShaderIncludeHandler" id="simul::dx11::ShaderIncludeHandler" ref="classsimul_1_1dx11_1_1ShaderIncludeHandler.html" />
       <keyword name="simul::dx11::TrueSkyRenderer" id="simul::dx11::TrueSkyRenderer" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html" />
       <keyword name="CopySkylight" id="simul::dx11::TrueSkyRenderer::CopySkylight" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#a3a29d7e32989e1e6c08a633659e2da23" />
       <keyword name="SetAmortization" id="simul::dx11::TrueSkyRenderer::SetAmortization" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#aa63a54f0ccfea9f7e261fdb87589a919" />
@@ -2493,14 +2498,14 @@
       <file>man_2_gettingstarted.html</file>
       <file>SimulOverview.png</file>
       <file>man_3_environment.html</file>
-      <file>man_3_environment_ooo2_sky_keyframer.html</file>
+      <file>man_3_environment_ooo1_sky_keyframer.html</file>
       <file>SkyKeyframerLinked.png</file>
       <file>man_3_environment_ooo2_cloud_keyframer.html</file>
       <file>man_4_rendering.html</file>
       <file>MilkyWay.png</file>
       <file>rain.jpg</file>
       <file>Lightning-RainStreaks.jpg</file>
-      <file>man_4_rendering_ooo6_shaders.html</file>
+      <file>man_4_rendering_ooo1_shaders.html</file>
       <file>man_5_mixed_resolution.html</file>
       <file>man_8_sequencer.html</file>
       <file>Timeline.png</file>
@@ -2513,12 +2518,6 @@
       <file>man_a_licensing.html</file>
       <file>structDepthTextureStruct.html</file>
       <file>structDepthTextureStruct-members.html</file>
-      <file>classDetectChangesIncludeHandler.html</file>
-      <file>classDetectChangesIncludeHandler-members.html</file>
-      <file>classDirect3D11CallbackInterface.html</file>
-      <file>classDirect3D11CallbackInterface-members.html</file>
-      <file>classShaderIncludeHandler.html</file>
-      <file>classShaderIncludeHandler-members.html</file>
       <file>classObj_1_1File.html</file>
       <file>classObj_1_1File-members.html</file>
       <file>structObj_1_1Surface.html</file>
@@ -2658,12 +2657,20 @@
       <file>namespacesimul_1_1dx11.html</file>
       <file>classsimul_1_1dx11_1_1ConstantBuffer.html</file>
       <file>classsimul_1_1dx11_1_1ConstantBuffer-members.html</file>
+      <file>classsimul_1_1dx11_1_1DetectChangesIncludeHandler.html</file>
+      <file>classsimul_1_1dx11_1_1DetectChangesIncludeHandler-members.html</file>
+      <file>classsimul_1_1dx11_1_1Direct3D11CallbackInterface.html</file>
+      <file>classsimul_1_1dx11_1_1Direct3D11CallbackInterface-members.html</file>
       <file>classsimul_1_1dx11_1_1Direct3D11Manager.html</file>
       <file>classsimul_1_1dx11_1_1Direct3D11Manager-members.html</file>
+      <file>classsimul_1_1dx11_1_1Direct3D11ManagerInterface.html</file>
+      <file>classsimul_1_1dx11_1_1Direct3D11ManagerInterface-members.html</file>
       <file>classsimul_1_1dx11_1_1Framebuffer.html</file>
       <file>classsimul_1_1dx11_1_1Framebuffer-members.html</file>
       <file>classsimul_1_1dx11_1_1RenderPlatform.html</file>
       <file>classsimul_1_1dx11_1_1RenderPlatform-members.html</file>
+      <file>classsimul_1_1dx11_1_1ShaderIncludeHandler.html</file>
+      <file>classsimul_1_1dx11_1_1ShaderIncludeHandler-members.html</file>
       <file>classsimul_1_1dx11_1_1TrueSkyRenderer.html</file>
       <file>classsimul_1_1dx11_1_1TrueSkyRenderer-members.html</file>
       <file>structsimul_1_1dx11_1_1VertexBuffer.html</file>
