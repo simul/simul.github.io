@@ -4,6 +4,9 @@ layout: unreal
 weight : 3
 ---
 
+trueSKY in Blueprint
+========
+
 The trueSKY Blueprint macros provide a wide array of functionality while your game is playing or simulating, so these macros will not take effect unless you are in one of these modes. To permanently change the properties of a light, start simulating, and right-click your Directional Light, then select "Keep Simulation Changes".
 
 
@@ -31,9 +34,17 @@ If you do not have a PointLight actor, you can use SetPointLightSource to apply 
 Time of Day
 ------------
 
-To change the time of day, use the SetTime function of the trueSKY sequence actor (time is in days, from midnight on the first day (0.0):
+To change the time of day, use the SetTime function of the trueSKY sequence actor (time is in days, from midnight on the first day (0.0). For framerate-independent progression, it is advisable to make use of Delta Time. For information on how to do this, please [view the tutorial here](http://docs.simul.co/unrealengine/Tutorial.html).
+ 
+<a href="http://docs.simul.co/unrealengine/images/SettingTime.png"><img src="http://docs.simul.co/unrealengine/images/SettingTime.png" alt="Blueprint"/></a>
 
-<a href="http://docs.simul.co/unrealengine/images/SetTime.png"><img src="http://docs.simul.co/unrealengine/images/SetTime.png" alt="Blueprint" /></a>
+
+The Sky and Clouds 
+------------
+
+Both the sky and clouds can be accessed and edited in Blueprint.  
+
+Read more about [editing the sky here](http://docs.simul.co/unrealengine/Sky.html) and about [editing the clouds here](http://docs.simul.co/unrealengine/Clouds.html)
 
 
 Transparency

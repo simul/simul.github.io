@@ -116,4 +116,4 @@ Further Information
 
 To help get to grips with trueSKY for Unreal Engine 4, you can [view the tutorial here](http://docs.simul.co/unrealengine/Tutorial.html)
 
-Next: <a href="/unrealengine/Tutorial">Tutorial</a>
+Next: <a href="/unrealengine/Blueprint">Blueprint</a>

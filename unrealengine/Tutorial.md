@@ -4,7 +4,10 @@ layout: unreal
 weight : 7
 ---
 
-If you haven't already, please see here [Getting Started](http://docs.simul.co/unrealengine/) for information on how to install, build and run the plugin in Unreal Engine 4. 
+Tutorial
+========
+
+If you haven't already, please see [Getting Started](http://docs.simul.co/unrealengine/) for information on how to install, build and run the plugin in Unreal Engine 4. 
 
 Whether you have installed trueSKY via the Git Repo or via the binary installer, start by creating and opening a new project. When you first open the scene you will probably see the default Sky and Fog folder in the World Outliner. If so, then it is important to remove the contents of this folder (this may require deleting them individually and not just deleting the folder itself), as the default Fog and Sky sphere can cause issues with trueSKY. 
 
@@ -12,7 +15,7 @@ Whether you have installed trueSKY via the Git Repo or via the binary installer,
 
 After doing this you should see the default atmospherics disappear, leaving a black sky. Now we can insert a trueSKY Sequence Actor. To do so, click Window -> Add Sequence to Scene. Find the TrueSkySequenceActor in the World Outliner, and in the Details Panel, click on Active Sequence. If there are no existing trueSKY sequences to load, we can create a new one by clicking the Create New Asset option. Name this whatever you wish and find a location in which to save it. Once done, it will be automatically assigned to the TrueSkySequenceActor. You can change the sequence currently in use at any time by clicking on the Active Sequence option. 
 
-The sky in your scene should now appear blue, but will lack clouds or anything interesting. To liven up the scene, find your newly created sequence asset in the Content Browser and double click it. This will load the trueSKY Sequencer. If you haven't already, input your license key into the sequencer to allow full access. [Read more about the Sequencer here](http://docs.simul.co/reference/man_8_sequencer.html). For now however we will just add some basic clouds to the scene. To do this, right click in the 3D Clouds section of the timeline and click "New cloud keyframe". You can also add a 2D Cloud keyframe if you wish. 
+The sky in your scene should now appear blue, but will lack clouds or anything interesting. To liven up the scene, find your newly created sequence asset in the Content Browser and double click it. This will load the trueSKY Sequencer. If you haven't already, input your license key into the sequencer to allow full access. [Read more about the Sequencer here](http://docs.simul.co/reference/man_8_sequencer.html). For now however we will just add some basic clouds to the scene. To do this, right click in the 3D Clouds section of the timeline and click "New cloud keyframe".  
 
 <a href="http://docs.simul.co/unrealengine/images/AddCloudKF.png"><img src="http://docs.simul.co/unrealengine/images/AddCloudKF.png" alt="Blueprint"/></a>
 
@@ -45,7 +48,7 @@ Further Information
  
 * [The Sequencer](http://docs.simul.co/reference/man_8_sequencer.html) 
 * [Driving trueSKY via Blueprint](http://docs.simul.co/unrealengine/Blueprint.html) 
-* [Watch a video tutorial](https://www.youtube.com/watch?v=hE6qFzJgED4&feature=youtu.be&t=11m1s) 
+* [Watch a video tutorial](https://www.youtube.com/watch?v=hE6qFzJgED4) 
 
 
 Next: <a href="/unrealengine/Blueprint">Blueprint</a>
