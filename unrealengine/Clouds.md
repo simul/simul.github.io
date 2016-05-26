@@ -28,18 +28,25 @@ Though the primary means of manipulating the cloud layer is via the sequencer, t
 
 To get a cloud keyframe's properties, you will first need its Unique ID (Uid) to identify it. This can be entered manually (each keyframe's Uid is viewable and editable in the sequencer), but there are also Blueprint functions provided. These functions have a Layer Int parameter, which should be set to 1 for 3D Clouds or 2 for 2D Clouds. The functions are as follows:
 
-**GetCloudKeyframebyIndex:** Returns a cloud keyframe's Uid, given a cloud layer and an index (the first cloud keyframe in a sequence is 0, the second is 1 and so on).
+**GetCloudKeyframebyIndex:** Returns a cloud keyframe's Uid, given a cloud layer and an index (this is zero-indexed; the first cloud keyframe in a sequence is 0, the second is 1 and so on).
+
 **GetPreviousCloudKeyframeBeforeTime:** Given a cloud layer and a time, returns the Uid of the last cloud keyframe before said time.
+
 **GetNextCloudKeyframeAfterTime:** Given a cloud layer and a time, returns the Uid of the next cloud keyframe after said time.
+
 **GetNextModifiableCloudKeyframe:** Given a cloud layer, returns the Uid of the next cloud keyframe that can be modified without requiring any recalculation (this will be the next cloud keyframe + 1).
+
 **GetInterpolatedCloudKeyframe:** Returns the current interpolated cloud keyframe's Uid (Note: this cannot be used to set any values; it is read-only).
 
 
 Once you have a cloud keyframe's Uid, you can Get and Set its properties. These functions have a Name parameter, which must be set to the matching string for the property required (see the table below). The functions are as follows:
 
 **GetKeyFrameFloat:** Given a keyframe Uid and a name string, returns the float value matching the name.
+
 **GetKeyframeInt:** Given a keyframe Uid and a name string, returns the integer value matching the name.
+
 **SetKeyframeFloat:** Given a keyframe Uid, a name string and a float value, will set the matching property for the Name to the specified float value.
+
 **SetKeyframeInt:** Given a keyframe Uid, a name string and an integer value, will set the matching property for the Name to the specified integer value.
 
 <a href="http://docs.simul.co/unrealengine/images/CloudBPGetSet.png"><img src="http://docs.simul.co/unrealengine/images/CloudBPGetSet.png" alt="Blueprint"/></a>

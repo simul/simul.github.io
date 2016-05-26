@@ -23,18 +23,25 @@ Editing the Sky in Blueprint
 
 To get a sky keyframe’s properties, you will first need its Unique ID (Uid) to identify it. This can be entered manually (each keyframe’s Uid is viewable and editable in the sequencer), but there are also Blueprint functions provided. The functions are as follows:
 
-**GetSkyKeyframebyIndex:** Returns a sky keyframe’s Uid, given an index (the first sky keyframe in a sequence is 0, the second is 1 and so on).
+**GetSkyKeyframebyIndex:** Returns a sky keyframe’s Uid, given an index (where 1 = the first keyframe).
+
 **GetPreviousSkyKeyframeBeforeTime:** Given a time, returns the Uid of the last sky keyframe before said time.
+
 **GetNextSkyKeyframeAfterTime:** Given a time, returns the Uid of the next sky keyframe after said time.
+
 **GetNextModifiableSkyKeyframe:** Returns the Uid of the next sky keyframe that can be modified without requiring any recalculation (this will be the next sky keyframe + 1).
+
 **GetInterpolatedSkyKeyframe:** Returns the current interpolated sky keyframe’s Uid (Note: this cannot be used to set any values; it is read-only).
 
 
 Once you have a sky keyframe’s Uid, you can Get and Set its properties. These functions have a Name parameter, which must be set to the matching string for the property required (see the table below). The functions are as follows:
 
 **GetKeyFrameFloat:** Given a keyframe Uid and a name string, returns the float value matching the name.
+
 **GetKeyframeInt:** Given a keyframe Uid and a name string, returns the integer value matching the name.
+
 **SetKeyframeFloat:** Given a keyframe Uid, a name string and a float value, will set the matching property for the Name to the specified float value.
+
 **SetKeyframeInt:** Given a keyframe Uid, a name string and an integer value, will set the matching property for the Name to the specified integer value.
 
 <a href="http://docs.simul.co/unrealengine/images/SkyBPGetSet.png"><img src="http://docs.simul.co/unrealengine/images/SkyBPGetSet.png" alt="Blueprint"/></a>
@@ -62,7 +69,7 @@ SunElevation| How high the sun is in the sky.
 MoonElevation| How high the moon is in the sky. 
 SunAzimuth| The horizontal angle of the sun.
 MoonAzimuth| The horizontal angle of the moon.
-MieRed, MieGreen, MieBlue| The Mie scattering coefficients (x=red,y=green,z=blue).  
+MieRed, MieGreen, MieBlue| The Mie scattering coefficients (x=red,y=green,z=blue). 
 SeaLevelTemperatureK| Used for infrared rendering.
 
 

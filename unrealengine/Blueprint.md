@@ -44,7 +44,7 @@ The Sky and Clouds
 
 Both the sky and clouds can be accessed and edited in Blueprint.  
 
-Read more about [editing the sky here](http://docs.simul.co/unrealengine/Sky.html) and about [editing the clouds here](http://docs.simul.co/unrealengine/Clouds.html)
+Read more about [editing the sky here](http://docs.simul.co/unrealengine/Sky.html) and about [editing the clouds here](http://docs.simul.co/unrealengine/Clouds.html).
 
 
 Transparency
