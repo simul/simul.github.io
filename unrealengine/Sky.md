@@ -23,7 +23,7 @@ Editing the Sky in Blueprint
 
 To get a sky keyframe’s properties, you will first need its Unique ID (Uid) to identify it. This can be entered manually (each keyframe’s Uid is viewable and editable in the sequencer), but there are also Blueprint functions provided. The functions are as follows:
 
-**GetSkyKeyframebyIndex:** Returns a sky keyframe’s Uid, given an index (where 1 = the first keyframe).
+**GetSkyKeyframebyIndex:** Returns a sky keyframe’s Uid, given an index (this is zero-indexed; the first sky keyframe in a sequence is 0, the second is 1 and so on).
 
 **GetPreviousSkyKeyframeBeforeTime:** Given a time, returns the Uid of the last sky keyframe before said time.
 

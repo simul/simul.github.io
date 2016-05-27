@@ -114,6 +114,9 @@ Modified Files in the Unreal Engine
 Further Information
 ---
 
-To help get to grips with trueSKY for Unreal Engine 4, you can [view the tutorial here](http://docs.simul.co/unrealengine/Tutorial.html)
+* [trueSKY Tutorial: Unreal Engine 4](http://docs.simul.co/unrealengine/Tutorial.html)
+* [The Sequencer](http://docs.simul.co/reference/man_8_sequencer.html)
+* [Scripting in trueSKY](http://docs.simul.co/unity/Scripting.html) 
 
-Next: <a href="/unrealengine/Blueprint">Blueprint</a>
+
+Next: <a href="/unrealengine/Tutorial">Tutorial</a>
