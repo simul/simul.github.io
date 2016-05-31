@@ -10,28 +10,40 @@ trueSKY alpha for Unity
 Getting started
 --------------
 
+* Register your username at [https://simul.co/register](https://simul.co/register)
+* You'll find your licence at [simul.co/account](https://simul.co/account).
+* After evaluating, to get a full indie licence, head to [simul.co/truesky/truesky-alpha-for-unity/](http://simul.co/truesky/truesky-alpha-for-unity/). For all other licences, write to [contact@simul.co](mailto:contact@simul.co).
+
+
+Installation and Initialisation
+--------------
+
+You can download the packaged trueSKY assets from [http://simul.co/truesky/download/](http://simul.co/truesky/download/). Simply import these into a your project to use.
+
 Because the current version works only with DirectX 11, you will need to switch your project to DirectX 11 mode to see the rendered output. Do this using Edit:Project Settings:Player. In the Inspector, under "Settings for PC, Mac and Linux Standalone", in "Other Settings", chose "Use Direct3D 11*". Additionally, if you are using the PopcornFX plugin, you will need to set native rendering to "Before Image Effect" for it to work alongside trueSKY.
 
-To activate trueSKY alpha, go to the GameObject menu, and select "*initialize trueSKY in scene*". This launches a dialogue - usually the default options will be fine. At the last step, this dialog will create:
+To activate trueSKY alpha, go to the GameObject menu, and select "*initialise trueSKY in scene*". This launches the trueSKY Setup Wizard - usually the default options will be fine. This will create:
 
 * A Sequence asset containing sky and cloud data.
 * A trueSKY object in the scene.
-* A TrueSkyCamera component for the main camera.
-* A TransparencyCamera component for the main camera.
+* A TrueSkyCamera component for the main camera. 
+* A trueSKY Cubemap Probe component for the main camera.
 * A SimulSun component for the Directional Light in the scene.
 
-If there is no Directional Light, one will be created.
+If there is no Directional Light, one will be created. Similarly if there are no cameras one can be created or if there are multiple cameras an option to assign the script to all cameras will be provided.
 
-After initialization, select your main Camera, and find the TrueSkyCamera component. This component has a checkbox for "Flipped View". If you are using Forward rendering (under "Rendering Path" in the Camera component), and have extra post-processing components attached and enabled, you may need to set the "Flipped View" box. This is because Unity reverses the y-component of its framebuffers when performing post-processing.
+After initialisation, select your main Camera, and find the TrueSkyCamera component. This component has a checkbox for "Flipped View". If you are using Forward rendering (under "Rendering Path" in the Camera component), and have extra post-processing components attached and enabled, you may need to set the "Flipped View" box. This is because Unity reverses the y-component of its framebuffers when performing post-processing.
 
 trueSKY performs best with a near clipping plane around 1m, and a far plane between 100,000 and 500,000 metres. This is because the appearance of the atmospheric effects is dependent on the numerical precision of the depth buffer.
 
 User Interface
 --------------
-The wizard to add trueSKY to a scene is found in the GameObject menu.
+As mentioned above, the wizard to add trueSKY to a scene is found in the GameObject menu, under "Initialize trueSKY in scene". Just below this, you can click "Remove trueSKY from scene" to do just that.
 Under the Window menu are toggles for the trueSKY debug overlays.
 General trueSKY properties are found by selecting the trueSKY object in the scene.
 Sequence properties are found by editing Sequence assets. 
+
+A selection of overlays and visual toggles are also provided to aid testing and debugging. These can be found under Window -> trueSKY, along with an option to recompile the trueSKY shaders.
 
 Transparencies
 -----------------------
@@ -43,11 +55,23 @@ This is your connection to trueSKY within a scene. Its controls are:
 
 **Render in Edit Mode**: Draw the trueSKY environment in the Game view from the Editor.
 
-**Cloud Steps**: Number of raytracing steps to use - more=higher definition, fewer=faster.
+**Metres Per Unit**: Number of trueSKY metres per Unity unit.
 
-**Downscale**: Resolution to render the clouds to - higher numbers = lower resolution.
+**Cloud Shadowing**: The strength of the cloud shadowing effect (darkens objects beneath clouds).
 
-**Gamma**: If you are not using Linear Color Space, this controls gamma-correction of the trueSKY environment.
+**Shadow Sharpness**: How much to sharpen cloud shadows.
+
+**Threshold Distance**: Heuristic threshold for depth downscaling (optimal values between 0.1 and 2.0).
+
+**Cloud Steps**: Number of raytracing steps to use; more = higher definition, fewer = faster.
+
+**Downscale Factor**: Resolution to render the clouds to ; higher numbers = lower resolution.
+
+**Amortization**: Amortization of scattering volume generation for clouds.
+
+**Atmospherics Amortization**: Amortization to use for generating atmoshperics tables.
+
+**Depth Blending**: If true, uses depth-blending for clouds. If false, clouds are drawn behind or in front of scenery, depending on altitude.
 
 **Sequence Asset**: The asset containing sky sequence data. Double-click this to edit the sky sequence.
 
@@ -55,11 +79,20 @@ This is your connection to trueSKY within a scene. Its controls are:
 
 **Speed**: Determines how quickly Time changes when in-game.
 
-**Diagnostics**: A set of overlays for debugging. Of particular interest is "Show Celestial Display", which tracks the motion of the Sun and Moon in the sky.
+**Sim Time Rain:** If true, rain falls at simulation speeds (and even faster if time is progressing more quickly). If false, rain falls relative to real time.
 
-**Simulation Time Rain:** Set true or false - if true, rain falls at simulation speeds - faster if time is progressing more quickly. If false, rain falls relative to real time.
+**Cosmic Background**: Image for use as the cosmic background.
 
-**Performance** If true, this enables CPU and GPU profiling for trueSKY. The results will be updated every few frames, and shown in the text area beneath the "Performance" checkbox. The sliders "CPU level" and "GPU level" let you set the depth of the profiling tree for CPU and GPU respectively.
+**Moon Texture**: Texture to be applied to the moon.
+
+**Find Constellation**: Find a star constellation at given coordinates.
+
+**GPU Level**: Sets depth of profiling tree for GPU.
+
+**CPU Level**: Sets depth of profiling tree for CPU.
+
+**Profiling** If true, enables CPU and GPU profiling for trueSKY. The results will be updated every few frames, and shown in the text area beneath the "Profiling" checkbox. 
+
 
 The Sky Sequence
 ---------------
