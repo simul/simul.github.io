@@ -41,20 +41,20 @@ Time in trueSKY is measured such that 0.0 is midnight on the first day, 0.5 is n
 To do so, first set the Speed variable in the trueSKY object to 0, so it doesn't affect the time. Create and attach a new script to the trueSKY object, and open it. The trueSKY time is changed via the trueSKY.Time value. You can approach this however you wish,  This will return the time in seconds since the last frame, so multiplying  whatever rate of time increase you specify by this allows the time in trueSKY to be updated smoothly and accurately. In this example I have created a public "timeToAdd" float, which is set in the editor to 0.01666 (1 / 60), making one trueSKY day equivalent to one real-time minute.
 
 
-		private trueSKY tS;
-		public float timeToAdd;
-		public float startTime;
+	private trueSKY tS;
+	public float timeToAdd;
+	public float startTime;
 	 
-		void Start () 
-		{
-			tS = trueSKY.GetTrueSky ();
-			tS.time = startTime; 
-		}
+	void Start () 
+	{
+		tS = trueSKY.GetTrueSky ();
+		tS.time = startTime; 
+	}
 	 
-		void Update () 
-		{ 
-			tS.time += timeToAdd * Time.deltaTime;
-		}
+	void Update () 
+	{ 
+		tS.time += timeToAdd * Time.deltaTime;
+	}
 
 If you press play now you will see the clouds move, along with the sun, moon and at night time, the stars. 
 
