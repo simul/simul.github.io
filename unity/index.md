@@ -111,11 +111,11 @@ Sometimes, you might not want a day-night cycle or changing time-of-day, but sti
 
 Edit the Sequence asset by clicking on it in the Project window. Select the Sky (click on the word "Sky" at lower left) and uncheck "*Link Keyframe time and daytime*".
 
-![](http://simul.co/wp-content/uploads/documentation/unity/FixingDaytime1.jpg)
+<a href="http://docs.simul.co/unity/images/FixingDaytime1.png"><img src="http://docs.simul.co/unity/images/FixingDaytime1.png" alt="index"/></a>
 
 Now, select all the Sky keyframes (box-select or double-click). Under "Sun and Moon", change the "daytime" of the keyframes to be the same value (e.g. 06:45 below). Now time and time-of-day are uncoupled.
-
-![](http://simul.co/wp-content/uploads/documentation/unity/FixingDaytime2.jpg)
+ 
+<a href="http://docs.simul.co/unity/images/FixingDaytime2.png"><img src="http://docs.simul.co/unity/images/FixingDaytime2.png" alt="index"/></a> 
 
 
 Further Information
