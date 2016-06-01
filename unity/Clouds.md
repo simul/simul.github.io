@@ -4,139 +4,125 @@ layout: unity
 weight : 4
 ---
 
-Cloud Layers and Cloud Keyframes
+Clouds in trueSKY
 ========
 
-To select a cloud keyframe, click it. To select all the keyframes of a cloud layer, double-click on the space between them. To select and modify the properties of a whole cloud layer, click on the "Clouds" text at left.
+Editing Clouds in the Sequencer
+----------------
+
+To select a cloud keyframe, click it. To select all the keyframes of a cloud layer, double-click on the space between them. To select and modify the properties of a whole cloud layer, click on the “Clouds” text at left.
 
 Read more about editing the Cloud Layer or Cloud Keyframes on [The Sky Sequencer Page](http://docs.simul.co/reference/man_8_sequencer.html).
 
-To find out if there is cloud at a given 3D position, use **trueSKY.GetCloudAtPosition**; for rain, use **trueSKY.GetPrecipitationAtPosition**.
 
-3D Cloud properties can be set using ***trueSKY.SetCloudFloat*** and ***trueSKY.SetCloudFloat***. These are the properties that can be set:
-
-**CloudWidth:**("CloudWidth", "CloudWidthKm" or "CloudWidthMetres") Width of the clouds in km or metres (will default to km). 
-
-**NoisePeriod:** Period in days of the fractal noise function.
-
-**EdgeNoisePersistence:** Fractal persistence to use when generating the noise texture.
-
-**CloudShadowRange:** Range of the cloud shadow texture in km.
-
-For example:
-
-	trueSky.SetCloudFloat("NoisePeriod", 2.0F);
-
-Integer properties are set using ***trueSKY.SetCloudInt*** and ***trueSKY.SetCloudInt***. These are the properties that can be set:
-
-
-**GridWidth:** Grid width - use powers of 2.
-
-**GridHeight:** Grid height - use powers of 2.
-
-**Use3DNoise:** Whether to use 3D noise textures for the edge effect.
-
-**Wrap:** Whether to wrap clouds horizontally.
-
-**NoiseResolution:** Size of the noise function - powers of 2.
-
-**OverrideWind:** Whether to set wind speed and direction directly, or use the keyframe values.
-
-**EdgeNoiseOctaves:** Number of fractal octaves for the edge noise effect.
-
-**EdgeNoiseFrequency:** Frequency (power of 2) of the edge noise effect.
- 
-**EdgeNoiseTextureSize:** Texture size (power of 2) of the edge noise effect.
- 
-**ExplicitOffsets:** Whether to use explicit cloud offset positions ("offsetx", "offsety" in cloud keyframes).
- 
-**ShadowTextureSize:** Size of the cloud shadow texture.
-
-**DefaultNumSlices:** Default number of volume cloud samples for rendering - typically 80-200.
-
-**Visible:** Show or hide the clouds.
-
-**Generation Properties**
---------
-These are the editable properties - in brackets are given the properties as you would specify them when scripting with GetKeyframeValue and SetKeyframeValue.
-Some cloud keyframe properties are used as per-keyframe values to generated the 3D or 2D cloud textures. These textures are then interpolated for rendering.
-
-**Cloudiness:** ("cloudiness") How cloudy it will be at this keyframe.
-
-**Distribution base:** ("distributionBaseLayer") Proportion of the volume vertically that forms the base of the clouds.
-
-**Distribution transition:** ("distributionTransition") Proportion that transitions from the cloudbase to the upper layer.
-
-**Upper density:** ("upperDensity") Density of the upper layer as a proportion of the base density.
-
-**Octaves:** ("octaves" - int) How many fractal octaves to use.
-
-**Persistence:** ("persistence") Fractal persistence.
-
-**Extinction:** ("extinction") How much light is lost per metre through the clouds.
-
-**Diffusivity:** ("diffusivity") How diffuse are the cloud edges.
-
-The cloud shape can be controlled using the keyframe properties **distribution base**, **distribution transition** and **upper density**.
-
-**Interpolated Properties**
+Editing Clouds via Scripting: The Cloud Layer
 ---------------
-Some are used as interpolated values per-frame when rendering, either to determine the geometry of the clouds:
-
-**Wind_speed:** ("windSpeed") How fast, in m/s.
-
-**Wind direction:** ("WindHeadingDegrees") Direction in compass degrees.
-
-**Cloud base:** ("cloudBase") Height of the cloudbase in km above sea level.
-
-**Cloud height:** ("cloudHeight") Height of the clouds in km.
-
-**Offset:**("offsetxKm","offsetyKm") If absolute positioning (see cloud layer property "ExplicitOffsets") is enabled, the offset in km.
+ 
+For information on what functions to use when getting and setting cloud layer properties, see [Scripting](http://docs.simul.co/unity/Scripting.html). The tables below show the various cloud layer properties (named as they appear in the sequencer), along with the matching name string to use for scripting. **Note**: Parameters that are Bools in the Sequencer are treated as Ints in scripting, where 0 = false and 1 = true.
 
 
-**Visual Properties**
+** Floating-point**
+
+Sequencer Property | Name Variable | Definition
+-------------------|---------------|---------
+Threshold |"precipitationThresholdKm"| Thickness of cloud needed for rainfall. Between 0.0 and 10.0 
+Radius | "precipitationRadiusMetres"| Size of particle zone. Between 0.0 and 100.0.
+Rain Speed| "rainFallSpeedMS"| Between 0.0 and 120.0
+Raindrop Size|"rainDropSizeMm"| Between 0.001 and 100.0.
+Shadow|"cloudShadowStrength" | Amount of shadow. Between 0.0 and 1.0
+Shadow Range|"cloudShadowRange"| Range of cloud shadow texture, in Km. Between 0.5 and 200.0.
+Max cloud dist|"maxCloudDistanceKm"| Distance of furthest cloud layer. Between 100.0 and 500.0.
+Noise Period | "noisePeriod" | Fractal noise period, in days. Between 0.001 and 1000.0 
+Persistence |"edgeNoisePersistence"| Persistence for edge noise texture. Between 0.0 and 1.0
+
+
+** Integer**
+
+Sequencer Property| Name Variable | Definition
+------------------|---------------|------------
+Enabled|"Visible"|Whether or not GPU should calculate clouds. Bool.
+Wrap Horizontally|"wrap"| Whether to wrap clouds horizontally. Bool.
+Override Wind| "overrideWind"| Whether to override keyframe wind speed. Bool.
+Render Mode|"renderMode"| How renderer should raytrace clouds. Standard = 0, Simplified = 1.
+Max Particles|"maxPrecipitationParticles"| The max number of rain particles to render. Between 0 and 1000000
+Default Slices|"defaultNumSlices"| Number of slices in main view. Between 80 and 255.
+Shadow Texture Size|"shadowTextureSize"| Size of cloud shadow texture. Powers of 2 between 16 and 256.
+Grid Width|"gridWidth"| Width of grid (determines cloud detail). Powers of 2 between 16 and 512.
+Grid height|"gridHeight"| Height of grid (determines cloud detail). Powers of 2 between 1 and 64.
+Noise Resolution|"noiseResolution"| 3D Perlin noise resolution, for cloud generation. Powers of 2 between 4 and 64.
+Frequency|"edgeNoiseFrequency"| Frequency of edge noise. Powers of 2 between 1 and 16.
+Resolution|"edgeNoiseResolution"| Resolution of edge noise texture. Powers of 2 between 4 and 64.
+
+   
+
+Editing Clouds via Scripting: Cloud Keyframes
+---------------  
+
+Keyframe properties for clouds generally fall into four categories:
+ 
+* **Generation**: These properties are used as per-keyframe values to generate the cloud textures. These textures are then interpolated for rendering. The following are generation properties: *Cloudiness*, *Distribution Base*, *Distribution Transition*, *Upper Density*, *Octaves*, *Persistence*, *Extinction* and *Diffusivity*. The shape of the clouds can be controlled using the distribution base, distribution transition and upper density.
+* **Interpolated**: When rendering, these properties are used as per-frame, interpolated values, and can be used to determine the geometry of the clouds. The following are interpolated properties: *Wind Speed*, *Wind Direction*, *Cloud Base*, *Cloud Height* and *Offset* (X and Y). 
+* **Visual**: These properties fine tune the appearance of trueSKY. The following are visual properties: *Local Density*, *Direct light*, *Indirect light*, *Ambient light*, *Light Asymmetry*, *Fractal Amplitude*, *Fractal Wavelength*, *Sharpness*, *Churn* and *Base noise factor*.
+* **Effect**: These properties are used to inform different parts of the rendering system, and generate various environmental and weather effects. The following are effect properties: *Precipitation*, *Rain - Snow*,*precipitationWindEffect*, *precipitationWaver*, *Godray strength*, *rainEffectStrength*, *Rain Radius* and *Rain Centre* (X and Y).
+
+For information on what functions to use when getting and setting cloud keyframe properties and Uids, see [Scripting](http://docs.simul.co/unity/Scripting.html). The tables below show the various cloud keyframe properties (named as they appear in the sequencer), along with the matching name string to use for scripting. **Note**: Parameters that are Bools in the Sequencer are treated as Ints in scripting, where 0 = false and 1 = true.
+
+ 
+
+**Floating-point**
+
+Sequencer Property|Name Variable|Definition
+------------------|-------------|-------
+Cloudiness| "cloudiness"| How much cloud in the cloud layer. Between 0.0 and 1.0.
+Cloudbase|"cloudBase"| Base altitude of cloud layer. Between -1.0 and 20.0.
+Layer Height|"cloudHeight"| Height of cloud layer, in Km. Between 0.1 and 25.0.
+Volume Width | cloudWidthKm", "cloudWidthMetres"| Width of cloud layer, in Km or Metres (depending on name string). Between 20.0Km and 200.0Km.
+Wind Speed |"windSpeed"| Wind speed in m/s. Between 0.0 and 1000.0.
+Wind Heading|windHeadingDegrees"| Horizontal cloud movement direction, in degrees. Between 0 and 360.0.
+Base Layer |"distributionBaseLayer"| Start of transition from cloudbase to upper cloud. Between 0.0 and 1.0.
+Transition|"distributionTransition"| Transition from cloudbase to upper cloud. Between 0.0 and 1.0.
+Upper Density|"upperDensity"| Proportion of cloud density retained in upper layer, above transition. Between 0.0 and 1.0.
+Persistence|"persistence"| Fractal persistence for generating clouds. Between 0.0 and 1.0.
+Worley Noise|"WorleyNoise"| How much Worley noise to apply. Between 0.0 and 1.0.
+Worley Scale|"WorleyScale"| Scale of Worley noise. Between 0.0 and 12.0 (locked to Int if clouds wrapped).
+Diffusivity| "diffusivity"| How much cloud edges should be diffused. Between 0.0 and 1.0.
+Direct Light| "directLight"| Amount of direct light. Between 0.0 and 4.0.
+Asymmetry|"lightAsymmetry" | Anisotropic distribution of direct lighting, or eccentricity. Between 0.0 and 1.0.
+Indirect Light|"indirectLight"| Amount of indirect light. Between 0.0 and 4.0.
+Ambient Light|"ambientLight"| Amount of ambient light. Between 0.0 and 4.0.
+Extinction| "extinction"| Amount of light scattered per metre (larger values = darker clouds). Between 0.0001 and 10.0.
+Godrays|"godrayStrength"| Strength of godray effect. Between 0.0 and 1.0.
+Scale| "fractalWavelength"| Wavelength of fractal edge effect. Between 1.0 and 1000.0.
+Amplitude | "fractalAmplitude"| Strength of fractal edge effect. Between 0.01 and 100.0.
+Worley Scale | "EdgeWorleyScale" |  Wavelength of fractal Worley noise. Between 0.1 and 10000.0.
+Worley Ampltitude |"EdgeWorleyNoise"| Strength of fractal Worley noise. Between 0.0 and 1.0.
+Sharpness| "edgeSharpness"| Sharpness applied at boundary. Between 0.0 and 1.0.
+Base Factor| "baseNoiseFactor"| Proportion of noise applied at cloudbase. Between 0.0 and 1.0.
+Churn |"churn"| Strength of cloud edge churning effect (larger values = more turbulent clouds). Between 0.001 and 1000.0.
+Radius (km)|"rainRadiusKm"| Radius of precipitation region. Between 0.1 and 1000.0.
+Strength|"precipitation"  | Amount of rain/snow. Between 0.0 and 1.0.
+Rain Streaks|"rainEffectStrength"| Visual strength of rain streak effect. Between 0.0 and 1.0.
+Rain - Snow|"rainToSnow"| Between 0.0 and 1.0 (0 = rain, 1 = snow, values in between are rounded).
+Wind Effect|"precipitationWindEffect"| How much precipitation is affected by wind. Between 0.0 and 1.0.
+Waver|"precipitationWaver"| How much precipitation wavers. Between 0.0 and 1.0.
+Offset (Map)|"offsetx", "offsety"| Offset of keyframe due to accumulation of wind motion.
+Precipitation Centre (Map)| "rainCentreXKm""rainCentreYKm"| Centre of precipitation region.
+
+  
+ 
+**Integer**
+
+Sequencer Property|Name Variable|Definition
+------------------|-------------|---------
+Octaves| "octaves"| Number of noise octaves to generate clouds. Between 1 and 5.
+Regional| "regionalPrecipitation" | Whether rain/snow falls only in specified region, or globally. Bool.
+Lock to Cloud| "lockRainToClouds" | Whether to make precipitation region move with wind motion. Bool
+
+ 
+
+
+Further Information
 ---------------
-
-**localDensity:** ("localDensity") 2D clouds only - the thickness of the local cloud distribution.
-
-**Direct light:** ("DirectLight") How much direct sunlight (moonlight) affects the clouds.
-
-**Indirect light:** ("IndirectLight") How much indirectly scattered light is shown.
-
-**Ambient light:** ("AmbientLight") How strongly the clouds reflect ambient light.
-
-**Light asymmetry:** ("Asymmetry") How asymmetric is the direct light scattering.
-
-**Fractal amplitude:** ("FractalAmplitude") Amplitude of the fractal edge effect.
-
-**Fractal wavelength:** ("FractalWavelength") Wavelength of the fractal edge effect.
-
-**Sharpness:** ("Sharpness") Sharpness of cloud edges.
-
-**Churn:** ("Churn") How much cloud turbulence is shown.
-
-**Base noise factor:** ("BaseFactor") How much the edge effect is shown at cloudbase.
-
-**Effect Properties**
----------------
-
-Other properties are used to inform different parts of the rendering system:
-
-**Precipitation**: ("Precipitation") Strength of rain or snow.
-
-**Rain to snow**: ("RainToSnow") Between zero (rain) and one (snow).
-
-**precipitationWindEffect**:
-
-**precipitationWaver**:
-
-**Godray strength**: ("GodrayStrength") Brightness of crepuscular rays.
-
-**rainEffectStrength**: ("")
-
-**rain Centre:** ("RainCentreXKm","RainCentreYKm") Centre of the rain area, if rain is regional for this keyframe.
-
-**rain Radius:** ("RainRadiusKm") Radius of the rain area, if rain is regional for this keyframe.
 
 
 Next: <a href="/unity/Sky">Sky</a>
