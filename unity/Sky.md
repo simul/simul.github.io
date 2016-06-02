@@ -16,6 +16,7 @@ Read more about how the sky is rendered in trueSKY [here](http://docs.simul.co/r
 Editing The Sky in the Sequencer
 ----------------
 
+
 To select a sky keyframe, click it. To select all the keyframes of the sky layer, double-click on the space between them. To select and modify the properties of the whole sky layer, click on the "Sky" text at left.
 
 <a href="http://docs.simul.co/unity/images/SkySeqExample.png"><img src="http://docs.simul.co/unity/images/SkySeqExample.png" alt="Sky"/></a> 
@@ -24,8 +25,9 @@ Read more about editing the Sky Layer or Sky Keyframes on [The Sky Sequencer Pag
 
 
 
-Editing Clouds Via Scripting: The Sky Layer
+Editing The Sky Via Scripting: The Sky Layer
 ---------------
+
 
 To Get/Set sky layer properties, use **trueSKY.GetSkyFloat**, **trueSKY.GetSkyInt**, **trueSKY.SetSkyFloat** and **trueSKY.SetSkyInt**. For more information on how to use these functions, see [Scripting](http://docs.simul.co/unity/Scripting.html). The tables below show the various sky layer properties (named as they appear in the sequencer), along with the matching name string to use for scripting. **Note**: Parameters that are Bools in the Sequencer are treated as Ints in scripting, where 0 = false and 1 = true.
 
@@ -76,6 +78,8 @@ For example, to set the Star Brightness to 10000:
 
 Editing The Sky Via Scripting: Sky Keyframes
 ---------------
+
+For information on what functions to use when getting and setting sky keyframe properties and Uids, see [Scripting](http://docs.simul.co/unity/Scripting.html). The tables below show the various sky keyframe properties (named as they appear in the sequencer), along with the matching name string to use for scripting. **Note**: Parameters that are Bools in the Sequencer are treated as Ints in scripting, where 0 = false and 1 = true.
  
 **A Note about Haze/Fog/Mist**: A keyframe’s haze value determines how much Mie-scattered haze (i.e. mist or fog) is present. Haze is considered to have a density that falls-off exponentially with altitude, so the Haze scale height property determines the scaling height for this exponential. Fog and mist are both effectively low-level clouds. Fog is defined as having visibility less than 1km, it is called mist when visibility is between 1 and 2 km.
 
@@ -100,7 +104,6 @@ Moon Azimuth | "MoonAzimuth" | Horizontal angle of moon, in radians. Between -3.
 
 Sequencer Property| Name Variable | Definition
 ------------------|---------------|------------ 
-
 Store as Colours | "StoreAsColours" | If true, keyframe stored as colour table, rather than generating colours from properties. Bool.
 Altitudes | "numColourAltitudes" | Number of altitudes for custom table texture. Between 1 and 8.
 Elevations | "numColourElevations" | Number of elevations for custom table texture. Between 1 and 15.
@@ -119,10 +122,10 @@ Time | "daytime" | The trueSKY time at which the keyframe starts. Betwee 0.0 and
 	{
 		tS = trueSKY.GetTrueSky();  
 		int numk = trueSky.GetNumSkyKeyframes()
-		uint uid = GetSkyKeyframeByIndex(numk - 1); 
-		tS.SetKeyframeValue(uid, "Haze", 12.0F) 
- 	}
- 
+		uint uid = GetSkyKeyframeByIndex(numk - 1);
+		tS.SetKeyframeValue(uid, "Haze", 12.0F)
+	}
+
 
 
 Next: <a href="/unity/index">Home</a>
