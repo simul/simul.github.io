@@ -7,21 +7,31 @@ weight : 4
 Clouds in trueSKY
 ========
 
+In trueSKY, clouds are split into two layers: 3D clouds and 2D clouds. They have similar properties, with the exception of precipitation, which is strictly for 3D clouds. These properties can be modified via the sequencer and via Blueprint visual scripting.
+
+Each layer has its own properties and its own keyframes. Layer properties will affect the entire sequence. Keyframe properties will only affect the keyframe in question, unless there is only one keyframe present, in which case this will be used continously. Otherwise the clouds will use interpolation to move between specified properties at adjacent keyframes.
+
+Read more about how clouds are rendered in trueSKY [here](http://docs.simul.co/reference/classsimul_1_1clouds_1_1BaseCloudRenderer.html).
+
+
 Editing Clouds in the Sequencer
 ----------------
 
 To select a cloud keyframe, click it. To select all the keyframes of a cloud layer, double-click on the space between them. To select and modify the properties of a whole cloud layer, click on the “Clouds” text at left.
 
+<a href="http://docs.simul.co/unity/images/CloudSeqExample.png"><img src="http://docs.simul.co/unity/images/CloudSeqExample.png" alt="Clouds"/></a> 
+
 Read more about editing the Cloud Layer or Cloud Keyframes on [The Sky Sequencer Page](http://docs.simul.co/reference/man_8_sequencer.html).
 
 
-Editing Clouds via Scripting: The Cloud Layer
+
+Editing Clouds Via Scripting: The Cloud Layer
 ---------------
  
-For information on what functions to use when getting and setting cloud layer properties, see [Scripting](http://docs.simul.co/unity/Scripting.html). The tables below show the various cloud layer properties (named as they appear in the sequencer), along with the matching name string to use for scripting. **Note**: Parameters that are Bools in the Sequencer are treated as Ints in scripting, where 0 = false and 1 = true.
+To Get/Set cloud layer properties, use **trueSKY.GetCloudFloat**, **trueSKY.GetCloudInt**, **trueSKY.SetCloudFloat** and **trueSKY.SetCloudInt**. For more information on how to use these functions, see [Scripting](http://docs.simul.co/unity/Scripting.html). The tables below show the various cloud layer properties (named as they appear in the sequencer), along with the matching name string to use for scripting. **Note**: Parameters that are Bools in the Sequencer are treated as Ints in scripting, where 0 = false and 1 = true.
 
 
-** Floating-point**
+**Floating-point**
 
 Sequencer Property | Name Variable | Definition
 -------------------|---------------|---------
@@ -30,13 +40,13 @@ Radius | "precipitationRadiusMetres"| Size of particle zone. Between 0.0 and 100
 Rain Speed| "rainFallSpeedMS"| Between 0.0 and 120.0
 Raindrop Size|"rainDropSizeMm"| Between 0.001 and 100.0.
 Shadow|"cloudShadowStrength" | Amount of shadow. Between 0.0 and 1.0
-Shadow Range|"cloudShadowRange"| Range of cloud shadow texture, in Km. Between 0.5 and 200.0.
+Shadow Range|"cloudShadowRange"| Range of cloud shadow texture, in km. Between 0.5 and 200.0.
 Max cloud dist|"maxCloudDistanceKm"| Distance of furthest cloud layer. Between 100.0 and 500.0.
 Noise Period | "noisePeriod" | Fractal noise period, in days. Between 0.001 and 1000.0 
 Persistence |"edgeNoisePersistence"| Persistence for edge noise texture. Between 0.0 and 1.0
 
 
-** Integer**
+**Integer**
 
 Sequencer Property| Name Variable | Definition
 ------------------|---------------|------------
@@ -55,7 +65,7 @@ Resolution|"edgeNoiseResolution"| Resolution of edge noise texture. Powers of 2 
 
    
 
-Editing Clouds via Scripting: Cloud Keyframes
+Editing Clouds Via Scripting: Cloud Keyframes
 ---------------  
 
 Keyframe properties for clouds generally fall into four categories:
@@ -63,7 +73,7 @@ Keyframe properties for clouds generally fall into four categories:
 * **Generation**: These properties are used as per-keyframe values to generate the cloud textures. These textures are then interpolated for rendering. The following are generation properties: *Cloudiness*, *Distribution Base*, *Distribution Transition*, *Upper Density*, *Octaves*, *Persistence*, *Extinction* and *Diffusivity*. The shape of the clouds can be controlled using the distribution base, distribution transition and upper density.
 * **Interpolated**: When rendering, these properties are used as per-frame, interpolated values, and can be used to determine the geometry of the clouds. The following are interpolated properties: *Wind Speed*, *Wind Direction*, *Cloud Base*, *Cloud Height* and *Offset* (X and Y). 
 * **Visual**: These properties fine tune the appearance of trueSKY. The following are visual properties: *Local Density*, *Direct light*, *Indirect light*, *Ambient light*, *Light Asymmetry*, *Fractal Amplitude*, *Fractal Wavelength*, *Sharpness*, *Churn* and *Base noise factor*.
-* **Effect**: These properties are used to inform different parts of the rendering system, and generate various environmental and weather effects. The following are effect properties: *Precipitation*, *Rain - Snow*,*precipitationWindEffect*, *precipitationWaver*, *Godray strength*, *rainEffectStrength*, *Rain Radius* and *Rain Centre* (X and Y).
+* **Effect**: These properties are used to inform different parts of the rendering system, and generate various environmental and weather effects. The following are effect properties: *Precipitation*, *Rain - Snow*, *precipitationWindEffect*, *precipitationWaver*, *Godray strength*, *rainEffectStrength*, *Rain Radius* and *Rain Centre* (X and Y).
 
 For information on what functions to use when getting and setting cloud keyframe properties and Uids, see [Scripting](http://docs.simul.co/unity/Scripting.html). The tables below show the various cloud keyframe properties (named as they appear in the sequencer), along with the matching name string to use for scripting. **Note**: Parameters that are Bools in the Sequencer are treated as Ints in scripting, where 0 = false and 1 = true.
 
@@ -75,8 +85,8 @@ Sequencer Property|Name Variable|Definition
 ------------------|-------------|-------
 Cloudiness| "cloudiness"| How much cloud in the cloud layer. Between 0.0 and 1.0.
 Cloudbase|"cloudBase"| Base altitude of cloud layer. Between -1.0 and 20.0.
-Layer Height|"cloudHeight"| Height of cloud layer, in Km. Between 0.1 and 25.0.
-Volume Width | cloudWidthKm", "cloudWidthMetres"| Width of cloud layer, in Km or Metres (depending on name string). Between 20.0Km and 200.0Km.
+Layer Height|"cloudHeight"| Height of cloud layer, in km. Between 0.1 and 25.0.
+Volume Width | cloudWidthKm", "cloudWidthMetres"| Width of cloud layer, in km or Metres (depending on name string). Between 20.0 km and 200.0 km.
 Wind Speed |"windSpeed"| Wind speed in m/s. Between 0.0 and 1000.0.
 Wind Heading|windHeadingDegrees"| Horizontal cloud movement direction, in degrees. Between 0 and 360.0.
 Base Layer |"distributionBaseLayer"| Start of transition from cloudbase to upper cloud. Between 0.0 and 1.0.

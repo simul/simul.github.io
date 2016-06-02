@@ -9,16 +9,20 @@ The Sky in trueSKY
 
 In trueSKY, the sky is modified in two ways: through sky keyframes and the sky layer. Keyframe properties will dictate the look of the sky at a given point in time -- with interpolation used to derive properties at times between keyframes -- whereas layer properties will be active throughout a sequence. Both can be modified via the sequencer or through the Blueprint system.
 
+Read more about how the sky is rendered in trueSKY [here](http://docs.simul.co/reference/classsimul_1_1sky_1_1BaseSkyRenderer.html).
 
-Editing the Sky in the Sequencer
+
+Editing The Sky in the Sequencer
 -------------------------
 
 To select a sky keyframe, click it. To select all the keyframes of the sky layer, double-click on the space between them. To select and modify the properties of whole sky layer, click on the "Sky" text at left.
 
+<a href="http://docs.simul.co/unrealengine/images/SkySeqExample.png"><img src="http://docs.simul.co/unrealengine/images/SkySeqExample.png" alt="Sky"/></a> 
+
 Read more about editing the Sky Layer or Sky Keyframes on [The Sky Sequencer Page](http://docs.simul.co/reference/man_8_sequencer.html).
 
 
-Editing the Sky in Blueprint
+Editing The Sky in Blueprint
 -------------------------
 
 To get a sky keyframe’s properties, you will first need its Unique ID (Uid) to identify it. This can be entered manually (each keyframe’s Uid is viewable and editable in the sequencer), but there are also Blueprint functions provided. The functions are as follows:
@@ -52,7 +56,7 @@ Editable Keyframe Properties
 
 The tables below show the various sky keyframe properties, for floating point and integer values respectively. The entry in the "Name" field is what should be used in the Name string parameter in any Blueprint calls to GetKeyframeFloat, GetKeyframeInt, SetKeyframeFloat and SetKeyframeInt. 
 
-**A Note about Haze/Fog/Mist:** A keyframe's haze value determines how much Mie-scattered haze (i.e. mist or fog) is present. Haze is considered to have a density that falls-off exponentially with altitude, so the Haze scale height property determines the scaling height for this exponential. Fog and mist are both effectively low-level clouds. Fog is defined as having visibility less than 1km, it is called mist when visibility is between 1 and 2 km.
+**A Note about Haze/Fog/Mist:** A keyframe's haze value determines how much Mie-scattered haze (i.e. mist or fog) is present. Haze is considered to have a density that falls-off exponentially with altitude, so the Haze scale height property determines the scaling height for this exponential. Fog and mist are both effectively low-level clouds. Fog is defined as having visibility less than 1 km, it is called mist when visibility is between 1 and 2 km.
 
 
 **Floating-point**

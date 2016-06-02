@@ -44,6 +44,18 @@ The functions needed to Get and Set layer properties are as follows:
 * **SetCloudFloat  (string name, float value)**: Sets the cloud layer float specified by the name string to the given float value.
 * **SetCloudInt  (string name, int value)**: Sets the cloud layer int specified by the name string to the given float value.
 
+
+**Example**: Incrementing the cloud layer rain speed by 5.
+
+	private trueSKY tS;  
+ 
+		void Start () 
+		{
+			tS = trueSKY.GetTrueSky (); 
+			tS.SetCloudFloat("rainFallSpeedMS", tS.GetCloudFloat("rainFallSpeedMS") + 5.0f);  
+		}
+
+
 For information about the layer properties you can change and the name strings needed to do so, see the [Cloud](http://docs.simul.co/unity/Clouds.html) and [Sky](http://docs.simul.co/unity/Sky.html) pages.
 
 
@@ -56,20 +68,20 @@ Keyframes in trueSKY can be accessed, counted, modified, created and deleted via
 
 * **GetSkyKeyframeByIndex (int index)**: Get the sky keyframe with specified index.
 * **GetInterpolatedSkyKeyframe ()**: Retrieve the interpolated (current) sky keyframe.
-* **InsertSkyKeyframe ()**: Insert a sky keyframe at specified time t.
+* **InsertSkyKeyframe (float t)**: Insert a sky keyframe at specified time t.
 * **GetNumSkyKeyframes ()**: Returns the total number of sky keyframes.
 
 **3D Clouds**:
 
 * **GetCloudKeyframeByIndex (int index)**: Get the 3D cloud keyframe with specified index.
-* **GetInterpolatedCloudKeyframe (int layer /*1*/)**: Retrieve the interpolated (current) 3D cloud keyframe.
-* **InsertCloudKeyframe ()**: Insert a 3D cloud keyframe at specified time t.
+* **GetInterpolatedCloudKeyframe (int layer = 1)**: Retrieve the interpolated (current) 3D cloud keyframe.
+* **InsertCloudKeyframe (float t)**: Insert a 3D cloud keyframe at specified time t.
 * **GetNumCloudKeyframes ()**: Returns the total number of 3D cloud keyframes.
 
 **2D Clouds**:
 
 * **GetCloud2DKeyframeByIndex (int index)**: Get the 2D cloud keyframe with specified index.
-* **GetInterpolatedCloudKeyframe (int layer /*2*/)**: Retrieve the interpolated (current) 2D cloud keyframe.
+* **GetInterpolatedCloudKeyframe (int layer = 2)**: Retrieve the interpolated (current) 2D cloud keyframe.
 * **Insert2DCloudKeyframe (float t)**: Insert a 2D cloud keyframe at specified time t.
 * **GetNumCloud2DKeyframes ()**: Returns the total number of 2D cloud keyframes.
 
@@ -126,9 +138,9 @@ The contents of the structs are as follows:
 * vec3 pos2_m: The end position used for the query.
 * int valid: Whether the query is valid (1) or not (0). Returns 0 for the first 3 frames.
 * float density: The cloud density (between 0.0 and 1.0).
-* float visibility: The visibility distance, in Km (between 0.1 and 10000.0).
-* float optical_thickness_metres: in Metres
-* float first_contact_metres: In Metres
+* float visibility: The visibility distance, in km (between 0.1 and 10000.0).
+* float optical_thickness_metres:  
+* float first_contact_metres:  
 
 
 **Storms**
@@ -140,10 +152,10 @@ The centre of a storm can be set via the SetStormCentre (float x, float y) funct
 
 As Unity and trueSKY treat coordinates differently (which axis is considered "up"), these functions are provided to convert between them when needed: 
 
-**Vector3 TrueSkyToUnityPosition(Vector3 ts_pos)**
-**Vector3 TrueSkyToUnityDirection(Vector3 ts_dir)**
-**Vector3 UnityToTrueSkyPosition(Vector3 upos)** 
-**Vector3 UnityToTrueSkyDirection(Vector3 u_dir)**
+* **Vector3 TrueSkyToUnityPosition(Vector3 ts_pos)**
+* **Vector3 TrueSkyToUnityDirection(Vector3 ts_dir)**
+* **Vector3 UnityToTrueSkyPosition(Vector3 upos)** 
+* **Vector3 UnityToTrueSkyDirection(Vector3 u_dir)**
 
 
 

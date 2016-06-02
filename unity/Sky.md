@@ -5,96 +5,124 @@ weight : 5
 ---
 
 
-Sky and Atmospherics
+The Sky in trueSKY
 =======
 
-To select a sky keyframe, click on it in the timeline; to select the overall sky properties, click "Sky" on the left of the timeline.
+In trueSKY, the sky is modified in two ways: through sky keyframes and the sky layer. Keyframe properties will dictate the look of the sky at a given point in time – with interpolation used to derive properties at times between keyframes – whereas layer properties will be active throughout a sequence. Both can be modified via the sequencer or through the Blueprint system.
+
+Read more about how the sky is rendered in trueSKY [here](http://docs.simul.co/reference/classsimul_1_1sky_1_1BaseSkyRenderer.html).
+
+
+Editing The Sky in the Sequencer
+----------------
+
+To select a sky keyframe, click it. To select all the keyframes of the sky layer, double-click on the space between them. To select and modify the properties of the whole sky layer, click on the "Sky" text at left.
+
+<a href="http://docs.simul.co/unity/images/SkySeqExample.png"><img src="http://docs.simul.co/unity/images/SkySeqExample.png" alt="Sky"/></a> 
 
 Read more about editing the Sky Layer or Sky Keyframes on [The Sky Sequencer Page](http://docs.simul.co/reference/man_8_sequencer.html).
 
-Sky properties can be set using ***trueSKY.SetSkyFloat*** and ***trueSKY.GetSkyFloat***. These are the properties that can be set:
-
-**LatitudeRadians:** Latitude, in radians.
-
-**LongitudeRadians:** Latitude, in radians.
-	
-**MaxStarMagnitude:** Maximum magnitude of star to be visible from the Bright Star Catalogue of 9110 stars. Star magnitude is between 0 (brightest) and 9 (dimmest).
-	
-**StarBrightness:** A multiplier for star brightness.
-	
-**BackgroundBrightness:** A multiplier for the brightness of the cosmic background texture.
-	
-**MaxDistanceKm:** Largest distance to use for generating atmospherics tables.
-	
-**MaxAltitudeKm:** Largest altitude to use for generating atmospherics tables.
-	
-**OvercastEffectStrength:** From 0 to 1, the amount that atmospheric inscatter is dimmed when the clouds are overcast.
-	
-**TimezoneHours:** A floating-point value - positive values are GMT+ (Eastern Hemisphere), negative are GMT- (Western).
-	
-**SunRadiusArcMinutes:** Size of the sun to render.
-	
-**MoonRadiusArcMinutes:** Size of the moon to render.
-
-For example:
-
-	trueSky.SetSkyFloat("StarBrightness", 10000.0F);
-
-There are also integer properties - use ***trueSKY.SetSkyInt*** and ***trueSKY.GetSkyInt***:
 
 
-**StartDayNumber:** Day number (Epoch 2000)
+Editing Clouds Via Scripting: The Sky Layer
+---------------
 
-**NumAltitudes:**  Number of altitudes in atmospheric table textures.
-
-**NumElevations:** Number of elevations in atmospheric table textures. 
-
-**NumDistances:** Number of distances in atmospheric table textures.
+To Get/Set sky layer properties, use **trueSKY.GetSkyFloat**, **trueSKY.GetSkyInt**, **trueSKY.SetSkyFloat** and **trueSKY.SetSkyInt**. For more information on how to use these functions, see [Scripting](http://docs.simul.co/unity/Scripting.html). The tables below show the various sky layer properties (named as they appear in the sequencer), along with the matching name string to use for scripting. **Note**: Parameters that are Bools in the Sequencer are treated as Ints in scripting, where 0 = false and 1 = true.
 
 
-Properties of a Sky Keyframe
--------------------------
+**Floating-point**
 
-These are the editable properties - in brackets are given the properties as you would specify them when scripting with GetKeyframeValue and SetKeyframeValue.
+Sequencer Property | Name Variable | Definition
+-------------------|---------------|---------    
+Brightness Power | BrightnessPower| Adjusts light levels to compensate for variations via power function (e.g 0.5 = square root dependence, 1.0 = no adjustment). Between 0.01 and 1.0.
+Max Altitude | MaxAltitudeKm | 	Max altitude that will be used for fade and sky colour calculations, in km. Between 2.0 and 100.0.
+Distance Range | "MaxDistanceKm"| Maximum distance for fade. Between 5.0 and 2000.0
+Overcast Effect | "OvercastEffectStrength"| How strongly cloud layer blocks light. Between 0.0 and 1.0.
+Ozone  | "OzoneStrength" | Amount of ozone. Between 0.0 and 0.2.
+Emissivity | "Emissivity"| Blackbody emissivity of atmosphere. Between 0.0 and 1.0.
+Diameter (Sun) | "SunRadiusArcMinutes"| Diameter of the sun. Between 0.01 and 30.0.
+Brightness Limit | "SunBrightnessLimit"| Brightness limit of the sunlight. Between 1.0 and 10000000.0 (1e+07).
+Latitude   | "LatitudeRadians"  | Between -1.57 (-90 degrees) and 1.57 (90 degrees)
+Longitude  | "LongitudeRadians"  |  Between -3.14159 (-180 degrees) and -3.14159 (180 degrees)
+Timezone+- | "TimezoneHours"| Between -12.0 and 12.0.
+Albedo | "MoonAlbedo"  | Between 0.0 and 1.0.
+Diameter (Moon) | "MoonRadiusArcMinutes" | Between 0.01 and 30.0.
+Max Magnitude | "MaxStarMagnitude" | Between 0.0 and 9.0.
+Brightness (Stars) | "StarBrightness" | Between 1.0 and 10000.0.
+Background  | "BackgroundBrightness" | Brightness multiplier for background texture. Between 0.000001 and 0.001.
 
-Get the last keyframe in the sequence:
+     
 
-	int numk=trueSky.GetNumSkyKeyframes()
-	uint uid=GetSkyKeyframeByIndex(numk-1);
+**Integer**
 
-Add a keyframe at midday:
-
-	uint uid=InsertSkyKeyframe(0.5F);
-
-Get or set the haze:
-
-	SetKeyframeValue(uid,"Haze",12.0F)
-	float h=GetKeyframeValue(uid,"Haze");
-
-Destroy a keyframe:
-
-	DeleteKeyframe(uid);
+Sequencer Property| Name Variable | Definition
+------------------|---------------|------------ 
+Altitudes | "NumAltitudes"| Number of altitudes in atmpsheric table textures. Betwen 1 and 8.
+Elevations | "NumElevations"| Number of elevations / height of table. Powers of 2 between 4 and 256.
+Distances | "NumDistances" | Number of distances / width of table. Powers of 2 between 4 and 128.
+Start Date | "StartDayNumber" | For calculating start position of sun/moon. Where 01/01/2000 = 0 , -1 = 31/12/1999, 01/01/2016 = 5844 etc (in the format: DD:MM:YYYY).
 
 
-**Time:** ("time") The time of this keyframe on the timeline.
+For example, to set the Star Brightness to 10000:
 
-**Daytime:** ("daytime") The time this keyframe represents, in a floating-point number of days from the starting midnight of the sequence. If the sky layer's "Link Keyframe Time and Daytime" value is true, this is the same as the keyframe's time value. Otherwise, it can be modified freely.
+	private trueSKY tS;  
+ 
+	void Start () 
+	{
+		tS = trueSKY.GetTrueSky(); 
+		tS.SetSkyFloat("StarBrightness", 10000.0F);  
+	} 
 
-**Mie:** ("MieRed","MieGreen","MieBlue") The Mie scattering coefficients (x=red,y=green,z=blue).
 
-**Auto Mie:** ("AutoMie") The Mie scattering coefficients will be calculated based on wavelength and haze if this is set - overrides Mie.
+Editing The Sky Via Scripting: Sky Keyframes
+---------------
+ 
+**A Note about Haze/Fog/Mist**: A keyframe’s haze value determines how much Mie-scattered haze (i.e. mist or fog) is present. Haze is considered to have a density that falls-off exponentially with altitude, so the Haze scale height property determines the scaling height for this exponential. Fog and mist are both effectively low-level clouds. Fog is defined as having visibility less than 1km, it is called mist when visibility is between 1 and 2 km.
 
-**Haze:** ("Haze") The amount of haze, mist or fog.
+**Floating-point**
 
-**Haze Base:** ("HazeBaseKm") The base altitude, above which haze starts to decrease in density.
+Sequencer Property|Name Variable|Definition
+------------------|--------------|----------
+Sea Level Deg. C | "SeaLevelTemperatureK" | For infrared rendering. Between -273.0 and 1000.0.
+Haze / Fog | "haze" | Amount of haze/mist. Alters visibility. Between 0.00001 and 1000.0.
+Haze Base, km | "HazeBaseKm" | Base altitude above which haze decreases in density. Between -2.0 and 20.0. 
+Haze Scale, km | " HazeScaleKm" | Vertical scale over which haze reduces with altitude. Between 0.1 and 10.0.
+Eccentricity | "HazeEccentricity" | Anisotropy of Mie scattering. Between 0.0 and 1.0.
+Mie Coefficients | "MieRed", "MieGreen", "MieBlue" | Mie scattering coefficients, xyz = RGB.
+Sun Elevation | " SunElevation" | How high the sun is, in radians. Between -1.57 (-90 degrees) and 1.57 (90 degrees).
+Sun Azimuth | "SunAzimuth" | Horizontal angle of sun , in radians. Between -3.14159 (-180 degrees) and -3.14159 (180 degrees).
+Moon Elevation | "MoonElevation" | How high the moon is, in radians. Between -1.57 (-90 degrees) and 1.57 (90 degrees).
+Moon Azimuth | "MoonAzimuth" | Horizontal angle of moon, in radians. Between -3.14159 (-180 degrees) and -3.14159 (180 degrees).
 
-**Haze Scale :** ("HazeScaleKm") The vertical scale over which haze reduces with altitude.
+ 
 
-**Eccentricity:** ("Eccentricity") The anisotropy of Mie scattering.
+**Integer**
 
-A keyframe's haze value determines how much Mie-scattered haze (i.e. mist or fog) is present. Haze is considered to have a density that falls-off exponentially with altitude, so the Haze scale height property determines the scaling height for this exponential.
+Sequencer Property| Name Variable | Definition
+------------------|---------------|------------ 
 
-Fog and mist are both effectively low-level clouds. Fog is defined as having visibility less than 1km, it is called mist when visibility is between 1 and 2 km.
+Store as Colours | "StoreAsColours" | If true, keyframe stored as colour table, rather than generating colours from properties. Bool.
+Altitudes | "numColourAltitudes" | Number of altitudes for custom table texture. Between 1 and 8.
+Elevations | "numColourElevations" | Number of elevations for custom table texture. Between 1 and 15.
+Distances | "numColourDistances" | Number of distances for custom table texture. Between 1 and 15.
+Automie | "AutoMie" | Whether to recalculate Mie coefficients based on the haze at this keyframe. Bool.
+Automatic Sun Position | "AutomaticSunPosition" | Whether to calculate sun position from date and time. Bool.
+Automatic Moon Position | "AutomaticMoonPosition" | Whether to calculate moon position from date and time. Bool.
+Time | "daytime" | The trueSKY time at which the keyframe starts. Betwee 0.0 and 1.0 (for the first day, second day would be 1.0 to 2.0 and so on).
+
+ 
+**Example**: To get the last keyframe in a sequence, and then set its haze value to 12:
+
+	private trueSKY tS;   
+
+	void Start () 
+	{
+		tS = trueSKY.GetTrueSky();  
+		int numk = trueSky.GetNumSkyKeyframes()
+		uint uid = GetSkyKeyframeByIndex(numk - 1); 
+		tS.SetKeyframeValue(uid, "Haze", 12.0F) 
+ 	}
+ 
 
 
 Next: <a href="/unity/index">Home</a>
