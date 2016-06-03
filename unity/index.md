@@ -20,9 +20,9 @@ Installation and Initialisation
 
 You can download the packaged trueSKY assets from [http://simul.co/truesky/download/](http://simul.co/truesky/download/). Simply import these into a your project to use.
 
-Because the current version works only with DirectX 11, you will need to switch your project to DirectX 11 mode to see the rendered output. Do this using Edit:Project Settings:Player. In the Inspector, under "Settings for PC, Mac and Linux Standalone", in "Other Settings", chose "Use Direct3D 11*". Additionally, if you are using the PopcornFX plugin, you will need to set native rendering to "Before Image Effect" for it to work alongside trueSKY.
+Because the current version works only with DirectX 11, you will need to ensure your project is in DirectX 11 mode to see the rendered output. Unity should automatically select DirectX 11, but if not, you can force this by going to Edit -> Project Settings -> Player. In the Inspector, under "Settings for PC, Mac and Linux Standalone", in "Other Settings", untick "“Auto Graphics API for Windows” and drag "Direct3D 11" to the top of the list. Additionally, if you are using the PopcornFX plugin, you will need to set native rendering to "Before Image Effect" for it to work alongside trueSKY.
 
-To activate trueSKY alpha, go to the GameObject menu, and select "*initialise trueSKY in scene*". This launches the trueSKY Setup Wizard - usually the default options will be fine. This will create:
+To activate trueSKY alpha, go to the GameObject menu, and select "*initialise trueSKY in scene*". This launches the trueSKY Setup Wizard — usually the default options will be fine. This will create:
 
 * A Sequence asset containing sky and cloud data.
 * A trueSKY object in the scene.
@@ -30,7 +30,7 @@ To activate trueSKY alpha, go to the GameObject menu, and select "*initialise tr
 * A trueSKY Cubemap Probe component for the main camera.
 * A SimulSun component for the Directional Light in the scene.
 
-If there is no Directional Light, one will be created. Similarly if there are no cameras one can be created or if there are multiple cameras an option to assign the script to all cameras will be provided.
+If there is no Directional Light, one will be created. Similarly, if there are no cameras, one can be created; if there are multiple cameras an option to assign the script to all cameras will be provided.
 
 After initialisation, select your main Camera, and find the TrueSkyCamera component. This component has a checkbox for "Flipped View". If you are using Forward rendering (under "Rendering Path" in the Camera component), and have extra post-processing components attached and enabled, you may need to set the "Flipped View" box. This is because Unity reverses the y-component of its framebuffers when performing post-processing.
 
@@ -38,12 +38,10 @@ trueSKY performs best with a near clipping plane around 1m, and a far plane betw
 
 User Interface
 --------------
-As mentioned above, the wizard to add trueSKY to a scene is found in the GameObject menu, under "Initialize trueSKY in scene". Just below this, you can click "Remove trueSKY from scene" to do just that.
-Under the Window menu are toggles for the trueSKY debug overlays.
+As mentioned above, the wizard to add trueSKY to a scene is found in the GameObject menu, under "Initialize trueSKY in scene". Just below this, you can click "Remove trueSKY from scene", to do just that. A selection of overlays and visual toggles are also provided to aid testing and debugging. These can be found under Window -> trueSKY, along with an option to recompile the trueSKY shaders.
 General trueSKY properties are found by selecting the trueSKY object in the scene.
 Sequence properties are found by editing Sequence assets. 
 
-A selection of overlays and visual toggles are also provided to aid testing and debugging. These can be found under Window -> trueSKY, along with an option to recompile the trueSKY shaders.
 
 Transparencies
 -----------------------
@@ -65,11 +63,11 @@ This is your connection to trueSKY within a scene. Its controls are:
 
 **Cloud Steps**: Number of raytracing steps to use; more = higher definition, fewer = faster.
 
-**Downscale Factor**: Resolution to render the clouds to ; higher numbers = lower resolution.
+**Downscale Factor**: Resolution at which to render the clouds; higher numbers = lower resolution.
 
 **Amortization**: Amortization of scattering volume generation for clouds.
 
-**Atmospherics Amortization**: Amortization to use for generating atmoshperics tables.
+**Atmospherics Amortization**: Amortization to use for generating atmospherics tables.
 
 **Depth Blending**: If true, uses depth-blending for clouds. If false, clouds are drawn behind or in front of scenery, depending on altitude.
 
@@ -124,7 +122,7 @@ Further Information
 * [trueSKY Tutorial: Unity](http://docs.simul.co/unity/Tutorial.html)
 * [The Sequencer](http://docs.simul.co/reference/man_8_sequencer.html)
 * [Scripting in trueSKY for Unity](http://docs.simul.co/unity/Scripting.html)
-* [The trueSKY Render](http://docs.simul.co/reference/man_4_rendering.html)
+* [The trueSKY Renderer](http://docs.simul.co/reference/man_4_rendering.html)
 
 
 Next: <a href="/unity/Scripting">Tutorial</a>

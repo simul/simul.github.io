@@ -16,7 +16,7 @@ Whether you have installed trueSKY via the Git Repo or via the binary installer,
 
 <a href="http://docs.simul.co/unrealengine/images/DeleteSkyFog.png"><img src="http://docs.simul.co/unrealengine/images/DeleteSkyFog.png" alt="Blueprint"/></a> 
 
-After doing this you should see the default atmospherics disappear, leaving a black sky. Now we can insert a trueSKY Sequence Actor. To do so, click Window -> Add Sequence to Scene. Find the TrueSkySequenceActor in the World Outliner, and in the Details Panel, click on Active Sequence. If there are no existing trueSKY sequences to load, we can create a new one by clicking the Create New Asset option. Name this whatever you wish and find a location in which to save it. Once done, it will be automatically assigned to the TrueSkySequenceActor. You can change the sequence currently in use at any time by clicking on the Active Sequence option. 
+After doing this, you should see the default atmospherics disappear, leaving a black sky. Now we can insert a trueSKY Sequence Actor. To do so, click Window -> Add Sequence to Scene. Find the TrueSkySequenceActor in the World Outliner, and in the Details Panel, click on Active Sequence. If there are no existing trueSKY sequences to load, we can create a new one by clicking the Create New Asset option. Name this whatever you wish and find a location in which to save it. Once done, it will be automatically assigned to the TrueSkySequenceActor. You can change the sequence currently in use at any time by clicking on the Active Sequence option. 
 
 
 Adding Clouds

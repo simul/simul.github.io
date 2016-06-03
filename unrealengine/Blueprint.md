@@ -7,7 +7,7 @@ weight : 3
 trueSKY in Blueprint
 ========
 
-The trueSKY Blueprint macros provide a wide array of functionality while your game is playing or simulating, so these macros will not take effect unless you are in one of these modes. To permanently change the properties of a light, start simulating, and right-click your Directional Light, then select "Keep Simulation Changes".
+The trueSKY Blueprint macros provide a wide array of functionality while your game is playing or simulating. These macros will not take effect unless you are in one of these modes. To permanently change the properties of a light, start simulating, and right-click your Directional Light, then select "Keep Simulation Changes".
 
 
 Lighting
@@ -28,7 +28,7 @@ Additionally, point lights can be used to illuminate the clouds. Because of the 
  
 <a href="http://docs.simul.co/unrealengine/images/SetPointLight.png"><img src="http://docs.simul.co/unrealengine/images/SetPointLight.png" alt="Blueprint" /></a>
 
-If you do not have a PointLight actor, you can use SetPointLightSource to apply individually the position, colour and intensity of a light to the clouds.
+If you do not have a PointLight actor, you can use SetPointLightSource to individually apply the position, colour and intensity of a light to the clouds.
 
 
 Time of Day
@@ -44,13 +44,13 @@ The Sky and Clouds
 
 Both the sky and clouds can be accessed and edited in Blueprint.  
 
-Read more about [editing the sky here](http://docs.simul.co/unrealengine/Sky.html) and about [editing the clouds here](http://docs.simul.co/unrealengine/Clouds.html).
+Read more about [editing the sky here](http://docs.simul.co/unrealengine/Sky.html) and [editing the clouds here](http://docs.simul.co/unrealengine/Clouds.html).
 
 
 Transparency
 ------------
 
-To correctly affect transparent objects, trueSKY will write loss, inscatter and cloud transparency textures once per frame. Connect the textures from the (automatically created) trueSky folder, to the texture properties in the trueSKY Sequence Actor to enable this. Note: If you are using the True Sky Light in place of the default UE4 Skylight, do not set the Skylight Cubemap RT.
+To correctly affect transparent objects, trueSKY will write loss, inscatter and cloud transparency textures once per frame. Connect the textures from the (automatically created) trueSky folder, to the texture properties in the trueSKY Sequence Actor to enable this. **Note**: If you are using the True Sky Light in place of the default UE4 Skylight, do not set the Skylight Cubemap RT.
 
 <a href="http://docs.simul.co/unrealengine/images/TrueSkyRenderTargets.png"><img src="http://docs.simul.co/unrealengine/images/TrueSkyRenderTargets.png" alt="Blueprint" /></a>
 
@@ -61,7 +61,7 @@ In a material that uses transparency, insert the trueSKYTransparencyModifier fun
 
 Queries
 -------
-To test how much cloud (from 0 to 1) is at a specified point, use the function CloudPointTest. NOTE: The Query Id can be set to any integer value, but should differ from any Query Ids used in different queries.
+To test how much cloud (from 0 to 1) is at a specified point, use the function CloudPointTest. **Note**: The Query Id can be set to any integer value, but should differ from any Query Ids used in seperate queries (or else they will be overwritten).
 
 <a href="http://docs.simul.co/unrealengine/images/CloudPointTest.png"><img src="http://docs.simul.co/unrealengine/images/CloudPointTest.png" alt="Blueprint" /></a>
 
@@ -77,7 +77,7 @@ To set a keyframe's value from Blueprint, use the SetKeyframeFloat, or SetKeyfra
 
 Similarly, GetKeyframeFloat and GetKeyframeInt are used to obtain current values.
 
-You can get the next uid in the future that can be modified without recalculation using GetNextModifiableCloudKeyframe -- that's needed if the cloud keyframer's Update property is set to "Instant". If it's "Gradual", any keyframe can be modified at any time.
+You can get the next uid in the future that can be modified without recalculation using GetNextModifiableCloudKeyframe. This is needed if the cloud keyframer's Update property is set to "Instant". If it's "Gradual", any keyframe can be modified at any time.
 
 * GetCloudKeyframeByIndex: To get an identifier for the cloud keyframe at the specified index, returns 0 if out of range.
 
@@ -97,7 +97,7 @@ Sun and Moon Properties
 
 <a href="http://docs.simul.co/unrealengine/images/SetFromSunAndMoon.png"><img src="http://docs.simul.co/unrealengine/images/SetFromSunAndMoon.png" alt="Blueprint" />
 
-In a reversal of the default setup, SetSunRotation and SetMoonRotation can be used to drive the trueSKY sun and moon directly from an Unreal Engine direction light (or some other object). In order to user this feature, it is recommended to set the Mode properties of the Sky keyframer to "Fixed Intervals (real time)", and "Gradual" update. This is so that any changes to the sun and moon direction will affect the trueSKY atmospherics regardless of whether game time is changing, and so that slight or slow changes in sun direction will not cause a per-frame recalculation of the atmospheric tables.
+In a reversal of the default setup, SetSunRotation and SetMoonRotation can be used to drive the trueSKY sun and moon directly from a direct light source (or some other object). In order to user this feature, it is recommended to set the Mode properties of the Sky keyframer to "Fixed Intervals (real time)", and "Gradual" update. This is so that any changes to the sun and moon direction will affect the trueSKY atmospherics regardless of whether game time is changing, and so that slight or slow changes in sun direction will not cause a per-frame recalculation of the atmospheric tables.
 
 <a href="http://docs.simul.co/unrealengine/images/SkyModeForSetSunDirection.png"><img src="http://docs.simul.co/unrealengine/images/SkyModeForSetSunDirection.png" alt="Blueprint" />
 
@@ -109,7 +109,7 @@ In addition to these Set functions for the sun/moon rotation, there are also Get
 Precipitation and Lightning
 ---------------------
 
-There are Blueprint functions provided to test a scene for lightning and for rain. For lightning, the Get Lightning function will provide the start position, end position, colour and magnitude of any lightning present. A magnitude of 0 means there is no lightning present. Additionally, the Get Rain At Position function will take a given position and return a float between 0.0 and 1.0 indicating the strength of the rain (or snow) at this position.
+There are Blueprint functions provided to test a scene for lightning and for rain. For lightning, the "Get Lightning" function will provide the start position, end position, colour and magnitude of any lightning present. A magnitude of 0 means there is no lightning present. Additionally, the "Get Rain At Position" function will take a given position and return a float between 0.0 and 1.0 indicating the strength of the rain (or snow) at this position.
 
 <a href="http://docs.simul.co/unrealengine/images/LightningRainTest.png"><img src="http://docs.simul.co/unrealengine/images/LightningRainTest.png" alt="Blueprint" /></a>
 
