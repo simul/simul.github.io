@@ -65,7 +65,7 @@ Distances | "NumDistances" | Number of distances / width of table. Powers of 2 b
 Start Date | "StartDayNumber" | For calculating start position of sun/moon. Where 01/01/2000 = 0 , -1 = 31/12/1999, 01/01/2016 = 5844 etc (in the format: DD:MM:YYYY).
 
 
-For example, to set the Star Brightness to 10000:
+**Example:** To set the sky layer Star Brightness to 10000:
 
 	private trueSKY tS;  
  
@@ -88,7 +88,7 @@ For information on what functions to use when getting and setting sky keyframe p
 Sequencer Property|Name Variable|Definition
 ------------------|--------------|----------
 Sea Level Deg. C | "SeaLevelTemperatureK" | For infrared rendering. Between -273.0 and 1000.0.
-Haze / Fog | "haze" | Amount of haze/mist. Alters visibility. Between 0.00001 and 1000.0.
+Haze / Fog | "Haze" | Amount of haze/mist. Alters visibility. Between 0.00001 and 1000.0.
 Haze Base, km | "HazeBaseKm" | Base altitude above which haze decreases in density. Between -2.0 and 20.0. 
 Haze Scale, km | " HazeScaleKm" | Vertical scale over which haze reduces with altitude. Between 0.1 and 10.0.
 Eccentricity | "HazeEccentricity" | Anisotropy of Mie scattering. Between 0.0 and 1.0.
@@ -121,9 +121,9 @@ Time | "daytime" | The trueSKY time at which the keyframe starts. Betwee 0.0 and
 	void Start () 
 	{
 		tS = trueSKY.GetTrueSky();  
-		int numk = trueSky.GetNumSkyKeyframes()
-		uint uid = GetSkyKeyframeByIndex(numk - 1);
-		tS.SetKeyframeValue(uid, "Haze", 12.0F)
+		int numk = tS.GetNumSkyKeyframes (); 
+		uint uid = tS.GetSkyKeyframeByIndex(numk - 1); 
+		tS.SetKeyframeValue (uid, "Haze", 12.0F); 
 	}
 
 

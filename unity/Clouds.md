@@ -64,6 +64,17 @@ Frequency|"edgeNoiseFrequency"| Frequency of edge noise. Powers of 2 between 1 a
 Resolution|"edgeNoiseResolution"| Resolution of edge noise texture. Powers of 2 between 4 and 64.
 
    
+**Example:** To increment the 3D cloud layer Rain Fall Speed by 5:
+
+	private trueSKY tS;  
+ 
+	void Start () 
+	{
+		tS = trueSKY.GetTrueSky();  
+		tS.SetCloudFloat("rainFallSpeedMS", tS.GetCloudFloat("rainFallSpeedMS") + 5.0F);   
+	} 
+
+
 
 Editing Clouds Via Scripting: Cloud Keyframes
 ---------------  
@@ -128,7 +139,17 @@ Octaves| "octaves"| Number of noise octaves to generate clouds. Between 1 and 5.
 Regional| "regionalPrecipitation" | Whether rain/snow falls only in specified region, or globally. Bool.
 Lock to Cloud| "lockRainToClouds" | Whether to make precipitation region move with wind motion. Bool
 
- 
+
+**Example**: To get the cloudiness value of the current, interpolated 3D cloud keyframe:
+
+	private trueSKY tS;   
+
+	void Start () 
+	{
+		tS = trueSKY.GetTrueSky();
+		uint uid = tS.GetInterpolatedCloudKeyframe (1);
+		tS.GetKeyframeValue (uid, "cloudiness"); 
+	}
 
 
 Further Information
