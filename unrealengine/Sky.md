@@ -91,5 +91,16 @@ AutomaticSunPosition| If non-zero, automatic sun positioning will be enabled.
 AutomaticMoonPosition| If non-zero, automatic moon positioning will be enabled.
 
 
+
+Further Information
+--------------
+ 
+* [The Sequencer](http://docs.simul.co/reference/man_8_sequencer.html)  
+* [Driving trueSKY via Blueprint](http://docs.simul.co/unrealengine/Blueprint.html)
+* [Sky Rendering in trueSKY](http://docs.simul.co/reference/classsimul_1_1sky_1_1BaseSkyRenderer.html)
+* [Watch a video tutorial](https://www.youtube.com/watch?v=hE6qFzJgED4) 
+
+
+
 			
 Next: <a href="/unrealengine/Deploy">Deployment</a>

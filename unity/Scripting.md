@@ -158,5 +158,15 @@ As Unity and trueSKY treat coordinates differently (which axis is considered "up
 * **Vector3 UnityToTrueSkyDirection(Vector3 u_dir)**
 
 
+Further Information
+--------------
+ 
+* [The Sequencer](http://docs.simul.co/reference/man_8_sequencer.html)   
+* [The Clouds in trueSKY for Unity](http://docs.simul.co/unity/Clouds.html)
+* [The Sky in trueSKY for Unity](http://docs.simul.co/unity/Sky.html)
+* [Watch a video tutorial](https://www.youtube.com/watch?v=Eljf5CjZ4vc)
+
+
+
 
 Next: <a href="/unity/Clouds">Clouds</a>

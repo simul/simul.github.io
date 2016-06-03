@@ -114,4 +114,16 @@ Name				|			Definition
 			
 
 
+
+Further Information
+--------------
+ 
+* [The Sequencer](http://docs.simul.co/reference/man_8_sequencer.html)  
+* [Driving trueSKY via Blueprint](http://docs.simul.co/unrealengine/Blueprint.html)
+* [Cloud Rendering in trueSKY](http://docs.simul.co/reference/classsimul_1_1clouds_1_1BaseCloudRenderer.html)
+* [Watch a video tutorial](https://www.youtube.com/watch?v=hE6qFzJgED4) 
+
+
+
+
 Next: <a href="/unrealengine/Sky">Sky</a>

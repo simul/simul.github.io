@@ -80,7 +80,8 @@ Further Information
 --------------
  
 * [The Sequencer](http://docs.simul.co/reference/man_8_sequencer.html)  
-* [Scripting in trueSKY](http://docs.simul.co/unity/Scripting.html)
+* [Scripting in trueSKY for Unity](http://docs.simul.co/unity/Scripting.html)
+* [trueSKY Developer Manual](http://docs.simul.co/reference/)
 * [Watch a video tutorial](https://www.youtube.com/watch?v=Eljf5CjZ4vc)
 
 

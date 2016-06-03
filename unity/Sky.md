@@ -8,7 +8,7 @@ weight : 5
 The Sky in trueSKY
 =======
 
-In trueSKY, the sky is modified in two ways: through sky keyframes and the sky layer. Keyframe properties will dictate the look of the sky at a given point in time – with interpolation used to derive properties at times between keyframes – whereas layer properties will be active throughout a sequence. Both can be modified via the sequencer or through the Blueprint system.
+In trueSKY, the sky is modified in two ways: through sky keyframes and the sky layer. Keyframe properties will dictate the look of the sky at a given point in time – with interpolation used to derive properties at times between keyframes – whereas layer properties will be active throughout a sequence. These properties can be modified via the sequencer and/or through Unity scripting.
 
 Read more about how the sky is rendered in trueSKY [here](http://docs.simul.co/reference/classsimul_1_1sky_1_1BaseSkyRenderer.html).
 
@@ -79,9 +79,10 @@ Start Date | "StartDayNumber" | For calculating start position of sun/moon. Wher
 Editing The Sky Via Scripting: Sky Keyframes
 ---------------
 
-For information on what functions to use when getting and setting sky keyframe properties and Uids, see [Scripting](http://docs.simul.co/unity/Scripting.html). The tables below show the various sky keyframe properties (named as they appear in the sequencer), along with the matching name string to use for scripting. **Note**: Parameters that are Bools in the Sequencer are treated as Ints in scripting, where 0 = false and 1 = true.
+To Get/Set sky keyframe properties, use **trueSKY.GetKeyframeValue** and **trueSKY.SetKeyframeValue**, ensuring the pass the keyframe's Uid as an argument. For information on what functions to use wto get keyframe Uids, along with information about other helpful functions, see [Scripting](http://docs.simul.co/unity/Scripting.html). The tables below show the various sky keyframe properties (named as they appear in the sequencer), along with the matching name string to use for scripting. **Note**: Parameters that are Bools in the Sequencer are treated as Ints in scripting, where 0 = false and 1 = true.
  
 **A Note about Haze/Fog/Mist**: A keyframe’s haze value determines how much Mie-scattered haze (i.e. mist or fog) is present. Haze is considered to have a density that falls-off exponentially with altitude, so the Haze scale height property determines the scaling height for this exponential. Fog and mist are both effectively low-level clouds. Fog is defined as having visibility less than 1km, it is called mist when visibility is between 1 and 2 km.
+
 
 **Floating-point**
 
@@ -126,6 +127,15 @@ Time | "daytime" | The trueSKY time at which the keyframe starts. Betwee 0.0 and
 		tS.SetKeyframeValue (uid, "Haze", 12.0F); 
 	}
 
+
+
+Further Information
+--------------
+ 
+* [The Sequencer](http://docs.simul.co/reference/man_8_sequencer.html)  
+* [Scripting in trueSKY for Unity](http://docs.simul.co/unity/Scripting.html)
+* [Sky Rendering in trueSKY](http://docs.simul.co/reference/classsimul_1_1sky_1_1BaseSkyRenderer.html)
+* [Watch a video tutorial](https://www.youtube.com/watch?v=Eljf5CjZ4vc)
 
 
 Next: <a href="/unity/index">Home</a>

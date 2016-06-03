@@ -134,4 +134,17 @@ The outputs are in milliseconds.
 
 <a href="http://docs.simul.co/unrealengine/images/GetProfilingText.png"><img src="http://docs.simul.co/unrealengine/images/GetProfilingText.png" alt="Blueprint" />
 
+
+
+Further Information
+--------------
+ 
+* [The Sequencer](http://docs.simul.co/reference/man_8_sequencer.html)   
+* [The Clouds in trueSKY for UE4](http://docs.simul.co/unrealengine/Clouds.html)
+* [The Sky in trueSKY for UE4](http://docs.simul.co/unrealengine/Sky.html)
+* [Watch a video tutorial](https://www.youtube.com/watch?v=hE6qFzJgED4) 
+
+
+
+
 Next: <a href="/unrealengine/Clouds">Clouds</a>

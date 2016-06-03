@@ -64,7 +64,8 @@ Further Information
 --------------
  
 * [The Sequencer](http://docs.simul.co/reference/man_8_sequencer.html) 
-* [Driving trueSKY via Blueprint](http://docs.simul.co/unrealengine/Blueprint.html) 
+* [Driving trueSKY via Blueprint](http://docs.simul.co/unrealengine/Blueprint.html)  
+* [trueSKY Developer Manual](http://docs.simul.co/reference/)
 * [Watch a video tutorial](https://www.youtube.com/watch?v=hE6qFzJgED4) 
 
 

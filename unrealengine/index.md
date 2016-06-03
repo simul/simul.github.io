@@ -112,11 +112,13 @@ Modified Files in the Unreal Engine
 
 
 Further Information
----
+---------
 
 * [trueSKY Tutorial: Unreal Engine 4](http://docs.simul.co/unrealengine/Tutorial.html)
 * [The Sequencer](http://docs.simul.co/reference/man_8_sequencer.html)
-* [Scripting in trueSKY](http://docs.simul.co/unity/Scripting.html) 
+* [Driving trueSKY via Blueprint](http://docs.simul.co/unrealengine/Blueprint.html)
+* [The trueSKY Renderer](http://docs.simul.co/reference/man_4_rendering.html)
+
 
 
 Next: <a href="/unrealengine/Tutorial">Tutorial</a>

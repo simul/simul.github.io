@@ -39,5 +39,7 @@ As the console automation files are not in the Git repository, it is not possibl
 		SC.StageFiles(StagedFileType.NonUFS, CombinePaths(SC.LocalRoot, "Engine/Plugins/TrueSkyPlugin/Content"), "*.*", true, null, null, true);
 		SC.StageFiles(StagedFileType.NonUFS, CombinePaths(SC.LocalRoot, "Engine/Plugins/TrueSkyPlugin/shaderbin"), "*.*", true, null, null, true);
 		/// END trueSKY Additional code
+
+		
 			
 Next: <a href="/unrealengine/index">Home</a>
