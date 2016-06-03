@@ -221,7 +221,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <td>skylight 0 </td><td>skylight 1 </td><td>skylight 2 </td></tr>
 </table>
 <p>Each texture contains data for the atmospherics as seen from a complete range of altitudes.</p>
-<p>We use textures 0 and 1 to render the scene. Texture 2 is gradually filled in over multiple frames, so that when we reach keyframe X+1, it will be complete and can be swapped in. All this is handled automatically by the <a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html" title="A class that maintains sky properties and interpolates them based on keyframe values. ">SkyKeyframer</a>, which in turn can use a <a class="el" href="">GpuSkyGenerator</a>. If using CPU-generated textures, the <a class="el" href="classsimul_1_1sky_1_1Sky.html" title="A class that calculates the sky colour. ">Sky</a> Renderer asks the keyframer what new data to fill into the textures each frame. If using its own GpuSkyGenerator, the <a class="el" href="classsimul_1_1sky_1_1Sky.html" title="A class that calculates the sky colour. ">Sky</a> Renderer has access to these textures without the need to query the keyframer.</p>
+<p>We use textures 0 and 1 to render the scene. Texture 2 is gradually filled in over multiple frames, so that when we reach keyframe X+1, it will be complete and can be swapped in. All this is handled automatically by the <a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html">SkyKeyframer</a>, which in turn can use a <a class="el" href="">GpuSkyGenerator</a>. If using CPU-generated textures, the <a class="el" href="classsimul_1_1sky_1_1Sky.html" title="A class that calculates the sky colour. ">Sky</a> Renderer asks the keyframer what new data to fill into the textures each frame. If using its own GpuSkyGenerator, the <a class="el" href="classsimul_1_1sky_1_1Sky.html" title="A class that calculates the sky colour. ">Sky</a> Renderer has access to these textures without the need to query the keyframer.</p>
 <div class="image">
 <img src="FadeTable.png" alt="FadeTable.png"/>
 </div>
@@ -439,6 +439,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Wed Jun 1 2016 07:46:49</small></address>
+Fri Jun 3 2016 07:46:41</small></address>
 </body>
 </html>

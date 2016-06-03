@@ -64,7 +64,7 @@ Public Attributes</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:abfe5bcbcb3265161d51b64e6d7cc5f03"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abfe5bcbcb3265161d51b64e6d7cc5f03"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1Environment.html#abfe5bcbcb3265161d51b64e6d7cc5f03">CreateSubObjects</a> ()</td></tr>
-<tr class="memdesc:abfe5bcbcb3265161d51b64e6d7cc5f03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this to create the keyframer sub-objects. If not called before the first <a class="el" href="classsimul_1_1clouds_1_1Environment.html#aa7b19b8ebc85d3a60ea245d9eac1fcf2" title="Call this once per-frame, passing the timestep in days (usually a small number less than 1...">Update()</a>, it will be called from there. <br /></td></tr>
+<tr class="memdesc:abfe5bcbcb3265161d51b64e6d7cc5f03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this to create the keyframer sub-objects. If not called before the first <a class="el" href="classsimul_1_1clouds_1_1Environment.html#a8a1520e878ee234816a221b9049e1c41" title="Call this once per-frame. ">Update()</a>, it will be called from there. <br /></td></tr>
 <tr class="separator:abfe5bcbcb3265161d51b64e6d7cc5f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39ec767124cc030757898bc0797e5135"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39ec767124cc030757898bc0797e5135"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1Environment.html#a39ec767124cc030757898bc0797e5135">Environment</a> (const char *license=NULL, <a class="el" href="classsimul_1_1base_1_1MemoryInterface.html">simul::base::MemoryInterface</a> *mem=NULL)</td></tr>
@@ -92,10 +92,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1Environment.html#a4cd14c00840aae28294ea97fcb24ce6b">SaveToText</a> (simul::crossplatform::TextOutput &amp;output) const </td></tr>
 <tr class="memdesc:a4cd14c00840aae28294ea97fcb24ce6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save a sky sequence as text (the .sq file format). This is the standard means of storing sequences. <br /></td></tr>
 <tr class="separator:a4cd14c00840aae28294ea97fcb24ce6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7b19b8ebc85d3a60ea245d9eac1fcf2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa7b19b8ebc85d3a60ea245d9eac1fcf2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1Environment.html#aa7b19b8ebc85d3a60ea245d9eac1fcf2">Update</a> (float dt_days)</td></tr>
-<tr class="memdesc:aa7b19b8ebc85d3a60ea245d9eac1fcf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this once per-frame, passing the timestep in days (usually a small number less than 1.0). <br /></td></tr>
-<tr class="separator:aa7b19b8ebc85d3a60ea245d9eac1fcf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a053be1d40e87f254abef9cf3af583052"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a053be1d40e87f254abef9cf3af583052"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1Environment.html#a053be1d40e87f254abef9cf3af583052">SetRealTime</a> (double rt_sec)</td></tr>
+<tr class="memdesc:a053be1d40e87f254abef9cf3af583052"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this once per frame before <a class="el" href="classsimul_1_1clouds_1_1Environment.html#a8a1520e878ee234816a221b9049e1c41" title="Call this once per-frame. ">Update()</a> if you use real-time updates for clouds, rain, lightning, sky keyframes etc. <br /></td></tr>
+<tr class="separator:a053be1d40e87f254abef9cf3af583052"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a1520e878ee234816a221b9049e1c41"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a1520e878ee234816a221b9049e1c41"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1Environment.html#a8a1520e878ee234816a221b9049e1c41">Update</a> ()</td></tr>
+<tr class="memdesc:a8a1520e878ee234816a221b9049e1c41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this once per-frame. <br /></td></tr>
+<tr class="separator:a8a1520e878ee234816a221b9049e1c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9614c355d201614367392f9efd123e30"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9614c355d201614367392f9efd123e30"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1Environment.html#a9614c355d201614367392f9efd123e30">~Environment</a> ()</td></tr>
 <tr class="memdesc:a9614c355d201614367392f9efd123e30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
@@ -131,6 +135,6 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Wed Jun 1 2016 07:46:48</small></address>
+Fri Jun 3 2016 07:46:40</small></address>
 </body>
 </html>

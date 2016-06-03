@@ -43,9 +43,6 @@ url: simul::sky::SkyKeyframer Class Reference
 </div><!--header-->
 <div class="contents">
 
-<p>A class that maintains sky properties and interpolates them based on keyframe values.  
- <a href="classsimul_1_1sky_1_1SkyKeyframer.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="SkyKeyframer_8h_source.html">Simul/Sky/SkyKeyframer.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -388,6 +385,13 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:a98e24521a351f97316af86b8c627d274"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a028832b8b1bb2d2d314000aa6c8763ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a028832b8b1bb2d2d314000aa6c8763ab">SetBackgroundBrightness</a> (float value)</td></tr>
 <tr class="separator:a028832b8b1bb2d2d314000aa6c8763ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Property: vec3 SunIrradiance</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>"RGB irradiance of the sun in space, in watts per square metre per micrometre." </p>
+</div></td></tr>
+<tr class="memitem:a810667a9276f00eb862fea43ec659671"><td class="memItemLeft" align="right" valign="top">const vec3 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a810667a9276f00eb862fea43ec659671">GetSunIrradiance</a> () const </td></tr>
+<tr class="separator:a810667a9276f00eb862fea43ec659671"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a600af1ddcb5eaeaae55f2e36c705aca0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a600af1ddcb5eaeaae55f2e36c705aca0">SetSunIrradiance</a> (const vec3 &amp;value)</td></tr>
+<tr class="separator:a600af1ddcb5eaeaae55f2e36c705aca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Property: float MaxStarMagnitude</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>"The maximum magnitude for stars - larger values are dimmer, the human eye can see up to magnitude 6 or 7." </p>
 </div></td></tr>
@@ -579,10 +583,10 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="separator:ad169fdb30c7a3b799c2d28a037b32781"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class that maintains sky properties and interpolates them based on keyframe values. </p>
-<p>An instance of the <a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html" title="A class that maintains sky properties and interpolates them based on keyframe values. ">SkyKeyframer</a> is kept as a member of the Environment instance. The <a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html" title="A class that maintains sky properties and interpolates them based on keyframe values. ">SkyKeyframer</a> interpolates the sky values, and passes the keyframe and interpolation data to external renderers, e.g. <a class="el" href="classsimul_1_1sky_1_1BaseSkyRenderer.html">BaseSkyRenderer</a> and <a class="el" href="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html">BaseAtmosphericsRenderer</a>. The generated tables are calculated for multiple altitudes - specified with SetNumAltitudes. </p>
+<div class="textblock"><p>A class that maintains sky properties and interpolates them based on keyframe values.</p>
+<p>An instance of the <a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html">SkyKeyframer</a> is kept as a member of the Environment instance. The <a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html">SkyKeyframer</a> interpolates the sky values, and passes the keyframe and interpolation data to external renderers, e.g. <a class="el" href="classsimul_1_1sky_1_1BaseSkyRenderer.html">BaseSkyRenderer</a> and <a class="el" href="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html">BaseAtmosphericsRenderer</a>. The generated tables are calculated for multiple altitudes - specified with SetNumAltitudes. The SunIrradiance value determines the colour and strength of sunlight, and is expressed in physical units. The apparent size of the sun is set using SetSunRadiusArcMinutes. </p>
 
-<p>Definition at line <a class="el" href="SkyKeyframer_8h_source.html#l00047">47</a> of file <a class="el" href="SkyKeyframer_8h_source.html">SkyKeyframer.h</a>.</p>
+<p>Definition at line <a class="el" href="SkyKeyframer_8h_source.html#l00050">50</a> of file <a class="el" href="SkyKeyframer_8h_source.html">SkyKeyframer.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a7fba96d7271dff0ab95d53695addc6e7"></a>
 <div class="memitem">
@@ -1043,6 +1047,39 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
       </table>
 </div><div class="memdoc">
 <p>Set the value of BackgroundBrightness . </p>
+
+</div>
+</div>
+<a class="anchor" id="a810667a9276f00eb862fea43ec659671"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const vec3&amp; simul::sky::SkyKeyframer::GetSunIrradiance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the value of SunIrradiance ( "RGB irradiance of the sun in space, in watts per square metre per micrometre." ). </p>
+
+</div>
+</div>
+<a class="anchor" id="a600af1ddcb5eaeaae55f2e36c705aca0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void simul::sky::SkyKeyframer::SetSunIrradiance </td>
+          <td>(</td>
+          <td class="paramtype">const vec3 &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the value of SunIrradiance ( "RGB irradiance of the sun in space, in watts per square metre per micrometre." ). </p>
 
 </div>
 </div>
@@ -1672,7 +1709,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </table>
 </div><div class="memdoc">
 <p>Return true if the keyframer has the floating point value with the given, case-insensitive, name; return false otherwise.</p>
-<p>These are the properties the <a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html" title="A class that maintains sky properties and interpolates them based on keyframe values. ">SkyKeyframer</a> has:</p><ul>
+<p>These are the properties the <a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html">SkyKeyframer</a> has:</p><ul>
 <li>LatitudeRadians</li>
 <li>LongitudeRadians</li>
 <li>MaxStarMagnitude</li>
@@ -1712,7 +1749,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </table>
 </div><div class="memdoc">
 <p>Return true if the keyframer has an integer or true/false value with the given, case-insensitive, name; return false otherwise.</p>
-<p>These are the properties the <a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html" title="A class that maintains sky properties and interpolates them based on keyframe values. ">SkyKeyframer</a> has:</p><ul>
+<p>These are the properties the <a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html">SkyKeyframer</a> has:</p><ul>
 <li>StartDayNumber</li>
 <li>NumAltitudes</li>
 <li>NumElevations</li>
@@ -2307,6 +2344,6 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Wed Jun 1 2016 07:46:49</small></address>
+Fri Jun 3 2016 07:46:41</small></address>
 </body>
 </html>

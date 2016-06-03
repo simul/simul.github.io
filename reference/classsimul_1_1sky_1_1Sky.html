@@ -129,13 +129,6 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <tr class="separator:ad3c48061e965203a440d54f0fbbfa880"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebb458c35cd4f30832131d1e0693a359"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseSky.html#aebb458c35cd4f30832131d1e0693a359">SetPlanetRadius</a> (float value)</td></tr>
 <tr class="separator:aebb458c35cd4f30832131d1e0693a359"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Property: float4 SunIrradiance</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p>"Irradiance, watts/square metre of the sun in space, x=red, y=green, z=blue, w unused." </p>
-</div></td></tr>
-<tr class="memitem:a2030ffc24456d1bc4b499c31b8c1d9e1"><td class="memItemLeft" align="right" valign="top">const float4 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseSky.html#a2030ffc24456d1bc4b499c31b8c1d9e1">GetSunIrradiance</a> () const </td></tr>
-<tr class="separator:a2030ffc24456d1bc4b499c31b8c1d9e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa47ff5ecd3c85754369f36f19870929"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseSky.html#aaa47ff5ecd3c85754369f36f19870929">SetSunIrradiance</a> (const float4 &amp;value)</td></tr>
-<tr class="separator:aaa47ff5ecd3c85754369f36f19870929"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Property: int Steps</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>"The number of integration steps taken to calculate results." </p>
 </div></td></tr>
@@ -218,7 +211,6 @@ static float4&#160;</td><td class="memItemRight" valign="bottom"><b>AzimuthEleva
  <div class="image">
 <img src="eccentricity_high.png" alt="eccentricity_high.png"/>
 </div>
-<p>The SunIrradiance value determines the colour and strength of sunlight, and is expressed in physical units. The apparent size of the sun is set using SetSunRadiusArcMinutes.</p>
 <p><a class="el" href="classsimul_1_1sky_1_1Sky.html" title="A class that calculates the sky colour. ">Sky</a> calculation is performed with ray-tracing, and the number of ray-trace steps is set using <a class="el" href="classsimul_1_1sky_1_1BaseSky.html#ac1490c9d592b60757f457d4358eca898">SetSteps </a>. Typically 6 steps are enough, but more may be necessary for high-accuracy, especially when the sun is close to the horizon, such as in this case, where the number of steps is too low, leading to an over-bright effect on the ground below the sun: </p><div class="image">
 <img src="sky_steps_too_low.png" alt="sky_steps_too_low.png"/>
 </div>
@@ -229,7 +221,7 @@ Transient Sky Properties</h1>
 <p>Fog and mist are both effectively low-level clouds. Fog is defined as having visibility less than 1km, it is called mist when visibility is between 1 and 2 km.</p>
 <p>As time passes and the sun moves, you can use GetAzimuthToSunRadians and GetElevationToSunRadians to find its position. The functions GetDirectionToSun and GetDirectionToMoon can also be used. </p>
 
-<p>Definition at line <a class="el" href="Sky_8h_source.html#l00085">85</a> of file <a class="el" href="Sky_8h_source.html">Sky.h</a>.</p>
+<p>Definition at line <a class="el" href="Sky_8h_source.html#l00082">82</a> of file <a class="el" href="Sky_8h_source.html">Sky.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a88b148e339828dce526a88f6af562ba1"></a>
 <div class="memitem">
@@ -847,59 +839,6 @@ Transient Sky Properties</h1>
 
 </div>
 </div>
-<a class="anchor" id="a2030ffc24456d1bc4b499c31b8c1d9e1"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const float4&amp; simul::sky::BaseSky::GetSunIrradiance </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get the value of SunIrradiance ( "Irradiance, watts/square metre of the sun in space, x=red, y=green, z=blue, w unused." ). </p>
-
-<p>Implements <a class="el" href="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a061ead1444a1adc2d3360d2d459015be">simul::sky::AtmosphericScatteringInterface</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aaa47ff5ecd3c85754369f36f19870929"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void simul::sky::BaseSky::SetSunIrradiance </td>
-          <td>(</td>
-          <td class="paramtype">const float4 &amp;&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Set the value of SunIrradiance ( "Irradiance, watts/square metre of the sun in space, x=red, y=green, z=blue, w unused." ). </p>
-
-<p>Implements <a class="el" href="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a2c7d6166cadceb918cc28b81c1dab263">simul::sky::AtmosphericScatteringInterface</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a83f678dce2df897e805ccd79d7a8d8a1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1141,6 +1080,6 @@ Transient Sky Properties</h1>
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Wed Jun 1 2016 07:46:49</small></address>
+Fri Jun 3 2016 07:46:41</small></address>
 </body>
 </html>

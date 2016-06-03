@@ -717,7 +717,6 @@
       <keyword name="godray_strength" id="simul::clouds::CloudKeyframe::godray_strength" ref="structsimul_1_1clouds_1_1CloudKeyframe.html#a3635ca3fe6fe543330fcb2886acda936" />
       <keyword name="indirect_light" id="simul::clouds::CloudKeyframe::indirect_light" ref="structsimul_1_1clouds_1_1CloudKeyframe.html#ae40f0a4416141d6081e674646c7007ad" />
       <keyword name="light_asymmetry" id="simul::clouds::CloudKeyframe::light_asymmetry" ref="structsimul_1_1clouds_1_1CloudKeyframe.html#a490bc561c5cdb3bf92146824e386bec9" />
-      <keyword name="lightning" id="simul::clouds::CloudKeyframe::lightning" ref="structsimul_1_1clouds_1_1CloudKeyframe.html#a4b16d9e8863176c8837ce65b5af4b348" />
       <keyword name="masks" id="simul::clouds::CloudKeyframe::masks" ref="structsimul_1_1clouds_1_1CloudKeyframe.html#acff73550536062691277fceb9c542c5e" />
       <keyword name="octaves" id="simul::clouds::CloudKeyframe::octaves" ref="structsimul_1_1clouds_1_1CloudKeyframe.html#ab278f5c9c7330f80ce764ff5615e4cb7" />
       <keyword name="octaves_f" id="simul::clouds::CloudKeyframe::octaves_f" ref="structsimul_1_1clouds_1_1CloudKeyframe.html#ab072e48c8eb66dd8f07dfe3dd603293d" />
@@ -902,6 +901,7 @@
       <keyword name="strikes" id="simul::clouds::CloudKeyframer::Storm::strikes" ref="structsimul_1_1clouds_1_1CloudKeyframer_1_1Storm.html#a27ab9edbf5bdc7fedadd054b1fa87c95" />
       <keyword name="strikeThicknessMetres" id="simul::clouds::CloudKeyframer::Storm::strikeThicknessMetres" ref="structsimul_1_1clouds_1_1CloudKeyframer_1_1Storm.html#a1a439ed5b30d5eccc0ad0326a34745ec" />
       <keyword name="unique_id" id="simul::clouds::CloudKeyframer::Storm::unique_id" ref="structsimul_1_1clouds_1_1CloudKeyframer_1_1Storm.html#a1fa165716f6c43da3bb4393b12e1c37d" />
+      <keyword name="AddStrike" id="simul::clouds::CloudKeyframer::Storm::AddStrike" ref="structsimul_1_1clouds_1_1CloudKeyframer_1_1Storm.html#a61d1c6957190de766df800f427b1618a" />
       <keyword name="GetDefaultFloat" id="simul::clouds::CloudKeyframer::Storm::GetDefaultFloat" ref="structsimul_1_1clouds_1_1CloudKeyframer_1_1Storm.html#a83144bcfe7815175ad25580e77b6a7cf" />
       <keyword name="GetDefaultInt" id="simul::clouds::CloudKeyframer::Storm::GetDefaultInt" ref="structsimul_1_1clouds_1_1CloudKeyframer_1_1Storm.html#a4bc2a3bec296b68cfa978b365c23d534" />
       <keyword name="GetFloat" id="simul::clouds::CloudKeyframer::Storm::GetFloat" ref="structsimul_1_1clouds_1_1CloudKeyframer_1_1Storm.html#afc99185d1b641aafd120037bb2c06a96" />
@@ -910,6 +910,7 @@
       <keyword name="HasInt" id="simul::clouds::CloudKeyframer::Storm::HasInt" ref="structsimul_1_1clouds_1_1CloudKeyframer_1_1Storm.html#a83aafb877c2f2b8f62895875fab37d3a" />
       <keyword name="SetFloat" id="simul::clouds::CloudKeyframer::Storm::SetFloat" ref="structsimul_1_1clouds_1_1CloudKeyframer_1_1Storm.html#acd0a19a54f45ecd25465d31e0d97e2e1" />
       <keyword name="SetInt" id="simul::clouds::CloudKeyframer::Storm::SetInt" ref="structsimul_1_1clouds_1_1CloudKeyframer_1_1Storm.html#ad75328489b457a57d80b3bdc56335332" />
+      <keyword name="Update" id="simul::clouds::CloudKeyframer::Storm::Update" ref="structsimul_1_1clouds_1_1CloudKeyframer_1_1Storm.html#a0b9b85b4d3a945e6d660e907d8ab8376" />
       <keyword name="simul::clouds::CloudProperties" id="simul::clouds::CloudProperties" ref="classsimul_1_1clouds_1_1CloudProperties.html" />
       <keyword name="GetExtents" id="simul::clouds::CloudProperties::GetExtents" ref="classsimul_1_1clouds_1_1CloudProperties.html#a350f598f52380797ea0386ed28fad8b9" />
       <keyword name="GetGenerationNumber" id="simul::clouds::CloudProperties::GetGenerationNumber" ref="classsimul_1_1clouds_1_1CloudProperties.html#ab54b756f7d25a656eec83c28e450ed6d" />
@@ -953,7 +954,8 @@
       <keyword name="Reset" id="simul::clouds::Environment::Reset" ref="classsimul_1_1clouds_1_1Environment.html#a46c2b63a335e368b085bd57f6dbcce9e" />
       <keyword name="Save" id="simul::clouds::Environment::Save" ref="classsimul_1_1clouds_1_1Environment.html#a06f1dec24bcfbe560432c25efd4beadd" />
       <keyword name="SaveToText" id="simul::clouds::Environment::SaveToText" ref="classsimul_1_1clouds_1_1Environment.html#a4cd14c00840aae28294ea97fcb24ce6b" />
-      <keyword name="Update" id="simul::clouds::Environment::Update" ref="classsimul_1_1clouds_1_1Environment.html#aa7b19b8ebc85d3a60ea245d9eac1fcf2" />
+      <keyword name="SetRealTime" id="simul::clouds::Environment::SetRealTime" ref="classsimul_1_1clouds_1_1Environment.html#a053be1d40e87f254abef9cf3af583052" />
+      <keyword name="Update" id="simul::clouds::Environment::Update" ref="classsimul_1_1clouds_1_1Environment.html#a8a1520e878ee234816a221b9049e1c41" />
       <keyword name="~Environment" id="simul::clouds::Environment::~Environment" ref="classsimul_1_1clouds_1_1Environment.html#a9614c355d201614367392f9efd123e30" />
       <keyword name="simul::clouds::FastCloudNode" id="simul::clouds::FastCloudNode" ref="classsimul_1_1clouds_1_1FastCloudNode.html" />
       <keyword name="AddHumidityCallback" id="simul::clouds::FastCloudNode::AddHumidityCallback" ref="classsimul_1_1clouds_1_1FastCloudNode.html#aa3f41590a39e4e5f7980e5e662c4aec5" />
@@ -1446,6 +1448,8 @@
       <keyword name="SetMakeCubemap" id="simul::dx11::TrueSkyRenderer::SetMakeCubemap" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#a7b8df652ffcf97405ffe259a7c38502a" />
       <keyword name="GetShowCubemaps" id="simul::dx11::TrueSkyRenderer::GetShowCubemaps" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#af1a71b77e5f042fc3e4652d30ee377bf" />
       <keyword name="SetShowCubemaps" id="simul::dx11::TrueSkyRenderer::SetShowCubemaps" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#acc158bd4c5aaf8840d184423f0ad9395" />
+      <keyword name="GetShowLightningOverlay" id="simul::dx11::TrueSkyRenderer::GetShowLightningOverlay" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#ac20b9b09ab937825c4304a24da110d50" />
+      <keyword name="SetShowLightningOverlay" id="simul::dx11::TrueSkyRenderer::SetShowLightningOverlay" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#a32b9256aac38951749ea49211aac8d20" />
       <keyword name="GetPerformanceTest" id="simul::dx11::TrueSkyRenderer::GetPerformanceTest" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#a9b3f56f4d1e71d37b0102623fdb4e25d" />
       <keyword name="SetPerformanceTest" id="simul::dx11::TrueSkyRenderer::SetPerformanceTest" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#a978acece14273464f24c0b1bcc6d294d" />
       <keyword name="GetShowOSD" id="simul::dx11::TrueSkyRenderer::GetShowOSD" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#aab10c23031eb6a3ef947187572b84477" />
@@ -1777,6 +1781,8 @@
       <keyword name="SetMakeCubemap" id="simul::plugin::PluginTrueSkyRenderer::SetMakeCubemap" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a7b8df652ffcf97405ffe259a7c38502a" />
       <keyword name="GetShowCubemaps" id="simul::plugin::PluginTrueSkyRenderer::GetShowCubemaps" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#af1a71b77e5f042fc3e4652d30ee377bf" />
       <keyword name="SetShowCubemaps" id="simul::plugin::PluginTrueSkyRenderer::SetShowCubemaps" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#acc158bd4c5aaf8840d184423f0ad9395" />
+      <keyword name="GetShowLightningOverlay" id="simul::plugin::PluginTrueSkyRenderer::GetShowLightningOverlay" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#ac20b9b09ab937825c4304a24da110d50" />
+      <keyword name="SetShowLightningOverlay" id="simul::plugin::PluginTrueSkyRenderer::SetShowLightningOverlay" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a32b9256aac38951749ea49211aac8d20" />
       <keyword name="GetPerformanceTest" id="simul::plugin::PluginTrueSkyRenderer::GetPerformanceTest" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a9b3f56f4d1e71d37b0102623fdb4e25d" />
       <keyword name="SetPerformanceTest" id="simul::plugin::PluginTrueSkyRenderer::SetPerformanceTest" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a978acece14273464f24c0b1bcc6d294d" />
       <keyword name="GetShowOSD" id="simul::plugin::PluginTrueSkyRenderer::GetShowOSD" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#aab10c23031eb6a3ef947187572b84477" />
@@ -1800,8 +1806,6 @@
       <keyword name="SetPlanetRadius" id="simul::sky::AtmosphericScatteringInterface::SetPlanetRadius" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#acce69da767ccc518ca1fb237690ce7dc" />
       <keyword name="GetAtmosphereThickness" id="simul::sky::AtmosphericScatteringInterface::GetAtmosphereThickness" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a15c506b088b263eb01bb88a98c9903cb" />
       <keyword name="SetAtmosphereThickness" id="simul::sky::AtmosphericScatteringInterface::SetAtmosphereThickness" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a25d4fd45e0791cf3549bc3f2069eb7d6" />
-      <keyword name="GetSunIrradiance" id="simul::sky::AtmosphericScatteringInterface::GetSunIrradiance" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a061ead1444a1adc2d3360d2d459015be" />
-      <keyword name="SetSunIrradiance" id="simul::sky::AtmosphericScatteringInterface::SetSunIrradiance" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a2c7d6166cadceb918cc28b81c1dab263" />
       <keyword name="GetSteps" id="simul::sky::AtmosphericScatteringInterface::GetSteps" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a8592aca137ba08a1137adcd8e3e0d5d0" />
       <keyword name="SetSteps" id="simul::sky::AtmosphericScatteringInterface::SetSteps" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a12161ad24e8670c982bf7c059a4d87a8" />
       <keyword name="GetSunRadiusArcMinutes" id="simul::sky::AtmosphericScatteringInterface::GetSunRadiusArcMinutes" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a2c2f26e89b0daa64671c3eeedd0920be" />
@@ -1913,8 +1917,6 @@
       <keyword name="SetAtmosphereThickness" id="simul::sky::BaseSky::SetAtmosphereThickness" ref="classsimul_1_1sky_1_1BaseSky.html#a4f310dd50c3706ed5ecf45df6a3c0ce2" />
       <keyword name="GetPlanetRadius" id="simul::sky::BaseSky::GetPlanetRadius" ref="classsimul_1_1sky_1_1BaseSky.html#ad3c48061e965203a440d54f0fbbfa880" />
       <keyword name="SetPlanetRadius" id="simul::sky::BaseSky::SetPlanetRadius" ref="classsimul_1_1sky_1_1BaseSky.html#aebb458c35cd4f30832131d1e0693a359" />
-      <keyword name="GetSunIrradiance" id="simul::sky::BaseSky::GetSunIrradiance" ref="classsimul_1_1sky_1_1BaseSky.html#a2030ffc24456d1bc4b499c31b8c1d9e1" />
-      <keyword name="SetSunIrradiance" id="simul::sky::BaseSky::SetSunIrradiance" ref="classsimul_1_1sky_1_1BaseSky.html#aaa47ff5ecd3c85754369f36f19870929" />
       <keyword name="GetSteps" id="simul::sky::BaseSky::GetSteps" ref="classsimul_1_1sky_1_1BaseSky.html#a83f678dce2df897e805ccd79d7a8d8a1" />
       <keyword name="SetSteps" id="simul::sky::BaseSky::SetSteps" ref="classsimul_1_1sky_1_1BaseSky.html#ac1490c9d592b60757f457d4358eca898" />
       <keyword name="GetSunRadiusArcMinutes" id="simul::sky::BaseSky::GetSunRadiusArcMinutes" ref="classsimul_1_1sky_1_1BaseSky.html#ad818a784e758939b34c03a8d13c0236f" />
@@ -2064,8 +2066,6 @@
       <keyword name="SetAtmosphereThickness" id="simul::sky::Sky::SetAtmosphereThickness" ref="classsimul_1_1sky_1_1Sky.html#a4f310dd50c3706ed5ecf45df6a3c0ce2" />
       <keyword name="GetPlanetRadius" id="simul::sky::Sky::GetPlanetRadius" ref="classsimul_1_1sky_1_1Sky.html#ad3c48061e965203a440d54f0fbbfa880" />
       <keyword name="SetPlanetRadius" id="simul::sky::Sky::SetPlanetRadius" ref="classsimul_1_1sky_1_1Sky.html#aebb458c35cd4f30832131d1e0693a359" />
-      <keyword name="GetSunIrradiance" id="simul::sky::Sky::GetSunIrradiance" ref="classsimul_1_1sky_1_1Sky.html#a2030ffc24456d1bc4b499c31b8c1d9e1" />
-      <keyword name="SetSunIrradiance" id="simul::sky::Sky::SetSunIrradiance" ref="classsimul_1_1sky_1_1Sky.html#aaa47ff5ecd3c85754369f36f19870929" />
       <keyword name="GetSteps" id="simul::sky::Sky::GetSteps" ref="classsimul_1_1sky_1_1Sky.html#a83f678dce2df897e805ccd79d7a8d8a1" />
       <keyword name="SetSteps" id="simul::sky::Sky::SetSteps" ref="classsimul_1_1sky_1_1Sky.html#ac1490c9d592b60757f457d4358eca898" />
       <keyword name="GetSunRadiusArcMinutes" id="simul::sky::Sky::GetSunRadiusArcMinutes" ref="classsimul_1_1sky_1_1Sky.html#ad818a784e758939b34c03a8d13c0236f" />
@@ -2211,6 +2211,8 @@
       <keyword name="SetStarBrightness" id="simul::sky::SkyKeyframer::SetStarBrightness" ref="classsimul_1_1sky_1_1SkyKeyframer.html#aca72f191a74c77fd8482695b3b129b06" />
       <keyword name="GetBackgroundBrightness" id="simul::sky::SkyKeyframer::GetBackgroundBrightness" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a98e24521a351f97316af86b8c627d274" />
       <keyword name="SetBackgroundBrightness" id="simul::sky::SkyKeyframer::SetBackgroundBrightness" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a028832b8b1bb2d2d314000aa6c8763ab" />
+      <keyword name="GetSunIrradiance" id="simul::sky::SkyKeyframer::GetSunIrradiance" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a810667a9276f00eb862fea43ec659671" />
+      <keyword name="SetSunIrradiance" id="simul::sky::SkyKeyframer::SetSunIrradiance" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a600af1ddcb5eaeaae55f2e36c705aca0" />
       <keyword name="GetMaxStarMagnitude" id="simul::sky::SkyKeyframer::GetMaxStarMagnitude" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a44243134200ab85a0ba28ee0c799e307" />
       <keyword name="SetMaxStarMagnitude" id="simul::sky::SkyKeyframer::SetMaxStarMagnitude" ref="classsimul_1_1sky_1_1SkyKeyframer.html#aee0d91276a44a95e5f4e5182e1f4e135" />
       <keyword name="GetOvercastEffectStrength" id="simul::sky::SkyKeyframer::GetOvercastEffectStrength" ref="classsimul_1_1sky_1_1SkyKeyframer.html#aaa1f23a796810995730fcac49284afc1" />
