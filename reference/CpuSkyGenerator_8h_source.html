@@ -80,7 +80,7 @@ url: Simul/Sky/CpuSkyGenerator.h Source File
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordtype">bool</span>  Make1DSunlightTexture(<span class="keyword">const</span> <a class="code" href="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html">simul::sky::AtmosphericScatteringInterface</a> *sky,</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                <span class="keyword">const</span> std::vector&lt;float&gt; &amp;altitudes_km,</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                <span class="keywordtype">void</span> *image_ptr,ColourFormat format,<span class="keywordtype">float</span> exposure,float4 sun_irradiance,float4 dir_to_sun,<span class="keyword">const</span> <a class="code" href="structsimul_1_1sky_1_1HazeStruct.html">HazeStruct</a> &amp;hazeStruct,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                <span class="keywordtype">void</span> *image_ptr,ColourFormat format,<span class="keywordtype">float</span> exposure,vec3 sun_irradiance,float4 dir_to_sun,<span class="keyword">const</span> <a class="code" href="structsimul_1_1sky_1_1HazeStruct.html">HazeStruct</a> &amp;hazeStruct,</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                <span class="keywordtype">unsigned</span> index=0,<span class="keywordtype">unsigned</span> texels=0,<span class="keywordtype">unsigned</span> bytes_per_texel=16);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            seq_texture_fill GetSequentialFadeTextureFill(<span class="keywordtype">int</span> cycled_index,seq_texture_iterator &amp;it);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            block_texture_fill GetBlockFadeTextureFill(<span class="keywordtype">int</span> cycled_index,seq_texture_iterator &amp;it);</div>
@@ -123,6 +123,6 @@ url: Simul/Sky/CpuSkyGenerator.h Source File
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Fri Jun 3 2016 07:46:40</small></address>
+Sun Jun 5 2016 08:00:34</small></address>
 </body>
 </html>
