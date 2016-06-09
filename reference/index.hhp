@@ -201,6 +201,7 @@ SkyInterface_8h_source.html
 SkyKeyframer_8h_source.html
 SkyTexturesCallback_8h_source.html
 Stars_8h_source.html
+Sun_8h_source.html
 Texture1D4_8h_source.html
 Texture2D1_8h_source.html
 Texture2D4_8h_source.html
@@ -466,6 +467,7 @@ pages.html
 namespaces.html
 namespacemembers.html
 namespacemembers_func.html
+namespacemembers_vars.html
 namespacemembers_type.html
 namespacemembers_enum.html
 namespacemembers_eval.html
@@ -496,7 +498,7 @@ functions_w.html
 functions_x.html
 functions_y.html
 functions_z.html
-functions_~.html
+functions_0x7e.html
 functions_func.html
 functions_func_b.html
 functions_func_c.html
@@ -521,7 +523,7 @@ functions_func_w.html
 functions_func_x.html
 functions_func_y.html
 functions_func_z.html
-functions_func_~.html
+functions_func_0x7e.html
 functions_vars.html
 functions_enum.html
 functions_rela.html
@@ -538,13 +540,6 @@ open.png
 bdwn.png
 sync_on.png
 sync_off.png
-Simul-Logo-200x60.png
-doc.png
-folderopen.png
-folderclosed.png
-arrowdown.png
-arrowright.png
-splitbar.png
 SimulOverview.png
 SkyKeyframerLinked.png
 MilkyWay.png

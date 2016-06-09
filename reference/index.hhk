@@ -117,6 +117,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1BaseFramebuffer.html#ab5208e24fc5fa563a53716ce2acfea31"><param name="Name" value="simul::crossplatform::BaseFramebuffer"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1BaseFramebuffer.html#ab5208e24fc5fa563a53716ce2acfea31"><param name="Name" value="simul::dx11::Framebuffer"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyKeyframer.html#a7dcb3359148df672f858575c4f515b68"><param name="Name" value="CalcSunIrradianceAtEarth"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseSkyRenderer.html#a6ed4c3c7c11b10b4f43ca3ca0e23ab75"><param name="Name" value="CalcSunOcclusion"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classObj_1_1File.html#a56c1e5376cade8453f411fa54acd8432"><param name="Name" value="CalculateNormals"></OBJECT>
   <UL>
@@ -4937,6 +4938,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyKeyframer.html"><param name="Name" value="simul::sky::SkyKeyframer"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyKeyframer.html#a19d53ad4f1fe999fb4bc4139b8d98c11"><param name="Name" value="BumpKeyframe"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyKeyframer.html#a7dcb3359148df672f858575c4f515b68"><param name="Name" value="CalcSunIrradianceAtEarth"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyKeyframer.html#ab9d448c0c8bc33fbb408820ea50eba24"><param name="Name" value="ClearHighlightConstellations"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyKeyframer.html#ad169fdb30c7a3b799c2d28a037b32781"><param name="Name" value="DaytimeToClockTime"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyKeyframer.html#ade9fe57965add1153fbc1d4a0a87333c"><param name="Name" value="DeleteKeyframeByUniqueId"></OBJECT>
@@ -5101,9 +5103,14 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1Texture3D4.html#a78ba7a9e017bf8dd1a81fa6e620e3fce"><param name="Name" value="GetChecksum"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1sky.html"><param name="Name" value="simul::sky"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1sky.html#a283fe89a61994da0d00d10b19c2b41de"><param name="Name" value="CalcMieCoefficients"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1sky.html#ae39fa0367e02d10fd3b12def136f6f40"><param name="Name" value="SolarIrradianceEarth_nm_Wm2nm"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1clouds_1_1CloudKeyframe.html#aa10849329dcd4d8fd46598e4dbac82c5"><param name="Name" value="simulation"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1Environment.html#a05daca15edd8341baed29240db6277a2"><param name="Name" value="skyKeyframer"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1sky_1_1SkyKeyframe.html#a6c94679420598b8c1eb0c0423c5d4659"><param name="Name" value="skyl"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1sky.html#ae39fa0367e02d10fd3b12def136f6f40"><param name="Name" value="SolarIrradianceEarth_nm_Wm2nm"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a3a9da4dc76cded285e967ea23048ed8b"><param name="Name" value="SortKeyframes"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a3a9da4dc76cded285e967ea23048ed8b"><param name="Name" value="simul::clouds::CloudKeyframer"></OBJECT>

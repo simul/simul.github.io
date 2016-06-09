@@ -1801,6 +1801,7 @@
       <keyword name="SetOverlayViewId" id="simul::plugin::PluginTrueSkyRenderer::SetOverlayViewId" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#adc20bafb776d963ec5c01726379bedad" />
       <keyword name="simul::sky" id="simul::sky" ref="namespacesimul_1_1sky.html" />
       <keyword name="CalcMieCoefficients" id="simul::sky::CalcMieCoefficients" ref="namespacesimul_1_1sky.html#a283fe89a61994da0d00d10b19c2b41de" />
+      <keyword name="SolarIrradianceEarth_nm_Wm2nm" id="simul::sky::SolarIrradianceEarth_nm_Wm2nm" ref="namespacesimul_1_1sky.html#ae39fa0367e02d10fd3b12def136f6f40" />
       <keyword name="simul::sky::AtmosphericScatteringInterface" id="simul::sky::AtmosphericScatteringInterface" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html" />
       <keyword name="GetPlanetRadius" id="simul::sky::AtmosphericScatteringInterface::GetPlanetRadius" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#ad3991d2cadbbd9c7100d9c56f671e944" />
       <keyword name="SetPlanetRadius" id="simul::sky::AtmosphericScatteringInterface::SetPlanetRadius" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#acce69da767ccc518ca1fb237690ce7dc" />
@@ -2120,6 +2121,7 @@
       <keyword name="SetInt" id="simul::sky::SkyKeyframe::SetInt" ref="structsimul_1_1sky_1_1SkyKeyframe.html#a629b0364e6fd6c9256e170e4e32da13d" />
       <keyword name="simul::sky::SkyKeyframer" id="simul::sky::SkyKeyframer" ref="classsimul_1_1sky_1_1SkyKeyframer.html" />
       <keyword name="BumpKeyframe" id="simul::sky::SkyKeyframer::BumpKeyframe" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a19d53ad4f1fe999fb4bc4139b8d98c11" />
+      <keyword name="CalcSunIrradianceAtEarth" id="simul::sky::SkyKeyframer::CalcSunIrradianceAtEarth" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a7dcb3359148df672f858575c4f515b68" />
       <keyword name="ClearHighlightConstellations" id="simul::sky::SkyKeyframer::ClearHighlightConstellations" ref="classsimul_1_1sky_1_1SkyKeyframer.html#ab9d448c0c8bc33fbb408820ea50eba24" />
       <keyword name="DeleteKeyframeByUniqueId" id="simul::sky::SkyKeyframer::DeleteKeyframeByUniqueId" ref="classsimul_1_1sky_1_1SkyKeyframer.html#ade9fe57965add1153fbc1d4a0a87333c" />
       <keyword name="GetAllModifiableKeyframes" id="simul::sky::SkyKeyframer::GetAllModifiableKeyframes" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a485eb9589bf63a7b5a536d87c6de07ab" />
@@ -2296,13 +2298,6 @@
       <file>bdwn.png</file>
       <file>sync_on.png</file>
       <file>sync_off.png</file>
-      <file>Simul-Logo-200x60.png</file>
-      <file>doc.png</file>
-      <file>folderopen.png</file>
-      <file>folderclosed.png</file>
-      <file>arrowdown.png</file>
-      <file>arrowright.png</file>
-      <file>splitbar.png</file>
       <file>doxygen.css</file>
       <file>Base_8h_source.html</file>
       <file>BufferedStringStreamBuf_8h_source.html</file>
@@ -2492,6 +2487,7 @@
       <file>SkyKeyframer_8h_source.html</file>
       <file>SkyTexturesCallback_8h_source.html</file>
       <file>Stars_8h_source.html</file>
+      <file>Sun_8h_source.html</file>
       <file>Texture1D4_8h_source.html</file>
       <file>Texture2D1_8h_source.html</file>
       <file>Texture2D4_8h_source.html</file>
@@ -2803,6 +2799,7 @@
       <file>namespacemembers_func.html</file>
       <file>namespacemembers_func.html</file>
       <file>namespacemembers_func.html</file>
+      <file>namespacemembers_vars.html</file>
       <file>namespacemembers_type.html</file>
       <file>namespacemembers_type.html</file>
       <file>namespacemembers_enum.html</file>
@@ -2845,7 +2842,7 @@
       <file>functions_x.html</file>
       <file>functions_y.html</file>
       <file>functions_z.html</file>
-      <file>functions_~.html</file>
+      <file>functions_0x7e.html</file>
       <file>functions_func.html</file>
       <file>functions_func_b.html</file>
       <file>functions_func_c.html</file>
@@ -2870,7 +2867,7 @@
       <file>functions_func_x.html</file>
       <file>functions_func_y.html</file>
       <file>functions_func_z.html</file>
-      <file>functions_func_~.html</file>
+      <file>functions_func_0x7e.html</file>
       <file>functions_vars.html</file>
       <file>functions_vars.html</file>
       <file>functions_vars.html</file>
