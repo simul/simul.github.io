@@ -31,21 +31,33 @@ All editor properties of the trueSKY object are publicly accessible, so once a r
 Sky and Clouds Layers
 --------
 
-Layer properties are those accessible in the sequencer by clicking on "Sky", "3D Clouds" or "2D clouds" on the left of the timeline. These affect the entire sequence and the values will remain until the user changes them manually. This differs in nature from keyframe properties, which are active only between specified times and will be automatically modified via interpolation (for example if two adjacent keyframes have cloudiness set to 0.4 and 0.6 respectively, trueSKY will interpolate these values for times in between, increasing gradually from 0.4 to 0.6). 
+Layer properties are those accessible in the sequencer by clicking on "Sky", "3D Clouds" or "2D clouds" on the left of the timeline. These affect the entire sequence and the values will remain until the user changes them manually. This differs in nature from keyframe properties, which are active only between specified times and will be automatically modified via interpolation (for example if two adjacent keyframes have cloudiness set to 0.4 and 0.6 respectively, trueSKY will interpolate these values for times in between, increasing gradually from 0.4 to 0.6). The functions needed to Get and Set layer properties are as follows:
 
-The functions needed to Get and Set layer properties are as follows:
+
+**Sky**:
 
 * **GetSkyFloat (string name)**: Gets the sky layer float specified by the name string.
 * **GetSkyInt (string name)**: Gets the sky layer int specified by the name string.
-* **GetCloudFloat (string name)**: Gets the cloud layer float specified by the name string.
-* **GetCloudInt (string name)**: Gets the cloud layer int specified by the name string.
 * **SetSkyFloat  (string name, float value)**: Sets the sky layer float specified by the name string to the given float value.
 * **SetSkyInt  (string name, int value)**: Sets the sky layer int specified by the name string to the given float value.
-* **SetCloudFloat  (string name, float value)**: Sets the cloud layer float specified by the name string to the given float value.
-* **SetCloudInt  (string name, int value)**: Sets the cloud layer int specified by the name string to the given float value.
+
+**3D Clouds**:
+
+* **GetCloudFloat (string name)**: Gets the 3D cloud layer float specified by the name string.
+* **GetCloudInt (string name)**: Gets the 3D cloud layer int specified by the name string.
+* **SetCloudFloat  (string name, float value)**: Sets the 3D cloud layer float specified by the name string to the given float value.
+* **SetCloudInt  (string name, int value)**: Sets the 3D cloud layer int specified by the name string to the given float value.
+
+**2D Clouds**:
+
+* **Get2DCloudFloat (string name)**: Gets the 2D cloud layer float specified by the name string.
+* **Get2DCloudInt (string name)**: Gets the 2D cloud layer int specified by the name string.
+* **Set2DCloudFloat  (string name, float value)**: Sets the 2D cloud layer float specified by the name string to the given float value.
+* **Set2DCloudInt  (string name, int value)**: Sets the 2D cloud layer int specified by the name string to the given float value.
 
 
-**Example**: To increment the cloud layer rain speed by 5:
+
+**Example**: To increment the 3D cloud layer rain speed by 5:
 
 	private trueSKY tS;  
  

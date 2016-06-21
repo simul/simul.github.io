@@ -28,22 +28,24 @@ Read more about editing the Cloud Layer or Cloud Keyframes on [The Sky Sequencer
 Editing Clouds Via Scripting: The Cloud Layer
 ---------------
  
-To Get/Set cloud layer properties, use **trueSKY.GetCloudFloat**, **trueSKY.GetCloudInt**, **trueSKY.SetCloudFloat** and **trueSKY.SetCloudInt**. For more on how to use these functions, along with information about other helpful functions (such as cloud queries) see [Scripting](http://docs.simul.co/unity/Scripting.html). The tables below show the various cloud layer properties (named as they appear in the sequencer), along with the matching name string to use for scripting. **Note**: Parameters that are Bools in the Sequencer are treated as Ints in scripting, where 0 = false and 1 = true.
+To Get and Set 3D cloud layer properties, use **trueSKY.GetCloudFloat**, **trueSKY.GetCloudInt**, **trueSKY.SetCloudFloat** and **trueSKY.SetCloudInt**. For 2D cloud layer properties, use **trueSKY.Get2DCloudFloat**, **trueSKY.Get2DCloudInt**, **trueSKY.Set2DCloudFloat** and **trueSKY.Set2DCloudInt**. For more on how to use these functions, along with information about other helpful functions (such as cloud queries) see [Scripting](http://docs.simul.co/unity/Scripting.html). 
+
+The tables below show the various cloud layer properties (named as they appear in the sequencer), along with the matching name string to use for scripting. The following (precipitation) properties are exclusive to the 3D cloud layer: Max Particles, Threshold, Radius, Rain Speed and Raindrop Size. **Note**: Parameters that are Bools in the Sequencer are treated as Ints in scripting, where 0 = false and 1 = true.
 
 
 **Floating-point**
 
 Sequencer Property | Name Variable | Definition
 -------------------|---------------|---------
-Threshold |"precipitationThresholdKm"| Thickness of cloud needed for rainfall. Between 0.0 and 10.0 
+Threshold |"precipitationThresholdKm"| Thickness of cloud needed for rainfall. Between 0.0 and 10.0.
 Radius | "precipitationRadiusMetres"| Size of particle zone. Between 0.0 and 100.0.
-Rain Speed| "rainFallSpeedMS"| Between 0.0 and 120.0
+Rain Speed| "rainFallSpeedMS"| Between 0.0 and 120.0.
 Raindrop Size|"rainDropSizeMm"| Between 0.001 and 100.0.
-Shadow|"cloudShadowStrength" | Amount of shadow. Between 0.0 and 1.0
+Shadow|"cloudShadowStrength" | Amount of shadow. Between 0.0 and 1.0.
 Shadow Range|"cloudShadowRange"| Range of cloud shadow texture, in km. Between 0.5 and 200.0.
 Max cloud dist|"maxCloudDistanceKm"| Distance of furthest cloud layer. Between 100.0 and 500.0.
-Noise Period | "noisePeriod" | Fractal noise period, in days. Between 0.001 and 1000.0 
-Persistence |"edgeNoisePersistence"| Persistence for edge noise texture. Between 0.0 and 1.0
+Noise Period | "noisePeriod" | Fractal noise period, in days. Between 0.001 and 1000.0.
+Persistence |"edgeNoisePersistence"| Persistence for edge noise texture. Between 0.0 and 1.0.
 
 
 **Integer**

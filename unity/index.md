@@ -89,7 +89,7 @@ This is your connection to trueSKY within a scene. Its controls are:
 
 **CPU Level**: Sets depth of profiling tree for CPU.
 
-**Profiling** If true, enables CPU and GPU profiling for trueSKY. The results will be updated every few frames, and shown in the text area beneath the "Profiling" checkbox. 
+**Profiling**: If true, enables CPU and GPU profiling for trueSKY. The results will be updated every few frames, and shown in the text area beneath the "Profiling" checkbox. 
 
 
 The Sky Sequence

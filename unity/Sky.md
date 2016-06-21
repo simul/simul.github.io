@@ -88,6 +88,7 @@ To Get/Set sky keyframe properties, use **trueSKY.GetKeyframeValue** and **trueS
 
 Sequencer Property|Name Variable|Definition
 ------------------|--------------|----------
+Time | "daytime" | The trueSKY time at which the keyframe starts. Betwee 0.0 and 1.0 (for the first day, second day would be 1.0 to 2.0 and so on).
 Sea Level Deg. C | "SeaLevelTemperatureK" | For infrared rendering. Between -273.0 and 1000.0.
 Haze / Fog | "Haze" | Amount of haze/mist. Alters visibility. Between 0.00001 and 1000.0.
 Haze Base, km | "HazeBaseKm" | Base altitude above which haze decreases in density. Between -2.0 and 20.0. 
@@ -112,7 +113,6 @@ Distances | "numColourDistances" | Number of distances for custom table texture.
 Automie | "AutoMie" | Whether to recalculate Mie coefficients based on the haze at this keyframe. Bool.
 Automatic Sun Position | "AutomaticSunPosition" | Whether to calculate sun position from date and time. Bool.
 Automatic Moon Position | "AutomaticMoonPosition" | Whether to calculate moon position from date and time. Bool.
-Time | "daytime" | The trueSKY time at which the keyframe starts. Betwee 0.0 and 1.0 (for the first day, second day would be 1.0 to 2.0 and so on).
 
  
 **Example**: To get the last keyframe in a sequence, and then set its haze value to 12:

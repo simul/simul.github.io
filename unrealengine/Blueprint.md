@@ -10,6 +10,13 @@ trueSKY in Blueprint
 The trueSKY Blueprint macros provide a wide array of functionality while your game is playing or simulating. These macros will not take effect unless you are in one of these modes. To permanently change the properties of a light, start simulating, and right-click your Directional Light, then select "Keep Simulation Changes".
 
 
+The TrueSky Sequence Actor
+--------------
+
+The values of the Sequence Actor itself can be changed via Blueprint. To Get and/or set these values, make a reference to the TrueSkySequenceActor and drag the output pin onto an empty space and either search for a value directly or navigate to Class-> TrueSkySequenceActor.
+
+<a href="http://docs.simul.co/unrealengine/images/SetGetCloudLayer.png"><img src="http://docs.simul.co/unrealengine/images/SetGetCloudLayer.png" alt="Blueprint"/></a>
+
 Lighting
 --------------
 
@@ -70,26 +77,32 @@ To test if there is cloud between two points, use CloudLineTest:
 <a href="http://docs.simul.co/unrealengine/images/CloudLineTest.png"><img src="http://docs.simul.co/unrealengine/images/CloudLineTest.png" alt="Blueprint" /></a>
  
 
+Layer Properties
+--------------------------------------------------------------------------------------------------
+
+To set a layer property Blueprint, use the functions below. The following will need to be prefixed onto the property's name string: "sky:", "clouds:" or "2dclouds:", depending on the layer in use. E.g., to set the 2D cloud layer's noise period to 3.5, the SetFloat function would be called with "2dclouds:noisePeriod" as the Name parameter, and 3.5 as the Value parameter.
+
+* **GetInt (String Name):** Gets the specified integer property for the prefixed layer.
+* **SetInt (String Name, int Value):** Sets the specified integer property for the prefixed layer to the given value.
+* **GetFloat (String Name):** Gets the specified float property for the prefixed layer.
+* **SetFloat (String Name, float Value):**  Sets the specified float property for the prefixed layer to the given value.
+
+For information about the layer properties you can change and the name strings needed to do so, see the [Cloud](http://docs.simul.co/unrealengine/Clouds.html) and [Sky](http://docs.simul.co/unrealengine/Sky.html) pages.
+
+
 Keyframe Properties
 --------------------------------------------------------------------------------------------------
 
-To set a keyframe's value from Blueprint, use the SetKeyframeFloat, or SetKeyframeInt functions. You must pass the keyframe's integer uid, the name of the property as a string, and the value.
+To set a keyframe's value from Blueprint, use the SetKeyframeFloat, or SetKeyframeInt functions. You must pass the keyframe's integer uid, the name of the property as a string, and the value. Similarly, GetKeyframeFloat and GetKeyframeInt are used to obtain current values. 
 
-Similarly, GetKeyframeFloat and GetKeyframeInt are used to obtain current values.
+There are multiple functions provided to get the uid required to modify a keyframe. However, if the cloud keyframer's Update property is set to "Instant", you will need to use GetNextModifiableCloudKeyframe*(int Layer)* function to get the next uid that can be modified without recalculation. If the Update property is instead set to "Gradual", any keyframe can be modified at any time, and the functions below can be used to return the uids required for setting and getting keyframe values. Note: For clouds, the correct layer parameters are 1 for 3D and 2 for 2D.
 
-You can get the next uid in the future that can be modified without recalculation using GetNextModifiableCloudKeyframe. This is needed if the cloud keyframer's Update property is set to "Instant". If it's "Gradual", any keyframe can be modified at any time.
-
-* GetCloudKeyframeByIndex: To get an identifier for the cloud keyframe at the specified index, returns 0 if out of range.
-
-* GetNextCloudKeyframeAfterTime: Get an identifier for the next cloud keyframe at or after the specified time.
-
-* GetPreviousCloudKeyframeBeforeTime: Get an identifier for the last cloud keyframe before the specified time.
-	
-* GetSkyKeyframeByIndex Get an identifier for the cloud keyframe at the specified index. Returns 0 if there is none at that index (e.g. you have gone past the end of the list).
-
-* GetNextSkyKeyframeAfterTime: Get an identifier for the next cloud keyframe at or after the specified time.
-
-* GetPreviousSkyKeyframeBeforeTime: Get an identifier for the last sky keyframe before the specified time.
+* **GetCloudKeyframeByIndex (int Layer, int Index):** To get an identifier for the cloud keyframe at the specified layer and index, returns 0 if out of range. 
+* **GetNextCloudKeyframeAfterTime (int Layer, float T):** Get an identifier for the next cloud keyframe at or after the specified time T. 
+* **GetPreviousCloudKeyframeBeforeTime (int Layer, float T):** Get an identifier for the last cloud keyframe before the specified time T. 
+* **GetSkyKeyframeByIndex (int Index):** Get an identifier for the cloud keyframe at the specified index. Returns 0 if there is none at that index (e.g. you have gone past the end of the list). 
+* **GetNextSkyKeyframeAfterTime (float T):** Get an identifier for the next cloud keyframe at or after the specified time T. 
+* **GetPreviousSkyKeyframeBeforeTime (float T):** Get an identifier for the last sky keyframe before the specified time T.
 
 
 Sun and Moon Properties

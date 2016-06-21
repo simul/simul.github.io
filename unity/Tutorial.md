@@ -10,7 +10,7 @@ Tutorial
 Initial Configuration
 -------------------------
 
-If you haven't already, please see [Getting Started](http://docs.simul.co/unity/) for information on how to use the plugin in Unity.
+If you haven't already, please see [Getting Started](http://docs.simul.co/unity/) for information on how to install the plugin in Unity.
 
 Either create a new project or open the provided sample project at: \Simul\Plugins\Unity\Project5. The easiest way to setup trueSKY is using the provided setup wizard. This can be found by clicking GameObject->Initialise trueSKY in Scene. Simply follow the steps to create and assign a trueSKY sequence asset, the TrueSkyCamera script, the trueSKY GameObject, the SimulSun script, the trueSKY Cubemap Probe and remove the default fog and skybox (recommended).
 
@@ -38,8 +38,7 @@ Progressing Time
 
 Time in trueSKY is measured such that 0.0 is midnight on the first day, 0.5 is noon on the first day, 1.0 is midnight on the second day and so on. To get movement in the scene we need to increment the trueSKY time. Navigate to the trueSKY object and you will see a field called "Speed". This will affect the rate at which time changes in trueSKY. By default this is set to 10, which will increment the time by .0001 each second. Setting this to 1000 for example will increment the time by .01 each second, and setting it to 100000 will make a trueSKY day pass every second. It is also possible to write your own scripts to change the time in trueSKY. This is done via by altering the trueSKY.Time value and you can approach this however you wish. However to achieve framerate-independence, it is advisable to make use of Time.deltaTime. 
 
-To do so, first set the Speed variable in the trueSKY object to 0, so it doesn't affect the time. Create and attach a new script to the trueSKY object, and open it. The trueSKY time is changed via the trueSKY.Time value. You can approach this however you wish,  This will return the time in seconds since the last frame, so multiplying  whatever rate of time increase you specify by this allows the time in trueSKY to be updated smoothly and accurately. In this example I have created a public "timeToAdd" float, which is set in the editor to 0.01666 (1 / 60), making one trueSKY day equivalent to one real-time minute.
-
+To do so, first set the Speed variable in the trueSKY object to 0, so it doesn't affect the time. Create and attach a new script to the trueSKY object, and open it. The trueSKY time is changed via the trueSKY.Time value. You can approach this however you wish, but making use of deltaTime is recommended. This will return the time in seconds since the last frame, so multiplying whatever rate of time increase you specify by this allows the time in trueSKY to be updated smoothly. In this example I have created a public "timeToAdd" float, which is set in the editor to 0.01666 (1 / 60), making one trueSKY day equivalent to one real-time minute.
 
 	private trueSKY tS;
 	public float timeToAdd;
@@ -56,7 +55,7 @@ To do so, first set the Speed variable in the trueSKY object to 0, so it doesn't
 		tS.time += timeToAdd * Time.deltaTime;
 	}
 
-If you press play now you will see the clouds move, along with the sun, moon and at night time, the stars. 
+If you press play now you will see the clouds move, along with the sun, moon and the stars (depending on the time of day). 
 
 
 Lighting
