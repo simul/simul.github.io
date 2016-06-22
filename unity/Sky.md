@@ -36,8 +36,8 @@ To Get/Set sky layer properties, use **trueSKY.GetSkyFloat**, **trueSKY.GetSkyIn
 
 Sequencer Property | Name Variable | Definition
 -------------------|---------------|---------    
-Brightness Power | BrightnessPower| Adjusts light levels to compensate for variations via power function (e.g 0.5 = square root dependence, 1.0 = no adjustment). Between 0.01 and 1.0.
-Max Altitude | MaxAltitudeKm | 	Max altitude that will be used for fade and sky colour calculations, in km. Between 2.0 and 100.0.
+Brightness Power | "BrightnessPower" | Adjusts light levels to compensate for variations via power function (e.g 0.5 = square root dependence, 1.0 = no adjustment). Between 0.01 and 1.0.
+Max Altitude | "MaxAltitudeKm" | 	Max altitude that will be used for fade and sky colour calculations, in km. Between 2.0 and 100.0.
 Distance Range | "MaxDistanceKm"| Maximum distance for fade. Between 5.0 and 2000.0
 Overcast Effect | "OvercastEffectStrength"| How strongly cloud layer blocks light. Between 0.0 and 1.0.
 Ozone  | "OzoneStrength" | Amount of ozone. Between 0.0 and 0.2.
