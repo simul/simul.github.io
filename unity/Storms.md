@@ -1,5 +1,5 @@
 ---
-title: Clouds
+title: Storms
 layout: unity
 weight : 3
 ---
@@ -27,7 +27,7 @@ As with cloud and sky keyframes, to get/set properties of a storm keyframe, you 
 **Floating-point**
 
 Sequencer Property | Name Variable | Definition
------------------------------------
+-------------------|---------------|------------
 Radiance |"maxRadiance"|   Maximum radiance of the strikes.
 Branch Angle |"branchAngleDegrees" | Mean angle of branching, in degrees.
 Roughness |"roughness" | How rough/smooth to make the lightning branches.
@@ -44,7 +44,7 @@ End Time|"end_time"   | The time at which the storm ends.
 **Integer**
 
 Sequencer Property | Name Variable | Definition
------------------------------------
+-------------------|---------------|-----------
 Real-time |"realTime"| Bool. Sets frequency/duration of strikes to real time. If false, then simulation time.  
 Levels |"numLevels"| Number of levels of branching.
 Branches |"numBranches"| Mean number of branches to generate from each parent.
