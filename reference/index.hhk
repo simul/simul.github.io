@@ -6,14 +6,14 @@
 <UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="man_1_introduction.html"><param name="Name" value="1 Introduction"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="man_2_gettingstarted.html"><param name="Name" value="2 Getting Started"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="man_51_environment.html"><param name="Name" value="3 Controlling the Environment"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="man_3_rendering.html"><param name="Name" value="3 Rendering the Environment"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="man_511_environment_ooo1_sky_keyframer.html"><param name="Name" value="3.1 The Sky Keyframer"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="man_3_environment_ooo2_cloud_keyframer.html"><param name="Name" value="3.2 The Cloud Keyframer"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="man_4_pri.html"><param name="Name" value="4 The Plugin Rendering Interface"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="man_5_classes.html"><param name="Name" value="5 The trueSKY Classes"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="man_51_classes_ooo1_environment.html"><param name="Name" value="5.1 Controlling the Environment"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="man_52_shaders.html"><param name="Name" value="5.2 Shaders"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="man_53_mixed.html"><param name="Name" value="5.3 Mixed Resolution Compositing"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="man_53_classes_ooo3_mixed.html"><param name="Name" value="5.3 Mixed Resolution Compositing"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="man_6_sequencer.html"><param name="Name" value="6 The Sky Sequencer"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1FileLoader.html#a667badf6e526183d4ede963335973312"><param name="Name" value="AcquireFileContents"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1BaseFramebuffer.html#ae0def98a9ee12aeaf070d8c61aeca338"><param name="Name" value="Activate"></OBJECT>
