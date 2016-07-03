@@ -11,6 +11,8 @@
           <section title="2 Getting Started" ref="man_2_gettingstarted.html" />
           <section title="Licensing" ref="man_a_licensing.html" />
         </section>
+        <section title="3 Rendering the Environment" ref="man_3_rendering.html" />
+        <section title="4 The Plugin Rendering Interface" ref="man_4_pri.html" />
         <section title="5 The trueSKY Classes" ref="man_5_classes.html">
           <section title="3 Controlling the Environment" ref="man_51_environment.html">
             <section title="3.1 The Sky Keyframer" ref="man_511_environment_ooo1_sky_keyframer.html" />
@@ -20,6 +22,7 @@
         </section>
         <section title="3.2 The Cloud Keyframer" ref="man_3_environment_ooo2_cloud_keyframer.html" />
         <section title="6 The Sky Sequencer" ref="man_6_sequencer.html" />
+        <section title="Change List" ref="man_b_changelist.html" />
         <section title="REFERENCE">
           <section title="Namespace List" ref="namespaces.html">
             <section title="simul">
@@ -216,6 +219,8 @@
     <keywords>
       <keyword name="1 Introduction" id="1 Introduction" ref="man_1_introduction.html" />
       <keyword name="2 Getting Started" id="2 Getting Started" ref="man_2_gettingstarted.html" />
+      <keyword name="3 Rendering the Environment" id="3 Rendering the Environment" ref="man_3_rendering.html" />
+      <keyword name="4 The Plugin Rendering Interface" id="4 The Plugin Rendering Interface" ref="man_4_pri.html" />
       <keyword name="5 The trueSKY Classes" id="5 The trueSKY Classes" ref="man_5_classes.html" />
       <keyword name="3 Controlling the Environment" id="3 Controlling the Environment" ref="man_51_environment.html" />
       <keyword name="3.1 The Sky Keyframer" id="3.1 The Sky Keyframer" ref="man_511_environment_ooo1_sky_keyframer.html" />
@@ -224,6 +229,7 @@
       <keyword name="5.3 Mixed Resolution Compositing" id="5.3 Mixed Resolution Compositing" ref="man_53_mixed.html" />
       <keyword name="6 The Sky Sequencer" id="6 The Sky Sequencer" ref="man_6_sequencer.html" />
       <keyword name="Licensing" id="Licensing" ref="man_a_licensing.html" />
+      <keyword name="Change List" id="Change List" ref="man_b_changelist.html" />
       <keyword name="DepthTextureStruct" id="DepthTextureStruct" ref="structDepthTextureStruct.html" />
       <keyword name="Obj::File" id="Obj::File" ref="classObj_1_1File.html" />
       <keyword name="CalculateNormals" id="Obj::File::CalculateNormals" ref="classObj_1_1File.html#a56c1e5376cade8453f411fa54acd8432" />
@@ -2464,6 +2470,8 @@
       <file>0_01Main_8md_source.html</file>
       <file>1_01Intro_8md_source.html</file>
       <file>2_01GettingStarted_8md_source.html</file>
+      <file>3_01Renderering_8md_source.html</file>
+      <file>4_01Plugin_01Rendering_01Interface_8md_source.html</file>
       <file>5_01TrueSKY_01Classes_8md_source.html</file>
       <file>5_81_01Environment_8md_source.html</file>
       <file>5_81_81_01SkyKeyframer_8md_source.html</file>
@@ -2472,6 +2480,7 @@
       <file>5_83_01MixedResolution_8md_source.html</file>
       <file>6_01SkySequencer_8md_source.html</file>
       <file>A_01General_8md_source.html</file>
+      <file>B_01ChangeList_8md_source.html</file>
       <file>BaseAtmosphericsRenderer_8h_source.html</file>
       <file>BaseGpuSkyGenerator_8h_source.html</file>
       <file>BaseKeyframer_8h_source.html</file>
@@ -2498,6 +2507,11 @@
       <file>man_1_introduction.html</file>
       <file>man_2_gettingstarted.html</file>
       <file>SimulOverview.png</file>
+      <file>man_3_rendering.html</file>
+      <file>MilkyWay.png</file>
+      <file>rain.jpg</file>
+      <file>Lightning-RainStreaks.jpg</file>
+      <file>man_4_pri.html</file>
       <file>man_5_classes.html</file>
       <file>man_51_environment.html</file>
       <file>man_511_environment_ooo1_sky_keyframer.html</file>
@@ -2514,6 +2528,7 @@
       <file>PerformanceWindow.jpg</file>
       <file>Presets.png</file>
       <file>man_a_licensing.html</file>
+      <file>man_b_changelist.html</file>
       <file>structDepthTextureStruct.html</file>
       <file>structDepthTextureStruct-members.html</file>
       <file>classObj_1_1File.html</file>

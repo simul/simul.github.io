@@ -10,6 +10,8 @@
   <LI><OBJECT type="text/sitemap"><param name="Name" value="2 Getting Started"><param name="Local" value="man_2_gettingstarted.html"><param name="ImageNumber" value="11"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="Licensing"><param name="Local" value="man_a_licensing.html"><param name="ImageNumber" value="11"></OBJECT>
   </UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="3 Rendering the Environment"><param name="Local" value="man_3_rendering.html"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="4 The Plugin Rendering Interface"><param name="Local" value="man_4_pri.html"><param name="ImageNumber" value="11"></OBJECT>
 <LI><OBJECT type="text/sitemap"><param name="Name" value="5 The trueSKY Classes"><param name="Local" value="man_5_classes.html"><param name="ImageNumber" value="1"></OBJECT>
   <UL>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="3 Controlling the Environment"><param name="Local" value="man_51_environment.html"><param name="ImageNumber" value="1"></OBJECT>
@@ -21,6 +23,7 @@
   </UL>
 <LI><OBJECT type="text/sitemap"><param name="Name" value="3.2 The Cloud Keyframer"><param name="Local" value="man_3_environment_ooo2_cloud_keyframer.html"><param name="ImageNumber" value="11"></OBJECT>
 <LI><OBJECT type="text/sitemap"><param name="Name" value="6 The Sky Sequencer"><param name="Local" value="man_6_sequencer.html"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Change List"><param name="Local" value="man_b_changelist.html"><param name="ImageNumber" value="11"></OBJECT>
 <LI><OBJECT type="text/sitemap"><param name="Name" value="REFERENCE"><param name="ImageNumber" value="1"></OBJECT>
   <UL>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="Namespace List"><param name="Local" value="namespaces.html"><param name="ImageNumber" value="1"></OBJECT>

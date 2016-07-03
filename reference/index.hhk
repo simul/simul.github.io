@@ -7,8 +7,10 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="man_1_introduction.html"><param name="Name" value="1 Introduction"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="man_2_gettingstarted.html"><param name="Name" value="2 Getting Started"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="man_51_environment.html"><param name="Name" value="3 Controlling the Environment"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="man_3_rendering.html"><param name="Name" value="3 Rendering the Environment"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="man_511_environment_ooo1_sky_keyframer.html"><param name="Name" value="3.1 The Sky Keyframer"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="man_3_environment_ooo2_cloud_keyframer.html"><param name="Name" value="3.2 The Cloud Keyframer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="man_4_pri.html"><param name="Name" value="4 The Plugin Rendering Interface"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="man_5_classes.html"><param name="Name" value="5 The trueSKY Classes"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="man_52_shaders.html"><param name="Name" value="5.2 Shaders"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="man_53_mixed.html"><param name="Name" value="5.3 Mixed Resolution Compositing"></OBJECT>
@@ -133,6 +135,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1clouds_1_1CloudKeyframer_1_1Storm.html#acc0b752db29f0b91460867e298032bcf"><param name="Name" value="simul::clouds::CloudKeyframer::Storm"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1clouds_1_1PrecipitationRegion.html#ac99c4ed3b30dccd879e0d6190a61c17e"><param name="Name" value="simul::clouds::PrecipitationRegion"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="man_b_changelist.html"><param name="Name" value="Change List"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudGrid.html#a9752378e0c3359a0412fac70c9539d80"><param name="Name" value="CheckLicense"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudGrid.html#a9752378e0c3359a0412fac70c9539d80"><param name="Name" value="simul::clouds::CellularCloudGrid"></OBJECT>

@@ -174,6 +174,8 @@ UnityPluginInterface_8h_source.html
 0_01Main_8md_source.html
 1_01Intro_8md_source.html
 2_01GettingStarted_8md_source.html
+3_01Renderering_8md_source.html
+4_01Plugin_01Rendering_01Interface_8md_source.html
 5_01TrueSKY_01Classes_8md_source.html
 5_81_01Environment_8md_source.html
 5_81_81_01SkyKeyframer_8md_source.html
@@ -182,6 +184,7 @@ UnityPluginInterface_8h_source.html
 5_83_01MixedResolution_8md_source.html
 6_01SkySequencer_8md_source.html
 A_01General_8md_source.html
+B_01ChangeList_8md_source.html
 BaseAtmosphericsRenderer_8h_source.html
 BaseGpuSkyGenerator_8h_source.html
 BaseKeyframer_8h_source.html
@@ -207,6 +210,8 @@ Texture2D4_8h_source.html
 Texture3D4_8h_source.html
 man_1_introduction.html
 man_2_gettingstarted.html
+man_3_rendering.html
+man_4_pri.html
 man_5_classes.html
 man_51_environment.html
 man_511_environment_ooo1_sky_keyframer.html
@@ -215,6 +220,7 @@ man_52_shaders.html
 man_53_mixed.html
 man_6_sequencer.html
 man_a_licensing.html
+man_b_changelist.html
 structDepthTextureStruct.html
 structDepthTextureStruct-members.html
 classObj_1_1File.html
@@ -541,6 +547,9 @@ bdwn.png
 sync_on.png
 sync_off.png
 SimulOverview.png
+MilkyWay.png
+rain.jpg
+Lightning-RainStreaks.jpg
 SkyKeyframerLinked.png
 Compositing.png
 Timeline.png
