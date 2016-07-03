@@ -34,7 +34,7 @@ url: 3 Controlling the Environment
 <div class="title">3 Controlling the Environment </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>Updating </h2>
+<div class="textblock"><h2>Updating</h2>
 <p>The <a class="el" href="classsimul_1_1clouds_1_1Environment.html">Environment</a> object stores an instance of <a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html">SkyKeyframer</a> and two instances of <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html">CloudKeyframer</a>, and performs the necessary initialization and updates.</p>
 <p>As described in gettingstarted, you will declare and create an instance of Environment. If you have a sequence file (.sq or .seq) saved from the sequencer, you can load this into the Environment and its keyframers will be appropriately initialized with global values and keyframes. </p><pre class="fragment">simul::clouds::Environment *environment=NULL;
 ...
@@ -45,14 +45,14 @@ environment-&gt;LoadFromText(ifs);
 </pre><p>You can use your own text loader class in place of TextFileInput.</p>
 <p>The properties and keyframes of each Keyframer can also be modified in real time. The keyframes each have a <em>time</em> value, and the keyframer tracks a current time through these frames, interpolating properties as it does so. This time value is obtained or set using the skyKeyframer: </p><pre class="fragment">float time=environment-&gt;skyKeyframer-&gt;GetTime();
 </pre><p>You don't need to update the keyframers specifically, so long as you're using <a class="el" href="classsimul_1_1clouds_1_1Environment.html#a8a1520e878ee234816a221b9049e1c41" title="Call this once per-frame. ">simul::clouds::Environment::Update()</a> once per frame.</p>
-<p>For more information on the two types of keyframer, see: <a class="el" href="man_3_environment_ooo1_sky_keyframer.html">3.1 The Sky Keyframer</a> <a class="el" href="man_3_environment_ooo2_cloud_keyframer.html">3.2 The Cloud Keyframer</a></p>
+<p>For more information on the two types of keyframer, see: <a class="el" href="man_511_environment_ooo1_sky_keyframer.html">3.1 The Sky Keyframer</a> <a class="el" href="man_512_environment_ooo2_cloud_keyframer.html">3.2 The Cloud Keyframer</a></p>
 <hr/>
-<p> Next: <a class="el" href="man_3_environment_ooo1_sky_keyframer.html">3.1 The Sky Keyframer</a> </p>
+<p> Next: <a class="el" href="man_511_environment_ooo1_sky_keyframer.html">3.1 The Sky Keyframer</a> </p>
 </div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Sun Jul 3 2016 07:46:41</small></address>
+Sun Jul 3 2016 19:55:54</small></address>
 </body>
 </html>

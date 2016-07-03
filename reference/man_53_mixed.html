@@ -37,7 +37,7 @@ url: 5 Mixed Resolution Compositing
 <div class="textblock"><p>TrueSKY's cloud rendering is usually performed at below the full resolution of the screen. This is because, as a raytracing system, its efficiency is highly dependent on the number of pixels drawn. To draw at 1/4 the full resolution, for example means rendering 1/16th the number of pixels, with significant time savings.</p>
 <p>However, clouds and Simul's other volumetric effects can be blended seamlessly with the full-resolution scene, even taking into account MSAA anti-aliasing. To do this, trueSKY uses a mixed-resolution compositor.</p>
 <div class="image">
-<img src="Compositing.png" />
+<img src="Compositing.png" alt="Compositing.png"/>
 </div>
 <p> <em>Mixed-resolution compositing in trueSKY</em></p>
 <p>The downscaling is set as a property of the weather renderer:</p>
@@ -46,12 +46,12 @@ url: 5 Mixed Resolution Compositing
 <p>trueSKY's mixed-resolution compositor can be useful for blending other effects, like particle systems, into the scene. To do this, you can adapt RenderMixedResolution, or the function it calls, RenderLowResolutionElements. You will need to fill in two rendertargets: one for the far depth, one for the near.</p>
 <p>For the far pass, use the x-component of the lowResDepthTexture as depth. For the near pass, use the y-component, but discard fragments whenever the z-component is zero (z represents edges).</p>
 <hr/>
-<p> Next: <a class="el" href="man_8_sequencer.html">6 The Sky Sequencer</a> </p>
+<p> Next: <a class="el" href="man_6_sequencer.html">6 The Sky Sequencer</a> </p>
 </div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Sun Jul 3 2016 07:46:42</small></address>
+Sun Jul 3 2016 19:55:55</small></address>
 </body>
 </html>

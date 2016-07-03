@@ -8,20 +8,19 @@
   <UL>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="1 Introduction"><param name="Local" value="man_1_introduction.html"><param name="ImageNumber" value="11"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="2 Getting Started"><param name="Local" value="man_2_gettingstarted.html"><param name="ImageNumber" value="11"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Name" value="3 Controlling the Environment"><param name="Local" value="man_3_environment.html"><param name="ImageNumber" value="1"></OBJECT>
-    <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="3.1 The Sky Keyframer"><param name="Local" value="man_3_environment_ooo1_sky_keyframer.html"><param name="ImageNumber" value="11"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="3.2 The Cloud Keyframer"><param name="Local" value="man_3_environment_ooo2_cloud_keyframer.html"><param name="ImageNumber" value="11"></OBJECT>
-    </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Name" value="4 Rendering the Environment"><param name="Local" value="man_4_rendering.html"><param name="ImageNumber" value="1"></OBJECT>
-    <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="4.1 Shaders"><param name="Local" value="man_4_rendering_ooo1_shaders.html"><param name="ImageNumber" value="11"></OBJECT>
-    </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Name" value="5 Mixed Resolution Compositing"><param name="Local" value="man_5_mixed_resolution.html"><param name="ImageNumber" value="11"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Name" value="6 The Sky Sequencer"><param name="Local" value="man_8_sequencer.html"><param name="ImageNumber" value="11"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="Licensing"><param name="Local" value="man_a_licensing.html"><param name="ImageNumber" value="11"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Name" value="Change List"><param name="Local" value="man_9_changelist.html"><param name="ImageNumber" value="11"></OBJECT>
   </UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="5 The trueSKY Classes"><param name="Local" value="man_5_classes.html"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="3 Controlling the Environment"><param name="Local" value="man_51_environment.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="3.1 The Sky Keyframer"><param name="Local" value="man_511_environment_ooo1_sky_keyframer.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="3.2 The Cloud Keyframer"><param name="Local" value="man_512_environment_ooo2_cloud_keyframer.html"><param name="ImageNumber" value="11"></OBJECT>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="5.2 Shaders"><param name="Local" value="man_52_shaders.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="5 Mixed Resolution Compositing"><param name="Local" value="man_53_mixed.html"><param name="ImageNumber" value="11"></OBJECT>
+  </UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="6 The Sky Sequencer"><param name="Local" value="man_6_sequencer.html"><param name="ImageNumber" value="11"></OBJECT>
 <LI><OBJECT type="text/sitemap"><param name="Name" value="REFERENCE"><param name="ImageNumber" value="1"></OBJECT>
   <UL>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="Namespace List"><param name="Local" value="namespaces.html"><param name="ImageNumber" value="1"></OBJECT>
