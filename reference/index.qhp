@@ -14,11 +14,11 @@
         <section title="5 The trueSKY Classes" ref="man_5_classes.html">
           <section title="3 Controlling the Environment" ref="man_51_environment.html">
             <section title="3.1 The Sky Keyframer" ref="man_511_environment_ooo1_sky_keyframer.html" />
-            <section title="3.2 The Cloud Keyframer" ref="man_512_environment_ooo2_cloud_keyframer.html" />
           </section>
           <section title="5.2 Shaders" ref="man_52_shaders.html" />
-          <section title="5 Mixed Resolution Compositing" ref="man_53_mixed.html" />
+          <section title="5.3 Mixed Resolution Compositing" ref="man_53_mixed.html" />
         </section>
+        <section title="3.2 The Cloud Keyframer" ref="man_3_environment_ooo2_cloud_keyframer.html" />
         <section title="6 The Sky Sequencer" ref="man_6_sequencer.html" />
         <section title="REFERENCE">
           <section title="Namespace List" ref="namespaces.html">
@@ -219,9 +219,9 @@
       <keyword name="5 The trueSKY Classes" id="5 The trueSKY Classes" ref="man_5_classes.html" />
       <keyword name="3 Controlling the Environment" id="3 Controlling the Environment" ref="man_51_environment.html" />
       <keyword name="3.1 The Sky Keyframer" id="3.1 The Sky Keyframer" ref="man_511_environment_ooo1_sky_keyframer.html" />
-      <keyword name="3.2 The Cloud Keyframer" id="3.2 The Cloud Keyframer" ref="man_512_environment_ooo2_cloud_keyframer.html" />
+      <keyword name="3.2 The Cloud Keyframer" id="3.2 The Cloud Keyframer" ref="man_3_environment_ooo2_cloud_keyframer.html" />
       <keyword name="5.2 Shaders" id="5.2 Shaders" ref="man_52_shaders.html" />
-      <keyword name="5 Mixed Resolution Compositing" id="5 Mixed Resolution Compositing" ref="man_53_mixed.html" />
+      <keyword name="5.3 Mixed Resolution Compositing" id="5.3 Mixed Resolution Compositing" ref="man_53_mixed.html" />
       <keyword name="6 The Sky Sequencer" id="6 The Sky Sequencer" ref="man_6_sequencer.html" />
       <keyword name="Licensing" id="Licensing" ref="man_a_licensing.html" />
       <keyword name="DepthTextureStruct" id="DepthTextureStruct" ref="structDepthTextureStruct.html" />
@@ -2502,7 +2502,7 @@
       <file>man_51_environment.html</file>
       <file>man_511_environment_ooo1_sky_keyframer.html</file>
       <file>SkyKeyframerLinked.png</file>
-      <file>man_512_environment_ooo2_cloud_keyframer.html</file>
+      <file>man_3_environment_ooo2_cloud_keyframer.html</file>
       <file>man_52_shaders.html</file>
       <file>man_53_mixed.html</file>
       <file>Compositing.png</file>
