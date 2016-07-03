@@ -213,11 +213,11 @@ man_2_gettingstarted.html
 man_3_rendering.html
 man_4_pri.html
 man_5_classes.html
-man_51_classes_ooo1_environment.html
+man_5_classes_ooo1_environment.html
 man_511_environment_ooo1_sky_keyframer.html
-man_3_environment_ooo2_cloud_keyframer.html
-man_52_shaders.html
-man_53_classes_ooo3_mixed.html
+man_5_classes_ooo1_environment_ooo2_cloud_keyframer.html
+man_5_classes_ooo2_shaders.html
+man_5_classes_ooo3_mixed.html
 man_6_sequencer.html
 man_a_licensing.html
 man_b_changelist.html
