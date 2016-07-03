@@ -209,7 +209,7 @@
             <section title="Obj::VertexBuffer" ref="structObj_1_1VertexBuffer.html" />
             <section title="simul::dx11::VertexBuffer&lt; T &gt;" ref="structsimul_1_1dx11_1_1VertexBuffer.html" />
             <section title="simul::crossplatform::Viewport" ref="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1Viewport" />
-            <section title="simul::crossplatform::ViewStruct" ref="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1ViewStruct" />
+            <section title="simul::crossplatform::ViewStruct" ref="structsimul_1_1crossplatform_1_1ViewStruct.html" />
           </section>
         </section>
       </section>
@@ -1307,6 +1307,11 @@
       <keyword name="MoveToSlowRAM" id="simul::crossplatform::Texture::MoveToSlowRAM" ref="classsimul_1_1crossplatform_1_1Texture.html#ab81c23d5a081ae4788710ad4bd6ed635" />
       <keyword name="setTexels" id="simul::crossplatform::Texture::setTexels" ref="classsimul_1_1crossplatform_1_1Texture.html#a171da2c97a586b62f0d95fb01edc9f8f" />
       <keyword name="simul::crossplatform::TextureView" id="simul::crossplatform::TextureView" ref="classsimul_1_1crossplatform_1_1TextureView.html" />
+      <keyword name="simul::crossplatform::ViewStruct" id="simul::crossplatform::ViewStruct" ref="structsimul_1_1crossplatform_1_1ViewStruct.html" />
+      <keyword name="depthTextureStyle" id="simul::crossplatform::ViewStruct::depthTextureStyle" ref="structsimul_1_1crossplatform_1_1ViewStruct.html#a5d5ec12b030c8335ef3fa6eb01298e77" />
+      <keyword name="proj" id="simul::crossplatform::ViewStruct::proj" ref="structsimul_1_1crossplatform_1_1ViewStruct.html#a5721c77a187e62dc3f3547e32fde52b6" />
+      <keyword name="view" id="simul::crossplatform::ViewStruct::view" ref="structsimul_1_1crossplatform_1_1ViewStruct.html#a185f8871592b82b9f1bc59313be364f2" />
+      <keyword name="view_id" id="simul::crossplatform::ViewStruct::view_id" ref="structsimul_1_1crossplatform_1_1ViewStruct.html#ade0e1516f7ca9f589b7961a778065efc" />
       <keyword name="simul::dx11" id="simul::dx11" ref="namespacesimul_1_1dx11.html" />
       <keyword name="CreateEffect" id="simul::dx11::CreateEffect" ref="namespacesimul_1_1dx11.html#a438f29efd3ada4ea0773a98d8065ac37" />
       <keyword name="CreateEffect" id="simul::dx11::CreateEffect" ref="namespacesimul_1_1dx11.html#aef9a1d177d9334a5fc06a27117c5c770" />
@@ -1452,8 +1457,8 @@
       <keyword name="SetShowLightningOverlay" id="simul::dx11::TrueSkyRenderer::SetShowLightningOverlay" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#a32b9256aac38951749ea49211aac8d20" />
       <keyword name="GetPerformanceTest" id="simul::dx11::TrueSkyRenderer::GetPerformanceTest" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#a9b3f56f4d1e71d37b0102623fdb4e25d" />
       <keyword name="SetPerformanceTest" id="simul::dx11::TrueSkyRenderer::SetPerformanceTest" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#a978acece14273464f24c0b1bcc6d294d" />
-      <keyword name="GetShowOSD" id="simul::dx11::TrueSkyRenderer::GetShowOSD" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#aab10c23031eb6a3ef947187572b84477" />
-      <keyword name="SetShowOSD" id="simul::dx11::TrueSkyRenderer::SetShowOSD" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#a05ee7e5c7324c2e3914e6a0c73da802b" />
+      <keyword name="GetShowDiagnostics" id="simul::dx11::TrueSkyRenderer::GetShowDiagnostics" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#afbed92bf276303165b0de4b9e802edea" />
+      <keyword name="SetShowDiagnostics" id="simul::dx11::TrueSkyRenderer::SetShowDiagnostics" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#ac5a6fae646836539d5bdf2851bc98d12" />
       <keyword name="GetShowTransparencyOverlay" id="simul::dx11::TrueSkyRenderer::GetShowTransparencyOverlay" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#a0c043a23248c8785d338803f939c7870" />
       <keyword name="SetShowTransparencyOverlay" id="simul::dx11::TrueSkyRenderer::SetShowTransparencyOverlay" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#ac6f4396bb3ada7addfd79e0f9b4613fc" />
       <keyword name="GetCloudTool" id="simul::dx11::TrueSkyRenderer::GetCloudTool" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#afe4546fafd1659caf51beb8976f30249" />
@@ -1785,8 +1790,8 @@
       <keyword name="SetShowLightningOverlay" id="simul::plugin::PluginTrueSkyRenderer::SetShowLightningOverlay" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a32b9256aac38951749ea49211aac8d20" />
       <keyword name="GetPerformanceTest" id="simul::plugin::PluginTrueSkyRenderer::GetPerformanceTest" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a9b3f56f4d1e71d37b0102623fdb4e25d" />
       <keyword name="SetPerformanceTest" id="simul::plugin::PluginTrueSkyRenderer::SetPerformanceTest" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a978acece14273464f24c0b1bcc6d294d" />
-      <keyword name="GetShowOSD" id="simul::plugin::PluginTrueSkyRenderer::GetShowOSD" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#aab10c23031eb6a3ef947187572b84477" />
-      <keyword name="SetShowOSD" id="simul::plugin::PluginTrueSkyRenderer::SetShowOSD" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a05ee7e5c7324c2e3914e6a0c73da802b" />
+      <keyword name="GetShowDiagnostics" id="simul::plugin::PluginTrueSkyRenderer::GetShowDiagnostics" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#afbed92bf276303165b0de4b9e802edea" />
+      <keyword name="SetShowDiagnostics" id="simul::plugin::PluginTrueSkyRenderer::SetShowDiagnostics" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#ac5a6fae646836539d5bdf2851bc98d12" />
       <keyword name="GetShowTransparencyOverlay" id="simul::plugin::PluginTrueSkyRenderer::GetShowTransparencyOverlay" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a0c043a23248c8785d338803f939c7870" />
       <keyword name="SetShowTransparencyOverlay" id="simul::plugin::PluginTrueSkyRenderer::SetShowTransparencyOverlay" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#ac6f4396bb3ada7addfd79e0f9b4613fc" />
       <keyword name="GetCloudTool" id="simul::plugin::PluginTrueSkyRenderer::GetCloudTool" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#afe4546fafd1659caf51beb8976f30249" />
@@ -1968,7 +1973,7 @@
       <keyword name="GetHorizonElevation" id="simul::sky::BaseSkyInterface::GetHorizonElevation" ref="classsimul_1_1sky_1_1BaseSkyInterface.html#acfe6cafe879c6fb0a98d5db1ad7aa831" />
       <keyword name="GetInscatterAngularMultiplier" id="simul::sky::BaseSkyInterface::GetInscatterAngularMultiplier" ref="classsimul_1_1sky_1_1BaseSkyInterface.html#ac9eb728552d719e62beedac1e39bff0f" />
       <keyword name="GetLocalIrradiance" id="simul::sky::BaseSkyInterface::GetLocalIrradiance" ref="classsimul_1_1sky_1_1BaseSkyInterface.html#ac91dc21b0979e00577ce51a6d694d5ea" />
-      <keyword name="GetLocalMoonIrradiance" id="simul::sky::BaseSkyInterface::GetLocalMoonIrradiance" ref="classsimul_1_1sky_1_1BaseSkyInterface.html#a33bbf8f4fd8a691cd3b4bf0a29a61c26" />
+      <keyword name="GetLocalMoonIrradiance" id="simul::sky::BaseSkyInterface::GetLocalMoonIrradiance" ref="classsimul_1_1sky_1_1BaseSkyInterface.html#a0720a278cd597bb5b1557f9bf073e627" />
       <keyword name="GetLocalSunIrradiance" id="simul::sky::BaseSkyInterface::GetLocalSunIrradiance" ref="classsimul_1_1sky_1_1BaseSkyInterface.html#a0ac8d7ddc1bc05648bab8c0c26a9192e" />
       <keyword name="GetMieRayleighRatio" id="simul::sky::BaseSkyInterface::GetMieRayleighRatio" ref="classsimul_1_1sky_1_1BaseSkyInterface.html#a8ffb0ef6e480c2d33400e453e26734c8" />
       <keyword name="GetSubdivisionChecksum" id="simul::sky::BaseSkyInterface::GetSubdivisionChecksum" ref="classsimul_1_1sky_1_1BaseSkyInterface.html#afcd2a673c8b0c27c8e148839cd7e6838" />
@@ -2155,10 +2160,11 @@
       <keyword name="GetKeyframeUidAtOrBeforeTime" id="simul::sky::SkyKeyframer::GetKeyframeUidAtOrBeforeTime" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a5a7c2db082c78729fc258ea099c9d4d0" />
       <keyword name="GetLightingState" id="simul::sky::SkyKeyframer::GetLightingState" ref="classsimul_1_1sky_1_1SkyKeyframer.html#ab4e4c0c274eff37dbf30af72cdcdc278" />
       <keyword name="GetLocalIrradiance" id="simul::sky::SkyKeyframer::GetLocalIrradiance" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a00fbd43981831c0cbdd61f63252dff16" />
-      <keyword name="GetLocalMoonIrradiance" id="simul::sky::SkyKeyframer::GetLocalMoonIrradiance" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a66285512d6f25f0dd896861f1de8d63e" />
+      <keyword name="GetLocalMoonIrradiance" id="simul::sky::SkyKeyframer::GetLocalMoonIrradiance" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a94f53d771afd96ade2f90c6b1825c706" />
       <keyword name="GetLocalSunIrradiance" id="simul::sky::SkyKeyframer::GetLocalSunIrradiance" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a8de4ff28556ecf9e9063f5a275fc7827" />
       <keyword name="GetMieEccentricity" id="simul::sky::SkyKeyframer::GetMieEccentricity" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a8b474056315d2ed89dc30afd1648263b" />
       <keyword name="GetMieRayleighRatio" id="simul::sky::SkyKeyframer::GetMieRayleighRatio" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a8e75019c2c6ab63d258b41f75067cb40" />
+      <keyword name="GetMultiplier" id="simul::sky::SkyKeyframer::GetMultiplier" ref="classsimul_1_1sky_1_1SkyKeyframer.html#ab254e6849e5a7fe589ba6554b4718f81" />
       <keyword name="GetNextModifiableKeyframe" id="simul::sky::SkyKeyframer::GetNextModifiableKeyframe" ref="classsimul_1_1sky_1_1SkyKeyframer.html#ae2f940bd5aa799a2a75372160a38c286" />
       <keyword name="GetNumKeyframes" id="simul::sky::SkyKeyframer::GetNumKeyframes" ref="classsimul_1_1sky_1_1SkyKeyframer.html#adfa697853c06bad4b66dab0a93bb4ed2" />
       <keyword name="GetStartDate" id="simul::sky::SkyKeyframer::GetStartDate" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a2ca351a33f14fcc57de7b88f3545edb5" />
@@ -2652,6 +2658,8 @@
       <file>classsimul_1_1crossplatform_1_1Texture-members.html</file>
       <file>classsimul_1_1crossplatform_1_1TextureView.html</file>
       <file>classsimul_1_1crossplatform_1_1TextureView-members.html</file>
+      <file>structsimul_1_1crossplatform_1_1ViewStruct.html</file>
+      <file>structsimul_1_1crossplatform_1_1ViewStruct-members.html</file>
       <file>namespacesimul_1_1dx11.html</file>
       <file>classsimul_1_1dx11_1_1ConstantBuffer.html</file>
       <file>classsimul_1_1dx11_1_1ConstantBuffer-members.html</file>

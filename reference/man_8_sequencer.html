@@ -152,9 +152,9 @@ keyframe..." or "Add cloud keyframe..." option.</p>
 <tr>
 <td>Frequency</td><td>Frequency (power of 2) of the edge noise effect.  </td></tr>
 <tr>
-<td>Resolution</td><td>Resolution of the 3D Perlin noise used to generate clouds.  </td></tr>
+<td>Resolution</td><td>Resolution of edge noise texture.  </td></tr>
 <tr>
-<td>Persistence</td><td>Fractal persistence to use when generating the noise texture.  </td></tr>
+<td>Persistence</td><td>Persistence for edge noise texture.  </td></tr>
 </table>
 <p>See the public attributes of <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html">CloudKeyframer</a> for a full description of all the cloud layer properties.</p>
 <h3>Cloud Keyframe Properties</h3>
@@ -288,6 +288,8 @@ keyframe..." or "Add cloud keyframe..." option.</p>
 <tr>
 <td>Diameter</td><td>Diameter of the sun.  </td></tr>
 <tr>
+<td>Brightness Limit</td><td>Brightness limit of the sunlight.  </td></tr>
+<tr>
 <td>Start Date</td><td>Used to calculate start positions of sun and moon (if automatic position set).  </td></tr>
 <tr>
 <td>Latitude &amp; Longitude</td><td>The position of the sun.  </td></tr>
@@ -361,6 +363,37 @@ keyframe..." or "Add cloud keyframe..." option.</p>
 <td>Moon elevation</td><td>Controls how high the moon is in the sky (if moon position not automatic).  </td></tr>
 </table>
 <p>See the public attributes of <a class="el" href="structsimul_1_1sky_1_1SkyKeyframe.html">SkyKeyframe</a> for a full description of all the sky keyframe properties.</p>
+<h2>Storms</h2>
+<p>Unlike cloud and sky properties, there are no layer properties for storms. Instead storm keyframes are added to the 3D cloud layer, to create structures representing thunderstorms. To create a storm in the sequencer, simply right click on the 3D cloud layer and select "Add storm". Clicking on the keyframe will show a selection of storm properties that can be changed. To set the storm's start time, end time and duration, simply drag out its edges horizontally to encompass what part of the timeline is required.</p>
+<h3>Storm Keyframe Properties</h3>
+<p>Storm keyframe properties allow you to change particular elements of one or more keyframes at a time. The sky keyframe properties accessible in the sequencer are: </p><table  style="width: 718px; background-color: #E3EEFB; margin-left: 56px;">
+<tr>
+<th>Feature</th><th><b>Description</b>  </th></tr>
+<tr>
+<td>Real-time</td><td>Sets frequency/duration of strikes to real time. If false, then simulation time.  </td></tr>
+<tr>
+<td>Radiance</td><td>Maximum radiance of the strikes.  </td></tr>
+<tr>
+<td>Levels</td><td>Number of levels of branching.  </td></tr>
+<tr>
+<td>Branches </td><td>Mean number of branches to generate from each parent. </td></tr>
+<tr>
+<td>Branch Angle </td><td>Mean angle of branching, in degrees.  </td></tr>
+<tr>
+<td>Roughness</td><td>How rough/smooth to make the lightning branches.  </td></tr>
+<tr>
+<td>Random Seed</td><td>Pseudo-random seed.  </td></tr>
+<tr>
+<td>Strike Duration (s)</td><td>The time each strike should last, in seconds (if real-time true in real-time seconds, else in simulated seconds).  </td></tr>
+<tr>
+<td>Frequency (/s)</td><td>How many strikes per second (if real-time true then per real-time second, else per simulated seconds).  </td></tr>
+<tr>
+<td>Thickness (cm)</td><td>Thickness of the lightning trunk, in cm.  </td></tr>
+<tr>
+<td>Min Pixel Width</td><td>Minimum pixel size for rendering the lightning strikes.  </td></tr>
+<tr>
+<td>Motion</td><td>How much to move/animate during a strike.  </td></tr>
+</table>
 <hr/>
 <p> Next: <a class="el" href="man_9_changelist.html">Change List</a> </p>
 </div></div><!-- contents -->
@@ -368,6 +401,6 @@ keyframe..." or "Add cloud keyframe..." option.</p>
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Wed Jun 22 2016 07:46:36</small></address>
+Sun Jul 3 2016 00:58:42</small></address>
 </body>
 </html>

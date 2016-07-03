@@ -243,7 +243,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Name" value="Obj::VertexBuffer"><param name="Local" value="structObj_1_1VertexBuffer.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::dx11::VertexBuffer&lt; T &gt;"><param name="Local" value="structsimul_1_1dx11_1_1VertexBuffer.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::crossplatform::Viewport"><param name="Local" value="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1Viewport"><param name="ImageNumber" value="11"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::crossplatform::ViewStruct"><param name="Local" value="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1ViewStruct"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::crossplatform::ViewStruct"><param name="Local" value="structsimul_1_1crossplatform_1_1ViewStruct.html"><param name="ImageNumber" value="11"></OBJECT>
     </UL>
   </UL>
 </UL>

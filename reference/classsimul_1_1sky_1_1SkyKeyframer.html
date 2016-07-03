@@ -183,10 +183,10 @@ const LightingState &amp;&#160;</td><td class="memItemRight" valign="bottom"><a 
 virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a00fbd43981831c0cbdd61f63252dff16">GetLocalIrradiance</a> (float altitude_km) const  override</td></tr>
 <tr class="memdesc:a00fbd43981831c0cbdd61f63252dff16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the sunlight that reaches the altitude <em>altitude_km</em>. <br /></td></tr>
 <tr class="separator:a00fbd43981831c0cbdd61f63252dff16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66285512d6f25f0dd896861f1de8d63e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a66285512d6f25f0dd896861f1de8d63e"></a>
-virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a66285512d6f25f0dd896861f1de8d63e">GetLocalMoonIrradiance</a> (double time, float altitude_km) const  override</td></tr>
-<tr class="memdesc:a66285512d6f25f0dd896861f1de8d63e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the moonlight that reaches the altitude <em>altitude_km</em>. <br /></td></tr>
-<tr class="separator:a66285512d6f25f0dd896861f1de8d63e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94f53d771afd96ade2f90c6b1825c706"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a94f53d771afd96ade2f90c6b1825c706"></a>
+virtual vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a94f53d771afd96ade2f90c6b1825c706">GetLocalMoonIrradiance</a> (double time, float altitude_km) const  override</td></tr>
+<tr class="memdesc:a94f53d771afd96ade2f90c6b1825c706"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the moonlight that reaches the altitude <em>altitude_km</em>. <br /></td></tr>
+<tr class="separator:a94f53d771afd96ade2f90c6b1825c706"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8de4ff28556ecf9e9063f5a275fc7827"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8de4ff28556ecf9e9063f5a275fc7827"></a>
 virtual vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a8de4ff28556ecf9e9063f5a275fc7827">GetLocalSunIrradiance</a> (double t, float altitude_km) const  override</td></tr>
 <tr class="memdesc:a8de4ff28556ecf9e9063f5a275fc7827"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the moonlight that reaches the altitude <em>altitude_km</em>. <br /></td></tr>
@@ -197,6 +197,8 @@ virtual vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a8e75019c2c6ab63d258b41f75067cb40">GetMieRayleighRatio</a> () const  override</td></tr>
 <tr class="memdesc:a8e75019c2c6ab63d258b41f75067cb40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ratio of Mie to Rayleigh scattering at unit air and haze density. A useful helper function as some shaders use this ratio. <br /></td></tr>
 <tr class="separator:a8e75019c2c6ab63d258b41f75067cb40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab254e6849e5a7fe589ba6554b4718f81"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#ab254e6849e5a7fe589ba6554b4718f81">GetMultiplier</a> (double t) const </td></tr>
+<tr class="separator:ab254e6849e5a7fe589ba6554b4718f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2f940bd5aa799a2a75372160a38c286"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2f940bd5aa799a2a75372160a38c286"></a>
 <a class="el" href="structsimul_1_1sky_1_1SkyKeyframe.html">SkyKeyframe</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#ae2f940bd5aa799a2a75372160a38c286">GetNextModifiableKeyframe</a> ()</td></tr>
 <tr class="memdesc:ae2f940bd5aa799a2a75372160a38c286"><td class="mdescLeft">&#160;</td><td class="mdescRight">The next keyframe not partially built or being used. This keyframe's properties can be modified without any pause or rebuild. <br /></td></tr>
@@ -1886,6 +1888,23 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 </div>
 </div>
+<a class="anchor" id="ab254e6849e5a7fe589ba6554b4718f81"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float simul::sky::SkyKeyframer::GetMultiplier </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the calculated multiplication factor for outputs. SunIrradiance is multiplied by this value to calculate sky colours. Divide local irradiances by this value to get the value in physical units. Divide radiances (i.e. rendered colours) by this value to get the radiance in physical units. </p>
+
+</div>
+</div>
 <a class="anchor" id="a3d0de53d8683ac4bdef82446b65fbdcf"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2348,6 +2367,6 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Wed Jun 22 2016 07:46:39</small></address>
+Sun Jul 3 2016 00:58:58</small></address>
 </body>
 </html>
