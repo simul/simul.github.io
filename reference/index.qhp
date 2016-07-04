@@ -5,23 +5,24 @@
   <filterSection>
     <filterAttribute>doxygen</filterAttribute>
     <toc>
-      <section title="trueSKY 3.8.2" ref="index.html">
+      <section title="trueSKY SIMUL_MAJOR_VERSION=4.0.0" ref="index.html">
         <section title="Developer Manual" ref="index.html">
           <section title="1 Introduction" ref="man_1_introduction.html" />
           <section title="2 Getting Started" ref="man_2_gettingstarted.html" />
+          <section title="3 Rendering the Environment" ref="man_3_rendering.html" />
+          <section title="4 The Plugin Rendering Interface" ref="man_4_pri.html" />
+          <section title="5 The trueSKY Classes" ref="man_5_classes.html">
+            <section title="5.1 Controlling the Environment" ref="man_5_classes_ooo1_environment.html">
+              <section title="3.1 The Sky Keyframer" ref="man_5_classes_ooo1_environment_ooo1_sky_keyframer.html" />
+              <section title="3.2 The Cloud Keyframer" ref="man_5_classes_ooo1_environment_ooo2_cloud_keyframer.html" />
+            </section>
+            <section title="5.2 Shaders" ref="man_5_classes_ooo2_shaders.html" />
+            <section title="5.3 Mixed Resolution Compositing" ref="man_5_classes_ooo3_mixed.html" />
+          </section>
+          <section title="6 The Sky Sequencer" ref="man_6_sequencer.html" />
           <section title="Licensing" ref="man_a_licensing.html" />
+          <section title="Change List" ref="man_b_changelist.html" />
         </section>
-        <section title="3 Rendering the Environment" ref="man_3_rendering.html" />
-        <section title="4 The Plugin Rendering Interface" ref="man_4_pri.html" />
-        <section title="5 The trueSKY Classes" ref="man_5_classes.html" />
-        <section title="5.1 Controlling the Environment" ref="man_5_classes_ooo1_environment.html">
-          <section title="3.2 The Cloud Keyframer" ref="man_5_classes_ooo1_environment_ooo2_cloud_keyframer.html" />
-        </section>
-        <section title="3.1 The Sky Keyframer" ref="man_511_environment_ooo1_sky_keyframer.html" />
-        <section title="5.2 Shaders" ref="man_5_classes_ooo2_shaders.html" />
-        <section title="5.3 Mixed Resolution Compositing" ref="man_5_classes_ooo3_mixed.html" />
-        <section title="6 The Sky Sequencer" ref="man_6_sequencer.html" />
-        <section title="Change List" ref="man_b_changelist.html" />
         <section title="REFERENCE">
           <section title="Namespace List" ref="namespaces.html">
             <section title="simul">
@@ -222,7 +223,7 @@
       <keyword name="4 The Plugin Rendering Interface" id="4 The Plugin Rendering Interface" ref="man_4_pri.html" />
       <keyword name="5 The trueSKY Classes" id="5 The trueSKY Classes" ref="man_5_classes.html" />
       <keyword name="5.1 Controlling the Environment" id="5.1 Controlling the Environment" ref="man_5_classes_ooo1_environment.html" />
-      <keyword name="3.1 The Sky Keyframer" id="3.1 The Sky Keyframer" ref="man_511_environment_ooo1_sky_keyframer.html" />
+      <keyword name="3.1 The Sky Keyframer" id="3.1 The Sky Keyframer" ref="man_5_classes_ooo1_environment_ooo1_sky_keyframer.html" />
       <keyword name="3.2 The Cloud Keyframer" id="3.2 The Cloud Keyframer" ref="man_5_classes_ooo1_environment_ooo2_cloud_keyframer.html" />
       <keyword name="5.2 Shaders" id="5.2 Shaders" ref="man_5_classes_ooo2_shaders.html" />
       <keyword name="5.3 Mixed Resolution Compositing" id="5.3 Mixed Resolution Compositing" ref="man_5_classes_ooo3_mixed.html" />
@@ -2513,7 +2514,7 @@
       <file>man_4_pri.html</file>
       <file>man_5_classes.html</file>
       <file>man_5_classes_ooo1_environment.html</file>
-      <file>man_511_environment_ooo1_sky_keyframer.html</file>
+      <file>man_5_classes_ooo1_environment_ooo1_sky_keyframer.html</file>
       <file>SkyKeyframerLinked.png</file>
       <file>man_5_classes_ooo1_environment_ooo2_cloud_keyframer.html</file>
       <file>man_5_classes_ooo2_shaders.html</file>

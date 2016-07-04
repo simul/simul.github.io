@@ -7,7 +7,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="man_1_introduction.html"><param name="Name" value="1 Introduction"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="man_2_gettingstarted.html"><param name="Name" value="2 Getting Started"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="man_3_rendering.html"><param name="Name" value="3 Rendering the Environment"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="man_511_environment_ooo1_sky_keyframer.html"><param name="Name" value="3.1 The Sky Keyframer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="man_5_classes_ooo1_environment_ooo1_sky_keyframer.html"><param name="Name" value="3.1 The Sky Keyframer"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="man_5_classes_ooo1_environment_ooo2_cloud_keyframer.html"><param name="Name" value="3.2 The Cloud Keyframer"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="man_4_pri.html"><param name="Name" value="4 The Plugin Rendering Interface"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="man_5_classes.html"><param name="Name" value="5 The trueSKY Classes"></OBJECT>

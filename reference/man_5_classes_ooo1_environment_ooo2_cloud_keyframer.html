@@ -35,7 +35,7 @@ url: 3.2 The Cloud Keyframer
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h2>Updating </h2>
-<p>Two instances of CloudKeyframer are stored in <a class="el" href="classsimul_1_1clouds_1_1Environment.html">simul::clouds::Environment</a> - one for 3D volumetric clouds and one for 2D high-altitude clouds. As a keyframer, this class stores a list of keyframes; this list can be modified at runtime, or loaded from a sequence (see sequencer).</p>
+<p>Two instances of CloudKeyframer are stored in <a class="el" href="classsimul_1_1clouds_1_1Environment.html">simul::clouds::Environment</a> - one for 3D volumetric clouds and one for 2D high-altitude clouds. As a keyframer, this class stores a list of keyframes; this list can be modified at runtime, or loaded from a sequence (see <a class="el" href="man_6_sequencer.html">6 The Sky Sequencer</a>).</p>
 <p>The keyframes each have a <em>time</em> value, and the keyframer tracks a current time through these frames, interpolating properties as it does so, into a special keyframe. You can be obtain a reference to this using <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#adc670526175f818bd251cc510031911c">GetInterpolatedKeyframe()</a>.</p>
 <p>The cloud keyframer is updated from <a class="el" href="classsimul_1_1clouds_1_1Environment.html">Environment</a>.</p>
 <p>Some <a class="el" href="structsimul_1_1clouds_1_1CloudKeyframe.html">cloud keyframe</a> properties are used as per-keyframe values to generated the 3D or 2D cloud textures. These textures are then interpolated for rendering:</p>
@@ -103,7 +103,7 @@ M.thickness=1.0f;
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/>
-<address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Sun Jul 3 2016 21:17:15</small></address>
+<address style="text-align: right;">trueSKY VERSION SIMUL_MAJOR_VERSION=4.0.0<small>
+Mon Jul 4 2016 07:46:47</small></address>
 </body>
 </html>

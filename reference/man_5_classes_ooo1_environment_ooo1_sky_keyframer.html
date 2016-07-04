@@ -35,7 +35,7 @@ url: 3.1 The Sky Keyframer
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h2>Updating </h2>
-<p>An instance of <a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html">SkyKeyframer</a> is stored in <a class="el" href="classsimul_1_1clouds_1_1Environment.html">simul::clouds::Environment</a>. As a keyframer, this class stores a list of keyframes; this list can be modified at runtime, or loaded from a sequence (see sequencer).</p>
+<p>An instance of <a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html">SkyKeyframer</a> is stored in <a class="el" href="classsimul_1_1clouds_1_1Environment.html">simul::clouds::Environment</a>. As a keyframer, this class stores a list of keyframes; this list can be modified at runtime, or loaded from a sequence (see <a class="el" href="man_6_sequencer.html">6 The Sky Sequencer</a>).</p>
 <p>The keyframes each have a <em>time</em> value, and the keyframer tracks a current time through these frames, interpolating properties as it does so.</p>
 <p>The SkyKeyframer has two modes of operation. By switching <a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a023aa5b3c4c314c2360edd009d54f641">LinkKeyframeTimeAndDaytime</a> on or off, you can choose whether the keyframes have a daytime value which is independent of <em>time</em>, or whether these two numbers are the same.</p>
 <p>You don't need to update the keyframer specifically, so long as you're calling <a class="el" href="classsimul_1_1clouds_1_1Environment.html#a8a1520e878ee234816a221b9049e1c41">environment-&gt;Update()</a>.</p>
@@ -59,7 +59,7 @@ for(int i=0;i&lt;sk-&gt;GetNumKeyframes();i++)
     simul::sky::SkyKeyframe *k=(simul::sky::SkyKeyframe *)sk-&gt;GetKeyframe(i);
     k-&gt;daytime=0.25f;
 }
-</pre><p>You could also disable <a class="el" href="">AutomaticSunPosition</a>, in which case daytime will have no effect on sun position.</p>
+</pre><p>You could also disable <a class="el" href="structsimul_1_1sky_1_1SkyKeyframe.html#a43c06a2a0139666abae0a6a595535345">automaticSunPosition</a>, in which case daytime will have no effect on sun position.</p>
 <p>The unlinked time mode is particularly suitable to situations where you will use the Simul API to change conditions on the fly. At any given time, two keyframes are being used for rendering, and the next one along will be partially updated. So the properties of the fourth keyframe can be changed without having any need for recalculations. </p><pre class="fragment">simul::sky::SkyKeyframe *k=environment-&gt;skyKeyframer-&gt;GetNextModifiableKeyframe();
 k-&gt;haze=20.f;
 </pre><p>This works just as well with linked as with unlinked times.</p>
@@ -95,12 +95,12 @@ k-&gt;haze=20.f;
 <p>Fog and mist are both effectively low-level clouds. Fog is defined as having visibility less than 1km, it is called mist when visibility is between 1 and 2 km.</p>
 <p>As time passes and the sun and moon move, you can use <a class="el" href="classsimul_1_1sky_1_1BaseSkyInterface.html#ad21cc06e29b47fc60130059b4eda53cf">GetDirectionToSun</a> and <a class="el" href="classsimul_1_1sky_1_1BaseSkyInterface.html#ad35e1d646de0c43772d1ed3fd55efbe4">simul::sky::BaseSkyInterface::GetDirectionToMoon</a> to find their positions.</p>
 <hr/>
-<p> Next: man_3_environment_ooo2_cloud_keyframer </p>
+<p> Next: <a class="el" href="man_5_classes_ooo1_environment_ooo2_cloud_keyframer.html">3.2 The Cloud Keyframer</a> </p>
 </div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/>
-<address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Sun Jul 3 2016 21:17:15</small></address>
+<address style="text-align: right;">trueSKY VERSION SIMUL_MAJOR_VERSION=4.0.0<small>
+Mon Jul 4 2016 07:46:47</small></address>
 </body>
 </html>

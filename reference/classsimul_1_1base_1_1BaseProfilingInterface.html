@@ -49,7 +49,7 @@ url: simul::base::BaseProfilingInterface Class Reference
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afc6765fbbd54354e60131dadf0272b5d"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1BaseProfilingInterface.html#afc6765fbbd54354e60131dadf0272b5d">GetDebugText</a> (TextStyle st=PLAINTEXT) const </td></tr>
+<tr class="memitem:afc6765fbbd54354e60131dadf0272b5d"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1BaseProfilingInterface.html#afc6765fbbd54354e60131dadf0272b5d">GetDebugText</a> (<a class="el" href="namespacesimul_1_1base.html#ae142bf8240c3b02a48cf149022c80b07">TextStyle</a> st=PLAINTEXT) const </td></tr>
 <tr class="separator:afc6765fbbd54354e60131dadf0272b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae59d8c2a3538fe1bf204bb1e8f323e33"><td class="memItemLeft" align="right" valign="top">virtual const ProfileData *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1base_1_1BaseProfilingInterface.html#ae59d8c2a3538fe1bf204bb1e8f323e33">GetEvent</a> (const ProfileData *, int) const </td></tr>
 <tr class="separator:ae59d8c2a3538fe1bf204bb1e8f323e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -69,7 +69,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A virtual interface base class for classes that can profile for performance. </p>
 
-<p>Definition at line <a class="el" href="ProfilingInterface_8h_source.html#l00089">89</a> of file <a class="el" href="ProfilingInterface_8h_source.html">ProfilingInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="ProfilingInterface_8h_source.html#l00090">90</a> of file <a class="el" href="ProfilingInterface_8h_source.html">ProfilingInterface.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ae59d8c2a3538fe1bf204bb1e8f323e33"></a>
 <div class="memitem">
@@ -106,7 +106,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 <p>Reimplemented in <a class="el" href="classsimul_1_1base_1_1DefaultProfiler.html#a1804d42a2084c495cbea377046cd53d4">simul::base::DefaultProfiler</a>, and <a class="el" href="classsimul_1_1crossplatform_1_1GpuProfiler.html#a8ef29184e3f7da63df660c424af27df7">simul::crossplatform::GpuProfiler</a>.</p>
 
-<p>Definition at line <a class="el" href="ProfilingInterface_8h_source.html#l00106">106</a> of file <a class="el" href="ProfilingInterface_8h_source.html">ProfilingInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="ProfilingInterface_8h_source.html#l00107">107</a> of file <a class="el" href="ProfilingInterface_8h_source.html">ProfilingInterface.h</a>.</p>
 
 </div>
 </div>
@@ -117,7 +117,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
         <tr>
           <td class="memname">const char* simul::base::BaseProfilingInterface::GetDebugText </td>
           <td>(</td>
-          <td class="paramtype">TextStyle&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacesimul_1_1base.html#ae142bf8240c3b02a48cf149022c80b07">TextStyle</a>&#160;</td>
           <td class="paramname"><em>st</em> = <code>PLAINTEXT</code></td><td>)</td>
           <td> const</td>
         </tr>
@@ -126,7 +126,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Gets the profiling report as text.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">as_html</td><td>Determines if the text should be returned as HTML, including colour formatting.</td></tr>
+    <tr><td class="paramname">st</td><td>Determines if the text should be returned as HTML, including colour formatting.</td></tr>
   </table>
   </dd>
 </dl>
@@ -141,7 +141,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/>
-<address style="text-align: right;">trueSKY VERSION 3.8.2<small>
-Sun Jul 3 2016 21:17:20</small></address>
+<address style="text-align: right;">trueSKY VERSION SIMUL_MAJOR_VERSION=4.0.0<small>
+Mon Jul 4 2016 07:46:47</small></address>
 </body>
 </html>
