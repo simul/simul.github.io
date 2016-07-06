@@ -5,7 +5,7 @@
   <filterSection>
     <filterAttribute>doxygen</filterAttribute>
     <toc>
-      <section title="trueSKY 4.0.117" ref="index.html">
+      <section title="trueSKY 4.0.118" ref="index.html">
         <section title="Developer Manual" ref="index.html">
           <section title="1 Introduction" ref="man_1_introduction.html" />
           <section title="2 Getting Started" ref="man_2_gettingstarted.html" />
@@ -199,7 +199,7 @@
             <section title="Obj::Surface" ref="structObj_1_1Surface.html" />
             <section title="simul::crossplatform::Texture" ref="classsimul_1_1crossplatform_1_1Texture.html" />
             <section title="simul::sky::Texture3D4" ref="classsimul_1_1sky_1_1Texture3D4.html" />
-            <section title="simul::crossplatform::TextureView" ref="classsimul_1_1crossplatform_1_1TextureView.html" />
+            <section title="simul::crossplatform::TextureView" ref="namespacesimul_1_1crossplatform.html#classsimul_1_1crossplatform_1_1TextureView" />
             <section title="simul::base::Timer" ref="classsimul_1_1base_1_1Timer.html" />
             <section title="simul::dx11::TrueSkyRenderer" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html" />
             <section title="simul::clouds::TwoResFramebuffer" ref="classsimul_1_1clouds_1_1TwoResFramebuffer.html" />
@@ -783,7 +783,7 @@
       <keyword name="GetKeyframeUidAtOrBeforeTime" id="simul::clouds::CloudKeyframer::GetKeyframeUidAtOrBeforeTime" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a5a7c2db082c78729fc258ea099c9d4d0" />
       <keyword name="GetMaximumLocalPrecipitation" id="simul::clouds::CloudKeyframer::GetMaximumLocalPrecipitation" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a6126a3864e503b33566e5e71214bf4db" />
       <keyword name="GetNextModifiableKeyframe" id="simul::clouds::CloudKeyframer::GetNextModifiableKeyframe" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a17717ef088167f7aea32af02eaf5653d" />
-      <keyword name="GetNumKeyframes" id="simul::clouds::CloudKeyframer::GetNumKeyframes" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#af861ff19bb4d8f57384c750c5abe2163" />
+      <keyword name="GetNumKeyframes" id="simul::clouds::CloudKeyframer::GetNumKeyframes" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a62df582d6dc499db52e702b30df89b78" />
       <keyword name="GetNumStorms" id="simul::clouds::CloudKeyframer::GetNumStorms" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a5112988faff558283d52dac0b1932b17" />
       <keyword name="GetOpticalPathLength" id="simul::clouds::CloudKeyframer::GetOpticalPathLength" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a7923dd5596d74c44ce8fc7b388dc2d11" />
       <keyword name="GetOvercastData" id="simul::clouds::CloudKeyframer::GetOvercastData" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#adcc47a44333036e40b77ea92c60cb073" />
@@ -1310,7 +1310,6 @@
       <keyword name="MoveToFastRAM" id="simul::crossplatform::Texture::MoveToFastRAM" ref="classsimul_1_1crossplatform_1_1Texture.html#ab9bcf54d34fbdbd6d2c7743934b70770" />
       <keyword name="MoveToSlowRAM" id="simul::crossplatform::Texture::MoveToSlowRAM" ref="classsimul_1_1crossplatform_1_1Texture.html#ab81c23d5a081ae4788710ad4bd6ed635" />
       <keyword name="setTexels" id="simul::crossplatform::Texture::setTexels" ref="classsimul_1_1crossplatform_1_1Texture.html#a171da2c97a586b62f0d95fb01edc9f8f" />
-      <keyword name="simul::crossplatform::TextureView" id="simul::crossplatform::TextureView" ref="classsimul_1_1crossplatform_1_1TextureView.html" />
       <keyword name="simul::crossplatform::ViewStruct" id="simul::crossplatform::ViewStruct" ref="structsimul_1_1crossplatform_1_1ViewStruct.html" />
       <keyword name="depthTextureStyle" id="simul::crossplatform::ViewStruct::depthTextureStyle" ref="structsimul_1_1crossplatform_1_1ViewStruct.html#a5d5ec12b030c8335ef3fa6eb01298e77" />
       <keyword name="proj" id="simul::crossplatform::ViewStruct::proj" ref="structsimul_1_1crossplatform_1_1ViewStruct.html#a5721c77a187e62dc3f3547e32fde52b6" />
@@ -2028,7 +2027,7 @@
       <keyword name="SetPlanetImage" id="simul::sky::BaseSkyRenderer::SetPlanetImage" ref="classsimul_1_1sky_1_1BaseSkyRenderer.html#acb59eeef1fd147965050521fe716386b" />
       <keyword name="SetPlanetRadius" id="simul::sky::BaseSkyRenderer::SetPlanetRadius" ref="classsimul_1_1sky_1_1BaseSkyRenderer.html#aa7a9ab7a3653589f5a4c631495e8d7af" />
       <keyword name="simul::sky::CpuSkyGenerator" id="simul::sky::CpuSkyGenerator" ref="classsimul_1_1sky_1_1CpuSkyGenerator.html" />
-      <keyword name="CanPerformGPUGeneration" id="simul::sky::CpuSkyGenerator::CanPerformGPUGeneration" ref="classsimul_1_1sky_1_1CpuSkyGenerator.html#a3f6b728fa743d316ed932903d5e7171b" />
+      <keyword name="CanPerformGPUGeneration" id="simul::sky::CpuSkyGenerator::CanPerformGPUGeneration" ref="classsimul_1_1sky_1_1CpuSkyGenerator.html#a40c4e0891d0f2e7d3afa7300a04dacce" />
       <keyword name="GetEnabled" id="simul::sky::CpuSkyGenerator::GetEnabled" ref="classsimul_1_1sky_1_1CpuSkyGenerator.html#adaff8c886bc00dcd436c99c01209aa4b" />
       <keyword name="Get1DSkyChecksum" id="simul::sky::CpuSkyGenerator::Get1DSkyChecksum" ref="classsimul_1_1sky_1_1CpuSkyGenerator.html#abf5c0892c0bc693306d0fe4fba70ca94" />
       <keyword name="ToFloat16" id="simul::sky::CpuSkyGenerator::ToFloat16" ref="classsimul_1_1sky_1_1CpuSkyGenerator.html#a345e9807d73af25136b2408f43f78ea6" />
@@ -2145,14 +2144,14 @@
       <keyword name="GetDirectionToMoon" id="simul::sky::SkyKeyframer::GetDirectionToMoon" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a2fcb6e7f27c44ce219c6b1bb1a545361" />
       <keyword name="GetDirectionToSun" id="simul::sky::SkyKeyframer::GetDirectionToSun" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a1bd6217a3528d94586676abe046ceb7c" />
       <keyword name="GetDirectionToSun" id="simul::sky::SkyKeyframer::GetDirectionToSun" ref="classsimul_1_1sky_1_1SkyKeyframer.html#ab5fd5b61c28c13302b9970119194d1a4" />
-      <keyword name="GetEarthShadow" id="simul::sky::SkyKeyframer::GetEarthShadow" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a44b71a1928f2b562832b6942a4c1b9c6" />
+      <keyword name="GetEarthShadow" id="simul::sky::SkyKeyframer::GetEarthShadow" ref="classsimul_1_1sky_1_1SkyKeyframer.html#af4630d54378ea639af0dfab2397fae41" />
       <keyword name="GetFloat" id="simul::sky::SkyKeyframer::GetFloat" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a44f107ab62e110ad1e930f2bd97a6ca6" />
       <keyword name="GetGpuSkyParameters" id="simul::sky::SkyKeyframer::GetGpuSkyParameters" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a0f8fdf6cb643058fbf25526a4ad0f5bc" />
       <keyword name="GetGpuSkyParameters" id="simul::sky::SkyKeyframer::GetGpuSkyParameters" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a597380b1c1b4fa218b88ac7994f25b5a" />
-      <keyword name="GetHazeForVisibilityDistance" id="simul::sky::SkyKeyframer::GetHazeForVisibilityDistance" ref="classsimul_1_1sky_1_1SkyKeyframer.html#aec0f626e2297dfb509991df1d1cf5a69" />
+      <keyword name="GetHazeForVisibilityDistance" id="simul::sky::SkyKeyframer::GetHazeForVisibilityDistance" ref="classsimul_1_1sky_1_1SkyKeyframer.html#ae2233cde170bc5ebc8ce158f2e7b85ca" />
       <keyword name="GetHighlightConstellations" id="simul::sky::SkyKeyframer::GetHighlightConstellations" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a890bbe9765eb36a97983386665bd671b" />
-      <keyword name="GetHorizonElevation" id="simul::sky::SkyKeyframer::GetHorizonElevation" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a2437b2dc88421eff146c48e62fdfe2a0" />
-      <keyword name="GetInscatterAngularMultiplier" id="simul::sky::SkyKeyframer::GetInscatterAngularMultiplier" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a133d38e1e450d05e41dc604f4e1e2e85" />
+      <keyword name="GetHorizonElevation" id="simul::sky::SkyKeyframer::GetHorizonElevation" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a1c4610053d203a5722e7c378faef9fb4" />
+      <keyword name="GetInscatterAngularMultiplier" id="simul::sky::SkyKeyframer::GetInscatterAngularMultiplier" ref="classsimul_1_1sky_1_1SkyKeyframer.html#aedc25776d574dd59b19846f62393ad30" />
       <keyword name="GetInt" id="simul::sky::SkyKeyframer::GetInt" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a1496f6a05a8cdcdd419afa23220961e9" />
       <keyword name="GetKeyframe" id="simul::sky::SkyKeyframer::GetKeyframe" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a837c134edae95673b706904a65044f7a" />
       <keyword name="GetKeyframe" id="simul::sky::SkyKeyframer::GetKeyframe" ref="classsimul_1_1sky_1_1SkyKeyframer.html#acfb6f831346a240502592652c6989822" />
@@ -2162,7 +2161,7 @@
       <keyword name="GetKeyframeTime" id="simul::sky::SkyKeyframer::GetKeyframeTime" ref="classsimul_1_1sky_1_1SkyKeyframer.html#aa0cfc69cbdec018567450e85f676c1f7" />
       <keyword name="GetKeyframeUidAfterTime" id="simul::sky::SkyKeyframer::GetKeyframeUidAfterTime" ref="classsimul_1_1sky_1_1SkyKeyframer.html#aa5e1cb4cba0ccbb86709477a819afc3f" />
       <keyword name="GetKeyframeUidAtOrBeforeTime" id="simul::sky::SkyKeyframer::GetKeyframeUidAtOrBeforeTime" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a5a7c2db082c78729fc258ea099c9d4d0" />
-      <keyword name="GetLightingState" id="simul::sky::SkyKeyframer::GetLightingState" ref="classsimul_1_1sky_1_1SkyKeyframer.html#ab4e4c0c274eff37dbf30af72cdcdc278" />
+      <keyword name="GetLightingState" id="simul::sky::SkyKeyframer::GetLightingState" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a2ebeb49c726a3bd70662c40cbee6d02b" />
       <keyword name="GetLocalIrradiance" id="simul::sky::SkyKeyframer::GetLocalIrradiance" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a00fbd43981831c0cbdd61f63252dff16" />
       <keyword name="GetLocalMoonIrradiance" id="simul::sky::SkyKeyframer::GetLocalMoonIrradiance" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a94f53d771afd96ade2f90c6b1825c706" />
       <keyword name="GetLocalSunIrradiance" id="simul::sky::SkyKeyframer::GetLocalSunIrradiance" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a8de4ff28556ecf9e9063f5a275fc7827" />
@@ -2176,7 +2175,7 @@
       <keyword name="GetSunlightTableTransformKm" id="simul::sky::SkyKeyframer::GetSunlightTableTransformKm" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a1ec5382d07eed88d3ecb251f627ab015" />
       <keyword name="GetTemperatureKelvins" id="simul::sky::SkyKeyframer::GetTemperatureKelvins" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a3d0de53d8683ac4bdef82446b65fbdcf" />
       <keyword name="GetTime" id="simul::sky::SkyKeyframer::GetTime" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a829ae63a590c21620e7e3d2e77c5816a" />
-      <keyword name="GetVisibilityDistance" id="simul::sky::SkyKeyframer::GetVisibilityDistance" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a5b6ea6818c152d59525d89f0b07615af" />
+      <keyword name="GetVisibilityDistance" id="simul::sky::SkyKeyframer::GetVisibilityDistance" ref="classsimul_1_1sky_1_1SkyKeyframer.html#aec3d8f788a6423e24e471439ac4779ec" />
       <keyword name="HasFloat" id="simul::sky::SkyKeyframer::HasFloat" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a766d94f697c8b8cdc930e9d3b7b0ee4b" />
       <keyword name="HasInt" id="simul::sky::SkyKeyframer::HasInt" ref="classsimul_1_1sky_1_1SkyKeyframer.html#ada61959df6f1a7f2ee5844d7fd268501" />
       <keyword name="HighlightConstellation" id="simul::sky::SkyKeyframer::HighlightConstellation" ref="classsimul_1_1sky_1_1SkyKeyframer.html#a64e3f6986294328b875f4ac1e0c91078" />
@@ -2665,8 +2664,6 @@
       <file>classsimul_1_1crossplatform_1_1StructuredBuffer-members.html</file>
       <file>classsimul_1_1crossplatform_1_1Texture.html</file>
       <file>classsimul_1_1crossplatform_1_1Texture-members.html</file>
-      <file>classsimul_1_1crossplatform_1_1TextureView.html</file>
-      <file>classsimul_1_1crossplatform_1_1TextureView-members.html</file>
       <file>structsimul_1_1crossplatform_1_1ViewStruct.html</file>
       <file>structsimul_1_1crossplatform_1_1ViewStruct-members.html</file>
       <file>namespacesimul_1_1dx11.html</file>
