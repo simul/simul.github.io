@@ -34,8 +34,8 @@ url: 3 Rendering the Environment
 <div class="title">3 Rendering the Environment </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Weather Rendering is handled by <a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html">BaseWeatherRenderer</a>, or (if necessary) a derived class of this.</p>
-<p>All Simul's default renderers use a right-handed co-ordinate system with x pointing East, y North, and z up.</p>
+<div class="textblock"><p>All Simul's default renderers use a right-handed co-ordinate system with x pointing East, y North, and z up. All units of distance are metres or kilometres. If not specified as km, distance is in metres. Angular units are radians, unless specified as degrees. Temperature is in kelvins, unless specified as degrees Celsius.</p>
+<p>Weather Rendering is handled by <a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html">BaseWeatherRenderer</a>.</p>
 <p>The Weather Renderer owns and manages renderers for sky, clouds, atmospherics and other effects. So the Weather Renderer is the main interface between your program and trueSKY.</p>
 <p>The following table describes the elements of a sky as implemented in the supplied renderers:</p>
 <table class="doxtable">
@@ -103,7 +103,7 @@ vec2 texcoord  =vec2((ang/(pi*2.0)),0.5-asin(view.z)/pi);
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/>
-<address style="text-align: right;">trueSKY VERSION 4.0.118<small>
-Wed Jul 6 2016 07:46:35</small></address>
+<address style="text-align: right;">trueSKY VERSION 4.0.119<small>
+Thu Jul 7 2016 07:46:38</small></address>
 </body>
 </html>
