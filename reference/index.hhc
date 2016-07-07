@@ -8,16 +8,22 @@
   <UL>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="1 Introduction"><param name="Local" value="man_1_introduction.html"><param name="ImageNumber" value="11"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="2 Getting Started"><param name="Local" value="man_2_gettingstarted.html"><param name="ImageNumber" value="11"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Name" value="3 Controlling the Environment"><param name="Local" value="man_3_environment.html"><param name="ImageNumber" value="11"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Name" value="4 Rendering the Environment"><param name="Local" value="man_4_rendering.html"><param name="ImageNumber" value="11"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Name" value="5 Mixed Resolution Compositing"><param name="Local" value="man_5_mixed_resolution.html"><param name="ImageNumber" value="11"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Name" value="6 The Sky Sequencer"><param name="Local" value="man_8_sequencer.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="3 Rendering the Environment"><param name="Local" value="man_3_rendering.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="4 The Plugin Rendering Interface"><param name="Local" value="man_4_pri.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="5 The trueSKY Classes"><param name="Local" value="man_5_classes.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="5.1 Controlling the Environment"><param name="Local" value="man_5_classes_ooo1_environment.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="3.1 The Sky Keyframer"><param name="Local" value="man_5_classes_ooo1_environment_ooo1_sky_keyframer.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="3.2 The Cloud Keyframer"><param name="Local" value="man_5_classes_ooo1_environment_ooo2_cloud_keyframer.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="5.2 Shaders"><param name="Local" value="man_5_classes_ooo2_shaders.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="5.3 Mixed Resolution Compositing"><param name="Local" value="man_5_classes_ooo3_mixed.html"><param name="ImageNumber" value="11"></OBJECT>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="6 The Sky Sequencer"><param name="Local" value="man_6_sequencer.html"><param name="ImageNumber" value="11"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="Licensing"><param name="Local" value="man_a_licensing.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Change List"><param name="Local" value="man_b_changelist.html"><param name="ImageNumber" value="11"></OBJECT>
   </UL>
-<LI><OBJECT type="text/sitemap"><param name="Name" value="3.1 The Sky Keyframer"><param name="Local" value="man_3_environment_ooo2_sky_keyframer.html"><param name="ImageNumber" value="11"></OBJECT>
-<LI><OBJECT type="text/sitemap"><param name="Name" value="3.2 The Cloud Keyframer"><param name="Local" value="man_3_environment_ooo2_cloud_keyframer.html"><param name="ImageNumber" value="11"></OBJECT>
-<LI><OBJECT type="text/sitemap"><param name="Name" value="4.1 Shaders"><param name="Local" value="man_4_rendering_ooo6_shaders.html"><param name="ImageNumber" value="11"></OBJECT>
-<LI><OBJECT type="text/sitemap"><param name="Name" value="Change List"><param name="Local" value="man_9_changelist.html"><param name="ImageNumber" value="11"></OBJECT>
 <LI><OBJECT type="text/sitemap"><param name="Name" value="REFERENCE"><param name="ImageNumber" value="1"></OBJECT>
   <UL>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="Namespace List"><param name="Local" value="namespaces.html"><param name="ImageNumber" value="1"></OBJECT>
@@ -111,10 +117,13 @@
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::dx11::ConstantBuffer&lt; T &gt;"><param name="Local" value="classsimul_1_1dx11_1_1ConstantBuffer.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::sky::CpuSkyGenerator"><param name="Local" value="classsimul_1_1sky_1_1CpuSkyGenerator.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="DepthTextureStruct"><param name="Local" value="structDepthTextureStruct.html"><param name="ImageNumber" value="11"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="DetectChangesIncludeHandler"><param name="Local" value="classDetectChangesIncludeHandler.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::dx11::DetectChangesIncludeHandler"><param name="Local" value="classsimul_1_1dx11_1_1DetectChangesIncludeHandler.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::crossplatform::DeviceContext"><param name="Local" value="structsimul_1_1crossplatform_1_1DeviceContext.html"><param name="ImageNumber" value="11"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="Direct3D11CallbackInterface"><param name="Local" value="classDirect3D11CallbackInterface.html"><param name="ImageNumber" value="11"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::dx11::Direct3D11Manager"><param name="Local" value="classsimul_1_1dx11_1_1Direct3D11Manager.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::dx11::Direct3D11CallbackInterface"><param name="Local" value="classsimul_1_1dx11_1_1Direct3D11CallbackInterface.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::dx11::Direct3D11ManagerInterface"><param name="Local" value="classsimul_1_1dx11_1_1Direct3D11ManagerInterface.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::dx11::Direct3D11Manager"><param name="Local" value="classsimul_1_1dx11_1_1Direct3D11Manager.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::crossplatform::DisjointQueryStruct"><param name="Local" value="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1DisjointQueryStruct"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::sky::EarthShadow"><param name="Local" value="namespacesimul_1_1sky.html#structsimul_1_1sky_1_1EarthShadow"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::crossplatform::Effect"><param name="Local" value="classsimul_1_1crossplatform_1_1Effect.html"><param name="ImageNumber" value="1"></OBJECT>
@@ -196,7 +205,7 @@
       </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::crossplatform::RenderStateDesc"><param name="Local" value="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1RenderStateDesc"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::clouds::SelectionIdentifier"><param name="Local" value="structsimul_1_1clouds_1_1SelectionIdentifier.html"><param name="ImageNumber" value="11"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="ShaderIncludeHandler"><param name="Local" value="classShaderIncludeHandler.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::dx11::ShaderIncludeHandler"><param name="Local" value="classsimul_1_1dx11_1_1ShaderIncludeHandler.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::base::ShowProgressInterface"><param name="Local" value="classsimul_1_1base_1_1ShowProgressInterface.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::sky::SiderealSkyInterface"><param name="Local" value="classsimul_1_1sky_1_1SiderealSkyInterface.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
@@ -223,7 +232,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Name" value="Obj::Surface"><param name="Local" value="structObj_1_1Surface.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::crossplatform::Texture"><param name="Local" value="classsimul_1_1crossplatform_1_1Texture.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::sky::Texture3D4"><param name="Local" value="classsimul_1_1sky_1_1Texture3D4.html"><param name="ImageNumber" value="11"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::crossplatform::TextureView"><param name="Local" value="classsimul_1_1crossplatform_1_1TextureView.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::crossplatform::TextureView"><param name="Local" value="namespacesimul_1_1crossplatform.html#classsimul_1_1crossplatform_1_1TextureView"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::base::Timer"><param name="Local" value="classsimul_1_1base_1_1Timer.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::dx11::TrueSkyRenderer"><param name="Local" value="classsimul_1_1dx11_1_1TrueSkyRenderer.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::clouds::TwoResFramebuffer"><param name="Local" value="classsimul_1_1clouds_1_1TwoResFramebuffer.html"><param name="ImageNumber" value="11"></OBJECT>
@@ -236,7 +245,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Name" value="Obj::VertexBuffer"><param name="Local" value="structObj_1_1VertexBuffer.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::dx11::VertexBuffer&lt; T &gt;"><param name="Local" value="structsimul_1_1dx11_1_1VertexBuffer.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::crossplatform::Viewport"><param name="Local" value="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1Viewport"><param name="ImageNumber" value="11"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::crossplatform::ViewStruct"><param name="Local" value="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1ViewStruct"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::crossplatform::ViewStruct"><param name="Local" value="structsimul_1_1crossplatform_1_1ViewStruct.html"><param name="ImageNumber" value="11"></OBJECT>
     </UL>
   </UL>
 </UL>

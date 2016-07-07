@@ -16,15 +16,16 @@ From Unreal Engine 4.9.2 onwards, binary installers are available from [https://
 How to build it
 ---
 * Enter your GitHub username at [https://simul.co/wp-admin/profile.php](http://simul.co/wp-admin/profile.php). This needs to be the same username connected to your Unreal Engine account at [www.unrealengine.com/settings](https://www.unrealengine.com/settings)
+
 * Get the trueSKY UE4 fork from [GitHub](https://github.com/simul/UnrealEngine).
 If you are using a different UE4 codebase, pull changes from the Simul fork, and merge.
 
-* As described in the UE4 readme (in the root UnrealEngine directory), Run Setup.bat and GenerateProjectFiles.bat from UE4. This will generate projects and the solution file (UE4.sln)
+* As described in the UE4 readme (in the root UnrealEngine directory), run Setup.bat and GenerateProjectFiles.bat from UE4. This will generate projects and the solution file (UE4.sln).
 
 * Use UE4.sln (UE4.vcxproj).
-The UE4 project contains the "TrueSkyPlugin" folder in Engine/UE4/Plugins.The plugin is in the “[UE4]\Engine\Plugins\TrueSkyPlugin” directory in your UE4 installation.
+The UE4 project contains the "TrueSkyPlugin" folder in Engine/UE4/Plugins. The plugin is in the “[UE4]\Engine\Plugins\TrueSkyPlugin” directory in your UE4 installation.
 The trueSKY binaries are in “[UE4]\Engine\Binaries\ThirdParty\Simul”. 
-There are two trueSKY modules in the UE4 project – TrueSkyPlugin, and TrueSkyEditorPlugin.
+There are two trueSKY modules in the UE4 project – TrueSkyPlugin and TrueSkyEditorPlugin.
 
 * Build the UE4 project in the "Development Editor" configuration.
 
@@ -79,7 +80,7 @@ This actor provides a reference to a sequence asset which is rendered. Choose th
 
 Multiple Sequence Actors and Transitions
 ---
-You can have any number of trueSKY Sequence Actors in your level, all with different Sequence Assets assigned. In the Editor, check the Actor's property "Active in Editor" to see its weather state in the 3D view. In-game, the active Actor is determined by bounds. By default, a Sequence Actor is unbounded - it is always active. You can create bounding by adding a Box Collision component to the Actor.
+You can have any number of trueSKY Sequence Actors in your level, all with different Sequence Assets assigned. In the Editor, check the Actor's property "Active in Editor" to see its weather state in the 3D view. In-game, the active Actor is determined by bounds. By default, a Sequence Actor is unbounded – it is always active. You can create bounding by adding a Box Collision component to the Actor.
 
 <a href="http://docs.simul.co/unrealengine/images/AddBounds.png"><img src="http://docs.simul.co/unrealengine/images/AddBounds.png" alt="Add Bounds"/></a>
 
@@ -91,14 +92,15 @@ To allow a smooth transition between weather states, you should adjust the Mode 
 
 Console commands
 ---
-*ts\_cross\_sections* Show/hide cloud cross-sections.
+*ts\_cross\_sections* – Show/hide cloud cross-sections.
 
-*ts\_compositing* Show/hide compositing overlay.
+*ts\_compositing* – Show/hide compositing overlay.
 
-*ts\_profile* Dump profiling text to output.
+*ts\_profile* – Dump profiling text to output.
+
 
 Modified Files in the Unreal Engine
-===================================
+--------
 
 	Engine\Source\Runtime\Renderer\Private\DeferredShadingRenderer.cpp
 	Engine\Source\Runtime\Renderer\Public\RendererInterface.h
@@ -112,8 +114,13 @@ Modified Files in the Unreal Engine
 
 
 Further Information
----
+---------
 
-To help get to grips with trueSKY for Unreal Engine 4, you can [view the tutorial here](http://docs.simul.co/unrealengine/Tutorial.html)
+* [trueSKY Tutorial: Unreal Engine 4](http://docs.simul.co/unrealengine/Tutorial.html)
+* [The Sequencer](http://docs.simul.co/reference/man_8_sequencer.html)
+* [Driving trueSKY via Blueprint](http://docs.simul.co/unrealengine/Blueprint.html)
+* [The trueSKY Renderer](http://docs.simul.co/reference/man_4_rendering.html)
+
+
 
 Next: <a href="/unrealengine/Tutorial">Tutorial</a>

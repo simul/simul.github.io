@@ -10,28 +10,38 @@ trueSKY alpha for Unity
 Getting started
 --------------
 
-Because the current version works only with DirectX 11, you will need to switch your project to DirectX 11 mode to see the rendered output. Do this using Edit:Project Settings:Player. In the Inspector, under "Settings for PC, Mac and Linux Standalone", in "Other Settings", chose "Use Direct3D 11*". Additionally, if you are using the PopcornFX plugin, you will need to set native rendering to "Before Image Effect" for it to work alongside trueSKY.
+* Register your username at [https://simul.co/register](https://simul.co/register)
+* You'll find your licence at [simul.co/account](https://simul.co/account).
+* After evaluating, to get a full indie licence, head to [simul.co/truesky/truesky-alpha-for-unity/](http://simul.co/truesky/truesky-alpha-for-unity/). For all other licences, write to [contact@simul.co](mailto:contact@simul.co).
 
-To activate trueSKY alpha, go to the GameObject menu, and select "*initialize trueSKY in scene*". This launches a dialogue - usually the default options will be fine. At the last step, this dialog will create:
+
+Installation and Initialisation
+--------------
+
+You can download the packaged trueSKY assets from [http://simul.co/truesky/download/](http://simul.co/truesky/download/). Simply import these into a your project to use.
+
+Because the current version works only with DirectX 11, you will need to ensure your project is in DirectX 11 mode to see the rendered output. Unity should automatically select DirectX 11, but if not, you can force this by going to Edit -> Project Settings -> Player. In the Inspector, under "Settings for PC, Mac and Linux Standalone", in "Other Settings", untick "“Auto Graphics API for Windows” and drag "Direct3D 11" to the top of the list. Additionally, if you are using the PopcornFX plugin, you will need to set native rendering to "Before Image Effect" for it to work alongside trueSKY.
+
+To activate trueSKY alpha, go to the GameObject menu, and select "*initialise trueSKY in scene*". This launches the trueSKY Setup Wizard — usually the default options will be fine. This will create:
 
 * A Sequence asset containing sky and cloud data.
 * A trueSKY object in the scene.
-* A TrueSkyCamera component for the main camera.
-* A TransparencyCamera component for the main camera.
+* A TrueSkyCamera component for the main camera. 
+* A trueSKY Cubemap Probe component for the main camera.
 * A SimulSun component for the Directional Light in the scene.
 
-If there is no Directional Light, one will be created.
+If there is no Directional Light, one will be created. Similarly, if there are no cameras, one can be created; if there are multiple cameras an option to assign the script to all cameras will be provided.
 
-After initialization, select your main Camera, and find the TrueSkyCamera component. This component has a checkbox for "Flipped View". If you are using Forward rendering (under "Rendering Path" in the Camera component), and have extra post-processing components attached and enabled, you may need to set the "Flipped View" box. This is because Unity reverses the y-component of its framebuffers when performing post-processing.
+After initialisation, select your main Camera, and find the TrueSkyCamera component. This component has a checkbox for "Flipped View". If you are using Forward rendering (under "Rendering Path" in the Camera component), and have extra post-processing components attached and enabled, you may need to set the "Flipped View" box. This is because Unity reverses the y-component of its framebuffers when performing post-processing.
 
 trueSKY performs best with a near clipping plane around 1m, and a far plane between 100,000 and 500,000 metres. This is because the appearance of the atmospheric effects is dependent on the numerical precision of the depth buffer.
 
 User Interface
 --------------
-The wizard to add trueSKY to a scene is found in the GameObject menu.
-Under the Window menu are toggles for the trueSKY debug overlays.
+As mentioned above, the wizard to add trueSKY to a scene is found in the GameObject menu, under "Initialize trueSKY in scene". Just below this, you can click "Remove trueSKY from scene", to do just that. A selection of overlays and visual toggles are also provided to aid testing and debugging. These can be found under Window -> trueSKY, along with an option to recompile the trueSKY shaders.
 General trueSKY properties are found by selecting the trueSKY object in the scene.
 Sequence properties are found by editing Sequence assets. 
+
 
 Transparencies
 -----------------------
@@ -43,11 +53,23 @@ This is your connection to trueSKY within a scene. Its controls are:
 
 **Render in Edit Mode**: Draw the trueSKY environment in the Game view from the Editor.
 
-**Cloud Steps**: Number of raytracing steps to use - more=higher definition, fewer=faster.
+**Metres Per Unit**: Number of trueSKY metres per Unity unit.
 
-**Downscale**: Resolution to render the clouds to - higher numbers = lower resolution.
+**Cloud Shadowing**: The strength of the cloud shadowing effect (darkens objects beneath clouds).
 
-**Gamma**: If you are not using Linear Color Space, this controls gamma-correction of the trueSKY environment.
+**Shadow Sharpness**: How much to sharpen cloud shadows.
+
+**Threshold Distance**: Heuristic threshold for depth downscaling (optimal values between 0.1 and 2.0).
+
+**Cloud Steps**: Number of raytracing steps to use; more = higher definition, fewer = faster.
+
+**Downscale Factor**: Resolution at which to render the clouds; higher numbers = lower resolution.
+
+**Amortization**: Amortization of scattering volume generation for clouds.
+
+**Atmospherics Amortization**: Amortization to use for generating atmospherics tables.
+
+**Depth Blending**: If true, uses depth-blending for clouds. If false, clouds are drawn behind or in front of scenery, depending on altitude.
 
 **Sequence Asset**: The asset containing sky sequence data. Double-click this to edit the sky sequence.
 
@@ -55,11 +77,20 @@ This is your connection to trueSKY within a scene. Its controls are:
 
 **Speed**: Determines how quickly Time changes when in-game.
 
-**Diagnostics**: A set of overlays for debugging. Of particular interest is "Show Celestial Display", which tracks the motion of the Sun and Moon in the sky.
+**Sim Time Rain:** If true, rain falls at simulation speeds (and even faster if time is progressing more quickly). If false, rain falls relative to real time.
 
-**Simulation Time Rain:** Set true or false - if true, rain falls at simulation speeds - faster if time is progressing more quickly. If false, rain falls relative to real time.
+**Cosmic Background**: Image for use as the cosmic background.
 
-**Performance** If true, this enables CPU and GPU profiling for trueSKY. The results will be updated every few frames, and shown in the text area beneath the "Performance" checkbox. The sliders "CPU level" and "GPU level" let you set the depth of the profiling tree for CPU and GPU respectively.
+**Moon Texture**: Texture to be applied to the moon.
+
+**Find Constellation**: Find a star constellation at given coordinates.
+
+**GPU Level**: Sets depth of profiling tree for GPU.
+
+**CPU Level**: Sets depth of profiling tree for CPU.
+
+**Profiling**: If true, enables CPU and GPU profiling for trueSKY. The results will be updated every few frames, and shown in the text area beneath the "Profiling" checkbox. 
+
 
 The Sky Sequence
 ---------------
@@ -70,78 +101,28 @@ Select the Properties tab or the Map. Click a keyframe to edit its properties. D
 
 Read more about editing Sky and Cloud properties on [The Sky Sequencer Page](http://docs.simul.co/reference/man_8_sequencer.html).
 
-Scripting
----------
-Script control of the sky is via the trueSKY object. While the Sequence asset represents the initial state, you can change any value in-game from script.
 
-To obtain a reference to the trueSKY object in the scene (there should only be one):
+Fixing Time-of-Day
+------------------
 
-		simul.trueSKY trueSky=simul.trueSKY.GetTrueSky();
+Sometimes, you might not want a day-night cycle or changing time-of-day, but still want the clouds to move and weather to change over time. To do this, you can uncouple keyframe time (the position of a keyframe on the timeline) from daytime.
 
-This is something you can do on initialization.
+Edit the Sequence asset by clicking on it in the Project window. Select the Sky (click on the word "Sky" at lower left) and uncheck "*Link Keyframe time and daytime*".
 
-**int GetNumSkyKeyframes()**: Returns the number of sky keyframes in the current sequence.
+<a href="http://docs.simul.co/unity/images/FixingDaytime1.png"><img src="http://docs.simul.co/unity/images/FixingDaytime1.png" alt="index"/></a>
 
-**int GetNumCloudKeyframes()**: Return the number of (3D) cloud keyframes.
-
-**int GetNumCloud2DKeyframes()**: Returns the number of 2D cloud keyframes.
-
-We use uint's as unique identifiers (uid's) to represent keyframes. Note: these are unique and persistent for the session, but not across saves or restarts, so don't store these.
-		
-**uint GetInterpolatedCloudKeyframe(int layer)**: Get the special uid that refers to the interpolated cloud keyframe, i.e. the *current* values. The layer specifies 0=3D clouds, 1=2D clouds.
-
-**uint GetInterpolatedSkyKeyframe()**: Get the special uid that refers to the interpolated sky keyframe, i.e. the *current* values.
-
-**uint GetSkyKeyframeByIndex(int index)**: Get a uid for the specified sky keyframe, between zero and (1-GetNumSkyKeyframes()).
-
-**uint GetCloudKeyframeByIndex(int index)**: Get a uid for the specified 3D cloud keyframe, between zero and (1-GetNumCloudKeyframes()).
-
-**uint GetCloud2DKeyframeByIndex(int index)**: Get a uid for the specified 3D cloud keyframe, between zero and (1-GetNumCloud2DKeyframes()).
-
-**uint InsertSkyKeyframe(float t)**: Insert a sky keyframe at the specified time (0=midnight on the first day, 0.5=midday, etc).
-
-**uint InsertCloudKeyframe(float t)**: Insert a cloud keyframe at the specified time.
-
-**uint Insert2DCloudKeyframe(float t)**: Insert a 2D cloud keyframe.
-
-We can get keyframe properties if we know the uid.
-
-**object GetKeyframeValue(uint uid,string name)**: Returns property *name* of keyframe *uid*. The result will be a *float*, or an *int*.
-
-We can modify and delete keyframes at any point, but this only works on keyframes in the sequence, not on the interpolated keyframes - as these represent the current, calculated state.
-
-**void DeleteKeyframe(uint uid)**: Delete the keyframe (sky or clouds).
-
-**void SetKeyframeValue(uint uid,string name,object value)**: Set the property of keyframe *uid* named by *name* to the *value* given, which should be a *float* or an *int* (*double*s are accepted for *float* values, but *float* values can't be passed to *int* properties and vice versa).
-
-For example,in the script KeyframeTesting.cs in the Simul directory, is a function that sets all the cloud keyframes to have a "cloudiness" of 0.8 when the game is run:
-
-	
-	int numk=trueSky.GetNumCloudKeyframes();
-	for(int i=0;i<numk;i++)
-	{
-		uint uid=trueSky.GetCloudKeyframeByIndex(i);
-		trueSky.SetKeyframeValue(uid,"cloudiness",0.8);
-	}
-
-For details of the properties you can change, see the Clouds and Sky Reference pages.
+Now, select all the Sky keyframes (box-select or double-click). Under "Sun and Moon", change the "daytime" of the keyframes to be the same value (e.g. 06:45 below). Now time and time-of-day are uncoupled.
  
-**Vector3 TrueSkyToUnityPosition(Vector3 ts_pos)**
-**Vector3 TrueSkyToUnityDirection(Vector3 ts_dir)**
-**Vector3 UnityToTrueSkyPosition(Vector3 upos)** 
-**Vector3 UnityToTrueSkyDirection(Vector3 u_dir)**
+<a href="http://docs.simul.co/unity/images/FixingDaytime2.png"><img src="http://docs.simul.co/unity/images/FixingDaytime2.png" alt="index"/></a> 
 
-As Unity and trueSKY treat coordinates differently -- for example, which axis is considered "up" -- these functions are provided to convert between them when needed.
 
-Reference
+Further Information
 ---------
-[Sky and Atmospherics](Sky.html)
 
-[Clouds](Clouds.html)
-
-Techniques
-----------
-[Fixing Time of Day](FixingDaytime.html)
+* [trueSKY Tutorial: Unity](http://docs.simul.co/unity/Tutorial.html)
+* [The Sequencer](http://docs.simul.co/reference/man_8_sequencer.html)
+* [Scripting in trueSKY for Unity](http://docs.simul.co/unity/Scripting.html)
+* [The trueSKY Renderer](http://docs.simul.co/reference/man_4_rendering.html)
 
 
-Next: <a href="/unity/Instructions">Instructions</a>
+Next: <a href="/unity/Scripting">Tutorial</a>
