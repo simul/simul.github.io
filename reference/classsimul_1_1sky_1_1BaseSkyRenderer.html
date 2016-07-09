@@ -57,6 +57,10 @@ virtual BaseGpuSkyGenerator *&#160;</td><td class="memItemRight" valign="bottom"
 <tr class="separator:a254e194a3001a43574eb24c280375de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2968f5d6d4933c2ee1629ca3fa303691"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseSkyRenderer.html#a2968f5d6d4933c2ee1629ca3fa303691">EnableMoon</a> (bool val)</td></tr>
 <tr class="separator:a2968f5d6d4933c2ee1629ca3fa303691"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afab6092670bfd63c17a47c95c8ded263"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afab6092670bfd63c17a47c95c8ded263"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseSkyRenderer.html#afab6092670bfd63c17a47c95c8ded263">EnsureTexturesAreUpToDate</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext)</td></tr>
+<tr class="memdesc:afab6092670bfd63c17a47c95c8ded263"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maintains the per-frame textures. <br /></td></tr>
+<tr class="separator:afab6092670bfd63c17a47c95c8ded263"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2da4743e17e6b8b6c73b4756165b2ac1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2da4743e17e6b8b6c73b4756165b2ac1"></a>
 simul::sky::float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseSkyRenderer.html#a2da4743e17e6b8b6c73b4756165b2ac1">GetAmbientColour</a> (float alt_km)</td></tr>
 <tr class="memdesc:a2da4743e17e6b8b6c73b4756165b2ac1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current ambient light colour as a float4 (x=red, y=green, z=blue, w unused), i.e. sunlight or moonlight. This is a high-dynamic range value. <br /></td></tr>
@@ -201,7 +205,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>The rendering of the sky is no longer handled by <a class="el" href="classsimul_1_1sky_1_1BaseSkyRenderer.html" title="The base class for real-time sky renderers. ">BaseSkyRenderer</a> or its derived classes because the <a class="el" href="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html">atmospherics renderer</a> now does this in a single pass including both sky and atmospherics.</p>
 <p>It is the job of the <a class="el" href="classsimul_1_1sky_1_1Sky.html" title="A class that calculates the sky colour. ">Sky</a> Renderer to update the atmospherics textures to be used by the other render classes, and render celestial objects.</p>
 <p>The fade tables are stored as 3D textures - an axis for distance, one for elevation, one for altitude. The table size is given by NumElevations, NumDistances and SetNumAltitudes() of <a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html">SkyKeyframer</a>. Try to minimize the number of altitudes required, in order to maximize performance, and use SetAltitudeRangeKm on initialization to the range you will use.</p>
-<p><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a475e35931efc000687a8d66251e86505">BaseWeatherRenderer::PreRenderUpdate</a> first calls <a class="el" href="">EnsureTexturesAreUpToDate</a>, which fills in the fade textures with loss and inscatter values.</p>
+<p><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a475e35931efc000687a8d66251e86505">BaseWeatherRenderer::PreRenderUpdate</a> first calls <a class="el" href="classsimul_1_1sky_1_1BaseSkyRenderer.html#afab6092670bfd63c17a47c95c8ded263">EnsureTexturesAreUpToDate</a>, which fills in the fade textures with loss and inscatter values.</p>
 <p>Then, the sky and atmospheric scattering (atmospherics, or distance-fades) are drawn together as an overlay after the depth-buffer has been filled by any solids in the scene (see <a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a9711dc6925ead27e1b6a3ca226073f06">simul::clouds::BaseWeatherRenderer::RenderMixedResolution</a>).</p>
 <p>There are two main elements to realistic atmospherics: Loss, and Inscatter.</p>
 <div class="image">
@@ -438,7 +442,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/>
-<address style="text-align: right;">trueSKY VERSION 4.0.120<small>
-Fri Jul 8 2016 07:46:42</small></address>
+<address style="text-align: right;">trueSKY VERSION SIMUL_MAJOR_VERSION=4.0.0<small>
+Sat Jul 9 2016 07:46:45</small></address>
 </body>
 </html>

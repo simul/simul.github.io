@@ -5,7 +5,7 @@
   <filterSection>
     <filterAttribute>doxygen</filterAttribute>
     <toc>
-      <section title="trueSKY 4.0.120" ref="index.html">
+      <section title="trueSKY SIMUL_MAJOR_VERSION=4.0.0" ref="index.html">
         <section title="Developer Manual" ref="index.html">
           <section title="1 Introduction" ref="man_1_introduction.html" />
           <section title="2 Getting Started" ref="man_2_gettingstarted.html" />
@@ -1731,6 +1731,31 @@
       <keyword name="StoreRenderState" id="simul::opengl::RenderPlatform::StoreRenderState" ref="classsimul_1_1opengl_1_1RenderPlatform.html#a2db76d110beba951c08a4d476b1cec11" />
       <keyword name="SynchronizeCacheAndState" id="simul::opengl::RenderPlatform::SynchronizeCacheAndState" ref="classsimul_1_1opengl_1_1RenderPlatform.html#ae7e1b9f67ee9807cdbfd0e7b737fef09" />
       <keyword name="simul::plugin" id="simul::plugin" ref="namespacesimul_1_1plugin.html" />
+      <keyword name="GetNumStorms" id="simul::plugin::GetNumStorms" ref="namespacesimul_1_1plugin.html#a8fe56bdf0a92f807e44da03671d8f84d" />
+      <keyword name="GetStormAtTime" id="simul::plugin::GetStormAtTime" ref="namespacesimul_1_1plugin.html#a9eac945af4fbed618b8ba39cb45f7f38" />
+      <keyword name="GetStormByIndex" id="simul::plugin::GetStormByIndex" ref="namespacesimul_1_1plugin.html#ac346a0bd0595f1377e22c9eb40d594af" />
+      <keyword name="StaticCopySkylight" id="simul::plugin::StaticCopySkylight" ref="namespacesimul_1_1plugin.html#a606c68cb2402faada2e73d8331cd9970" />
+      <keyword name="StaticExportCloudLayerToGeometry" id="simul::plugin::StaticExportCloudLayerToGeometry" ref="namespacesimul_1_1plugin.html#a4ee59e5cd4ad35eb65c8b04f35e3dfbd" />
+      <keyword name="StaticGetEnvironment" id="simul::plugin::StaticGetEnvironment" ref="namespacesimul_1_1plugin.html#a43c5415810d19e32b2da031362d2df49" />
+      <keyword name="StaticGetOrAddView" id="simul::plugin::StaticGetOrAddView" ref="namespacesimul_1_1plugin.html#a7ad2a4f98a99013248c9259e83df387f" />
+      <keyword name="StaticGetRenderBool" id="simul::plugin::StaticGetRenderBool" ref="namespacesimul_1_1plugin.html#a3887b006acb523edd6203ef8672354ff" />
+      <keyword name="StaticGetRenderString" id="simul::plugin::StaticGetRenderString" ref="namespacesimul_1_1plugin.html#a3aa3f02175feb4c2b2f282fc7bdc4ff2" />
+      <keyword name="StaticInitInterface" id="simul::plugin::StaticInitInterface" ref="namespacesimul_1_1plugin.html#a841afd858774829c8b37cdd9f20bf3ab" />
+      <keyword name="StaticOnDeviceChanged" id="simul::plugin::StaticOnDeviceChanged" ref="namespacesimul_1_1plugin.html#a39592119110b52e969cc22df8028603b" />
+      <keyword name="StaticPopPath" id="simul::plugin::StaticPopPath" ref="namespacesimul_1_1plugin.html#a5cf6a20e9e163d3aa86b822c4bb6e4a8" />
+      <keyword name="StaticPushPath" id="simul::plugin::StaticPushPath" ref="namespacesimul_1_1plugin.html#a29ec0de6101956f6f76bf24ecdd23e23" />
+      <keyword name="StaticRemoveView" id="simul::plugin::StaticRemoveView" ref="namespacesimul_1_1plugin.html#aca5d16557f59b3c87f2d62a6fdcfbcaa" />
+      <keyword name="StaticRenderFrame" id="simul::plugin::StaticRenderFrame" ref="namespacesimul_1_1plugin.html#afe740323022abfa350db2ffe2f6d719d" />
+      <keyword name="StaticRenderOverlays" id="simul::plugin::StaticRenderOverlays" ref="namespacesimul_1_1plugin.html#a8836c94c7c1430c3f70a1cd95211b0fc" />
+      <keyword name="StaticSetDebugOutputCallback" id="simul::plugin::StaticSetDebugOutputCallback" ref="namespacesimul_1_1plugin.html#a41b04f372f172b9748d4bc09dcf5d3b3" />
+      <keyword name="StaticSetGraphicsDevice" id="simul::plugin::StaticSetGraphicsDevice" ref="namespacesimul_1_1plugin.html#a5d8605a39b60f3e1dd092569ee8281e7" />
+      <keyword name="StaticSetMemoryInterface" id="simul::plugin::StaticSetMemoryInterface" ref="namespacesimul_1_1plugin.html#af98e4fe8024489e196a5e1a4f2e531d6" />
+      <keyword name="StaticSetRenderBool" id="simul::plugin::StaticSetRenderBool" ref="namespacesimul_1_1plugin.html#ad770b0f59ed8da917445812bd33b43ba" />
+      <keyword name="StaticSetRenderString" id="simul::plugin::StaticSetRenderString" ref="namespacesimul_1_1plugin.html#a0c2ca4ad0e0d949249303d49ff1debfa" />
+      <keyword name="StaticSetSequence" id="simul::plugin::StaticSetSequence" ref="namespacesimul_1_1plugin.html#a00df4612ce874f9cf9ad210776e696f9" />
+      <keyword name="StaticSetSequenceTxt" id="simul::plugin::StaticSetSequenceTxt" ref="namespacesimul_1_1plugin.html#a4e6298e5a89281d513dc109f2514ce58" />
+      <keyword name="StaticShutDownInterface" id="simul::plugin::StaticShutDownInterface" ref="namespacesimul_1_1plugin.html#a301be6e0f3624361673f150964e29a3b" />
+      <keyword name="UnitySetGraphicsDevice" id="simul::plugin::UnitySetGraphicsDevice" ref="namespacesimul_1_1plugin.html#ab0d60dd0e4c9459273352f3cc22ca9c3" />
       <keyword name="simul::plugin::PluginTrueSkyRenderer" id="simul::plugin::PluginTrueSkyRenderer" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html" />
       <keyword name="CloudLineQuery" id="simul::plugin::PluginTrueSkyRenderer::CloudLineQuery" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a505f746056166e0ac654b0d6fc44687a" />
       <keyword name="CloudSphereInteraction" id="simul::plugin::PluginTrueSkyRenderer::CloudSphereInteraction" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a90f0f27a86e872b0ed2a6be702c3ea38" />
@@ -1755,7 +1780,6 @@
       <keyword name="SetPointLight" id="simul::plugin::PluginTrueSkyRenderer::SetPointLight" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a4b7f1ac56f6652fd45bac72564b72551" />
       <keyword name="SetString" id="simul::plugin::PluginTrueSkyRenderer::SetString" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#ae37049d4fdeb5adc0fc31368b60fff9f" />
       <keyword name="SetTexture" id="simul::plugin::PluginTrueSkyRenderer::SetTexture" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a3e1f951258ed19ab368e7ffac367aaf8" />
-      <keyword name="Tick" id="simul::plugin::PluginTrueSkyRenderer::Tick" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a7c5622b758cf4b0712901649addaacb5" />
       <keyword name="TriggerAction" id="simul::plugin::PluginTrueSkyRenderer::TriggerAction" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a43e89079035329aed9937e8773f729d8" />
       <keyword name="UpdateProfilingText" id="simul::plugin::PluginTrueSkyRenderer::UpdateProfilingText" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a4f9d1796f82bd7f7c3b31c8c3f233fc9" />
       <keyword name="~PluginTrueSkyRenderer" id="simul::plugin::PluginTrueSkyRenderer::~PluginTrueSkyRenderer" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a2b26f5bd3b51910e9212f7914001a023" />
@@ -1991,6 +2015,7 @@
       <keyword name="CalcSunOcclusion" id="simul::sky::BaseSkyRenderer::CalcSunOcclusion" ref="classsimul_1_1sky_1_1BaseSkyRenderer.html#a6ed4c3c7c11b10b4f43ca3ca0e23ab75" />
       <keyword name="CreateGpuSkyGenerator" id="simul::sky::BaseSkyRenderer::CreateGpuSkyGenerator" ref="classsimul_1_1sky_1_1BaseSkyRenderer.html#a254e194a3001a43574eb24c280375de5" />
       <keyword name="EnableMoon" id="simul::sky::BaseSkyRenderer::EnableMoon" ref="classsimul_1_1sky_1_1BaseSkyRenderer.html#a2968f5d6d4933c2ee1629ca3fa303691" />
+      <keyword name="EnsureTexturesAreUpToDate" id="simul::sky::BaseSkyRenderer::EnsureTexturesAreUpToDate" ref="classsimul_1_1sky_1_1BaseSkyRenderer.html#afab6092670bfd63c17a47c95c8ded263" />
       <keyword name="GetAmbientColour" id="simul::sky::BaseSkyRenderer::GetAmbientColour" ref="classsimul_1_1sky_1_1BaseSkyRenderer.html#a2da4743e17e6b8b6c73b4756165b2ac1" />
       <keyword name="GetBaseSkyInterface" id="simul::sky::BaseSkyRenderer::GetBaseSkyInterface" ref="classsimul_1_1sky_1_1BaseSkyRenderer.html#a185c94cc85f171574aca0af3b4048937" />
       <keyword name="GetIlluminationTexture" id="simul::sky::BaseSkyRenderer::GetIlluminationTexture" ref="classsimul_1_1sky_1_1BaseSkyRenderer.html#aaf3aabc1db84449e2947eaf3fc6f4474" />
@@ -2805,6 +2830,8 @@
       <file>namespacemembers.html</file>
       <file>namespacemembers.html</file>
       <file>namespacemembers.html</file>
+      <file>namespacemembers.html</file>
+      <file>namespacemembers_func.html</file>
       <file>namespacemembers_func.html</file>
       <file>namespacemembers_func.html</file>
       <file>namespacemembers_func.html</file>
