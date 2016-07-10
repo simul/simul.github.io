@@ -1909,6 +1909,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1math_1_1Vector3.html#ac6712eb673fbed83d2a43142b3e4a005"><param name="Name" value="NonZero"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1math_1_1Vector3.html#a838805af08b177dfd9a0f5a209f81e9f"><param name="Name" value="Normalize"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1clouds_1_1CloudKeyframer_1_1Storm.html#a4195b2afcfb89e5653e525fb2dc32c88"><param name="Name" value="numBranches"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Texture.html#af75d493a4a7d144a0004db8d38ee5c06"><param name="Name" value="NumFaces"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1clouds_1_1CloudKeyframer_1_1Storm.html#afe5658d064c999bc97036b6291e2d1b6"><param name="Name" value="numLevels"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classObj_1_1File.html"><param name="Name" value="Obj::File"></OBJECT>
   <UL>
@@ -4063,6 +4064,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Texture.html#a803a413c51961098ea3807f4cf27696c"><param name="Name" value="InitFromExternalTexture2D"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Texture.html#ab9bcf54d34fbdbd6d2c7743934b70770"><param name="Name" value="MoveToFastRAM"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Texture.html#ab81c23d5a081ae4788710ad4bd6ed635"><param name="Name" value="MoveToSlowRAM"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Texture.html#af75d493a4a7d144a0004db8d38ee5c06"><param name="Name" value="NumFaces"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Texture.html#a171da2c97a586b62f0d95fb01edc9f8f"><param name="Name" value="setTexels"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1crossplatform_1_1ViewStruct.html"><param name="Name" value="simul::crossplatform::ViewStruct"></OBJECT>

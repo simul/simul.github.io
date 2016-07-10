@@ -1309,6 +1309,7 @@
       <keyword name="InitFromExternalTexture2D" id="simul::crossplatform::Texture::InitFromExternalTexture2D" ref="classsimul_1_1crossplatform_1_1Texture.html#a803a413c51961098ea3807f4cf27696c" />
       <keyword name="MoveToFastRAM" id="simul::crossplatform::Texture::MoveToFastRAM" ref="classsimul_1_1crossplatform_1_1Texture.html#ab9bcf54d34fbdbd6d2c7743934b70770" />
       <keyword name="MoveToSlowRAM" id="simul::crossplatform::Texture::MoveToSlowRAM" ref="classsimul_1_1crossplatform_1_1Texture.html#ab81c23d5a081ae4788710ad4bd6ed635" />
+      <keyword name="NumFaces" id="simul::crossplatform::Texture::NumFaces" ref="classsimul_1_1crossplatform_1_1Texture.html#af75d493a4a7d144a0004db8d38ee5c06" />
       <keyword name="setTexels" id="simul::crossplatform::Texture::setTexels" ref="classsimul_1_1crossplatform_1_1Texture.html#a171da2c97a586b62f0d95fb01edc9f8f" />
       <keyword name="simul::crossplatform::ViewStruct" id="simul::crossplatform::ViewStruct" ref="structsimul_1_1crossplatform_1_1ViewStruct.html" />
       <keyword name="depthTextureStyle" id="simul::crossplatform::ViewStruct::depthTextureStyle" ref="structsimul_1_1crossplatform_1_1ViewStruct.html#a5d5ec12b030c8335ef3fa6eb01298e77" />
