@@ -167,7 +167,7 @@ void UNITY_INTERFACE_API&#160;</td><td class="memItemRight" valign="bottom"><a c
 <p>Shut down the renderer and free all resources. </p>
 <p>This shuts down the plugin rendering interface and releases its allocations. </p>
 
-<p>Definition at line <a class="el" href="RenderingPlugin_8cpp_source.html#l00274">274</a> of file <a class="el" href="RenderingPlugin_8cpp_source.html">RenderingPlugin.cpp</a>.</p>
+<p>Definition at line <a class="el" href="RenderingPlugin_8cpp_source.html#l00276">276</a> of file <a class="el" href="RenderingPlugin_8cpp_source.html">RenderingPlugin.cpp</a>.</p>
 
 </div>
 </div>
@@ -270,7 +270,7 @@ void UNITY_INTERFACE_API&#160;</td><td class="memItemRight" valign="bottom"><a c
 <p>Render trueSKY to the current render target. </p>
 <p>This renders the trueSKY frame. It can be called (UE4-style) direct from the engine-side plugin wrapper, or (Unity-style) For UE4 we can call the whole render with all the information it needs. But for Unity we must first set the values, then wait for UnityRenderEvent() to be triggered. </p>
 
-<p>Definition at line <a class="el" href="RenderingPlugin_8cpp_source.html#l00506">506</a> of file <a class="el" href="RenderingPlugin_8cpp_source.html">RenderingPlugin.cpp</a>.</p>
+<p>Definition at line <a class="el" href="RenderingPlugin_8cpp_source.html#l00520">520</a> of file <a class="el" href="RenderingPlugin_8cpp_source.html">RenderingPlugin.cpp</a>.</p>
 
 </div>
 </div>
@@ -323,7 +323,7 @@ void UNITY_INTERFACE_API&#160;</td><td class="memItemRight" valign="bottom"><a c
 </div><div class="memdoc">
 <p>Update a skylight cubemap and its corresponding spherical harmonics. Copy the specified skylight cubemap texture and spherical harmonic values from trueSKY to the external engine. This function has latency - it won't do anything the first time it is called, nor (on most platforms) the second or third. </p>
 
-<p>Definition at line <a class="el" href="RenderingPlugin_8cpp_source.html#l00455">455</a> of file <a class="el" href="RenderingPlugin_8cpp_source.html">RenderingPlugin.cpp</a>.</p>
+<p>Definition at line <a class="el" href="RenderingPlugin_8cpp_source.html#l00469">469</a> of file <a class="el" href="RenderingPlugin_8cpp_source.html">RenderingPlugin.cpp</a>.</p>
 
 </div>
 </div>
@@ -342,7 +342,7 @@ void UNITY_INTERFACE_API&#160;</td><td class="memItemRight" valign="bottom"><a c
 </div><div class="memdoc">
 <p>Ensure that a view is created, unique to the <em>ident</em> that was passed. So this ident must be unique to each of the active views in the external engine. </p><dl class="section return"><dt>Returns</dt><dd>The trueSKY id for that view. </dd></dl>
 
-<p>Definition at line <a class="el" href="RenderingPlugin_8cpp_source.html#l00692">692</a> of file <a class="el" href="RenderingPlugin_8cpp_source.html">RenderingPlugin.cpp</a>.</p>
+<p>Definition at line <a class="el" href="RenderingPlugin_8cpp_source.html#l00713">713</a> of file <a class="el" href="RenderingPlugin_8cpp_source.html">RenderingPlugin.cpp</a>.</p>
 
 </div>
 </div>
@@ -351,6 +351,6 @@ void UNITY_INTERFACE_API&#160;</td><td class="memItemRight" valign="bottom"><a c
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION SIMUL_MAJOR_VERSION=4.0.0<small>
-Sun Jul 10 2016 07:46:43</small></address>
+Mon Jul 11 2016 07:46:45</small></address>
 </body>
 </html>
