@@ -45,6 +45,23 @@ To change the time of day, use the SetTime function of the trueSKY sequence acto
  
 <a href="http://docs.simul.co/unrealengine/images/SettingTime.png"><img src="http://docs.simul.co/unrealengine/images/SettingTime.png" alt="Blueprint"/></a>
 
+Physical Units
+--------------
+
+trueSKY is a physically-based renderer, which means that the light and colour values generated correspond to true physical properties. The pixel colours rendered to a view are spectral radiance values. However, to keep the numbers from getting too high or low, a global adjustment is applied. This is because numerical accuracy would be lost, particularly for very dark night-time scenes, if we kept the same scale at all times. The Sky property "Brightness Power" controls this adjustment - if equal to one, there is no adjustment. Values smaller than one reduce the range of outputs - brightening dark skies and dimming very bright skies. To obtain the current value of the multiplier, use the Blueprint function "GetReferenceSpectralRadiance". Then you can use the calculation:
+
+	spectral radiance (watts/square metre/steradian/nm) = pixel value * reference spectral radiance
+
+You can use this value to calibrate the other lights in your scene. Say you have a point light representing an electric bulb. The brightness of this light would in reality be constant. But because trueSKY adjusts the physical value of a pixel as time passes, you must compensate for this by scaling the intensity of the bulb by the inverse of the reference radiance.
+
+<a href="http://docs.simul.co/unrealengine/images/ReferenceSpectralRadiance.png"><img src="http://docs.simul.co/unrealengine/images/ReferenceSpectralRadiance.png" alt="Blueprint"/></a>
+
+So the light appears to get brighter as day turns to night. You can get the same effect using Unreal's Eye Adaptation (Auto Exposure). But because this is a post-process effect, it cannot cope with very dark scenes - you may see banding in the sky colours due to the low numerical accuracy of very small numbers.
+
+<a href="http://docs.simul.co/unrealengine/images/DayLightRadiance.png"><img src="http://docs.simul.co/unrealengine/images/DayLightRadiance.png" alt="Blueprint"/></a>
+<a href="http://docs.simul.co/unrealengine/images/SunsetLightRadiance.png"><img src="http://docs.simul.co/unrealengine/images/SunsetLightRadiance.png" alt="Blueprint"/></a>
+<a href="http://docs.simul.co/unrealengine/images/NightLightRadiance.png"><img src="http://docs.simul.co/unrealengine/images/NightLightRadiance.png" alt="Blueprint"/></a>
+
 
 The Sky and Clouds 
 ------------
