@@ -45,7 +45,7 @@ To change the time of day, use the SetTime function of the trueSKY sequence acto
  
 <a href="http://docs.simul.co/unrealengine/images/SettingTime.png"><img src="http://docs.simul.co/unrealengine/images/SettingTime.png" alt="Blueprint"/></a>
 
-Physical Units
+Physical Units (trueSKY 4.1 onward)
 --------------
 
 trueSKY is a physically-based renderer, which means that the light and colour values generated correspond to true physical properties. The pixel colours rendered to a view are spectral radiance values. However, to keep the numbers from getting too high or low, a global adjustment is applied. This is because numerical accuracy would be lost, particularly for very dark night-time scenes, if we kept the same scale at all times. The Sky property "Brightness Power" controls this adjustment - if equal to one, there is no adjustment. Values smaller than one reduce the range of outputs - brightening dark skies and dimming very bright skies. To obtain the current value of the multiplier, use the Blueprint function "GetReferenceSpectralRadiance". Then you can use the calculation:
