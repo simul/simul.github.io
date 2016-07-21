@@ -11,7 +11,7 @@ Getting started
 
 Installing the Plugin
 ---
-From Unreal Engine 4.9.2 onwards, binary installers are available from [https://simul.co/truesky/download](https://simul.co/truesky/download). For other versions, or if you have a version of Unreal Engine built from source, you will need to build the plugin.
+From Unreal Engine 4.9.2 onwards, binary installers are available from [https://simul.co/download](https://simul.co/truesky/download). For other versions, or if you have a version of Unreal Engine built from source, you will need to build the plugin.
 
 How to build it
 ---
