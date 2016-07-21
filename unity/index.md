@@ -18,11 +18,13 @@ Getting started
 Installation and Initialisation
 --------------
 
-You can download the packaged trueSKY assets from [http://simul.co/truesky/download/](http://simul.co/truesky/download/). Simply import these into a your project to use.
+You can download the packaged trueSKY assets from [http://simul.co/download/](http://simul.co/download/). Simply import these into a your project to use.
 
 Because the current version works only with DirectX 11, you will need to ensure your project is in DirectX 11 mode to see the rendered output. Unity should automatically select DirectX 11, but if not, you can force this by going to Edit -> Project Settings -> Player. In the Inspector, under "Settings for PC, Mac and Linux Standalone", in "Other Settings", untick "“Auto Graphics API for Windows” and drag "Direct3D 11" to the top of the list. Additionally, if you are using the PopcornFX plugin, you will need to set native rendering to "Before Image Effect" for it to work alongside trueSKY.
 
-To activate trueSKY alpha, go to the GameObject menu, and select "*initialise trueSKY in scene*". This launches the trueSKY Setup Wizard — usually the default options will be fine. This will create:
+There is an demo scene in the folder Assets/Simul/demo.
+
+To activate trueSKY, go to the GameObject menu, and select "*initialise trueSKY in scene*". This launches the trueSKY Setup Wizard — usually the default options will be fine. This will create:
 
 * A Sequence asset containing sky and cloud data.
 * A trueSKY object in the scene.
