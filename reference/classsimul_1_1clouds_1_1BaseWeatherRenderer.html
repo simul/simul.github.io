@@ -125,9 +125,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a7170fc074f1733f44941a2ec26314141">RemoveView</a> (int view_id)</td></tr>
 <tr class="memdesc:a7170fc074f1733f44941a2ec26314141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensure that per-view objects are destroyed for the view in question: they will be rebuilt if needed later. <br /></td></tr>
 <tr class="separator:a7170fc074f1733f44941a2ec26314141"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a130259c62a9fb2ea74e1cec7170985c4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a130259c62a9fb2ea74e1cec7170985c4">Render</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, <a class="el" href="namespacesimul_1_1clouds.html#a1dc56c71e4d8698ef947bc727ca3124d">TrueSkyRenderMode</a> renderMode, float exposure, float gamma, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *mainDepthTexture, const <a class="el" href="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1Viewport">crossplatform::Viewport</a> *depthViewport)</td></tr>
-<tr class="memdesc:a130259c62a9fb2ea74e1cec7170985c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the sky including atmospherics, into the current rendertarget, using a supplied depth texture.  <a href="#a130259c62a9fb2ea74e1cec7170985c4">More...</a><br /></td></tr>
-<tr class="separator:a130259c62a9fb2ea74e1cec7170985c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6926dd292486c1c305b73b1c5245a73"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ae6926dd292486c1c305b73b1c5245a73">Render</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, <a class="el" href="namespacesimul_1_1clouds.html#a1dc56c71e4d8698ef947bc727ca3124d">TrueSkyRenderMode</a> renderMode, float exposure, float gamma, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *mainDepthTexture, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *cubemapTexture, const <a class="el" href="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1Viewport">crossplatform::Viewport</a> *depthViewport)</td></tr>
+<tr class="memdesc:ae6926dd292486c1c305b73b1c5245a73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the sky including atmospherics, into the current rendertarget, using a supplied depth texture.  <a href="#ae6926dd292486c1c305b73b1c5245a73">More...</a><br /></td></tr>
+<tr class="separator:ae6926dd292486c1c305b73b1c5245a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9429a8aa0531ceb7ed1fcd0b2c55d71e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9429a8aa0531ceb7ed1fcd0b2c55d71e"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a9429a8aa0531ceb7ed1fcd0b2c55d71e">RenderCelestialBackground</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, <a class="el" href="namespacesimul_1_1clouds.html#a1dc56c71e4d8698ef947bc727ca3124d">TrueSkyRenderMode</a> renderMode, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *depthTexture, vec4 viewportTextureRegionXYWH, float exposure)</td></tr>
 <tr class="memdesc:a9429a8aa0531ceb7ed1fcd0b2c55d71e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the sun, moon and stars - call this while the depth buffer is bound. <br /></td></tr>
@@ -149,13 +149,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aa0c05a43c67c63d4bf316c362c3e4a85">SetBlurTexture</a> (<a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *t)</td></tr>
 <tr class="memdesc:aa0c05a43c67c63d4bf316c362c3e4a85"><td class="mdescLeft">&#160;</td><td class="mdescRight">A blurred texture, to be drawn usually per-frame. <br /></td></tr>
 <tr class="separator:aa0c05a43c67c63d4bf316c362c3e4a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1283aebee5e7a059395ad162e9f9d997"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1283aebee5e7a059395ad162e9f9d997"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a1283aebee5e7a059395ad162e9f9d997">SetCubemapTexture</a> (<a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *t)</td></tr>
-<tr class="memdesc:a1283aebee5e7a059395ad162e9f9d997"><td class="mdescLeft">&#160;</td><td class="mdescRight">A blurred cubemap, to be drawn usually per-frame. <br /></td></tr>
-<tr class="separator:a1283aebee5e7a059395ad162e9f9d997"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31b8c658eb917996da998ae44fe7c5ed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a31b8c658eb917996da998ae44fe7c5ed"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a31b8c658eb917996da998ae44fe7c5ed">SetCubemapTransform</a> (const float *m)</td></tr>
-<tr class="memdesc:a31b8c658eb917996da998ae44fe7c5ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">A transform for the cubemap set by <a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a1283aebee5e7a059395ad162e9f9d997" title="A blurred cubemap, to be drawn usually per-frame. ">SetCubemapTexture()</a>. <br /></td></tr>
+<tr class="memdesc:a31b8c658eb917996da998ae44fe7c5ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">A transform for the cubemap set by SetCubemapTexture(). <br /></td></tr>
 <tr class="separator:a31b8c658eb917996da998ae44fe7c5ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Property: float FogAmbientBrightness</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>"How much of the ambient light to use in colouring fog." </p>
@@ -185,6 +181,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:ad61d306ff6ec7908cee46ab61c39fe5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe9deff635032e7db648aabc1778638d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#afe9deff635032e7db648aabc1778638d">SetCloudThresholdDistanceKm</a> (float value)</td></tr>
 <tr class="separator:afe9deff635032e7db648aabc1778638d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Property: float MinimumStarPixelSize</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>"A heuristic to compensate for antialiasing." </p>
+</div></td></tr>
+<tr class="memitem:ae5a2d8ee0c0c5e8a9f9390f19171cd79"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ae5a2d8ee0c0c5e8a9f9390f19171cd79">GetMinimumStarPixelSize</a> () const </td></tr>
+<tr class="separator:ae5a2d8ee0c0c5e8a9f9390f19171cd79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf3fb890b0f4cad59b35578d12d7ab9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aaf3fb890b0f4cad59b35578d12d7ab9d">SetMinimumStarPixelSize</a> (float value)</td></tr>
+<tr class="separator:aaf3fb890b0f4cad59b35578d12d7ab9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Property: bool ShowPlanets</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>"If true, draw planets." </p>
 </div></td></tr>
@@ -426,6 +429,39 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
       </table>
 </div><div class="memdoc">
 <p>Set the value of CloudThresholdDistanceKm . </p>
+
+</div>
+</div>
+<a class="anchor" id="ae5a2d8ee0c0c5e8a9f9390f19171cd79"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float simul::clouds::BaseWeatherRenderer::GetMinimumStarPixelSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the value of MinimumStarPixelSize . </p>
+
+</div>
+</div>
+<a class="anchor" id="aaf3fb890b0f4cad59b35578d12d7ab9d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void simul::clouds::BaseWeatherRenderer::SetMinimumStarPixelSize </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the value of MinimumStarPixelSize . </p>
 
 </div>
 </div>
@@ -949,7 +985,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a class="anchor" id="a130259c62a9fb2ea74e1cec7170985c4"></a>
+<a class="anchor" id="ae6926dd292486c1c305b73b1c5245a73"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -985,6 +1021,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
           <td></td>
           <td class="paramtype"><a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *&#160;</td>
           <td class="paramname"><em>mainDepthTexture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *&#160;</td>
+          <td class="paramname"><em>cubemapTexture</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1180,6 +1222,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION SIMUL_MAJOR_VERSION=4.0.0<small>
-Tue Jul 12 2016 07:46:45</small></address>
+Wed Jul 27 2016 05:57:25</small></address>
 </body>
 </html>

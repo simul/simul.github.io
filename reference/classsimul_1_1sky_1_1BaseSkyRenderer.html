@@ -147,10 +147,10 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseSkyRenderer.html#ab8e18ef805104b6eb02264f88f4fb305">RenderPlanets</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *depthTexture, vec4 viewportTextureRegionXYWH, float exposure)</td></tr>
 <tr class="memdesc:ab8e18ef805104b6eb02264f88f4fb305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw planets in the sky, e.g. the Moon. <br /></td></tr>
 <tr class="separator:ab8e18ef805104b6eb02264f88f4fb305"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06de6b18fd09dfd85239abffd88da1ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06de6b18fd09dfd85239abffd88da1ca"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseSkyRenderer.html#a06de6b18fd09dfd85239abffd88da1ca">RenderPointStars</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *depthTexture, vec4 viewportTextureRegionXYWH, float)</td></tr>
-<tr class="memdesc:a06de6b18fd09dfd85239abffd88da1ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the stars. <br /></td></tr>
-<tr class="separator:a06de6b18fd09dfd85239abffd88da1ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9359475ed583d92b44c50938b2af5eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa9359475ed583d92b44c50938b2af5eb"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseSkyRenderer.html#aa9359475ed583d92b44c50938b2af5eb">RenderPointStars</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *depthTexture, vec4 viewportTextureRegionXYWH, float, float)</td></tr>
+<tr class="memdesc:aa9359475ed583d92b44c50938b2af5eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the stars. <br /></td></tr>
+<tr class="separator:aa9359475ed583d92b44c50938b2af5eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46af2992513241e1572a3e1539a03c23"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46af2992513241e1572a3e1539a03c23"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseSkyRenderer.html#a46af2992513241e1572a3e1539a03c23">RenderSun</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *depthTexture, vec4 viewportTextureRegionXYWH, float exposure)</td></tr>
 <tr class="memdesc:a46af2992513241e1572a3e1539a03c23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the sun. <br /></td></tr>
@@ -201,7 +201,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <li>Rendering planets (e.g. the Moon): using RenderPlanets(void *context,float exposure)</li>
 <li>Rendering the sun, using RenderSun(void *context,float exposure)</li>
 </ul>
-<p>See <a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a130259c62a9fb2ea74e1cec7170985c4">BaseWeatherRenderer::Render</a> and <a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a9711dc6925ead27e1b6a3ca226073f06">RenderMixedResolution</a>.</p>
+<p>See <a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ae6926dd292486c1c305b73b1c5245a73">BaseWeatherRenderer::Render</a> and <a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a9711dc6925ead27e1b6a3ca226073f06">RenderMixedResolution</a>.</p>
 <p>The rendering of the sky is no longer handled by <a class="el" href="classsimul_1_1sky_1_1BaseSkyRenderer.html" title="The base class for real-time sky renderers. ">BaseSkyRenderer</a> or its derived classes because the <a class="el" href="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html">atmospherics renderer</a> now does this in a single pass including both sky and atmospherics.</p>
 <p>It is the job of the <a class="el" href="classsimul_1_1sky_1_1Sky.html" title="A class that calculates the sky colour. ">Sky</a> Renderer to update the atmospherics textures to be used by the other render classes, and render celestial objects.</p>
 <p>The fade tables are stored as 3D textures - an axis for distance, one for elevation, one for altitude. The table size is given by NumElevations, NumDistances and SetNumAltitudes() of <a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html">SkyKeyframer</a>. Try to minimize the number of altitudes required, in order to maximize performance, and use SetAltitudeRangeKm on initialization to the range you will use.</p>
@@ -443,6 +443,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION SIMUL_MAJOR_VERSION=4.0.0<small>
-Tue Jul 12 2016 07:46:46</small></address>
+Wed Jul 27 2016 05:57:27</small></address>
 </body>
 </html>

@@ -42,7 +42,7 @@ url: simul::clouds::BasePrecipitationRenderer Class Reference
 </div><!--header-->
 <div class="contents">
 
-<p>The main base class for all Precipitation renderers.  
+<p>The class that renders rain and snow.  
  <a href="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="BasePrecipitationRenderer_8h_source.html">Simul/Clouds/BasePrecipitationRenderer.h</a>&gt;</code></p>
@@ -65,10 +65,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a68f0e2439a4a2beb2113f19b088c37c7">RecompileShaders</a> ()</td></tr>
 <tr class="memdesc:a68f0e2439a4a2beb2113f19b088c37c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recompile any API-dependent shaders - used internally and useful for debugging. <br /></td></tr>
 <tr class="separator:a68f0e2439a4a2beb2113f19b088c37c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a096e5e2d0bc732115f085ca945c0a1ff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a096e5e2d0bc732115f085ca945c0a1ff"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a096e5e2d0bc732115f085ca945c0a1ff">Render</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *depth_tex, float max_fade_distance_metres, vec4 viewportTextureRegionXYWH)</td></tr>
-<tr class="memdesc:a096e5e2d0bc732115f085ca945c0a1ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this to draw precipitation. <br /></td></tr>
-<tr class="separator:a096e5e2d0bc732115f085ca945c0a1ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c8e7d5ce657a2a5fa4f4b3ac59601e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c8e7d5ce657a2a5fa4f4b3ac59601e9"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a3c8e7d5ce657a2a5fa4f4b3ac59601e9">Render</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *depth_tex, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *cubemapTexture, float max_fade_distance_metres, vec4 viewportTextureRegionXYWH, RainMethod rainMethod=RainMethod::Cubemap)</td></tr>
+<tr class="memdesc:a3c8e7d5ce657a2a5fa4f4b3ac59601e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this to draw precipitation. <br /></td></tr>
+<tr class="separator:a3c8e7d5ce657a2a5fa4f4b3ac59601e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa9302e8c2db12a89f7d0418c3d70433"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa9302e8c2db12a89f7d0418c3d70433"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#aaa9302e8c2db12a89f7d0418c3d70433">RenderTextures</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, int x0, int y0, int dx, int dy)</td></tr>
 <tr class="memdesc:aaa9302e8c2db12a89f7d0418c3d70433"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show the textures onscreen for debugging. <br /></td></tr>
@@ -77,10 +77,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a92cf626af60457d8f358c321753478fe">RestoreDeviceObjects</a> (<a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html">crossplatform::RenderPlatform</a> *renderPlatform)</td></tr>
 <tr class="memdesc:a92cf626af60457d8f358c321753478fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the API-dependent objects. <br /></td></tr>
 <tr class="separator:a92cf626af60457d8f358c321753478fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9727b413d4331bac5816262dbb2d1fac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9727b413d4331bac5816262dbb2d1fac"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a9727b413d4331bac5816262dbb2d1fac">SetCubemapTexture</a> (<a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *)</td></tr>
-<tr class="memdesc:a9727b413d4331bac5816262dbb2d1fac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rain is drawn using a blurred cubemap of the surrounding scene. Set it once per frame here. <br /></td></tr>
-<tr class="separator:a9727b413d4331bac5816262dbb2d1fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f245d5da851648ffcc76d8985341057"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f245d5da851648ffcc76d8985341057"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a9f245d5da851648ffcc76d8985341057">SetRandomTexture3D</a> (<a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *texture)</td></tr>
 <tr class="memdesc:a9f245d5da851648ffcc76d8985341057"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide a random 3D texture. This is set externally so the texture can be shared. <br /></td></tr>
@@ -182,9 +178,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a55c38b653dfead1cea840c210ea99c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The main base class for all Precipitation renderers. </p>
+<div class="textblock"><p>The class that renders rain and snow. </p>
 
-<p>Definition at line <a class="el" href="BasePrecipitationRenderer_8h_source.html#l00057">57</a> of file <a class="el" href="BasePrecipitationRenderer_8h_source.html">BasePrecipitationRenderer.h</a>.</p>
+<p>Definition at line <a class="el" href="BasePrecipitationRenderer_8h_source.html#l00064">64</a> of file <a class="el" href="BasePrecipitationRenderer_8h_source.html">BasePrecipitationRenderer.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a4981258b8521c11026d4e91d0a3e23ff"></a>
 <div class="memitem">
@@ -623,6 +619,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION SIMUL_MAJOR_VERSION=4.0.0<small>
-Tue Jul 12 2016 07:46:45</small></address>
+Wed Jul 27 2016 05:57:25</small></address>
 </body>
 </html>
