@@ -149,8 +149,8 @@ Lock to Cloud| "lockRainToClouds" | Whether to make precipitation region move wi
 	void Start () 
 	{
 		tS = trueSKY.GetTrueSky();
-		uint uid = tS.GetInterpolatedCloudKeyframe (1);
-		tS.GetKeyframeValue (uid, "cloudiness"); 
+		uint uid = tS.GetInterpolatedCloudKeyframe (0);
+		float cloudiness = (float)tS.GetKeyframeValue (uid, "cloudiness"); 
 	}
 
 
