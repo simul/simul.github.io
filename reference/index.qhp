@@ -1297,7 +1297,7 @@
       <keyword name="simul::crossplatform::Texture" id="simul::crossplatform::Texture" ref="classsimul_1_1crossplatform_1_1Texture.html" />
       <keyword name="activateRenderTarget" id="simul::crossplatform::Texture::activateRenderTarget" ref="classsimul_1_1crossplatform_1_1Texture.html#acfb6f789478d38eadbde095fc23fcec4" />
       <keyword name="AsD3D11RenderTargetView" id="simul::crossplatform::Texture::AsD3D11RenderTargetView" ref="classsimul_1_1crossplatform_1_1Texture.html#aac1f5f80ac0db31ff5b3a4df9ba7d1df" />
-      <keyword name="AsD3D11ShaderResourceView" id="simul::crossplatform::Texture::AsD3D11ShaderResourceView" ref="classsimul_1_1crossplatform_1_1Texture.html#a193842ffa6a89ab94c232fa5a66132ab" />
+      <keyword name="AsD3D11ShaderResourceView" id="simul::crossplatform::Texture::AsD3D11ShaderResourceView" ref="classsimul_1_1crossplatform_1_1Texture.html#ac88c3aee50d882c723354c051476b5c8" />
       <keyword name="AsD3D11UnorderedAccessView" id="simul::crossplatform::Texture::AsD3D11UnorderedAccessView" ref="classsimul_1_1crossplatform_1_1Texture.html#acfaccb2d8ae59d2d6a328c22119bf53b" />
       <keyword name="AsGnmTexture" id="simul::crossplatform::Texture::AsGnmTexture" ref="classsimul_1_1crossplatform_1_1Texture.html#ab1374d43dc24871128c17aade8d39829" />
       <keyword name="deactivateRenderTarget" id="simul::crossplatform::Texture::deactivateRenderTarget" ref="classsimul_1_1crossplatform_1_1Texture.html#af41b0a4d1510cbab224aaebc6187f982" />
