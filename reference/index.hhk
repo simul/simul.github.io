@@ -1179,6 +1179,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudNode.html#a5b767116e53b9602b90ef1f8ca0f26bb"><param name="Name" value="simul::clouds::CellularCloudNode"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudNode.html#a5b767116e53b9602b90ef1f8ca0f26bb"><param name="Name" value="simul::clouds::FastCloudNode"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#ae54250dd1563bf605194ebb74b6f8c22"><param name="Name" value="GetOptions"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#acf43ff901a5e61c201dec0bf4abaf80b"><param name="Name" value="GetOrCreateSamplerStateByName"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#acf43ff901a5e61c201dec0bf4abaf80b"><param name="Name" value="simul::crossplatform::RenderPlatform"></OBJECT>
@@ -2570,6 +2571,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudProperties.html#a8d76e45fcdb0c23f4609068775ac3364"><param name="Name" value="simul::clouds::CloudProperties"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudNode.html#ae34eb96e6e96f553b31a2db4ff2abe6b"><param name="Name" value="simul::clouds::FastCloudNode"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a9a709b42aae3dfbb293f5dda4002d36e"><param name="Name" value="SetOptions"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Camera.html#a61525001ed6d0015649cc09b7a178b79"><param name="Name" value="SetOrientation"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseSkyRenderer.html#aa779b4a84f42eb77a358d4ee6039713a"><param name="Name" value="SetOvercastCallback"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#af29dab197c366143d24f793d333b2143"><param name="Name" value="SetOvercastEffect"></OBJECT>
@@ -3123,6 +3125,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a809df548f8117e83b15f644d4a6a2f2f"><param name="Name" value="GetAspect"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a606fffae441fdffdfae536d471ac0dfd"><param name="Name" value="GetIntensity"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a86085fd1e22014ed7accb7c93da46b58"><param name="Name" value="GetMaxParticles"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#ae54250dd1563bf605194ebb74b6f8c22"><param name="Name" value="GetOptions"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a98275cb5f4a9961443095f4636048a54"><param name="Name" value="GetPhase"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#adbc1774fb5b98b74a22619e572b86189"><param name="Name" value="GetRadiusMetres"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#af6a1db06090ef3562b8f5d2bb981d709"><param name="Name" value="GetRainDropSizeMm"></OBJECT>
@@ -3143,6 +3146,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a9b29cb9de2410009dbb9322a4c00c5c3"><param name="Name" value="SetAspect"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#ab2e52029aba96bf4aa8cce2488c0ce11"><param name="Name" value="SetIntensity"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a5514afcc0962a4ae7b7c2ca6dfffa319"><param name="Name" value="SetMaxParticles"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a9a709b42aae3dfbb293f5dda4002d36e"><param name="Name" value="SetOptions"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a60d8bb9537535c2eaec0a5719ed6b1a3"><param name="Name" value="SetPhase"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a1b0bbcfc025e940d2253659e007c533d"><param name="Name" value="SetRadiusMetres"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a55c38b653dfead1cea840c210ea99c58"><param name="Name" value="SetRainDropSizeMm"></OBJECT>

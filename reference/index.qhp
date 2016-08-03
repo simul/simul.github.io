@@ -208,8 +208,8 @@
               <section title="simul::math::VirtualVector" ref="classsimul_1_1math_1_1VirtualVector.html" />
             </section>
             <section title="simul::math::Vector3" ref="classsimul_1_1math_1_1Vector3.html" />
-            <section title="simul::dx11::VertexBuffer&lt; T &gt;" ref="structsimul_1_1dx11_1_1VertexBuffer.html" />
             <section title="Obj::VertexBuffer" ref="structObj_1_1VertexBuffer.html" />
+            <section title="simul::dx11::VertexBuffer&lt; T &gt;" ref="structsimul_1_1dx11_1_1VertexBuffer.html" />
             <section title="simul::crossplatform::Viewport" ref="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1Viewport" />
             <section title="simul::crossplatform::ViewStruct" ref="structsimul_1_1crossplatform_1_1ViewStruct.html" />
           </section>
@@ -432,6 +432,8 @@
       <keyword name="SetRadiusMetres" id="simul::clouds::BasePrecipitationRenderer::SetRadiusMetres" ref="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a1b0bbcfc025e940d2253659e007c533d" />
       <keyword name="GetRainDropSizeMm" id="simul::clouds::BasePrecipitationRenderer::GetRainDropSizeMm" ref="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#af6a1db06090ef3562b8f5d2bb981d709" />
       <keyword name="SetRainDropSizeMm" id="simul::clouds::BasePrecipitationRenderer::SetRainDropSizeMm" ref="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a55c38b653dfead1cea840c210ea99c58" />
+      <keyword name="GetOptions" id="simul::clouds::BasePrecipitationRenderer::GetOptions" ref="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#ae54250dd1563bf605194ebb74b6f8c22" />
+      <keyword name="SetOptions" id="simul::clouds::BasePrecipitationRenderer::SetOptions" ref="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a9a709b42aae3dfbb293f5dda4002d36e" />
       <keyword name="simul::clouds::BaseWeatherRenderer" id="simul::clouds::BaseWeatherRenderer" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html" />
       <keyword name="BaseWeatherRenderer" id="simul::clouds::BaseWeatherRenderer::BaseWeatherRenderer" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a913f9cdf54967ed3cab0c4dbf0e649cd" />
       <keyword name="CleanUpFramebuffers" id="simul::clouds::BaseWeatherRenderer::CleanUpFramebuffers" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a6d04322cd5166ac45d8c8a1fe161f836" />
