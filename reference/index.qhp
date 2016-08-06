@@ -121,7 +121,9 @@
             <section title="simul::crossplatform::Frustum" ref="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1Frustum" />
             <section title="simul::sky::HazeStruct" ref="structsimul_1_1sky_1_1HazeStruct.html" />
             <section title="simul::clouds::HumidityCallbackInterface" ref="classsimul_1_1clouds_1_1HumidityCallbackInterface.html" />
-            <section title="simul::sky::Input" ref="structsimul_1_1sky_1_1Input.html" />
+            <section title="simul::sky::Input" ref="structsimul_1_1sky_1_1Input.html">
+              <section title="simul::sky::ChunkInputOutput" ref="structsimul_1_1sky_1_1ChunkInputOutput.html" />
+            </section>
             <section title="simul::sky::KeyframeInterpolation" ref="structsimul_1_1sky_1_1KeyframeInterpolation.html" />
             <section title="simul::sky::KeyframeInUseState" ref="structsimul_1_1sky_1_1KeyframeInUseState.html" />
             <section title="simul::crossplatform::Layout" ref="classsimul_1_1crossplatform_1_1Layout.html" />
@@ -149,7 +151,9 @@
             <section title="simul::sky::OpticalLengthInterface" ref="classsimul_1_1sky_1_1OpticalLengthInterface.html">
               <section title="simul::sky::BaseSky" ref="classsimul_1_1sky_1_1BaseSky.html" />
             </section>
-            <section title="simul::sky::Output" ref="structsimul_1_1sky_1_1Output.html" />
+            <section title="simul::sky::Output" ref="structsimul_1_1sky_1_1Output.html">
+              <section title="simul::sky::ChunkInputOutput" ref="structsimul_1_1sky_1_1ChunkInputOutput.html" />
+            </section>
             <section title="simul::sky::OvercastCallback" ref="classsimul_1_1sky_1_1OvercastCallback.html">
               <section title="simul::clouds::CloudKeyframer" ref="classsimul_1_1clouds_1_1CloudKeyframer.html" />
             </section>
@@ -401,7 +405,7 @@
       <keyword name="New" id="simul::clouds::BasePrecipitationRenderer::New" ref="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a984eae918967c18df90f1a546d138447" />
       <keyword name="PreRenderUpdate" id="simul::clouds::BasePrecipitationRenderer::PreRenderUpdate" ref="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a63a3c2e0f00cabf69b4f4a5aebfb01c4" />
       <keyword name="RecompileShaders" id="simul::clouds::BasePrecipitationRenderer::RecompileShaders" ref="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a68f0e2439a4a2beb2113f19b088c37c7" />
-      <keyword name="Render" id="simul::clouds::BasePrecipitationRenderer::Render" ref="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a3c8e7d5ce657a2a5fa4f4b3ac59601e9" />
+      <keyword name="Render" id="simul::clouds::BasePrecipitationRenderer::Render" ref="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a05e3cba91d73b651d4d4e2831f180a57" />
       <keyword name="RenderTextures" id="simul::clouds::BasePrecipitationRenderer::RenderTextures" ref="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#aaa9302e8c2db12a89f7d0418c3d70433" />
       <keyword name="RestoreDeviceObjects" id="simul::clouds::BasePrecipitationRenderer::RestoreDeviceObjects" ref="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a92cf626af60457d8f358c321753478fe" />
       <keyword name="SetRandomTexture3D" id="simul::clouds::BasePrecipitationRenderer::SetRandomTexture3D" ref="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a9f245d5da851648ffcc76d8985341057" />
@@ -2057,6 +2061,7 @@
       <keyword name="SetPlanetDirection" id="simul::sky::BaseSkyRenderer::SetPlanetDirection" ref="classsimul_1_1sky_1_1BaseSkyRenderer.html#a1802597456c0afa73a31c2800d390f2c" />
       <keyword name="SetPlanetImage" id="simul::sky::BaseSkyRenderer::SetPlanetImage" ref="classsimul_1_1sky_1_1BaseSkyRenderer.html#acb59eeef1fd147965050521fe716386b" />
       <keyword name="SetPlanetRadius" id="simul::sky::BaseSkyRenderer::SetPlanetRadius" ref="classsimul_1_1sky_1_1BaseSkyRenderer.html#aa7a9ab7a3653589f5a4c631495e8d7af" />
+      <keyword name="simul::sky::ChunkInputOutput" id="simul::sky::ChunkInputOutput" ref="structsimul_1_1sky_1_1ChunkInputOutput.html" />
       <keyword name="simul::sky::CpuSkyGenerator" id="simul::sky::CpuSkyGenerator" ref="classsimul_1_1sky_1_1CpuSkyGenerator.html" />
       <keyword name="CanPerformGPUGeneration" id="simul::sky::CpuSkyGenerator::CanPerformGPUGeneration" ref="classsimul_1_1sky_1_1CpuSkyGenerator.html#a40c4e0891d0f2e7d3afa7300a04dacce" />
       <keyword name="GetEnabled" id="simul::sky::CpuSkyGenerator::GetEnabled" ref="classsimul_1_1sky_1_1CpuSkyGenerator.html#adaff8c886bc00dcd436c99c01209aa4b" />
@@ -2768,6 +2773,8 @@
       <file>FadeLogic.png</file>
       <file>FadeTable.png</file>
       <file>classsimul_1_1sky_1_1BaseSkyRenderer-members.html</file>
+      <file>structsimul_1_1sky_1_1ChunkInputOutput.html</file>
+      <file>structsimul_1_1sky_1_1ChunkInputOutput-members.html</file>
       <file>classsimul_1_1sky_1_1CpuSkyGenerator.html</file>
       <file>classsimul_1_1sky_1_1CpuSkyGenerator-members.html</file>
       <file>structsimul_1_1sky_1_1HazeStruct.html</file>
