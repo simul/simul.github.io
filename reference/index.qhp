@@ -504,10 +504,14 @@
       <keyword name="SetShowQueries" id="simul::clouds::BaseWeatherRenderer::SetShowQueries" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aae74e16237e36aac147e7fea1ea12cb4" />
       <keyword name="GetDepthBlending" id="simul::clouds::BaseWeatherRenderer::GetDepthBlending" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a41d44af190eb5b105cc977581b7768b9" />
       <keyword name="SetDepthBlending" id="simul::clouds::BaseWeatherRenderer::SetDepthBlending" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a21e8369093075d7b158f5bdeb309d40f" />
+      <keyword name="GetDepthSamplingPixelRange" id="simul::clouds::BaseWeatherRenderer::GetDepthSamplingPixelRange" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a53a63b01d584d5850e678ebaa091c136" />
+      <keyword name="SetDepthSamplingPixelRange" id="simul::clouds::BaseWeatherRenderer::SetDepthSamplingPixelRange" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#adf9630045c310f42393b5aaee41cb7aa" />
       <keyword name="GetUseSimulationTime" id="simul::clouds::BaseWeatherRenderer::GetUseSimulationTime" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a6b29aab3d0b31dbfc74c83a88d8c8509" />
       <keyword name="SetUseSimulationTime" id="simul::clouds::BaseWeatherRenderer::SetUseSimulationTime" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a483a9a711868cdaa2a5482493dfbe549" />
       <keyword name="GetDefaultDownscale" id="simul::clouds::BaseWeatherRenderer::GetDefaultDownscale" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#acdba32f505852e003b41e61134571ba7" />
       <keyword name="SetDefaultDownscale" id="simul::clouds::BaseWeatherRenderer::SetDefaultDownscale" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a624ec44f492aad4084b0be23db1178fb" />
+      <keyword name="GetMaximumCubemapResolution" id="simul::clouds::BaseWeatherRenderer::GetMaximumCubemapResolution" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aaaceb5a82dec0d0941f2d144405bfe14" />
+      <keyword name="SetMaximumCubemapResolution" id="simul::clouds::BaseWeatherRenderer::SetMaximumCubemapResolution" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a865ad14c3543a4ed02e185f8473c78fa" />
       <keyword name="simul::clouds::CellularCloudGrid" id="simul::clouds::CellularCloudGrid" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html" />
       <keyword name="GetCloudDensity" id="simul::clouds::CellularCloudGrid::GetCloudDensity" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#a514159d068b641d164fb858e251eeff5" />
       <keyword name="GetExtents" id="simul::clouds::CellularCloudGrid::GetExtents" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#a350f598f52380797ea0386ed28fad8b9" />

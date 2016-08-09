@@ -279,6 +279,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a41d44af190eb5b105cc977581b7768b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21e8369093075d7b158f5bdeb309d40f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a21e8369093075d7b158f5bdeb309d40f">SetDepthBlending</a> (bool value)</td></tr>
 <tr class="separator:a21e8369093075d7b158f5bdeb309d40f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Property: float DepthSamplingPixelRange</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>"Pixel range for sampling full-size depth buffer into cubemap." </p>
+</div></td></tr>
+<tr class="memitem:a53a63b01d584d5850e678ebaa091c136"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a53a63b01d584d5850e678ebaa091c136">GetDepthSamplingPixelRange</a> () const </td></tr>
+<tr class="separator:a53a63b01d584d5850e678ebaa091c136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf9630045c310f42393b5aaee41cb7aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#adf9630045c310f42393b5aaee41cb7aa">SetDepthSamplingPixelRange</a> (float value)</td></tr>
+<tr class="separator:adf9630045c310f42393b5aaee41cb7aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Property: bool UseSimulationTime</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>"Whether the effects speed is relative to simulation time. If false, it is relative to real time." </p>
 </div></td></tr>
@@ -293,6 +300,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:acdba32f505852e003b41e61134571ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a624ec44f492aad4084b0be23db1178fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a624ec44f492aad4084b0be23db1178fb">SetDefaultDownscale</a> (float value)</td></tr>
 <tr class="separator:a624ec44f492aad4084b0be23db1178fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Property: int MaximumCubemapResolution</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>"Resolution to draw full-detail cloud buffers." </p>
+</div></td></tr>
+<tr class="memitem:aaaceb5a82dec0d0941f2d144405bfe14"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aaaceb5a82dec0d0941f2d144405bfe14">GetMaximumCubemapResolution</a> () const </td></tr>
+<tr class="separator:aaaceb5a82dec0d0941f2d144405bfe14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a865ad14c3543a4ed02e185f8473c78fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a865ad14c3543a4ed02e185f8473c78fa">SetMaximumCubemapResolution</a> (int value)</td></tr>
+<tr class="separator:a865ad14c3543a4ed02e185f8473c78fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The main base class for all weather renderers, such as SimulGLWeatherRenderer, SimulWeatherRenderer (DX11) etc.</p>
@@ -894,6 +908,39 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
+<a class="anchor" id="a53a63b01d584d5850e678ebaa091c136"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float simul::clouds::BaseWeatherRenderer::GetDepthSamplingPixelRange </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the value of DepthSamplingPixelRange . </p>
+
+</div>
+</div>
+<a class="anchor" id="adf9630045c310f42393b5aaee41cb7aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void simul::clouds::BaseWeatherRenderer::SetDepthSamplingPixelRange </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the value of DepthSamplingPixelRange . </p>
+
+</div>
+</div>
 <a class="anchor" id="a6b29aab3d0b31dbfc74c83a88d8c8509"></a>
 <div class="memitem">
 <div class="memproto">
@@ -957,6 +1004,39 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
       </table>
 </div><div class="memdoc">
 <p>Set the value of DefaultDownscale . </p>
+
+</div>
+</div>
+<a class="anchor" id="aaaceb5a82dec0d0941f2d144405bfe14"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int simul::clouds::BaseWeatherRenderer::GetMaximumCubemapResolution </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the value of MaximumCubemapResolution . </p>
+
+</div>
+</div>
+<a class="anchor" id="a865ad14c3543a4ed02e185f8473c78fa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void simul::clouds::BaseWeatherRenderer::SetMaximumCubemapResolution </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the value of MaximumCubemapResolution . </p>
 
 </div>
 </div>
@@ -1222,6 +1302,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION SIMUL_MAJOR_VERSION=4.0.0<small>
-Mon Aug 8 2016 07:52:32</small></address>
+Tue Aug 9 2016 07:52:26</small></address>
 </body>
 </html>
