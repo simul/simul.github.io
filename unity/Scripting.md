@@ -74,7 +74,7 @@ For information about the layer properties you can change and the name strings n
 Sky and Cloud Keyframes
 --------
 
-Keyframes in trueSKY can be accessed, counted, modified, created and deleted via scripting. To delete a keyframe or change its properties, the Unique Identifier (Uid) will need to be known. These can be retrieved either by index (the keyframes in the sequencer, which are zero-indexed) or by retrieving the current/interpolated keyframe (not viewable in the sequencer, as they are interpolated). Uids are unique and persistent for the session, but not across saves or restarts, so they should not be stored. 
+Keyframes in trueSKY can be accessed, counted, modified, created and deleted via scripting. To delete a keyframe or change its properties, the Unique Identifier (Uid) will need to be known. These can be retrieved either by index (the keyframes in the sequencer, which are zero-indexed) or by retrieving the current/interpolated keyframe (not viewable in the sequencer, as they are interpolated). Uids are unique and persistent for the session, but not across saves or restarts, so they should not be stored. **Note**: For any functions with a layer parameter, the layer indexes are as follows: **0** for the sky, **1** for 3D Clouds and **2** for 2D Clouds.
 
 **Sky**:
 
@@ -86,14 +86,14 @@ Keyframes in trueSKY can be accessed, counted, modified, created and deleted via
 **3D Clouds**:
 
 * **GetCloudKeyframeByIndex (int index)**: Get the 3D cloud keyframe with specified index.
-* **GetInterpolatedCloudKeyframe (int layer = 0)**: Retrieve the interpolated (current) 3D cloud keyframe.
+* **GetInterpolatedCloudKeyframe (int layer = 1)**: Retrieve the interpolated (current) 3D cloud keyframe.
 * **InsertCloudKeyframe (float t)**: Insert a 3D cloud keyframe at specified time t.
 * **GetNumCloudKeyframes ()**: Returns the total number of 3D cloud keyframes.
 
 **2D Clouds**:
 
 * **GetCloud2DKeyframeByIndex (int index)**: Get the 2D cloud keyframe with specified index.
-* **GetInterpolatedCloudKeyframe (int layer = 1)**: Retrieve the interpolated (current) 2D cloud keyframe.
+* **GetInterpolatedCloudKeyframe (int layer = 2)**: Retrieve the interpolated (current) 2D cloud keyframe.
 * **Insert2DCloudKeyframe (float t)**: Insert a 2D cloud keyframe at specified time t.
 * **GetNumCloud2DKeyframes ()**: Returns the total number of 2D cloud keyframes.
 

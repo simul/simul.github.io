@@ -11,7 +11,10 @@ Getting started
 
 Installing the Plugin
 ---
-From Unreal Engine 4.9.2 onwards, binary installers are available from [https://simul.co/download](https://simul.co/truesky/download). For other versions, or if you have a version of Unreal Engine built from source, you will need to build the plugin.
+For binary installations of Unreal Engine, binary trueSKY plugin installers are available from [https://simul.co/download](https://simul.co/truesky/download). For other versions, or if you have a version of Unreal Engine built from source, you will need to build the plugin.
+
+**Important**
+The stock binary version of Unreal does not deploy trueSKY files when packaging a project. You will see a black sky unless you deploy these files. See [Deployment](/unrealengine/Deploy) for instructions.
 
 How to build it
 ---

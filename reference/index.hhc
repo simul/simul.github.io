@@ -146,10 +146,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::crossplatform::Frustum"><param name="Local" value="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1Frustum"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::sky::HazeStruct"><param name="Local" value="structsimul_1_1sky_1_1HazeStruct.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::clouds::HumidityCallbackInterface"><param name="Local" value="classsimul_1_1clouds_1_1HumidityCallbackInterface.html"><param name="ImageNumber" value="11"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::sky::Input"><param name="Local" value="structsimul_1_1sky_1_1Input.html"><param name="ImageNumber" value="1"></OBJECT>
-      <UL>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::sky::ChunkInputOutput"><param name="Local" value="structsimul_1_1sky_1_1ChunkInputOutput.html"><param name="ImageNumber" value="11"></OBJECT>
-      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::sky::Input"><param name="Local" value="structsimul_1_1sky_1_1Input.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::sky::KeyframeInterpolation"><param name="Local" value="structsimul_1_1sky_1_1KeyframeInterpolation.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::sky::KeyframeInUseState"><param name="Local" value="structsimul_1_1sky_1_1KeyframeInUseState.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::crossplatform::Layout"><param name="Local" value="classsimul_1_1crossplatform_1_1Layout.html"><param name="ImageNumber" value="11"></OBJECT>
@@ -180,10 +177,7 @@
       <UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::sky::BaseSky"><param name="Local" value="classsimul_1_1sky_1_1BaseSky.html"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::sky::Output"><param name="Local" value="structsimul_1_1sky_1_1Output.html"><param name="ImageNumber" value="1"></OBJECT>
-      <UL>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::sky::ChunkInputOutput"><param name="Local" value="structsimul_1_1sky_1_1ChunkInputOutput.html"><param name="ImageNumber" value="11"></OBJECT>
-      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::sky::Output"><param name="Local" value="structsimul_1_1sky_1_1Output.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::sky::OvercastCallback"><param name="Local" value="classsimul_1_1sky_1_1OvercastCallback.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::clouds::CloudKeyframer"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html"><param name="ImageNumber" value="11"></OBJECT>
@@ -248,8 +242,8 @@
       <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::math::VirtualVector"><param name="Local" value="classsimul_1_1math_1_1VirtualVector.html"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::math::Vector3"><param name="Local" value="classsimul_1_1math_1_1Vector3.html"><param name="ImageNumber" value="11"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="Obj::VertexBuffer"><param name="Local" value="structObj_1_1VertexBuffer.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::dx11::VertexBuffer&lt; T &gt;"><param name="Local" value="structsimul_1_1dx11_1_1VertexBuffer.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Obj::VertexBuffer"><param name="Local" value="structObj_1_1VertexBuffer.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::crossplatform::Viewport"><param name="Local" value="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1Viewport"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::crossplatform::ViewStruct"><param name="Local" value="structsimul_1_1crossplatform_1_1ViewStruct.html"><param name="ImageNumber" value="11"></OBJECT>
     </UL>
