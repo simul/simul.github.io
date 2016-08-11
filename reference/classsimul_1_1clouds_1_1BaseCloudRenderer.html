@@ -55,18 +55,6 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="classsimul_1_1clouds_1_1CloudGeometryHelper.html">CloudGeometryHelper</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#aacc0e8648488515677f8b9d722aad557">CreateCloudGeometryHelper</a> (<a class="el" href="classsimul_1_1base_1_1MemoryInterface.html">base::MemoryInterface</a> *m)</td></tr>
 <tr class="memdesc:aacc0e8648488515677f8b9d722aad557"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a new geometry helper. <br /></td></tr>
 <tr class="separator:aacc0e8648488515677f8b9d722aad557"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fbc245b21687ad5fe84d56ac149104d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6fbc245b21687ad5fe84d56ac149104d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a6fbc245b21687ad5fe84d56ac149104d">ForceRelight</a> ()</td></tr>
-<tr class="memdesc:a6fbc245b21687ad5fe84d56ac149104d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Causes all cloud textures to be relit - only needed for debugging. <br /></td></tr>
-<tr class="separator:a6fbc245b21687ad5fe84d56ac149104d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfbac98bac8758fa103d65805f372aac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abfbac98bac8758fa103d65805f372aac"></a>
-<a class="el" href="classsimul_1_1clouds_1_1CloudInterface.html">simul::clouds::CloudInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#abfbac98bac8758fa103d65805f372aac">GetCloudInterface</a> ()</td></tr>
-<tr class="memdesc:abfbac98bac8758fa103d65805f372aac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an interface to the Simul cloud object. <br /></td></tr>
-<tr class="separator:abfbac98bac8758fa103d65805f372aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a276efaabc3504b4c5d69af02cbfa7273"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a276efaabc3504b4c5d69af02cbfa7273"></a>
-virtual <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html">simul::clouds::CloudKeyframer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a276efaabc3504b4c5d69af02cbfa7273">GetCloudKeyframer</a> ()</td></tr>
-<tr class="memdesc:a276efaabc3504b4c5d69af02cbfa7273"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the keyframer object which the <a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html">BaseCloudRenderer</a> owns. <br /></td></tr>
-<tr class="separator:a276efaabc3504b4c5d69af02cbfa7273"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a276429bd40031ed46a099cc4ce66ad95"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a276429bd40031ed46a099cc4ce66ad95"></a>
 virtual const float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a276429bd40031ed46a099cc4ce66ad95">GetCloudOffset</a> () const </td></tr>
 <tr class="memdesc:a276429bd40031ed46a099cc4ce66ad95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the xyz offset of the clouds (only xy are usually relevant). <br /></td></tr>
@@ -91,14 +79,6 @@ LineQueryResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a01b5c4dc3879055f9acbd8aa0973360d">GetMaxSlices</a> (int viewport_id)</td></tr>
 <tr class="memdesc:a01b5c4dc3879055f9acbd8aa0973360d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cloud rendering detail is determined by the number of slices. See SetMaxSlices. <br /></td></tr>
 <tr class="separator:a01b5c4dc3879055f9acbd8aa0973360d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a8d9545dc9b2f5d53ccf55b74ac05ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a8d9545dc9b2f5d53ccf55b74ac05ba"></a>
-<a class="el" href="classsimul_1_1sky_1_1OvercastCallback.html">simul::sky::OvercastCallback</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a6a8d9545dc9b2f5d53ccf55b74ac05ba">GetOvercastCallback</a> () const </td></tr>
-<tr class="memdesc:a6a8d9545dc9b2f5d53ccf55b74ac05ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Between zero and one: how overcast is the sky? <br /></td></tr>
-<tr class="separator:a6a8d9545dc9b2f5d53ccf55b74ac05ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad32109338283c380028127cea0944e1b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad32109338283c380028127cea0944e1b"></a>
-<a class="el" href="classsimul_1_1sky_1_1OvercastCallback.html">simul::sky::OvercastCallback</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ad32109338283c380028127cea0944e1b">GetOvercastCallback</a> ()</td></tr>
-<tr class="memdesc:ad32109338283c380028127cea0944e1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback function that translates from daytime values to overcast settings. Used for. <br /></td></tr>
-<tr class="separator:ad32109338283c380028127cea0944e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45047ea6479c18cd83ce44a6558fdc1b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a45047ea6479c18cd83ce44a6558fdc1b"></a>
 VolumeQueryResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a45047ea6479c18cd83ce44a6558fdc1b">GetPointQuery</a> (int id, vec3 pos_km)</td></tr>
 <tr class="memdesc:a45047ea6479c18cd83ce44a6558fdc1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set, or create a cloud query. This returns the previous results of the same query. <br /></td></tr>
@@ -139,8 +119,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ad7915ee08913f21fde0410c4d0b330bf">Render</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, float exposure, <a class="el" href="namespacesimul_1_1clouds.html#a1dc56c71e4d8698ef947bc727ca3124d">TrueSkyRenderMode</a> renderMode, <a class="el" href="namespacesimul_1_1crossplatform.html#a667774e92bf043892a3f73c9baa23c68">crossplatform::NearFarPass</a> nearFarPass, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *depth_tex, const sky::ScatteringVolume *scatteringVolume, bool write_alpha, const vec4 &amp;viewportTextureRegionXYWH, const <a class="el" href="structsimul_1_1crossplatform_1_1AmortizationStruct.html">crossplatform::AmortizationStruct</a> &amp;amortizationStruct, <a class="el" href="classsimul_1_1clouds_1_1TwoResFramebuffer.html">clouds::TwoResFramebuffer</a> *fb, sky::LocalFadeTextures *localFadeTextures)</td></tr>
 <tr class="memdesc:ad7915ee08913f21fde0410c4d0b330bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Platform-dependent render function. <br /></td></tr>
 <tr class="separator:ad7915ee08913f21fde0410c4d0b330bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae50ae2aa01480689b15cef2898abe056"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ae50ae2aa01480689b15cef2898abe056">RenderCloudShadowTexture</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext)</td></tr>
-<tr class="separator:ae50ae2aa01480689b15cef2898abe056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8b5dcd6f49767eb40d0ff438321ed5b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#aa8b5dcd6f49767eb40d0ff438321ed5b">RenderCloudShadowTexture</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html">CloudKeyframer</a> *ck)</td></tr>
+<tr class="separator:aa8b5dcd6f49767eb40d0ff438321ed5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad811fdc6aaa8be177802b76e015e7dcd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad811fdc6aaa8be177802b76e015e7dcd"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ad811fdc6aaa8be177802b76e015e7dcd">RenderCrossSections</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;context, int x0, int y0, int width, int height)</td></tr>
 <tr class="memdesc:ad811fdc6aaa8be177802b76e015e7dcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show the cloud volumes onscreen by cross section. <br /></td></tr>
@@ -194,6 +174,27 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:ac16c07e95b582c6be4d8c6d3beb05a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab699daea4a0d6a7a8c87f75257ac4dc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ab699daea4a0d6a7a8c87f75257ac4dc6">SetUseSimulationTime</a> (bool value)</td></tr>
 <tr class="separator:ab699daea4a0d6a7a8c87f75257ac4dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Property: RenderingMode RaytraceMode</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>"A hint for the renderer on how to raytrace these clouds." </p>
+</div></td></tr>
+<tr class="memitem:ae336e489deb650c15872aeb4ac649ba0"><td class="memItemLeft" align="right" valign="top">RenderingMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ae336e489deb650c15872aeb4ac649ba0">GetRaytraceMode</a> () const </td></tr>
+<tr class="separator:ae336e489deb650c15872aeb4ac649ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ec5431f0c48b4c18439308aadb73a35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a9ec5431f0c48b4c18439308aadb73a35">SetRaytraceMode</a> (RenderingMode value)</td></tr>
+<tr class="separator:a9ec5431f0c48b4c18439308aadb73a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Property: float RenderGridXKm</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>"Minimum grid width for raytracing." </p>
+</div></td></tr>
+<tr class="memitem:a0b038af91c8df9f5da82c5e682365637"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a0b038af91c8df9f5da82c5e682365637">GetRenderGridXKm</a> () const </td></tr>
+<tr class="separator:a0b038af91c8df9f5da82c5e682365637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a927eb862c96b3b9742738d31ebf296bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a927eb862c96b3b9742738d31ebf296bb">SetRenderGridXKm</a> (float value)</td></tr>
+<tr class="separator:a927eb862c96b3b9742738d31ebf296bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Property: float RenderGridZKm</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>"Minimum grid height for raytracing." </p>
+</div></td></tr>
+<tr class="memitem:a80dd1ec72b3dc1b6ec3d4b00804de412"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a80dd1ec72b3dc1b6ec3d4b00804de412">GetRenderGridZKm</a> () const </td></tr>
+<tr class="separator:a80dd1ec72b3dc1b6ec3d4b00804de412"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe6d98b13fa6712408b8da7429b09f50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#afe6d98b13fa6712408b8da7429b09f50">SetRenderGridZKm</a> (float value)</td></tr>
+<tr class="separator:afe6d98b13fa6712408b8da7429b09f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -258,7 +259,7 @@ The Cloud Grid</div></div>
 <div class="caption">
 The Cloud Grid</div></div>
 
-<p>Definition at line <a class="el" href="BaseCloudRenderer_8h_source.html#l00167">167</a> of file <a class="el" href="BaseCloudRenderer_8h_source.html">BaseCloudRenderer.h</a>.</p>
+<p>Definition at line <a class="el" href="BaseCloudRenderer_8h_source.html#l00187">187</a> of file <a class="el" href="BaseCloudRenderer_8h_source.html">BaseCloudRenderer.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a813855956b7ec95c605b89656dff3f33"></a>
 <div class="memitem">
@@ -359,7 +360,106 @@ The Cloud Grid</div></div>
 
 </div>
 </div>
-<a class="anchor" id="ae50ae2aa01480689b15cef2898abe056"></a>
+<a class="anchor" id="ae336e489deb650c15872aeb4ac649ba0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RenderingMode simul::clouds::BaseCloudRenderer::GetRaytraceMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the value of RaytraceMode . </p>
+
+</div>
+</div>
+<a class="anchor" id="a9ec5431f0c48b4c18439308aadb73a35"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void simul::clouds::BaseCloudRenderer::SetRaytraceMode </td>
+          <td>(</td>
+          <td class="paramtype">RenderingMode&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the value of RaytraceMode . </p>
+
+</div>
+</div>
+<a class="anchor" id="a0b038af91c8df9f5da82c5e682365637"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float simul::clouds::BaseCloudRenderer::GetRenderGridXKm </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the value of RenderGridXKm . </p>
+
+</div>
+</div>
+<a class="anchor" id="a927eb862c96b3b9742738d31ebf296bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void simul::clouds::BaseCloudRenderer::SetRenderGridXKm </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the value of RenderGridXKm . </p>
+
+</div>
+</div>
+<a class="anchor" id="a80dd1ec72b3dc1b6ec3d4b00804de412"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float simul::clouds::BaseCloudRenderer::GetRenderGridZKm </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the value of RenderGridZKm . </p>
+
+</div>
+</div>
+<a class="anchor" id="afe6d98b13fa6712408b8da7429b09f50"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void simul::clouds::BaseCloudRenderer::SetRenderGridZKm </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the value of RenderGridZKm . </p>
+
+</div>
+</div>
+<a class="anchor" id="aa8b5dcd6f49767eb40d0ff438321ed5b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -370,8 +470,18 @@ The Cloud Grid</div></div>
           <td class="memname">virtual void simul::clouds::BaseCloudRenderer::RenderCloudShadowTexture </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;&#160;</td>
-          <td class="paramname"><em>deviceContext</em></td><td>)</td>
+          <td class="paramname"><em>deviceContext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html">CloudKeyframer</a> *&#160;</td>
+          <td class="paramname"><em>ck</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -392,6 +502,6 @@ The Cloud Grid</div></div>
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION SIMUL_MAJOR_VERSION=4.0.0<small>
-Sat Jul 30 2016 07:52:03</small></address>
+Thu Aug 11 2016 07:52:35</small></address>
 </body>
 </html>

@@ -74,7 +74,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1dx11_1_1VertexBuffer.html#aff39d40d2bdae3ebdab931adf5982f65"><param name="Name" value="apply"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1opengl_1_1Effect.html#a1ac6003d573286ce0e5761fffe5e5c0a"><param name="Name" value="Apply"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Texture.html#aac1f5f80ac0db31ff5b3a4df9ba7d1df"><param name="Name" value="AsD3D11RenderTargetView"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Texture.html#a193842ffa6a89ab94c232fa5a66132ab"><param name="Name" value="AsD3D11ShaderResourceView"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Texture.html#ac88c3aee50d882c723354c051476b5c8"><param name="Name" value="AsD3D11ShaderResourceView"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Texture.html#acfaccb2d8ae59d2d6a328c22119bf53b"><param name="Name" value="AsD3D11UnorderedAccessView"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Texture.html#ab1374d43dc24871128c17aade8d39829"><param name="Name" value="AsGnmTexture"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1sky_1_1SkyKeyframe.html#a2fef4bbc42044ca253b32fcb43e99088"><param name="Name" value="automaticMoonPosition"></OBJECT>
@@ -439,11 +439,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1math_1_1Matrix.html#ac4c196d1c68e538d76b1eca5fa396acf"><param name="Name" value="simul::math::Matrix"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1math_1_1Vector3.html#a5489bc35dcd18e93c1c7bd073714719d"><param name="Name" value="simul::math::Vector3"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a6fbc245b21687ad5fe84d56ac149104d"><param name="Name" value="ForceRelight"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a6fbc245b21687ad5fe84d56ac149104d"><param name="Name" value="simul::clouds::BaseCloudRenderer"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a6eea5900908df2f5836210fd7269ec1d"><param name="Name" value="simul::clouds::CloudKeyframer"></OBJECT>
-  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a6eea5900908df2f5836210fd7269ec1d"><param name="Name" value="ForceRelight"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1clouds_1_1CloudKeyframe.html#a9c115961ade45f1a5e73370cb34a118a"><param name="Name" value="fractal_amplitude"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1clouds_1_1CloudKeyframe.html#aaff57d0c641b4fc963d2f994edf81943"><param name="Name" value="fractal_wavelength"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a3d2ee9efadeb2bf23fbc2cfd202c534cac6b1fedf0d498e34cdfef714cf150b3b"><param name="Name" value="FRONTFACE_CLOCKWISE"></OBJECT>
@@ -553,21 +549,11 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1FastCloudNode.html#ab8f4c2214683b70267cb40e0ff5b7f99"><param name="Name" value="simul::clouds::FastCloudNode"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a162442b7256e607fc880adff7eabc7ab"><param name="Name" value="GetCloudEditDisplay"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#abfbac98bac8758fa103d65805f372aac"><param name="Name" value="GetCloudInterface"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#abfbac98bac8758fa103d65805f372aac"><param name="Name" value="simul::clouds::BaseCloudRenderer"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a22890c865002d646c5717d57d97bf0a6"><param name="Name" value="simul::clouds::CloudKeyframer"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a276efaabc3504b4c5d69af02cbfa7273"><param name="Name" value="GetCloudKeyframer"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a276efaabc3504b4c5d69af02cbfa7273"><param name="Name" value="simul::clouds::BaseCloudRenderer"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a45648cff7c3f000ddd57c13089379fac"><param name="Name" value="simul::clouds::BaseWeatherRenderer"></OBJECT>
-  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a22890c865002d646c5717d57d97bf0a6"><param name="Name" value="GetCloudInterface"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a45648cff7c3f000ddd57c13089379fac"><param name="Name" value="GetCloudKeyframer"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a276429bd40031ed46a099cc4ce66ad95"><param name="Name" value="GetCloudOffset"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#ad23cfbbef0a61420decd51e0d61f6c12"><param name="Name" value="GetCloudPointQuery"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ae7fdc21a767e56fc54f9cfe366d0eebc"><param name="Name" value="GetCloudScales"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a0f8ce790e7870940419bc129fc9b6068"><param name="Name" value="GetCloudShadowRange"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#ab7776eaf56a0e5849f9cfc2204e36df6"><param name="Name" value="GetCloudShadowStrength"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#acb085987e811d6348e6baace7900cd08"><param name="Name" value="GetCloudShadowTexture"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ad61d306ff6ec7908cee46ab61c39fe5c"><param name="Name" value="GetCloudThresholdDistanceKm"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1TrueSkyRenderer.html#afe4546fafd1659caf51beb8976f30249"><param name="Name" value="GetCloudTool"></OBJECT>
@@ -636,6 +622,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#ac3565ae13a2e298100f23e7f2c9feab6"><param name="Name" value="GetDefaultNumSlices"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseGpuCloudGenerator.html#a1b729143a1641e0104931a36eefcd710"><param name="Name" value="GetDensityGridsize"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a41d44af190eb5b105cc977581b7768b9"><param name="Name" value="GetDepthBlending"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a53a63b01d584d5850e678ebaa091c136"><param name="Name" value="GetDepthSamplingPixelRange"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1BaseFramebuffer.html#aa32c4a7e6943c5f557de2c12548ec0b8"><param name="Name" value="GetDepthTexture"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1BaseFramebuffer.html#aa32c4a7e6943c5f557de2c12548ec0b8"><param name="Name" value="simul::crossplatform::BaseFramebuffer"></OBJECT>
@@ -745,7 +732,6 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudNode.html#a8aff7f056cf4cbb016fdb740d6912d5d"><param name="Name" value="simul::clouds::FastCloudNode"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1opengl_1_1RenderPlatform.html#a7607d2df0885a12dbd1049cc6230ac23"><param name="Name" value="GetGlslangValidation"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a6af0288bccf19258839eaf8b8a4871e6"><param name="Name" value="GetGodraysSteps"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a30c1e36d179d9ef4808ac7b2744bd2c0"><param name="Name" value="GetGpuProfilingInterface"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyKeyframer.html#a0f8fdf6cb643058fbf25526a4ad0f5bc"><param name="Name" value="GetGpuSkyParameters"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudNode.html#a1f41b02937af377f155803ab7f0ec0da"><param name="Name" value="GetGrid"></OBJECT>
@@ -1007,8 +993,8 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyKeyframer.html#afbe1853fc080614a5bfa9286a2f0ed5a"><param name="Name" value="GetMaxAltitudeKm"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#ac5e6d188fd71a95400f3c764435fcf4b"><param name="Name" value="GetMaxAmortization"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudGeometryHelper.html#ae061748d42c132fe7dbd001760b5ba54"><param name="Name" value="GetMaxCloudDistance"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a6346f4aca5608553745bc31f2ebc7397"><param name="Name" value="GetMaxCloudDistanceKm"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyKeyframer.html#a7fba96d7271dff0ab95d53695addc6e7"><param name="Name" value="GetMaxDistanceKm"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aaaceb5a82dec0d0941f2d144405bfe14"><param name="Name" value="GetMaximumCubemapResolution"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1base.html#af074d8683cc9a312ed1b6edd370dce33"><param name="Name" value="GetMaximumFeatureLevel"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a6126a3864e503b33566e5e71214bf4db"><param name="Name" value="GetMaximumLocalPrecipitation"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1BaseProfilingInterface.html#a38c7a8173f246603e7a70926ed56ba2d"><param name="Name" value="GetMaxLevel"></OBJECT>
@@ -1179,6 +1165,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudNode.html#a5b767116e53b9602b90ef1f8ca0f26bb"><param name="Name" value="simul::clouds::CellularCloudNode"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudNode.html#a5b767116e53b9602b90ef1f8ca0f26bb"><param name="Name" value="simul::clouds::FastCloudNode"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#ae54250dd1563bf605194ebb74b6f8c22"><param name="Name" value="GetOptions"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#acf43ff901a5e61c201dec0bf4abaf80b"><param name="Name" value="GetOrCreateSamplerStateByName"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#acf43ff901a5e61c201dec0bf4abaf80b"><param name="Name" value="simul::crossplatform::RenderPlatform"></OBJECT>
@@ -1199,7 +1186,6 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseSky.html#a550ae6cdd82f5f707c7c72d10e29f29c"><param name="Name" value="simul::sky::BaseSky"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseSky.html#a550ae6cdd82f5f707c7c72d10e29f29c"><param name="Name" value="simul::sky::Sky"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a6a8d9545dc9b2f5d53ccf55b74ac05ba"><param name="Name" value="GetOvercastCallback"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#adcc47a44333036e40b77ea92c60cb073"><param name="Name" value="GetOvercastData"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#adcc47a44333036e40b77ea92c60cb073"><param name="Name" value="simul::clouds::CloudKeyframer"></OBJECT>
@@ -1286,6 +1272,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#aac7e68f9512afaf51024107e40f7174e"><param name="Name" value="GetRandomTexture3D"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyKeyframer.html#a1815652460ec19aafbfb1aead498d677"><param name="Name" value="GetRayleigh"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#aced0d1deeef83f93a6b4f42968091bad"><param name="Name" value="GetRaytrace"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ae336e489deb650c15872aeb4ac649ba0"><param name="Name" value="GetRaytraceMode"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyKeyframer.html#a23d4c5f72c6aa2b388086319f2ade567"><param name="Name" value="GetRecalculateAtNextFrame"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseKeyframer.html#a17890d663cea725801161eb1fdcb6127"><param name="Name" value="GetRecalculationMode"></OBJECT>
   <UL>
@@ -1293,8 +1280,9 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseKeyframer.html#a17890d663cea725801161eb1fdcb6127"><param name="Name" value="simul::sky::BaseKeyframer"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseKeyframer.html#a17890d663cea725801161eb1fdcb6127"><param name="Name" value="simul::sky::SkyKeyframer"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a0b038af91c8df9f5da82c5e682365637"><param name="Name" value="GetRenderGridXKm"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a80dd1ec72b3dc1b6ec3d4b00804de412"><param name="Name" value="GetRenderGridZKm"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudGeometryHelper.html#ad0bb69981f0d58d60b8baf62810da6b1"><param name="Name" value="GetRenderHeights"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#aaca74226b9e00a11794425b6fa161ff0"><param name="Name" value="GetRenderMode"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1MixedResolutionView.html#adc7040237fe0bfd7aba319429a131d68"><param name="Name" value="GetResolvedHDRBuffer"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a93e421f376d148376420806e123639d9"><param name="Name" value="GetReverseDepth"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Camera.html#a56f4e2dfe1c7ca7f4ccaca30cbafd5d3"><param name="Name" value="GetRotationAsQuaternion"></OBJECT>
@@ -1337,7 +1325,6 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#a253674cf00434ae4d490237965be6c36"><param name="Name" value="simul::dx11::RenderPlatform"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#a253674cf00434ae4d490237965be6c36"><param name="Name" value="simul::opengl::RenderPlatform"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a335d97405bc03c02d813e1714398d922"><param name="Name" value="GetShadowTextureSize"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseSky.html#a155557883c28a01cf80652ecffc74855"><param name="Name" value="GetShortestDistanceToAltitude"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseSky.html#a155557883c28a01cf80652ecffc74855"><param name="Name" value="simul::sky::BaseSky"></OBJECT>
@@ -2119,13 +2106,13 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ad7915ee08913f21fde0410c4d0b330bf"><param name="Name" value="Render"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ad7915ee08913f21fde0410c4d0b330bf"><param name="Name" value="simul::clouds::BaseCloudRenderer"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a3c8e7d5ce657a2a5fa4f4b3ac59601e9"><param name="Name" value="simul::clouds::BasePrecipitationRenderer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a05e3cba91d73b651d4d4e2831f180a57"><param name="Name" value="simul::clouds::BasePrecipitationRenderer"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ae6926dd292486c1c305b73b1c5245a73"><param name="Name" value="simul::clouds::BaseWeatherRenderer"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1Direct3D11CallbackInterface.html#a911a1d8ace319199efc410b3c57970e9"><param name="Name" value="simul::dx11::Direct3D11CallbackInterface"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a9429a8aa0531ceb7ed1fcd0b2c55d71e"><param name="Name" value="RenderCelestialBackground"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseSkyRenderer.html#a843e2fe6738aa970f6dff68020f7f711"><param name="Name" value="RenderCelestialDisplay"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ae50ae2aa01480689b15cef2898abe056"><param name="Name" value="RenderCloudShadowTexture"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#aa8b5dcd6f49767eb40d0ff438321ed5b"><param name="Name" value="RenderCloudShadowTexture"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ad811fdc6aaa8be177802b76e015e7dcd"><param name="Name" value="RenderCrossSections"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1TwoResFramebuffer.html#aa661fb85ac3d6b6ecf8cda103333dcf8"><param name="Name" value="RenderDepthBuffers"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseSkyRenderer.html#ad4340f78ac4c9a23bca71a8812d77ee3"><param name="Name" value="RenderFades"></OBJECT>
@@ -2286,8 +2273,6 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a540dc53f30421c2ef2953701f4d5e6d6"><param name="Name" value="SetCloudEditDisplay"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a9fee95116fe52801aea8b89c10904277"><param name="Name" value="SetCloudPlacementTexture"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#af52677281baee28bef2e44fc62a4dd31"><param name="Name" value="SetCloudShadowRange"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a346c83eac54a8f2696512d9468fe18ae"><param name="Name" value="SetCloudShadowStrength"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#ad4e0dfcde5e87fe500dedd96d8f1e092"><param name="Name" value="SetCloudShadowTexture"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#afe9deff635032e7db648aabc1778638d"><param name="Name" value="SetCloudThresholdDistanceKm"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1TrueSkyRenderer.html#ab3a29f637c529a21c4eca3cab225af60"><param name="Name" value="SetCloudTool"></OBJECT>
@@ -2323,6 +2308,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1BaseFramebuffer.html#a871c9bc605cdca779d754f0749c3bf8f"><param name="Name" value="simul::crossplatform::BaseFramebuffer"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1BaseFramebuffer.html#a871c9bc605cdca779d754f0749c3bf8f"><param name="Name" value="simul::dx11::Framebuffer"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#adf9630045c310f42393b5aaee41cb7aa"><param name="Name" value="SetDepthSamplingPixelRange"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudGeometryHelper.html#afba6580147eb136c38e3fb7ea597dfee"><param name="Name" value="SetDetailFadeStrength"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudGeometryHelper.html#a7f81c80b2a3e6c1e15f426c353470983"><param name="Name" value="SetDetailPersistence"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudGeometryHelper.html#aa425b9d767a29d38973cfa975e6b7f50"><param name="Name" value="SetDetailScaleWithAltitude"></OBJECT>
@@ -2359,7 +2345,6 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudGeometryHelper.html#aee7107117241b5c7306175c5241628f9"><param name="Name" value="SetFrustum"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1opengl_1_1RenderPlatform.html#a25242589753344f5e629b10647161fc4"><param name="Name" value="SetGlslangValidation"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a4c2a60d3209a3d9200ac3035cd66912d"><param name="Name" value="SetGodraysSteps"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesimul_1_1crossplatform.html#a97bd4c6a9b481a57974a9b2caf85e099"><param name="Name" value="SetGpuProfilingInterface"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudGridInterface.html#a35aaea06421b0fecbdad73e273bc2120"><param name="Name" value="SetGrid"></OBJECT>
   <UL>
@@ -2474,8 +2459,8 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#ae3497b74bbb3e4b0ea31f1840afefe36"><param name="Name" value="SetMatrix4x4"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyKeyframer.html#ab83be3725be774dcdcdb427c2013a1e3"><param name="Name" value="SetMaxAltitudeKm"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#a38e295eb0a14416022fc95eb074df657"><param name="Name" value="SetMaxAmortization"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#adcb35cfc45559ff62dd8edb50c3bc9fa"><param name="Name" value="SetMaxCloudDistanceKm"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyKeyframer.html#ad7851b6d2cb9fee0211f3450c275e967"><param name="Name" value="SetMaxDistanceKm"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a865ad14c3543a4ed02e185f8473c78fa"><param name="Name" value="SetMaximumCubemapResolution"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1BaseProfilingInterface.html#a61f26aa1c78d306c372160bc68c15dd9"><param name="Name" value="SetMaxLevel"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1BaseProfilingInterface.html#a61f26aa1c78d306c372160bc68c15dd9"><param name="Name" value="simul::base::BaseProfilingInterface"></OBJECT>
@@ -2570,6 +2555,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudProperties.html#a8d76e45fcdb0c23f4609068775ac3364"><param name="Name" value="simul::clouds::CloudProperties"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudNode.html#ae34eb96e6e96f553b31a2db4ff2abe6b"><param name="Name" value="simul::clouds::FastCloudNode"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a9a709b42aae3dfbb293f5dda4002d36e"><param name="Name" value="SetOptions"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Camera.html#a61525001ed6d0015649cc09b7a178b79"><param name="Name" value="SetOrientation"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseSkyRenderer.html#aa779b4a84f42eb77a358d4ee6039713a"><param name="Name" value="SetOvercastCallback"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#af29dab197c366143d24f793d333b2143"><param name="Name" value="SetOvercastEffect"></OBJECT>
@@ -2646,6 +2632,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a9f245d5da851648ffcc76d8985341057"><param name="Name" value="SetRandomTexture3D"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1SkyKeyframer.html#abaf0af44cdce6866cefb06794812491d"><param name="Name" value="SetRayleigh"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ac19ddd5a14e454a5ddb05a3dd080c054"><param name="Name" value="SetRaytrace"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a9ec5431f0c48b4c18439308aadb73a35"><param name="Name" value="SetRaytraceMode"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1Environment.html#a053be1d40e87f254abef9cf3af583052"><param name="Name" value="SetRealTime"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudNode.html#a6595d49c3d0038229d74fcb2712ad602"><param name="Name" value="SetRecalculate"></OBJECT>
   <UL>
@@ -2665,7 +2652,8 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudNode.html#a2590c5acc87876c41c0df10d29952b71"><param name="Name" value="simul::clouds::CellularCloudNode"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudNode.html#a2590c5acc87876c41c0df10d29952b71"><param name="Name" value="simul::clouds::FastCloudNode"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#aab21b1efc4b0e429b34c5ab896b2420e"><param name="Name" value="SetRenderMode"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a927eb862c96b3b9742738d31ebf296bb"><param name="Name" value="SetRenderGridXKm"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#afe6d98b13fa6712408b8da7429b09f50"><param name="Name" value="SetRenderGridZKm"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#a5fbb83f252f6d633f25af4b5960dca11"><param name="Name" value="SetRenderState"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#a5fbb83f252f6d633f25af4b5960dca11"><param name="Name" value="simul::crossplatform::RenderPlatform"></OBJECT>
@@ -2709,7 +2697,6 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#a694cd56b43c784972ddcf70d0b187b89"><param name="Name" value="simul::dx11::RenderPlatform"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#a694cd56b43c784972ddcf70d0b187b89"><param name="Name" value="simul::opengl::RenderPlatform"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a554ee98192d754fcd2a21349913779f7"><param name="Name" value="SetShadowTextureSize"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a5a5ddc551c8eb98bf189485f985c28e7"><param name="Name" value="SetShouldRenderCloudShadowTexture"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ab3608b8026b9eb4951a2909166c28ac3"><param name="Name" value="SetShow2DCloudTextures"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a84e2febc393b3e1eb2ffcd2f3a0b4fd4"><param name="Name" value="SetShowAtmospherics"></OBJECT>
@@ -3068,20 +3055,19 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a1bb1168c813b2239a2b254288d5b1fec"><param name="Name" value="BaseCloudRenderer"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#aacc0e8648488515677f8b9d722aad557"><param name="Name" value="CreateCloudGeometryHelper"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a35b5d9ee17c0a0f1287332120df258ca"><param name="Name" value="EnsureEffectsAreBuilt"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a6fbc245b21687ad5fe84d56ac149104d"><param name="Name" value="ForceRelight"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#abfbac98bac8758fa103d65805f372aac"><param name="Name" value="GetCloudInterface"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a276efaabc3504b4c5d69af02cbfa7273"><param name="Name" value="GetCloudKeyframer"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a276429bd40031ed46a099cc4ce66ad95"><param name="Name" value="GetCloudOffset"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ae7fdc21a767e56fc54f9cfe366d0eebc"><param name="Name" value="GetCloudScales"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#acb085987e811d6348e6baace7900cd08"><param name="Name" value="GetCloudShadowTexture"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a2d5d3f4130142ce4de4fe06e0e882072"><param name="Name" value="GetDebugText"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a72732e1b2ae7d87944c11569858f98ab"><param name="Name" value="GetLineQuery"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a01b5c4dc3879055f9acbd8aa0973360d"><param name="Name" value="GetMaxSlices"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a6a8d9545dc9b2f5d53ccf55b74ac05ba"><param name="Name" value="GetOvercastCallback"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a45047ea6479c18cd83ce44a6558fdc1b"><param name="Name" value="GetPointQuery"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#aced10a020bcc3b2df715c2006349dd04"><param name="Name" value="GetQueryIdForViewId"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#aac7e68f9512afaf51024107e40f7174e"><param name="Name" value="GetRandomTexture3D"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#aced0d1deeef83f93a6b4f42968091bad"><param name="Name" value="GetRaytrace"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ae336e489deb650c15872aeb4ac649ba0"><param name="Name" value="GetRaytraceMode"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a0b038af91c8df9f5da82c5e682365637"><param name="Name" value="GetRenderGridXKm"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a80dd1ec72b3dc1b6ec3d4b00804de412"><param name="Name" value="GetRenderGridZKm"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a813855956b7ec95c605b89656dff3f33"><param name="Name" value="GetShouldRenderCloudShadowTexture"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a15147fd3431de3ea3d3f92b11f8f33c3"><param name="Name" value="GetSunOcclusion"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ac16c07e95b582c6be4d8c6d3beb05a0b"><param name="Name" value="GetUseSimulationTime"></OBJECT>
@@ -3090,7 +3076,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ae15f20c0ff731ccf3cccb85a9eb4734c"><param name="Name" value="PreRenderUpdate"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a689bba2dd0ae007cb327f679e4e37f8f"><param name="Name" value="RecompileShaders"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ad7915ee08913f21fde0410c4d0b330bf"><param name="Name" value="Render"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ae50ae2aa01480689b15cef2898abe056"><param name="Name" value="RenderCloudShadowTexture"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#aa8b5dcd6f49767eb40d0ff438321ed5b"><param name="Name" value="RenderCloudShadowTexture"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ad811fdc6aaa8be177802b76e015e7dcd"><param name="Name" value="RenderCrossSections"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a7b1e3a45b4b786862bb191cf96f0af2d"><param name="Name" value="RenderQueries"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ab05d5c9b74fdd17790ecccb1d63c7c3e"><param name="Name" value="RestoreDeviceObjects"></OBJECT>
@@ -3099,6 +3085,9 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a722ec54a157bc573113c5089c0f1fa31"><param name="Name" value="SetNoiseTextureProperties"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ae5b02d56cb835170b0cce4e244934677"><param name="Name" value="SetPointLight"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ac19ddd5a14e454a5ddb05a3dd080c054"><param name="Name" value="SetRaytrace"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a9ec5431f0c48b4c18439308aadb73a35"><param name="Name" value="SetRaytraceMode"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a927eb862c96b3b9742738d31ebf296bb"><param name="Name" value="SetRenderGridXKm"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#afe6d98b13fa6712408b8da7429b09f50"><param name="Name" value="SetRenderGridZKm"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a5a5ddc551c8eb98bf189485f985c28e7"><param name="Name" value="SetShouldRenderCloudShadowTexture"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a9d0fe883082d0360b0366c63bc363b6f"><param name="Name" value="SetSkyInterface"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ab699daea4a0d6a7a8c87f75257ac4dc6"><param name="Name" value="SetUseSimulationTime"></OBJECT>
@@ -3123,6 +3112,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a809df548f8117e83b15f644d4a6a2f2f"><param name="Name" value="GetAspect"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a606fffae441fdffdfae536d471ac0dfd"><param name="Name" value="GetIntensity"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a86085fd1e22014ed7accb7c93da46b58"><param name="Name" value="GetMaxParticles"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#ae54250dd1563bf605194ebb74b6f8c22"><param name="Name" value="GetOptions"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a98275cb5f4a9961443095f4636048a54"><param name="Name" value="GetPhase"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#adbc1774fb5b98b74a22619e572b86189"><param name="Name" value="GetRadiusMetres"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#af6a1db06090ef3562b8f5d2bb981d709"><param name="Name" value="GetRainDropSizeMm"></OBJECT>
@@ -3137,12 +3127,13 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a984eae918967c18df90f1a546d138447"><param name="Name" value="New"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a63a3c2e0f00cabf69b4f4a5aebfb01c4"><param name="Name" value="PreRenderUpdate"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a68f0e2439a4a2beb2113f19b088c37c7"><param name="Name" value="RecompileShaders"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a3c8e7d5ce657a2a5fa4f4b3ac59601e9"><param name="Name" value="Render"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a05e3cba91d73b651d4d4e2831f180a57"><param name="Name" value="Render"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#aaa9302e8c2db12a89f7d0418c3d70433"><param name="Name" value="RenderTextures"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a92cf626af60457d8f358c321753478fe"><param name="Name" value="RestoreDeviceObjects"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a9b29cb9de2410009dbb9322a4c00c5c3"><param name="Name" value="SetAspect"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#ab2e52029aba96bf4aa8cce2488c0ce11"><param name="Name" value="SetIntensity"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a5514afcc0962a4ae7b7c2ca6dfffa319"><param name="Name" value="SetMaxParticles"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a9a709b42aae3dfbb293f5dda4002d36e"><param name="Name" value="SetOptions"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a60d8bb9537535c2eaec0a5719ed6b1a3"><param name="Name" value="SetPhase"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a1b0bbcfc025e940d2253659e007c533d"><param name="Name" value="SetRadiusMetres"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a55c38b653dfead1cea840c210ea99c58"><param name="Name" value="SetRainDropSizeMm"></OBJECT>
@@ -3174,11 +3165,13 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ad61d306ff6ec7908cee46ab61c39fe5c"><param name="Name" value="GetCloudThresholdDistanceKm"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#acdba32f505852e003b41e61134571ba7"><param name="Name" value="GetDefaultDownscale"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a41d44af190eb5b105cc977581b7768b9"><param name="Name" value="GetDepthBlending"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a53a63b01d584d5850e678ebaa091c136"><param name="Name" value="GetDepthSamplingPixelRange"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ae2485b5d0f5a08a8076632c41d407acf"><param name="Name" value="GetFogAmbientBrightness"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ab731cb21f53d3308e556c6441b4c16fe"><param name="Name" value="GetFogLightBrightness"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aee13dd1ce6b2c681f11d48c17e941eab"><param name="Name" value="GetHorizonColour"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ac1e217605c37c16291ab795b878e3a3d"><param name="Name" value="GetLightColour"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ab7454e08246d0d94b8260272c3574dd6"><param name="Name" value="GetLightningRenderer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aaaceb5a82dec0d0941f2d144405bfe14"><param name="Name" value="GetMaximumCubemapResolution"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ae5a2d8ee0c0c5e8a9f9390f19171cd79"><param name="Name" value="GetMinimumStarPixelSize"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#af682c7b4eb1a77d52305aada30b8a91a"><param name="Name" value="GetShow2DCloudTextures"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a8e0f0efa692b44b46caed4f4880d9392"><param name="Name" value="GetShowAtmospherics"></OBJECT>
@@ -3212,8 +3205,10 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a31b8c658eb917996da998ae44fe7c5ed"><param name="Name" value="SetCubemapTransform"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a624ec44f492aad4084b0be23db1178fb"><param name="Name" value="SetDefaultDownscale"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a21e8369093075d7b158f5bdeb309d40f"><param name="Name" value="SetDepthBlending"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#adf9630045c310f42393b5aaee41cb7aa"><param name="Name" value="SetDepthSamplingPixelRange"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aadb4fcf08556697d88fe19a2bf795223"><param name="Name" value="SetFogAmbientBrightness"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ace42837c26a94ae18332c7eee8b31dc2"><param name="Name" value="SetFogLightBrightness"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a865ad14c3543a4ed02e185f8473c78fa"><param name="Name" value="SetMaximumCubemapResolution"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aaf3fb890b0f4cad59b35578d12d7ab9d"><param name="Name" value="SetMinimumStarPixelSize"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ab3608b8026b9eb4951a2909166c28ac3"><param name="Name" value="SetShow2DCloudTextures"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a84e2febc393b3e1eb2ffcd2f3a0b4fd4"><param name="Name" value="SetShowAtmospherics"></OBJECT>
@@ -3536,8 +3531,6 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a6eea5900908df2f5836210fd7269ec1d"><param name="Name" value="ForceRelight"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a485eb9589bf63a7b5a536d87c6de07ab"><param name="Name" value="GetAllModifiableKeyframes"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a22890c865002d646c5717d57d97bf0a6"><param name="Name" value="GetCloudInterface"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a0f8ce790e7870940419bc129fc9b6068"><param name="Name" value="GetCloudShadowRange"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#ab7776eaf56a0e5849f9cfc2204e36df6"><param name="Name" value="GetCloudShadowStrength"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a7cb5ae7caa7e1ce9d5f3fcd05c38600a"><param name="Name" value="GetCurrentSubdivision"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#ac1207f34fb3216473ee1ce546c3b50f5"><param name="Name" value="GetDayLoop"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a71f5d40f8e8b38e097312e637ef78c0b"><param name="Name" value="GetDefaultFloat"></OBJECT>
@@ -3550,7 +3543,6 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a6fdbdad892bcbd9e90e7e0a834263b99"><param name="Name" value="GetExplicitOffsets"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a6fabe17be9df67fabb1730073dab11b7"><param name="Name" value="GetExportLightningStrikes"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a76083fcf98c0a8924cad082ec89aa5dc"><param name="Name" value="GetFloat"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a6af0288bccf19258839eaf8b8a4871e6"><param name="Name" value="GetGodraysSteps"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a1f1e72d11d06cd9a532a87ff296ec547"><param name="Name" value="GetGridOrigin"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#ae93b47be64d2465341f5a7d9d77ba9b4"><param name="Name" value="GetInitialOffset"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a111c6002979fe6450c35d91b753559ce"><param name="Name" value="GetInt"></OBJECT>
@@ -3566,7 +3558,6 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#ac91088ae2f34e651869bc1aef1d1206a"><param name="Name" value="GetLoopRange"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a3971f737379804db154facbc0d37377d"><param name="Name" value="GetLoopStart"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a26fda132641496704bd04dc1bca3bb6f"><param name="Name" value="GetMake2DTextures"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a6346f4aca5608553745bc31f2ebc7397"><param name="Name" value="GetMaxCloudDistanceKm"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a6126a3864e503b33566e5e71214bf4db"><param name="Name" value="GetMaximumLocalPrecipitation"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#ada5a012b73e057b93387ab47f073d592"><param name="Name" value="GetMaxPrecipitationParticles"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a17717ef088167f7aea32af02eaf5653d"><param name="Name" value="GetNextModifiableKeyframe"></OBJECT>
@@ -3584,8 +3575,6 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a0d6b0e00d870a5c6747f488c9a4d8a0c"><param name="Name" value="GetRainDropSizeMm"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a9d128f56409fcd322149369fdf337e6f"><param name="Name" value="GetRainFallSpeedMS"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a17890d663cea725801161eb1fdcb6127"><param name="Name" value="GetRecalculationMode"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#aaca74226b9e00a11794425b6fa161ff0"><param name="Name" value="GetRenderMode"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a335d97405bc03c02d813e1714398d922"><param name="Name" value="GetShadowTextureSize"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a1e35e6ddb55991f19d8adb05f87fa26c"><param name="Name" value="GetStorm"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a0ac4d037228ca36e39899105fdd6fb63"><param name="Name" value="GetStormByUniqueId"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#ae5621eefb0318d22d72475abc721b985"><param name="Name" value="GetSubdivisionChecksum"></OBJECT>
@@ -3610,8 +3599,6 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a92e346af59d504bf33aab899204f5b1e"><param name="Name" value="Reset"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a52d0e06cf949edfa4a9e1fa38ecd41d1"><param name="Name" value="Save"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a97992a3d49ce58a1d30219bf040e95b8"><param name="Name" value="SaveToText"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#af52677281baee28bef2e44fc62a4dd31"><param name="Name" value="SetCloudShadowRange"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a346c83eac54a8f2696512d9468fe18ae"><param name="Name" value="SetCloudShadowStrength"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a43fa77a3a5917d2680ad36efe3c13725"><param name="Name" value="SetDayLoop"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a48d4110392314f6a6a83a36d615b6067"><param name="Name" value="SetDefaultNumSlices"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a3fe501284a54f4824e8ab642ad045f85"><param name="Name" value="SetEdgeNoiseFrequency"></OBJECT>
@@ -3620,12 +3607,10 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#af2a1a33993bee2dea560d2966b438a90"><param name="Name" value="SetEdgeNoiseTextureSize"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a0385666aa19568d7544c73c53bc9f01a"><param name="Name" value="SetExplicitOffsets"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#ac7ec3afbbbe5a4d63e1af2e46692de06"><param name="Name" value="SetFloat"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a4c2a60d3209a3d9200ac3035cd66912d"><param name="Name" value="SetGodraysSteps"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a2946f79b9d16bccec12e494032ced68e"><param name="Name" value="SetLoopRange"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a5be2729743645794748f7e8e645ba9f0"><param name="Name" value="SetLoopStart"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a6527acb76cb135693cbbb76f34019a4f"><param name="Name" value="SetLoopWind"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a981f12b891ac17ae39382df5c2514009"><param name="Name" value="SetMake2DTextures"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#adcb35cfc45559ff62dd8edb50c3bc9fa"><param name="Name" value="SetMaxCloudDistanceKm"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a33e4ff72c8ce6c69e238f70a7a608142"><param name="Name" value="SetMaxPrecipitationParticles"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a5595c0a295acfcbd6a30b2bfbf70dfb3"><param name="Name" value="SetNumSubdivisions"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#af29dab197c366143d24f793d333b2143"><param name="Name" value="SetOvercastEffect"></OBJECT>
@@ -3638,8 +3623,6 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a6cd207faa8ebe061cd6492ffa2ce4464"><param name="Name" value="SetRainFallSpeedMS"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#abfdad75a4c1fb7fa97b2d31b3b50ea47"><param name="Name" value="SetRecalculate"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#ad41e0ecaa197ffae317e2458db0a228f"><param name="Name" value="SetRecalculationMode"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#aab21b1efc4b0e429b34c5ab896b2420e"><param name="Name" value="SetRenderMode"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a554ee98192d754fcd2a21349913779f7"><param name="Name" value="SetShadowTextureSize"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a9f6da9b9dd7e0ba46af29f69882fa2b8"><param name="Name" value="SetSkyInterface"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a6edb38e2f5ee4c453b5c5021719e2ef8"><param name="Name" value="SetSubdivisionMethod"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a1bb31800e642908d29cec87fcc701260"><param name="Name" value="SetSubdivisionRealTimeInterval"></OBJECT>
@@ -4049,7 +4032,7 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Texture.html#acfb6f789478d38eadbde095fc23fcec4"><param name="Name" value="activateRenderTarget"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Texture.html#aac1f5f80ac0db31ff5b3a4df9ba7d1df"><param name="Name" value="AsD3D11RenderTargetView"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Texture.html#a193842ffa6a89ab94c232fa5a66132ab"><param name="Name" value="AsD3D11ShaderResourceView"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Texture.html#ac88c3aee50d882c723354c051476b5c8"><param name="Name" value="AsD3D11ShaderResourceView"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Texture.html#acfaccb2d8ae59d2d6a328c22119bf53b"><param name="Name" value="AsD3D11UnorderedAccessView"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Texture.html#ab1374d43dc24871128c17aade8d39829"><param name="Name" value="AsGnmTexture"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Texture.html#af41b0a4d1510cbab224aaebc6187f982"><param name="Name" value="deactivateRenderTarget"></OBJECT>
@@ -4866,6 +4849,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseSkyRenderer.html#acb59eeef1fd147965050521fe716386b"><param name="Name" value="SetPlanetImage"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseSkyRenderer.html#aa7a9ab7a3653589f5a4c631495e8d7af"><param name="Name" value="SetPlanetRadius"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1sky_1_1ChunkInputOutput.html"><param name="Name" value="simul::sky::ChunkInputOutput"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1CpuSkyGenerator.html"><param name="Name" value="simul::sky::CpuSkyGenerator"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1CpuSkyGenerator.html#a40c4e0891d0f2e7d3afa7300a04dacce"><param name="Name" value="CanPerformGPUGeneration"></OBJECT>

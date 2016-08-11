@@ -131,12 +131,6 @@ url: Class Members
 <li>SetCloudPlacementTexture()
 : <a class="el" href="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a9fee95116fe52801aea8b89c10904277">simul::plugin::PluginTrueSkyRenderer</a>
 </li>
-<li>SetCloudShadowRange()
-: <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#af52677281baee28bef2e44fc62a4dd31">simul::clouds::CloudKeyframer</a>
-</li>
-<li>SetCloudShadowStrength()
-: <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#a346c83eac54a8f2696512d9468fe18ae">simul::clouds::CloudKeyframer</a>
-</li>
 <li>SetCloudShadowTexture()
 : <a class="el" href="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#ad4e0dfcde5e87fe500dedd96d8f1e092">simul::sky::BaseAtmosphericsRenderer</a>
 </li>
@@ -174,6 +168,9 @@ url: Class Members
 </li>
 <li>SetDepthFormat()
 : <a class="el" href="classsimul_1_1crossplatform_1_1BaseFramebuffer.html#a871c9bc605cdca779d754f0749c3bf8f">simul::crossplatform::BaseFramebuffer</a>
+</li>
+<li>SetDepthSamplingPixelRange()
+: <a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#adf9630045c310f42393b5aaee41cb7aa">simul::clouds::BaseWeatherRenderer</a>
 </li>
 <li>SetDetailFadeStrength()
 : <a class="el" href="classsimul_1_1clouds_1_1CloudGeometryHelper.html#afba6580147eb136c38e3fb7ea597dfee">simul::clouds::CloudGeometryHelper</a>
@@ -244,9 +241,6 @@ url: Class Members
 </li>
 <li>SetGlslangValidation()
 : <a class="el" href="classsimul_1_1opengl_1_1RenderPlatform.html#a25242589753344f5e629b10647161fc4">simul::opengl::RenderPlatform</a>
-</li>
-<li>SetGodraysSteps()
-: <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#a4c2a60d3209a3d9200ac3035cd66912d">simul::clouds::CloudKeyframer</a>
 </li>
 <li>SetGrid()
 : <a class="el" href="classsimul_1_1clouds_1_1CellularCloudNode.html#aeef4d82a72f77344a41e7e040061a499">simul::clouds::CellularCloudNode</a>
@@ -340,11 +334,11 @@ url: Class Members
 <li>SetMaxAmortization()
 : <a class="el" href="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#a38e295eb0a14416022fc95eb074df657">simul::sky::BaseAtmosphericsRenderer</a>
 </li>
-<li>SetMaxCloudDistanceKm()
-: <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#adcb35cfc45559ff62dd8edb50c3bc9fa">simul::clouds::CloudKeyframer</a>
-</li>
 <li>SetMaxDistanceKm()
 : <a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#ad7851b6d2cb9fee0211f3450c275e967">simul::sky::SkyKeyframer</a>
+</li>
+<li>SetMaximumCubemapResolution()
+: <a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a865ad14c3543a4ed02e185f8473c78fa">simul::clouds::BaseWeatherRenderer</a>
 </li>
 <li>SetMaxLevel()
 : <a class="el" href="classsimul_1_1base_1_1BaseProfilingInterface.html#a61f26aa1c78d306c372160bc68c15dd9">simul::base::BaseProfilingInterface</a>
@@ -434,6 +428,9 @@ url: Class Members
 <li>SetOpticalDensity()
 : <a class="el" href="classsimul_1_1clouds_1_1CellularCloudNode.html#ae34eb96e6e96f553b31a2db4ff2abe6b">simul::clouds::CellularCloudNode</a>
 , <a class="el" href="classsimul_1_1clouds_1_1CloudProperties.html#a8d76e45fcdb0c23f4609068775ac3364">simul::clouds::CloudProperties</a>
+</li>
+<li>SetOptions()
+: <a class="el" href="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a9a709b42aae3dfbb293f5dda4002d36e">simul::clouds::BasePrecipitationRenderer</a>
 </li>
 <li>SetOrientation()
 : <a class="el" href="classsimul_1_1crossplatform_1_1Camera.html#a61525001ed6d0015649cc09b7a178b79">simul::crossplatform::Camera</a>
@@ -526,6 +523,9 @@ url: Class Members
 <li>SetRaytrace()
 : <a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ac19ddd5a14e454a5ddb05a3dd080c054">simul::clouds::BaseCloudRenderer</a>
 </li>
+<li>SetRaytraceMode()
+: <a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a9ec5431f0c48b4c18439308aadb73a35">simul::clouds::BaseCloudRenderer</a>
+</li>
 <li>SetRealTime()
 : <a class="el" href="classsimul_1_1clouds_1_1Environment.html#a053be1d40e87f254abef9cf3af583052">simul::clouds::Environment</a>
 </li>
@@ -541,8 +541,11 @@ url: Class Members
 <li>SetRelight()
 : <a class="el" href="classsimul_1_1clouds_1_1CellularCloudNode.html#a2590c5acc87876c41c0df10d29952b71">simul::clouds::CellularCloudNode</a>
 </li>
-<li>SetRenderMode()
-: <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#aab21b1efc4b0e429b34c5ab896b2420e">simul::clouds::CloudKeyframer</a>
+<li>SetRenderGridXKm()
+: <a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a927eb862c96b3b9742738d31ebf296bb">simul::clouds::BaseCloudRenderer</a>
+</li>
+<li>SetRenderGridZKm()
+: <a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#afe6d98b13fa6712408b8da7429b09f50">simul::clouds::BaseCloudRenderer</a>
 </li>
 <li>SetRenderState()
 : <a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#a5fbb83f252f6d633f25af4b5960dca11">simul::crossplatform::RenderPlatform</a>
@@ -574,9 +577,6 @@ url: Class Members
 </li>
 <li>SetShaderPathsUtf8()
 : <a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#a694cd56b43c784972ddcf70d0b187b89">simul::crossplatform::RenderPlatform</a>
-</li>
-<li>SetShadowTextureSize()
-: <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#a554ee98192d754fcd2a21349913779f7">simul::clouds::CloudKeyframer</a>
 </li>
 <li>SetShouldRenderCloudShadowTexture()
 : <a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a5a5ddc551c8eb98bf189485f985c28e7">simul::clouds::BaseCloudRenderer</a>
@@ -889,6 +889,6 @@ url: Class Members
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION SIMUL_MAJOR_VERSION=4.0.0<small>
-Sat Jul 30 2016 07:52:06</small></address>
+Thu Aug 11 2016 07:52:39</small></address>
 </body>
 </html>
