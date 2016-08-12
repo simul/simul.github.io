@@ -383,12 +383,6 @@
       <keyword name="SetRaytrace" id="simul::clouds::BaseCloudRenderer::SetRaytrace" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ac19ddd5a14e454a5ddb05a3dd080c054" />
       <keyword name="GetUseSimulationTime" id="simul::clouds::BaseCloudRenderer::GetUseSimulationTime" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ac16c07e95b582c6be4d8c6d3beb05a0b" />
       <keyword name="SetUseSimulationTime" id="simul::clouds::BaseCloudRenderer::SetUseSimulationTime" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ab699daea4a0d6a7a8c87f75257ac4dc6" />
-      <keyword name="GetRaytraceMode" id="simul::clouds::BaseCloudRenderer::GetRaytraceMode" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ae336e489deb650c15872aeb4ac649ba0" />
-      <keyword name="SetRaytraceMode" id="simul::clouds::BaseCloudRenderer::SetRaytraceMode" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a9ec5431f0c48b4c18439308aadb73a35" />
-      <keyword name="GetRenderGridXKm" id="simul::clouds::BaseCloudRenderer::GetRenderGridXKm" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a0b038af91c8df9f5da82c5e682365637" />
-      <keyword name="SetRenderGridXKm" id="simul::clouds::BaseCloudRenderer::SetRenderGridXKm" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a927eb862c96b3b9742738d31ebf296bb" />
-      <keyword name="GetRenderGridZKm" id="simul::clouds::BaseCloudRenderer::GetRenderGridZKm" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a80dd1ec72b3dc1b6ec3d4b00804de412" />
-      <keyword name="SetRenderGridZKm" id="simul::clouds::BaseCloudRenderer::SetRenderGridZKm" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#afe6d98b13fa6712408b8da7429b09f50" />
       <keyword name="EnsureEffectsAreBuilt" id="simul::clouds::BaseCloudRenderer::EnsureEffectsAreBuilt" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a35b5d9ee17c0a0f1287332120df258ca" />
       <keyword name="simul::clouds::BaseGpuCloudGenerator" id="simul::clouds::BaseGpuCloudGenerator" ref="classsimul_1_1clouds_1_1BaseGpuCloudGenerator.html" />
       <keyword name="CanPerformGPULighting" id="simul::clouds::BaseGpuCloudGenerator::CanPerformGPULighting" ref="classsimul_1_1clouds_1_1BaseGpuCloudGenerator.html#a71d5ab53aa76f521c5638023f78d5f49" />
@@ -511,8 +505,6 @@
       <keyword name="SetUseSimulationTime" id="simul::clouds::BaseWeatherRenderer::SetUseSimulationTime" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a483a9a711868cdaa2a5482493dfbe549" />
       <keyword name="GetDefaultDownscale" id="simul::clouds::BaseWeatherRenderer::GetDefaultDownscale" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#acdba32f505852e003b41e61134571ba7" />
       <keyword name="SetDefaultDownscale" id="simul::clouds::BaseWeatherRenderer::SetDefaultDownscale" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a624ec44f492aad4084b0be23db1178fb" />
-      <keyword name="GetMaximumCubemapResolution" id="simul::clouds::BaseWeatherRenderer::GetMaximumCubemapResolution" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aaaceb5a82dec0d0941f2d144405bfe14" />
-      <keyword name="SetMaximumCubemapResolution" id="simul::clouds::BaseWeatherRenderer::SetMaximumCubemapResolution" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a865ad14c3543a4ed02e185f8473c78fa" />
       <keyword name="simul::clouds::CellularCloudGrid" id="simul::clouds::CellularCloudGrid" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html" />
       <keyword name="GetCloudDensity" id="simul::clouds::CellularCloudGrid::GetCloudDensity" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#a514159d068b641d164fb858e251eeff5" />
       <keyword name="GetExtents" id="simul::clouds::CellularCloudGrid::GetExtents" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#a350f598f52380797ea0386ed28fad8b9" />
