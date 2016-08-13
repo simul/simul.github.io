@@ -842,13 +842,6 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#adc670526175f818bd251cc510031911c"><param name="Name" value="GetInterpolatedKeyframe"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#a3ea66f629272af3262bf909fbf6614d2"><param name="Name" value="GetInterpolation"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html#aceb561b2543f910aafa98daa5f7254b6"><param name="Name" value="GetInterpolationChecksum"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudProperties.html#ae70869b5bef4b7cb1f89a31936b5af8d"><param name="Name" value="GetInverseScales"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudProperties.html#ae70869b5bef4b7cb1f89a31936b5af8d"><param name="Name" value="simul::clouds::CellularCloudGrid"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudNode.html#a4a11114fb1bd73f1cf396da3083e17cf"><param name="Name" value="simul::clouds::CellularCloudNode"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudProperties.html#ae70869b5bef4b7cb1f89a31936b5af8d"><param name="Name" value="simul::clouds::CloudProperties"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudNode.html#a4a11114fb1bd73f1cf396da3083e17cf"><param name="Name" value="simul::clouds::FastCloudNode"></OBJECT>
-  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a239fe2e6772d8220870a66d29ee2a07a"><param name="Name" value="GetIsotropicColourLossFactor"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a239fe2e6772d8220870a66d29ee2a07a"><param name="Name" value="simul::sky::AtmosphericScatteringInterface"></OBJECT>
@@ -3218,7 +3211,6 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudGrid.html#aed42f5f9de967f4192f19ddf3518c328"><param name="Name" value="GetGridHeight"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudGrid.html#a3822ff2555bbbf7c67d4bc7f00468851"><param name="Name" value="GetGridLength"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudGrid.html#a6724c4056ef79594b899a85c191cf018"><param name="Name" value="GetGridWidth"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudGrid.html#ae70869b5bef4b7cb1f89a31936b5af8d"><param name="Name" value="GetInverseScales"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudGrid.html#ac465d03675ee573ba3113b0cfb8d2416"><param name="Name" value="GetLicense"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudGrid.html#a880b7ce6c4ca09f82edfacf61c8b3f4e"><param name="Name" value="GetLightDetail"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudGrid.html#afba4ac0eb5ab452c41963a25607d2996"><param name="Name" value="GetMemoryUsage"></OBJECT>
@@ -3283,7 +3275,6 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudNode.html#a3822ff2555bbbf7c67d4bc7f00468851"><param name="Name" value="GetGridLength"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudNode.html#acfb83a6c546c90c327e15d57621d3234"><param name="Name" value="GetGridValues"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudNode.html#a6724c4056ef79594b899a85c191cf018"><param name="Name" value="GetGridWidth"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudNode.html#a4a11114fb1bd73f1cf396da3083e17cf"><param name="Name" value="GetInverseScales"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudNode.html#ac465d03675ee573ba3113b0cfb8d2416"><param name="Name" value="GetLicense"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudNode.html#af97dd76948af42c373fa00b985e3fdf4"><param name="Name" value="GetLight"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CellularCloudNode.html#a3b2e08bed559030797f3706533e5804c"><param name="Name" value="GetLightDetail"></OBJECT>
@@ -3628,7 +3619,6 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudProperties.html#af65b3b979e4af36b6f15c43313d18df8"><param name="Name" value="GetChurn"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudProperties.html#a350f598f52380797ea0386ed28fad8b9"><param name="Name" value="GetExtents"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudProperties.html#ab54b756f7d25a656eec83c28e450ed6d"><param name="Name" value="GetGenerationNumber"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudProperties.html#ae70869b5bef4b7cb1f89a31936b5af8d"><param name="Name" value="GetInverseScales"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudProperties.html#a880b7ce6c4ca09f82edfacf61c8b3f4e"><param name="Name" value="GetLightDetail"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudProperties.html#a5128a0b57c83d7543e04698f41e80320"><param name="Name" value="GetMinimumLightElevationDegrees"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1CloudProperties.html#a27eee9c868e177b776cbdaafec213086"><param name="Name" value="GetNoiseOctaves"></OBJECT>
@@ -3693,7 +3683,6 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1FastCloudNode.html#a3822ff2555bbbf7c67d4bc7f00468851"><param name="Name" value="GetGridLength"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1FastCloudNode.html#acfb83a6c546c90c327e15d57621d3234"><param name="Name" value="GetGridValues"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1FastCloudNode.html#a6724c4056ef79594b899a85c191cf018"><param name="Name" value="GetGridWidth"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1FastCloudNode.html#a4a11114fb1bd73f1cf396da3083e17cf"><param name="Name" value="GetInverseScales"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1FastCloudNode.html#ac465d03675ee573ba3113b0cfb8d2416"><param name="Name" value="GetLicense"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1FastCloudNode.html#af97dd76948af42c373fa00b985e3fdf4"><param name="Name" value="GetLight"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1FastCloudNode.html#a3b2e08bed559030797f3706533e5804c"><param name="Name" value="GetLightDetail"></OBJECT>

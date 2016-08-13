@@ -509,7 +509,6 @@
       <keyword name="GetCloudDensity" id="simul::clouds::CellularCloudGrid::GetCloudDensity" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#a514159d068b641d164fb858e251eeff5" />
       <keyword name="GetExtents" id="simul::clouds::CellularCloudGrid::GetExtents" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#a350f598f52380797ea0386ed28fad8b9" />
       <keyword name="GetGenerationNumber" id="simul::clouds::CellularCloudGrid::GetGenerationNumber" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#ab54b756f7d25a656eec83c28e450ed6d" />
-      <keyword name="GetInverseScales" id="simul::clouds::CellularCloudGrid::GetInverseScales" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#ae70869b5bef4b7cb1f89a31936b5af8d" />
       <keyword name="GetNoiseInterface" id="simul::clouds::CellularCloudGrid::GetNoiseInterface" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#aec3475c8b1eb0b65c5baf40a75f4179a" />
       <keyword name="GetOpticalPathLength" id="simul::clouds::CellularCloudGrid::GetOpticalPathLength" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#adcfffa009af905acf274f1e03d52e620" />
       <keyword name="GetOrigin" id="simul::clouds::CellularCloudGrid::GetOrigin" ref="classsimul_1_1clouds_1_1CellularCloudGrid.html#abe5181041878f5163157f1d6767f3cf8" />
@@ -636,7 +635,6 @@
       <keyword name="GetSecondaryLight" id="simul::clouds::CellularCloudNode::GetSecondaryLight" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a32d28413cf0325938e2999da5c1b826e" />
       <keyword name="GetExtents" id="simul::clouds::CellularCloudNode::GetExtents" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a77b29740e26bbca16c36e8af664a5072" />
       <keyword name="GetOrigin" id="simul::clouds::CellularCloudNode::GetOrigin" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#ac6188a2e5f1a0de12bf7ecf8361314db" />
-      <keyword name="GetInverseScales" id="simul::clouds::CellularCloudNode::GetInverseScales" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a4a11114fb1bd73f1cf396da3083e17cf" />
       <keyword name="GetCloudDensity" id="simul::clouds::CellularCloudNode::GetCloudDensity" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#af6b16320824b228510f66ac38efd6048" />
       <keyword name="GetGrid" id="simul::clouds::CellularCloudNode::GetGrid" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#a1f41b02937af377f155803ab7f0ec0da" />
       <keyword name="SetGrid" id="simul::clouds::CellularCloudNode::SetGrid" ref="classsimul_1_1clouds_1_1CellularCloudNode.html#aeef4d82a72f77344a41e7e040061a499" />
@@ -909,7 +907,6 @@
       <keyword name="simul::clouds::CloudProperties" id="simul::clouds::CloudProperties" ref="classsimul_1_1clouds_1_1CloudProperties.html" />
       <keyword name="GetExtents" id="simul::clouds::CloudProperties::GetExtents" ref="classsimul_1_1clouds_1_1CloudProperties.html#a350f598f52380797ea0386ed28fad8b9" />
       <keyword name="GetGenerationNumber" id="simul::clouds::CloudProperties::GetGenerationNumber" ref="classsimul_1_1clouds_1_1CloudProperties.html#ab54b756f7d25a656eec83c28e450ed6d" />
-      <keyword name="GetInverseScales" id="simul::clouds::CloudProperties::GetInverseScales" ref="classsimul_1_1clouds_1_1CloudProperties.html#ae70869b5bef4b7cb1f89a31936b5af8d" />
       <keyword name="GetOrigin" id="simul::clouds::CloudProperties::GetOrigin" ref="classsimul_1_1clouds_1_1CloudProperties.html#abe5181041878f5163157f1d6767f3cf8" />
       <keyword name="GetTransformLightspaceToCloudspaceMatrix" id="simul::clouds::CloudProperties::GetTransformLightspaceToCloudspaceMatrix" ref="classsimul_1_1clouds_1_1CloudProperties.html#a21895d20947109eaecea8727af25e286" />
       <keyword name="GetTransformToLightspaceMatrix" id="simul::clouds::CloudProperties::GetTransformToLightspaceMatrix" ref="classsimul_1_1clouds_1_1CloudProperties.html#afde80fe4a614f83486925e7c7ed203c5" />
@@ -1014,7 +1011,6 @@
       <keyword name="GetSecondaryLight" id="simul::clouds::FastCloudNode::GetSecondaryLight" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a32d28413cf0325938e2999da5c1b826e" />
       <keyword name="GetExtents" id="simul::clouds::FastCloudNode::GetExtents" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a77b29740e26bbca16c36e8af664a5072" />
       <keyword name="GetOrigin" id="simul::clouds::FastCloudNode::GetOrigin" ref="classsimul_1_1clouds_1_1FastCloudNode.html#ac6188a2e5f1a0de12bf7ecf8361314db" />
-      <keyword name="GetInverseScales" id="simul::clouds::FastCloudNode::GetInverseScales" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a4a11114fb1bd73f1cf396da3083e17cf" />
       <keyword name="GetGrid" id="simul::clouds::FastCloudNode::GetGrid" ref="classsimul_1_1clouds_1_1FastCloudNode.html#a1f41b02937af377f155803ab7f0ec0da" />
       <keyword name="SetGrid" id="simul::clouds::FastCloudNode::SetGrid" ref="classsimul_1_1clouds_1_1FastCloudNode.html#aeef4d82a72f77344a41e7e040061a499" />
       <keyword name="GetGridValues" id="simul::clouds::FastCloudNode::GetGridValues" ref="classsimul_1_1clouds_1_1FastCloudNode.html#acfb83a6c546c90c327e15d57621d3234" />
