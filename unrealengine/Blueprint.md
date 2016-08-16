@@ -37,6 +37,8 @@ Additionally, point lights can be used to illuminate the clouds. Because of the 
 
 If you do not have a PointLight actor, you can use SetPointLightSource to individually apply the position, colour and intensity of a light to the clouds.
 
+For ambient lighting, add a TrueSkyLight actor to your scene. This replaces the default UE SkyLight, and automatically updates ambient lighting.
+
 Cloud Shadows
 -------------
 The shadows of clouds can be applied to your directional light object using the M_LightFunction in the Content/TrueSky directory of your project. If you modify this function, make a copy of it with a different name, otherwise it will be overwritten when the plugin next starts (this applies to all the content in the TrueSky folder).
