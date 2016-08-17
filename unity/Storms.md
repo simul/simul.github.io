@@ -18,7 +18,7 @@ To create a storm in the sequencer, simply right click on the 3D cloud layer and
 <a href="http://docs.simul.co/unity/images/StormSequencer.png"><img src="http://docs.simul.co/unity/images/StormSequencer.png" alt="Storms"/></a> 
 
 
-Editing Clouds via Scripting
+Editing Storms via Scripting
 -----------------------
 
 As with cloud and sky keyframes, to get/set properties of a storm keyframe, you will first need to get its uid. To do this, use GetStormUidByIndex(int index) or GetStormUidAtTime(float time). Once you have the storm keyframe's uid, you can get and set its float and int properties using GetStormFloat(uint uid, string name), SetStormFloat(uint uid, string name, float value), GetStormInt(uint uid, string name) and SetStormInt(uint uid, string name, int value). For information on these functions, see [Scripting](http://docs.simul.co/unity/Scripting.html). The tables below show the storm properties (named as they appear in the sequencer), along with the matching name string to use for scripting. **Note:** Parameters that are Bools in the Sequencer are treated as Ints in scripting, where 0 = false and 1 = true.
@@ -59,4 +59,4 @@ Further Information
 * [The Storm Struct](http://docs.simul.co/reference/structsimul_1_1clouds_1_1CloudKeyframer_1_1Storm.html)
 
 
-Next: <a href="/unity/index">Home</a>
+Next: <a href="/unity/Scripting">Scripting</a>
