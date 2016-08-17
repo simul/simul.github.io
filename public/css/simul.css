@@ -45,6 +45,6 @@
 	top:60px;
 }
 
-code {
+code, pre code {
   font-size: 12px;
 }
