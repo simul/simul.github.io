@@ -13,53 +13,53 @@ Frequently Asked Questions and Common Problems
 
 **Installation and Compilation**
 
-* When packaging the game, I get errors and/or the screen is black. 
-* If you are using the binary installer, then you will need to follow some additional steps to be able to package your game with trueSKY. You can read about this [here](http://docs.simul.co/unrealengine/Deploy.html). *
+* **When packaging the game, I get errors and/or the screen is black. **
+If you are using the binary installer, then you will need to follow some additional steps to be able to package your game with trueSKY. You can read about this [here](http://docs.simul.co/unrealengine/Deploy.html). 
 
 
 **Performance**
 
-* TrueSky is taking too many milliseconds to render a frame. How can I reduce this value? 
-* With default settings, the cost of trueSKY should be between 2 and 4 ms per frame. If this is not being achieved or in the use case, speed is a higher priority than visual performance, then this can be improved by altering the Amortization, Atmospherics Amortization and/or Downscale Factor settings in the details panel of the TrueSkySequenceActor. To aid the measurement of performance, TrueSky also provides profiling information (Windows -> Overlays -> Profiling or use the GetProfilingText function in blueprint).*
+* **TrueSky is taking too many milliseconds to render a frame. How can I reduce this value? **
+With default settings, the cost of trueSKY should be between 2 and 4 ms per frame. If this is not being achieved or in the use case, speed is a higher priority than visual performance, then this can be improved by altering the Amortization, Atmospherics Amortization and/or Downscale Factor settings in the details panel of the TrueSkySequenceActor. To aid the measurement of performance, TrueSky also provides profiling information (Windows -> Overlays -> Profiling or use the GetProfilingText function in blueprint).
 
-* How do I make the clouds appear less pixelated? 
-* Try lowering the downscale factor setting, in the details panel of the TrueSkySequenceActor.*
+* **How do I make the clouds appear less pixelated? **
+Try lowering the downscale factor setting, in the details panel of the TrueSkySequenceActor.
 
 
 **The Sequencer and Sequences**
 
-* I can't edit the values in the sequencer.
-* Ensure your license key has been entered at the top of the sequencer, and that it is valid.*
+* **I can't edit the values in the sequencer.**
+Ensure your license key has been entered at the top of the sequencer, and that it is valid.
 
-* When I change sequences in blueprint, how do I make the transition smooth and imperceptible? 
-* Make sure that all layers in all sequences have Keyframe subdivision set to "Fixed intervals (real time)" and Update to "Gradual". To set how long it takes to transition between sequences, adjust the "Interval(s)" parameter to the desired amount of seconds.*
+* **When I change sequences in blueprint, how do I make the transition smooth and imperceptible? **
+Make sure that all layers in all sequences have Keyframe subdivision set to "Fixed intervals (real time)" and Update to "Gradual". To set how long it takes to transition between sequences, adjust the "Interval(s)" parameter to the desired amount of seconds.
 
 
 **Weather Effects and Celestial Objects**
 
-* Rain drops are large and blocky.
-* Try lowering the rain drop size in the 3D cloud layer.*
+* **Rain drops are large and blocky.**
+Try lowering the rain drop size in the 3D cloud layer.
 
-* The rain moves too quickly when I move the camera
-* This can happen when the camera is moving quite quickly. If you do not want to lower the speed of the camera's movement, then try lowering the TrueSkySequenceActor's metres per unit setting.*
+* **The rain moves too quickly when I move the camera.**
+This can happen when the camera is moving quite quickly. If you do not want to lower the speed of the camera's movement, then try lowering the TrueSkySequenceActor's metres per unit setting.
 
-* The sun/moon is too big/small.
-* Try altering the sun and/or moon diameter setting in the sky layer.*
+* **The sun/moon is too big/small.**
+Try altering the sun and/or moon diameter setting in the sky layer.
 
 
 **Lighting**
 
-* It's too dark at night.
-* Try lowering the brightness power setting in the sky layer*.
+* **It's too dark at night.**
+Try lowering the brightness power setting in the sky layer.
 
-* The sun is flickering.
-* This may be caused by how UE4's postprocessors deal with large brightnesses, along with the small pixel size of the sun. To get around this, we've introduced MaxSunRadiance as a property of the Sequence Actor. When sun radiance goes past this value, the size of the drawn sun is increased, and the radiance decreased, so that the overall energy is kept constant, but the output brightness reduced. Additionally, if you haven't already, try deleting the default Atmospheric Fog and Sky Sphere actors. *
+* **The sun is flickering.**
+This may be caused by how UE4's postprocessors deal with large brightnesses, along with the small pixel size of the sun. To get around this, we've introduced MaxSunRadiance as a property of the Sequence Actor. When sun radiance goes past this value, the size of the drawn sun is increased, and the radiance decreased, so that the overall energy is kept constant, but the output brightness reduced. Additionally, if you haven't already, try deleting the default Atmospheric Fog and Sky Sphere actors.
 
-* The sun isn't moving. 
-* Ensure that you are driving the sun via blueprint. Please see [here](http://docs.simul.co/unrealengine/Blueprint.html) for information on how to do this. *
+* **The sun isn't moving. **
+Ensure that you are driving the sun via blueprint. Please see [here](http://docs.simul.co/unrealengine/Blueprint.html) for information on how to do this.
 
-* The sun is too bright 
-* Post process volumes can cause issues with trueSKY. Try lowering the intensity of the volume's bloom setting. *
+* **The sun is too bright **
+Post process volumes can cause issues with trueSKY. Try lowering the intensity of the volume's bloom setting.
 
 
 

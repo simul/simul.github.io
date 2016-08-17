@@ -13,41 +13,41 @@ Frequently Asked Questions and Common Problems
 
 **Performance**
 
-* How do I make the clouds appear less pixelated? 
-* Try lowering the downscale factor setting, on the trueSKY object.*
+* **How do I make the clouds appear less pixelated?**
+Try lowering the downscale factor setting, on the trueSKY object.
 
 
 **The Sequencer and Sequences**
 
-* I can't edit the values in the sequencer.
-* Ensure your license key has been entered at the top of the sequencer, and that it is valid.*
+* **I can't edit the values in the sequencer.**
+Ensure your license key has been entered at the top of the sequencer, and that it is valid.
 
-* When I change sequences in script, how do I make the transition smooth and imperceptible? 
-* Make sure that all layers in all sequences have Keyframe subdivision set to "Fixed intervals (real time)" and Update to "Gradual". To set how long it takes to transition between sequences, adjust the "Interval(s)" parameter to the desired amount of seconds. *
+* **When I change sequences in script, how do I make the transition smooth and imperceptible? **
+Make sure that all layers in all sequences have Keyframe subdivision set to "Fixed intervals (real time)" and Update to "Gradual". To set how long it takes to transition between sequences, adjust the "Interval(s)" parameter to the desired amount of seconds. 
 
 
 **Camera**
 
-* The camera view is upside down.
-* Try checking/unchecking the "Flipped View" option in the TrueSkyCamera component*. 
+* **The camera view is upside down.**
+Try checking/unchecking the "Flipped View" option in the TrueSkyCamera component. 
 
 
 **Weather Effects and Celestial Objects**
 
-* Rain drops are large and blocky.
-* Try lowering the rain drop size in the 3D cloud layer.*
+* **Rain drops are large and blocky.**
+Try lowering the rain drop size in the 3D cloud layer.
 
-* The rain moves too quickly when I move the camera
-* This happens when the camera is moving quite quickly. If you do not want to lower the speed of the camera's movement, then try lowering the metres per unit setting of the trueSKY object.
+* **The rain moves too quickly when I move the camera.**
+This can happen when the camera is moving quite quickly. If you do not want to lower the speed of the camera's movement, then try lowering the metres per unit setting of the trueSKY object.
 
-* The sun/moon is too big/small.
-* Try altering the sun and/or moon diameter setting in the sky layer.*
+* **The sun/moon is too big/small.**
+Try altering the sun and/or moon diameter setting in the sky layer.
 
 
 **Lighting**
 
-* It's too dark at night
-* Try lowering the brightness power setting in the sky layer.*
+* **It's too dark at night.**
+Try lowering the brightness power setting in the sky layer.
 
 
 
