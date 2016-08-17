@@ -9,7 +9,7 @@ trueSKY Deployment
 
 **Running Cooked Games**
 
-The trueSKY DLL's are  located in [UE4]/Engine/Binaries/ThirdParty/Simul. This makes them more accessible for standalone builds. When you deploy a build, these DLL's will no longer be accessible, and UE4 does not yet provide us with the capability to automatically deploy files to a build (e.g. in Game Launcher). Therefore on the Simul branch of UE4, this code has been inserted into [UE4]/Engine/Source/Programs/AutomationTool/Win/WinPlatform.Automation.cs (see line 43):
+The trueSKY DLL's are  located in [UE4]/Engine/Binaries/ThirdParty/Simul. When you package, cook, or launch a build, UE4 does not yet provide the capability to automatically deploy files to a build. Therefore on the Simul branch of UE4, this code has been inserted into [UE4]/Engine/Source/Programs/AutomationTool/Win/WinPlatform.Automation.cs (see line 43):
 	
 	/// BEGIN trueSKY Additional code
 	SC.StageFiles(StagedFileType.NonUFS, CombinePaths(SC.LocalRoot, "Engine/Binaries/ThirdParty/Simul", SC.PlatformDir), "TrueSkyPluginRender_MT.dll", true, null, null,false);
@@ -17,7 +17,6 @@ The trueSKY DLL's are  located in [UE4]/Engine/Binaries/ThirdParty/Simul. This m
 	SC.StageFiles(StagedFileType.NonUFS, CombinePaths(SC.LocalRoot, "Engine/Plugins/TrueSkyPlugin/Content"), "*.*", true, null, null, false);
 	SC.StageFiles(StagedFileType.NonUFS, CombinePaths(SC.LocalRoot, "Engine/Plugins/TrueSkyPlugin/shaderbin", SC.PlatformDir), "*.fxo", true, null, null, false);
 	/// END trueSKY Additional code
-
 
 To rebuild the tools, build the UE4 solution in the "Development" configuration. This will recreate the executables located in the [UE4]\Engine\Binaries\DotNET directory.
 
@@ -42,5 +41,4 @@ As the console automation files are not in the Git repository, it is not possibl
 	/// END trueSKY Additional code
 
 		
-			
 Next: <a href="/unrealengine/Troubleshooting">Troubleshooting</a>
