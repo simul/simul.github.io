@@ -1761,6 +1761,7 @@
       <keyword name="GetString" id="simul::plugin::PluginTrueSkyRenderer::GetString" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#abe8a11af2b49ccc284e98798ebe6081b" />
       <keyword name="HasFloat" id="simul::plugin::PluginTrueSkyRenderer::HasFloat" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a1995124bf813d11edca38eabc0bb777c" />
       <keyword name="HasInt" id="simul::plugin::PluginTrueSkyRenderer::HasInt" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#aa347fc2fbd430ab3e03dee9e2d54af2a" />
+      <keyword name="LightingQuery" id="simul::plugin::PluginTrueSkyRenderer::LightingQuery" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#ad67c6c3061d8221774a851c1a51f19cc" />
       <keyword name="PluginTrueSkyRenderer" id="simul::plugin::PluginTrueSkyRenderer::PluginTrueSkyRenderer" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a6f569ef3a71b177755dc70a44f1de828" />
       <keyword name="SetAmortization" id="simul::plugin::PluginTrueSkyRenderer::SetAmortization" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#aa63a54f0ccfea9f7e261fdb87589a919" />
       <keyword name="SetBool" id="simul::plugin::PluginTrueSkyRenderer::SetBool" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a78de9b087c6af84d197e08e50e6cb89e" />

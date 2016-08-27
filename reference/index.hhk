@@ -1737,6 +1737,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1math_1_1Vector3.html#ad70596d6698c531b4419317d4aa28068"><param name="Name" value="Lerp"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="man_a_licensing.html"><param name="Name" value="Licensing"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1clouds_1_1CloudKeyframe.html#a490bc561c5cdb3bf92146824e386bec9"><param name="Name" value="light_asymmetry"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#ad67c6c3061d8221774a851c1a51f19cc"><param name="Name" value="LightingQuery"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1dx11_1_1ConstantBuffer.html#a76f88050fceba025f6dada677c72d0a0"><param name="Name" value="LinkToEffect"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classObj_1_1File.html#a091cc4d6f0eb5bb91d379baf479745f2"><param name="Name" value="Load"></OBJECT>
   <UL>
@@ -4529,6 +4530,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a9feda0d67ebbced8036c6359cb2afc08"><param name="Name" value="GetUseSkyBuffer"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a1995124bf813d11edca38eabc0bb777c"><param name="Name" value="HasFloat"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#aa347fc2fbd430ab3e03dee9e2d54af2a"><param name="Name" value="HasInt"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#ad67c6c3061d8221774a851c1a51f19cc"><param name="Name" value="LightingQuery"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a6f569ef3a71b177755dc70a44f1de828"><param name="Name" value="PluginTrueSkyRenderer"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#aa63a54f0ccfea9f7e261fdb87589a919"><param name="Name" value="SetAmortization"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#aa28c35e099df6fafdbd575179e39fa47"><param name="Name" value="SetAntialiasing"></OBJECT>
