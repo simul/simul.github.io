@@ -350,7 +350,7 @@
       <keyword name="CloudTexelType" id="simul::clouds::CloudTexelType" ref="namespacesimul_1_1clouds.html#a4fb446340b2fb4b138b7d8240bffcf69" />
       <keyword name="VolumeMap" id="simul::clouds::VolumeMap" ref="namespacesimul_1_1clouds.html#ab79ccfe3f57cc1c3c4fef8b7f1c59d4b" />
       <keyword name="simul::clouds::BaseCloudRenderer" id="simul::clouds::BaseCloudRenderer" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html" />
-      <keyword name="BaseCloudRenderer" id="simul::clouds::BaseCloudRenderer::BaseCloudRenderer" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a1bb1168c813b2239a2b254288d5b1fec" />
+      <keyword name="BaseCloudRenderer" id="simul::clouds::BaseCloudRenderer::BaseCloudRenderer" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ac589a385d5206df2912d171767c568b1" />
       <keyword name="CreateCloudGeometryHelper" id="simul::clouds::BaseCloudRenderer::CreateCloudGeometryHelper" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#aacc0e8648488515677f8b9d722aad557" />
       <keyword name="GetCloudOffset" id="simul::clouds::BaseCloudRenderer::GetCloudOffset" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a276429bd40031ed46a099cc4ce66ad95" />
       <keyword name="GetCloudScales" id="simul::clouds::BaseCloudRenderer::GetCloudScales" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ae7fdc21a767e56fc54f9cfe366d0eebc" />
@@ -368,7 +368,7 @@
       <keyword name="PreRenderUpdate" id="simul::clouds::BaseCloudRenderer::PreRenderUpdate" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ae15f20c0ff731ccf3cccb85a9eb4734c" />
       <keyword name="RecompileShaders" id="simul::clouds::BaseCloudRenderer::RecompileShaders" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a689bba2dd0ae007cb327f679e4e37f8f" />
       <keyword name="Render" id="simul::clouds::BaseCloudRenderer::Render" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ad7915ee08913f21fde0410c4d0b330bf" />
-      <keyword name="RenderCloudShadowTexture" id="simul::clouds::BaseCloudRenderer::RenderCloudShadowTexture" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#aa8b5dcd6f49767eb40d0ff438321ed5b" />
+      <keyword name="RenderCloudShadowTexture" id="simul::clouds::BaseCloudRenderer::RenderCloudShadowTexture" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ae50ae2aa01480689b15cef2898abe056" />
       <keyword name="RenderCrossSections" id="simul::clouds::BaseCloudRenderer::RenderCrossSections" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ad811fdc6aaa8be177802b76e015e7dcd" />
       <keyword name="RenderQueries" id="simul::clouds::BaseCloudRenderer::RenderQueries" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a7b1e3a45b4b786862bb191cf96f0af2d" />
       <keyword name="RestoreDeviceObjects" id="simul::clouds::BaseCloudRenderer::RestoreDeviceObjects" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ab05d5c9b74fdd17790ecccb1d63c7c3e" />
@@ -444,7 +444,6 @@
       <keyword name="GetBaseCloudRenderer" id="simul::clouds::BaseWeatherRenderer::GetBaseCloudRenderer" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a1f8641ef6038b473878328257aa8fd16" />
       <keyword name="GetBasePrecipitationRenderer" id="simul::clouds::BaseWeatherRenderer::GetBasePrecipitationRenderer" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a56e880bde49f8ffbe5da7fce21131b4c" />
       <keyword name="GetBaseSkyRenderer" id="simul::clouds::BaseWeatherRenderer::GetBaseSkyRenderer" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a4b63cf2e5e83ae2f5914f3d5548079cd" />
-      <keyword name="GetCloudKeyframer" id="simul::clouds::BaseWeatherRenderer::GetCloudKeyframer" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a45648cff7c3f000ddd57c13089379fac" />
       <keyword name="GetHorizonColour" id="simul::clouds::BaseWeatherRenderer::GetHorizonColour" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aee13dd1ce6b2c681f11d48c17e941eab" />
       <keyword name="GetLightColour" id="simul::clouds::BaseWeatherRenderer::GetLightColour" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ac1e217605c37c16291ab795b878e3a3d" />
       <keyword name="GetLightningRenderer" id="simul::clouds::BaseWeatherRenderer::GetLightningRenderer" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ab7454e08246d0d94b8260272c3574dd6" />
@@ -729,8 +728,6 @@
       <keyword name="offsety" id="simul::clouds::CloudKeyframe::offsety" ref="structsimul_1_1clouds_1_1CloudKeyframe.html#a06e21647b0942f46a9bfb43b01111cb6" />
       <keyword name="persistence" id="simul::clouds::CloudKeyframe::persistence" ref="structsimul_1_1clouds_1_1CloudKeyframe.html#a13fbecdf8a54daee77970a7860d9dd6e" />
       <keyword name="precipitation" id="simul::clouds::CloudKeyframe::precipitation" ref="structsimul_1_1clouds_1_1CloudKeyframe.html#a0a5a9c5304551568bc287477cacceedc" />
-      <keyword name="precipitation_waver" id="simul::clouds::CloudKeyframe::precipitation_waver" ref="structsimul_1_1clouds_1_1CloudKeyframe.html#aa303dfa0b5cc8bd821255e933d5bb08f" />
-      <keyword name="precipitation_wind_effect" id="simul::clouds::CloudKeyframe::precipitation_wind_effect" ref="structsimul_1_1clouds_1_1CloudKeyframe.html#a78f053ec558fc38a2bc39761d8828152" />
       <keyword name="precipitationRegion" id="simul::clouds::CloudKeyframe::precipitationRegion" ref="structsimul_1_1clouds_1_1CloudKeyframe.html#ad681f9058fee7c75a3d7fbc96cf32f38" />
       <keyword name="rain_to_snow" id="simul::clouds::CloudKeyframe::rain_to_snow" ref="structsimul_1_1clouds_1_1CloudKeyframe.html#ac141d40dd98c57ba064b7b55857ce464" />
       <keyword name="simulation" id="simul::clouds::CloudKeyframe::simulation" ref="structsimul_1_1clouds_1_1CloudKeyframe.html#aa10849329dcd4d8fd46598e4dbac82c5" />
@@ -830,30 +827,12 @@
       <keyword name="SetOvercastEffect" id="simul::clouds::CloudKeyframer::SetOvercastEffect" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#af29dab197c366143d24f793d333b2143" />
       <keyword name="GetVisible" id="simul::clouds::CloudKeyframer::GetVisible" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#abfa01114b65a04f69bd23b908356874a" />
       <keyword name="SetVisible" id="simul::clouds::CloudKeyframer::SetVisible" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a8bebb1e3f837adb7867903d96eebed27" />
-      <keyword name="GetEdgeNoisePersistence" id="simul::clouds::CloudKeyframer::GetEdgeNoisePersistence" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a38baa8eda179a10c0370e9b88118064a" />
-      <keyword name="SetEdgeNoisePersistence" id="simul::clouds::CloudKeyframer::SetEdgeNoisePersistence" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#abc6221a607e664a06db4b77fd291d35c" />
-      <keyword name="GetEdgeNoiseOctaves" id="simul::clouds::CloudKeyframer::GetEdgeNoiseOctaves" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a7f97e49e176cad9575e3bf2da6e43b4b" />
-      <keyword name="SetEdgeNoiseOctaves" id="simul::clouds::CloudKeyframer::SetEdgeNoiseOctaves" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a4906b1cd88a63d4c1974cf92222b2623" />
-      <keyword name="GetEdgeNoiseFrequency" id="simul::clouds::CloudKeyframer::GetEdgeNoiseFrequency" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#addbe9b57cad89a143bf4d6e7048784ed" />
-      <keyword name="SetEdgeNoiseFrequency" id="simul::clouds::CloudKeyframer::SetEdgeNoiseFrequency" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a3fe501284a54f4824e8ab642ad045f85" />
-      <keyword name="GetEdgeNoiseTextureSize" id="simul::clouds::CloudKeyframer::GetEdgeNoiseTextureSize" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a916cb7bdda2279b87ae96653bb6adca9" />
-      <keyword name="SetEdgeNoiseTextureSize" id="simul::clouds::CloudKeyframer::SetEdgeNoiseTextureSize" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#af2a1a33993bee2dea560d2966b438a90" />
-      <keyword name="GetDefaultNumSlices" id="simul::clouds::CloudKeyframer::GetDefaultNumSlices" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#ac3565ae13a2e298100f23e7f2c9feab6" />
-      <keyword name="SetDefaultNumSlices" id="simul::clouds::CloudKeyframer::SetDefaultNumSlices" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a48d4110392314f6a6a83a36d615b6067" />
       <keyword name="GetPhase" id="simul::clouds::CloudKeyframer::GetPhase" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a8c74f40e99a227ae2ba80106bfc0b091" />
       <keyword name="SetPhase" id="simul::clouds::CloudKeyframer::SetPhase" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#abd28ecc757e339eaa09065f471cce24d" />
       <keyword name="GetExplicitOffsets" id="simul::clouds::CloudKeyframer::GetExplicitOffsets" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a6fdbdad892bcbd9e90e7e0a834263b99" />
       <keyword name="SetExplicitOffsets" id="simul::clouds::CloudKeyframer::SetExplicitOffsets" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a0385666aa19568d7544c73c53bc9f01a" />
-      <keyword name="GetMaxPrecipitationParticles" id="simul::clouds::CloudKeyframer::GetMaxPrecipitationParticles" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#ada5a012b73e057b93387ab47f073d592" />
-      <keyword name="SetMaxPrecipitationParticles" id="simul::clouds::CloudKeyframer::SetMaxPrecipitationParticles" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a33e4ff72c8ce6c69e238f70a7a608142" />
       <keyword name="GetPrecipitationThresholdKm" id="simul::clouds::CloudKeyframer::GetPrecipitationThresholdKm" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#ae2216c9fc42e0d81c3e0ea98336ee46b" />
       <keyword name="SetPrecipitationThresholdKm" id="simul::clouds::CloudKeyframer::SetPrecipitationThresholdKm" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a07f83e1188d7e07cb78eef610e555af9" />
-      <keyword name="GetPrecipitationRadiusMetres" id="simul::clouds::CloudKeyframer::GetPrecipitationRadiusMetres" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a34518eb52294b4b157fb156d7160219c" />
-      <keyword name="SetPrecipitationRadiusMetres" id="simul::clouds::CloudKeyframer::SetPrecipitationRadiusMetres" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#ab1a507f7f22776b85c75e4cac1be5cd3" />
-      <keyword name="GetRainFallSpeedMS" id="simul::clouds::CloudKeyframer::GetRainFallSpeedMS" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a9d128f56409fcd322149369fdf337e6f" />
-      <keyword name="SetRainFallSpeedMS" id="simul::clouds::CloudKeyframer::SetRainFallSpeedMS" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a6cd207faa8ebe061cd6492ffa2ce4464" />
-      <keyword name="GetRainDropSizeMm" id="simul::clouds::CloudKeyframer::GetRainDropSizeMm" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a0d6b0e00d870a5c6747f488c9a4d8a0c" />
-      <keyword name="SetRainDropSizeMm" id="simul::clouds::CloudKeyframer::SetRainDropSizeMm" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a28a2bc300520f2d80b5de2eda3a2a5ee" />
       <keyword name="GetVorticityConfinement" id="simul::clouds::CloudKeyframer::GetVorticityConfinement" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#afe09327fdafb53315c4c86d5eeb0e4d2" />
       <keyword name="SetVorticityConfinement" id="simul::clouds::CloudKeyframer::SetVorticityConfinement" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a4a00d60f31707c14e48d59ba4c02db29" />
       <keyword name="GetViscosity" id="simul::clouds::CloudKeyframer::GetViscosity" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a64bd9a51508609ba41815fec71ee4d56" />
@@ -936,10 +915,11 @@
       <keyword name="SetMinimumLightElevationDegrees" id="simul::clouds::CloudProperties::SetMinimumLightElevationDegrees" ref="classsimul_1_1clouds_1_1CloudProperties.html#a80abecfb336a02b370b385c03cb1a9d2" />
       <keyword name="simul::clouds::Environment" id="simul::clouds::Environment" ref="classsimul_1_1clouds_1_1Environment.html" />
       <keyword name="cloud2DKeyframer" id="simul::clouds::Environment::cloud2DKeyframer" ref="classsimul_1_1clouds_1_1Environment.html#a7670dbb4a7807b4c0d4bb44497529d14" />
-      <keyword name="cloudKeyframer" id="simul::clouds::Environment::cloudKeyframer" ref="classsimul_1_1clouds_1_1Environment.html#a977673dffd7722d96a47d7f8214645fb" />
+      <keyword name="cloudKeyframers" id="simul::clouds::Environment::cloudKeyframers" ref="classsimul_1_1clouds_1_1Environment.html#aa7f2672c02df2fd1beb2ef2abc676076" />
       <keyword name="skyKeyframer" id="simul::clouds::Environment::skyKeyframer" ref="classsimul_1_1clouds_1_1Environment.html#a05daca15edd8341baed29240db6277a2" />
       <keyword name="CreateSubObjects" id="simul::clouds::Environment::CreateSubObjects" ref="classsimul_1_1clouds_1_1Environment.html#abfe5bcbcb3265161d51b64e6d7cc5f03" />
       <keyword name="Environment" id="simul::clouds::Environment::Environment" ref="classsimul_1_1clouds_1_1Environment.html#a39ec767124cc030757898bc0797e5135" />
+      <keyword name="GetCloudKeyframer" id="simul::clouds::Environment::GetCloudKeyframer" ref="classsimul_1_1clouds_1_1Environment.html#a19faa877601c564de4fbecfa0468533d" />
       <keyword name="Load" id="simul::clouds::Environment::Load" ref="classsimul_1_1clouds_1_1Environment.html#ac34b326428158e0ac0721b57ca31929f" />
       <keyword name="LoadFromText" id="simul::clouds::Environment::LoadFromText" ref="classsimul_1_1clouds_1_1Environment.html#a2ea5a65ec5262cceada42bf1618172a7" />
       <keyword name="New" id="simul::clouds::Environment::New" ref="classsimul_1_1clouds_1_1Environment.html#a3eda3dd6cda770c2d61c81513e51e62b" />
@@ -1242,7 +1222,7 @@
       <keyword name="CreateTexture" id="simul::crossplatform::RenderPlatform::CreateTexture" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#a3d024d69ed78eb9d666f7b12e644089c" />
       <keyword name="DispatchCompute" id="simul::crossplatform::RenderPlatform::DispatchCompute" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#aef7eab1870b1420940461db8e879a26d" />
       <keyword name="Draw" id="simul::crossplatform::RenderPlatform::Draw" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#a8810284b4ae959616f4d0b260c3b0b01" />
-      <keyword name="DrawCircle" id="simul::crossplatform::RenderPlatform::DrawCircle" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#af17c6734037a2873a228b0c49b20d464" />
+      <keyword name="DrawCircle" id="simul::crossplatform::RenderPlatform::DrawCircle" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#a4123c5970b2d8aa7f6a3af2f504c431d" />
       <keyword name="DrawCircle" id="simul::crossplatform::RenderPlatform::DrawCircle" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#aefc841befa56b552a0351a2f39ede562" />
       <keyword name="DrawCubemap" id="simul::crossplatform::RenderPlatform::DrawCubemap" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#a3b332a990936ae58c803fe54e8ec8565" />
       <keyword name="DrawIndexed" id="simul::crossplatform::RenderPlatform::DrawIndexed" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#a0395ef4e8c10e5d2943fe56a1ac04481" />

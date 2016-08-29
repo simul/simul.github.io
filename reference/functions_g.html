@@ -139,7 +139,7 @@ url: Class Members
 : <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#a22890c865002d646c5717d57d97bf0a6">simul::clouds::CloudKeyframer</a>
 </li>
 <li>GetCloudKeyframer()
-: <a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a45648cff7c3f000ddd57c13089379fac">simul::clouds::BaseWeatherRenderer</a>
+: <a class="el" href="classsimul_1_1clouds_1_1Environment.html#a19faa877601c564de4fbecfa0468533d">simul::clouds::Environment</a>
 </li>
 <li>GetCloudOffset()
 : <a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a276429bd40031ed46a099cc4ce66ad95">simul::clouds::BaseCloudRenderer</a>
@@ -207,9 +207,6 @@ url: Class Members
 , <a class="el" href="classsimul_1_1sky_1_1BaseKeyframer.html#ac5a81afda054499b01436e393bfc10b8">simul::sky::BaseKeyframer</a>
 , <a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a4f25797ff4029046f2c2dde3a3112cea">simul::sky::SkyKeyframer</a>
 </li>
-<li>GetDefaultNumSlices()
-: <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#ac3565ae13a2e298100f23e7f2c9feab6">simul::clouds::CloudKeyframer</a>
-</li>
 <li>GetDensityGridsize()
 : <a class="el" href="classsimul_1_1clouds_1_1BaseGpuCloudGenerator.html#a1b729143a1641e0104931a36eefcd710">simul::clouds::BaseGpuCloudGenerator</a>
 </li>
@@ -266,18 +263,6 @@ url: Class Members
 </li>
 <li>GetEarthTest()
 : <a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#a4b886b1afdd0815ef61775faa1371d65">simul::sky::SkyKeyframer</a>
-</li>
-<li>GetEdgeNoiseFrequency()
-: <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#addbe9b57cad89a143bf4d6e7048784ed">simul::clouds::CloudKeyframer</a>
-</li>
-<li>GetEdgeNoiseOctaves()
-: <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#a7f97e49e176cad9575e3bf2da6e43b4b">simul::clouds::CloudKeyframer</a>
-</li>
-<li>GetEdgeNoisePersistence()
-: <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#a38baa8eda179a10c0370e9b88118064a">simul::clouds::CloudKeyframer</a>
-</li>
-<li>GetEdgeNoiseTextureSize()
-: <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#a916cb7bdda2279b87ae96653bb6adca9">simul::clouds::CloudKeyframer</a>
 </li>
 <li>GetEmissivity()
 : <a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html#af092d63e8bb672bdcd931081b15491ca">simul::sky::SkyKeyframer</a>
@@ -566,9 +551,6 @@ url: Class Members
 <li>GetMaxParticles()
 : <a class="el" href="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a86085fd1e22014ed7accb7c93da46b58">simul::clouds::BasePrecipitationRenderer</a>
 </li>
-<li>GetMaxPrecipitationParticles()
-: <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#ada5a012b73e057b93387ab47f073d592">simul::clouds::CloudKeyframer</a>
-</li>
 <li>GetMaxSlices()
 : <a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a01b5c4dc3879055f9acbd8aa0973360d">simul::clouds::BaseCloudRenderer</a>
 </li>
@@ -763,16 +745,13 @@ url: Class Members
 , <a class="el" href="classsimul_1_1sky_1_1BaseSky.html#ad3c48061e965203a440d54f0fbbfa880">simul::sky::BaseSky</a>
 </li>
 <li>GetPointQuery()
-: <a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a45047ea6479c18cd83ce44a6558fdc1b">simul::clouds::BaseCloudRenderer</a>
+: <a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a26a30f78e47caf2eab062fa6521643aa">simul::clouds::BaseCloudRenderer</a>
 </li>
 <li>GetPosition()
 : <a class="el" href="classsimul_1_1geometry_1_1SimulOrientation.html#a95a7f6450b9129ccc8004a4332e2e00d">simul::geometry::SimulOrientation</a>
 </li>
 <li>GetPrecipitationCentreKm()
 : <a class="el" href="structsimul_1_1clouds_1_1CloudKeyframe.html#afb3bfdc7a7eead6ff7e0245c9951724e">simul::clouds::CloudKeyframe</a>
-</li>
-<li>GetPrecipitationRadiusMetres()
-: <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#a34518eb52294b4b157fb156d7160219c">simul::clouds::CloudKeyframer</a>
 </li>
 <li>GetPrecipitationThresholdKm()
 : <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#ae2216c9fc42e0d81c3e0ea98336ee46b">simul::clouds::CloudKeyframer</a>
@@ -788,11 +767,9 @@ url: Class Members
 </li>
 <li>GetRainDropSizeMm()
 : <a class="el" href="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#af6a1db06090ef3562b8f5d2bb981d709">simul::clouds::BasePrecipitationRenderer</a>
-, <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#a0d6b0e00d870a5c6747f488c9a4d8a0c">simul::clouds::CloudKeyframer</a>
 </li>
 <li>GetRainFallSpeedMS()
 : <a class="el" href="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a4981258b8521c11026d4e91d0a3e23ff">simul::clouds::BasePrecipitationRenderer</a>
-, <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html#a9d128f56409fcd322149369fdf337e6f">simul::clouds::CloudKeyframer</a>
 </li>
 <li>GetRainTextureRepeat()
 : <a class="el" href="classsimul_1_1clouds_1_1BasePrecipitationRenderer.html#a8b8b267f6369b0da6033101f5b905c29">simul::clouds::BasePrecipitationRenderer</a>
@@ -1129,6 +1106,6 @@ url: Class Members
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION SIMUL_MAJOR_VERSION=4.0.0<small>
-Sun Aug 28 2016 07:52:52</small></address>
+Mon Aug 29 2016 07:52:51</small></address>
 </body>
 </html>

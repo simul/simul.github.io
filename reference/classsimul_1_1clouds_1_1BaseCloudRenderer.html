@@ -47,10 +47,10 @@ url: simul::clouds::BaseCloudRenderer Class Reference
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1bb1168c813b2239a2b254288d5b1fec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1bb1168c813b2239a2b254288d5b1fec"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a1bb1168c813b2239a2b254288d5b1fec">BaseCloudRenderer</a> (<a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html">simul::clouds::CloudKeyframer</a> *ck, <a class="el" href="classsimul_1_1base_1_1MemoryInterface.html">simul::base::MemoryInterface</a> *mem)</td></tr>
-<tr class="memdesc:a1bb1168c813b2239a2b254288d5b1fec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor: An external keyframer is provided, and an optional memory manager. <br /></td></tr>
-<tr class="separator:a1bb1168c813b2239a2b254288d5b1fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac589a385d5206df2912d171767c568b1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac589a385d5206df2912d171767c568b1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ac589a385d5206df2912d171767c568b1">BaseCloudRenderer</a> (<a class="el" href="classsimul_1_1clouds_1_1Environment.html">simul::clouds::Environment</a> *e, <a class="el" href="classsimul_1_1base_1_1MemoryInterface.html">simul::base::MemoryInterface</a> *mem)</td></tr>
+<tr class="memdesc:ac589a385d5206df2912d171767c568b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor: An external keyframer is provided, and an optional memory manager. <br /></td></tr>
+<tr class="separator:ac589a385d5206df2912d171767c568b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacc0e8648488515677f8b9d722aad557"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aacc0e8648488515677f8b9d722aad557"></a>
 <a class="el" href="classsimul_1_1clouds_1_1CloudGeometryHelper.html">CloudGeometryHelper</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#aacc0e8648488515677f8b9d722aad557">CreateCloudGeometryHelper</a> (<a class="el" href="classsimul_1_1base_1_1MemoryInterface.html">base::MemoryInterface</a> *m)</td></tr>
 <tr class="memdesc:aacc0e8648488515677f8b9d722aad557"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a new geometry helper. <br /></td></tr>
@@ -119,8 +119,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ad7915ee08913f21fde0410c4d0b330bf">Render</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, float exposure, <a class="el" href="namespacesimul_1_1clouds.html#a1dc56c71e4d8698ef947bc727ca3124d">TrueSkyRenderMode</a> renderMode, <a class="el" href="namespacesimul_1_1crossplatform.html#a667774e92bf043892a3f73c9baa23c68">crossplatform::NearFarPass</a> nearFarPass, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *depth_tex, const sky::ScatteringVolume *scatteringVolume, bool write_alpha, const vec4 &amp;viewportTextureRegionXYWH, const <a class="el" href="structsimul_1_1crossplatform_1_1AmortizationStruct.html">crossplatform::AmortizationStruct</a> &amp;amortizationStruct, <a class="el" href="classsimul_1_1clouds_1_1TwoResFramebuffer.html">clouds::TwoResFramebuffer</a> *fb, sky::LocalFadeTextures *localFadeTextures)</td></tr>
 <tr class="memdesc:ad7915ee08913f21fde0410c4d0b330bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Platform-dependent render function. <br /></td></tr>
 <tr class="separator:ad7915ee08913f21fde0410c4d0b330bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8b5dcd6f49767eb40d0ff438321ed5b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#aa8b5dcd6f49767eb40d0ff438321ed5b">RenderCloudShadowTexture</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html">CloudKeyframer</a> *ck)</td></tr>
-<tr class="separator:aa8b5dcd6f49767eb40d0ff438321ed5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae50ae2aa01480689b15cef2898abe056"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ae50ae2aa01480689b15cef2898abe056">RenderCloudShadowTexture</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext)</td></tr>
+<tr class="separator:ae50ae2aa01480689b15cef2898abe056"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad811fdc6aaa8be177802b76e015e7dcd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad811fdc6aaa8be177802b76e015e7dcd"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ad811fdc6aaa8be177802b76e015e7dcd">RenderCrossSections</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;context, int x0, int y0, int width, int height)</td></tr>
 <tr class="memdesc:ad811fdc6aaa8be177802b76e015e7dcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show the cloud volumes onscreen by cross section. <br /></td></tr>
@@ -189,8 +189,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <img src="Interpolation.png" alt="Interpolation.png"/>
 <div class="caption">
 Interpolating cloud textures based on key-frames</div></div>
-<p> This is done by the <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html">simul::clouds::CloudKeyframer</a> class, an instance of which is stored in the <a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html">simul::clouds::BaseCloudRenderer</a>. The cloud renderer uses iterators from the <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html">CloudKeyframer</a> to fill in texture data.</p>
-<p>The cloud volume is calculated in keyframes, and the closer together in real time those keyframes are, the more CPU or GPU time will be spent on cloud calculation. Aside from any changes to the cloud grid data, the cloud volume can move horizontally and vertically at little cost. Typically, the <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html">CloudKeyframer</a> instance stored in the <a class="el" href="classsimul_1_1clouds_1_1Environment.html">Environment</a> object is used to control both of these aspects.</p>
+<p> The cloud volume is calculated in keyframes, and the closer together in real time those keyframes are, the more CPU or GPU time will be spent on cloud calculation. Aside from any changes to the cloud grid data, the cloud volume can move horizontally and vertically at little cost. Typically, the <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html">CloudKeyframer</a> instance stored in the <a class="el" href="classsimul_1_1clouds_1_1Environment.html">Environment</a> object is used to control both of these aspects.</p>
 <p>Once per frame, the cloud renderer's <a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ae15f20c0ff731ccf3cccb85a9eb4734c">PreRenderUpdate</a> function is called from <a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a475e35931efc000687a8d66251e86505">BaseWeatherRenderer::PreRenderUpdate</a>, and any needed updates to the textures are, performed.</p>
 <p>The keyframer also controls cloud motion due to wind, using WindSpeed and WindHeadingDegrees. Use SetOverrideWind() to choose whether to take wind values from the keyframes, or set them as needed.</p>
 <p>In the shaders, the cloud interpolation value from the keyframer is used to blend between textures 0 and 1, while texture 2 is being built - see below.</p>
@@ -238,7 +237,7 @@ The Cloud Grid</div></div>
 <div class="caption">
 The Cloud Grid</div></div>
 
-<p>Definition at line <a class="el" href="BaseCloudRenderer_8h_source.html#l00193">193</a> of file <a class="el" href="BaseCloudRenderer_8h_source.html">BaseCloudRenderer.h</a>.</p>
+<p>Definition at line <a class="el" href="BaseCloudRenderer_8h_source.html#l00202">202</a> of file <a class="el" href="BaseCloudRenderer_8h_source.html">BaseCloudRenderer.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a813855956b7ec95c605b89656dff3f33"></a>
 <div class="memitem">
@@ -339,7 +338,7 @@ The Cloud Grid</div></div>
 
 </div>
 </div>
-<a class="anchor" id="aa8b5dcd6f49767eb40d0ff438321ed5b"></a>
+<a class="anchor" id="ae50ae2aa01480689b15cef2898abe056"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -350,18 +349,8 @@ The Cloud Grid</div></div>
           <td class="memname">virtual void simul::clouds::BaseCloudRenderer::RenderCloudShadowTexture </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;&#160;</td>
-          <td class="paramname"><em>deviceContext</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>deviceContext</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html">CloudKeyframer</a> *&#160;</td>
-          <td class="paramname"><em>ck</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -382,6 +371,6 @@ The Cloud Grid</div></div>
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION SIMUL_MAJOR_VERSION=4.0.0<small>
-Sun Aug 28 2016 07:52:49</small></address>
+Mon Aug 29 2016 07:52:48</small></address>
 </body>
 </html>
