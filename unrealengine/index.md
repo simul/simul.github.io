@@ -115,9 +115,13 @@ Modified Files in the Unreal Engine
 	Engine\Source\Runtime\Renderer\Private\SceneRendering.cpp
 	Engine\Source\Runtime\Renderer\Private\RendererScene.cpp
 
-	Engine\Source\Programs\AutomationTool\PS4\PS4Platform.Automation.cs
 	Engine\Source\Programs\AutomationTool\Win\WinPlatform.Automation.cs
+
+	Engine\Source\Programs\AutomationTool\PS4\PS4Platform.Automation.cs
 	Engine\Source\Programs\AutomationTool\XboxOne\XboxOnePlatform.Automation.cs
+	
+	Engine\Source\Programs\UnrealBuildTool\PS4\UEDeployPS4.cs
+	Engine\Source\Programs\UnrealBuildTool\XboxOne\XboxOneDeploy.cs
 
 
 Further Information
