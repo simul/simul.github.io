@@ -97,14 +97,9 @@ To allow a smooth transition between weather states, you should adjust the Mode 
 
 <a href="http://docs.simul.co/unrealengine/images/GradualMode.png"><img src="http://docs.simul.co/unrealengine/images/GradualMode.png" alt="Gradual Mode"/></a>
 
-Console commands
----
-*ts\_cross\_sections* – Show/hide cloud cross-sections.
-
-*ts\_compositing* – Show/hide compositing overlay.
-
-*ts\_profile* – Dump profiling text to output.
-
+Profiling
+---------
+Use the Blueprint function GetProfilingText to get GPU and CPU timing numbers for trueSKY as a tree.
 
 Modified Files in the Unreal Engine
 --------
