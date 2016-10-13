@@ -15,8 +15,6 @@ The TrueSky Sequence Actor
 
 The values of the Sequence Actor itself can be changed via Blueprint. To Get and/or set these values, make a reference to the TrueSkySequenceActor and drag the output pin onto an empty space and either search for a value directly or navigate to Class-> TrueSkySequenceActor.
 
-<a href="http://docs.simul.co/unrealengine/images/SetGetCloudLayer.png"><img src="http://docs.simul.co/unrealengine/images/SetGetCloudLayer.png" alt="Blueprint"/></a>
-
 Lighting
 --------------
 

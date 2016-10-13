@@ -103,6 +103,7 @@ Use the Blueprint function GetProfilingText to get GPU and CPU timing numbers fo
 
 Modified Files in the Unreal Engine
 --------
+The following files in the UE source have been modified in the Simul branch.
 
 	Engine\Source\Runtime\Renderer\Private\DeferredShadingRenderer.cpp
 	Engine\Source\Runtime\Renderer\Public\RendererInterface.h
