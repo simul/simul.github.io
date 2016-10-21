@@ -36,8 +36,7 @@ url: simul::crossplatform::ViewStruct Struct Reference
 <div class="header">
   <div class="summary">
 <a href="structsimul_1_1crossplatform_1_1ViewStruct-members.html">List of all members</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-attribs">Public Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">simul::crossplatform::ViewStruct Struct Reference</div>  </div>
 </div><!--header-->
@@ -50,12 +49,10 @@ url: simul::crossplatform::ViewStruct Struct Reference
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a5d5ec12b030c8335ef3fa6eb01298e77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacesimul_1_1crossplatform.html#a3384172e390763ce0f9d6f58e3a0bcd0">DepthTextureStyle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsimul_1_1crossplatform_1_1ViewStruct.html#a5d5ec12b030c8335ef3fa6eb01298e77">depthTextureStyle</a></td></tr>
+<tr class="memitem:a5d5ec12b030c8335ef3fa6eb01298e77"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5d5ec12b030c8335ef3fa6eb01298e77"></a>
+<a class="el" href="namespacesimul_1_1crossplatform.html#a3384172e390763ce0f9d6f58e3a0bcd0">DepthTextureStyle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsimul_1_1crossplatform_1_1ViewStruct.html#a5d5ec12b030c8335ef3fa6eb01298e77">depthTextureStyle</a></td></tr>
+<tr class="memdesc:a5d5ec12b030c8335ef3fa6eb01298e77"><td class="mdescLeft">&#160;</td><td class="mdescRight">How to interpret any depth texture passed from outside. <br /></td></tr>
 <tr class="separator:a5d5ec12b030c8335ef3fa6eb01298e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3e63fce6c0ade8643b4b226c79e1fa7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3e63fce6c0ade8643b4b226c79e1fa7"></a>
-<a class="el" href="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1Frustum">simul::crossplatform::Frustum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsimul_1_1crossplatform_1_1ViewStruct.html#aa3e63fce6c0ade8643b4b226c79e1fa7">frustum</a></td></tr>
-<tr class="memdesc:aa3e63fce6c0ade8643b4b226c79e1fa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">THe viewing frustum, calculated from the proj matrix and stored for convenience using simul::crossplatform::GetFrustumFromProjectionMatrix. <br /></td></tr>
-<tr class="separator:aa3e63fce6c0ade8643b4b226c79e1fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5721c77a187e62dc3f3547e32fde52b6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5721c77a187e62dc3f3547e32fde52b6"></a>
 <a class="el" href="classsimul_1_1math_1_1Matrix4x4.html">math::Matrix4x4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsimul_1_1crossplatform_1_1ViewStruct.html#a5721c77a187e62dc3f3547e32fde52b6">proj</a></td></tr>
 <tr class="memdesc:a5721c77a187e62dc3f3547e32fde52b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The projection matrix, row-major. <br /></td></tr>
@@ -68,35 +65,12 @@ Public Attributes</h2></td></tr>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsimul_1_1crossplatform_1_1ViewStruct.html#ade0e1516f7ca9f589b7961a778065efc">view_id</a></td></tr>
 <tr class="memdesc:ade0e1516f7ca9f589b7961a778065efc"><td class="mdescLeft">&#160;</td><td class="mdescRight">An id unique to each rendered view, but persistent across frames. <br /></td></tr>
 <tr class="separator:ade0e1516f7ca9f589b7961a778065efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:ae19a3ecdf4f06b54fd44b52655b25295"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae19a3ecdf4f06b54fd44b52655b25295"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsimul_1_1crossplatform_1_1ViewStruct.html#ae19a3ecdf4f06b54fd44b52655b25295">Init</a> ()</td></tr>
-<tr class="memdesc:ae19a3ecdf4f06b54fd44b52655b25295"><td class="mdescLeft">&#160;</td><td class="mdescRight">MUST be called whenever view or proj change. <br /></td></tr>
-<tr class="separator:ae19a3ecdf4f06b54fd44b52655b25295"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A simple struct encapsulating a view and a projection matrix. </p>
 
-<p>Definition at line <a class="el" href="BaseRenderer_8h_source.html#l00052">52</a> of file <a class="el" href="BaseRenderer_8h_source.html">BaseRenderer.h</a>.</p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a5d5ec12b030c8335ef3fa6eb01298e77"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacesimul_1_1crossplatform.html#a3384172e390763ce0f9d6f58e3a0bcd0">DepthTextureStyle</a> simul::crossplatform::ViewStruct::depthTextureStyle</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>How to interpret any depth texture passed from outside. </p>
-
-<p>Definition at line <a class="el" href="BaseRenderer_8h_source.html#l00064">64</a> of file <a class="el" href="BaseRenderer_8h_source.html">BaseRenderer.h</a>.</p>
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<p>Definition at line <a class="el" href="BaseRenderer_8h_source.html#l00054">54</a> of file <a class="el" href="BaseRenderer_8h_source.html">BaseRenderer.h</a>.</p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>Simul/Platform/CrossPlatform/<a class="el" href="BaseRenderer_8h_source.html">BaseRenderer.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -104,6 +78,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION SIMUL_MAJOR_VERSION=4.0.0<small>
-Fri Oct 21 2016 07:53:16</small></address>
+Sun Sep 25 2016 07:52:59</small></address>
 </body>
 </html>
