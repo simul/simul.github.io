@@ -1197,6 +1197,7 @@
       <keyword name="simul::crossplatform::MouseCameraInput" id="simul::crossplatform::MouseCameraInput" ref="structsimul_1_1crossplatform_1_1MouseCameraInput.html" />
       <keyword name="simul::crossplatform::MouseCameraState" id="simul::crossplatform::MouseCameraState" ref="structsimul_1_1crossplatform_1_1MouseCameraState.html" />
       <keyword name="simul::crossplatform::PlatformStructuredBuffer" id="simul::crossplatform::PlatformStructuredBuffer" ref="classsimul_1_1crossplatform_1_1PlatformStructuredBuffer.html" />
+      <keyword name="ActualApply" id="simul::crossplatform::PlatformStructuredBuffer::ActualApply" ref="classsimul_1_1crossplatform_1_1PlatformStructuredBuffer.html#af73d0b08a9bc642b715b017dcad8b788" />
       <keyword name="simul::crossplatform::Query" id="simul::crossplatform::Query" ref="structsimul_1_1crossplatform_1_1Query.html" />
       <keyword name="GetData" id="simul::crossplatform::Query::GetData" ref="structsimul_1_1crossplatform_1_1Query.html#a2832853f03b6223cc74807091a3f41de" />
       <keyword name="simul::crossplatform::RenderPlatform" id="simul::crossplatform::RenderPlatform" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html" />
@@ -1281,9 +1282,11 @@
       <keyword name="setTexels" id="simul::crossplatform::Texture::setTexels" ref="classsimul_1_1crossplatform_1_1Texture.html#a171da2c97a586b62f0d95fb01edc9f8f" />
       <keyword name="simul::crossplatform::ViewStruct" id="simul::crossplatform::ViewStruct" ref="structsimul_1_1crossplatform_1_1ViewStruct.html" />
       <keyword name="depthTextureStyle" id="simul::crossplatform::ViewStruct::depthTextureStyle" ref="structsimul_1_1crossplatform_1_1ViewStruct.html#a5d5ec12b030c8335ef3fa6eb01298e77" />
+      <keyword name="frustum" id="simul::crossplatform::ViewStruct::frustum" ref="structsimul_1_1crossplatform_1_1ViewStruct.html#aa3e63fce6c0ade8643b4b226c79e1fa7" />
       <keyword name="proj" id="simul::crossplatform::ViewStruct::proj" ref="structsimul_1_1crossplatform_1_1ViewStruct.html#a5721c77a187e62dc3f3547e32fde52b6" />
       <keyword name="view" id="simul::crossplatform::ViewStruct::view" ref="structsimul_1_1crossplatform_1_1ViewStruct.html#a185f8871592b82b9f1bc59313be364f2" />
       <keyword name="view_id" id="simul::crossplatform::ViewStruct::view_id" ref="structsimul_1_1crossplatform_1_1ViewStruct.html#ade0e1516f7ca9f589b7961a778065efc" />
+      <keyword name="Init" id="simul::crossplatform::ViewStruct::Init" ref="structsimul_1_1crossplatform_1_1ViewStruct.html#ae19a3ecdf4f06b54fd44b52655b25295" />
       <keyword name="simul::dx11" id="simul::dx11" ref="namespacesimul_1_1dx11.html" />
       <keyword name="CreateEffect" id="simul::dx11::CreateEffect" ref="namespacesimul_1_1dx11.html#a438f29efd3ada4ea0773a98d8065ac37" />
       <keyword name="CreateEffect" id="simul::dx11::CreateEffect" ref="namespacesimul_1_1dx11.html#aef9a1d177d9334a5fc06a27117c5c770" />
@@ -1353,7 +1356,7 @@
       <keyword name="CreateTexture" id="simul::dx11::RenderPlatform::CreateTexture" ref="classsimul_1_1dx11_1_1RenderPlatform.html#a328811bb262716316f9b812984d77595" />
       <keyword name="DispatchCompute" id="simul::dx11::RenderPlatform::DispatchCompute" ref="classsimul_1_1dx11_1_1RenderPlatform.html#a9ce134448075a6274af69e2c76381a32" />
       <keyword name="Draw" id="simul::dx11::RenderPlatform::Draw" ref="classsimul_1_1dx11_1_1RenderPlatform.html#a4461b25cb847e8c6d9beeb15e51b49ab" />
-      <keyword name="DrawCircle" id="simul::dx11::RenderPlatform::DrawCircle" ref="classsimul_1_1dx11_1_1RenderPlatform.html#a3f801fb549186e98e44eccf2dc7fd84b" />
+      <keyword name="DrawCircle" id="simul::dx11::RenderPlatform::DrawCircle" ref="classsimul_1_1dx11_1_1RenderPlatform.html#a4123c5970b2d8aa7f6a3af2f504c431d" />
       <keyword name="DrawCircle" id="simul::dx11::RenderPlatform::DrawCircle" ref="classsimul_1_1dx11_1_1RenderPlatform.html#aefc841befa56b552a0351a2f39ede562" />
       <keyword name="DrawCubemap" id="simul::dx11::RenderPlatform::DrawCubemap" ref="classsimul_1_1dx11_1_1RenderPlatform.html#a3b332a990936ae58c803fe54e8ec8565" />
       <keyword name="DrawIndexed" id="simul::dx11::RenderPlatform::DrawIndexed" ref="classsimul_1_1dx11_1_1RenderPlatform.html#a248d8fee87ecda59093cb93337071d82" />
