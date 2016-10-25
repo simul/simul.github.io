@@ -94,7 +94,6 @@
             <section title="simul::clouds::CloudVolume" ref="namespacesimul_1_1clouds.html#structsimul_1_1clouds_1_1CloudVolume" />
             <section title="simul::crossplatform::CommandLineParams" ref="structsimul_1_1crossplatform_1_1CommandLineParams.html" />
             <section title="simul::dx11::ConstantBuffer&lt; T &gt;" ref="classsimul_1_1dx11_1_1ConstantBuffer.html" />
-            <section title="simul::sky::CpuSkyGenerator" ref="classsimul_1_1sky_1_1CpuSkyGenerator.html" />
             <section title="DepthTextureStruct" ref="structDepthTextureStruct.html" />
             <section title="simul::dx11::DetectChangesIncludeHandler" ref="classsimul_1_1dx11_1_1DetectChangesIncludeHandler.html" />
             <section title="simul::crossplatform::DeviceContext" ref="structsimul_1_1crossplatform_1_1DeviceContext.html" />
@@ -212,8 +211,8 @@
               <section title="simul::math::VirtualVector" ref="classsimul_1_1math_1_1VirtualVector.html" />
             </section>
             <section title="simul::math::Vector3" ref="classsimul_1_1math_1_1Vector3.html" />
-            <section title="Obj::VertexBuffer" ref="structObj_1_1VertexBuffer.html" />
             <section title="simul::dx11::VertexBuffer&lt; T &gt;" ref="structsimul_1_1dx11_1_1VertexBuffer.html" />
+            <section title="Obj::VertexBuffer" ref="structObj_1_1VertexBuffer.html" />
             <section title="simul::crossplatform::Viewport" ref="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1Viewport" />
             <section title="simul::crossplatform::ViewStruct" ref="structsimul_1_1crossplatform_1_1ViewStruct.html" />
           </section>
@@ -1814,8 +1813,6 @@
       <keyword name="SetPlanetRadius" id="simul::sky::AtmosphericScatteringInterface::SetPlanetRadius" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#acce69da767ccc518ca1fb237690ce7dc" />
       <keyword name="GetAtmosphereThickness" id="simul::sky::AtmosphericScatteringInterface::GetAtmosphereThickness" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a15c506b088b263eb01bb88a98c9903cb" />
       <keyword name="SetAtmosphereThickness" id="simul::sky::AtmosphericScatteringInterface::SetAtmosphereThickness" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a25d4fd45e0791cf3549bc3f2069eb7d6" />
-      <keyword name="GetSteps" id="simul::sky::AtmosphericScatteringInterface::GetSteps" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a8592aca137ba08a1137adcd8e3e0d5d0" />
-      <keyword name="SetSteps" id="simul::sky::AtmosphericScatteringInterface::SetSteps" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a12161ad24e8670c982bf7c059a4d87a8" />
       <keyword name="GetSunRadiusArcMinutes" id="simul::sky::AtmosphericScatteringInterface::GetSunRadiusArcMinutes" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a2c2f26e89b0daa64671c3eeedd0920be" />
       <keyword name="SetSunRadiusArcMinutes" id="simul::sky::AtmosphericScatteringInterface::SetSunRadiusArcMinutes" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a2fabf8a2b34992f21c041de2ee349318" />
       <keyword name="GetMoonRadiusArcMinutes" id="simul::sky::AtmosphericScatteringInterface::GetMoonRadiusArcMinutes" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a47a259557d9f5729793c8ff58005de8d" />
@@ -2027,11 +2024,6 @@
       <keyword name="SetPlanetImage" id="simul::sky::BaseSkyRenderer::SetPlanetImage" ref="classsimul_1_1sky_1_1BaseSkyRenderer.html#acb59eeef1fd147965050521fe716386b" />
       <keyword name="SetPlanetRadius" id="simul::sky::BaseSkyRenderer::SetPlanetRadius" ref="classsimul_1_1sky_1_1BaseSkyRenderer.html#aa7a9ab7a3653589f5a4c631495e8d7af" />
       <keyword name="simul::sky::ChunkInputOutput" id="simul::sky::ChunkInputOutput" ref="structsimul_1_1sky_1_1ChunkInputOutput.html" />
-      <keyword name="simul::sky::CpuSkyGenerator" id="simul::sky::CpuSkyGenerator" ref="classsimul_1_1sky_1_1CpuSkyGenerator.html" />
-      <keyword name="CanPerformGPUGeneration" id="simul::sky::CpuSkyGenerator::CanPerformGPUGeneration" ref="classsimul_1_1sky_1_1CpuSkyGenerator.html#a40c4e0891d0f2e7d3afa7300a04dacce" />
-      <keyword name="GetEnabled" id="simul::sky::CpuSkyGenerator::GetEnabled" ref="classsimul_1_1sky_1_1CpuSkyGenerator.html#adaff8c886bc00dcd436c99c01209aa4b" />
-      <keyword name="Get1DSkyChecksum" id="simul::sky::CpuSkyGenerator::Get1DSkyChecksum" ref="classsimul_1_1sky_1_1CpuSkyGenerator.html#abf5c0892c0bc693306d0fe4fba70ca94" />
-      <keyword name="ToFloat16" id="simul::sky::CpuSkyGenerator::ToFloat16" ref="classsimul_1_1sky_1_1CpuSkyGenerator.html#a345e9807d73af25136b2408f43f78ea6" />
       <keyword name="simul::sky::HazeStruct" id="simul::sky::HazeStruct" ref="structsimul_1_1sky_1_1HazeStruct.html" />
       <keyword name="simul::sky::Input" id="simul::sky::Input" ref="structsimul_1_1sky_1_1Input.html" />
       <keyword name="simul::sky::KeyframeInterpolation" id="simul::sky::KeyframeInterpolation" ref="structsimul_1_1sky_1_1KeyframeInterpolation.html" />
@@ -2740,8 +2732,6 @@
       <file>classsimul_1_1sky_1_1BaseSkyRenderer-members.html</file>
       <file>structsimul_1_1sky_1_1ChunkInputOutput.html</file>
       <file>structsimul_1_1sky_1_1ChunkInputOutput-members.html</file>
-      <file>classsimul_1_1sky_1_1CpuSkyGenerator.html</file>
-      <file>classsimul_1_1sky_1_1CpuSkyGenerator-members.html</file>
       <file>structsimul_1_1sky_1_1HazeStruct.html</file>
       <file>structsimul_1_1sky_1_1HazeStruct-members.html</file>
       <file>structsimul_1_1sky_1_1Input.html</file>
@@ -2909,7 +2899,6 @@
       <file>functions_vars.html</file>
       <file>functions_vars.html</file>
       <file>functions_vars.html</file>
-      <file>functions_enum.html</file>
       <file>functions_rela.html</file>
       <file>functions_rela.html</file>
       <file>functions_rela.html</file>

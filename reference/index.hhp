@@ -420,8 +420,6 @@ classsimul_1_1sky_1_1BaseSkyRenderer.html
 classsimul_1_1sky_1_1BaseSkyRenderer-members.html
 structsimul_1_1sky_1_1ChunkInputOutput.html
 structsimul_1_1sky_1_1ChunkInputOutput-members.html
-classsimul_1_1sky_1_1CpuSkyGenerator.html
-classsimul_1_1sky_1_1CpuSkyGenerator-members.html
 structsimul_1_1sky_1_1HazeStruct.html
 structsimul_1_1sky_1_1HazeStruct-members.html
 structsimul_1_1sky_1_1Input.html
@@ -531,7 +529,6 @@ functions_func_y.html
 functions_func_z.html
 functions_func_0x7e.html
 functions_vars.html
-functions_enum.html
 functions_rela.html
 tab_a.png
 tab_b.png
