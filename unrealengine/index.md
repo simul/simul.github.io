@@ -27,11 +27,11 @@ If you are using a different UE4 codebase, pull changes from the Simul fork, and
 
 * As described in the UE4 readme (in the root UnrealEngine directory), run Setup.bat and GenerateProjectFiles.bat from UE4. This will generate projects and the solution file (UE4.sln). For consoles you might use:
 
-	call GenerateProjectFiles -2015 -Platforms=Win64+PS4+XboxOne
+```call GenerateProjectFiles -2015 -Platforms=Win64+PS4+XboxOne```
 
 * From UE4.12 onwards, the trueSKY binary libraries are *not* kept in the repository. This is because multiple trueSKY versions can work with the same Unreal version. So run the batch file Engine/Plugins/TrueSkyPlugin/GetBinaries.bat, passing the required trueSKY version as a parameter, e.g.
 
-	GetBinaries.bat 4.0
+```GetBinaries.bat 4.0```
 
 * Use UE4.sln (UE4.vcxproj).
 The UE4 project contains the "TrueSkyPlugin" folder in Engine/UE4/Plugins. The plugin is in the “[UE4]\Engine\Plugins\TrueSkyPlugin” directory in your UE4 installation.
