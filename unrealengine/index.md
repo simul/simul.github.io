@@ -23,7 +23,11 @@ How to build it
 * Get the trueSKY UE4 fork from [GitHub](https://github.com/simul/UnrealEngine).
 If you are using a different UE4 codebase, pull changes from the Simul fork, and merge.
 
-* As described in the UE4 readme (in the root UnrealEngine directory), run Setup.bat and GenerateProjectFiles.bat from UE4. This will generate projects and the solution file (UE4.sln).
+* For a console build, unzip the additional console files from Epic into the main UE directory.
+
+* As described in the UE4 readme (in the root UnrealEngine directory), run Setup.bat and GenerateProjectFiles.bat from UE4. This will generate projects and the solution file (UE4.sln). For consoles you might use:
+
+	call GenerateProjectFiles -2015 -Platforms=Win64+PS4+XboxOne
 
 * From UE4.12 onwards, the trueSKY binary libraries are *not* kept in the repository. This is because multiple trueSKY versions can work with the same Unreal version. So run the batch file Engine/Plugins/TrueSkyPlugin/GetBinaries.bat, passing the required trueSKY version as a parameter, e.g.
 
