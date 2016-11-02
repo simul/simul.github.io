@@ -1436,6 +1436,8 @@
       <keyword name="SetShowDiagnostics" id="simul::dx11::TrueSkyRenderer::SetShowDiagnostics" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#ac5a6fae646836539d5bdf2851bc98d12" />
       <keyword name="GetShowTransparencyOverlay" id="simul::dx11::TrueSkyRenderer::GetShowTransparencyOverlay" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#a0c043a23248c8785d338803f939c7870" />
       <keyword name="SetShowTransparencyOverlay" id="simul::dx11::TrueSkyRenderer::SetShowTransparencyOverlay" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#ac6f4396bb3ada7addfd79e0f9b4613fc" />
+      <keyword name="GetShowSphericalPlanet" id="simul::dx11::TrueSkyRenderer::GetShowSphericalPlanet" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#aeb47442632207ef659d5e64dfe2c9e48" />
+      <keyword name="SetShowSphericalPlanet" id="simul::dx11::TrueSkyRenderer::SetShowSphericalPlanet" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#a305143e3a02be8c4400bfc4f9307c834" />
       <keyword name="GetCloudTool" id="simul::dx11::TrueSkyRenderer::GetCloudTool" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#afe4546fafd1659caf51beb8976f30249" />
       <keyword name="SetCloudTool" id="simul::dx11::TrueSkyRenderer::SetCloudTool" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#ab3a29f637c529a21c4eca3cab225af60" />
       <keyword name="GetSkyBrightness" id="simul::dx11::TrueSkyRenderer::GetSkyBrightness" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#aa041fb457ca4848919fe751aa7ed80a5" />
@@ -1795,6 +1797,8 @@
       <keyword name="SetShowDiagnostics" id="simul::plugin::PluginTrueSkyRenderer::SetShowDiagnostics" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#ac5a6fae646836539d5bdf2851bc98d12" />
       <keyword name="GetShowTransparencyOverlay" id="simul::plugin::PluginTrueSkyRenderer::GetShowTransparencyOverlay" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a0c043a23248c8785d338803f939c7870" />
       <keyword name="SetShowTransparencyOverlay" id="simul::plugin::PluginTrueSkyRenderer::SetShowTransparencyOverlay" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#ac6f4396bb3ada7addfd79e0f9b4613fc" />
+      <keyword name="GetShowSphericalPlanet" id="simul::plugin::PluginTrueSkyRenderer::GetShowSphericalPlanet" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#aeb47442632207ef659d5e64dfe2c9e48" />
+      <keyword name="SetShowSphericalPlanet" id="simul::plugin::PluginTrueSkyRenderer::SetShowSphericalPlanet" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a305143e3a02be8c4400bfc4f9307c834" />
       <keyword name="GetCloudTool" id="simul::plugin::PluginTrueSkyRenderer::GetCloudTool" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#afe4546fafd1659caf51beb8976f30249" />
       <keyword name="SetCloudTool" id="simul::plugin::PluginTrueSkyRenderer::SetCloudTool" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#ab3a29f637c529a21c4eca3cab225af60" />
       <keyword name="GetSkyBrightness" id="simul::plugin::PluginTrueSkyRenderer::GetSkyBrightness" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#aa041fb457ca4848919fe751aa7ed80a5" />
@@ -1817,17 +1821,13 @@
       <keyword name="SetSunRadiusArcMinutes" id="simul::sky::AtmosphericScatteringInterface::SetSunRadiusArcMinutes" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a2fabf8a2b34992f21c041de2ee349318" />
       <keyword name="GetMoonRadiusArcMinutes" id="simul::sky::AtmosphericScatteringInterface::GetMoonRadiusArcMinutes" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a47a259557d9f5729793c8ff58005de8d" />
       <keyword name="SetMoonRadiusArcMinutes" id="simul::sky::AtmosphericScatteringInterface::SetMoonRadiusArcMinutes" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a1e2c8c2898cadfe6d7e87bec4575e9e1" />
-      <keyword name="GetDirectionToLight" id="simul::sky::AtmosphericScatteringInterface::GetDirectionToLight" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#ac13143e92a54ac6e8eb19c0539751331" />
       <keyword name="GetDirectionToSun" id="simul::sky::AtmosphericScatteringInterface::GetDirectionToSun" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#ac45fa281b4010d8454c54bf541bdec05" />
-      <keyword name="GetDirectionToMoon" id="simul::sky::AtmosphericScatteringInterface::GetDirectionToMoon" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a41a8bf7ae13098de8f592264918b6013" />
       <keyword name="GetMoonIrradianceFactor" id="simul::sky::AtmosphericScatteringInterface::GetMoonIrradianceFactor" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#ad4c6f39bc8cf63ce4625e2da2eca58cf" />
       <keyword name="GetLocalMoonIrradianceFactor" id="simul::sky::AtmosphericScatteringInterface::GetLocalMoonIrradianceFactor" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a4f9f59ce8732f36c5fb779d75c783177" />
       <keyword name="GetLocalSunIrradiance" id="simul::sky::AtmosphericScatteringInterface::GetLocalSunIrradiance" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a2bcc768b2a540b237ad0562db943ffb4" />
-      <keyword name="GetAmbientLight" id="simul::sky::AtmosphericScatteringInterface::GetAmbientLight" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#ac74d9e6b8be106c523e3e1838117d311" />
       <keyword name="GetAtmosphericPropertiesChecksum" id="simul::sky::AtmosphericScatteringInterface::GetAtmosphericPropertiesChecksum" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#ad4bb99ce45c29f897bc8e9b2c5ae1c95" />
       <keyword name="GetAtmosphericStateChecksum" id="simul::sky::AtmosphericScatteringInterface::GetAtmosphericStateChecksum" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#ac0c6b3cda822d27d22b1684b6a854e37" />
       <keyword name="GetColourLossFactor" id="simul::sky::AtmosphericScatteringInterface::GetColourLossFactor" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a674275a4eb3822c8d7603a175b9f218f" />
-      <keyword name="GetHorizonElevation" id="simul::sky::AtmosphericScatteringInterface::GetHorizonElevation" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a2432b97c2a1a51873367b0dea0a38895" />
       <keyword name="GetEarthShadow" id="simul::sky::AtmosphericScatteringInterface::GetEarthShadow" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a71cf4cba51a814950782309908eef356" />
       <keyword name="GetIsotropicColourLossFactor" id="simul::sky::AtmosphericScatteringInterface::GetIsotropicColourLossFactor" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a239fe2e6772d8220870a66d29ee2a07a" />
       <keyword name="GetAnisotropicInscatterFactor" id="simul::sky::AtmosphericScatteringInterface::GetAnisotropicInscatterFactor" ref="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#aaa0dbda3f36a01828bd607bfc02874fa" />
@@ -1929,12 +1929,10 @@
       <keyword name="GetMoonRadiusArcMinutes" id="simul::sky::BaseSky::GetMoonRadiusArcMinutes" ref="classsimul_1_1sky_1_1BaseSky.html#a4136f8ae86e6a3b3313902580884595f" />
       <keyword name="SetMoonRadiusArcMinutes" id="simul::sky::BaseSky::SetMoonRadiusArcMinutes" ref="classsimul_1_1sky_1_1BaseSky.html#a29a38f941bb64293e2e0299be48808a7" />
       <keyword name="GetDirectionToSun" id="simul::sky::BaseSky::GetDirectionToSun" ref="classsimul_1_1sky_1_1BaseSky.html#ac45fa281b4010d8454c54bf541bdec05" />
-      <keyword name="GetDirectionToMoon" id="simul::sky::BaseSky::GetDirectionToMoon" ref="classsimul_1_1sky_1_1BaseSky.html#a41a8bf7ae13098de8f592264918b6013" />
       <keyword name="GetMoonIrradianceFactor" id="simul::sky::BaseSky::GetMoonIrradianceFactor" ref="classsimul_1_1sky_1_1BaseSky.html#ad4c6f39bc8cf63ce4625e2da2eca58cf" />
       <keyword name="GetAtmosphericPropertiesChecksum" id="simul::sky::BaseSky::GetAtmosphericPropertiesChecksum" ref="classsimul_1_1sky_1_1BaseSky.html#ad4bb99ce45c29f897bc8e9b2c5ae1c95" />
       <keyword name="GetAtmosphericStateChecksum" id="simul::sky::BaseSky::GetAtmosphericStateChecksum" ref="classsimul_1_1sky_1_1BaseSky.html#ac0c6b3cda822d27d22b1684b6a854e37" />
       <keyword name="GetColourLossFactor" id="simul::sky::BaseSky::GetColourLossFactor" ref="classsimul_1_1sky_1_1BaseSky.html#a674275a4eb3822c8d7603a175b9f218f" />
-      <keyword name="GetHorizonElevation" id="simul::sky::BaseSky::GetHorizonElevation" ref="classsimul_1_1sky_1_1BaseSky.html#a2432b97c2a1a51873367b0dea0a38895" />
       <keyword name="GetEarthShadow" id="simul::sky::BaseSky::GetEarthShadow" ref="classsimul_1_1sky_1_1BaseSky.html#a71cf4cba51a814950782309908eef356" />
       <keyword name="GetIsotropicColourLossFactor" id="simul::sky::BaseSky::GetIsotropicColourLossFactor" ref="classsimul_1_1sky_1_1BaseSky.html#a239fe2e6772d8220870a66d29ee2a07a" />
       <keyword name="GetAnisotropicInscatterFactor" id="simul::sky::BaseSky::GetAnisotropicInscatterFactor" ref="classsimul_1_1sky_1_1BaseSky.html#aaa0dbda3f36a01828bd607bfc02874fa" />
@@ -2047,12 +2045,9 @@
       <keyword name="GetAnisotropicInscatterFactor" id="simul::sky::Sky::GetAnisotropicInscatterFactor" ref="classsimul_1_1sky_1_1Sky.html#a5a4f1fe4027bf19a20e0ddaf9faaa0c4" />
       <keyword name="GetBlackbodyInscatter" id="simul::sky::Sky::GetBlackbodyInscatter" ref="classsimul_1_1sky_1_1Sky.html#a7e4cdb01a654adac2d2944a7ba2728d9" />
       <keyword name="GetColourLossFactor" id="simul::sky::Sky::GetColourLossFactor" ref="classsimul_1_1sky_1_1Sky.html#a0c87fd6dfbcd4014cc5a4f7898146a93" />
-      <keyword name="GetDirectionToLight" id="simul::sky::Sky::GetDirectionToLight" ref="classsimul_1_1sky_1_1Sky.html#ac3c9f017a0f737ad4b3093e9d01d9643" />
-      <keyword name="GetDirectionToMoon" id="simul::sky::Sky::GetDirectionToMoon" ref="classsimul_1_1sky_1_1Sky.html#a23613c1b2ae4d10771c3446e1443caea" />
       <keyword name="GetDirectionToSun" id="simul::sky::Sky::GetDirectionToSun" ref="classsimul_1_1sky_1_1Sky.html#af039e1aff767949761e872d3163530ce" />
       <keyword name="GetEarthShadow" id="simul::sky::Sky::GetEarthShadow" ref="classsimul_1_1sky_1_1Sky.html#a7e4cd04212ac8f539098fa546d664f9c" />
       <keyword name="GetHazeForVisibilityDistance" id="simul::sky::Sky::GetHazeForVisibilityDistance" ref="classsimul_1_1sky_1_1Sky.html#aea808b365dc34d0d20edc80cc91884bf" />
-      <keyword name="GetHorizonElevation" id="simul::sky::Sky::GetHorizonElevation" ref="classsimul_1_1sky_1_1Sky.html#aa7de200e230abe50d6e205d45d6490bb" />
       <keyword name="GetInscatterAngularMultiplier" id="simul::sky::Sky::GetInscatterAngularMultiplier" ref="classsimul_1_1sky_1_1Sky.html#acf0e8f6af552baff3937c6e035539c20" />
       <keyword name="GetIsotropicColourLossFactor" id="simul::sky::Sky::GetIsotropicColourLossFactor" ref="classsimul_1_1sky_1_1Sky.html#a9ee43a52d6e1841f3d6d63e420d67abd" />
       <keyword name="GetIsotropicInscatter" id="simul::sky::Sky::GetIsotropicInscatter" ref="classsimul_1_1sky_1_1Sky.html#a9909f157263739c5075efc46b43427fd" />

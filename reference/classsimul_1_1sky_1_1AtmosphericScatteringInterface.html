@@ -78,18 +78,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1e2c8c2898cadfe6d7e87bec4575e9e1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a1e2c8c2898cadfe6d7e87bec4575e9e1">SetMoonRadiusArcMinutes</a> (float value)=0</td></tr>
 <tr class="separator:a1e2c8c2898cadfe6d7e87bec4575e9e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">General</div></td></tr>
-<tr class="memitem:ac13143e92a54ac6e8eb19c0539751331"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac13143e92a54ac6e8eb19c0539751331"></a>
-virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#ac13143e92a54ac6e8eb19c0539751331">GetDirectionToLight</a> (double epoch_time, float latitude, float longitude, float altitude_km) const  =0</td></tr>
-<tr class="memdesc:ac13143e92a54ac6e8eb19c0539751331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the direction to the current strongest light source - could be the sun or the moon. <br /></td></tr>
-<tr class="separator:ac13143e92a54ac6e8eb19c0539751331"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac45fa281b4010d8454c54bf541bdec05"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac45fa281b4010d8454c54bf541bdec05"></a>
 virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#ac45fa281b4010d8454c54bf541bdec05">GetDirectionToSun</a> (double epoch_time, float latitude, float longitude) const  =0</td></tr>
 <tr class="memdesc:ac45fa281b4010d8454c54bf541bdec05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the direction to the sun. <br /></td></tr>
 <tr class="separator:ac45fa281b4010d8454c54bf541bdec05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41a8bf7ae13098de8f592264918b6013"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41a8bf7ae13098de8f592264918b6013"></a>
-virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a41a8bf7ae13098de8f592264918b6013">GetDirectionToMoon</a> (double epoch_time, float latitude, float longitude) const  =0</td></tr>
-<tr class="memdesc:a41a8bf7ae13098de8f592264918b6013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the direction to the moon. <br /></td></tr>
-<tr class="separator:a41a8bf7ae13098de8f592264918b6013"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4c6f39bc8cf63ce4625e2da2eca58cf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4c6f39bc8cf63ce4625e2da2eca58cf"></a>
 virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#ad4c6f39bc8cf63ce4625e2da2eca58cf">GetMoonIrradianceFactor</a> (const float4 &amp;dir_to_moon, const float4 &amp;dir_to_sun) const  =0</td></tr>
 <tr class="memdesc:ad4c6f39bc8cf63ce4625e2da2eca58cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the moonlight irradiance in space. <br /></td></tr>
@@ -102,10 +94,6 @@ virtual vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a2bcc768b2a540b237ad0562db943ffb4">GetLocalSunIrradiance</a> (float altitude_km, const vec3 &amp;sun_irradiance, const float4 &amp;dir_to_sun, <a class="el" href="structsimul_1_1sky_1_1HazeStruct.html">HazeStruct</a> hazeStruct) const  =0</td></tr>
 <tr class="memdesc:a2bcc768b2a540b237ad0562db943ffb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the sunlight that reaches the altitude <em>altitude_km</em>. <br /></td></tr>
 <tr class="separator:a2bcc768b2a540b237ad0562db943ffb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac74d9e6b8be106c523e3e1838117d311"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac74d9e6b8be106c523e3e1838117d311"></a>
-virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#ac74d9e6b8be106c523e3e1838117d311">GetAmbientLight</a> (float4 wavelengthsNm, float altitude_km, const vec3 &amp;sun_irradiance, vec3 moon_albedo, const float4 &amp;starlight, const float4 &amp;dir_to_sun, const float4 &amp;dir_to_moon, <a class="el" href="structsimul_1_1sky_1_1HazeStruct.html">HazeStruct</a> hazeStruct, const OvercastStruct &amp;overcast) const  =0</td></tr>
-<tr class="memdesc:ac74d9e6b8be106c523e3e1838117d311"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ambient light irradiance at the specified altitude. <br /></td></tr>
-<tr class="separator:ac74d9e6b8be106c523e3e1838117d311"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4bb99ce45c29f897bc8e9b2c5ae1c95"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4bb99ce45c29f897bc8e9b2c5ae1c95"></a>
 virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>GetAtmosphericPropertiesChecksum</b> () const  =0</td></tr>
 <tr class="separator:ad4bb99ce45c29f897bc8e9b2c5ae1c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,10 +103,6 @@ virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>GetAtmosp
 <tr class="memitem:a674275a4eb3822c8d7603a175b9f218f"><td class="memItemLeft" align="right" valign="top">virtual float4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a674275a4eb3822c8d7603a175b9f218f">GetColourLossFactor</a> (const float4 &amp;view_pos_km, const float4 &amp;pos_km, <a class="el" href="structsimul_1_1sky_1_1HazeStruct.html">HazeStruct</a> hazeStruct, bool earth_test=false, int steps=0) const  =0</td></tr>
 <tr class="memdesc:a674275a4eb3822c8d7603a175b9f218f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the loss factor of an object at position <em>pos_km</em> seen from <em>view_pos_km</em>.  <a href="#a674275a4eb3822c8d7603a175b9f218f">More...</a><br /></td></tr>
 <tr class="separator:a674275a4eb3822c8d7603a175b9f218f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2432b97c2a1a51873367b0dea0a38895"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2432b97c2a1a51873367b0dea0a38895"></a>
-virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a2432b97c2a1a51873367b0dea0a38895">GetHorizonElevation</a> (float h_km) const  =0</td></tr>
-<tr class="memdesc:a2432b97c2a1a51873367b0dea0a38895"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the horizon elevation from a given altitude. <br /></td></tr>
-<tr class="separator:a2432b97c2a1a51873367b0dea0a38895"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71cf4cba51a814950782309908eef356"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71cf4cba51a814950782309908eef356"></a>
 virtual <a class="el" href="namespacesimul_1_1sky.html#structsimul_1_1sky_1_1EarthShadow">EarthShadow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1AtmosphericScatteringInterface.html#a71cf4cba51a814950782309908eef356">GetEarthShadow</a> (float h_km, const float4 &amp;lightDir) const  =0</td></tr>
 <tr class="memdesc:a71cf4cba51a814950782309908eef356"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Earth's shadow, as seen from the given altitude. <br /></td></tr>
@@ -866,6 +850,6 @@ virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION SIMUL_MAJOR_VERSION=4.0.0<small>
-Fri Oct 28 2016 07:53:27</small></address>
+Wed Nov 2 2016 07:53:35</small></address>
 </body>
 </html>
