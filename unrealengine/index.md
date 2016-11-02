@@ -31,7 +31,7 @@ If you are using a different UE4 codebase, pull changes from the Simul fork, and
 
 * From UE4.12 onwards, the trueSKY binary libraries are *not* kept in the repository. This is because multiple trueSKY versions can work with the same Unreal version. So run the batch file Engine/Plugins/TrueSkyPlugin/GetBinaries.bat, passing the required trueSKY version as a parameter, e.g.
 
-```GetBinaries.bat 4.0```
+```GetBinaries.bat 4.1```
 
 * Use UE4.sln (UE4.vcxproj).
 The UE4 project contains the "TrueSkyPlugin" folder in Engine/UE4/Plugins. The plugin is in the “[UE4]\Engine\Plugins\TrueSkyPlugin” directory in your UE4 installation.

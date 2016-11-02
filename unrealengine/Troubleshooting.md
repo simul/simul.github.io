@@ -16,6 +16,9 @@ Frequently Asked Questions and Common Problems
 * **When packaging the game, I get errors and/or the screen is black.**
 <br>If you are using the binary installer, then you will need to follow some additional steps to be able to package your game with trueSKY. You can read about this [here](http://docs.simul.co/unrealengine/Deploy.html). 
 
+* **The sky does not appear in the UE4 Editor**
+<br>The TrueSkyPlugin loads "TrueSkyUI_MD.dll" and "UE4PluginRenderInterface_MT.dll" from [UE4]/Engine/Binary/ThirdParty/Simul/Win64.
+TrueSkyUI_MD.dll loads the Qt libraries. For that, the PATH environment-variable is extended temporarily by the plugin to include "Engine/Binary/ThirdParty/Simul/Win64". If these libraries are not present, or fail to load, ensure that you have run GetBinaries.bat in [UE4]/Engine/Plugins/TrueSkyPlugin, and that this batch file has completed successfully.
 
 **Performance**
 
@@ -23,13 +26,13 @@ Frequently Asked Questions and Common Problems
 <br>With default settings, the cost of trueSKY should be between 2 and 4 ms per frame. If this is not being achieved or in the use case, speed is a higher priority than visual performance, then this can be improved by altering the Amortization, Atmospherics Amortization and/or Downscale Factor settings in the details panel of the TrueSkySequenceActor. To aid the measurement of performance, TrueSky also provides profiling information (Windows -> Overlays -> Profiling or use the GetProfilingText function in blueprint).
 
 * **How do I make the clouds appear less pixelated?**
-<br>Try lowering the downscale factor setting, in the details panel of the TrueSkySequenceActor.
+<br>Try increasing the Cubemap Resolution setting, in the details panel of the TrueSkySequenceActor.
 
 
 **The Sequencer and Sequences**
 
 * **I can't edit the values in the sequencer.**
-<br>Ensure your license key has been entered at the top of the sequencer, and that it is valid.
+<br>Ensure your licence key and username have been entered at the top of the sequencer, and that they are valid. They can be found by logging in to [simul.co](https://simul.co/login) and going to the [Account](https://simul.co/account) page.
 
 * **When I change sequences in blueprint, how do I make the transition smooth and imperceptible?**
 <br>Make sure that all layers in all sequences have Keyframe subdivision set to "Fixed intervals (real time)" and Update to "Gradual". To set how long it takes to transition between sequences, adjust the "Interval(s)" parameter to the desired amount of seconds.
