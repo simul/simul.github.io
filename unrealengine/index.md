@@ -33,6 +33,7 @@ If you are using a different UE4 codebase, pull changes from the Simul fork, and
 
 ```GetBinaries.bat 4.1```
 
+* For console builds, you will need additional files. Download the plugin installer for your console platform/s from (simul.co/download)[https://simul.co/download], and run it to install the 
 * Open the UE4 solution in Visual Studio: UE4.sln or UE4_PS4Win64XboxOne.sln etc.
 The UE4 project contains the "TrueSkyPlugin" folder in Engine\UE4\Plugins. The plugin is in the “[UE4]\Engine\Plugins\TrueSkyPlugin” directory in your UE4 installation. There are two trueSKY modules in the UE4 project – TrueSkyPlugin and TrueSkyEditorPlugin. Both of these load external trueSKY libraries, which are in “[UE4]\Engine\Binaries\ThirdParty\Simul”.
 
