@@ -33,19 +33,14 @@ If you are using a different UE4 codebase, pull changes from the Simul fork, and
 
 ```GetBinaries.bat 4.1```
 
-* Use UE4.sln (UE4.vcxproj).
-The UE4 project contains the "TrueSkyPlugin" folder in Engine/UE4/Plugins. The plugin is in the “[UE4]\Engine\Plugins\TrueSkyPlugin” directory in your UE4 installation.
-The trueSKY binaries are in “[UE4]\Engine\Binaries\ThirdParty\Simul”. 
-There are two trueSKY modules in the UE4 project – TrueSkyPlugin and TrueSkyEditorPlugin.
+* Open the UE4 solution in Visual Studio: UE4.sln or UE4_PS4Win64XboxOne.sln etc.
+The UE4 project contains the "TrueSkyPlugin" folder in Engine\UE4\Plugins. The plugin is in the “[UE4]\Engine\Plugins\TrueSkyPlugin” directory in your UE4 installation. There are two trueSKY modules in the UE4 project – TrueSkyPlugin and TrueSkyEditorPlugin. Both of these load external trueSKY libraries, which are in “[UE4]\Engine\Binaries\ThirdParty\Simul”.
 
 * Build the UE4 project in the "Development Editor" configuration.
 
-
 How to run it
 ---
-* Run UE4, either standalone or with the debugger.
-The TrueSkyPlugin loads "TrueSkyUI_MD.dll" and "UE4PluginRenderInterface_MT.dll" from [UE4]\Engine\Plugins\TrueSkyPlugin\Binaries\Win64.
-TrueSkyUI_MD.dll further loads the Qt libraries. For that, the PATH environment-variable is extended temporarily by the plugin to include "Engine/Binary/ThirdParty/Simul/Win64"
+* Run the UE4 editor, either standalone or with the debugger.
 
 When you run the UE4 editor, the trueSKY plugin should be enabled by default. If not, go to Edit->Plugin and type "trueSKY" into the search box to find the plugin, and check its "enabled" box, to enable the trueSKY plugin.
 
@@ -109,14 +104,13 @@ Modified Files in the Unreal Engine
 --------
 The following files in the UE source have been modified in the Simul branch.
 
-	Engine\Source\Runtime\Renderer\Private\DeferredShadingRenderer.cpp
 	Engine\Source\Runtime\Renderer\Public\RendererInterface.h
+	Engine\Source\Runtime\Renderer\Private\DeferredShadingRenderer.cpp
 	Engine\Source\Runtime\Renderer\Private\RendererPrivate.h
 	Engine\Source\Runtime\Renderer\Private\SceneRendering.cpp
 	Engine\Source\Runtime\Renderer\Private\RendererScene.cpp
 
 	Engine\Source\Programs\AutomationTool\Win\WinPlatform.Automation.cs
-
 	Engine\Source\Programs\AutomationTool\PS4\PS4Platform.Automation.cs
 	Engine\Source\Programs\AutomationTool\XboxOne\XboxOnePlatform.Automation.cs
 	
