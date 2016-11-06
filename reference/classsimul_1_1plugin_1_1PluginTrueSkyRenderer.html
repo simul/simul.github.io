@@ -57,8 +57,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a90f0f27a86e872b0ed2a6be702c3ea38">CloudSphereInteraction</a> (int id, const float *pos, const float *vel, float radius)</td></tr>
 <tr class="memdesc:a90f0f27a86e872b0ed2a6be702c3ea38"><td class="mdescLeft">&#160;</td><td class="mdescRight">update a sphere that will push clouds aside. <br /></td></tr>
 <tr class="separator:a90f0f27a86e872b0ed2a6be702c3ea38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a29d7e32989e1e6c08a633659e2da23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><b>CopySkylight</b> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *targetTexture, float *targetShValues, int shOrder, const mat4 *engineToSimulMatrix4x4)</td></tr>
-<tr class="separator:a3a29d7e32989e1e6c08a633659e2da23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a0c029e642da84e88104ceb2415203c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><b>CopySkylight</b> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *targetTexture, float *targetShValues, int shOrder, const mat4 *engineToSimulMatrix4x4, int updateFrequency)</td></tr>
+<tr class="separator:a2a0c029e642da84e88104ceb2415203c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1588b4073a90b9aa5727c8bebb99c25"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1588b4073a90b9aa5727c8bebb99c25"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>EnsureSkylight</b> (int cubemap_view_id, int size, int mips, <a class="el" href="namespacesimul_1_1crossplatform.html#a29c5057471bee180c1cec3a2ccdd9940">crossplatform::PixelFormat</a> format, const mat4 *cubeToSimulMatrix, int shOrder, int updateFrequency)</td></tr>
+<tr class="memdesc:ad1588b4073a90b9aa5727c8bebb99c25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create or update a skylight. <br /></td></tr>
+<tr class="separator:ad1588b4073a90b9aa5727c8bebb99c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b3a2b29eb22bc0bf0951f681c52992e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b3a2b29eb22bc0bf0951f681c52992e"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a1b3a2b29eb22bc0bf0951f681c52992e">GetBool</a> (const char *name) const </td></tr>
 <tr class="memdesc:a1b3a2b29eb22bc0bf0951f681c52992e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a boolean value. See <a class="el" href="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a78de9b087c6af84d197e08e50e6cb89e">SetBool</a>. <br /></td></tr>
@@ -1629,7 +1633,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a class="anchor" id="a3a29d7e32989e1e6c08a633659e2da23"></a>
+<a class="anchor" id="a2a0c029e642da84e88104ceb2415203c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1664,7 +1668,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const mat4 *&#160;</td>
-          <td class="paramname"><em>engineToSimulMatrix4x4</em>&#160;</td>
+          <td class="paramname"><em>engineToSimulMatrix4x4</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>updateFrequency</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1690,6 +1700,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION SIMUL_MAJOR_VERSION=4.0.0<small>
-Sat Nov 5 2016 07:53:38</small></address>
+Sun Nov 6 2016 07:53:37</small></address>
 </body>
 </html>

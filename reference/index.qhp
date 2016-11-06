@@ -443,6 +443,7 @@
       <keyword name="GetBaseCloudRenderer" id="simul::clouds::BaseWeatherRenderer::GetBaseCloudRenderer" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a1f8641ef6038b473878328257aa8fd16" />
       <keyword name="GetBasePrecipitationRenderer" id="simul::clouds::BaseWeatherRenderer::GetBasePrecipitationRenderer" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a56e880bde49f8ffbe5da7fce21131b4c" />
       <keyword name="GetBaseSkyRenderer" id="simul::clouds::BaseWeatherRenderer::GetBaseSkyRenderer" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a4b63cf2e5e83ae2f5914f3d5548079cd" />
+      <keyword name="GetExportLightningStrikes" id="simul::clouds::BaseWeatherRenderer::GetExportLightningStrikes" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a5196ff02add73f847971932f01122a3a" />
       <keyword name="GetHorizonColour" id="simul::clouds::BaseWeatherRenderer::GetHorizonColour" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aee13dd1ce6b2c681f11d48c17e941eab" />
       <keyword name="GetLightColour" id="simul::clouds::BaseWeatherRenderer::GetLightColour" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ac1e217605c37c16291ab795b878e3a3d" />
       <keyword name="GetLightningRenderer" id="simul::clouds::BaseWeatherRenderer::GetLightningRenderer" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ab7454e08246d0d94b8260272c3574dd6" />
@@ -455,7 +456,7 @@
       <keyword name="RemoveView" id="simul::clouds::BaseWeatherRenderer::RemoveView" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a7170fc074f1733f44941a2ec26314141" />
       <keyword name="Render" id="simul::clouds::BaseWeatherRenderer::Render" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ae6926dd292486c1c305b73b1c5245a73" />
       <keyword name="RenderCelestialBackground" id="simul::clouds::BaseWeatherRenderer::RenderCelestialBackground" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a9429a8aa0531ceb7ed1fcd0b2c55d71e" />
-      <keyword name="RenderMixedResolution" id="simul::clouds::BaseWeatherRenderer::RenderMixedResolution" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a9711dc6925ead27e1b6a3ca226073f06" />
+      <keyword name="RenderMixedResolution" id="simul::clouds::BaseWeatherRenderer::RenderMixedResolution" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a0349de40bbe392b785c83016042cadf1" />
       <keyword name="RenderOverlays" id="simul::clouds::BaseWeatherRenderer::RenderOverlays" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ad3bb208131941ffec282235785ea9028" />
       <keyword name="RestoreDeviceObjects" id="simul::clouds::BaseWeatherRenderer::RestoreDeviceObjects" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a72de865052f574a909e0700a7fb5d303" />
       <keyword name="SetAllDownscale" id="simul::clouds::BaseWeatherRenderer::SetAllDownscale" ref="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a12ee233a9467dea6a7868864227a62ad" />
@@ -1041,7 +1042,7 @@
       <keyword name="simul::clouds::TwoResFramebuffer" id="simul::clouds::TwoResFramebuffer" ref="classsimul_1_1clouds_1_1TwoResFramebuffer.html" />
       <keyword name="pixelOffset" id="simul::clouds::TwoResFramebuffer::pixelOffset" ref="classsimul_1_1clouds_1_1TwoResFramebuffer.html#aa4c7455d2b00de55cb4f16b982bc955a" />
       <keyword name="ActivateLowRes" id="simul::clouds::TwoResFramebuffer::ActivateLowRes" ref="classsimul_1_1clouds_1_1TwoResFramebuffer.html#a8cb185f7e58d2182f80d44e218f48abf" />
-      <keyword name="CompleteFrame" id="simul::clouds::TwoResFramebuffer::CompleteFrame" ref="classsimul_1_1clouds_1_1TwoResFramebuffer.html#a3f924d91aa999f6e412e84b495b9dace" />
+      <keyword name="CompleteFrame" id="simul::clouds::TwoResFramebuffer::CompleteFrame" ref="classsimul_1_1clouds_1_1TwoResFramebuffer.html#a178efddfe9b5f3280a4aebcf73c12a76" />
       <keyword name="DeactivateDepth" id="simul::clouds::TwoResFramebuffer::DeactivateDepth" ref="classsimul_1_1clouds_1_1TwoResFramebuffer.html#a3bfdde51dfc21ac1a739f60054e7fab5" />
       <keyword name="DeactivateLowRes" id="simul::clouds::TwoResFramebuffer::DeactivateLowRes" ref="classsimul_1_1clouds_1_1TwoResFramebuffer.html#a92ea230f30e1a4b3ff1a738d3cbd4f5f" />
       <keyword name="GetCubeIntegerFrustumRange" id="simul::clouds::TwoResFramebuffer::GetCubeIntegerFrustumRange" ref="classsimul_1_1clouds_1_1TwoResFramebuffer.html#a37cdd5d6b2ca8c99e1a31d74bbda3990" />
@@ -1395,7 +1396,8 @@
       <keyword name="TexelQuery" id="simul::dx11::RenderPlatform::TexelQuery" ref="classsimul_1_1dx11_1_1RenderPlatform.html#ae67225c3c109d1af69cc9e1eaf5c252a" />
       <keyword name="simul::dx11::ShaderIncludeHandler" id="simul::dx11::ShaderIncludeHandler" ref="classsimul_1_1dx11_1_1ShaderIncludeHandler.html" />
       <keyword name="simul::dx11::TrueSkyRenderer" id="simul::dx11::TrueSkyRenderer" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html" />
-      <keyword name="CopySkylight" id="simul::dx11::TrueSkyRenderer::CopySkylight" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#a3a29d7e32989e1e6c08a633659e2da23" />
+      <keyword name="CopySkylight" id="simul::dx11::TrueSkyRenderer::CopySkylight" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#a2a0c029e642da84e88104ceb2415203c" />
+      <keyword name="EnsureSkylight" id="simul::dx11::TrueSkyRenderer::EnsureSkylight" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#ad1588b4073a90b9aa5727c8bebb99c25" />
       <keyword name="SetAmortization" id="simul::dx11::TrueSkyRenderer::SetAmortization" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#aa63a54f0ccfea9f7e261fdb87589a919" />
       <keyword name="TrueSkyRenderer" id="simul::dx11::TrueSkyRenderer::TrueSkyRenderer" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#acdeb6c00610a3a0f9f8258ba86092c35" />
       <keyword name="GetPaused" id="simul::dx11::TrueSkyRenderer::GetPaused" ref="classsimul_1_1dx11_1_1TrueSkyRenderer.html#a748538d9c66ccd9c6dd528a9a3fa9b22" />
@@ -1734,7 +1736,8 @@
       <keyword name="simul::plugin::PluginTrueSkyRenderer" id="simul::plugin::PluginTrueSkyRenderer" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html" />
       <keyword name="CloudLineQuery" id="simul::plugin::PluginTrueSkyRenderer::CloudLineQuery" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a505f746056166e0ac654b0d6fc44687a" />
       <keyword name="CloudSphereInteraction" id="simul::plugin::PluginTrueSkyRenderer::CloudSphereInteraction" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a90f0f27a86e872b0ed2a6be702c3ea38" />
-      <keyword name="CopySkylight" id="simul::plugin::PluginTrueSkyRenderer::CopySkylight" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a3a29d7e32989e1e6c08a633659e2da23" />
+      <keyword name="CopySkylight" id="simul::plugin::PluginTrueSkyRenderer::CopySkylight" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a2a0c029e642da84e88104ceb2415203c" />
+      <keyword name="EnsureSkylight" id="simul::plugin::PluginTrueSkyRenderer::EnsureSkylight" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#ad1588b4073a90b9aa5727c8bebb99c25" />
       <keyword name="GetBool" id="simul::plugin::PluginTrueSkyRenderer::GetBool" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a1b3a2b29eb22bc0bf0951f681c52992e" />
       <keyword name="GetCloudPointQuery" id="simul::plugin::PluginTrueSkyRenderer::GetCloudPointQuery" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#ad23cfbbef0a61420decd51e0d61f6c12" />
       <keyword name="GetEnvironment" id="simul::plugin::PluginTrueSkyRenderer::GetEnvironment" ref="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html#a103c072185123e2862504549ead626e7" />
