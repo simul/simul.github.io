@@ -91,6 +91,20 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:afacf76958fb1143626f9e6aa1494ee32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29c5454cd417c4595d2faa93101b2ffd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#a29c5454cd417c4595d2faa93101b2ffd">SetInfraRed</a> (bool value)</td></tr>
 <tr class="separator:a29c5454cd417c4595d2faa93101b2ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Property: uint3 GodraysGrid</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>"Godrays detail: Azimuthal, radial, and longitudinal grid size." </p>
+</div></td></tr>
+<tr class="memitem:a57895ae668ce743841478118b7251b4c"><td class="memItemLeft" align="right" valign="top">uint3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#a57895ae668ce743841478118b7251b4c">GetGodraysGrid</a> () const </td></tr>
+<tr class="separator:a57895ae668ce743841478118b7251b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89128d0cb6d4b0fc3d13056b21194007"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#a89128d0cb6d4b0fc3d13056b21194007">SetGodraysGrid</a> (uint3 value)</td></tr>
+<tr class="separator:a89128d0cb6d4b0fc3d13056b21194007"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Property: uint3 ScatteringGrid</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>"Scattering detail: Azimuthal, elevation, and distance grid size." </p>
+</div></td></tr>
+<tr class="memitem:a810343354a7cbb40a3d874896bdd16c4"><td class="memItemLeft" align="right" valign="top">uint3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#a810343354a7cbb40a3d874896bdd16c4">GetScatteringGrid</a> () const </td></tr>
+<tr class="separator:a810343354a7cbb40a3d874896bdd16c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cca3579686aa03d50956755b98b83f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html#a0cca3579686aa03d50956755b98b83f6">SetScatteringGrid</a> (uint3 value)</td></tr>
+<tr class="separator:a0cca3579686aa03d50956755b98b83f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Property: int MaxAmortization</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>"Maximum amortization of scattering volume generation." </p>
 </div></td></tr>
@@ -102,7 +116,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The graphics API-independent base class for atmospherics renderers, which draw distance fades, aerial perspective, fog and so on. </p>
 
-<p>Definition at line <a class="el" href="BaseAtmosphericsRenderer_8h_source.html#l00048">48</a> of file <a class="el" href="BaseAtmosphericsRenderer_8h_source.html">BaseAtmosphericsRenderer.h</a>.</p>
+<p>Definition at line <a class="el" href="BaseAtmosphericsRenderer_8h_source.html#l00049">49</a> of file <a class="el" href="BaseAtmosphericsRenderer_8h_source.html">BaseAtmosphericsRenderer.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a6a1b31fc5a6a3c5faa65c54205e0689b"></a>
 <div class="memitem">
@@ -170,6 +184,72 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
+<a class="anchor" id="a57895ae668ce743841478118b7251b4c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint3 simul::sky::BaseAtmosphericsRenderer::GetGodraysGrid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the value of GodraysGrid . </p>
+
+</div>
+</div>
+<a class="anchor" id="a89128d0cb6d4b0fc3d13056b21194007"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void simul::sky::BaseAtmosphericsRenderer::SetGodraysGrid </td>
+          <td>(</td>
+          <td class="paramtype">uint3&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the value of GodraysGrid . </p>
+
+</div>
+</div>
+<a class="anchor" id="a810343354a7cbb40a3d874896bdd16c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint3 simul::sky::BaseAtmosphericsRenderer::GetScatteringGrid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the value of ScatteringGrid . </p>
+
+</div>
+</div>
+<a class="anchor" id="a0cca3579686aa03d50956755b98b83f6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void simul::sky::BaseAtmosphericsRenderer::SetScatteringGrid </td>
+          <td>(</td>
+          <td class="paramtype">uint3&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the value of ScatteringGrid . </p>
+
+</div>
+</div>
 <a class="anchor" id="ac5e6d188fd71a95400f3c764435fcf4b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -211,6 +291,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION SIMUL_MAJOR_VERSION=4.0.0<small>
-Tue Nov 8 2016 07:53:48</small></address>
+Wed Nov 9 2016 07:53:59</small></address>
 </body>
 </html>
