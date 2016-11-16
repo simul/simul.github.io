@@ -212,6 +212,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1BaseFramebuffer.html#af9e87ed8cb24602f177d8a1ce02aa71b"><param name="Name" value="simul::dx11::Framebuffer"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseCloudRenderer.html#aacc0e8648488515677f8b9d722aad557"><param name="Name" value="CreateCloudGeometryHelper"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1Environment.html#a857a76072ba9d0eb3a689881db3f9a51"><param name="Name" value="CreateCloudKeyframer"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#ab932243b462874e6cb2d4581b0000f09"><param name="Name" value="CreateEffect"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1RenderPlatform.html#ab932243b462874e6cb2d4581b0000f09"><param name="Name" value="simul::crossplatform::RenderPlatform"></OBJECT>
@@ -419,7 +420,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Texture.html#a50adeb28785744067fa16707b741e59f"><param name="Name" value="ensureTexture3DSizeAndFormat"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1crossplatform_1_1Texture.html#a181511a508b7445f7ea22d910a282eff"><param name="Name" value="ensureTextureArraySizeAndFormat"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1sky_1_1BaseSkyRenderer.html#afab6092670bfd63c17a47c95c8ded263"><param name="Name" value="EnsureTexturesAreUpToDate"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1Environment.html#a39ec767124cc030757898bc0797e5135"><param name="Name" value="Environment"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1Environment.html#a06e2454643dd42a07b77bbe71073bc11"><param name="Name" value="Environment"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structsimul_1_1clouds_1_1CloudKeyframe.html#ac3e9b46c57ec925725a48352a288025a"><param name="Name" value="extinction"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1base_1_1FileLoader.html#a83156efb5a0fa089f0ef23f6752153bd"><param name="Name" value="FileExists"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1BaseGpuCloudGenerator.html#ae2e7c7b4730c1df259cb8f76e40b7fa2"><param name="Name" value="FillDensityGrid"></OBJECT>
@@ -3371,8 +3372,9 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1Environment.html#a7670dbb4a7807b4c0d4bb44497529d14"><param name="Name" value="cloud2DKeyframer"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1Environment.html#aa7f2672c02df2fd1beb2ef2abc676076"><param name="Name" value="cloudKeyframers"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1Environment.html#a857a76072ba9d0eb3a689881db3f9a51"><param name="Name" value="CreateCloudKeyframer"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1Environment.html#abfe5bcbcb3265161d51b64e6d7cc5f03"><param name="Name" value="CreateSubObjects"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1Environment.html#a39ec767124cc030757898bc0797e5135"><param name="Name" value="Environment"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1Environment.html#a06e2454643dd42a07b77bbe71073bc11"><param name="Name" value="Environment"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1Environment.html#a19faa877601c564de4fbecfa0468533d"><param name="Name" value="GetCloudKeyframer"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1Environment.html#ac34b326428158e0ac0721b57ca31929f"><param name="Name" value="Load"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classsimul_1_1clouds_1_1Environment.html#a2ea5a65ec5262cceada42bf1618172a7"><param name="Name" value="LoadFromText"></OBJECT>

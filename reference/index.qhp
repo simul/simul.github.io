@@ -209,8 +209,8 @@
               <section title="simul::math::VirtualVector" ref="classsimul_1_1math_1_1VirtualVector.html" />
             </section>
             <section title="simul::math::Vector3" ref="classsimul_1_1math_1_1Vector3.html" />
-            <section title="simul::dx11::VertexBuffer&lt; T &gt;" ref="structsimul_1_1dx11_1_1VertexBuffer.html" />
             <section title="Obj::VertexBuffer" ref="structObj_1_1VertexBuffer.html" />
+            <section title="simul::dx11::VertexBuffer&lt; T &gt;" ref="structsimul_1_1dx11_1_1VertexBuffer.html" />
             <section title="simul::crossplatform::Viewport" ref="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1Viewport" />
             <section title="simul::crossplatform::ViewStruct" ref="structsimul_1_1crossplatform_1_1ViewStruct.html" />
           </section>
@@ -915,8 +915,9 @@
       <keyword name="cloud2DKeyframer" id="simul::clouds::Environment::cloud2DKeyframer" ref="classsimul_1_1clouds_1_1Environment.html#a7670dbb4a7807b4c0d4bb44497529d14" />
       <keyword name="cloudKeyframers" id="simul::clouds::Environment::cloudKeyframers" ref="classsimul_1_1clouds_1_1Environment.html#aa7f2672c02df2fd1beb2ef2abc676076" />
       <keyword name="skyKeyframer" id="simul::clouds::Environment::skyKeyframer" ref="classsimul_1_1clouds_1_1Environment.html#a05daca15edd8341baed29240db6277a2" />
+      <keyword name="CreateCloudKeyframer" id="simul::clouds::Environment::CreateCloudKeyframer" ref="classsimul_1_1clouds_1_1Environment.html#a857a76072ba9d0eb3a689881db3f9a51" />
       <keyword name="CreateSubObjects" id="simul::clouds::Environment::CreateSubObjects" ref="classsimul_1_1clouds_1_1Environment.html#abfe5bcbcb3265161d51b64e6d7cc5f03" />
-      <keyword name="Environment" id="simul::clouds::Environment::Environment" ref="classsimul_1_1clouds_1_1Environment.html#a39ec767124cc030757898bc0797e5135" />
+      <keyword name="Environment" id="simul::clouds::Environment::Environment" ref="classsimul_1_1clouds_1_1Environment.html#a06e2454643dd42a07b77bbe71073bc11" />
       <keyword name="GetCloudKeyframer" id="simul::clouds::Environment::GetCloudKeyframer" ref="classsimul_1_1clouds_1_1Environment.html#a19faa877601c564de4fbecfa0468533d" />
       <keyword name="Load" id="simul::clouds::Environment::Load" ref="classsimul_1_1clouds_1_1Environment.html#ac34b326428158e0ac0721b57ca31929f" />
       <keyword name="LoadFromText" id="simul::clouds::Environment::LoadFromText" ref="classsimul_1_1clouds_1_1Environment.html#a2ea5a65ec5262cceada42bf1618172a7" />
