@@ -827,6 +827,8 @@
       <keyword name="SetVisible" id="simul::clouds::CloudKeyframer::SetVisible" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a8bebb1e3f837adb7867903d96eebed27" />
       <keyword name="GetPhase" id="simul::clouds::CloudKeyframer::GetPhase" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a8c74f40e99a227ae2ba80106bfc0b091" />
       <keyword name="SetPhase" id="simul::clouds::CloudKeyframer::SetPhase" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#abd28ecc757e339eaa09065f471cce24d" />
+      <keyword name="GetMapTexture" id="simul::clouds::CloudKeyframer::GetMapTexture" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a45694c4f390a5df420144ad604bb01c2" />
+      <keyword name="SetMapTexture" id="simul::clouds::CloudKeyframer::SetMapTexture" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a31692a81ebd083a14d357da398c0db67" />
       <keyword name="GetExplicitOffsets" id="simul::clouds::CloudKeyframer::GetExplicitOffsets" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a6fdbdad892bcbd9e90e7e0a834263b99" />
       <keyword name="SetExplicitOffsets" id="simul::clouds::CloudKeyframer::SetExplicitOffsets" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a0385666aa19568d7544c73c53bc9f01a" />
       <keyword name="GetPrecipitationThresholdKm" id="simul::clouds::CloudKeyframer::GetPrecipitationThresholdKm" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#ae2216c9fc42e0d81c3e0ea98336ee46b" />
@@ -912,7 +914,6 @@
       <keyword name="GetMinimumLightElevationDegrees" id="simul::clouds::CloudProperties::GetMinimumLightElevationDegrees" ref="classsimul_1_1clouds_1_1CloudProperties.html#a5128a0b57c83d7543e04698f41e80320" />
       <keyword name="SetMinimumLightElevationDegrees" id="simul::clouds::CloudProperties::SetMinimumLightElevationDegrees" ref="classsimul_1_1clouds_1_1CloudProperties.html#a80abecfb336a02b370b385c03cb1a9d2" />
       <keyword name="simul::clouds::Environment" id="simul::clouds::Environment" ref="classsimul_1_1clouds_1_1Environment.html" />
-      <keyword name="cloud2DKeyframer" id="simul::clouds::Environment::cloud2DKeyframer" ref="classsimul_1_1clouds_1_1Environment.html#a7670dbb4a7807b4c0d4bb44497529d14" />
       <keyword name="cloudKeyframers" id="simul::clouds::Environment::cloudKeyframers" ref="classsimul_1_1clouds_1_1Environment.html#aa7f2672c02df2fd1beb2ef2abc676076" />
       <keyword name="skyKeyframer" id="simul::clouds::Environment::skyKeyframer" ref="classsimul_1_1clouds_1_1Environment.html#a05daca15edd8341baed29240db6277a2" />
       <keyword name="CreateCloudKeyframer" id="simul::clouds::Environment::CreateCloudKeyframer" ref="classsimul_1_1clouds_1_1Environment.html#a857a76072ba9d0eb3a689881db3f9a51" />
@@ -1906,7 +1907,7 @@
       <keyword name="ReloadTextures" id="simul::sky::BaseSkyRenderer::ReloadTextures" ref="classsimul_1_1sky_1_1BaseSkyRenderer.html#a0ae179bcc0ad404524036622ddfad810" />
       <keyword name="Render2DFades" id="simul::sky::BaseSkyRenderer::Render2DFades" ref="classsimul_1_1sky_1_1BaseSkyRenderer.html#a8b8b5d9cf97423d052020935a50848c6" />
       <keyword name="RenderCelestialDisplay" id="simul::sky::BaseSkyRenderer::RenderCelestialDisplay" ref="classsimul_1_1sky_1_1BaseSkyRenderer.html#a843e2fe6738aa970f6dff68020f7f711" />
-      <keyword name="RenderFades" id="simul::sky::BaseSkyRenderer::RenderFades" ref="classsimul_1_1sky_1_1BaseSkyRenderer.html#ad4340f78ac4c9a23bca71a8812d77ee3" />
+      <keyword name="RenderFades" id="simul::sky::BaseSkyRenderer::RenderFades" ref="classsimul_1_1sky_1_1BaseSkyRenderer.html#a56c8b5ed3896e7f9b15b2b7cfe305328" />
       <keyword name="RenderIlluminationBuffer" id="simul::sky::BaseSkyRenderer::RenderIlluminationBuffer" ref="classsimul_1_1sky_1_1BaseSkyRenderer.html#a7a11ceeb09192bd9eba4cd9ae36f1820" />
       <keyword name="RenderPlanet" id="simul::sky::BaseSkyRenderer::RenderPlanet" ref="classsimul_1_1sky_1_1BaseSkyRenderer.html#a09413cd79516666fb840d28d18317ccf" />
       <keyword name="RenderPlanets" id="simul::sky::BaseSkyRenderer::RenderPlanets" ref="classsimul_1_1sky_1_1BaseSkyRenderer.html#ab8e18ef805104b6eb02264f88f4fb305" />
@@ -1996,13 +1997,11 @@
       <keyword name="MoonAzimuth" id="simul::sky::SkyKeyframe::MoonAzimuth" ref="structsimul_1_1sky_1_1SkyKeyframe.html#ac53105f27c5e25181fee22aead51d934" />
       <keyword name="MoonElevation" id="simul::sky::SkyKeyframe::MoonElevation" ref="structsimul_1_1sky_1_1SkyKeyframe.html#a1844d2546cbc674317f8b4da93ca8223" />
       <keyword name="SeaLevelTemperatureK" id="simul::sky::SkyKeyframe::SeaLevelTemperatureK" ref="structsimul_1_1sky_1_1SkyKeyframe.html#add48aae5d32ba2f52a7c0be072cb1eac" />
-      <keyword name="skyl" id="simul::sky::SkyKeyframe::skyl" ref="structsimul_1_1sky_1_1SkyKeyframe.html#a6c94679420598b8c1eb0c0423c5d4659" />
       <keyword name="StoreAsColours" id="simul::sky::SkyKeyframe::StoreAsColours" ref="structsimul_1_1sky_1_1SkyKeyframe.html#a4390fc48442fa98529b7cd0ec7367b72" />
       <keyword name="SunAzimuth" id="simul::sky::SkyKeyframe::SunAzimuth" ref="structsimul_1_1sky_1_1SkyKeyframe.html#aa6868e17378910ded0c7650c7aa14d8a" />
       <keyword name="SunElevation" id="simul::sky::SkyKeyframe::SunElevation" ref="structsimul_1_1sky_1_1SkyKeyframe.html#a6d0ee2ed8a02a2971b042a2037bddd6b" />
       <keyword name="time" id="simul::sky::SkyKeyframe::time" ref="structsimul_1_1sky_1_1SkyKeyframe.html#a8090c3824cb8b2b3f62be0309d3c2574" />
       <keyword name="unique_id" id="simul::sky::SkyKeyframe::unique_id" ref="structsimul_1_1sky_1_1SkyKeyframe.html#aef4c61d5a3f818b2df0d4c4b6662e972" />
-      <keyword name="EnsureTableSizes" id="simul::sky::SkyKeyframe::EnsureTableSizes" ref="structsimul_1_1sky_1_1SkyKeyframe.html#ab8ade712a9c31c6526494df95a68b0d2" />
       <keyword name="GetColour" id="simul::sky::SkyKeyframe::GetColour" ref="structsimul_1_1sky_1_1SkyKeyframe.html#a313e86f97b5f841709e069d6d5edc13f" />
       <keyword name="GetFloat" id="simul::sky::SkyKeyframe::GetFloat" ref="structsimul_1_1sky_1_1SkyKeyframe.html#afb0c095d85fe791b6590ac17ce9a8ed4" />
       <keyword name="GetInt" id="simul::sky::SkyKeyframe::GetInt" ref="structsimul_1_1sky_1_1SkyKeyframe.html#aa60df4257f97dea0cc9bf20bbf0a7b4a" />
