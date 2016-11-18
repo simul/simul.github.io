@@ -85,6 +85,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a class="el" href="classsimul_1_1sky_1_1BaseSkyRenderer.html">simul::sky::BaseSkyRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a4b63cf2e5e83ae2f5914f3d5548079cd">GetBaseSkyRenderer</a> ()</td></tr>
 <tr class="memdesc:a4b63cf2e5e83ae2f5914f3d5548079cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the sky renderer. <br /></td></tr>
 <tr class="separator:a4b63cf2e5e83ae2f5914f3d5548079cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5196ff02add73f847971932f01122a3a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a5196ff02add73f847971932f01122a3a">GetExportLightningStrikes</a> (ExportLightningStrike *export_strikes, int max_s, float game_time, float real_time) const </td></tr>
+<tr class="separator:a5196ff02add73f847971932f01122a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee13dd1ce6b2c681f11d48c17e941eab"><td class="memItemLeft" align="right" valign="top">const simul::sky::float4 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#aee13dd1ce6b2c681f11d48c17e941eab">GetHorizonColour</a> (float view_altitude_km)</td></tr>
 <tr class="memdesc:aee13dd1ce6b2c681f11d48c17e941eab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a depth texture, whose alpha values represent the depth co-ordinate. This will be used when clouds are rendered in front of terrain etc.  <a href="#aee13dd1ce6b2c681f11d48c17e941eab">More...</a><br /></td></tr>
 <tr class="separator:aee13dd1ce6b2c681f11d48c17e941eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,9 +130,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a9429a8aa0531ceb7ed1fcd0b2c55d71e">RenderCelestialBackground</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, <a class="el" href="namespacesimul_1_1clouds.html#a1dc56c71e4d8698ef947bc727ca3124d">TrueSkyRenderMode</a> renderMode, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *depthTexture, vec4 viewportTextureRegionXYWH, float exposure)</td></tr>
 <tr class="memdesc:a9429a8aa0531ceb7ed1fcd0b2c55d71e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the sun, moon and stars - call this while the depth buffer is bound. <br /></td></tr>
 <tr class="separator:a9429a8aa0531ceb7ed1fcd0b2c55d71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9711dc6925ead27e1b6a3ca226073f06"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a9711dc6925ead27e1b6a3ca226073f06">RenderMixedResolution</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, <a class="el" href="namespacesimul_1_1clouds.html#a1dc56c71e4d8698ef947bc727ca3124d">TrueSkyRenderMode</a> renderMode, float exposure, float gamma, const vec4 &amp;depthViewportXYWH)</td></tr>
-<tr class="memdesc:a9711dc6925ead27e1b6a3ca226073f06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the sky including atmospherics as an overlay, using a supplied platform-dependent depth texture.  <a href="#a9711dc6925ead27e1b6a3ca226073f06">More...</a><br /></td></tr>
-<tr class="separator:a9711dc6925ead27e1b6a3ca226073f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0349de40bbe392b785c83016042cadf1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a0349de40bbe392b785c83016042cadf1">RenderMixedResolution</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *depthTexture, <a class="el" href="namespacesimul_1_1clouds.html#a1dc56c71e4d8698ef947bc727ca3124d">TrueSkyRenderMode</a> renderMode, float exposure, float gamma, const vec4 &amp;depthViewportXYWH)</td></tr>
+<tr class="memdesc:a0349de40bbe392b785c83016042cadf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the sky including atmospherics as an overlay, using a supplied platform-dependent depth texture.  <a href="#a0349de40bbe392b785c83016042cadf1">More...</a><br /></td></tr>
+<tr class="separator:a0349de40bbe392b785c83016042cadf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3bb208131941ffec282235785ea9028"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad3bb208131941ffec282235785ea9028"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ad3bb208131941ffec282235785ea9028">RenderOverlays</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, int view_id=-1)</td></tr>
 <tr class="memdesc:ad3bb208131941ffec282235785ea9028"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the debug overlays. <br /></td></tr>
@@ -1088,7 +1090,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a class="anchor" id="a9711dc6925ead27e1b6a3ca226073f06"></a>
+<a class="anchor" id="a0349de40bbe392b785c83016042cadf1"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1096,10 +1098,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void simul::clouds::BaseWeatherRenderer::RenderMixedResolution </td>
+          <td class="memname">virtual bool simul::clouds::BaseWeatherRenderer::RenderMixedResolution </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;&#160;</td>
           <td class="paramname"><em>deviceContext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *&#160;</td>
+          <td class="paramname"><em>depthTexture</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1139,7 +1147,46 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><div class="memdoc">
 
 <p>Render the sky including atmospherics as an overlay, using a supplied platform-dependent depth texture. </p>
-<p><em>deviceContext</em> is the platform-dependent render context, <em>exposure</em> is a multiplier for the rendered sky brightness, The <em>view_id</em> is an integer that distinguishes between multiple simultaneous viewports onscreen. By convention, viewport 0 is the main view, and viewport 1 is the cubemap for reflections and lighting. If <em>is_cubemap</em> is set, low-definition rendering is used. The <em>mainDepthTexture</em> is a single-sampled or MSAA depth texture. You can use a <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html" title="A Texture base class. ">simul::crossplatform::Texture</a>-derived class to wrapper your depth texture. The <em>lowResDepthTexture</em> is an API-dependent texture or texture resource pointer, with near far depth in the r and g, and b 0 or 1 for edges. The <em>depthViewportXYWH</em> determines what part of the depth texture represents this viewport - normally (0,0,1,1). </p>
+<p><em>deviceContext</em> is the platform-dependent render context, <em>exposure</em> is a multiplier for the rendered sky brightness, The <em>view_id</em> is an integer that distinguishes between multiple simultaneous viewports onscreen. By convention, viewport 0 is the main view, and viewport 1 is the cubemap for reflections and lighting. If <em>is_cubemap</em> is set, low-definition rendering is used. The <em>mainDepthTexture</em> is a single-sampled or MSAA depth texture. You can use a <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html" title="A Texture base class. ">simul::crossplatform::Texture</a>-derived class to wrapper your depth texture. The <em>lowResDepthTexture</em> is an API-dependent texture or texture resource pointer, with near far depth in the r and g, and b 0 or 1 for edges. The <em>depthViewportXYWH</em> determines what part of the depth texture represents this viewport - normally (0,0,1,1). Returns true if there is a lightpass. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5196ff02add73f847971932f01122a3a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int simul::clouds::BaseWeatherRenderer::GetExportLightningStrikes </td>
+          <td>(</td>
+          <td class="paramtype">ExportLightningStrike *&#160;</td>
+          <td class="paramname"><em>export_strikes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>max_s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>game_time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>real_time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get lightning strikes. This calls GetExportLightningStrikes in <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html">CloudKeyframer</a>, but also includes a cloud density query so that lightning can't come from empty sky. </p>
 
 </div>
 </div>
@@ -1258,6 +1305,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION SIMUL_MAJOR_VERSION=4.0.0<small>
-Fri Nov 4 2016 07:53:27</small></address>
+Fri Nov 18 2016 07:53:44</small></address>
 </body>
 </html>

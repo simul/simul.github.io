@@ -36,7 +36,6 @@
       <LI><OBJECT type="text/sitemap"><param name="Name" value="dx11"><param name="Local" value="namespacesimul_1_1dx11.html"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="geometry"><param name="Local" value="namespacesimul_1_1geometry.html"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="math"><param name="Local" value="namespacesimul_1_1math.html"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="plugin"><param name="Local" value="namespacesimul_1_1plugin.html"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="sky"><param name="Local" value="namespacesimul_1_1sky.html"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
     </UL>
@@ -188,7 +187,6 @@
       <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::clouds::CloudKeyframer"><param name="Local" value="classsimul_1_1clouds_1_1CloudKeyframer.html"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::crossplatform::PlatformStructuredBuffer"><param name="Local" value="classsimul_1_1crossplatform_1_1PlatformStructuredBuffer.html"><param name="ImageNumber" value="11"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::plugin::PluginTrueSkyRenderer"><param name="Local" value="classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::clouds::PointSource"><param name="Local" value="namespacesimul_1_1clouds.html#structsimul_1_1clouds_1_1PointSource"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::crossplatform::PosColourVertex"><param name="Local" value="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1PosColourVertex"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::clouds::PrecipitationRegion"><param name="Local" value="structsimul_1_1clouds_1_1PrecipitationRegion.html"><param name="ImageNumber" value="11"></OBJECT>
@@ -247,8 +245,8 @@
       <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::math::VirtualVector"><param name="Local" value="classsimul_1_1math_1_1VirtualVector.html"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::math::Vector3"><param name="Local" value="classsimul_1_1math_1_1Vector3.html"><param name="ImageNumber" value="11"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::dx11::VertexBuffer&lt; T &gt;"><param name="Local" value="structsimul_1_1dx11_1_1VertexBuffer.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="Obj::VertexBuffer"><param name="Local" value="structObj_1_1VertexBuffer.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::dx11::VertexBuffer&lt; T &gt;"><param name="Local" value="structsimul_1_1dx11_1_1VertexBuffer.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::crossplatform::Viewport"><param name="Local" value="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1Viewport"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="simul::crossplatform::ViewStruct"><param name="Local" value="structsimul_1_1crossplatform_1_1ViewStruct.html"><param name="ImageNumber" value="11"></OBJECT>
     </UL>

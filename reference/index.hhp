@@ -166,11 +166,6 @@ OpenGLRenderer_8h_source.html
 PrintEffectLog_8h_source.html
 Profiler_8h_source.html
 SimulGLUtilities_8h_source.html
-FbxConverter_8h_source.html
-PluginTrueSkyRenderer_8h_source.html
-RenderingPlugin_8cpp_source.html
-UE4PluginRenderInterfaceDll_8h_source.html
-UnityPluginInterface_8h_source.html
 0_01Main_8md_source.html
 1_01Intro_8md_source.html
 2_01GettingStarted_8md_source.html
@@ -400,9 +395,6 @@ classsimul_1_1opengl_1_1Effect.html
 classsimul_1_1opengl_1_1Effect-members.html
 classsimul_1_1opengl_1_1RenderPlatform.html
 classsimul_1_1opengl_1_1RenderPlatform-members.html
-namespacesimul_1_1plugin.html
-classsimul_1_1plugin_1_1PluginTrueSkyRenderer.html
-classsimul_1_1plugin_1_1PluginTrueSkyRenderer-members.html
 namespacesimul_1_1sky.html
 classsimul_1_1sky_1_1AtmosphericScatteringInterface.html
 classsimul_1_1sky_1_1AtmosphericScatteringInterface-members.html
@@ -461,11 +453,8 @@ dir_b5155af1dd69a57b4d19905b70b753b1.html
 dir_07db93c1b18aa1d0fa68a2c6832e5192.html
 dir_7c4c794c08681e3d269a2afdbd17f1e5.html
 dir_efd9caedf5c5248a361f0edf4ea3906e.html
-dir_ea2f5f47a224b7fa4456766a60d50b7d.html
-dir_954a4dbdf46bb23190e81c85f668c59e.html
 dir_beaf6350625f40cba10f37349f035602.html
 dir_146346ad1b266349ecb82355073ad5f6.html
-dir_88798d151fe33ff6d78cd91cc388de10.html
 index.html
 pages.html
 namespaces.html
