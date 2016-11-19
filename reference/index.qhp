@@ -383,11 +383,11 @@
       <keyword name="EnsureEffectsAreBuilt" id="simul::clouds::BaseCloudRenderer::EnsureEffectsAreBuilt" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a35b5d9ee17c0a0f1287332120df258ca" />
       <keyword name="simul::clouds::BaseGpuCloudGenerator" id="simul::clouds::BaseGpuCloudGenerator" ref="classsimul_1_1clouds_1_1BaseGpuCloudGenerator.html" />
       <keyword name="CanPerformGPULighting" id="simul::clouds::BaseGpuCloudGenerator::CanPerformGPULighting" ref="classsimul_1_1clouds_1_1BaseGpuCloudGenerator.html#a71d5ab53aa76f521c5638023f78d5f49" />
-      <keyword name="FillDensityGrid" id="simul::clouds::BaseGpuCloudGenerator::FillDensityGrid" ref="classsimul_1_1clouds_1_1BaseGpuCloudGenerator.html#ae2e7c7b4730c1df259cb8f76e40b7fa2" />
+      <keyword name="FillDensityGrid" id="simul::clouds::BaseGpuCloudGenerator::FillDensityGrid" ref="classsimul_1_1clouds_1_1BaseGpuCloudGenerator.html#aa88c2bb6520dd502ccb6928e2fb118b6" />
       <keyword name="GetDensityGridsize" id="simul::clouds::BaseGpuCloudGenerator::GetDensityGridsize" ref="classsimul_1_1clouds_1_1BaseGpuCloudGenerator.html#a1b729143a1641e0104931a36eefcd710" />
-      <keyword name="GPUTransferDataToTexture" id="simul::clouds::BaseGpuCloudGenerator::GPUTransferDataToTexture" ref="classsimul_1_1clouds_1_1BaseGpuCloudGenerator.html#a75f5eca7d661f2057dd7fbb80526d910" />
+      <keyword name="GPUTransferDataToTexture" id="simul::clouds::BaseGpuCloudGenerator::GPUTransferDataToTexture" ref="classsimul_1_1clouds_1_1BaseGpuCloudGenerator.html#a9a7550176914600de186dbb57a53cf5d" />
       <keyword name="Make3DNoiseTexture" id="simul::clouds::BaseGpuCloudGenerator::Make3DNoiseTexture" ref="classsimul_1_1clouds_1_1BaseGpuCloudGenerator.html#abb897091b534211596293b6951709b0b" />
-      <keyword name="PerformGPURelight" id="simul::clouds::BaseGpuCloudGenerator::PerformGPURelight" ref="classsimul_1_1clouds_1_1BaseGpuCloudGenerator.html#ad389d7686e52fe09f4a9ad6240061445" />
+      <keyword name="PerformGPURelight" id="simul::clouds::BaseGpuCloudGenerator::PerformGPURelight" ref="classsimul_1_1clouds_1_1BaseGpuCloudGenerator.html#addea5f127fa0f1ce08cc0254fe9670dd" />
       <keyword name="GetEnabled" id="simul::clouds::BaseGpuCloudGenerator::GetEnabled" ref="classsimul_1_1clouds_1_1BaseGpuCloudGenerator.html#aa9fa23e18d5a526edd69110860eb4eeb" />
       <keyword name="SetEnabled" id="simul::clouds::BaseGpuCloudGenerator::SetEnabled" ref="classsimul_1_1clouds_1_1BaseGpuCloudGenerator.html#a3da1334a2c6a7116eed96b45f2cbe0a5" />
       <keyword name="simul::clouds::BaseLightningRenderer" id="simul::clouds::BaseLightningRenderer" ref="classsimul_1_1clouds_1_1BaseLightningRenderer.html" />
@@ -827,8 +827,8 @@
       <keyword name="SetVisible" id="simul::clouds::CloudKeyframer::SetVisible" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a8bebb1e3f837adb7867903d96eebed27" />
       <keyword name="GetPhase" id="simul::clouds::CloudKeyframer::GetPhase" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a8c74f40e99a227ae2ba80106bfc0b091" />
       <keyword name="SetPhase" id="simul::clouds::CloudKeyframer::SetPhase" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#abd28ecc757e339eaa09065f471cce24d" />
-      <keyword name="GetMapTexture" id="simul::clouds::CloudKeyframer::GetMapTexture" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a45694c4f390a5df420144ad604bb01c2" />
-      <keyword name="SetMapTexture" id="simul::clouds::CloudKeyframer::SetMapTexture" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a31692a81ebd083a14d357da398c0db67" />
+      <keyword name="GetMapTexture" id="simul::clouds::CloudKeyframer::GetMapTexture" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#abb810eaaf1d7ed0109088e5ba389b622" />
+      <keyword name="SetMapTexture" id="simul::clouds::CloudKeyframer::SetMapTexture" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a5422aaab289b4e95c9ccdaa986a28311" />
       <keyword name="GetExplicitOffsets" id="simul::clouds::CloudKeyframer::GetExplicitOffsets" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a6fdbdad892bcbd9e90e7e0a834263b99" />
       <keyword name="SetExplicitOffsets" id="simul::clouds::CloudKeyframer::SetExplicitOffsets" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#a0385666aa19568d7544c73c53bc9f01a" />
       <keyword name="GetPrecipitationThresholdKm" id="simul::clouds::CloudKeyframer::GetPrecipitationThresholdKm" ref="classsimul_1_1clouds_1_1CloudKeyframer.html#ae2216c9fc42e0d81c3e0ea98336ee46b" />
