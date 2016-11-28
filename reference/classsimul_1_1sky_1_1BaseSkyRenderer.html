@@ -135,10 +135,10 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseSkyRenderer.html#a843e2fe6738aa970f6dff68020f7f711">RenderCelestialDisplay</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;context)</td></tr>
 <tr class="memdesc:a843e2fe6738aa970f6dff68020f7f711"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw sidereal and geographic information to screen. <br /></td></tr>
 <tr class="separator:a843e2fe6738aa970f6dff68020f7f711"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56c8b5ed3896e7f9b15b2b7cfe305328"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56c8b5ed3896e7f9b15b2b7cfe305328"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseSkyRenderer.html#a56c8b5ed3896e7f9b15b2b7cfe305328">RenderFades</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, int view_id, int x, int y, int w, int h)</td></tr>
-<tr class="memdesc:a56c8b5ed3896e7f9b15b2b7cfe305328"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the 2D fades to screen for debugging. <br /></td></tr>
-<tr class="separator:a56c8b5ed3896e7f9b15b2b7cfe305328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4340f78ac4c9a23bca71a8812d77ee3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4340f78ac4c9a23bca71a8812d77ee3"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseSkyRenderer.html#ad4340f78ac4c9a23bca71a8812d77ee3">RenderFades</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, int x, int y, int w, int h)</td></tr>
+<tr class="memdesc:ad4340f78ac4c9a23bca71a8812d77ee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the 2D fades to screen for debugging. <br /></td></tr>
+<tr class="separator:ad4340f78ac4c9a23bca71a8812d77ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a11ceeb09192bd9eba4cd9ae36f1820"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseSkyRenderer.html#a7a11ceeb09192bd9eba4cd9ae36f1820">RenderIlluminationBuffer</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext)</td></tr>
 <tr class="separator:a7a11ceeb09192bd9eba4cd9ae36f1820"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09413cd79516666fb840d28d18317ccf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1sky_1_1BaseSkyRenderer.html#a09413cd79516666fb840d28d18317ccf">RenderPlanet</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *tex, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *depthTexture, vec4 viewportTextureRegionXYWH, float rad, const float *dir, const float *colr, bool do_lighting, float exposure)</td></tr>
@@ -201,12 +201,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <li>Rendering planets (e.g. the Moon): using RenderPlanets(void *context,float exposure)</li>
 <li>Rendering the sun, using RenderSun(void *context,float exposure)</li>
 </ul>
-<p>See <a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ae6926dd292486c1c305b73b1c5245a73">BaseWeatherRenderer::Render</a> and <a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a0349de40bbe392b785c83016042cadf1">RenderMixedResolution</a>.</p>
+<p>See <a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#ae6926dd292486c1c305b73b1c5245a73">BaseWeatherRenderer::Render</a> and <a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a9711dc6925ead27e1b6a3ca226073f06">RenderMixedResolution</a>.</p>
 <p>The rendering of the sky is no longer handled by <a class="el" href="classsimul_1_1sky_1_1BaseSkyRenderer.html" title="The base class for real-time sky renderers. ">BaseSkyRenderer</a> or its derived classes because the <a class="el" href="classsimul_1_1sky_1_1BaseAtmosphericsRenderer.html">atmospherics renderer</a> now does this in a single pass including both sky and atmospherics.</p>
 <p>It is the job of the <a class="el" href="classsimul_1_1sky_1_1Sky.html" title="A class that calculates the sky colour. ">Sky</a> Renderer to update the atmospherics textures to be used by the other render classes, and render celestial objects.</p>
 <p>The fade tables are stored as 3D textures - an axis for distance, one for elevation, one for altitude. The table size is given by NumElevations, NumDistances and SetNumAltitudes() of <a class="el" href="classsimul_1_1sky_1_1SkyKeyframer.html">SkyKeyframer</a>. Try to minimize the number of altitudes required, in order to maximize performance, and use SetAltitudeRangeKm on initialization to the range you will use.</p>
 <p><a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a475e35931efc000687a8d66251e86505">BaseWeatherRenderer::PreRenderUpdate</a> first calls <a class="el" href="classsimul_1_1sky_1_1BaseSkyRenderer.html#afab6092670bfd63c17a47c95c8ded263">EnsureTexturesAreUpToDate</a>, which fills in the fade textures with loss and inscatter values.</p>
-<p>Then, the sky and atmospheric scattering (atmospherics, or distance-fades) are drawn together as an overlay after the depth-buffer has been filled by any solids in the scene (see <a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a0349de40bbe392b785c83016042cadf1">simul::clouds::BaseWeatherRenderer::RenderMixedResolution</a>).</p>
+<p>Then, the sky and atmospheric scattering (atmospherics, or distance-fades) are drawn together as an overlay after the depth-buffer has been filled by any solids in the scene (see <a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html#a9711dc6925ead27e1b6a3ca226073f06">simul::clouds::BaseWeatherRenderer::RenderMixedResolution</a>).</p>
 <p>There are two main elements to realistic atmospherics: Loss, and Inscatter.</p>
 <div class="image">
 <img src="FadeLogic.png" alt="FadeLogic.png"/>
@@ -443,6 +443,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION SIMUL_MAJOR_VERSION=4.0.0<small>
-Mon Nov 28 2016 07:53:56</small></address>
+Fri Oct 28 2016 07:53:27</small></address>
 </body>
 </html>

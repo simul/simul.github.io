@@ -49,12 +49,8 @@ url: simul::dx11::TrueSkyRenderer Class Reference
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2a0c029e642da84e88104ceb2415203c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><b>CopySkylight</b> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *targetTexture, float *targetShValues, int shOrder, const mat4 *engineToSimulMatrix4x4, int updateFrequency)</td></tr>
-<tr class="separator:a2a0c029e642da84e88104ceb2415203c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1588b4073a90b9aa5727c8bebb99c25"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1588b4073a90b9aa5727c8bebb99c25"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>EnsureSkylight</b> (int cubemap_view_id, int size, int mips, <a class="el" href="namespacesimul_1_1crossplatform.html#a29c5057471bee180c1cec3a2ccdd9940">crossplatform::PixelFormat</a> format, const mat4 *cubeToSimulMatrix, int shOrder, int updateFrequency)</td></tr>
-<tr class="memdesc:ad1588b4073a90b9aa5727c8bebb99c25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create or update a skylight. <br /></td></tr>
-<tr class="separator:ad1588b4073a90b9aa5727c8bebb99c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a29d7e32989e1e6c08a633659e2da23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><b>CopySkylight</b> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html">crossplatform::Texture</a> *targetTexture, float *targetShValues, int shOrder, const mat4 *engineToSimulMatrix4x4)</td></tr>
+<tr class="separator:a3a29d7e32989e1e6c08a633659e2da23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa63a54f0ccfea9f7e261fdb87589a919"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa63a54f0ccfea9f7e261fdb87589a919"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAmortization</b> (int view_id, int a)</td></tr>
 <tr class="memdesc:aa63a54f0ccfea9f7e261fdb87589a919"><td class="mdescLeft">&#160;</td><td class="mdescRight">How often to update each cloud texel; 1:always, 2:every 4 frames, n:every n^2 frames. <br /></td></tr>
@@ -196,13 +192,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAmortization</b> (
 <tr class="separator:a0c043a23248c8785d338803f939c7870"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6f4396bb3ada7addfd79e0f9b4613fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><b>SetShowTransparencyOverlay</b> (bool value)</td></tr>
 <tr class="separator:ac6f4396bb3ada7addfd79e0f9b4613fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Property: bool ShowSphericalPlanet</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p>"Show spherical planet overlay." </p>
-</div></td></tr>
-<tr class="memitem:aeb47442632207ef659d5e64dfe2c9e48"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetShowSphericalPlanet</b> () const </td></tr>
-<tr class="separator:aeb47442632207ef659d5e64dfe2c9e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a305143e3a02be8c4400bfc4f9307c834"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><b>SetShowSphericalPlanet</b> (bool value)</td></tr>
-<tr class="separator:a305143e3a02be8c4400bfc4f9307c834"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Property: int CloudTool</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>"Show cloud editing tools." </p>
 </div></td></tr>
@@ -1175,55 +1164,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAmortization</b> (
 
 </div>
 </div>
-<a class="anchor" id="aeb47442632207ef659d5e64dfe2c9e48"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool simul::clouds::TrueSkyRenderer::GetShowSphericalPlanet </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get the value of ShowSphericalPlanet . </p>
-
-</div>
-</div>
-<a class="anchor" id="a305143e3a02be8c4400bfc4f9307c834"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void simul::clouds::TrueSkyRenderer::SetShowSphericalPlanet </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Set the value of ShowSphericalPlanet . </p>
-
-</div>
-</div>
 <a class="anchor" id="afe4546fafd1659caf51beb8976f30249"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1469,7 +1409,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAmortization</b> (
 
 </div>
 </div>
-<a class="anchor" id="a2a0c029e642da84e88104ceb2415203c"></a>
+<a class="anchor" id="a3a29d7e32989e1e6c08a633659e2da23"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1504,13 +1444,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAmortization</b> (
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const mat4 *&#160;</td>
-          <td class="paramname"><em>engineToSimulMatrix4x4</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>updateFrequency</em>&#160;</td>
+          <td class="paramname"><em>engineToSimulMatrix4x4</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1536,6 +1470,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAmortization</b> (
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION SIMUL_MAJOR_VERSION=4.0.0<small>
-Mon Nov 28 2016 07:53:56</small></address>
+Fri Oct 28 2016 07:53:26</small></address>
 </body>
 </html>

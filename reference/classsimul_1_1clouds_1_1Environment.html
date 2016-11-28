@@ -47,6 +47,10 @@ url: simul::clouds::Environment Class Reference
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a7670dbb4a7807b4c0d4bb44497529d14"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7670dbb4a7807b4c0d4bb44497529d14"></a>
+<a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html">simul::clouds::CloudKeyframer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1Environment.html#a7670dbb4a7807b4c0d4bb44497529d14">cloud2DKeyframer</a></td></tr>
+<tr class="memdesc:a7670dbb4a7807b4c0d4bb44497529d14"><td class="mdescLeft">&#160;</td><td class="mdescRight">The 2D cloud layer. <br /></td></tr>
+<tr class="separator:a7670dbb4a7807b4c0d4bb44497529d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7f2672c02df2fd1beb2ef2abc676076"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa7f2672c02df2fd1beb2ef2abc676076"></a>
 std::map&lt; int, <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html">simul::clouds::CloudKeyframer</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1Environment.html#aa7f2672c02df2fd1beb2ef2abc676076">cloudKeyframers</a></td></tr>
 <tr class="memdesc:aa7f2672c02df2fd1beb2ef2abc676076"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main 3D cloud layer. <br /></td></tr>
@@ -58,18 +62,14 @@ std::map&lt; int, <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.htm
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a857a76072ba9d0eb3a689881db3f9a51"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a857a76072ba9d0eb3a689881db3f9a51"></a>
-virtual <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html">clouds::CloudKeyframer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1Environment.html#a857a76072ba9d0eb3a689881db3f9a51">CreateCloudKeyframer</a> (<a class="el" href="classsimul_1_1base_1_1MemoryInterface.html">base::MemoryInterface</a> *m, bool make2d, int id=-1)</td></tr>
-<tr class="memdesc:a857a76072ba9d0eb3a689881db3f9a51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to create a custom derived keyframer. <br /></td></tr>
-<tr class="separator:a857a76072ba9d0eb3a689881db3f9a51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfe5bcbcb3265161d51b64e6d7cc5f03"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abfe5bcbcb3265161d51b64e6d7cc5f03"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1Environment.html#abfe5bcbcb3265161d51b64e6d7cc5f03">CreateSubObjects</a> ()</td></tr>
 <tr class="memdesc:abfe5bcbcb3265161d51b64e6d7cc5f03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this to create the keyframer sub-objects. If not called before the first <a class="el" href="classsimul_1_1clouds_1_1Environment.html#a8a1520e878ee234816a221b9049e1c41" title="Call this once per-frame. ">Update()</a>, it will be called from there. <br /></td></tr>
 <tr class="separator:abfe5bcbcb3265161d51b64e6d7cc5f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06e2454643dd42a07b77bbe71073bc11"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06e2454643dd42a07b77bbe71073bc11"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1Environment.html#a06e2454643dd42a07b77bbe71073bc11">Environment</a> (<a class="el" href="classsimul_1_1base_1_1MemoryInterface.html">simul::base::MemoryInterface</a> *mem=NULL)</td></tr>
-<tr class="memdesc:a06e2454643dd42a07b77bbe71073bc11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor - initialize with an optional memory allocator. <br /></td></tr>
-<tr class="separator:a06e2454643dd42a07b77bbe71073bc11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39ec767124cc030757898bc0797e5135"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39ec767124cc030757898bc0797e5135"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1Environment.html#a39ec767124cc030757898bc0797e5135">Environment</a> (const char *license=NULL, <a class="el" href="classsimul_1_1base_1_1MemoryInterface.html">simul::base::MemoryInterface</a> *mem=NULL)</td></tr>
+<tr class="memdesc:a39ec767124cc030757898bc0797e5135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor - initialize with your 16-character license string, and an optional memory allocator. <br /></td></tr>
+<tr class="separator:a39ec767124cc030757898bc0797e5135"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19faa877601c564de4fbecfa0468533d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19faa877601c564de4fbecfa0468533d"></a>
 <a class="el" href="classsimul_1_1clouds_1_1CloudKeyframer.html">CloudKeyframer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1Environment.html#a19faa877601c564de4fbecfa0468533d">GetCloudKeyframer</a> (int uid)</td></tr>
 <tr class="memdesc:a19faa877601c564de4fbecfa0468533d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the cloud keyframer with the specified uid. <br /></td></tr>
@@ -141,6 +141,6 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION SIMUL_MAJOR_VERSION=4.0.0<small>
-Mon Nov 28 2016 07:53:55</small></address>
+Fri Oct 28 2016 07:53:25</small></address>
 </body>
 </html>
