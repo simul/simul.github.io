@@ -20,9 +20,14 @@ Lighting
 
 The simplest way to drive Unreal Engine lighting from trueSKY is to use the trueSKY macros. These are in the file trueSkyMacros.uasset, which is to be found in [UE4]/Engine/Plugins/TrueSkyPlugin/Content.
 
-To set the direction and colour of a Directional Light, find the UpdateSunlight or UpdateMoonlight function, and connect a reference to the DirectionalLight to the input. Make sure that the "Exec" input is hit once per frame by an event tick. 
+To set the direction and colour of a Directional Light, find the trueSKYSun or trueSKYMoon macro, and connect a reference to the DirectionalLight to the input. Make sure that the "Exec" input is hit once per frame by an event tick. 
+
 
 <a href="http://docs.simul.co/unrealengine/images/UpdateSunlight.png"><img src="http://docs.simul.co/unrealengine/images/UpdateSunlight.png" alt="Blueprint"/></a>
+
+Alternatively, use the TrueSkyLighting macro -- this also allows time of day to be set.
+
+<a href="http://docs.simul.co/unrealengine/images/trueSkyLighting.png"><img src="http://docs.simul.co/unrealengine/images/trueSkyLighting.png" alt="Blueprint"/></a>
 
 Additionally, point lights can be used to illuminate the clouds. Because of the relative scale of clouds to the UE4 scene, the intensity of the light must be very large in order to have a visible effect.
  
@@ -127,9 +132,7 @@ Sun and Moon Properties
 
 <a href="http://docs.simul.co/unrealengine/images/SetFromSunAndMoon.png"><img src="http://docs.simul.co/unrealengine/images/SetFromSunAndMoon.png" alt="Blueprint" />
 
-In a reversal of the default setup, SetSunRotation and SetMoonRotation can be used to drive the trueSKY sun and moon directly from a direct light source (or some other object). In order to user this feature, it is recommended to set the Mode properties of the Sky keyframer to "Fixed Intervals (real time)", and "Gradual" update. This is so that any changes to the sun and moon direction will affect the trueSKY atmospherics regardless of whether game time is changing, and so that slight or slow changes in sun direction will not cause a per-frame recalculation of the atmospheric tables.
-
-<a href="http://docs.simul.co/unrealengine/images/SkyModeForSetSunDirection.png"><img src="http://docs.simul.co/unrealengine/images/SkyModeForSetSunDirection.png" alt="Blueprint" />
+In a reversal of the default setup, SetSunRotation and SetMoonRotation can be used to drive the trueSKY sun and moon directly from a direct light source (or some other object). In order to user this feature, it is recommended to set the Interpolation Mode property of the trueSky Sequence Actor to "RealTime". This is so that any changes to the sun and moon direction will affect the trueSKY atmospherics regardless of whether game time is changing, and so that slight or slow changes in sun direction will not cause a per-frame recalculation of the atmospheric tables.
 
 In addition to these Set functions for the sun/moon rotation, there are also Get functions for sun/moon rotation, colour and intensitiy. Additionally, you can Get/Set the texture of the moon in Blueprint.
 

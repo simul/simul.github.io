@@ -1,18 +1,4 @@
 
-html {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-}
-@media (min-width: 48em) {
-  html {
-    font-size: 14px;
-  }
-}
-@media (min-width: 58em) {
-  html {
-    font-size: 18px;
-  }
-}
-
 .custom-search {
     min-height: 49px;
 }
@@ -60,6 +46,5 @@ html {
 }
 
 code, pre code {
-  font-size: 16px;
-  font-family: "Source Code Pro","Courier New", monospace;
+  font-size: 12px;
 }

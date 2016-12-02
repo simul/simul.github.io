@@ -23,25 +23,25 @@ How to build it
 * Get the trueSKY UE4 fork from [GitHub](https://github.com/simul/UnrealEngine).
 If you are using a different UE4 codebase, pull changes from the Simul fork, and merge.
 
-* For a console build, unzip the additional console files from Epic into the main UE directory.
-
-* As described in the UE4 readme (in the root UnrealEngine directory), run Setup.bat and GenerateProjectFiles.bat from UE4. This will generate projects and the solution file (UE4.sln). For consoles you might use:
-
-```call GenerateProjectFiles -2015 -Platforms=Win64+PS4+XboxOne```
+* As described in the UE4 readme (in the root UnrealEngine directory), run Setup.bat and GenerateProjectFiles.bat from UE4. This will generate projects and the solution file (UE4.sln).
 
 * From UE4.12 onwards, the trueSKY binary libraries are *not* kept in the repository. This is because multiple trueSKY versions can work with the same Unreal version. So run the batch file Engine/Plugins/TrueSkyPlugin/GetBinaries.bat, passing the required trueSKY version as a parameter, e.g.
 
-```GetBinaries.bat 4.1```
+	GetBinaries.bat 4.0
 
-* For console builds, you will need additional files. Download the plugin installer for your console platform/s from (simul.co/download)[https://simul.co/download], and run it to install the 
-* Open the UE4 solution in Visual Studio: UE4.sln or UE4_PS4Win64XboxOne.sln etc.
-The UE4 project contains the "TrueSkyPlugin" folder in Engine\UE4\Plugins. The plugin is in the “[UE4]\Engine\Plugins\TrueSkyPlugin” directory in your UE4 installation. There are two trueSKY modules in the UE4 project – TrueSkyPlugin and TrueSkyEditorPlugin. Both of these load external trueSKY libraries, which are in “[UE4]\Engine\Binaries\ThirdParty\Simul”.
+* Use UE4.sln (UE4.vcxproj).
+The UE4 project contains the "TrueSkyPlugin" folder in Engine/UE4/Plugins. The plugin is in the “[UE4]\Engine\Plugins\TrueSkyPlugin” directory in your UE4 installation.
+The trueSKY binaries are in “[UE4]\Engine\Binaries\ThirdParty\Simul”. 
+There are two trueSKY modules in the UE4 project – TrueSkyPlugin and TrueSkyEditorPlugin.
 
 * Build the UE4 project in the "Development Editor" configuration.
 
+
 How to run it
 ---
-* Run the UE4 editor, either standalone or with the debugger.
+* Run UE4, either standalone or with the debugger.
+The TrueSkyPlugin loads "TrueSkyUI_MD.dll" and "UE4PluginRenderInterface_MT.dll" from [UE4]\Engine\Plugins\TrueSkyPlugin\Binaries\Win64.
+TrueSkyUI_MD.dll further loads the Qt libraries. For that, the PATH environment-variable is extended temporarily by the plugin to include "Engine/Binary/ThirdParty/Simul/Win64"
 
 When you run the UE4 editor, the trueSKY plugin should be enabled by default. If not, go to Edit->Plugin and type "trueSKY" into the search box to find the plugin, and check its "enabled" box, to enable the trueSKY plugin.
 
@@ -105,13 +105,14 @@ Modified Files in the Unreal Engine
 --------
 The following files in the UE source have been modified in the Simul branch.
 
-	Engine\Source\Runtime\Renderer\Public\RendererInterface.h
 	Engine\Source\Runtime\Renderer\Private\DeferredShadingRenderer.cpp
+	Engine\Source\Runtime\Renderer\Public\RendererInterface.h
 	Engine\Source\Runtime\Renderer\Private\RendererPrivate.h
 	Engine\Source\Runtime\Renderer\Private\SceneRendering.cpp
 	Engine\Source\Runtime\Renderer\Private\RendererScene.cpp
 
 	Engine\Source\Programs\AutomationTool\Win\WinPlatform.Automation.cs
+
 	Engine\Source\Programs\AutomationTool\PS4\PS4Platform.Automation.cs
 	Engine\Source\Programs\AutomationTool\XboxOne\XboxOnePlatform.Automation.cs
 	
