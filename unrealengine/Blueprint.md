@@ -74,7 +74,7 @@ Read more about [editing the sky here](http://docs.simul.co/unrealengine/Sky.htm
 Transparency
 ------------
 
-To correctly affect transparent objects, trueSKY will write loss, inscatter and cloud transparency textures once per frame. Connect the textures from the (automatically created) trueSky folder, to the texture properties in the trueSKY Sequence Actor to enable this. **Note**: If you are using the True Sky Light in place of the default UE4 Skylight, do not set the Skylight Cubemap RT.
+To correctly affect transparent objects, trueSKY will write loss, inscatter and cloud transparency textures once per frame. Connect the textures from the (automatically created) trueSky folder, to the texture properties in the trueSKY Sequence Actor to enable this.
 
 <a href="http://docs.simul.co/unrealengine/images/TrueSkyRenderTargets.png"><img src="http://docs.simul.co/unrealengine/images/TrueSkyRenderTargets.png" alt="Blueprint" /></a>
 

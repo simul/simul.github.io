@@ -52,7 +52,9 @@ An alternative, more compact way to set the time and drive the sun and moon is v
 
 <a href="http://docs.simul.co/unrealengine/images/AlternateTrueSkyLighting.png"><img src="http://docs.simul.co/unrealengine/images/AlternateTrueSkyLighting.png" alt="Blueprint"/></a> 
 
-By default the Unreal Engine will place a Skylight in the scene. To get the most out of this it is advisable to navigate to the TrueSkySequence Actor and set the Skylight Cubemap RT. It's also worth rembering to set the Render Textures for Loss, Inscatter and Cloud Visibility (these won't be much use here, but are important when rendering transparent materials alongside trueSKY). Unfortunately the default Skylight isn't ideal and if you find that your scene isn't lighting accurately (for example, if it is too bright at night), try removing the default Skylight and dragging a True Sky Light (Modes -> All Classes) into the scene. This needs no configuration but there are two things to be aware of. Firstly, do not manually capture the cubemap when using this Skylight, as it will automatically capture. And secondly, remove the Skylight Cubemap RT from the TrueSkySequenceActor if it has been set (this is only for the default Skylight).
+The default Unreal Engine Skylight is not dynamic. To get the most out of trueSKY it is advisable to replace this with a TrueSkyLight (Modes -> All Classes). This needs no configuration other than the update frequency (default 4 means every four frames the TrueSkyLight is updated). Do not manually capture the cubemap when using this Skylight: it works automatically.
+
+It's also worth rembering to set the Render Textures for Loss, Inscatter and Cloud Visibility (these won't be much use here, but are important when rendering transparent materials alongside trueSKY). 
 
 <a href="http://docs.simul.co/unrealengine/images/RTConfigure.png"><img src="http://docs.simul.co/unrealengine/images/RTConfigure.png" alt="Blueprint"/></a> 
 
