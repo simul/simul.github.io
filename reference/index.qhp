@@ -209,8 +209,8 @@
               <section title="simul::math::VirtualVector" ref="classsimul_1_1math_1_1VirtualVector.html" />
             </section>
             <section title="simul::math::Vector3" ref="classsimul_1_1math_1_1Vector3.html" />
-            <section title="Obj::VertexBuffer" ref="structObj_1_1VertexBuffer.html" />
             <section title="simul::dx11::VertexBuffer&lt; T &gt;" ref="structsimul_1_1dx11_1_1VertexBuffer.html" />
+            <section title="Obj::VertexBuffer" ref="structObj_1_1VertexBuffer.html" />
             <section title="simul::crossplatform::Viewport" ref="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1Viewport" />
             <section title="simul::crossplatform::ViewStruct" ref="structsimul_1_1crossplatform_1_1ViewStruct.html" />
           </section>
@@ -351,7 +351,6 @@
       <keyword name="CreateCloudGeometryHelper" id="simul::clouds::BaseCloudRenderer::CreateCloudGeometryHelper" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#aacc0e8648488515677f8b9d722aad557" />
       <keyword name="GetCloudOffset" id="simul::clouds::BaseCloudRenderer::GetCloudOffset" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a276429bd40031ed46a099cc4ce66ad95" />
       <keyword name="GetCloudScales" id="simul::clouds::BaseCloudRenderer::GetCloudScales" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ae7fdc21a767e56fc54f9cfe366d0eebc" />
-      <keyword name="GetCloudShadowTexture" id="simul::clouds::BaseCloudRenderer::GetCloudShadowTexture" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#acb085987e811d6348e6baace7900cd08" />
       <keyword name="GetDebugText" id="simul::clouds::BaseCloudRenderer::GetDebugText" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a2d5d3f4130142ce4de4fe06e0e882072" />
       <keyword name="GetLineQuery" id="simul::clouds::BaseCloudRenderer::GetLineQuery" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a72732e1b2ae7d87944c11569858f98ab" />
       <keyword name="GetMaxSlices" id="simul::clouds::BaseCloudRenderer::GetMaxSlices" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a01b5c4dc3879055f9acbd8aa0973360d" />
@@ -362,6 +361,7 @@
       <keyword name="GetSunOcclusion" id="simul::clouds::BaseCloudRenderer::GetSunOcclusion" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a15147fd3431de3ea3d3f92b11f8f33c3" />
       <keyword name="InvalidateDeviceObjects" id="simul::clouds::BaseCloudRenderer::InvalidateDeviceObjects" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ac22ae70c0b4e989b60307b57bf3937c9" />
       <keyword name="IsCameraAboveCloudBase" id="simul::clouds::BaseCloudRenderer::IsCameraAboveCloudBase" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a41f9007498f3d39428d7e2d6c619fab0" />
+      <keyword name="MakeCloudShadowTexture" id="simul::clouds::BaseCloudRenderer::MakeCloudShadowTexture" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ae3f677fb0fd48c09fc5a098fdd7ad25d" />
       <keyword name="PreRenderUpdate" id="simul::clouds::BaseCloudRenderer::PreRenderUpdate" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ae15f20c0ff731ccf3cccb85a9eb4734c" />
       <keyword name="RecompileShaders" id="simul::clouds::BaseCloudRenderer::RecompileShaders" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a689bba2dd0ae007cb327f679e4e37f8f" />
       <keyword name="Render" id="simul::clouds::BaseCloudRenderer::Render" ref="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ad7915ee08913f21fde0410c4d0b330bf" />
@@ -1046,7 +1046,7 @@
       <keyword name="DeactivateDepth" id="simul::clouds::TwoResFramebuffer::DeactivateDepth" ref="classsimul_1_1clouds_1_1TwoResFramebuffer.html#a3bfdde51dfc21ac1a739f60054e7fab5" />
       <keyword name="DeactivateLowRes" id="simul::clouds::TwoResFramebuffer::DeactivateLowRes" ref="classsimul_1_1clouds_1_1TwoResFramebuffer.html#a92ea230f30e1a4b3ff1a738d3cbd4f5f" />
       <keyword name="GetCubeIntegerFrustumRange" id="simul::clouds::TwoResFramebuffer::GetCubeIntegerFrustumRange" ref="classsimul_1_1clouds_1_1TwoResFramebuffer.html#a37cdd5d6b2ca8c99e1a31d74bbda3990" />
-      <keyword name="GetLowResDepthTexture" id="simul::clouds::TwoResFramebuffer::GetLowResDepthTexture" ref="classsimul_1_1clouds_1_1TwoResFramebuffer.html#a65dd698329673346f559d55b8978759e" />
+      <keyword name="GetStochasticDepthTexture" id="simul::clouds::TwoResFramebuffer::GetStochasticDepthTexture" ref="classsimul_1_1clouds_1_1TwoResFramebuffer.html#a6cdf5bc26db3e86d07ad1260f9b876b6" />
       <keyword name="GetUpdateTexture" id="simul::clouds::TwoResFramebuffer::GetUpdateTexture" ref="classsimul_1_1clouds_1_1TwoResFramebuffer.html#a322fc3e5df065fd772da373c5340e5b7" />
       <keyword name="RenderDepthBuffers" id="simul::clouds::TwoResFramebuffer::RenderDepthBuffers" ref="classsimul_1_1clouds_1_1TwoResFramebuffer.html#aa661fb85ac3d6b6ecf8cda103333dcf8" />
       <keyword name="Swap" id="simul::clouds::TwoResFramebuffer::Swap" ref="classsimul_1_1clouds_1_1TwoResFramebuffer.html#aae5de181ad9dcf92423e0b0dff1eb273" />
@@ -1106,6 +1106,7 @@
       <keyword name="SetFormat" id="simul::crossplatform::BaseFramebuffer::SetFormat" ref="classsimul_1_1crossplatform_1_1BaseFramebuffer.html#a51ddf88a8290809f40fad110e0ca907e" />
       <keyword name="SetUseFastRAM" id="simul::crossplatform::BaseFramebuffer::SetUseFastRAM" ref="classsimul_1_1crossplatform_1_1BaseFramebuffer.html#a3bce2dc4f7428d2e51079756a168c945" />
       <keyword name="SetWidthAndHeight" id="simul::crossplatform::BaseFramebuffer::SetWidthAndHeight" ref="classsimul_1_1crossplatform_1_1BaseFramebuffer.html#a1f4e79a3bbbc215c06b8eb7a717b233f" />
+      <keyword name="setDefaultRenderTargets" id="simul::crossplatform::BaseFramebuffer::setDefaultRenderTargets" ref="classsimul_1_1crossplatform_1_1BaseFramebuffer.html#af44eaee96684a3b95db555e81e28d26b" />
       <keyword name="simul::crossplatform::BaseOpticsRenderer" id="simul::crossplatform::BaseOpticsRenderer" ref="classsimul_1_1crossplatform_1_1BaseOpticsRenderer.html" />
       <keyword name="InvalidateDeviceObjects" id="simul::crossplatform::BaseOpticsRenderer::InvalidateDeviceObjects" ref="classsimul_1_1crossplatform_1_1BaseOpticsRenderer.html#a3c8c1dbfa9825ed9f9cd101efe116ee3" />
       <keyword name="RenderFlare" id="simul::crossplatform::BaseOpticsRenderer::RenderFlare" ref="classsimul_1_1crossplatform_1_1BaseOpticsRenderer.html#a2d661b1ea2b524a39efe0ff01fe55fe7" />
@@ -1197,7 +1198,7 @@
       <keyword name="simul::crossplatform::MouseCameraInput" id="simul::crossplatform::MouseCameraInput" ref="structsimul_1_1crossplatform_1_1MouseCameraInput.html" />
       <keyword name="simul::crossplatform::MouseCameraState" id="simul::crossplatform::MouseCameraState" ref="structsimul_1_1crossplatform_1_1MouseCameraState.html" />
       <keyword name="simul::crossplatform::PlatformStructuredBuffer" id="simul::crossplatform::PlatformStructuredBuffer" ref="classsimul_1_1crossplatform_1_1PlatformStructuredBuffer.html" />
-      <keyword name="ActualApply" id="simul::crossplatform::PlatformStructuredBuffer::ActualApply" ref="classsimul_1_1crossplatform_1_1PlatformStructuredBuffer.html#af73d0b08a9bc642b715b017dcad8b788" />
+      <keyword name="ActualApply" id="simul::crossplatform::PlatformStructuredBuffer::ActualApply" ref="classsimul_1_1crossplatform_1_1PlatformStructuredBuffer.html#a542d8eed165624ff26101011993a48d8" />
       <keyword name="simul::crossplatform::Query" id="simul::crossplatform::Query" ref="structsimul_1_1crossplatform_1_1Query.html" />
       <keyword name="GetData" id="simul::crossplatform::Query::GetData" ref="structsimul_1_1crossplatform_1_1Query.html#a2832853f03b6223cc74807091a3f41de" />
       <keyword name="simul::crossplatform::RenderPlatform" id="simul::crossplatform::RenderPlatform" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html" />
@@ -1235,7 +1236,7 @@
       <keyword name="GetShaderBinaryPath" id="simul::crossplatform::RenderPlatform::GetShaderBinaryPath" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#a2b35093ced8bdd7856b20bc4ddef553b" />
       <keyword name="GetShaderBuildMode" id="simul::crossplatform::RenderPlatform::GetShaderBuildMode" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#ad69dd4ec742093cfc2fd219fa8e58b94" />
       <keyword name="GetShaderPathsUtf8" id="simul::crossplatform::RenderPlatform::GetShaderPathsUtf8" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#a253674cf00434ae4d490237965be6c36" />
-      <keyword name="GetViewport" id="simul::crossplatform::RenderPlatform::GetViewport" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#a9a1fa54358fe00a466a012eeb55e25be" />
+      <keyword name="GetViewport" id="simul::crossplatform::RenderPlatform::GetViewport" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#a6f9b9b330396beb8178afdea03d797ad" />
       <keyword name="InvalidateDeviceObjects" id="simul::crossplatform::RenderPlatform::InvalidateDeviceObjects" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#a6d07655b8b292da54f3cf8727fd7c52b" />
       <keyword name="PopRenderTargets" id="simul::crossplatform::RenderPlatform::PopRenderTargets" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#af58449a1ff9b912fad3b297d3048156d" />
       <keyword name="PopShaderPath" id="simul::crossplatform::RenderPlatform::PopShaderPath" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#a1f58cb7b4f4fd45635e8da35c818b934" />
@@ -1263,7 +1264,7 @@
       <keyword name="TexelQuery" id="simul::crossplatform::RenderPlatform::TexelQuery" ref="classsimul_1_1crossplatform_1_1RenderPlatform.html#ae67225c3c109d1af69cc9e1eaf5c252a" />
       <keyword name="simul::crossplatform::StructuredBuffer" id="simul::crossplatform::StructuredBuffer" ref="classsimul_1_1crossplatform_1_1StructuredBuffer.html" />
       <keyword name="simul::crossplatform::Texture" id="simul::crossplatform::Texture" ref="classsimul_1_1crossplatform_1_1Texture.html" />
-      <keyword name="activateRenderTarget" id="simul::crossplatform::Texture::activateRenderTarget" ref="classsimul_1_1crossplatform_1_1Texture.html#acfb6f789478d38eadbde095fc23fcec4" />
+      <keyword name="activateRenderTarget" id="simul::crossplatform::Texture::activateRenderTarget" ref="classsimul_1_1crossplatform_1_1Texture.html#aafc5f12dac6bc16d4ae94ee4cedfb0d3" />
       <keyword name="AsD3D11RenderTargetView" id="simul::crossplatform::Texture::AsD3D11RenderTargetView" ref="classsimul_1_1crossplatform_1_1Texture.html#aac1f5f80ac0db31ff5b3a4df9ba7d1df" />
       <keyword name="AsD3D11ShaderResourceView" id="simul::crossplatform::Texture::AsD3D11ShaderResourceView" ref="classsimul_1_1crossplatform_1_1Texture.html#ac88c3aee50d882c723354c051476b5c8" />
       <keyword name="AsD3D11UnorderedAccessView" id="simul::crossplatform::Texture::AsD3D11UnorderedAccessView" ref="classsimul_1_1crossplatform_1_1Texture.html#acfaccb2d8ae59d2d6a328c22119bf53b" />
@@ -1333,6 +1334,7 @@
       <keyword name="SetFormat" id="simul::dx11::Framebuffer::SetFormat" ref="classsimul_1_1dx11_1_1Framebuffer.html#a51ddf88a8290809f40fad110e0ca907e" />
       <keyword name="SetUseFastRAM" id="simul::dx11::Framebuffer::SetUseFastRAM" ref="classsimul_1_1dx11_1_1Framebuffer.html#a66732be5b865c94c8551429427e322a0" />
       <keyword name="SetWidthAndHeight" id="simul::dx11::Framebuffer::SetWidthAndHeight" ref="classsimul_1_1dx11_1_1Framebuffer.html#a1f4e79a3bbbc215c06b8eb7a717b233f" />
+      <keyword name="setDefaultRenderTargets" id="simul::dx11::Framebuffer::setDefaultRenderTargets" ref="classsimul_1_1dx11_1_1Framebuffer.html#af44eaee96684a3b95db555e81e28d26b" />
       <keyword name="simul::dx11::RenderPlatform" id="simul::dx11::RenderPlatform" ref="classsimul_1_1dx11_1_1RenderPlatform.html" />
       <keyword name="mirrorY" id="simul::dx11::RenderPlatform::mirrorY" ref="classsimul_1_1dx11_1_1RenderPlatform.html#a3eca374469ab576406ed175b1cc7743c" />
       <keyword name="ActivateRenderTargets" id="simul::dx11::RenderPlatform::ActivateRenderTargets" ref="classsimul_1_1dx11_1_1RenderPlatform.html#a8e40501e4aaffa473cd6ac83a37e38ca" />

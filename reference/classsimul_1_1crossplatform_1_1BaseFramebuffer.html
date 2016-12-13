@@ -37,7 +37,8 @@ url: simul::crossplatform::BaseFramebuffer Class Reference
   <div class="summary">
 <a href="classsimul_1_1crossplatform_1_1BaseFramebuffer-members.html">List of all members</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">simul::crossplatform::BaseFramebuffer Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
@@ -147,11 +148,16 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1BaseFramebuffer.html#a1f4e79a3bbbc215c06b8eb7a717b233f">SetWidthAndHeight</a> (int w, int h, int num_mips=1)</td></tr>
 <tr class="memdesc:a1f4e79a3bbbc215c06b8eb7a717b233f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the size of the framebuffer. <br /></td></tr>
 <tr class="separator:a1f4e79a3bbbc215c06b8eb7a717b233f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:af44eaee96684a3b95db555e81e28d26b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1BaseFramebuffer.html#af44eaee96684a3b95db555e81e28d26b">setDefaultRenderTargets</a> (const ApiRenderTarget *, const ApiDepthRenderTarget *, uint32_t viewportLeft, uint32_t viewportTop, uint32_t viewportRight, uint32_t viewportBottom)</td></tr>
+<tr class="separator:af44eaee96684a3b95db555e81e28d26b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A base class for API-dependent framebuffer classes. </p>
 
-<p>Definition at line <a class="el" href="BaseFramebuffer_8h_source.html#l00143">143</a> of file <a class="el" href="BaseFramebuffer_8h_source.html">BaseFramebuffer.h</a>.</p>
+<p>Definition at line <a class="el" href="BaseFramebuffer_8h_source.html#l00145">145</a> of file <a class="el" href="BaseFramebuffer_8h_source.html">BaseFramebuffer.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ab5208e24fc5fa563a53716ce2acfea31"></a>
 <div class="memitem">
@@ -178,6 +184,65 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
+<a class="anchor" id="af44eaee96684a3b95db555e81e28d26b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void simul::crossplatform::BaseFramebuffer::setDefaultRenderTargets </td>
+          <td>(</td>
+          <td class="paramtype">const ApiRenderTarget *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ApiDepthRenderTarget *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>viewportLeft</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>viewportTop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>viewportRight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>viewportBottom</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the RT's to restore to, once all Simul Framebuffers are deactivated. This must be called at least once, as </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Simul/Platform/CrossPlatform/<a class="el" href="BaseFramebuffer_8h_source.html">BaseFramebuffer.h</a></li>
 </ul>
@@ -186,6 +251,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION SIMUL_MAJOR_VERSION=4.0.0<small>
-Mon Dec 12 2016 07:54:17</small></address>
+Tue Dec 13 2016 07:54:25</small></address>
 </body>
 </html>

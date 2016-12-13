@@ -183,10 +183,10 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#a253674cf00434ae4d490237965be6c36">GetShaderPathsUtf8</a> ()</td></tr>
 <tr class="memdesc:a253674cf00434ae4d490237965be6c36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the stack of shader source paths. <br /></td></tr>
 <tr class="separator:a253674cf00434ae4d490237965be6c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a1fa54358fe00a466a012eeb55e25be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a1fa54358fe00a466a012eeb55e25be"></a>
-virtual <a class="el" href="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1Viewport">Viewport</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#a9a1fa54358fe00a466a012eeb55e25be">GetViewport</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">DeviceContext</a> &amp;deviceContext, int index)=0</td></tr>
-<tr class="memdesc:a9a1fa54358fe00a466a012eeb55e25be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the viewport at the given index. <br /></td></tr>
-<tr class="separator:a9a1fa54358fe00a466a012eeb55e25be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f9b9b330396beb8178afdea03d797ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f9b9b330396beb8178afdea03d797ad"></a>
+virtual <a class="el" href="namespacesimul_1_1crossplatform.html#structsimul_1_1crossplatform_1_1Viewport">Viewport</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#a6f9b9b330396beb8178afdea03d797ad">GetViewport</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">DeviceContext</a> &amp;deviceContext, int index)</td></tr>
+<tr class="memdesc:a6f9b9b330396beb8178afdea03d797ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the viewport at the given index. <br /></td></tr>
+<tr class="separator:a6f9b9b330396beb8178afdea03d797ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d07655b8b292da54f3cf8727fd7c52b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d07655b8b292da54f3cf8727fd7c52b"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#a6d07655b8b292da54f3cf8727fd7c52b">InvalidateDeviceObjects</a> ()</td></tr>
 <tr class="memdesc:a6d07655b8b292da54f3cf8727fd7c52b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this once, when the 3d graphics device object is being shut down. <br /></td></tr>
@@ -287,7 +287,7 @@ vec4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p><a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html" title="A base class for API-specific rendering. ">RenderPlatform</a> is an interface that allows Simul's rendering functions to be developed in a cross-platform manner. By abstracting the common functionality of the different graphics API's into an interface, we can write render code that need not know which API is being used. It is possible to create platform-specific objects like /link CreateTexture textures/endlink, /link CreateEffect effects/endlink and /link CreateBuffer buffers/endlink</p>
 <p>Be sure to make the following calls at the appropriate places: <a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#ae0c27b1c85345571593bead14d9b7f07" title="Call this once, when the 3D graphics device has been initialized, and pass the API-specific device po...">RestoreDeviceObjects()</a>, <a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#a6d07655b8b292da54f3cf8727fd7c52b" title="Call this once, when the 3d graphics device object is being shut down. ">InvalidateDeviceObjects()</a>, <a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#a263d4d2edac3c8d89602563e0b8444e9" title="Optional - call this to recompile the standard shaders. ">RecompileShaders()</a> </p>
 
-<p>Definition at line <a class="el" href="CrossPlatform_2RenderPlatform_8h_source.html#l00082">82</a> of file <a class="el" href="CrossPlatform_2RenderPlatform_8h_source.html">RenderPlatform.h</a>.</p>
+<p>Definition at line <a class="el" href="CrossPlatform_2RenderPlatform_8h_source.html#l00077">77</a> of file <a class="el" href="CrossPlatform_2RenderPlatform_8h_source.html">RenderPlatform.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ae7e1b9f67ee9807cdbfd0e7b737fef09"></a>
 <div class="memitem">
@@ -312,7 +312,7 @@ vec4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><div class="memdoc">
 <p>Implementations of <a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html" title="A base class for API-specific rendering. ">RenderPlatform</a> will cache the API state in order to reduce driver overhead. But we can't always be sure that external render code hasn't modified the API state. So by calling <a class="el" href="classsimul_1_1crossplatform_1_1RenderPlatform.html#ae7e1b9f67ee9807cdbfd0e7b737fef09">SynchronizeCacheAndState()</a> the API state is forced to the cached state. This can be called at the start of Renderplatform's rendering per-frame. </p>
 
-<p>Definition at line <a class="el" href="CrossPlatform_2RenderPlatform_8h_source.html#l00103">103</a> of file <a class="el" href="CrossPlatform_2RenderPlatform_8h_source.html">RenderPlatform.h</a>.</p>
+<p>Definition at line <a class="el" href="CrossPlatform_2RenderPlatform_8h_source.html#l00099">99</a> of file <a class="el" href="CrossPlatform_2RenderPlatform_8h_source.html">RenderPlatform.h</a>.</p>
 
 </div>
 </div>
@@ -457,6 +457,6 @@ vec4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION SIMUL_MAJOR_VERSION=4.0.0<small>
-Mon Dec 12 2016 07:54:17</small></address>
+Tue Dec 13 2016 07:54:25</small></address>
 </body>
 </html>
