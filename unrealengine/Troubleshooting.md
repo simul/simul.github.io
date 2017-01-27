@@ -52,6 +52,9 @@ Frequently Asked Questions and Common Problems
 * **It's too dark at night.**
 <br>Try lowering the brightness power setting in the sky layer.
 
+* **Objects are light too brightly, especially at night.**
+<br>Try disabling Global Illumination, or set Indirect Lighting Intensity to a small vale (e.g. 0.001) on the PostProcessVolume.
+
 * **The sun is flickering.**
 <br>This may be caused by how UE4's postprocessors deal with large brightnesses, along with the small pixel size of the sun. To get around this, we've introduced MaxSunRadiance as a property of the Sequence Actor. When sun radiance goes past this value, the size of the drawn sun is increased, and the radiance decreased, so that the overall energy is kept constant, but the output brightness reduced. Additionally, if you haven't already, try deleting the default Atmospheric Fog and Sky Sphere actors.
 
@@ -68,7 +71,9 @@ Deprecated Functions, Files and Arguments
 
 The following should no longer be used in trueSKY for UE4, either due to deprecation or partial implementation:
 
-Any function calls to modifiy cloud keyframes(GetKeyframeValue and SetKeyframeValue) should not use the following name string arguments:
+TrueSkySequenceActor's Downscale Factor setting is deprecated: use Maximum Resolution instead.
+
+Any function calls to modify cloud keyframes(GetKeyframeValue and SetKeyframeValue) should not use the following name string arguments:
 
 * "lightning"
 * "simulation"
@@ -79,7 +84,6 @@ Any function calls to modify cloud keyframers/layers (GetCloudInt, GetCloudFloat
 * "viscosity"
 * "godraysSteps"
 * "meetHorizon"
-
 
 
 Further Information
