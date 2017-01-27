@@ -20,14 +20,10 @@ Lighting
 
 The simplest way to drive Unreal Engine lighting from trueSKY is to use the trueSKY macros. These are in the file trueSkyMacros.uasset, which is to be found in [UE4]/Engine/Plugins/TrueSkyPlugin/Content.
 
-To set the direction and colour of a Directional Light, find the trueSKYSun or trueSKYMoon macro, and connect a reference to the DirectionalLight to the input. Make sure that the "Exec" input is hit once per frame by an event tick. 
+To set the direction and colour of a Directional Light, find the UpdateLight macro, and connect a reference to the DirectionalLight to the input. Make sure that the "Exec" input is hit once per frame by an event tick. 
 
 
-<a href="http://docs.simul.co/unrealengine/images/UpdateSunlight.png"><img src="http://docs.simul.co/unrealengine/images/UpdateSunlight.png" alt="Blueprint"/></a>
-
-Alternatively, use the TrueSkyLighting macro -- this also allows time of day to be set.
-
-<a href="http://docs.simul.co/unrealengine/images/trueSkyLighting.png"><img src="http://docs.simul.co/unrealengine/images/trueSkyLighting.png" alt="Blueprint"/></a>
+<a href="http://docs.simul.co/unrealengine/images/UpdateLight.png"><img src="http://docs.simul.co/unrealengine/images/UpdateLight.png" alt="Blueprint"/></a>
 
 Additionally, point lights can be used to illuminate the clouds. Because of the relative scale of clouds to the UE4 scene, the intensity of the light must be very large in order to have a visible effect.
  
