@@ -63,10 +63,6 @@ virtual const float *&#160;</td><td class="memItemRight" valign="bottom"><a clas
 virtual const float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ae7fdc21a767e56fc54f9cfe366d0eebc">GetCloudScales</a> () const </td></tr>
 <tr class="memdesc:ae7fdc21a767e56fc54f9cfe366d0eebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the xyz scales of the clouds in metres. <br /></td></tr>
 <tr class="separator:ae7fdc21a767e56fc54f9cfe366d0eebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb085987e811d6348e6baace7900cd08"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb085987e811d6348e6baace7900cd08"></a>
-virtual CloudShadowStruct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#acb085987e811d6348e6baace7900cd08">GetCloudShadowTexture</a> (vec3 cam_pos)</td></tr>
-<tr class="memdesc:acb085987e811d6348e6baace7900cd08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an API-dependent identifier for the clouds' 2D shadow. <br /></td></tr>
-<tr class="separator:acb085987e811d6348e6baace7900cd08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d5d3f4130142ce4de4fe06e0e882072"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d5d3f4130142ce4de4fe06e0e882072"></a>
 virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a2d5d3f4130142ce4de4fe06e0e882072">GetDebugText</a> () const </td></tr>
 <tr class="memdesc:a2d5d3f4130142ce4de4fe06e0e882072"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get some per-frame text information for debugging - usually timing data. <br /></td></tr>
@@ -107,6 +103,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#a41f9007498f3d39428d7e2d6c619fab0">IsCameraAboveCloudBase</a> (<a class="el" href="classsimul_1_1math_1_1Vector3.html">math::Vector3</a> cam_pos) const </td></tr>
 <tr class="memdesc:a41f9007498f3d39428d7e2d6c619fab0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the camera is above the cloudbase altitude. <br /></td></tr>
 <tr class="separator:a41f9007498f3d39428d7e2d6c619fab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3f677fb0fd48c09fc5a098fdd7ad25d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3f677fb0fd48c09fc5a098fdd7ad25d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ae3f677fb0fd48c09fc5a098fdd7ad25d">MakeCloudShadowTexture</a> (vec3 cam_pos)</td></tr>
+<tr class="memdesc:ae3f677fb0fd48c09fc5a098fdd7ad25d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an API-dependent identifier for the clouds' 2D shadow. <br /></td></tr>
+<tr class="separator:ae3f677fb0fd48c09fc5a098fdd7ad25d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae15f20c0ff731ccf3cccb85a9eb4734c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae15f20c0ff731ccf3cccb85a9eb4734c"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1clouds_1_1BaseCloudRenderer.html#ae15f20c0ff731ccf3cccb85a9eb4734c">PreRenderUpdate</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">crossplatform::DeviceContext</a> &amp;deviceContext, float real_time)</td></tr>
 <tr class="memdesc:ae15f20c0ff731ccf3cccb85a9eb4734c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Platform-dependent per-frame update, called by <a class="el" href="classsimul_1_1clouds_1_1BaseWeatherRenderer.html">BaseWeatherRenderer</a>. <br /></td></tr>
@@ -371,6 +371,6 @@ The Cloud Grid</div></div>
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION SIMUL_MAJOR_VERSION=4.0.0<small>
-Fri Dec 2 2016 07:54:02</small></address>
+Fri Jan 27 2017 07:55:26</small></address>
 </body>
 </html>

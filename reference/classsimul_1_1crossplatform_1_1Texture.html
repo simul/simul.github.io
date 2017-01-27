@@ -49,10 +49,10 @@ url: simul::crossplatform::Texture Class Reference
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acfb6f789478d38eadbde095fc23fcec4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acfb6f789478d38eadbde095fc23fcec4"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1Texture.html#acfb6f789478d38eadbde095fc23fcec4">activateRenderTarget</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">DeviceContext</a> &amp;deviceContext, int array_index=-1, int mip_index=0)=0</td></tr>
-<tr class="memdesc:acfb6f789478d38eadbde095fc23fcec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate as a rendertarget - must call deactivateRenderTarget afterwards. <br /></td></tr>
-<tr class="separator:acfb6f789478d38eadbde095fc23fcec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafc5f12dac6bc16d4ae94ee4cedfb0d3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aafc5f12dac6bc16d4ae94ee4cedfb0d3"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1Texture.html#aafc5f12dac6bc16d4ae94ee4cedfb0d3">activateRenderTarget</a> (<a class="el" href="structsimul_1_1crossplatform_1_1DeviceContext.html">DeviceContext</a> &amp;deviceContext, int array_index=-1, int mip_index=0)</td></tr>
+<tr class="memdesc:aafc5f12dac6bc16d4ae94ee4cedfb0d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate as a rendertarget - must call deactivateRenderTarget afterwards. <br /></td></tr>
+<tr class="separator:aafc5f12dac6bc16d4ae94ee4cedfb0d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac1f5f80ac0db31ff5b3a4df9ba7d1df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac1f5f80ac0db31ff5b3a4df9ba7d1df"></a>
 virtual ID3D11RenderTargetView *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimul_1_1crossplatform_1_1Texture.html#aac1f5f80ac0db31ff5b3a4df9ba7d1df">AsD3D11RenderTargetView</a> (int=-1, int=-1)</td></tr>
 <tr class="memdesc:aac1f5f80ac0db31ff5b3a4df9ba7d1df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the RTV specified by layer,mip. Layer -1 means all layers at the given mip, while mip -1 defaults to mip zero. <br /></td></tr>
@@ -115,7 +115,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A <a class="el" href="classsimul_1_1crossplatform_1_1Texture.html" title="A Texture base class. ">Texture</a> base class. </p>
 
-<p>Definition at line <a class="el" href="CrossPlatform_2Texture_8h_source.html#l00077">77</a> of file <a class="el" href="CrossPlatform_2Texture_8h_source.html">Texture.h</a>.</p>
+<p>Definition at line <a class="el" href="CrossPlatform_2Texture_8h_source.html#l00098">98</a> of file <a class="el" href="CrossPlatform_2Texture_8h_source.html">Texture.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ac88c3aee50d882c723354c051476b5c8"></a>
 <div class="memitem">
@@ -156,7 +156,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 <p>Returns the SRV specified by layer,mip. The type t ensures that the assigned resource is compatible (UNKNWON matches anything). Layer -1 means all layers at the given mip, while mip -1 defaults to the whole texture/layer. </p>
 
-<p>Definition at line <a class="el" href="CrossPlatform_2Texture_8h_source.html#l00096">96</a> of file <a class="el" href="CrossPlatform_2Texture_8h_source.html">Texture.h</a>.</p>
+<p>Definition at line <a class="el" href="CrossPlatform_2Texture_8h_source.html#l00118">118</a> of file <a class="el" href="CrossPlatform_2Texture_8h_source.html">Texture.h</a>.</p>
 
 </div>
 </div>
@@ -182,7 +182,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 <p>Asynchronously move this texture to fast RAM. Some hardware has "fast RAM" that we can prefetch textures into. </p>
 
-<p>Definition at line <a class="el" href="CrossPlatform_2Texture_8h_source.html#l00106">106</a> of file <a class="el" href="CrossPlatform_2Texture_8h_source.html">Texture.h</a>.</p>
+<p>Definition at line <a class="el" href="CrossPlatform_2Texture_8h_source.html#l00128">128</a> of file <a class="el" href="CrossPlatform_2Texture_8h_source.html">Texture.h</a>.</p>
 
 </div>
 </div>
@@ -218,6 +218,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <!-- start footer part -->
 <hr class="footer"/>
 <address style="text-align: right;">trueSKY VERSION SIMUL_MAJOR_VERSION=4.0.0<small>
-Fri Dec 2 2016 07:54:03</small></address>
+Fri Jan 27 2017 07:55:27</small></address>
 </body>
 </html>
