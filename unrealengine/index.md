@@ -7,7 +7,7 @@ Getting started
 ---
 * Register your username at [https://simul.co/register](https://simul.co/register)
 * You'll find your licence at [simul.co/account](https://simul.co/account).
-* After evaluating, to get a full indie licence, head to [simul.co/truesky-ue4](https://simul.co/truesky-ue4). For all other licences, write to [contact@simul.co](mailto:contact@simul.co).
+* After evaluating, to get a full indie licence, you can buy or subscribe at [simul.co/account](https://simul.co/account). For all other licences, write to [contact@simul.co](mailto:contact@simul.co).
 
 Installing the Plugin
 ---

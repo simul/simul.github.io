@@ -12,7 +12,7 @@ Getting started
 
 * Register your username at [https://simul.co/register](https://simul.co/register)
 * You'll find your licence at [simul.co/account](https://simul.co/account).
-* After evaluating, to get a full indie licence, head to [simul.co/truesky/truesky-alpha-for-unity/](http://simul.co/truesky/truesky-alpha-for-unity/). For all other licences, write to [contact@simul.co](mailto:contact@simul.co).
+* After evaluating, to get a full indie licence, head to [simul.co/account/](http://simul.co/account/). For all other licences, write to [contact@simul.co](mailto:contact@simul.co).
 
 
 Installation and Initialisation
