@@ -5,22 +5,22 @@ weight : 3
 ---
 
 trueSKY in Blueprint
-========
+====================
 
 The trueSKY Blueprint macros provide a wide array of functionality while your game is playing or simulating. These macros will not take effect unless you are in one of these modes. To permanently change the properties of a light, start simulating, and right-click your Directional Light, then select "Keep Simulation Changes".
 
 
 The TrueSky Sequence Actor
---------------
+--------------------------
 
 The values of the Sequence Actor itself can be changed via Blueprint. To Get and/or set these values, make a reference to the TrueSkySequenceActor and drag the output pin onto an empty space and either search for a value directly or navigate to Class-> TrueSkySequenceActor.
 
 Lighting
---------------
+--------
 
 The simplest way to drive Unreal Engine lighting from trueSKY is to use the trueSKY macros. These are in the file trueSkyMacros.uasset, which is to be found in [UE4]/Engine/Plugins/TrueSkyPlugin/Content.
 
-To set the direction and colour of a Directional Light, find the UpdateLight macro, and connect a reference to the DirectionalLight to the input. Make sure that the "Exec" input is hit once per frame by an event tick. 
+To set the direction and colour of a Directional Light, find the UpdateLight macro, and connect a reference to the DirectionalLight to the input. Make sure that the "Exec" input is hit once per frame by a tick event. 
 
 
 <a href="http://docs.simul.co/unrealengine/images/UpdateLight.png"><img src="http://docs.simul.co/unrealengine/images/UpdateLight.png" alt="Blueprint"/></a>
