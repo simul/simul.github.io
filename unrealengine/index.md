@@ -42,7 +42,7 @@ How to run it
 * Run UE4, either standalone or with the debugger.
 The TrueSkyPlugin loads "TrueSkyUI_MD.dll" and "UE4PluginRenderInterface_MT.dll" from [UE4]\Engine\Plugins\TrueSkyPlugin\Binaries\Win64.
 
-When you run the UE4 editor, the trueSKY plugin should be enabled by default. If not, go to Edit->Plugin and type "trueSKY" into the search box to find the plugin, and check its "enabled" box, to enable the trueSKY plugin.
+When you run the UE4 editor, the trueSKY plugin should be enabled by default. If not, go to Edit->Plugin and type "trueSKY" into the search box to find the plugin, and check its "enabled" box.
 
   <a href="http://simul.co/wp-content/uploads/2014/07/UE4_ShowPlugins.png"><img src="http://simul.co/wp-content/uploads/2014/07/UE4_ShowPlugins-96x300.png" /></a>
 
@@ -72,17 +72,15 @@ This actor provides a reference to a sequence asset which is rendered. Choose th
 
 * Enter your licence key in the Sequencer Window. This enables the window's editing functions.
 
-* You can see changes to the properties (e.g. "preview") only if the edited asset is also assigned to the level's TrueSkySequenceActor! The trueSky plugin renderer uses only the asset which is referenced from that actor. If you are editing some other asset (which is not assigned to the TrueSky actor of the current level) then you won't see any visualization of it.
+* It may be that the default UE4 sky obscures the trueSKY image. Remove the Atmospheric Fog and Sky Sphere objects from your scene.
 
-* If the TrueSkySequence asset has been changed, it can be saved to the disc by right-clicking on it and choosing "Save".
+* You can see changes to the properties (e.g. "preview") only if the edited asset is also assigned to the level's TrueSkySequenceActor. The trueSky plugin renderer uses only the asset which is referenced from that actor. If you are editing some other asset (which is not assigned to the TrueSky actor of the current level) then you won't see any visualization of it.
 
-* You can edit any number of TrueSkySequence assets at once. However, only that which is also assigned to the active TrueSkySequenceActor is visible in editor's rendering window.
+* You can edit any number of TrueSkySequence assets at once. However, only that which is also assigned to the active TrueSkySequenceActor is visible in the editor rendering window.
 
 * To add clouds, double-click the trueSKY Sequence Asset and right-click on the timeline to add cloud keyframes.
 
-* It may be that the default UE4 sky obscures the trueSKY image. Remove the Atmospheric Fog and Sky Sphere objects from your scene.
-
-* For optimal performance, you can replace the default Skylight with the custom True Sky Light (found in Modes -> All Classes). Simply drag it into the scene to use. 
+* For real-time ambient lighting and reflections, replace the default SkyLight Actor with the TrueSkyLight (found in Modes -> All Classes). Simply drag it into the scene to use. 
 
 Multiple Sequence Actors and Transitions
 ---
@@ -102,7 +100,7 @@ Use the Blueprint function GetProfilingText to get GPU and CPU timing numbers fo
 
 Modified Files in the Unreal Engine
 --------
-The following files in the UE source have been modified in the Simul branch.
+The following files in the UE source have been modified in the Simul fork of the UE4 repo. If you are merging trueSKY into a custom fork, you must ensure that the trueSKY modifications are carried over.
 
 	Engine\Source\Runtime\Renderer\Private\DeferredShadingRenderer.cpp
 	Engine\Source\Runtime\Renderer\Public\RendererInterface.h
