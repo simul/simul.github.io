@@ -7,7 +7,7 @@ Getting started
 ---
 * Register your username at [https://simul.co/register](https://simul.co/register)
 * You'll find your licence at [simul.co/account](https://simul.co/account).
-* After evaluating, to get a full indie licence, you can buy or subscribe at [simul.co/account](https://simul.co/account). For all other licences, write to [contact@simul.co](mailto:contact@simul.co).
+* After evaluating, to get an indie licence, you can buy or subscribe at [simul.co/account](https://simul.co/account). For all other licences, write to [contact@simul.co](mailto:contact@simul.co).
 
 Installing the Plugin
 ---
@@ -25,9 +25,9 @@ If you are using a different UE4 codebase, pull changes from the Simul fork, and
 
 * As described in the UE4 readme (in the root UnrealEngine directory), run Setup.bat and GenerateProjectFiles.bat from UE4. This will generate projects and the solution file (UE4.sln).
 
-* From UE4.12 onwards, the trueSKY binary libraries are *not* kept in the repository. This is because multiple trueSKY versions can work with the same Unreal version. So run the batch file Engine/Plugins/TrueSkyPlugin/GetBinaries.bat, passing the required trueSKY version as a parameter, e.g.
+* The trueSKY binary libraries are *not* kept in the repository. This is because multiple trueSKY versions can work with the same Unreal version. So run the batch file Engine/Plugins/TrueSkyPlugin/GetBinaries.bat, passing the required trueSKY version as a parameter, e.g.
 
-	GetBinaries.bat 4.0
+	GetBinaries.bat 4.1
 
 * Use UE4.sln (UE4.vcxproj).
 The UE4 project contains the "TrueSkyPlugin" folder in Engine/UE4/Plugins. The plugin is in the “[UE4]\Engine\Plugins\TrueSkyPlugin” directory in your UE4 installation.
@@ -41,7 +41,6 @@ How to run it
 ---
 * Run UE4, either standalone or with the debugger.
 The TrueSkyPlugin loads "TrueSkyUI_MD.dll" and "UE4PluginRenderInterface_MT.dll" from [UE4]\Engine\Plugins\TrueSkyPlugin\Binaries\Win64.
-TrueSkyUI_MD.dll further loads the Qt libraries. For that, the PATH environment-variable is extended temporarily by the plugin to include "Engine/Binary/ThirdParty/Simul/Win64"
 
 When you run the UE4 editor, the trueSKY plugin should be enabled by default. If not, go to Edit->Plugin and type "trueSKY" into the search box to find the plugin, and check its "enabled" box, to enable the trueSKY plugin.
 
