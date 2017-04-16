@@ -94,9 +94,15 @@ To allow a smooth transition between weather states, you should adjust the Mode 
 
 <a href="http://docs.simul.co/unrealengine/images/GradualMode.png"><img src="http://docs.simul.co/unrealengine/images/GradualMode.png" alt="Gradual Mode"/></a>
 
-Profiling
+Performance
 ---------
 Use the Blueprint function GetProfilingText to get GPU and CPU timing numbers for trueSKY as a tree.
+trueSKY performance is highly dependent on your choice of settings. Once you have good settings for a given target hardware setup, performance will be consistent - i.e. there won't be spikes or hitches. For PC, you may want to make some of these settings controllable for the end user. For console hardware, it is usually best to choose the settings based on your target GPU time for skies, then lock them down.
+
+*Sequence Actor Settings*
+
+* *Cubemap Resolution*: This is the resolution that we render clouds to. A lower value will be faster to render. Too low, and clouds may appear blocky.
+* *Amortization*: This is a measure of how cloud rendering is spread across multiple frames. A value of 1 means all pixels are rendered every frame.
 
 Modified Files in the Unreal Engine
 --------

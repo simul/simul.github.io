@@ -25,6 +25,8 @@ To set the direction and colour of a Directional Light, find the UpdateLight mac
 
 <a href="http://docs.simul.co/unrealengine/images/UpdateLight.png"><img src="http://docs.simul.co/unrealengine/images/UpdateLight.png" alt="Blueprint"/></a>
 
+This function has 3 frames of latency, so do not call it in a construction script - it should be called once per frame.
+
 Additionally, point lights can be used to illuminate the clouds. Because of the relative scale of clouds to the UE4 scene, the intensity of the light must be very large in order to have a visible effect.
  
 <a href="http://docs.simul.co/unrealengine/images/SetPointLight.png"><img src="http://docs.simul.co/unrealengine/images/SetPointLight.png" alt="Blueprint" /></a>
@@ -32,6 +34,7 @@ Additionally, point lights can be used to illuminate the clouds. Because of the 
 If you do not have a PointLight actor, you can use SetPointLightSource to individually apply the position, colour and intensity of a light to the clouds.
 
 For ambient lighting, add a TrueSkyLight actor to your scene. This replaces the default UE SkyLight, and automatically updates ambient lighting.
+
 
 Cloud Shadows
 -------------
