@@ -6,3 +6,4 @@ Reference
 ===
 [namespace simul](simul)
 [class HandleMouseInterface](HandleMouseInterface)
+
