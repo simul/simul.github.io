@@ -4,7 +4,7 @@ layout: reference
 ---
 class simul::base::DefaultFileLoader
 ===
-[FileLoader](FileLoader.md)
+[FileLoader](FileLoader)
 void AcquireFileContentspointer,bytes,filename_utf8,open_as_text
 ------
 

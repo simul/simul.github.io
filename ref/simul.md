@@ -4,4 +4,4 @@ layout: reference
 ---
 namespace simul
 ===
-[namespace base](simul/base.md)/n
+[namespace base](simul/base)
