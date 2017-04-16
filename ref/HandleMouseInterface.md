@@ -4,21 +4,21 @@ layout: reference
 ---
 class HandleMouseInterface
 ===
-void KeyboardProcnChar,bKeyDown,bAltDown
+void KeyboardProc(nChar,bKeyDown,bAltDown)
 ------
 
-void mouseDoubleClickbutton,x,y
+void mouseDoubleClick(button,x,y)
 ------
 
-void mouseMovex,y
+void mouseMove(x,y)
 ------
 
-void mousePressbutton,x,y
+void mousePress(button,x,y)
 ------
 
-void mouseReleasebutton,x,y
+void mouseRelease(button,x,y)
 ------
 
-void mouseWheeldelta
+void mouseWheel(delta)
 ------
 

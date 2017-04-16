@@ -5,30 +5,34 @@ layout: reference
 classtemplate simul::base::MemoryInterfaceAllocator
 ===
 []()
-MemoryInterfaceAllocator<T>::pointer addressr
+MemoryInterfaceAllocator<T>::pointer address(r)
 ------
 
-MemoryInterfaceAllocator<T>::const_pointer addressr
+address
+MemoryInterfaceAllocator<T>::const_pointer address(r)
 ------
 
-MemoryInterfaceAllocator<T>::pointer allocatecnt,
+MemoryInterfaceAllocator<T>::pointer allocate(cnt,)
 ------
 
-void deallocatep,
+memory allocation
+void deallocate(p,)
 ------
 
-MemoryInterfaceAllocator<T>::size_type max_size
+MemoryInterfaceAllocator<T>::size_type max_size()
 ------
 
-void constructp,t
+but because it causes so much trouble with Windows platforms, we just do this:
+void construct(p,t)
 ------
 
-void destroyp
+construction/destruction
+void destroy(p)
 ------
 
-bool operator==
+bool operator==()
 ------
 
-bool operator!=a
+bool operator!=(a)
 ------
 

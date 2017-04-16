@@ -4,9 +4,9 @@ layout: reference
 ---
 struct StreamingHelperTemplate
 ===
-std::istream StreamInis,t
+std::istream StreamIn(is,t)
 ------
 
-std::ostream StreamOutos,t
+std::ostream StreamOut(os,t)
 ------
 

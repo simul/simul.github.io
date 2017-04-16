@@ -4,21 +4,26 @@ layout: reference
 ---
 class simul::base::EnvironmentVariables
 ===
-std::string AppendSimulEnvironmentVariablename,value
+std::string AppendSimulEnvironmentVariable(name,value)
 ------
 
-std::string GetExecutableDirectory
+std::string GetExecutableDirectory()
 ------
 
-std::string GetSimulEnvironmentVariablename
+! Get the directory where the current exe is held.
+std::string GetSimulEnvironmentVariable(name)
 ------
 
-std::string GetWorkingDirectory
+! Get the named environment variable (Windows only, other platforms return an empty string.
+std::string GetWorkingDirectory()
 ------
 
-std::string SetSimulEnvironmentVariablename,value
+! Get the current directory.
+std::string SetSimulEnvironmentVariable(name,value)
 ------
 
-void SetWorkingDirectory
+! Set the named environment variable for this process.
+void SetWorkingDirectory()
 ------
 
+! Set the current working directory.

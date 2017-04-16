@@ -4,15 +4,18 @@ layout: reference
 ---
 class simul::base::ShowProgressInterface
 ===
-bool GetCancelcaller
+bool GetCancel(caller)
 ------
 
-void SetProgress,
+< Hide the progress indicator.
+void SetProgress(,)
 ------
 
-void SetProgressComplete
+< Text on progress indicator
+void SetProgressComplete()
 ------
 
-void SetText,
+< Progress from zero to 1.0
+void SetText(,)
 ------
 

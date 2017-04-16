@@ -4,168 +4,215 @@ layout: reference
 ---
 class simul::base::IniFile
 ===
-unsigned int AddKeyNamekeyname
+unsigned int AddKeyName(keyname)
 ------
 
-void CaseInsensitive
+Add a key name.
+void CaseInsensitive()
 ------
 
-void CaseSensitive
+void CaseSensitive()
 ------
 
-void Clear
+Sets whether or not keynames and valuenames should be case sensitive.
+The default is case insensitive.
+void Clear()
 ------
 
-bool DeleteHeaderCommentcommentID
+bool DeleteHeaderComment(commentID)
 ------
 
-void DeleteHeaderComments
+Delete a header comment.
+void DeleteHeaderComments()
 ------
 
-bool DeleteKeykeyname
+Delete all header comments.
+bool DeleteKey(keyname)
 ------
 
-bool DeleteKeyCommentkeyID,commentID
+Deletes specified key and all values contained within.
+Returns true if key existed and deleted, false otherwise.
+bool DeleteKeyComment(keyID,commentID)
 ------
 
-bool DeleteKeyCommentkeyname,commentID
+Delete a key comment.
+bool DeleteKeyComment(keyname,commentID)
 ------
 
-bool DeleteKeyCommentskeyID
+bool DeleteKeyComments(keyID)
 ------
 
-bool DeleteKeyCommentskeyname
+Delete all comments for a key.
+bool DeleteKeyComments(keyname)
 ------
 
-bool DeleteValuekeyname,valuename
+bool DeleteValue(keyname,valuename)
 ------
 
-void Erase
+Deletes specified value.
+Returns true if value existed and deleted, false otherwise.
+void Erase()
 ------
 
-long FindKeykeyname
+Deletes all stored ini data.
+long FindKey(keyname)
 ------
 
-long FindValuekeyID,valuename
+Returns index of specified key, or noID if not found.
+long FindValue(keyID,valuename)
 ------
 
-std::string GetKeyNamekeyID
+Returns index of specified value, in the specified key, or noID if not found.
+std::string GetKeyName(keyID)
 ------
 
-unsigned int GetNumKeys
+unsigned int GetNumKeys()
 ------
 
-unsigned int GetNumValueskeyID
+unsigned int GetNumValues(keyID)
 ------
 
-unsigned int GetNumValueskeyname
+unsigned int GetNumValues(keyname)
 ------
 
-std::string GetValuekeyID,valueID,defValue
+std::string GetValue(keyID,valueID,defValue)
 ------
 
-std::string GetValuekeyname,valuename,defValue
+Gets value of [keyname] valuename =.
+Overloaded to return std::string, int, and double.
+Returns defValue if key/value not found.
+std::string GetValue(keyname,valuename,defValue)
 ------
 
-bool GetValueBkeyname,valuename,defValue
+bool GetValueB(keyname,valuename,defValue)
 ------
 
-double GetValueFkeyname,valuename,defValue
+double GetValueF(keyname,valuename,defValue)
 ------
 
-int GetValueIkeyname,valuename,defValue
+int GetValueI(keyname,valuename,defValue)
 ------
 
-std::string GetValueNamekeyID,valueID
+std::string GetValueName(keyID,valueID)
 ------
 
-std::string GetValueNamekeyname,valueID
+std::string GetValueName(keyname,valueID)
 ------
 
-unsigned int GetValueVkeyname,valuename,format,v1,v2,v3,v4,v5,v6,v7,v8,v9,v10,v11,v12,v13,v14,v15,v16
+unsigned int GetValueV(keyname,valuename,format,v1,v2,v3,v4,v5,v6,v7,v8,v9,v10,v11,v12,v13,v14,v15,v16)
 ------
 
-bool HasValuekeyname,valuename
+This is a variable length formatted GetValue routine. All these voids
+are required because there is no vsscanf() like there is a vsprintf().
+Only a maximum of 8 variable can be read.
+bool HasValue(keyname,valuename)
 ------
 
-void HeaderCommentcomment
+void HeaderComment(comment)
 ------
 
-std::string HeaderCommentcommentID
+Add a header comment.
+std::string HeaderComment(commentID)
 ------
 
-bool KeyCommentkeyID,comment
+Return a header comment.
+bool KeyComment(keyID,comment)
 ------
 
-bool KeyCommentkeyname,comment
+Add a key comment.
+bool KeyComment(keyname,comment)
 ------
 
-std::string KeyCommentkeyID,commentID
+std::string KeyComment(keyID,commentID)
 ------
 
-std::string KeyCommentkeyname,commentID
+Return a key comment.
+std::string KeyComment(keyname,commentID)
 ------
 
-std::string KeyNamekeyID
+std::string KeyName(keyID)
 ------
 
-unsigned int NumHeaderComments
+Returns key names by index.
+unsigned int NumHeaderComments()
 ------
 
-unsigned int NumKeyCommentskeyID
+Header comment functions.
+Header comments are those comments before the first key.
+
+Number of header comments.
+unsigned int NumKeyComments(keyID)
 ------
 
-unsigned int NumKeyCommentskeyname
+Key comment functions.
+Key comments are those comments within a key. Any comments
+defined within value names will be added to this list. Therefore,
+these comments will be moved to the top of the key definition when
+the IniFile::WriteFile() is called.
+
+Number of key comments.
+unsigned int NumKeyComments(keyname)
 ------
 
-unsigned int NumKeys
+unsigned int NumKeys()
 ------
 
-unsigned int NumValueskeyID
+Returns number of keys currently in the ini.
+unsigned int NumValues(keyID)
 ------
 
-unsigned int NumValueskeyname
+Returns number of values stored for specified key.
+unsigned int NumValues(keyname)
 ------
 
-void PathnewPath
+void Path(newPath)
 ------
 
-std::string Path
+Sets path of ini file to read and write from.
+std::string Path()
 ------
 
-bool ReadFile
+bool ReadFile()
 ------
 
-void Reset
+Reads ini file specified using path.
+Returns true if successful, false otherwise.
+void Reset()
 ------
 
-void SetPathnewPath
+void SetPath(newPath)
 ------
 
-bool SetValuekeyID,valueID,value
+bool SetValue(keyID,valueID,value)
 ------
 
-bool SetValuekeyname,valuename,value,create
+Sets value of [keyname] valuename =.
+Specify the optional paramter as false (0) if you do not want it to create
+the key if it doesn't exist. Returns true if data entered, false otherwise.
+Overloaded to accept std::string, int, and double.
+bool SetValue(keyname,valuename,value,create)
 ------
 
-bool SetValueBkeyname,valuename,value,create
+bool SetValueB(keyname,valuename,value,create)
 ------
 
-bool SetValueFkeyname,valuename,value,create
+bool SetValueF(keyname,valuename,value,create)
 ------
 
-bool SetValueIkeyname,valuename,value,create
+bool SetValueI(keyname,valuename,value,create)
 ------
 
-bool SetValueVkeyname,valuename,format
+bool SetValueV(keyname,valuename,format)
 ------
 
-std::string ValueNamekeyID,valueID
+std::string ValueName(keyID,valueID)
 ------
 
-std::string ValueNamekeyname,valueID
+Returns value name by index for a given keyname or keyID.
+std::string ValueName(keyname,valueID)
 ------
 
-bool WriteFile
+bool WriteFile()
 ------
 
+Writes data stored in class to ini file.

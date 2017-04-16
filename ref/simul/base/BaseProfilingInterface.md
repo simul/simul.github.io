@@ -4,30 +4,40 @@ layout: reference
 ---
 class simul::base::BaseProfilingInterface
 ===
-void Clearp
+void Clear(p)
 ------
 
-char GetDebugTextst
+char GetDebugText(st)
 ------
 
-ProfileData GetEvent,
+/ Gets the profiling report as text.
+/
+/ \param        st Determines if the text should be returned as HTML, including colour formatting.
+/
+/ \return       null if it fails, else the debug text.
+ProfileData GetEvent(,)
 ------
 
-int GetMaxLevel
+! Get profile data for the event at index i. Returns NULL for i&lt;0 or i&gt;= number of events.
+! Null parent means the top-level events.
+int GetMaxLevel()
 ------
 
-void SetMaxLevelm
+! Call this to get the maximum level of the profiling tree.
+void SetMaxLevel(m)
 ------
 
-void StartFrame
+! Call this to set the maximum level of the profiling tree.
+void StartFrame()
 ------
 
-ProfileData CreateProfileData
+! Call this at the start of the frame to reset values.
+ProfileData CreateProfileData()
 ------
 
-std::string WalkprofileData,tab,parent_time,style
+std::string Walk(profileData,tab,parent_time,style)
 ------
 
-void WalkResetp
+void WalkReset(p)
 ------
 

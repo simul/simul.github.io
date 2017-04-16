@@ -5,6 +5,6 @@ layout: reference
 class simul::base::BufferedStringStreamBuf
 ===
 [std::streambuf]()
-void writeStringstr
+void writeString(str)
 ------
 

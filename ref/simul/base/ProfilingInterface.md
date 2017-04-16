@@ -5,12 +5,15 @@ layout: reference
 class simul::base::ProfilingInterface
 ===
 [BaseProfilingInterface](BaseProfilingInterface)
-void Begin
+void Begin()
 ------
 
-void End
+! Mark the start of a profiling block.
+void End()
 ------
 
-void EndFrame
+! Mark the end of a profiling block.
+void EndFrame()
 ------
 
+! Call this at the start of the frame to reset values.

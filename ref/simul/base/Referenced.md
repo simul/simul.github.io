@@ -4,18 +4,23 @@ layout: reference
 ---
 class simul::base::Referenced
 ===
-void intrusive_ptr_add_ref
+void intrusive_ptr_add_ref()
 ------
 
-void intrusive_ptr_release
+! Increment the reference count by one.
+void intrusive_ptr_release()
 ------
 
-Referenced operator=
+! Decrement the reference count by one, delete if zero.
+Referenced operator=()
 ------
 
-int referenceCount
+int referenceCount()
 ------
 
-void PrepareToDestroy
+! Return the number of pointers referencing this object.
+void PrepareToDestroy()
 ------
 
+! Enact all destruction code that needs to rely on the derived class's virtual functions
+! because destructors can't use virtuals properly.
