@@ -18,7 +18,7 @@ See the \ref man_b_changelist for API and feature changes.
 <tr valign="top" rowspan="2">
         <td style="width:200px">
 
-        <a href="intro">1 Introduction</a>
+        <a href="intro">Introduction</a>
 
         <a href="gettingstarted">Getting Started</a>
 
