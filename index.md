@@ -4,7 +4,7 @@ layout: reference
 ---
 Developer Manual
 ===
-\image html "MainPageScreenshot.png"
+![trueSKY](images/MainPageScreenshot.png "")
 
 <table class="nice" width="100%">
 <tr valign="top">
