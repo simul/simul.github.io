@@ -1,23 +1,9 @@
 ---
-title: Developer Manual	
+title: Developer Manual
 layout: reference
 ---
-Developer Manual	
+Developer Manual
 ===
-{% include searchbar.html %}
-
-[Developer Manual](reference/)
----
-
-[Unreal Engine](unrealengine/)
----
-
-[Unity](unity/)
----
-
-[SimulFX](simulfx/)
----
-
 \image html "MainPageScreenshot.png"
 
 <table class="nice" width="100%">
@@ -32,21 +18,21 @@ See the \ref man_b_changelist for API and feature changes.
 <tr valign="top" rowspan="2">
         <td style="width:200px">
 
-        [Introduction	](intro)
+        <a href="intro">1 Introduction</a>
 
-        [Getting Started	](gettingstarted)
+        <a href="gettingstarted">Getting Started</a>
 
-        [Rendering the Environment	](rendering)
+        <a href="rendering">Rendering the Environment</a>
 
-        [The Plugin Rendering Interface ](pri)
+        <a href="pri">The Plugin Rendering Interface</a>
 
-        [The trueSKY Classes	](classes)
+        <a href="classes">The trueSKY Classes</a>
 
-        [The Sky Sequencer	](sequencer)
+        <a href="sequencer">The Sky Sequencer</a>
 
-        [Licensing ](licensing)
+        <a href="licensing">Licensing</a>
         
-        [Change List	](changelist)
+        <a href="changelist">Change List</a>
         
         
         </td>
@@ -64,4 +50,4 @@ See the \ref man_b_changelist for API and feature changes.
 \image latex "customform_blue_bg_bottom.png" width=0
 
 <hr size="1">
-Next: [Introduction	](intro)
+Next: \ref man_1_introduction
