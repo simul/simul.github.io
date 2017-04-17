@@ -2,7 +2,7 @@
 title: Developer Manual	
 layout: reference
 ---
-index
+Developer Manual	
 ===
 {% include searchbar.html %}
 
@@ -32,21 +32,21 @@ See the \ref man_b_changelist for API and feature changes.
 <tr valign="top" rowspan="2">
         <td style="width:200px">
 
-        \subpage man_1_introduction
+        [Introduction	](intro)
 
-        \subpage man_2_gettingstarted
+        [Getting Started	](gettingstarted)
 
-        \subpage man_3_rendering
+        [Rendering the Environment	](rendering)
 
-        \subpage man_4_pri
+        [The Plugin Rendering Interface ](pri)
 
-        \subpage man_5_classes
+        [The trueSKY Classes	](classes)
 
-        \subpage man_6_sequencer
+        [The Sky Sequencer	](sequencer)
 
-        \subpage man_a_licensing
+        [Licensing ](licensing)
         
-        \subpage man_b_changelist
+        [Change List	](changelist)
         
         
         </td>
@@ -64,4 +64,4 @@ See the \ref man_b_changelist for API and feature changes.
 \image latex "customform_blue_bg_bottom.png" width=0
 
 <hr size="1">
-Next: \ref intro
+Next: [Introduction	](intro)
