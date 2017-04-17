@@ -4,6 +4,4 @@ layout: reference
 ---
 Reference
 ===
-[namespace simul](simul)
-[class HandleMouseInterface](HandleMouseInterface)
-
+[namespace simul](../simul)
