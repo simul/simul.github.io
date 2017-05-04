@@ -30,7 +30,7 @@ NOTE: It's also important to ensure that, even if you just set the time value in
 ### Directional Lights
 To set the direction and colour of a Directional Light, find the `UpdateLight` function from the trueSKY function category, and connect a reference to the DirectionalLight to the input. Make sure that the "Exec" input is hit once per frame by a tick event. If you're driving your scene lighting through a DirectionalLightComponent instead of a directional light actor, you can alternatively use `UpdateLightComponent`. The combination of the time of day update as well as the subsequent light update can be seen here:
 
-![alt text](http://docs.simul.co/unrealengine/images/truesky_ue4_blueprint_tick.png "Blueprint snippet for updating the Time of Day as well as the atmospheric light.")
+[![alt text](http://docs.simul.co/unrealengine/images/truesky_ue4_blueprint_tick.png "Blueprint snippet for updating the Time of Day as well as the atmospheric light.")](http://docs.simul.co/unrealengine/images/truesky_ue4_blueprint_tick.png)
 
 This function should be called whenever you update your time of day value, as the light will need to be updated as a result of the change.
 
