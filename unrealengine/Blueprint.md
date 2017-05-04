@@ -34,8 +34,8 @@ To set the direction and colour of a Directional Light, find the `UpdateLight` f
 
 This function should be called whenever you update your time of day value, as the light will need to be updated as a result of the change.
 
-**NOTE**: This method of driving the trueSKY scene directional lights has changed in recent releases of trueSKY. As a result, only one directional light is needed in the scene at any time, rather than a separate light for the sun and the moon.
-**NOTE (Part Two)**: This function has 3 frames of latency, so do not call it in a construction script - it should be called once per frame.
+* **NOTE**: This method of driving the trueSKY scene directional lights has changed in recent releases of trueSKY. As a result, only one directional light is needed in the scene at any time, rather than a separate light for the sun and the moon.
+* **NOTE (Part Two)**: This function has 3 frames of latency, so do not call it in a construction script - it should be called once per frame.
 
 Additionally, the directional light provides appropriately-colored lighting based on your true sky sequence settings. These values can sometimes be stronger than you may have originally intended. As such, one of the macros is included in the macro library that will be coming with a future version of the trueSKY plugin will provide a simple solution for altering the color intensity as-necessary based on the needs of your scenes.
 
