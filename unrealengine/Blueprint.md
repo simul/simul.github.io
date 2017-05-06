@@ -51,6 +51,14 @@ For ambient lighting, add a TrueSkyLight actor to your scene. The TrueSkyLight i
 
 As such, the TrueSkyLight replaces the standard ASkyLight/USkyLightComponent and automatically updates ambient lighting based on the settings that you have set (such as spreading changes in the sky light over `x` number of frames).
 
+### Utility Macros
+We have a few macros in the `TrueSkyMacroLibrary` to streamline this process for blueprint users. They're fairly simple, but they should help to clean up blueprints and make the entire process a bit quicker for everyone.  The included macros are:
+* `UpdateTimeOfDay` -- Will handle the Time of Day update, set the time on the sequence actor, and return the updated time of day value.
+* `UpdateAtmosphereLight` -- This will take in a `DirectionalLight` (actor) and update it based on the passed-in `TrueSkySequenceActor`. Returns whether or not it succeeded.
+* `UpdateAtmosphereLightComponent` -- This will take in a `DirectionalLightCompontent` and update it based on the passed-in `TrueSkySequenceActor`. Returns whether or not it succeeded.
+* `UpdateSequence` -- This macro combines the time of day update as well as the light update. It has an input node for both a `DirectionalLight` and a `DirectionalLightComponent` (since it's a macro, it doesn't handle casting a general `Object` type well); only one of the two need to be passed in to update the lighting. The macro returns both the updated time of day value as well as whether or not the light update succeeded. Image below:
+
+![alt text](http://docs.simul.co/unrealengine/images/truesky_ue4_macro_updatesequence.png "Macro function for updating a sequence's time of day and lighting data.")
 
 ### Cloud Shadows
 The shadows of clouds can be applied to your directional light object using the M_LightFunction in the Content/TrueSky directory of your project. If you modify this function, make a copy of it with a different name, otherwise it will be overwritten when the plugin next starts (this applies to all the content in the TrueSky folder).
