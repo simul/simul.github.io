@@ -3,60 +3,45 @@ title: Unreal
 layout: unreal
 weight : 1
 ---
-Getting started
----
+
+# Getting started
 * Register your username at [https://simul.co/register](https://simul.co/register)
 * You'll find your licence at [simul.co/account](https://simul.co/account).
 * After evaluating, to get an indie licence, you can buy or subscribe at [simul.co/account](https://simul.co/account). For all other licences, write to [contact@simul.co](mailto:contact@simul.co).
 
-Installing the Plugin
----
+# Installing the Plugin
 For binary installations of Unreal Engine, binary trueSKY plugin installers are available from [https://simul.co/download](https://simul.co/truesky/download). For other versions, or if you have a version of Unreal Engine built from source, you will need to build the plugin.
 
 **Important**
 The stock binary version of Unreal does not deploy trueSKY files when packaging a project. You will see a black sky unless you deploy these files. See [Deployment](/unrealengine/Deploy) for instructions.
 
-How to build it
----
-* Enter your GitHub username at [https://simul.co/wp-admin/profile.php](http://simul.co/wp-admin/profile.php). This needs to be the same username connected to your Unreal Engine account at [www.unrealengine.com/settings](https://www.unrealengine.com/settings)
-
-* Get the trueSKY UE4 fork from [GitHub](https://github.com/simul/UnrealEngine).
-If you are using a different UE4 codebase, pull changes from the Simul fork, and merge.
-
-* As described in the UE4 readme (in the root UnrealEngine directory), run Setup.bat and GenerateProjectFiles.bat from UE4. This will generate projects and the solution file (UE4.sln).
-
-* The trueSKY binary libraries are *not* kept in the repository. This is because multiple trueSKY versions can work with the same Unreal version. So run the batch file Engine/Plugins/TrueSkyPlugin/GetBinaries.bat, passing the required trueSKY version as a parameter, e.g.
-
-	GetBinaries.bat 4.1
-
-* Use UE4.sln (UE4.vcxproj).
-The UE4 project contains the "TrueSkyPlugin" folder in Engine/UE4/Plugins. The plugin is in the “[UE4]\Engine\Plugins\TrueSkyPlugin” directory in your UE4 installation.
-The trueSKY binaries are in “[UE4]\Engine\Binaries\ThirdParty\Simul”. 
-There are two trueSKY modules in the UE4 project – TrueSkyPlugin and TrueSkyEditorPlugin.
-
-* Build the UE4 project in the "Development Editor" configuration.
-
-
-How to run it
----
+# Running the Plugin
 * Run UE4, either standalone or with the debugger.
-The TrueSkyPlugin loads "TrueSkyUI_MD.dll" and "UE4PluginRenderInterface_MT.dll" from [UE4]\Engine\Plugins\TrueSkyPlugin\Binaries\Win64.
+TrueSkyPlugin loads `TrueSkyUI_MD.dll` and `UE4PluginRenderInterface_MT.dll` from `[UE4]\Engine\Plugins\TrueSkyPlugin\Binaries\Win64`.
 
-When you run the UE4 editor, the trueSKY plugin should be enabled by default. If not, go to Edit->Plugin and type "trueSKY" into the search box to find the plugin, and check its "enabled" box.
+When you run the UE4 editor, the trueSKY plugin should be enabled by default. If not, open up the Plugin Configurator for Unreal Engine (from the menu bar: **Edit->Plugins**). In the plugin configuration window and type "trueSKY" into the search box to find the plugin; check the "Enabled" box to enable it.
 
-  <a href="http://simul.co/wp-content/uploads/2014/07/UE4_ShowPlugins.png"><img src="http://simul.co/wp-content/uploads/2014/07/UE4_ShowPlugins-96x300.png" /></a>
+[![alt text](http://simul.co/wp-content/uploads/2014/07/UE4_ShowPlugins-96x300.png "Opening the Plugin Configurator for Unreal Engine (from the main menu bar: Edit->Plugins).")](http://simul.co/wp-content/uploads/2014/07/UE4_ShowPlugins.png)
 
-  <a href="http://docs.simul.co/unrealengine/images/EnableTrueSKY.png"><img src="http://docs.simul.co/unrealengine/images/EnableTrueSKY.png" /></a>
+[![alt text](http://docs.simul.co/unrealengine/images/EnableTrueSKY.png "Enabling the trueSKY Plugin in Unreal Engine 4's editor.")](http://docs.simul.co/unrealengine/images/EnableTrueSKY.png)
 
-After this, restart the editor.
+If you had to change the "Enabled" setting from disabled to enabled (or vice versa), you'll need to restart the editor for the change to take effect, as with all editor plugin changes.
 
-Adding trueSKY to your level
----
-* Press "Window->Add Sequence to Scene" -- this adds a TrueSkySequenceActor to the current level.
+# Adding trueSKY to Your Level
+
+## Precautions
+* Most UE4 maps contain a Sky Sphere and Atmospheric Fog:
+	* **Delete the Sky Sphere object** -- The Sky Sphere will actively obscure aspects of the trueSKY rendering system, as it's basically a giant ball of geometry with a texture applied; you'll want to delete this object.
+	* **Delete any Atmospheric Fog object** -- Having Atmospheric Fog will not *break* anything, per se, but given that trueSKY provides a more detailed and physically-accurate atmospheric rendering solution, it can serve as a complete replacement.
+
+## Adding the trueSKY Sequence Actor
+The trueSKY Sequence Actor is the primary way to access and interact with the trueSKY renderer and its rendered sky sequence within Unreal Engine 4. You can add this actor from the standard "Place" sidebar in the editor, choosing "All Classes", typing "trueSKY", and choosing the "True Sky Sequence Actor" to drag into your scene, or you can use this handy little shortcut:
+* From the menu bar, use: "Window->Add Sequence to Scene"
+	* This adds the default True Sky Sequence Actor to the current level at the map's origin (though its location doesn't matter -- its rotation, however, does).
 
  <a href="http://simul.co/wp-content/uploads/2014/07/UE4_AddSequence.png"><img src="http://simul.co/wp-content/uploads/2014/07/UE4_AddSequence-81x300.png"/></a> 
 
-This actor provides a reference to a sequence asset which is rendered. Choose the actor (from "World Outliner" window). In the "Details" window, set the reference to a TrueSky Sequence asset (see below for information on how to create one) in the "Active Sequence" property.
+Once you have the True Sky Sequence Actor in your scene, choose it from "World Outliner" window. Then, to customize it, open up the "Details" window/sidebar; set the reference to a TrueSky Sequence asset (see below for information on how to create one) in the "Active Sequence" property.
 
 * To create a new TrueSkySequence asset, go to the "Content Browser" window. Press "New Asset" button (or do a right mouse click inside the window) to open an asset selection window. Choose "Miscellaneous / trueSKY Sequence Asset". A new asset will be created. Now you can rename/save/delete it.
 
@@ -70,9 +55,10 @@ This actor provides a reference to a sequence asset which is rendered. Choose th
 
 <a class=" id=" title="" href="http://simul.co/wp-content/uploads/2014/07/Editor.png"><img src="http://simul.co/wp-content/uploads/2014/07/Editor-150x150.png" /></a>
 
-* Enter your licence key in the Sequencer Window. This enables the window's editing functions.
+This will open up the True Sky Sequence Editor:
 
-* It may be that the default UE4 sky obscures the trueSKY image. Remove the Atmospheric Fog and Sky Sphere objects from your scene.
+## Creating and Configuring a Sky Sequence
+* Enter your licence key in the Sequencer Window. This enables the window's editing functions.
 
 * You can see changes to the properties (e.g. "preview") only if the edited asset is also assigned to the level's TrueSkySequenceActor. The trueSky plugin renderer uses only the asset which is referenced from that actor. If you are editing some other asset (which is not assigned to the TrueSky actor of the current level) then you won't see any visualization of it.
 
@@ -82,8 +68,7 @@ This actor provides a reference to a sequence asset which is rendered. Choose th
 
 * For real-time ambient lighting and reflections, replace the default SkyLight Actor with the TrueSkyLight (found in Modes -> All Classes). Simply drag it into the scene to use. 
 
-Multiple Sequence Actors and Transitions
----
+### Multiple Sequence Actors and Transitions
 You can have any number of trueSKY Sequence Actors in your level, all with different Sequence Assets assigned. In the Editor, check the Actor's property "Active in Editor" to see its weather state in the 3D view. In-game, the active Actor is determined by bounds. By default, a Sequence Actor is unbounded – it is always active. You can create bounding by adding a Box Collision component to the Actor.
 
 <a href="http://docs.simul.co/unrealengine/images/AddBounds.png"><img src="http://docs.simul.co/unrealengine/images/AddBounds.png" alt="Add Bounds"/></a>
@@ -99,38 +84,22 @@ Performance
 Use the Blueprint function GetProfilingText to get GPU and CPU timing numbers for trueSKY as a tree.
 trueSKY performance is highly dependent on your choice of settings. Once you have good settings for a given target hardware setup, performance will be consistent - i.e. there won't be spikes or hitches. For PC, you may want to make some of these settings controllable for the end user. For console hardware, it is usually best to choose the settings based on your target GPU time for skies, then lock them down.
 
-*Sequence Actor Settings*
+#### Sequence Actor Settings
 
-* *Cubemap Resolution*: This is the resolution that we render clouds to. A lower value will be faster to render. Too low, and clouds may appear blocky.
-* *Amortization*: This is a measure of how cloud rendering is spread across multiple frames. A value of 1 means all pixels are rendered every frame.
-
-Modified Files in the Unreal Engine
---------
-The following files in the UE source have been modified in the Simul fork of the UE4 repo. If you are merging trueSKY into a custom fork, you must ensure that the trueSKY modifications are carried over.
-
-	Engine\Source\Runtime\Renderer\Private\DeferredShadingRenderer.cpp
-	Engine\Source\Runtime\Renderer\Public\RendererInterface.h
-	Engine\Source\Runtime\Renderer\Private\RendererPrivate.h
-	Engine\Source\Runtime\Renderer\Private\SceneRendering.cpp
-	Engine\Source\Runtime\Renderer\Private\RendererScene.cpp
-
-	Engine\Source\Programs\AutomationTool\Win\WinPlatform.Automation.cs
-
-	Engine\Source\Programs\AutomationTool\PS4\PS4Platform.Automation.cs
-	Engine\Source\Programs\AutomationTool\XboxOne\XboxOnePlatform.Automation.cs
-	
-	Engine\Source\Programs\UnrealBuildTool\PS4\UEDeployPS4.cs
-	Engine\Source\Programs\UnrealBuildTool\XboxOne\XboxOneDeploy.cs
+* **Max Resolution**: This is the cubemap resolution that we render clouds into. A lower value will be faster to render. Too low, and clouds may appear blocky. A good value tends to be:
+	* **512** -- Likely the optimal resolution for *most* use-cases; it tends to be the best mix of memory consumption/performance and rendering sharpness/clarity for general use.
+	* **256** -- This is a decent resolution that is faster and uses less memory than 512, but is not quite as sharp and clear. 
+* **Amortization**: This is a measure of how cloud rendering is spread across multiple frames. A value of 1 means all pixels are rendered every frame.
 
 
 Further Information
 ---------
 
 * [trueSKY Tutorial: Unreal Engine 4](http://docs.simul.co/unrealengine/Tutorial.html)
-* [The Sequencer](http://docs.simul.co/reference/man_8_sequencer.html)
-* [Driving trueSKY via Blueprint](http://docs.simul.co/unrealengine/Blueprint.html)
+* [trueSKY from GitHub (and UE4 Source Integration)](http://docs.simul.co/unrealengine/Source.html)
+* [trueSKY in Blueprint](http://docs.simul.co/unrealengine/Blueprint.html)
+* [The Sky Sequencer](http://docs.simul.co/reference/man_8_sequencer.html)
 * [The trueSKY Renderer](http://docs.simul.co/reference/man_4_rendering.html)
-
 
 
 Next: <a href="/unrealengine/Tutorial">Tutorial</a>

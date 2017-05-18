@@ -1,51 +1,26 @@
 ---
-title: Developer Manual
+title: trueSKY Developer Manual
 layout: reference
 ---
-Developer Manual
+trueSKY Developer Manual
 ===
-![trueSKY](/images/MainPageScreenshot.png)
+![trueSKY](http://docs.simul.co/images/MainPageScreenshot.png)
 
-<table class="nice" width="100%">
-<tr valign="top">
-<td style="width:auto" colspan="2">
+# trueSKY
 TrueSKY is a software development kit that allows realistic skies, clouds and atmospheric effects to be rendered in real time on a variety of platforms.
-See the \ref man_b_changelist for API and feature changes.
 
+# Developer Manual
+## General
+* [**Introduction**](http://docs.simul.co/intro.html)
+* [**Rendering the Environment**](http://docs.simul.co/rendering.html)
+* [**The Sky Sequencer**](http://docs.simul.co/sequencer.html)
+* [**Plugin Rendering Interface**](http://docs.simul.co/pri.html)
+* [**trueSKY Classes**](http://docs.simul.co/classes.html)
+* [**Licensing trueSKY**](http://docs.simul.co/licensing.html)
 
-</td>
-</tr>
-<tr valign="top" rowspan="2">
-        <td style="width:200px">
+### API
+* [Namespaces](http://docs.simul.co/namespaces.html)
+* [Hierarchy](http://docs.simul.co/hierarchy.html)
 
-                <a href="intro">Introduction</a>
-
-                <a href="gettingstarted">Getting Started</a>
-
-                <a href="rendering">Rendering the Environment</a>
-
-                <a href="pri">The Plugin Rendering Interface</a>
-
-                <a href="classes">The trueSKY Classes</a>
-
-                <a href="sequencer">The Sky Sequencer</a>
-
-                <a href="licensing">Licensing</a>
-                
-                <a href="changelist">Change List</a>
-        </td>
-        <td>
-                <h2>API</h2>
-                        <a href="namespaces.html">Simul Libraries</a><br/>
-                        <a href="hierarchy.html">Class Hierarchy</a>
-                <h2>Toolset</h2>
-                        <a href="sequencer">The Sky Sequencer</a>
-        </td>
-</tr>
-</table>
-
-\image latex "customform_blue_bg_top.png" width=0
-\image latex "customform_blue_bg_bottom.png" width=0
-
-<hr size="1">
-Next: \ref man_1_introduction
+### Toolset
+* [**The Sky Sequencer**](http://docs.simul.co/sequencer.html)

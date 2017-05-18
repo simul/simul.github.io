@@ -1,7 +1,7 @@
 ---
 title: Deployment
 layout: unreal
-weight : 6
+weight : 7
 ---
 
 trueSKY Deployment
