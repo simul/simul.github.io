@@ -27,7 +27,7 @@ weight : 3
 * Build the UE4 project in the "Development Editor" configuration.
 
 # Full Integration with Unreal Engine 4 Source Code
-The following files in the UE source have been modified in the Simul fork of the UE4 repository. If you are merging trueSKY into a custom fork, you must ensure that the trueSKY modifications are carried over. In general, a good way to go about merging these changes is by using (Beyond Compare)[https://www.scootersoftware.com] or (Perforce Merge)[https://www.perforce.com/product/components/perforce-visual-merge-and-diff-tools] to easily do a diff across repos or, even simpler, between separate folders on your local machine.
+The following files in the UE source have been modified in the Simul fork of the UE4 repository. If you are merging trueSKY into a custom fork, you must ensure that the trueSKY modifications are carried over. In general, a good way to go about merging these changes is by using [Beyond Compare](https://www.scootersoftware.com) or [Perforce Merge](https://www.perforce.com/product/components/perforce-visual-merge-and-diff-tools) to easily do a diff across repos or, even simpler, between separate folders on your local machine.
 
 ## Core Engine Files:
 * `Engine\Source\Runtime\Renderer\Private\DeferredShadingRenderer.cpp`

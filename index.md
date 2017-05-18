@@ -7,7 +7,7 @@ trueSKY Developer Manual
 ![trueSKY](http://docs.simul.co/images/MainPageScreenshot.png)
 
 # trueSKY
-TrueSKY is a software development kit that allows realistic skies, clouds and atmospheric effects to be rendered in real time on a variety of platforms.
+trueSKY is a software development kit that allows realistic skies, clouds and atmospheric effects to be rendered in real time on a variety of platforms.
 
 # Developer Manual
 ## General
