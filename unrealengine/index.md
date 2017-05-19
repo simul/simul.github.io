@@ -1,7 +1,7 @@
 ---
 title: Unreal
 layout: unreal
-weight : 1
+weight : 2
 ---
 
 # Getting started
@@ -41,8 +41,11 @@ The trueSKY Sequence Actor is the primary way to access and interact with the tr
 
  <a href="http://simul.co/wp-content/uploads/2014/07/UE4_AddSequence.png"><img src="http://simul.co/wp-content/uploads/2014/07/UE4_AddSequence-81x300.png"/></a> 
 
-Once you have the True Sky Sequence Actor in your scene, choose it from "World Outliner" window. Then, to customize it, open up the "Details" window/sidebar; set the reference to a TrueSky Sequence asset (see below for information on how to create one) in the "Active Sequence" property.
+Once you have the True Sky Sequence Actor in your scene, choose it from "World Outliner" window. Then, to customize it, open up the "Details" window/sidebar; set the reference to an existing **TrueSky Sequence Asset** in the "Active Sequence" dropdown. By default, there are two sample sequences you can instantly check and see the results for yourself:
+* `TrueSkySequenceCumulus` -- A prototypical cumulus cloud pattern (with a 3D and 2D cloud keyframe for example purposes).
+* `TrueSkySequenceStratus` -- A prototypical stratus cloud system; i.e. there's a rain/snow comin' (with a 3D and 2D cloud keyframe for example purposes).
 
+### Creating New Sky Sequences
 * To create a new TrueSkySequence asset, go to the "Content Browser" window. Press "New Asset" button (or do a right mouse click inside the window) to open an asset selection window. Choose "Miscellaneous / trueSKY Sequence Asset". A new asset will be created. Now you can rename/save/delete it.
 
 <a href="http://simul.co/wp-content/uploads/2014/07/UE4_CreateAsset.png"><img src="http://simul.co/wp-content/uploads/2014/07/UE4_CreateAsset-233x300.png"/></a> 
@@ -57,7 +60,7 @@ Once you have the True Sky Sequence Actor in your scene, choose it from "World O
 
 This will open up the True Sky Sequence Editor:
 
-## Creating and Configuring a Sky Sequence
+### Creating and Configuring a Sky Sequence
 * Enter your licence key in the Sequencer Window. This enables the window's editing functions.
 
 * You can see changes to the properties (e.g. "preview") only if the edited asset is also assigned to the level's TrueSkySequenceActor. The trueSky plugin renderer uses only the asset which is referenced from that actor. If you are editing some other asset (which is not assigned to the TrueSky actor of the current level) then you won't see any visualization of it.
