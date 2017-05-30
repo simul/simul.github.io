@@ -39,6 +39,9 @@ This function should be called whenever you update your time of day value, as th
 
 Additionally, the directional light provides appropriately-colored lighting based on your true sky sequence settings. These values can sometimes be stronger than you may have originally intended. As such, one of the macros is included in the macro library that will be coming with a future version of the trueSKY plugin will provide a simple solution for altering the color intensity as-necessary based on the needs of your scenes.
 
+### Cloud Shadows
+Connect the CloudShadow asset in the TrueSky folder to "Cloud Shadow RT" on your trueSKY Sequence Actor, and connect the M_LightFunction asset to "Light Function Material" on your Directional Light. Now the clouds will cast shadows correctly.
+
 ### Point Lights
 Additionally, point lights can be used to illuminate the clouds. Because of the relative scale of clouds to the UE4 scene, the intensity of the light must be very large in order to have a visible effect.
  
