@@ -25,6 +25,10 @@ Frequently Asked Questions and Common Problems
 * **How do I make the clouds appear less pixelated?**
 <br>Try lowering the downscale factor setting, in the details panel of the TrueSkySequenceActor.
 
+**Behaviour**
+
+* **On PS4 there is an apparent "trail" in the sky as the camera moves**
+<br>The Unreal Engine screen clear is faulty in some versions: the Hardware Clear option does not work. To fix this, go to Project Settings -> Rendering -> Optimization and change "Clear Scene" to "Clear at Far Plane".
 
 **The Sequencer and Sequences**
 

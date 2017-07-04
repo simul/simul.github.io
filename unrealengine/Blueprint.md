@@ -16,10 +16,10 @@ The TrueSky Sequence Actor
 The values of the Sequence Actor itself can be changed via Blueprint. To Get and/or set these values, make a reference to the TrueSkySequenceActor and drag the output pin onto an empty space and either search for a value directly or navigate to Class-> TrueSkySequenceActor.
 
 Time of Day & Lighting
---------
+----------------------
 
 ### Time of Day
-Ultimately, the entirety of your environment depends on what you choose for your time of day and how (and if) you advance that time throughout gameplay. For the trueSKY sequence simulation, time is measured as a value in the range of [0,1] (ie, an entire day from midnight to midnight the following day). If you just leave the time at 0.0, it's going to be dark. Because it's night time. So, now is the, ahem, *time* to ensure you're setting the time. You can do this directly on the TrueSkySequenceActor instance in your scene or, even better, you can drive that time value through C/C++ or Blueprint to allow for the full day-night cycle to rock your digital world.
+Ultimately, the entirety of your environment depends on what you choose for your time of day and how (and if) you advance that time throughout gameplay. For the trueSKY sequence simulation, time is measured as a value in the range of [0,1]  (ie, an entire day from midnight to midnight the following day). If you just leave the time at 0.0, it's going to be dark. Because it's night time. So, now is the, ahem, *time* to ensure you're setting the time. You can do this directly on the TrueSkySequenceActor instance in your scene or, even better, you can drive that time value through C/C++ or Blueprint to allow for the full day-night cycle to rock your digital world.
 
 You won't want to just take the `FrameDelta` and use it to modify the time of day. Days would go by in, *literally*, seconds. So, you'll want to modify that value by some scalar (what that is just depends on how long an in-game day should last in your context). Or maybe you don't want to alter the time of day at all, in which case you can just ignore the time of data value outside of setting its initial value.
 

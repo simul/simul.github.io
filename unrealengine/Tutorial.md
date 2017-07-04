@@ -61,6 +61,11 @@ It's also worth rembering to set the Render Textures for Loss, Inscatter and Clo
 
 With that your scene is now fully configured and should be showing moving clouds and correct lighting. Of course this is a very basic scene, so to learn more and get the most out of trueSKY for Unreal, please see the further information section below.
 
+Cloud Shadows
+-------------
+To enable cloud shadows, connect the render texture "CloudShadowRT" to the "Cloud Shadow" slot of the trueSKY Sequence Actor.
+Assign the material function M_LightFunction to the "Light Function Material" slot of your Directional Light. You will need
+to run or simulate to see cloud shadows moving correctly.
 
 Further Information
 --------------
