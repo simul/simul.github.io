@@ -23,7 +23,11 @@ Frequently Asked Questions and Common Problems
 <br>With default settings, the cost of trueSKY should be between 2 and 4 ms per frame. If this is not being achieved or in the use case, speed is a higher priority than visual performance, then this can be improved by altering the Amortization, Atmospherics Amortization and/or Downscale Factor settings in the details panel of the TrueSkySequenceActor. To aid the measurement of performance, TrueSky also provides profiling information (Windows -> Overlays -> Profiling or use the GetProfilingText function in blueprint).
 
 * **How do I make the clouds appear less pixelated?**
-<br>Try lowering the downscale factor setting, in the details panel of the TrueSkySequenceActor.
+<br>Try increasing the Maximum Resolution setting, in the details panel of the TrueSkySequenceActor.
+
+
+* **How do I make the clouds move independently of time-of-day?**
+<br>Call the Blueprint function **SetBool** with the name "clouds:overrideWind" and the value *true*.
 
 **Behaviour**
 
