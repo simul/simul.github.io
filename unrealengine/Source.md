@@ -32,6 +32,8 @@ The following files in the UE source have been modified in the Simul fork of the
 ## Core Engine Files:
 * `Engine\Source\Runtime\Renderer\Private\DeferredShadingRenderer.cpp`
 * `Engine\Source\Runtime\Renderer\Public\RendererInterface.h`
+or
+* `Engine\Source\Runtime\RenderCore\Public\RendererInterface.h`
 * `Engine\Source\Runtime\Renderer\Private\RendererModule.h`
 * `Engine\Source\Runtime\Renderer\Private\SceneRendering.cpp`
 * `Engine\Source\Runtime\Renderer\Private\RendererScene.cpp`
