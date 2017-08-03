@@ -1,6 +1,6 @@
 ---
 title: Unreal
-layout: unreal
+layout: default
 weight : 2
 ---
 

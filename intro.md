@@ -8,9 +8,7 @@ TrueSKY is the culmination of many years' research and development. It is based 
 of light scattering and absorption, and is highly optimized for speed. We believe it is the best-performing system
 for realistic realtime skies and clouds.
 <div>
-<span class="floating">
-<img class="inline-image" src="folders.png" alt="folders.png">
-</span>
+
 The SDK comes as a set of libraries, under a main "Simul" directory. These can be linked statically or dynamically,
 depending on the platform. Binaries reside in the directory "Simul/lib" in the case of static libraries,
 and in "Simul/exe" for dll's. Source is found in the subdirectories for the constituent libraries.
@@ -23,7 +21,7 @@ In *exe* and *lib*, the following structure is observed:
                 - Release
                 - Static Debug
                 - Static Release
-        - VC12
+        - v140
                 - ...
 - x64
         - ...

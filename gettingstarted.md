@@ -4,7 +4,7 @@ layout: reference
 ---
 Getting Started
 ===
-Previous: \ref man_1_introduction
+Previous: <a href="/intro">Introduction</a>
 <hr size="1">
 
 
@@ -210,4 +210,4 @@ To add True Sky to an OpenGL project:
 ~~~~~~~~~~~~~~~
 
 <hr size="1">
-Next: \ref man_3_rendering
+Next: <a href="/rendering">Rendering</a>
