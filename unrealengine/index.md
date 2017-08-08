@@ -21,9 +21,9 @@ TrueSkyPlugin loads `TrueSkyUI_MD.dll` and `UE4PluginRenderInterface_MT.dll` fro
 
 When you run the UE4 editor, the trueSKY plugin should be enabled by default. If not, open up the Plugin Configurator for Unreal Engine (from the menu bar: **Edit->Plugins**). In the plugin configuration window and type "trueSKY" into the search box to find the plugin; check the "Enabled" box to enable it.
 
-[![alt text](http://simul.co/wp-content/uploads/2014/07/UE4_ShowPlugins-96x300.png "Opening the Plugin Configurator for Unreal Engine (from the main menu bar: Edit->Plugins).")](http://simul.co/wp-content/uploads/2014/07/UE4_ShowPlugins.png)
+[![alt text](https://simul.co/wp-content/uploads/2014/07/UE4_ShowPlugins-96x300.png "Opening the Plugin Configurator for Unreal Engine (from the main menu bar: Edit->Plugins).")](http://simul.co/wp-content/uploads/2014/07/UE4_ShowPlugins.png)
 
-[![alt text](http://docs.simul.co/unrealengine/images/EnableTrueSKY.png "Enabling the trueSKY Plugin in Unreal Engine 4's editor.")](http://docs.simul.co/unrealengine/images/EnableTrueSKY.png)
+[![alt text](https://docs.simul.co/unrealengine/images/EnableTrueSKY.png "Enabling the trueSKY Plugin in Unreal Engine 4's editor.")](http://docs.simul.co/unrealengine/images/EnableTrueSKY.png)
 
 If you had to change the "Enabled" setting from disabled to enabled (or vice versa), you'll need to restart the editor for the change to take effect, as with all editor plugin changes.
 
@@ -44,10 +44,10 @@ The trueSKY Sequence Actor is the primary way to access and interact with the tr
 Once you have the True Sky Sequence Actor in your scene, choose it from "World Outliner" window. Then, to customize it, open up the "Details" window/sidebar; set the reference to an existing **TrueSky Sequence Asset** in the "Active Sequence" dropdown. By default, there are two sample sequences you can instantly check and see the results for yourself:
 
 * `TrueSkySequenceCumulus` -- A prototypical cumulus cloud pattern (with a 3D and 2D cloud keyframe for example purposes).
-[![alt text](http://docs.simul.co/unrealengine/images/ue4_samplesequence_cumulus.png "Screen shot of the sample cumulus sky sequence in Unreal Engine 4.")](http://docs.simul.co/unrealengine/images/ue4_samplesequence_cumulus.png)
+[![alt text](https://docs.simul.co/unrealengine/images/ue4_samplesequence_cumulus.png "Screen shot of the sample cumulus sky sequence in Unreal Engine 4.")](http://docs.simul.co/unrealengine/images/ue4_samplesequence_cumulus.png)
 
 * `TrueSkySequenceStratus` -- A prototypical stratus cloud system; i.e. there's a rain/snow comin' (with a 3D and 2D cloud keyframe for example purposes).
-[![alt text](http://docs.simul.co/unrealengine/images/ue4_samplesequence_stratus.png "Screen shot of the sample cumulus sky sequence in Unreal Engine 4.")](http://docs.simul.co/unrealengine/images/ue4_samplesequence_stratus.png)
+[![alt text](https://docs.simul.co/unrealengine/images/ue4_samplesequence_stratus.png "Screen shot of the sample cumulus sky sequence in Unreal Engine 4.")](http://docs.simul.co/unrealengine/images/ue4_samplesequence_stratus.png)
 
 ### Creating New Sky Sequences
 To create a new TrueSkySequence asset, go to the "Content Browser" window. Press "New Asset" button (or do a right mouse click inside the window) to open an asset selection window. Choose "Miscellaneous / trueSKY Sequence Asset". A new asset will be created. Now you can rename/save/delete it.

@@ -37,5 +37,5 @@ The Static Debug and Static Release configuratons are supplied as static librari
 
 </div>
 <hr size="1">
-Next: \ref man_2_gettingstarted
+Next: <a href="/gettingstarted">Getting Started</a>
 

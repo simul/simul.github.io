@@ -11,7 +11,7 @@ In trueSKY, clouds are split into two layers: 3D clouds and 2D clouds. They have
 
 Each layer has its own properties and its own keyframes. Layer properties will affect the entire sequence. Keyframe properties will only affect the keyframe in question, unless there is only one keyframe present, in which case this will be used continously. Otherwise the clouds will use interpolation to move between specified properties at adjacent keyframes. 
 
-Read more about how clouds are rendered in trueSKY [here](http://docs.simul.co/reference/classsimul_1_1clouds_1_1BaseCloudRenderer.html).
+Read more about how clouds are rendered in trueSKY [here](https://docs.simul.co/reference/classsimul_1_1clouds_1_1BaseCloudRenderer.html).
 
 
 Editing Clouds in the Sequencer
@@ -19,9 +19,9 @@ Editing Clouds in the Sequencer
 
 To select a cloud keyframe, click it. To select all the keyframes of a cloud layer, double-click on the space between them or box select them. To select and modify the properties of a whole cloud layer, click on the "Clouds" text at left.
 
-<a href="http://docs.simul.co/unrealengine/images/CloudSeqExample.png"><img src="http://docs.simul.co/unrealengine/images/CloudSeqExample.png" alt="Cloud"/></a> 
+<a href="https://docs.simul.co/unrealengine/images/CloudSeqExample.png"><img src="https://docs.simul.co/unrealengine/images/CloudSeqExample.png" alt="Cloud"/></a> 
 
-Read more about editing the Cloud Layer or Cloud Keyframes on [The Sky Sequencer Page](http://docs.simul.co/reference/man_8_sequencer.html).
+Read more about editing the Cloud Layer or Cloud Keyframes on [The Sky Sequencer Page](https://docs.simul.co/reference/man_8_sequencer.html).
 
 
 Editing Clouds in Blueprint: The Cloud Layer
@@ -91,7 +91,7 @@ Once you have a cloud keyframe's Uid, you can Get and Set its properties. These 
 
 * **SetKeyframeInt:** Given a keyframe Uid, a name string and an integer value, will set the matching property for the Name to the specified integer value.
 
-<a href="http://docs.simul.co/unrealengine/images/CloudBPGetSet.png"><img src="http://docs.simul.co/unrealengine/images/CloudBPGetSet.png" alt="Blueprint"/></a>
+<a href="https://docs.simul.co/unrealengine/images/CloudBPGetSet.png"><img src="https://docs.simul.co/unrealengine/images/CloudBPGetSet.png" alt="Blueprint"/></a>
 
 
 The tables below show the various cloud keyframe properties, for floating point and integer values respectively. The entries in the "Name" column are what should be used as the "Name" string parameter in any Blueprint calls to GetKeyframeFloat, GetKeyframeInt, SetKeyframeFloat and SetKeyframeInt. 
@@ -152,9 +152,9 @@ Lock to Cloud| "lockRainToClouds" | Whether to make precipitation region move wi
 Further Information
 --------------
  
-* [The Sequencer](http://docs.simul.co/reference/man_8_sequencer.html)  
-* [Driving trueSKY via Blueprint](http://docs.simul.co/unrealengine/Blueprint.html)
-* [Cloud Rendering in trueSKY](http://docs.simul.co/reference/classsimul_1_1clouds_1_1BaseCloudRenderer.html)
+* [The Sequencer](https://docs.simul.co/reference/man_8_sequencer.html)  
+* [Driving trueSKY via Blueprint](https://docs.simul.co/unrealengine/Blueprint.html)
+* [Cloud Rendering in trueSKY](https://docs.simul.co/reference/classsimul_1_1clouds_1_1BaseCloudRenderer.html)
 * [Watch a video tutorial](https://www.youtube.com/watch?v=hE6qFzJgED4) 
 
 

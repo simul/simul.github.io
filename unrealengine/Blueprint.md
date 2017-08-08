@@ -163,13 +163,13 @@ trueSKY has a built-in profiler for GPU and CPU performance. Use "Get Profiling 
 
 The outputs are in milliseconds.
 
-![alt text](http://docs.simul.co/unrealengine/images/GetProfilingText.png "How to retrieve profiling text.")
+![alt text](https://docs.simul.co/unrealengine/images/GetProfilingText.png "How to retrieve profiling text.")
 
 
 ### Further Information
 * [The Sequencer](http://docs.simul.co/reference/man_8_sequencer.html)   
-* [The Clouds in trueSKY for UE4](http://docs.simul.co/unrealengine/Clouds.html)
-* [The Sky in trueSKY for UE4](http://docs.simul.co/unrealengine/Sky.html)
+* [The Clouds in trueSKY for UE4](https://docs.simul.co/unrealengine/Clouds.html)
+* [The Sky in trueSKY for UE4](https://docs.simul.co/unrealengine/Sky.html)
 * [Watch a video tutorial](https://www.youtube.com/watch?v=hE6qFzJgED4) 
 
 
