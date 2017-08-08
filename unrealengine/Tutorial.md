@@ -44,20 +44,15 @@ If you press Play/Simulate now you will see the clouds move and the day turn to 
 Implementing Lighting
 -------------------------
 
-Now that time is moving and the clouds are behaving properly, the next element of trueSKY to configure is the lighting. In trueSKY you can drive both the Sun and the Moon using the Blueprint system. By default your scene should already have a directional light present, but we will need two (one for the moon and one for the sun) so add another into the scene and rename them accordingly. Additionally, ensure that their Mobility (Details Panel -> Transform) is set to Movable. Open up the level blueprint and create references to these two directional lights. Create trueSKYSun and trueSKYMoon macros (right click -> TrueSky), connect them together and then ensure the Set Time node (assuming this was the last node in use) connects to the first of these two macros. Now connect the respective references to the input pins on the macros. You can also apply a multiplier to each to scale the brightness (in this example I have left the sun at 1.0 but doubled the moon's brightness).
+Now that time is moving and the clouds are behaving properly, the next element of trueSKY to configure is the lighting. In trueSKY you can drive both the Sun and the Moon using the Blueprint system. By default your scene should already have a directional light present. Ensure that its Mobility (Details Panel -> Transform) is set to Movable. Open up the level blueprint and create a reference to the directional light. Now connect it to the UpdateLight function. You can also apply a multiplier to each to scale the brightness (in this example I have left the sun at 1.0 but doubled the moon's brightness).
 
-<a href="http://docs.simul.co/unrealengine/images/SunAndMoon.png"><img src="http://docs.simul.co/unrealengine/images/SunAndMoon.png" alt="Blueprint"/></a>
-
-An alternative, more compact way to set the time and drive the sun and moon is via the TrueSkyLighting Macro, as shown below. Feel free to use either method.  
-
-<a href="http://docs.simul.co/unrealengine/images/AlternateTrueSkyLighting.png"><img src="http://docs.simul.co/unrealengine/images/AlternateTrueSkyLighting.png" alt="Blueprint"/></a> 
+<a href="http://docs.simul.co/unrealengine/images/UpdateLight.png" alt="UpdateLight"/></a>
 
 The default Unreal Engine Skylight is not dynamic. To get the most out of trueSKY it is advisable to replace this with a TrueSkyLight (Modes -> All Classes). This needs no configuration other than the update frequency (default 4 means every four frames the TrueSkyLight is updated). Do not manually capture the cubemap when using this Skylight: it works automatically.
 
 It's also worth rembering to set the Render Textures for Loss, Inscatter and Cloud Visibility (these won't be much use here, but are important when rendering transparent materials alongside trueSKY). 
 
 <a href="http://docs.simul.co/unrealengine/images/RTConfigure.png"><img src="http://docs.simul.co/unrealengine/images/RTConfigure.png" alt="Blueprint"/></a> 
-
 
 With that your scene is now fully configured and should be showing moving clouds and correct lighting. Of course this is a very basic scene, so to learn more and get the most out of trueSKY for Unreal, please see the further information section below.
 
