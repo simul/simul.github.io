@@ -1,10 +1,15 @@
 ---
 title: Unreal
-layout: default
-weight : 2
+layout: unreal
+weight : 0
 ---
 
-# Getting started
+trueSKY for Unreal Engine 4
+================
+
+Getting started
+--------------
+
 * Register your username at [https://simul.co/register](https://simul.co/register)
 * You'll find your licence at [simul.co/account](https://simul.co/account).
 * After evaluating, to get an indie licence, you can buy or subscribe at [simul.co/account](https://simul.co/account). For all other licences, write to [contact@simul.co](mailto:contact@simul.co).
