@@ -1,6 +1,7 @@
 ---
-title: Home
+title: Search Results
 layout: default
+weight: 10000
 ---
 <script>
 (function() {

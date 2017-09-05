@@ -10,7 +10,7 @@
 		</div>
 		<nav class="sidebar-nav">
 			<ul>
-				{% assign sorted_pages = site.pages | sort: "url" %}
+				{% assign sorted_pages = site.pages | sort: "weight" %}
                 {% assign this_path = "" %}
                 {% assign pages = site.array %}
                 {% assign paths = site.array %}
@@ -20,18 +20,17 @@
                 {% for node in sorted_pages %}
                     {% assign path = node.url | remove: "/index.html" %}
                     {% if path contains "/dir_" or path contains "/struct" or path contains "/functions" or path contains "/namespacemembers" or path contains "graph_legend"
-                			or path contains "google" or path contains "-members.html" or path contains "/classes.html" %}
+                			or path contains "google" or path contains "-members.html" or path contains "/classes.html" or path contains "/search-results" %}
                         {% continue %}
                     {% endif %}
                     {% if path contains "_source.html" %}
                       {% assign path = path | replace: "reference/","reference/source/" %}
-                    {% endif
-                			%}
+                    {% endif %}
                     {% assign path = path | replace: "reference/class","reference/classes/" | replace: "reference/classes/es","reference/classes" | replace: "reference/namespaces","reference/classes" | remove: ".html" | replace: "_1_1","/" | replace: "_01","
                     				" | replace: "_8","." | remove_first: "/" | replace: "_ooo","/" %}
                     {% assign psz = path | size %}
-                    {% assign title = node.title | replace "Namespace List","Reference" | remove: "Files (x86)/Jenkins/jobs/Simul Installers/workspace/Simul/PRODUCTS/TrueSky/Help/"
-                    				| remove: " Source File" | remove: " Class Reference" %}
+                    {% assign title = node.title | remove: "Files (x86)/Jenkins/jobs/Simul Installers/workspace/Simul/PRODUCTS/TrueSky/Help/"
+                    				| remove: " Source File" %}
                     {% if title == "404" or path contains "search-results" %}
                     {% continue %}
                     {% endif %}
@@ -57,60 +56,48 @@
                     {% unless node_path_parts_size == 1 %}
                         {% continue %}
                     {% endunless %}
-    				<li>
-    					<a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %} sidebar-1" href="{{ node.url }}">{{ node_title }}</a></li>
-				        {% if this_path contains node_path %}
-                        {% assign paths2 = site.array %}
-                        {% assign pages2 = site.array %}
-                        {% assign titles2 = site.array %}
+    				<li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %} sidebar-1" href="{{ node.url }}">{{ node_title }}</a></li>
+				    {% if this_path contains node_path or page.url == node.url %}
+                        {% assign paths2 = site.array %} {% assign pages2 = site.array %} {% assign titles2 = site.array %}
                         {% for node2 in pages %}
-                            {% unless path_sizes[forloop.index0] == 2 %}
-                        {% continue %}
-                        {% endunless %}
-                        {% assign path2
-                        				= paths[forloop.index0] %}
-                        {% if path2 contains node_path and node2.url != node.url %}
-                        {% assign paths2 = paths2 | push: path2 %}
-                        {% assign pages2 = pages2 | push: node2 %}
-                        {% assign titles2 = titles2 | push: titles[forloop.index0] %}
-                        				{% endif %}
+                            {% unless path_sizes[forloop.index0] == 2 %} {% continue %} {% endunless %}
+                            {% assign path2 = paths[forloop.index0] %}
+                            {% if path2 contains node_path and node2.url != node.url %} {% assign paths2 = paths2 | push: path2 %}{% assign pages2 = pages2 | push: node2 %}
+                                {% assign titles2 = titles2 | push: titles[forloop.index0] %}
+                        	{% endif %}
                         {% endfor %}
                         {% if pages2.size > 0 %}
-                        {% assign menu_level = 1 %}
-				<ul>
-					{% for node2 in pages2 %}
-					<li><a class="sidebar-nav-item{% if page.url == node2.url %} active{% endif %} sidebar-2" href='{{node2.url}}'>{{ titles2[forloop.index0] }}</a></li>
-					{% assign path2 = paths2[forloop.index0] %}
-{% if this_path contains path2 %}
-{% assign pages3 = site.array %}
-{% assign titles3 = site.array %}
-{% for node3 in pages %}
-{% unless path_sizes[forloop.index0] == 3 %}
-{% continue %}
-{% endunless %}
-{% assign
-					path3 = paths[forloop.index0] %}
-{% if path3 contains path2 and node3.url != node.url %}
-{% assign paths3 = paths3 | push: path3 %}
-{% assign pages3 = pages3 | push: node3 %}
-{% assign titles3 = titles3 | push: titles[forloop.index0]
-					%}
-{% endif %}
-{% endfor %}
-{% if pages3.size > 0 %}
-{% assign menu_level = 1 %}
-					<ul>
-						{% for node3 in pages3 %}
-						<li><a class="sidebar-nav-item{% if page.url == node3.url %} active{% endif %} sidebar-3" href='{{node3.url}}'>{{ titles3[forloop.index0] }}</a></li>
-						{% endfor %}
-					</ul>
-					{% endif%}
-{% endif %}
-{% endfor %}
-				</ul>
-				{% endif%}
-{% endif %}
-{% endfor %}
+                            {% assign menu_level = 1 %}
+            			    <ul>{% for node2 in pages2 %}
+            				   <li><a class="sidebar-nav-item{% if page.url == node2.url %} active{% endif %} sidebar-2" href='{{node2.url}}'>{{ titles2[forloop.index0] }}</a></li>
+                				{% assign path2 = paths2[forloop.index0] %}
+                                {% if this_path contains path2 %}
+                                    {% assign pages3 = site.array %}
+                                    {% assign titles3 = site.array %}
+                                    {% for node3 in pages %}
+                                        {% unless path_sizes[forloop.index0] == 3 %}
+                                            {% continue %}
+                                        {% endunless %}
+                                        {% assign path3 = paths[forloop.index0] %}
+                                        {% if path3 contains path2 and node3.url != node.url %}
+                                            {% assign paths3 = paths3 | push: path3 %}
+                                            {% assign pages3 = pages3 | push: node3 %}
+                                            {% assign titles3 = titles3 | push: titles[forloop.index0] %}
+                                        {% endif %}
+                                    {% endfor %}
+                                    {% if pages3.size > 0 %}
+                                        {% assign menu_level = 1 %}
+                                			<ul>
+                                				{% for node3 in pages3 %}
+                                				  <li><a class="sidebar-nav-item{% if page.url == node3.url %} active{% endif %} sidebar-3" href='{{node3.url}}'>{{ titles3[forloop.index0] }}</a></li>
+                                				{% endfor %}
+                                			</ul>
+                                    {% endif%}
+                                {% endif %}
+                            {% endfor %}</ul>
+            		    {% endif%}
+                    {% endif %}
+                {% endfor %}
 			</ul>
 		</nav>
 		<p>&copy; {{ site.time | date: '%Y' }} Simul Software Ltd. All rights reserved.</p>

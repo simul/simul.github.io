@@ -1,43 +1,55 @@
 ---
 title: BaseProfilingInterface
 layout: reference
+weight: 0
 ---
-class simul::base::BaseProfilingInterface
+class BaseProfilingInterface
 ===
-void Clear(p)
-------
 
-char GetDebugText(st)
-------
+| Include: | Base/ProfilingInterface.h |
 
-/ Gets the profiling report as text.
-/
-/ \param        st Determines if the text should be returned as HTML, including colour formatting.
-/
-/ \return       null if it fails, else the debug text.
-ProfileData GetEvent(,)
-------
+A virtual interface base class for classes that can profile for performance.
 
-! Get profile data for the event at index i. Returns NULL for i&lt;0 or i&gt;= number of events.
-! Null parent means the top-level events.
-int GetMaxLevel()
-------
 
-! Call this to get the maximum level of the profiling tree.
-void SetMaxLevel(m)
-------
+Functions
+---
 
-! Call this to set the maximum level of the profiling tree.
-void StartFrame()
-------
+| char  const * | [GetDebugText](#GetDebugText)(simul::base::TextStyle st) |
+| simul::base::ProfileData  const * | [GetEvent](#GetEvent)(simul::base::ProfileData, int) |
+| int | [GetMaxLevel](#GetMaxLevel)() |
+| void | [SetMaxLevel](#SetMaxLevel)(int m) |
+| void | [StartFrame](#StartFrame)() |
 
-! Call this at the start of the frame to reset values.
-ProfileData CreateProfileData()
-------
+A virtual interface base class for classes that can profile for performance.
+  
 
-std::string Walk(profileData,tab,parent_time,style)
-------
 
-void WalkReset(p)
-------
+Functions
+---
 
+### <a name="GetDebugText"/>char  const * GetDebugText(simul::base::TextStyle st)
+Gets the profiling report as text.
+
+
+**st** Determines if the text should be returned as HTML, including colour formatting.
+
+
+**return:** null if it fails, else the debug text.
+
+### <a name="GetEvent"/>simul::base::ProfileData  const * GetEvent(simul::base::ProfileData, int)
+Get profile data for the event at index i. Returns NULL for i<0 or i>= number of events.
+Null parent means the top-level events.
+Get profile data for the event at index i. Returns NULL for i<0 or i>= number of events.
+Null parent means the top-level events.
+
+### <a name="GetMaxLevel"/>int GetMaxLevel()
+Call this to get the maximum level of the profiling tree.
+Call this to get the maximum level of the profiling tree.
+
+### <a name="SetMaxLevel"/>void SetMaxLevel(int m)
+Call this to set the maximum level of the profiling tree.
+Call this to set the maximum level of the profiling tree.
+
+### <a name="StartFrame"/>void StartFrame()
+Call this at the start of the frame to reset values.
+Call this at the start of the frame to reset values.

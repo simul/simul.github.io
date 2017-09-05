@@ -48,3 +48,7 @@
 code, pre code {
   font-size: 12px;
 }
+
+h3 {
+	border-bottom:2px #eee solid;
+}

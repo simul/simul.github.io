@@ -1,10 +1,11 @@
 ---
 title: Getting Started
 layout: reference
+weight: 2
 ---
 Getting Started
-===
-Previous: <a href="/intro">Introduction</a>
+===============
+Previous: <a href="intro">Introduction</a>
 <hr size="1">
 
 
@@ -28,7 +29,7 @@ To build the samples, use the solution file appropriate to your Visual Studio ve
 
         - SimulSamples_x64_VC11.sln
 
-\image html "SimulOverview.png"
+
 
 The two main elements to implementing trueSKY in a project are: an Environment object, which will encapsulate sky and cloud data;
  a WeatherRenderer, and a RenderPlatform.
@@ -40,13 +41,13 @@ You should create an instance of simul::clouds::Environment, which is persistent
         simul::clouds::Environment *environment=NULL;
 ~~~~~~~~~~~~~~~
 
-Apply your trueSKY licence key (see \ref man_a_licensing for more details), and initialize the Environment instance:
+Apply your trueSKY licence key (see <man\_a\_licensing> for more details), and initialize the Environment instance:
 ~~~~~~~~~~~~~~~{.c}
         simul::base::SetLicence(SIMUL_LICENSE_KEY);
         environment=new simul::clouds::Environment();
 ~~~~~~~~~~~~~~~
 
-The Environment is API-neutral, it calculates and updates environment data. We will create a persistent \link simul::crossplatform::RenderPlatform RenderPlatform\endlink,
+The Environment is API-neutral, it calculates and updates environment data. We will create a persistent ::crossplatform::RenderPlatform RenderPlatform\endlink,
 whose class depends on the graphics API we use:
 
 ~~~~~~~~~~~~~~~{.c}
@@ -93,7 +94,7 @@ Then to render:
                 deviceContext.viewStruct.view                           =viewMatrix;
                 deviceContext.viewStruct.proj                           =projectionMatrix;
 ~~~~~~~~~~~~~~~
-We've created a \link simul::crossplatform::DeviceContext deviceContext\endlink object that we will pass to the render functions.
+We've created a ::crossplatform::DeviceContext deviceContext that we will pass to the render functions.
 This object encapsulates the platform-specific context - in this case it's
 an ID3D11DeviceContext pointer - and view-specific information: the view and projection matrices for example.
 
@@ -113,10 +114,10 @@ You don't have to explicitly create views, but you should call:
 to free up GPU memory if a view is removed.
 
 We specify the depth texture style so that trueSKY knows how to interpret the
-depth information you pass to it. The matrices (\link simul::math::Matrix4x4 Matrix4x4\endlink) are row-major view and projection matrices stored as a simple block of 16 floats - you can cast from most standard matrix classes directly.
+depth information you pass to it. The matrices (::math::Matrix4x4 Matrix4x4\endlink) are row-major view and projection matrices stored as a simple block of 16 floats - you can cast from most standard matrix classes directly.
 
-Once per frame, before rendering , we must call \link simul::clouds::BaseWeatherRenderer::PreRenderUpdate PreRenderUpdate\endlink, passing
-a deviceContext that refers to \em main \em view.
+Once per frame, before rendering , we must call ::clouds::BaseWeatherRenderer::PreRenderUpdate PreRenderUpdate\endlink, passing
+a deviceContext that refers to **main** **view**.
 ~~~~~~~~~~~~~~~{.cpp}
         weatherRenderer->PreRenderUpdate(deviceContext,real_time_s);
 ~~~~~~~~~~~~~~~
@@ -138,7 +139,7 @@ but the chosen number depends on how bright you want the sky to be relative to y
 We use *is_cubemap* to specify whether we're doing a cubemap render. If so,
 shortcuts will be used to draw with less detail. We pass a depth texture, because the atmospherics and clouds need to use this.
 The *depthViewport* specifies what area of the texture is being used for the current view (some engines store a larger texture and use a portion of it): pass NULL here to use the entire texture.
-See also \link man_5_classes_ooo3_mixed Mixed Resolution Rendering\endlink.
+See also  Mixed Resolution Rendering\endlink.
 
 
 Platform considerations
@@ -210,4 +211,4 @@ To add True Sky to an OpenGL project:
 ~~~~~~~~~~~~~~~
 
 <hr size="1">
-Next: <a href="/rendering">Rendering</a>
+Next: <a href="rendering">Rendering the Environment</a>

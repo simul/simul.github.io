@@ -1,26 +1,49 @@
 ---
 title: Referenced
 layout: reference
+weight: 0
 ---
-class simul::base::Referenced
+class Referenced
 ===
-void intrusive_ptr_add_ref()
-------
 
-! Increment the reference count by one.
-void intrusive_ptr_release()
-------
+| Include: | Base/Referenced.h |
 
-! Decrement the reference count by one, delete if zero.
-Referenced operator=()
-------
+Base class for classes that use reference-counting. This class handles the reference counts
+and deletes the instance when the count reaches zero. Designed to be used with
+simul::base::SmartPtr.
 
-int referenceCount()
-------
 
-! Return the number of pointers referencing this object.
-void PrepareToDestroy()
-------
+Functions
+---
 
-! Enact all destruction code that needs to rely on the derived class's virtual functions
-! because destructors can't use virtuals properly.
+| void | [intrusive_ptr_add_ref](#intrusive_ptr_add_ref)() |
+| void | [intrusive_ptr_release](#intrusive_ptr_release)() |
+| int | [referenceCount](#referenceCount)() |
+| void | [PrepareToDestroy](#PrepareToDestroy)() |
+
+Base class for classes that use reference-counting. This class handles the reference counts
+and deletes the instance when the count reaches zero. Designed to be used with
+simul::base::SmartPtr.
+  
+
+
+Functions
+---
+
+### <a name="intrusive_ptr_add_ref"/>void intrusive_ptr_add_ref()
+Increment the reference count by one.
+Increment the reference count by one.
+
+### <a name="intrusive_ptr_release"/>void intrusive_ptr_release()
+Decrement the reference count by one, delete if zero.
+Decrement the reference count by one, delete if zero.
+
+### <a name="referenceCount"/>int referenceCount()
+Return the number of pointers referencing this object.
+Return the number of pointers referencing this object.
+
+### <a name="PrepareToDestroy"/>void PrepareToDestroy()
+Enact all destruction code that needs to rely on the derived class's virtual functions
+because destructors can't use virtuals properly.
+Enact all destruction code that needs to rely on the derived class's virtual functions
+because destructors can't use virtuals properly.

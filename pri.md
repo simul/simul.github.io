@@ -1,10 +1,11 @@
 ---
 title: The Plugin Rendering Interface
 layout: reference
+weight: 40
 ---
 The Plugin Rendering Interface
-===
-Previous: \ref man_3_rendering
+=========================
+Previous: <a href="rendering">Rendering the Environment</a>
 <hr size="1">
 
 One way to connect trueSKY to a game or simulation engine is using the Plugin Rendering Interface.
@@ -78,4 +79,4 @@ The exported functions are used to perform sky rendering per-frame for each view
         bool StaticFillColourTable(unsigned uid,int x,int y,int z,float *target);
 
 <hr>
-Next: \ref man_5_classes
+Next: <a href="classes">The trueSKY Classes</a>
