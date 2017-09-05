@@ -14,10 +14,7 @@ namespace simul
 | [namespace clouds](simul/clouds) | The namespace corresponding to the Clouds module.<br> |
 | [namespace crossplatform](simul/crossplatform) | The namespace and library for cross-platform base classes, which abstract rendering functionality. |
 | [namespace geometry](simul/geometry) | Geometry is a small library that contains orientation and reference frame classes.<br> |
-| [namespace graph](simul/graph) |  |
 | [namespace math](simul/math) | Math is the mathematics library for Simul. It contains Vector, Matrix and<br>Quaternion classes, vector-matrix, vector-quat and matrix-quat functions,<br>and some low-level maths functions.<br> |
 | [namespace plugin](simul/plugin) | The namespace for the plugin render interface. |
-| [namespace scene](simul/scene) |  |
 | [namespace sky](simul/sky) | <br> |
-| [namespace terrain](simul/terrain) |  |
 
