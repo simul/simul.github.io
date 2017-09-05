@@ -9,6 +9,7 @@ Reference
 Reference<br>===<br>
 
 
+| [namespace sce](ref/sce) |  |
 | [namespace simul](ref/simul) |  |
 | [namespace std](ref/std) |  |
 

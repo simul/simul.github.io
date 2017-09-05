@@ -11,7 +11,7 @@ class BaseSkyRenderer
 The Sky Renderer performs the following tasks:<br>- Rendering stars: using RenderPointStars(void *context,float exposure)<br>- Rendering planets (e.g. the Moon): using RenderPlanets(void *context,float exposure)<br>- Rendering the sun, using RenderSun(void *context,float exposure)<br>
 
 [simul::base::Referenced](../base/Referenced)
-[simul::crossplatform::BaseRenderer]()
+[simul::crossplatform::BaseRenderer](../crossplatform/BaseRenderer)
 
 Functions
 ---
@@ -116,7 +116,7 @@ with values less than one used for atmospheric scattering over solid objects.
 Base Classes
 ---
 [simul::base::Referenced](../base/Referenced)
-[simul::crossplatform::BaseRenderer]()
+[simul::crossplatform::BaseRenderer](../crossplatform/BaseRenderer)
 
 Functions
 ---
