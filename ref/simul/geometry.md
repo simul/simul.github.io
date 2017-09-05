@@ -8,8 +8,7 @@ namespace geometry
 
 | Include: | Geometry/Geometry.h |
 
-Geometry is a small library that contains orientation and reference frame classes.
-
+Geometry is a small library that contains orientation and reference frame classes.<br>
 
 
 Classes and Structures

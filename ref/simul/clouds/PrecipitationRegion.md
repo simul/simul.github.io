@@ -8,8 +8,7 @@ struct PrecipitationRegion
 
 | Include: | Clouds/BaseGpuCloudGenerator.h |
 
-A structure defining an area where there is rain or snow.
-If **regional** is false, it is everywhere.
+A structure defining an area where there is rain or snow.<br>If **regional** is false, it is everywhere.
 
 
 

@@ -8,9 +8,7 @@ class VirtualVector
 
 | Include: | Math/Vector3.h |
 
-VirtualVector is derived from Vector but does not manage its own data. Instead
-the #PointTo method is used to give vector functionality to floating point data
-anywhere in memory (as long as any alignment conditions are satisfied.)
+VirtualVector is derived from Vector but does not manage its own data. Instead<br>the #PointTo method is used to give vector functionality to floating point data<br>anywhere in memory (as long as any alignment conditions are satisfied.)
 
 [simul::math::Vector](Vector)
 

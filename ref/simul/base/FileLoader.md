@@ -8,9 +8,7 @@ class FileLoader
 
 | Include: | Base/FileLoader.h |
 
-An interface to derive from so you can provide your own file load/save functions.
-Use SetFileLoader to define the object that Simul will use for file handling.
-The default is simul::base::DefaultFileLoader, which uses standard file handling.
+An interface to derive from so you can provide your own file load/save functions.<br>Use SetFileLoader to define the object that Simul will use for file handling.<br>The default is simul::base::DefaultFileLoader, which uses standard file handling.
 
 
 Functions

@@ -8,11 +8,7 @@ class FastCloudNode
 
 | Include: | Clouds/FastCloudNode.h |
 
-Create an instance of FastCloudNode to generate cloud data for rendering.
-This class can use a custom memory allocator, because it is derived from
-a ResourceUser<> of simul::base::MemoryInterface. To use this feature
-call SetResource( simul::base::MemoryInterface *) with a pointer to a
-an instance of a class derived from MemoryInterface.
+Create an instance of FastCloudNode to generate cloud data for rendering.<br>This class can use a custom memory allocator, because it is derived from<br>a ResourceUser<> of simul::base::MemoryInterface. To use this feature<br>call SetResource( simul::base::MemoryInterface *) with a pointer to a<br>an instance of a class derived from MemoryInterface.
 
 [simul::clouds::CellularCloudNode](CellularCloudNode)
 

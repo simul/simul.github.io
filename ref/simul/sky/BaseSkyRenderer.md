@@ -8,11 +8,7 @@ class BaseSkyRenderer
 
 | Include: | Sky/BaseSkyRenderer.h |
 
-The Sky Renderer performs the following tasks:
-- Rendering stars: using RenderPointStars(void *context,float exposure)
-- Rendering planets (e.g. the Moon): using RenderPlanets(void *context,float exposure)
-- Rendering the sun, using RenderSun(void *context,float exposure)
-
+The Sky Renderer performs the following tasks:<br>- Rendering stars: using RenderPointStars(void *context,float exposure)<br>- Rendering planets (e.g. the Moon): using RenderPlanets(void *context,float exposure)<br>- Rendering the sun, using RenderSun(void *context,float exposure)<br>
 
 [simul::base::Referenced](../base/Referenced)
 [simul::crossplatform::BaseRenderer]()

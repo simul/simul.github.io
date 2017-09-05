@@ -8,8 +8,7 @@ class SkyKeyframer
 
 | Include: | Sky/BaseAtmosphericsRenderer.h |
 
-A class that maintains sky properties and interpolates them based on keyframe values.
-
+A class that maintains sky properties and interpolates them based on keyframe values.<br>
 
 [simul::base::Referenced](../base/Referenced)
 [simul::sky::BaseKeyframer](BaseKeyframer)

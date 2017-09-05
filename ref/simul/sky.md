@@ -8,8 +8,7 @@ namespace sky
 
 | Include: | Sky/BaseAtmosphericsRenderer.h |
 
-
-
+<br>
 
 
 Classes and Structures
@@ -72,9 +71,6 @@ Functions
 ### <a name="CalcMieCoefficients"/>simul::sky::float4 CalcMieCoefficients(simul::sky::float4 ColourWavelengthsNm, float haze)
 Calculates the mie coefficients (r,g,b) due to aerosol haze.
 Calculates the mie coefficients (r,g,b) due to aerosol haze.
-
-Variables
----
 
 Enums
 ---

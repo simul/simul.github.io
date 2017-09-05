@@ -8,8 +8,7 @@ class Timer
 
 | Include: | Base/Timer.h |
 
- microsecond timer.
-Provides timing to microsecond accuracy; results are reported in milliseconds.
+ microsecond timer.<br>Provides timing to microsecond accuracy; results are reported in milliseconds.
 
 
 Functions

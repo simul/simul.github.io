@@ -3,9 +3,7 @@ title: Rendering the Environment
 layout: reference
 weight: 3
 ---
-Rendering the Environment
-=========================
-Previous: <a href="gettingstarted">Getting Started</a>
+Rendering the Environment<br>=========================<br>Previous: <a href="gettingstarted">Getting Started</a>
 <hr size="1">
 
 All Simul's default renderers use a right-handed co-ordinate system with x pointing East, y North, and z up. All units of distance are metres or kilometres. If not specified as km, distance is in metres. Angular units are radians, unless specified as degrees. Temperature is in kelvins, unless specified as degrees Celsius.
@@ -15,9 +13,9 @@ Weather Rendering is handled by  ::clouds::BaseWeatherRenderer BaseWeatherRender
 The Weather Renderer owns and manages renderers for sky, clouds, atmospherics and other effects.
 So the Weather Renderer is the main interface between your program and trueSKY.
 
-The following table describes the elements of a sky as implemented in the supplied renderers:
+The following table describes the elements of a sky as implemented in the renderer:
 
-| Feature                                       |
+| Features                                      |
 | -------------------------     |
 | Cosmic Background                     |
 | Stars                                         |
@@ -98,7 +96,7 @@ Classes derived from simul::clouds::BasePrecipitationRenderer are used to draw t
 
 Shaders
 -------
-Shaders are provided as source in the shader subdirectories of the platform directories (see <man\_5\_classes\_ooo2\_shaders>).
+Shaders are provided as source in the shader subdirectories of the platform directories (see <shaders>).
 
 <hr>
 Next: <a href="pri">The Plugin Rendering Interface</a>

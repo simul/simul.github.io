@@ -8,9 +8,7 @@ class BaseWeatherRenderer
 
 | Include: | Clouds/BaseWeatherRenderer.h |
 
-The main base class for all weather renderers, such as SimulGLWeatherRenderer,
-SimulWeatherRenderer (DX11) etc.
-
+The main base class for all weather renderers, such as SimulGLWeatherRenderer,<br>SimulWeatherRenderer (DX11) etc.<br>
 
 
 Functions

@@ -8,8 +8,7 @@ class BaseKeyframer
 
 | Include: | Sky/BaseKeyframer.h |
 
-The base class for keyframers. A keyframer stores a list of keyframes, each representing the state at
-a particular time.
+The base class for keyframers. A keyframer stores a list of keyframes, each representing the state at<br>a particular time.
 
 
 Functions

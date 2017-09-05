@@ -8,8 +8,7 @@ class Matrix
 
 | Include: | Math/Matrix.h |
 
- Matrix class.
-
+ Matrix class.<br>
 
 
 Functions

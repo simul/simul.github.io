@@ -8,8 +8,7 @@ class Matrix4x4
 
 | Include: | Math/Matrix.h |
 
-A fixed-size 4 by 4 matrix class.
-It is used mainly for transformations - see SimulOrientation.
+A fixed-size 4 by 4 matrix class.<br>It is used mainly for transformations - see SimulOrientation.
 
 
 Functions

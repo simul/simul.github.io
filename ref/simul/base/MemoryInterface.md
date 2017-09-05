@@ -8,8 +8,7 @@ class MemoryInterface
 
 | Include: | Base/MemoryInterface.h |
 
-Inherit from MemoryInterface to take control of memory allocation for any class that uses
-this interface as a resource.
+Inherit from MemoryInterface to take control of memory allocation for any class that uses<br>this interface as a resource.
 
 
 Functions

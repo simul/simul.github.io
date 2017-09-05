@@ -8,10 +8,7 @@ class SkyTexturesCallback
 
 | Include: | Sky/SkyTexturesCallback.h |
 
-A callback virtual base class that fade tables use. A fade table is any class derived from FadeTableInterface, and it
-uses these callback functions to tell your platform-specific renderer how to create and modify the sky and fade textures.
-Usually you would derive your sky-rendering class from SkyTexturesCallback, and implement these functions. See, for example,
-the DirectX implementation of SimulSkyRenderer.
+A callback virtual base class that fade tables use. A fade table is any class derived from FadeTableInterface, and it<br>uses these callback functions to tell your platform-specific renderer how to create and modify the sky and fade textures.<br>Usually you would derive your sky-rendering class from SkyTexturesCallback, and implement these functions. See, for example,<br>the DirectX implementation of SimulSkyRenderer.
 
 
 Functions

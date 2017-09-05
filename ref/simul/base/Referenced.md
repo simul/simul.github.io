@@ -8,9 +8,7 @@ class Referenced
 
 | Include: | Base/Referenced.h |
 
-Base class for classes that use reference-counting. This class handles the reference counts
-and deletes the instance when the count reaches zero. Designed to be used with
-simul::base::SmartPtr.
+Base class for classes that use reference-counting. This class handles the reference counts<br>and deletes the instance when the count reaches zero. Designed to be used with<br>simul::base::SmartPtr.
 
 
 Functions

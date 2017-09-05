@@ -8,11 +8,7 @@ class SimulOrientation
 
 | Include: | Geometry/Orientation.h |
 
-The orientation holds position and rotation.
-Position is a vector which can be accessed using #GetPosition().
-Rotation is stored as a quaternion q.
-To transform use #LocalToGlobalPosition, #GlobalToLocalPosition,
-#LocalToGlobalDirection and #GlobalToLocalDirection.
+The orientation holds position and rotation.<br>Position is a vector which can be accessed using #GetPosition().<br>Rotation is stored as a quaternion q.<br>To transform use #LocalToGlobalPosition, #GlobalToLocalPosition,<br>#LocalToGlobalDirection and #GlobalToLocalDirection.
 
 
 Functions

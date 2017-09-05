@@ -8,11 +8,7 @@ class Sky
 
 | Include: | Sky/BaseSkyRenderer.h |
 
-Sky tracks the time of day, time of year, and viewing location in order to
-calculate the relative position of the sun in the sky and hence the lighting.
-If you set the year, it can even calculate the position of the moon.
-TimeStep() advances the time of day, or you can use SetTime(), or SetHourOfTheDay().
-
+Sky tracks the time of day, time of year, and viewing location in order to<br>calculate the relative position of the sun in the sky and hence the lighting.<br>If you set the year, it can even calculate the position of the moon.<br>TimeStep() advances the time of day, or you can use SetTime(), or SetHourOfTheDay().<br>
 
 [simul::sky::BaseSky]()
 

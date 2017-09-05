@@ -3,9 +3,7 @@ title: Controlling the Environment
 layout: reference
 weight: 0
 ---
-Controlling the Environment
-===
-Previous: <a href=".">The trueSKY Classes</a>
+Controlling the Environment<br>===<br>Previous: <a href=".">The trueSKY Classes</a>
 
 ## Updating ##
 The ::clouds::Environment Environment stores an instance of ::sky::SkyKeyframer SkyKeyframer two instances of ::clouds::CloudKeyframer CloudKeyframer\endlink, and performs the necessary initialization and updates.

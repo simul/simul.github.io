@@ -8,8 +8,7 @@ namespace clouds
 
 | Include: | Clouds/Base2DCloudRenderer.h |
 
-The namespace corresponding to the Clouds module.
-
+The namespace corresponding to the Clouds module.<br>
 
 
 Classes and Structures

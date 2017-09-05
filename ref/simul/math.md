@@ -8,10 +8,7 @@ namespace math
 
 | Include: | Math/Decay.h |
 
-Math is the mathematics library for Simul. It contains Vector, Matrix and
-Quaternion classes, vector-matrix, vector-quat and matrix-quat functions,
-and some low-level maths functions.
-
+Math is the mathematics library for Simul. It contains Vector, Matrix and<br>Quaternion classes, vector-matrix, vector-quat and matrix-quat functions,<br>and some low-level maths functions.<br>
 
 
 Classes and Structures

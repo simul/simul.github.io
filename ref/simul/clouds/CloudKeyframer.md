@@ -8,9 +8,7 @@ class CloudKeyframer
 
 | Include: | Clouds/Base2DCloudRenderer.h |
 
-A class to manage interpolation between cloud states over time.
-Typically, a CloudKeyframer is created and updated by its ::clouds::Environment Environment\endlink.
-
+A class to manage interpolation between cloud states over time.<br>Typically, a CloudKeyframer is created and updated by its ::clouds::Environment Environment\endlink.<br>
 
 [simul::sky::OvercastCallback](../sky/OvercastCallback)
 [simul::sky::BaseKeyframer](../sky/BaseKeyframer)

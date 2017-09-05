@@ -8,8 +8,7 @@ class BaseCloudRenderer
 
 | Include: | Clouds/BaseCloudRenderer.h |
 
-Class for real-time volumetric cloud rendering.
-
+Class for real-time volumetric cloud rendering.<br>
 
 
 Functions

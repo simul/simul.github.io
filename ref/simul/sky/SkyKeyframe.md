@@ -8,8 +8,7 @@ struct SkyKeyframe
 
 | Include: | Sky/SkyInterface.h |
 
-The properties of any sky keyframe can be changed at any time. However, only HazeEccentricity
-can be changed for an in-use keyframe without triggering a recalculation of the colour tables.
+The properties of any sky keyframe can be changed at any time. However, only HazeEccentricity<br>can be changed for an in-use keyframe without triggering a recalculation of the colour tables.
 
 [simul::sky::BaseKeyframe](BaseKeyframe)
 

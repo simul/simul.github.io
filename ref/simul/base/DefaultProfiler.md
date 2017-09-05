@@ -8,9 +8,7 @@ class DefaultProfiler
 
 | Include: | Base/ProfilingInterface.h |
 
-A simple profiler using simul::base::Timer
-Usage is as follows:
-
+A simple profiler using simul::base::Timer<br>Usage is as follows:<br>
 
 [simul::base::ProfilingInterface](ProfilingInterface)
 

@@ -3,9 +3,7 @@ title: Getting Started
 layout: reference
 weight: 2
 ---
-Getting Started
-===============
-Previous: <a href="intro">Introduction</a>
+Getting Started<br>===============<br>Previous: <a href="intro">Introduction</a>
 <hr size="1">
 
 

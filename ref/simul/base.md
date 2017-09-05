@@ -8,8 +8,7 @@ namespace base
 
 | Include: | Base/Base.h |
 
-Base is the base library, containing simple data structures, macros and other useful things.
-
+Base is the base library, containing simple data structures, macros and other useful things.<br>
 
 
 Classes and Structures

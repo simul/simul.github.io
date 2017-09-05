@@ -8,9 +8,7 @@ class SimulReferenceFrame
 
 | Include: | Geometry/ReferenceFrame.h |
 
-The reference frame holds position, rotation, and linear and angular velocity.
-Velocity is a simul::math::Vector3 which can be accessed using #GetVelocity().
-Angular velocity is a simul::math::Vector3 which can be accessed using #GetAngularVelocity().
+The reference frame holds position, rotation, and linear and angular velocity.<br>Velocity is a simul::math::Vector3 which can be accessed using #GetVelocity().<br>Angular velocity is a simul::math::Vector3 which can be accessed using #GetAngularVelocity().
 
 [simul::geometry::SimulOrientation](SimulOrientation)
 
