@@ -48,7 +48,11 @@ Now that time is moving and the clouds are behaving properly, the next element o
 
 <a href="http://docs.simul.co/unrealengine/images/UpdateLight.png"><img src="http://docs.simul.co/unrealengine/images/UpdateLight.png" alt="UpdateLight"/></a>
 
-The default Unreal Engine Skylight is not dynamic. To get the most out of trueSKY it is advisable to replace this with a TrueSkyLight (Modes -> All Classes). This needs no configuration other than the update frequency (default 4 means every four frames the TrueSkyLight is updated). Do not manually capture the cubemap when using this Skylight: it works automatically.
+Ambient Light with TrueSkyLight
+-------------------------------
+
+The default Unreal Engine Skylight is not dynamic. To get the most out of trueSKY it is advisable to replace this with a TrueSkyLight (Modes -> All Classes). Do not manually capture the cubemap when using this Skylight: it works automatically.
+You can adjust the update frequency (default 4 means every four frames the TrueSkyLight is updated), and the Diffuse and Specular brightness - it's recommended not to change these dynamically, but choose in advance the values that work best. The Blend property controls how smoothly (and thus, slowly) the light changes over time.
 
 It's also worth rembering to set the Render Textures for Loss, Inscatter and Cloud Visibility (these won't be much use here, but are important when rendering transparent materials alongside trueSKY). 
 
