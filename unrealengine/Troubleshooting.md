@@ -19,12 +19,14 @@ Frequently Asked Questions and Common Problems
 
 **Performance**
 
-* **TrueSky is taking too many milliseconds to render a frame. How can I reduce this value?**
-<br>With default settings, the cost of trueSKY should be between 2 and 4 ms per frame. If this is not being achieved or in the use case, speed is a higher priority than visual performance, then this can be improved by altering the Amortization, Atmospherics Amortization and/or Downscale Factor settings in the details panel of the TrueSkySequenceActor. To aid the measurement of performance, TrueSky also provides profiling information (Windows -> Overlays -> Profiling or use the GetProfilingText function in blueprint).
+* **trueSKY is taking too many milliseconds to render a frame. How can I reduce this value?**
+<br>With default settings, the cost of trueSKY should be between 2 and 4 ms per frame. If this is not being achieved or in the use case, speed is a higher priority than visual performance, then this can be improved by altering the Amortization, Atmospherics Amortization and/or Downscale Factor settings in the details panel of the trueSKYSequenceActor. To aid the measurement of performance, trueSKY also provides profiling information (Windows -> Overlays -> Profiling or use the GetProfilingText function in blueprint).
 
 * **How do I make the clouds appear less pixelated?**
-<br>Try increasing the Maximum Resolution setting, in the details panel of the TrueSkySequenceActor.
+<br>Try increasing the Maximum Resolution setting, in the details panel of the trueSKYSequenceActor.
 
+* **the trueSKY binary plugin is not working correctly.**
+<br>Try deleting the plugin folder Engine/Plugins/TrueSkyPlugin and the plugin binaries Engine/Binaries/ThirdParty/Simul. Then re-install the latest version of the plugin.
 
 * **How do I make the clouds move independently of time-of-day?**
 <br>Call the Blueprint function **SetBool** with the name "clouds:overrideWind" and the value *true*.
@@ -49,7 +51,7 @@ Frequently Asked Questions and Common Problems
 <br>Try lowering the rain drop size in the 3D cloud layer.
 
 * **The rain moves too quickly when I move the camera.**
-<br>This can happen when the camera is moving quite quickly. If you do not want to lower the speed of the camera's movement, then try lowering the TrueSkySequenceActor's metres per unit setting.
+<br>This can happen when the camera is moving quite quickly. If you do not want to lower the speed of the camera's movement, then try lowering the trueSKYSequenceActor's metres per unit setting.
 
 * **The sun/moon is too big/small.**
 <br>Try altering the sun and/or moon diameter setting in the sky layer.
@@ -79,7 +81,7 @@ Deprecated Functions, Files and Arguments
 
 The following should no longer be used in trueSKY for UE4, either due to deprecation or partial implementation:
 
-TrueSkySequenceActor's Downscale Factor setting is deprecated: use Maximum Resolution instead.
+trueSKYSequenceActor's Downscale Factor setting is deprecated: use Maximum Resolution instead.
 
 Any function calls to modify cloud keyframes(GetKeyframeValue and SetKeyframeValue) should not use the following name string arguments:
 
