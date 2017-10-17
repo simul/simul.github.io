@@ -23,14 +23,14 @@ Ultimately, the entirety of your environment depends on what you choose for your
 
 You won't want to just take the `FrameDelta` and use it to modify the time of day. Days would go by in, *literally*, seconds. So, you'll want to modify that value by some scalar (what that is just depends on how long an in-game day should last in your context). Or maybe you don't want to alter the time of day at all, in which case you can just ignore the time of data value outside of setting its initial value.
 
-For additional information on the time of day's role in the trueSKY simulation, you can [view a more hands-on tutorial here](http://docs.simul.co/unrealengine/Tutorial.html).
+For additional information on the time of day's role in the trueSKY simulation, you can [view a more hands-on tutorial here](https://docs.simul.co/unrealengine/Tutorial.html).
 
 NOTE: It's also important to ensure that, even if you just set the time value initially, that you update your directional light using the following method:
 
 ### Directional Lights
 To set the direction and colour of a Directional Light, find the `UpdateLight` function from the trueSKY function category, and connect a reference to the DirectionalLight to the input. Make sure that the "Exec" input is hit once per frame by a tick event. If you're driving your scene lighting through a DirectionalLightComponent instead of a directional light actor, you can alternatively use `UpdateLightComponent`. The combination of the time of day update as well as the subsequent light update can be seen here:
 
-[![alt text](http://docs.simul.co/unrealengine/images/truesky_ue4_blueprint_tick.png "Blueprint snippet for updating the Time of Day as well as the atmospheric light.")](http://docs.simul.co/unrealengine/images/truesky_ue4_blueprint_tick.png)
+[![alt text](https://docs.simul.co/unrealengine/images/truesky_ue4_blueprint_tick.png "Blueprint snippet for updating the Time of Day as well as the atmospheric light.")](https://docs.simul.co/unrealengine/images/truesky_ue4_blueprint_tick.png)
 
 This function should be called whenever you update your time of day value, as the light will need to be updated as a result of the change.
 
@@ -45,7 +45,7 @@ Connect the CloudShadow asset in the TrueSky folder to "Cloud Shadow RT" on your
 ### Point Lights
 Additionally, point lights can be used to illuminate the clouds. Because of the relative scale of clouds to the UE4 scene, the intensity of the light must be very large in order to have a visible effect.
  
-![alt text](http://docs.simul.co/unrealengine/images/SetPointLight.png "Blueprint nodes for setting a point light reference.")
+![alt text](https://docs.simul.co/unrealengine/images/SetPointLight.png "Blueprint nodes for setting a point light reference.")
 
 If you do not have a PointLight actor, you can use SetPointLightSource to individually apply the position, colour and intensity of a light to the clouds.
 
@@ -61,12 +61,12 @@ We have a few macros in the `TrueSkyMacroLibrary` to streamline this process for
 * `UpdateAtmosphereLightComponent` -- This will take in a `DirectionalLightCompontent` and update it based on the passed-in `TrueSkySequenceActor`. Returns whether or not it succeeded.
 * `UpdateSequence` -- This macro combines the time of day update as well as the light update. It has an input node for both a `DirectionalLight` and a `DirectionalLightComponent` (since it's a macro, it doesn't handle casting a general `Object` type well); only one of the two need to be passed in to update the lighting. The macro returns both the updated time of day value as well as whether or not the light update succeeded. Image below:
 
-![alt text](http://docs.simul.co/unrealengine/images/truesky_ue4_macro_updatesequence.png "Macro function for updating a sequence's time of day and lighting data.")
+![alt text](https://docs.simul.co/unrealengine/images/truesky_ue4_macro_updatesequence.png "Macro function for updating a sequence's time of day and lighting data.")
 
 ### Cloud Shadows
 The shadows of clouds can be applied to your directional light object using the M_LightFunction in the Content/TrueSky directory of your project. If you modify this function, make a copy of it with a different name, otherwise it will be overwritten when the plugin next starts (this applies to all the content in the TrueSky folder).
 
-![alt text](http://docs.simul.co/unrealengine/images/LightFunction.png "Setting up the lighting function in your Directional Light settings.")
+![alt text](https://docs.simul.co/unrealengine/images/LightFunction.png "Setting up the lighting function in your Directional Light settings.")
 
 ### Physical Units (trueSKY 4.1 onward)
 trueSKY is a physically-based renderer, which means that the light and colour values generated correspond to true physical properties. The pixel colours rendered to a view are spectral radiance values. However, to keep the numbers from getting too high or low, a global adjustment is applied. This is because numerical accuracy would be lost, particularly for very dark night-time scenes, if we kept the same scale at all times. The Sky property "Brightness Power" controls this adjustment - if equal to one, there is no adjustment. Values smaller than one reduce the range of outputs - brightening dark skies and dimming very bright skies. To obtain the current value of the multiplier, use the Blueprint function "GetReferenceSpectralRadiance". Then you can use the calculation:
@@ -75,38 +75,38 @@ trueSKY is a physically-based renderer, which means that the light and colour va
 
 You can use this value to calibrate the other lights in your scene. Say you have a point light representing an electric bulb. The brightness of this light would in reality be constant. But because trueSKY adjusts the physical value of a pixel as time passes, you must compensate for this by scaling the intensity of the bulb by the inverse of the reference radiance.
 
-![alt text](http://docs.simul.co/unrealengine/images/ReferenceSpectralRadiance.png "Using the spectral radiance value to modulate the intensity of lights in the scene.")
+![alt text](https://docs.simul.co/unrealengine/images/ReferenceSpectralRadiance.png "Using the spectral radiance value to modulate the intensity of lights in the scene.")
 
 So the light appears to get brighter as day turns to night. You can get the same effect using Unreal's Eye Adaptation (Auto Exposure). But because this is a post-process effect, it cannot cope with very dark scenes - you may see banding in the sky colours due to the low numerical accuracy of very small numbers.
 
-![alt text](http://docs.simul.co/unrealengine/images/DayLightRadiance.png "Spectral radiance example: Midday.")
-![alt text](http://docs.simul.co/unrealengine/images/SunsetLightRadiance.png "Spectral radiance example: Sunset.")
-![alt text](http://docs.simul.co/unrealengine/images/NightLightRadiance.png "Spectral radiance example: Night.")
+![alt text](https://docs.simul.co/unrealengine/images/DayLightRadiance.png "Spectral radiance example: Midday.")
+![alt text](https://docs.simul.co/unrealengine/images/SunsetLightRadiance.png "Spectral radiance example: Sunset.")
+![alt text](https://docs.simul.co/unrealengine/images/NightLightRadiance.png "Spectral radiance example: Night.")
 
 
 ### The Sky and Clouds 
 Both the sky and clouds can be accessed and edited in Blueprint.  
 
-Read more about [editing the sky here](http://docs.simul.co/unrealengine/Sky.html) and [editing the clouds here](http://docs.simul.co/unrealengine/Clouds.html).
+Read more about [editing the sky here](https://docs.simul.co/unrealengine/Sky.html) and [editing the clouds here](https://docs.simul.co/unrealengine/Clouds.html).
 
 
 ### Transparency
 To correctly affect transparent objects, trueSKY will write loss, inscatter and cloud transparency textures once per frame. Connect the textures from the (automatically created) trueSky folder, to the texture properties in the trueSKY Sequence Actor to enable this.
 
-![alt text](http://docs.simul.co/unrealengine/images/TrueSkyRenderTargets.png "Setting up the appropriate render target references in the TrueSkySequenceActor settings.")
+![alt text](https://docs.simul.co/unrealengine/images/TrueSkyRenderTargets.png "Setting up the appropriate render target references in the TrueSkySequenceActor settings.")
 
 In a material that uses transparency, insert the trueSKYTransparencyModifier function between the inputs and the final output node:
 
-![alt text](http://docs.simul.co/unrealengine/images/Transparency.png "Using the trueSKYTransparencyModifier material function to modulate the material output values.")
+![alt text](https://docs.simul.co/unrealengine/images/Transparency.png "Using the trueSKYTransparencyModifier material function to modulate the material output values.")
 
 ### Queries
 To test how much cloud (from 0 to 1) is at a specified point, use the function CloudPointTest. **Note**: The Query Id can be set to any integer value, but should differ from any Query Ids used in seperate queries (or else they will be overwritten).
 
-![alt text](http://docs.simul.co/unrealengine/images/CloudPointTest.png "Sample usage of the Cloud Point Test functionality.")
+![alt text](https://docs.simul.co/unrealengine/images/CloudPointTest.png "Sample usage of the Cloud Point Test functionality.")
 
 To test if there is cloud between two points, use CloudLineTest:
 
-![alt text](http://docs.simul.co/unrealengine/images/CloudLineTest.png "Sample usage of the Cloud Line Test functionality.")
+![alt text](https://docs.simul.co/unrealengine/images/CloudLineTest.png "Sample usage of the Cloud Line Test functionality.")
  
 ### Layer Properties
 To set a layer property Blueprint, use the functions below. The following will need to be prefixed onto the property's name string: "sky:", "clouds:" or "2dclouds:", depending on the layer in use. E.g., to set the 2D cloud layer's noise period to 3.5, the SetFloat function would be called with "2dclouds:noisePeriod" as the Name parameter, and 3.5 as the Value parameter.
@@ -116,7 +116,7 @@ To set a layer property Blueprint, use the functions below. The following will n
 * `GetFloat (String Name):` Gets the specified float property for the prefixed layer.
 * `SetFloat (String Name, float Value):`  Sets the specified float property for the prefixed layer to the given value.
 
-For information about the layer properties you can change and the name strings needed to do so, see the [Cloud](http://docs.simul.co/unrealengine/Clouds.html) and [Sky](http://docs.simul.co/unrealengine/Sky.html) pages.
+For information about the layer properties you can change and the name strings needed to do so, see the [Cloud](https://docs.simul.co/unrealengine/Clouds.html) and [Sky](https://docs.simul.co/unrealengine/Sky.html) pages.
 
 
 ### Keyframe Properties
@@ -133,29 +133,29 @@ There are multiple functions provided to get the uid required to modify a keyfra
 
 
 ### Driving trueSKY's Simulation through In-Scene Sun and Moon Data 
-![alt text](http://docs.simul.co/unrealengine/images/SetFromSunAndMoon.png "Driving trueSKY through in-game actors/components, instead of the standard trueSKY-driving in-game actors/components.")
+![alt text](https://docs.simul.co/unrealengine/images/SetFromSunAndMoon.png "Driving trueSKY through in-game actors/components, instead of the standard trueSKY-driving in-game actors/components.")
 
 In a reversal of the default setup, SetSunRotation and SetMoonRotation can be used to drive the trueSKY sun and moon directly from a direct light source (or some other object). In order to user this feature, it is recommended to set the Interpolation Mode property of the trueSky Sequence Actor to "RealTime". This is so that any changes to the sun and moon direction will affect the trueSKY atmospherics regardless of whether game time is changing, and so that slight or slow changes in sun direction will not cause a per-frame recalculation of the atmospheric tables.
 
 In addition to these Set functions for the sun/moon rotation, there are also Get functions for sun/moon rotation, colour and intensitiy. Additionally, you can Get/Set the texture of the moon in Blueprint.
 
-![alt text](http://docs.simul.co/unrealengine/images/GetSetMoonTexture.png "Change the moon texture at runtime in blueprint.")
+![alt text](https://docs.simul.co/unrealengine/images/GetSetMoonTexture.png "Change the moon texture at runtime in blueprint.")
 
 
 ### Precipitation and Lightning
 There are Blueprint functions provided to test a scene for lightning and for rain. For lightning, the "Get Lightning" function will provide the start position, end position, colour and magnitude of any lightning present. A magnitude of 0 means there is no lightning present. Additionally, the "Get Rain At Position" function will take a given position and return a float between 0.0 and 1.0 indicating the strength of the rain (or snow) at this position.
 
-![alt text](http://docs.simul.co/unrealengine/images/LightningRainTest.png "Example of testing the weather conditions in blueprint.")
+![alt text](https://docs.simul.co/unrealengine/images/LightningRainTest.png "Example of testing the weather conditions in blueprint.")
 
 
 ### Managing Sequences
 Though you can only set the active sequence in the editor, it is possible to change the sequence in use mid-game using Blueprint. To do this, create a reference to your TrueSkySequenceActor in Blueprint, then drag the output pin onto the canvas. In the Action List, search for and select "Set Active Sequence". Repeat for as many sequences as you wish and connect them to relevant events. 
 
-![alt text](http://docs.simul.co/unrealengine/images/SetActiveSequence.png "Example of how to change the active trueSKY sequence at runtime in blueprint.")
+![alt text](https://docs.simul.co/unrealengine/images/SetActiveSequence.png "Example of how to change the active trueSKY sequence at runtime in blueprint.")
 
 You can also get the active sequence in Blueprint. Similarly, just drag the output pin of your TrueSkySequence actor onto the canvas and search for and select "Get Active Sequence". This will return the Sequence Asset in use. 
 
-![alt text](http://docs.simul.co/unrealengine/images/GetActiveSequence.png "Example of how to query the active trueSKY sequence at runtime in blueprint.")
+![alt text](https://docs.simul.co/unrealengine/images/GetActiveSequence.png "Example of how to query the active trueSKY sequence at runtime in blueprint.")
 
 
 ### Measuring Performance
@@ -167,7 +167,7 @@ The outputs are in milliseconds.
 
 
 ### Further Information
-* [The Sequencer](http://docs.simul.co/reference/man_8_sequencer.html)   
+* [The Sequencer](https://docs.simul.co/reference/man_8_sequencer.html)   
 * [The Clouds in trueSKY for UE4](https://docs.simul.co/unrealengine/Clouds.html)
 * [The Sky in trueSKY for UE4](https://docs.simul.co/unrealengine/Sky.html)
 * [Watch a video tutorial](https://www.youtube.com/watch?v=hE6qFzJgED4) 

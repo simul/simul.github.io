@@ -101,7 +101,7 @@ To control the sky properties from within the Editor, you can edit the sequence 
 
 Select the Properties tab or the Map. Click a keyframe to edit its properties. Double-click a line to edit all the keyframes in that line. Click on the title text to the left to edit the properties of the whole layer (sky or clouds).
 
-Read more about editing Sky and Cloud properties on [The Sky Sequencer Page](http://docs.simul.co/reference/man_8_sequencer.html).
+Read more about editing Sky and Cloud properties on [The Sky Sequencer Page](https://docs.simul.co/reference/man_8_sequencer.html).
 
 
 Fixing Time-of-Day
@@ -111,20 +111,20 @@ Sometimes, you might not want a day-night cycle or changing time-of-day, but sti
 
 Edit the Sequence asset by clicking on it in the Project window. Select the Sky (click on the word "Sky" at lower left) and uncheck "*Link Keyframe time and daytime*".
 
-<a href="http://docs.simul.co/unity/images/FixingDaytime1.png"><img src="http://docs.simul.co/unity/images/FixingDaytime1.png" alt="index"/></a>
+<a href="https://docs.simul.co/unity/images/FixingDaytime1.png"><img src="https://docs.simul.co/unity/images/FixingDaytime1.png" alt="index"/></a>
 
 Now, select all the Sky keyframes (box-select or double-click). Under "Sun and Moon", change the "daytime" of the keyframes to be the same value (e.g. 06:45 below). Now time and time-of-day are uncoupled.
  
-<a href="http://docs.simul.co/unity/images/FixingDaytime2.png"><img src="http://docs.simul.co/unity/images/FixingDaytime2.png" alt="index"/></a> 
+<a href="https://docs.simul.co/unity/images/FixingDaytime2.png"><img src="https://docs.simul.co/unity/images/FixingDaytime2.png" alt="index"/></a> 
 
 
 Further Information
 ---------
 
-* [trueSKY Tutorial: Unity](http://docs.simul.co/unity/Tutorial.html)
-* [The Sequencer](http://docs.simul.co/reference/man_8_sequencer.html)
-* [Scripting in trueSKY for Unity](http://docs.simul.co/unity/Scripting.html)
-* [The trueSKY Renderer](http://docs.simul.co/reference/man_4_rendering.html)
+* [trueSKY Tutorial: Unity](https://docs.simul.co/unity/Tutorial.html)
+* [The Sequencer](https://docs.simul.co/reference/man_8_sequencer.html)
+* [Scripting in trueSKY for Unity](https://docs.simul.co/unity/Scripting.html)
+* [The trueSKY Renderer](https://docs.simul.co/reference/man_4_rendering.html)
 
 
 Next: <a href="/unity/Tutorial">Tutorial</a>

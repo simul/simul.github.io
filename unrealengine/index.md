@@ -28,7 +28,7 @@ When you run the UE4 editor, the trueSKY plugin should be enabled by default. If
 
 [![alt text](https://simul.co/wp-content/uploads/2014/07/UE4_ShowPlugins-96x300.png "Opening the Plugin Configurator for Unreal Engine (from the main menu bar: Edit->Plugins).")](http://simul.co/wp-content/uploads/2014/07/UE4_ShowPlugins.png)
 
-[![alt text](https://docs.simul.co/unrealengine/images/EnableTrueSKY.png "Enabling the trueSKY Plugin in Unreal Engine 4's editor.")](http://docs.simul.co/unrealengine/images/EnableTrueSKY.png)
+[![alt text](https://docs.simul.co/unrealengine/images/EnableTrueSKY.png "Enabling the trueSKY Plugin in Unreal Engine 4's editor.")](https://docs.simul.co/unrealengine/images/EnableTrueSKY.png)
 
 If you had to change the "Enabled" setting from disabled to enabled (or vice versa), you'll need to restart the editor for the change to take effect, as with all editor plugin changes.
 
@@ -49,10 +49,10 @@ The trueSKY Sequence Actor is the primary way to access and interact with the tr
 Once you have the True Sky Sequence Actor in your scene, choose it from "World Outliner" window. Then, to customize it, open up the "Details" window/sidebar; set the reference to an existing **TrueSky Sequence Asset** in the "Active Sequence" dropdown. By default, there are two sample sequences you can instantly check and see the results for yourself:
 
 * `TrueSkySequenceCumulus` -- A prototypical cumulus cloud pattern (with a 3D and 2D cloud keyframe for example purposes).
-[![alt text](https://docs.simul.co/unrealengine/images/ue4_samplesequence_cumulus.png "Screen shot of the sample cumulus sky sequence in Unreal Engine 4.")](http://docs.simul.co/unrealengine/images/ue4_samplesequence_cumulus.png)
+[![alt text](https://docs.simul.co/unrealengine/images/ue4_samplesequence_cumulus.png "Screen shot of the sample cumulus sky sequence in Unreal Engine 4.")](https://docs.simul.co/unrealengine/images/ue4_samplesequence_cumulus.png)
 
 * `TrueSkySequenceStratus` -- A prototypical stratus cloud system; i.e. there's a rain/snow comin' (with a 3D and 2D cloud keyframe for example purposes).
-[![alt text](https://docs.simul.co/unrealengine/images/ue4_samplesequence_stratus.png "Screen shot of the sample cumulus sky sequence in Unreal Engine 4.")](http://docs.simul.co/unrealengine/images/ue4_samplesequence_stratus.png)
+[![alt text](https://docs.simul.co/unrealengine/images/ue4_samplesequence_stratus.png "Screen shot of the sample cumulus sky sequence in Unreal Engine 4.")](https://docs.simul.co/unrealengine/images/ue4_samplesequence_stratus.png)
 
 ### Creating New Sky Sequences
 To create a new TrueSkySequence asset, go to the "Content Browser" window. Press "New Asset" button (or do a right mouse click inside the window) to open an asset selection window. Choose "Miscellaneous / trueSKY Sequence Asset". A new asset will be created. Now you can rename/save/delete it.
@@ -83,13 +83,13 @@ This will open up the True Sky Sequence Editor:
 ### Multiple Sequence Actors and Transitions
 You can have any number of trueSKY Sequence Actors in your level, all with different Sequence Assets assigned. In the Editor, check the Actor's property "Active in Editor" to see its weather state in the 3D view. In-game, the active Actor is determined by bounds. By default, a Sequence Actor is unbounded – it is always active. You can create bounding by adding a Box Collision component to the Actor.
 
-<a href="http://docs.simul.co/unrealengine/images/AddBounds.png"><img src="http://docs.simul.co/unrealengine/images/AddBounds.png" alt="Add Bounds"/></a>
+<a href="https://docs.simul.co/unrealengine/images/AddBounds.png"><img src="https://docs.simul.co/unrealengine/images/AddBounds.png" alt="Add Bounds"/></a>
 
 When this is done, the Actor will have limited bounds, and only affect the weather when the player is within the bounding box. You should have at most one unbounded trueSKY Sequence Actor in your level: this will apply when the player is not in the bounds of any other Sequence Actor.
 
 To allow a smooth transition between weather states, you should adjust the Mode property of the Sky and Cloud Layers in all the Sequence Assets to allow a gradual transition between the different weather states. If you're using real-time transition (this is simplest), you can adjust the Interval in seconds (default 10.0) to determine how quickly the change takes place. Otherwise, use the Interval in days.
 
-<a href="http://docs.simul.co/unrealengine/images/GradualMode.png"><img src="http://docs.simul.co/unrealengine/images/GradualMode.png" alt="Gradual Mode"/></a>
+<a href="https://docs.simul.co/unrealengine/images/GradualMode.png"><img src="https://docs.simul.co/unrealengine/images/GradualMode.png" alt="Gradual Mode"/></a>
 
 Performance
 ---------
@@ -107,11 +107,11 @@ trueSKY performance is highly dependent on your choice of settings. Once you hav
 Further Information
 ---------
 
-* [trueSKY Tutorial: Unreal Engine 4](http://docs.simul.co/unrealengine/Tutorial.html)
-* [trueSKY from GitHub (and UE4 Source Integration)](http://docs.simul.co/unrealengine/Source.html)
-* [trueSKY in Blueprint](http://docs.simul.co/unrealengine/Blueprint.html)
-* [The Sky Sequencer](http://docs.simul.co/reference/man_8_sequencer.html)
-* [The trueSKY Renderer](http://docs.simul.co/reference/man_4_rendering.html)
+* [trueSKY Tutorial: Unreal Engine 4](https://docs.simul.co/unrealengine/Tutorial.html)
+* [trueSKY from GitHub (and UE4 Source Integration)](https://docs.simul.co/unrealengine/Source.html)
+* [trueSKY in Blueprint](https://docs.simul.co/unrealengine/Blueprint.html)
+* [The Sky Sequencer](https://docs.simul.co/reference/man_8_sequencer.html)
+* [The trueSKY Renderer](https://docs.simul.co/reference/man_4_rendering.html)
 
 
 Next: <a href="/unrealengine/Tutorial">Tutorial</a>

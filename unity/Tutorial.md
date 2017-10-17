@@ -10,15 +10,15 @@ Tutorial
 Initial Configuration
 -------------------------
 
-If you haven't already, please see [Getting Started](http://docs.simul.co/unity/) for information on how to install the plugin in Unity.
+If you haven't already, please see [Getting Started](https://docs.simul.co/unity/) for information on how to install the plugin in Unity.
 
 Either create a new project or open the provided sample project at: \Simul\Plugins\Unity\Project5. The easiest way to setup trueSKY is using the provided setup wizard. This can be found by clicking GameObject->Initialise trueSKY in Scene. Simply follow the steps to create and assign a trueSKY sequence asset, the TrueSkyCamera script, the trueSKY GameObject, the SimulSun script, the trueSKY Cubemap Probe and remove the default fog and skybox (recommended).
 
 If your scene is appearing upside down, then navigate to the camera and the TrueSkyCamera script component, and change the Flipped View value. This will need to be true for Forward rendering and false for Deferred rendering. You should also assign the Inscatter, Loss and Cloud Visibility Render Textures (in the TrueSkyCamera component). You may also wish to attach the SimulMouseLook script to an object in the scene, so you can right click and drag on the Game window to move the camera.
 
-<a href="http://docs.simul.co/unity/images/RenderTexturesAssigned.png"><img src="http://docs.simul.co/unity/images/RenderTexturesAssigned.png" alt="Tutorial"/></a> 
+<a href="https://docs.simul.co/unity/images/RenderTexturesAssigned.png"><img src="https://docs.simul.co/unity/images/RenderTexturesAssigned.png" alt="Tutorial"/></a> 
 
-**Note:** Most settings in trueSKY can be manipulated using both the Sequencer and Unity scripting. This tutorial will uses a mixture of both to illustrate. You can [read more about the Sequencer here](http://docs.simul.co/reference/man_8_sequencer.html) and [read more about scripting here](http://docs.simul.co/unity/Scripting.html).
+**Note:** Most settings in trueSKY can be manipulated using both the Sequencer and Unity scripting. This tutorial will uses a mixture of both to illustrate. You can [read more about the Sequencer here](https://docs.simul.co/reference/man_8_sequencer.html) and [read more about scripting here](https://docs.simul.co/unity/Scripting.html).
 
 
 Adding Clouds
@@ -26,11 +26,11 @@ Adding Clouds
 
 Find your newly created sequence asset, or create a new one (right click->Create->trueSKY Sequence) and open it, to view the Sequencer. To add some basic clouds to the scene, right click in the 3D Clouds section of the timeline and click "New cloud keyframe".
 
-<a href="http://docs.simul.co/unity/images/SequencerClouds.png"><img src="http://docs.simul.co/unity/images/SequencerClouds.png" alt="Tutorial"/></a>  
+<a href="https://docs.simul.co/unity/images/SequencerClouds.png"><img src="https://docs.simul.co/unity/images/SequencerClouds.png" alt="Tutorial"/></a>  
 
-Select the keyframe and try experimenting with the values. You can also use the Presets on the left hand side of the sequencer to select predefined arrangements. Be sure to set the Wind Speed value to something greater than 0, if you wish to see the clouds move (once time is being progressed). To further enhance the scene, you can also add a keyframe for 2D clouds, by right clicking on the 2D Clouds area and creating a keyframe in the same manner as before. [Read more about both kinds of clouds here](http://docs.simul.co/unity/Clouds.html). In this example I have set the Wind Speed to 1, raised the cloudbase to 5.0 and increased cloudiness to 0.6. I have also added a 2D cloud keyframe with default settings. 
+Select the keyframe and try experimenting with the values. You can also use the Presets on the left hand side of the sequencer to select predefined arrangements. Be sure to set the Wind Speed value to something greater than 0, if you wish to see the clouds move (once time is being progressed). To further enhance the scene, you can also add a keyframe for 2D clouds, by right clicking on the 2D Clouds area and creating a keyframe in the same manner as before. [Read more about both kinds of clouds here](https://docs.simul.co/unity/Clouds.html). In this example I have set the Wind Speed to 1, raised the cloudbase to 5.0 and increased cloudiness to 0.6. I have also added a 2D cloud keyframe with default settings. 
 
-<a href="http://docs.simul.co/unity/images/CloudsScene.png"><img src="http://docs.simul.co/unity/images/CloudsScene.png" alt="Tutorial"/></a>  
+<a href="https://docs.simul.co/unity/images/CloudsScene.png"><img src="https://docs.simul.co/unity/images/CloudsScene.png" alt="Tutorial"/></a>  
 
 
 Progressing Time
@@ -61,9 +61,9 @@ If you press play now you will see the clouds move, along with the sun, moon and
 Lighting
 -------------------------
  
-Assuming the trueSKY setup wizard was used, you should have the SimulSun script attached to a directional light. You can change the multiplier variable on this script to increase/decrease the sun's radiance. You can alter the brightness of the moon (and thus the brightness of the scene at night) via the Brightness Power value in the sky layer. This can be accessed in the sequencer by clicking on the "Sky" text on the left of the timeline. You can [read more about Brightness Power here](http://docs.simul.co/reference/man_8_sequencer.html). You can also increase or decrease the brightness of the stars in the sky layer.
+Assuming the trueSKY setup wizard was used, you should have the SimulSun script attached to a directional light. You can change the multiplier variable on this script to increase/decrease the sun's radiance. You can alter the brightness of the moon (and thus the brightness of the scene at night) via the Brightness Power value in the sky layer. This can be accessed in the sequencer by clicking on the "Sky" text on the left of the timeline. You can [read more about Brightness Power here](https://docs.simul.co/reference/man_8_sequencer.html). You can also increase or decrease the brightness of the stars in the sky layer.
 
-<a href="http://docs.simul.co/unity/images/BrightnessPower.png"><img src="http://docs.simul.co/unity/images/BrightnessPower.png" alt="Tutorial"/></a>  
+<a href="https://docs.simul.co/unity/images/BrightnessPower.png"><img src="https://docs.simul.co/unity/images/BrightnessPower.png" alt="Tutorial"/></a>  
 
 Additionally it is possible to create point lights using trueSKY. To do so, access the trueSKY object and call:
 
@@ -78,9 +78,9 @@ With that your scene is now fully configured and functioning. Of course this is 
 Further Information
 --------------
  
-* [The Sequencer](http://docs.simul.co/reference/man_8_sequencer.html)  
-* [Scripting in trueSKY for Unity](http://docs.simul.co/unity/Scripting.html)
-* [trueSKY Developer Manual](http://docs.simul.co/reference/)
+* [The Sequencer](https://docs.simul.co/reference/man_8_sequencer.html)  
+* [Scripting in trueSKY for Unity](https://docs.simul.co/unity/Scripting.html)
+* [trueSKY Developer Manual](https://docs.simul.co/reference/)
 * [Watch a video tutorial](https://www.youtube.com/watch?v=Eljf5CjZ4vc)
 
 

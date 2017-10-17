@@ -9,7 +9,7 @@ The Sky in trueSKY
 
 In trueSKY, the sky is modified in two ways: through sky keyframes and the sky layer. Keyframe properties will dictate the look of the sky at a given point in time -- with interpolation used to derive properties at times between keyframes -- whereas layer properties will be active throughout a sequence. Both can be modified via the sequencer or through the Blueprint system.
 
-Read more about how the sky is rendered in trueSKY [here](http://docs.simul.co/reference/classsimul_1_1sky_1_1BaseSkyRenderer.html).
+Read more about how the sky is rendered in trueSKY [here](https://docs.simul.co/reference/classsimul_1_1sky_1_1BaseSkyRenderer.html).
 
 
 Editing The Sky in the Sequencer
@@ -17,15 +17,15 @@ Editing The Sky in the Sequencer
 
 To select a sky keyframe, click it. To select all the keyframes of the sky layer, double-click on the space between them or box select them. To select and modify the properties of whole sky layer, click on the "Sky" text at left.
 
-<a href="http://docs.simul.co/unrealengine/images/SkySeqExample.png"><img src="http://docs.simul.co/unrealengine/images/SkySeqExample.png" alt="Sky"/></a> 
+<a href="https://docs.simul.co/unrealengine/images/SkySeqExample.png"><img src="https://docs.simul.co/unrealengine/images/SkySeqExample.png" alt="Sky"/></a> 
 
-Read more about editing the Sky Layer or Sky Keyframes on [The Sky Sequencer Page](http://docs.simul.co/reference/man_8_sequencer.html).
+Read more about editing the Sky Layer or Sky Keyframes on [The Sky Sequencer Page](https://docs.simul.co/reference/man_8_sequencer.html).
 
 
 Editing The Sky in Blueprint: The Sky Layer
 -------------------------
 
-To Get and Set sky layer properties, use the provided SetInt, GetInt, SetFloat and GetFloat functions. For more on how to use these, along with information about other helpful blueprint functions see [Blueprint](http://docs.simul.co/unrealengine/Blueprint.html). 
+To Get and Set sky layer properties, use the provided SetInt, GetInt, SetFloat and GetFloat functions. For more on how to use these, along with information about other helpful blueprint functions see [Blueprint](https://docs.simul.co/unrealengine/Blueprint.html). 
 
 The tables below show the various sky layer properties (named as they appear in the sequencer), The entries in the "Name" column are what should be used as the "Name" string parameter in any Blueprint calls to GetKeyframeFloat, GetKeyframeInt, SetKeyframeFloat and SetKeyframeInt. The Name strings should be prefixed with "sky:". **Note**: Parameters that are Bools in the Sequencer are treated as Ints in scripting, where 0 = false and 1 = true.
 
@@ -90,7 +90,7 @@ Once you have a sky keyframe’s Uid, you can Get and Set its properties. These 
 
 * **SetKeyframeInt:** Given a keyframe Uid, a name string and an integer value, will set the matching property for the Name to the specified integer value.
 
-<a href="http://docs.simul.co/unrealengine/images/SkyBPGetSet.png"><img src="http://docs.simul.co/unrealengine/images/SkyBPGetSet.png" alt="Blueprint"/></a>
+<a href="https://docs.simul.co/unrealengine/images/SkyBPGetSet.png"><img src="https://docs.simul.co/unrealengine/images/SkyBPGetSet.png" alt="Blueprint"/></a>
 
 
 The tables below show the various sky keyframe properties, for floating point and integer values respectively. The entries in the "Name" column are what should be used as the "Name" string parameter in any Blueprint calls to GetKeyframeFloat, GetKeyframeInt, SetKeyframeFloat and SetKeyframeInt.
@@ -133,9 +133,9 @@ Automatic Moon Position | "AutomaticMoonPosition" | Whether to calculate moon po
 Further Information
 --------------
  
-* [The Sequencer](http://docs.simul.co/reference/man_8_sequencer.html)  
-* [Driving trueSKY via Blueprint](http://docs.simul.co/unrealengine/Blueprint.html)
-* [Sky Rendering in trueSKY](http://docs.simul.co/reference/classsimul_1_1sky_1_1BaseSkyRenderer.html)
+* [The Sequencer](https://docs.simul.co/reference/man_8_sequencer.html)  
+* [Driving trueSKY via Blueprint](https://docs.simul.co/unrealengine/Blueprint.html)
+* [Sky Rendering in trueSKY](https://docs.simul.co/reference/classsimul_1_1sky_1_1BaseSkyRenderer.html)
 * [Watch a video tutorial](https://www.youtube.com/watch?v=hE6qFzJgED4) 
 
 

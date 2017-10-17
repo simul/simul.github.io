@@ -11,7 +11,7 @@ In trueSKY, clouds are split into two layers: 3D clouds and 2D clouds. They have
 
 Each layer has its own properties and its own keyframes. Layer properties will affect the entire sequence. Keyframe properties will only affect the keyframe in question, unless there is only one keyframe present, in which case this will be used continously. Otherwise the clouds will use interpolation to move between specified properties at adjacent keyframes.
 
-Read more about how clouds are rendered in trueSKY [here](http://docs.simul.co/reference/classsimul_1_1clouds_1_1BaseCloudRenderer.html).
+Read more about how clouds are rendered in trueSKY [here](https://docs.simul.co/reference/classsimul_1_1clouds_1_1BaseCloudRenderer.html).
 
 
 Editing Clouds in the Sequencer
@@ -19,16 +19,16 @@ Editing Clouds in the Sequencer
 
 To select a cloud keyframe, click it. To select all the keyframes of a cloud layer, double-click on the space between them. To select and modify the properties of a whole cloud layer, click on the “Clouds” text at left.
 
-<a href="http://docs.simul.co/unity/images/CloudSeqExample.png"><img src="http://docs.simul.co/unity/images/CloudSeqExample.png" alt="Clouds"/></a> 
+<a href="https://docs.simul.co/unity/images/CloudSeqExample.png"><img src="https://docs.simul.co/unity/images/CloudSeqExample.png" alt="Clouds"/></a> 
 
-Read more about editing the Cloud Layer or Cloud Keyframes on [The Sky Sequencer Page](http://docs.simul.co/reference/man_8_sequencer.html).
+Read more about editing the Cloud Layer or Cloud Keyframes on [The Sky Sequencer Page](https://docs.simul.co/reference/man_8_sequencer.html).
 
 
 
 Editing Clouds Via Scripting: The Cloud Layer
 ---------------
  
-To Get and Set 3D cloud layer properties, use **trueSKY.GetCloudFloat**, **trueSKY.GetCloudInt**, **trueSKY.SetCloudFloat** and **trueSKY.SetCloudInt**. For 2D cloud layer properties, use **trueSKY.Get2DCloudFloat**, **trueSKY.Get2DCloudInt**, **trueSKY.Set2DCloudFloat** and **trueSKY.Set2DCloudInt**. For more on how to use these functions, along with information about other helpful functions (such as cloud queries) see [Scripting](http://docs.simul.co/unity/Scripting.html). 
+To Get and Set 3D cloud layer properties, use **trueSKY.GetCloudFloat**, **trueSKY.GetCloudInt**, **trueSKY.SetCloudFloat** and **trueSKY.SetCloudInt**. For 2D cloud layer properties, use **trueSKY.Get2DCloudFloat**, **trueSKY.Get2DCloudInt**, **trueSKY.Set2DCloudFloat** and **trueSKY.Set2DCloudInt**. For more on how to use these functions, along with information about other helpful functions (such as cloud queries) see [Scripting](https://docs.simul.co/unity/Scripting.html). 
 
 The tables below show the various cloud layer properties (named as they appear in the sequencer), along with the matching name string to use for scripting. The following (precipitation) properties are exclusive to the 3D cloud layer: Max Particles, Threshold, Radius, Rain Speed and Raindrop Size. **Note**: Parameters that are Bools in the Sequencer are treated as Ints in scripting, where 0 = false and 1 = true.
 
@@ -89,7 +89,7 @@ Keyframe properties for clouds generally fall into four categories:
 * **Effect**: These properties are used to inform different parts of the rendering system, and generate various environmental and weather effects. The following are effect properties: *Precipitation*, *Rain - Snow*, *precipitationWindEffect*, *precipitationWaver*, *Godray strength*, *rainEffectStrength*, *Rain Radius* and *Rain Centre* (X and Y).
 
 
-To Get/Set cloud keyframe properties, use **trueSKY.GetKeyframeValue** and **trueSKY.SetKeyframeValue**, ensuring the pass the keyframe's Uid as an argument. For information on what functions to use to get keyframe Uids, along with information about other helpful functions, see [Scripting](http://docs.simul.co/unity/Scripting.html). The tables below show the various cloud keyframe properties (named as they appear in the sequencer), along with the matching name string to use for scripting. **Note**: Parameters that are Bools in the Sequencer are treated as Ints in scripting, where 0 = false and 1 = true.
+To Get/Set cloud keyframe properties, use **trueSKY.GetKeyframeValue** and **trueSKY.SetKeyframeValue**, ensuring the pass the keyframe's Uid as an argument. For information on what functions to use to get keyframe Uids, along with information about other helpful functions, see [Scripting](https://docs.simul.co/unity/Scripting.html). The tables below show the various cloud keyframe properties (named as they appear in the sequencer), along with the matching name string to use for scripting. **Note**: Parameters that are Bools in the Sequencer are treated as Ints in scripting, where 0 = false and 1 = true.
 
 
 **Floating-point**
@@ -159,9 +159,9 @@ Lock to Cloud| "lockRainToClouds" | Whether to make precipitation region move wi
 Further Information
 --------------
  
-* [The Sequencer](http://docs.simul.co/reference/man_8_sequencer.html)  
-* [Scripting in trueSKY for Unity](http://docs.simul.co/unity/Scripting.html)
-* [Cloud Rendering in trueSKY](http://docs.simul.co/reference/classsimul_1_1clouds_1_1BaseCloudRenderer.html)
+* [The Sequencer](https://docs.simul.co/reference/man_8_sequencer.html)  
+* [Scripting in trueSKY for Unity](https://docs.simul.co/unity/Scripting.html)
+* [Cloud Rendering in trueSKY](https://docs.simul.co/reference/classsimul_1_1clouds_1_1BaseCloudRenderer.html)
 * [Watch a video tutorial](https://www.youtube.com/watch?v=Eljf5CjZ4vc)
 
 
