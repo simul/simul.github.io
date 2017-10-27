@@ -49,7 +49,10 @@ Frequently Asked Questions and Common Problems
 * **It's too dark at night.**
 <br>Try lowering the brightness power setting in the sky layer.
 
+**Setup**
 
+* **Getting "DllNotFoundException"**
+<br> Windows User Account Control can interfere with the loading of dlls, disabling it can solve dll loading issues.
 
 Compatibility with other Plugins
 ---------------------
