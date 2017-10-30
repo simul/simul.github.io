@@ -52,7 +52,7 @@ Frequently Asked Questions and Common Problems
 **Setup**
 
 * **Getting "DllNotFoundException"**
-<br> Windows User Account Control can interfere with the loading of dlls, disabling it can solve dll loading issues.
+<br> Windows User Account Control can give false positives when loading trueSKY, and stop it from being loaded. Lowering the notification level can help with this problem.
 
 Compatibility with other Plugins
 ---------------------
