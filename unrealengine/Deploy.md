@@ -18,7 +18,7 @@ The trueSKY DLL's are  located in [UE4]/Engine/Binaries/ThirdParty/Simul. When y
     	SC.StageFiles(StagedFileType.NonUFS, DirectoryReference.Combine(SC.LocalRoot, "Engine/Binaries/ThirdParty/Simul", SC.PlatformDir), "TrueSkyPluginRender_MT.pdb", StageFilesSearch.TopDirectoryOnly);
 	SC.StageFiles(StagedFileType.NonUFS, DirectoryReference.Combine(SC.LocalRoot, "Engine/Plugins/TrueSkyPlugin/Resources"), "*.*", StageFilesSearch.TopDirectoryOnly);
 	SC.StageFiles(StagedFileType.NonUFS, DirectoryReference.Combine(SC.LocalRoot, "Engine/Plugins/TrueSkyPlugin/Content"), "*.*", StageFilesSearch.TopDirectoryOnly);
-	SC.StageFiles(StagedFileType.NonUFS, DirectoryReference.Combine(SC.LocalRoot, "Engine/Plugins/TrueSkyPlugin/shaderbin", SC.PlatformDir), *.fxo", StageFilesSearch.TopDirectoryOnly);
+	SC.StageFiles(StagedFileType.NonUFS, DirectoryReference.Combine(SC.LocalRoot, "Engine/Plugins/TrueSkyPlugin/shaderbin", SC.PlatformDir), "*.fxo", StageFilesSearch.TopDirectoryOnly);
 	/// END trueSKY Additional code
 	
 ###### For other versions:
