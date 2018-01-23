@@ -12,7 +12,7 @@ trueSKY Deployment
 The trueSKY DLL's are  located in [UE4]/Engine/Binaries/ThirdParty/Simul. When you package, cook, or launch a build, UE4 does not yet provide the capability to automatically deploy files to a build. Therefore on the Simul branch of UE4, this code has been inserted into [UE4]/Engine/Source/Programs/AutomationTool/Win/WinPlatform.Automation.cs (see line 43):
 
 ###### For 4.18 and above use:
- 	/// BEGIN trueSKY Additional code
+	/// BEGIN trueSKY Additional code
 	SC.StageFiles(StagedFileType.NonUFS, DirectoryReference.Combine(SC.LocalRoot, "Engine/Binaries/ThirdParty/Simul", SC.PlatformDir), "TrueSkyPluginRender_MT.dll", StageFilesSearch.TopDirectoryOnly);        
 	if (!SC.StageTargetConfigurations.Contains(UnrealTargetConfiguration.Shipping))
     	SC.StageFiles(StagedFileType.NonUFS, DirectoryReference.Combine(SC.LocalRoot, "Engine/Binaries/ThirdParty/Simul", SC.PlatformDir), "TrueSkyPluginRender_MT.pdb", StageFilesSearch.TopDirectoryOnly);
