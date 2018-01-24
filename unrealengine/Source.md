@@ -44,6 +44,6 @@ The following files in the UE source have been modified in the Simul fork of the
 * `Engine\Source\Programs\UnrealBuildTool\XboxOne\XboxOneDeploy.cs`
 * `Engine\Source\Programs\AutomationTool\XboxOne\XboxOnePlatform.Automation.cs`
 
-## Deployment Files (Playstation 4
+## Deployment Files (Playstation 4)
 * `Engine\Source\Programs\AutomationTool\PS4\PS4Platform.Automation.cs`
 * `Engine\Source\Programs\UnrealBuildTool\PS4\UEDeployPS4.cs`
