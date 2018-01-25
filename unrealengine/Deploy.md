@@ -43,13 +43,23 @@ Now you are ready to run your game with trueSKY.
 **Console Deployment**
 
 As the console automation files are not in the Git repository, it is not possible to distribute the necessary changes. So you must modify by hand the console Platform.Automation.cs files, in the function GetFilesToDeployOrStage(), add:
-
+###### 4.18 and above (XBoxOne):
 	/// BEGIN trueSKY Additional code
-	SC.StageFiles(StagedFileType.NonUFS, CombinePaths(SC.LocalRoot, "Engine/Binaries/ThirdParty/Simul", SC.PlatformDir), "*.*", true, null, null, false);
-	SC.StageFiles(StagedFileType.NonUFS, CombinePaths(SC.LocalRoot, "Engine/Plugins/TrueSkyPlugin/Resources"), "*.*", true, null, null, false);
-	SC.StageFiles(StagedFileType.NonUFS, CombinePaths(SC.LocalRoot, "Engine/Plugins/TrueSkyPlugin/Content"), "*.*", true, null, null, false);
-	SC.StageFiles(StagedFileType.NonUFS, CombinePaths(SC.LocalRoot, "Engine/Plugins/TrueSkyPlugin/shaderbin", SC.PlatformDir), "*.*", true, null, null, false);
-	/// END trueSKY Additional code
+	SC.StageFiles(StagedFileType.NonUFS, DirectoryReference.Combine(SC.LocalRoot, "Engine/Binaries/ThirdParty/Simul", SC.PlatformDir), "TrueSkyPluginRender_MD.dll", StageFilesSearch.TopDirectoryOnly);
+	if(!SC.StageTargetConfigurations.Contains(UnrealTargetConfiguration.Shipping))
+		SC.StageFiles(StagedFileType.NonUFS, DirectoryReference.Combine(SC.LocalRoot, "Engine/Binaries/ThirdParty/Simul", SC.PlatformDir), "TrueSkyPluginRender_MD.pdb", StageFilesSearch.TopDirectoryOnly);
+	SC.StageFiles(StagedFileType.NonUFS, DirectoryReference.Combine(SC.LocalRoot, "Engine/Plugins/TrueSkyPlugin/Resources"), "*.*", StageFilesSearch.AllDirectories);
+	SC.StageFiles(StagedFileType.NonUFS, DirectoryReference.Combine(SC.LocalRoot, "Engine/Plugins/TrueSkyPlugin/Content"), "*.*", StageFilesSearch.AllDirectories);
+	SC.StageFiles(StagedFileType.NonUFS, DirectoryReference.Combine(SC.LocalRoot, "Engine/Plugins/TrueSkyPlugin/shaderbin",SC.PlatformDir), "*.*", StageFilesSearch.AllDirectories);
+	/// END trueSKY Additional code		
 
-		
+###### 4.18 and above (PS4):
+	/// BEGIN trueSKY Additional code
+    SC.StageFiles(StagedFileType.NonUFS, DirectoryReference.Combine(SC.LocalRoot, "Engine/Binaries/ThirdParty/Simul", SC.PlatformDir), "trueskypluginrender.prx", StageFilesSearch.TopDirectoryOnly);
+    SC.StageFiles(StagedFileType.NonUFS, DirectoryReference.Combine(SC.LocalRoot, "Engine/Plugins/TrueSkyPlugin/Resources"), "*.*", StageFilesSearch.AllDirectories);
+  	SC.StageFiles(StagedFileType.NonUFS, DirectoryReference.Combine(SC.LocalRoot, "Engine/Plugins/TrueSkyPlugin/textures"), "*.*", StageFilesSearch.AllDirectories);
+   	SC.StageFiles(StagedFileType.NonUFS, DirectoryReference.Combine(SC.LocalRoot, "Engine/Plugins/TrueSkyPlugin/Content"), "*.*", StageFilesSearch.AllDirectories);
+   	SC.StageFiles(StagedFileType.NonUFS, DirectoryReference.Combine(SC.LocalRoot, "Engine/Plugins/TrueSkyPlugin/shaderbin", SC.PlatformDir), "*.*", StageFilesSearch.AllDirectories);
+   	/// END trueSKY Additional code
+
 Next: <a href="/unrealengine/Troubleshooting">Troubleshooting</a>
