@@ -66,6 +66,20 @@ To enable cloud shadows, connect the render texture "CloudShadowRT" to the "Clou
 Assign the material function M_LightFunction to the "Light Function Material" slot of your Directional Light. You will need
 to run or simulate to see cloud shadows moving correctly.
 
+Rain Masking
+------------
+To prevent rain from falling in covered areas, create a SceneCapture2D actor, and give it a texture target that's contains only a red channel (e.g. RainDepthRT from the trueSKY content). Make the Capture Source "SceneDepth in R". You don't need to enable "Capture Every Frame" unless you expect the geometry to change.
+<a href="https://docs.simul.co/unrealengine/images/SceneCapture2DProperties.png"><img src="https://docs.simul.co/unrealengine/images/SceneCapture2DProperties.png" alt="Blueprint"/></a> 
+
+Rotate the Scene Capture 2D to face upwards.
+
+<a href="https://docs.simul.co/unrealengine/images/RainMaskView.png"><img src="https://docs.simul.co/unrealengine/images/RainMaskView.png" alt="Blueprint"/></a> 
+
+On the trueSKY Sequence Actor, assign the Scene Capture 2D actor to the Rain Mask SceneCapture property. Now, rain will only appear where there is no cover above the Scene Capture actor.
+
+<a href="https://docs.simul.co/unrealengine/images/PrecipitationProperties.png"><img src="https://docs.simul.co/unrealengine/images/PrecipitationProperties.png" alt="Blueprint"/></a> 
+
+
 Further Information
 --------------
  
