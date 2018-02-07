@@ -38,6 +38,9 @@ Frequently Asked Questions and Common Problems
 
 **The Sequencer and Sequences**
 
+* **The sequencer won't initialize, I get an error that the application failed to start because it could not find the Qt platform plugin "windows".**
+<br>The Houdini Engine plugin uses an incompatible version of the Qt widget system, please deactivate this plugin to enable trueSKY.
+
 * **I can't edit the values in the sequencer.**
 <br>Ensure your license key has been entered at the top of the sequencer, and that it is valid.
 

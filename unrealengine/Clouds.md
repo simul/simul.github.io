@@ -51,8 +51,6 @@ Persistence |"edgeNoisePersistence"| Persistence for edge noise texture. Between
 
 Sequencer Property| Name Variable | Definition
 ------------------|---------------|------------
-Enabled|"Visible"|Whether or not GPU should calculate clouds. Bool.
-Wrap Horizontally|"wrap"| Whether to wrap clouds horizontally. Bool.
 Override Wind| "overrideWind"| Whether to apply realtime wind motion (as opposed to simulation time). Bool.
 Render Mode|"renderMode"| How renderer should raytrace clouds. Standard = 0, Simplified = 1.
 Max Particles|"maxPrecipitationParticles"| The max number of rain particles to render. Between 0 and 1000000
