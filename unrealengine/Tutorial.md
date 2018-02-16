@@ -79,14 +79,28 @@ On the trueSKY Sequence Actor, assign the Scene Capture 2D actor to the Rain Mas
 
 <a href="https://docs.simul.co/unrealengine/images/PrecipitationProperties.png"><img src="https://docs.simul.co/unrealengine/images/PrecipitationProperties.png" alt="Blueprint"/></a> 
 
+Skyboxes
+--------
+You can use trueSKY to create stationary skyboxes, to produce procedural weather states with no impact on GPU or CPU usage. To do this, add a trueSKY Sequence Actor as normal, and set its Visible flag to **false**. Add a TrueSkyLight also. In the TrueSky content folder, find the Blueprint Class, SM_SkySphere, and add an instance to the scene. This adds a background skybox using the BackgroundCube Mesh and the material StaticSky_M.
+
+<a href="https://docs.simul.co/unrealengine/images/SM_SkySphere_Construction.png"><img src="https://docs.simul.co/unrealengine/images/SM_SkySphere_Construction.png" alt="SM_SkySphere_Construction.png"/></a>
+
+The material uses a lookup into the cubemap as the Emissive colour.
+
+<a href="https://docs.simul.co/unrealengine/images/StaticSky_Material.png"><img src="https://docs.simul.co/unrealengine/images/StaticSky_Material.png" alt="StaticSky_Material.png"/></a> 
+
+And to update the skybox, call the trueSKY Blueprint function Render to Cubemap, shown here updating StaticSkyboxRT when Tab is pressed.
+
+<a href="https://docs.simul.co/unrealengine/images/RenderToCubemap.png"><img src="https://docs.simul.co/unrealengine/images/RenderToCubemap.png" alt="RenderToCubemap.png"/></a>
+
+The TrueSkyLightComponent input would be the component from your TrueSkyLight Actor in the scene. The resulting skybox will be sampled from the same position as the TrueSkyLight ambient lighting, which will also be resampled, along with all other standard TrueSKY updates, when Render To Cubemap is called.
 
 Further Information
 --------------
  
-* [The Sequencer](https://docs.simul.co/reference/man_8_sequencer.html) 
+* [The Sequencer](https://docs.simul.co/sequencer.html) 
 * [Driving trueSKY via Blueprint](https://docs.simul.co/unrealengine/Blueprint.html)  
-* [trueSKY Developer Manual](https://docs.simul.co/reference/)
-* [Watch a video tutorial](https://www.youtube.com/watch?v=hE6qFzJgED4) 
+* [trueSKY Developer Manual](https://docs.simul.co/ref.html)
 
 
 Next: <a href="/unrealengine/Clouds">Clouds</a>
