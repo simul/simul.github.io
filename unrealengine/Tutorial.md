@@ -64,7 +64,7 @@ Cloud Shadows
 -------------
 To enable cloud shadows, connect the render texture "CloudShadowRT" to the "Cloud Shadow" slot of the trueSKY Sequence Actor.
 Assign the material function M_LightFunction to the "Light Function Material" slot of your Directional Light. You will need
-to run or simulate to see cloud shadows moving correctly.
+to run or simulate to see cloud shadows moving correctly. To increase the range of the shadows, adjust the Directional Light's Dynamic Shadow Distance, under Cascaded Shadow Maps.
 
 Rain Masking
 ------------
