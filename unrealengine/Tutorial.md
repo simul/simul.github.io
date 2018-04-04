@@ -44,9 +44,9 @@ If you press Play/Simulate now you will see the clouds move and the day turn to 
 Implementing Lighting
 -------------------------
 
-Now that time is moving and the clouds are behaving properly, the next element of trueSKY to configure is the lighting. In trueSKY you can drive both the Sun and the Moon using the Blueprint system. By default your scene should already have a directional light present. Ensure that its Mobility (Details Panel -> Transform) is set to Movable. Open up the level blueprint and create a reference to the directional light. Now connect it to the UpdateLight function. You can also apply a multiplier to each to scale the brightness (in this example I have left the sun at 1.0 but doubled the moon's brightness).
+Now that time is moving and the clouds are behaving properly, the next element of trueSKY to configure is the lighting. By default your scene should already have a directional light present. Ensure that its Mobility (Details Panel -> Transform) is set to Movable. Open up the TrueSkySequenceActor and assign the directional light under the Lighting group. You can also apply a multiplier to each to scale the brightness of sunlight and moonlight.
 
-<a href="https://docs.simul.co/unrealengine/images/UpdateLight.png"><img src="https://docs.simul.co/unrealengine/images/UpdateLight.png" alt="UpdateLight"/></a>
+<a href="https://docs.simul.co/unrealengine/images/DirectionalLight.png"><img src="https://docs.simul.co/unrealengine/images/DirectionalLight.png" alt="DirectionalLight"/></a>
 
 Ambient Light with TrueSkyLight
 -------------------------------
@@ -54,7 +54,7 @@ Ambient Light with TrueSkyLight
 The default Unreal Engine Skylight is not dynamic. To get the most out of trueSKY it is advisable to replace this with a TrueSkyLight (Modes -> All Classes). Do not manually capture the cubemap when using this Skylight: it works automatically.
 You can adjust the update frequency (default 4 means every four frames the TrueSkyLight is updated), and the Diffuse and Specular brightness - it's recommended not to change these dynamically, but choose in advance the values that work best. The Blend property controls how smoothly (and thus, slowly) the light changes over time.
 
-It's also worth rembering to set the Render Textures for Loss, Inscatter and Cloud Visibility (these won't be much use here, but are important when rendering transparent materials alongside trueSKY). 
+It's also worth rembering to set the Render Textures for Loss, Inscatter and Cloud Visibility (these are important when rendering transparent materials alongside trueSKY). 
 
 <a href="https://docs.simul.co/unrealengine/images/RTConfigure.png"><img src="https://docs.simul.co/unrealengine/images/RTConfigure.png" alt="Blueprint"/></a> 
 
@@ -63,8 +63,7 @@ With that your scene is now fully configured and should be showing moving clouds
 Cloud Shadows
 -------------
 To enable cloud shadows, connect the render texture "CloudShadowRT" to the "Cloud Shadow" slot of the trueSKY Sequence Actor.
-Assign the material function M_LightFunction to the "Light Function Material" slot of your Directional Light. You will need
-to run or simulate to see cloud shadows moving correctly. To increase the range of the shadows, adjust the Directional Light's Dynamic Shadow Distance, under Cascaded Shadow Maps.
+Assign the material function M_LightFunction to the "Light Function Material" slot of your Directional Light. To increase the range of the shadows, adjust the Directional Light's Dynamic Shadow Distance, under Cascaded Shadow Maps.
 
 Rain Masking
 ------------
