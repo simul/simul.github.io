@@ -1,5 +1,5 @@
 ---
-title: Plugin User Licence Agremeent
+title: Indie Plugin User Licence Agremeent
 layout: reference
 weight: 110
 ---
@@ -8,8 +8,8 @@ weight: 110
 TRUESKY PLUGIN
 ============
 
-User Licence Agreement
-----------------------
+Indie User Licence Agreement
+----------------------------
 
 This Agreement is between Simul Software Ltd and you.
 
