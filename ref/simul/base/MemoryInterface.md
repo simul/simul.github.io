@@ -8,7 +8,7 @@ class MemoryInterface
 
 | Include: | Base/MemoryInterface.h |
 
-Inherit from MemoryInterface to take control of memory allocation for any class that uses<br>this interface as a resource.
+Inherit from MemoryInterface to take control of memory allocation for any class that uses<br>
 
 
 Functions
@@ -20,7 +20,7 @@ Functions
 | void * | [AllocateVideoMemory](#AllocateVideoMemory)(size_t nbytes, size_t align) |
 | void * | [AllocateVideoMemoryTracked](#AllocateVideoMemoryTracked)(size_t, size_t, char) |
 | void | [Deallocate](#Deallocate)(void address) |
-| void | [DeallocateVideoMemory](#DeallocateVideoMemory)(void address) |
+| void | [DeallocateVideoMemory](#DeallocateVideoMemory)(void) |
 
 Inherit from MemoryInterface to take control of memory allocation for any class that uses
 this interface as a resource.
@@ -32,13 +32,13 @@ Functions
 
 ### <a name="Allocate"/>void * Allocate(size_t nbytes)
 Allocate **nbytes** bytes of memory and return a pointer to them.
-Reimplement this in the derived class.
+
 Allocate **nbytes** bytes of memory and return a pointer to them.
 Reimplement this in the derived class.
 
 ### <a name="Allocate"/>void * Allocate(size_t nbytes, size_t align)
 Allocate **nbytes** bytes of memory, aligned to **align** and return a pointer to them. for unaligned, use align=0.
-Reimplement this in the derived class.
+
 Allocate **nbytes** bytes of memory, aligned to **align** and return a pointer to them. for unaligned, use align=0.
 Reimplement this in the derived class.
 
@@ -48,7 +48,7 @@ Reimplement this if needed in the derived class. The function_name can be ignore
 
 ### <a name="AllocateVideoMemory"/>void * AllocateVideoMemory(size_t nbytes, size_t align)
 Allocate **nbytes** bytes of memory, aligned to **align** and return a pointer to them. for unaligned, use align=0.
-Reimplement this in the derived class.
+
 Allocate **nbytes** bytes of memory, aligned to **align** and return a pointer to them. for unaligned, use align=0.
 Reimplement this in the derived class.
 
@@ -59,13 +59,13 @@ Reimplement this if needed in the derived class. The function_name can be ignore
 ### <a name="Deallocate"/>void Deallocate(void address)
 De-allocate the memory at 
 **address** (requires that this memory was allocated with Allocate()).
-Implementations MUST ignore NULL values.
+
 De-allocate the memory at 
 **address** (requires that this memory was allocated with Allocate()).
 Implementations MUST ignore NULL values.
 
-### <a name="DeallocateVideoMemory"/>void DeallocateVideoMemory(void address)
+### <a name="DeallocateVideoMemory"/>void DeallocateVideoMemory(void)
  some Video memory
-Implementations MUST ignore NULL values.
+
  some Video memory
 Implementations MUST ignore NULL values.

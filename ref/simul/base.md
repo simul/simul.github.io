@@ -11,21 +11,6 @@ namespace base
 Base is the base library, containing simple data structures, macros and other useful things.<br>
 
 
-Classes and Structures
----
-
-| class [BaseProfilingInterface](base/BaseProfilingInterface) | A virtual interface base class for classes that can profile for performance. |
-| class [DefaultProfiler](base/DefaultProfiler) | A simple profiler using simul::base::Timer<br>Usage is as follows:<br> |
-| class [EnvironmentVariables](base/EnvironmentVariables) | A class to manage environment variables. |
-| class [FileLoader](base/FileLoader) | An interface to derive from so you can provide your own file load/save functions.<br>Use SetFileLoader to define the object that Simul will use for file handling.<br>The default is simul::base::DefaultFileLoader, which uses standard file handling. |
-| class [MemoryInterface](base/MemoryInterface) | Inherit from MemoryInterface to take control of memory allocation for any class that uses<br>this interface as a resource. |
-| class [MemoryUsageInterface](base/MemoryUsageInterface) | A virtual interface class for classes that can return how much memory they use. |
-| class [ProfilingInterface](base/ProfilingInterface) | simul::base::DefaultProfiler inherits from ProfilingInterface to measure CPU performance. |
-| class [Referenced](base/Referenced) | Base class for classes that use reference-counting. This class handles the reference counts<br>and deletes the instance when the count reaches zero. Designed to be used with<br>simul::base::SmartPtr. |
-| class [RuntimeError](base/RuntimeError) | This is a throwable error class derived from std::runtime_error.<br>It is used in builds that have C++ exceptions enabled. As it always outputs to std::cerr,<br>it is easier to see the nature of the error than with runtime_error alone. |
-| class [ShowProgressInterface](base/ShowProgressInterface) | ShowProgressInterface |
-| class [Timer](base/Timer) |  microsecond timer.<br>Provides timing to microsecond accuracy; results are reported in milliseconds. |
-
 Functions
 ---
 

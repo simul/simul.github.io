@@ -8,7 +8,7 @@ class FileLoader
 
 | Include: | Base/FileLoader.h |
 
-An interface to derive from so you can provide your own file load/save functions.<br>Use SetFileLoader to define the object that Simul will use for file handling.<br>The default is simul::base::DefaultFileLoader, which uses standard file handling.
+An interface to derive from so you can provide your own file load/save functions.<br>
 
 
 Functions
@@ -37,7 +37,7 @@ Functions
 
 ### <a name="AcquireFileContents"/>void AcquireFileContents(void pointer, unsigned int bytes, char filename_utf8, bool open_as_text)
 Put the file's entire contents into memory, by allocating sufficiently many bytes, and setting the pointer.
-The memory should later be freed by a call to 
+
 Put the file's entire contents into memory, by allocating sufficiently many bytes, and setting the pointer.
 The memory should later be freed by a call to 
 

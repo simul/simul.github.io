@@ -8,7 +8,7 @@ class Referenced
 
 | Include: | Base/Referenced.h |
 
-Base class for classes that use reference-counting. This class handles the reference counts<br>and deletes the instance when the count reaches zero. Designed to be used with<br>simul::base::SmartPtr.
+Base class for classes that use reference-counting. This class handles the reference counts<br>
 
 
 Functions
@@ -42,6 +42,6 @@ Return the number of pointers referencing this object.
 
 ### <a name="PrepareToDestroy"/>void PrepareToDestroy()
 Enact all destruction code that needs to rely on the derived class's virtual functions
-because destructors can't use virtuals properly.
+
 Enact all destruction code that needs to rely on the derived class's virtual functions
 because destructors can't use virtuals properly.

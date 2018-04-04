@@ -3,7 +3,10 @@ title: Mixed Resolution Compositing
 layout: reference
 weight: 0
 ---
-Mixed Resolution Compositing<br>=======<br>Previous: <a href="shaders">Shaders</a>
+Mixed Resolution Compositing
+===
+
+=======<br>Previous: <a href="shaders">Shaders</a>
 
 TrueSKY's cloud rendering is usually performed at below the full resolution of the screen. This is because, as a raytracing system, its
 efficiency is highly dependent on the number of pixels drawn. To draw at 1/4 the full resolution, for example means rendering 1/16th the

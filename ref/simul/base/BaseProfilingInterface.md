@@ -38,7 +38,7 @@ Gets the profiling report as text.
 
 ### <a name="GetEvent"/>simul::base::ProfileData  const * GetEvent(simul::base::ProfileData, int)
 Get profile data for the event at index i. Returns NULL for i<0 or i>= number of events.
-Null parent means the top-level events.
+
 Get profile data for the event at index i. Returns NULL for i<0 or i>= number of events.
 Null parent means the top-level events.
 
