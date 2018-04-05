@@ -3,7 +3,12 @@ title: The Cloud Keyframer
 layout: reference
 weight: 0
 ---
-The Cloud Keyframer<br>========<br>Previous: <sky\_keyframer>
+The Cloud Keyframer
+===
+
+========<br>========
+
+Previous: <sky\_keyframer>
 
 Updating
 --------
@@ -76,14 +81,14 @@ Local Cloud Cells
 To position clouds, disable horizontal wrapping and enable explicit offsets, so that the cloud volume can be positioned
 per-keyframe:
 
-        environment->cloudKeyframer->SetExplicitOffsets(true);
-        environment->cloudKeyframer->GetCloudInterface()->SetWrap(false);
+	environment->cloudKeyframer->SetExplicitOffsets(true);
+	environment->cloudKeyframer->GetCloudInterface()->SetWrap(false);
 
 e.g. to position the fourth keyframe of the cloudKeyframer:
 
-        simul::clouds::CloudKeyframe *K=environment->cloudKeyframer->GetKeyframe(3);
-        K->offsetx=10000.f;
-        K->offsety=10000.f;
+	simul::clouds::CloudKeyframe *K=environment->cloudKeyframer->GetKeyframe(3);
+	K->offsetx=10000.f;
+	K->offsety=10000.f;
 
 Within the cloud volume, the **masks** determine where clouds are present at any horizontal position. 
 Each keyframe has an optional list of masks, and each mask has an xy position, and a radius, in units where 1.0 is
@@ -91,15 +96,15 @@ the width of the volume. Each mask has a thickness, from 0 to 1.0, which acts as
 
 The mask list is a **map**, with an integer key. For example, to modify keyframe K, we can create or change the mask with id 7:
 
-        simul::clouds::Mask &M=K->masks[7];
-        M.x=0.5f;
-        M.y=0.6f;
-        M.radius=0.3f;
-        M.thickness=1.0f;
+	simul::clouds::Mask &M=K->masks[7];
+	M.x=0.5f;
+	M.y=0.6f;
+	M.radius=0.3f;
+	M.thickness=1.0f;
 
 To remove a mask from a keyframe:
 
-        K->masks.erase(7);
+	K->masks.erase(7);
 
 <hr>
 Next: <a href="../shaders">Shaders</a>

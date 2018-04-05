@@ -3,7 +3,12 @@ title: Rendering the Environment
 layout: reference
 weight: 3
 ---
-Rendering the Environment<br>=========================<br>Previous: <a href="gettingstarted">Getting Started</a>
+Rendering the Environment
+===
+
+=========================<br>=========================
+
+Previous: <a href="gettingstarted">Getting Started</a>
 <hr size="1">
 
 All Simul's default renderers use a right-handed co-ordinate system with x pointing East, y North, and z up. All units of distance are metres or kilometres. If not specified as km, distance is in metres. Angular units are radians, unless specified as degrees. Temperature is in kelvins, unless specified as degrees Celsius.
@@ -15,18 +20,18 @@ So the Weather Renderer is the main interface between your program and trueSKY.
 
 The following table describes the elements of a sky as implemented in the renderer:
 
-| Features                                      |
-| -------------------------     |
-| Cosmic Background                     |
-| Stars                                         |
-| Planets                                       |
-| Volumetric Clouds                     |
-| 2D Clouds                                     |
+| Features					|
+| -------------------------	|
+| Cosmic Background			|
+| Stars						|
+| Planets					|
+| Volumetric Clouds			|
+| 2D Clouds					|
 | Mixed resolution rendering|
-| Atmospherics                          |
-| Godrays                                       |
-| Precipitation                         |
-| Rain streaks                          |
+| Atmospherics				|
+| Godrays					|
+| Precipitation				|
+| Rain streaks				|
 
 Cosmic Background
 -----------------
@@ -78,7 +83,7 @@ Calculation performance - mainly cloud lighting - depends strongly on the grid s
 It is usual to downsample the cloud part of the sky rendering, controlled by
 ::clouds::CloudRenderingOptions::MaximumCubemapResolution MaximumCubemapResolution the ::clouds::CloudRenderingOptions CloudRenderingOptions\endlink.
 
-        
+	
 Rain and Snow
 -------------
 

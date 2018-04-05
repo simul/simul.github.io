@@ -3,7 +3,12 @@ title: The Sky Sequencer
 layout: reference
 weight: 60
 ---
-The Sky Sequencer<br>=================<br>Previous: <a href="classes">The trueSKY Classes</a>::mixed
+The Sky Sequencer
+===
+
+=================<br>=================
+
+Previous: <a href="classes">The trueSKY Classes</a>::mixed
 
 The Sky Sequencer is a tool for artists, technical artists, level designers, 
     and mission planners. It also helps programmers to understand the workings of True Sky's sky, 
@@ -44,7 +49,7 @@ effect, and light colour.
 Cloud keyframes determine the properties of the cloud layer at a given time. As 
 the light direction changes with time of day, it is necessary to have enough 
 cloud keyframes to reflect the lighting throughout the day.
-        
+	
 Map Window
 ----------
 This window shows the cloud keyframes in a plan view. Wind heading and speed affects the

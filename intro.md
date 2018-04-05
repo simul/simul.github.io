@@ -3,7 +3,16 @@ title: Introduction
 layout: reference
 weight: 1
 ---
-Introduction<br>===<br>TrueSKY is the culmination of many years' research and development. It is based on physical principles<br>of light scattering and absorption, and is highly optimized for speed. We believe it is the best-performing system<br>for realistic realtime skies and clouds.<br>The SDK comes as a set of libraries, under a main "Simul" directory. These can be linked statically or dynamically,
+Introduction
+===
+
+===<br>===
+TrueSKY is the culmination of many years' research and development. It is based on physical principles
+of light scattering and absorption, and is highly optimized for speed. We believe it is the best-performing system
+for realistic realtime skies and clouds.
+
+
+The SDK comes as a set of libraries, under a main "Simul" directory. These can be linked statically or dynamically,
 depending on the platform. Binaries reside in the directory "Simul/lib" in the case of static libraries,
 and in "Simul/exe" for dll's. Source is found in the subdirectories for the constituent libraries.
 
@@ -11,31 +20,31 @@ In *exe* and *lib*, the following structure is observed:
 
 <ul>
 <li>Win32
-        <ul>
-                <li>VC11
-                        <ul>
-                                <li>Debug</li>
-                        <li>Release</li>
-                                <li>Static Debug</li>
-                                <li>Static Release</li>
-                        </ul>
-                </li>
-                <li>v140
-                </li>
-        </ul>
-        <ul>
-                <li>...</li>
-        </ul>
+	<ul>
+		<li>VC11
+			<ul>
+				<li>Debug</li>
+		        <li>Release</li>
+				<li>Static Debug</li>
+				<li>Static Release</li>
+			</ul>
+		</li>
+		<li>v140
+		</li>
+	</ul>
+	<ul>
+		<li>...</li>
+	</ul>
 </li>
 <li>x64
-        <ul>
-                <li>...</li>
-        </ul>
+	<ul>
+		<li>...</li>
+	</ul>
 </li>
 <li>{console platforms}
-        <ul>
-                <li>...</li>
-        </ul>
+	<ul>
+		<li>...</li>
+	</ul>
 </li>
 </ul>
 

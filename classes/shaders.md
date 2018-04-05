@@ -3,7 +3,12 @@ title: Shaders
 layout: reference
 weight: 0
 ---
-Shaders<br>=======<br>Previous: <cloud\_keyframer>
+Shaders
+===
+
+=======<br>=======
+
+Previous: <cloud\_keyframer>
 
 trueSKY uses *effects* for rendering. An effect is a collection of shaders - vertex shaders, pixel shaders and so on, along with information on
 how to combine them, how to set render state when they are used, and what inputs they take.
@@ -29,38 +34,38 @@ Constant Buffers
 ----------------
 Older versions of GLSL, and DirectX 9, pass constants to shaders individually.
 
-        (in HLSL)
-        float brightness;
+	(in HLSL)
+	float brightness;
 
-        (in C++)
-        D3DXHANDLE h=effect->GetParameterByName(NULL,"brightness");
-        effect->SetFloat(h,1.0);
+	(in C++)
+	D3DXHANDLE h=effect->GetParameterByName(NULL,"brightness");
+	effect->SetFloat(h,1.0);
 
 OpenGL 3.0 and DirectX 11 have the capability to use **constant** **buffers** instead,
 so if we define in the shader:
 
-        (in GLSL)
-        layout(std140) uniform ShaderConstants
-        {
-                uniform float brightness;
-                uniform float gamma;
-                uniform float bloom;
-        };
+	(in GLSL)
+	layout(std140) uniform ShaderConstants
+	{
+		uniform float brightness;
+		uniform float gamma;
+		uniform float bloom;
+	};
 
 etc., and in C++:
 
-        struct ShaderConstants
-        {
-                float brightness;
-                uniform float gamma;
-                uniform float bloom;
-        };
+	struct ShaderConstants
+	{
+		float brightness;
+		uniform float gamma;
+		uniform float bloom;
+	};
  
 it is then possible to set the values of the whole structure in C++, and pass it complete to the shader. For cross-platform constant buffers, we define:
 
-        SIMUL_CONSTANT_BUFFER
+	SIMUL_CONSTANT_BUFFER
 
-        SIMUL_CONSTANT_BUFFER_END
+	SIMUL_CONSTANT_BUFFER_END
 
 and these macros have different expansions depending on whether the header is being used in C++, or in a shader compilation.
 

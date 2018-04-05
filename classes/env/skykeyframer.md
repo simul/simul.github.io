@@ -3,7 +3,12 @@ title: The Sky Keyframer
 layout: reference
 weight: 0
 ---
-The Sky Keyframer<br>=================<br>Previous: <environment>
+The Sky Keyframer
+===
+
+=================<br>=================
+
+Previous: <environment>
 
 Updating
 --------
@@ -26,13 +31,13 @@ If they are linked, ::sky::BaseKeyframe::time time ::sky::SkyKeyframe::daytime d
 
 Here we enable this link by calling SetLinkKeyframeTimeAndDaytime, then verify that daytime and time are now the same:
 
-        simul::sky::SkyKeyframer *sk=environment->skyKeyframer;
-        sk->SetLinkKeyframeTimeAndDaytime(true);
-        for(int i=0;i<sk->GetNumKeyframes();i++)
-        {
-                simul::sky::SkyKeyframe *k=(simul::sky::SkyKeyframe *)sk->GetKeyframe(i);
-                assert(k->daytime==k->time);
-        }
+	simul::sky::SkyKeyframer *sk=environment->skyKeyframer;
+	sk->SetLinkKeyframeTimeAndDaytime(true);
+	for(int i=0;i<sk->GetNumKeyframes();i++)
+	{
+		simul::sky::SkyKeyframe *k=(simul::sky::SkyKeyframe *)sk->GetKeyframe(i);
+		assert(k->daytime==k->time);
+	}
 
 
 Unlinked Time and Daytime
@@ -43,13 +48,13 @@ will be sorted so that they are in ascending order of ::sky::BaseKeyframe::time 
 daytime will have no such restriction. You could have a midday keyframe, followed by sunset, followed by midday again.
 Here, we set all the keyframes to be at daytime=0.25 (6am):
 
-        simul::sky::SkyKeyframer *sk=environment->skyKeyframer.Get();
-        sk->SetLinkKeyframeTimeAndDaytime(false);
-        for(int i=0;i<sk->GetNumKeyframes();i++)
-        {
-                simul::sky::SkyKeyframe *k=(simul::sky::SkyKeyframe *)sk->GetKeyframe(i);
-                k->daytime=0.25f;
-        }
+	simul::sky::SkyKeyframer *sk=environment->skyKeyframer.Get();
+	sk->SetLinkKeyframeTimeAndDaytime(false);
+	for(int i=0;i<sk->GetNumKeyframes();i++)
+	{
+		simul::sky::SkyKeyframe *k=(simul::sky::SkyKeyframe *)sk->GetKeyframe(i);
+		k->daytime=0.25f;
+	}
 
 You could also disable ::sky::SkyKeyframe::automaticSunPosition automaticSunPosition\endlink, in which case daytime will have no effect
 on sun position.
@@ -58,8 +63,8 @@ The unlinked time mode is particularly suitable to situations where you will use
 At any given time, two keyframes are being used for rendering, and the next one along will be partially updated. So the properties
 of the fourth keyframe can be changed without having any need for recalculations.
 
-        simul::sky::SkyKeyframe *k=environment->skyKeyframer->GetNextModifiableKeyframe();
-        k->haze=20.f;
+	simul::sky::SkyKeyframe *k=environment->skyKeyframer->GetNextModifiableKeyframe();
+	k->haze=20.f;
 
 This works just as well with linked as with unlinked times.
 

@@ -3,7 +3,12 @@ title: Mixed Resolution Compositing
 layout: reference
 weight: 0
 ---
-Mixed Resolution Compositing<br>=======<br>Previous: <a href="shaders">Shaders</a>
+Mixed Resolution Compositing
+===
+
+=======<br>=======
+
+Previous: <a href="shaders">Shaders</a>
 
 TrueSKY's cloud rendering is usually performed at below the full resolution of the screen. This is because, as a raytracing system, its
 efficiency is highly dependent on the number of pixels drawn. To draw at 1/4 the full resolution, for example means rendering 1/16th the
@@ -20,7 +25,7 @@ anti-aliasing. To do this, trueSKY uses a mixed-resolution compositor.
 The downscaling is set as a property of the weather renderer:
 
 ~~~~~~~~~~~~~~~{.c}
-        weatherRenderer->SetDownscale(4);
+	weatherRenderer->SetDownscale(4);
 ~~~~~~~~~~~~~~~
 
 The depth values passed to the weather renderer in your depth texture are processed to obtain the needed information for the compositing. This processing uses the projection matrix passed in in your DeviceContext object. The most efficient projection is usually the depth-reversed style, for which the far plane is at z=0.

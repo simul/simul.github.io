@@ -3,17 +3,22 @@ title: Getting Started
 layout: reference
 weight: 2
 ---
-Getting Started<br>===============<br>Previous: <a href="intro">Introduction</a>
+Getting Started
+===
+
+===============<br>===============
+
+Previous: <a href="intro">Introduction</a>
 <hr size="1">
 
 
 Unity
 -----
-To use the trueSKY Unity plugin, install the appropriate trueSkyUnityPlugin.unitypackage to your Unity project. For further instructions, head to [docs.simul.co/unity](https://docs.simul.co/unity).
+To use the trueSKY Unity plugin, install the appropriate trueSkyUnityPlugin.unitypackage to your Unity project. For further instructions, head to [docs.simul.co/unity](http://docs.simul.co/unity).
 
 Unreal Engine 4
 ---------------
-The trueSKY Unreal Engine 4 plugin comes as a branch of the UE4 engine on GitHub, and also as a separate installer for the binary distribution of UE4. For further instructions, head to [docs.simul.co/unrealengine](https://docs.simul.co/unrealengine).
+The trueSKY Unreal Engine 4 plugin comes as a branch of the UE4 engine on GitHub, and also as a separate installer for the binary distribution of UE4. For further instructions, head to [docs.simul.co/unrealengine](http://docs.simul.co/unrealengine).
 
 trueSKY SDK
 --------------
@@ -25,7 +30,7 @@ The trueSKY SDK can be integrated with a game/simulation in two different ways. 
 
 To build the samples, use the solution file appropriate to your Visual Studio version, e.g.:
 
-        - SimulSamples_x64_VC11.sln
+	- SimulSamples_x64_VC11.sln
 
 
 
@@ -34,47 +39,47 @@ The two main elements to implementing trueSKY in a project are: an Environment o
 
 You should create an instance of simul::clouds::Environment, which is persistent.
 ~~~~~~~~~~~~~~~
-        #include "Simul/LicenseKey.h"
-        #include "Simul/Base/EnvironmentVariables.h"
-        simul::clouds::Environment *environment=NULL;
+	#include "Simul/LicenseKey.h"
+	#include "Simul/Base/EnvironmentVariables.h"
+	simul::clouds::Environment *environment=NULL;
 ~~~~~~~~~~~~~~~
 
 Apply your trueSKY licence key (see <man\_a\_licensing> for more details), and initialize the Environment instance:
 ~~~~~~~~~~~~~~~{.c}
-        simul::base::SetLicence(SIMUL_LICENSE_KEY);
-        environment=new simul::clouds::Environment();
+	simul::base::SetLicence(SIMUL_LICENSE_KEY);
+	environment=new simul::clouds::Environment();
 ~~~~~~~~~~~~~~~
 
 The Environment is API-neutral, it calculates and updates environment data. We will create a persistent ::crossplatform::RenderPlatform RenderPlatform\endlink,
 whose class depends on the graphics API we use:
 
 ~~~~~~~~~~~~~~~{.c}
-        simul::dx11::RenderPlatform renderPlatformDx11;
+	simul::dx11::RenderPlatform renderPlatformDx11;
 ~~~~~~~~~~~~~~~
 
 The RenderPlatform classes implement platform-specific rendering functions called from a cross-platform interface.
 And we will create a weather renderer, which is also API-neutral:
 ~~~~~~~~~~~~~~~{.c}
-        simul::clouds::BaseWeatherRenderer *weatherRenderer=new simul::clouds::BaseWeatherRenderer(environment);
+	simul::clouds::BaseWeatherRenderer *weatherRenderer=new simul::clouds::BaseWeatherRenderer(environment);
 ~~~~~~~~~~~~~~~
 
 In the case of
 DirectX 11, we initialize the RenderPlatform with a pointer to our ID3D11Device:
 ~~~~~~~~~~~~~~~{.c}
-        void OnD3D11CreateDevice(struct ID3D11Device* pd3dDevice)
-        {
-                renderPlatformDx11.RestoreDeviceObjects(pd3dDevice);
+	void OnD3D11CreateDevice(struct ID3D11Device* pd3dDevice)
+	{
+		renderPlatformDx11.RestoreDeviceObjects(pd3dDevice);
 
 ~~~~~~~~~~~~~~~
 Having done this, we can now pass the render platform pointer to the device-specific initialization of our renderers:
 ~~~~~~~~~~~~~~~{.c}
-                weatherRenderer->RestoreDeviceObjects(&renderPlatformDx11);
-        }
+		weatherRenderer->RestoreDeviceObjects(&renderPlatformDx11);
+	}
 ~~~~~~~~~~~~~~~
 
 In-game, we update the environment, usually once per frame:
 ~~~~~~~~~~~~~~~{.c}
-        environment->update(time_step_days);
+	environment->update(time_step_days);
 ~~~~~~~~~~~~~~~
 
 The time step is given in days - a floating point value, usually some small fraction less than one.
@@ -82,15 +87,15 @@ This is the simulation time step, rather than real-time.
 Then to render:
 
 ~~~~~~~~~~~~~~~{.cpp}
-        void Render(ID3D11DeviceContext* pContext)
-        {
-                simul::crossplatform::DeviceContext     deviceContext;
-                deviceContext.platform_context                          =pContext;
-                deviceContext.renderPlatform                            =&renderPlatformDx11;
-                deviceContext.viewStruct.view_id                        =view_id;
-                deviceContext.viewStruct.depthTextureStyle      =crossplatform::PROJECTION;
-                deviceContext.viewStruct.view                           =viewMatrix;
-                deviceContext.viewStruct.proj                           =projectionMatrix;
+	void Render(ID3D11DeviceContext* pContext)
+	{
+		simul::crossplatform::DeviceContext	deviceContext;
+		deviceContext.platform_context				=pContext;
+		deviceContext.renderPlatform				=&renderPlatformDx11;
+		deviceContext.viewStruct.view_id			=view_id;
+		deviceContext.viewStruct.depthTextureStyle	=crossplatform::PROJECTION;
+		deviceContext.viewStruct.view				=viewMatrix;
+		deviceContext.viewStruct.proj				=projectionMatrix;
 ~~~~~~~~~~~~~~~
 We've created a ::crossplatform::DeviceContext deviceContext that we will pass to the render functions.
 This object encapsulates the platform-specific context - in this case it's
@@ -106,7 +111,7 @@ Each individual view that you want to draw simultaneously on screen should have 
 You don't have to explicitly create views, but you should call:
 
 ~~~~~~~~~~~~~~~{.cpp}
-        weatherRenderer->RemoveView(view_id);
+	weatherRenderer->RemoveView(view_id);
 ~~~~~~~~~~~~~~~
 
 to free up GPU memory if a view is removed.
@@ -117,18 +122,18 @@ depth information you pass to it. The matrices (::math::Matrix4x4 Matrix4x4\endl
 Once per frame, before rendering , we must call ::clouds::BaseWeatherRenderer::PreRenderUpdate PreRenderUpdate\endlink, passing
 a deviceContext that refers to **main** **view**.
 ~~~~~~~~~~~~~~~{.cpp}
-        weatherRenderer->PreRenderUpdate(deviceContext,real_time_s);
+	weatherRenderer->PreRenderUpdate(deviceContext,real_time_s);
 ~~~~~~~~~~~~~~~
 The parameter *real_time_s* is real time in seconds - as distinct from simulation time, which might be greatly accelerated, or change instantly, real time is used mainly for effects like rain that we might not want to appear accelerated. 
 
 For each view, we render the sky, passing an appropriate device context.
 ~~~~~~~~~~~~~~~{.cpp}
-        weatherRenderer->Render(deviceContext,
-                                                        ,(bool)is_cubemap
-                                                        ,(float) exposure
-                                                        ,(float) gamma
-                                                        ,mainDepthTexture
-                                                        ,depthViewport);
+	weatherRenderer->Render(deviceContext,
+							,(bool)is_cubemap
+							,(float) exposure
+							,(float) gamma
+							,mainDepthTexture
+							,depthViewport);
 ~~~~~~~~~~~~~~~
 
 The *exposure* is a brightness multiplier - 1.0 is a good value,
@@ -161,7 +166,7 @@ sheets - e.g. Simul/Platform/DirectX/SimulUseDXSDK.props, alternatively:
 
 * In the project properties, select Configuration:All, then under "Configuration Properties, C++, General" add the following to "Additional Include Directories":
 ~~~~~~~~~~~~~~~{.cpp}
-        $(SIMUL)/../;$(DXSDK_DIR)/include
+	$(SIMUL)/../;$(DXSDK_DIR)/include
 ~~~~~~~~~~~~~~~
 The SIMUL environment variable is set by the trueSKY installer, while the DXSDK_DIR variable is set when you install DirectX.
 
@@ -174,10 +179,10 @@ where VC11 should be replaced by VC12 etc for different Visual Studio versions, 
 
 * In your initialization code, setup file loading and paths if needed, before creating the weather renderer:
 ~~~~~~~~~~~~~~~{.cpp}
-        simul::dx11::SetFileLoader(myFileLoader);
-        simul::dx11::PushShaderPath("my_shader_path");
-        simul::dx11::PushTexturePath("my_texture_path");
-        simul::dx11::SetShaderBinaryPath("my_binary_path");
+	simul::dx11::SetFileLoader(myFileLoader);
+	simul::dx11::PushShaderPath("my_shader_path");
+	simul::dx11::PushTexturePath("my_texture_path");
+	simul::dx11::SetShaderBinaryPath("my_binary_path");
 ~~~~~~~~~~~~~~~
 For example, the DirectX11 sample uses the default file loader, and the paths to shaders in "Simul/Platform/DirectX11/HLSL" and textures in "Simul/Media/Textures".
 
@@ -192,20 +197,20 @@ To add True Sky to an OpenGL project:
 * In the project properties, select Configuration:All, then under "Configuration Properties, C++, General" add the following "Additional Include Directories":
 
 ~~~~~~~~~~~~~~~{.cpp}
-        "$(SIMUL)/../";"$(SIMUL)/External/OpenGL/include";"$(SIMUL)/External/FreeImage/Dist"
+	"$(SIMUL)/../";"$(SIMUL)/External/OpenGL/include";"$(SIMUL)/External/FreeImage/Dist"
 ~~~~~~~~~~~~~~~
 
 * Under "Configuration Properties, Linker, General" set "Additional Library Directories" to:
 
 ~~~~~~~~~~~~~~~{.cpp}
-        "$(SIMUL)/lib/$(PlatformName)/VC11/$(ConfigurationName)";"$(SIMUL)/External/OpenGL/lib";"$(SIMUL)/External/FreeImage/Dist"
+	"$(SIMUL)/lib/$(PlatformName)/VC11/$(ConfigurationName)";"$(SIMUL)/External/OpenGL/lib";"$(SIMUL)/External/FreeImage/Dist"
 ~~~~~~~~~~~~~~~
 * The libraries themselves are linked automatically when the headers are included.
 
 * On scene initialization, initialize the shader path and the weather object:
 
 ~~~~~~~~~~~~~~~{.cpp}
-        simul::opengl::PushShaderPath("shaders/");
+	simul::opengl::PushShaderPath("shaders/");
 ~~~~~~~~~~~~~~~
 
 <hr size="1">
