@@ -22,7 +22,7 @@ The stock binary version of Unreal does not deploy trueSKY files when packaging 
 
 # Running the Plugin
 * Run UE4, either standalone or with the debugger.
-TrueSkyPlugin loads `TrueSkyUI_MD.dll` and `UE4PluginRenderInterface_MT.dll` from `[UE4]\Engine\Plugins\TrueSkyPlugin\Binaries\Win64`.
+TrueSkyPlugin loads `TrueSkyUI_MD.dll` and `TrueSkyPluginRender_MT.dll` from `[UE4]\Engine\Binaries\ThirdParty\Simul\Win64`.
 
 When you run the UE4 editor, the trueSKY plugin should be enabled by default. If not, open up the Plugin Configurator for Unreal Engine (from the menu bar: **Edit->Plugins**). In the plugin configuration window and type "trueSKY" into the search box to find the plugin; check the "Enabled" box to enable it.
 

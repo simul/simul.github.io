@@ -9,6 +9,7 @@ class BaseProfilingInterface
 | Include: | Base/ProfilingInterface.h |
 
 A virtual interface base class for classes that can profile for performance.
+  
 
 
 Functions
@@ -31,25 +32,15 @@ Functions
 Gets the profiling report as text.
 
 
-**st** Determines if the text should be returned as HTML, including colour formatting.
-
-
-**return:** null if it fails, else the debug text.
-
 ### <a name="GetEvent"/>simul::base::ProfileData  const * GetEvent(simul::base::ProfileData, int)
-Get profile data for the event at index i. Returns NULL for i<0 or i>= number of events.
-
 Get profile data for the event at index i. Returns NULL for i<0 or i>= number of events.
 Null parent means the top-level events.
 
 ### <a name="GetMaxLevel"/>int GetMaxLevel()
 Call this to get the maximum level of the profiling tree.
-Call this to get the maximum level of the profiling tree.
 
 ### <a name="SetMaxLevel"/>void SetMaxLevel(int m)
 Call this to set the maximum level of the profiling tree.
-Call this to set the maximum level of the profiling tree.
 
 ### <a name="StartFrame"/>void StartFrame()
-Call this at the start of the frame to reset values.
 Call this at the start of the frame to reset values.

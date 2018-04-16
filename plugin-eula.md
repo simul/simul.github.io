@@ -1,5 +1,5 @@
 ---
-title: Indie Plugin User Licence Agremeent
+title: Indie Plugin User Licence Agreement
 layout: reference
 weight: 110
 ---
