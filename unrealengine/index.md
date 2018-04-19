@@ -7,6 +7,15 @@ weight : 1250
 trueSKY for Unreal Engine 4
 ================
 
+Before you begin
+----------------
+Please first ensure that trueSKY supports the platforms and API's that you need.
+
+| x64 (D3D11) | x64 (D3D12) |  x64 (Vulkan) | x64 (OpenGL) |PS4 | Xbox One (D3D11) | x64 (D3D12) | Switch       |      OSX     |
+--------------------------------------------------------------------------------------------------------------------------------
+|      ✓      |      ✓     |       x       |       x      | ✓  |    ✓           |    ✓        |    ✓           |      x      |
+
+
 Getting started
 --------------
 
