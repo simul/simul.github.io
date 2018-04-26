@@ -6,7 +6,7 @@ weight: 0
 struct DeviceContext
 ===
 
-| Include: | Clouds/BaseCloudRenderer.h |
+| Include: | Clouds/BaseLightningRenderer.h |
 
 The base class for Device contexts. The actual context pointer is only applicable in DirectX - in OpenGL, it will be null.
 The DeviceContext also carries a pointer to the platform-specific RenderPlatform.

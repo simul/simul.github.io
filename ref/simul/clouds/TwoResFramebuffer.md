@@ -6,7 +6,7 @@ weight: 0
 class TwoResFramebuffer
 ===
 
-| Include: | Clouds/BaseCloudRenderer.h |
+| Include: | Clouds/BaseWeatherRenderer.h |
 
 A framebuffer class for mixed-resolution rendering.
   

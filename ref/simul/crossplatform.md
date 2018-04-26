@@ -6,7 +6,7 @@ weight: 0
 namespace crossplatform
 ===
 
-| Include: | Clouds/Base2DCloudRenderer.h |
+| Include: | Clouds/BaseGpuCloudGenerator.h |
 
 The namespace and library for cross-platform base classes, which abstract rendering functionality.
   

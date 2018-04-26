@@ -6,7 +6,7 @@ weight: 0
 class Effect
 ===
 
-| Include: | Clouds/BaseCloudRenderer.h |
+| Include: | Clouds/BaseLightningRenderer.h |
 
 The cross-platform base class for shader effects.
   

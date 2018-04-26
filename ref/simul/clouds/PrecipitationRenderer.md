@@ -1,12 +1,12 @@
 ---
-title: BasePrecipitationRenderer
+title: PrecipitationRenderer
 layout: reference
 weight: 0
 ---
-class BasePrecipitationRenderer
+class PrecipitationRenderer
 ===
 
-| Include: | Clouds/BasePrecipitationRenderer.h |
+| Include: | Clouds/BaseWeatherRenderer.h |
 
 The class that renders rain and snow.
   

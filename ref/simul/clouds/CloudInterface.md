@@ -6,7 +6,7 @@ weight: 0
 class CloudInterface
 ===
 
-| Include: | Clouds/BaseCloudRenderer.h |
+| Include: | Clouds/CloudInterface.h |
 
 The virtual interface for controlling and reading cloud data.
   

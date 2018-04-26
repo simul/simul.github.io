@@ -6,7 +6,7 @@ weight: 0
 class Buffer
 ===
 
-| Include: | Clouds/Base2DCloudRenderer.h |
+| Include: | Clouds/BaseLightningRenderer.h |
 
 
 

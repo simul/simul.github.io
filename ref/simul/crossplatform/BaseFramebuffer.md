@@ -16,8 +16,6 @@ Functions
 ---
 
 | void | [Activate](#Activate)(simul::crossplatform::DeviceContext) |
-| void | [ActivateColour](#ActivateColour)(simul::crossplatform::DeviceContext, viewportXYWH) |
-| void | [ActivateViewport](#ActivateViewport)(simul::crossplatform::DeviceContext, float viewportX, float viewportY, float viewportW, float viewportH) |
 | void | [Clear](#Clear)(simul::crossplatform::DeviceContext context, float R, float G, float B, float A, float depth, int mask) |
 | void | [ClearColour](#ClearColour)(simul::crossplatform::DeviceContext context, float, float, float, float) |
 | bool | [CreateBuffers](#CreateBuffers)() |
@@ -47,12 +45,6 @@ Functions
 
 ### <a name="Activate"/>void Activate(simul::crossplatform::DeviceContext)
 Activate the framebuffer - must be followed after rendering by a call to Deactivate().
-
-### <a name="ActivateColour"/>void ActivateColour(simul::crossplatform::DeviceContext, viewportXYWH)
-Activate the colour part of this framebuffer, without depth - must be followed after rendering by a call to Deactivate().
-
-### <a name="ActivateViewport"/>void ActivateViewport(simul::crossplatform::DeviceContext, float viewportX, float viewportY, float viewportW, float viewportH)
-Activate the framebuffer and set the viewport- must be followed after rendering by a call to Deactivate().
 
 ### <a name="Clear"/>void Clear(simul::crossplatform::DeviceContext context, float R, float G, float B, float A, float depth, int mask)
 Clear the colour and depth buffers if present.

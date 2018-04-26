@@ -6,7 +6,7 @@ weight: 0
 namespace clouds
 ===
 
-| Include: | Clouds/Base2DCloudRenderer.h |
+| Include: | Clouds/BaseGpuCloudGenerator.h |
 
 The namespace corresponding to the Clouds module.<br>
 
@@ -14,10 +14,8 @@ The namespace corresponding to the Clouds module.<br>
 Classes and Structures
 ---
 
-| class [BaseCloudRenderer](clouds/BaseCloudRenderer) | Class for real-time volumetric cloud rendering.<br> |
 | class [BaseGpuCloudGenerator](clouds/BaseGpuCloudGenerator) |  |
 | class [BaseLightningRenderer](clouds/BaseLightningRenderer) |  |
-| class [BasePrecipitationRenderer](clouds/BasePrecipitationRenderer) |  |
 | class [BaseWeatherRenderer](clouds/BaseWeatherRenderer) |  |
 | class [CellularCloudGrid](clouds/CellularCloudGrid) |  |
 | class [CellularCloudNode](clouds/CellularCloudNode) |  |
@@ -27,6 +25,7 @@ Classes and Structures
 | struct [CloudKeyframe](clouds/CloudKeyframe) |  |
 | class [CloudKeyframer](clouds/CloudKeyframer) |  |
 | class [CloudProperties](clouds/CloudProperties) |  |
+| class [CloudRenderer](clouds/CloudRenderer) | Class for real-time volumetric cloud rendering.<br> |
 | struct [CloudRenderingOptions](clouds/CloudRenderingOptions) | This controls the rendering of clouds.<br> |
 | struct [CloudVolume](clouds/CloudVolume) |  |
 | struct [DepthTextureStruct](clouds/DepthTextureStruct) |  |
@@ -36,6 +35,7 @@ Classes and Structures
 | class [MixedResolutionCompositor](clouds/MixedResolutionCompositor) |  |
 | struct [PointSource](clouds/PointSource) |  |
 | struct [PrecipitationRegion](clouds/PrecipitationRegion) |  |
+| class [PrecipitationRenderer](clouds/PrecipitationRenderer) |  |
 | struct [SelectionIdentifier](clouds/SelectionIdentifier) |  |
 | class [Skylight](clouds/Skylight) |  |
 | class [TimedNoise3D](clouds/TimedNoise3D) |  |

@@ -28,14 +28,14 @@ Functions
 | void | [CreateSubObjects](#CreateSubObjects)() |
 | void | [Destroy](#Destroy)(simul::clouds::BaseWeatherRenderer baseWeatherRenderer) |
 | simul::sky::float4  const & | [GetAmbientLightColour](#GetAmbientLightColour)(float view_altitude_km) |
-| simul::clouds::BaseCloudRenderer * | [GetBaseCloudRenderer](#GetBaseCloudRenderer)() |
-| simul::clouds::BasePrecipitationRenderer * | [GetBasePrecipitationRenderer](#GetBasePrecipitationRenderer)() |
+| simul::sky::BaseAtmosphericsRenderer * | [GetBaseAtmosphericsRenderer](#GetBaseAtmosphericsRenderer)() |
+| simul::clouds::CloudRenderer * | [GetBaseCloudRenderer](#GetBaseCloudRenderer)() |
 | simul::sky::BaseSkyRenderer * | [GetBaseSkyRenderer](#GetBaseSkyRenderer)() |
-| simul::clouds::Base2DCloudRenderer * | [GetCloud2DRenderer](#GetCloud2DRenderer)() |
 | int | [GetExportLightningStrikes](#GetExportLightningStrikes)(simul::clouds::ExportLightningStrike export_strikes, int max_s, float game_time, float real_time) |
 | simul::sky::float4  const & | [GetHorizonColour](#GetHorizonColour)(float view_altitude_km) |
 | simul::sky::float4  const & | [GetLightColour](#GetLightColour)(float view_altitude_km) |
 | simul::clouds::BaseLightningRenderer * | [GetLightningRenderer](#GetLightningRenderer)() |
+| simul::clouds::PrecipitationRenderer * | [GetPrecipitationRenderer](#GetPrecipitationRenderer)() |
 | simul::sky::SkyKeyframer * | [GetSkyKeyframer](#GetSkyKeyframer)() |
 | simul::clouds::TransparencyAtmospherics | [GetTransparencyAtmospherics](#GetTransparencyAtmospherics)(simul::crossplatform::ViewStruct viewStruct) |
 | void | [InvalidateDeviceObjects](#InvalidateDeviceObjects)() |
@@ -46,7 +46,6 @@ Functions
 | void | [Render](#Render)(simul::crossplatform::DeviceContext deviceContext, simul::clouds::TrueSkyRenderMode renderMode, float exposure, float gamma, simul::crossplatform::Texture mainDepthTexture, simul::crossplatform::Texture cubemapTexture, simul::crossplatform::Viewport depthViewport, simul::crossplatform::Viewport viewports, vec3 cubemap_ground_colour) |
 | void | [RenderCelestialBackground](#RenderCelestialBackground)(simul::crossplatform::DeviceContext deviceContext, simul::clouds::TrueSkyRenderMode renderMode, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float exposure) |
 | bool | [RenderMixedResolution](#RenderMixedResolution)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture depthTexture, simul::clouds::TrueSkyRenderMode renderMode, float exposure, float gamma, vec4 depthViewportXYWH, simul::crossplatform::Texture ambientCubemapTexture) |
-| void | [RenderOverlays](#RenderOverlays)(simul::crossplatform::DeviceContext deviceContext, int view_id) |
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform renderPlatform) |
 | void | [SetAllDownscale](#SetAllDownscale)(float) |
 | void | [SetBlurTexture](#SetBlurTexture)(simul::crossplatform::Texture t) |
@@ -86,17 +85,14 @@ Destroy a base weather renderer.
 
 ### <a name="GetAmbientLightColour"/>simul::sky::float4  const & GetAmbientLightColour(float view_altitude_km)
 
-### <a name="GetBaseCloudRenderer"/>simul::clouds::BaseCloudRenderer * GetBaseCloudRenderer()
-Get a pointer to the cloud renderer.
+### <a name="GetBaseAtmosphericsRenderer"/>simul::sky::BaseAtmosphericsRenderer * GetBaseAtmosphericsRenderer()
+Get a pointer to the atmospheric renderer.
 
-### <a name="GetBasePrecipitationRenderer"/>simul::clouds::BasePrecipitationRenderer * GetBasePrecipitationRenderer()
-Get a pointer to the rain/snow renderer.
+### <a name="GetBaseCloudRenderer"/>simul::clouds::CloudRenderer * GetBaseCloudRenderer()
+Get a pointer to the cloud renderer.
 
 ### <a name="GetBaseSkyRenderer"/>simul::sky::BaseSkyRenderer * GetBaseSkyRenderer()
 Get a pointer to the sky renderer.
-
-### <a name="GetCloud2DRenderer"/>simul::clouds::Base2DCloudRenderer * GetCloud2DRenderer()
-Get a pointer to the 2D (high-altitude/Cirrus) cloud renderer, or NULL if none is present.
 
 ### <a name="GetExportLightningStrikes"/>int GetExportLightningStrikes(simul::clouds::ExportLightningStrike export_strikes, int max_s, float game_time, float real_time)
 Get lightning strikes. This calls GetExportLightningStrikes in CloudKeyframer, but also includes
@@ -110,6 +106,9 @@ Set a depth texture, whose alpha values represent the depth co-ordinate. This wi
 
 ### <a name="GetLightningRenderer"/>simul::clouds::BaseLightningRenderer * GetLightningRenderer()
 Get a pointer to the lightning renderer.
+
+### <a name="GetPrecipitationRenderer"/>simul::clouds::PrecipitationRenderer * GetPrecipitationRenderer()
+Get a pointer to the rain/snow renderer.
 
 ### <a name="GetSkyKeyframer"/>simul::sky::SkyKeyframer * GetSkyKeyframer()
 Convenience function to get the next sky keyframe that can be modified without any recalculation.
@@ -141,9 +140,6 @@ Render the sky including atmospherics, into the current rendertarget, using a su
 Draw the sun, moon and stars - call this while the depth buffer is bound.
 
 ### <a name="RenderMixedResolution"/>bool RenderMixedResolution(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture depthTexture, simul::clouds::TrueSkyRenderMode renderMode, float exposure, float gamma, vec4 depthViewportXYWH, simul::crossplatform::Texture ambientCubemapTexture)
-
-### <a name="RenderOverlays"/>void RenderOverlays(simul::crossplatform::DeviceContext deviceContext, int view_id)
-Draw the debug overlays.
 
 ### <a name="RestoreDeviceObjects"/>void RestoreDeviceObjects(simul::crossplatform::RenderPlatform renderPlatform)
 Initialize the  API-dependent objects in the weather renderer and its member renderers. This is usually needed

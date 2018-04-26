@@ -6,7 +6,7 @@ weight: 0
 class CloudKeyframer
 ===
 
-| Include: | Clouds/Base2DCloudRenderer.h |
+| Include: | Clouds/BaseWeatherRenderer.h |
 
 
 A class to manage interpolation between cloud states over time.

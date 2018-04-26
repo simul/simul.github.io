@@ -1,12 +1,12 @@
 ---
-title: BaseCloudRenderer
+title: CloudRenderer
 layout: reference
 weight: 0
 ---
-class BaseCloudRenderer
+class CloudRenderer
 ===
 
-| Include: | Clouds/BaseCloudRenderer.h |
+| Include: | Clouds/BaseWeatherRenderer.h |
 
 Class for real-time volumetric cloud rendering.<br>
 
@@ -14,7 +14,7 @@ Class for real-time volumetric cloud rendering.<br>
 Functions
 ---
 
-|  | [BaseCloudRenderer](#BaseCloudRenderer)(simul::clouds::Environment e, simul::base::MemoryInterface mem) |
+|  | [CloudRenderer](#CloudRenderer)(simul::clouds::Environment e, simul::base::MemoryInterface mem) |
 | void | [EnsureEffectsAreBuilt](#EnsureEffectsAreBuilt)(simul::crossplatform::RenderPlatform renderPlatform) |
 | simul::clouds::CloudGeometryHelper * | [GetCloudGeometryHelper](#GetCloudGeometryHelper)(int view_id) |
 | float  const * | [GetCloudOffset](#GetCloudOffset)() |
@@ -52,7 +52,7 @@ should be represented by a double-precision quaternion, which represents the rot
 
 The Volume Window is a deformed cuboid, its upper and lower surfaces matching the Earth's curvature. On the GPU, it is a 3D texture.
 
-This trueSKY space moves in steps equivalent to one horizontal texel. The function BaseCloudRenderer::MoveCloudWindow(x,y) does this.
+This trueSKY space moves in steps equivalent to one horizontal texel. The function CloudRenderer::MoveCloudWindow(x,y) does this.
 This should be done when the chosen viewpoint (this is up to you) moves more than a texel in any horizontal direction. This way, we need only update the edges as the window moves.
   
 
@@ -60,7 +60,7 @@ This should be done when the chosen viewpoint (this is up to you) moves more tha
 Functions
 ---
 
-### <a name="BaseCloudRenderer"/> BaseCloudRenderer(simul::clouds::Environment e, simul::base::MemoryInterface mem)
+### <a name="CloudRenderer"/> CloudRenderer(simul::clouds::Environment e, simul::base::MemoryInterface mem)
 Constructor: An external keyframer is provided, and an optional memory manager.
 
 ### <a name="EnsureEffectsAreBuilt"/>void EnsureEffectsAreBuilt(simul::crossplatform::RenderPlatform renderPlatform)

@@ -6,7 +6,7 @@ weight: 0
 class Texture
 ===
 
-| Include: | Clouds/BaseCloudRenderer.h |
+| Include: | Clouds/BaseGpuCloudGenerator.h |
 
 A Texture base class.
   

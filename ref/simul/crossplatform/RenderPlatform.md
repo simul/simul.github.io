@@ -6,7 +6,7 @@ weight: 0
 class RenderPlatform
 ===
 
-| Include: | Clouds/BaseCloudRenderer.h |
+| Include: | Clouds/BaseGpuCloudGenerator.h |
 
 RenderPlatform is an interface that allows Simul's rendering functions to be developed
 in a cross-platform manner. By abstracting the common functionality of the different graphics API's
@@ -51,6 +51,7 @@ Functions
 | void | [EndEvent](#EndEvent)(simul::crossplatform::DeviceContext) |
 | void | [EnsureEffectIsBuilt](#EnsureEffectIsBuilt)(char filename_utf8, std::vector options) |
 | simul::crossplatform::Shader * | [EnsureShader](#EnsureShader)(char filenameUtf8, simul::crossplatform::ShaderType t) |
+| void | [GenerateMips](#GenerateMips)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture t, bool wrap, int array_idx) |
 | simul::crossplatform::ContextState * | [GetContextState](#GetContextState)(simul::crossplatform::DeviceContext deviceContext) |
 | simul::crossplatform::Effect * | [GetEffect](#GetEffect)(char name_utf8) |
 | simul::crossplatform::DeviceContext  & | [GetImmediateContext](#GetImmediateContext)() |
@@ -185,6 +186,9 @@ For platforms that support named events, e.g. PIX in DirectX. Use BeginEvent(), 
 
 ### <a name="EnsureShader"/>simul::crossplatform::Shader * EnsureShader(char filenameUtf8, simul::crossplatform::ShaderType t)
 Get or create an API-specific shader object.
+
+### <a name="GenerateMips"/>void GenerateMips(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture t, bool wrap, int array_idx)
+Fill in mipmaps from the zero level down.
 
 ### <a name="GetContextState"/>simul::crossplatform::ContextState * GetContextState(simul::crossplatform::DeviceContext deviceContext)
 Get the current state to be applied to the given context at the next draw or dispatch.
