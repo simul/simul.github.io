@@ -45,6 +45,7 @@ Classes and Structures
 | class [RenderDelegater](crossplatform/RenderDelegater) |  |
 | class [RenderPlatform](crossplatform/RenderPlatform) |  |
 | struct [RenderStateDesc](crossplatform/RenderStateDesc) |  |
+| struct [ShaderResource](crossplatform/ShaderResource) |  |
 | class [SphericalHarmonics](crossplatform/SphericalHarmonics) |  |
 | class [Texture](crossplatform/Texture) |  |
 | class [TextureView](crossplatform/TextureView) |  |

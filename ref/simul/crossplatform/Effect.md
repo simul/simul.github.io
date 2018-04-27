@@ -22,7 +22,7 @@ Functions
 | simul::crossplatform::SamplerStateAssignmentMap  & | [GetSamplers](#GetSamplers)() |
 | void | [Reapply](#Reapply)(simul::crossplatform::DeviceContext deviceContext) |
 | void | [SetConstantBuffer](#SetConstantBuffer)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::ConstantBufferBase s) |
-| void | [SetSamplerState](#SetSamplerState)(simul::crossplatform::DeviceContext deviceContext, char name, simul::crossplatform::SamplerState s) |
+| void | [SetSamplerState](#SetSamplerState)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::ShaderResource name, simul::crossplatform::SamplerState s) |
 | void | [SetTexture](#SetTexture)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::ShaderResource name, simul::crossplatform::Texture tex, int array_idx, int mip) |
 | void | [SetTexture](#SetTexture)(simul::crossplatform::DeviceContext deviceContext, char name, simul::crossplatform::Texture tex, int array_idx, int mip) |
 | void | [SetUnorderedAccessView](#SetUnorderedAccessView)(simul::crossplatform::DeviceContext deviceContext, char name, simul::crossplatform::Texture tex, int index, int mip) |
@@ -58,7 +58,7 @@ Call Reapply between Apply and Unapply to apply the effect of modified constant 
 ### <a name="SetConstantBuffer"/>void SetConstantBuffer(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::ConstantBufferBase s)
 Set a constant buffer for this effect.
 
-### <a name="SetSamplerState"/>void SetSamplerState(simul::crossplatform::DeviceContext deviceContext, char name, simul::crossplatform::SamplerState s)
+### <a name="SetSamplerState"/>void SetSamplerState(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::ShaderResource name, simul::crossplatform::SamplerState s)
 Set the texture for this effect.
 
 ### <a name="SetTexture"/>void SetTexture(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::ShaderResource name, simul::crossplatform::Texture tex, int array_idx, int mip)
