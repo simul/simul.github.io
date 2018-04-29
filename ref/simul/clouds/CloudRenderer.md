@@ -17,7 +17,6 @@ Functions
 |  | [CloudRenderer](#CloudRenderer)(simul::clouds::Environment e, simul::base::MemoryInterface mem) |
 | void | [EnsureEffectsAreBuilt](#EnsureEffectsAreBuilt)(simul::crossplatform::RenderPlatform renderPlatform) |
 | simul::clouds::CloudGeometryHelper * | [GetCloudGeometryHelper](#GetCloudGeometryHelper)(int view_id) |
-| float  const * | [GetCloudOffset](#GetCloudOffset)() |
 | simul::clouds::CloudRenderingOptions  & | [GetCloudRenderingOptions](#GetCloudRenderingOptions)() |
 | float  const * | [GetCloudScales](#GetCloudScales)() |
 | char  const * | [GetDebugText](#GetDebugText)() |
@@ -68,9 +67,6 @@ If possible, build all shader effect variations.
 
 ### <a name="GetCloudGeometryHelper"/>simul::clouds::CloudGeometryHelper * GetCloudGeometryHelper(int view_id)
 Returns a new geometry helper.
-
-### <a name="GetCloudOffset"/>float  const * GetCloudOffset()
-Get the xyz offset of the clouds (only xy are usually relevant).
 
 ### <a name="GetCloudRenderingOptions"/>simul::clouds::CloudRenderingOptions  & GetCloudRenderingOptions()
 

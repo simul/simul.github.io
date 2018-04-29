@@ -30,7 +30,7 @@ Fields
 
 **MediumDetailProportion**  < For cloud volume update rate.
 
-**GridOriginKm**  < For medium cloud volume update rate.
+**DirectLight**  < For medium cloud volume update rate.
 
 **IndirectLight**  < The amount of direct light to be used for rendering.
 
