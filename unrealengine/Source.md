@@ -15,10 +15,10 @@ weight : 3
 	* Run `GenerateProjectFiles.bat` from the UE4 root directory; this will generate projects and the solution file (`UE4.sln`).
 
 * The trueSKY binary libraries are *not* kept in the repository. This is because multiple trueSKY versions can work with the same Unreal version.
-	* So run the batch file `Engine/Plugins/TrueSkyPlugin/GetBinaries.bat`, passing the required trueSKY version as a parameter, such as: `GetBinaries.bat 4.1`
-	* This will auto-extract (upon your permission) trueSKY binaries (DLLs/LIBs) into: `[UE4]\Engine\Binaries\ThirdParty\Simul`
-		* Binaries are then put into their platform-respective paths.
-	* `GetBinaries.bat` will *also* download and extract the necessary trueSKY shader files (FXOs) into your TrueSkyPlugin directory under the `shaderbin` subfolder (these are also separated based on platform).
+	* So either:
+		* run the batch file `Engine/Plugins/TrueSkyPlugin/GetBinaries.bat`, passing the required trueSKY version as a parameter, such as: `GetBinaries.bat 4.2`.
+		* or go to [simul.co/downloads](https://simul.co/downloads) and get the appropriate TrueSkyUE4Binaries installer. When you run this, you must choose your Unreal Engine install directory from the prompts.
+	* In both cases this will auto-extract (upon your permission) trueSKY binaries (DLLs/LIBs) into: `[UE4]\Engine\Binaries\ThirdParty\Simul`. Binaries are then put into their platform-respective paths, while the trueSKY shader files will go into your TrueSkyPlugin directory under the `shaderbin` subfolder (these are also separated based on platform).
 
 * Use UE4.sln (UE4.vcxproj).
 	* The UE4 project contains the "TrueSkyPlugin" folder in Engine/UE4/Plugins (whether you installed via the installer or downloaded the source from GitHub).
