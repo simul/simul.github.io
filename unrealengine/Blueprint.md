@@ -27,18 +27,6 @@ For additional information on the time of day's role in the trueSKY simulation, 
 
 NOTE: It's also important to ensure that, even if you just set the time value initially, that you update your directional light using the following method:
 
-### Directional Lights
-To set the direction and colour of a Directional Light, find the `UpdateLight` function from the trueSKY function category, and connect a reference to the DirectionalLight to the input. Make sure that the "Exec" input is hit once per frame by a tick event. If you're driving your scene lighting through a DirectionalLightComponent instead of a directional light actor, you can alternatively use `UpdateLightComponent`. The combination of the time of day update as well as the subsequent light update can be seen here:
-
-[![alt text](https://docs.simul.co/unrealengine/images/truesky_ue4_blueprint_tick.png "Blueprint snippet for updating the Time of Day as well as the atmospheric light.")](https://docs.simul.co/unrealengine/images/truesky_ue4_blueprint_tick.png)
-
-This function should be called whenever you update your time of day value, as the light will need to be updated as a result of the change.
-
-* **NOTE**: This method of driving the trueSKY scene directional lights has changed in recent releases of trueSKY. As a result, only one directional light is needed in the scene at any time, rather than a separate light for the sun and the moon.
-* **NOTE (Part Two)**: This function has 3 frames of latency, so do not call it in a construction script - it should be called once per frame.
-
-Additionally, the directional light provides appropriately-colored lighting based on your true sky sequence settings. These values can sometimes be stronger than you may have originally intended. As such, one of the macros is included in the macro library that will be coming with a future version of the trueSKY plugin will provide a simple solution for altering the color intensity as-necessary based on the needs of your scenes.
-
 ### Cloud Shadows
 Connect the CloudShadow asset in the TrueSky folder to "Cloud Shadow RT" on your trueSKY Sequence Actor, and connect the M_LightFunction asset to "Light Function Material" on your Directional Light. Now the clouds will cast shadows correctly.
 
@@ -53,15 +41,6 @@ If you do not have a PointLight actor, you can use SetPointLightSource to indivi
 For ambient lighting, add a TrueSkyLight actor to your scene. The TrueSkyLight is very similar in functionality to the standard UE4 sky light, so it brings those same other features that the UE4 skylight provides (ie, distance field ambient occlusion and such).
 
 As such, the TrueSkyLight replaces the standard ASkyLight/USkyLightComponent and automatically updates ambient lighting based on the settings that you have set (such as spreading changes in the sky light over `x` number of frames).
-
-### Utility Macros
-We have a few macros in the `TrueSkyMacroLibrary` to streamline this process for blueprint users. They're fairly simple, but they should help to clean up blueprints and make the entire process a bit quicker for everyone.  The included macros are:
-* `UpdateTimeOfDay` -- Will handle the Time of Day update, set the time on the sequence actor, and return the updated time of day value.
-* `UpdateAtmosphereLight` -- This will take in a `DirectionalLight` (actor) and update it based on the passed-in `TrueSkySequenceActor`. Returns whether or not it succeeded.
-* `UpdateAtmosphereLightComponent` -- This will take in a `DirectionalLightCompontent` and update it based on the passed-in `TrueSkySequenceActor`. Returns whether or not it succeeded.
-* `UpdateSequence` -- This macro combines the time of day update as well as the light update. It has an input node for both a `DirectionalLight` and a `DirectionalLightComponent` (since it's a macro, it doesn't handle casting a general `Object` type well); only one of the two need to be passed in to update the lighting. The macro returns both the updated time of day value as well as whether or not the light update succeeded. Image below:
-
-![alt text](https://docs.simul.co/unrealengine/images/truesky_ue4_macro_updatesequence.png "Macro function for updating a sequence's time of day and lighting data.")
 
 ### Cloud Shadows
 The shadows of clouds can be applied to your directional light object using the M_LightFunction in the Content/TrueSky directory of your project. If you modify this function, make a copy of it with a different name, otherwise it will be overwritten when the plugin next starts (this applies to all the content in the TrueSky folder).
