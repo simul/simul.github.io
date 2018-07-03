@@ -56,7 +56,7 @@ To enter your licence key into Unity, follow the instructions below:
 4. Click 'show sequencer'.
 5. A new window will appear. You will see 2 fields at the top of this window where you can enter your username and licence key.
 
-If the username and licence key are valid, trueSKY will be active on in Unity. If you are unable to validate a valid licence key, try clearnig the field before trying again.
+If the username and licence key are valid, trueSKY will be active on in Unity. If you are unable to validate a valid licence key, try clearing the field before trying again.
 
 
 Transparencies
