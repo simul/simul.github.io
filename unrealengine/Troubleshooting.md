@@ -45,7 +45,12 @@ Frequently Asked Questions and Common Problems
 <br>Ensure your license key has been entered at the top of the sequencer, and that it is valid.
 
 * **When I change sequences in blueprint, how do I make the transition smooth and imperceptible?**
-<br>Make sure that all layers in all sequences have Keyframe subdivision set to "Fixed intervals (real time)" and Update to "Gradual". To set how long it takes to transition between sequences, adjust the "Interval(s)" parameter to the desired amount of seconds.
+<br>Make sure that the Sequence Actor's Update option is set to "Real Time". To set how long it takes to transition between sequences, adjust the "Interval(s)" parameter to the desired amount of seconds.
+
+<br>In trueSKY 4.1, you should make sure that the 3D Clouds, 2D Clouds, and Sky properties are the same for all sequences.
+Then, with cloud keyframes, make sure that any property that has horizontal extension is the same: Cloud Volume Width, Noise Scale, Worley Scale.
+
+<br>So for example if your 2D cloud keyframes have width 1000.0 in one sequence, they should have 1000.0 in all sequences. It doesn't have to be exact, and some variation will be ok. But if there's more than about 10% change over a few seconds of transition time, you'll notice it resizing, and that will look wrong.
 
 
 **Weather Effects and Celestial Objects**
