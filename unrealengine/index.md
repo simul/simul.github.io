@@ -90,15 +90,13 @@ This will open up the True Sky Sequence Editor:
 * For real-time ambient lighting and reflections, replace the default SkyLight Actor with the TrueSkyLight (found in Modes -> All Classes). Simply drag it into the scene to use. 
 
 ### Multiple Sequence Actors and Transitions
-You can have any number of trueSKY Sequence Actors in your level, all with different Sequence Assets assigned. In the Editor, check the Actor's property "Active in Editor" to see its weather state in the 3D view. In-game, the active Actor is determined by bounds. By default, a Sequence Actor is unbounded – it is always active. You can create bounding by adding a Box Collision component to the Actor.
+TrueSKY supports three different modes of update. In Game-Time mode, it takes a specified amount of time in game hours. The weather won't change if game time does not. Fixed Intervals mode is similar, only there's a specific number of interpolated intervals between any two keyframes. You can use this mode to create more detailed transitions around sunrise/sunset for example.
 
-<a href="https://docs.simul.co/unrealengine/images/AddBounds.png"><img src="https://docs.simul.co/unrealengine/images/AddBounds.png" alt="Add Bounds"/></a>
+If you're using real-time transition, you can adjust the Interval in seconds to determine how quickly the change takes place.
 
-When this is done, the Actor will have limited bounds, and only affect the weather when the player is within the bounding box. You should have at most one unbounded trueSKY Sequence Actor in your level: this will apply when the player is not in the bounds of any other Sequence Actor.
+<a href="https://docs.simul.co/unrealengine/images/Interpolation.png"><img src="https://docs.simul.co/unrealengine/images/Interpolation.png" alt="Interpolation"/></a>
 
-To allow a smooth transition between weather states, you should adjust the Mode property of the Sky and Cloud Layers in all the Sequence Assets to allow a gradual transition between the different weather states. If you're using real-time transition (this is simplest), you can adjust the Interval in seconds (default 10.0) to determine how quickly the change takes place. Otherwise, use the Interval in days.
-
-<a href="https://docs.simul.co/unrealengine/images/GradualMode.png"><img src="https://docs.simul.co/unrealengine/images/GradualMode.png" alt="Gradual Mode"/></a>
+In all cases, the number of Subdivisions controls how finely the interpolation is performed. It's the number of intermediate steps between keyframes (for Fixed Intervales), or in the Game Time or Real Time period specified.
 
 Performance
 ---------
