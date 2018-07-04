@@ -44,6 +44,20 @@ As mentioned above, the wizard to add trueSKY to a scene is found in the GameObj
 General trueSKY properties are found by selecting the trueSKY object in the scene.
 Sequence properties are found by editing Sequence assets. 
 
+Activate licence
+--------------
+In order for trueSKY to work in Unity, you will need to enter your username and licence key. If you do not have a licence key, you can either sign up for a free trial or purchase a licence at www.simul.co.
+
+To enter your licence key into Unity, follow the instructions below:
+
+1. Load your project in Unity.
+2. In the 'Hierarchy' window, select 'truesky'.
+3. The inspector window will show an field for 'sequence asset'. Double click on the asset.
+4. Click 'show sequencer'.
+5. A new window will appear. You will see 2 fields at the top of this window where you can enter your username and licence key.
+
+If the username and licence key are valid, trueSKY will be active on in Unity. If you are unable to validate a valid licence key, try clearing the field before trying again.
+
 
 Transparencies
 -----------------------
