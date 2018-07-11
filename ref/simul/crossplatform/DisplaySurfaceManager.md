@@ -18,6 +18,7 @@ Functions
 ---
 
 | void | [AddWindow](#AddWindow)(cp_hwnd h) |
+| void | [EndFrame](#EndFrame)() |
 | void | [RemoveWindow](#RemoveWindow)(cp_hwnd h) |
 
 A class for multiple swap chains (i.e. rendering windows) to share the same device.
@@ -34,6 +35,8 @@ Functions
 
 ### <a name="AddWindow"/>void AddWindow(cp_hwnd h)
 Add a window. Creates a new Swap Chain.
+
+### <a name="EndFrame"/>void EndFrame()
 
 ### <a name="RemoveWindow"/>void RemoveWindow(cp_hwnd h)
 Removes the window and destroys its associated Swap Chain.
