@@ -20,7 +20,7 @@ Functions
 |  | [~PluginTrueSkyRenderer](#~PluginTrueSkyRenderer)() |
 | void | [CloudLineQuery](#CloudLineQuery)(int id, float startpos, float endpos, LineQueryResult res) |
 | void | [CloudSphereInteraction](#CloudSphereInteraction)(int id, float pos, float vel, float radius) |
-| void | [Get](#Get)(long long Enum, simul::plugin::Variant v) |
+| void | [Get](#Get)(long long Enum, simul::base::Variant v) |
 | bool | [GetBool](#GetBool)(char name) |
 | void | [GetCloudPointQuery](#GetCloudPointQuery)(int id, float pos, VolumeQueryResult res) |
 | long long | [GetEnum](#GetEnum)(char name) |
@@ -28,13 +28,13 @@ Functions
 | float | [GetFloat](#GetFloat)(char name) |
 | float | [GetFloatAtPosition](#GetFloatAtPosition)(simul::plugin::FloatAtPosition f, float pos, int uid) |
 | float | [GetFloatAtPosition](#GetFloatAtPosition)(char name, float pos) |
-| int | [GetInt](#GetInt)(char name, int numparams, simul::base::Variant32 params) |
+| int | [GetInt](#GetInt)(char name, int numparams, simul::base::Variant params) |
 | char  const * | [GetString](#GetString)(char name, int len) |
 | bool | [HasFloat](#HasFloat)(char name) |
 | bool | [HasInt](#HasInt)(char name) |
 | void | [LightingQuery](#LightingQuery)(int id, float pos, LightingQueryResult res) |
 | void | [ProcessQueries](#ProcessQueries)(int num, simul::plugin::Query queries) |
-| void | [Set](#Set)(long long Enum, simul::plugin::Variant v) |
+| void | [Set](#Set)(long long Enum, simul::base::Variant v) |
 | void | [SetBool](#SetBool)(char name, bool value) |
 | void | [SetCloudPlacementTexture](#SetCloudPlacementTexture)(int id, void texture, vec2 pos_km, vec2 ext_km) |
 | void | [SetFloat](#SetFloat)(char name, float value) |
@@ -69,7 +69,7 @@ Fill in a query structure based on cloud properties from startpos to endpos.
 ### <a name="CloudSphereInteraction"/>void CloudSphereInteraction(int id, float pos, float vel, float radius)
 update a sphere that will push clouds aside.
 
-### <a name="Get"/>void Get(long long Enum, simul::plugin::Variant v)
+### <a name="Get"/>void Get(long long Enum, simul::base::Variant v)
 Get a value corresponding to the given enum.
 
 ### <a name="GetBool"/>bool GetBool(char name)
@@ -93,7 +93,7 @@ Property at a given position.
 ### <a name="GetFloatAtPosition"/>float GetFloatAtPosition(char name, float pos)
 Property at a given position.
 
-### <a name="GetInt"/>int GetInt(char name, int numparams, simul::base::Variant32 params)
+### <a name="GetInt"/>int GetInt(char name, int numparams, simul::base::Variant params)
 Returns an integer value - see SetInt.
 
 ### <a name="GetString"/>char  const * GetString(char name, int len)
@@ -110,7 +110,7 @@ Fill in a structure with lighting values at the given position
 ### <a name="ProcessQueries"/>void ProcessQueries(int num, simul::plugin::Query queries)
 Called on the render thread, this will process queries from outside the plugin.
 
-### <a name="Set"/>void Set(long long Enum, simul::plugin::Variant v)
+### <a name="Set"/>void Set(long long Enum, simul::base::Variant v)
 Set the value corresponding to the given enum.
 
 ### <a name="SetBool"/>void SetBool(char name, bool value)

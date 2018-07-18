@@ -43,7 +43,7 @@ Functions
 | void | [PreRenderUpdate](#PreRenderUpdate)(simul::crossplatform::DeviceContext deviceContext, float real_time) |
 | void | [RecompileShaders](#RecompileShaders)() |
 | void | [RemoveView](#RemoveView)(int view_id) |
-| void | [Render](#Render)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct2, simul::clouds::TrueSkyRenderMode renderMode, float exposure, float gamma, simul::crossplatform::Texture mainDepthTexture, simul::crossplatform::Texture cubemapTexture, simul::crossplatform::Viewport depthViewport, simul::crossplatform::Viewport viewports, vec3 cubemap_ground_colour) |
+| void | [Render](#Render)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct2, simul::clouds::TrueSkyRenderMode renderMode, float exposure, float gamma, simul::crossplatform::Texture mainDepthTexture, simul::crossplatform::Texture cubemapTexture, simul::crossplatform::Viewport depthViewport, simul::crossplatform::Viewport viewports, vec3 cubemap_ground_colour, int amortization) |
 | void | [RenderCelestialBackground](#RenderCelestialBackground)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct, simul::clouds::TrueSkyRenderMode renderMode, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float exposure) |
 | bool | [RenderMixedResolution](#RenderMixedResolution)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct2, simul::crossplatform::Texture depthTexture, simul::clouds::TrueSkyRenderMode renderMode, float exposure, float gamma, simul::crossplatform::Viewport depthViewports, simul::crossplatform::Texture ambientCubemapTexture) |
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform renderPlatform) |
@@ -132,7 +132,7 @@ Platform-dependent function to reload the shaders - only use this for debug purp
 ### <a name="RemoveView"/>void RemoveView(int view_id)
 Ensure that per-view objects are destroyed for the view in question: they will be rebuilt if needed later.
 
-### <a name="Render"/>void Render(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct2, simul::clouds::TrueSkyRenderMode renderMode, float exposure, float gamma, simul::crossplatform::Texture mainDepthTexture, simul::crossplatform::Texture cubemapTexture, simul::crossplatform::Viewport depthViewport, simul::crossplatform::Viewport viewports, vec3 cubemap_ground_colour)
+### <a name="Render"/>void Render(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct2, simul::clouds::TrueSkyRenderMode renderMode, float exposure, float gamma, simul::crossplatform::Texture mainDepthTexture, simul::crossplatform::Texture cubemapTexture, simul::crossplatform::Viewport depthViewport, simul::crossplatform::Viewport viewports, vec3 cubemap_ground_colour, int amortization)
 Render the sky including atmospherics, into the current rendertarget, using a supplied depth texture.
 
 

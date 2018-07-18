@@ -16,8 +16,8 @@ Functions
 ---
 
 | void | [CleanupOldAllocations](#CleanupOldAllocations)(int max_age) |
-| bool | [CopySkylight](#CopySkylight)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture targetTexture, float targetShValues, int shOrder, mat4 engineToSimulMatrix4x4, int updateFrequency, float blend, float exposure, float gamma, vec3 ground_colour) |
-| void | [EnsureSkylight](#EnsureSkylight)(int cubemap_view_id, int size, int mips, simul::crossplatform::PixelFormat format, mat4 cubeToSimulMatrix, int shOrder, int updateFrequency, float blend, float exposure, float gamma, vec3 ground_colour) |
+| bool | [CopySkylight](#CopySkylight)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture targetTexture, float targetShValues, int shOrder, mat4 engineToSimulMatrix4x4, int updateFrequency, float blend, float exposure, float gamma, vec3 ground_colour, int amortization, bool allFaces, bool allMips) |
+| void | [EnsureSkylight](#EnsureSkylight)(int cubemap_view_id, int size, int mips, simul::crossplatform::PixelFormat format, mat4 cubeToSimulMatrix, int shOrder, int updateFrequency, float blend, float exposure, float gamma, vec3 ground_colour, int amortization, bool allFaces, bool allMips) |
 | bool | [ProbeSkylight](#ProbeSkylight)(simul::crossplatform::DeviceContext pContext, int cubemap_view_id, int mip_size, int face_index, uint2 pos, uint2 size, vec4 targetValuesFloat4) |
 | void | [SetAmortization](#SetAmortization)(int view_id, int a) |
 | void | [RenderMixedResolutionSky](#RenderMixedResolutionSky)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture depthTexture, simul::crossplatform::Viewport depthViewport, float exposure, float gamma, float brightnessToUnity) |
@@ -39,13 +39,13 @@ Functions
 ### <a name="CleanupOldAllocations"/>void CleanupOldAllocations(int max_age)
 Delete GPU allocations to save memory. By default, max age is MaxViewAgeFrames. max_age=0 clears all views.
 
-### <a name="CopySkylight"/>bool CopySkylight(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture targetTexture, float targetShValues, int shOrder, mat4 engineToSimulMatrix4x4, int updateFrequency, float blend, float exposure, float gamma, vec3 ground_colour)
+### <a name="CopySkylight"/>bool CopySkylight(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture targetTexture, float targetShValues, int shOrder, mat4 engineToSimulMatrix4x4, int updateFrequency, float blend, float exposure, float gamma, vec3 ground_colour, int amortization, bool allFaces, bool allMips)
 Update the specified texture as a cubemap, and its spherical harmonics.
 Copy the specified skylight into the target texture. This texture MUST be the same size, format and mip count as
 was specified for this cubemap id when GetSkylight was called.
 This function has latency depending on the platform.
 
-### <a name="EnsureSkylight"/>void EnsureSkylight(int cubemap_view_id, int size, int mips, simul::crossplatform::PixelFormat format, mat4 cubeToSimulMatrix, int shOrder, int updateFrequency, float blend, float exposure, float gamma, vec3 ground_colour)
+### <a name="EnsureSkylight"/>void EnsureSkylight(int cubemap_view_id, int size, int mips, simul::crossplatform::PixelFormat format, mat4 cubeToSimulMatrix, int shOrder, int updateFrequency, float blend, float exposure, float gamma, vec3 ground_colour, int amortization, bool allFaces, bool allMips)
 Create or update a skylight.
 
 ### <a name="ProbeSkylight"/>bool ProbeSkylight(simul::crossplatform::DeviceContext pContext, int cubemap_view_id, int mip_size, int face_index, uint2 pos, uint2 size, vec4 targetValuesFloat4)
