@@ -33,7 +33,10 @@ Frequently Asked Questions and Common Problems
 
 **Behaviour**
 
-* **On PS4 there is an apparent "trail" in the sky as the camera moves**
+* **Foreground objects show an apparent "trail" in the clouds behind them as they move**
+<br>Try increasing Cloud Depth Temporal Alpha, this makes the depth values used for cloud rendering update more quickly.
+
+* **On PS4 is an apparent "trail" in the sky as the camera moves**
 <br>The Unreal Engine screen clear is faulty in some versions: the Hardware Clear option does not work. To fix this, go to Project Settings -> Rendering -> Optimization and change "Clear Scene" to "Clear at Far Plane".
 
 **The Sequencer and Sequences**
