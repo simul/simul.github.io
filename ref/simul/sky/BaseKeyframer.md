@@ -23,8 +23,8 @@ Functions
 | int | [GetCurrentSubdivision](#GetCurrentSubdivision)() |
 | float | [GetDefaultFloat](#GetDefaultFloat)(char name) |
 | int | [GetDefaultInt](#GetDefaultInt)(char name) |
-| float | [GetFloat](#GetFloat)(char, simul::base::Variant32 params) |
-| int | [GetInt](#GetInt)(char, simul::base::Variant32 params) |
+| float | [GetFloat](#GetFloat)(char, simul::base::Variant params) |
+| int | [GetInt](#GetInt)(char, simul::base::Variant params) |
 | simul::sky::BaseKeyframe * | [GetKeyframe](#GetKeyframe)(int i) |
 | simul::sky::BaseKeyframe  const * | [GetKeyframe](#GetKeyframe)(int i) |
 | int | [GetKeyframeAtTime](#GetKeyframeAtTime)(double t) |
@@ -75,10 +75,10 @@ Return the default float value with the given, case-insensitive, name.
 ### <a name="GetDefaultInt"/>int GetDefaultInt(char name)
 Return the default int value with the given, case-insensitive, name.
 
-### <a name="GetFloat"/>float GetFloat(char, simul::base::Variant32 params)
+### <a name="GetFloat"/>float GetFloat(char, simul::base::Variant params)
 Text-based interface - returns the named value if it exists.
 
-### <a name="GetInt"/>int GetInt(char, simul::base::Variant32 params)
+### <a name="GetInt"/>int GetInt(char, simul::base::Variant params)
 Text-based interface - returns the named value if it exists.
 
 ### <a name="GetKeyframe"/>simul::sky::BaseKeyframe * GetKeyframe(int i)
