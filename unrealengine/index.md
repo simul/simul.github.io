@@ -79,7 +79,7 @@ To edit the TrueSkySequence asset just double-click on it:
 This will open up the True Sky Sequence Editor:
 
 ### Creating and Configuring a Sky Sequence
-* Enter your licence key in the Sequencer Window. This enables the window's editing functions.
+* Enter your licence key in the Sequencer Window. This enables the window's editing functions. The Sequencer will contact the Simul licence server, and if successful the Sequencer will print an "OK" message.
 
 * You can see changes to the properties (e.g. "preview") only if the edited asset is also assigned to the level's TrueSkySequenceActor. The trueSky plugin renderer uses only the asset which is referenced from that actor. If you are editing some other asset (which is not assigned to the TrueSky actor of the current level) then you won't see any visualization of it.
 
