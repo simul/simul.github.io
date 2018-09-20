@@ -94,6 +94,12 @@ And to update the skybox, call the trueSKY Blueprint function Render to Cubemap,
 
 The TrueSkyLightComponent input would be the component from your TrueSkyLight Actor in the scene. The resulting skybox will be sampled from the same position as the TrueSkyLight ambient lighting, which will also be resampled, along with all other standard TrueSKY updates, when Render To Cubemap is called.
 
+Debugging Overlays
+------------------
+<img src="https://docs.simul.co/unrealengine/images/PostProcessMaterial.png" alt="PostProcessMaterial.png"/>
+To show the trueSKY debugging overlays, assign the Render Target Texture TrueSkyOverlayRT (under TrueSkyPlugin/Overlay content) to the Overlay RT slot in the trueSKY Sequence Actor. The RT texture is then used with the PostProcessVolume: under Rendering Features, add a Post Process Material, and set it to the TrueSkyOverlay material reference.
+<img src="https://docs.simul.co/unrealengine/images/OverlayRT.png" alt="OverlayRT.png"/>
+
 Further Information
 --------------
  
