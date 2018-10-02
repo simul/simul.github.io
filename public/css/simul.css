@@ -34,8 +34,8 @@
 	margin-top: 0px;
 	position: fixed;
 	padding-left: 20px;
-	height: 60px;
-	background-color: white;
+	height: 90px;
+	background-color: #135d9c;
 	z-index: 1;
 	box-shader: 0 1px 3px rgba(0, 0, 0, 0.12);
 }
