@@ -27,7 +27,8 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-.banner-index {
+
+#banner-index {
 	background-color: #135d9c;
 }
 body {
