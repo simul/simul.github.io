@@ -1,6 +1,244 @@
-<section id="banner-index">
+<!-- <section id="banner-index">
 <img class="banner-image" src="https://docs.simul.co/images/SimulLogo.svg" alt="Simul">
 <div class="banner-search">
 {% include searchbar.html %}
 </div>
-</section>
+</section> -->
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Simul trueSKY documentation</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>ß
+
+<body>
+	<header>
+		<div class="navcontainer">
+			<img class="simullogo" src="images/simullogo.svg" href="https://simul.co" alt="Simul Software Logo">
+			<nav>
+				<a href="#" id="menu-icon"><i class="fa fa-bars"></i></a>
+				<ul class="navtext">
+					<li><a href="https://simul.co/truesky/">trueSKY</a></li>
+					<li><a href="https://simul.co/pricing/">Pricing</a></li>
+					<li><a href="https://simul.co/about-2/">About</a></li>
+					<li><a class="active" href="https://docs.simul.co">Documentation</a></li>
+					<li><a href="https://simul.co/blog/">Blog</a></li>
+					<li><a href="https://simul.staging.wpengine.com/careers/">Careers</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section>
+	</section>
+</body>
+<style type="text/css">
+/*RESET*/
+ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin:0;
+     padding:0;
+     border:0;
+     outline:0;
+     font-size:100%;
+     vertical-align:baseline;
+     background:transparent;
+}
+ body {
+    line-height: 1;
+}
+ol, ul{
+    list-style:none;
+}
+ blockquote, q{
+    quotes:none;
+}
+ blockquote:before, blockquote:after, q:before, q:after{
+    content:'';
+    content:none;
+}
+ :focus{
+    outline:0;
+}
+ ins{
+    text-decoration:none;
+}
+ del{
+    text-decoration:line-through;
+}
+ table{
+    border-collapse:collapse;
+     border-spacing:0;
+}
+/*MAIN*/
+ body {
+     font-size: 1.05em;
+     line-height: 1.25em;
+     font-family: Helvetica Neue, Helvetica, Arial;
+     background: #f9f9f9;
+     color: #555;
+}
+ a {
+     color: #ffffff;
+     text-decoration: none;
+     font-weight: bold;
+}
+ a:hover {
+     color: #444;
+}
+ header {
+     background: #135d9c;
+     width: 100%;
+     height: 90px;
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 100;
+}
+ #logo{
+     margin: 20px;
+     float: left;
+     width: 200px;
+     height: 40px;
+     background: url(../img/logo.png) no-repeat center;
+     display: block;
+}
+nav {
+    float: right;
+    padding: 35px 0px 0px 0px;
+}
+ #menu-icon {
+    width: 80px;
+    height: 55px;
+    background: #135d9c;
+}
+ a:hover#menu-icon {
+     background-color: #444;
+     border-radius: 4px 4px 0 0;
+}
+ ul {
+     list-style: none;
+}
+ li {
+     display: inline-block;
+     float: left;
+}
+ .current {
+     color: #2262AD;
+}
+ section {
+     margin: 80px auto 40px;
+     max-width: 980px;
+     position: relative;
+     padding: 20px 
+}
+ h1 {
+     font-size: 2em;
+     color: #2262AD;
+     line-height: 1.15em;
+     margin: 20px 0 ;
+}
+ p {
+     line-height: 1.45em;
+     margin-bottom: 20px;
+}
+
+img.simullogo {
+    width: 165px;
+    padding: 14px 0px 0px 10px;
+}
+ .navcontainer {
+ 		max-width: 1366px;
+ 		margin: auto;
+}
+.navtext a {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 36px 10px;
+    font-weight: 700;
+}
+.navtext li :hover {
+    background-color: #2196F3;
+}
+a.active {
+    background-color: #2196F3;
+}
+
+ @media only screen and (min-width : 740px) {
+.menu-icon {
+	display: none;
+}
+i.fa.fa-bars {
+    display: none;
+}
+}
+
+/*MEDIA QUERY*/
+ @media only screen and (max-width : 740px) {
+     header {
+         position: absolute;
+    }
+     #menu-icon {
+         display:inline-block;
+    }
+     nav ul, nav:active ul {
+    display: none;
+    position: absolute;
+    padding: 0px;
+    background: #3368b1;
+    border: 0;
+    right: 0px;
+    width: 100%;
+    top: 90px;
+    border-radius: 0;
+}
+     nav li {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+}
+     nav:hover ul {
+         display: block;
+    }
+    .navtext a {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 0;
+    font-weight: 700;
+}
+.navtext li:hover {
+    background-color: #4c81cb;
+}
+i.fa.fa-bars {
+    float: right;
+    padding: 36px 18px;
+}
+nav {
+    float: right;
+    padding: 0;
+}
+#menu-icon {
+    width: 80px;
+    height: 90px;
+    background: #135d9c00;
+}
+a:hover#menu-icon {
+    background-color: #4440;
+    border-radius: 4px 4px 0 0;
+}
+a.active {
+	background-color: #2196f300;
+}
+}
+/* Mobile media query ends */
+</style>
+</html>
