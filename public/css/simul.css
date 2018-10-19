@@ -1,36 +1,29 @@
-
 .custom-search {
-    min-height: 49px;
+	min-height: 49px;
 }
-
-@media (min-width: 800px)
-{
-	.banner-image
-	{
-		 height: 55px;
-		 width: 183.333px;
-		 line-height: 55px;
-		 margin-top: 5px;
-		padding-left:20px;
+@media (min-width: 800px) {
+	.banner-image {
+		height: 55px;
+		width: 183.333px;
+		line-height: 55px;
+		margin-top: 5px;
+		padding-left: 20px;
 	}
-
 	.banner-search {
-	     right: 0px;
-	    width: 512px;
-	    position: fixed;
-	    top: 0px;
+		right: 0px;
+		width: 512px;
+		position: fixed;
+		top: 0px;
 	}
-
 	.content {
-		top:120px;
-	  padding-top:    2rem;
+		top: 0px;
+		padding-top: 90px;
 	}
 }
-
 #banner-index {
 	width: 100%;
-	padding:0px;
-	top:0px;
+	padding: 0px;
+	top: 0px;
 	margin-top: 0px;
 	position: fixed;
 	padding-left: 20px;
@@ -39,16 +32,12 @@
 	z-index: 1;
 	box-shader: 0 1px 3px rgba(0, 0, 0, 0.12);
 }
-
-.sidebar
-{
-	top:90px;
+.sidebar {
+	top: 90px;
 }
-
 code, pre code {
-  font-size: 12px;
+	font-size: 12px;
 }
-
 h3 {
-	border-bottom:2px #eee solid;
+	border-bottom: 2px #eee solid;
 }
