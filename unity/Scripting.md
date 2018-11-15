@@ -68,7 +68,7 @@ Layer properties are those accessible in the sequencer by clicking on "Sky", "3D
 		}
 
 
-For information about the layer properties you can change and the name strings needed to do so, see the [Cloud](https://docs.simul.co/unity/Clouds.html) and [Sky](https://docs.simul.co/unity/Sky.html) pages.
+For information about the layer properties you can change and the name strings needed to do so, see the [Cloud](https://docs.simul.co/unity/clouds.html) and [Sky](https://docs.simul.co/unity/sky.html) pages.
 
 
 Sky and Cloud Keyframes
@@ -113,7 +113,7 @@ Once you know the Uid of a keyframe, you can then get the values of its properti
 		trueSky.SetKeyframeValue(uid, "cloudiness", 0.8);
 	}
 
-For information about the keyframe properties you can change and the name strings needed to do so, see the [Cloud](https://docs.simul.co/unity/Clouds.html) and [Sky](https://docs.simul.co/unity/Sky.html) pages.
+For information about the keyframe properties you can change and the name strings needed to do so, see the [Cloud](https://docs.simul.co/unity/clouds.html) and [Sky](https://docs.simul.co/unity/sky.html) pages.
 
 
 
@@ -174,8 +174,8 @@ Further Information
 --------------
  
 * [The Sequencer](https://docs.simul.co/sequencer.html)   
-* [The Clouds in trueSKY for Unity](https://docs.simul.co/unity/Clouds.html)
-* [The Sky in trueSKY for Unity](https://docs.simul.co/unity/Sky.html)
+* [The Clouds in trueSKY for Unity](https://docs.simul.co/unity/clouds.html)
+* [The Sky in trueSKY for Unity](https://docs.simul.co/unity/sky.html)
 * [Watch a video tutorial](https://www.youtube.com/watch?v=Eljf5CjZ4vc)
 
 

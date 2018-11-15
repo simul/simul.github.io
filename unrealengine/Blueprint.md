@@ -23,7 +23,7 @@ Ultimately, the entirety of your environment depends on what you choose for your
 
 You won't want to just take the `FrameDelta` and use it to modify the time of day. Days would go by in, *literally*, seconds. So, you'll want to modify that value by some scalar (what that is just depends on how long an in-game day should last in your context). Or maybe you don't want to alter the time of day at all, in which case you can just ignore the time of data value outside of setting its initial value.
 
-For additional information on the time of day's role in the trueSKY simulation, you can [view a more hands-on tutorial here](https://docs.simul.co/unrealengine/Tutorial.html).
+For additional information on the time of day's role in the trueSKY simulation, you can [view a more hands-on tutorial here](https://docs.simul.co/unrealengine/tutorial.html).
 
 NOTE: It's also important to ensure that, even if you just set the time value initially, that you update your directional light using the following method:
 
@@ -66,7 +66,7 @@ So the light appears to get brighter as day turns to night. You can get the same
 ### The Sky and Clouds 
 Both the sky and clouds can be accessed and edited in Blueprint.  
 
-Read more about [editing the sky here](https://docs.simul.co/unrealengine/Sky.html) and [editing the clouds here](https://docs.simul.co/unrealengine/Clouds.html).
+Read more about [editing the sky here](https://docs.simul.co/unrealengine/sky.html) and [editing the clouds here](https://docs.simul.co/unrealengine/clouds.html).
 
 
 ### Transparency
@@ -95,7 +95,7 @@ To set a layer property Blueprint, use the functions below. The following will n
 * `GetFloat (String Name):` Gets the specified float property for the prefixed layer.
 * `SetFloat (String Name, float Value):`  Sets the specified float property for the prefixed layer to the given value.
 
-For information about the layer properties you can change and the name strings needed to do so, see the [Cloud](https://docs.simul.co/unrealengine/Clouds.html) and [Sky](https://docs.simul.co/unrealengine/Sky.html) pages.
+For information about the layer properties you can change and the name strings needed to do so, see the [Cloud](https://docs.simul.co/unrealengine/clouds.html) and [Sky](https://docs.simul.co/unrealengine/sky.html) pages.
 
 
 ### Keyframe Properties
@@ -147,8 +147,8 @@ The outputs are in milliseconds.
 
 ### Further Information
 * [The Sequencer](https://docs.simul.co/sequencer.html)   
-* [The Clouds in trueSKY for UE4](https://docs.simul.co/unrealengine/Clouds.html)
-* [The Sky in trueSKY for UE4](https://docs.simul.co/unrealengine/Sky.html)
+* [The Clouds in trueSKY for UE4](https://docs.simul.co/unrealengine/clouds.html)
+* [The Sky in trueSKY for UE4](https://docs.simul.co/unrealengine/sky.html)
 * [Watch a video tutorial](https://www.youtube.com/watch?v=hE6qFzJgED4) 
 
 

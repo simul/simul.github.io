@@ -24,7 +24,7 @@ Getting started
 * After evaluating, to get an indie licence, you can buy or subscribe at [simul.co/account](https://simul.co/account). For all other licences, write to [contact@simul.co](mailto:contact@simul.co).
 
 # Installing the Plugin
-For binary installations of Unreal Engine, binary trueSKY plugin installers are available from [https://simul.co/download](https://simul.co/truesky/download). For other versions, or if you have a version of Unreal Engine built from source, you will need to build the plugin. [**For GitHub/Engine Source Integration, check this page**](https://docs.simul.co/unrealengine/Source.html).
+For binary installations of Unreal Engine, binary trueSKY plugin installers are available from [https://simul.co/download](https://simul.co/truesky/download). For other versions, or if you have a version of Unreal Engine built from source, you will need to build the plugin. [**For GitHub/Engine Source Integration, check this page**](https://docs.simul.co/unrealengine/source.html).
 
 **Important**
 The stock binary version of Unreal does not deploy trueSKY files when packaging a project. You will see a black sky unless you deploy these files. See [Deployment](/unrealengine/Deploy) for instructions.
@@ -114,9 +114,9 @@ trueSKY performance is highly dependent on your choice of settings. Once you hav
 Further Information
 ---------
 
-* [trueSKY Tutorial: Unreal Engine 4](https://docs.simul.co/unrealengine/Tutorial.html)
-* [trueSKY from GitHub (and UE4 Source Integration)](https://docs.simul.co/unrealengine/Source.html)
-* [trueSKY in Blueprint](https://docs.simul.co/unrealengine/Blueprint.html)
+* [trueSKY Tutorial: Unreal Engine 4](https://docs.simul.co/unrealengine/tutorial.html)
+* [trueSKY from GitHub (and UE4 Source Integration)](https://docs.simul.co/unrealengine/source.html)
+* [trueSKY in Blueprint](https://docs.simul.co/unrealengine/blueprint.html)
 * [The Sky Sequencer](https://docs.simul.co/sequencer.html)
 * [The trueSKY Renderer](https://docs.simul.co/reference/man_4_rendering.html)
 

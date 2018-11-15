@@ -135,9 +135,9 @@ Now, select all the Sky keyframes (box-select or double-click). Under "Sun and M
 Further Information
 ---------
 
-* [trueSKY Tutorial: Unity](https://docs.simul.co/unity/Tutorial.html)
+* [trueSKY Tutorial: Unity](https://docs.simul.co/unity/tutorial.html)
 * [The Sequencer](https://docs.simul.co/sequencer.html)
-* [Scripting in trueSKY for Unity](https://docs.simul.co/unity/Scripting.html)
+* [Scripting in trueSKY for Unity](https://docs.simul.co/unity/scripting.html)
 * [The trueSKY Renderer](https://docs.simul.co/reference/man_4_rendering.html)
 
 

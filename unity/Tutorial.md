@@ -18,7 +18,7 @@ If your scene is appearing upside down, then navigate to the camera and the True
 
 <a href="https://docs.simul.co/unity/images/RenderTexturesAssigned.png"><img src="https://docs.simul.co/unity/images/RenderTexturesAssigned.png" alt="Tutorial"/></a> 
 
-**Note:** Most settings in trueSKY can be manipulated using both the Sequencer and Unity scripting. This tutorial will uses a mixture of both to illustrate. You can [read more about the Sequencer here](https://docs.simul.co/sequencer.html) and [read more about scripting here](https://docs.simul.co/unity/Scripting.html).
+**Note:** Most settings in trueSKY can be manipulated using both the Sequencer and Unity scripting. This tutorial will uses a mixture of both to illustrate. You can [read more about the Sequencer here](https://docs.simul.co/sequencer.html) and [read more about scripting here](https://docs.simul.co/unity/scripting.html).
 
 
 Adding Clouds
@@ -28,7 +28,7 @@ Find your newly created sequence asset, or create a new one (right click->Create
 
 <a href="https://docs.simul.co/unity/images/SequencerClouds.png"><img src="https://docs.simul.co/unity/images/SequencerClouds.png" alt="Tutorial"/></a>  
 
-Select the keyframe and try experimenting with the values. You can also use the Presets on the left hand side of the sequencer to select predefined arrangements. Be sure to set the Wind Speed value to something greater than 0, if you wish to see the clouds move (once time is being progressed). To further enhance the scene, you can also add a keyframe for 2D clouds, by right clicking on the 2D Clouds area and creating a keyframe in the same manner as before. [Read more about both kinds of clouds here](https://docs.simul.co/unity/Clouds.html). In this example I have set the Wind Speed to 1, raised the cloudbase to 5.0 and increased cloudiness to 0.6. I have also added a 2D cloud keyframe with default settings. 
+Select the keyframe and try experimenting with the values. You can also use the Presets on the left hand side of the sequencer to select predefined arrangements. Be sure to set the Wind Speed value to something greater than 0, if you wish to see the clouds move (once time is being progressed). To further enhance the scene, you can also add a keyframe for 2D clouds, by right clicking on the 2D Clouds area and creating a keyframe in the same manner as before. [Read more about both kinds of clouds here](https://docs.simul.co/unity/clouds.html). In this example I have set the Wind Speed to 1, raised the cloudbase to 5.0 and increased cloudiness to 0.6. I have also added a 2D cloud keyframe with default settings. 
 
 <a href="https://docs.simul.co/unity/images/CloudsScene.png"><img src="https://docs.simul.co/unity/images/CloudsScene.png" alt="Tutorial"/></a>  
 
@@ -79,7 +79,7 @@ Further Information
 --------------
  
 * [The Sequencer](https://docs.simul.co/sequencer.html)  
-* [Scripting in trueSKY for Unity](https://docs.simul.co/unity/Scripting.html)
+* [Scripting in trueSKY for Unity](https://docs.simul.co/unity/scripting.html)
 * [trueSKY Developer Manual](https://docs.simul.co/reference/)
 * [Watch a video tutorial](https://www.youtube.com/watch?v=Eljf5CjZ4vc)
 

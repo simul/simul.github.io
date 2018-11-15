@@ -14,7 +14,7 @@ Frequently Asked Questions and Common Problems
 **Installation and Compilation**
 
 * **When packaging the game, I get errors and/or the screen is black.**
-<br>If you are using the binary installer, then you will need to follow some additional steps to be able to package your game with trueSKY. You can read about this [here](https://docs.simul.co/unrealengine/Deploy.html). 
+<br>If you are using the binary installer, then you will need to follow some additional steps to be able to package your game with trueSKY. You can read about this [here](https://docs.simul.co/unrealengine/deploy.html). 
 
 
 **Performance**
@@ -80,7 +80,7 @@ Then, with cloud keyframes, make sure that any property that has horizontal exte
 <br>This may be caused by how UE4's postprocessors deal with large brightnesses, along with the small pixel size of the sun. To get around this, we've introduced MaxSunRadiance as a property of the Sequence Actor. When sun radiance goes past this value, the size of the drawn sun is increased, and the radiance decreased, so that the overall energy is kept constant, but the output brightness reduced. Additionally, if you haven't already, try deleting the default Atmospheric Fog and Sky Sphere actors.
 
 * **The sun isn't moving.**
-<br>Ensure that you are driving the sun via blueprint. Please see [here](https://docs.simul.co/unrealengine/Blueprint.html) for information on how to do this.
+<br>Ensure that you are driving the sun via blueprint. Please see [here](https://docs.simul.co/unrealengine/blueprint.html) for information on how to do this.
 
 * **The sun is too bright.**
 <br>Post process volumes can cause issues with trueSKY. Try lowering the intensity of the volume's bloom setting.

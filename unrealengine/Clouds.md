@@ -27,7 +27,7 @@ Read more about editing the Cloud Layer or Cloud Keyframes on [The Sky Sequencer
 Editing Clouds in Blueprint: The Cloud Layer
 -------------------------
 
-To Get and Set 3D cloud layer properties, use the provided SetInt, GetInt, SetFloat and GetFloat functions. For more on how to use these, along with information about other helpful blueprint functions see [Blueprint](https://docs.simul.co/unrealengine/Blueprint.html). 
+To Get and Set 3D cloud layer properties, use the provided SetInt, GetInt, SetFloat and GetFloat functions. For more on how to use these, along with information about other helpful blueprint functions see [Blueprint](https://docs.simul.co/unrealengine/blueprint.html). 
 
 The tables below show the various cloud layer properties (named as they appear in the sequencer), The entries in the "Name" column are what should be used as the "Name" string parameter in any Blueprint calls to GetKeyframeFloat, GetKeyframeInt, SetKeyframeFloat and SetKeyframeInt. The Name strings should be prefixed with "clouds:" or "2dclouds:", depending on the layer in use. The following (precipitation) properties are exclusive to the 3D cloud layer: Max Particles, Threshold, Radius, Rain Speed and Raindrop Size. **Note**: Parameters that are Bools in the Sequencer are treated as Ints in scripting, where 0 = false and 1 = true.
 
@@ -151,7 +151,7 @@ Further Information
 --------------
  
 * [The Sequencer](https://docs.simul.co/sequencer.html)  
-* [Driving trueSKY via Blueprint](https://docs.simul.co/unrealengine/Blueprint.html)
+* [Driving trueSKY via Blueprint](https://docs.simul.co/unrealengine/blueprint.html)
 * [Cloud Rendering in trueSKY](https://docs.simul.co/reference/classsimul_1_1clouds_1_1BaseCloudRenderer.html)
 * [Watch a video tutorial](https://www.youtube.com/watch?v=hE6qFzJgED4) 
 

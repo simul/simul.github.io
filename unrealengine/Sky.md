@@ -25,7 +25,7 @@ Read more about editing the Sky Layer or Sky Keyframes on [The Sky Sequencer Pag
 Editing The Sky in Blueprint: The Sky Layer
 -------------------------
 
-To Get and Set sky layer properties, use the provided SetInt, GetInt, SetFloat and GetFloat functions. For more on how to use these, along with information about other helpful blueprint functions see [Blueprint](https://docs.simul.co/unrealengine/Blueprint.html). 
+To Get and Set sky layer properties, use the provided SetInt, GetInt, SetFloat and GetFloat functions. For more on how to use these, along with information about other helpful blueprint functions see [Blueprint](https://docs.simul.co/unrealengine/blueprint.html). 
 
 The tables below show the various sky layer properties (named as they appear in the sequencer), The entries in the "Name" column are what should be used as the "Name" string parameter in any Blueprint calls to GetKeyframeFloat, GetKeyframeInt, SetKeyframeFloat and SetKeyframeInt. The Name strings should be prefixed with "sky:". **Note**: Parameters that are Bools in the Sequencer are treated as Ints in scripting, where 0 = false and 1 = true.
 
@@ -134,7 +134,7 @@ Further Information
 --------------
  
 * [The Sequencer](https://docs.simul.co/sequencer.html)  
-* [Driving trueSKY via Blueprint](https://docs.simul.co/unrealengine/Blueprint.html)
+* [Driving trueSKY via Blueprint](https://docs.simul.co/unrealengine/blueprint.html)
 * [Sky Rendering in trueSKY](https://docs.simul.co/reference/classsimul_1_1sky_1_1BaseSkyRenderer.html)
 * [Watch a video tutorial](https://www.youtube.com/watch?v=hE6qFzJgED4) 
 

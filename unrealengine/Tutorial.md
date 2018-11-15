@@ -26,7 +26,7 @@ The sky in your scene should now appear blue, but will lack clouds or anything i
 
 <a href="https://docs.simul.co/unrealengine/images/AddCloudKF.png"><img src="https://docs.simul.co/unrealengine/images/AddCloudKF.png" alt="Blueprint"/></a>
 
-Select the keyframe and try experimenting with the values. You can also use the Presets on the left hand side of the sequencer to select predefined arrangements. Be sure to set the Wind Speed value to something greater than 0, if you wish to see the clouds move (once time is being progressed). To further enhance the scene, you can also add a keyframe for 2D clouds, by right clicking on the 2D Clouds area and creating a keyframe in the same manner as before. [Read more about both kinds of clouds here](https://docs.simul.co/unrealengine/Clouds.html). In this example I have set the Wind Speed to 1, raised the cloudbase to 5.0 and increased cloudiness by to 0.6. I have also added a 2D cloud keyframe with default settings. 
+Select the keyframe and try experimenting with the values. You can also use the Presets on the left hand side of the sequencer to select predefined arrangements. Be sure to set the Wind Speed value to something greater than 0, if you wish to see the clouds move (once time is being progressed). To further enhance the scene, you can also add a keyframe for 2D clouds, by right clicking on the 2D Clouds area and creating a keyframe in the same manner as before. [Read more about both kinds of clouds here](https://docs.simul.co/unrealengine/clouds.html). In this example I have set the Wind Speed to 1, raised the cloudbase to 5.0 and increased cloudiness by to 0.6. I have also added a 2D cloud keyframe with default settings. 
 
 <a href="https://docs.simul.co/unrealengine/images/Scene1.png"><img src="https://docs.simul.co/unrealengine/images/Scene1.png" alt="Blueprint"/></a>
 
@@ -104,7 +104,7 @@ Further Information
 --------------
  
 * [The Sequencer](https://docs.simul.co/sequencer.html) 
-* [Driving trueSKY via Blueprint](https://docs.simul.co/unrealengine/Blueprint.html)  
+* [Driving trueSKY via Blueprint](https://docs.simul.co/unrealengine/blueprint.html)  
 * [trueSKY Developer Manual](https://docs.simul.co/ref.html)
 
 
