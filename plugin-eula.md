@@ -6,7 +6,7 @@ weight: 110
 
 
 TRUESKY PLUGIN
-============
+--------------
 
 Indie User Licence Agreement
 ----------------------------

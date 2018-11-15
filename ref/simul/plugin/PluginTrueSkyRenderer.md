@@ -30,6 +30,7 @@ Functions
 | float | [GetFloatAtPosition](#GetFloatAtPosition)(char name, float pos) |
 | int | [GetInt](#GetInt)(char name, int numparams, simul::base::Variant params) |
 | char  const * | [GetString](#GetString)(char name, int len) |
+| long long | [GetWaterEnum](#GetWaterEnum)(char name) |
 | bool | [HasFloat](#HasFloat)(char name) |
 | bool | [HasInt](#HasInt)(char name) |
 | void | [LightingQuery](#LightingQuery)(int id, float pos, LightingQueryResult res) |
@@ -43,6 +44,7 @@ Functions
 | void | [SetPointLight](#SetPointLight)(int id, pos, float min_radius, float max_radius, irradiance) |
 | void | [SetString](#SetString)(char name, char value) |
 | void | [SetTexture](#SetTexture)(char name, void tex) |
+| void | [SetWater](#SetWater)(long long Enum, int ID, simul::base::Variant v) |
 | bool | [TriggerAction](#TriggerAction)(char name) |
 | void | [UpdateProfilingText](#UpdateProfilingText)() |
 
@@ -98,6 +100,9 @@ Returns an integer value - see SetInt.
 
 ### <a name="GetString"/>char  const * GetString(char name, int len)
 
+### <a name="GetWaterEnum"/>long long GetWaterEnum(char name)
+Get the Water enum that corresponds to a given name. A return value of zero means the name was not found.
+
 ### <a name="HasFloat"/>bool HasFloat(char name)
 Does the named parameter exist?
 
@@ -135,6 +140,9 @@ the size of the source.
 
 ### <a name="SetTexture"/>void SetTexture(char name, void tex)
 Setting texture properties.
+
+### <a name="SetWater"/>void SetWater(long long Enum, int ID, simul::base::Variant v)
+Set the water value corresponding to the given enum.
 
 ### <a name="TriggerAction"/>bool TriggerAction(char name)
 

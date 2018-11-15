@@ -18,6 +18,7 @@ Functions
 | size_t | [GetSize](#GetSize)() |
 | void * | [GetAddr](#GetAddr)() |
 | int | [GetIndex](#GetIndex)() |
+| void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform p) |
 | void | [InvalidateDeviceObjects](#InvalidateDeviceObjects)() |
 | void | [Unbind](#Unbind)(simul::crossplatform::DeviceContext deviceContext) |
 
@@ -38,6 +39,9 @@ For Effect's use only, do not call.
 
 ### <a name="GetIndex"/>int GetIndex()
 Get the binding index in shaders.
+
+### <a name="RestoreDeviceObjects"/>void RestoreDeviceObjects(simul::crossplatform::RenderPlatform p)
+Create the buffer object.
 
 ### <a name="InvalidateDeviceObjects"/>void InvalidateDeviceObjects()
 Free the allocated buffer.

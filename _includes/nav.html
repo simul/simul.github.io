@@ -1,5 +1,5 @@
 <ul id="nav">
-    {% assign level-1 = site.entries | where: "sectionclass", "h1" | sort: "number"%}
+    {% assign level-1 = site.entries | where: "sectionclass", "h2" | sort: "number"%}
     {% for entry in level-1 %}
     <li {% if entry.is-parent or forloop.first %} class="{% if entry.is-parent %}parent{% endif %}{% if forloop.first %} current{% endif %}"{% endif %}>
         <a href="#{{ entry.sectionid }}">{{ entry.title }}</a>

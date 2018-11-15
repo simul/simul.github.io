@@ -3,15 +3,14 @@ title: trueSKY Developer Manual
 layout: reference
 weight: 0
 ---
-trueSKY Developer Manual
-===
+
 ![trueSKY](/images/MainPageScreenshot.png)
 
-# trueSKY
+## trueSKY
 trueSKY is a software development kit that allows realistic skies, clouds and atmospheric effects to be rendered in real time on a variety of platforms.
 
-# Developer Manual
-## General
+## Developer Manual
+### General
 * [**Introduction**](/intro.html)
 * [**Rendering the Environment**](/rendering.html)
 * [**The Sky Sequencer**](/sequencer.html)

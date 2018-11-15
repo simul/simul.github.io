@@ -22,6 +22,8 @@ Fields
 
 **m_rt**  API pointer to the target
 
+**textureTargets**  If using Simul textures, the targets, including layer and mip specification.
+
 **rtFormats**  The pixel format of the target
 
 **m_dt**  If any, the API pointer to the depth surface

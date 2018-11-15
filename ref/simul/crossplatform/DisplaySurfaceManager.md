@@ -17,7 +17,7 @@ With each graphics window it manages (identified by HWND's), WindowManager creat
 Functions
 ---
 
-| void | [AddWindow](#AddWindow)(cp_hwnd h) |
+| void | [AddWindow](#AddWindow)(cp_hwnd h, simul::crossplatform::PixelFormat pfm) |
 | void | [EndFrame](#EndFrame)() |
 | void | [RemoveWindow](#RemoveWindow)(cp_hwnd h) |
 
@@ -33,7 +33,7 @@ Base Classes
 Functions
 ---
 
-### <a name="AddWindow"/>void AddWindow(cp_hwnd h)
+### <a name="AddWindow"/>void AddWindow(cp_hwnd h, simul::crossplatform::PixelFormat pfm)
 Add a window. Creates a new Swap Chain.
 
 ### <a name="EndFrame"/>void EndFrame()

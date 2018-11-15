@@ -6,7 +6,7 @@ weight: 0
 class BaseSkyInterface
 ===
 
-| Include: | Clouds/BaseGpuCloudGenerator.h |
+| Include: | Sky/SkyInterface.h |
 
 An abstract interface class for skies.
   

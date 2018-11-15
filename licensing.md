@@ -3,8 +3,7 @@ title: Licensing
 layout: reference
 weight: 110
 ---
-Licensing
-===
+
 
 ===========<br>Previous: sequencer
 

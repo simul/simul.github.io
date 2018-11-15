@@ -6,9 +6,10 @@ weight: 0
 namespace clouds
 ===
 
-| Include: | Clouds/BaseGpuCloudGenerator.h |
+| Include: | PlugIns/TrueSkyPluginRender/PluginTrueSkyRenderer.h |
 
-The namespace corresponding to the Clouds module.<br>
+Different rendering styles
+  
 
 
 Classes and Structures
@@ -30,6 +31,7 @@ Classes and Structures
 | struct [CloudVolume](clouds/CloudVolume) |  |
 | struct [DepthTextureStruct](clouds/DepthTextureStruct) |  |
 | class [Environment](clouds/Environment) |  |
+| struct [ExportLightningStrike](clouds/ExportLightningStrike) |  |
 | class [FastCloudNode](clouds/FastCloudNode) |  |
 | class [HumidityCallbackInterface](clouds/HumidityCallbackInterface) |  |
 | class [MixedResolutionCompositor](clouds/MixedResolutionCompositor) |  |
@@ -47,10 +49,7 @@ Functions
 
 | vec3 | [TransformPosition](#TransformPosition)(simul::crossplatform::Quaterniond old_origin, simul::crossplatform::Quaterniond new_origin, vec3 old_pos) |
 
-library: (SIMUL)/lib/(PLATFORM)/(COMPILER)/(ConfigurationName)/Clouds.lib
-
-The Clouds library depends on the Base, Math, and Sky libraries.
-
+Different rendering styles
   
 
 

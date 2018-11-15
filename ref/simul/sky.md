@@ -6,7 +6,7 @@ weight: 0
 namespace sky
 ===
 
-| Include: | Clouds/BaseGpuCloudGenerator.h |
+| Include: | Sky/BaseAtmosphericsRenderer.h |
 
 
 

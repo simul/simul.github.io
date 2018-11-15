@@ -6,7 +6,7 @@ weight: 0
 class OvercastCallback
 ===
 
-| Include: | Clouds/BaseGpuCloudGenerator.h |
+| Include: | Sky/BaseSkyRenderer.h |
 
 A virtual callback class for skies to get overcast information from cloud classes.
   

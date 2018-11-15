@@ -101,6 +101,8 @@ Return true if the keyframer has an integer or true/false value with the given, 
 Fields
 ---
 
+**cloudiness**  < The edge between zero and one. Small numbers give a sharp edge to the region.
+
 **distribution_base_layer**  < The density of the cloud layer at this time.
 
 **distribution_transition**  < Start of the transition from the cloud base to the upper cloud (0 to 1)

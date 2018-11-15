@@ -1,4 +1,4 @@
-# Simul documentation pages
+## Simul documentation pages
 
 This is a GitHub Pages site, using Jekyll.
 
