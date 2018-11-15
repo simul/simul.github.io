@@ -21,7 +21,7 @@ To select a cloud keyframe, click it. To select all the keyframes of a cloud lay
 
 <a href="https://docs.simul.co/unity/images/CloudSeqExample.png"><img src="https://docs.simul.co/unity/images/CloudSeqExample.png" alt="Clouds"/></a> 
 
-Read more about editing the Cloud Layer or Cloud Keyframes on [The Sky Sequencer Page](https://docs.simul.co/reference/man_8_sequencer.html).
+Read more about editing the Cloud Layer or Cloud Keyframes on [The Sky Sequencer Page](https://docs.simul.co/sequencer.html).
 
 
 
@@ -159,7 +159,7 @@ Lock to Cloud| "lockRainToClouds" | Whether to make precipitation region move wi
 Further Information
 --------------
  
-* [The Sequencer](https://docs.simul.co/reference/man_8_sequencer.html)  
+* [The Sequencer](https://docs.simul.co/sequencer.html)  
 * [Scripting in trueSKY for Unity](https://docs.simul.co/unity/Scripting.html)
 * [Cloud Rendering in trueSKY](https://docs.simul.co/reference/classsimul_1_1clouds_1_1BaseCloudRenderer.html)
 * [Watch a video tutorial](https://www.youtube.com/watch?v=Eljf5CjZ4vc)

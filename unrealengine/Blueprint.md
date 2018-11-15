@@ -146,7 +146,7 @@ The outputs are in milliseconds.
 
 
 ### Further Information
-* [The Sequencer](https://docs.simul.co/reference/man_8_sequencer.html)   
+* [The Sequencer](https://docs.simul.co/sequencer.html)   
 * [The Clouds in trueSKY for UE4](https://docs.simul.co/unrealengine/Clouds.html)
 * [The Sky in trueSKY for UE4](https://docs.simul.co/unrealengine/Sky.html)
 * [Watch a video tutorial](https://www.youtube.com/watch?v=hE6qFzJgED4) 

@@ -173,7 +173,7 @@ As Unity and trueSKY treat coordinates differently (which axis is considered "up
 Further Information
 --------------
  
-* [The Sequencer](https://docs.simul.co/reference/man_8_sequencer.html)   
+* [The Sequencer](https://docs.simul.co/sequencer.html)   
 * [The Clouds in trueSKY for Unity](https://docs.simul.co/unity/Clouds.html)
 * [The Sky in trueSKY for Unity](https://docs.simul.co/unity/Sky.html)
 * [Watch a video tutorial](https://www.youtube.com/watch?v=Eljf5CjZ4vc)

@@ -22,7 +22,7 @@ After doing this, you should see the default atmospherics disappear, leaving a b
 Adding Clouds
 -------------------------
 
-The sky in your scene should now appear blue, but will lack clouds or anything interesting. To liven up the scene, find your newly created sequence asset in the Content Browser and double click it. This will load the trueSKY Sequencer. If you haven't already, input your license key into the sequencer to allow full access. [Read more about the Sequencer here](https://docs.simul.co/reference/man_8_sequencer.html). For now however we will just add some basic clouds to the scene. To do this, right click in the 3D Clouds section of the timeline and click "New cloud keyframe".  
+The sky in your scene should now appear blue, but will lack clouds or anything interesting. To liven up the scene, find your newly created sequence asset in the Content Browser and double click it. This will load the trueSKY Sequencer. If you haven't already, input your license key into the sequencer to allow full access. [Read more about the Sequencer here](https://docs.simul.co/sequencer.html). For now however we will just add some basic clouds to the scene. To do this, right click in the 3D Clouds section of the timeline and click "New cloud keyframe".  
 
 <a href="https://docs.simul.co/unrealengine/images/AddCloudKF.png"><img src="https://docs.simul.co/unrealengine/images/AddCloudKF.png" alt="Blueprint"/></a>
 

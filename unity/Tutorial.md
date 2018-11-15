@@ -18,7 +18,7 @@ If your scene is appearing upside down, then navigate to the camera and the True
 
 <a href="https://docs.simul.co/unity/images/RenderTexturesAssigned.png"><img src="https://docs.simul.co/unity/images/RenderTexturesAssigned.png" alt="Tutorial"/></a> 
 
-**Note:** Most settings in trueSKY can be manipulated using both the Sequencer and Unity scripting. This tutorial will uses a mixture of both to illustrate. You can [read more about the Sequencer here](https://docs.simul.co/reference/man_8_sequencer.html) and [read more about scripting here](https://docs.simul.co/unity/Scripting.html).
+**Note:** Most settings in trueSKY can be manipulated using both the Sequencer and Unity scripting. This tutorial will uses a mixture of both to illustrate. You can [read more about the Sequencer here](https://docs.simul.co/sequencer.html) and [read more about scripting here](https://docs.simul.co/unity/Scripting.html).
 
 
 Adding Clouds
@@ -61,7 +61,7 @@ If you press play now you will see the clouds move, along with the sun, moon and
 Lighting
 -------------------------
  
-Assuming the trueSKY setup wizard was used, you should have the SimulSun script attached to a directional light. You can change the multiplier variable on this script to increase/decrease the sun's radiance. You can alter the brightness of the moon (and thus the brightness of the scene at night) via the Brightness Power value in the sky layer. This can be accessed in the sequencer by clicking on the "Sky" text on the left of the timeline. You can [read more about Brightness Power here](https://docs.simul.co/reference/man_8_sequencer.html). You can also increase or decrease the brightness of the stars in the sky layer.
+Assuming the trueSKY setup wizard was used, you should have the SimulSun script attached to a directional light. You can change the multiplier variable on this script to increase/decrease the sun's radiance. You can alter the brightness of the moon (and thus the brightness of the scene at night) via the Brightness Power value in the sky layer. This can be accessed in the sequencer by clicking on the "Sky" text on the left of the timeline. You can [read more about Brightness Power here](https://docs.simul.co/sequencer.html). You can also increase or decrease the brightness of the stars in the sky layer.
 
 <a href="https://docs.simul.co/unity/images/BrightnessPower.png"><img src="https://docs.simul.co/unity/images/BrightnessPower.png" alt="Tutorial"/></a>  
 
@@ -78,7 +78,7 @@ With that your scene is now fully configured and functioning. Of course this is 
 Further Information
 --------------
  
-* [The Sequencer](https://docs.simul.co/reference/man_8_sequencer.html)  
+* [The Sequencer](https://docs.simul.co/sequencer.html)  
 * [Scripting in trueSKY for Unity](https://docs.simul.co/unity/Scripting.html)
 * [trueSKY Developer Manual](https://docs.simul.co/reference/)
 * [Watch a video tutorial](https://www.youtube.com/watch?v=Eljf5CjZ4vc)

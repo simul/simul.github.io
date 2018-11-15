@@ -54,7 +54,7 @@ Random Seed |"randomSeed"| Pseudo-random seed.
 Further Information
 --------------
  
-* [The Sequencer](https://docs.simul.co/reference/man_8_sequencer.html)  
+* [The Sequencer](https://docs.simul.co/sequencer.html)  
 * [Scripting in trueSKY for Unity](https://docs.simul.co/unity/Scripting.html) 
 * [The Storm Struct](https://docs.simul.co/reference/structsimul_1_1clouds_1_1CloudKeyframer_1_1Storm.html)
 

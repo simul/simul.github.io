@@ -19,7 +19,7 @@ To select a sky keyframe, click it. To select all the keyframes of the sky layer
 
 <a href="https://docs.simul.co/unrealengine/images/SkySeqExample.png"><img src="https://docs.simul.co/unrealengine/images/SkySeqExample.png" alt="Sky"/></a> 
 
-Read more about editing the Sky Layer or Sky Keyframes on [The Sky Sequencer Page](https://docs.simul.co/reference/man_8_sequencer.html).
+Read more about editing the Sky Layer or Sky Keyframes on [The Sky Sequencer Page](https://docs.simul.co/sequencer.html).
 
 
 Editing The Sky in Blueprint: The Sky Layer
@@ -133,7 +133,7 @@ Automatic Moon Position | "AutomaticMoonPosition" | Whether to calculate moon po
 Further Information
 --------------
  
-* [The Sequencer](https://docs.simul.co/reference/man_8_sequencer.html)  
+* [The Sequencer](https://docs.simul.co/sequencer.html)  
 * [Driving trueSKY via Blueprint](https://docs.simul.co/unrealengine/Blueprint.html)
 * [Sky Rendering in trueSKY](https://docs.simul.co/reference/classsimul_1_1sky_1_1BaseSkyRenderer.html)
 * [Watch a video tutorial](https://www.youtube.com/watch?v=hE6qFzJgED4) 

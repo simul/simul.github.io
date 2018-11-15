@@ -115,7 +115,7 @@ To control the sky properties from within the Editor, you can edit the sequence 
 
 Select the Properties tab or the Map. Click a keyframe to edit its properties. Double-click a line to edit all the keyframes in that line. Click on the title text to the left to edit the properties of the whole layer (sky or clouds).
 
-Read more about editing Sky and Cloud properties on [The Sky Sequencer Page](https://docs.simul.co/reference/man_8_sequencer.html).
+Read more about editing Sky and Cloud properties on [The Sky Sequencer Page](https://docs.simul.co/sequencer.html).
 
 
 Fixing Time-of-Day
@@ -136,7 +136,7 @@ Further Information
 ---------
 
 * [trueSKY Tutorial: Unity](https://docs.simul.co/unity/Tutorial.html)
-* [The Sequencer](https://docs.simul.co/reference/man_8_sequencer.html)
+* [The Sequencer](https://docs.simul.co/sequencer.html)
 * [Scripting in trueSKY for Unity](https://docs.simul.co/unity/Scripting.html)
 * [The trueSKY Renderer](https://docs.simul.co/reference/man_4_rendering.html)
 
