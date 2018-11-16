@@ -138,7 +138,7 @@ Further Information
 * [trueSKY Tutorial: Unity](https://docs.simul.co/unity/tutorial.html)
 * [The Sequencer](https://docs.simul.co/sequencer.html)
 * [Scripting in trueSKY for Unity](https://docs.simul.co/unity/scripting.html)
-* [The trueSKY Renderer](https://docs.simul.co/reference/man_4_rendering.html)
+* [The trueSKY Renderer](https://docs.simul.co/rendering.html)
 
 
 Next: <a href="/unity/Tutorial">Tutorial</a>
