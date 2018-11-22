@@ -3,8 +3,7 @@ title: Rendering the Environment
 layout: reference
 weight: 3
 ---
-Rendering the Environment
-===
+
 
 <br>Previous: gettingstarted
 <hr size="1">

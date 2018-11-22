@@ -3,8 +3,7 @@ title: The Sky Sequencer
 layout: reference
 weight: 60
 ---
-The Sky Sequencer
-===
+
 
 =================<br>Previous: classes::mixed
 

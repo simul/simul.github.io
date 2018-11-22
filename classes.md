@@ -3,8 +3,6 @@ title: The trueSKY Classes
 layout: reference
 weight: 50
 ---
-The trueSKY Classes
-===
 
 
 Previous: pri

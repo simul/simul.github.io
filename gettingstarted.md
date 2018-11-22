@@ -3,8 +3,7 @@ title: Getting Started
 layout: reference
 weight: 2
 ---
-Getting Started
-===
+
 
 <br>Previous: intro
 <hr size="1">
