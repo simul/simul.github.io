@@ -118,7 +118,7 @@ Further Information
 * [trueSKY from GitHub (and UE4 Source Integration)](https://docs.simul.co/unrealengine/source.html)
 * [trueSKY in Blueprint](https://docs.simul.co/unrealengine/blueprint.html)
 * [The Sky Sequencer](https://docs.simul.co/sequencer.html)
-* [The trueSKY Renderer](https://docs.simul.co/reference/man_4_rendering.html)
+* [The trueSKY Renderer](https://docs.simul.co/rendering.html)
 
 
 Next: <a href="/unrealengine/Tutorial">Tutorial</a>
