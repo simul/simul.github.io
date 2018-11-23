@@ -9,7 +9,7 @@ class TextFileInput
 | Include: | Platform/CrossPlatform/TextInputOutput.h |
 
 
-[simul::crossplatform::TextInput](TextInput)
+[simul::crossplatform::TextInput](textinput)
 
 Functions
 ---
@@ -19,7 +19,7 @@ Functions
 
 Base Classes
 ---
-[simul::crossplatform::TextInput](TextInput)
+[simul::crossplatform::TextInput](textinput)
 
 Functions
 ---

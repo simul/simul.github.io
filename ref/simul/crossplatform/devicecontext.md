@@ -17,7 +17,7 @@ DeviceContext is context in the DirectX11 sense, encompassing a platform-specifi
 Functions
 ---
 
-| void | [setDefaultRenderTargets](#setDefaultRenderTargets)(simul::crossplatform::ApiRenderTarget, simul::crossplatform::ApiDepthRenderTarget, uint32_t viewportLeft, uint32_t viewportTop, uint32_t viewportRight, uint32_t viewportBottom) |
+| void | [setDefaultRenderTargets](#setDefaultRenderTargets)(simul::crossplatform::ApiRenderTarget, simul::crossplatform::ApiDepthRenderTarget, uint32_t viewportLeft, uint32_t viewportTop, uint32_t viewportRight, uint32_t viewportBottom, simul::crossplatform::Texture texture_targets, int num_targets, simul::crossplatform::Texture depth_target) |
 | simul::crossplatform::GpuProfilingInterface * | [GetGpuProfilingInterface](#GetGpuProfilingInterface)(simul::crossplatform::DeviceContext context) |
 | void | [SetGpuProfilingInterface](#SetGpuProfilingInterface)(simul::crossplatform::DeviceContext context, simul::crossplatform::GpuProfilingInterface p) |
 
@@ -30,7 +30,7 @@ DeviceContext is context in the DirectX11 sense, encompassing a platform-specifi
 Functions
 ---
 
-### <a name="setDefaultRenderTargets"/>void setDefaultRenderTargets(simul::crossplatform::ApiRenderTarget, simul::crossplatform::ApiDepthRenderTarget, uint32_t viewportLeft, uint32_t viewportTop, uint32_t viewportRight, uint32_t viewportBottom)
+### <a name="setDefaultRenderTargets"/>void setDefaultRenderTargets(simul::crossplatform::ApiRenderTarget, simul::crossplatform::ApiDepthRenderTarget, uint32_t viewportLeft, uint32_t viewportTop, uint32_t viewportRight, uint32_t viewportBottom, simul::crossplatform::Texture texture_targets, int num_targets, simul::crossplatform::Texture depth_target)
 Set the RT's to restore to, once all Simul Framebuffers are deactivated. This must be called at least once,
 as
 

@@ -11,7 +11,7 @@ struct CloudKeyframe
 The keyframe structure for clouds, used by simul::clouds::CloudKeyframer.
   
 
-[simul::sky::BaseKeyframe](../sky/BaseKeyframe)
+[simul::sky::BaseKeyframe](../sky/basekeyframe)
 
 Functions
 ---
@@ -28,7 +28,7 @@ The keyframe structure for clouds, used by simul::clouds::CloudKeyframer.
 
 Base Classes
 ---
-[simul::sky::BaseKeyframe](../sky/BaseKeyframe)
+[simul::sky::BaseKeyframe](../sky/basekeyframe)
 
 Functions
 ---

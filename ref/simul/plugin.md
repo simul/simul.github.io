@@ -15,9 +15,9 @@ The namespace for the plugin render interface.
 Classes and Structures
 ---
 
-| class [PluginTrueSkyRenderer](plugin/PluginTrueSkyRenderer) |  |
-| struct [Query](plugin/Query) |  |
-| class [TrackingAllocator](plugin/TrackingAllocator) |  |
+| class [PluginTrueSkyRenderer](plugin/plugintrueskyrenderer) |  |
+| struct [Query](plugin/query) |  |
+| class [TrackingAllocator](plugin/trackingallocator) |  |
 
 Functions
 ---

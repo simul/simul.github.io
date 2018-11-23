@@ -11,8 +11,8 @@ class CellularCloudNode
 Don't create a CellularCloudNode directly, instead, use the derived class FastCloudNode.
   
 
-[simul::clouds::CellularCloudGrid](CellularCloudGrid)
-[simul::base::Referenced](../base/Referenced)
+[simul::clouds::CellularCloudGrid](cellularcloudgrid)
+[simul::base::Referenced](../base/referenced)
 
 Functions
 ---
@@ -34,8 +34,8 @@ Don't create a CellularCloudNode directly, instead, use the derived class FastCl
 
 Base Classes
 ---
-[simul::clouds::CellularCloudGrid](CellularCloudGrid)
-[simul::base::Referenced](../base/Referenced)
+[simul::clouds::CellularCloudGrid](cellularcloudgrid)
+[simul::base::Referenced](../base/referenced)
 
 Functions
 ---

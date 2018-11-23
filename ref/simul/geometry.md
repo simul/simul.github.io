@@ -14,8 +14,8 @@ Geometry is a small library that contains orientation and reference frame classe
 Classes and Structures
 ---
 
-| class [SimulOrientation](geometry/SimulOrientation) |  |
-| class [SimulReferenceFrame](geometry/SimulReferenceFrame) |  |
+| class [SimulOrientation](geometry/simulorientation) |  |
+| class [SimulReferenceFrame](geometry/simulreferenceframe) |  |
 
 
 The main classes are simul::geometry::SimulOrientation and simul::geometry::SimulReferenceFrame.

@@ -15,50 +15,50 @@ The namespace and library for cross-platform base classes, which abstract render
 Classes and Structures
 ---
 
-| struct [AmortizationStruct](crossplatform/AmortizationStruct) |  |
-| class [BaseFramebuffer](crossplatform/BaseFramebuffer) |  |
-| class [BaseOpticsRenderer](crossplatform/BaseOpticsRenderer) |  |
-| class [BaseRenderer](crossplatform/BaseRenderer) |  |
-| class [Buffer](crossplatform/Buffer) |  |
-| class [Camera](crossplatform/Camera) |  |
-| struct [CommandLineParams](crossplatform/CommandLineParams) |  |
-| class [ConstantBufferBase](crossplatform/ConstantBufferBase) |  |
-| struct [DeviceContext](crossplatform/DeviceContext) |  |
-| struct [DisjointQueryStruct](crossplatform/DisjointQueryStruct) |  |
-| class [DisplaySurfaceManager](crossplatform/DisplaySurfaceManager) |  |
-| class [DisplaySurfaceManagerInterface](crossplatform/DisplaySurfaceManagerInterface) |  |
-| class [Effect](crossplatform/Effect) |  |
-| class [EffectPass](crossplatform/EffectPass) |  |
-| class [EffectTechnique](crossplatform/EffectTechnique) |  |
-| class [EffectTechniqueGroup](crossplatform/EffectTechniqueGroup) |  |
-| struct [Frustum](crossplatform/Frustum) |  |
-| class [GpuProfiler](crossplatform/GpuProfiler) |  |
-| class [GpuProfilingInterface](crossplatform/GpuProfilingInterface) |  |
-| class [Layout](crossplatform/Layout) |  |
-| struct [LayoutDesc](crossplatform/LayoutDesc) |  |
-| class [LensFlare](crossplatform/LensFlare) |  |
-| struct [MixedResolutionStruct](crossplatform/MixedResolutionStruct) |  |
-| struct [MouseCameraInput](crossplatform/MouseCameraInput) |  |
-| struct [MouseCameraState](crossplatform/MouseCameraState) |  |
-| class [PlatformRendererInterface](crossplatform/PlatformRendererInterface) |  |
-| class [PlatformStructuredBuffer](crossplatform/PlatformStructuredBuffer) |  |
-| struct [PosColourVertex](crossplatform/PosColourVertex) |  |
-| class [Quaterniond](crossplatform/Quaterniond) |  |
-| struct [Query](crossplatform/Query) |  |
-| struct [RasterizerDesc](crossplatform/RasterizerDesc) |  |
-| class [RenderDelegater](crossplatform/RenderDelegater) |  |
-| class [RenderPlatform](crossplatform/RenderPlatform) |  |
-| struct [RenderStateDesc](crossplatform/RenderStateDesc) |  |
-| struct [RenderTargetFormatDesc](crossplatform/RenderTargetFormatDesc) |  |
-| class [SamplerState](crossplatform/SamplerState) |  |
-| class [SphericalHarmonics](crossplatform/SphericalHarmonics) |  |
-| struct [TargetsAndViewport](crossplatform/TargetsAndViewport) |  |
-| class [Texture](crossplatform/Texture) | Templated structured buffer, which uses platform-specific implementations of PlatformStructuredBuffer.<br> |
-| class [TextureView](crossplatform/TextureView) |  |
-| class [View](crossplatform/View) |  |
-| class [ViewManager](crossplatform/ViewManager) |  |
-| struct [Viewport](crossplatform/Viewport) |  |
-| struct [ViewStruct](crossplatform/ViewStruct) |  |
+| struct [AmortizationStruct](crossplatform/amortizationstruct) |  |
+| class [BaseFramebuffer](crossplatform/baseframebuffer) |  |
+| class [BaseOpticsRenderer](crossplatform/baseopticsrenderer) |  |
+| class [BaseRenderer](crossplatform/baserenderer) |  |
+| class [Buffer](crossplatform/buffer) |  |
+| class [Camera](crossplatform/camera) |  |
+| struct [CommandLineParams](crossplatform/commandlineparams) |  |
+| class [ConstantBufferBase](crossplatform/constantbufferbase) |  |
+| struct [DeviceContext](crossplatform/devicecontext) |  |
+| struct [DisjointQueryStruct](crossplatform/disjointquerystruct) |  |
+| class [DisplaySurfaceManager](crossplatform/displaysurfacemanager) |  |
+| class [DisplaySurfaceManagerInterface](crossplatform/displaysurfacemanagerinterface) |  |
+| class [Effect](crossplatform/effect) |  |
+| class [EffectPass](crossplatform/effectpass) |  |
+| class [EffectTechnique](crossplatform/effecttechnique) |  |
+| class [EffectTechniqueGroup](crossplatform/effecttechniquegroup) |  |
+| struct [Frustum](crossplatform/frustum) |  |
+| class [GpuProfiler](crossplatform/gpuprofiler) |  |
+| class [GpuProfilingInterface](crossplatform/gpuprofilinginterface) |  |
+| class [Layout](crossplatform/layout) |  |
+| struct [LayoutDesc](crossplatform/layoutdesc) |  |
+| class [LensFlare](crossplatform/lensflare) |  |
+| struct [MixedResolutionStruct](crossplatform/mixedresolutionstruct) |  |
+| struct [MouseCameraInput](crossplatform/mousecamerainput) |  |
+| struct [MouseCameraState](crossplatform/mousecamerastate) |  |
+| class [PlatformRendererInterface](crossplatform/platformrendererinterface) |  |
+| class [PlatformStructuredBuffer](crossplatform/platformstructuredbuffer) |  |
+| struct [PosColourVertex](crossplatform/poscolourvertex) |  |
+| class [Quaterniond](crossplatform/quaterniond) |  |
+| struct [Query](crossplatform/query) |  |
+| struct [RasterizerDesc](crossplatform/rasterizerdesc) |  |
+| class [RenderDelegater](crossplatform/renderdelegater) |  |
+| class [RenderPlatform](crossplatform/renderplatform) |  |
+| struct [RenderStateDesc](crossplatform/renderstatedesc) |  |
+| struct [RenderTargetFormatDesc](crossplatform/rendertargetformatdesc) |  |
+| class [SamplerState](crossplatform/samplerstate) |  |
+| class [SphericalHarmonics](crossplatform/sphericalharmonics) |  |
+| struct [TargetsAndViewport](crossplatform/targetsandviewport) |  |
+| class [Texture](crossplatform/texture) | Templated structured buffer, which uses platform-specific implementations of PlatformStructuredBuffer.<br> |
+| class [TextureView](crossplatform/textureview) |  |
+| class [View](crossplatform/view) |  |
+| class [ViewManager](crossplatform/viewmanager) |  |
+| struct [Viewport](crossplatform/viewport) |  |
+| struct [ViewStruct](crossplatform/viewstruct) |  |
 
 Functions
 ---

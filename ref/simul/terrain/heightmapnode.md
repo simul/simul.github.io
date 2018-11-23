@@ -9,7 +9,7 @@ class HeightMapNode
 | Include: | Terrain/HeightMapNode.h |
 
 
-[simul::terrain::HeightMapInterface](HeightMapInterface)
+[simul::terrain::HeightMapInterface](heightmapinterface)
 
 Functions
 ---
@@ -28,7 +28,7 @@ Functions
 
 Base Classes
 ---
-[simul::terrain::HeightMapInterface](HeightMapInterface)
+[simul::terrain::HeightMapInterface](heightmapinterface)
 
 Functions
 ---

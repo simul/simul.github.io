@@ -10,7 +10,7 @@ class TrueSkyRenderer
 
 <br>
 
-[simul::crossplatform::BaseRenderer](../crossplatform/BaseRenderer)
+[simul::crossplatform::BaseRenderer](../crossplatform/baserenderer)
 
 Functions
 ---
@@ -31,7 +31,7 @@ Functions
 
 Base Classes
 ---
-[simul::crossplatform::BaseRenderer](../crossplatform/BaseRenderer)
+[simul::crossplatform::BaseRenderer](../crossplatform/baserenderer)
 
 Functions
 ---

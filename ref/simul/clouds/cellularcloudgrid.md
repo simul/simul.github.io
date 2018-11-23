@@ -12,10 +12,10 @@ A cellular automata grid of cloud densities.
 Don't create a CellularCloudGrid directly, instead, create a FastCloudNode.
   
 
-[simul::base::MemoryUsageInterface](../base/MemoryUsageInterface)
-[simul::clouds::CloudProperties](CloudProperties)
-[simul::clouds::CloudInterface](CloudInterface)
-[simul::clouds::CloudGridInterface](CloudGridInterface)
+[simul::base::MemoryUsageInterface](../base/memoryusageinterface)
+[simul::clouds::CloudProperties](cloudproperties)
+[simul::clouds::CloudInterface](cloudinterface)
+[simul::clouds::CloudGridInterface](cloudgridinterface)
 
 
 A cellular automata grid of cloud densities.
@@ -25,7 +25,7 @@ Don't create a CellularCloudGrid directly, instead, create a FastCloudNode.
 
 Base Classes
 ---
-[simul::base::MemoryUsageInterface](../base/MemoryUsageInterface)
-[simul::clouds::CloudProperties](CloudProperties)
-[simul::clouds::CloudInterface](CloudInterface)
-[simul::clouds::CloudGridInterface](CloudGridInterface)
+[simul::base::MemoryUsageInterface](../base/memoryusageinterface)
+[simul::clouds::CloudProperties](cloudproperties)
+[simul::clouds::CloudInterface](cloudinterface)
+[simul::clouds::CloudGridInterface](cloudgridinterface)

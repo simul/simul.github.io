@@ -9,7 +9,7 @@ classtemplate ConstantBuffer
 | Include: | Platform/CrossPlatform/Effect.h |
 
 
-[simul::crossplatform::ConstantBufferBase](ConstantBufferBase)
+[simul::crossplatform::ConstantBufferBase](constantbufferbase)
 []()
 
 Functions
@@ -25,7 +25,7 @@ Functions
 
 Base Classes
 ---
-[simul::crossplatform::ConstantBufferBase](ConstantBufferBase)
+[simul::crossplatform::ConstantBufferBase](constantbufferbase)
 []()
 
 Functions

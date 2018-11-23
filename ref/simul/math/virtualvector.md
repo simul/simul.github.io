@@ -13,7 +13,7 @@ the #PointTo method is used to give vector functionality to floating point data
 anywhere in memory (as long as any alignment conditions are satisfied.)
   
 
-[simul::math::Vector](Vector)
+[simul::math::Vector](vector)
 
 Functions
 ---
@@ -29,7 +29,7 @@ anywhere in memory (as long as any alignment conditions are satisfied.)
 
 Base Classes
 ---
-[simul::math::Vector](Vector)
+[simul::math::Vector](vector)
 
 Functions
 ---

@@ -11,7 +11,7 @@ In trueSKY, clouds are split into two layers: 3D clouds and 2D clouds. They have
 
 Each layer has its own properties and its own keyframes. Layer properties will affect the entire sequence. Keyframe properties will only affect the keyframe in question, unless there is only one keyframe present, in which case this will be used continously. Otherwise the clouds will use interpolation to move between specified properties at adjacent keyframes. 
 
-Read more about how clouds are rendered in trueSKY [here](https://docs.simul.co/reference/classsimul_1_1clouds_1_1BaseCloudRenderer.html).
+Read more about how clouds are rendered in trueSKY [here](/ref/simul/clouds/basecloudrenderer).
 
 
 Editing Clouds in the Sequencer
@@ -152,7 +152,7 @@ Further Information
  
 * [The Sequencer](https://docs.simul.co/sequencer.html)  
 * [Driving trueSKY via Blueprint](https://docs.simul.co/unrealengine/blueprint.html)
-* [Cloud Rendering in trueSKY](https://docs.simul.co/reference/classsimul_1_1clouds_1_1BaseCloudRenderer.html)
+* [Cloud Rendering in trueSKY](/ref/simul/clouds/basecloudrenderer)
 * [Watch a video tutorial](https://www.youtube.com/watch?v=hE6qFzJgED4) 
 
 

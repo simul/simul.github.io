@@ -13,7 +13,7 @@ Velocity is a simul::math::Vector3 which can be accessed using #GetVelocity().
 Angular velocity is a simul::math::Vector3 which can be accessed using #GetAngularVelocity().
   
 
-[simul::geometry::SimulOrientation](SimulOrientation)
+[simul::geometry::SimulOrientation](simulorientation)
 
 Functions
 ---
@@ -32,7 +32,7 @@ Angular velocity is a simul::math::Vector3 which can be accessed using #GetAngul
 
 Base Classes
 ---
-[simul::geometry::SimulOrientation](SimulOrientation)
+[simul::geometry::SimulOrientation](simulorientation)
 
 Functions
 ---

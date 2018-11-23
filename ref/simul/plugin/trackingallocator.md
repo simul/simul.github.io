@@ -11,7 +11,7 @@ class TrackingAllocator
 A pseudo allocator that tracks video memory but does not actually allocate it.
   
 
-[simul::base::MemoryInterface](../base/MemoryInterface)
+[simul::base::MemoryInterface](../base/memoryinterface)
 
 Functions
 ---
@@ -27,7 +27,7 @@ A pseudo allocator that tracks video memory but does not actually allocate it.
 
 Base Classes
 ---
-[simul::base::MemoryInterface](../base/MemoryInterface)
+[simul::base::MemoryInterface](../base/memoryinterface)
 
 Functions
 ---

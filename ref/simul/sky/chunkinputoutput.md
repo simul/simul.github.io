@@ -11,8 +11,8 @@ struct ChunkInputOutput
 
   
 
-[simul::sky::Input](Input)
-[simul::sky::Output](Output)
+[simul::sky::Input](input)
+[simul::sky::Output](output)
 
 
 
@@ -21,5 +21,5 @@ struct ChunkInputOutput
 
 Base Classes
 ---
-[simul::sky::Input](Input)
-[simul::sky::Output](Output)
+[simul::sky::Input](input)
+[simul::sky::Output](output)

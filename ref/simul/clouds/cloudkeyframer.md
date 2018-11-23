@@ -13,13 +13,13 @@ A class to manage interpolation between cloud states over time.
 
   
 
-[simul::sky::OvercastCallback](../sky/OvercastCallback)
-[simul::sky::BaseKeyframer](../sky/BaseKeyframer)
+[simul::sky::OvercastCallback](../sky/overcastcallback)
+[simul::sky::BaseKeyframer](../sky/basekeyframer)
 
 Classes and Structures
 ---
 
-| struct [Storm](CloudKeyframer/Storm) |  |
+| struct [Storm](cloudkeyframer/storm) |  |
 
 Functions
 ---
@@ -72,8 +72,8 @@ A class to manage interpolation between cloud states over time.
 
 Base Classes
 ---
-[simul::sky::OvercastCallback](../sky/OvercastCallback)
-[simul::sky::BaseKeyframer](../sky/BaseKeyframer)
+[simul::sky::OvercastCallback](../sky/overcastcallback)
+[simul::sky::BaseKeyframer](../sky/basekeyframer)
 
 Functions
 ---

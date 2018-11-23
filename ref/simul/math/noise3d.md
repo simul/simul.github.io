@@ -11,7 +11,7 @@ class Noise3D
 A 3D Perlin noise class.
   
 
-[simul::math::NoiseInterface](NoiseInterface)
+[simul::math::NoiseInterface](noiseinterface)
 
 Functions
 ---
@@ -24,7 +24,7 @@ A 3D Perlin noise class.
 
 Base Classes
 ---
-[simul::math::NoiseInterface](NoiseInterface)
+[simul::math::NoiseInterface](noiseinterface)
 
 Functions
 ---

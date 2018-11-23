@@ -10,7 +10,7 @@ The Sky in trueSKY
 
 In trueSKY, the sky is modified in two ways: through sky keyframes and the sky layer. Keyframe properties will dictate the look of the sky at a given point in time – with interpolation used to derive properties at times between keyframes – whereas layer properties will be active throughout a sequence. These properties can be modified via the sequencer and/or through Unity scripting.
 
-Read more about how the sky is rendered in trueSKY [here](https://docs.simul.co/reference/classsimul_1_1sky_1_1BaseSkyRenderer.html).
+Read more about how the sky is rendered in trueSKY [here](/ref/simul/sky/baseskyrenderer).
 
 
 Editing The Sky in the Sequencer
@@ -134,7 +134,7 @@ Further Information
  
 * [The Sequencer](https://docs.simul.co/sequencer.html)  
 * [Scripting in trueSKY for Unity](https://docs.simul.co/unity/scripting.html)
-* [Sky Rendering in trueSKY](https://docs.simul.co/reference/classsimul_1_1sky_1_1BaseSkyRenderer.html)
+* [Sky Rendering in trueSKY](/ref/simul/sky/baseskyrenderer)
 * [Watch a video tutorial](https://www.youtube.com/watch?v=Eljf5CjZ4vc)
 
 

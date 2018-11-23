@@ -14,20 +14,20 @@ Base is the base library, containing simple data structures, macros and other us
 Classes and Structures
 ---
 
-| class [BaseProfilingInterface](base/BaseProfilingInterface) |  |
-| class [DefaultProfiler](base/DefaultProfiler) |  |
-| class [EnvironmentVariables](base/EnvironmentVariables) |  |
-| class [FileLoader](base/FileLoader) |  |
-| class [MemoryInterface](base/MemoryInterface) |  |
-| class [MemoryUsageInterface](base/MemoryUsageInterface) |  |
-| struct [ProfileData](base/ProfileData) |  |
-| class [ProfilingInterface](base/ProfilingInterface) |  |
-| class [Referenced](base/Referenced) |  |
-| class [RuntimeError](base/RuntimeError) |  |
-| class [ShowProgressInterface](base/ShowProgressInterface) |  |
-| class [Timer](base/Timer) | A microsecond timer.<br> |
-| class [TrackingAllocator](base/TrackingAllocator) |  |
-| struct [Variant32](base/Variant32) |  |
+| class [BaseProfilingInterface](base/baseprofilinginterface) |  |
+| class [DefaultProfiler](base/defaultprofiler) |  |
+| class [EnvironmentVariables](base/environmentvariables) |  |
+| class [FileLoader](base/fileloader) |  |
+| class [MemoryInterface](base/memoryinterface) |  |
+| class [MemoryUsageInterface](base/memoryusageinterface) |  |
+| struct [ProfileData](base/profiledata) |  |
+| class [ProfilingInterface](base/profilinginterface) |  |
+| class [Referenced](base/referenced) |  |
+| class [RuntimeError](base/runtimeerror) |  |
+| class [ShowProgressInterface](base/showprogressinterface) |  |
+| class [Timer](base/timer) | A microsecond timer.<br> |
+| class [TrackingAllocator](base/trackingallocator) |  |
+| struct [Variant32](base/variant32) |  |
 
 Functions
 ---

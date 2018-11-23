@@ -23,15 +23,15 @@ The Math library depends on the Simul/Base library.
 Classes and Structures
 ---
 
-| class [Matrix](math/Matrix) | A Matrix class.<br> |
-| class [Matrix4x4](math/Matrix4x4) |  |
-| class [Noise1D](math/Noise1D) |  |
-| class [Noise2D](math/Noise2D) |  |
-| class [Noise3D](math/Noise3D) |  |
-| class [Quaternion](math/Quaternion) |  |
-| class [Vector](math/Vector) |  |
-| class [Vector3](math/Vector3) |  |
-| class [VirtualVector](math/VirtualVector) |  |
+| class [Matrix](math/matrix) | A Matrix class.<br> |
+| class [Matrix4x4](math/matrix4x4) |  |
+| class [Noise1D](math/noise1d) |  |
+| class [Noise2D](math/noise2d) |  |
+| class [Noise3D](math/noise3d) |  |
+| class [Quaternion](math/quaternion) |  |
+| class [Vector](math/vector) |  |
+| class [Vector3](math/vector3) |  |
+| class [VirtualVector](math/virtualvector) |  |
 
 Functions
 ---
