@@ -4,8 +4,6 @@ layout: unity
 weight : 1255
 ---
 
-trueSKY alpha for Unity
-================
 
 Getting started
 --------------

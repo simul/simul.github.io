@@ -4,8 +4,7 @@ layout: unity
 weight : 4
 ---
 
-Clouds in trueSKY
-========
+
 
 In trueSKY, clouds are split into two layers: 3D clouds and 2D clouds. They have similar properties, with the exception of precipitation, which is strictly for 3D clouds. These properties can be modified via the sequencer and/or through Unity scripting.
 

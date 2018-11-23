@@ -4,9 +4,6 @@ layout: unity
 weight : 7
 ---
 
-Troubleshooting: Unity
-================
-
 
 Frequently Asked Questions and Common Problems
 ---------------

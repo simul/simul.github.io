@@ -4,8 +4,6 @@ layout: unity
 weight : 3
 ---
 
-Storms in trueSKY
-======================
 
 Storm keyframes are added to the 3D cloud layer, to create structures representing thunderstorms. Just like with cloud keyframes, you can get and set their properties via scripting as well as in the sequencer.
 
@@ -56,7 +54,7 @@ Further Information
  
 * [The Sequencer](https://docs.simul.co/sequencer.html)  
 * [Scripting in trueSKY for Unity](https://docs.simul.co/unity/scripting.html) 
-* [The Storm Struct](https://docs.simul.co/reference/structsimul_1_1clouds_1_1CloudKeyframer_1_1Storm.html)
+* [The Storm Struct](/ref/simul/clouds/cloudkeyframer)
 
 
 Next: <a href="/unity/Scripting">Scripting</a>

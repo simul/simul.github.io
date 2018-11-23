@@ -4,8 +4,6 @@ layout: unity
 weight : 2
 ---
 
-Scripting trueSKY
---------
 
 Alongside the Sequencer tool, trueSKY can be driven and configured via Unity scripting. The settings and properties in trueSKY for Unity are split into three varieties: Keyframe properties (temporal values for clouds and sky), Layer properites (values for clouds and sky that persist throughout a sequence) and the properties of the trueSKY object itself (configuration settings).
 

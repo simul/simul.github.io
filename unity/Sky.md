@@ -5,8 +5,6 @@ weight : 5
 ---
 
 
-The Sky in trueSKY
-=======
 
 In trueSKY, the sky is modified in two ways: through sky keyframes and the sky layer. Keyframe properties will dictate the look of the sky at a given point in time – with interpolation used to derive properties at times between keyframes – whereas layer properties will be active throughout a sequence. These properties can be modified via the sequencer and/or through Unity scripting.
 

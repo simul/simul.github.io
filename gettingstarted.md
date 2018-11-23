@@ -5,9 +5,7 @@ weight: 2
 ---
 
 
-<br>Previous: intro
-<hr size="1">
-
+<br>Previous: [Introduction](/intro)
 
 Unity
 -----
