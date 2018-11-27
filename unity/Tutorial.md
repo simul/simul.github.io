@@ -3,9 +3,6 @@ title: Tutorial
 layout: unity
 weight : 6
 ---
- 
-Tutorial
-========
 
 Initial Configuration
 -------------------------
@@ -80,7 +77,7 @@ Further Information
  
 * [The Sequencer](https://docs.simul.co/sequencer.html)  
 * [Scripting in trueSKY for Unity](https://docs.simul.co/unity/scripting.html)
-* [trueSKY Developer Manual](https://docs.simul.co/reference/)
+* [trueSKY Developer Manual](https://docs.simul.co/ref)
 * [Watch a video tutorial](https://www.youtube.com/watch?v=Eljf5CjZ4vc)
 
 
