@@ -6,9 +6,9 @@ weight: 0
 class Effect
 ===
 
-| Include: | Sky/BaseAtmosphericsRenderer.h |
+| Include: | Clouds/BaseLightningRenderer.h |
 
-Tells the renderer what to do with shader source to get binaries. values can be combined, e.g. ALWAYS_BUILD|TRY_AGAIN_ON_FAIL
+The cross-platform base class for shader effects.
   
 
 
@@ -30,7 +30,7 @@ Functions
 | void | [Unapply](#Unapply)(simul::crossplatform::DeviceContext deviceContext) |
 | void | [UnbindTextures](#UnbindTextures)(simul::crossplatform::DeviceContext deviceContext) |
 
-Tells the renderer what to do with shader source to get binaries. values can be combined, e.g. ALWAYS_BUILD|TRY_AGAIN_ON_FAIL
+The cross-platform base class for shader effects.
   
 
 
@@ -78,8 +78,3 @@ Deactivate the shader.
 
 ### <a name="UnbindTextures"/>void UnbindTextures(simul::crossplatform::DeviceContext deviceContext)
 Zero-out the textures that are set for this shader. Call before apply.
-
-Fields
----
-
-**renderPlatform**  The cross-platform base class for shader effects.

@@ -34,6 +34,7 @@ Functions
 | float | [GetOzoneAtAltitude](#GetOzoneAtAltitude)(float alt_km) |
 | float  const & | [GetPlanetRadius](#GetPlanetRadius)() |
 | float | [GetVisibilityDistance](#GetVisibilityDistance)(float view_alt_km, simul::sky::HazeStruct hazeStruct) |
+| void | [SetPlanetRadius](#SetPlanetRadius)(float value) |
 
 An abstract interface class for skies.
   
@@ -92,3 +93,6 @@ Calculate Rayleigh coefficients for air using colour wavelengths ColourWavelengt
 
 ### <a name="GetVisibilityDistance"/>float GetVisibilityDistance(float view_alt_km, simul::sky::HazeStruct hazeStruct)
 From the altitude specified, the distance in km to 10% visibility (mainly a factor of fog/haze).
+
+### <a name="SetPlanetRadius"/>void SetPlanetRadius(float value)
+Calculate Rayleigh coefficients for air using colour wavelengths ColourWavelengthsNm.

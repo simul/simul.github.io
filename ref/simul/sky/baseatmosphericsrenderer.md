@@ -6,12 +6,12 @@ weight: 0
 class BaseAtmosphericsRenderer
 ===
 
-| Include: | Sky/BaseAtmosphericsRenderer.h |
+| Include: | Clouds/BaseWeatherRenderer.h |
 
 The graphics API-independent base class for atmospherics renderers, which draw distance fades, aerial perspective, fog and so on.
   
 
-[simul::base::Referenced](../base/referenced)
+[simul::base::Referenced](../base/Referenced)
 
 Functions
 ---
@@ -27,7 +27,7 @@ The graphics API-independent base class for atmospherics renderers, which draw d
 
 Base Classes
 ---
-[simul::base::Referenced](../base/referenced)
+[simul::base::Referenced](../base/Referenced)
 
 Functions
 ---

@@ -6,7 +6,7 @@ weight: 0
 namespace base
 ===
 
-| Include: | PlugIns/TrueSkyPluginRender/UnityPluginInterface.h |
+| Include: | Base/Base.h |
 
 Base is the base library, containing simple data structures, macros and other useful things.<br>
 
@@ -14,20 +14,19 @@ Base is the base library, containing simple data structures, macros and other us
 Classes and Structures
 ---
 
-| class [BaseProfilingInterface](base/baseprofilinginterface) |  |
-| class [DefaultProfiler](base/defaultprofiler) |  |
-| class [EnvironmentVariables](base/environmentvariables) |  |
-| class [FileLoader](base/fileloader) |  |
-| class [MemoryInterface](base/memoryinterface) |  |
-| class [MemoryUsageInterface](base/memoryusageinterface) |  |
-| struct [ProfileData](base/profiledata) |  |
-| class [ProfilingInterface](base/profilinginterface) |  |
-| class [Referenced](base/referenced) |  |
-| class [RuntimeError](base/runtimeerror) |  |
-| class [ShowProgressInterface](base/showprogressinterface) |  |
-| class [Timer](base/timer) | A microsecond timer.<br> |
-| class [TrackingAllocator](base/trackingallocator) |  |
-| struct [Variant32](base/variant32) |  |
+| class [BaseProfilingInterface](base/BaseProfilingInterface) |  |
+| class [DefaultProfiler](base/DefaultProfiler) |  |
+| class [EnvironmentVariables](base/EnvironmentVariables) |  |
+| class [FileLoader](base/FileLoader) |  |
+| class [MemoryInterface](base/MemoryInterface) |  |
+| class [MemoryUsageInterface](base/MemoryUsageInterface) |  |
+| class [ProfilingInterface](base/ProfilingInterface) |  |
+| class [Referenced](base/Referenced) |  |
+| class [RuntimeError](base/RuntimeError) |  |
+| class [ShowProgressInterface](base/ShowProgressInterface) |  |
+| class [Timer](base/Timer) | A microsecond timer.<br> |
+| class [TrackingAllocator](base/TrackingAllocator) |  |
+| struct [Variant32](base/Variant32) |  |
 
 Functions
 ---
@@ -36,9 +35,12 @@ Functions
 | simul::base::FeatureLevel | [GetFeatureLevel](#GetFeatureLevel)() |
 | simul::base::LicenceInfo | [GetLicenceInfo](#GetLicenceInfo)(char lic) |
 | simul::base::FeatureLevel | [GetMaximumFeatureLevel](#GetMaximumFeatureLevel)() |
+| simul::base::ProfilingInterface * | [GetProfilingInterface](#GetProfilingInterface)(THREAD_TYPE thread_id) |
 | THREAD_TYPE | [GetThreadId](#GetThreadId)() |
 | bool | [GetUseExternalTextures](#GetUseExternalTextures)() |
 | char  const * | [QuickFormat](#QuickFormat)(char format_str) |
+| void | [SetFeatureLevel](#SetFeatureLevel)(simul::base::FeatureLevel f) |
+| void | [SetProfilingInterface](#SetProfilingInterface)(THREAD_TYPE thread_id, simul::base::ProfilingInterface p) |
 | void | [SetUseExternalTextures](#SetUseExternalTextures)(bool t) |
 | std::vector | [split](#split)(std::string source, char separator) |
 | std::string | [stringFormat](#stringFormat)(std::string fmt) |
@@ -66,6 +68,9 @@ Retrieve information on the specified licence key.
 ### <a name="GetMaximumFeatureLevel"/>simul::base::FeatureLevel GetMaximumFeatureLevel()
 The maximum feature level (see GetFeatureLevel), determined by the current licence.
 
+### <a name="GetProfilingInterface"/>simul::base::ProfilingInterface * GetProfilingInterface(THREAD_TYPE thread_id)
+Returns a pointer to the current CPU profiler.
+
 ### <a name="GetThreadId"/>THREAD_TYPE GetThreadId()
 Get the id of the current thread.
 
@@ -74,6 +79,12 @@ See SetUseExternalTextures.
 
 ### <a name="QuickFormat"/>char  const * QuickFormat(char format_str)
 A quick-and-dirty, non-re-entrant formatting function. Use this only for debugging.
+
+### <a name="SetFeatureLevel"/>void SetFeatureLevel(simul::base::FeatureLevel f)
+Change the feature level. It is only possible to change to a lower feature level than the maximum one (see GetMaximumFeatureLevel).
+
+### <a name="SetProfilingInterface"/>void SetProfilingInterface(THREAD_TYPE thread_id, simul::base::ProfilingInterface p)
+Set the CPU profiler. Future use of SIMUL_PROFILE_START or SIMUL_COMBINED_PROFILE_START will use that profiler.
 
 ### <a name="SetUseExternalTextures"/>void SetUseExternalTextures(bool t)
 The current feature level, which determines whether this is the feature-limited trueSKY alpha, or full trueSKY.

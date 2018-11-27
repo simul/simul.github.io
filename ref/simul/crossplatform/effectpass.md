@@ -8,17 +8,12 @@ class EffectPass
 
 | Include: | Platform/CrossPlatform/DeviceContext.h |
 
-A class representing a shader resource.
-  
 
 
 Functions
 ---
 
 | void | [MakeResourceSlotMap](#MakeResourceSlotMap)() |
-
-A class representing a shader resource.
-  
 
 
 Functions

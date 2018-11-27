@@ -6,9 +6,17 @@ weight: 0
 class RenderPlatform
 ===
 
-| Include: | Sky/BaseGpuSkyGenerator.h |
+| Include: | Clouds/BaseGpuCloudGenerator.h |
 
-A container class intended to reproduce some of the behaviour of std::map with ints for indices, but to be much much faster.
+RenderPlatform is an interface that allows Simul's rendering functions to be developed
+in a cross-platform manner. By abstracting the common functionality of the different graphics API's
+into an interface, we can write render code that need not know which API is being used. It is possible
+to create platform-specific objects like /link CreateTexture textures/endlink, /link CreateEffect effects/endlink
+and /link CreateBuffer buffers/endlink
+
+Be sure to make the following calls at the appropriate places:
+RestoreDeviceObjects(), InvalidateDeviceObjects(), RecompileShaders()
+
   
 
 
@@ -82,9 +90,16 @@ Functions
 | void | [SynchronizeCacheAndState](#SynchronizeCacheAndState)(simul::crossplatform::DeviceContext) |
 | vec4 | [TexelQuery](#TexelQuery)(simul::crossplatform::DeviceContext deviceContext, int query_id, uint2 pos, simul::crossplatform::Texture texture) |
 | bool | [ApplyContextState](#ApplyContextState)(simul::crossplatform::DeviceContext, bool) |
-| simul::crossplatform::Viewport | [PlatformGetViewport](#PlatformGetViewport)(simul::crossplatform::DeviceContext deviceContext, int index) |
 
-A container class intended to reproduce some of the behaviour of std::map with ints for indices, but to be much much faster.
+RenderPlatform is an interface that allows Simul's rendering functions to be developed
+in a cross-platform manner. By abstracting the common functionality of the different graphics API's
+into an interface, we can write render code that need not know which API is being used. It is possible
+to create platform-specific objects like /link CreateTexture textures/endlink, /link CreateEffect effects/endlink
+and /link CreateBuffer buffers/endlink
+
+Be sure to make the following calls at the appropriate places:
+RestoreDeviceObjects(), InvalidateDeviceObjects(), RecompileShaders()
+
   
 
 
@@ -298,17 +313,6 @@ Query for the texture value at the specified position in the texture. On most AP
 ### <a name="ApplyContextState"/>bool ApplyContextState(simul::crossplatform::DeviceContext, bool)
 This is called by draw functions to do any lazy updating prior to the actual API draw/dispatch call.
 
-### <a name="PlatformGetViewport"/>simul::crossplatform::Viewport PlatformGetViewport(simul::crossplatform::DeviceContext deviceContext, int index)
-RenderPlatform is an interface that allows Simul's rendering functions to be developed
-in a cross-platform manner. By abstracting the common functionality of the different graphics API's
-into an interface, we can write render code that need not know which API is being used. It is possible
-to create platform-specific objects like /link CreateTexture textures/endlink, /link CreateEffect effects/endlink
-and /link CreateBuffer buffers/endlink
-
-Be sure to make the following calls at the appropriate places:
-RestoreDeviceObjects(), InvalidateDeviceObjects(), RecompileShaders()
-
-
 Fields
 ---
 
@@ -316,6 +320,10 @@ Variables
 ---
 
 **mirrorY**  This was introduced because Unity's deferred renderer flips the image vertically sometime after we render.
+
+**mirrorY2**  This was introduced because Unity's deferred renderer flips the image vertically sometime after we render.
+
+**mirrorYText**  This was introduced because Unity's deferred renderer flips the image vertically sometime after we render.
 
 **mCurIdx**  Value used to select the current heap, it will be looping around: [0,kNumIdx)
 
