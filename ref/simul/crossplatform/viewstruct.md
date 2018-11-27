@@ -6,7 +6,7 @@ weight: 0
 struct ViewStruct
 ===
 
-| Include: | Sky/BaseAtmosphericsRenderer.h |
+| Include: | Clouds/TwoResFramebuffer.h |
 
 A simple struct encapsulating a view and a projection matrix.
   
@@ -38,5 +38,9 @@ Fields
 **invViewProj**  < The projection matrix, row-major.
 
 **cam_pos**  /math::Matrix4x4 modelView;
+
+**view_dir**  /math::Matrix4x4 modelView;
+
+**up**  /math::Matrix4x4 modelView;
 
 **depthTextureStyle**  < THe viewing frustum, calculated from the proj matrix and stored for convenience using simul::crossplatform::GetFrustumFromProjectionMatrix.

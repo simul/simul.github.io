@@ -1,24 +1,19 @@
 ---
-title: PlatformStructuredBuffer
+title: PlatformConstantBuffer
 layout: reference
 weight: 0
 ---
-class PlatformStructuredBuffer
+class PlatformConstantBuffer
 ===
 
-| Include: | Platform/CrossPlatform/DeviceContext.h |
+| Include: | Platform/CrossPlatform/Effect.h |
 
-A base class for structured buffers, used by StructuredBuffer internally.
-  
 
 
 Functions
 ---
 
 | void | [ActualApply](#ActualApply)(simul::crossplatform::DeviceContext, simul::crossplatform::EffectPass, int) |
-
-A base class for structured buffers, used by StructuredBuffer internally.
-  
 
 
 Functions

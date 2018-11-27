@@ -11,7 +11,7 @@ class SiderealSky
 A class that calculates the positions of sun, moon and stars.
   
 
-[simul::sky::SiderealSkyInterface](siderealskyinterface)
+[simul::sky::SiderealSkyInterface](SiderealSkyInterface)
 
 Functions
 ---
@@ -26,7 +26,7 @@ A class that calculates the positions of sun, moon and stars.
 
 Base Classes
 ---
-[simul::sky::SiderealSkyInterface](siderealskyinterface)
+[simul::sky::SiderealSkyInterface](SiderealSkyInterface)
 
 Functions
 ---

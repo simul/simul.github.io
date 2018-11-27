@@ -11,7 +11,7 @@ struct CloudKeyframe
 The keyframe structure for clouds, used by simul::clouds::CloudKeyframer.
   
 
-[simul::sky::BaseKeyframe](../sky/basekeyframe)
+[simul::sky::BaseKeyframe](../sky/BaseKeyframe)
 
 Functions
 ---
@@ -28,7 +28,7 @@ The keyframe structure for clouds, used by simul::clouds::CloudKeyframer.
 
 Base Classes
 ---
-[simul::sky::BaseKeyframe](../sky/basekeyframe)
+[simul::sky::BaseKeyframe](../sky/BaseKeyframe)
 
 Functions
 ---
@@ -100,8 +100,6 @@ Return true if the keyframer has an integer or true/false value with the given, 
 
 Fields
 ---
-
-**cloudiness**  < The edge between zero and one. Small numbers give a sharp edge to the region.
 
 **distribution_base_layer**  < The density of the cloud layer at this time.
 

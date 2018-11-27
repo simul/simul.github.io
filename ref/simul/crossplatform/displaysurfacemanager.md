@@ -12,7 +12,7 @@ A class for multiple swap chains (i.e. rendering windows) to share the same devi
 With each graphics window it manages (identified by HWND's), WindowManager creates and manages a SwapChain instance.
   
 
-[simul::crossplatform::DisplaySurfaceManagerInterface](displaysurfacemanagerinterface)
+[simul::crossplatform::DisplaySurfaceManagerInterface](DisplaySurfaceManagerInterface)
 
 Functions
 ---
@@ -28,7 +28,7 @@ With each graphics window it manages (identified by HWND's), WindowManager creat
 
 Base Classes
 ---
-[simul::crossplatform::DisplaySurfaceManagerInterface](displaysurfacemanagerinterface)
+[simul::crossplatform::DisplaySurfaceManagerInterface](DisplaySurfaceManagerInterface)
 
 Functions
 ---

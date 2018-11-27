@@ -12,7 +12,7 @@ The properties of any sky keyframe can be changed at any time. However, only Haz
 can be changed for an in-use keyframe without triggering a recalculation of the colour tables.
   
 
-[simul::sky::BaseKeyframe](basekeyframe)
+[simul::sky::BaseKeyframe](BaseKeyframe)
 
 Functions
 ---
@@ -27,7 +27,7 @@ can be changed for an in-use keyframe without triggering a recalculation of the 
 
 Base Classes
 ---
-[simul::sky::BaseKeyframe](basekeyframe)
+[simul::sky::BaseKeyframe](BaseKeyframe)
 
 Functions
 ---

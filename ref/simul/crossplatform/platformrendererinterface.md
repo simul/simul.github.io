@@ -6,7 +6,7 @@ weight: 0
 class PlatformRendererInterface
 ===
 
-| Include: | PlugIns/TrueSkyPluginRender/UnityPluginInterface.h |
+| Include: | Platform/CrossPlatform/GraphicsDeviceInterface.h |
 
 This represents an interface that faces the raw API.
 The implementing class should keep a list of integer view id's

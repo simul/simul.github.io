@@ -6,7 +6,7 @@ weight: 0
 class BaseSkyRenderer
 ===
 
-| Include: | Sky/BaseSkyRenderer.h |
+| Include: | Clouds/BaseWeatherRenderer.h |
 
 The Sky Renderer performs the following tasks:
 - Rendering stars: using RenderPointStars(void *context,float exposure)
@@ -16,8 +16,8 @@ The Sky Renderer performs the following tasks:
 
   
 
-[simul::base::Referenced](../base/referenced)
-[simul::crossplatform::BaseRenderer](../crossplatform/baserenderer)
+[simul::base::Referenced](../base/Referenced)
+[simul::crossplatform::BaseRenderer](../crossplatform/BaseRenderer)
 
 Functions
 ---
@@ -71,8 +71,8 @@ The Sky Renderer performs the following tasks:
 
 Base Classes
 ---
-[simul::base::Referenced](../base/referenced)
-[simul::crossplatform::BaseRenderer](../crossplatform/baserenderer)
+[simul::base::Referenced](../base/Referenced)
+[simul::crossplatform::BaseRenderer](../crossplatform/BaseRenderer)
 
 Functions
 ---

@@ -39,7 +39,7 @@ and print this text to screen.
 
   
 
-[simul::base::ProfilingInterface](profilinginterface)
+[simul::base::ProfilingInterface](ProfilingInterface)
 
 Functions
 ---
@@ -82,7 +82,7 @@ and print this text to screen.
 
 Base Classes
 ---
-[simul::base::ProfilingInterface](profilinginterface)
+[simul::base::ProfilingInterface](ProfilingInterface)
 
 Functions
 ---

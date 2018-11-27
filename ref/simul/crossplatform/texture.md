@@ -6,9 +6,10 @@ weight: 0
 class Texture
 ===
 
-| Include: | Sky/BaseAtmosphericsRenderer.h |
+| Include: | Clouds/BaseGpuCloudGenerator.h |
 
-Templated structured buffer, which uses platform-specific implementations of PlatformStructuredBuffer.<br>
+A Texture base class.
+  
 
 
 Functions
@@ -39,8 +40,7 @@ Functions
 | void | [setTexels](#setTexels)(simul::crossplatform::DeviceContext deviceContext, void src, int texel_index, int num_texels) |
 | void | [SetUnfenceable](#SetUnfenceable)(bool v) |
 
-Declare like so:
-
+A Texture base class.
   
 
 
@@ -121,8 +121,3 @@ Set the texture data from CPU memory.
 
 ### <a name="SetUnfenceable"/>void SetUnfenceable(bool v)
 Set whether to never check for fences on this texture.
-
-Fields
----
-
-**cubemap**  A Texture base class.

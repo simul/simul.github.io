@@ -8,13 +8,8 @@ struct ProfileData
 
 | Include: | Base/ProfilingInterface.h |
 
-Define this to enable internal calls to the profiler, if it has been set with simul::base::SetProfilingInterface().
-  
 
 
-
-Define this to enable internal calls to the profiler, if it has been set with simul::base::SetProfilingInterface().
-  
 
 
 Fields
