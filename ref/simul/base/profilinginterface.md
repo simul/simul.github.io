@@ -11,7 +11,7 @@ class ProfilingInterface
 simul::base::DefaultProfiler inherits from ProfilingInterface to measure CPU performance.
   
 
-[simul::base::BaseProfilingInterface](BaseProfilingInterface)
+[simul::base::BaseProfilingInterface](baseprofilinginterface)
 
 Functions
 ---
@@ -26,7 +26,7 @@ simul::base::DefaultProfiler inherits from ProfilingInterface to measure CPU per
 
 Base Classes
 ---
-[simul::base::BaseProfilingInterface](BaseProfilingInterface)
+[simul::base::BaseProfilingInterface](baseprofilinginterface)
 
 Functions
 ---

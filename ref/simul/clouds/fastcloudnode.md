@@ -15,7 +15,7 @@ call SetResource( simul::base::MemoryInterface *) with a pointer to a
 an instance of a class derived from MemoryInterface.
   
 
-[simul::clouds::CellularCloudNode](CellularCloudNode)
+[simul::clouds::CellularCloudNode](cellularcloudnode)
 
 Functions
 ---
@@ -38,7 +38,7 @@ an instance of a class derived from MemoryInterface.
 
 Base Classes
 ---
-[simul::clouds::CellularCloudNode](CellularCloudNode)
+[simul::clouds::CellularCloudNode](cellularcloudnode)
 
 Functions
 ---

@@ -12,17 +12,12 @@ A base class for structured buffers, used by StructuredBuffer internally.
   
 
 
-Functions
----
-
-| void | [ActualApply](#ActualApply)(simul::crossplatform::DeviceContext, simul::crossplatform::EffectPass, int) |
 
 A base class for structured buffers, used by StructuredBuffer internally.
   
 
 
-Functions
+Fields
 ---
 
-### <a name="ActualApply"/>void ActualApply(simul::crossplatform::DeviceContext, simul::crossplatform::EffectPass, int)
-For RenderPlatform's use only: do not call.
+**renderPlatform**  Find the constant buffer in the given effect, and link to it.

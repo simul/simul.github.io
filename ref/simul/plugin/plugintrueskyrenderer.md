@@ -11,7 +11,7 @@ class PluginTrueSkyRenderer
 A class that provides an interface between the trueSKY renderer and an external engine.
   
 
-[simul::clouds::TrueSkyRenderer](../clouds/TrueSkyRenderer)
+[simul::clouds::TrueSkyRenderer](../clouds/trueskyrenderer)
 
 Functions
 ---
@@ -54,7 +54,7 @@ A class that provides an interface between the trueSKY renderer and an external 
 
 Base Classes
 ---
-[simul::clouds::TrueSkyRenderer](../clouds/TrueSkyRenderer)
+[simul::clouds::TrueSkyRenderer](../clouds/trueskyrenderer)
 
 Functions
 ---

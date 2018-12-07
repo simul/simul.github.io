@@ -6,51 +6,50 @@ weight: 0
 namespace clouds
 ===
 
-| Include: | Clouds/BaseGpuCloudGenerator.h |
+| Include: | PlugIns/TrueSkyPluginRender/PluginTrueSkyRenderer.h |
 
-The namespace corresponding to the Clouds module.<br>
+Different rendering styles
+  
 
 
 Classes and Structures
 ---
 
-| class [BaseGpuCloudGenerator](clouds/BaseGpuCloudGenerator) |  |
-| class [BaseLightningRenderer](clouds/BaseLightningRenderer) |  |
-| class [BaseWeatherRenderer](clouds/BaseWeatherRenderer) |  |
-| class [CellularCloudGrid](clouds/CellularCloudGrid) |  |
-| class [CellularCloudNode](clouds/CellularCloudNode) |  |
-| struct [CloudGeometryHelper](clouds/CloudGeometryHelper) |  |
-| class [CloudGridInterface](clouds/CloudGridInterface) |  |
-| class [CloudInterface](clouds/CloudInterface) |  |
-| struct [CloudKeyframe](clouds/CloudKeyframe) |  |
-| class [CloudKeyframer](clouds/CloudKeyframer) |  |
-| class [CloudProperties](clouds/CloudProperties) |  |
-| class [CloudRenderer](clouds/CloudRenderer) | Class for real-time volumetric cloud rendering.<br> |
-| struct [CloudRenderingOptions](clouds/CloudRenderingOptions) | This controls the rendering of clouds.<br> |
-| struct [CloudVolume](clouds/CloudVolume) |  |
-| struct [DepthTextureStruct](clouds/DepthTextureStruct) |  |
-| class [Environment](clouds/Environment) |  |
-| class [FastCloudNode](clouds/FastCloudNode) |  |
-| class [HumidityCallbackInterface](clouds/HumidityCallbackInterface) |  |
-| class [MixedResolutionCompositor](clouds/MixedResolutionCompositor) |  |
-| struct [PointSource](clouds/PointSource) |  |
-| struct [PrecipitationRegion](clouds/PrecipitationRegion) |  |
-| class [PrecipitationRenderer](clouds/PrecipitationRenderer) |  |
-| struct [SelectionIdentifier](clouds/SelectionIdentifier) |  |
-| class [Skylight](clouds/Skylight) |  |
-| class [TimedNoise3D](clouds/TimedNoise3D) |  |
-| class [TrueSkyRenderer](clouds/TrueSkyRenderer) | <br> |
-| class [TwoResFramebuffer](clouds/TwoResFramebuffer) |  |
+| class [BaseGpuCloudGenerator](clouds/basegpucloudgenerator) |  |
+| class [BaseLightningRenderer](clouds/baselightningrenderer) |  |
+| class [BaseWeatherRenderer](clouds/baseweatherrenderer) |  |
+| class [CellularCloudGrid](clouds/cellularcloudgrid) |  |
+| class [CellularCloudNode](clouds/cellularcloudnode) |  |
+| struct [CloudGeometryHelper](clouds/cloudgeometryhelper) |  |
+| class [CloudGridInterface](clouds/cloudgridinterface) |  |
+| class [CloudInterface](clouds/cloudinterface) |  |
+| struct [CloudKeyframe](clouds/cloudkeyframe) |  |
+| class [CloudKeyframer](clouds/cloudkeyframer) |  |
+| class [CloudProperties](clouds/cloudproperties) |  |
+| class [CloudRenderer](clouds/cloudrenderer) | Class for real-time volumetric cloud rendering.<br> |
+| struct [CloudRenderingOptions](clouds/cloudrenderingoptions) | This controls the rendering of clouds.<br> |
+| struct [CloudVolume](clouds/cloudvolume) |  |
+| struct [DepthTextureStruct](clouds/depthtexturestruct) |  |
+| class [Environment](clouds/environment) |  |
+| struct [ExportLightningStrike](clouds/exportlightningstrike) |  |
+| class [FastCloudNode](clouds/fastcloudnode) |  |
+| class [HumidityCallbackInterface](clouds/humiditycallbackinterface) |  |
+| class [MixedResolutionCompositor](clouds/mixedresolutioncompositor) |  |
+| struct [PointSource](clouds/pointsource) |  |
+| struct [PrecipitationRegion](clouds/precipitationregion) |  |
+| class [PrecipitationRenderer](clouds/precipitationrenderer) |  |
+| struct [SelectionIdentifier](clouds/selectionidentifier) |  |
+| class [Skylight](clouds/skylight) |  |
+| class [TimedNoise3D](clouds/timednoise3d) |  |
+| class [TrueSkyRenderer](clouds/trueskyrenderer) | <br> |
+| class [TwoResFramebuffer](clouds/tworesframebuffer) |  |
 
 Functions
 ---
 
 | vec3 | [TransformPosition](#TransformPosition)(simul::crossplatform::Quaterniond old_origin, simul::crossplatform::Quaterniond new_origin, vec3 old_pos) |
 
-library: (SIMUL)/lib/(PLATFORM)/(COMPILER)/(ConfigurationName)/Clouds.lib
-
-The Clouds library depends on the Base, Math, and Sky libraries.
-
+Different rendering styles
   
 
 

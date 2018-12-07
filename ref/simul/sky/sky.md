@@ -98,5 +98,10 @@ Get the effective optical length (equivalent length at sea level density) of a r
 ### <a name="GetTablesChecksum"/>unsigned int GetTablesChecksum()
 A checksum that changes any time the density, optical depth or blackbody table is recalculated.
 
+Fields
+---
+
 Enums
 ---
+
+**siderealSky**  The namespace and library for Simul sky functionality.

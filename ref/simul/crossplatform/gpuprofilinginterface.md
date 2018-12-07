@@ -11,7 +11,7 @@ class GpuProfilingInterface
 A virtual interface base class for GPU performance measurement.
   
 
-[simul::base::BaseProfilingInterface](../base/BaseProfilingInterface)
+[simul::base::BaseProfilingInterface](../base/baseprofilinginterface)
 
 Functions
 ---
@@ -20,6 +20,7 @@ Functions
 | void | [End](#End)(simul::crossplatform::DeviceContext deviceContext) |
 | void | [EndFrame](#EndFrame)(simul::crossplatform::DeviceContext deviceContext) |
 | char  const * | [GetDebugText](#GetDebugText)(simul::base::TextStyle st) |
+| void | [StartFrame](#StartFrame)(simul::crossplatform::DeviceContext deviceContext) |
 
 A virtual interface base class for GPU performance measurement.
   
@@ -27,7 +28,7 @@ A virtual interface base class for GPU performance measurement.
 
 Base Classes
 ---
-[simul::base::BaseProfilingInterface](../base/BaseProfilingInterface)
+[simul::base::BaseProfilingInterface](../base/baseprofilinginterface)
 
 Functions
 ---
@@ -43,3 +44,6 @@ Call this at the end of the frame to prepare the data to be read.
 
 ### <a name="GetDebugText"/>char  const * GetDebugText(simul::base::TextStyle st)
 Get the timing text per-frame.
+
+### <a name="StartFrame"/>void StartFrame(simul::crossplatform::DeviceContext deviceContext)
+Call this at the start of the frame to reset values.

@@ -39,7 +39,7 @@ const char *text=simul::dx11::Profiler::GetGlobalProfiler().GetDebugText(as_html
 
   
 
-[simul::crossplatform::GpuProfilingInterface](GpuProfilingInterface)
+[simul::crossplatform::GpuProfilingInterface](gpuprofilinginterface)
 
 Functions
 ---
@@ -83,7 +83,7 @@ const char *text=simul::dx11::Profiler::GetGlobalProfiler().GetDebugText(as_html
 
 Base Classes
 ---
-[simul::crossplatform::GpuProfilingInterface](GpuProfilingInterface)
+[simul::crossplatform::GpuProfilingInterface](gpuprofilinginterface)
 
 Functions
 ---

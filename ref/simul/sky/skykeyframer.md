@@ -6,13 +6,13 @@ weight: 0
 class SkyKeyframer
 ===
 
-| Include: | Clouds/BaseWeatherRenderer.h |
+| Include: | Sky/BaseAtmosphericsRenderer.h |
 
 A class that maintains sky properties and interpolates them based on keyframe values.<br>
 
-[simul::base::Referenced](../base/Referenced)
-[simul::sky::BaseKeyframer](BaseKeyframer)
-[simul::sky::BaseSkyInterface](BaseSkyInterface)
+[simul::base::Referenced](../base/referenced)
+[simul::sky::BaseKeyframer](basekeyframer)
+[simul::sky::BaseSkyInterface](baseskyinterface)
 
 Functions
 ---
@@ -47,9 +47,9 @@ The SkyKeyframer interpolates the sky values, and passes the keyframe and interp
 
 Base Classes
 ---
-[simul::base::Referenced](../base/Referenced)
-[simul::sky::BaseKeyframer](BaseKeyframer)
-[simul::sky::BaseSkyInterface](BaseSkyInterface)
+[simul::base::Referenced](../base/referenced)
+[simul::sky::BaseKeyframer](basekeyframer)
+[simul::sky::BaseSkyInterface](baseskyinterface)
 
 Functions
 ---

@@ -108,6 +108,4 @@ Fields
 
 **Width**  The size of the buffer
 
-**Height**  The size of the buffer
-
 **buffer_texture**  The depth buffer.
