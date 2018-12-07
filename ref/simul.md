@@ -8,7 +8,6 @@ namespace simul
 
 | Include: | PlugIns/TrueSkyPluginRender/PluginTrueSkyRenderer.h |
 
-OSX
   
 
 
@@ -20,6 +19,5 @@ OSX
 | [namespace plugin](simul/plugin) |  |
 | [namespace sky](simul/sky) |  |
 
-OSX
   
 

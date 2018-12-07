@@ -89,4 +89,4 @@ Unity-specific device event. Calls StaticSetGraphicsDevice() if needed.
 Enums
 ---
 
-**RenderStyle**  Windows & XBox
+**RenderStyle**  
