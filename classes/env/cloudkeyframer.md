@@ -3,9 +3,6 @@ title: The Cloud Keyframer
 layout: reference
 weight: 0
 ---
-The Cloud Keyframer
-===
-
 ========<br>Previous: Unresolved reference sky_keyframer
 
 Updating

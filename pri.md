@@ -3,10 +3,7 @@ title: The Plugin Rendering Interface
 layout: reference
 weight: 40
 ---
-The Plugin Rendering Interface
-===
-
-=========================<br>Previous: rendering
+=========================<br>Previous: <a href="rendering">Rendering the Environment</a>
 <hr size="1">
 
 One way to connect trueSKY to a game or simulation engine is using the Plugin Rendering Interface.
@@ -80,4 +77,4 @@ float StaticGetRenderFloatAtPosition(const char* name,const float *pos);
 bool StaticFillColourTable(unsigned uid,int x,int y,int z,float *target);
 
 <hr>
-Next: classes
+Next: <a href="classes">The trueSKY Classes</a>

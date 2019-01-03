@@ -3,10 +3,7 @@ title: Controlling the Environment
 layout: reference
 weight: 0
 ---
-Controlling the Environment
-===
-
-===<br>Previous: classes
+===<br>Previous: <a href=".">The trueSKY Classes</a>
 
 ## Updating ##
 
