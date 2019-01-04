@@ -7,7 +7,7 @@ weight: 2
 
 
 
-Previous: Unresolved reference intro
+Previous: <a href="intro">Introduction</a>
 
 
 Unity
@@ -43,13 +43,14 @@ You should create an instance of simul::clouds::Environment, which is persistent
 simul::clouds::Environment *environment=NULL;
 ~~~~~~~~~~~~~~~
 
-Apply your trueSKY licence key (see Unresolved reference man_a_licensingmore details), and initialize the Environment instance:
+Apply your trueSKY licence key (see <a href="licensing">Licensing</a>for more details), and initialize the Environment instance:
 ~~~~~~~~~~~~~~~{.c}
 simul::base::SetLicence(SIMUL_LICENSE_KEY);
 environment=new simul::clouds::Environment();
 ~~~~~~~~~~~~~~~
 
-The Environment is API-neutral, it calculates and updates environment data. We will create a persistent simul::crossplatform::RenderPlatform RenderPlatform,
+The Environment is API-neutral, it calculates and updates environment data. We will create a persistent [simul::crossplatform::RenderPlatform](/ref/simul/crossplatform/renderplatform)
+,
 whose class depends on the graphics API we use:
 
 ~~~~~~~~~~~~~~~{.c}
@@ -96,7 +97,8 @@ deviceContext.viewStruct.depthTextureStyle      =crossplatform::PROJECTION;
 deviceContext.viewStruct.view                           =viewMatrix;
 deviceContext.viewStruct.proj                           =projectionMatrix;
 ~~~~~~~~~~~~~~~
-We've created a simul::crossplatform::DeviceContext deviceContextobject that we will pass to the render functions.
+We've created a [simul::crossplatform::DeviceContext](/ref/simul/crossplatform/devicecontext)
+object that we will pass to the render functions.
 This object encapsulates the platform-specific context - in this case it's
 an ID3D11DeviceContext pointer - and view-specific information: the view and projection matrices for example.
 
@@ -116,10 +118,12 @@ weatherRenderer->RemoveView(view_id);
 to free up GPU memory if a view is removed.
 
 We specify the depth texture style so that trueSKY knows how to interpret the
-depth information you pass to it. The matrices (simul::math::Matrix4x4 Matrix4x4) are row-major view and projection matrices stored as a simple block of 16 floats - you can cast from most standard matrix classes directly.
+depth information you pass to it. The matrices ([simul::math::Matrix4x4](/ref/simul/math/matrix4x4)
+) are row-major view and projection matrices stored as a simple block of 16 floats - you can cast from most standard matrix classes directly.
 
-Once per frame, before rendering , we must call simul::clouds::BaseWeatherRenderer::PreRenderUpdate PreRenderUpdate, passing
-a deviceContext that refers to main view.
+Once per frame, before rendering , we must call [simul::clouds::BaseWeatherRenderer::PreRenderUpdate](/ref/simul/clouds/baseweatherrenderer/prerenderupdate)
+, passing
+a deviceContext that refers to mainview.
 ~~~~~~~~~~~~~~~{.cpp}
 weatherRenderer->PreRenderUpdate(deviceContext,real_time_s);
 ~~~~~~~~~~~~~~~
@@ -141,7 +145,7 @@ but the chosen number depends on how bright you want the sky to be relative to y
 We use *is_cubemap* to specify whether we're doing a cubemap render. If so,
 shortcuts will be used to draw with less detail. We pass a depth texture, because the atmospherics and clouds need to use this.
 The *depthViewport* specifies what area of the texture is being used for the current view (some engines store a larger texture and use a portion of it): pass NULL here to use the entire texture.
-See also man_5_classes_ooo3_mixed Mixed Resolution Rendering.
+See also <a href="classes/mixed">Mixed Resolution Rendering</a>.
 
 
 Platform considerations
@@ -212,4 +216,4 @@ To add True Sky to an OpenGL project:
 simul::opengl::PushShaderPath("shaders/");
 ~~~~~~~~~~~~~~~
 
-Next: Unresolved reference rendering
+Next: <a href="rendering">Rendering the Environment</a>

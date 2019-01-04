@@ -1,10 +1,5 @@
 ---
-title: Controlling the Environment
+title: The Cloud Keyframer
 layout: reference
 weight: 0
 ---
-===<br>Previous: <a href=".">The trueSKY Classes</a>
-
-## Updating ##
-
-  
