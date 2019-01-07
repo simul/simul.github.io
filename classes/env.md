@@ -1,46 +1,55 @@
 ---
 title: Controlling the Environment
 layout: reference
-weight: 0
+weight: 510
 ---
-Controlling the Environment
-===
 
-===<br>Previous: \ref classes
+
+
+
+Previous: [classes](/ref/classes)
+
 
 ## Updating ##
-The \link simul::clouds::Environment Environment\endlink object stores an instance of \link simul::sky::SkyKeyframer SkyKeyframer\endlink
-and two instances of \link simul::clouds::CloudKeyframer CloudKeyframer\endlink, and performs the necessary initialization and updates.
+The [simul::clouds::Environment](/ref/simul/clouds/environment)
+object stores an instance of [simul::sky::SkyKeyframer](/ref/simul/sky/skykeyframer)
 
-As described in \ref man_2_gettingstarted, you will declare and create an instance of Environment. If you have a sequence file (.sq or .seq)
-saved from the \ref man_6_sequencer, you can load this into the Environment and its keyframers will be appropriately initialized with global values
+and two instances of [simul::clouds::CloudKeyframer](/ref/simul/clouds/cloudkeyframer)
+, and performs the necessary initialization and updates.
+
+As described in [gettingstarted](/ref/gettingstarted)
+, you will declare and create an instance of Environment. If you have a sequence file (.sq or .seq)
+saved from the [sequencer](/ref/sequencer)
+, you can load this into the Environment and its keyframers will be appropriately initialized with global values
 and keyframes.
 
-        simul::clouds::Environment *environment=NULL;
-        ...
-        environment=new simul::clouds::Environment();
+simul::clouds::Environment *environment=NULL;
+...
+environment=new simul::clouds::Environment();
 
 You can either load a preconfigured sky sequence (.sq file), control the environment direct from the trueSKY API, or both together.
 To load a file (the .sq is a human-readable text file format), create a TextFileInput object.
 
-        simul::crossplatform::TextFileInput ifs;
-        ifs.Load("test_file.sq");
-        environment->LoadFromText(ifs);
+simul::crossplatform::TextFileInput ifs;
+ifs.Load("test_file.sq");
+environment->LoadFromText(ifs);
 
 You can use your own text loader class in place of TextFileInput.
 
 The properties and keyframes of each Keyframer can also be modified in real time.
-The keyframes each have a \a time value, and the keyframer tracks a current time through these frames, interpolating properties as it does so. This time value is obtained
+The keyframes each have a timevalue, and the keyframer tracks a current time through these frames, interpolating properties as it does so. This time value is obtained
 or set using the skyKeyframer:
 
-        float time=environment->skyKeyframer->GetTime();
+float time=environment->skyKeyframer->GetTime();
 
 You don't need to update the keyframers specifically, so long as you're using simul::clouds::Environment::Update() once per frame.
 
 For more information on the two types of keyframer, see:
-\subpage man_5_classes_ooo1_environment_ooo1_sky_keyframer
-\subpage man_5_classes_ooo1_environment_ooo2_cloud_keyframer
+[classes::env::sky_keyframer](/ref/classes/env/sky_keyframer)
+
+[classes::env::cloud_keyframer](/ref/classes/env/cloud_keyframer)
+
 
 <hr size="1">
-Next: \ref sky_keyframer
-  
+Next: [classes::env::sky_keyframer](/ref/classes/env/sky_keyframer)
+

@@ -3,15 +3,12 @@ title: The Sky Sequencer
 layout: reference
 weight: 60
 ---
-The Sky Sequencer
-===
-
-=================<br>Previous: \ref classes::mixed
+=================<br>Previous: <a href="classes/mixed">Mixed Resolution Compositing</a>
 
 The Sky Sequencer is a tool for artists, technical artists, level designers, 
-    and mission planners. It also helps programmers to understand the workings of True Sky's sky, 
-    clouds and time-of-day systems.
-    
+and mission planners. It also helps programmers to understand the workings of True Sky's sky, 
+clouds and time-of-day systems.
+
 To launch the Sequencer, go to Start Menu/All Programs/Simul/Sky Sequencer/Sky Sequencer.
 
 The Sequencer Window
@@ -19,7 +16,8 @@ The Sequencer Window
 
 The Timeline
 -------------
-\image html "Timeline.png"
+![](/Images/Timeline.png)
+
 
 To change the current time, drag the red vertical line (the time marker) by its 
 handle. To change the visible time-window, drag the timeline at the bottom. To 
@@ -30,13 +28,16 @@ multiple keyframes, or box-select them. When one or more keyframes are selected,
 their properties can be changed in the property box. Changing any property 
 affects all selected keyframes of the appropriate type (e.g. all cloud 
 keyframes, or all sky keyframes.)
-\image html "SkyKeyframeSelect.png"
+![](/Images/SkyKeyframeSelect.png)
+
 
 To select a whole row of keyframes, double-click on the space in-between them.
-\image html "SkyKeyframesSelect.png"
+![](/Images/SkyKeyframesSelect.png)
+
 
 To select a layer (the sky, a layer of clouds, etc.), click on its name in the column on the left of the timeline.
-\image html "SkyLayerSelect.png"
+![](/Images/SkyLayerSelect.png)
+
 
 To add a keyframe, right-click on the timeline and select the "Add sky 
 keyframe..." or "Add cloud keyframe..." option.
@@ -47,7 +48,7 @@ effect, and light colour.
 Cloud keyframes determine the properties of the cloud layer at a given time. As 
 the light direction changes with time of day, it is necessary to have enough 
 cloud keyframes to reflect the lighting throughout the day.
-        
+
 Map Window
 ----------
 This window shows the cloud keyframes in a plan view. Wind heading and speed affects the
@@ -84,7 +85,8 @@ updates - this doesn't affect the measurements.
 </td>
 <td>
 
-\image html "PerformanceWindow.jpg"</td>
+![](/Images/PerformanceWindow.jpg)
+</td>
 </td>
 </table>
 
@@ -93,7 +95,8 @@ Features
 
 <h2>Presets
 </h2> 
-\image html "Presets.png"
+![](/Images/Presets.png)
+
 
 The Sky and Clouds (both 2D and 3D) have various presets available, to quickly set a keyframe to a specific arrangement of values, designed to simulate the desired outcome. Be this a specific type of cloud or just a clear sky. The available presets are, for the Sky: Clear Sky and Fog, for 2D Clouds: Cirrus, Cirrocumulus and Altocumulus and for 3D Clouds: Cumulonimbus, Cumulus, Stratus, Stratocumulus and Altocumulus.
 
@@ -178,7 +181,8 @@ In the sequencer, clouds can be edited in two ways. Clicking (or shift-clicking)
 <tr>
 <td>Persistence</td><td>Fractal persistence to use when generating the noise texture. </td></tr>
 </table> 
-See the public attributes of \link simul::clouds::CloudKeyframer CloudKeyframer\endlink for a full description of all the cloud layer properties.
+See the public attributes of [simul::clouds::CloudKeyframer](/ref/simul/clouds/cloudkeyframer)
+for a full description of all the cloud layer properties.
 
 <h3>Cloud Keyframe Properties</h3>
 Note that for 2D clouds, there is no Weather Effects section. The cloud keyframe properties accessible in the sequencer are:
@@ -267,7 +271,8 @@ Note that for 2D clouds, there is no Weather Effects section. The cloud keyframe
 <td>Waver</td><td>How much precipitation layers waver as they fall. </td></tr>
 </table>
 
-See the public attributes of \link simul::clouds::CloudKeyframe CloudKeyframe\endlink for a full description of all the cloud keyframe properties.
+See the public attributes of [simul::clouds::CloudKeyframe](/ref/simul/clouds/cloudkeyframe)
+for a full description of all the cloud keyframe properties.
 
 <h2>The Sky</h2>
 In the sequencer, just as with clouds, the sky can be edited in two ways. Clicking (or shift-clicking) individual keyframes will allow the properties for one or more keyframes at any point in time to be altered. Alternatively, clicking the Sky column will allow the properties for the sky layer to be altered. These properties will impact the entire sequence indefinitely, allowing you to adjust the amount of ozone, alter the diameter of the sun/moon, set the start date of the scene and more. Whereas keyframe properties are temporal, allowing you to adjust settings like visibility, haze, eccentricity and so on, for the point in time at which the keyframe is active. Note: If just a single keyframe is present in the sequencer, then those settings will be applied continously. 
@@ -349,7 +354,8 @@ appear only half as dim, and so on.
 <tr>
 <td>Find Constellation</td><td>Find a star constellation at given coordinates. </td></tr>
 </table>
-See the public attributes of \link simul::sky::SkyKeyframer SkyKeyframer\endlink for a full description of all the sky layer properties.
+See the public attributes of [simul::sky::SkyKeyframer](/ref/simul/sky/skykeyframer)
+for a full description of all the sky layer properties.
 
 <h3>Sky Keyframe Properties</h3>
 Sky keyframe properties allow you to change particular elements of one or more keyframes at a time. The sky keyframe properties accessible in the sequencer are:
@@ -395,7 +401,8 @@ Sky keyframe properties allow you to change particular elements of one or more k
 <tr>
 <td>Moon elevation</td><td>Controls how high the moon is in the sky (if moon position not automatic). </td></tr>
 </table>
-See the public attributes of \link simul::sky::SkyKeyframe SkyKeyframe\endlink for a full description of all the sky keyframe properties.
+See the public attributes of [simul::sky::SkyKeyframe](/ref/simul/sky/skykeyframe)
+for a full description of all the sky keyframe properties.
 
 <hr>
-Next: \ref licensing
+Next: <a href="licensing">Licensing</a>
