@@ -32,4 +32,6 @@ Functions
 ### <a name="Setup"/>void Setup(unsigned int freq, int RandomSeed, int octaves, float persistence)
 Define the grid of pseudo-random numbers to be used in the PerlinNoise3D function. The parameter freq is the
 frequency, or grid-size.
-
+\p RandomSeed is a reproducible seed for the pseudo-random number generation.
+\p octaves is the number of octaves of noise super-imposed.
+\p persistence is the relative scaling of subsequent octaves - higher persistence leads to a more noisy function.

@@ -40,7 +40,9 @@ Functions
 | void | [SetUnfenceable](#SetUnfenceable)(bool v) |
 
 Declare like so:
-
+\code
+StructuredBuffer<Example> example;
+\endcode
   
 
 
@@ -73,6 +75,7 @@ Clear the fence: this texture is ok to use now.
 Deactivate as a rendertarget.
 
 ### <a name="ensureTexture2DSizeAndFormat"/>bool ensureTexture2DSizeAndFormat(simul::crossplatform::RenderPlatform renderPlatform, int w, int l, simul::crossplatform::PixelFormat f, bool computable, bool rendertarget, bool depthstencil, int num_samples, int aa_quality, bool wrap, vec4 clear, float clearDepth, uint clearStencil)
+Initialize as a standard 2D texture. Not all platforms need \a wrap to be specified. Returns true if modified, false otherwise.
 
 ### <a name="ensureTexture3DSizeAndFormat"/>bool ensureTexture3DSizeAndFormat(simul::crossplatform::RenderPlatform renderPlatform, int w, int l, int d, simul::crossplatform::PixelFormat frmt, bool computable, int mips, bool rendertargets)
 Initialize as a volume texture.

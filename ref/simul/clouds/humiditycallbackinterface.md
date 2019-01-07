@@ -11,7 +11,8 @@ class HumidityCallbackInterface
 A callback class to control the distribution of humidity in a cloud node. The value returned by
 GetHumidityMultiplier is multiplied by the calculated cloud density.
 Derive your own class from HumidityCallbackInterface and implement GetHumidityMultiplier,
-
+then call \link simul::clouds::FastCloudNode::AddHumidityCallback AddHumidityCallback \endlink
+to attach it to the cloud node.
   
 
 
@@ -23,7 +24,8 @@ Functions
 A callback class to control the distribution of humidity in a cloud node. The value returned by
 GetHumidityMultiplier is multiplied by the calculated cloud density.
 Derive your own class from HumidityCallbackInterface and implement GetHumidityMultiplier,
-
+then call \link simul::clouds::FastCloudNode::AddHumidityCallback AddHumidityCallback \endlink
+to attach it to the cloud node.
   
 
 

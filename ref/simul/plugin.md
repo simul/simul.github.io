@@ -89,4 +89,4 @@ Unity-specific device event. Calls StaticSetGraphicsDevice() if needed.
 Enums
 ---
 
-**RenderStyle**  
+**RenderStyle**  Attribute to make function be exported from a plugin:

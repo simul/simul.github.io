@@ -40,8 +40,11 @@ Functions
 | void | [EnsureSunAndMoonValidity](#EnsureSunAndMoonValidity)(simul::sky::SkyKeyframe K1) |
 
 An instance of the SkyKeyframer is kept as a member of the Environment instance.
-The SkyKeyframer interpolates the sky values, and passes the keyframe and interpolation data to external renderers,
-
+        The SkyKeyframer interpolates the sky values, and passes the keyframe and interpolation data to external renderers,
+        e.g. \link simul::sky::BaseSkyRenderer BaseSkyRenderer\endlink and \link simul::sky::BaseAtmosphericsRenderer BaseAtmosphericsRenderer\endlink.
+        The generated tables are calculated for multiple altitudes - specified with SetNumAltitudes.
+The SunIrradiance value determines the colour and strength of sunlight, and is expressed in physical units. The apparent size of the sun is
+set using SetSunRadiusArcMinutes.
   
 
 
@@ -100,27 +103,27 @@ This is a checksum that only changes if an in-use subdivision has modified (cycl
 Return true if the keyframer has the floating point value with the given, case-insensitive, name; return false otherwise.
 
 These are the properties the SkyKeyframer has:
-- LatitudeRadians
-- LongitudeRadians
-- MaxStarMagnitude
-- StarBrightness
-- BackgroundBrightness
-- MaxDistanceKm
-- MaxAltitudeKm
-- OvercastEffectStrength
-- TimezoneHours
-- SunRadiusArcMinutes
-- MoonRadiusArcMinutes
+                - LatitudeRadians
+                - LongitudeRadians
+                - MaxStarMagnitude
+                - StarBrightness
+                - BackgroundBrightness
+                - MaxDistanceKm
+                - MaxAltitudeKm
+                - OvercastEffectStrength
+                - TimezoneHours
+                - SunRadiusArcMinutes
+                - MoonRadiusArcMinutes
 
 
 ### <a name="HasInt"/>bool HasInt(char name)
 Return true if the keyframer has an integer or true/false value with the given, case-insensitive, name; return false otherwise. 
 
 These are the properties the SkyKeyframer has:
-- StartDayNumber
-- NumAltitudes
-- NumElevations
-- NumDistances
+        - StartDayNumber
+        - NumAltitudes
+        - NumElevations
+        - NumDistances
 
 
 ### <a name="HighlightConstellation"/>void HighlightConstellation(char)

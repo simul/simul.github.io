@@ -57,6 +57,13 @@ A texture that shows what texels are up to date. Where the value is zero, we sho
 ### <a name="RenderDepthBuffers"/>void RenderDepthBuffers(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture depthTexture, simul::crossplatform::Viewport viewport, int x0, int y0, int dx, int dy)
 Debugging onscreen info:
 
+\param [in,out] deviceContext   Context for the device.
+\param  depthTexture                    The main depth texture.
+\param  viewport                                The viewport in use for the depth texture.
+\param  x0                                              The left edge of area to use for the debug display.
+\param  y0                                              The top of this debug display.
+\param  dx                                              The width of the display.
+\param  dy                                              The height of the display.
 
 ### <a name="Swap"/>void Swap()
 Swap stochastic texture buffers.

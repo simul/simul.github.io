@@ -84,6 +84,7 @@ Create the member sub-objects: CloudRenderer etc.
 Destroy a base weather renderer.
 
 ### <a name="GetAmbientLightColour"/>simul::sky::float4  const & GetAmbientLightColour(float view_altitude_km)
+Get the HDR ambient colour, as seen from the specified altitude \param view_altitude_km
 
 ### <a name="GetBaseAtmosphericsRenderer"/>simul::sky::BaseAtmosphericsRenderer * GetBaseAtmosphericsRenderer()
 Get a pointer to the atmospheric renderer.
@@ -100,9 +101,10 @@ a cloud density query so that lightning can't come from empty sky.
 
 ### <a name="GetHorizonColour"/>simul::sky::float4  const & GetHorizonColour(float view_altitude_km)
 Set a depth texture, whose alpha values represent the depth co-ordinate. This will be used when clouds are rendered in front of terrain etc.
-
+Get the representative HDR colour of the horizon, as seen from the specified altitude \param view_altitude_km .
 
 ### <a name="GetLightColour"/>simul::sky::float4  const & GetLightColour(float view_altitude_km)
+Get the HDR light colour, as seen from the specified altitude \param view_altitude_km
 
 ### <a name="GetLightningRenderer"/>simul::clouds::BaseLightningRenderer * GetLightningRenderer()
 Get a pointer to the lightning renderer.
@@ -124,7 +126,7 @@ Copy the properties of one BaseWeatherRenderer to another, including copying the
 
 ### <a name="PreRenderUpdate"/>void PreRenderUpdate(simul::crossplatform::DeviceContext deviceContext, float real_time)
 Once per-frame update. Do this before any rendering each frame. For most platform implementations, you should set the
-
+matrices relevant to the \em main view before calling this.
 
 ### <a name="RecompileShaders"/>void RecompileShaders()
 Platform-dependent function to reload the shaders - only use this for debug purposes.
@@ -135,11 +137,30 @@ Ensure that per-view objects are destroyed for the view in question: they will b
 ### <a name="Render"/>void Render(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct2, simul::clouds::TrueSkyRenderMode renderMode, float exposure, float gamma, simul::crossplatform::Texture mainDepthTexture, simul::crossplatform::Texture cubemapTexture, simul::crossplatform::Viewport depthViewport, simul::crossplatform::Viewport viewports, vec3 cubemap_ground_colour, int amortization)
 Render the sky including atmospherics, into the current rendertarget, using a supplied depth texture.
 
+\em deviceContext is the platform-dependent render context,
+\em viewStruct2 is the view structure for alternate eye in VR,
+\em exposure is a multiplier for the rendered sky brightness,
+The \em view_id is an integer that distinguishes between multiple simultaneous viewports onscreen.
+By convention, viewport 0 is the main view, and viewport 1 is the cubemap for reflections and lighting.
+If \em is_cubemap is set, low-definition rendering is used.
+The \em mainDepthTexture is a single-sampled or MSAA depth texture. You can use a simul::crossplatform::Texture-derived
+class to wrapper your depth texture.
+The \em depthViewport determines what part of the depth texture represents this viewport - normally (0,0,1,1).
+Optional \em viewports specifies the left and right eye viewports if we're rendering both at once in VR.
 
 ### <a name="RenderCelestialBackground"/>void RenderCelestialBackground(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct, simul::clouds::TrueSkyRenderMode renderMode, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float exposure)
 Draw the sun, moon and stars - call this while the depth buffer is bound.
 
 ### <a name="RenderMixedResolution"/>bool RenderMixedResolution(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct2, simul::crossplatform::Texture depthTexture, simul::clouds::TrueSkyRenderMode renderMode, float exposure, float gamma, simul::crossplatform::Viewport depthViewports, simul::crossplatform::Texture ambientCubemapTexture)
+\em deviceContext is the platform-dependent render context, \em exposure is a multiplier for the rendered sky brightness,
+The \em view_id is an integer that distinguishes between multiple simultaneous viewports onscreen.
+By convention, viewport 0 is the main view, and viewport 1 is the cubemap for reflections and lighting.
+If \em is_cubemap is set, low-definition rendering is used.
+The \em mainDepthTexture is a single-sampled or MSAA depth texture. You can use a simul::crossplatform::Texture-derived
+class to wrapper your depth texture.
+The \em lowResDepthTexture is an API-dependent texture or texture resource pointer, with near far depth in the r and g, and b 0 or 1 for edges.
+The \em depthViewportXYWH determines what part of the depth texture represents this viewport - normally (0,0,1,1).
+Returns true if there is a lightpass.
 
 ### <a name="RestoreDeviceObjects"/>void RestoreDeviceObjects(simul::crossplatform::RenderPlatform renderPlatform)
 Initialize the  API-dependent objects in the weather renderer and its member renderers. This is usually needed

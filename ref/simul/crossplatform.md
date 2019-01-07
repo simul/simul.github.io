@@ -84,6 +84,11 @@ Functions
 ### <a name="DrawGrid"/>void DrawGrid(simul::crossplatform::DeviceContext deviceContext, vec3 centrePos, float square_size, float brightness, int numLines)
 Draw a horizontal grid in 3D.
 
+\param [in,out] deviceContext   Context for the device.
+\param [in]     centrePos       Origin of the grid in 3D.
+\param [in]     square_size     Spacing between lines - in whatever units the renderer is working in.
+\param [in]     brightness      Brightness of the lines.
+\param [in]     numLines        Number of gridlines to draw.
 
 ### <a name="GetCameraPosVector"/>void GetCameraPosVector(float v, float dcam_pos, float view_dir, float up)
 Get the camera position, direction, and up-vector, from a view matrix v.
@@ -138,14 +143,14 @@ Enums
 **ShaderResourceType**  This refers to the type of a shader resource, which should be compatible with the type of any resource assigned to it.
 
 **ShaderType**  
-OpenGL                                  |       Direct3D
--------------------------------------------
-Vertex Shader                   |       Vertex Shader
-Tessellation Control    |       Hull Shader
-Tessellation Evaluation |       Domain Shader
-Geometry Shader                 |       Geometry Shader
-Fragment Shader                 |       Pixel Shader
-Compute Shader                  |       Compute Shader
+                OpenGL                                  |       Direct3D
+                -------------------------------------------
+                Vertex Shader                   |       Vertex Shader
+                Tessellation Control    |       Hull Shader
+                Tessellation Evaluation |       Domain Shader
+                Geometry Shader                 |       Geometry Shader
+                Fragment Shader                 |       Pixel Shader
+                Compute Shader                  |       Compute Shader
 
 
 **Topology**  A cross-platform equivalent to the OpenGL and DirectX vertex topology formats

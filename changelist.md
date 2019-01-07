@@ -7,4 +7,6 @@ Change List
 ===
 
 ===========
+\verbinclude ChangeList.txt
 
+<hr>

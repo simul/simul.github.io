@@ -23,7 +23,7 @@ The Math library depends on the Simul/Base library.
 Classes and Structures
 ---
 
-| class [Matrix](math/matrix) | A Matrix class.<br> |
+| class [Matrix](math/matrix) |  A Matrix class.<br> |
 | class [Matrix4x4](math/matrix4x4) |  |
 | class [Noise1D](math/noise1d) |  |
 | class [Noise2D](math/noise2d) |  |
@@ -59,6 +59,7 @@ Functions
 ---
 
 ### <a name="CrossProduct"/>void CrossProduct(simul::math::Vector3 result, simul::math::Vector3 v1, simul::math::Vector3 v2)
+Catmull-Rom interpolate with parameter \a t along a spline formed by vectors \a x0 , \a x1 , \a x2 and \a x3 .
 
 ### <a name="DotProduct3"/>float DotProduct3(simul::math::Vector3 v1, simul::math::Vector3 v2)
 Linearly interpolate between two vectors.

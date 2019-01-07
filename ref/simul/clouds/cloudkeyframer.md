@@ -9,7 +9,10 @@ class CloudKeyframer
 | Include: | Clouds/BaseWeatherRenderer.h |
 
 
-A class to manage interpolation between cloud states over time.
+       A class to manage interpolation between cloud states over time.
+       Typically, a CloudKeyframer is created and updated by its \link simul::clouds::Environment Environment\endlink.
+
+       If time and daytime are linked in the SkyKeyframer, time is in days, otherwise the timescale is in arbitrary units.
 
   
 
@@ -65,7 +68,10 @@ Functions
 | unsigned int | [GetOffsetChecksum](#GetOffsetChecksum)() |
 
 
-A class to manage interpolation between cloud states over time.
+       A class to manage interpolation between cloud states over time.
+       Typically, a CloudKeyframer is created and updated by its \link simul::clouds::Environment Environment\endlink.
+
+       If time and daytime are linked in the SkyKeyframer, time is in days, otherwise the timescale is in arbitrary units.
 
   
 
@@ -79,10 +85,13 @@ Functions
 ---
 
 ### <a name="AddStorm"/>simul::clouds::CloudKeyframer::Storm * AddStorm(float t0, float t1, vec2 centre_km, float r_km)
+Add a storm between the times specified, at the given centre \em c, with horizontal radius r (km).
 
 ### <a name="DeleteStorm"/>void DeleteStorm(int i)
+Remove the storm with index \em i.
 
 ### <a name="DeleteStormByUniqueId"/>void DeleteStormByUniqueId(unsigned int uid)
+Remove the storm with unique id \em uid.
 
 ### <a name="ForceRelight"/>void ForceRelight()
 For debugging purposes only.
@@ -107,6 +116,8 @@ Get the origin of the render grid; this is adjusted internally when Relocate() i
 Get the offset of the first keyframe, a mutable property determined by Relocate().
 
 ### <a name="GetInterpolatedKeyframe"/>simul::clouds::CloudKeyframe  & GetInterpolatedKeyframe()
+Get the current \em interpolated keyframe, which holds the values interpolated from the two surrounding keyframes at
+any given time.
 
 ### <a name="GetInterpolation"/>float GetInterpolation()
 Get the interpolation - between zero and one. This is based on InterpStepTime and the sky's Daytime property.
@@ -129,14 +140,19 @@ Number of keyframes.
 The number of storms on the timeline.
 
 ### <a name="GetStorm"/>simul::clouds::CloudKeyframer::Storm  const * GetStorm(float t)
+Get the storm, if any, that is active at time \em t.
 
 ### <a name="GetStorm"/>simul::clouds::CloudKeyframer::Storm * GetStorm(float t)
+Get the storm, if any, that is active at time \em t.
 
 ### <a name="GetStorm"/>simul::clouds::CloudKeyframer::Storm * GetStorm(int i)
+Return the storm with index \em i.
 
 ### <a name="GetStormByUniqueId"/>simul::clouds::CloudKeyframer::Storm * GetStormByUniqueId(unsigned int uid)
+Return the storm with unique identifier \em uid.
 
 ### <a name="GetStormByUniqueId"/>simul::clouds::CloudKeyframer::Storm  const * GetStormByUniqueId(unsigned int uid)
+Return the storm with unique identifier \em uid.
 
 ### <a name="GetSubdivisionChecksum"/>unsigned int GetSubdivisionChecksum()
 This is a checksum that only changes if an in-use subdivision has modified (cycling does not change it).
@@ -175,6 +191,8 @@ Force clouds to regenerate.
 Set the sky - this is used to light the clouds over time.
 
 ### <a name="SetUniformKeyframes"/>void SetUniformKeyframes(int StepsPerDay, float range)
+\deprecated Apply the cloud's properties to all keyframes.
+Create a number of evenly spaced keyframes.
 
 ### <a name="SetVolume"/>void SetVolume(int id, simul::clouds::CloudVolumeType type, simul::crossplatform::Quaterniond orig, vec3 scale, vec2 rake)
 Set the properties of a custom cloud volume:

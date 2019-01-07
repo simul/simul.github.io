@@ -8,6 +8,7 @@ namespace simul
 
 | Include: | PlugIns/TrueSkyPluginRender/PluginTrueSkyRenderer.h |
 
+Nintendo Switch
   
 
 
@@ -19,5 +20,6 @@ namespace simul
 | [namespace plugin](simul/plugin) |  |
 | [namespace sky](simul/sky) |  |
 
+Nintendo Switch
   
 

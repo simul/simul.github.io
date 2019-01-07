@@ -40,7 +40,7 @@ Functions
 
 ### <a name="AcquireFileContents"/>void AcquireFileContents(void pointer, unsigned int bytes, char filename_utf8, bool open_as_text)
 Put the file's entire contents into memory, by allocating sufficiently many bytes, and setting the pointer.
-The memory should later be freed by a call to ReleaseFileContents.
+The memory should later be freed by a call to \ref ReleaseFileContents.
 The filename should be unicode UTF8-encoded.
 
 ### <a name="FileExists"/>bool FileExists(char filename_utf8)

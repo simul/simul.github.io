@@ -8,7 +8,7 @@ struct BaseKeyframe
 
 | Include: | Sky/BaseKeyframer.h |
 
-The base keyframe structure, containing time, the time that the keyframe represents.
+The base keyframe structure, containing \ref time, the time that the keyframe represents.
   
 
 
@@ -28,7 +28,7 @@ Functions
 | void | [SetFloat](#SetFloat)(char name, float val) |
 | void | [SetInt](#SetInt)(char, int) |
 
-The base keyframe structure, containing time, the time that the keyframe represents.
+The base keyframe structure, containing \ref time, the time that the keyframe represents.
   
 
 

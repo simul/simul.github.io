@@ -37,7 +37,7 @@ Default constructor.
 
 ### <a name="AddView"/>simul::crossplatform::View * AddView(int)
 Adds a view.
-
+\return An int view_id.
 
 ### <a name="CleanUp"/>void CleanUp(int current_framenumber, int max_age)
 Delete old views
@@ -47,7 +47,7 @@ Clears this object to its blank/initial state.
 
 ### <a name="GetView"/>simul::crossplatform::View * GetView(int view_id)
 Gets a view.
-
+\return null if it fails, else the view.
 
 ### <a name="GetViews"/>simul::crossplatform::ViewManager::ViewMap  const & GetViews()
 Gets the views.

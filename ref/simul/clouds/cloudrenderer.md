@@ -46,13 +46,13 @@ Functions
 | void | [SetPointLight](#SetPointLight)(int id, vec3 pos, float min_radius, float max_radius, vec3 irradiance) |
 
 There should exist a "trueSKY space", where the origin(0,0,0 Cartesian) is at global mean sea level, and an arbitrary point on the Earth's surface.
-The Z axis points up, the X and Y axes are arbitrary (for reasons described below). To avoid singularities, this point, and the orientation of its axes
-should be represented by a double-precision quaternion, which represents the rotation from (say) latitude and longitude zero with X pointing East and Y pointing North.
+        The Z axis points up, the X and Y axes are arbitrary (for reasons described below). To avoid singularities, this point, and the orientation of its axes
+        should be represented by a double-precision quaternion, which represents the rotation from (say) latitude and longitude zero with X pointing East and Y pointing North.
 
-The Volume Window is a deformed cuboid, its upper and lower surfaces matching the Earth's curvature. On the GPU, it is a 3D texture.
+        The Volume Window is a deformed cuboid, its upper and lower surfaces matching the Earth's curvature. On the GPU, it is a 3D texture.
 
-This trueSKY space moves in steps equivalent to one horizontal texel. The function CloudRenderer::MoveCloudWindow(x,y) does this.
-This should be done when the chosen viewpoint (this is up to you) moves more than a texel in any horizontal direction. This way, we need only update the edges as the window moves.
+        This trueSKY space moves in steps equivalent to one horizontal texel. The function CloudRenderer::MoveCloudWindow(x,y) does this.
+        This should be done when the chosen viewpoint (this is up to you) moves more than a texel in any horizontal direction. This way, we need only update the edges as the window moves.
   
 
 

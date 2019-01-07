@@ -75,7 +75,7 @@ update a sphere that will push clouds aside.
 Get a value corresponding to the given enum.
 
 ### <a name="GetBool"/>bool GetBool(char name)
-Returns a boolean value. See SetBool.
+Returns a boolean value. See \ref SetBool.
 
 ### <a name="GetCloudPointQuery"/>void GetCloudPointQuery(int id, float pos, VolumeQueryResult res)
 Fill in a query structure based on cloud properties at a position.
@@ -87,7 +87,7 @@ Get the enum that corresponds to a given name. A return value of zero means the 
 Returns the environment object.
 
 ### <a name="GetFloat"/>float GetFloat(char name)
-Returns a floating point value - see SetFloat.
+Returns a floating point value - see \ref SetFloat.
 
 ### <a name="GetFloatAtPosition"/>float GetFloatAtPosition(simul::plugin::FloatAtPosition f, float pos, int uid)
 Property at a given position.
@@ -96,9 +96,10 @@ Property at a given position.
 Property at a given position.
 
 ### <a name="GetInt"/>int GetInt(char name, int numparams, simul::base::Variant params)
-Returns an integer value - see SetInt.
+Returns an integer value - see \ref SetInt.
 
 ### <a name="GetString"/>char  const * GetString(char name, int len)
+Returns a string - \em name should be "ConstellationNames", "HighlightConstellationNames", "memory" or "profiling".
 
 ### <a name="GetWaterEnum"/>long long GetWaterEnum(char name)
 Get the Water enum that corresponds to a given name. A return value of zero means the name was not found.
@@ -126,8 +127,10 @@ Set a boolean value. Valid names are: "ShowFades", "ShowCelestialDisplay", "Show
 A mask for cloud position
 
 ### <a name="SetFloat"/>void SetFloat(char name, float value)
+Sets a floating point value. \em name should be "Time", "Gamma", "Exposure", or "SimpleCloudShadowing".
 
 ### <a name="SetInt"/>void SetInt(char name, int value)
+Sets an integer value. \em name should be "CloudSteps", or "Downscale".
 
 ### <a name="SetMatrix4x4"/>void SetMatrix4x4(char name, float matrix4x4)
 Sets a matrix value.
@@ -137,6 +140,7 @@ For the next frame, put a light source at the specified position, with the speci
 the size of the source.
 
 ### <a name="SetString"/>void SetString(char name, char value)
+Set a string value. \em name must be "LicenceKey".
 
 ### <a name="SetTexture"/>void SetTexture(char name, void tex)
 Setting texture properties.
@@ -145,6 +149,7 @@ Setting texture properties.
 Set the water value corresponding to the given enum.
 
 ### <a name="TriggerAction"/>bool TriggerAction(char name)
+Trigger an action. \em name should be "RecompileShaders".
 
 ### <a name="UpdateProfilingText"/>void UpdateProfilingText()
 Called once per frame, updates every 256 frames.

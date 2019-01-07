@@ -33,10 +33,13 @@ Functions
 ---
 
 ### <a name="AllocateTracked"/>void * AllocateTracked(size_t nbytes, size_t align, char fn)
+Allocate \a nbytes bytes of memory, aligned to \a align and return a pointer to them.
 
 ### <a name="Deallocate"/>void Deallocate(void ptr)
+De-allocate the memory at \param address (requires that this memory was allocated with Allocate()).
 
 ### <a name="TrackVideoMemory"/>void TrackVideoMemory(void ptr, int nbytes, char fn)
+Track (but don't allocate) \a nbytes bytes of memory.
 
 ### <a name="UntrackVideoMemory"/>void UntrackVideoMemory(void ptr)
 Free the pointer from video memory tracking.

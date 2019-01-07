@@ -8,7 +8,7 @@ class Matrix
 
 | Include: | Math/Matrix.h |
 
-A Matrix class.<br>
+ A Matrix class.<br>
 
 
 Functions
@@ -45,6 +45,9 @@ Functions
 < Reset the matrix to height and width zero.
 
 ### <a name="FloatPointer"/>float * FloatPointer(unsigned int row, unsigned int col)
+@param [in]       row unsigned     The row.
+@param [in]       col unsigned     The column
+@return float * Pointer to the values at (row,col)
 
 ### <a name="MakeSymmetricFromUpper"/>void MakeSymmetricFromUpper()
 < Make a unit matrix.
