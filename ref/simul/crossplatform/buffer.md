@@ -8,8 +8,7 @@ class Buffer
 
 | Include: | Sky/BaseSkyRenderer.h |
 
-A crossplatform structure for a \#define and its possible values.
-This allows all of the macro combinations to be built to binary.
+
   
 
 
@@ -21,8 +20,7 @@ Functions
 | void * | [Map](#Map)(simul::crossplatform::DeviceContext deviceContext) |
 | void | [Unmap](#Unmap)(simul::crossplatform::DeviceContext deviceContext) |
 
-A crossplatform structure for a \#define and its possible values.
-This allows all of the macro combinations to be built to binary.
+
   
 
 

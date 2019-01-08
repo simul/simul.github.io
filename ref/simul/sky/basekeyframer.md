@@ -136,4 +136,4 @@ Save this keyframer's values to textual output.
 Text-based interface - sets the named value if it exists.
 
 ### <a name="SortKeyframes"/>void SortKeyframes()
-Make sure the keyframes are in ascending order of \a time.
+Make sure the keyframes are in ascending order of time.

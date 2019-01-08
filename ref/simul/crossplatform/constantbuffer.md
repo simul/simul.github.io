@@ -10,7 +10,7 @@ classtemplate ConstantBuffer
 
 
 [simul::crossplatform::ConstantBufferBase](constantbufferbase)
-[]()
+[](/ref/)
 
 Functions
 ---
@@ -26,7 +26,7 @@ Functions
 Base Classes
 ---
 [simul::crossplatform::ConstantBufferBase](constantbufferbase)
-[]()
+[](/ref/)
 
 Functions
 ---

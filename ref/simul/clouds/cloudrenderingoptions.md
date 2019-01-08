@@ -16,7 +16,7 @@ Functions
 
 | unsigned long long | [GetEnum](#GetEnum)(char txt_utf8) |
 
- This controls the rendering of clouds.
+This controls the rendering of clouds.
 
   
 

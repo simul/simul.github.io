@@ -65,13 +65,13 @@ Transform a direction from global to local co-ordinates.
 Transform a position from global to local co-ordinates.
 
 ### <a name="LocalMove"/>void LocalMove(simul::math::Vector3 offset)
-< Move the orientation by \param offset in global co-ordinates.
+< Move the orientation by offsetin global co-ordinates.
 
 ### <a name="LocalRotate"/>void LocalRotate(float angle, simul::math::Vector3 axis)
-< Rotate the orientation by \param angle radians about the global axis, \param axis .
+< Rotate the orientation by angleradians about the global axis, axis.
 
 ### <a name="LocalRotate"/>void LocalRotate(simul::math::Vector3 dir_sin)
-< Rotate the orientation by \param angle radians about the local axis, \param axis .
+< Rotate the orientation by angleradians about the local axis, axis.
 
 ### <a name="LocalToGlobalDirection"/>void LocalToGlobalDirection(simul::math::Vector3 dg, simul::math::Vector3 dl)
 Transform a local direction to a global one.
@@ -94,7 +94,7 @@ before using functions like this.
 < Return the oriented z-axis.
 
 ### <a name="RotateLinear"/>void RotateLinear(float angle, simul::math::Vector3 axis)
-< Move the orientation by \param offset in local co-ordinates.
+< Move the orientation by offsetin local co-ordinates.
 
 ### <a name="SetPosition"/>void SetPosition(simul::math::Vector3 X)
 < Get a reference to the position.

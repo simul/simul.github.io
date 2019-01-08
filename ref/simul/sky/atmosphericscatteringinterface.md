@@ -51,39 +51,39 @@ This excludes skylight and starlight, which are not considered to be strongly an
 Get the radiance due to blackbody radiation.
 
 ### <a name="GetColourLossFactor"/>simul::sky::float4 GetColourLossFactor(vec3 view_pos_km, vec3 pos_km, simul::sky::HazeStruct hazeStruct, bool earth_test, int steps)
-When an object has initial colour \a c, multiply each member of \a c by the corresponding member of
+When an object has initial colour c, multiply each member of cby the corresponding member of
 the loss factor to get the colour as seen by the viewer.
 
 ### <a name="GetDirectionToSun"/>vec3 GetDirectionToSun(double epoch_time, float latitude, float longitude)
-\name General
+
 Get the direction to the sun.
 
 ### <a name="GetDistanceToEarth"/>float GetDistanceToEarth(float Elevation, float h_km)
 From the specified altitude h_km, and in the direction of Elevation, how far is it in Km to the surface?
 
 ### <a name="GetDistanceToSpace"/>float GetDistanceToSpace(float Elevation, float h_km)
-Considering the atmosphere as a shell of thickness GetAtmosphereThickness(), from altitude \a h_km,
-this function returns how far a ray cast at angle \a Elevation above the horizon would travel
+Considering the atmosphere as a shell of thickness GetAtmosphereThickness(), from altitude h_km,
+this function returns how far a ray cast at angle Elevationabove the horizon would travel
 to reach the outer radius of the shell.
 
 ### <a name="GetEarthShadow"/>simul::sky::EarthShadow GetEarthShadow(float h_km, vec3 lightDir)
 The Earth's shadow, as seen from the given altitude.
 
 ### <a name="GetHazeFactorAtAltitude"/>float GetHazeFactorAtAltitude(float alt_km, simul::sky::HazeStruct hazeStruct)
-Get the amount of haze present at altitude \a alt_km compared to the amount at sea level. This value is
+Get the amount of haze present at altitude alt_kmcompared to the amount at sea level. This value is
 independent of the overall Haze multiplier ( see GetHaze() ).
 
 ### <a name="GetHazeForVisibilityDistance"/>float GetHazeForVisibilityDistance(float view_alt_km, float horiz_dist_km, simul::sky::HazeStruct hazeStruct)
 Get the haze that will produce the required visibility distance in the horizontal direction.
 
 ### <a name="GetInscatterAngularMultiplier"/>simul::sky::float4 GetInscatterAngularMultiplier(float cosine, float mie_factor, simul::sky::HazeStruct hazeStruct)
-Get the multiplier for an inscatter factor that gives the total inscatter, where \a cosine is the cosine between
-the angle to the sun and the ray direction, \a mie_factor is the proportional haze factor (stored int the w element of the inscatter factor)
-and \a alt_km is the viewing altitude in km.
+Get the multiplier for an inscatter factor that gives the total inscatter, where cosineis the cosine between
+the angle to the sun and the ray direction, mie_factoris the proportional haze factor (stored int the w element of the inscatter factor)
+and alt_kmis the viewing altitude in km.
 
 ### <a name="GetIsotropicColourLossFactor"/>simul::sky::float4 GetIsotropicColourLossFactor(float alt_km, float elevation, float min_dist_km, float max_dist_km, simul::sky::HazeStruct hazeStruct, bool earth_test, int steps, bool blackbody, float emissivity)
-Get the loss factor of an object at position \a pos_km seen from \a view_pos_km.
-When an object has initial colour \a c, multiply each member of \a c by the corresponding member of
+Get the loss factor of an object at position pos_kmseen from view_pos_km.
+When an object has initial colour c, multiply each member of cby the corresponding member of
 the loss factor to get the colour as seen by the viewer.
 
 ### <a name="GetIsotropicInscatter"/>simul::sky::float4 GetIsotropicInscatter(float alt_km, float elevation, float min_dist_km, float max_dist_km, vec3 sun_irradiance, vec3 moon_albedo, simul::sky::float4 starlight, vec3 dir_to_sun, vec3 dir_to_moon, simul::sky::HazeStruct hazeStruct, simul::sky::float4 wavelengthsNm, simul::sky::OvercastStruct overcast, bool earth_test, int steps)
@@ -91,10 +91,10 @@ Get the approximate isotropic inscatter, i.e. the inscatter without a dependence
 this includes skylight and starlight.
 
 ### <a name="GetLocalMoonIrradianceFactor"/>vec3 GetLocalMoonIrradianceFactor(float altitude_km, vec3 dir_to_moon, vec3 dir_to_sun, simul::sky::HazeStruct hazeStruct)
-Get the moonlight that reaches the altitude \a altitude_km.
+Get the moonlight that reaches the altitude altitude_km.
 
 ### <a name="GetLocalSunIrradiance"/>vec3 GetLocalSunIrradiance(float altitude_km, vec3 sun_irradiance, vec3 dir_to_sun, simul::sky::HazeStruct hazeStruct)
-Get the sunlight that reaches the altitude \a altitude_km.
+Get the sunlight that reaches the altitude altitude_km.
 
 ### <a name="GetMoonIrradianceFactor"/>float GetMoonIrradianceFactor(vec3 dir_to_moon, vec3 dir_to_sun)
 Get the moonlight irradiance in space.
@@ -103,7 +103,7 @@ Get the moonlight irradiance in space.
 Get the strength of the overcast effect at a given altitude, determined by Overcast, OvercastBaseKm, and OvercastRangeKm.
 
 ### <a name="GetOzoneAtAltitude"/>float GetOzoneAtAltitude(float alt_km)
-Get the amount of ozone present at altitude \a alt_km. This is a dimensionless number.
+Get the amount of ozone present at altitude alt_km. This is a dimensionless number.
 
 ### <a name="GetPlanetRadius"/>float  const & GetPlanetRadius()
 Calculate Rayleigh coefficients for air using colour wavelengths ColourWavelengthsNm.

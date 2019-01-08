@@ -72,18 +72,18 @@ Get the haze that will produce the required visibility distance in the horizonta
 Get the horizon elevation from a given altitude.
 
 ### <a name="GetInscatterAngularMultiplier"/>simul::sky::float4 GetInscatterAngularMultiplier(float cosine, float mie_factor, float alt_km)
-Get the multiplier for an inscatter factor that gives the total inscatter, where \a cosine is the cosine between
-the angle to the sun and the ray direction, \a mie_factor is the proportional haze factor (stored int the w element of the inscatter factor)
-and \a alt_km is the viewing altitude in km.
+Get the multiplier for an inscatter factor that gives the total inscatter, where cosineis the cosine between
+the angle to the sun and the ray direction, mie_factoris the proportional haze factor (stored int the w element of the inscatter factor)
+and alt_kmis the viewing altitude in km.
 
 ### <a name="GetLocalIrradiance"/>simul::sky::float4 GetLocalIrradiance(float altitude_km)
-Get the sunlight that reaches the altitude \a altitude_km.
+Get the sunlight that reaches the altitude altitude_km.
 
 ### <a name="GetLocalMoonIrradiance"/>vec3 GetLocalMoonIrradiance(double t, float altitude_km)
-Get the moonlight that reaches the altitude \a altitude_km.
+Get the moonlight that reaches the altitude altitude_km.
 
 ### <a name="GetLocalSunIrradiance"/>vec3 GetLocalSunIrradiance(double t, float altitude_km)
-Get the sunlight that reaches the altitude \a altitude_km.
+Get the sunlight that reaches the altitude altitude_km.
 
 ### <a name="GetMieRayleighRatio"/>simul::sky::float4 GetMieRayleighRatio()
 Get the ratio of Mie to Rayleigh scattering at unit air and haze density. A useful helper function as some shaders use this ratio.

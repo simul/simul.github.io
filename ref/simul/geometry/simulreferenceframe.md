@@ -47,9 +47,9 @@ Functions
 < From a global position of a point in this frame, return the global velocity.
 
 ### <a name="operator="/>void operator=(simul::geometry::SimulOrientation o)
-\name General
 
-\name General
+
+
 
 
 ### <a name="PositionToVelocity"/>void PositionToVelocity(simul::math::Vector3 ve, simul::math::Vector3 xe)

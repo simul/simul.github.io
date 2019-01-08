@@ -9,7 +9,8 @@ namespace sky
 | Include: | Sky/BaseAtmosphericsRenderer.h |
 
 
-\image html "SkyInheritance.png"
+![](/Images/SkyInheritance.png)
+
 
 The simul::sky namespace corresponds to the Simul/Sky library.
 
@@ -65,7 +66,8 @@ Functions
 | simul::sky::float4 | [CalcMieCoefficients](#CalcMieCoefficients)(simul::sky::float4 ColourWavelengthsNm, float haze) |
 
 
-\image html "SkyInheritance.png"
+![](/Images/SkyInheritance.png)
+
 
 The simul::sky namespace corresponds to the Simul/Sky library.
 

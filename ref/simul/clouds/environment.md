@@ -9,13 +9,13 @@ class Environment
 | Include: | Clouds/CloudRenderer.h |
 
 The main class that manages environment data. Usually, you will create a single instance of Environment, which will persist while your
-         3D game or simulation world is active.
+3D game or simulation world is active.
 
-         If you use environment directly and not via TrueSkyRenderer, you must call the following each frame:
+If you use environment directly and not via TrueSkyRenderer, you must call the following each frame:
 
-                SetRealTime(time_seconds);
-                skyKeyframer->TimeStep(step_days);
-                Update();
+SetRealTime(time_seconds);
+skyKeyframer->TimeStep(step_days);
+Update();
 
   
 
@@ -43,13 +43,13 @@ Functions
 | simul::sky::SkyKeyframer * | [CreateSkyKeyframer](#CreateSkyKeyframer)(simul::base::MemoryInterface m, int NumElevations, int NumDistances, float MaxFadeDistanceKm) |
 
 The main class that manages environment data. Usually, you will create a single instance of Environment, which will persist while your
-         3D game or simulation world is active.
+3D game or simulation world is active.
 
-         If you use environment directly and not via TrueSkyRenderer, you must call the following each frame:
+If you use environment directly and not via TrueSkyRenderer, you must call the following each frame:
 
-                SetRealTime(time_seconds);
-                skyKeyframer->TimeStep(step_days);
-                Update();
+SetRealTime(time_seconds);
+skyKeyframer->TimeStep(step_days);
+Update();
 
   
 
@@ -98,7 +98,7 @@ Force recalculation of any cached values.
 
 ### <a name="Save"/>void Save(simul::sky::Output os)
 Save a sky sequence as binary (the .seq file format); this is a low-overhead method of storing and retrieving sequences, but is subject to format changes, so
-sequences should generally be stored as text (see \ref SaveToText).
+sequences should generally be stored as text (see 
 
 ### <a name="SaveToText"/>void SaveToText(simul::crossplatform::TextOutput output)
 Save a sky sequence as text (the .sq file format). This is the standard means of storing sequences.

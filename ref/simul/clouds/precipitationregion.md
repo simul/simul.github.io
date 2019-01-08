@@ -9,13 +9,13 @@ struct PrecipitationRegion
 | Include: | Clouds/BaseGpuCloudGenerator.h |
 
 A structure defining an area where there is rain or snow.
-If \em regional is false, it is everywhere.
+If regionalis false, it is everywhere.
   
 
 
 
 A structure defining an area where there is rain or snow.
-If \em regional is false, it is everywhere.
+If regionalis false, it is everywhere.
   
 
 

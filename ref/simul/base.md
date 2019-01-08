@@ -25,7 +25,7 @@ Classes and Structures
 | class [Referenced](base/referenced) |  |
 | class [RuntimeError](base/runtimeerror) |  |
 | class [ShowProgressInterface](base/showprogressinterface) |  |
-| class [Timer](base/timer) |  A microsecond timer.<br> |
+| class [Timer](base/timer) | A microsecond timer.<br> |
 | class [TrackingAllocator](base/trackingallocator) |  |
 | struct [Variant32](base/variant32) |  |
 

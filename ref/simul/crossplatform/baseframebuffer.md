@@ -44,7 +44,7 @@ Functions
 ---
 
 ### <a name="Activate"/>void Activate(simul::crossplatform::DeviceContext)
-Activate the framebuffer - must be followed after rendering by a call to \ref Deactivate().
+Activate the framebuffer - must be followed after rendering by a call to 
 
 ### <a name="Clear"/>void Clear(simul::crossplatform::DeviceContext context, float R, float G, float B, float A, float depth, int mask)
 Clear the colour and depth buffers if present.
@@ -56,7 +56,7 @@ Set the size of the framebuffer in pixel height and width.
 Call this if needed (not usually) to ensure that the buffers are created.
 
 ### <a name="Deactivate"/>void Deactivate(simul::crossplatform::DeviceContext)
-Deactivate the framebuffer - must be preceded a call to \ref Activate().
+Deactivate the framebuffer - must be preceded a call to 
 
 ### <a name="DeactivateDepth"/>void DeactivateDepth(simul::crossplatform::DeviceContext)
 Deactivate only the depth buffer, so it can be used as a texture for rendering to the colour buffer.

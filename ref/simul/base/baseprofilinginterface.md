@@ -31,9 +31,9 @@ Functions
 ### <a name="GetDebugText"/>char  const * GetDebugText(simul::base::TextStyle st)
 Gets the profiling report as text.
 
-\param  st Determines if the text should be returned as HTML, including colour formatting.
+stDetermines if the text should be returned as HTML, including colour formatting.
 
-\return null if it fails, else the debug text.
+null if it fails, else the debug text.
 
 ### <a name="GetEvent"/>simul::base::ProfileData  const * GetEvent(simul::base::ProfileData, int)
 Get profile data for the event at index i. Returns NULL for i<0 or i>= number of events.

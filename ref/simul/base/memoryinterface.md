@@ -33,28 +33,28 @@ Functions
 ---
 
 ### <a name="Allocate"/>void * Allocate(size_t nbytes)
-Allocate \a nbytes bytes of memory and return a pointer to them.
+Allocate nbytesbytes of memory and return a pointer to them.
 Reimplement this in the derived class.
 
 ### <a name="Allocate"/>void * Allocate(size_t nbytes, size_t align)
-Allocate \a nbytes bytes of memory, aligned to \a align and return a pointer to them. for unaligned, use align=0.
+Allocate nbytesbytes of memory, aligned to alignand return a pointer to them. for unaligned, use align=0.
 Reimplement this in the derived class.
 
 ### <a name="AllocateTracked"/>void * AllocateTracked(size_t, size_t, char)
 Reimplement this if needed in the derived class. The function_name can be ignored if you are not tracking memory allocations.
 
 ### <a name="AllocateVideoMemory"/>void * AllocateVideoMemory(size_t nbytes, size_t align)
-Allocate \a nbytes bytes of memory, aligned to \a align and return a pointer to them. for unaligned, use align=0.
+Allocate nbytesbytes of memory, aligned to alignand return a pointer to them. for unaligned, use align=0.
 Reimplement this in the derived class.
 
 ### <a name="AllocateVideoMemoryTracked"/>void * AllocateVideoMemoryTracked(size_t, size_t, char)
 Reimplement this if needed in the derived class. The function_name can be ignored if you are not tracking memory allocations.
 
 ### <a name="Deallocate"/>void Deallocate(void address)
-De-allocate the memory at \param address (requires that this memory was allocated with Allocate()).
+De-allocate the memory at address(requires that this memory was allocated with Allocate()).
 Implementations MUST ignore NULL values.
 
 ### <a name="DeallocateVideoMemory"/>void DeallocateVideoMemory(void)
- Free some Video memory
+Free some Video memory
 
 Implementations MUST ignore NULL values.

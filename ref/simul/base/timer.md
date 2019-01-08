@@ -8,7 +8,7 @@ class Timer
 
 | Include: | Base/Timer.h |
 
- A microsecond timer.<br>
+A microsecond timer.<br>
 
 
 Functions

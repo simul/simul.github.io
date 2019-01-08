@@ -35,34 +35,38 @@ Other permanent properties can be changed without recalculating the lookups, alt
 
 The MieEccentricity is a value that affects how strongly Mie-scattered light through haze is dispersed. If eccentricity is high (close to 1),
 the scattering is preferentially forward, leading to a glow around the sun, whereas if it is low, the haze is distributed more evenly.
-        \image html "eccentricity_low.png"
-        \image html "eccentricity_high.png"
+![](/Images/eccentricity_low.png)
 
-Sky calculation is performed with ray-tracing, and the number of ray-trace steps is set using \link simul::sky::Sky::SetSteps SetSteps \endlink.
+![](/Images/eccentricity_high.png)
+
+
+Sky calculation is performed with ray-tracing, and the number of ray-trace steps is set using [simul::sky::Sky::SetSteps](/ref/simul/sky/sky/setsteps)
+.
 Typically 6 steps are enough, but more may be necessary for high-accuracy, especially when the sun is close to the horizon, such as in this case,
 where the number of steps is too low, leading to an over-bright effect on the ground below the sun:
-        \image html "sky_steps_too_low.png"
+![](/Images/sky_steps_too_low.png)
 
- \section transient_atmospheric_properties Transient Sky Properties
+
+transient_atmospheric_properties Transient Sky Properties
 
 The main factor that changes over time in the sky is the Daytime property, between zero and one. This change can be handled by the
 Sky Keyframer, which effectively performs the function of a keyframer for the sky. The Sky Keyframer will also adjust the sky's
 Overcast property, a measure of how much the clouds block sunlight from reaching the lower atmosphere. The associated properties
- of OvercastBaseKm and OvercastRangeKm set a base altitude and range in kilometres, at the base altitude, the full overcast
- value is applied, while above the top of the overcast range, there is no loss of light.
+of OvercastBaseKm and OvercastRangeKm set a base altitude and range in kilometres, at the base altitude, the full overcast
+value is applied, while above the top of the overcast range, there is no loss of light.
 
- The haze value determines how much Mie-scattered haze (i.e. mist or fog) is present. Haze is considered to have a density that falls-off
- exponentially with altitude, so the HazeScaleHeightKm property determines the scaling height for this exponential. The
- HazeBaseHeightKm is also used, below this height, full haze is applied.
+The haze value determines how much Mie-scattered haze (i.e. mist or fog) is present. Haze is considered to have a density that falls-off
+exponentially with altitude, so the HazeScaleHeightKm property determines the scaling height for this exponential. The
+HazeBaseHeightKm is also used, below this height, full haze is applied.
 
- Fog and mist are both effectively low-level clouds. Fog is defined as having visibility less than 1km, it is called mist when visibility
- is between 1 and 2 km.
+Fog and mist are both effectively low-level clouds. Fog is defined as having visibility less than 1km, it is called mist when visibility
+is between 1 and 2 km.
 
- As time passes and the sun moves, you can use GetAzimuthToSunRadians and GetElevationToSunRadians to find its position.
- The functions GetDirectionToSun and GetDirectionToMoon can also be used.
+As time passes and the sun moves, you can use GetAzimuthToSunRadians and GetElevationToSunRadians to find its position.
+The functions GetDirectionToSun and GetDirectionToMoon can also be used.
   
 
-[simul::sky::BaseSky]()
+[simul::sky::BaseSky](/ref/simul/sky/basesky)
 
 Functions
 ---
@@ -99,37 +103,41 @@ Other permanent properties can be changed without recalculating the lookups, alt
 
 The MieEccentricity is a value that affects how strongly Mie-scattered light through haze is dispersed. If eccentricity is high (close to 1),
 the scattering is preferentially forward, leading to a glow around the sun, whereas if it is low, the haze is distributed more evenly.
-        \image html "eccentricity_low.png"
-        \image html "eccentricity_high.png"
+![](/Images/eccentricity_low.png)
 
-Sky calculation is performed with ray-tracing, and the number of ray-trace steps is set using \link simul::sky::Sky::SetSteps SetSteps \endlink.
+![](/Images/eccentricity_high.png)
+
+
+Sky calculation is performed with ray-tracing, and the number of ray-trace steps is set using [simul::sky::Sky::SetSteps](/ref/simul/sky/sky/setsteps)
+.
 Typically 6 steps are enough, but more may be necessary for high-accuracy, especially when the sun is close to the horizon, such as in this case,
 where the number of steps is too low, leading to an over-bright effect on the ground below the sun:
-        \image html "sky_steps_too_low.png"
+![](/Images/sky_steps_too_low.png)
 
- \section transient_atmospheric_properties Transient Sky Properties
+
+transient_atmospheric_properties Transient Sky Properties
 
 The main factor that changes over time in the sky is the Daytime property, between zero and one. This change can be handled by the
 Sky Keyframer, which effectively performs the function of a keyframer for the sky. The Sky Keyframer will also adjust the sky's
 Overcast property, a measure of how much the clouds block sunlight from reaching the lower atmosphere. The associated properties
- of OvercastBaseKm and OvercastRangeKm set a base altitude and range in kilometres, at the base altitude, the full overcast
- value is applied, while above the top of the overcast range, there is no loss of light.
+of OvercastBaseKm and OvercastRangeKm set a base altitude and range in kilometres, at the base altitude, the full overcast
+value is applied, while above the top of the overcast range, there is no loss of light.
 
- The haze value determines how much Mie-scattered haze (i.e. mist or fog) is present. Haze is considered to have a density that falls-off
- exponentially with altitude, so the HazeScaleHeightKm property determines the scaling height for this exponential. The
- HazeBaseHeightKm is also used, below this height, full haze is applied.
+The haze value determines how much Mie-scattered haze (i.e. mist or fog) is present. Haze is considered to have a density that falls-off
+exponentially with altitude, so the HazeScaleHeightKm property determines the scaling height for this exponential. The
+HazeBaseHeightKm is also used, below this height, full haze is applied.
 
- Fog and mist are both effectively low-level clouds. Fog is defined as having visibility less than 1km, it is called mist when visibility
- is between 1 and 2 km.
+Fog and mist are both effectively low-level clouds. Fog is defined as having visibility less than 1km, it is called mist when visibility
+is between 1 and 2 km.
 
- As time passes and the sun moves, you can use GetAzimuthToSunRadians and GetElevationToSunRadians to find its position.
- The functions GetDirectionToSun and GetDirectionToMoon can also be used.
+As time passes and the sun moves, you can use GetAzimuthToSunRadians and GetElevationToSunRadians to find its position.
+The functions GetDirectionToSun and GetDirectionToMoon can also be used.
   
 
 
 Base Classes
 ---
-[simul::sky::BaseSky]()
+[simul::sky::BaseSky](/ref/simul/sky/basesky)
 
 Functions
 ---
@@ -139,11 +147,10 @@ Moon irradiance as a multiple of sun irradiance.
 
 ### <a name="GetOpticalLength"/>float GetOpticalLength(float Elevation, float h_km)
 Get the effective optical length (equivalent length at sea level density) of a ray
-cast from altitude \a h_km at angle \a Elevation above the horizon.
+cast from altitude h_kmat angle Elevationabove the horizon.
 
 ### <a name="GetOzoneOpticalLength"/>float GetOzoneOpticalLength(float Elevation, float h_km)
-Get the effective optical length of ozone of a ray cast from altitude \a
-h_km at angle \a Elevation above the horizon.
+Get the effective optical length of ozone of a ray cast from altitude h_kmat angle Elevationabove the horizon.
 
 ### <a name="GetTablesChecksum"/>unsigned int GetTablesChecksum()
 A checksum that changes any time the density, optical depth or blackbody table is recalculated.

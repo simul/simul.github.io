@@ -43,7 +43,7 @@ Recompile shaders.
 ### <a name="RestoreDeviceObjects"/>void RestoreDeviceObjects(simul::crossplatform::RenderPlatform renderPlatform)
 Restore device objects.
 
-\param [in,out] renderPlatform  If non-null, the render platform.
+[in,out] renderPlatform  If non-null, the render platform.
 
 Fields
 ---

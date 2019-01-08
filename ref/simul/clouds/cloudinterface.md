@@ -33,4 +33,4 @@ Get the normalized cloud density at real-world position X.
 Get the noise object.
 
 ### <a name="GetOpticalPathLength"/>float GetOpticalPathLength(float cloud_base_z, float w, float h, simul::math::Vector3 X, simul::math::Vector3 dir, float time, float cloudiness, float extinction, float diffusivity)
-At the 3D Position \a X, find the optical density of cloud in the direction \a dir.
+At the 3D Position X, find the optical density of cloud in the direction dir.

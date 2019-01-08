@@ -122,7 +122,7 @@ Create a platform-specific effect instance.
 Create a platform-specific framebuffer instance - i.e. an optional colour and an optional depth rendertarget. Optionally takes a name string.
 
 ### <a name="CreateLayout"/>simul::crossplatform::Layout * CreateLayout(int num_elements, simul::crossplatform::LayoutDesc layoutDesc)
-Create a platform-specific layout instance based on the given layout description \em layoutDesc and buffer \em buffer.
+Create a platform-specific layout instance based on the given layout description layoutDescand buffer buffer.
 
 ### <a name="CreateMesh"/>simul::crossplatform::Mesh * CreateMesh()
 Create a platform-specific mesh instance.
@@ -172,7 +172,6 @@ Draw the specified number of vertices using the bound index arrays.
 For platforms that support named events, e.g. PIX in DirectX. Use BeginEvent(), EndEvent() as pairs.
 
 ### <a name="EnsureEffectIsBuilt"/>void EnsureEffectIsBuilt(char filename_utf8, std::vector options)
-This function is called to ensure that the named shader is compiled with all the possible combinations of \#define's given in \em options.
 
 ### <a name="EnsureShader"/>simul::crossplatform::Shader * EnsureShader(char filenameUtf8, simul::crossplatform::ShaderType t)
 Get or create an API-specific shader object.
@@ -302,13 +301,13 @@ This is called by draw functions to do any lazy updating prior to the actual API
 
 ### <a name="PlatformGetViewport"/>simul::crossplatform::Viewport PlatformGetViewport(simul::crossplatform::DeviceContext deviceContext, int index)
 RenderPlatform is an interface that allows Simul's rendering functions to be developed
-        in a cross-platform manner. By abstracting the common functionality of the different graphics API's
-        into an interface, we can write render code that need not know which API is being used. It is possible
-        to create platform-specific objects like /link CreateTexture textures/endlink, /link CreateEffect effects/endlink
-        and /link CreateBuffer buffers/endlink
+in a cross-platform manner. By abstracting the common functionality of the different graphics API's
+into an interface, we can write render code that need not know which API is being used. It is possible
+to create platform-specific objects like /link CreateTexture textures/endlink, /link CreateEffect effects/endlink
+and /link CreateBuffer buffers/endlink
 
-        Be sure to make the following calls at the appropriate places:
-        RestoreDeviceObjects(), InvalidateDeviceObjects(), RecompileShaders()
+Be sure to make the following calls at the appropriate places:
+RestoreDeviceObjects(), InvalidateDeviceObjects(), RecompileShaders()
 
 
 Fields
