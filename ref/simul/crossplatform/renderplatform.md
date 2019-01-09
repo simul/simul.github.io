@@ -6,9 +6,9 @@ weight: 0
 class RenderPlatform
 ===
 
-| Include: | Sky/BaseGpuSkyGenerator.h |
+| Include: | Platform/CrossPlatform/DeviceContext.h |
 
-A container class intended to reproduce some of the behaviour of std::map with ints for indices, but to be much much faster.
+Tells the renderer what to do with shader source to get binaries. values can be combined, e.g. ALWAYS_BUILD|TRY_AGAIN_ON_FAIL
   
 
 
@@ -84,7 +84,7 @@ Functions
 | bool | [ApplyContextState](#ApplyContextState)(simul::crossplatform::DeviceContext, bool) |
 | simul::crossplatform::Viewport | [PlatformGetViewport](#PlatformGetViewport)(simul::crossplatform::DeviceContext deviceContext, int index) |
 
-A container class intended to reproduce some of the behaviour of std::map with ints for indices, but to be much much faster.
+Tells the renderer what to do with shader source to get binaries. values can be combined, e.g. ALWAYS_BUILD|TRY_AGAIN_ON_FAIL
   
 
 

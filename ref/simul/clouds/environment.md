@@ -6,7 +6,7 @@ weight: 0
 class Environment
 ===
 
-| Include: | Clouds/CloudRenderer.h |
+| Include: | Clouds/Environment.h |
 
 The main class that manages environment data. Usually, you will create a single instance of Environment, which will persist while your
 3D game or simulation world is active.

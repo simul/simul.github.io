@@ -6,7 +6,7 @@ weight: 0
 class SkyKeyframer
 ===
 
-| Include: | Sky/BaseAtmosphericsRenderer.h |
+| Include: | Clouds/BaseWeatherRenderer.h |
 
 A class that maintains sky properties and interpolates them based on keyframe values.<br>
 

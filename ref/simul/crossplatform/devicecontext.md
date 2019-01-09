@@ -6,11 +6,18 @@ weight: 0
 struct DeviceContext
 ===
 
-| Include: | Sky/BaseAtmosphericsRenderer.h |
+| Include: | Platform/CrossPlatform/DeviceContext.h |
 
-The base class for Device contexts. The actual context pointer is only applicable in DirectX - in OpenGL, it will be null.
-The DeviceContext also carries a pointer to the platform-specific RenderPlatform.
-DeviceContext is context in the DirectX11 sense, encompassing a platform-specific deviceContext pointer
+
+OpenGL                                  |       Direct3D
+-------------------------------------------
+Vertex Shader                   |       Vertex Shader
+Tessellation Control    |       Hull Shader
+Tessellation Evaluation |       Domain Shader
+Geometry Shader                 |       Geometry Shader
+Fragment Shader                 |       Pixel Shader
+Compute Shader                  |       Compute Shader
+
   
 
 
@@ -21,9 +28,16 @@ Functions
 | simul::crossplatform::GpuProfilingInterface * | [GetGpuProfilingInterface](#GetGpuProfilingInterface)(simul::crossplatform::DeviceContext context) |
 | void | [SetGpuProfilingInterface](#SetGpuProfilingInterface)(simul::crossplatform::DeviceContext context, simul::crossplatform::GpuProfilingInterface p) |
 
-The base class for Device contexts. The actual context pointer is only applicable in DirectX - in OpenGL, it will be null.
-The DeviceContext also carries a pointer to the platform-specific RenderPlatform.
-DeviceContext is context in the DirectX11 sense, encompassing a platform-specific deviceContext pointer
+
+OpenGL                                  |       Direct3D
+-------------------------------------------
+Vertex Shader                   |       Vertex Shader
+Tessellation Control    |       Hull Shader
+Tessellation Evaluation |       Domain Shader
+Geometry Shader                 |       Geometry Shader
+Fragment Shader                 |       Pixel Shader
+Compute Shader                  |       Compute Shader
+
   
 
 
@@ -39,3 +53,10 @@ Returns a pointer to the current GPU profiler.
 
 ### <a name="SetGpuProfilingInterface"/>void SetGpuProfilingInterface(simul::crossplatform::DeviceContext context, simul::crossplatform::GpuProfilingInterface p)
 Set the GPU profilerFuture use of SIMUL_GPU_PROFILE_START or SIMUL_COMBINED_PROFILE_START will use that profiler.
+
+Fields
+---
+
+**platform_context**  The base class for Device contexts. The actual context pointer is only applicable in DirectX - in OpenGL, it will be null.
+The DeviceContext also carries a pointer to the platform-specific RenderPlatform.
+DeviceContext is context in the DirectX11 sense, encompassing a platform-specific deviceContext pointer

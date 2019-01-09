@@ -8,16 +8,11 @@ struct ExportLightningStrike
 
 | Include: | PlugIns/TrueSkyPluginRender/PluginTrueSkyRenderer.h |
 
-Windows & XBox
+A struct for passing lighting strike properties between trueSKY and an external engine.
   
 
 
 
-Windows & XBox
+A struct for passing lighting strike properties between trueSKY and an external engine.
   
 
-
-Fields
----
-
-**id**  A struct for passing lighting strike properties between trueSKY and an external engine.

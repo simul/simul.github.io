@@ -6,9 +6,10 @@ weight: 0
 namespace clouds
 ===
 
-| Include: | PlugIns/TrueSkyPluginRender/PluginTrueSkyRenderer.h |
+| Include: | Clouds/CloudRenderingOptions.h |
 
-Different rendering styles
+The function that returns how dense clouds should be at the stated position, where x, y and z are between
+zero and one in the cloud volume.
   
 
 
@@ -27,7 +28,6 @@ Classes and Structures
 | class [CloudKeyframer](clouds/cloudkeyframer) |  |
 | class [CloudProperties](clouds/cloudproperties) |  |
 | class [CloudRenderer](clouds/cloudrenderer) | Class for real-time volumetric cloud rendering.<br> |
-| struct [CloudRenderingOptions](clouds/cloudrenderingoptions) | This controls the rendering of clouds.<br> |
 | struct [CloudVolume](clouds/cloudvolume) |  |
 | struct [DepthTextureStruct](clouds/depthtexturestruct) |  |
 | class [Environment](clouds/environment) |  |
@@ -44,20 +44,11 @@ Classes and Structures
 | class [TrueSkyRenderer](clouds/trueskyrenderer) | <br> |
 | class [TwoResFramebuffer](clouds/tworesframebuffer) |  |
 
-Functions
----
 
-| vec3 | [TransformPosition](#TransformPosition)(simul::crossplatform::Quaterniond old_origin, simul::crossplatform::Quaterniond new_origin, vec3 old_pos) |
-
-Different rendering styles
+The function that returns how dense clouds should be at the stated position, where x, y and z are between
+zero and one in the cloud volume.
   
 
-
-Functions
----
-
-### <a name="TransformPosition"/>vec3 TransformPosition(simul::crossplatform::Quaterniond old_origin, simul::crossplatform::Quaterniond new_origin, vec3 old_pos)
-Transform a position in a previous frame of reference into a new frame. Assumes Earth radius 6378km, origin at sea level.
 
 Typedefs
 ---

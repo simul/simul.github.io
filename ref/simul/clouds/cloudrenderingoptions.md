@@ -6,7 +6,7 @@ weight: 0
 struct CloudRenderingOptions
 ===
 
-| Include: | Clouds/CloudRenderingOptions.h |
+| Include: | Clouds/CloudWindow.h |
 
 This controls the rendering of clouds.<br>
 

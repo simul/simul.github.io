@@ -6,7 +6,7 @@ weight: 0
 class BaseAtmosphericsRenderer
 ===
 
-| Include: | Sky/BaseAtmosphericsRenderer.h |
+| Include: | Clouds/BaseWeatherRenderer.h |
 
 The graphics API-independent base class for atmospherics renderers, which draw distance fades, aerial perspective, fog and so on.
   

@@ -6,7 +6,7 @@ weight: 0
 class BaseGpuCloudGenerator
 ===
 
-| Include: | Clouds/BaseGpuCloudGenerator.h |
+| Include: | Clouds/CloudRenderer.h |
 
 Base class for generating cloud volumes on the GPU.
   

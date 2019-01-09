@@ -6,7 +6,7 @@ weight: 0
 class PrecipitationRenderer
 ===
 
-| Include: | Clouds/BaseWeatherRenderer.h |
+| Include: | Clouds/PrecipitationRenderer.h |
 
 The class that renders rain and snow.
   

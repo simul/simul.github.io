@@ -6,7 +6,7 @@ weight: 0
 class Buffer
 ===
 
-| Include: | Sky/BaseSkyRenderer.h |
+| Include: | Platform/CrossPlatform/Effect.h |
 
 
   

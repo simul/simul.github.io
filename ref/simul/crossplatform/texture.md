@@ -6,9 +6,8 @@ weight: 0
 class Texture
 ===
 
-| Include: | Sky/BaseAtmosphericsRenderer.h |
+| Include: | Platform/CrossPlatform/Texture.h |
 
-Templated structured buffer, which uses platform-specific implementations of PlatformStructuredBuffer.<br>
 
 
 Functions
@@ -38,12 +37,6 @@ Functions
 | void | [SetFence](#SetFence)(unsigned long long) |
 | void | [setTexels](#setTexels)(simul::crossplatform::DeviceContext deviceContext, void src, int texel_index, int num_texels) |
 | void | [SetUnfenceable](#SetUnfenceable)(bool v) |
-
-Declare like so:
-
-StructuredBuffer<Example> example;
-
-  
 
 
 Functions

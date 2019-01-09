@@ -6,7 +6,7 @@ weight: 0
 struct ViewStruct
 ===
 
-| Include: | Sky/BaseAtmosphericsRenderer.h |
+| Include: | Platform/CrossPlatform/BaseRenderer.h |
 
 A simple struct encapsulating a view and a projection matrix.
   

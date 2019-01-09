@@ -6,7 +6,7 @@ weight: 0
 class ProfilingInterface
 ===
 
-| Include: | Base/ProfilingInterface.h |
+| Include: | Clouds/CloudKeyframer.h |
 
 simul::base::DefaultProfiler inherits from ProfilingInterface to measure CPU performance.
   

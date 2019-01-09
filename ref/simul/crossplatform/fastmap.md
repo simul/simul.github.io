@@ -8,11 +8,11 @@ classtemplate FastMap
 
 | Include: | Platform/CrossPlatform/DeviceContext.h |
 
-Used on gl platforms
+A container class intended to reproduce some of the behaviour of std::map with ints for indices, but to be much much faster.
   
 
 
 
-Used on gl platforms
+A container class intended to reproduce some of the behaviour of std::map with ints for indices, but to be much much faster.
   
 

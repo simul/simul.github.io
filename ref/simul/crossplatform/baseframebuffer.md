@@ -6,7 +6,7 @@ weight: 0
 class BaseFramebuffer
 ===
 
-| Include: | Clouds/MixedResolutionCompositor.h |
+| Include: | Platform/CrossPlatform/RenderPlatform.h |
 
 A base class for API-dependent framebuffer classes.
   

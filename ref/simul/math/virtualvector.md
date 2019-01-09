@@ -6,7 +6,7 @@ weight: 0
 class VirtualVector
 ===
 
-| Include: | Math/Vector3.h |
+| Include: | Math/VirtualVector.h |
 
 VirtualVector is derived from Vector but does not manage its own data. Instead
 the #PointTo method is used to give vector functionality to floating point data

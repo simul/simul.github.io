@@ -6,9 +6,10 @@ weight: 0
 namespace base
 ===
 
-| Include: | PlugIns/TrueSkyPluginRender/UnityPluginInterface.h |
+| Include: | Base/InitializeAndDetectProcessor.h |
 
-Base is the base library, containing simple data structures, macros and other useful things.<br>
+Define this to enable internal calls to the profiler, if it has been set with simul::base::SetProfilingInterface().
+  
 
 
 Classes and Structures
@@ -20,7 +21,6 @@ Classes and Structures
 | class [FileLoader](base/fileloader) |  |
 | class [MemoryInterface](base/memoryinterface) |  |
 | class [MemoryUsageInterface](base/memoryusageinterface) |  |
-| struct [ProfileData](base/profiledata) |  |
 | class [ProfilingInterface](base/profilinginterface) |  |
 | class [Referenced](base/referenced) |  |
 | class [RuntimeError](base/runtimeerror) |  |
@@ -43,11 +43,7 @@ Functions
 | std::vector | [split](#split)(std::string source, char separator) |
 | std::string | [stringFormat](#stringFormat)(std::string fmt) |
 
-Static library: (SIMUL)/lib/(PLATFORM)/(COMPILER)/(ConfigurationName)/SimulBase_(RUNTIME).lib
-
-Dynamic library: (SIMUL)/exe/(PLATFORM)/(COMPILER)/(ConfigurationName)/SimulBase_(RUNTIME).dll
-
-The Base library does not depend on any others.
+Define this to enable internal calls to the profiler, if it has been set with simul::base::SetProfilingInterface().
   
 
 

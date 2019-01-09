@@ -6,7 +6,7 @@ weight: 0
 class ConstantBufferBase
 ===
 
-| Include: | Platform/CrossPlatform/DeviceContext.h |
+| Include: | Platform/CrossPlatform/Effect.h |
 
 For RenderPlatform's use only: do not call.
   

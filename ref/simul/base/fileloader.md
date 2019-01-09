@@ -6,7 +6,7 @@ weight: 0
 class FileLoader
 ===
 
-| Include: | PlugIns/TrueSkyPluginRender/UnityPluginInterface.h |
+| Include: | Base/FileLoader.h |
 
 An interface to derive from so you can provide your own file load/save functions.
 Use SetFileLoader to define the object that Simul will use for file handling.

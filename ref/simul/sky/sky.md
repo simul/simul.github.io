@@ -6,7 +6,7 @@ weight: 0
 class Sky
 ===
 
-| Include: | Sky/BaseSkyRenderer.h |
+| Include: | Sky/Sky.h |
 
 Sky tracks the time of day, time of year, and viewing location in order to
 calculate the relative position of the sun in the sky and hence the lighting.

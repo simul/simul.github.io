@@ -6,7 +6,7 @@ weight: 0
 class BaseSkyInterface
 ===
 
-| Include: | Sky/SkyInterface.h |
+| Include: | Terrain/BaseTerrainRenderer.h |
 
 An abstract interface class for skies.
   

@@ -6,7 +6,7 @@ weight: 0
 class Layout
 ===
 
-| Include: | Clouds/BaseLightningRenderer.h |
+| Include: | Platform/CrossPlatform/RenderPlatform.h |
 
 A cross-platform class representing vertex input layouts. Create with RenderPlatform::CreateLayout.
   

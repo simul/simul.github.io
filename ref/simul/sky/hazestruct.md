@@ -6,7 +6,7 @@ weight: 0
 struct HazeStruct
 ===
 
-| Include: | Sky/BaseGpuSkyGenerator.h |
+| Include: | Sky/SkyInterface.h |
 
 A data structure to contain haze properties in the atmosphere at any given moment.
   

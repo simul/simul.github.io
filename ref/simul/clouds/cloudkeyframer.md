@@ -6,11 +6,11 @@ weight: 0
 class CloudKeyframer
 ===
 
-| Include: | Clouds/BaseWeatherRenderer.h |
+| Include: | Clouds/CloudRenderer.h |
 
 
 A class to manage interpolation between cloud states over time.
-Typically, a CloudKeyframer is created and updated by its <a href="environment">Environment</a>.
+Typically, a CloudKeyframer is created and updated by its <a href="environment">Environment</a> and <a href="environment">Environment</a>.
 
 If time and daytime are linked in the SkyKeyframer, time is in days, otherwise the timescale is in arbitrary units.
 
@@ -69,7 +69,7 @@ Functions
 
 
 A class to manage interpolation between cloud states over time.
-Typically, a CloudKeyframer is created and updated by its <a href="environment">Environment</a>.
+Typically, a CloudKeyframer is created and updated by its <a href="environment">Environment</a> and <a href="environment">Environment</a>.
 
 If time and daytime are linked in the SkyKeyframer, time is in days, otherwise the timescale is in arbitrary units.
 

@@ -11,7 +11,7 @@ class Camera
 A camera class. The orientation has the z-axis facing backwards, the x-axis right and the y-axis up.
   
 
-[simul::geometry::OrientationInterface](../geometry/orientationinterface)
+[simul::geometry::OrientationInterface](/ref/simul/geometry/orientationinterface)
 [simul::crossplatform::CameraInterface](camerainterface)
 
 Functions
@@ -25,7 +25,7 @@ A camera class. The orientation has the z-axis facing backwards, the x-axis righ
 
 Base Classes
 ---
-[simul::geometry::OrientationInterface](../geometry/orientationinterface)
+[simul::geometry::OrientationInterface](/ref/simul/geometry/orientationinterface)
 [simul::crossplatform::CameraInterface](camerainterface)
 
 Functions

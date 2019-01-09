@@ -6,7 +6,7 @@ weight: 0
 class AtmosphericScatteringInterface
 ===
 
-| Include: | Sky/BaseGpuSkyGenerator.h |
+| Include: | Sky/SkyKeyframer.h |
 
 An abstract interface class for skies.
   

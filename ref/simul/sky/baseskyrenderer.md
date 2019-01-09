@@ -6,7 +6,7 @@ weight: 0
 class BaseSkyRenderer
 ===
 
-| Include: | Sky/BaseSkyRenderer.h |
+| Include: | Clouds/BaseWeatherRenderer.h |
 
 The Sky Renderer performs the following tasks:
 - Rendering stars: using RenderPointStars(void *context,float exposure)

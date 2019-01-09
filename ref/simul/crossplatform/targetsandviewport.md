@@ -6,7 +6,7 @@ weight: 0
 struct TargetsAndViewport
 ===
 
-| Include: | Platform/CrossPlatform/RenderPlatform.h |
+| Include: | Platform/CrossPlatform/Texture.h |
 
 Stores information about the current render targets
   

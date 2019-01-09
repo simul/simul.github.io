@@ -6,7 +6,7 @@ weight: 0
 class BaseWeatherRenderer
 ===
 
-| Include: | Clouds/BaseLightningRenderer.h |
+| Include: | Clouds/Skylight.h |
 
 The main base class for all weather renderers, such as SimulGLWeatherRenderer,
 SimulWeatherRenderer (DX11) etc.

@@ -8,7 +8,7 @@ class PluginTrueSkyRenderer
 
 | Include: | PlugIns/TrueSkyPluginRender/PluginTrueSkyRenderer.h |
 
-A class that provides an interface between the trueSKY renderer and an external engine.
+A query from outside the plugin.
   
 
 [simul::clouds::TrueSkyRenderer](../clouds/trueskyrenderer)
@@ -35,6 +35,7 @@ Functions
 | bool | [HasInt](#HasInt)(char name) |
 | void | [LightingQuery](#LightingQuery)(int id, float pos, LightingQueryResult res) |
 | void | [ProcessQueries](#ProcessQueries)(int num, simul::plugin::Query queries) |
+| int | [RenderFrame](#RenderFrame)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture depthTexture, simul::crossplatform::Texture colourTargetTexture, simul::crossplatform::Viewport depthViewport, simul::crossplatform::Viewport viewports, simul::plugin::RenderStyle s, float exposure, float gamma, int framenumber) |
 | void | [Set](#Set)(long long Enum, simul::base::Variant v) |
 | void | [SetBool](#SetBool)(char name, bool value) |
 | void | [SetCloudPlacementTexture](#SetCloudPlacementTexture)(int id, void texture, vec2 pos_km, vec2 ext_km) |
@@ -48,7 +49,7 @@ Functions
 | bool | [TriggerAction](#TriggerAction)(char name) |
 | void | [UpdateProfilingText](#UpdateProfilingText)() |
 
-A class that provides an interface between the trueSKY renderer and an external engine.
+A query from outside the plugin.
   
 
 
@@ -115,6 +116,9 @@ Fill in a structure with lighting values at the given position
 
 ### <a name="ProcessQueries"/>void ProcessQueries(int num, simul::plugin::Query queries)
 Called on the render thread, this will process queries from outside the plugin.
+
+### <a name="RenderFrame"/>int RenderFrame(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture depthTexture, simul::crossplatform::Texture colourTargetTexture, simul::crossplatform::Viewport depthViewport, simul::crossplatform::Viewport viewports, simul::plugin::RenderStyle s, float exposure, float gamma, int framenumber)
+A class that provides an interface between the trueSKY renderer and an external engine.
 
 ### <a name="Set"/>void Set(long long Enum, simul::base::Variant v)
 Set the value corresponding to the given enum.

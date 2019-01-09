@@ -6,7 +6,7 @@ weight: 0
 class Quaternion
 ===
 
-| Include: | Math/Matrix.h |
+| Include: | Math/Matrix4x4.h |
 
 Quaternion class to represent rotations.
   

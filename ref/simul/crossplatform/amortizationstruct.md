@@ -6,7 +6,7 @@ weight: 0
 struct AmortizationStruct
 ===
 
-| Include: | Clouds/BaseWeatherRenderer.h |
+| Include: | Platform/CrossPlatform/AmortizationStruct.h |
 
 A small structure for per-frame amortization of buffers.
   

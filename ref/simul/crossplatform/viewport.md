@@ -6,7 +6,7 @@ weight: 0
 struct Viewport
 ===
 
-| Include: | PlugIns/TrueSkyPluginRender/UnityPluginInterface.h |
+| Include: | Platform/CrossPlatform/Texture.h |
 
 A crossplatform viewport structure.
   

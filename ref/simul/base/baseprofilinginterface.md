@@ -33,6 +33,8 @@ Gets the profiling report as text.
 
 stDetermines if the text should be returned as HTML, including colour formatting.
 
+Return
+---
 null if it fails, else the debug text.
 
 ### <a name="GetEvent"/>simul::base::ProfileData  const * GetEvent(simul::base::ProfileData, int)

@@ -6,7 +6,7 @@ weight: 0
 class BaseGpuSkyGenerator
 ===
 
-| Include: | Sky/BaseGpuSkyGenerator.h |
+| Include: | Sky/BaseSkyRenderer.h |
 
 
 

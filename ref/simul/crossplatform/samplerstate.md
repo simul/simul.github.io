@@ -6,13 +6,13 @@ weight: 0
 class SamplerState
 ===
 
-| Include: | Platform/CrossPlatform/DeviceContext.h |
+| Include: | Platform/CrossPlatform/Effect.h |
 
-For RenderPlatform's use only: do not call.
+Depth format
   
 
 
 
-For RenderPlatform's use only: do not call.
+Depth format
   
 

@@ -6,7 +6,7 @@ weight: 0
 class TwoResFramebuffer
 ===
 
-| Include: | Clouds/BaseWeatherRenderer.h |
+| Include: | Clouds/TwoResFramebuffer.h |
 
 A framebuffer class for mixed-resolution rendering.
   
@@ -15,10 +15,8 @@ A framebuffer class for mixed-resolution rendering.
 Functions
 ---
 
-| void | [ActivateLowRes](#ActivateLowRes)(simul::crossplatform::DeviceContext) |
 | void | [CompleteFrame](#CompleteFrame)(long long framenumber) |
 | void | [DeactivateDepth](#DeactivateDepth)(simul::crossplatform::DeviceContext) |
-| void | [DeactivateLowRes](#DeactivateLowRes)(simul::crossplatform::DeviceContext) |
 | uint4 | [GetCubeIntegerFrustumRange](#GetCubeIntegerFrustumRange)(int i) |
 | simul::crossplatform::Texture * | [GetStochasticDepthTexture](#GetStochasticDepthTexture)(int idx) |
 | simul::crossplatform::Texture * | [GetUpdateTexture](#GetUpdateTexture)(int idx) |
@@ -33,17 +31,11 @@ A framebuffer class for mixed-resolution rendering.
 Functions
 ---
 
-### <a name="ActivateLowRes"/>void ActivateLowRes(simul::crossplatform::DeviceContext)
-Activate BOTH low-resolution framebuffers - far in target 0, near in target 1. Must be followed by DeactivatelLowRes after rendering.
-
 ### <a name="CompleteFrame"/>void CompleteFrame(long long framenumber)
 This must be called to ensure that the amortization struct is up to date.
 
 ### <a name="DeactivateDepth"/>void DeactivateDepth(simul::crossplatform::DeviceContext)
 Deactivate the depth buffer
-
-### <a name="DeactivateLowRes"/>void DeactivateLowRes(simul::crossplatform::DeviceContext)
-Deactivate both low-res framebuffers.
 
 ### <a name="GetCubeIntegerFrustumRange"/>uint4 GetCubeIntegerFrustumRange(int i)
 Get the range in terms of the buffer size as integers.

@@ -6,7 +6,7 @@ weight: 0
 class TimedNoise3D
 ===
 
-| Include: | Clouds/CellularCloudNode.h |
+| Include: | Clouds/TimedNoise3D.h |
 
 A 3D noise generator used for cloud volumes, where the value returned depends on normalized spatial co-ordinates, and on normalized time.
   

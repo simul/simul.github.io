@@ -6,9 +6,9 @@ weight: 0
 namespace plugin
 ===
 
-| Include: | PlugIns/TrueSkyPluginRender/PluginTrueSkyRenderer.h |
+| Include: | PlugIns/TrueSkyPluginRender/TrackingAllocator.h |
 
-The namespace for the plugin render interface.
+Windows & XBox
   
 
 
@@ -16,7 +16,6 @@ Classes and Structures
 ---
 
 | class [PluginTrueSkyRenderer](plugin/plugintrueskyrenderer) |  |
-| struct [Query](plugin/query) |  |
 | class [TrackingAllocator](plugin/trackingallocator) |  |
 
 Functions
@@ -37,7 +36,7 @@ Functions
 | int | [StaticShutDownInterface](#StaticShutDownInterface)() |
 | void | [UnitySetGraphicsDevice](#UnitySetGraphicsDevice)(void device, simul::crossplatform::RenderPlatformType deviceType, UnityGfxDeviceEventType eventType) |
 
-The namespace for the plugin render interface.
+Windows & XBox
   
 
 
@@ -88,5 +87,7 @@ Unity-specific device event. Calls StaticSetGraphicsDevice() if needed.
 
 Enums
 ---
+
+**FloatAtPosition**  The namespace for the plugin render interface.
 
 **RenderStyle**  Attribute to make function be exported from a plugin:
