@@ -4,6 +4,8 @@ layout: reference
 weight: 120
 ---
 
+
+
 Version 4.2
 ---
 Mon 07 Jan : Add different VS launcher scripts. Help updates.  
@@ -12,7 +14,7 @@ Sun 30 Dec : Add Cmake files.
 Sat 29 Dec : Samples build  
 Sat 29 Dec : Solution dependencies.  
 Fri 28 Dec : Remove refs to deleted files  
-Thu 27 Dec : Only include <filesystem> on Windows.  
+Thu 27 Dec : Only include \<filesystem\> on Windows.  
 Thu 20 Dec : Sfx builds in CMake.  
 Wed 19 Dec : Remove depth attachments from VulkanSample/Main.cpp, fixes validation warnings.  
 Wed 19 Dec : Return on QRenderWidget.cpp to avoid recursive paint.  
