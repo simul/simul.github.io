@@ -8,13 +8,13 @@ class CloudRenderer
 
 | Include: | Clouds/BaseWeatherRenderer.h |
 
-Class for real-time volumetric cloud rendering.<br>
 
 
 Functions
 ---
 
 |  | [CloudRenderer](#CloudRenderer)(simul::clouds::Environment e, simul::base::MemoryInterface mem) |
+|  | [~CloudRenderer](#~CloudRenderer)() |
 | void | [EnsureEffectsAreBuilt](#EnsureEffectsAreBuilt)(simul::crossplatform::RenderPlatform renderPlatform) |
 | simul::clouds::CloudGeometryHelper * | [GetCloudGeometryHelper](#GetCloudGeometryHelper)(int view_id) |
 | simul::clouds::CloudRenderingOptions  & | [GetCloudRenderingOptions](#GetCloudRenderingOptions)() |
@@ -45,6 +45,16 @@ Functions
 | void | [SetNoiseTextureProperties](#SetNoiseTextureProperties)(int size, int freq, int octaves, float persistence) |
 | void | [SetPointLight](#SetPointLight)(int id, vec3 pos, float min_radius, float max_radius, vec3 irradiance) |
 
+
+Functions
+---
+
+### <a name="CloudRenderer"/> CloudRenderer(simul::clouds::Environment e, simul::base::MemoryInterface mem)
+Constructor: An external keyframer is provided, and an optional memory manager.
+
+### <a name="~CloudRenderer"/> ~CloudRenderer()
+Class for real-time volumetric cloud rendering.
+
 There should exist a "trueSKY space", where the origin(0,0,0 Cartesian) is at global mean sea level, and an arbitrary point on the Earth's surface.
 The Z axis points up, the X and Y axes are arbitrary (for reasons described below). To avoid singularities, this point, and the orientation of its axes
 should be represented by a double-precision quaternion, which represents the rotation from (say) latitude and longitude zero with X pointing East and Y pointing North.
@@ -53,14 +63,6 @@ The Volume Window is a deformed cuboid, its upper and lower surfaces matching th
 
 This trueSKY space moves in steps equivalent to one horizontal texel. The function CloudRenderer::MoveCloudWindow(x,y) does this.
 This should be done when the chosen viewpoint (this is up to you) moves more than a texel in any horizontal direction. This way, we need only update the edges as the window moves.
-  
-
-
-Functions
----
-
-### <a name="CloudRenderer"/> CloudRenderer(simul::clouds::Environment e, simul::base::MemoryInterface mem)
-Constructor: An external keyframer is provided, and an optional memory manager.
 
 ### <a name="EnsureEffectsAreBuilt"/>void EnsureEffectsAreBuilt(simul::crossplatform::RenderPlatform renderPlatform)
 If possible, build all shader effect variations.

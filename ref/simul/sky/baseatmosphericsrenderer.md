@@ -8,21 +8,17 @@ class BaseAtmosphericsRenderer
 
 | Include: | Clouds/BaseWeatherRenderer.h |
 
-The graphics API-independent base class for atmospherics renderers, which draw distance fades, aerial perspective, fog and so on.
-  
 
 [simul::base::Referenced](../base/referenced)
 
 Functions
 ---
 
+|  | [BaseAtmosphericsRenderer](#BaseAtmosphericsRenderer)(simul::base::MemoryInterface m) |
 | simul::sky::ScatteringVolume  const * | [GetScatteringVolume](#GetScatteringVolume)(int view_id) |
 | void | [RecompileShaders](#RecompileShaders)() |
 | void | [SetCloudShadowTexture](#SetCloudShadowTexture)(CloudShadowStruct c) |
 | void | [SetIlluminationTexture](#SetIlluminationTexture)(simul::crossplatform::Texture) |
-
-The graphics API-independent base class for atmospherics renderers, which draw distance fades, aerial perspective, fog and so on.
-  
 
 
 Base Classes
@@ -31,6 +27,9 @@ Base Classes
 
 Functions
 ---
+
+### <a name="BaseAtmosphericsRenderer"/> BaseAtmosphericsRenderer(simul::base::MemoryInterface m)
+The graphics API-independent base class for atmospherics renderers, which draw distance fades, aerial perspective, fog and so on.
 
 ### <a name="GetScatteringVolume"/>simul::sky::ScatteringVolume  const * GetScatteringVolume(int view_id)
 Get the per-frame 3D volume scattering texture for the given view id.

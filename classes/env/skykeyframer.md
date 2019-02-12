@@ -11,25 +11,20 @@ Previous: <a href=".">The Cloud Keyframer</a>
 
 Updating
 --------
-An instance of [simul::sky::SkyKeyframer](/ref/simul/sky/skykeyframer)
-is stored in simul::clouds::Environment. As a keyframer, this class
+An instance of <a href="../../ref/simul/sky/skykeyframer">SkyKeyframer</a>is stored in simul::clouds::Environment. As a keyframer, this class
 stores a list of keyframes; this list can be modified at runtime, or loaded from a sequence (see <a href="../../sequencer">The Sky Sequencer</a>).
 
 The keyframes each have a timevalue, and the keyframer tracks a current time through these frames, interpolating properties as it does so.
 
-The SkyKeyframer has two modes of operation. By switching [simul::sky::SkyKeyframer::SetLinkKeyframeTimeAndDaytime](/ref/simul/sky/skykeyframer/setlinkkeyframetimeanddaytime)
-on or off,
+The SkyKeyframer has two modes of operation. By switching <a href="../../ref/simul/sky/skykeyframer/setlinkkeyframetimeanddaytime">LinkKeyframeTimeAndDaytime</a>on or off,
 you can choose whether the keyframes have a daytime value which is independent of time, or whether these two numbers are the same.
 
-You don't need to update the keyframer specifically, so long as you're calling [simul::clouds::Environment::Update](/ref/simul/clouds/environment/update)
-.
+You don't need to update the keyframer specifically, so long as you're calling <a href="../../ref/simul/clouds/environment/update">environment->Update()</a>.
 
 Linked Time and Daytime
 -----------------------
 
-If they are linked, [simul::sky::BaseKeyframe::time](/ref/simul/sky/basekeyframe/time)
-and [simul::sky::SkyKeyframe::daytime](/ref/simul/sky/skykeyframe/daytime)
-
+If they are linked, <a href="../../ref/simul/sky/basekeyframe/time">time</a>and <a href="../../ref/simul/sky/skykeyframe/daytime">daytime </a>
 will be the same number, where 0 represents the first midnight of the sequence, 1.0 represents 24 hours after this, and so on.
 
 ![](/Images/SkyKeyframerLinked.png)
@@ -49,11 +44,9 @@ assert(k->daytime==k->time);
 Unlinked Time and Daytime
 -------------------------
 
-If they are not linked, then while daytime is defined as above, the keyframe's [simul::sky::BaseKeyframe::time](/ref/simul/sky/basekeyframe/time)
-
+If they are not linked, then while daytime is defined as above, the keyframe's <a href="../../ref/simul/sky/basekeyframe/time">time</a>
 value is arbitrary - it could represent the real time in seconds, or some other scale. Furthermore, while the keyframes
-will be sorted so that they are in ascending order of [simul::sky::BaseKeyframe::time](/ref/simul/sky/basekeyframe/time)
-,
+will be sorted so that they are in ascending order of <a href="../../ref/simul/sky/basekeyframe/time">time</a>,
 daytime will have no such restriction. You could have a midday keyframe, followed by sunset, followed by midday again.
 Here, we set all the keyframes to be at daytime=0.25 (6am):
 
@@ -65,8 +58,7 @@ simul::sky::SkyKeyframe *k=(simul::sky::SkyKeyframe *)sk->GetKeyframe(i);
 k->daytime=0.25f;
 }
 
-You could also disable [simul::sky::SkyKeyframe::automaticSunPosition](/ref/simul/sky/skykeyframe/automaticsunposition)
-, in which case daytime will have no effect
+You could also disable <a href="../../ref/simul/sky/skykeyframe/automaticsunposition">automaticSunPosition</a>, in which case daytime will have no effect
 on sun position.
 
 The unlinked time mode is particularly suitable to situations where you will use the Simul API to change conditions on the fly.
@@ -82,8 +74,7 @@ This works just as well with linked as with unlinked times.
 Properties of a Sky Keyframe
 -------------------------
 
-For a complete list of a sky keyframe's properties, see [simul::sky::SkyKeyframe](/ref/simul/sky/skykeyframe)
-.
+For a complete list of a sky keyframe's properties, see <a href="../../ref/simul/sky/skykeyframe">SkyKeyframe</a>.
 
 <table>
 <tr><td>float daytime</td><td>The time this keyframe represents, in a floating-point number of days from the starting midnight of the sequence. If simul::sky::SkyKeyframer::SetLinkKeyframeTimeAndDaytime is true, this is the same as the keyframe's time value.</td>
@@ -104,8 +95,7 @@ These are public properties of the structure. You can set any property of any ke
 But setting properties of active keyframes causes recalculation, which will interrupt the program for a short time,
 so it is recommended not to do this frequently outside of tools and testing.
 
-To ensure that no recalculation takes place, the function [simul::sky::SkyKeyframer::GetNextModifiableKeyframe](/ref/simul/sky/skykeyframer/getnextmodifiablekeyframe)
-
+To ensure that no recalculation takes place, the function <a href="../../ref/simul/sky/skykeyframer/getnextmodifiablekeyframe">GetNextModifiableKeyframe()</a> and <a href="../../ref/simul/sky/skykeyframer/getnextmodifiablekeyframe">GetNextModifiableKeyframe()</a>
 can be used to get a pointer to the keyframe after those currently being interpolated or used for table-generation.
 You can change its properties freely.
 
@@ -116,9 +106,7 @@ HazeBaseHeightKm is also used. Below this height, full haze is applied.
 Fog and mist are both effectively low-level clouds. Fog is defined as having visibility less than 1km, it is called mist when visibility
 is between 1 and 2 km.
 
-As time passes and the sun and moon move, you can use [simul::sky::BaseSkyInterface::GetDirectionToSun](/ref/simul/sky/baseskyinterface/getdirectiontosun)
-and [simul::sky::BaseSkyInterface::GetDirectionToMoon](/ref/simul/sky/baseskyinterface/getdirectiontomoon)
-to find their positions.
+As time passes and the sun and moon move, you can use <a href="../../ref/simul/sky/baseskyinterface/getdirectiontosun">GetDirectionToSun</a> and <a href="../../ref/simul/sky/baseskyinterface/getdirectiontosun">GetDirectionToSun</a>and <a href="../../ref/simul/sky/baseskyinterface/getdirectiontomoon">endlink</a> and <a href="../../ref/simul/sky/baseskyinterface/getdirectiontomoon">endlink</a>to find their positions.
 
 <hr size="1">
 Next: [classes::env::cloud_keyframer](/ref/classes/env/cloud_keyframer)

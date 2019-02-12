@@ -8,8 +8,6 @@ class AtmosphericScatteringInterface
 
 | Include: | Sky/SkyKeyframer.h |
 
-An abstract interface class for skies.
-  
 
 
 Functions
@@ -34,9 +32,7 @@ Functions
 | float | [GetOzoneAtAltitude](#GetOzoneAtAltitude)(float alt_km) |
 | float  const & | [GetPlanetRadius](#GetPlanetRadius)() |
 | float | [GetVisibilityDistance](#GetVisibilityDistance)(float view_alt_km, simul::sky::HazeStruct hazeStruct) |
-
-An abstract interface class for skies.
-  
+| void | [SetPlanetRadius](#SetPlanetRadius)(float value) |
 
 
 Functions
@@ -110,3 +106,6 @@ Calculate Rayleigh coefficients for air using colour wavelengths ColourWavelengt
 
 ### <a name="GetVisibilityDistance"/>float GetVisibilityDistance(float view_alt_km, simul::sky::HazeStruct hazeStruct)
 From the altitude specified, the distance in km to 10% visibility (mainly a factor of fog/haze).
+
+### <a name="SetPlanetRadius"/>void SetPlanetRadius(float value)
+An abstract interface class for skies.

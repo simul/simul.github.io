@@ -9,13 +9,6 @@ class CloudKeyframer
 | Include: | Clouds/CloudRenderer.h |
 
 
-A class to manage interpolation between cloud states over time.
-Typically, a CloudKeyframer is created and updated by its <a href="environment">Environment</a> and <a href="environment">Environment</a>.
-
-If time and daytime are linked in the SkyKeyframer, time is in days, otherwise the timescale is in arbitrary units.
-
-  
-
 [simul::sky::OvercastCallback](../sky/overcastcallback)
 [simul::sky::BaseKeyframer](../sky/basekeyframer)
 
@@ -27,6 +20,7 @@ Classes and Structures
 Functions
 ---
 
+|  | [CloudKeyframer](#CloudKeyframer)(simul::base::MemoryInterface mem, bool make2d) |
 | simul::clouds::CloudKeyframer::Storm * | [AddStorm](#AddStorm)(float t0, float t1, vec2 centre_km, float r_km) |
 | void | [DeleteStorm](#DeleteStorm)(int i) |
 | void | [DeleteStormByUniqueId](#DeleteStormByUniqueId)(unsigned int uid) |
@@ -68,14 +62,6 @@ Functions
 | unsigned int | [GetOffsetChecksum](#GetOffsetChecksum)() |
 
 
-A class to manage interpolation between cloud states over time.
-Typically, a CloudKeyframer is created and updated by its <a href="environment">Environment</a> and <a href="environment">Environment</a>.
-
-If time and daytime are linked in the SkyKeyframer, time is in days, otherwise the timescale is in arbitrary units.
-
-  
-
-
 Base Classes
 ---
 [simul::sky::OvercastCallback](../sky/overcastcallback)
@@ -83,6 +69,11 @@ Base Classes
 
 Functions
 ---
+
+### <a name="CloudKeyframer"/> CloudKeyframer(simul::base::MemoryInterface mem, bool make2d)
+
+A class to manage interpolation between cloud states over time.
+Typically, a CloudKeyframer is created and updated by its 
 
 ### <a name="AddStorm"/>simul::clouds::CloudKeyframer::Storm * AddStorm(float t0, float t1, vec2 centre_km, float r_km)
 Add a storm between the times specified, at the given centre c, with horizontal radius r (km).

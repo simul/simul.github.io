@@ -81,7 +81,7 @@ deviceContext.viewStruct.depthTextureStyle      =crossplatform::PROJECTION;
 deviceContext.viewStruct.view                           =viewMatrix;
 deviceContext.viewStruct.proj                           =projectionMatrix;
 ~~~~~~~~~~~~~~~
-We've created a <a href="ref/simul/crossplatform/devicecontext">deviceContext</a>object that we will pass to the render functions.
+We've created a <a href="ref/simul/crossplatform/devicecontext">deviceContext</a>, <a href="ref/simul/crossplatform/devicecontext">deviceContext</a> and <a href="ref/simul/crossplatform/devicecontext">deviceContext</a>object that we will pass to the render functions.
 This object encapsulates the platform-specific context - in this case it's
 an ID3D11DeviceContext pointer - and view-specific information: the view and projection matrices for example.
 
@@ -101,11 +101,9 @@ weatherRenderer->RemoveView(view_id);
 to free up GPU memory if a view is removed.
 
 We specify the depth texture style so that trueSKY knows how to interpret the
-depth information you pass to it. The matrices ([simul::math::Matrix4x4](/ref/simul/math/matrix4x4)
-) are row-major view and projection matrices stored as a simple block of 16 floats - you can cast from most standard matrix classes directly.
+depth information you pass to it. The matrices (<a href="ref/simul/math/matrix4x4">Matrix4x4</a>) are row-major view and projection matrices stored as a simple block of 16 floats - you can cast from most standard matrix classes directly.
 
-Once per frame, before rendering , we must call [simul::clouds::BaseWeatherRenderer::PreRenderUpdate](/ref/simul/clouds/baseweatherrenderer/prerenderupdate)
-, passing
+Once per frame, before rendering , we must call <a href="ref/simul/clouds/baseweatherrenderer/prerenderupdate">PreRenderUpdate</a>, passing
 a deviceContext that refers to mainview.
 ~~~~~~~~~~~~~~~{.cpp}
 weatherRenderer->PreRenderUpdate(deviceContext,real_time_s);

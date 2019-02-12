@@ -8,24 +8,23 @@ class BaseGpuCloudGenerator
 
 | Include: | Clouds/CloudRenderer.h |
 
-Base class for generating cloud volumes on the GPU.
-  
 
 
 Functions
 ---
 
+|  | [BaseGpuCloudGenerator](#BaseGpuCloudGenerator)() |
 | bool | [CanPerformGPULighting](#CanPerformGPULighting)() |
 | void | [FillDensityGrid](#FillDensityGrid)(simul::crossplatform::DeviceContext deviceContext, int index, simul::clouds::GpuCloudsParameters params, int start_texel, int texels, simul::crossplatform::Texture finalTexture) |
 | int | [GetDensityGridsize](#GetDensityGridsize)(int grid) |
 | simul::crossplatform::Texture * | [Make3DNoiseTexture](#Make3DNoiseTexture)(simul::crossplatform::DeviceContext deviceContext, int noise_size, float noise_src_ptr, int generation_number) |
 
-Base class for generating cloud volumes on the GPU.
-  
-
 
 Functions
 ---
+
+### <a name="BaseGpuCloudGenerator"/> BaseGpuCloudGenerator()
+Base class for generating cloud volumes on the GPU.
 
 ### <a name="CanPerformGPULighting"/>bool CanPerformGPULighting()
 Return true if the derived class can relight clouds using the GPU.

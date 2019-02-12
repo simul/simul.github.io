@@ -12,14 +12,11 @@ Two instances of CloudKeyframer are stored in simul::clouds::Environment - one f
 As a keyframer, this class stores a list of keyframes; this list can be modified at runtime, or loaded from a sequence (see <a href="../../sequencer">The Sky Sequencer</a>).
 
 The keyframes each have a timevalue, and the keyframer tracks a current time through these frames, interpolating properties as it does so, into a special keyframe.
-You can be obtain a reference to this using [simul::clouds::CloudKeyframer::GetInterpolatedKeyframe](/ref/simul/clouds/cloudkeyframer/getinterpolatedkeyframe)
-.
+You can be obtain a reference to this using <a href="../../ref/simul/clouds/cloudkeyframer/getinterpolatedkeyframe">() GetInterpolatedKeyframe()</a> and <a href="../../ref/simul/clouds/cloudkeyframer/getinterpolatedkeyframe">() GetInterpolatedKeyframe()</a>.
 
-The cloud keyframer is updated from [simul::clouds::Environment](/ref/simul/clouds/environment)
-.
+The cloud keyframer is updated from <a href="../../ref/simul/clouds/environment">Environment</a>.
 
-Some [simul::clouds::CloudKeyframe](/ref/simul/clouds/cloudkeyframe)
-properties are used as per-keyframe values to generated the 3D or 2D cloud textures.
+Some <a href="../../ref/simul/clouds/cloudkeyframe">cloud keyframe</a>properties are used as per-keyframe values to generated the 3D or 2D cloud textures.
 These textures are then interpolated for rendering:
 
 - cloudiness
@@ -69,12 +66,9 @@ For example, to double the size of the volume, select all the 3D cloud keyframes
 
 Fine Control
 ------------
-The cloud shape can be controlled using the keyframe properties [simul::clouds::CloudKeyframe::distribution_base_layer](/ref/simul/clouds/cloudkeyframe/distribution_base_layer)
-,
-[simul::clouds::CloudKeyframe::distribution_transition](/ref/simul/clouds/cloudkeyframe/distribution_transition)
-and
-[simul::clouds::CloudKeyframe::upper_density](/ref/simul/clouds/cloudkeyframe/upper_density)
-.
+The cloud shape can be controlled using the keyframe properties <a href="../../ref/simul/clouds/cloudkeyframe/distribution_base_layer">distribution_base_layer</a>,
+<a href="../../ref/simul/clouds/cloudkeyframe/distribution_transition">distribution_transition</a>and
+<a href="../../ref/simul/clouds/cloudkeyframe/upper_density">upper_density</a>.
 
 Local Cloud Cells
 ------------

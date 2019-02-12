@@ -8,8 +8,7 @@ weight: 3
 
 All Simul's default renderers use a right-handed co-ordinate system with x pointing East, y North, and z up. All units of distance are metres or kilometres. If not specified as km, distance is in metres. Angular units are radians, unless specified as degrees. Temperature is in kelvins, unless specified as degrees Celsius.
 
-Weather Rendering is handled by  [simul::clouds::BaseWeatherRenderer](/ref/simul/clouds/baseweatherrenderer)
-.
+Weather Rendering is handled by  <a href="ref/simul/clouds/baseweatherrenderer">BaseWeatherRenderer</a>.
 
 The Weather Renderer owns and manages renderers for sky, clouds, atmospherics and other effects.
 So the Weather Renderer is the main interface between your program and trueSKY.
@@ -31,8 +30,7 @@ The following table describes the elements of a sky as implemented in the render
 
 Cosmic Background
 -----------------
-The cosmic background texture is drawn first, at an orientation that corresponds to the plane of the Milky Way galaxy - see [simul::sky::SkyKeyframer::SetBackgroundBrightness](/ref/simul/sky/skykeyframer/setbackgroundbrightness)
-.
+The cosmic background texture is drawn first, at an orientation that corresponds to the plane of the Milky Way galaxy - see <a href="ref/simul/sky/skykeyframer/setbackgroundbrightness">BackgroundBrightness</a>.
 
 It uses a plate-carree projection, aligned with the galactic horizon. Given the vector "view", which is the direction in galactic co-ordinates, the calculation is:
 
@@ -49,9 +47,7 @@ You may see some stretching at the top and bottom of the image due to degeneracy
 Stars
 -----
 Stars are drawn as point sprites, and spun around the axis of the Earth's rotation, in the same direction as the sun. Stars are usually drawn to the highest-resolution buffer (i.e. the frame buffer or final buffer). See
-[simul::sky::SkyKeyframer::SetStarBrightness](/ref/simul/sky/skykeyframer/setstarbrightness)
-and [simul::sky::SkyKeyframer::SetMaxStarMagnitude](/ref/simul/sky/skykeyframer/setmaxstarmagnitude)
-.
+<a href="ref/simul/sky/skykeyframer/setstarbrightness">StarBrightness</a>and <a href="ref/simul/sky/skykeyframer/setmaxstarmagnitude">MaxStarMagnitude</a>.
 
 The Sun
 -------
@@ -82,10 +78,8 @@ Rendering performance is chiefly dependent on the number of pixels drawn, and th
 Calculation performance - mainly cloud lighting - depends strongly on the grid size - the larger the grid, the more time will be taken to light a cloud keyframe.
 
 It is usual to downsample the cloud part of the sky rendering, controlled by
-[simul::clouds::CloudRenderingOptions::MaximumCubemapResolution](/ref/simul/clouds/cloudrenderingoptions/maximumcubemapresolution)
-
-in the [simul::clouds::CloudRenderingOptions](/ref/simul/clouds/cloudrenderingoptions)
-.
+<a href="ref/simul/clouds/cloudrenderingoptions/maximumcubemapresolution">MaximumCubemapResolution</a>
+in the <a href="ref/simul/clouds/cloudrenderingoptions">CloudRenderingOptions</a>.
 
 
 Rain and Snow
@@ -94,22 +88,17 @@ Rain and Snow
 ![](/Images/rain.jpg)
 ""
 
-The [simul::clouds::CloudKeyframe::precipitation](/ref/simul/clouds/cloudkeyframe/precipitation)
-is used to control the amount of rain or snowfall
-at a given time, whilst the [simul::clouds::CloudKeyframer](/ref/simul/clouds/cloudkeyframer)
-property is used to set the thickness of cloud required for rain to fall (setting this to 0 will allow even the smallest of clouds to produce rain). To switch between snow and rain use [simul::clouds::CloudKeyframe](/ref/simul/clouds/cloudkeyframe)
-(where 0 is rain, 1 is snow). 
+The <a href="ref/simul/clouds/cloudkeyframe/precipitation">precipitation</a>is used to control the amount of rain or snowfall
+at a given time, whilst the <a href="ref/simul/clouds/cloudkeyframer">PrecipitationThresholdKm</a>property is used to set the thickness of cloud required for rain to fall (setting this to 0 will allow even the smallest of clouds to produce rain). To switch between snow and rain use <a href="ref/simul/clouds/cloudkeyframe">rain_to_snow</a>(where 0 is rain, 1 is snow). 
 
-Each cloud keyframe has a [simul::clouds::PrecipitationRegion](/ref/simul/clouds/precipitationregion)
-, which defines the local area of precipitation,
+Each cloud keyframe has a <a href="ref/simul/clouds/precipitationregion">PrecipitationRegion</a>, which defines the local area of precipitation,
 if it is not global for the keyframe. The amount of particles used for precipitation can be altered with the [simul::clouds::BasePrecipitationRenderer](/ref/simul/clouds/baseprecipitationrenderer)
 property.
 
 ![](/Images/Lightning-RainStreaks.jpg)
 ""
 
-Classes derived from simul::clouds::BasePrecipitationRenderer are used to draw the rain or snow particles, while the [simul::clouds::PrecipitationRegion](/ref/simul/clouds/precipitationregion)
-is drawn by the cloud renderer. This class has a property "UseSimulationTime" which determines whether rain and snow speed is based on the simulated time-of-day, or real time in seconds.
+Classes derived from simul::clouds::BasePrecipitationRenderer are used to draw the rain or snow particles, while the <a href="ref/simul/clouds/precipitationregion">rain streak effect</a>is drawn by the cloud renderer. This class has a property "UseSimulationTime" which determines whether rain and snow speed is based on the simulated time-of-day, or real time in seconds.
 
 Shaders
 -------

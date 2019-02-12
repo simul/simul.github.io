@@ -20,3 +20,8 @@ Store persistently, as it needs to use the difference between current
 and previous mouse positions.
   
 
+
+Enums
+---
+
+**(anonymous::1)**  Identify the buttons

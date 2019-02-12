@@ -8,10 +8,8 @@ class Camera
 
 | Include: | Platform/CrossPlatform/Camera.h |
 
-A camera class. The orientation has the z-axis facing backwards, the x-axis right and the y-axis up.
-  
 
-[simul::geometry::OrientationInterface](/ref/simul/geometry/orientationinterface)
+[simul::geometry::OrientationInterface](../geometry/orientationinterface)
 [simul::crossplatform::CameraInterface](camerainterface)
 
 Functions
@@ -19,13 +17,10 @@ Functions
 
 | float  const * | [GetRotationAsQuaternion](#GetRotationAsQuaternion)() |
 
-A camera class. The orientation has the z-axis facing backwards, the x-axis right and the y-axis up.
-  
-
 
 Base Classes
 ---
-[simul::geometry::OrientationInterface](/ref/simul/geometry/orientationinterface)
+[simul::geometry::OrientationInterface](../geometry/orientationinterface)
 [simul::crossplatform::CameraInterface](camerainterface)
 
 Functions

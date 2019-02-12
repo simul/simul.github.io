@@ -8,8 +8,6 @@ class PluginTrueSkyRenderer
 
 | Include: | PlugIns/TrueSkyPluginRender/PluginTrueSkyRenderer.h |
 
-A query from outside the plugin.
-  
 
 [simul::clouds::TrueSkyRenderer](../clouds/trueskyrenderer)
 
@@ -48,9 +46,6 @@ Functions
 | void | [SetWater](#SetWater)(long long Enum, int ID, simul::base::Variant v) |
 | bool | [TriggerAction](#TriggerAction)(char name) |
 | void | [UpdateProfilingText](#UpdateProfilingText)() |
-
-A query from outside the plugin.
-  
 
 
 Base Classes

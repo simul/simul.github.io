@@ -6,10 +6,9 @@ weight: 0
 namespace base
 ===
 
-| Include: | Base/InitializeAndDetectProcessor.h |
+| Include: | Base/Base.h |
 
-Define this to enable internal calls to the profiler, if it has been set with simul::base::SetProfilingInterface().
-  
+Base is the base library, containing simple data structures, macros and other useful things.<br>
 
 
 Classes and Structures
@@ -21,7 +20,7 @@ Classes and Structures
 | class [FileLoader](base/fileloader) |  |
 | class [MemoryInterface](base/memoryinterface) |  |
 | class [MemoryUsageInterface](base/memoryusageinterface) |  |
-| class [ProfilingInterface](base/profilinginterface) |  |
+| struct [ProfileData](base/profiledata) |  |
 | class [Referenced](base/referenced) |  |
 | class [RuntimeError](base/runtimeerror) |  |
 | class [ShowProgressInterface](base/showprogressinterface) |  |
@@ -43,7 +42,11 @@ Functions
 | std::vector | [split](#split)(std::string source, char separator) |
 | std::string | [stringFormat](#stringFormat)(std::string fmt) |
 
-Define this to enable internal calls to the profiler, if it has been set with simul::base::SetProfilingInterface().
+Static library: (SIMUL)/lib/(PLATFORM)/(COMPILER)/(ConfigurationName)/SimulBase_(RUNTIME).lib
+
+Dynamic library: (SIMUL)/exe/(PLATFORM)/(COMPILER)/(ConfigurationName)/SimulBase_(RUNTIME).dll
+
+The Base library does not depend on any others.
   
 
 

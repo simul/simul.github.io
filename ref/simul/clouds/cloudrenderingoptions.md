@@ -8,21 +8,23 @@ struct CloudRenderingOptions
 
 | Include: | Clouds/CloudWindow.h |
 
-This controls the rendering of clouds.<br>
 
 
 Functions
 ---
 
+|  | [CloudRenderingOptions](#CloudRenderingOptions)() |
 | unsigned long long | [GetEnum](#GetEnum)(char txt_utf8) |
+
+
+Functions
+---
+
+### <a name="CloudRenderingOptions"/> CloudRenderingOptions()
+This controls the rendering of clouds.
 
 This controls the rendering of clouds.
 
-  
-
-
-Functions
----
 
 ### <a name="GetEnum"/>unsigned long long GetEnum(char txt_utf8)
 < Mie scattering eccentricity.

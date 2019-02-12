@@ -6,10 +6,8 @@ weight: 0
 class BaseSkyInterface
 ===
 
-| Include: | Terrain/BaseTerrainRenderer.h |
+| Include: | Clouds/BaseGpuCloudGenerator.h |
 
-An abstract interface class for skies.
-  
 
 
 Functions
@@ -32,10 +30,8 @@ Functions
 | simul::sky::float4 | [GetMieRayleighRatio](#GetMieRayleighRatio)() |
 | unsigned int | [GetSubdivisionChecksum](#GetSubdivisionChecksum)() |
 | vec2 | [GetSunlightTableTransformKm](#GetSunlightTableTransformKm)() |
+| float  const & | [GetTime](#GetTime)() |
 | float | [GetVisibilityDistance](#GetVisibilityDistance)(float view_alt_km) |
-
-An abstract interface class for skies.
-  
 
 
 Functions
@@ -94,6 +90,9 @@ When this checksum changes, the atmosphere has been modified sufficiently to war
 
 ### <a name="GetSunlightTableTransformKm"/>vec2 GetSunlightTableTransformKm()
 Get the transform vector to convert an altitude in km into a 1D texture coordinate for the sunlight table. x = multiplier, y=offset, so texcoord u=t.x*zkm+t.y;
+
+### <a name="GetTime"/>float  const & GetTime()
+An abstract interface class for skies.
 
 ### <a name="GetVisibilityDistance"/>float GetVisibilityDistance(float view_alt_km)
 From the altitude specified, the distance in km to 10% visibility (mainly a factor of fog/haze).

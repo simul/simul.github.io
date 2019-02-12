@@ -6,10 +6,8 @@ weight: 0
 class RenderPlatform
 ===
 
-| Include: | Platform/CrossPlatform/DeviceContext.h |
+| Include: | Platform/CrossPlatform/GpuProfiler.h |
 
-Tells the renderer what to do with shader source to get binaries. values can be combined, e.g. ALWAYS_BUILD|TRY_AGAIN_ON_FAIL
-  
 
 
 Functions
@@ -83,9 +81,6 @@ Functions
 | vec4 | [TexelQuery](#TexelQuery)(simul::crossplatform::DeviceContext deviceContext, int query_id, uint2 pos, simul::crossplatform::Texture texture) |
 | bool | [ApplyContextState](#ApplyContextState)(simul::crossplatform::DeviceContext, bool) |
 | simul::crossplatform::Viewport | [PlatformGetViewport](#PlatformGetViewport)(simul::crossplatform::DeviceContext deviceContext, int index) |
-
-Tells the renderer what to do with shader source to get binaries. values can be combined, e.g. ALWAYS_BUILD|TRY_AGAIN_ON_FAIL
-  
 
 
 Functions

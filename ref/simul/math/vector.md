@@ -8,8 +8,6 @@ class Vector
 
 | Include: | Math/Matrix4x4.h |
 
-A resizeable vector class
-  
 
 
 Functions
@@ -32,9 +30,6 @@ Functions
 | bool | [Unit](#Unit)() |
 | void | [Zero](#Zero)() |
 | void | [ChangeSize](#ChangeSize)(unsigned int s) |
-
-A resizeable vector class
-  
 
 
 Functions
@@ -90,3 +85,8 @@ Set all values to zero.
 
 ### <a name="ChangeSize"/>void ChangeSize(unsigned int s)
 < Resize the vector, allocating memory if s>size.
+
+Fields
+---
+
+**Values**  A resizeable vector class

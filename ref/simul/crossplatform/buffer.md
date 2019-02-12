@@ -6,10 +6,8 @@ weight: 0
 class Buffer
 ===
 
-| Include: | Platform/CrossPlatform/Effect.h |
+| Include: | Platform/CrossPlatform/Buffer.h |
 
-
-  
 
 
 Functions
@@ -19,9 +17,6 @@ Functions
 | void | [EnsureVertexBuffer](#EnsureVertexBuffer)(simul::crossplatform::RenderPlatform renderPlatform, int num_vertices, simul::crossplatform::Layout layout, void data, bool cpu_access, bool streamout_target) |
 | void * | [Map](#Map)(simul::crossplatform::DeviceContext deviceContext) |
 | void | [Unmap](#Unmap)(simul::crossplatform::DeviceContext deviceContext) |
-
-
-  
 
 
 Functions

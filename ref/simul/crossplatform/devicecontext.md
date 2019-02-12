@@ -6,19 +6,8 @@ weight: 0
 struct DeviceContext
 ===
 
-| Include: | Platform/CrossPlatform/DeviceContext.h |
+| Include: | Platform/CrossPlatform/Mesh.h |
 
-
-OpenGL                                  |       Direct3D
--------------------------------------------
-Vertex Shader                   |       Vertex Shader
-Tessellation Control    |       Hull Shader
-Tessellation Evaluation |       Domain Shader
-Geometry Shader                 |       Geometry Shader
-Fragment Shader                 |       Pixel Shader
-Compute Shader                  |       Compute Shader
-
-  
 
 
 Functions
@@ -27,18 +16,6 @@ Functions
 | void | [setDefaultRenderTargets](#setDefaultRenderTargets)(simul::crossplatform::ApiRenderTarget, simul::crossplatform::ApiDepthRenderTarget, uint32_t viewportLeft, uint32_t viewportTop, uint32_t viewportRight, uint32_t viewportBottom, simul::crossplatform::Texture texture_targets, int num_targets, simul::crossplatform::Texture depth_target) |
 | simul::crossplatform::GpuProfilingInterface * | [GetGpuProfilingInterface](#GetGpuProfilingInterface)(simul::crossplatform::DeviceContext context) |
 | void | [SetGpuProfilingInterface](#SetGpuProfilingInterface)(simul::crossplatform::DeviceContext context, simul::crossplatform::GpuProfilingInterface p) |
-
-
-OpenGL                                  |       Direct3D
--------------------------------------------
-Vertex Shader                   |       Vertex Shader
-Tessellation Control    |       Hull Shader
-Tessellation Evaluation |       Domain Shader
-Geometry Shader                 |       Geometry Shader
-Fragment Shader                 |       Pixel Shader
-Compute Shader                  |       Compute Shader
-
-  
 
 
 Functions

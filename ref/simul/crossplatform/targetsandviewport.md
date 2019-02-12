@@ -6,15 +6,15 @@ weight: 0
 struct TargetsAndViewport
 ===
 
-| Include: | Platform/CrossPlatform/Texture.h |
-
-Stores information about the current render targets
-  
+| Include: | Platform/CrossPlatform/RenderPlatform.h |
 
 
 
-Stores information about the current render targets
-  
+Classes and Structures
+---
+
+| struct [TextureTarget](targetsandviewport/texturetarget) |  |
+
 
 
 Fields

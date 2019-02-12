@@ -8,20 +8,16 @@ class ProfilingInterface
 
 | Include: | Clouds/CloudKeyframer.h |
 
-simul::base::DefaultProfiler inherits from ProfilingInterface to measure CPU performance.
-  
 
 [simul::base::BaseProfilingInterface](baseprofilinginterface)
 
 Functions
 ---
 
+|  | [ProfilingInterface](#ProfilingInterface)() |
 | void | [Begin](#Begin)(char) |
 | void | [End](#End)() |
 | void | [EndFrame](#EndFrame)() |
-
-simul::base::DefaultProfiler inherits from ProfilingInterface to measure CPU performance.
-  
 
 
 Base Classes
@@ -30,6 +26,9 @@ Base Classes
 
 Functions
 ---
+
+### <a name="ProfilingInterface"/> ProfilingInterface()
+simul::base::DefaultProfiler inherits from ProfilingInterface to measure CPU performance.
 
 ### <a name="Begin"/>void Begin(char)
 Mark the start of a profiling block.

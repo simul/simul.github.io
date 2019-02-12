@@ -6,19 +6,14 @@ weight: 0
 class PlatformStructuredBuffer
 ===
 
-| Include: | Platform/CrossPlatform/Effect.h |
+| Include: | Platform/CrossPlatform/RenderPlatform.h |
 
-A base class for structured buffers, used by StructuredBuffer internally.
-  
 
 
 Functions
 ---
 
 | void | [ActualApply](#ActualApply)(simul::crossplatform::DeviceContext, simul::crossplatform::EffectPass, int) |
-
-A base class for structured buffers, used by StructuredBuffer internally.
-  
 
 
 Functions
@@ -30,4 +25,6 @@ For RenderPlatform's use only: do not call.
 Fields
 ---
 
-**renderPlatform**  Find the constant buffer in the given effect, and link to it.
+**renderPlatform**  A base class for structured buffers, used by StructuredBuffer internally.
+
+**numCopies**  Find the constant buffer in the given effect, and link to it.

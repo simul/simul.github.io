@@ -8,8 +8,6 @@ class Vector3
 
 | Include: | Math/GeometricFunctions.h |
 
-A 3-element vector class
-  
 
 
 Functions
@@ -39,9 +37,6 @@ Functions
 | float | [SquareSize](#SquareSize)() |
 | bool | [Unit](#Unit)() |
 | void | [Zero](#Zero)() |
-
-A 3-element vector class
-  
 
 
 Functions

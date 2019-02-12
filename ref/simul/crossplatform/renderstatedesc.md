@@ -6,13 +6,14 @@ weight: 0
 struct RenderStateDesc
 ===
 
-| Include: | Platform/CrossPlatform/Effect.h |
-
-Specifies the bound render target pixel format
-  
+| Include: | Platform/CrossPlatform/RenderPlatform.h |
 
 
 
-Specifies the bound render target pixel format
-  
 
+
+Fields
+---
+
+**type**  An initialization structure for a RenderState. Create a RenderStateDesc and pass it to RenderPlatform::CreateRenderState,
+then store the returned pointer. Delete the pointer when done.

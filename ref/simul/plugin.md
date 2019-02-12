@@ -8,14 +8,12 @@ namespace plugin
 
 | Include: | PlugIns/TrueSkyPluginRender/TrackingAllocator.h |
 
-Windows & XBox
-  
 
 
 Classes and Structures
 ---
 
-| class [PluginTrueSkyRenderer](plugin/plugintrueskyrenderer) |  |
+| struct [Query](plugin/query) |  |
 | class [TrackingAllocator](plugin/trackingallocator) |  |
 
 Functions
@@ -35,9 +33,6 @@ Functions
 | int | [StaticSetSequenceTxt](#StaticSetSequenceTxt)(char txt) |
 | int | [StaticShutDownInterface](#StaticShutDownInterface)() |
 | void | [UnitySetGraphicsDevice](#UnitySetGraphicsDevice)(void device, simul::crossplatform::RenderPlatformType deviceType, UnityGfxDeviceEventType eventType) |
-
-Windows & XBox
-  
 
 
 Functions
@@ -90,4 +85,4 @@ Enums
 
 **FloatAtPosition**  The namespace for the plugin render interface.
 
-**RenderStyle**  Attribute to make function be exported from a plugin:
+**RenderStyle**  Different rendering styles

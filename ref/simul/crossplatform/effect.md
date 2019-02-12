@@ -6,10 +6,8 @@ weight: 0
 class Effect
 ===
 
-| Include: | Platform/CrossPlatform/Effect.h |
+| Include: | Platform/CrossPlatform/View.h |
 
-The cross-platform base class for shader effects.
-  
 
 
 Functions
@@ -29,9 +27,6 @@ Functions
 | void | [SetUnorderedAccessView](#SetUnorderedAccessView)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::ShaderResource name, simul::crossplatform::Texture tex, int index, int mip) |
 | void | [Unapply](#Unapply)(simul::crossplatform::DeviceContext deviceContext) |
 | void | [UnbindTextures](#UnbindTextures)(simul::crossplatform::DeviceContext deviceContext) |
-
-The cross-platform base class for shader effects.
-  
 
 
 Functions
@@ -78,3 +73,8 @@ Deactivate the shader.
 
 ### <a name="UnbindTextures"/>void UnbindTextures(simul::crossplatform::DeviceContext deviceContext)
 Zero-out the textures that are set for this shader. Call before apply.
+
+Fields
+---
+
+**renderPlatform**  The cross-platform base class for shader effects.
