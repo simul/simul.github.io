@@ -20,6 +20,7 @@ The trueSKY Unreal Engine 4 plugin comes as a branch of the UE4 engine on GitHub
 
 trueSKY SDK
 --------------
+
 The trueSKY SDK can be integrated with a game/simulation in two different ways. Firstly, it is possible to dynamically link with the trueSkyPluginRender library and API just as we do for Unity and Unreal. The second option is to link the trueSKY libraries directly, and access the lower-level classes directly.
 
 *TrueSkyPluginRender Library*
@@ -43,14 +44,7 @@ You should create an instance of simul::clouds::Environment, which is persistent
 simul::clouds::Environment *environment=NULL;
 ~~~~~~~~~~~~~~~
 
-Apply your trueSKY licence key (see <a href="licensing">Licensing</a>for more details), and initialize the Environment instance:
-~~~~~~~~~~~~~~~{.c}
-simul::base::SetLicence(SIMUL_LICENSE_KEY);
-environment=new simul::clouds::Environment();
-~~~~~~~~~~~~~~~
-
-The Environment is API-neutral, it calculates and updates environment data. We will create a persistent <a href="ref/simul/crossplatform/renderplatform">RenderPlatform</a>,
-whose class depends on the graphics API we use:
+The Environment is API-neutral, it calculates and updates environment data. We will create a persistent <a href="ref/simul/crossplatform/renderplatform">RenderPlatform</a>, whose class depends on the graphics API we use:
 
 ~~~~~~~~~~~~~~~{.c}
 simul::dx11::RenderPlatform renderPlatformDx11;
@@ -92,7 +86,7 @@ simul::crossplatform::DeviceContext     deviceContext;
 deviceContext.platform_context                          =pContext;
 deviceContext.renderPlatform                            =&renderPlatformDx11;
 deviceContext.viewStruct.view_id                        =view_id;
-deviceContext.viewStruct.depthTextureStyle      =crossplatform::PROJECTION;
+deviceContext.viewStruct.depthTextureStyle            =crossplatform::PROJECTION;
 deviceContext.viewStruct.view                           =viewMatrix;
 deviceContext.viewStruct.proj                           =projectionMatrix;
 ~~~~~~~~~~~~~~~
