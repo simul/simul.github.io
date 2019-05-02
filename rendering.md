@@ -82,10 +82,8 @@ Rendering performance is chiefly dependent on the number of pixels drawn, and th
 Calculation performance - mainly cloud lighting - depends strongly on the grid size - the larger the grid, the more time will be taken to light a cloud keyframe.
 
 It is usual to downsample the cloud part of the sky rendering, controlled by
-[simul::clouds::CloudRenderingOptions::MaximumCubemapResolution](/ref/simul/clouds/cloudrenderingoptions/maximumcubemapresolution)
-
-in the [simul::clouds::CloudRenderingOptions](/ref/simul/clouds/cloudrenderingoptions)
-.
+<a href="ref/simul/clouds/cloudrenderingoptions/maximumcubemapresolution">MaximumCubemapResolution</a>
+in the <a href="ref/simul/clouds/cloudrenderingoptions">CloudRenderingOptions</a>.
 
 
 Rain and Snow
