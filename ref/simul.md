@@ -6,7 +6,7 @@ weight: 0
 namespace simul
 ===
 
-| Include: | Base/Base.h |
+| Include: | Math/Decay.h |
 
 
 

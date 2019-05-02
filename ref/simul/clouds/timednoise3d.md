@@ -11,7 +11,7 @@ class TimedNoise3D
 A 3D noise generator used for cloud volumes, where the value returned depends on normalized spatial co-ordinates, and on normalized time.
   
 
-[simul::math::Noise3D](/ref/simul/math/noise3d)
+[simul::math::Noise3D](../math/noise3d)
 
 Functions
 ---
@@ -24,7 +24,7 @@ A 3D noise generator used for cloud volumes, where the value returned depends on
 
 Base Classes
 ---
-[simul::math::Noise3D](/ref/simul/math/noise3d)
+[simul::math::Noise3D](../math/noise3d)
 
 Functions
 ---
