@@ -181,8 +181,7 @@ In the sequencer, clouds can be edited in two ways. Clicking (or shift-clicking)
 <tr>
 <td>Persistence</td><td>Fractal persistence to use when generating the noise texture. </td></tr>
 </table> 
-See the public attributes of [simul::clouds::CloudKeyframer](/ref/simul/clouds/cloudkeyframer)
-for a full description of all the cloud layer properties.
+See the public attributes of <a href="ref/simul/clouds/cloudkeyframer">CloudKeyframer</a>for a full description of all the cloud layer properties.
 
 <h3>Cloud Keyframe Properties</h3>
 Note that for 2D clouds, there is no Weather Effects section. The cloud keyframe properties accessible in the sequencer are:
@@ -271,8 +270,7 @@ Note that for 2D clouds, there is no Weather Effects section. The cloud keyframe
 <td>Waver</td><td>How much precipitation layers waver as they fall. </td></tr>
 </table>
 
-See the public attributes of [simul::clouds::CloudKeyframe](/ref/simul/clouds/cloudkeyframe)
-for a full description of all the cloud keyframe properties.
+See the public attributes of <a href="ref/simul/clouds/cloudkeyframe">CloudKeyframe</a>for a full description of all the cloud keyframe properties.
 
 <h2>The Sky</h2>
 In the sequencer, just as with clouds, the sky can be edited in two ways. Clicking (or shift-clicking) individual keyframes will allow the properties for one or more keyframes at any point in time to be altered. Alternatively, clicking the Sky column will allow the properties for the sky layer to be altered. These properties will impact the entire sequence indefinitely, allowing you to adjust the amount of ozone, alter the diameter of the sun/moon, set the start date of the scene and more. Whereas keyframe properties are temporal, allowing you to adjust settings like visibility, haze, eccentricity and so on, for the point in time at which the keyframe is active. Note: If just a single keyframe is present in the sequencer, then those settings will be applied continously. 
@@ -354,8 +352,7 @@ appear only half as dim, and so on.
 <tr>
 <td>Find Constellation</td><td>Find a star constellation at given coordinates. </td></tr>
 </table>
-See the public attributes of [simul::sky::SkyKeyframer](/ref/simul/sky/skykeyframer)
-for a full description of all the sky layer properties.
+See the public attributes of <a href="ref/simul/sky/skykeyframer">SkyKeyframer</a>for a full description of all the sky layer properties.
 
 <h3>Sky Keyframe Properties</h3>
 Sky keyframe properties allow you to change particular elements of one or more keyframes at a time. The sky keyframe properties accessible in the sequencer are:
@@ -401,8 +398,7 @@ Sky keyframe properties allow you to change particular elements of one or more k
 <tr>
 <td>Moon elevation</td><td>Controls how high the moon is in the sky (if moon position not automatic). </td></tr>
 </table>
-See the public attributes of [simul::sky::SkyKeyframe](/ref/simul/sky/skykeyframe)
-for a full description of all the sky keyframe properties.
+See the public attributes of <a href="ref/simul/sky/skykeyframe">SkyKeyframe</a>for a full description of all the sky keyframe properties.
 
 <hr>
 Next: <a href="licensing">Licensing</a>

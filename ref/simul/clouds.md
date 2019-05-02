@@ -11,6 +11,31 @@ namespace clouds
 The namespace corresponding to the Clouds module.<br>
 
 
+Classes and Structures
+---
+
+| class [BaseWeatherRenderer](clouds/baseweatherrenderer) |  |
+| class [CellularCloudGrid](clouds/cellularcloudgrid) |  |
+| class [CellularCloudNode](clouds/cellularcloudnode) |  |
+| struct [CloudGeometryHelper](clouds/cloudgeometryhelper) |  |
+| class [CloudGridInterface](clouds/cloudgridinterface) |  |
+| class [CloudInterface](clouds/cloudinterface) |  |
+| struct [CloudKeyframe](clouds/cloudkeyframe) |  |
+| class [CloudProperties](clouds/cloudproperties) |  |
+| class [CloudRenderer](clouds/cloudrenderer) | Class for real-time volumetric cloud rendering.<br> |
+| struct [CloudVolume](clouds/cloudvolume) |  |
+| struct [DepthTextureStruct](clouds/depthtexturestruct) |  |
+| struct [ExportLightningStrike](clouds/exportlightningstrike) |  |
+| class [FastCloudNode](clouds/fastcloudnode) |  |
+| class [HumidityCallbackInterface](clouds/humiditycallbackinterface) |  |
+| class [MixedResolutionCompositor](clouds/mixedresolutioncompositor) |  |
+| struct [PointSource](clouds/pointsource) |  |
+| struct [PrecipitationRegion](clouds/precipitationregion) |  |
+| struct [SelectionIdentifier](clouds/selectionidentifier) |  |
+| class [Skylight](clouds/skylight) |  |
+| class [TimedNoise3D](clouds/timednoise3d) |  |
+| class [TrueSkyRenderer](clouds/trueskyrenderer) | <br> |
+
 Functions
 ---
 
@@ -30,3 +55,13 @@ Functions
 
 ### <a name="TransformPosition"/>vec3 TransformPosition(simul::crossplatform::Quaterniond old_origin, simul::crossplatform::Quaterniond new_origin, vec3 old_pos)
 Transform a position in a previous frame of reference into a new frame. Assumes Earth radius 6378km, origin at sea level.
+
+Typedefs
+---
+
+**CloudTexelType**  By defining this typedef, we ensure that cloud texels are treated as 32-bit.
+
+**VolumeMap**  Custom volume.
+
+Enums
+---
