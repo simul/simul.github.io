@@ -8,6 +8,8 @@ weight: 120
 
 Version HEAD
 ---
+Fri 03 May : Fix for Rain and Rain Streaks appearing at altitudes.  
+Fri 03 May : Disable part of the flow rays calculations due to current PS4 incompatibility, current progress on fixing water vr support  
 Wed 01 May : Minor fixes for sequencer stability  
 Wed 01 May : SL/simul_clouds.sl GetRainAtOffsetKm() now flips the y-texture coordinate in OpenGL. Precipitation Region are now working in OpenGL.  
 Tue 30 Apr : Precipitation Region Update: CloudWindow has blue interpolated and cyan static circles representing precipitation regions. Inside of CloudWindow, the cyan static circles can be positioned by left mouse button + shift. "Lock To Cloud" changed to "Affected by winds". Override Winds lock the precipitation region to the centre of the cloudkeyframe. Minor update to Debug Overlays for Rain Textures and Cloud Cross-sections.  
@@ -106,7 +108,5 @@ Tue 18 Dec : Add Sample CMakeLists.txt, init default colour format in Vulkan sam
 Tue 18 Dec : SetDefaultColourFormat call from DisplaySurface.  
 Mon 17 Dec : Fix build of Qt widgets project.  
 Mon 17 Dec : Fix build of Qt widgets project.  
-Fri 14 Dec : Add Simul.cmake  
-Fri 14 Dec : Add cmake files, fix Xbox v141 build.  
 
 <hr>

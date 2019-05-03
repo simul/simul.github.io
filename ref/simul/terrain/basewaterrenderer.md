@@ -36,7 +36,7 @@ Functions
 | void | [removeBoundedWaterObject](#removeBoundedWaterObject)(uint ID) |
 | void | [removeWaterBuoyancyObject](#removeWaterBuoyancyObject)(int ID) |
 | void | [removeWaterProbe](#removeWaterProbe)(int ID) |
-| void | [Render](#Render)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture depthTexture, simul::crossplatform::Texture colourTexture, simul::crossplatform::Texture cubemap, int passNo) |
+| void | [Render](#Render)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Viewport depthViewports, simul::crossplatform::Texture depthTexture, simul::crossplatform::Texture colourTexture, simul::crossplatform::Texture cubemap, int passNo) |
 | void | [RenderFlowRays](#RenderFlowRays)(simul::crossplatform::DeviceContext deviceContext, int width, int height) |
 | void | [RenderTextures](#RenderTextures)(simul::crossplatform::DeviceContext deviceContext, int width, int depth) |
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform r) |
@@ -123,7 +123,7 @@ Remove a water buoyancy object
 ### <a name="removeWaterProbe"/>void removeWaterProbe(int ID)
 Remove a water probe
 
-### <a name="Render"/>void Render(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture depthTexture, simul::crossplatform::Texture colourTexture, simul::crossplatform::Texture cubemap, int passNo)
+### <a name="Render"/>void Render(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Viewport depthViewports, simul::crossplatform::Texture depthTexture, simul::crossplatform::Texture colourTexture, simul::crossplatform::Texture cubemap, int passNo)
 Main Render function.
 
 ### <a name="RenderFlowRays"/>void RenderFlowRays(simul::crossplatform::DeviceContext deviceContext, int width, int height)
