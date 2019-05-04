@@ -6,7 +6,7 @@ weight: 0
 class Light
 ===
 
-| Include: | Platform/CrossPlatform/RenderPlatform.h |
+| Include: | Platform/CrossPlatform/Light.h |
 
 
 

@@ -6,14 +6,27 @@ weight: 0
 class HumidityCallbackInterface
 ===
 
-| Include: | Clouds/CloudInterface.h |
+| Include: | Clouds/CellularCloudNode.h |
 
+A callback class to control the distribution of humidity in a cloud node. The value returned by
+GetHumidityMultiplier is multiplied by the calculated cloud density.
+Derive your own class from HumidityCallbackInterface and implement GetHumidityMultiplier,
+then call <a href="fastcloudnode/addhumiditycallback">AddHumidityCallback </a>
+to attach it to the cloud node.
+  
 
 
 Functions
 ---
 
 | float | [GetHumidityMultiplier](#GetHumidityMultiplier)(float x, float y, float z) |
+
+A callback class to control the distribution of humidity in a cloud node. The value returned by
+GetHumidityMultiplier is multiplied by the calculated cloud density.
+Derive your own class from HumidityCallbackInterface and implement GetHumidityMultiplier,
+then call <a href="fastcloudnode/addhumiditycallback">AddHumidityCallback </a>
+to attach it to the cloud node.
+  
 
 
 Functions
