@@ -13,6 +13,7 @@ namespace sky
 Classes and Structures
 ---
 
+| class [BaseAtmosphericsRenderer](sky/baseatmosphericsrenderer) |  |
 | struct [BaseKeyframe](sky/basekeyframe) |  |
 | class [BaseKeyframer](sky/basekeyframer) |  |
 | class [BaseSkyInterface](sky/baseskyinterface) |  |

@@ -6,9 +6,8 @@ weight: 0
 namespace base
 ===
 
-| Include: | Base/Base.h |
+| Include: | Base/InitializeAndDetectProcessor.h |
 
-Base is the base library, containing simple data structures, macros and other useful things.<br>
 
 
 Classes and Structures
@@ -44,13 +43,6 @@ Functions
 | void | [SetUseExternalTextures](#SetUseExternalTextures)(bool t) |
 | std::vector | [split](#split)(std::string source, char separator) |
 | std::string | [stringFormat](#stringFormat)(std::string fmt) |
-
-Static library: (SIMUL)/lib/(PLATFORM)/(COMPILER)/(ConfigurationName)/SimulBase_(RUNTIME).lib
-
-Dynamic library: (SIMUL)/exe/(PLATFORM)/(COMPILER)/(ConfigurationName)/SimulBase_(RUNTIME).dll
-
-The Base library does not depend on any others.
-  
 
 
 Functions
