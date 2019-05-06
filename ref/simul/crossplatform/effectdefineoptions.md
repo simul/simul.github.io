@@ -6,11 +6,13 @@ weight: 0
 struct EffectDefineOptions
 ===
 
-| Include: | Platform/CrossPlatform/RenderPlatform.h |
+| Include: | Platform/CrossPlatform/Effect.h |
+
+
+  
 
 
 
 
+  
 
-Fields
----

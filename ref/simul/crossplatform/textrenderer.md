@@ -1,9 +1,9 @@
 ---
-title: Material
+title: TextRenderer
 layout: reference
 weight: 0
 ---
-class Material
+class TextRenderer
 ===
 
 | Include: | Platform/CrossPlatform/RenderPlatform.h |
