@@ -14,7 +14,6 @@ Classes and Structures
 ---
 
 | struct [AmortizationStruct](crossplatform/amortizationstruct) |  |
-| class [BaseFramebuffer](crossplatform/baseframebuffer) |  |
 | class [BaseRenderer](crossplatform/baserenderer) |  |
 | struct [CommandLineParams](crossplatform/commandlineparams) |  |
 | struct [ContextState](crossplatform/contextstate) |  |
@@ -33,6 +32,7 @@ Classes and Structures
 | struct [MouseCameraInput](crossplatform/mousecamerainput) |  |
 | struct [MouseCameraState](crossplatform/mousecamerastate) |  |
 | class [PlatformRendererInterface](crossplatform/platformrendererinterface) |  |
+| struct [PosColourVertex](crossplatform/poscolourvertex) |  |
 | class [Quaterniond](crossplatform/quaterniond) |  |
 | struct [RasterizerDesc](crossplatform/rasterizerdesc) |  |
 | class [RenderDelegater](crossplatform/renderdelegater) |  |
@@ -40,8 +40,8 @@ Classes and Structures
 | struct [RenderTargetFormatDesc](crossplatform/rendertargetformatdesc) |  |
 | struct [ShaderResource](crossplatform/shaderresource) |  |
 | class [SphericalHarmonics](crossplatform/sphericalharmonics) |  |
+| class [SwapChain](crossplatform/swapchain) |  |
 | struct [TargetsAndViewport](crossplatform/targetsandviewport) |  |
-| class [TextRenderer](crossplatform/textrenderer) |  |
 | class [TextureView](crossplatform/textureview) |  |
 | class [View](crossplatform/view) |  |
 | class [ViewManager](crossplatform/viewmanager) |  |
