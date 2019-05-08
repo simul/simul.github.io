@@ -6,7 +6,7 @@ weight: 0
 namespace crossplatform
 ===
 
-| Include: | Platform/CrossPlatform/DemoOverlay.h |
+| Include: | Platform/CrossPlatform/CameraInterface.h |
 
 
 
@@ -40,7 +40,6 @@ Classes and Structures
 | struct [RenderTargetFormatDesc](crossplatform/rendertargetformatdesc) |  |
 | struct [ShaderResource](crossplatform/shaderresource) |  |
 | class [SphericalHarmonics](crossplatform/sphericalharmonics) |  |
-| class [SwapChain](crossplatform/swapchain) |  |
 | struct [TargetsAndViewport](crossplatform/targetsandviewport) |  |
 | class [TextureView](crossplatform/textureview) |  |
 | class [View](crossplatform/view) |  |
