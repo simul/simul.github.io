@@ -8,6 +8,8 @@ weight: 120
 
 Version HEAD
 ---
+Wed 08 May : New Colour Scheme for Cloud Window to improve clarity. Fix for incorrect Precipitation Region position in edge cases. Clouds/BaseGpuCloudGenerator.h SetPrecipitationCentre() removed.  
+Wed 08 May : New Colour Scheme for Cloud Window is improve clarity. Fix for incorrect Precipitation Region position in edge cases. Clouds/BaseGpuCloudGenerator.h SetPrecipitationCentre() removed.  
 Fri 03 May : Fix for Rain and Rain Streaks appearing at altitudes.  
 Fri 03 May : Disable part of the flow rays calculations due to current PS4 incompatibility, current progress on fixing water vr support  
 Wed 01 May : Minor fixes for sequencer stability  
@@ -106,7 +108,5 @@ Tue 18 Dec : Updated DX12 CloudRenderer.cpp RenderCloudWindow() will return void
 Tue 18 Dec : Updated DX12: mSubResourceStates.  Crossplatform: Light Probe links to effect for UBO. OpenGL: Rebuild the FBO as a cubemap. Vulkan sample expanded the vulkan triangle code and shaders.  
 Tue 18 Dec : Add Sample CMakeLists.txt, init default colour format in Vulkan sample.  
 Tue 18 Dec : SetDefaultColourFormat call from DisplaySurface.  
-Mon 17 Dec : Fix build of Qt widgets project.  
-Mon 17 Dec : Fix build of Qt widgets project.  
 
 <hr>

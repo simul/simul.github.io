@@ -6,14 +6,13 @@ weight: 0
 namespace sky
 ===
 
-| Include: | Sky/Binding.h |
+| Include: | Sky/Sun.h |
 
 
 
 Classes and Structures
 ---
 
-| class [BaseAtmosphericsRenderer](sky/baseatmosphericsrenderer) |  |
 | struct [BaseKeyframe](sky/basekeyframe) |  |
 | class [BaseKeyframer](sky/basekeyframer) |  |
 | class [BaseSkyInterface](sky/baseskyinterface) |  |

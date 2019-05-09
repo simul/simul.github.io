@@ -22,9 +22,9 @@ If regionalis false, it is everywhere.
 Fields
 ---
 
-**lockToClouds**  < If true, rain/snow only occurs within the specified region. If false, it occurs everywhere for the keyframe.
+**lockToClouds**  < If true, rain/snow only occurs within the specified region. If false, it occurs everywhere in the cloud keyframe.
 
-**centre**  < If true, the region moves with the cloud wind motion, and centreKm represents an offset from this motion.
+**centre**  < If true, the movement of the region takes into account the wind's speed and heading.
 
 **radiusKm**  < Origin on the globe for this Precipitation Region
 
