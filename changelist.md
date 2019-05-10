@@ -8,6 +8,7 @@ weight: 120
 
 Version HEAD
 ---
+Thu 09 May : Minor updates to simul_clouds.sl GetRainAtOffsetKm(). The rain map is not re-drawn to reflect the precipitation region.  
 Wed 08 May : New Colour Scheme for Cloud Window to improve clarity. Fix for incorrect Precipitation Region position in edge cases. Clouds/BaseGpuCloudGenerator.h SetPrecipitationCentre() removed.  
 Wed 08 May : New Colour Scheme for Cloud Window is improve clarity. Fix for incorrect Precipitation Region position in edge cases. Clouds/BaseGpuCloudGenerator.h SetPrecipitationCentre() removed.  
 Fri 03 May : Fix for Rain and Rain Streaks appearing at altitudes.  
@@ -107,6 +108,5 @@ Wed 19 Dec : Fixed the OpenGL view re-opening issue in SkySequencer. Added new f
 Tue 18 Dec : Updated DX12 CloudRenderer.cpp RenderCloudWindow() will return void if cloud_texture or light_texture AsD3D11SRV is nullptr.  
 Tue 18 Dec : Updated DX12: mSubResourceStates.  Crossplatform: Light Probe links to effect for UBO. OpenGL: Rebuild the FBO as a cubemap. Vulkan sample expanded the vulkan triangle code and shaders.  
 Tue 18 Dec : Add Sample CMakeLists.txt, init default colour format in Vulkan sample.  
-Tue 18 Dec : SetDefaultColourFormat call from DisplaySurface.  
 
 <hr>

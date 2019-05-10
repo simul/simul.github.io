@@ -6,7 +6,7 @@ weight: 0
 namespace crossplatform
 ===
 
-| Include: | Platform/CrossPlatform/ShaderMode.h |
+| Include: | Platform/CrossPlatform/PixelFormat.h |
 
 
 
@@ -14,6 +14,7 @@ Classes and Structures
 ---
 
 | struct [AmortizationStruct](crossplatform/amortizationstruct) |  |
+| class [BaseFramebuffer](crossplatform/baseframebuffer) |  |
 | class [BaseRenderer](crossplatform/baserenderer) |  |
 | struct [CommandLineParams](crossplatform/commandlineparams) |  |
 | struct [ContextState](crossplatform/contextstate) |  |
@@ -44,6 +45,7 @@ Classes and Structures
 | class [View](crossplatform/view) |  |
 | class [ViewManager](crossplatform/viewmanager) |  |
 | struct [Viewport](crossplatform/viewport) |  |
+| struct [ViewStruct](crossplatform/viewstruct) |  |
 
 Functions
 ---
