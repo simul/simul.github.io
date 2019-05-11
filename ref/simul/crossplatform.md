@@ -6,7 +6,7 @@ weight: 0
 namespace crossplatform
 ===
 
-| Include: | Platform/CrossPlatform/PixelFormat.h |
+| Include: | Platform/CrossPlatform/DemoOverlay.h |
 
 
 
@@ -14,12 +14,12 @@ Classes and Structures
 ---
 
 | struct [AmortizationStruct](crossplatform/amortizationstruct) |  |
-| class [BaseFramebuffer](crossplatform/baseframebuffer) |  |
 | class [BaseRenderer](crossplatform/baserenderer) |  |
 | struct [CommandLineParams](crossplatform/commandlineparams) |  |
 | struct [ContextState](crossplatform/contextstate) |  |
 | struct [DisjointQueryStruct](crossplatform/disjointquerystruct) |  |
 | class [DisplaySurfaceManager](crossplatform/displaysurfacemanager) |  |
+| struct [EffectDefineOptions](crossplatform/effectdefineoptions) |  |
 | class [EffectTechniqueGroup](crossplatform/effecttechniquegroup) |  |
 | struct [Frustum](crossplatform/frustum) |  |
 | class [GpuProfiler](crossplatform/gpuprofiler) |  |
@@ -28,15 +28,14 @@ Classes and Structures
 | class [Layout](crossplatform/layout) |  |
 | struct [LayoutDesc](crossplatform/layoutdesc) |  |
 | class [LensFlare](crossplatform/lensflare) |  |
-| class [Material](crossplatform/material) |  |
 | struct [MixedResolutionStruct](crossplatform/mixedresolutionstruct) |  |
 | struct [MouseCameraInput](crossplatform/mousecamerainput) |  |
 | struct [MouseCameraState](crossplatform/mousecamerastate) |  |
 | class [PlatformRendererInterface](crossplatform/platformrendererinterface) |  |
-| struct [PosColourVertex](crossplatform/poscolourvertex) |  |
 | class [Quaterniond](crossplatform/quaterniond) |  |
 | struct [RasterizerDesc](crossplatform/rasterizerdesc) |  |
 | class [RenderDelegater](crossplatform/renderdelegater) |  |
+| struct [RenderStateDesc](crossplatform/renderstatedesc) |  |
 | struct [RenderTargetFormatDesc](crossplatform/rendertargetformatdesc) |  |
 | struct [ShaderResource](crossplatform/shaderresource) |  |
 | class [SphericalHarmonics](crossplatform/sphericalharmonics) |  |
@@ -45,7 +44,6 @@ Classes and Structures
 | class [View](crossplatform/view) |  |
 | class [ViewManager](crossplatform/viewmanager) |  |
 | struct [Viewport](crossplatform/viewport) |  |
-| struct [ViewStruct](crossplatform/viewstruct) |  |
 
 Functions
 ---

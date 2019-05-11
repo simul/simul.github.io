@@ -79,7 +79,7 @@ Calculation performance - mainly cloud lighting - depends strongly on the grid s
 
 It is usual to downsample the cloud part of the sky rendering, controlled by
 <a href="ref/simul/clouds/cloudrenderingoptions/maximumcubemapresolution">MaximumCubemapResolution</a>
-in the <a href="ref/simul/clouds/cloudrenderingoptions">CloudRenderingOptions</a>.
+in the <a href="ref/simul/clouds/cloudrenderingoptions">CloudRenderingOptions</a> and <a href="ref/simul/clouds/cloudrenderingoptions">CloudRenderingOptions</a>.
 
 
 Rain and Snow

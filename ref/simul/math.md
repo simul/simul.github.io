@@ -18,6 +18,7 @@ Classes and Structures
 | class [Noise1D](math/noise1d) |  |
 | class [Noise2D](math/noise2d) |  |
 | class [Noise3D](math/noise3d) |  |
+| class [VirtualVector](math/virtualvector) |  |
 
 Functions
 ---
