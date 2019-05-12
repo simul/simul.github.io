@@ -96,6 +96,7 @@ Functions
 | void | [StaticSetRenderString](#StaticSetRenderString)(char name, char value) |
 | int | [StaticSetRenderTexture](#StaticSetRenderTexture)(char name, void texturePtr) |
 | int | [StaticSetSequence](#StaticSetSequence)(std::string SequenceInput) |
+| int | [StaticSetSequence2](#StaticSetSequence2)(char txt) |
 | int | [StaticSetSequenceTxt](#StaticSetSequenceTxt)(char txt) |
 | void | [StaticSetWaterBool](#StaticSetWaterBool)(char name, int ID, bool value) |
 | void | [StaticSetWaterFloat](#StaticSetWaterFloat)(char name, int ID, float value) |
@@ -347,6 +348,9 @@ Set a texture for truesky to render to. Need to define the valid name of the out
 
 ### <a name="StaticSetSequence"/>int StaticSetSequence(std::string SequenceInput)
 Loads the sequence as a std::string.
+
+### <a name="StaticSetSequence2"/>int StaticSetSequence2(char txt)
+Loads the sequence as a c string.
 
 ### <a name="StaticSetSequenceTxt"/>int StaticSetSequenceTxt(char txt)
 Loads the given sequence

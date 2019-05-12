@@ -22,6 +22,7 @@ Functions
 | void | [RecompileShaders](#RecompileShaders)() |
 | void | [RenderEnvmap](#RenderEnvmap)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture target, int cubemapIndex, float blend) |
 | void | [RenderMipsByRoughness](#RenderMipsByRoughness)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture target) |
+| void | [ResetBuffers](#ResetBuffers)() |
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform r) |
 
 A class that calculates spherical harmonics from a cubemap, and stores the results in a structured buffer.
@@ -52,6 +53,9 @@ Draw a diffuse environment map to the specified framebuffer.
 
 ### <a name="RenderMipsByRoughness"/>void RenderMipsByRoughness(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture target)
 Taking the zero mip as the initial data source, use the formula roughness=mip/max_mip to render it down to the lower mips.
+
+### <a name="ResetBuffers"/>void ResetBuffers()
+Make sure no invalid data is retained.
 
 ### <a name="RestoreDeviceObjects"/>void RestoreDeviceObjects(simul::crossplatform::RenderPlatform r)
 Platform-dependent function called when initializing the Spherical Harmonics.

@@ -8,6 +8,9 @@ weight: 120
 
 Version HEAD
 ---
+Sat 11 May : Dx12 sample build  
+Fri 10 May : Fix stringFormat error in Sfx. Prevent at least some of the spurious console output from Flex in preprocessor.lpp.  
+Fri 10 May : Fix cloud mip generation. CMake build improvements.  
 Thu 09 May : Minor updates to simul_clouds.sl GetRainAtOffsetKm(). The rain map is not re-drawn to reflect the precipitation region.  
 Wed 08 May : New Colour Scheme for Cloud Window to improve clarity. Fix for incorrect Precipitation Region position in edge cases. Clouds/BaseGpuCloudGenerator.h SetPrecipitationCentre() removed.  
 Wed 08 May : New Colour Scheme for Cloud Window is improve clarity. Fix for incorrect Precipitation Region position in edge cases. Clouds/BaseGpuCloudGenerator.h SetPrecipitationCentre() removed.  
@@ -19,6 +22,7 @@ Tue 30 Apr : Precipitation Region Update: CloudWindow has blue interpolated and 
 Tue 30 Apr : Update to cloud.sfx MapToWindow(), which correctly sets the height of the clouds when using a masking texture.  
 Wed 24 Apr : Updated OpenGL/Effect.cpp/.h and OpenGL/RenderPlatform.cpp to have Sync objects around dispatch compute calls that uses a rewrite structured buffer.  
 Tue 23 Apr : Changes to .sq files. The opening and closing curly brackets {} are now saved to the file. This allows .sq file to be a converted to .asset files in Unity.  
+Tue 23 Apr : Small CMake fixes  
 Wed 17 Apr : Initial Documentation updates, added buoyancy objects, small fixes  
 Fri 12 Apr : Updated Sky Sequencer UI to show Snow Speed and Snowflake Size. Fixed CloudWindowWidget to support multiple concurrent rendering API in the main view.  
 Thu 11 Apr : PS4 Pointer  
@@ -104,9 +108,5 @@ Thu 27 Dec : Only include \<filesystem\> on Windows.
 Thu 20 Dec : Sfx builds in CMake.  
 Wed 19 Dec : Remove depth attachments from VulkanSample/Main.cpp, fixes validation warnings.  
 Wed 19 Dec : Return on QRenderWidget.cpp to avoid recursive paint.  
-Wed 19 Dec : Fixed the OpenGL view re-opening issue in SkySequencer. Added new function to DeviceManager.cpp - Deactivate(), which nullifies the GL context before closing the view.  
-Tue 18 Dec : Updated DX12 CloudRenderer.cpp RenderCloudWindow() will return void if cloud_texture or light_texture AsD3D11SRV is nullptr.  
-Tue 18 Dec : Updated DX12: mSubResourceStates.  Crossplatform: Light Probe links to effect for UBO. OpenGL: Rebuild the FBO as a cubemap. Vulkan sample expanded the vulkan triangle code and shaders.  
-Tue 18 Dec : Add Sample CMakeLists.txt, init default colour format in Vulkan sample.  
 
 <hr>

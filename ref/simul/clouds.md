@@ -22,20 +22,18 @@ Classes and Structures
 | class [CloudInterface](clouds/cloudinterface) |  |
 | struct [CloudKeyframe](clouds/cloudkeyframe) |  |
 | class [CloudProperties](clouds/cloudproperties) |  |
-| struct [CloudRenderingOptions](clouds/cloudrenderingoptions) | This controls the rendering of clouds.<br> |
 | struct [CloudVolume](clouds/cloudvolume) |  |
 | struct [DepthTextureStruct](clouds/depthtexturestruct) |  |
 | class [DoLightSteps](clouds/dolightsteps) |  |
-| class [Environment](clouds/environment) |  |
 | struct [ExportLightningStrike](clouds/exportlightningstrike) |  |
 | class [FastCloudNode](clouds/fastcloudnode) |  |
 | class [MixedResolutionCompositor](clouds/mixedresolutioncompositor) |  |
 | struct [PointSource](clouds/pointsource) |  |
 | struct [PrecipitationRegion](clouds/precipitationregion) |  |
 | struct [SelectionIdentifier](clouds/selectionidentifier) |  |
+| class [Skylight](clouds/skylight) |  |
 | class [TimedNoise3D](clouds/timednoise3d) |  |
 | class [TrueSkyRenderer](clouds/trueskyrenderer) | <br> |
-| class [TwoResFramebuffer](clouds/tworesframebuffer) |  |
 
 Functions
 ---
@@ -66,5 +64,3 @@ Typedefs
 
 Enums
 ---
-
-**TrueSkyRenderMode**  A class to manage interpolation between cloud states over time.
