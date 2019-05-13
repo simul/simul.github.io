@@ -22,13 +22,13 @@ Classes and Structures
 | class [CloudInterface](clouds/cloudinterface) |  |
 | struct [CloudKeyframe](clouds/cloudkeyframe) |  |
 | class [CloudProperties](clouds/cloudproperties) |  |
+| class [CloudRenderer](clouds/cloudrenderer) | Class for real-time volumetric cloud rendering.<br> |
 | struct [CloudRenderingOptions](clouds/cloudrenderingoptions) | This controls the rendering of clouds.<br> |
 | struct [CloudVolume](clouds/cloudvolume) |  |
 | struct [DepthTextureStruct](clouds/depthtexturestruct) |  |
-| class [Environment](clouds/environment) |  |
+| class [DoLightSteps](clouds/dolightsteps) |  |
 | struct [ExportLightningStrike](clouds/exportlightningstrike) |  |
 | class [FastCloudNode](clouds/fastcloudnode) |  |
-| class [HumidityCallbackInterface](clouds/humiditycallbackinterface) |  |
 | class [MixedResolutionCompositor](clouds/mixedresolutioncompositor) |  |
 | struct [PointSource](clouds/pointsource) |  |
 | struct [PrecipitationRegion](clouds/precipitationregion) |  |
@@ -37,7 +37,6 @@ Classes and Structures
 | class [Skylight](clouds/skylight) |  |
 | class [TimedNoise3D](clouds/timednoise3d) |  |
 | class [TrueSkyRenderer](clouds/trueskyrenderer) | <br> |
-| class [TwoResFramebuffer](clouds/tworesframebuffer) |  |
 
 Functions
 ---

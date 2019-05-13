@@ -6,7 +6,7 @@ weight: 0
 class DisplaySurface
 ===
 
-| Include: | Platform/CrossPlatform/DisplaySurface.h |
+| Include: | Platform/CrossPlatform/DisplaySurfaceManager.h |
 
 
 
