@@ -8,6 +8,9 @@ weight: 120
 
 Version HEAD
 ---
+Mon 13 May : Minor fix to CloudWindow UI layout and colours. Minor fix for SetCloudConstants() and FillInQueries(). SetPrecipitationCentre() removed.  
+Mon 13 May : Fix sequencer standalone crash.  
+Mon 13 May : Fix shader build path for non-Cmake builds.  
 Sun 12 May : Fix Xbox refs to deleted shaders.  
 Sun 12 May : Project fix for DirectX12Sample_x64_v140.vcxproj  
 Sat 11 May : Dx12 sample build  
@@ -105,8 +108,5 @@ Sun 30 Dec : Cmake build fixes.
 Sun 30 Dec : Add Cmake files.  
 Sat 29 Dec : Samples build  
 Sat 29 Dec : Solution dependencies.  
-Fri 28 Dec : Remove refs to deleted files  
-Thu 27 Dec : Only include \<filesystem\> on Windows.  
-Thu 20 Dec : Sfx builds in CMake.  
 
 <hr>
