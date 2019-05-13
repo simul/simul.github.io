@@ -8,6 +8,8 @@ weight: 120
 
 Version HEAD
 ---
+Sun 12 May : Fix Xbox refs to deleted shaders.  
+Sun 12 May : Project fix for DirectX12Sample_x64_v140.vcxproj  
 Sat 11 May : Dx12 sample build  
 Fri 10 May : Fix stringFormat error in Sfx. Prevent at least some of the spurious console output from Flex in preprocessor.lpp.  
 Fri 10 May : Fix cloud mip generation. CMake build improvements.  
@@ -106,7 +108,5 @@ Sat 29 Dec : Solution dependencies.
 Fri 28 Dec : Remove refs to deleted files  
 Thu 27 Dec : Only include \<filesystem\> on Windows.  
 Thu 20 Dec : Sfx builds in CMake.  
-Wed 19 Dec : Remove depth attachments from VulkanSample/Main.cpp, fixes validation warnings.  
-Wed 19 Dec : Return on QRenderWidget.cpp to avoid recursive paint.  
 
 <hr>

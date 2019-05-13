@@ -19,6 +19,7 @@ Classes and Structures
 | struct [ContextState](crossplatform/contextstate) |  |
 | struct [DisjointQueryStruct](crossplatform/disjointquerystruct) |  |
 | class [DisplaySurfaceManager](crossplatform/displaysurfacemanager) |  |
+| struct [EffectDefineOptions](crossplatform/effectdefineoptions) |  |
 | class [EffectTechniqueGroup](crossplatform/effecttechniquegroup) |  |
 | struct [Frustum](crossplatform/frustum) |  |
 | class [GpuProfiler](crossplatform/gpuprofiler) |  |
@@ -38,7 +39,6 @@ Classes and Structures
 | struct [ShaderResource](crossplatform/shaderresource) |  |
 | class [SphericalHarmonics](crossplatform/sphericalharmonics) |  |
 | struct [TargetsAndViewport](crossplatform/targetsandviewport) |  |
-| class [TextRenderer](crossplatform/textrenderer) |  |
 | class [TextureView](crossplatform/textureview) |  |
 | class [View](crossplatform/view) |  |
 | class [ViewManager](crossplatform/viewmanager) |  |
