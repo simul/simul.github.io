@@ -6,7 +6,7 @@ weight: 0
 class PlatformConstantBuffer
 ===
 
-| Include: | Platform/CrossPlatform/RenderPlatform.h |
+| Include: | Platform/CrossPlatform/Effect.h |
 
 
 
