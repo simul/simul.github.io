@@ -40,11 +40,11 @@ Classes and Structures
 | struct [ShaderResource](crossplatform/shaderresource) |  |
 | class [SphericalHarmonics](crossplatform/sphericalharmonics) |  |
 | struct [TargetsAndViewport](crossplatform/targetsandviewport) |  |
-| class [TextRenderer](crossplatform/textrenderer) |  |
 | class [TextureView](crossplatform/textureview) |  |
 | class [View](crossplatform/view) |  |
 | class [ViewManager](crossplatform/viewmanager) |  |
 | struct [Viewport](crossplatform/viewport) |  |
+| struct [ViewStruct](crossplatform/viewstruct) |  |
 
 Functions
 ---

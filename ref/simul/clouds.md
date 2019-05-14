@@ -32,6 +32,7 @@ Classes and Structures
 | struct [PointSource](clouds/pointsource) |  |
 | struct [PrecipitationRegion](clouds/precipitationregion) |  |
 | struct [SelectionIdentifier](clouds/selectionidentifier) |  |
+| class [Skylight](clouds/skylight) |  |
 | class [TimedNoise3D](clouds/timednoise3d) |  |
 | class [TrueSkyRenderer](clouds/trueskyrenderer) | <br> |
 
@@ -64,5 +65,3 @@ Typedefs
 
 Enums
 ---
-
-**TrueSkyRenderMode**  A class to manage interpolation between cloud states over time.
