@@ -14,7 +14,6 @@ The namespace corresponding to the Clouds module.<br>
 Classes and Structures
 ---
 
-| class [BaseWeatherRenderer](clouds/baseweatherrenderer) |  |
 | class [CellularCloudGrid](clouds/cellularcloudgrid) |  |
 | class [CellularCloudNode](clouds/cellularcloudnode) |  |
 | struct [CloudGeometryHelper](clouds/cloudgeometryhelper) |  |
