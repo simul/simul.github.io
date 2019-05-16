@@ -8,6 +8,7 @@ weight: 120
 
 Version HEAD
 ---
+Wed 15 May : Pass framenumber to DisplaySurface to get consistent framenumbers for multiple windows.  
 Mon 13 May : Minor fix to CloudWindow UI layout and colours. Minor fix for SetCloudConstants() and FillInQueries(). SetPrecipitationCentre() removed.  
 Mon 13 May : Fix sequencer standalone crash.  
 Mon 13 May : Fix shader build path for non-Cmake builds.  
@@ -107,6 +108,5 @@ Mon 07 Jan : Add different VS launcher scripts. Help updates.
 Sun 30 Dec : Cmake build fixes.  
 Sun 30 Dec : Add Cmake files.  
 Sat 29 Dec : Samples build  
-Sat 29 Dec : Solution dependencies.  
 
 <hr>

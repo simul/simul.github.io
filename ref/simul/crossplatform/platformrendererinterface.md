@@ -18,7 +18,7 @@ Functions
 
 | int | [AddView](#AddView)() |
 | void | [RemoveView](#RemoveView)(int) |
-| void | [Render](#Render)(int view_id, void pContext, void renderTexture, int w, int h) |
+| void | [Render](#Render)(int view_id, void pContext, void renderTexture, int w, int h, long long frame) |
 | void | [ResizeView](#ResizeView)(int view_id, int w, int h) |
 
 This represents an interface that faces the raw API.
@@ -35,7 +35,7 @@ Add a view. This tells the renderer to create any internal stuff it needs to han
 ### <a name="RemoveView"/>void RemoveView(int)
 Remove the view. This might not have an immediate effect internally, but is a courtesy to the interface.
 
-### <a name="Render"/>void Render(int view_id, void pContext, void renderTexture, int w, int h)
+### <a name="Render"/>void Render(int view_id, void pContext, void renderTexture, int w, int h, long long frame)
 Render the specified view. It's up to the renderer to decide what that means. The renderTexture is required because many API's don't allow querying of the current state.
 It will be assumed for simplicity that the viewport should be restored to the entire size of the renderTexture.
 

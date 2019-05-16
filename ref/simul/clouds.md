@@ -14,6 +14,7 @@ The namespace corresponding to the Clouds module.<br>
 Classes and Structures
 ---
 
+| class [BaseWeatherRenderer](clouds/baseweatherrenderer) |  |
 | class [CellularCloudGrid](clouds/cellularcloudgrid) |  |
 | class [CellularCloudNode](clouds/cellularcloudnode) |  |
 | struct [CloudGeometryHelper](clouds/cloudgeometryhelper) |  |
@@ -21,6 +22,8 @@ Classes and Structures
 | class [CloudInterface](clouds/cloudinterface) |  |
 | struct [CloudKeyframe](clouds/cloudkeyframe) |  |
 | class [CloudProperties](clouds/cloudproperties) |  |
+| class [CloudRenderer](clouds/cloudrenderer) | Class for real-time volumetric cloud rendering.<br> |
+| struct [CloudRenderingOptions](clouds/cloudrenderingoptions) | This controls the rendering of clouds.<br> |
 | struct [CloudVolume](clouds/cloudvolume) |  |
 | struct [DepthTextureStruct](clouds/depthtexturestruct) |  |
 | class [DoLightSteps](clouds/dolightsteps) |  |
@@ -31,7 +34,6 @@ Classes and Structures
 | struct [PointSource](clouds/pointsource) |  |
 | struct [PrecipitationRegion](clouds/precipitationregion) |  |
 | struct [SelectionIdentifier](clouds/selectionidentifier) |  |
-| class [Skylight](clouds/skylight) |  |
 | class [TimedNoise3D](clouds/timednoise3d) |  |
 | class [TrueSkyRenderer](clouds/trueskyrenderer) | <br> |
 
@@ -64,3 +66,5 @@ Typedefs
 
 Enums
 ---
+
+**TrueSkyRenderMode**  A class to manage interpolation between cloud states over time.
