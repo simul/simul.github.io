@@ -8,6 +8,9 @@ weight: 120
 
 Version HEAD
 ---
+Fri 17 May : Fix Vulkan shader build.  
+Fri 17 May : OverrideWind now works to allow precise positioning of 3D cloud layers. Click and drag in Cloud Window editor. Global wind is now a cosmetic flow, doesn't affect cloud positions.  
+Fri 17 May : New 16x11 monospaced font texture. D3D11 loads textures as texture instead of as SRV.  
 Wed 15 May : Pass framenumber to DisplaySurface to get consistent framenumbers for multiple windows.  
 Mon 13 May : Minor fix to CloudWindow UI layout and colours. Minor fix for SetCloudConstants() and FillInQueries(). SetPrecipitationCentre() removed.  
 Mon 13 May : Fix sequencer standalone crash.  
@@ -105,8 +108,5 @@ Mon 14 Jan : Add 2017 Effects11_2017.vcxproj project. Update installers. Tidy up
 Mon 14 Jan : Updated DX11, DX12 and OpenGL MSAA FBO. Adjusted Lightning Renderer and LineQueryResult in simul_cloud_constants.sl  
 Mon 14 Jan : Add units.h from https://github.com/nholthaus/units for physical units.  
 Mon 07 Jan : Add different VS launcher scripts. Help updates.  
-Sun 30 Dec : Cmake build fixes.  
-Sun 30 Dec : Add Cmake files.  
-Sat 29 Dec : Samples build  
 
 <hr>

@@ -6,7 +6,7 @@ weight: 0
 namespace crossplatform
 ===
 
-| Include: | Platform/CrossPlatform/PixelFormat.h |
+| Include: | Platform/CrossPlatform/DemoOverlay.h |
 
 
 
@@ -39,7 +39,6 @@ Classes and Structures
 | struct [RenderTargetFormatDesc](crossplatform/rendertargetformatdesc) |  |
 | struct [ShaderResource](crossplatform/shaderresource) |  |
 | class [SphericalHarmonics](crossplatform/sphericalharmonics) |  |
-| class [SwapChain](crossplatform/swapchain) |  |
 | struct [TargetsAndViewport](crossplatform/targetsandviewport) |  |
 | class [TextureView](crossplatform/textureview) |  |
 | class [View](crossplatform/view) |  |
@@ -111,10 +110,6 @@ Enums
 
 **NearFarPass**  Values that represent what pass to render, be it the near pass, the far, or both: far to render target 0, near to render target 1.
 
-**PixelFormat**  A cross-platform equivalent to the OpenGL and DirectX pixel formats
-
-**PixelOutputFormat**  Pixel formats for pixel shader output - only relevant for some API's.
-
 **PolygonMode**  < Counter-clockwise is front-facing.
 
 **PolygonOffsetMode**  < Render polygons as solid/filled.
@@ -124,8 +119,6 @@ Enums
 **ResourceTransition**  Type of resource transition, some platforms used this (dx12)
 
 **ShaderBuildMode**  Tells the renderer what to do with shader source to get binaries. values can be combined, e.g. ALWAYS_BUILD|TRY_AGAIN_ON_FAIL
-
-**ShaderResourceType**  This refers to the type of a shader resource, which should be compatible with the type of any resource assigned to it.
 
 **ShaderType**  
 OpenGL                                  |       Direct3D

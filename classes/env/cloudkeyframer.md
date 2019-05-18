@@ -14,7 +14,7 @@ As a keyframer, this class stores a list of keyframes; this list can be modified
 The keyframes each have a timevalue, and the keyframer tracks a current time through these frames, interpolating properties as it does so, into a special keyframe.
 You can be obtain a reference to this using <a href="../../ref/simul/clouds/cloudkeyframer/getinterpolatedkeyframe">() GetInterpolatedKeyframe()</a> and <a href="../../ref/simul/clouds/cloudkeyframer/getinterpolatedkeyframe">() GetInterpolatedKeyframe()</a>.
 
-The cloud keyframer is updated from <a href="../../ref/simul/clouds/environment">Environment</a>.
+The cloud keyframer is updated from <a href="../../ref/simul/clouds/environment">Environment</a> and <a href="../../ref/simul/clouds/environment">Environment</a>.
 
 Some <a href="../../ref/simul/clouds/cloudkeyframe">cloud keyframe</a>properties are used as per-keyframe values to generated the 3D or 2D cloud textures.
 These textures are then interpolated for rendering:

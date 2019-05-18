@@ -6,7 +6,7 @@ weight: 0
 namespace math
 ===
 
-| Include: | Math/Decay.h |
+| Include: | Math/GeometricFunctions.h |
 
 
 
