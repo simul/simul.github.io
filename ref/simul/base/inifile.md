@@ -37,6 +37,7 @@ Functions
 | unsigned int | [NumValues](#NumValues)(unsigned int keyID) |
 | unsigned int | [NumValues](#NumValues)(std::string keyname) |
 | void | [Path](#Path)(std::string newPath) |
+| std::string | [Path](#Path)() |
 | bool | [ReadFile](#ReadFile)() |
 | bool | [SetValue](#SetValue)(unsigned int keyID, unsigned int valueID, std::string value) |
 | std::string | [ValueName](#ValueName)(unsigned int keyID, unsigned int valueID) |
@@ -129,6 +130,9 @@ Returns number of values stored for specified keyname.
 
 ### <a name="Path"/>void Path(std::string newPath)
 Sets path of ini file to read and write from.
+
+### <a name="Path"/>std::string Path()
+Return the path of the ini file as a string
 
 ### <a name="ReadFile"/>bool ReadFile()
 Reads ini file specified using path.

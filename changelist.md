@@ -8,6 +8,10 @@ weight: 120
 
 Version HEAD
 ---
+Mon 20 May : QT fix  
+Mon 20 May : CloudKeyframeEditWidget fix  
+Mon 20 May : Fix for Simple DX11 and DX12 renderer examples  
+Mon 20 May : VR fix for water, other small fixes  
 Fri 17 May : Fix Vulkan shader build.  
 Fri 17 May : OverrideWind now works to allow precise positioning of 3D cloud layers. Click and drag in Cloud Window editor. Global wind is now a cosmetic flow, doesn't affect cloud positions.  
 Fri 17 May : New 16x11 monospaced font texture. D3D11 loads textures as texture instead of as SRV.  
@@ -104,9 +108,5 @@ Thu 17 Jan : Updated .sl files, so that UBO and SSBO in OpenGL are correctly lai
 Thu 17 Jan : Minor update to cloud shadows  
 Wed 16 Jan : General fixes to rain, cloud shadows, atmospherics and others, reduced detail of water objects for performance  
 Tue 15 Jan : BaseSkyRenderer and CloudRenderer, when using OpenGL or Vulkan only, cased return value of GetBuffer() from a vec3* to a vec4*. OpenGL/Vulkan need this as a vec4* for glsl std140/std430 the SSBO. BaseWeatherRenderer has had temporary fix removed.  
-Mon 14 Jan : Add 2017 Effects11_2017.vcxproj project. Update installers. Tidy up old functions.  
-Mon 14 Jan : Updated DX11, DX12 and OpenGL MSAA FBO. Adjusted Lightning Renderer and LineQueryResult in simul_cloud_constants.sl  
-Mon 14 Jan : Add units.h from https://github.com/nholthaus/units for physical units.  
-Mon 07 Jan : Add different VS launcher scripts. Help updates.  
 
 <hr>

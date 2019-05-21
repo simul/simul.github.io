@@ -6,9 +6,8 @@ weight: 0
 namespace base
 ===
 
-| Include: | Base/Base.h |
+| Include: | Base/MemoryUsageInterface.h |
 
-Base is the base library, containing simple data structures, macros and other useful things.<br>
 
 
 Classes and Structures
@@ -41,16 +40,8 @@ Functions
 | THREAD_TYPE | [GetThreadId](#GetThreadId)() |
 | bool | [GetUseExternalTextures](#GetUseExternalTextures)() |
 | char  const * | [QuickFormat](#QuickFormat)(char format_str) |
-| void | [SetUseExternalTextures](#SetUseExternalTextures)(bool t) |
 | std::vector | [split](#split)(std::string source, char separator) |
 | std::string | [stringFormat](#stringFormat)(std::string fmt) |
-
-Static library: (SIMUL)/lib/(PLATFORM)/(COMPILER)/(ConfigurationName)/SimulBase_(RUNTIME).lib
-
-Dynamic library: (SIMUL)/exe/(PLATFORM)/(COMPILER)/(ConfigurationName)/SimulBase_(RUNTIME).dll
-
-The Base library does not depend on any others.
-  
 
 
 Functions
@@ -66,7 +57,7 @@ The current feature level, which determines whether this is the feature-limited 
 Retrieve information on the specified licence key.
 
 ### <a name="GetLicenceValidityText"/>char  const * GetLicenceValidityText(char lic)
-Get information on th status of the given licence
+Get information on the status of the given licence
 
 ### <a name="GetMaximumFeatureLevel"/>simul::base::FeatureLevel GetMaximumFeatureLevel()
 The maximum feature level (see GetFeatureLevel), determined by the current licence.
@@ -79,9 +70,6 @@ See SetUseExternalTextures.
 
 ### <a name="QuickFormat"/>char  const * QuickFormat(char format_str)
 A quick-and-dirty, non-re-entrant formatting function. Use this only for debugging.
-
-### <a name="SetUseExternalTextures"/>void SetUseExternalTextures(bool t)
-The current feature level, which determines whether this is the feature-limited trueSKY alpha, or full trueSKY.
 
 ### <a name="split"/>std::vector split(std::string source, char separator)
 Divide a string into a vector of smaller strings, based on the given separator

@@ -23,6 +23,7 @@ Functions
 | float  const * | [GetTransformLightspaceToCloudspaceMatrix](#GetTransformLightspaceToCloudspaceMatrix)(unsigned int axis, simul::math::Vector3 dir, simul::math::Vector3 origin, simul::math::Vector3 scales, float cloud_base_z, float w, float h) |
 | float  const * | [GetTransformToLightspaceMatrix](#GetTransformToLightspaceMatrix)(unsigned int axis, simul::math::Vector3 dir, simul::math::Vector3 origin, simul::math::Vector3 scales) |
 | bool | [NeedsRelight](#NeedsRelight)() |
+| void | [SetRecalculate](#SetRecalculate)(bool r) |
 | void | [SetRelight](#SetRelight)() |
 | std::istream  & | [StateStreamIn](#StateStreamIn)(std::istream is) |
 | std::ostream  & | [StateStreamOut](#StateStreamOut)(std::ostream os) |
@@ -59,6 +60,9 @@ Get a 4x4 matrix to transform from real space to lightspace.
 ### <a name="NeedsRelight"/>bool NeedsRelight()
 Have properties changed that cause relighting to be necessary - either the light has moved
 or the cloud density grid has changed.
+
+### <a name="SetRecalculate"/>void SetRecalculate(bool r)
+Recalculate and reinitialise the cloud grid with updated values
 
 ### <a name="SetRelight"/>void SetRelight()
 Force relighting of the volume. Usually unnecessary.

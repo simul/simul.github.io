@@ -6,22 +6,15 @@ weight: 0
 class BaseWeatherRenderer
 ===
 
-| Include: | Clouds/BaseWeatherRenderer.h |
+| Include: | Clouds/Skylight.h |
 
-The main base class for all weather renderers, such as SimulGLWeatherRenderer,
-SimulWeatherRenderer (DX11) etc.
-
-The derived classes of BaseWeatherRenderer create and maintain the renderers for weather
-elements such as clouds, sky, rain and so on. So to use these sub-renderers it is usual to
-create an instance of one of the weather renderers, and allow this instance to manage the
-others.
-  
 
 
 Functions
 ---
 
 |  | [BaseWeatherRenderer](#BaseWeatherRenderer)(simul::clouds::Environment env, simul::base::MemoryInterface m) |
+|  | [~BaseWeatherRenderer](#~BaseWeatherRenderer)() |
 | void | [CleanUpFramebuffers](#CleanUpFramebuffers)(int max_age) |
 | void | [CompositeCloudsToScreen](#CompositeCloudsToScreen)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct2, simul::clouds::TrueSkyRenderMode renderMode, float exposure, float gamma, bool depth_blend, simul::crossplatform::Texture mainDepthTexture, vec4 viewportRegionXYWH, bool any_lightpass, LightingQueryResult lightingQueryResult, vec3 cubemap_ground_colour) |
 | void | [ConnectInterfaces](#ConnectInterfaces)() |
@@ -32,6 +25,7 @@ Functions
 | simul::sky::BaseAtmosphericsRenderer * | [GetBaseAtmosphericsRenderer](#GetBaseAtmosphericsRenderer)() |
 | simul::clouds::CloudRenderer * | [GetBaseCloudRenderer](#GetBaseCloudRenderer)() |
 | simul::sky::BaseSkyRenderer * | [GetBaseSkyRenderer](#GetBaseSkyRenderer)() |
+| simul::clouds::Environment * | [GetEnvironment](#GetEnvironment)() |
 | int | [GetExportLightningStrikes](#GetExportLightningStrikes)(simul::clouds::ExportLightningStrike export_strikes, int max_s, float game_time, float real_time) |
 | simul::sky::float4  const & | [GetHorizonColour](#GetHorizonColour)(float view_altitude_km) |
 | simul::sky::float4  const & | [GetLightColour](#GetLightColour)(float view_altitude_km) |
@@ -51,16 +45,8 @@ Functions
 | void | [SetAllDownscale](#SetAllDownscale)(float) |
 | void | [SetBlurTexture](#SetBlurTexture)(simul::crossplatform::Texture t) |
 | void | [SetCubemapTransform](#SetCubemapTransform)(float m) |
+| void | [SetEnvironment](#SetEnvironment)(simul::clouds::Environment env) |
 | bool | [RenderLowResolutionElements](#RenderLowResolutionElements)(simul::crossplatform::DeviceContext deviceContext, float exposure, float godrays_strength, simul::clouds::TrueSkyRenderMode renderMode, simul::crossplatform::NearFarPass nearFarPass, simul::crossplatform::Texture lowResDepthTexture, simul::sky::ScatteringVolume scatteringVolume, vec4 viewportRegionXYWH, simul::crossplatform::AmortizationStruct amortizationStruct, simul::crossplatform::Texture ambientCubemapTexture) |
-
-The main base class for all weather renderers, such as SimulGLWeatherRenderer,
-SimulWeatherRenderer (DX11) etc.
-
-The derived classes of BaseWeatherRenderer create and maintain the renderers for weather
-elements such as clouds, sky, rain and so on. So to use these sub-renderers it is usual to
-create an instance of one of the weather renderers, and allow this instance to manage the
-others.
-  
 
 
 Functions
@@ -68,6 +54,15 @@ Functions
 
 ### <a name="BaseWeatherRenderer"/> BaseWeatherRenderer(simul::clouds::Environment env, simul::base::MemoryInterface m)
 Default constructor: if env is NULL, a new Environment will be created.
+
+### <a name="~BaseWeatherRenderer"/> ~BaseWeatherRenderer()
+The main base class for all weather renderers, such as SimulGLWeatherRenderer,
+SimulWeatherRenderer (DX11) etc.
+
+The derived classes of BaseWeatherRenderer create and maintain the renderers for weather
+elements such as clouds, sky, rain and so on. So to use these sub-renderers it is usual to
+create an instance of one of the weather renderers, and allow this instance to manage the
+others.
 
 ### <a name="CleanUpFramebuffers"/>void CleanUpFramebuffers(int max_age)
 Delete framebuffers that have not been used in max_age frames, to free GPU memory.
@@ -98,6 +93,9 @@ Get a pointer to the cloud renderer.
 
 ### <a name="GetBaseSkyRenderer"/>simul::sky::BaseSkyRenderer * GetBaseSkyRenderer()
 Get a pointer to the sky renderer.
+
+### <a name="GetEnvironment"/>simul::clouds::Environment * GetEnvironment()
+Get a pointer to the current Environment
 
 ### <a name="GetExportLightningStrikes"/>int GetExportLightningStrikes(simul::clouds::ExportLightningStrike export_strikes, int max_s, float game_time, float real_time)
 Get lightning strikes. This calls GetExportLightningStrikes in CloudKeyframer, but also includes
@@ -178,6 +176,9 @@ A blurred texture, to be drawn usually per-frame.
 
 ### <a name="SetCubemapTransform"/>void SetCubemapTransform(float m)
 A transform for the cubemap set by SetCubemapTexture().
+
+### <a name="SetEnvironment"/>void SetEnvironment(simul::clouds::Environment env)
+Set the Environment
 
 ### <a name="RenderLowResolutionElements"/>bool RenderLowResolutionElements(simul::crossplatform::DeviceContext deviceContext, float exposure, float godrays_strength, simul::clouds::TrueSkyRenderMode renderMode, simul::crossplatform::NearFarPass nearFarPass, simul::crossplatform::Texture lowResDepthTexture, simul::sky::ScatteringVolume scatteringVolume, vec4 viewportRegionXYWH, simul::crossplatform::AmortizationStruct amortizationStruct, simul::crossplatform::Texture ambientCubemapTexture)
 Renders the 2D clouds and atmospherics. If the passed depth texture is MSAA, near_pass determines whether to use the near or far depth for each depth texel.

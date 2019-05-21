@@ -32,6 +32,7 @@ Classes and Structures
 | struct [MouseCameraInput](crossplatform/mousecamerainput) |  |
 | struct [MouseCameraState](crossplatform/mousecamerastate) |  |
 | class [PlatformRendererInterface](crossplatform/platformrendererinterface) |  |
+| struct [PosColourVertex](crossplatform/poscolourvertex) |  |
 | class [Quaterniond](crossplatform/quaterniond) |  |
 | struct [RasterizerDesc](crossplatform/rasterizerdesc) |  |
 | class [RenderDelegater](crossplatform/renderdelegater) |  |
@@ -40,6 +41,7 @@ Classes and Structures
 | struct [ShaderResource](crossplatform/shaderresource) |  |
 | class [SphericalHarmonics](crossplatform/sphericalharmonics) |  |
 | struct [TargetsAndViewport](crossplatform/targetsandviewport) |  |
+| class [TextRenderer](crossplatform/textrenderer) |  |
 | class [TextureView](crossplatform/textureview) |  |
 | class [View](crossplatform/view) |  |
 | class [ViewManager](crossplatform/viewmanager) |  |
@@ -110,6 +112,10 @@ Enums
 
 **NearFarPass**  Values that represent what pass to render, be it the near pass, the far, or both: far to render target 0, near to render target 1.
 
+**PixelFormat**  A cross-platform equivalent to the OpenGL and DirectX pixel formats
+
+**PixelOutputFormat**  Pixel formats for pixel shader output - only relevant for some API's.
+
 **PolygonMode**  < Counter-clockwise is front-facing.
 
 **PolygonOffsetMode**  < Render polygons as solid/filled.
@@ -119,6 +125,8 @@ Enums
 **ResourceTransition**  Type of resource transition, some platforms used this (dx12)
 
 **ShaderBuildMode**  Tells the renderer what to do with shader source to get binaries. values can be combined, e.g. ALWAYS_BUILD|TRY_AGAIN_ON_FAIL
+
+**ShaderResourceType**  This refers to the type of a shader resource, which should be compatible with the type of any resource assigned to it.
 
 **ShaderType**  
 OpenGL                                  |       Direct3D
