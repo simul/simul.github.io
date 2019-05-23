@@ -6,7 +6,7 @@ weight: 0
 class TwoResFramebuffer
 ===
 
-| Include: | Clouds/BaseWeatherRenderer.h |
+| Include: | Clouds/CloudRenderer.h |
 
 
 
