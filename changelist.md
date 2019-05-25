@@ -8,6 +8,8 @@ weight: 120
 
 Version HEAD
 ---
+Fri 24 May : Updated LightningRenderer.cpp to use MSAA. Updated CloudRenderer.cpp RenderRainMapTexture() and RenderCloudShadowTexture() Refined Debug Overlays due to new mono spaced font. Fix OpenGL cloud shadows. Fix rain map lookups in SFX/rain.sfx OverrideWind added back.  
+Thu 23 May : Updated Rain shader using Reflection and Refraction. CloudRenderer.cpp split function into RenderCloudShadowTexture() and RenderRainMapTexture(). Precipitation Regions dimension are drawn onto the rain map. VolumeQueryResult::rain_to_snow is updated from rain map. simul_clouds.sl split function GetRainAtOffsetKm() GetRainToSnowAtOffsetKm(). quaternion.sl quat_from_axis_angle_radians() and quat_from_axis_angle_degrees().  
 Mon 20 May : QT fix  
 Mon 20 May : CloudKeyframeEditWidget fix  
 Mon 20 May : Fix for Simple DX11 and DX12 renderer examples  
@@ -106,7 +108,5 @@ Wed 23 Jan : Updated light_probes.sfx and OpenGL/GLSL/shader_platform.sl due a s
 Fri 18 Jan : .  
 Thu 17 Jan : Updated .sl files, so that UBO and SSBO in OpenGL are correctly laid out. Vulkan's GetBuffer() function changed back to return a vec3* pointer due instability. For RenderDoc, if !GLAD_GL_ARB_bindless_texture, then it will attempt to load the functions from the driver.  
 Thu 17 Jan : Minor update to cloud shadows  
-Wed 16 Jan : General fixes to rain, cloud shadows, atmospherics and others, reduced detail of water objects for performance  
-Tue 15 Jan : BaseSkyRenderer and CloudRenderer, when using OpenGL or Vulkan only, cased return value of GetBuffer() from a vec3* to a vec4*. OpenGL/Vulkan need this as a vec4* for glsl std140/std430 the SSBO. BaseWeatherRenderer has had temporary fix removed.  
 
 <hr>

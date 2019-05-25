@@ -6,7 +6,7 @@ weight: 0
 class HdrRenderer
 ===
 
-| Include: | Clouds/TrueSkyRenderer.h |
+| Include: | Platform/CrossPlatform/HdrRenderer.h |
 
 
 

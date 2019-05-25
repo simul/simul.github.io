@@ -6,30 +6,8 @@ weight: 0
 namespace sky
 ===
 
-| Include: | Sky/Help.h |
+| Include: | Sky/Binding.h |
 
-
-![](/Images/SkyInheritance.png)
-
-
-The simul::sky namespace corresponds to the Simul/Sky library.
-
-Static library: Simul/lib/(PLATFORM)/(COMPILER)/(ConfigurationName)/SimulSky_(RUNTIME).lib
-
-Dynamic library: Simul/exe/(PLATFORM)/(COMPILER)/(ConfigurationName)/SimulSky_(RUNTIME).dll
-
-Sky depends on the Base and Math libraries.
-
-Simul Sky calculates the colour gradations of the sky, including the
-position of the sun, the colour of sunlight and variations in brightness with azimuth, elevation, altitude,
-and weather conditions..
-
-Simul Sky integrates with the Simul Clouds library, which provides realistic volume-
-rendering of various types of cloud.
-
-To use Simul Sky directly, create an instance of simul::sky::BaseSkyRenderer.
-
-  
 
 
 Classes and Structures
@@ -48,6 +26,7 @@ Classes and Structures
 | struct [KeyframeInUseState](sky/keyframeinusestate) |  |
 | class [OpticalLengthInterface](sky/opticallengthinterface) |  |
 | struct [Output](sky/output) |  |
+| class [OvercastCallback](sky/overcastcallback) |  |
 | class [SiderealSky](sky/siderealsky) |  |
 | class [SiderealSkyInterface](sky/siderealskyinterface) |  |
 | class [Sky](sky/sky) |  |
@@ -62,29 +41,6 @@ Functions
 ---
 
 | simul::sky::float4 | [CalcMieCoefficients](#CalcMieCoefficients)(simul::sky::float4 ColourWavelengthsNm, float haze) |
-
-
-![](/Images/SkyInheritance.png)
-
-
-The simul::sky namespace corresponds to the Simul/Sky library.
-
-Static library: Simul/lib/(PLATFORM)/(COMPILER)/(ConfigurationName)/SimulSky_(RUNTIME).lib
-
-Dynamic library: Simul/exe/(PLATFORM)/(COMPILER)/(ConfigurationName)/SimulSky_(RUNTIME).dll
-
-Sky depends on the Base and Math libraries.
-
-Simul Sky calculates the colour gradations of the sky, including the
-position of the sun, the colour of sunlight and variations in brightness with azimuth, elevation, altitude,
-and weather conditions..
-
-Simul Sky integrates with the Simul Clouds library, which provides realistic volume-
-rendering of various types of cloud.
-
-To use Simul Sky directly, create an instance of simul::sky::BaseSkyRenderer.
-
-  
 
 
 Functions
