@@ -27,6 +27,7 @@ Classes and Structures
 | class [Layout](crossplatform/layout) |  |
 | struct [LayoutDesc](crossplatform/layoutdesc) |  |
 | class [LensFlare](crossplatform/lensflare) |  |
+| class [Material](crossplatform/material) |  |
 | struct [MixedResolutionStruct](crossplatform/mixedresolutionstruct) |  |
 | struct [MouseCameraInput](crossplatform/mousecamerainput) |  |
 | struct [MouseCameraState](crossplatform/mousecamerastate) |  |
@@ -39,7 +40,6 @@ Classes and Structures
 | struct [ShaderResource](crossplatform/shaderresource) |  |
 | class [SphericalHarmonics](crossplatform/sphericalharmonics) |  |
 | struct [TargetsAndViewport](crossplatform/targetsandviewport) |  |
-| class [TextRenderer](crossplatform/textrenderer) |  |
 | class [TextureView](crossplatform/textureview) |  |
 | class [View](crossplatform/view) |  |
 | class [ViewManager](crossplatform/viewmanager) |  |

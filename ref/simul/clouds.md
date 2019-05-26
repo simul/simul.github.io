@@ -15,7 +15,6 @@ Classes and Structures
 ---
 
 | class [BaseGpuCloudGenerator](clouds/basegpucloudgenerator) |  |
-| class [BaseLightningRenderer](clouds/baselightningrenderer) |  |
 | class [CellularCloudGrid](clouds/cellularcloudgrid) |  |
 | class [CellularCloudNode](clouds/cellularcloudnode) |  |
 | struct [CloudGeometryHelper](clouds/cloudgeometryhelper) |  |
@@ -26,10 +25,9 @@ Classes and Structures
 | class [CloudRenderer](clouds/cloudrenderer) | Class for real-time volumetric cloud rendering.<br> |
 | struct [CloudVolume](clouds/cloudvolume) |  |
 | struct [DepthTextureStruct](clouds/depthtexturestruct) |  |
-| class [Environment](clouds/environment) |  |
+| class [DoLightSteps](clouds/dolightsteps) |  |
 | struct [ExportLightningStrike](clouds/exportlightningstrike) |  |
 | class [FastCloudNode](clouds/fastcloudnode) |  |
-| class [HumidityCallbackInterface](clouds/humiditycallbackinterface) |  |
 | class [MixedResolutionCompositor](clouds/mixedresolutioncompositor) |  |
 | struct [PointSource](clouds/pointsource) |  |
 | struct [PrecipitationRegion](clouds/precipitationregion) |  |
