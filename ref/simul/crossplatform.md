@@ -6,7 +6,7 @@ weight: 0
 namespace crossplatform
 ===
 
-| Include: | Platform/CrossPlatform/DemoOverlay.h |
+| Include: | Platform/CrossPlatform/CameraInterface.h |
 
 
 
@@ -19,6 +19,7 @@ Classes and Structures
 | struct [ContextState](crossplatform/contextstate) |  |
 | struct [DisjointQueryStruct](crossplatform/disjointquerystruct) |  |
 | class [DisplaySurfaceManager](crossplatform/displaysurfacemanager) |  |
+| struct [EffectDefineOptions](crossplatform/effectdefineoptions) |  |
 | class [EffectTechniqueGroup](crossplatform/effecttechniquegroup) |  |
 | struct [Frustum](crossplatform/frustum) |  |
 | class [GpuProfiler](crossplatform/gpuprofiler) |  |
@@ -27,7 +28,6 @@ Classes and Structures
 | class [Layout](crossplatform/layout) |  |
 | struct [LayoutDesc](crossplatform/layoutdesc) |  |
 | class [LensFlare](crossplatform/lensflare) |  |
-| class [Material](crossplatform/material) |  |
 | struct [MixedResolutionStruct](crossplatform/mixedresolutionstruct) |  |
 | struct [MouseCameraInput](crossplatform/mousecamerainput) |  |
 | struct [MouseCameraState](crossplatform/mousecamerastate) |  |

@@ -6,74 +6,8 @@ weight: 0
 class BaseSkyRenderer
 ===
 
-| Include: | Sky/BaseSkyRenderer.h |
+| Include: | Clouds/BaseWeatherRenderer.h |
 
-The Sky Renderer performs the following tasks:
-- Rendering stars: using RenderPointStars(void *context,float exposure)
-- Rendering planets (e.g. the Moon): using RenderPlanets(void *context,float exposure)
-- Rendering the sun, using RenderSun(void *context,float exposure)
-
-See <a href="../clouds/baseweatherrenderer/render">BaseWeatherRenderer::Render</a>
-and <a href="../clouds/baseweatherrenderer/rendermixedresolution">RenderMixedResolution</a>.
-
-The rendering of the sky is no longer handled by BaseSkyRenderer or its derived classes because the
-<a href="baseatmosphericsrenderer">atmospherics renderer</a>now does this in a single pass including both sky and atmospherics.
-
-It is the job of the Sky Renderer to update the atmospherics textures to be used by the other render classes, and render celestial objects.
-
-The fade tables are stored as 3D textures - an axis for distance, one for elevation, one for altitude.
-The table size is given by NumElevations, NumDistances and SetNumAltitudes() of <a href="skykeyframer">SkyKeyframer</a>.
-Try to minimize the number of altitudes required, in order to maximize performance, and
-use SetAltitudeRangeKm on initialization to the range you will use.
-
-<a href="../clouds/baseweatherrenderer/prerenderupdate">() BaseWeatherRenderer::PreRenderUpdate</a>
-first calls <a href="baseskyrenderer/ensuretexturesareuptodate">EnsureTexturesAreUpToDate</a>, which fills in the fade textures
-with loss and inscatter values.
-
-Then, the sky and atmospheric scattering (atmospherics, or distance-fades) are drawn together as an overlay
-after the depth-buffer has been filled by any solids in the scene
-(see <a href="../clouds/baseweatherrenderer/rendermixedresolution">endlink</a>).
-
-There are two main elements to realistic atmospherics: Loss, and Inscatter.
-
-![](/Images/FadeLogic.png)
-""
-
-So, for any point in screen space, we can transform it to world space using the depth value, and obtain its distance, and elevation relative to the horizon. This gives us the
-lookup co-ordinates into the loss and inscatter textures. The loss value determines how much of the red,green, and blue values of that pixel are retained as light passes through the atmosphere from the distant object to the viewer.
-The inscatter determines how much sunlight (or moonlight etc) is scattered in towards the viewer due to the intervening atmosphere.
-
-Generally in Earth's nitrogen-oxygen atmosphere, more blue light than red or green is scattered. So distance white objects appear yellow, as the blue component has been scattered away. But distance black objects appear blue, because
-the blue part of the sunlight shining on the intervening air has been scattered as well, and some of that blue light goes towards the viewer. This process is Rayleigh scattering. Other important effects that TrueSky simulates are
-Mie scattering due to haze, Ozone absorption, and radiation due to air temperature.
-
-Each sky renderer maintains nine fade textures. If the most recent keyframe in the sky keyframer is X, we have:
-
-Keyframe X    | Keyframe X+1  | Keyframe X+2
-------------- | ------------- | -------------
-loss 0        | loss 1        | loss 2
-inscatter 0   | inscatter 1   | inscatter 2
-skylight 0    | skylight 1    | skylight 2
-
-Each texture contains data for the atmospherics as seen from a complete range of altitudes.
-
-We use textures 0 and 1 to render the scene. Texture 2 is gradually filled in over multiple frames,
-so that when we reach keyframe X+1, it will be complete and can be swapped in.
-All this is handled automatically by the SkyKeyframer, which in turn can use a <a href="basegpuskygenerator">GpuSkyGenerator</a>.
-If using CPU-generated textures, the Sky Renderer asks the keyframer what new data to fill into the textures each frame. If using its own
-GpuSkyGenerator, the Sky Renderer has access to these textures without the need to query the keyframer.
-
-![](/Images/FadeTable.png)
-""
-
-The fade textures are 3D, with co-ordinates representing x=altitude/max altitude, y=1+sine(elevation))/2, z=distance/max distance.
-Each frame, these three pairs of 3D textures (Keyframe X and X+1) are combined into three individual 2D textures, with
-x=distance/max distance, y=1+sine(elevation))/2, representing the fade colours as seen at the present time, from the current viewing altitude.
-
-The last texel in the x direction is considered to represent infinity, irrespective of the specified MaxDistanceKm parameter,
-so a distance texture coordinate of 1.0 in the inscatter and skylight textures represents the sky,
-with values less than one used for atmospheric scattering over solid objects.
-  
 
 [simul::base::Referenced](../base/referenced)
 [simul::crossplatform::BaseRenderer](../crossplatform/baserenderer)
@@ -81,6 +15,7 @@ with values less than one used for atmospheric scattering over solid objects.
 Functions
 ---
 
+|  | [BaseSkyRenderer](#BaseSkyRenderer)(simul::sky::SkyKeyframer sk, simul::base::MemoryInterface m) |
 | float | [CalcSunOcclusion](#CalcSunOcclusion)(simul::crossplatform::DeviceContext, float cloud_occlusion) |
 | simul::sky::BaseGpuSkyGenerator * | [CreateGpuSkyGenerator](#CreateGpuSkyGenerator)(simul::base::MemoryInterface m) |
 | void | [EnableMoon](#EnableMoon)(bool val) |
@@ -123,73 +58,6 @@ Functions
 | void | [SetPlanetRadius](#SetPlanetRadius)(int index, float radians) |
 | void | [FillFadeTextureBlocks](#FillFadeTextureBlocks)(int, int, int, int, int, int, int, float, float, float) |
 
-The Sky Renderer performs the following tasks:
-- Rendering stars: using RenderPointStars(void *context,float exposure)
-- Rendering planets (e.g. the Moon): using RenderPlanets(void *context,float exposure)
-- Rendering the sun, using RenderSun(void *context,float exposure)
-
-See <a href="../clouds/baseweatherrenderer/render">BaseWeatherRenderer::Render</a>
-and <a href="../clouds/baseweatherrenderer/rendermixedresolution">RenderMixedResolution</a>.
-
-The rendering of the sky is no longer handled by BaseSkyRenderer or its derived classes because the
-<a href="baseatmosphericsrenderer">atmospherics renderer</a>now does this in a single pass including both sky and atmospherics.
-
-It is the job of the Sky Renderer to update the atmospherics textures to be used by the other render classes, and render celestial objects.
-
-The fade tables are stored as 3D textures - an axis for distance, one for elevation, one for altitude.
-The table size is given by NumElevations, NumDistances and SetNumAltitudes() of <a href="skykeyframer">SkyKeyframer</a>.
-Try to minimize the number of altitudes required, in order to maximize performance, and
-use SetAltitudeRangeKm on initialization to the range you will use.
-
-<a href="../clouds/baseweatherrenderer/prerenderupdate">() BaseWeatherRenderer::PreRenderUpdate</a>
-first calls <a href="baseskyrenderer/ensuretexturesareuptodate">EnsureTexturesAreUpToDate</a>, which fills in the fade textures
-with loss and inscatter values.
-
-Then, the sky and atmospheric scattering (atmospherics, or distance-fades) are drawn together as an overlay
-after the depth-buffer has been filled by any solids in the scene
-(see <a href="../clouds/baseweatherrenderer/rendermixedresolution">endlink</a>).
-
-There are two main elements to realistic atmospherics: Loss, and Inscatter.
-
-![](/Images/FadeLogic.png)
-""
-
-So, for any point in screen space, we can transform it to world space using the depth value, and obtain its distance, and elevation relative to the horizon. This gives us the
-lookup co-ordinates into the loss and inscatter textures. The loss value determines how much of the red,green, and blue values of that pixel are retained as light passes through the atmosphere from the distant object to the viewer.
-The inscatter determines how much sunlight (or moonlight etc) is scattered in towards the viewer due to the intervening atmosphere.
-
-Generally in Earth's nitrogen-oxygen atmosphere, more blue light than red or green is scattered. So distance white objects appear yellow, as the blue component has been scattered away. But distance black objects appear blue, because
-the blue part of the sunlight shining on the intervening air has been scattered as well, and some of that blue light goes towards the viewer. This process is Rayleigh scattering. Other important effects that TrueSky simulates are
-Mie scattering due to haze, Ozone absorption, and radiation due to air temperature.
-
-Each sky renderer maintains nine fade textures. If the most recent keyframe in the sky keyframer is X, we have:
-
-Keyframe X    | Keyframe X+1  | Keyframe X+2
-------------- | ------------- | -------------
-loss 0        | loss 1        | loss 2
-inscatter 0   | inscatter 1   | inscatter 2
-skylight 0    | skylight 1    | skylight 2
-
-Each texture contains data for the atmospherics as seen from a complete range of altitudes.
-
-We use textures 0 and 1 to render the scene. Texture 2 is gradually filled in over multiple frames,
-so that when we reach keyframe X+1, it will be complete and can be swapped in.
-All this is handled automatically by the SkyKeyframer, which in turn can use a <a href="basegpuskygenerator">GpuSkyGenerator</a>.
-If using CPU-generated textures, the Sky Renderer asks the keyframer what new data to fill into the textures each frame. If using its own
-GpuSkyGenerator, the Sky Renderer has access to these textures without the need to query the keyframer.
-
-![](/Images/FadeTable.png)
-""
-
-The fade textures are 3D, with co-ordinates representing x=altitude/max altitude, y=1+sine(elevation))/2, z=distance/max distance.
-Each frame, these three pairs of 3D textures (Keyframe X and X+1) are combined into three individual 2D textures, with
-x=distance/max distance, y=1+sine(elevation))/2, representing the fade colours as seen at the present time, from the current viewing altitude.
-
-The last texel in the x direction is considered to represent infinity, irrespective of the specified MaxDistanceKm parameter,
-so a distance texture coordinate of 1.0 in the inscatter and skylight textures represents the sky,
-with values less than one used for atmospheric scattering over solid objects.
-  
-
 
 Base Classes
 ---
@@ -198,6 +66,14 @@ Base Classes
 
 Functions
 ---
+
+### <a name="BaseSkyRenderer"/> BaseSkyRenderer(simul::sky::SkyKeyframer sk, simul::base::MemoryInterface m)
+The Sky Renderer performs the following tasks:
+- Rendering stars: using RenderPointStars(void *context,float exposure)
+- Rendering planets (e.g. the Moon): using RenderPlanets(void *context,float exposure)
+- Rendering the sun, using RenderSun(void *context,float exposure)
+
+See 
 
 ### <a name="CalcSunOcclusion"/>float CalcSunOcclusion(simul::crossplatform::DeviceContext, float cloud_occlusion)
 Get a value, from zero to one, which represents how much of the sun is visible.
