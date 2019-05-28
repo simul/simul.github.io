@@ -33,6 +33,7 @@ Functions
 | simul::crossplatform::SamplerState * | [CreateSamplerState](#CreateSamplerState)(simul::crossplatform::SamplerStateDesc) |
 | simul::crossplatform::Shader * | [CreateShader](#CreateShader)() |
 | simul::crossplatform::Texture * | [CreateTexture](#CreateTexture)(char lFileNameUtf8) |
+| void | [Destroy](#Destroy)(simul::crossplatform::Effect e) |
 | void | [DispatchCompute](#DispatchCompute)(simul::crossplatform::DeviceContext deviceContext, int w, int l, int d) |
 | void | [Draw](#Draw)(simul::crossplatform::DeviceContext deviceContext, int num_verts, int start_vert) |
 | void | [DrawCircle](#DrawCircle)(simul::crossplatform::DeviceContext deviceContext, float dir, float rads, float colr, bool fill) |
@@ -148,6 +149,9 @@ Create a shader.
 
 ### <a name="CreateTexture"/>simul::crossplatform::Texture * CreateTexture(char lFileNameUtf8)
 Create a platform-specific texture instance.
+
+### <a name="Destroy"/>void Destroy(simul::crossplatform::Effect e)
+Destroy the effect when it is safe to do so. The pointer can now be reassigned or nulled.
 
 ### <a name="DispatchCompute"/>void DispatchCompute(simul::crossplatform::DeviceContext deviceContext, int w, int l, int d)
 Execute the currently applied compute shader.

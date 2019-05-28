@@ -73,11 +73,10 @@ Functions
 | void | [SetCloudPlacementTexture](#SetCloudPlacementTexture)(int id, void texture, vec2 pos_km, vec2 ext_km) |
 | void | [SetFloat](#SetFloat)(char name, float value) |
 | void | [SetInt](#SetInt)(char name, int value) |
-| void | [SetInterpolationMode](#SetInterpolationMode)(int value) |
 | void | [SetMatrix4x4](#SetMatrix4x4)(char name, float matrix4x4) |
 | void | [SetPointLight](#SetPointLight)(int id, pos, float min_radius, float max_radius, irradiance) |
 | void | [SetString](#SetString)(char name, char value) |
-| void | [SetTexture](#SetTexture)(char name, void tex) |
+| void | [SetTexture](#SetTexture)(char name, void tex, int w, int l) |
 | void | [SetWater](#SetWater)(long long Enum, int ID, simul::base::Variant v) |
 | void | [SetWaterBool](#SetWaterBool)(char name, int ID, bool value) |
 | void | [SetWaterFloat](#SetWaterFloat)(char name, int ID, float value) |
@@ -275,9 +274,6 @@ Sets a floating point value. nameshould be "Time", "Gamma", "Exposure", or "Simp
 ### <a name="SetInt"/>void SetInt(char name, int value)
 Sets an integer value. nameshould be "CloudSteps", or "Downscale".
 
-### <a name="SetInterpolationMode"/>void SetInterpolationMode(int value)
-Set the interpolation mode for cloud updates
-
 ### <a name="SetMatrix4x4"/>void SetMatrix4x4(char name, float matrix4x4)
 Sets a matrix value.
 
@@ -288,7 +284,7 @@ the size of the source.
 ### <a name="SetString"/>void SetString(char name, char value)
 Set a string value. namemust be "LicenceKey".
 
-### <a name="SetTexture"/>void SetTexture(char name, void tex)
+### <a name="SetTexture"/>void SetTexture(char name, void tex, int w, int l)
 Setting texture properties.
 
 ### <a name="SetWater"/>void SetWater(long long Enum, int ID, simul::base::Variant v)

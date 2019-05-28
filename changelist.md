@@ -8,6 +8,9 @@ weight: 120
 
 Version HEAD
 ---
+Tue 28 May : Shader binaries lumped together in sfxb file - if -w is used in sfx.exe.  
+Mon 27 May : PS4 API update and build fix.  
+Mon 27 May : Delayed destruction for effects to prevent destroying in-use API objects when recompiling. Update skylight struct.  
 Fri 24 May : Updated LightningRenderer.cpp to use MSAA. Updated CloudRenderer.cpp RenderRainMapTexture() and RenderCloudShadowTexture() Refined Debug Overlays due to new mono spaced font. Fix OpenGL cloud shadows. Fix rain map lookups in SFX/rain.sfx OverrideWind added back.  
 Thu 23 May : Updated Rain shader using Reflection and Refraction. CloudRenderer.cpp split function into RenderCloudShadowTexture() and RenderRainMapTexture(). Precipitation Regions dimension are drawn onto the rain map. VolumeQueryResult::rain_to_snow is updated from rain map. simul_clouds.sl split function GetRainAtOffsetKm() GetRainToSnowAtOffsetKm(). quaternion.sl quat_from_axis_angle_radians() and quat_from_axis_angle_degrees().  
 Mon 20 May : QT fix  
@@ -105,8 +108,5 @@ Sun 27 Jan : Update SkySequencer.nsi
 Thu 24 Jan : Updated rain.sfx so that rain in Vulkan works correctly. CloudRenderer.cpp RenderPointSource(), checks the arraySize, before setting textures for a cube map. Minor clean up of Vulkan/RenderPlatform.cpp Resolve(), though they are still issue in resolving the msaa framebuffer.  
 Wed 23 Jan : Minor update to rain.sfx, where mapped_rain will have a minimum value of 0.25. This has fixed the issues with mapped_rain value in the VS; rain_dist and solid_dist values in the PS on OpenGL!  
 Wed 23 Jan : Updated light_probes.sfx and OpenGL/GLSL/shader_platform.sl due a shader compile issue. OpenGL/Effect.cpp changed so that the shaderResource.slot can update the binding index, use for the Lightning vertices SSBOs. Updated rain.sfx to include "..._msaa" passes and for the vertex shader to resolve the MS texture. OpenGL has issues with mapped_rain value in the VS; rain_dist and solid_dist values in the PS!  
-Fri 18 Jan : .  
-Thu 17 Jan : Updated .sl files, so that UBO and SSBO in OpenGL are correctly laid out. Vulkan's GetBuffer() function changed back to return a vec3* pointer due instability. For RenderDoc, if !GLAD_GL_ARB_bindless_texture, then it will attempt to load the functions from the driver.  
-Thu 17 Jan : Minor update to cloud shadows  
 
 <hr>

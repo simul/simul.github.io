@@ -13,6 +13,7 @@ namespace plugin
 Classes and Structures
 ---
 
+| struct [ExternalTexture](plugin/externaltexture) |  |
 | struct [Query](plugin/query) |  |
 | class [TrackingAllocator](plugin/trackingallocator) |  |
 

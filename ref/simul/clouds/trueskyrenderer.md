@@ -32,6 +32,8 @@ Functions
 | void | [RenderOverlays](#RenderOverlays)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture texture, float exposure, float gamma) |
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform r) |
 | void | [SetAmortization](#SetAmortization)(int view_id, int a) |
+| void | [SetInterpolationMode](#SetInterpolationMode)(int value) |
+| void | [SetSequence](#SetSequence)(char txt) |
 | void | [PreRenderUpdate](#PreRenderUpdate)(simul::crossplatform::DeviceContext deviceContext) |
 | void | [RenderMixedResolutionSky](#RenderMixedResolutionSky)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture depthTexture, simul::crossplatform::Viewport depthViewport, float exposure, float gamma, float brightnessToUnity) |
 
@@ -101,6 +103,12 @@ Platform-dependent function called when initializing the renderer.
 
 ### <a name="SetAmortization"/>void SetAmortization(int view_id, int a)
 How often to update each cloud texel; 1:always, 2:every 4 frames, n:every n^2 frames.
+
+### <a name="SetInterpolationMode"/>void SetInterpolationMode(int value)
+Set the interpolation mode for cloud updates
+
+### <a name="SetSequence"/>void SetSequence(char txt)
+Load sequence data.
 
 ### <a name="PreRenderUpdate"/>void PreRenderUpdate(simul::crossplatform::DeviceContext deviceContext)
 Once per-frame update. Do this before any rendering each frame.

@@ -6,15 +6,22 @@ weight: 0
 class BaseWeatherRenderer
 ===
 
-| Include: | Clouds/Skylight.h |
+| Include: | Clouds/BaseWeatherRenderer.h |
 
+The main base class for all weather renderers, such as SimulGLWeatherRenderer,
+SimulWeatherRenderer (DX11) etc.
+
+The derived classes of BaseWeatherRenderer create and maintain the renderers for weather
+elements such as clouds, sky, rain and so on. So to use these sub-renderers it is usual to
+create an instance of one of the weather renderers, and allow this instance to manage the
+others.
+  
 
 
 Functions
 ---
 
 |  | [BaseWeatherRenderer](#BaseWeatherRenderer)(simul::clouds::Environment env, simul::base::MemoryInterface m) |
-|  | [~BaseWeatherRenderer](#~BaseWeatherRenderer)() |
 | void | [CleanUpFramebuffers](#CleanUpFramebuffers)(int max_age) |
 | void | [CompositeCloudsToScreen](#CompositeCloudsToScreen)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct2, simul::clouds::TrueSkyRenderMode renderMode, float exposure, float gamma, bool depth_blend, simul::crossplatform::Texture mainDepthTexture, vec4 viewportRegionXYWH, bool any_lightpass, LightingQueryResult lightingQueryResult, vec3 cubemap_ground_colour) |
 | void | [ConnectInterfaces](#ConnectInterfaces)() |
@@ -48,14 +55,6 @@ Functions
 | void | [SetEnvironment](#SetEnvironment)(simul::clouds::Environment env) |
 | bool | [RenderLowResolutionElements](#RenderLowResolutionElements)(simul::crossplatform::DeviceContext deviceContext, float exposure, float godrays_strength, simul::clouds::TrueSkyRenderMode renderMode, simul::crossplatform::NearFarPass nearFarPass, simul::crossplatform::Texture lowResDepthTexture, simul::sky::ScatteringVolume scatteringVolume, vec4 viewportRegionXYWH, simul::crossplatform::AmortizationStruct amortizationStruct, simul::crossplatform::Texture ambientCubemapTexture) |
 
-
-Functions
----
-
-### <a name="BaseWeatherRenderer"/> BaseWeatherRenderer(simul::clouds::Environment env, simul::base::MemoryInterface m)
-Default constructor: if env is NULL, a new Environment will be created.
-
-### <a name="~BaseWeatherRenderer"/> ~BaseWeatherRenderer()
 The main base class for all weather renderers, such as SimulGLWeatherRenderer,
 SimulWeatherRenderer (DX11) etc.
 
@@ -63,6 +62,14 @@ The derived classes of BaseWeatherRenderer create and maintain the renderers for
 elements such as clouds, sky, rain and so on. So to use these sub-renderers it is usual to
 create an instance of one of the weather renderers, and allow this instance to manage the
 others.
+  
+
+
+Functions
+---
+
+### <a name="BaseWeatherRenderer"/> BaseWeatherRenderer(simul::clouds::Environment env, simul::base::MemoryInterface m)
+Default constructor: if env is NULL, a new Environment will be created.
 
 ### <a name="CleanUpFramebuffers"/>void CleanUpFramebuffers(int max_age)
 Delete framebuffers that have not been used in max_age frames, to free GPU memory.
