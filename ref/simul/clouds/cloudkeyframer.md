@@ -6,7 +6,7 @@ weight: 0
 class CloudKeyframer
 ===
 
-| Include: | Clouds/BaseWeatherRenderer.h |
+| Include: | Clouds/CloudRenderer.h |
 
 
 [simul::sky::OvercastCallback](../sky/overcastcallback)

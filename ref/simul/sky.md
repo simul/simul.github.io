@@ -13,9 +13,11 @@ namespace sky
 Classes and Structures
 ---
 
+| class [BaseAtmosphericsRenderer](sky/baseatmosphericsrenderer) |  |
 | struct [BaseKeyframe](sky/basekeyframe) |  |
 | class [BaseKeyframer](sky/basekeyframer) |  |
 | class [BaseSkyInterface](sky/baseskyinterface) |  |
+| class [BaseSkyRenderer](sky/baseskyrenderer) |  |
 | struct [ChunkInputOutput](sky/chunkinputoutput) |  |
 | struct [EarthShadow](sky/earthshadow) |  |
 | struct [HazeStruct](sky/hazestruct) |  |
@@ -24,10 +26,8 @@ Classes and Structures
 | struct [KeyframeInUseState](sky/keyframeinusestate) |  |
 | class [OpticalLengthInterface](sky/opticallengthinterface) |  |
 | struct [Output](sky/output) |  |
-| class [OvercastCallback](sky/overcastcallback) |  |
 | class [SiderealSky](sky/siderealsky) |  |
 | class [SiderealSkyInterface](sky/siderealskyinterface) |  |
-| class [Sky](sky/sky) |  |
 | struct [SkyKeyframe](sky/skykeyframe) |  |
 | class [SkyKeyframer](sky/skykeyframer) | A class that maintains sky properties and interpolates them based on keyframe values.<br> |
 | class [SkyTexturesCallback](sky/skytexturescallback) |  |

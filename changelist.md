@@ -8,6 +8,17 @@ weight: 120
 
 Version HEAD
 ---
+Thu 30 May : Add RenderDelegate.h  
+Thu 30 May : Add RenderDelegate.h  
+Thu 30 May : Don't invalidate pixelShaders from Effect: RenderPlatform is responsible for this.  
+Thu 30 May : Fix for buoyancy objects not sampling the surface at the correct location. Also contains a couple of minor fixes, and a temporary fix for DX12 not seeing the profile buffer offset and direction arrays  
+Thu 30 May : Fix for OpenGL SFX compilation. New SfxConfig parameter: identicalIOBlocks.  
+Wed 29 May : Update Unity plugin api to new structs.  
+Wed 29 May : water.sfx compiles for Vulkan.  
+Wed 29 May : Update ExternalTexture definition and add full ExternalTexture structs to RenderFrameStruct, more robust for different API's.  
+Tue 28 May : Add sfxb shader bins.  
+Tue 28 May : Fix broken effect shader load.  
+Tue 28 May : Wrap up shader binaries in sfxb for Vulkan and D3D12.  
 Tue 28 May : Shader binaries lumped together in sfxb file - if -w is used in sfx.exe.  
 Mon 27 May : PS4 API update and build fix.  
 Mon 27 May : Delayed destruction for effects to prevent destroying in-use API objects when recompiling. Update skylight struct.  
@@ -97,16 +108,5 @@ Tue 05 Feb : TrueSkyRenderer used 8 MIPS and OpenGL correctly displays them. Min
 Mon 04 Feb : Debug: Forcing 8 MIPS for cube maps.  
 Mon 04 Feb : CopyToTargetDir.py fixes.  
 Mon 04 Feb : CopyToTargetDir.py fixes.  
-Mon 04 Feb : static default_size for skylight.  
-Fri 01 Feb : Cmake build fixes for static projects.  
-Tue 29 Jan : Fix for Skylights not rendering atmospheric effects  
-Tue 29 Jan : Fix rain.sfx build  
-Mon 28 Jan : PS4 ptr.  
-Mon 28 Jan : Rain etc to separate translucent buffer optionally.  
-Sun 27 Jan : Update Setup.nsi  
-Sun 27 Jan : Update SkySequencer.nsi  
-Thu 24 Jan : Updated rain.sfx so that rain in Vulkan works correctly. CloudRenderer.cpp RenderPointSource(), checks the arraySize, before setting textures for a cube map. Minor clean up of Vulkan/RenderPlatform.cpp Resolve(), though they are still issue in resolving the msaa framebuffer.  
-Wed 23 Jan : Minor update to rain.sfx, where mapped_rain will have a minimum value of 0.25. This has fixed the issues with mapped_rain value in the VS; rain_dist and solid_dist values in the PS on OpenGL!  
-Wed 23 Jan : Updated light_probes.sfx and OpenGL/GLSL/shader_platform.sl due a shader compile issue. OpenGL/Effect.cpp changed so that the shaderResource.slot can update the binding index, use for the Lightning vertices SSBOs. Updated rain.sfx to include "..._msaa" passes and for the vertex shader to resolve the MS texture. OpenGL has issues with mapped_rain value in the VS; rain_dist and solid_dist values in the PS!  
 
 <hr>
