@@ -8,6 +8,9 @@ weight: 120
 
 Version HEAD
 ---
+Fri 31 May : OpenGL and D3d12 error fixes.  
+Fri 31 May : Fix water shutdown crash.  
+Fri 31 May : Deployment py fixes.  
 Thu 30 May : Add RenderDelegate.h  
 Thu 30 May : Add RenderDelegate.h  
 Thu 30 May : Don't invalidate pixelShaders from Effect: RenderPlatform is responsible for this.  
@@ -105,8 +108,5 @@ Wed 06 Feb : InitFromExternalTexture2D() now takes in a MSAA parameter (Changed 
 Tue 05 Feb : Fix OpenGL Shutdown  
 Tue 05 Feb : DeviceManager IsActive fn.  
 Tue 05 Feb : TrueSkyRenderer used 8 MIPS and OpenGL correctly displays them. Minor update to rain.sfx, LightProbeConstants are padded to conform to std140. OpenGL/Texture.cpp LoadFromFile() cycles through all texture paths.  
-Mon 04 Feb : Debug: Forcing 8 MIPS for cube maps.  
-Mon 04 Feb : CopyToTargetDir.py fixes.  
-Mon 04 Feb : CopyToTargetDir.py fixes.  
 
 <hr>

@@ -6,8 +6,18 @@ weight: 0
 class Environment
 ===
 
-| Include: | Clouds/CloudRenderer.h |
+| Include: | Clouds/Environment.h |
 
+The main class that manages environment data. Usually, you will create a single instance of Environment, which will persist while your
+3D game or simulation world is active.
+
+If you use environment directly and not via TrueSkyRenderer, you must call the following each frame:
+
+SetRealTime(time_seconds);
+skyKeyframer->TimeStep(step_days);
+Update();
+
+  
 
 
 Functions
@@ -31,6 +41,17 @@ Functions
 | void | [SetRealTime](#SetRealTime)(double rt_sec) |
 | void | [Update](#Update)() |
 | simul::sky::SkyKeyframer * | [CreateSkyKeyframer](#CreateSkyKeyframer)(simul::base::MemoryInterface m, int NumElevations, int NumDistances, float MaxFadeDistanceKm) |
+
+The main class that manages environment data. Usually, you will create a single instance of Environment, which will persist while your
+3D game or simulation world is active.
+
+If you use environment directly and not via TrueSkyRenderer, you must call the following each frame:
+
+SetRealTime(time_seconds);
+skyKeyframer->TimeStep(step_days);
+Update();
+
+  
 
 
 Functions
