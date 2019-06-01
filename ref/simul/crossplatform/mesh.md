@@ -6,14 +6,19 @@ weight: 0
 class Mesh
 ===
 
-| Include: | Platform/CrossPlatform/Mesh.h |
+| Include: | Platform/CrossPlatform/RenderPlatform.h |
 
+The namespace and library for cross-platform base classes, which abstract rendering functionality.
+  
 
 
 Functions
 ---
 
 | simul::crossplatform::Mesh::SubMesh * | [GetSubMesh](#GetSubMesh)(int index) |
+
+The namespace and library for cross-platform base classes, which abstract rendering functionality.
+  
 
 
 Functions
