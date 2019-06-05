@@ -36,7 +36,6 @@ Classes and Structures
 | class [Quaterniond](crossplatform/quaterniond) |  |
 | struct [RasterizerDesc](crossplatform/rasterizerdesc) |  |
 | class [RenderDelegater](crossplatform/renderdelegater) |  |
-| struct [RenderStateDesc](crossplatform/renderstatedesc) |  |
 | struct [RenderTargetFormatDesc](crossplatform/rendertargetformatdesc) |  |
 | struct [ShaderResource](crossplatform/shaderresource) |  |
 | class [SphericalHarmonics](crossplatform/sphericalharmonics) |  |
