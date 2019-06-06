@@ -6,13 +6,13 @@ weight: 0
 struct PosColourVertex
 ===
 
-| Include: | Platform/CrossPlatform/RenderPlatform.h |
-
-A vertex format for debugging.
-  
+| Include: | Sky/BaseSkyRenderer.h |
 
 
 
-A vertex format for debugging.
-  
 
+
+Fields
+---
+
+**pos**  A vertex format for debugging.

@@ -11,5 +11,4 @@ namespace simul
 
 
 | [namespace clouds](simul/clouds) | The namespace corresponding to the Clouds module.<br> |
-| [namespace sky](simul/sky) |  |
 
