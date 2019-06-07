@@ -6,8 +6,15 @@ weight: 0
 class CloudKeyframer
 ===
 
-| Include: | Clouds/CloudRenderer.h |
+| Include: | Clouds/CloudKeyframer.h |
 
+
+A class to manage interpolation between cloud states over time.
+Typically, a CloudKeyframer is created and updated by its <a href="environment">Environment</a>.
+
+If time and daytime are linked in the SkyKeyframer, time is in days, otherwise the timescale is in arbitrary units.
+
+  
 
 [simul::sky::OvercastCallback](../sky/overcastcallback)
 [simul::sky::BaseKeyframer](../sky/basekeyframer)
@@ -58,7 +65,6 @@ Functions
 | void | [Load](#Load)(simul::sky::Input is) |
 | void | [LoadFromText](#LoadFromText)(simul::crossplatform::TextInput input) |
 | void | [New](#New)() |
-| simul::clouds::CloudKeyframer  const & | [operator=](#operator=)(simul::clouds::CloudKeyframer SK) |
 | void | [RecalculateOffsets](#RecalculateOffsets)() |
 | void | [Relocate](#Relocate)(pos_before, pos_after) |
 | void | [RemoveVolume](#RemoveVolume)(int id) |
@@ -75,6 +81,14 @@ Functions
 | void | [Synchronize](#Synchronize)() |
 | void | [Update](#Update)(float new_time) |
 | unsigned int | [GetOffsetChecksum](#GetOffsetChecksum)() |
+
+
+A class to manage interpolation between cloud states over time.
+Typically, a CloudKeyframer is created and updated by its <a href="environment">Environment</a>.
+
+If time and daytime are linked in the SkyKeyframer, time is in days, otherwise the timescale is in arbitrary units.
+
+  
 
 
 Base Classes
@@ -202,11 +216,6 @@ Load from a text file
 
 ### <a name="New"/>void New()
 Clear keyframes.
-
-### <a name="operator="/>simul::clouds::CloudKeyframer  const & operator=(simul::clouds::CloudKeyframer SK)
-
-A class to manage interpolation between cloud states over time.
-Typically, a CloudKeyframer is created and updated by its 
 
 ### <a name="RecalculateOffsets"/>void RecalculateOffsets()
 Check for changed offsets and recalculate.
