@@ -6,10 +6,8 @@ weight: 0
 class PrecipitationRenderer
 ===
 
-| Include: | Clouds/PrecipitationRenderer.h |
+| Include: | Clouds/BaseWeatherRenderer.h |
 
-The class that renders rain and snow.
-  
 
 
 Functions
@@ -26,11 +24,9 @@ Functions
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform renderPlatform) |
 | void | [SetBaseSkyInterface](#SetBaseSkyInterface)(simul::sky::BaseSkyInterface s) |
 | void | [SetRainDepthTextureScale](#SetRainDepthTextureScale)(float s) |
+| void | [SetRainMap](#SetRainMap)(CloudShadowStruct str) |
 | void | [SetRandomTexture3D](#SetRandomTexture3D)(simul::crossplatform::Texture texture) |
 | void | [SetWind](#SetWind)(float speed, float heading_degrees) |
-
-The class that renders rain and snow.
-  
 
 
 Functions
@@ -68,6 +64,9 @@ Set the sky and atmospherics interface.
 
 ### <a name="SetRainDepthTextureScale"/>void SetRainDepthTextureScale(float s)
 Set the scale of the rain depth texture to normalize it to [0,1]
+
+### <a name="SetRainMap"/>void SetRainMap(CloudShadowStruct str)
+The class that renders rain and snow.
 
 ### <a name="SetRandomTexture3D"/>void SetRandomTexture3D(simul::crossplatform::Texture texture)
 Provide a random 3D texture. This is set externally so the texture can be shared.
