@@ -6,8 +6,10 @@ weight: 0
 class BaseLightningRenderer
 ===
 
-| Include: | Clouds/BaseWeatherRenderer.h |
+| Include: | Clouds/BaseLightningRenderer.h |
 
+The renderer for lightning.
+  
 
 
 Functions
@@ -15,13 +17,15 @@ Functions
 
 |  | [BaseLightningRenderer](#BaseLightningRenderer)(simul::sky::BaseSkyInterface sk) |
 |  | [~BaseLightningRenderer](#~BaseLightningRenderer)() |
-| void | [EnsureEffectsAreBuilt](#EnsureEffectsAreBuilt)(simul::crossplatform::RenderPlatform r) |
 | void | [InvalidateDeviceObjects](#InvalidateDeviceObjects)() |
 | void | [PreRenderUpdate](#PreRenderUpdate)(simul::crossplatform::DeviceContext deviceContext, float real_time) |
 | void | [RecompileShaders](#RecompileShaders)() |
 | void | [Render](#Render)(simul::crossplatform::DeviceContext deviceContext, simul::clouds::CloudKeyframer cloudKeyframer, simul::crossplatform::Texture depth_tex, vec4 depthViewportXYWH, simul::clouds::TransparencyAtmospherics t, float brightnessToUnity, simul::clouds::BaseWeatherRenderer weatherRenderer) |
 | void | [RenderOverlay](#RenderOverlay)(simul::crossplatform::DeviceContext deviceContext, simul::clouds::CloudKeyframer::Storm) |
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform r) |
+
+The renderer for lightning.
+  
 
 
 Functions
@@ -32,9 +36,6 @@ Constructor
 
 ### <a name="~BaseLightningRenderer"/> ~BaseLightningRenderer()
 Destructor
-
-### <a name="EnsureEffectsAreBuilt"/>void EnsureEffectsAreBuilt(simul::crossplatform::RenderPlatform r)
-The renderer for lightning.
 
 ### <a name="InvalidateDeviceObjects"/>void InvalidateDeviceObjects()
 Platform-dependent function called when uninitializing the lightning renderer.

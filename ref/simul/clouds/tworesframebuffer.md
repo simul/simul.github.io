@@ -6,14 +6,15 @@ weight: 0
 class TwoResFramebuffer
 ===
 
-| Include: | Clouds/CloudRenderer.h |
+| Include: | Clouds/TwoResFramebuffer.h |
 
+A framebuffer class for mixed-resolution rendering.
+  
 
 
 Functions
 ---
 
-|  | [TwoResFramebuffer](#TwoResFramebuffer)() |
 | void | [CompleteFrame](#CompleteFrame)(long long framenumber) |
 | void | [DeactivateDepth](#DeactivateDepth)(simul::crossplatform::DeviceContext) |
 | uint4 | [GetCubeIntegerFrustumRange](#GetCubeIntegerFrustumRange)(int i) |
@@ -27,12 +28,12 @@ Functions
 | void | [Swap](#Swap)() |
 | void | [UpdatePixelOffset](#UpdatePixelOffset)(simul::crossplatform::ViewStruct viewStruct) |
 
+A framebuffer class for mixed-resolution rendering.
+  
+
 
 Functions
 ---
-
-### <a name="TwoResFramebuffer"/> TwoResFramebuffer()
-A framebuffer class for mixed-resolution rendering.
 
 ### <a name="CompleteFrame"/>void CompleteFrame(long long framenumber)
 This must be called to ensure that the amortization struct is up to date.
