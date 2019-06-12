@@ -6,18 +6,8 @@ weight: 0
 namespace math
 ===
 
-| Include: | Math/Math.h |
+| Include: | Math/Decay.h |
 
-Math is the mathematics library for Simul. It contains Vector, Matrix and
-Quaternion classes, vector-matrix, vector-quat and matrix-quat functions,
-and some low-level maths functions.
-
-Static library: (SIMUL)/lib/(PLATFORM)/(COMPILER)/(ConfigurationName)/SimulMath_(RUNTIME).lib
-
-Dynamic library: (SIMUL)/exe/(PLATFORM)/(COMPILER)/(ConfigurationName)/SimulBase_(RUNTIME).dll
-
-The Math library depends on the Simul/Base library.
-  
 
 
 Classes and Structures
@@ -28,6 +18,7 @@ Classes and Structures
 | class [Noise1D](math/noise1d) |  |
 | class [Noise2D](math/noise2d) |  |
 | class [Noise3D](math/noise3d) |  |
+| class [VirtualVector](math/virtualvector) |  |
 
 Functions
 ---
@@ -37,17 +28,6 @@ Functions
 | void | [FirstOrderDecay](#FirstOrderDecay)(float variable, float target, float rate, float dt) |
 | std::ostream  & | [operator<<](#operator<<)(std::ostream, simul::math::Vector3) |
 | std::istream  & | [operator>>](#operator>>)(std::istream, simul::math::Vector3) |
-
-Math is the mathematics library for Simul. It contains Vector, Matrix and
-Quaternion classes, vector-matrix, vector-quat and matrix-quat functions,
-and some low-level maths functions.
-
-Static library: (SIMUL)/lib/(PLATFORM)/(COMPILER)/(ConfigurationName)/SimulMath_(RUNTIME).lib
-
-Dynamic library: (SIMUL)/exe/(PLATFORM)/(COMPILER)/(ConfigurationName)/SimulBase_(RUNTIME).dll
-
-The Math library depends on the Simul/Base library.
-  
 
 
 Functions
