@@ -6,8 +6,10 @@ weight: 0
 class Skylight
 ===
 
-| Include: | Clouds/TrueSkyRenderer.h |
+| Include: | Clouds/Skylight.h |
 
+A class to capture light from the sky in real time for diffuse and specular lighting.
+  
 
 
 Functions
@@ -21,6 +23,9 @@ Functions
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform r) |
 | void | [ShowDebug](#ShowDebug)(simul::crossplatform::DeviceContext deviceContext, int X, int Y, int w) |
 | void | [Update](#Update)(simul::crossplatform::DeviceContext deviceContext, simul::clouds::BaseWeatherRenderer weatherRenderer) |
+
+A class to capture light from the sky in real time for diffuse and specular lighting.
+  
 
 
 Functions

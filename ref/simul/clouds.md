@@ -14,7 +14,6 @@ The namespace corresponding to the Clouds module.<br>
 Classes and Structures
 ---
 
-| class [BaseGpuCloudGenerator](clouds/basegpucloudgenerator) |  |
 | class [BaseLightningRenderer](clouds/baselightningrenderer) |  |
 | class [CellularCloudGrid](clouds/cellularcloudgrid) |  |
 | class [CellularCloudNode](clouds/cellularcloudnode) |  |
@@ -23,10 +22,11 @@ Classes and Structures
 | class [CloudInterface](clouds/cloudinterface) |  |
 | struct [CloudKeyframe](clouds/cloudkeyframe) |  |
 | class [CloudProperties](clouds/cloudproperties) |  |
+| class [CloudRenderer](clouds/cloudrenderer) | Class for real-time volumetric cloud rendering.<br> |
+| struct [CloudRenderingOptions](clouds/cloudrenderingoptions) | This controls the rendering of clouds.<br> |
 | struct [CloudVolume](clouds/cloudvolume) |  |
 | struct [DepthTextureStruct](clouds/depthtexturestruct) |  |
 | class [DoLightSteps](clouds/dolightsteps) |  |
-| class [Environment](clouds/environment) |  |
 | struct [ExportLightningStrike](clouds/exportlightningstrike) |  |
 | class [FastCloudNode](clouds/fastcloudnode) |  |
 | class [MixedResolutionCompositor](clouds/mixedresolutioncompositor) |  |
@@ -34,9 +34,9 @@ Classes and Structures
 | struct [PrecipitationRegion](clouds/precipitationregion) |  |
 | class [PrecipitationRenderer](clouds/precipitationrenderer) |  |
 | struct [SelectionIdentifier](clouds/selectionidentifier) |  |
+| class [Skylight](clouds/skylight) |  |
 | class [TimedNoise3D](clouds/timednoise3d) |  |
 | class [TrueSkyRenderer](clouds/trueskyrenderer) | <br> |
-| class [TwoResFramebuffer](clouds/tworesframebuffer) |  |
 
 Functions
 ---
