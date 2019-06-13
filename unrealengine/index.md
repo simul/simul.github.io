@@ -23,45 +23,45 @@ Getting started
 * You'll find your licence at [simul.co/account](https://simul.co/account).
 * After evaluating, to get an indie licence, you can buy or subscribe at [simul.co/account](https://simul.co/account). For all other licences, write to [contact@simul.co](mailto:contact@simul.co).
 
-# Installing the Plugin
-For binary installations of Unreal Engine, binary trueSKY plugin installers are available from [https://simul.co/download](https://simul.co/truesky/download). For other versions, or if you have a version of Unreal Engine built from source, you will need to build the plugin. [**For GitHub/Engine Source Integration, check this page**](https://docs.simul.co/unrealengine/source.html).
+# Installing the plugin
+This page shows you how to install the binary version of trueSKY onto your existing binary UE installation. For other versions, or if you have a version of Unreal Engine built from source, you will need to build the plugin. [For GitHub/Engine Source Integration, check this page](https://docs.simul.co/unrealengine/source.html).
 
-**Important**
-The stock binary version of Unreal does not deploy trueSKY files when packaging a project. You will see a black sky unless you deploy these files. See [Deployment](/unrealengine/Deploy) for instructions.
+* Step 1: Login or register for an account with [simul.co](https://simul.co/accounts).
 
-# Running the Plugin
-* Run UE4, either standalone or with the debugger.
-TrueSkyPlugin loads `TrueSkyUI_MD.dll` and `TrueSkyPluginRender_MT.dll` from `[UE4]\Engine\Binaries\ThirdParty\Simul\Win64`.
+* Step 2: Download trueSKY binary installer from [simul.co/downloads](https://simul.co/downloads).
 
-When you run the UE4 editor, the trueSKY plugin should be enabled by default. If not, open up the Plugin Configurator for Unreal Engine (from the menu bar: **Edit->Plugins**). In the plugin configuration window and type "trueSKY" into the search box to find the plugin; check the "Enabled" box to enable it.
+* Step 3: Run the installer, ensuring that the correct directory is selected on your local machine. After the installation process is complete, the plugin should be installed into your UE directory.
 
-[![alt text](https://simul.co/wp-content/uploads/2014/07/UE4_ShowPlugins-96x300.png "Opening the Plugin Configurator for Unreal Engine (from the main menu bar: Edit->Plugins).")](http://simul.co/wp-content/uploads/2014/07/UE4_ShowPlugins.png)
+# Running the binary plugin
 
-[![alt text](https://docs.simul.co/unrealengine/images/EnableTrueSKY.png "Enabling the trueSKY Plugin in Unreal Engine 4's editor.")](https://docs.simul.co/unrealengine/images/EnableTrueSKY.png)
+* Step 1: Launch 'Epic Games Launcher' and start 'Unreal Engine'.
 
-If you had to change the "Enabled" setting from disabled to enabled (or vice versa), you'll need to restart the editor for the change to take effect, as with all editor plugin changes.
+* Step 2: Click on the 'Edit' dropdown menu at the top of the window and click 'plugins'.
+
+* Step 3: A new 'Plugins' window will appear. Use the search box to find 'trueSKY' and then click enable.
+
+* Step 4: You will be prompted to restart 'Unreal Editor'. Click 'restart now'.
+
+Now trueSKY is installed.
 
 # Adding trueSKY to Your Level
 
-## Precautions
-* Most UE4 maps contain a Sky Sphere and Atmospheric Fog:
-	* **Delete the Sky Sphere object** -- The Sky Sphere will actively obscure aspects of the trueSKY rendering system, as it's basically a giant ball of geometry with a texture applied; you'll want to delete this object.
-	* **Delete any Atmospheric Fog object** -- Having Atmospheric Fog will not *break* anything, per se, but given that trueSKY provides a more detailed and physically-accurate atmospheric rendering solution, it can serve as a complete replacement.
+* Step 1: Launch your scene in 'Unreal Engine'.
 
-## Adding the trueSKY Sequence Actor
-The trueSKY Sequence Actor is the primary way to access and interact with the trueSKY renderer and its rendered sky sequence within Unreal Engine 4. You can add this actor from the standard "Place" sidebar in the editor, choosing "All Classes", typing "trueSKY", and choosing the "True Sky Sequence Actor" to drag into your scene, or you can use this handy little shortcut:
-* From the menu bar, use: "Window->Add Sequence to Scene"
-	* This adds the default True Sky Sequence Actor to the current level at the map's origin (though its location doesn't matter -- its rotation, however, does).
+* Step 2: Click the menu option 'window' in the top menu bar and click 'initialise trueSKY'.
 
- <a href="http://simul.co/wp-content/uploads/2014/07/UE4_AddSequence.png"><img src="http://simul.co/wp-content/uploads/2014/07/UE4_AddSequence-81x300.png"/></a> 
+* Step 3: A popup window will appear. Click initialise. 
 
-Once you have the True Sky Sequence Actor in your scene, choose it from "World Outliner" window. Then, to customize it, open up the "Details" window/sidebar; set the reference to an existing **TrueSky Sequence Asset** in the "Active Sequence" dropdown. By default, there are two sample sequences you can instantly check and see the results for yourself:
+The installer will automatically perform the following actions to enable trueSKY in your scene. 
 
-* `TrueSkySequenceCumulus` -- A prototypical cumulus cloud pattern (with a 3D and 2D cloud keyframe for example purposes).
-[![alt text](https://docs.simul.co/unrealengine/images/ue4_samplesequence_cumulus.png "Screen shot of the sample cumulus sky sequence in Unreal Engine 4.")](https://docs.simul.co/unrealengine/images/ue4_samplesequence_cumulus.png)
+- Delete Atmospheric Fog actors
+- Delete BP_Sky_Sphere
+- Add trueSKY Sequence Actor
+- Add trueSKYLight
 
-* `TrueSkySequenceStratus` -- A prototypical stratus cloud system; i.e. there's a rain/snow comin' (with a 3D and 2D cloud keyframe for example purposes).
-[![alt text](https://docs.simul.co/unrealengine/images/ue4_samplesequence_stratus.png "Screen shot of the sample cumulus sky sequence in Unreal Engine 4.")](https://docs.simul.co/unrealengine/images/ue4_samplesequence_stratus.png)
+You should now see the sky appear in your scene.
+
+* Step 4: Activate your trueSKY license within UE4 using the next steps. Failure to do this will result in trueSKY not working.
 
 ### Creating New Sky Sequences
 To create a new TrueSkySequence asset, go to the "Content Browser" window. Press "New Asset" button (or do a right mouse click inside the window) to open an asset selection window. Choose "Miscellaneous / trueSKY Sequence Asset". A new asset will be created. Now you can rename/save/delete it.
