@@ -6,7 +6,7 @@ weight: 0
 namespace crossplatform
 ===
 
-| Include: | Platform/CrossPlatform/ShaderMode.h |
+| Include: | Platform/CrossPlatform/DemoOverlay.h |
 
 
 
@@ -14,7 +14,6 @@ Classes and Structures
 ---
 
 | struct [AmortizationStruct](crossplatform/amortizationstruct) |  |
-| class [BaseFramebuffer](crossplatform/baseframebuffer) |  |
 | class [BaseRenderer](crossplatform/baserenderer) |  |
 | struct [CommandLineParams](crossplatform/commandlineparams) |  |
 | struct [ContextState](crossplatform/contextstate) |  |
@@ -29,6 +28,7 @@ Classes and Structures
 | class [Layout](crossplatform/layout) |  |
 | struct [LayoutDesc](crossplatform/layoutdesc) |  |
 | class [LensFlare](crossplatform/lensflare) |  |
+| class [Light](crossplatform/light) |  |
 | struct [MixedResolutionStruct](crossplatform/mixedresolutionstruct) |  |
 | struct [MouseCameraInput](crossplatform/mousecamerainput) |  |
 | struct [MouseCameraState](crossplatform/mousecamerastate) |  |

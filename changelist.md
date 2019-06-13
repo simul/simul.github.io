@@ -8,6 +8,7 @@ weight: 120
 
 Version HEAD
 ---
+Thu 13 Jun : Fix Qt plugin search for Unity only.  
 Thu 13 Jun : GeneratedFiles includes for SequencerQtWidgets in TrueSkyUI_x64_v140.vcxproj  
 Thu 13 Jun : Add GenerateFiles include dir.  
 Thu 13 Jun : Improve cloud window UI.  
@@ -107,6 +108,5 @@ Thu 07 Feb : PS4 ptr and Cmake fixes.
 Thu 07 Feb : Slight nsi fixes.  
 Thu 07 Feb : Slight nsi fixes.  
 Wed 06 Feb : Fix problem with cloud fill on Vulkan. Frame number was always zero.  
-Wed 06 Feb : Performance update for the cloud light texture processing  
 
 <hr>
