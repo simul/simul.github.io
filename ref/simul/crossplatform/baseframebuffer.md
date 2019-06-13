@@ -8,6 +8,8 @@ class BaseFramebuffer
 
 | Include: | Platform/CrossPlatform/RenderPlatform.h |
 
+The namespace and library for cross-platform base classes, which abstract rendering functionality.
+  
 
 
 Functions
@@ -34,6 +36,9 @@ Functions
 | void | [SetFormat](#SetFormat)(simul::crossplatform::PixelFormat) |
 | void | [SetUseFastRAM](#SetUseFastRAM)(bool, bool) |
 | void | [SetWidthAndHeight](#SetWidthAndHeight)(int w, int h, int num_mips) |
+
+The namespace and library for cross-platform base classes, which abstract rendering functionality.
+  
 
 
 Functions

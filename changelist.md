@@ -8,6 +8,10 @@ weight: 120
 
 Version HEAD
 ---
+Thu 13 Jun : GeneratedFiles includes for SequencerQtWidgets in TrueSkyUI_x64_v140.vcxproj  
+Thu 13 Jun : Add GenerateFiles include dir.  
+Thu 13 Jun : Improve cloud window UI.  
+Thu 13 Jun : Fix long pause at UI startup due to Qt search path.  
 Fri 31 May : OpenGL and D3d12 error fixes.  
 Fri 31 May : Fix water shutdown crash.  
 Fri 31 May : Deployment py fixes.  
@@ -104,9 +108,5 @@ Thu 07 Feb : Slight nsi fixes.
 Thu 07 Feb : Slight nsi fixes.  
 Wed 06 Feb : Fix problem with cloud fill on Vulkan. Frame number was always zero.  
 Wed 06 Feb : Performance update for the cloud light texture processing  
-Wed 06 Feb : InitFromExternalTexture2D() now takes in a MSAA parameter (Changed in crossplatform and all renders). OpenGLSample.cpp has been updated to show this feature. RainDepthTextureMS is now set inside of PrecipitationRenderer.cpp. Minor updates to FramebufferGL and TextureHandles in OpenGL/Effect.cpp and OpenGL/Texture.cpp.  
-Tue 05 Feb : Fix OpenGL Shutdown  
-Tue 05 Feb : DeviceManager IsActive fn.  
-Tue 05 Feb : TrueSkyRenderer used 8 MIPS and OpenGL correctly displays them. Minor update to rain.sfx, LightProbeConstants are padded to conform to std140. OpenGL/Texture.cpp LoadFromFile() cycles through all texture paths.  
 
 <hr>
