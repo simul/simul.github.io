@@ -13,20 +13,20 @@ Please first ensure that trueSKY supports the platforms and API's that you need.
 
 | x64 (D3D11) | x64 (D3D12) |  x64 (Vulkan) | x64 (OpenGL) |PS4 | Xbox One (D3D11) | x64 (D3D12) | Switch       |      OSX     |
 |:-----------:|:-----------:|:-------------:|:------------:|---:|:----------------:|:-----------:|:------------:|:------------:|
-|      ✓      |      ✓     |       x       |       x      | ✓  |    ✓            |    ✓        |    ✓         |       x      |
+|      ✓      |      ✓      |   ✓ UE 4.22   |       x      | ✓  |       ✓          |     ✓       |    ✓         |       x      |
 
 
 Getting started
 --------------
 
-* Register your username at [https://simul.co/register](https://simul.co/register)
+* Register your username at [simul.co/register](https://simul.co/register)
 * You'll find your licence at [simul.co/account](https://simul.co/account).
 * After evaluating, to get an indie licence, you can buy or subscribe at [simul.co/account](https://simul.co/account). For all other licences, write to [contact@simul.co](mailto:contact@simul.co).
 
 # Installing the plugin
 This page shows you how to install the binary version of trueSKY onto your existing binary UE installation. For other versions, or if you have a version of Unreal Engine built from source, you will need to build the plugin. [For GitHub/Engine Source Integration, check this page](https://docs.simul.co/unrealengine/source.html).
 
-* Step 1: Login or register for an account with [simul.co](https://simul.co/accounts).
+* Step 1: Login or register for an account with [simul.co](https://simul.co/account).
 
 * Step 2: Download trueSKY binary installer from [simul.co/downloads](https://simul.co/downloads).
 
