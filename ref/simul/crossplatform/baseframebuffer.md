@@ -6,7 +6,7 @@ weight: 0
 class BaseFramebuffer
 ===
 
-| Include: | Platform/CrossPlatform/RenderPlatform.h |
+| Include: | Platform/CrossPlatform/View.h |
 
 
 

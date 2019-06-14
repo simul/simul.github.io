@@ -14,17 +14,20 @@ The namespace corresponding to the Clouds module.<br>
 Classes and Structures
 ---
 
+| class [BaseGpuCloudGenerator](clouds/basegpucloudgenerator) |  |
+| class [BaseLightningRenderer](clouds/baselightningrenderer) |  |
 | class [CellularCloudGrid](clouds/cellularcloudgrid) |  |
 | class [CellularCloudNode](clouds/cellularcloudnode) |  |
 | struct [CloudGeometryHelper](clouds/cloudgeometryhelper) |  |
 | class [CloudGridInterface](clouds/cloudgridinterface) |  |
 | class [CloudInterface](clouds/cloudinterface) |  |
 | struct [CloudKeyframe](clouds/cloudkeyframe) |  |
+| class [CloudKeyframer](clouds/cloudkeyframer) |  |
 | class [CloudProperties](clouds/cloudproperties) |  |
-| class [CloudRenderer](clouds/cloudrenderer) | Class for real-time volumetric cloud rendering.<br> |
 | struct [CloudRenderingOptions](clouds/cloudrenderingoptions) | This controls the rendering of clouds.<br> |
 | struct [CloudVolume](clouds/cloudvolume) |  |
 | struct [DepthTextureStruct](clouds/depthtexturestruct) |  |
+| class [Environment](clouds/environment) |  |
 | struct [ExportLightningStrike](clouds/exportlightningstrike) |  |
 | class [FastCloudNode](clouds/fastcloudnode) |  |
 | class [HumidityCallbackInterface](clouds/humiditycallbackinterface) |  |

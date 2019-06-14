@@ -35,6 +35,7 @@ To use Simul Sky directly, create an instance of simul::sky::BaseSkyRenderer.
 Classes and Structures
 ---
 
+| class [BaseAtmosphericsRenderer](sky/baseatmosphericsrenderer) |  |
 | struct [BaseKeyframe](sky/basekeyframe) |  |
 | class [BaseKeyframer](sky/basekeyframer) |  |
 | class [BaseSkyInterface](sky/baseskyinterface) |  |

@@ -6,7 +6,7 @@ weight: 0
 class PluginTrueSkyRenderer
 ===
 
-| Include: | PlugIns/TrueSkyPluginRender/PluginTrueSkyRenderer.h |
+| Include: | PlugIns/TrueSkyPluginRender/UnityPluginInterface.h |
 
 
 [simul::clouds::TrueSkyRenderer](../clouds/trueskyrenderer)
