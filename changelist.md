@@ -8,6 +8,8 @@ weight: 120
 
 Version HEAD
 ---
+Fri 14 Jun : Minor fix to stop values that would break the water renderer from being passed to it  
+Fri 14 Jun : Initial commit for Water reflections  
 Thu 13 Jun : Fix Qt plugin search for Unity only.  
 Thu 13 Jun : GeneratedFiles includes for SequencerQtWidgets in TrueSkyUI_x64_v140.vcxproj  
 Thu 13 Jun : Add GenerateFiles include dir.  
@@ -106,7 +108,5 @@ Sat 09 Feb : Hopeful fix to prevent from using 16 texture slots on PS4. All API'
 Fri 08 Feb : Hopeful fix to prevent from using 16 texture slots on PS4.  
 Thu 07 Feb : PS4 ptr and Cmake fixes.  
 Thu 07 Feb : Slight nsi fixes.  
-Thu 07 Feb : Slight nsi fixes.  
-Wed 06 Feb : Fix problem with cloud fill on Vulkan. Frame number was always zero.  
 
 <hr>

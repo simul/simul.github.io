@@ -7,7 +7,7 @@ weight: 40
 <hr size="1">
 
 One way to connect trueSKY to a game or simulation engine is using the Plugin Rendering Interface.
-A dynamic link library or dll called PluginRenderInterface.dll (or similar) is loaded, dynamically, from within the game engine.
+A dynamic link library or dll called TrueSkyPluginRenderer_MT.dll (or similar) is loaded, dynamically, from within the game engine.
 The exported functions are used to perform sky rendering per-frame for each view.
 
 int  StaticInitInterface();  
