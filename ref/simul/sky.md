@@ -39,6 +39,7 @@ Classes and Structures
 | struct [BaseKeyframe](sky/basekeyframe) |  |
 | class [BaseKeyframer](sky/basekeyframer) |  |
 | class [BaseSkyInterface](sky/baseskyinterface) |  |
+| class [BaseSkyRenderer](sky/baseskyrenderer) |  |
 | struct [ChunkInputOutput](sky/chunkinputoutput) |  |
 | struct [EarthShadow](sky/earthshadow) |  |
 | struct [HazeStruct](sky/hazestruct) |  |
