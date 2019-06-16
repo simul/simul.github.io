@@ -14,6 +14,7 @@ The namespace corresponding to the Clouds module.<br>
 Classes and Structures
 ---
 
+| class [BaseGpuCloudGenerator](clouds/basegpucloudgenerator) |  |
 | class [BaseLightningRenderer](clouds/baselightningrenderer) |  |
 | class [CellularCloudGrid](clouds/cellularcloudgrid) |  |
 | class [CellularCloudNode](clouds/cellularcloudnode) |  |
@@ -27,10 +28,9 @@ Classes and Structures
 | struct [CloudRenderingOptions](clouds/cloudrenderingoptions) | This controls the rendering of clouds.<br> |
 | struct [CloudVolume](clouds/cloudvolume) |  |
 | struct [DepthTextureStruct](clouds/depthtexturestruct) |  |
-| class [Environment](clouds/environment) |  |
+| class [DoLightSteps](clouds/dolightsteps) |  |
 | struct [ExportLightningStrike](clouds/exportlightningstrike) |  |
 | class [FastCloudNode](clouds/fastcloudnode) |  |
-| class [HumidityCallbackInterface](clouds/humiditycallbackinterface) |  |
 | class [MixedResolutionCompositor](clouds/mixedresolutioncompositor) |  |
 | struct [PointSource](clouds/pointsource) |  |
 | struct [PrecipitationRegion](clouds/precipitationregion) |  |
@@ -39,6 +39,7 @@ Classes and Structures
 | class [Skylight](clouds/skylight) |  |
 | class [TimedNoise3D](clouds/timednoise3d) |  |
 | class [TrueSkyRenderer](clouds/trueskyrenderer) | <br> |
+| class [TwoResFramebuffer](clouds/tworesframebuffer) |  |
 
 Functions
 ---
