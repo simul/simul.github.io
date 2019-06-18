@@ -39,7 +39,6 @@ Classes and Structures
 | class [Skylight](clouds/skylight) |  |
 | class [TimedNoise3D](clouds/timednoise3d) |  |
 | class [TrueSkyRenderer](clouds/trueskyrenderer) | <br> |
-| class [TwoResFramebuffer](clouds/tworesframebuffer) |  |
 
 Functions
 ---

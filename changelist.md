@@ -8,6 +8,7 @@ weight: 120
 
 Version HEAD
 ---
+Mon 17 Jun : Minor update to the snow pixel shader.  
 Fri 14 Jun : Minor fix to stop values that would break the water renderer from being passed to it  
 Fri 14 Jun : Initial commit for Water reflections  
 Thu 13 Jun : Fix Qt plugin search for Unity only.  
@@ -107,6 +108,5 @@ Sun 10 Feb : Improve EffectPass frame counting to prevent shaders that aren't us
 Sat 09 Feb : Hopeful fix to prevent from using 16 texture slots on PS4. All API's should stay under 16 for texture slots..  
 Fri 08 Feb : Hopeful fix to prevent from using 16 texture slots on PS4.  
 Thu 07 Feb : PS4 ptr and Cmake fixes.  
-Thu 07 Feb : Slight nsi fixes.  
 
 <hr>
