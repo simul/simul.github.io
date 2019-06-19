@@ -8,6 +8,7 @@ weight: 120
 
 Version HEAD
 ---
+Tue 18 Jun : Linux build fixes  
 Mon 17 Jun : Minor update to the snow pixel shader.  
 Fri 14 Jun : Minor fix to stop values that would break the water renderer from being passed to it  
 Fri 14 Jun : Initial commit for Water reflections  
@@ -107,6 +108,5 @@ Mon 11 Feb : CopyToTargetDir.py: uiLocation default is set as 'SIMUL+"/exe/"+PLA
 Sun 10 Feb : Improve EffectPass frame counting to prevent shaders that aren't used every frame getting confused. Add numSamples to init for Vulkan external textures.  
 Sat 09 Feb : Hopeful fix to prevent from using 16 texture slots on PS4. All API's should stay under 16 for texture slots..  
 Fri 08 Feb : Hopeful fix to prevent from using 16 texture slots on PS4.  
-Thu 07 Feb : PS4 ptr and Cmake fixes.  
 
 <hr>
