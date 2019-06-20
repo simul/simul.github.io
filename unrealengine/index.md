@@ -32,7 +32,7 @@ This page shows you how to install the binary version of trueSKY onto your exist
 
 * Step 3: Run the installer, ensuring that the correct directory is selected on your local machine. After the installation process is complete, the plugin should be installed into your UE directory.
 
-# Running the binary plugin
+### Running the binary plugin
 
 * Step 1: Launch 'Epic Games Launcher' and start 'Unreal Engine'.
 
@@ -44,7 +44,7 @@ This page shows you how to install the binary version of trueSKY onto your exist
 
 Now trueSKY is installed.
 
-# Adding trueSKY to Your Level
+### Adding trueSKY to Your Level
 
 * Step 1: Launch your scene in 'Unreal Engine'.
 
@@ -61,7 +61,29 @@ The installer will automatically perform the following actions to enable trueSKY
 
 You should now see the sky appear in your scene.
 
-* Step 4: Activate your trueSKY license within UE4 using the next steps. Failure to do this will result in trueSKY not working.
+* Step 4: Activate your trueSKY licence within UE4 using the following steps. Failure to do this will result in trueSKY not working.
+
+### Activate your trueSKY licence
+
+To ensure trueSKY works, you will need your user name & licence key. These can be found in your account dashboard at simul.co/account. 
+
+* Step 1: Login to your account at simul.co and click my account. 
+
+* Step 2: Your username is at the top left, on the second line, underneath your name. Please note this down.
+
+* Step 3: Your licence key is in your account dashboard. Please note this down also.
+
+* Step 4: Launch your game/scene in UE4.
+
+* Step 5: Select the 'TrueSkySequenceActor' in the 'World Outliner' window.
+
+* Step 6: In the 'details' window, use the search to find 'true sky'.
+
+* Step 7: In the results, find the 'Active Sequence' property and double click the icon. A new window will appear.
+
+* Step 8: In the new widow, enter your username and licence key under 'registration'. If the details are correct, you will see the text 'OK' displayed under the licence key fields.
+
+trueSKY should now be fully working in your scene.
 
 ### Creating New Sky Sequences
 To create a new TrueSkySequence asset, go to the "Content Browser" window. Press "New Asset" button (or do a right mouse click inside the window) to open an asset selection window. Choose "Miscellaneous / trueSKY Sequence Asset". A new asset will be created. Now you can rename/save/delete it.
