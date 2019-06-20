@@ -22,12 +22,10 @@ Classes and Structures
 | class [CloudGridInterface](clouds/cloudgridinterface) |  |
 | class [CloudInterface](clouds/cloudinterface) |  |
 | struct [CloudKeyframe](clouds/cloudkeyframe) |  |
-| class [CloudKeyframer](clouds/cloudkeyframer) |  |
 | class [CloudProperties](clouds/cloudproperties) |  |
 | struct [CloudVolume](clouds/cloudvolume) |  |
 | struct [DepthTextureStruct](clouds/depthtexturestruct) |  |
 | class [DoLightSteps](clouds/dolightsteps) |  |
-| class [Environment](clouds/environment) |  |
 | struct [ExportLightningStrike](clouds/exportlightningstrike) |  |
 | class [FastCloudNode](clouds/fastcloudnode) |  |
 | class [MixedResolutionCompositor](clouds/mixedresolutioncompositor) |  |
@@ -38,7 +36,6 @@ Classes and Structures
 | class [Skylight](clouds/skylight) |  |
 | class [TimedNoise3D](clouds/timednoise3d) |  |
 | class [TrueSkyRenderer](clouds/trueskyrenderer) | <br> |
-| class [TwoResFramebuffer](clouds/tworesframebuffer) |  |
 
 Functions
 ---
