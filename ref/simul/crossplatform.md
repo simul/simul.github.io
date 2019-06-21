@@ -45,6 +45,7 @@ Classes and Structures
 | class [View](crossplatform/view) |  |
 | class [ViewManager](crossplatform/viewmanager) |  |
 | struct [Viewport](crossplatform/viewport) |  |
+| struct [ViewStruct](crossplatform/viewstruct) |  |
 
 Functions
 ---
