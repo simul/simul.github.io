@@ -6,15 +6,16 @@ weight: 0
 class BaseAtmosphericsRenderer
 ===
 
-| Include: | Clouds/BaseWeatherRenderer.h |
+| Include: | Sky/BaseAtmosphericsRenderer.h |
 
+The graphics API-independent base class for atmospherics renderers, which draw distance fades, aerial perspective, fog and so on.
+  
 
 [simul::base::Referenced](../base/referenced)
 
 Functions
 ---
 
-|  | [BaseAtmosphericsRenderer](#BaseAtmosphericsRenderer)(simul::base::MemoryInterface m) |
 | void | [EnsureEffectsAreBuilt](#EnsureEffectsAreBuilt)(simul::crossplatform::RenderPlatform r) |
 | simul::sky::ScatteringVolume  const * | [GetScatteringVolume](#GetScatteringVolume)(int view_id) |
 | void | [InvalidateDeviceObjects](#InvalidateDeviceObjects)() |
@@ -28,6 +29,9 @@ Functions
 | void | [SetIlluminationTexture](#SetIlluminationTexture)(simul::crossplatform::Texture) |
 | void | [SetSkyInterface](#SetSkyInterface)(simul::sky::SkyKeyframer si) |
 
+The graphics API-independent base class for atmospherics renderers, which draw distance fades, aerial perspective, fog and so on.
+  
+
 
 Base Classes
 ---
@@ -35,9 +39,6 @@ Base Classes
 
 Functions
 ---
-
-### <a name="BaseAtmosphericsRenderer"/> BaseAtmosphericsRenderer(simul::base::MemoryInterface m)
-The graphics API-independent base class for atmospherics renderers, which draw distance fades, aerial perspective, fog and so on.
 
 ### <a name="EnsureEffectsAreBuilt"/>void EnsureEffectsAreBuilt(simul::crossplatform::RenderPlatform r)
 Check that all shaders have been correctly compiled
