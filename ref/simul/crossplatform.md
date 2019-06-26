@@ -6,7 +6,7 @@ weight: 0
 namespace crossplatform
 ===
 
-| Include: | Platform/CrossPlatform/CameraInterface.h |
+| Include: | Platform/CrossPlatform/DemoOverlay.h |
 
 
 
@@ -27,12 +27,10 @@ Classes and Structures
 | class [Layout](crossplatform/layout) |  |
 | struct [LayoutDesc](crossplatform/layoutdesc) |  |
 | class [LensFlare](crossplatform/lensflare) |  |
-| class [Material](crossplatform/material) |  |
 | struct [MixedResolutionStruct](crossplatform/mixedresolutionstruct) |  |
 | struct [MouseCameraInput](crossplatform/mousecamerainput) |  |
 | struct [MouseCameraState](crossplatform/mousecamerastate) |  |
 | class [PlatformRendererInterface](crossplatform/platformrendererinterface) |  |
-| struct [PosColourVertex](crossplatform/poscolourvertex) |  |
 | class [Quaterniond](crossplatform/quaterniond) |  |
 | struct [RasterizerDesc](crossplatform/rasterizerdesc) |  |
 | class [RenderDelegater](crossplatform/renderdelegater) |  |
@@ -40,11 +38,13 @@ Classes and Structures
 | struct [ShaderResource](crossplatform/shaderresource) |  |
 | class [SphericalHarmonics](crossplatform/sphericalharmonics) |  |
 | struct [TargetsAndViewport](crossplatform/targetsandviewport) |  |
+| class [TextRenderer](crossplatform/textrenderer) |  |
 | struct [TextureCreate](crossplatform/texturecreate) |  |
 | class [TextureView](crossplatform/textureview) |  |
 | class [View](crossplatform/view) |  |
 | class [ViewManager](crossplatform/viewmanager) |  |
 | struct [Viewport](crossplatform/viewport) |  |
+| struct [ViewStruct](crossplatform/viewstruct) |  |
 
 Functions
 ---

@@ -6,7 +6,7 @@ weight: 0
 class BaseFramebuffer
 ===
 
-| Include: | Clouds/MixedResolutionCompositor.h |
+| Include: | Platform/CrossPlatform/View.h |
 
 
 
