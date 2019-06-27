@@ -34,6 +34,7 @@
 }
 .sidebar {
 	top: 90px;
+	overflow-y: scroll;
 }
 code, pre code {
 	font-size: 12px;
