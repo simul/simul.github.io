@@ -8,6 +8,9 @@ weight: 120
 
 Version HEAD
 ---
+Fri 28 Jun : Fix for Windows build. Amended ERRNO_CHECK and DebugBreak().  
+Fri 28 Jun : ERRNO_CHECK fixed.  
+Fri 28 Jun : Linux build fixes: Vulkan Sample and plugin now building.  
 Tue 18 Jun : Linux build fixes  
 Mon 17 Jun : Minor update to the snow pixel shader.  
 Fri 14 Jun : Minor fix to stop values that would break the water renderer from being passed to it  
@@ -105,8 +108,5 @@ Tue 12 Feb : Fix window lighting
 Mon 11 Feb : Minor Update to CopyToTargetDir.py.  
 Mon 11 Feb : CopyToTargetDir.py: uiLocation default is set as 'SIMUL+"/exe/"+PLATFORM+"/"+TOOLSET+"/"+CONFIGURATION'.  
 Mon 11 Feb : CopyToTargetDir.py: uiLocation default is set as 'SIMUL+"/exe/"+PLATFORM+"/"+TOOLSET+"/"+CONFIGURATION'.  
-Sun 10 Feb : Improve EffectPass frame counting to prevent shaders that aren't used every frame getting confused. Add numSamples to init for Vulkan external textures.  
-Sat 09 Feb : Hopeful fix to prevent from using 16 texture slots on PS4. All API's should stay under 16 for texture slots..  
-Fri 08 Feb : Hopeful fix to prevent from using 16 texture slots on PS4.  
 
 <hr>
