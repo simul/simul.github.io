@@ -33,6 +33,10 @@
 	{
 		display: inline-block;
 		float: left;
+	    background-color: silver;
+	    color: black;
+	    border: none;
+	    padding: 12px;
 	}
 }
 #banner-index {
