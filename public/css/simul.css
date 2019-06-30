@@ -15,11 +15,6 @@
   }
 }
 
-.content-container
-{
-	margin: 0px;
-}
-
 @media (min-width: 800px) {
 	.banner-image {
 		height: 55px;
