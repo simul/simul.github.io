@@ -33,6 +33,9 @@
 	{
 		display: inline-block;
 		float: left;
+	}
+	.options-bar button
+	{
 	    background-color: silver;
 	    color: black;
 	    border: none;
