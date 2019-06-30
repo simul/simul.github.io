@@ -49,11 +49,11 @@
   		var j;
   		for (j = 0; j < els.length; j++)
   		{ 
-  			el = els[j];
+  			var el = els[j];
         if(engines[i]==engine)
-          el.classList.style.display = "block";
+          el.style.display = "block";
         else
-          el.classList.style.display = "none";
+          el.style.display = "none";
   		}
   	}
   }
