@@ -31,18 +31,41 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 	<script>
+  function getCookie(cname)
+  {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++)
+    {
+      var c = ca[i];
+      while (c.charAt(0) == ' ')
+      {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0)
+      {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+  function setCookie(cname, cvalue)
+  {
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
 	function initChoices()
   {
 		var engine = getCookie("engine");
 		if (engine == "")
 		{
-			setCookie("engine", "ue4");
+      engine="ue4";
+			setCookie("username",engine);
 		}
 		chooseEngine(engine);
 	}
 	function chooseEngine(engine)
 	{
-    setCookie("engine", engine);
     var engines = ["ue4", "unity"];
     for (i = 0; i < engines.length; i++)
     {
@@ -57,6 +80,8 @@
           el.style.display = "none";
   		}
   	}
+    setCookie("engine="+engine);
   }
+  initChoices();
   </script>
 </head>
