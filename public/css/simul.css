@@ -23,6 +23,8 @@
 	{
 		width: 100%;
 		padding: 0px;
+		border:0px;
+		margin:0px;
 		background: silver;
 	}
 	.options-bar ul
@@ -35,7 +37,12 @@
 		float: left;
 	}
 }
-
+.content-and-options
+{
+	padding:0px;
+	border:0px;
+	margin:0px;
+}
 .options-bar button
 {
     background-color: silver;
