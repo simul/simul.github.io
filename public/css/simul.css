@@ -25,6 +25,10 @@
 		padding: 0px;
 		background: silver;
 	}
+	.options-bar ul
+	{
+		float: right;
+	}
 	.options-bar li
 	{
 		display: inline-block;
