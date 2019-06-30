@@ -1,6 +1,21 @@
 .custom-search {
 	min-height: 49px;
 }
+@media (min-width: 64em)
+{
+  .content-container
+  {
+    margin-left: 18rem;
+    margin-right: 0rem;
+  }
+  .content
+  {
+    margin-left: 2rem;
+    margin-right: 4rem;
+  }
+}
+
+
 @media (min-width: 800px) {
 	.banner-image {
 		height: 55px;
