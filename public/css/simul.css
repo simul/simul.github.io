@@ -25,6 +25,11 @@
 		padding: 0px;
 		background: silver;
 	}
+	.options-bar li
+	{
+		display: inline-block;
+		float: left;
+	}
 }
 #banner-index {
 	width: 100%;
