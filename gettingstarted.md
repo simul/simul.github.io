@@ -13,6 +13,7 @@ Previous: <a href="intro">Introduction</a>
 Unity
 -----
 To use the trueSKY Unity plugin, install the appropriate trueSkyUnityPlugin.unitypackage to your Unity project. For further instructions, head to [docs.simul.co/unity](http://docs.simul.co/unity).
+</div>
 
 <div class="ue4-specific">
 Unreal Engine 4
