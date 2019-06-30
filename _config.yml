@@ -29,3 +29,4 @@ kramdown:
   input:          GFM
   hard_wrap:      false
   footnote_nr:    1
+  parse_block_html: true
