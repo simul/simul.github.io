@@ -34,14 +34,26 @@
 		display: inline-block;
 		float: left;
 	}
-	.options-bar button
-	{
-	    background-color: silver;
-	    color: black;
-	    border: none;
-	    padding: 12px;
-	}
 }
+
+.options-bar button
+{
+    background-color: silver;
+    color: black;
+    border: none;
+    padding: 12px;
+}
+
+.ue4-specific
+{
+	background-color:#135d9c;
+}
+
+.unity-specific
+{
+	background-color:#139c88;
+}
+
 #banner-index {
 	width: 100%;
 	padding: 0px;
