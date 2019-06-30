@@ -15,6 +15,24 @@
   }
 }
 
+.options-bar
+{
+	width: 100%;
+	padding: 0px;
+	border:0px;
+	margin:0px;
+	background: silver;
+}
+.options-bar ul
+{
+	float: right;
+}
+.options-bar li
+{
+	display: inline-block;
+	float: left;
+}
+
 @media (min-width: 800px) {
 	.banner-image {
 		height: 55px;
@@ -32,23 +50,6 @@
 	.content-container {
 		top: 0px;
 		padding-top: 190px;
-	}
-	.options-bar
-	{
-		width: 100%;
-		padding: 0px;
-		border:0px;
-		margin:0px;
-		background: silver;
-	}
-	.options-bar ul
-	{
-		float: right;
-	}
-	.options-bar li
-	{
-		display: inline-block;
-		float: left;
 	}
 }
 
