@@ -45,16 +45,17 @@
     var engines = ["ue4", "unity"];
     for (i = 0; i < engines.length; i++)
     {
-		var els = document.getElementsByClassName(engine+"-specific");
-		var j;
-		for (j = 0; j < els.length; j++)
-		{ 
-			el = els[j];
-      if(engines[i]==engine)
-        el.classList.toggle("show");
-      else
-        el.classList.show(false);
-		}
-	}
+  		var els = document.getElementsByClassName(engines[i]+"-specific");
+  		var j;
+  		for (j = 0; j < els.length; j++)
+  		{ 
+  			el = els[j];
+        if(engines[i]==engine)
+          el.classList.style.display = "block";
+        else
+          el.classList.style.display = "none";
+  		}
+  	}
+  }
   </script>
 </head>
