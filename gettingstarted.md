@@ -30,7 +30,7 @@ To build the samples, use the solution file appropriate to your Visual Studio ve
 
 - SimulSamples_x64_VC11.sln
 
-![](/Images/SimulOverview.png)
+![](/images/SimulOverview.png)
 
 
 The two main elements to implementing trueSKY in a project are: an Environment object, which will encapsulate sky and cloud data;
