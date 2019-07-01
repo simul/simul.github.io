@@ -6,14 +6,19 @@ weight: 0
 class OvercastCallback
 ===
 
-| Include: | Sky/SkyKeyframer.h |
+| Include: | Sky/OvercastCallback.h |
 
+A virtual callback class for skies to get overcast information from cloud classes.
+  
 
 
 Functions
 ---
 
 | simul::sky::OvercastStruct | [GetOvercastData](#GetOvercastData)(double time) |
+
+A virtual callback class for skies to get overcast information from cloud classes.
+  
 
 
 Functions

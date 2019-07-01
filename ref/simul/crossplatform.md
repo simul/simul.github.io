@@ -6,7 +6,7 @@ weight: 0
 namespace crossplatform
 ===
 
-| Include: | Platform/CrossPlatform/CameraInterface.h |
+| Include: | Platform/CrossPlatform/DemoOverlay.h |
 
 
 
@@ -45,7 +45,6 @@ Classes and Structures
 | class [View](crossplatform/view) |  |
 | class [ViewManager](crossplatform/viewmanager) |  |
 | struct [Viewport](crossplatform/viewport) |  |
-| struct [ViewStruct](crossplatform/viewstruct) |  |
 
 Functions
 ---
