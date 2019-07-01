@@ -79,6 +79,15 @@
         else
           el.style.display = "none";
   		}
+      var els2 = document.getElementsByClassName(engines[i]);
+      for (j = 0; j < els.length; j++)
+      { 
+        var el = els[j];
+        if(engines[i]==engine)
+          el.style.backgroundColor  = "silver";
+        else
+          el.style.backgroundColor  = "gray";
+      }
   	}
     setCookie("engine",engine);
   }
