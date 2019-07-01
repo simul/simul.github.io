@@ -69,10 +69,10 @@ Call this after all timeable events in a frame have completed. It is acceptable
 to call EndFrame() without having first called StartFrame() - this has no effect.
 
 ### <a name="InvalidateDeviceObjects"/>void InvalidateDeviceObjects()
-Call this when the profiler is to be shut-down, or the device pointer has been lost or changed.
+Platform-dependent function called when uninitializing the profiler.
 
 ### <a name="RestoreDeviceObjects"/>void RestoreDeviceObjects(simul::crossplatform::RenderPlatform r)
-Call this when the profiler is to be initialized with a device pointer - must be done before use.
+Platform-dependent function called when initializing the profiler.
 
 ### <a name="StartFrame"/>void StartFrame(simul::crossplatform::DeviceContext deviceContext)
 Call this before any timeable events in a frame.

@@ -15,6 +15,8 @@ A class that stores star positions by declination, ascension and magnitude.
 Functions
 ---
 
+| int | [GetNumStars](#GetNumStars)() |
+| int | [GetNumVisibleStars](#GetNumVisibleStars)() |
 | simul::sky::Star  const & | [GetStar](#GetStar)(int i) |
 | simul::sky::Star  const & | [GetVisibleStar](#GetVisibleStar)(int i) |
 | void | [UseDefaultStars](#UseDefaultStars)() |
@@ -26,6 +28,12 @@ A class that stores star positions by declination, ascension and magnitude.
 
 Functions
 ---
+
+### <a name="GetNumStars"/>int GetNumStars()
+Get the total number of stars
+
+### <a name="GetNumVisibleStars"/>int GetNumVisibleStars()
+Get the total number of visible stars
 
 ### <a name="GetStar"/>simul::sky::Star  const & GetStar(int i)
 Get a star from the complete list

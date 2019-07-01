@@ -11,10 +11,13 @@
 
     {% include sidebar.html %}
 
-    <div class="content container">
-      {{ content }}
-    </div>
+	<div class="content-container">
+	    {% include options.html %}
 
+    	<div class="container content">
+	      {{ content }}
+        {% include footer.html %}
+      </div>
+    </div>
   </body>
-{% include footer.html %}
 </html>

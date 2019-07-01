@@ -20,10 +20,14 @@ Functions
 | int | [GetDefaultInt](#GetDefaultInt)(char name) |
 | float | [GetFloat](#GetFloat)(char name) |
 | int | [GetInt](#GetInt)(char name) |
+| simul::clouds::LightningProperties | [GetLightningProperties](#GetLightningProperties)(float game_time, float real_time, float base_km) |
+| simul::clouds::Strike | [GetStrike](#GetStrike)(int i) |
+| int | [GetTotalNumStrikes](#GetTotalNumStrikes)() |
 | bool | [HasFloat](#HasFloat)(char name) |
 | bool | [HasInt](#HasInt)(char name) |
 | void | [SetFloat](#SetFloat)(char name, float val) |
 | void | [SetInt](#SetInt)(char name, int val) |
+| int | [SpawnStrike](#SpawnStrike)(float time, vec3 startpos, vec3 endpos, float magnitude, vec3 colour, bool sh, float dur, float leader_dur) |
 | void | [Update](#Update)(float game_time, float real_time) |
 
 A structure representing a thunderstorm. See CloudKeyframer::AddStorm.
@@ -48,6 +52,15 @@ Returns the named property - see HasFloat().
 ### <a name="GetInt"/>int GetInt(char name)
 Returns the named property - see HasInt().
 
+### <a name="GetLightningProperties"/>simul::clouds::LightningProperties GetLightningProperties(float game_time, float real_time, float base_km)
+Get the properties of the currently active lightning strike
+
+### <a name="GetStrike"/>simul::clouds::Strike GetStrike(int i)
+Return the currently active strike, or return a default strike
+
+### <a name="GetTotalNumStrikes"/>int GetTotalNumStrikes()
+Get the approximate number of strikes that are generated over a day with the current settings
+
 ### <a name="HasFloat"/>bool HasFloat(char name)
 Returns true if the keyframe has the named property.
 
@@ -59,6 +72,9 @@ Set the named property - see HasFloat().
 
 ### <a name="SetInt"/>void SetInt(char name, int val)
 Set the named property - see HasFloat().
+
+### <a name="SpawnStrike"/>int SpawnStrike(float time, vec3 startpos, vec3 endpos, float magnitude, vec3 colour, bool sh, float dur, float leader_dur)
+Spawn a strike at a certain time with the given properties
 
 ### <a name="Update"/>void Update(float game_time, float real_time)
 Once per frame update to discard old strikes.

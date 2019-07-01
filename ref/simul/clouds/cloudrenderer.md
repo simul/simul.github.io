@@ -6,8 +6,9 @@ weight: 0
 class CloudRenderer
 ===
 
-| Include: | Clouds/BaseWeatherRenderer.h |
+| Include: | Clouds/CloudRenderer.h |
 
+Class for real-time volumetric cloud rendering.<br>
 
 
 Functions
@@ -15,7 +16,9 @@ Functions
 
 |  | [CloudRenderer](#CloudRenderer)(simul::clouds::Environment e, simul::base::MemoryInterface mem) |
 |  | [~CloudRenderer](#~CloudRenderer)() |
+| void | [DrawCrossSectionOnSphere](#DrawCrossSectionOnSphere)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Effect editEffect, simul::crossplatform::Texture t, vec2 texcOffset, vec3 origin, vec4 orient_quat, float qsize, float sph_rad, vec4 colour) |
 | void | [EnsureEffectsAreBuilt](#EnsureEffectsAreBuilt)(simul::crossplatform::RenderPlatform renderPlatform) |
+| simul::clouds::BaseGpuCloudGenerator * | [GetBaseGpuCloudGenerator](#GetBaseGpuCloudGenerator)() |
 | simul::clouds::CloudGeometryHelper * | [GetCloudGeometryHelper](#GetCloudGeometryHelper)(int view_id) |
 | simul::clouds::CloudRenderingOptions  & | [GetCloudRenderingOptions](#GetCloudRenderingOptions)() |
 | float  const * | [GetCloudScales](#GetCloudScales)() |
@@ -33,27 +36,20 @@ Functions
 | void | [PreRenderUpdate](#PreRenderUpdate)(simul::crossplatform::DeviceContext deviceContext, float real_time) |
 | void | [RecompileShaders](#RecompileShaders)() |
 | bool | [Render](#Render)(simul::crossplatform::DeviceContext deviceContext, float exposure, simul::clouds::TrueSkyRenderMode renderMode, simul::crossplatform::NearFarPass nearFarPass, simul::crossplatform::Texture depth_tex, simul::sky::ScatteringVolume scatteringVolume, bool write_alpha, vec4 viewportTextureRegionXYWH, simul::crossplatform::AmortizationStruct amortizationStruct, simul::clouds::TwoResFramebuffer fb, simul::sky::LocalFadeTextures localFadeTextures, simul::crossplatform::Texture ambientCubemap) |
+| void | [RenderCloudGrid](#RenderCloudGrid)(simul::crossplatform::DeviceContext deviceContext, simul::clouds::CloudKeyframer ck) |
 | void | [RenderCloudShadowTexture](#RenderCloudShadowTexture)(simul::crossplatform::DeviceContext deviceContext) |
-| void | [RenderCloudWindow](#RenderCloudWindow)(simul::crossplatform::DeviceContext deviceContext, simul::clouds::CloudWindowEditor cloudWindowEditor) |
+| void | [RenderCloudVolumes](#RenderCloudVolumes)(simul::crossplatform::DeviceContext deviceContext, simul::clouds::CloudKeyframer ck) |
 | void | [RenderCrossSections](#RenderCrossSections)(simul::crossplatform::DeviceContext context) |
 | void | [RenderQueries](#RenderQueries)(simul::crossplatform::DeviceContext deviceContext) |
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform renderPlatform) |
 | void | [SetEnableStorms](#SetEnableStorms)(bool s) |
 | void | [SetEnvironment](#SetEnvironment)(simul::clouds::Environment e) |
 | void | [SetExternalCloudTexture](#SetExternalCloudTexture)(simul::crossplatform::Texture) |
+| void | [SetMaxFadeAltitudeKm](#SetMaxFadeAltitudeKm)(float ma_km) |
+| void | [SetMaxFadeDistanceKm](#SetMaxFadeDistanceKm)(float dist_km) |
 | void | [SetMaxSlices](#SetMaxSlices)(int viewport_id, int maxs) |
 | void | [SetNoiseTextureProperties](#SetNoiseTextureProperties)(int size, int freq, int octaves, float persistence) |
 | void | [SetPointLight](#SetPointLight)(int id, vec3 pos, float min_radius, float max_radius, vec3 irradiance) |
-
-
-Functions
----
-
-### <a name="CloudRenderer"/> CloudRenderer(simul::clouds::Environment e, simul::base::MemoryInterface mem)
-Constructor: An external keyframer is provided, and an optional memory manager.
-
-### <a name="~CloudRenderer"/> ~CloudRenderer()
-Class for real-time volumetric cloud rendering.
 
 There should exist a "trueSKY space", where the origin(0,0,0 Cartesian) is at global mean sea level, and an arbitrary point on the Earth's surface.
 The Z axis points up, the X and Y axes are arbitrary (for reasons described below). To avoid singularities, this point, and the orientation of its axes
@@ -63,14 +59,32 @@ The Volume Window is a deformed cuboid, its upper and lower surfaces matching th
 
 This trueSKY space moves in steps equivalent to one horizontal texel. The function CloudRenderer::MoveCloudWindow(x,y) does this.
 This should be done when the chosen viewpoint (this is up to you) moves more than a texel in any horizontal direction. This way, we need only update the edges as the window moves.
+  
+
+
+Functions
+---
+
+### <a name="CloudRenderer"/> CloudRenderer(simul::clouds::Environment e, simul::base::MemoryInterface mem)
+Constructor: An external keyframer is provided, and an optional memory manager.
+
+### <a name="~CloudRenderer"/> ~CloudRenderer()
+Destructor
+
+### <a name="DrawCrossSectionOnSphere"/>void DrawCrossSectionOnSphere(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Effect editEffect, simul::crossplatform::Texture t, vec2 texcOffset, vec3 origin, vec4 orient_quat, float qsize, float sph_rad, vec4 colour)
+Show the cloud volume window on the lat-long sphere.
 
 ### <a name="EnsureEffectsAreBuilt"/>void EnsureEffectsAreBuilt(simul::crossplatform::RenderPlatform renderPlatform)
 If possible, build all shader effect variations.
+
+### <a name="GetBaseGpuCloudGenerator"/>simul::clouds::BaseGpuCloudGenerator * GetBaseGpuCloudGenerator()
+Get a pointer to the Cloud Generator
 
 ### <a name="GetCloudGeometryHelper"/>simul::clouds::CloudGeometryHelper * GetCloudGeometryHelper(int view_id)
 Returns a new geometry helper.
 
 ### <a name="GetCloudRenderingOptions"/>simul::clouds::CloudRenderingOptions  & GetCloudRenderingOptions()
+Get a pointer to the current cloud rendering options
 
 ### <a name="GetCloudScales"/>float  const * GetCloudScales()
 Get the xyz scales of the clouds in metres.
@@ -106,10 +120,10 @@ Call this Platform-dependent function when the 3D device has been lost.
 Return true if the camera is above the cloudbase altitude.
 
 ### <a name="MakeCloudShadowTexture"/>void MakeCloudShadowTexture()
-Get an API-dependent identifier for the clouds' 2D shadow.
+Get an API-dependent identifier for the cloud's 2D shadow.
 
 ### <a name="PreRenderUpdate"/>void PreRenderUpdate(simul::crossplatform::DeviceContext deviceContext, float real_time)
-Platform-dependent per-frame update, called by BaseWeatherRenderer.
+Once per-frame update. Do this before any rendering each frame. Called by BaseWeatherRenderer.
 
 ### <a name="RecompileShaders"/>void RecompileShaders()
 Platform-dependent function to reload the shaders - only use this for debug purposes.
@@ -117,14 +131,17 @@ Platform-dependent function to reload the shaders - only use this for debug purp
 ### <a name="Render"/>bool Render(simul::crossplatform::DeviceContext deviceContext, float exposure, simul::clouds::TrueSkyRenderMode renderMode, simul::crossplatform::NearFarPass nearFarPass, simul::crossplatform::Texture depth_tex, simul::sky::ScatteringVolume scatteringVolume, bool write_alpha, vec4 viewportTextureRegionXYWH, simul::crossplatform::AmortizationStruct amortizationStruct, simul::clouds::TwoResFramebuffer fb, simul::sky::LocalFadeTextures localFadeTextures, simul::crossplatform::Texture ambientCubemap)
 Platform-dependent render function.
 
+### <a name="RenderCloudGrid"/>void RenderCloudGrid(simul::crossplatform::DeviceContext deviceContext, simul::clouds::CloudKeyframer ck)
+Render the cloud grid for debugging purposes
+
 ### <a name="RenderCloudShadowTexture"/>void RenderCloudShadowTexture(simul::crossplatform::DeviceContext deviceContext)
 The cloud shadow texture:
 Centred on the viewer
 Aligned to the sun.
 Output is km in front of or behind the view pos where shadow starts
 
-### <a name="RenderCloudWindow"/>void RenderCloudWindow(simul::crossplatform::DeviceContext deviceContext, simul::clouds::CloudWindowEditor cloudWindowEditor)
-Show the cloud volume window on the lat-long sphere.
+### <a name="RenderCloudVolumes"/>void RenderCloudVolumes(simul::crossplatform::DeviceContext deviceContext, simul::clouds::CloudKeyframer ck)
+Render the cloud volumes for debugging purposes
 
 ### <a name="RenderCrossSections"/>void RenderCrossSections(simul::crossplatform::DeviceContext context)
 Show the cloud volumes onscreen by cross section.
@@ -144,6 +161,12 @@ Set the sky interface.
 ### <a name="SetExternalCloudTexture"/>void SetExternalCloudTexture(simul::crossplatform::Texture)
 Where we create the main volume texture for rendering elsewhere, we pass it in here.
 This permits ESRAM on XboxOne for example, in a game engine.
+
+### <a name="SetMaxFadeAltitudeKm"/>void SetMaxFadeAltitudeKm(float ma_km)
+Altitude for fade texture lookups:
+
+### <a name="SetMaxFadeDistanceKm"/>void SetMaxFadeDistanceKm(float dist_km)
+Distance for fade texture lookups:
 
 ### <a name="SetMaxSlices"/>void SetMaxSlices(int viewport_id, int maxs)
 Cloud rendering detail is determined by the number of slices. If not set the value from the CloudKeyframer will be used (GetDefaultNumSlices), but each viewport id can have a separate setting.

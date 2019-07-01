@@ -6,7 +6,7 @@ weight: 0
 struct ExportLightningStrike
 ===
 
-| Include: | PlugIns/TrueSkyPluginRender/PluginTrueSkyRenderer.h |
+| Include: | Clouds/LightningRenderInterface.h |
 
 
 

@@ -20,6 +20,7 @@ Functions
 | void | [End](#End)(simul::crossplatform::DeviceContext deviceContext) |
 | void | [EndFrame](#EndFrame)(simul::crossplatform::DeviceContext deviceContext) |
 | char  const * | [GetDebugText](#GetDebugText)(simul::base::TextStyle st) |
+| void | [InvalidateDeviceObjects](#InvalidateDeviceObjects)() |
 | void | [StartFrame](#StartFrame)(simul::crossplatform::DeviceContext deviceContext) |
 
 A virtual interface base class for GPU performance measurement.
@@ -44,6 +45,9 @@ Call this at the end of the frame to prepare the data to be read.
 
 ### <a name="GetDebugText"/>char  const * GetDebugText(simul::base::TextStyle st)
 Get the timing text per-frame.
+
+### <a name="InvalidateDeviceObjects"/>void InvalidateDeviceObjects()
+Platform-dependent function called when uninitializing the profiler.
 
 ### <a name="StartFrame"/>void StartFrame(simul::crossplatform::DeviceContext deviceContext)
 Call this at the start of the frame to reset values.

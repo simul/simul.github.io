@@ -57,13 +57,13 @@ null if it fails, else the view.
 Gets the views.
 
 ### <a name="InvalidateDeviceObjects"/>void InvalidateDeviceObjects()
-Invalidate device objects.
+Platform-dependent function called when uninitializing the view manager.
 
 ### <a name="RemoveView"/>void RemoveView(int view_id)
 Removes the view.
 
 ### <a name="RestoreDeviceObjects"/>void RestoreDeviceObjects(simul::crossplatform::RenderPlatform renderPlatform)
-Restore the device objects.
+Platform-dependent function called when initializing the view manager.
 
 Fields
 ---

@@ -8,8 +8,6 @@ class Quaternion
 
 | Include: | Math/Quaternion.h |
 
-Quaternion class to represent rotations.
-  
 
 
 Functions
@@ -17,9 +15,6 @@ Functions
 
 | simul::math::Quaternion | [operator!](#operator!)() |
 | simul::math::Quaternion  & | [operator=](#operator=)(simul::math::Quaternion q) |
-
-Quaternion class to represent rotations.
-  
 
 
 Functions
@@ -31,3 +26,8 @@ in the opposite direction.
 
 ### <a name="operator="/>simul::math::Quaternion  & operator=(simul::math::Quaternion q)
 Assignment operator. Set this Quaternion equal to q.
+
+Fields
+---
+
+**x**  Quaternion class to represent rotations.

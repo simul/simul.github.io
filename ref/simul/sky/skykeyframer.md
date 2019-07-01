@@ -6,7 +6,7 @@ weight: 0
 class SkyKeyframer
 ===
 
-| Include: | Clouds/BaseWeatherRenderer.h |
+| Include: | Sky/SkyKeyframer.h |
 
 
 [simul::base::Referenced](../base/referenced)
@@ -20,11 +20,17 @@ Functions
 | void | [CalcSunIrradianceAtEarth](#CalcSunIrradianceAtEarth)() |
 | void | [ClearHighlightConstellations](#ClearHighlightConstellations)() |
 | void | [DaytimeToClockTime](#DaytimeToClockTime)(float t, int d, int h, int m, int s, int ms) |
+| void | [DeleteKeyframe](#DeleteKeyframe)(int i) |
 | float | [GetAltitudeTexCoord](#GetAltitudeTexCoord)(float h_km) |
+| vec3 | [GetDirectionToMoon](#GetDirectionToMoon)(int keyframe) |
+| vec3 | [GetDirectionToSun](#GetDirectionToSun)(int keyframe) |
+| float | [GetFloat](#GetFloat)(char name, simul::base::Variant params) |
 | void | [GetGpuSkyParameters](#GetGpuSkyParameters)(simul::sky::GpuSkyParameters p, simul::sky::GpuSkyAtmosphereParameters a, simul::sky::GpuSkyInfraredParameters ir, int index) |
 | void | [GetGpuSkyParameters](#GetGpuSkyParameters)(simul::sky::GpuSkyParameters p, simul::sky::GpuSkyAtmosphereParameters a, simul::sky::GpuSkyInfraredParameters ir, simul::sky::SkyKeyframe K, float daytime, float complete) |
 | std::set  const | [GetHighlightConstellations](#GetHighlightConstellations)() |
 | float | [GetHorizonElevation](#GetHorizonElevation)(float h_km) |
+| int | [GetInt](#GetInt)(char name, simul::base::Variant params) |
+| simul::sky::SkyKeyframe * | [GetInterpolatedKeyframe](#GetInterpolatedKeyframe)() |
 | simul::sky::LightingState  const & | [GetLightingState](#GetLightingState)() |
 | float | [GetMultiplier](#GetMultiplier)(double t) |
 | simul::sky::SkyKeyframe * | [GetNextModifiableKeyframe](#GetNextModifiableKeyframe)() |
@@ -33,6 +39,11 @@ Functions
 | bool | [HasFloat](#HasFloat)(char name) |
 | bool | [HasInt](#HasInt)(char name) |
 | void | [HighlightConstellation](#HighlightConstellation)(char) |
+| void | [OverrideMoonDirection](#OverrideMoonDirection)(float az, float el) |
+| void | [OverrideSunDirection](#OverrideSunDirection)(float az, float el) |
+| void | [Set](#Set)(char name, simul::base::Variant params) |
+| void | [SetFloat](#SetFloat)(char name, float val) |
+| void | [SetInt](#SetInt)(char name, int val) |
 | void | [SetStartDate](#SetStartDate)(int y, int m, int d) |
 | void | [SetUniformKeyframes](#SetUniformKeyframes)(int Steps, float range) |
 | void | [UnHighlightConstellation](#UnHighlightConstellation)(char) |
@@ -65,8 +76,20 @@ Clear the highlighted constellations
 ### <a name="DaytimeToClockTime"/>void DaytimeToClockTime(float t, int d, int h, int m, int s, int ms)
 Convert a floating-point daytime into hour, minute, second and milliseconds.
 
+### <a name="DeleteKeyframe"/>void DeleteKeyframe(int i)
+Delete a skykeyframe with the given ID
+
 ### <a name="GetAltitudeTexCoord"/>float GetAltitudeTexCoord(float h_km)
 Returns the texture coordinate for the given altitude - constant per-frame.
+
+### <a name="GetDirectionToMoon"/>vec3 GetDirectionToMoon(int keyframe)
+Get the direction the moon represented as a vector
+
+### <a name="GetDirectionToSun"/>vec3 GetDirectionToSun(int keyframe)
+Get the direction the sun represented as a vector
+
+### <a name="GetFloat"/>float GetFloat(char name, simul::base::Variant params)
+Get a float with the given, case-insensitive, name
 
 ### <a name="GetGpuSkyParameters"/>void GetGpuSkyParameters(simul::sky::GpuSkyParameters p, simul::sky::GpuSkyAtmosphereParameters a, simul::sky::GpuSkyInfraredParameters ir, int index)
 Get the GPU sky parameters corresponding to the given subdivision triplet index, and factor in eclipses and brightness power modifiers.
@@ -79,6 +102,13 @@ Get the set of highlighted constellations
 
 ### <a name="GetHorizonElevation"/>float GetHorizonElevation(float h_km)
 The elevation of the horizon at this altitude
+
+### <a name="GetInt"/>int GetInt(char name, simul::base::Variant params)
+Get an int with the given, case-insensitive, name
+
+### <a name="GetInterpolatedKeyframe"/>simul::sky::SkyKeyframe * GetInterpolatedKeyframe()
+Get the current interpolatedkeyframe, which holds the values interpolated from the two surrounding keyframes at
+any given time.
 
 ### <a name="GetLightingState"/>simul::sky::LightingState  const & GetLightingState()
 Get the per-frame cached lighting state
@@ -104,29 +134,66 @@ Return true if the keyframer has the floating point value with the given, case-i
 These are the properties the SkyKeyframer has:
 - LatitudeRadians
 - LongitudeRadians
+- LatitudeDegrees
+- LongitudeDegrees
 - MaxStarMagnitude
 - StarBrightness
+- MinimumStarPixelSize
 - BackgroundBrightness
 - MaxDistanceKm
 - MaxAltitudeKm
-- OvercastEffectStrength
+- atmosphereThicknessKm
+- planetRadiusKm
+- MaxSunRadiance
+- BrightnessPower
+- OzoneStrength
+- Emissivity
+- MoonAlbedo
 - TimezoneHours
 - SunRadiusArcMinutes
 - MoonRadiusArcMinutes
+- sunazimuth
+- sunelevation
+- moonazimuth
+- moonelevation
+- sunazimuthdegrees
+- sunelevationdegrees
+- moonazimuthdegrees
+- moonelevationdegrees
+- sunirradiance
+- colourwavelengthsnm
 
 
 ### <a name="HasInt"/>bool HasInt(char name)
 Return true if the keyframer has an integer or true/false value with the given, case-insensitive, name; return false otherwise. 
 
 These are the properties the SkyKeyframer has:
-- StartDayNumber
-- NumAltitudes
-- NumElevations
-- NumDistances
+- StoreAsColours
+- AutoMie
+- numColourAltitudes
+- numColourElevations
+- numColourDistances
+- AutomaticSunPosition
+- AutomaticMoonPosition
 
 
 ### <a name="HighlightConstellation"/>void HighlightConstellation(char)
 Highlight the named constellation in debug views:
+
+### <a name="OverrideMoonDirection"/>void OverrideMoonDirection(float az, float el)
+Set the current direction of the moon by it's Azimuth and Elevation
+
+### <a name="OverrideSunDirection"/>void OverrideSunDirection(float az, float el)
+Set the current direction of the sun by it's Azimuth and Elevation
+
+### <a name="Set"/>void Set(char name, simul::base::Variant params)
+Set a value with the given enum
+
+### <a name="SetFloat"/>void SetFloat(char name, float val)
+Set a float with the given, case-insensitive, name
+
+### <a name="SetInt"/>void SetInt(char name, int val)
+Set an int with the given, case-insensitive, name
 
 ### <a name="SetStartDate"/>void SetStartDate(int y, int m, int d)
 Set the date for time=0.

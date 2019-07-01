@@ -33,18 +33,18 @@ Functions
 ---
 
 ### <a name="Allocate"/>void * Allocate(size_t nbytes)
-Allocate nbytesbytes of memory and return a pointer to them.
+Allocate nbytes bytes of memory and return a pointer to them.
 Reimplement this in the derived class.
 
 ### <a name="Allocate"/>void * Allocate(size_t nbytes, size_t align)
-Allocate nbytesbytes of memory, aligned to alignand return a pointer to them. for unaligned, use align=0.
+Allocate nbytes bytes of memory, aligned to align and return a pointer to them. for unaligned, use align=0.
 Reimplement this in the derived class.
 
 ### <a name="AllocateTracked"/>void * AllocateTracked(size_t, size_t, char)
 Reimplement this if needed in the derived class. The function_name can be ignored if you are not tracking memory allocations.
 
 ### <a name="AllocateVideoMemory"/>void * AllocateVideoMemory(size_t nbytes, size_t align)
-Allocate nbytesbytes of memory, aligned to alignand return a pointer to them. for unaligned, use align=0.
+Allocate nbytes bytes of memory, aligned to align and return a pointer to them. for unaligned, use align=0.
 Reimplement this in the derived class.
 
 ### <a name="AllocateVideoMemoryTracked"/>void * AllocateVideoMemoryTracked(size_t, size_t, char)

@@ -6,20 +6,20 @@ weight: 0
 class PlatformStructuredBuffer
 ===
 
-| Include: | Platform/CrossPlatform/RenderPlatform.h |
+| Include: | Platform/CrossPlatform/DeviceContext.h |
 
 
 
 Functions
 ---
 
-| void | [ActualApply](#ActualApply)(simul::crossplatform::DeviceContext, simul::crossplatform::EffectPass, int) |
+| void | [ActualApply](#ActualApply)(simul::crossplatform::DeviceContext, simul::crossplatform::EffectPass, int, bool) |
 
 
 Functions
 ---
 
-### <a name="ActualApply"/>void ActualApply(simul::crossplatform::DeviceContext, simul::crossplatform::EffectPass, int)
+### <a name="ActualApply"/>void ActualApply(simul::crossplatform::DeviceContext, simul::crossplatform::EffectPass, int, bool)
 For RenderPlatform's use only: do not call.
 
 Fields

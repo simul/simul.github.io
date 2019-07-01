@@ -6,7 +6,7 @@ weight: 0
 class Effect
 ===
 
-| Include: | Platform/CrossPlatform/View.h |
+| Include: | Platform/CrossPlatform/DeviceContext.h |
 
 
 
@@ -17,6 +17,7 @@ Functions
 | void | [Apply](#Apply)(simul::crossplatform::DeviceContext deviceContext, char tech_name, int pass) |
 | void | [Apply](#Apply)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::EffectTechnique effectTechnique, int pass) |
 | void | [Apply](#Apply)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::EffectTechnique effectTechnique, char pass) |
+| void | [EnsureEffect](#EnsureEffect)(simul::crossplatform::RenderPlatform r, char filename_utf8) |
 | simul::crossplatform::SamplerStateAssignmentMap  & | [GetSamplers](#GetSamplers)() |
 | void | [Reapply](#Reapply)(simul::crossplatform::DeviceContext deviceContext) |
 | void | [SetConstantBuffer](#SetConstantBuffer)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::ConstantBufferBase s) |
@@ -43,6 +44,9 @@ Activate the shader. Unapply must be called after rendering is done.
 
 ### <a name="Apply"/>void Apply(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::EffectTechnique effectTechnique, char pass)
 Activate the shader. Unapply must be called after rendering is done.
+
+### <a name="EnsureEffect"/>void EnsureEffect(simul::crossplatform::RenderPlatform r, char filename_utf8)
+Ensure it's built and up-to-date.
 
 ### <a name="GetSamplers"/>simul::crossplatform::SamplerStateAssignmentMap  & GetSamplers()
 Map of sampler states used by this effect

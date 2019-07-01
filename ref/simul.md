@@ -12,6 +12,4 @@ namespace simul
 
 | [namespace base](simul/base) | Base is the base library, containing simple data structures, macros and other useful things.<br> |
 | [namespace clouds](simul/clouds) | The namespace corresponding to the Clouds module.<br> |
-| [namespace geometry](simul/geometry) | Geometry is a small library that contains orientation and reference frame classes.<br> |
-| [namespace sky](simul/sky) |  |
 

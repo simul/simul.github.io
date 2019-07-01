@@ -73,7 +73,7 @@ Get the texture for the colour buffer target.
 Get the dimension of the surface
 
 ### <a name="InvalidateDeviceObjects"/>void InvalidateDeviceObjects()
-Call this when the API-dependent device has been lost or is shutting down.
+Platform-dependent function called when uninitializing the framebuffer.
 
 ### <a name="IsColourActive"/>bool IsColourActive()
 Return true if the framebuffer's colour buffer has been activated and not yet deactivated.
@@ -85,7 +85,7 @@ Return true if the framebuffer's depth buffer has been activated and not yet dea
 Return true if the API-dependent objects have been updated to match the properties.
 
 ### <a name="RestoreDeviceObjects"/>void RestoreDeviceObjects(simul::crossplatform::RenderPlatform r)
-Call this when the API-dependent device has been created.
+Platform-dependent function called when initializing the framebuffer.
 
 ### <a name="SetAsCubemap"/>void SetAsCubemap(int face_size, int num_mips, simul::crossplatform::PixelFormat f)
 Set this to be a cubemap framebuffer, so that its texture object will be a cubemap. Equivalent to SetWidthAndHeight.

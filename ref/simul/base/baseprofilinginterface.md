@@ -31,7 +31,7 @@ Functions
 ### <a name="GetDebugText"/>char  const * GetDebugText(simul::base::TextStyle st)
 Gets the profiling report as text.
 
-stDetermines if the text should be returned as HTML, including colour formatting.
+Determinesif the text should be returned as HTML, including colour formatting.
 
 Return
 ---

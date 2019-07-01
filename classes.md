@@ -73,7 +73,7 @@ Then to render:
 ~~~~~~~~~~~~~~~{.cpp}
 void Render(ID3D11DeviceContext* pContext)
 {
-simul::crossplatform::DeviceContext     deviceContext;
+simul::crossplatform::DeviceContext                     deviceContext;
 deviceContext.platform_context                          =pContext;
 deviceContext.renderPlatform                            =&renderPlatformDx11;
 deviceContext.viewStruct.view_id                        =view_id;

@@ -28,7 +28,7 @@ Functions
 | unsigned long long | [GetFence](#GetFence)() |
 | simul::crossplatform::PixelFormat | [GetFormat](#GetFormat)() |
 | int | [GetSampleCount](#GetSampleCount)() |
-| void | [InitFromExternalTexture2D](#InitFromExternalTexture2D)(simul::crossplatform::RenderPlatform renderPlatform, void t, void srv, int w, int l, simul::crossplatform::PixelFormat f, bool make_rt, bool setDepthStencil, bool need_srv) |
+| void | [InitFromExternalTexture2D](#InitFromExternalTexture2D)(simul::crossplatform::RenderPlatform renderPlatform, void t, void srv, int w, int l, simul::crossplatform::PixelFormat f, bool make_rt, bool setDepthStencil, bool need_srv, int numOfSamples) |
 | bool | [IsDepthStencil](#IsDepthStencil)() |
 | bool | [IsUnfenceable](#IsUnfenceable)() |
 | void | [MoveToFastRAM](#MoveToFastRAM)() |
@@ -89,7 +89,7 @@ Get the crossplatform pixel format.
 If the texture is multisampled, this returns the samples per texel. Zero means it is not an MS texture,
 while 1 means it is MS, even though the sample count is unity.
 
-### <a name="InitFromExternalTexture2D"/>void InitFromExternalTexture2D(simul::crossplatform::RenderPlatform renderPlatform, void t, void srv, int w, int l, simul::crossplatform::PixelFormat f, bool make_rt, bool setDepthStencil, bool need_srv)
+### <a name="InitFromExternalTexture2D"/>void InitFromExternalTexture2D(simul::crossplatform::RenderPlatform renderPlatform, void t, void srv, int w, int l, simul::crossplatform::PixelFormat f, bool make_rt, bool setDepthStencil, bool need_srv, int numOfSamples)
 Initialize this object as a wrapper around a native, platform-specific texture. The interpretations of t and srv are platform-dependent.
 
 ### <a name="IsDepthStencil"/>bool IsDepthStencil()

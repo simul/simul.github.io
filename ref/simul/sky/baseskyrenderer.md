@@ -6,7 +6,7 @@ weight: 0
 class BaseSkyRenderer
 ===
 
-| Include: | Clouds/BaseWeatherRenderer.h |
+| Include: | Sky/BaseSkyRenderer.h |
 
 
 [simul::base::Referenced](../base/referenced)
@@ -19,8 +19,10 @@ Functions
 | float | [CalcSunOcclusion](#CalcSunOcclusion)(simul::crossplatform::DeviceContext, float cloud_occlusion) |
 | simul::sky::BaseGpuSkyGenerator * | [CreateGpuSkyGenerator](#CreateGpuSkyGenerator)(simul::base::MemoryInterface m) |
 | void | [EnableMoon](#EnableMoon)(bool val) |
+| void | [EnsureEffectsAreBuilt](#EnsureEffectsAreBuilt)(simul::crossplatform::RenderPlatform r) |
 | void | [EnsureTexturesAreUpToDate](#EnsureTexturesAreUpToDate)(simul::crossplatform::DeviceContext deviceContext) |
 | simul::sky::float4 | [GetAmbientColour](#GetAmbientColour)(float alt_km) |
+| simul::sky::BaseGpuSkyGenerator * | [GetBaseGpuSkyGenerator](#GetBaseGpuSkyGenerator)() |
 | simul::sky::BaseSkyInterface * | [GetBaseSkyInterface](#GetBaseSkyInterface)() |
 | simul::crossplatform::Texture * | [GetIlluminationTexture](#GetIlluminationTexture)() |
 | simul::sky::float4 | [GetLightColour](#GetLightColour)(float alt_km) |
@@ -32,12 +34,14 @@ Functions
 | float | [GetSunOcclusion](#GetSunOcclusion)() |
 | void | [InvalidateDeviceObjects](#InvalidateDeviceObjects)() |
 | bool | [IsMoonEnabled](#IsMoonEnabled)() |
+| void | [PreRenderUpdate](#PreRenderUpdate)(simul::crossplatform::DeviceContext deviceContext) |
 | void | [RecompileShaders](#RecompileShaders)() |
 | void | [ReloadTextures](#ReloadTextures)() |
 | bool | [Render2DFades](#Render2DFades)(simul::crossplatform::DeviceContext deviceContext, int numDist, int numElev) |
 | void | [RenderCelestialDisplay](#RenderCelestialDisplay)(simul::crossplatform::DeviceContext context, float y_heading) |
 | bool | [RenderFades](#RenderFades)(simul::crossplatform::DeviceContext deviceContext, int view_id, int x, int y, int w, int h) |
 | void | [RenderIlluminationBuffer](#RenderIlluminationBuffer)(simul::crossplatform::DeviceContext deviceContext) |
+| void | [RenderLightingQueryResultsText](#RenderLightingQueryResultsText)(simul::crossplatform::DeviceContext deviceContext, int x, int y) |
 | void | [RenderPlanet](#RenderPlanet)(simul::crossplatform::DeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture tex, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float rad, float dir, float colr, bool do_lighting, float exposure) |
 | void | [RenderPlanets](#RenderPlanets)(simul::crossplatform::DeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float exposure) |
 | bool | [RenderPointStars](#RenderPointStars)(simul::crossplatform::DeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float, float) |
@@ -85,11 +89,17 @@ Override this to create a custom generator.
 The moon is distinct from other planets because its position is taken from the skyInterface. When the moon is enabled, it will be added
 to the planets list and updated automatically.
 
+### <a name="EnsureEffectsAreBuilt"/>void EnsureEffectsAreBuilt(simul::crossplatform::RenderPlatform r)
+Check that all shaders have been correctly compiled
+
 ### <a name="EnsureTexturesAreUpToDate"/>void EnsureTexturesAreUpToDate(simul::crossplatform::DeviceContext deviceContext)
 Maintains the per-frame textures.
 
 ### <a name="GetAmbientColour"/>simul::sky::float4 GetAmbientColour(float alt_km)
 Returns the current ambient light colour as a float4 (x=red, y=green, z=blue, w unused), i.e. sunlight or moonlight. This is a high-dynamic range value.
+
+### <a name="GetBaseGpuSkyGenerator"/>simul::sky::BaseGpuSkyGenerator * GetBaseGpuSkyGenerator()
+Get a pointer to the Sky Generator.
 
 ### <a name="GetBaseSkyInterface"/>simul::sky::BaseSkyInterface * GetBaseSkyInterface()
 Get the interface to the sky object so that other classes can use it for lighting, distance fades etc.
@@ -125,6 +135,9 @@ Platform-dependent function called when uninitializing the sky renderer.
 ### <a name="IsMoonEnabled"/>bool IsMoonEnabled()
 Is the moon being shown?
 
+### <a name="PreRenderUpdate"/>void PreRenderUpdate(simul::crossplatform::DeviceContext deviceContext)
+Once per-frame update. Do this before any rendering each frame.
+
 ### <a name="RecompileShaders"/>void RecompileShaders()
 Platform-dependent function to reload the shaders - only use this for debug purposes.
 
@@ -143,6 +156,9 @@ Draw the 2D fades to screen for debugging.
 ### <a name="RenderIlluminationBuffer"/>void RenderIlluminationBuffer(simul::crossplatform::DeviceContext deviceContext)
 Perform any necessary updates to the renderer's textures - particularly the loss, inscatter and skylight textures -
 at the start of a frame. This is called from simul::clouds::BaseWeatherRenderer::PreRenderUpdate().
+
+### <a name="RenderLightingQueryResultsText"/>void RenderLightingQueryResultsText(simul::crossplatform::DeviceContext deviceContext, int x, int y)
+Display LightingQueryResults to screen for debugging
 
 ### <a name="RenderPlanet"/>void RenderPlanet(simul::crossplatform::DeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture tex, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float rad, float dir, float colr, bool do_lighting, float exposure)
 This is called by RenderPlanets to render a planet with texture tex, angular radius radradians, in direction dir(x,y,z), with colour colr.

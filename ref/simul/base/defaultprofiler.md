@@ -28,7 +28,7 @@ SIMUL_COMBINED_PROFILE_END(deviceContext)
 
 * At frame-end:
 
-SIMUL_COMBINED_PROFILE_END(deviceContext)
+SIMUL_COMBINED_PROFILE_ENDFRAME(deviceContext)
 
 * To obtain the profiling results
 
@@ -68,7 +68,7 @@ SIMUL_COMBINED_PROFILE_END(deviceContext)
 
 * At frame-end:
 
-SIMUL_COMBINED_PROFILE_END(deviceContext)
+SIMUL_COMBINED_PROFILE_ENDFRAME(deviceContext)
 
 * To obtain the profiling results
 

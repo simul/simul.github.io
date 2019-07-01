@@ -36,6 +36,4 @@ Fields
 
 **invViewProj**  < The projection matrix, row-major.
 
-**cam_pos**  /math::Matrix4x4 modelView;
-
 **depthTextureStyle**  < THe viewing frustum, calculated from the proj matrix and stored for convenience using simul::crossplatform::GetFrustumFromProjectionMatrix.

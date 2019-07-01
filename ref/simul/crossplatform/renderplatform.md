@@ -6,7 +6,7 @@ weight: 0
 class RenderPlatform
 ===
 
-| Include: | Platform/CrossPlatform/GpuProfiler.h |
+| Include: | Platform/CrossPlatform/DemoOverlay.h |
 
 
 
@@ -18,6 +18,7 @@ Functions
 | void | [BeginEvent](#BeginEvent)(simul::crossplatform::DeviceContext deviceContext, char name) |
 | void | [Clear](#Clear)(simul::crossplatform::DeviceContext deviceContext, vec4 colour_rgba) |
 | void | [ClearTexture](#ClearTexture)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture texture, vec4 colour) |
+| void | [CopyTexture](#CopyTexture)(simul::crossplatform::DeviceContext, simul::crossplatform::Texture, simul::crossplatform::Texture) |
 | simul::crossplatform::Buffer * | [CreateBuffer](#CreateBuffer)() |
 | simul::crossplatform::Effect * | [CreateEffect](#CreateEffect)(char filename_utf8) |
 | simul::crossplatform::Effect * | [CreateEffect](#CreateEffect)() |
@@ -32,6 +33,7 @@ Functions
 | simul::crossplatform::SamplerState * | [CreateSamplerState](#CreateSamplerState)(simul::crossplatform::SamplerStateDesc) |
 | simul::crossplatform::Shader * | [CreateShader](#CreateShader)() |
 | simul::crossplatform::Texture * | [CreateTexture](#CreateTexture)(char lFileNameUtf8) |
+| void | [Destroy](#Destroy)(simul::crossplatform::Effect e) |
 | void | [DispatchCompute](#DispatchCompute)(simul::crossplatform::DeviceContext deviceContext, int w, int l, int d) |
 | void | [Draw](#Draw)(simul::crossplatform::DeviceContext deviceContext, int num_verts, int start_vert) |
 | void | [DrawCircle](#DrawCircle)(simul::crossplatform::DeviceContext deviceContext, float dir, float rads, float colr, bool fill) |
@@ -101,6 +103,9 @@ Clear the current render target (i.e. the screen). In most API's this is simply 
 ### <a name="ClearTexture"/>void ClearTexture(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture texture, vec4 colour)
 Clear the contents of the given texture to the specified colour
 
+### <a name="CopyTexture"/>void CopyTexture(simul::crossplatform::DeviceContext, simul::crossplatform::Texture, simul::crossplatform::Texture)
+Copy a given texture to another.
+
 ### <a name="CreateBuffer"/>simul::crossplatform::Buffer * CreateBuffer()
 Create a platform-specific buffer instance - e.g. vertex buffers, index buffers etc.
 
@@ -144,6 +149,9 @@ Create a shader.
 
 ### <a name="CreateTexture"/>simul::crossplatform::Texture * CreateTexture(char lFileNameUtf8)
 Create a platform-specific texture instance.
+
+### <a name="Destroy"/>void Destroy(simul::crossplatform::Effect e)
+Destroy the effect when it is safe to do so. The pointer can now be reassigned or nulled.
 
 ### <a name="DispatchCompute"/>void DispatchCompute(simul::crossplatform::DeviceContext deviceContext, int w, int l, int d)
 Execute the currently applied compute shader.
@@ -210,7 +218,7 @@ Returns the stack of shader source paths.
 Get the viewport at the given index.
 
 ### <a name="InvalidateDeviceObjects"/>void InvalidateDeviceObjects()
-Call this once, when the 3d graphics device object is being shut down.
+Platform-dependent function called when uninitializing the Render Platform.
 
 ### <a name="PopRenderTargets"/>void PopRenderTargets(simul::crossplatform::DeviceContext deviceContext)
 Restore rendertargets and viewports from the top of the stack.
@@ -231,7 +239,7 @@ Push the given file path onto the shader path stack.
 Push the given file path onto the texture path stack.
 
 ### <a name="RecompileShaders"/>void RecompileShaders()
-Optional - call this to recompile the standard shaders.
+Platform-dependent function to reload the shaders - only use this for debug purposes.
 
 ### <a name="Resolve"/>void Resolve(simul::crossplatform::DeviceContext, simul::crossplatform::Texture, simul::crossplatform::Texture)
 Resolve an MSAA texture to a normal texture.
@@ -240,7 +248,7 @@ Resolve an MSAA texture to a normal texture.
 Makes sure the resource is in the required state specified by transition.
 
 ### <a name="RestoreDeviceObjects"/>void RestoreDeviceObjects(void)
-Call this once, when the 3D graphics device has been initialized, and pass the API-specific device pointer/identifier.
+Platform-dependent function called when initializing the Render Platform.
 
 ### <a name="RestoreRenderState"/>void RestoreRenderState(simul::crossplatform::DeviceContext)
 Called to restore the render state previously stored with StoreRenderState. There must be exactly one call of RestoreRenderState

@@ -6,8 +6,11 @@ weight: 0
 class Matrix4x4
 ===
 
-| Include: | Math/Vector3.h |
+| Include: | Math/Matrix4x4.h |
 
+A fixed-size 4 by 4 matrix class.
+It is used mainly for transformations - see SimulOrientation.
+  
 
 
 Functions
@@ -19,6 +22,10 @@ Functions
 | void | [Set](#Set)(const float []) |
 | void | [SwapYAndZ](#SwapYAndZ)(simul::math::Matrix4x4 dest) |
 | bool | [SymmetricInverse3x3](#SymmetricInverse3x3)(simul::math::Matrix4x4 Result) |
+
+A fixed-size 4 by 4 matrix class.
+It is used mainly for transformations - see SimulOrientation.
+  
 
 
 Functions

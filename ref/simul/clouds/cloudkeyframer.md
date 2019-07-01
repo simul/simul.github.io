@@ -21,7 +21,9 @@ Functions
 ---
 
 |  | [CloudKeyframer](#CloudKeyframer)(simul::base::MemoryInterface mem, bool make2d) |
+|  | [~CloudKeyframer](#~CloudKeyframer)() |
 | simul::clouds::CloudKeyframer::Storm * | [AddStorm](#AddStorm)(float t0, float t1, vec2 centre_km, float r_km) |
+| void | [DeleteKeyframe](#DeleteKeyframe)(int i) |
 | void | [DeleteStorm](#DeleteStorm)(int i) |
 | void | [DeleteStormByUniqueId](#DeleteStormByUniqueId)(unsigned int uid) |
 | void | [ForceRelight](#ForceRelight)() |
@@ -29,11 +31,15 @@ Functions
 | float | [GetDefaultFloat](#GetDefaultFloat)(char name) |
 | int | [GetDefaultInt](#GetDefaultInt)(char name) |
 | int | [GetExportLightningStrikes](#GetExportLightningStrikes)(simul::clouds::ExportLightningStrike strikes, int max_s, float game_time, float real_time) |
+| float | [GetFloat](#GetFloat)(char name, simul::base::Variant params) |
 | simul::math::Vector3 | [GetGridOrigin](#GetGridOrigin)() |
 | simul::math::Vector3 | [GetInitialOffset](#GetInitialOffset)() |
+| int | [GetInt](#GetInt)(char name, simul::base::Variant params) |
 | simul::clouds::CloudKeyframe  & | [GetInterpolatedKeyframe](#GetInterpolatedKeyframe)() |
 | float | [GetInterpolation](#GetInterpolation)() |
 | unsigned int | [GetInterpolationChecksum](#GetInterpolationChecksum)() |
+| simul::sky::BaseKeyframe * | [GetKeyframe](#GetKeyframe)(int i) |
+| simul::clouds::LightningProperties | [GetLightningProperties](#GetLightningProperties)(float game_time, float real_time) |
 | float | [GetMaximumLocalPrecipitation](#GetMaximumLocalPrecipitation)(pos) |
 | simul::clouds::CloudKeyframe * | [GetNextModifiableKeyframe](#GetNextModifiableKeyframe)() |
 | int | [GetNumKeyframes](#GetNumKeyframes)() |
@@ -45,13 +51,22 @@ Functions
 | simul::clouds::CloudKeyframer::Storm  const * | [GetStormByUniqueId](#GetStormByUniqueId)(unsigned int uid) |
 | unsigned int | [GetSubdivisionChecksum](#GetSubdivisionChecksum)() |
 | int3 | [GetTextureSizes](#GetTextureSizes)() |
+| simul::math::Vector3 | [GetWindOffsetKm](#GetWindOffsetKm)() |
+| bool | [HasFloat](#HasFloat)(char name) |
+| bool | [HasInt](#HasInt)(char name) |
 | simul::clouds::CloudKeyframe * | [InsertKeyframe](#InsertKeyframe)(float t) |
 | void | [Load](#Load)(simul::sky::Input is) |
+| void | [LoadFromText](#LoadFromText)(simul::crossplatform::TextInput input) |
 | void | [New](#New)() |
+| simul::clouds::CloudKeyframer  const & | [operator=](#operator=)(simul::clouds::CloudKeyframer SK) |
 | void | [RecalculateOffsets](#RecalculateOffsets)() |
 | void | [Relocate](#Relocate)(pos_before, pos_after) |
+| void | [RemoveVolume](#RemoveVolume)(int id) |
 | void | [Reset](#Reset)() |
 | void | [Save](#Save)(simul::sky::Output os) |
+| void | [SaveToText](#SaveToText)(simul::crossplatform::TextOutput output, bool include_keyframes) |
+| void | [SetFloat](#SetFloat)(char name, float val) |
+| void | [SetInt](#SetInt)(char name, int val) |
 | void | [SetLoopWind](#SetLoopWind)() |
 | void | [SetRecalculate](#SetRecalculate)() |
 | void | [SetSkyInterface](#SetSkyInterface)(simul::sky::BaseSkyInterface si) |
@@ -71,12 +86,16 @@ Functions
 ---
 
 ### <a name="CloudKeyframer"/> CloudKeyframer(simul::base::MemoryInterface mem, bool make2d)
+Constructor
 
-A class to manage interpolation between cloud states over time.
-Typically, a CloudKeyframer is created and updated by its 
+### <a name="~CloudKeyframer"/> ~CloudKeyframer()
+Destructor
 
 ### <a name="AddStorm"/>simul::clouds::CloudKeyframer::Storm * AddStorm(float t0, float t1, vec2 centre_km, float r_km)
 Add a storm between the times specified, at the given centre c, with horizontal radius r (km).
+
+### <a name="DeleteKeyframe"/>void DeleteKeyframe(int i)
+Remove a keyframe
 
 ### <a name="DeleteStorm"/>void DeleteStorm(int i)
 Remove the storm with index i.
@@ -94,17 +113,23 @@ Set the cloud interface. As the constructor needs a CloudInterface, it is not us
 Return the default float value with the given, case-insensitive, name.
 
 ### <a name="GetDefaultInt"/>int GetDefaultInt(char name)
-Return the default float value with the given, case-insensitive, name.
+Return the default int value with the given, case-insensitive, name.
 
 ### <a name="GetExportLightningStrikes"/>int GetExportLightningStrikes(simul::clouds::ExportLightningStrike strikes, int max_s, float game_time, float real_time)
 Fills the strikes array and returns how many active strikes in the storm
 NOTE: right now we only consider 1 strike.
+
+### <a name="GetFloat"/>float GetFloat(char name, simul::base::Variant params)
+Get a float with the given, case-insensitive, name
 
 ### <a name="GetGridOrigin"/>simul::math::Vector3 GetGridOrigin()
 Get the origin of the render grid; this is adjusted internally when Relocate() is called.
 
 ### <a name="GetInitialOffset"/>simul::math::Vector3 GetInitialOffset()
 Get the offset of the first keyframe, a mutable property determined by Relocate().
+
+### <a name="GetInt"/>int GetInt(char name, simul::base::Variant params)
+Get an int with the given, case-insensitive, name
 
 ### <a name="GetInterpolatedKeyframe"/>simul::clouds::CloudKeyframe  & GetInterpolatedKeyframe()
 Get the current interpolatedkeyframe, which holds the values interpolated from the two surrounding keyframes at
@@ -116,6 +141,12 @@ When the interpolation reaches one, the textures will be cycled.
 
 ### <a name="GetInterpolationChecksum"/>unsigned int GetInterpolationChecksum()
 Checksum for the interpolated state.
+
+### <a name="GetKeyframe"/>simul::sky::BaseKeyframe * GetKeyframe(int i)
+Get a pointer to the keyframe with the given ID
+
+### <a name="GetLightningProperties"/>simul::clouds::LightningProperties GetLightningProperties(float game_time, float real_time)
+Get the properties of the currently active lightning strike
 
 ### <a name="GetMaximumLocalPrecipitation"/>float GetMaximumLocalPrecipitation(pos)
 How much precipitation there is at this point. This value is only approximate - it does not account for the actual cloud cover generated on GPU,
@@ -151,14 +182,31 @@ This is a checksum that only changes if an in-use subdivision has modified (cycl
 ### <a name="GetTextureSizes"/>int3 GetTextureSizes()
 // REPLACING CALLBACK SEMANTICS WITH ITERATOR MODEL:
 
+### <a name="GetWindOffsetKm"/>simul::math::Vector3 GetWindOffsetKm()
+Get the current offset of the cloud window due to wind.
+
+### <a name="HasFloat"/>bool HasFloat(char name)
+Return true if the keyframe has a float value with the given, case-insensitive, name; return false otherwise.
+
+### <a name="HasInt"/>bool HasInt(char name)
+Return true if the keyframe has an int value with the given, case-insensitive, name; return false otherwise.
+
 ### <a name="InsertKeyframe"/>simul::clouds::CloudKeyframe * InsertKeyframe(float t)
 Insert a new keyframe at time t, sorting in between the existing keyframes if needed, and return a pointer to it.
 
 ### <a name="Load"/>void Load(simul::sky::Input is)
 Load from a binary stream:
 
+### <a name="LoadFromText"/>void LoadFromText(simul::crossplatform::TextInput input)
+Load from a text file
+
 ### <a name="New"/>void New()
 Clear keyframes.
+
+### <a name="operator="/>simul::clouds::CloudKeyframer  const & operator=(simul::clouds::CloudKeyframer SK)
+
+A class to manage interpolation between cloud states over time.
+Typically, a CloudKeyframer is created and updated by its 
 
 ### <a name="RecalculateOffsets"/>void RecalculateOffsets()
 Check for changed offsets and recalculate.
@@ -166,11 +214,23 @@ Check for changed offsets and recalculate.
 ### <a name="Relocate"/>void Relocate(pos_before, pos_after)
 Relocate: to avoid numerical precision problems, relocation can be performed. Specify any position, before and after relocation.
 
+### <a name="RemoveVolume"/>void RemoveVolume(int id)
+Remove a custom cloud volume
+
 ### <a name="Reset"/>void Reset()
 Force recalculation of the per-keyframe tables.
 
 ### <a name="Save"/>void Save(simul::sky::Output os)
 Save to a binary stream:
+
+### <a name="SaveToText"/>void SaveToText(simul::crossplatform::TextOutput output, bool include_keyframes)
+Save to a text file
+
+### <a name="SetFloat"/>void SetFloat(char name, float val)
+Set a float with the given, case-insensitive, name
+
+### <a name="SetInt"/>void SetInt(char name, int val)
+Set an int with the given, case-insensitive, name
 
 ### <a name="SetLoopWind"/>void SetLoopWind()
 Make the wind offsets loop based on the loop time.

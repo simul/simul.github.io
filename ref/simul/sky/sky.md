@@ -71,6 +71,8 @@ The functions GetDirectionToSun and GetDirectionToMoon can also be used.
 Functions
 ---
 
+| vec3 | [GetDirectionToMoon](#GetDirectionToMoon)(double epoch_time, float latitude, float longitude) |
+| vec3 | [GetDirectionToSun](#GetDirectionToSun)(double epoch_time, float latitude, float longitude) |
 | float | [GetMoonIrradianceFactor](#GetMoonIrradianceFactor)(vec3 dir_to_moon, vec3 dir_to_sun) |
 | float | [GetOpticalLength](#GetOpticalLength)(float Elevation, float h_km) |
 | float | [GetOzoneOpticalLength](#GetOzoneOpticalLength)(float Elevation, float h_km) |
@@ -141,6 +143,12 @@ Base Classes
 
 Functions
 ---
+
+### <a name="GetDirectionToMoon"/>vec3 GetDirectionToMoon(double epoch_time, float latitude, float longitude)
+Get the direction the moon represented as a vector
+
+### <a name="GetDirectionToSun"/>vec3 GetDirectionToSun(double epoch_time, float latitude, float longitude)
+Get the direction the sun represented as a vector
 
 ### <a name="GetMoonIrradianceFactor"/>float GetMoonIrradianceFactor(vec3 dir_to_moon, vec3 dir_to_sun)
 Moon irradiance as a multiple of sun irradiance.

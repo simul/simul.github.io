@@ -29,21 +29,19 @@ Functions
 ---
 
 ### <a name="MixedResolutionCompositor"/> MixedResolutionCompositor()
-Default constructor.
+Constructor.
 
 ### <a name="~MixedResolutionCompositor"/> ~MixedResolutionCompositor()
 Destructor.
 
 ### <a name="InvalidateDeviceObjects"/>void InvalidateDeviceObjects()
-Invalidate device objects.
+Platform-dependent function called when uninitializing the water Compositor.
 
 ### <a name="RecompileShaders"/>void RecompileShaders()
-Recompile shaders.
+Platform-dependent function to reload the shaders - only use this for debug purposes.
 
 ### <a name="RestoreDeviceObjects"/>void RestoreDeviceObjects(simul::crossplatform::RenderPlatform renderPlatform)
-Restore device objects.
-
-[in,out] renderPlatform  If non-null, the render platform.
+Platform-dependent function called when initializing the Compositor.
 
 Fields
 ---

@@ -25,6 +25,7 @@ Functions
 | char  const * | [Get](#Get)(int propertyIndex) |
 | simul::crossplatform::TextInput * | [GetSubElement](#GetSubElement)(char name) |
 | char  const * | [GetSubElement](#GetSubElement)(int) |
+| bool | [Good](#Good)() |
 | bool | [Has](#Has)(char name) |
 
 
@@ -66,6 +67,9 @@ Sub-element with the given name. If null, the Value() should be non-null.
 
 ### <a name="GetSubElement"/>char  const * GetSubElement(int)
 Sub-element with the given index, starting at zero. If null, it's past the end of the list
+
+### <a name="Good"/>bool Good()
+Returns true if the file is successfully loaded
 
 ### <a name="Has"/>bool Has(char name)
 Is the specified element in the list?

@@ -6,7 +6,7 @@ weight: 0
 class BaseWeatherRenderer
 ===
 
-| Include: | Clouds/Skylight.h |
+| Include: | Clouds/BaseLightningRenderer.h |
 
 
 
@@ -16,6 +16,7 @@ Functions
 |  | [BaseWeatherRenderer](#BaseWeatherRenderer)(simul::clouds::Environment env, simul::base::MemoryInterface m) |
 |  | [~BaseWeatherRenderer](#~BaseWeatherRenderer)() |
 | void | [CleanUpFramebuffers](#CleanUpFramebuffers)(int max_age) |
+| void | [CompositeCloudsToScreen](#CompositeCloudsToScreen)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct2, simul::clouds::TrueSkyRenderMode renderMode, float exposure, float gamma, bool depth_blend, simul::crossplatform::Texture mainDepthTexture, vec4 viewportRegionXYWH, bool any_lightpass, LightingQueryResult lightingQueryResult, vec3 cubemap_ground_colour) |
 | void | [ConnectInterfaces](#ConnectInterfaces)() |
 | simul::clouds::BaseWeatherRenderer * | [Create](#Create)(simul::clouds::Environment env, simul::base::MemoryInterface m) |
 | void | [CreateSubObjects](#CreateSubObjects)() |
@@ -24,6 +25,7 @@ Functions
 | simul::sky::BaseAtmosphericsRenderer * | [GetBaseAtmosphericsRenderer](#GetBaseAtmosphericsRenderer)() |
 | simul::clouds::CloudRenderer * | [GetBaseCloudRenderer](#GetBaseCloudRenderer)() |
 | simul::sky::BaseSkyRenderer * | [GetBaseSkyRenderer](#GetBaseSkyRenderer)() |
+| simul::clouds::Environment * | [GetEnvironment](#GetEnvironment)() |
 | int | [GetExportLightningStrikes](#GetExportLightningStrikes)(simul::clouds::ExportLightningStrike export_strikes, int max_s, float game_time, float real_time) |
 | simul::sky::float4  const & | [GetHorizonColour](#GetHorizonColour)(float view_altitude_km) |
 | simul::sky::float4  const & | [GetLightColour](#GetLightColour)(float view_altitude_km) |
@@ -43,6 +45,7 @@ Functions
 | void | [SetAllDownscale](#SetAllDownscale)(float) |
 | void | [SetBlurTexture](#SetBlurTexture)(simul::crossplatform::Texture t) |
 | void | [SetCubemapTransform](#SetCubemapTransform)(float m) |
+| void | [SetEnvironment](#SetEnvironment)(simul::clouds::Environment env) |
 | bool | [RenderLowResolutionElements](#RenderLowResolutionElements)(simul::crossplatform::DeviceContext deviceContext, float exposure, float godrays_strength, simul::clouds::TrueSkyRenderMode renderMode, simul::crossplatform::NearFarPass nearFarPass, simul::crossplatform::Texture lowResDepthTexture, simul::sky::ScatteringVolume scatteringVolume, vec4 viewportRegionXYWH, simul::crossplatform::AmortizationStruct amortizationStruct, simul::crossplatform::Texture ambientCubemapTexture) |
 
 
@@ -63,6 +66,9 @@ others.
 
 ### <a name="CleanUpFramebuffers"/>void CleanUpFramebuffers(int max_age)
 Delete framebuffers that have not been used in max_age frames, to free GPU memory.
+
+### <a name="CompositeCloudsToScreen"/>void CompositeCloudsToScreen(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct2, simul::clouds::TrueSkyRenderMode renderMode, float exposure, float gamma, bool depth_blend, simul::crossplatform::Texture mainDepthTexture, vec4 viewportRegionXYWH, bool any_lightpass, LightingQueryResult lightingQueryResult, vec3 cubemap_ground_colour)
+This composites the clouds and other buffers to the screen.
 
 ### <a name="ConnectInterfaces"/>void ConnectInterfaces()
 Connect-up sky, clouds etc.
@@ -88,6 +94,9 @@ Get a pointer to the cloud renderer.
 ### <a name="GetBaseSkyRenderer"/>simul::sky::BaseSkyRenderer * GetBaseSkyRenderer()
 Get a pointer to the sky renderer.
 
+### <a name="GetEnvironment"/>simul::clouds::Environment * GetEnvironment()
+Get a pointer to the current Environment
+
 ### <a name="GetExportLightningStrikes"/>int GetExportLightningStrikes(simul::clouds::ExportLightningStrike export_strikes, int max_s, float game_time, float real_time)
 Get lightning strikes. This calls GetExportLightningStrikes in CloudKeyframer, but also includes
 a cloud density query so that lightning can't come from empty sky.
@@ -112,7 +121,7 @@ Convenience function to get the next sky keyframe that can be modified without a
 This returns a struct containing the textures and values needed to apply atmospherics to transparent objects.
 
 ### <a name="InvalidateDeviceObjects"/>void InvalidateDeviceObjects()
-De-initialize all API-dependent objects in the weather renderer and its member renderers.
+Platform-dependent function called when uninitializing the weather renderer.
 
 ### <a name="operator="/>simul::clouds::BaseWeatherRenderer  const & operator=(simul::clouds::BaseWeatherRenderer W)
 Copy the properties of one BaseWeatherRenderer to another, including copying the properties of their sky and cloud renderers.
@@ -145,6 +154,7 @@ Optional viewportsspecifies the left and right eye viewports if we're rendering 
 Draw the sun, moon and stars - call this while the depth buffer is bound.
 
 ### <a name="RenderMixedResolution"/>bool RenderMixedResolution(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct2, simul::crossplatform::Texture depthTexture, simul::clouds::TrueSkyRenderMode renderMode, float exposure, float gamma, simul::crossplatform::Viewport depthViewports, simul::crossplatform::Texture ambientCubemapTexture)
+Render the sky including atmospherics as an overlay, using a supplied platform-dependent depth texture.
 deviceContextis the platform-dependent render context, exposureis a multiplier for the rendered sky brightness,
 The view_idis an integer that distinguishes between multiple simultaneous viewports onscreen.
 By convention, viewport 0 is the main view, and viewport 1 is the cubemap for reflections and lighting.
@@ -156,8 +166,7 @@ The depthViewportXYWHdetermines what part of the depth texture represents this v
 Returns true if there is a lightpass.
 
 ### <a name="RestoreDeviceObjects"/>void RestoreDeviceObjects(simul::crossplatform::RenderPlatform renderPlatform)
-Initialize the  API-dependent objects in the weather renderer and its member renderers. This is usually needed
-when the 3D view is first set-up.
+Platform-dependent function called when initializing the weather renderer.
 
 ### <a name="SetAllDownscale"/>void SetAllDownscale(float)
 Override the downscale for all current views; does not affect the default - see SetDefaultDownscale.
@@ -167,6 +176,9 @@ A blurred texture, to be drawn usually per-frame.
 
 ### <a name="SetCubemapTransform"/>void SetCubemapTransform(float m)
 A transform for the cubemap set by SetCubemapTexture().
+
+### <a name="SetEnvironment"/>void SetEnvironment(simul::clouds::Environment env)
+Set the Environment
 
 ### <a name="RenderLowResolutionElements"/>bool RenderLowResolutionElements(simul::crossplatform::DeviceContext deviceContext, float exposure, float godrays_strength, simul::clouds::TrueSkyRenderMode renderMode, simul::crossplatform::NearFarPass nearFarPass, simul::crossplatform::Texture lowResDepthTexture, simul::sky::ScatteringVolume scatteringVolume, vec4 viewportRegionXYWH, simul::crossplatform::AmortizationStruct amortizationStruct, simul::crossplatform::Texture ambientCubemapTexture)
 Renders the 2D clouds and atmospherics. If the passed depth texture is MSAA, near_pass determines whether to use the near or far depth for each depth texel.

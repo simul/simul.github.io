@@ -50,10 +50,10 @@ Gets screen height.
 Gets screen width.
 
 ### <a name="InvalidateDeviceObjects"/>void InvalidateDeviceObjects()
-Invalidate device objects.
+Platform-dependent function called when uninitializing the view.
 
 ### <a name="RestoreDeviceObjects"/>void RestoreDeviceObjects(simul::crossplatform::RenderPlatform renderPlatform)
-Restore device objects.
+Platform-dependent function called when initializing the view.
 
 ### <a name="SetExternalFramebuffer"/>void SetExternalFramebuffer(bool ext)
 Sets external framebuffer.
@@ -70,7 +70,7 @@ Fields
 
 **ScreenHeight**  Height of the screen.
 
-**useExternalFramebuffer**  true to use external framebuffer.
+**useExternalFramebuffer**  True to use external framebuffer.
 
 **hdrFramebuffer**  A framebuffer with depth.
 

@@ -9,14 +9,17 @@ weight: 2
 
 Previous: <a href="intro">Introduction</a>
 
-
+<div class="unity-specific">
 Unity
 -----
 To use the trueSKY Unity plugin, install the appropriate trueSkyUnityPlugin.unitypackage to your Unity project. For further instructions, head to [docs.simul.co/unity](http://docs.simul.co/unity).
+</div>
 
+<div class="ue4-specific">
 Unreal Engine 4
 ---------------
 The trueSKY Unreal Engine 4 plugin comes as a branch of the UE4 engine on GitHub, and also as a separate installer for the binary distribution of UE4. For further instructions, head to [docs.simul.co/unrealengine](http://docs.simul.co/unrealengine).
+</div>
 
 trueSKY SDK
 --------------
@@ -31,7 +34,7 @@ To build the samples, use the solution file appropriate to your Visual Studio ve
 
 - SimulSamples_x64_VC11.sln
 
-![](/Images/SimulOverview.png)
+![](/images/SimulOverview.png)
 
 
 The two main elements to implementing trueSKY in a project are: an Environment object, which will encapsulate sky and cloud data;

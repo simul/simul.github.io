@@ -6,7 +6,7 @@ weight: 0
 class SiderealSkyInterface
 ===
 
-| Include: | Sky/BaseSkyRenderer.h |
+| Include: | Sky/SkyInterface.h |
 
 
 

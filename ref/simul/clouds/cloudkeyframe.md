@@ -17,10 +17,14 @@ Functions
 ---
 
 |  | [CloudKeyframe](#CloudKeyframe)() |
-| vec2 | [GetPrecipitationCentreKm](#GetPrecipitationCentreKm)() |
+| float | [GetFloat](#GetFloat)(char name) |
+| int | [GetInt](#GetInt)(char name) |
+| simul::crossplatform::Quaterniond | [GetPrecipitationCentre](#GetPrecipitationCentre)() |
 | unsigned int | [GetPropertiesChecksum](#GetPropertiesChecksum)() |
 | bool | [HasFloat](#HasFloat)(char name) |
 | bool | [HasInt](#HasInt)(char name) |
+| void | [SetFloat](#SetFloat)(char name, float val) |
+| void | [SetInt](#SetInt)(char name, int val) |
 
 The keyframe structure for clouds, used by simul::clouds::CloudKeyframer.
   
@@ -36,7 +40,13 @@ Functions
 ### <a name="CloudKeyframe"/> CloudKeyframe()
 < Where rain/snow is found.
 
-### <a name="GetPrecipitationCentreKm"/>vec2 GetPrecipitationCentreKm()
+### <a name="GetFloat"/>float GetFloat(char name)
+Get a float with the given, case-insensitive, name
+
+### <a name="GetInt"/>int GetInt(char name)
+Get an int with the given, case-insensitive, name
+
+### <a name="GetPrecipitationCentre"/>simul::crossplatform::Quaterniond GetPrecipitationCentre()
 Depending on precipitationRegion.lockToClouds, precipitationRegion.CentreKm is either absolute or relative.
 So this function is used to access the true centre position of the rain region.
 
@@ -55,53 +65,67 @@ The properties are:
 - localDensity
 - windSpeed
 - windDirection
+- windHeading
+- windHeadingDegrees
 - persistence
 - cloudBase
 - cloudHeight
+- cloudWidth
+- cloudWidthKm
+- cloudWidthMetres
+- directLight
+- indirectLight
+- ambientLight
+- lightAsymmetry
 - precipitation
 - fractalAmplitude
 - edgeSharpness
 - churn
+- extinction
 - rainToSnow
 - precipitationWindEffect
+- precipitationWaver
 - diffusivity
-- max_density_gm3
 - cache_built
+- lightning
+- maxDensityGm3
 - baseNoiseFactor
 - offsetx
 - offsety
 - rainCentreXKm
 - rainCentreYKm
 - rainRadiusKm
+- rainEdge
 - rainEffectStrength
 - simulation
-- worleyNoise
-- worleyScale
+- WorleyNoise
+- WorleyScale
+- EdgeWorleyNoise
+- scalekm
+- scalekm.x
+- scalekm.y
+- scalekm.z
+- EdgeWorleyScale
 
 
 ### <a name="HasInt"/>bool HasInt(char name)
-Return true if the keyframer has an integer or true/false value with the given, case-insensitive, name; return false otherwise. 
+Return true if the keyframe has an integer or true/false value with the given, case-insensitive, name; return false otherwise. 
 
-- GridWidth
-- GridHeight
-- Use3DNoise
-- Wrap
-- NoiseResolution
-- OverrideWind
-- EdgeNoiseOctaves
-- EdgeNoiseFrequency
-- EdgeNoiseTextureSize
-- ExplicitOffsets
-- ShadowTextureSize
-- DefaultNumSlices
-- Visible
-- MeetHorizon
+- Octaves
+- RegionalPrecipitation
+- LockRainToClouds
 
+
+### <a name="SetFloat"/>void SetFloat(char name, float val)
+Set a float with the given, case-insensitive, name
+
+### <a name="SetInt"/>void SetInt(char name, int val)
+Set an int with the given, case-insensitive, name
 
 Fields
 ---
 
-**cloudiness**  < The edge between zero and one. Small numbers give a sharp edge to the region.
+**cloudiness**  < The base altitude of this Precipitation Region from the centre of the planet.
 
 **distribution_base_layer**  < The density of the cloud layer at this time.
 

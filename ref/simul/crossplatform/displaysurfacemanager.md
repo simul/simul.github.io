@@ -20,6 +20,7 @@ Functions
 | void | [AddWindow](#AddWindow)(cp_hwnd h, simul::crossplatform::PixelFormat pfm) |
 | void | [EndFrame](#EndFrame)() |
 | void | [RemoveWindow](#RemoveWindow)(cp_hwnd h) |
+| void | [RenderAll](#RenderAll)() |
 
 A class for multiple swap chains (i.e. rendering windows) to share the same device.
 With each graphics window it manages (identified by HWND's), WindowManager creates and manages a SwapChain instance.
@@ -40,3 +41,6 @@ Add a window. Creates a new Swap Chain.
 
 ### <a name="RemoveWindow"/>void RemoveWindow(cp_hwnd h)
 Removes the window and destroys its associated Swap Chain.
+
+### <a name="RenderAll"/>void RenderAll()
+Call from rendering thread.
