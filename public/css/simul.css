@@ -1,20 +1,6 @@
 .custom-search {
 	min-height: 49px;
 }
-@media (min-width: 64em)
-{
-  .content-container
-  {
-    margin-left: 18rem;
-    margin-right: 0rem;
-  }
-  .content
-  {
-    margin-left: 2rem;
-    margin-right: 4rem;
-  }
-}
-
 .options-bar
 {
 	width: 100%;
@@ -44,7 +30,6 @@
 		width: 183.333px;
 		line-height: 55px;
 		margin-top: 5px;
-		padding-left: 20px;
 	}
 	.banner-search {
 		right: 0px;
@@ -56,6 +41,42 @@
 		top: 0px;
 		padding-top: 90px;
 	}
+}
+
+
+/* Container
+ *
+ * Replace hyde padding with margin.
+ */
+
+
+@media (min-width: 48em) {
+  .content-container
+  {
+    margin-left: 18rem;
+    margin-right: 0rem;
+  }
+  .content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+}
+
+@media (min-width: 64em)
+{
+  .content-container
+  {
+    margin-left: 18rem;
+    margin-right: 0rem;
+  }
+  .content {
+    margin-left: 0rem;
+    margin-right: 0rem;
+    padding-left: 2rem;
+    padding-right: 4rem;
+  }
 }
 
 .options-bar button
