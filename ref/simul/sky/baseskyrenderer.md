@@ -6,7 +6,7 @@ weight: 0
 class BaseSkyRenderer
 ===
 
-| Include: | Sky/BaseSkyRenderer.h |
+| Include: | Clouds/BaseWeatherRenderer.h |
 
 
 [simul::base::Referenced](../base/referenced)

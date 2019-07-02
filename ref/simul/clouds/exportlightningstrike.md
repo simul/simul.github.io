@@ -8,11 +8,11 @@ struct ExportLightningStrike
 
 | Include: | Clouds/LightningRenderInterface.h |
 
+A struct for passing lighting strike properties between trueSKY and an external engine.
+  
 
 
 
+A struct for passing lighting strike properties between trueSKY and an external engine.
+  
 
-Fields
----
-
-**id**  A struct for passing lighting strike properties between trueSKY and an external engine.
