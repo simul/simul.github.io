@@ -6,7 +6,7 @@ weight: 0
 namespace sky
 ===
 
-| Include: | Sky/Sun.h |
+| Include: | Sky/Binding.h |
 
 
 
