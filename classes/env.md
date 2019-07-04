@@ -10,8 +10,10 @@ weight: 510
 Previous: <a href=".">The trueSKY Classes</a>
 
 ## Updating ##
-The <a href="../ref/simul/clouds/environment">Environment</a>object stores an instance of <a href="../ref/simul/sky/skykeyframer">SkyKeyframer</a>
-and two instances of <a href="../ref/simul/clouds/cloudkeyframer">CloudKeyframer</a>, and performs the necessary initialization and updates.
+The [simul::clouds::Environment](/ref/simul/clouds/environment)
+object stores an instance of <a href="../ref/simul/sky/skykeyframer">SkyKeyframer</a>
+and two instances of [simul::clouds::CloudKeyframer](/ref/simul/clouds/cloudkeyframer)
+, and performs the necessary initialization and updates.
 
 As described in <a href="../gettingstarted">Getting Started</a>, you will declare and create an instance of Environment. If you have a sequence file (.sq or .seq)
 saved from the <a href="../sequencer">The Sky Sequencer</a>, you can load this into the Environment and its keyframers will be appropriately initialized with global values

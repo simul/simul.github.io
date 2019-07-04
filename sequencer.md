@@ -181,7 +181,8 @@ In the sequencer, clouds can be edited in two ways. Clicking (or shift-clicking)
 <tr>
 <td>Persistence</td><td>Fractal persistence to use when generating the noise texture. </td></tr>
 </table> 
-See the public attributes of <a href="ref/simul/clouds/cloudkeyframer">CloudKeyframer</a>for a full description of all the cloud layer properties.
+See the public attributes of [simul::clouds::CloudKeyframer](/ref/simul/clouds/cloudkeyframer)
+for a full description of all the cloud layer properties.
 
 <h3>Cloud Keyframe Properties</h3>
 Note that for 2D clouds, there is no Weather Effects section. The cloud keyframe properties accessible in the sequencer are:
@@ -270,7 +271,8 @@ Note that for 2D clouds, there is no Weather Effects section. The cloud keyframe
 <td>Waver</td><td>How much precipitation layers waver as they fall. </td></tr>
 </table>
 
-See the public attributes of <a href="ref/simul/clouds/cloudkeyframe">CloudKeyframe</a>for a full description of all the cloud keyframe properties.
+See the public attributes of [simul::clouds::CloudKeyframe](/ref/simul/clouds/cloudkeyframe)
+for a full description of all the cloud keyframe properties.
 
 <h2>The Sky</h2>
 In the sequencer, just as with clouds, the sky can be edited in two ways. Clicking (or shift-clicking) individual keyframes will allow the properties for one or more keyframes at any point in time to be altered. Alternatively, clicking the Sky column will allow the properties for the sky layer to be altered. These properties will impact the entire sequence indefinitely, allowing you to adjust the amount of ozone, alter the diameter of the sun/moon, set the start date of the scene and more. Whereas keyframe properties are temporal, allowing you to adjust settings like visibility, haze, eccentricity and so on, for the point in time at which the keyframe is active. Note: If just a single keyframe is present in the sequencer, then those settings will be applied continously. 

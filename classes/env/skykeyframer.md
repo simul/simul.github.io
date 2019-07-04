@@ -19,7 +19,8 @@ The keyframes each have a timevalue, and the keyframer tracks a current time thr
 The SkyKeyframer has two modes of operation. By switching <a href="../../ref/simul/sky/skykeyframer/setlinkkeyframetimeanddaytime">LinkKeyframeTimeAndDaytime</a>on or off,
 you can choose whether the keyframes have a daytime value which is independent of time, or whether these two numbers are the same.
 
-You don't need to update the keyframer specifically, so long as you're calling <a href="../../ref/simul/clouds/environment/update">environment->Update()</a>.
+You don't need to update the keyframer specifically, so long as you're calling [simul::clouds::Environment::Update](/ref/simul/clouds/environment/update)
+.
 
 Linked Time and Daytime
 -----------------------

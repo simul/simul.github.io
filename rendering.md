@@ -8,7 +8,8 @@ weight: 3
 
 All Simul's default renderers use a right-handed co-ordinate system with x pointing East, y North, and z up. All units of distance are metres or kilometres. If not specified as km, distance is in metres. Angular units are radians, unless specified as degrees. Temperature is in kelvins, unless specified as degrees Celsius.
 
-Weather Rendering is handled by  <a href="ref/simul/clouds/baseweatherrenderer">BaseWeatherRenderer</a>.
+Weather Rendering is handled by  [simul::clouds::BaseWeatherRenderer](/ref/simul/clouds/baseweatherrenderer)
+.
 
 The Weather Renderer owns and manages renderers for sky, clouds, atmospherics and other effects.
 So the Weather Renderer is the main interface between your program and trueSKY.
@@ -88,17 +89,22 @@ Rain and Snow
 ![](/Images/rain.jpg)
 ""
 
-The <a href="ref/simul/clouds/cloudkeyframe/precipitation">precipitation</a>is used to control the amount of rain or snowfall
-at a given time, whilst the <a href="ref/simul/clouds/cloudkeyframer">PrecipitationThresholdKm</a>property is used to set the thickness of cloud required for rain to fall (setting this to 0 will allow even the smallest of clouds to produce rain). To switch between snow and rain use <a href="ref/simul/clouds/cloudkeyframe">rain_to_snow</a>(where 0 is rain, 1 is snow). 
+The [simul::clouds::CloudKeyframe::precipitation](/ref/simul/clouds/cloudkeyframe/precipitation)
+is used to control the amount of rain or snowfall
+at a given time, whilst the [simul::clouds::CloudKeyframer](/ref/simul/clouds/cloudkeyframer)
+property is used to set the thickness of cloud required for rain to fall (setting this to 0 will allow even the smallest of clouds to produce rain). To switch between snow and rain use [simul::clouds::CloudKeyframe](/ref/simul/clouds/cloudkeyframe)
+(where 0 is rain, 1 is snow). 
 
-Each cloud keyframe has a <a href="ref/simul/clouds/precipitationregion">PrecipitationRegion</a>, which defines the local area of precipitation,
+Each cloud keyframe has a [simul::clouds::PrecipitationRegion](/ref/simul/clouds/precipitationregion)
+, which defines the local area of precipitation,
 if it is not global for the keyframe. The amount of particles used for precipitation can be altered with the [simul::clouds::BasePrecipitationRenderer](/ref/simul/clouds/baseprecipitationrenderer)
 property.
 
 ![](/Images/Lightning-RainStreaks.jpg)
 ""
 
-Classes derived from simul::clouds::BasePrecipitationRenderer are used to draw the rain or snow particles, while the <a href="ref/simul/clouds/precipitationregion">rain streak effect</a>is drawn by the cloud renderer. This class has a property "UseSimulationTime" which determines whether rain and snow speed is based on the simulated time-of-day, or real time in seconds.
+Classes derived from simul::clouds::BasePrecipitationRenderer are used to draw the rain or snow particles, while the [simul::clouds::PrecipitationRegion](/ref/simul/clouds/precipitationregion)
+is drawn by the cloud renderer. This class has a property "UseSimulationTime" which determines whether rain and snow speed is based on the simulated time-of-day, or real time in seconds.
 
 Shaders
 -------

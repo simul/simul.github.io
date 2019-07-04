@@ -6,22 +6,23 @@ weight: 0
 struct ViewStruct
 ===
 
-| Include: | Platform/CrossPlatform/Camera.h |
+| Include: | Platform/CrossPlatform/BaseRenderer.h |
 
+A simple struct encapsulating a view and a projection matrix.
+  
 
 
 Functions
 ---
 
-|  | [ViewStruct](#ViewStruct)() |
 | void | [Init](#Init)() |
 
+A simple struct encapsulating a view and a projection matrix.
+  
+
 
 Functions
 ---
-
-### <a name="ViewStruct"/> ViewStruct()
-A simple struct encapsulating a view and a projection matrix.
 
 ### <a name="Init"/>void Init()
 < How to interpret any depth texture passed from outside.

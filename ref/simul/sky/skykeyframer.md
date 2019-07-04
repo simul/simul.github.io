@@ -52,7 +52,9 @@ Functions
 
 An instance of the SkyKeyframer is kept as a member of the Environment instance.
 The SkyKeyframer interpolates the sky values, and passes the keyframe and interpolation data to external renderers,
-e.g. <a href="baseskyrenderer">BaseSkyRenderer</a>and <a href="baseatmosphericsrenderer">BaseAtmosphericsRenderer</a>.
+e.g. [simul::sky::BaseSkyRenderer](/ref/simul/sky/baseskyrenderer)
+and [simul::sky::BaseAtmosphericsRenderer](/ref/simul/sky/baseatmosphericsrenderer)
+.
 The generated tables are calculated for multiple altitudes - specified with SetNumAltitudes.
 The SunIrradiance value determines the colour and strength of sunlight, and is expressed in physical units. The apparent size of the sun is
 set using SetSunRadiusArcMinutes.

@@ -23,7 +23,6 @@ Classes and Structures
 | struct [ProfileData](base/profiledata) |  |
 | class [ProfilingInterface](base/profilinginterface) |  |
 | class [Referenced](base/referenced) |  |
-| class [RuntimeError](base/runtimeerror) |  |
 | class [ShowProgressInterface](base/showprogressinterface) |  |
 | class [Timer](base/timer) | A microsecond timer.<br> |
 | class [TrackingAllocator](base/trackingallocator) |  |
