@@ -1,2 +1,3 @@
 User-agent: *
-Disallow: *.md
+Disallow: *.md$
+Disallow: docs.simul.co/
