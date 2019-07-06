@@ -6,15 +6,14 @@ weight: 0
 class BaseFramebuffer
 ===
 
-| Include: | Platform/CrossPlatform/BaseFramebuffer.h |
+| Include: | Platform/CrossPlatform/RenderPlatform.h |
 
-A base class for API-dependent framebuffer classes.
-  
 
 
 Functions
 ---
 
+|  | [BaseFramebuffer](#BaseFramebuffer)(char n) |
 | void | [Activate](#Activate)(simul::crossplatform::DeviceContext) |
 | void | [Clear](#Clear)(simul::crossplatform::DeviceContext context, float R, float G, float B, float A, float depth, int mask) |
 | void | [ClearColour](#ClearColour)(simul::crossplatform::DeviceContext context, float, float, float, float) |
@@ -36,12 +35,12 @@ Functions
 | void | [SetUseFastRAM](#SetUseFastRAM)(bool, bool) |
 | void | [SetWidthAndHeight](#SetWidthAndHeight)(int w, int h, int num_mips) |
 
-A base class for API-dependent framebuffer classes.
-  
-
 
 Functions
 ---
+
+### <a name="BaseFramebuffer"/> BaseFramebuffer(char n)
+A base class for API-dependent framebuffer classes.
 
 ### <a name="Activate"/>void Activate(simul::crossplatform::DeviceContext)
 Activate the framebuffer - must be followed after rendering by a call to 

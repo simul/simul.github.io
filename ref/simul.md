@@ -6,11 +6,9 @@ weight: 0
 namespace simul
 ===
 
-| Include: | Math/Math.h |
+| Include: | Math/Decay.h |
 
 
 
 | [namespace clouds](simul/clouds) | The namespace corresponding to the Clouds module.<br> |
-| [namespace math](simul/math) |  |
-| [namespace sky](simul/sky) |  |
 
