@@ -25,6 +25,7 @@ Classes and Structures
 | struct [KeyframeInUseState](sky/keyframeinusestate) |  |
 | class [OpticalLengthInterface](sky/opticallengthinterface) |  |
 | struct [Output](sky/output) |  |
+| class [OvercastCallback](sky/overcastcallback) |  |
 | class [SiderealSky](sky/siderealsky) |  |
 | class [SiderealSkyInterface](sky/siderealskyinterface) |  |
 | struct [SkyKeyframe](sky/skykeyframe) |  |
