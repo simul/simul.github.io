@@ -6,7 +6,7 @@ weight: 0
 class Vector3
 ===
 
-| Include: | Platform/CrossPlatform/CameraInterface.h |
+| Include: | Math/GeometricFunctions.h |
 
 
 
