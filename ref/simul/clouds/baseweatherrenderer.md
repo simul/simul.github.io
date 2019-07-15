@@ -6,7 +6,7 @@ weight: 0
 class BaseWeatherRenderer
 ===
 
-| Include: | Clouds/BaseLightningRenderer.h |
+| Include: | Clouds/Skylight.h |
 
 
 

@@ -81,7 +81,7 @@ deviceContext.viewStruct.depthTextureStyle      =crossplatform::PROJECTION;
 deviceContext.viewStruct.view                           =viewMatrix;
 deviceContext.viewStruct.proj                           =projectionMatrix;
 ~~~~~~~~~~~~~~~
-We've created a <a href="ref/simul/crossplatform/devicecontext">deviceContext</a>, <a href="ref/simul/crossplatform/devicecontext">deviceContext</a> and <a href="ref/simul/crossplatform/devicecontext">deviceContext</a>object that we will pass to the render functions.
+We've created a <a href="ref/simul/crossplatform/devicecontext">deviceContext</a>object that we will pass to the render functions.
 This object encapsulates the platform-specific context - in this case it's
 an ID3D11DeviceContext pointer - and view-specific information: the view and projection matrices for example.
 

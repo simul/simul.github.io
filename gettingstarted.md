@@ -9,21 +9,17 @@ weight: 2
 
 Previous: <a href="intro">Introduction</a>
 
-<div class="unity-specific">
+
 Unity
 -----
 To use the trueSKY Unity plugin, install the appropriate trueSkyUnityPlugin.unitypackage to your Unity project. For further instructions, head to [docs.simul.co/unity](http://docs.simul.co/unity).
-</div>
 
-<div class="ue4-specific">
 Unreal Engine 4
 ---------------
 The trueSKY Unreal Engine 4 plugin comes as a branch of the UE4 engine on GitHub, and also as a separate installer for the binary distribution of UE4. For further instructions, head to [docs.simul.co/unrealengine](http://docs.simul.co/unrealengine).
-</div>
 
 trueSKY SDK
 --------------
-
 The trueSKY SDK can be integrated with a game/simulation in two different ways. Firstly, it is possible to dynamically link with the trueSkyPluginRender library and API just as we do for Unity and Unreal. The second option is to link the trueSKY libraries directly, and access the lower-level classes directly.
 
 *TrueSkyPluginRender Library*
@@ -34,7 +30,7 @@ To build the samples, use the solution file appropriate to your Visual Studio ve
 
 - SimulSamples_x64_VC11.sln
 
-![](/images/SimulOverview.png)
+![](/Images/SimulOverview.png)
 
 
 The two main elements to implementing trueSKY in a project are: an Environment object, which will encapsulate sky and cloud data;
@@ -47,7 +43,14 @@ You should create an instance of simul::clouds::Environment, which is persistent
 simul::clouds::Environment *environment=NULL;
 ~~~~~~~~~~~~~~~
 
-The Environment is API-neutral, it calculates and updates environment data. We will create a persistent <a href="ref/simul/crossplatform/renderplatform">RenderPlatform</a>, whose class depends on the graphics API we use:
+Apply your trueSKY licence key (see <a href="licensing">Licensing</a>for more details), and initialize the Environment instance:
+~~~~~~~~~~~~~~~{.c}
+simul::base::SetLicence(SIMUL_LICENSE_KEY);
+environment=new simul::clouds::Environment();
+~~~~~~~~~~~~~~~
+
+The Environment is API-neutral, it calculates and updates environment data. We will create a persistent <a href="ref/simul/crossplatform/renderplatform">RenderPlatform</a>,
+whose class depends on the graphics API we use:
 
 ~~~~~~~~~~~~~~~{.c}
 simul::dx11::RenderPlatform renderPlatformDx11;
@@ -89,11 +92,11 @@ simul::crossplatform::DeviceContext     deviceContext;
 deviceContext.platform_context                          =pContext;
 deviceContext.renderPlatform                            =&renderPlatformDx11;
 deviceContext.viewStruct.view_id                        =view_id;
-deviceContext.viewStruct.depthTextureStyle            =crossplatform::PROJECTION;
+deviceContext.viewStruct.depthTextureStyle      =crossplatform::PROJECTION;
 deviceContext.viewStruct.view                           =viewMatrix;
 deviceContext.viewStruct.proj                           =projectionMatrix;
 ~~~~~~~~~~~~~~~
-We've created a <a href="ref/simul/crossplatform/devicecontext">deviceContext</a>, <a href="ref/simul/crossplatform/devicecontext">deviceContext</a> and <a href="ref/simul/crossplatform/devicecontext">deviceContext</a>object that we will pass to the render functions.
+We've created a <a href="ref/simul/crossplatform/devicecontext">deviceContext</a>object that we will pass to the render functions.
 This object encapsulates the platform-specific context - in this case it's
 an ID3D11DeviceContext pointer - and view-specific information: the view and projection matrices for example.
 

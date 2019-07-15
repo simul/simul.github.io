@@ -8,6 +8,9 @@ weight: 120
 
 Version HEAD
 ---
+Tue 09 Jul : Fix for Errno_Check  
+Thu 04 Jul : Fully-working on Linux  
+Wed 03 Jul : Improved deployment py script.  
 Fri 28 Jun : Fix for Windows build. Amended ERRNO_CHECK and DebugBreak().  
 Fri 28 Jun : ERRNO_CHECK fixed.  
 Fri 28 Jun : Linux build fixes: Vulkan Sample and plugin now building.  
@@ -105,8 +108,5 @@ Sat 16 Feb : PS4 ptr. RenderCloudShadowTexture should be called before FillInQue
 Wed 13 Feb : Fix delayloads: commas don't work, must use semicolons!  
 Wed 13 Feb : Platform/Vulkan/RenderPlatform.cpp CreateVulkanRenderpass() take in a MSAA value, default is 1. Platform/Vulkan/RenderPlatform.cpp Resolve() is currently commented out.  
 Tue 12 Feb : Fix window lighting  
-Mon 11 Feb : Minor Update to CopyToTargetDir.py.  
-Mon 11 Feb : CopyToTargetDir.py: uiLocation default is set as 'SIMUL+"/exe/"+PLATFORM+"/"+TOOLSET+"/"+CONFIGURATION'.  
-Mon 11 Feb : CopyToTargetDir.py: uiLocation default is set as 'SIMUL+"/exe/"+PLATFORM+"/"+TOOLSET+"/"+CONFIGURATION'.  
 
 <hr>

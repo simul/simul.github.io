@@ -8,6 +8,7 @@ class SkyKeyframer
 
 | Include: | Sky/SkyKeyframer.h |
 
+A class that maintains sky properties and interpolates them based on keyframe values.<br>
 
 [simul::base::Referenced](../base/referenced)
 [simul::sky::BaseKeyframer](basekeyframer)
@@ -16,7 +17,6 @@ class SkyKeyframer
 Functions
 ---
 
-|  | [SkyKeyframer](#SkyKeyframer)(simul::base::MemoryInterface mem, int num_elev, int num_dist, float max_dist_km) |
 | void | [CalcSunIrradianceAtEarth](#CalcSunIrradianceAtEarth)() |
 | void | [ClearHighlightConstellations](#ClearHighlightConstellations)() |
 | void | [DaytimeToClockTime](#DaytimeToClockTime)(float t, int d, int h, int m, int s, int ms) |
@@ -50,6 +50,14 @@ Functions
 | void | [Update](#Update)() |
 | void | [EnsureSunAndMoonValidity](#EnsureSunAndMoonValidity)(simul::sky::SkyKeyframe K1) |
 
+An instance of the SkyKeyframer is kept as a member of the Environment instance.
+The SkyKeyframer interpolates the sky values, and passes the keyframe and interpolation data to external renderers,
+e.g. <a href="baseskyrenderer">BaseSkyRenderer</a>and <a href="baseatmosphericsrenderer">BaseAtmosphericsRenderer</a>.
+The generated tables are calculated for multiple altitudes - specified with SetNumAltitudes.
+The SunIrradiance value determines the colour and strength of sunlight, and is expressed in physical units. The apparent size of the sun is
+set using SetSunRadiusArcMinutes.
+  
+
 
 Base Classes
 ---
@@ -59,13 +67,6 @@ Base Classes
 
 Functions
 ---
-
-### <a name="SkyKeyframer"/> SkyKeyframer(simul::base::MemoryInterface mem, int num_elev, int num_dist, float max_dist_km)
-A class that maintains sky properties and interpolates them based on keyframe values.
-
-An instance of the SkyKeyframer is kept as a member of the Environment instance.
-The SkyKeyframer interpolates the sky values, and passes the keyframe and interpolation data to external renderers,
-e.g. 
 
 ### <a name="CalcSunIrradianceAtEarth"/>void CalcSunIrradianceAtEarth()
 Calculate SunIrradiance using the solar irradiance tables outside Earth's atmosphere, based on ColourWavelengthsNm.
