@@ -39,7 +39,7 @@
             				{% if level2.size > 0 %}
             					<ul>
             						{%for m2 in level2 %}
-            						  <li><a href='{{m2.url}}'>{{m2.title}}</a></li>
+            						  <li><a class="sidebar-nav-item{% if page.url == m2.url %} active{% endif %}" href='{{m2.url}}'>{{m2.title}}</a></li>
             						{% endfor %}
             					</ul>
             				{% endif%}
