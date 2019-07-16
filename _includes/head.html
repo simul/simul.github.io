@@ -1,32 +1,96 @@
 <head>
 <!-- Priority tags. These must come first. -->
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge; chrome=1"> <!-- Render Chrome if available or using latest version of Internet Explorer (Recommended). -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge; chrome=1"> <!-- Render Chrome if available or using latest version of Internet Explorer (Recommended). -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-  <title>
-    {% if page.title == "Home" %}
-      {{ site.title }} &middot; {{ site.tagline }}
-    {% else %}
-      {{ page.title }} &middot; {{ site.title }}
-    {% endif %}
-  </title>
+	<title>
+		{% if page.title == "Home" %}
+			{{ site.title }} &middot; {{ site.tagline }}
+		{% else %}
+			{{ page.title }} &middot; {{ site.title }}
+		{% endif %}
+	</title>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="/public/css/poole.css">
-  <link rel="stylesheet" href="/public/css/syntax.css">
-  <link rel="stylesheet" href="/public/css/hyde.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
-  <link rel="stylesheet" href="/public/css/simul.css">
-  <link rel="stylesheet" href="/public/css/simul_header.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/public/css/poole.css">
+	<link rel="stylesheet" href="/public/css/syntax.css">
+	<link rel="stylesheet" href="/public/css/hyde.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+	<link rel="stylesheet" href="/public/css/simul.css">
+	<link rel="stylesheet" href="/public/css/simul_header.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
 
-  <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.url }}/public/apple-touch-icon-144-precomposed.png">
-                                 <link rel="shortcut icon" href="{{ site.url }}/public/favicon.ico">
+	<!-- Icons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.url }}/public/apple-touch-icon-144-precomposed.png">
+																 <link rel="shortcut icon" href="{{ site.url }}/public/favicon.ico">
 
-  <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+	<!-- RSS -->
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<script>
+  function getCookie(cname)
+  {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++)
+    {
+      var c = ca[i];
+      while (c.charAt(0) == ' ')
+      {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0)
+      {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+  function setCookie(cname, cvalue)
+  {
+    document.cookie = cname + "=" + cvalue + ";path=/";
+  }
+	function initChoices()
+  {
+		var engine = getCookie("engine");
+		if (engine == "")
+		{
+      engine="ue4";
+			setCookie("username",engine);
+		}
+		chooseEngine(engine);
+	}
+	function chooseEngine(engine)
+	{
+    var engines = ["ue4", "unity"];
+    for (i = 0; i < engines.length; i++)
+    {
+  		var els = document.getElementsByClassName(engines[i]+"-specific");
+  		var j;
+  		for (j = 0; j < els.length; j++)
+  		{ 
+  			var el = els[j];
+        if(engines[i]==engine)
+          el.style.display = "block";
+        else
+          el.style.display = "none";
+  		}
+      var els2 = document.getElementsByClassName(engines[i]+"-button");
+      for (j = 0; j < els2.length; j++)
+      { 
+        var el = els2[j];
+        if(engines[i]==engine)
+        {
+          el.style.backgroundColor  = "silver";
+          el.style.color="white";
+        }
+      }
+  	}
+    setCookie("engine",engine);
+  }
+  </script>
 </head>

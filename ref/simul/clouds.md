@@ -24,6 +24,8 @@ Classes and Structures
 | struct [CloudKeyframe](clouds/cloudkeyframe) |  |
 | class [CloudKeyframer](clouds/cloudkeyframer) |  |
 | class [CloudProperties](clouds/cloudproperties) |  |
+| class [CloudRenderer](clouds/cloudrenderer) | Class for real-time volumetric cloud rendering.<br> |
+| struct [CloudRenderingOptions](clouds/cloudrenderingoptions) | This controls the rendering of clouds.<br> |
 | struct [CloudVolume](clouds/cloudvolume) |  |
 | struct [DepthTextureStruct](clouds/depthtexturestruct) |  |
 | class [DoLightSteps](clouds/dolightsteps) |  |
