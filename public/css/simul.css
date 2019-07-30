@@ -1,15 +1,14 @@
 .custom-search {
 	min-height: 49px;
 }
-.options-bar
-{
-	width: 100%;
-	height: 40px;
-	padding: 0px;
-	border: 0px;
-	margin: 0px;
-	background: silver;
-  position: fixed;
+.options-bar {
+    width: 100%;
+    height: 40px;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    background: silver;
+    display: block;
 }
 .options-bar ul
 {
