@@ -173,3 +173,7 @@ h3
     font-weight: bold;
     color: #2096f3;
 }
+a.sidebar-nav-item:hover, a.sidebar-nav-item:focus {
+    text-decoration: unset;
+    color: #2096f3;
+}
