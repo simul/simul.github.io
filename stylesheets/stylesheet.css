@@ -401,3 +401,7 @@ text-align: left;
 .sidebar {
     color: #505050;
 }
+
+.container.content {
+    padding-top: 40px;
+}
