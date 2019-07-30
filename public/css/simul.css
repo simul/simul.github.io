@@ -157,6 +157,9 @@ h3
 .sidebar a {
     color: #505050;
 }
+.sidebar {
+    color: #505050;
+}
 .theme-base-0c .sidebar {
     background-color: #f4f4f5;
     border-color: #dedede;
