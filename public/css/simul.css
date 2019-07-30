@@ -206,3 +206,15 @@ a.sidebar-nav-item:hover, a.sidebar-nav-item:focus {
 .theme-base-0e .content a, .theme-base-0e .related-posts li a:hover {
     color: #2096f3;
 }
+
+.sidebar-1 {
+    font-size: 18px;
+}
+.sidebar ul {
+    padding-left: 10px;
+}
+.sidebar-nav-item {
+    display: block;
+    line-height: 15px;
+    padding: 4px 0px;
+}
