@@ -9,6 +9,7 @@
 	border: 0px;
 	margin: 0px;
 	background: silver;
+  position: fixed;
 }
 .options-bar ul
 {
@@ -115,7 +116,8 @@
 	background-color:#139c88;
 }
 
-#banner-index {
+#banner-index
+{
 	width: 100%;
 	padding: 0px;
 	top: 0px;
@@ -127,13 +129,25 @@
 	z-index: 1;
 	box-shader: 0 1px 3px rgba(0, 0, 0, 0.12);
 }
-.sidebar {
+.sidebar
+{
 	top: 90px;
 	overflow-y: scroll;
 }
-code, pre code {
+code, pre code
+{
 	font-size: 12px;
 }
-h3 {
+h3
+{
 	border-bottom: 2px #eee solid;
+}
+
+/* Fix the problem of bookmark targets being hidden by the header*/
+:target::before
+{
+  content: "";
+  display: block;
+  height: 140px; /* fixed header height is 90px, options bar is 40px*/
+  margin: -140px 0 0; /* negative fixed header height */
 }

@@ -1,0 +1,107 @@
+---
+title: BoundedWaterObject
+layout: reference
+weight: 0
+---
+class BoundedWaterObject
+===
+
+| Include: | Terrain/BoundedWaterObject.h |
+
+
+
+Functions
+---
+
+| vec3 | [getDimension](#getDimension)() |
+| vec3 | [getLocation](#getLocation)() |
+| int2 | [getQuadDensity](#getQuadDensity)() |
+| float | [getRotation](#getRotation)() |
+| uint | [getTotalVerticies](#getTotalVerticies)() |
+| vec4 * | [getWaterProbeOutputs](#getWaterProbeOutputs)() |
+| simul::crossplatform::StructuredBuffer * | [getWaterProbeOutputsBuffer](#getWaterProbeOutputsBuffer)() |
+| vec4 * | [getWaterProbePositions](#getWaterProbePositions)() |
+| simul::terrain::localWaterValues * | [getWaterValues](#getWaterValues)() |
+| simul::terrain::WaveGrid * | [getWaveGrid](#getWaveGrid)() |
+| void | [InvalidateDeviceObjects](#InvalidateDeviceObjects)() |
+| void | [PreRenderUpdate](#PreRenderUpdate)(simul::crossplatform::DeviceContext deviceContext, float real_time_seconds) |
+| void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform r) |
+| void | [setDimension](#setDimension)(vec3 newDimension) |
+| void | [setLocation](#setLocation)(vec3 newLocation) |
+| void | [setRotation](#setRotation)(float newRotation) |
+| void | [setWaterGlobals](#setWaterGlobals)(simul::terrain::globalWaterValues newWaterGlobals) |
+| void | [setWaterProbeOutputs](#setWaterProbeOutputs)(vec4 outputs) |
+| void | [setWaterProbePosition](#setWaterProbePosition)(int ID, vec3 pos) |
+| void | [setWaterWaveletsSimulator](#setWaterWaveletsSimulator)(simul::terrain::WaterWaveletsSimulator o) |
+| void | [updateLODs](#updateLODs)() |
+| void | [updateQuadDensity](#updateQuadDensity)(vec3 camPos) |
+
+
+Functions
+---
+
+### <a name="getDimension"/>vec3 getDimension()
+Get the dimension of the center of the water object
+
+### <a name="getLocation"/>vec3 getLocation()
+Get the location of the center of the water object
+
+### <a name="getQuadDensity"/>int2 getQuadDensity()
+Get the dimensions of how many quads the surface of the water object is using
+
+### <a name="getRotation"/>float getRotation()
+Get the rotation of the center of the water object
+
+### <a name="getTotalVerticies"/>uint getTotalVerticies()
+Get the total verticies used to render the water object
+
+### <a name="getWaterProbeOutputs"/>vec4 * getWaterProbeOutputs()
+Get the Array of results from the water probes associated with this water object
+
+### <a name="getWaterProbeOutputsBuffer"/>simul::crossplatform::StructuredBuffer * getWaterProbeOutputsBuffer()
+Get a pointer to the probe outputs buffer
+
+### <a name="getWaterProbePositions"/>vec4 * getWaterProbePositions()
+Get the Array of positions of the water probes associated with this water object
+
+### <a name="getWaterValues"/>simul::terrain::localWaterValues * getWaterValues()
+Get a pointer the water values of this water object
+
+### <a name="getWaveGrid"/>simul::terrain::WaveGrid * getWaveGrid()
+Get the wave grid that the water object is using to generate its surface
+
+### <a name="InvalidateDeviceObjects"/>void InvalidateDeviceObjects()
+Platform-dependent function called when uinitializing the water object.
+
+### <a name="PreRenderUpdate"/>void PreRenderUpdate(simul::crossplatform::DeviceContext deviceContext, float real_time_seconds)
+Once per-frame update. Do this before any rendering each frame.
+
+### <a name="RestoreDeviceObjects"/>void RestoreDeviceObjects(simul::crossplatform::RenderPlatform r)
+Platform-dependent function called when initializing the water object.
+
+### <a name="setDimension"/>void setDimension(vec3 newDimension)
+Set the dimension of the center of the water object
+
+### <a name="setLocation"/>void setLocation(vec3 newLocation)
+Set the location of the center of the water object
+
+### <a name="setRotation"/>void setRotation(float newRotation)
+Set the rotation of the center of the water object
+
+### <a name="setWaterGlobals"/>void setWaterGlobals(simul::terrain::globalWaterValues newWaterGlobals)
+Set the global water values
+
+### <a name="setWaterProbeOutputs"/>void setWaterProbeOutputs(vec4 outputs)
+Set the Array of results from the water probes associated with this water object
+
+### <a name="setWaterProbePosition"/>void setWaterProbePosition(int ID, vec3 pos)
+Set the Array of positions of the water probes associated with this water object
+
+### <a name="setWaterWaveletsSimulator"/>void setWaterWaveletsSimulator(simul::terrain::WaterWaveletsSimulator o)
+Set the water wavelets simulator that this water object will use to generate its surface
+
+### <a name="updateLODs"/>void updateLODs()
+Update the LOD values depending on the size of the object
+
+### <a name="updateQuadDensity"/>void updateQuadDensity(vec3 camPos)
+Update the level of detail of the surface of the water object depending on how far away the camera is
