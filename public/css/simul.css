@@ -177,3 +177,5 @@ a.sidebar-nav-item:hover, a.sidebar-nav-item:focus {
     text-decoration: unset;
     color: #2096f3;
 }
+.theme-base-0c .content a, .theme-base-0c .related-posts li a:hover {
+    color: #2096f3;}
