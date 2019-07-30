@@ -179,3 +179,33 @@ a.sidebar-nav-item:hover, a.sidebar-nav-item:focus {
 }
 .theme-base-0c .content a, .theme-base-0c .related-posts li a:hover {
     color: #2096f3;}
+
+/*<-->*/
+.theme-base-0b .sidebar {
+    background-color: #e6e6e6;
+}
+.sidebar a {
+    color: #505050;
+}
+.sidebar {
+    color: #505050;
+}
+.theme-base-0b .sidebar {
+    background-color: #f4f4f5;
+    border-color: #dedede;
+    border-style: solid;
+    border-width: 0px 1px 0px 0px;
+}
+.container.content {
+    padding-top: 40px;
+}
+.sidebar-nav-item.active {
+    font-weight: bold;
+    color: #2096f3;
+}
+a.sidebar-nav-item:hover, a.sidebar-nav-item:focus {
+    text-decoration: unset;
+    color: #2096f3;
+}
+.theme-base-0b .content a, .theme-base-0b .related-posts li a:hover {
+    color: #2096f3;}
