@@ -300,3 +300,16 @@ input:checked + .slider:before {
     display: flex;
     justify-content: flex-end;
 }
+button.option_btn {
+    border: #a9a9a9;
+    border-width: 1px;
+    border-style: solid;
+}
+button.option_btn:hover {
+    background-color: #2096f3;
+    color: white;
+}
+/*Option bar is hidden until the new content is pushed*/
+.options-bar {
+    display: none;
+}
