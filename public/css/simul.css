@@ -296,3 +296,7 @@ input:checked + .slider:before {
     border-style: solid;
     border-width: 0px 0px 1px 0px;
 }
+.options-bar {
+    display: flex;
+    justify-content: flex-end;
+}
