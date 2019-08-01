@@ -97,12 +97,12 @@
   }
 }
 
-.options-bar button
-{
-    background-color: silver;
-    color: black;
+.options-bar button {
     border: none;
-    padding: 12px;
+    padding: 10px 16px;
+    border-radius: 7px;
+    margin-top: 6px;
+    font-size: 13px;
 }
 
 .ue4-specific
