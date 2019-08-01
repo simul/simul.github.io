@@ -4,7 +4,7 @@ layout: reference
 weight: 1
 ---
 
-##Introduction to trueSKY
+## Introduction to trueSKY
 
 TrueSKY is the culmination of many years' research and development. It is based on physical principles
 of light scattering and absorption, and is highly optimized for speed. We believe it is the best-performing system
