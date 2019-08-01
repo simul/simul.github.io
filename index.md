@@ -4,8 +4,6 @@ layout: reference
 weight: 0
 ---
 
-![trueSKY](/images/MainPageScreenshot.png)
-
 ## trueSKY
 trueSKY is a software development kit that allows realistic skies, clouds and atmospheric effects to be rendered in real time on a variety of platforms.
 
