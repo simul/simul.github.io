@@ -215,7 +215,8 @@ a.sidebar-nav-item:hover, a.sidebar-nav-item:focus {
 }
 
 .sidebar-1 {
-    font-size: 18px;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .sidebar ul {
