@@ -5,9 +5,7 @@ weight: 60
 ---
 =================<br>Previous: <a href="classes/mixed">Mixed Resolution Compositing</a>
 
-The Sky Sequencer is a tool for artists, technical artists, level designers, 
-and mission planners. It also helps programmers to understand the workings of True Sky's sky, 
-clouds and time-of-day systems.
+The Sky Sequencer is a tool for artists, technical artists, level designers, and mission planners. It also helps programmers to understand the workings of True Sky's sky, clouds and time-of-day systems.
 
 To launch the Sequencer, go to Start Menu/All Programs/Simul/Sky Sequencer/Sky Sequencer.
 
@@ -19,15 +17,9 @@ The Timeline
 ![](/Images/Timeline.png)
 
 
-To change the current time, drag the red vertical line (the time marker) by its 
-handle. To change the visible time-window, drag the timeline at the bottom. To 
-adjust the range of visible time, use the mousewheel to zoom in and out.
+To change the current time, drag the red vertical line (the time marker) by its handle. To change the visible time-window, drag the timeline at the bottom. To adjust the range of visible time, use the mousewheel to zoom in and out.
 
-To select keyframes, either click on a single keyframe, shift-click to select 
-multiple keyframes, or box-select them. When one or more keyframes are selected, 
-their properties can be changed in the property box. Changing any property 
-affects all selected keyframes of the appropriate type (e.g. all cloud 
-keyframes, or all sky keyframes.)
+To select keyframes, either click on a single keyframe, shift-click to select multiple keyframes, or box-select them. When one or more keyframes are selected, their properties can be changed in the property box. Changing any property affects all selected keyframes of the appropriate type (e.g. all cloud keyframes, or all sky keyframes.)
 ![](/Images/SkyKeyframeSelect.png)
 
 
@@ -39,49 +31,33 @@ To select a layer (the sky, a layer of clouds, etc.), click on its name in the c
 ![](/Images/SkyLayerSelect.png)
 
 
-To add a keyframe, right-click on the timeline and select the "Add sky 
-keyframe..." or "Add cloud keyframe..." option.
+To add a keyframe, right-click on the timeline and select the "Add sky keyframe..." or "Add cloud keyframe..." option.
 
-Sky keyframes determine the colours of the sky from horizon to zenith, any haze 
-effect, and light colour.
+Sky keyframes determine the colours of the sky from horizon to zenith, any haze effect, and light colour.
 
-Cloud keyframes determine the properties of the cloud layer at a given time. As 
-the light direction changes with time of day, it is necessary to have enough 
-cloud keyframes to reflect the lighting throughout the day.
+Cloud keyframes determine the properties of the cloud layer at a given time. As the light direction changes with time of day, it is necessary to have enough cloud keyframes to reflect the lighting throughout the day.
 
 Map Window
 ----------
-This window shows the cloud keyframes in a plan view. Wind heading and speed affects the
-position of each keyframe - or they can be positioned individually. The camera is shown
-as a red line indicating its direction of view. Rain regions are shown as filled grey circles
-(blue when highlighted).
+This window shows the cloud keyframes in a plan view. Wind heading and speed affects the position of each keyframe - or they can be positioned individually. The camera is shown as a red line indicating its direction of view. Rain regions are shown as filled grey circles (blue when highlighted).
 
 Properties Window
 -----------------
 
-The Properties Window can be activated from the Window>>Properties menu option. Whatever
-is selected in the timeline can be edited in the properties window. Its contents depend
-on the current selection.
+The Properties Window can be activated from the Window>>Properties menu option. Whatever is selected in the timeline can be edited in the properties window. Its contents depend on the current selection.
 
-When nothing is selected (click on a blank part of the timeline), the general properties
-are shown, including camera and view properties.
+When nothing is selected (click on a blank part of the timeline), the general properties are shown, including camera and view properties.
 
 Performance Window
 ------------------
 <table>
 <tr>
 <td>
-The Performance Window can be activated from the Window>>Performance menu option. When
-active, this window shows a text display of GPU and CPU profiling data for trueSKY. The GPU
-data is taken from the DirectX11 view.
+The Performance Window can be activated from the Window>>Performance menu option. When active, this window shows a text display of GPU and CPU profiling data for trueSKY. The GPU data is taken from the DirectX11 view.
 
-The values are shown in a hierarchical tree - the time for each element includes the times
-of its children. The numbers given are times in milliseconds. The colour of the text for
-each item indicates what percentage of its parent time it occupies. The more red the text,
-the larger its contribution.
+The values are shown in a hierarchical tree - the time for each element includes the times of its children. The numbers given are times in milliseconds. The colour of the text for each item indicates what percentage of its parent time it occupies. The more red the text, the larger its contribution.
 
-You'll see a slight pause in the Sequencer about once per second as the performance window
-updates - this doesn't affect the measurements.
+You'll see a slight pause in the Sequencer about once per second as the performance window updates - this doesn't affect the measurements.
 </td>
 <td>
 

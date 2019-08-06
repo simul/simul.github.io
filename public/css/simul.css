@@ -315,4 +315,6 @@ button.option_btn:hover {
 }
 .content-container {
     max-width: 60%;
+    white-space: normal;
+    word-wrap: normal;
 }
