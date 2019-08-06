@@ -313,3 +313,6 @@ button.option_btn:hover {
 .options-bar {
     display: none;
 }
+.content-container {
+    max-width: 60%;
+}
