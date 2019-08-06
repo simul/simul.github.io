@@ -63,7 +63,7 @@ You'll see a slight pause in the Sequencer about once per second as the performa
 
 ![](/Images/PerformanceWindow.jpg)
 </td>
-</td>
+</tr>
 </table>
 
 Features
