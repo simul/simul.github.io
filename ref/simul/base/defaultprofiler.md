@@ -39,7 +39,7 @@ and print this text to screen.
 
   
 
-[simul::base::ProfilingInterface](profilinginterface)
+[simul::base::ProfilingInterface](profilinginterface.html)
 
 Functions
 ---
@@ -82,16 +82,16 @@ and print this text to screen.
 
 Base Classes
 ---
-[simul::base::ProfilingInterface](profilinginterface)
+[simul::base::ProfilingInterface](profilinginterface.html)
 
 Functions
 ---
-
-### <a name="Begin"/>void Begin(char txt)
+<a name="Begin"></a>
+### void Begin(char txt)
 Mark the start of a profiling block.
-
-### <a name="End"/>void End()
+<a name="End"></a>
+### void End()
 Allocate nbytesbytes of memory, aligned to alignand return a pointer to them.
-
-### <a name="EndFrame"/>void EndFrame()
+<a name="EndFrame"></a>
+### void EndFrame()
 Call this at the start of the frame to set-up the profiler for data-gathering.

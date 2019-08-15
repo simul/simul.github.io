@@ -11,7 +11,7 @@ class Noise3D
 A 3D Perlin noise class.
   
 
-[simul::math::NoiseInterface](noiseinterface)
+[simul::math::NoiseInterface](noiseinterface.html)
 
 Functions
 ---
@@ -24,14 +24,14 @@ A 3D Perlin noise class.
 
 Base Classes
 ---
-[simul::math::NoiseInterface](noiseinterface)
+[simul::math::NoiseInterface](noiseinterface.html)
 
 Functions
 ---
-
-### <a name="Setup"/>void Setup(unsigned int freq, int RandomSeed, int octaves, float persistence)
+<a name="Setup"></a>
+### void Setup(unsigned int freq, int RandomSeed, int octaves, float persistence)
 Define the grid of pseudo-random numbers to be used in the PerlinNoise3D function. The parameter freq is the
 frequency, or grid-size.
 RandomSeed is a reproducible seed for the pseudo-random number generation.
-octaves is the number of octaves of noise super-imposed.
-persistence is the relative scaling of subsequent octaves - higher persistence leads to a more noisy function.
+Octaves is the number of octaves of noise super-imposed.
+Persistence is the relative scaling of subsequent octaves - higher persistence leads to a more noisy function.

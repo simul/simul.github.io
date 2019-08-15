@@ -23,6 +23,6 @@ A CPU 3D texture.
 
 Functions
 ---
-
-### <a name="GetChecksum"/>unsigned int GetChecksum()
+<a name="GetChecksum"></a>
+### unsigned int GetChecksum()
 Returns a checksum that changes whenever the texture is modified.

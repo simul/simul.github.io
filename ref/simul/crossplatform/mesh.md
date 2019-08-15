@@ -18,8 +18,8 @@ Functions
 
 Functions
 ---
-
-### <a name="GetSubMesh"/>simul::crossplatform::Mesh::SubMesh * GetSubMesh(int index)
+<a name="GetSubMesh"></a>
+### simul::crossplatform::Mesh::SubMesh * GetSubMesh(int index)
 The submeshes are the parts that have different materials.
 
 Fields

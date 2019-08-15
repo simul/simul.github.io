@@ -28,21 +28,21 @@ A class that stores star positions by declination, ascension and magnitude.
 
 Functions
 ---
-
-### <a name="GetNumStars"/>int GetNumStars()
+<a name="GetNumStars"></a>
+### int GetNumStars()
 Get the total number of stars
-
-### <a name="GetNumVisibleStars"/>int GetNumVisibleStars()
+<a name="GetNumVisibleStars"></a>
+### int GetNumVisibleStars()
 Get the total number of visible stars
-
-### <a name="GetStar"/>simul::sky::Star  const & GetStar(int i)
+<a name="GetStar"></a>
+### simul::sky::Star  const & GetStar(int i)
 Get a star from the complete list
-
-### <a name="GetVisibleStar"/>simul::sky::Star  const & GetVisibleStar(int i)
+<a name="GetVisibleStar"></a>
+### simul::sky::Star  const & GetVisibleStar(int i)
 Get a star from the currently visible list
-
-### <a name="UseDefaultStars"/>void UseDefaultStars()
+<a name="UseDefaultStars"></a>
+### void UseDefaultStars()
 Initialize the stars with the default stars - the stars seen from Earth.
-
-### <a name="UseUrsaMajor"/>void UseUrsaMajor(float max_magnitude)
+<a name="UseUrsaMajor"></a>
+### void UseUrsaMajor(float max_magnitude)
 Initialize the stars with only Ursa Major as seen from Earth. Useful for testing ephemerides.

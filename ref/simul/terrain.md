@@ -6,23 +6,27 @@ weight: 0
 namespace terrain
 ===
 
-| Include: | Terrain/MaterialInterface.h |
+| Include: | Clouds/BaseWeatherRenderer.h |
 
 
 
 Classes and Structures
 ---
 
-| struct [beaufortConstants](terrain/beaufortconstants) |  |
-| struct [boundlessOceanProperties](terrain/boundlessoceanproperties) |  |
-| struct [globalWaterValues](terrain/globalwatervalues) |  |
-| struct [localWaterValues](terrain/localwatervalues) |  |
-| struct [shoreTexture](terrain/shoretexture) |  |
-| struct [surfaceFlowRayBuffer](terrain/surfaceflowraybuffer) |  |
-| struct [waterBuoyancyObject](terrain/waterbuoyancyobject) |  |
-| struct [WaterBuoyancyObjectValues](terrain/waterbuoyancyobjectvalues) |  |
-| struct [waterProbe](terrain/waterprobe) |  |
-| struct [WaterProbeValues](terrain/waterprobevalues) |  |
-| struct [WaveGrid](terrain/wavegrid) |  |
+| struct [beaufortConstants](terrain/beaufortconstants.html) |  |
+| struct [boundlessOceanProperties](terrain/boundlessoceanproperties.html) |  |
+| struct [globalWaterValues](terrain/globalwatervalues.html) |  |
+| struct [localWaterValues](terrain/localwatervalues.html) |  |
+| struct [shoreTexture](terrain/shoretexture.html) |  |
+| struct [surfaceFlowRayBuffer](terrain/surfaceflowraybuffer.html) |  |
+| struct [waterBuoyancyObject](terrain/waterbuoyancyobject.html) |  |
+| struct [waterMaskingObject](terrain/watermaskingobject.html) |  |
+| struct [WaterMeshObjectValues](terrain/watermeshobjectvalues.html) |  |
+| struct [waterProbe](terrain/waterprobe.html) |  |
+| struct [WaterProbeValues](terrain/waterprobevalues.html) |  |
+| struct [WaveGrid](terrain/wavegrid.html) |  |
 
 
+
+Variables
+---

@@ -6,7 +6,7 @@ weight: 0
 class HdrRenderer
 ===
 
-| Include: | Platform/CrossPlatform/HdrRenderer.h |
+| Include: | Clouds/TrueSkyRenderer.h |
 
 
 
@@ -22,20 +22,20 @@ Functions
 
 Functions
 ---
-
-### <a name="InvalidateDeviceObjects"/>void InvalidateDeviceObjects()
+<a name="InvalidateDeviceObjects"></a>
+### void InvalidateDeviceObjects()
 Platform-dependent function called when uninitializing the HDR renderer.
-
-### <a name="Render"/>void Render(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture texture, float Exposure, float Gamma, float offsetX)
+<a name="Render"></a>
+### void Render(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture texture, float Exposure, float Gamma, float offsetX)
 Render: write the given texture to screen using the HDR rendering shaders
-
-### <a name="RenderDebug"/>void RenderDebug(simul::crossplatform::DeviceContext deviceContext, int x0, int y0, int w, int h)
+<a name="RenderDebug"></a>
+### void RenderDebug(simul::crossplatform::DeviceContext deviceContext, int x0, int y0, int w, int h)
 Draw the debug textures
-
-### <a name="RenderGlowTexture"/>void RenderGlowTexture(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture texture)
+<a name="RenderGlowTexture"></a>
+### void RenderGlowTexture(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture texture)
 Create the glow texture that will be overlaid due to strong lights.
-
-### <a name="RestoreDeviceObjects"/>void RestoreDeviceObjects(simul::crossplatform::RenderPlatform r)
+<a name="RestoreDeviceObjects"></a>
+### void RestoreDeviceObjects(simul::crossplatform::RenderPlatform r)
 Platform-dependent function called when initializing the HDR renderer.
 
 Fields

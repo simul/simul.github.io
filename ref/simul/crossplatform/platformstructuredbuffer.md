@@ -18,8 +18,8 @@ Functions
 
 Functions
 ---
-
-### <a name="ActualApply"/>void ActualApply(simul::crossplatform::DeviceContext, simul::crossplatform::EffectPass, int, bool)
+<a name="ActualApply"></a>
+### void ActualApply(simul::crossplatform::DeviceContext, simul::crossplatform::EffectPass, int, bool)
 For RenderPlatform's use only: do not call.
 
 Fields

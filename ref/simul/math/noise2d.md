@@ -11,7 +11,7 @@ class Noise2D
 A 3D Perlin noise class.
   
 
-[simul::math::NoiseInterface](noiseinterface)
+[simul::math::NoiseInterface](noiseinterface.html)
 
 Functions
 ---
@@ -24,11 +24,11 @@ A 3D Perlin noise class.
 
 Base Classes
 ---
-[simul::math::NoiseInterface](noiseinterface)
+[simul::math::NoiseInterface](noiseinterface.html)
 
 Functions
 ---
-
-### <a name="Setup"/>void Setup(unsigned int freq, int RandomSeed, int octaves, float persistence)
+<a name="Setup"></a>
+### void Setup(unsigned int freq, int RandomSeed, int octaves, float persistence)
 Define the grid of pseudo-random numbers to be used in the PerlinNoise2D function. The parameter freq is the
 frequency, or grid-size.

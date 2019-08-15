@@ -30,25 +30,25 @@ A class to capture light from the sky in real time for diffuse and specular ligh
 
 Functions
 ---
-
-### <a name="GetSphericalHarmonics"/>bool GetSphericalHarmonics(simul::crossplatform::DeviceContext deviceContext, float targetShValues)
-
-### <a name="InvalidateDeviceObjects"/>void InvalidateDeviceObjects()
+<a name="GetSphericalHarmonics"></a>
+### bool GetSphericalHarmonics(simul::crossplatform::DeviceContext deviceContext, float targetShValues)
+<a name="InvalidateDeviceObjects"></a>
+### void InvalidateDeviceObjects()
 Free the GPU objects.
-
-### <a name="Probe"/>bool Probe(simul::crossplatform::DeviceContext deviceContext, int mip_size, int face_index, uint2 pos, uint2 size, vec4 targetValuesFloat4)
-
-### <a name="RecompileShaders"/>void RecompileShaders()
+<a name="Probe"></a>
+### bool Probe(simul::crossplatform::DeviceContext deviceContext, int mip_size, int face_index, uint2 pos, uint2 size, vec4 targetValuesFloat4)
+<a name="RecompileShaders"></a>
+### void RecompileShaders()
 Recompile the shaders for this class.
-
-### <a name="Render"/>void Render(simul::crossplatform::DeviceContext parentDeviceContext, simul::clouds::BaseWeatherRenderer baseWeatherRenderer, int cube_id, simul::crossplatform::BaseFramebuffer fb, int faceIndex, mat4 engineToSimulMatrix4x4, float blend, float exposure, float gamma)
+<a name="Render"></a>
+### void Render(simul::crossplatform::DeviceContext parentDeviceContext, simul::clouds::BaseWeatherRenderer baseWeatherRenderer, int cube_id, simul::crossplatform::BaseFramebuffer fb, int faceIndex, mat4 engineToSimulMatrix4x4, float blend, float exposure, float gamma)
 Fill in the texture.
-
-### <a name="RestoreDeviceObjects"/>void RestoreDeviceObjects(simul::crossplatform::RenderPlatform r)
+<a name="RestoreDeviceObjects"></a>
+### void RestoreDeviceObjects(simul::crossplatform::RenderPlatform r)
 Initialize GPU objects.
-
-### <a name="ShowDebug"/>void ShowDebug(simul::crossplatform::DeviceContext deviceContext, int X, int Y, int w)
+<a name="ShowDebug"></a>
+### void ShowDebug(simul::crossplatform::DeviceContext deviceContext, int X, int Y, int w)
 Show debug displays onscreen.
-
-### <a name="Update"/>void Update(simul::crossplatform::DeviceContext deviceContext, simul::clouds::BaseWeatherRenderer weatherRenderer)
+<a name="Update"></a>
+### void Update(simul::crossplatform::DeviceContext deviceContext, simul::clouds::BaseWeatherRenderer weatherRenderer)
 Update the skylight per-frame.

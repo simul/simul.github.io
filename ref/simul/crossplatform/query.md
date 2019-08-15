@@ -6,7 +6,7 @@ weight: 0
 struct Query
 ===
 
-| Include: | Platform/CrossPlatform/GpuProfiler.h |
+| Include: | Platform/CrossPlatform/Effect.h |
 
 
 
@@ -18,8 +18,8 @@ Functions
 
 Functions
 ---
-
-### <a name="GetData"/>bool GetData(simul::crossplatform::DeviceContext deviceContext, void data, size_t sz)
+<a name="GetData"></a>
+### bool GetData(simul::crossplatform::DeviceContext deviceContext, void data, size_t sz)
 Get query data. Returns true if successful, or false otherwise.
 Blocking queries will return false until they succeed.
 

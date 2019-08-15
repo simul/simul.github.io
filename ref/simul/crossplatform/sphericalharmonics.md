@@ -31,31 +31,31 @@ A class that calculates spherical harmonics from a cubemap, and stores the resul
 
 Functions
 ---
-
-### <a name="CalcSphericalHarmonics"/>void CalcSphericalHarmonics(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture texture)
+<a name="CalcSphericalHarmonics"></a>
+### void CalcSphericalHarmonics(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture texture)
 Calculate the spherical harmonics of this cubemap and store the result internally.
 Changing the number of bands will resize the internal storeage.
-
-### <a name="CopyMip"/>void CopyMip(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture tex, int face, int mip, float blend)
+<a name="CopyMip"></a>
+### void CopyMip(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture tex, int face, int mip, float blend)
 Copy from a given mip face to the next one down, with blending or without (if blend is 0).
-
-### <a name="InvalidateDeviceObjects"/>void InvalidateDeviceObjects()
+<a name="InvalidateDeviceObjects"></a>
+### void InvalidateDeviceObjects()
 Platform-dependent function called when uninitializing the Spherical Harmonics.
-
-### <a name="Probe"/>bool Probe(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture buffer_texture, int mip_size, int face_index, uint2 pos, uint2 size, vec4 targetValuesFloat4)
+<a name="Probe"></a>
+### bool Probe(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture buffer_texture, int mip_size, int face_index, uint2 pos, uint2 size, vec4 targetValuesFloat4)
 Probe values from cubemap.
-
-### <a name="RecompileShaders"/>void RecompileShaders()
+<a name="RecompileShaders"></a>
+### void RecompileShaders()
 Platform-dependent function to reload the shaders - only use this for debug purposes.
-
-### <a name="RenderEnvmap"/>void RenderEnvmap(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture target, int cubemapIndex, float blend)
+<a name="RenderEnvmap"></a>
+### void RenderEnvmap(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture target, int cubemapIndex, float blend)
 Draw a diffuse environment map to the specified framebuffer.
-
-### <a name="RenderMipsByRoughness"/>void RenderMipsByRoughness(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture target)
+<a name="RenderMipsByRoughness"></a>
+### void RenderMipsByRoughness(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture target)
 Taking the zero mip as the initial data source, use the formula roughness=mip/max_mip to render it down to the lower mips.
-
-### <a name="ResetBuffers"/>void ResetBuffers()
+<a name="ResetBuffers"></a>
+### void ResetBuffers()
 Make sure no invalid data is retained.
-
-### <a name="RestoreDeviceObjects"/>void RestoreDeviceObjects(simul::crossplatform::RenderPlatform r)
+<a name="RestoreDeviceObjects"></a>
+### void RestoreDeviceObjects(simul::crossplatform::RenderPlatform r)
 Platform-dependent function called when initializing the Spherical Harmonics.

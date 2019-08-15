@@ -6,10 +6,8 @@ weight: 0
 class PrecipitationRenderer
 ===
 
-| Include: | Clouds/PrecipitationRenderer.h |
+| Include: | Clouds/BaseWeatherRenderer.h |
 
-The class that renders rain and snow.
-  
 
 
 Functions
@@ -26,51 +24,52 @@ Functions
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform renderPlatform) |
 | void | [SetBaseSkyInterface](#SetBaseSkyInterface)(simul::sky::BaseSkyInterface s) |
 | void | [SetRainDepthTextureScale](#SetRainDepthTextureScale)(float s) |
+| void | [SetRainMap](#SetRainMap)(CloudShadowStruct str) |
 | void | [SetRandomTexture3D](#SetRandomTexture3D)(simul::crossplatform::Texture texture) |
 | void | [SetWind](#SetWind)(float speed, float heading_degrees) |
-
-The class that renders rain and snow.
-  
 
 
 Functions
 ---
-
-### <a name="PrecipitationRenderer"/> PrecipitationRenderer()
+<a name="PrecipitationRenderer"></a>
+###  PrecipitationRenderer()
 Constructor
-
-### <a name="~PrecipitationRenderer"/> ~PrecipitationRenderer()
+<a name="~PrecipitationRenderer"></a>
+###  ~PrecipitationRenderer()
 Destructor
-
-### <a name="InvalidateDeviceObjects"/>void InvalidateDeviceObjects()
+<a name="InvalidateDeviceObjects"></a>
+### void InvalidateDeviceObjects()
 Platform-dependent function called when uninitializing the precipitation renderer.
-
-### <a name="New"/>void New()
+<a name="New"></a>
+### void New()
 Clear the data()
-
-### <a name="PreRenderUpdate"/>void PreRenderUpdate(simul::crossplatform::DeviceContext deviceContext, float dt_seconds)
+<a name="PreRenderUpdate"></a>
+### void PreRenderUpdate(simul::crossplatform::DeviceContext deviceContext, float dt_seconds)
 Once per-frame update. Do this before any rendering each frame.
-
-### <a name="RecompileShaders"/>void RecompileShaders()
+<a name="RecompileShaders"></a>
+### void RecompileShaders()
 Platform-dependent function to reload the shaders - only use this for debug purposes.
-
-### <a name="Render"/>void Render(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture depth_tex, simul::crossplatform::Texture cubemapTexture, float max_fade_distance_metres, vec4 viewportTextureRegionXYWH, vec3 sunlight, vec3 moonlight, simul::clouds::RainMethod rainMethod, float time, bool write_blend_alpha)
+<a name="Render"></a>
+### void Render(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture depth_tex, simul::crossplatform::Texture cubemapTexture, float max_fade_distance_metres, vec4 viewportTextureRegionXYWH, vec3 sunlight, vec3 moonlight, simul::clouds::RainMethod rainMethod, float time, bool write_blend_alpha)
 Call this to draw precipitation.
-
-### <a name="RenderOverlay"/>void RenderOverlay(simul::crossplatform::DeviceContext deviceContext, int x0, int y0, int dx, int dy)
+<a name="RenderOverlay"></a>
+### void RenderOverlay(simul::crossplatform::DeviceContext deviceContext, int x0, int y0, int dx, int dy)
 Show the textures onscreen for debugging.
-
-### <a name="RestoreDeviceObjects"/>void RestoreDeviceObjects(simul::crossplatform::RenderPlatform renderPlatform)
+<a name="RestoreDeviceObjects"></a>
+### void RestoreDeviceObjects(simul::crossplatform::RenderPlatform renderPlatform)
 Platform-dependent function called when initializing the precipitation renderer.
-
-### <a name="SetBaseSkyInterface"/>void SetBaseSkyInterface(simul::sky::BaseSkyInterface s)
+<a name="SetBaseSkyInterface"></a>
+### void SetBaseSkyInterface(simul::sky::BaseSkyInterface s)
 Set the sky and atmospherics interface.
-
-### <a name="SetRainDepthTextureScale"/>void SetRainDepthTextureScale(float s)
+<a name="SetRainDepthTextureScale"></a>
+### void SetRainDepthTextureScale(float s)
 Set the scale of the rain depth texture to normalize it to [0,1]
-
-### <a name="SetRandomTexture3D"/>void SetRandomTexture3D(simul::crossplatform::Texture texture)
+<a name="SetRainMap"></a>
+### void SetRainMap(CloudShadowStruct str)
+The class that renders rain and snow.
+<a name="SetRandomTexture3D"></a>
+### void SetRandomTexture3D(simul::crossplatform::Texture texture)
 Provide a random 3D texture. This is set externally so the texture can be shared.
-
-### <a name="SetWind"/>void SetWind(float speed, float heading_degrees)
+<a name="SetWind"></a>
+### void SetWind(float speed, float heading_degrees)
 Set the wind velocity.

@@ -6,7 +6,7 @@ weight: 0
 class BaseGpuSkyGenerator
 ===
 
-| Include: | Sky/BaseSkyRenderer.h |
+| Include: | Sky/BaseGpuSkyGenerator.h |
 
 
 
@@ -22,18 +22,18 @@ Functions
 
 Functions
 ---
-
-### <a name="CanPerformGPUGeneration"/>bool CanPerformGPUGeneration()
+<a name="CanPerformGPUGeneration"></a>
+### bool CanPerformGPUGeneration()
 Return true if the derived class can make sky tables using the GPU.
-
-### <a name="GetEnabled"/>bool GetEnabled()
+<a name="GetEnabled"></a>
+### bool GetEnabled()
 Whether this GPU sky generator should be used to calculate the sky.")
-
-### <a name="InvalidateDeviceObjects"/>void InvalidateDeviceObjects()
+<a name="InvalidateDeviceObjects"></a>
+### void InvalidateDeviceObjects()
 Platform-dependent function called when uninitializing the Sky Generator.
-
-### <a name="RecompileShaders"/>void RecompileShaders()
+<a name="RecompileShaders"></a>
+### void RecompileShaders()
 Platform-dependent function to reload the shaders - only use this for debug purposes.
-
-### <a name="RestoreDeviceObjects"/>void RestoreDeviceObjects(simul::crossplatform::RenderPlatform)
+<a name="RestoreDeviceObjects"></a>
+### void RestoreDeviceObjects(simul::crossplatform::RenderPlatform)
 Platform-dependent function called when initializing the Sky Generator.

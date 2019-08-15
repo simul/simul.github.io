@@ -11,7 +11,7 @@ struct CloudKeyframe
 The keyframe structure for clouds, used by simul::clouds::CloudKeyframer.
   
 
-[simul::sky::BaseKeyframe](../sky/basekeyframe)
+[simul::sky::BaseKeyframe](../sky/basekeyframe.html)
 
 Functions
 ---
@@ -32,29 +32,29 @@ The keyframe structure for clouds, used by simul::clouds::CloudKeyframer.
 
 Base Classes
 ---
-[simul::sky::BaseKeyframe](../sky/basekeyframe)
+[simul::sky::BaseKeyframe](../sky/basekeyframe.html)
 
 Functions
 ---
-
-### <a name="CloudKeyframe"/> CloudKeyframe()
+<a name="CloudKeyframe"></a>
+###  CloudKeyframe()
 < Where rain/snow is found.
-
-### <a name="GetFloat"/>float GetFloat(char name)
+<a name="GetFloat"></a>
+### float GetFloat(char name)
 Get a float with the given, case-insensitive, name
-
-### <a name="GetInt"/>int GetInt(char name)
+<a name="GetInt"></a>
+### int GetInt(char name)
 Get an int with the given, case-insensitive, name
-
-### <a name="GetPrecipitationCentre"/>simul::crossplatform::Quaterniond GetPrecipitationCentre()
+<a name="GetPrecipitationCentre"></a>
+### simul::crossplatform::Quaterniond GetPrecipitationCentre()
 Depending on precipitationRegion.lockToClouds, precipitationRegion.CentreKm is either absolute or relative.
 So this function is used to access the true centre position of the rain region.
-
-### <a name="GetPropertiesChecksum"/>unsigned int GetPropertiesChecksum()
+<a name="GetPropertiesChecksum"></a>
+### unsigned int GetPropertiesChecksum()
 Check for properties that, if altered in the keyframe, would require regeneration of
 the cloud volume:
-
-### <a name="HasFloat"/>bool HasFloat(char name)
+<a name="HasFloat"></a>
+### bool HasFloat(char name)
 Return true if the keyframe has a float value with the given, case-insensitive, name; return false otherwise. 
 
 The properties are:
@@ -107,19 +107,19 @@ The properties are:
 - scalekm.z
 - EdgeWorleyScale
 
-
-### <a name="HasInt"/>bool HasInt(char name)
+<a name="HasInt"></a>
+### bool HasInt(char name)
 Return true if the keyframe has an integer or true/false value with the given, case-insensitive, name; return false otherwise. 
 
 - Octaves
 - RegionalPrecipitation
 - LockRainToClouds
 
-
-### <a name="SetFloat"/>void SetFloat(char name, float val)
+<a name="SetFloat"></a>
+### void SetFloat(char name, float val)
 Set a float with the given, case-insensitive, name
-
-### <a name="SetInt"/>void SetInt(char name, int val)
+<a name="SetInt"></a>
+### void SetInt(char name, int val)
 Set an int with the given, case-insensitive, name
 
 Fields

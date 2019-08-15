@@ -23,6 +23,6 @@ A virtual interface class for classes that can return how much memory they use.
 
 Functions
 ---
-
-### <a name="GetMemoryUsage"/>unsigned int GetMemoryUsage()
+<a name="GetMemoryUsage"></a>
+### unsigned int GetMemoryUsage()
 Get the amount of memory used by this class instance, in bytes.

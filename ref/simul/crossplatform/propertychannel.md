@@ -18,6 +18,6 @@ Functions
 
 Functions
 ---
-
-### <a name="Get"/>float Get(double pTime)
+<a name="Get"></a>
+### float Get(double pTime)
 Query the channel value at specific time.

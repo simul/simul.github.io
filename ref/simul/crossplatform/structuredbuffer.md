@@ -10,7 +10,7 @@ classtemplate StructuredBuffer
 
 Templated structured buffer, which uses platform-specific implementations of PlatformStructuredBuffer.<br>
 
-[simul::crossplatform::BaseStructuredBuffer](basestructuredbuffer)
+[simul::crossplatform::BaseStructuredBuffer](basestructuredbuffer.html)
 
 
 Declare like so:
@@ -22,4 +22,4 @@ StructuredBuffer<Example> example;
 
 Base Classes
 ---
-[simul::crossplatform::BaseStructuredBuffer](basestructuredbuffer)
+[simul::crossplatform::BaseStructuredBuffer](basestructuredbuffer.html)

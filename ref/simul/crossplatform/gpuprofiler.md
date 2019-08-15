@@ -39,7 +39,7 @@ const char *text=simul::dx11::Profiler::GetGlobalProfiler().GetDebugText(as_html
 
   
 
-[simul::crossplatform::GpuProfilingInterface](gpuprofilinginterface)
+[simul::crossplatform::GpuProfilingInterface](gpuprofilinginterface.html)
 
 Functions
 ---
@@ -83,20 +83,20 @@ const char *text=simul::dx11::Profiler::GetGlobalProfiler().GetDebugText(as_html
 
 Base Classes
 ---
-[simul::crossplatform::GpuProfilingInterface](gpuprofilinginterface)
+[simul::crossplatform::GpuProfilingInterface](gpuprofilinginterface.html)
 
 Functions
 ---
-
-### <a name="EndFrame"/>void EndFrame(simul::crossplatform::DeviceContext deviceContext)
+<a name="EndFrame"></a>
+### void EndFrame(simul::crossplatform::DeviceContext deviceContext)
 Call this after all timeable events in a frame have completed. It is acceptable
 to call EndFrame() without having first called StartFrame() - this has no effect.
-
-### <a name="InvalidateDeviceObjects"/>void InvalidateDeviceObjects()
+<a name="InvalidateDeviceObjects"></a>
+### void InvalidateDeviceObjects()
 Platform-dependent function called when uninitializing the profiler.
-
-### <a name="RestoreDeviceObjects"/>void RestoreDeviceObjects(simul::crossplatform::RenderPlatform r)
+<a name="RestoreDeviceObjects"></a>
+### void RestoreDeviceObjects(simul::crossplatform::RenderPlatform r)
 Platform-dependent function called when initializing the profiler.
-
-### <a name="StartFrame"/>void StartFrame(simul::crossplatform::DeviceContext deviceContext)
+<a name="StartFrame"></a>
+### void StartFrame(simul::crossplatform::DeviceContext deviceContext)
 Call this before any timeable events in a frame.

@@ -6,13 +6,13 @@ weight: 0
 struct Viewport
 ===
 
-| Include: | Platform/CrossPlatform/Texture.h |
-
-A crossplatform viewport structure.
-  
+| Include: | Clouds/MixedResolutionCompositor.h |
 
 
 
-A crossplatform viewport structure.
-  
 
+
+Fields
+---
+
+**x**  A crossplatform viewport structure.

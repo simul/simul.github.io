@@ -27,18 +27,18 @@ A helpful class to calculate lens flares.
 
 Functions
 ---
-
-### <a name="GetArtifactPosition"/>float  const * GetArtifactPosition(int i)
+<a name="GetArtifactPosition"></a>
+### float  const * GetArtifactPosition(int i)
 Get the direction to the flare.
-
-### <a name="GetArtifactSize"/>float GetArtifactSize(int i)
+<a name="GetArtifactSize"></a>
+### float GetArtifactSize(int i)
 Get the size of the flare.
-
-### <a name="GetNumArtifacts"/>int GetNumArtifacts()
+<a name="GetNumArtifacts"></a>
+### int GetNumArtifacts()
 Get the number of flare artifacts.
-
-### <a name="GetNumArtifactTypes"/>int GetNumArtifactTypes()
+<a name="GetNumArtifactTypes"></a>
+### int GetNumArtifactTypes()
 Returns the number of artifact types (halo, ring, flare, etc.) - this will be the number of textures needed.
-
-### <a name="UpdateCamera"/>void UpdateCamera(float cam_dir, float dir_to_light)
+<a name="UpdateCamera"></a>
+### void UpdateCamera(float cam_dir, float dir_to_light)
 Set the camera and light directions. Do this once per frame to update the flare positions.

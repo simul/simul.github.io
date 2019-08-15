@@ -19,9 +19,9 @@ Functions
 
 Functions
 ---
-
-### <a name="GetNumSegments"/>int GetNumSegments()
+<a name="GetNumSegments"></a>
+### int GetNumSegments()
 How many spline segments?
-
-### <a name="GetSegmentLength"/>int GetSegmentLength()
+<a name="GetSegmentLength"></a>
+### int GetSegmentLength()
 How long

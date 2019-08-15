@@ -6,17 +6,17 @@ weight: 0
 class SkyKeyframer
 ===
 
-| Include: | Sky/SkyKeyframer.h |
+| Include: | Sky/BaseAtmosphericsRenderer.h |
 
-A class that maintains sky properties and interpolates them based on keyframe values.<br>
 
-[simul::base::Referenced](../base/referenced)
-[simul::sky::BaseKeyframer](basekeyframer)
-[simul::sky::BaseSkyInterface](baseskyinterface)
+[simul::base::Referenced](../base/referenced.html)
+[simul::sky::BaseKeyframer](basekeyframer.html)
+[simul::sky::BaseSkyInterface](baseskyinterface.html)
 
 Functions
 ---
 
+|  | [SkyKeyframer](#SkyKeyframer)(simul::base::MemoryInterface mem, int num_elev, int num_dist, float max_dist_km) |
 | void | [CalcSunIrradianceAtEarth](#CalcSunIrradianceAtEarth)() |
 | void | [ClearHighlightConstellations](#ClearHighlightConstellations)() |
 | void | [DaytimeToClockTime](#DaytimeToClockTime)(float t, int d, int h, int m, int s, int ms) |
@@ -50,86 +50,85 @@ Functions
 | void | [Update](#Update)() |
 | void | [EnsureSunAndMoonValidity](#EnsureSunAndMoonValidity)(simul::sky::SkyKeyframe K1) |
 
-An instance of the SkyKeyframer is kept as a member of the Environment instance.
-The SkyKeyframer interpolates the sky values, and passes the keyframe and interpolation data to external renderers,
-e.g. <a href="baseskyrenderer">BaseSkyRenderer</a>and <a href="baseatmosphericsrenderer">BaseAtmosphericsRenderer</a>.
-The generated tables are calculated for multiple altitudes - specified with SetNumAltitudes.
-The SunIrradiance value determines the colour and strength of sunlight, and is expressed in physical units. The apparent size of the sun is
-set using SetSunRadiusArcMinutes.
-  
-
 
 Base Classes
 ---
-[simul::base::Referenced](../base/referenced)
-[simul::sky::BaseKeyframer](basekeyframer)
-[simul::sky::BaseSkyInterface](baseskyinterface)
+[simul::base::Referenced](../base/referenced.html)
+[simul::sky::BaseKeyframer](basekeyframer.html)
+[simul::sky::BaseSkyInterface](baseskyinterface.html)
 
 Functions
 ---
+<a name="SkyKeyframer"></a>
+###  SkyKeyframer(simul::base::MemoryInterface mem, int num_elev, int num_dist, float max_dist_km)
+A class that maintains sky properties and interpolates them based on keyframe values.
 
-### <a name="CalcSunIrradianceAtEarth"/>void CalcSunIrradianceAtEarth()
+An instance of the SkyKeyframer is kept as a member of the Environment instance.
+The SkyKeyframer interpolates the sky values, and passes the keyframe and interpolation data to external renderers,
+e.g. 
+<a name="CalcSunIrradianceAtEarth"></a>
+### void CalcSunIrradianceAtEarth()
 Calculate SunIrradiance using the solar irradiance tables outside Earth's atmosphere, based on ColourWavelengthsNm.
-
-### <a name="ClearHighlightConstellations"/>void ClearHighlightConstellations()
+<a name="ClearHighlightConstellations"></a>
+### void ClearHighlightConstellations()
 Clear the highlighted constellations
-
-### <a name="DaytimeToClockTime"/>void DaytimeToClockTime(float t, int d, int h, int m, int s, int ms)
+<a name="DaytimeToClockTime"></a>
+### void DaytimeToClockTime(float t, int d, int h, int m, int s, int ms)
 Convert a floating-point daytime into hour, minute, second and milliseconds.
-
-### <a name="DeleteKeyframe"/>void DeleteKeyframe(int i)
+<a name="DeleteKeyframe"></a>
+### void DeleteKeyframe(int i)
 Delete a skykeyframe with the given ID
-
-### <a name="GetAltitudeTexCoord"/>float GetAltitudeTexCoord(float h_km)
+<a name="GetAltitudeTexCoord"></a>
+### float GetAltitudeTexCoord(float h_km)
 Returns the texture coordinate for the given altitude - constant per-frame.
-
-### <a name="GetDirectionToMoon"/>vec3 GetDirectionToMoon(int keyframe)
+<a name="GetDirectionToMoon"></a>
+### vec3 GetDirectionToMoon(int keyframe)
 Get the direction the moon represented as a vector
-
-### <a name="GetDirectionToSun"/>vec3 GetDirectionToSun(int keyframe)
+<a name="GetDirectionToSun"></a>
+### vec3 GetDirectionToSun(int keyframe)
 Get the direction the sun represented as a vector
-
-### <a name="GetFloat"/>float GetFloat(char name, simul::base::Variant params)
+<a name="GetFloat"></a>
+### float GetFloat(char name, simul::base::Variant params)
 Get a float with the given, case-insensitive, name
-
-### <a name="GetGpuSkyParameters"/>void GetGpuSkyParameters(simul::sky::GpuSkyParameters p, simul::sky::GpuSkyAtmosphereParameters a, simul::sky::GpuSkyInfraredParameters ir, int index)
+<a name="GetGpuSkyParameters"></a>
+### void GetGpuSkyParameters(simul::sky::GpuSkyParameters p, simul::sky::GpuSkyAtmosphereParameters a, simul::sky::GpuSkyInfraredParameters ir, int index)
 Get the GPU sky parameters corresponding to the given subdivision triplet index, and factor in eclipses and brightness power modifiers.
-
-### <a name="GetGpuSkyParameters"/>void GetGpuSkyParameters(simul::sky::GpuSkyParameters p, simul::sky::GpuSkyAtmosphereParameters a, simul::sky::GpuSkyInfraredParameters ir, simul::sky::SkyKeyframe K, float daytime, float complete)
+<a name="GetGpuSkyParameters"></a>
+### void GetGpuSkyParameters(simul::sky::GpuSkyParameters p, simul::sky::GpuSkyAtmosphereParameters a, simul::sky::GpuSkyInfraredParameters ir, simul::sky::SkyKeyframe K, float daytime, float complete)
 Get the GPU sky parameters corresponding to the given keyframe at the stated time.
-
-### <a name="GetHighlightConstellations"/>std::set  const GetHighlightConstellations()
+<a name="GetHighlightConstellations"></a>
+### std::set  const GetHighlightConstellations()
 Get the set of highlighted constellations
-
-### <a name="GetHorizonElevation"/>float GetHorizonElevation(float h_km)
+<a name="GetHorizonElevation"></a>
+### float GetHorizonElevation(float h_km)
 The elevation of the horizon at this altitude
-
-### <a name="GetInt"/>int GetInt(char name, simul::base::Variant params)
+<a name="GetInt"></a>
+### int GetInt(char name, simul::base::Variant params)
 Get an int with the given, case-insensitive, name
-
-### <a name="GetInterpolatedKeyframe"/>simul::sky::SkyKeyframe * GetInterpolatedKeyframe()
+<a name="GetInterpolatedKeyframe"></a>
+### simul::sky::SkyKeyframe * GetInterpolatedKeyframe()
 Get the current interpolatedkeyframe, which holds the values interpolated from the two surrounding keyframes at
 any given time.
-
-### <a name="GetLightingState"/>simul::sky::LightingState  const & GetLightingState()
+<a name="GetLightingState"></a>
+### simul::sky::LightingState  const & GetLightingState()
 Get the per-frame cached lighting state
-
-### <a name="GetMultiplier"/>float GetMultiplier(double t)
+<a name="GetMultiplier"></a>
+### float GetMultiplier(double t)
 Get the calculated multiplication factor for outputs.
 SunIrradiance is multiplied by this value to calculate sky colours.
 Divide local irradiances by this value to get the value in physical units.
 Divide radiances (i.e. rendered colours) by this value to get the radiance in physical units.
-
-### <a name="GetNextModifiableKeyframe"/>simul::sky::SkyKeyframe * GetNextModifiableKeyframe()
+<a name="GetNextModifiableKeyframe"></a>
+### simul::sky::SkyKeyframe * GetNextModifiableKeyframe()
 The next keyframe not partially built or being used. This keyframe's properties can be modified without any pause or rebuild.
-
-### <a name="GetStartDate"/>void GetStartDate(int y, int m, int d)
+<a name="GetStartDate"></a>
+### void GetStartDate(int y, int m, int d)
 What date is referred to as time zero.
-
-### <a name="GetSubdivisionChecksum"/>unsigned int GetSubdivisionChecksum()
+<a name="GetSubdivisionChecksum"></a>
+### unsigned int GetSubdivisionChecksum()
 This is a checksum that only changes if an in-use subdivision has modified (cycling does not change it).
-
-### <a name="HasFloat"/>bool HasFloat(char name)
+<a name="HasFloat"></a>
+### bool HasFloat(char name)
 Return true if the keyframer has the floating point value with the given, case-insensitive, name; return false otherwise.
 
 These are the properties the SkyKeyframer has:
@@ -164,8 +163,8 @@ These are the properties the SkyKeyframer has:
 - sunirradiance
 - colourwavelengthsnm
 
-
-### <a name="HasInt"/>bool HasInt(char name)
+<a name="HasInt"></a>
+### bool HasInt(char name)
 Return true if the keyframer has an integer or true/false value with the given, case-insensitive, name; return false otherwise. 
 
 These are the properties the SkyKeyframer has:
@@ -177,36 +176,36 @@ These are the properties the SkyKeyframer has:
 - AutomaticSunPosition
 - AutomaticMoonPosition
 
-
-### <a name="HighlightConstellation"/>void HighlightConstellation(char)
+<a name="HighlightConstellation"></a>
+### void HighlightConstellation(char)
 Highlight the named constellation in debug views:
-
-### <a name="OverrideMoonDirection"/>void OverrideMoonDirection(float az, float el)
+<a name="OverrideMoonDirection"></a>
+### void OverrideMoonDirection(float az, float el)
 Set the current direction of the moon by it's Azimuth and Elevation
-
-### <a name="OverrideSunDirection"/>void OverrideSunDirection(float az, float el)
+<a name="OverrideSunDirection"></a>
+### void OverrideSunDirection(float az, float el)
 Set the current direction of the sun by it's Azimuth and Elevation
-
-### <a name="Set"/>void Set(char name, simul::base::Variant params)
+<a name="Set"></a>
+### void Set(char name, simul::base::Variant params)
 Set a value with the given enum
-
-### <a name="SetFloat"/>void SetFloat(char name, float val)
+<a name="SetFloat"></a>
+### void SetFloat(char name, float val)
 Set a float with the given, case-insensitive, name
-
-### <a name="SetInt"/>void SetInt(char name, int val)
+<a name="SetInt"></a>
+### void SetInt(char name, int val)
 Set an int with the given, case-insensitive, name
-
-### <a name="SetStartDate"/>void SetStartDate(int y, int m, int d)
+<a name="SetStartDate"></a>
+### void SetStartDate(int y, int m, int d)
 Set the date for time=0.
-
-### <a name="SetUniformKeyframes"/>void SetUniformKeyframes(int Steps, float range)
+<a name="SetUniformKeyframes"></a>
+### void SetUniformKeyframes(int Steps, float range)
 Create a number of evenly spaced keyframes.
-
-### <a name="UnHighlightConstellation"/>void UnHighlightConstellation(char)
+<a name="UnHighlightConstellation"></a>
+### void UnHighlightConstellation(char)
 Remove the named constellation from the highlighted list
-
-### <a name="Update"/>void Update()
+<a name="Update"></a>
+### void Update()
 Per-frame update call, this function updates the interpolation and the tables.
-
-### <a name="EnsureSunAndMoonValidity"/>void EnsureSunAndMoonValidity(simul::sky::SkyKeyframe K1)
+<a name="EnsureSunAndMoonValidity"></a>
+### void EnsureSunAndMoonValidity(simul::sky::SkyKeyframe K1)
 Apply any overrides.

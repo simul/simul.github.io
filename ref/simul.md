@@ -6,10 +6,10 @@ weight: 0
 namespace simul
 ===
 
-| Include: | Clouds/Clouds.h |
+| Include: | Base/Base.h |
 
 
 
-| [namespace clouds](simul/clouds) | The namespace corresponding to the Clouds module.<br> |
-| [namespace sky](simul/sky) |  |
+| [namespace base](simul/base.html) | Base is the base library, containing simple data structures, macros and other useful things.<br> |
+| [namespace geometry](simul/geometry.html) | Geometry is a small library that contains orientation and reference frame classes.<br> |
 

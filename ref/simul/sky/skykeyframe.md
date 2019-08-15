@@ -12,7 +12,7 @@ The properties of any sky keyframe can be changed at any time. However, only Haz
 can be changed for an in-use keyframe without triggering a recalculation of the colour tables.
   
 
-[simul::sky::BaseKeyframe](basekeyframe)
+[simul::sky::BaseKeyframe](basekeyframe.html)
 
 Functions
 ---
@@ -27,15 +27,15 @@ can be changed for an in-use keyframe without triggering a recalculation of the 
 
 Base Classes
 ---
-[simul::sky::BaseKeyframe](basekeyframe)
+[simul::sky::BaseKeyframe](basekeyframe.html)
 
 Functions
 ---
-
-### <a name="SkyKeyframe"/> SkyKeyframe(simul::base::MemoryInterface m)
+<a name="SkyKeyframe"></a>
+###  SkyKeyframe(simul::base::MemoryInterface m)
 < Whether to calculate the moon position from the date and time.
-
-### <a name="GetTransientChecksum"/>unsigned int GetTransientChecksum()
+<a name="GetTransientChecksum"></a>
+### unsigned int GetTransientChecksum()
 Checksum including values not needed for GPU recalculation.
 
 Fields

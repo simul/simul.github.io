@@ -5,16 +5,50 @@ weight: 120
 ---
 
 
-
 Version HEAD
 ---
+Thu 15 Aug : ADd DirectX11Sample to CMake.  
+Thu 15 Aug : Add Build_XboxOne.bat  
+Tue 13 Aug : Fix Vulkan build paths.  
+Mon 12 Aug : Build fix  
+Mon 12 Aug : Very temp possible fix for build issues  
+Sun 11 Aug : Fix build/exe path  
+Sat 10 Aug : backslash not forward in properties file.  
+Sat 10 Aug : CMake tweaks.  
+Fri 09 Aug : glfw3.lib even in debug, not glfw3d.lib.  
+Fri 09 Aug : glfw3.lib even in debug, not glfw3d.lib.  
+Fri 09 Aug : Build.bat correction.  
+Thu 08 Aug : Build.bat CMake QT_DIR  
+Thu 08 Aug : Fix VSVER in build.bat  
+Thu 08 Aug : Build.bat working with CMake.  
+Thu 08 Aug : Add EXE_PATH to WindowsEnvironment.properties  
+Thu 08 Aug : CMake and Build.bat  
+Wed 07 Aug : More Documentation Updating  
+Tue 06 Aug : Minor fix for lightning and water reflections  
+Tue 30 Jul : Remove Effects11_win8sdk dep.  
+Tue 30 Jul : Update that adds water masks, other small fixes  
+Fri 26 Jul : More organisation and fixed internal Linking  
+Wed 24 Jul : Reorganised doc files  
+Fri 19 Jul : Flipped view distance for cloudDepthTexture in lightning.sfx for best depth lookup.  
+Fri 19 Jul : Beginning start of documentation editing. Organisation, baseline for files.  
+Fri 19 Jul : PS4 build fix  
+Wed 17 Jul : All C++ projects now build in CMake, at least on Windows. MT and MD versions of effects11 and directxtex.  
+Tue 16 Jul : .  
+Mon 15 Jul : Updated CMakeList directories for faster Cmake initial generation  
+Sun 14 Jul : Fix htmlproofer call - needs correct working dir. Fix name of ref.md target. Fix Help files in Simul.sln  
+Fri 12 Jul : Slight fix to reference .md  
+Fri 12 Jul : Updated docs sidebar order, fixed index issue to allow index on home page  
+Fri 12 Jul : Added DirectXTex and effects11 to CMake, updated docs in Help folder and start of editing comments for the docs  
+Wed 10 Jul : Add Simul.markdoc  
 Tue 09 Jul : Fix for Errno_Check  
 Thu 04 Jul : Fully-working on Linux  
+Wed 03 Jul : Added Effects11 and DirectxTex to CMake.  
 Wed 03 Jul : Improved deployment py script.  
 Fri 28 Jun : Fix for Windows build. Amended ERRNO_CHECK and DebugBreak().  
 Fri 28 Jun : ERRNO_CHECK fixed.  
 Fri 28 Jun : Linux build fixes: Vulkan Sample and plugin now building.  
 Tue 18 Jun : Linux build fixes  
+Tue 18 Jun : Cmake version build fixes.  
 Mon 17 Jun : Minor update to the snow pixel shader.  
 Fri 14 Jun : Minor fix to stop values that would break the water renderer from being passed to it  
 Fri 14 Jun : Initial commit for Water reflections  
@@ -73,40 +107,5 @@ Tue 23 Apr : Small CMake fixes
 Wed 17 Apr : Initial Documentation updates, added buoyancy objects, small fixes  
 Fri 12 Apr : Updated Sky Sequencer UI to show Snow Speed and Snowflake Size. Fixed CloudWindowWidget to support multiple concurrent rendering API in the main view.  
 Thu 11 Apr : PS4 Pointer  
-Wed 10 Apr : Updated SFX compiler to fix OpenGL issue binding slot and UBO for TextureHandles. The binding slot defaults to 0, expect in the pixel/fragment shader where it is 1; this was to solve the issue of snow rendering New parameter in SfxConfig maintainSamplerDeclaration to deal with issue between GLSL and PSSL. Updated rain.sfx PS_SnowParticles_NoCubemap();  
-Tue 09 Apr : Fix paths for Sequencer D3D11 shaders.  
-Thu 04 Apr : Applications/SkySequencer/MainWindow.cpp CloudWindow can now use DX11, DX12 or OpenGL. Clouds/BaseGpuCloudGenerator.h SetPrecipitationCentre() added. Clouds/CloudKeyframer.cpp rotateByOffset() updated to use Quaternion solely. Clouds/CloudRenderer.cpp RenderCrossSections() lays out all textures correctly. SetCloudConstants() OverrideWind checkbox locks the PrecipitationRegion to the cloud map. RenderCloudWindow() now draws blue circle to denote the PrecipitationRegion. Platform/OpenGL/Texture.cpp LoadTextureData() can correct any errno. Sky/BaseSkyRenderer.cpp RenderCelestialDisplay() is corrected.  
-Fri 29 Mar : New technique "msaa_with_lightpass" in hdr.sfx. Updated Clouds/BaseWeatherRenderer.cpp to match. Minor logic update to Effect::SetUnorderedAccessView().  
-Fri 29 Mar : Added check to ensure native OpenGL textures in Effect::SetUnorderedAccessView() are valid before binding them.  
-Thu 28 Mar : Update to PrecipitationRegion, which now uses a quaternion for its position, though cloudConstants.rainCentreKm is still a vec3. Update to Quaterniond.h, as definition and declaration didn't match.  
-Wed 27 Mar : Fix cloud_edit.sfx compille for DX11.  
-Sun 17 Mar : Add TrueSkyUI/CMakeLists.txt  
-Thu 07 Mar : Added ability for plugins to get the sampled height of the cloud shadow  
-Wed 06 Mar : Added commented out shader code for cloud shadow offsets  
-Tue 05 Mar : disable part of the water to fix PS4 version  
-Mon 04 Mar : Update to water mips, small fixes  
-Thu 28 Feb : Update to VolumeQueryResult and LineQueryResult, which now uses vec4. SFX/clouds.sfx and SL/simul_cloud_constants.sl updated to match. BaseSkyRenderer.cpp GetLightingQuery() updated to use vec4.  
-Thu 28 Feb : Add Switch projects.  
-Wed 27 Feb : Autofill PS4 resource slots.  
-Sat 23 Feb : Sfx specified registers.  
-Sat 23 Feb : Sfx reverted some bad code.  
-Fri 22 Feb : Amended SunElevationSlider in SequencerQtWidgets/KeyframeEditWidget.ui  
-Fri 22 Feb : Undo keyFrameEditWidget Change  
-Fri 22 Feb : Cloud/CloudRenderer.cpp updated function CloudRenderer::RenderQueries().  
-Thu 21 Feb : ClearFencedTextures now crossplatform. Called in plugin frame init.  
-Thu 21 Feb : Minor update to BaseSkyRenderer  
-Thu 21 Feb : Sfx support for inline shader binaries in the .sfxo output file.  
-Thu 21 Feb : Sky/BaseSkyRenderer.cpp has a new function RenderLightingQueryResultsText(). Displays the values of the current LightQueryResults to the screen. This is used in Clouds/TrueSkyRenderer.cpp TrueSkyRenderer::RenderOverlays() under the Fades output.  
-Wed 20 Feb : Minor update to Sky/BaseSkyRenderer.cpp  
-Wed 20 Feb : Updated BaseSkyRenderer.cpp FillInLightingQueries(), due OpenGL buffer misalignment. LightingQueryResult now has a vec4 for the position and padded. It is initialise in SFX/sky.sfx lightingQueryInputs is now a StructuredBuffer of vec4.  
-Wed 20 Feb : BaseSkyRenderer::RenderBackgroundCubemap() updated to accept depthTexture as nullptr.  
-Tue 19 Feb : Fix delayloads. Must use semicolon separateor in vcxproj!  
-Tue 19 Feb : Vulkan cubemap issue is fixed, still issues with its spherical harmonics. The native framebuffer is passed from Platform/Vulkan/Framebuffer.cpp and used when rendering cube map faces in Platform/Vulkan/RenderPlatform.cpp.  
-Mon 18 Feb : Fix for storms not deleting  
-Sat 16 Feb : Call ApplyDefaultRenderTargets to ensure we are actually using the default target specified.  
-Sat 16 Feb : PS4 ptr. RenderCloudShadowTexture should be called before FillInQueries. internalFrameNumber for PlatformConstantBuffer. ORBIS ActivateRenderTargets in plugin to make sure we're Actually using the default RT.  
-Wed 13 Feb : Fix delayloads: commas don't work, must use semicolons!  
-Wed 13 Feb : Platform/Vulkan/RenderPlatform.cpp CreateVulkanRenderpass() take in a MSAA value, default is 1. Platform/Vulkan/RenderPlatform.cpp Resolve() is currently commented out.  
-Tue 12 Feb : Fix window lighting  
 
 <hr>

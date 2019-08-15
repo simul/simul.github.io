@@ -23,8 +23,8 @@ This controls the rendering of clouds.
 
 Functions
 ---
-
-### <a name="GetEnum"/>unsigned long long GetEnum(char txt_utf8)
+<a name="GetEnum"></a>
+### unsigned long long GetEnum(char txt_utf8)
 < Mie scattering eccentricity.
 
 Fields

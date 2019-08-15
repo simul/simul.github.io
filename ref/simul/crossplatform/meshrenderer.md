@@ -20,12 +20,12 @@ Functions
 
 Functions
 ---
-
-### <a name="InvalidateDeviceObjects"/>void InvalidateDeviceObjects()
+<a name="InvalidateDeviceObjects"></a>
+### void InvalidateDeviceObjects()
 To be called when the rendering device is no longer valid.
-
-### <a name="Render"/>void Render(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Mesh mesh, mat4 model, simul::crossplatform::Texture diffuseCubemap, simul::crossplatform::Texture specularCubemap)
+<a name="Render"></a>
+### void Render(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Mesh mesh, mat4 model, simul::crossplatform::Texture diffuseCubemap, simul::crossplatform::Texture specularCubemap)
 Render the lens flares based on the given direction to the light, and its colour.
-
-### <a name="RestoreDeviceObjects"/>void RestoreDeviceObjects(simul::crossplatform::RenderPlatform r)
+<a name="RestoreDeviceObjects"></a>
+### void RestoreDeviceObjects(simul::crossplatform::RenderPlatform r)
 To be called when a rendering device has been initialized.

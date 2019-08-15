@@ -9,7 +9,7 @@ class HeightMapNode
 | Include: | Terrain/HeightMapNode.h |
 
 
-[simul::terrain::HeightMapInterface](heightmapinterface)
+[simul::terrain::HeightMapInterface](heightmapinterface.html)
 
 Functions
 ---
@@ -28,37 +28,37 @@ Functions
 
 Base Classes
 ---
-[simul::terrain::HeightMapInterface](heightmapinterface)
+[simul::terrain::HeightMapInterface](heightmapinterface.html)
 
 Functions
 ---
-
-### <a name="AddFilter"/>void AddFilter(int index, char type)
+<a name="AddFilter"></a>
+### void AddFilter(int index, char type)
 Add (index=-1 or larger than filter count) or insert a filter that will modify the heightmap.
-
-### <a name="GetChecksum"/>unsigned int GetChecksum()
+<a name="GetChecksum"></a>
+### unsigned int GetChecksum()
 Checksum to say that any part of the heightmap has changed
-
-### <a name="GetColumnChecksum"/>unsigned int GetColumnChecksum(int col)
+<a name="GetColumnChecksum"></a>
+### unsigned int GetColumnChecksum(int col)
 Checksum for what columns have changed
-
-### <a name="GetData"/>float  const * GetData()
+<a name="GetData"></a>
+### float  const * GetData()
 Get the actual heights in the grid.
-
-### <a name="GetFilter"/>simul::terrain::Filter * GetFilter(int i)
+<a name="GetFilter"></a>
+### simul::terrain::Filter * GetFilter(int i)
 Get a pointer to the filter at the index i.
-
-### <a name="GetFilter"/>simul::terrain::Filter  const * GetFilter(int i)
+<a name="GetFilter"></a>
+### simul::terrain::Filter  const * GetFilter(int i)
 Get a pointer to the filter at the index i.
-
-### <a name="GetNumFilters"/>int GetNumFilters()
+<a name="GetNumFilters"></a>
+### int GetNumFilters()
 The number of filters.
-
-### <a name="GetRowChecksum"/>unsigned int GetRowChecksum(int row)
+<a name="GetRowChecksum"></a>
+### unsigned int GetRowChecksum(int row)
 Checksum for what rows have changed
-
-### <a name="RemoveFilter"/>void RemoveFilter(int index)
+<a name="RemoveFilter"></a>
+### void RemoveFilter(int index)
 Remove the specified filter.
-
-### <a name="SetData"/>void SetData(float data, int width, int stride)
+<a name="SetData"></a>
+### void SetData(float data, int width, int stride)
 Set the heights.

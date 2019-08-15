@@ -6,45 +6,42 @@ weight: 0
 namespace crossplatform
 ===
 
-| Include: | Platform/CrossPlatform/CameraInterface.h |
+| Include: | Sky/BaseAtmosphericsRenderer.h |
 
 
 
 Classes and Structures
 ---
 
-| struct [AmortizationStruct](crossplatform/amortizationstruct) |  |
-| class [BaseRenderer](crossplatform/baserenderer) |  |
-| struct [CommandLineParams](crossplatform/commandlineparams) |  |
-| struct [ContextState](crossplatform/contextstate) |  |
-| struct [DisjointQueryStruct](crossplatform/disjointquerystruct) |  |
-| class [DisplaySurfaceManager](crossplatform/displaysurfacemanager) |  |
-| class [EffectTechniqueGroup](crossplatform/effecttechniquegroup) |  |
-| struct [Frustum](crossplatform/frustum) |  |
-| class [GpuProfiler](crossplatform/gpuprofiler) |  |
-| class [GpuProfilingInterface](crossplatform/gpuprofilinginterface) |  |
-| class [GraphicsDeviceInterface](crossplatform/graphicsdeviceinterface) |  |
-| class [Layout](crossplatform/layout) |  |
-| struct [LayoutDesc](crossplatform/layoutdesc) |  |
-| class [LensFlare](crossplatform/lensflare) |  |
-| class [Material](crossplatform/material) |  |
-| struct [MixedResolutionStruct](crossplatform/mixedresolutionstruct) |  |
-| struct [MouseCameraInput](crossplatform/mousecamerainput) |  |
-| struct [MouseCameraState](crossplatform/mousecamerastate) |  |
-| class [PlatformRendererInterface](crossplatform/platformrendererinterface) |  |
-| struct [PosColourVertex](crossplatform/poscolourvertex) |  |
-| class [Quaterniond](crossplatform/quaterniond) |  |
-| struct [RasterizerDesc](crossplatform/rasterizerdesc) |  |
-| class [RenderDelegater](crossplatform/renderdelegater) |  |
-| struct [RenderTargetFormatDesc](crossplatform/rendertargetformatdesc) |  |
-| struct [ShaderResource](crossplatform/shaderresource) |  |
-| class [SphericalHarmonics](crossplatform/sphericalharmonics) |  |
-| struct [TargetsAndViewport](crossplatform/targetsandviewport) |  |
-| struct [TextureCreate](crossplatform/texturecreate) |  |
-| class [TextureView](crossplatform/textureview) |  |
-| class [View](crossplatform/view) |  |
-| class [ViewManager](crossplatform/viewmanager) |  |
-| struct [Viewport](crossplatform/viewport) |  |
+| class [BaseRenderer](crossplatform/baserenderer.html) |  |
+| struct [CommandLineParams](crossplatform/commandlineparams.html) |  |
+| struct [ContextState](crossplatform/contextstate.html) |  |
+| struct [DisjointQueryStruct](crossplatform/disjointquerystruct.html) |  |
+| class [DisplaySurfaceManager](crossplatform/displaysurfacemanager.html) |  |
+| struct [EffectDefineOptions](crossplatform/effectdefineoptions.html) |  |
+| class [EffectTechniqueGroup](crossplatform/effecttechniquegroup.html) |  |
+| struct [Frustum](crossplatform/frustum.html) |  |
+| class [GpuProfiler](crossplatform/gpuprofiler.html) |  |
+| class [GpuProfilingInterface](crossplatform/gpuprofilinginterface.html) |  |
+| class [GraphicsDeviceInterface](crossplatform/graphicsdeviceinterface.html) |  |
+| struct [LayoutDesc](crossplatform/layoutdesc.html) |  |
+| class [LensFlare](crossplatform/lensflare.html) |  |
+| struct [MixedResolutionStruct](crossplatform/mixedresolutionstruct.html) |  |
+| struct [MouseCameraInput](crossplatform/mousecamerainput.html) |  |
+| struct [MouseCameraState](crossplatform/mousecamerastate.html) |  |
+| class [PlatformRendererInterface](crossplatform/platformrendererinterface.html) |  |
+| class [Quaterniond](crossplatform/quaterniond.html) |  |
+| struct [RasterizerDesc](crossplatform/rasterizerdesc.html) |  |
+| class [RenderDelegater](crossplatform/renderdelegater.html) |  |
+| struct [RenderStateDesc](crossplatform/renderstatedesc.html) |  |
+| struct [RenderTargetFormatDesc](crossplatform/rendertargetformatdesc.html) |  |
+| struct [ShaderResource](crossplatform/shaderresource.html) |  |
+| class [SphericalHarmonics](crossplatform/sphericalharmonics.html) |  |
+| class [TextRenderer](crossplatform/textrenderer.html) |  |
+| struct [TextureCreate](crossplatform/texturecreate.html) |  |
+| class [TextureView](crossplatform/textureview.html) |  |
+| class [View](crossplatform/view.html) |  |
+| class [ViewManager](crossplatform/viewmanager.html) |  |
 
 Functions
 ---
@@ -63,8 +60,8 @@ Functions
 
 Functions
 ---
-
-### <a name="DrawGrid"/>void DrawGrid(simul::crossplatform::DeviceContext deviceContext, vec3 centrePos, float square_size, float brightness, int numLines)
+<a name="DrawGrid"></a>
+### void DrawGrid(simul::crossplatform::DeviceContext deviceContext, vec3 centrePos, float square_size, float brightness, int numLines)
 Draw a horizontal grid in 3D.
 
 [in,out] deviceContext   Context for the device.
@@ -72,32 +69,32 @@ Draw a horizontal grid in 3D.
 [in]     square_size     Spacing between lines - in whatever units the renderer is working in.
 [in]     brightness      Brightness of the lines.
 [in]     numLines        Number of gridlines to draw.
-
-### <a name="GetCameraPosVector"/>void GetCameraPosVector(float v, float dcam_pos, float view_dir, float up)
+<a name="GetCameraPosVector"></a>
+### void GetCameraPosVector(float v, float dcam_pos, float view_dir, float up)
 Get the camera position, direction, and up-vector, from a view matrix v.
-
-### <a name="GetCameraPosVector"/>float  const * GetCameraPosVector(float v)
+<a name="GetCameraPosVector"></a>
+### float  const * GetCameraPosVector(float v)
 Get the camera position from a view matrix.
-
-### <a name="MakeCentredViewProjMatrix"/>void MakeCentredViewProjMatrix(float vp, float view, float proj)
+<a name="MakeCentredViewProjMatrix"></a>
+### void MakeCentredViewProjMatrix(float vp, float view, float proj)
 Make a viewProj matrix, but ignore the view position.
-
-### <a name="MakeInvViewProjMatrix"/>void MakeInvViewProjMatrix(float ivp, float v, float p)
+<a name="MakeInvViewProjMatrix"></a>
+### void MakeInvViewProjMatrix(float ivp, float v, float p)
 Make an inverse viewProj matrix, which converts clip position to worldspace direction.
-
-### <a name="MakeInvWorldViewProjMatrix"/>void MakeInvWorldViewProjMatrix(float ivp, float world, float v, float p)
+<a name="MakeInvWorldViewProjMatrix"></a>
+### void MakeInvWorldViewProjMatrix(float ivp, float world, float v, float p)
 Make an inverse worldViewProj matrix, which converts clip position to worldspace direction.
-
-### <a name="MakeViewProjMatrix"/>void MakeViewProjMatrix(float vp, float view, float proj)
+<a name="MakeViewProjMatrix"></a>
+### void MakeViewProjMatrix(float vp, float view, float proj)
 Make a viewProj matrix, which converts worldspace into clip position.
-
-### <a name="MakeWorldViewProjMatrix"/>void MakeWorldViewProjMatrix(float wvp, float world, float view, float proj)
+<a name="MakeWorldViewProjMatrix"></a>
+### void MakeWorldViewProjMatrix(float wvp, float world, float view, float proj)
 Make a worldViewProj matrix.
-
-### <a name="ViewportToTexCoordsXYWH"/>vec4 ViewportToTexCoordsXYWH(simul::crossplatform::Viewport vi, simul::crossplatform::Texture t)
+<a name="ViewportToTexCoordsXYWH"></a>
+### vec4 ViewportToTexCoordsXYWH(simul::crossplatform::Viewport vi, simul::crossplatform::Texture t)
 Given a viewport struct and a texture, get the texture coordinates that viewport represents within the texture.
-
-### <a name="ViewportToTexCoordsXYWH"/>vec4 ViewportToTexCoordsXYWH(int4 vi, simul::crossplatform::Texture t)
+<a name="ViewportToTexCoordsXYWH"></a>
+### vec4 ViewportToTexCoordsXYWH(int4 vi, simul::crossplatform::Texture t)
 Given a viewport struct and a texture, get the texture coordinates that viewport represents within the texture.
 
 Enums
@@ -124,8 +121,6 @@ Enums
 **ResourceTransition**  Type of resource transition, some platforms used this (dx12)
 
 **ShaderBuildMode**  Tells the renderer what to do with shader source to get binaries. values can be combined, e.g. ALWAYS_BUILD|TRY_AGAIN_ON_FAIL
-
-**ShaderResourceType**  This refers to the type of a shader resource, which should be compatible with the type of any resource assigned to it.
 
 **ShaderType**  
 OpenGL                                  |       Direct3D

@@ -10,7 +10,7 @@ class TrueSkyRenderer
 
 <br>
 
-[simul::crossplatform::BaseRenderer](../crossplatform/baserenderer)
+[simul::crossplatform::BaseRenderer](../crossplatform/baserenderer.html)
 
 Functions
 ---
@@ -45,75 +45,75 @@ Functions
 
 Base Classes
 ---
-[simul::crossplatform::BaseRenderer](../crossplatform/baserenderer)
+[simul::crossplatform::BaseRenderer](../crossplatform/baserenderer.html)
 
 Functions
 ---
-
-### <a name="CleanupOldAllocations"/>void CleanupOldAllocations(int max_age)
+<a name="CleanupOldAllocations"></a>
+### void CleanupOldAllocations(int max_age)
 Delete GPU allocations to save memory. By default, max age is MaxViewAgeFrames. max_age=0 clears all views.
-
-### <a name="CopySkylight"/>bool CopySkylight(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture targetTexture, float targetShValues, int shOrder, mat4 engineToSimulMatrix4x4, int updateFrequency, float blend, float exposure, float gamma, vec3 ground_colour, int amortization, bool allFaces, bool allMips)
+<a name="CopySkylight"></a>
+### bool CopySkylight(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture targetTexture, float targetShValues, int shOrder, mat4 engineToSimulMatrix4x4, int updateFrequency, float blend, float exposure, float gamma, vec3 ground_colour, int amortization, bool allFaces, bool allMips)
 Update the specified texture as a cubemap, and its spherical harmonics.
 Copy the specified skylight into the target texture. This texture MUST be the same size, format and mip count as
 was specified for this cubemap id when GetSkylight was called.
 This function has latency depending on the platform.
-
-### <a name="EnsureEffectsAreBuilt"/>void EnsureEffectsAreBuilt(simul::crossplatform::RenderPlatform r)
+<a name="EnsureEffectsAreBuilt"></a>
+### void EnsureEffectsAreBuilt(simul::crossplatform::RenderPlatform r)
 Check that all shaders have been correctly compiled
-
-### <a name="EnsureSkylight"/>void EnsureSkylight(int cubemap_view_id, int size, int mips, simul::crossplatform::PixelFormat format, mat4 cubeToSimulMatrix, int shOrder, int updateFrequency, float blend, float exposure, float gamma, vec3 ground_colour, int amortization, bool allFaces, bool allMips)
+<a name="EnsureSkylight"></a>
+### void EnsureSkylight(int cubemap_view_id, int size, int mips, simul::crossplatform::PixelFormat format, mat4 cubeToSimulMatrix, int shOrder, int updateFrequency, float blend, float exposure, float gamma, vec3 ground_colour, int amortization, bool allFaces, bool allMips)
 Create or update a skylight.
-
-### <a name="GetAmortization"/>int GetAmortization(int view_id)
+<a name="GetAmortization"></a>
+### int GetAmortization(int view_id)
 Get the amortization of the given frame
-
-### <a name="GetSceneRenderer"/>simul::scene::BaseSceneRenderer * GetSceneRenderer()
+<a name="GetSceneRenderer"></a>
+### simul::scene::BaseSceneRenderer * GetSceneRenderer()
 Get a pointer to the scene renderer.
-
-### <a name="GetSimulHDRRenderer"/>simul::crossplatform::HdrRenderer * GetSimulHDRRenderer()
+<a name="GetSimulHDRRenderer"></a>
+### simul::crossplatform::HdrRenderer * GetSimulHDRRenderer()
 Get a pointer to the HDR renderer.
-
-### <a name="GetSimulWeatherRenderer"/>simul::clouds::BaseWeatherRenderer * GetSimulWeatherRenderer()
+<a name="GetSimulWeatherRenderer"></a>
+### simul::clouds::BaseWeatherRenderer * GetSimulWeatherRenderer()
 Get a pointer to the weather renderer.
-
-### <a name="GetTerrainRenderer"/>simul::terrain::BaseTerrainRenderer * GetTerrainRenderer()
+<a name="GetTerrainRenderer"></a>
+### simul::terrain::BaseTerrainRenderer * GetTerrainRenderer()
 Get a pointer to the terrain renderer.
-
-### <a name="GetWaterRenderer"/>simul::terrain::BaseWaterRenderer * GetWaterRenderer()
+<a name="GetWaterRenderer"></a>
+### simul::terrain::BaseWaterRenderer * GetWaterRenderer()
 Get a pointer to the water renderer.
-
-### <a name="InvalidateDeviceObjects"/>void InvalidateDeviceObjects()
+<a name="InvalidateDeviceObjects"></a>
+### void InvalidateDeviceObjects()
 Platform-dependent function called when uninitializing the renderer.
-
-### <a name="ProbeSkylight"/>bool ProbeSkylight(simul::crossplatform::DeviceContext pContext, int cubemap_view_id, int mip_size, int face_index, uint2 pos, uint2 size, vec4 targetValuesFloat4)
+<a name="ProbeSkylight"></a>
+### bool ProbeSkylight(simul::crossplatform::DeviceContext pContext, int cubemap_view_id, int mip_size, int face_index, uint2 pos, uint2 size, vec4 targetValuesFloat4)
 Get linear colours from the specified skylight. Returns true if successful.
-
-### <a name="RecompileShaders"/>void RecompileShaders()
+<a name="RecompileShaders"></a>
+### void RecompileShaders()
 Platform-dependent function to reload the shaders - only use this for debug purposes.
-
-### <a name="ReloadTextures"/>void ReloadTextures()
+<a name="ReloadTextures"></a>
+### void ReloadTextures()
 Reload the textures
-
-### <a name="RenderOverlays"/>void RenderOverlays(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture texture, float exposure, float gamma)
+<a name="RenderOverlays"></a>
+### void RenderOverlays(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture texture, float exposure, float gamma)
 Render the active debug overlays
-
-### <a name="RestoreDeviceObjects"/>void RestoreDeviceObjects(simul::crossplatform::RenderPlatform r)
+<a name="RestoreDeviceObjects"></a>
+### void RestoreDeviceObjects(simul::crossplatform::RenderPlatform r)
 Platform-dependent function called when initializing the renderer.
-
-### <a name="SetAmortization"/>void SetAmortization(int view_id, int a)
+<a name="SetAmortization"></a>
+### void SetAmortization(int view_id, int a)
 How often to update each cloud texel; 1:always, 2:every 4 frames, n:every n^2 frames.
-
-### <a name="SetInterpolationMode"/>void SetInterpolationMode(int value)
+<a name="SetInterpolationMode"></a>
+### void SetInterpolationMode(int value)
 Set the interpolation mode for cloud updates
-
-### <a name="SetSequence"/>void SetSequence(char txt)
+<a name="SetSequence"></a>
+### void SetSequence(char txt)
 Load sequence data.
-
-### <a name="PreRenderUpdate"/>void PreRenderUpdate(simul::crossplatform::DeviceContext deviceContext)
+<a name="PreRenderUpdate"></a>
+### void PreRenderUpdate(simul::crossplatform::DeviceContext deviceContext)
 Once per-frame update. Do this before any rendering each frame.
-
-### <a name="RenderMixedResolutionSky"/>void RenderMixedResolutionSky(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture depthTexture, simul::crossplatform::Viewport depthViewport, float exposure, float gamma, float brightnessToUnity)
+<a name="RenderMixedResolutionSky"></a>
+### void RenderMixedResolutionSky(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture depthTexture, simul::crossplatform::Viewport depthViewport, float exposure, float gamma, float brightnessToUnity)
 Render the sky.
 
 Fields

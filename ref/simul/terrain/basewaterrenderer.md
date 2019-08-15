@@ -16,7 +16,8 @@ Functions
 |  | [BaseWaterRenderer](#BaseWaterRenderer)() |
 |  | [~BaseWaterRenderer](#~BaseWaterRenderer)() |
 | void | [addBoundedWaterObject](#addBoundedWaterObject)(simul::terrain::BoundedWaterObject newWaterObject) |
-| bool | [addWaterBuoyancyObject](#addWaterBuoyancyObject)(simul::terrain::WaterBuoyancyObjectValues newObject) |
+| bool | [addWaterBuoyancyObject](#addWaterBuoyancyObject)(simul::terrain::WaterMeshObjectValues newObject) |
+| bool | [addWaterMaskObject](#addWaterMaskObject)(simul::terrain::waterMaskingObject newObject) |
 | bool | [addWaterProbe](#addWaterProbe)(simul::terrain::WaterProbeValues values) |
 | void | [createBoundedWaterObject](#createBoundedWaterObject)(uint ID, vec3 dimension, vec3 location) |
 | void | [disableBoundlessOcean](#disableBoundlessOcean)() |
@@ -35,6 +36,7 @@ Functions
 | void | [RecompileShaders](#RecompileShaders)() |
 | void | [removeBoundedWaterObject](#removeBoundedWaterObject)(uint ID) |
 | void | [removeWaterBuoyancyObject](#removeWaterBuoyancyObject)(int ID) |
+| void | [removeWaterMaskObject](#removeWaterMaskObject)(int ID) |
 | void | [removeWaterProbe](#removeWaterProbe)(int ID) |
 | void | [Render](#Render)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Viewport depthViewports, simul::crossplatform::Texture depthTexture, simul::crossplatform::Texture colourTexture, simul::crossplatform::Texture cubemap, int passNo) |
 | void | [RenderFlowRays](#RenderFlowRays)(simul::crossplatform::DeviceContext deviceContext, int width, int height) |
@@ -46,118 +48,128 @@ Functions
 | void | [updateBoundlessOceanDensity](#updateBoundlessOceanDensity)(float height) |
 | void | [updateTime](#updateTime)(float time) |
 | void | [updateWaterBuoyancyObjects](#updateWaterBuoyancyObjects)(simul::crossplatform::DeviceContext deviceContext) |
-| void | [updateWaterBuoyancyObjectValues](#updateWaterBuoyancyObjectValues)(simul::terrain::WaterBuoyancyObjectValues values) |
+| void | [updateWaterBuoyancyObjectValues](#updateWaterBuoyancyObjectValues)(simul::terrain::WaterMeshObjectValues values) |
+| void | [updateWaterMaskObjectValues](#updateWaterMaskObjectValues)(simul::terrain::waterMaskingObject values) |
 | void | [updateWaterProbes](#updateWaterProbes)(simul::crossplatform::DeviceContext deviceContext) |
 | void | [updateWaterProbeValues](#updateWaterProbeValues)(simul::terrain::WaterProbeValues values) |
 
 
 Functions
 ---
-
-### <a name="BaseWaterRenderer"/> BaseWaterRenderer()
+<a name="BaseWaterRenderer"></a>
+###  BaseWaterRenderer()
 Constructor
-
-### <a name="~BaseWaterRenderer"/> ~BaseWaterRenderer()
+<a name="~BaseWaterRenderer"></a>
+###  ~BaseWaterRenderer()
 Destructor
-
-### <a name="addBoundedWaterObject"/>void addBoundedWaterObject(simul::terrain::BoundedWaterObject newWaterObject)
+<a name="addBoundedWaterObject"></a>
+### void addBoundedWaterObject(simul::terrain::BoundedWaterObject newWaterObject)
 Add an existing water object to the renderer
-
-### <a name="addWaterBuoyancyObject"/>bool addWaterBuoyancyObject(simul::terrain::WaterBuoyancyObjectValues newObject)
+<a name="addWaterBuoyancyObject"></a>
+### bool addWaterBuoyancyObject(simul::terrain::WaterMeshObjectValues newObject)
 Create a water buoyancy object
-
-### <a name="addWaterProbe"/>bool addWaterProbe(simul::terrain::WaterProbeValues values)
+<a name="addWaterMaskObject"></a>
+### bool addWaterMaskObject(simul::terrain::waterMaskingObject newObject)
+Create a water masking object
+<a name="addWaterProbe"></a>
+### bool addWaterProbe(simul::terrain::WaterProbeValues values)
 Create a water probe from the given values
-
-### <a name="createBoundedWaterObject"/>void createBoundedWaterObject(uint ID, vec3 dimension, vec3 location)
+<a name="createBoundedWaterObject"></a>
+### void createBoundedWaterObject(uint ID, vec3 dimension, vec3 location)
 Create a bounded water object
-
-### <a name="disableBoundlessOcean"/>void disableBoundlessOcean()
+<a name="disableBoundlessOcean"></a>
+### void disableBoundlessOcean()
 Disable boundless ocean
-
-### <a name="enableBoundlessOcean"/>void enableBoundlessOcean(uint layerDensity, uint noOfLayers, int maxDistance)
+<a name="enableBoundlessOcean"></a>
+### void enableBoundlessOcean(uint layerDensity, uint noOfLayers, int maxDistance)
 Enable the boundless ocean with a certain maximum detail
-
-### <a name="fillBeaufortScaleConstants"/>void fillBeaufortScaleConstants()
+<a name="fillBeaufortScaleConstants"></a>
+### void fillBeaufortScaleConstants()
 Static function to set the default values for the beaufort scale.
-
-### <a name="getBoundedWaterObject"/>simul::terrain::BoundedWaterObject * getBoundedWaterObject(uint ID)
+<a name="getBoundedWaterObject"></a>
+### simul::terrain::BoundedWaterObject * getBoundedWaterObject(uint ID)
 Get a pointer to a bounded water object.
-
-### <a name="getBoundlessOceanProperties"/>simul::terrain::boundlessOceanProperties * getBoundlessOceanProperties()
+<a name="getBoundlessOceanProperties"></a>
+### simul::terrain::boundlessOceanProperties * getBoundlessOceanProperties()
 Get Boundless ocean properties
-
-### <a name="getBoundlessWaveGrid"/>simul::terrain::WaveGrid * getBoundlessWaveGrid()
+<a name="getBoundlessWaveGrid"></a>
+### simul::terrain::WaveGrid * getBoundlessWaveGrid()
 Get a pointer to the wave grid used by the boundless ocean
-
-### <a name="GetEnum"/>long long GetEnum(char n)
+<a name="GetEnum"></a>
+### long long GetEnum(char n)
 Get the enums of water properties. Used mainly for plugin interfacing.
-
-### <a name="getShoreTextureParams"/>simul::terrain::shoreTexture * getShoreTextureParams()
+<a name="getShoreTextureParams"></a>
+### simul::terrain::shoreTexture * getShoreTextureParams()
 Get the shore texture paramaters
-
-### <a name="getWaterBuoyancyObjectResults"/>float * getWaterBuoyancyObjectResults(int ID)
+<a name="getWaterBuoyancyObjectResults"></a>
+### float * getWaterBuoyancyObjectResults(int ID)
 Get the results of a water buoyancy object
-
-### <a name="getWaterProbeValues"/>vec4 getWaterProbeValues(int ID)
+<a name="getWaterProbeValues"></a>
+### vec4 getWaterProbeValues(int ID)
 Get the results of a water probe
-
-### <a name="getWaterWaveletsSimulator"/>simul::terrain::WaterWaveletsSimulator * getWaterWaveletsSimulator()
+<a name="getWaterWaveletsSimulator"></a>
+### simul::terrain::WaterWaveletsSimulator * getWaterWaveletsSimulator()
 Get the water wavelets simulator object
-
-### <a name="InvalidateDeviceObjects"/>void InvalidateDeviceObjects()
+<a name="InvalidateDeviceObjects"></a>
+### void InvalidateDeviceObjects()
 Platform-dependent function called when uninitializing the water renderer.
-
-### <a name="PreRenderUpdate"/>void PreRenderUpdate(simul::crossplatform::DeviceContext deviceContext, float real_time_seconds)
+<a name="PreRenderUpdate"></a>
+### void PreRenderUpdate(simul::crossplatform::DeviceContext deviceContext, float real_time_seconds)
 Once per-frame update. Do this before any rendering each frame.
-
-### <a name="RecompileShaders"/>void RecompileShaders()
+<a name="RecompileShaders"></a>
+### void RecompileShaders()
 Platform-dependent function to reload the shaders - only use this for debug purposes.
-
-### <a name="removeBoundedWaterObject"/>void removeBoundedWaterObject(uint ID)
+<a name="removeBoundedWaterObject"></a>
+### void removeBoundedWaterObject(uint ID)
 Remove a bounded water object
-
-### <a name="removeWaterBuoyancyObject"/>void removeWaterBuoyancyObject(int ID)
+<a name="removeWaterBuoyancyObject"></a>
+### void removeWaterBuoyancyObject(int ID)
 Remove a water buoyancy object
-
-### <a name="removeWaterProbe"/>void removeWaterProbe(int ID)
+<a name="removeWaterMaskObject"></a>
+### void removeWaterMaskObject(int ID)
+Remove a water masking object
+<a name="removeWaterProbe"></a>
+### void removeWaterProbe(int ID)
 Remove a water probe
-
-### <a name="Render"/>void Render(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Viewport depthViewports, simul::crossplatform::Texture depthTexture, simul::crossplatform::Texture colourTexture, simul::crossplatform::Texture cubemap, int passNo)
+<a name="Render"></a>
+### void Render(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Viewport depthViewports, simul::crossplatform::Texture depthTexture, simul::crossplatform::Texture colourTexture, simul::crossplatform::Texture cubemap, int passNo)
 Main Render function.
-
-### <a name="RenderFlowRays"/>void RenderFlowRays(simul::crossplatform::DeviceContext deviceContext, int width, int height)
+<a name="RenderFlowRays"></a>
+### void RenderFlowRays(simul::crossplatform::DeviceContext deviceContext, int width, int height)
 Visualise the path of flow rays.
-
-### <a name="RenderTextures"/>void RenderTextures(simul::crossplatform::DeviceContext deviceContext, int width, int depth)
+<a name="RenderTextures"></a>
+### void RenderTextures(simul::crossplatform::DeviceContext deviceContext, int width, int depth)
 Render debug textures.
-
-### <a name="RestoreDeviceObjects"/>void RestoreDeviceObjects(simul::crossplatform::RenderPlatform r)
+<a name="RestoreDeviceObjects"></a>
+### void RestoreDeviceObjects(simul::crossplatform::RenderPlatform r)
 Platform-dependent function called when initializing the water renderer.
-
-### <a name="SetBaseSkyInterface"/>void SetBaseSkyInterface(simul::sky::BaseSkyInterface si, simul::sky::AtmosphericScatteringInterface ai)
+<a name="SetBaseSkyInterface"></a>
+### void SetBaseSkyInterface(simul::sky::BaseSkyInterface si, simul::sky::AtmosphericScatteringInterface ai)
 Set the sky and atmospherics interface to allow the renderer to use the correct lighting values.
-
-### <a name="setShoreDepthTexture"/>void setShoreDepthTexture(simul::crossplatform::Texture texture)
+<a name="setShoreDepthTexture"></a>
+### void setShoreDepthTexture(simul::crossplatform::Texture texture)
 Set the shore depth texture
-
-### <a name="updateBeaufortValues"/>void updateBeaufortValues(simul::terrain::localWaterValues valuesToUpdate, float scale)
+<a name="updateBeaufortValues"></a>
+### void updateBeaufortValues(simul::terrain::localWaterValues valuesToUpdate, float scale)
 Set the water parameters according the beaufort scale.
-
-### <a name="updateBoundlessOceanDensity"/>void updateBoundlessOceanDensity(float height)
+<a name="updateBoundlessOceanDensity"></a>
+### void updateBoundlessOceanDensity(float height)
 Update the ocean surface detail according to how far away from the surface you are.
-
-### <a name="updateTime"/>void updateTime(float time)
+<a name="updateTime"></a>
+### void updateTime(float time)
 Set the time.
-
-### <a name="updateWaterBuoyancyObjects"/>void updateWaterBuoyancyObjects(simul::crossplatform::DeviceContext deviceContext)
+<a name="updateWaterBuoyancyObjects"></a>
+### void updateWaterBuoyancyObjects(simul::crossplatform::DeviceContext deviceContext)
 Caluculate water buoyancy object vaues
-
-### <a name="updateWaterBuoyancyObjectValues"/>void updateWaterBuoyancyObjectValues(simul::terrain::WaterBuoyancyObjectValues values)
+<a name="updateWaterBuoyancyObjectValues"></a>
+### void updateWaterBuoyancyObjectValues(simul::terrain::WaterMeshObjectValues values)
 Update the values of a specific water buoyancy object
-
-### <a name="updateWaterProbes"/>void updateWaterProbes(simul::crossplatform::DeviceContext deviceContext)
+<a name="updateWaterMaskObjectValues"></a>
+### void updateWaterMaskObjectValues(simul::terrain::waterMaskingObject values)
+Update the values of a specific water buoyancy object
+<a name="updateWaterProbes"></a>
+### void updateWaterProbes(simul::crossplatform::DeviceContext deviceContext)
 Caluculate the water probe results
-
-### <a name="updateWaterProbeValues"/>void updateWaterProbeValues(simul::terrain::WaterProbeValues values)
+<a name="updateWaterProbeValues"></a>
+### void updateWaterProbeValues(simul::terrain::WaterProbeValues values)
 Update the values of a specific water probe

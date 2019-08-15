@@ -12,7 +12,7 @@ A class that faces the raw API and implements PlatformRendererInterface
 in order to translate to the platform-independent renderer.
   
 
-[simul::crossplatform::PlatformRendererInterface](platformrendererinterface)
+[simul::crossplatform::PlatformRendererInterface](platformrendererinterface.html)
 
 
 A class that faces the raw API and implements PlatformRendererInterface
@@ -22,4 +22,4 @@ in order to translate to the platform-independent renderer.
 
 Base Classes
 ---
-[simul::crossplatform::PlatformRendererInterface](platformrendererinterface)
+[simul::crossplatform::PlatformRendererInterface](platformrendererinterface.html)

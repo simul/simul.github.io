@@ -36,47 +36,47 @@ A structure representing a thunderstorm. See CloudKeyframer::AddStorm.
 
 Functions
 ---
-
-### <a name="AddStrike"/>void AddStrike(float cloudbase_km, float game_time, float real_time)
+<a name="AddStrike"></a>
+### void AddStrike(float cloudbase_km, float game_time, float real_time)
 Add the next random strike.
-
-### <a name="GetDefaultFloat"/>float GetDefaultFloat(char name)
+<a name="GetDefaultFloat"></a>
+### float GetDefaultFloat(char name)
 Returns the default for the named property - see HasFloat().
-
-### <a name="GetDefaultInt"/>int GetDefaultInt(char name)
+<a name="GetDefaultInt"></a>
+### int GetDefaultInt(char name)
 Returns the default for the named property - see HasInt().
-
-### <a name="GetFloat"/>float GetFloat(char name)
+<a name="GetFloat"></a>
+### float GetFloat(char name)
 Returns the named property - see HasFloat().
-
-### <a name="GetInt"/>int GetInt(char name)
+<a name="GetInt"></a>
+### int GetInt(char name)
 Returns the named property - see HasInt().
-
-### <a name="GetLightningProperties"/>simul::clouds::LightningProperties GetLightningProperties(float game_time, float real_time, float base_km)
+<a name="GetLightningProperties"></a>
+### simul::clouds::LightningProperties GetLightningProperties(float game_time, float real_time, float base_km)
 Get the properties of the currently active lightning strike
-
-### <a name="GetStrike"/>simul::clouds::Strike GetStrike(int i)
+<a name="GetStrike"></a>
+### simul::clouds::Strike GetStrike(int i)
 Return the currently active strike, or return a default strike
-
-### <a name="GetTotalNumStrikes"/>int GetTotalNumStrikes()
+<a name="GetTotalNumStrikes"></a>
+### int GetTotalNumStrikes()
 Get the approximate number of strikes that are generated over a day with the current settings
-
-### <a name="HasFloat"/>bool HasFloat(char name)
+<a name="HasFloat"></a>
+### bool HasFloat(char name)
 Returns true if the keyframe has the named property.
-
-### <a name="HasInt"/>bool HasInt(char name)
+<a name="HasInt"></a>
+### bool HasInt(char name)
 Returns true if the keyframe type has the named integer property.
-
-### <a name="SetFloat"/>void SetFloat(char name, float val)
+<a name="SetFloat"></a>
+### void SetFloat(char name, float val)
 Set the named property - see HasFloat().
-
-### <a name="SetInt"/>void SetInt(char name, int val)
+<a name="SetInt"></a>
+### void SetInt(char name, int val)
 Set the named property - see HasFloat().
-
-### <a name="SpawnStrike"/>int SpawnStrike(float time, vec3 startpos, vec3 endpos, float magnitude, vec3 colour, bool sh, float dur, float leader_dur)
+<a name="SpawnStrike"></a>
+### int SpawnStrike(float time, vec3 startpos, vec3 endpos, float magnitude, vec3 colour, bool sh, float dur, float leader_dur)
 Spawn a strike at a certain time with the given properties
-
-### <a name="Update"/>void Update(float game_time, float real_time)
+<a name="Update"></a>
+### void Update(float game_time, float real_time)
 Once per frame update to discard old strikes.
 
 Fields

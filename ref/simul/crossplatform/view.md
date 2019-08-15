@@ -33,32 +33,32 @@ One instance of View will be created and maintained for each live 3D view.
 
 Functions
 ---
-
-### <a name="View"/> View()
+<a name="View"></a>
+###  View()
 Default constructor.
-
-### <a name="~View"/> ~View()
+<a name="~View"></a>
+###  ~View()
 Destructor.
-
-### <a name="GetResolvedHDRBuffer"/>simul::crossplatform::Texture * GetResolvedHDRBuffer()
+<a name="GetResolvedHDRBuffer"></a>
+### simul::crossplatform::Texture * GetResolvedHDRBuffer()
 Gets resolved HDR buffer.
-
-### <a name="GetScreenHeight"/>int GetScreenHeight()
+<a name="GetScreenHeight"></a>
+### int GetScreenHeight()
 Gets screen height.
-
-### <a name="GetScreenWidth"/>int GetScreenWidth()
+<a name="GetScreenWidth"></a>
+### int GetScreenWidth()
 Gets screen width.
-
-### <a name="InvalidateDeviceObjects"/>void InvalidateDeviceObjects()
+<a name="InvalidateDeviceObjects"></a>
+### void InvalidateDeviceObjects()
 Platform-dependent function called when uninitializing the view.
-
-### <a name="RestoreDeviceObjects"/>void RestoreDeviceObjects(simul::crossplatform::RenderPlatform renderPlatform)
+<a name="RestoreDeviceObjects"></a>
+### void RestoreDeviceObjects(simul::crossplatform::RenderPlatform renderPlatform)
 Platform-dependent function called when initializing the view.
-
-### <a name="SetExternalFramebuffer"/>void SetExternalFramebuffer(bool ext)
+<a name="SetExternalFramebuffer"></a>
+### void SetExternalFramebuffer(bool ext)
 Sets external framebuffer.
-
-### <a name="SetResolution"/>void SetResolution(int w, int h)
+<a name="SetResolution"></a>
+### void SetResolution(int w, int h)
 Sets the resolution.
 
 Fields

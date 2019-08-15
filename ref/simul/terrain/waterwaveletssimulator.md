@@ -31,45 +31,45 @@ Functions
 
 Functions
 ---
-
-### <a name="GenerateContourMap"/>void GenerateContourMap(simul::crossplatform::DeviceContext deviceContext, simul::terrain::shoreTexture shoreDepth, float oceanHeight)
+<a name="GenerateContourMap"></a>
+### void GenerateContourMap(simul::crossplatform::DeviceContext deviceContext, simul::terrain::shoreTexture shoreDepth, float oceanHeight)
 Generate a contour map that stores the normal of the shore surface
-
-### <a name="GenerateSurfaceFlow"/>void GenerateSurfaceFlow(simul::crossplatform::DeviceContext deviceContext, simul::terrain::WaveGrid surfaceFlowGrid)
+<a name="GenerateSurfaceFlow"></a>
+### void GenerateSurfaceFlow(simul::crossplatform::DeviceContext deviceContext, simul::terrain::WaveGrid surfaceFlowGrid)
 Calculate the path of the flow rays
-
-### <a name="getBaseFlowRayBuffer"/>simul::terrain::surfaceFlowRayBuffer * getBaseFlowRayBuffer()
+<a name="getBaseFlowRayBuffer"></a>
+### simul::terrain::surfaceFlowRayBuffer * getBaseFlowRayBuffer()
 Get a pointer to the base flow ray buffer
-
-### <a name="getContourMap"/>simul::crossplatform::Texture * getContourMap()
+<a name="getContourMap"></a>
+### simul::crossplatform::Texture * getContourMap()
 Get a pointer to the contour map
-
-### <a name="getSubFlowRayBuffer"/>simul::terrain::surfaceFlowRayBuffer * getSubFlowRayBuffer()
+<a name="getSubFlowRayBuffer"></a>
+### simul::terrain::surfaceFlowRayBuffer * getSubFlowRayBuffer()
 Get a pointer to the sub flow ray buffer
-
-### <a name="InitialiseWaveGrid"/>void InitialiseWaveGrid(simul::terrain::WaveGrid newWaveGrid, uint2 dimension, int theta, int k)
+<a name="InitialiseWaveGrid"></a>
+### void InitialiseWaveGrid(simul::terrain::WaveGrid newWaveGrid, uint2 dimension, int theta, int k)
 Initialise a given wave grid
-
-### <a name="InvalidateDeviceObjects"/>void InvalidateDeviceObjects()
+<a name="InvalidateDeviceObjects"></a>
+### void InvalidateDeviceObjects()
 Platform-dependent function called when uninitializing the wavelets simulator.
-
-### <a name="PrecomputeProfileBuffers"/>void PrecomputeProfileBuffers(simul::crossplatform::DeviceContext deviceContext, simul::terrain::WaveGrid targetWaveGrid, float real_time_seconds, simul::terrain::localWaterValues waterValues)
+<a name="PrecomputeProfileBuffers"></a>
+### void PrecomputeProfileBuffers(simul::crossplatform::DeviceContext deviceContext, simul::terrain::WaveGrid targetWaveGrid, float real_time_seconds, simul::terrain::localWaterValues waterValues)
 Precompute the profile buffers of a given wave grid
-
-### <a name="PrecomputeWaveSpeeds"/>void PrecomputeWaveSpeeds(simul::crossplatform::DeviceContext deviceContext)
+<a name="PrecomputeWaveSpeeds"></a>
+### void PrecomputeWaveSpeeds(simul::crossplatform::DeviceContext deviceContext)
 Precompute the wave speeds of the target wave grid
-
-### <a name="ResetAmplitudeGrid"/>void ResetAmplitudeGrid(simul::crossplatform::DeviceContext deviceContext)
+<a name="ResetAmplitudeGrid"></a>
+### void ResetAmplitudeGrid(simul::crossplatform::DeviceContext deviceContext)
 Clear the wave amplitude grid of the target wave grid
-
-### <a name="RestoreDeviceObjects"/>void RestoreDeviceObjects(simul::crossplatform::RenderPlatform renderPlatform)
+<a name="RestoreDeviceObjects"></a>
+### void RestoreDeviceObjects(simul::crossplatform::RenderPlatform renderPlatform)
 Platform-dependent function called when initializing the wavelets simulator.
-
-### <a name="SetShader"/>void SetShader(simul::crossplatform::Effect e)
+<a name="SetShader"></a>
+### void SetShader(simul::crossplatform::Effect e)
 Set the precompiled shader used by the wavelets simulator - debug only
-
-### <a name="SetTargetWaveGrid"/>void SetTargetWaveGrid(simul::terrain::WaveGrid targetWaveGrid, simul::terrain::localWaterValues waterValues)
+<a name="SetTargetWaveGrid"></a>
+### void SetTargetWaveGrid(simul::terrain::WaveGrid targetWaveGrid, simul::terrain::localWaterValues waterValues)
 Set the target wave grid the simulator will be working on.
-
-### <a name="UpdateAmplitudeGrid"/>void UpdateAmplitudeGrid(simul::crossplatform::DeviceContext deviceContext, float real_time_seconds, vec4 waterProbePositions, vec4 waterProbeVelocities, vec3 center, vec2 camPos)
+<a name="UpdateAmplitudeGrid"></a>
+### void UpdateAmplitudeGrid(simul::crossplatform::DeviceContext deviceContext, float real_time_seconds, vec4 waterProbePositions, vec4 waterProbeVelocities, vec3 center, vec2 camPos)
 Update the wave amplitude grid of the target wave grid

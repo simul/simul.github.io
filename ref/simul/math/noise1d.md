@@ -23,7 +23,7 @@ A 3D Perlin noise class.
 
 Functions
 ---
-
-### <a name="Setup"/>void Setup(unsigned int freq, int RandomSeed, int octaves, float persistence)
+<a name="Setup"></a>
+### void Setup(unsigned int freq, int RandomSeed, int octaves, float persistence)
 Define the grid of pseudo-random numbers to be used in the PerlinNoise3D function. The parameter freq is the
 frequency, or grid-size.
