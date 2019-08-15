@@ -17,7 +17,7 @@ trueSKY is a software development kit that allows realistic skies, clouds and at
 * [**Licensing trueSKY**](/licensing.html)
 
 ### API
-* [Namespaces](/namespaces.html)
+* [Namespaces](/ref.html)
 
 ### Toolset
 * [**The Sky Sequencer**](/sequencer.html)
