@@ -60,14 +60,14 @@ html {
   background-color: #202020;
 }
 @media (min-width: 48em) {
-  .sidebar {
-    position: fixed;
+.sidebar {
+    position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     width: 18rem;
     text-align: left;
-  }
+}
 }
 
 /* Sidebar links */
