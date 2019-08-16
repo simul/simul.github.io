@@ -25,5 +25,3 @@ Follow one of the links below for more information about trueSKY with Unity
 * [**Tutorial**](tutorial.html)                                         -       Start here to learn how to set trueSKY up in Unity
 
 * [**Scripting**](scripting.html)                                       -       Editing trueSKY using C#
-
-* [**Troubleshooting**](troubleshooting.html)           -       Common questions and issues for trueSKY Unity

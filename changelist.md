@@ -7,6 +7,7 @@ weight: 120
 
 Version HEAD
 ---
+Fri 16 Aug : Updated Docs + removed hard coded directories from .markdoc  
 Thu 15 Aug : ADd DirectX11Sample to CMake.  
 Thu 15 Aug : Add Build_XboxOne.bat  
 Tue 13 Aug : Fix Vulkan build paths.  
@@ -106,6 +107,5 @@ Tue 23 Apr : Changes to .sq files. The opening and closing curly brackets {} are
 Tue 23 Apr : Small CMake fixes  
 Wed 17 Apr : Initial Documentation updates, added buoyancy objects, small fixes  
 Fri 12 Apr : Updated Sky Sequencer UI to show Snow Speed and Snowflake Size. Fixed CloudWindowWidget to support multiple concurrent rendering API in the main view.  
-Thu 11 Apr : PS4 Pointer  
 
 <hr>

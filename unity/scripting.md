@@ -52,7 +52,7 @@ Layer properties are those accessible in the sequencer by clicking on the layer 
 * **SetCloudFloat  (string name, float value)**: Sets the 3D cloud layer float specified by the name string to the given float value.
 * **SetCloudInt  (string name, int value)**: Sets the 3D cloud layer int specified by the name string to the given float value.
 
-<p class=4.1-specific>
+<p class="4.1-specific">
 **2D Clouds**:
 
 * **Get2DCloudFloat (string name)**: Gets the 2D cloud layer float specified by the name string.
@@ -94,7 +94,7 @@ Keyframes in trueSKY can be accessed, counted, modified, created and deleted via
 * **InsertCloudKeyframe (float t)**: Insert a 3D cloud keyframe at specified time t.
 * **GetNumCloudKeyframes ()**: Returns the total number of 3D cloud keyframes.
 
-<p class=4.1-specific>
+<p class="4.1-specific">
 **2D Clouds**:
 
 * **GetCloud2DKeyframeByIndex (int index)**: Get the 2D cloud keyframe with specified index.
