@@ -7,6 +7,7 @@ weight: 120
 
 Version HEAD
 ---
+Mon 19 Aug : Small fix for water reflections  
 Fri 16 Aug : Updated Docs + removed hard coded directories from .markdoc  
 Thu 15 Aug : ADd DirectX11Sample to CMake.  
 Thu 15 Aug : Add Build_XboxOne.bat  
@@ -106,6 +107,5 @@ Wed 24 Apr : Updated OpenGL/Effect.cpp/.h and OpenGL/RenderPlatform.cpp to have 
 Tue 23 Apr : Changes to .sq files. The opening and closing curly brackets {} are now saved to the file. This allows .sq file to be a converted to .asset files in Unity.  
 Tue 23 Apr : Small CMake fixes  
 Wed 17 Apr : Initial Documentation updates, added buoyancy objects, small fixes  
-Fri 12 Apr : Updated Sky Sequencer UI to show Snow Speed and Snowflake Size. Fixed CloudWindowWidget to support multiple concurrent rendering API in the main view.  
 
 <hr>
