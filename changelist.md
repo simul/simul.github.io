@@ -7,6 +7,7 @@ weight: 120
 
 Version HEAD
 ---
+Wed 21 Aug : Added template for cloud shape list in Cloud Layer Edit widget.  
 Mon 19 Aug : Small fix for water reflections  
 Fri 16 Aug : Updated Docs + removed hard coded directories from .markdoc  
 Thu 15 Aug : ADd DirectX11Sample to CMake.  
@@ -106,6 +107,5 @@ Tue 30 Apr : Update to cloud.sfx MapToWindow(), which correctly sets the height 
 Wed 24 Apr : Updated OpenGL/Effect.cpp/.h and OpenGL/RenderPlatform.cpp to have Sync objects around dispatch compute calls that uses a rewrite structured buffer.  
 Tue 23 Apr : Changes to .sq files. The opening and closing curly brackets {} are now saved to the file. This allows .sq file to be a converted to .asset files in Unity.  
 Tue 23 Apr : Small CMake fixes  
-Wed 17 Apr : Initial Documentation updates, added buoyancy objects, small fixes  
 
 <hr>
