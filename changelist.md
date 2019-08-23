@@ -7,6 +7,7 @@ weight: 120
 
 Version HEAD
 ---
+Thu 22 Aug : SimulQtWidgets and SequencerQtWidgets deployed via CMake to QTDIR/plugins/designer after build.  
 Wed 21 Aug : Added template for cloud shape list in Cloud Layer Edit widget.  
 Mon 19 Aug : Small fix for water reflections  
 Fri 16 Aug : Updated Docs + removed hard coded directories from .markdoc  
@@ -106,6 +107,5 @@ Tue 30 Apr : Precipitation Region Update: CloudWindow has blue interpolated and 
 Tue 30 Apr : Update to cloud.sfx MapToWindow(), which correctly sets the height of the clouds when using a masking texture.  
 Wed 24 Apr : Updated OpenGL/Effect.cpp/.h and OpenGL/RenderPlatform.cpp to have Sync objects around dispatch compute calls that uses a rewrite structured buffer.  
 Tue 23 Apr : Changes to .sq files. The opening and closing curly brackets {} are now saved to the file. This allows .sq file to be a converted to .asset files in Unity.  
-Tue 23 Apr : Small CMake fixes  
 
 <hr>
