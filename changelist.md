@@ -7,6 +7,8 @@ weight: 120
 
 Version HEAD
 ---
+Tue 27 Aug : API fixes for rendering with vertex/index buffers.  
+Tue 27 Aug : const correctness in DX11 buffer classes.  
 Tue 27 Aug : Fix for GLSL/GLSL.json  
 Mon 26 Aug : Add const where possible with Index and Vertex buffers.  
 Fri 23 Aug : Fix deployment folders for shaderbin. API check for SFX-built shader effects: don't load Vulkan effects for DX12.  
@@ -105,7 +107,5 @@ Thu 09 May : Minor updates to simul_clouds.sl GetRainAtOffsetKm(). The rain map 
 Wed 08 May : New Colour Scheme for Cloud Window to improve clarity. Fix for incorrect Precipitation Region position in edge cases. Clouds/BaseGpuCloudGenerator.h SetPrecipitationCentre() removed.  
 Wed 08 May : New Colour Scheme for Cloud Window is improve clarity. Fix for incorrect Precipitation Region position in edge cases. Clouds/BaseGpuCloudGenerator.h SetPrecipitationCentre() removed.  
 Fri 03 May : Fix for Rain and Rain Streaks appearing at altitudes.  
-Fri 03 May : Disable part of the flow rays calculations due to current PS4 incompatibility, current progress on fixing water vr support  
-Wed 01 May : Minor fixes for sequencer stability  
 
 <hr>
