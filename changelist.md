@@ -7,6 +7,7 @@ weight: 120
 
 Version HEAD
 ---
+Wed 28 Aug : Support BC compressed textures in D3D11.  
 Tue 27 Aug : API fixes for rendering with vertex/index buffers.  
 Tue 27 Aug : const correctness in DX11 buffer classes.  
 Tue 27 Aug : Fix for GLSL/GLSL.json  
@@ -106,6 +107,5 @@ Fri 10 May : Fix cloud mip generation. CMake build improvements.
 Thu 09 May : Minor updates to simul_clouds.sl GetRainAtOffsetKm(). The rain map is not re-drawn to reflect the precipitation region.  
 Wed 08 May : New Colour Scheme for Cloud Window to improve clarity. Fix for incorrect Precipitation Region position in edge cases. Clouds/BaseGpuCloudGenerator.h SetPrecipitationCentre() removed.  
 Wed 08 May : New Colour Scheme for Cloud Window is improve clarity. Fix for incorrect Precipitation Region position in edge cases. Clouds/BaseGpuCloudGenerator.h SetPrecipitationCentre() removed.  
-Fri 03 May : Fix for Rain and Rain Streaks appearing at altitudes.  
 
 <hr>
