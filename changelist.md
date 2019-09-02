@@ -7,6 +7,8 @@ weight: 120
 
 Version HEAD
 ---
+Mon 02 Sep : Fix for skyTimelineWidget  
+Mon 02 Sep : Minor fix for overridden functions  
 Fri 30 Aug : Minor fix to copy-pasting cloud keyframes  
 Wed 28 Aug : Support BC compressed textures in D3D11.  
 Tue 27 Aug : API fixes for rendering with vertex/index buffers.  
@@ -105,7 +107,5 @@ Sun 12 May : Project fix for DirectX12Sample_x64_v140.vcxproj
 Sat 11 May : Dx12 sample build  
 Fri 10 May : Fix stringFormat error in Sfx. Prevent at least some of the spurious console output from Flex in preprocessor.lpp.  
 Fri 10 May : Fix cloud mip generation. CMake build improvements.  
-Thu 09 May : Minor updates to simul_clouds.sl GetRainAtOffsetKm(). The rain map is not re-drawn to reflect the precipitation region.  
-Wed 08 May : New Colour Scheme for Cloud Window to improve clarity. Fix for incorrect Precipitation Region position in edge cases. Clouds/BaseGpuCloudGenerator.h SetPrecipitationCentre() removed.  
 
 <hr>
