@@ -51,15 +51,17 @@ Functions
 | char  const * | [GetName](#GetName)() |
 | simul::crossplatform::Material * | [GetOrCreateMaterial](#GetOrCreateMaterial)(char name) |
 | simul::crossplatform::SamplerState * | [GetOrCreateSamplerStateByName](#GetOrCreateSamplerStateByName)(char name_utf8, simul::crossplatform::SamplerStateDesc desc) |
-| char  const * | [GetShaderBinaryPath](#GetShaderBinaryPath)() |
+| std::vector | [GetShaderBinaryPathsUtf8](#GetShaderBinaryPathsUtf8)() |
 | simul::crossplatform::ShaderBuildMode | [GetShaderBuildMode](#GetShaderBuildMode)() |
 | std::vector | [GetShaderPathsUtf8](#GetShaderPathsUtf8)() |
 | simul::crossplatform::Viewport | [GetViewport](#GetViewport)(simul::crossplatform::DeviceContext deviceContext, int index) |
 | void | [InvalidateDeviceObjects](#InvalidateDeviceObjects)() |
 | void | [PopRenderTargets](#PopRenderTargets)(simul::crossplatform::DeviceContext deviceContext) |
+| void | [PopShaderBinaryPath](#PopShaderBinaryPath)() |
 | void | [PopShaderPath](#PopShaderPath)() |
 | void | [PopTexturePath](#PopTexturePath)() |
 | void | [PushRenderTargets](#PushRenderTargets)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::TargetsAndViewport tv) |
+| void | [PushShaderBinaryPath](#PushShaderBinaryPath)(char path_utf8) |
 | void | [PushShaderPath](#PushShaderPath)(char path_utf8) |
 | void | [PushTexturePath](#PushTexturePath)(char pathUtf8) |
 | void | [RecompileShaders](#RecompileShaders)() |
@@ -71,7 +73,6 @@ Functions
 | void | [SetIndexBuffer](#SetIndexBuffer)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Buffer buffer) |
 | void | [SetLayout](#SetLayout)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Layout l) |
 | void | [SetRenderState](#SetRenderState)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::RenderState s) |
-| void | [SetShaderBinaryPath](#SetShaderBinaryPath)(char path_utf8) |
 | void | [SetShaderBuildMode](#SetShaderBuildMode)(simul::crossplatform::ShaderBuildMode s) |
 | void | [SetShaderPathsUtf8](#SetShaderPathsUtf8)(std::vector pathsUtf8) |
 | void | [SetStandardRenderState](#SetStandardRenderState)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::StandardRenderState s) |
@@ -204,8 +205,8 @@ Create a platform-specific material instance.
 Look for a sampler state of the stated name, and create one if it does not exist. The resulting state will be owned by the RenderPlatform, so do not destroy it.
 This is for states that will be shared by multiple shaders. There will be a warning if a description is passed that conflicts with the current definition,
 as the Effects system assumes that SamplerState names are unique.
-<a name="GetShaderBinaryPath"></a>
-### char  const * GetShaderBinaryPath()
+<a name="GetShaderBinaryPathsUtf8"></a>
+### std::vector GetShaderBinaryPathsUtf8()
 Returns the path where generated shader binaries should be saved, and where stored shader binaries should be loaded from.
 <a name="GetShaderBuildMode"></a>
 ### simul::crossplatform::ShaderBuildMode GetShaderBuildMode()
@@ -222,6 +223,9 @@ Platform-dependent function called when uninitializing the Render Platform.
 <a name="PopRenderTargets"></a>
 ### void PopRenderTargets(simul::crossplatform::DeviceContext deviceContext)
 Restore rendertargets and viewports from the top of the stack.
+<a name="PopShaderBinaryPath"></a>
+### void PopShaderBinaryPath()
+Remove a path from the top of the shader source path stack.
 <a name="PopShaderPath"></a>
 ### void PopShaderPath()
 Remove a path from the top of the shader source path stack.
@@ -231,6 +235,10 @@ Remove a path from the top of the texture path stack.
 <a name="PushRenderTargets"></a>
 ### void PushRenderTargets(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::TargetsAndViewport tv)
 Store the current rendertargets and viewports at the top of the stack
+<a name="PushShaderBinaryPath"></a>
+### void PushShaderBinaryPath(char path_utf8)
+Set the path where generated shader binaries should be saved, and where stored shader binaries should be loaded from.
+Push the given file path onto the shader path stack.
 <a name="PushShaderPath"></a>
 ### void PushShaderPath(char path_utf8)
 Push the given file path onto the shader path stack.
@@ -265,9 +273,6 @@ Set the layout for following draw calls - format of the vertex buffer.
 <a name="SetRenderState"></a>
 ### void SetRenderState(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::RenderState s)
 Apply the RenderState to the device context - e.g. blend state, depth masking etc.
-<a name="SetShaderBinaryPath"></a>
-### void SetShaderBinaryPath(char path_utf8)
-Set the path where generated shader binaries should be saved, and where stored shader binaries should be loaded from.
 <a name="SetShaderBuildMode"></a>
 ### void SetShaderBuildMode(simul::crossplatform::ShaderBuildMode s)
 When shaders should be built, or loaded if available.

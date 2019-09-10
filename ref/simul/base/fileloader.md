@@ -18,6 +18,7 @@ Functions
 ---
 
 | void | [AcquireFileContents](#AcquireFileContents)(void pointer, unsigned int bytes, char filename_utf8, bool open_as_text) |
+| void | [AcquireFileContents](#AcquireFileContents)(void pointer, unsigned int bytes, char filename_utf8, std::vector paths, bool open_as_text) |
 | bool | [FileExists](#FileExists)(char filename_utf8) |
 | std::string | [FindFileInPathStack](#FindFileInPathStack)(char filename_utf8, std::vector path_stack_utf8) |
 | int | [FindIndexInPathStack](#FindIndexInPathStack)(char filename_utf8, std::vector path_stack_utf8) |
@@ -39,6 +40,10 @@ Functions
 ---
 <a name="AcquireFileContents"></a>
 ### void AcquireFileContents(void pointer, unsigned int bytes, char filename_utf8, bool open_as_text)
+Put the file's entire contents into memory, by allocating sufficiently many bytes, and setting the pointer.
+The memory should later be freed by a call to 
+<a name="AcquireFileContents"></a>
+### void AcquireFileContents(void pointer, unsigned int bytes, char filename_utf8, std::vector paths, bool open_as_text)
 Put the file's entire contents into memory, by allocating sufficiently many bytes, and setting the pointer.
 The memory should later be freed by a call to 
 <a name="FileExists"></a>

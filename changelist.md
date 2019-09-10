@@ -7,6 +7,11 @@ weight: 120
 
 Version HEAD
 ---
+Mon 09 Sep : Cmake tidy-up.  
+Mon 09 Sep : Fix Cmake fxc command usage.  
+Mon 09 Sep : Cmake now builds OpenGL shaders, which are packed as glsl into the sfxb output.  
+Mon 09 Sep : Added multiple binary paths for RenderPlatforms.  
+Mon 09 Sep : CMake to use SIMUL_ variables : keep them better organized.  
 Mon 02 Sep : Fix for skyTimelineWidget  
 Mon 02 Sep : Minor fix for overridden functions  
 Fri 30 Aug : Minor fix to copy-pasting cloud keyframes  
@@ -102,10 +107,5 @@ Wed 15 May : Pass framenumber to DisplaySurface to get consistent framenumbers f
 Mon 13 May : Minor fix to CloudWindow UI layout and colours. Minor fix for SetCloudConstants() and FillInQueries(). SetPrecipitationCentre() removed.  
 Mon 13 May : Fix sequencer standalone crash.  
 Mon 13 May : Fix shader build path for non-Cmake builds.  
-Sun 12 May : Fix Xbox refs to deleted shaders.  
-Sun 12 May : Project fix for DirectX12Sample_x64_v140.vcxproj  
-Sat 11 May : Dx12 sample build  
-Fri 10 May : Fix stringFormat error in Sfx. Prevent at least some of the spurious console output from Flex in preprocessor.lpp.  
-Fri 10 May : Fix cloud mip generation. CMake build improvements.  
 
 <hr>
