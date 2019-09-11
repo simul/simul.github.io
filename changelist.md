@@ -7,6 +7,7 @@ weight: 120
 
 Version HEAD
 ---
+Wed 11 Sep : Fix build on PS4.  
 Tue 10 Sep : Long timeout for Sfx compiler calls.  
 Tue 10 Sep : Fixed timeout behaviour launching compilers from Sfx.  
 Tue 10 Sep : .  
@@ -106,6 +107,5 @@ Mon 20 May : VR fix for water, other small fixes
 Fri 17 May : Fix Vulkan shader build.  
 Fri 17 May : OverrideWind now works to allow precise positioning of 3D cloud layers. Click and drag in Cloud Window editor. Global wind is now a cosmetic flow, doesn't affect cloud positions.  
 Fri 17 May : New 16x11 monospaced font texture. D3D11 loads textures as texture instead of as SRV.  
-Wed 15 May : Pass framenumber to DisplaySurface to get consistent framenumbers for multiple windows.  
 
 <hr>
