@@ -7,6 +7,7 @@ weight: 120
 
 Version HEAD
 ---
+Wed 18 Sep : Xbox One Cmake fixes.  
 Wed 11 Sep : XboxOne ptr.  
 Wed 11 Sep : Xbox Cmake fixes.  
 Wed 11 Sep : Fix build on PS4.  
@@ -106,6 +107,5 @@ Mon 20 May : QT fix
 Mon 20 May : CloudKeyframeEditWidget fix  
 Mon 20 May : Fix for Simple DX11 and DX12 renderer examples  
 Mon 20 May : VR fix for water, other small fixes  
-Fri 17 May : Fix Vulkan shader build.  
 
 <hr>
