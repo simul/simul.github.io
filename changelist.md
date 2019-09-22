@@ -7,6 +7,7 @@ weight: 120
 
 Version HEAD
 ---
+Sat 21 Sep : Xbox /DEBUG in link options.  
 Wed 18 Sep : Xbox One Cmake fixes.  
 Wed 11 Sep : XboxOne ptr.  
 Wed 11 Sep : Xbox Cmake fixes.  
@@ -106,6 +107,5 @@ Thu 23 May : Updated Rain shader using Reflection and Refraction. CloudRenderer.
 Mon 20 May : QT fix  
 Mon 20 May : CloudKeyframeEditWidget fix  
 Mon 20 May : Fix for Simple DX11 and DX12 renderer examples  
-Mon 20 May : VR fix for water, other small fixes  
 
 <hr>
