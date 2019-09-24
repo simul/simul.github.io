@@ -7,6 +7,10 @@ weight: 120
 
 Version HEAD
 ---
+Tue 24 Sep : Xbox Cmake fix.  
+Tue 24 Sep : Directxtex cmake.  
+Tue 24 Sep : Revert debug.sfx  
+Tue 24 Sep : Fix file loader virtual def to match UE version.  
 Sat 21 Sep : Xbox /DEBUG in link options.  
 Wed 18 Sep : Xbox One Cmake fixes.  
 Wed 11 Sep : XboxOne ptr.  
@@ -103,9 +107,5 @@ Tue 28 May : Shader binaries lumped together in sfxb file - if -w is used in sfx
 Mon 27 May : PS4 API update and build fix.  
 Mon 27 May : Delayed destruction for effects to prevent destroying in-use API objects when recompiling. Update skylight struct.  
 Fri 24 May : Updated LightningRenderer.cpp to use MSAA. Updated CloudRenderer.cpp RenderRainMapTexture() and RenderCloudShadowTexture() Refined Debug Overlays due to new mono spaced font. Fix OpenGL cloud shadows. Fix rain map lookups in SFX/rain.sfx OverrideWind added back.  
-Thu 23 May : Updated Rain shader using Reflection and Refraction. CloudRenderer.cpp split function into RenderCloudShadowTexture() and RenderRainMapTexture(). Precipitation Regions dimension are drawn onto the rain map. VolumeQueryResult::rain_to_snow is updated from rain map. simul_clouds.sl split function GetRainAtOffsetKm() GetRainToSnowAtOffsetKm(). quaternion.sl quat_from_axis_angle_radians() and quat_from_axis_angle_degrees().  
-Mon 20 May : QT fix  
-Mon 20 May : CloudKeyframeEditWidget fix  
-Mon 20 May : Fix for Simple DX11 and DX12 renderer examples  
 
 <hr>
