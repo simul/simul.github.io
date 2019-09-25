@@ -75,7 +75,7 @@ This page shows you how to install the trueSKY plugin for Unity. Head back to [I
 
 * 2: The new sequence will be created within the asset window.
 
-* 3: To make this new sequence the active sequence in the world, select the trueSky object from the hierarchy, then in the inspector, find "Sequence Asset" in the trueSKY script.
+* 3: To make this new sequence the active sequence in the world, select the trueSky object from the hierarchy. Then in the inspector, find "Sequence Asset" in the trueSKY script.
 
 ![](/Images/unity/setsequence.png)
 

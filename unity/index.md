@@ -12,7 +12,7 @@ trueSKY for Unity
 ===============
 
 
-trueSKY is fully compatible with these versions of Unity
+trueSKY is compatible with these versions of Unity
 
 
 | Unity 5       | 2017  | 2018  | 2019  |

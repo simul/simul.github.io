@@ -9,8 +9,8 @@ weight: 20
 
 
 
-Editing trueSKY with Scripting
-------------------------------
+Scripting
+-----------
 
 Alongside the Sequencer tool, trueSKY can be driven and configured via Unity scripting. Similarly to using the sequencer, the settings and properties in trueSKY for Unity are split between [Keyframe](#keyframes) properties (temporal values for clouds and sky), [Layer](#layers) properites (values for clouds and sky that persist throughout a sequence) and the properties of the [trueSKY object](#truesky-object) itself (configuration settings).
 
@@ -23,15 +23,15 @@ To modify trueSKY object via scripting, a reference to the active object in the 
 simul.trueSKY trueSky=simul.trueSKY.GetTrueSky();
 
 All editor properties of the trueSKY object are publicly accessible, so once a reference to the trueSKY object has been obtained, they can also be accessed and modified via scripting. For example, to disable depth blending:
-
-private trueSKY tS;  
+~~~~~~~~~~~~~~~
+private simul.trueSKY tS;  
 
 void Start () 
 {
-tS = trueSKY.GetTrueSky (); 
+tS = simul.trueSKY.GetTrueSky (); 
 tS.DepthBlending = false;
 }
-
+~~~~~~~~~~~~~~~
 
 Layers
 --------
@@ -52,7 +52,7 @@ Layer properties are those accessible in the sequencer by clicking on the layer 
 * **SetCloudFloat  (string name, float value)**: Sets the 3D cloud layer float specified by the name string to the given float value.
 * **SetCloudInt  (string name, int value)**: Sets the 3D cloud layer int specified by the name string to the given float value.
 
-<p class="4.1-specific">
+<div class="4.1-specific">
 **2D Clouds**:
 
 * **Get2DCloudFloat (string name)**: Gets the 2D cloud layer float specified by the name string.
@@ -60,18 +60,18 @@ Layer properties are those accessible in the sequencer by clicking on the layer 
 * **Set2DCloudFloat  (string name, float value)**: Sets the 2D cloud layer float specified by the name string to the given float value.
 * **Set2DCloudInt  (string name, int value)**: Sets the 2D cloud layer int specified by the name string to the given float value.
 
-</p>
+</div>
 
-**Example**: To increment the 3D cloud layer rain speed by 5:
-
-private trueSKY tS;  
+**Example**: To increment the Ozone layer strength by 0.1,
+~~~~~~~~~~~~~~~
+private trueSKY tS;
 
 void Start () 
 {
 tS = trueSKY.GetTrueSky (); 
-tS.SetCloudFloat("rainFallSpeedMS", tS.GetCloudFloat("rainFallSpeedMS") + 5.0f);  
+tS.SetSkyFloat("OzoneStrength", tS.GetSkyFloat("OzoneStrength") + 0.1f);  
 }
-
+~~~~~~~~~~~~~~~
 
 For information about the layer properties you can change and the name strings needed to do so, see the [Cloud](/tutorials/clouds.html) and [Sky](/tutorials/sky.html) pages.
 
@@ -94,14 +94,14 @@ Keyframes in trueSKY can be accessed, counted, modified, created and deleted via
 * **InsertCloudKeyframe (float t)**: Insert a 3D cloud keyframe at specified time t.
 * **GetNumCloudKeyframes ()**: Returns the total number of 3D cloud keyframes.
 
-<p class="4.1-specific">
+<div class="4.1-specific">
 **2D Clouds**:
 
 * **GetCloud2DKeyframeByIndex (int index)**: Get the 2D cloud keyframe with specified index.
 * **GetInterpolatedCloudKeyframe (int layer = 2)**: Retrieve the interpolated (current) 2D cloud keyframe.
 * **Insert2DCloudKeyframe (float t)**: Insert a 2D cloud keyframe at specified time t.
 * **GetNumCloud2DKeyframes ()**: Returns the total number of 2D cloud keyframes.
-</p>
+</div>
 
 Once you know the Uid of a keyframe, you can then get the values of its properties, set said values or delete the keyframe. Whether you're accessing/modifying sky, 3D cloud or 2D cloud keyframes, these tasks are accomplished via the following functions: 
 
@@ -111,15 +111,18 @@ Once you know the Uid of a keyframe, you can then get the values of its properti
 
 **Example**: In the script KeyframeTesting.cs in the Simul directory, is a function that sets all the cloud keyframes to have a "cloudiness" of 0.8 when the game is run:
 
+~~~~~~~~~~~~~~~
 int numk = trueSky.GetNumCloudKeyframes();
+
 for(int i = 0; i < numk; i++)
 {
 uint uid = trueSky.GetCloudKeyframeByIndex(i);
 trueSky.SetKeyframeValue(uid, "cloudiness", 0.8);
 }
+~~~~~~~~~~~~~~~
 
 **Example**: Getting the current cloudiness of the interpolated keyframe
-
+~~~~~~~~~~~~~~~
 private trueSKY tS;   
 
 void Start () 
@@ -128,7 +131,7 @@ tS = trueSKY.GetTrueSky();
 uint uid = tS.GetInterpolatedCloudKeyframe (1);
 tS.GetKeyframeValue (uid, "cloudiness"); 
 }
-
+~~~~~~~~~~~~~~~
 
 Other Functions
 ---------------

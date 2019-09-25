@@ -7,7 +7,11 @@ weight: 120
 
 Version HEAD
 ---
+Tue 24 Sep : Fix D3D11 load binary shader.  
+Tue 24 Sep : Shaderbinarypaths as list.  
+Tue 24 Sep : Temp fix for hidden UI.  
 Tue 24 Sep : Xbox Cmake fix.  
+Tue 24 Sep : Small Doc Update  
 Tue 24 Sep : Directxtex cmake.  
 Tue 24 Sep : Revert debug.sfx  
 Tue 24 Sep : Fix file loader virtual def to match UE version.  
@@ -24,6 +28,7 @@ Mon 09 Sep : Fix Cmake fxc command usage.
 Mon 09 Sep : Cmake now builds OpenGL shaders, which are packed as glsl into the sfxb output.  
 Mon 09 Sep : Added multiple binary paths for RenderPlatforms.  
 Mon 09 Sep : CMake to use SIMUL_ variables : keep them better organized.  
+Wed 04 Sep : Doc Update  
 Mon 02 Sep : Fix for skyTimelineWidget  
 Mon 02 Sep : Minor fix for overridden functions  
 Fri 30 Aug : Minor fix to copy-pasting cloud keyframes  
@@ -36,6 +41,7 @@ Fri 23 Aug : Fix deployment folders for shaderbin. API check for SFX-built shade
 Fri 23 Aug : Small changes to the water  
 Fri 23 Aug : Fixes to Dx12 build and rearranging pixelformats.  
 Thu 22 Aug : SimulQtWidgets and SequencerQtWidgets deployed via CMake to QTDIR/plugins/designer after build.  
+Wed 21 Aug : More Doc updating  
 Wed 21 Aug : Added template for cloud shape list in Cloud Layer Edit widget.  
 Mon 19 Aug : Small fix for water reflections  
 Fri 16 Aug : Updated Docs + removed hard coded directories from .markdoc  
@@ -101,11 +107,5 @@ Wed 29 May : Update Unity plugin api to new structs.
 Wed 29 May : water.sfx compiles for Vulkan.  
 Wed 29 May : Update ExternalTexture definition and add full ExternalTexture structs to RenderFrameStruct, more robust for different API's.  
 Tue 28 May : Add sfxb shader bins.  
-Tue 28 May : Fix broken effect shader load.  
-Tue 28 May : Wrap up shader binaries in sfxb for Vulkan and D3D12.  
-Tue 28 May : Shader binaries lumped together in sfxb file - if -w is used in sfx.exe.  
-Mon 27 May : PS4 API update and build fix.  
-Mon 27 May : Delayed destruction for effects to prevent destroying in-use API objects when recompiling. Update skylight struct.  
-Fri 24 May : Updated LightningRenderer.cpp to use MSAA. Updated CloudRenderer.cpp RenderRainMapTexture() and RenderCloudShadowTexture() Refined Debug Overlays due to new mono spaced font. Fix OpenGL cloud shadows. Fix rain map lookups in SFX/rain.sfx OverrideWind added back.  
 
 <hr>
