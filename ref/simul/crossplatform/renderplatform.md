@@ -24,7 +24,7 @@ Functions
 | simul::crossplatform::Effect * | [CreateEffect](#CreateEffect)() |
 | simul::crossplatform::Effect * | [CreateEffect](#CreateEffect)(char filename_utf8, std::map defines) |
 | simul::crossplatform::BaseFramebuffer * | [CreateFramebuffer](#CreateFramebuffer)(char) |
-| simul::crossplatform::Layout * | [CreateLayout](#CreateLayout)(int num_elements, simul::crossplatform::LayoutDesc layoutDesc) |
+| simul::crossplatform::Layout * | [CreateLayout](#CreateLayout)(int num_elements, simul::crossplatform::LayoutDesc layoutDesc, bool interleaved) |
 | simul::crossplatform::Mesh * | [CreateMesh](#CreateMesh)() |
 | simul::crossplatform::PlatformConstantBuffer * | [CreatePlatformConstantBuffer](#CreatePlatformConstantBuffer)() |
 | simul::crossplatform::PlatformStructuredBuffer * | [CreatePlatformStructuredBuffer](#CreatePlatformStructuredBuffer)() |
@@ -122,7 +122,7 @@ Create a platform-specific effect instance.
 ### simul::crossplatform::BaseFramebuffer * CreateFramebuffer(char)
 Create a platform-specific framebuffer instance - i.e. an optional colour and an optional depth rendertarget. Optionally takes a name string.
 <a name="CreateLayout"></a>
-### simul::crossplatform::Layout * CreateLayout(int num_elements, simul::crossplatform::LayoutDesc layoutDesc)
+### simul::crossplatform::Layout * CreateLayout(int num_elements, simul::crossplatform::LayoutDesc layoutDesc, bool interleaved)
 Create a platform-specific layout instance based on the given layout description layoutDescand buffer buffer.
 <a name="CreateMesh"></a>
 ### simul::crossplatform::Mesh * CreateMesh()

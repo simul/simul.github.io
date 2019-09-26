@@ -7,6 +7,7 @@ weight: 120
 
 Version HEAD
 ---
+Wed 25 Sep : Add interleaved option to layoutdesc.  
 Tue 24 Sep : Fix D3D11 load binary shader.  
 Tue 24 Sep : Shaderbinarypaths as list.  
 Tue 24 Sep : Temp fix for hidden UI.  
@@ -106,6 +107,5 @@ Thu 30 May : Fix for OpenGL SFX compilation. New SfxConfig parameter: identicalI
 Wed 29 May : Update Unity plugin api to new structs.  
 Wed 29 May : water.sfx compiles for Vulkan.  
 Wed 29 May : Update ExternalTexture definition and add full ExternalTexture structs to RenderFrameStruct, more robust for different API's.  
-Tue 28 May : Add sfxb shader bins.  
 
 <hr>
