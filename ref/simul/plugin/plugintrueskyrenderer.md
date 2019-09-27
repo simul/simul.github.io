@@ -78,7 +78,7 @@ Functions
 | void | [SetMatrix4x4](#SetMatrix4x4)(char name, float matrix4x4) |
 | void | [SetPointLight](#SetPointLight)(int id, pos, float min_radius, float max_radius, irradiance) |
 | void | [SetString](#SetString)(char name, char value) |
-| void | [SetTexture](#SetTexture)(char name, void tex, int w, int l) |
+| void | [SetTexture](#SetTexture)(char name, void tex, int w, int l, simul::crossplatform::PixelFormat pixelFormat) |
 | void | [SetWater](#SetWater)(long long Enum, int ID, simul::base::Variant v) |
 | void | [SetWaterBool](#SetWaterBool)(char name, int ID, bool value) |
 | void | [SetWaterFloat](#SetWaterFloat)(char name, int ID, float value) |
@@ -293,7 +293,7 @@ the size of the source.
 ### void SetString(char name, char value)
 Set a string value. namemust be "LicenceKey".
 <a name="SetTexture"></a>
-### void SetTexture(char name, void tex, int w, int l)
+### void SetTexture(char name, void tex, int w, int l, simul::crossplatform::PixelFormat pixelFormat)
 Setting texture properties.
 <a name="SetWater"></a>
 ### void SetWater(long long Enum, int ID, simul::base::Variant v)

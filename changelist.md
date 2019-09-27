@@ -7,6 +7,8 @@ weight: 120
 
 Version HEAD
 ---
+Thu 26 Sep : Minor fixes and cleanup  
+Thu 26 Sep : Essential RenderPlatform fix for D3D12.  
 Wed 25 Sep : Add interleaved option to layoutdesc.  
 Tue 24 Sep : Fix D3D11 load binary shader.  
 Tue 24 Sep : Shaderbinarypaths as list.  
@@ -105,7 +107,5 @@ Thu 30 May : Don't invalidate pixelShaders from Effect: RenderPlatform is respon
 Thu 30 May : Fix for buoyancy objects not sampling the surface at the correct location. Also contains a couple of minor fixes, and a temporary fix for DX12 not seeing the profile buffer offset and direction arrays  
 Thu 30 May : Fix for OpenGL SFX compilation. New SfxConfig parameter: identicalIOBlocks.  
 Wed 29 May : Update Unity plugin api to new structs.  
-Wed 29 May : water.sfx compiles for Vulkan.  
-Wed 29 May : Update ExternalTexture definition and add full ExternalTexture structs to RenderFrameStruct, more robust for different API's.  
 
 <hr>
