@@ -9,7 +9,7 @@ class VirtualVector
 | Include: | Math/Vector3.h |
 
 
-[simul::math::Vector](vector)
+[simul::math::Vector](vector.html)
 
 Functions
 ---
@@ -21,18 +21,18 @@ Functions
 
 Base Classes
 ---
-[simul::math::Vector](vector)
+[simul::math::Vector](vector.html)
 
 Functions
 ---
-
-### <a name="VirtualVector"/> VirtualVector()
+<a name="VirtualVector"></a>
+###  VirtualVector()
 VirtualVector is derived from Vector but does not manage its own data. Instead
 the #PointTo method is used to give vector functionality to floating point data
 anywhere in memory (as long as any alignment conditions are satisfied.)
-
-### <a name="operator*="/>void operator*=(float f)
+<a name="operator*="></a>
+### void operator*=(float f)
 < Make the vector be size sz.
-
-### <a name="Resize"/>void Resize(unsigned int sz)
+<a name="Resize"></a>
+### void Resize(unsigned int sz)
 < Use the data at address addr for this vector.

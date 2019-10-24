@@ -27,8 +27,8 @@ A virtual interface base class for classes that can profile for performance.
 
 Functions
 ---
-
-### <a name="GetDebugText"/>char  const * GetDebugText(simul::base::TextStyle st)
+<a name="GetDebugText"></a>
+### char  const * GetDebugText(simul::base::TextStyle st)
 Gets the profiling report as text.
 
 Determinesif the text should be returned as HTML, including colour formatting.
@@ -36,16 +36,16 @@ Determinesif the text should be returned as HTML, including colour formatting.
 Return
 ---
 null if it fails, else the debug text.
-
-### <a name="GetEvent"/>simul::base::ProfileData  const * GetEvent(simul::base::ProfileData, int)
+<a name="GetEvent"></a>
+### simul::base::ProfileData  const * GetEvent(simul::base::ProfileData, int)
 Get profile data for the event at index i. Returns NULL for i<0 or i>= number of events.
 Null parent means the top-level events.
-
-### <a name="GetMaxLevel"/>int GetMaxLevel()
+<a name="GetMaxLevel"></a>
+### int GetMaxLevel()
 Call this to get the maximum level of the profiling tree.
-
-### <a name="SetMaxLevel"/>void SetMaxLevel(int m)
+<a name="SetMaxLevel"></a>
+### void SetMaxLevel(int m)
 Call this to set the maximum level of the profiling tree.
-
-### <a name="StartFrame"/>void StartFrame()
+<a name="StartFrame"></a>
+### void StartFrame()
 Call this at the start of the frame to reset values.

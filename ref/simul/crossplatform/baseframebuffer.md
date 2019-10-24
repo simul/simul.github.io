@@ -38,68 +38,68 @@ Functions
 
 Functions
 ---
-
-### <a name="BaseFramebuffer"/> BaseFramebuffer(char n)
+<a name="BaseFramebuffer"></a>
+###  BaseFramebuffer(char n)
 A base class for API-dependent framebuffer classes.
-
-### <a name="Activate"/>void Activate(simul::crossplatform::DeviceContext)
+<a name="Activate"></a>
+### void Activate(simul::crossplatform::DeviceContext)
 Activate the framebuffer - must be followed after rendering by a call to 
-
-### <a name="Clear"/>void Clear(simul::crossplatform::DeviceContext context, float R, float G, float B, float A, float depth, int mask)
+<a name="Clear"></a>
+### void Clear(simul::crossplatform::DeviceContext context, float R, float G, float B, float A, float depth, int mask)
 Clear the colour and depth buffers if present.
-
-### <a name="ClearColour"/>void ClearColour(simul::crossplatform::DeviceContext context, float, float, float, float)
+<a name="ClearColour"></a>
+### void ClearColour(simul::crossplatform::DeviceContext context, float, float, float, float)
 Set the size of the framebuffer in pixel height and width.
-
-### <a name="CreateBuffers"/>bool CreateBuffers()
+<a name="CreateBuffers"></a>
+### bool CreateBuffers()
 Call this if needed (not usually) to ensure that the buffers are created.
-
-### <a name="Deactivate"/>void Deactivate(simul::crossplatform::DeviceContext)
+<a name="Deactivate"></a>
+### void Deactivate(simul::crossplatform::DeviceContext)
 Deactivate the framebuffer - must be preceded a call to 
-
-### <a name="DeactivateDepth"/>void DeactivateDepth(simul::crossplatform::DeviceContext)
+<a name="DeactivateDepth"></a>
+### void DeactivateDepth(simul::crossplatform::DeviceContext)
 Deactivate only the depth buffer, so it can be used as a texture for rendering to the colour buffer.
-
-### <a name="GetDepthTexture"/>simul::crossplatform::Texture * GetDepthTexture()
+<a name="GetDepthTexture"></a>
+### simul::crossplatform::Texture * GetDepthTexture()
 Get the texture for the depth buffer target.
-
-### <a name="GetHeight"/>int GetHeight()
+<a name="GetHeight"></a>
+### int GetHeight()
 Get the dimension of the surface
-
-### <a name="GetTexture"/>simul::crossplatform::Texture * GetTexture()
+<a name="GetTexture"></a>
+### simul::crossplatform::Texture * GetTexture()
 Get the texture for the colour buffer target.
-
-### <a name="GetWidth"/>int GetWidth()
+<a name="GetWidth"></a>
+### int GetWidth()
 Get the dimension of the surface
-
-### <a name="InvalidateDeviceObjects"/>void InvalidateDeviceObjects()
+<a name="InvalidateDeviceObjects"></a>
+### void InvalidateDeviceObjects()
 Platform-dependent function called when uninitializing the framebuffer.
-
-### <a name="IsColourActive"/>bool IsColourActive()
+<a name="IsColourActive"></a>
+### bool IsColourActive()
 Return true if the framebuffer's colour buffer has been activated and not yet deactivated.
-
-### <a name="IsDepthActive"/>bool IsDepthActive()
+<a name="IsDepthActive"></a>
+### bool IsDepthActive()
 Return true if the framebuffer's depth buffer has been activated and not yet deactivated.
-
-### <a name="IsValid"/>bool IsValid()
+<a name="IsValid"></a>
+### bool IsValid()
 Return true if the API-dependent objects have been updated to match the properties.
-
-### <a name="RestoreDeviceObjects"/>void RestoreDeviceObjects(simul::crossplatform::RenderPlatform r)
+<a name="RestoreDeviceObjects"></a>
+### void RestoreDeviceObjects(simul::crossplatform::RenderPlatform r)
 Platform-dependent function called when initializing the framebuffer.
-
-### <a name="SetAsCubemap"/>void SetAsCubemap(int face_size, int num_mips, simul::crossplatform::PixelFormat f)
+<a name="SetAsCubemap"></a>
+### void SetAsCubemap(int face_size, int num_mips, simul::crossplatform::PixelFormat f)
 Set this to be a cubemap framebuffer, so that its texture object will be a cubemap. Equivalent to SetWidthAndHeight.
-
-### <a name="SetDepthFormat"/>void SetDepthFormat(simul::crossplatform::PixelFormat)
+<a name="SetDepthFormat"></a>
+### void SetDepthFormat(simul::crossplatform::PixelFormat)
 Set the API-dependent colour depth format for this framebuffer. Across all API's, setting 0 means no rendering to depth.
-
-### <a name="SetFormat"/>void SetFormat(simul::crossplatform::PixelFormat)
+<a name="SetFormat"></a>
+### void SetFormat(simul::crossplatform::PixelFormat)
 Set the API-dependent colour buffer format for this framebuffer. Across all API's, setting 0 means no rendering to colour.
-
-### <a name="SetUseFastRAM"/>void SetUseFastRAM(bool, bool)
+<a name="SetUseFastRAM"></a>
+### void SetUseFastRAM(bool, bool)
 Some hardware has fast RAM that's good for framebuffers.
-
-### <a name="SetWidthAndHeight"/>void SetWidthAndHeight(int w, int h, int num_mips)
+<a name="SetWidthAndHeight"></a>
+### void SetWidthAndHeight(int w, int h, int num_mips)
 Set the size of the framebuffer.
 
 Fields

@@ -24,24 +24,24 @@ Functions
 
 Functions
 ---
-
-### <a name="CheckForOriginChange"/>void CheckForOriginChange(simul::crossplatform::Quaterniond new_origin, simul::clouds::CloudRenderingOptions opts)
+<a name="CheckForOriginChange"></a>
+### void CheckForOriginChange(simul::crossplatform::Quaterniond new_origin, simul::clouds::CloudRenderingOptions opts)
 Check if the cloud window origin has changed, and update values if it has.
-
-### <a name="GetOriginHeadingDegrees"/>double GetOriginHeadingDegrees()
+<a name="GetOriginHeadingDegrees"></a>
+### double GetOriginHeadingDegrees()
 < Get the latitude/longitude referred to by the specified quaternion.
-
-### <a name="GetOriginLatitudeLongitudeHeading"/>void GetOriginLatitudeLongitudeHeading(double lat, double lon, double head)
+<a name="GetOriginLatitudeLongitudeHeading"></a>
+### void GetOriginLatitudeLongitudeHeading(double lat, double lon, double head)
 < Get the latitude/longitude referred to by the specified position value.
-
-### <a name="InitWindowCentre"/>void InitWindowCentre(float lat_degrees, float long_degrees, float x_heading_degrees)
+<a name="InitWindowCentre"></a>
+### void InitWindowCentre(float lat_degrees, float long_degrees, float x_heading_degrees)
 Initialize the window.
-
-### <a name="MoveCloudWindow"/>void MoveCloudWindow(int x, int y)
+<a name="MoveCloudWindow"></a>
+### void MoveCloudWindow(int x, int y)
 Translate the cloud window by the given x and y
-
-### <a name="operator="/>simul::clouds::CloudWindow  const & operator=(simul::clouds::CloudWindow)
+<a name="operator="></a>
+### simul::clouds::CloudWindow  const & operator=(simul::clouds::CloudWindow)
 assignment operator only copies properties, not state.
-
-### <a name="UpdateWindowCentre"/>float UpdateWindowCentre(float lat_degrees, float long_degrees)
+<a name="UpdateWindowCentre"></a>
+### float UpdateWindowCentre(float lat_degrees, float long_degrees)
 Returns updated x heading in degrees.

@@ -6,7 +6,7 @@ weight: 0
 struct RenderFrameStruct
 ===
 
-| Include: | PlugIns/TrueSkyPluginRender/UnityPluginInterface.h |
+| Include: | Plugins/TrueSkyPluginRender/UnityPluginInterface.h |
 
 
 
@@ -18,6 +18,6 @@ Functions
 
 Functions
 ---
-
-### <a name="StaticRenderFrame2"/>int StaticRenderFrame2(simul::plugin::RenderFrameStruct frameStruct)
+<a name="StaticRenderFrame2"></a>
+### int StaticRenderFrame2(simul::plugin::RenderFrameStruct frameStruct)
 Render trueSKY to the current render target using a specific struct to hold values.

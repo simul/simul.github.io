@@ -6,10 +6,8 @@ weight: 0
 struct AmortizationStruct
 ===
 
-| Include: | Platform/CrossPlatform/AmortizationStruct.h |
+| Include: | Clouds/BaseWeatherRenderer.h |
 
-A small structure for per-frame amortization of buffers.
-  
 
 
 Functions
@@ -17,12 +15,9 @@ Functions
 
 | void | [reset](#reset)() |
 
-A small structure for per-frame amortization of buffers.
-  
-
 
 Functions
 ---
-
-### <a name="reset"/>void reset()
+<a name="reset"></a>
+### void reset()
 Reset frame data, but not properties.

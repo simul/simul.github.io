@@ -11,7 +11,7 @@ class TrackingAllocator
 A pseudo allocator that tracks video memory but does not actually allocate it.
   
 
-[simul::base::MemoryInterface](memoryinterface)
+[simul::base::MemoryInterface](memoryinterface.html)
 
 Functions
 ---
@@ -28,22 +28,22 @@ A pseudo allocator that tracks video memory but does not actually allocate it.
 
 Base Classes
 ---
-[simul::base::MemoryInterface](memoryinterface)
+[simul::base::MemoryInterface](memoryinterface.html)
 
 Functions
 ---
-
-### <a name="AllocateTracked"/>void * AllocateTracked(size_t nbytes, size_t align, char fn)
+<a name="AllocateTracked"></a>
+### void * AllocateTracked(size_t nbytes, size_t align, char fn)
 Allocate nbytes bytes of memory, aligned to align and return a pointer to them.
-
-### <a name="Deallocate"/>void Deallocate(void ptr)
+<a name="Deallocate"></a>
+### void Deallocate(void ptr)
 De-allocate the memory at address(requires that this memory was allocated with Allocate()).
-
-### <a name="Shutdown"/>void Shutdown()
+<a name="Shutdown"></a>
+### void Shutdown()
 Shut down and report any leaks.
-
-### <a name="TrackVideoMemory"/>void TrackVideoMemory(void ptr, int nbytes, char fn)
+<a name="TrackVideoMemory"></a>
+### void TrackVideoMemory(void ptr, int nbytes, char fn)
 Track (but don't allocate) nbytes bytes of memory.
-
-### <a name="UntrackVideoMemory"/>void UntrackVideoMemory(void ptr)
+<a name="UntrackVideoMemory"></a>
+### void UntrackVideoMemory(void ptr)
 Free the pointer from video memory tracking.

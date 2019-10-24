@@ -27,20 +27,20 @@ A class to render mixed-resolution depth buffers.
 
 Functions
 ---
-
-### <a name="MixedResolutionCompositor"/> MixedResolutionCompositor()
+<a name="MixedResolutionCompositor"></a>
+###  MixedResolutionCompositor()
 Constructor.
-
-### <a name="~MixedResolutionCompositor"/> ~MixedResolutionCompositor()
+<a name="~MixedResolutionCompositor"></a>
+###  ~MixedResolutionCompositor()
 Destructor.
-
-### <a name="InvalidateDeviceObjects"/>void InvalidateDeviceObjects()
+<a name="InvalidateDeviceObjects"></a>
+### void InvalidateDeviceObjects()
 Platform-dependent function called when uninitializing the water Compositor.
-
-### <a name="RecompileShaders"/>void RecompileShaders()
+<a name="RecompileShaders"></a>
+### void RecompileShaders()
 Platform-dependent function to reload the shaders - only use this for debug purposes.
-
-### <a name="RestoreDeviceObjects"/>void RestoreDeviceObjects(simul::crossplatform::RenderPlatform renderPlatform)
+<a name="RestoreDeviceObjects"></a>
+### void RestoreDeviceObjects(simul::crossplatform::RenderPlatform renderPlatform)
 Platform-dependent function called when initializing the Compositor.
 
 Fields

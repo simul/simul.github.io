@@ -19,9 +19,9 @@ Functions
 
 Functions
 ---
-
-### <a name="GetProfilingInterface"/>simul::base::ProfilingInterface * GetProfilingInterface(THREAD_TYPE thread_id)
+<a name="GetProfilingInterface"></a>
+### simul::base::ProfilingInterface * GetProfilingInterface(THREAD_TYPE thread_id)
 Returns a pointer to the current CPU profiler.
-
-### <a name="SetProfilingInterface"/>void SetProfilingInterface(THREAD_TYPE thread_id, simul::base::ProfilingInterface p)
+<a name="SetProfilingInterface"></a>
+### void SetProfilingInterface(THREAD_TYPE thread_id, simul::base::ProfilingInterface p)
 Set the CPU profiler. Future use of SIMUL_PROFILE_START or SIMUL_COMBINED_PROFILE_START will use that profiler.

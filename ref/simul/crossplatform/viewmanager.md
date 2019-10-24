@@ -31,38 +31,38 @@ A class to store a set of View objects, one per view id.
 
 Functions
 ---
-
-### <a name="ViewManager"/> ViewManager()
+<a name="ViewManager"></a>
+###  ViewManager()
 Default constructor.
-
-### <a name="AddView"/>simul::crossplatform::View * AddView(int)
+<a name="AddView"></a>
+### simul::crossplatform::View * AddView(int)
 Adds a view.
 Return
 ---
 An int view_id.
-
-### <a name="CleanUp"/>void CleanUp(int current_framenumber, int max_age)
+<a name="CleanUp"></a>
+### void CleanUp(int current_framenumber, int max_age)
 Delete old views
-
-### <a name="Clear"/>void Clear()
+<a name="Clear"></a>
+### void Clear()
 Clears this object to its blank/initial state.
-
-### <a name="GetView"/>simul::crossplatform::View * GetView(int view_id)
+<a name="GetView"></a>
+### simul::crossplatform::View * GetView(int view_id)
 Gets a view.
 Return
 ---
 null if it fails, else the view.
-
-### <a name="GetViews"/>simul::crossplatform::ViewManager::ViewMap  const & GetViews()
+<a name="GetViews"></a>
+### simul::crossplatform::ViewManager::ViewMap  const & GetViews()
 Gets the views.
-
-### <a name="InvalidateDeviceObjects"/>void InvalidateDeviceObjects()
+<a name="InvalidateDeviceObjects"></a>
+### void InvalidateDeviceObjects()
 Platform-dependent function called when uninitializing the view manager.
-
-### <a name="RemoveView"/>void RemoveView(int view_id)
+<a name="RemoveView"></a>
+### void RemoveView(int view_id)
 Removes the view.
-
-### <a name="RestoreDeviceObjects"/>void RestoreDeviceObjects(simul::crossplatform::RenderPlatform renderPlatform)
+<a name="RestoreDeviceObjects"></a>
+### void RestoreDeviceObjects(simul::crossplatform::RenderPlatform renderPlatform)
 Platform-dependent function called when initializing the view manager.
 
 Fields

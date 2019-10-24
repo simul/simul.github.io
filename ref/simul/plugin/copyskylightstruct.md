@@ -6,7 +6,7 @@ weight: 0
 struct CopySkylightStruct
 ===
 
-| Include: | PlugIns/TrueSkyPluginRender/UnityPluginInterface.h |
+| Include: | Plugins/TrueSkyPluginRender/UnityPluginInterface.h |
 
 
 
@@ -18,6 +18,6 @@ Functions
 
 Functions
 ---
-
-### <a name="StaticCopySkylight3"/>int StaticCopySkylight3(simul::plugin::CopySkylightStruct sk)
+<a name="StaticCopySkylight3"></a>
+### int StaticCopySkylight3(simul::plugin::CopySkylightStruct sk)
 Update a skylight cubemap, and return the latest result. Inputs are passed via a struct.

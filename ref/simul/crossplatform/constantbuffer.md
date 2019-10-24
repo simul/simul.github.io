@@ -9,8 +9,8 @@ classtemplate ConstantBuffer
 | Include: | Platform/CrossPlatform/Effect.h |
 
 
-[simul::crossplatform::ConstantBufferBase](constantbufferbase)
-[](/ref/)
+[simul::crossplatform::ConstantBufferBase](constantbufferbase.html)
+[](/ref/.html)
 
 Functions
 ---
@@ -25,26 +25,26 @@ Functions
 
 Base Classes
 ---
-[simul::crossplatform::ConstantBufferBase](constantbufferbase)
-[](/ref/)
+[simul::crossplatform::ConstantBufferBase](constantbufferbase.html)
+[](/ref/.html)
 
 Functions
 ---
-
-### <a name="GetSize"/>size_t GetSize()
+<a name="GetSize"></a>
+### size_t GetSize()
 For Effect's use only, do not call.
-
-### <a name="GetAddr"/>void * GetAddr()
+<a name="GetAddr"></a>
+### void * GetAddr()
 For Effect's use only, do not call.
-
-### <a name="GetIndex"/>int GetIndex()
+<a name="GetIndex"></a>
+### int GetIndex()
 Get the binding index in shaders.
-
-### <a name="RestoreDeviceObjects"/>void RestoreDeviceObjects(simul::crossplatform::RenderPlatform p)
+<a name="RestoreDeviceObjects"></a>
+### void RestoreDeviceObjects(simul::crossplatform::RenderPlatform p)
 Create the buffer object.
-
-### <a name="InvalidateDeviceObjects"/>void InvalidateDeviceObjects()
+<a name="InvalidateDeviceObjects"></a>
+### void InvalidateDeviceObjects()
 Free the allocated buffer.
-
-### <a name="Unbind"/>void Unbind(simul::crossplatform::DeviceContext deviceContext)
+<a name="Unbind"></a>
+### void Unbind(simul::crossplatform::DeviceContext deviceContext)
 Unbind from the effect.

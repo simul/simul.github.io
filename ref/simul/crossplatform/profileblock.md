@@ -18,6 +18,6 @@ Functions
 
 Functions
 ---
-
-### <a name="GetTime"/>float GetTime()
+<a name="GetTime"></a>
+### float GetTime()
 Get the previous frame's timing value.

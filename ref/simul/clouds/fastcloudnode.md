@@ -15,7 +15,7 @@ call SetResource( simul::base::MemoryInterface *) with a pointer to a
 an instance of a class derived from MemoryInterface.
   
 
-[simul::clouds::CellularCloudNode](cellularcloudnode)
+[simul::clouds::CellularCloudNode](cellularcloudnode.html)
 
 Functions
 ---
@@ -38,28 +38,28 @@ an instance of a class derived from MemoryInterface.
 
 Base Classes
 ---
-[simul::clouds::CellularCloudNode](cellularcloudnode)
+[simul::clouds::CellularCloudNode](cellularcloudnode.html)
 
 Functions
 ---
-
-### <a name="AddHumidityCallback"/>void AddHumidityCallback(simul::clouds::HumidityCallbackInterface hc)
+<a name="AddHumidityCallback"></a>
+### void AddHumidityCallback(simul::clouds::HumidityCallbackInterface hc)
 Assign a callback object to control humidity (cloud density) within the cloud volume.
-
-### <a name="ClearHumidityCallbacks"/>void ClearHumidityCallbacks()
+<a name="ClearHumidityCallbacks"></a>
+### void ClearHumidityCallbacks()
 Remove all humidity callbacks.
-
-### <a name="RemoveHumidityCallback"/>void RemoveHumidityCallback(simul::clouds::HumidityCallbackInterface hc)
+<a name="RemoveHumidityCallback"></a>
+### void RemoveHumidityCallback(simul::clouds::HumidityCallbackInterface hc)
 Remove the stated callback object from the list.
-
-### <a name="StateStreamIn"/>std::istream  & StateStreamIn(std::istream is)
+<a name="StateStreamIn"></a>
+### std::istream  & StateStreamIn(std::istream is)
 Stream/load from the std::isteam is.
-
-### <a name="StateStreamOut"/>std::ostream  & StateStreamOut(std::ostream os)
+<a name="StateStreamOut"></a>
+### std::ostream  & StateStreamOut(std::ostream os)
 Stream/save to the std::osteam os.
-
-### <a name="StreamIn"/>std::istream  & StreamIn(std::istream is)
+<a name="StreamIn"></a>
+### std::istream  & StreamIn(std::istream is)
 Stream/load from the std::isteam is.
-
-### <a name="StreamOut"/>std::ostream  & StreamOut(std::ostream os)
+<a name="StreamOut"></a>
+### std::ostream  & StreamOut(std::ostream os)
 Stream/save to the std::osteam os.

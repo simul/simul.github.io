@@ -18,13 +18,11 @@ Functions
 
 Functions
 ---
-
-### <a name="ActualApply"/>void ActualApply(simul::crossplatform::DeviceContext, simul::crossplatform::EffectPass, int, bool)
+<a name="ActualApply"></a>
+### void ActualApply(simul::crossplatform::DeviceContext, simul::crossplatform::EffectPass, int, bool)
 For RenderPlatform's use only: do not call.
 
 Fields
 ---
 
 **renderPlatform**  A base class for structured buffers, used by StructuredBuffer internally.
-
-**numCopies**  Find the constant buffer in the given effect, and link to it.

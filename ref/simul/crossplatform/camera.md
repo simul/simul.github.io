@@ -9,8 +9,8 @@ class Camera
 | Include: | Platform/CrossPlatform/Camera.h |
 
 
-[simul::geometry::OrientationInterface](/ref/simul/geometry/orientationinterface)
-[simul::crossplatform::CameraInterface](camerainterface)
+[simul::geometry::OrientationInterface](../geometry/orientationinterface.html)
+[simul::crossplatform::CameraInterface](camerainterface.html)
 
 Functions
 ---
@@ -20,11 +20,11 @@ Functions
 
 Base Classes
 ---
-[simul::geometry::OrientationInterface](/ref/simul/geometry/orientationinterface)
-[simul::crossplatform::CameraInterface](camerainterface)
+[simul::geometry::OrientationInterface](../geometry/orientationinterface.html)
+[simul::crossplatform::CameraInterface](camerainterface.html)
 
 Functions
 ---
-
-### <a name="GetRotationAsQuaternion"/>float  const * GetRotationAsQuaternion()
+<a name="GetRotationAsQuaternion"></a>
+### float  const * GetRotationAsQuaternion()
 Permanent: this means that for as long as the interface exists, the address is valid.

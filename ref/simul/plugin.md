@@ -6,16 +6,16 @@ weight: 0
 namespace plugin
 ===
 
-| Include: | PlugIns/TrueSkyPluginRender/TrackingAllocator.h |
+| Include: | Plugins/TrueSkyPluginRender/PluginTrueSkyRenderer.h |
 
 
 
 Classes and Structures
 ---
 
-| struct [ExternalTexture](plugin/externaltexture) |  |
-| struct [Query](plugin/query) |  |
-| class [TrackingAllocator](plugin/trackingallocator) |  |
+| struct [ExternalTexture](plugin/externaltexture.html) |  |
+| struct [Query](plugin/query.html) |  |
+| class [TrackingAllocator](plugin/trackingallocator.html) |  |
 
 Functions
 ---
@@ -25,7 +25,8 @@ Functions
 | int | [GetNumStorms](#GetNumStorms)() |
 | unsigned int | [GetStormAtTime](#GetStormAtTime)(float t) |
 | unsigned int | [GetStormByIndex](#GetStormByIndex)(int i) |
-| bool | [StaticAddWaterBuoyancyObject](#StaticAddWaterBuoyancyObject)(simul::terrain::WaterBuoyancyObjectValues newObject) |
+| bool | [StaticAddWaterBuoyancyObject](#StaticAddWaterBuoyancyObject)(simul::terrain::WaterMeshObjectValues newObject) |
+| bool | [StaticAddWaterMaskObject](#StaticAddWaterMaskObject)(simul::terrain::waterMaskingObject newObject) |
 | bool | [StaticAddWaterProbe](#StaticAddWaterProbe)(simul::terrain::WaterProbeValues values) |
 | void | [StaticCloudLineQuery](#StaticCloudLineQuery)(int id, float startpos, float endpos, LineQueryResult res) |
 | void | [StaticCloudPointQuery](#StaticCloudPointQuery)(int id, float pos, VolumeQueryResult res) |
@@ -67,6 +68,7 @@ Functions
 | void | [StaticRemoveBoundedWaterObject](#StaticRemoveBoundedWaterObject)(int ID) |
 | void | [StaticRemoveView](#StaticRemoveView)(int view_id) |
 | void | [StaticRemoveWaterBuoyancyObject](#StaticRemoveWaterBuoyancyObject)(int ID) |
+| void | [StaticRemoveWaterMaskObject](#StaticRemoveWaterMaskObject)(int ID) |
 | void | [StaticRemoveWaterProbe](#StaticRemoveWaterProbe)(int ID) |
 | void | [StaticRenderDeleteKeyframe](#StaticRenderDeleteKeyframe)(unsigned int uid) |
 | int | [StaticRenderFrame](#StaticRenderFrame)(void device, void pContext, int view_id, float viewMatrix4x4, float projMatrix4x4, void depthTexture, void colourTarget, simul::crossplatform::Viewport depthViewports, simul::crossplatform::Viewport viewports, simul::plugin::RenderStyle s, float exposure, float gamma, int framenumber, simul::crossplatform::MultiResConstants pMultiResConstants) |
@@ -106,7 +108,8 @@ Functions
 | int | [StaticShutDownInterface](#StaticShutDownInterface)() |
 | int | [StaticSpawnLightning](#StaticSpawnLightning)(startpos, endpos, float magnitude, colour) |
 | bool | [StaticTriggerAction](#StaticTriggerAction)(char name) |
-| void | [StaticUpdateWaterBuoyancyObjectValues](#StaticUpdateWaterBuoyancyObjectValues)(simul::terrain::WaterBuoyancyObjectValues values) |
+| void | [StaticUpdateWaterBuoyancyObjectValues](#StaticUpdateWaterBuoyancyObjectValues)(simul::terrain::WaterMeshObjectValues values) |
+| void | [StaticUpdateWaterMaskObjectValues](#StaticUpdateWaterMaskObjectValues)(simul::terrain::waterMaskingObject values) |
 | void | [StaticUpdateWaterProbeValues](#StaticUpdateWaterProbeValues)(simul::terrain::WaterProbeValues values) |
 | int | [StaticWaterSet](#StaticWaterSet)(long long num, int ID, simul::base::Variant v) |
 | void | [UnitySetGraphicsDevice](#UnitySetGraphicsDevice)(void device, simul::crossplatform::RenderPlatformType deviceType, UnityGfxDeviceEventType eventType) |
@@ -114,279 +117,288 @@ Functions
 
 Functions
 ---
-
-### <a name="GetInterpolatedCloudKeyframeUniqueId"/>unsigned int GetInterpolatedCloudKeyframeUniqueId(int layer)
+<a name="GetInterpolatedCloudKeyframeUniqueId"></a>
+### unsigned int GetInterpolatedCloudKeyframeUniqueId(int layer)
 Get the ID of the current interpolated cloud keyframe on the given layer
-
-### <a name="GetInterpolatedSkyKeyframeUniqueId"/>unsigned int GetInterpolatedSkyKeyframeUniqueId()
+<a name="GetInterpolatedSkyKeyframeUniqueId"></a>
+### unsigned int GetInterpolatedSkyKeyframeUniqueId()
 Get the ID of the current interpolated sky keyframe
-
-### <a name="GetNumStorms"/>int GetNumStorms()
+<a name="GetNumStorms"></a>
+### int GetNumStorms()
 Get the total number of storms
-
-### <a name="GetStormAtTime"/>unsigned int GetStormAtTime(float t)
+<a name="GetStormAtTime"></a>
+### unsigned int GetStormAtTime(float t)
 Get a storm ID, if it exists, at time t
-
-### <a name="GetStormByIndex"/>unsigned int GetStormByIndex(int i)
+<a name="GetStormByIndex"></a>
+### unsigned int GetStormByIndex(int i)
 Get a storm ID with index i
-
-### <a name="StaticAddWaterBuoyancyObject"/>bool StaticAddWaterBuoyancyObject(simul::terrain::WaterBuoyancyObjectValues newObject)
+<a name="StaticAddWaterBuoyancyObject"></a>
+### bool StaticAddWaterBuoyancyObject(simul::terrain::WaterMeshObjectValues newObject)
 Create a water buoyancy object with a given struct that holds an array of vertices
-
-### <a name="StaticAddWaterProbe"/>bool StaticAddWaterProbe(simul::terrain::WaterProbeValues values)
+<a name="StaticAddWaterMaskObject"></a>
+### bool StaticAddWaterMaskObject(simul::terrain::waterMaskingObject newObject)
+Create a water masking object
+<a name="StaticAddWaterProbe"></a>
+### bool StaticAddWaterProbe(simul::terrain::WaterProbeValues values)
 Create a water probe
-
-### <a name="StaticCloudLineQuery"/>void StaticCloudLineQuery(int id, float startpos, float endpos, LineQueryResult res)
+<a name="StaticCloudLineQuery"></a>
+### void StaticCloudLineQuery(int id, float startpos, float endpos, LineQueryResult res)
 Perform a query of the cloud properties along a given vector in world space
-
-### <a name="StaticCloudPointQuery"/>void StaticCloudPointQuery(int id, float pos, VolumeQueryResult res)
+<a name="StaticCloudPointQuery"></a>
+### void StaticCloudPointQuery(int id, float pos, VolumeQueryResult res)
 Perform a query of the cloud properties at a given point in world space
-
-### <a name="StaticCopySkylight"/>int StaticCopySkylight(void pContext, int cube_id, float shValues, int shOrder, void targetTex, mat4 engineToSimulMatrix4x4, int updateFrequency, float blend, float copy_exposure, float copy_gamma)
+<a name="StaticCopySkylight"></a>
+### int StaticCopySkylight(void pContext, int cube_id, float shValues, int shOrder, void targetTex, mat4 engineToSimulMatrix4x4, int updateFrequency, float blend, float copy_exposure, float copy_gamma)
 (DEPRECATED) Update a skylight cubemap, and return the latest result.
-
-### <a name="StaticCopySkylight2"/>int StaticCopySkylight2(void pContext, int cube_id, float shValues, int shOrder, void targetTex, mat4 engineToSimulMatrix4x4, int updateFrequency, float blend, float copy_exposure, float copy_gamma, vec3 ground_colour)
+<a name="StaticCopySkylight2"></a>
+### int StaticCopySkylight2(void pContext, int cube_id, float shValues, int shOrder, void targetTex, mat4 engineToSimulMatrix4x4, int updateFrequency, float blend, float copy_exposure, float copy_gamma, vec3 ground_colour)
 (DEPRECATED) Update a skylight cubemap, and return the latest result.
-
-### <a name="StaticCreateBoundedWaterObject"/>bool StaticCreateBoundedWaterObject(int ID, float dimension, float location)
+<a name="StaticCreateBoundedWaterObject"></a>
+### bool StaticCreateBoundedWaterObject(int ID, float dimension, float location)
 Create a bounded water object with a given ID
-
-### <a name="StaticEnableLogging"/>void StaticEnableLogging(char logfile)
+<a name="StaticEnableLogging"></a>
+### void StaticEnableLogging(char logfile)
 Pass a specific char pointer to write log output to.
-
-### <a name="StaticExecuteDeferredRendering"/>void StaticExecuteDeferredRendering()
+<a name="StaticExecuteDeferredRendering"></a>
+### void StaticExecuteDeferredRendering()
 Render all the deferred contexts.
-
-### <a name="StaticExportCloudLayerToGeometry"/>void StaticExportCloudLayerToGeometry(char filenameUtf8, int index)
+<a name="StaticExportCloudLayerToGeometry"></a>
+### void StaticExportCloudLayerToGeometry(char filenameUtf8, int index)
 Exports the cloud layer as geometry
-
-### <a name="StaticFillColourTable"/>bool StaticFillColourTable(unsigned int uid, int x, int y, int z, float target)
+<a name="StaticFillColourTable"></a>
+### bool StaticFillColourTable(unsigned int uid, int x, int y, int z, float target)
 Set the current atmosphric scattering colour to a constant colour
-
-### <a name="StaticGet"/>int StaticGet(long long num, simul::base::Variant v)
+<a name="StaticGet"></a>
+### int StaticGet(long long num, simul::base::Variant v)
 Get thevalue corresponding to the given enum.
-
-### <a name="StaticGetEnum"/>long long StaticGetEnum(char name)
+<a name="StaticGetEnum"></a>
+### long long StaticGetEnum(char name)
 Get the enum of a specific value
-
-### <a name="StaticGetEnvironment"/>void * StaticGetEnvironment()
+<a name="StaticGetEnvironment"></a>
+### void * StaticGetEnvironment()
 Returns the simul::clouds::Environment pointer.
-
-### <a name="StaticGetFloatAtPosition"/>float StaticGetFloatAtPosition(long long enum_, float pos, int uid)
+<a name="StaticGetFloatAtPosition"></a>
+### float StaticGetFloatAtPosition(long long enum_, float pos, int uid)
 Get a float value at a specific point within worldspace (enum version)
-
-### <a name="StaticGetLightningBolts"/>int StaticGetLightningBolts(simul::clouds::ExportLightningStrike s, int maxnum)
+<a name="StaticGetLightningBolts"></a>
+### int StaticGetLightningBolts(simul::clouds::ExportLightningStrike s, int maxnum)
 Get the properties of a lightning bolt that is currently active in the scene
-
-### <a name="StaticGetOrAddView"/>int StaticGetOrAddView(void ident)
+<a name="StaticGetOrAddView"></a>
+### int StaticGetOrAddView(void ident)
 Ensure that a view is created, unique to the ident that was passed.
 So this ident must be unique to each of the active views in the external engine.
 Return
 ---
 The trueSKY id for that view.
-
-### <a name="StaticGetRender"/>int StaticGetRender(char name, int numparams, simul::base::Variant params)
+<a name="StaticGetRender"></a>
+### int StaticGetRender(char name, int numparams, simul::base::Variant params)
 (DEPRECATED) Get an int value.
-
-### <a name="StaticGetRenderBool"/>bool StaticGetRenderBool(char name)
+<a name="StaticGetRenderBool"></a>
+### bool StaticGetRenderBool(char name)
 Get a string value.
-
-### <a name="StaticGetRenderFloat"/>float StaticGetRenderFloat(char name)
+<a name="StaticGetRenderFloat"></a>
+### float StaticGetRenderFloat(char name)
 Get a float value.
-
-### <a name="StaticGetRenderFloatAtPosition"/>float StaticGetRenderFloatAtPosition(char name, float pos)
+<a name="StaticGetRenderFloatAtPosition"></a>
+### float StaticGetRenderFloatAtPosition(char name, float pos)
 Get a float value at a specific point within worldspace
-
-### <a name="StaticGetRenderInt"/>int StaticGetRenderInt(char name, int numparams, simul::base::Variant params)
+<a name="StaticGetRenderInt"></a>
+### int StaticGetRenderInt(char name, int numparams, simul::base::Variant params)
 Get an int value.
-
-### <a name="StaticGetRenderInterfaceInstance"/>simul::plugin::PluginTrueSkyRenderer * StaticGetRenderInterfaceInstance()
+<a name="StaticGetRenderInterfaceInstance"></a>
+### simul::plugin::PluginTrueSkyRenderer * StaticGetRenderInterfaceInstance()
 Get a pointer to the plugin renderer
-
-### <a name="StaticGetRenderString"/>int StaticGetRenderString(char name, char str, int len)
+<a name="StaticGetRenderString"></a>
+### int StaticGetRenderString(char name, char str, int len)
 Get a string value.
-
-### <a name="StaticGetWaterBool"/>bool StaticGetWaterBool(char name, int ID)
+<a name="StaticGetWaterBool"></a>
+### bool StaticGetWaterBool(char name, int ID)
 Get a bool for a specfic water object
-
-### <a name="StaticGetWaterBuoyancyObjectResults"/>float * StaticGetWaterBuoyancyObjectResults(int ID)
+<a name="StaticGetWaterBuoyancyObjectResults"></a>
+### float * StaticGetWaterBuoyancyObjectResults(int ID)
 Get the results of a water buoyancy object
-
-### <a name="StaticGetWaterFloat"/>float StaticGetWaterFloat(char name, int ID)
+<a name="StaticGetWaterFloat"></a>
+### float StaticGetWaterFloat(char name, int ID)
 Get a float for a specfic water object
-
-### <a name="StaticGetWaterInt"/>int StaticGetWaterInt(char name, int ID)
+<a name="StaticGetWaterInt"></a>
+### int StaticGetWaterInt(char name, int ID)
 Get an int for a specfic water object
-
-### <a name="StaticGetWaterProbeValues"/>void StaticGetWaterProbeValues(int ID, vec4 values)
+<a name="StaticGetWaterProbeValues"></a>
+### void StaticGetWaterProbeValues(int ID, vec4 values)
 Get the results of a water probe
-
-### <a name="StaticGetWaterVector"/>float * StaticGetWaterVector(char name, int ID)
+<a name="StaticGetWaterVector"></a>
+### float * StaticGetWaterVector(char name, int ID)
 Get a vector for a specfic water object
-
-### <a name="StaticHasRenderFloat"/>bool StaticHasRenderFloat(char name)
+<a name="StaticHasRenderFloat"></a>
+### bool StaticHasRenderFloat(char name)
 Check if this version of trueSky has a given float value
-
-### <a name="StaticHasRenderInt"/>bool StaticHasRenderInt(char name)
+<a name="StaticHasRenderInt"></a>
+### bool StaticHasRenderInt(char name)
 Check if this version of trueSky has a given int value
-
-### <a name="StaticInitInterface"/>int StaticInitInterface()
+<a name="StaticInitInterface"></a>
+### int StaticInitInterface()
 Ensure that the renderer is initialized. Subsequent calls have no effect.
-
-### <a name="StaticLightingQuery"/>void StaticLightingQuery(int id, float pos, LightingQueryResult res)
+<a name="StaticLightingQuery"></a>
+### void StaticLightingQuery(int id, float pos, LightingQueryResult res)
 Perform a query of the atmosphric light properties at a given point in world space
-
-### <a name="StaticOnDeviceChanged"/>int StaticOnDeviceChanged(void device)
+<a name="StaticOnDeviceChanged"></a>
+### int StaticOnDeviceChanged(void device)
 Assign the platform GPU device pointer.
-
-### <a name="StaticPopPath"/>void StaticPopPath(char type)
+<a name="StaticPopPath"></a>
+### void StaticPopPath(char type)
 Pop a path from a stack, either "TexturePath", or "ShaderPath".
-
-### <a name="StaticProbeSkylight"/>int StaticProbeSkylight(void pContext, int cube_id, int mip_size, int face_index, int x, int y, int w, int h, float targetValues)
+<a name="StaticProbeSkylight"></a>
+### int StaticProbeSkylight(void pContext, int cube_id, int mip_size, int face_index, int x, int y, int w, int h, float targetValues)
 Probe a rectangular area of a skylight cubemap.
-
-### <a name="StaticProcessQueries"/>void StaticProcessQueries(int num, simul::plugin::Query queries)
+<a name="StaticProcessQueries"></a>
+### void StaticProcessQueries(int num, simul::plugin::Query queries)
 Process currently active queries
-
-### <a name="StaticPushPath"/>void StaticPushPath(char type, char value)
+<a name="StaticPushPath"></a>
+### void StaticPushPath(char type, char value)
 Push a path for trueSKY to use. Must be "TexturePath", "ShaderPath", or "ShaderBinaryPath". The latter is not a stack.
-
-### <a name="StaticRemoveBoundedWaterObject"/>void StaticRemoveBoundedWaterObject(int ID)
+<a name="StaticRemoveBoundedWaterObject"></a>
+### void StaticRemoveBoundedWaterObject(int ID)
 Remove a bounded water object with a given ID
-
-### <a name="StaticRemoveView"/>void StaticRemoveView(int view_id)
+<a name="StaticRemoveView"></a>
+### void StaticRemoveView(int view_id)
 Free up the specified view and its resources.
-
-### <a name="StaticRemoveWaterBuoyancyObject"/>void StaticRemoveWaterBuoyancyObject(int ID)
+<a name="StaticRemoveWaterBuoyancyObject"></a>
+### void StaticRemoveWaterBuoyancyObject(int ID)
 Remove a water buoyancy object
-
-### <a name="StaticRemoveWaterProbe"/>void StaticRemoveWaterProbe(int ID)
+<a name="StaticRemoveWaterMaskObject"></a>
+### void StaticRemoveWaterMaskObject(int ID)
+Remove a water masking object
+<a name="StaticRemoveWaterProbe"></a>
+### void StaticRemoveWaterProbe(int ID)
 Remove a water probe
-
-### <a name="StaticRenderDeleteKeyframe"/>void StaticRenderDeleteKeyframe(unsigned int uid)
+<a name="StaticRenderDeleteKeyframe"></a>
+### void StaticRenderDeleteKeyframe(unsigned int uid)
 Delete a keyframe with ID uid
-
-### <a name="StaticRenderFrame"/>int StaticRenderFrame(void device, void pContext, int view_id, float viewMatrix4x4, float projMatrix4x4, void depthTexture, void colourTarget, simul::crossplatform::Viewport depthViewports, simul::crossplatform::Viewport viewports, simul::plugin::RenderStyle s, float exposure, float gamma, int framenumber, simul::crossplatform::MultiResConstants pMultiResConstants)
+<a name="StaticRenderFrame"></a>
+### int StaticRenderFrame(void device, void pContext, int view_id, float viewMatrix4x4, float projMatrix4x4, void depthTexture, void colourTarget, simul::crossplatform::Viewport depthViewports, simul::crossplatform::Viewport viewports, simul::plugin::RenderStyle s, float exposure, float gamma, int framenumber, simul::crossplatform::MultiResConstants pMultiResConstants)
 (DEPRECATED)Render trueSKY to the current render target.
-
-### <a name="StaticRenderGetKeyframeByIndex"/>unsigned int StaticRenderGetKeyframeByIndex(int layer, int index)
+<a name="StaticRenderGetKeyframeByIndex"></a>
+### unsigned int StaticRenderGetKeyframeByIndex(int layer, int index)
 Get a cloud keyframe on a given layer by index
-
-### <a name="StaticRenderGetNumKeyframes"/>int StaticRenderGetNumKeyframes(int layer)
+<a name="StaticRenderGetNumKeyframes"></a>
+### int StaticRenderGetNumKeyframes(int layer)
 Get the number of keyframes on a given layer
-
-### <a name="StaticRenderInsertKeyframe"/>unsigned int StaticRenderInsertKeyframe(int layer, float t)
+<a name="StaticRenderInsertKeyframe"></a>
+### unsigned int StaticRenderInsertKeyframe(int layer, float t)
 Insert a keyframe on a layer at time t
-
-### <a name="StaticRenderKeyframeGetBool"/>bool StaticRenderKeyframeGetBool(unsigned int uid, char name)
+<a name="StaticRenderKeyframeGetBool"></a>
+### bool StaticRenderKeyframeGetBool(unsigned int uid, char name)
 Get a bool value for a given keyframe
-
-### <a name="StaticRenderKeyframeGetFloat"/>float StaticRenderKeyframeGetFloat(unsigned int uid, char name)
+<a name="StaticRenderKeyframeGetFloat"></a>
+### float StaticRenderKeyframeGetFloat(unsigned int uid, char name)
 Get a float value for a given keyframe
-
-### <a name="StaticRenderKeyframeGetInt"/>int StaticRenderKeyframeGetInt(unsigned int uid, char name)
+<a name="StaticRenderKeyframeGetInt"></a>
+### int StaticRenderKeyframeGetInt(unsigned int uid, char name)
 Get an int value for a given keyframe
-
-### <a name="StaticRenderKeyframeHasBool"/>bool StaticRenderKeyframeHasBool(unsigned int uid, char name)
+<a name="StaticRenderKeyframeHasBool"></a>
+### bool StaticRenderKeyframeHasBool(unsigned int uid, char name)
 Has the keyframe with the given ID got the given bool value
-
-### <a name="StaticRenderKeyframeHasFloat"/>bool StaticRenderKeyframeHasFloat(unsigned int uid, char name)
+<a name="StaticRenderKeyframeHasFloat"></a>
+### bool StaticRenderKeyframeHasFloat(unsigned int uid, char name)
 Has the keyframe with the given ID got the given float value
-
-### <a name="StaticRenderKeyframeHasInt"/>bool StaticRenderKeyframeHasInt(unsigned int uid, char name)
+<a name="StaticRenderKeyframeHasInt"></a>
+### bool StaticRenderKeyframeHasInt(unsigned int uid, char name)
 Has the keyframe with the given ID got the given int value
-
-### <a name="StaticRenderKeyframeSetBool"/>void StaticRenderKeyframeSetBool(unsigned int uid, char name, bool value)
+<a name="StaticRenderKeyframeSetBool"></a>
+### void StaticRenderKeyframeSetBool(unsigned int uid, char name, bool value)
 Set a bool value for a given keyframe
-
-### <a name="StaticRenderKeyframeSetFloat"/>void StaticRenderKeyframeSetFloat(unsigned int uid, char name, float value)
+<a name="StaticRenderKeyframeSetFloat"></a>
+### void StaticRenderKeyframeSetFloat(unsigned int uid, char name, float value)
 Set a float value for a given keyframe
-
-### <a name="StaticRenderKeyframeSetInt"/>void StaticRenderKeyframeSetInt(unsigned int uid, char name, int value)
+<a name="StaticRenderKeyframeSetInt"></a>
+### void StaticRenderKeyframeSetInt(unsigned int uid, char name, int value)
 Set an int value for a given keyframe
-
-### <a name="StaticRenderOverlays"/>void StaticRenderOverlays(void device, void pContext, void externalDepthTexture, float viewMatrix4x4, float projMatrix4x4, int view_id, void colourTarget, simul::crossplatform::Viewport viewports)
+<a name="StaticRenderOverlays"></a>
+### void StaticRenderOverlays(void device, void pContext, void externalDepthTexture, float viewMatrix4x4, float projMatrix4x4, int view_id, void colourTarget, simul::crossplatform::Viewport viewports)
 Render the debug overlays.
-
-### <a name="StaticSet"/>int StaticSet(long long num, simul::base::Variant v)
+<a name="StaticSet"></a>
+### int StaticSet(long long num, simul::base::Variant v)
 Set the value corresponding to the given enum.
-
-### <a name="StaticSetDebugOutputCallback"/>void StaticSetDebugOutputCallback(DebugOutputCallback)
+<a name="StaticSetDebugOutputCallback"></a>
+### void StaticSetDebugOutputCallback(DebugOutputCallback)
 Provide a function that trueSKY can use to output debug warnings, information, and errors.
-
-### <a name="StaticSetGraphicsDevice"/>void StaticSetGraphicsDevice(void device, simul::crossplatform::RenderPlatformType deviceType, UnityGfxDeviceEventType eventType)
+<a name="StaticSetGraphicsDevice"></a>
+### void StaticSetGraphicsDevice(void device, simul::crossplatform::RenderPlatformType deviceType, UnityGfxDeviceEventType eventType)
 Device event handler.
-
-### <a name="StaticSetGraphicsDeviceAndContext"/>void StaticSetGraphicsDeviceAndContext(void device, void context, simul::crossplatform::RenderPlatformType deviceType, UnityGfxDeviceEventType eventType)
+<a name="StaticSetGraphicsDeviceAndContext"></a>
+### void StaticSetGraphicsDeviceAndContext(void device, void context, simul::crossplatform::RenderPlatformType deviceType, UnityGfxDeviceEventType eventType)
 Device event handler.
-
-### <a name="StaticSetMatrix4x4"/>void StaticSetMatrix4x4(char name, float matrix4x4)
+<a name="StaticSetMatrix4x4"></a>
+### void StaticSetMatrix4x4(char name, float matrix4x4)
 Set a Matrix value.
-
-### <a name="StaticSetMemoryInterface"/>void StaticSetMemoryInterface(simul::base::MemoryInterface)
+<a name="StaticSetMemoryInterface"></a>
+### void StaticSetMemoryInterface(simul::base::MemoryInterface)
 Provide memory allocator for CPU and (on some platforms) GPU memory.
-
-### <a name="StaticSetPointLight"/>void StaticSetPointLight(int id, pos, float min_radius, float max_radius, irradiance)
+<a name="StaticSetPointLight"></a>
+### void StaticSetPointLight(int id, pos, float min_radius, float max_radius, irradiance)
 Create a light source at a given point in worldspace
-
-### <a name="StaticSetRender"/>void StaticSetRender(char name, int num_params, simul::base::Variant params)
+<a name="StaticSetRender"></a>
+### void StaticSetRender(char name, int num_params, simul::base::Variant params)
 (DEPRECATED) Set an int value.
-
-### <a name="StaticSetRenderBool"/>void StaticSetRenderBool(char name, bool value)
+<a name="StaticSetRenderBool"></a>
+### void StaticSetRenderBool(char name, bool value)
 Set a bool value.
-
-### <a name="StaticSetRenderFloat"/>void StaticSetRenderFloat(char name, float value)
+<a name="StaticSetRenderFloat"></a>
+### void StaticSetRenderFloat(char name, float value)
 Set a float value.
-
-### <a name="StaticSetRenderInt"/>void StaticSetRenderInt(char name, int value)
+<a name="StaticSetRenderInt"></a>
+### void StaticSetRenderInt(char name, int value)
 (DEPRECATED) Set an int value.
-
-### <a name="StaticSetRenderString"/>void StaticSetRenderString(char name, char value)
+<a name="StaticSetRenderString"></a>
+### void StaticSetRenderString(char name, char value)
 Set a string value.
-
-### <a name="StaticSetRenderTexture"/>int StaticSetRenderTexture(char name, void texturePtr)
+<a name="StaticSetRenderTexture"></a>
+### int StaticSetRenderTexture(char name, void texturePtr)
 Set a texture for truesky to render to. Need to define the valid name of the output.
-
-### <a name="StaticSetSequence"/>int StaticSetSequence(std::string SequenceInput)
+<a name="StaticSetSequence"></a>
+### int StaticSetSequence(std::string SequenceInput)
 Loads the sequence as a std::string.
-
-### <a name="StaticSetSequence2"/>int StaticSetSequence2(char txt)
+<a name="StaticSetSequence2"></a>
+### int StaticSetSequence2(char txt)
 Loads the sequence as a c string.
-
-### <a name="StaticSetSequenceTxt"/>int StaticSetSequenceTxt(char txt)
+<a name="StaticSetSequenceTxt"></a>
+### int StaticSetSequenceTxt(char txt)
 Loads the given sequence
-
-### <a name="StaticSetWaterBool"/>void StaticSetWaterBool(char name, int ID, bool value)
+<a name="StaticSetWaterBool"></a>
+### void StaticSetWaterBool(char name, int ID, bool value)
 Set a bool for a specfic water object
-
-### <a name="StaticSetWaterFloat"/>void StaticSetWaterFloat(char name, int ID, float value)
+<a name="StaticSetWaterFloat"></a>
+### void StaticSetWaterFloat(char name, int ID, float value)
 Set a float for a specfic water object
-
-### <a name="StaticSetWaterInt"/>void StaticSetWaterInt(char name, int ID, int value)
+<a name="StaticSetWaterInt"></a>
+### void StaticSetWaterInt(char name, int ID, int value)
 Set an int for a specfic water object
-
-### <a name="StaticSetWaterVector"/>void StaticSetWaterVector(char name, int ID, float value)
+<a name="StaticSetWaterVector"></a>
+### void StaticSetWaterVector(char name, int ID, float value)
 Set a vector for a specfic water object
-
-### <a name="StaticShutDownInterface"/>int StaticShutDownInterface()
+<a name="StaticShutDownInterface"></a>
+### int StaticShutDownInterface()
 Shut down the renderer and free all resources.
-
-### <a name="StaticSpawnLightning"/>int StaticSpawnLightning(startpos, endpos, float magnitude, colour)
+<a name="StaticSpawnLightning"></a>
+### int StaticSpawnLightning(startpos, endpos, float magnitude, colour)
 Spawn a lightning strike at a given start, endpoint, magnitude and colour
-
-### <a name="StaticTriggerAction"/>bool StaticTriggerAction(char name)
+<a name="StaticTriggerAction"></a>
+### bool StaticTriggerAction(char name)
 Trigger an action.
-
-### <a name="StaticUpdateWaterBuoyancyObjectValues"/>void StaticUpdateWaterBuoyancyObjectValues(simul::terrain::WaterBuoyancyObjectValues values)
+<a name="StaticUpdateWaterBuoyancyObjectValues"></a>
+### void StaticUpdateWaterBuoyancyObjectValues(simul::terrain::WaterMeshObjectValues values)
 Update the properties of a water buoyancy object
-
-### <a name="StaticUpdateWaterProbeValues"/>void StaticUpdateWaterProbeValues(simul::terrain::WaterProbeValues values)
+<a name="StaticUpdateWaterMaskObjectValues"></a>
+### void StaticUpdateWaterMaskObjectValues(simul::terrain::waterMaskingObject values)
+Update the values of a specific water buoyancy object
+<a name="StaticUpdateWaterProbeValues"></a>
+### void StaticUpdateWaterProbeValues(simul::terrain::WaterProbeValues values)
 Update the properties of a water object
-
-### <a name="StaticWaterSet"/>int StaticWaterSet(long long num, int ID, simul::base::Variant v)
+<a name="StaticWaterSet"></a>
+### int StaticWaterSet(long long num, int ID, simul::base::Variant v)
 Set the water value corresponding to the given enum.
-
-### <a name="UnitySetGraphicsDevice"/>void UnitySetGraphicsDevice(void device, simul::crossplatform::RenderPlatformType deviceType, UnityGfxDeviceEventType eventType)
+<a name="UnitySetGraphicsDevice"></a>
+### void UnitySetGraphicsDevice(void device, simul::crossplatform::RenderPlatformType deviceType, UnityGfxDeviceEventType eventType)
 Unity-specific device event. Calls StaticSetGraphicsDevice() if needed.
 
 Enums

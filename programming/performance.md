@@ -1,0 +1,71 @@
+---
+title: Performance and Optimisation
+layout: reference
+weight: 20
+---
+
+
+
+
+Performance
+============
+We have worked hard to make sure trueSKY will run on many different architectures, and we know each of these have different capabilities. That is why trueSKY's setting can be adjusted to make it run as efficiently as possible, talking up only a few ms in processing time. 
+
+
+Use the Blueprint function GetProfilingText to get GPU and CPU timing numbers for trueSKY as a tree. trueSKY performance is highly dependent on your choice of settings. Once you have good settings for a given target hardware setup, performance will be consistent - i.e. there won’t be spikes or hitches. For PC, you may want to make some of these settings controllable for the end user. For console hardware, it is usually best to choose the settings based on your target GPU time for skies, then lock them down.
+
+
+High Cost Settings
+==================
+
+Clouds
+=========
+
+Maximum Cloud Resolution
+-----------------
+At resolutions over 1024, the cost can be very great. There is minimal difference from 1024 and upwards, usually 512 is optimal for most scenarios. 
+
+Maximum Cloud Distance
+---------------------
+Cloud distance can produce a heavy performance impact, but usually is only noticed at high altitudes. If you have increased this value, this is one of the first settings you could likely reduce.
+
+Grid Size
+------------
+Grid size can be our most expensive variable if set to a low value such as (0.1, 0.1), and can help improve performance drastically. Increasing grid size will improve performance, but will make the grid more noticeable amongst the clouds. To counteract that, you can adjust the different noise values.
+
+Default Number Steps
+-----------------
+Reducing the number of ray-tracing steps from within the clouds will give a helpful performance boost.
+
+Amortization
+---------------
+Spreading the cost of rendering over multiple frames is a great way to improve performance. If you or the clouds are moving quickly however, high Amortization setting can make the clouds appear pixelated as they translate across the screen.
+
+Sky
+========
+
+Amortization
+---------------
+Just like the cloud Amortization, spreading rendering costs for the atmosphere will always help improve performance, but is not recommend for fast moving scenes. 
+
+Fog
+------------
+
+
+Water
+==========
+
+
+
+
+Low performance
+===============
+
+<div class="ue4-specific">
+Create a SkyDome with trueSKY
+----------------------------
+With trueSKY, you can create an Cubemap of the sky. While you will lose some visual fidelity and the ability to move through the clouds, this is a great way to incorporate high quality, customised clouds with a minimal performance hit.
+
+This is currently done through a blueprint, RendertoCubeMap.
+
+</div>

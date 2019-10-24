@@ -6,7 +6,7 @@ weight: 0
 struct Query
 ===
 
-| Include: | PlugIns/TrueSkyPluginRender/UnityPluginInterface.h |
+| Include: | Plugins/TrueSkyPluginRender/UnityPluginInterface.h |
 
 A query from outside the plugin.
   

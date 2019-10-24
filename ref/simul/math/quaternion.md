@@ -6,7 +6,7 @@ weight: 0
 class Quaternion
 ===
 
-| Include: | Math/Matrix4x4.h |
+| Include: | Math/Matrix.h |
 
 
 
@@ -19,12 +19,12 @@ Functions
 
 Functions
 ---
-
-### <a name="operator!"/>simul::math::Quaternion operator!()
+<a name="operator!"></a>
+### simul::math::Quaternion operator!()
 The inverse, or opposite of the Quaternion, representing an equal rotation
 in the opposite direction.
-
-### <a name="operator="/>simul::math::Quaternion  & operator=(simul::math::Quaternion q)
+<a name="operator="></a>
+### simul::math::Quaternion  & operator=(simul::math::Quaternion q)
 Assignment operator. Set this Quaternion equal to q.
 
 Fields

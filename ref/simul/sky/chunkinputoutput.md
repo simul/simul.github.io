@@ -11,8 +11,8 @@ struct ChunkInputOutput
 binary streaming is out of date.
   
 
-[simul::sky::Input](input)
-[simul::sky::Output](output)
+[simul::sky::Input](input.html)
+[simul::sky::Output](output.html)
 
 
 binary streaming is out of date.
@@ -21,5 +21,5 @@ binary streaming is out of date.
 
 Base Classes
 ---
-[simul::sky::Input](input)
-[simul::sky::Output](output)
+[simul::sky::Input](input.html)
+[simul::sky::Output](output.html)

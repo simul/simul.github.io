@@ -6,7 +6,7 @@ weight: 0
 struct ExternalTexture
 ===
 
-| Include: | PlugIns/TrueSkyPluginRender/UnityPluginInterface.h |
+| Include: | Plugins/TrueSkyPluginRender/UnityPluginInterface.h |
 
 Sending a texture from the external engine.
   

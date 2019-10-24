@@ -24,10 +24,10 @@ Quaterniond class to represent rotations.
 
 Functions
 ---
-
-### <a name="operator!"/>simul::crossplatform::Quaterniond operator!()
+<a name="operator!"></a>
+### simul::crossplatform::Quaterniond operator!()
 The inverse, or opposite of the Quaterniond, representing an equal rotation
 in the opposite direction.
-
-### <a name="operator="/>simul::crossplatform::Quaterniond  & operator=(simul::crossplatform::Quaterniond q)
+<a name="operator="></a>
+### simul::crossplatform::Quaterniond  & operator=(simul::crossplatform::Quaterniond q)
 Assignment operator. Set this Quaterniond equal to q.

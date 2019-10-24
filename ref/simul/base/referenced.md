@@ -30,16 +30,16 @@ simul::base::SmartPtr.
 
 Functions
 ---
-
-### <a name="intrusive_ptr_add_ref"/>void intrusive_ptr_add_ref()
+<a name="intrusive_ptr_add_ref"></a>
+### void intrusive_ptr_add_ref()
 Increment the reference count by one.
-
-### <a name="intrusive_ptr_release"/>void intrusive_ptr_release()
+<a name="intrusive_ptr_release"></a>
+### void intrusive_ptr_release()
 Decrement the reference count by one, delete if zero.
-
-### <a name="referenceCount"/>int referenceCount()
+<a name="referenceCount"></a>
+### int referenceCount()
 Return the number of pointers referencing this object.
-
-### <a name="PrepareToDestroy"/>void PrepareToDestroy()
+<a name="PrepareToDestroy"></a>
+### void PrepareToDestroy()
 Enact all destruction code that needs to rely on the derived class's virtual functions
 because destructors can't use virtuals properly.

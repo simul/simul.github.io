@@ -11,8 +11,8 @@ class CellularCloudNode
 Don't create a CellularCloudNode directly, instead, use the derived class FastCloudNode.
   
 
-[simul::clouds::CellularCloudGrid](cellularcloudgrid)
-[simul::base::Referenced](../base/referenced)
+[simul::clouds::CellularCloudGrid](cellularcloudgrid.html)
+[simul::base::Referenced](../base/referenced.html)
 
 Functions
 ---
@@ -36,45 +36,45 @@ Don't create a CellularCloudNode directly, instead, use the derived class FastCl
 
 Base Classes
 ---
-[simul::clouds::CellularCloudGrid](cellularcloudgrid)
-[simul::base::Referenced](../base/referenced)
+[simul::clouds::CellularCloudGrid](cellularcloudgrid.html)
+[simul::base::Referenced](../base/referenced.html)
 
 Functions
 ---
-
-### <a name="GetExtents"/>void GetExtents(simul::math::Vector3 X1, simul::math::Vector3 X2, float cloud_base_z, float w, float h)
+<a name="GetExtents"></a>
+### void GetExtents(simul::math::Vector3 X1, simul::math::Vector3 X2, float cloud_base_z, float w, float h)
 Get the physical extents of the cloud volume in the x, y and z directions.
-
-### <a name="GetNoiseInterface"/>simul::math::NoiseInterface * GetNoiseInterface()
+<a name="GetNoiseInterface"></a>
+### simul::math::NoiseInterface * GetNoiseInterface()
 Get a pointer to the noise memory interface
-
-### <a name="GetOrigin"/>simul::math::Vector3 GetOrigin(simul::math::Vector3 windOffset, float cloud_base_z, float w)
+<a name="GetOrigin"></a>
+### simul::math::Vector3 GetOrigin(simul::math::Vector3 windOffset, float cloud_base_z, float w)
 Get the effective origin in world co-ordinates, including wind offsets:
-
-### <a name="GetTransformLightspaceToCloudspaceMatrix"/>float  const * GetTransformLightspaceToCloudspaceMatrix(unsigned int axis, simul::math::Vector3 dir, simul::math::Vector3 origin, simul::math::Vector3 scales, float cloud_base_z, float w, float h)
+<a name="GetTransformLightspaceToCloudspaceMatrix"></a>
+### float  const * GetTransformLightspaceToCloudspaceMatrix(unsigned int axis, simul::math::Vector3 dir, simul::math::Vector3 origin, simul::math::Vector3 scales, float cloud_base_z, float w, float h)
 Get a 4x4 matrix to transform from lightspace to cloudspace.
-
-### <a name="GetTransformToLightspaceMatrix"/>float  const * GetTransformToLightspaceMatrix(unsigned int axis, simul::math::Vector3 dir, simul::math::Vector3 origin, simul::math::Vector3 scales)
+<a name="GetTransformToLightspaceMatrix"></a>
+### float  const * GetTransformToLightspaceMatrix(unsigned int axis, simul::math::Vector3 dir, simul::math::Vector3 origin, simul::math::Vector3 scales)
 Get a 4x4 matrix to transform from real space to lightspace.
-
-### <a name="NeedsRelight"/>bool NeedsRelight()
+<a name="NeedsRelight"></a>
+### bool NeedsRelight()
 Have properties changed that cause relighting to be necessary - either the light has moved
 or the cloud density grid has changed.
-
-### <a name="SetRecalculate"/>void SetRecalculate(bool r)
+<a name="SetRecalculate"></a>
+### void SetRecalculate(bool r)
 Recalculate and reinitialise the cloud grid with updated values
-
-### <a name="SetRelight"/>void SetRelight()
+<a name="SetRelight"></a>
+### void SetRelight()
 Force relighting of the volume. Usually unnecessary.
-
-### <a name="StateStreamIn"/>std::istream  & StateStreamIn(std::istream is)
+<a name="StateStreamIn"></a>
+### std::istream  & StateStreamIn(std::istream is)
 Stream/load from the std::isteam is.
-
-### <a name="StateStreamOut"/>std::ostream  & StateStreamOut(std::ostream os)
+<a name="StateStreamOut"></a>
+### std::ostream  & StateStreamOut(std::ostream os)
 Stream/save to the std::osteam os.
-
-### <a name="StreamIn"/>std::istream  & StreamIn(std::istream is)
+<a name="StreamIn"></a>
+### std::istream  & StreamIn(std::istream is)
 Stream/load from the std::isteam is.
-
-### <a name="StreamOut"/>std::ostream  & StreamOut(std::ostream os)
+<a name="StreamOut"></a>
+### std::ostream  & StreamOut(std::ostream os)
 Stream/save to the std::osteam os.

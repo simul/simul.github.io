@@ -9,7 +9,7 @@ class TextFileInput
 | Include: | Platform/CrossPlatform/TextInputOutput.h |
 
 
-[simul::crossplatform::TextInput](textinput)
+[simul::crossplatform::TextInput](textinput.html)
 
 Functions
 ---
@@ -19,10 +19,10 @@ Functions
 
 Base Classes
 ---
-[simul::crossplatform::TextInput](textinput)
+[simul::crossplatform::TextInput](textinput.html)
 
 Functions
 ---
-
-### <a name="Has"/>bool Has(char name)
+<a name="Has"></a>
+### bool Has(char name)
 Is the specified element in the list?

@@ -18,6 +18,6 @@ Functions
 
 Functions
 ---
-
-### <a name="MakeResourceSlotMap"/>void MakeResourceSlotMap()
+<a name="MakeResourceSlotMap"></a>
+### void MakeResourceSlotMap()
 This updates the mapping from the pass's list of resources to the effect slot numbers (0-31)

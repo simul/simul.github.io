@@ -11,7 +11,7 @@ class ProfilingInterface
 simul::base::DefaultProfiler inherits from ProfilingInterface to measure CPU performance.
   
 
-[simul::base::BaseProfilingInterface](baseprofilinginterface)
+[simul::base::BaseProfilingInterface](baseprofilinginterface.html)
 
 Functions
 ---
@@ -27,19 +27,19 @@ simul::base::DefaultProfiler inherits from ProfilingInterface to measure CPU per
 
 Base Classes
 ---
-[simul::base::BaseProfilingInterface](baseprofilinginterface)
+[simul::base::BaseProfilingInterface](baseprofilinginterface.html)
 
 Functions
 ---
-
-### <a name="ProfilingInterface"/> ProfilingInterface()
+<a name="ProfilingInterface"></a>
+###  ProfilingInterface()
 Constructor
-
-### <a name="Begin"/>void Begin(char)
+<a name="Begin"></a>
+### void Begin(char)
 Mark the start of a profiling block.
-
-### <a name="End"/>void End()
+<a name="End"></a>
+### void End()
 Mark the end of a profiling block.
-
-### <a name="EndFrame"/>void EndFrame()
+<a name="EndFrame"></a>
+### void EndFrame()
 Call this at the start of the frame to reset values.

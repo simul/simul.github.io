@@ -19,11 +19,11 @@ Functions
 
 Functions
 ---
-
-### <a name="InvalidateDeviceObjects"/>void InvalidateDeviceObjects()
+<a name="InvalidateDeviceObjects"></a>
+### void InvalidateDeviceObjects()
 Platform-dependent function called when uninitializing the display surface.
-
-### <a name="RestoreDeviceObjects"/>void RestoreDeviceObjects(cp_hwnd handle, simul::crossplatform::RenderPlatform renderPlatform, bool m_vsync_enabled, int numerator, int denominator, simul::crossplatform::PixelFormat outFmt)
+<a name="RestoreDeviceObjects"></a>
+### void RestoreDeviceObjects(cp_hwnd handle, simul::crossplatform::RenderPlatform renderPlatform, bool m_vsync_enabled, int numerator, int denominator, simul::crossplatform::PixelFormat outFmt)
 Platform-dependent function called when initializing the display surface.
 
 Fields

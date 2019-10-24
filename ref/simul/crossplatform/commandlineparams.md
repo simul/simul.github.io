@@ -24,9 +24,9 @@ A simple structure to store the command-line parameters for an executable.
 
 Functions
 ---
-
-### <a name="GetCommandLineParams"/>void GetCommandLineParams(simul::crossplatform::CommandLineParams commandLineParams, int argCount, char szArgList)
+<a name="GetCommandLineParams"></a>
+### void GetCommandLineParams(simul::crossplatform::CommandLineParams commandLineParams, int argCount, char szArgList)
 Convert the inputs to an executable into a CommandLineParams struct.
-
-### <a name="GetCommandLineParams"/>void GetCommandLineParams(simul::crossplatform::CommandLineParams commandLineParams, int argCount, wchar_t szArgList)
+<a name="GetCommandLineParams"></a>
+### void GetCommandLineParams(simul::crossplatform::CommandLineParams commandLineParams, int argCount, wchar_t szArgList)
 Convert the inputs to an executable into a CommandLineParams struct.

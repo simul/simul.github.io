@@ -11,7 +11,7 @@ class GpuProfilingInterface
 A virtual interface base class for GPU performance measurement.
   
 
-[simul::base::BaseProfilingInterface](../base/baseprofilinginterface)
+[simul::base::BaseProfilingInterface](../base/baseprofilinginterface.html)
 
 Functions
 ---
@@ -29,25 +29,25 @@ A virtual interface base class for GPU performance measurement.
 
 Base Classes
 ---
-[simul::base::BaseProfilingInterface](../base/baseprofilinginterface)
+[simul::base::BaseProfilingInterface](../base/baseprofilinginterface.html)
 
 Functions
 ---
-
-### <a name="Begin"/>void Begin(simul::crossplatform::DeviceContext deviceContext, char)
+<a name="Begin"></a>
+### void Begin(simul::crossplatform::DeviceContext deviceContext, char)
 Mark the start of a render profiling block. Some API's require a context pointer.
-
-### <a name="End"/>void End(simul::crossplatform::DeviceContext deviceContext)
+<a name="End"></a>
+### void End(simul::crossplatform::DeviceContext deviceContext)
 Mark the end of the current render profiling block.
-
-### <a name="EndFrame"/>void EndFrame(simul::crossplatform::DeviceContext deviceContext)
+<a name="EndFrame"></a>
+### void EndFrame(simul::crossplatform::DeviceContext deviceContext)
 Call this at the end of the frame to prepare the data to be read.
-
-### <a name="GetDebugText"/>char  const * GetDebugText(simul::base::TextStyle st)
+<a name="GetDebugText"></a>
+### char  const * GetDebugText(simul::base::TextStyle st)
 Get the timing text per-frame.
-
-### <a name="InvalidateDeviceObjects"/>void InvalidateDeviceObjects()
+<a name="InvalidateDeviceObjects"></a>
+### void InvalidateDeviceObjects()
 Platform-dependent function called when uninitializing the profiler.
-
-### <a name="StartFrame"/>void StartFrame(simul::crossplatform::DeviceContext deviceContext)
+<a name="StartFrame"></a>
+### void StartFrame(simul::crossplatform::DeviceContext deviceContext)
 Call this at the start of the frame to reset values.

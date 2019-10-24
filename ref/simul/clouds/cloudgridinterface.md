@@ -24,9 +24,9 @@ The virtual interface for controlling and reading a grid of cloud data.
 
 Functions
 ---
-
-### <a name="GetGrid"/>void GetGrid(int width, int length, int height)
+<a name="GetGrid"></a>
+### void GetGrid(int width, int length, int height)
 Get the grid width (x size), length (y size) and height (z size).
-
-### <a name="SetGrid"/>void SetGrid(int width, int length, int height)
+<a name="SetGrid"></a>
+### void SetGrid(int width, int length, int height)
 Set the grid width (x size), length (y size) and height (z size).

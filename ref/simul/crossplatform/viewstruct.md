@@ -6,7 +6,7 @@ weight: 0
 struct ViewStruct
 ===
 
-| Include: | Platform/CrossPlatform/Camera.h |
+| Include: | Sky/BaseAtmosphericsRenderer.h |
 
 
 
@@ -19,11 +19,11 @@ Functions
 
 Functions
 ---
-
-### <a name="ViewStruct"/> ViewStruct()
+<a name="ViewStruct"></a>
+###  ViewStruct()
 A simple struct encapsulating a view and a projection matrix.
-
-### <a name="Init"/>void Init()
+<a name="Init"></a>
+### void Init()
 < How to interpret any depth texture passed from outside.
 MUST be called whenever view or proj change.
 

@@ -6,18 +6,17 @@ weight: 0
 namespace math
 ===
 
-| Include: | Math/GeometricFunctions.h |
+| Include: | Math/Decay.h |
 
 
 
 Classes and Structures
 ---
 
-| class [Matrix](math/matrix) | A Matrix class.<br> |
-| class [Matrix4x4](math/matrix4x4) |  |
-| class [Noise1D](math/noise1d) |  |
-| class [Noise2D](math/noise2d) |  |
-| class [Noise3D](math/noise3d) |  |
+| class [Matrix](math/matrix.html) | A Matrix class.<br> |
+| class [Noise1D](math/noise1d.html) |  |
+| class [Noise2D](math/noise2d.html) |  |
+| class [Noise3D](math/noise3d.html) |  |
 
 Functions
 ---
@@ -31,18 +30,18 @@ Functions
 
 Functions
 ---
-
-### <a name="CrossProduct"/>void CrossProduct(simul::math::Vector3 result, simul::math::Vector3 v1, simul::math::Vector3 v2)
+<a name="CrossProduct"></a>
+### void CrossProduct(simul::math::Vector3 result, simul::math::Vector3 v1, simul::math::Vector3 v2)
 Catmull-Rom interpolate with parameter talong a spline formed by vectors x0, x1, x2and x3.
-
-### <a name="DotProduct3"/>float DotProduct3(simul::math::Vector3 v1, simul::math::Vector3 v2)
+<a name="DotProduct3"></a>
+### float DotProduct3(simul::math::Vector3 v1, simul::math::Vector3 v2)
 Linearly interpolate between two vectors.
-
-### <a name="FirstOrderDecay"/>void FirstOrderDecay(float variable, float target, float rate, float dt)
+<a name="FirstOrderDecay"></a>
+### void FirstOrderDecay(float variable, float target, float rate, float dt)
 Apply a first-order decay to a float variable, based on the timestep dt.
-
-### <a name="operator<<"/>std::ostream  & operator<<(std::ostream, simul::math::Vector3)
+<a name="operator<<"></a>
+### std::ostream  & operator<<(std::ostream, simul::math::Vector3)
 The smallest x y and z of two vectors.
-
-### <a name="operator>>"/>std::istream  & operator>>(std::istream, simul::math::Vector3)
+<a name="operator>>"></a>
+### std::istream  & operator>>(std::istream, simul::math::Vector3)
 The largest x y and z of two vectors.

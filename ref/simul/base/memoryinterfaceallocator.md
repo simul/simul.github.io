@@ -11,7 +11,7 @@ classtemplate MemoryInterfaceAllocator
 An allocator to use MemoryInterface in STL classes.
   
 
-[](/ref/)
+[](/ref/.html)
 
 
 An allocator to use MemoryInterface in STL classes.
@@ -20,4 +20,4 @@ An allocator to use MemoryInterface in STL classes.
 
 Base Classes
 ---
-[](/ref/)
+[](/ref/.html)

@@ -107,12 +107,39 @@
 
 .ue4-specific
 {
-	background-color:#135d9c;
+    color: white;
+    background: #565bf9;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+
 }
 
 .unity-specific
 {
-	background-color:#139c88;
+    color: white;
+    background: #418a7f;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+.keyframe thead tr th
+{
+   background: red!important;
+   color:white!important;
+}
+
+.layer thead tr th
+{
+   background: green!important;
+   color:white!important;
+}
+
+.object thead tr th
+{
+  background: blue!important;
+   color:white!important;;
 }
 
 #banner-index

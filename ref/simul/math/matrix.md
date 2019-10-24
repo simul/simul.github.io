@@ -34,35 +34,35 @@ SSE-capable Pentium III+, and one for PS2.
 
 Functions
 ---
-
-### <a name="Matrix"/> Matrix(simul::math::Matrix m)
+<a name="Matrix"></a>
+###  Matrix(simul::math::Matrix m)
 < Default constructor.
-
-### <a name="Matrix"/> Matrix(unsigned int h, unsigned int w, float val)
+<a name="Matrix"></a>
+###  Matrix(unsigned int h, unsigned int w, float val)
 < Constructor for a matrix of height h and width w.
-
-### <a name="ClearMemory"/>void ClearMemory()
+<a name="ClearMemory"></a>
+### void ClearMemory()
 < Reset the matrix to height and width zero.
-
-### <a name="FloatPointer"/>float * FloatPointer(unsigned int row, unsigned int col)
-
-### <a name="MakeSymmetricFromUpper"/>void MakeSymmetricFromUpper()
+<a name="FloatPointer"></a>
+### float * FloatPointer(unsigned int row, unsigned int col)
+<a name="MakeSymmetricFromUpper"></a>
+### void MakeSymmetricFromUpper()
 < Make a unit matrix.
-
-### <a name="operator()"/>float  & operator()(unsigned int row, unsigned int col)
+<a name="operator()"></a>
+### float  & operator()(unsigned int row, unsigned int col)
 < Swap rows R1 and R2.
-
-### <a name="Position"/>float * Position(unsigned int row, unsigned int col)
+<a name="Position"></a>
+### float * Position(unsigned int row, unsigned int col)
 < Default destructor.
-
-### <a name="Resize"/>void Resize(unsigned int h, unsigned int w)
+<a name="Resize"></a>
+### void Resize(unsigned int h, unsigned int w)
 < Reset the matrix and free its buffer memory.
 Resize the matrix to height h, width w.
-
-### <a name="Zero"/>void Zero()
+<a name="Zero"></a>
+### void Zero()
 Set all values to zero.
-
-### <a name="ZeroEdges"/>void ZeroEdges()
+<a name="ZeroEdges"></a>
+### void ZeroEdges()
 < Constructor for a matrix of height h and width w, filled with value val.
 
 Fields

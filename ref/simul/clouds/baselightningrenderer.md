@@ -30,29 +30,29 @@ The renderer for lightning.
 
 Functions
 ---
-
-### <a name="BaseLightningRenderer"/> BaseLightningRenderer(simul::sky::BaseSkyInterface sk)
+<a name="BaseLightningRenderer"></a>
+###  BaseLightningRenderer(simul::sky::BaseSkyInterface sk)
 Constructor
-
-### <a name="~BaseLightningRenderer"/> ~BaseLightningRenderer()
+<a name="~BaseLightningRenderer"></a>
+###  ~BaseLightningRenderer()
 Destructor
-
-### <a name="InvalidateDeviceObjects"/>void InvalidateDeviceObjects()
+<a name="InvalidateDeviceObjects"></a>
+### void InvalidateDeviceObjects()
 Platform-dependent function called when uninitializing the lightning renderer.
-
-### <a name="PreRenderUpdate"/>void PreRenderUpdate(simul::crossplatform::DeviceContext deviceContext, float real_time)
+<a name="PreRenderUpdate"></a>
+### void PreRenderUpdate(simul::crossplatform::DeviceContext deviceContext, float real_time)
 Once per-frame update. Do this before any rendering each frame.
-
-### <a name="RecompileShaders"/>void RecompileShaders()
+<a name="RecompileShaders"></a>
+### void RecompileShaders()
 Platform-dependent function to reload the shaders - only use this for debug purposes.
-
-### <a name="Render"/>void Render(simul::crossplatform::DeviceContext deviceContext, simul::clouds::CloudKeyframer cloudKeyframer, simul::crossplatform::Texture depth_tex, vec4 depthViewportXYWH, simul::clouds::TransparencyAtmospherics t, float brightnessToUnity, simul::clouds::BaseWeatherRenderer weatherRenderer)
+<a name="Render"></a>
+### void Render(simul::crossplatform::DeviceContext deviceContext, simul::clouds::CloudKeyframer cloudKeyframer, simul::crossplatform::Texture depth_tex, vec4 depthViewportXYWH, simul::clouds::TransparencyAtmospherics t, float brightnessToUnity, simul::clouds::BaseWeatherRenderer weatherRenderer)
 Main render call
-
-### <a name="RenderOverlay"/>void RenderOverlay(simul::crossplatform::DeviceContext deviceContext, simul::clouds::CloudKeyframer::Storm)
+<a name="RenderOverlay"></a>
+### void RenderOverlay(simul::crossplatform::DeviceContext deviceContext, simul::clouds::CloudKeyframer::Storm)
 Render debug information
-
-### <a name="RestoreDeviceObjects"/>void RestoreDeviceObjects(simul::crossplatform::RenderPlatform r)
+<a name="RestoreDeviceObjects"></a>
+### void RestoreDeviceObjects(simul::crossplatform::RenderPlatform r)
 Platform-dependent function called when initializing the lightning renderer.
 
 Variables
