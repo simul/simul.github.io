@@ -20,7 +20,7 @@ If you have never used blueprints before, [Unreal](https://docs.unrealengine.com
 
 You can edit any of the variables present in the keyframes, layers or even values attached to the trueSKY Actor. To access these nodes, we have split our variables based on their location and their data type. For example, if you want to edit a float value on a cloud keyframe, you would use the Set CloudKeyframe Float node. There is also a correlating GetCloudKeyframeFloat for retrieving data
 
-![](/Images/Unreal/CloudKeyframeFloat.png)
+![](/Images/unreal/CloudKeyframeFloat.png)
 
 
 

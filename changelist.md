@@ -7,6 +7,8 @@ weight: 120
 
 Version HEAD
 ---
+Thu 24 Oct : Image Fixing Docs  
+Thu 24 Oct : Image Fix for Docs  
 Thu 24 Oct : Doc Updates  
 Thu 24 Oct : Doc Updates  
 Thu 24 Oct : Doc Update  
@@ -105,7 +107,5 @@ Wed 17 Jul : All C++ projects now build in CMake, at least on Windows. MT and MD
 Tue 16 Jul : .  
 Mon 15 Jul : Updated CMakeList directories for faster Cmake initial generation  
 Sun 14 Jul : Fix htmlproofer call - needs correct working dir. Fix name of ref.md target. Fix Help files in Simul.sln  
-Fri 12 Jul : Slight fix to reference .md  
-Fri 12 Jul : Updated docs sidebar order, fixed index issue to allow index on home page  
 
 <hr>
