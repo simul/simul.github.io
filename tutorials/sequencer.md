@@ -68,15 +68,14 @@ Although there are only 2 types of layers, you can have numerous clouds layers. 
 
 Layers do *not* have any effect on the height of the clouds. Layer 1 can be lower than layer 2, or layer 5 could be in the middle. Height settings are adjusted within the individual keyframes. To add a keyframe to a layer, simply right click within the layer you want the keyframe for (click in the sky layer for a sky keyframe, cloud layer for cloud keyframe), then select the "Add Cloud Keyframe" option.
 
-![](/images/Unreal/AddCloudKF.png)
+![](/images/unreal/AddCloudKF.png)
 
 <sup>The keyframe will be created at the position your mouse is at</sup>
 
 
 Sequence
 ----------
-A sequence is a collection of Layers and keyframes, that can be saved and used in any scene that incorporates trueSKY. There can only be one sequence active at a time, although you can switch at run-time. Any sequence you use can produce all of trueSKY's capabilities, however each sequence will be in the order you depicted. 
-* not sure how to word *
+A sequence is a collection of Layers and keyframes, that can be saved and used in any scene that incorporates trueSKY. There can only be one sequence active at a time, although you can switch between them at run-time. You can use sequences to save specific weather formations for set times of the day.
 
 
 
