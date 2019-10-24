@@ -37,7 +37,7 @@ Shadow Strength                                                         |Amount 
 Cloud Shadow RT                                                         |Render texture that is used to draw cloud shadow texture at runtime                                                            |Render Texture
 
 
-God Rays
+God Rayss
 -------------
 
 {:.object}
