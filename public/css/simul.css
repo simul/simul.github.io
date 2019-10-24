@@ -336,10 +336,6 @@ button.option_btn:hover {
     background-color: #2096f3;
     color: white;
 }
-/*Option bar is hidden until the new content is pushed*/
-.options-bar {
-    display: none;
-}
 .content-container {
     max-width: 60%;
     white-space: normal;
