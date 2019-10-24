@@ -324,8 +324,10 @@ input:checked + .slider:before {
     border-width: 0px 0px 1px 0px;
 }
 .options-bar {
+    background-color: #e2e2e2;
     display: flex;
     justify-content: flex-end;
+    align-items: baseline;
 }
 button.option_btn {
     border: #a9a9a9;
