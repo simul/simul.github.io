@@ -10,7 +10,7 @@ weight: 20
 
 
 Scripting
------------
+==========
 
 Alongside the Sequencer tool, trueSKY can be driven and configured via Unity scripting. Similarly to using the sequencer, the settings and properties in trueSKY for Unity are split between [Keyframe](#keyframes) properties (temporal values for clouds and sky), [Layer](#layers) properites (values for clouds and sky that persist throughout a sequence) and the properties of the [trueSKY object](#truesky-object) itself (configuration settings).
 
@@ -53,6 +53,9 @@ Layer properties are those accessible in the sequencer by clicking on the layer 
 * **SetCloudInt  (string name, int value)**: Sets the 3D cloud layer int specified by the name string to the given float value.
 
 <div class="4.1-specific">
+
+For trueSKY 4.1a
+----------------
 **2D Clouds**:
 
 * **Get2DCloudFloat (string name)**: Gets the 2D cloud layer float specified by the name string.
@@ -95,6 +98,9 @@ Keyframes in trueSKY can be accessed, counted, modified, created and deleted via
 * **GetNumCloudKeyframes ()**: Returns the total number of 3D cloud keyframes.
 
 <div class="4.1-specific">
+
+For trueSKY 4.1a
+-----------------
 **2D Clouds**:
 
 * **GetCloud2DKeyframeByIndex (int index)**: Get the 2D cloud keyframe with specified index.
@@ -143,9 +149,9 @@ TrueSKY for Unity also provides some built in functions to carry out queries at 
 
 * **GetCloudQuery (int id, Vector3 pos)**: Given an id and a position, returns a VolumeQueryResult struct.
 * **CloudLineQuery (int id, Vector3 startpos, Vector3 endpos)**: Given an id, a start position and an end position, returns a LineQueryResult struct.
-* **GetCloudAtPosition (Vector3 pos)**: Returns the amount of cloud at the given position, as a float value between 0.0 and 1.0.
-* **GetCloudShadowAtPosition (Vector3 pos)**: Returns the amount of cloud shadow at the given position, as a float value between 0.0 and 1.0.
-* **GetPrecipitationAtPosition (Vector3 pos)**: Returns the amount of rain/snow at the given position, as a float value between 0.0 and 1.0.
+* **GetCloudAtPosition (Vector3 pos)**: Returns the amount of cloud at the given position, as a float value 0.0 to 1.0.
+* **GetCloudShadowAtPosition (Vector3 pos)**: Returns the amount of cloud shadow at the given position, as a float value 0.0 to 1.0.
+* **GetPrecipitationAtPosition (Vector3 pos)**: Returns the amount of rain/snow at the given position, as a float value 0.0 to 1.0.
 
 
 The contents of the structs are as follows:
@@ -154,18 +160,18 @@ The contents of the structs are as follows:
 
 * vec3 pos_m: The position used for the query (this may be modified from the original position, and projected elsewhere to avoid testing areas we know to not have cloud).
 * int valid: Whether the query is valid (1) or not (0). Returns 0 for the first 3 frames.
-* float density: The cloud density (between 0.0 and 1.0).
-* float direct_light: The amount of direct light (between 0.0 and 4.0).
-* float indirect_light: The amount of indirect light (between 0.0 and 4.0).
-* float ambient_light: The amount of ambient light (between 0.0 and 4.0).
-* float precipitation: The amount of rain/snow (between 0.0 and 1.0).
+* float density: The cloud density (0.0 to 1.0).
+* float direct_light: The amount of direct light (0.0 to 4.0).
+* float indirect_light: The amount of indirect light (0.0 to 4.0).
+* float ambient_light: The amount of ambient light (0.0 to 4.0).
+* float precipitation: The amount of rain/snow (0.0 to 1.0).
 
 **LineQueryResult**:
 
 * vec3 pos1_m: The start position used for the query (this may be modified from the original position, and projected elsewhere to avoid testing areas we know to not have cloud).
 * vec3 pos2_m: The end position used for the query (this may be modified from the original position, and projected elsewhere to avoid testing areas we know to not have cloud).
 * int valid: Whether the query is valid (1) or not (0). Returns 0 for the first 3 frames.
-* float density: The cloud density (between 0.0 and 1.0).
+* float density: The cloud density (0.0 to 1.0).
 * float visibility: The visibility distance, in km (between 0.1 and 10000.0).
 * float optical_thickness_metres: The amount of cloud filling the distance between the start and end positions. If completely cloudy  = distance in metres, if none = 0.
 * float first_contact_metres: The distance to the nearest cloud, in metres.

@@ -8,7 +8,7 @@ weight: 10
 
 
 Initial Configuration
--------------------------
+===================
 
 This page shows you how to install the trueSKY plugin for Unity. Head back to [Installation](/installation) if you do not need the Unity Package.
 
