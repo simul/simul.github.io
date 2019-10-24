@@ -18,7 +18,7 @@ If you already have an account with us, you can skip this section and [select yo
 
 1: Navigate to [simul.co](https://simul.co/)
 
-![](/images/websiteHomepage.png)
+![](/images/websitehomepage.png)
 
 
 2: Click *Sign Up for a Free Trial*
