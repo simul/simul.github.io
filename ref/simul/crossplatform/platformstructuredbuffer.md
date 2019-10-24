@@ -26,5 +26,3 @@ Fields
 ---
 
 **renderPlatform**  A base class for structured buffers, used by StructuredBuffer internally.
-
-**numCopies**  Find the constant buffer in the given effect, and link to it.

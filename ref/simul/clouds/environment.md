@@ -94,6 +94,6 @@ Override this to create a custom derived keyframer.
 Fields
 ---
 
-**cloudKeyframers**  The main 3D cloud layer.
+**cloudKeyframers**  Map of 3D Cloud Layers
 
 **skyKeyframer**  The atmosphere/sky keyframer.

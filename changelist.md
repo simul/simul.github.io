@@ -7,6 +7,31 @@ weight: 120
 
 Version HEAD
 ---
+Tue 22 Oct : Undo works again in Sky Sequencer.  
+Tue 22 Oct : Fix sky keyframe sequence being set to invalid values on undo.  
+Sat 19 Oct : Add missing shaders in installers.  
+Fri 18 Oct : Fix Crash with sequencer  
+Thu 17 Oct : Fix Xbox error by reverting to original. However, whatever this change was put in to fix will presumably still be broken.  
+Thu 17 Oct : Removed duplicate UpdateUI(...) definition. Fixed water crash when setting dimension with invalid ID.  
+Wed 16 Oct : Attempted fix of merge errors  
+Wed 16 Oct : .  
+Wed 16 Oct : Reverted sfx project changes  
+Wed 16 Oct : UnitySetRenderFrameValues(): Checks for nullptr in colourTexture. Added UpdateUI() and default initialiser for ExternalTexture.  
+Wed 16 Oct : Added some water reflection quality parameters  
+Wed 16 Oct : Cloud shadow texture size not passed via enum system.  
+Tue 15 Oct : further fixes  
+Tue 15 Oct : Fixing gets and sets for keyframes and layers.  
+Tue 15 Oct : Sky is cleared when SetSequence is passed a sequence with no data.  
+Sat 12 Oct : Fixed binary path bug.  
+Fri 11 Oct : Fix SHADERBIN_SOURCE deploy  
+Fri 11 Oct : Update to Unity Sky Sequencer UI.  
+Fri 11 Oct : Created an UpdateUI function for Unity to call, for processing of QT events.  
+Fri 11 Oct : Camera constants changes restored.  
+Fri 11 Oct : Fixed shaderbin not being copied from the build directory  
+Fri 11 Oct : Fix Unity Sequencer UI disappearance.  
+Mon 07 Oct : Fix Sfx build for PS4.  
+Fri 04 Oct : PreprocessLexer and PreprocessParser were renamed to PreprocessorLexer and PreprocessorParser a while back.  
+Sun 29 Sep : Fail to blank texture if compressed format not supported.  
 Thu 26 Sep : Minor fixes and cleanup  
 Thu 26 Sep : Essential RenderPlatform fix for D3D12.  
 Wed 25 Sep : Add interleaved option to layoutdesc.  
@@ -82,30 +107,5 @@ Fri 12 Jul : Updated docs sidebar order, fixed index issue to allow index on hom
 Fri 12 Jul : Added DirectXTex and effects11 to CMake, updated docs in Help folder and start of editing comments for the docs  
 Wed 10 Jul : Add Simul.markdoc  
 Tue 09 Jul : Fix for Errno_Check  
-Thu 04 Jul : Fully-working on Linux  
-Wed 03 Jul : Added Effects11 and DirectxTex to CMake.  
-Wed 03 Jul : Improved deployment py script.  
-Fri 28 Jun : Fix for Windows build. Amended ERRNO_CHECK and DebugBreak().  
-Fri 28 Jun : ERRNO_CHECK fixed.  
-Fri 28 Jun : Linux build fixes: Vulkan Sample and plugin now building.  
-Tue 18 Jun : Linux build fixes  
-Tue 18 Jun : Cmake version build fixes.  
-Mon 17 Jun : Minor update to the snow pixel shader.  
-Fri 14 Jun : Minor fix to stop values that would break the water renderer from being passed to it  
-Fri 14 Jun : Initial commit for Water reflections  
-Thu 13 Jun : Fix Qt plugin search for Unity only.  
-Thu 13 Jun : GeneratedFiles includes for SequencerQtWidgets in TrueSkyUI_x64_v140.vcxproj  
-Thu 13 Jun : Add GenerateFiles include dir.  
-Thu 13 Jun : Improve cloud window UI.  
-Thu 13 Jun : Fix long pause at UI startup due to Qt search path.  
-Fri 31 May : OpenGL and D3d12 error fixes.  
-Fri 31 May : Fix water shutdown crash.  
-Fri 31 May : Deployment py fixes.  
-Thu 30 May : Add RenderDelegate.h  
-Thu 30 May : Add RenderDelegate.h  
-Thu 30 May : Don't invalidate pixelShaders from Effect: RenderPlatform is responsible for this.  
-Thu 30 May : Fix for buoyancy objects not sampling the surface at the correct location. Also contains a couple of minor fixes, and a temporary fix for DX12 not seeing the profile buffer offset and direction arrays  
-Thu 30 May : Fix for OpenGL SFX compilation. New SfxConfig parameter: identicalIOBlocks.  
-Wed 29 May : Update Unity plugin api to new structs.  
 
 <hr>
