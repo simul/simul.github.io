@@ -85,16 +85,16 @@ Other permanent properties can be changed without recalculating the lookups, alt
 
 The MieEccentricity is a value that affects how strongly Mie-scattered light through haze is dispersed. If eccentricity is high (close to 1),
 the scattering is preferentially forward, leading to a glow around the sun, whereas if it is low, the haze is distributed more evenly.
-![](/Images/eccentricity_low.png)
+![](/images/eccentricity_low.png)
 
-![](/Images/eccentricity_high.png)
+![](/images/eccentricity_high.png)
 
 
 Sky calculation is performed with ray-tracing, and the number of ray-trace steps is set using [simul::Sky::SetSteps](/ref/simul/sky/setsteps)
 .
 Typically 6 steps are enough, but more may be necessary for high-accuracy, especially when the sun is close to the horizon, such as in this case,
 where the number of steps is too low, leading to an over-bright effect on the ground below the sun:
-![](/Images/sky_steps_too_low.png)
+![](/images/sky_steps_too_low.png)
 
 
 transient_atmospheric_properties Transient Sky Properties

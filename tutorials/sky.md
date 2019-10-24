@@ -162,7 +162,7 @@ Linked Time and Daytime
 -----------------------
 
 
-![](/Images/SkyKeyframerLinked.png)
+![](/images/SkyKeyframerLinked.png)
 
 
 Here we enable this link by calling SetLinkKeyframeTimeAndDaytime, then verify that daytime and time are now the same:

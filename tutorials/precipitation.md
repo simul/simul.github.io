@@ -73,12 +73,12 @@ Rain Indoors
 
 To prevent rain from falling in covered areas, create a SceneCapture2D actor, and give it a texture target that's contains only a red channel (e.g. RainDepthRT from the trueSKY content). Make the Capture Source "SceneDepth in R". You don't need to enable "Capture Every Frame" unless you expect the geometry to change.
 
-![](/Images/unreal/scenecapture2dProperties.png)
+![](/images/unreal/scenecapture2dProperties.png)
 
 
 Rotate the Scene Capture 2D to face Downwards.
 
 On the trueSKY Sequence Actor, assign the Scene Capture 2D actor to the Rain Mask SceneCapture property. Now, rain will only appear where there is no cover above the Scene Capture actor.
 
-![](/Images/unreal/PrecipitationProperties.png)
+![](/images/unreal/PrecipitationProperties.png)
 

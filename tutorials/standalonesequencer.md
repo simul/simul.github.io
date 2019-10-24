@@ -59,12 +59,12 @@ the larger its contribution.
 You'll see a slight pause in the Sequencer about once per second as the performance window
 updates - this doesn't affect the measurements.
 
-![](/Images/PerformanceWindow.jpg)
+![](/images/PerformanceWindow.jpg)
 
 
 
 Presets
-![](/Images/Presets.png)
+![](/images/Presets.png)
 
 
 The Sky and Clouds (both 2D and 3D) have various presets available, to quickly set a keyframe to a specific arrangement of values, designed to simulate the desired outcome. Be this a specific type of cloud or just a clear sky. The available presets are, for the Sky: Clear Sky and Fog, for 2D Clouds: Cirrus, Cirrocumulus and Altocumulus and for 3D Clouds: Cumulonimbus, Cumulus, Stratus, Stratocumulus and Altocumulus.

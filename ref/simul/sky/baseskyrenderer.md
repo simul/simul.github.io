@@ -36,7 +36,7 @@ after the depth-buffer has been filled by any solids in the scene
 
 There are two main elements to realistic atmospherics: Loss, and Inscatter.
 
-![](/Images/FadeLogic.png)
+![](/images/FadeLogic.png)
 ""
 
 So, for any point in screen space, we can transform it to world space using the depth value, and obtain its distance, and elevation relative to the horizon. This gives us the
@@ -63,7 +63,7 @@ All this is handled automatically by the SkyKeyframer, which in turn can use a <
 If using CPU-generated textures, the Sky Renderer asks the keyframer what new data to fill into the textures each frame. If using its own
 GpuSkyGenerator, the Sky Renderer has access to these textures without the need to query the keyframer.
 
-![](/Images/FadeTable.png)
+![](/images/FadeTable.png)
 ""
 
 The fade textures are 3D, with co-ordinates representing x=altitude/max altitude, y=1+sine(elevation))/2, z=distance/max distance.
@@ -151,7 +151,7 @@ after the depth-buffer has been filled by any solids in the scene
 
 There are two main elements to realistic atmospherics: Loss, and Inscatter.
 
-![](/Images/FadeLogic.png)
+![](/images/FadeLogic.png)
 ""
 
 So, for any point in screen space, we can transform it to world space using the depth value, and obtain its distance, and elevation relative to the horizon. This gives us the
@@ -178,7 +178,7 @@ All this is handled automatically by the SkyKeyframer, which in turn can use a <
 If using CPU-generated textures, the Sky Renderer asks the keyframer what new data to fill into the textures each frame. If using its own
 GpuSkyGenerator, the Sky Renderer has access to these textures without the need to query the keyframer.
 
-![](/Images/FadeTable.png)
+![](/images/FadeTable.png)
 ""
 
 The fade textures are 3D, with co-ordinates representing x=altitude/max altitude, y=1+sine(elevation))/2, z=distance/max distance.

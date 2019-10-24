@@ -15,7 +15,7 @@ Shadows are a vital part of making an environment feel 'alive', and trueSKY supp
 
 <hr>
 
-![](/Images/shadows.png)
+![](/images/shadows.png)
 
 
 <hr>

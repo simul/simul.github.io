@@ -18,7 +18,7 @@ If you already have an account with us, you can skip this section and [select yo
 
 1: Navigate to [simul.co](https://simul.co/)
 
-![](/Images/websiteHomepage.png)
+![](/images/websiteHomepage.png)
 
 
 2: Click *Sign Up for a Free Trial*
@@ -27,7 +27,7 @@ If you already have an account with us, you can skip this section and [select yo
 
 3: Fill in the forum with your information
 
-![](/Images/signupForum.png)
+![](/images/signupForum.png)
 
 
 4: Confirm you are not a robot by completing the Captcha.

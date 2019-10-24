@@ -76,7 +76,7 @@ Point Lights
 
 Point lights can be used to illuminate the clouds. Because of the relative scale of clouds compared to the scene, the intensity of the light must be very large in order to have a visible effect.
 
-![](/Images/unreal/pointlight.png)
+![](/images/unreal/pointlight.png)
 
 
 
@@ -84,12 +84,12 @@ Point lights can be used to illuminate the clouds. Because of the relative scale
 
 This can be done with the SetPointLight Blueprint node.
 
-![](/Images/unreal/setpointlight.png)
+![](/images/unreal/setpointlight.png)
 
 
 If you do not have a PointLight actor, you can use SetPointLightSource to individually apply the position, colour and intensity of a light to the clouds.
 
-![](/Images/unreal/setpointlightsource.png)
+![](/images/unreal/setpointlightsource.png)
 
 
 </div>
@@ -127,20 +127,20 @@ spectral radiance (watts/square metre/steradian/nm) = pixel value * reference sp
 
 You can use this value to calibrate the other lights in your scene. Say you have a point light representing an electric bulb. The brightness of this light would in reality be constant. But because trueSKY adjusts the physical value of a pixel as time passes, you must compensate for this by scaling the intensity of the bulb by the inverse of the reference radiance.
 
-![](/Images/unreal/ReferenceSpectralRadiance.png )
+![](/images/unreal/ReferenceSpectralRadiance.png )
 Using the spectral radiance value to modulate the intensity of lights in the scene.")
 
 So the light appears to get brighter as day turns to night. You can get the same effect using Unreal's Eye Adaptation (Auto Exposure). But because this is a post-process effect, it cannot cope with very dark scenes - you may see banding in the sky colours due to the low numerical accuracy of very small numbers.
 
-![](/Images/unreal/DayLightRadiance.png)
+![](/images/unreal/DayLightRadiance.png)
 
 <sup> Spectral radiance example: Day </sup>
 
-![](/Images/unreal/SunsetLightRadiance.png)
+![](/images/unreal/SunsetLightRadiance.png)
 
 <sup> Spectral radiance example: Sunset </sup>
 
-![](/Images/unreal/NightLightRadiance.png)
+![](/images/unreal/NightLightRadiance.png)
 
 <sup> Spectral radiance example: Night </sup>
 
@@ -163,7 +163,7 @@ Transparency
 Unreal
 In a material that uses transparency, insert the trueSKYTransparencyModifier function between the inputs and the final output node:
 
-![](/Images/unreal/Transparency.png)
+![](/images/unreal/Transparency.png)
 
 <sup>Using the trueSKYTransparencyModifier material function to modulate the material output values </sup>
 
