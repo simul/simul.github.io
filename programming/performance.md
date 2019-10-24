@@ -48,14 +48,25 @@ Amortization
 ---------------
 Just like the cloud Amortization, spreading rendering costs for the atmosphere will always help improve performance, but is not recommend for fast moving scenes. 
 
-Fog
-------------
-
 
 Water
 ==========
 
+Resolution
+-------------
 
+The resolution of the water (Found in the trueSKY Actor Settings) is again an obvious value. (In some versions, Half-Resolution has an view issue that is currently being resolved, making it unusable. Apologies)
+
+Screen Space Reflections
+-------------------------
+Screen-space Reflections on a boundless ocean can produce a heavy performance hit.
+
+Profile Buffer Resolution
+-----------------------
+If you have noticed your water "shimmering", it may be because you need to increase your buffer resolution. A low minimum and high maximum waves mean you will need to increase the resolution for the water to stay looking great.
+
+
+There are currently not as many setting available to customise water, but this will continue to change based on our preferences and your requests. Keep an eye out for them!
 
 
 Low performance
@@ -66,6 +77,9 @@ Create a SkyDome with trueSKY
 ----------------------------
 With trueSKY, you can create an Cubemap of the sky. While you will lose some visual fidelity and the ability to move through the clouds, this is a great way to incorporate high quality, customised clouds with a minimal performance hit.
 
-This is currently done through a blueprint, RendertoCubeMap.
+This is currently done through a blueprint, RendertoCubeMap. Select your cubemap resolution, and the cubemap you want to draw to.
 
+Known Performance Issues
+========================
+We are currently aware of an issue with older graphics cards, which in full-screen can cause severe frame drops. We are working on a solution, which should boost performance for all graphics cards.
 </div>

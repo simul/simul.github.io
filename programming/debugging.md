@@ -10,6 +10,7 @@ weight: 30
 
 Debugging
 =========
+Our goal is to have as much data publicly available to see as possible. If something is not working, you should know what isn't and why.
 
 <div class="ue4-specific">
 To show the trueSKY debugging overlays, assign the Render Target Texture TrueSkyOverlayRT (under TrueSkyPlugin/Overlay content) to the Overlay RT slot in the trueSKY Sequence Actor. The RT texture is then used with the PostProcessVolume: under Rendering Features, add a Post Process Material, and set it to the TrueSkyOverlay material reference.
@@ -23,7 +24,6 @@ To show the trueSKY debugging overlays, assign the Render Target Texture TrueSky
 The overlays can then be set in Windows->Overlays and then select the overlays you want to show.
 
 ![](/Images/unreal/DebugWindows.png)
-
 
 
 
@@ -52,7 +52,7 @@ Atmospheric Tables
 
 Cube Maps
 --------------------------
-+ Cross section
+Helpful to see what your clouds are doing. Will cycle through the different Mips.
 
 ![](/Images/CubeMaps.png)
 
@@ -74,20 +74,13 @@ Composition
 
 ![](/Images/composition.png)
 
+
 Rain Overlay
 ------------------------
-
 ![](/Images/rainOverlay.png)
+
 
 3D cloud Textures
 ------------------------------
-
 ![](/Images/cloudtextures.png)
-
-
-
-2D Cloud Textures
----------------------------
-Depreciated? or works with 4.1a?
-
 

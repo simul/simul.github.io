@@ -16,7 +16,8 @@ The Sky Sequencer is the best way to alter the trueSKY environment. Using the se
 <div class="ue4-specific">
 To launch the sky sequencer, simply double click on the sequence you would like to open. These can be found in the contents windows or from the details of the trueSKYSequenceActor if it is the currently active sequence. If you do not have a sequence, you can create one by right clicking in the content window, and selecting "Miscellaneous->New trueSKY Sequence Actor".
 
-<a href="unreal/contentbrowser.png"><img src="unreal/contentbrowser.png" alt="Content Browser"/></a> 
+
+![](/Images/unreal/contentbrowser.png)
 
 <sup> Simply double click any of the sequences you want to open </sup>
 

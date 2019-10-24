@@ -5,8 +5,9 @@ weight: 120
 ---
 
 
-Version 4.2
+Version HEAD
 ---
+Thu 24 Oct : Doc Updates  
 Thu 24 Oct : Doc Updates  
 Thu 24 Oct : Doc Update  
 Tue 22 Oct : Undo works again in Sky Sequencer.  
@@ -106,6 +107,5 @@ Mon 15 Jul : Updated CMakeList directories for faster Cmake initial generation
 Sun 14 Jul : Fix htmlproofer call - needs correct working dir. Fix name of ref.md target. Fix Help files in Simul.sln  
 Fri 12 Jul : Slight fix to reference .md  
 Fri 12 Jul : Updated docs sidebar order, fixed index issue to allow index on home page  
-Fri 12 Jul : Added DirectXTex and effects11 to CMake, updated docs in Help folder and start of editing comments for the docs  
 
 <hr>
