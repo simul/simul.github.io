@@ -45,7 +45,7 @@ It uses a plate-carree projection, aligned with the galactic horizon. Given the 
 
 i.e. the x coordinate is proportional to the azimuth, and the y coordinate is proportional to the elevation
 
-![](/Images/MilkyWay.png)
+![](/images/MilkyWay.png)
 
 
 You may see some stretching at the top and bottom of the image due to degeneracy of the projection, so it is preferable to have the texture fade to black at the top and bottom edges.
@@ -91,7 +91,7 @@ Each cloud keyframe has a <a href="../ref/simul/clouds/precipitationregion.html"
 if it is not global for the keyframe. The amount of particles used for precipitation can be altered with the [simul::clouds::BasePrecipitationRenderer](/ref/simul/clouds/baseprecipitationrenderer)
 property.
 
-![](/Images/Lightning-RainStreaks.jpg)
+![](/images/Lightning-RainStreaks.jpg)
 
 
 Classes derived from simul::clouds::BasePrecipitationRenderer are used to draw the rain or snow particles, while the <a href="../ref/simul/clouds/precipitationregion.html">rain streak effect</a>is drawn by the cloud renderer. This class has a property "UseSimulationTime" which determines whether rain and snow speed is based on the simulated time-of-day, or real time in seconds.
@@ -168,7 +168,7 @@ However, clouds and Simul's other volumetric effects can be blended seamlessly w
 anti-aliasing. To do this, trueSKY uses a mixed-resolution compositor.
 
 
-![](/Images/Compositing.png)
+![](/images/Compositing.png)
 
 *Mixed-resolution compositing in trueSKY*
 

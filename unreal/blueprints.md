@@ -20,7 +20,7 @@ If you have never used blueprints before, [Unreal](https://docs.unrealengine.com
 
 You can edit any of the variables present in the keyframes, layers or even values attached to the trueSKY Actor. To access these nodes, we have split our variables based on their location and their data type. For example, if you want to edit a float value on a cloud keyframe, you would use the Set CloudKeyframe Float node. There is also a correlating GetCloudKeyframeFloat for retrieving data
 
-![](/Images/unreal/CloudKeyframeFloat.png)
+![](/images/unreal/CloudKeyframeFloat.png)
 
 
 
@@ -32,7 +32,7 @@ Macros
 ------------
 Macros are a combination of blueprint nodes we have put together for you to make certain tasks easier. You use a macro like you would a blueprint node, you can also double click to see exactly what it is doing.
 
-![](/Images/unreal/timeofdaymacro.png)
+![](/images/unreal/timeofdaymacro.png)
 
 
 <sup>Our time of day macro, with the nodes it is encapsulating on the right.</sup>
@@ -52,26 +52,26 @@ Queries
 
 To test how much cloud (from 0 to 1) is at a specified point, use the function CloudPointTest. **Note**: The Query Id can be set to any integer value, but should differ from any Query Ids used in separate queries (or else they will be overwritten).
 
-![](/Images/unreal/CloudPointTest.png)
+![](/images/unreal/CloudPointTest.png)
 
 <sup>Sample usage of the Cloud Point Test functionality</sup>
 
 To test if there is cloud between two points, use CloudLineTest:
 
-![](/Images/unreal/CloudLineTest.png)
+![](/images/unreal/CloudLineTest.png)
 
 <sup>Sample usage of the Cloud Line Test functionality</sup> 
 
 Driving trueSKY's Simulation through In-Scene Sun and Moon Data 
 ---------------------------
-![](/Images/unreal/SetFromSunAndMoon.png )
+![](/images/unreal/SetFromSunAndMoon.png )
 Driving trueSKY through in-game actors/components, instead of the standard trueSKY-driving in-game actors/components.")
 
 In a reversal of the default setup, SetSunRotation and SetMoonRotation can be used to drive the trueSKY sun and moon directly from a direct light source (or some other object). In order to user this feature, it is recommended to set the Interpolation Mode property of the trueSky Sequence Actor to "RealTime". This is so that any changes to the sun and moon direction will affect the trueSKY atmospherics regardless of whether game time is changing, and so that slight or slow changes in sun direction will not cause a per-frame recalculation of the atmospheric tables.
 
 In addition to these Set functions for the sun/moon rotation, there are also Get functions for sun/moon rotation, colour and intensitiy. Additionally, you can Get/Set the texture of the moon in Blueprint.
 
-![](/Images/unreal/GetSetMoonTexture.png)
+![](/images/unreal/GetSetMoonTexture.png)
 
 <sup> Example of how to change the moon texture at runtime in blueprint </sup>
 
@@ -80,13 +80,13 @@ Managing Sequences
 
 Though you can only set the active sequence in the editor, it is possible to change the sequence in use mid-game using Blueprint. To do this, create a reference to your TrueSkySequenceActor in Blueprint, then drag the output pin onto the canvas. In the Action List, search for and select "Set Active Sequence". Repeat for as many sequences as you wish and connect them to relevant events. 
 
-![](/Images/unreal/SetActiveSequence.png)
+![](/images/unreal/SetActiveSequence.png)
 
 <sup>Example of how to change the active trueSKY sequence at runtime in blueprint </sup>
 
 You can also get the active sequence in Blueprint. Similarly, just drag the output pin of your TrueSkySequence actor onto the canvas and search for and select "Get Active Sequence". This will return the Sequence Asset in use. 
 
-![](/Images/unreal/GetActiveSequence.png)
+![](/images/unreal/GetActiveSequence.png)
 
 
 <sup>Example of how to query the active trueSKY sequence at runtime in blueprint</sup>
@@ -97,7 +97,7 @@ Keeping Changes from Simulation
 
 If you like the variables that are present while simulating the game, you can keep these changes. To do this, you must first start simulating the world. Next, in the World Outliner, right click the the object that you want to keep the changes of. Then select "Keep Simulated Changes", and your changes will be saved.
 
-![](/Images/unreal/simulatedchanges.png)
+![](/images/unreal/simulatedchanges.png)
 
 
 
@@ -109,7 +109,7 @@ trueSKY has a built-in profiler for GPU and CPU performance. Use "Get Profiling 
 
 The outputs are in milliseconds.
 
-![](/Images/unreal/GetProfilingText.png)
+![](/images/unreal/GetProfilingText.png)
 
 <sup> How to retrieve profiling text </sup>
 
@@ -118,7 +118,7 @@ Tests
 
 There are Blueprint functions provided to test a scene for lightning and for rain. For lightning, the "Get Lightning" function will provide the start position, end position, colour and magnitude of any lightning present. A magnitude of 0 means there is no lightning present. Additionally, the "Get Rain At Position" function will take a given position and return a float between 0.0 and 1.0, indicating the strength of the rain (or snow) at this position.
 
-![](/Images/unreal/LightningRainTest.png )
+![](/images/unreal/LightningRainTest.png )
 Example of testing the weather conditions in blueprint.")
 
 
@@ -149,7 +149,7 @@ Once you have a keyframe's Uid, you can Get and Set its properties. Select a Pro
 
 * **SetSkyKeyframeInt:** Given a keyframe Uid, a name string and an integer value, will set the matching property for the Name to the specified integer value.
 
-![](/Images/unreal/BPGetSet.png)
+![](/images/unreal/BPGetSet.png)
 
 
 

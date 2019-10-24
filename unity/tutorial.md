@@ -19,7 +19,7 @@ This page shows you how to install the trueSKY plugin for Unity. Head back to [I
 
 * 2: Download trueSKY Unity Package from [simul.co/downloads](https://simul.co/downloads). Make sure to select the correct engine version you desire, and we always recommend the most up to date version of trueSKY. Be aware Unity has issues importing packages from the downloads folder, so we recommend saving the file in a different directory related to Unity.
 
-![](/Images/unity/downloadpage.png)
+![](/images/unity/downloadpage.png)
 
 
 
@@ -29,19 +29,19 @@ This page shows you how to install the trueSKY plugin for Unity. Head back to [I
 
 * 2: Click on 'Assets -> Import Package -> Custom Package'.
 
-![](/Images/unity/importpackage.png)
+![](/images/unity/importpackage.png)
 
 
 * 3: Locate and select the trueSKY package you just downloaded.
 
 * 4: Unity will now decompress the package for your scene. This may take up to 10 minutes, depending on your machine.
 
-![](/Images/unity/preparingpackage.png)
+![](/images/unity/preparingpackage.png)
 
 
 * 5: Unity will ask you which files to import, make sure they are all selected.
 
-![](/Images/unity/importpackagefinished.png)
+![](/images/unity/importpackagefinished.png)
 
 
 
@@ -51,7 +51,7 @@ This page shows you how to install the trueSKY plugin for Unity. Head back to [I
 
 * 2: Click on 'GameObject -> Initialize trueSKY in scene' from the dropdown menus at the top of the window.
 
-![](/Images/unity/initializetruesky.png)
+![](/images/unity/initializetruesky.png)
 
 
 * 3: Make sure you have the scene open that you want to initialize trueSKY into, then click next. Otherwise, load up a different scene before starting the initialization.
@@ -70,14 +70,14 @@ This page shows you how to install the trueSKY plugin for Unity. Head back to [I
 -----------------------------
 * 1: Right click within the Asset Window and click 'Create -> New trueSky Sequence', which will appear at the bottom of the options.
 
-![](/Images/unity/addsequence.png)
+![](/images/unity/addsequence.png)
 
 
 * 2: The new sequence will be created within the asset window.
 
 * 3: To make this new sequence the active sequence in the world, select the trueSky object from the hierarchy. Then in the inspector, find "Sequence Asset" in the trueSKY script.
 
-![](/Images/unity/setsequence.png)
+![](/images/unity/setsequence.png)
 
 
 * 4: You can either manually select your sequence from within the Inspector, or you can drag and drop your preferred sequence from the asset browser to the active sequence box.

@@ -17,7 +17,7 @@ The Sky Sequencer is the best way to alter the trueSKY environment. Using the se
 To launch the sky sequencer, simply double click on the sequence you would like to open. These can be found in the contents windows or from the details of the trueSKYSequenceActor if it is the currently active sequence. If you do not have a sequence, you can create one by right clicking in the content window, and selecting "Miscellaneous->New trueSKY Sequence Actor".
 
 
-![](/Images/unreal/contentbrowser.png)
+![](/images/unreal/contentbrowser.png)
 
 <sup> Simply double click any of the sequences you want to open </sup>
 
@@ -26,7 +26,7 @@ To launch the sky sequencer, simply double click on the sequence you would like 
 <div class="unity-specific">
 To launch the sky sequencer, select the sequence you want to launch. These can be found in the projects window or your currently active sequence can be found in your trueSKYMaster's inspector window. Then, once you have selected it, you should be able to choose "Show Sequence" in the inspector window.
 
-![](/Images/unity/inspector.png)
+![](/images/unity/inspector.png)
 
 <sup> After click on a sequence, you can launch it with the buttons in the inspector </sup>
 </div>
@@ -38,7 +38,7 @@ Keyframes
 -------------
 Keyframes are what store the information about different cloud formations or skylines. There are 3 types of keyframes: Sky, cloud and storm. Each keyframe holds information on their respective effect, and can be customised in real time.
 
-![](/Images/unreal/keyframes.png)
+![](/images/unreal/keyframes.png)
 
 
 Number                  |       Description                                     
@@ -55,20 +55,20 @@ Layers
 
 There are two types of layers in trueSKY: Sky and clouds. Layers store their respective keyframes, and each layer has settings that affect all the keyframes within.
 
-![](/Images/unreal/layers.png)
+![](/images/unreal/layers.png)
 
 <sup>Image of a Sky layer and a cloud layer</sup>
 
 
 Although there are only 2 types of layers, you can have numerous clouds layers. There can only be one Sky layer, as there can only be one Sky. Allowing for multiple cloud layers allows different cloud formations to appear at the same time. To add a cloud layer, simply right click anywhere in the timeline, and select "Add cloud layer". You can add as many cloud layers as needed, but the recommended limit is 5.
 
-![](/Images/unreal/manylayers.png)
+![](/images/unreal/manylayers.png)
 
 <sup>5 layers is probably the most you will ever need</sup>
 
 Layers do *not* have any effect on the height of the clouds. Layer 1 can be lower than layer 2, or layer 5 could be in the middle. Height settings are adjusted within the individual keyframes. To add a keyframe to a layer, simply right click within the layer you want the keyframe for (click in the sky layer for a sky keyframe, cloud layer for cloud keyframe), then select the "Add Cloud Keyframe" option.
 
-![](/Images/Unreal/AddCloudKF.png)
+![](/images/Unreal/AddCloudKF.png)
 
 <sup>The keyframe will be created at the position your mouse is at</sup>
 
@@ -84,7 +84,7 @@ Sky Sequencer Components
 =========================
 The sequencer is made up of 4 distinct parts
 
-![](/Images/unreal/skysequencer.png)
+![](/images/unreal/skysequencer.png)
 
 
 
@@ -104,12 +104,12 @@ Before you can edit anything on the Sequencer, you need to have entered your use
 
 1: Login to your account at simul.co and click my account. 
 
-![](/Images/myaccount.png)
+![](/images/myaccount.png)
 
 
 2: Your username and licence key are in the account dashboard. Your username is at the top left, underneath your name. Your licence key is on the right in the licence section.
 
-![](/Images/accountdashboard.png)
+![](/images/accountdashboard.png)
 
 
 4: Launch the active sequence asset using the instructions [above.](#the-sky-sequencer)
@@ -127,7 +127,7 @@ The details panel contains information about the currently selected keyframe or 
 
 To edit a keyframe, first select it with left click. This will bring up all the keyframes variables in the details column. 
 
-![](/Images/unreal/details.png)
+![](/images/unreal/details.png)
 
 <sup>This is the details panel of a selected Cloud Keyframe</sup>
 
@@ -135,7 +135,7 @@ Now you can see all the variables that can be altered within the Sequencer. You 
 
 Presets allows you to automatically set a keyframe to one of our example keyframes. Click on a correlating preset (don't click a sky preset if you have a cloud keyframe selected) and then click apply to produce the selected preset on the current keyframe. 
 
-![](/Images/unreal/presets.png)
+![](/images/unreal/presets.png)
 
 <sup>You can add your own presets with the create option</sup>
 
@@ -155,13 +155,13 @@ Cloud Window
 
 The Cloud Window is a top down view of the world, where you can see the current cloud formations and layers. You can zoom in and out with the mouse wheel, and drag the world around by holding right click and dragging in a direction. If you select a keyframe, you will be able to drag its wind heading around the Cloud Window, allowing for full control of the angle of the wind. Furthermore, if you enable "override Wind" setting in the cloud layer properties, any cloud keyframes in this layer can also be dragged around and positioned as you see fit.
 
-![](/Images/unreal/overrideWind.png)
+![](/images/unreal/overrideWind.png)
 
 <sup>Make sure to tick this if you want to move the clouds from the Cloud Window</sup>
 
 If you select a keyframe, the layer width is represented by a blue box, whereas a blue circle represents the [precipitation radius](precipitation.html#radius).
 
-![](/Images/unreal/WorldGrid.png)
+![](/images/unreal/WorldGrid.png)
 
 <sup>You can see the cloud formations from the grey box, the current cloud layers origin and width from the blue box, and finally the precipitation radius with the blue circle.</sup>
 
@@ -172,13 +172,13 @@ Timeline
 
 The Timeline is the where all your keyframes are stored. It is used to adjust which features appear at what time. 
 
-![](/Images/timeline.png)
+![](/images/timeline.png)
 
 
 
 The numbers along the bottom represent the time. Within the timeline, trueSKY shows the time in hours and minutes. Zooming in and out with the mouse wheel will adjust the range of visible time. To change the current time, drag the red vertical line (the time marker) by its handle underneath. To change the visible time-window, drag the timeline at the bottom. To adjust the range of visible time, use the mouse wheel to zoom in and out. To adjust the current time in the timeline, you can drag horizontally by holding right click.
 
-![](/Images/unreal/timelineZoom.png)
+![](/images/unreal/timelineZoom.png)
 
 <sup>I have zoomed in enough to see individual minutes on the timeline</sup>
 

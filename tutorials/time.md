@@ -18,7 +18,7 @@ Though we can now see clouds, you will notice that they aren't moving, even if t
 TrueSKY supports three different modes of update - Game Time, Fixed Time and Real Time.
 
 
-![](/Images/unreal/updateoptions.png)
+![](/images/unreal/updateoptions.png)
 
 
 
@@ -52,7 +52,7 @@ The easiest way to progress time in Unreal is through blueprints. Within the tru
 
 Open up the level blueprint and create an Event Tick event. Next create a float variable to store the current time, then connect the Event Tick event to a Setter for this variable. For frame rate independence, we should use Delta Time to progress the trueSKY time. To do this, create a Getter for the Time variable and then a "Float + Float" function and a "Float / Float" function. Connect the Delta Seconds pin from the Event Tick event to the divide function, then connect the output from this to the addition function. Next connect the Time Getter to the other input pin of the addition function, and then connect the output pin of the addition function to the Time Setter. Lastly find the trueSKY Set Time function and connect the Time Setter to this, and pass the Time variable output pin to the Set Time function's float input pin. 
 
-![](/Images/unreal/settingtime.png)
+![](/images/unreal/settingtime.png)
 
 
 

@@ -25,12 +25,12 @@ This page shows you how to install the binary version of trueSKY onto your exist
 
 2: Download trueSKY binary installer from [simul.co/downloads](https://simul.co/downloads). Make sure to select the correct engine version you desire, and we always recommend the most up to date version of trueSKY.
 
-![](/Images/unreal/download.png)
+![](/images/unreal/download.png)
 
 
 3: Run the trueSKY installer, ensuring that you select your UE4 directory as the installation location. (You should already have a version of UE4 installed, if not head over to www.unrealengine.com to download one). After the installation process is complete, the plugin should be installed into your UE4 directory.
 
-![](/Images/unreal/wizard.png)
+![](/images/unreal/wizard.png)
 
 <sup>Make sure you select the correct directory</sup>
 
@@ -43,12 +43,12 @@ This page shows you how to install the binary version of trueSKY onto your exist
 
 2: Click 'Edit -> Plugins' from the dropdown menu at the top of the window.
 
-![](/Images/unreal/pluginwindow.png)
+![](/images/unreal/pluginwindow.png)
 
 
 3: A new 'Plugins' window will appear. Use the search box to find 'trueSKY'.
 
-![](/Images/unreal/pluginwindow2.png)
+![](/images/unreal/pluginwindow2.png)
 
 
 4: Make sure trueSKY is enabled with the small tick box. If it is not, enable it. This will require you to restart Unreal.
@@ -61,12 +61,12 @@ This page shows you how to install the binary version of trueSKY onto your exist
 -------------------------------
 1: Click 'Window -> initialize trueSKY' from the dropdown at the top of the window.
 
-![](/Images/unreal/windowdropdown.png)
+![](/images/unreal/windowdropdown.png)
 
 
 2: A pop-up window will appear. You can either click initialize to allow trueSKY to set itself up, or you can click next to customise initialization. If you clicked initialize, you can jump to [4.Creating a new Sequence](#Creating-a-new-sequence).
 
-![](/Images/unreal/enginewizard.png)
+![](/images/unreal/enginewizard.png)
 
 
 3: Select an initial sequence asset. This can be changed at any time. There will be two options, TrueSkySequnceCumulus, and TrueSkySequenceStratus. You can also tick the 'Show all sequences' box if you already have some sequences available in the project contents. Select a sequence, then press next. 
@@ -83,14 +83,14 @@ Once initialize is selected, you should see trueSKY appear in the scene, althoug
 
 2: Click on "Miscellaneous -> trueSKY Sequence Asset" to create a new sequence. It can be renamed/saved/moved/deleted to your preference.
 
-![](/Images/unreal/addsequence.png)
+![](/images/unreal/addsequence.png)
 
 
 3: To make this new sequence the active sequence in the world, select trueSkySequenceActor in the world outliner, then in the details section, search for 'Active Sequence'
 
 4: You can either manually select your sequence from the dropdown next to active sequence, or you can drag and drop your preferred sequence from the content browser to the active sequence box.
 
-![](/Images/unreal/activesequence.png)
+![](/images/unreal/activesequence.png)
 
 
 
