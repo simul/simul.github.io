@@ -7,6 +7,7 @@ weight: 120
 
 Version HEAD
 ---
+Fri 25 Oct : Fix Simul QTWidgets deployment.  
 Thu 24 Oct : Small doc fix  
 Thu 24 Oct : UI improvements to timeline.  
 Thu 24 Oct : Image Fixing Docs  
@@ -106,6 +107,5 @@ Fri 19 Jul : Flipped view distance for cloudDepthTexture in lightning.sfx for be
 Fri 19 Jul : Beginning start of documentation editing. Organisation, baseline for files.  
 Fri 19 Jul : PS4 build fix  
 Wed 17 Jul : All C++ projects now build in CMake, at least on Windows. MT and MD versions of effects11 and directxtex.  
-Tue 16 Jul : .  
 
 <hr>
