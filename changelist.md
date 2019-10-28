@@ -7,6 +7,10 @@ weight: 120
 
 Version HEAD
 ---
+Fri 25 Oct : PS4-related fixes patched. QPropertyEditWidget has applyParentTooltip, should be called by derived classes after setupUI.  
+Fri 25 Oct : Fix QT DLLs not being deployed.  
+Fri 25 Oct : Apply patch from Game Studio.  
+Fri 25 Oct : Support for altitude-dependent sunlight.  
 Fri 25 Oct : Fix Simul QTWidgets deployment.  
 Thu 24 Oct : Small doc fix  
 Thu 24 Oct : UI improvements to timeline.  
@@ -103,9 +107,5 @@ Tue 30 Jul : Remove Effects11_win8sdk dep.
 Tue 30 Jul : Update that adds water masks, other small fixes  
 Fri 26 Jul : More organisation and fixed internal Linking  
 Wed 24 Jul : Reorganised doc files  
-Fri 19 Jul : Flipped view distance for cloudDepthTexture in lightning.sfx for best depth lookup.  
-Fri 19 Jul : Beginning start of documentation editing. Organisation, baseline for files.  
-Fri 19 Jul : PS4 build fix  
-Wed 17 Jul : All C++ projects now build in CMake, at least on Windows. MT and MD versions of effects11 and directxtex.  
 
 <hr>
