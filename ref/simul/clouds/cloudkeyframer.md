@@ -61,7 +61,7 @@ Functions
 | simul::clouds::CloudKeyframer  const & | [operator=](#operator=)(simul::clouds::CloudKeyframer SK) |
 | void | [RecalculateOffsets](#RecalculateOffsets)() |
 | void | [Relocate](#Relocate)(pos_before, pos_after) |
-| void | [RemoveVolume](#RemoveVolume)(int id) |
+| void | [RemoveVolume](#RemoveVolume)(simul::sky::uid id) |
 | void | [Reset](#Reset)() |
 | void | [Save](#Save)(simul::sky::Output os) |
 | void | [SaveToText](#SaveToText)(simul::crossplatform::TextOutput output, bool include_keyframes) |
@@ -71,7 +71,7 @@ Functions
 | void | [SetRecalculate](#SetRecalculate)() |
 | void | [SetSkyInterface](#SetSkyInterface)(simul::sky::BaseSkyInterface si) |
 | void | [SetUniformKeyframes](#SetUniformKeyframes)(int StepsPerDay, float range) |
-| void | [SetVolume](#SetVolume)(int id, simul::clouds::CloudVolumeType type, simul::crossplatform::Quaterniond orig, vec3 scale, vec2 rake) |
+| void | [SetVolume](#SetVolume)(simul::sky::uid id, simul::clouds::CloudVolumeType type, simul::crossplatform::Quaterniond orig, vec3 scale, vec2 rake) |
 | void | [Synchronize](#Synchronize)() |
 | void | [Update](#Update)(float new_time) |
 | unsigned int | [GetOffsetChecksum](#GetOffsetChecksum)() |
@@ -214,7 +214,7 @@ Check for changed offsets and recalculate.
 ### void Relocate(pos_before, pos_after)
 Relocate: to avoid numerical precision problems, relocation can be performed. Specify any position, before and after relocation.
 <a name="RemoveVolume"></a>
-### void RemoveVolume(int id)
+### void RemoveVolume(simul::sky::uid id)
 Remove a custom cloud volume
 <a name="Reset"></a>
 ### void Reset()
@@ -245,7 +245,7 @@ Set the sky - this is used to light the clouds over time.
 Apply the cloud's properties to all keyframes.
 Create a number of evenly spaced keyframes.
 <a name="SetVolume"></a>
-### void SetVolume(int id, simul::clouds::CloudVolumeType type, simul::crossplatform::Quaterniond orig, vec3 scale, vec2 rake)
+### void SetVolume(simul::sky::uid id, simul::clouds::CloudVolumeType type, simul::crossplatform::Quaterniond orig, vec3 scale, vec2 rake)
 Set the properties of a custom cloud volume:
 <a name="Synchronize"></a>
 ### void Synchronize()

@@ -48,7 +48,7 @@ Functions
 | float | [GetWaterFloat](#GetWaterFloat)(char name, uint ID) |
 | int | [GetWaterInt](#GetWaterInt)(char name, uint ID) |
 | vec4 | [GetWaterProbeValues](#GetWaterProbeValues)(int ID) |
-| float * | [GetWaterVector](#GetWaterVector)(char name, uint ID) |
+| bool | [GetWaterVector](#GetWaterVector)(char name, uint ID, vec3) |
 | bool | [HasFloat](#HasFloat)(char name) |
 | bool | [HasInt](#HasInt)(char name) |
 | unsigned int | [InsertKeyframe](#InsertKeyframe)(int layer, float time) |
@@ -201,7 +201,7 @@ Get an int for a specfic water object
 ### vec4 GetWaterProbeValues(int ID)
 Get the results of a water probe
 <a name="GetWaterVector"></a>
-### float * GetWaterVector(char name, uint ID)
+### bool GetWaterVector(char name, uint ID, vec3)
 Get a vector for a specfic water object
 <a name="HasFloat"></a>
 ### bool HasFloat(char name)

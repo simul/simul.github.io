@@ -55,7 +55,7 @@ Functions
 | float | [StaticGetWaterFloat](#StaticGetWaterFloat)(char name, int ID) |
 | int | [StaticGetWaterInt](#StaticGetWaterInt)(char name, int ID) |
 | void | [StaticGetWaterProbeValues](#StaticGetWaterProbeValues)(int ID, vec4 values) |
-| float * | [StaticGetWaterVector](#StaticGetWaterVector)(char name, int ID) |
+| bool | [StaticGetWaterVector](#StaticGetWaterVector)(char name, int ID, float) |
 | bool | [StaticHasRenderFloat](#StaticHasRenderFloat)(char name) |
 | bool | [StaticHasRenderInt](#StaticHasRenderInt)(char name) |
 | int | [StaticInitInterface](#StaticInitInterface)() |
@@ -227,7 +227,7 @@ Get an int for a specfic water object
 ### void StaticGetWaterProbeValues(int ID, vec4 values)
 Get the results of a water probe
 <a name="StaticGetWaterVector"></a>
-### float * StaticGetWaterVector(char name, int ID)
+### bool StaticGetWaterVector(char name, int ID, float)
 Get a vector for a specfic water object
 <a name="StaticHasRenderFloat"></a>
 ### bool StaticHasRenderFloat(char name)

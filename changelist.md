@@ -7,6 +7,10 @@ weight: 120
 
 Version HEAD
 ---
+Tue 29 Oct : Added version.properties to store current variable properties, e.g. recommended SDK versions etc. Fixed platform build errors.  
+Mon 28 Oct : Fix being unable to select the sky layer.  
+Mon 28 Oct : Fix right-click clearing selection.  
+Mon 28 Oct : Fix stand-alone sequencer not compiling from rename.  
 Fri 25 Oct : PS4-related fixes patched. QPropertyEditWidget has applyParentTooltip, should be called by derived classes after setupUI.  
 Fri 25 Oct : Fix QT DLLs not being deployed.  
 Fri 25 Oct : Apply patch from Game Studio.  
@@ -103,9 +107,5 @@ Thu 08 Aug : Add EXE_PATH to WindowsEnvironment.properties
 Thu 08 Aug : CMake and Build.bat  
 Wed 07 Aug : More Documentation Updating  
 Tue 06 Aug : Minor fix for lightning and water reflections  
-Tue 30 Jul : Remove Effects11_win8sdk dep.  
-Tue 30 Jul : Update that adds water masks, other small fixes  
-Fri 26 Jul : More organisation and fixed internal Linking  
-Wed 24 Jul : Reorganised doc files  
 
 <hr>
