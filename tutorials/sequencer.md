@@ -73,6 +73,8 @@ Layers do *not* have any effect on the height of the clouds. Layer 1 can be lowe
 <sup>The keyframe will be created at the position your mouse is at</sup>
 
 
+You can click on the layer name to access layer specific settings.
+
 Sequence
 ----------
 A sequence is a collection of Layers and keyframes, that can be saved and used in any scene that incorporates trueSKY. There can only be one sequence active at a time, although you can switch between them at run-time. You can use sequences to save specific weather formations for set times of the day.
@@ -183,7 +185,7 @@ The numbers along the bottom represent the time. Within the timeline, trueSKY sh
 
 You can select multiple keyframes at once by either shift clicking them individually, or you can double click within the desired layer to select all keyframes in that layer. You can then alter all their properties at once. Keyframes can be dragged and moved along the timeline with left click or copied and pasted in multiple places. 
 
-If there is only one cloud keyframe present in a layer, then the clouds will not change over time, only move (if there is wind in the scene). If another keyframe is added to the layer, then the clouds will interpolate between the different keyframes based on the current time in the world. Interpolation is applied by layer, so clouds in layer 2 will not change based on clouds in layer 1. While interpolating, a special keyframe is created that stores the information. You can obtain a reference to this using <a href="../ref/simul/clouds/cloudkeyframer.html">#GetInterpolatedKeyframe GetInterpolatedKeyframe</a>.
+If there is only one cloud keyframe present in a layer, then the clouds will not change over time, only move (if there is wind in the scene). If another keyframe is added to the layer, then the clouds will interpolate between the different keyframes based on the current time in the world. Interpolation is applied by layer, so clouds in layer 2 will not change based on clouds in layer 1. While interpolating, a special keyframe is created that stores the information. You can obtain a reference to this using <a href="../ref/simul/clouds/cloudkeyframer.html">#GetInterpolatedKeyframe </a>.
 
 To learn more about progressing time within the world, along with the multiple ways to do so, head to [Progressing Time](time.html).
 

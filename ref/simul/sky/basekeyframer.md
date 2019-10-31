@@ -32,8 +32,8 @@ Functions
 | simul::sky::BaseKeyframe  const * | [GetKeyframeByUniqueId](#GetKeyframeByUniqueId)(unsigned int id) |
 | int | [GetKeyframeIndexByUniqueId](#GetKeyframeIndexByUniqueId)(unsigned int id) |
 | float | [GetKeyframeTime](#GetKeyframeTime)(int i) |
-| unsigned int | [GetKeyframeUidAfterTime](#GetKeyframeUidAfterTime)(double t) |
-| unsigned int | [GetKeyframeUidAtOrBeforeTime](#GetKeyframeUidAtOrBeforeTime)(double t) |
+| simul::sky::uid | [GetKeyframeUidAfterTime](#GetKeyframeUidAfterTime)(double t) |
+| simul::sky::uid | [GetKeyframeUidAtOrBeforeTime](#GetKeyframeUidAtOrBeforeTime)(double t) |
 | int | [GetNumKeyframes](#GetNumKeyframes)() |
 | bool | [HasFloat](#HasFloat)(char) |
 | bool | [HasInt](#HasInt)(char) |
@@ -102,10 +102,10 @@ Get an index for the keyframe with the specified id, or NULL if there is no such
 ### float GetKeyframeTime(int i)
 Time of a particular keyframe.
 <a name="GetKeyframeUidAfterTime"></a>
-### unsigned int GetKeyframeUidAfterTime(double t)
+### simul::sky::uid GetKeyframeUidAfterTime(double t)
 Get the keyframe After time t:
 <a name="GetKeyframeUidAtOrBeforeTime"></a>
-### unsigned int GetKeyframeUidAtOrBeforeTime(double t)
+### simul::sky::uid GetKeyframeUidAtOrBeforeTime(double t)
 Get the keyframe uid BEFORE or AT time t:
 <a name="GetNumKeyframes"></a>
 ### int GetNumKeyframes()

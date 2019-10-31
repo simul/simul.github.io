@@ -17,6 +17,7 @@ Use the Blueprint function GetProfilingText to get GPU and CPU timing numbers fo
 
 High Cost Settings
 ==================
+We are always aiming to increase performance where we can. This section may change based on improvements we make.
 
 Clouds
 =========
@@ -29,9 +30,9 @@ Maximum Cloud Distance
 ---------------------
 Cloud distance can produce a heavy performance impact, but usually is only noticed at high altitudes. If you have increased this value, this is one of the first settings you could likely reduce.
 
-Grid Size
+Render Grid Size
 ------------
-Grid size can be our most expensive variable if set to a low value such as (0.1, 0.1), and can help improve performance drastically. Increasing grid size will improve performance, but will make the grid more noticeable amongst the clouds. To counteract that, you can adjust the different noise values.
+Grid size can be our most expensive variable if set to a low value such as (0.1, 0.1), an increasing it can help improve performance drastically. Increasing grid size will improve performance, but will make the grid more noticeable amongst the clouds. To counteract that, you can adjust the different noise values.
 
 Default Number Steps
 -----------------
@@ -54,19 +55,17 @@ Water
 
 Resolution
 -------------
-
-The resolution of the water (Found in the trueSKY Actor Settings) is again an obvious value. (In some versions, Half-Resolution has an view issue that is currently being resolved, making it unusable. Apologies)
+The resolution of the water (Found in the trueSKY Actor Settings) is again an obvious value. (In some versions, Half-Resolution has an view issue that is currently being resolved)
 
 Screen Space Reflections
 -------------------------
-Screen-space Reflections on a boundless ocean can produce a heavy performance hit.
+Screen-space Reflections on a boundless ocean can produce a large performance hit.
 
 Profile Buffer Resolution
 -----------------------
 If you have noticed your water "shimmering", it may be because you need to increase your buffer resolution. A low minimum and high maximum waves mean you will need to increase the resolution for the water to stay looking great.
 
 
-There are currently not as many setting available to customise water, but this will continue to change based on our preferences and your requests. Keep an eye out for them!
 
 
 Low performance

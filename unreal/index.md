@@ -16,9 +16,9 @@ trueSKY for Unreal Engine 4
 trueSKY is fully compatible with these versions of Unreal Engine 4
 
 
-|       >4.18   |  4.21 | 4.22  | 4.23  |
-|:---------:|:-----:|:-----:|:-----:|
-|On Request     |       ✓     |       ✓     |       ✓     |
+|       4.23    |  4.22 | 4.21  | 4.20 or earlier       |
+|:---------:|:-----:|:-----:|:----------------: |
+|       ✓             |       ✓     |       ✓     |On Request                     |
 
 For versions before 4.18, some features might be available.
 

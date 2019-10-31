@@ -31,8 +31,7 @@ Some <a href="../ref/simul/clouds/cloudkeyframe.html">cloud keyframe</a>properti
 These textures are then interpolated for rendering:
 
 Clouds are usually drawn to a pair of lower-resolution buffers.
-The [simul::clouds::BaseCloudRenderer](/ref/simul/clouds/basecloudrenderer)
-keeps the cloud volume textures up to date, and draws the clouds volumetrically.
+The <a href="../ref/simul/clouds/cloudrenderer.html">CloudRenderer</a>keeps the cloud volume textures up to date, and draws the clouds volumetrically.
 
 Cosmic Background
 -----------------

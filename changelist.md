@@ -7,11 +7,23 @@ weight: 120
 
 Version HEAD
 ---
+Thu 31 Oct : Doc Fix  
+Thu 31 Oct : Changed default path for dllLocation.  
+Thu 31 Oct : Doc Fixes  
+Thu 31 Oct : Removed unneeded window handle from UpdateUI().  
+Thu 31 Oct : adding images  
+Thu 31 Oct : Doc Fixes  
+Wed 30 Oct : Fix copy and pasting of keyframes in sequencer.  
+Wed 30 Oct : Odd EnsureIndexBuffer behaviour  
+Wed 30 Oct : DOc Updates + UI Sorting  
 Tue 29 Oct : Added version.properties to store current variable properties, e.g. recommended SDK versions etc. Fixed platform build errors.  
 Mon 28 Oct : Fix being unable to select the sky layer.  
+Mon 28 Oct : Removed Add Shape from Sequencer UI  
+Mon 28 Oct : Removed Min Star Size from Sequencer. Temp Disabled Get Constellation  
 Mon 28 Oct : Fix right-click clearing selection.  
 Mon 28 Oct : Fix stand-alone sequencer not compiling from rename.  
 Fri 25 Oct : PS4-related fixes patched. QPropertyEditWidget has applyParentTooltip, should be called by derived classes after setupUI.  
+Fri 25 Oct : Doc fix  
 Fri 25 Oct : Fix QT DLLs not being deployed.  
 Fri 25 Oct : Apply patch from Game Studio.  
 Fri 25 Oct : Support for altitude-dependent sunlight.  
@@ -95,17 +107,5 @@ Tue 13 Aug : Fix Vulkan build paths.
 Mon 12 Aug : Build fix  
 Mon 12 Aug : Very temp possible fix for build issues  
 Sun 11 Aug : Fix build/exe path  
-Sat 10 Aug : backslash not forward in properties file.  
-Sat 10 Aug : CMake tweaks.  
-Fri 09 Aug : glfw3.lib even in debug, not glfw3d.lib.  
-Fri 09 Aug : glfw3.lib even in debug, not glfw3d.lib.  
-Fri 09 Aug : Build.bat correction.  
-Thu 08 Aug : Build.bat CMake QT_DIR  
-Thu 08 Aug : Fix VSVER in build.bat  
-Thu 08 Aug : Build.bat working with CMake.  
-Thu 08 Aug : Add EXE_PATH to WindowsEnvironment.properties  
-Thu 08 Aug : CMake and Build.bat  
-Wed 07 Aug : More Documentation Updating  
-Tue 06 Aug : Minor fix for lightning and water reflections  
 
 <hr>

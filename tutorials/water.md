@@ -13,7 +13,8 @@ Water
 
 Realtime, Volumetric Water is one of the latest features to be brought to trueSKY, bringing the high quality we produce in the sky to the ground. Just like the Sky, we have an array of customisation for the water.
 
-For quick setup - check out this [short video](https://www.youtube.com/watch?v=uwZZTEqaUbo){:target="_blank"}
+For a quick setup - check out this [short video](https://www.youtube.com/watch?v=uwZZTEqaUbo){:target="_blank"}
+
 
 These setting are on the trueSKYActor.
 
@@ -70,6 +71,7 @@ Shore Depth Width                                                               
 Shore Depth Extent                                                              |Depth of the Shore Depth Effects                                                                       |1000.0 to 10000.0
 
 
+
 Shore Effects
 -----------------
 
@@ -89,3 +91,21 @@ Next, create a RenderTexture, setting it to capture only the Red channel
 Now, attach the RenderTexture to the 2DSceneCapture, and attach the Camera to the correct water instance.
 
 You can now place the camera above where you want to apply the effect (pointing downwards), and adjust the Shore Depth Width and Extents to your liking.
+
+
+Buoyancy
+---------------
+Generally, you should have enough water probes positioned in such a way that they roughly cover the volume that the ships take up.
+
+For Example, this ship has 4 probes:
+
+
+![](/images/buoyancy.png)
+
+
+
+![](/images/boat.gif)
+
+
+
+To be affected correctly by the waves, make sure to tick Enable Wave Grid on the Water Object. [Click here to learn  more.](https://simul.co/real-time-rendering-news/truesky-volumetric-water-tutorials-and-tips/)

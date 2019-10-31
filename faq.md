@@ -23,6 +23,11 @@ Sections
 Setup
 =============
 
+Could not find or load the QT platform "window"
+------------------------------------------
+Some Plugins use an incompatible version of the Qt widget system, please deactivate these Plugins to enable trueSKY. Currently known Plugins that have conflict issues can be found [here](#plugin-conflicts).
+
+
 Getting "DllNotFoundException"
 ---------------------------------
 Windows User Account Control can give false positives when loading trueSKY, and stop it from being loaded. Lowering the notification level can help with this problem.
@@ -31,11 +36,6 @@ Windows User Account Control can give false positives when loading trueSKY, and 
 The trueSKY binary plugin is not working correctly
 ----------------------------------------
 Try deleting the plugin folder Engine/Plugins/TrueSkyPlugin/Content and the plugin binaries Engine/Binaries/ThirdParty/Simul. Then re-install the latest version of the plugin.
-
-
-Could not find or load the QT platform "window"
-------------------------------------------
-Some Plugins use an incompatible version of the Qt widget system, please deactivate these Plugins to enable trueSKY. Currently known Plugins that have conflict issues can be found [here](#plugin-conflicts).
 
 
 When packaging the game, I get errors and/or the sky is black.
@@ -64,7 +64,7 @@ Sky
 
 My Sky is Black in editor
 --------------
-Make sure your sky has an active sequence selected. 
+Make sure your trueSKY Actor has an active sequence selected. 
 
 The Sky updates with black spots!
 -------------------------------------
@@ -85,14 +85,18 @@ Try increasing the Maximum Resolution setting, in the details panel of the trueS
 Weather Effects and Celestial Objects
 =====================================
 
-I don't see any rain, and only rain streaks is working
+I don't see any rain
+-----------------------
+Make sure there are enough clouds above to produce rain!
+
+I don't see any rain, but rain streaks are working
 ----------------------------
 For rain and lightning to render in UE4, you need to have added trueSKY translucent as a post process material. As of September 2019, this has been made automatic, and added as part of initialization. Firstly, add a post process Volume to your scene, and make sure it is global by enabling "Unbound". Then go to the Rendering Features within the Post process Settings. Add a new element to the post process materials, and choose asset reference when prompted. Finally, add the trueSKY translucent material. If you do not have this material, you need locate the [trueSKY assets](#emptyfolder).
 
 
 Rain drops are large and blocky
 -------------------------------------
-Try lowering the rain drop size in the 3D cloud layer.
+Try lowering the rain drop size on the trueSKY Actor.
 
 I can't see Snow!
 ---------------------
@@ -106,7 +110,7 @@ This can happen when the camera is moving quite quickly. If you do not want to l
 
 The sun is too bright
 --------------------------
-Post process effects can cause issues with trueSKY. Try lowering the intensity of the volume's bloom setting.
+Post process effects can cause issues with trueSKY. Try lowering the intensity of the volume's bloom setting. Otherwise, there are settings within the Sky Layer settings. Alter the Irradiance or diameter. On the trueSKY Actor you can tick Max Sun Radiance. Then, when you change the Radiance the sun's size will adjust to produce the same amount of power with a limited Radiance.
 
 
 The sun/moon is too big/small
@@ -123,7 +127,7 @@ Try lowering the brightness power setting in the sky layer.
 
 Everything is Grey at night
 ---------------------------
-Deleting UE4's Atmospheric Fog should fix this issue. We do not recommend using UE4's atmospheric fog, as trueSKY produces it's own fog.
+Deleting UE4's Atmospheric Fog should fix this issue. We do not recommend using UE4's atmospheric fog, as trueSKY produces it's own fog. You can create fog from a Sky Keyframe.
 
 Objects are light too brightly, especially at night
 --------------------------------------------
