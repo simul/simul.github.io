@@ -6,7 +6,7 @@ weight: 0
 struct PrecipitationRegion
 ===
 
-| Include: | Clouds/BaseGpuCloudGenerator.h |
+| Include: | Clouds/CloudKeyframe.h |
 
 A structure defining an area where there is rain or snow.
 If regionalis false, it is everywhere.
@@ -30,6 +30,6 @@ Fields
 
 **rainEffectStrength**  < The radius of the region.
 
-**edge**  < The visual strength of the rain-streak effect when rendered.
+**edge**  < The visual strength of the virga effect when rendered.
 
 **base_radial_km**  < The edge between zero and one. Small numbers give a sharp edge to the region.

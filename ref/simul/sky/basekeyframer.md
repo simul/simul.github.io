@@ -18,7 +18,7 @@ Functions
 
 | void | [BumpKeyframe](#BumpKeyframe)(simul::sky::BaseKeyframe K, float time_scale) |
 | void | [DeleteKeyframe](#DeleteKeyframe)(int i) |
-| bool | [DeleteKeyframeByUniqueId](#DeleteKeyframeByUniqueId)(unsigned int id) |
+| bool | [DeleteKeyframeByUniqueId](#DeleteKeyframeByUniqueId)(simul::sky::uid id) |
 | std::vector | [GetAllModifiableKeyframes](#GetAllModifiableKeyframes)() |
 | int | [GetCurrentSubdivision](#GetCurrentSubdivision)() |
 | float | [GetDefaultFloat](#GetDefaultFloat)(char name) |
@@ -28,9 +28,9 @@ Functions
 | simul::sky::BaseKeyframe * | [GetKeyframe](#GetKeyframe)(int i) |
 | simul::sky::BaseKeyframe  const * | [GetKeyframe](#GetKeyframe)(int i) |
 | int | [GetKeyframeAtTime](#GetKeyframeAtTime)(double t) |
-| simul::sky::BaseKeyframe * | [GetKeyframeByUniqueId](#GetKeyframeByUniqueId)(unsigned int id) |
-| simul::sky::BaseKeyframe  const * | [GetKeyframeByUniqueId](#GetKeyframeByUniqueId)(unsigned int id) |
-| int | [GetKeyframeIndexByUniqueId](#GetKeyframeIndexByUniqueId)(unsigned int id) |
+| simul::sky::BaseKeyframe * | [GetKeyframeByUniqueId](#GetKeyframeByUniqueId)(simul::sky::uid id) |
+| simul::sky::BaseKeyframe  const * | [GetKeyframeByUniqueId](#GetKeyframeByUniqueId)(simul::sky::uid id) |
+| int | [GetKeyframeIndexByUniqueId](#GetKeyframeIndexByUniqueId)(simul::sky::uid id) |
 | float | [GetKeyframeTime](#GetKeyframeTime)(int i) |
 | simul::sky::uid | [GetKeyframeUidAfterTime](#GetKeyframeUidAfterTime)(double t) |
 | simul::sky::uid | [GetKeyframeUidAtOrBeforeTime](#GetKeyframeUidAtOrBeforeTime)(double t) |
@@ -60,7 +60,7 @@ If so, the specified keyframe is moved away.
 ### void DeleteKeyframe(int i)
 Delete the specified keyframe.
 <a name="DeleteKeyframeByUniqueId"></a>
-### bool DeleteKeyframeByUniqueId(unsigned int id)
+### bool DeleteKeyframeByUniqueId(simul::sky::uid id)
 Delete the keyframe if it exists (return true), else return false;
 <a name="GetAllModifiableKeyframes"></a>
 ### std::vector GetAllModifiableKeyframes()
@@ -90,13 +90,13 @@ Get a pointer to the i'th keyframe.
 ### int GetKeyframeAtTime(double t)
 Get the keyframe BEFORE or AT time t:
 <a name="GetKeyframeByUniqueId"></a>
-### simul::sky::BaseKeyframe * GetKeyframeByUniqueId(unsigned int id)
+### simul::sky::BaseKeyframe * GetKeyframeByUniqueId(simul::sky::uid id)
 Get a pointer to the keyframe with the specified id, or NULL if there is no such keyframe.
 <a name="GetKeyframeByUniqueId"></a>
-### simul::sky::BaseKeyframe  const * GetKeyframeByUniqueId(unsigned int id)
+### simul::sky::BaseKeyframe  const * GetKeyframeByUniqueId(simul::sky::uid id)
 Get a pointer to the keyframe with the specified id, or NULL if there is no such keyframe.
 <a name="GetKeyframeIndexByUniqueId"></a>
-### int GetKeyframeIndexByUniqueId(unsigned int id)
+### int GetKeyframeIndexByUniqueId(simul::sky::uid id)
 Get an index for the keyframe with the specified id, or NULL if there is no such keyframe.
 <a name="GetKeyframeTime"></a>
 ### float GetKeyframeTime(int i)

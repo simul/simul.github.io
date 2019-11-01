@@ -6,10 +6,8 @@ weight: 0
 class Quaterniond
 ===
 
-| Include: | Platform/CrossPlatform/Quaterniond.h |
+| Include: | Sky/BaseKeyframer.h |
 
-Quaterniond class to represent rotations.
-  
 
 
 Functions
@@ -17,9 +15,6 @@ Functions
 
 | simul::crossplatform::Quaterniond | [operator!](#operator!)() |
 | simul::crossplatform::Quaterniond  & | [operator=](#operator=)(simul::crossplatform::Quaterniond q) |
-
-Quaterniond class to represent rotations.
-  
 
 
 Functions
@@ -31,3 +26,8 @@ in the opposite direction.
 <a name="operator="></a>
 ### simul::crossplatform::Quaterniond  & operator=(simul::crossplatform::Quaterniond q)
 Assignment operator. Set this Quaterniond equal to q.
+
+Fields
+---
+
+**x**  Quaterniond class to represent rotations.

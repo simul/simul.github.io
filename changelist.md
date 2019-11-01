@@ -7,9 +7,17 @@ weight: 120
 
 Version HEAD
 ---
+Fri 01 Nov : Fixes to make sure Xbox GDK is supported  
+Fri 01 Nov : Disable SIMUL_PLUGIN_DEPLOY_ALL in Build.bat by default.  
+Fri 01 Nov : Fix lightning edit widget always appearing.  
+Fri 01 Nov : Add CloudKeyframe.h and cpp to PS4 project.  
+Fri 01 Nov : Chaning Images to images  
+Fri 01 Nov : Fix crashes from multiple sequencers open.  
+Fri 01 Nov : Improved memory tracking - possible fix for D3D12 issues.  
 Thu 31 Oct : Doc Fix  
 Thu 31 Oct : Changed default path for dllLocation.  
 Thu 31 Oct : Doc Fixes  
+Thu 31 Oct : Fix some Vulkan errors that occur in cloud window editor.  
 Thu 31 Oct : Removed unneeded window handle from UpdateUI().  
 Thu 31 Oct : adding images  
 Thu 31 Oct : Doc Fixes  
@@ -99,13 +107,5 @@ Fri 23 Aug : Fixes to Dx12 build and rearranging pixelformats.
 Thu 22 Aug : SimulQtWidgets and SequencerQtWidgets deployed via CMake to QTDIR/plugins/designer after build.  
 Wed 21 Aug : More Doc updating  
 Wed 21 Aug : Added template for cloud shape list in Cloud Layer Edit widget.  
-Mon 19 Aug : Small fix for water reflections  
-Fri 16 Aug : Updated Docs + removed hard coded directories from .markdoc  
-Thu 15 Aug : ADd DirectX11Sample to CMake.  
-Thu 15 Aug : Add Build_XboxOne.bat  
-Tue 13 Aug : Fix Vulkan build paths.  
-Mon 12 Aug : Build fix  
-Mon 12 Aug : Very temp possible fix for build issues  
-Sun 11 Aug : Fix build/exe path  
 
 <hr>

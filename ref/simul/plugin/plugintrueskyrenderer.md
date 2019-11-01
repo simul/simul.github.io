@@ -39,8 +39,8 @@ Functions
 | int | [GetLightningBolts](#GetLightningBolts)(simul::clouds::ExportLightningStrike s, int maxnum) |
 | int | [GetNumKeyframes](#GetNumKeyframes)(int layer) |
 | int | [GetNumStorms](#GetNumStorms)() |
-| unsigned int | [GetStormAtTime](#GetStormAtTime)(float t) |
-| unsigned int | [GetStormByIndex](#GetStormByIndex)(int i) |
+| simul::sky::uid | [GetStormAtTime](#GetStormAtTime)(float t) |
+| simul::sky::uid | [GetStormByIndex](#GetStormByIndex)(int i) |
 | char  const * | [GetString](#GetString)(char name, int len) |
 | bool | [GetWaterBool](#GetWaterBool)(char name, uint ID) |
 | float * | [GetWaterBuoyancyObjectResults](#GetWaterBuoyancyObjectResults)(int ID) |
@@ -174,10 +174,10 @@ Get the number of keyframes on a given layer
 ### int GetNumStorms()
 Get the total number of storms
 <a name="GetStormAtTime"></a>
-### unsigned int GetStormAtTime(float t)
+### simul::sky::uid GetStormAtTime(float t)
 Get a storm ID, if it exists, at time t
 <a name="GetStormByIndex"></a>
-### unsigned int GetStormByIndex(int i)
+### simul::sky::uid GetStormByIndex(int i)
 Get a storm ID with index i
 <a name="GetString"></a>
 ### char  const * GetString(char name, int len)

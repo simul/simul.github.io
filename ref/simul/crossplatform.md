@@ -30,7 +30,6 @@ Classes and Structures
 | struct [MouseCameraInput](crossplatform/mousecamerainput.html) |  |
 | struct [MouseCameraState](crossplatform/mousecamerastate.html) |  |
 | class [PlatformRendererInterface](crossplatform/platformrendererinterface.html) |  |
-| class [Quaterniond](crossplatform/quaterniond.html) |  |
 | struct [RasterizerDesc](crossplatform/rasterizerdesc.html) |  |
 | class [RenderDelegater](crossplatform/renderdelegater.html) |  |
 | struct [RenderStateDesc](crossplatform/renderstatedesc.html) |  |

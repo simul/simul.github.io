@@ -23,5 +23,7 @@ Functions
 Get query data. Returns true if successful, or false otherwise.
 Blocking queries will return false until they succeed.
 
-Variables
+Fields
 ---
+
+**renderPlatform**  Crossplatform GPU query class.

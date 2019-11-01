@@ -18,7 +18,7 @@ Functions
 
 | void * | [AllocateTracked](#AllocateTracked)(size_t nbytes, size_t align, char fn) |
 | void | [Deallocate](#Deallocate)(void ptr) |
-| void | [TrackVideoMemory](#TrackVideoMemory)(void ptr, int nbytes, char fn) |
+| void | [TrackVideoMemory](#TrackVideoMemory)(void ptr, size_t nbytes, char fn) |
 | void | [UntrackVideoMemory](#UntrackVideoMemory)(void ptr) |
 
 A pseudo allocator that tracks video memory but does not actually allocate it.
@@ -38,7 +38,7 @@ Allocate nbytesbytes of memory, aligned to alignand return a pointer to them.
 ### void Deallocate(void ptr)
 De-allocate the memory at address(requires that this memory was allocated with Allocate()).
 <a name="TrackVideoMemory"></a>
-### void TrackVideoMemory(void ptr, int nbytes, char fn)
+### void TrackVideoMemory(void ptr, size_t nbytes, char fn)
 Track (but don't allocate) nbytesbytes of memory.
 <a name="UntrackVideoMemory"></a>
 ### void UntrackVideoMemory(void ptr)

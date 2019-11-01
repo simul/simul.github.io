@@ -6,7 +6,7 @@ weight: 0
 struct CloudKeyframe
 ===
 
-| Include: | Clouds/BaseGpuCloudGenerator.h |
+| Include: | Clouds/CloudKeyframe.h |
 
 The keyframe structure for clouds, used by simul::clouds::CloudKeyframer.
   
@@ -38,7 +38,7 @@ Functions
 ---
 <a name="CloudKeyframe"></a>
 ###  CloudKeyframe()
-< Where rain/snow is found.
+< States for cloud volumes listed in the keyframer.
 <a name="GetFloat"></a>
 ### float GetFloat(char name)
 Get a float with the given, case-insensitive, name
@@ -180,3 +180,5 @@ Fields
 **origin**  < The strength of the fractal worley edge noise.
 
 **precipitationRegion**  < Origin on the globe for this layer.
+
+**cloudVolumeStates**  < Where rain/snow is found.
