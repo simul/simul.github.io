@@ -107,9 +107,7 @@
 
 .ue4-specific
 {
-    color: white;
-    background: #565bf9;
-    border: 2px;
+    border: 1px;
     border-style: solid;
     border-color: black;
 
@@ -117,9 +115,7 @@
 
 .unity-specific
 {
-    color: white;
-    background: #418a7f;
-    border: 2px;
+    border: 1px;
     border-style: solid;
     border-color: black;
 }
