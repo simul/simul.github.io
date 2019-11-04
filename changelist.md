@@ -7,6 +7,12 @@ weight: 120
 
 Version HEAD
 ---
+Sun 03 Nov : Fix bad Cmake, was only creating GFX.cso for Xbox.  
+Sun 03 Nov : Cmake build fixes, removed unwanted files.  
+Sun 03 Nov : Correct header includes for CMake.  
+Sun 03 Nov : Work on cloud volume selection and editing.  
+Sat 02 Nov : Fix error in DirectXTexD3D11.cpp  
+Sat 02 Nov : Add toolchain-Microsoft-GDK.cmake Improve cloud window editing.  
 Fri 01 Nov : Fixes to make sure Xbox GDK is supported  
 Fri 01 Nov : Disable SIMUL_PLUGIN_DEPLOY_ALL in Build.bat by default.  
 Fri 01 Nov : Fix lightning edit widget always appearing.  
@@ -101,11 +107,5 @@ Tue 27 Aug : API fixes for rendering with vertex/index buffers.
 Tue 27 Aug : const correctness in DX11 buffer classes.  
 Tue 27 Aug : Fix for GLSL/GLSL.json  
 Mon 26 Aug : Add const where possible with Index and Vertex buffers.  
-Fri 23 Aug : Fix deployment folders for shaderbin. API check for SFX-built shader effects: don't load Vulkan effects for DX12.  
-Fri 23 Aug : Small changes to the water  
-Fri 23 Aug : Fixes to Dx12 build and rearranging pixelformats.  
-Thu 22 Aug : SimulQtWidgets and SequencerQtWidgets deployed via CMake to QTDIR/plugins/designer after build.  
-Wed 21 Aug : More Doc updating  
-Wed 21 Aug : Added template for cloud shape list in Cloud Layer Edit widget.  
 
 <hr>
