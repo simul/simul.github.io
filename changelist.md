@@ -7,6 +7,9 @@ weight: 120
 
 Version HEAD
 ---
+Mon 04 Nov : Remove glfx  
+Mon 04 Nov : Remove nodeeditor  
+Mon 04 Nov : Fix missing Qt dependencies in TrueSkyUI_MD.  
 Sun 03 Nov : Fix bad Cmake, was only creating GFX.cso for Xbox.  
 Sun 03 Nov : Cmake build fixes, removed unwanted files.  
 Sun 03 Nov : Correct header includes for CMake.  
@@ -104,8 +107,5 @@ Mon 02 Sep : Minor fix for overridden functions
 Fri 30 Aug : Minor fix to copy-pasting cloud keyframes  
 Wed 28 Aug : Support BC compressed textures in D3D11.  
 Tue 27 Aug : API fixes for rendering with vertex/index buffers.  
-Tue 27 Aug : const correctness in DX11 buffer classes.  
-Tue 27 Aug : Fix for GLSL/GLSL.json  
-Mon 26 Aug : Add const where possible with Index and Vertex buffers.  
 
 <hr>
