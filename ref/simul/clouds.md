@@ -38,13 +38,13 @@ Classes and Structures
 Functions
 ---
 
-| vec3 | [TransformPosition](#TransformPosition)(simul::crossplatform::Quaterniond old_origin, simul::crossplatform::Quaterniond new_origin, vec3 old_pos) |
+| vec3 | [TransformPosition](#TransformPosition)(simul::crossplatform::Quaterniond old_origin, simul::crossplatform::Quaterniond new_origin, vec3 old_pos, double radius) |
 
 
 Functions
 ---
 <a name="TransformPosition"></a>
-### vec3 TransformPosition(simul::crossplatform::Quaterniond old_origin, simul::crossplatform::Quaterniond new_origin, vec3 old_pos)
+### vec3 TransformPosition(simul::crossplatform::Quaterniond old_origin, simul::crossplatform::Quaterniond new_origin, vec3 old_pos, double radius)
 Transform a position in a previous frame of reference into a new frame. Assumes Earth radius 6378km, origin at sea level.
 
 Typedefs

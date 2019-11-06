@@ -7,6 +7,10 @@ weight: 120
 
 Version HEAD
 ---
+Tue 05 Nov : Update splash for SkySequencer.  
+Tue 05 Nov : Relative quaternions for cloud volumes.  
+Mon 04 Nov : Volumes working in initial form.  
+Mon 04 Nov : Cloud volumes work in progress.  
 Mon 04 Nov : Remove glfx  
 Mon 04 Nov : Remove nodeeditor  
 Mon 04 Nov : Fix missing Qt dependencies in TrueSkyUI_MD.  
@@ -103,9 +107,5 @@ Mon 09 Sep : Added multiple binary paths for RenderPlatforms.
 Mon 09 Sep : CMake to use SIMUL_ variables : keep them better organized.  
 Wed 04 Sep : Doc Update  
 Mon 02 Sep : Fix for skyTimelineWidget  
-Mon 02 Sep : Minor fix for overridden functions  
-Fri 30 Aug : Minor fix to copy-pasting cloud keyframes  
-Wed 28 Aug : Support BC compressed textures in D3D11.  
-Tue 27 Aug : API fixes for rendering with vertex/index buffers.  
 
 <hr>

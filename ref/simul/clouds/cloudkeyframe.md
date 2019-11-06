@@ -17,6 +17,7 @@ Functions
 ---
 
 |  | [CloudKeyframe](#CloudKeyframe)() |
+| simul::crossplatform::Quaterniond | [GetAbsoluteOrientation](#GetAbsoluteOrientation)(simul::crossplatform::Quaterniond rel) |
 | float | [GetFloat](#GetFloat)(char name) |
 | int | [GetInt](#GetInt)(char name) |
 | simul::crossplatform::Quaterniond | [GetPrecipitationCentre](#GetPrecipitationCentre)() |
@@ -39,6 +40,9 @@ Functions
 <a name="CloudKeyframe"></a>
 ###  CloudKeyframe()
 < States for cloud volumes listed in the keyframer.
+<a name="GetAbsoluteOrientation"></a>
+### simul::crossplatform::Quaterniond GetAbsoluteOrientation(simul::crossplatform::Quaterniond rel)
+From a relative orientation, get the absolute orientation.
 <a name="GetFloat"></a>
 ### float GetFloat(char name)
 Get a float with the given, case-insensitive, name

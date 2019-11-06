@@ -32,6 +32,7 @@ Functions
 | simul::sky::BaseKeyframe  const * | [GetKeyframeByUniqueId](#GetKeyframeByUniqueId)(simul::sky::uid id) |
 | int | [GetKeyframeIndexByUniqueId](#GetKeyframeIndexByUniqueId)(simul::sky::uid id) |
 | float | [GetKeyframeTime](#GetKeyframeTime)(int i) |
+| simul::sky::uid | [GetKeyframeUid](#GetKeyframeUid)(simul::sky::BaseKeyframe k) |
 | simul::sky::uid | [GetKeyframeUidAfterTime](#GetKeyframeUidAfterTime)(double t) |
 | simul::sky::uid | [GetKeyframeUidAtOrBeforeTime](#GetKeyframeUidAtOrBeforeTime)(double t) |
 | int | [GetNumKeyframes](#GetNumKeyframes)() |
@@ -101,6 +102,9 @@ Get an index for the keyframe with the specified id, or NULL if there is no such
 <a name="GetKeyframeTime"></a>
 ### float GetKeyframeTime(int i)
 Time of a particular keyframe.
+<a name="GetKeyframeUid"></a>
+### simul::sky::uid GetKeyframeUid(simul::sky::BaseKeyframe k)
+Get the keyframe uid if present
 <a name="GetKeyframeUidAfterTime"></a>
 ### simul::sky::uid GetKeyframeUidAfterTime(double t)
 Get the keyframe After time t:
