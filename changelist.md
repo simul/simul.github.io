@@ -7,6 +7,10 @@ weight: 120
 
 Version HEAD
 ---
+Wed 06 Nov : Doc changes  
+Wed 06 Nov : Update 0 unreal index.md  
+Wed 06 Nov : Create 4 Performance.md  
+Wed 06 Nov : Fix broken spacing in registration box for sequencer.  
 Tue 05 Nov : Update splash for SkySequencer.  
 Tue 05 Nov : Relative quaternions for cloud volumes.  
 Mon 04 Nov : Volumes working in initial form.  
@@ -24,6 +28,8 @@ Fri 01 Nov : Fixes to make sure Xbox GDK is supported
 Fri 01 Nov : Disable SIMUL_PLUGIN_DEPLOY_ALL in Build.bat by default.  
 Fri 01 Nov : Fix lightning edit widget always appearing.  
 Fri 01 Nov : Add CloudKeyframe.h and cpp to PS4 project.  
+Fri 01 Nov : Docs and Removal of gifs temporarily  
+Fri 01 Nov : Doc fix  
 Fri 01 Nov : Chaning Images to images  
 Fri 01 Nov : Fix crashes from multiple sequencers open.  
 Fri 01 Nov : Improved memory tracking - possible fix for D3D12 issues.  
@@ -101,11 +107,5 @@ Tue 10 Sep : Long timeout for Sfx compiler calls.
 Tue 10 Sep : Fixed timeout behaviour launching compilers from Sfx.  
 Tue 10 Sep : .  
 Mon 09 Sep : Cmake tidy-up.  
-Mon 09 Sep : Fix Cmake fxc command usage.  
-Mon 09 Sep : Cmake now builds OpenGL shaders, which are packed as glsl into the sfxb output.  
-Mon 09 Sep : Added multiple binary paths for RenderPlatforms.  
-Mon 09 Sep : CMake to use SIMUL_ variables : keep them better organized.  
-Wed 04 Sep : Doc Update  
-Mon 02 Sep : Fix for skyTimelineWidget  
 
 <hr>

@@ -28,4 +28,4 @@ trueSKY pro licence is for large projects, where the budget is over £100,000. N
 
 Educational
 -------------------
-We offer free educational licences, for academic purposes. This license cannot be used commercially. For an academic License, please email us at [contact@simul.co](mailto:contact@simul.co).
+We offer free educational licences. These license cannot be used commercially. For more information, please email us at [contact@simul.co](mailto:contact@simul.co).

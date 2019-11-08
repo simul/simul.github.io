@@ -71,6 +71,20 @@ Shore Depth Width                                                               
 Shore Depth Extent                                                              |Depth of the Shore Depth Effects                                                                       |1000.0 to 10000.0
 
 
+Adding water your scene
+-----------------
+Implementing volumetric water into your scene is quick and easy thanks to trueSKY! The first thing you need to do is make sure you have initialized trueSKY in your scene, so you have a trueSKY Actor/Object in your scene. Then, enable "Render Water" on your trueSKY Object. This option decides if we should render any water at all, while each water instance has their own render option.
+
+Next, we need to add a trueSKY water instance. 
+
+<div class="unity-specific">
+Go to Gameobject->createOther->create trueSKY water Object
+</div>
+
+<div class="ue4-specific">
+Search for True Sky Water, and then drag it into your scene.
+</div>
+
 
 Shore Effects
 -----------------
@@ -101,10 +115,6 @@ For Example, this ship has 4 probes:
 
 
 ![](/images/buoyancy.png)
-
-
-
-![](/images/boat.gif)
 
 
 

@@ -59,7 +59,7 @@ The resolution of the water (Found in the trueSKY Actor Settings) is again an ob
 
 Screen Space Reflections
 -------------------------
-Screen-space Reflections on a boundless ocean can produce a large performance hit.
+Screen-space Reflections on a boundless ocean can produce a large performance hit. 
 
 Profile Buffer Resolution
 -----------------------

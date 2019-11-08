@@ -43,6 +43,6 @@ God Rayss
 {:.object}
 Variable                                                                        |       Definition                                              |       Value
 --------------                                                          |--------------                                         |--------------
-Crepuscular Ray (God-Rays) Strength                     |Strength of god-ray effect.            | 0.0 to 1.0. 
-Crepuscular Grid                                                        |Grid size for God-rays. X, Y, Z.       | 8 to 256.
+Crepuscular Ray (God-Rays) Strength                     |Strength of god-ray effect.            | 0.0 to 1.0 
+Crepuscular Grid                                                        |Grid size for God-rays. X, Y, Z.       | 8 to 256
 

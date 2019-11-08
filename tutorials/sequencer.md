@@ -60,7 +60,7 @@ There are two types of layers in trueSKY: Sky and clouds. Layers store their res
 <sup>Image of a Sky layer and a cloud layer</sup>
 
 
-Although there are only 2 types of layers, you can have numerous clouds layers. There can only be one Sky layer, as there can only be one Sky. Allowing for multiple cloud layers allows different cloud formations to appear at the same time. To add a cloud layer, simply right click anywhere in the timeline, and select "Add cloud layer". You can add as many cloud layers as needed, but the recommended limit is 5.
+Although there are only 2 types of layers, you can have numerous clouds layers. There can only be one Sky layer, as there can only be one Sky. Allowing for multiple cloud layers allows different cloud formations to appear at the same time. **To add a cloud layer**, right click anywhere in the timeline, and select "Add cloud layer". You can add as many cloud layers as needed, but the recommended limit is 5. Performance cost per layer is minimal.
 
 ![](/images/unreal/manylayers.png)
 

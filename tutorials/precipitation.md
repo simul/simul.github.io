@@ -22,11 +22,11 @@ Variable                                                                        
 Regional                                                                                        |Whether rain/snow falls only in specified region, or globally.                                                                                                 |Bool.
 Wind affects position                                                           |If the wind should affect the regional area.                                                                                                                                   | Bool.
 Radius (km)                                                                                     |Radius of precipitation region.                                                                                                                                                                |Between 0.1 and 1000
-Edge                                                                                            |
+Edge                                                                                            |How strong the cutoff is at the edge of the precipitation region.                                                                                              |0.0 to 1.0
 Rain - Snow                                                                                     |How the Precipitation will act. 0 = rain, 1 = snow, values in between will share characteristics.                              |0.0 to 1.0 
-Strength                                                                                        |Amount of rain/snow.                                                                                                                                                                                   |0.0 to 1.0.
+Strength                                                                                        |Amount of rain/snow.                                                                                                                                                                                   |0.0 to 1.0
 Rain Streaks                                                                            |Visual strength of rain streak effect.                                                                                                                                                 |0.0 to 1.0
-Wind Effect                                                                             |How much precipitation is affected by wind.                                                                                                                                    |0.0 to 1.0.
+Wind Effect                                                                             |How much precipitation is affected by wind.                                                                                                                                    |0.0 to 1.0
 
 {:.object}
 Variable                                                                                        |       Definition                                                                                                                                                                                                      |       Value
@@ -44,7 +44,7 @@ Precipitation Threshold Km                                                      
 Rain Cubemap                                                                            |Cubemap to be used to light the Rain                                                                                                                                                   |Cubemap
 Velocity Streaks                                                                        |If the raindrop shape is altered by their velocity.                                                                                                                    |Bool
 Simulation Time                                                                         |If time progression should be taken into account for rain fall.                                                                                                |Bool
-Rain Near Threshold                                                                     |Draw no rain closer than this distance.                                                                                                                                                |0.01 t0 5
+Rain Near Threshold                                                                     |Draw no rain closer than this distance.                                                                                                                                                |0.01 t0 0.5
 Rain Mask Scene Capture 2D                                                      |2D Screen capture to limit rain below surfaces. Lean more about this [here](#rain-indoors).                                    |Scene Capture 2D
 Rain Mask Width                                                                         |Width of the Rain Mask                                                                                                                                                                                 |100 to 50000
 Rain Mask Depth Extent                                                          |Height of the Rain Mask                                                                                                                                                                                |100 to 100000
@@ -60,6 +60,8 @@ There is currently an issue with multiple layers and precipitation. If you want 
 
 No Rain?
 ========
+
+{:.ue4-specific}
 Double check you have trueSKY Translucent as a [Post Process.](/faq.html#postprocess) 
 
 Try starting the game

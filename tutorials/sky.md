@@ -21,8 +21,8 @@ Sky
 Variable                                                                                |       Definition                                                                                                                                                                                                                                              |       Value
 --------------                                                                  |--------------                                                                                                                                                                                                                                         |--------------
 Sea Level Deg. C                                                                |For infra-red rendering.                                                                                                                                                                                                                       |-273.0 to 1000
-Zenith                                                                                  |Colour of the Zenith (Sky above you). Make sure to enable Store as Colours to be able to adjust.                                                                       |RGB 
-Horizon                                                                                 |Colour of the horizon (Sky around you). Make sure to enable Store as Colours to be able to adjust.                                                                     |RGB 
+Zenith                                                                                  |Colour of the Zenith (Sky above you). See [Sky Colours](#sky-colours)                                                                                                                          |RGB 
+Horizon                                                                                 |Colour of the Horizon (Sky around you). See [Sky Colours](#sky-colours)                                                                                                                        |RGB 
 
 
 {:.layer}
@@ -59,9 +59,9 @@ Sun
 =======
 
 {:.keyframe}
-Variable                                                                                |       Definition                                                                                      |       Value
---------------                                                                  |--------------                                                                                 |--------------
-Automatic Sun Position                                                  |Whether to calculate sun position from date and time.  |Bool.
+Variable                                                                                |       Definition                                                                                                                                                                                                                                              |       Value
+--------------                                                                  |--------------                                                                                                                                                                                                                                         |--------------
+Automatic Sun Position                                                  |Whether to calculate sun position from date and time.                                                                                                                                                          |Bool
 
 
 {:.layer}
@@ -205,6 +205,11 @@ k->haze=20.f;
 
 This works just as well with linked as with unlinked times.
 
+Sky Colours
+-----------------
+You can manually set the colour of the horizon or the upper sky(Zenith) using the Sky Keyframes. **Enable Store as Colours** and then set your colours manually. This is a great way to create unique, alien landscapes.
+
+Make sure to apply the colour to all your keyframes if you want it to be throughout the whole day cycle, or set different colours for different times, and watch as the Sky blends as time progresses.
 
 
 

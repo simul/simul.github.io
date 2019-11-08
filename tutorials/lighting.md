@@ -30,7 +30,7 @@ Distance Range                                                          |Maximum
 Variable                                                                        |       Definition                                                                                                                                                                                                                                                      |       Value
 --------------                                                          |--------------                                                                                                                                                                                                                                                 |--------------
 Light source                                                            |Which directional light source trueSKY should control                                                                                                                                                                  |Directional Light
-Drive Light Direction                                           |If trueSKY should alter the angle of the Directional Light based on the movement of the Sun and Moon.                                                                  |Bool.
+Drive Light Direction                                           |If trueSKY should alter the angle of the Directional Light based on the movement of the Sun and Moon.                                                                  |Bool
 Light Units                                                             |Radiometric or Photometric Light Units. Use Radiometric unless you understand Unreal's Exposure settings.[Light Units](#light-units)   |Radiometric or Photometric
 Brightness                                                                      |A Brightness Multiplier applied to the Sun, Moon and Sky.                                                                                                                                                              |0.1 to 10.0
 Gamma                                                                           |Gamma adjustment value.                                                                                                                                                                                                                                |0.0 to 10.0                                    
@@ -51,14 +51,14 @@ This applies a constant ambient light over the whole scene. Check out [Unreal's 
 {:.object}
 Variable                                                                        |       Definition                                                                                                                                                                                              |       Value
 --------------                                                          |--------------                                                                                                                                                                                         |--------------
-Update Frequency                                                        |How often the trueSKYLight will update, in frames. 1 means every frame, two mean every other frame etc.        |1 to 100.
-Blend                                                                           |How much to blend new updates with previous values.                                                                                                            |0 to 1.
-Amortization                                                            |How much to Amortize rendering.                                                                                                                                                        |1 to 8.
-All Faces                                                                       |Whether to fill all cube maps faces on every update.                                                                                                           |Bool.
-All Mips                                                                        |Whether to fill all mipmaps on every update.                                                                                                                           |Bool.
-Diffuse Multiplier                                                      |A multiplier for the diffuse illumination from the skylight.                                                                                           |0.0 to 20.0.
-Specular Multiplier                                                     |A multiplier for the specular reflections from the skylight.                                                                                           | 0.0 to 20.0.
-Gamma Correction                                                        |A gamma adjustment to apply.                                                                                                                                                           |0.0 to 20.0.
+Update Frequency                                                        |How often the trueSKYLight will update, in frames. 1 means every frame, two mean every other frame etc.        |1 to 100
+Blend                                                                           |How much to blend new updates with previous values.                                                                                                            |0 to 1
+Amortization                                                            |How much to Amortize rendering.                                                                                                                                                        |1 to 8
+All Faces                                                                       |Whether to fill all cube maps faces on every update.                                                                                                           |Bool
+All Mips                                                                        |Whether to fill all mipmaps on every update.                                                                                                                           |Bool
+Diffuse Multiplier                                                      |A multiplier for the diffuse illumination from the skylight.                                                                                           |0.0 to 20.0
+Specular Multiplier                                                     |A multiplier for the specular reflections from the skylight.                                                                                           |0.0 to 20.0
+Gamma Correction                                                        |A gamma adjustment to apply.                                                                                                                                                           |0.0 to 20.0
 
 
 <hr>
@@ -160,7 +160,6 @@ Transparency
 -------------
 
 <div class="ue4-specific">
-Unreal
 In a material that uses transparency, insert the trueSKYTransparencyModifier function between the inputs and the final output node:
 
 ![](/images/unreal/Transparency.png)
