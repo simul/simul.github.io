@@ -9,7 +9,6 @@ class SkyKeyframer
 | Include: | Sky/BaseAtmosphericsRenderer.h |
 
 
-[simul::base::Referenced](../base/referenced.html)
 [simul::sky::BaseKeyframer](basekeyframer.html)
 [simul::sky::BaseSkyInterface](baseskyinterface.html)
 
@@ -53,7 +52,6 @@ Functions
 
 Base Classes
 ---
-[simul::base::Referenced](../base/referenced.html)
 [simul::sky::BaseKeyframer](basekeyframer.html)
 [simul::sky::BaseSkyInterface](baseskyinterface.html)
 

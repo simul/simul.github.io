@@ -40,7 +40,7 @@ Fields
 
 **RaytraceMode**  < Minimum grid height for raytracing.
 
-**DefaultNumSlices**  < Hint for the renderer on how to raytrace these clouds.
+**lightingMode**  < Hint for the renderer on how to raytrace these clouds.
 
 **IndirectLight**  < The amount of direct light to be used for rendering.
 

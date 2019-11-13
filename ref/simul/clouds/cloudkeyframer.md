@@ -71,7 +71,7 @@ Functions
 | void | [SetRecalculate](#SetRecalculate)() |
 | void | [SetSkyInterface](#SetSkyInterface)(simul::sky::BaseSkyInterface si) |
 | void | [SetUniformKeyframes](#SetUniformKeyframes)(int StepsPerDay, float range) |
-| void | [SetVolume](#SetVolume)(simul::sky::uid id, simul::clouds::CloudVolumeType type, simul::crossplatform::Quaterniond orig, vec3 scale, vec2 rake) |
+| void | [SetVolume](#SetVolume)(simul::sky::uid id, simul::clouds::CloudVolumeType type, simul::crossplatform::Quaterniond orig, vec2 lscale, vec2 uscale, vec2 rake, vec2 height_range_km) |
 | void | [Synchronize](#Synchronize)() |
 | void | [Update](#Update)(float new_time) |
 | unsigned int | [GetOffsetChecksum](#GetOffsetChecksum)() |
@@ -245,7 +245,7 @@ Set the sky - this is used to light the clouds over time.
 Apply the cloud's properties to all keyframes.
 Create a number of evenly spaced keyframes.
 <a name="SetVolume"></a>
-### void SetVolume(simul::sky::uid id, simul::clouds::CloudVolumeType type, simul::crossplatform::Quaterniond orig, vec3 scale, vec2 rake)
+### void SetVolume(simul::sky::uid id, simul::clouds::CloudVolumeType type, simul::crossplatform::Quaterniond orig, vec2 lscale, vec2 uscale, vec2 rake, vec2 height_range_km)
 Set the properties of a custom cloud volume:
 <a name="Synchronize"></a>
 ### void Synchronize()

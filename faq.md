@@ -27,6 +27,10 @@ Could not find or load the QT platform "window"
 ------------------------------------------
 Some Plugins use an incompatible version of the Qt widget system, please deactivate these Plugins to enable trueSKY. Currently known Plugins that have conflict issues can be found [here](#plugin-conflicts).
 
+"createfile2 not found in kernel32.dll"
+-----------------------------------------
+This will be due to Windows 7. Unforunately, we do not support Windows 7 anymore. You will need to upgrade your OS to be able to use trueSKY.
+
 
 Getting "DllNotFoundException"
 ---------------------------------

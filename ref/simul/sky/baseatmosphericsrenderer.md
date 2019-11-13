@@ -11,7 +11,6 @@ class BaseAtmosphericsRenderer
 The graphics API-independent base class for atmospherics renderers, which draw distance fades, aerial perspective, fog and so on.
   
 
-[simul::base::Referenced](../base/referenced.html)
 
 Functions
 ---
@@ -32,10 +31,6 @@ Functions
 The graphics API-independent base class for atmospherics renderers, which draw distance fades, aerial perspective, fog and so on.
   
 
-
-Base Classes
----
-[simul::base::Referenced](../base/referenced.html)
 
 Functions
 ---
