@@ -7,9 +7,12 @@ weight: 120
 
 Version HEAD
 ---
+Wed 13 Nov : Moved Unreal performance  
+Wed 13 Nov : Fixed Login issues. Update Docs.  
 Tue 12 Nov : New lighting: incremental cloud lighting.  
 Tue 12 Nov : Execute deferred rendering for editor if set.  
 Mon 11 Nov : Cloud volume improvements: UI more functional.  
+Mon 11 Nov : Fix Blueprint Crash. Initial fix for registration.  
 Mon 11 Nov : Changed to using a precipitation volume texture. Raytrace function updated to the volume texture. Debug has new technique trace_volume  
 Mon 11 Nov : Fix PlatformStructuredBuffer errors in D3D12.  
 Mon 11 Nov : FAQ update for Windows 7  
@@ -104,8 +107,5 @@ Fri 04 Oct : PreprocessLexer and PreprocessParser were renamed to PreprocessorLe
 Sun 29 Sep : Fail to blank texture if compressed format not supported.  
 Thu 26 Sep : Minor fixes and cleanup  
 Thu 26 Sep : Essential RenderPlatform fix for D3D12.  
-Wed 25 Sep : Add interleaved option to layoutdesc.  
-Tue 24 Sep : Fix D3D11 load binary shader.  
-Tue 24 Sep : Shaderbinarypaths as list.  
 
 <hr>

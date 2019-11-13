@@ -63,6 +63,10 @@ My trueSKY folder in the content browser is empty
 {:.ue4-specific}
 You can find the contents by going to "UE4Engine/Engine/Plugins/TrueSkyPlugin/Content". We don't copy the files in to save you having the files in every project. If you want to copy them over that is fine, but you will need to adjust the trueSKY actor's and our material function references if you use them from a different location. 
 
+I Can't Enable Water!
+----------------------
+This will be because you are using our legacy versions (4.1a), which does not support our Water. Please update to 4.2.
+
 Sky
 ============
 

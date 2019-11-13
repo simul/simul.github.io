@@ -10,6 +10,7 @@ weight: 90
 
 Water
 ====================
+**Water is only available in trueSKY 4.2**
 
 Realtime, Volumetric Water is one of the latest features to be brought to trueSKY, bringing the high quality we produce in the sky to the ground. Just like the Sky, we have an array of customisation for the water.
 

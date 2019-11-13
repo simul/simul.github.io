@@ -14,6 +14,28 @@ We have worked hard to make sure trueSKY will run on many different architecture
 
 Use the Blueprint function GetProfilingText to get GPU and CPU timing numbers for trueSKY as a tree. trueSKY performance is highly dependent on your choice of settings. Once you have good settings for a given target hardware setup, performance will be consistent - i.e. there won’t be spikes or hitches. For PC, you may want to make some of these settings controllable for the end user. For console hardware, it is usually best to choose the settings based on your target GPU time for skies, then lock them down.
 
+<div class="ue4-specific">
+
+Enabling Profiling
+================
+
+trueSKY for Unreal has a built-in GPU and CPU profiler that shows detailed performance information. To enable it, use the console command
+
+r.truesky.profiling 1
+
+Profiling is displayed as a tree. You can append the maximum detail levels for the GPU and CPU to the command, e.g.
+
+r.truesky.profiling 1 7 5
+
+This will show a profiling tree seven levels deep for the GPU, and five levels deep for the CPU.
+
+To output the profiling data to the Log, use
+
+trueskyprofileframe
+
+Depending on the output, you may want to adjust different trueSKY parameters for optimal performance.
+
+</div>
 
 High Cost Settings
 ==================
