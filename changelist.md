@@ -7,6 +7,9 @@ weight: 120
 
 Version HEAD
 ---
+Wed 13 Nov : Xbox build fix.  
+Wed 13 Nov : Fix some Vulkan warnings.  
+Wed 13 Nov : Test for Wayne  
 Wed 13 Nov : Moved Unreal performance  
 Wed 13 Nov : Fixed Login issues. Update Docs.  
 Tue 12 Nov : New lighting: incremental cloud lighting.  
@@ -104,8 +107,5 @@ Fri 11 Oct : Fixed shaderbin not being copied from the build directory
 Fri 11 Oct : Fix Unity Sequencer UI disappearance.  
 Mon 07 Oct : Fix Sfx build for PS4.  
 Fri 04 Oct : PreprocessLexer and PreprocessParser were renamed to PreprocessorLexer and PreprocessorParser a while back.  
-Sun 29 Sep : Fail to blank texture if compressed format not supported.  
-Thu 26 Sep : Minor fixes and cleanup  
-Thu 26 Sep : Essential RenderPlatform fix for D3D12.  
 
 <hr>

@@ -20,7 +20,7 @@ Indie
 -------------
 Our Indie licence is for projects with less than £100,000 budget. With this licence, you will have lifetime access to all trueSKY Plugins, products and tool sets. This licence requires either a one time payment of £100, or 10 monthly payments of £15 (totalling £150). Either payment option will give you immediate access to trueSKY and all of its features. You can purchase an Indie Licence [Here](https://simul.co/pricing/).
 
-See our [Indie Licence Agreement](iula)
+See our [Indie Licence Agreement.](iula)
 
 Pro
 ---------------
