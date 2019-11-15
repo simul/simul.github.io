@@ -7,6 +7,8 @@ weight: 120
 
 Version HEAD
 ---
+Thu 14 Nov : Fix including wrong qt libs.  
+Thu 14 Nov : Xbox build fix.  
 Wed 13 Nov : Xbox build fix.  
 Wed 13 Nov : Fix some Vulkan warnings.  
 Wed 13 Nov : Test for Wayne  
@@ -105,7 +107,5 @@ Fri 11 Oct : Created an UpdateUI function for Unity to call, for processing of Q
 Fri 11 Oct : Camera constants changes restored.  
 Fri 11 Oct : Fixed shaderbin not being copied from the build directory  
 Fri 11 Oct : Fix Unity Sequencer UI disappearance.  
-Mon 07 Oct : Fix Sfx build for PS4.  
-Fri 04 Oct : PreprocessLexer and PreprocessParser were renamed to PreprocessorLexer and PreprocessorParser a while back.  
 
 <hr>
