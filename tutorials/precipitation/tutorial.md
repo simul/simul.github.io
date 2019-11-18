@@ -28,14 +28,14 @@ To move a precipitation region, click on the cloud window to select the window f
 
 To learn more about the Cloud Window, please view this [tutorial](/tutorials/sequencer.html#cloud-window).
 
-![](/images/Precipitation/cloudWindowPrecipitationRegions.png)
+![](/images/precipitation/cloudWindowPrecipitationRegions.png)
 
 
 Cloud Map Texture
 -----------------
 A cloud map texture can be added to a cloud layer via its Properties window. This acts as a mask for both the cloud and precipitation generation. In terms of precipitation, this mask restricts the area in which precipitation can fall. This mask works in conjunction with the precipitation region to refine further shape of the precipitation volumes.
 
-![](/images/Precipitation/RainOverlayWithCloudMasks.png)
+![](/images/precipitation/RainOverlayWithCloudMasks.png)
 
 
 For another brief tutorial head over to [our blog](https://simul.co/real-time-rendering-news/precipitation-and-storms-truesky).

@@ -24,28 +24,28 @@ Precipitation can be attached to any cloud keyframe and it will produce precipit
 
 No Precipitation?
 -----------------
-1. Check you are editing the correct keyframe on the currently active sequence. In order see your edits as you procede, ensure the time is correctly set in the timeline and that the simulation is running.
+Check you are editing the correct keyframe on the currently active sequence. In order see your edits as you procede, ensure the time is correctly set in the timeline and that the simulation is running.
 
-2. Ensure there are enough cloud above the viewer to produce precipitation. If there's no clouds, no precipitation can occur.
+Ensure there are enough cloud above the viewer to produce precipitation. If there's no clouds, no precipitation can occur.
 
 {:.ue4-specific}
-3. Double check you have trueSKY Translucent as a [Post Process.](/faq.html#postprocess) 
+Double check you have trueSKY Translucent as a [Post Process.](/faq.html#postprocess) 
 
 Precipitation under cover?
 --------------------------
 
 <div class="ue4-specific">
 
-1. To prevent precipitation from falling in covered areas, create a SceneCapture2D actor and give it a texture target that contains only a red channel; e.g. RainDepthRT from the trueSKY content. Make the Capture Source "SceneDepth in R". You don't need to enable "Capture Every Frame" unless you expect the geometry to change.
+* To prevent precipitation from falling in covered areas, create a SceneCapture2D actor and give it a texture target that contains only a red channel; e.g. RainDepthRT from the trueSKY content. Make the Capture Source "SceneDepth in R". You don't need to enable "Capture Every Frame" unless you expect the geometry to change.
 
 ![](/images/unreal/scenecapture2dProperties.png)
 
 
-2. Rotate the SceneCapture2D actor to face downwards.
+* Rotate the SceneCapture2D actor to face downwards.
 
-3.On the trueSKY Sequence Actor, assign the SceneCapture2D actor to the Rain Mask SceneCapture property. Now precipitation will only appear where there is no cover above the SceneCapture actor.
+* On the trueSKY Sequence Actor, assign the SceneCapture2D actor to the Rain Mask SceneCapture property. Now precipitation will only appear where there is no cover above the SceneCapture actor.
 
-![](/images/unreal/PrecipitationProperties.png)
+![](/images/unreal/precipitationProperties.png)
 
 
 </div>

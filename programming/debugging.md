@@ -77,7 +77,7 @@ Composition
 
 Rain Overlay
 ------------------------
-![](/images/Precipitation/RainOverlay.png)
+![](/images/precipitation/RainOverlay.png)
 
 
 3D cloud Textures

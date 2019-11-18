@@ -7,6 +7,9 @@ weight: 120
 
 Version HEAD
 ---
+Mon 18 Nov : Renamed precipitation folder to lowercase  
+Mon 18 Nov : Update to Help/tutorials/precipitation/3 how it works.md  
+Mon 18 Nov : Doc Fixes  
 Mon 18 Nov : Doc layout fix  
 Mon 18 Nov : Minor update to precipitation documentation.  
 Mon 18 Nov : Add files after merge: Help/tutorials/precipitation/3 how it works.md  
@@ -104,8 +107,5 @@ Thu 24 Oct : Image Fix for Docs
 Thu 24 Oct : Doc Updates  
 Thu 24 Oct : Doc Updates  
 Thu 24 Oct : Added cloud masks to Cloud Layer Precipitation shader. DrawTexture() now supports Texture2DArrays  
-Thu 24 Oct : Doc Update  
-Tue 22 Oct : Undo works again in Sky Sequencer.  
-Tue 22 Oct : Fix sky keyframe sequence being set to invalid values on undo.  
 
 <hr>
