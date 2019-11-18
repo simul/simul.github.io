@@ -7,6 +7,10 @@ weight: 120
 
 Version HEAD
 ---
+Mon 18 Nov : Doc layout fix  
+Mon 18 Nov : Minor update to precipitation documentation.  
+Mon 18 Nov : Add files after merge: Help/tutorials/precipitation/3 how it works.md  
+Mon 18 Nov : Update to precipitation documentation.  
 Sun 17 Nov : Shader projects only depend on Sfx for Win/Lin.  
 Sun 17 Nov : .  
 Sun 17 Nov : Fix Sfx for GLSL texture size queries where texture is a parameter rather than global.  
@@ -103,9 +107,5 @@ Thu 24 Oct : Added cloud masks to Cloud Layer Precipitation shader. DrawTexture(
 Thu 24 Oct : Doc Update  
 Tue 22 Oct : Undo works again in Sky Sequencer.  
 Tue 22 Oct : Fix sky keyframe sequence being set to invalid values on undo.  
-Sat 19 Oct : Add missing shaders in installers.  
-Fri 18 Oct : Fix Crash with sequencer  
-Fri 18 Oct : Initial fix for Rain Map and Multi Cloud Layer issue.  
-Thu 17 Oct : Fix Xbox error by reverting to original. However, whatever this change was put in to fix will presumably still be broken.  
 
 <hr>

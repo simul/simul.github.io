@@ -22,7 +22,7 @@ Below you will find links to the different aspects of trueSKY, with each section
 
 * [**Lighting**](lighting.html)                                                 - Editing the directional and trueSKY light in the scene.
 
-* [**Precipitation**](precipitation.html)                               - Cloud precipitation from rain to snow.
+* [**Precipitation**](precipitation/index.html)                         - Cloud precipitation from rain to snow.
 
 * [**Storms**](storms.html)                                                             - Examples of large storms, producing thunder and lightning.
 

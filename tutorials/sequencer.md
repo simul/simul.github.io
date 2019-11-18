@@ -160,7 +160,7 @@ The Cloud Window is a top down view of the world, where you can see the current 
 
 <sup>Make sure to tick this if you want to move the clouds from the Cloud Window</sup>
 
-If you select a keyframe, the layer width is represented by a blue box, whereas a blue circle represents the [precipitation radius](precipitation.html#radius).
+If you select a keyframe, the layer width is represented by a blue box, whereas a blue circle represents the precipitation radius. To find out more about how to use the Cloud Window to control precipitation, please view this [tutorial](/tutorials/precipitation/tutorial.html).
 
 ![](/images/unreal/WorldGrid.png)
 
