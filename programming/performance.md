@@ -101,6 +101,6 @@ With trueSKY, you can create an Cubemap of the sky. While you will lose some vis
 This is currently done through a blueprint, RendertoCubeMap. Select your cubemap resolution, and the cubemap you want to draw to.
 
 Known Performance Issues
-========================
+-------------------------
 We are currently aware of an issue with older graphics cards, which in full-screen can cause severe frame drops. We are working on a solution, which should boost performance for all graphics cards.
 </div>

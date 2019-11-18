@@ -25,7 +25,7 @@ Functions
 | simul::clouds::CloudKeyframer::Storm * | [AddStorm](#AddStorm)(float t0, float t1, vec2 centre_km, float r_km) |
 | void | [DeleteKeyframe](#DeleteKeyframe)(int i) |
 | void | [DeleteStorm](#DeleteStorm)(int i) |
-| void | [DeleteStormByUniqueId](#DeleteStormByUniqueId)(unsigned int uid) |
+| void | [DeleteStormByUniqueId](#DeleteStormByUniqueId)(simul::sky::uid uid) |
 | void | [ForceRelight](#ForceRelight)() |
 | simul::clouds::CloudInterface * | [GetCloudInterface](#GetCloudInterface)() |
 | float | [GetDefaultFloat](#GetDefaultFloat)(char name) |
@@ -47,8 +47,8 @@ Functions
 | simul::clouds::CloudKeyframer::Storm  const * | [GetStorm](#GetStorm)(float t) |
 | simul::clouds::CloudKeyframer::Storm * | [GetStorm](#GetStorm)(float t) |
 | simul::clouds::CloudKeyframer::Storm * | [GetStorm](#GetStorm)(int i) |
-| simul::clouds::CloudKeyframer::Storm * | [GetStormByUniqueId](#GetStormByUniqueId)(unsigned int uid) |
-| simul::clouds::CloudKeyframer::Storm  const * | [GetStormByUniqueId](#GetStormByUniqueId)(unsigned int uid) |
+| simul::clouds::CloudKeyframer::Storm * | [GetStormByUniqueId](#GetStormByUniqueId)(simul::sky::uid uid) |
+| simul::clouds::CloudKeyframer::Storm  const * | [GetStormByUniqueId](#GetStormByUniqueId)(simul::sky::uid uid) |
 | unsigned int | [GetSubdivisionChecksum](#GetSubdivisionChecksum)() |
 | int3 | [GetTextureSizes](#GetTextureSizes)() |
 | simul::math::Vector3 | [GetWindOffsetKm](#GetWindOffsetKm)() |
@@ -100,7 +100,7 @@ Remove a keyframe
 ### void DeleteStorm(int i)
 Remove the storm with index i.
 <a name="DeleteStormByUniqueId"></a>
-### void DeleteStormByUniqueId(unsigned int uid)
+### void DeleteStormByUniqueId(simul::sky::uid uid)
 Remove the storm with unique id uid.
 <a name="ForceRelight"></a>
 ### void ForceRelight()
@@ -170,10 +170,10 @@ Get the storm, if any, that is active at time t.
 ### simul::clouds::CloudKeyframer::Storm * GetStorm(int i)
 Return the storm with index i.
 <a name="GetStormByUniqueId"></a>
-### simul::clouds::CloudKeyframer::Storm * GetStormByUniqueId(unsigned int uid)
+### simul::clouds::CloudKeyframer::Storm * GetStormByUniqueId(simul::sky::uid uid)
 Return the storm with unique identifier uid.
 <a name="GetStormByUniqueId"></a>
-### simul::clouds::CloudKeyframer::Storm  const * GetStormByUniqueId(unsigned int uid)
+### simul::clouds::CloudKeyframer::Storm  const * GetStormByUniqueId(simul::sky::uid uid)
 Return the storm with unique identifier uid.
 <a name="GetSubdivisionChecksum"></a>
 ### unsigned int GetSubdivisionChecksum()

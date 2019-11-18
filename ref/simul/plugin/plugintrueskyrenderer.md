@@ -22,7 +22,7 @@ Functions
 | void | [CloudLineQuery](#CloudLineQuery)(int id, float startpos, float endpos, LineQueryResult res) |
 | void | [CloudSphereInteraction](#CloudSphereInteraction)(int id, float pos, float vel, float radius) |
 | bool | [CreateBoundedWaterObject](#CreateBoundedWaterObject)(uint ID, simul::math::Vector3 dimension, simul::math::Vector3 location) |
-| void | [DeleteKeyframe](#DeleteKeyframe)(unsigned int uid) |
+| void | [DeleteKeyframe](#DeleteKeyframe)(simul::sky::uid uid) |
 | void | [ExportCloudLayer](#ExportCloudLayer)(char filenameUtf8) |
 | void | [Get](#Get)(long long Enum, simul::base::Variant v) |
 | bool | [GetBool](#GetBool)(char name) |
@@ -33,9 +33,9 @@ Functions
 | float | [GetFloatAtPosition](#GetFloatAtPosition)(simul::plugin::FloatAtPosition f, float pos, int uid) |
 | float | [GetFloatAtPosition](#GetFloatAtPosition)(char name, float pos) |
 | int | [GetInt](#GetInt)(char name, int numparams, simul::base::Variant params) |
-| unsigned int | [GetInterpolatedCloudKeyframeUniqueId](#GetInterpolatedCloudKeyframeUniqueId)(int layer) |
-| unsigned int | [GetInterpolatedSkyKeyframeUniqueId](#GetInterpolatedSkyKeyframeUniqueId)() |
-| unsigned int | [GetKeyframeByIndex](#GetKeyframeByIndex)(int layer, int index) |
+| simul::sky::uid | [GetInterpolatedCloudKeyframeUniqueId](#GetInterpolatedCloudKeyframeUniqueId)(int layer) |
+| simul::sky::uid | [GetInterpolatedSkyKeyframeUniqueId](#GetInterpolatedSkyKeyframeUniqueId)() |
+| simul::sky::uid | [GetKeyframeByIndex](#GetKeyframeByIndex)(int layer, int index) |
 | int | [GetLightningBolts](#GetLightningBolts)(simul::clouds::ExportLightningStrike s, int maxnum) |
 | int | [GetNumKeyframes](#GetNumKeyframes)(int layer) |
 | int | [GetNumStorms](#GetNumStorms)() |
@@ -51,17 +51,17 @@ Functions
 | bool | [GetWaterVector](#GetWaterVector)(char name, uint ID, vec3) |
 | bool | [HasFloat](#HasFloat)(char name) |
 | bool | [HasInt](#HasInt)(char name) |
-| unsigned int | [InsertKeyframe](#InsertKeyframe)(int layer, float time) |
+| simul::sky::uid | [InsertKeyframe](#InsertKeyframe)(int layer, float time) |
 | void | [InvalidateDeviceObjects](#InvalidateDeviceObjects)() |
-| bool | [KeyframeGetBool](#KeyframeGetBool)(unsigned int uid, char name) |
-| float | [KeyframeGetFloat](#KeyframeGetFloat)(unsigned int uid, char name) |
-| int | [KeyframeGetInt](#KeyframeGetInt)(unsigned int uid, char name) |
-| bool | [KeyframeHasBool](#KeyframeHasBool)(unsigned int uid, char name) |
-| bool | [KeyframeHasFloat](#KeyframeHasFloat)(unsigned int uid, char name) |
-| bool | [KeyframeHasInt](#KeyframeHasInt)(unsigned int uid, char name) |
-| void | [KeyframeSetBool](#KeyframeSetBool)(unsigned int uid, char name, bool value) |
-| void | [KeyframeSetFloat](#KeyframeSetFloat)(unsigned int uid, char name, float value) |
-| void | [KeyframeSetInt](#KeyframeSetInt)(unsigned int uid, char name, int value) |
+| bool | [KeyframeGetBool](#KeyframeGetBool)(simul::sky::uid uid, char name) |
+| float | [KeyframeGetFloat](#KeyframeGetFloat)(simul::sky::uid uid, char name) |
+| int | [KeyframeGetInt](#KeyframeGetInt)(simul::sky::uid uid, char name) |
+| bool | [KeyframeHasBool](#KeyframeHasBool)(simul::sky::uid uid, char name) |
+| bool | [KeyframeHasFloat](#KeyframeHasFloat)(simul::sky::uid uid, char name) |
+| bool | [KeyframeHasInt](#KeyframeHasInt)(simul::sky::uid uid, char name) |
+| void | [KeyframeSetBool](#KeyframeSetBool)(simul::sky::uid uid, char name, bool value) |
+| void | [KeyframeSetFloat](#KeyframeSetFloat)(simul::sky::uid uid, char name, float value) |
+| void | [KeyframeSetInt](#KeyframeSetInt)(simul::sky::uid uid, char name, int value) |
 | void | [LightingQuery](#LightingQuery)(int id, float pos, LightingQueryResult res) |
 | void | [ProcessQueries](#ProcessQueries)(int num, simul::plugin::Query queries) |
 | void | [RemoveBoundedWaterObject](#RemoveBoundedWaterObject)(uint ID) |
@@ -123,7 +123,7 @@ update a sphere that will push clouds aside.
 ### bool CreateBoundedWaterObject(uint ID, simul::math::Vector3 dimension, simul::math::Vector3 location)
 Create a bounded water object with a given ID
 <a name="DeleteKeyframe"></a>
-### void DeleteKeyframe(unsigned int uid)
+### void DeleteKeyframe(simul::sky::uid uid)
 Delete a keyframe with ID uid
 <a name="ExportCloudLayer"></a>
 ### void ExportCloudLayer(char filenameUtf8)
@@ -156,13 +156,13 @@ Property at a given position.
 ### int GetInt(char name, int numparams, simul::base::Variant params)
 Returns an integer value - see 
 <a name="GetInterpolatedCloudKeyframeUniqueId"></a>
-### unsigned int GetInterpolatedCloudKeyframeUniqueId(int layer)
+### simul::sky::uid GetInterpolatedCloudKeyframeUniqueId(int layer)
 Get the ID of the current interpolated cloud keyframe on the given layer
 <a name="GetInterpolatedSkyKeyframeUniqueId"></a>
-### unsigned int GetInterpolatedSkyKeyframeUniqueId()
+### simul::sky::uid GetInterpolatedSkyKeyframeUniqueId()
 Get the ID of the current interpolated sky keyframe
 <a name="GetKeyframeByIndex"></a>
-### unsigned int GetKeyframeByIndex(int layer, int index)
+### simul::sky::uid GetKeyframeByIndex(int layer, int index)
 Get a cloud keyframe on a given layer by index
 <a name="GetLightningBolts"></a>
 ### int GetLightningBolts(simul::clouds::ExportLightningStrike s, int maxnum)
@@ -210,37 +210,37 @@ Does the named parameter exist?
 ### bool HasInt(char name)
 Does the named parameter exist?
 <a name="InsertKeyframe"></a>
-### unsigned int InsertKeyframe(int layer, float time)
+### simul::sky::uid InsertKeyframe(int layer, float time)
 Insert a keyframe on a layer at time t
 <a name="InvalidateDeviceObjects"></a>
 ### void InvalidateDeviceObjects()
 Platform-dependent function called when uninitializing the plugin renderer.
 <a name="KeyframeGetBool"></a>
-### bool KeyframeGetBool(unsigned int uid, char name)
+### bool KeyframeGetBool(simul::sky::uid uid, char name)
 Fet a bool value for a given keyframe
 <a name="KeyframeGetFloat"></a>
-### float KeyframeGetFloat(unsigned int uid, char name)
+### float KeyframeGetFloat(simul::sky::uid uid, char name)
 Get a bool value for a given keyframe
 <a name="KeyframeGetInt"></a>
-### int KeyframeGetInt(unsigned int uid, char name)
+### int KeyframeGetInt(simul::sky::uid uid, char name)
 Get a int value for a given keyframe
 <a name="KeyframeHasBool"></a>
-### bool KeyframeHasBool(unsigned int uid, char name)
+### bool KeyframeHasBool(simul::sky::uid uid, char name)
 Has the keyframe with the given ID got the given bool value
 <a name="KeyframeHasFloat"></a>
-### bool KeyframeHasFloat(unsigned int uid, char name)
+### bool KeyframeHasFloat(simul::sky::uid uid, char name)
 Has the keyframe with the given ID got the given float value
 <a name="KeyframeHasInt"></a>
-### bool KeyframeHasInt(unsigned int uid, char name)
+### bool KeyframeHasInt(simul::sky::uid uid, char name)
 Has the keyframe with the given ID got the given int value
 <a name="KeyframeSetBool"></a>
-### void KeyframeSetBool(unsigned int uid, char name, bool value)
+### void KeyframeSetBool(simul::sky::uid uid, char name, bool value)
 Set a bool value for a given keyframe
 <a name="KeyframeSetFloat"></a>
-### void KeyframeSetFloat(unsigned int uid, char name, float value)
+### void KeyframeSetFloat(simul::sky::uid uid, char name, float value)
 Set a float value for a given keyframe
 <a name="KeyframeSetInt"></a>
-### void KeyframeSetInt(unsigned int uid, char name, int value)
+### void KeyframeSetInt(simul::sky::uid uid, char name, int value)
 Set a int value for a given keyframe
 <a name="LightingQuery"></a>
 ### void LightingQuery(int id, float pos, LightingQueryResult res)

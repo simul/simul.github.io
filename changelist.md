@@ -7,6 +7,23 @@ weight: 120
 
 Version HEAD
 ---
+Sun 17 Nov : Shader projects only depend on Sfx for Win/Lin.  
+Sun 17 Nov : .  
+Sun 17 Nov : Fix Sfx for GLSL texture size queries where texture is a parameter rather than global.  
+Sat 16 Nov : CMake dependencies.  
+Sat 16 Nov : Build fixes re. Qt  
+Sat 16 Nov : .  
+Sat 16 Nov : Fix WindowsEnvironment.properties  
+Fri 15 Nov : Add release.properties  
+Fri 15 Nov : Remove glfx  
+Fri 15 Nov : QT_INFIX to installer.  
+Fri 15 Nov : QT_INFIX supported for custom Qt builds.  
+Fri 15 Nov : Fixed key frames being pasted to wrong layer when cloud layer IDs didn't correlate to row number.  
+Fri 15 Nov : Changed sampler lookup in precipitation volume texture.  
+Fri 15 Nov : Doc fix  
+Fri 15 Nov : Slight fix to Precipitation Docs  
+Fri 15 Nov : Moving to sky::uid. Updating Doc folder structure.  
+Fri 15 Nov : Added view lines to CloudWindowEditor. Updated to rotateByOffsetCartesian(), rotateByOffsetPolar() and DrawArc() function and shader. MainCameraViewStruct added to CloudRenderer.  
 Thu 14 Nov : Fix including wrong qt libs.  
 Thu 14 Nov : Xbox build fix.  
 Wed 13 Nov : Xbox build fix.  
@@ -90,22 +107,5 @@ Sat 19 Oct : Add missing shaders in installers.
 Fri 18 Oct : Fix Crash with sequencer  
 Fri 18 Oct : Initial fix for Rain Map and Multi Cloud Layer issue.  
 Thu 17 Oct : Fix Xbox error by reverting to original. However, whatever this change was put in to fix will presumably still be broken.  
-Thu 17 Oct : Removed duplicate UpdateUI(...) definition. Fixed water crash when setting dimension with invalid ID.  
-Wed 16 Oct : Attempted fix of merge errors  
-Wed 16 Oct : .  
-Wed 16 Oct : Reverted sfx project changes  
-Wed 16 Oct : UnitySetRenderFrameValues(): Checks for nullptr in colourTexture. Added UpdateUI() and default initialiser for ExternalTexture.  
-Wed 16 Oct : Added some water reflection quality parameters  
-Wed 16 Oct : Cloud shadow texture size not passed via enum system.  
-Tue 15 Oct : further fixes  
-Tue 15 Oct : Fixing gets and sets for keyframes and layers.  
-Tue 15 Oct : Sky is cleared when SetSequence is passed a sequence with no data.  
-Sat 12 Oct : Fixed binary path bug.  
-Fri 11 Oct : Fix SHADERBIN_SOURCE deploy  
-Fri 11 Oct : Update to Unity Sky Sequencer UI.  
-Fri 11 Oct : Created an UpdateUI function for Unity to call, for processing of QT events.  
-Fri 11 Oct : Camera constants changes restored.  
-Fri 11 Oct : Fixed shaderbin not being copied from the build directory  
-Fri 11 Oct : Fix Unity Sequencer UI disappearance.  
 
 <hr>

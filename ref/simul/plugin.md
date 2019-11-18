@@ -20,11 +20,11 @@ Classes and Structures
 Functions
 ---
 
-| unsigned int | [GetInterpolatedCloudKeyframeUniqueId](#GetInterpolatedCloudKeyframeUniqueId)(int layer) |
-| unsigned int | [GetInterpolatedSkyKeyframeUniqueId](#GetInterpolatedSkyKeyframeUniqueId)() |
+| simul::sky::uid | [GetInterpolatedCloudKeyframeUniqueId](#GetInterpolatedCloudKeyframeUniqueId)(int layer) |
+| simul::sky::uid | [GetInterpolatedSkyKeyframeUniqueId](#GetInterpolatedSkyKeyframeUniqueId)() |
 | int | [GetNumStorms](#GetNumStorms)() |
-| unsigned int | [GetStormAtTime](#GetStormAtTime)(float t) |
-| unsigned int | [GetStormByIndex](#GetStormByIndex)(int i) |
+| simul::sky::uid | [GetStormAtTime](#GetStormAtTime)(float t) |
+| simul::sky::uid | [GetStormByIndex](#GetStormByIndex)(int i) |
 | bool | [StaticAddWaterBuoyancyObject](#StaticAddWaterBuoyancyObject)(simul::terrain::WaterMeshObjectValues newObject) |
 | bool | [StaticAddWaterMaskObject](#StaticAddWaterMaskObject)(simul::terrain::waterMaskingObject newObject) |
 | bool | [StaticAddWaterProbe](#StaticAddWaterProbe)(simul::terrain::WaterProbeValues values) |
@@ -36,7 +36,7 @@ Functions
 | void | [StaticEnableLogging](#StaticEnableLogging)(char logfile) |
 | void | [StaticExecuteDeferredRendering](#StaticExecuteDeferredRendering)() |
 | void | [StaticExportCloudLayerToGeometry](#StaticExportCloudLayerToGeometry)(char filenameUtf8, int index) |
-| bool | [StaticFillColourTable](#StaticFillColourTable)(unsigned int uid, int x, int y, int z, float target) |
+| bool | [StaticFillColourTable](#StaticFillColourTable)(simul::sky::uid uid, int x, int y, int z, float target) |
 | int | [StaticGet](#StaticGet)(long long num, simul::base::Variant v) |
 | long long | [StaticGetEnum](#StaticGetEnum)(char name) |
 | void * | [StaticGetEnvironment](#StaticGetEnvironment)() |
@@ -70,20 +70,20 @@ Functions
 | void | [StaticRemoveWaterBuoyancyObject](#StaticRemoveWaterBuoyancyObject)(int ID) |
 | void | [StaticRemoveWaterMaskObject](#StaticRemoveWaterMaskObject)(int ID) |
 | void | [StaticRemoveWaterProbe](#StaticRemoveWaterProbe)(int ID) |
-| void | [StaticRenderDeleteKeyframe](#StaticRenderDeleteKeyframe)(unsigned int uid) |
+| void | [StaticRenderDeleteKeyframe](#StaticRenderDeleteKeyframe)(simul::sky::uid uid) |
 | int | [StaticRenderFrame](#StaticRenderFrame)(void device, void pContext, int view_id, float viewMatrix4x4, float projMatrix4x4, void depthTexture, void colourTarget, simul::crossplatform::Viewport depthViewports, simul::crossplatform::Viewport viewports, simul::plugin::RenderStyle s, float exposure, float gamma, int framenumber, simul::crossplatform::MultiResConstants pMultiResConstants) |
-| unsigned int | [StaticRenderGetKeyframeByIndex](#StaticRenderGetKeyframeByIndex)(int layer, int index) |
+| simul::sky::uid | [StaticRenderGetKeyframeByIndex](#StaticRenderGetKeyframeByIndex)(int layer, int index) |
 | int | [StaticRenderGetNumKeyframes](#StaticRenderGetNumKeyframes)(int layer) |
-| unsigned int | [StaticRenderInsertKeyframe](#StaticRenderInsertKeyframe)(int layer, float t) |
-| bool | [StaticRenderKeyframeGetBool](#StaticRenderKeyframeGetBool)(unsigned int uid, char name) |
-| float | [StaticRenderKeyframeGetFloat](#StaticRenderKeyframeGetFloat)(unsigned int uid, char name) |
-| int | [StaticRenderKeyframeGetInt](#StaticRenderKeyframeGetInt)(unsigned int uid, char name) |
-| bool | [StaticRenderKeyframeHasBool](#StaticRenderKeyframeHasBool)(unsigned int uid, char name) |
-| bool | [StaticRenderKeyframeHasFloat](#StaticRenderKeyframeHasFloat)(unsigned int uid, char name) |
-| bool | [StaticRenderKeyframeHasInt](#StaticRenderKeyframeHasInt)(unsigned int uid, char name) |
-| void | [StaticRenderKeyframeSetBool](#StaticRenderKeyframeSetBool)(unsigned int uid, char name, bool value) |
-| void | [StaticRenderKeyframeSetFloat](#StaticRenderKeyframeSetFloat)(unsigned int uid, char name, float value) |
-| void | [StaticRenderKeyframeSetInt](#StaticRenderKeyframeSetInt)(unsigned int uid, char name, int value) |
+| simul::sky::uid | [StaticRenderInsertKeyframe](#StaticRenderInsertKeyframe)(int layer, float t) |
+| bool | [StaticRenderKeyframeGetBool](#StaticRenderKeyframeGetBool)(simul::sky::uid uid, char name) |
+| float | [StaticRenderKeyframeGetFloat](#StaticRenderKeyframeGetFloat)(simul::sky::uid uid, char name) |
+| int | [StaticRenderKeyframeGetInt](#StaticRenderKeyframeGetInt)(simul::sky::uid uid, char name) |
+| bool | [StaticRenderKeyframeHasBool](#StaticRenderKeyframeHasBool)(simul::sky::uid uid, char name) |
+| bool | [StaticRenderKeyframeHasFloat](#StaticRenderKeyframeHasFloat)(simul::sky::uid uid, char name) |
+| bool | [StaticRenderKeyframeHasInt](#StaticRenderKeyframeHasInt)(simul::sky::uid uid, char name) |
+| void | [StaticRenderKeyframeSetBool](#StaticRenderKeyframeSetBool)(simul::sky::uid uid, char name, bool value) |
+| void | [StaticRenderKeyframeSetFloat](#StaticRenderKeyframeSetFloat)(simul::sky::uid uid, char name, float value) |
+| void | [StaticRenderKeyframeSetInt](#StaticRenderKeyframeSetInt)(simul::sky::uid uid, char name, int value) |
 | void | [StaticRenderOverlays](#StaticRenderOverlays)(void device, void pContext, void externalDepthTexture, float viewMatrix4x4, float projMatrix4x4, int view_id, void colourTarget, simul::crossplatform::Viewport viewports) |
 | int | [StaticSet](#StaticSet)(long long num, simul::base::Variant v) |
 | void | [StaticSetDebugOutputCallback](#StaticSetDebugOutputCallback)(DebugOutputCallback) |
@@ -118,19 +118,19 @@ Functions
 Functions
 ---
 <a name="GetInterpolatedCloudKeyframeUniqueId"></a>
-### unsigned int GetInterpolatedCloudKeyframeUniqueId(int layer)
+### simul::sky::uid GetInterpolatedCloudKeyframeUniqueId(int layer)
 Get the ID of the current interpolated cloud keyframe on the given layer
 <a name="GetInterpolatedSkyKeyframeUniqueId"></a>
-### unsigned int GetInterpolatedSkyKeyframeUniqueId()
+### simul::sky::uid GetInterpolatedSkyKeyframeUniqueId()
 Get the ID of the current interpolated sky keyframe
 <a name="GetNumStorms"></a>
 ### int GetNumStorms()
 Get the total number of storms
 <a name="GetStormAtTime"></a>
-### unsigned int GetStormAtTime(float t)
+### simul::sky::uid GetStormAtTime(float t)
 Get a storm ID, if it exists, at time t
 <a name="GetStormByIndex"></a>
-### unsigned int GetStormByIndex(int i)
+### simul::sky::uid GetStormByIndex(int i)
 Get a storm ID with index i
 <a name="StaticAddWaterBuoyancyObject"></a>
 ### bool StaticAddWaterBuoyancyObject(simul::terrain::WaterMeshObjectValues newObject)
@@ -166,7 +166,7 @@ Render all the deferred contexts.
 ### void StaticExportCloudLayerToGeometry(char filenameUtf8, int index)
 Exports the cloud layer as geometry
 <a name="StaticFillColourTable"></a>
-### bool StaticFillColourTable(unsigned int uid, int x, int y, int z, float target)
+### bool StaticFillColourTable(simul::sky::uid uid, int x, int y, int z, float target)
 Set the current atmosphric scattering colour to a constant colour
 <a name="StaticGet"></a>
 ### int StaticGet(long long num, simul::base::Variant v)
@@ -272,46 +272,46 @@ Remove a water masking object
 ### void StaticRemoveWaterProbe(int ID)
 Remove a water probe
 <a name="StaticRenderDeleteKeyframe"></a>
-### void StaticRenderDeleteKeyframe(unsigned int uid)
+### void StaticRenderDeleteKeyframe(simul::sky::uid uid)
 Delete a keyframe with ID uid
 <a name="StaticRenderFrame"></a>
 ### int StaticRenderFrame(void device, void pContext, int view_id, float viewMatrix4x4, float projMatrix4x4, void depthTexture, void colourTarget, simul::crossplatform::Viewport depthViewports, simul::crossplatform::Viewport viewports, simul::plugin::RenderStyle s, float exposure, float gamma, int framenumber, simul::crossplatform::MultiResConstants pMultiResConstants)
 (DEPRECATED)Render trueSKY to the current render target.
 <a name="StaticRenderGetKeyframeByIndex"></a>
-### unsigned int StaticRenderGetKeyframeByIndex(int layer, int index)
+### simul::sky::uid StaticRenderGetKeyframeByIndex(int layer, int index)
 Get a cloud keyframe on a given layer by index
 <a name="StaticRenderGetNumKeyframes"></a>
 ### int StaticRenderGetNumKeyframes(int layer)
 Get the number of keyframes on a given layer
 <a name="StaticRenderInsertKeyframe"></a>
-### unsigned int StaticRenderInsertKeyframe(int layer, float t)
+### simul::sky::uid StaticRenderInsertKeyframe(int layer, float t)
 Insert a keyframe on a layer at time t
 <a name="StaticRenderKeyframeGetBool"></a>
-### bool StaticRenderKeyframeGetBool(unsigned int uid, char name)
+### bool StaticRenderKeyframeGetBool(simul::sky::uid uid, char name)
 Get a bool value for a given keyframe
 <a name="StaticRenderKeyframeGetFloat"></a>
-### float StaticRenderKeyframeGetFloat(unsigned int uid, char name)
+### float StaticRenderKeyframeGetFloat(simul::sky::uid uid, char name)
 Get a float value for a given keyframe
 <a name="StaticRenderKeyframeGetInt"></a>
-### int StaticRenderKeyframeGetInt(unsigned int uid, char name)
+### int StaticRenderKeyframeGetInt(simul::sky::uid uid, char name)
 Get an int value for a given keyframe
 <a name="StaticRenderKeyframeHasBool"></a>
-### bool StaticRenderKeyframeHasBool(unsigned int uid, char name)
+### bool StaticRenderKeyframeHasBool(simul::sky::uid uid, char name)
 Has the keyframe with the given ID got the given bool value
 <a name="StaticRenderKeyframeHasFloat"></a>
-### bool StaticRenderKeyframeHasFloat(unsigned int uid, char name)
+### bool StaticRenderKeyframeHasFloat(simul::sky::uid uid, char name)
 Has the keyframe with the given ID got the given float value
 <a name="StaticRenderKeyframeHasInt"></a>
-### bool StaticRenderKeyframeHasInt(unsigned int uid, char name)
+### bool StaticRenderKeyframeHasInt(simul::sky::uid uid, char name)
 Has the keyframe with the given ID got the given int value
 <a name="StaticRenderKeyframeSetBool"></a>
-### void StaticRenderKeyframeSetBool(unsigned int uid, char name, bool value)
+### void StaticRenderKeyframeSetBool(simul::sky::uid uid, char name, bool value)
 Set a bool value for a given keyframe
 <a name="StaticRenderKeyframeSetFloat"></a>
-### void StaticRenderKeyframeSetFloat(unsigned int uid, char name, float value)
+### void StaticRenderKeyframeSetFloat(simul::sky::uid uid, char name, float value)
 Set a float value for a given keyframe
 <a name="StaticRenderKeyframeSetInt"></a>
-### void StaticRenderKeyframeSetInt(unsigned int uid, char name, int value)
+### void StaticRenderKeyframeSetInt(simul::sky::uid uid, char name, int value)
 Set an int value for a given keyframe
 <a name="StaticRenderOverlays"></a>
 ### void StaticRenderOverlays(void device, void pContext, void externalDepthTexture, float viewMatrix4x4, float projMatrix4x4, int view_id, void colourTarget, simul::crossplatform::Viewport viewports)

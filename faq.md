@@ -204,6 +204,7 @@ Any transparent shaders in use will need to be modified, otherwise the water may
 
 This will make it so that trueSKY won't be visible when underwater, so if underwater views are needed, it is advisable to write a script that changes these queue values back to their defaults when the camera is underwater. 
 
+Reloading or switching Unity scenes with both trueSKY and CETO active is not currently supported. This conflict is caused by CETO's OnDestroy() function, which removes the Unity camera and the associated Unity RenderBuffers; trueSKY relies on these RenderBuffers for its rendering.
 
 **Popcorn FX**
 

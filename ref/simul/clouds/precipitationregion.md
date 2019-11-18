@@ -24,9 +24,9 @@ Fields
 
 **lockToClouds**  < If true, rain/snow only occurs within the specified region. If false, it occurs everywhere in the cloud keyframe.
 
-**centre**  < If true, the movement of the region takes into account the wind's speed and heading.
+**relative_centre**  < If true, the movement of the region takes into account the wind's speed and heading.
 
-**radiusKm**  < Origin on the globe for this Precipitation Region
+**radiusKm**  < Origin on the globe for this Precipitation Region relative to keyframe origin.
 
 **rainEffectStrength**  < The radius of the region.
 
