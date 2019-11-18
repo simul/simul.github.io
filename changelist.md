@@ -7,6 +7,9 @@ weight: 120
 
 Version HEAD
 ---
+Mon 18 Nov : Moving images into one folder  
+Mon 18 Nov : Fixed image in docs  
+Mon 18 Nov : Amended file name and extension  
 Mon 18 Nov : Renamed precipitation folder to lowercase  
 Mon 18 Nov : Update to Help/tutorials/precipitation/3 how it works.md  
 Mon 18 Nov : Doc Fixes  
@@ -104,8 +107,5 @@ Thu 24 Oct : Small doc fix
 Thu 24 Oct : UI improvements to timeline.  
 Thu 24 Oct : Image Fixing Docs  
 Thu 24 Oct : Image Fix for Docs  
-Thu 24 Oct : Doc Updates  
-Thu 24 Oct : Doc Updates  
-Thu 24 Oct : Added cloud masks to Cloud Layer Precipitation shader. DrawTexture() now supports Texture2DArrays  
 
 <hr>

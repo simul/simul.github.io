@@ -23,5 +23,5 @@ When two precipitation region intersect or overlap each other the intersecting v
 ![](/images/precipitation/RainOverlay.png)
 
 
-![](/images/precipitation/precipitationVolumeDiagram.png)
+![](/images/precipitation/PrecipitationVolumeDiagram.png)
 

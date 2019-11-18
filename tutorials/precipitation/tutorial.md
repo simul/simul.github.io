@@ -28,7 +28,7 @@ To move a precipitation region, click on the cloud window to select the window f
 
 To learn more about the Cloud Window, please view this [tutorial](/tutorials/sequencer.html#cloud-window).
 
-![](/images/precipitation/cloudWindowPrecipitationRegions.png)
+![](/images/precipitation/CloudWindowPrecipitationRegions.png)
 
 
 Cloud Map Texture
