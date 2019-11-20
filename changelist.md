@@ -7,6 +7,9 @@ weight: 120
 
 Version HEAD
 ---
+Wed 20 Nov : Fix warnings for D3d12.  
+Mon 18 Nov : Update Build.bat for recent CMake and Vs2017.  
+Mon 18 Nov : Fix OpenGL cloud lighting issues: nVidia driver bug can't cope with 16-bit floats in computable volume.  
 Mon 18 Nov : Moving images into one folder  
 Mon 18 Nov : Fixed image in docs  
 Mon 18 Nov : Amended file name and extension  
@@ -104,8 +107,5 @@ Fri 25 Oct : Support for altitude-dependent sunlight.
 Fri 25 Oct : Fix Simul QTWidgets deployment.  
 Thu 24 Oct : Each cloud layer builds its own rain map. Updated clouds.sfx, GetRainAtOffsetKm() and GetRainToSnowAtOffsetKm() for volume queries to use the texture array. For this commit, rain.sfx simply flattens the array for its look up - to be amended.  
 Thu 24 Oct : Small doc fix  
-Thu 24 Oct : UI improvements to timeline.  
-Thu 24 Oct : Image Fixing Docs  
-Thu 24 Oct : Image Fix for Docs  
 
 <hr>

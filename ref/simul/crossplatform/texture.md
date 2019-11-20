@@ -34,9 +34,11 @@ Functions
 | void | [MoveToFastRAM](#MoveToFastRAM)() |
 | void | [MoveToSlowRAM](#MoveToSlowRAM)() |
 | int | [NumFaces](#NumFaces)() |
+| void | [RestoreExternalTextureState](#RestoreExternalTextureState)(simul::crossplatform::DeviceContext) |
 | void | [SetFence](#SetFence)(unsigned long long) |
 | void | [setTexels](#setTexels)(simul::crossplatform::DeviceContext deviceContext, void src, int texel_index, int num_texels) |
 | void | [SetUnfenceable](#SetUnfenceable)(bool v) |
+| void | [StoreExternalState](#StoreExternalState)(bool make_rt, bool setDepthStencil, bool need_srv) |
 
 
 Functions
@@ -108,6 +110,9 @@ Asynchronously move this texture to slow RAM.
 <a name="NumFaces"></a>
 ### int NumFaces()
 The number of "faces": either equal to the array size, or in the case of a cubemap, six times that number.
+<a name="RestoreExternalTextureState"></a>
+### void RestoreExternalTextureState(simul::crossplatform::DeviceContext)
+For API's that care about Resource State, aka Layout, restore the state internally.
 <a name="SetFence"></a>
 ### void SetFence(unsigned long long)
 Set the fence on this texture: it cannot be used until the fence has been triggered by the rendering API.
@@ -117,6 +122,9 @@ Set the texture data from CPU memory.
 <a name="SetUnfenceable"></a>
 ### void SetUnfenceable(bool v)
 Set whether to never check for fences on this texture.
+<a name="StoreExternalState"></a>
+### void StoreExternalState(bool make_rt, bool setDepthStencil, bool need_srv)
+For API's that care about Resource State, aka Layout, tell the Simul API what state it was in to begin with.
 
 Fields
 ---
