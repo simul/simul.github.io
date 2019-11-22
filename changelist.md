@@ -7,7 +7,11 @@ weight: 120
 
 Version HEAD
 ---
+Fri 22 Nov : Added to lock guard to TrueSkyRenderer::RemoveView()  
+Fri 22 Nov : Cloud Window UI changes, small doc update  
+Fri 22 Nov : only if SIMUL_EDITOR is 1 reference sphereRenderer.  
 Thu 21 Nov : Extra debug info for shader loads.  
+Thu 21 Nov : Removal of old variables from sequencer. Added Extra Cloud section to docs.  
 Thu 21 Nov : Improved cloud volume editing.  
 Thu 21 Nov : Qt version revert to 5.9 as 5.12 has bugs in layout.  
 Wed 20 Nov : Fix warnings for D3d12.  
@@ -103,9 +107,5 @@ Mon 28 Oct : Removed Min Star Size from Sequencer. Temp Disabled Get Constellati
 Mon 28 Oct : Fix right-click clearing selection.  
 Mon 28 Oct : Fix stand-alone sequencer not compiling from rename.  
 Fri 25 Oct : PS4-related fixes patched. QPropertyEditWidget has applyParentTooltip, should be called by derived classes after setupUI.  
-Fri 25 Oct : Doc fix  
-Fri 25 Oct : Fix QT DLLs not being deployed.  
-Fri 25 Oct : Apply patch from Game Studio.  
-Fri 25 Oct : Support for altitude-dependent sunlight.  
 
 <hr>

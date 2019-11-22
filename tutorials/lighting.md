@@ -82,12 +82,12 @@ Point lights can be used to illuminate the clouds. Because of the relative scale
 
 <div class="ue4-specific">
 
-This can be done with the SetPointLight Blueprint node.
+This can be done with the SetPointLight Blueprint node. Attach one of your point lights in the scene to our Set Point Light function, allowing trueSKY to take the properties and apply it to the clouds.
 
-![](/images/unreal/setpointlight.png)
+![](/images/unreal/setpointlightblueprint.png)
 
 
-If you do not have a PointLight actor, you can use SetPointLightSource to individually apply the position, colour and intensity of a light to the clouds.
+If you do not have a PointLight actor, you can use SetPointLightSource to create a new point light and individually apply the position, colour and intensity of a light to the clouds.
 
 ![](/images/unreal/setpointlightsource.png)
 
@@ -107,6 +107,9 @@ This function will map point lights to the given id, so it can be called to both
 
 
 <div class="ue4-specific">
+
+Brightness Power
+---------------
 
 The sky at sunrise can be less than one quarter as bright as at noon. Moonlight is hundreds of times dimmer than sunlight. Starlight is much dimmer still. The human eye adjusts to a very wide range of light conditions, but for rendering we usually apply a brightness, or exposure level, to make dark scenes visible and bright scenes clear.
 

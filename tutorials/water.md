@@ -8,7 +8,7 @@ weight: 90
 
 
 
-Water
+trueWATER
 ====================
 **Water is only available in trueSKY 4.2**
 
