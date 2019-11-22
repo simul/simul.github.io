@@ -7,6 +7,9 @@ weight: 120
 
 Version HEAD
 ---
+Thu 21 Nov : Extra debug info for shader loads.  
+Thu 21 Nov : Improved cloud volume editing.  
+Thu 21 Nov : Qt version revert to 5.9 as 5.12 has bugs in layout.  
 Wed 20 Nov : Fix warnings for D3d12.  
 Mon 18 Nov : Update Build.bat for recent CMake and Vs2017.  
 Mon 18 Nov : Fix OpenGL cloud lighting issues: nVidia driver bug can't cope with 16-bit floats in computable volume.  
@@ -104,8 +107,5 @@ Fri 25 Oct : Doc fix
 Fri 25 Oct : Fix QT DLLs not being deployed.  
 Fri 25 Oct : Apply patch from Game Studio.  
 Fri 25 Oct : Support for altitude-dependent sunlight.  
-Fri 25 Oct : Fix Simul QTWidgets deployment.  
-Thu 24 Oct : Each cloud layer builds its own rain map. Updated clouds.sfx, GetRainAtOffsetKm() and GetRainToSnowAtOffsetKm() for volume queries to use the texture array. For this commit, rain.sfx simply flattens the array for its look up - to be amended.  
-Thu 24 Oct : Small doc fix  
 
 <hr>
