@@ -7,6 +7,7 @@ weight: 120
 
 Version HEAD
 ---
+Fri 22 Nov : Prevent Unity overlay crash.  
 Fri 22 Nov : Added to lock guard to TrueSkyRenderer::RemoveView()  
 Fri 22 Nov : Cloud Window UI changes, small doc update  
 Fri 22 Nov : only if SIMUL_EDITOR is 1 reference sphereRenderer.  
@@ -106,6 +107,5 @@ Mon 28 Oct : Removed Add Shape from Sequencer UI
 Mon 28 Oct : Removed Min Star Size from Sequencer. Temp Disabled Get Constellation  
 Mon 28 Oct : Fix right-click clearing selection.  
 Mon 28 Oct : Fix stand-alone sequencer not compiling from rename.  
-Fri 25 Oct : PS4-related fixes patched. QPropertyEditWidget has applyParentTooltip, should be called by derived classes after setupUI.  
 
 <hr>
