@@ -1,6 +1,11 @@
-\title "Cloud Volumes"
-\name  tutorials::clouds::volumes
-\weight 40
+---
+title: Cloud Volumes
+layout: reference
+weight: 40
+---
+
+
+
 
 
 Cloud volumes allow you to place specific formations of clouds in the sky. These volumes can be customised just like any other clouds, and multiple can be created, allowing you to create your own skylines! 
