@@ -7,6 +7,7 @@ weight: 120
 
 Version HEAD
 ---
+Mon 25 Nov : Fix for Precipitation Volume on OpenGL. Sfx GetSizeFunction handles return parameters assignment for ShaderResourceType::UNKNOWN with replacement token {dim_check:textureName,x,y,z,tempName}  
 Mon 25 Nov : Doc fix  
 Fri 22 Nov : Prevent Unity overlay crash.  
 Fri 22 Nov : Fix for previous Commit  
@@ -106,6 +107,5 @@ Wed 30 Oct : DOc Updates + UI Sorting
 Wed 30 Oct : Added combine precipitation compute shader for performance. Replaced rainMap lookup with value in RaytraceClouds functions.  
 Tue 29 Oct : Added version.properties to store current variable properties, e.g. recommended SDK versions etc. Fixed platform build errors.  
 Mon 28 Oct : Fix being unable to select the sky layer.  
-Mon 28 Oct : Removed Add Shape from Sequencer UI  
 
 <hr>
