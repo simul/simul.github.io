@@ -16,7 +16,7 @@ Below you will find links to the different aspects of trueSKY, with each section
 
 * [**Sky Sequencer**](sequencer.html)                                   - Start here to learn about how the Sky Sequencer works, and how to add your first clouds.
 
-* [**Clouds**](clouds.html)                                                     - Tutorials about our signature clouds, from large, fluffy clouds (Cumulonimbus), to thin streaks (Cirrostratus). 
+* [**Clouds**](clouds/index.html)                                                       - Tutorials about our signature clouds, from large, fluffy clouds (Cumulonimbus), to thin streaks (Cirrostratus). 
 
 * [**Sky**](sky.html)                                                                   - From beautiful sunsets to alien planets.
 

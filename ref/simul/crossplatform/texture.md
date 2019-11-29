@@ -38,7 +38,7 @@ Functions
 | void | [SetFence](#SetFence)(unsigned long long) |
 | void | [setTexels](#setTexels)(simul::crossplatform::DeviceContext deviceContext, void src, int texel_index, int num_texels) |
 | void | [SetUnfenceable](#SetUnfenceable)(bool v) |
-| void | [StoreExternalState](#StoreExternalState)(bool make_rt, bool setDepthStencil, bool need_srv) |
+| void | [StoreExternalState](#StoreExternalState)(simul::crossplatform::ResourceState) |
 
 
 Functions
@@ -123,7 +123,7 @@ Set the texture data from CPU memory.
 ### void SetUnfenceable(bool v)
 Set whether to never check for fences on this texture.
 <a name="StoreExternalState"></a>
-### void StoreExternalState(bool make_rt, bool setDepthStencil, bool need_srv)
+### void StoreExternalState(simul::crossplatform::ResourceState)
 For API's that care about Resource State, aka Layout, tell the Simul API what state it was in to begin with.
 
 Fields

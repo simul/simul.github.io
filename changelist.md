@@ -1,5 +1,5 @@
 ---
-title: Change List
+title: Change Log
 layout: reference
 weight: 120
 ---
@@ -7,8 +7,22 @@ weight: 120
 
 Version HEAD
 ---
+Thu 28 Nov : Fix for GetPrecipitationCentre().  
+Thu 28 Nov : Vulkan layout/resourcestate fixes.  
+Wed 27 Nov : Disabled Visibility  
+Wed 27 Nov : UI Updates + set time to selected keyframe  
+Wed 27 Nov : Externally-set ResourceStates for D3D12.  
+Wed 27 Nov : Externally-set ResourceStates for D3D12.  
+Tue 26 Nov : Fix CloudWindowEditor view lines, and rotateByOffsetPolar();  
+Tue 26 Nov : Feature level 12.0 for D3D12 supported.  
+Mon 25 Nov : Cloud Index initial implementation.  
+Mon 25 Nov : Window Fix  
 Mon 25 Nov : Fix for Precipitation Volume on OpenGL. Sfx GetSizeFunction handles return parameters assignment for ShaderResourceType::UNKNOWN with replacement token {dim_check:textureName,x,y,z,tempName}  
 Mon 25 Nov : Doc fix  
+Mon 25 Nov : Quaternion function reorg.  
+Mon 25 Nov : Heading etc works for cloud window panel.  
+Sat 23 Nov : Added DXCompiler and switched D3d12 shader compilation to use dxc.  
+Sat 23 Nov : Text rendering fixes.  
 Fri 22 Nov : Prevent Unity overlay crash.  
 Fri 22 Nov : Fix for previous Commit  
 Fri 22 Nov : UI changes for cloudWindow  
@@ -56,6 +70,7 @@ Wed 13 Nov : Fix some Vulkan warnings.
 Wed 13 Nov : Test for Wayne  
 Wed 13 Nov : Moved Unreal performance  
 Wed 13 Nov : Fixed Login issues. Update Docs.  
+Tue 12 Nov : .  
 Tue 12 Nov : New lighting: incremental cloud lighting.  
 Tue 12 Nov : Execute deferred rendering for editor if set.  
 Mon 11 Nov : Cloud volume improvements: UI more functional.  
@@ -92,20 +107,5 @@ Fri 01 Nov : Add CloudKeyframe.h and cpp to PS4 project.
 Fri 01 Nov : Docs and Removal of gifs temporarily  
 Fri 01 Nov : Doc fix  
 Fri 01 Nov : Chaning Images to images  
-Fri 01 Nov : Fix crashes from multiple sequencers open.  
-Fri 01 Nov : Improved memory tracking - possible fix for D3D12 issues.  
-Thu 31 Oct : Doc Fix  
-Thu 31 Oct : Changed default path for dllLocation.  
-Thu 31 Oct : Doc Fixes  
-Thu 31 Oct : Fix some Vulkan errors that occur in cloud window editor.  
-Thu 31 Oct : Removed unneeded window handle from UpdateUI().  
-Thu 31 Oct : adding images  
-Thu 31 Oct : Doc Fixes  
-Wed 30 Oct : Fix copy and pasting of keyframes in sequencer.  
-Wed 30 Oct : Odd EnsureIndexBuffer behaviour  
-Wed 30 Oct : DOc Updates + UI Sorting  
-Wed 30 Oct : Added combine precipitation compute shader for performance. Replaced rainMap lookup with value in RaytraceClouds functions.  
-Tue 29 Oct : Added version.properties to store current variable properties, e.g. recommended SDK versions etc. Fixed platform build errors.  
-Mon 28 Oct : Fix being unable to select the sky layer.  
 
 <hr>

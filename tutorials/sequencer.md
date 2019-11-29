@@ -140,7 +140,7 @@ Presets allows you to automatically set a keyframe to one of our example keyfram
 
 <sup>You can add your own presets with the create option</sup>
 
-Layers also have their own settings which will change the values of all the keyframes in that layer. An example of this is within the Sky layer, you can change the diameter of the sun. This effect will take place for all the Sky Keyframes. To select a layer, just click on its name in the column to the left of the timeline. To see what each of the settings do, head over to our [Cloud](clouds.html), [Sky](sky.html), or [Storm](storms.html) pages.
+Layers also have their own settings which will change the values of all the keyframes in that layer. An example of this is within the Sky layer, you can change the diameter of the sun. This effect will take place for all the Sky Keyframes. To select a layer, just click on its name in the column to the left of the timeline. To see what each of the settings do, head over to our [Cloud](clouds), [Sky](sky.html), or [Storm](storms.html) pages.
 
 {:.ue4-specific}
 You can also use blueprints to edit the trueSKY environment. Head [here](/unreal/blueprints) to learn how.
@@ -154,7 +154,13 @@ You can also edit the trueSKY environment through scripting. Head [here](/unity/
 Cloud Window
 ========
 
-The Cloud Window is a top down view of the world, where you can see the current cloud formations and layers. You can zoom in and out with the mouse wheel, and drag the world around by holding right click and dragging in a direction. If you select a keyframe, you will be able to drag its wind heading around the Cloud Window, allowing for full control of the angle of the wind. Furthermore, if you enable "override Wind" setting in the cloud layer properties, any cloud keyframes in this layer can also be dragged around and positioned as you see fit.
+The Cloud Window is a top down view of the world, where you can see the current cloud formations, layers and [volumes](clouds/volumes). You can zoom in and out with the mouse wheel, and drag the world around by holding right click and dragging in a direction. Clicking on a keyframe will allow you to drag the keyframes center, which will move all volumes in relation to the keyframe origin.
+
+The Red Arc is your current view in the project. This can be helpful for figuring out what direction you are looking in, in relation to trueSKY.
+
+By default you are in Keyframe edit mode. If you select a keyframe, you will be able to drag its wind heading around the Cloud Window, allowing for full control of the angle of the wind. Furthermore, if you enable "override Wind" setting in the cloud layer properties, any cloud keyframes in this layer can also be dragged around and positioned as you see fit.
+
+Double clicking will enter Volume Edit mode, where you can individually move and edit [volumes](clouds/volumes). You cannot enter Volume edit mode if there are no volumes on the cloud layer.
 
 ![](/images/unreal/overrideWind.png)
 

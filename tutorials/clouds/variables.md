@@ -9,7 +9,7 @@ weight: 30
 
 Variables
 =============
-This list of variables is grouped by how they affect the clouds, along with where they are located. Variables in the Red tables are located on the Keyframe, Green are in the Layer andBlue variables are on the trueSKYSequenceActor.
+This list of variables is grouped by how they affect the clouds, along with where they are located. Variables in the Red tables are located on the Keyframe, Green are in the Layer and Blue variables are on the trueSKYSequenceActor.
 
 Main
 ============

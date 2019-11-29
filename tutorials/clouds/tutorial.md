@@ -1,5 +1,5 @@
 ---
-title: tutorial
+title: Tutorial
 layout: reference
 weight: 10
 ---
