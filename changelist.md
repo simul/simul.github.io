@@ -7,6 +7,12 @@ weight: 120
 
 Version HEAD
 ---
+Fri 29 Nov : Crash on deleting cloud layer with volumes present  
+Fri 29 Nov : Fix ssleay/libeay usage by Qt: Must force Path Environment.  
+Fri 29 Nov : Updated XboxOne submodule.  
+Fri 29 Nov : Fix cloud.sfx precipitationVolumeRW texture type.  
+Fri 29 Nov : Added define SFX_D3D12  
+Fri 29 Nov : Fix DX11 Precipitation Volume. Fix for PrecipitationRenderer to use the Precipitation Volume texture.  
 Thu 28 Nov : Fix for GetPrecipitationCentre().  
 Thu 28 Nov : Vulkan layout/resourcestate fixes.  
 Wed 27 Nov : Disabled Visibility  
@@ -101,11 +107,5 @@ Sun 03 Nov : Work on cloud volume selection and editing.
 Sat 02 Nov : Fix error in DirectXTexD3D11.cpp  
 Sat 02 Nov : Add toolchain-Microsoft-GDK.cmake Improve cloud window editing.  
 Fri 01 Nov : Fixes to make sure Xbox GDK is supported  
-Fri 01 Nov : Disable SIMUL_PLUGIN_DEPLOY_ALL in Build.bat by default.  
-Fri 01 Nov : Fix lightning edit widget always appearing.  
-Fri 01 Nov : Add CloudKeyframe.h and cpp to PS4 project.  
-Fri 01 Nov : Docs and Removal of gifs temporarily  
-Fri 01 Nov : Doc fix  
-Fri 01 Nov : Chaning Images to images  
 
 <hr>
