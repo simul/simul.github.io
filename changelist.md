@@ -7,6 +7,8 @@ weight: 120
 
 Version HEAD
 ---
+Tue 03 Dec : Fix for Qt 2017(5.9.8) file copy. Qt5CLucene.dll and qnativewifibearer.dll are not part of Qt5.9.8  
+Mon 02 Dec : Added QT_VER to release.properties  
 Fri 29 Nov : Crash on deleting cloud layer with volumes present  
 Fri 29 Nov : Fix ssleay/libeay usage by Qt: Must force Path Environment.  
 Fri 29 Nov : Updated XboxOne submodule.  
@@ -105,7 +107,5 @@ Sun 03 Nov : Cmake build fixes, removed unwanted files.
 Sun 03 Nov : Correct header includes for CMake.  
 Sun 03 Nov : Work on cloud volume selection and editing.  
 Sat 02 Nov : Fix error in DirectXTexD3D11.cpp  
-Sat 02 Nov : Add toolchain-Microsoft-GDK.cmake Improve cloud window editing.  
-Fri 01 Nov : Fixes to make sure Xbox GDK is supported  
 
 <hr>
