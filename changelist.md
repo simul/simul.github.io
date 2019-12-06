@@ -7,6 +7,8 @@ weight: 120
 
 Version HEAD
 ---
+Wed 04 Dec : Update to Snow pixel shader to make snowflakes more visible at smaller sizes.  
+Wed 04 Dec : Fix build path in py script.  
 Tue 03 Dec : Fix for Qt 2017(5.9.8) file copy. Qt5CLucene.dll and qnativewifibearer.dll are not part of Qt5.9.8  
 Mon 02 Dec : Added QT_VER to release.properties  
 Fri 29 Nov : Crash on deleting cloud layer with volumes present  
@@ -105,7 +107,5 @@ Mon 04 Nov : Fix missing Qt dependencies in TrueSkyUI_MD.
 Sun 03 Nov : Fix bad Cmake, was only creating GFX.cso for Xbox.  
 Sun 03 Nov : Cmake build fixes, removed unwanted files.  
 Sun 03 Nov : Correct header includes for CMake.  
-Sun 03 Nov : Work on cloud volume selection and editing.  
-Sat 02 Nov : Fix error in DirectXTexD3D11.cpp  
 
 <hr>
