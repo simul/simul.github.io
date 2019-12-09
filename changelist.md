@@ -7,6 +7,12 @@ weight: 120
 
 Version HEAD
 ---
+Mon 09 Dec : Fix for Vulkan validation error relating to VkQueryPool.  
+Fri 06 Dec : Initial commit for Vulkan profiling.  
+Fri 06 Dec : Updated DX12 SetIndexBuffer to correctly override the crossplatform version, made sure that textures texture arrays will always be set as such for vulkan  
+Fri 06 Dec : Added Profiling for OpenGL. Platform/OpenGL/Profiler.h/.cpp is used.  
+Thu 05 Dec : Vulkan: Added Dummy2DMS texture, and modify FinishLoading() as vkCmdCopyBufferToImage() need its dstImage to have a sample count equal to VK_SAMPLE_COUNT_1_BIT.  
+Thu 05 Dec : Sfx adds multisample texture info .sfxo files.  
 Wed 04 Dec : Update to Snow pixel shader to make snowflakes more visible at smaller sizes.  
 Wed 04 Dec : Fix build path in py script.  
 Tue 03 Dec : Fix for Qt 2017(5.9.8) file copy. Qt5CLucene.dll and qnativewifibearer.dll are not part of Qt5.9.8  
@@ -23,6 +29,7 @@ Wed 27 Nov : Disabled Visibility
 Wed 27 Nov : UI Updates + set time to selected keyframe  
 Wed 27 Nov : Externally-set ResourceStates for D3D12.  
 Wed 27 Nov : Externally-set ResourceStates for D3D12.  
+Tue 26 Nov : Fixed the default orientation for CloudWindowEditor.  
 Tue 26 Nov : Fix CloudWindowEditor view lines, and rotateByOffsetPolar();  
 Tue 26 Nov : Feature level 12.0 for D3D12 supported.  
 Mon 25 Nov : Cloud Index initial implementation.  
@@ -100,12 +107,5 @@ Tue 05 Nov : Quaternion slerp fix and layout.
 Tue 05 Nov : Update splash for SkySequencer.  
 Tue 05 Nov : Relative quaternions for cloud volumes.  
 Mon 04 Nov : Volumes working in initial form.  
-Mon 04 Nov : Cloud volumes work in progress.  
-Mon 04 Nov : Remove glfx  
-Mon 04 Nov : Remove nodeeditor  
-Mon 04 Nov : Fix missing Qt dependencies in TrueSkyUI_MD.  
-Sun 03 Nov : Fix bad Cmake, was only creating GFX.cso for Xbox.  
-Sun 03 Nov : Cmake build fixes, removed unwanted files.  
-Sun 03 Nov : Correct header includes for CMake.  
 
 <hr>
