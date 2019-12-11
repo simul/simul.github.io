@@ -7,6 +7,7 @@ weight: 120
 
 Version HEAD
 ---
+Tue 10 Dec : Added ability for water to run off game time instead of real time, other small changes  
 Mon 09 Dec : Fix for Vulkan validation error relating to VkQueryPool.  
 Fri 06 Dec : Initial commit for Vulkan profiling.  
 Fri 06 Dec : Updated DX12 SetIndexBuffer to correctly override the crossplatform version, made sure that textures texture arrays will always be set as such for vulkan  
@@ -106,6 +107,5 @@ Wed 06 Nov : Fix broken spacing in registration box for sequencer.
 Tue 05 Nov : Quaternion slerp fix and layout.  
 Tue 05 Nov : Update splash for SkySequencer.  
 Tue 05 Nov : Relative quaternions for cloud volumes.  
-Mon 04 Nov : Volumes working in initial form.  
 
 <hr>
