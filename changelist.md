@@ -7,6 +7,13 @@ weight: 120
 
 Version HEAD
 ---
+Thu 12 Dec : Update RenderingPlugin.cpp  
+Thu 12 Dec : Update RenderingPlugin.cpp  
+Thu 12 Dec : LightweightConstantUpdateEngine::kMaxResourceCount size check.  
+Thu 12 Dec : LightweightConstantUpdateEngine::kMaxResourceCount size check.  
+Thu 12 Dec : PS4 SDK 7 compile fixes.  
+Wed 11 Dec : Python script uses release.properties.  
+Wed 11 Dec : Commiting missing file  
 Tue 10 Dec : Added ability for water to run off game time instead of real time, other small changes  
 Mon 09 Dec : Fix for Vulkan validation error relating to VkQueryPool.  
 Fri 06 Dec : Initial commit for Vulkan profiling.  
@@ -100,12 +107,5 @@ Sat 09 Nov : Cloud volumes initially functional: Some fixes to D3D12 structured 
 Fri 08 Nov : Disable add cloud volume action until feature is complete.  
 Fri 08 Nov : Vulkan validation fixes. Add SphereRenderer.  
 Wed 06 Nov : Doc changes  
-Wed 06 Nov : Update 0 unreal index.md  
-Wed 06 Nov : Create 4 Performance.md  
-Wed 06 Nov : Fix bug where destroyed sequencer window still had its HWND in the toRender list.  
-Wed 06 Nov : Fix broken spacing in registration box for sequencer.  
-Tue 05 Nov : Quaternion slerp fix and layout.  
-Tue 05 Nov : Update splash for SkySequencer.  
-Tue 05 Nov : Relative quaternions for cloud volumes.  
 
 <hr>
