@@ -7,6 +7,7 @@ weight: 120
 
 Version HEAD
 ---
+Fri 13 Dec : Added some water optimisations and options  
 Thu 12 Dec : Update RenderingPlugin.cpp  
 Thu 12 Dec : Update RenderingPlugin.cpp  
 Thu 12 Dec : LightweightConstantUpdateEngine::kMaxResourceCount size check.  
@@ -106,6 +107,5 @@ Mon 11 Nov : FAQ update for Windows 7
 Sat 09 Nov : Cloud volumes initially functional: Some fixes to D3D12 structured buffers found.  
 Fri 08 Nov : Disable add cloud volume action until feature is complete.  
 Fri 08 Nov : Vulkan validation fixes. Add SphereRenderer.  
-Wed 06 Nov : Doc changes  
 
 <hr>
