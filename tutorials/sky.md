@@ -61,7 +61,7 @@ Sun
 {:.keyframe}
 Variable                                                                                |       Definition                                                                                                                                                                                                                                              |       Value
 --------------                                                                  |--------------                                                                                                                                                                                                                                         |--------------
-Automatic Sun Position                                                  |Whether to calculate sun position from date and time.                                                                                                                                                          |Bool
+Automatic Sun Position                                                  |Whether to calculate sun's position to be Geographically Accurate. Disable to set the position manaully.                                                       |Bool
 
 
 {:.layer}
@@ -72,7 +72,7 @@ Irradiance                                                                      
 Diameter                                                                                |Size of sun’s radius in degrees                                                                                                                                                                                                      |0.0 to 3600.0
 Link Keyframe time and daytime                                  |See [Link Keyframe Time](#linktime)                                                                                                                                                                                            |Bool
 Time Zone                                                                               |Time Zone based on Greenwich Mean Time (GMT).                                                                                                                                                                          |Between -12.0 and 12.0
-Start Date                                                                              |For calculating start position of sun/moon. Where 01/01/2000 = 0 , -1 = 31/12/1999, 01/01/2016 = 5844(format DD:MM:YYYY).                      |-100000 to 100000
+Start Date                                                                              |For calculating position of sun/moon. Where 01/01/2000 = 0 , -1 = 31/12/1999, 01/01/2016 = 5844(format DD:MM:YYYY).                    |-100000 to 100000
 
 {:.object}
 Variable                                                                                |       Definition                                                                                                                                                                                                                                              |       Value
@@ -210,6 +210,12 @@ Sky Colours
 You can manually set the colour of the horizon or the upper sky(Zenith) using the Sky Keyframes. **Enable Store as Colours** and then set your colours manually. This is a great way to create unique, alien landscapes.
 
 Make sure to apply the colour to all your keyframes if you want it to be throughout the whole day cycle, or set different colours for different times, and watch as the Sky blends as time progresses.
+
+Geographically Accurate Sun Positioning
+----------------------------------------
+Our Sun's Position is realistically located in relation to the world based off longitude, latitude along with date and time. The date settings are available in the Sky Layer of the Sequencer, while the Longitude, latitude and heading values are located in the Update section on the trueSKYSequenceActor. 
+
+longlat.png
 
 
 

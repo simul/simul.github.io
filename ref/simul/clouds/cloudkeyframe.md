@@ -67,10 +67,6 @@ The properties are:
 - distributionTransition
 - upperDensity
 - localDensity
-- windSpeed
-- windDirection
-- windHeading
-- windHeadingDegrees
 - persistence
 - cloudBase
 - cloudHeight
@@ -137,11 +133,7 @@ Fields
 
 **upper_density**  < The transition from the cloud base to the upper cloud (0 to 1)
 
-**wind_speed**  < The proportion of cloud density retained in the upper layer, above the distribution_transition.
-
-**wind_direction**  < The wind speed in m/s
-
-**cloud_base_km**  < The wind direction
+**cloud_base_km**  < The proportion of cloud density retained in the upper layer, above the distribution_transition.
 
 **cloud_height_km**  < The base altitude of this cloud layer.
 
@@ -171,7 +163,9 @@ Fields
 
 **offsetKm**  < What proportion of noise is applied at the cloudbase, between 0 and 1.0.
 
-**octaves_f**  < The calculated position offset of this keyframe due to the accumulation of wind motion (see 
+**octaves_f**  < The calculated position offset of this keyframe due to the accumulation of wind motion (see [wind_speed](/ref/wind_speed)
+and [wind_direction](/ref/wind_direction)
+).
 
 **simulation**  < Only used for interpolation - changes will be ignored. See 
 

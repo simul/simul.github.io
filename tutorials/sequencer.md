@@ -134,12 +134,6 @@ To edit a keyframe, first select it with left click. This will bring up all the 
 
 Now you can see all the variables that can be altered within the Sequencer. You can either drag the bar to alter the value, or edit the values by typing. All of the values are clamped to certain ranges. Plus, each value can be returned to its default position with the yellow arrow to the right of the value. This arrow will only appear of the value has been changed from it's default state.
 
-Presets allows you to automatically set a keyframe to one of our example keyframes. Click on a correlating preset (don't click a sky preset if you have a cloud keyframe selected) and then click apply to produce the selected preset on the current keyframe. 
-
-![](/images/unreal/presets.png)
-
-<sup>You can add your own presets with the create option</sup>
-
 Layers also have their own settings which will change the values of all the keyframes in that layer. An example of this is within the Sky layer, you can change the diameter of the sun. This effect will take place for all the Sky Keyframes. To select a layer, just click on its name in the column to the left of the timeline. To see what each of the settings do, head over to our [Cloud](clouds), [Sky](sky.html), or [Storm](storms.html) pages.
 
 {:.ue4-specific}

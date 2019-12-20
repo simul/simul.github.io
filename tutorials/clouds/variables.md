@@ -19,7 +19,7 @@ These setting will alter setting about how and in what are the clouds are genera
 Variable                                                                        |       Definition                                                                                                                                                                                                              |       Value
 --------------                                                          |--------------                                                                                                                                                                                                         |--------------
 Cloudiness                                                                      |How much cloud in the cloud layer.                                                                                                                                                             | 0.0 to 1.0
-Cloudbase                                                                       |Base altitude of cloud layer.                                                                                                                                                                          |-1.0 to 20.0
+Cloudbase                                                                       |Base altitude of cloud layer, in km.                                                                                                                                                           |-1.0 to 20.0
 Layer Height                                                            |Height of cloud layer, in km.                                                                                                                                                                          |-1.0 to 20.0
 Volume Width                                                            |Width of cloud layer, in km                                                                                                                                                                            |-1.0 to 20.0
 
@@ -63,18 +63,19 @@ There are individual settings to help customise each of the different layers, al
 By default, the cloud volume repeats at the edges, and the volume width is controlled by the keyframe value **Cloud Width**. You can change the size of this volume freely, but to increase the size while retaining the same level of detail, you will also need to modify the size of the volumetric grid. For example, to double the size of the volume, select all the 3D cloud keyframes, and double the size of **Cloud Width**. Select the cloud layer, and increase both the **Cloud Grid Width**, and the **Generation Noise Resolution**, by a factor of two.
 
 {:.keyframe}
-Variable                                                                        |       Definition                                                                                      |       Value
---------------                                                          |--------------                                                                                 |--------------
-Max Density                                                                     |Maximum allowed density.                                                               |0.0 to 1.0
-Local Density                                                           |Current density of the clouds.                                                 |0.0 to 1.0 
-Base layer                                                                      |Maximum density of the clouds.                                                 |0.0 to 2.0
-Transition                                                                      |Transition from cloudbase to upper cloud.                              |0.0 to 1.0
-Worley Noise                                                            |How much Worley noise to apply.                                                |0.0 to 1.0
-Worley Scale                                                            |Scale of Worley noise.                                                                 |0.0 to 12.0 
-Diffusivity                                                                     |How much cloud edges should be diffused.                               |0.0 to 1.0
-Persistence                                                                     |Fractal persistence for generating clouds.                             |0.0 to 1.0
-Octaves                                                                         |Number of noise octaves to generate clouds.                    |1 to 5
-Upper Density                                                           |Proportion of cloud density retained in upper layer.   |0.0 to 1.0
+Variable                                                                        |       Definition                                                                                                                                                                                                                                                              |       Value
+--------------                                                          |--------------                                                                                                                                                                                                                                                         |--------------
+Max Density                                                                     |Maximum density of all layers                                                                                                                                                                                                                          |0.0 to 1.0
+Local Density                                                           |Current density of the clouds.                                                                                                                                                                                                                         |0.0 to 1.0 
+Base layer                                                                      |Density of clouds in the lower layer. Clouds are always denser at the lower portions of the clouds, so this can also act as Max Density        |0.0 to 2.0
+Transition                                                                      |Density of middle layer of clouds - the transition from cloudbase to upper cloud.                                                                                                                      |0.0 to 1.0
+Upper Density                                                           |Density of clouds in the upper layer.                                                                                                                                                                                                          |0.0 to 1.0
+Worley Noise                                                            |How much Worley noise to apply.                                                                                                                                                                                                                        |0.0 to 1.0
+Worley Scale                                                            |Scale of Worley noise.                                                                                                                                                                                                                                         |0.0 to 12.0 
+Diffusivity                                                                     |How much cloud edges should be diffused.                                                                                                                                                                                                       |0.0 to 1.0
+Persistence                                                                     |Fractal persistence for generating clouds.                                                                                                                                                                                                     |0.0 to 1.0
+Octaves                                                                         |Number of noise octaves to generate clouds.                                                                                                                                                                                            |1 to 5
+
 
 
 <hr>
@@ -83,17 +84,7 @@ Wind
 =========
 Using Wind to create a dynamic sky and moving shadows is an effective way to make an environment feel alive. There are different ways to shift the clouds, however for clouds to move the time must be progressing. Learn how to control time [here](time.html).
 
-Known Issues
--------------
-Setting two keyframes to different wind speeds can cause a visual jump in the clouds. Currently recommend setting all keyframes on one layer to the same speed. 
-
-Setting wind speed on the Actor will not adjust movement, only visual Churn. Currently being fixed.
-
-{:.keyframe}
-Variable                                                                        |       Definition                                                                                                                                                                                      |       Value
---------------                                                          |--------------                                                                                                                                                                                 |--------------
-Wind Speed (keyframe)                                           |Wind speed in m/s.                                                                                                                                                                             |0.0 to 1000.0
-Wind Heading                                                            |Horizontal cloud movement direction, in degrees.                                                                                                               |0.0 to 360.0
+The easiest way to control the movement of the clouds is throught the use of the cloud window. For one keyframe you should select the position of the clouds, then create a new keyframe and select the new position. 
 
 {:.layer}
 Variable                                                                        |       Definition                                                                                                                                                                                      |Value
@@ -127,7 +118,7 @@ Churn                                                                           
 Variable                                                                        |       Definition                                                                                                                                                                                      |       Value
 --------------                                                          |--------------                                                                                                                                                                                 |--------------
 Noise Period                                                            |Fractal noise period, in days.                                                                                                                                                 |0.001 to 1000.0
-Noise Phase                                                                     |
+Noise Phase                                                                     |Phase of the cloud-generation noise texture                                                                                                                    |0 to 2pi
 Noise Resolution                                                        |3D Perlin noise resolution, for cloud generation.                                                                                                              |Powers of 2 between 4 and 64
 
 {:.object}
@@ -137,7 +128,7 @@ Edge Noise Persistence                                          |Persistence for
 Edge Noise Frequency                                            |Frequency of edge noise.                                                                                                                                                               |Powers of 2 between 1 and 16
 Edge Noise Texture Size                                         |Size of edge noise texture.                                                                                                                                                    |Powers of 2 between 4 and 64
 Edge Noise Wavelength                                           |Wavelength of the edge noise. (Great for hiding Grid Patterns)                                                                                 |0.1 to 100
-Cell Noise Wavelength                                           |Wavelength of Cell Noise                                                                                                                                                               |0.1 to 100
+Cell Noise Wavelength                                           |Wavelength of Cell Noise.                                                                                                                                                              |0.1 to 100
 Cell Noise Texture Size                                         |Size of cell noise texture.                                                                                                                                                    |Powers of 2 from 16 to 256
 Max Fractal Amplitude                                           |Strength of edge noise effect.                                                                                                                                                 |0.1 to 10
 

@@ -81,6 +81,10 @@ Functions
 | bool | [StaticRenderKeyframeHasBool](#StaticRenderKeyframeHasBool)(simul::sky::uid uid, char name) |
 | bool | [StaticRenderKeyframeHasFloat](#StaticRenderKeyframeHasFloat)(simul::sky::uid uid, char name) |
 | bool | [StaticRenderKeyframeHasInt](#StaticRenderKeyframeHasInt)(simul::sky::uid uid, char name) |
+| float | [StaticRenderKeyframerGetFloat](#StaticRenderKeyframerGetFloat)(simul::sky::uid uid, char name) |
+| int | [StaticRenderKeyframerGetInt](#StaticRenderKeyframerGetInt)(simul::sky::uid uid, char name) |
+| void | [StaticRenderKeyframerSetFloat](#StaticRenderKeyframerSetFloat)(simul::sky::uid uid, char name, float value) |
+| void | [StaticRenderKeyframerSetInt](#StaticRenderKeyframerSetInt)(simul::sky::uid uid, char name, int value) |
 | void | [StaticRenderKeyframeSetBool](#StaticRenderKeyframeSetBool)(simul::sky::uid uid, char name, bool value) |
 | void | [StaticRenderKeyframeSetFloat](#StaticRenderKeyframeSetFloat)(simul::sky::uid uid, char name, float value) |
 | void | [StaticRenderKeyframeSetInt](#StaticRenderKeyframeSetInt)(simul::sky::uid uid, char name, int value) |
@@ -304,6 +308,18 @@ Has the keyframe with the given ID got the given float value
 <a name="StaticRenderKeyframeHasInt"></a>
 ### bool StaticRenderKeyframeHasInt(simul::sky::uid uid, char name)
 Has the keyframe with the given ID got the given int value
+<a name="StaticRenderKeyframerGetFloat"></a>
+### float StaticRenderKeyframerGetFloat(simul::sky::uid uid, char name)
+Get a float value for a given Layer
+<a name="StaticRenderKeyframerGetInt"></a>
+### int StaticRenderKeyframerGetInt(simul::sky::uid uid, char name)
+Get an int value for a given Layer
+<a name="StaticRenderKeyframerSetFloat"></a>
+### void StaticRenderKeyframerSetFloat(simul::sky::uid uid, char name, float value)
+Set a float value for a given Layer
+<a name="StaticRenderKeyframerSetInt"></a>
+### void StaticRenderKeyframerSetInt(simul::sky::uid uid, char name, int value)
+Set an int value for a given Layer
 <a name="StaticRenderKeyframeSetBool"></a>
 ### void StaticRenderKeyframeSetBool(simul::sky::uid uid, char name, bool value)
 Set a bool value for a given keyframe

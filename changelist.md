@@ -7,10 +7,14 @@ weight: 120
 
 Version HEAD
 ---
+Thu 19 Dec : Reverting timer, adding check to see if licence is long enough to even send  
 Tue 17 Dec : Fix skySequencer installer.  
 Mon 16 Dec : Update GetDependencies.bat  
+Mon 16 Dec : Lowering default values. Capitalizing Names on Sequencer.  
 Mon 16 Dec : Increased timeout time when waiting for data  
+Mon 16 Dec : Removed Override Wind, now on by default.  
 Fri 13 Dec : Added some water optimisations and options  
+Fri 13 Dec : Removal of Wind values from Sequencer. Doc Update. Blueprint section soon to be rewritten  
 Thu 12 Dec : Update RenderingPlugin.cpp  
 Thu 12 Dec : Update RenderingPlugin.cpp  
 Thu 12 Dec : LightweightConstantUpdateEngine::kMaxResourceCount size check.  
@@ -23,6 +27,7 @@ Mon 09 Dec : Fix for Vulkan validation error relating to VkQueryPool.
 Fri 06 Dec : Initial commit for Vulkan profiling.  
 Fri 06 Dec : Updated DX12 SetIndexBuffer to correctly override the crossplatform version, made sure that textures texture arrays will always be set as such for vulkan  
 Fri 06 Dec : Added Profiling for OpenGL. Platform/OpenGL/Profiler.h/.cpp is used.  
+Thu 05 Dec : Initial fix to getting cloud layer variables  
 Thu 05 Dec : Vulkan: Added Dummy2DMS texture, and modify FinishLoading() as vkCmdCopyBufferToImage() need its dstImage to have a sample count equal to VK_SAMPLE_COUNT_1_BIT.  
 Thu 05 Dec : Sfx adds multisample texture info .sfxo files.  
 Wed 04 Dec : Update to Snow pixel shader to make snowflakes more visible at smaller sizes.  
@@ -102,10 +107,5 @@ Wed 13 Nov : Fixed Login issues. Update Docs.
 Tue 12 Nov : .  
 Tue 12 Nov : New lighting: incremental cloud lighting.  
 Tue 12 Nov : Execute deferred rendering for editor if set.  
-Mon 11 Nov : Cloud volume improvements: UI more functional.  
-Mon 11 Nov : Fix Blueprint Crash. Initial fix for registration.  
-Mon 11 Nov : Changed to using a precipitation volume texture. Raytrace function updated to the volume texture. Debug has new technique trace_volume  
-Mon 11 Nov : Fix PlatformStructuredBuffer errors in D3D12.  
-Mon 11 Nov : FAQ update for Windows 7  
 
 <hr>

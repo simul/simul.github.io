@@ -59,6 +59,10 @@ Functions
 | bool | [KeyframeHasBool](#KeyframeHasBool)(simul::sky::uid uid, char name) |
 | bool | [KeyframeHasFloat](#KeyframeHasFloat)(simul::sky::uid uid, char name) |
 | bool | [KeyframeHasInt](#KeyframeHasInt)(simul::sky::uid uid, char name) |
+| float | [KeyframerGetFloat](#KeyframerGetFloat)(simul::sky::uid uid, char name) |
+| int | [KeyframerGetInt](#KeyframerGetInt)(simul::sky::uid uid, char name) |
+| void | [KeyframerSetFloat](#KeyframerSetFloat)(simul::sky::uid uid, char name, float value) |
+| void | [KeyframerSetInt](#KeyframerSetInt)(simul::sky::uid uid, char name, int value) |
 | void | [KeyframeSetBool](#KeyframeSetBool)(simul::sky::uid uid, char name, bool value) |
 | void | [KeyframeSetFloat](#KeyframeSetFloat)(simul::sky::uid uid, char name, float value) |
 | void | [KeyframeSetInt](#KeyframeSetInt)(simul::sky::uid uid, char name, int value) |
@@ -74,7 +78,7 @@ Functions
 | void | [SetBool](#SetBool)(char name, bool value) |
 | void | [SetCloudPlacementTexture](#SetCloudPlacementTexture)(int id, void texture, vec2 pos_km, vec2 ext_km) |
 | void | [SetFloat](#SetFloat)(char name, float value) |
-| void | [SetInt](#SetInt)(char name, int value) |
+| void | [SetInt](#SetInt)(char name, int value, simul::sky::uid layerID) |
 | void | [SetMatrix4x4](#SetMatrix4x4)(char name, float matrix4x4) |
 | void | [SetPointLight](#SetPointLight)(int id, pos, float min_radius, float max_radius, irradiance) |
 | void | [SetString](#SetString)(char name, char value) |
@@ -233,6 +237,18 @@ Has the keyframe with the given ID got the given float value
 <a name="KeyframeHasInt"></a>
 ### bool KeyframeHasInt(simul::sky::uid uid, char name)
 Has the keyframe with the given ID got the given int value
+<a name="KeyframerGetFloat"></a>
+### float KeyframerGetFloat(simul::sky::uid uid, char name)
+Get a bool value for a given keyframer
+<a name="KeyframerGetInt"></a>
+### int KeyframerGetInt(simul::sky::uid uid, char name)
+Get a int value for a given keyframer
+<a name="KeyframerSetFloat"></a>
+### void KeyframerSetFloat(simul::sky::uid uid, char name, float value)
+Set a float value for a given keyframer
+<a name="KeyframerSetInt"></a>
+### void KeyframerSetInt(simul::sky::uid uid, char name, int value)
+Set a int value for a given keyframer
 <a name="KeyframeSetBool"></a>
 ### void KeyframeSetBool(simul::sky::uid uid, char name, bool value)
 Set a bool value for a given keyframe
@@ -280,7 +296,7 @@ A mask for cloud position
 ### void SetFloat(char name, float value)
 Sets a floating point value. nameshould be "Time", "Gamma", "Exposure", or "SimpleCloudShadowing".
 <a name="SetInt"></a>
-### void SetInt(char name, int value)
+### void SetInt(char name, int value, simul::sky::uid layerID)
 Sets an integer value. nameshould be "CloudSteps", or "Downscale".
 <a name="SetMatrix4x4"></a>
 ### void SetMatrix4x4(char name, float matrix4x4)
