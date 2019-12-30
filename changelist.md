@@ -7,6 +7,7 @@ weight: 120
 
 Version HEAD
 ---
+Sun 29 Dec : Update Licence.md  
 Thu 19 Dec : Reverting timer, adding check to see if licence is long enough to even send  
 Tue 17 Dec : Fix skySequencer installer.  
 Mon 16 Dec : Update GetDependencies.bat  
@@ -106,6 +107,5 @@ Wed 13 Nov : Moved Unreal performance
 Wed 13 Nov : Fixed Login issues. Update Docs.  
 Tue 12 Nov : .  
 Tue 12 Nov : New lighting: incremental cloud lighting.  
-Tue 12 Nov : Execute deferred rendering for editor if set.  
 
 <hr>
