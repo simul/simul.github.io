@@ -7,6 +7,7 @@ weight: 120
 
 Version HEAD
 ---
+Tue 31 Dec : Linux build fixes  
 Sun 29 Dec : Update Licence.md  
 Thu 19 Dec : Reverting timer, adding check to see if licence is long enough to even send  
 Tue 17 Dec : Fix skySequencer installer.  
@@ -106,6 +107,5 @@ Wed 13 Nov : Test for Wayne
 Wed 13 Nov : Moved Unreal performance  
 Wed 13 Nov : Fixed Login issues. Update Docs.  
 Tue 12 Nov : .  
-Tue 12 Nov : New lighting: incremental cloud lighting.  
 
 <hr>
