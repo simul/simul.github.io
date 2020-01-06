@@ -7,6 +7,10 @@ weight: 120
 
 Version HEAD
 ---
+Fri 03 Jan : Fix Vulkan sample on Windows.  
+Fri 03 Jan : unistd include.  
+Fri 03 Jan : Fix bad spacing in Sfx files.  
+Fri 03 Jan : D3d12 build fixes.  
 Tue 31 Dec : Linux build fixes  
 Sun 29 Dec : Update Licence.md  
 Thu 19 Dec : Reverting timer, adding check to see if licence is long enough to even send  
@@ -103,9 +107,5 @@ Thu 14 Nov : Fix including wrong qt libs.
 Thu 14 Nov : Xbox build fix.  
 Wed 13 Nov : Xbox build fix.  
 Wed 13 Nov : Fix some Vulkan warnings.  
-Wed 13 Nov : Test for Wayne  
-Wed 13 Nov : Moved Unreal performance  
-Wed 13 Nov : Fixed Login issues. Update Docs.  
-Tue 12 Nov : .  
 
 <hr>
