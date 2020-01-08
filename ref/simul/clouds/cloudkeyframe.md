@@ -20,7 +20,6 @@ Functions
 | simul::crossplatform::Quaterniond | [GetAbsoluteOrientation](#GetAbsoluteOrientation)(simul::crossplatform::Quaterniond rel) |
 | float | [GetFloat](#GetFloat)(char name) |
 | int | [GetInt](#GetInt)(char name) |
-| simul::crossplatform::Quaterniond | [GetPrecipitationCentre](#GetPrecipitationCentre)() |
 | unsigned int | [GetPropertiesChecksum](#GetPropertiesChecksum)() |
 | bool | [HasFloat](#HasFloat)(char name) |
 | bool | [HasInt](#HasInt)(char name) |
@@ -49,10 +48,6 @@ Get a float with the given, case-insensitive, name
 <a name="GetInt"></a>
 ### int GetInt(char name)
 Get an int with the given, case-insensitive, name
-<a name="GetPrecipitationCentre"></a>
-### simul::crossplatform::Quaterniond GetPrecipitationCentre()
-Depending on precipitationRegion.lockToClouds, precipitationRegion.CentreKm is either absolute or relative.
-So this function is used to access the true centre position of the rain region.
 <a name="GetPropertiesChecksum"></a>
 ### unsigned int GetPropertiesChecksum()
 Check for properties that, if altered in the keyframe, would require regeneration of

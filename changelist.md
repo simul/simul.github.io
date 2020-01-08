@@ -7,6 +7,13 @@ weight: 120
 
 Version HEAD
 ---
+Tue 07 Jan : Fix for EditorRenderCloudWindow() not drawing cloud map textures. Initial fix for reversed sidereal sky background.  
+Mon 06 Jan : Output Simul path to log.  
+Mon 06 Jan : Shaderbin path fix.  
+Mon 06 Jan : Additional shader bin paths for deployed version.  
+Mon 06 Jan : Fix for deprecated std::getenv() in Effect::EnsureEffect(), changes to _dupenv_s() if defined(_CRT_SECURE_NO_WARNINGS). Fix for GPU profiling and RenderPlatform begin and end frame boolean check. Reset Position of Region defaults to zero offset from cloud keyframe orientation. Updated CloudKeyframe::GetPrecipitationCentre(), which defaults to returning the absolute position. Fix CloudWindowEditor::origin is constructor. Updated Precipitation Documentation.  
+Mon 06 Jan : Write shaderbin paths to log.  
+Mon 06 Jan : SkySequencer should work without Qt environment settings.  
 Fri 03 Jan : Fix Vulkan sample on Windows.  
 Fri 03 Jan : unistd include.  
 Fri 03 Jan : Fix bad spacing in Sfx files.  
@@ -52,6 +59,7 @@ Wed 27 Nov : Disabled Visibility
 Wed 27 Nov : UI Updates + set time to selected keyframe  
 Wed 27 Nov : Externally-set ResourceStates for D3D12.  
 Wed 27 Nov : Externally-set ResourceStates for D3D12.  
+Tue 26 Nov : QT dir fix.  
 Tue 26 Nov : Fixed the default orientation for CloudWindowEditor.  
 Tue 26 Nov : Fix CloudWindowEditor view lines, and rotateByOffsetPolar();  
 Tue 26 Nov : Feature level 12.0 for D3D12 supported.  
@@ -99,13 +107,5 @@ Fri 15 Nov : QT_INFIX to installer.
 Fri 15 Nov : QT_INFIX supported for custom Qt builds.  
 Fri 15 Nov : Fixed key frames being pasted to wrong layer when cloud layer IDs didn't correlate to row number.  
 Fri 15 Nov : Changed sampler lookup in precipitation volume texture.  
-Fri 15 Nov : Doc fix  
-Fri 15 Nov : Slight fix to Precipitation Docs  
-Fri 15 Nov : Moving to sky::uid. Updating Doc folder structure.  
-Fri 15 Nov : Added view lines to CloudWindowEditor. Updated to rotateByOffsetCartesian(), rotateByOffsetPolar() and DrawArc() function and shader. MainCameraViewStruct added to CloudRenderer.  
-Thu 14 Nov : Fix including wrong qt libs.  
-Thu 14 Nov : Xbox build fix.  
-Wed 13 Nov : Xbox build fix.  
-Wed 13 Nov : Fix some Vulkan warnings.  
 
 <hr>
