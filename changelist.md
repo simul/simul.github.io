@@ -7,6 +7,9 @@ weight: 120
 
 Version HEAD
 ---
+Thu 09 Jan : Removed duplicate BackgroundLatLongSphere() from sky.sfx  
+Wed 08 Jan : Added DrawMultipleCrossSections() to SphereRenderer for better viewing of the cloudDensity texture in the CloudWindow. Added high resolution MilkyWay background texture. Re-worked SiderealSky to improve sidereal accuracy.  
+Wed 08 Jan : Small fix for water geometry  
 Tue 07 Jan : Fix for EditorRenderCloudWindow() not drawing cloud map textures. Initial fix for reversed sidereal sky background.  
 Mon 06 Jan : Output Simul path to log.  
 Mon 06 Jan : Shaderbin path fix.  
@@ -104,8 +107,5 @@ Sat 16 Nov : Fix WindowsEnvironment.properties
 Fri 15 Nov : Add release.properties  
 Fri 15 Nov : Remove glfx  
 Fri 15 Nov : QT_INFIX to installer.  
-Fri 15 Nov : QT_INFIX supported for custom Qt builds.  
-Fri 15 Nov : Fixed key frames being pasted to wrong layer when cloud layer IDs didn't correlate to row number.  
-Fri 15 Nov : Changed sampler lookup in precipitation volume texture.  
 
 <hr>
