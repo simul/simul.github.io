@@ -107,9 +107,8 @@
 
 .ue4-specific
 {
-    color: white;
-    background: #565bf9;
-    border: 2px;
+
+    border: 1px;
     border-style: solid;
     border-color: black;
 
@@ -117,9 +116,7 @@
 
 .unity-specific
 {
-    color: white;
-    background: #418a7f;
-    border: 2px;
+    border: 1px;
     border-style: solid;
     border-color: black;
 }
@@ -326,8 +323,9 @@ input:checked + .slider:before {
 .options-bar {
     background-color: #e2e2e2;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: baseline;
+    padding:0 10px;
 }
 button.option_btn {
     border: #a9a9a9;
@@ -361,3 +359,69 @@ button.option_btn:hover {
     border-style: solid;
     border-width: 0px 1px 0px 0px;
 }*/
+
+.video-container {
+	position:sticky;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 95%;
+	height: 95%;
+}
+.video-wrapper {
+	width: 640px;
+	float:auto;
+	margin-left:200px;
+	margin-right:auto;
+	max-width: 100%;
+}
+
+.variables-key {
+  display:flex;
+  float:left;
+  justify-content: center;
+}
+
+.variables-key > span {
+	margin-right:10px;
+}
+
+.variables-key > span:before {
+  content: '';
+  display:inline-block;
+  width:12px;
+  height:12px;
+  margin-right:6px;
+}
+
+.variables-key .variable-keyframe:before {
+  background-color:red;
+}
+.variables-key .variable-layers:before {
+  background-color:green;
+}
+.variables-key .variable-actor:before {
+  background-color: blue;
+}
+
+.sidebar-3 {
+  font-size: 16px;
+}
+
+.engine-select {
+	display:flex;
+	align-items: center;
+}
+
+.engine-select p {
+	margin-right:10px;
+}
