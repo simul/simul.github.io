@@ -7,6 +7,32 @@ weight: 120
 
 Version HEAD
 ---
+Fri 17 Jan : Temporarily removed rainbow docs to allow for update  
+Fri 17 Jan : Doc updates  
+Fri 17 Jan : Fix for Rainbows and Amortization  
+Fri 17 Jan : Fix for install script.  
+Fri 17 Jan : Fix imported targets in CMakeLists to be global, so correct lib names are used for Debug sample-only builds.  
+Fri 17 Jan : Minor fixes and optimisations  
+Thu 16 Jan : Vulkan link fix.  
+Thu 16 Jan : Linux build fixes.  
+Thu 16 Jan : Alternate Vulkan lib link directory for Linux.  
+Thu 16 Jan : Amortization re-enabled.  
+Thu 16 Jan : Fix Cmake error.  
+Thu 16 Jan : Cloud amortization re-enabled.  
+Thu 16 Jan : Rain effect not superspeed.  
+Thu 16 Jan : Addded simul_refract_reflect.sl  
+Thu 16 Jan : CMake allows SIMUL_BUILD_SHADERS to be false, so shaders are not built.  
+Thu 16 Jan : Force Cmake to not exclude shader projects from build. Why would it do this?  
+Thu 16 Jan : Added Documentation for Rainbows. Other minor fixes.  
+Wed 15 Jan : Added missing image  
+Wed 15 Jan : Doc Updates  
+Wed 15 Jan : Rainbows now use a moisture value found in the nearFarTexture. Moisture values is saved into RaytracePixelOutput::nearFarDepth.w  
+Wed 15 Jan : Documentation Updates  
+Wed 15 Jan : CMake functional for samples. Include SkySequencer in main SDK installer.  
+Tue 14 Jan : Fix for OpenGL, Add half4 support to SFX for OpenGL only.  
+Mon 13 Jan : Fix for DX12 and Vulkan. OpenGL is WIP.  
+Mon 13 Jan : Using the view position, instead of just height. simul::vulkan::DeviceManagerInternal store the VkPhysicalDeviceFeatures, queried from the gpu. vkCreateDevice queries against the stored VkPhysicalDeviceFeatures for compatibility. simul::vulkan::Texture::IsValid() check for a valid object handle as well.  
+Fri 10 Jan : Added UI, Lunar Rainbows and General Fixes  
 Thu 09 Jan : Removed duplicate BackgroundLatLongSphere() from sky.sfx  
 Wed 08 Jan : Added DrawMultipleCrossSections() to SphereRenderer for better viewing of the cloudDensity texture in the CloudWindow. Added high resolution MilkyWay background texture. Re-worked SiderealSky to improve sidereal accuracy.  
 Wed 08 Jan : Small fix for water geometry  
@@ -38,7 +64,9 @@ Thu 12 Dec : LightweightConstantUpdateEngine::kMaxResourceCount size check.
 Thu 12 Dec : PS4 SDK 7 compile fixes.  
 Wed 11 Dec : Python script uses release.properties.  
 Wed 11 Dec : Commiting missing file  
+Wed 11 Dec : Added sun occlusion lookup, when drawing rainbows. Experimentation supernumerary rainbows added.  
 Tue 10 Dec : Added ability for water to run off game time instead of real time, other small changes  
+Tue 10 Dec : Updated rainbow blending and performance.  
 Mon 09 Dec : Fix for Vulkan validation error relating to VkQueryPool.  
 Fri 06 Dec : Initial commit for Vulkan profiling.  
 Fri 06 Dec : Updated DX12 SetIndexBuffer to correctly override the crossplatform version, made sure that textures texture arrays will always be set as such for vulkan  
@@ -48,13 +76,17 @@ Thu 05 Dec : Vulkan: Added Dummy2DMS texture, and modify FinishLoading() as vkCm
 Thu 05 Dec : Sfx adds multisample texture info .sfxo files.  
 Wed 04 Dec : Update to Snow pixel shader to make snowflakes more visible at smaller sizes.  
 Wed 04 Dec : Fix build path in py script.  
+Wed 04 Dec : Refining CS_DrawRainbow()  
 Tue 03 Dec : Fix for Qt 2017(5.9.8) file copy. Qt5CLucene.dll and qnativewifibearer.dll are not part of Qt5.9.8  
+Tue 03 Dec : Added CS_DrawRainbow  
 Mon 02 Dec : Added QT_VER to release.properties  
 Fri 29 Nov : Crash on deleting cloud layer with volumes present  
 Fri 29 Nov : Fix ssleay/libeay usage by Qt: Must force Path Environment.  
 Fri 29 Nov : Updated XboxOne submodule.  
+Fri 29 Nov : Updated XboxOne submodule.  
 Fri 29 Nov : Fix cloud.sfx precipitationVolumeRW texture type.  
 Fri 29 Nov : Added define SFX_D3D12  
+Fri 29 Nov : Initial commit for a rainbow_lookup texture.  
 Fri 29 Nov : Fix DX11 Precipitation Volume. Fix for PrecipitationRenderer to use the Precipitation Volume texture.  
 Thu 28 Nov : Fix for GetPrecipitationCentre().  
 Thu 28 Nov : Vulkan layout/resourcestate fixes.  
@@ -75,37 +107,5 @@ Mon 25 Nov : Heading etc works for cloud window panel.
 Sat 23 Nov : Added DXCompiler and switched D3d12 shader compilation to use dxc.  
 Sat 23 Nov : Text rendering fixes.  
 Fri 22 Nov : Prevent Unity overlay crash.  
-Fri 22 Nov : Fix for previous Commit  
-Fri 22 Nov : UI changes for cloudWindow  
-Fri 22 Nov : Added to lock guard to TrueSkyRenderer::RemoveView()  
-Fri 22 Nov : Cloud Window UI changes, small doc update  
-Fri 22 Nov : only if SIMUL_EDITOR is 1 reference sphereRenderer.  
-Thu 21 Nov : Extra debug info for shader loads.  
-Thu 21 Nov : Removal of old variables from sequencer. Added Extra Cloud section to docs.  
-Thu 21 Nov : Improved cloud volume editing.  
-Thu 21 Nov : Qt version revert to 5.9 as 5.12 has bugs in layout.  
-Wed 20 Nov : Fix warnings for D3d12.  
-Mon 18 Nov : Update Build.bat for recent CMake and Vs2017.  
-Mon 18 Nov : Fix OpenGL cloud lighting issues: nVidia driver bug can't cope with 16-bit floats in computable volume.  
-Mon 18 Nov : Moving images into one folder  
-Mon 18 Nov : Fixed image in docs  
-Mon 18 Nov : Amended file name and extension  
-Mon 18 Nov : Renamed precipitation folder to lowercase  
-Mon 18 Nov : Update to Help/tutorials/precipitation/3 how it works.md  
-Mon 18 Nov : Doc Fixes  
-Mon 18 Nov : Doc layout fix  
-Mon 18 Nov : Minor update to precipitation documentation.  
-Mon 18 Nov : Add files after merge: Help/tutorials/precipitation/3 how it works.md  
-Mon 18 Nov : Update to precipitation documentation.  
-Sun 17 Nov : Shader projects only depend on Sfx for Win/Lin.  
-Sun 17 Nov : .  
-Sun 17 Nov : Fix Sfx for GLSL texture size queries where texture is a parameter rather than global.  
-Sat 16 Nov : CMake dependencies.  
-Sat 16 Nov : Build fixes re. Qt  
-Sat 16 Nov : .  
-Sat 16 Nov : Fix WindowsEnvironment.properties  
-Fri 15 Nov : Add release.properties  
-Fri 15 Nov : Remove glfx  
-Fri 15 Nov : QT_INFIX to installer.  
 
 <hr>

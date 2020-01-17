@@ -155,12 +155,16 @@ Make sure the sequencer starts at the same time at each launch and the clouds sh
 
 My Clouds have an obvious pattern in them, how do I make it go away?
 -----------
-Noise is used to hide repetition, have a look at our [Noise Settings](tutorials/clouds#noise) to learn how to hide patterns effectively. If it is still an obvious grid, consider changing the size of the grid. This is done in the trueSKY actor within the world under "Render Grid X" and "Render Grid Y". Reducing both these values will make the grid sections smaller, resulting in higher quality clouds. This may however affect performance. Multiple cloud layers can also be used to help remove the appearance of repetition by making them intersect. Finally, make sure there is breaks within the clouds, as a sheet of clouds will always look the most repetitive.
+Noise is used to hide repetition, have a look at our [Noise Settings](tutorials/clouds/variables.html#noise) to learn how to hide patterns effectively. If it is still an obvious grid, consider changing the size of the grid. This is done in the trueSKY actor within the world under "Render Grid X" and "Render Grid Y". Reducing both these values will make the grid sections smaller, resulting in higher quality clouds. This may however affect performance. Multiple cloud layers can also be used to help remove the appearance of repetition by making them intersect. Finally, make sure there is breaks within the clouds, as a sheet of clouds will always look the most repetitive.
 
 
 How do I make the clouds appear less pixelated?
 ----------------------------------------
 Try increasing the clouds resolution in the trueSKY Object.
+
+My Clouds change with only one keyframe
+------------------------------------------
+Setting the 'Noise Period' value in the cloud layer in the sky sequencer to the minimum possible will stop the clouds from changing shape over time.
 
 How do I make the clouds move independently of time-of-day?
 --------------------------------------
@@ -192,8 +196,7 @@ Using Niagara plugin in your scene can result in your packaged product producing
 
 Mega Scans
 ----------
-Mega scans plugins e.g. Quixel will cause the trueSKY Sequence editor to not open and produce the error of "the application failed to start. Could not find the Qt platform plugin windows" This is a problem we are currently working towards fixing
-
+This issue has been resolved! Update your trueSKY to use it with Megascan plugins!
 </div>
 
 <div class="unity-specific">

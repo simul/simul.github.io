@@ -20,12 +20,13 @@ Indie
 -------------
 Our Indie licence is for projects with less than £100,000 budget. With this licence, you will have lifetime access to all trueSKY Plugins, products and tool sets. This licence requires either a one time payment of £100, or 10 monthly payments of £15 (totalling £150). Either payment option will give you immediate access to trueSKY and all of its features. You can purchase an Indie Licence [Here](https://simul.co/pricing/).
 
-See our [Indie Licence Agreement.](iula)
+See our [Indie Licence Agreement.](iula.html)
 
 Pro
 ---------------
-trueSKY pro licence is for large projects, where the budget is over £100,000. Not only do you get access to all of trueSKY's Plugins and tool sets, you will also gain access to the full trueSKY source code. Prices for this licence will be determined on certain factors about your company. You can apply for a quote [here](https://simul.co/register/pro). If you already have an account, you should add your company details onto your profile page [here](https://simul.co/account/company), then request a quote through your account dashboard. 
+trueSKY pro licence is for large projects, where the budget is over £100,000. Not only do you get access to all of trueSKY's Plugins and tool sets, you can also gain access to the full trueSKY source code(at an additional cost). Prices for this licence will be determined on certain factors about your company. You can apply for a quote [here](https://simul.co/register/pro). If you already have an account, you should add your company details onto your profile page [here](https://simul.co/account/company), then request a quote through your account dashboard. 
+
 
 Educational
 -------------------
-We offer free educational licences. These license cannot be used commercially. For more information, please email us at [contact@simul.co](mailto:contact@simul.co).
+We offer free educational licences. These license cannot be used commercially, and are only availabe for PC. For more information, please email us at [contact@simul.co](mailto:contact@simul.co), using your academic email.

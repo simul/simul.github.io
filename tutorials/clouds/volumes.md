@@ -17,18 +17,24 @@ How to create a Volume
 -----------------------
 To create a volume, simply right click within the cloud layer and select "Add new Volume"
 
-![](/images/add new volume right click)
+![](/images/addNewVolume.png)
+
+
+![](/images/volumeWorldGrid.png)
 
 
 This will turn this layer into a volume layer, meaning this layer will only use volumes, not a repeating skyline. If you still want a repeating sky as well, simply create another layer.
 
-of a volume
+of volume and repeating sky
 
 Editing Volumes
 --------------------
 There are two modes of editing in the Cloud Window - Keyframe and Volume. **Double click** to switch between the editing modes. In Keyframe mode, you can drag the whole layer around, along with any volumes in that layer. The positions you move volumes to in keyframe mode are relative to the keyframe you have selected.
 
-images of different modes
+![](/images/volumeEditing.png)
+
+
+In volume edit mode, you can move volumes individually and adjust their radius.
 
 In Volume edit mode, you can individually move and adjust each volume in your layer. You must have a volume present to enter Volume Edit mode. To move them, click and drag from the volume centre. You should see the change in your scene as you move it.
 
@@ -39,11 +45,18 @@ Currently, we can create cylindrical shapes. The size of these cylinders can be 
 If you want to adjust the base height of the volume, use the Cloudbase in the Cloud keyframe settings. This means all clouds in one layer start at the same height. Add volumes multiple layers if you want alternate heights.
 
 
-Example Images
+Examples
 ------------------
-The new cloud volume system can be used to create small, specifically shaped clouds, large formations of clouds that are bounded to an area or even a mixture of both. Here are just a few examples of what can now be done!
+The new cloud volume system can be used to create small, specifically shaped clouds, or large formations of clouds that are bounded to an area. You can even mix them together! Here are just a few examples of what can now be done! Email us with your examples if you would like to be featured!
 
-/images of volumes
+![](/images/volume1.png)
+
+
+![](/images/volume2.png)
+
+
+![](/images/volume3.png)
+
 
 
 

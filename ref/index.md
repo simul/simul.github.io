@@ -11,6 +11,8 @@ weight: 60
 Namespaces
 ----------
 
+This is all automatically generated from our codebase, so apologies for any errors.
+
 * [**Base**](simul/base.html)      
 
 * [**Math**](simul/math.html)        

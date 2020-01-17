@@ -43,7 +43,7 @@ Functions
 | void | [SetEnableStorms](#SetEnableStorms)(bool s) |
 | void | [SetEnvironment](#SetEnvironment)(simul::clouds::Environment e) |
 | void | [SetExternalCloudTexture](#SetExternalCloudTexture)(simul::crossplatform::Texture) |
-| void | [SetIlluminationTexture](#SetIlluminationTexture)(simul::crossplatform::Texture) |
+| void | [SetLightingQueryResult](#SetLightingQueryResult)(LightingQueryResult _lightingQueryResult) |
 | void | [SetMaxFadeAltitudeKm](#SetMaxFadeAltitudeKm)(float ma_km) |
 | void | [SetMaxFadeDistanceKm](#SetMaxFadeDistanceKm)(float dist_km) |
 | void | [SetMaxSlices](#SetMaxSlices)(int viewport_id, int maxs) |
@@ -147,8 +147,8 @@ Set the sky interface.
 ### void SetExternalCloudTexture(simul::crossplatform::Texture)
 Where we create the main volume texture for rendering elsewhere, we pass it in here.
 This permits ESRAM on XboxOne for example, in a game engine.
-<a name="SetIlluminationTexture"></a>
-### void SetIlluminationTexture(simul::crossplatform::Texture)
+<a name="SetLightingQueryResult"></a>
+### void SetLightingQueryResult(LightingQueryResult _lightingQueryResult)
 Show the cloud volume window on the lat-long sphere.
 <a name="SetMaxFadeAltitudeKm"></a>
 ### void SetMaxFadeAltitudeKm(float ma_km)

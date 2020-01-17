@@ -17,32 +17,32 @@ Use the Blueprint function GetProfilingText to get GPU and CPU timing numbers fo
 <div class="ue4-specific">
 
 Enabling Profiling
-================
+---------------
 
 trueSKY for Unreal has a built-in GPU and CPU profiler that shows detailed performance information. To enable it, use the console command
 
-r.truesky.profiling 1
+**r.truesky.profiling 1**
 
 Profiling is displayed as a tree. You can append the maximum detail levels for the GPU and CPU to the command, e.g.
 
-r.truesky.profiling 1 7 5
+**r.truesky.profiling 1 7 5**
 
 This will show a profiling tree seven levels deep for the GPU, and five levels deep for the CPU.
 
 To output the profiling data to the Log, use
 
-trueskyprofileframe
+**trueskyprofileframe**
 
 Depending on the output, you may want to adjust different trueSKY parameters for optimal performance.
 
 </div>
 
 High Cost Settings
-==================
+---------------
 We are always aiming to increase performance where we can. This section may change based on improvements we make.
 
 Clouds
-=========
+-----------------
 
 Maximum Cloud Resolution
 -----------------

@@ -13,7 +13,7 @@ Precipitation
 ====================
 Precipitation can be attached to any cloud keyframe and it will produce precipitation based on cloud position and thickness (if desired).
 
-* [**Tutorial**](tutorial.html)                                                         - Learn how to create a rain and snow in your scene.
+* [**Tutorial**](tutorials.html)                                                                - Learn how to create a rain and snow in your scene.
 
 * [**Variables**](variables.html)                                                       - Details of all the different variables for precipitation. 
 
@@ -31,10 +31,11 @@ Ensure there are enough cloud above the viewer to produce precipitation. If ther
 {:.ue4-specific}
 Double check you have trueSKY Translucent as a [Post Process.](/faq.html#postprocess) 
 
-Precipitation under cover?
---------------------------
 
 <div class="ue4-specific">
+
+Precipitation under cover?
+--------------------------
 
 * To prevent precipitation from falling in covered areas, create a SceneCapture2D actor and give it a texture target that contains only a red channel; e.g. RainDepthRT from the trueSKY content. Make the Capture Source "SceneDepth in R". You don't need to enable "Capture Every Frame" unless you expect the geometry to change.
 

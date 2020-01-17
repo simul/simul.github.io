@@ -29,7 +29,22 @@ Getting Started
 
 <hr>
 
-Useful Links
+How to:
+---------
+
+* [Set up Rain/Snow](/tutorials/precipitation/tutorials.html)
+
+* [Set up a Cloud Volume](/tutorials/precipitation/volumes.html)
+
+* [Day/Night Transition](/tutorials/time/tutorials.html)
+
+* [Set up Water](/tutorials/water/tutorials.html)
+
+* [Edit Clouds at runtime with blueprints](/tutorials/unreal/blueprints.html)
+
+
+
+Useful External Links
 ---------------------------
 
 * [**Check out our YouTube Channel**](https://www.youtube.com/user/simulsoftware){:target="_blank"}       - You can find tutorials and showcases here 

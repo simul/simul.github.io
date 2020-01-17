@@ -28,8 +28,8 @@ Variable                                                                        
 --------------                                                          |--------------                                                                                                                                                                                                         |----------
 Class                                                                           |How the renderer should raytrace Clouds. If you want a layer of Whispy Clouds, set this to Cirrus                                      |Standard = 0, Cirrus = 1
 Default Slices                                                          |Number of slices in main view.                                                                                                                                                                         |Between 80 and 255
-Grid Width                                                                      |Width of grid                                                                                                                                                                                                          |Powers of 2 between 16 and 512
-Grid height                                                             |Height of grid                                                                                                                                                                                                         |Powers of 2 between 1 and 64
+Grid Width                                                                      |The Grid clouds are rendered on when using the Grid Integration Scheme. Lower values produce better Quality.           |Powers of 2 between 16 and 512
+Grid height                                                             |Height of the Cloud Grid                                                                                                                                                                                       |Powers of 2 between 1 and 64
 
 {:.object}
 Variable                                                                        |       Definition                                                                                                                                                                                                              |       Value
@@ -49,7 +49,6 @@ Share Buffers for VR                                            |Share Buffer fo
 
 Shape   
 =============
-
 Shape values alter the general look of the clouds, such as how transparent the cloud is. If you have unusual looking clouds or incorrect artefacts, these are the setting to investigate.
 
 The clouds are made up of a base layer, a transition area and the upper layer. 
@@ -65,8 +64,8 @@ By default, the cloud volume repeats at the edges, and the volume width is contr
 {:.keyframe}
 Variable                                                                        |       Definition                                                                                                                                                                                                                                                              |       Value
 --------------                                                          |--------------                                                                                                                                                                                                                                                         |--------------
-Max Density                                                                     |Maximum density of all layers                                                                                                                                                                                                                          |0.0 to 1.0
-Local Density                                                           |Current density of the clouds.                                                                                                                                                                                                                         |0.0 to 1.0 
+Max Density                                                                     |Maximum density of the cloud layer.                                                                                                                                                                                                            |0.0 to 1.0
+Local Density                                                           |Current density of the clouds. Not Editable, calculated from other densities.                                                                                                                          |0.0 to 1.0 
 Base layer                                                                      |Density of clouds in the lower layer. Clouds are always denser at the lower portions of the clouds, so this can also act as Max Density        |0.0 to 2.0
 Transition                                                                      |Density of middle layer of clouds - the transition from cloudbase to upper cloud.                                                                                                                      |0.0 to 1.0
 Upper Density                                                           |Density of clouds in the upper layer.                                                                                                                                                                                                          |0.0 to 1.0
@@ -76,25 +75,15 @@ Diffusivity                                                                     
 Persistence                                                                     |Fractal persistence for generating clouds.                                                                                                                                                                                                     |0.0 to 1.0
 Octaves                                                                         |Number of noise octaves to generate clouds.                                                                                                                                                                                            |1 to 5
 
-
-
 <hr>
 
 Wind
 =========
-Using Wind to create a dynamic sky and moving shadows is an effective way to make an environment feel alive. There are different ways to shift the clouds, however for clouds to move the time must be progressing. Learn how to control time [here](time.html).
+Using Wind to create a dynamic sky and moving shadows is an effective way to make an environment feel alive. There are different ways to shift the clouds, however for clouds to move the time must be progressing. Learn how to control time [here](/tutorials/time).
 
-The easiest way to control the movement of the clouds is throught the use of the cloud window. For one keyframe you should select the position of the clouds, then create a new keyframe and select the new position. 
+To control the movement of the clouds you should use the [Cloud Window](/skysequencer#cloud-window).
 
-{:.layer}
-Variable                                                                        |       Definition                                                                                                                                                                                      |Value
---------------                                                          |--------------                                                                                                                                                                                 |--------------
-Override Wind                                                           |Whether to apply real-time wind motion.                                                                                                                                |Bool
-
-{:.object}
-Variable                                                                        |       Definition                                                                                                                                                                                      |       Value
---------------                                                          |--------------                                                                                                                                                                                 |--------------
-Wind Speed (trueSKY Object)                                     |Wind speed in m/s. Recommended to be similar to the keyframe wind speed to avoid movement errors.              |0.0 to 1000.0 
+For one keyframe you should select the position of the clouds, then create a new keyframe and select the new position. Then the clouds will move between the positions. 
 
 
 
@@ -133,3 +122,27 @@ Cell Noise Texture Size                                         |Size of cell no
 Max Fractal Amplitude                                           |Strength of edge noise effect.                                                                                                                                                 |0.1 to 10
 
 <hr>
+
+
+Cloud Shadows
+-----------------
+Clouds Shadows will affect the ground below the clouds, as well as other cloud layers. Shadows are automatic and require no extra setup.
+
+{:.object}
+Variable                                                                        |       Definition                                                                                                                                                                              |       Value
+--------------                                                          |--------------                                                                                                                                                                         |--------------
+Shadow Range                                                            |Range of cloud shadow texture, in km.                                                                                                                          |0.5 to 200.0.
+Shadow Texture Size                                                     |Size of cloud shadow texture.                                                                                                                                          |Powers of 2 between 32 and 2048.
+Shadow Strength                                                         |Amount of shadow produced. Large values can produce obvious edges if the resolution is too low.        |0.0 to 1.0
+Cloud Shadow RT                                                         |Render texture that is used to draw cloud shadow texture at runtime                                                            |Render Texture
+
+
+God Rays
+-------------
+
+{:.object}
+Variable                                                                        |       Definition                                              |       Value
+--------------                                                          |--------------                                         |--------------
+Crepuscular Ray (God-Rays) Strength                     |Strength of god-ray effect.            | 0.0 to 1.0 
+Crepuscular Grid                                                        |Grid size for God-rays. X, Y, Z.       | 8 to 256
+
