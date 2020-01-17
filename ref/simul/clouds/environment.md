@@ -16,11 +16,11 @@ Functions
 |  | [Environment](#Environment)(simul::base::MemoryInterface mem) |
 |  | [~Environment](#~Environment)() |
 | simul::clouds::Environment * | [Create](#Create)(simul::base::MemoryInterface m) |
-| simul::clouds::CloudKeyframer * | [CreateCloudKeyframer](#CreateCloudKeyframer)(simul::base::MemoryInterface m, bool make2d, int id) |
+| simul::clouds::CloudKeyframer * | [CreateCloudKeyframer](#CreateCloudKeyframer)(simul::base::MemoryInterface m, bool make2d, simul::sky::uid uid) |
 | void | [CreateSubObjects](#CreateSubObjects)() |
-| bool | [DeleteCloudKeyframer](#DeleteCloudKeyframer)(int uid) |
+| bool | [DeleteCloudKeyframer](#DeleteCloudKeyframer)(simul::sky::uid uid) |
 | void | [Destroy](#Destroy)(simul::clouds::Environment env) |
-| simul::clouds::CloudKeyframer * | [GetCloudKeyframer](#GetCloudKeyframer)(int uid) |
+| simul::clouds::CloudKeyframer * | [GetCloudKeyframer](#GetCloudKeyframer)(simul::sky::uid uid) |
 | unsigned int | [GetKeyframersChecksum](#GetKeyframersChecksum)() |
 | void | [Load](#Load)(simul::sky::Input is) |
 | void | [LoadFromText](#LoadFromText)(simul::crossplatform::TextInput input) |
@@ -45,19 +45,19 @@ Destructor
 ### simul::clouds::Environment * Create(simul::base::MemoryInterface m)
 Create an Environment.
 <a name="CreateCloudKeyframer"></a>
-### simul::clouds::CloudKeyframer * CreateCloudKeyframer(simul::base::MemoryInterface m, bool make2d, int id)
+### simul::clouds::CloudKeyframer * CreateCloudKeyframer(simul::base::MemoryInterface m, bool make2d, simul::sky::uid uid)
 Override this to create a custom derived keyframer. Valid id's are anything greater than zero.
 <a name="CreateSubObjects"></a>
 ### void CreateSubObjects()
 Call this to create the keyframer sub-objects. If not called before the first Update(), it will be called from there.
 <a name="DeleteCloudKeyframer"></a>
-### bool DeleteCloudKeyframer(int uid)
+### bool DeleteCloudKeyframer(simul::sky::uid uid)
 Delete the specified cloud layer.
 <a name="Destroy"></a>
 ### void Destroy(simul::clouds::Environment env)
 Destroy an Environment .
 <a name="GetCloudKeyframer"></a>
-### simul::clouds::CloudKeyframer * GetCloudKeyframer(int uid)
+### simul::clouds::CloudKeyframer * GetCloudKeyframer(simul::sky::uid uid)
 Get the cloud keyframer with the specified uid.
 <a name="GetKeyframersChecksum"></a>
 ### unsigned int GetKeyframersChecksum()

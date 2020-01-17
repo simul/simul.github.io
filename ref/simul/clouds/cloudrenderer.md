@@ -15,7 +15,6 @@ Functions
 
 |  | [CloudRenderer](#CloudRenderer)(simul::clouds::Environment e, simul::base::MemoryInterface mem) |
 |  | [~CloudRenderer](#~CloudRenderer)() |
-| void | [DrawCrossSectionOnSphere](#DrawCrossSectionOnSphere)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Effect editEffect, simul::crossplatform::Texture t, vec2 texcOffset, vec3 origin, vec4 orient_quat, float qsize, float sph_rad, vec4 colour) |
 | void | [EnsureEffectsAreBuilt](#EnsureEffectsAreBuilt)(simul::crossplatform::RenderPlatform renderPlatform) |
 | simul::clouds::BaseGpuCloudGenerator * | [GetBaseGpuCloudGenerator](#GetBaseGpuCloudGenerator)() |
 | simul::clouds::CloudGeometryHelper * | [GetCloudGeometryHelper](#GetCloudGeometryHelper)(int view_id) |
@@ -44,6 +43,7 @@ Functions
 | void | [SetEnableStorms](#SetEnableStorms)(bool s) |
 | void | [SetEnvironment](#SetEnvironment)(simul::clouds::Environment e) |
 | void | [SetExternalCloudTexture](#SetExternalCloudTexture)(simul::crossplatform::Texture) |
+| void | [SetLightingQueryResult](#SetLightingQueryResult)(LightingQueryResult _lightingQueryResult) |
 | void | [SetMaxFadeAltitudeKm](#SetMaxFadeAltitudeKm)(float ma_km) |
 | void | [SetMaxFadeDistanceKm](#SetMaxFadeDistanceKm)(float dist_km) |
 | void | [SetMaxSlices](#SetMaxSlices)(int viewport_id, int maxs) |
@@ -59,9 +59,6 @@ Constructor: An external keyframer is provided, and an optional memory manager.
 <a name="~CloudRenderer"></a>
 ###  ~CloudRenderer()
 Destructor
-<a name="DrawCrossSectionOnSphere"></a>
-### void DrawCrossSectionOnSphere(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Effect editEffect, simul::crossplatform::Texture t, vec2 texcOffset, vec3 origin, vec4 orient_quat, float qsize, float sph_rad, vec4 colour)
-Show the cloud volume window on the lat-long sphere.
 <a name="EnsureEffectsAreBuilt"></a>
 ### void EnsureEffectsAreBuilt(simul::crossplatform::RenderPlatform renderPlatform)
 If possible, build all shader effect variations.
@@ -150,6 +147,9 @@ Set the sky interface.
 ### void SetExternalCloudTexture(simul::crossplatform::Texture)
 Where we create the main volume texture for rendering elsewhere, we pass it in here.
 This permits ESRAM on XboxOne for example, in a game engine.
+<a name="SetLightingQueryResult"></a>
+### void SetLightingQueryResult(LightingQueryResult _lightingQueryResult)
+Show the cloud volume window on the lat-long sphere.
 <a name="SetMaxFadeAltitudeKm"></a>
 ### void SetMaxFadeAltitudeKm(float ma_km)
 Altitude for fade texture lookups:

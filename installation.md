@@ -24,7 +24,6 @@ If you already have an account with us, you can skip this section and [select yo
 2: Click *Sign Up for a Free Trial*
 
 
-
 3: Fill in the forum with your information
 
 ![](/images/signupForum.png)
@@ -37,33 +36,27 @@ If you already have an account with us, you can skip this section and [select yo
 Your account is now created and you should now be ready to download your preferred version of trueSKY. With this trial license, you have full access to trueSKY and all its features for the next 30 days. For continued use, you will need to purchase an indie or pro [license](legal).
 
 
-Selecting your trueSKY Version
-===============
-We have two versions of trueSKY
-
 
 Selecting your Engine
 ===================
 
-
 Unreal Engine 4
 ---------------
-The trueSKY Unreal Engine 4 plugin comes as either a branch of the UE4 engine on GitHub, or as a separate installer for the binary distribution of UE4. For further instructions, head to [our Unreal page](unreal/tutorial).
+The trueSKY Unreal Engine 4 plugin comes as either a branch of the UE4 engine on GitHub, or as a separate installer for the binary distribution of UE4. For further instructions, head to [our Unreal page](unreal/tutorials.html).
 
 Unity
 -----
-To use the trueSKY Unity plugin, you need to install the appropriate Unity package to your Unity project. For further instructions, please head to [our Unity page](unity/tutorial).
+To use the trueSKY Unity plugin, you need to install the appropriate Unity package to your Unity project. For further instructions, please head to [our Unity page](unity/tutorials.html).
 
 trueSKY SDK
 --------------
 The trueSKY SDK can be integrated with a game/simulation in two different ways. Firstly, it is possible to dynamically link with the trueSkyPluginRender library and API just as we do for Unity and Unreal. The second option is to link the trueSKY libraries directly, and access the lower-level classes directly.
 
-To learn more about our SDK, head over to our page [here](/sdk). 
+To learn more about our SDK, head over to our page [here](programming). 
 
 Standalone Sky Sequencer
 ------------------------
-We also have our Sky sequencer as an executable, which can be used to create sequences that can be imported into trueSKY in any engine. More about our standalone executable version is [here](tutorials/standalonesequencer.html).
+We also have our Sky sequencer as an executable, which can be used to create sequences that can be imported into trueSKY in any engine. 
 
 
-
-If you have already installed trueSKY, you should head over to our [tutorials](tutorials) page to learn how to use trueSKY to its full potential.
+If you have already installed trueSKY, you should head over to our [tutorials](tutorials.html) page to learn how to use trueSKY to its full potential.

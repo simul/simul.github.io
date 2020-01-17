@@ -72,7 +72,7 @@ html "SimulOverview.png"
 The two main elements to implementing trueSKY in a project are: an Environment object, which will encapsulate sky and cloud data;
 a WeatherRenderer, and a RenderPlatform.
 
-You should create an instance of simul::clouds::Environment, which is persistent.
+You should create an instance of <a href="ref/simul/clouds/environment.html">environment</a>, which is persistent.
 ~~~~~~~~~~~~~~~
 #include "Simul/LicenseKey.h"
 #include "Simul/Base/EnvironmentVariables.h"
@@ -252,10 +252,9 @@ simul::opengl::PushShaderPath("shaders/");
 DirectX 12
 ----------
 
-Coming Soon
+Documentation coming soon, email for support
 
 Vulkan
 ---------
 
-Coming Soon
-
+Documentation coming soon, email for support

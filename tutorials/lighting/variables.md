@@ -1,0 +1,62 @@
+---
+title: Variables
+layout: reference
+weight: 40
+---
+
+
+
+
+
+
+Lighting
+====================
+
+{:.layer}
+Variable                                                                        |       Definition                                                                                                                                                                                                                                                      |       Value
+--------------                                                          |--------------                                                                                                                                                                                                                                                 |--------------
+Brightness Power                                                        |Adjusts light levels to compensate for variations via power function (e.g 0.5 = square root dependence, 1.0 = no adjustment).                  |0.01 to 1.0 
+Altitude                                                                        |Higher Altitude, less atmosphere. Will allow more light to pass through.                                                                                                                               |1 to 8
+Max Altitude                                                            |Max altitude that will be used for fade and sky colour calculations, in km.                                                                                                                    |2.0 and 100.0
+Elevations                                                                      |Number of elevations / height of table.                                                                                                                                                                                                |Powers of 2 between 4 and 256.
+Distances                                                                       |Number of distances / width of table.                                                                                                                                                                                                  | Powers of 2 between 4 and 128.
+Distance Range                                                          |Maximum distance for fade.                                                                                                                                                                                                                     |5.0 and 2000.0.
+
+
+{:.object}
+Variable                                                                        |       Definition                                                                                                                                                                                                                                                      |       Value
+--------------                                                          |--------------                                                                                                                                                                                                                                                 |--------------
+Light source                                                            |Which directional light source trueSKY should control                                                                                                                                                                  |Directional Light
+Drive Light Direction                                           |If trueSKY should alter the angle of the Directional Light based on the movement of the Sun and Moon.                                                                  |Bool
+Light Units                                                             |Radiometric or Photometric Light Units. Only use Photometric if you Unreal's Exposure settings.[Light Units](tutorials.html#light-units)       |Radiometric or Photometric
+Brightness                                                                      |A Brightness Multiplier applied to the Sun, Moon and Sky.                                                                                                                                                              |0.1 to 10.0
+Gamma                                                                           |Gamma adjustment value.                                                                                                                                                                                                                                |0.0 to 10.0                                    
+Direct Light                                                            |Amount of direct light on the clouds.                                                                                                                                                                                                  |0.0 to 4.0
+Indirect Light                                                          |Amount of indirect light on the clouds.                                                                                                                                                                                                |0.0 to 4.0
+Ambient Light                                                           |Amount of ambient light on the clouds.                                                                                                                                                                                                 |0.0 to 4.0
+Extinction                                                                      |Amount of light scattered per metre (larger values = darker clouds).                                                                                                                                   |0.0001 to 10.0
+Mie Asymmetry                                                           |Anisotropic distribution of direct lighting, or eccentricity.                                                                                                                                                  |0.0 to 1.0
+
+
+
+<hr>
+
+trueSKY Light
+==================
+This applies a constant ambient light over the whole scene. Check out [Unreal's SkyLight](https://docs.unrealengine.com/en-US/Engine/Rendering/LightingAndShadows/LightTypes/SkyLight/index.html) for information on most of the variables. This will just cover any variables we have added.
+
+{:.object}
+Variable                                                                        |       Definition                                                                                                                                                                                              |       Value
+--------------                                                          |--------------                                                                                                                                                                                         |--------------
+Update Frequency                                                        |How often the trueSKYLight will update, in frames. 1 means every frame, two mean every other frame etc.        |1 to 100
+Blend                                                                           |How much to blend new updates with previous values.                                                                                                            |0 to 1
+Amortization                                                            |How much to Amortize rendering.                                                                                                                                                        |1 to 8
+All Faces                                                                       |Whether to fill all cube maps faces on every update.                                                                                                           |Bool
+All Mips                                                                        |Whether to fill all mipmaps on every update.                                                                                                                           |Bool
+Diffuse Multiplier                                                      |Multiplier for the diffuse illumination from the skylight.                                                                                                     |0.0 to 20.0
+Specular Multiplier                                                     |Multiplier for the specular reflections from the skylight.                                                                                                     |0.0 to 20.0
+Gamma Correction                                                        |Gamma adjustment to apply.                                                                                                                                                             |0.0 to 20.0
+
+
+<hr>
+

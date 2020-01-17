@@ -31,7 +31,7 @@ Functions
 | vec3 | [GetLocalSunIrradiance](#GetLocalSunIrradiance)(double t, float altitude_km) |
 | simul::sky::float4 | [GetMieRayleighRatio](#GetMieRayleighRatio)() |
 | unsigned int | [GetSubdivisionChecksum](#GetSubdivisionChecksum)() |
-| vec2 | [GetSunlightTableTransformKm](#GetSunlightTableTransformKm)() |
+| vec3 | [GetSunlightTableTransformKm](#GetSunlightTableTransformKm)() |
 | float | [GetVisibilityDistance](#GetVisibilityDistance)(float view_alt_km) |
 
 An abstract interface class for skies.
@@ -92,7 +92,7 @@ Get the ratio of Mie to Rayleigh scattering at unit air and haze density. A usef
 < Return the temperature at the stated altitude in kelvins (subtract 273.15 to get celsius).
 When this checksum changes, the atmosphere has been modified sufficiently to warrant regeneration of tables.
 <a name="GetSunlightTableTransformKm"></a>
-### vec2 GetSunlightTableTransformKm()
+### vec3 GetSunlightTableTransformKm()
 Get the transform vector to convert an altitude in km into a 1D texture coordinate for the sunlight table. x = multiplier, y=offset, so texcoord u=t.x*zkm+t.y;
 <a name="GetVisibilityDistance"></a>
 ### float GetVisibilityDistance(float view_alt_km)

@@ -76,7 +76,7 @@ tS.SetSkyFloat("OzoneStrength", tS.GetSkyFloat("OzoneStrength") + 0.1f);
 }
 ~~~~~~~~~~~~~~~
 
-For information about the layer properties you can change and the name strings needed to do so, see the [Cloud](/tutorials/clouds.html) and [Sky](/tutorials/sky.html) pages.
+For information about the layer properties you can change and the name strings needed to do so, see the [Cloud](/tutorials/clouds) and [Sky](/tutorials/sky) pages.
 
 
 Keyframes

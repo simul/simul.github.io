@@ -17,19 +17,34 @@ In this documentation you will find everything you need to start producing high 
 
 Getting Started
 ------------------
-* [**Installation**](/Installation.html)                                        -  If this is your first time with trueSKY, we recommend starting here
+* [**Installation**](/installation.html)                                        -  If this is your first time with trueSKY, we recommend starting here
 
 * [**Getting the most out of trueSky**](/tutorials)                     - These useful pages will show you how to create visually stunning effects, along with example projects.
 
 * [**Programming Guide**](/programming)                                         - Information for programmers on how everything is rendered, along with our detailed code base.
 
-* [**Frequently Asked Questions**](/FAQ.html)                           - Solutions to common issues/mistakes
+* [**Frequently Asked Questions**](/faq.html)                           - Solutions to common issues/mistakes
 
 * [**Code Base**](/ref)                                                                         - Our fully documented source code
 
 <hr>
 
-Useful Links
+How to:
+---------
+
+* [Set up Rain/Snow](/tutorials/precipitation/tutorials.html)
+
+* [Set up a Cloud Volume](/tutorials/precipitation/volumes.html)
+
+* [Day/Night Transition](/tutorials/time/tutorials.html)
+
+* [Set up Water](/tutorials/water/tutorials.html)
+
+* [Edit Clouds at runtime with blueprints](/tutorials/unreal/blueprints.html)
+
+
+
+Useful External Links
 ---------------------------
 
 * [**Check out our YouTube Channel**](https://www.youtube.com/user/simulsoftware){:target="_blank"}       - You can find tutorials and showcases here 

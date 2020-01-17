@@ -1,5 +1,5 @@
 ---
-title: Water
+title: Variables
 layout: reference
 weight: 90
 ---
@@ -8,14 +8,12 @@ weight: 90
 
 
 
-Water
+trueWATER
 ====================
 
-Realtime, Volumetric Water is one of the latest features to be brought to trueSKY, bringing the high quality we produce in the sky to the ground. Just like the Sky, we have an array of customisation for the water.
 
-For quick setup - check out this [short video](https://www.youtube.com/watch?v=uwZZTEqaUbo){:target="_blank"}
-
-These setting are on the trueSKYActor.
+trueSKYActor Settings
+----------------------
 
 {:.object}
 Variable                                                                                |       Definition                                                                                                              |       Value
@@ -27,7 +25,8 @@ Reflection Resolution                                                   |Resolut
 
 
 
-These settings are available on the the trueSKY Water Object
+trueSKY Water Object settings
+----------------------------
 
 {:.object}
 Variable                                                                                |       Definition                                                                                                              |       Value
@@ -58,8 +57,9 @@ Min Wavelength                                                                  
 Enable Foam                                                                             |If foam should be rendered on the waves                                                        |Bool
 Foam Strength                                                                   |Strength of the foam effect.                                                                           |0 to 0.5
 
-
-Shore Effects can be used to reduce the waves splashing unevenly over the water's edge.
+Shore Effects
+---------------
+Shore Effects can be used to reduce the waves splashing unevenly over the water's edge. For a more in depth example, go [here.](tutorials.html#shore-effects)
 
 {:.object}
 Variable                                                                                |       Definition                                                                                                              |       Value
@@ -68,24 +68,3 @@ Shore Effects                                                                   
 Shore Depth Scene Capture                                               |The Depth Scene Capture camera that should be used                                     |SceneCapture2D
 Shore Depth Width                                                               |Width of the Shore depth effect                                                                        |1000.0 to 10000.0
 Shore Depth Extent                                                              |Depth of the Shore Depth Effects                                                                       |1000.0 to 10000.0
-
-
-Shore Effects
------------------
-
-![](/images/unreal/shoreeffects.png)
-
-
-To use the Shore effects, add a 2D Scene depth camera into your project, with only Scene depth in R enabled.
-
-![](/images/unreal/scenedepthR.png)
-
-
-Next, create a RenderTexture, setting it to capture only the Red channel
-
-![](/images/unreal/RenderTargetFormat.png)
-
-
-Now, attach the RenderTexture to the 2DSceneCapture, and attach the Camera to the correct water instance.
-
-You can now place the camera above where you want to apply the effect (pointing downwards), and adjust the Shore Depth Width and Extents to your liking.

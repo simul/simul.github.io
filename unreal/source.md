@@ -36,7 +36,6 @@ Working with trueSKY from GitHub
 
 4. Build the UE4 project in the "Development Editor" configuration. Once this has compiled trueSKY will be present in your UE4 build.
 
-You can learn how to add trueSKY to the level [here](tutorial#addtruesky).
 
 
 

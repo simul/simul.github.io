@@ -22,7 +22,7 @@ Functions
 | void | [CloudLineQuery](#CloudLineQuery)(int id, float startpos, float endpos, LineQueryResult res) |
 | void | [CloudSphereInteraction](#CloudSphereInteraction)(int id, float pos, float vel, float radius) |
 | bool | [CreateBoundedWaterObject](#CreateBoundedWaterObject)(uint ID, simul::math::Vector3 dimension, simul::math::Vector3 location) |
-| void | [DeleteKeyframe](#DeleteKeyframe)(unsigned int uid) |
+| void | [DeleteKeyframe](#DeleteKeyframe)(simul::sky::uid uid) |
 | void | [ExportCloudLayer](#ExportCloudLayer)(char filenameUtf8) |
 | void | [Get](#Get)(long long Enum, simul::base::Variant v) |
 | bool | [GetBool](#GetBool)(char name) |
@@ -33,14 +33,14 @@ Functions
 | float | [GetFloatAtPosition](#GetFloatAtPosition)(simul::plugin::FloatAtPosition f, float pos, int uid) |
 | float | [GetFloatAtPosition](#GetFloatAtPosition)(char name, float pos) |
 | int | [GetInt](#GetInt)(char name, int numparams, simul::base::Variant params) |
-| unsigned int | [GetInterpolatedCloudKeyframeUniqueId](#GetInterpolatedCloudKeyframeUniqueId)(int layer) |
-| unsigned int | [GetInterpolatedSkyKeyframeUniqueId](#GetInterpolatedSkyKeyframeUniqueId)() |
-| unsigned int | [GetKeyframeByIndex](#GetKeyframeByIndex)(int layer, int index) |
+| simul::sky::uid | [GetInterpolatedCloudKeyframeUniqueId](#GetInterpolatedCloudKeyframeUniqueId)(int layer) |
+| simul::sky::uid | [GetInterpolatedSkyKeyframeUniqueId](#GetInterpolatedSkyKeyframeUniqueId)() |
+| simul::sky::uid | [GetKeyframeByIndex](#GetKeyframeByIndex)(int layer, int index) |
 | int | [GetLightningBolts](#GetLightningBolts)(simul::clouds::ExportLightningStrike s, int maxnum) |
 | int | [GetNumKeyframes](#GetNumKeyframes)(int layer) |
 | int | [GetNumStorms](#GetNumStorms)() |
-| unsigned int | [GetStormAtTime](#GetStormAtTime)(float t) |
-| unsigned int | [GetStormByIndex](#GetStormByIndex)(int i) |
+| simul::sky::uid | [GetStormAtTime](#GetStormAtTime)(float t) |
+| simul::sky::uid | [GetStormByIndex](#GetStormByIndex)(int i) |
 | char  const * | [GetString](#GetString)(char name, int len) |
 | bool | [GetWaterBool](#GetWaterBool)(char name, uint ID) |
 | float * | [GetWaterBuoyancyObjectResults](#GetWaterBuoyancyObjectResults)(int ID) |
@@ -48,20 +48,24 @@ Functions
 | float | [GetWaterFloat](#GetWaterFloat)(char name, uint ID) |
 | int | [GetWaterInt](#GetWaterInt)(char name, uint ID) |
 | vec4 | [GetWaterProbeValues](#GetWaterProbeValues)(int ID) |
-| float * | [GetWaterVector](#GetWaterVector)(char name, uint ID) |
+| bool | [GetWaterVector](#GetWaterVector)(char name, uint ID, vec3) |
 | bool | [HasFloat](#HasFloat)(char name) |
 | bool | [HasInt](#HasInt)(char name) |
-| unsigned int | [InsertKeyframe](#InsertKeyframe)(int layer, float time) |
+| simul::sky::uid | [InsertKeyframe](#InsertKeyframe)(int layer, float time) |
 | void | [InvalidateDeviceObjects](#InvalidateDeviceObjects)() |
-| bool | [KeyframeGetBool](#KeyframeGetBool)(unsigned int uid, char name) |
-| float | [KeyframeGetFloat](#KeyframeGetFloat)(unsigned int uid, char name) |
-| int | [KeyframeGetInt](#KeyframeGetInt)(unsigned int uid, char name) |
-| bool | [KeyframeHasBool](#KeyframeHasBool)(unsigned int uid, char name) |
-| bool | [KeyframeHasFloat](#KeyframeHasFloat)(unsigned int uid, char name) |
-| bool | [KeyframeHasInt](#KeyframeHasInt)(unsigned int uid, char name) |
-| void | [KeyframeSetBool](#KeyframeSetBool)(unsigned int uid, char name, bool value) |
-| void | [KeyframeSetFloat](#KeyframeSetFloat)(unsigned int uid, char name, float value) |
-| void | [KeyframeSetInt](#KeyframeSetInt)(unsigned int uid, char name, int value) |
+| bool | [KeyframeGetBool](#KeyframeGetBool)(simul::sky::uid uid, char name) |
+| float | [KeyframeGetFloat](#KeyframeGetFloat)(simul::sky::uid uid, char name) |
+| int | [KeyframeGetInt](#KeyframeGetInt)(simul::sky::uid uid, char name) |
+| bool | [KeyframeHasBool](#KeyframeHasBool)(simul::sky::uid uid, char name) |
+| bool | [KeyframeHasFloat](#KeyframeHasFloat)(simul::sky::uid uid, char name) |
+| bool | [KeyframeHasInt](#KeyframeHasInt)(simul::sky::uid uid, char name) |
+| float | [KeyframerGetFloat](#KeyframerGetFloat)(simul::sky::uid uid, char name) |
+| int | [KeyframerGetInt](#KeyframerGetInt)(simul::sky::uid uid, char name) |
+| void | [KeyframerSetFloat](#KeyframerSetFloat)(simul::sky::uid uid, char name, float value) |
+| void | [KeyframerSetInt](#KeyframerSetInt)(simul::sky::uid uid, char name, int value) |
+| void | [KeyframeSetBool](#KeyframeSetBool)(simul::sky::uid uid, char name, bool value) |
+| void | [KeyframeSetFloat](#KeyframeSetFloat)(simul::sky::uid uid, char name, float value) |
+| void | [KeyframeSetInt](#KeyframeSetInt)(simul::sky::uid uid, char name, int value) |
 | void | [LightingQuery](#LightingQuery)(int id, float pos, LightingQueryResult res) |
 | void | [ProcessQueries](#ProcessQueries)(int num, simul::plugin::Query queries) |
 | void | [RemoveBoundedWaterObject](#RemoveBoundedWaterObject)(uint ID) |
@@ -74,11 +78,11 @@ Functions
 | void | [SetBool](#SetBool)(char name, bool value) |
 | void | [SetCloudPlacementTexture](#SetCloudPlacementTexture)(int id, void texture, vec2 pos_km, vec2 ext_km) |
 | void | [SetFloat](#SetFloat)(char name, float value) |
-| void | [SetInt](#SetInt)(char name, int value) |
+| void | [SetInt](#SetInt)(char name, int value, simul::sky::uid layerID) |
 | void | [SetMatrix4x4](#SetMatrix4x4)(char name, float matrix4x4) |
 | void | [SetPointLight](#SetPointLight)(int id, pos, float min_radius, float max_radius, irradiance) |
 | void | [SetString](#SetString)(char name, char value) |
-| void | [SetTexture](#SetTexture)(char name, void tex, int w, int l, simul::crossplatform::PixelFormat pixelFormat) |
+| void | [SetTexture](#SetTexture)(char name, void tex, int w, int l, simul::crossplatform::PixelFormat pixelFormat, simul::crossplatform::ResourceState resourceState) |
 | void | [SetWater](#SetWater)(long long Enum, int ID, simul::base::Variant v) |
 | void | [SetWaterBool](#SetWaterBool)(char name, int ID, bool value) |
 | void | [SetWaterFloat](#SetWaterFloat)(char name, int ID, float value) |
@@ -123,7 +127,7 @@ update a sphere that will push clouds aside.
 ### bool CreateBoundedWaterObject(uint ID, simul::math::Vector3 dimension, simul::math::Vector3 location)
 Create a bounded water object with a given ID
 <a name="DeleteKeyframe"></a>
-### void DeleteKeyframe(unsigned int uid)
+### void DeleteKeyframe(simul::sky::uid uid)
 Delete a keyframe with ID uid
 <a name="ExportCloudLayer"></a>
 ### void ExportCloudLayer(char filenameUtf8)
@@ -156,13 +160,13 @@ Property at a given position.
 ### int GetInt(char name, int numparams, simul::base::Variant params)
 Returns an integer value - see 
 <a name="GetInterpolatedCloudKeyframeUniqueId"></a>
-### unsigned int GetInterpolatedCloudKeyframeUniqueId(int layer)
+### simul::sky::uid GetInterpolatedCloudKeyframeUniqueId(int layer)
 Get the ID of the current interpolated cloud keyframe on the given layer
 <a name="GetInterpolatedSkyKeyframeUniqueId"></a>
-### unsigned int GetInterpolatedSkyKeyframeUniqueId()
+### simul::sky::uid GetInterpolatedSkyKeyframeUniqueId()
 Get the ID of the current interpolated sky keyframe
 <a name="GetKeyframeByIndex"></a>
-### unsigned int GetKeyframeByIndex(int layer, int index)
+### simul::sky::uid GetKeyframeByIndex(int layer, int index)
 Get a cloud keyframe on a given layer by index
 <a name="GetLightningBolts"></a>
 ### int GetLightningBolts(simul::clouds::ExportLightningStrike s, int maxnum)
@@ -174,10 +178,10 @@ Get the number of keyframes on a given layer
 ### int GetNumStorms()
 Get the total number of storms
 <a name="GetStormAtTime"></a>
-### unsigned int GetStormAtTime(float t)
+### simul::sky::uid GetStormAtTime(float t)
 Get a storm ID, if it exists, at time t
 <a name="GetStormByIndex"></a>
-### unsigned int GetStormByIndex(int i)
+### simul::sky::uid GetStormByIndex(int i)
 Get a storm ID with index i
 <a name="GetString"></a>
 ### char  const * GetString(char name, int len)
@@ -201,7 +205,7 @@ Get an int for a specfic water object
 ### vec4 GetWaterProbeValues(int ID)
 Get the results of a water probe
 <a name="GetWaterVector"></a>
-### float * GetWaterVector(char name, uint ID)
+### bool GetWaterVector(char name, uint ID, vec3)
 Get a vector for a specfic water object
 <a name="HasFloat"></a>
 ### bool HasFloat(char name)
@@ -210,37 +214,49 @@ Does the named parameter exist?
 ### bool HasInt(char name)
 Does the named parameter exist?
 <a name="InsertKeyframe"></a>
-### unsigned int InsertKeyframe(int layer, float time)
+### simul::sky::uid InsertKeyframe(int layer, float time)
 Insert a keyframe on a layer at time t
 <a name="InvalidateDeviceObjects"></a>
 ### void InvalidateDeviceObjects()
 Platform-dependent function called when uninitializing the plugin renderer.
 <a name="KeyframeGetBool"></a>
-### bool KeyframeGetBool(unsigned int uid, char name)
+### bool KeyframeGetBool(simul::sky::uid uid, char name)
 Fet a bool value for a given keyframe
 <a name="KeyframeGetFloat"></a>
-### float KeyframeGetFloat(unsigned int uid, char name)
+### float KeyframeGetFloat(simul::sky::uid uid, char name)
 Get a bool value for a given keyframe
 <a name="KeyframeGetInt"></a>
-### int KeyframeGetInt(unsigned int uid, char name)
+### int KeyframeGetInt(simul::sky::uid uid, char name)
 Get a int value for a given keyframe
 <a name="KeyframeHasBool"></a>
-### bool KeyframeHasBool(unsigned int uid, char name)
+### bool KeyframeHasBool(simul::sky::uid uid, char name)
 Has the keyframe with the given ID got the given bool value
 <a name="KeyframeHasFloat"></a>
-### bool KeyframeHasFloat(unsigned int uid, char name)
+### bool KeyframeHasFloat(simul::sky::uid uid, char name)
 Has the keyframe with the given ID got the given float value
 <a name="KeyframeHasInt"></a>
-### bool KeyframeHasInt(unsigned int uid, char name)
+### bool KeyframeHasInt(simul::sky::uid uid, char name)
 Has the keyframe with the given ID got the given int value
+<a name="KeyframerGetFloat"></a>
+### float KeyframerGetFloat(simul::sky::uid uid, char name)
+Get a bool value for a given keyframer
+<a name="KeyframerGetInt"></a>
+### int KeyframerGetInt(simul::sky::uid uid, char name)
+Get a int value for a given keyframer
+<a name="KeyframerSetFloat"></a>
+### void KeyframerSetFloat(simul::sky::uid uid, char name, float value)
+Set a float value for a given keyframer
+<a name="KeyframerSetInt"></a>
+### void KeyframerSetInt(simul::sky::uid uid, char name, int value)
+Set a int value for a given keyframer
 <a name="KeyframeSetBool"></a>
-### void KeyframeSetBool(unsigned int uid, char name, bool value)
+### void KeyframeSetBool(simul::sky::uid uid, char name, bool value)
 Set a bool value for a given keyframe
 <a name="KeyframeSetFloat"></a>
-### void KeyframeSetFloat(unsigned int uid, char name, float value)
+### void KeyframeSetFloat(simul::sky::uid uid, char name, float value)
 Set a float value for a given keyframe
 <a name="KeyframeSetInt"></a>
-### void KeyframeSetInt(unsigned int uid, char name, int value)
+### void KeyframeSetInt(simul::sky::uid uid, char name, int value)
 Set a int value for a given keyframe
 <a name="LightingQuery"></a>
 ### void LightingQuery(int id, float pos, LightingQueryResult res)
@@ -280,7 +296,7 @@ A mask for cloud position
 ### void SetFloat(char name, float value)
 Sets a floating point value. nameshould be "Time", "Gamma", "Exposure", or "SimpleCloudShadowing".
 <a name="SetInt"></a>
-### void SetInt(char name, int value)
+### void SetInt(char name, int value, simul::sky::uid layerID)
 Sets an integer value. nameshould be "CloudSteps", or "Downscale".
 <a name="SetMatrix4x4"></a>
 ### void SetMatrix4x4(char name, float matrix4x4)
@@ -293,7 +309,7 @@ the size of the source.
 ### void SetString(char name, char value)
 Set a string value. namemust be "LicenceKey".
 <a name="SetTexture"></a>
-### void SetTexture(char name, void tex, int w, int l, simul::crossplatform::PixelFormat pixelFormat)
+### void SetTexture(char name, void tex, int w, int l, simul::crossplatform::PixelFormat pixelFormat, simul::crossplatform::ResourceState resourceState)
 Setting texture properties.
 <a name="SetWater"></a>
 ### void SetWater(long long Enum, int ID, simul::base::Variant v)

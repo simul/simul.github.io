@@ -1,0 +1,56 @@
+---
+title: Variables
+layout: reference
+weight: 20
+---
+
+
+
+
+
+
+Precipitation
+====================
+Precipitation can be attached to any cloud keyframe and will produce rain or snow based on cloud position and thickness.
+
+Rain and snow can be fully customised, from rain speed to snowflake size.
+
+{:.ue4-specific}
+For transparent effects, such as precipitation and lightning to work in Unreal, trueSKYtransluscent needs to be added as a post process material. This should be done automatically. Learn about this [here](/faq.html#postprocess).
+
+{:.keyframe}
+Variable                                                                                        |       Definition                                                                                                                                                                                                      |       Value
+--------------                                                                          |--------------                                                                                                                                                                                                 |--------------
+Regional                                                                                        |Whether rain/snow falls only in specified region, or globally.                                                                                                 |Bool.
+Wind affects position                                                           |If the wind should affect the regional area.                                                                                                                                   |Bool.
+Radius (km)                                                                                     |Radius of precipitation region.                                                                                                                                                                |Between 0.1 and 1000
+Rain - Snow                                                                                     |How the Precipitation will act. 0 = rain, 1 = snow, values in between will share characteristics.                              |0.0 to 1.0 
+Strength                                                                                        |Amount of rain/snow.                                                                                                                                                                                   |0.0 to 1.0
+Rain Streaks                                                                            |Visual strength of rain streak effect.                                                                                                                                                 |0.0 to 1.0
+
+{:.object}
+Variable                                                                                        |       Definition                                                                                                                                                                                                      |       Value
+--------------                                                                          |--------------                                                                                                                                                                                                 |--------------
+Max Particles                                                                           |The maximum number of rain particles to render.                                                                                                                                |0 to 1000000
+Radius (metres)                                                                         |Size of particle zone.  Higher values allow you to render precipitation at greater distances                                   |0.0 to 100.0
+Rain Speed (m/s)                                                                        |Speed at which raindrops will fall.                                                                                                                                                    |0.0 to 120.0
+Snow Speed (m/s)                                                                        |Speed at which Snow Flakes will fall.                                                                                                                                                  |0.0 to 120.0
+Raindrop Size (mm)                                                                      |Size of each individual Raindrop.                                                                                                                                                              |0.001 to 100.0
+Snowflake Size (mm)                                                                     |Size of each individual Snow Flake.  Recommended to increase for testing purposes.                                                             |0.001 to 100.0
+Waver                                                                                           |How much precipitation wavers.  Waver is how much the rain or snow will sway while falling                                     |0.0 to 1
+Waver Time (s)                                                                          |Intervals between waver. In seconds between                                                                                                                                    |0 to 100
+Threshold (km)                                                                          |Thickness of cloud needed for rainfall. No threshold when set to 0.                                                                                    |0.0 to 10.0
+
+{:.ue4-specific}
+Variable                                                                                        |       Definition                                                                                                                                                                                                      |       Value
+--------------                                                                          |--------------                                                                                                                                                                                                 |--------------
+Rain Cubemap                                                                            |Cubemap to be used to light the Rain                                                                                                                                                   |Cubemap
+Velocity Streaks                                                                        |If the raindrop shape is altered by their velocity.                                                                                                                    |Bool
+Simulation Time                                                                         |If time progression should be taken into account for rain fall.                                                                                                |Bool
+Rain Near Threshold                                                                     |Draw no rain closer than this distance.                                                                                                                                                |0.01 to 0.5
+Rain Mask Scene Capture 2D                                                      |2D Screen capture to limit rain below surfaces. Lean more about this [here](tutorials.html#rain-indoors).                      |Scene Capture 2D
+Rain Mask Width                                                                         |Width of the Rain Mask                                                                                                                                                                                 |100 to 50000
+Rain Mask Depth Extent                                                          |Height of the Rain Mask                                                                                                                                                                                |100 to 100000
+Translucent RT                                                                          |The render texture used to render Precipitation effects.                                                                                                               |Render Texture
+
+<hr>

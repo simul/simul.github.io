@@ -23,6 +23,15 @@ Sections
 Setup
 =============
 
+Could not find or load the QT platform "window"
+------------------------------------------
+Some Plugins use an incompatible version of the Qt widget system, please deactivate these Plugins to enable trueSKY. Currently known Plugins that have conflict issues can be found [here](#plugin-conflicts).
+
+"createfile2 not found in kernel32.dll"
+-----------------------------------------
+This will be due to Windows 7. Unforunately, we do not support Windows 7 anymore. You will need to upgrade your OS to be able to use trueSKY.
+
+
 Getting "DllNotFoundException"
 ---------------------------------
 Windows User Account Control can give false positives when loading trueSKY, and stop it from being loaded. Lowering the notification level can help with this problem.
@@ -31,11 +40,6 @@ Windows User Account Control can give false positives when loading trueSKY, and 
 The trueSKY binary plugin is not working correctly
 ----------------------------------------
 Try deleting the plugin folder Engine/Plugins/TrueSkyPlugin/Content and the plugin binaries Engine/Binaries/ThirdParty/Simul. Then re-install the latest version of the plugin.
-
-
-Could not find or load the QT platform "window"
-------------------------------------------
-Some Plugins use an incompatible version of the Qt widget system, please deactivate these Plugins to enable trueSKY. Currently known Plugins that have conflict issues can be found [here](#plugin-conflicts).
 
 
 When packaging the game, I get errors and/or the sky is black.
@@ -59,12 +63,16 @@ My trueSKY folder in the content browser is empty
 {:.ue4-specific}
 You can find the contents by going to "UE4Engine/Engine/Plugins/TrueSkyPlugin/Content". We don't copy the files in to save you having the files in every project. If you want to copy them over that is fine, but you will need to adjust the trueSKY actor's and our material function references if you use them from a different location. 
 
+I Can't Enable Water!
+----------------------
+This will be because you are using our legacy versions (4.1a), which does not support our Water. Please update to 4.2.
+
 Sky
 ============
 
 My Sky is Black in editor
 --------------
-Make sure your sky has an active sequence selected. 
+Make sure your trueSKY Actor has an active sequence selected. 
 
 The Sky updates with black spots!
 -------------------------------------
@@ -85,14 +93,18 @@ Try increasing the Maximum Resolution setting, in the details panel of the trueS
 Weather Effects and Celestial Objects
 =====================================
 
-I don't see any rain, and only rain streaks is working
+I don't see any rain
+-----------------------
+Make sure there are enough clouds above to produce rain!
+
+I don't see any rain, but rain streaks are working
 ----------------------------
 For rain and lightning to render in UE4, you need to have added trueSKY translucent as a post process material. As of September 2019, this has been made automatic, and added as part of initialization. Firstly, add a post process Volume to your scene, and make sure it is global by enabling "Unbound". Then go to the Rendering Features within the Post process Settings. Add a new element to the post process materials, and choose asset reference when prompted. Finally, add the trueSKY translucent material. If you do not have this material, you need locate the [trueSKY assets](#emptyfolder).
 
 
 Rain drops are large and blocky
 -------------------------------------
-Try lowering the rain drop size in the 3D cloud layer.
+Try lowering the rain drop size on the trueSKY Actor.
 
 I can't see Snow!
 ---------------------
@@ -106,7 +118,7 @@ This can happen when the camera is moving quite quickly. If you do not want to l
 
 The sun is too bright
 --------------------------
-Post process effects can cause issues with trueSKY. Try lowering the intensity of the volume's bloom setting.
+Post process effects can cause issues with trueSKY. Try lowering the intensity of the volume's bloom setting. Otherwise, there are settings within the Sky Layer settings. Alter the Irradiance or diameter. On the trueSKY Actor you can tick Max Sun Radiance. Then, when you change the Radiance the sun's size will adjust to produce the same amount of power with a limited Radiance.
 
 
 The sun/moon is too big/small
@@ -123,7 +135,7 @@ Try lowering the brightness power setting in the sky layer.
 
 Everything is Grey at night
 ---------------------------
-Deleting UE4's Atmospheric Fog should fix this issue. We do not recommend using UE4's atmospheric fog, as trueSKY produces it's own fog.
+Deleting UE4's Atmospheric Fog should fix this issue. We do not recommend using UE4's atmospheric fog, as trueSKY produces it's own fog. You can create fog from a Sky Keyframe.
 
 Objects are light too brightly, especially at night
 --------------------------------------------
@@ -143,12 +155,16 @@ Make sure the sequencer starts at the same time at each launch and the clouds sh
 
 My Clouds have an obvious pattern in them, how do I make it go away?
 -----------
-Noise is used to hide repetition, have a look at our [Noise Settings](tutorials/clouds#noise) to learn how to hide patterns effectively. If it is still an obvious grid, consider changing the size of the grid. This is done in the trueSKY actor within the world under "Render Grid X" and "Render Grid Y". Reducing both these values will make the grid sections smaller, resulting in higher quality clouds. This may however affect performance. Multiple cloud layers can also be used to help remove the appearance of repetition by making them intersect. Finally, make sure there is breaks within the clouds, as a sheet of clouds will always look the most repetitive.
+Noise is used to hide repetition, have a look at our [Noise Settings](tutorials/clouds/variables.html#noise) to learn how to hide patterns effectively. If it is still an obvious grid, consider changing the size of the grid. This is done in the trueSKY actor within the world under "Render Grid X" and "Render Grid Y". Reducing both these values will make the grid sections smaller, resulting in higher quality clouds. This may however affect performance. Multiple cloud layers can also be used to help remove the appearance of repetition by making them intersect. Finally, make sure there is breaks within the clouds, as a sheet of clouds will always look the most repetitive.
 
 
 How do I make the clouds appear less pixelated?
 ----------------------------------------
 Try increasing the clouds resolution in the trueSKY Object.
+
+My Clouds change with only one keyframe
+------------------------------------------
+Setting the 'Noise Period' value in the cloud layer in the sky sequencer to the minimum possible will stop the clouds from changing shape over time.
 
 How do I make the clouds move independently of time-of-day?
 --------------------------------------
@@ -180,8 +196,7 @@ Using Niagara plugin in your scene can result in your packaged product producing
 
 Mega Scans
 ----------
-Mega scans plugins e.g. Quixel will cause the trueSKY Sequence editor to not open and produce the error of "the application failed to start. Could not find the Qt platform plugin windows" This is a problem we are currently working towards fixing
-
+This issue has been resolved! Update your trueSKY to use it with Megascan plugins!
 </div>
 
 <div class="unity-specific">
@@ -192,6 +207,7 @@ Any transparent shaders in use will need to be modified, otherwise the water may
 
 This will make it so that trueSKY won't be visible when underwater, so if underwater views are needed, it is advisable to write a script that changes these queue values back to their defaults when the camera is underwater. 
 
+Reloading or switching Unity scenes with both trueSKY and CETO active is not currently supported. This conflict is caused by CETO's OnDestroy() function, which removes the Unity camera and the associated Unity RenderBuffers; trueSKY relies on these RenderBuffers for its rendering.
 
 **Popcorn FX**
 

@@ -1,5 +1,5 @@
 ---
-title: Tutorial
+title: Tutorials
 layout: reference
 weight: 10
 ---
@@ -10,12 +10,12 @@ weight: 10
 Initial Configuration
 ===================
 
-This page shows you how to install the trueSKY plugin for Unity. Head back to [Installation](/installation) if you do not need the Unity Package.
+This page shows you how to install the trueSKY plugin for Unity. Head back to [Installation](/installation.html) if you do not need the Unity Package.
 
 
 1.Obtaining the trueSKY Unity Package
 -------------------------
-* 1: Login to your account at [simul.co](https://simul.co/account). If you have not created an account yet, head over to [Getting Started](/installation) to get setup.
+* 1: Login to your account at [simul.co](https://simul.co/account). If you have not created an account yet, head over to [Getting Started](/installation.html) to get setup.
 
 * 2: Download trueSKY Unity Package from [simul.co/downloads](https://simul.co/downloads). Make sure to select the correct engine version you desire, and we always recommend the most up to date version of trueSKY. Be aware Unity has issues importing packages from the downloads folder, so we recommend saving the file in a different directory related to Unity.
 

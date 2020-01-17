@@ -25,7 +25,7 @@ Functions
 | simul::clouds::CloudKeyframer::Storm * | [AddStorm](#AddStorm)(float t0, float t1, vec2 centre_km, float r_km) |
 | void | [DeleteKeyframe](#DeleteKeyframe)(int i) |
 | void | [DeleteStorm](#DeleteStorm)(int i) |
-| void | [DeleteStormByUniqueId](#DeleteStormByUniqueId)(unsigned int uid) |
+| void | [DeleteStormByUniqueId](#DeleteStormByUniqueId)(simul::sky::uid uid) |
 | void | [ForceRelight](#ForceRelight)() |
 | simul::clouds::CloudInterface * | [GetCloudInterface](#GetCloudInterface)() |
 | float | [GetDefaultFloat](#GetDefaultFloat)(char name) |
@@ -47,8 +47,8 @@ Functions
 | simul::clouds::CloudKeyframer::Storm  const * | [GetStorm](#GetStorm)(float t) |
 | simul::clouds::CloudKeyframer::Storm * | [GetStorm](#GetStorm)(float t) |
 | simul::clouds::CloudKeyframer::Storm * | [GetStorm](#GetStorm)(int i) |
-| simul::clouds::CloudKeyframer::Storm * | [GetStormByUniqueId](#GetStormByUniqueId)(unsigned int uid) |
-| simul::clouds::CloudKeyframer::Storm  const * | [GetStormByUniqueId](#GetStormByUniqueId)(unsigned int uid) |
+| simul::clouds::CloudKeyframer::Storm * | [GetStormByUniqueId](#GetStormByUniqueId)(simul::sky::uid uid) |
+| simul::clouds::CloudKeyframer::Storm  const * | [GetStormByUniqueId](#GetStormByUniqueId)(simul::sky::uid uid) |
 | unsigned int | [GetSubdivisionChecksum](#GetSubdivisionChecksum)() |
 | int3 | [GetTextureSizes](#GetTextureSizes)() |
 | simul::math::Vector3 | [GetWindOffsetKm](#GetWindOffsetKm)() |
@@ -61,7 +61,7 @@ Functions
 | simul::clouds::CloudKeyframer  const & | [operator=](#operator=)(simul::clouds::CloudKeyframer SK) |
 | void | [RecalculateOffsets](#RecalculateOffsets)() |
 | void | [Relocate](#Relocate)(pos_before, pos_after) |
-| void | [RemoveVolume](#RemoveVolume)(int id) |
+| void | [RemoveVolume](#RemoveVolume)(simul::sky::uid id) |
 | void | [Reset](#Reset)() |
 | void | [Save](#Save)(simul::sky::Output os) |
 | void | [SaveToText](#SaveToText)(simul::crossplatform::TextOutput output, bool include_keyframes) |
@@ -71,7 +71,7 @@ Functions
 | void | [SetRecalculate](#SetRecalculate)() |
 | void | [SetSkyInterface](#SetSkyInterface)(simul::sky::BaseSkyInterface si) |
 | void | [SetUniformKeyframes](#SetUniformKeyframes)(int StepsPerDay, float range) |
-| void | [SetVolume](#SetVolume)(int id, simul::clouds::CloudVolumeType type, simul::crossplatform::Quaterniond orig, vec3 scale, vec2 rake) |
+| void | [SetVolume](#SetVolume)(simul::sky::uid id, simul::clouds::CloudVolumeType type, simul::crossplatform::Quaterniond orig, vec2 lscale, vec2 uscale, vec2 rake, vec2 height_range_km) |
 | void | [Synchronize](#Synchronize)() |
 | void | [Update](#Update)(float new_time) |
 | unsigned int | [GetOffsetChecksum](#GetOffsetChecksum)() |
@@ -100,7 +100,7 @@ Remove a keyframe
 ### void DeleteStorm(int i)
 Remove the storm with index i.
 <a name="DeleteStormByUniqueId"></a>
-### void DeleteStormByUniqueId(unsigned int uid)
+### void DeleteStormByUniqueId(simul::sky::uid uid)
 Remove the storm with unique id uid.
 <a name="ForceRelight"></a>
 ### void ForceRelight()
@@ -170,10 +170,10 @@ Get the storm, if any, that is active at time t.
 ### simul::clouds::CloudKeyframer::Storm * GetStorm(int i)
 Return the storm with index i.
 <a name="GetStormByUniqueId"></a>
-### simul::clouds::CloudKeyframer::Storm * GetStormByUniqueId(unsigned int uid)
+### simul::clouds::CloudKeyframer::Storm * GetStormByUniqueId(simul::sky::uid uid)
 Return the storm with unique identifier uid.
 <a name="GetStormByUniqueId"></a>
-### simul::clouds::CloudKeyframer::Storm  const * GetStormByUniqueId(unsigned int uid)
+### simul::clouds::CloudKeyframer::Storm  const * GetStormByUniqueId(simul::sky::uid uid)
 Return the storm with unique identifier uid.
 <a name="GetSubdivisionChecksum"></a>
 ### unsigned int GetSubdivisionChecksum()
@@ -214,7 +214,7 @@ Check for changed offsets and recalculate.
 ### void Relocate(pos_before, pos_after)
 Relocate: to avoid numerical precision problems, relocation can be performed. Specify any position, before and after relocation.
 <a name="RemoveVolume"></a>
-### void RemoveVolume(int id)
+### void RemoveVolume(simul::sky::uid id)
 Remove a custom cloud volume
 <a name="Reset"></a>
 ### void Reset()
@@ -245,7 +245,7 @@ Set the sky - this is used to light the clouds over time.
 Apply the cloud's properties to all keyframes.
 Create a number of evenly spaced keyframes.
 <a name="SetVolume"></a>
-### void SetVolume(int id, simul::clouds::CloudVolumeType type, simul::crossplatform::Quaterniond orig, vec3 scale, vec2 rake)
+### void SetVolume(simul::sky::uid id, simul::clouds::CloudVolumeType type, simul::crossplatform::Quaterniond orig, vec2 lscale, vec2 uscale, vec2 rake, vec2 height_range_km)
 Set the properties of a custom cloud volume:
 <a name="Synchronize"></a>
 ### void Synchronize()

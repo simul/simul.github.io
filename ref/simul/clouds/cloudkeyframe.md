@@ -6,7 +6,7 @@ weight: 0
 struct CloudKeyframe
 ===
 
-| Include: | Clouds/BaseGpuCloudGenerator.h |
+| Include: | Clouds/CloudKeyframe.h |
 
 The keyframe structure for clouds, used by simul::clouds::CloudKeyframer.
   
@@ -17,9 +17,9 @@ Functions
 ---
 
 |  | [CloudKeyframe](#CloudKeyframe)() |
+| simul::crossplatform::Quaterniond | [GetAbsoluteOrientation](#GetAbsoluteOrientation)(simul::crossplatform::Quaterniond rel) |
 | float | [GetFloat](#GetFloat)(char name) |
 | int | [GetInt](#GetInt)(char name) |
-| simul::crossplatform::Quaterniond | [GetPrecipitationCentre](#GetPrecipitationCentre)() |
 | unsigned int | [GetPropertiesChecksum](#GetPropertiesChecksum)() |
 | bool | [HasFloat](#HasFloat)(char name) |
 | bool | [HasInt](#HasInt)(char name) |
@@ -38,17 +38,16 @@ Functions
 ---
 <a name="CloudKeyframe"></a>
 ###  CloudKeyframe()
-< Where rain/snow is found.
+< States for cloud volumes listed in the keyframer.
+<a name="GetAbsoluteOrientation"></a>
+### simul::crossplatform::Quaterniond GetAbsoluteOrientation(simul::crossplatform::Quaterniond rel)
+From a relative orientation, get the absolute orientation.
 <a name="GetFloat"></a>
 ### float GetFloat(char name)
 Get a float with the given, case-insensitive, name
 <a name="GetInt"></a>
 ### int GetInt(char name)
 Get an int with the given, case-insensitive, name
-<a name="GetPrecipitationCentre"></a>
-### simul::crossplatform::Quaterniond GetPrecipitationCentre()
-Depending on precipitationRegion.lockToClouds, precipitationRegion.CentreKm is either absolute or relative.
-So this function is used to access the true centre position of the rain region.
 <a name="GetPropertiesChecksum"></a>
 ### unsigned int GetPropertiesChecksum()
 Check for properties that, if altered in the keyframe, would require regeneration of
@@ -63,10 +62,6 @@ The properties are:
 - distributionTransition
 - upperDensity
 - localDensity
-- windSpeed
-- windDirection
-- windHeading
-- windHeadingDegrees
 - persistence
 - cloudBase
 - cloudHeight
@@ -133,11 +128,7 @@ Fields
 
 **upper_density**  < The transition from the cloud base to the upper cloud (0 to 1)
 
-**wind_speed**  < The proportion of cloud density retained in the upper layer, above the distribution_transition.
-
-**wind_direction**  < The wind speed in m/s
-
-**cloud_base_km**  < The wind direction
+**cloud_base_km**  < The proportion of cloud density retained in the upper layer, above the distribution_transition.
 
 **cloud_height_km**  < The base altitude of this cloud layer.
 
@@ -167,7 +158,9 @@ Fields
 
 **offsetKm**  < What proportion of noise is applied at the cloudbase, between 0 and 1.0.
 
-**octaves_f**  < The calculated position offset of this keyframe due to the accumulation of wind motion (see 
+**octaves_f**  < The calculated position offset of this keyframe due to the accumulation of wind motion (see [wind_speed](/ref/wind_speed)
+and [wind_direction](/ref/wind_direction)
+).
 
 **simulation**  < Only used for interpolation - changes will be ignored. See 
 
@@ -180,3 +173,5 @@ Fields
 **origin**  < The strength of the fractal worley edge noise.
 
 **precipitationRegion**  < Origin on the globe for this layer.
+
+**cloudVolumeStates**  < Where rain/snow is found.

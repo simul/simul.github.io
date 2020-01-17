@@ -16,6 +16,8 @@ Functions
 | char  const * | [Get](#Get)(char name, char default_) |
 | bool | [Get](#Get)(char name, bool default_) |
 | int | [Get](#Get)(char name, int default_) |
+| long long | [Get](#Get)(char name, long long default_) |
+| unsigned long long | [Get](#Get)(char name, unsigned long long default_) |
 | double | [Get](#Get)(char name, double default_) |
 | float | [Get](#Get)(char name, float default_) |
 | int3 | [Get](#Get)(char name, int3 default_) |
@@ -40,6 +42,12 @@ Boolean value of the specified element.
 <a name="Get"></a>
 ### int Get(char name, int default_)
 Integer value of the specified element.
+<a name="Get"></a>
+### long long Get(char name, long long default_)
+64-bit integer value of the specified element.
+<a name="Get"></a>
+### unsigned long long Get(char name, unsigned long long default_)
+64-bit integer value of the specified element.
 <a name="Get"></a>
 ### double Get(char name, double default_)
 Floating-point value of the specified element.

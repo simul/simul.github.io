@@ -36,6 +36,7 @@ Functions
 ---
 
 | simul::sky::float4 | [CalcMieCoefficients](#CalcMieCoefficients)(simul::sky::float4 ColourWavelengthsNm, float haze) |
+| simul::sky::uid | [GenerateUid](#GenerateUid)() |
 
 
 Functions
@@ -43,6 +44,9 @@ Functions
 <a name="CalcMieCoefficients"></a>
 ### simul::sky::float4 CalcMieCoefficients(simul::sky::float4 ColourWavelengthsNm, float haze)
 Calculates the mie coefficients (r,g,b) due to aerosol haze.
+<a name="GenerateUid"></a>
+### simul::sky::uid GenerateUid()
+Get an unused uid.
 
 Variables
 ---

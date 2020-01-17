@@ -12,7 +12,6 @@ Don't create a CellularCloudNode directly, instead, use the derived class FastCl
   
 
 [simul::clouds::CellularCloudGrid](cellularcloudgrid.html)
-[simul::base::Referenced](../base/referenced.html)
 
 Functions
 ---
@@ -37,7 +36,6 @@ Don't create a CellularCloudNode directly, instead, use the derived class FastCl
 Base Classes
 ---
 [simul::clouds::CellularCloudGrid](cellularcloudgrid.html)
-[simul::base::Referenced](../base/referenced.html)
 
 Functions
 ---
