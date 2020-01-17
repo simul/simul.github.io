@@ -1,0 +1,100 @@
+---
+title: Tutorials
+layout: reference
+weight: 0
+---
+
+
+
+
+Unreal Engine 4 Tutorial
+=========================
+
+Initial Configuration
+-------------------------
+
+Please be aware trueSKY for Unreal Engine 4 does not support OSX and OpenGL. For Vulkan please use UE4 4.22 or greater.
+
+This page shows you how to install the binary version of trueSKY onto your existing binary UE installation. For other versions, or if you have a version of Unreal Engine built from source, you will need to build the plugin.Check the [Unreal Source page](source.html) for information on GitHub/Engine Source Integration.
+
+
+1: Installing the Plugin
+-------------------------
+1: Login to your account at [simul.co](https://simul.co/account). If you have not created an account yet, head over to [installation home page](/installation.html) to get setup.
+
+2: Download trueSKY binary installer from [simul.co/downloads](https://simul.co/downloads). Make sure to select the correct engine version you desire, and we always recommend the most up to date version of trueSKY.
+
+![](/images/unreal/download.png)
+
+
+3: Run the trueSKY installer, ensuring that you select your UE4 directory as the installation location. (You should already have a version of UE4 installed, if not head over to www.unrealengine.com to download one). After the installation process is complete, the plugin should be installed into your UE4 directory.
+
+![](/images/unreal/wizard.png)
+
+<sup>Make sure you select the correct directory</sup>
+
+
+
+2: Running the binary plugin
+-------------------------------
+
+1: Launch an Unreal project using the engine version in which the trueSKY plugin is installed.
+
+2: Click 'Edit -> Plugins' from the dropdown menu at the top of the window.
+
+![](/images/unreal/pluginwindow.png)
+
+
+3: A new 'Plugins' window will appear. Use the search box to find 'trueSKY'.
+
+![](/images/unreal/pluginwindow2.png)
+
+
+4: Make sure trueSKY is enabled with the small tick box. If it is not, enable it. This will require you to restart Unreal.
+
+5: Once the plugin has been enabled, trueSKY is now ready to be used within the scene.
+
+
+
+3: Adding trueSKY to the level
+-------------------------------
+1: Click 'Window -> initialize trueSKY' from the dropdown at the top of the window.
+
+![](/images/unreal/windowdropdown.png)
+
+
+2: A pop-up window will appear. You can either click initialize to allow trueSKY to set itself up, or you can click next to customise initialization. If you clicked initialize, you can jump to 4.
+
+![](/images/unreal/enginewizard.png)
+
+
+3: Select an initial sequence asset. This can be changed at any time. There will be two options, TrueSkySequnceCumulus, and TrueSkySequenceStratus. You can also tick the 'Show all sequences' box if you already have some sequences available in the project contents. Select a sequence, then press next. 
+
+4: We recommend you create a TrueSkyLight, for more accurate lighting. You can also select which direction light trueSKY will control, if you do not select one then a new directional light will be created.
+
+Once initialize is selected, you should see trueSKY appear in the scene, although there may not be any clouds.  
+
+
+
+4: Creating a new Sequence
+-----------------------------
+1: Either select Add New at the top left of the content browser, or right click within the content window. 
+
+2: Click on "Miscellaneous -> trueSKY Sequence Asset" to create a new sequence. It can be renamed/saved/moved/deleted to your preference.
+
+![](/images/unreal/addsequence.png)
+
+
+3: To make this new sequence the active sequence in the world, select trueSkySequenceActor in the world outliner, then in the details section, search for 'Active Sequence'
+
+4: You can either manually select your sequence from the dropdown next to active sequence, or you can drag and drop your preferred sequence from the content browser to the active sequence box.
+
+![](/images/unreal/activesequence.png)
+
+
+
+Now you are almost ready to start creating amazing environments with trueSKY, you just need to activate your license within the sequencer. Head over [here to learn how](/tutorials/sequencer/overview#registration).
+
+
+
+
