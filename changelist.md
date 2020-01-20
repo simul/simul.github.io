@@ -7,6 +7,7 @@ weight: 120
 
 Version HEAD
 ---
+Sat 18 Jan : Fix Clang compiler error from member initialization order.  
 Fri 17 Jan : Temporarily removed rainbow docs to allow for update  
 Fri 17 Jan : Doc updates  
 Fri 17 Jan : Fix for Rainbows and Amortization  
@@ -106,6 +107,5 @@ Mon 25 Nov : Quaternion function reorg.
 Mon 25 Nov : Heading etc works for cloud window panel.  
 Sat 23 Nov : Added DXCompiler and switched D3d12 shader compilation to use dxc.  
 Sat 23 Nov : Text rendering fixes.  
-Fri 22 Nov : Prevent Unity overlay crash.  
 
 <hr>
