@@ -7,6 +7,7 @@ weight: 120
 
 Version HEAD
 ---
+Mon 27 Jan : Doc Update  
 Mon 27 Jan : Fix for disappearing rain particles when simulation is paused. Vulkan validation fix: Changed cubeTexture from TextureCube to TextureCubeArray.  
 Mon 27 Jan : Fix for rain particles spinning, when simulation is paused.  
 Sat 25 Jan : GetExportLightningStrikes signature changed.  
@@ -106,6 +107,5 @@ Thu 28 Nov : Fix for GetPrecipitationCentre().
 Thu 28 Nov : Vulkan layout/resourcestate fixes.  
 Wed 27 Nov : Disabled Visibility  
 Wed 27 Nov : UI Updates + set time to selected keyframe  
-Wed 27 Nov : Externally-set ResourceStates for D3D12.  
 
 <hr>

@@ -34,13 +34,13 @@ How to:
 
 * [Set up Rain/Snow](/tutorials/precipitation/tutorials.html)
 
-* [Set up a Cloud Volume](/tutorials/precipitation/volumes.html)
+* [Set up a Cloud Volume](/tutorials/Clouds/volumes.html)
 
-* [Day/Night Transition](/tutorials/time/tutorials.html)
+* [Day/Night Transition](/tutorials/time)
 
 * [Set up Water](/tutorials/water/tutorials.html)
 
-* [Edit Clouds at runtime with blueprints](/tutorials/unreal/blueprints.html)
+* [Edit Clouds at runtime with blueprints](/unreal/blueprints.html)
 
 
 
