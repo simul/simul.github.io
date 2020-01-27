@@ -1,5 +1,5 @@
 ---
-title: Rainbows
+title: Variables
 layout: reference
 weight: 20
 ---

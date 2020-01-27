@@ -7,6 +7,7 @@ weight: 120
 
 Version HEAD
 ---
+Mon 27 Jan : Temp fix for rainbow images + Layout Fix  
 Mon 27 Jan : Doc Update  
 Mon 27 Jan : Fix for disappearing rain particles when simulation is paused. Vulkan validation fix: Changed cubeTexture from TextureCube to TextureCubeArray.  
 Mon 27 Jan : Fix for rain particles spinning, when simulation is paused.  
@@ -106,6 +107,5 @@ Fri 29 Nov : Fix DX11 Precipitation Volume. Fix for PrecipitationRenderer to use
 Thu 28 Nov : Fix for GetPrecipitationCentre().  
 Thu 28 Nov : Vulkan layout/resourcestate fixes.  
 Wed 27 Nov : Disabled Visibility  
-Wed 27 Nov : UI Updates + set time to selected keyframe  
 
 <hr>
