@@ -11,9 +11,9 @@ weight: 50
 
 Precipitation
 ====================
-Precipitation can be attached to any cloud keyframe and it will produce precipitation based on cloud position and thickness (if desired).
+Precipitation can be attached to any cloud keyframe and it will produce precipitation based on cloud position and thickness (if desired). Snow or rain can be created with multiple customisable parameters.
 
-* [**Tutorial**](tutorials.html)                                                                - Learn how to create a rain and snow in your scene.
+* [**Tutorial**](tutorials.html)                                                        - Learn how to create a rain and snow in your scene.
 
 * [**Variables**](variables.html)                                                       - Details of all the different variables for precipitation. 
 

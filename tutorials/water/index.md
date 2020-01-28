@@ -11,7 +11,9 @@ weight: 90
 
 trueWATER
 ====================
+trueWATER is one of the latest features to come to trueSKY. Experience real-time, volumetric water that can be implemented into any project quickly. trueWATER will provide features such as waves, wakes, water reflections and Buoyancy, all customisable to your needs.
 
-Clouds are the leading feature of trueSKY, allowing for real time volumetric clouds to be added seamlessly into any level. This tutorial is about editing the clouds through the use of the Sky Sequencer. A tutorial on the Sky Sequencer can be found [here](/tutorials/sequencer). Alternatively, see [Editing with Unity Scripting](/unity/scripting) or [Using UE4 Blueprint](/unreal/blueprints.html) for engine specific editing.
 
-<hr>
+* [**Tutorial**](tutorials.html)                                                        - Learn how to add an ocean to your scene, or how to make object buoyant
+
+* [**Variables**](variables.html)                                                       - Learn about the different variables for adjusting the water, from colour to waves.

@@ -14,13 +14,13 @@ How it works
 
 Rainbow Lookup and Compositing
 -----------------
-trueSKY generates a Rainbow Lookup texture based on the colour and the power of the main directional light source; either the sun or the moon. It calucates any losses due reflections of light entering or exiting the raindrop and the wavelength of the emitted light at all angles between 40.7 and 53.5 degrees. For raindrops that are small than 1mm in diameter, a Submillimetric Light Scattering Approximation is used to adjust the spectral output.
+trueSKY generates a Rainbow Lookup texture based on the colour and the power of the main directional light source; either the sun or the moon. It calucates any losses due reflections of light entering or exiting the raindrop and the wavelength of the emitted light at all angles between 40.7 and 53.5 degrees. For raindrops that are small than 1mm in diameter, a submillimetric light scattering approximation is used to adjust the spectral output.
 
-When compositing rainbows to our cubemap, trueSKY uses the previously generated lookup texture, along with checks for the total occlusion of the main directional light source, moisture levels within the clouds and rain streaks and the desired depth point to draw the rainbow about the antisolar/antilunar point, which was either automatically or manually set. Any bright or dark areas of the rainbow are also composited at this point. 
+When compositing rainbows to our cubemap, trueSKY uses the previously generated lookup texture, along with checks for the total occlusion of the main directional light source, moisture levels within the clouds and rain streaks and the desired depth point to draw the rainbow about the antisolar or antilunar point, which was either automatically or manually set. Any bright or dark areas of the rainbow are also composited at this point. 
 
-![](/images/rainbows/RainbowLookup.png)
+![](/images/rainbows/RainbowLookup.PNG)
 
 
 Performace
 ----------
-The rendering of the Rainbow Lookup Texture takes 0.007ms , and compositing takes ca. 0.20ms of GPU time. Adjustment to the resolution of cloud cubemap will directly affect the compositing time. All rendering is disable if the either the Rainbow Intensity, Rain Strength or Rain Streaks are set to 0.
+The rendering of the Rainbow Lookup Texture takes about 0.007ms , and compositing takes about 0.20ms of GPU time. Adjustments to the resolution of cloud cubemap will directly affect the compositing time. All rendering is disable if the either the Rainbow Intensity, Rain Strength or Rain Streaks are set to 0.

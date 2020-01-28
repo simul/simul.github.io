@@ -7,6 +7,10 @@ weight: 120
 
 Version HEAD
 ---
+Tue 28 Jan : Doc Fixes  
+Tue 28 Jan : Fix for VS_SnowParticles  
+Tue 28 Jan : Minor fix for images in rainbow documentation  
+Tue 28 Jan : Minor update to Rainbow docs  
 Mon 27 Jan : Temp fix for rainbow images + Layout Fix  
 Mon 27 Jan : Doc Update  
 Mon 27 Jan : Fix for disappearing rain particles when simulation is paused. Vulkan validation fix: Changed cubeTexture from TextureCube to TextureCubeArray.  
@@ -103,9 +107,5 @@ Fri 29 Nov : Updated XboxOne submodule.
 Fri 29 Nov : Fix cloud.sfx precipitationVolumeRW texture type.  
 Fri 29 Nov : Added define SFX_D3D12  
 Fri 29 Nov : Initial commit for a rainbow_lookup texture.  
-Fri 29 Nov : Fix DX11 Precipitation Volume. Fix for PrecipitationRenderer to use the Precipitation Volume texture.  
-Thu 28 Nov : Fix for GetPrecipitationCentre().  
-Thu 28 Nov : Vulkan layout/resourcestate fixes.  
-Wed 27 Nov : Disabled Visibility  
 
 <hr>
