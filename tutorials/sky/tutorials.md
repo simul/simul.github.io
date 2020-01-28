@@ -31,7 +31,7 @@ You can manually set the colour of the horizon or the upper sky(Zenith) using th
 </div>
 </div>
 
-Make sure to apply the colour to all your keyframes if you want it to be throughout the whole day cycle, or set different colours for different times, and watch as the Sky blends as time progresses. There is an issue being fixed where the colour will not update until you alter a different variable, which is why in this example the tick box is used again.
+Make sure to apply the colour to all your keyframes if you want it to be throughout the whole day cycle, or set different colours for different times, and watch as the Sky blends as time progresses.
 
 
 
@@ -74,6 +74,20 @@ Once this is done you can use the slider below the checkbox to assign the height
 
 <div class="video-wrapper">
 <div class="video-container">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BPfCx7F0ZPA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9Ix0V8mtUD4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 </div>
+
+
+Moon Texture
+---------------
+
+You can apply a png to the moon to make it whatever object you like, and will go through phases based on the sun's position.
+
+
+<div class="video-wrapper">
+<div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bc8Fl2wXvAg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+</div>
+</div>
+

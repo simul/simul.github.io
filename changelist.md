@@ -7,6 +7,21 @@ weight: 120
 
 Version HEAD
 ---
+Mon 27 Jan : Temp fix for rainbow images + Layout Fix  
+Mon 27 Jan : Doc Update  
+Mon 27 Jan : Fix for disappearing rain particles when simulation is paused. Vulkan validation fix: Changed cubeTexture from TextureCube to TextureCubeArray.  
+Mon 27 Jan : Fix for rain particles spinning, when simulation is paused.  
+Sat 25 Jan : GetExportLightningStrikes signature changed.  
+Sat 25 Jan : Save/load Quaternions.  
+Sat 25 Jan : Sample builds fixed  
+Fri 24 Jan : Fixes to lightning.  
+Fri 24 Jan : Extra safety checks.  
+Wed 22 Jan : Performance improvements to water, some other fixes  
+Mon 20 Jan : Fix for CS_DrawRainbow() use of GetDimensions().  
+Mon 20 Jan : Fix for Rainbow documentation : How it works  
+Mon 20 Jan : Recommit Rainbow Documentation.  
+Mon 20 Jan : Fix for rendering preciptation_volume, when Strength is 0, but RainToSnow is greater than 0.  
+Mon 20 Jan : Fix images for rainbow documentation.  
 Sat 18 Jan : Fix Clang compiler error from member initialization order.  
 Fri 17 Jan : Temporarily removed rainbow docs to allow for update  
 Fri 17 Jan : Doc updates  
@@ -92,20 +107,5 @@ Fri 29 Nov : Fix DX11 Precipitation Volume. Fix for PrecipitationRenderer to use
 Thu 28 Nov : Fix for GetPrecipitationCentre().  
 Thu 28 Nov : Vulkan layout/resourcestate fixes.  
 Wed 27 Nov : Disabled Visibility  
-Wed 27 Nov : UI Updates + set time to selected keyframe  
-Wed 27 Nov : Externally-set ResourceStates for D3D12.  
-Wed 27 Nov : Externally-set ResourceStates for D3D12.  
-Tue 26 Nov : QT dir fix.  
-Tue 26 Nov : Fixed the default orientation for CloudWindowEditor.  
-Tue 26 Nov : Fix CloudWindowEditor view lines, and rotateByOffsetPolar();  
-Tue 26 Nov : Feature level 12.0 for D3D12 supported.  
-Mon 25 Nov : Cloud Index initial implementation.  
-Mon 25 Nov : Window Fix  
-Mon 25 Nov : Fix for Precipitation Volume on OpenGL. Sfx GetSizeFunction handles return parameters assignment for ShaderResourceType::UNKNOWN with replacement token {dim_check:textureName,x,y,z,tempName}  
-Mon 25 Nov : Doc fix  
-Mon 25 Nov : Quaternion function reorg.  
-Mon 25 Nov : Heading etc works for cloud window panel.  
-Sat 23 Nov : Added DXCompiler and switched D3d12 shader compilation to use dxc.  
-Sat 23 Nov : Text rendering fixes.  
 
 <hr>

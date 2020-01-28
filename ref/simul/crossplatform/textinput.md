@@ -24,6 +24,7 @@ Functions
 | vec2 | [Get](#Get)(char name, vec2 default_) |
 | vec3 | [Get](#Get)(char name, vec3 default_) |
 | vec4 | [Get](#Get)(char name, vec4 default_) |
+| simul::crossplatform::Quaterniond | [Get](#Get)(char name, simul::crossplatform::Quaterniond default_) |
 | char  const * | [Get](#Get)(int propertyIndex) |
 | simul::crossplatform::TextInput * | [GetSubElement](#GetSubElement)(char name) |
 | char  const * | [GetSubElement](#GetSubElement)(int) |
@@ -65,6 +66,9 @@ Floating-point value of the specified element.
 Floating-point value of the specified element.
 <a name="Get"></a>
 ### vec4 Get(char name, vec4 default_)
+Floating-point value of the specified element.
+<a name="Get"></a>
+### simul::crossplatform::Quaterniond Get(char name, simul::crossplatform::Quaterniond default_)
 Floating-point value of the specified element.
 <a name="Get"></a>
 ### char  const * Get(int propertyIndex)

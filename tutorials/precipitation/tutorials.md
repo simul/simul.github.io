@@ -16,10 +16,11 @@ Overview
 -----------------
 Precipitation is controlled by cloud keyframes under the Weather Effects section in the Properties window of the selected cloud keyframe. Precipitation is bounded in trueSKY, and there are two main categories: cloud window and regional. This is controlled by the 'Regional' checkbox. A cloud window bounding means that the precipitation will fall across the scene. The  regional bounding limits the range and position of the precipitation; these are called precipitation that is regions. A Cloud Map Texture, which are explained later, also act to bound the precipitation by defining the shape of the cloud (see section on Cloud Map Texture). 
 
-Precipitation regions are associated with their keyframe and their parameters, such as Radius, Strength and Rain - Snow, along with their position on the globe are interpolated over time. Precipitation regions can be position through the Cloud Window. 
+Precipitation regions are associated with their keyframe and their parameters, such as Radius, Strength and Rain - Snow, along with their position on the globe are interpolated over time. Precipitation regions can be position through the Cloud Window.
+
 <div class="video-wrapper">
 <div class="video-container">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5blgSvq-6iU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pmyUjm__UkI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 </div>
 
@@ -41,4 +42,3 @@ A cloud map texture can be added to a cloud layer via its Properties window. Thi
 ![](/images/precipitation/RainOverlayWithCloudMasks.png)
 
 
-For another brief tutorial head over to [our blog](https://simul.co/real-time-rendering-news/precipitation-and-storms-truesky).

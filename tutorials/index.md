@@ -28,7 +28,7 @@ Below you will find links to the different aspects of trueSKY, with each section
 
 * [**Time**](time)                                                                      - Make days turn to nights by altering the time.
 
-* [**Water**](water)                                                            - Real time volumetric water allows for large oceans or small pools that look as good as the sky
+* [**Water**](water)                                                            - Real time volumetric water allows for large oceans or small pools, with realistic buoyancy
 
 
 

@@ -21,7 +21,7 @@ Functions
 | void | [PreRenderUpdate](#PreRenderUpdate)(simul::crossplatform::DeviceContext deviceContext, float real_time) |
 | void | [RecompileShaders](#RecompileShaders)() |
 | void | [Render](#Render)(simul::crossplatform::DeviceContext deviceContext, simul::clouds::CloudKeyframer cloudKeyframer, simul::crossplatform::Texture depth_tex, vec4 depthViewportXYWH, simul::clouds::TransparencyAtmospherics t, float brightnessToUnity, simul::clouds::BaseWeatherRenderer weatherRenderer) |
-| void | [RenderOverlay](#RenderOverlay)(simul::crossplatform::DeviceContext deviceContext, simul::clouds::CloudKeyframer::Storm) |
+| void | [RenderOverlay](#RenderOverlay)(simul::crossplatform::DeviceContext deviceContext, simul::clouds::Storm) |
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform r) |
 
 The renderer for lightning.
@@ -49,7 +49,7 @@ Platform-dependent function to reload the shaders - only use this for debug purp
 ### void Render(simul::crossplatform::DeviceContext deviceContext, simul::clouds::CloudKeyframer cloudKeyframer, simul::crossplatform::Texture depth_tex, vec4 depthViewportXYWH, simul::clouds::TransparencyAtmospherics t, float brightnessToUnity, simul::clouds::BaseWeatherRenderer weatherRenderer)
 Main render call
 <a name="RenderOverlay"></a>
-### void RenderOverlay(simul::crossplatform::DeviceContext deviceContext, simul::clouds::CloudKeyframer::Storm)
+### void RenderOverlay(simul::crossplatform::DeviceContext deviceContext, simul::clouds::Storm)
 Render debug information
 <a name="RestoreDeviceObjects"></a>
 ### void RestoreDeviceObjects(simul::crossplatform::RenderPlatform r)

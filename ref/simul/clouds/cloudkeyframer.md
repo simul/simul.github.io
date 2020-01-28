@@ -12,17 +12,12 @@ class CloudKeyframer
 [simul::sky::OvercastCallback](../sky/overcastcallback.html)
 [simul::sky::BaseKeyframer](../sky/basekeyframer.html)
 
-Classes and Structures
----
-
-| struct [Storm](cloudkeyframer/storm.html) |  |
-
 Functions
 ---
 
 |  | [CloudKeyframer](#CloudKeyframer)(simul::base::MemoryInterface mem, bool make2d) |
 |  | [~CloudKeyframer](#~CloudKeyframer)() |
-| simul::clouds::CloudKeyframer::Storm * | [AddStorm](#AddStorm)(float t0, float t1, vec2 centre_km, float r_km) |
+| simul::clouds::Storm * | [AddStorm](#AddStorm)(float t0, float t1, simul::crossplatform::Quaterniond origin, float r_km) |
 | void | [DeleteKeyframe](#DeleteKeyframe)(int i) |
 | void | [DeleteStorm](#DeleteStorm)(int i) |
 | void | [DeleteStormByUniqueId](#DeleteStormByUniqueId)(simul::sky::uid uid) |
@@ -30,7 +25,7 @@ Functions
 | simul::clouds::CloudInterface * | [GetCloudInterface](#GetCloudInterface)() |
 | float | [GetDefaultFloat](#GetDefaultFloat)(char name) |
 | int | [GetDefaultInt](#GetDefaultInt)(char name) |
-| int | [GetExportLightningStrikes](#GetExportLightningStrikes)(simul::clouds::ExportLightningStrike strikes, int max_s, float game_time, float real_time) |
+| int | [GetExportLightningStrikes](#GetExportLightningStrikes)(simul::clouds::ExportLightningStrike strikes, int max_s, float game_time, float real_time, simul::clouds::CloudWindow w) |
 | float | [GetFloat](#GetFloat)(char name, simul::base::Variant params) |
 | simul::math::Vector3 | [GetGridOrigin](#GetGridOrigin)() |
 | simul::math::Vector3 | [GetInitialOffset](#GetInitialOffset)() |
@@ -39,16 +34,16 @@ Functions
 | float | [GetInterpolation](#GetInterpolation)() |
 | unsigned int | [GetInterpolationChecksum](#GetInterpolationChecksum)() |
 | simul::sky::BaseKeyframe * | [GetKeyframe](#GetKeyframe)(int i) |
-| simul::clouds::LightningProperties | [GetLightningProperties](#GetLightningProperties)(float game_time, float real_time) |
+| simul::clouds::LightningProperties  const & | [GetLightningProperties](#GetLightningProperties)(float game_time, float real_time, simul::clouds::CloudWindow window) |
 | float | [GetMaximumLocalPrecipitation](#GetMaximumLocalPrecipitation)(pos) |
 | simul::clouds::CloudKeyframe * | [GetNextModifiableKeyframe](#GetNextModifiableKeyframe)() |
 | int | [GetNumKeyframes](#GetNumKeyframes)() |
 | int | [GetNumStorms](#GetNumStorms)() |
-| simul::clouds::CloudKeyframer::Storm  const * | [GetStorm](#GetStorm)(float t) |
-| simul::clouds::CloudKeyframer::Storm * | [GetStorm](#GetStorm)(float t) |
-| simul::clouds::CloudKeyframer::Storm * | [GetStorm](#GetStorm)(int i) |
-| simul::clouds::CloudKeyframer::Storm * | [GetStormByUniqueId](#GetStormByUniqueId)(simul::sky::uid uid) |
-| simul::clouds::CloudKeyframer::Storm  const * | [GetStormByUniqueId](#GetStormByUniqueId)(simul::sky::uid uid) |
+| simul::clouds::Storm  const * | [GetStorm](#GetStorm)(float t) |
+| simul::clouds::Storm * | [GetStorm](#GetStorm)(float t) |
+| simul::clouds::Storm * | [GetStorm](#GetStorm)(int i) |
+| simul::clouds::Storm * | [GetStormByUniqueId](#GetStormByUniqueId)(simul::sky::uid uid) |
+| simul::clouds::Storm  const * | [GetStormByUniqueId](#GetStormByUniqueId)(simul::sky::uid uid) |
 | unsigned int | [GetSubdivisionChecksum](#GetSubdivisionChecksum)() |
 | int3 | [GetTextureSizes](#GetTextureSizes)() |
 | simul::math::Vector3 | [GetWindOffsetKm](#GetWindOffsetKm)() |
@@ -91,7 +86,7 @@ Constructor
 ###  ~CloudKeyframer()
 Destructor
 <a name="AddStorm"></a>
-### simul::clouds::CloudKeyframer::Storm * AddStorm(float t0, float t1, vec2 centre_km, float r_km)
+### simul::clouds::Storm * AddStorm(float t0, float t1, simul::crossplatform::Quaterniond origin, float r_km)
 Add a storm between the times specified, at the given centre c, with horizontal radius r (km).
 <a name="DeleteKeyframe"></a>
 ### void DeleteKeyframe(int i)
@@ -115,7 +110,7 @@ Return the default float value with the given, case-insensitive, name.
 ### int GetDefaultInt(char name)
 Return the default int value with the given, case-insensitive, name.
 <a name="GetExportLightningStrikes"></a>
-### int GetExportLightningStrikes(simul::clouds::ExportLightningStrike strikes, int max_s, float game_time, float real_time)
+### int GetExportLightningStrikes(simul::clouds::ExportLightningStrike strikes, int max_s, float game_time, float real_time, simul::clouds::CloudWindow w)
 Fills the strikes array and returns how many active strikes in the storm
 NOTE: right now we only consider 1 strike.
 <a name="GetFloat"></a>
@@ -145,7 +140,7 @@ Checksum for the interpolated state.
 ### simul::sky::BaseKeyframe * GetKeyframe(int i)
 Get a pointer to the keyframe with the given ID
 <a name="GetLightningProperties"></a>
-### simul::clouds::LightningProperties GetLightningProperties(float game_time, float real_time)
+### simul::clouds::LightningProperties  const & GetLightningProperties(float game_time, float real_time, simul::clouds::CloudWindow window)
 Get the properties of the currently active lightning strike
 <a name="GetMaximumLocalPrecipitation"></a>
 ### float GetMaximumLocalPrecipitation(pos)
@@ -161,19 +156,19 @@ Number of keyframes.
 ### int GetNumStorms()
 The number of storms on the timeline.
 <a name="GetStorm"></a>
-### simul::clouds::CloudKeyframer::Storm  const * GetStorm(float t)
+### simul::clouds::Storm  const * GetStorm(float t)
 Get the storm, if any, that is active at time t.
 <a name="GetStorm"></a>
-### simul::clouds::CloudKeyframer::Storm * GetStorm(float t)
+### simul::clouds::Storm * GetStorm(float t)
 Get the storm, if any, that is active at time t.
 <a name="GetStorm"></a>
-### simul::clouds::CloudKeyframer::Storm * GetStorm(int i)
+### simul::clouds::Storm * GetStorm(int i)
 Return the storm with index i.
 <a name="GetStormByUniqueId"></a>
-### simul::clouds::CloudKeyframer::Storm * GetStormByUniqueId(simul::sky::uid uid)
+### simul::clouds::Storm * GetStormByUniqueId(simul::sky::uid uid)
 Return the storm with unique identifier uid.
 <a name="GetStormByUniqueId"></a>
-### simul::clouds::CloudKeyframer::Storm  const * GetStormByUniqueId(simul::sky::uid uid)
+### simul::clouds::Storm  const * GetStormByUniqueId(simul::sky::uid uid)
 Return the storm with unique identifier uid.
 <a name="GetSubdivisionChecksum"></a>
 ### unsigned int GetSubdivisionChecksum()
