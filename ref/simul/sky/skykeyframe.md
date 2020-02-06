@@ -33,7 +33,7 @@ Functions
 ---
 <a name="SkyKeyframe"></a>
 ###  SkyKeyframe(simul::base::MemoryInterface m)
-< Whether to calculate the moon position from the date and time.
+< Whether to calculate the sun position from the date and time.
 <a name="GetTransientChecksum"></a>
 ### unsigned int GetTransientChecksum()
 Checksum including values not needed for GPU recalculation.
@@ -59,16 +59,10 @@ Fields
 
 **SunElevation**  < Horizontal angle to the sun. This will be overridden if sun position is automatic.
 
-**MoonElevation**  < Angle of the sun above the horizon. This will be overridden if sun position is automatic.
-
-**MoonAzimuth**  < Angle of the moon above the horizon. This will be overridden if moon position is automatic.
-
-**SeaLevelTemperatureK**  < Horizontal angle to the moon. This will be overridden if moon position is automatic.
+**SeaLevelTemperatureK**  < Angle of the sun above the horizon. This will be overridden if sun position is automatic.
 
 **StoreAsColours**  < Temperature at sealevel, in kelvins - mainly relevant to infra-red.
 
 **Horizon**  < If true, the keyframe is stored as a colour table, rather than generating its colours from its properties.
 
 **automaticSunPosition**  < Whether to recalculate the Mie coefficients based on the haze at this keyframe.
-
-**automaticMoonPosition**  < Whether to calculate the sun position from the date and time.

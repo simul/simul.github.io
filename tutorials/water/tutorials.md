@@ -60,7 +60,7 @@ You can now place the camera above where you want to apply the effect (pointing 
 
 Buoyancy
 ---------------
-Generally, you should have enough water probes positioned in such a way that they roughly cover the volume that the ships take up.
+Generally, you should have enough water probes positioned in such a way that they roughly cover the volume that the ships take up. Keep a close eye on the center of mass, as well as the overall mass of the object.
 
 For Example, this ship has 4 probes:
 

@@ -21,7 +21,6 @@ Functions
 | void | [DaytimeToClockTime](#DaytimeToClockTime)(float t, int d, int h, int m, int s, int ms) |
 | void | [DeleteKeyframe](#DeleteKeyframe)(int i) |
 | float | [GetAltitudeTexCoord](#GetAltitudeTexCoord)(float h_km) |
-| vec3 | [GetDirectionToMoon](#GetDirectionToMoon)(int keyframe) |
 | vec3 | [GetDirectionToSun](#GetDirectionToSun)(int keyframe) |
 | float | [GetFloat](#GetFloat)(char name, simul::base::Variant params) |
 | void | [GetGpuSkyParameters](#GetGpuSkyParameters)(simul::sky::GpuSkyParameters p, simul::sky::GpuSkyAtmosphereParameters a, simul::sky::GpuSkyInfraredParameters ir, int index) |
@@ -44,6 +43,7 @@ Functions
 | void | [SetFloat](#SetFloat)(char name, float val) |
 | void | [SetInt](#SetInt)(char name, int val) |
 | void | [SetStartDate](#SetStartDate)(int y, int m, int d) |
+| void | [SetSubdivisionBrightness](#SetSubdivisionBrightness)(int index, float m) |
 | void | [SetUniformKeyframes](#SetUniformKeyframes)(int Steps, float range) |
 | void | [UnHighlightConstellation](#UnHighlightConstellation)(char) |
 | void | [Update](#Update)() |
@@ -79,9 +79,6 @@ Delete a skykeyframe with the given ID
 <a name="GetAltitudeTexCoord"></a>
 ### float GetAltitudeTexCoord(float h_km)
 Returns the texture coordinate for the given altitude - constant per-frame.
-<a name="GetDirectionToMoon"></a>
-### vec3 GetDirectionToMoon(int keyframe)
-Get the direction the moon represented as a vector
 <a name="GetDirectionToSun"></a>
 ### vec3 GetDirectionToSun(int keyframe)
 Get the direction the sun represented as a vector
@@ -172,7 +169,6 @@ These are the properties the SkyKeyframer has:
 - numColourElevations
 - numColourDistances
 - AutomaticSunPosition
-- AutomaticMoonPosition
 
 <a name="HighlightConstellation"></a>
 ### void HighlightConstellation(char)
@@ -195,6 +191,9 @@ Set an int with the given, case-insensitive, name
 <a name="SetStartDate"></a>
 ### void SetStartDate(int y, int m, int d)
 Set the date for time=0.
+<a name="SetSubdivisionBrightness"></a>
+### void SetSubdivisionBrightness(int index, float m)
+Set the sky brightness calculated at the specified state subdivision.
 <a name="SetUniformKeyframes"></a>
 ### void SetUniformKeyframes(int Steps, float range)
 Create a number of evenly spaced keyframes.

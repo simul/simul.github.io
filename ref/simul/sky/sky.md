@@ -9,37 +9,36 @@ class Sky
 | Include: | Sky/BaseSkyRenderer.h |
 
 
-[simul::sky::BaseSky](/ref/simul/sky/basesky.html)
+[simul::sky::OpticalLengthInterface](opticallengthinterface.html)
+[simul::sky::AtmosphericScatteringInterface](atmosphericscatteringinterface.html)
 
 Functions
 ---
 
 |  | [Sky](#Sky)(simul::base::MemoryInterface mem) |
-| vec3 | [GetDirectionToMoon](#GetDirectionToMoon)(double epoch_time, float latitude, float longitude) |
 | vec3 | [GetDirectionToSun](#GetDirectionToSun)(double epoch_time, float latitude, float longitude) |
-| float | [GetMoonIrradianceFactor](#GetMoonIrradianceFactor)(vec3 dir_to_moon, vec3 dir_to_sun) |
+| float | [GetMoonIrradianceFactor](#GetMoonIrradianceFactor)(simul::sky::Moon m, vec3 dir_to_moon, vec3 dir_to_sun) |
 | float | [GetOpticalLength](#GetOpticalLength)(float Elevation, float h_km) |
 | float | [GetOzoneOpticalLength](#GetOzoneOpticalLength)(float Elevation, float h_km) |
 | unsigned int | [GetTablesChecksum](#GetTablesChecksum)() |
+| float | [GetHazeFactorOpticalLength](#GetHazeFactorOpticalLength)(float Elevation, float h_km, simul::sky::HazeStruct hazeStruct) |
 
 
 Base Classes
 ---
-[simul::sky::BaseSky](/ref/simul/sky/basesky.html)
+[simul::sky::OpticalLengthInterface](opticallengthinterface.html)
+[simul::sky::AtmosphericScatteringInterface](atmosphericscatteringinterface.html)
 
 Functions
 ---
 <a name="Sky"></a>
 ###  Sky(simul::base::MemoryInterface mem)
 The namespace and library for Simul sky functionality.
-<a name="GetDirectionToMoon"></a>
-### vec3 GetDirectionToMoon(double epoch_time, float latitude, float longitude)
-Get the direction the moon represented as a vector
 <a name="GetDirectionToSun"></a>
 ### vec3 GetDirectionToSun(double epoch_time, float latitude, float longitude)
 Get the direction the sun represented as a vector
 <a name="GetMoonIrradianceFactor"></a>
-### float GetMoonIrradianceFactor(vec3 dir_to_moon, vec3 dir_to_sun)
+### float GetMoonIrradianceFactor(simul::sky::Moon m, vec3 dir_to_moon, vec3 dir_to_sun)
 Moon irradiance as a multiple of sun irradiance.
 <a name="GetOpticalLength"></a>
 ### float GetOpticalLength(float Elevation, float h_km)
@@ -51,6 +50,9 @@ Get the effective optical length of ozone of a ray cast from altitude h_kmat ang
 <a name="GetTablesChecksum"></a>
 ### unsigned int GetTablesChecksum()
 A checksum that changes any time the density, optical depth or blackbody table is recalculated.
+<a name="GetHazeFactorOpticalLength"></a>
+### float GetHazeFactorOpticalLength(float Elevation, float h_km, simul::sky::HazeStruct hazeStruct)
+Get the effective optical length of haze of a ray cast from altitude h_kmat angle Elevationabove the horizon.
 
 Fields
 ---

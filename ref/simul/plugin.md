@@ -420,6 +420,4 @@ Unity-specific device event. Calls StaticSetGraphicsDevice() if needed.
 Enums
 ---
 
-**FloatAtPosition**  The namespace for the plugin render interface.
-
 **RenderStyle**  Different rendering styles

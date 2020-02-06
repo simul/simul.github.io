@@ -8,12 +8,17 @@ typedef uid
 
 | Include: | Sky/BaseKeyframer.h |
 
+A globally unique id.
+  
 
 
 Functions
 ---
 
 | void | [UseUid](#UseUid)(simul::sky::uid u) |
+
+A globally unique id.
+  
 
 
 Functions

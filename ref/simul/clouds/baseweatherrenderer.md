@@ -21,7 +21,6 @@ Functions
 | simul::clouds::BaseWeatherRenderer * | [Create](#Create)(simul::clouds::Environment env, simul::base::MemoryInterface m) |
 | void | [CreateSubObjects](#CreateSubObjects)() |
 | void | [Destroy](#Destroy)(simul::clouds::BaseWeatherRenderer baseWeatherRenderer) |
-| simul::sky::float4  const & | [GetAmbientLightColour](#GetAmbientLightColour)(float view_altitude_km) |
 | simul::sky::BaseAtmosphericsRenderer * | [GetBaseAtmosphericsRenderer](#GetBaseAtmosphericsRenderer)() |
 | simul::clouds::CloudRenderer * | [GetBaseCloudRenderer](#GetBaseCloudRenderer)() |
 | simul::sky::BaseSkyRenderer * | [GetBaseSkyRenderer](#GetBaseSkyRenderer)() |
@@ -81,9 +80,6 @@ Create the member sub-objects: CloudRenderer etc.
 <a name="Destroy"></a>
 ### void Destroy(simul::clouds::BaseWeatherRenderer baseWeatherRenderer)
 Destroy a base weather renderer.
-<a name="GetAmbientLightColour"></a>
-### simul::sky::float4  const & GetAmbientLightColour(float view_altitude_km)
-Get the HDR ambient colour, as seen from the specified altitude view_altitude_km
 <a name="GetBaseAtmosphericsRenderer"></a>
 ### simul::sky::BaseAtmosphericsRenderer * GetBaseAtmosphericsRenderer()
 Get a pointer to the atmospheric renderer.
