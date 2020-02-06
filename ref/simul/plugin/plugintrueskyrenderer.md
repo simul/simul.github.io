@@ -80,15 +80,16 @@ Functions
 | void | [SetFloat](#SetFloat)(char name, float value) |
 | void | [SetInt](#SetInt)(char name, int value, simul::sky::uid layerID) |
 | void | [SetMatrix4x4](#SetMatrix4x4)(char name, float matrix4x4) |
+| void | [SetMoon](#SetMoon)(int id, simul::plugin::ExternalMoon m) |
 | void | [SetPointLight](#SetPointLight)(int id, pos, float min_radius, float max_radius, irradiance) |
 | void | [SetString](#SetString)(char name, char value) |
+| void | [SetTexture](#SetTexture)(char name, simul::plugin::ExternalTexture t) |
 | void | [SetTexture](#SetTexture)(char name, void tex, int w, int l, simul::crossplatform::PixelFormat pixelFormat, simul::crossplatform::ResourceState resourceState) |
 | void | [SetWater](#SetWater)(long long Enum, int ID, simul::base::Variant v) |
 | void | [SetWaterBool](#SetWaterBool)(char name, int ID, bool value) |
 | void | [SetWaterFloat](#SetWaterFloat)(char name, int ID, float value) |
 | void | [SetWaterInt](#SetWaterInt)(char name, int ID, int value) |
 | void | [SetWaterVector](#SetWaterVector)(char name, int ID, float value) |
-| int | [SpawnLightning](#SpawnLightning)(startpos, endpos, float magnitude, colour, float duration) |
 | bool | [TriggerAction](#TriggerAction)(char name) |
 | void | [UpdateProfilingText](#UpdateProfilingText)() |
 | void | [UpdateWaterBuoyancyObjectValues](#UpdateWaterBuoyancyObjectValues)(simul::terrain::WaterMeshObjectValues values) |
@@ -301,6 +302,9 @@ Sets an integer value. nameshould be "CloudSteps", or "Downscale".
 <a name="SetMatrix4x4"></a>
 ### void SetMatrix4x4(char name, float matrix4x4)
 Sets a matrix value.
+<a name="SetMoon"></a>
+### void SetMoon(int id, simul::plugin::ExternalMoon m)
+A class that provides an interface between the trueSKY renderer and an external engine.
 <a name="SetPointLight"></a>
 ### void SetPointLight(int id, pos, float min_radius, float max_radius, irradiance)
 For the next frame, put a light source at the specified position, with the specified irradiance. The radius specifies
@@ -308,6 +312,9 @@ the size of the source.
 <a name="SetString"></a>
 ### void SetString(char name, char value)
 Set a string value. namemust be "LicenceKey".
+<a name="SetTexture"></a>
+### void SetTexture(char name, simul::plugin::ExternalTexture t)
+Setting texture properties.
 <a name="SetTexture"></a>
 ### void SetTexture(char name, void tex, int w, int l, simul::crossplatform::PixelFormat pixelFormat, simul::crossplatform::ResourceState resourceState)
 Setting texture properties.
@@ -326,9 +333,6 @@ Set an int for a specfic water object
 <a name="SetWaterVector"></a>
 ### void SetWaterVector(char name, int ID, float value)
 Set a vector for a specfic water object
-<a name="SpawnLightning"></a>
-### int SpawnLightning(startpos, endpos, float magnitude, colour, float duration)
-A class that provides an interface between the trueSKY renderer and an external engine.
 <a name="TriggerAction"></a>
 ### bool TriggerAction(char name)
 Trigger an action. nameshould be "RecompileShaders".

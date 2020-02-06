@@ -15,11 +15,10 @@ An abstract interface class for skies.
 Functions
 ---
 
-| simul::sky::float4 | [GetAmbientLight](#GetAmbientLight)(float altitude_km) |
 | vec3 | [GetDirectionToLight](#GetDirectionToLight)(double t, float altitude_km) |
 | vec3 | [GetDirectionToLight](#GetDirectionToLight)(float altitude_km) |
-| vec3 | [GetDirectionToMoon](#GetDirectionToMoon)() |
-| vec3 | [GetDirectionToMoon](#GetDirectionToMoon)(double t) |
+| vec3 | [GetDirectionToMoon](#GetDirectionToMoon)(simul::sky::uid) |
+| vec3 | [GetDirectionToMoon](#GetDirectionToMoon)(simul::sky::uid, double t) |
 | vec3 | [GetDirectionToSun](#GetDirectionToSun)() |
 | vec3 | [GetDirectionToSun](#GetDirectionToSun)(double t) |
 | simul::sky::EarthShadow | [GetEarthShadow](#GetEarthShadow)(float h_km, vec3 lightDir) |
@@ -27,7 +26,6 @@ Functions
 | float | [GetHorizonElevation](#GetHorizonElevation)(float h_km) |
 | simul::sky::float4 | [GetInscatterAngularMultiplier](#GetInscatterAngularMultiplier)(float cosine, float mie_factor, float alt_km) |
 | simul::sky::float4 | [GetLocalIrradiance](#GetLocalIrradiance)(float altitude_km) |
-| vec3 | [GetLocalMoonIrradiance](#GetLocalMoonIrradiance)(double t, float altitude_km) |
 | vec3 | [GetLocalSunIrradiance](#GetLocalSunIrradiance)(double t, float altitude_km) |
 | simul::sky::float4 | [GetMieRayleighRatio](#GetMieRayleighRatio)() |
 | unsigned int | [GetSubdivisionChecksum](#GetSubdivisionChecksum)() |
@@ -40,9 +38,6 @@ An abstract interface class for skies.
 
 Functions
 ---
-<a name="GetAmbientLight"></a>
-### simul::sky::float4 GetAmbientLight(float altitude_km)
-Get the ambient light irradiance at the specified altitude.
 <a name="GetDirectionToLight"></a>
 ### vec3 GetDirectionToLight(double t, float altitude_km)
 Get the direction to the current strongest light source - could be the sun or the moon.
@@ -50,10 +45,10 @@ Get the direction to the current strongest light source - could be the sun or th
 ### vec3 GetDirectionToLight(float altitude_km)
 Get the direction to the current strongest light source - could be the sun or the moon.
 <a name="GetDirectionToMoon"></a>
-### vec3 GetDirectionToMoon()
+### vec3 GetDirectionToMoon(simul::sky::uid)
 Get the current direction to the Moon.
 <a name="GetDirectionToMoon"></a>
-### vec3 GetDirectionToMoon(double t)
+### vec3 GetDirectionToMoon(simul::sky::uid, double t)
 Get the direction to the Moon at the given time.
 <a name="GetDirectionToSun"></a>
 ### vec3 GetDirectionToSun()
@@ -78,9 +73,6 @@ and alt_kmis the viewing altitude in km.
 <a name="GetLocalIrradiance"></a>
 ### simul::sky::float4 GetLocalIrradiance(float altitude_km)
 Get the sunlight that reaches the altitude altitude_km.
-<a name="GetLocalMoonIrradiance"></a>
-### vec3 GetLocalMoonIrradiance(double t, float altitude_km)
-Get the moonlight that reaches the altitude altitude_km.
 <a name="GetLocalSunIrradiance"></a>
 ### vec3 GetLocalSunIrradiance(double t, float altitude_km)
 Get the sunlight that reaches the altitude altitude_km.

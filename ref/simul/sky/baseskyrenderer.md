@@ -83,10 +83,8 @@ Functions
 
 | float | [CalcSunOcclusion](#CalcSunOcclusion)(simul::crossplatform::DeviceContext, float cloud_occlusion) |
 | simul::sky::BaseGpuSkyGenerator * | [CreateGpuSkyGenerator](#CreateGpuSkyGenerator)(simul::base::MemoryInterface m) |
-| void | [EnableMoon](#EnableMoon)(bool val) |
 | void | [EnsureEffectsAreBuilt](#EnsureEffectsAreBuilt)(simul::crossplatform::RenderPlatform r) |
 | void | [EnsureTexturesAreUpToDate](#EnsureTexturesAreUpToDate)(simul::crossplatform::DeviceContext deviceContext) |
-| simul::sky::float4 | [GetAmbientColour](#GetAmbientColour)(float alt_km) |
 | simul::sky::BaseGpuSkyGenerator * | [GetBaseGpuSkyGenerator](#GetBaseGpuSkyGenerator)() |
 | simul::sky::BaseSkyInterface * | [GetBaseSkyInterface](#GetBaseSkyInterface)() |
 | simul::crossplatform::Texture * | [GetIlluminationTexture](#GetIlluminationTexture)() |
@@ -98,7 +96,6 @@ Functions
 | simul::sky::SkyKeyframer * | [GetSkyKeyframer](#GetSkyKeyframer)() |
 | float | [GetSunOcclusion](#GetSunOcclusion)() |
 | void | [InvalidateDeviceObjects](#InvalidateDeviceObjects)() |
-| bool | [IsMoonEnabled](#IsMoonEnabled)() |
 | void | [PreRenderUpdate](#PreRenderUpdate)(simul::crossplatform::DeviceContext deviceContext) |
 | void | [RecompileShaders](#RecompileShaders)() |
 | void | [ReloadTextures](#ReloadTextures)() |
@@ -114,14 +111,10 @@ Functions
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform renderPlatform) |
 | void | [SaveTextures](#SaveTextures)(char) |
 | void | [SetBackgroundTexture](#SetBackgroundTexture)(simul::crossplatform::Texture t) |
-| void | [SetMoonTexture](#SetMoonTexture)(simul::crossplatform::Texture t) |
 | void | [SetOvercastCallback](#SetOvercastCallback)(simul::sky::OvercastCallback ocb) |
-| void | [SetPlanet](#SetPlanet)(int index, simul::crossplatform::Texture tex, float rad, bool do_lighting) |
-| void | [SetPlanetColour](#SetPlanetColour)(int index, float c3) |
-| void | [SetPlanetDirection](#SetPlanetDirection)(int index, float pos) |
-| void | [SetPlanetImage](#SetPlanetImage)(int index, simul::crossplatform::Texture tex) |
-| void | [SetPlanetRadius](#SetPlanetRadius)(int index, float radians) |
+| void | [SetPlanetImage](#SetPlanetImage)(simul::sky::uid u, simul::crossplatform::Texture tex, bool lighting) |
 | void | [FillFadeTextureBlocks](#FillFadeTextureBlocks)(int, int, int, int, int, int, int, float, float, float) |
+| void | [SetPlanet](#SetPlanet)(simul::sky::uid u, simul::sky::Moon m, simul::crossplatform::Texture tex, bool do_lighting) |
 
 The Sky Renderer performs the following tasks:
 - Rendering stars: using RenderPointStars(void *context,float exposure)
@@ -208,19 +201,12 @@ uses a hardware occlusion query to see how many pixels have passed the z-test.
 <a name="CreateGpuSkyGenerator"></a>
 ### simul::sky::BaseGpuSkyGenerator * CreateGpuSkyGenerator(simul::base::MemoryInterface m)
 Override this to create a custom generator.
-<a name="EnableMoon"></a>
-### void EnableMoon(bool val)
-The moon is distinct from other planets because its position is taken from the skyInterface. When the moon is enabled, it will be added
-to the planets list and updated automatically.
 <a name="EnsureEffectsAreBuilt"></a>
 ### void EnsureEffectsAreBuilt(simul::crossplatform::RenderPlatform r)
 Check that all shaders have been correctly compiled
 <a name="EnsureTexturesAreUpToDate"></a>
 ### void EnsureTexturesAreUpToDate(simul::crossplatform::DeviceContext deviceContext)
 Maintains the per-frame textures.
-<a name="GetAmbientColour"></a>
-### simul::sky::float4 GetAmbientColour(float alt_km)
-Returns the current ambient light colour as a float4 (x=red, y=green, z=blue, w unused), i.e. sunlight or moonlight. This is a high-dynamic range value.
 <a name="GetBaseGpuSkyGenerator"></a>
 ### simul::sky::BaseGpuSkyGenerator * GetBaseGpuSkyGenerator()
 Get a pointer to the Sky Generator.
@@ -255,9 +241,6 @@ Get a value, from zero to one, which represents how much of the sun is visible.
 <a name="InvalidateDeviceObjects"></a>
 ### void InvalidateDeviceObjects()
 Platform-dependent function called when uninitializing the sky renderer.
-<a name="IsMoonEnabled"></a>
-### bool IsMoonEnabled()
-Is the moon being shown?
 <a name="PreRenderUpdate"></a>
 ### void PreRenderUpdate(simul::crossplatform::DeviceContext deviceContext)
 Once per-frame update. Do this before any rendering each frame.
@@ -305,30 +288,12 @@ Save the current texture set to disk. Useful, but not necessary for normal opera
 <a name="SetBackgroundTexture"></a>
 ### void SetBackgroundTexture(simul::crossplatform::Texture t)
 Get some per-frame text information for debugging - usually timing data.
-<a name="SetMoonTexture"></a>
-### void SetMoonTexture(simul::crossplatform::Texture t)
-Override the Moon texture
 <a name="SetOvercastCallback"></a>
 ### void SetOvercastCallback(simul::sky::OvercastCallback ocb)
 Inform the sky renderer of a callback to use to get overcast information.
-<a name="SetPlanet"></a>
-### void SetPlanet(int index, simul::crossplatform::Texture tex, float rad, bool do_lighting)
-Create a planet, identified by the index, which can be any unique number.
-The texture texis an API-specific texture identifier, e.g. a GLuint, or LPDIRECT3D9TEXTURE.
-The angular radius will be rad, in radians. If do_lightingis true, the planet should be directionally lit by the sun
-to produce phases.
-<a name="SetPlanetColour"></a>
-### void SetPlanetColour(int index, float c3)
-Set the colour of the planet identified by index.
-<a name="SetPlanetDirection"></a>
-### void SetPlanetDirection(int index, float pos)
-Set the direction to the planet identified by index.
 <a name="SetPlanetImage"></a>
-### void SetPlanetImage(int index, simul::crossplatform::Texture tex)
-Set the texture for planet indexto tex, an API-specific texture identifier, e.g. a GLuint, a DX9 LPDIRECT3D9TEXTURE, or DX11 ShaderResourceView.
-<a name="SetPlanetRadius"></a>
-### void SetPlanetRadius(int index, float radians)
-Set the angular radius of the planet identified by index.
+### void SetPlanetImage(simul::sky::uid u, simul::crossplatform::Texture tex, bool lighting)
+Set the texture for planet indexto tex
 <a name="FillFadeTextureBlocks"></a>
 ### void FillFadeTextureBlocks(int, int, int, int, int, int, int, float, float, float)
 Inform the derived class that the loss and inscatter textures texture_index, either 0, 1 or 2, at altitude
@@ -342,3 +307,9 @@ Only one of FillFadeTexturesSequentially and FillFadeTextureBlocks need be imple
 Some API's permit transfer of data sequentially in memory to textures (e.g. DirectX 9), some expect cuboid blocks of
 texels to be filled (e.g. OpenGL). The unwanted function should be implemented as a stub, with an assert() or some other
 fail condition, to make sure it is never called.
+<a name="SetPlanet"></a>
+### void SetPlanet(simul::sky::uid u, simul::sky::Moon m, simul::crossplatform::Texture tex, bool do_lighting)
+Create a planet, identified by the index, which can be any unique number.
+The texture texis an API-specific texture identifier, e.g. a GLuint, or LPDIRECT3D9TEXTURE.
+The angular radius will be rad, in radians. If do_lightingis true, the planet should be directionally lit by the sun
+to produce phases.

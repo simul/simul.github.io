@@ -18,7 +18,7 @@ trueSKY generates a Rainbow Lookup texture based on the colour and the power of 
 
 When compositing rainbows to our cubemap, trueSKY uses the previously generated lookup texture, along with checks for the total occlusion of the main directional light source, moisture levels within the clouds and rain streaks and the desired depth point to draw the rainbow about the antisolar or antilunar point, which was either automatically or manually set. Any bright or dark areas of the rainbow are also composited at this point. 
 
-![](/images/rainbows/RainbowLookup.PNG)
+![](/images/rainbows/RainbowLookup.png)
 
 
 Performace

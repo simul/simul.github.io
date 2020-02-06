@@ -21,20 +21,20 @@ To manually adjust the position of the rainbow, uncheck 'Automatic Rainbow Posit
 To adjust the point at which the rainbow intersects the terrain, change the value of the depth point.
 
 Near:
-![](/images/rainbows/RainbowDepthPointNear.PNG)
+![](/images/rainbows/RainbowDepthPointNear.png)
 
 Far:
-![](/images/rainbows/RainbowDepthPointFar.PNG)
+![](/images/rainbows/RainbowDepthPointFar.png)
 
 
 Lunar Rainbows are created in the same way with precipitation that is illuminated by unoccluded light from the moon. All parameter that affect normal solar rainbows apply to lunar ones as well.
-![](/images/rainbows/LunarRainbows.PNG)
+![](/images/rainbows/LunarRainbows.png)
 
 
 The colour of the light dramatically affects the rainbow's spectrum, for example at sunset.
-![](/images/rainbows/RainbowsAtSunset.PNG)
+![](/images/rainbows/RainbowsAtSunset.png)
 
 
 Setting the Raindrop size to less than 1mm introduces a submillimetric light scattering approximation. At such small droplets sizes, conventional geometric optics doesn't accurately predict the rainbow's spectrum, these leeds onto certain features such as supernumerary rainbows. This is still an approximation and we are looking to calcuate more accurately the submillimetric light scattering in later revisions!
-![](/images/rainbows/RainbowsSLSA0_25mm.PNG)
+![](/images/rainbows/RainbowsSLSA0_25mm.png)
 

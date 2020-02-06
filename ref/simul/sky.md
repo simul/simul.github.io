@@ -24,6 +24,7 @@ Classes and Structures
 | struct [KeyframeInterpolation](sky/keyframeinterpolation.html) |  |
 | struct [KeyframeInUseState](sky/keyframeinusestate.html) |  |
 | class [OpticalLengthInterface](sky/opticallengthinterface.html) |  |
+| struct [Orbit](sky/orbit.html) |  |
 | struct [Output](sky/output.html) |  |
 | class [SiderealSky](sky/siderealsky.html) |  |
 | struct [SkyKeyframe](sky/skykeyframe.html) |  |
@@ -50,6 +51,11 @@ Get an unused uid.
 
 Variables
 ---
+
+Typedefs
+---
+
+**id**  An id that is unique for the type of thing it identifies, but not globally unique.
 
 Enums
 ---
