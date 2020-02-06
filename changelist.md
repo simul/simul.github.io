@@ -7,6 +7,8 @@ weight: 120
 
 Version HEAD
 ---
+Thu 06 Feb : Removal of Duplicate Images  
+Thu 06 Feb : Switch cldoc to simul/markdoc submodule remote.  
 Thu 06 Feb : Added cloud volume calculations to MixInCirrus shader.  
 Thu 06 Feb : Fix for copied keyframes not being accessible.  
 Tue 04 Feb : Minor fixes to build script.  
@@ -105,7 +107,5 @@ Fri 10 Jan : Added UI, Lunar Rainbows and General Fixes
 Fri 10 Jan : Add SimulPS4.props  
 Fri 10 Jan : Remove unwanted .props reference.  
 Thu 09 Jan : Build.bat fixes  
-Thu 09 Jan : Batch file fixes  
-Thu 09 Jan : Removed duplicate BackgroundLatLongSphere() from sky.sfx  
 
 <hr>
