@@ -9,7 +9,7 @@ class TimedNoise3D
 | Include: | Clouds/CellularCloudNode.h |
 
 
-[simul::math::Noise3D](../math/noise3d.html)
+[simul::math::Noise3D](/ref/simul/math/noise3d.html)
 
 Functions
 ---
@@ -19,7 +19,7 @@ Functions
 
 Base Classes
 ---
-[simul::math::Noise3D](../math/noise3d.html)
+[simul::math::Noise3D](/ref/simul/math/noise3d.html)
 
 Functions
 ---

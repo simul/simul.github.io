@@ -7,6 +7,13 @@ weight: 120
 
 Version HEAD
 ---
+Thu 13 Feb : Sequencer nsi fixes.  
+Tue 11 Feb : Remove SimulGeometry dependencies.  
+Tue 11 Feb : Optional reading of Lat/Long. Removed window grid UI.  
+Mon 10 Feb : Fix installers.  
+Mon 10 Feb : Renamce toolchain.ORBIS.cmake to toolchain-ORBIS.cmake  
+Mon 10 Feb : Math is now in Platform.  
+Mon 10 Feb : GetInterpolatedCloudKeyframeUniqueId() returns the UID for the Cloud Keyframer based on the layer index. New function Environment::GetCloudKeyframerUIDByLayerIndex();  
 Thu 06 Feb : Removal of Duplicate Images  
 Thu 06 Feb : Switch cldoc to simul/markdoc submodule remote.  
 Thu 06 Feb : Added cloud volume calculations to MixInCirrus shader.  
@@ -100,12 +107,5 @@ Tue 14 Jan : Fix for OpenGL, Add half4 support to SFX for OpenGL only.
 Mon 13 Jan : Fix for DX12 and Vulkan. OpenGL is WIP.  
 Mon 13 Jan : Using the view position, instead of just height. simul::vulkan::DeviceManagerInternal store the VkPhysicalDeviceFeatures, queried from the gpu. vkCreateDevice queries against the stored VkPhysicalDeviceFeatures for compatibility. simul::vulkan::Texture::IsValid() check for a valid object handle as well.  
 Sat 11 Jan : Remove xmlParser, stampver, and ATLServer from External.  
-Sat 11 Jan : Remove Oculus, freeglut, glew from Externals.  
-Sat 11 Jan : FindFileInPathStack finds NEWEST file, not first.  
-Sat 11 Jan : Remove nasty boost.  
-Fri 10 Jan : Added UI, Lunar Rainbows and General Fixes  
-Fri 10 Jan : Add SimulPS4.props  
-Fri 10 Jan : Remove unwanted .props reference.  
-Thu 09 Jan : Build.bat fixes  
 
 <hr>

@@ -11,12 +11,6 @@ namespace geometry
 Geometry is a small library that contains orientation and reference frame classes.<br>
 
 
-Classes and Structures
----
-
-| class [SimulOrientation](geometry/simulorientation.html) |  |
-| class [SimulReferenceFrame](geometry/simulreferenceframe.html) |  |
-
 
 The main classes are simul::geometry::SimulOrientation and simul::geometry::SimulReferenceFrame.
 

@@ -9,7 +9,7 @@ class Camera
 | Include: | Platform/CrossPlatform/Camera.h |
 
 
-[simul::geometry::OrientationInterface](../geometry/orientationinterface.html)
+[simul::geometry::OrientationInterface](/ref/simul/geometry/orientationinterface.html)
 [simul::crossplatform::CameraInterface](camerainterface.html)
 
 Functions
@@ -20,7 +20,7 @@ Functions
 
 Base Classes
 ---
-[simul::geometry::OrientationInterface](../geometry/orientationinterface.html)
+[simul::geometry::OrientationInterface](/ref/simul/geometry/orientationinterface.html)
 [simul::crossplatform::CameraInterface](camerainterface.html)
 
 Functions

@@ -32,8 +32,10 @@ Fields
 
 **model**  < An id unique to each rendered view, but persistent across frames.
 
+**view**  < The model matrix
+
 **proj**  < The view matrix. If considered as row-major, position information is in the 4th row.
 
 **invViewProj**  < The projection matrix, row-major.
 
-**depthTextureStyle**  < THe viewing frustum, calculated from the proj matrix and stored for convenience using simul::crossplatform::GetFrustumFromProjectionMatrix.
+**depthTextureStyle**  < The viewing frustum, calculated from the proj matrix and stored for convenience using simul::crossplatform::GetFrustumFromProjectionMatrix.
