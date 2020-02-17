@@ -66,6 +66,7 @@ Functions
 | void | [PushTexturePath](#PushTexturePath)(char pathUtf8) |
 | void | [RecompileShaders](#RecompileShaders)() |
 | void | [Resolve](#Resolve)(simul::crossplatform::DeviceContext, simul::crossplatform::Texture, simul::crossplatform::Texture) |
+| void | [ResourceBarrierUAV](#ResourceBarrierUAV)(simul::crossplatform::DeviceContext, simul::crossplatform::Texture) |
 | void | [ResourceTransition](#ResourceTransition)(simul::crossplatform::DeviceContext, simul::crossplatform::Texture, simul::crossplatform::ResourceTransition) |
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(void) |
 | void | [RestoreRenderState](#RestoreRenderState)(simul::crossplatform::DeviceContext) |
@@ -251,6 +252,9 @@ Platform-dependent function to reload the shaders - only use this for debug purp
 <a name="Resolve"></a>
 ### void Resolve(simul::crossplatform::DeviceContext, simul::crossplatform::Texture, simul::crossplatform::Texture)
 Resolve an MSAA texture to a normal texture.
+<a name="ResourceBarrierUAV"></a>
+### void ResourceBarrierUAV(simul::crossplatform::DeviceContext, simul::crossplatform::Texture)
+Ensures that all UAV read and write operation to the textures are completed.
 <a name="ResourceTransition"></a>
 ### void ResourceTransition(simul::crossplatform::DeviceContext, simul::crossplatform::Texture, simul::crossplatform::ResourceTransition)
 Makes sure the resource is in the required state specified by transition.

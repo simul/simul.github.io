@@ -7,6 +7,7 @@ weight: 120
 
 Version HEAD
 ---
+Fri 14 Feb : Fix for D3D12 Rain streaks flicking.  
 Thu 13 Feb : Sequencer nsi fixes.  
 Tue 11 Feb : Remove SimulGeometry dependencies.  
 Tue 11 Feb : Optional reading of Lat/Long. Removed window grid UI.  
@@ -106,6 +107,5 @@ Tue 14 Jan : Update water changes from base 4.2
 Tue 14 Jan : Fix for OpenGL, Add half4 support to SFX for OpenGL only.  
 Mon 13 Jan : Fix for DX12 and Vulkan. OpenGL is WIP.  
 Mon 13 Jan : Using the view position, instead of just height. simul::vulkan::DeviceManagerInternal store the VkPhysicalDeviceFeatures, queried from the gpu. vkCreateDevice queries against the stored VkPhysicalDeviceFeatures for compatibility. simul::vulkan::Texture::IsValid() check for a valid object handle as well.  
-Sat 11 Jan : Remove xmlParser, stampver, and ATLServer from External.  
 
 <hr>
