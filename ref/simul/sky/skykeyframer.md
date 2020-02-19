@@ -23,6 +23,7 @@ Functions
 | float | [GetAltitudeTexCoord](#GetAltitudeTexCoord)(float h_km) |
 | vec3 | [GetDirectionToSun](#GetDirectionToSun)(int keyframe) |
 | float | [GetFloat](#GetFloat)(char name, simul::base::Variant params) |
+| vec3 | [GetGeocentricDirectionToMoon](#GetGeocentricDirectionToMoon)(simul::sky::uid u) |
 | void | [GetGpuSkyParameters](#GetGpuSkyParameters)(simul::sky::GpuSkyParameters p, simul::sky::GpuSkyAtmosphereParameters a, simul::sky::GpuSkyInfraredParameters ir, int index) |
 | void | [GetGpuSkyParameters](#GetGpuSkyParameters)(simul::sky::GpuSkyParameters p, simul::sky::GpuSkyAtmosphereParameters a, simul::sky::GpuSkyInfraredParameters ir, simul::sky::SkyKeyframe K, float daytime, float complete) |
 | std::set  const | [GetHighlightConstellations](#GetHighlightConstellations)() |
@@ -30,7 +31,6 @@ Functions
 | int | [GetInt](#GetInt)(char name, simul::base::Variant params) |
 | simul::sky::SkyKeyframe * | [GetInterpolatedKeyframe](#GetInterpolatedKeyframe)() |
 | simul::sky::LightingState  const & | [GetLightingState](#GetLightingState)() |
-| float | [GetMultiplier](#GetMultiplier)(double t) |
 | simul::sky::SkyKeyframe * | [GetNextModifiableKeyframe](#GetNextModifiableKeyframe)() |
 | void | [GetStartDate](#GetStartDate)(int y, int m, int d) |
 | unsigned int | [GetSubdivisionChecksum](#GetSubdivisionChecksum)() |
@@ -43,7 +43,6 @@ Functions
 | void | [SetFloat](#SetFloat)(char name, float val) |
 | void | [SetInt](#SetInt)(char name, int val) |
 | void | [SetStartDate](#SetStartDate)(int y, int m, int d) |
-| void | [SetSubdivisionBrightness](#SetSubdivisionBrightness)(int index, float m) |
 | void | [SetUniformKeyframes](#SetUniformKeyframes)(int Steps, float range) |
 | void | [UnHighlightConstellation](#UnHighlightConstellation)(char) |
 | void | [Update](#Update)() |
@@ -85,6 +84,9 @@ Get the direction the sun represented as a vector
 <a name="GetFloat"></a>
 ### float GetFloat(char name, simul::base::Variant params)
 Get a float with the given, case-insensitive, name
+<a name="GetGeocentricDirectionToMoon"></a>
+### vec3 GetGeocentricDirectionToMoon(simul::sky::uid u)
+Direction in Earth-centred equatorial co-ordinates, where Z=Earth's North axis, X is 90 deg East and Y is 180 degrees.
 <a name="GetGpuSkyParameters"></a>
 ### void GetGpuSkyParameters(simul::sky::GpuSkyParameters p, simul::sky::GpuSkyAtmosphereParameters a, simul::sky::GpuSkyInfraredParameters ir, int index)
 Get the GPU sky parameters corresponding to the given subdivision triplet index, and factor in eclipses and brightness power modifiers.
@@ -107,12 +109,6 @@ any given time.
 <a name="GetLightingState"></a>
 ### simul::sky::LightingState  const & GetLightingState()
 Get the per-frame cached lighting state
-<a name="GetMultiplier"></a>
-### float GetMultiplier(double t)
-Get the calculated multiplication factor for outputs.
-SunIrradiance is multiplied by this value to calculate sky colours.
-Divide local irradiances by this value to get the value in physical units.
-Divide radiances (i.e. rendered colours) by this value to get the radiance in physical units.
 <a name="GetNextModifiableKeyframe"></a>
 ### simul::sky::SkyKeyframe * GetNextModifiableKeyframe()
 The next keyframe not partially built or being used. This keyframe's properties can be modified without any pause or rebuild.
@@ -132,9 +128,7 @@ These are the properties the SkyKeyframer has:
 - LatitudeDegrees
 - LongitudeDegrees
 - MaxStarMagnitude
-- StarBrightness
 - MinimumStarPixelSize
-- BackgroundBrightness
 - MaxDistanceKm
 - MaxAltitudeKm
 - atmosphereThicknessKm
@@ -191,9 +185,6 @@ Set an int with the given, case-insensitive, name
 <a name="SetStartDate"></a>
 ### void SetStartDate(int y, int m, int d)
 Set the date for time=0.
-<a name="SetSubdivisionBrightness"></a>
-### void SetSubdivisionBrightness(int index, float m)
-Set the sky brightness calculated at the specified state subdivision.
 <a name="SetUniformKeyframes"></a>
 ### void SetUniformKeyframes(int Steps, float range)
 Create a number of evenly spaced keyframes.

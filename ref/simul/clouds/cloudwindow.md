@@ -15,7 +15,9 @@ Functions
 
 | void | [CheckForOriginChange](#CheckForOriginChange)(simul::crossplatform::Quaterniond new_origin, simul::clouds::CloudRenderingOptions opts) |
 | double | [GetOriginHeadingDegrees](#GetOriginHeadingDegrees)() |
-| void | [GetOriginLatitudeLongitudeHeading](#GetOriginLatitudeLongitudeHeading)(double lat, double lon, double head) |
+| double | [GetOriginLatitudeDegrees](#GetOriginLatitudeDegrees)() |
+| void | [GetOriginLatitudeLongitudeHeading](#GetOriginLatitudeLongitudeHeading)(double lat_deg, double lon_deg, double head_deg) |
+| double | [GetOriginLongitudeDegrees](#GetOriginLongitudeDegrees)() |
 | void | [InitWindowCentre](#InitWindowCentre)(float lat_degrees, float long_degrees, float x_heading_degrees) |
 | void | [MoveCloudWindow](#MoveCloudWindow)(int x, int y) |
 | simul::clouds::CloudWindow  const & | [operator=](#operator=)(simul::clouds::CloudWindow) |
@@ -29,10 +31,16 @@ Functions
 Check if the cloud window origin has changed, and update values if it has.
 <a name="GetOriginHeadingDegrees"></a>
 ### double GetOriginHeadingDegrees()
+< Get the longitude referred to by the origin quaternion.
+<a name="GetOriginLatitudeDegrees"></a>
+### double GetOriginLatitudeDegrees()
 < Get the latitude/longitude referred to by the specified quaternion.
 <a name="GetOriginLatitudeLongitudeHeading"></a>
-### void GetOriginLatitudeLongitudeHeading(double lat, double lon, double head)
+### void GetOriginLatitudeLongitudeHeading(double lat_deg, double lon_deg, double head_deg)
 < Get the latitude/longitude referred to by the specified position value.
+<a name="GetOriginLongitudeDegrees"></a>
+### double GetOriginLongitudeDegrees()
+< Get the latitude referred to by the origin quaternion.
 <a name="InitWindowCentre"></a>
 ### void InitWindowCentre(float lat_degrees, float long_degrees, float x_heading_degrees)
 Initialize the window.

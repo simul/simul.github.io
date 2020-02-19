@@ -106,7 +106,7 @@ Functions
 | void | [RenderLightingQueryResultsText](#RenderLightingQueryResultsText)(simul::crossplatform::DeviceContext deviceContext, int x, int y) |
 | void | [RenderPlanet](#RenderPlanet)(simul::crossplatform::DeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture tex, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float rad, float dir, float colr, bool do_lighting, float exposure) |
 | void | [RenderPlanets](#RenderPlanets)(simul::crossplatform::DeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float exposure) |
-| bool | [RenderPointStars](#RenderPointStars)(simul::crossplatform::DeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float, float) |
+| bool | [RenderPointStars](#RenderPointStars)(simul::crossplatform::DeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float, float, int) |
 | void | [RenderSun](#RenderSun)(simul::crossplatform::DeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float exposure) |
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform renderPlatform) |
 | void | [SaveTextures](#SaveTextures)(char) |
@@ -274,7 +274,7 @@ If do_lightingis true, the planet will be directionally-lit - e.g. moon phases.
 ### void RenderPlanets(simul::crossplatform::DeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float exposure)
 Draw planets in the sky, e.g. the Moon.
 <a name="RenderPointStars"></a>
-### bool RenderPointStars(simul::crossplatform::DeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float, float)
+### bool RenderPointStars(simul::crossplatform::DeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float, float, int)
 Draw the stars.
 <a name="RenderSun"></a>
 ### void RenderSun(simul::crossplatform::DeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float exposure)

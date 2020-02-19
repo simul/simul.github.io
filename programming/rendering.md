@@ -35,7 +35,8 @@ The <a href="../ref/simul/clouds/cloudrenderer.html">CloudRenderer</a>keeps the 
 
 Cosmic Background
 -----------------
-The cosmic background texture is drawn first, at an orientation that corresponds to the plane of the Milky Way galaxy - see <a href="../ref/simul/sky/skykeyframer/setbackgroundbrightness.html">BackgroundBrightness</a>.
+The cosmic background texture is drawn first, at an orientation that corresponds to the plane of the Milky Way galaxy - see [simul::sky::SkyKeyframer::SetBackgroundBrightness](/ref/simul/sky/skykeyframer/setbackgroundbrightness)
+.
 
 It uses a plate-carree projection, aligned with the galactic horizon. Given the vector "view", which is the direction in galactic co-ordinates, the calculation is:
 
@@ -54,7 +55,8 @@ Sun and Stars
 The sun is drawn after the stars.
 
 Stars are drawn as point sprites, and spun around the axis of the Earth's rotation, in the same direction as the sun. Stars are usually drawn to the highest-resolution buffer (i.e. the frame buffer or final buffer). See
-<a href="../ref/simul/sky/skykeyframer/setstarbrightness.html">StarBrightness</a>and <a href="../ref/simul/sky/skykeyframer/setmaxstarmagnitude.html">MaxStarMagnitude</a>.
+[simul::sky::SkyKeyframer::SetStarBrightness](/ref/simul/sky/skykeyframer/setstarbrightness)
+and <a href="../ref/simul/sky/skykeyframer/setmaxstarmagnitude.html">MaxStarMagnitude</a>.
 
 
 Planets

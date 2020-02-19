@@ -25,7 +25,7 @@ Functions
 ---
 <a name="GetEnum"></a>
 ### unsigned long long GetEnum(char txt_utf8)
-< Mie scattering eccentricity.
+< Largest magnitude of star to draw. Larger magnitudes are dimmer.
 
 Fields
 ---
@@ -49,3 +49,11 @@ Fields
 **Extinction**  < The amount of ambient light to be used for rendering.
 
 **MieAsymmetry**  < The amount of light scattered per metre - larger values produce darker clouds, default 0.05.
+
+**MinimumStarPixelSize**  < Mie scattering eccentricity.
+
+**StarBrightness**  < Smallest pixel width to use drawing stars.
+
+**CosmicBackgroundBrightness**  < Brightness multiplier for stars.
+
+**MaximumStarMagnitude**  < Brightness multiplier for cosmic background.

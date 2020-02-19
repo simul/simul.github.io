@@ -33,7 +33,6 @@ Classes and Structures
 | struct [PrecipitationRegion](clouds/precipitationregion.html) |  |
 | struct [SelectionIdentifier](clouds/selectionidentifier.html) |  |
 | class [Skylight](clouds/skylight.html) |  |
-| struct [Storm](clouds/storm.html) |  |
 | class [TrueSkyRenderer](clouds/trueskyrenderer.html) | <br> |
 
 

@@ -7,6 +7,16 @@ weight: 120
 
 Version HEAD
 ---
+Tue 18 Feb : Amended build fix for Linux.  
+Tue 18 Feb : Revert TrueSkyLogo.psd as current version doesn't load.  
+Tue 18 Feb : Include math.h for Linux.  
+Tue 18 Feb : NSI/SkySequencer.nsi path fix.  
+Tue 18 Feb : NOMINMAX for Xbox.  
+Tue 18 Feb : Fix PS4 compile error.  
+Tue 18 Feb : PS4 build  
+Mon 17 Feb : Add Storm.h and cpp  
+Mon 17 Feb : Move brightness multiplier calculation to GPU for more accuracy.  
+Mon 17 Feb : Option for StaticRenderOverlays2 in Unity.cpp.  
 Fri 14 Feb : Fix for D3D12 Rain streaks flicking.  
 Thu 13 Feb : Sequencer nsi fixes.  
 Tue 11 Feb : Remove SimulGeometry dependencies.  
@@ -97,15 +107,5 @@ Thu 16 Jan : CMake supports SIMUL_BUILD_SHADERS, set to false to disable shader 
 Thu 16 Jan : CMake allows SIMUL_BUILD_SHADERS to be false, so shaders are not built.  
 Thu 16 Jan : Force Cmake to actually build shader projects...  
 Thu 16 Jan : Force Cmake to not exclude shader projects from build. Why would it do this?  
-Thu 16 Jan : Added Documentation for Rainbows. Other minor fixes.  
-Wed 15 Jan : Added missing image  
-Wed 15 Jan : Doc Updates  
-Wed 15 Jan : Rainbows now use a moisture value found in the nearFarTexture. Moisture values is saved into RaytracePixelOutput::nearFarDepth.w  
-Wed 15 Jan : Documentation Updates  
-Wed 15 Jan : CMake functional for samples. Include SkySequencer in main SDK installer.  
-Tue 14 Jan : Update water changes from base 4.2  
-Tue 14 Jan : Fix for OpenGL, Add half4 support to SFX for OpenGL only.  
-Mon 13 Jan : Fix for DX12 and Vulkan. OpenGL is WIP.  
-Mon 13 Jan : Using the view position, instead of just height. simul::vulkan::DeviceManagerInternal store the VkPhysicalDeviceFeatures, queried from the gpu. vkCreateDevice queries against the stored VkPhysicalDeviceFeatures for compatibility. simul::vulkan::Texture::IsValid() check for a valid object handle as well.  
 
 <hr>

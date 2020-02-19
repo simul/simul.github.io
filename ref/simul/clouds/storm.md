@@ -6,15 +6,14 @@ weight: 0
 struct Storm
 ===
 
-| Include: | Clouds/CloudKeyframer.h |
+| Include: | Clouds/LightningRenderInterface.h |
 
-A structure representing a thunderstorm. See CloudKeyframer::AddStorm.
-  
 
 
 Functions
 ---
 
+|  | [Storm](#Storm)(simul::math::RandomNumberGenerator r) |
 | void | [AddStrike](#AddStrike)(float cloudbase_km, float game_time, float real_time) |
 | float | [GetDefaultFloat](#GetDefaultFloat)(char name) |
 | int | [GetDefaultInt](#GetDefaultInt)(char name) |
@@ -30,12 +29,12 @@ Functions
 | int | [SpawnStrike](#SpawnStrike)(float time, vec3 startpos, vec3 endpos, float magnitude, vec3 colour, bool sh, float dur, float leader_dur) |
 | void | [Update](#Update)(float game_time, float real_time) |
 
-A structure representing a thunderstorm. See CloudKeyframer::AddStorm.
-  
-
 
 Functions
 ---
+<a name="Storm"></a>
+###  Storm(simul::math::RandomNumberGenerator r)
+A structure representing a thunderstorm. See CloudKeyframer::AddStorm.
 <a name="AddStrike"></a>
 ### void AddStrike(float cloudbase_km, float game_time, float real_time)
 Add the next random strike.
