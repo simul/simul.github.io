@@ -15,9 +15,7 @@ This is all automatically generated from our codebase, so apologies for any erro
 
 * [**Base**](simul/base.html)      
 
-* [**Math**](simul/math.html)        
-
-* [**geometry**](simul/geometry.html)            
+* [**Math**](simul/math.html)                 
 
 * [**sky**](simul/sky.html)       
 

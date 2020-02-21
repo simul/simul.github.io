@@ -15,6 +15,7 @@ Tue 18 Feb : NOMINMAX for Xbox.
 Tue 18 Feb : Fix PS4 compile error.  
 Tue 18 Feb : PS4 build  
 Mon 17 Feb : Add Storm.h and cpp  
+Mon 17 Feb : Updating default values.  
 Mon 17 Feb : Move brightness multiplier calculation to GPU for more accuracy.  
 Mon 17 Feb : Option for StaticRenderOverlays2 in Unity.cpp.  
 Fri 14 Feb : Fix for D3D12 Rain streaks flicking.  
@@ -106,6 +107,5 @@ Thu 16 Jan : Addded simul_refract_reflect.sl
 Thu 16 Jan : CMake supports SIMUL_BUILD_SHADERS, set to false to disable shader build proejcts.  
 Thu 16 Jan : CMake allows SIMUL_BUILD_SHADERS to be false, so shaders are not built.  
 Thu 16 Jan : Force Cmake to actually build shader projects...  
-Thu 16 Jan : Force Cmake to not exclude shader projects from build. Why would it do this?  
 
 <hr>
