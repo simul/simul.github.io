@@ -18,7 +18,7 @@ Functions
 | double | [GetOriginLatitudeDegrees](#GetOriginLatitudeDegrees)() |
 | void | [GetOriginLatitudeLongitudeHeading](#GetOriginLatitudeLongitudeHeading)(double lat_deg, double lon_deg, double head_deg) |
 | double | [GetOriginLongitudeDegrees](#GetOriginLongitudeDegrees)() |
-| void | [InitWindowCentre](#InitWindowCentre)(float lat_degrees, float long_degrees, float x_heading_degrees) |
+| void | [InitWindowCentre](#InitWindowCentre)(double lat_degrees, double long_degrees, double x_heading_degrees) |
 | void | [MoveCloudWindow](#MoveCloudWindow)(int x, int y) |
 | simul::clouds::CloudWindow  const & | [operator=](#operator=)(simul::clouds::CloudWindow) |
 | float | [UpdateWindowCentre](#UpdateWindowCentre)(float lat_degrees, float long_degrees) |
@@ -42,7 +42,7 @@ Check if the cloud window origin has changed, and update values if it has.
 ### double GetOriginLongitudeDegrees()
 < Get the latitude referred to by the origin quaternion.
 <a name="InitWindowCentre"></a>
-### void InitWindowCentre(float lat_degrees, float long_degrees, float x_heading_degrees)
+### void InitWindowCentre(double lat_degrees, double long_degrees, double x_heading_degrees)
 Initialize the window.
 <a name="MoveCloudWindow"></a>
 ### void MoveCloudWindow(int x, int y)

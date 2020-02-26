@@ -7,6 +7,14 @@ weight: 120
 
 Version HEAD
 ---
+Tue 25 Feb : Fixed water issues on PS4, some other changes for stability. Added basic water particles  
+Mon 24 Feb : Changed test shader.  
+Mon 24 Feb : Add TrueSkySample.cpp generic cross-api sample code.  
+Mon 24 Feb : Added clouds_experimental.sl  
+Mon 24 Feb : Plugin UI MainWindow compile fix.  
+Mon 24 Feb : LinePrint for debug printing.  
+Mon 24 Feb : CMake fixes  
+Sat 22 Feb : Rename KeyframeEditWidget to SkyKeyframeEditWidget  
 Tue 18 Feb : Amended build fix for Linux.  
 Tue 18 Feb : Revert TrueSkyLogo.psd as current version doesn't load.  
 Tue 18 Feb : Include math.h for Linux.  
@@ -99,13 +107,5 @@ Thu 16 Jan : Vulkan link fix.
 Thu 16 Jan : Fix Cmake Linux build.  
 Thu 16 Jan : Linux build fixes.  
 Thu 16 Jan : Alternate Vulkan lib link directory for Linux.  
-Thu 16 Jan : Amortization re-enabled.  
-Thu 16 Jan : Fix Cmake error.  
-Thu 16 Jan : Cloud amortization re-enabled.  
-Thu 16 Jan : Rain effect not superspeed.  
-Thu 16 Jan : Addded simul_refract_reflect.sl  
-Thu 16 Jan : CMake supports SIMUL_BUILD_SHADERS, set to false to disable shader build proejcts.  
-Thu 16 Jan : CMake allows SIMUL_BUILD_SHADERS to be false, so shaders are not built.  
-Thu 16 Jan : Force Cmake to actually build shader projects...  
 
 <hr>

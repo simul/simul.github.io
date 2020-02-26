@@ -56,6 +56,7 @@ Functions
 | std::vector | [GetShaderPathsUtf8](#GetShaderPathsUtf8)() |
 | simul::crossplatform::Viewport | [GetViewport](#GetViewport)(simul::crossplatform::DeviceContext deviceContext, int index) |
 | void | [InvalidateDeviceObjects](#InvalidateDeviceObjects)() |
+| void | [LinePrint](#LinePrint)(simul::crossplatform::DeviceContext deviceContext, char text, float colr, float bkg) |
 | void | [PopRenderTargets](#PopRenderTargets)(simul::crossplatform::DeviceContext deviceContext) |
 | void | [PopShaderBinaryPath](#PopShaderBinaryPath)() |
 | void | [PopShaderPath](#PopShaderPath)() |
@@ -66,7 +67,8 @@ Functions
 | void | [PushTexturePath](#PushTexturePath)(char pathUtf8) |
 | void | [RecompileShaders](#RecompileShaders)() |
 | void | [Resolve](#Resolve)(simul::crossplatform::DeviceContext, simul::crossplatform::Texture, simul::crossplatform::Texture) |
-| void | [ResourceBarrierUAV](#ResourceBarrierUAV)(simul::crossplatform::DeviceContext, simul::crossplatform::Texture) |
+| void | [ResourceBarrierUAV](#ResourceBarrierUAV)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture texture) |
+| void | [ResourceBarrierUAV](#ResourceBarrierUAV)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::PlatformStructuredBuffer sb) |
 | void | [ResourceTransition](#ResourceTransition)(simul::crossplatform::DeviceContext, simul::crossplatform::Texture, simul::crossplatform::ResourceTransition) |
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(void) |
 | void | [RestoreRenderState](#RestoreRenderState)(simul::crossplatform::DeviceContext) |
@@ -221,6 +223,9 @@ Get the viewport at the given index.
 <a name="InvalidateDeviceObjects"></a>
 ### void InvalidateDeviceObjects()
 Platform-dependent function called when uninitializing the Render Platform.
+<a name="LinePrint"></a>
+### void LinePrint(simul::crossplatform::DeviceContext deviceContext, char text, float colr, float bkg)
+Print diagnostics, starting from the top, and going down the screen one line each time as the frame progresses, then restarting next frame.
 <a name="PopRenderTargets"></a>
 ### void PopRenderTargets(simul::crossplatform::DeviceContext deviceContext)
 Restore rendertargets and viewports from the top of the stack.
@@ -253,8 +258,11 @@ Platform-dependent function to reload the shaders - only use this for debug purp
 ### void Resolve(simul::crossplatform::DeviceContext, simul::crossplatform::Texture, simul::crossplatform::Texture)
 Resolve an MSAA texture to a normal texture.
 <a name="ResourceBarrierUAV"></a>
-### void ResourceBarrierUAV(simul::crossplatform::DeviceContext, simul::crossplatform::Texture)
+### void ResourceBarrierUAV(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture texture)
 Ensures that all UAV read and write operation to the textures are completed.
+<a name="ResourceBarrierUAV"></a>
+### void ResourceBarrierUAV(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::PlatformStructuredBuffer sb)
+Ensures that all UAV read and write operation to the PlatformStructuredBuffer are completed.
 <a name="ResourceTransition"></a>
 ### void ResourceTransition(simul::crossplatform::DeviceContext, simul::crossplatform::Texture, simul::crossplatform::ResourceTransition)
 Makes sure the resource is in the required state specified by transition.
