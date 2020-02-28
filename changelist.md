@@ -7,6 +7,8 @@ weight: 120
 
 Version HEAD
 ---
+Thu 27 Feb : Adjust time_val and checksum in CloudKeyframer::GetGpuCloudsParameters()  
+Wed 26 Feb : Added NoisePhase to CloudInterface and CloudNode.  
 Tue 25 Feb : Fixed water issues on PS4, some other changes for stability. Added basic water particles  
 Mon 24 Feb : Changed test shader.  
 Mon 24 Feb : Add TrueSkySample.cpp generic cross-api sample code.  
@@ -105,7 +107,5 @@ Fri 17 Jan : Fix imported targets in CMakeLists to be global, so correct lib nam
 Fri 17 Jan : Minor fixes and optimisations  
 Thu 16 Jan : Vulkan link fix.  
 Thu 16 Jan : Fix Cmake Linux build.  
-Thu 16 Jan : Linux build fixes.  
-Thu 16 Jan : Alternate Vulkan lib link directory for Linux.  
 
 <hr>
