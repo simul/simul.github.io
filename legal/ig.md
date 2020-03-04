@@ -1,14 +1,14 @@
 ---
-title: Indie User Licence Agreement
+title: IG User Licence Agreement
 layout: reference
-weight: 20
+weight: 10
 ---
 
 
--to-02-20
+-ula
 
 
-Indie User Licence Agreement (prior to February 2020)
+IG User Licence Agreement
 ----------------------------
 
 This Agreement is between Simul Software Ltd and you.

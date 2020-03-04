@@ -73,7 +73,7 @@ Functions
 | void | [RemoveWaterMaskObject](#RemoveWaterMaskObject)(int ID) |
 | void | [RemoveWaterProbe](#RemoveWaterProbe)(int ID) |
 | int | [RenderFrame](#RenderFrame)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture depthTexture, simul::crossplatform::Texture colourTargetTexture, simul::crossplatform::Viewport depthViewport, simul::crossplatform::Viewport viewports, simul::plugin::RenderStyle s, float exposure, float gamma, int framenumber) |
-| void | [RenderOverlays](#RenderOverlays)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture depthTexture) |
+| void | [RenderOverlays](#RenderOverlays)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture depthTexture, bool clear_screen) |
 | void | [Set](#Set)(long long Enum, simul::base::Variant v) |
 | void | [SetBool](#SetBool)(char name, bool value) |
 | void | [SetCloudPlacementTexture](#SetCloudPlacementTexture)(int id, void texture, vec2 pos_km, vec2 ext_km) |
@@ -281,7 +281,7 @@ Remove a bounded water object with a given ID
 ### int RenderFrame(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture depthTexture, simul::crossplatform::Texture colourTargetTexture, simul::crossplatform::Viewport depthViewport, simul::crossplatform::Viewport viewports, simul::plugin::RenderStyle s, float exposure, float gamma, int framenumber)
 Main render function
 <a name="RenderOverlays"></a>
-### void RenderOverlays(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture depthTexture)
+### void RenderOverlays(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture depthTexture, bool clear_screen)
 Render the debug textures
 <a name="Set"></a>
 ### void Set(long long Enum, simul::base::Variant v)

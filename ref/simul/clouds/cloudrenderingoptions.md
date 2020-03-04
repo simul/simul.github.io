@@ -11,21 +11,11 @@ struct CloudRenderingOptions
 This controls the rendering of clouds.<br>
 
 
-Functions
----
-
-| unsigned long long | [GetEnum](#GetEnum)(char txt_utf8) |
 
 This controls the rendering of clouds.
 
   
 
-
-Functions
----
-<a name="GetEnum"></a>
-### unsigned long long GetEnum(char txt_utf8)
-< Largest magnitude of star to draw. Larger magnitudes are dimmer.
 
 Fields
 ---
@@ -57,3 +47,5 @@ Fields
 **CosmicBackgroundBrightness**  < Brightness multiplier for stars.
 
 **MaximumStarMagnitude**  < Brightness multiplier for cosmic background.
+
+**CloudTint**  < Largest magnitude of star to draw. Larger magnitudes are dimmer.

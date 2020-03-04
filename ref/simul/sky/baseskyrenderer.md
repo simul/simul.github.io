@@ -112,7 +112,7 @@ Functions
 | void | [SaveTextures](#SaveTextures)(char) |
 | void | [SetBackgroundTexture](#SetBackgroundTexture)(simul::crossplatform::Texture t) |
 | void | [SetOvercastCallback](#SetOvercastCallback)(simul::sky::OvercastCallback ocb) |
-| void | [SetPlanetImage](#SetPlanetImage)(simul::sky::uid u, simul::crossplatform::Texture tex, bool lighting) |
+| void | [SetPlanetImage](#SetPlanetImage)(simul::sky::uid u, simul::crossplatform::Texture tex, bool lighting, bool render) |
 | void | [FillFadeTextureBlocks](#FillFadeTextureBlocks)(int, int, int, int, int, int, int, float, float, float) |
 | void | [SetPlanet](#SetPlanet)(simul::sky::uid u, simul::sky::Moon m, simul::crossplatform::Texture tex, bool do_lighting) |
 
@@ -292,7 +292,7 @@ Get some per-frame text information for debugging - usually timing data.
 ### void SetOvercastCallback(simul::sky::OvercastCallback ocb)
 Inform the sky renderer of a callback to use to get overcast information.
 <a name="SetPlanetImage"></a>
-### void SetPlanetImage(simul::sky::uid u, simul::crossplatform::Texture tex, bool lighting)
+### void SetPlanetImage(simul::sky::uid u, simul::crossplatform::Texture tex, bool lighting, bool render)
 Set the texture for planet indexto tex
 <a name="FillFadeTextureBlocks"></a>
 ### void FillFadeTextureBlocks(int, int, int, int, int, int, int, float, float, float)

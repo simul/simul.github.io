@@ -7,6 +7,11 @@ weight: 120
 
 Version HEAD
 ---
+Wed 04 Mar : Platform ptr.  
+Wed 04 Mar : Moon rendering is optional. Cloud tint supported.  
+Tue 03 Mar : changes to ig licence doc  
+Tue 03 Mar : Added updated iula and ig-ula  
+Fri 28 Feb : Improve memory tracking.  
 Thu 27 Feb : Adjust time_val and checksum in CloudKeyframer::GetGpuCloudsParameters()  
 Wed 26 Feb : Added NoisePhase to CloudInterface and CloudNode.  
 Tue 25 Feb : Fixed water issues on PS4, some other changes for stability. Added basic water particles  
@@ -102,10 +107,5 @@ Sat 18 Jan : Fix Clang compiler error from member initialization order.
 Fri 17 Jan : Temporarily removed rainbow docs to allow for update  
 Fri 17 Jan : Doc updates  
 Fri 17 Jan : Fix for Rainbows and Amortization  
-Fri 17 Jan : Fix for install script.  
-Fri 17 Jan : Fix imported targets in CMakeLists to be global, so correct lib names are used for Debug sample-only builds.  
-Fri 17 Jan : Minor fixes and optimisations  
-Thu 16 Jan : Vulkan link fix.  
-Thu 16 Jan : Fix Cmake Linux build.  
 
 <hr>
