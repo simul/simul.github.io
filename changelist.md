@@ -7,6 +7,10 @@ weight: 120
 
 Version HEAD
 ---
+Thu 05 Mar : Fix ambiguous call.  
+Thu 05 Mar : Cloud generation reverting.  
+Thu 05 Mar : Update clouds.sfx  
+Wed 04 Mar : Small water fix  
 Wed 04 Mar : Platform ptr.  
 Wed 04 Mar : Moon rendering is optional. Cloud tint supported.  
 Tue 03 Mar : changes to ig licence doc  
@@ -103,9 +107,5 @@ Mon 20 Jan : Fix for Rainbow documentation : How it works
 Mon 20 Jan : Recommit Rainbow Documentation.  
 Mon 20 Jan : Fix for rendering preciptation_volume, when Strength is 0, but RainToSnow is greater than 0.  
 Mon 20 Jan : Fix images for rainbow documentation.  
-Sat 18 Jan : Fix Clang compiler error from member initialization order.  
-Fri 17 Jan : Temporarily removed rainbow docs to allow for update  
-Fri 17 Jan : Doc updates  
-Fri 17 Jan : Fix for Rainbows and Amortization  
 
 <hr>
