@@ -9,7 +9,7 @@ class CloudWindowEditor
 | Include: | Clouds/CloudRenderer.h |
 
 
-[simul::base::BaseMouseHandler](../base/basemousehandler.html)
+[simul::base::BaseMouseHandler](/ref/simul/base/basemousehandler.html)
 
 Functions
 ---
@@ -20,7 +20,7 @@ Functions
 
 Base Classes
 ---
-[simul::base::BaseMouseHandler](../base/basemousehandler.html)
+[simul::base::BaseMouseHandler](/ref/simul/base/basemousehandler.html)
 
 Functions
 ---

@@ -7,6 +7,7 @@ weight: 120
 
 Version HEAD
 ---
+Wed 11 Mar : Platform is now standalone, Base has been split into Simul/Base and Platform/Core. The weatherRenderer uses composite.sfx instead of hdr.sfx.  
 Thu 05 Mar : Fix ambiguous call.  
 Thu 05 Mar : Cloud generation reverting.  
 Thu 05 Mar : Update clouds.sfx  
@@ -106,6 +107,5 @@ Mon 20 Jan : Fix for CS_DrawRainbow() use of GetDimensions().
 Mon 20 Jan : Fix for Rainbow documentation : How it works  
 Mon 20 Jan : Recommit Rainbow Documentation.  
 Mon 20 Jan : Fix for rendering preciptation_volume, when Strength is 0, but RainToSnow is greater than 0.  
-Mon 20 Jan : Fix images for rainbow documentation.  
 
 <hr>

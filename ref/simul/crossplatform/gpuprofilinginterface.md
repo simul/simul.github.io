@@ -11,7 +11,7 @@ class GpuProfilingInterface
 A virtual interface base class for GPU performance measurement.
   
 
-[simul::base::BaseProfilingInterface](../base/baseprofilinginterface.html)
+[simul::base::BaseProfilingInterface](/ref/simul/base/baseprofilinginterface.html)
 
 Functions
 ---
@@ -29,7 +29,7 @@ A virtual interface base class for GPU performance measurement.
 
 Base Classes
 ---
-[simul::base::BaseProfilingInterface](../base/baseprofilinginterface.html)
+[simul::base::BaseProfilingInterface](/ref/simul/base/baseprofilinginterface.html)
 
 Functions
 ---
