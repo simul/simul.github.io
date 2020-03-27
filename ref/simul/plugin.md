@@ -27,6 +27,7 @@ Functions
 | simul::sky::uid | [GetStormByIndex](#GetStormByIndex)(int i) |
 | bool | [StaticAddWaterBuoyancyObject](#StaticAddWaterBuoyancyObject)(simul::terrain::WaterMeshObjectValues newObject) |
 | bool | [StaticAddWaterMaskObject](#StaticAddWaterMaskObject)(simul::terrain::waterMaskingObject newObject) |
+| bool | [StaticAddWaterParticleGenerator](#StaticAddWaterParticleGenerator)(simul::terrain::particleGeneratorValues newGenerator, simul::terrain::particleGeneratorType newGeneratorType, simul::plugin::ExternalTexture customPlaneTexture) |
 | bool | [StaticAddWaterProbe](#StaticAddWaterProbe)(simul::terrain::WaterProbeValues values) |
 | void | [StaticCloudLineQuery](#StaticCloudLineQuery)(int id, float startpos, float endpos, LineQueryResult res) |
 | void | [StaticCloudPointQuery](#StaticCloudPointQuery)(int id, float pos, VolumeQueryResult res) |
@@ -69,6 +70,7 @@ Functions
 | void | [StaticRemoveView](#StaticRemoveView)(int view_id) |
 | void | [StaticRemoveWaterBuoyancyObject](#StaticRemoveWaterBuoyancyObject)(int ID) |
 | void | [StaticRemoveWaterMaskObject](#StaticRemoveWaterMaskObject)(int ID) |
+| void | [StaticRemoveWaterParticleGenerator](#StaticRemoveWaterParticleGenerator)(int ID) |
 | void | [StaticRemoveWaterProbe](#StaticRemoveWaterProbe)(int ID) |
 | void | [StaticRenderDeleteKeyframe](#StaticRenderDeleteKeyframe)(simul::sky::uid uid) |
 | int | [StaticRenderFrame](#StaticRenderFrame)(void device, void pContext, int view_id, float viewMatrix4x4, float projMatrix4x4, void depthTexture, void colourTarget, simul::crossplatform::Viewport depthViewports, simul::crossplatform::Viewport viewports, simul::plugin::RenderStyle s, float exposure, float gamma, int framenumber, simul::crossplatform::MultiResConstants pMultiResConstants) |
@@ -114,6 +116,7 @@ Functions
 | bool | [StaticTriggerAction](#StaticTriggerAction)(char name) |
 | void | [StaticUpdateWaterBuoyancyObjectValues](#StaticUpdateWaterBuoyancyObjectValues)(simul::terrain::WaterMeshObjectValues values) |
 | void | [StaticUpdateWaterMaskObjectValues](#StaticUpdateWaterMaskObjectValues)(simul::terrain::waterMaskingObject values) |
+| void | [StaticUpdateWaterParticleGeneratorValues](#StaticUpdateWaterParticleGeneratorValues)(simul::terrain::particleGeneratorValues values, simul::terrain::particleGeneratorType generatorType, simul::plugin::ExternalTexture customPlaneTexture) |
 | void | [StaticUpdateWaterProbeValues](#StaticUpdateWaterProbeValues)(simul::terrain::WaterProbeValues values) |
 | int | [StaticWaterSet](#StaticWaterSet)(long long num, int ID, simul::base::Variant v) |
 | void | [UnitySetGraphicsDevice](#UnitySetGraphicsDevice)(void device, simul::crossplatform::RenderPlatformType deviceType, UnityGfxDeviceEventType eventType) |
@@ -142,6 +145,9 @@ Create a water buoyancy object with a given struct that holds an array of vertic
 <a name="StaticAddWaterMaskObject"></a>
 ### bool StaticAddWaterMaskObject(simul::terrain::waterMaskingObject newObject)
 Create a water masking object
+<a name="StaticAddWaterParticleGenerator"></a>
+### bool StaticAddWaterParticleGenerator(simul::terrain::particleGeneratorValues newGenerator, simul::terrain::particleGeneratorType newGeneratorType, simul::plugin::ExternalTexture customPlaneTexture)
+Create a particle generator
 <a name="StaticAddWaterProbe"></a>
 ### bool StaticAddWaterProbe(simul::terrain::WaterProbeValues values)
 Create a water probe
@@ -272,6 +278,9 @@ Remove a water buoyancy object
 <a name="StaticRemoveWaterMaskObject"></a>
 ### void StaticRemoveWaterMaskObject(int ID)
 Remove a water masking object
+<a name="StaticRemoveWaterParticleGenerator"></a>
+### void StaticRemoveWaterParticleGenerator(int ID)
+Remove a particle generator
 <a name="StaticRemoveWaterProbe"></a>
 ### void StaticRemoveWaterProbe(int ID)
 Remove a water probe
@@ -407,6 +416,9 @@ Update the properties of a water buoyancy object
 <a name="StaticUpdateWaterMaskObjectValues"></a>
 ### void StaticUpdateWaterMaskObjectValues(simul::terrain::waterMaskingObject values)
 Update the values of a specific water buoyancy object
+<a name="StaticUpdateWaterParticleGeneratorValues"></a>
+### void StaticUpdateWaterParticleGeneratorValues(simul::terrain::particleGeneratorValues values, simul::terrain::particleGeneratorType generatorType, simul::plugin::ExternalTexture customPlaneTexture)
+Update the values of a specific water particle generator
 <a name="StaticUpdateWaterProbeValues"></a>
 ### void StaticUpdateWaterProbeValues(simul::terrain::WaterProbeValues values)
 Update the properties of a water object

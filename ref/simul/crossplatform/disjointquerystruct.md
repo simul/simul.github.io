@@ -6,7 +6,7 @@ weight: 0
 struct DisjointQueryStruct
 ===
 
-| Include: | Platform/CrossPlatform/Effect.h |
+| Include: | Platform/CrossPlatform/Query.h |
 
 A disjoint query structure, like those in DirectX 11.
 Its main use is actually to get the clock frequency that will

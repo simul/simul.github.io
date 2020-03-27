@@ -89,8 +89,7 @@ Functions
 ---
 <a name="EndFrame"></a>
 ### void EndFrame(simul::crossplatform::DeviceContext deviceContext)
-Call this after all timeable events in a frame have completed. It is acceptable
-to call EndFrame() without having first called StartFrame() - this has no effect.
+Call this after all timeable events in a frame have completed.
 <a name="InvalidateDeviceObjects"></a>
 ### void InvalidateDeviceObjects()
 Platform-dependent function called when uninitializing the profiler.

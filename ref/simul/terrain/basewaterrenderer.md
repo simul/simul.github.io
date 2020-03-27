@@ -29,6 +29,7 @@ Functions
 | long long | [GetEnum](#GetEnum)(char n) |
 | simul::terrain::shoreTexture * | [getShoreTextureParams](#getShoreTextureParams)() |
 | float * | [getWaterBuoyancyObjectResults](#getWaterBuoyancyObjectResults)(int ID) |
+| simul::terrain::WaterParticleSimulator * | [getWaterParticleSimulator](#getWaterParticleSimulator)() |
 | vec4 | [getWaterProbeValues](#getWaterProbeValues)(int ID) |
 | simul::terrain::WaterWaveletsSimulator * | [getWaterWaveletsSimulator](#getWaterWaveletsSimulator)() |
 | void | [InvalidateDeviceObjects](#InvalidateDeviceObjects)() |
@@ -38,7 +39,7 @@ Functions
 | void | [removeWaterBuoyancyObject](#removeWaterBuoyancyObject)(int ID) |
 | void | [removeWaterMaskObject](#removeWaterMaskObject)(int ID) |
 | void | [removeWaterProbe](#removeWaterProbe)(int ID) |
-| void | [Render](#Render)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Viewport depthViewports, simul::crossplatform::Texture depthTexture, simul::crossplatform::Texture colourTexture, simul::crossplatform::Texture cubemap, int passNo) |
+| void | [Render](#Render)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Viewport depthViewports, simul::crossplatform::Texture depthTexture, simul::crossplatform::Texture colourTexture, simul::crossplatform::Texture cubemap, int passNo, int vr) |
 | void | [RenderFlowRays](#RenderFlowRays)(simul::crossplatform::DeviceContext deviceContext, int width, int height) |
 | void | [RenderTextures](#RenderTextures)(simul::crossplatform::DeviceContext deviceContext, int width, int depth) |
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform r) |
@@ -104,6 +105,9 @@ Get the shore texture paramaters
 <a name="getWaterBuoyancyObjectResults"></a>
 ### float * getWaterBuoyancyObjectResults(int ID)
 Get the results of a water buoyancy object
+<a name="getWaterParticleSimulator"></a>
+### simul::terrain::WaterParticleSimulator * getWaterParticleSimulator()
+Get a pointer to the particle generator
 <a name="getWaterProbeValues"></a>
 ### vec4 getWaterProbeValues(int ID)
 Get the results of a water probe
@@ -132,7 +136,7 @@ Remove a water masking object
 ### void removeWaterProbe(int ID)
 Remove a water probe
 <a name="Render"></a>
-### void Render(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Viewport depthViewports, simul::crossplatform::Texture depthTexture, simul::crossplatform::Texture colourTexture, simul::crossplatform::Texture cubemap, int passNo)
+### void Render(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Viewport depthViewports, simul::crossplatform::Texture depthTexture, simul::crossplatform::Texture colourTexture, simul::crossplatform::Texture cubemap, int passNo, int vr)
 Main Render function.
 <a name="RenderFlowRays"></a>
 ### void RenderFlowRays(simul::crossplatform::DeviceContext deviceContext, int width, int height)

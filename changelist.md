@@ -7,10 +7,23 @@ weight: 120
 
 Version HEAD
 ---
+Fri 27 Mar : Fix incorrect links in Unreal source docs page.  
+Fri 27 Mar : Add Simul/Platform/Windows to Simul.markdoc so that ThisPlatform/*.h can be read.  
+Tue 24 Mar : Optional cloud rendering experimental variant  
+Mon 23 Mar : DEPLOY_ALL fixed for CopyToTargetDir.py.  
+Sat 21 Mar : Fix unwanted changes to CopyToTargetDir.py  
+Thu 19 Mar : Add Core_MD to CopyToTargetDir.py  
+Mon 16 Mar : Minor correction to structured buffer initialisation for water probes, as well as extra shader paths for the new platform module  
+Mon 16 Mar : Sample changes.  
+Mon 16 Mar : Fix bad merge.  
+Mon 16 Mar : Fixed Vulkan sample timeout.  
+Mon 16 Mar : Some fixes, potentially unstable  
 Fri 13 Mar : Fix dll dependencies.  
 Fri 13 Mar : Update installer to point to Platform.  
 Fri 13 Mar : Re-enable disabled code.  
+Fri 13 Mar : Update to licence messages  
 Wed 11 Mar : Platform is now standalone, Base has been split into Simul/Base and Platform/Core. The weatherRenderer uses composite.sfx instead of hdr.sfx.  
+Mon 09 Mar : Fix to storm gen + small Doc update  
 Thu 05 Mar : Fix ambiguous call.  
 Thu 05 Mar : Cloud generation reverting.  
 Thu 05 Mar : Update clouds.sfx  
@@ -94,18 +107,5 @@ Fri 24 Jan : Extra safety checks.
 Thu 23 Jan : Shader paths  
 Thu 23 Jan : Fix GL Sample.  
 Wed 22 Jan : Build fix for VSVER.  
-Wed 22 Jan : Reset errorlevel at start of InitProperties.bat  
-Wed 22 Jan : .  
-Wed 22 Jan : Tweaks in batch files.  
-Wed 22 Jan : Tweaks in batch files.  
-Wed 22 Jan : Platform ptr.  
-Wed 22 Jan : Fixes to PS4 build.  
-Wed 22 Jan : Performance improvements to water, some other fixes  
-Wed 22 Jan : Performance improvements to water, some other fixes  
-Wed 22 Jan : Platform ptr  
-Tue 21 Jan : trueSKY Shaders moved from Platform/Crossplatform/ to Shaders/  
-Tue 21 Jan : Added Shaders CMakeLists.txt. Shaders are now built from here instead of from Platform subprojects.  
-Mon 20 Jan : Match 4.2 Setup.nsi  
-Mon 20 Jan : Fix for CS_DrawRainbow() use of GetDimensions().  
 
 <hr>

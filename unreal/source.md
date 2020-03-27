@@ -14,11 +14,13 @@ Working with trueSKY from GitHub
 ----------------
 1. Make sure you have created a Simul account. If not, head over [here](https://simul.co/register/) to register. 
 
-2. On your account page, under the [Engines Tab](https://simul.co/account/engines/), there is an Unreal Engine Section. It asks for your GitHub Username. Input your GitHub Username and select Request Access. **This needs to be the same username connected to your Unreal Engine account at [unrealengine.com/account/connected](https://www.unrealengine.com/account/connected)**
+2. On your [Account Page](https://simul.co/account/edit-account/), there is a GitHub Username section. Input your GitHub Username and select Request Access. **This needs to be the same username connected to your Unreal Engine account at [unrealengine.com/account/connected](https://www.unrealengine.com/account/connected)**
 
-3. You should now have access to our Unreal Repo at [github.com/simul/UnrealEngine](https://github.com/simul/UnrealEngine).
+3. You will receive an email from github.com with an invitation to join the Simul UnrealEngine group. Click the link in the email and accept the invitation.
 
-4. Fork our Unreal Repository. If you are not sure how to do this, GitHub has helpful information [here](https://help.github.com/en/articles/fork-a-repo). Alternatively, if you are using a different UE4 codebase, pull changes from the Simul fork, and merge.
+4. You should now have access to our Unreal Repo at [github.com/simul/UnrealEngine](https://github.com/simul/UnrealEngine).
+
+5. Fork or clone our Unreal Repository. If you are not sure how to do this, GitHub has helpful information [here](https://help.github.com/en/articles/fork-a-repo). Alternatively, if you are using a different UE4 codebase, pull changes from the Simul fork, and merge.
 
 2: Setup
 ----------

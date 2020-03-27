@@ -6,7 +6,7 @@ weight: 0
 struct boundlessOceanProperties
 ===
 
-| Include: | Terrain/BaseWaterRenderer.h |
+| Include: | Terrain/WaterWaveletsSimulator.h |
 
 Struct for holding the Boundless Ocean properties
   

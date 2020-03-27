@@ -18,6 +18,7 @@ Functions
 |  | [~PluginTrueSkyRenderer](#~PluginTrueSkyRenderer)() |
 | bool | [AddWaterBuoyancyObject](#AddWaterBuoyancyObject)(simul::terrain::WaterMeshObjectValues newObject) |
 | bool | [AddWaterMaskObject](#AddWaterMaskObject)(simul::terrain::waterMaskingObject newObject) |
+| bool | [AddWaterParticleGenerator](#AddWaterParticleGenerator)(simul::terrain::particleGeneratorValues newGenerator, simul::terrain::particleGeneratorType newGeneratorType, simul::plugin::ExternalTexture customPlaneTexture) |
 | bool | [AddWaterProbe](#AddWaterProbe)(simul::terrain::WaterProbeValues values) |
 | void | [CloudLineQuery](#CloudLineQuery)(int id, float startpos, float endpos, LineQueryResult res) |
 | void | [CloudSphereInteraction](#CloudSphereInteraction)(int id, float pos, float vel, float radius) |
@@ -71,6 +72,7 @@ Functions
 | void | [RemoveBoundedWaterObject](#RemoveBoundedWaterObject)(uint ID) |
 | void | [RemoveWaterBuoyancyObject](#RemoveWaterBuoyancyObject)(int ID) |
 | void | [RemoveWaterMaskObject](#RemoveWaterMaskObject)(int ID) |
+| void | [RemoveWaterParticleGenerator](#RemoveWaterParticleGenerator)(int ID) |
 | void | [RemoveWaterProbe](#RemoveWaterProbe)(int ID) |
 | int | [RenderFrame](#RenderFrame)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture depthTexture, simul::crossplatform::Texture colourTargetTexture, simul::crossplatform::Viewport depthViewport, simul::crossplatform::Viewport viewports, simul::plugin::RenderStyle s, float exposure, float gamma, int framenumber) |
 | void | [RenderOverlays](#RenderOverlays)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture depthTexture, bool clear_screen) |
@@ -94,6 +96,7 @@ Functions
 | void | [UpdateProfilingText](#UpdateProfilingText)() |
 | void | [UpdateWaterBuoyancyObjectValues](#UpdateWaterBuoyancyObjectValues)(simul::terrain::WaterMeshObjectValues values) |
 | void | [UpdateWaterMaskObjectValues](#UpdateWaterMaskObjectValues)(simul::terrain::waterMaskingObject values) |
+| void | [UpdateWaterParticleGeneratorValues](#UpdateWaterParticleGeneratorValues)(simul::terrain::particleGeneratorValues values, simul::terrain::particleGeneratorType generatorType, simul::plugin::ExternalTexture customPlaneTexture) |
 | void | [UpdateWaterProbeValues](#UpdateWaterProbeValues)(simul::terrain::WaterProbeValues values) |
 
 
@@ -115,6 +118,9 @@ Create a water buoyancy object with a given struct that holds an array of vertic
 <a name="AddWaterMaskObject"></a>
 ### bool AddWaterMaskObject(simul::terrain::waterMaskingObject newObject)
 Create a water masking object
+<a name="AddWaterParticleGenerator"></a>
+### bool AddWaterParticleGenerator(simul::terrain::particleGeneratorValues newGenerator, simul::terrain::particleGeneratorType newGeneratorType, simul::plugin::ExternalTexture customPlaneTexture)
+Create a particle generator
 <a name="AddWaterProbe"></a>
 ### bool AddWaterProbe(simul::terrain::WaterProbeValues values)
 Create a bounded water object with a given ID
@@ -274,6 +280,9 @@ Remove a water buoyancy object
 <a name="RemoveWaterMaskObject"></a>
 ### void RemoveWaterMaskObject(int ID)
 Remove a water masking object
+<a name="RemoveWaterParticleGenerator"></a>
+### void RemoveWaterParticleGenerator(int ID)
+Remove a particle generator
 <a name="RemoveWaterProbe"></a>
 ### void RemoveWaterProbe(int ID)
 Remove a bounded water object with a given ID
@@ -345,6 +354,9 @@ Update the properties of a water buoyancy object
 <a name="UpdateWaterMaskObjectValues"></a>
 ### void UpdateWaterMaskObjectValues(simul::terrain::waterMaskingObject values)
 Update the values of a specific water buoyancy object
+<a name="UpdateWaterParticleGeneratorValues"></a>
+### void UpdateWaterParticleGeneratorValues(simul::terrain::particleGeneratorValues values, simul::terrain::particleGeneratorType generatorType, simul::plugin::ExternalTexture customPlaneTexture)
+Update the values of a specific water particle generator
 <a name="UpdateWaterProbeValues"></a>
 ### void UpdateWaterProbeValues(simul::terrain::WaterProbeValues values)
 Update the properties of a water object

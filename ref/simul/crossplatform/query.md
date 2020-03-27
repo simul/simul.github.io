@@ -6,7 +6,7 @@ weight: 0
 struct Query
 ===
 
-| Include: | Platform/CrossPlatform/Effect.h |
+| Include: | Platform/CrossPlatform/GpuProfiler.h |
 
 
 
