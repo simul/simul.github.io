@@ -7,8 +7,14 @@ weight: 120
 
 Version HEAD
 ---
+Sun 29 Mar : Fix quitafterframe behaviour in sample.  
+Sun 29 Mar : Fix quitafterframe behaviour in sample.  
+Sun 29 Mar : Remove DefaultFileLoader.cpp - this is now in Platform/Core.  
+Fri 27 Mar : Platform ptr.  
+Fri 27 Mar : CloudKeyframers have Names.  
 Fri 27 Mar : Fix incorrect links in Unreal source docs page.  
 Fri 27 Mar : Add Simul/Platform/Windows to Simul.markdoc so that ThisPlatform/*.h can be read.  
+Wed 25 Mar : Additional cloud render mode on widget.  
 Tue 24 Mar : Optional cloud rendering experimental variant  
 Mon 23 Mar : DEPLOY_ALL fixed for CopyToTargetDir.py.  
 Sat 21 Mar : Fix unwanted changes to CopyToTargetDir.py  
@@ -101,11 +107,5 @@ Fri 24 Jan : Build fixes
 Fri 24 Jan : Merge 4.2 Sfx fix  
 Fri 24 Jan : Fixes to lightning.  
 Fri 24 Jan : Lightning rendering and quality fixes.  
-Fri 24 Jan : Improve python deploy script.  
-Fri 24 Jan : Improve file handling for shaders. Storms now use Quaternion for centre. Remove NoiseOctaves from CellularCloudGrid.  
-Fri 24 Jan : Extra safety checks.  
-Thu 23 Jan : Shader paths  
-Thu 23 Jan : Fix GL Sample.  
-Wed 22 Jan : Build fix for VSVER.  
 
 <hr>
