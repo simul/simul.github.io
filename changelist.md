@@ -7,6 +7,7 @@ weight: 120
 
 Version HEAD
 ---
+Mon 30 Mar : Fix offset high-detail area.  
 Sun 29 Mar : Fix quitafterframe behaviour in sample.  
 Sun 29 Mar : Fix quitafterframe behaviour in sample.  
 Sun 29 Mar : Remove DefaultFileLoader.cpp - this is now in Platform/Core.  
@@ -106,6 +107,5 @@ Sat 25 Jan : Sample builds fixed
 Fri 24 Jan : Build fixes  
 Fri 24 Jan : Merge 4.2 Sfx fix  
 Fri 24 Jan : Fixes to lightning.  
-Fri 24 Jan : Lightning rendering and quality fixes.  
 
 <hr>
