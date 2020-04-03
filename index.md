@@ -34,7 +34,7 @@ How to:
 
 * [Set up Rain/Snow](/tutorials/precipitation/tutorials.html)
 
-* [Set up a Cloud Volume](/tutorials/Clouds/volumes.html)
+* [Set up a Cloud Volume](/tutorials/clouds/volumes.html)
 
 * [Day/Night Transition](/tutorials/time)
 

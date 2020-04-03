@@ -7,6 +7,9 @@ weight: 120
 
 Version HEAD
 ---
+Thu 02 Apr : Fix for water faces being drawn backwards, small improvement for reflection setting performance  
+Thu 02 Apr : Added debug output to Sequencer  
+Wed 01 Apr : Fixed medium detail update region. Fixed rain render problems.  
 Mon 30 Mar : Fix offset high-detail area.  
 Sun 29 Mar : Fix quitafterframe behaviour in sample.  
 Sun 29 Mar : Fix quitafterframe behaviour in sample.  
@@ -104,8 +107,5 @@ Sat 25 Jan : GetExportLightningStrikes signature changed.
 Sat 25 Jan : Extra safety checks.  
 Sat 25 Jan : Save/load Quaternions.  
 Sat 25 Jan : Sample builds fixed  
-Fri 24 Jan : Build fixes  
-Fri 24 Jan : Merge 4.2 Sfx fix  
-Fri 24 Jan : Fixes to lightning.  
 
 <hr>
