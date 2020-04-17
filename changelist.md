@@ -7,6 +7,7 @@ weight: 120
 
 Version HEAD
 ---
+Wed 08 Apr : Shader paths for internal builds.  
 Thu 02 Apr : Fix for water faces being drawn backwards, small improvement for reflection setting performance  
 Thu 02 Apr : Added debug output to Sequencer  
 Wed 01 Apr : Fixed medium detail update region. Fixed rain render problems.  
@@ -106,6 +107,5 @@ Mon 27 Jan : Fix for rain particles spinning, when simulation is paused.
 Sat 25 Jan : GetExportLightningStrikes signature changed.  
 Sat 25 Jan : Extra safety checks.  
 Sat 25 Jan : Save/load Quaternions.  
-Sat 25 Jan : Sample builds fixed  
 
 <hr>
