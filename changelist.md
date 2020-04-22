@@ -7,6 +7,7 @@ weight: 120
 
 Version HEAD
 ---
+Fri 17 Apr : Do git submodule init if Platform submodule is not detected.  
 Wed 08 Apr : Shader paths for internal builds.  
 Thu 02 Apr : Fix for water faces being drawn backwards, small improvement for reflection setting performance  
 Thu 02 Apr : Added debug output to Sequencer  
@@ -106,6 +107,5 @@ Mon 27 Jan : Merged in multiple moon support.
 Mon 27 Jan : Fix for rain particles spinning, when simulation is paused.  
 Sat 25 Jan : GetExportLightningStrikes signature changed.  
 Sat 25 Jan : Extra safety checks.  
-Sat 25 Jan : Save/load Quaternions.  
 
 <hr>
