@@ -7,6 +7,9 @@ weight: 120
 
 Version HEAD
 ---
+Thu 23 Apr : Added shader_platform.sl to Shaders. Changed composite.sl TwoColourCompositeOutput to use SIMUL_RENDERTARGET_OUTPUT_DSB_INDEX_0 and _1.  
+Thu 23 Apr : Fix for overlapping semantic in water.SFX/water_particles.sfx  
+Wed 22 Apr : PLATFORM_D3D11_SFX option supported.  
 Fri 17 Apr : Do git submodule init if Platform submodule is not detected.  
 Wed 08 Apr : Shader paths for internal builds.  
 Thu 02 Apr : Fix for water faces being drawn backwards, small improvement for reflection setting performance  
@@ -104,8 +107,5 @@ Mon 27 Jan : Temp fix for rainbow images + Layout Fix
 Mon 27 Jan : Doc Update  
 Mon 27 Jan : Fix for disappearing rain particles when simulation is paused. Vulkan validation fix: Changed cubeTexture from TextureCube to TextureCubeArray.  
 Mon 27 Jan : Merged in multiple moon support.  
-Mon 27 Jan : Fix for rain particles spinning, when simulation is paused.  
-Sat 25 Jan : GetExportLightningStrikes signature changed.  
-Sat 25 Jan : Extra safety checks.  
 
 <hr>
