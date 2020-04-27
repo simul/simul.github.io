@@ -7,6 +7,11 @@ weight: 120
 
 Version HEAD
 ---
+Sat 25 Apr : Remove extra #include.  
+Sat 25 Apr : Fix order to include Direct3D12.h  
+Sat 25 Apr : Fix order to include Direct3D12.h  
+Sat 25 Apr : Use ID3D12GraphicsCommandListType from ThisPlatform/Direct3D12.h  
+Fri 24 Apr : Added disable #line directive to OpenGLShaders.  
 Thu 23 Apr : Added shader_platform.sl to Shaders. Changed composite.sl TwoColourCompositeOutput to use SIMUL_RENDERTARGET_OUTPUT_DSB_INDEX_0 and _1.  
 Thu 23 Apr : Fix for overlapping semantic in water.SFX/water_particles.sfx  
 Wed 22 Apr : PLATFORM_D3D11_SFX option supported.  
@@ -102,10 +107,5 @@ Tue 28 Jan : .
 Tue 28 Jan : Fix for VS_SnowParticles  
 Tue 28 Jan : Minor fix for images in rainbow documentation  
 Tue 28 Jan : Minor update to Rainbow docs  
-Tue 28 Jan : Move AzimuthElevationToDirection into cpp.  
-Mon 27 Jan : Temp fix for rainbow images + Layout Fix  
-Mon 27 Jan : Doc Update  
-Mon 27 Jan : Fix for disappearing rain particles when simulation is paused. Vulkan validation fix: Changed cubeTexture from TextureCube to TextureCubeArray.  
-Mon 27 Jan : Merged in multiple moon support.  
 
 <hr>
