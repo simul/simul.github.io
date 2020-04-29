@@ -7,6 +7,7 @@ weight: 120
 
 Version HEAD
 ---
+Mon 27 Apr : Added Latest Redist  
 Sat 25 Apr : Remove extra #include.  
 Sat 25 Apr : Fix order to include Direct3D12.h  
 Sat 25 Apr : Fix order to include Direct3D12.h  
@@ -106,6 +107,5 @@ Tue 28 Jan : Fix compile errors in Orientation.cpp
 Tue 28 Jan : .  
 Tue 28 Jan : Fix for VS_SnowParticles  
 Tue 28 Jan : Minor fix for images in rainbow documentation  
-Tue 28 Jan : Minor update to Rainbow docs  
 
 <hr>
