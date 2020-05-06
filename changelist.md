@@ -7,6 +7,7 @@ weight: 120
 
 Version HEAD
 ---
+Fri 01 May : Fix zero matrix in WorldspaceToLightspaceMatrix  
 Mon 27 Apr : Added Latest Redist  
 Sat 25 Apr : Remove extra #include.  
 Sat 25 Apr : Fix order to include Direct3D12.h  
@@ -16,6 +17,7 @@ Fri 24 Apr : Added disable #line directive to OpenGLShaders.
 Thu 23 Apr : Added shader_platform.sl to Shaders. Changed composite.sl TwoColourCompositeOutput to use SIMUL_RENDERTARGET_OUTPUT_DSB_INDEX_0 and _1.  
 Thu 23 Apr : Fix for overlapping semantic in water.SFX/water_particles.sfx  
 Wed 22 Apr : PLATFORM_D3D11_SFX option supported.  
+Mon 20 Apr : Remove unwanted legacy vcxproj files.  
 Fri 17 Apr : Do git submodule init if Platform submodule is not detected.  
 Wed 08 Apr : Shader paths for internal builds.  
 Thu 02 Apr : Fix for water faces being drawn backwards, small improvement for reflection setting performance  
@@ -105,7 +107,5 @@ Tue 28 Jan : Fix PS4 compiler errors.
 Tue 28 Jan : Doc Fixes  
 Tue 28 Jan : Fix compile errors in Orientation.cpp  
 Tue 28 Jan : .  
-Tue 28 Jan : Fix for VS_SnowParticles  
-Tue 28 Jan : Minor fix for images in rainbow documentation  
 
 <hr>
