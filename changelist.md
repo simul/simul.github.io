@@ -7,6 +7,9 @@ weight: 120
 
 Version HEAD
 ---
+Tue 12 May : Fix D3d12 shader build.  
+Mon 11 May : Improve batch build script. Deploy Win64 shaders to API subdirectories.  
+Mon 11 May : Updated binary readme and batches.  
 Fri 01 May : Fix zero matrix in WorldspaceToLightspaceMatrix  
 Mon 27 Apr : Added Latest Redist  
 Sat 25 Apr : Remove extra #include.  
@@ -104,8 +107,5 @@ Sat 01 Feb : Help compile with Clang on Windows.
 Wed 29 Jan : Documentation Update  
 Tue 28 Jan : Linux compile fixes.  
 Tue 28 Jan : Fix PS4 compiler errors.  
-Tue 28 Jan : Doc Fixes  
-Tue 28 Jan : Fix compile errors in Orientation.cpp  
-Tue 28 Jan : .  
 
 <hr>
