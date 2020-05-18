@@ -7,6 +7,7 @@ weight: 120
 
 Version HEAD
 ---
+Fri 15 May : Small updates to water, backend changes to particles, fix for memory leak  
 Tue 12 May : Fix D3d12 shader build.  
 Mon 11 May : Improve batch build script. Deploy Win64 shaders to API subdirectories.  
 Mon 11 May : Updated binary readme and batches.  
@@ -106,6 +107,5 @@ Sat 01 Feb : Fix compile error.
 Sat 01 Feb : Help compile with Clang on Windows.  
 Wed 29 Jan : Documentation Update  
 Tue 28 Jan : Linux compile fixes.  
-Tue 28 Jan : Fix PS4 compiler errors.  
 
 <hr>
