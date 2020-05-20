@@ -7,6 +7,9 @@ weight: 120
 
 Version HEAD
 ---
+Tue 19 May : Rain tweak, version number on seq panel.  
+Tue 19 May : Use 0 mip to render rain with cubemap.  
+Mon 18 May : Fixed aligned Sun, removed flashing sky with Sequencer DX12  
 Fri 15 May : Small updates to water, backend changes to particles, fix for memory leak  
 Tue 12 May : Fix D3d12 shader build.  
 Mon 11 May : Improve batch build script. Deploy Win64 shaders to API subdirectories.  
@@ -104,8 +107,5 @@ Mon 03 Feb : Remove submodules moved to Platform. Sfx has moved to Platform.
 Mon 03 Feb : Clang CMake fixes. Updates win_flex_bison to newer version, should no longer write "register" which is outdated.  
 Mon 03 Feb : Clang CMake fixes. Updates win_flex_bison to newer version, should no longer write "register" which is outdated.  
 Sat 01 Feb : Fix compile error.  
-Sat 01 Feb : Help compile with Clang on Windows.  
-Wed 29 Jan : Documentation Update  
-Tue 28 Jan : Linux compile fixes.  
 
 <hr>
