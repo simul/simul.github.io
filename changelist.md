@@ -7,6 +7,8 @@ weight: 120
 
 Version HEAD
 ---
+Wed 20 May : Fix shaky rain.  
+Wed 20 May : Fix NaN's in rain.  
 Tue 19 May : Rain tweak, version number on seq panel.  
 Tue 19 May : Use 0 mip to render rain with cubemap.  
 Mon 18 May : Fixed aligned Sun, removed flashing sky with Sequencer DX12  
@@ -105,7 +107,5 @@ Mon 03 Feb : Build.bat quotation mark fixes.
 Mon 03 Feb : Platform ptr.  
 Mon 03 Feb : Remove submodules moved to Platform. Sfx has moved to Platform.  
 Mon 03 Feb : Clang CMake fixes. Updates win_flex_bison to newer version, should no longer write "register" which is outdated.  
-Mon 03 Feb : Clang CMake fixes. Updates win_flex_bison to newer version, should no longer write "register" which is outdated.  
-Sat 01 Feb : Fix compile error.  
 
 <hr>
