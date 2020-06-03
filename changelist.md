@@ -7,6 +7,8 @@ weight: 120
 
 Version HEAD
 ---
+Tue 02 Jun : small variable fix  
+Tue 02 Jun : Fix to shadows, initial setup for passing variables more efficiently  
 Wed 20 May : Fix shaky rain.  
 Wed 20 May : Fix NaN's in rain.  
 Tue 19 May : Rain tweak, version number on seq panel.  
@@ -105,7 +107,5 @@ Tue 04 Feb : CMake for PS4. Return from EditorRenderCloudWindow instead of calli
 Mon 03 Feb : Fix for Rainbows appearing front of scene geometry  
 Mon 03 Feb : Build.bat quotation mark fixes.  
 Mon 03 Feb : Platform ptr.  
-Mon 03 Feb : Remove submodules moved to Platform. Sfx has moved to Platform.  
-Mon 03 Feb : Clang CMake fixes. Updates win_flex_bison to newer version, should no longer write "register" which is outdated.  
 
 <hr>
