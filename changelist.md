@@ -7,6 +7,9 @@ weight: 120
 
 Version HEAD
 ---
+Thu 04 Jun : Fix win_flex path.  
+Thu 04 Jun : GL shader fixes. QNetworkReply null check.  
+Wed 03 Jun : Add ssleay and libeay dll's to installers.  
 Tue 02 Jun : small variable fix  
 Tue 02 Jun : Fix to shadows, initial setup for passing variables more efficiently  
 Wed 20 May : Fix shaky rain.  
@@ -104,8 +107,5 @@ Tue 04 Feb : Minor fixes to build script.
 Tue 04 Feb : Fix shader build conflict for CMake. Remove win_flex_bison, this is in Platform/ now.  
 Tue 04 Feb : Move albedo and colour into Moon structs.  
 Tue 04 Feb : CMake for PS4. Return from EditorRenderCloudWindow instead of calling EnsureLayersAreInitialized if checksum fails.  
-Mon 03 Feb : Fix for Rainbows appearing front of scene geometry  
-Mon 03 Feb : Build.bat quotation mark fixes.  
-Mon 03 Feb : Platform ptr.  
 
 <hr>

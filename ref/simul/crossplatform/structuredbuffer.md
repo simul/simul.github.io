@@ -6,7 +6,7 @@ weight: 0
 classtemplate StructuredBuffer
 ===
 
-| Include: | Platform/CrossPlatform/Effect.h |
+| Include: | Platform/CrossPlatform/PlatformStructuredBuffer.h |
 
 Templated structured buffer, which uses platform-specific implementations of PlatformStructuredBuffer.<br>
 
