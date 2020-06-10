@@ -24,7 +24,7 @@ Below you will find links to the different aspects of trueSKY, with each section
 
 * [**Precipitation**](precipitation)                            - Cloud precipitation from rain to snow.
 
-* [**Storms**](storms)                                                          - Examples of large storms, producing thunder and lightning.
+* [**Storms**](storm)                                                           - Examples of large storms, producing thunder and lightning.
 
 * [**Time**](time)                                                                      - Make days turn to nights by altering the time.
 

@@ -7,6 +7,8 @@ weight: 120
 
 Version HEAD
 ---
+Mon 08 Jun : Backport Source Setup  
+Mon 08 Jun : Update ReadMe.md  
 Thu 04 Jun : Fix win_flex path.  
 Thu 04 Jun : GL shader fixes. QNetworkReply null check.  
 Wed 03 Jun : Add ssleay and libeay dll's to installers.  
@@ -105,7 +107,5 @@ Thu 06 Feb : Added cloud volume calculations to MixInCirrus shader.
 Thu 06 Feb : Fix for copied keyframes not being accessible.  
 Tue 04 Feb : Minor fixes to build script.  
 Tue 04 Feb : Fix shader build conflict for CMake. Remove win_flex_bison, this is in Platform/ now.  
-Tue 04 Feb : Move albedo and colour into Moon structs.  
-Tue 04 Feb : CMake for PS4. Return from EditorRenderCloudWindow instead of calling EnsureLayersAreInitialized if checksum fails.  
 
 <hr>
