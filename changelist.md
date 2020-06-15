@@ -7,6 +7,9 @@ weight: 120
 
 Version HEAD
 ---
+Mon 15 Jun : Default for SIMUL_QT_DIR .  
+Fri 12 Jun : Update to GetDependencies.bat  
+Wed 10 Jun : Default to NEVER_BUILD for shaders.  
 Mon 08 Jun : Backport Source Setup  
 Mon 08 Jun : Update ReadMe.md  
 Thu 04 Jun : Fix win_flex path.  
@@ -104,8 +107,5 @@ Mon 10 Feb : GetInterpolatedCloudKeyframeUniqueId() returns the UID for the Clou
 Thu 06 Feb : Removal of Duplicate Images  
 Thu 06 Feb : Switch cldoc to simul/markdoc submodule remote.  
 Thu 06 Feb : Added cloud volume calculations to MixInCirrus shader.  
-Thu 06 Feb : Fix for copied keyframes not being accessible.  
-Tue 04 Feb : Minor fixes to build script.  
-Tue 04 Feb : Fix shader build conflict for CMake. Remove win_flex_bison, this is in Platform/ now.  
 
 <hr>
