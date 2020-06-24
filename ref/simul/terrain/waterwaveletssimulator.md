@@ -20,7 +20,7 @@ Functions
 | simul::terrain::surfaceFlowRayBuffer * | [getSubFlowRayBuffer](#getSubFlowRayBuffer)() |
 | void | [InitialiseWaveGrid](#InitialiseWaveGrid)(simul::terrain::WaveGrid newWaveGrid, uint2 dimension, int theta, int k) |
 | void | [InvalidateDeviceObjects](#InvalidateDeviceObjects)() |
-| void | [PrecomputeProfileBuffers](#PrecomputeProfileBuffers)(simul::crossplatform::DeviceContext deviceContext, simul::terrain::WaveGrid targetWaveGrid, float real_time_seconds, simul::terrain::localWaterValues waterValues) |
+| void | [PrecomputeProfileBuffers](#PrecomputeProfileBuffers)(simul::crossplatform::DeviceContext deviceContext, simul::terrain::WaveGrid targetWaveGrid, float time, simul::terrain::localWaterValues waterValues) |
 | void | [PrecomputeWaveSpeeds](#PrecomputeWaveSpeeds)(simul::crossplatform::DeviceContext deviceContext) |
 | void | [ResetAmplitudeGrid](#ResetAmplitudeGrid)(simul::crossplatform::DeviceContext deviceContext) |
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform renderPlatform) |
@@ -53,7 +53,7 @@ Initialise a given wave grid
 ### void InvalidateDeviceObjects()
 Platform-dependent function called when uninitializing the wavelets simulator.
 <a name="PrecomputeProfileBuffers"></a>
-### void PrecomputeProfileBuffers(simul::crossplatform::DeviceContext deviceContext, simul::terrain::WaveGrid targetWaveGrid, float real_time_seconds, simul::terrain::localWaterValues waterValues)
+### void PrecomputeProfileBuffers(simul::crossplatform::DeviceContext deviceContext, simul::terrain::WaveGrid targetWaveGrid, float time, simul::terrain::localWaterValues waterValues)
 Precompute the profile buffers of a given wave grid
 <a name="PrecomputeWaveSpeeds"></a>
 ### void PrecomputeWaveSpeeds(simul::crossplatform::DeviceContext deviceContext)

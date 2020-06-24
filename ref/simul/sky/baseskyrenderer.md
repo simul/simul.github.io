@@ -100,6 +100,7 @@ Functions
 | void | [RecompileShaders](#RecompileShaders)() |
 | void | [ReloadTextures](#ReloadTextures)() |
 | bool | [Render2DFades](#Render2DFades)(simul::crossplatform::DeviceContext deviceContext, int numDist, int numElev) |
+| void | [RenderAurora](#RenderAurora)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float exposure, simul::crossplatform::Quaterniond cloudWindowOrigin) |
 | void | [RenderCelestialDisplay](#RenderCelestialDisplay)(simul::crossplatform::DeviceContext context, float y_heading) |
 | bool | [RenderFades](#RenderFades)(simul::crossplatform::DeviceContext deviceContext, int view_id, int x, int y, int w, int h) |
 | void | [RenderIlluminationBuffer](#RenderIlluminationBuffer)(simul::crossplatform::DeviceContext deviceContext) |
@@ -111,6 +112,7 @@ Functions
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform renderPlatform) |
 | void | [SaveTextures](#SaveTextures)(char) |
 | void | [SetBackgroundTexture](#SetBackgroundTexture)(simul::crossplatform::Texture t) |
+| void | [SetMoonTexture](#SetMoonTexture)(simul::crossplatform::Texture t) |
 | void | [SetOvercastCallback](#SetOvercastCallback)(simul::sky::OvercastCallback ocb) |
 | void | [SetPlanetImage](#SetPlanetImage)(simul::sky::uid u, simul::crossplatform::Texture tex, bool lighting, bool render) |
 | void | [FillFadeTextureBlocks](#FillFadeTextureBlocks)(int, int, int, int, int, int, int, float, float, float) |
@@ -253,6 +255,9 @@ Platform-dependent function to reload the textures - only use this for debug pur
 <a name="Render2DFades"></a>
 ### bool Render2DFades(simul::crossplatform::DeviceContext deviceContext, int numDist, int numElev)
 This fills in the 2D atmospheric fade textures once per-frame from the keyframed 3D fade textures.
+<a name="RenderAurora"></a>
+### void RenderAurora(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float exposure, simul::crossplatform::Quaterniond cloudWindowOrigin)
+Draw the Aurora
 <a name="RenderCelestialDisplay"></a>
 ### void RenderCelestialDisplay(simul::crossplatform::DeviceContext context, float y_heading)
 Draw sidereal and geographic information to screen
@@ -288,6 +293,9 @@ Save the current texture set to disk. Useful, but not necessary for normal opera
 <a name="SetBackgroundTexture"></a>
 ### void SetBackgroundTexture(simul::crossplatform::Texture t)
 Get some per-frame text information for debugging - usually timing data.
+<a name="SetMoonTexture"></a>
+### void SetMoonTexture(simul::crossplatform::Texture t)
+Override the Moon texture
 <a name="SetOvercastCallback"></a>
 ### void SetOvercastCallback(simul::sky::OvercastCallback ocb)
 Inform the sky renderer of a callback to use to get overcast information.

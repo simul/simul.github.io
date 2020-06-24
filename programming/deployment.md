@@ -14,6 +14,15 @@ trueSKY Deployment
 For Unreal
 ------------
 
+My Sky is black when I Package!
+---------------------------------
+With the latest change to 4.25 - Niagara particle systems are enabled by default. Because of this, if you are not using our UE4 Source branch, you will not be able to package unless you disable the Niagara. We have reached out to Epic to implement our fix, but are still waiting. 
+
+To Disable, go to Edit->Plugins and then Search Built-in for Niagara. Then disable it. 
+
+If you are using your own UE4 Source, there are two files that need to be changed. Our pull request is at - https://github.com/EpicGames/UnrealEngine/pull/6414
+
+
 **Running Cooked Games**
 
 The trueSKY DLL's are  located in [UE4]/Engine/Binaries/ThirdParty/Simul. When you package, cook, or launch a build, UE4 does not yet provide the capability to automatically deploy files to a build. Therefore on the Simul branch of UE4, this code has been inserted into [UE4]/Engine/Source/Programs/AutomationTool/Win/WinPlatform.Automation.cs (see line 43):

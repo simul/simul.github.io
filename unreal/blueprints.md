@@ -99,7 +99,7 @@ The number of the layer you are on is shown in the layer's name, as you can see 
 Tools
 --------
 
-There are Blueprint functions provided to test a scene for lightning and for rain. For lightning, the "Get Lightning" function will provide the start position, end position, colour and magnitude of any lightning present. A magnitude of 0 means there is no lightning present. Additionally, the "Get Rain At Position" function will take a given position and return a float between 0.0 and 1.0, indicating the strength of the rain (or snow) at this position.
+There are Blueprint functions provided to test a scene for lightning and for rain. For lightning, the "Get Lightning" function will provide the start position, end position, colour and magnitude of any lightning present. A magnitude of 0 means there is no lightning present. Additionally, the "Get Precipitation Strength at Position" function will take a given position and return a float between 0.0 and 1.0, indicating the strength of the rain (or snow) at this position.
 
 ![](/images/unreal/LightningRainTest.png)
 Example of testing the weather conditions in blueprint.

@@ -23,6 +23,15 @@ Sections
 Setup
 =============
 
+My Sky is black when I Package!
+---------------------------------
+With the latest change to 4.25 - Niagara particle systems are enabled by default. Because of this, if you are not using our UE4 Source branch, you will not be able to package unless you disable the Niagara. We have reached out to Epic to implement our fix, but are still waiting. 
+
+To Disable, go to Edit->Plugins and then Search Built-in for Niagara. Then disable it. 
+
+If you are using your own UE4 Source, there are two files that need to be changed. Our pull request is at - https://github.com/EpicGames/UnrealEngine/pull/6414
+
+
 Could not find or load the QT platform "window"
 ------------------------------------------
 Some Plugins use an incompatible version of the Qt widget system, please deactivate these Plugins to enable trueSKY. Currently known Plugins that have conflict issues can be found [here](#plugin-conflicts).

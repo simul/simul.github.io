@@ -20,6 +20,7 @@ Classes and Structures
 Functions
 ---
 
+| simul::sky::uid | [GetCloudLayerUIDByIndex](#GetCloudLayerUIDByIndex)(int index) |
 | simul::sky::uid | [GetInterpolatedCloudKeyframeUniqueId](#GetInterpolatedCloudKeyframeUniqueId)(int layer) |
 | simul::sky::uid | [GetInterpolatedSkyKeyframeUniqueId](#GetInterpolatedSkyKeyframeUniqueId)() |
 | int | [GetNumStorms](#GetNumStorms)() |
@@ -124,6 +125,9 @@ Functions
 
 Functions
 ---
+<a name="GetCloudLayerUIDByIndex"></a>
+### simul::sky::uid GetCloudLayerUIDByIndex(int index)
+Get the UID of a Cloud Layer by Index (Starting at 0)
 <a name="GetInterpolatedCloudKeyframeUniqueId"></a>
 ### simul::sky::uid GetInterpolatedCloudKeyframeUniqueId(int layer)
 Get the ID of the current interpolated cloud keyframe on the given layer

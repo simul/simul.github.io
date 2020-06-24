@@ -6,7 +6,7 @@ weight: 0
 namespace sky
 ===
 
-| Include: | Sky/BaseAtmosphericsRenderer.h |
+| Include: | Sky/Aurora.h |
 
 
 

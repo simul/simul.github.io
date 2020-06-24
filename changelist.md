@@ -5,39 +5,72 @@ weight: 120
 ---
 
 
-Version HEAD
+Version 4.3
 ---
+Fri 19 Jun : added getCloudLayerUIDbyIndex  
+Wed 17 Jun : Fix to Horizon and Zenith  
+Wed 17 Jun : Doc Update  
 Mon 15 Jun : Default for SIMUL_QT_DIR .  
-Fri 12 Jun : Update to GetDependencies.bat  
-Wed 10 Jun : Default to NEVER_BUILD for shaders.  
-Mon 08 Jun : Backport Source Setup  
-Mon 08 Jun : Update ReadMe.md  
+Fri 12 Jun : fix to GetDependencies.bat  
+Fri 12 Jun : Update to extracting Zip File  
+Fri 12 Jun : Minor update to Aurora.cpp Checksum issue.  
+Wed 10 Jun : Fix nsi build.  
+Wed 10 Jun : Fix to Linux Build  
+Wed 10 Jun : Fix Linux build  
+Mon 08 Jun : Added 4.2a Changes  
+Mon 08 Jun : Updated ReadMe  
+Mon 08 Jun : Add Cmake QT_dir Variable to CopyToTargetDir.py  
+Mon 08 Jun : Update To GetDependencies.bat and default .json  
+Sat 06 Jun : Merge 4.3  
+Fri 05 Jun : Update to Support_Vulkan Option  
+Thu 04 Jun : Fix to batch  
+Thu 04 Jun : Build.bat file fix.  
+Thu 04 Jun : Build.bat file fix.  
 Thu 04 Jun : Fix win_flex path.  
-Thu 04 Jun : GL shader fixes. QNetworkReply null check.  
-Wed 03 Jun : Add ssleay and libeay dll's to installers.  
-Tue 02 Jun : small variable fix  
-Tue 02 Jun : Fix to shadows, initial setup for passing variables more efficiently  
+Thu 04 Jun : Added 4.1a - compatible cloud class.  
+Thu 04 Jun : Allowing Simul_Support_API options to function  
+Wed 03 Jun : Amended NSI/Setup.nsi for win_flex_bison  
+Thu 28 May : Godrays improvements.  
+Thu 28 May : Remove unneeded project files. Improve build batches.  
+Wed 27 May : Rename to cloud_constants.sl  
+Tue 26 May : New method functional.  
+Thu 21 May : Added WindowUpdater.  
 Wed 20 May : Fix shaky rain.  
 Wed 20 May : Fix NaN's in rain.  
-Tue 19 May : Rain tweak, version number on seq panel.  
-Tue 19 May : Use 0 mip to render rain with cubemap.  
-Mon 18 May : Fixed aligned Sun, removed flashing sky with Sequencer DX12  
-Fri 15 May : Small updates to water, backend changes to particles, fix for memory leak  
-Tue 12 May : Fix D3d12 shader build.  
-Mon 11 May : Improve batch build script. Deploy Win64 shaders to API subdirectories.  
-Mon 11 May : Updated binary readme and batches.  
-Fri 01 May : Fix zero matrix in WorldspaceToLightspaceMatrix  
-Mon 27 Apr : Added Latest Redist  
-Sat 25 Apr : Remove extra #include.  
-Sat 25 Apr : Fix order to include Direct3D12.h  
-Sat 25 Apr : Fix order to include Direct3D12.h  
-Sat 25 Apr : Use ID3D12GraphicsCommandListType from ThisPlatform/Direct3D12.h  
-Fri 24 Apr : Added disable #line directive to OpenGLShaders.  
-Thu 23 Apr : Added shader_platform.sl to Shaders. Changed composite.sl TwoColourCompositeOutput to use SIMUL_RENDERTARGET_OUTPUT_DSB_INDEX_0 and _1.  
-Thu 23 Apr : Fix for overlapping semantic in water.SFX/water_particles.sfx  
-Wed 22 Apr : PLATFORM_D3D11_SFX option supported.  
-Mon 20 Apr : Remove unwanted legacy vcxproj files.  
+Tue 19 May : test.sfx compile fixed.  
+Tue 19 May : Fix rayleigh edit in sky panel.  
+Fri 15 May : Cloud shader work-in-progress.  
+Wed 13 May : Minor changes to VulkanSample/Main.cpp. Copying glfw includes and libs.  
+Tue 12 May : Commit Platform ptr.  
+Tue 12 May : Added .sl files to Setup.nsi along with some default values and destination simul_log.md file.  
+Tue 12 May : Fix for empty #define in Applications/SkySequencer/main.cpp  
+Tue 12 May : Cloud rendering optimizations.  
+Mon 11 May : Remove std::clamp (C++17). Fix Xbox build.  
+Sun 10 May : Deploy d3d11/12 sfxo's to subdirectories for engines.  
+Wed 06 May : Removing reference to CloudWindow in sky::Aurora. RenderAurora() takes the cloudWindow's origin quaternion.  
+Tue 05 May : PS4 compile fix.  
+Tue 05 May : PS4 compile fix.  
+Mon 04 May : D3d11 Sfx working, though still using fxc for individual shader compilation.  
+Mon 04 May : Remove circular dependency on cloud project from sky in aurora code.  
+Mon 27 Apr : Add latest VC redist exe.  
+Sun 26 Apr : Tools\bin optional in Setup.  
+Sun 26 Apr : Add test sample scripts.  
+Sat 25 Apr : Remove extraneous include.  
+Sat 25 Apr : Don't include GFX.hlsl  
+Sat 25 Apr : Use ThisPlatform/Direct3D12.h.  
+Sat 25 Apr : Use ThisPlatform/Direct3D12.h.  
+Fri 24 Apr : Fix Xbox build.  
+Fri 24 Apr : Fix water particle shader error.  
+Fri 24 Apr : Fix for Linux member initialisation order error.  
+Fri 24 Apr : Amended unused private field in Aurora.cpp  
+Fri 24 Apr : Remove API _stricmp().  
+Fri 24 Apr : Fix for Linux build.  
+Wed 22 Apr : Added Auroras to trueSKY 4.3. Minor adjustment to aurora rendering.  
+Tue 21 Apr : Change Aurora Intensity Map Size. Moved some shader functions  
+Tue 21 Apr : fix debug DebugOverlays conflict. Multiple render targets are no longer required. Added Depth testing(forward/reverse/MSAA).  
 Fri 17 Apr : Do git submodule init if Platform submodule is not detected.  
+Thu 09 Apr : Minor fixes.  
+Thu 09 Apr : Fix warning. Increased intensityMap size to 1024.  
 Wed 08 Apr : Shader paths for internal builds.  
 Thu 02 Apr : Fix for water faces being drawn backwards, small improvement for reflection setting performance  
 Thu 02 Apr : Added debug output to Sequencer  
@@ -48,13 +81,17 @@ Sun 29 Mar : Fix quitafterframe behaviour in sample.
 Sun 29 Mar : Remove DefaultFileLoader.cpp - this is now in Platform/Core.  
 Fri 27 Mar : Platform ptr.  
 Fri 27 Mar : CloudKeyframers have Names.  
+Fri 27 Mar : Disabling OpenGL rendering initial commit  
 Fri 27 Mar : Fix incorrect links in Unreal source docs page.  
 Fri 27 Mar : Add Simul/Platform/Windows to Simul.markdoc so that ThisPlatform/*.h can be read.  
 Wed 25 Mar : Additional cloud render mode on widget.  
+Wed 25 Mar : Better compositing of aurorae.  
 Tue 24 Mar : Optional cloud rendering experimental variant  
 Mon 23 Mar : DEPLOY_ALL fixed for CopyToTargetDir.py.  
+Mon 23 Mar : Fix for Geomagnetic to Geography lookup for CloudWindow position. Aurora::GetGlobalDirectionToSun() fixed.  
 Sat 21 Mar : Fix unwanted changes to CopyToTargetDir.py  
 Thu 19 Mar : Add Core_MD to CopyToTargetDir.py  
+Thu 19 Mar : Init commit for converting from Geographic to Geomagnetic orientation for CloudWindow.  
 Mon 16 Mar : Minor correction to structured buffer initialisation for water probes, as well as extra shader paths for the new platform module  
 Mon 16 Mar : Sample changes.  
 Mon 16 Mar : Fix bad merge.  
@@ -62,50 +99,13 @@ Mon 16 Mar : Fixed Vulkan sample timeout.
 Mon 16 Mar : Some fixes, potentially unstable  
 Fri 13 Mar : Fix dll dependencies.  
 Fri 13 Mar : Update installer to point to Platform.  
+Fri 13 Mar : Added RestoreColourTextureState() for Vulkan fix depth buffer fix. TwoColourCompositeOutput amended. Multiple rendertargets working in Vulkan for aurora texture generation.  
 Fri 13 Mar : Re-enable disabled code.  
 Fri 13 Mar : Update to licence messages  
+Thu 12 Mar : Added InvalidCachedFramebuffersAndRenderPasses(). shader_platform.sl contains the definition SIMUL_RENDERTARGET_OUTPUT_DSB_  
 Wed 11 Mar : Platform is now standalone, Base has been split into Simul/Base and Platform/Core. The weatherRenderer uses composite.sfx instead of hdr.sfx.  
 Mon 09 Mar : Fix to storm gen + small Doc update  
 Thu 05 Mar : Fix ambiguous call.  
 Thu 05 Mar : Cloud generation reverting.  
-Thu 05 Mar : Update clouds.sfx  
-Wed 04 Mar : Small water fix  
-Wed 04 Mar : Platform ptr.  
-Wed 04 Mar : Moon rendering is optional. Cloud tint supported.  
-Tue 03 Mar : changes to ig licence doc  
-Tue 03 Mar : Added updated iula and ig-ula  
-Fri 28 Feb : Improve memory tracking.  
-Thu 27 Feb : Adjust time_val and checksum in CloudKeyframer::GetGpuCloudsParameters()  
-Wed 26 Feb : Added NoisePhase to CloudInterface and CloudNode.  
-Tue 25 Feb : Fixed water issues on PS4, some other changes for stability. Added basic water particles  
-Mon 24 Feb : Changed test shader.  
-Mon 24 Feb : Add TrueSkySample.cpp generic cross-api sample code.  
-Mon 24 Feb : Added clouds_experimental.sl  
-Mon 24 Feb : Plugin UI MainWindow compile fix.  
-Mon 24 Feb : LinePrint for debug printing.  
-Mon 24 Feb : CMake fixes  
-Sat 22 Feb : Rename KeyframeEditWidget to SkyKeyframeEditWidget  
-Tue 18 Feb : Amended build fix for Linux.  
-Tue 18 Feb : Revert TrueSkyLogo.psd as current version doesn't load.  
-Tue 18 Feb : Include math.h for Linux.  
-Tue 18 Feb : NSI/SkySequencer.nsi path fix.  
-Tue 18 Feb : NOMINMAX for Xbox.  
-Tue 18 Feb : Fix PS4 compile error.  
-Tue 18 Feb : PS4 build  
-Mon 17 Feb : Add Storm.h and cpp  
-Mon 17 Feb : Updating default values.  
-Mon 17 Feb : Move brightness multiplier calculation to GPU for more accuracy.  
-Mon 17 Feb : Option for StaticRenderOverlays2 in Unity.cpp.  
-Fri 14 Feb : Fix for D3D12 Rain streaks flicking.  
-Thu 13 Feb : Sequencer nsi fixes.  
-Tue 11 Feb : Remove SimulGeometry dependencies.  
-Tue 11 Feb : Optional reading of Lat/Long. Removed window grid UI.  
-Mon 10 Feb : Fix installers.  
-Mon 10 Feb : Renamce toolchain.ORBIS.cmake to toolchain-ORBIS.cmake  
-Mon 10 Feb : Math is now in Platform.  
-Mon 10 Feb : GetInterpolatedCloudKeyframeUniqueId() returns the UID for the Cloud Keyframer based on the layer index. New function Environment::GetCloudKeyframerUIDByLayerIndex();  
-Thu 06 Feb : Removal of Duplicate Images  
-Thu 06 Feb : Switch cldoc to simul/markdoc submodule remote.  
-Thu 06 Feb : Added cloud volume calculations to MixInCirrus shader.  
 
 <hr>

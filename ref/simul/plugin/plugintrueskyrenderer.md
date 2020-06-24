@@ -27,6 +27,7 @@ Functions
 | void | [ExportCloudLayer](#ExportCloudLayer)(char filenameUtf8) |
 | void | [Get](#Get)(long long Enum, simul::base::Variant v) |
 | bool | [GetBool](#GetBool)(char name) |
+| simul::sky::uid | [GetCloudKeyframerUIDByIndex](#GetCloudKeyframerUIDByIndex)(int index) |
 | void | [GetCloudPointQuery](#GetCloudPointQuery)(int id, float pos, VolumeQueryResult res) |
 | long long | [GetEnum](#GetEnum)(char name) |
 | simul::clouds::Environment * | [GetEnvironment](#GetEnvironment)() |
@@ -145,6 +146,9 @@ Get a value corresponding to the given enum.
 <a name="GetBool"></a>
 ### bool GetBool(char name)
 Returns a boolean value. See 
+<a name="GetCloudKeyframerUIDByIndex"></a>
+### simul::sky::uid GetCloudKeyframerUIDByIndex(int index)
+Get the Cloud Layer UID by Index
 <a name="GetCloudPointQuery"></a>
 ### void GetCloudPointQuery(int id, float pos, VolumeQueryResult res)
 Fill in a query structure based on cloud properties at a position.

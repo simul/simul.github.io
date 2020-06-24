@@ -16,7 +16,7 @@ Functions
 ---
 
 | bool | [CanPerformGPULighting](#CanPerformGPULighting)() |
-| void | [FillDensityGrid](#FillDensityGrid)(simul::crossplatform::DeviceContext deviceContext, int index, simul::clouds::GpuCloudsParameters params, int start_texel, int texels, simul::crossplatform::Texture finalTexture) |
+| void | [FillDensityGrid](#FillDensityGrid)(simul::crossplatform::DeviceContext deviceContext, int index, simul::clouds::GpuCloudsParameters params, int start_texel, int texels, simul::crossplatform::Texture finalTexture, simul::clouds::CloudClass cloudClass) |
 | int | [GetDensityGridsize](#GetDensityGridsize)(int grid) |
 | simul::crossplatform::Texture * | [Make3DNoiseTexture](#Make3DNoiseTexture)(simul::crossplatform::DeviceContext deviceContext, int noise_size, float noise_src_ptr, int generation_number) |
 | void | [RenderSimulationTextures](#RenderSimulationTextures)(simul::crossplatform::DeviceContext context, int x0, int y0, int width, int height) |
@@ -31,7 +31,7 @@ Functions
 ### bool CanPerformGPULighting()
 Return true if the derived class can relight clouds using the GPU.
 <a name="FillDensityGrid"></a>
-### void FillDensityGrid(simul::crossplatform::DeviceContext deviceContext, int index, simul::clouds::GpuCloudsParameters params, int start_texel, int texels, simul::crossplatform::Texture finalTexture)
+### void FillDensityGrid(simul::crossplatform::DeviceContext deviceContext, int index, simul::clouds::GpuCloudsParameters params, int start_texel, int texels, simul::crossplatform::Texture finalTexture, simul::clouds::CloudClass cloudClass)
 Fill a 3D grid with floating point cloud densities, and return an API-specific
 identifier to the texture that it's stored in.
 We pass the start texel and the number of texels to fill, which should both be a whole multiple of grid[0]
