@@ -7,6 +7,14 @@ weight: 120
 
 Version 4.3
 ---
+Fri 26 Jun : Fix warnings.  
+Fri 26 Jun : Nsis installer fixes for Dx12.  
+Thu 25 Jun : Fix merge issue  
+Thu 25 Jun : Fix to layer names  
+Thu 25 Jun : Layers have names, added wip Cloud Class  
+Wed 24 Jun : Removed line that doesn't compile.  
+Wed 24 Jun : Build fixes.  
+Wed 24 Jun : Small fix for DX11 water being incorrectly drawn and add the ability to draw only water  
 Fri 19 Jun : added getCloudLayerUIDbyIndex  
 Wed 17 Jun : Fix to Horizon and Zenith  
 Wed 17 Jun : Doc Update  
@@ -99,13 +107,5 @@ Mon 16 Mar : Fixed Vulkan sample timeout.
 Mon 16 Mar : Some fixes, potentially unstable  
 Fri 13 Mar : Fix dll dependencies.  
 Fri 13 Mar : Update installer to point to Platform.  
-Fri 13 Mar : Added RestoreColourTextureState() for Vulkan fix depth buffer fix. TwoColourCompositeOutput amended. Multiple rendertargets working in Vulkan for aurora texture generation.  
-Fri 13 Mar : Re-enable disabled code.  
-Fri 13 Mar : Update to licence messages  
-Thu 12 Mar : Added InvalidCachedFramebuffersAndRenderPasses(). shader_platform.sl contains the definition SIMUL_RENDERTARGET_OUTPUT_DSB_  
-Wed 11 Mar : Platform is now standalone, Base has been split into Simul/Base and Platform/Core. The weatherRenderer uses composite.sfx instead of hdr.sfx.  
-Mon 09 Mar : Fix to storm gen + small Doc update  
-Thu 05 Mar : Fix ambiguous call.  
-Thu 05 Mar : Cloud generation reverting.  
 
 <hr>

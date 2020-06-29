@@ -17,7 +17,9 @@ Fields
 
 **MediumDetailProportion**  < For cloud volume update rate.
 
-**MaximumCubemapResolution**  < For medium cloud volume update rate.
+**RenderSky**  < For medium cloud volume update rate.
+
+**MaximumCubemapResolution**  < Disable sky rendering, used primarily for when you only want water.
 
 **ShadowTextureSize**  < Resolution to draw full-detail cloud buffers
 
