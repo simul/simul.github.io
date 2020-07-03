@@ -7,6 +7,7 @@ weight: 120
 
 Version 4.3
 ---
+Thu 02 Jul : Updating ExternalRenderValues + removed unnecessary CopyToDesigner Function  
 Tue 30 Jun : Shader Recompile Fix  
 Fri 26 Jun : Fix warnings.  
 Fri 26 Jun : Nsis installer fixes for Dx12.  
@@ -106,6 +107,5 @@ Mon 16 Mar : Sample changes.
 Mon 16 Mar : Fix bad merge.  
 Mon 16 Mar : Fixed Vulkan sample timeout.  
 Mon 16 Mar : Some fixes, potentially unstable  
-Fri 13 Mar : Fix dll dependencies.  
 
 <hr>
