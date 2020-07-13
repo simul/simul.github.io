@@ -7,6 +7,16 @@ weight: 120
 
 Version 4.3
 ---
+Sun 12 Jul : Xbox header fix.  
+Sun 12 Jul : Remove WIN64=1 for Linux  
+Sun 12 Jul : DX12_JSON_FILE  
+Sun 12 Jul : Fix Spectrum json location.  
+Sun 12 Jul : Fix compile error.  
+Sat 11 Jul : Fix some warnings.  
+Sat 11 Jul : Remove unwanted files.  
+Sat 11 Jul : Spectrum PLATFORM_TXT.  
+Sat 11 Jul : Cross-platform API build fixes.  
+Fri 10 Jul : Fixes to bugs exposed by next-gen platform work.  
 Tue 07 Jul : Storm fix  
 Thu 02 Jul : Mie Value from blueprint fix  
 Thu 02 Jul : Updating ExternalRenderValues + removed unnecessary CopyToDesigner Function  
@@ -97,15 +107,5 @@ Fri 27 Mar : Disabling OpenGL rendering initial commit
 Fri 27 Mar : Fix incorrect links in Unreal source docs page.  
 Fri 27 Mar : Add Simul/Platform/Windows to Simul.markdoc so that ThisPlatform/*.h can be read.  
 Wed 25 Mar : Additional cloud render mode on widget.  
-Wed 25 Mar : Better compositing of aurorae.  
-Tue 24 Mar : Optional cloud rendering experimental variant  
-Mon 23 Mar : DEPLOY_ALL fixed for CopyToTargetDir.py.  
-Mon 23 Mar : Fix for Geomagnetic to Geography lookup for CloudWindow position. Aurora::GetGlobalDirectionToSun() fixed.  
-Sat 21 Mar : Fix unwanted changes to CopyToTargetDir.py  
-Thu 19 Mar : Add Core_MD to CopyToTargetDir.py  
-Thu 19 Mar : Init commit for converting from Geographic to Geomagnetic orientation for CloudWindow.  
-Mon 16 Mar : Minor correction to structured buffer initialisation for water probes, as well as extra shader paths for the new platform module  
-Mon 16 Mar : Sample changes.  
-Mon 16 Mar : Fix bad merge.  
 
 <hr>
