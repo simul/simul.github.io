@@ -7,6 +7,7 @@ weight: 120
 
 Version 4.3
 ---
+Mon 13 Jul : SkyKeyframer::GetSiderealTimeDegrees() now uses interpolatedKeyframe.time. Fix for Sky Background doing full reverse rotation before midnight.  
 Sun 12 Jul : Xbox header fix.  
 Sun 12 Jul : Remove WIN64=1 for Linux  
 Sun 12 Jul : DX12_JSON_FILE  
@@ -106,6 +107,5 @@ Fri 27 Mar : CloudKeyframers have Names.
 Fri 27 Mar : Disabling OpenGL rendering initial commit  
 Fri 27 Mar : Fix incorrect links in Unreal source docs page.  
 Fri 27 Mar : Add Simul/Platform/Windows to Simul.markdoc so that ThisPlatform/*.h can be read.  
-Wed 25 Mar : Additional cloud render mode on widget.  
 
 <hr>
