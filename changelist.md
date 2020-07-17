@@ -7,6 +7,9 @@ weight: 120
 
 Version 4.3
 ---
+Thu 16 Jul : Updated Aurora::RecompileShaders and Aurora::RestoreDeviceObjects  
+Wed 15 Jul : Adjust BrightnessPower value.  
+Wed 15 Jul : Added edited MilkyWay texture, adjusted default BrightnessPower to 0.05.  
 Mon 13 Jul : SkyKeyframer::GetSiderealTimeDegrees() now uses interpolatedKeyframe.time. Fix for Sky Background doing full reverse rotation before midnight.  
 Sun 12 Jul : Xbox header fix.  
 Sun 12 Jul : Remove WIN64=1 for Linux  
@@ -104,8 +107,5 @@ Sun 29 Mar : Fix quitafterframe behaviour in sample.
 Sun 29 Mar : Remove DefaultFileLoader.cpp - this is now in Platform/Core.  
 Fri 27 Mar : Platform ptr.  
 Fri 27 Mar : CloudKeyframers have Names.  
-Fri 27 Mar : Disabling OpenGL rendering initial commit  
-Fri 27 Mar : Fix incorrect links in Unreal source docs page.  
-Fri 27 Mar : Add Simul/Platform/Windows to Simul.markdoc so that ThisPlatform/*.h can be read.  
 
 <hr>
