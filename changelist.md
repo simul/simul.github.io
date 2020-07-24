@@ -7,6 +7,9 @@ weight: 120
 
 Version 4.3
 ---
+Thu 23 Jul : Docs - Adding image and updating TimeProgression on UE4 Page  
+Thu 23 Jul : Fix to no Moon Texture by default - adding function to get a specific moon by ID  
+Wed 22 Jul : Try to initialize SIMUL_SOURCE_BUILD depending on whether source is present.  
 Thu 16 Jul : Updated Aurora::RecompileShaders and Aurora::RestoreDeviceObjects  
 Wed 15 Jul : Adjust BrightnessPower value.  
 Wed 15 Jul : Added edited MilkyWay texture, adjusted default BrightnessPower to 0.05.  
@@ -21,6 +24,7 @@ Sat 11 Jul : Remove unwanted files.
 Sat 11 Jul : Spectrum PLATFORM_TXT.  
 Sat 11 Jul : Cross-platform API build fixes.  
 Fri 10 Jul : Fixes to bugs exposed by next-gen platform work.  
+Wed 08 Jul : Update Doc  
 Tue 07 Jul : Storm fix  
 Thu 02 Jul : Mie Value from blueprint fix  
 Thu 02 Jul : Updating ExternalRenderValues + removed unnecessary CopyToDesigner Function  
@@ -103,9 +107,5 @@ Thu 02 Apr : Added debug output to Sequencer
 Wed 01 Apr : Fixed medium detail update region. Fixed rain render problems.  
 Mon 30 Mar : Fix offset high-detail area.  
 Sun 29 Mar : Fix quitafterframe behaviour in sample.  
-Sun 29 Mar : Fix quitafterframe behaviour in sample.  
-Sun 29 Mar : Remove DefaultFileLoader.cpp - this is now in Platform/Core.  
-Fri 27 Mar : Platform ptr.  
-Fri 27 Mar : CloudKeyframers have Names.  
 
 <hr>
