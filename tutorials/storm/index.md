@@ -19,3 +19,11 @@ Storm keyframes are added to the cloud layer, to create structures representing 
 * [**Tutorial**](tutorials.html)                                                        - Learn how to add a storm to your level
 
 * [**Variables**](variables.html)                                                       - Learn the different variables to use when creating a storm
+
+We have a youtube overveiw documenting these settings and how to use them here:
+
+<div class="video-wrapper">
+<div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/huXTx--WZTw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>

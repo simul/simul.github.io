@@ -16,4 +16,6 @@ trueWATER is one of the latest features to come to trueSKY. Experience real-time
 
 * [**Tutorial**](tutorials.html)                                                        - Learn how to add an ocean to your scene, or how to make object buoyant
 
+* [**Buoyancy**](Buoyancy.html)                                                         - Learn how to add an ocean to your scene, or how to make object buoyant
+
 * [**Variables**](variables.html)                                                       - Learn about the different variables for adjusting the water, from colour to waves.

@@ -7,6 +7,7 @@ weight: 120
 
 Version 4.3
 ---
+Fri 24 Jul : Docs - Added tutorial videos to relevant Categories - Buoyancy page added - Attempted fixes to Indie licences directing to incorrect page and 404 errors. Attempted fix to IG licencing being a 404, Updated links within FAQ  
 Thu 23 Jul : Docs - Adding image and updating TimeProgression on UE4 Page  
 Thu 23 Jul : Fix to no Moon Texture by default - adding function to get a specific moon by ID  
 Wed 22 Jul : Try to initialize SIMUL_SOURCE_BUILD depending on whether source is present.  
@@ -106,6 +107,5 @@ Thu 02 Apr : Fix for water faces being drawn backwards, small improvement for re
 Thu 02 Apr : Added debug output to Sequencer  
 Wed 01 Apr : Fixed medium detail update region. Fixed rain render problems.  
 Mon 30 Mar : Fix offset high-detail area.  
-Sun 29 Mar : Fix quitafterframe behaviour in sample.  
 
 <hr>

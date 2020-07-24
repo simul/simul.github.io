@@ -22,13 +22,13 @@ Our Indie licence is for projects with less than £100,000 budget, and is availa
 
 See our [Indie Licence Agreement](iula.html).
 
-Licences issued prior to March 2020 are governed by the [Legacy Indie Licence Agreement](iula-to-02-20.html).
+Licences issued prior to March 2020 are governed by the [Legacy Indie Licence Agreement](Oldiula.html).
 
 IG
 -------------
 Our IG licence is for image-generation applications. With this licence, you will have yearly access to all trueSKY Plugins, products and tool sets. This licence requires either an annual payment of £250 per seat. Either payment option will give you immediate access to trueSKY and all of its features. You can purchase an IG Licence [Here](https://simul.co/pricing/).
 
-See our [IG Licence Agreement](ig-ula.html).
+See our [IG Licence Agreement](igula.html).
 
 Pro
 ---------------

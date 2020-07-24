@@ -226,6 +226,5 @@ If you are using the PopcornFX plugin, you will need to set native rendering to 
 
 My Question is not in the documentation, what can I do?
 --------------------------
-If our documentation can't help with your issue, let us know. [Email us at: contact@simul.co](mailto:contact@simul.co) and let us know what you think we should improve on, we're always looking for ways to help improve the quality of life for trueSKY users! Alternatively, you can join our Slack page, which is where our community discussions take place. Your question may have already been answered there! To join our Slack page, follow [this link](https://join.slack.com/t/truesky/shared_invite/enQtNzQwMDMyNzQ3MTIzLWY5NmZmOTQ4NWYyYjk5MGRjNmQ0ZDUzMDQyODE1MWNlMzJmNDlkZTMyMzI4NGQzN2UyZTQwZWExNmMwMDc0Zjk).
 
-
+If our documentation hasn't covered your issue let us know via the [Q+A Forum](https://simul.co/support/exchange/). Your question may have already been asked by a member of the community, and if not a member of the team will get back to you with a solution or for more information!

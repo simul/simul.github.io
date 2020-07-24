@@ -12,6 +12,13 @@ Initial Configuration
 
 This page shows you how to install the trueSKY plugin for Unity. Head back to [Installation](/installation.html) if you do not need the Unity Package.
 
+<div class="video-wrapper">
+<div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VsKBvibi_W8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+
+
 
 1.Obtaining the trueSKY Unity Package
 -------------------------

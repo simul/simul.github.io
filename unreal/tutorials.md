@@ -17,6 +17,12 @@ Please be aware trueSKY for Unreal Engine 4 does not support OSX and OpenGL. For
 
 This page shows you how to install the binary version of trueSKY onto your existing binary UE installation. For other versions, or if you have a version of Unreal Engine built from source, you will need to build the plugin.Check the [Unreal Source page](source.html) for information on GitHub/Engine Source Integration.
 
+<div class="video-wrapper">
+<div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rtdArBwqBuw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+
 
 1: Installing the Plugin
 -------------------------

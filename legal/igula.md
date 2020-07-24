@@ -1,5 +1,5 @@
 ---
-title: Indie User Licence Agreement
+title: IG User Licence Agreement
 layout: reference
 weight: 10
 ---
@@ -8,7 +8,7 @@ weight: 10
 
 
 
-Indie User Licence Agreement (from March 2020)
+IG User Licence Agreement
 ----------------------------
 
 This Agreement is between Simul Software Ltd and you.
@@ -18,7 +18,7 @@ Please read this Agreement carefully. It is a legal document that explains your 
 0. Definitions
 --------------
 
-"You," "your" or "yourself", whether or not capitalized in this Agreement, means you as an individual or the legal entity of fewer than twenty members exercising rights under this Agreement through you.
+"You," "your" or "yourself", whether or not capitalized in this Agreement, means you as an individual or the legal entity exercising rights under this Agreement through you.
 
 "Simul" means Simul Software Ltd of Baltic Creative Digital House, Studio J, 44 Simpson St, Merseyside, L1 0AX, United Kingdom; a company registered in England and Wales.
 
@@ -95,7 +95,7 @@ Simul may make available future Versions of the trueSKY Plugin. Simul does not h
 8. Support
 ----------
 
-Simul does not have any support obligations with respect to the Licensed Product under this Agreement. Support resources may be obtained at https://simul.co/support.
+Simul does not have any support obligations with respect to the Licensed Product under this Agreement. Support resources may be obtained at contact@simul.co.
 
 9. Feedback and Contributions 
 -----------------------------

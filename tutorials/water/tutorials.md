@@ -56,17 +56,3 @@ Next, create a RenderTexture, setting it to capture only the Red channel
 Now, attach the RenderTexture to the 2DSceneCapture, and attach the Camera to the correct water instance.
 
 You can now place the camera above where you want to apply the effect (pointing downwards), and adjust the Shore Depth Width and Extents to your liking.
-
-
-Buoyancy
----------------
-Generally, you should have enough water probes positioned in such a way that they roughly cover the volume that the ships take up. Keep a close eye on the center of mass, as well as the overall mass of the object.
-
-For Example, this ship has 4 probes:
-
-
-![](/images/buoyancy.png)
-
-
-
-To be affected correctly by the waves, make sure to tick Enable Wave Grid on the Water Object. [Click here to learn  more.](https://simul.co/real-time-rendering-news/truesky-volumetric-water-tutorials-and-tips/)
