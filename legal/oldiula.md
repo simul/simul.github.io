@@ -1,7 +1,7 @@
 ---
-title: Indie User Licence Agreement
+title: Indie ULA prior to February 2020
 layout: reference
-weight: 20
+weight: 50
 ---
 
 

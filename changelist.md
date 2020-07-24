@@ -7,6 +7,8 @@ weight: 120
 
 Version 4.3
 ---
+Fri 24 Jul : Doc Sidebar Update  
+Fri 24 Jul : Update to IG Licence Agreement  
 Fri 24 Jul : Docs - Added tutorial videos to relevant Categories - Buoyancy page added - Attempted fixes to Indie licences directing to incorrect page and 404 errors. Attempted fix to IG licencing being a 404, Updated links within FAQ  
 Thu 23 Jul : Docs - Adding image and updating TimeProgression on UE4 Page  
 Thu 23 Jul : Fix to no Moon Texture by default - adding function to get a specific moon by ID  
@@ -105,7 +107,5 @@ Thu 09 Apr : Fix warning. Increased intensityMap size to 1024.
 Wed 08 Apr : Shader paths for internal builds.  
 Thu 02 Apr : Fix for water faces being drawn backwards, small improvement for reflection setting performance  
 Thu 02 Apr : Added debug output to Sequencer  
-Wed 01 Apr : Fixed medium detail update region. Fixed rain render problems.  
-Mon 30 Mar : Fix offset high-detail area.  
 
 <hr>

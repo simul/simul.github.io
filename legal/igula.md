@@ -1,7 +1,7 @@
 ---
 title: IG User Licence Agreement
 layout: reference
-weight: 10
+weight: 20
 ---
 
 
@@ -28,7 +28,7 @@ Please read this Agreement carefully. It is a legal document that explains your 
 
 "Account" means a user account with a unique username and associated password selected by you, which enables you to download the trueSKY Plugin under the Licence.
 
-"Content" means any code, artwork, or other content that Simul makes available to you for use with the trueSKY Code.
+"Content" means any code, artwork, or other content that is created by you with the Licensed Products.
 
 "Source Code" means the human readable form of a software program.
 
@@ -52,39 +52,42 @@ Please read this Agreement carefully. It is a legal document that explains your 
 
 "Feedback" means any feedback or suggestions that you provide to Simul regarding the Licensed Product. 
 
-"Licensed Product" means any or all of the trueSKY Code and the Content, including as modified by you under the Licence.
-
-"Integrated Product" means any product developed under this Agreement that is made using the Licensed Product or that combines the Licensed Product with any other software or content, regardless of how much or little of the Licensed Product is used. 
+"Licensed Product" means any or all of the trueSKY Code and the Examples, including as modified by you under the Licence.
 
 "trueSKY Plugin" means the proprietary computer software program known as the trueSKY Plugin and any updates or upgrades to the program made available by Simul.
 
 "Version" means any updated or upgraded version of the trueSKY Plugin that Simul chooses to make available to the public.
+
+"Seat" means a purchased licence under the terms of this Agreement.
+
+"Term" means a term of one calendar year from the date of this Agreement.
 
 1. Licence Grant
 ----------------
 
 Subject to your compliance with all the terms of this Agreement, Simul grants you a non-exclusive, non-transferable, non-sublicensable (except as described in this Agreement) Licence to use the Licensed Product (the "Licence").
 
-The Licence becomes effective on the date you accept this Agreement or download the trueSKY Plugin. The Licence does not grant you any title or ownership in the Licensed Product.
+The Licence becomes effective on the date you accept this Agreement or download the trueSKY Plugin, and lasts for the Term. The Licence does not grant you any title or ownership in the Licensed Product.
+
+You may distribute any Content you create with the Licensed Product without restriction.
 
 You may only Distribute the Licensed Product as follows:
 
-1. Distribution to End Users - You may Distribute the Licensed Product incorporated in Object Code format only as an inseparable part of an Integrated Product to end users who are subject to an end user Licence agreement which explicitly disclaims any representations, warranties, conditions, and liabilities related to the Licensed Product. The Integrated Product may not contain any Source Code or Editor Libraries. The total final cost of development of the Integrated Product must be less than £100000, regardless of the number of Users or Licences contributing to its development.
+1. Distribution to other Licensees - You may Distribute trueSKY Code (including as modified by you under the Licence) in Object Code format, to a Licensee who has rights under its Licence to the same Version of the trueSKY Plugin that you are Distributing.
 
-2. Distribution to other Licensees - You may Distribute trueSKY Code (including as modified by you under the Licence) in Source Code or Object Code format, or any Content, to a Licensee who has rights under its Licence to the same Version of the trueSKY Plugin that you are Distributing.
+2. Distributions to employees and contractors - You also may Distribute Examples to a Licensee who is your employee or your contractor who does not have rights under their Licence to the same Licensed Products, but only to permit that Licensee to utilize that Content in good faith on your behalf under the Licence, and not for the purpose of Content pooling or any other Distribution or sublicensing of Content that is not permitted under this Agreement. Recipients of such a Distribution have a limited Licence to use, reproduce, display, perform, and modify those Examples to develop your Content as outlined above, and for no other purpose.
 
-3. Distributions to employees and contractors - You also may Distribute Content to a Licensee who is your employee or your contractor who does not have rights under their Licence to the same Content, but only to permit that Licensee to utilize that Content in good faith to develop an Integrated Product on your behalf for Distribution by you under the Licence, and not for the purpose of Content pooling or any other Distribution or sublicensing of Content that is not permitted under this Agreement. Recipients of such a Distribution have a limited Licence to use, reproduce, display, perform, and modify that Content to develop your Product as outlined above, and for no other purpose.
+You may not sublicense the Licensed Product. This paragraph does not limit your rights to distribute and sublicense Content.
 
-You may not sublicense the Licensed Product in Source Code format. You may not sublicense the Licensed Product in Object Code format, or any Content, except to grant end users the ability to use, or to permit your publishers and distributors to market and Distribute, an Integrated Product that you Distribute as permitted in Section 1(a) above. This paragraph does not limit your rights to Distribute and sublicense Examples.
 
 2. User Licence
 ---------------
 
-The Licensed Product is Licensed to you for use by a single User. The User may store the Licensed Product on any of the User’s computers, but the Licensed Product cannot be shared with others (including any other employees or agents) except through a permitted Distribution as described above. No more than one instance of the Licensed Product may be used for each Licence (per-seat licence).
+The Licensed Product is licensed to you for use by a single User at any time for each Seat purchased during the Term of that Seat. The User may store the Licensed Product on any computer, but the Licensed Product cannot be shared with others (including any other employees or agents) except through a permitted Distribution as described above. No more than one instance of the Licensed Product may be used simultaneously for each Seat (per-seat licence).
 
-In order to access and download the trueSKY Plugin, you must set up an Account. You may not share or allow others to use your Account. You are responsible for the security of your Account.
+In order to access and download the trueSKY Plugin, each User must set up an Account. A User  may not share or allow others to use the Account. You are responsible for the security of your Accounts.
 
-Under the Licence, the User may use the Licensed Product for as long as you comply with this Agreement. If you are a legal entity, references to "you" in this agreement also apply to the User in all cases. You are responsible for the User’s compliance with this Agreement.
+Under the Licence, the User may use the Licensed Product for as long as you comply with this Agreement and a Seat is assigned to them by you. If you are a legal entity, references to "you" in this agreement also apply to the User in all cases. You are responsible for the User’s compliance with this Agreement.
 
 3. New Versions and Content
 ---------------------------
@@ -114,20 +117,14 @@ The Editor Libraries include Third Party Software components. If Third Party Sof
 11. Ownership
 -------------
 
-Simul or its licensors own all title, ownership rights, and intellectual property rights in the trueSKY Plugin. You own all rights in the Products you develop under the Licence, other than the trueSKY Plugin, Third Party Software, and any Contributions. All rights granted to you under this Agreement are granted by express Licence only and not by sale, and all of those rights are limited by the terms of this Agreement. No Licence or other rights will be created hereunder by implication, estoppel, or otherwise. Any attempted sublicense under this Agreement that is not consistent with the terms of this Agreement will be null and void. 
+Simul or its licensors own all title, ownership rights, and intellectual property rights in the trueSKY Plugin. You own all rights in the Content you develop under the Licence. All rights granted to you under this Agreement are granted by express Licence only and not by sale, and all of those rights are limited by the terms of this Agreement. No Licence or other rights will be created hereunder by implication, estoppel, or otherwise. Any attempted sublicense under this Agreement that is not consistent with the terms of this Agreement will be null and void. 
 
 12. Proprietary Notices and Attribution
 ---------------------------------------
 
 You agree to retain and reproduce in all copies of the Licensed Product the copyright, trademark, and other proprietary notices and disclaimers of Simul and third parties as they appear in the trueSKY Code and the Content. 
 
-You agree to place the following notices in the credits for any Product (replacing xxxx with the current year):
-
-"[Product name] uses the trueSKY Plugin, Copyright 2007 – xxxx, Simul Software Ltd. All rights reserved."
-
 No other Licence or right in the Simul Trademarks is granted under this Agreement.
-
-Simul may use your trademarks, service marks, trade names, and logos used with any Product, as well as publicly released screen shots and video content from the Product, in connection with Simul’s marketing, advertisement, and promotion of the trueSKY Plugin in any and all media without restriction.
 
 14. Disclaimers and Limitation of Liability 
 -------------------------------------------
@@ -135,11 +132,6 @@ Simul may use your trademarks, service marks, trade names, and logos used with a
 Simul's total liability under this agreement, if any, for any damages suffered by any party (including any end user), whether in contract, in tort or otherwise, shall be limited to direct damages and shall not exceed the amount of fees paid to Simul by you pursuant to this agreement. The licence fee charged under this agreement is a consideration in limiting Simul's liability hereunder. You agree that under no circumstances shall Simul be liable for any indirect, special, incidental, exemplary, punitive or consequential damages suffered by any party resulting from or arising out of or related to this Agreement.
 
 To the full extent permitted by law, Simul shall not be liable in any way for loss or damage of any kind resulting from the use or inability to use the Licensed Product or otherwise in connection with this Agreement. In no event will Simul be liable for any loss of profits or any indirect, incidental, consequential, special, punitive, or exemplary damages, or any other damages arising out of or in connection with this Agreement or the Licensed Product, or the delay or inability to use or lack of functionality of the Licensed Product, even if Simul or its affiliates have been advised of the possibility of such damages. These limitations and exclusions regarding damages apply even if any remedy fails to provide adequate compensation.
-
-15. Indemnity
--------------
-
-You agree to indemnify and hold Simul, its officers, directors, shareholders, employees, agents, insurers, representatives, successors and assigns harmless from and against any and all Losses arising out of or in connection with or resulting directly or indirectly from (a) any claim that any aspect of the Integrated Products (excluding any claim related to the Licensed Product) infringes any patent, copyright, trade secret or other proprietary right of a third party, and (b) any and all acts and omissions by you with respect to the Licensed Product or the Integrated Products, including, without limitation, any misrepresentation (whether intentional or otherwise) of Simul or the Licensed Product, the use, operation or possession of the Licensed Product by any Licensee or the Integrated Products by any End User, the marketing or support of the Integrated Products, or any breach of this Agreement by you. You may, at your option and expense, participate in any such defence directly or through your own legal counsel.
 
 16. Export Compliance
 ---------------------
@@ -155,7 +147,7 @@ B. Termination by Simul. Simul may terminate the Agreement by providing written 
 
 C. Termination for Patent Action. The Agreement will terminate automatically as of the date you commence any claim that the Licensed Product infringes a patent, or otherwise support any claim by a third party that the Licensed Product infringes a patent.
 
-D. Effect of Termination. Upon any termination, the Simul Licences will automatically terminate, you may no longer exercise any of the rights granted to you by the Simul Licences, and you must destroy all copies of the Licensed Product in your possession and cease distributing any Products developed under this Agreement. Within 30 days of termination, unless otherwise agreed by Simul, you must destroy all Products in your inventory. 
+D. Effect of Termination. Upon any termination, the Simul Licences will automatically terminate, you may no longer exercise any of the rights granted to you by the Simul Licences, and you must destroy all copies of the Licensed Product in your possession.
 
 E. No Refunds 
 
@@ -175,7 +167,7 @@ You and Simul are independent contractors and this Agreement will not be constru
 
 22. Amendments of this Agreement
 
-Simul may issue an amended Agreement at any time in its discretion by providing notice to you or by providing you with digital access to the amended Agreement when you next log in to your Account, or download additional Content or new Versions. You are not required to accept the amended Agreement. However, in order to continue accessing your Account or to download or use additional Content or new Versions, you must accept the amended Agreement. By logging in to your Account, or downloading or using additional Content or a new Version, you hereby agree to be bound by the amended Agreement then most recently issued by Simul. If you do not accept the amended Agreement, you may not log in to your Account, download or use additional Content, or download or use any new Version that is made available by Simul contemporaneously with or after the issuance of that amended Agreement. This will not terminate your Licence for the Licensed Product that you downloaded prior to the issuance of the amended Agreement. If you are an organization, acceptance of an amended Agreement by any of your Users will be binding on you.
+Simul may issue an amended Agreement at any time in its discretion by providing notice to you or by providing you with digital access to the amended Agreement when you next log in to your Account, or download additional Examples or new Versions. You are not required to accept the amended Agreement. However, in order to continue accessing your Account or to download or use additional Examples or new Versions, you must accept the amended Agreement. By logging in to your Account, or downloading or using additional Examples or a new Version, you hereby agree to be bound by the amended Agreement then most recently issued by Simul. If you do not accept the amended Agreement, you may not log in to your Account, download or use additional Examples, or download or use any new Version that is made available by Simul contemporaneously with or after the issuance of that amended Agreement. This will not terminate your Licence for the Licensed Product that you downloaded prior to the issuance of the amended Agreement. If you are an organization, acceptance of an amended Agreement by any of your Users will be binding on you.
 
 23. Notices
 
@@ -183,7 +175,7 @@ Where this Agreement calls for notice from Simul, including written notice, Simu
 
 24. No Assignment
 
-You may not, without the prior written consent of Simul, assign, transfer, charge, or sub-contract all or any of your rights or obligations under this Agreement, and any attempt without that consent will be null and void. You also may not transfer your Account. Simul may at any time assign, transfer, charge, or sub-contract all or any of its rights or obligations under this Agreement. For clarity, you are not prohibited by Simul from assigning or transferring your rights in your Product, other than the trueSKY Code, Content, and Contributions. Third Party Software assignment and transfer is governed by the terms of the applicable Licences.
+You may not, without the prior written consent of Simul, assign, transfer, charge, or sub-contract all or any of your rights or obligations under this Agreement, and any attempt without that consent will be null and void. You also may not transfer your Account. Simul may at any time assign, transfer, charge, or sub-contract all or any of its rights or obligations under this Agreement. For clarity, you are not prohibited by Simul from assigning or transferring your rights in your Content. Third Party Software assignment and transfer is governed by the terms of the applicable Licences.
 
 
 26. Miscellaneous
