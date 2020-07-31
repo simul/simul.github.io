@@ -7,6 +7,10 @@ weight: 120
 
 Version 4.3
 ---
+Thu 30 Jul : Fix for find constellation and points stars. Re-enabled RenderOverlays().  
+Wed 29 Jul : The rain's velocity is directed by the CloudLayer's wind parameters.  
+Wed 29 Jul : Small Fix  
+Wed 29 Jul : Removed Standalone UI from Engine + removing moon functionality  
 Fri 24 Jul : Doc Sidebar Update  
 Fri 24 Jul : Update to IG Licence Agreement  
 Fri 24 Jul : Docs - Added tutorial videos to relevant Categories - Buoyancy page added - Attempted fixes to Indie licences directing to incorrect page and 404 errors. Attempted fix to IG licencing being a 404, Updated links within FAQ  
@@ -103,9 +107,5 @@ Tue 21 Apr : Change Aurora Intensity Map Size. Moved some shader functions
 Tue 21 Apr : fix debug DebugOverlays conflict. Multiple render targets are no longer required. Added Depth testing(forward/reverse/MSAA).  
 Fri 17 Apr : Do git submodule init if Platform submodule is not detected.  
 Thu 09 Apr : Minor fixes.  
-Thu 09 Apr : Fix warning. Increased intensityMap size to 1024.  
-Wed 08 Apr : Shader paths for internal builds.  
-Thu 02 Apr : Fix for water faces being drawn backwards, small improvement for reflection setting performance  
-Thu 02 Apr : Added debug output to Sequencer  
 
 <hr>

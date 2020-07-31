@@ -19,13 +19,13 @@ Functions
 | ID3D11UnorderedAccessView * | [AsD3D11UnorderedAccessView](#AsD3D11UnorderedAccessView)(int, int) |
 | sce::Gnm::Texture * | [AsGnmTexture](#AsGnmTexture)(simul::crossplatform::ShaderResourceType, int, int) |
 | void | [ClearDepthStencil](#ClearDepthStencil)(simul::crossplatform::DeviceContext deviceContext, float, int) |
-| void | [ClearFence](#ClearFence)() |
+| void | [ClearFence](#ClearFence)(simul::crossplatform::DeviceContext deviceContext) |
 | void | [deactivateRenderTarget](#deactivateRenderTarget)(simul::crossplatform::DeviceContext deviceContext) |
 | bool | [ensureTexture2DSizeAndFormat](#ensureTexture2DSizeAndFormat)(simul::crossplatform::RenderPlatform renderPlatform, int w, int l, simul::crossplatform::PixelFormat f, bool computable, bool rendertarget, bool depthstencil, int num_samples, int aa_quality, bool wrap, vec4 clear, float clearDepth, uint clearStencil) |
 | bool | [ensureTexture3DSizeAndFormat](#ensureTexture3DSizeAndFormat)(simul::crossplatform::RenderPlatform renderPlatform, int w, int l, int d, simul::crossplatform::PixelFormat frmt, bool computable, int mips, bool rendertargets) |
 | bool | [ensureTextureArraySizeAndFormat](#ensureTextureArraySizeAndFormat)(simul::crossplatform::RenderPlatform renderPlatform, int w, int l, int num, int mips, simul::crossplatform::PixelFormat f, bool computable, bool rendertarget, bool cubemap) |
 | void | [GenerateMips](#GenerateMips)(simul::crossplatform::DeviceContext deviceContext) |
-| unsigned long long | [GetFence](#GetFence)() |
+| unsigned long long | [GetFence](#GetFence)(simul::crossplatform::DeviceContext) |
 | simul::crossplatform::PixelFormat | [GetFormat](#GetFormat)() |
 | int | [GetSampleCount](#GetSampleCount)() |
 | void | [InitFromExternalTexture2D](#InitFromExternalTexture2D)(simul::crossplatform::RenderPlatform renderPlatform, void t, void srv, int w, int l, simul::crossplatform::PixelFormat f, bool make_rt, bool setDepthStencil, bool need_srv, int numOfSamples) |
@@ -35,7 +35,7 @@ Functions
 | void | [MoveToSlowRAM](#MoveToSlowRAM)() |
 | int | [NumFaces](#NumFaces)() |
 | void | [RestoreExternalTextureState](#RestoreExternalTextureState)(simul::crossplatform::DeviceContext) |
-| void | [SetFence](#SetFence)(unsigned long long) |
+| void | [SetFence](#SetFence)(simul::crossplatform::DeviceContext, unsigned long long) |
 | void | [setTexels](#setTexels)(simul::crossplatform::DeviceContext deviceContext, void src, int texel_index, int num_texels) |
 | void | [SetUnfenceable](#SetUnfenceable)(bool v) |
 | void | [StoreExternalState](#StoreExternalState)(simul::crossplatform::ResourceState) |
@@ -63,7 +63,7 @@ Returns the GnmTexture specified by layer,mip. Default values of -1 mean "all".
 ### void ClearDepthStencil(simul::crossplatform::DeviceContext deviceContext, float, int)
 Clear the depth stencil
 <a name="ClearFence"></a>
-### void ClearFence()
+### void ClearFence(simul::crossplatform::DeviceContext deviceContext)
 Clear the fence: this texture is ok to use now.
 <a name="deactivateRenderTarget"></a>
 ### void deactivateRenderTarget(simul::crossplatform::DeviceContext deviceContext)
@@ -81,7 +81,7 @@ Initialize as an array texture if necessary. Returns true if the texture was ini
 ### void GenerateMips(simul::crossplatform::DeviceContext deviceContext)
 Generate the mipmaps automatically.
 <a name="GetFence"></a>
-### unsigned long long GetFence()
+### unsigned long long GetFence(simul::crossplatform::DeviceContext)
 Get the current fence on this texture; it should not be used until the API has passed this fence.
 <a name="GetFormat"></a>
 ### simul::crossplatform::PixelFormat GetFormat()
@@ -114,7 +114,7 @@ The number of "faces": either equal to the array size, or in the case of a cubem
 ### void RestoreExternalTextureState(simul::crossplatform::DeviceContext)
 For API's that care about Resource State, aka Layout, restore the state internally.
 <a name="SetFence"></a>
-### void SetFence(unsigned long long)
+### void SetFence(simul::crossplatform::DeviceContext, unsigned long long)
 Set the fence on this texture: it cannot be used until the fence has been triggered by the rendering API.
 <a name="setTexels"></a>
 ### void setTexels(simul::crossplatform::DeviceContext deviceContext, void src, int texel_index, int num_texels)

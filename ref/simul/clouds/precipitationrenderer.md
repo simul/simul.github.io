@@ -27,6 +27,7 @@ Functions
 | void | [SetRainDepthTextureScale](#SetRainDepthTextureScale)(float s) |
 | void | [SetRandomTexture3D](#SetRandomTexture3D)(simul::crossplatform::Texture texture) |
 | void | [SetWind](#SetWind)(float speed, float heading_degrees) |
+| void | [SetWind](#SetWind)(vec3 wind_direction) |
 
 
 Functions
@@ -72,4 +73,7 @@ Set the scale of the rain depth texture to normalize it to [0,1]
 Provide a random 3D texture. This is set externally so the texture can be shared.
 <a name="SetWind"></a>
 ### void SetWind(float speed, float heading_degrees)
+Set the wind velocity.
+<a name="SetWind"></a>
+### void SetWind(vec3 wind_direction)
 Set the wind velocity.
