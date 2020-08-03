@@ -7,6 +7,8 @@ weight: 120
 
 Version 4.3
 ---
+Sun 02 Aug : Fix debug dll deploy. Remove unwanted Sample GDK reference.  
+Sun 02 Aug : Fix non-compiling shader function due to mismatched parens.  
 Thu 30 Jul : Fix for find constellation and points stars. Re-enabled RenderOverlays().  
 Wed 29 Jul : The rain's velocity is directed by the CloudLayer's wind parameters.  
 Wed 29 Jul : Small Fix  
@@ -105,7 +107,5 @@ Fri 24 Apr : Fix for Linux build.
 Wed 22 Apr : Added Auroras to trueSKY 4.3. Minor adjustment to aurora rendering.  
 Tue 21 Apr : Change Aurora Intensity Map Size. Moved some shader functions  
 Tue 21 Apr : fix debug DebugOverlays conflict. Multiple render targets are no longer required. Added Depth testing(forward/reverse/MSAA).  
-Fri 17 Apr : Do git submodule init if Platform submodule is not detected.  
-Thu 09 Apr : Minor fixes.  
 
 <hr>
