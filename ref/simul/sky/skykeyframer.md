@@ -17,7 +17,6 @@ Functions
 
 |  | [SkyKeyframer](#SkyKeyframer)(simul::base::MemoryInterface mem, int num_elev, int num_dist, float max_dist_km) |
 | void | [CalcSunIrradianceAtEarth](#CalcSunIrradianceAtEarth)() |
-| void | [ClearHighlightConstellations](#ClearHighlightConstellations)() |
 | void | [DaytimeToClockTime](#DaytimeToClockTime)(float t, int d, int h, int m, int s, int ms) |
 | void | [DeleteKeyframe](#DeleteKeyframe)(int i) |
 | float | [GetAltitudeTexCoord](#GetAltitudeTexCoord)(float h_km) |
@@ -26,7 +25,6 @@ Functions
 | vec3 | [GetGeocentricDirectionToMoon](#GetGeocentricDirectionToMoon)(simul::sky::uid u) |
 | void | [GetGpuSkyParameters](#GetGpuSkyParameters)(simul::sky::GpuSkyParameters p, simul::sky::GpuSkyAtmosphereParameters a, simul::sky::GpuSkyInfraredParameters ir, int index) |
 | void | [GetGpuSkyParameters](#GetGpuSkyParameters)(simul::sky::GpuSkyParameters p, simul::sky::GpuSkyAtmosphereParameters a, simul::sky::GpuSkyInfraredParameters ir, simul::sky::SkyKeyframe K, float daytime, float complete) |
-| std::set  const | [GetHighlightConstellations](#GetHighlightConstellations)() |
 | float | [GetHorizonElevation](#GetHorizonElevation)(float h_km) |
 | int | [GetInt](#GetInt)(char name, simul::base::Variant params) |
 | simul::sky::SkyKeyframe * | [GetInterpolatedKeyframe](#GetInterpolatedKeyframe)() |
@@ -36,7 +34,6 @@ Functions
 | unsigned int | [GetSubdivisionChecksum](#GetSubdivisionChecksum)() |
 | bool | [HasFloat](#HasFloat)(char name) |
 | bool | [HasInt](#HasInt)(char name) |
-| void | [HighlightConstellation](#HighlightConstellation)(char) |
 | void | [OverrideMoonDirection](#OverrideMoonDirection)(float az, float el) |
 | void | [OverrideSunDirection](#OverrideSunDirection)(float az, float el) |
 | void | [Set](#Set)(char name, simul::base::Variant params) |
@@ -44,7 +41,6 @@ Functions
 | void | [SetInt](#SetInt)(char name, int val) |
 | void | [SetStartDate](#SetStartDate)(int y, int m, int d) |
 | void | [SetUniformKeyframes](#SetUniformKeyframes)(int Steps, float range) |
-| void | [UnHighlightConstellation](#UnHighlightConstellation)(char) |
 | void | [Update](#Update)() |
 | void | [EnsureSunAndMoonValidity](#EnsureSunAndMoonValidity)(simul::sky::SkyKeyframe K1) |
 
@@ -66,9 +62,6 @@ e.g.
 <a name="CalcSunIrradianceAtEarth"></a>
 ### void CalcSunIrradianceAtEarth()
 Calculate SunIrradiance using the solar irradiance tables outside Earth's atmosphere, based on ColourWavelengthsNm.
-<a name="ClearHighlightConstellations"></a>
-### void ClearHighlightConstellations()
-Clear the highlighted constellations
 <a name="DaytimeToClockTime"></a>
 ### void DaytimeToClockTime(float t, int d, int h, int m, int s, int ms)
 Convert a floating-point daytime into hour, minute, second and milliseconds.
@@ -93,9 +86,6 @@ Get the GPU sky parameters corresponding to the given subdivision triplet index,
 <a name="GetGpuSkyParameters"></a>
 ### void GetGpuSkyParameters(simul::sky::GpuSkyParameters p, simul::sky::GpuSkyAtmosphereParameters a, simul::sky::GpuSkyInfraredParameters ir, simul::sky::SkyKeyframe K, float daytime, float complete)
 Get the GPU sky parameters corresponding to the given keyframe at the stated time.
-<a name="GetHighlightConstellations"></a>
-### std::set  const GetHighlightConstellations()
-Get the set of highlighted constellations
 <a name="GetHorizonElevation"></a>
 ### float GetHorizonElevation(float h_km)
 The elevation of the horizon at this altitude
@@ -164,9 +154,6 @@ These are the properties the SkyKeyframer has:
 - numColourDistances
 - AutomaticSunPosition
 
-<a name="HighlightConstellation"></a>
-### void HighlightConstellation(char)
-Highlight the named constellation in debug views:
 <a name="OverrideMoonDirection"></a>
 ### void OverrideMoonDirection(float az, float el)
 Set the current direction of the moon by it's Azimuth and Elevation
@@ -188,9 +175,6 @@ Set the date for time=0.
 <a name="SetUniformKeyframes"></a>
 ### void SetUniformKeyframes(int Steps, float range)
 Create a number of evenly spaced keyframes.
-<a name="UnHighlightConstellation"></a>
-### void UnHighlightConstellation(char)
-Remove the named constellation from the highlighted list
 <a name="Update"></a>
 ### void Update()
 Per-frame update call, this function updates the interpolation and the tables.

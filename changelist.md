@@ -7,6 +7,8 @@ weight: 120
 
 Version 4.3
 ---
+Wed 05 Aug : Added SetShowConstellationControls() to SkyEditWidget. Default is to disable constellation in plug-in.  
+Wed 05 Aug : UE4 HighlightConstellation UI. HighlightConstellation is now static within BaseSkyRenderer (SkyKeyframer version is commented out). PluginTrueSkyRenderer::Get() checks CloudRenderingOptions enums to set CloudLayer wind direction from UE4.  
 Sun 02 Aug : Fix debug dll deploy. Remove unwanted Sample GDK reference.  
 Sun 02 Aug : Fix non-compiling shader function due to mismatched parens.  
 Thu 30 Jul : Fix for find constellation and points stars. Re-enabled RenderOverlays().  
@@ -105,7 +107,5 @@ Fri 24 Apr : Amended unused private field in Aurora.cpp
 Fri 24 Apr : Remove API _stricmp().  
 Fri 24 Apr : Fix for Linux build.  
 Wed 22 Apr : Added Auroras to trueSKY 4.3. Minor adjustment to aurora rendering.  
-Tue 21 Apr : Change Aurora Intensity Map Size. Moved some shader functions  
-Tue 21 Apr : fix debug DebugOverlays conflict. Multiple render targets are no longer required. Added Depth testing(forward/reverse/MSAA).  
 
 <hr>
