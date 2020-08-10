@@ -7,6 +7,7 @@ weight: 120
 
 Version 4.3
 ---
+Mon 10 Aug : Added Multi-Moon Explanation Page - Sky page rewording  
 Mon 10 Aug : Removed Slack link from index page and added legacy note to previous moon setup tutorial.  
 Mon 10 Aug : Full path for SIMUL_SOURCE_BUILD check.  
 Sat 08 Aug : Remove version.properties - this duplicates release.properties.  
@@ -106,6 +107,5 @@ Sat 25 Apr : Use ThisPlatform/Direct3D12.h.
 Sat 25 Apr : Use ThisPlatform/Direct3D12.h.  
 Fri 24 Apr : Fix Xbox build.  
 Fri 24 Apr : Fix water particle shader error.  
-Fri 24 Apr : Fix for Linux member initialisation order error.  
 
 <hr>
