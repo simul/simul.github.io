@@ -49,8 +49,6 @@ Useful External Links
 
 * [**Check out our YouTube Channel**](https://www.youtube.com/user/simulsoftware){:target="_blank"}       - You can find tutorials and showcases here 
 
-* [**Join our Slack Channel**](https://truesky.slack.com){:target="_blank"}                                                             - Slack is where our community of developers live. Support is available here, from common issues to example projects. Request access through contact@simul.co
-
 * [**Contact Us**](mailto:contact@simul.co){:target="_blank"}                                                                                   - Let us know if you're having a particular issue or think we could improve a certain aspects. 
 
 
