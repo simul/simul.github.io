@@ -7,6 +7,7 @@ weight: 120
 
 Version 4.3
 ---
+Tue 11 Aug : Cleaned up and fixed moons page formatting = moons index added - attempted fix for buoyancy index redirect 404  
 Mon 10 Aug : Added Multi-Moon Explanation Page - Sky page rewording  
 Mon 10 Aug : Removed Slack link from index page and added legacy note to previous moon setup tutorial.  
 Mon 10 Aug : Full path for SIMUL_SOURCE_BUILD check.  
@@ -106,6 +107,5 @@ Sat 25 Apr : Don't include GFX.hlsl
 Sat 25 Apr : Use ThisPlatform/Direct3D12.h.  
 Sat 25 Apr : Use ThisPlatform/Direct3D12.h.  
 Fri 24 Apr : Fix Xbox build.  
-Fri 24 Apr : Fix water particle shader error.  
 
 <hr>

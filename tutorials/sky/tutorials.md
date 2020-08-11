@@ -82,7 +82,7 @@ Once this is done you can use the slider below the checkbox to assign the height
 Moon Texture
 ---------------
 
-You can apply a png to the moon to make it whatever object you like, and will go through phases based on the sun's position. This is a legacy setting - and only functions within the 4.1a and 4.2 versions of the plugin. We will soon have documentation for the new moon systems that come with the 4.2a plugin.
+You can apply a png to the moon to make it whatever object you like, and will go through phases based on the sun's position. This is a legacy setting - and only functions within the 4.1a. Documentation for 4.2a's multimoon setup can be found [here](moons)
 
 
 <div class="video-wrapper">
