@@ -7,6 +7,7 @@ weight: 120
 
 Version 4.3
 ---
+Tue 11 Aug : Moons page - added classes - bold fix - unity link back to legacy  
 Tue 11 Aug : Cleaned up and fixed moons page formatting = moons index added - attempted fix for buoyancy index redirect 404  
 Mon 10 Aug : Added Multi-Moon Explanation Page - Sky page rewording  
 Mon 10 Aug : Removed Slack link from index page and added legacy note to previous moon setup tutorial.  
@@ -106,6 +107,5 @@ Sat 25 Apr : Remove extraneous include.
 Sat 25 Apr : Don't include GFX.hlsl  
 Sat 25 Apr : Use ThisPlatform/Direct3D12.h.  
 Sat 25 Apr : Use ThisPlatform/Direct3D12.h.  
-Fri 24 Apr : Fix Xbox build.  
 
 <hr>
