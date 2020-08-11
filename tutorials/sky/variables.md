@@ -15,7 +15,7 @@ Sky
 Variable                                                                                |       Definition                                                                                                                                                                                                                                              |       Value
 --------------                                                                  |--------------                                                                                                                                                                                                                                         |--------------
 Sea Level Deg. C                                                                |For infra-red rendering.                                                                                                                                                                                                                       |-273.0 to 1000
-Zenith                                                                                  |Colour of the Zenith (Sky above you). See [Sky Colours](tutorials.html#sky-colours)                                                                                                            |RGB 
+Zenith                                                                                  |Colour of the Zenith (Sky above you). See [Sky Colours](tutorials.html#sky-colours)                                                                                            |RGB 
 Horizon                                                                                 |Colour of the Horizon (Sky around you). See [Sky Colours]                                                                                                                                                      |RGB 
 
 
@@ -64,7 +64,7 @@ Variable                                                                        
 Light Wavelength (R,G,B)                                                |Wavelength of the light from the sun.                                                                                                                                                                                          |0 to 1000
 Irradiance                                                                              |Irradiance of the Sun, in Watts/m2/nm. XYZ=RGB.                                                                                                                                                                        |0 to 50
 Diameter                                                                                |Size of sun’s radius in degrees                                                                                                                                                                                                      |0.0 to 3600.0
-Link Keyframe time and daytime                                  |See [Link Keyframe Time](tutorials.html)                                                                                                                                                                                               |Bool
+Link Keyframe time and daytime                                  |See [Link Keyframe Time](tutorials.html)                                                                                                                                                                                       |Bool
 Time Zone                                                                               |Time Zone based on Greenwich Mean Time (GMT).                                                                                                                                                                          |Between -12.0 and 12.0
 Start Date                                                                              |For calculating position of sun/moon. Where 01/01/2000 = 0 , -1 = 31/12/1999, 01/01/2016 = 5844(format DD:MM:YYYY).                            |-100000 to 100000
 
@@ -75,9 +75,9 @@ Sun Multiplier                                                                  
 Max Sun Radiance                                                                |Maximum Sun radiance produced.                                                                                                                                                                                                         |0 to 1000000.0
 Adjust Sun Radiance                                                             |If enabled, adjusting the Sun radiance will cause the sun to automatically scale to keep spectral irradiance the same.                         |Bool
 
-Moon
+Moon (Legacy 4.1 System)
 =======
-The moon has a customisable texture, so you can use it to make some interesting effects!
+The moon has a customisable texture, so you can use it to make some interesting effects! This is a legacy system found in 4.1a and 4.2 versions of the plugin)
 
 {:.keyframe}
 Variable                                                                                |       Definition                                                                                                                                                                                                                                              |       Value
@@ -97,6 +97,33 @@ Variable                                                                        
 --------------                                                                  |--------------                                                                                                                                                                                                                                         |--------------
 Moon texture                                                                    |Texture to use for the moon. trueSKY has a moon texture by default                                                                                                                             |.png
 Moon Multiplier                                                                 |Brightness multiplier for the moon                                                                                                                                                                                             |0.0 to 10.0
+
+
+Moon (Multi Moon - 4.2a)
+=======
+This system is found in unreal 4.2a versions and allows for multiple moons and extensive customisation of both the moons and the orbital paths. Find more information and indepth descriptions go [here](moons)
+
+{:.object}
+Variable                                                                                |       Definition                                                                                                                                                                                                                                              |       Value
+--------------                                                                  |--------------                                                                                                                                                                                                                                         |--------------
+Name                                                                                    |Allows for assigning a name for each moon within the scene. This help differentiate between multiple moons                                                     |text
+Texture                                                                                 |2D Texture to use for the moon.                                                                                                                                                                                                        |.png
+Name                                                                                    |Allows for assigning a name for each moon within the scene. This help differentiate between multiple moons                                                     |text
+Colour                                                                                  |Affects the texture of the moon and the light that is reflected off of it.                                                                                                             |RGB
+Use Preset                                                                              |Allows you to use one of the preset moon templates. Checking this will cause all your currently setting to be overridden.                      |Bool
+Moon Preset                                                                             |Changes all of the settings within the moon array element to a series of preassigned values.                                                                           |Dropdown
+Albedo                                                                                  |Controls the proportion of light that is reflected by the moon.                                                                                                                                        |0.0 to 10.0
+Longitude of the Acending Node                                  |The points in which the moon crosses the plane of the equator.                                                                                                                                         |0.0 to 360.0
+Longitude of Ascending Node Rate                                |The amount the ascending node increases each day (24 hour period)                                                                                                                                      |0.0 to 10.0
+Inclination                                                                             |This controls the tilt angle of the orbit                                                                                                                                                                                      |0.0 to 360.0
+Argument of Pericentre                                                  |The closest point of that the moon is to the Earth's surface                                                                                                                                           |0.0 to 360.0
+Argument of Pericentre Rate                                             |How much the argument of the pericentre changes per day                                                                                                                                                        |0.0 to 10.0
+Mean Distance                                                                   |The mean (average) distance the Moon is from the center of the Earth                                                                                                                           |0.0 to 100.0
+Eccentricity                                                                    |Controls how elliptical the orbit of the Moon will be around the Earth                                                                                                                         |0.0 to 1.0
+Mean Anomaly                                                                    |The position that the moon will be around its orbit at midnight of each day                                                                                                            |0.0 to 360.0
+Mean Anomaly Rate                                                               |Controls how much the mean anomaly changes each day                                                                                                                                                            |0.0 to 10.0
+Radius Arc Minutes                                                              |Controls the apparent size of the moon when visualized from the surface of the earth                                                                                           |0.0 to 1000.0
+
 
 
 Stars

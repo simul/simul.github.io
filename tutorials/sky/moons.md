@@ -37,15 +37,19 @@ Each of the settings functions as follows:
 ----------------------------------------
 
 
-<b> Use Presets -</b> This check box allows you to use one of the preset moon templates we have made. Checking this will cause all your currently setting to be overridden by the preset, so ensure to take care before pressing it.
 
-<b> Moon Preset -</b> This drop down only becomes available for use when the above "use presets" setting is checked, and changes all of the settings within the moon array element to a series of preassigned values. Helpful to revert settings back to default.
 
 <b> Name -</b> This allows for assigning a name for each moon within the scene. Names are important to help you differentiate between moons. This is also used within some of the trueSKY functionality, and as such users should ensure not to name moons the same thing as this may cause conflicts and undesired results. We have blueprints to get a moon by name.
 
 <b> Texture - </b> This allows for assigning of a 2d texture to represent the moon it is assigned to. It follows the same setup as the legacy iteration of moon texture implementation. This means that the texture will show accurate moon phases Dependant on the date and positioning in relation to the sun.
 
 <b> Colour - </b> The colour will affect not only the texture of the moon, but the light that is reflected off of it. A blend of colours of all the moons currently above the horizon will be applied to the directional light. 
+
+<b> Use Presets -</b> This check box allows you to use one of the preset moon templates we have made. Checking this will cause all your currently setting to be overridden by the preset, so ensure to take care before pressing it.
+
+<b> Moon Preset -</b> This drop down only becomes available for use when the above "use presets" setting is checked, and changes all of the settings within the moon array element to a series of preassigned values. Helpful to revert settings back to default.
+
+<b> Albeido - </b> Controls the proportion of light that is reflected by the moon.
 
 <b> Longitude of Ascending Node - </b> This determines the points in which the moon crosses the plane of the equator (due to the moon having a tilted orbit around the earth). Put in slightly simpler terms, this determines the "x" axis is located for the tilted orbit, from the equator. This is referenced in the diagram below for a more visual representation.
 
@@ -57,7 +61,7 @@ Each of the settings functions as follows:
 
 <b> Argument of Pericentre Rate - </b> This refers to how much the argument of the pericentre changes per day.
 
-<b> Mean Distance - </b> The mean (average) distance the moon is from the center of the moon.
+<b> Mean Distance - </b> The mean (average) distance the moon is from the center of the earth.
 
 <b> Eccentricity - </b> This controls how elliptical the orbit of the moon will be around the earth. 0 will allow for a perfectly circular orbit, 0.5 will be a slight oval. 
 
