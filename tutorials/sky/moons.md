@@ -61,7 +61,7 @@ Each of the settings functions as follows:
 
 <b> Argument of Pericentre Rate - </b> This refers to how much the argument of the pericentre changes per day.
 
-<b> Mean Distance - </b> The mean (average) distance the moon is from the center of the earth.
+<b> Mean Distance - </b> The mean (average) distance the Moon is from the center of the Earth.
 
 <b> Eccentricity - </b> This controls how elliptical the orbit of the moon will be around the earth. 0 will allow for a perfectly circular orbit, 0.5 will be a slight oval. 
 

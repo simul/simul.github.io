@@ -7,6 +7,7 @@ weight: 120
 
 Version 4.3
 ---
+Fri 14 Aug : Docs - Added water probe documentation page - altered / standardised fullstops on multiple pages  
 Tue 11 Aug : Docs - Added multi-moon variables to variables page. Moons page - minor typo fix  
 Tue 11 Aug : Moons page - added classes - bold fix - unity link back to legacy  
 Tue 11 Aug : Cleaned up and fixed moons page formatting = moons index added - attempted fix for buoyancy index redirect 404  
@@ -106,6 +107,5 @@ Sun 26 Apr : Tools\bin optional in Setup.
 Sun 26 Apr : Add test sample scripts.  
 Sat 25 Apr : Remove extraneous include.  
 Sat 25 Apr : Don't include GFX.hlsl  
-Sat 25 Apr : Use ThisPlatform/Direct3D12.h.  
 
 <hr>

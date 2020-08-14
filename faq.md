@@ -132,7 +132,7 @@ Post process effects can cause issues with trueSKY. Try lowering the intensity o
 
 The sun/moon is too big/small
 ---------------------------------
-Try altering the sun and/or moon diameter setting in the sky layer, or if you have "Adjust Sun Radius" ticked on the trueSKY object, then adjusting the radiance of the sun will change it's radius. 
+Try altering the sun and/or moon diameter setting in the sky layer, or if you have "Adjust Sun Radius" ticked on the trueSKY object, then adjusting the radiance of the sun will change it's radius. In 4.2a versions, altering the Radius Arc Minutes will change the size of the Moon as visualised from the Earths surface, and can be found in the sequence actor.
 
 
 Lighting
