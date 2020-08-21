@@ -53,8 +53,7 @@ Functions
 | void | [MakeInvWorldViewProjMatrix](#MakeInvWorldViewProjMatrix)(float ivp, float world, float v, float p) |
 | void | [MakeViewProjMatrix](#MakeViewProjMatrix)(float vp, float view, float proj) |
 | void | [MakeWorldViewProjMatrix](#MakeWorldViewProjMatrix)(float wvp, float world, float view, float proj) |
-| simul::crossplatform::Quaterniond | [TransformOrientationByOffsetXY](#TransformOrientationByOffsetXY)(simul::crossplatform::Quaterniond origin, vec2 local_offset_radians) |
-| vec3 | [TransformPosition](#TransformPosition)(simul::crossplatform::Quaterniond old_origin, simul::crossplatform::Quaterniond new_origin, vec3 old_pos, double radius) |
+| void | [Multiply](#Multiply)(vec3d ret, simul::crossplatform::Quaterniond q, vec3d v) |
 | vec4 | [ViewportToTexCoordsXYWH](#ViewportToTexCoordsXYWH)(simul::crossplatform::Viewport vi, simul::crossplatform::Texture t) |
 | vec4 | [ViewportToTexCoordsXYWH](#ViewportToTexCoordsXYWH)(int4 vi, simul::crossplatform::Texture t) |
 
@@ -91,12 +90,9 @@ Make a viewProj matrix, which converts worldspace into clip position.
 <a name="MakeWorldViewProjMatrix"></a>
 ### void MakeWorldViewProjMatrix(float wvp, float world, float view, float proj)
 Make a worldViewProj matrix.
-<a name="TransformOrientationByOffsetXY"></a>
-### simul::crossplatform::Quaterniond TransformOrientationByOffsetXY(simul::crossplatform::Quaterniond origin, vec2 local_offset_radians)
-Rotate an orientation by a specified offset in its local x and y axes.
-<a name="TransformPosition"></a>
-### vec3 TransformPosition(simul::crossplatform::Quaterniond old_origin, simul::crossplatform::Quaterniond new_origin, vec3 old_pos, double radius)
-Transform a position in a previous frame of reference into a new frame. Assumes Earth radius 6378km, origin at sea level.
+<a name="Multiply"></a>
+### void Multiply(vec3d ret, simul::crossplatform::Quaterniond q, vec3d v)
+Multiply, or rotate, vec3d v by q, return the value in vec3d ret. v and ret must have size 3.
 <a name="ViewportToTexCoordsXYWH"></a>
 ### vec4 ViewportToTexCoordsXYWH(simul::crossplatform::Viewport vi, simul::crossplatform::Texture t)
 Given a viewport struct and a texture, get the texture coordinates that viewport represents within the texture.

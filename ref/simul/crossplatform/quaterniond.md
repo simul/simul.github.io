@@ -3,35 +3,25 @@ title: Quaterniond
 layout: reference
 weight: 0
 ---
-class Quaterniond
+typedef Quaterniond
 ===
 
-| Include: | Sky/BaseKeyframer.h |
+| Include: | Platform/CrossPlatform/Quaterniond.h |
 
 
 
 Functions
 ---
 
-| simul::crossplatform::Quaterniond | [operator!](#operator!)() |
-| vec3d | [operator/](#operator/)(vec3d vec) |
-| simul::crossplatform::Quaterniond  & | [operator=](#operator=)(simul::crossplatform::Quaterniond q) |
+| simul::crossplatform::Quaterniond | [TransformOrientationByOffsetXY](#TransformOrientationByOffsetXY)(simul::crossplatform::Quaterniond origin, vec2 local_offset_radians) |
+| vec3 | [TransformPosition](#TransformPosition)(simul::crossplatform::Quaterniond old_origin, simul::crossplatform::Quaterniond new_origin, vec3 old_pos, double radius) |
 
 
 Functions
 ---
-<a name="operator!"></a>
-### simul::crossplatform::Quaterniond operator!()
-The inverse, or opposite of the Quaterniond, representing an equal rotation
-in the opposite direction.
-<a name="operator/"></a>
-### vec3d operator/(vec3d vec)
-Equivalent to (!this)* vec
-<a name="operator="></a>
-### simul::crossplatform::Quaterniond  & operator=(simul::crossplatform::Quaterniond q)
-Assignment operator. Set this Quaterniond equal to q.
-
-Fields
----
-
-**x**  Quaterniond class to represent rotations.
+<a name="TransformOrientationByOffsetXY"></a>
+### simul::crossplatform::Quaterniond TransformOrientationByOffsetXY(simul::crossplatform::Quaterniond origin, vec2 local_offset_radians)
+Rotate an orientation by a specified offset in its local x and y axes.
+<a name="TransformPosition"></a>
+### vec3 TransformPosition(simul::crossplatform::Quaterniond old_origin, simul::crossplatform::Quaterniond new_origin, vec3 old_pos, double radius)
+Transform a position in a previous frame of reference into a new frame. Assumes Earth radius 6378km, origin at sea level.
