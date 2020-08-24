@@ -7,6 +7,7 @@ weight: 120
 
 Version 4.3
 ---
+Fri 21 Aug : Creating and deleting keyframes at runtime - Sun Position set in engine, Refactor of CloudWindowEditor  
 Thu 20 Aug : Fix for compile errors and some warnings.  
 Thu 20 Aug : Remove console build folders.  
 Thu 20 Aug : Fix non-compiling shader.  
@@ -24,6 +25,7 @@ Tue 11 Aug : Cleaned up and fixed moons page formatting = moons index added - at
 Mon 10 Aug : Added Multi-Moon Explanation Page - Sky page rewording  
 Mon 10 Aug : Removed Slack link from index page and added legacy note to previous moon setup tutorial.  
 Mon 10 Aug : Full path for SIMUL_SOURCE_BUILD check.  
+Sun 09 Aug : Uninitialized Variable Fix  
 Sat 08 Aug : Remove version.properties - this duplicates release.properties.  
 Sat 08 Aug : Update release.properties  
 Wed 05 Aug : Added SetShowConstellationControls() to SkyEditWidget. Default is to disable constellation in plug-in.  
@@ -105,7 +107,5 @@ Mon 08 Jun : Update To GetDependencies.bat and default .json
 Sat 06 Jun : Merge 4.3  
 Fri 05 Jun : Update to Support_Vulkan Option  
 Thu 04 Jun : Fix to batch  
-Thu 04 Jun : Build.bat file fix.  
-Thu 04 Jun : Build.bat file fix.  
 
 <hr>

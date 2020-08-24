@@ -65,6 +65,7 @@ Functions
 | int | [KeyframerGetInt](#KeyframerGetInt)(simul::sky::uid uid, char name) |
 | void | [KeyframerSetFloat](#KeyframerSetFloat)(simul::sky::uid uid, char name, float value) |
 | void | [KeyframerSetInt](#KeyframerSetInt)(simul::sky::uid uid, char name, int value) |
+| void | [KeyframerSetMapTexture](#KeyframerSetMapTexture)(simul::sky::uid uid, char PNGName) |
 | void | [KeyframeSetBool](#KeyframeSetBool)(simul::sky::uid uid, char name, bool value) |
 | void | [KeyframeSetFloat](#KeyframeSetFloat)(simul::sky::uid uid, char name, float value) |
 | void | [KeyframeSetInt](#KeyframeSetInt)(simul::sky::uid uid, char name, int value) |
@@ -260,6 +261,9 @@ Set a float value for a given keyframer
 <a name="KeyframerSetInt"></a>
 ### void KeyframerSetInt(simul::sky::uid uid, char name, int value)
 Set a int value for a given keyframer
+<a name="KeyframerSetMapTexture"></a>
+### void KeyframerSetMapTexture(simul::sky::uid uid, char PNGName)
+Sets the Map Texture of the given layer
 <a name="KeyframeSetBool"></a>
 ### void KeyframeSetBool(simul::sky::uid uid, char name, bool value)
 Set a bool value for a given keyframe

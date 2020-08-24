@@ -94,8 +94,11 @@ Functions
 | void | [StaticRenderOverlays](#StaticRenderOverlays)(void device, void pContext, void externalDepthTexture, float viewMatrix4x4, float projMatrix4x4, int view_id, void colourTarget, simul::crossplatform::Viewport viewports) |
 | int | [StaticSet](#StaticSet)(long long num, simul::base::Variant v) |
 | void | [StaticSetDebugOutputCallback](#StaticSetDebugOutputCallback)(DebugOutputCallback) |
+| int | [StaticSetExternalDynamicValues](#StaticSetExternalDynamicValues)(simul::plugin::ExternalDynamicValues D) |
+| int | [StaticSetExternalRenderValues](#StaticSetExternalRenderValues)(simul::plugin::ExternalRenderValues C) |
 | void | [StaticSetGraphicsDevice](#StaticSetGraphicsDevice)(void device, simul::crossplatform::RenderPlatformType deviceType, UnityGfxDeviceEventType eventType) |
 | void | [StaticSetGraphicsDeviceAndContext](#StaticSetGraphicsDeviceAndContext)(void device, void context, simul::crossplatform::RenderPlatformType deviceType, UnityGfxDeviceEventType eventType) |
+| void | [StaticSetKeyframerMapTexture](#StaticSetKeyframerMapTexture)(simul::sky::uid uid, char PNGName) |
 | void | [StaticSetMatrix4x4](#StaticSetMatrix4x4)(char name, float matrix4x4) |
 | void | [StaticSetMemoryInterface](#StaticSetMemoryInterface)(simul::base::MemoryInterface) |
 | void | [StaticSetPointLight](#StaticSetPointLight)(int id, pos, float min_radius, float max_radius, irradiance) |
@@ -351,12 +354,21 @@ Set the value corresponding to the given enum.
 <a name="StaticSetDebugOutputCallback"></a>
 ### void StaticSetDebugOutputCallback(DebugOutputCallback)
 Provide a function that trueSKY can use to output debug warnings, information, and errors.
+<a name="StaticSetExternalDynamicValues"></a>
+### int StaticSetExternalDynamicValues(simul::plugin::ExternalDynamicValues D)
+Set all values that can be changed at runtime
+<a name="StaticSetExternalRenderValues"></a>
+### int StaticSetExternalRenderValues(simul::plugin::ExternalRenderValues C)
+Set all values that are not recommened to update at runtime
 <a name="StaticSetGraphicsDevice"></a>
 ### void StaticSetGraphicsDevice(void device, simul::crossplatform::RenderPlatformType deviceType, UnityGfxDeviceEventType eventType)
 Device event handler.
 <a name="StaticSetGraphicsDeviceAndContext"></a>
 ### void StaticSetGraphicsDeviceAndContext(void device, void context, simul::crossplatform::RenderPlatformType deviceType, UnityGfxDeviceEventType eventType)
 Device event handler.
+<a name="StaticSetKeyframerMapTexture"></a>
+### void StaticSetKeyframerMapTexture(simul::sky::uid uid, char PNGName)
+Set the map texture of a CLoud Keyframer
 <a name="StaticSetMatrix4x4"></a>
 ### void StaticSetMatrix4x4(char name, float matrix4x4)
 Set a Matrix value.

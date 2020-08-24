@@ -18,6 +18,7 @@ Functions
 | simul::clouds::Environment * | [Create](#Create)(simul::base::MemoryInterface m) |
 | simul::clouds::CloudKeyframer * | [CreateCloudKeyframer](#CreateCloudKeyframer)(simul::base::MemoryInterface m, bool make2d, simul::sky::uid uid) |
 | void | [CreateSubObjects](#CreateSubObjects)() |
+| bool | [DeleteCloudKeyframe](#DeleteCloudKeyframe)(simul::sky::uid uid) |
 | bool | [DeleteCloudKeyframer](#DeleteCloudKeyframer)(simul::sky::uid uid) |
 | void | [Destroy](#Destroy)(simul::clouds::Environment env) |
 | simul::clouds::CloudKeyframer * | [GetCloudKeyframer](#GetCloudKeyframer)(simul::sky::uid uid) |
@@ -50,6 +51,9 @@ Override this to create a custom derived keyframer. Valid id's are anything grea
 <a name="CreateSubObjects"></a>
 ### void CreateSubObjects()
 Call this to create the keyframer sub-objects. If not called before the first Update(), it will be called from there.
+<a name="DeleteCloudKeyframe"></a>
+### bool DeleteCloudKeyframe(simul::sky::uid uid)
+Delete the specified cloud keyframe
 <a name="DeleteCloudKeyframer"></a>
 ### bool DeleteCloudKeyframer(simul::sky::uid uid)
 Delete the specified cloud layer.
