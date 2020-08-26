@@ -7,8 +7,14 @@ weight: 120
 
 Version 4.3
 ---
+Tue 25 Aug : Added extra skylight control variables for unity (Temporary)  
+Tue 25 Aug : Fix uninitialized var.  
+Tue 25 Aug : using SWAP_NOEXCEPT  
+Tue 25 Aug : SWAP_NOEXCEPT macro.  
+Tue 25 Aug : No need for explicit vec3d_to_vec3, implicit conversion in the template now.  
 Fri 21 Aug : Creating and deleting keyframes at runtime - Sun Position set in engine, Refactor of CloudWindowEditor  
 Thu 20 Aug : Fix for compile errors and some warnings.  
+Thu 20 Aug : Added extra reflections controls, fixed water surface being flipped  
 Thu 20 Aug : Remove console build folders.  
 Thu 20 Aug : Fix non-compiling shader.  
 Wed 19 Aug : Fixing bad merges.  
@@ -101,11 +107,5 @@ Wed 10 Jun : Default to NEVER_BUILD for shaders.
 Mon 08 Jun : Added 4.2a Changes  
 Mon 08 Jun : Backport Source Setup  
 Mon 08 Jun : Update ReadMe.md  
-Mon 08 Jun : Updated ReadMe  
-Mon 08 Jun : Add Cmake QT_dir Variable to CopyToTargetDir.py  
-Mon 08 Jun : Update To GetDependencies.bat and default .json  
-Sat 06 Jun : Merge 4.3  
-Fri 05 Jun : Update to Support_Vulkan Option  
-Thu 04 Jun : Fix to batch  
 
 <hr>
