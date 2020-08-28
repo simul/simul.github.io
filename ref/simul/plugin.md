@@ -73,6 +73,8 @@ Functions
 | void | [StaticRemoveWaterMaskObject](#StaticRemoveWaterMaskObject)(int ID) |
 | void | [StaticRemoveWaterParticleGenerator](#StaticRemoveWaterParticleGenerator)(int ID) |
 | void | [StaticRemoveWaterProbe](#StaticRemoveWaterProbe)(int ID) |
+| simul::sky::uid | [StaticRenderCreateCloudKeyframer](#StaticRenderCreateCloudKeyframer)(char name) |
+| simul::sky::uid | [StaticRenderDeleteCloudKeyframer](#StaticRenderDeleteCloudKeyframer)(simul::sky::uid uid) |
 | void | [StaticRenderDeleteKeyframe](#StaticRenderDeleteKeyframe)(simul::sky::uid uid) |
 | int | [StaticRenderFrame](#StaticRenderFrame)(void device, void pContext, int view_id, float viewMatrix4x4, float projMatrix4x4, void depthTexture, void colourTarget, simul::crossplatform::Viewport depthViewports, simul::crossplatform::Viewport viewports, simul::plugin::RenderStyle s, float exposure, float gamma, int framenumber, simul::crossplatform::MultiResConstants pMultiResConstants) |
 | simul::sky::uid | [StaticRenderGetKeyframeByIndex](#StaticRenderGetKeyframeByIndex)(int layer, int index) |
@@ -291,6 +293,12 @@ Remove a particle generator
 <a name="StaticRemoveWaterProbe"></a>
 ### void StaticRemoveWaterProbe(int ID)
 Remove a water probe
+<a name="StaticRenderCreateCloudKeyframer"></a>
+### simul::sky::uid StaticRenderCreateCloudKeyframer(char name)
+Create a new Cloud Keyframer
+<a name="StaticRenderDeleteCloudKeyframer"></a>
+### simul::sky::uid StaticRenderDeleteCloudKeyframer(simul::sky::uid uid)
+Delete a Cloud Keyframer
 <a name="StaticRenderDeleteKeyframe"></a>
 ### void StaticRenderDeleteKeyframe(simul::sky::uid uid)
 Delete a keyframe with ID uid

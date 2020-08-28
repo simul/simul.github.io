@@ -23,6 +23,8 @@ Functions
 | void | [CloudLineQuery](#CloudLineQuery)(int id, float startpos, float endpos, LineQueryResult res) |
 | void | [CloudSphereInteraction](#CloudSphereInteraction)(int id, float pos, float vel, float radius) |
 | bool | [CreateBoundedWaterObject](#CreateBoundedWaterObject)(uint ID, simul::math::Vector3 dimension, simul::math::Vector3 location) |
+| simul::sky::uid | [CreateCloudKeyframer](#CreateCloudKeyframer)(char name) |
+| void | [DeleteCloudKeyframer](#DeleteCloudKeyframer)(simul::sky::uid uid) |
 | void | [DeleteKeyframe](#DeleteKeyframe)(simul::sky::uid uid) |
 | void | [ExportCloudLayer](#ExportCloudLayer)(char filenameUtf8) |
 | void | [Get](#Get)(long long Enum, simul::base::Variant v) |
@@ -135,6 +137,12 @@ update a sphere that will push clouds aside.
 <a name="CreateBoundedWaterObject"></a>
 ### bool CreateBoundedWaterObject(uint ID, simul::math::Vector3 dimension, simul::math::Vector3 location)
 Create a bounded water object with a given ID
+<a name="CreateCloudKeyframer"></a>
+### simul::sky::uid CreateCloudKeyframer(char name)
+Create a New Cloud Layer
+<a name="DeleteCloudKeyframer"></a>
+### void DeleteCloudKeyframer(simul::sky::uid uid)
+Delete an existing Cloud Layer
 <a name="DeleteKeyframe"></a>
 ### void DeleteKeyframe(simul::sky::uid uid)
 Delete a keyframe with ID uid

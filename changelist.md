@@ -7,6 +7,8 @@ weight: 120
 
 Version 4.3
 ---
+Wed 26 Aug : Xbox build fix.  
+Wed 26 Aug : Allow for Global Wind Movement - Layer Creation via blueprints  
 Tue 25 Aug : Added extra skylight control variables for unity (Temporary)  
 Tue 25 Aug : Fix uninitialized var.  
 Tue 25 Aug : using SWAP_NOEXCEPT  
@@ -105,7 +107,5 @@ Wed 10 Jun : Fix to Linux Build
 Wed 10 Jun : Fix Linux build  
 Wed 10 Jun : Default to NEVER_BUILD for shaders.  
 Mon 08 Jun : Added 4.2a Changes  
-Mon 08 Jun : Backport Source Setup  
-Mon 08 Jun : Update ReadMe.md  
 
 <hr>
