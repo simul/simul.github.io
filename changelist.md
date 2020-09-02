@@ -7,6 +7,7 @@ weight: 120
 
 Version 4.3
 ---
+Mon 31 Aug : Full init of cloud texture.  
 Wed 26 Aug : Xbox build fix.  
 Wed 26 Aug : Allow for Global Wind Movement - Layer Creation via blueprints  
 Tue 25 Aug : Added extra skylight control variables for unity (Temporary)  
@@ -106,6 +107,5 @@ Wed 10 Jun : Fix nsi build.
 Wed 10 Jun : Fix to Linux Build  
 Wed 10 Jun : Fix Linux build  
 Wed 10 Jun : Default to NEVER_BUILD for shaders.  
-Mon 08 Jun : Added 4.2a Changes  
 
 <hr>
