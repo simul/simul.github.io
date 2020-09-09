@@ -7,6 +7,7 @@ weight: 120
 
 Version 4.3
 ---
+Wed 09 Sep : Fix for aurorae variables.md  
 Wed 09 Sep : Platform ptr.  
 Wed 09 Sep : Minor change to clouds.sfx  
 Wed 09 Sep : Unifying changes from 4.2a: PrecipitationGridDivisors, updated precipitation rendering with PrecipitationLayerInfo, Debug Overlays for Rain and Queries and initial change for Unity D3D12.  
@@ -106,6 +107,5 @@ Mon 15 Jun : Default for SIMUL_QT_DIR .
 Mon 15 Jun : Default for SIMUL_QT_DIR .  
 Fri 12 Jun : Update to GetDependencies.bat  
 Fri 12 Jun : fix to GetDependencies.bat  
-Fri 12 Jun : Update to extracting Zip File  
 
 <hr>

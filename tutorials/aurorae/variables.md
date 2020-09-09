@@ -18,6 +18,7 @@ Aurorae can be customised, from global position to strength and auroral colours.
 
 
 Auroral Oval Settings:
+
 {:.layer}
 Variable                                                                |       Definition                                                                                                                                                                                                                                                                      |       Value
 --------------                                                  |--------------                                                                                                                                                                                                                                                                 |--------------
@@ -29,39 +30,44 @@ Max Band                                                                |The thi
 Min Band                                                                |The thickness of the thinnest part of the auroral oval, in degrees decimal (Not currently in use).                                                                                     |0.0 to 180.0
 Show Auroral Oval in Cloud Window               |Whether trueSKY should draw the Auroral Oval on the Cloud Window view.                                                                                                                                                 |Bool
 
-Auroral Intensity Settings:
+Aurora Intensity Settings:
+
 {:.layer}
 Variable                                                                |       Definition                                                                                                                                                                                                                                                                      |       Value
 --------------                                                  |--------------                                                                                                                                                                                                                                                                 |--------------
-Aurora Electron Free Time                               |The Free Time between interactions in 1.0x10^-12 seconds. Used to calculate the atmospheric conductivity.                                                                              |1.0 to 10.0
+Aurora Electron Free Time                               |The free time between interactions in 10^-12s. Used to calculate the atmospheric conductivity.                                                                                                 |1.0 to 10.0
 Aurora Electron Volume Density                  |The number of electrons per metres cubed. Used to calculate the atmospheric conductivity.                                                                                                              |1.0x10^13 to 1.0x10^19
-Auroral Layers Intensity                                |A simple output multipler for general brightness control                                                                                                                                                                               |0.0 to 10.0
+Auroral Layers Intensity                                |A simple output multipler for general brightness control.                                                                                                                                                                              |0.0 to 10.0
 
 Auroral Layer Settings:
+
 {:.layer}
 Variable                                                                |       Definition                                                                                                                                                                                                                                                                      |       Value
 --------------                                                  |--------------                                                                                                                                                                                                                                                                 |--------------
-Base                                                                    |Base of the Auroral Layer in km.                                                                                                                                                                                                                               |0.0 to 500.0
-Top                                                                             |Top of the Auroral Layer in km.                                                                                                                                                                                                                                |0.0 to 500.0
+Base                                                                    |Base of the auroral layer in km.                                                                                                                                                                                                                               |0.0 to 500.0
+Top                                                                             |Top of the auroral layer in km.                                                                                                                                                                                                                                |0.0 to 500.0
 Emitted Wavelength (nm)                                 |Wavelength of the emitted light in nm.                                                                                                                                                                                                                 |400 to 700
 Strength (kR)                                                   |Strength of the Emitted Light in kR (KiloRayleigh). See this graph: [Aurorae Spectral Intensity Graph](https://i.stack.imgur.com/Qr02U.gif)    |1.0 to 100.0
 
 Field Aligned Currents Controls:
+
 {:.layer}
 Variable                                                                |       Definition                                                                                                                                                                                                                                                                      |       Value
 --------------                                                  |--------------                                                                                                                                                                                                                                                                 |--------------
-Regions                                                                 |There are four regions two per Dawn and Dusk side of planet.                                                                                                                                                                   |
-Start                                                                   |The start longitude of the Field Aligned Current about the geomagnetic north pole.                                                                                                                             |-180.0 to 180.0
-End                                                                             |The end longitude of the Field Aligned Current about the geomagnetic north pole.                                                                                                                               |-180.0 to 180.0
-Radius                                                                  |The radius the geomagnetic north pole of the Field Aligned Current in degrees decimal.                                                                                                                 |-180.0 to 180.0
-Origin Latitude                                                 |A latiude offset to the geomagnetic north pole for the Field Aligned Current.                                                                                                                                  |60.0 to 90.0
-Origin Longitude                                                |A longitude offset to the geomagnetic north pole for the Field Aligned Current.                                                                                                                                |-180.0 to 180.0
+Start                                                                   |The start longitude of the field aligned current about the geomagnetic north pole.                                                                                                                             |-180.0 to 180.0
+End                                                                             |The end longitude of the field aligned current about the geomagnetic north pole.                                                                                                                               |-180.0 to 180.0
+Radius                                                                  |The radius from the geomagnetic north pole of the field aligned current in degrees decimal.                                                                                                    |0.0 to 90.0
+Origin Latitude                                                 |A latiude offset from the geomagnetic north pole for the field aligned current.                                                                                                                                |60.0 to 90.0
+Origin Longitude                                                |A longitude offset from the geomagnetic north pole for the field aligned current.                                                                                                                              |-180.0 to 180.0
+
+There are four regions; two per Dawn and Dusk side of planet.
 
 Other Settings:
+
 {:.layer}
 Variable                                                                |       Definition                                                                                                                                                                                                                                                                      |       Value
 --------------                                                  |--------------                                                                                                                                                                                                                                                                 |--------------
 Aurora Intensity Map Size                               |Size of the Intensity Map in pixel. A high value offers greater detail at an increased performance cost.                                                                               |128 to 8192
-Aurora Trace Length                                             |How the trace length should be when drawing the Intensity Map.                                                                                                                                                                 |0 to 1000
+Aurora Trace Length                                             |How long the trace length should be when drawing the Intensity Map.                                                                                                                                                    |0 to 1000
 
 <hr>
