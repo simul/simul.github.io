@@ -7,6 +7,11 @@ weight: 120
 
 Version 4.3
 ---
+Wed 09 Sep : Platform ptr.  
+Wed 09 Sep : Minor change to clouds.sfx  
+Wed 09 Sep : Unifying changes from 4.2a: PrecipitationGridDivisors, updated precipitation rendering with PrecipitationLayerInfo, Debug Overlays for Rain and Queries and initial change for Unity D3D12.  
+Wed 09 Sep : Added Aurorae documentation and corrected others. Changed Aurora FAC controls. Minor improvements to Aurora checksum, class initialisation etc.  
+Wed 09 Sep : Removal of automatic Sun + Moon Position from Sky Keyframes. Removed Star variables out of Sky Layer settings. (Both moving engine side)  
 Mon 31 Aug : Full init of cloud texture.  
 Wed 26 Aug : Xbox build fix.  
 Wed 26 Aug : Allow for Global Wind Movement - Layer Creation via blueprints  
@@ -102,10 +107,5 @@ Mon 15 Jun : Default for SIMUL_QT_DIR .
 Fri 12 Jun : Update to GetDependencies.bat  
 Fri 12 Jun : fix to GetDependencies.bat  
 Fri 12 Jun : Update to extracting Zip File  
-Fri 12 Jun : Minor update to Aurora.cpp Checksum issue.  
-Wed 10 Jun : Fix nsi build.  
-Wed 10 Jun : Fix to Linux Build  
-Wed 10 Jun : Fix Linux build  
-Wed 10 Jun : Default to NEVER_BUILD for shaders.  
 
 <hr>

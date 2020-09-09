@@ -1,0 +1,25 @@
+---
+title: How it works
+layout: reference
+weight: 30
+---
+
+
+
+
+
+
+How it works
+====================
+
+Aurorae Map Generation and Compositing
+-----------------
+Based on the settings passed from Field Aligned Current Controls, trueSKY will create Field Aligned Current Map, which encodes the strength and direction of the global electric fields about the geomagnetic north pole (upto 30 degrees from that poles). It calculates the pederson and hall currents along with the positive and negative electric potentials. Next, trueSKY will draw the Intensity Map, which traces out the auroral lines following the hall currents and calculating the amount of electron deposition at each point about the geomagnetic north pole. The last texture to draw is the Electron Deposition Table, which encodes the colour of the aurora between the input energies of 0 to 32 keV and altitudes ranging from 0 - 500km. Using the generated maps, the position of the viewer and the position of the geomagnetic north pole, trueSKY will composite the aurorae to the screen through a simple raytracer.
+
+Debug overlay:
+![](/images/aurorae/auroraeDebugOverlay.png)
+
+
+Performace
+----------
+There are three textures that are drawn to: Field Aligned Current Map, Intensity Map and Electron Deposition Table along with compositing the aurorae to the screen. The Field Aligned Current Map and the Intensity Map are only redrawn when changes are made to the Field Aligned Current Controls; this is done due to the complexity of the shaders and to minimise GPU usage. The Electron Deposition Table along with the the aurorae to the screen is done each frame.

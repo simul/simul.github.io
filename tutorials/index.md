@@ -20,6 +20,8 @@ Below you will find links to the different aspects of trueSKY, with each section
 
 * [**Sky**](sky)                                                                        - From beautiful sunsets to alien planets.
 
+* [**Aurorae**](aurorae)                                                        - Create Aurorae Boreales and Australes, on Earth and alien planets.
+
 * [**Lighting**](lighting)                                                      - Editing the directional and trueSKY light in the scene.
 
 * [**Precipitation**](precipitation)                            - Cloud precipitation from rain to snow.

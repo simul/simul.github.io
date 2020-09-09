@@ -20,13 +20,13 @@ Functions
 ---
 <a name="AuroralGlobalCoverage"></a>
 ###  AuroralGlobalCoverage()
-Arc Thickness of the thickness part of the auroral oval, in degrees decimal.
+Arc Thickness of the thinnest part of the auroral oval, in degrees decimal.
 
 Fields
 ---
 
-**lowestLatitide**  Highest Latitude Aurora can occur, in degrees decimal centred about the magnetic north pole.
+**lowestLatitide**  Highest Latitude Aurora can occur, in degrees decimal centred about the geomagnetic north pole.
 
-**maxAuroralBand**  Lowest Latitude Aurora can occur, in degrees decimal centred about the magnetic north pole.
+**maxAuroralBand**  Lowest Latitude Aurora can occur, in degrees decimal centred about the geomagnetic north pole.
 
-**minAuroralBand**  Arc Thickness of the thickness part of the auroral oval, in degrees decimal.
+**minAuroralBand**  Arc Thickness of the thicknest part of the auroral oval, in degrees decimal.
