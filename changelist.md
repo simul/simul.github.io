@@ -7,6 +7,8 @@ weight: 120
 
 Version 4.3
 ---
+Wed 09 Sep : Aurorae Documentation typo fixed.  
+Wed 09 Sep : Minor correction to rainbow compositing to cubemap.  
 Wed 09 Sep : Fix for aurorae variables.md  
 Wed 09 Sep : Platform ptr.  
 Wed 09 Sep : Minor change to clouds.sfx  
@@ -105,7 +107,5 @@ Wed 17 Jun : Fix to Horizon and Zenith
 Wed 17 Jun : Doc Update  
 Mon 15 Jun : Default for SIMUL_QT_DIR .  
 Mon 15 Jun : Default for SIMUL_QT_DIR .  
-Fri 12 Jun : Update to GetDependencies.bat  
-Fri 12 Jun : fix to GetDependencies.bat  
 
 <hr>

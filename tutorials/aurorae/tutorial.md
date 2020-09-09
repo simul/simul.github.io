@@ -21,23 +21,25 @@ CloudWindow with Auroral Oval displayed:
 ![](/images/aurorae/auroraeCloudWindowView.png)
 
 
+
 UI and Controls
 -----------------
 The intensity of aurorae can be adjusted by modifying the Electron Free Time and Electron Volume Density, both of which affect the conductivity of electrons in the upper atmosphere. There's also a general brightness control.
-Aurorae have destincted layer to them, which are dependent on the atmospheric gaseous composition, altitude and electron energy. The default aurora layers simulates the Earth's aurora, but you can add and delete layers as you like - Design your own alien aurorae.
+Aurorae have destinct layer to them, which are dependent on the atmospheric gaseous composition, altitude and electron energy. The default aurora layers simulates the Earth's aurora, but you can add and delete layers as you like - Design your own alien aurorae.
 
-Aurora Layers Earth:
+Aurora Layers - Earth:
 ![](/images/aurorae/auroraeLayerEarth.png)
 
 
-Aurora Layers Alien with layer details:
+Aurora Layers - Alien with layer details:
 ![](/images/aurorae/auroraeLayerAlien.png)
 
 
 ![](/images/aurorae/auroraeLayerAlienDetails.png)
 
 
-The shape of aurorae are defined by the interactions of electrons and other charged particles from the solar wind with the planet's electromagnetic field in the upper atmosphere. To adjust the generation of aurorae, you can modify the four FAC (Field Aligned Currents) controls. These adjust the arc length, radius and global position for each of the four Field Aligned Currents. View the [How it works](works.html) section for a more full description on how trueSKY generates aurorae.
+
+The shape of aurorae are defined by the interactions of electrons and other charged particles from the solar wind with the planet's electromagnetic field in the upper atmosphere. To adjust the generation of aurorae, you can modify the four FAC (Field Aligned Currents) controls. These adjust the arc length, radius and global position for each of the four field aligned currents. View the [How it works](works.html) section for a more full description on how trueSKY generates aurorae.
 
 Aurorae UI and controls:
 ![](/images/aurorae/auroraeSkyUI.png)
