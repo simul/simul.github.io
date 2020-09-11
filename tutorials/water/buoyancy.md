@@ -24,7 +24,7 @@ For Example, this ship has 4 probes:
 
 
 
-To be affected correctly by the waves, make sure to tick Enable Wave Grid on the Water Object.
+For the probes to be able to generate waves and wakes, make sure to tick Enable Wave Grid on the Water Object.
 
 For a more in depth example this youtube video covers basic buoyancy setups, along with more advanced set up for larger and more complex objects as well as good practices to ensure your objects are stable when used with trueWater. 
 

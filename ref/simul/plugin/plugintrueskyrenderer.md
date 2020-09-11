@@ -24,6 +24,7 @@ Functions
 | void | [CloudSphereInteraction](#CloudSphereInteraction)(int id, float pos, float vel, float radius) |
 | bool | [CreateBoundedWaterObject](#CreateBoundedWaterObject)(uint ID, simul::math::Vector3 dimension, simul::math::Vector3 location) |
 | simul::sky::uid | [CreateCloudKeyframer](#CreateCloudKeyframer)(char name) |
+| bool | [CreateCustomWaterMesh](#CreateCustomWaterMesh)(int ID, simul::terrain::WaterMeshObjectValues newMesh) |
 | void | [DeleteCloudKeyframer](#DeleteCloudKeyframer)(simul::sky::uid uid) |
 | void | [DeleteKeyframe](#DeleteKeyframe)(simul::sky::uid uid) |
 | void | [ExportCloudLayer](#ExportCloudLayer)(char filenameUtf8) |
@@ -74,6 +75,7 @@ Functions
 | void | [LightingQuery](#LightingQuery)(int id, float pos, LightingQueryResult res) |
 | void | [ProcessQueries](#ProcessQueries)(int num, simul::plugin::Query queries) |
 | void | [RemoveBoundedWaterObject](#RemoveBoundedWaterObject)(uint ID) |
+| void | [RemoveCustomWaterMesh](#RemoveCustomWaterMesh)(int ID) |
 | void | [RemoveWaterBuoyancyObject](#RemoveWaterBuoyancyObject)(int ID) |
 | void | [RemoveWaterMaskObject](#RemoveWaterMaskObject)(int ID) |
 | void | [RemoveWaterParticleGenerator](#RemoveWaterParticleGenerator)(int ID) |
@@ -82,6 +84,7 @@ Functions
 | void | [RenderOverlays](#RenderOverlays)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture depthTexture, bool clear_screen) |
 | void | [Set](#Set)(long long Enum, simul::base::Variant v) |
 | void | [SetBool](#SetBool)(char name, bool value) |
+| void | [SetCloudKeyframePosition](#SetCloudKeyframePosition)(simul::sky::uid uid, simul::math::Vector LatLongHeadingDeg) |
 | void | [SetCloudPlacementTexture](#SetCloudPlacementTexture)(int id, void texture, vec2 pos_km, vec2 ext_km) |
 | void | [SetFloat](#SetFloat)(char name, float value) |
 | void | [SetInt](#SetInt)(char name, int value, simul::sky::uid layerID) |
@@ -97,6 +100,7 @@ Functions
 | void | [SetWaterInt](#SetWaterInt)(char name, int ID, int value) |
 | void | [SetWaterVector](#SetWaterVector)(char name, int ID, float value) |
 | bool | [TriggerAction](#TriggerAction)(char name) |
+| void | [UpdateCustomWaterMesh](#UpdateCustomWaterMesh)(int ID, simul::terrain::WaterMeshObjectValues Mesh) |
 | void | [UpdateProfilingText](#UpdateProfilingText)() |
 | void | [UpdateWaterBuoyancyObjectValues](#UpdateWaterBuoyancyObjectValues)(simul::terrain::WaterMeshObjectValues values) |
 | void | [UpdateWaterMaskObjectValues](#UpdateWaterMaskObjectValues)(simul::terrain::waterMaskingObject values) |
@@ -140,6 +144,9 @@ Create a bounded water object with a given ID
 <a name="CreateCloudKeyframer"></a>
 ### simul::sky::uid CreateCloudKeyframer(char name)
 Create a New Cloud Layer
+<a name="CreateCustomWaterMesh"></a>
+### bool CreateCustomWaterMesh(int ID, simul::terrain::WaterMeshObjectValues newMesh)
+Add a custom water mesh to a given bounded water object
 <a name="DeleteCloudKeyframer"></a>
 ### void DeleteCloudKeyframer(simul::sky::uid uid)
 Delete an existing Cloud Layer
@@ -290,6 +297,9 @@ Called on the render thread, this will process queries from outside the plugin.
 <a name="RemoveBoundedWaterObject"></a>
 ### void RemoveBoundedWaterObject(uint ID)
 Remove a bounded water object with a given ID
+<a name="RemoveCustomWaterMesh"></a>
+### void RemoveCustomWaterMesh(int ID)
+Remove a custom water mesh from a given bounded water object
 <a name="RemoveWaterBuoyancyObject"></a>
 ### void RemoveWaterBuoyancyObject(int ID)
 Remove a water buoyancy object
@@ -315,6 +325,9 @@ Set the value corresponding to the given enum.
 ### void SetBool(char name, bool value)
 Set a boolean value. Valid names are: "ShowFades", "ShowCelestialDisplay", "ShowCompositing", "ShowCloudCrossSections"
 , "Show2DCloudTextures", "RenderSky"/"EnableRendering", and "ReverseDepth".
+<a name="SetCloudKeyframePosition"></a>
+### void SetCloudKeyframePosition(simul::sky::uid uid, simul::math::Vector LatLongHeadingDeg)
+Set Position of Cloud Keyframe
 <a name="SetCloudPlacementTexture"></a>
 ### void SetCloudPlacementTexture(int id, void texture, vec2 pos_km, vec2 ext_km)
 A mask for cloud position
@@ -361,6 +374,9 @@ Set a vector for a specfic water object
 <a name="TriggerAction"></a>
 ### bool TriggerAction(char name)
 Trigger an action. nameshould be "RecompileShaders".
+<a name="UpdateCustomWaterMesh"></a>
+### void UpdateCustomWaterMesh(int ID, simul::terrain::WaterMeshObjectValues Mesh)
+Update custom water mesh to a given bounded water object
 <a name="UpdateProfilingText"></a>
 ### void UpdateProfilingText()
 Called once per frame, updates every 256 frames.

@@ -13,6 +13,7 @@ class BoundedWaterObject
 Functions
 ---
 
+| simul::terrain::WaterMeshObjectValues * | [getCustomWaterMesh](#getCustomWaterMesh)() |
 | vec3 | [getDimension](#getDimension)() |
 | vec3 | [getLocation](#getLocation)() |
 | int2 | [getQuadDensity](#getQuadDensity)() |
@@ -25,7 +26,9 @@ Functions
 | simul::terrain::WaveGrid * | [getWaveGrid](#getWaveGrid)() |
 | void | [InvalidateDeviceObjects](#InvalidateDeviceObjects)() |
 | void | [PreRenderUpdate](#PreRenderUpdate)(simul::crossplatform::DeviceContext deviceContext, float real_time_seconds) |
+| void | [removeCustomWaterMesh](#removeCustomWaterMesh)() |
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform r) |
+| void | [setCustomWaterMesh](#setCustomWaterMesh)(simul::terrain::WaterMeshObjectValues newObject) |
 | void | [setDimension](#setDimension)(vec3 newDimension) |
 | void | [setLocation](#setLocation)(vec3 newLocation) |
 | void | [setRotation](#setRotation)(float newRotation) |
@@ -33,12 +36,16 @@ Functions
 | void | [setWaterProbeOutputs](#setWaterProbeOutputs)(vec4 outputs) |
 | void | [setWaterProbePosition](#setWaterProbePosition)(int ID, vec3 pos) |
 | void | [setWaterWaveletsSimulator](#setWaterWaveletsSimulator)(simul::terrain::WaterWaveletsSimulator o) |
+| void | [updateCustomWaterMesh](#updateCustomWaterMesh)(simul::terrain::WaterMeshObjectValues Object) |
 | void | [updateLODs](#updateLODs)() |
 | void | [updateQuadDensity](#updateQuadDensity)(vec3 camPos) |
 
 
 Functions
 ---
+<a name="getCustomWaterMesh"></a>
+### simul::terrain::WaterMeshObjectValues * getCustomWaterMesh()
+Get the current mesh object
 <a name="getDimension"></a>
 ### vec3 getDimension()
 Get the dimension of the center of the water object
@@ -75,9 +82,15 @@ Platform-dependent function called when uinitializing the water object.
 <a name="PreRenderUpdate"></a>
 ### void PreRenderUpdate(simul::crossplatform::DeviceContext deviceContext, float real_time_seconds)
 Once per-frame update. Do this before any rendering each frame.
+<a name="removeCustomWaterMesh"></a>
+### void removeCustomWaterMesh()
+Remove the water mesh
 <a name="RestoreDeviceObjects"></a>
 ### void RestoreDeviceObjects(simul::crossplatform::RenderPlatform r)
 Platform-dependent function called when initializing the water object.
+<a name="setCustomWaterMesh"></a>
+### void setCustomWaterMesh(simul::terrain::WaterMeshObjectValues newObject)
+Set a given mesh object as the shape of the water object
 <a name="setDimension"></a>
 ### void setDimension(vec3 newDimension)
 Set the dimension of the center of the water object
@@ -99,6 +112,9 @@ Set the Array of positions of the water probes associated with this water object
 <a name="setWaterWaveletsSimulator"></a>
 ### void setWaterWaveletsSimulator(simul::terrain::WaterWaveletsSimulator o)
 Set the water wavelets simulator that this water object will use to generate its surface
+<a name="updateCustomWaterMesh"></a>
+### void updateCustomWaterMesh(simul::terrain::WaterMeshObjectValues Object)
+Update a given mesh object
 <a name="updateLODs"></a>
 ### void updateLODs()
 Update the LOD values depending on the size of the object

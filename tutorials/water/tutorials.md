@@ -35,24 +35,6 @@ Go to Gameobject->createOther->create trueSKY water Object
 Search for True Sky Water, and then drag it into your scene.
 </div>
 
-If you are planning to create a large body of water / an ocean, you can check the "Boundless Ocean" checkbox within the trueSKYWater assets propertys section. You can control all of your waters propertys and settings from within the trueSKYWaters details panel.
-
-Shore Effects
------------------
-
-![](/images/unreal/shoreeffects.png)
-
-
-To use the Shore effects, add a 2D Scene depth camera into your project, with only Scene depth in R enabled.
-
-![](/images/unreal/scenedepthR.png)
-
-
-Next, create a RenderTexture, setting it to capture only the Red channel
-
-![](/images/unreal/RenderTargetFormat.png)
-
-
-Now, attach the RenderTexture to the 2DSceneCapture, and attach the Camera to the correct water instance.
-
-You can now place the camera above where you want to apply the effect (pointing downwards), and adjust the Shore Depth Width and Extents to your liking.
+If you are planning to create a large body of water / an ocean, you can check the "Boundless Ocean" checkbox within the trueSKYWater assets properties section, which will extend the surface of the water to the horizon.
+Regular bounded water objects can be scaled and rotated to fit within your scene. You can also use your own static meshes for the water surface for performance, or to fit the water within very specific bounds in your scene.
+Please note that the default bounded objects are designed for quite small bodies of water, if they are made too large they may cause performnce issues.

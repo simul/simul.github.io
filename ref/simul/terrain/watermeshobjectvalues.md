@@ -6,13 +6,13 @@ weight: 0
 struct WaterMeshObjectValues
 ===
 
-| Include: | Terrain/BaseWaterRenderer.h |
+| Include: | Terrain/BoundedWaterObject.h |
 
-Values of a water buoyancy object
+Struct for mesh objects used in water rendering
   
 
 
 
-Values of a water buoyancy object
+Struct for mesh objects used in water rendering
   
 

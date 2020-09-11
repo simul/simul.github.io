@@ -18,11 +18,14 @@ trueSKYActor Settings
 {:.object}
 Variable                                                                                |       Definition                                                                                                              |       Value
 --------------                                                                  |--------------                                                                                                         |--------------
-Render Water                                                                    |If the water should be rendered.                                                                       |Bool
+Render Water                                                                    |If Water should be rendered.                                                                           |Bool
 Water Resolution                                                                |Resolution of the Water.                                                                                       |Half or Full
 Enable Reflection                                                               |Enable or Disable Reflections.                                                                         |Bool           
-Reflection Resolution                                                   |Resolution of the Water.                                                                                       |Half or Full
-
+Reflection Resolution                                                   |Resolution of the Water Reflections.                                                           |Half or Full
+Reflection Steps                                                                |How many steps that reflection rays will take                                          |Int
+Reflection Pixel Step                                                   |The maximum pixels in screen space that reflection rays can move       |Int
+Reflection Distance                                                             |The furthest distance that reflection rays will travel                         |Int
+Water Cubemap                                                                   |Use a custom cubemap for non-dynamic water refletions                          |Cubemap
 
 
 trueSKY Water Object settings
@@ -33,29 +36,32 @@ Variable                                                                        
 --------------                                                                  |--------------                                                                                                         |--------------
 Render                                                                                  |If the water should be rendered.                                                                       |Bool
 Boundless Ocean                                                                 |Render a full Ocean. Use this for large scale scenes.                          |Bool
-Enable Wave Grid                                                                |Enable to use Buoyancy and wave physics.                                                       |Bool
-Beaufort Scale                                                                  |Easy to use scale to determine the type of wave you require.           |0.0 to 12
-Wind Direction                                                                  |Direction of the wind.                                                                                         |0 to 1
-Wind Dependency                                                                 |How dependant the wave direction is on the wind.                                       |0 to 1
+Custom Mesh                                                                             |Use a given custom mesh for bounded objects                                            |Static Mesh
+Beaufort Scale                                                                  |Easy to use scale to determine the type of wave you require.           |0.0 to 12.0
+Wind Direction                                                                  |Direction of the wind.                                                                                         |0 to 1.0
+Wind Dependency                                                                 |How dependant the wave direction is on the wind.                                       |0 to 1.0
 Use Colour Presets                                                              |Should colour presets be used.                                                                         |Bool
 Colour Presets                                                                  |Select a colour preset to quickly change the colour of your water.     |Preset Selection
-Scattering                                                                              |Amount of light scattering. Vec3                                                                       |0 to 1
-Absorption                                                                              |Amount of light absorption. Vec3                                                                       |0 to 1 
+Scattering                                                                              |Amount of light scattering. Vec3                                                                       |0 to 1.0
+Absorption                                                                              |Amount of light absorption. Vec3                                                                       |0 to 1.0       
 Profile Buffer Resolution                                               |Buffer resolution. Increase this if you water appears to "shimmer"     |512 to 4096
 
 
-We also have Advanced Water options, to allow for further customization. Enabling this will disable Beaufort scale.
+We also have Advanced Water options, to allow for further customization of the water surface
 {:.object}
 
 Variable                                                                                |       Definition                                                                                                              |       Value
 --------------                                                                  |--------------                                                                                                         |-------------
-Advanced Water Options                                                  |If Advanced water options should be used.                                                      |Bool
+Advanced Surface Options                                                |If Advanced surface options should be used. (Will disable beaufort)|Bool
 Wind Speed                                                                              |Speed of the wind. This will affect the size of the waves.             |0 to 40
 Wave Amplitude                                                                  |Amplitude of the waves.                                                                                        |0.01 to 2.0
 Max Wavelength                                                                  |Minimum Wavelength of waves.                                                                           |1.01 to 100
 Min Wavelength                                                                  |Maximum Wavelength of waves.                                                                           |0.1 to 1
+Enable Wave Grid                                                                |Enable to use Buoyancy and wave physics.                                                       |Bool
+Wave Grid Distance                                                              |Furthest distance from the camera to calculate the wave grid           |64 to 256
 Enable Foam                                                                             |If foam should be rendered on the waves.                                                       |Bool
 Foam Strength                                                                   |Strength of the foam effect.                                                                           |0 to 0.5
+
 
 Shore Effects
 ---------------

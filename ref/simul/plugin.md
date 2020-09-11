@@ -35,6 +35,7 @@ Functions
 | int | [StaticCopySkylight](#StaticCopySkylight)(void pContext, int cube_id, float shValues, int shOrder, void targetTex, mat4 engineToSimulMatrix4x4, int updateFrequency, float blend, float copy_exposure, float copy_gamma) |
 | int | [StaticCopySkylight2](#StaticCopySkylight2)(void pContext, int cube_id, float shValues, int shOrder, void targetTex, mat4 engineToSimulMatrix4x4, int updateFrequency, float blend, float copy_exposure, float copy_gamma, vec3 ground_colour) |
 | bool | [StaticCreateBoundedWaterObject](#StaticCreateBoundedWaterObject)(int ID, float dimension, float location) |
+| bool | [StaticCreateCustomWaterMesh](#StaticCreateCustomWaterMesh)(int ID, simul::terrain::WaterMeshObjectValues newMesh, vec3 vertices, vec3 normals, uint indices) |
 | void | [StaticEnableLogging](#StaticEnableLogging)(char logfile) |
 | void | [StaticExecuteDeferredRendering](#StaticExecuteDeferredRendering)() |
 | void | [StaticExportCloudLayerToGeometry](#StaticExportCloudLayerToGeometry)(char filenameUtf8, int index) |
@@ -68,6 +69,7 @@ Functions
 | void | [StaticProcessQueries](#StaticProcessQueries)(int num, simul::plugin::Query queries) |
 | void | [StaticPushPath](#StaticPushPath)(char type, char value) |
 | void | [StaticRemoveBoundedWaterObject](#StaticRemoveBoundedWaterObject)(int ID) |
+| void | [StaticRemoveCustomWaterMesh](#StaticRemoveCustomWaterMesh)(int ID) |
 | void | [StaticRemoveView](#StaticRemoveView)(int view_id) |
 | void | [StaticRemoveWaterBuoyancyObject](#StaticRemoveWaterBuoyancyObject)(int ID) |
 | void | [StaticRemoveWaterMaskObject](#StaticRemoveWaterMaskObject)(int ID) |
@@ -95,6 +97,7 @@ Functions
 | void | [StaticRenderKeyframeSetInt](#StaticRenderKeyframeSetInt)(simul::sky::uid uid, char name, int value) |
 | void | [StaticRenderOverlays](#StaticRenderOverlays)(void device, void pContext, void externalDepthTexture, float viewMatrix4x4, float projMatrix4x4, int view_id, void colourTarget, simul::crossplatform::Viewport viewports) |
 | int | [StaticSet](#StaticSet)(long long num, simul::base::Variant v) |
+| void | [StaticSetCloudKeyframePosition](#StaticSetCloudKeyframePosition)(simul::sky::uid uid, float LatLongHeadingDeg) |
 | void | [StaticSetDebugOutputCallback](#StaticSetDebugOutputCallback)(DebugOutputCallback) |
 | int | [StaticSetExternalDynamicValues](#StaticSetExternalDynamicValues)(simul::plugin::ExternalDynamicValues D) |
 | int | [StaticSetExternalRenderValues](#StaticSetExternalRenderValues)(simul::plugin::ExternalRenderValues C) |
@@ -120,6 +123,7 @@ Functions
 | int | [StaticShutDownInterface](#StaticShutDownInterface)() |
 | int | [StaticSpawnLightning](#StaticSpawnLightning)(startpos, endpos, float magnitude, colour) |
 | bool | [StaticTriggerAction](#StaticTriggerAction)(char name) |
+| void | [StaticUpdateCustomWaterMesh](#StaticUpdateCustomWaterMesh)(int ID, simul::terrain::WaterMeshObjectValues newMesh) |
 | void | [StaticUpdateWaterBuoyancyObjectValues](#StaticUpdateWaterBuoyancyObjectValues)(simul::terrain::WaterMeshObjectValues values) |
 | void | [StaticUpdateWaterMaskObjectValues](#StaticUpdateWaterMaskObjectValues)(simul::terrain::waterMaskingObject values) |
 | void | [StaticUpdateWaterParticleGeneratorValues](#StaticUpdateWaterParticleGeneratorValues)(simul::terrain::particleGeneratorValues values, simul::terrain::particleGeneratorType generatorType, simul::plugin::ExternalTexture customPlaneTexture) |
@@ -175,6 +179,9 @@ Perform a query of the cloud properties at a given point in world space
 <a name="StaticCreateBoundedWaterObject"></a>
 ### bool StaticCreateBoundedWaterObject(int ID, float dimension, float location)
 Create a bounded water object with a given ID
+<a name="StaticCreateCustomWaterMesh"></a>
+### bool StaticCreateCustomWaterMesh(int ID, simul::terrain::WaterMeshObjectValues newMesh, vec3 vertices, vec3 normals, uint indices)
+Add a custom mesh to the given Bounded water object
 <a name="StaticEnableLogging"></a>
 ### void StaticEnableLogging(char logfile)
 Pass a specific char pointer to write log output to.
@@ -278,6 +285,9 @@ Push a path for trueSKY to use. Must be "TexturePath", "ShaderPath", or "ShaderB
 <a name="StaticRemoveBoundedWaterObject"></a>
 ### void StaticRemoveBoundedWaterObject(int ID)
 Remove a bounded water object with a given ID
+<a name="StaticRemoveCustomWaterMesh"></a>
+### void StaticRemoveCustomWaterMesh(int ID)
+Remove a custom mesh from the given Bounded water object
 <a name="StaticRemoveView"></a>
 ### void StaticRemoveView(int view_id)
 Free up the specified view and its resources.
@@ -359,6 +369,9 @@ Render the debug overlays.
 <a name="StaticSet"></a>
 ### int StaticSet(long long num, simul::base::Variant v)
 Set the value corresponding to the given enum.
+<a name="StaticSetCloudKeyframePosition"></a>
+### void StaticSetCloudKeyframePosition(simul::sky::uid uid, float LatLongHeadingDeg)
+Set the position of the Cloud Keyframe
 <a name="StaticSetDebugOutputCallback"></a>
 ### void StaticSetDebugOutputCallback(DebugOutputCallback)
 Provide a function that trueSKY can use to output debug warnings, information, and errors.
@@ -434,6 +447,9 @@ Spawn a lightning strike at a given start, endpoint, magnitude and colour
 <a name="StaticTriggerAction"></a>
 ### bool StaticTriggerAction(char name)
 Trigger an action.
+<a name="StaticUpdateCustomWaterMesh"></a>
+### void StaticUpdateCustomWaterMesh(int ID, simul::terrain::WaterMeshObjectValues newMesh)
+Update a custom mesh to the given Bounded water object
 <a name="StaticUpdateWaterBuoyancyObjectValues"></a>
 ### void StaticUpdateWaterBuoyancyObjectValues(simul::terrain::WaterMeshObjectValues values)
 Update the properties of a water buoyancy object

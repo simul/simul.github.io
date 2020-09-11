@@ -7,6 +7,10 @@ weight: 120
 
 Version 4.3
 ---
+Fri 11 Sep : Updated documentation for water  
+Fri 11 Sep : Vulkan needs the precipitationLayerInfos StructuredBuffer to be applied on the init pass.  
+Fri 11 Sep : Keyframe Positioning via Lat/Lon/Heading input  
+Fri 11 Sep : Minor UI update.  
 Wed 09 Sep : Aurorae Documentation typo fixed.  
 Wed 09 Sep : Minor correction to rainbow compositing to cubemap.  
 Wed 09 Sep : Fix for aurorae variables.md  
@@ -15,6 +19,7 @@ Wed 09 Sep : Minor change to clouds.sfx
 Wed 09 Sep : Unifying changes from 4.2a: PrecipitationGridDivisors, updated precipitation rendering with PrecipitationLayerInfo, Debug Overlays for Rain and Queries and initial change for Unity D3D12.  
 Wed 09 Sep : Added Aurorae documentation and corrected others. Changed Aurora FAC controls. Minor improvements to Aurora checksum, class initialisation etc.  
 Wed 09 Sep : Removal of automatic Sun + Moon Position from Sky Keyframes. Removed Star variables out of Sky Layer settings. (Both moving engine side)  
+Tue 08 Sep : Added support for water objects to accept meshes for their shape, rather than using only the given generated surface  
 Mon 31 Aug : Full init of cloud texture.  
 Wed 26 Aug : Xbox build fix.  
 Wed 26 Aug : Allow for Global Wind Movement - Layer Creation via blueprints  
@@ -102,10 +107,5 @@ Wed 24 Jun : Removed line that doesn't compile.
 Wed 24 Jun : Moved D3d12 json file.  
 Wed 24 Jun : Build fixes.  
 Wed 24 Jun : Small fix for DX11 water being incorrectly drawn and add the ability to draw only water  
-Fri 19 Jun : added getCloudLayerUIDbyIndex  
-Wed 17 Jun : Fix to Horizon and Zenith  
-Wed 17 Jun : Doc Update  
-Mon 15 Jun : Default for SIMUL_QT_DIR .  
-Mon 15 Jun : Default for SIMUL_QT_DIR .  
 
 <hr>
