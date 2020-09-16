@@ -7,6 +7,8 @@ weight: 120
 
 Version 4.3
 ---
+Wed 16 Sep : Actually fixed image extensions  
+Wed 16 Sep : Fixed image extensions  
 Wed 16 Sep : Fix to Uninstaller + GLFW files for Static Builds  
 Tue 15 Sep : Update to water object tutorial  
 Tue 15 Sep : .nsi fixes  
@@ -105,7 +107,5 @@ Mon 29 Jun : Fix for flipped water surface in DX11
 Fri 26 Jun : Fix warnings.  
 Fri 26 Jun : Nsis installer fixes for Dx12.  
 Fri 26 Jun : Nsis installer fixes for Dx12.  
-Thu 25 Jun : Fix merge issue  
-Thu 25 Jun : Fix to layer names  
 
 <hr>
