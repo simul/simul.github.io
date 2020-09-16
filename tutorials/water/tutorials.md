@@ -35,6 +35,35 @@ Go to Gameobject->createOther->create trueSKY water Object
 Search for True Sky Water, and then drag it into your scene.
 </div>
 
-If you are planning to create a large body of water / an ocean, you can check the "Boundless Ocean" checkbox within the trueSKYWater assets properties section, which will extend the surface of the water to the horizon.
-Regular bounded water objects can be scaled and rotated to fit within your scene. You can also use your own static meshes for the water surface for performance, or to fit the water within very specific bounds in your scene.
-Please note that the default bounded objects are designed for quite small bodies of water, if they are made too large they may cause performnce issues.
+
+Boundless Ocean
+-----------------
+If you are planning to create a large body of water / an ocean, you can check the "Boundless Ocean" checkbox within the trueSKYWater assets properties section, which will extend the surface of the water to the horizon. This is can also be used in scenes where there is a constant water level throughout, or for a very basic way of filling out river beds.
+
+![](/images/BoundlessExample.png)
+
+
+
+Bounded Water Volume
+-----------------
+Used for filling in ponds, lakes, fountains and other small water features, these come as cubes of water that can be scaled and rotated within your scene to your specifications.
+
+![](/images/BoundedExample.png)
+
+
+Please note that the default bounded objects are designed for quite small bodies of water, if they are made too large they may cause performance issues.
+
+
+Bounded Water Volume - Custom meshes
+-----------------
+You can also use your own static meshes for the water surface for performance, or to fit the water within very specific bounds in your scene. This is available as an extra field within the water object's values, and can be set to any given static mesh.
+
+![](/images/BoundedExampleMesh.png)
+
+![](/images/BoundedExampleMeshHidden.png)
+
+
+As any mesh can be used, this can allow for the water to be used with more interesting shapes, giving it the potential for more than just surfaces!
+
+![](/images/BoundedExampleMeshAlternate.png)
+

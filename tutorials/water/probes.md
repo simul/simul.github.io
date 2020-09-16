@@ -15,7 +15,7 @@ Water probes are a component which can be added to objects. Their primary use is
 
 Attaching a probe to a object is as simple as adding a trueSKY Water Buoyancy component to your object, and then adding a trueSKY Water probe onto the buoyancy component.
 
-Once a probe has been attached to an object it will by default be set to a "physics" probe type. This probe type allows for [buoyancy](buoyancy) to be enabled. However there are multiple other probe types that can be used.
+Once a probe has been attached to an object it will by default be set to a "physics" probe type. This probe type allows for [buoyancy](buoyancy) to be enabled. However, there are multiple other probe types that can be used.
 
 
 <b> Physics </b> This is the default probe type, and allows for buoyancy to be used. Setup for this can be found [here](buoyancy)

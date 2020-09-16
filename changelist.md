@@ -7,6 +7,10 @@ weight: 120
 
 Version 4.3
 ---
+Tue 15 Sep : Update to water object tutorial  
+Tue 15 Sep : .nsi fixes  
+Mon 14 Sep : Commit Platform ptr.  
+Mon 14 Sep : BoundedWaterObject initialiser list order fixed.  
 Fri 11 Sep : Updated documentation for water  
 Fri 11 Sep : Vulkan needs the precipitationLayerInfos StructuredBuffer to be applied on the init pass.  
 Fri 11 Sep : Keyframe Positioning via Lat/Lon/Heading input  
@@ -103,9 +107,5 @@ Fri 26 Jun : Nsis installer fixes for Dx12.
 Thu 25 Jun : Fix merge issue  
 Thu 25 Jun : Fix to layer names  
 Thu 25 Jun : Layers have names, added wip Cloud Class  
-Wed 24 Jun : Removed line that doesn't compile.  
-Wed 24 Jun : Moved D3d12 json file.  
-Wed 24 Jun : Build fixes.  
-Wed 24 Jun : Small fix for DX11 water being incorrectly drawn and add the ability to draw only water  
 
 <hr>
