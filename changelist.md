@@ -7,6 +7,7 @@ weight: 120
 
 Version 4.3
 ---
+Thu 17 Sep : Platform ptr.  
 Wed 16 Sep : Update to the Aurorae documentation.  
 Wed 16 Sep : Actually fixed image extensions  
 Wed 16 Sep : Fixed image extensions  
@@ -106,6 +107,5 @@ Mon 29 Jun : Added GetCloudLayerUIDByIndex Blueprint
 Mon 29 Jun : If statement fix  
 Mon 29 Jun : Fix for flipped water surface in DX11  
 Fri 26 Jun : Fix warnings.  
-Fri 26 Jun : Nsis installer fixes for Dx12.  
 
 <hr>
