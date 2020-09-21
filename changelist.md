@@ -7,6 +7,10 @@ weight: 120
 
 Version 4.3
 ---
+Mon 21 Sep : Minor space/tab format changes to WindowUpdater.cpp/.h  
+Mon 21 Sep : Minor corrections.  
+Fri 18 Sep : Cloud block fill in direction away from light. Automatic number of mips in cloud texture so that block size is maximized. Remove old unused code and classes.  
+Thu 17 Sep : Fix block update issue.  
 Thu 17 Sep : Platform ptr.  
 Wed 16 Sep : Update to the Aurorae documentation.  
 Wed 16 Sep : Actually fixed image extensions  
@@ -103,9 +107,5 @@ Thu 02 Jul : Updating ExternalRenderValues + removed unnecessary CopyToDesigner 
 Thu 02 Jul : Updating ExternalRenderValues Struct  
 Tue 30 Jun : Rayleigh coef + Manual Colour Fix  
 Tue 30 Jun : Shader Recompile Fix  
-Mon 29 Jun : Added GetCloudLayerUIDByIndex Blueprint  
-Mon 29 Jun : If statement fix  
-Mon 29 Jun : Fix for flipped water surface in DX11  
-Fri 26 Jun : Fix warnings.  
 
 <hr>

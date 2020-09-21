@@ -26,7 +26,6 @@ Classes and Structures
 | struct [CloudVolume](clouds/cloudvolume.html) |  |
 | struct [DepthTextureStruct](clouds/depthtexturestruct.html) |  |
 | struct [ExportLightningStrike](clouds/exportlightningstrike.html) |  |
-| class [FastCloudNode](clouds/fastcloudnode.html) |  |
 | class [HumidityCallbackInterface](clouds/humiditycallbackinterface.html) |  |
 | class [MixedResolutionCompositor](clouds/mixedresolutioncompositor.html) |  |
 | struct [PointSource](clouds/pointsource.html) |  |
