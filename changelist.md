@@ -7,6 +7,9 @@ weight: 120
 
 Version 4.3
 ---
+Wed 23 Sep : Updating Docs - 4.3 specific features  
+Wed 23 Sep : Rename Override Wind  
+Tue 22 Sep : Keep licence header visible  
 Tue 22 Sep : Block lighting corrections, improvements.  
 Mon 21 Sep : Update position of celestial background.  
 Mon 21 Sep : Fix CloudRenderer::RenderCrossSections() debug overlays viewports.  
@@ -16,6 +19,7 @@ Mon 21 Sep : Minor corrections.
 Fri 18 Sep : Cloud block fill in direction away from light. Automatic number of mips in cloud texture so that block size is maximized. Remove old unused code and classes.  
 Thu 17 Sep : Fix block update issue.  
 Thu 17 Sep : Platform ptr.  
+Thu 17 Sep : Removing Old Keyframe Values  
 Wed 16 Sep : Update to the Aurorae documentation.  
 Wed 16 Sep : Actually fixed image extensions  
 Wed 16 Sep : Fixed image extensions  
@@ -103,9 +107,5 @@ Thu 09 Jul : SkyKeyframer::GetSiderealTimeDegrees() now uses interpolatedKeyfram
 Wed 08 Jul : Update Doc  
 Wed 08 Jul : ExternalRenderValues Struct Improvement  
 Tue 07 Jul : Fix to Struct mis-match  
-Tue 07 Jul : Storm fix  
-Tue 07 Jul : Re-enabling Sky. Storm Fix.  
-Thu 02 Jul : Mie Value from blueprint fix  
-Thu 02 Jul : Mie value from blueprint fix  
 
 <hr>

@@ -56,6 +56,9 @@ Please note that the default bounded objects are designed for quite small bodies
 
 Bounded Water Volume - Custom meshes
 -----------------
+
+**Coming soon with trueSKY 4.3!**
+
 You can also use your own static meshes for the water surface for performance, or to fit the water within very specific bounds in your scene. This is available as an extra field within the water object's values, and can be set to any given static mesh.
 
 ![](/images/BoundedExampleMesh.png)
