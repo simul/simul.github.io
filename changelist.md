@@ -7,6 +7,10 @@ weight: 120
 
 Version 4.3
 ---
+Tue 22 Sep : Block lighting corrections, improvements.  
+Mon 21 Sep : Update position of celestial background.  
+Mon 21 Sep : Fix CloudRenderer::RenderCrossSections() debug overlays viewports.  
+Mon 21 Sep : Minor space/tab format changes to WindowUpdater.cpp/.h  
 Mon 21 Sep : Minor space/tab format changes to WindowUpdater.cpp/.h  
 Mon 21 Sep : Minor corrections.  
 Fri 18 Sep : Cloud block fill in direction away from light. Automatic number of mips in cloud texture so that block size is maximized. Remove old unused code and classes.  
@@ -103,9 +107,5 @@ Tue 07 Jul : Storm fix
 Tue 07 Jul : Re-enabling Sky. Storm Fix.  
 Thu 02 Jul : Mie Value from blueprint fix  
 Thu 02 Jul : Mie value from blueprint fix  
-Thu 02 Jul : Updating ExternalRenderValues + removed unnecessary CopyToDesigner Function  
-Thu 02 Jul : Updating ExternalRenderValues Struct  
-Tue 30 Jun : Rayleigh coef + Manual Colour Fix  
-Tue 30 Jun : Shader Recompile Fix  
 
 <hr>
