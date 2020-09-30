@@ -149,3 +149,94 @@ The outputs are in milliseconds.
 <sup> How to retrieve profiling text </sup>
 
 
+
+Adding and removing Cloud Keyframes
+------------------------------------
+
+
+The ability to add an remove cloud keyframes during runtime is a powerful tool, which can be used to help build truly dynamic scenes and worlds, as well as add event driven dynamic events at any point during runtime.
+
+
+**Create Cloud Keyframe**
+
+The blueprints require a cloud layer ID - allowing for keyframes to be created on any cloud layer within the given sequence - the Cloud Layer ID will be passed in as an integer.
+
+We also allow for the input of a time variable (as a float) - allowing for creation of cloud keyframes at either a set time within the timeline or, via use adding a float to the current time value, create keyframes a set amount of time from the current time.
+The return value the blueprint node outputs is simply the newly created cloud keyframe Unique ID - allowing for easy referencing to the keyframe for altering the values via other blueprint setups (also at runtime).
+
+
+***Insert Image of blueprint hooked up*** - Need off james as current has type on bP node
+![](/images/)
+
+
+
+**Delete Cloud Keyframe**
+
+This node is rather simple, and allows you at runtime to delete any given keyframe. The only required information to delete the keyframe is its Unique ID. This can either be stored within a variable, or obtained via use of our other blueprints (see Get cloud layer ID -> Get Cloud keyframe ID / Get next Editable Keyframe ID).
+
+This can be used to help control your scene further, and also help alleviate potential issues caused by the create cloud keyframe - as if two keyframes would be created too close to each other they may have a very fast interpolation , so setting up a "get next editable keyframe UID" - Deleting said keyframe via its UID and the Creating the new keyframe at your desired time would help alleviate the issue and get tighter control over the scene overall.
+
+
+![](/images/Delete_Cloud_Keyframe.png)
+
+
+
+Adding and removing Cloudlayers
+--------------------------------
+
+
+This feature is a 4.3 specific feature, the blueprints may be available within 4.2a, however are not supported in these legacy versions (unlike the simpler adding cloud keyframe values)
+
+
+**Creating Cloud Layers**
+
+
+Creating a Cloud Layer works similarly as creating a cloud keyframe. The blueprint is also fairly simple, just pass through a "create cloud layer" node, and add a name by typing it into the "name" slot - alternatively feed in any kind of string to have that assigned as a name.
+
+The node outputs a Cloud Layer UID - which will allow for referencing of the layer for other blueprint functions, such as the create cloud keyframe node. Allowing you to create entirely new layers, and add in a new set of keyframes easily.
+
+
+**Deleting Cloud Layers**
+
+
+Deleting a cloud keyframe also mirrors the functionality of the delete cloud keyframe node - just requiring the Cloud layers Unique ID to be input - which will delete that layer in its entirety (including any keyframes that were featured within that cloud layer)
+
+
+![](/images/Delete_Cloud_Layer.png)
+
+
+
+Adding map textures via blueprints
+-----------------------------------
+
+
+This feature works across both 4.2a and 4.3 versions and allows for users to add map textures dynamically. 
+
+Previously this has only be possible to do within the editor, requiring the png being referenced to be located in a specific location within the simul folder structure in the engine. We have now made this more accessible in all forms, the previous functionality still works, so saving a .png file into the "media -> resources" folder works. However we can now reference any .png image within the editor.
+
+In order to do this simply add the png file you wish to reference, into the Content -> trueSKY folder, which is created whenever initialising trueSKY into the scene.
+
+
+**Manual Sequence solution:**
+
+functionality for this can be found [here](Tutorials)
+
+
+<div class="video-wrapper">
+<div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ffMJyoNKWZc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+
+
+
+**Blueprints at runtime**
+
+The new node "Set Cloud Layer Map Texture by File Name" allows for adding a map texture to a cloud layer at runtime. It will require a cloud layer's unique ID in order to function - which can be obtained by any of the "get cloud layer UID" blueprints, or alternatively by using the "Create new cloud layer" blueprint if using 4.3 or later versions of the plugin.
+
+You must then input the png file's name which is located within the Content -> trueSKY folder within your unreal engine project. Ensure that you are referencing the correct file with your string, this is however not case sensitive.
+
+
+
+![](/images/CloudLayerMapTexture.png)
+
