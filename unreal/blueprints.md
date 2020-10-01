@@ -165,8 +165,7 @@ We also allow for the input of a time variable (as a float) - allowing for creat
 The return value the blueprint node outputs is simply the newly created cloud keyframe Unique ID - allowing for easy referencing to the keyframe for altering the values via other blueprint setups (also at runtime).
 
 
-***Insert Image of blueprint hooked up*** - Need off james as current has type on bP node
-![](/images/)
+![](/images/create_cloud_keyframe.png)
 
 
 
@@ -230,7 +229,7 @@ functionality for this can be found [here](Tutorials)
 
 
 
-**Blueprints at runtime**
+**Changing Map textures at runtime**
 
 The new node "Set Cloud Layer Map Texture by File Name" allows for adding a map texture to a cloud layer at runtime. It will require a cloud layer's unique ID in order to function - which can be obtained by any of the "get cloud layer UID" blueprints, or alternatively by using the "Create new cloud layer" blueprint if using 4.3 or later versions of the plugin.
 

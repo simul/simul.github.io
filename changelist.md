@@ -7,6 +7,7 @@ weight: 120
 
 Version 4.3
 ---
+Wed 30 Sep : Fixing minor issues and adding missing image on blueprint page  
 Wed 30 Sep : Updating FAQ as Niagara information was incorrect  
 Wed 30 Sep : Update to blueprint pages - adding in Create / delete of keyframe and layers - as well as new map texture location and nodes  
 Wed 23 Sep : Updating Docs - 4.3 specific features  
@@ -106,6 +107,5 @@ Sat 11 Jul : Cross-platform API build fixes.
 Fri 10 Jul : Commodore platform support.  
 Fri 10 Jul : Fixes to bugs exposed by next-gen platform work.  
 Thu 09 Jul : SkyKeyframer::GetSiderealTimeDegrees() now uses interpolatedKeyframe.time. Fix for Sky Background doing full reverse rotation before midnight.  
-Wed 08 Jul : Update Doc  
 
 <hr>
