@@ -25,6 +25,6 @@ Fields
 
 **RenderGridZKm**  < Minimum grid width for raytracing.
 
-**DefaultNumSlices**  < Minimum grid height for raytracing.
+**WindowGridWidth**  < Minimum grid height for raytracing.
 
-**integrationScheme**  < Largest magnitude of star to draw. Larger magnitudes are dimmer.
+**IntegrationScheme**  < Largest magnitude of star to draw. Larger magnitudes are dimmer.

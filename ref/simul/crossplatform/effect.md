@@ -17,6 +17,7 @@ Functions
 | void | [Apply](#Apply)(simul::crossplatform::DeviceContext deviceContext, char tech_name, int pass) |
 | void | [Apply](#Apply)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::EffectTechnique effectTechnique, int pass) |
 | void | [Apply](#Apply)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::EffectTechnique effectTechnique, char pass) |
+| void | [Apply](#Apply)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::EffectPass p) |
 | void | [EnsureEffect](#EnsureEffect)(simul::crossplatform::RenderPlatform r, char filename_utf8) |
 | simul::crossplatform::SamplerStateAssignmentMap  & | [GetSamplers](#GetSamplers)() |
 | void | [Reapply](#Reapply)(simul::crossplatform::DeviceContext deviceContext) |
@@ -44,6 +45,9 @@ Activate the shader. Unapply must be called after rendering is done.
 <a name="Apply"></a>
 ### void Apply(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::EffectTechnique effectTechnique, char pass)
 Activate the shader. Unapply must be called after rendering is done.
+<a name="Apply"></a>
+### void Apply(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::EffectPass p)
+Apply the specified shader effect pass. Unapply must be called after rendering is done.
 <a name="EnsureEffect"></a>
 ### void EnsureEffect(simul::crossplatform::RenderPlatform r, char filename_utf8)
 Ensure it's built and up-to-date.

@@ -7,6 +7,10 @@ weight: 120
 
 Version 4.3
 ---
+Mon 05 Oct : Update to ExternalStruct to include WindowGrid and LightingMode. Fix to Sequencer. Disabled Random Seed  
+Fri 02 Oct : Added Save/Load functions to Aurora.  
+Fri 02 Oct : Fix layout in UnityPluginInterface.h and commit Platform ptr.  
+Fri 02 Oct : SetShowAuroraeControls() added to disable in Engine. Aurora values added ExternalRenderValues. Aurora is now solely in SkyKeyframer  
 Wed 30 Sep : Fixing minor issues and adding missing image on blueprint page  
 Wed 30 Sep : Updating FAQ as Niagara information was incorrect  
 Wed 30 Sep : Update to blueprint pages - adding in Create / delete of keyframe and layers - as well as new map texture location and nodes  
@@ -103,9 +107,5 @@ Sat 11 Jul : Fix some warnings.
 Sat 11 Jul : Merges from 4.3 for platform support.  
 Sat 11 Jul : Remove unwanted files.  
 Sat 11 Jul : Spectrum PLATFORM_TXT.  
-Sat 11 Jul : Cross-platform API build fixes.  
-Fri 10 Jul : Commodore platform support.  
-Fri 10 Jul : Fixes to bugs exposed by next-gen platform work.  
-Thu 09 Jul : SkyKeyframer::GetSiderealTimeDegrees() now uses interpolatedKeyframe.time. Fix for Sky Background doing full reverse rotation before midnight.  
 
 <hr>

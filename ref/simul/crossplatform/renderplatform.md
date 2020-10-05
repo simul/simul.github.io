@@ -14,6 +14,7 @@ Functions
 ---
 
 | void | [ActivateRenderTargets](#ActivateRenderTargets)(simul::crossplatform::DeviceContext deviceContext, int num, simul::crossplatform::Texture targs, simul::crossplatform::Texture depth) |
+| void | [ApplyPass](#ApplyPass)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::EffectPass pass) |
 | ID3D12GraphicsCommandList * | [AsD3D12CommandList](#AsD3D12CommandList)() |
 | void | [BeginEvent](#BeginEvent)(simul::crossplatform::DeviceContext deviceContext, char name) |
 | void | [Clear](#Clear)(simul::crossplatform::DeviceContext deviceContext, vec4 colour_rgba) |
@@ -85,6 +86,7 @@ Functions
 | void | [StoreRenderState](#StoreRenderState)(simul::crossplatform::DeviceContext) |
 | void | [SynchronizeCacheAndState](#SynchronizeCacheAndState)(simul::crossplatform::DeviceContext) |
 | vec4 | [TexelQuery](#TexelQuery)(simul::crossplatform::DeviceContext deviceContext, int query_id, uint2 pos, simul::crossplatform::Texture texture) |
+| void | [UnapplyPass](#UnapplyPass)(simul::crossplatform::DeviceContext deviceContext) |
 | bool | [ApplyContextState](#ApplyContextState)(simul::crossplatform::DeviceContext, bool) |
 
 
@@ -93,6 +95,11 @@ Functions
 <a name="ActivateRenderTargets"></a>
 ### void ActivateRenderTargets(simul::crossplatform::DeviceContext deviceContext, int num, simul::crossplatform::Texture targs, simul::crossplatform::Texture depth)
 Make the specified rendertargets and optional depth target active.
+<a name="ApplyPass"></a>
+### void ApplyPass(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::EffectPass pass)
+<summary>
+Apply the specified effect pass for use in a draw or compute call. Must be followed by UnapplyPass() when done.
+</summary>
 <a name="AsD3D12CommandList"></a>
 ### ID3D12GraphicsCommandList * AsD3D12CommandList()
 Returns the DX12 graphics command list
@@ -314,6 +321,11 @@ the API state is forced to the cached state. This can be called at the start of 
 <a name="TexelQuery"></a>
 ### vec4 TexelQuery(simul::crossplatform::DeviceContext deviceContext, int query_id, uint2 pos, simul::crossplatform::Texture texture)
 Query for the texture value at the specified position in the texture. On most API's, the query will have a few frames' latency.
+<a name="UnapplyPass"></a>
+### void UnapplyPass(simul::crossplatform::DeviceContext deviceContext)
+<summary>
+Unapply the previously applied effect pass after use in a draw or compute call.
+</summary>
 <a name="ApplyContextState"></a>
 ### bool ApplyContextState(simul::crossplatform::DeviceContext, bool)
 This is called by draw functions to do any lazy updating prior to the actual API draw/dispatch call.
