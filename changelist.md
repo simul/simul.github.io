@@ -7,6 +7,8 @@ weight: 120
 
 Version 4.3
 ---
+Mon 05 Oct : Update to ExternalDynamicValues.  
+Mon 05 Oct : Update to full init  
 Mon 05 Oct : Update to ExternalStruct to include WindowGrid and LightingMode. Fix to Sequencer. Disabled Random Seed  
 Fri 02 Oct : Added Save/Load functions to Aurora.  
 Fri 02 Oct : Fix layout in UnityPluginInterface.h and commit Platform ptr.  
@@ -105,7 +107,5 @@ Sun 12 Jul : Fix Spectrum json location.
 Sun 12 Jul : Fix compile error.  
 Sat 11 Jul : Fix some warnings.  
 Sat 11 Jul : Merges from 4.3 for platform support.  
-Sat 11 Jul : Remove unwanted files.  
-Sat 11 Jul : Spectrum PLATFORM_TXT.  
 
 <hr>
