@@ -7,6 +7,9 @@ weight: 120
 
 Version 4.3
 ---
+Wed 07 Oct : General fix for warning for casting. Aurora UI change to match engines, docs updated. Shaders/Vulkan/CMakeLists.txt changed to use Platform/Vulkan/Sfx/Vulkan.json. Commit Platform ptr.  
+Wed 07 Oct : enum fixes for Topology.  
+Wed 07 Oct : Update Vulkan json  
 Mon 05 Oct : Update to ExternalDynamicValues.  
 Mon 05 Oct : Update to full init  
 Mon 05 Oct : Update to ExternalStruct to include WindowGrid and LightingMode. Fix to Sequencer. Disabled Random Seed  
@@ -104,8 +107,5 @@ Sun 12 Jul : Remove WIN64=1 for Linux
 Sun 12 Jul : DX12_JSON_FILE  
 Sun 12 Jul : Fix Spectrum json location.  
 Sun 12 Jul : Fix Spectrum json location.  
-Sun 12 Jul : Fix compile error.  
-Sat 11 Jul : Fix some warnings.  
-Sat 11 Jul : Merges from 4.3 for platform support.  
 
 <hr>
