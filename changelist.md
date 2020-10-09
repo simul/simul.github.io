@@ -7,6 +7,8 @@ weight: 120
 
 Version 4.3
 ---
+Wed 07 Oct : Platform ptr.  
+Wed 07 Oct : Platform ptr.  
 Wed 07 Oct : General fix for warning for casting. Aurora UI change to match engines, docs updated. Shaders/Vulkan/CMakeLists.txt changed to use Platform/Vulkan/Sfx/Vulkan.json. Commit Platform ptr.  
 Wed 07 Oct : enum fixes for Topology.  
 Wed 07 Oct : Update Vulkan json  
@@ -105,7 +107,5 @@ Mon 13 Jul : SkyKeyframer::GetSiderealTimeDegrees() now uses interpolatedKeyfram
 Sun 12 Jul : Xbox header fix.  
 Sun 12 Jul : Remove WIN64=1 for Linux  
 Sun 12 Jul : DX12_JSON_FILE  
-Sun 12 Jul : Fix Spectrum json location.  
-Sun 12 Jul : Fix Spectrum json location.  
 
 <hr>
