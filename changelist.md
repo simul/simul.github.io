@@ -7,12 +7,14 @@ weight: 120
 
 Version 4.3
 ---
+Fri 09 Oct : Check version number for ExternalDynamicValues and ExternalRenderValues. Match structures with 4.2a.  
 Wed 07 Oct : Platform ptr.  
 Wed 07 Oct : Platform ptr.  
 Wed 07 Oct : General fix for warning for casting. Aurora UI change to match engines, docs updated. Shaders/Vulkan/CMakeLists.txt changed to use Platform/Vulkan/Sfx/Vulkan.json. Commit Platform ptr.  
 Wed 07 Oct : enum fixes for Topology.  
 Wed 07 Oct : Update Vulkan json  
 Mon 05 Oct : Update to ExternalDynamicValues.  
+Mon 05 Oct : Small fixes for unity  
 Mon 05 Oct : Update to full init  
 Mon 05 Oct : Update to ExternalStruct to include WindowGrid and LightingMode. Fix to Sequencer. Disabled Random Seed  
 Fri 02 Oct : Added Save/Load functions to Aurora.  
@@ -105,7 +107,5 @@ Wed 15 Jul : Adjust BrightnessPower value.
 Wed 15 Jul : Added edited MilkyWay texture, adjusted default BrightnessPower to 0.05.  
 Mon 13 Jul : SkyKeyframer::GetSiderealTimeDegrees() now uses interpolatedKeyframe.time. Fix for Sky Background doing full reverse rotation before midnight.  
 Sun 12 Jul : Xbox header fix.  
-Sun 12 Jul : Remove WIN64=1 for Linux  
-Sun 12 Jul : DX12_JSON_FILE  
 
 <hr>

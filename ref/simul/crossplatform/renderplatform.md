@@ -161,6 +161,7 @@ Create a shader.
 Create a platform-specific texture instance.
 <a name="Destroy"></a>
 ### void Destroy(simul::crossplatform::Effect e)
+Create a platform-specific effect pass.
 Destroy the effect when it is safe to do so. The pointer can now be reassigned or nulled.
 <a name="DispatchCompute"></a>
 ### void DispatchCompute(simul::crossplatform::DeviceContext deviceContext, int w, int l, int d)
