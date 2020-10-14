@@ -78,6 +78,7 @@ The properties are:
 - churn
 - extinction
 - rainToSnow
+- precipitationBaseKm
 - precipitationWindEffect
 - precipitationWaver
 - diffusivity
@@ -150,7 +151,9 @@ Fields
 
 **rain_to_snow**  < The amount of rain/snow etc.
 
-**diffusivity**  < If zero, precipitation is interpreted as rain. If one, it is snow.
+**precipitation_base_km**  < If zero, precipitation is interpreted as rain. If one, it is snow.
+
+**diffusivity**  < The lowest altitude that the precipitation can occur; the highest altitude is dictated by cloud_base_km.
 
 **max_density_gm3**  < How much the edges of clouds should be diffused.
 
