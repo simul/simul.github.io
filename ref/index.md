@@ -17,12 +17,12 @@ This is all automatically generated from our codebase, so apologies for any erro
 
 * [**Math**](simul/math.html)                 
 
-* [**sky**](simul/sky.html)       
+* [**Sky**](simul/sky.html)       
 
-* [**clouds**](simul/clouds.html)         
+* [**Clouds**](simul/clouds.html)         
 
-* [**terrain**](simul/terrain.html)  
+* [**Terrain**](simul/terrain.html)  
 
-* [**crossplatform**](simul/crossplatform.html)       
+* [**Crossplatform**](simul/crossplatform.html)       
 
 * [**TrueSkyPluginRender**](simul/plugin.html)          

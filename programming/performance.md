@@ -90,10 +90,11 @@ If you have noticed your water "shimmering", it may be because you need to incre
 
 
 
+<div class="ue4-specific">
+
 Low performance
 ===============
 
-<div class="ue4-specific">
 Create a SkyDome with trueSKY
 ----------------------------
 With trueSKY, you can create an Cubemap of the sky. While you will lose some visual fidelity and the ability to move through the clouds, this is a great way to incorporate high quality, customised clouds with a minimal performance hit.

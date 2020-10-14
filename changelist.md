@@ -7,6 +7,8 @@ weight: 120
 
 Version 4.3
 ---
+Wed 14 Oct : Show Auroral Oval is default on in SkySequencer.  
+Wed 14 Oct : Added Capitals to ref headers and moved a heading into a class to make this cleaner in performance page  
 Tue 13 Oct : Added PrecipitationBaseKm to define lower bound of PrecipitationLayers. WIP forced Z nearest filtering.  
 Fri 09 Oct : Check version number for ExternalDynamicValues and ExternalRenderValues. Match structures with 4.2a.  
 Fri 09 Oct : Option to disable a layer in Sequencer. Max Density Fix. Removal of High Detail proportion  
@@ -105,7 +107,5 @@ Thu 23 Jul : Docs - Adding image and updating TimeProgression on UE4 Page
 Thu 23 Jul : Fix to no Moon Texture by default - adding function to get a specific moon by ID  
 Wed 22 Jul : Try to initialize SIMUL_SOURCE_BUILD depending on whether source is present.  
 Sat 18 Jul : nightly commit  
-Thu 16 Jul : Updated Aurora::RecompileShaders and Aurora::RestoreDeviceObjects  
-Wed 15 Jul : Adjust BrightnessPower value.  
 
 <hr>
