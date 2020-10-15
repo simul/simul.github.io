@@ -41,6 +41,18 @@ Aurora Layers - Alien with layer details:
 
 The shape of aurorae is defined by the interactions of electrons and other charged particles from the solar wind with the planet's electromagnetic field in the upper atmosphere. To adjust the generation of aurorae, you can modify the four FAC (Field Aligned Currents) controls. These adjust the arc length, radius and global position for each of the four field aligned currents. View the [How it works](works.html) section for a more full description of how trueSKY generates aurorae.
 
-Aurorae UI and controls:
+Aurorae UI and controls - SkySequencer:
 ![](/images/aurorae/auroraeSkyUI.png)
 
+
+<div class="ue4-specific">
+Aurorae UI and controls - Unreal Engine 4:
+![](/images/aurorae/auroraeSkyUI_UE4.png)
+
+</div>
+
+<div class="unity-specific">
+Aurorae UI and controls - Unity:
+![](/images/aurorae/auroraeSkyUI_Unity.png)
+
+</div>

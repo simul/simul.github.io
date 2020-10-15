@@ -7,6 +7,7 @@ weight: 120
 
 Version 4.3
 ---
+Thu 15 Oct : Updated Aurorae Docs.  
 Wed 14 Oct : Show Auroral Oval is default on in SkySequencer.  
 Wed 14 Oct : Added Capitals to ref headers and moved a heading into a class to make this cleaner in performance page  
 Tue 13 Oct : Added PrecipitationBaseKm to define lower bound of PrecipitationLayers. WIP forced Z nearest filtering.  
@@ -106,6 +107,5 @@ Fri 24 Jul : Docs - Added tutorial videos to relevant Categories - Buoyancy page
 Thu 23 Jul : Docs - Adding image and updating TimeProgression on UE4 Page  
 Thu 23 Jul : Fix to no Moon Texture by default - adding function to get a specific moon by ID  
 Wed 22 Jul : Try to initialize SIMUL_SOURCE_BUILD depending on whether source is present.  
-Sat 18 Jul : nightly commit  
 
 <hr>
