@@ -101,8 +101,3 @@ Once initialize is selected, you should see trueSKY appear in the scene, althoug
 
 Now you are almost ready to start creating amazing environments with trueSKY, you just need to activate your license within the sequencer. Head over [here to learn how](/tutorials/sequencer/overview#registration).
 
-
-4: Transparent materials
-------------------------
-1.
-

@@ -7,17 +7,18 @@ weight: 70
 
 
 
+The trueSKY plugin for Unreal Engine allows time progression to be set directly through the progression scale setting within the truesky actor. Setting this value will control the speed at which time progresses. When using the default time unit, whose setting is found within the Times advanced settings, which controls the units used to measure time and is by default set to a 24 hour system, you can set the progression scale to 1 which will allow for time to progress in real-time (such that 1 second in the engine is 1 second in real life) and setting it to 3600 will make 1 hour in-game progress for each second passing.
+
+To calculate a specific amount of time for a full day to progress, we can just multiply the number of minutes in a 24 hour cycle by 60 (representing the number of seconds within each minute).
+
+For example, if we are aiming for a full 24 hour period to take 5 minutes in-game, we would multiply 5 by 60 giving a value of 300, which if used as the progression scale, will cause the 24 hour period to take 5 minutes.
 
 <div class="ue4-specific">
 
 Via Blueprints
 ==============
 
-The trueSKY plugin for Unreal Engine allows time progression to be set directly through the progression scale setting within the sequence actor. Setting this value will control the speed at which time progresses. When using the default time unit, whose setting is found within the Times advanced settings, which controls the units used to measure time and is by default set to a 24 hour system, you can set the progression scale to 1 which will allow for time to progress in real-time (such that 1 second in the engine is 1 second in real life) and setting it to 3600 will make 1 hour in-game progress for each second passing.
 
-To calculate a specific amount of time for a full day to progress, we can just multiply the number of minutes in a 24 hour cycle by 60 (representing the number of seconds within each minute).
-
-For example, if we are aiming for a full 24 hour period to take 5 minutes in-game, we would multiply 5 by 60 giving a value of 300, which if used as the progression scale, will cause the 24 hour period to take 5 minutes.
 We can also control the time progression via blueprints. Previous versions of the trueSKY plugin supplied a "trueSKYDemo" which could be placed within the scene to allow for time progression. However with the integration of time progression directly into the sequence actor, we have removed this from the contents folders.
 
 However, control via blueprints has not been completely removed. You can add the trueSKY sequence actor to a blueprint, drag a node from it and search for "time", which will show the "get time" and "set time" variables that are exposed for use within blueprints. This allows for time to be set or interpolated directly through blueprints. If you also have a progression scale set, this progression will continue as normal from the newly set time. 
@@ -37,6 +38,11 @@ For example, you could use a trigger box so that the time variable is set to a s
 
 Via Scripting
 ================
+
+With 4.3 we have added built in time progression into the trueSKY actor as can be seen documented above
+
+Legacy Information for Unity versions prior to 4.3
+---------------------------------------------
 
 Unlike Unreal, if you press Play, the clouds will move without any modifications. However, they will be moving very quickly. This is because we are not scaling the raw Delta Time input just yet, so every second in real time is progressing trueSKY by one whole day. It is unlikely that you would want the days to move so quickly, so try replacing the second argument in the division function that is receiving the Delta Time input, with a more suitable value. For example, a value of 60 will equate one trueSKY day to 60 seconds, a value of 3600 would equal an hour and a value of 86400 (60 x 60 x 24) would simulate a real day. In this example I am using 600, so a full day will pass in ten minutes. If you want the scene to start at a specific time, try changing the default value of the Time float variable (where 0.0 is the start of the first day, 0.5 is noon on the first day and 1.0 is the start of the second day). 
 

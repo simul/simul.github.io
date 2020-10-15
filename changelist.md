@@ -7,6 +7,7 @@ weight: 120
 
 Version 4.3
 ---
+Thu 15 Oct : Docs - Update time progression page to reflect unity changes  
 Thu 15 Oct : Updated Aurorae Docs.  
 Wed 14 Oct : Show Auroral Oval is default on in SkySequencer.  
 Wed 14 Oct : Added Capitals to ref headers and moved a heading into a class to make this cleaner in performance page  
@@ -106,6 +107,5 @@ Fri 24 Jul : Update to IG Licence Agreement
 Fri 24 Jul : Docs - Added tutorial videos to relevant Categories - Buoyancy page added - Attempted fixes to Indie licences directing to incorrect page and 404 errors. Attempted fix to IG licencing being a 404, Updated links within FAQ  
 Thu 23 Jul : Docs - Adding image and updating TimeProgression on UE4 Page  
 Thu 23 Jul : Fix to no Moon Texture by default - adding function to get a specific moon by ID  
-Wed 22 Jul : Try to initialize SIMUL_SOURCE_BUILD depending on whether source is present.  
 
 <hr>
