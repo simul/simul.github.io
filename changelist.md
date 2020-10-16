@@ -7,6 +7,7 @@ weight: 120
 
 Version 4.3
 ---
+Fri 16 Oct : Re-enabling copy code  
 Thu 15 Oct : Docs - Update time progression page to reflect unity changes  
 Thu 15 Oct : Updated Aurorae Docs.  
 Wed 14 Oct : Show Auroral Oval is default on in SkySequencer.  
@@ -106,6 +107,5 @@ Fri 24 Jul : Doc Sidebar Update
 Fri 24 Jul : Update to IG Licence Agreement  
 Fri 24 Jul : Docs - Added tutorial videos to relevant Categories - Buoyancy page added - Attempted fixes to Indie licences directing to incorrect page and 404 errors. Attempted fix to IG licencing being a 404, Updated links within FAQ  
 Thu 23 Jul : Docs - Adding image and updating TimeProgression on UE4 Page  
-Thu 23 Jul : Fix to no Moon Texture by default - adding function to get a specific moon by ID  
 
 <hr>
