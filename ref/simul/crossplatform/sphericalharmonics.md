@@ -16,12 +16,12 @@ Functions
 ---
 
 | void | [CalcSphericalHarmonics](#CalcSphericalHarmonics)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture texture) |
-| void | [CopyMip](#CopyMip)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture tex, int face, int mip, float blend) |
+| void | [CopyMip](#CopyMip)(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Texture tex, int face, int mip, float blend) |
 | void | [InvalidateDeviceObjects](#InvalidateDeviceObjects)() |
 | bool | [Probe](#Probe)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture buffer_texture, int mip_size, int face_index, uint2 pos, uint2 size, vec4 targetValuesFloat4) |
 | void | [RecompileShaders](#RecompileShaders)() |
-| void | [RenderEnvmap](#RenderEnvmap)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture target, int cubemapIndex, float blend) |
-| void | [RenderMipsByRoughness](#RenderMipsByRoughness)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture target) |
+| void | [RenderEnvmap](#RenderEnvmap)(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Texture target, int cubemapIndex, float blend) |
+| void | [RenderMipsByRoughness](#RenderMipsByRoughness)(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Texture target) |
 | void | [ResetBuffers](#ResetBuffers)() |
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform r) |
 
@@ -36,7 +36,7 @@ Functions
 Calculate the spherical harmonics of this cubemap and store the result internally.
 Changing the number of bands will resize the internal storeage.
 <a name="CopyMip"></a>
-### void CopyMip(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture tex, int face, int mip, float blend)
+### void CopyMip(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Texture tex, int face, int mip, float blend)
 Copy from a given mip face to the next one down, with blending or without (if blend is 0).
 <a name="InvalidateDeviceObjects"></a>
 ### void InvalidateDeviceObjects()
@@ -48,10 +48,10 @@ Probe values from cubemap.
 ### void RecompileShaders()
 Platform-dependent function to reload the shaders - only use this for debug purposes.
 <a name="RenderEnvmap"></a>
-### void RenderEnvmap(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture target, int cubemapIndex, float blend)
+### void RenderEnvmap(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Texture target, int cubemapIndex, float blend)
 Draw a diffuse environment map to the specified framebuffer.
 <a name="RenderMipsByRoughness"></a>
-### void RenderMipsByRoughness(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture target)
+### void RenderMipsByRoughness(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Texture target)
 Taking the zero mip as the initial data source, use the formula roughness=mip/max_mip to render it down to the lower mips.
 <a name="ResetBuffers"></a>
 ### void ResetBuffers()

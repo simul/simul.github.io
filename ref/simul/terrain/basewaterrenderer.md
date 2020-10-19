@@ -33,15 +33,15 @@ Functions
 | vec4 | [getWaterProbeValues](#getWaterProbeValues)(int ID) |
 | simul::terrain::WaterWaveletsSimulator * | [getWaterWaveletsSimulator](#getWaterWaveletsSimulator)() |
 | void | [InvalidateDeviceObjects](#InvalidateDeviceObjects)() |
-| void | [PreRenderUpdate](#PreRenderUpdate)(simul::crossplatform::DeviceContext deviceContext, float real_time_seconds) |
+| void | [PreRenderUpdate](#PreRenderUpdate)(simul::crossplatform::GraphicsDeviceContext deviceContext, float real_time_seconds) |
 | void | [RecompileShaders](#RecompileShaders)() |
 | void | [removeBoundedWaterObject](#removeBoundedWaterObject)(uint ID) |
 | void | [removeWaterBuoyancyObject](#removeWaterBuoyancyObject)(int ID) |
 | void | [removeWaterMaskObject](#removeWaterMaskObject)(int ID) |
 | void | [removeWaterProbe](#removeWaterProbe)(int ID) |
-| void | [Render](#Render)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Viewport depthViewports, simul::crossplatform::Texture depthTexture, simul::crossplatform::Texture colourTexture, simul::crossplatform::Texture cubemap, int passNo, int vr) |
-| void | [RenderFlowRays](#RenderFlowRays)(simul::crossplatform::DeviceContext deviceContext, int width, int height) |
-| void | [RenderTextures](#RenderTextures)(simul::crossplatform::DeviceContext deviceContext, int width, int depth) |
+| void | [Render](#Render)(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Viewport depthViewports, simul::crossplatform::Texture depthTexture, simul::crossplatform::Texture colourTexture, simul::crossplatform::Texture cubemap, int passNo, int vr) |
+| void | [RenderFlowRays](#RenderFlowRays)(simul::crossplatform::GraphicsDeviceContext deviceContext, int width, int height) |
+| void | [RenderTextures](#RenderTextures)(simul::crossplatform::GraphicsDeviceContext deviceContext, int width, int depth) |
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform r) |
 | void | [SetBaseSkyInterface](#SetBaseSkyInterface)(simul::sky::BaseSkyInterface si, simul::sky::AtmosphericScatteringInterface ai) |
 | void | [setShoreDepthTexture](#setShoreDepthTexture)(simul::crossplatform::Texture texture) |
@@ -118,7 +118,7 @@ Get the water wavelets simulator object
 ### void InvalidateDeviceObjects()
 Platform-dependent function called when uninitializing the water renderer.
 <a name="PreRenderUpdate"></a>
-### void PreRenderUpdate(simul::crossplatform::DeviceContext deviceContext, float real_time_seconds)
+### void PreRenderUpdate(simul::crossplatform::GraphicsDeviceContext deviceContext, float real_time_seconds)
 Once per-frame update. Do this before any rendering each frame.
 <a name="RecompileShaders"></a>
 ### void RecompileShaders()
@@ -136,13 +136,13 @@ Remove a water masking object
 ### void removeWaterProbe(int ID)
 Remove a water probe
 <a name="Render"></a>
-### void Render(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Viewport depthViewports, simul::crossplatform::Texture depthTexture, simul::crossplatform::Texture colourTexture, simul::crossplatform::Texture cubemap, int passNo, int vr)
+### void Render(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Viewport depthViewports, simul::crossplatform::Texture depthTexture, simul::crossplatform::Texture colourTexture, simul::crossplatform::Texture cubemap, int passNo, int vr)
 Main Render function.
 <a name="RenderFlowRays"></a>
-### void RenderFlowRays(simul::crossplatform::DeviceContext deviceContext, int width, int height)
+### void RenderFlowRays(simul::crossplatform::GraphicsDeviceContext deviceContext, int width, int height)
 Visualise the path of flow rays.
 <a name="RenderTextures"></a>
-### void RenderTextures(simul::crossplatform::DeviceContext deviceContext, int width, int depth)
+### void RenderTextures(simul::crossplatform::GraphicsDeviceContext deviceContext, int width, int depth)
 Render debug textures.
 <a name="RestoreDeviceObjects"></a>
 ### void RestoreDeviceObjects(simul::crossplatform::RenderPlatform r)

@@ -17,13 +17,13 @@ Functions
 |  | [~PrecipitationRenderer](#~PrecipitationRenderer)() |
 | void | [InvalidateDeviceObjects](#InvalidateDeviceObjects)() |
 | void | [New](#New)() |
-| void | [PreRenderUpdate](#PreRenderUpdate)(simul::crossplatform::DeviceContext deviceContext, float dt_seconds) |
+| void | [PreRenderUpdate](#PreRenderUpdate)(simul::crossplatform::GraphicsDeviceContext deviceContext, float dt_seconds) |
 | void | [RecompileShaders](#RecompileShaders)() |
-| void | [Render](#Render)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture depth_tex, simul::crossplatform::Texture cubemapTexture, float max_fade_distance_metres, vec4 viewportTextureRegionXYWH, vec3 sunlight, vec3 moonlight, simul::clouds::RainMethod rainMethod, float time, bool write_blend_alpha) |
-| void | [RenderOverlay](#RenderOverlay)(simul::crossplatform::DeviceContext deviceContext, int x0, int y0, int dx, int dy) |
+| void | [Render](#Render)(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Texture depth_tex, simul::crossplatform::Texture cubemapTexture, float max_fade_distance_metres, vec4 viewportTextureRegionXYWH, vec3 sunlight, vec3 moonlight, simul::clouds::RainMethod rainMethod, float time, bool write_blend_alpha) |
+| void | [RenderOverlay](#RenderOverlay)(simul::crossplatform::GraphicsDeviceContext deviceContext, int x0, int y0, int dx, int dy) |
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform renderPlatform) |
 | void | [SetBaseSkyInterface](#SetBaseSkyInterface)(simul::sky::BaseSkyInterface s) |
-| void | [SetPrecipitaionVolume](#SetPrecipitaionVolume)(CloudShadowStruct str) |
+| void | [SetPrecipitationVolume](#SetPrecipitationVolume)(CloudShadowStruct str) |
 | void | [SetRainDepthTextureScale](#SetRainDepthTextureScale)(float s) |
 | void | [SetRandomTexture3D](#SetRandomTexture3D)(simul::crossplatform::Texture texture) |
 | void | [SetWind](#SetWind)(float speed, float heading_degrees) |
@@ -45,16 +45,16 @@ Platform-dependent function called when uninitializing the precipitation rendere
 ### void New()
 Clear the data()
 <a name="PreRenderUpdate"></a>
-### void PreRenderUpdate(simul::crossplatform::DeviceContext deviceContext, float dt_seconds)
+### void PreRenderUpdate(simul::crossplatform::GraphicsDeviceContext deviceContext, float dt_seconds)
 Once per-frame update. Do this before any rendering each frame.
 <a name="RecompileShaders"></a>
 ### void RecompileShaders()
 Platform-dependent function to reload the shaders - only use this for debug purposes.
 <a name="Render"></a>
-### void Render(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture depth_tex, simul::crossplatform::Texture cubemapTexture, float max_fade_distance_metres, vec4 viewportTextureRegionXYWH, vec3 sunlight, vec3 moonlight, simul::clouds::RainMethod rainMethod, float time, bool write_blend_alpha)
+### void Render(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Texture depth_tex, simul::crossplatform::Texture cubemapTexture, float max_fade_distance_metres, vec4 viewportTextureRegionXYWH, vec3 sunlight, vec3 moonlight, simul::clouds::RainMethod rainMethod, float time, bool write_blend_alpha)
 Call this to draw precipitation.
 <a name="RenderOverlay"></a>
-### void RenderOverlay(simul::crossplatform::DeviceContext deviceContext, int x0, int y0, int dx, int dy)
+### void RenderOverlay(simul::crossplatform::GraphicsDeviceContext deviceContext, int x0, int y0, int dx, int dy)
 Show the textures onscreen for debugging.
 <a name="RestoreDeviceObjects"></a>
 ### void RestoreDeviceObjects(simul::crossplatform::RenderPlatform renderPlatform)
@@ -62,8 +62,8 @@ Platform-dependent function called when initializing the precipitation renderer.
 <a name="SetBaseSkyInterface"></a>
 ### void SetBaseSkyInterface(simul::sky::BaseSkyInterface s)
 Set the sky and atmospherics interface.
-<a name="SetPrecipitaionVolume"></a>
-### void SetPrecipitaionVolume(CloudShadowStruct str)
+<a name="SetPrecipitationVolume"></a>
+### void SetPrecipitationVolume(CloudShadowStruct str)
 The class that renders rain and snow.
 <a name="SetRainDepthTextureScale"></a>
 ### void SetRainDepthTextureScale(float s)

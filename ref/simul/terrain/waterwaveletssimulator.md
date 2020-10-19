@@ -13,14 +13,14 @@ class WaterWaveletsSimulator
 Functions
 ---
 
-| void | [GenerateContourMap](#GenerateContourMap)(simul::crossplatform::DeviceContext deviceContext, simul::terrain::shoreTexture shoreDepth, float oceanHeight) |
+| void | [GenerateContourMap](#GenerateContourMap)(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::terrain::shoreTexture shoreDepth, float oceanHeight) |
 | void | [GenerateSurfaceFlow](#GenerateSurfaceFlow)(simul::crossplatform::DeviceContext deviceContext, simul::terrain::WaveGrid surfaceFlowGrid) |
 | simul::terrain::surfaceFlowRayBuffer * | [getBaseFlowRayBuffer](#getBaseFlowRayBuffer)() |
 | simul::crossplatform::Texture * | [getContourMap](#getContourMap)() |
 | simul::terrain::surfaceFlowRayBuffer * | [getSubFlowRayBuffer](#getSubFlowRayBuffer)() |
 | void | [InitialiseWaveGrid](#InitialiseWaveGrid)(simul::terrain::WaveGrid newWaveGrid, uint2 dimension, int theta, int k) |
 | void | [InvalidateDeviceObjects](#InvalidateDeviceObjects)() |
-| void | [PrecomputeProfileBuffers](#PrecomputeProfileBuffers)(simul::crossplatform::DeviceContext deviceContext, simul::terrain::WaveGrid targetWaveGrid, float real_time_seconds, simul::terrain::localWaterValues waterValues) |
+| void | [PrecomputeProfileBuffers](#PrecomputeProfileBuffers)(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::terrain::WaveGrid targetWaveGrid, float real_time_seconds, simul::terrain::localWaterValues waterValues) |
 | void | [PrecomputeWaveSpeeds](#PrecomputeWaveSpeeds)(simul::crossplatform::DeviceContext deviceContext) |
 | void | [ResetAmplitudeGrid](#ResetAmplitudeGrid)(simul::crossplatform::DeviceContext deviceContext) |
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform renderPlatform) |
@@ -32,7 +32,7 @@ Functions
 Functions
 ---
 <a name="GenerateContourMap"></a>
-### void GenerateContourMap(simul::crossplatform::DeviceContext deviceContext, simul::terrain::shoreTexture shoreDepth, float oceanHeight)
+### void GenerateContourMap(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::terrain::shoreTexture shoreDepth, float oceanHeight)
 Generate a contour map that stores the normal of the shore surface
 <a name="GenerateSurfaceFlow"></a>
 ### void GenerateSurfaceFlow(simul::crossplatform::DeviceContext deviceContext, simul::terrain::WaveGrid surfaceFlowGrid)
@@ -53,7 +53,7 @@ Initialise a given wave grid
 ### void InvalidateDeviceObjects()
 Platform-dependent function called when uninitializing the wavelets simulator.
 <a name="PrecomputeProfileBuffers"></a>
-### void PrecomputeProfileBuffers(simul::crossplatform::DeviceContext deviceContext, simul::terrain::WaveGrid targetWaveGrid, float real_time_seconds, simul::terrain::localWaterValues waterValues)
+### void PrecomputeProfileBuffers(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::terrain::WaveGrid targetWaveGrid, float real_time_seconds, simul::terrain::localWaterValues waterValues)
 Precompute the profile buffers of a given wave grid
 <a name="PrecomputeWaveSpeeds"></a>
 ### void PrecomputeWaveSpeeds(simul::crossplatform::DeviceContext deviceContext)

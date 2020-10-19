@@ -27,18 +27,18 @@ Functions
 | VolumeQueryResult | [GetPointQuery](#GetPointQuery)(int id) |
 | int | [GetQueryIdForViewId](#GetQueryIdForViewId)(int view_id) |
 | simul::crossplatform::Texture * | [GetRandomTexture3D](#GetRandomTexture3D)() |
-| float | [GetSunOcclusion](#GetSunOcclusion)(simul::crossplatform::DeviceContext deviceContext, simul::math::Vector3 cam_pos) |
+| float | [GetSunOcclusion](#GetSunOcclusion)(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::math::Vector3 cam_pos) |
 | void | [InvalidateDeviceObjects](#InvalidateDeviceObjects)() |
 | bool | [IsCameraAboveCloudBase](#IsCameraAboveCloudBase)(simul::math::Vector3 cam_pos) |
 | void | [MakeCloudShadowTexture](#MakeCloudShadowTexture)() |
-| void | [PreRenderUpdate](#PreRenderUpdate)(simul::crossplatform::DeviceContext deviceContext, float real_time) |
+| void | [PreRenderUpdate](#PreRenderUpdate)(simul::crossplatform::GraphicsDeviceContext deviceContext, float real_time) |
 | void | [RecompileShaders](#RecompileShaders)() |
-| bool | [Render](#Render)(simul::crossplatform::DeviceContext deviceContext, float exposure, simul::clouds::TrueSkyRenderMode renderMode, simul::crossplatform::NearFarPass nearFarPass, simul::crossplatform::Texture depth_tex, simul::sky::ScatteringVolume scatteringVolume, bool write_alpha, vec4 viewportTextureRegionXYWH, simul::crossplatform::AmortizationStruct amortizationStruct, simul::clouds::TwoResFramebuffer fb, simul::sky::LocalFadeTextures localFadeTextures, simul::crossplatform::Texture ambientCubemap) |
-| void | [RenderCloudGrid](#RenderCloudGrid)(simul::crossplatform::DeviceContext deviceContext, simul::clouds::CloudKeyframer ck) |
-| void | [RenderCloudShadowTexture](#RenderCloudShadowTexture)(simul::crossplatform::DeviceContext deviceContext) |
-| void | [RenderCloudVolumes](#RenderCloudVolumes)(simul::crossplatform::DeviceContext deviceContext, simul::clouds::CloudKeyframer ck) |
-| void | [RenderCrossSections](#RenderCrossSections)(simul::crossplatform::DeviceContext context) |
-| void | [RenderQueries](#RenderQueries)(simul::crossplatform::DeviceContext deviceContext) |
+| bool | [Render](#Render)(simul::crossplatform::GraphicsDeviceContext deviceContext, float exposure, simul::clouds::TrueSkyRenderMode renderMode, simul::crossplatform::NearFarPass nearFarPass, simul::crossplatform::Texture depth_tex, simul::sky::ScatteringVolume scatteringVolume, bool write_alpha, vec4 viewportTextureRegionXYWH, simul::crossplatform::AmortizationStruct amortizationStruct, simul::clouds::TwoResFramebuffer fb, simul::sky::LocalFadeTextures localFadeTextures, simul::crossplatform::Texture ambientCubemap) |
+| void | [RenderCloudGrid](#RenderCloudGrid)(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::clouds::CloudKeyframer ck) |
+| void | [RenderCloudShadowTexture](#RenderCloudShadowTexture)(simul::crossplatform::GraphicsDeviceContext deviceContext) |
+| void | [RenderCloudVolumes](#RenderCloudVolumes)(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::clouds::CloudKeyframer ck) |
+| void | [RenderCrossSections](#RenderCrossSections)(simul::crossplatform::GraphicsDeviceContext context) |
+| void | [RenderQueries](#RenderQueries)(simul::crossplatform::GraphicsDeviceContext deviceContext) |
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform renderPlatform) |
 | void | [SetEnableStorms](#SetEnableStorms)(bool s) |
 | void | [SetEnvironment](#SetEnvironment)(simul::clouds::Environment e) |
@@ -96,7 +96,7 @@ Get the query id for the specified view. If Render() has been called for the vie
 ### simul::crossplatform::Texture * GetRandomTexture3D()
 Get the random 3D texture.
 <a name="GetSunOcclusion"></a>
-### float GetSunOcclusion(simul::crossplatform::DeviceContext deviceContext, simul::math::Vector3 cam_pos)
+### float GetSunOcclusion(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::math::Vector3 cam_pos)
 Get a value for how much the sun is blocked from the clouds.
 <a name="InvalidateDeviceObjects"></a>
 ### void InvalidateDeviceObjects()
@@ -108,31 +108,31 @@ Return true if the camera is above the cloudbase altitude.
 ### void MakeCloudShadowTexture()
 Get an API-dependent identifier for the cloud's 2D shadow.
 <a name="PreRenderUpdate"></a>
-### void PreRenderUpdate(simul::crossplatform::DeviceContext deviceContext, float real_time)
+### void PreRenderUpdate(simul::crossplatform::GraphicsDeviceContext deviceContext, float real_time)
 Once per-frame update. Do this before any rendering each frame. Called by BaseWeatherRenderer.
 <a name="RecompileShaders"></a>
 ### void RecompileShaders()
 Platform-dependent function to reload the shaders - only use this for debug purposes.
 <a name="Render"></a>
-### bool Render(simul::crossplatform::DeviceContext deviceContext, float exposure, simul::clouds::TrueSkyRenderMode renderMode, simul::crossplatform::NearFarPass nearFarPass, simul::crossplatform::Texture depth_tex, simul::sky::ScatteringVolume scatteringVolume, bool write_alpha, vec4 viewportTextureRegionXYWH, simul::crossplatform::AmortizationStruct amortizationStruct, simul::clouds::TwoResFramebuffer fb, simul::sky::LocalFadeTextures localFadeTextures, simul::crossplatform::Texture ambientCubemap)
+### bool Render(simul::crossplatform::GraphicsDeviceContext deviceContext, float exposure, simul::clouds::TrueSkyRenderMode renderMode, simul::crossplatform::NearFarPass nearFarPass, simul::crossplatform::Texture depth_tex, simul::sky::ScatteringVolume scatteringVolume, bool write_alpha, vec4 viewportTextureRegionXYWH, simul::crossplatform::AmortizationStruct amortizationStruct, simul::clouds::TwoResFramebuffer fb, simul::sky::LocalFadeTextures localFadeTextures, simul::crossplatform::Texture ambientCubemap)
 Platform-dependent render function.
 <a name="RenderCloudGrid"></a>
-### void RenderCloudGrid(simul::crossplatform::DeviceContext deviceContext, simul::clouds::CloudKeyframer ck)
+### void RenderCloudGrid(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::clouds::CloudKeyframer ck)
 Render the cloud grid for debugging purposes
 <a name="RenderCloudShadowTexture"></a>
-### void RenderCloudShadowTexture(simul::crossplatform::DeviceContext deviceContext)
+### void RenderCloudShadowTexture(simul::crossplatform::GraphicsDeviceContext deviceContext)
 The cloud shadow texture:
 Centred on the viewer
 Aligned to the sun.
 Output is km in front of or behind the view pos where shadow starts
 <a name="RenderCloudVolumes"></a>
-### void RenderCloudVolumes(simul::crossplatform::DeviceContext deviceContext, simul::clouds::CloudKeyframer ck)
+### void RenderCloudVolumes(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::clouds::CloudKeyframer ck)
 Render the cloud volumes for debugging purposes
 <a name="RenderCrossSections"></a>
-### void RenderCrossSections(simul::crossplatform::DeviceContext context)
+### void RenderCrossSections(simul::crossplatform::GraphicsDeviceContext context)
 Show the cloud volumes onscreen by cross section.
 <a name="RenderQueries"></a>
-### void RenderQueries(simul::crossplatform::DeviceContext deviceContext)
+### void RenderQueries(simul::crossplatform::GraphicsDeviceContext deviceContext)
 Draw the queries in 3D
 <a name="RestoreDeviceObjects"></a>
 ### void RestoreDeviceObjects(simul::crossplatform::RenderPlatform renderPlatform)

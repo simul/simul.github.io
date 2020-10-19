@@ -16,7 +16,7 @@ Functions
 ---
 
 | void | [CleanupOldAllocations](#CleanupOldAllocations)(int max_age) |
-| bool | [CopySkylight](#CopySkylight)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture targetTexture, float targetShValues, int shOrder, mat4 engineToSimulMatrix4x4, int updateFrequency, float blend, float exposure, float gamma, vec3 ground_colour, int amortization, bool allFaces, bool allMips) |
+| bool | [CopySkylight](#CopySkylight)(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Texture targetTexture, float targetShValues, int shOrder, mat4 engineToSimulMatrix4x4, int updateFrequency, float blend, float exposure, float gamma, vec3 ground_colour, int amortization, bool allFaces, bool allMips) |
 | void | [EnsureEffectsAreBuilt](#EnsureEffectsAreBuilt)(simul::crossplatform::RenderPlatform r) |
 | void | [EnsureSkylight](#EnsureSkylight)(int cubemap_view_id, int size, int mips, simul::crossplatform::PixelFormat format, mat4 cubeToSimulMatrix, int shOrder, int updateFrequency, float blend, float exposure, float gamma, vec3 ground_colour, int amortization, bool allFaces, bool allMips) |
 | int | [GetAmortization](#GetAmortization)(int view_id) |
@@ -29,13 +29,13 @@ Functions
 | bool | [ProbeSkylight](#ProbeSkylight)(simul::crossplatform::DeviceContext pContext, int cubemap_view_id, int mip_size, int face_index, uint2 pos, uint2 size, vec4 targetValuesFloat4) |
 | void | [RecompileShaders](#RecompileShaders)() |
 | void | [ReloadTextures](#ReloadTextures)() |
-| void | [RenderOverlays](#RenderOverlays)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture texture, float exposure, float gamma) |
+| void | [RenderOverlays](#RenderOverlays)(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Texture texture, float exposure, float gamma) |
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform r) |
 | void | [SetAmortization](#SetAmortization)(int view_id, int a) |
 | void | [SetInterpolationMode](#SetInterpolationMode)(int value) |
 | void | [SetSequence](#SetSequence)(char txt) |
-| void | [PreRenderUpdate](#PreRenderUpdate)(simul::crossplatform::DeviceContext deviceContext) |
-| void | [RenderMixedResolutionSky](#RenderMixedResolutionSky)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture depthTexture, simul::crossplatform::Viewport depthViewport, float exposure, float gamma, float brightnessToUnity) |
+| void | [PreRenderUpdate](#PreRenderUpdate)(simul::crossplatform::GraphicsDeviceContext deviceContext) |
+| void | [RenderMixedResolutionSky](#RenderMixedResolutionSky)(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Texture depthTexture, simul::crossplatform::Viewport depthViewport, float exposure, float gamma, float brightnessToUnity) |
 
 
 
@@ -53,7 +53,7 @@ Functions
 ### void CleanupOldAllocations(int max_age)
 Delete GPU allocations to save memory. By default, max age is MaxViewAgeFrames. max_age=0 clears all views.
 <a name="CopySkylight"></a>
-### bool CopySkylight(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture targetTexture, float targetShValues, int shOrder, mat4 engineToSimulMatrix4x4, int updateFrequency, float blend, float exposure, float gamma, vec3 ground_colour, int amortization, bool allFaces, bool allMips)
+### bool CopySkylight(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Texture targetTexture, float targetShValues, int shOrder, mat4 engineToSimulMatrix4x4, int updateFrequency, float blend, float exposure, float gamma, vec3 ground_colour, int amortization, bool allFaces, bool allMips)
 Update the specified texture as a cubemap, and its spherical harmonics.
 Copy the specified skylight into the target texture. This texture MUST be the same size, format and mip count as
 was specified for this cubemap id when GetSkylight was called.
@@ -95,7 +95,7 @@ Platform-dependent function to reload the shaders - only use this for debug purp
 ### void ReloadTextures()
 Reload the textures
 <a name="RenderOverlays"></a>
-### void RenderOverlays(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture texture, float exposure, float gamma)
+### void RenderOverlays(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Texture texture, float exposure, float gamma)
 Render the active debug overlays
 <a name="RestoreDeviceObjects"></a>
 ### void RestoreDeviceObjects(simul::crossplatform::RenderPlatform r)
@@ -110,10 +110,10 @@ Set the interpolation mode for cloud updates
 ### void SetSequence(char txt)
 Load sequence data.
 <a name="PreRenderUpdate"></a>
-### void PreRenderUpdate(simul::crossplatform::DeviceContext deviceContext)
+### void PreRenderUpdate(simul::crossplatform::GraphicsDeviceContext deviceContext)
 Once per-frame update. Do this before any rendering each frame.
 <a name="RenderMixedResolutionSky"></a>
-### void RenderMixedResolutionSky(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture depthTexture, simul::crossplatform::Viewport depthViewport, float exposure, float gamma, float brightnessToUnity)
+### void RenderMixedResolutionSky(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Texture depthTexture, simul::crossplatform::Viewport depthViewport, float exposure, float gamma, float brightnessToUnity)
 Render the sky.
 
 Fields

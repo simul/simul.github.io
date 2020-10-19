@@ -6,14 +6,13 @@ weight: 0
 namespace clouds
 ===
 
-| Include: | Clouds/BaseGpuCloudGenerator.h |
+| Include: | Clouds/BaseLightningRenderer.h |
 
 
 
 Classes and Structures
 ---
 
-| class [BaseGpuCloudGenerator](clouds/basegpucloudgenerator.html) |  |
 | class [BaseLightningRenderer](clouds/baselightningrenderer.html) |  |
 | class [CellularCloudGrid](clouds/cellularcloudgrid.html) |  |
 | class [CellularCloudNode](clouds/cellularcloudnode.html) |  |

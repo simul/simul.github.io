@@ -25,7 +25,7 @@ Functions
 | simul::terrain::localWaterValues * | [getWaterValues](#getWaterValues)() |
 | simul::terrain::WaveGrid * | [getWaveGrid](#getWaveGrid)() |
 | void | [InvalidateDeviceObjects](#InvalidateDeviceObjects)() |
-| void | [PreRenderUpdate](#PreRenderUpdate)(simul::crossplatform::DeviceContext deviceContext, float real_time_seconds) |
+| void | [PreRenderUpdate](#PreRenderUpdate)(simul::crossplatform::GraphicsDeviceContext deviceContext, float real_time_seconds) |
 | void | [removeCustomWaterMesh](#removeCustomWaterMesh)() |
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform r) |
 | void | [setCustomWaterMesh](#setCustomWaterMesh)(simul::terrain::WaterMeshObjectValues newObject) |
@@ -80,7 +80,7 @@ Get the wave grid that the water object is using to generate its surface
 ### void InvalidateDeviceObjects()
 Platform-dependent function called when uinitializing the water object.
 <a name="PreRenderUpdate"></a>
-### void PreRenderUpdate(simul::crossplatform::DeviceContext deviceContext, float real_time_seconds)
+### void PreRenderUpdate(simul::crossplatform::GraphicsDeviceContext deviceContext, float real_time_seconds)
 Once per-frame update. Do this before any rendering each frame.
 <a name="removeCustomWaterMesh"></a>
 ### void removeCustomWaterMesh()

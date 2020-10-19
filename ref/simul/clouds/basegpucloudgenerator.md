@@ -6,27 +6,26 @@ weight: 0
 class BaseGpuCloudGenerator
 ===
 
-| Include: | Clouds/BaseGpuCloudGenerator.h |
+| Include: | Clouds/CloudRenderer.h |
 
-Base class for generating cloud volumes on the GPU.
-  
 
 
 Functions
 ---
 
+|  | [BaseGpuCloudGenerator](#BaseGpuCloudGenerator)() |
 | bool | [CanPerformGPULighting](#CanPerformGPULighting)() |
 | void | [FillDensityGrid](#FillDensityGrid)(simul::crossplatform::DeviceContext deviceContext, int index, simul::clouds::GpuCloudsParameters params, int start_texel, int texels, simul::crossplatform::Texture finalTexture, simul::clouds::CloudClass cloudClass) |
 | int | [GetDensityGridsize](#GetDensityGridsize)(int grid) |
 | simul::crossplatform::Texture * | [Make3DNoiseTexture](#Make3DNoiseTexture)(simul::crossplatform::DeviceContext deviceContext, int noise_size, float noise_src_ptr, int generation_number) |
-| void | [RenderSimulationTextures](#RenderSimulationTextures)(simul::crossplatform::DeviceContext context, int x0, int y0, int width, int height) |
-
-Base class for generating cloud volumes on the GPU.
-  
+| void | [RenderSimulationTextures](#RenderSimulationTextures)(simul::crossplatform::GraphicsDeviceContext context, int x0, int y0, int width, int height) |
 
 
 Functions
 ---
+<a name="BaseGpuCloudGenerator"></a>
+###  BaseGpuCloudGenerator()
+Base class for generating cloud volumes on the GPU.
 <a name="CanPerformGPULighting"></a>
 ### bool CanPerformGPULighting()
 Return true if the derived class can relight clouds using the GPU.
@@ -43,5 +42,5 @@ This depends on what float renderbuffer formats are supported.
 ### simul::crossplatform::Texture * Make3DNoiseTexture(simul::crossplatform::DeviceContext deviceContext, int noise_size, float noise_src_ptr, int generation_number)
 Create an API-specific noise texture, and return its pointer/identifier etc. as a void pointer.
 <a name="RenderSimulationTextures"></a>
-### void RenderSimulationTextures(simul::crossplatform::DeviceContext context, int x0, int y0, int width, int height)
+### void RenderSimulationTextures(simul::crossplatform::GraphicsDeviceContext context, int x0, int y0, int width, int height)
 For onscreen debug

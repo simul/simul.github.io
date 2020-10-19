@@ -13,18 +13,18 @@ class Texture
 Functions
 ---
 
-| void | [activateRenderTarget](#activateRenderTarget)(simul::crossplatform::DeviceContext deviceContext, int array_index, int mip_index) |
+| void | [activateRenderTarget](#activateRenderTarget)(simul::crossplatform::GraphicsDeviceContext deviceContext, int array_index, int mip_index) |
 | ID3D11RenderTargetView * | [AsD3D11RenderTargetView](#AsD3D11RenderTargetView)(int, int) |
 | ID3D11ShaderResourceView * | [AsD3D11ShaderResourceView](#AsD3D11ShaderResourceView)(simul::crossplatform::ShaderResourceType, int, int) |
 | ID3D11UnorderedAccessView * | [AsD3D11UnorderedAccessView](#AsD3D11UnorderedAccessView)(int, int) |
 | sce::Gnm::Texture * | [AsGnmTexture](#AsGnmTexture)(simul::crossplatform::ShaderResourceType, int, int) |
-| void | [ClearDepthStencil](#ClearDepthStencil)(simul::crossplatform::DeviceContext deviceContext, float, int) |
+| void | [ClearDepthStencil](#ClearDepthStencil)(simul::crossplatform::GraphicsDeviceContext deviceContext, float, int) |
 | void | [ClearFence](#ClearFence)(simul::crossplatform::DeviceContext deviceContext) |
-| void | [deactivateRenderTarget](#deactivateRenderTarget)(simul::crossplatform::DeviceContext deviceContext) |
+| void | [deactivateRenderTarget](#deactivateRenderTarget)(simul::crossplatform::GraphicsDeviceContext deviceContext) |
 | bool | [ensureTexture2DSizeAndFormat](#ensureTexture2DSizeAndFormat)(simul::crossplatform::RenderPlatform renderPlatform, int w, int l, simul::crossplatform::PixelFormat f, bool computable, bool rendertarget, bool depthstencil, int num_samples, int aa_quality, bool wrap, vec4 clear, float clearDepth, uint clearStencil) |
 | bool | [ensureTexture3DSizeAndFormat](#ensureTexture3DSizeAndFormat)(simul::crossplatform::RenderPlatform renderPlatform, int w, int l, int d, simul::crossplatform::PixelFormat frmt, bool computable, int mips, bool rendertargets) |
 | bool | [ensureTextureArraySizeAndFormat](#ensureTextureArraySizeAndFormat)(simul::crossplatform::RenderPlatform renderPlatform, int w, int l, int num, int mips, simul::crossplatform::PixelFormat f, bool computable, bool rendertarget, bool cubemap) |
-| void | [GenerateMips](#GenerateMips)(simul::crossplatform::DeviceContext deviceContext) |
+| void | [GenerateMips](#GenerateMips)(simul::crossplatform::GraphicsDeviceContext deviceContext) |
 | unsigned long long | [GetFence](#GetFence)(simul::crossplatform::DeviceContext) |
 | simul::crossplatform::PixelFormat | [GetFormat](#GetFormat)() |
 | int | [GetSampleCount](#GetSampleCount)() |
@@ -44,7 +44,7 @@ Functions
 Functions
 ---
 <a name="activateRenderTarget"></a>
-### void activateRenderTarget(simul::crossplatform::DeviceContext deviceContext, int array_index, int mip_index)
+### void activateRenderTarget(simul::crossplatform::GraphicsDeviceContext deviceContext, int array_index, int mip_index)
 Activate as a rendertarget - must call deactivateRenderTarget afterwards.
 <a name="AsD3D11RenderTargetView"></a>
 ### ID3D11RenderTargetView * AsD3D11RenderTargetView(int, int)
@@ -60,13 +60,13 @@ Returns the UAV specified by layer,mip. Layer -1 means all layers at the given m
 ### sce::Gnm::Texture * AsGnmTexture(simul::crossplatform::ShaderResourceType, int, int)
 Returns the GnmTexture specified by layer,mip. Default values of -1 mean "all".
 <a name="ClearDepthStencil"></a>
-### void ClearDepthStencil(simul::crossplatform::DeviceContext deviceContext, float, int)
+### void ClearDepthStencil(simul::crossplatform::GraphicsDeviceContext deviceContext, float, int)
 Clear the depth stencil
 <a name="ClearFence"></a>
 ### void ClearFence(simul::crossplatform::DeviceContext deviceContext)
 Clear the fence: this texture is ok to use now.
 <a name="deactivateRenderTarget"></a>
-### void deactivateRenderTarget(simul::crossplatform::DeviceContext deviceContext)
+### void deactivateRenderTarget(simul::crossplatform::GraphicsDeviceContext deviceContext)
 Deactivate as a rendertarget.
 <a name="ensureTexture2DSizeAndFormat"></a>
 ### bool ensureTexture2DSizeAndFormat(simul::crossplatform::RenderPlatform renderPlatform, int w, int l, simul::crossplatform::PixelFormat f, bool computable, bool rendertarget, bool depthstencil, int num_samples, int aa_quality, bool wrap, vec4 clear, float clearDepth, uint clearStencil)
@@ -78,7 +78,7 @@ Initialize as a volume texture.
 ### bool ensureTextureArraySizeAndFormat(simul::crossplatform::RenderPlatform renderPlatform, int w, int l, int num, int mips, simul::crossplatform::PixelFormat f, bool computable, bool rendertarget, bool cubemap)
 Initialize as an array texture if necessary. Returns true if the texture was initialized, or false if it was already in the required format.
 <a name="GenerateMips"></a>
-### void GenerateMips(simul::crossplatform::DeviceContext deviceContext)
+### void GenerateMips(simul::crossplatform::GraphicsDeviceContext deviceContext)
 Generate the mipmaps automatically.
 <a name="GetFence"></a>
 ### unsigned long long GetFence(simul::crossplatform::DeviceContext)

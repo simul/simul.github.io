@@ -16,7 +16,7 @@ Functions
 |  | [BaseWeatherRenderer](#BaseWeatherRenderer)(simul::clouds::Environment env, simul::base::MemoryInterface m) |
 |  | [~BaseWeatherRenderer](#~BaseWeatherRenderer)() |
 | void | [CleanUpFramebuffers](#CleanUpFramebuffers)(int max_age) |
-| void | [CompositeCloudsToScreen](#CompositeCloudsToScreen)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct2, simul::clouds::TrueSkyRenderMode renderMode, float exposure, float gamma, bool depth_blend, simul::crossplatform::Texture mainDepthTexture, vec4 viewportRegionXYWH, bool any_lightpass, LightingQueryResult lightingQueryResult, vec3 cubemap_ground_colour) |
+| void | [CompositeCloudsToScreen](#CompositeCloudsToScreen)(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct2, simul::clouds::TrueSkyRenderMode renderMode, float exposure, float gamma, bool depth_blend, simul::crossplatform::Texture mainDepthTexture, vec4 viewportRegionXYWH, bool any_lightpass, LightingQueryResult lightingQueryResult, vec3 cubemap_ground_colour) |
 | void | [ConnectInterfaces](#ConnectInterfaces)() |
 | simul::clouds::BaseWeatherRenderer * | [Create](#Create)(simul::clouds::Environment env, simul::base::MemoryInterface m) |
 | void | [CreateSubObjects](#CreateSubObjects)() |
@@ -35,18 +35,18 @@ Functions
 | simul::clouds::TransparencyAtmospherics | [GetTransparencyAtmospherics](#GetTransparencyAtmospherics)(simul::crossplatform::ViewStruct viewStruct) |
 | void | [InvalidateDeviceObjects](#InvalidateDeviceObjects)() |
 | simul::clouds::BaseWeatherRenderer  const & | [operator=](#operator=)(simul::clouds::BaseWeatherRenderer W) |
-| void | [PreRenderUpdate](#PreRenderUpdate)(simul::crossplatform::DeviceContext deviceContext, float real_time) |
+| void | [PreRenderUpdate](#PreRenderUpdate)(simul::crossplatform::GraphicsDeviceContext deviceContext, float real_time) |
 | void | [RecompileShaders](#RecompileShaders)() |
 | void | [RemoveView](#RemoveView)(int view_id) |
-| void | [Render](#Render)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct2, simul::clouds::TrueSkyRenderMode renderMode, float exposure, float gamma, simul::crossplatform::Texture mainDepthTexture, simul::crossplatform::Texture cubemapTexture, simul::crossplatform::Viewport depthViewport, simul::crossplatform::Viewport viewports, vec3 cubemap_ground_colour, int amortization) |
-| void | [RenderCelestialBackground](#RenderCelestialBackground)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct, simul::clouds::TrueSkyRenderMode renderMode, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float exposure) |
-| bool | [RenderMixedResolution](#RenderMixedResolution)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct2, simul::crossplatform::Texture depthTexture, simul::clouds::TrueSkyRenderMode renderMode, float exposure, float gamma, simul::crossplatform::Viewport depthViewports, simul::crossplatform::Texture ambientCubemapTexture) |
+| void | [Render](#Render)(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct2, simul::clouds::TrueSkyRenderMode renderMode, float exposure, float gamma, simul::crossplatform::Texture mainDepthTexture, simul::crossplatform::Texture cubemapTexture, simul::crossplatform::Viewport depthViewport, simul::crossplatform::Viewport viewports, vec3 cubemap_ground_colour, int amortization) |
+| void | [RenderCelestialBackground](#RenderCelestialBackground)(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct, simul::clouds::TrueSkyRenderMode renderMode, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float exposure) |
+| bool | [RenderMixedResolution](#RenderMixedResolution)(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct2, simul::crossplatform::Texture depthTexture, simul::clouds::TrueSkyRenderMode renderMode, float exposure, float gamma, simul::crossplatform::Viewport depthViewports, simul::crossplatform::Texture ambientCubemapTexture) |
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform renderPlatform) |
 | void | [SetAllDownscale](#SetAllDownscale)(float) |
 | void | [SetBlurTexture](#SetBlurTexture)(simul::crossplatform::Texture t) |
 | void | [SetCubemapTransform](#SetCubemapTransform)(float m) |
 | void | [SetEnvironment](#SetEnvironment)(simul::clouds::Environment env) |
-| bool | [RenderLowResolutionElements](#RenderLowResolutionElements)(simul::crossplatform::DeviceContext deviceContext, float exposure, float godrays_strength, simul::clouds::TrueSkyRenderMode renderMode, simul::crossplatform::NearFarPass nearFarPass, simul::crossplatform::Texture lowResDepthTexture, simul::sky::ScatteringVolume scatteringVolume, vec4 viewportRegionXYWH, simul::crossplatform::AmortizationStruct amortizationStruct, simul::crossplatform::Texture ambientCubemapTexture) |
+| bool | [RenderLowResolutionElements](#RenderLowResolutionElements)(simul::crossplatform::GraphicsDeviceContext deviceContext, float exposure, float godrays_strength, simul::clouds::TrueSkyRenderMode renderMode, simul::crossplatform::NearFarPass nearFarPass, simul::crossplatform::Texture lowResDepthTexture, simul::sky::ScatteringVolume scatteringVolume, vec4 viewportRegionXYWH, simul::crossplatform::AmortizationStruct amortizationStruct, simul::crossplatform::Texture ambientCubemapTexture) |
 
 
 Functions
@@ -67,7 +67,7 @@ others.
 ### void CleanUpFramebuffers(int max_age)
 Delete framebuffers that have not been used in max_age frames, to free GPU memory.
 <a name="CompositeCloudsToScreen"></a>
-### void CompositeCloudsToScreen(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct2, simul::clouds::TrueSkyRenderMode renderMode, float exposure, float gamma, bool depth_blend, simul::crossplatform::Texture mainDepthTexture, vec4 viewportRegionXYWH, bool any_lightpass, LightingQueryResult lightingQueryResult, vec3 cubemap_ground_colour)
+### void CompositeCloudsToScreen(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct2, simul::clouds::TrueSkyRenderMode renderMode, float exposure, float gamma, bool depth_blend, simul::crossplatform::Texture mainDepthTexture, vec4 viewportRegionXYWH, bool any_lightpass, LightingQueryResult lightingQueryResult, vec3 cubemap_ground_colour)
 This composites the clouds and other buffers to the screen.
 <a name="ConnectInterfaces"></a>
 ### void ConnectInterfaces()
@@ -126,7 +126,7 @@ Platform-dependent function called when uninitializing the weather renderer.
 ### simul::clouds::BaseWeatherRenderer  const & operator=(simul::clouds::BaseWeatherRenderer W)
 Copy the properties of one BaseWeatherRenderer to another, including copying the properties of their sky and cloud renderers.
 <a name="PreRenderUpdate"></a>
-### void PreRenderUpdate(simul::crossplatform::DeviceContext deviceContext, float real_time)
+### void PreRenderUpdate(simul::crossplatform::GraphicsDeviceContext deviceContext, float real_time)
 Once per-frame update. Do this before any rendering each frame. For most platform implementations, you should set the
 matrices relevant to the mainview before calling this.
 <a name="RecompileShaders"></a>
@@ -136,7 +136,7 @@ Platform-dependent function to reload the shaders - only use this for debug purp
 ### void RemoveView(int view_id)
 Ensure that per-view objects are destroyed for the view in question: they will be rebuilt if needed later.
 <a name="Render"></a>
-### void Render(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct2, simul::clouds::TrueSkyRenderMode renderMode, float exposure, float gamma, simul::crossplatform::Texture mainDepthTexture, simul::crossplatform::Texture cubemapTexture, simul::crossplatform::Viewport depthViewport, simul::crossplatform::Viewport viewports, vec3 cubemap_ground_colour, int amortization)
+### void Render(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct2, simul::clouds::TrueSkyRenderMode renderMode, float exposure, float gamma, simul::crossplatform::Texture mainDepthTexture, simul::crossplatform::Texture cubemapTexture, simul::crossplatform::Viewport depthViewport, simul::crossplatform::Viewport viewports, vec3 cubemap_ground_colour, int amortization)
 Render the sky including atmospherics, into the current rendertarget, using a supplied depth texture.
 
 deviceContextis the platform-dependent render context,
@@ -150,10 +150,10 @@ class to wrapper your depth texture.
 The depthViewportdetermines what part of the depth texture represents this viewport - normally (0,0,1,1).
 Optional viewportsspecifies the left and right eye viewports if we're rendering both at once in VR.
 <a name="RenderCelestialBackground"></a>
-### void RenderCelestialBackground(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct, simul::clouds::TrueSkyRenderMode renderMode, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float exposure)
+### void RenderCelestialBackground(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct, simul::clouds::TrueSkyRenderMode renderMode, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float exposure)
 Draw the sun, moon and stars - call this while the depth buffer is bound.
 <a name="RenderMixedResolution"></a>
-### bool RenderMixedResolution(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct2, simul::crossplatform::Texture depthTexture, simul::clouds::TrueSkyRenderMode renderMode, float exposure, float gamma, simul::crossplatform::Viewport depthViewports, simul::crossplatform::Texture ambientCubemapTexture)
+### bool RenderMixedResolution(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct2, simul::crossplatform::Texture depthTexture, simul::clouds::TrueSkyRenderMode renderMode, float exposure, float gamma, simul::crossplatform::Viewport depthViewports, simul::crossplatform::Texture ambientCubemapTexture)
 Render the sky including atmospherics as an overlay, using a supplied platform-dependent depth texture.
 deviceContextis the platform-dependent render context, exposureis a multiplier for the rendered sky brightness,
 The view_idis an integer that distinguishes between multiple simultaneous viewports onscreen.
@@ -180,5 +180,5 @@ A transform for the cubemap set by SetCubemapTexture().
 ### void SetEnvironment(simul::clouds::Environment env)
 Set the Environment
 <a name="RenderLowResolutionElements"></a>
-### bool RenderLowResolutionElements(simul::crossplatform::DeviceContext deviceContext, float exposure, float godrays_strength, simul::clouds::TrueSkyRenderMode renderMode, simul::crossplatform::NearFarPass nearFarPass, simul::crossplatform::Texture lowResDepthTexture, simul::sky::ScatteringVolume scatteringVolume, vec4 viewportRegionXYWH, simul::crossplatform::AmortizationStruct amortizationStruct, simul::crossplatform::Texture ambientCubemapTexture)
+### bool RenderLowResolutionElements(simul::crossplatform::GraphicsDeviceContext deviceContext, float exposure, float godrays_strength, simul::clouds::TrueSkyRenderMode renderMode, simul::crossplatform::NearFarPass nearFarPass, simul::crossplatform::Texture lowResDepthTexture, simul::sky::ScatteringVolume scatteringVolume, vec4 viewportRegionXYWH, simul::crossplatform::AmortizationStruct amortizationStruct, simul::crossplatform::Texture ambientCubemapTexture)
 Renders the 2D clouds and atmospherics. If the passed depth texture is MSAA, near_pass determines whether to use the near or far depth for each depth texel.

@@ -19,10 +19,10 @@ Functions
 | void | [InvalidateDeviceObjects](#InvalidateDeviceObjects)() |
 | bool | [Probe](#Probe)(simul::crossplatform::DeviceContext deviceContext, int mip_size, int face_index, uint2 pos, uint2 size, vec4 targetValuesFloat4) |
 | void | [RecompileShaders](#RecompileShaders)() |
-| void | [Render](#Render)(simul::crossplatform::DeviceContext parentDeviceContext, simul::clouds::BaseWeatherRenderer baseWeatherRenderer, int cube_id, simul::crossplatform::BaseFramebuffer fb, int faceIndex, mat4 engineToSimulMatrix4x4, float blend, float exposure, float gamma) |
+| void | [Render](#Render)(simul::crossplatform::GraphicsDeviceContext parentDeviceContext, simul::clouds::BaseWeatherRenderer baseWeatherRenderer, int cube_id, simul::crossplatform::BaseFramebuffer fb, int faceIndex, mat4 engineToSimulMatrix4x4, float blend, float exposure, float gamma) |
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform r) |
-| void | [ShowDebug](#ShowDebug)(simul::crossplatform::DeviceContext deviceContext, int X, int Y, int w) |
-| void | [Update](#Update)(simul::crossplatform::DeviceContext deviceContext, simul::clouds::BaseWeatherRenderer weatherRenderer) |
+| void | [ShowDebug](#ShowDebug)(simul::crossplatform::GraphicsDeviceContext deviceContext, int X, int Y, int w) |
+| void | [Update](#Update)(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::clouds::BaseWeatherRenderer weatherRenderer) |
 
 A class to capture light from the sky in real time for diffuse and specular lighting.
   
@@ -41,14 +41,14 @@ Free the GPU objects.
 ### void RecompileShaders()
 Recompile the shaders for this class.
 <a name="Render"></a>
-### void Render(simul::crossplatform::DeviceContext parentDeviceContext, simul::clouds::BaseWeatherRenderer baseWeatherRenderer, int cube_id, simul::crossplatform::BaseFramebuffer fb, int faceIndex, mat4 engineToSimulMatrix4x4, float blend, float exposure, float gamma)
+### void Render(simul::crossplatform::GraphicsDeviceContext parentDeviceContext, simul::clouds::BaseWeatherRenderer baseWeatherRenderer, int cube_id, simul::crossplatform::BaseFramebuffer fb, int faceIndex, mat4 engineToSimulMatrix4x4, float blend, float exposure, float gamma)
 Fill in the texture.
 <a name="RestoreDeviceObjects"></a>
 ### void RestoreDeviceObjects(simul::crossplatform::RenderPlatform r)
 Initialize GPU objects.
 <a name="ShowDebug"></a>
-### void ShowDebug(simul::crossplatform::DeviceContext deviceContext, int X, int Y, int w)
+### void ShowDebug(simul::crossplatform::GraphicsDeviceContext deviceContext, int X, int Y, int w)
 Show debug displays onscreen.
 <a name="Update"></a>
-### void Update(simul::crossplatform::DeviceContext deviceContext, simul::clouds::BaseWeatherRenderer weatherRenderer)
+### void Update(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::clouds::BaseWeatherRenderer weatherRenderer)
 Update the skylight per-frame.

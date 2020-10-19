@@ -45,7 +45,7 @@ Classes and Structures
 Functions
 ---
 
-| void | [DrawGrid](#DrawGrid)(simul::crossplatform::DeviceContext deviceContext, vec3 centrePos, float square_size, float brightness, int numLines) |
+| void | [DrawGrid](#DrawGrid)(simul::crossplatform::GraphicsDeviceContext deviceContext, vec3 centrePos, float square_size, float brightness, int numLines) |
 | void | [GetCameraPosVector](#GetCameraPosVector)(float v, float dcam_pos, float view_dir, float up) |
 | float  const * | [GetCameraPosVector](#GetCameraPosVector)(float v) |
 | void | [MakeCentredViewProjMatrix](#MakeCentredViewProjMatrix)(float vp, float view, float proj) |
@@ -61,7 +61,7 @@ Functions
 Functions
 ---
 <a name="DrawGrid"></a>
-### void DrawGrid(simul::crossplatform::DeviceContext deviceContext, vec3 centrePos, float square_size, float brightness, int numLines)
+### void DrawGrid(simul::crossplatform::GraphicsDeviceContext deviceContext, vec3 centrePos, float square_size, float brightness, int numLines)
 Draw a horizontal grid in 3D.
 
 [in,out] deviceContext   Context for the device.

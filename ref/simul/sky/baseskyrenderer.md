@@ -81,10 +81,10 @@ with values less than one used for atmospheric scattering over solid objects.
 Functions
 ---
 
-| float | [CalcSunOcclusion](#CalcSunOcclusion)(simul::crossplatform::DeviceContext, float cloud_occlusion) |
+| float | [CalcSunOcclusion](#CalcSunOcclusion)(simul::crossplatform::GraphicsDeviceContext, float cloud_occlusion) |
 | simul::sky::BaseGpuSkyGenerator * | [CreateGpuSkyGenerator](#CreateGpuSkyGenerator)(simul::base::MemoryInterface m) |
 | void | [EnsureEffectsAreBuilt](#EnsureEffectsAreBuilt)(simul::crossplatform::RenderPlatform r) |
-| void | [EnsureTexturesAreUpToDate](#EnsureTexturesAreUpToDate)(simul::crossplatform::DeviceContext deviceContext) |
+| void | [EnsureTexturesAreUpToDate](#EnsureTexturesAreUpToDate)(simul::crossplatform::GraphicsDeviceContext deviceContext) |
 | simul::sky::BaseGpuSkyGenerator * | [GetBaseGpuSkyGenerator](#GetBaseGpuSkyGenerator)() |
 | simul::sky::BaseSkyInterface * | [GetBaseSkyInterface](#GetBaseSkyInterface)() |
 | simul::crossplatform::Texture * | [GetIlluminationTexture](#GetIlluminationTexture)() |
@@ -96,19 +96,19 @@ Functions
 | simul::sky::SkyKeyframer * | [GetSkyKeyframer](#GetSkyKeyframer)() |
 | float | [GetSunOcclusion](#GetSunOcclusion)() |
 | void | [InvalidateDeviceObjects](#InvalidateDeviceObjects)() |
-| void | [PreRenderUpdate](#PreRenderUpdate)(simul::crossplatform::DeviceContext deviceContext) |
+| void | [PreRenderUpdate](#PreRenderUpdate)(simul::crossplatform::GraphicsDeviceContext deviceContext) |
 | void | [RecompileShaders](#RecompileShaders)() |
 | void | [ReloadTextures](#ReloadTextures)() |
-| bool | [Render2DFades](#Render2DFades)(simul::crossplatform::DeviceContext deviceContext, int numDist, int numElev) |
-| void | [RenderAurora](#RenderAurora)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float exposure, simul::crossplatform::Quaterniond cloudWindowOrigin) |
-| void | [RenderCelestialDisplay](#RenderCelestialDisplay)(simul::crossplatform::DeviceContext context, float y_heading) |
-| bool | [RenderFades](#RenderFades)(simul::crossplatform::DeviceContext deviceContext, int view_id, int x, int y, int w, int h) |
-| void | [RenderIlluminationBuffer](#RenderIlluminationBuffer)(simul::crossplatform::DeviceContext deviceContext) |
-| void | [RenderLightingQueryResultsText](#RenderLightingQueryResultsText)(simul::crossplatform::DeviceContext deviceContext, int x, int y) |
-| void | [RenderPlanet](#RenderPlanet)(simul::crossplatform::DeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture tex, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float rad, float dir, float colr, bool do_lighting, float exposure) |
-| void | [RenderPlanets](#RenderPlanets)(simul::crossplatform::DeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float exposure) |
-| bool | [RenderPointStars](#RenderPointStars)(simul::crossplatform::DeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float, float, int) |
-| void | [RenderSun](#RenderSun)(simul::crossplatform::DeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float exposure) |
+| bool | [Render2DFades](#Render2DFades)(simul::crossplatform::GraphicsDeviceContext deviceContext, int numDist, int numElev) |
+| void | [RenderAurora](#RenderAurora)(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float exposure, simul::crossplatform::Quaterniond cloudWindowOrigin) |
+| void | [RenderCelestialDisplay](#RenderCelestialDisplay)(simul::crossplatform::GraphicsDeviceContext context, float y_heading) |
+| bool | [RenderFades](#RenderFades)(simul::crossplatform::GraphicsDeviceContext deviceContext, int view_id, int x, int y, int w, int h) |
+| void | [RenderIlluminationBuffer](#RenderIlluminationBuffer)(simul::crossplatform::GraphicsDeviceContext deviceContext) |
+| void | [RenderLightingQueryResultsText](#RenderLightingQueryResultsText)(simul::crossplatform::GraphicsDeviceContext deviceContext, int x, int y) |
+| void | [RenderPlanet](#RenderPlanet)(simul::crossplatform::GraphicsDeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture tex, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float rad, float dir, float colr, bool do_lighting, float exposure) |
+| void | [RenderPlanets](#RenderPlanets)(simul::crossplatform::GraphicsDeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float exposure) |
+| bool | [RenderPointStars](#RenderPointStars)(simul::crossplatform::GraphicsDeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float, float, int) |
+| void | [RenderSun](#RenderSun)(simul::crossplatform::GraphicsDeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float exposure) |
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform renderPlatform) |
 | void | [SaveTextures](#SaveTextures)(char) |
 | void | [SetBackgroundTexture](#SetBackgroundTexture)(simul::crossplatform::Texture t) |
@@ -194,7 +194,7 @@ Base Classes
 Functions
 ---
 <a name="CalcSunOcclusion"></a>
-### float CalcSunOcclusion(simul::crossplatform::DeviceContext, float cloud_occlusion)
+### float CalcSunOcclusion(simul::crossplatform::GraphicsDeviceContext, float cloud_occlusion)
 Get a value, from zero to one, which represents how much of the sun is visible.
 Call this when the current rendering surface is the one that has obscuring
 objects like mountains etc. in it, and make sure these have already been drawn.
@@ -207,7 +207,7 @@ Override this to create a custom generator.
 ### void EnsureEffectsAreBuilt(simul::crossplatform::RenderPlatform r)
 Check that all shaders have been correctly compiled
 <a name="EnsureTexturesAreUpToDate"></a>
-### void EnsureTexturesAreUpToDate(simul::crossplatform::DeviceContext deviceContext)
+### void EnsureTexturesAreUpToDate(simul::crossplatform::GraphicsDeviceContext deviceContext)
 Maintains the per-frame textures.
 <a name="GetBaseGpuSkyGenerator"></a>
 ### simul::sky::BaseGpuSkyGenerator * GetBaseGpuSkyGenerator()
@@ -244,7 +244,7 @@ Get a value, from zero to one, which represents how much of the sun is visible.
 ### void InvalidateDeviceObjects()
 Platform-dependent function called when uninitializing the sky renderer.
 <a name="PreRenderUpdate"></a>
-### void PreRenderUpdate(simul::crossplatform::DeviceContext deviceContext)
+### void PreRenderUpdate(simul::crossplatform::GraphicsDeviceContext deviceContext)
 Once per-frame update. Do this before any rendering each frame.
 <a name="RecompileShaders"></a>
 ### void RecompileShaders()
@@ -253,36 +253,36 @@ Platform-dependent function to reload the shaders - only use this for debug purp
 ### void ReloadTextures()
 Platform-dependent function to reload the textures - only use this for debug purposes.
 <a name="Render2DFades"></a>
-### bool Render2DFades(simul::crossplatform::DeviceContext deviceContext, int numDist, int numElev)
+### bool Render2DFades(simul::crossplatform::GraphicsDeviceContext deviceContext, int numDist, int numElev)
 This fills in the 2D atmospheric fade textures once per-frame from the keyframed 3D fade textures.
 <a name="RenderAurora"></a>
-### void RenderAurora(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float exposure, simul::crossplatform::Quaterniond cloudWindowOrigin)
+### void RenderAurora(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float exposure, simul::crossplatform::Quaterniond cloudWindowOrigin)
 Draw the Aurora
 <a name="RenderCelestialDisplay"></a>
-### void RenderCelestialDisplay(simul::crossplatform::DeviceContext context, float y_heading)
+### void RenderCelestialDisplay(simul::crossplatform::GraphicsDeviceContext context, float y_heading)
 Draw sidereal and geographic information to screen
 <a name="RenderFades"></a>
-### bool RenderFades(simul::crossplatform::DeviceContext deviceContext, int view_id, int x, int y, int w, int h)
+### bool RenderFades(simul::crossplatform::GraphicsDeviceContext deviceContext, int view_id, int x, int y, int w, int h)
 Draw the 2D fades to screen for debugging.
 <a name="RenderIlluminationBuffer"></a>
-### void RenderIlluminationBuffer(simul::crossplatform::DeviceContext deviceContext)
+### void RenderIlluminationBuffer(simul::crossplatform::GraphicsDeviceContext deviceContext)
 Perform any necessary updates to the renderer's textures - particularly the loss, inscatter and skylight textures -
 at the start of a frame. This is called from simul::clouds::BaseWeatherRenderer::PreRenderUpdate().
 <a name="RenderLightingQueryResultsText"></a>
-### void RenderLightingQueryResultsText(simul::crossplatform::DeviceContext deviceContext, int x, int y)
+### void RenderLightingQueryResultsText(simul::crossplatform::GraphicsDeviceContext deviceContext, int x, int y)
 Display LightingQueryResults to screen for debugging
 <a name="RenderPlanet"></a>
-### void RenderPlanet(simul::crossplatform::DeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture tex, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float rad, float dir, float colr, bool do_lighting, float exposure)
+### void RenderPlanet(simul::crossplatform::GraphicsDeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture tex, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float rad, float dir, float colr, bool do_lighting, float exposure)
 This is called by RenderPlanets to render a planet with texture tex, angular radius radradians, in direction dir(x,y,z), with colour colr.
 If do_lightingis true, the planet will be directionally-lit - e.g. moon phases.
 <a name="RenderPlanets"></a>
-### void RenderPlanets(simul::crossplatform::DeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float exposure)
+### void RenderPlanets(simul::crossplatform::GraphicsDeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float exposure)
 Draw planets in the sky, e.g. the Moon.
 <a name="RenderPointStars"></a>
-### bool RenderPointStars(simul::crossplatform::DeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float, float, int)
+### bool RenderPointStars(simul::crossplatform::GraphicsDeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float, float, int)
 Draw the stars.
 <a name="RenderSun"></a>
-### void RenderSun(simul::crossplatform::DeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float exposure)
+### void RenderSun(simul::crossplatform::GraphicsDeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float exposure)
 Draw the sun.
 <a name="RestoreDeviceObjects"></a>
 ### void RestoreDeviceObjects(simul::crossplatform::RenderPlatform renderPlatform)

@@ -18,7 +18,7 @@ Functions
 | void | [EnsureEffectsAreBuilt](#EnsureEffectsAreBuilt)(simul::crossplatform::RenderPlatform r) |
 | simul::sky::ScatteringVolume  const * | [GetScatteringVolume](#GetScatteringVolume)(int view_id) |
 | void | [InvalidateDeviceObjects](#InvalidateDeviceObjects)() |
-| void | [PreRenderUpdate](#PreRenderUpdate)(simul::crossplatform::DeviceContext) |
+| void | [PreRenderUpdate](#PreRenderUpdate)(simul::crossplatform::GraphicsDeviceContext) |
 | void | [RecompileShaders](#RecompileShaders)() |
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform r) |
 | void | [SetCameraPosition](#SetCameraPosition)(float pos) |
@@ -44,7 +44,7 @@ Get the per-frame 3D volume scattering texture for the given view id.
 ### void InvalidateDeviceObjects()
 Platform-dependent function called when uninitializing the atmospherics renderer.
 <a name="PreRenderUpdate"></a>
-### void PreRenderUpdate(simul::crossplatform::DeviceContext)
+### void PreRenderUpdate(simul::crossplatform::GraphicsDeviceContext)
 Once per-frame update. Do this before any rendering each frame.
 <a name="RecompileShaders"></a>
 ### void RecompileShaders()

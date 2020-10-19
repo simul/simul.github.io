@@ -14,7 +14,7 @@ Functions
 ---
 
 |  | [Aurora](#Aurora)(simul::sky::SkyKeyframer pSkyKeyframer) |
-| bool | [CheckRenderOncePerFrame](#CheckRenderOncePerFrame)(simul::crossplatform::DeviceContext deviceContext) |
+| bool | [CheckRenderOncePerFrame](#CheckRenderOncePerFrame)(simul::crossplatform::GraphicsDeviceContext deviceContext) |
 | float | [RadianceToRayleigh](#RadianceToRayleigh)(float L, float wavelength) |
 | void | [SaveToText](#SaveToText)(simul::crossplatform::TextOutput output) |
 | void | [SetAuroraIntensityMapSize](#SetAuroraIntensityMapSize)(uint32_t value) |
@@ -32,7 +32,7 @@ Functions
 ###  Aurora(simul::sky::SkyKeyframer pSkyKeyframer)
 Default class methods
 <a name="CheckRenderOncePerFrame"></a>
-### bool CheckRenderOncePerFrame(simul::crossplatform::DeviceContext deviceContext)
+### bool CheckRenderOncePerFrame(simul::crossplatform::GraphicsDeviceContext deviceContext)
 Rendering
 <a name="RadianceToRayleigh"></a>
 ### float RadianceToRayleigh(float L, float wavelength)

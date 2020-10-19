@@ -14,9 +14,9 @@ Functions
 ---
 
 | void | [InvalidateDeviceObjects](#InvalidateDeviceObjects)() |
-| void | [Render](#Render)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture texture, float Exposure, float Gamma, float offsetX) |
-| void | [RenderDebug](#RenderDebug)(simul::crossplatform::DeviceContext deviceContext, int x0, int y0, int w, int h) |
-| void | [RenderGlowTexture](#RenderGlowTexture)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture texture) |
+| void | [Render](#Render)(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Texture texture, float Exposure, float Gamma, float offsetX) |
+| void | [RenderDebug](#RenderDebug)(simul::crossplatform::GraphicsDeviceContext deviceContext, int x0, int y0, int w, int h) |
+| void | [RenderGlowTexture](#RenderGlowTexture)(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Texture texture) |
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform r) |
 
 
@@ -26,13 +26,13 @@ Functions
 ### void InvalidateDeviceObjects()
 Platform-dependent function called when uninitializing the HDR renderer.
 <a name="Render"></a>
-### void Render(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture texture, float Exposure, float Gamma, float offsetX)
+### void Render(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Texture texture, float Exposure, float Gamma, float offsetX)
 Render: write the given texture to screen using the HDR rendering shaders
 <a name="RenderDebug"></a>
-### void RenderDebug(simul::crossplatform::DeviceContext deviceContext, int x0, int y0, int w, int h)
+### void RenderDebug(simul::crossplatform::GraphicsDeviceContext deviceContext, int x0, int y0, int w, int h)
 Draw the debug textures
 <a name="RenderGlowTexture"></a>
-### void RenderGlowTexture(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture texture)
+### void RenderGlowTexture(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Texture texture)
 Create the glow texture that will be overlaid due to strong lights.
 <a name="RestoreDeviceObjects"></a>
 ### void RestoreDeviceObjects(simul::crossplatform::RenderPlatform r)

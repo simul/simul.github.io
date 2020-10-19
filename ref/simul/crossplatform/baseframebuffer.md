@@ -14,12 +14,12 @@ Functions
 ---
 
 |  | [BaseFramebuffer](#BaseFramebuffer)(char n) |
-| void | [Activate](#Activate)(simul::crossplatform::DeviceContext) |
-| void | [Clear](#Clear)(simul::crossplatform::DeviceContext context, float R, float G, float B, float A, float depth, int mask) |
-| void | [ClearColour](#ClearColour)(simul::crossplatform::DeviceContext context, float, float, float, float) |
+| void | [Activate](#Activate)(simul::crossplatform::GraphicsDeviceContext) |
+| void | [Clear](#Clear)(simul::crossplatform::GraphicsDeviceContext context, float R, float G, float B, float A, float depth, int mask) |
+| void | [ClearColour](#ClearColour)(simul::crossplatform::GraphicsDeviceContext context, float, float, float, float) |
 | bool | [CreateBuffers](#CreateBuffers)() |
-| void | [Deactivate](#Deactivate)(simul::crossplatform::DeviceContext) |
-| void | [DeactivateDepth](#DeactivateDepth)(simul::crossplatform::DeviceContext) |
+| void | [Deactivate](#Deactivate)(simul::crossplatform::GraphicsDeviceContext) |
+| void | [DeactivateDepth](#DeactivateDepth)(simul::crossplatform::GraphicsDeviceContext) |
 | simul::crossplatform::Texture * | [GetDepthTexture](#GetDepthTexture)() |
 | int | [GetHeight](#GetHeight)() |
 | simul::crossplatform::Texture * | [GetTexture](#GetTexture)() |
@@ -42,22 +42,22 @@ Functions
 ###  BaseFramebuffer(char n)
 A base class for API-dependent framebuffer classes.
 <a name="Activate"></a>
-### void Activate(simul::crossplatform::DeviceContext)
+### void Activate(simul::crossplatform::GraphicsDeviceContext)
 Activate the framebuffer - must be followed after rendering by a call to 
 <a name="Clear"></a>
-### void Clear(simul::crossplatform::DeviceContext context, float R, float G, float B, float A, float depth, int mask)
+### void Clear(simul::crossplatform::GraphicsDeviceContext context, float R, float G, float B, float A, float depth, int mask)
 Clear the colour and depth buffers if present.
 <a name="ClearColour"></a>
-### void ClearColour(simul::crossplatform::DeviceContext context, float, float, float, float)
+### void ClearColour(simul::crossplatform::GraphicsDeviceContext context, float, float, float, float)
 Set the size of the framebuffer in pixel height and width.
 <a name="CreateBuffers"></a>
 ### bool CreateBuffers()
 Call this if needed (not usually) to ensure that the buffers are created.
 <a name="Deactivate"></a>
-### void Deactivate(simul::crossplatform::DeviceContext)
+### void Deactivate(simul::crossplatform::GraphicsDeviceContext)
 Deactivate the framebuffer - must be preceded a call to 
 <a name="DeactivateDepth"></a>
-### void DeactivateDepth(simul::crossplatform::DeviceContext)
+### void DeactivateDepth(simul::crossplatform::GraphicsDeviceContext)
 Deactivate only the depth buffer, so it can be used as a texture for rendering to the colour buffer.
 <a name="GetDepthTexture"></a>
 ### simul::crossplatform::Texture * GetDepthTexture()

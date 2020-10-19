@@ -13,11 +13,11 @@ class RenderPlatform
 Functions
 ---
 
-| void | [ActivateRenderTargets](#ActivateRenderTargets)(simul::crossplatform::DeviceContext deviceContext, int num, simul::crossplatform::Texture targs, simul::crossplatform::Texture depth) |
+| void | [ActivateRenderTargets](#ActivateRenderTargets)(simul::crossplatform::GraphicsDeviceContext deviceContext, int num, simul::crossplatform::Texture targs, simul::crossplatform::Texture depth) |
 | void | [ApplyPass](#ApplyPass)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::EffectPass pass) |
 | ID3D12GraphicsCommandList * | [AsD3D12CommandList](#AsD3D12CommandList)() |
 | void | [BeginEvent](#BeginEvent)(simul::crossplatform::DeviceContext deviceContext, char name) |
-| void | [Clear](#Clear)(simul::crossplatform::DeviceContext deviceContext, vec4 colour_rgba) |
+| void | [Clear](#Clear)(simul::crossplatform::GraphicsDeviceContext deviceContext, vec4 colour_rgba) |
 | void | [ClearTexture](#ClearTexture)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture texture, vec4 colour) |
 | void | [CopyTexture](#CopyTexture)(simul::crossplatform::DeviceContext, simul::crossplatform::Texture, simul::crossplatform::Texture) |
 | simul::crossplatform::Buffer * | [CreateBuffer](#CreateBuffer)() |
@@ -36,52 +36,52 @@ Functions
 | simul::crossplatform::Texture * | [CreateTexture](#CreateTexture)(char lFileNameUtf8) |
 | void | [Destroy](#Destroy)(simul::crossplatform::Effect e) |
 | void | [DispatchCompute](#DispatchCompute)(simul::crossplatform::DeviceContext deviceContext, int w, int l, int d) |
-| void | [Draw](#Draw)(simul::crossplatform::DeviceContext deviceContext, int num_verts, int start_vert) |
-| void | [DrawCircle](#DrawCircle)(simul::crossplatform::DeviceContext deviceContext, float dir, float rads, float colr, bool fill) |
-| void | [DrawCircle](#DrawCircle)(simul::crossplatform::DeviceContext deviceContext, float pos, float dir, float radius, float colr, bool fill) |
-| void | [DrawCubemap](#DrawCubemap)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture cubemap, float offsetx, float offsety, float size, float exposure, float gamma, float displayLod) |
-| void | [DrawIndexed](#DrawIndexed)(simul::crossplatform::DeviceContext deviceContext, int num_indices, int start_index, int base_vertex) |
+| void | [Draw](#Draw)(simul::crossplatform::GraphicsDeviceContext deviceContext, int num_verts, int start_vert) |
+| void | [DrawCircle](#DrawCircle)(simul::crossplatform::GraphicsDeviceContext deviceContext, float dir, float rads, float colr, bool fill) |
+| void | [DrawCircle](#DrawCircle)(simul::crossplatform::GraphicsDeviceContext deviceContext, float pos, float dir, float radius, float colr, bool fill) |
+| void | [DrawCubemap](#DrawCubemap)(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Texture cubemap, float offsetx, float offsety, float size, float exposure, float gamma, float displayLod) |
+| void | [DrawIndexed](#DrawIndexed)(simul::crossplatform::GraphicsDeviceContext deviceContext, int num_indices, int start_index, int base_vertex) |
 | void | [EndEvent](#EndEvent)(simul::crossplatform::DeviceContext) |
 | void | [EnsureEffectIsBuilt](#EnsureEffectIsBuilt)(char filename_utf8, std::vector options) |
 | simul::crossplatform::Shader * | [EnsureShader](#EnsureShader)(char filenameUtf8, simul::crossplatform::ShaderType t) |
-| void | [GenerateMips](#GenerateMips)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture t, bool wrap, int array_idx) |
+| void | [GenerateMips](#GenerateMips)(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Texture t, bool wrap, int array_idx) |
 | simul::crossplatform::ContextState * | [GetContextState](#GetContextState)(simul::crossplatform::DeviceContext deviceContext) |
 | simul::crossplatform::Effect * | [GetEffect](#GetEffect)(char name_utf8) |
 | unsigned char | [GetIdx](#GetIdx)() |
-| simul::crossplatform::DeviceContext  & | [GetImmediateContext](#GetImmediateContext)() |
+| simul::crossplatform::GraphicsDeviceContext  & | [GetImmediateContext](#GetImmediateContext)() |
 | char  const * | [GetName](#GetName)() |
 | simul::crossplatform::Material * | [GetOrCreateMaterial](#GetOrCreateMaterial)(char name) |
 | simul::crossplatform::SamplerState * | [GetOrCreateSamplerStateByName](#GetOrCreateSamplerStateByName)(char name_utf8, simul::crossplatform::SamplerStateDesc desc) |
 | std::vector | [GetShaderBinaryPathsUtf8](#GetShaderBinaryPathsUtf8)() |
 | simul::crossplatform::ShaderBuildMode | [GetShaderBuildMode](#GetShaderBuildMode)() |
 | std::vector | [GetShaderPathsUtf8](#GetShaderPathsUtf8)() |
-| simul::crossplatform::Viewport | [GetViewport](#GetViewport)(simul::crossplatform::DeviceContext deviceContext, int index) |
+| simul::crossplatform::Viewport | [GetViewport](#GetViewport)(simul::crossplatform::GraphicsDeviceContext deviceContext, int index) |
 | void | [InvalidateDeviceObjects](#InvalidateDeviceObjects)() |
-| void | [LinePrint](#LinePrint)(simul::crossplatform::DeviceContext deviceContext, char text, float colr, float bkg) |
-| void | [PopRenderTargets](#PopRenderTargets)(simul::crossplatform::DeviceContext deviceContext) |
+| void | [LinePrint](#LinePrint)(simul::crossplatform::GraphicsDeviceContext deviceContext, char text, float colr, float bkg) |
+| void | [PopRenderTargets](#PopRenderTargets)(simul::crossplatform::GraphicsDeviceContext deviceContext) |
 | void | [PopShaderBinaryPath](#PopShaderBinaryPath)() |
 | void | [PopShaderPath](#PopShaderPath)() |
 | void | [PopTexturePath](#PopTexturePath)() |
-| void | [PushRenderTargets](#PushRenderTargets)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::TargetsAndViewport tv) |
+| void | [PushRenderTargets](#PushRenderTargets)(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::TargetsAndViewport tv) |
 | void | [PushShaderBinaryPath](#PushShaderBinaryPath)(char path_utf8) |
 | void | [PushShaderPath](#PushShaderPath)(char path_utf8) |
 | void | [PushTexturePath](#PushTexturePath)(char pathUtf8) |
 | void | [RecompileShaders](#RecompileShaders)() |
-| void | [Resolve](#Resolve)(simul::crossplatform::DeviceContext, simul::crossplatform::Texture, simul::crossplatform::Texture) |
+| void | [Resolve](#Resolve)(simul::crossplatform::GraphicsDeviceContext, simul::crossplatform::Texture, simul::crossplatform::Texture) |
 | void | [ResourceBarrierUAV](#ResourceBarrierUAV)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture texture) |
 | void | [ResourceBarrierUAV](#ResourceBarrierUAV)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::PlatformStructuredBuffer sb) |
 | void | [ResourceTransition](#ResourceTransition)(simul::crossplatform::DeviceContext, simul::crossplatform::Texture, simul::crossplatform::ResourceTransition) |
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(void) |
 | void | [RestoreRenderState](#RestoreRenderState)(simul::crossplatform::DeviceContext) |
 | void | [SaveTexture](#SaveTexture)(simul::crossplatform::Texture, char) |
-| void | [SetIndexBuffer](#SetIndexBuffer)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Buffer buffer) |
-| void | [SetLayout](#SetLayout)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Layout l) |
+| void | [SetIndexBuffer](#SetIndexBuffer)(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Buffer buffer) |
+| void | [SetLayout](#SetLayout)(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Layout l) |
 | void | [SetRenderState](#SetRenderState)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::RenderState s) |
 | void | [SetShaderBuildMode](#SetShaderBuildMode)(simul::crossplatform::ShaderBuildMode s) |
 | void | [SetShaderPathsUtf8](#SetShaderPathsUtf8)(std::vector pathsUtf8) |
 | void | [SetStandardRenderState](#SetStandardRenderState)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::StandardRenderState s) |
-| void | [SetStreamOutTarget](#SetStreamOutTarget)(simul::crossplatform::DeviceContext, simul::crossplatform::Buffer, int) |
-| void | [SetTopology](#SetTopology)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Topology t) |
+| void | [SetStreamOutTarget](#SetStreamOutTarget)(simul::crossplatform::GraphicsDeviceContext, simul::crossplatform::Buffer, int) |
+| void | [SetTopology](#SetTopology)(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Topology t) |
 | void | [SetVertexBuffers](#SetVertexBuffers)(simul::crossplatform::DeviceContext deviceContext, int slot, int num_buffers, simul::crossplatform::Buffer buffers, simul::crossplatform::Layout layout, int vertexSteps) |
 | void | [StoreRenderState](#StoreRenderState)(simul::crossplatform::DeviceContext) |
 | void | [SynchronizeCacheAndState](#SynchronizeCacheAndState)(simul::crossplatform::DeviceContext) |
@@ -93,7 +93,7 @@ Functions
 Functions
 ---
 <a name="ActivateRenderTargets"></a>
-### void ActivateRenderTargets(simul::crossplatform::DeviceContext deviceContext, int num, simul::crossplatform::Texture targs, simul::crossplatform::Texture depth)
+### void ActivateRenderTargets(simul::crossplatform::GraphicsDeviceContext deviceContext, int num, simul::crossplatform::Texture targs, simul::crossplatform::Texture depth)
 Make the specified rendertargets and optional depth target active.
 <a name="ApplyPass"></a>
 ### void ApplyPass(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::EffectPass pass)
@@ -107,7 +107,7 @@ Returns the DX12 graphics command list
 ### void BeginEvent(simul::crossplatform::DeviceContext deviceContext, char name)
 For platforms that support named events, e.g. PIX in DirectX. Use BeginEvent(), EndEvent() as pairs.
 <a name="Clear"></a>
-### void Clear(simul::crossplatform::DeviceContext deviceContext, vec4 colour_rgba)
+### void Clear(simul::crossplatform::GraphicsDeviceContext deviceContext, vec4 colour_rgba)
 Clear the current render target (i.e. the screen). In most API's this is simply a case of drawing a full-screen quad in the specified rgba colour.
 <a name="ClearTexture"></a>
 ### void ClearTexture(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture texture, vec4 colour)
@@ -167,19 +167,19 @@ Destroy the effect when it is safe to do so. The pointer can now be reassigned o
 ### void DispatchCompute(simul::crossplatform::DeviceContext deviceContext, int w, int l, int d)
 Execute the currently applied compute shader.
 <a name="Draw"></a>
-### void Draw(simul::crossplatform::DeviceContext deviceContext, int num_verts, int start_vert)
+### void Draw(simul::crossplatform::GraphicsDeviceContext deviceContext, int num_verts, int start_vert)
 Draw the specified number of vertices.
 <a name="DrawCircle"></a>
-### void DrawCircle(simul::crossplatform::DeviceContext deviceContext, float dir, float rads, float colr, bool fill)
+### void DrawCircle(simul::crossplatform::GraphicsDeviceContext deviceContext, float dir, float rads, float colr, bool fill)
 Draw a circle facing the viewer at the specified direction and angular size.
 <a name="DrawCircle"></a>
-### void DrawCircle(simul::crossplatform::DeviceContext deviceContext, float pos, float dir, float radius, float colr, bool fill)
+### void DrawCircle(simul::crossplatform::GraphicsDeviceContext deviceContext, float pos, float dir, float radius, float colr, bool fill)
 Draw a circle in 3D space at pos
 <a name="DrawCubemap"></a>
-### void DrawCubemap(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture cubemap, float offsetx, float offsety, float size, float exposure, float gamma, float displayLod)
+### void DrawCubemap(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Texture cubemap, float offsetx, float offsety, float size, float exposure, float gamma, float displayLod)
 Draw a cubemap as a sphere at the specified screen position and size.
 <a name="DrawIndexed"></a>
-### void DrawIndexed(simul::crossplatform::DeviceContext deviceContext, int num_indices, int start_index, int base_vertex)
+### void DrawIndexed(simul::crossplatform::GraphicsDeviceContext deviceContext, int num_indices, int start_index, int base_vertex)
 Draw the specified number of vertices using the bound index arrays.
 <a name="EndEvent"></a>
 ### void EndEvent(simul::crossplatform::DeviceContext)
@@ -190,7 +190,7 @@ For platforms that support named events, e.g. PIX in DirectX. Use BeginEvent(), 
 ### simul::crossplatform::Shader * EnsureShader(char filenameUtf8, simul::crossplatform::ShaderType t)
 Get or create an API-specific shader object.
 <a name="GenerateMips"></a>
-### void GenerateMips(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture t, bool wrap, int array_idx)
+### void GenerateMips(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Texture t, bool wrap, int array_idx)
 Fill in mipmaps from the zero level down.
 <a name="GetContextState"></a>
 ### simul::crossplatform::ContextState * GetContextState(simul::crossplatform::DeviceContext deviceContext)
@@ -202,7 +202,7 @@ Get the effect named, or return null if it's not been created.
 ### unsigned char GetIdx()
 Returns the current idx (used in ring buffers)
 <a name="GetImmediateContext"></a>
-### simul::crossplatform::DeviceContext  & GetImmediateContext()
+### simul::crossplatform::GraphicsDeviceContext  & GetImmediateContext()
 Gets an object containing immediate-context API-specific values.
 <a name="GetName"></a>
 ### char  const * GetName()
@@ -225,16 +225,16 @@ When shaders should be built, or loaded if available.
 ### std::vector GetShaderPathsUtf8()
 Returns the stack of shader source paths.
 <a name="GetViewport"></a>
-### simul::crossplatform::Viewport GetViewport(simul::crossplatform::DeviceContext deviceContext, int index)
+### simul::crossplatform::Viewport GetViewport(simul::crossplatform::GraphicsDeviceContext deviceContext, int index)
 Get the viewport at the given index.
 <a name="InvalidateDeviceObjects"></a>
 ### void InvalidateDeviceObjects()
 Platform-dependent function called when uninitializing the Render Platform.
 <a name="LinePrint"></a>
-### void LinePrint(simul::crossplatform::DeviceContext deviceContext, char text, float colr, float bkg)
+### void LinePrint(simul::crossplatform::GraphicsDeviceContext deviceContext, char text, float colr, float bkg)
 Print diagnostics, starting from the top, and going down the screen one line each time as the frame progresses, then restarting next frame.
 <a name="PopRenderTargets"></a>
-### void PopRenderTargets(simul::crossplatform::DeviceContext deviceContext)
+### void PopRenderTargets(simul::crossplatform::GraphicsDeviceContext deviceContext)
 Restore rendertargets and viewports from the top of the stack.
 <a name="PopShaderBinaryPath"></a>
 ### void PopShaderBinaryPath()
@@ -246,7 +246,7 @@ Remove a path from the top of the shader source path stack.
 ### void PopTexturePath()
 Remove a path from the top of the texture path stack.
 <a name="PushRenderTargets"></a>
-### void PushRenderTargets(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::TargetsAndViewport tv)
+### void PushRenderTargets(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::TargetsAndViewport tv)
 Store the current rendertargets and viewports at the top of the stack
 <a name="PushShaderBinaryPath"></a>
 ### void PushShaderBinaryPath(char path_utf8)
@@ -262,7 +262,7 @@ Push the given file path onto the texture path stack.
 ### void RecompileShaders()
 Platform-dependent function to reload the shaders - only use this for debug purposes.
 <a name="Resolve"></a>
-### void Resolve(simul::crossplatform::DeviceContext, simul::crossplatform::Texture, simul::crossplatform::Texture)
+### void Resolve(simul::crossplatform::GraphicsDeviceContext, simul::crossplatform::Texture, simul::crossplatform::Texture)
 Resolve an MSAA texture to a normal texture.
 <a name="ResourceBarrierUAV"></a>
 ### void ResourceBarrierUAV(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture texture)
@@ -284,10 +284,10 @@ for each StoreRenderState call, and they are not expected to be nested.
 ### void SaveTexture(simul::crossplatform::Texture, char)
 Save a texture to disk.
 <a name="SetIndexBuffer"></a>
-### void SetIndexBuffer(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Buffer buffer)
+### void SetIndexBuffer(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Buffer buffer)
 Activate the specified index buffer in preparation for rendering.
 <a name="SetLayout"></a>
-### void SetLayout(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Layout l)
+### void SetLayout(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Layout l)
 Set the layout for following draw calls - format of the vertex buffer.
 <a name="SetRenderState"></a>
 ### void SetRenderState(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::RenderState s)
@@ -302,10 +302,10 @@ Replace the entire stack of shader source paths.
 ### void SetStandardRenderState(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::StandardRenderState s)
 Apply a standard renderstate - e.g. opaque blending
 <a name="SetStreamOutTarget"></a>
-### void SetStreamOutTarget(simul::crossplatform::DeviceContext, simul::crossplatform::Buffer, int)
+### void SetStreamOutTarget(simul::crossplatform::GraphicsDeviceContext, simul::crossplatform::Buffer, int)
 Graphics hardware can write to vertex buffers using vertex and geometry shaders; use this function to set the target buffer.
 <a name="SetTopology"></a>
-### void SetTopology(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Topology t)
+### void SetTopology(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Topology t)
 Set the topology for following draw calls, e.g. TRIANGLELIST etc.
 <a name="SetVertexBuffers"></a>
 ### void SetVertexBuffers(simul::crossplatform::DeviceContext deviceContext, int slot, int num_buffers, simul::crossplatform::Buffer buffers, simul::crossplatform::Layout layout, int vertexSteps)

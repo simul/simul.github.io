@@ -7,14 +7,27 @@ weight: 120
 
 Version 4.3
 ---
+Fri 16 Oct : DeviceContext now split into two classes, base DeviceContext and derived GraphicsDeviceContext. The latter will be used for most rendering, while the base class can be used in asynchronous compute.  
 Fri 16 Oct : Re-enabling copy code  
+Fri 16 Oct : Delay init of SkySequencer renderers.  
 Thu 15 Oct : Docs - Update time progression page to reflect unity changes  
+Thu 15 Oct : Additional profiling  
 Thu 15 Oct : Updated Aurorae Docs.  
 Wed 14 Oct : Show Auroral Oval is default on in SkySequencer.  
 Wed 14 Oct : Added Capitals to ref headers and moved a heading into a class to make this cleaner in performance page  
+Tue 13 Oct : Add fractal octaves to cell noise. Improve blending.  
 Tue 13 Oct : Added PrecipitationBaseKm to define lower bound of PrecipitationLayers. WIP forced Z nearest filtering.  
+Tue 13 Oct : Cell noise  
+Mon 12 Oct : Shader tests.  
+Mon 12 Oct : Add CELLNOISE cloud class.  
+Sat 10 Oct : Block-update improvements.  
 Fri 09 Oct : Check version number for ExternalDynamicValues and ExternalRenderValues. Match structures with 4.2a.  
 Fri 09 Oct : Option to disable a layer in Sequencer. Max Density Fix. Removal of High Detail proportion  
+Fri 09 Oct : cloud window update sync'd to layers.  
+Fri 09 Oct : Transitioning to synchronized layer-volume update.  
+Thu 08 Oct : Additional stored data.  
+Thu 08 Oct : Extract layer data at initialization of cloud update.  
+Thu 08 Oct : Add cloud_update.sfx shader, multi-texture blend for main cloud volume.  
 Wed 07 Oct : Platform ptr.  
 Wed 07 Oct : Platform ptr.  
 Wed 07 Oct : General fix for warning for casting. Aurora UI change to match engines, docs updated. Shaders/Vulkan/CMakeLists.txt changed to use Platform/Vulkan/Sfx/Vulkan.json. Commit Platform ptr.  
@@ -31,6 +44,7 @@ Fri 02 Oct : SetShowAuroraeControls() added to disable in Engine. Aurora values 
 Wed 30 Sep : Fixing minor issues and adding missing image on blueprint page  
 Wed 30 Sep : Updating FAQ as Niagara information was incorrect  
 Wed 30 Sep : Update to blueprint pages - adding in Create / delete of keyframe and layers - as well as new map texture location and nodes  
+Tue 29 Sep : Spherical rendering  
 Wed 23 Sep : Updating Docs - 4.3 specific features  
 Wed 23 Sep : Rename Override Wind  
 Tue 22 Sep : Keep licence header visible  
@@ -93,19 +107,5 @@ Mon 10 Aug : Added Multi-Moon Explanation Page - Sky page rewording
 Mon 10 Aug : Removed Slack link from index page and added legacy note to previous moon setup tutorial.  
 Mon 10 Aug : Full path for SIMUL_SOURCE_BUILD check.  
 Sun 09 Aug : Uninitialized Variable Fix  
-Sat 08 Aug : Remove version.properties - this duplicates release.properties.  
-Sat 08 Aug : Update release.properties  
-Wed 05 Aug : Added SetShowConstellationControls() to SkyEditWidget. Default is to disable constellation in plug-in.  
-Wed 05 Aug : UE4 HighlightConstellation UI. HighlightConstellation is now static within BaseSkyRenderer (SkyKeyframer version is commented out). PluginTrueSkyRenderer::Get() checks CloudRenderingOptions enums to set CloudLayer wind direction from UE4.  
-Sun 02 Aug : Fix debug dll deploy. Remove unwanted Sample GDK reference.  
-Sun 02 Aug : Fix non-compiling shader function due to mismatched parens.  
-Thu 30 Jul : Fix for find constellation and points stars. Re-enabled RenderOverlays().  
-Wed 29 Jul : The rain's velocity is directed by the CloudLayer's wind parameters.  
-Wed 29 Jul : Small Fix  
-Wed 29 Jul : Removed Standalone UI from Engine + removing moon functionality  
-Fri 24 Jul : Doc Sidebar Update  
-Fri 24 Jul : Update to IG Licence Agreement  
-Fri 24 Jul : Docs - Added tutorial videos to relevant Categories - Buoyancy page added - Attempted fixes to Indie licences directing to incorrect page and 404 errors. Attempted fix to IG licencing being a 404, Updated links within FAQ  
-Thu 23 Jul : Docs - Adding image and updating TimeProgression on UE4 Page  
 
 <hr>

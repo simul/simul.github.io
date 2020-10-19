@@ -15,12 +15,12 @@ Functions
 
 |  | [TwoResFramebuffer](#TwoResFramebuffer)() |
 | void | [CompleteFrame](#CompleteFrame)(long long framenumber) |
-| void | [DeactivateDepth](#DeactivateDepth)(simul::crossplatform::DeviceContext) |
+| void | [DeactivateDepth](#DeactivateDepth)(simul::crossplatform::GraphicsDeviceContext) |
 | uint4 | [GetCubeIntegerFrustumRange](#GetCubeIntegerFrustumRange)(int i) |
 | simul::crossplatform::Texture * | [GetStochasticDepthTexture](#GetStochasticDepthTexture)(int idx) |
 | simul::crossplatform::Texture * | [GetUpdateTexture](#GetUpdateTexture)(int idx) |
 | void | [InvalidateDeviceObjects](#InvalidateDeviceObjects)() |
-| void | [RenderDepthBuffers](#RenderDepthBuffers)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture depthTexture, simul::crossplatform::Viewport viewport, int x0, int y0, int dx, int dy) |
+| void | [RenderDepthBuffers](#RenderDepthBuffers)(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Texture depthTexture, simul::crossplatform::Viewport viewport, int x0, int y0, int dx, int dy) |
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform) |
 | void | [SetCubeFrustumRange](#SetCubeFrustumRange)(int i, vec4 r) |
 | void | [SetProjection](#SetProjection)(float p) |
@@ -37,7 +37,7 @@ A framebuffer class for mixed-resolution rendering.
 ### void CompleteFrame(long long framenumber)
 This must be called to ensure that the amortization struct is up to date.
 <a name="DeactivateDepth"></a>
-### void DeactivateDepth(simul::crossplatform::DeviceContext)
+### void DeactivateDepth(simul::crossplatform::GraphicsDeviceContext)
 Deactivate the depth buffer
 <a name="GetCubeIntegerFrustumRange"></a>
 ### uint4 GetCubeIntegerFrustumRange(int i)
@@ -52,7 +52,7 @@ A texture that shows what texels are up to date. Where the value is zero, we sho
 ### void InvalidateDeviceObjects()
 Platform-dependent function called when uninitializing the water framebuffer.
 <a name="RenderDepthBuffers"></a>
-### void RenderDepthBuffers(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture depthTexture, simul::crossplatform::Viewport viewport, int x0, int y0, int dx, int dy)
+### void RenderDepthBuffers(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Texture depthTexture, simul::crossplatform::Viewport viewport, int x0, int y0, int dx, int dy)
 Debugging onscreen info:
 
 [in,out] deviceContext   Context for the device.

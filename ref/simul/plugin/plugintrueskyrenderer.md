@@ -80,8 +80,8 @@ Functions
 | void | [RemoveWaterMaskObject](#RemoveWaterMaskObject)(int ID) |
 | void | [RemoveWaterParticleGenerator](#RemoveWaterParticleGenerator)(int ID) |
 | void | [RemoveWaterProbe](#RemoveWaterProbe)(int ID) |
-| int | [RenderFrame](#RenderFrame)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture depthTexture, simul::crossplatform::Texture colourTargetTexture, simul::crossplatform::Viewport depthViewport, simul::crossplatform::Viewport viewports, simul::plugin::RenderStyle s, float exposure, float gamma, int framenumber) |
-| void | [RenderOverlays](#RenderOverlays)(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture depthTexture, bool clear_screen) |
+| int | [RenderFrame](#RenderFrame)(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Texture depthTexture, simul::crossplatform::Texture colourTargetTexture, simul::crossplatform::Viewport depthViewport, simul::crossplatform::Viewport viewports, simul::plugin::RenderStyle s, float exposure, float gamma, int framenumber) |
+| void | [RenderOverlays](#RenderOverlays)(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Texture depthTexture, bool clear_screen) |
 | void | [Set](#Set)(long long Enum, simul::base::Variant v) |
 | void | [SetBool](#SetBool)(char name, bool value) |
 | void | [SetCloudKeyframePosition](#SetCloudKeyframePosition)(simul::sky::uid uid, simul::math::Vector LatLongHeadingDeg) |
@@ -313,10 +313,10 @@ Remove a particle generator
 ### void RemoveWaterProbe(int ID)
 Remove a bounded water object with a given ID
 <a name="RenderFrame"></a>
-### int RenderFrame(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture depthTexture, simul::crossplatform::Texture colourTargetTexture, simul::crossplatform::Viewport depthViewport, simul::crossplatform::Viewport viewports, simul::plugin::RenderStyle s, float exposure, float gamma, int framenumber)
+### int RenderFrame(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Texture depthTexture, simul::crossplatform::Texture colourTargetTexture, simul::crossplatform::Viewport depthViewport, simul::crossplatform::Viewport viewports, simul::plugin::RenderStyle s, float exposure, float gamma, int framenumber)
 Main render function
 <a name="RenderOverlays"></a>
-### void RenderOverlays(simul::crossplatform::DeviceContext deviceContext, simul::crossplatform::Texture depthTexture, bool clear_screen)
+### void RenderOverlays(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Texture depthTexture, bool clear_screen)
 Render the debug textures
 <a name="Set"></a>
 ### void Set(long long Enum, simul::base::Variant v)
