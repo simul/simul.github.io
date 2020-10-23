@@ -7,6 +7,8 @@ weight: 120
 
 Version 4.3
 ---
+Thu 22 Oct : Check global position for Aurora::PreRenderUpdate().  
+Wed 21 Oct : Build fixes; also enable D3D11 to be disabled in CMake.  
 Fri 16 Oct : DeviceContext now split into two classes, base DeviceContext and derived GraphicsDeviceContext. The latter will be used for most rendering, while the base class can be used in asynchronous compute.  
 Fri 16 Oct : Re-enabling copy code  
 Fri 16 Oct : Delay init of SkySequencer renderers.  
@@ -105,7 +107,5 @@ Tue 11 Aug : Moons page - added classes - bold fix - unity link back to legacy
 Tue 11 Aug : Cleaned up and fixed moons page formatting = moons index added - attempted fix for buoyancy index redirect 404  
 Mon 10 Aug : Added Multi-Moon Explanation Page - Sky page rewording  
 Mon 10 Aug : Removed Slack link from index page and added legacy note to previous moon setup tutorial.  
-Mon 10 Aug : Full path for SIMUL_SOURCE_BUILD check.  
-Sun 09 Aug : Uninitialized Variable Fix  
 
 <hr>
