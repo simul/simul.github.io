@@ -65,7 +65,11 @@ You can find the contents by going to "UE4Engine/Engine/Plugins/TrueSkyPlugin/Co
 
 I Can't Enable Water!
 ----------------------
-This will be because you are using our legacy versions (4.1a), which does not support our Water. Please update to 4.2.
+This will be because you are using our legacy versions (4.1a), which does not support our Water. Please update to trueSKY 4.2 or greater.
+
+Failed to load TrueSkyUI_MD.dll for truesky ui
+---------------
+Check your log for - Missing import: VCRUNTIME140_1.dll. If this is the case, you need to install the latest Visual Studio Redistributable. You can download this from https://support.microsoft.com/en-gb/help/2977003/the-latest-supported-visual-c-downloads. Otherwise a re-install of the plugin to ensure all files are present is recommended.
 
 Sky
 ============
