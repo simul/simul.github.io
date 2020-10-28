@@ -42,7 +42,6 @@ Functions
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform renderPlatform) |
 | void | [SetEnableStorms](#SetEnableStorms)(bool s) |
 | void | [SetEnvironment](#SetEnvironment)(simul::clouds::Environment e) |
-| void | [SetExternalCloudTexture](#SetExternalCloudTexture)(simul::crossplatform::Texture) |
 | void | [SetLightingQueryResult](#SetLightingQueryResult)(LightingQueryResult _lightingQueryResult) |
 | void | [SetMaxFadeAltitudeKm](#SetMaxFadeAltitudeKm)(float ma_km) |
 | void | [SetMaxFadeDistanceKm](#SetMaxFadeDistanceKm)(float dist_km) |
@@ -143,10 +142,6 @@ Where supported, enable lightning generation.
 <a name="SetEnvironment"></a>
 ### void SetEnvironment(simul::clouds::Environment e)
 Set the sky interface.
-<a name="SetExternalCloudTexture"></a>
-### void SetExternalCloudTexture(simul::crossplatform::Texture)
-Where we create the main volume texture for rendering elsewhere, we pass it in here.
-This permits ESRAM on XboxOne for example, in a game engine.
 <a name="SetLightingQueryResult"></a>
 ### void SetLightingQueryResult(LightingQueryResult _lightingQueryResult)
 Show the cloud volume window on the lat-long sphere.
@@ -169,7 +164,7 @@ Place a point light source.
 Fields
 ---
 
-**ShouldRenderCloudShadowTexture** Class for real-time volumetric cloud rendering.
+**UseAltCloudShadows** Class for real-time volumetric cloud rendering.
  There should exist a "trueSKY space", where the origin(0,0,0 Cartesian) is at global mean sea level, and an arbitrary point on the Earth's surface.
 The Z axis points up, the X and Y axes are arbitrary (for reasons described below). To avoid singularities, this point, and the orientation of its axes
 should be represented by a double-precision quaternion, which represents the rotation from (say) latitude and longitude zero with X pointing East and Y pointing North.
@@ -179,4 +174,4 @@ The Volume Window is a deformed cuboid, its upper and lower surfaces matching th
 This trueSKY space moves in steps equivalent to one horizontal texel. The function CloudRenderer::MoveCloudWindow(x,y) does this.
 This should be done when the chosen viewpoint (this is up to you) moves more than a texel in any horizontal direction. This way, we need only update the edges as the window moves.
 
-**last_interpolation_checksum**  A checksum to see if the interpolated cloud volume is out of date. This may fail every frame if time is moving continuously - that's ok.
+**last_subdivision_checksum**  A checksum to see if the interpolated cloud volume is out of date. This may fail every frame if time is moving continuously - that's ok.

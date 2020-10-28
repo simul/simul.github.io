@@ -45,6 +45,7 @@ Functions
 | void | [EnsureEffectIsBuilt](#EnsureEffectIsBuilt)(char filename_utf8, std::vector options) |
 | simul::crossplatform::Shader * | [EnsureShader](#EnsureShader)(char filenameUtf8, simul::crossplatform::ShaderType t) |
 | void | [GenerateMips](#GenerateMips)(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Texture t, bool wrap, int array_idx) |
+| simul::crossplatform::ComputeDeviceContext  & | [GetComputeDeviceContext](#GetComputeDeviceContext)() |
 | simul::crossplatform::ContextState * | [GetContextState](#GetContextState)(simul::crossplatform::DeviceContext deviceContext) |
 | simul::crossplatform::Effect * | [GetEffect](#GetEffect)(char name_utf8) |
 | unsigned char | [GetIdx](#GetIdx)() |
@@ -192,6 +193,9 @@ Get or create an API-specific shader object.
 <a name="GenerateMips"></a>
 ### void GenerateMips(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::Texture t, bool wrap, int array_idx)
 Fill in mipmaps from the zero level down.
+<a name="GetComputeDeviceContext"></a>
+### simul::crossplatform::ComputeDeviceContext  & GetComputeDeviceContext()
+Gets an object containing the current global compute context.
 <a name="GetContextState"></a>
 ### simul::crossplatform::ContextState * GetContextState(simul::crossplatform::DeviceContext deviceContext)
 Get the current state to be applied to the given context at the next draw or dispatch.

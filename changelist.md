@@ -7,8 +7,17 @@ weight: 120
 
 Version 4.3
 ---
+Tue 27 Oct : Remove unused var.  
+Tue 27 Oct : Initial pass for optimisation for Aurora.  
+Tue 27 Oct : Check for null aurora.  
+Tue 27 Oct : Remove unsupported call.  
+Mon 26 Oct : CloudRenderer::RenderPrecipitationVolumeTexture() better checks and early outs.  
+Mon 26 Oct : Platform ptr.  
+Mon 26 Oct : Platform ptr.  
+Mon 26 Oct : SkySequencer uses RenderDocLoader; switch to toggle is in CMake: SIMUL_SKYSEQUENCER_LOAD_RENDERDOC_DLL.  
 Fri 23 Oct : Fix for GPU sky brightness in OpenGL. Change to terrain shader face culling.  
 Fri 23 Oct : Doc update to link to VS Redist  
+Thu 22 Oct : Performance improvements to Variable Grid render.  
 Thu 22 Oct : Check global position for Aurora::PreRenderUpdate().  
 Wed 21 Oct : Build fixes; also enable D3D11 to be disabled in CMake.  
 Fri 16 Oct : DeviceContext now split into two classes, base DeviceContext and derived GraphicsDeviceContext. The latter will be used for most rendering, while the base class can be used in asynchronous compute.  
@@ -98,14 +107,5 @@ Thu 20 Aug : Remove console build folders.
 Thu 20 Aug : Fix non-compiling shader.  
 Wed 19 Aug : Fixing bad merges.  
 Wed 19 Aug : Remove unwanted build files that shouldn't be in the repo. Also: hack disabled.  
-Wed 19 Aug : Remove unwanted file.  
-Wed 19 Aug : Remove unwanted file.  
-Wed 19 Aug : Remove unwanted files.  
-Wed 19 Aug : tvector3 fixes.  
-Wed 19 Aug : Improvements to OpenGL GPU brightness calculations and debug info. No Platform ptr commit compared with 4.2a!  
-Fri 14 Aug : Docs - Added water probe documentation page - altered / standardised fullstops on multiple pages  
-Tue 11 Aug : Docs - Added multi-moon variables to variables page. Moons page - minor typo fix  
-Tue 11 Aug : Moons page - added classes - bold fix - unity link back to legacy  
-Tue 11 Aug : Cleaned up and fixed moons page formatting = moons index added - attempted fix for buoyancy index redirect 404  
 
 <hr>

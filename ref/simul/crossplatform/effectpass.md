@@ -6,7 +6,7 @@ weight: 0
 class EffectPass
 ===
 
-| Include: | Platform/CrossPlatform/DeviceContext.h |
+| Include: | Sky/BaseSkyRenderer.h |
 
 
 
