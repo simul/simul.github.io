@@ -7,6 +7,7 @@ weight: 120
 
 Version 4.3
 ---
+Wed 28 Oct : Removed done_mips.  
 Tue 27 Oct : Remove unused var.  
 Tue 27 Oct : Initial pass for optimisation for Aurora.  
 Tue 27 Oct : Check for null aurora.  
@@ -106,6 +107,5 @@ Thu 20 Aug : Added extra reflections controls, fixed water surface being flipped
 Thu 20 Aug : Remove console build folders.  
 Thu 20 Aug : Fix non-compiling shader.  
 Wed 19 Aug : Fixing bad merges.  
-Wed 19 Aug : Remove unwanted build files that shouldn't be in the repo. Also: hack disabled.  
 
 <hr>
