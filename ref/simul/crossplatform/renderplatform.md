@@ -63,6 +63,7 @@ Functions
 | void | [PopShaderBinaryPath](#PopShaderBinaryPath)() |
 | void | [PopShaderPath](#PopShaderPath)() |
 | void | [PopTexturePath](#PopTexturePath)() |
+| int | [Print](#Print)(simul::crossplatform::GraphicsDeviceContext deviceContext, int x, int y, char text, float colr, float bkg) |
 | void | [PushRenderTargets](#PushRenderTargets)(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::TargetsAndViewport tv) |
 | void | [PushShaderBinaryPath](#PushShaderBinaryPath)(char path_utf8) |
 | void | [PushShaderPath](#PushShaderPath)(char path_utf8) |
@@ -249,6 +250,9 @@ Remove a path from the top of the shader source path stack.
 <a name="PopTexturePath"></a>
 ### void PopTexturePath()
 Remove a path from the top of the texture path stack.
+<a name="Print"></a>
+### int Print(simul::crossplatform::GraphicsDeviceContext deviceContext, int x, int y, char text, float colr, float bkg)
+Print at the specified position, returns the number of lines.
 <a name="PushRenderTargets"></a>
 ### void PushRenderTargets(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::crossplatform::TargetsAndViewport tv)
 Store the current rendertargets and viewports at the top of the stack
