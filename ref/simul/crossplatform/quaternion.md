@@ -15,7 +15,7 @@ Quaternion template class to represent rotations.
 Functions
 ---
 
-| vec3d | [operator/](#operator/)(tvector3<T> vec) |
+| tvector3<T> | [operator/](#operator/)(tvector3<T> vec) |
 | simul::crossplatform::Quaternion | [operator!](#operator!)() |
 | simul::crossplatform::Quaternion  & | [operator=](#operator=)(simul::crossplatform::Quaternion q) |
 
@@ -26,7 +26,7 @@ Quaternion template class to represent rotations.
 Functions
 ---
 <a name="operator/"></a>
-### vec3d operator/(tvector3<T> vec)
+### tvector3<T> operator/(tvector3<T> vec)
 Equivalent to (!this)* vec
 <a name="operator!"></a>
 ### simul::crossplatform::Quaternion operator!()

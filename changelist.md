@@ -7,6 +7,7 @@ weight: 120
 
 Version 4.3
 ---
+Wed 04 Nov : Build fixes for Platform change.  
 Mon 02 Nov : Fix tex-\>IsValid() crash.  
 Wed 28 Oct : Removed done_mips.  
 Tue 27 Oct : Remove unused var.  
@@ -106,6 +107,5 @@ Fri 21 Aug : Creating and deleting keyframes at runtime - Sun Position set in en
 Thu 20 Aug : Fix for compile errors and some warnings.  
 Thu 20 Aug : Added extra reflections controls, fixed water surface being flipped  
 Thu 20 Aug : Remove console build folders.  
-Thu 20 Aug : Fix non-compiling shader.  
 
 <hr>
