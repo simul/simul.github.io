@@ -7,6 +7,11 @@ weight: 120
 
 Version 4.3
 ---
+Tue 10 Nov : Fix release.properties  
+Tue 10 Nov : Dx11 Warning Fix, removal of force full init  
+Mon 09 Nov : DX11 fixes  
+Fri 06 Nov : Fix some D3D11-related problems.  
+Fri 06 Nov : Small Fixes  
 Wed 04 Nov : Build fixes for Platform change.  
 Mon 02 Nov : Fix tex-\>IsValid() crash.  
 Wed 28 Oct : Removed done_mips.  
@@ -102,10 +107,5 @@ Tue 25 Aug : Added extra skylight control variables for unity (Temporary)
 Tue 25 Aug : Fix uninitialized var.  
 Tue 25 Aug : using SWAP_NOEXCEPT  
 Tue 25 Aug : SWAP_NOEXCEPT macro.  
-Tue 25 Aug : No need for explicit vec3d_to_vec3, implicit conversion in the template now.  
-Fri 21 Aug : Creating and deleting keyframes at runtime - Sun Position set in engine, Refactor of CloudWindowEditor  
-Thu 20 Aug : Fix for compile errors and some warnings.  
-Thu 20 Aug : Added extra reflections controls, fixed water surface being flipped  
-Thu 20 Aug : Remove console build folders.  
 
 <hr>
