@@ -7,6 +7,8 @@ weight: 120
 
 Version 4.3
 ---
+Fri 13 Nov : Memory tracking uses size_t which is 64-bit, not int which is 32-bit and overflows.  
+Wed 11 Nov : Fix WindowUpdater recompile.  
 Tue 10 Nov : Fix release.properties  
 Tue 10 Nov : Dx11 Warning Fix, removal of force full init  
 Mon 09 Nov : DX11 fixes  
@@ -105,7 +107,5 @@ Wed 26 Aug : Xbox build fix.
 Wed 26 Aug : Allow for Global Wind Movement - Layer Creation via blueprints  
 Tue 25 Aug : Added extra skylight control variables for unity (Temporary)  
 Tue 25 Aug : Fix uninitialized var.  
-Tue 25 Aug : using SWAP_NOEXCEPT  
-Tue 25 Aug : SWAP_NOEXCEPT macro.  
 
 <hr>
