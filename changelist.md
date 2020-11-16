@@ -7,6 +7,10 @@ weight: 120
 
 Version 4.3
 ---
+Mon 16 Nov : No need for struct size check more than once.  
+Fri 13 Nov : Small fix  
+Fri 13 Nov : UnityMemoryInterface compile fix.  
+Fri 13 Nov : Update UnityMemoryInterface to use size_t.  
 Fri 13 Nov : Memory tracking uses size_t which is 64-bit, not int which is 32-bit and overflows.  
 Wed 11 Nov : Fix WindowUpdater recompile.  
 Tue 10 Nov : Fix release.properties  
@@ -103,9 +107,5 @@ Wed 09 Sep : Added Aurorae documentation and corrected others. Changed Aurora FA
 Wed 09 Sep : Removal of automatic Sun + Moon Position from Sky Keyframes. Removed Star variables out of Sky Layer settings. (Both moving engine side)  
 Tue 08 Sep : Added support for water objects to accept meshes for their shape, rather than using only the given generated surface  
 Mon 31 Aug : Full init of cloud texture.  
-Wed 26 Aug : Xbox build fix.  
-Wed 26 Aug : Allow for Global Wind Movement - Layer Creation via blueprints  
-Tue 25 Aug : Added extra skylight control variables for unity (Temporary)  
-Tue 25 Aug : Fix uninitialized var.  
 
 <hr>
