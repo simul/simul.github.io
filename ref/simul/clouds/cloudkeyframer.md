@@ -19,6 +19,7 @@ Functions
 |  | [~CloudKeyframer](#~CloudKeyframer)() |
 | simul::clouds::Storm * | [AddStorm](#AddStorm)(float t0, float t1, simul::crossplatform::Quaterniond origin, float r_km) |
 | void | [DeleteKeyframe](#DeleteKeyframe)(int i) |
+| void | [DeleteKeyframeByUID](#DeleteKeyframeByUID)(simul::sky::uid uid) |
 | void | [DeleteStorm](#DeleteStorm)(int i) |
 | void | [DeleteStormByUniqueId](#DeleteStormByUniqueId)(simul::sky::uid uid) |
 | void | [ForceRelight](#ForceRelight)() |
@@ -91,6 +92,9 @@ Add a storm between the times specified, at the given centre c, with horizontal 
 <a name="DeleteKeyframe"></a>
 ### void DeleteKeyframe(int i)
 Remove a keyframe
+<a name="DeleteKeyframeByUID"></a>
+### void DeleteKeyframeByUID(simul::sky::uid uid)
+Remove Keyframe by UID
 <a name="DeleteStorm"></a>
 ### void DeleteStorm(int i)
 Remove the storm with index i.

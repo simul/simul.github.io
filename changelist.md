@@ -7,6 +7,10 @@ weight: 120
 
 Version 4.3
 ---
+Tue 17 Nov : Added DeleteKeyframeByUID  
+Tue 17 Nov : Fix resource leak.  
+Tue 17 Nov : Fix D3D11 warnings.  
+Tue 17 Nov : int to size_t  
 Mon 16 Nov : No need for struct size check more than once.  
 Fri 13 Nov : Small fix  
 Fri 13 Nov : UnityMemoryInterface compile fix.  
@@ -103,9 +107,5 @@ Wed 09 Sep : Fix for aurorae variables.md
 Wed 09 Sep : Platform ptr.  
 Wed 09 Sep : Minor change to clouds.sfx  
 Wed 09 Sep : Unifying changes from 4.2a: PrecipitationGridDivisors, updated precipitation rendering with PrecipitationLayerInfo, Debug Overlays for Rain and Queries and initial change for Unity D3D12.  
-Wed 09 Sep : Added Aurorae documentation and corrected others. Changed Aurora FAC controls. Minor improvements to Aurora checksum, class initialisation etc.  
-Wed 09 Sep : Removal of automatic Sun + Moon Position from Sky Keyframes. Removed Star variables out of Sky Layer settings. (Both moving engine side)  
-Tue 08 Sep : Added support for water objects to accept meshes for their shape, rather than using only the given generated surface  
-Mon 31 Aug : Full init of cloud texture.  
 
 <hr>
