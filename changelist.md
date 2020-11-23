@@ -7,6 +7,7 @@ weight: 120
 
 Version 4.3
 ---
+Fri 20 Nov : Removed Toolchain  
 Tue 17 Nov : Added DeleteKeyframeByUID  
 Tue 17 Nov : Fix resource leak.  
 Tue 17 Nov : Fix D3D11 warnings.  
@@ -106,6 +107,5 @@ Wed 09 Sep : Minor correction to rainbow compositing to cubemap.
 Wed 09 Sep : Fix for aurorae variables.md  
 Wed 09 Sep : Platform ptr.  
 Wed 09 Sep : Minor change to clouds.sfx  
-Wed 09 Sep : Unifying changes from 4.2a: PrecipitationGridDivisors, updated precipitation rendering with PrecipitationLayerInfo, Debug Overlays for Rain and Queries and initial change for Unity D3D12.  
 
 <hr>
