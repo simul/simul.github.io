@@ -7,6 +7,7 @@ weight: 120
 
 Version 4.3
 ---
+Tue 01 Dec : Minor fixes and rearrangement for docs  
 Fri 20 Nov : Removed Toolchain  
 Tue 17 Nov : Added DeleteKeyframeByUID  
 Tue 17 Nov : Fix resource leak.  
@@ -106,6 +107,5 @@ Wed 09 Sep : Aurorae Documentation typo fixed.
 Wed 09 Sep : Minor correction to rainbow compositing to cubemap.  
 Wed 09 Sep : Fix for aurorae variables.md  
 Wed 09 Sep : Platform ptr.  
-Wed 09 Sep : Minor change to clouds.sfx  
 
 <hr>

@@ -12,7 +12,7 @@ Moons
 ====
 <div class="ue4-specific">
 
-Multiple Moon support (4.2a)
+Multiple Moon support (4.2a onwards)
 ----------------------------------------
 
 With the 4.2a update we have added an extensive additional moon controls, as well as adding the ability to support multiple moons.
@@ -36,8 +36,14 @@ At the bottom of the page we have a image of the orbital model we are using, whi
 Each of the settings functions as follows:
 ----------------------------------------
 
+</div>
 
 
+<div class="unity-specific">
+
+The multi-moon system present within unreal engine has been ported with the 4.3 update. As such the legacy version of moon controls found in 4.2a will be present, and documentation can be found [here](tutorials)
+
+</div>
 
 <b> Name -</b> This allows for assigning a name for each moon within the scene. Names are important to help you differentiate between moons. This is also used within some of the trueSKY functionality, and as such users should ensure not to name moons the same thing as this may cause conflicts and undesired results. We have blueprints to get a moon by name.
 
@@ -83,10 +89,4 @@ Each of the settings functions as follows:
 In addition these settings are all tied to the moons lighting and how it will affect the scene, so ensure to be careful when editing settings as these are using a physically correct model. So making the moon extremely large will in return cause the lighting from said moon to be a lot brighter compared to a realistically sized moon.
 
 
-</div>
 
-<div class="unity-specific">
-
-The multi-moon system present within unreal engine is still in the process of being ported through to the unity engine. As such the legacy version of moon controls are still avalible and can be found [here](tutorials)
-
-</div>

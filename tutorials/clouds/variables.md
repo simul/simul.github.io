@@ -87,6 +87,8 @@ To control the movement of the clouds you should use the [Cloud Window](/skysequ
 
 For one keyframe you should select the position of the clouds, then create a new keyframe and select the new position. Then the clouds will move between the positions. 
 
+With the 4.3 update you can now choose which method to control your cloud movement via wind. To do this navigate to your cloud layer - and un-check the "manually position keyframe" check-box. This will allow for wind direction (set within the trueSKY actor within the scene) to control and move the clouds location.
+
 
 
 <hr>
