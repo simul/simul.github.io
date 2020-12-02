@@ -32,11 +32,13 @@ By default you will have a moon array element created within the sequence actor.
 At the bottom of the page we have a image of the orbital model we are using, which may be useful to reference in order to understand how some of these settings function. All of our settings can be edited via blueprints by getting a reference of the array of moons stored in the trueSkySequenceActor.
 
 
+</div>
+
 
 Each of the settings functions as follows:
 ----------------------------------------
 
-</div>
+
 
 
 <div class="unity-specific">

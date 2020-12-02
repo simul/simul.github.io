@@ -11,6 +11,8 @@ Frequently Asked Questions
 =============================
 This is an ongoing section of commonly asked questions. You can skip to a specific section by clicking below.
 
+We update a pinned thread for each released build documenting the "known issues" of that build. this will initially be populated by issues found internally through testing, but as issues are found by users, the common ones will be added into this thread to allow for a place to view issues, as well as see potential workaround for the issues. This can be found here https://simul.co/support/exchange/
+
 Sections
 ------------
 [Setup](#setup)                                                                                                                                 |

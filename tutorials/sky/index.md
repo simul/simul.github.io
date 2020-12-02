@@ -17,4 +17,4 @@ In trueSKY, the sky is modified in two ways: through sky keyframes and the sky l
 
 * [**Variables**](variables.html)                                                               - Details of all the different variables for the sky
 
-* [**Moons**](moons.html)                                                                               - Details of multi-moon setups within un-real, as well as explanations for the variables involved.
+* [**Moons**](moons.html)                                                                               - Details of multi-moon setups within Unreal, as well as explanations for the variables involved.
