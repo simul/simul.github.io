@@ -7,6 +7,7 @@ weight: 120
 
 Version 4.3
 ---
+Wed 02 Dec : Fix to struct issue C# to C++  
 Wed 02 Dec : Further fixes and additions to docs - Notably Precipitation additions, and moving some information from index pages to relevant locations.  
 Tue 01 Dec : Minor fixes and rearrangement for docs  
 Fri 20 Nov : Removed Toolchain  
@@ -106,6 +107,5 @@ Fri 11 Sep : Keyframe Positioning via Lat/Lon/Heading input
 Fri 11 Sep : Minor UI update.  
 Wed 09 Sep : Aurorae Documentation typo fixed.  
 Wed 09 Sep : Minor correction to rainbow compositing to cubemap.  
-Wed 09 Sep : Fix for aurorae variables.md  
 
 <hr>
