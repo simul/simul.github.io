@@ -7,9 +7,13 @@ weight: 120
 
 Version 4.3
 ---
+Mon 07 Dec : Set precipitationVolumeCleared variable from global to class variable  
+Mon 07 Dec : Fix for clouds not being cleared from the cubemap when cloudiness is set to 0, and precipitation not updating when set to 0 also.  
+Fri 04 Dec : Add build.sh for Linux.  
 Wed 02 Dec : Fix to struct issue C# to C++  
 Wed 02 Dec : Further fixes and additions to docs - Notably Precipitation additions, and moving some information from index pages to relevant locations.  
 Tue 01 Dec : Minor fixes and rearrangement for docs  
+Mon 23 Nov : Small fix for render target reset  
 Fri 20 Nov : Removed Toolchain  
 Tue 17 Nov : Added DeleteKeyframeByUID  
 Tue 17 Nov : Fix resource leak.  
@@ -20,6 +24,7 @@ Fri 13 Nov : Small fix
 Fri 13 Nov : UnityMemoryInterface compile fix.  
 Fri 13 Nov : Update UnityMemoryInterface to use size_t.  
 Fri 13 Nov : Memory tracking uses size_t which is 64-bit, not int which is 32-bit and overflows.  
+Wed 11 Nov : Made sure that the render target is reset after rendering  
 Wed 11 Nov : Fix WindowUpdater recompile.  
 Tue 10 Nov : Fix release.properties  
 Tue 10 Nov : Dx11 Warning Fix, removal of force full init  
@@ -102,10 +107,5 @@ Tue 15 Sep : .nsi fixes
 Mon 14 Sep : Commit Platform ptr.  
 Mon 14 Sep : BoundedWaterObject initialiser list order fixed.  
 Fri 11 Sep : Updated documentation for water  
-Fri 11 Sep : Vulkan needs the precipitationLayerInfos StructuredBuffer to be applied on the init pass.  
-Fri 11 Sep : Keyframe Positioning via Lat/Lon/Heading input  
-Fri 11 Sep : Minor UI update.  
-Wed 09 Sep : Aurorae Documentation typo fixed.  
-Wed 09 Sep : Minor correction to rainbow compositing to cubemap.  
 
 <hr>
