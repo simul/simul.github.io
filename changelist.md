@@ -7,6 +7,9 @@ weight: 120
 
 Version 4.3
 ---
+Tue 15 Dec : Fix Rain texture overlays and PrecipitationRenderer keeps a copy of the last skylight cubemap for debugging. Other minor fixes for rain.sfx  
+Mon 14 Dec : Fix for Lightpass texture when rendering lightning in OpenGL.  
+Mon 14 Dec : BaseWeatherRenderer::RenderCompositingTextures() new layer for texture debugging. Fix GLSL for invalid operands to "*" in GLSL for lightning_CS_BranchFractal_c.glsl  
 Fri 11 Dec : CloudConstants changed to meet GLSL std140. OpenGLSample.cpp updated. TrueSkyRenderer::RenderStandard() returns if there's no view.  
 Mon 07 Dec : Set precipitationVolumeCleared variable from global to class variable  
 Mon 07 Dec : Fix for clouds not being cleared from the cubemap when cloudiness is set to 0, and precipitation not updating when set to 0 also.  
@@ -104,8 +107,5 @@ Wed 16 Sep : Actually fixed image extensions
 Wed 16 Sep : Fixed image extensions  
 Wed 16 Sep : Fix to Uninstaller + GLFW files for Static Builds  
 Tue 15 Sep : Update to water object tutorial  
-Tue 15 Sep : .nsi fixes  
-Mon 14 Sep : Commit Platform ptr.  
-Mon 14 Sep : BoundedWaterObject initialiser list order fixed.  
 
 <hr>
