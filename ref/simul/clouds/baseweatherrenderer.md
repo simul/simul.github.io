@@ -30,7 +30,7 @@ Functions
 | simul::sky::float4  const & | [GetLightColour](#GetLightColour)(float view_altitude_km) |
 | simul::clouds::BaseLightningRenderer * | [GetLightningRenderer](#GetLightningRenderer)() |
 | simul::clouds::PrecipitationRenderer * | [GetPrecipitationRenderer](#GetPrecipitationRenderer)() |
-| void | [GetSiderealViewMatrix](#GetSiderealViewMatrix)(simul::crossplatform::ViewStruct viewStruct, simul::math::Matrix4x4 new_view) |
+| simul::crossplatform::Quaterniond | [GetSiderealTransform](#GetSiderealTransform)() |
 | simul::sky::SkyKeyframer * | [GetSkyKeyframer](#GetSkyKeyframer)() |
 | simul::clouds::TransparencyAtmospherics | [GetTransparencyAtmospherics](#GetTransparencyAtmospherics)(simul::crossplatform::ViewStruct viewStruct) |
 | void | [InvalidateDeviceObjects](#InvalidateDeviceObjects)() |
@@ -110,8 +110,8 @@ Get a pointer to the lightning renderer.
 <a name="GetPrecipitationRenderer"></a>
 ### simul::clouds::PrecipitationRenderer * GetPrecipitationRenderer()
 Get a pointer to the rain/snow renderer.
-<a name="GetSiderealViewMatrix"></a>
-### void GetSiderealViewMatrix(simul::crossplatform::ViewStruct viewStruct, simul::math::Matrix4x4 new_view)
+<a name="GetSiderealTransform"></a>
+### simul::crossplatform::Quaterniond GetSiderealTransform()
 Get the view matrix in sidereal space, e.g. for rendering celestial objects.
 <a name="GetSkyKeyframer"></a>
 ### simul::sky::SkyKeyframer * GetSkyKeyframer()

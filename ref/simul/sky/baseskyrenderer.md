@@ -108,7 +108,7 @@ Functions
 | void | [RenderPlanet](#RenderPlanet)(simul::crossplatform::GraphicsDeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture tex, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float rad, float dir, float colr, bool do_lighting, float exposure) |
 | void | [RenderPlanets](#RenderPlanets)(simul::crossplatform::GraphicsDeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float exposure) |
 | bool | [RenderPointStars](#RenderPointStars)(simul::crossplatform::GraphicsDeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float, float, int) |
-| void | [RenderSun](#RenderSun)(simul::crossplatform::GraphicsDeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float exposure) |
+| void | [RenderSun](#RenderSun)(simul::crossplatform::GraphicsDeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float exposure, simul::crossplatform::Quaterniond q) |
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform renderPlatform) |
 | void | [SaveTextures](#SaveTextures)(char) |
 | void | [SetBackgroundTexture](#SetBackgroundTexture)(simul::crossplatform::Texture t) |
@@ -282,7 +282,7 @@ Draw planets in the sky, e.g. the Moon.
 ### bool RenderPointStars(simul::crossplatform::GraphicsDeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float, float, int)
 Draw the stars.
 <a name="RenderSun"></a>
-### void RenderSun(simul::crossplatform::GraphicsDeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float exposure)
+### void RenderSun(simul::crossplatform::GraphicsDeviceContext, simul::crossplatform::ViewStruct viewStruct, simul::crossplatform::Texture depthTexture, vec4 viewportTextureRegionXYWH, float exposure, simul::crossplatform::Quaterniond q)
 Draw the sun.
 <a name="RestoreDeviceObjects"></a>
 ### void RestoreDeviceObjects(simul::crossplatform::RenderPlatform renderPlatform)

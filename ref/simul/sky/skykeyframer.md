@@ -42,7 +42,7 @@ Functions
 | void | [SetStartDate](#SetStartDate)(int y, int m, int d) |
 | void | [SetUniformKeyframes](#SetUniformKeyframes)(int Steps, float range) |
 | void | [Update](#Update)() |
-| void | [EnsureSunAndMoonValidity](#EnsureSunAndMoonValidity)(simul::sky::SkyKeyframe K1) |
+| bool | [InterpolateKeyframe](#InterpolateKeyframe)(simul::sky::SkyKeyframe K) |
 
 
 Base Classes
@@ -178,6 +178,6 @@ Create a number of evenly spaced keyframes.
 <a name="Update"></a>
 ### void Update()
 Per-frame update call, this function updates the interpolation and the tables.
-<a name="EnsureSunAndMoonValidity"></a>
-### void EnsureSunAndMoonValidity(simul::sky::SkyKeyframe K1)
+<a name="InterpolateKeyframe"></a>
+### bool InterpolateKeyframe(simul::sky::SkyKeyframe K)
 Apply any overrides.

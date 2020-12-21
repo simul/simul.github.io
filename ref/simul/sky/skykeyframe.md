@@ -55,12 +55,6 @@ Fields
 
 **FogCeilingKm**  < Thick ground fog
 
-**SunAzimuth**  < Upper limit of ground fog
-
-**SunElevation**  < Horizontal angle to the sun. This will be overridden if sun position is automatic.
-
-**SeaLevelTemperatureK**  < Angle of the sun above the horizon. This will be overridden if sun position is automatic.
-
 **StoreAsColours**  < Temperature at sealevel, in kelvins - mainly relevant to infra-red.
 
 **Horizon**  < If true, the keyframe is stored as a colour table, rather than generating its colours from its properties.
