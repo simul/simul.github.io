@@ -7,6 +7,9 @@ weight: 120
 
 Version 4.3
 ---
+Thu 24 Dec : Fix D3D11 build  
+Thu 24 Dec : PS4 compile fix  
+Wed 23 Dec : Commodore rendering fixed for SDK 2.000  
 Fri 18 Dec : Fix for sun direction override not correctly transforming the sun sprite  
 Tue 15 Dec : Fix Rain texture overlays and PrecipitationRenderer keeps a copy of the last skylight cubemap for debugging. Other minor fixes for rain.sfx  
 Mon 14 Dec : Fix for Lightpass texture when rendering lightning in OpenGL.  
@@ -104,8 +107,5 @@ Thu 17 Sep : Fix block update issue.
 Thu 17 Sep : Platform ptr.  
 Thu 17 Sep : Removing Old Keyframe Values  
 Wed 16 Sep : Update to the Aurorae documentation.  
-Wed 16 Sep : Actually fixed image extensions  
-Wed 16 Sep : Fixed image extensions  
-Wed 16 Sep : Fix to Uninstaller + GLFW files for Static Builds  
 
 <hr>
