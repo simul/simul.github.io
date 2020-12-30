@@ -7,6 +7,8 @@ weight: 120
 
 Version 4.3
 ---
+Mon 28 Dec : Fix Xbox build.  
+Mon 28 Dec : Fix dx11 compile.  
 Thu 24 Dec : Fix D3D11 build  
 Thu 24 Dec : PS4 compile fix  
 Wed 23 Dec : Commodore rendering fixed for SDK 2.000  
@@ -105,7 +107,5 @@ Mon 21 Sep : Minor corrections.
 Fri 18 Sep : Cloud block fill in direction away from light. Automatic number of mips in cloud texture so that block size is maximized. Remove old unused code and classes.  
 Thu 17 Sep : Fix block update issue.  
 Thu 17 Sep : Platform ptr.  
-Thu 17 Sep : Removing Old Keyframe Values  
-Wed 16 Sep : Update to the Aurorae documentation.  
 
 <hr>
