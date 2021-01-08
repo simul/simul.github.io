@@ -101,7 +101,7 @@ Functions
 | void | [SetWaterVector](#SetWaterVector)(char name, int ID, float value) |
 | bool | [TriggerAction](#TriggerAction)(char name) |
 | void | [UpdateCustomWaterMesh](#UpdateCustomWaterMesh)(int ID, simul::terrain::WaterMeshObjectValues Mesh) |
-| void | [UpdateProfilingText](#UpdateProfilingText)() |
+| void | [UpdateProfilingText](#UpdateProfilingText)(bool getSimpleProfiling) |
 | void | [UpdateWaterBuoyancyObjectValues](#UpdateWaterBuoyancyObjectValues)(simul::terrain::WaterMeshObjectValues values) |
 | void | [UpdateWaterMaskObjectValues](#UpdateWaterMaskObjectValues)(simul::terrain::waterMaskingObject values) |
 | void | [UpdateWaterParticleGeneratorValues](#UpdateWaterParticleGeneratorValues)(simul::terrain::particleGeneratorValues values, simul::terrain::particleGeneratorType generatorType, simul::plugin::ExternalTexture customPlaneTexture) |
@@ -378,7 +378,7 @@ Trigger an action. nameshould be "RecompileShaders".
 ### void UpdateCustomWaterMesh(int ID, simul::terrain::WaterMeshObjectValues Mesh)
 Update custom water mesh to a given bounded water object
 <a name="UpdateProfilingText"></a>
-### void UpdateProfilingText()
+### void UpdateProfilingText(bool getSimpleProfiling)
 Called once per frame, updates every 256 frames.
 <a name="UpdateWaterBuoyancyObjectValues"></a>
 ### void UpdateWaterBuoyancyObjectValues(simul::terrain::WaterMeshObjectValues values)

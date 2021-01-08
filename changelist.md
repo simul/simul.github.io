@@ -7,6 +7,13 @@ weight: 120
 
 Version 4.3
 ---
+Thu 07 Jan : CloudRenderer::InvalidateDeviceObjects() calls SAFE_DELETE(sphereRenderer) and BaseSkyRenderer::InvalidateDeviceObjects() calls SAFE_DELETE on localFadeTextures.  
+Thu 07 Jan : Aurora shader fixes for incorrect rendering in OpenGL. Passing cloudWindowHeight for Aurora rendering. Minor rendering re-ordering. Aurora* moved from SkyKeyframer to BaseSkyRenderer.  
+Wed 06 Jan : Profiler starts with trueSKY_ to allow for easier search functionality  
+Tue 05 Jan : fix to debug text  
+Tue 05 Jan : Update some SIMUL_COMBINED_PROFILE labels.  
+Mon 04 Jan : Simple Profiling Text for builds  
+Mon 04 Jan : Fix compile issue in SimulSky_MD  
 Mon 28 Dec : Fix Xbox build.  
 Mon 28 Dec : Fix dx11 compile.  
 Thu 24 Dec : Fix D3D11 build  
@@ -100,12 +107,5 @@ Wed 23 Sep : Rename Override Wind
 Tue 22 Sep : Keep licence header visible  
 Tue 22 Sep : Block lighting corrections, improvements.  
 Mon 21 Sep : Update position of celestial background.  
-Mon 21 Sep : Fix CloudRenderer::RenderCrossSections() debug overlays viewports.  
-Mon 21 Sep : Minor space/tab format changes to WindowUpdater.cpp/.h  
-Mon 21 Sep : Minor space/tab format changes to WindowUpdater.cpp/.h  
-Mon 21 Sep : Minor corrections.  
-Fri 18 Sep : Cloud block fill in direction away from light. Automatic number of mips in cloud texture so that block size is maximized. Remove old unused code and classes.  
-Thu 17 Sep : Fix block update issue.  
-Thu 17 Sep : Platform ptr.  
 
 <hr>
