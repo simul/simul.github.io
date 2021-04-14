@@ -5,8 +5,62 @@ weight: 120
 ---
 
 
-Version 4.3
+Version 4.4
 ---
+Tue 13 Apr : fixes for docs  
+Tue 06 Apr : Water: newBuoyancyObject-\>outputsBuffer was incorrectly initialized without CPU read access. As was BoundedWaterObject::waterProbeOutputsBuffer.  
+Thu 01 Apr : Fix water rendering in Vulkan. Fix numerous resource leaks in water renderer and related classes. Enable water in Sky Sequencer.  
+Thu 01 Apr : RenderFrameStruct::colourTarget is assigned an RTV in D3D12. Nullptr check in InitDefaultTargets().  
+Thu 01 Apr : Indent error fix for CopyToTargetDir.py  
+Wed 31 Mar : Updated Unity Target Directories for Spectrum.  
+Wed 31 Mar : Updated hard-coded link library for Spectrum.  
+Mon 22 Mar : Added class CloudRaytraceLighting. Moved AABB Generation variables and functions to CloudRaytraceLighting. Clean up warnings.  
+Sun 21 Mar : Fix memory tracking overflows.  
+Fri 19 Mar : Updated RenderAABBWireframe() to account of central texel. Better generation of non-uniform grid boxes.  
+Thu 18 Mar : RenderAABBWireframe() improved, draws in all quadrants.  
+Wed 17 Mar : Fix for CloudRenderer::LoadVDB() and EvaluateSH()  
+Wed 17 Mar : Platform ptr.  
+Wed 17 Mar : Added ShowCloudAABB debug overlay  
+Wed 17 Mar : RenderAABBWireframe() added.  
+Wed 17 Mar : Update cloud_raytrace shaders. Platform ptr.  
+Tue 16 Mar : Build fixes  
+Mon 15 Mar : Changes to looping, precipitation colouring for keyframes  
+Mon 15 Mar : Initial tests/changes to Timeline  
+Fri 12 Mar : Uncommented out RenderPostTranslucent  
+Thu 11 Mar : Update CopyToTargetDir.py to use PlatformType enum, cleared up functions and output.  
+Wed 10 Mar : Updated imported water functions to stop using bool returns  
+Tue 09 Mar : Limit Zoom in CloudWindow  
+Mon 08 Mar : Added Acceleration Structure build based on AABB. CS_CloudDensityAABB() generation via compute shader. Added cloud_raytrace.sfx inital commit. Platform ptr.  
+Fri 05 Mar : Delete old .properties files, moved deleteOldFtp.py  
+Wed 17 Feb : Fix for black clouds when initialising trueSKY without a CloudKeyframer.  
+Fri 12 Feb : Removed some references to latitude and longitude to prevent the values from being set incorrectly  
+Fri 12 Feb : composite.sl uses absolute value for the distance to avoid nan/inf.  
+Wed 10 Feb : on_actionShowCloudQueries_toggled() and Referenced amended. Added SDF generation for CloudDensity volume texture.  
+Wed 03 Feb : CloudRenderer::PreRenderUpdate() checks OverrideWind in CloudLayer::CloudKeyframer* before calling CloudWindow::Update() with a new speed.  
+Tue 02 Feb : CloudRenderer::SetCloudConstants() convert wind direction from RAD to DEG.  
+Fri 15 Jan : Initialization order fix. Debug option for PrecipitationRaduisMeters  
+Fri 15 Jan : CLoud update reset if source changes.  
+Thu 14 Jan : Fixed noise offset behaviour due to wind in Variable Grid cloud rendering.  
+Wed 13 Jan : Take Cmake var for vulkan sdk dir.  
+Tue 12 Jan : More output from Build.bat  
+Tue 12 Jan : .  
+Tue 12 Jan : Platform ptr.  
+Tue 12 Jan : Platform ptr.  
+Tue 12 Jan : Updated version number to 4.4.  
+Mon 11 Jan : Update ReadMe.md  
+Mon 11 Jan : Don't use deprecated fns - this is an error on some platforms.  
+Mon 11 Jan : Remove references to effects11_MT.  
+Mon 11 Jan : Platform ptr  
+Mon 11 Jan : Add realTimeWind option to CLoudRenderingOptions.  
+Mon 11 Jan : Sample for D3D12 call FlushImmediateCommandList() at end of OnCreateDevice(). Cleaned up BaseTerrainRenderer.cpp.  
+Sun 10 Jan : Platform ptr  
+Sun 10 Jan : Vulkan sample fix  
+Sun 10 Jan : Updated Platform now requires mip count in ensuretexture2dSizeAndFormat.  
+Sat 09 Jan : Correct Vulkan version  
+Sat 09 Jan : Added Setup.py. This will replace Build.bat etc.  
+Fri 08 Jan : Fix to build.bat, Update to release.properties to include Vulkan SDK version  
+Fri 08 Jan : Platform pointer.  
+Fri 08 Jan : Remove unneeded files.  
 Thu 07 Jan : CloudRenderer::InvalidateDeviceObjects() calls SAFE_DELETE(sphereRenderer) and BaseSkyRenderer::InvalidateDeviceObjects() calls SAFE_DELETE on localFadeTextures.  
 Thu 07 Jan : Aurora shader fixes for incorrect rendering in OpenGL. Passing cloudWindowHeight for Aurora rendering. Minor rendering re-ordering. Aurora* moved from SkyKeyframer to BaseSkyRenderer.  
 Wed 06 Jan : Profiler starts with trueSKY_ to allow for easier search functionality  
@@ -14,6 +68,7 @@ Tue 05 Jan : fix to debug text
 Tue 05 Jan : Update some SIMUL_COMBINED_PROFILE labels.  
 Mon 04 Jan : Simple Profiling Text for builds  
 Mon 04 Jan : Fix compile issue in SimulSky_MD  
+Mon 04 Jan : Cmake change to move trueSKYPluginRender to source build  
 Mon 28 Dec : Fix Xbox build.  
 Mon 28 Dec : Fix dx11 compile.  
 Thu 24 Dec : Fix D3D11 build  
@@ -32,6 +87,7 @@ Wed 02 Dec : Further fixes and additions to docs - Notably Precipitation additio
 Tue 01 Dec : Minor fixes and rearrangement for docs  
 Mon 23 Nov : Small fix for render target reset  
 Fri 20 Nov : Removed Toolchain  
+Tue 17 Nov : Warning Fix  
 Tue 17 Nov : Added DeleteKeyframeByUID  
 Tue 17 Nov : Fix resource leak.  
 Tue 17 Nov : Fix D3D11 warnings.  
@@ -51,61 +107,5 @@ Fri 06 Nov : Small Fixes
 Wed 04 Nov : Build fixes for Platform change.  
 Mon 02 Nov : Fix tex-\>IsValid() crash.  
 Wed 28 Oct : Removed done_mips.  
-Tue 27 Oct : Remove unused var.  
-Tue 27 Oct : Initial pass for optimisation for Aurora.  
-Tue 27 Oct : Check for null aurora.  
-Tue 27 Oct : Remove unsupported call.  
-Mon 26 Oct : CloudRenderer::RenderPrecipitationVolumeTexture() better checks and early outs.  
-Mon 26 Oct : Platform ptr.  
-Mon 26 Oct : Platform ptr.  
-Mon 26 Oct : SkySequencer uses RenderDocLoader; switch to toggle is in CMake: SIMUL_SKYSEQUENCER_LOAD_RENDERDOC_DLL.  
-Fri 23 Oct : Fix for GPU sky brightness in OpenGL. Change to terrain shader face culling.  
-Fri 23 Oct : Doc update to link to VS Redist  
-Thu 22 Oct : Performance improvements to Variable Grid render.  
-Thu 22 Oct : Check global position for Aurora::PreRenderUpdate().  
-Wed 21 Oct : Build fixes; also enable D3D11 to be disabled in CMake.  
-Fri 16 Oct : DeviceContext now split into two classes, base DeviceContext and derived GraphicsDeviceContext. The latter will be used for most rendering, while the base class can be used in asynchronous compute.  
-Fri 16 Oct : Re-enabling copy code  
-Fri 16 Oct : Delay init of SkySequencer renderers.  
-Thu 15 Oct : Docs - Update time progression page to reflect unity changes  
-Thu 15 Oct : Additional profiling  
-Thu 15 Oct : Updated Aurorae Docs.  
-Wed 14 Oct : Show Auroral Oval is default on in SkySequencer.  
-Wed 14 Oct : Added Capitals to ref headers and moved a heading into a class to make this cleaner in performance page  
-Tue 13 Oct : Add fractal octaves to cell noise. Improve blending.  
-Tue 13 Oct : Added PrecipitationBaseKm to define lower bound of PrecipitationLayers. WIP forced Z nearest filtering.  
-Tue 13 Oct : Cell noise  
-Mon 12 Oct : Shader tests.  
-Mon 12 Oct : Add CELLNOISE cloud class.  
-Sat 10 Oct : Block-update improvements.  
-Fri 09 Oct : Check version number for ExternalDynamicValues and ExternalRenderValues. Match structures with 4.2a.  
-Fri 09 Oct : Option to disable a layer in Sequencer. Max Density Fix. Removal of High Detail proportion  
-Fri 09 Oct : cloud window update sync'd to layers.  
-Fri 09 Oct : Transitioning to synchronized layer-volume update.  
-Thu 08 Oct : Additional stored data.  
-Thu 08 Oct : Extract layer data at initialization of cloud update.  
-Thu 08 Oct : Add cloud_update.sfx shader, multi-texture blend for main cloud volume.  
-Wed 07 Oct : Platform ptr.  
-Wed 07 Oct : Platform ptr.  
-Wed 07 Oct : General fix for warning for casting. Aurora UI change to match engines, docs updated. Shaders/Vulkan/CMakeLists.txt changed to use Platform/Vulkan/Sfx/Vulkan.json. Commit Platform ptr.  
-Wed 07 Oct : enum fixes for Topology.  
-Wed 07 Oct : Update Vulkan json  
-Mon 05 Oct : Update to ExternalDynamicValues.  
-Mon 05 Oct : Small fixes for unity  
-Mon 05 Oct : Fix to Cloud type class in Sequencer  
-Mon 05 Oct : Update to full init  
-Mon 05 Oct : Update to ExternalStruct to include WindowGrid and LightingMode. Fix to Sequencer. Disabled Random Seed  
-Fri 02 Oct : Added Save/Load functions to Aurora.  
-Fri 02 Oct : Fix layout in UnityPluginInterface.h and commit Platform ptr.  
-Fri 02 Oct : SetShowAuroraeControls() added to disable in Engine. Aurora values added ExternalRenderValues. Aurora is now solely in SkyKeyframer  
-Wed 30 Sep : Fixing minor issues and adding missing image on blueprint page  
-Wed 30 Sep : Updating FAQ as Niagara information was incorrect  
-Wed 30 Sep : Update to blueprint pages - adding in Create / delete of keyframe and layers - as well as new map texture location and nodes  
-Tue 29 Sep : Spherical rendering  
-Wed 23 Sep : Updating Docs - 4.3 specific features  
-Wed 23 Sep : Rename Override Wind  
-Tue 22 Sep : Keep licence header visible  
-Tue 22 Sep : Block lighting corrections, improvements.  
-Mon 21 Sep : Update position of celestial background.  
 
 <hr>

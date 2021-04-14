@@ -6,7 +6,7 @@ weight: 0
 struct ExternalDynamicValues
 ===
 
-| Include: | Plugins/TrueSkyPluginRender/PluginTrueSkyRenderer.h |
+| Include: | PlugIns/TrueSkyPluginRender/PluginTrueSkyRenderer.h |
 
 
 

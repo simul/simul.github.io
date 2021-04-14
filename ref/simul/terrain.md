@@ -13,6 +13,7 @@ namespace terrain
 Classes and Structures
 ---
 
+| class [BaseWaterRenderer](terrain/basewaterrenderer.html) |  |
 | struct [beaufortConstants](terrain/beaufortconstants.html) |  |
 | struct [boundlessOceanProperties](terrain/boundlessoceanproperties.html) |  |
 | struct [globalWaterValues](terrain/globalwatervalues.html) |  |

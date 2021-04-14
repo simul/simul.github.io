@@ -6,15 +6,23 @@ weight: 0
 struct CloudRenderingOptions
 ===
 
-| Include: | Clouds/CloudRenderingOptions.h |
-
-This controls the rendering of clouds.<br>
+| Include: | Clouds/CloudLighting.h |
 
 
 
+Functions
+---
+
+|  | [CloudRenderingOptions](#CloudRenderingOptions)() |
+
+
+Functions
+---
+<a name="CloudRenderingOptions"></a>
+###  CloudRenderingOptions()
 This controls the rendering of clouds.
 
-  
+This controls the rendering of clouds.
 
 
 Fields

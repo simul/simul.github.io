@@ -8,6 +8,8 @@ class BaseWaterRenderer
 
 | Include: | Terrain/BaseWaterRenderer.h |
 
+The main water rendering class
+  
 
 
 Functions
@@ -53,6 +55,9 @@ Functions
 | void | [updateWaterMaskObjectValues](#updateWaterMaskObjectValues)(simul::terrain::waterMaskingObject values) |
 | void | [updateWaterProbes](#updateWaterProbes)(simul::crossplatform::DeviceContext deviceContext) |
 | void | [updateWaterProbeValues](#updateWaterProbeValues)(simul::terrain::WaterProbeValues values) |
+
+The main water rendering class
+  
 
 
 Functions

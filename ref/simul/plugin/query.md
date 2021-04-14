@@ -6,7 +6,7 @@ weight: 0
 struct Query
 ===
 
-| Include: | Plugins/TrueSkyPluginRender/PluginTrueSkyRenderer.h |
+| Include: | PlugIns/TrueSkyPluginRender/PluginTrueSkyRenderer.h |
 
 A query from outside the plugin.
   

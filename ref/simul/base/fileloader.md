@@ -6,7 +6,7 @@ weight: 0
 class FileLoader
 ===
 
-| Include: | Plugins/TrueSkyPluginRender/UnityPluginInterface.h |
+| Include: | PlugIns/TrueSkyPluginRender/UnityPluginInterface.h |
 
 Attribute to make function be exported from a plugin:
 

@@ -113,10 +113,6 @@ This is a checksum that only changes if an in-use subdivision has modified (cycl
 Return true if the keyframer has the floating point value with the given, case-insensitive, name; return false otherwise.
 
 These are the properties the SkyKeyframer has:
-- LatitudeRadians
-- LongitudeRadians
-- LatitudeDegrees
-- LongitudeDegrees
 - MaxStarMagnitude
 - MinimumStarPixelSize
 - MaxDistanceKm
@@ -128,7 +124,6 @@ These are the properties the SkyKeyframer has:
 - OzoneStrength
 - Emissivity
 - MoonAlbedo
-- TimezoneHours
 - SunRadiusArcMinutes
 - MoonRadiusArcMinutes
 - sunazimuth

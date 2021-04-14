@@ -6,7 +6,7 @@ weight: 0
 struct RenderFrameStruct
 ===
 
-| Include: | Plugins/TrueSkyPluginRender/UnityPluginInterface.h |
+| Include: | PlugIns/TrueSkyPluginRender/UnityPluginInterface.h |
 
 
 

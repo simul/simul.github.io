@@ -6,7 +6,7 @@ weight: 0
 namespace plugin
 ===
 
-| Include: | Plugins/TrueSkyPluginRender/PluginTrueSkyRenderer.h |
+| Include: | PlugIns/TrueSkyPluginRender/PluginTrueSkyRenderer.h |
 
 
 
@@ -26,16 +26,16 @@ Functions
 | int | [GetNumStorms](#GetNumStorms)() |
 | simul::sky::uid | [GetStormAtTime](#GetStormAtTime)(float t) |
 | simul::sky::uid | [GetStormByIndex](#GetStormByIndex)(int i) |
-| bool | [StaticAddWaterBuoyancyObject](#StaticAddWaterBuoyancyObject)(simul::terrain::WaterMeshObjectValues newObject) |
-| bool | [StaticAddWaterMaskObject](#StaticAddWaterMaskObject)(simul::terrain::waterMaskingObject newObject) |
-| bool | [StaticAddWaterParticleGenerator](#StaticAddWaterParticleGenerator)(simul::terrain::particleGeneratorValues newGenerator, simul::terrain::particleGeneratorType newGeneratorType, simul::plugin::ExternalTexture customPlaneTexture) |
-| bool | [StaticAddWaterProbe](#StaticAddWaterProbe)(simul::terrain::WaterProbeValues values) |
+| uint | [StaticAddWaterBuoyancyObject](#StaticAddWaterBuoyancyObject)(simul::terrain::WaterMeshObjectValues newObject) |
+| uint | [StaticAddWaterMaskObject](#StaticAddWaterMaskObject)(simul::terrain::waterMaskingObject newObject) |
+| uint | [StaticAddWaterParticleGenerator](#StaticAddWaterParticleGenerator)(simul::terrain::particleGeneratorValues newGenerator, simul::terrain::particleGeneratorType newGeneratorType, simul::plugin::ExternalTexture customPlaneTexture) |
+| uint | [StaticAddWaterProbe](#StaticAddWaterProbe)(simul::terrain::WaterProbeValues values) |
 | void | [StaticCloudLineQuery](#StaticCloudLineQuery)(int id, float startpos, float endpos, LineQueryResult res) |
 | void | [StaticCloudPointQuery](#StaticCloudPointQuery)(int id, float pos, VolumeQueryResult res) |
 | int | [StaticCopySkylight](#StaticCopySkylight)(void pContext, int cube_id, float shValues, int shOrder, void targetTex, mat4 engineToSimulMatrix4x4, int updateFrequency, float blend, float copy_exposure, float copy_gamma) |
 | int | [StaticCopySkylight2](#StaticCopySkylight2)(void pContext, int cube_id, float shValues, int shOrder, void targetTex, mat4 engineToSimulMatrix4x4, int updateFrequency, float blend, float copy_exposure, float copy_gamma, vec3 ground_colour) |
-| bool | [StaticCreateBoundedWaterObject](#StaticCreateBoundedWaterObject)(int ID, float dimension, float location) |
-| bool | [StaticCreateCustomWaterMesh](#StaticCreateCustomWaterMesh)(int ID, simul::terrain::WaterMeshObjectValues newMesh, vec3 vertices, vec3 normals, uint indices) |
+| uint | [StaticCreateBoundedWaterObject](#StaticCreateBoundedWaterObject)(int ID, float dimension, float location) |
+| uint | [StaticCreateCustomWaterMesh](#StaticCreateCustomWaterMesh)(int ID, simul::terrain::WaterMeshObjectValues newMesh, vec3 vertices, vec3 normals, uint indices) |
 | void | [StaticEnableLogging](#StaticEnableLogging)(char logfile) |
 | void | [StaticExecuteDeferredRendering](#StaticExecuteDeferredRendering)() |
 | void | [StaticExportCloudLayerToGeometry](#StaticExportCloudLayerToGeometry)(char filenameUtf8, int index) |
@@ -153,16 +153,16 @@ Get a storm ID, if it exists, at time t
 ### simul::sky::uid GetStormByIndex(int i)
 Get a storm ID with index i
 <a name="StaticAddWaterBuoyancyObject"></a>
-### bool StaticAddWaterBuoyancyObject(simul::terrain::WaterMeshObjectValues newObject)
+### uint StaticAddWaterBuoyancyObject(simul::terrain::WaterMeshObjectValues newObject)
 Create a water buoyancy object with a given struct that holds an array of vertices
 <a name="StaticAddWaterMaskObject"></a>
-### bool StaticAddWaterMaskObject(simul::terrain::waterMaskingObject newObject)
+### uint StaticAddWaterMaskObject(simul::terrain::waterMaskingObject newObject)
 Create a water masking object
 <a name="StaticAddWaterParticleGenerator"></a>
-### bool StaticAddWaterParticleGenerator(simul::terrain::particleGeneratorValues newGenerator, simul::terrain::particleGeneratorType newGeneratorType, simul::plugin::ExternalTexture customPlaneTexture)
+### uint StaticAddWaterParticleGenerator(simul::terrain::particleGeneratorValues newGenerator, simul::terrain::particleGeneratorType newGeneratorType, simul::plugin::ExternalTexture customPlaneTexture)
 Create a particle generator
 <a name="StaticAddWaterProbe"></a>
-### bool StaticAddWaterProbe(simul::terrain::WaterProbeValues values)
+### uint StaticAddWaterProbe(simul::terrain::WaterProbeValues values)
 Create a water probe
 <a name="StaticCloudLineQuery"></a>
 ### void StaticCloudLineQuery(int id, float startpos, float endpos, LineQueryResult res)
@@ -177,10 +177,10 @@ Perform a query of the cloud properties at a given point in world space
 ### int StaticCopySkylight2(void pContext, int cube_id, float shValues, int shOrder, void targetTex, mat4 engineToSimulMatrix4x4, int updateFrequency, float blend, float copy_exposure, float copy_gamma, vec3 ground_colour)
 (DEPRECATED) Update a skylight cubemap, and return the latest result.
 <a name="StaticCreateBoundedWaterObject"></a>
-### bool StaticCreateBoundedWaterObject(int ID, float dimension, float location)
+### uint StaticCreateBoundedWaterObject(int ID, float dimension, float location)
 Create a bounded water object with a given ID
 <a name="StaticCreateCustomWaterMesh"></a>
-### bool StaticCreateCustomWaterMesh(int ID, simul::terrain::WaterMeshObjectValues newMesh, vec3 vertices, vec3 normals, uint indices)
+### uint StaticCreateCustomWaterMesh(int ID, simul::terrain::WaterMeshObjectValues newMesh, vec3 vertices, vec3 normals, uint indices)
 Add a custom mesh to the given Bounded water object
 <a name="StaticEnableLogging"></a>
 ### void StaticEnableLogging(char logfile)

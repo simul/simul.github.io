@@ -76,7 +76,7 @@ with values less than one used for atmospheric scattering over solid objects.
   
 
 [simul::base::Referenced](../base/referenced.html)
-[simul::crossplatform::BaseRenderer](../crossplatform/baserenderer.html)
+[simul::crossplatform::BaseRenderer](/ref/simul/crossplatform/baserenderer.html)
 
 Functions
 ---
@@ -189,7 +189,7 @@ with values less than one used for atmospheric scattering over solid objects.
 Base Classes
 ---
 [simul::base::Referenced](../base/referenced.html)
-[simul::crossplatform::BaseRenderer](../crossplatform/baserenderer.html)
+[simul::crossplatform::BaseRenderer](/ref/simul/crossplatform/baserenderer.html)
 
 Functions
 ---

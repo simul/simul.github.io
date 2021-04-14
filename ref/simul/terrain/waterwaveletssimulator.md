@@ -26,7 +26,7 @@ Functions
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform renderPlatform) |
 | void | [SetShader](#SetShader)(simul::crossplatform::Effect e) |
 | void | [SetTargetWaveGrid](#SetTargetWaveGrid)(simul::terrain::WaveGrid targetWaveGrid, simul::terrain::localWaterValues waterValues) |
-| void | [UpdateAmplitudeGrid](#UpdateAmplitudeGrid)(simul::crossplatform::DeviceContext deviceContext, float real_time_seconds, vec4 waterProbePositions, vec4 waterProbeVelocities, vec3 center, vec2 camPos) |
+| void | [UpdateAmplitudeGrid](#UpdateAmplitudeGrid)(simul::crossplatform::DeviceContext deviceContext, float real_time_seconds, vec4 waterProbePositions, vec4 waterProbeVelocities, vec3 centre, vec2 camPos) |
 
 
 Functions
@@ -71,5 +71,5 @@ Set the precompiled shader used by the wavelets simulator - debug only
 ### void SetTargetWaveGrid(simul::terrain::WaveGrid targetWaveGrid, simul::terrain::localWaterValues waterValues)
 Set the target wave grid the simulator will be working on.
 <a name="UpdateAmplitudeGrid"></a>
-### void UpdateAmplitudeGrid(simul::crossplatform::DeviceContext deviceContext, float real_time_seconds, vec4 waterProbePositions, vec4 waterProbeVelocities, vec3 center, vec2 camPos)
+### void UpdateAmplitudeGrid(simul::crossplatform::DeviceContext deviceContext, float real_time_seconds, vec4 waterProbePositions, vec4 waterProbeVelocities, vec3 centre, vec2 camPos)
 Update the wave amplitude grid of the target wave grid

@@ -6,7 +6,7 @@ weight: 0
 struct VolumeQueryResult
 ===
 
-| Include: | Plugins/TrueSkyPluginRender/UnityPluginInterface.h |
+| Include: | PlugIns/TrueSkyPluginRender/UnityPluginInterface.h |
 
 Nintendo Switch
 

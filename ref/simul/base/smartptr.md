@@ -19,7 +19,7 @@ The usual way to do this is to have the pointed-to class inherit from simul::bas
 The object is responsible for destroying itself when its ref-count goes to zero.
 
 For example:
-
+/code
 class TheClass: public simul::base::Referenced
 {
 public:
@@ -46,7 +46,7 @@ classInstance->DoSomeAction();
 // when the SmartPtr goes out of scope, the reference count is decremented.
 // and as it's now zero, the class instance deletes itself.
 }
-
+/endcode
   
 
 
@@ -62,7 +62,7 @@ The usual way to do this is to have the pointed-to class inherit from simul::bas
 The object is responsible for destroying itself when its ref-count goes to zero.
 
 For example:
-
+/code
 class TheClass: public simul::base::Referenced
 {
 public:
@@ -89,6 +89,6 @@ classInstance->DoSomeAction();
 // when the SmartPtr goes out of scope, the reference count is decremented.
 // and as it's now zero, the class instance deletes itself.
 }
-
+/endcode
   
 

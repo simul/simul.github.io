@@ -29,3 +29,6 @@ Follow one of the links below for more information about trueSKY with Unreal Eng
 * [**Blueprints**](blueprints.html)                             - How to edit trueSKY with blueprints
 
 * [**UE4 Source Code**](source.html)                    -       Launching trueSKY using the UE4 source code
+
+* [**Debugging, Diagnosing and Profiling**](debugging.html)    -   Resolving issues and improving performance
+

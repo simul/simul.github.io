@@ -21,7 +21,6 @@ Classes and Structures
 | class [CloudInterface](clouds/cloudinterface.html) |  |
 | struct [CloudKeyframe](clouds/cloudkeyframe.html) |  |
 | class [CloudProperties](clouds/cloudproperties.html) |  |
-| struct [CloudRenderingOptions](clouds/cloudrenderingoptions.html) | This controls the rendering of clouds.<br> |
 | struct [CloudVolume](clouds/cloudvolume.html) |  |
 | struct [DepthTextureStruct](clouds/depthtexturestruct.html) |  |
 | struct [ExportLightningStrike](clouds/exportlightningstrike.html) |  |

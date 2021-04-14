@@ -18,7 +18,7 @@ Functions
 | vec3 | [getLocation](#getLocation)() |
 | int2 | [getQuadDensity](#getQuadDensity)() |
 | float | [getRotation](#getRotation)() |
-| uint | [getTotalVerticies](#getTotalVerticies)() |
+| uint | [getTotalVertices](#getTotalVertices)() |
 | vec4 * | [getWaterProbeOutputs](#getWaterProbeOutputs)() |
 | simul::crossplatform::StructuredBuffer * | [getWaterProbeOutputsBuffer](#getWaterProbeOutputsBuffer)() |
 | vec4 * | [getWaterProbePositions](#getWaterProbePositions)() |
@@ -58,8 +58,8 @@ Get the dimensions of how many quads the surface of the water object is using
 <a name="getRotation"></a>
 ### float getRotation()
 Get the rotation of the center of the water object
-<a name="getTotalVerticies"></a>
-### uint getTotalVerticies()
+<a name="getTotalVertices"></a>
+### uint getTotalVertices()
 Get the total verticies used to render the water object
 <a name="getWaterProbeOutputs"></a>
 ### vec4 * getWaterProbeOutputs()

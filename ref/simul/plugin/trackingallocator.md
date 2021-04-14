@@ -6,7 +6,7 @@ weight: 0
 class TrackingAllocator
 ===
 
-| Include: | Plugins/TrueSkyPluginRender/TrackingAllocator.h |
+| Include: | PlugIns/TrueSkyPluginRender/TrackingAllocator.h |
 
 A pseudo allocator that tracks video memory but does not actually allocate it.
   
