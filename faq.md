@@ -201,7 +201,7 @@ Unnconfirmed issues with Houdini.
 
 This is now resolved -
 
-Previous versions of trueSKY had issues when packageing the game with both trueSKY and Niagara particles. We have now fixed our conflicts with the Niagara systems and as such if you encounter any issue please inform us via the Q+A page so we can investigate the issue further.
+Previous versions of trueSKY had issues when packaging the game with both trueSKY and Niagara particles. We have now fixed our conflicts with the Niagara systems and as such if you encounter any issue please inform us via the Q+A page so we can investigate the issue further.
 
 The previous solution was to disable the Niagara plugin or if you are using UE Source to change the two relevant files which can be obtained via a pull request here - https://github.com/EpicGames/UnrealEngine/pull/6414 - however this should no longer be required.
 
@@ -230,3 +230,5 @@ My Question is not in the documentation, what can I do?
 --------------------------
 
 If our documentation hasn't covered your issue let us know via the [Q+A Forum](https://simul.co/support/exchange/). Your question may have already been asked by a member of the community, and if not a member of the team will get back to you with a solution or for more information!
+
+If your issue is a bug report or a company / personal pricing quote you can enter a bug directly through the support page found here - [simul.co/support/](simul.co/support/)

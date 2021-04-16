@@ -253,9 +253,9 @@ simul::opengl::PushShaderPath("shaders/");
 DirectX 12
 ----------
 
-Documentation coming soon, email for support
+Documentation coming soon, If required please directly request via a [support form](https://simul.co/contact-us/)
 
 Vulkan
 ---------
 
-Documentation coming soon, email for support
+Documentation coming soon, If required please directly request via a [support form](https://simul.co/contact-us/)

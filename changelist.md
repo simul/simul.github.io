@@ -7,6 +7,7 @@ weight: 120
 
 Version 4.4
 ---
+Wed 14 Apr : Docs update  
 Tue 13 Apr : fixes for docs  
 Tue 06 Apr : Water: newBuoyancyObject-\>outputsBuffer was incorrectly initialized without CPU read access. As was BoundedWaterObject::waterProbeOutputsBuffer.  
 Thu 01 Apr : Fix water rendering in Vulkan. Fix numerous resource leaks in water renderer and related classes. Enable water in Sky Sequencer.  
@@ -14,6 +15,7 @@ Thu 01 Apr : RenderFrameStruct::colourTarget is assigned an RTV in D3D12. Nullpt
 Thu 01 Apr : Indent error fix for CopyToTargetDir.py  
 Wed 31 Mar : Updated Unity Target Directories for Spectrum.  
 Wed 31 Mar : Updated hard-coded link library for Spectrum.  
+Tue 23 Mar : UI updates, unfinished design  
 Mon 22 Mar : Added class CloudRaytraceLighting. Moved AABB Generation variables and functions to CloudRaytraceLighting. Clean up warnings.  
 Sun 21 Mar : Fix memory tracking overflows.  
 Fri 19 Mar : Updated RenderAABBWireframe() to account of central texel. Better generation of non-uniform grid boxes.  
@@ -105,7 +107,5 @@ Mon 09 Nov : DX11 fixes
 Fri 06 Nov : Fix some D3D11-related problems.  
 Fri 06 Nov : Small Fixes  
 Wed 04 Nov : Build fixes for Platform change.  
-Mon 02 Nov : Fix tex-\>IsValid() crash.  
-Wed 28 Oct : Removed done_mips.  
 
 <hr>

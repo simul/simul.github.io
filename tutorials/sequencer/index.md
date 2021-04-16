@@ -28,7 +28,7 @@ To launch the Sequencer in UE4, simply double click on the sequence you would li
 </div>
 
 <div class="unity-specific">
-To launch the Sequencer with Unity, select the sequence you want to launch. These can be found in the projects window or your currently active sequence can be found in your trueSKYMaster's inspector window. Then, once you have selected it, you should be able to choose "Show Sequence" in the inspector window.
+To launch the sequencer within Unity, select the sequence you wish to launch. This can be found either in the projects window. Alternatively you can select your currently active sequence by clicking on the trueSKY object within the level hierachy. Once selected the active sequence can be found within the "trueSKY Sequence" dropdown. Clicking on the sequence here will take you directly to the active sequences location within the project window.
 
 ![](/images/unity/inspector.png)
 

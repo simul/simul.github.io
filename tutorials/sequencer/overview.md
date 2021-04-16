@@ -75,7 +75,7 @@ You can also edit the trueSKY environment through scripting. Head [here](/unity/
 Cloud Window
 ========
 
-The Cloud Window is a top down view of the world, where you can see the current cloud formations, layers and [volumes](/tutorials/clouds/volumes.html). You can zoom in and out with the mouse wheel, and drag the world around by holding right click and dragging in a direction. Clicking on a keyframe will allow you to drag the keyframes center, which will move all volumes in relation to the keyframe origin.
+The Cloud Window is a top down view of the world, where you can see the current cloud formations, layers and [volumes](/tutorials/clouds/volumes.html). You can zoom in and out with the mouse wheel, and drag the world around by holding right click and dragging in a direction. Clicking on a keyframe will allow you to drag the keyframes center, which is represented as a square within the cloud window, and will move all volumes in relation to the keyframes origin.
 
 The Red Arc is your current view in the project. This can be helpful for figuring out what direction you are looking in, in relation to trueSKY.
 

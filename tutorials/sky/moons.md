@@ -22,7 +22,7 @@ With the 4.2a update we have added an extensive additional moon controls, as wel
 Setting up a Moon
 ----------------------------------------
 
-Upon initialization your scene will include a Moon. This oon will have the settings to reflect Earth's moon. As such is a good reference point for many projects, as well as a good starting point when attempting to achieve realistic results for satellites around a planet.
+Upon initialization your scene will include a Moon. This moon will have the settings to reflect Earth's moon. As such is a good reference point for many projects, as well as a good starting point when attempting to achieve realistic results for satellites around a planet.
 
 
 The controls for the new moon system are now found on the trueSKYSequenceActor (within unreal), under the "Moons" subheading, You can create and delete moons via the "array elements" setting.
@@ -90,5 +90,5 @@ The multi-moon system present within unreal engine has been ported with the 4.3 
 
 In addition these settings are all tied to the moons lighting and how it will affect the scene, so ensure to be careful when editing settings as these are using a physically correct model. So making the moon extremely large will in return cause the lighting from said moon to be a lot brighter compared to a realistically sized moon.
 
-
+The moons lighting is controlled in the same was as the sun position. Meaning that it is simply possessing the engines native direction light. This means however that multiple moons in a scene are unable to have separate directional lights. Therefore we take the direction of the brightest moon within the scene. And take an average of all of the moon colors to determine the light color from all the moons to attempt to simulate all of the moons having an influence on the outcome.
 

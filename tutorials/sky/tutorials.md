@@ -79,7 +79,7 @@ Once this is done you can use the slider below the checkbox to assign the height
 </div>
 
 
-Moon Texture
+Moon Texture (Legacy)
 ---------------
 
 You can apply a png to the moon to make it whatever object you like, and will go through phases based on the sun's position. This is a legacy setting - and only functions within the 4.1a. Documentation for 4.2a's multimoon setup can be found [here](moons)

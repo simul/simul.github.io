@@ -16,11 +16,12 @@ For Unreal
 
 My Sky is black when I Package!
 ---------------------------------
-With the latest change to 4.25 - Niagara particle systems are enabled by default. Because of this, if you are not using our UE4 Source branch, you will not be able to package unless you disable the Niagara. We have reached out to Epic to implement our fix, but are still waiting. 
 
-To Disable, go to Edit->Plugins and then Search Built-in for Niagara. Then disable it. 
+Previous versions of trueSKY had issues when packaging the game with both trueSKY and Niagara particles. We have now fixed our conflicts with the Niagara systems and as such if you encounter any issue please inform us via the Q+A page so we can investigate the issue further.
 
-If you are using your own UE4 Source, there are two files that need to be changed. Our pull request is at - https://github.com/EpicGames/UnrealEngine/pull/6414
+The previous solution was to disable the Niagara plugin or if you are using UE Source to change the two relevant files which can be obtained via a pull request here - https://github.com/EpicGames/UnrealEngine/pull/6414 - however this should no longer be required.
+
+If you encounter a new case of your sky appearing black within a packaged game please enter a new bug ticket or question within the Q+A Board.
 
 
 **Running Cooked Games**
@@ -85,5 +86,9 @@ SC.StageFiles(StagedFileType.NonUFS, DirectoryReference.Combine(SC.LocalRoot, "E
 Unity
 ----------
 
-Coming Soon
+When deploying a Unity package simply navigate through to File -> Build Settings and ensure that the architecture is set to x86_64 otherwise trueSKY will render as black due to trueSKY not support 32 bit architecture.
+
+From here everything should work as expected when using Unitys default build settings.
+
+HDRP coming Soon
 </div>
