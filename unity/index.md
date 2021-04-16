@@ -15,9 +15,9 @@ trueSKY for Unity
 trueSKY is compatible with these versions of Unity
 
 
-| 2020 | 2019   | 2018  |
-|:-----:|:-----:|:-----:|
-|   ✓ |       ✓     |       on request      |
+| 2021 | 2020   | 2019  | 2018  |
+|:-----:|:-----:|:-----:|:-----:|
+|   ✓ |       ✓     |       ✓     |       on request      |
 
 
 Follow one of the links below for more information about trueSKY with Unity
