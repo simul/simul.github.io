@@ -7,6 +7,7 @@ weight: 120
 
 Version 4.4
 ---
+Tue 20 Apr : Updated Unity PlatformName and directories for Spectrum.  
 Fri 16 Apr : Doc Version support corrections and minor changes  
 Wed 14 Apr : Docs update  
 Tue 13 Apr : fixes for docs  
@@ -106,6 +107,5 @@ Tue 10 Nov : Fix release.properties
 Tue 10 Nov : Dx11 Warning Fix, removal of force full init  
 Mon 09 Nov : DX11 fixes  
 Fri 06 Nov : Fix some D3D11-related problems.  
-Fri 06 Nov : Small Fixes  
 
 <hr>
