@@ -7,6 +7,7 @@ weight: 120
 
 Version 4.4
 ---
+Thu 29 Apr : Updated Unity D3D12 for greater stability. assimp-vc142-mt is copied by CopyToTargetDir.py, as SimulCrossPlatform_MD has a link depenedencies to it if using PLATFORM_USE_ASSIMP. GetSimulVersion() updated for 4.4.  
 Tue 27 Apr : Fix for trueSKY build for XboxOneGDK. Platform ptr.  
 Mon 26 Apr : Minor change to make output clearer.  
 Tue 20 Apr : Updated Unity PlatformName and directories for Spectrum.  
@@ -106,6 +107,5 @@ Fri 13 Nov : Memory tracking uses size_t which is 64-bit, not int which is 32-bi
 Wed 11 Nov : Made sure that the render target is reset after rendering  
 Wed 11 Nov : Fix WindowUpdater recompile.  
 Tue 10 Nov : Fix release.properties  
-Tue 10 Nov : Dx11 Warning Fix, removal of force full init  
 
 <hr>
