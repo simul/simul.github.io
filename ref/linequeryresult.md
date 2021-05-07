@@ -8,11 +8,11 @@ struct LineQueryResult
 
 | Include: | PlugIns/TrueSkyPluginRender/UnityPluginInterface.h |
 
-Windows & XBox
+Attribute to make function be exported from a plugin:
 
 
 
 
-Windows & XBox
+Attribute to make function be exported from a plugin:
 
 

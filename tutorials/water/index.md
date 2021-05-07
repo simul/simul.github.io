@@ -23,3 +23,5 @@ trueWATER is one of the latest features to come to trueSKY. Experience real-time
 * [**Buoyancy**](buoyancy.html)                                                         - Learn how to use water probes to apply buoyant forces to objects so that they can float.
 
 * [**Variables**](variables.html)                                                       - Learn about the different variables for adjusting the water, from colour to waves.
+
+* [**Water Masks**](masks.html)                                                         - Learn how to use water masks to mask out areas water should not be rendered, such as boat interiors.

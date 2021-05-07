@@ -8,11 +8,11 @@ class FileLoader
 
 | Include: | PlugIns/TrueSkyPluginRender/UnityPluginInterface.h |
 
-Attribute to make function be exported from a plugin:
+Platform macro:
 
 
 
 
-Attribute to make function be exported from a plugin:
+Platform macro:
 
 

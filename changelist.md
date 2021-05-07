@@ -7,6 +7,8 @@ weight: 120
 
 Version 4.4
 ---
+Fri 07 May : Adding WaterMask documentation page as not previously created. this includes image and update to waters index  
+Fri 07 May : Commodore support merges from 4.3  
 Thu 06 May : Add SkySequencer icon to TrueSkyUI/MainWindow.  
 Thu 06 May : Change Directory for UE from XboxSeriesX to XSX  
 Thu 29 Apr : Updated Unity D3D12 for greater stability. assimp-vc142-mt is copied by CopyToTargetDir.py, as SimulCrossPlatform_MD has a link depenedencies to it if using PLATFORM_USE_ASSIMP. GetSimulVersion() updated for 4.4.  
@@ -105,7 +107,5 @@ Mon 16 Nov : No need for struct size check more than once.
 Fri 13 Nov : Small fix  
 Fri 13 Nov : UnityMemoryInterface compile fix.  
 Fri 13 Nov : Update UnityMemoryInterface to use size_t.  
-Fri 13 Nov : Memory tracking uses size_t which is 64-bit, not int which is 32-bit and overflows.  
-Wed 11 Nov : Made sure that the render target is reset after rendering  
 
 <hr>
