@@ -9,6 +9,9 @@ weight: 40
 
 trueSKY SDK
 --------------
+
+For information on using the Sky Sequencer to create cloud sequencers for use with your SDK intergration [click here](/SimulSkySequencer)
+
 Description on how to gain access to the SDK
 
 
