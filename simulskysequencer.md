@@ -30,14 +30,14 @@ The presets will be found within C:/Simul/Applications/SkySequencer/Presets
 
 This will load a pre-made sequence with keyframe settings. 
 
-Current presets available are:
-Cirrocumulus
-Cirrus
-Clarsky
-Cumulus
-Fog
-StratoCumulus
-Stratus
+* Current presets available are:
+* Cirrocumulus
+* Cirrus
+* Clear sky
+* Cumulus
+* Fog
+* StratoCumulus
+* Stratus
 
 
 Navigation
@@ -72,30 +72,25 @@ Windows Functionality
 All windows are movable and dock-able anywhere in the skysequencer, and can be closed if not in use. These can be reopened simply by navigating to the Window drop down on the top bar, and selecting the window you wish to reopen.
 
 
-Keyframer: This is where we add keyframes to the time-line, as well as access the sky and cloud layers. Has time controls, such as the time multiplier and the time scrubber.
+**Keyframer:** This is where we add keyframes to the time-line, as well as access the sky and cloud layers. Has time controls, such as the time multiplier and the time scrubber.
 
-Properties: This covers the settings and properties of the selected keyframe or layer. When no layer is selected it will show general scene settings as well as API options and global settings.
+**Properties:** This covers the settings and properties of the selected keyframe or layer. When no layer is selected it will show general scene settings as well as API options and global settings.
 
-Scene: 
+**Performance:** Shows a variety of performance metrics and breakdowns - this information can compliment information gained from the use of on-screen displays
 
-Performance: Shows a variety of performance metrics and breakdowns - this information can compliment information gained from the use of on-screen displays
+**Screenshot:** Allows setting of resolution of screenshot, then saves an image of your scene.
 
-Screenshot: Allows setting of resolution of screenshot, then saves an image of your scene.
+**Clouds:** Gives an overview of the noise textures used to generate the clouds as well as some MIP information and a brief overview of some of the cloudconstants settings.
 
-Simulation:
+**Cloud Window:** Allows control of the Latitude and Longitude of the scene, as well as shows the location of keyframes - position of the scene on the globe, and a summary view of the current clouds in the scene from a top down view.
 
-Clouds: Gives an overview of the noise textures used to generate the clouds as well as some MIP information and a brief overview of some of the cloudconstants settings.
-
-Cloud Window: Allows control of the Latitude and Longitude of the scene, as well as shows the location of keyframes - position of the scene on the globe, and a summary view of the current clouds in the scene from a top down view.
-
-
-Viewport: Shows the current view of the scene. The Scroll wheel will increase or decrease the FOV of the camera, holding right click and moving the mouse looks around, Alt + Right click and movement alters the camera angle. WASD for movement around the scenes (camera speed can be altered within the global properties)
+**Viewport:** Shows the current view of the scene. The Scroll wheel will increase or decrease the FOV of the camera, holding right click and moving the mouse looks around, Alt + Right click and movement alters the camera angle. WASD for movement around the scenes (camera speed can be altered within the global properties)
 
 
 
 
 
-Saving and loading files
+Saving and Loading Files
 ------------------------------
 
 Saving a .sq file for use within your SDK scene is simple and easy, navigate to File -> Save as then save the .sq into the desired location.
@@ -112,7 +107,7 @@ Note - When saving a .sq only layer and keyframe data is saved to the file, this
 Information on SDK implementation can be found [here](/sdk.html)
 
 
-Common questions and pitfalls
+Common Questions
 ------------------------------
 
 My clouds appear incredibly bright:
