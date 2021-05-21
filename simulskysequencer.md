@@ -19,14 +19,14 @@ The Sky sequencer can be downloaded from the [downloads section of the site.](ht
 
 Once downloaded, follow through the install wizard, and install into your desired location. The application will prompt you to launch upon completion of installation.
 
-The location to open is C:.exe 
+The location to open is C:/Simul/build/bin/Release/SkySequencer_MD.exe 
 
 
 Presets
 --------
 
 There are a selection of presets available with the Sky sequencer. To load these navigate to File -> Load 
-The presets will be found within C:
+The presets will be found within C:/Simul/Applications/SkySequencer/Presets
 
 This will load a pre-made sequence with keyframe settings. 
 
@@ -40,7 +40,7 @@ StratoCumulus
 Stratus
 
 
-Navigation:
+Navigation
 ------------
 
 By default opening the SkySequencer will look like this:

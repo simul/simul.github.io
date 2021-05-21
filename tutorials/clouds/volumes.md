@@ -25,7 +25,6 @@ To create a volume, simply right click within the cloud layer and select "Add ne
 
 This will turn this layer into a volume layer, meaning this layer will only use volumes, not a repeating skyline. If you still want a repeating sky as well, simply create another layer.
 
-of volume and repeating sky
 
 Editing Volumes
 --------------------

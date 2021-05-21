@@ -7,6 +7,7 @@ weight: 120
 
 Version 4.4
 ---
+Fri 21 May : Amending doc errors  
 Fri 21 May : Link update for SDK  
 Fri 21 May : Adding Skysequence specific page, fixed dead link within timeline page  
 Fri 07 May : Adding WaterMask documentation page as not previously created. this includes image and update to waters index  
@@ -106,6 +107,5 @@ Tue 17 Nov : Fix resource leak.
 Tue 17 Nov : Fix D3D11 warnings.  
 Tue 17 Nov : int to size_t  
 Mon 16 Nov : No need for struct size check more than once.  
-Fri 13 Nov : Small fix  
 
 <hr>
