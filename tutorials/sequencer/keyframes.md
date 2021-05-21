@@ -26,7 +26,7 @@ You can select multiple keyframes at once by either shift clicking them individu
 
 If there is only one cloud keyframe present in a layer, then the clouds will not change over time, only move (if there is wind in the scene). If another keyframe is added to the layer, then the clouds will interpolate between the different keyframes based on the current time in the world. Interpolation is applied by layer, so clouds in layer 2 will not change based on clouds in layer 1. While interpolating, a special keyframe is created that stores the information. You can obtain a reference to this using <a href="../../ref/simul/clouds/cloudkeyframer.html">#GetInterpolatedKeyframe </a>.
 
-To learn more about progressing time within the world, along with the multiple ways to do so, head to [Progressing Time](/time.html).
+To learn more about progressing time within the world, along with the multiple ways to do so, head to [Progressing Time](/tutorials/time).
 
 Keyframes
 ------------
