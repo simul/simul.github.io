@@ -7,6 +7,7 @@ weight: 120
 
 Version 4.4
 ---
+Mon 24 May : Update worleyTexcoordOffset to worleyOffsetKm. Removed noise3DTexcoordScale2, noise3DTexcoordOffset2 and EdgeNoiseWavelength2Km from shaders. Update noise input from cloud_lighting.sfx and updated cloud_experimental.sla and others.  
 Fri 21 May : Fixing dead link  
 Fri 21 May : Further changes  
 Fri 21 May : link fix  
@@ -106,6 +107,5 @@ Mon 23 Nov : Small fix for render target reset
 Fri 20 Nov : Removed Toolchain  
 Tue 17 Nov : Warning Fix  
 Tue 17 Nov : Added DeleteKeyframeByUID  
-Tue 17 Nov : Fix resource leak.  
 
 <hr>
