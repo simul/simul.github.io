@@ -7,6 +7,8 @@ weight: 120
 
 Version 4.4
 ---
+Tue 25 May : Updated conditional statement in UnityRenderEventD3D12(). Better viewport assignment in UnityRenderFrame().  
+Mon 24 May : offset fix  
 Mon 24 May : Update worleyTexcoordOffset to worleyOffsetKm. Removed noise3DTexcoordScale2, noise3DTexcoordOffset2 and EdgeNoiseWavelength2Km from shaders. Update noise input from cloud_lighting.sfx and updated cloud_experimental.sla and others.  
 Fri 21 May : Fixing dead link  
 Fri 21 May : Further changes  
@@ -18,10 +20,12 @@ Fri 07 May : Adding WaterMask documentation page as not previously created. this
 Fri 07 May : Commodore support merges from 4.3  
 Thu 06 May : Add SkySequencer icon to TrueSkyUI/MainWindow.  
 Thu 06 May : Change Directory for UE from XboxSeriesX to XSX  
+Tue 04 May : PlanetRadius Functional  
 Thu 29 Apr : Updated Unity D3D12 for greater stability. assimp-vc142-mt is copied by CopyToTargetDir.py, as SimulCrossPlatform_MD has a link depenedencies to it if using PLATFORM_USE_ASSIMP. GetSimulVersion() updated for 4.4.  
 Tue 27 Apr : Fix for trueSKY build for XboxOneGDK. Platform ptr.  
 Mon 26 Apr : Minor change to make output clearer.  
 Tue 20 Apr : Updated Unity PlatformName and directories for Spectrum.  
+Mon 19 Apr : Removed Octaves  
 Fri 16 Apr : Doc Version support corrections and minor changes  
 Wed 14 Apr : Docs update  
 Tue 13 Apr : fixes for docs  
@@ -103,9 +107,5 @@ Fri 04 Dec : Add build.sh for Linux.
 Wed 02 Dec : Fix to struct issue C# to C++  
 Wed 02 Dec : Further fixes and additions to docs - Notably Precipitation additions, and moving some information from index pages to relevant locations.  
 Tue 01 Dec : Minor fixes and rearrangement for docs  
-Mon 23 Nov : Small fix for render target reset  
-Fri 20 Nov : Removed Toolchain  
-Tue 17 Nov : Warning Fix  
-Tue 17 Nov : Added DeleteKeyframeByUID  
 
 <hr>
