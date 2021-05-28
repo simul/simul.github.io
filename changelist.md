@@ -7,6 +7,7 @@ weight: 120
 
 Version 4.4
 ---
+Wed 26 May : Updated to support WinGDK.  
 Tue 25 May : Updated conditional statement in UnityRenderEventD3D12(). Better viewport assignment in UnityRenderFrame().  
 Mon 24 May : offset fix  
 Mon 24 May : Update worleyTexcoordOffset to worleyOffsetKm. Removed noise3DTexcoordScale2, noise3DTexcoordOffset2 and EdgeNoiseWavelength2Km from shaders. Update noise input from cloud_lighting.sfx and updated cloud_experimental.sla and others.  
@@ -106,6 +107,5 @@ Mon 07 Dec : Fix for clouds not being cleared from the cubemap when cloudiness i
 Fri 04 Dec : Add build.sh for Linux.  
 Wed 02 Dec : Fix to struct issue C# to C++  
 Wed 02 Dec : Further fixes and additions to docs - Notably Precipitation additions, and moving some information from index pages to relevant locations.  
-Tue 01 Dec : Minor fixes and rearrangement for docs  
 
 <hr>
