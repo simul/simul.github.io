@@ -7,6 +7,10 @@ weight: 120
 
 Version 4.4
 ---
+Tue 01 Jun : Updated clouds_experimental.sl noiseval calculation and step count for performance. cloud_update.sfx illumation texture updated values.  
+Tue 01 Jun : Updated clouds_experimental.sl removed upsampling_offset, changed opacity calculation and added cosine value to ColourStep2().  
+Tue 01 Jun : Updated clouds_experimental.sl and clouds_raytrace.sl  
+Tue 01 Jun : Add CloudDepthTemporalAlpha to UI and default to 0.5. Add Cycle overlay view id to Main UI.  
 Wed 26 May : Updated to support WinGDK.  
 Tue 25 May : Updated conditional statement in UnityRenderEventD3D12(). Better viewport assignment in UnityRenderFrame().  
 Mon 24 May : offset fix  
@@ -103,9 +107,5 @@ Mon 14 Dec : Fix for Lightpass texture when rendering lightning in OpenGL.
 Mon 14 Dec : BaseWeatherRenderer::RenderCompositingTextures() new layer for texture debugging. Fix GLSL for invalid operands to "*" in GLSL for lightning_CS_BranchFractal_c.glsl  
 Fri 11 Dec : CloudConstants changed to meet GLSL std140. OpenGLSample.cpp updated. TrueSkyRenderer::RenderStandard() returns if there's no view.  
 Mon 07 Dec : Set precipitationVolumeCleared variable from global to class variable  
-Mon 07 Dec : Fix for clouds not being cleared from the cubemap when cloudiness is set to 0, and precipitation not updating when set to 0 also.  
-Fri 04 Dec : Add build.sh for Linux.  
-Wed 02 Dec : Fix to struct issue C# to C++  
-Wed 02 Dec : Further fixes and additions to docs - Notably Precipitation additions, and moving some information from index pages to relevant locations.  
 
 <hr>
