@@ -7,6 +7,9 @@ weight: 120
 
 Version 4.4
 ---
+Tue 15 Jun : Minor correction.  
+Mon 14 Jun : TrueSkyPluginRender moved Vulkan out into separate functions. UnityViewStruct::colourTextureArrayIndex added and updated IUnityGraphicsVulkan.h. UnityD3D12Context better handled of reloading the context. GetCustomD3D11RTV() for Unity HDRP skylights.  
+Mon 14 Jun : Added WinPixGpuCapturer support to SkySequencer.  
 Wed 02 Jun : Minor change to clouds_experimental.sl  
 Tue 01 Jun : Updated clouds_experimental.sl noiseval calculation and step count for performance. cloud_update.sfx illumation texture updated values.  
 Tue 01 Jun : Updated clouds_experimental.sl removed upsampling_offset, changed opacity calculation and added cosine value to ColourStep2().  
@@ -104,8 +107,5 @@ Thu 24 Dec : PS4 compile fix
 Wed 23 Dec : Commodore rendering fixed for SDK 2.000  
 Fri 18 Dec : Fix for sun direction override not correctly transforming the sun sprite  
 Tue 15 Dec : Fix Rain texture overlays and PrecipitationRenderer keeps a copy of the last skylight cubemap for debugging. Other minor fixes for rain.sfx  
-Mon 14 Dec : Fix for Lightpass texture when rendering lightning in OpenGL.  
-Mon 14 Dec : BaseWeatherRenderer::RenderCompositingTextures() new layer for texture debugging. Fix GLSL for invalid operands to "*" in GLSL for lightning_CS_BranchFractal_c.glsl  
-Fri 11 Dec : CloudConstants changed to meet GLSL std140. OpenGLSample.cpp updated. TrueSkyRenderer::RenderStandard() returns if there's no view.  
 
 <hr>
