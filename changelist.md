@@ -7,6 +7,7 @@ weight: 120
 
 Version 4.4
 ---
+Mon 21 Jun : GetCustomD3D11RTV() does typeless to typed convert of image format. Minor update to OpenGLSample for RenderDoc support. Better checks on textures for DX11 and DX12.  
 Tue 15 Jun : Minor correction.  
 Mon 14 Jun : TrueSkyPluginRender moved Vulkan out into separate functions. UnityViewStruct::colourTextureArrayIndex added and updated IUnityGraphicsVulkan.h. UnityD3D12Context better handled of reloading the context. GetCustomD3D11RTV() for Unity HDRP skylights.  
 Mon 14 Jun : Added WinPixGpuCapturer support to SkySequencer.  
@@ -106,6 +107,5 @@ Thu 24 Dec : Fix D3D11 build
 Thu 24 Dec : PS4 compile fix  
 Wed 23 Dec : Commodore rendering fixed for SDK 2.000  
 Fri 18 Dec : Fix for sun direction override not correctly transforming the sun sprite  
-Tue 15 Dec : Fix Rain texture overlays and PrecipitationRenderer keeps a copy of the last skylight cubemap for debugging. Other minor fixes for rain.sfx  
 
 <hr>
