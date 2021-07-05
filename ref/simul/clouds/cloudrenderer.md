@@ -75,7 +75,7 @@ Get a pointer to the current cloud rendering options
 Get the xyz scales of the clouds in metres.
 <a name="GetDebugText"></a>
 ### char  const * GetDebugText()
-Get some per-frame text information for debugging - usually timing data.
+Get some per-frame text information for debugging.
 <a name="GetLineQuery"></a>
 ### LineQueryResult GetLineQuery(int id, vec3 pos1_km, vec3 pos2_km)
 Set, or create a cloud query. This returns the previous results of the same query.
@@ -114,25 +114,23 @@ Once per-frame update. Do this before any rendering each frame. Called by BaseWe
 Platform-dependent function to reload the shaders - only use this for debug purposes.
 <a name="Render"></a>
 ### bool Render(simul::crossplatform::GraphicsDeviceContext deviceContext, float exposure, simul::clouds::TrueSkyRenderMode renderMode, simul::crossplatform::NearFarPass nearFarPass, simul::crossplatform::Texture depth_tex, simul::sky::ScatteringVolume scatteringVolume, bool write_alpha, vec4 viewportTextureRegionXYWH, simul::crossplatform::AmortizationStruct amortizationStruct, simul::clouds::TwoResFramebuffer fb, simul::sky::LocalFadeTextures localFadeTextures, simul::crossplatform::Texture ambientCubemap)
-Platform-dependent render function.
+Render function to draw clouds to the current render target.
 <a name="RenderCloudGrid"></a>
 ### void RenderCloudGrid(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::clouds::CloudKeyframer ck)
-Render the cloud grid for debugging purposes
+Render the cloud grid for debugging purposes.
 <a name="RenderCloudShadowTexture"></a>
 ### void RenderCloudShadowTexture(simul::crossplatform::GraphicsDeviceContext deviceContext)
-The cloud shadow texture:
-Centred on the viewer
-Aligned to the sun.
+The cloud shadow texture: centred on the viewer, aligned to the sun.
 Output is km in front of or behind the view pos where shadow starts
 <a name="RenderCloudVolumes"></a>
 ### void RenderCloudVolumes(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::clouds::CloudKeyframer ck)
-Render the cloud volumes for debugging purposes
+Render the cloud volumes for debugging purposes.
 <a name="RenderCrossSections"></a>
 ### void RenderCrossSections(simul::crossplatform::GraphicsDeviceContext context)
 Show the cloud volumes onscreen by cross section.
 <a name="RenderQueries"></a>
 ### void RenderQueries(simul::crossplatform::GraphicsDeviceContext deviceContext)
-Draw the queries in 3D
+Draw the queries in 3D for debugging purposes.
 <a name="RestoreDeviceObjects"></a>
 ### void RestoreDeviceObjects(simul::crossplatform::RenderPlatform renderPlatform)
 Platform-dependent function to generate device objects for the renderer.

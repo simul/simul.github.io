@@ -21,6 +21,7 @@ Functions
 | void | [InitWindowCentre](#InitWindowCentre)(double lat_degrees, double long_degrees, double x_heading_degrees) |
 | void | [MoveCloudWindow](#MoveCloudWindow)(int x, int y) |
 | simul::clouds::CloudWindow  const & | [operator=](#operator=)(simul::clouds::CloudWindow) |
+| void | [Reset](#Reset)() |
 | float | [UpdateWindowCentre](#UpdateWindowCentre)(float lat_degrees, float long_degrees) |
 
 
@@ -50,6 +51,9 @@ Translate the cloud window by the given x and y
 <a name="operator="></a>
 ### simul::clouds::CloudWindow  const & operator=(simul::clouds::CloudWindow)
 assignment operator only copies properties, not state.
+<a name="Reset"></a>
+### void Reset()
+Reset offsets
 <a name="UpdateWindowCentre"></a>
 ### float UpdateWindowCentre(float lat_degrees, float long_degrees)
 Returns updated x heading in degrees.

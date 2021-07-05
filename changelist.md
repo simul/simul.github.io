@@ -7,6 +7,10 @@ weight: 120
 
 Version 4.4
 ---
+Sun 04 Jul : Global weather: advection is now functional.  
+Sun 04 Jul : Added Docs folder for Sphinx documentation.  
+Sun 04 Jul : Added WGS84 support. WGS84 coordinate system now applies internally in CloudWindow. X=Meridian, Y=90 deg East, Z=North Pole as before.  
+Sun 04 Jul : Added GlobalWeather system, experimental.  
 Tue 29 Jun : RenderTarget checks for PS4.  
 Thu 24 Jun : Fix delayload settings. DELAYIMP_INSECURE_WRITABLE_HOOKS to test dll loading.  
 Mon 21 Jun : GetCustomD3D11RTV() does typeless to typed convert of image format. Minor update to OpenGLSample for RenderDoc support. Better checks on textures for DX11 and DX12.  
@@ -103,9 +107,5 @@ Tue 05 Jan : Update some SIMUL_COMBINED_PROFILE labels.
 Mon 04 Jan : Simple Profiling Text for builds  
 Mon 04 Jan : Fix compile issue in SimulSky_MD  
 Mon 04 Jan : Cmake change to move trueSKYPluginRender to source build  
-Mon 28 Dec : Fix Xbox build.  
-Mon 28 Dec : Fix dx11 compile.  
-Thu 24 Dec : Fix D3D11 build  
-Thu 24 Dec : PS4 compile fix  
 
 <hr>
