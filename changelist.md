@@ -7,6 +7,9 @@ weight: 120
 
 Version 4.4
 ---
+Fri 09 Jul : Minor fixes for Jarvis build.  
+Thu 08 Jul : Updated cloud_edit.sfx for better rendering of elements 'on the sphere'.  
+Tue 06 Jul : Velocity trails.  
 Sun 04 Jul : Global weather: advection is now functional.  
 Sun 04 Jul : Added Docs folder for Sphinx documentation.  
 Sun 04 Jul : Added WGS84 support. WGS84 coordinate system now applies internally in CloudWindow. X=Meridian, Y=90 deg East, Z=North Pole as before.  
@@ -104,8 +107,5 @@ Thu 07 Jan : Aurora shader fixes for incorrect rendering in OpenGL. Passing clou
 Wed 06 Jan : Profiler starts with trueSKY_ to allow for easier search functionality  
 Tue 05 Jan : fix to debug text  
 Tue 05 Jan : Update some SIMUL_COMBINED_PROFILE labels.  
-Mon 04 Jan : Simple Profiling Text for builds  
-Mon 04 Jan : Fix compile issue in SimulSky_MD  
-Mon 04 Jan : Cmake change to move trueSKYPluginRender to source build  
 
 <hr>
