@@ -7,6 +7,8 @@ weight: 120
 
 Version 4.4
 ---
+Fri 09 Jul : Update to CreateRTV().  
+Fri 09 Jul : Better checks in UnityD3D12Context::CreateRTV().  
 Fri 09 Jul : Minor fixes for Jarvis build.  
 Thu 08 Jul : Updated cloud_edit.sfx for better rendering of elements 'on the sphere'.  
 Tue 06 Jul : Velocity trails.  
@@ -105,7 +107,5 @@ Fri 08 Jan : Remove unneeded files.
 Thu 07 Jan : CloudRenderer::InvalidateDeviceObjects() calls SAFE_DELETE(sphereRenderer) and BaseSkyRenderer::InvalidateDeviceObjects() calls SAFE_DELETE on localFadeTextures.  
 Thu 07 Jan : Aurora shader fixes for incorrect rendering in OpenGL. Passing cloudWindowHeight for Aurora rendering. Minor rendering re-ordering. Aurora* moved from SkyKeyframer to BaseSkyRenderer.  
 Wed 06 Jan : Profiler starts with trueSKY_ to allow for easier search functionality  
-Tue 05 Jan : fix to debug text  
-Tue 05 Jan : Update some SIMUL_COMBINED_PROFILE labels.  
 
 <hr>
