@@ -7,6 +7,7 @@ weight: 120
 
 Version 4.4
 ---
+Wed 14 Jul : PluginTrueSkyRenderer::SetTexture() checks for valid texture. Platform updated too. SIMUL_CERR changed to SIMUL_CERR_ONCE in UnityD3D12Context.  
 Fri 09 Jul : Update to CreateRTV().  
 Fri 09 Jul : Better checks in UnityD3D12Context::CreateRTV().  
 Fri 09 Jul : Minor fixes for Jarvis build.  
@@ -106,6 +107,5 @@ Fri 08 Jan : Platform pointer.
 Fri 08 Jan : Remove unneeded files.  
 Thu 07 Jan : CloudRenderer::InvalidateDeviceObjects() calls SAFE_DELETE(sphereRenderer) and BaseSkyRenderer::InvalidateDeviceObjects() calls SAFE_DELETE on localFadeTextures.  
 Thu 07 Jan : Aurora shader fixes for incorrect rendering in OpenGL. Passing cloudWindowHeight for Aurora rendering. Minor rendering re-ordering. Aurora* moved from SkyKeyframer to BaseSkyRenderer.  
-Wed 06 Jan : Profiler starts with trueSKY_ to allow for easier search functionality  
 
 <hr>
