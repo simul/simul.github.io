@@ -7,6 +7,8 @@ weight: 120
 
 Version 4.4
 ---
+Thu 29 Jul : WIP CloudRaytraceLighting update.  
+Thu 29 Jul : WIP added RT cloud UI and overlays. cloud_raytrace.sfx used constant buffer for TraceRays parameters. CloudRaytraceLighting.h updated with ShaderBindingTable and new methods.  
 Tue 20 Jul : RenderingPlugin.cpp InitDefaultTargets() will note continuously log warning.  
 Mon 19 Jul : CloudThresholdDistanceKm is now in Has/Get/SetFloat().  
 Wed 14 Jul : PluginTrueSkyRenderer::SetTexture() checks for valid texture. Platform updated too. SIMUL_CERR changed to SIMUL_CERR_ONCE in UnityD3D12Context.  
@@ -105,7 +107,5 @@ Sun 10 Jan : Updated Platform now requires mip count in ensuretexture2dSizeAndFo
 Sat 09 Jan : Correct Vulkan version  
 Sat 09 Jan : Added Setup.py. This will replace Build.bat etc.  
 Fri 08 Jan : Fix to build.bat, Update to release.properties to include Vulkan SDK version  
-Fri 08 Jan : Platform pointer.  
-Fri 08 Jan : Remove unneeded files.  
 
 <hr>
