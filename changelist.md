@@ -7,6 +7,11 @@ weight: 120
 
 Version 4.4
 ---
+Tue 03 Aug : Added build acceleration structures to CloudRaytraceLighting.  
+Mon 02 Aug : Change copy pass to "replace" for loss 2D.  
+Mon 02 Aug : Update CloudRaytraceLighting to use async compute - WIP.  
+Mon 02 Aug : Fix Platform compilation errors.  
+Mon 02 Aug : Fix compile errors.  
 Thu 29 Jul : WIP CloudRaytraceLighting update.  
 Thu 29 Jul : WIP added RT cloud UI and overlays. cloud_raytrace.sfx used constant buffer for TraceRays parameters. CloudRaytraceLighting.h updated with ShaderBindingTable and new methods.  
 Tue 20 Jul : RenderingPlugin.cpp InitDefaultTargets() will note continuously log warning.  
@@ -102,10 +107,5 @@ Mon 11 Jan : Platform ptr
 Mon 11 Jan : Add realTimeWind option to CLoudRenderingOptions.  
 Mon 11 Jan : Sample for D3D12 call FlushImmediateCommandList() at end of OnCreateDevice(). Cleaned up BaseTerrainRenderer.cpp.  
 Sun 10 Jan : Platform ptr  
-Sun 10 Jan : Vulkan sample fix  
-Sun 10 Jan : Updated Platform now requires mip count in ensuretexture2dSizeAndFormat.  
-Sat 09 Jan : Correct Vulkan version  
-Sat 09 Jan : Added Setup.py. This will replace Build.bat etc.  
-Fri 08 Jan : Fix to build.bat, Update to release.properties to include Vulkan SDK version  
 
 <hr>
