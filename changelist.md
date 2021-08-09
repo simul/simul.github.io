@@ -16,6 +16,7 @@ Thu 29 Jul : WIP CloudRaytraceLighting update.
 Thu 29 Jul : WIP added RT cloud UI and overlays. cloud_raytrace.sfx used constant buffer for TraceRays parameters. CloudRaytraceLighting.h updated with ShaderBindingTable and new methods.  
 Tue 20 Jul : RenderingPlugin.cpp InitDefaultTargets() will note continuously log warning.  
 Mon 19 Jul : CloudThresholdDistanceKm is now in Has/Get/SetFloat().  
+Mon 19 Jul : Small update to day loops  
 Wed 14 Jul : PluginTrueSkyRenderer::SetTexture() checks for valid texture. Platform updated too. SIMUL_CERR changed to SIMUL_CERR_ONCE in UnityD3D12Context.  
 Fri 09 Jul : Update to CreateRTV().  
 Fri 09 Jul : Better checks in UnityD3D12Context::CreateRTV().  
@@ -26,6 +27,7 @@ Sun 04 Jul : Global weather: advection is now functional.
 Sun 04 Jul : Added Docs folder for Sphinx documentation.  
 Sun 04 Jul : Added WGS84 support. WGS84 coordinate system now applies internally in CloudWindow. X=Meridian, Y=90 deg East, Z=North Pole as before.  
 Sun 04 Jul : Added GlobalWeather system, experimental.  
+Thu 01 Jul : Update ExportSlack.py  
 Tue 29 Jun : RenderTarget checks for PS4.  
 Thu 24 Jun : Fix delayload settings. DELAYIMP_INSECURE_WRITABLE_HOOKS to test dll loading.  
 Mon 21 Jun : GetCustomD3D11RTV() does typeless to typed convert of image format. Minor update to OpenGLSample for RenderDoc support. Better checks on textures for DX11 and DX12.  
@@ -105,7 +107,5 @@ Mon 11 Jan : Don't use deprecated fns - this is an error on some platforms.
 Mon 11 Jan : Remove references to effects11_MT.  
 Mon 11 Jan : Platform ptr  
 Mon 11 Jan : Add realTimeWind option to CLoudRenderingOptions.  
-Mon 11 Jan : Sample for D3D12 call FlushImmediateCommandList() at end of OnCreateDevice(). Cleaned up BaseTerrainRenderer.cpp.  
-Sun 10 Jan : Platform ptr  
 
 <hr>
