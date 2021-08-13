@@ -7,6 +7,7 @@ weight: 120
 
 Version 4.4
 ---
+Wed 11 Aug : Fix Sharpness and Worley amplitude in Variable Grid. Cleaned up WindowUpdater calls.  
 Tue 03 Aug : Added build acceleration structures to CloudRaytraceLighting.  
 Mon 02 Aug : Change copy pass to "replace" for loss 2D.  
 Mon 02 Aug : Update CloudRaytraceLighting to use async compute - WIP.  
@@ -106,6 +107,5 @@ Mon 11 Jan : Update ReadMe.md
 Mon 11 Jan : Don't use deprecated fns - this is an error on some platforms.  
 Mon 11 Jan : Remove references to effects11_MT.  
 Mon 11 Jan : Platform ptr  
-Mon 11 Jan : Add realTimeWind option to CLoudRenderingOptions.  
 
 <hr>
