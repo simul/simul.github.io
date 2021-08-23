@@ -7,6 +7,8 @@ weight: 120
 
 Version 4.4
 ---
+Fri 20 Aug : Small fix for godrays scaling  
+Fri 20 Aug : Small fix to make sure that automatic sun position can be re-enabled  
 Fri 20 Aug : Fix for TrueSkySample.cpp overriding PlatformRendererInterface::Render().  
 Wed 18 Aug : Updated to support async compute in SkySequencer. Not test in Unity or UE4. CloudRaytraceLighting refactored basic functions RestoreDeviceObjects(), InvalidateDeviceObjects(), RecompileShaders() etc. Change GenerateCloudDensityAABB() and Raytrace() to submit to the Compute Queue, RenderAABBWireframe() and ShowCloudRaytracingLightingTextures wait on the Compute Queue to use the generated resources. RaysPerVoxel added to CloudRenderingOptions; and slider to the UI. WindowUpdater cleaned up and changed to support periodic AccelerationStructure rebuild and continuous Raytrace. ExternalRenderValues updated to version 8 for raytracing variables.  
 Wed 11 Aug : Fix Sharpness and Worley amplitude in Variable Grid. Cleaned up WindowUpdater calls.  
@@ -105,7 +107,5 @@ Tue 12 Jan : .
 Tue 12 Jan : Platform ptr.  
 Tue 12 Jan : Platform ptr.  
 Tue 12 Jan : Updated version number to 4.4.  
-Mon 11 Jan : Update ReadMe.md  
-Mon 11 Jan : Don't use deprecated fns - this is an error on some platforms.  
 
 <hr>
