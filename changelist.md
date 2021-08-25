@@ -7,6 +7,7 @@ weight: 120
 
 Version 4.4
 ---
+Wed 25 Aug : Doc update, added ScaleKM, other small fixes.  
 Mon 23 Aug : rotate by 90 degrees before and after sidereal transform. This is necessary because we consider the default X axis to be East for compatibility with 4.3, but the initial rotation of 90 degrees by the WGS-84 Y axis towards (0,0) latitude and longitude would give X south. May be best in future to make default X south for convenience.  
 Fri 20 Aug : Small fix for godrays scaling  
 Fri 20 Aug : Small fix to make sure that automatic sun position can be re-enabled  
@@ -106,6 +107,5 @@ Fri 15 Jan : CLoud update reset if source changes.
 Thu 14 Jan : Fixed noise offset behaviour due to wind in Variable Grid cloud rendering.  
 Wed 13 Jan : Take Cmake var for vulkan sdk dir.  
 Tue 12 Jan : More output from Build.bat  
-Tue 12 Jan : .  
 
 <hr>

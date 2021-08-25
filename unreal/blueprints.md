@@ -70,8 +70,26 @@ The Nodes have been streamlined to output the correct of data type. Make sure yo
 
 * **SetCloudLayerValue:** 
 
+For example, to adjust the cloudiness of a scene via blueprints, you would use the blueprints in the image below.
 
-Get/Set Values on trueSKYSequenceActor
+
+![](/images/unreal/exampleincreasecloudiness.png)
+
+
+Of course, this relies on you have a layer and keyframe already. You can also create Cloud layers and Keyframes via blueprints.
+
+
+![](/images/unreal/examplecreatelayerandkeyframe.png)
+
+
+
+Every sequence has 1 Sky layer that cannot be removed, so you do not need to create or get a reference to a Sky layer. Editing a Sky Keyframe is almost identical to editing a cloud keyframe, and has the same blueprints to get access to the UID of the keyframe.
+
+![](/images/unreal/exampleskyfog.png)
+
+
+
+Get/Set Values on the trueSKYActor
 ------------------------
 To Get/Set these values, just create a reference of the trueSKYSequenceActor, and all the variables have been made public.
 
@@ -82,6 +100,11 @@ To make a reference, make sure the actor is selected in the world view, and cont
 ![](/images/unreal/actorvariables.png)
 
 As you can see there is a list of all the editable variables, organised the same was as they are on the actor.
+
+![](/images/unreal/exampleprecipitation.png)
+
+These setting can be used alongside the Sequencer values, to specify exactly what is required for your project
+
 
 Getting Layer Values
 ---------------------
