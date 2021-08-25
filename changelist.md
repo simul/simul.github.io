@@ -7,6 +7,7 @@ weight: 120
 
 Version 4.4
 ---
+Mon 23 Aug : rotate by 90 degrees before and after sidereal transform. This is necessary because we consider the default X axis to be East for compatibility with 4.3, but the initial rotation of 90 degrees by the WGS-84 Y axis towards (0,0) latitude and longitude would give X south. May be best in future to make default X south for convenience.  
 Fri 20 Aug : Small fix for godrays scaling  
 Fri 20 Aug : Small fix to make sure that automatic sun position can be re-enabled  
 Fri 20 Aug : Fix for TrueSkySample.cpp overriding PlatformRendererInterface::Render().  
@@ -17,12 +18,14 @@ Mon 02 Aug : Change copy pass to "replace" for loss 2D.
 Mon 02 Aug : Update CloudRaytraceLighting to use async compute - WIP.  
 Mon 02 Aug : Fix Platform compilation errors.  
 Mon 02 Aug : Fix compile errors.  
+Fri 30 Jul : Initial Hadley cell implementation in GlobalWeatherRenderer.  
 Thu 29 Jul : WIP CloudRaytraceLighting update.  
 Thu 29 Jul : WIP added RT cloud UI and overlays. cloud_raytrace.sfx used constant buffer for TraceRays parameters. CloudRaytraceLighting.h updated with ShaderBindingTable and new methods.  
 Tue 20 Jul : RenderingPlugin.cpp InitDefaultTargets() will note continuously log warning.  
 Mon 19 Jul : CloudThresholdDistanceKm is now in Has/Get/SetFloat().  
 Mon 19 Jul : Small update to day loops  
 Wed 14 Jul : PluginTrueSkyRenderer::SetTexture() checks for valid texture. Platform updated too. SIMUL_CERR changed to SIMUL_CERR_ONCE in UnityD3D12Context.  
+Mon 12 Jul : Save this version before implementing Chorin projection method.  
 Fri 09 Jul : Update to CreateRTV().  
 Fri 09 Jul : Better checks in UnityD3D12Context::CreateRTV().  
 Fri 09 Jul : Minor fixes for Jarvis build.  
@@ -104,8 +107,5 @@ Thu 14 Jan : Fixed noise offset behaviour due to wind in Variable Grid cloud ren
 Wed 13 Jan : Take Cmake var for vulkan sdk dir.  
 Tue 12 Jan : More output from Build.bat  
 Tue 12 Jan : .  
-Tue 12 Jan : Platform ptr.  
-Tue 12 Jan : Platform ptr.  
-Tue 12 Jan : Updated version number to 4.4.  
 
 <hr>
