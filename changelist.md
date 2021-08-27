@@ -7,6 +7,8 @@ weight: 120
 
 Version 4.4
 ---
+Thu 26 Aug : Update CMakeLists for docs.  
+Thu 26 Aug : EffectDefineOptions and defines removed from creating Effect.  
 Wed 25 Aug : Doc update, added ScaleKM, other small fixes.  
 Mon 23 Aug : rotate by 90 degrees before and after sidereal transform. This is necessary because we consider the default X axis to be East for compatibility with 4.3, but the initial rotation of 90 degrees by the WGS-84 Y axis towards (0,0) latitude and longitude would give X south. May be best in future to make default X south for convenience.  
 Fri 20 Aug : Small fix for godrays scaling  
@@ -105,7 +107,5 @@ Tue 02 Feb : CloudRenderer::SetCloudConstants() convert wind direction from RAD 
 Fri 15 Jan : Initialization order fix. Debug option for PrecipitationRaduisMeters  
 Fri 15 Jan : CLoud update reset if source changes.  
 Thu 14 Jan : Fixed noise offset behaviour due to wind in Variable Grid cloud rendering.  
-Wed 13 Jan : Take Cmake var for vulkan sdk dir.  
-Tue 12 Jan : More output from Build.bat  
 
 <hr>
