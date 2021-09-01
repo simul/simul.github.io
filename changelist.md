@@ -7,6 +7,7 @@ weight: 120
 
 Version 4.4
 ---
+Tue 31 Aug : Temp cmake changes for docs  
 Fri 27 Aug : Changed SIMUL_SUPPORT_PS4 to PLATFORM_PS4 in CMakeLists.txt.  
 Thu 26 Aug : Update CMakeLists for docs.  
 Thu 26 Aug : EffectDefineOptions and defines removed from creating Effect.  
@@ -106,6 +107,5 @@ Wed 10 Feb : on_actionShowCloudQueries_toggled() and Referenced amended. Added S
 Wed 03 Feb : CloudRenderer::PreRenderUpdate() checks OverrideWind in CloudLayer::CloudKeyframer* before calling CloudWindow::Update() with a new speed.  
 Tue 02 Feb : CloudRenderer::SetCloudConstants() convert wind direction from RAD to DEG.  
 Fri 15 Jan : Initialization order fix. Debug option for PrecipitationRaduisMeters  
-Fri 15 Jan : CLoud update reset if source changes.  
 
 <hr>

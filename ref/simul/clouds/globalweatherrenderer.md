@@ -14,6 +14,7 @@ Functions
 ---
 
 |  | [GlobalWeatherRenderer](#GlobalWeatherRenderer)() |
+|  | [~GlobalWeatherRenderer](#~GlobalWeatherRenderer)() |
 
 
 Functions
@@ -21,3 +22,6 @@ Functions
 <a name="GlobalWeatherRenderer"></a>
 ###  GlobalWeatherRenderer()
 Calculates global cloud cover and weather patterns.
+<a name="~GlobalWeatherRenderer"></a>
+###  ~GlobalWeatherRenderer()
+Destructor
