@@ -7,6 +7,8 @@ weight: 120
 
 Version 4.4
 ---
+Wed 01 Sep : Fixed worley noise gridding issue in Variable Grid rendering. Fixed stepping worley noise in Standard Grid rendering.  
+Tue 31 Aug : Added rain streaks to clouds_experimental.sl; cloud_raytrace.sl rain streak noise fix. Added GetPrecipitationAtOffsetKm(). Updated parameters for GetRainAtOffsetKm() and GetRainToSnowAtOffsetKm(). Ported from 4.3.  
 Tue 31 Aug : Temp cmake changes for docs  
 Fri 27 Aug : Changed SIMUL_SUPPORT_PS4 to PLATFORM_PS4 in CMakeLists.txt.  
 Thu 26 Aug : Update CMakeLists for docs.  
@@ -105,7 +107,5 @@ Fri 12 Feb : Removed some references to latitude and longitude to prevent the va
 Fri 12 Feb : composite.sl uses absolute value for the distance to avoid nan/inf.  
 Wed 10 Feb : on_actionShowCloudQueries_toggled() and Referenced amended. Added SDF generation for CloudDensity volume texture.  
 Wed 03 Feb : CloudRenderer::PreRenderUpdate() checks OverrideWind in CloudLayer::CloudKeyframer* before calling CloudWindow::Update() with a new speed.  
-Tue 02 Feb : CloudRenderer::SetCloudConstants() convert wind direction from RAD to DEG.  
-Fri 15 Jan : Initialization order fix. Debug option for PrecipitationRaduisMeters  
 
 <hr>
