@@ -1,0 +1,5 @@
+Base Weather Renderer
+======================================
+
+.. doxygenclass:: simul::clouds::BaseWeatherRenderer
+   :members:

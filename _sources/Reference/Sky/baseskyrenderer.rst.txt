@@ -1,0 +1,5 @@
+Base Sky Renderer
+======================================
+
+.. doxygenclass:: simul::sky::BaseSkyRenderer
+   :members:

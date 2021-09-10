@@ -1,0 +1,11 @@
+Base
+======================================
+
+.. toctree::
+   :maxdepth: 2
+
+   Base/inifile.rst
+   Base/licensing.rst
+   Base/trackingallocator.rst
+   Base/variant
+

@@ -1,0 +1,414 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Variables &mdash; Simul  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Precipitation" href="../precipitation.html" />
+    <link rel="prev" title="How it works" href="auroraehowitworks.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Simul
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation and Setup</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../tutorialsindex.html">Tutorials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../sequencer.html">Sky Sequencer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../clouds.html">Clouds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sky.html">Sky</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lighting.html">Lighting</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../aurorae.html">Aurorae</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="auroraetutorial.html">Aurorae Tutorial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="auroraehowitworks.html">How it works</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../precipitation.html">Precipitation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../rainbows.html">Rainbows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../storms.html">Storms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../water.html">Water</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../time.html">Progressing Time</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../unrealindex.html">trueSKY for Unreal Engine 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../unityindex.html">trueSKY for Unity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sdk.html">trueSKY SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../skysequencer.html">Simul Sky Sequencer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../programmingindex.html">Programming Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../legalindex.html">trueSKY Licences</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../API/apiindex.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Reference/referenceindex.html">Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Simul</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../tutorialsindex.html">Tutorials</a> &raquo;</li>
+        
+          <li><a href="../aurorae.html">Aurorae</a> &raquo;</li>
+        
+      <li>Variables</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/Tutorials/Aurorae/auroraevariables.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="variables">
+<h1>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h1>
+<p>Aurorae are automatically generated by trueSKY providing that some conditions are met.
+You need to be within the Auroral Oval with the generated aurorae within the view distance.</p>
+<p>Aurorae can be customised, from global position to strength and auroral colours.</p>
+<p>Auroral Oval Settings:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 40%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Variable</p></th>
+<th class="head"><p>Definition</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Geomagnetic North Pole Latitude</p></td>
+<td><p>The latitude of the geomagnetic north pole, about which aurorae are generated.</p></td>
+<td><p>-90.0 to 90.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>Geomagnetic North Pole Longitude</p></td>
+<td><p>The longitude of the geomagnetic north pole, about which aurorae are generated.</p></td>
+<td><p>-180.0 to 180.0</p></td>
+</tr>
+<tr class="row-even"><td><p>Highest Latitude</p></td>
+<td><p>The highest latitude aurorae can occur, in degrees decimal centred about the geomagnetic north pole.</p></td>
+<td><p>0.0 to 90.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>Lowest Latitude</p></td>
+<td><p>The lowest latitude aurorae can occur, in degrees decimal centred about the geomagnetic north pole.</p></td>
+<td><p>0.0 to 90.0</p></td>
+</tr>
+<tr class="row-even"><td><p>Max Band</p></td>
+<td><p>The thickness of the thickest part of the auroral oval, in degrees decimal (Not currently in use).</p></td>
+<td><p>0.0 to 180.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>Min Band</p></td>
+<td><p>The thickness of the thinnest part of the auroral oval, in degrees decimal (Not currently in use).</p></td>
+<td><p>0.0 to 180.0</p></td>
+</tr>
+<tr class="row-even"><td><p>Show Auroral Oval in Cloud Window</p></td>
+<td><p>Whether trueSKY should draw the Auroral Oval on the Cloud Window view.</p></td>
+<td><p>Bool</p></td>
+</tr>
+</tbody>
+</table>
+<p>Aurora Intensity Settings:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 40%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Variable</p></th>
+<th class="head"><p>Definition</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Aurora Electron Free Time</p></td>
+<td><p>The free time between interactions in 10^-12s. Used to calculate the atmospheric conductivity.</p></td>
+<td><p>1.0 to 10.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>Aurora Electron Volume Density</p></td>
+<td><p>The number of electrons in 10^13m^-3. Used to calculate the atmospheric conductivity.</p></td>
+<td><p>1.0 to 1.0x10^6</p></td>
+</tr>
+<tr class="row-even"><td><p>Auroral Layers Intensity</p></td>
+<td><p>A simple output multiplier for general brightness control.</p></td>
+<td><p>0.0 to 10.0</p></td>
+</tr>
+</tbody>
+</table>
+<p>Auroral Layer Settings:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 40%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Variable</p></th>
+<th class="head"><p>Definition</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Base</p></td>
+<td><p>Base of the auroral layer in km.</p></td>
+<td><p>0.0 to 500.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>Top</p></td>
+<td><p>Top of the auroral layer in km.</p></td>
+<td><p>0.0 to 500.0</p></td>
+</tr>
+<tr class="row-even"><td><p>Emitted Wavelength (nm)</p></td>
+<td><p>Wavelength of the emitted light in nm.</p></td>
+<td><p>400 to 700</p></td>
+</tr>
+<tr class="row-odd"><td><p>Strength (kR)</p></td>
+<td><p>Strength of the Emitted Light in kR (KiloRayleigh). Example values: <a class="reference external" href="https://i.stack.imgur.com/Qr02U.gif">Aurorae Spectral Intensity Graph</a></p></td>
+<td><p>1.0 to 100.0</p></td>
+</tr>
+</tbody>
+</table>
+<p>Field Aligned Currents Controls:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 40%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Variable</p></th>
+<th class="head"><p>Definition</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Start</p></td>
+<td><p>The start longitude of the field aligned current about the geomagnetic north pole.</p></td>
+<td><p>-180.0 to 180.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>End</p></td>
+<td><p>The end longitude of the field aligned current about the geomagnetic north pole.</p></td>
+<td><p>-180.0 to 180.0</p></td>
+</tr>
+<tr class="row-even"><td><p>Radius</p></td>
+<td><p>The radius from the geomagnetic north pole of the field aligned current in degrees decimal.</p></td>
+<td><p>0.0 to 90.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>Origin Latitude</p></td>
+<td><p>A latitude offset from the geomagnetic north pole for the field aligned current.</p></td>
+<td><p>60.0 to 90.0</p></td>
+</tr>
+<tr class="row-even"><td><p>Origin Longitude</p></td>
+<td><p>A longitude offset from the geomagnetic north pole for the field aligned current.</p></td>
+<td><p>-180.0 to 180.0</p></td>
+</tr>
+</tbody>
+</table>
+<p>There are four regions; two per Dawn and Dusk side of the planet.</p>
+<p>Other Settings:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 40%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Variable</p></th>
+<th class="head"><p>Definition</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Aurora Intensity Map Size</p></td>
+<td><p>Size of the Intensity Map in pixels. A high value offers greater detail at an increased performance cost.</p></td>
+<td><p>128 to 8192</p></td>
+</tr>
+<tr class="row-odd"><td><p>Aurora Trace Length</p></td>
+<td><p>How long the trace length should be when drawing the Intensity Map.</p></td>
+<td><p>0 to 1000</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../precipitation.html" class="btn btn-neutral float-right" title="Precipitation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="auroraehowitworks.html" class="btn btn-neutral float-left" title="How it works" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2007-2021, Simul Software Ltd.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

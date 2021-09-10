@@ -1,0 +1,22 @@
+Programming Guide
+======================================
+
+Here you will find all the information you will need if you are editing trueSKY outside of the sequencer. We also have detailed information on how each component of trueSKY is calculated and rendered, along with our full documented codebase with dependancy hierarchies.
+
+*  :doc:`Rendering <Programming/programmingrendering>` - Best place to begin, here you can learn how to install trueSKY
+*  :doc:`Performance Profiling <Programming/programmingprofiling>` - How to monitor and improve the performance of trueSKY in your world
+*  :doc:`Debugging <Programming/programmingdebugging>` - How to use our debugging tools to fix issues
+*  :doc:`Deployment <Programming/programmingdeployment>` - How to use our debugging tools to fix issues
+*  :doc:`Plugin Rendering Interface <Programming/programminginterface>` - Alternative way to connect trueSKY to a game or simulation
+*  :doc:`Documented Code Base <Reference/referenceindex>` - Our complete documented Code Base, made easy to read and traverse
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   Programming/programmingrendering.rst
+   Programming/programmingprofiling.rst
+   Programming/programmingdebugging.rst
+   Programming/programmingdeployment.rst
+   Programming/programminginterface.rst
+

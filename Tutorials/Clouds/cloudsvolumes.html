@@ -1,0 +1,276 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Cloud Volumes &mdash; Simul  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Variables" href="cloudsvariables.html" />
+    <link rel="prev" title="Clouds Tutorial" href="cloudstutorial.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Simul
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation and Setup</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../tutorialsindex.html">Tutorials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../sequencer.html">Sky Sequencer</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../clouds.html">Clouds</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="cloudstutorial.html">Clouds Tutorial</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Cloud Volumes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#how-to-create-a-volume">How to create a Volume</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#editing-volumes">Editing Volumes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cloudsvariables.html">Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../sky.html">Sky</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lighting.html">Lighting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../aurorae.html">Aurorae</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../precipitation.html">Precipitation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../rainbows.html">Rainbows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../storms.html">Storms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../water.html">Water</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../time.html">Progressing Time</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../unrealindex.html">trueSKY for Unreal Engine 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../unityindex.html">trueSKY for Unity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sdk.html">trueSKY SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../skysequencer.html">Simul Sky Sequencer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../programmingindex.html">Programming Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../legalindex.html">trueSKY Licences</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../API/apiindex.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Reference/referenceindex.html">Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Simul</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../tutorialsindex.html">Tutorials</a> &raquo;</li>
+        
+          <li><a href="../clouds.html">Clouds</a> &raquo;</li>
+        
+      <li>Cloud Volumes</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/Tutorials/Clouds/cloudsvolumes.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cloud-volumes">
+<h1>Cloud Volumes<a class="headerlink" href="#cloud-volumes" title="Permalink to this headline">¶</a></h1>
+<p>Cloud volumes allow you to place specific formations of clouds in the sky. These volumes can be customised just like any other clouds, and multiple can be created, allowing you to create your own skylines!</p>
+<div class="section" id="how-to-create-a-volume">
+<h2>How to create a Volume<a class="headerlink" href="#how-to-create-a-volume" title="Permalink to this headline">¶</a></h2>
+<p>To create a volume, simply right click within the cloud layer and select “Add new Volume”</p>
+<img alt="../../_images/addNewVolume.png" src="../../_images/addNewVolume.png" />
+<img alt="../../_images/volumeWorldGrid.png" src="../../_images/volumeWorldGrid.png" />
+<p>This will turn this layer into a volume layer, meaning this layer will only use volumes, not a repeating skyline. If you still want a repeating sky as well, simply create another layer.</p>
+</div>
+<div class="section" id="editing-volumes">
+<h2>Editing Volumes<a class="headerlink" href="#editing-volumes" title="Permalink to this headline">¶</a></h2>
+<p>There are two modes of editing in the Cloud Window - Keyframe and Volume. <strong>Double click</strong> to switch between the editing modes. In Keyframe mode, you can drag the whole layer around, along with any volumes in that layer. The positions you move volumes to in keyframe mode are relative to the keyframe you have selected.</p>
+<img alt="../../_images/volumeEditing.png" src="../../_images/volumeEditing.png" />
+<p>In volume edit mode, you can move volumes individually and adjust their radius.</p>
+<p>In Volume edit mode, you can individually move and adjust each volume in your layer. You must have a volume present to enter Volume Edit mode. To move them, click and drag from the volume centre. You should see the change in your scene as you move it.</p>
+<p>Think of the sequencer as an animation track. You select your keyframe, then adjust the values for that time(for example, the position of a volume). Next, create a new keyframe, select it, and adjust values for that time. Now, the values will seamlessly interpolate between each other as time passes.</p>
+<p>Currently, we can create cylindrical shapes. The size of these cylinders can be altered through the Cloud Window by extending the bounds of the upper and lower faces. Grab the right handle to adjust the upper face of the cylinder, or the left handle for the lower face.</p>
+<p>If you want to adjust the base height of the volume, use the Cloudbase in the Cloud keyframe settings. This means all clouds in one layer start at the same height. Add volumes multiple layers if you want alternate heights.</p>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p>The new cloud volume system can be used to create small, specifically shaped clouds, or large formations of clouds that are bounded to an area. You can even mix them together! Here are just a few examples of what can now be done! Email us with your examples if you would like to be featured!</p>
+<img alt="../../_images/volume1.png" src="../../_images/volume1.png" />
+<img alt="../../_images/volume2.png" src="../../_images/volume2.png" />
+<img alt="../../_images/volume3.png" src="../../_images/volume3.png" />
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="cloudsvariables.html" class="btn btn-neutral float-right" title="Variables" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="cloudstutorial.html" class="btn btn-neutral float-left" title="Clouds Tutorial" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2007-2021, Simul Software Ltd.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

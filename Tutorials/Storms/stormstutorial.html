@@ -1,0 +1,272 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Storms Tutorial &mdash; Simul  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Variables" href="stormsvariables.html" />
+    <link rel="prev" title="Storms" href="../storms.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Simul
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation and Setup</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../tutorialsindex.html">Tutorials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../sequencer.html">Sky Sequencer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../clouds.html">Clouds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sky.html">Sky</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lighting.html">Lighting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../aurorae.html">Aurorae</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../precipitation.html">Precipitation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../rainbows.html">Rainbows</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../storms.html">Storms</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Storms Tutorial</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#editing-storms-in-the-sequencer">Editing Storms in the Sequencer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#unity">Unity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ue4">UE4</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="stormsvariables.html">Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../water.html">Water</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../time.html">Progressing Time</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../unrealindex.html">trueSKY for Unreal Engine 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../unityindex.html">trueSKY for Unity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sdk.html">trueSKY SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../skysequencer.html">Simul Sky Sequencer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../programmingindex.html">Programming Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../legalindex.html">trueSKY Licences</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../API/apiindex.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Reference/referenceindex.html">Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Simul</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../tutorialsindex.html">Tutorials</a> &raquo;</li>
+        
+          <li><a href="../storms.html">Storms</a> &raquo;</li>
+        
+      <li>Storms Tutorial</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/Tutorials/Storms/stormstutorial.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="storms-tutorial">
+<h1>Storms Tutorial<a class="headerlink" href="#storms-tutorial" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="editing-storms-in-the-sequencer">
+<h2>Editing Storms in the Sequencer<a class="headerlink" href="#editing-storms-in-the-sequencer" title="Permalink to this headline">¶</a></h2>
+<p>To create a storm in the sequencer, simply right click on the 3D cloud layer and select “Add storm”. Clicking on the keyframe will show a selection of storm properties that can be changed. To set the storm’s start time, end time and duration, simply drag out its edges horizontally to encompass what part of the timeline is required. Make sure there are enough clouds to produce lightning while the storm is active.</p>
+<img alt="../../_images/stormsequencer.png" src="../../_images/stormsequencer.png" />
+<p>You cannot drag the storm keyframe to move it, you must move it by extending and shrinking the keyframe. This is because, unlike keyframes which effect lasts until the next keyframe, Storms must have a set, determined size.</p>
+</div>
+<div class="section" id="unity">
+<h2>Unity<a class="headerlink" href="#unity" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="editing-storms-through-scripting">
+<h3>Editing Storms through Scripting<a class="headerlink" href="#editing-storms-through-scripting" title="Permalink to this headline">¶</a></h3>
+<p>As with cloud and sky keyframes, to get/set properties of a storm keyframe, you will first need to get its uid. To do this, use GetStormUidByIndex(int index) or GetStormUidAtTime(float time).</p>
+<p>Once you have the storm keyframe’s uid, you can get and set its float and int properties using GetStormFloat(uint uid, string name), SetStormFloat(uint uid, string name, float value), GetStormInt(uint uid, string name) and SetStormInt(uint uid, string name, int value).</p>
+<p>For information on these functions, see <a class="reference internal" href="../../Unity/unityscripting.html"><span class="doc">Scripting</span></a>. The tables below show the storm properties (named as they appear in the sequencer), along with the matching name string to use for scripting. <strong>Note:</strong> Parameters that are Bools in the Sequencer are treated as Ints in scripting, where 0 = false and 1 = true.</p>
+</div>
+</div>
+<div class="section" id="ue4">
+<h2>UE4<a class="headerlink" href="#ue4" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="editing-storm-through-blueprints">
+<h3>Editing Storm through Blueprints<a class="headerlink" href="#editing-storm-through-blueprints" title="Permalink to this headline">¶</a></h3>
+<p>Coming Soon</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="stormsvariables.html" class="btn btn-neutral float-right" title="Variables" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../storms.html" class="btn btn-neutral float-left" title="Storms" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2007-2021, Simul Software Ltd.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

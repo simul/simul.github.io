@@ -1,0 +1,5 @@
+Water Particle Simulator
+======================================
+
+.. doxygenclass:: simul::terrain::WaterParticleSimulator
+   :members:

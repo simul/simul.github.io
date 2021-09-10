@@ -1,0 +1,5 @@
+Sky Keyframer
+======================================
+
+.. doxygenclass:: simul::sky::SkyKeyframer
+   :members:

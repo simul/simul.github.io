@@ -1,0 +1,453 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Variables &mdash; Simul  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Progressing Time" href="../time.html" />
+    <link rel="prev" title="Water Masks" href="watermasks.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Simul
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation and Setup</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../tutorialsindex.html">Tutorials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../sequencer.html">Sky Sequencer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../clouds.html">Clouds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sky.html">Sky</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lighting.html">Lighting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../aurorae.html">Aurorae</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../precipitation.html">Precipitation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../rainbows.html">Rainbows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../storms.html">Storms</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../water.html">Water</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="watertutorial.html">Water Tutorial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="watershoreeffects.html">Shore Effects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="waterprobes.html">Water Probes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="waterbuoyancy.html">Water Buoyancy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="watermasks.html">Water Masks</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Variables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#trueskyactor-settings">trueSKYActor Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#truesky-water-object-settings">trueSKY Water Object settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#shore-effects">Shore Effects</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../time.html">Progressing Time</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../unrealindex.html">trueSKY for Unreal Engine 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../unityindex.html">trueSKY for Unity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sdk.html">trueSKY SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../skysequencer.html">Simul Sky Sequencer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../programmingindex.html">Programming Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../legalindex.html">trueSKY Licences</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../API/apiindex.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Reference/referenceindex.html">Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Simul</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../tutorialsindex.html">Tutorials</a> &raquo;</li>
+        
+          <li><a href="../water.html">Water</a> &raquo;</li>
+        
+      <li>Variables</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/Tutorials/Water/watervariables.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="variables">
+<h1>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="trueskyactor-settings">
+<h2>trueSKYActor Settings<a class="headerlink" href="#trueskyactor-settings" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 33%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Variable</p></th>
+<th class="head"><p>Definition</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Render Water</p></td>
+<td><p>If Water should be rendered.</p></td>
+<td><p>Bool</p></td>
+</tr>
+<tr class="row-odd"><td><p>Water Resolution</p></td>
+<td><p>Resolution of the Water.</p></td>
+<td><p>Half or Full</p></td>
+</tr>
+<tr class="row-even"><td><p>Enable Reflection</p></td>
+<td><p>Enable or Disable Reflections.</p></td>
+<td><p>Bool</p></td>
+</tr>
+<tr class="row-odd"><td><p>Reflection Resolution</p></td>
+<td><p>Resolution of the Water Reflections.</p></td>
+<td><p>Half or Full</p></td>
+</tr>
+<tr class="row-even"><td><p>Reflection Steps</p></td>
+<td><p>How many steps that reflection rays will take</p></td>
+<td><p>Int</p></td>
+</tr>
+<tr class="row-odd"><td><p>Reflection Pixel Step</p></td>
+<td><p>The maximum pixels in screen space that reflection rays can move</p></td>
+<td><p>Int</p></td>
+</tr>
+<tr class="row-even"><td><p>Reflection Distance</p></td>
+<td><p>The furthest distance that reflection rays will travel</p></td>
+<td><p>Int</p></td>
+</tr>
+<tr class="row-odd"><td><p>Water Cubemap</p></td>
+<td><p>Use a custom cubemap for non-dynamic water refletions</p></td>
+<td><p>Cubemap</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="truesky-water-object-settings">
+<h2>trueSKY Water Object settings<a class="headerlink" href="#truesky-water-object-settings" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 33%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Variable</p></th>
+<th class="head"><p>Definition</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Render</p></td>
+<td><p>If the water should be rendered.</p></td>
+<td><p>Bool</p></td>
+</tr>
+<tr class="row-odd"><td><p>Boundless Ocean</p></td>
+<td><p>Render a full Ocean. Use this for large scale scenes.</p></td>
+<td><p>Bool</p></td>
+</tr>
+<tr class="row-even"><td><p>Custom Mesh</p></td>
+<td><p>Use a given custom mesh for bounded objects</p></td>
+<td><p>Static Mesh</p></td>
+</tr>
+<tr class="row-odd"><td><p>Beaufort Scale</p></td>
+<td><p>Easy to use scale to determine the type of wave you require.</p></td>
+<td><p>0.0 to 12.0</p></td>
+</tr>
+<tr class="row-even"><td><p>Wind Direction</p></td>
+<td><p>Direction of the wind.</p></td>
+<td><p>0 to 1.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>Wind Dependency</p></td>
+<td><p>How dependant the wave direction is on the wind.</p></td>
+<td><p>0 to 1.0</p></td>
+</tr>
+<tr class="row-even"><td><p>Use Colour Presets</p></td>
+<td><p>Should colour presets be used.</p></td>
+<td><p>Bool</p></td>
+</tr>
+<tr class="row-odd"><td><p>Colour Presets</p></td>
+<td><p>Select a colour preset to quickly change the colour of your water.</p></td>
+<td><p>Preset Selection</p></td>
+</tr>
+<tr class="row-even"><td><p>Scattering</p></td>
+<td><p>Amount of light scattering. Vec3</p></td>
+<td><p>0 to 1.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>Absorption</p></td>
+<td><p>Amount of light absorption. Vec3</p></td>
+<td><p>0 to 1.0</p></td>
+</tr>
+<tr class="row-even"><td><p>Profile Buffer Resolution</p></td>
+<td><p>Buffer resolution. Increase this if you water appears to “shimmer”</p></td>
+<td><p>512 to 4096</p></td>
+</tr>
+</tbody>
+</table>
+<p>We also have Advanced Water options, to allow for further customization of the water surface</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 33%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Variable</p></th>
+<th class="head"><p>Definition</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Advanced Surface Options</p></td>
+<td><p>If Advanced surface options should be used. (Will disable beaufort)</p></td>
+<td><p>Bool</p></td>
+</tr>
+<tr class="row-odd"><td><p>Wind Speed</p></td>
+<td><p>Speed of the wind. This will affect the size of the waves.</p></td>
+<td><p>0 to 40</p></td>
+</tr>
+<tr class="row-even"><td><p>Wave Amplitude</p></td>
+<td><p>Amplitude of the waves.</p></td>
+<td><p>0.01 to 2.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>Max Wavelength</p></td>
+<td><p>Minimum Wavelength of waves.</p></td>
+<td><p>1.01 to 100</p></td>
+</tr>
+<tr class="row-even"><td><p>Min Wavelength</p></td>
+<td><p>Maximum Wavelength of waves.</p></td>
+<td><p>0.1 to 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Enable Wave Grid</p></td>
+<td><p>Enable to use Buoyancy and wave physics.</p></td>
+<td><p>Bool</p></td>
+</tr>
+<tr class="row-even"><td><p>Wave Grid Distance</p></td>
+<td><p>Furthest distance from the camera to calculate the wave grid</p></td>
+<td><p>64 to 256</p></td>
+</tr>
+<tr class="row-odd"><td><p>Enable Foam</p></td>
+<td><p>If foam should be rendered on the waves.</p></td>
+<td><p>Bool</p></td>
+</tr>
+<tr class="row-even"><td><p>Foam Strength</p></td>
+<td><p>Strength of the foam effect.</p></td>
+<td><p>0 to 0.5</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="shore-effects">
+<h2>Shore Effects<a class="headerlink" href="#shore-effects" title="Permalink to this headline">¶</a></h2>
+<p>Shore Effects can be used to reduce the waves splashing unevenly over the water’s edge. For a more in depth example, go <a class="reference internal" href="watershoreeffects.html"><span class="doc">here</span></a></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 33%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Variable</p></th>
+<th class="head"><p>Definition</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Shore Effects</p></td>
+<td><p>If shore effects should be enabled or not.</p></td>
+<td><p>Bool</p></td>
+</tr>
+<tr class="row-odd"><td><p>Shore Depth Scene Capture</p></td>
+<td><p>The Depth Scene Capture camera that should be used.</p></td>
+<td><p>SceneCapture2D</p></td>
+</tr>
+<tr class="row-even"><td><p>Shore Depth Width</p></td>
+<td><p>Width of the Shore depth effect.</p></td>
+<td><p>1000.0 to 10000.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>Shore Depth Extent</p></td>
+<td><p>Depth of the Shore Depth Effects.</p></td>
+<td><p>1000.0 to 10000.0</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../time.html" class="btn btn-neutral float-right" title="Progressing Time" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="watermasks.html" class="btn btn-neutral float-left" title="Water Masks" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2007-2021, Simul Software Ltd.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

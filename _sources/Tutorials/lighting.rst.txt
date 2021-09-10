@@ -1,0 +1,15 @@
+Lighting
+======================================
+
+trueSKY takes control of a direction light in your scene, and also uses a Sky Light. We recommend not using multiple directional lights in the scene, as trueSKY only needs one.
+
+   *  :doc:`Tutorial <Lighting/lightingtutorial>` - How to set up different lighting
+   *  :doc:`Variables <Lighting/lightingvariables>` - Details of all the different variables for lighting
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :titlesonly:
+
+   Lighting/lightingtutorial.rst
+   Lighting/lightingvariables.rst

@@ -1,0 +1,5 @@
+Cellular Cloud Node
+======================================
+
+.. doxygenclass:: simul::clouds::CellularCloudNode
+   :members:

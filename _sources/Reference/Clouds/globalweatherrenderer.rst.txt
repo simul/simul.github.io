@@ -1,0 +1,5 @@
+Global Weather Renderer
+======================================
+
+.. doxygenclass:: simul::clouds::GlobalWeatherRenderer
+   :members:

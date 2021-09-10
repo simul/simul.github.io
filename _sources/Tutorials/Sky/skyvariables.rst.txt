@@ -1,0 +1,163 @@
+Variables
+======================================
+
+==============================================  ==================================================================================================================================  =============
+Variable 										Definition																															Value
+==============================================  ==================================================================================================================================  =============
+Sea Level Deg. C								For infra-red rendering. 																											-273.0 to 1000
+Zenith											Colour of the Zenith (Sky above you). See :doc:`Sky Colours <skytutorial>`															RGB 
+Horizon											Colour of the Horizon (Sky around you). See :doc:`Sky Colours <skytutorial>`														RGB 
+==============================================  ==================================================================================================================================  =============
+
+==============================================  ==================================================================================================================================  =============
+Variable 										Definition																															Value
+==============================================  ==================================================================================================================================  =============
+Loop						If the sky should loop the first day. The loop can be seen on the timeline, indicated by a yellow bracket above the Sky Layer.		Bool
+==============================================  ==================================================================================================================================  =============
+
+==============================================  ==================================================================================================================================  =============
+Variable 										Definition																															Value
+==============================================  ==================================================================================================================================  =============
+Sky Multiplier									Multiplier to scale the brightness of the Sky. 																						1 to 100
+==============================================  ==================================================================================================================================  =============
+
+
+
+Atmosphere
+-------------------------
+
+==============================================  ======================================================================================================================================  =============
+Variable 										Definition																																Value
+==============================================  ======================================================================================================================================  =============
+Planet Radius									Radius of the planet in meters.  																										100 to 100000
+Atmosphere Thickness							Thickness of the Atmosphere in Km. 																										10 to 1000
+Ozone											Ozone level of the atmosphere. 																											0 to 0.2
+Emissivity										Emissivity of the Atmosphere. 																											0 to 1
+Rayleigh Coefficient				Rayleigh scattering coefficients at standard sea level density, xyz = RGB. Can be calculated based on wavelength with Auto Button.		0 to 10000
+==============================================  ======================================================================================================================================  =============
+
+==============================================  ==================================================================================================================================  =============
+Variable 										Definition																															Value
+==============================================  ==================================================================================================================================  =============
+Atmospherics Amortization						How to spread the cost of rendering atmospherics over frames. Similar to Cloud Amortization.										1 to 8
+==============================================  ==================================================================================================================================  =============
+
+
+Sun
+-------------------------
+
+==============================================  ==================================================================================================================================  =============
+Variable 										Definition																															Value
+==============================================  ==================================================================================================================================  =============
+Automatic Sun Position							Whether to calculate sun's position to be Geographically Accurate. Disable to set the position manaully.							Bool
+==============================================  ==================================================================================================================================  =============
+
+==============================================  ==================================================================================================================================  =============
+Variable 										Definition																															Value
+==============================================  ==================================================================================================================================  =============
+Light Wavelength (R,G,B)						Wavelength of the light from the sun.																								0 to 1000
+Irradiance										Irradiance of the Sun, in Watts/m2/nm. XYZ=RGB.																						0 to 50
+Diameter										Size of sun’s radius in degrees.																									0.0 to 3600.0
+Link Keyframe time and daytime					See :doc:`Link Keyframe Time <skytutorial>`																							Bool
+Time Zone										Time Zone based on Greenwich Mean Time (GMT). 																						Between -12.0 and 12.0
+Start Date						For calculating position of sun/moon. Where 01/01/2000 = 0 , -1 = 31/12/1999, 01/01/2016 = 5844(format DD:MM:YYYY).					-100000 to 100000
+==============================================  ==================================================================================================================================  =============
+
+==============================================  ==================================================================================================================================  =============
+Variable 										Definition																															Value
+==============================================  ==================================================================================================================================  =============
+Sun Multiplier									Multiplier to scale the brightness of sunlight in the scene. 																		From 1 to 10
+Max Sun Radiance								Maximum Sun radiance produced. 																										0 to 1000000.0
+Adjust Sun Radiance					If enabled, adjusting the Sun radiance will cause the sun to automatically scale to keep spectral irradiance the same.				Bool
+==============================================  ==================================================================================================================================  =============
+
+
+Moon (Legacy 4.1 System)
+-------------------------
+The moon has a customisable texture, so you can use it to make some interesting effects! This is a legacy system found in 4.1a and 4.2 versions of the plugin)
+
+==============================================  ==================================================================================================================================  =============
+Variable 										Definition																															Value
+==============================================  ==================================================================================================================================  =============
+Automatic Moon Position							Whether to calculate moon position from date and time. 																				Bool
+==============================================  ==================================================================================================================================  =============
+
+==============================================  ==================================================================================================================================  =============
+Variable 										Definition																															Value
+==============================================  ==================================================================================================================================  =============
+Albedo											The proportion of the incident light that is reflected by a surface.													 			0.0 to 1.0	
+Diameter										Size of moon's radius in degrees																									0.0 to 3600.0
+Colour											Colour of the moon. Uses a colour wheel, can also input HTML Colour Code.															RGB 						
+==============================================  ==================================================================================================================================  =============
+
+==============================================  ==================================================================================================================================  =============
+Variable 										Definition																															Value
+==============================================  ==================================================================================================================================  =============
+Moon texture									Texture to use for the Moon. trueSKY has a moon texture by default. 																.png
+Moon Multiplier									Brightness multiplier for the Moon. 																								0.0 to 10.0
+==============================================  ==================================================================================================================================  =============
+
+Moon (Multi Moon - 4.2a)
+-------------------------
+This system is found in unreal 4.2a versions and allows for multiple moons and extensive customisation of both the moons and the orbital paths. Find more information and indepth descriptions go :doc:`here <skymoons>`
+
+==============================================  ==================================================================================================================================  =============
+Variable 										Definition																															Value
+==============================================  ==================================================================================================================================  =============
+Name								Allows for assigning a name for each Moon within the scene. This help differentiate between multiple Moons.							text
+Texture								2D Texture to use for the Moon. 																									.png
+Name								Allows for assigning a name for each Moon within the scene. This help differentiate between multiple Moons.							text
+Colour								Affects the texture of the Moon and the light that is reflected off of it. 															RGB
+Use Preset						Allows you to use one of the preset Moon templates. Checking this will cause all your currently setting to be overridden.			Bool
+Moon Preset							Changes all of the settings within the Moon array element to a series of preassigned values. 										Dropdown
+Albedo								Controls the proportion of light that is reflected by the Moon.																		0.0 to 10.0
+Longitude of the Acending Node				The points in which the Moon crosses the plane of the equator. 																		0.0 to 360.0
+Longitude of Ascending Node Rate			The amount the ascending node increases each day (24 hour period).																	0.0 to 10.0
+Inclination									This controls the tilt angle of the orbit.																							0.0 to 360.0
+Argument of Pericentre				The closest point of that the Moon is to the Earth's surface.																		0.0 to 360.0
+Argument of Pericentre Rate			How much the argument of the pericentre changes per day. 																			0.0 to 10.0
+Mean Distance						The mean (average) distance the Moon is from the center of the Earth.																0.0 to 100.0
+Eccentricity						Controls how elliptical the orbit of the Moon will be around the Earth.																0.0 to 1.0
+Mean Anomaly						The position that the Moon will be around its orbit at midnight of each day.														0.0 to 360.0
+Mean Anomaly Rate					Controls how much the mean anomaly changes each day.																				0.0 to 10.0
+Radius Arc Minutes					Controls the apparent size of the Moon when visualized from the surface of the Earth.												0.0 to 1000.0
+==============================================  ==================================================================================================================================  =============
+
+
+Stars
+-------------------------
+
+==============================================  ==================================================================================================================================  =============
+Variable 										Definition																															Value
+==============================================  ==================================================================================================================================  =============
+Max Magnitude 									Maximum Magnitude of stars. 																										0.0 to 9.0
+Brightness										Star Brightness.  																													1.0 to 10000.0
+Minimum Pixel Size								Minimum size of each star.  																										1.0 to 10000.0
+Background 										Brightness multiplier for background texture. 																						0.000001 to 0.001
+Find Constellation								*Out for Repairs*																													*Out for Repairs*	
+==============================================  ==================================================================================================================================  =============
+
+==============================================  ==================================================================================================================================  =============
+Variable 										Definition																															Value
+==============================================  ==================================================================================================================================  =============
+Cosmic Background Texture				Texture to appear for the night sky. Default is an image of the Milky way. 															.png
+Minimum Star Pixel Size					Minimum pixel size of stars in the sky. If set to 0 they are drawn as point, otherwise as quads. Does not affect the Sun. 			0 to 
+==============================================  ==================================================================================================================================  =============
+
+Fog
+-------------------------
+
+A keyframe's haze value determines how much Mie-scattered haze (i.e. mist or fog) is present. Haze is considered to have a density that falls-off exponentially with altitude, so the HazeScaleHeightKm property determines the scaling height for this exponential. TheHazeBaseHeightKm is also used. Below this height, full haze is applied.
+
+==============================================  ==================================================================================================================================  =============
+Variable 										Definition																														Value
+==============================================  ==================================================================================================================================  =============
+Visibility										Visibility controls haze/fog, represents visibility at sea level. 																	0.1 to 10000
+Haze/fog										Amount of haze/mist. 																												0.00001 to 1000.0.
+Haze Base										Base altitude above which haze decreases in density. 																				-2.0 to 20.0.
+Haze Scale										Vertical scale over which haze reduces with altitude.																				0.1 to 10.0.
+Eccentricity									Anisotropy of Mie scattering. 																										0.0 to 1.0.
+Ground Fog										Strength of ground fog. 																											0.0 to 10.0.
+Fog Ceiling										Fog Ceiling in Km.																													0 to 10.
+Mie Coefficients								Mie scattering coefficients. XYZ = RGB. 																							0 to 50
+==============================================  ==================================================================================================================================  =============

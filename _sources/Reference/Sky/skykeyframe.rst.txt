@@ -1,0 +1,7 @@
+Sky Keyframe
+======================================
+
+.. doxygenstruct:: simul::sky::SkyKeyframe
+   :members:
+.. doxygenstruct:: simul::sky::KeyframeInUseState
+   :members:

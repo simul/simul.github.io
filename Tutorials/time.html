@@ -1,0 +1,310 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Progressing Time &mdash; Simul  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="trueSKY for Unreal Engine 4" href="../unrealindex.html" />
+    <link rel="prev" title="Variables" href="Water/watervariables.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Simul
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation and Setup</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../tutorialsindex.html">Tutorials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="sequencer.html">Sky Sequencer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="clouds.html">Clouds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sky.html">Sky</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lighting.html">Lighting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aurorae.html">Aurorae</a></li>
+<li class="toctree-l2"><a class="reference internal" href="precipitation.html">Precipitation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rainbows.html">Rainbows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="storms.html">Storms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water.html">Water</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Progressing Time</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#examples">Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#unreal">Unreal</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#truesky-time-and-blueprints">trueSKY Time and Blueprints</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#using-truesky-with-the-cinematic-sequencer">Using trueSKY with the Cinematic Sequencer</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#update-modes">Update Modes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#game-time">Game Time</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fixed-time">Fixed Time</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#real-time">Real Time</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../unrealindex.html">trueSKY for Unreal Engine 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unityindex.html">trueSKY for Unity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sdk.html">trueSKY SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../skysequencer.html">Simul Sky Sequencer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programmingindex.html">Programming Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../legalindex.html">trueSKY Licences</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../API/apiindex.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Reference/referenceindex.html">Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Simul</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../tutorialsindex.html">Tutorials</a> &raquo;</li>
+        
+      <li>Progressing Time</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/Tutorials/time.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="progressing-time">
+<h1>Progressing Time<a class="headerlink" href="#progressing-time" title="Permalink to this headline">¶</a></h1>
+<p>Progressing time in trueSKY had been made to be as easy as possible. On the trueSKY Actor there is a section called Time - and these are all you will need to progress time for trueSKY.</p>
+<p>To get time moving quickly, simply increase the Progression Scale to 60. 60 mean every real second trueSKY will progress by 1 minute. If you wanted real time you could set it to 1, but you’re unlikely to see much change unless you’ve adjusted a few values.</p>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">1 = Real Time</div>
+<div class="line">60 = 1 minute per second</div>
+<div class="line">3600 = 1 hour per second</div>
+</div>
+<p>We also have Time Units. This is usually for projects already using a specific scale for their timings. The Scale represents how to divide a day when calculating time. Set to 1, a day is defined as the values between 0 and 1 (so 0.5 would be midday). If set to 24 (Default Value), then a day is split up from 0-24.</p>
+<p>trueSKY supports yearly cycles, so day 2 would be represented as 24-48, day 3 = 48-72 etc. (if you had the scale as 24).</p>
+</div>
+<div class="section" id="id1">
+<h2>Examples<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">1 = A Day is represented as 0-1</div>
+<div class="line">24 = A Day is represented as 0-24 (Hours)</div>
+<div class="line">1440 = A Day represented in Minutes</div>
+<div class="line">86,4000 = A Day is represented in Seconds</div>
+</div>
+<p>This can give you precise values that are easy to understand, and can be configured to work with any previous system. The Progression Scale above will work the same regardless of the Units of Time you are using, so a progression value of 1 is always real time.</p>
+</div>
+<div class="section" id="unreal">
+<h2>Unreal<a class="headerlink" href="#unreal" title="Permalink to this headline">¶</a></h2>
+<p>The trueSKY plugin for Unreal Engine allows time progression to be set directly through the progression scale setting within the truesky actor. Setting this value will control the speed at which time progresses. When using the default time unit, whose setting is found within the Times advanced settings, which controls the units used to measure time and is by default set to a 24 hour system, you can set the progression scale to 1 which will allow for time to progress in real-time (such that 1 second in the engine is 1 second in real life) and setting it to 3600 will make 1 hour in-game progress for each second passing.</p>
+<p>To calculate a specific amount of time for a full day to progress, we can just multiply the number of minutes in a 24 hour cycle by 60 (representing the number of seconds within each minute).</p>
+<p>For example, if we are aiming for a full 24 hour period to take 5 minutes in-game, we would multiply 5 by 60 giving a value of 300, which if used as the progression scale, will cause the 24 hour period to take 5 minutes.</p>
+<div class="section" id="truesky-time-and-blueprints">
+<h3>trueSKY Time and Blueprints<a class="headerlink" href="#truesky-time-and-blueprints" title="Permalink to this headline">¶</a></h3>
+<p>Just like most actors, you can now get the time variable directly and adjust it however you see fit. Just use Set/Get Time from a trueSKYSequenceActor to adjust anything you need.</p>
+</div>
+<div class="section" id="using-truesky-with-the-cinematic-sequencer">
+<h3>Using trueSKY with the Cinematic Sequencer<a class="headerlink" href="#using-truesky-with-the-cinematic-sequencer" title="Permalink to this headline">¶</a></h3>
+<p>Using Unreal’s Cinematic Sequencer is easy, as we have made most of our variables interpolatable (You can add a keyframe to the sequence). You can’t adjust the cloud settings, but you can adjust the time - and all the clouds settings are automatically interpolated between using our own Sky Sequencer. So all you need to do is setup the scene in trueSKY’s Sky Sequencer, e.g. have the cloudiness at 11:00 be 0.9 and then another cloud keyframe at 14:00 with a cloudiness of 0. Then, using Unreal’s Sequencer, you can adjust your cinematic to adjust between these two times, and trueSKY will automatically adjust the cloud settings between the time intervals.</p>
+<hr class="docutils" />
+<p>TrueSKY supports three different modes of update - Game Time, Fixed Time and Real Time.</p>
+<img alt="../_images/updateoptions.png" src="../_images/updateoptions.png" />
+<p>In all cases, the number of Subdivisions controls how finely the interpolation is performed. It?s the number of intermediate steps between keyframes (for Fixed Intervals), or in the Game Time or Real Time period specified.</p>
+</div>
+</div>
+<div class="section" id="update-modes">
+<h2>Update Modes<a class="headerlink" href="#update-modes" title="Permalink to this headline">¶</a></h2>
+<p>There are different ways in which we allow you to interpolate, each with it’s own advantages and disadvantages</p>
+<div class="section" id="game-time">
+<h3>Game Time<a class="headerlink" href="#game-time" title="Permalink to this headline">¶</a></h3>
+<p>In Game-Time, it takes a specified amount of time in game hours, and split that into a given amount of intervals. The weather won?t change if game time does not. This is helpful go the weather does continue when paused, or can go slower based on the speed of the game.</p>
+</div>
+<div class="section" id="fixed-time">
+<h3>Fixed Time<a class="headerlink" href="#fixed-time" title="Permalink to this headline">¶</a></h3>
+<p>Fixed Intervals mode is similar to Game time, only there?s a specified number of interpolated intervals between any two keyframes. You can use this mode to create more detailed transitions around sunrise/sunset for example.</p>
+</div>
+<div class="section" id="real-time">
+<h3>Real Time<a class="headerlink" href="#real-time" title="Permalink to this headline">¶</a></h3>
+<p>If you?re using real-time transition, you can adjust the Interval (in seconds) to determine how quickly the change takes place.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../unrealindex.html" class="btn btn-neutral float-right" title="trueSKY for Unreal Engine 4" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Water/watervariables.html" class="btn btn-neutral float-left" title="Variables" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2007-2021, Simul Software Ltd.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

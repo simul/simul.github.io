@@ -1,0 +1,5 @@
+Tracking Allocator
+======================================
+
+.. doxygenclass:: simul::base::TrackingAllocator
+   :members:

@@ -1,0 +1,288 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Unreal Engine 4 Tutorial &mdash; Simul  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Unreal Blueprints with trueSKY" href="unrealblueprints.html" />
+    <link rel="prev" title="trueSKY for Unreal Engine 4" href="../unrealindex.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Simul
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation and Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorialsindex.html">Tutorials</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../unrealindex.html">trueSKY for Unreal Engine 4</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Unreal Engine 4 Tutorial</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#initial-configuration">Initial Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#installing-the-plugin">1: Installing the Plugin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#running-the-binary-plugin">2: Running the binary plugin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#adding-truesky-to-the-level">3: Adding trueSKY to the level</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#creating-a-new-sequence">4: Creating a new Sequence</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="unrealblueprints.html">Unreal Blueprints with trueSKY</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unrealsourcecode.html">Working with trueSKY from GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unrealdebugging.html">Debugging, Diagnosing and Profiling</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../unityindex.html">trueSKY for Unity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sdk.html">trueSKY SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../skysequencer.html">Simul Sky Sequencer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programmingindex.html">Programming Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../legalindex.html">trueSKY Licences</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../API/apiindex.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Reference/referenceindex.html">Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Simul</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../unrealindex.html">trueSKY for Unreal Engine 4</a> &raquo;</li>
+        
+      <li>Unreal Engine 4 Tutorial</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/Unreal/unrealtutorial.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="unreal-engine-4-tutorial">
+<h1>Unreal Engine 4 Tutorial<a class="headerlink" href="#unreal-engine-4-tutorial" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="initial-configuration">
+<h2>Initial Configuration<a class="headerlink" href="#initial-configuration" title="Permalink to this headline">¶</a></h2>
+<p>Please be aware trueSKY for Unreal Engine 4 does not support OSX and OpenGL. For Vulkan please use UE4 4.22 or greater.</p>
+<p>This page shows you how to install the binary version of trueSKY onto your existing binary UE installation. For other versions, or if you have a version of Unreal Engine built from source, you will need to build the plugin. Check the <a class="reference internal" href="unrealsourcecode.html"><span class="doc">Unreal Source page</span></a> for information on GitHub/Engine Source Integration.</p>
+<div class="video-wrapper">
+	<div class="video-container">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/rtdArBwqBuw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+</div></div>
+<div class="section" id="installing-the-plugin">
+<h2>1: Installing the Plugin<a class="headerlink" href="#installing-the-plugin" title="Permalink to this headline">¶</a></h2>
+<p>1: Login to your account at <a class="reference external" href="https://simul.co/account">https://simul.co/account</a>. If you have not created an account yet, head over to <a class="reference internal" href="../installation.html"><span class="doc">installation home page</span></a> to get setup.</p>
+<p>2: Download trueSKY binary installer from <a class="reference external" href="https://simul.co/downloads">https://simul.co/downloads</a>. Make sure to select the correct engine version you desire, and we always recommend the most up to date version of trueSKY.</p>
+<img alt="../_images/download.png" src="../_images/download.png" />
+<p>3: Run the trueSKY installer, ensuring that you select your UE4 directory as the installation location. (You should already have a version of UE4 installed, if not head over to www.unrealengine.com to download one). After the installation process is complete, the plugin should be installed into your UE4 directory.</p>
+<img alt="../_images/wizard.png" src="../_images/wizard.png" />
+<p><em>Make sure you select the correct directory</em></p>
+</div>
+<div class="section" id="running-the-binary-plugin">
+<h2>2: Running the binary plugin<a class="headerlink" href="#running-the-binary-plugin" title="Permalink to this headline">¶</a></h2>
+<p>1: Launch an Unreal project using the engine version in which the trueSKY plugin is installed.</p>
+<p>2: Click ‘Edit -&gt; Plugins’ from the dropdown menu at the top of the window.</p>
+<img alt="../_images/pluginwindow.png" src="../_images/pluginwindow.png" />
+<p>3: A new ‘Plugins’ window will appear. Use the search box to find ‘trueSKY’.</p>
+<img alt="../_images/pluginwindow2.png" src="../_images/pluginwindow2.png" />
+<p>4: Make sure trueSKY is enabled with the small tick box. If it is not, enable it. This will require you to restart Unreal.</p>
+<p>5: Once the plugin has been enabled, trueSKY is now ready to be used within the scene.</p>
+</div>
+<div class="section" id="adding-truesky-to-the-level">
+<h2>3: Adding trueSKY to the level<a class="headerlink" href="#adding-truesky-to-the-level" title="Permalink to this headline">¶</a></h2>
+<p>1: Click ‘Window -&gt; initialize trueSKY’ from the dropdown at the top of the window.</p>
+<img alt="../_images/windowdropdown.png" src="../_images/windowdropdown.png" />
+<p>2: A pop-up window will appear. You can either click initialize to allow trueSKY to set itself up, or you can click next to customise initialization. If you clicked initialize, you can jump to 4.</p>
+<img alt="../_images/enginewizard.png" src="../_images/enginewizard.png" />
+<p>3: Select an initial sequence asset. This can be changed at any time. There will be two options, TrueSkySequnceCumulus, and TrueSkySequenceStratus. You can also tick the ‘Show all sequences’ box if you already have some sequences available in the project contents. Select a sequence, then press next.</p>
+<p>4: We recommend you create a TrueSkyLight, for more accurate lighting. You can also select which direction light trueSKY will control, if you do not select one then a new directional light will be created.</p>
+<p>Once initialize is selected, you should see trueSKY appear in the scene, although there may not be any clouds.</p>
+</div>
+<div class="section" id="creating-a-new-sequence">
+<h2>4: Creating a new Sequence<a class="headerlink" href="#creating-a-new-sequence" title="Permalink to this headline">¶</a></h2>
+<p>1: Either select Add New at the top left of the content browser, or right click within the content window.</p>
+<p>2: Click on “Miscellaneous -&gt; trueSKY Sequence Asset” to create a new sequence. It can be renamed/saved/moved/deleted to your preference.</p>
+<img alt="../_images/addsequence1.png" src="../_images/addsequence1.png" />
+<p>3: To make this new sequence the active sequence in the world, select trueSkySequenceActor in the world outliner, then in the details section, search for ‘Active Sequence’</p>
+<p>4: You can either manually select your sequence from the dropdown next to active sequence, or you can drag and drop your preferred sequence from the content browser to the active sequence box.</p>
+<img alt="../_images/activesequence.png" src="../_images/activesequence.png" />
+<p>Now you are almost ready to start creating amazing environments with trueSKY, you just need to activate your license within the sequencer. Head over <a class="reference internal" href="../Tutorials/Sequencer/sequenceroverview.html"><span class="doc">here to learn how</span></a>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="unrealblueprints.html" class="btn btn-neutral float-right" title="Unreal Blueprints with trueSKY" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../unrealindex.html" class="btn btn-neutral float-left" title="trueSKY for Unreal Engine 4" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2007-2021, Simul Software Ltd.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

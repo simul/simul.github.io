@@ -1,0 +1,8 @@
+Base GPU Cloud Generator
+======================================
+
+.. doxygenclass:: simul::clouds::BaseGpuCloudGenerator
+   :members:
+
+.. doxygenstruct:: simul::clouds::GpuCloudsParameters
+   :undoc-members:
