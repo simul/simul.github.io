@@ -7,6 +7,7 @@ weight: 120
 
 Version 4.4
 ---
+Thu 09 Sep : Added new documentation  
 Tue 07 Sep : Removed old commented code from Sky/SkyKeyframer.cpp.  
 Wed 01 Sep : Fixed worley noise gridding issue in Variable Grid rendering. Fixed stepping worley noise in Standard Grid rendering.  
 Tue 31 Aug : Added rain streaks to clouds_experimental.sl; cloud_raytrace.sl rain streak noise fix. Added GetPrecipitationAtOffsetKm(). Updated parameters for GetRainAtOffsetKm() and GetRainToSnowAtOffsetKm(). Ported from 4.3.  
@@ -106,6 +107,5 @@ Fri 05 Mar : Delete old .properties files, moved deleteOldFtp.py
 Wed 17 Feb : Fix for black clouds when initialising trueSKY without a CloudKeyframer.  
 Fri 12 Feb : Removed some references to latitude and longitude to prevent the values from being set incorrectly  
 Fri 12 Feb : composite.sl uses absolute value for the distance to avoid nan/inf.  
-Wed 10 Feb : on_actionShowCloudQueries_toggled() and Referenced amended. Added SDF generation for CloudDensity volume texture.  
 
 <hr>

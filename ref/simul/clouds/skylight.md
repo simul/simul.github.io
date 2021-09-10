@@ -9,6 +9,7 @@ class Skylight
 | Include: | Clouds/Skylight.h |
 
 A class to capture light from the sky in real time for diffuse and specular lighting.
+You can access the cubemap by calling frameBuffer->GetTexture()
   
 
 
@@ -25,6 +26,7 @@ Functions
 | void | [Update](#Update)(simul::crossplatform::GraphicsDeviceContext deviceContext, simul::clouds::BaseWeatherRenderer weatherRenderer) |
 
 A class to capture light from the sky in real time for diffuse and specular lighting.
+You can access the cubemap by calling frameBuffer->GetTexture()
   
 
 

@@ -8,6 +8,8 @@ class WaterParticleSimulator
 
 | Include: | Terrain/WaterParticleSimulator.h |
 
+Class for containing a set of particle generators. Currently a work in progress.
+  
 
 
 Functions
@@ -19,6 +21,9 @@ Functions
 | void | [RemoveWaterParticleGenerator](#RemoveWaterParticleGenerator)(int ID) |
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform renderPlatform) |
 | void | [UpdateWaterParticleGeneratorValues](#UpdateWaterParticleGeneratorValues)(simul::terrain::particleGeneratorValues generator, simul::terrain::particleGeneratorType generatorType, simul::crossplatform::Texture customPlaneTexture) |
+
+Class for containing a set of particle generators. Currently a work in progress.
+  
 
 
 Functions

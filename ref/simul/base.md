@@ -15,6 +15,7 @@ Classes and Structures
 ---
 
 | class [FileLoader](base/fileloader.html) |  |
+| struct [LicenceInfo](base/licenceinfo.html) |  |
 | class [Referenced](base/referenced.html) |  |
 | class [ShowProgressInterface](base/showprogressinterface.html) |  |
 | class [TrackingAllocator](base/trackingallocator.html) |  |

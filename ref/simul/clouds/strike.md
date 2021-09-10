@@ -8,8 +8,13 @@ struct Strike
 
 | Include: | Clouds/LightningRenderInterface.h |
 
+A struct for holding the properties of a lightning strike currently within the scene
+  
 
 
+
+A struct for holding the properties of a lightning strike currently within the scene
+  
 
 
 Fields

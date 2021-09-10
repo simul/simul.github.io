@@ -241,7 +241,6 @@ Force clouds to regenerate.
 Set the sky - this is used to light the clouds over time.
 <a name="SetUniformKeyframes"></a>
 ### void SetUniformKeyframes(int StepsPerDay, float range)
-Apply the cloud's properties to all keyframes.
 Create a number of evenly spaced keyframes.
 <a name="SetVolume"></a>
 ### void SetVolume(simul::sky::uid id, simul::clouds::CloudVolumeType type, simul::crossplatform::Quaterniond orig, vec2 lscale, vec2 uscale, vec2 rake, vec2 height_range_km)

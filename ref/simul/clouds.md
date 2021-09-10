@@ -26,11 +26,14 @@ Classes and Structures
 | struct [ExportLightningStrike](clouds/exportlightningstrike.html) |  |
 | struct [GeodeticPlanet](clouds/geodeticplanet.html) |  |
 | class [HumidityCallbackInterface](clouds/humiditycallbackinterface.html) |  |
+| struct [LightningProperties](clouds/lightningproperties.html) |  |
 | class [MixedResolutionCompositor](clouds/mixedresolutioncompositor.html) |  |
 | struct [PointSource](clouds/pointsource.html) |  |
 | struct [PrecipitationRegion](clouds/precipitationregion.html) |  |
 | struct [SelectionIdentifier](clouds/selectionidentifier.html) |  |
 | class [Skylight](clouds/skylight.html) |  |
+| struct [Strike](clouds/strike.html) |  |
+| struct [StrikeState](clouds/strikestate.html) |  |
 | class [TrueSkyRenderer](clouds/trueskyrenderer.html) | <br> |
 
 

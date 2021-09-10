@@ -8,6 +8,8 @@ class BoundedWaterObject
 
 | Include: | Terrain/BoundedWaterObject.h |
 
+Object used for defining a bound 3D area of water within a scene.
+  
 
 
 Functions
@@ -39,6 +41,9 @@ Functions
 | void | [updateCustomWaterMesh](#updateCustomWaterMesh)(simul::terrain::WaterMeshObjectValues Object) |
 | void | [updateLODs](#updateLODs)() |
 | void | [updateQuadDensity](#updateQuadDensity)(vec3 camPos) |
+
+Object used for defining a bound 3D area of water within a scene.
+  
 
 
 Functions

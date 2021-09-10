@@ -161,9 +161,7 @@ Fields
 
 **offsetKm**  < What proportion of noise is applied at the cloudbase, between 0 and 1.0.
 
-**octaves_f**  < The calculated position offset of this keyframe due to the accumulation of wind motion (see [wind_speed](/ref/wind_speed)
-and [wind_direction](/ref/wind_direction)
-).
+**octaves_f**  < The calculated position offset of this keyframe due to the accumulation of wind motion
 
 **simulation**  < Only used for interpolation - changes will be ignored. See 
 

@@ -40,6 +40,7 @@ Functions
 | void | [RenderCrossSections](#RenderCrossSections)(simul::crossplatform::GraphicsDeviceContext context) |
 | void | [RenderQueries](#RenderQueries)(simul::crossplatform::GraphicsDeviceContext deviceContext) |
 | void | [RestoreDeviceObjects](#RestoreDeviceObjects)(simul::crossplatform::RenderPlatform renderPlatform) |
+| void | [SetCloudRenderingOptions](#SetCloudRenderingOptions)(simul::clouds::CloudRenderingOptions c) |
 | void | [SetEnableStorms](#SetEnableStorms)(bool s) |
 | void | [SetEnvironment](#SetEnvironment)(simul::clouds::Environment e) |
 | void | [SetLightingQueryResult](#SetLightingQueryResult)(LightingQueryResult _lightingQueryResult) |
@@ -134,6 +135,9 @@ Draw the queries in 3D for debugging purposes.
 <a name="RestoreDeviceObjects"></a>
 ### void RestoreDeviceObjects(simul::crossplatform::RenderPlatform renderPlatform)
 Platform-dependent function to generate device objects for the renderer.
+<a name="SetCloudRenderingOptions"></a>
+### void SetCloudRenderingOptions(simul::clouds::CloudRenderingOptions c)
+Set new cloud rendering options
 <a name="SetEnableStorms"></a>
 ### void SetEnableStorms(bool s)
 Where supported, enable lightning generation.

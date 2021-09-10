@@ -8,6 +8,8 @@ class WaterWaveletsSimulator
 
 | Include: | Terrain/WaterWaveletsSimulator.h |
 
+Class for simulating the surface of water objects.
+  
 
 
 Functions
@@ -27,6 +29,9 @@ Functions
 | void | [SetShader](#SetShader)(simul::crossplatform::Effect e) |
 | void | [SetTargetWaveGrid](#SetTargetWaveGrid)(simul::terrain::WaveGrid targetWaveGrid, simul::terrain::localWaterValues waterValues) |
 | void | [UpdateAmplitudeGrid](#UpdateAmplitudeGrid)(simul::crossplatform::DeviceContext deviceContext, float real_time_seconds, vec4 waterProbePositions, vec4 waterProbeVelocities, vec3 centre, vec2 camPos) |
+
+Class for simulating the surface of water objects.
+  
 
 
 Functions

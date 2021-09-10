@@ -15,6 +15,7 @@ Classes and Structures
 
 | class [BaseWaterRenderer](terrain/basewaterrenderer.html) |  |
 | struct [beaufortConstants](terrain/beaufortconstants.html) |  |
+| class [BoundedWaterObject](terrain/boundedwaterobject.html) |  |
 | struct [boundlessOceanProperties](terrain/boundlessoceanproperties.html) |  |
 | struct [globalWaterValues](terrain/globalwatervalues.html) |  |
 | struct [localWaterValues](terrain/localwatervalues.html) |  |
@@ -23,8 +24,10 @@ Classes and Structures
 | struct [waterBuoyancyObject](terrain/waterbuoyancyobject.html) |  |
 | struct [waterMaskingObject](terrain/watermaskingobject.html) |  |
 | struct [WaterMeshObjectValues](terrain/watermeshobjectvalues.html) |  |
+| class [WaterParticleSimulator](terrain/waterparticlesimulator.html) |  |
 | struct [waterProbe](terrain/waterprobe.html) |  |
 | struct [WaterProbeValues](terrain/waterprobevalues.html) |  |
+| class [WaterWaveletsSimulator](terrain/waterwaveletssimulator.html) |  |
 | struct [WaveGrid](terrain/wavegrid.html) |  |
 
 

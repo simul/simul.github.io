@@ -27,7 +27,7 @@ Functions
 Return true if the derived class can make sky tables using the GPU.
 <a name="GetEnabled"></a>
 ### bool GetEnabled()
-Whether this GPU sky generator should be used to calculate the sky.")
+Whether this GPU sky generator should be used to calculate the sky.
 <a name="InvalidateDeviceObjects"></a>
 ### void InvalidateDeviceObjects()
 Platform-dependent function called when uninitializing the Sky Generator.

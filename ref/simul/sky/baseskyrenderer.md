@@ -34,26 +34,29 @@ Then, the sky and atmospheric scattering (atmospherics, or distance-fades) are d
 after the depth-buffer has been filled by any solids in the scene
 (see <a href="../clouds/baseweatherrenderer/rendermixedresolution.html">endlink</a>).
 
-There are two main elements to realistic atmospherics: Loss, and Inscatter.
+There are two main elements to realistic atmospherics: Loss, and Inscatter. 
 
-![](/images/FadeLogic.png)
-""
+![](/images/FadeLogic)
+.png ""
 
 So, for any point in screen space, we can transform it to world space using the depth value, and obtain its distance, and elevation relative to the horizon. This gives us the
 lookup co-ordinates into the loss and inscatter textures. The loss value determines how much of the red,green, and blue values of that pixel are retained as light passes through the atmosphere from the distant object to the viewer.
-The inscatter determines how much sunlight (or moonlight etc) is scattered in towards the viewer due to the intervening atmosphere.
+The inscatter determines how much sunlight (or moonlight etc) is scattered in towards the viewer due to the intervening atmosphere. 
 
 Generally in Earth's nitrogen-oxygen atmosphere, more blue light than red or green is scattered. So distance white objects appear yellow, as the blue component has been scattered away. But distance black objects appear blue, because
 the blue part of the sunlight shining on the intervening air has been scattered as well, and some of that blue light goes towards the viewer. This process is Rayleigh scattering. Other important effects that TrueSky simulates are
 Mie scattering due to haze, Ozone absorption, and radiation due to air temperature.
 
-Each sky renderer maintains nine fade textures. If the most recent keyframe in the sky keyframer is X, we have:
+Each sky renderer maintains nine fade textures. If the most recent keyframe in the sky keyframer is X, we have: 
+
+
 
 Keyframe X    | Keyframe X+1  | Keyframe X+2
 ------------- | ------------- | -------------
 loss 0        | loss 1        | loss 2
 inscatter 0   | inscatter 1   | inscatter 2
 skylight 0    | skylight 1    | skylight 2
+
 
 Each texture contains data for the atmospherics as seen from a complete range of altitudes.
 
@@ -63,8 +66,8 @@ All this is handled automatically by the SkyKeyframer, which in turn can use a <
 If using CPU-generated textures, the Sky Renderer asks the keyframer what new data to fill into the textures each frame. If using its own
 GpuSkyGenerator, the Sky Renderer has access to these textures without the need to query the keyframer.
 
-![](/images/FadeTable.png)
-""
+![](/images/FadeTable)
+.png ""
 
 The fade textures are 3D, with co-ordinates representing x=altitude/max altitude, y=1+sine(elevation))/2, z=distance/max distance.
 Each frame, these three pairs of 3D textures (Keyframe X and X+1) are combined into three individual 2D textures, with
@@ -144,26 +147,29 @@ Then, the sky and atmospheric scattering (atmospherics, or distance-fades) are d
 after the depth-buffer has been filled by any solids in the scene
 (see <a href="../clouds/baseweatherrenderer/rendermixedresolution.html">endlink</a>).
 
-There are two main elements to realistic atmospherics: Loss, and Inscatter.
+There are two main elements to realistic atmospherics: Loss, and Inscatter. 
 
-![](/images/FadeLogic.png)
-""
+![](/images/FadeLogic)
+.png ""
 
 So, for any point in screen space, we can transform it to world space using the depth value, and obtain its distance, and elevation relative to the horizon. This gives us the
 lookup co-ordinates into the loss and inscatter textures. The loss value determines how much of the red,green, and blue values of that pixel are retained as light passes through the atmosphere from the distant object to the viewer.
-The inscatter determines how much sunlight (or moonlight etc) is scattered in towards the viewer due to the intervening atmosphere.
+The inscatter determines how much sunlight (or moonlight etc) is scattered in towards the viewer due to the intervening atmosphere. 
 
 Generally in Earth's nitrogen-oxygen atmosphere, more blue light than red or green is scattered. So distance white objects appear yellow, as the blue component has been scattered away. But distance black objects appear blue, because
 the blue part of the sunlight shining on the intervening air has been scattered as well, and some of that blue light goes towards the viewer. This process is Rayleigh scattering. Other important effects that TrueSky simulates are
 Mie scattering due to haze, Ozone absorption, and radiation due to air temperature.
 
-Each sky renderer maintains nine fade textures. If the most recent keyframe in the sky keyframer is X, we have:
+Each sky renderer maintains nine fade textures. If the most recent keyframe in the sky keyframer is X, we have: 
+
+
 
 Keyframe X    | Keyframe X+1  | Keyframe X+2
 ------------- | ------------- | -------------
 loss 0        | loss 1        | loss 2
 inscatter 0   | inscatter 1   | inscatter 2
 skylight 0    | skylight 1    | skylight 2
+
 
 Each texture contains data for the atmospherics as seen from a complete range of altitudes.
 
@@ -173,8 +179,8 @@ All this is handled automatically by the SkyKeyframer, which in turn can use a <
 If using CPU-generated textures, the Sky Renderer asks the keyframer what new data to fill into the textures each frame. If using its own
 GpuSkyGenerator, the Sky Renderer has access to these textures without the need to query the keyframer.
 
-![](/images/FadeTable.png)
-""
+![](/images/FadeTable)
+.png ""
 
 The fade textures are 3D, with co-ordinates representing x=altitude/max altitude, y=1+sine(elevation))/2, z=distance/max distance.
 Each frame, these three pairs of 3D textures (Keyframe X and X+1) are combined into three individual 2D textures, with
