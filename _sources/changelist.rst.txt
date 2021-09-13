@@ -1,0 +1,102 @@
+Changelist 
+========= 
+| **Mon 13 Sep** : Added changelist to docs
+| **Thu 09 Sep** : Added new documentation
+| **Tue 07 Sep** : Removed old commented code from Sky/SkyKeyframer.cpp.
+| **Wed 01 Sep** : Fixed worley noise gridding issue in Variable Grid rendering. Fixed stepping worley noise in Standard Grid rendering.
+| **Tue 31 Aug** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Tue 31 Aug** : Added rain streaks to clouds_experimental.sl; cloud_raytrace.sl rain streak noise fix. Added GetPrecipitationAtOffsetKm(). Updated parameters for GetRainAtOffsetKm() and GetRainToSnowAtOffsetKm(). Ported from 4.3.
+| **Tue 31 Aug** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Tue 31 Aug** : Temp cmake changes for docs
+| **Fri 27 Aug** : Changed SIMUL_SUPPORT_PS4 to PLATFORM_PS4 in CMakeLists.txt.
+| **Thu 26 Aug** : Update CMakeLists for docs.
+| **Thu 26 Aug** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Thu 26 Aug** : EffectDefineOptions and defines removed from creating Effect.
+| **Wed 25 Aug** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Wed 25 Aug** : Doc update, added ScaleKM, other small fixes.
+| **Mon 23 Aug** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Mon 23 Aug** : rotate by 90 degrees before and after sidereal transform. This is necessary because we consider the default X axis to be East for compatibility with 4.3, but the initial rotation of 90 degrees by the WGS-84 Y axis towards (0,0) latitude and longitude would give X south. May be best in future to make default X south for convenience.
+| **Fri 20 Aug** : Small fix for godrays scaling
+| **Fri 20 Aug** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Fri 20 Aug** : Small fix to make sure that automatic sun position can be re-enabled
+| **Fri 20 Aug** : Fix for TrueSkySample.cpp overriding PlatformRendererInterface::Render().
+| **Wed 18 Aug** : Updated to support async compute in SkySequencer. Not test in Unity or UE4. CloudRaytraceLighting refactored basic functions RestoreDeviceObjects(), InvalidateDeviceObjects(), RecompileShaders() etc. Change GenerateCloudDensityAABB() and Raytrace() to submit to the Compute Queue, RenderAABBWireframe() and ShowCloudRaytracingLightingTextures wait on the Compute Queue to use the generated resources. RaysPerVoxel added to CloudRenderingOptions; and slider to the UI. WindowUpdater cleaned up and changed to support periodic AccelerationStructure rebuild and continuous Raytrace. ExternalRenderValues updated to version 8 for raytracing variables.
+| **Tue 17 Aug** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Wed 11 Aug** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Wed 11 Aug** : Fix Sharpness and Worley amplitude in Variable Grid. Cleaned up WindowUpdater calls.
+| **Tue 03 Aug** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Tue 03 Aug** : Added build acceleration structures to CloudRaytraceLighting.
+| **Mon 02 Aug** : Change copy pass to "replace" for loss 2D.
+| **Mon 02 Aug** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Mon 02 Aug** : Update CloudRaytraceLighting to use async compute - WIP.
+| **Mon 02 Aug** : Fix Platform compilation errors.
+| **Mon 02 Aug** : Fix compile errors.
+| **Fri 30 Jul** : Initial Hadley cell implementation in GlobalWeatherRenderer.
+| **Fri 30 Jul** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Thu 29 Jul** : WIP CloudRaytraceLighting update.
+| **Thu 29 Jul** : WIP added RT cloud UI and overlays. cloud_raytrace.sfx used constant buffer for TraceRays parameters. CloudRaytraceLighting.h updated with ShaderBindingTable and new methods.
+| **Tue 20 Jul** : RenderingPlugin.cpp InitDefaultTargets() will note continuously log warning.
+| **Mon 19 Jul** : CloudThresholdDistanceKm is now in Has/Get/SetFloat().
+| **Mon 19 Jul** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Mon 19 Jul** : Small update to day loops
+| **Wed 14 Jul** : PluginTrueSkyRenderer::SetTexture() checks for valid texture. Platform updated too. SIMUL_CERR changed to SIMUL_CERR_ONCE in UnityD3D12Context.
+| **Mon 12 Jul** : Save this version before implementing Chorin projection method.
+| **Fri 09 Jul** : Update to CreateRTV().
+| **Fri 09 Jul** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Fri 09 Jul** : Better checks in UnityD3D12Context::CreateRTV().
+| **Fri 09 Jul** : Minor fixes for Jarvis build.
+| **Thu 08 Jul** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Thu 08 Jul** : Updated cloud_edit.sfx for better rendering of elements 'on the sphere'.
+| **Tue 06 Jul** : Velocity trails.
+| **Sun 04 Jul** : Global weather: advection is now functional.
+| **Sun 04 Jul** : Added Docs folder for Sphinx documentation.
+| **Sun 04 Jul** : Added WGS84 support. WGS84 coordinate system now applies internally in CloudWindow. X=Meridian, Y=90 deg East, Z=North Pole as before.
+| **Sun 04 Jul** : Added GlobalWeather system, experimental.
+| **Thu 01 Jul** : Update ExportSlack.py
+| **Tue 29 Jun** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Tue 29 Jun** : RenderTarget checks for PS4.
+| **Thu 24 Jun** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Thu 24 Jun** : Fix delayload settings. DELAYIMP_INSECURE_WRITABLE_HOOKS to test dll loading.
+| **Mon 21 Jun** : GetCustomD3D11RTV() does typeless to typed convert of image format. Minor update to OpenGLSample for RenderDoc support. Better checks on textures for DX11 and DX12.
+| **Tue 15 Jun** : Minor correction.
+| **Mon 14 Jun** : TrueSkyPluginRender moved Vulkan out into separate functions. UnityViewStruct::colourTextureArrayIndex added and updated IUnityGraphicsVulkan.h. UnityD3D12Context better handled of reloading the context. GetCustomD3D11RTV() for Unity HDRP skylights.
+| **Mon 14 Jun** : Added WinPixGpuCapturer support to SkySequencer.
+| **Wed 02 Jun** : Minor change to clouds_experimental.sl
+| **Tue 01 Jun** : Updated clouds_experimental.sl noiseval calculation and step count for performance. cloud_update.sfx illumation texture updated values.
+| **Tue 01 Jun** : Updated clouds_experimental.sl removed upsampling_offset, changed opacity calculation and added cosine value to ColourStep2().
+| **Tue 01 Jun** : Updated clouds_experimental.sl and clouds_raytrace.sl
+| **Tue 01 Jun** : Add CloudDepthTemporalAlpha to UI and default to 0.5. Add Cycle overlay view id to Main UI.
+| **Wed 26 May** : Updated to support WinGDK.
+| **Tue 25 May** : Updated conditional statement in UnityRenderEventD3D12(). Better viewport assignment in UnityRenderFrame().
+| **Mon 24 May** : offset fix
+| **Mon 24 May** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Mon 24 May** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Mon 24 May** : Update worleyTexcoordOffset to worleyOffsetKm. Removed noise3DTexcoordScale2, noise3DTexcoordOffset2 and EdgeNoiseWavelength2Km from shaders. Update noise input from cloud_lighting.sfx and updated cloud_experimental.sla and others.
+| **Fri 21 May** : Fixing dead link
+| **Fri 21 May** : Further changes
+| **Fri 21 May** : link fix
+| **Fri 21 May** : Amending doc errors
+| **Fri 21 May** : Link update for SDK
+| **Fri 21 May** : Adding Skysequence specific page, fixed dead link within timeline page
+| **Tue 18 May** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Fri 07 May** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Fri 07 May** : Adding WaterMask documentation page as not previously created. this includes image and update to waters index
+| **Fri 07 May** : Commodore support merges from 4.3
+| **Thu 06 May** : Add SkySequencer icon to TrueSkyUI/MainWindow.
+| **Thu 06 May** : Change Directory for UE from XboxSeriesX to XSX
+| **Thu 06 May** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Tue 04 May** : PlanetRadius Functional
+| **Thu 29 Apr** : Updated Unity D3D12 for greater stability. assimp-vc142-mt is copied by CopyToTargetDir.py, as SimulCrossPlatform_MD has a link depenedencies to it if using PLATFORM_USE_ASSIMP. GetSimulVersion() updated for 4.4.
+| **Tue 27 Apr** : Fix for trueSKY build for XboxOneGDK. Platform ptr.
+| **Mon 26 Apr** : Minor change to make output clearer.
+| **Thu 22 Apr** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Tue 20 Apr** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Tue 20 Apr** : Updated Unity PlatformName and directories for Spectrum.
+| **Mon 19 Apr** : Removed Octaves
+| **Fri 16 Apr** : Doc Version support corrections and minor changes
+| **Wed 14 Apr** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Wed 14 Apr** : Docs update
+| **Tue 13 Apr** : fixes for docs
+| **Fri 09 Apr** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Tue 06 Apr** : Water: newBuoyancyObject->outputsBuffer was incorrectly initialized without CPU read access. As was BoundedWaterObject::waterProbeOutputsBuffer.
+| **Thu 01 Apr** : Merge branch '4.4' of github.com:simul/Simul into 4.4

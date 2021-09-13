@@ -23,6 +23,13 @@ Getting Started
 
 *  :doc:`Code base <Reference/referenceindex>` - Our fully documented source code
 
+Useful External Links
+======================================
+
+* `Check out our YouTube Channel <https://www.youtube.com/user/simulsoftware>`_ - You can find tutorials and showcases here 
+
+* `Contact Us <mailto:contact@simul.co>`_ - Let us know if you're having a particular issue or think we could improve a certain aspects.   
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
@@ -47,11 +54,12 @@ Getting Started
 
    Reference/referenceindex.rst
 
+   changelist.rst
+
 
 Indices and tables
 ==================
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
 
