@@ -190,26 +190,123 @@
             
   <div class="section" id="water-wavelets-simulator">
 <h1>Water Wavelets Simulator<a class="headerlink" href="#water-wavelets-simulator" title="Permalink to this headline">¶</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find class “simul::terrain::WaterWaveletsSimulator” in doxygen xml output for project “Simul” from directory: D:/Jarvis/Documentation/build/Docs/doxygen/xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain22WaterWaveletsSimulatorE">
+<span id="_CPPv3N5simul7terrain22WaterWaveletsSimulatorE"></span><span id="_CPPv2N5simul7terrain22WaterWaveletsSimulatorE"></span><span id="simul::terrain::WaterWaveletsSimulator"></span><span class="target" id="classsimul_1_1terrain_1_1_water_wavelets_simulator"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">terrain</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">WaterWaveletsSimulator</span></span></span><a class="headerlink" href="#_CPPv4N5simul7terrain22WaterWaveletsSimulatorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Class for simulating the surface of water objects. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain22WaterWaveletsSimulator20RestoreDeviceObjectsEPN13crossplatform14RenderPlatformE">
+<span id="_CPPv3N5simul7terrain22WaterWaveletsSimulator20RestoreDeviceObjectsEPN13crossplatform14RenderPlatformE"></span><span id="_CPPv2N5simul7terrain22WaterWaveletsSimulator20RestoreDeviceObjectsEPN13crossplatform14RenderPlatformE"></span><span id="simul::terrain::WaterWaveletsSimulator::RestoreDeviceObjects__crossplatform::RenderPlatformP"></span><span class="target" id="classsimul_1_1terrain_1_1_water_wavelets_simulator_1a6b9ff43933476ace940dda427c5ef8c3"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RestoreDeviceObjects</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">RenderPlatform</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">renderPlatform</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain22WaterWaveletsSimulator20RestoreDeviceObjectsEPN13crossplatform14RenderPlatformE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Platform-dependent function called when initializing the wavelets simulator. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain22WaterWaveletsSimulator23InvalidateDeviceObjectsEv">
+<span id="_CPPv3N5simul7terrain22WaterWaveletsSimulator23InvalidateDeviceObjectsEv"></span><span id="_CPPv2N5simul7terrain22WaterWaveletsSimulator23InvalidateDeviceObjectsEv"></span><span id="simul::terrain::WaterWaveletsSimulator::InvalidateDeviceObjects"></span><span class="target" id="classsimul_1_1terrain_1_1_water_wavelets_simulator_1afc18d9cb6602f0bddc2f57e01553a2f9"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">InvalidateDeviceObjects</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain22WaterWaveletsSimulator23InvalidateDeviceObjectsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Platform-dependent function called when uninitializing the wavelets simulator. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain22WaterWaveletsSimulator9SetShaderEPN13crossplatform6EffectE">
+<span id="_CPPv3N5simul7terrain22WaterWaveletsSimulator9SetShaderEPN13crossplatform6EffectE"></span><span id="_CPPv2N5simul7terrain22WaterWaveletsSimulator9SetShaderEPN13crossplatform6EffectE"></span><span id="simul::terrain::WaterWaveletsSimulator::SetShader__crossplatform::EffectP"></span><span class="target" id="classsimul_1_1terrain_1_1_water_wavelets_simulator_1aca584cf23d159f656c09709cd4e835f2"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetShader</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Effect</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">e</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain22WaterWaveletsSimulator9SetShaderEPN13crossplatform6EffectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set the precompiled shader used by the wavelets simulator - debug only. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain22WaterWaveletsSimulator18InitialiseWaveGridEP8WaveGrid5uint2ii">
+<span id="_CPPv3N5simul7terrain22WaterWaveletsSimulator18InitialiseWaveGridEP8WaveGrid5uint2ii"></span><span id="_CPPv2N5simul7terrain22WaterWaveletsSimulator18InitialiseWaveGridEP8WaveGrid5uint2ii"></span><span id="simul::terrain::WaterWaveletsSimulator::InitialiseWaveGrid__WaveGridP.uint2.i.i"></span><span class="target" id="classsimul_1_1terrain_1_1_water_wavelets_simulator_1a2790a06b68ded9ae13244595b89bd6ec"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">InitialiseWaveGrid</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N5simul7terrain8WaveGridE" title="simul::terrain::WaveGrid"><span class="n"><span class="pre">WaveGrid</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">newWaveGrid</span></span>, <span class="n"><span class="pre">uint2</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">dimension</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">theta</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">k</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain22WaterWaveletsSimulator18InitialiseWaveGridEP8WaveGrid5uint2ii" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Initialise a given wave grid. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain22WaterWaveletsSimulator17SetTargetWaveGridEP8WaveGridP16localWaterValues">
+<span id="_CPPv3N5simul7terrain22WaterWaveletsSimulator17SetTargetWaveGridEP8WaveGridP16localWaterValues"></span><span id="_CPPv2N5simul7terrain22WaterWaveletsSimulator17SetTargetWaveGridEP8WaveGridP16localWaterValues"></span><span id="simul::terrain::WaterWaveletsSimulator::SetTargetWaveGrid__WaveGridP.localWaterValuesP"></span><span class="target" id="classsimul_1_1terrain_1_1_water_wavelets_simulator_1a9613478ad4a5ef8bdd3f5cb6763246ed"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetTargetWaveGrid</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N5simul7terrain8WaveGridE" title="simul::terrain::WaveGrid"><span class="n"><span class="pre">WaveGrid</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">targetWaveGrid</span></span>, <a class="reference internal" href="#_CPPv4N5simul7terrain16localWaterValuesE" title="simul::terrain::localWaterValues"><span class="n"><span class="pre">localWaterValues</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">waterValues</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain22WaterWaveletsSimulator17SetTargetWaveGridEP8WaveGridP16localWaterValues" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set the target wave grid the simulator will be working on. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain22WaterWaveletsSimulator18ResetAmplitudeGridERN13crossplatform13DeviceContextE">
+<span id="_CPPv3N5simul7terrain22WaterWaveletsSimulator18ResetAmplitudeGridERN13crossplatform13DeviceContextE"></span><span id="_CPPv2N5simul7terrain22WaterWaveletsSimulator18ResetAmplitudeGridERN13crossplatform13DeviceContextE"></span><span id="simul::terrain::WaterWaveletsSimulator::ResetAmplitudeGrid__crossplatform::DeviceContextR"></span><span class="target" id="classsimul_1_1terrain_1_1_water_wavelets_simulator_1a9c538d3caa01c28b80f6b649c3e6347e"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ResetAmplitudeGrid</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">DeviceContext</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">deviceContext</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain22WaterWaveletsSimulator18ResetAmplitudeGridERN13crossplatform13DeviceContextE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Clear the wave amplitude grid of the target wave grid. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain22WaterWaveletsSimulator19UpdateAmplitudeGridERN13crossplatform13DeviceContextEfP4vec4P4vec44vec34vec2">
+<span id="_CPPv3N5simul7terrain22WaterWaveletsSimulator19UpdateAmplitudeGridERN13crossplatform13DeviceContextEfP4vec4P4vec44vec34vec2"></span><span id="_CPPv2N5simul7terrain22WaterWaveletsSimulator19UpdateAmplitudeGridERN13crossplatform13DeviceContextEfP4vec4P4vec44vec34vec2"></span><span id="simul::terrain::WaterWaveletsSimulator::UpdateAmplitudeGrid__crossplatform::DeviceContextR.float.vec4P.vec4P.vec3.vec2"></span><span class="target" id="classsimul_1_1terrain_1_1_water_wavelets_simulator_1a9ce5000c7855f11d443148492dad74ee"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">UpdateAmplitudeGrid</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">DeviceContext</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">deviceContext</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">real_time_seconds</span></span>, <span class="n"><span class="pre">vec4</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">waterProbePositions</span></span>, <span class="n"><span class="pre">vec4</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">waterProbeVelocities</span></span>, <span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">centre</span></span>, <span class="n"><span class="pre">vec2</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">camPos</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain22WaterWaveletsSimulator19UpdateAmplitudeGridERN13crossplatform13DeviceContextEfP4vec4P4vec44vec34vec2" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Update the wave amplitude grid of the target wave grid. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain22WaterWaveletsSimulator24PrecomputeProfileBuffersERN13crossplatform21GraphicsDeviceContextEP8WaveGridfP16localWaterValues">
+<span id="_CPPv3N5simul7terrain22WaterWaveletsSimulator24PrecomputeProfileBuffersERN13crossplatform21GraphicsDeviceContextEP8WaveGridfP16localWaterValues"></span><span id="_CPPv2N5simul7terrain22WaterWaveletsSimulator24PrecomputeProfileBuffersERN13crossplatform21GraphicsDeviceContextEP8WaveGridfP16localWaterValues"></span><span id="simul::terrain::WaterWaveletsSimulator::PrecomputeProfileBuffers__crossplatform::GraphicsDeviceContextR.WaveGridP.float.localWaterValuesP"></span><span class="target" id="classsimul_1_1terrain_1_1_water_wavelets_simulator_1afbd572aea6b486497313703c392dae89"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PrecomputeProfileBuffers</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">GraphicsDeviceContext</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">deviceContext</span></span>, <a class="reference internal" href="#_CPPv4N5simul7terrain8WaveGridE" title="simul::terrain::WaveGrid"><span class="n"><span class="pre">WaveGrid</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">targetWaveGrid</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">real_time_seconds</span></span>, <a class="reference internal" href="#_CPPv4N5simul7terrain16localWaterValuesE" title="simul::terrain::localWaterValues"><span class="n"><span class="pre">localWaterValues</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">waterValues</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain22WaterWaveletsSimulator24PrecomputeProfileBuffersERN13crossplatform21GraphicsDeviceContextEP8WaveGridfP16localWaterValues" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Precompute the profile buffers of a given wave grid. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain22WaterWaveletsSimulator20PrecomputeWaveSpeedsERN13crossplatform13DeviceContextE">
+<span id="_CPPv3N5simul7terrain22WaterWaveletsSimulator20PrecomputeWaveSpeedsERN13crossplatform13DeviceContextE"></span><span id="_CPPv2N5simul7terrain22WaterWaveletsSimulator20PrecomputeWaveSpeedsERN13crossplatform13DeviceContextE"></span><span id="simul::terrain::WaterWaveletsSimulator::PrecomputeWaveSpeeds__crossplatform::DeviceContextR"></span><span class="target" id="classsimul_1_1terrain_1_1_water_wavelets_simulator_1ad39d7247d411a6e078e9453e1cb3b42e"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PrecomputeWaveSpeeds</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">DeviceContext</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">deviceContext</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain22WaterWaveletsSimulator20PrecomputeWaveSpeedsERN13crossplatform13DeviceContextE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Precompute the wave speeds of the target wave grid. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain22WaterWaveletsSimulator13getContourMapEv">
+<span id="_CPPv3N5simul7terrain22WaterWaveletsSimulator13getContourMapEv"></span><span id="_CPPv2N5simul7terrain22WaterWaveletsSimulator13getContourMapEv"></span><span id="simul::terrain::WaterWaveletsSimulator::getContourMap"></span><span class="target" id="classsimul_1_1terrain_1_1_water_wavelets_simulator_1a5c82e6e43b7c8b7babab49be2b908719"></span><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Texture</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">getContourMap</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain22WaterWaveletsSimulator13getContourMapEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get a pointer to the contour map. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain22WaterWaveletsSimulator20getBaseFlowRayBufferEv">
+<span id="_CPPv3N5simul7terrain22WaterWaveletsSimulator20getBaseFlowRayBufferEv"></span><span id="_CPPv2N5simul7terrain22WaterWaveletsSimulator20getBaseFlowRayBufferEv"></span><span id="simul::terrain::WaterWaveletsSimulator::getBaseFlowRayBuffer"></span><span class="target" id="classsimul_1_1terrain_1_1_water_wavelets_simulator_1ae365a7773e140c509074805819d56cab"></span><span class="n"><span class="pre">surfaceFlowRayBuffer</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">getBaseFlowRayBuffer</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain22WaterWaveletsSimulator20getBaseFlowRayBufferEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get a pointer to the base flow ray buffer. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain22WaterWaveletsSimulator19getSubFlowRayBufferEv">
+<span id="_CPPv3N5simul7terrain22WaterWaveletsSimulator19getSubFlowRayBufferEv"></span><span id="_CPPv2N5simul7terrain22WaterWaveletsSimulator19getSubFlowRayBufferEv"></span><span id="simul::terrain::WaterWaveletsSimulator::getSubFlowRayBuffer"></span><span class="target" id="classsimul_1_1terrain_1_1_water_wavelets_simulator_1a032d80869a7dad27576ccdfffcc4264c"></span><span class="n"><span class="pre">surfaceFlowRayBuffer</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">getSubFlowRayBuffer</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain22WaterWaveletsSimulator19getSubFlowRayBufferEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get a pointer to the sub flow ray buffer. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain22WaterWaveletsSimulator18GenerateContourMapERN13crossplatform21GraphicsDeviceContextEPN5simul7terrain12shoreTextureEf">
+<span id="_CPPv3N5simul7terrain22WaterWaveletsSimulator18GenerateContourMapERN13crossplatform21GraphicsDeviceContextEPN5simul7terrain12shoreTextureEf"></span><span id="_CPPv2N5simul7terrain22WaterWaveletsSimulator18GenerateContourMapERN13crossplatform21GraphicsDeviceContextEPN5simul7terrain12shoreTextureEf"></span><span id="simul::terrain::WaterWaveletsSimulator::GenerateContourMap__crossplatform::GraphicsDeviceContextR.simul::terrain::shoreTextureP.float"></span><span class="target" id="classsimul_1_1terrain_1_1_water_wavelets_simulator_1a10d178625b533804bc386261c89e5671"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GenerateContourMap</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">GraphicsDeviceContext</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">deviceContext</span></span>, <span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">terrain</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">shoreTexture</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">shoreDepth</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">oceanHeight</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain22WaterWaveletsSimulator18GenerateContourMapERN13crossplatform21GraphicsDeviceContextEPN5simul7terrain12shoreTextureEf" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Generate a contour map that stores the normal of the shore surface. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain22WaterWaveletsSimulator19GenerateSurfaceFlowERN13crossplatform13DeviceContextEP8WaveGrid">
+<span id="_CPPv3N5simul7terrain22WaterWaveletsSimulator19GenerateSurfaceFlowERN13crossplatform13DeviceContextEP8WaveGrid"></span><span id="_CPPv2N5simul7terrain22WaterWaveletsSimulator19GenerateSurfaceFlowERN13crossplatform13DeviceContextEP8WaveGrid"></span><span id="simul::terrain::WaterWaveletsSimulator::GenerateSurfaceFlow__crossplatform::DeviceContextR.WaveGridP"></span><span class="target" id="classsimul_1_1terrain_1_1_water_wavelets_simulator_1a234e5236840d5869181bae9626281946"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GenerateSurfaceFlow</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">DeviceContext</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">deviceContext</span></span>, <a class="reference internal" href="#_CPPv4N5simul7terrain8WaveGridE" title="simul::terrain::WaveGrid"><span class="n"><span class="pre">WaveGrid</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">surfaceFlowGrid</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain22WaterWaveletsSimulator19GenerateSurfaceFlowERN13crossplatform13DeviceContextEP8WaveGrid" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Calculate the path of the flow rays. </p>
+</dd></dl>
+
 </div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenstruct: Cannot find class “simul::terrain::globalWaterValues” in doxygen xml output for project “Simul” from directory: D:/Jarvis/Documentation/build/Docs/doxygen/xml</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenstruct: Cannot find class “simul::terrain::localWaterValues” in doxygen xml output for project “Simul” from directory: D:/Jarvis/Documentation/build/Docs/doxygen/xml</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenstruct: Cannot find class “simul::terrain::WaveGrid” in doxygen xml output for project “Simul” from directory: D:/Jarvis/Documentation/build/Docs/doxygen/xml</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenstruct: Cannot find class “simul::terrain::boundlessOceanProperties” in doxygen xml output for project “Simul” from directory: D:/Jarvis/Documentation/build/Docs/doxygen/xml</p>
-</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain17globalWaterValuesE">
+<span id="_CPPv3N5simul7terrain17globalWaterValuesE"></span><span id="_CPPv2N5simul7terrain17globalWaterValuesE"></span><span id="simul::terrain::globalWaterValues"></span><span class="target" id="structsimul_1_1terrain_1_1global_water_values"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">globalWaterValues</span></span></span><a class="headerlink" href="#_CPPv4N5simul7terrain17globalWaterValuesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Struct for holding Global water values that affect all water objects and the boundless ocean. </p>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain16localWaterValuesE">
+<span id="_CPPv3N5simul7terrain16localWaterValuesE"></span><span id="_CPPv2N5simul7terrain16localWaterValuesE"></span><span id="simul::terrain::localWaterValues"></span><span class="target" id="structsimul_1_1terrain_1_1local_water_values"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">localWaterValues</span></span></span><a class="headerlink" href="#_CPPv4N5simul7terrain16localWaterValuesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Struct for holding values for individual water objects and the boundless ocean. </p>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain8WaveGridE">
+<span id="_CPPv3N5simul7terrain8WaveGridE"></span><span id="_CPPv2N5simul7terrain8WaveGridE"></span><span id="simul::terrain::WaveGrid"></span><span class="target" id="structsimul_1_1terrain_1_1_wave_grid"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">WaveGrid</span></span></span><a class="headerlink" href="#_CPPv4N5simul7terrain8WaveGridE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Struct for defining a wavegrid. </p>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain24boundlessOceanPropertiesE">
+<span id="_CPPv3N5simul7terrain24boundlessOceanPropertiesE"></span><span id="_CPPv2N5simul7terrain24boundlessOceanPropertiesE"></span><span id="simul::terrain::boundlessOceanProperties"></span><span class="target" id="structsimul_1_1terrain_1_1boundless_ocean_properties"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">boundlessOceanProperties</span></span></span><a class="headerlink" href="#_CPPv4N5simul7terrain24boundlessOceanPropertiesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Struct for holding the Boundless Ocean properties. </p>
+</dd></dl>
+
 </div>
 
 

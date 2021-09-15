@@ -209,10 +209,109 @@
             
   <div class="section" id="two-res-frambuffer">
 <h1>Two Res Frambuffer<a class="headerlink" href="#two-res-frambuffer" title="Permalink to this headline">¶</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find class “simul::clouds::TwoResFramebuffer” in doxygen xml output for project “Simul” from directory: D:/Jarvis/Documentation/build/Docs/doxygen/xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds17TwoResFramebufferE">
+<span id="_CPPv3N5simul6clouds17TwoResFramebufferE"></span><span id="_CPPv2N5simul6clouds17TwoResFramebufferE"></span><span id="simul::clouds::TwoResFramebuffer"></span><span class="target" id="classsimul_1_1clouds_1_1_two_res_framebuffer"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">clouds</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">TwoResFramebuffer</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds17TwoResFramebufferE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A framebuffer class for mixed-resolution rendering. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds17TwoResFramebuffer20RestoreDeviceObjectsEPN13crossplatform14RenderPlatformE">
+<span id="_CPPv3N5simul6clouds17TwoResFramebuffer20RestoreDeviceObjectsEPN13crossplatform14RenderPlatformE"></span><span id="_CPPv2N5simul6clouds17TwoResFramebuffer20RestoreDeviceObjectsEPN13crossplatform14RenderPlatformE"></span><span id="simul::clouds::TwoResFramebuffer::RestoreDeviceObjects__crossplatform::RenderPlatformP"></span><span class="target" id="classsimul_1_1clouds_1_1_two_res_framebuffer_1a72267549ca8276808d7bcb6ecc88888a"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RestoreDeviceObjects</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">RenderPlatform</span></span><span class="p"><span class="pre">*</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds17TwoResFramebuffer20RestoreDeviceObjectsEPN13crossplatform14RenderPlatformE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Platform-dependent function called when initializing the framebuffer. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds17TwoResFramebuffer23InvalidateDeviceObjectsEv">
+<span id="_CPPv3N5simul6clouds17TwoResFramebuffer23InvalidateDeviceObjectsEv"></span><span id="_CPPv2N5simul6clouds17TwoResFramebuffer23InvalidateDeviceObjectsEv"></span><span id="simul::clouds::TwoResFramebuffer::InvalidateDeviceObjects"></span><span class="target" id="classsimul_1_1clouds_1_1_two_res_framebuffer_1ad6b38619fbf63eba614922b1811a949a"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">InvalidateDeviceObjects</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds17TwoResFramebuffer23InvalidateDeviceObjectsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Platform-dependent function called when uninitializing the water framebuffer. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds17TwoResFramebuffer13SetProjectionEPKf">
+<span id="_CPPv3N5simul6clouds17TwoResFramebuffer13SetProjectionEPKf"></span><span id="_CPPv2N5simul6clouds17TwoResFramebuffer13SetProjectionEPKf"></span><span id="simul::clouds::TwoResFramebuffer::SetProjection__floatCP"></span><span class="target" id="classsimul_1_1clouds_1_1_two_res_framebuffer_1a12fef20f6046b76acd3702026ed000d2"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetProjection</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">p</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds17TwoResFramebuffer13SetProjectionEPKf" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Assign the current frame’s projection matrix for this buffer. Just for debugging. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds17TwoResFramebuffer19SetCubeFrustumRangeEi4vec4">
+<span id="_CPPv3N5simul6clouds17TwoResFramebuffer19SetCubeFrustumRangeEi4vec4"></span><span id="_CPPv2N5simul6clouds17TwoResFramebuffer19SetCubeFrustumRangeEi4vec4"></span><span id="simul::clouds::TwoResFramebuffer::SetCubeFrustumRange__i.vec4"></span><span class="target" id="classsimul_1_1clouds_1_1_two_res_framebuffer_1a970018c38a2c693987fd575a7f39297c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetCubeFrustumRange</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">i</span></span>, <span class="n"><span class="pre">vec4</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">r</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds17TwoResFramebuffer19SetCubeFrustumRangeEi4vec4" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set the range of the cubemap that’s in the current frustum. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds17TwoResFramebuffer26GetCubeIntegerFrustumRangeEi">
+<span id="_CPPv3NK5simul6clouds17TwoResFramebuffer26GetCubeIntegerFrustumRangeEi"></span><span id="_CPPv2NK5simul6clouds17TwoResFramebuffer26GetCubeIntegerFrustumRangeEi"></span><span id="simul::clouds::TwoResFramebuffer::GetCubeIntegerFrustumRange__iC"></span><span class="target" id="classsimul_1_1clouds_1_1_two_res_framebuffer_1a0d7499ca03e92fc459c046368e0b6515"></span><span class="n"><span class="pre">uint4</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetCubeIntegerFrustumRange</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">i</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds17TwoResFramebuffer26GetCubeIntegerFrustumRangeEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the range in terms of the buffer size as integers. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds17TwoResFramebuffer15DeactivateDepthERN13crossplatform21GraphicsDeviceContextE">
+<span id="_CPPv3N5simul6clouds17TwoResFramebuffer15DeactivateDepthERN13crossplatform21GraphicsDeviceContextE"></span><span id="_CPPv2N5simul6clouds17TwoResFramebuffer15DeactivateDepthERN13crossplatform21GraphicsDeviceContextE"></span><span id="simul::clouds::TwoResFramebuffer::DeactivateDepth__crossplatform::GraphicsDeviceContextR"></span><span class="target" id="classsimul_1_1clouds_1_1_two_res_framebuffer_1ad90f88f179d89c5b205e07674a77e494"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DeactivateDepth</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">GraphicsDeviceContext</span></span><span class="p"><span class="pre">&amp;</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds17TwoResFramebuffer15DeactivateDepthERN13crossplatform21GraphicsDeviceContextE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Deactivate the depth buffer. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds17TwoResFramebuffer13CompleteFrameEx">
+<span id="_CPPv3N5simul6clouds17TwoResFramebuffer13CompleteFrameEx"></span><span id="_CPPv2N5simul6clouds17TwoResFramebuffer13CompleteFrameEx"></span><span id="simul::clouds::TwoResFramebuffer::CompleteFrame__l-l"></span><span class="target" id="classsimul_1_1clouds_1_1_two_res_framebuffer_1a5c14970d2b59f546d2deab4e81d4724d"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CompleteFrame</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">long</span> <span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">framenumber</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds17TwoResFramebuffer13CompleteFrameEx" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>This must be called to ensure that the amortization struct is up to date. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds17TwoResFramebuffer18RenderDepthBuffersERN13crossplatform21GraphicsDeviceContextEPN13crossplatform7TextureEPKN13crossplatform8ViewportEiiii">
+<span id="_CPPv3N5simul6clouds17TwoResFramebuffer18RenderDepthBuffersERN13crossplatform21GraphicsDeviceContextEPN13crossplatform7TextureEPKN13crossplatform8ViewportEiiii"></span><span id="_CPPv2N5simul6clouds17TwoResFramebuffer18RenderDepthBuffersERN13crossplatform21GraphicsDeviceContextEPN13crossplatform7TextureEPKN13crossplatform8ViewportEiiii"></span><span id="simul::clouds::TwoResFramebuffer::RenderDepthBuffers__crossplatform::GraphicsDeviceContextR.crossplatform::TextureP.crossplatform::ViewportCP.i.i.i.i"></span><span class="target" id="classsimul_1_1clouds_1_1_two_res_framebuffer_1a88f530f8fd0d1411889f2628d80f6205"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RenderDepthBuffers</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">GraphicsDeviceContext</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">deviceContext</span></span>, <span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Texture</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">depthTexture</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Viewport</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">viewport</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x0</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">y0</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">dx</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">dy</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds17TwoResFramebuffer18RenderDepthBuffersERN13crossplatform21GraphicsDeviceContextEPN13crossplatform7TextureEPKN13crossplatform8ViewportEiiii" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Debugging onscreen info:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>deviceContext</strong> – <strong>[inout]</strong> Context for the device. </p></li>
+<li><p><strong>depthTexture</strong> – The main depth texture. </p></li>
+<li><p><strong>viewport</strong> – The viewport in use for the depth texture. </p></li>
+<li><p><strong>x0</strong> – The left edge of area to use for the debug display. </p></li>
+<li><p><strong>y0</strong> – The top of this debug display. </p></li>
+<li><p><strong>dx</strong> – The width of the display. </p></li>
+<li><p><strong>dy</strong> – The height of the display. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds17TwoResFramebuffer17UpdatePixelOffsetERKN13crossplatform10ViewStructE">
+<span id="_CPPv3N5simul6clouds17TwoResFramebuffer17UpdatePixelOffsetERKN13crossplatform10ViewStructE"></span><span id="_CPPv2N5simul6clouds17TwoResFramebuffer17UpdatePixelOffsetERKN13crossplatform10ViewStructE"></span><span id="simul::clouds::TwoResFramebuffer::UpdatePixelOffset__crossplatform::ViewStructCR"></span><span class="target" id="classsimul_1_1clouds_1_1_two_res_framebuffer_1a347e6a0037ffaa74c9c7aaad3c85bfba"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">UpdatePixelOffset</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ViewStruct</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">viewStruct</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds17TwoResFramebuffer17UpdatePixelOffsetERKN13crossplatform10ViewStructE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Update the pixel offset for the specified view. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds17TwoResFramebuffer4SwapEv">
+<span id="_CPPv3N5simul6clouds17TwoResFramebuffer4SwapEv"></span><span id="_CPPv2N5simul6clouds17TwoResFramebuffer4SwapEv"></span><span id="simul::clouds::TwoResFramebuffer::Swap"></span><span class="target" id="classsimul_1_1clouds_1_1_two_res_framebuffer_1a425e73f5c9768eff39606c238980581c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Swap</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds17TwoResFramebuffer4SwapEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Swap stochastic texture buffers. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds17TwoResFramebuffer25GetStochasticDepthTextureEi">
+<span id="_CPPv3N5simul6clouds17TwoResFramebuffer25GetStochasticDepthTextureEi"></span><span id="_CPPv2N5simul6clouds17TwoResFramebuffer25GetStochasticDepthTextureEi"></span><span id="simul::clouds::TwoResFramebuffer::GetStochasticDepthTexture__i"></span><span class="target" id="classsimul_1_1clouds_1_1_two_res_framebuffer_1a174315df1e5c581c01b36b2686a9dfe7"></span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Texture</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">GetStochasticDepthTexture</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">idx</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="o"><span class="pre">-</span></span><span class="m"><span class="pre">1</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds17TwoResFramebuffer25GetStochasticDepthTextureEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns the low-res depth texture. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds17TwoResFramebuffer16GetUpdateTextureEi">
+<span id="_CPPv3N5simul6clouds17TwoResFramebuffer16GetUpdateTextureEi"></span><span id="_CPPv2N5simul6clouds17TwoResFramebuffer16GetUpdateTextureEi"></span><span id="simul::clouds::TwoResFramebuffer::GetUpdateTexture__i"></span><span class="target" id="classsimul_1_1clouds_1_1_two_res_framebuffer_1a13174306136be20f0e816a0cc1ec7dc3"></span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Texture</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">GetUpdateTexture</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">idx</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds17TwoResFramebuffer16GetUpdateTextureEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A texture that shows what texels are up to date. Where the value is zero, we should fill all the values. </p>
+</dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds17TwoResFramebuffer11pixelOffsetE">
+<span id="_CPPv3N5simul6clouds17TwoResFramebuffer11pixelOffsetE"></span><span id="_CPPv2N5simul6clouds17TwoResFramebuffer11pixelOffsetE"></span><span id="simul::clouds::TwoResFramebuffer::pixelOffset__vec2"></span><span class="target" id="classsimul_1_1clouds_1_1_two_res_framebuffer_1aa4c7455d2b00de55cb4f16b982bc955a"></span><span class="n"><span class="pre">vec2</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pixelOffset</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds17TwoResFramebuffer11pixelOffsetE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Offset in pixels from top-left of the low-res view to top-left of the full-res. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </div>
 
 

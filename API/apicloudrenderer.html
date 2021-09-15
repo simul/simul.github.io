@@ -185,10 +185,30 @@
             
   <div class="section" id="cloud-renderer">
 <h1>Cloud Renderer<a class="headerlink" href="#cloud-renderer" title="Permalink to this headline">¶</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find class “simul::clouds::CloudRenderer” in doxygen xml output for project “Simul” from directory: D:/Jarvis/Documentation/build/Docs/doxygen/xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudRendererE">
+<span id="_CPPv3N5simul6clouds13CloudRendererE"></span><span id="_CPPv2N5simul6clouds13CloudRendererE"></span><span id="simul::clouds::CloudRenderer"></span><span class="target" id="classsimul_1_1clouds_1_1_cloud_renderer"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">clouds</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">CloudRenderer</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds13CloudRendererE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Class for real-time volumetric cloud rendering.</p>
+<p>There should exist a “trueSKY space”, where the origin(0,0,0 Cartesian) is at global mean sea level, and an arbitrary point on the Earth’s surface. The Z axis points up, the X and Y axes are arbitrary (for reasons described below). To avoid singularities, this point, and the orientation of its axes should be represented by a double-precision quaternion, which represents the rotation from (say) latitude and longitude zero with X pointing East and Y pointing North.</p>
+<p>The Volume Window is a deformed cuboid, its upper and lower surfaces matching the Earth’s curvature. On the GPU, it is a 3D texture.</p>
+<p>This trueSKY space moves in steps equivalent to one horizontal texel. The function CloudRenderer::MoveCloudWindow(x,y) does this. This should be done when the chosen viewpoint (this is up to you) moves more than a texel in any horizontal direction. This way, we need only update the edges as the window moves. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudRenderer24GetCloudRenderingOptionsEv">
+<span id="_CPPv3N5simul6clouds13CloudRenderer24GetCloudRenderingOptionsEv"></span><span id="_CPPv2N5simul6clouds13CloudRenderer24GetCloudRenderingOptionsEv"></span><span id="simul::clouds::CloudRenderer::GetCloudRenderingOptions"></span><span class="target" id="classsimul_1_1clouds_1_1_cloud_renderer_1ae61fa7c09cbfd245cd9561c1082911eb"></span><a class="reference internal" href="../Reference/Clouds/cloudrenderingoptions.html#_CPPv4N5simul6clouds21CloudRenderingOptionsE" title="simul::clouds::CloudRenderingOptions"><span class="n"><span class="pre">CloudRenderingOptions</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">GetCloudRenderingOptions</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds13CloudRenderer24GetCloudRenderingOptionsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get a pointer to the current cloud rendering options. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudRenderer24SetCloudRenderingOptionsERK21CloudRenderingOptions">
+<span id="_CPPv3N5simul6clouds13CloudRenderer24SetCloudRenderingOptionsERK21CloudRenderingOptions"></span><span id="_CPPv2N5simul6clouds13CloudRenderer24SetCloudRenderingOptionsERK21CloudRenderingOptions"></span><span id="simul::clouds::CloudRenderer::SetCloudRenderingOptions__CloudRenderingOptionsCR"></span><span class="target" id="classsimul_1_1clouds_1_1_cloud_renderer_1a38375697ec35b23a2ccd0fe9719f34d9"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetCloudRenderingOptions</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../Reference/Clouds/cloudrenderingoptions.html#_CPPv4N5simul6clouds21CloudRenderingOptionsE" title="simul::clouds::CloudRenderingOptions"><span class="n"><span class="pre">CloudRenderingOptions</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">c</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds13CloudRenderer24SetCloudRenderingOptionsERK21CloudRenderingOptions" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set new cloud rendering options. </p>
+</dd></dl>
+
 </div>
+</dd></dl>
+
 </div>
 
 

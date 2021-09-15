@@ -185,10 +185,88 @@
             
   <div class="section" id="sky-keyframe">
 <h1>Sky Keyframe<a class="headerlink" href="#sky-keyframe" title="Permalink to this headline">¶</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenstruct: Cannot find class “simul::sky::SkyKeyframe” in doxygen xml output for project “Simul” from directory: D:/Jarvis/Documentation/build/Docs/doxygen/xml</p>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky11SkyKeyframeE">
+<span id="_CPPv3N5simul3sky11SkyKeyframeE"></span><span id="_CPPv2N5simul3sky11SkyKeyframeE"></span><span id="simul::sky::SkyKeyframe"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">SkyKeyframe</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">BaseKeyframe</span></span><a class="headerlink" href="#_CPPv4N5simul3sky11SkyKeyframeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The keyframe structure for <a class="reference internal" href="../Reference/Sky/skykeyframer.html#classsimul_1_1sky_1_1_sky_keyframer"><span class="std std-ref">simul::sky::SkyKeyframer</span></a>. </p>
+<p>The properties of any sky keyframe can be changed at any time. However, only HazeEccentricity can be changed for an in-use keyframe without triggering a recalculation of the colour tables. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky11SkyKeyframe7daytimeE">
+<span id="_CPPv3N5simul3sky11SkyKeyframe7daytimeE"></span><span id="_CPPv2N5simul3sky11SkyKeyframe7daytimeE"></span><span id="simul::sky::SkyKeyframe::daytime__float"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1aa2e71e97bce93e87dbe95180c23abe46"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">daytime</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky11SkyKeyframe7daytimeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The time this keyframe represents, in a floating-point number of days from the starting midnight of the sequence. If simul::sky::SkyKeyframer::SetLinkKeyframeTimeAndDaytime is true, this is not used. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky11SkyKeyframe3MieE">
+<span id="_CPPv3N5simul3sky11SkyKeyframe3MieE"></span><span id="_CPPv2N5simul3sky11SkyKeyframe3MieE"></span><span id="simul::sky::SkyKeyframe::Mie__float4"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1a4aea4d3416012349f0358ba4799a51d4"></span><span class="k"><span class="pre">mutable</span></span><span class="w"> </span><span class="n"><span class="pre">float4</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Mie</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky11SkyKeyframe3MieE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The Mie scattering coefficients (x=red,y=green,z=blue). Mutable because of AutoMie. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky11SkyKeyframe4HazeE">
+<span id="_CPPv3N5simul3sky11SkyKeyframe4HazeE"></span><span id="_CPPv2N5simul3sky11SkyKeyframe4HazeE"></span><span id="simul::sky::SkyKeyframe::Haze__float"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1a419234a7ced35b650c4d141a53e0063f"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Haze</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky11SkyKeyframe4HazeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The amount of haze, mist or fog. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky11SkyKeyframe10HazeBaseKmE">
+<span id="_CPPv3N5simul3sky11SkyKeyframe10HazeBaseKmE"></span><span id="_CPPv2N5simul3sky11SkyKeyframe10HazeBaseKmE"></span><span id="simul::sky::SkyKeyframe::HazeBaseKm__float"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1aa88b3f13c9ab9cd2cce0feaa6024be1a"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">HazeBaseKm</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky11SkyKeyframe10HazeBaseKmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The base altitude, above which haze starts to decrease in density. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky11SkyKeyframe11HazeScaleKmE">
+<span id="_CPPv3N5simul3sky11SkyKeyframe11HazeScaleKmE"></span><span id="_CPPv2N5simul3sky11SkyKeyframe11HazeScaleKmE"></span><span id="simul::sky::SkyKeyframe::HazeScaleKm__float"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1a0fe6944ca955e386b04fca4c258e392d"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">HazeScaleKm</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky11SkyKeyframe11HazeScaleKmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The vertical scale over which haze reduces with altitude. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky11SkyKeyframe16HazeEccentricityE">
+<span id="_CPPv3N5simul3sky11SkyKeyframe16HazeEccentricityE"></span><span id="_CPPv2N5simul3sky11SkyKeyframe16HazeEccentricityE"></span><span id="simul::sky::SkyKeyframe::HazeEccentricity__float"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1ad38f511128b7c2de3304ade39cb5b6be"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">HazeEccentricity</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky11SkyKeyframe16HazeEccentricityE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The anisotropy of Mie scattering. Can be changed without recalculating tables. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky11SkyKeyframe9GroundFogE">
+<span id="_CPPv3N5simul3sky11SkyKeyframe9GroundFogE"></span><span id="_CPPv2N5simul3sky11SkyKeyframe9GroundFogE"></span><span id="simul::sky::SkyKeyframe::GroundFog__float"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1a897d0ecbc478572ff6c30070abcae75b"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GroundFog</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky11SkyKeyframe9GroundFogE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Thick ground fog. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky11SkyKeyframe12FogCeilingKmE">
+<span id="_CPPv3N5simul3sky11SkyKeyframe12FogCeilingKmE"></span><span id="_CPPv2N5simul3sky11SkyKeyframe12FogCeilingKmE"></span><span id="simul::sky::SkyKeyframe::FogCeilingKm__float"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1a51e1d14766062cd968f10b23c65025b4"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">FogCeilingKm</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky11SkyKeyframe12FogCeilingKmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Upper limit of ground fog. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky11SkyKeyframe20SeaLevelTemperatureKE">
+<span id="_CPPv3N5simul3sky11SkyKeyframe20SeaLevelTemperatureKE"></span><span id="_CPPv2N5simul3sky11SkyKeyframe20SeaLevelTemperatureKE"></span><span id="simul::sky::SkyKeyframe::SeaLevelTemperatureK__float"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1add48aae5d32ba2f52a7c0be072cb1eac"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SeaLevelTemperatureK</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky11SkyKeyframe20SeaLevelTemperatureKE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Temperature at sealevel, in kelvins - mainly relevant to infra-red. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky11SkyKeyframe14StoreAsColoursE">
+<span id="_CPPv3N5simul3sky11SkyKeyframe14StoreAsColoursE"></span><span id="_CPPv2N5simul3sky11SkyKeyframe14StoreAsColoursE"></span><span id="simul::sky::SkyKeyframe::StoreAsColours__float"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1a4390fc48442fa98529b7cd0ec7367b72"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">StoreAsColours</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky11SkyKeyframe14StoreAsColoursE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>If true, the keyframe is stored as a colour table, rather than generating its colours from its properties. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky11SkyKeyframe7AutoMieE">
+<span id="_CPPv3N5simul3sky11SkyKeyframe7AutoMieE"></span><span id="_CPPv2N5simul3sky11SkyKeyframe7AutoMieE"></span><span id="simul::sky::SkyKeyframe::AutoMie__b"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1aa9b008521ddd014a04a11f68e573f728"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">AutoMie</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky11SkyKeyframe7AutoMieE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether to recalculate the Mie coefficients based on the haze at this keyframe. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky11SkyKeyframe20automaticSunPositionE">
+<span id="_CPPv3N5simul3sky11SkyKeyframe20automaticSunPositionE"></span><span id="_CPPv2N5simul3sky11SkyKeyframe20automaticSunPositionE"></span><span id="simul::sky::SkyKeyframe::automaticSunPosition__b"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1a43c06a2a0139666abae0a6a595535345"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">automaticSunPosition</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky11SkyKeyframe20automaticSunPositionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether to calculate the sun position from the date and time. </p>
+</dd></dl>
+
 </div>
+</dd></dl>
+
 </div>
 
 

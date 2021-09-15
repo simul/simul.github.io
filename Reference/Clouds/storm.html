@@ -209,10 +209,228 @@
             
   <div class="section" id="storm">
 <h1>Storm<a class="headerlink" href="#storm" title="Permalink to this headline">¶</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenstruct: Cannot find class “simul::clouds::Storm” in doxygen xml output for project “Simul” from directory: D:/Jarvis/Documentation/build/Docs/doxygen/xml</p>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5StormE">
+<span id="_CPPv3N5simul6clouds5StormE"></span><span id="_CPPv2N5simul6clouds5StormE"></span><span id="simul::clouds::Storm"></span><span class="target" id="structsimul_1_1clouds_1_1_storm"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">clouds</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">Storm</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds5StormE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A structure representing a thunderstorm. See <a class="reference internal" href="cloudkeyframer.html#classsimul_1_1clouds_1_1_cloud_keyframer_1aa923d784775c183176c4ad624ad9ca45"><span class="std std-ref">CloudKeyframer::AddStorm</span></a>. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds5Storm9GetStrikeEi">
+<span id="_CPPv3NK5simul6clouds5Storm9GetStrikeEi"></span><span id="_CPPv2NK5simul6clouds5Storm9GetStrikeEi"></span><span id="simul::clouds::Storm::GetStrike__iC"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1ad1f3420fd855871b32d1b7fcb8052989"></span><a class="reference internal" href="lightningrenderinterfacestructs.html#_CPPv4N5simul6clouds6StrikeE" title="simul::clouds::Strike"><span class="n"><span class="pre">Strike</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetStrike</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">i</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds5Storm9GetStrikeEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Return the currently active strike, or return a default strike. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm11SpawnStrikeEf4vec34vec3f4vec3bff">
+<span id="_CPPv3N5simul6clouds5Storm11SpawnStrikeEf4vec34vec3f4vec3bff"></span><span id="_CPPv2N5simul6clouds5Storm11SpawnStrikeEf4vec34vec3f4vec3bff"></span><span id="simul::clouds::Storm::SpawnStrike__float.vec3.vec3.float.vec3.b.float.float"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1a4cf75653c60e192df352c737a7b1a4d6"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SpawnStrike</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">time</span></span>, <span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">startpos</span></span>, <span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">endpos</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">magnitude</span></span>, <span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">colour</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">sh</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">dur</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">leader_dur</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm11SpawnStrikeEf4vec34vec3f4vec3bff" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Spawn a strike at a certain time with the given properties. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds5Storm22GetLightningPropertiesEfffPK11CloudWindow">
+<span id="_CPPv3NK5simul6clouds5Storm22GetLightningPropertiesEfffPK11CloudWindow"></span><span id="_CPPv2NK5simul6clouds5Storm22GetLightningPropertiesEfffPK11CloudWindow"></span><span id="simul::clouds::Storm::GetLightningProperties__float.float.float.CloudWindowCPC"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1ada68ad7ab153af64707fd885ccb6168b"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="lightningrenderinterfacestructs.html#_CPPv4N5simul6clouds19LightningPropertiesE" title="simul::clouds::LightningProperties"><span class="n"><span class="pre">LightningProperties</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">GetLightningProperties</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">game_time</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">real_time</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">base_km</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="cloudwindow.html#_CPPv4N5simul6clouds11CloudWindowE" title="simul::clouds::CloudWindow"><span class="n"><span class="pre">CloudWindow</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">w</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds5Storm22GetLightningPropertiesEfffPK11CloudWindow" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the properties of the currently active lightning strike. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds5Storm18GetTotalNumStrikesEv">
+<span id="_CPPv3NK5simul6clouds5Storm18GetTotalNumStrikesEv"></span><span id="_CPPv2NK5simul6clouds5Storm18GetTotalNumStrikesEv"></span><span id="simul::clouds::Storm::GetTotalNumStrikesC"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1a1353ddb1544ebae4c1796c4efeb2b254"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetTotalNumStrikes</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds5Storm18GetTotalNumStrikesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the approximate number of strikes that are generated over a day with the current settings. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds5Storm8HasFloatEPKc">
+<span id="_CPPv3NK5simul6clouds5Storm8HasFloatEPKc"></span><span id="_CPPv2NK5simul6clouds5Storm8HasFloatEPKc"></span><span id="simul::clouds::Storm::HasFloat__cCPC"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1a4113db69cfef6f0125db85903fa7f632"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">HasFloat</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds5Storm8HasFloatEPKc" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns true if the keyframe has the named property. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds5Storm6HasIntEPKc">
+<span id="_CPPv3NK5simul6clouds5Storm6HasIntEPKc"></span><span id="_CPPv2NK5simul6clouds5Storm6HasIntEPKc"></span><span id="simul::clouds::Storm::HasInt__cCPC"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1aa048fb212d81350c1926cb78fcf731cf"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">HasInt</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds5Storm6HasIntEPKc" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns true if the keyframe type has the named integer property. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds5Storm8GetFloatEPKc">
+<span id="_CPPv3NK5simul6clouds5Storm8GetFloatEPKc"></span><span id="_CPPv2NK5simul6clouds5Storm8GetFloatEPKc"></span><span id="simul::clouds::Storm::GetFloat__cCPC"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1a844200c82c228ce588c2639c786646ad"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetFloat</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds5Storm8GetFloatEPKc" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns the named property - see <a class="reference internal" href="#structsimul_1_1clouds_1_1_storm_1a4113db69cfef6f0125db85903fa7f632"><span class="std std-ref">HasFloat()</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm8SetFloatEPKcf">
+<span id="_CPPv3N5simul6clouds5Storm8SetFloatEPKcf"></span><span id="_CPPv2N5simul6clouds5Storm8SetFloatEPKcf"></span><span id="simul::clouds::Storm::SetFloat__cCP.float"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1a4f7a701911c9259b5ace14416746b795"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetFloat</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">val</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm8SetFloatEPKcf" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set the named property - see <a class="reference internal" href="#structsimul_1_1clouds_1_1_storm_1a4113db69cfef6f0125db85903fa7f632"><span class="std std-ref">HasFloat()</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds5Storm6GetIntEPKc">
+<span id="_CPPv3NK5simul6clouds5Storm6GetIntEPKc"></span><span id="_CPPv2NK5simul6clouds5Storm6GetIntEPKc"></span><span id="simul::clouds::Storm::GetInt__cCPC"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1a977725adeef1c1ee7f69ac5d6ddb893e"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetInt</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds5Storm6GetIntEPKc" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns the named property - see <a class="reference internal" href="#structsimul_1_1clouds_1_1_storm_1aa048fb212d81350c1926cb78fcf731cf"><span class="std std-ref">HasInt()</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm6SetIntEPKci">
+<span id="_CPPv3N5simul6clouds5Storm6SetIntEPKci"></span><span id="_CPPv2N5simul6clouds5Storm6SetIntEPKci"></span><span id="simul::clouds::Storm::SetInt__cCP.i"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1ae8c585f8425b3cd30b902415f8a5d029"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetInt</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">val</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm6SetIntEPKci" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set the named property - see <a class="reference internal" href="#structsimul_1_1clouds_1_1_storm_1a4113db69cfef6f0125db85903fa7f632"><span class="std std-ref">HasFloat()</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds5Storm13GetDefaultIntEPKc">
+<span id="_CPPv3NK5simul6clouds5Storm13GetDefaultIntEPKc"></span><span id="_CPPv2NK5simul6clouds5Storm13GetDefaultIntEPKc"></span><span id="simul::clouds::Storm::GetDefaultInt__cCPC"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1a671318df42166f8b26a63f9601214dba"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetDefaultInt</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds5Storm13GetDefaultIntEPKc" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns the default for the named property - see <a class="reference internal" href="#structsimul_1_1clouds_1_1_storm_1aa048fb212d81350c1926cb78fcf731cf"><span class="std std-ref">HasInt()</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds5Storm15GetDefaultFloatEPKc">
+<span id="_CPPv3NK5simul6clouds5Storm15GetDefaultFloatEPKc"></span><span id="_CPPv2NK5simul6clouds5Storm15GetDefaultFloatEPKc"></span><span id="simul::clouds::Storm::GetDefaultFloat__cCPC"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1a4e8df85a1304ff38105496c3c582b68d"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetDefaultFloat</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds5Storm15GetDefaultFloatEPKc" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns the default for the named property - see <a class="reference internal" href="#structsimul_1_1clouds_1_1_storm_1a4113db69cfef6f0125db85903fa7f632"><span class="std std-ref">HasFloat()</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm6UpdateEff">
+<span id="_CPPv3N5simul6clouds5Storm6UpdateEff"></span><span id="_CPPv2N5simul6clouds5Storm6UpdateEff"></span><span id="simul::clouds::Storm::Update__float.float"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1adc3d1077c2d7615ee22a7d413410fcea"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Update</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">game_time</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">real_time</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm6UpdateEff" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Once per frame update to discard old strikes. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm9AddStrikeEfff">
+<span id="_CPPv3N5simul6clouds5Storm9AddStrikeEfff"></span><span id="_CPPv2N5simul6clouds5Storm9AddStrikeEfff"></span><span id="simul::clouds::Storm::AddStrike__float.float.float"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1a4c37feabb532332e09782e5186099ac2"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">AddStrike</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">cloudbase_km</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">game_time</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">real_time</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm9AddStrikeEfff" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Add the next random strike. </p>
+</dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm6originE">
+<span id="_CPPv3N5simul6clouds5Storm6originE"></span><span id="_CPPv2N5simul6clouds5Storm6originE"></span><span id="simul::clouds::Storm::origin__crossplatform::Quaterniond"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1a9916760ad913a5355ee202b177043bab"></span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Quaterniond</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">origin</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm6originE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Centre of the lightning storm. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm8radiusKmE">
+<span id="_CPPv3N5simul6clouds5Storm8radiusKmE"></span><span id="_CPPv2N5simul6clouds5Storm8radiusKmE"></span><span id="simul::clouds::Storm::radiusKm__float"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1a6da53f7ae00223d308c4fee993ed7459"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">radiusKm</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm8radiusKmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Radius of the lightning storm. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm10start_timeE">
+<span id="_CPPv3N5simul6clouds5Storm10start_timeE"></span><span id="_CPPv2N5simul6clouds5Storm10start_timeE"></span><span id="simul::clouds::Storm::start_time__float"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1a241549e4bb2fc57d39b8ebfab38cae97"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">start_time</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm10start_timeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Time the storm commences. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm8end_timeE">
+<span id="_CPPv3N5simul6clouds5Storm8end_timeE"></span><span id="_CPPv2N5simul6clouds5Storm8end_timeE"></span><span id="simul::clouds::Storm::end_time__float"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1a0148ef09cc3ea87f0398dcfb093f3797"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">end_time</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm8end_timeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Time the storm ends. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm8realTimeE">
+<span id="_CPPv3N5simul6clouds5Storm8realTimeE"></span><span id="_CPPv2N5simul6clouds5Storm8realTimeE"></span><span id="simul::clouds::Storm::realTime__b"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1ac95aee0a740558b72290304b20180d6f"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">realTime</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm8realTimeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>If true, frequency and duration of strikes are in real time, not simulation time. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm5sheetE">
+<span id="_CPPv3N5simul6clouds5Storm5sheetE"></span><span id="_CPPv2N5simul6clouds5Storm5sheetE"></span><span id="simul::clouds::Storm::sheet__float"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1acae4a14d077ab6e18dcb8d53a5ddf47e"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sheet</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm5sheetE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>What proportion of the strikes are sheet lightning as opposed to ground strikes. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm24strikeFrequencyPerSecondE">
+<span id="_CPPv3N5simul6clouds5Storm24strikeFrequencyPerSecondE"></span><span id="_CPPv2N5simul6clouds5Storm24strikeFrequencyPerSecondE"></span><span id="simul::clouds::Storm::strikeFrequencyPerSecond__float"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1ab5f0020c3a9b903ad3fff4484167bc21"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">strikeFrequencyPerSecond</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm24strikeFrequencyPerSecondE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>In simulated seconds - not necessarily realtime. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm21strikeDurationSecondsE">
+<span id="_CPPv3N5simul6clouds5Storm21strikeDurationSecondsE"></span><span id="_CPPv2N5simul6clouds5Storm21strikeDurationSecondsE"></span><span id="simul::clouds::Storm::strikeDurationSeconds__float"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1a922b071487c82a5744308a7f21b00dba"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">strikeDurationSeconds</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm21strikeDurationSecondsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>How long, in simulated seconds - not realtime - each strike should last. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm21strikeThicknessMetresE">
+<span id="_CPPv3N5simul6clouds5Storm21strikeThicknessMetresE"></span><span id="_CPPv2N5simul6clouds5Storm21strikeThicknessMetresE"></span><span id="simul::clouds::Storm::strikeThicknessMetres__float"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1a4fef0df6dc29cd85e9aefd770e37f24f"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">strikeThicknessMetres</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm21strikeThicknessMetresE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Thickness of the main trunk. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm9roughnessE">
+<span id="_CPPv3N5simul6clouds5Storm9roughnessE"></span><span id="_CPPv2N5simul6clouds5Storm9roughnessE"></span><span id="simul::clouds::Storm::roughness__float"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1affe5aab7159e57f30d5918a8b385d819"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">roughness</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm9roughnessE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>How rough/smooth to make the branches. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm6motionE">
+<span id="_CPPv3N5simul6clouds5Storm6motionE"></span><span id="_CPPv2N5simul6clouds5Storm6motionE"></span><span id="simul::clouds::Storm::motion__float"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1a11a36d7ddbc5787054d94188f224404d"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">motion</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm6motionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>How much to move/animate during a strike. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm4seedE">
+<span id="_CPPv3N5simul6clouds5Storm4seedE"></span><span id="_CPPv2N5simul6clouds5Storm4seedE"></span><span id="simul::clouds::Storm::seed__i"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1a41289286590cc58d08594e6b2b4fe984"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">seed</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm4seedE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Pseudo-random seed. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm9numLevelsE">
+<span id="_CPPv3N5simul6clouds5Storm9numLevelsE"></span><span id="_CPPv2N5simul6clouds5Storm9numLevelsE"></span><span id="simul::clouds::Storm::numLevels__i"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1a56b987a861e0e13bcd5f8f314a42a3a6"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">numLevels</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm9numLevelsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Number of levels of branching. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm11numBranchesE">
+<span id="_CPPv3N5simul6clouds5Storm11numBranchesE"></span><span id="_CPPv2N5simul6clouds5Storm11numBranchesE"></span><span id="simul::clouds::Storm::numBranches__i"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1a38a2fe4985e062d1c82da4df490af6c7"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">numBranches</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm11numBranchesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Mean number of branches to generate from each parent. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm18branchAngleDegreesE">
+<span id="_CPPv3N5simul6clouds5Storm18branchAngleDegreesE"></span><span id="_CPPv2N5simul6clouds5Storm18branchAngleDegreesE"></span><span id="simul::clouds::Storm::branchAngleDegrees__float"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1a1fd87fb6775a16e19b66d8b402b2d6dc"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">branchAngleDegrees</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm18branchAngleDegreesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Mean angle of branching. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm6colourE">
+<span id="_CPPv3N5simul6clouds5Storm6colourE"></span><span id="_CPPv2N5simul6clouds5Storm6colourE"></span><span id="simul::clouds::Storm::colour__vec3"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1a35b522978335f76823c2d87398053baf"></span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">colour</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm6colourE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Colour of the strikes. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm11maxRadianceE">
+<span id="_CPPv3N5simul6clouds5Storm11maxRadianceE"></span><span id="_CPPv2N5simul6clouds5Storm11maxRadianceE"></span><span id="simul::clouds::Storm::maxRadiance__float"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1ae918ae7a2bf7f0237881a36f5fffd12c"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">maxRadiance</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm11maxRadianceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Maximum radiance of the strikes. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm13minPixelWidthE">
+<span id="_CPPv3N5simul6clouds5Storm13minPixelWidthE"></span><span id="_CPPv2N5simul6clouds5Storm13minPixelWidthE"></span><span id="simul::clouds::Storm::minPixelWidth__float"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1aa02edbdd3a36c46a0b1508dabd7806c3"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">minPixelWidth</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm13minPixelWidthE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Minimum pixel-size for strike rendering. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm9unique_idE">
+<span id="_CPPv3N5simul6clouds5Storm9unique_idE"></span><span id="_CPPv2N5simul6clouds5Storm9unique_idE"></span><span id="simul::clouds::Storm::unique_id__sky::uid"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1a9816dac769b27dbf3e244073590a8b69"></span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">uid</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">unique_id</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm9unique_idE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A non-persistent unique identifier. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm7strikesE">
+<span id="_CPPv3N5simul6clouds5Storm7strikesE"></span><span id="_CPPv2N5simul6clouds5Storm7strikesE"></span><span id="simul::clouds::Storm::strikes__std::map:i.Strike:"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1ae943970f8e0f742d4cea2bbe76590a02"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">map</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="lightningrenderinterfacestructs.html#_CPPv4N5simul6clouds6StrikeE" title="simul::clouds::Strike"><span class="n"><span class="pre">Strike</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">strikes</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm7strikesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>We can store a stack of non-random strikes. These take precedence over pseudo-randomly generated strikes. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm19lightningPropertiesE">
+<span id="_CPPv3N5simul6clouds5Storm19lightningPropertiesE"></span><span id="_CPPv2N5simul6clouds5Storm19lightningPropertiesE"></span><span id="simul::clouds::Storm::lightningProperties__LightningProperties"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1af6857b0fb15e282130bb6c4df105985e"></span><span class="k"><span class="pre">mutable</span></span><span class="w"> </span><a class="reference internal" href="lightningrenderinterfacestructs.html#_CPPv4N5simul6clouds19LightningPropertiesE" title="simul::clouds::LightningProperties"><span class="n"><span class="pre">LightningProperties</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">lightningProperties</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm19lightningPropertiesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Current cached lightning. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </div>
 
 
