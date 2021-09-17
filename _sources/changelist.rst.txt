@@ -1,5 +1,9 @@
 Changelist 
 ========= 
+| **Thu 16 Sep** : Update to installation.rst and skysequencer.rst.
+| **Wed 15 Sep** : Updated Docs/skysequencer.rst.
+| **Wed 15 Sep** : Added skysequencer.rst link.
+| **Wed 15 Sep** : Updated Docs/installation.rst and images.
 | **Mon 13 Sep** : Added changelist to docs
 | **Thu 09 Sep** : Added new documentation
 | **Tue 07 Sep** : Removed old commented code from Sky/SkyKeyframer.cpp.
@@ -96,7 +100,3 @@ Changelist
 | **Fri 16 Apr** : Doc Version support corrections and minor changes
 | **Wed 14 Apr** : Merge branch '4.4' of github.com:simul/Simul into 4.4
 | **Wed 14 Apr** : Docs update
-| **Tue 13 Apr** : fixes for docs
-| **Fri 09 Apr** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Tue 06 Apr** : Water: newBuoyancyObject->outputsBuffer was incorrectly initialized without CPU read access. As was BoundedWaterObject::waterProbeOutputsBuffer.
-| **Thu 01 Apr** : Merge branch '4.4' of github.com:simul/Simul into 4.4

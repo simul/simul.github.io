@@ -12,17 +12,17 @@ If you already have an account with us, you can skip this section and select an 
 
 .. image:: ../Help/images/websiteHomepage.png 
 
-2. Click *Sign Up for a Free Trial*
+2. Click *Try FREE for 30 days*
 
 3. Fill in the forum with your information
 
 .. image:: ../Help/images/signupForum.png
 
-4. Confirm you are not a robot by completing the Captcha.
+4. Confirm you are not a robot by completing the Captcha
 
-5. You should get an email to confirm your account. Please check your inbox and then follow the link in the email.
+5. You should get an email to confirm your account. Please check your inbox and then follow the link in the email
 
-Your account is now created and you should now be ready to download your preferred version of trueSKY. With this trial license, you have full access to trueSKY and all its features for the next 30 days. For continued use, you will need to purchase an indie or pro.
+Your account is now created and you should now be ready to download your preferred version of trueSKY. With this trial licence, you have full access to trueSKY and all of its features for the next 30 days. For continued use, you will need to purchase an indie or pro licence.
 
 
 Selecting your Engine
@@ -30,24 +30,26 @@ Selecting your Engine
 
 Unreal Engine 4
 ```````````````
-The trueSKY Unreal Engine 4 plugin comes as either a branch of the UE4 engine on GitHub, or as a separate installer for the binary distribution of UE4. For further instructions, head to :doc:`our Unreal page <unrealindex>`.
+The trueSKY Unreal Engine 4 plugin comes as either a branch of the UE4 engine on GitHub, or as a separate installer for the binary distribution of UE4. For further instructions, head over to our page :doc:`trueSKY for Unreal Engine 4 <unrealindex>`.
 
 Unity
 `````
-To use the trueSKY Unity plugin, you need to install the appropriate Unity package to your Unity project. For further instructions, please head to :doc:`our Unity page <unityindex>`.
+The trueSKY Unity plugin comes as a Unity package; select the appropriate Unity package based on your Unity engine version. For further instructions, please head over to our page :doc:`trueSKY for Unity <unityindex>`.
 
-trueSKY SDK
-```````````
-The trueSKY SDK can be integrated with a game/simulation in two different ways. Firstly, it is possible to dynamically link with the trueSkyPluginRender library and API just as we do for Unity and Unreal. The second option is to link the trueSKY libraries directly, and access the lower-level classes directly.
+Custom Engine (trueSKY SDK)
+```````````````````````````
+The trueSKY SDK can be integrated into any game or simulation software in two different ways. The first option is to dynamically link with the TrueSkyPluginRender library and API just as we do for Unity and Unreal Engine 4. The second option is to link the trueSKY libraries directly and gain access the lower-level classes. To learn more about the trueSKY SDK, please head over to our page :doc:`trueSKY SDK <programmingindex>`.
 
-To learn more about our SDK, head over to our page :doc:`here <programmingindex>`.
+Tools and Tutorials
+-------------------
 
-Standalone Sky Sequencer
-````````````````````````
-We also have our Sky sequencer as an executable, which can be used to create sequences that can be imported into trueSKY in any engine. 
+Sky Sequencer
+`````````````
+We also have our Sky Sequencer. It is a standalone application, which can be used to create sequences that can be imported into trueSKY in any engine. To learn more about the Sky Sequencer, please head over to our page :doc:`Sky Sequencer <skysequencer>`.
 
-
-If you have already installed trueSKY, you should head over to our :doc:`tutorials <tutorialsindex>` page to learn how to use trueSKY to its full potential.
+Tutorials
+`````````
+If you have already installed trueSKY, you should head over to our :doc:`Tutorials <tutorialsindex>` page to learn how to use trueSKY to its full potential.
 
 
 .. _simul.co: https://simul.co/
