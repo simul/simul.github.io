@@ -105,7 +105,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../unityindex.html">trueSKY for Unity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../sdk.html">trueSKY SDK</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../skysequencer.html">Simul Sky Sequencer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../skysequencer.html">Sky Sequencer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../programmingindex.html">Programming Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../legalindex.html">trueSKY Licences</a></li>
@@ -216,8 +216,6 @@
 </dl>
 </li>
 <li><p>In both cases this will auto-extract (upon your permission) trueSKY binaries (DLLs/LIBs) into <cite>[UE4]/Engine/Binaries/ThirdParty/Simul</cite>. Binaries are then put into their platform-respective paths, while the trueSKY shader files will go into your TrueSkyPlugin directory under the <cite>shaderbin</cite> subfolder (these are also separated based on platform).</p></li>
-</ol>
-<ol class="arabic simple" start="3">
 <li><p>Use UE4.sln to open the project in Visual Studio.The UE4 project contains the “TrueSkyPlugin” folder in Engine/UE4/Plugins (whether you installed via the installer or downloaded the source from GitHub). There are two trueSKY modules in the UE4 project – <strong>TrueSkyPlugin</strong> and <strong>TrueSkyEditorPlugin</strong>. TrueSkyEditorPlugin is only built alongside an editor build of UE4.</p></li>
 <li><p>Build the UE4 project in the “Development Editor” configuration. Once this has compiled trueSKY will be present in your UE4 build.</p></li>
 </ol>
@@ -225,21 +223,29 @@
 <div class="section" id="full-integration-with-custom-unreal-source-code">
 <h2>Full Integration with Custom Unreal Source Code<a class="headerlink" href="#full-integration-with-custom-unreal-source-code" title="Permalink to this headline">¶</a></h2>
 <p>The following files in the UE source have been modified in the Simul fork of the UE4 repository. If you are merging trueSKY into a custom fork, you must ensure that the trueSKY modifications are carried over. In general, a good way to go about merging these changes is by using <a class="reference external" href="https://www.scootersoftware.com">Beyond Compare</a> or <a class="reference external" href="https://www.perforce.com/product/components/perforce-visual-merge-and-diff-tools">Perforce Merge</a> to easily do a diff across repos or, even simpler, between separate folders on your local machine.</p>
-<p>## Core Engine Files:
-* <cite>Engine/Source/Runtime/Renderer/Private/DeferredShadingRenderer.cpp</cite>
-* <cite>Engine/Source/Runtime/Renderer/Public/RendererInterface.h or Engine/Source/Runtime/RenderCore/Public/RendererInterface.h</cite>
-* <cite>Engine/Source/Runtime/Renderer/Private/RendererModule.h</cite>
-* <cite>Engine/Source/Runtime/Renderer/Private/SceneRendering.cpp</cite>
-* <cite>Engine/Source/Runtime/Renderer/Private/RendererScene.cpp</cite>
-* <cite>Engine/Source/Runtime/Renderer/Private/TranslucentRendering.cpp</cite></p>
-<p>## Deployment File (Windows)
-* <cite>Engine/Source/Programs/AutomationTool/Win/WinPlatform.Automation.cs</cite></p>
-<p>## Deployment Files (XBox One)
-* <cite>Engine/Source/Programs/UnrealBuildTool/XboxOne/XboxOneDeploy.cs</cite>
-* <cite>Engine/Source/Programs/AutomationTool/XboxOne/XboxOnePlatform.Automation.cs</cite></p>
-<p>## Deployment Files (Playstation 4)
-* <cite>Engine/Source/Programs/AutomationTool/PS4/PS4Platform.Automation.cs</cite>
-* <cite>Engine/Source/Programs/UnrealBuildTool/PS4/UEDeployPS4.cs</cite></p>
+<p><strong>Core Engine Files:</strong></p>
+<ul class="simple">
+<li><p><cite>Engine/Source/Runtime/Renderer/Private/DeferredShadingRenderer.cpp</cite></p></li>
+<li><p><cite>Engine/Source/Runtime/Renderer/Public/RendererInterface.h or Engine/Source/Runtime/RenderCore/Public/RendererInterface.h</cite></p></li>
+<li><p><cite>Engine/Source/Runtime/Renderer/Private/RendererModule.h</cite></p></li>
+<li><p><cite>Engine/Source/Runtime/Renderer/Private/SceneRendering.cpp</cite></p></li>
+<li><p><cite>Engine/Source/Runtime/Renderer/Private/RendererScene.cpp</cite></p></li>
+<li><p><cite>Engine/Source/Runtime/Renderer/Private/TranslucentRendering.cpp</cite></p></li>
+</ul>
+<p><strong>Deployment File (Windows):</strong></p>
+<ul class="simple">
+<li><p><cite>Engine/Source/Programs/AutomationTool/Win/WinPlatform.Automation.cs</cite></p></li>
+</ul>
+<p><strong>Deployment Files (XBox One):</strong></p>
+<ul class="simple">
+<li><p><cite>Engine/Source/Programs/UnrealBuildTool/XboxOne/XboxOneDeploy.cs</cite></p></li>
+<li><p><cite>Engine/Source/Programs/AutomationTool/XboxOne/XboxOnePlatform.Automation.cs</cite></p></li>
+</ul>
+<p><strong>Deployment Files (Playstation 4):</strong></p>
+<ul class="simple">
+<li><p><cite>Engine/Source/Programs/AutomationTool/PS4/PS4Platform.Automation.cs</cite></p></li>
+<li><p><cite>Engine/Source/Programs/UnrealBuildTool/PS4/UEDeployPS4.cs</cite></p></li>
+</ul>
 </div>
 </div>
 

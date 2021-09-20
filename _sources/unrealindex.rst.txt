@@ -3,15 +3,15 @@
 
 trueSKY is fully compatible with these versions of Unreal Engine 4
 
-=================  ==========  ==========  ====================
-4.26			4.25	4.24		4.23 or earlier	
-=================  ==========  ==========  ====================
-	✓		✓		✓		On Request		
-=================  ==========  ==========  ====================
+=============  =============  =============  =============  ====================
+4.27		4.26		4.25		4.24		4.23 or earlier	
+=============  =============  =============  =============  ====================
+✓		✓		✓		✓		On Request		
+=============  =============  =============  =============  ====================
 
 For earlier versions, some features might not be available.
 
-Follow one of the links below for more information about trueSKY with Unreal Engine 4.
+Follow one of the links below for more information about trueSKY with Unreal Engine 4:
 
    *  :doc:`Tutorial <Unreal/unrealtutorial>` - Start here to learn how to set trueSKY up in Unreal Engine 4
    *  :doc:`Blueprints <Unreal/unrealblueprints>` - How to edit trueSKY with blueprints

@@ -156,13 +156,12 @@ The outputs are in milliseconds.
 Adding and removing Cloud Keyframes
 ------------------------------------
 
-
-The ability to add an remove cloud keyframes during runtime is a powerful tool, which can be used to help build truly dynamic scenes and worlds, as well as add event driven dynamic events at any point during runtime.
+The ability to add and remove cloud keyframes during runtime is a powerful tool, which can be used to help build truly dynamic scenes and worlds, as well as add event driven dynamic events at any point during runtime.
 
 
 **Create Cloud Keyframe**
 
-The blueprints require a cloud layer ID - allowing for keyframes to be created on any cloud layer within the given sequence - the Cloud Layer ID will be passed in as an integer.
+The blueprints require a cloud layer ID, which allows for keyframes to be created on any cloud layer within the given sequence. The Cloud Layer ID is passed in as an integer.
 
 We also allow for the input of a time variable (as a float) - allowing for creation of cloud keyframes at either a set time within the timeline or, via use adding a float to the current time value, create keyframes a set amount of time from the current time.
 The return value the blueprint node outputs is simply the newly created cloud keyframe Unique ID - allowing for easy referencing to the keyframe for altering the values via other blueprint setups (also at runtime).
@@ -183,7 +182,7 @@ Adding and removing Cloudlayers
 --------------------------------
 
 
-This feature is a 4.3 specific feature, the blueprints may be available within 4.2a, however are not supported in these legacy versions (unlike the simpler adding cloud keyframe values)
+This feature is a 4.3 specific feature. The blueprints will show up while using the 4.2a and 4.1b legacy versions, however are not supported (unlike the simpler adding cloud keyframe values)
 
 
 **Creating Cloud Layers**
@@ -206,12 +205,9 @@ Deleting a cloud keyframe also mirrors the functionality of the delete cloud key
 Adding map textures via blueprints
 -----------------------------------
 
-
 This feature works across both 4.2a and 4.3 versions and allows for users to add map textures dynamically. 
 
-Previously this has only be possible to do within the editor, requiring the png being referenced to be located in a specific location within the simul folder structure in the engine. We have now made this more accessible in all forms, the previous functionality still works, so saving a .png file into the "media -> resources" folder works. However we can now reference any .png image within the editor.
-
-In order to do this simply add the png file you wish to reference, into the Content -> trueSKY folder, which is created whenever initialising trueSKY into the scene.
+Previously this has only be possible to do within the editor, requiring the png being referenced to be located in a specific location within the simul folder structure in the engine. This has now been simplified, allowing you to reference any .png within the editor, however saving images into the "Media -> Resouces" folder will still work.
 
 
 **Manual Sequence solution:**
@@ -219,12 +215,13 @@ In order to do this simply add the png file you wish to reference, into the Cont
 .. raw:: html
    :file: unrealvideo2.html
 
+|
 
 **Changing Map textures at runtime**
 
 The new node "Set Cloud Layer Map Texture by File Name" allows for adding a map texture to a cloud layer at runtime. It will require a cloud layer's unique ID in order to function - which can be obtained by any of the "get cloud layer UID" blueprints, or alternatively by using the "Create new cloud layer" blueprint if using 4.3 or later versions of the plugin.
 
-You must then input the png file's name which is located within the Content -> trueSKY folder within your unreal engine project. Ensure that you are referencing the correct file with your string, this is however not case sensitive.
+You must then input the png file's name which is located within the Content -> trueSKY folder within your unreal engine project. Ensure that you are referencing the correct file with your string, however it is not case sensitive.
 
 
 .. image:: ../../Help/images/CloudLayerMapTexture.png

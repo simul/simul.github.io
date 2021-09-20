@@ -11,8 +11,9 @@ This page shows you how to install the binary version of trueSKY onto your exist
 .. raw:: html
    :file: unrealvideo1.html
 
+|
 
-1: Installing the Plugin
+Installing the Plugin
 -------------------------
 1: Login to your account at https://simul.co/account. If you have not created an account yet, head over to :doc:`installation home page <../installation>` to get setup.
 
@@ -20,14 +21,14 @@ This page shows you how to install the binary version of trueSKY onto your exist
 
 .. image:: ../../Help/images/unreal/download.png
 
-3: Run the trueSKY installer, ensuring that you select your UE4 directory as the installation location. (You should already have a version of UE4 installed, if not head over to www.unrealengine.com to download one). After the installation process is complete, the plugin should be installed into your UE4 directory.
+3: Run the trueSKY installer, ensuring that you select your UE4 directory as the installation location. (You should already have a version of UE4 installed, if not head over to https://www.unrealengine.com/ to download one). After the installation process is complete, the plugin should be installed into your UE4 directory.
 
 .. image:: ../../Help/images/unreal/wizard.png
 *Make sure you select the correct directory*
 
 
 
-2: Running the binary plugin
+Running the binary plugin
 -------------------------------
 
 1: Launch an Unreal project using the engine version in which the trueSKY plugin is installed.
@@ -46,7 +47,7 @@ This page shows you how to install the binary version of trueSKY onto your exist
 
 
 
-3: Adding trueSKY to the level
+Adding trueSKY to the level
 -------------------------------
 1: Click 'Window -> initialize trueSKY' from the dropdown at the top of the window.
 
@@ -64,7 +65,7 @@ Once initialize is selected, you should see trueSKY appear in the scene, althoug
 
 
 
-4: Creating a new Sequence
+Creating a new Sequence
 -----------------------------
 1: Either select Add New at the top left of the content browser, or right click within the content window. 
 

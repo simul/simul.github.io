@@ -94,10 +94,10 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../unrealindex.html">trueSKY for Unreal Engine 4</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Unreal Engine 4 Tutorial</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#initial-configuration">Initial Configuration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#installing-the-plugin">1: Installing the Plugin</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#running-the-binary-plugin">2: Running the binary plugin</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#adding-truesky-to-the-level">3: Adding trueSKY to the level</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#creating-a-new-sequence">4: Creating a new Sequence</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#installing-the-plugin">Installing the Plugin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#running-the-binary-plugin">Running the binary plugin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#adding-truesky-to-the-level">Adding trueSKY to the level</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#creating-a-new-sequence">Creating a new Sequence</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="unrealblueprints.html">Unreal Blueprints with trueSKY</a></li>
@@ -107,7 +107,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../unityindex.html">trueSKY for Unity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../sdk.html">trueSKY SDK</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../skysequencer.html">Simul Sky Sequencer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../skysequencer.html">Sky Sequencer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../programmingindex.html">Programming Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../legalindex.html">trueSKY Licences</a></li>
@@ -196,18 +196,21 @@
 	<div class="video-container">
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/rtdArBwqBuw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
-</div></div>
+</div><div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
 <div class="section" id="installing-the-plugin">
-<h2>1: Installing the Plugin<a class="headerlink" href="#installing-the-plugin" title="Permalink to this headline">¶</a></h2>
+<h2>Installing the Plugin<a class="headerlink" href="#installing-the-plugin" title="Permalink to this headline">¶</a></h2>
 <p>1: Login to your account at <a class="reference external" href="https://simul.co/account">https://simul.co/account</a>. If you have not created an account yet, head over to <a class="reference internal" href="../installation.html"><span class="doc">installation home page</span></a> to get setup.</p>
 <p>2: Download trueSKY binary installer from <a class="reference external" href="https://simul.co/downloads">https://simul.co/downloads</a>. Make sure to select the correct engine version you desire, and we always recommend the most up to date version of trueSKY.</p>
 <img alt="../_images/download.png" src="../_images/download.png" />
-<p>3: Run the trueSKY installer, ensuring that you select your UE4 directory as the installation location. (You should already have a version of UE4 installed, if not head over to www.unrealengine.com to download one). After the installation process is complete, the plugin should be installed into your UE4 directory.</p>
+<p>3: Run the trueSKY installer, ensuring that you select your UE4 directory as the installation location. (You should already have a version of UE4 installed, if not head over to <a class="reference external" href="https://www.unrealengine.com/">https://www.unrealengine.com/</a> to download one). After the installation process is complete, the plugin should be installed into your UE4 directory.</p>
 <img alt="../_images/wizard.png" src="../_images/wizard.png" />
 <p><em>Make sure you select the correct directory</em></p>
 </div>
 <div class="section" id="running-the-binary-plugin">
-<h2>2: Running the binary plugin<a class="headerlink" href="#running-the-binary-plugin" title="Permalink to this headline">¶</a></h2>
+<h2>Running the binary plugin<a class="headerlink" href="#running-the-binary-plugin" title="Permalink to this headline">¶</a></h2>
 <p>1: Launch an Unreal project using the engine version in which the trueSKY plugin is installed.</p>
 <p>2: Click ‘Edit -&gt; Plugins’ from the dropdown menu at the top of the window.</p>
 <img alt="../_images/pluginwindow.png" src="../_images/pluginwindow.png" />
@@ -217,7 +220,7 @@
 <p>5: Once the plugin has been enabled, trueSKY is now ready to be used within the scene.</p>
 </div>
 <div class="section" id="adding-truesky-to-the-level">
-<h2>3: Adding trueSKY to the level<a class="headerlink" href="#adding-truesky-to-the-level" title="Permalink to this headline">¶</a></h2>
+<h2>Adding trueSKY to the level<a class="headerlink" href="#adding-truesky-to-the-level" title="Permalink to this headline">¶</a></h2>
 <p>1: Click ‘Window -&gt; initialize trueSKY’ from the dropdown at the top of the window.</p>
 <img alt="../_images/windowdropdown.png" src="../_images/windowdropdown.png" />
 <p>2: A pop-up window will appear. You can either click initialize to allow trueSKY to set itself up, or you can click next to customise initialization. If you clicked initialize, you can jump to 4.</p>
@@ -227,7 +230,7 @@
 <p>Once initialize is selected, you should see trueSKY appear in the scene, although there may not be any clouds.</p>
 </div>
 <div class="section" id="creating-a-new-sequence">
-<h2>4: Creating a new Sequence<a class="headerlink" href="#creating-a-new-sequence" title="Permalink to this headline">¶</a></h2>
+<h2>Creating a new Sequence<a class="headerlink" href="#creating-a-new-sequence" title="Permalink to this headline">¶</a></h2>
 <p>1: Either select Add New at the top left of the content browser, or right click within the content window.</p>
 <p>2: Click on “Miscellaneous -&gt; trueSKY Sequence Asset” to create a new sequence. It can be renamed/saved/moved/deleted to your preference.</p>
 <img alt="../_images/addsequence1.png" src="../_images/addsequence1.png" />
