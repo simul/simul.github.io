@@ -1,5 +1,7 @@
 Changelist 
 ========= 
+| **Mon 27 Sep** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Mon 27 Sep** : Storms per layer, doc updates, UI updates, Standalone Moon UI.
 | **Mon 27 Sep** : Missed changes
 | **Mon 27 Sep** : Added basic unreal materials documentation
 | **Mon 20 Sep** : Small water fixes, fix for atmospheric scattering and sun direction not matching up when not at the default origin, small fixes to unreal documentation
@@ -98,5 +100,3 @@ Changelist
 | **Tue 27 Apr** : Fix for trueSKY build for XboxOneGDK. Platform ptr.
 | **Mon 26 Apr** : Minor change to make output clearer.
 | **Thu 22 Apr** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Tue 20 Apr** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Tue 20 Apr** : Updated Unity PlatformName and directories for Spectrum.

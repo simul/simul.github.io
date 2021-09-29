@@ -91,22 +91,20 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation and Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorialsindex.html">Tutorials</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unrealindex.html">trueSKY for Unreal Engine 4</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../unityindex.html">trueSKY for Unity</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../unreal.html">trueSKY for Unreal Engine 4</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../unity.html">trueSKY for Unity</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="unitytutorial.html">Unity Tutorial</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Scripting</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#truesky-object">trueSKY Object</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#layers">Layers</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#for-truesky-4-1a">For trueSKY 4.1a</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#layers-keyframers">Layers / Keyframers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#keyframes">Keyframes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id1">For trueSKY 4.1a</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#other-functions">Other Functions</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../sdk.html">trueSKY SDK</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../skysequencer.html">Simul Sky Sequencer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../skysequencer.html">Sky Sequencer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../programmingindex.html">Programming Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../legalindex.html">trueSKY Licences</a></li>
@@ -164,7 +162,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-          <li><a href="../unityindex.html">trueSKY for Unity</a> &raquo;</li>
+          <li><a href="../unity.html">trueSKY for Unity</a> &raquo;</li>
         
       <li>Scripting</li>
     
@@ -187,7 +185,7 @@
             
   <div class="section" id="scripting">
 <h1>Scripting<a class="headerlink" href="#scripting" title="Permalink to this headline">¶</a></h1>
-<p>Alongside the Sequencer tool, trueSKY can be driven and configured via Unity scripting. Similarly to using the sequencer, the settings and properties in trueSKY for Unity are split between <a class="reference internal" href="#keyframes">Keyframes</a> properties (temporal values for clouds and sky), <a class="reference internal" href="#layers">Layers</a> properites (values for clouds and sky that persist throughout a sequence) and the properties of the <a class="reference internal" href="#truesky-object">trueSKY object</a> itself (configuration settings).</p>
+<p>Alongside the Sequencer tool, trueSKY can be driven and configured via Unity scripting. Similarly to using the sequencer, the settings and properties in trueSKY for Unity are split between <a class="reference internal" href="#keyframes">Keyframes</a> properties (temporal values for clouds and sky), <a href="#id1"><span class="problematic" id="id2">`Layers`_</span></a> properites (values for clouds and sky that persist throughout a sequence) and the properties of the <a class="reference internal" href="#truesky-object">trueSKY object</a> itself (configuration settings).</p>
 <div class="section" id="truesky-object">
 <h2>trueSKY Object<a class="headerlink" href="#truesky-object" title="Permalink to this headline">¶</a></h2>
 <p>To modify trueSKY object via scripting, a reference to the active object in the scene must first be obtained (there should only be one). This can be done upon initialisation; the code to do so is as follows:</p>
@@ -205,48 +203,23 @@
 </pre></div>
 </div>
 </div>
-<div class="section" id="layers">
-<h2>Layers<a class="headerlink" href="#layers" title="Permalink to this headline">¶</a></h2>
-<p>Layer properties are those accessible in the sequencer by clicking on the layer name on the left of the timeline. These affect the entire sequence and the values will remain until the user changes them manually. This differs in nature from keyframe properties, which are active only between specified times and will be automatically modified via interpolation (for example if two adjacent keyframes have cloudiness set to 0.4 and 0.6 respectively, trueSKY will interpolate these values for times in between, increasing gradually from 0.4 to 0.6). The functions needed to Get and Set layer properties are as follows:</p>
-<p><strong>Sky</strong>:</p>
+<div class="section" id="layers-keyframers">
+<h2>Layers / Keyframers<a class="headerlink" href="#layers-keyframers" title="Permalink to this headline">¶</a></h2>
+<p>Layer (Also called Keyframers) properties are those accessible in the sequencer by clicking on the layer name on the left of the timeline. These affect the entire sequence and the values will remain until the user changes them manually. This differs in nature from keyframe properties, which are active only between specified times and will be automatically modified via interpolation (for example if two adjacent keyframes have cloudiness set to 0.4 and 0.6 respectively, trueSKY will interpolate these values for times in between, increasing gradually from 0.4 to 0.6). The functions needed to Get and Set layer properties are as follows:</p>
 <ul class="simple">
-<li><p><strong>GetSkyFloat (string name)</strong>: Gets the sky layer float specified by the name string.</p></li>
-<li><p><strong>GetSkyInt (string name)</strong>: Gets the sky layer int specified by the name string.</p></li>
-<li><p><strong>SetSkyFloat  (string name, float value)</strong>: Sets the sky layer float specified by the name string to the given float value.</p></li>
-<li><p><strong>SetSkyInt  (string name, int value)</strong>: Sets the sky layer int specified by the name string to the given float value.</p></li>
+<li><p><strong>GetKeyframerValue&lt;Type&gt;(uint uid, string name)</strong>: Set a layer value specified by the name string.</p></li>
+<li><p><strong>SetKeyframerValue(uint uid, string name, object value)</strong>: Gets the layer value specified by the name string.</p></li>
 </ul>
-<p><strong>Clouds</strong>:</p>
+<p><strong>Creating and Deleting Layers via Scripting</strong></p>
+<p>You can create and delete cloud layers at runtime. There is only one sky layer for each sequence, so you cannot edit sky layers.</p>
 <ul class="simple">
-<li><p><strong>GetCloudFloat (string name)</strong>: Gets the 3D cloud layer float specified by the name string.</p></li>
-<li><p><strong>GetCloudInt (string name)</strong>: Gets the 3D cloud layer int specified by the name string.</p></li>
-<li><p><strong>SetCloudFloat  (string name, float value)</strong>: Sets the 3D cloud layer float specified by the name string to the given float value.</p></li>
-<li><p><strong>SetCloudInt  (string name, int value)</strong>: Sets the 3D cloud layer int specified by the name string to the given float value.</p></li>
+<li><p><strong>CreateCloudKeyframer(string name)</strong>: Creates a new Cloud layer with the given name, returns the UID</p></li>
+<li><p><strong>DeleteCloudKeyframer(uint uid)</strong>: Deletes the Cloud layer with the given UID</p></li>
 </ul>
-</div>
-<div class="section" id="for-truesky-4-1a">
-<h2>For trueSKY 4.1a<a class="headerlink" href="#for-truesky-4-1a" title="Permalink to this headline">¶</a></h2>
-<p><strong>2D Clouds</strong>:</p>
-<ul class="simple">
-<li><p><strong>Get2DCloudFloat (string name)</strong>: Gets the 2D cloud layer float specified by the name string.</p></li>
-<li><p><strong>Get2DCloudInt (string name)</strong>: Gets the 2D cloud layer int specified by the name string.</p></li>
-<li><p><strong>Set2DCloudFloat  (string name, float value)</strong>: Sets the 2D cloud layer float specified by the name string to the given float value.</p></li>
-<li><p><strong>Set2DCloudInt  (string name, int value)</strong>: Sets the 2D cloud layer int specified by the name string to the given float value.</p></li>
-</ul>
-<p><strong>Example</strong>: To increment the Ozone layer strength by 0.1,</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">private</span> <span class="n">trueSKY</span> <span class="n">tS</span><span class="p">;</span>
-
-<span class="n">void</span> <span class="n">Start</span> <span class="p">()</span>
-<span class="p">{</span>
-        <span class="n">tS</span> <span class="o">=</span> <span class="n">trueSKY</span><span class="o">.</span><span class="n">GetTrueSky</span> <span class="p">();</span>
-        <span class="n">tS</span><span class="o">.</span><span class="n">SetSkyFloat</span><span class="p">(</span><span class="s2">&quot;OzoneStrength&quot;</span><span class="p">,</span> <span class="n">tS</span><span class="o">.</span><span class="n">GetSkyFloat</span><span class="p">(</span><span class="s2">&quot;OzoneStrength&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="mf">0.1</span><span class="n">f</span><span class="p">);</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-<p>For information about the layer properties you can change and the name strings needed to do so, see the <a class="reference internal" href="../Tutorials/clouds.html"><span class="doc">Cloud</span></a> and <a class="reference internal" href="../Tutorials/sky.html"><span class="doc">Sky</span></a> pages.</p>
 </div>
 <div class="section" id="keyframes">
 <h2>Keyframes<a class="headerlink" href="#keyframes" title="Permalink to this headline">¶</a></h2>
-<p>Keyframes in trueSKY can be accessed, counted, modified, created and deleted via scripting. To delete a keyframe or change its properties, the Unique Identifier (Uid) will need to be known. These can be retrieved either by index (the keyframes in the sequencer, which are zero-indexed) or by retrieving the current/interpolated keyframe (not viewable in the sequencer, as they are interpolated). Uids are unique and persistent for the session, but not across saves or restarts, so they should not be stored. <strong>Note</strong>: For any functions with a layer parameter, the layer indexes are as follows: <strong>0</strong> for the sky, <strong>1</strong> for 3D Clouds and <strong>2</strong> for 2D Clouds (if in 4.1a).</p>
+<p>Keyframes in trueSKY can be accessed, counted, modified, created and deleted via scripting. To delete a keyframe or change its properties, the Unique Identifier (Uid) will need to be known. These can be retrieved either by index (the keyframes in the sequencer, which are zero-indexed) or by retrieving the current/interpolated keyframe (not viewable in the sequencer, as they are interpolated). Uids are unique and persistent for the session, but not across saves or restarts, so they should not be stored. <strong>Note</strong>: For any functions with a layer parameter, the layer indexes are as follows: <strong>0</strong> for the sky, <strong>1</strong> for the first cloud layer, <strong>2</strong> for the second cloud layer and so on. This is not the same as UID, which can vary for layers.</p>
 <p><strong>Sky</strong>:</p>
 <ul class="simple">
 <li><p><strong>GetSkyKeyframeByIndex (int index)</strong>: Get the sky keyframe with specified index.</p></li>
@@ -254,51 +227,34 @@
 <li><p><strong>InsertSkyKeyframe (float t)</strong>: Insert a sky keyframe at specified time t.</p></li>
 <li><p><strong>GetNumSkyKeyframes ()</strong>: Returns the total number of sky keyframes.</p></li>
 </ul>
-<p><strong>3D Clouds</strong>:</p>
+<p><strong>Clouds</strong>:</p>
 <ul class="simple">
-<li><p><strong>GetCloudKeyframeByIndex (int index)</strong>: Get the 3D cloud keyframe with specified index.</p></li>
-<li><p><strong>GetInterpolatedCloudKeyframe (int layer = 1)</strong>: Retrieve the interpolated (current) 3D cloud keyframe.</p></li>
-<li><p><strong>InsertCloudKeyframe (float t)</strong>: Insert a 3D cloud keyframe at specified time t.</p></li>
-<li><p><strong>GetNumCloudKeyframes ()</strong>: Returns the total number of 3D cloud keyframes.</p></li>
+<li><p><strong>GetCloudKeyframeByIndex (int index, int layer)</strong>: Get the cloud keyframe with specified index.</p></li>
+<li><p><strong>GetInterpolatedCloudKeyframe (int layer = 1)</strong>: Retrieve the interpolated (current) cloud keyframe.</p></li>
+<li><p><strong>InsertCloudKeyframe (float t)</strong>: Insert a cloud keyframe at specified time t.</p></li>
+<li><p><strong>GetNumCloudKeyframes ()</strong>: Returns the total number ofcloud keyframes.</p></li>
 </ul>
-</div>
-<div class="section" id="id1">
-<h2>For trueSKY 4.1a<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<p><strong>2D Clouds</strong>:</p>
+<p>To set or get keyframe values, you need to use:</p>
 <ul class="simple">
-<li><p><strong>GetCloud2DKeyframeByIndex (int index)</strong>: Get the 2D cloud keyframe with specified index.</p></li>
-<li><p><strong>GetInterpolatedCloudKeyframe (int layer = 2)</strong>: Retrieve the interpolated (current) 2D cloud keyframe.</p></li>
-<li><p><strong>Insert2DCloudKeyframe (float t)</strong>: Insert a 2D cloud keyframe at specified time t.</p></li>
-<li><p><strong>GetNumCloud2DKeyframes ()</strong>: Returns the total number of 2D cloud keyframes.</p></li>
+<li><p><strong>GetKeyframeValue&lt;Type&gt;(keyframeUID, “VariableName”)</strong></p></li>
+<li><p><strong>SetKeyframeValue(keyframeUID, “VariableName”, value)</strong></p></li>
 </ul>
-<p>Once you know the Uid of a keyframe, you can then get the values of its properties, set said values or delete the keyframe. Whether you’re accessing/modifying sky, 3D cloud or 2D cloud keyframes, these tasks are accomplished via the following functions:</p>
-<ul class="simple">
-<li><p><strong>GetKeyframeValue (uint uid, string name)</strong>: Gets the float or int value of the property specified by the name string, for the keyframe specified by the Uid.</p></li>
-<li><p><strong>SetKeyframeValue (uint uid, string name, object value)</strong>: Sets the property specified by the name string, for the keyframe specified by the Uid, to the given value. The value should be an int or float (, though doubles are acceptable in place of floats.</p></li>
-<li><p><strong>DeleteKeyframe (uint uid)</strong>: Deletes the keyframe specified by the Uid. This only works on sequencer-viewable keyframes, not interpolated ones.</p></li>
-</ul>
-<p><strong>Example</strong>: In the script KeyframeTesting.cs in the Simul directory, is a function that sets all the cloud keyframes to have a “cloudiness” of 0.8 when the game is run:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">int</span> <span class="n">numk</span> <span class="o">=</span> <span class="n">trueSky</span><span class="o">.</span><span class="n">GetNumCloudKeyframes</span><span class="p">();</span>
+<p>For example, to increase the cloudiness of a cloud keyframe, you would use:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">public</span> <span class="n">simul</span><span class="o">.</span><span class="n">trueSKY</span> <span class="n">trueSky</span><span class="o">=</span><span class="n">null</span><span class="p">;</span>
 
-<span class="k">for</span><span class="p">(</span><span class="nb">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">numk</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+<span class="n">void</span> <span class="n">Update</span><span class="p">()</span>
 <span class="p">{</span>
-        <span class="n">uint</span> <span class="n">uid</span> <span class="o">=</span> <span class="n">trueSky</span><span class="o">.</span><span class="n">GetCloudKeyframeByIndex</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
-        <span class="n">trueSky</span><span class="o">.</span><span class="n">SetKeyframeValue</span><span class="p">(</span><span class="n">uid</span><span class="p">,</span> <span class="s2">&quot;cloudiness&quot;</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">);</span>
+        <span class="n">tS</span> <span class="o">=</span> <span class="n">simul</span><span class="o">.</span><span class="n">trueSKY</span><span class="o">.</span><span class="n">GetTrueSkypublic</span> <span class="n">simul</span><span class="o">.</span><span class="n">trueSKY</span> <span class="n">trueSky</span><span class="o">=</span><span class="n">null</span><span class="p">;();</span>
+
+        <span class="o">//</span><span class="n">this</span> <span class="n">will</span> <span class="n">get</span> <span class="n">the</span> <span class="n">first</span> <span class="n">cloud</span> <span class="n">keyframe</span> <span class="n">on</span> <span class="n">the</span> <span class="n">first</span> <span class="n">cloud</span> <span class="n">layer</span><span class="o">.</span>
+        <span class="n">uint</span> <span class="n">ckUid</span> <span class="o">=</span> <span class="n">ts</span><span class="o">.</span><span class="n">GetCloudKeyframeByIndex</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
+
+        <span class="nb">float</span> <span class="n">_cloudiness</span> <span class="o">=</span> <span class="n">ts</span><span class="o">.</span><span class="n">GetKeyframeValue</span><span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span><span class="p">(</span><span class="n">ckUid</span><span class="p">,</span> <span class="s2">&quot;cloudiness&quot;</span><span class="p">);</span>
+        <span class="n">ts</span><span class="o">.</span><span class="n">SetKeyframeValue</span><span class="p">(</span><span class="n">ckUid</span><span class="p">,</span> <span class="s2">&quot;cloudiness&quot;</span><span class="p">,</span> <span class="n">_cloudiness</span> <span class="o">+</span> <span class="mf">0.2</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>
 </div>
-<p><strong>Example</strong>: Getting the current cloudiness of the interpolated keyframe
-.. code-block:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">private</span> <span class="n">trueSKY</span> <span class="n">tS</span><span class="p">;</span>
-
-<span class="n">void</span> <span class="n">Start</span> <span class="p">()</span>
-<span class="p">{</span>
-        <span class="n">tS</span> <span class="o">=</span> <span class="n">trueSKY</span><span class="o">.</span><span class="n">GetTrueSky</span><span class="p">();</span>
-        <span class="n">uint</span> <span class="n">uid</span> <span class="o">=</span> <span class="n">tS</span><span class="o">.</span><span class="n">GetInterpolatedCloudKeyframe</span> <span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-        <span class="n">tS</span><span class="o">.</span><span class="n">GetKeyframeValue</span> <span class="p">(</span><span class="n">uid</span><span class="p">,</span> <span class="s2">&quot;cloudiness&quot;</span><span class="p">);</span>
-<span class="p">}</span>
-</pre></div>
-</div>
+<p>For a list of variable names, see the variable pages such as <a class="reference internal" href="../Tutorials/Clouds/cloudsvariables.html"><span class="doc">Cloud Variables</span></a> or <a class="reference internal" href="../Tutorials/Sky/skyvariables.html"><span class="doc">Sky Variables</span></a>. Be sure to use the correct variable type when passing the value.</p>
 </div>
 <div class="section" id="other-functions">
 <h2>Other Functions<a class="headerlink" href="#other-functions" title="Permalink to this headline">¶</a></h2>
@@ -332,7 +288,17 @@
 <li><p>float optical_thickness_metres: The amount of cloud filling the distance between the start and end positions. If completely cloudy  = distance in metres, if none = 0.</p></li>
 <li><p>float first_contact_metres: The distance to the nearest cloud, in metres.</p></li>
 </ul>
-<p><strong>Storms</strong></p>
+<p><strong>Storms</strong>
+Just like keyframes, storm UID’s are accessible thorugh their index or by querying the time/</p>
+<ul class="simple">
+<li><p><strong>GetStormUidByIndex(uid index)</strong></p></li>
+<li><p><strong>GetStormUidAtTime(float time)</strong></p></li>
+</ul>
+<p>For setting values for a storm, you again have similar functions to keyframes.</p>
+<ul class="simple">
+<li><p><strong>GetStormValue&lt;T&gt;(uint uid, string name)</strong></p></li>
+<li><p><strong>SetStormValue(uint uid, string name, object value)</strong></p></li>
+</ul>
 <p>The centre of a storm can be set via the SetStormCentre (float x, float y) function. This is equivalent to setting the storm centre via the map window in the sequencer (hence only two axes).</p>
 <p><strong>Unity &lt;-&gt; trueSKY Coordinate Conversions</strong></p>
 <p>As Unity and trueSKY treat coordinates differently (which axis is considered “up”), these functions are provided to convert between them when needed:</p>

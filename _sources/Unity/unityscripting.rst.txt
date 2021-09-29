@@ -1,4 +1,4 @@
-﻿Scripting
+Scripting
 ==========
 
 Alongside the Sequencer tool, trueSKY can be driven and configured via Unity scripting. Similarly to using the sequencer, the settings and properties in trueSKY for Unity are split between `Keyframes`_ properties (temporal values for clouds and sky), `Layers`_ properites (values for clouds and sky that persist throughout a sequence) and the properties of the `trueSKY object`_ itself (configuration settings).
@@ -26,53 +26,24 @@ All editor properties of the trueSKY object are publicly accessible, so once a r
 	}
 
 
-Layers
+Layers / Keyframers
 --------
-Layer properties are those accessible in the sequencer by clicking on the layer name on the left of the timeline. These affect the entire sequence and the values will remain until the user changes them manually. This differs in nature from keyframe properties, which are active only between specified times and will be automatically modified via interpolation (for example if two adjacent keyframes have cloudiness set to 0.4 and 0.6 respectively, trueSKY will interpolate these values for times in between, increasing gradually from 0.4 to 0.6). The functions needed to Get and Set layer properties are as follows:
+Layer (Also called Keyframers) properties are those accessible in the sequencer by clicking on the layer name on the left of the timeline. These affect the entire sequence and the values will remain until the user changes them manually. This differs in nature from keyframe properties, which are active only between specified times and will be automatically modified via interpolation (for example if two adjacent keyframes have cloudiness set to 0.4 and 0.6 respectively, trueSKY will interpolate these values for times in between, increasing gradually from 0.4 to 0.6). The functions needed to Get and Set layer properties are as follows:
 
+* **GetKeyframerValue<Type>(uint uid, string name)**: Set a layer value specified by the name string.
+* **SetKeyframerValue(uint uid, string name, object value)**: Gets the layer value specified by the name string.
 
-**Sky**:
+**Creating and Deleting Layers via Scripting**
 
-* **GetSkyFloat (string name)**: Gets the sky layer float specified by the name string.
-* **GetSkyInt (string name)**: Gets the sky layer int specified by the name string.
-* **SetSkyFloat  (string name, float value)**: Sets the sky layer float specified by the name string to the given float value.
-* **SetSkyInt  (string name, int value)**: Sets the sky layer int specified by the name string to the given float value.
+You can create and delete cloud layers at runtime. There is only one sky layer for each sequence, so you cannot edit sky layers.
 
-**Clouds**:
-
-* **GetCloudFloat (string name)**: Gets the 3D cloud layer float specified by the name string.
-* **GetCloudInt (string name)**: Gets the 3D cloud layer int specified by the name string.
-* **SetCloudFloat  (string name, float value)**: Sets the 3D cloud layer float specified by the name string to the given float value.
-* **SetCloudInt  (string name, int value)**: Sets the 3D cloud layer int specified by the name string to the given float value.
-
-For trueSKY 4.1a
-----------------
-**2D Clouds**:
-
-* **Get2DCloudFloat (string name)**: Gets the 2D cloud layer float specified by the name string.
-* **Get2DCloudInt (string name)**: Gets the 2D cloud layer int specified by the name string.
-* **Set2DCloudFloat  (string name, float value)**: Sets the 2D cloud layer float specified by the name string to the given float value.
-* **Set2DCloudInt  (string name, int value)**: Sets the 2D cloud layer int specified by the name string to the given float value.
-
-
-**Example**: To increment the Ozone layer strength by 0.1,
-
-.. code-block::
-
-	private trueSKY tS;
-
-	void Start () 
-	{
-		tS = trueSKY.GetTrueSky (); 
-		tS.SetSkyFloat("OzoneStrength", tS.GetSkyFloat("OzoneStrength") + 0.1f);  
-	}
-
-For information about the layer properties you can change and the name strings needed to do so, see the :doc:`Cloud <../Tutorials/clouds>` and :doc:`Sky <../Tutorials/sky>` pages.
+* **CreateCloudKeyframer(string name)**: Creates a new Cloud layer with the given name, returns the UID
+* **DeleteCloudKeyframer(uint uid)**: Deletes the Cloud layer with the given UID
 
 
 Keyframes
 --------
-Keyframes in trueSKY can be accessed, counted, modified, created and deleted via scripting. To delete a keyframe or change its properties, the Unique Identifier (Uid) will need to be known. These can be retrieved either by index (the keyframes in the sequencer, which are zero-indexed) or by retrieving the current/interpolated keyframe (not viewable in the sequencer, as they are interpolated). Uids are unique and persistent for the session, but not across saves or restarts, so they should not be stored. **Note**: For any functions with a layer parameter, the layer indexes are as follows: **0** for the sky, **1** for 3D Clouds and **2** for 2D Clouds (if in 4.1a).
+Keyframes in trueSKY can be accessed, counted, modified, created and deleted via scripting. To delete a keyframe or change its properties, the Unique Identifier (Uid) will need to be known. These can be retrieved either by index (the keyframes in the sequencer, which are zero-indexed) or by retrieving the current/interpolated keyframe (not viewable in the sequencer, as they are interpolated). Uids are unique and persistent for the session, but not across saves or restarts, so they should not be stored. **Note**: For any functions with a layer parameter, the layer indexes are as follows: **0** for the sky, **1** for the first cloud layer, **2** for the second cloud layer and so on. This is not the same as UID, which can vary for layers. 
 
 **Sky**:
 
@@ -81,52 +52,37 @@ Keyframes in trueSKY can be accessed, counted, modified, created and deleted via
 * **InsertSkyKeyframe (float t)**: Insert a sky keyframe at specified time t.
 * **GetNumSkyKeyframes ()**: Returns the total number of sky keyframes.
 
-**3D Clouds**:
+**Clouds**:
 
-* **GetCloudKeyframeByIndex (int index)**: Get the 3D cloud keyframe with specified index.
-* **GetInterpolatedCloudKeyframe (int layer = 1)**: Retrieve the interpolated (current) 3D cloud keyframe.
-* **InsertCloudKeyframe (float t)**: Insert a 3D cloud keyframe at specified time t.
-* **GetNumCloudKeyframes ()**: Returns the total number of 3D cloud keyframes.
+* **GetCloudKeyframeByIndex (int index, int layer)**: Get the cloud keyframe with specified index.
+* **GetInterpolatedCloudKeyframe (int layer = 1)**: Retrieve the interpolated (current) cloud keyframe. 
+* **InsertCloudKeyframe (float t)**: Insert a cloud keyframe at specified time t.
+* **GetNumCloudKeyframes ()**: Returns the total number ofcloud keyframes.
 
-For trueSKY 4.1a
------------------
-**2D Clouds**:
+To set or get keyframe values, you need to use:
 
-* **GetCloud2DKeyframeByIndex (int index)**: Get the 2D cloud keyframe with specified index.
-* **GetInterpolatedCloudKeyframe (int layer = 2)**: Retrieve the interpolated (current) 2D cloud keyframe.
-* **Insert2DCloudKeyframe (float t)**: Insert a 2D cloud keyframe at specified time t.
-* **GetNumCloud2DKeyframes ()**: Returns the total number of 2D cloud keyframes.
+* **GetKeyframeValue<Type>(keyframeUID, "VariableName")**
+* **SetKeyframeValue(keyframeUID, "VariableName", value)**
 
-Once you know the Uid of a keyframe, you can then get the values of its properties, set said values or delete the keyframe. Whether you're accessing/modifying sky, 3D cloud or 2D cloud keyframes, these tasks are accomplished via the following functions: 
 
-* **GetKeyframeValue (uint uid, string name)**: Gets the float or int value of the property specified by the name string, for the keyframe specified by the Uid.
-* **SetKeyframeValue (uint uid, string name, object value)**: Sets the property specified by the name string, for the keyframe specified by the Uid, to the given value. The value should be an int or float (, though doubles are acceptable in place of floats.
-* **DeleteKeyframe (uint uid)**: Deletes the keyframe specified by the Uid. This only works on sequencer-viewable keyframes, not interpolated ones.
-
-**Example**: In the script KeyframeTesting.cs in the Simul directory, is a function that sets all the cloud keyframes to have a "cloudiness" of 0.8 when the game is run:
+For example, to increase the cloudiness of a cloud keyframe, you would use:
 
 .. code-block::
 
-	int numk = trueSky.GetNumCloudKeyframes();
+	public simul.trueSKY trueSky=null;
 
-	for(int i = 0; i < numk; i++)
+	void Update()
 	{
-		uint uid = trueSky.GetCloudKeyframeByIndex(i);
-		trueSky.SetKeyframeValue(uid, "cloudiness", 0.8);
+		tS = simul.trueSKY.GetTrueSkypublic simul.trueSKY trueSky=null;(); 
+
+		//this will get the first cloud keyframe on the first cloud layer.
+		uint ckUid = ts.GetCloudKeyframeByIndex(0,0); 
+		
+		float _cloudiness = ts.GetKeyframeValue<float>(ckUid, "cloudiness");
+		ts.SetKeyframeValue(ckUid, "cloudiness", _cloudiness + 0.2);
 	}
 
-**Example**: Getting the current cloudiness of the interpolated keyframe
-.. code-block::
-
-	private trueSKY tS;   
-
-	void Start () 
-	{
-		tS = trueSKY.GetTrueSky();
-		uint uid = tS.GetInterpolatedCloudKeyframe (1);
-		tS.GetKeyframeValue (uid, "cloudiness"); 
-	}
-
+For a list of variable names, see the variable pages such as :doc:`Cloud Variables <../Tutorials/Clouds/cloudsvariables>` or :doc:`Sky Variables <../Tutorials/Sky/skyvariables>`. Be sure to use the correct variable type when passing the value.
 
 Other Functions
 ---------------
@@ -167,6 +123,16 @@ The contents of the structs are as follows:
 
 
 **Storms**
+Just like keyframes, storm UID's are accessible thorugh their index or by querying the time/
+
+* **GetStormUidByIndex(uid index)**
+* **GetStormUidAtTime(float time)**
+
+For setting values for a storm, you again have similar functions to keyframes.
+
+* **GetStormValue<T>(uint uid, string name)**
+* **SetStormValue(uint uid, string name, object value)**
+
 
 The centre of a storm can be set via the SetStormCentre (float x, float y) function. This is equivalent to setting the storm centre via the map window in the sequencer (hence only two axes).
 

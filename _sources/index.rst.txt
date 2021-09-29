@@ -37,8 +37,8 @@ Useful External Links
 
    installation.rst
    tutorialsindex.rst
-   unrealindex.rst
-   unityindex.rst
+   unreal.rst
+   unity.rst
    sdk.rst
    skysequencer.rst
    programmingindex.rst
