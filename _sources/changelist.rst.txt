@@ -1,5 +1,6 @@
 Changelist 
 ========= 
+| **Wed 06 Oct** : Updated the CS_LAYOUT for CS_InterpLightTable().
 | **Tue 05 Oct** : Merge branch '4.4' of github.com:simul/Simul into 4.4
 | **Tue 05 Oct** : Moved ERRNO_BREAK as illegal else statement was created.
 | **Mon 04 Oct** : Build fix
@@ -99,4 +100,3 @@ Changelist
 | **Thu 06 May** : Change Directory for UE from XboxSeriesX to XSX
 | **Thu 06 May** : Merge branch '4.4' of github.com:simul/Simul into 4.4
 | **Tue 04 May** : PlanetRadius Functional
-| **Thu 29 Apr** : Updated Unity D3D12 for greater stability. assimp-vc142-mt is copied by CopyToTargetDir.py, as SimulCrossPlatform_MD has a link depenedencies to it if using PLATFORM_USE_ASSIMP. GetSimulVersion() updated for 4.4.
