@@ -1,5 +1,6 @@
 Changelist 
 ========= 
+| **Fri 08 Oct** : Revert changes to CS_LAYOUT for CS_InterpLightTable().
 | **Wed 06 Oct** : Updated the CS_LAYOUT for CS_InterpLightTable().
 | **Tue 05 Oct** : Merge branch '4.4' of github.com:simul/Simul into 4.4
 | **Tue 05 Oct** : Moved ERRNO_BREAK as illegal else statement was created.
@@ -99,4 +100,3 @@ Changelist
 | **Thu 06 May** : Add SkySequencer icon to TrueSkyUI/MainWindow.
 | **Thu 06 May** : Change Directory for UE from XboxSeriesX to XSX
 | **Thu 06 May** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Tue 04 May** : PlanetRadius Functional
