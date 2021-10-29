@@ -1,5 +1,7 @@
 Changelist 
 ========= 
+| **Thu 28 Oct** : Update to SDK docs
+| **Thu 28 Oct** : Fix platform::core namespace compile errors.
 | **Mon 25 Oct** : TrueSkyPluginRender fix for ID3D11RenderTargetView* allocated from GetCustomD3D11RTV() not being released.
 | **Wed 13 Oct** : Updated names used in CreateTexture().
 | **Fri 08 Oct** : Revert changes to CS_LAYOUT for CS_InterpLightTable().
@@ -98,5 +100,3 @@ Changelist
 | **Tue 18 May** : Merge branch '4.4' of github.com:simul/Simul into 4.4
 | **Fri 07 May** : Merge branch '4.4' of github.com:simul/Simul into 4.4
 | **Fri 07 May** : Adding WaterMask documentation page as not previously created. this includes image and update to waters index
-| **Fri 07 May** : Commodore support merges from 4.3
-| **Thu 06 May** : Add SkySequencer icon to TrueSkyUI/MainWindow.
