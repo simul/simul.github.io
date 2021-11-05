@@ -1,6 +1,9 @@
 Changelist 
 ========= 
+| **Tue 02 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Tue 02 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4. Fix for performance issues in SkySequencer.
 | **Thu 28 Oct** : Update to SDK docs
+| **Thu 28 Oct** : WIP - DXR updates: Fence names, using precipitationVolume, updated CloudRenderingOptions, CloudRenderer::RenderPrecipitationVolumeTexture has cross-queue execution dependencies. SetCloudWindow() and SetCloudRenderingOptions() added to class CloudRaytraceLighting. Minor update to DXR UI. Extensive addition to in-scatter and mie functions along with intersection and hit shader.
 | **Thu 28 Oct** : Fix platform::core namespace compile errors.
 | **Mon 25 Oct** : TrueSkyPluginRender fix for ID3D11RenderTargetView* allocated from GetCustomD3D11RTV() not being released.
 | **Wed 13 Oct** : Updated names used in CreateTexture().
@@ -97,6 +100,3 @@ Changelist
 | **Fri 21 May** : Amending doc errors
 | **Fri 21 May** : Link update for SDK
 | **Fri 21 May** : Adding Skysequence specific page, fixed dead link within timeline page
-| **Tue 18 May** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Fri 07 May** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Fri 07 May** : Adding WaterMask documentation page as not previously created. this includes image and update to waters index
