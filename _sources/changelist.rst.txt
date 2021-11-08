@@ -1,5 +1,7 @@
 Changelist 
 ========= 
+| **Sat 06 Nov** : Compile fix.
+| **Fri 05 Nov** : cbParticleUpdateConstants fixed misaligned constant buffer members.
 | **Tue 02 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4
 | **Tue 02 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4. Fix for performance issues in SkySequencer.
 | **Thu 28 Oct** : Update to SDK docs
@@ -98,5 +100,3 @@ Changelist
 | **Fri 21 May** : Further changes
 | **Fri 21 May** : link fix
 | **Fri 21 May** : Amending doc errors
-| **Fri 21 May** : Link update for SDK
-| **Fri 21 May** : Adding Skysequence specific page, fixed dead link within timeline page
