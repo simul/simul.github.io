@@ -1,5 +1,9 @@
 Changelist 
 ========= 
+| **Tue 09 Nov** : Fixed register values in global_weather.sfx for PSSL.
+| **Tue 09 Nov** : technique cloud_density_AABB uses SM5.1 and shader updated to use templatized constant buffers.
+| **Mon 08 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Mon 08 Nov** : Updated cloud_raytrace_constants.sl to use SIMUL_TEMPLATIZED_CONSTANT_BUFFER. Minor amendments to cloud_raytrace.sl, cloud_raytrace.sfx uses amortization and non-global constant buffers. Fixed intersection shader scale error. Other minor fixes.
 | **Sat 06 Nov** : Compile fix.
 | **Fri 05 Nov** : cbParticleUpdateConstants fixed misaligned constant buffer members.
 | **Tue 02 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4
@@ -96,7 +100,3 @@ Changelist
 | **Mon 24 May** : Merge branch '4.4' of github.com:simul/Simul into 4.4
 | **Mon 24 May** : Merge branch '4.4' of github.com:simul/Simul into 4.4
 | **Mon 24 May** : Update worleyTexcoordOffset to worleyOffsetKm. Removed noise3DTexcoordScale2, noise3DTexcoordOffset2 and EdgeNoiseWavelength2Km from shaders. Update noise input from cloud_lighting.sfx and updated cloud_experimental.sla and others.
-| **Fri 21 May** : Fixing dead link
-| **Fri 21 May** : Further changes
-| **Fri 21 May** : link fix
-| **Fri 21 May** : Amending doc errors
