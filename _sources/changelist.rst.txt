@@ -1,17 +1,28 @@
 Changelist 
 ========= 
+| **Fri 12 Nov** : Fix compile errors for Sample projects.
+| **Thu 11 Nov** : Fix warnings. Use doubles for origin lat long.
+| **Wed 10 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Wed 10 Nov** : Fixed warnings
+| **Wed 10 Nov** : Warnings fix.
+| **Wed 10 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Wed 10 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Wed 10 Nov** : Fix global_weather.sfx for GLSL compile errors.
 | **Tue 09 Nov** : Fixed register values in global_weather.sfx for PSSL.
 | **Tue 09 Nov** : technique cloud_density_AABB uses SM5.1 and shader updated to use templatized constant buffers.
+| **Tue 09 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4
 | **Mon 08 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4
 | **Mon 08 Nov** : Updated cloud_raytrace_constants.sl to use SIMUL_TEMPLATIZED_CONSTANT_BUFFER. Minor amendments to cloud_raytrace.sl, cloud_raytrace.sfx uses amortization and non-global constant buffers. Fixed intersection shader scale error. Other minor fixes.
 | **Sat 06 Nov** : Compile fix.
 | **Fri 05 Nov** : cbParticleUpdateConstants fixed misaligned constant buffer members.
+| **Thu 04 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4
 | **Tue 02 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4
 | **Tue 02 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4. Fix for performance issues in SkySequencer.
 | **Thu 28 Oct** : Update to SDK docs
 | **Thu 28 Oct** : WIP - DXR updates: Fence names, using precipitationVolume, updated CloudRenderingOptions, CloudRenderer::RenderPrecipitationVolumeTexture has cross-queue execution dependencies. SetCloudWindow() and SetCloudRenderingOptions() added to class CloudRaytraceLighting. Minor update to DXR UI. Extensive addition to in-scatter and mie functions along with intersection and hit shader.
 | **Thu 28 Oct** : Fix platform::core namespace compile errors.
 | **Mon 25 Oct** : TrueSkyPluginRender fix for ID3D11RenderTargetView* allocated from GetCustomD3D11RTV() not being released.
+| **Thu 14 Oct** : Initial Lat/Long Change, renamed functions to show if value is local or geocentric, as well as Degrees or radians. Renamed LightingSetupStruct to LightingState, KeyframeInUseState to CurrentState. Store Position within LightingState.
 | **Wed 13 Oct** : Updated names used in CreateTexture().
 | **Fri 08 Oct** : Revert changes to CS_LAYOUT for CS_InterpLightTable().
 | **Wed 06 Oct** : Updated the CS_LAYOUT for CS_InterpLightTable().
@@ -89,14 +100,3 @@ Changelist
 | **Tue 15 Jun** : Minor correction.
 | **Mon 14 Jun** : TrueSkyPluginRender moved Vulkan out into separate functions. UnityViewStruct::colourTextureArrayIndex added and updated IUnityGraphicsVulkan.h. UnityD3D12Context better handled of reloading the context. GetCustomD3D11RTV() for Unity HDRP skylights.
 | **Mon 14 Jun** : Added WinPixGpuCapturer support to SkySequencer.
-| **Wed 02 Jun** : Minor change to clouds_experimental.sl
-| **Tue 01 Jun** : Updated clouds_experimental.sl noiseval calculation and step count for performance. cloud_update.sfx illumation texture updated values.
-| **Tue 01 Jun** : Updated clouds_experimental.sl removed upsampling_offset, changed opacity calculation and added cosine value to ColourStep2().
-| **Tue 01 Jun** : Updated clouds_experimental.sl and clouds_raytrace.sl
-| **Tue 01 Jun** : Add CloudDepthTemporalAlpha to UI and default to 0.5. Add Cycle overlay view id to Main UI.
-| **Wed 26 May** : Updated to support WinGDK.
-| **Tue 25 May** : Updated conditional statement in UnityRenderEventD3D12(). Better viewport assignment in UnityRenderFrame().
-| **Mon 24 May** : offset fix
-| **Mon 24 May** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Mon 24 May** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Mon 24 May** : Update worleyTexcoordOffset to worleyOffsetKm. Removed noise3DTexcoordScale2, noise3DTexcoordOffset2 and EdgeNoiseWavelength2Km from shaders. Update noise input from cloud_lighting.sfx and updated cloud_experimental.sla and others.

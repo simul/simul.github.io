@@ -173,18 +173,29 @@
   <div class="section" id="changelist">
 <h1>Changelist<a class="headerlink" href="#changelist" title="Permalink to this headline">¶</a></h1>
 <div class="line-block">
+<div class="line"><strong>Fri 12 Nov</strong> : Fix compile errors for Sample projects.</div>
+<div class="line"><strong>Thu 11 Nov</strong> : Fix warnings. Use doubles for origin lat long.</div>
+<div class="line"><strong>Wed 10 Nov</strong> : Merge branch ‘4.4’ of github.com:simul/Simul into 4.4</div>
+<div class="line"><strong>Wed 10 Nov</strong> : Fixed warnings</div>
+<div class="line"><strong>Wed 10 Nov</strong> : Warnings fix.</div>
+<div class="line"><strong>Wed 10 Nov</strong> : Merge branch ‘4.4’ of github.com:simul/Simul into 4.4</div>
+<div class="line"><strong>Wed 10 Nov</strong> : Merge branch ‘4.4’ of github.com:simul/Simul into 4.4</div>
+<div class="line"><strong>Wed 10 Nov</strong> : Fix global_weather.sfx for GLSL compile errors.</div>
 <div class="line"><strong>Tue 09 Nov</strong> : Fixed register values in global_weather.sfx for PSSL.</div>
 <div class="line"><strong>Tue 09 Nov</strong> : technique cloud_density_AABB uses SM5.1 and shader updated to use templatized constant buffers.</div>
+<div class="line"><strong>Tue 09 Nov</strong> : Merge branch ‘4.4’ of github.com:simul/Simul into 4.4</div>
 <div class="line"><strong>Mon 08 Nov</strong> : Merge branch ‘4.4’ of github.com:simul/Simul into 4.4</div>
 <div class="line"><strong>Mon 08 Nov</strong> : Updated cloud_raytrace_constants.sl to use SIMUL_TEMPLATIZED_CONSTANT_BUFFER. Minor amendments to cloud_raytrace.sl, cloud_raytrace.sfx uses amortization and non-global constant buffers. Fixed intersection shader scale error. Other minor fixes.</div>
 <div class="line"><strong>Sat 06 Nov</strong> : Compile fix.</div>
 <div class="line"><strong>Fri 05 Nov</strong> : cbParticleUpdateConstants fixed misaligned constant buffer members.</div>
+<div class="line"><strong>Thu 04 Nov</strong> : Merge branch ‘4.4’ of github.com:simul/Simul into 4.4</div>
 <div class="line"><strong>Tue 02 Nov</strong> : Merge branch ‘4.4’ of github.com:simul/Simul into 4.4</div>
 <div class="line"><strong>Tue 02 Nov</strong> : Merge branch ‘4.4’ of github.com:simul/Simul into 4.4. Fix for performance issues in SkySequencer.</div>
 <div class="line"><strong>Thu 28 Oct</strong> : Update to SDK docs</div>
 <div class="line"><strong>Thu 28 Oct</strong> : WIP - DXR updates: Fence names, using precipitationVolume, updated CloudRenderingOptions, CloudRenderer::RenderPrecipitationVolumeTexture has cross-queue execution dependencies. SetCloudWindow() and SetCloudRenderingOptions() added to class CloudRaytraceLighting. Minor update to DXR UI. Extensive addition to in-scatter and mie functions along with intersection and hit shader.</div>
 <div class="line"><strong>Thu 28 Oct</strong> : Fix platform::core namespace compile errors.</div>
 <div class="line"><strong>Mon 25 Oct</strong> : TrueSkyPluginRender fix for ID3D11RenderTargetView* allocated from GetCustomD3D11RTV() not being released.</div>
+<div class="line"><strong>Thu 14 Oct</strong> : Initial Lat/Long Change, renamed functions to show if value is local or geocentric, as well as Degrees or radians. Renamed LightingSetupStruct to LightingState, KeyframeInUseState to CurrentState. Store Position within LightingState.</div>
 <div class="line"><strong>Wed 13 Oct</strong> : Updated names used in CreateTexture().</div>
 <div class="line"><strong>Fri 08 Oct</strong> : Revert changes to CS_LAYOUT for CS_InterpLightTable().</div>
 <div class="line"><strong>Wed 06 Oct</strong> : Updated the CS_LAYOUT for CS_InterpLightTable().</div>
@@ -262,17 +273,6 @@
 <div class="line"><strong>Tue 15 Jun</strong> : Minor correction.</div>
 <div class="line"><strong>Mon 14 Jun</strong> : TrueSkyPluginRender moved Vulkan out into separate functions. UnityViewStruct::colourTextureArrayIndex added and updated IUnityGraphicsVulkan.h. UnityD3D12Context better handled of reloading the context. GetCustomD3D11RTV() for Unity HDRP skylights.</div>
 <div class="line"><strong>Mon 14 Jun</strong> : Added WinPixGpuCapturer support to SkySequencer.</div>
-<div class="line"><strong>Wed 02 Jun</strong> : Minor change to clouds_experimental.sl</div>
-<div class="line"><strong>Tue 01 Jun</strong> : Updated clouds_experimental.sl noiseval calculation and step count for performance. cloud_update.sfx illumation texture updated values.</div>
-<div class="line"><strong>Tue 01 Jun</strong> : Updated clouds_experimental.sl removed upsampling_offset, changed opacity calculation and added cosine value to ColourStep2().</div>
-<div class="line"><strong>Tue 01 Jun</strong> : Updated clouds_experimental.sl and clouds_raytrace.sl</div>
-<div class="line"><strong>Tue 01 Jun</strong> : Add CloudDepthTemporalAlpha to UI and default to 0.5. Add Cycle overlay view id to Main UI.</div>
-<div class="line"><strong>Wed 26 May</strong> : Updated to support WinGDK.</div>
-<div class="line"><strong>Tue 25 May</strong> : Updated conditional statement in UnityRenderEventD3D12(). Better viewport assignment in UnityRenderFrame().</div>
-<div class="line"><strong>Mon 24 May</strong> : offset fix</div>
-<div class="line"><strong>Mon 24 May</strong> : Merge branch ‘4.4’ of github.com:simul/Simul into 4.4</div>
-<div class="line"><strong>Mon 24 May</strong> : Merge branch ‘4.4’ of github.com:simul/Simul into 4.4</div>
-<div class="line"><strong>Mon 24 May</strong> : Update worleyTexcoordOffset to worleyOffsetKm. Removed noise3DTexcoordScale2, noise3DTexcoordOffset2 and EdgeNoiseWavelength2Km from shaders. Update noise input from cloud_lighting.sfx and updated cloud_experimental.sla and others.</div>
 </div>
 </div>
 
