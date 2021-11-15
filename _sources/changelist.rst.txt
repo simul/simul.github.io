@@ -1,5 +1,10 @@
 Changelist 
 ========= 
+| **Fri 12 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Fri 12 Nov** : Warning fix
+| **Fri 12 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Fri 12 Nov** : CloudRenderer::RenderPrecipitationVolumeTexture() updated for better interaction with CloudRaytraceLighting through synchronisation.
+| **Fri 12 Nov** : Deprecation warning fix
 | **Fri 12 Nov** : Fix compile errors for Sample projects.
 | **Thu 11 Nov** : Fix warnings. Use doubles for origin lat long.
 | **Wed 10 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4
@@ -95,8 +100,3 @@ Changelist
 | **Tue 29 Jun** : Merge branch '4.4' of github.com:simul/Simul into 4.4
 | **Tue 29 Jun** : RenderTarget checks for PS4.
 | **Thu 24 Jun** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Thu 24 Jun** : Fix delayload settings. DELAYIMP_INSECURE_WRITABLE_HOOKS to test dll loading.
-| **Mon 21 Jun** : GetCustomD3D11RTV() does typeless to typed convert of image format. Minor update to OpenGLSample for RenderDoc support. Better checks on textures for DX11 and DX12.
-| **Tue 15 Jun** : Minor correction.
-| **Mon 14 Jun** : TrueSkyPluginRender moved Vulkan out into separate functions. UnityViewStruct::colourTextureArrayIndex added and updated IUnityGraphicsVulkan.h. UnityD3D12Context better handled of reloading the context. GetCustomD3D11RTV() for Unity HDRP skylights.
-| **Mon 14 Jun** : Added WinPixGpuCapturer support to SkySequencer.
