@@ -1,5 +1,6 @@
 Changelist 
 ========= 
+| **Thu 25 Nov** : Fixes/improvements for CMake and setup
 | **Fri 12 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4
 | **Fri 12 Nov** : Warning fix
 | **Fri 12 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4
@@ -99,4 +100,3 @@ Changelist
 | **Thu 01 Jul** : Update ExportSlack.py
 | **Tue 29 Jun** : Merge branch '4.4' of github.com:simul/Simul into 4.4
 | **Tue 29 Jun** : RenderTarget checks for PS4.
-| **Thu 24 Jun** : Merge branch '4.4' of github.com:simul/Simul into 4.4
