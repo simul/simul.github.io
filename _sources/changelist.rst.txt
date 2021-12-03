@@ -1,5 +1,7 @@
 Changelist 
 ========= 
+| **Thu 02 Dec** : Build Fix
+| **Thu 25 Nov** : Fix for setting lightingState.
 | **Thu 25 Nov** : Fixes/improvements for CMake and setup
 | **Fri 12 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4
 | **Fri 12 Nov** : Warning fix
@@ -98,5 +100,3 @@ Changelist
 | **Sun 04 Jul** : Added WGS84 support. WGS84 coordinate system now applies internally in CloudWindow. X=Meridian, Y=90 deg East, Z=North Pole as before.
 | **Sun 04 Jul** : Added GlobalWeather system, experimental.
 | **Thu 01 Jul** : Update ExportSlack.py
-| **Tue 29 Jun** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Tue 29 Jun** : RenderTarget checks for PS4.
