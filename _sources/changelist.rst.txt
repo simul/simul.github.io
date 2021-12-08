@@ -1,5 +1,7 @@
 Changelist 
 ========= 
+| **Tue 07 Dec** : Docs CMakeLists.txt
+| **Mon 06 Dec** : Platform Pointer
 | **Thu 02 Dec** : Build Fix
 | **Thu 25 Nov** : Fix for setting lightingState.
 | **Thu 25 Nov** : Fixes/improvements for CMake and setup
@@ -98,5 +100,3 @@ Changelist
 | **Sun 04 Jul** : Global weather: advection is now functional.
 | **Sun 04 Jul** : Added Docs folder for Sphinx documentation.
 | **Sun 04 Jul** : Added WGS84 support. WGS84 coordinate system now applies internally in CloudWindow. X=Meridian, Y=90 deg East, Z=North Pole as before.
-| **Sun 04 Jul** : Added GlobalWeather system, experimental.
-| **Thu 01 Jul** : Update ExportSlack.py
