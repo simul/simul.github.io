@@ -1,5 +1,6 @@
 Changelist 
 ========= 
+| **Tue 28 Dec** : Re-enabled the code which was disabled despite being marked "DO NOT DISABLE THIS CODE."
 | **Tue 07 Dec** : Docs CMakeLists.txt
 | **Mon 06 Dec** : Platform Pointer
 | **Thu 02 Dec** : Build Fix
@@ -99,4 +100,3 @@ Changelist
 | **Tue 06 Jul** : Velocity trails.
 | **Sun 04 Jul** : Global weather: advection is now functional.
 | **Sun 04 Jul** : Added Docs folder for Sphinx documentation.
-| **Sun 04 Jul** : Added WGS84 support. WGS84 coordinate system now applies internally in CloudWindow. X=Meridian, Y=90 deg East, Z=North Pole as before.
