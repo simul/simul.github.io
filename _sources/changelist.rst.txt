@@ -1,5 +1,6 @@
 Changelist 
 ========= 
+| **Tue 01 Mar** : Rename RainEffect to Virga, added VirgaNearThresholdKm, update ExternalRenderValues.
 | **Tue 28 Dec** : Re-enabled the code which was disabled despite being marked "DO NOT DISABLE THIS CODE."
 | **Tue 07 Dec** : Docs CMakeLists.txt
 | **Mon 06 Dec** : Platform Pointer
@@ -99,4 +100,3 @@ Changelist
 | **Thu 08 Jul** : Updated cloud_edit.sfx for better rendering of elements 'on the sphere'.
 | **Tue 06 Jul** : Velocity trails.
 | **Sun 04 Jul** : Global weather: advection is now functional.
-| **Sun 04 Jul** : Added Docs folder for Sphinx documentation.
