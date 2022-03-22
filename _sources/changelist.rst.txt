@@ -1,17 +1,83 @@
 Changelist 
 ========= 
+| **Tue 22 Mar** : Updated cloud volumes documentation. First pass.
+| **Tue 22 Mar** : Platform ptr.
+| **Tue 22 Mar** : Merge remote-tracking branch 'remotes/origin/4.3' into 4.4
+| **Tue 22 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Tue 22 Mar** : Cloud Volume Culling. CloudVolume updated with new enum classes. CloudKeyframer::SetVolume() parameters updated. CloudVolume_densityspace updated and values set correctly. Update to CloudLayerEditWidget UI with drop downs and update button; SkyTimelineWidget::NewCloudVolume() updated too. PluginTrueSkyRenderer::Set() for cloudvolume updated. GetVolumeMultiplier() supports culling volumes. Other minor clean up.
+| **Mon 21 Mar** : Merge from 4.3 fixes.
+| **Fri 18 Mar** : Shader fix for Vulkan.
+| **Thu 17 Mar** : Merge remote-tracking branch 'remotes/origin/4.3' into 4.4
+| **Thu 17 Mar** : Rename BaseWeatherRenderer to WeatherRenderer. Update to use improved Platform dev branch: framenumber is a renderplatform property, not deviceContext.
+| **Thu 17 Mar** : Improved curved-Earth variable grid cloud rendering. Clouds fade out close to max distance.
+| **Thu 17 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Thu 17 Mar** : Horizon distance on camera widget.
+| **Wed 16 Mar** : Ground fog fixed for height bound rendering. lerp function with cloud depth to scale fogLoss.
+| **Tue 15 Mar** : Platform ptr. GetSimpleIlluminationAt() take model space positions not world space. Model space positions are passed through from VS to PS in terrain.sfx.
+| **Thu 10 Mar** : Reduce distant noise in clouds_experimental.sl
+| **Thu 10 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Thu 10 Mar** : Fill max_tex_z into green channel of precipitation volume.
+| **Wed 09 Mar** : name compare fix.
+| **Wed 09 Mar** : Terrain curvature now mostly correct.
+| **Wed 09 Mar** : Fix precipitationVolume amortization offset.
+| **Tue 08 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Tue 08 Mar** : Rain streak/ virga improvements: virga should not appear above clouds.
+| **Mon 07 Mar** : removed unused variables, performance checks.
+| **Fri 04 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Fri 04 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Fri 04 Mar** : Correctly use skykeyframer planet radius in cloud rendering. planetRadiusKm now in cloud_constants.sl Mostly fixed curved Earth cloud rendering in clouds_experimental.sl Corrected atmospheric inscattering altitude lookup in variable grid (clouds_experimental.sl) render, for true altitude rather than z offset.
+| **Thu 03 Mar** : Increase UI variable max values
+| **Wed 02 Mar** : Compile fix
+| **Tue 01 Mar** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Tue 01 Mar** : Merge pull request #14 from simul/nicksimultec
+| **Tue 01 Mar** : warning fix
 | **Tue 01 Mar** : Rename RainEffect to Virga, added VirgaNearThresholdKm, update ExternalRenderValues.
+| **Tue 01 Mar** : small additions to previous commit.
+| **Mon 28 Feb** : Rename RainEffect to Virga, added VirgaNearThresholdKm, update ExternalRenderValues.
+| **Sun 27 Feb** : Cleaned the code from experimental snippets and added DirectLight, IndirectLight and Extinction to be set by SetFloat
+| **Thu 03 Feb** : Set minimum worleyEdgeAmplitude 0.01
+| **Thu 03 Feb** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Fri 28 Jan** : Organised SiderealSky class.
+| **Fri 21 Jan** : platform pointer
+| **Fri 14 Jan** : Minor clean up. CopyToTargetDir.py works for both UE4 and UE5. Update "cloudshadowheight" get/set functions in plugin. ExternalRenderValues reverted. PS_AltCloudShadow() WIP.
+| **Mon 10 Jan** : Fix for terrain.sfx GetSimpleIlluminationAt().
+| **Mon 10 Jan** : Moved, cleaned up and renamed CloudShadowStruct to CloudShadowData in CloudShadow.h. Variant has vec4Val in its union. Removed old sampler and textures from BaseCloudRenderer, etc. CloudRenderingOptions::ShadowTextureSize removed as this is defined by the shadow range. Removed shadowTextureSize from UI, "CloudShadowTextureSize" and CLOUD_SHADOW_TEXTURE_SIZE from plugin. Update plugin enums; ExternalRenderValues is version 9. CLOUD_WINDOW_ORIGIN references quaternion. Recommit old changes to cloud_shadow.sl
+| **Fri 07 Jan** : Renamed MakeCloudShadowTexture() to InitialiseCloudShadowStruct() and removed SetCloudShadowPerViewConstants(). terrainConstants.shadowRange renamed to terrainConstants.shadowRangeKm. Cloud shadows can wrap if shadow scale matches cloud scale. shadowspaceToCloudspaceMatrix is just a scale matrix. Added cloudOffsetKm to GetSimpleIlluminationAt().
+| **Wed 05 Jan** : Fix for cloud shadow plus winds in SkySequencer.
+| **Tue 04 Jan** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Tue 04 Jan** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Tue 04 Jan** : CloudShadowStruct::shadowSampleHeightKm added. shadowTextureSize has been removed from UI as this set by the shadow range. GetSimpleIlluminationAt() in cloud_shadow.sl update to sync the movement of shadows with the sun's position. Shadows fade out at low sun elevations.
+| **Thu 30 Dec** : In CopyToTargetDir.py, change ue4 references to simply ue.
 | **Tue 28 Dec** : Re-enabled the code which was disabled despite being marked "DO NOT DISABLE THIS CODE."
+| **Tue 21 Dec** : Fix cloudScale build error.
+| **Tue 21 Dec** : Fix GetSimpleIllumination shader bug.
+| **Fri 17 Dec** : Upadte for Eblit clouds shadow. Still WIP.
+| **Thu 16 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Thu 16 Dec** : GetCloudBase call
+| **Thu 16 Dec** : Added check for pre-existing QT installation.
+| **Wed 08 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Wed 08 Dec** : Setup.py - Added warning to ask user to check Vulkan version or add vulkan version path.
+| **Wed 08 Dec** : Platform ptr.
+| **Tue 07 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Tue 07 Dec** : WIP: Changes to shadow matrix from ObliqueToCartesian to a 'transform and scale'. Unnecessary #include "cloud_shadow.sl" removed from shaders. PS_CloudShadow() PS_Main() in terrain.sfx updated. GetSimpleIlluminationAt() updated to use a 'clamp' sampler. BaseTerrainRenderer.cpp minor clean ups.
 | **Tue 07 Dec** : Docs CMakeLists.txt
 | **Mon 06 Dec** : Platform Pointer
 | **Thu 02 Dec** : Build Fix
+| **Thu 02 Dec** : Build fix
+| **Mon 29 Nov** : Standalone Moon UI
 | **Thu 25 Nov** : Fix for setting lightingState.
+| **Thu 25 Nov** : Change a CERR to COUT
 | **Thu 25 Nov** : Fixes/improvements for CMake and setup
+| **Wed 24 Nov** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Wed 24 Nov** : update to Setup.py, to disable Vulkan support if SDK version does not exist
+| **Wed 17 Nov** : Texture slot fix
+| **Fri 12 Nov** : Fix for QT Warning
 | **Fri 12 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4
 | **Fri 12 Nov** : Warning fix
 | **Fri 12 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4
 | **Fri 12 Nov** : CloudRenderer::RenderPrecipitationVolumeTexture() updated for better interaction with CloudRaytraceLighting through synchronisation.
 | **Fri 12 Nov** : Deprecation warning fix
+| **Fri 12 Nov** : Warnings fix
 | **Fri 12 Nov** : Fix compile errors for Sample projects.
 | **Thu 11 Nov** : Fix warnings. Use doubles for origin lat long.
 | **Wed 10 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4
@@ -25,78 +91,12 @@ Changelist
 | **Tue 09 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4
 | **Mon 08 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4
 | **Mon 08 Nov** : Updated cloud_raytrace_constants.sl to use SIMUL_TEMPLATIZED_CONSTANT_BUFFER. Minor amendments to cloud_raytrace.sl, cloud_raytrace.sfx uses amortization and non-global constant buffers. Fixed intersection shader scale error. Other minor fixes.
+| **Sat 06 Nov** : Fix one warning.
+| **Sat 06 Nov** : Added PlanetRenderer.
 | **Sat 06 Nov** : Compile fix.
+| **Sat 06 Nov** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Sat 06 Nov** : Fix platform texture call to remove old function signature.
+| **Fri 05 Nov** : cbParticleUpdateConstants fixed misaligned constant buffer members.
 | **Fri 05 Nov** : cbParticleUpdateConstants fixed misaligned constant buffer members.
 | **Thu 04 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4
 | **Tue 02 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Tue 02 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4. Fix for performance issues in SkySequencer.
-| **Thu 28 Oct** : Update to SDK docs
-| **Thu 28 Oct** : WIP - DXR updates: Fence names, using precipitationVolume, updated CloudRenderingOptions, CloudRenderer::RenderPrecipitationVolumeTexture has cross-queue execution dependencies. SetCloudWindow() and SetCloudRenderingOptions() added to class CloudRaytraceLighting. Minor update to DXR UI. Extensive addition to in-scatter and mie functions along with intersection and hit shader.
-| **Thu 28 Oct** : Fix platform::core namespace compile errors.
-| **Mon 25 Oct** : TrueSkyPluginRender fix for ID3D11RenderTargetView* allocated from GetCustomD3D11RTV() not being released.
-| **Thu 14 Oct** : Initial Lat/Long Change, renamed functions to show if value is local or geocentric, as well as Degrees or radians. Renamed LightingSetupStruct to LightingState, KeyframeInUseState to CurrentState. Store Position within LightingState.
-| **Wed 13 Oct** : Updated names used in CreateTexture().
-| **Fri 08 Oct** : Revert changes to CS_LAYOUT for CS_InterpLightTable().
-| **Wed 06 Oct** : Updated the CS_LAYOUT for CS_InterpLightTable().
-| **Tue 05 Oct** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Tue 05 Oct** : Moved ERRNO_BREAK as illegal else statement was created.
-| **Mon 04 Oct** : Build fix
-| **Mon 27 Sep** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Mon 27 Sep** : Storms per layer, doc updates, UI updates, Standalone Moon UI.
-| **Mon 27 Sep** : Missed changes
-| **Mon 27 Sep** : Added basic unreal materials documentation
-| **Mon 20 Sep** : Small water fixes, fix for atmospheric scattering and sun direction not matching up when not at the default origin, small fixes to unreal documentation
-| **Fri 17 Sep** : cloud_raytrace.sl added convenience, space transformation, Mie and inscattering functions. cloud_raytrace_constants.sl update to payload, attributes and constant buffers. cloud_raytrace.sfx fleshing out and updating raygen, intersection and closet hit shaders. Minor changes to reflect shader changes in CloudRaytraceLighting.
-| **Thu 16 Sep** : Update to installation.rst and skysequencer.rst.
-| **Wed 15 Sep** : Updated Docs/skysequencer.rst.
-| **Wed 15 Sep** : Added skysequencer.rst link.
-| **Wed 15 Sep** : Updated Docs/installation.rst and images.
-| **Mon 13 Sep** : Added changelist to docs
-| **Thu 09 Sep** : Added new documentation
-| **Tue 07 Sep** : Removed old commented code from Sky/SkyKeyframer.cpp.
-| **Wed 01 Sep** : Fixed worley noise gridding issue in Variable Grid rendering. Fixed stepping worley noise in Standard Grid rendering.
-| **Tue 31 Aug** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Tue 31 Aug** : Added rain streaks to clouds_experimental.sl; cloud_raytrace.sl rain streak noise fix. Added GetPrecipitationAtOffsetKm(). Updated parameters for GetRainAtOffsetKm() and GetRainToSnowAtOffsetKm(). Ported from 4.3.
-| **Tue 31 Aug** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Tue 31 Aug** : Temp cmake changes for docs
-| **Fri 27 Aug** : Changed SIMUL_SUPPORT_PS4 to PLATFORM_PS4 in CMakeLists.txt.
-| **Thu 26 Aug** : Update CMakeLists for docs.
-| **Thu 26 Aug** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Thu 26 Aug** : EffectDefineOptions and defines removed from creating Effect.
-| **Wed 25 Aug** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Wed 25 Aug** : Doc update, added ScaleKM, other small fixes.
-| **Mon 23 Aug** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Mon 23 Aug** : rotate by 90 degrees before and after sidereal transform. This is necessary because we consider the default X axis to be East for compatibility with 4.3, but the initial rotation of 90 degrees by the WGS-84 Y axis towards (0,0) latitude and longitude would give X south. May be best in future to make default X south for convenience.
-| **Fri 20 Aug** : Small fix for godrays scaling
-| **Fri 20 Aug** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Fri 20 Aug** : Small fix to make sure that automatic sun position can be re-enabled
-| **Fri 20 Aug** : Fix for TrueSkySample.cpp overriding PlatformRendererInterface::Render().
-| **Wed 18 Aug** : Updated to support async compute in SkySequencer. Not test in Unity or UE4. CloudRaytraceLighting refactored basic functions RestoreDeviceObjects(), InvalidateDeviceObjects(), RecompileShaders() etc. Change GenerateCloudDensityAABB() and Raytrace() to submit to the Compute Queue, RenderAABBWireframe() and ShowCloudRaytracingLightingTextures wait on the Compute Queue to use the generated resources. RaysPerVoxel added to CloudRenderingOptions; and slider to the UI. WindowUpdater cleaned up and changed to support periodic AccelerationStructure rebuild and continuous Raytrace. ExternalRenderValues updated to version 8 for raytracing variables.
-| **Tue 17 Aug** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Wed 11 Aug** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Wed 11 Aug** : Fix Sharpness and Worley amplitude in Variable Grid. Cleaned up WindowUpdater calls.
-| **Tue 03 Aug** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Tue 03 Aug** : Added build acceleration structures to CloudRaytraceLighting.
-| **Mon 02 Aug** : Change copy pass to "replace" for loss 2D.
-| **Mon 02 Aug** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Mon 02 Aug** : Update CloudRaytraceLighting to use async compute - WIP.
-| **Mon 02 Aug** : Fix Platform compilation errors.
-| **Mon 02 Aug** : Fix compile errors.
-| **Fri 30 Jul** : Initial Hadley cell implementation in GlobalWeatherRenderer.
-| **Fri 30 Jul** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Thu 29 Jul** : WIP CloudRaytraceLighting update.
-| **Thu 29 Jul** : WIP added RT cloud UI and overlays. cloud_raytrace.sfx used constant buffer for TraceRays parameters. CloudRaytraceLighting.h updated with ShaderBindingTable and new methods.
-| **Tue 20 Jul** : RenderingPlugin.cpp InitDefaultTargets() will note continuously log warning.
-| **Mon 19 Jul** : CloudThresholdDistanceKm is now in Has/Get/SetFloat().
-| **Mon 19 Jul** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Mon 19 Jul** : Small update to day loops
-| **Wed 14 Jul** : PluginTrueSkyRenderer::SetTexture() checks for valid texture. Platform updated too. SIMUL_CERR changed to SIMUL_CERR_ONCE in UnityD3D12Context.
-| **Mon 12 Jul** : Save this version before implementing Chorin projection method.
-| **Fri 09 Jul** : Update to CreateRTV().
-| **Fri 09 Jul** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Fri 09 Jul** : Better checks in UnityD3D12Context::CreateRTV().
-| **Fri 09 Jul** : Minor fixes for Jarvis build.
-| **Thu 08 Jul** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Thu 08 Jul** : Updated cloud_edit.sfx for better rendering of elements 'on the sphere'.
-| **Tue 06 Jul** : Velocity trails.
-| **Sun 04 Jul** : Global weather: advection is now functional.
