@@ -1,6 +1,9 @@
 Changelist 
 ========= 
+| **Wed 23 Mar** : Merge remote-tracking branch 'remotes/origin/4.3' into 4.4
+| **Wed 23 Mar** : Platform ptr. RenderStyle clean up.
 | **Tue 22 Mar** : Updated cloud volumes documentation. First pass.
+| **Tue 22 Mar** : Platform ptr.
 | **Tue 22 Mar** : Platform ptr.
 | **Tue 22 Mar** : Merge remote-tracking branch 'remotes/origin/4.3' into 4.4
 | **Tue 22 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
@@ -97,6 +100,3 @@ Changelist
 | **Sat 06 Nov** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Sat 06 Nov** : Fix platform texture call to remove old function signature.
 | **Fri 05 Nov** : cbParticleUpdateConstants fixed misaligned constant buffer members.
-| **Fri 05 Nov** : cbParticleUpdateConstants fixed misaligned constant buffer members.
-| **Thu 04 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Tue 02 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4
