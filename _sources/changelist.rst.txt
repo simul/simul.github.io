@@ -1,5 +1,22 @@
 Changelist 
 ========= 
+| **Wed 30 Mar** : Fix sampler compile errors.
+| **Wed 30 Mar** : Fixed member initialiser lists for Qt.
+| **Wed 30 Mar** : Fix compile error for Vulkan in terrain.sfx
+| **Wed 30 Mar** : Platform ptr.
+| **Wed 30 Mar** : Platform ptr to dev branch.
+| **Tue 29 Mar** : Merge remote-tracking branch 'remotes/origin/4.3' into 4.4
+| **Tue 29 Mar** : Platform ptr.
+| **Mon 28 Mar** : In clouds_experimental.sl, we use double grid density for lookups in the grid-rendered zone.
+| **Mon 28 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Mon 28 Mar** : Cloud shadows use light texture, not cloud density!
+| **Mon 28 Mar** : Platform ptr.
+| **Mon 28 Mar** : RenderFrame(), GetColourTexture cleaned up. Added GetDepthTexture(). PluginTrueSkyRenderer::RenderFrame() cleaned up. Removed old comments. Fix spaces and tabs.
+| **Fri 25 Mar** : terrain.sfx: dot() in PS_Main() for parameters of the same type. Platform ptr.
+| **Thu 24 Mar** : Fix black virga artifacts at ground level.
+| **Thu 24 Mar** : Calculate distant cloud rendering uniform step for clouds_experimental.sl using approximate grid step size. This way, the steps should be approximately equivalent.
+| **Thu 24 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Thu 24 Mar** : Variable grid transitions to regular steps past 100km. Fix incorrect cloud light lookup - visible esp. at sunrise/sunset. Fix terrain curvature.
 | **Wed 23 Mar** : Merge remote-tracking branch 'remotes/origin/4.3' into 4.4
 | **Wed 23 Mar** : Platform ptr. RenderStyle clean up.
 | **Tue 22 Mar** : Updated cloud volumes documentation. First pass.
@@ -83,20 +100,3 @@ Changelist
 | **Fri 12 Nov** : Warnings fix
 | **Fri 12 Nov** : Fix compile errors for Sample projects.
 | **Thu 11 Nov** : Fix warnings. Use doubles for origin lat long.
-| **Wed 10 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Wed 10 Nov** : Fixed warnings
-| **Wed 10 Nov** : Warnings fix.
-| **Wed 10 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Wed 10 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Wed 10 Nov** : Fix global_weather.sfx for GLSL compile errors.
-| **Tue 09 Nov** : Fixed register values in global_weather.sfx for PSSL.
-| **Tue 09 Nov** : technique cloud_density_AABB uses SM5.1 and shader updated to use templatized constant buffers.
-| **Tue 09 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Mon 08 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Mon 08 Nov** : Updated cloud_raytrace_constants.sl to use SIMUL_TEMPLATIZED_CONSTANT_BUFFER. Minor amendments to cloud_raytrace.sl, cloud_raytrace.sfx uses amortization and non-global constant buffers. Fixed intersection shader scale error. Other minor fixes.
-| **Sat 06 Nov** : Fix one warning.
-| **Sat 06 Nov** : Added PlanetRenderer.
-| **Sat 06 Nov** : Compile fix.
-| **Sat 06 Nov** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Sat 06 Nov** : Fix platform texture call to remove old function signature.
-| **Fri 05 Nov** : cbParticleUpdateConstants fixed misaligned constant buffer members.
