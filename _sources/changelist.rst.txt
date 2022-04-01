@@ -1,5 +1,6 @@
 Changelist 
 ========= 
+| **Thu 31 Mar** : Compilation fixes for TrueSkyPluginRender and Platform ptr.
 | **Wed 30 Mar** : Fix sampler compile errors.
 | **Wed 30 Mar** : Fixed member initialiser lists for Qt.
 | **Wed 30 Mar** : Fix compile error for Vulkan in terrain.sfx
@@ -99,4 +100,3 @@ Changelist
 | **Fri 12 Nov** : Deprecation warning fix
 | **Fri 12 Nov** : Warnings fix
 | **Fri 12 Nov** : Fix compile errors for Sample projects.
-| **Thu 11 Nov** : Fix warnings. Use doubles for origin lat long.
