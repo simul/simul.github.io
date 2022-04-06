@@ -1,5 +1,11 @@
 Changelist 
 ========= 
+| **Wed 06 Apr** : Remove Scene for now. Platform ptr.
+| **Tue 05 Apr** : Fix some SkyKeyframer interpolation crashes due to null pointers.
+| **Tue 05 Apr** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Tue 05 Apr** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Tue 05 Apr** : Renaming "Base" rendering classes. Removing sky::float4 in favour of vec4 from crossplatform.
+| **Tue 05 Apr** : Add planet.sfx
 | **Thu 31 Mar** : Compilation fixes for TrueSkyPluginRender and Platform ptr.
 | **Wed 30 Mar** : Fix sampler compile errors.
 | **Wed 30 Mar** : Fixed member initialiser lists for Qt.
@@ -94,9 +100,3 @@ Changelist
 | **Wed 17 Nov** : Texture slot fix
 | **Fri 12 Nov** : Fix for QT Warning
 | **Fri 12 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Fri 12 Nov** : Warning fix
-| **Fri 12 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Fri 12 Nov** : CloudRenderer::RenderPrecipitationVolumeTexture() updated for better interaction with CloudRaytraceLighting through synchronisation.
-| **Fri 12 Nov** : Deprecation warning fix
-| **Fri 12 Nov** : Warnings fix
-| **Fri 12 Nov** : Fix compile errors for Sample projects.
