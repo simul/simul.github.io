@@ -1,5 +1,8 @@
 Changelist 
 ========= 
+| **Wed 06 Apr** : Possible fix for PfnDliHook compile error.
+| **Wed 06 Apr** : Fix compilation errors.
+| **Wed 06 Apr** : Platform ptr.
 | **Wed 06 Apr** : Remove Scene for now. Platform ptr.
 | **Tue 05 Apr** : Fix some SkyKeyframer interpolation crashes due to null pointers.
 | **Tue 05 Apr** : Merge branch '4.4' of github.com:simul/Simul into 4.4
@@ -97,6 +100,3 @@ Changelist
 | **Thu 25 Nov** : Fixes/improvements for CMake and setup
 | **Wed 24 Nov** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Wed 24 Nov** : update to Setup.py, to disable Vulkan support if SDK version does not exist
-| **Wed 17 Nov** : Texture slot fix
-| **Fri 12 Nov** : Fix for QT Warning
-| **Fri 12 Nov** : Merge branch '4.4' of github.com:simul/Simul into 4.4
