@@ -1,5 +1,7 @@
 Changelist 
 ========= 
+| **Thu 14 Apr** : Updated structs for HighDetail Variables
+| **Wed 13 Apr** : update 4.4 with improvements from 4.3
 | **Wed 06 Apr** : Possible fix for PfnDliHook compile error.
 | **Wed 06 Apr** : Fix compilation errors.
 | **Wed 06 Apr** : Platform ptr.
@@ -98,5 +100,3 @@ Changelist
 | **Thu 25 Nov** : Fix for setting lightingState.
 | **Thu 25 Nov** : Change a CERR to COUT
 | **Thu 25 Nov** : Fixes/improvements for CMake and setup
-| **Wed 24 Nov** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Wed 24 Nov** : update to Setup.py, to disable Vulkan support if SDK version does not exist
