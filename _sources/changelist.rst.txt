@@ -1,5 +1,7 @@
 Changelist 
 ========= 
+| **Mon 18 Apr** : Fix all image paths in rst sources.
+| **Mon 18 Apr** : Sphinx image paths relative to documentation root.
 | **Sun 17 Apr** : Merge branch '4.4' of github.com:simul/Simul into 4.4
 | **Sun 17 Apr** : Documentation: better initial description of plugin renderer.
 | **Thu 14 Apr** : Updated structs for HighDetail Variables
@@ -98,5 +100,3 @@ Changelist
 | **Mon 06 Dec** : Platform Pointer
 | **Thu 02 Dec** : Build Fix
 | **Thu 02 Dec** : Build fix
-| **Mon 29 Nov** : Standalone Moon UI
-| **Thu 25 Nov** : Fix for setting lightingState.

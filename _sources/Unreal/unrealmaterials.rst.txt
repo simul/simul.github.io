@@ -28,8 +28,8 @@ Example
 ```````
 Here is a basic example of a translucent material within a scene. It will be occluded by clouds, and will be affected by both loss and inscatter the further away from the object the viewpoint will get.
 
-.. image:: ../../../Help/images/unreal/Transparency.png
+.. image:: /../Help/images/unreal/Transparency.png
 
-.. image:: ../../../Help/images/unreal/TransparencyObject.png
+.. image:: /../Help/images/unreal/TransparencyObject.png
 
 .. _here: https://docs.unrealengine.com/4.27/en-US/RenderingAndGraphics/Materials/

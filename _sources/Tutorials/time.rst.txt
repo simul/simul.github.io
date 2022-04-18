@@ -48,7 +48,7 @@ Using Unreal's Cinematic Sequencer is easy, as we have made most of our variable
 TrueSKY supports three different modes of update - Game Time, Fixed Time and Real Time.
 
 
-.. image:: ../../../Help/images/unreal/updateoptions.png
+.. image:: /../Help/images/unreal/updateoptions.png
 
 The number of Subdivisions controls how finely the interpolation is performed. It is the number of intermediate steps between keyframes (for Fixed Intervals), or in the Game Time or Real Time period specified.
 

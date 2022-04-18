@@ -215,7 +215,7 @@ The <a class="reference internal" href="../Reference/Clouds/cloudrenderer.html">
 </pre></div>
 </div>
 <p>i.e. the x coordinate is proportional to the azimuth, and the y coordinate is proportional to the sine of the elevation.</p>
-<img alt="../../Help/images/MilkyWay.png" src="../../Help/images/MilkyWay.png" />
+<img alt="../_images/MilkyWay.png" src="../_images/MilkyWay.png" />
 <p>You may see some stretching at the top and bottom of the image due to degeneracy of the projection, so it is preferable to have the texture fade to black at the top and bottom edges.</p>
 </div>
 <div class="section" id="sun-and-stars">
@@ -250,7 +250,7 @@ Calculation performance - mainly cloud lighting - depends strongly on the grid s
 <p>The precipitation is used to control the amount of rain or snowfall at a given time, whilst the PrecipitationThresholdKm property is used to set the thickness of cloud required for rain to fall (setting this to 0 will allow even the smallest of clouds to produce rain). To switch between snow and rain use rain_to_snow (where 0 is rain, 1 is snow).</p>
 <p>Each cloud keyframe has a <a class="reference internal" href="../Reference/Clouds/cloudkeyframe.html"><span class="doc">PrecipitationRegion</span></a>, which defines the local area of precipitation,
 if it is not global for the keyframe. The amount of particles used for precipitation can be altered with the <a class="reference internal" href="../Reference/Clouds/precipitationrenderer.html"><span class="doc">MaxParticles</span></a> property.</p>
-<img alt="../../Help/images/Lightning-RainStreaks.jpg" src="../../Help/images/Lightning-RainStreaks.jpg" />
+<img alt="../_images/Lightning-RainStreaks.jpg" src="../_images/Lightning-RainStreaks.jpg" />
 <p>Classes derived from simul::clouds::BasePrecipitationRenderer are used to draw the rain or snow particles, while the link simul::clouds::PrecipitationRegion rain streak effectendlink is drawn by the cloud renderer. This class has a property “UseSimulationTime” which determines whether rain and snow speed is based on the simulated time-of-day, or real time in seconds.</p>
 </div>
 <div class="section" id="shaders">
@@ -264,7 +264,7 @@ usually with an extensionless filename passed to the function.</p>
 <h2>Mixed Resolution Rendering<a class="headerlink" href="#mixed-resolution-rendering" title="Permalink to this headline">¶</a></h2>
 <p>TrueSKY’s cloud rendering is usually performed at below the full resolution of the screen. This is because, as a raytracing system, its performance is highly dependent on the number of pixels drawn.</p>
 <p>Clouds and other volumetric effects can be blended with the full-resolution scene, optionally taking into account MSAA anti-aliasing. To do this, trueSKY uses a mixed-resolution compositor.</p>
-<img alt="../../Help/images/Compositing.png" src="../../Help/images/Compositing.png" />
+<img alt="../_images/Compositing.png" src="../_images/Compositing.png" />
 <p>The depth values passed to the weather renderer in your depth texture are processed to obtain the needed information for the compositing. This processing uses the projection matrix passed in in your DeviceContext object. The most efficient projection is usually the depth-reversed style, for which the far plane is at z=0.</p>
 </div>
 </div>

@@ -11,7 +11,7 @@ To build the samples, use CMake to configure and generate the project files, the
 Integrating the SDK
 ```````````````````
 
-.. image:: ../../../Help/images/SimulOverview.png
+.. image:: /../Help/images/SimulOverview.png
 
 The main elements needed to implement trueSKY in a project are: an Environment object, which will encapsulate sky and cloud data; a WeatherRenderer; and a RenderPlatform.
 
