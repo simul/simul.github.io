@@ -1,0 +1,38 @@
+Programming with the trueSKY SDK
+================================
+
+The SDK comes as a set of libraries, under a main "Simul" directory. These can be linked statically or dynamically, depending on the platform. CMake is used to build the binaries, which are found by default in "Simul/build/lib" in the case of static libraries, and "Simul/build/bin" for dll's. Source is found in the subdirectories for the constituent libraries.
+
+Namespace generally corresponds to the source file location. For example, simul::clouds::CloudRenderer is found in "Simul/Clouds/CloudRenderer.h".
+
+The compiled Windows libraries are in two runtime versions, MD and MT. The runtime is the set of libraries provided by Microsoft that provides basic system functions.
+You should generally use the same runtime all the way through a project, although different runtimes can be used for DLL's, because they are self-contained.
+
+For Windows, the Debug and Release configurations are supplied as DLL's linked against the dynamic, MD runtime.
+The Static Debug and Static Release configuratons are supplied as static libraries linked against the static, MT runtime.
+
+On other platforms, the default runtime and linkage is used.
+
+*  :doc:`Native <Programming/nativesdk>` - For native integrations.
+*  :doc:`Plugin <Programming/pluginrenderer>` - Integrations using the dynamic plugin dll.
+*  :doc:`Rendering <Programming/rendering>` - Rendering guide.
+*  :doc:`Performance Profiling <Programming/profiling>` - How to monitor and improve the performance of trueSKY in your application.
+*  :doc:`Debugging <Programming/debugging>` - How to use the debugging tools to fix issues.
+*  :doc:`Deployment <Programming/deployment>` - How to use the debugging tools to fix issues.
+*  :doc:`Plugin Rendering Interface <Programming/interface>` - Alternative way to connect trueSKY to a game or simulation.
+*  :doc:`Documented Code Base <Reference/referenceindex>` - Reference for the API and source code.
+
+.. _support form: https://simul.co/contact-us/
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   
+   Programming/nativesdk.rst
+   Programming/pluginrenderer.rst
+   Programming/rendering.rst
+   Programming/profiling.rst
+   Programming/debugging.rst
+   Programming/deployment.rst
+   Programming/interface.rst
+

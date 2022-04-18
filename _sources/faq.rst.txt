@@ -37,7 +37,7 @@ Try deleting the plugin folder Engine/Plugins/TrueSkyPlugin/Content and the plug
 
 When packaging the game, I get errors and/or the sky is black.
 `````````````````````````````````````````````````
-If you are using the binary installer, then you will need to follow some additional steps to be able to package your game with trueSKY. You can read about these :doc:`here </Programming/programmingdeployment>`. If these steps have been taken, there may be a conflict with another plugin. Currently known Plugins that have conflict issues can be found :ref:`here. <pluginconflicts>`
+If you are using the binary installer, then you will need to follow some additional steps to be able to package your game with trueSKY. You can read about these :doc:`here </Programming/deployment>`. If these steps have been taken, there may be a conflict with another plugin. Currently known Plugins that have conflict issues can be found :ref:`here. <pluginconflicts>`
 
 
 I can't edit the values in the sequencer

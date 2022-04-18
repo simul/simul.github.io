@@ -17,7 +17,7 @@ Getting Started
 
 *  :doc:`Getting the most out of trueSky <tutorialsindex>` - These useful pages will show you how to create visually stunning effects, along with example projects.
 
-*  :doc:`Programming Guide <programmingindex>` - Information for programmers on how everything is rendered, along with our detailed code base.
+*  :doc:`Programming Guide <programming>` - Information for programmers on how everything is rendered, along with our detailed code base.
 
 *  :doc:`Frequently Asked Questions <faq>` - Solutions to common issues/mistakes
 
@@ -39,9 +39,8 @@ Useful External Links
    tutorialsindex.rst
    unreal.rst
    unity.rst
-   sdk.rst
    skysequencer.rst
-   programmingindex.rst
+   programming.rst
    faq.rst
    legalindex.rst
 

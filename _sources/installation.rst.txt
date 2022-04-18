@@ -38,7 +38,7 @@ The trueSKY Unity plugin comes as a Unity package; select the appropriate Unity 
 
 Custom Engine (trueSKY SDK)
 ```````````````````````````
-The trueSKY SDK can be integrated into any game or simulation software in two different ways. The first option is to dynamically link with the TrueSkyPluginRender library and API just as we do for Unity and Unreal Engine 4. The second option is to link the trueSKY libraries directly and gain access the lower-level classes. To learn more about the trueSKY SDK, please head over to our page :doc:`trueSKY SDK <programmingindex>`.
+The trueSKY SDK can be integrated into any game or simulation software in two different ways. The first option is to dynamically link with the TrueSkyPluginRender library and API just as we do for Unity and Unreal Engine 4. The second option is to link the trueSKY libraries directly and gain access the lower-level classes. To learn more about the trueSKY SDK, please head over to our page :doc:`trueSKY SDK <programming>`.
 
 Tools and Tutorials
 -------------------

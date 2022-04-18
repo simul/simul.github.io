@@ -1,0 +1,69 @@
+The TrueSkyPluginRender Library
+-------------------------------
+
+The library TrueSkyPlugRender provides a dynamically-bound dll interface to integrate trueSKY into an external renderer.
+
+Usage is as follows:
+
+* Initialize by dynamically loading the appropriate TrueSkyPluginRender dll for the platform.
+* Bind the exported interface functions.
+* Initialize trueSKY.
+
+Then, for each rendered view, for each frame that is rendered, insert trueSKY in the pipeline, after the depth buffer has been generated, but before any translucent rendering.
+
+For example, in a Win32 environment, you might load the dll with:
+
+.. code-block:: cpp
+
+	HMODULE dllHandle = LoadLibrary(L"TrueSkyPluginRender_MT.dll");
+
+Then, the interface functions are initialized, e.g.
+
+.. code-block:: cpp
+
+	//! Graphics API list
+	enum GraphicsDeviceType
+	{
+		GraphicsDeviceUnknown	= -1,
+		GraphicsDeviceD3D11		=  2
+	};
+
+	//! Event types
+	enum GraphicsEventType
+	{
+		GraphicsEventInitialize = 0,
+		GraphicsEventShutdown	= 1,
+		GraphicsEventBeforeReset= 2,
+		GraphicsEventAfterReset	= 3
+	};
+	typedef int (*FStaticInitInterface)(  );
+	typedef void (*FStaticSetGraphicsDevice)
+		(void* device, GraphicsDeviceType deviceType,GraphicsEventType eventType);
+	typedef int(*FStaticRenderFrame2)(RenderFrameStruct* frameStruct);
+
+	FStaticInitInterface				StaticInitInterface=nullptr;
+	FStaticSetGraphicsDevice			StaticSetGraphicsDevice=nullptr;
+	FStaticRenderFrame2					StaticRenderFrame2=nullptr;
+
+	StaticInitInterface	=(FStaticInitInterface)GetProcAddress(dllHandle, "StaticInitInterface" );
+	StaticSetGraphicsDevice	=(FStaticSetGraphicsDevice)GetProcAddress(dllHandle, "StaticSetGraphicsDevice" );
+
+It's advisable to check that the function pointers obtained are non-zero. If all the required pointers are present, the dll can be used. We start by calling
+
+.. code-block:: cpp
+
+	void* currentDevice = (current D3D11 device pointer);
+	StaticSetGraphicsDevice(currentDevice, CurrentApiType, GraphicsEventInitialize);
+	StaticInitInterface();
+
+
+Now trueSKY is ready to render.
+
+.. code-block:: cpp
+
+		FrameStruct frameStruct;
+		(initialize frameStruct...)
+		StaticRenderFrame2(&frameStruct);
+
+		
+A reference to the relevant functions can be found :doc:`here. <../Reference/plugin>`

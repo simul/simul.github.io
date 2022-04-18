@@ -1,5 +1,7 @@
 Changelist 
 ========= 
+| **Sun 17 Apr** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Sun 17 Apr** : Documentation: better initial description of plugin renderer.
 | **Thu 14 Apr** : Updated structs for HighDetail Variables
 | **Wed 13 Apr** : update 4.4 with improvements from 4.3
 | **Wed 06 Apr** : Possible fix for PfnDliHook compile error.
@@ -98,5 +100,3 @@ Changelist
 | **Thu 02 Dec** : Build fix
 | **Mon 29 Nov** : Standalone Moon UI
 | **Thu 25 Nov** : Fix for setting lightingState.
-| **Thu 25 Nov** : Change a CERR to COUT
-| **Thu 25 Nov** : Fixes/improvements for CMake and setup

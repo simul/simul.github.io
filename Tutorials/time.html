@@ -41,7 +41,7 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="trueSKY for Unreal Engine 4" href="../unrealindex.html" />
+    <link rel="next" title="trueSKY for Unreal Engine 4" href="../unreal.html" />
     <link rel="prev" title="Variables" href="Water/watervariables.html" /> 
 </head>
 
@@ -118,11 +118,10 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../unrealindex.html">trueSKY for Unreal Engine 4</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unityindex.html">trueSKY for Unity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../sdk.html">trueSKY SDK</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../skysequencer.html">Simul Sky Sequencer</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../programmingindex.html">Programming Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unreal.html">trueSKY for Unreal Engine 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unity.html">trueSKY for Unity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../skysequencer.html">Sky Sequencer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programming.html">Programming with the trueSKY SDK</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../legalindex.html">trueSKY Licences</a></li>
 </ul>
@@ -228,7 +227,7 @@
 <h2>Unreal<a class="headerlink" href="#unreal" title="Permalink to this headline">¶</a></h2>
 <p>The trueSKY plugin for Unreal Engine allows time progression to be set directly through the progression scale setting within the truesky actor. Setting this value will control the speed at which time progresses. When using the default time unit, whose setting is found within the Times advanced settings, which controls the units used to measure time and is by default set to a 24 hour system, you can set the progression scale to 1 which will allow for time to progress in real-time (such that 1 second in the engine is 1 second in real life) and setting it to 3600 will make 1 hour in-game progress for each second passing.</p>
 <p>To calculate a specific amount of time for a full day to progress, we can just multiply the number of minutes in a 24 hour cycle by 60 (representing the number of seconds within each minute).</p>
-<p>For example, if we are aiming for a full 24 hour period to take 5 minutes in-game, we would multiply 5 by 60 giving a value of 300, which if used as the progression scale, will cause the 24 hour period to take 5 minutes.</p>
+<p>For example, if aiming for a full 24 hour period to take 5 minutes in-game, multiply 5 by 60 giving a value of 300, which if used as the progression scale, will cause the 24 hour period to take 5 minutes.</p>
 <div class="section" id="truesky-time-and-blueprints">
 <h3>trueSKY Time and Blueprints<a class="headerlink" href="#truesky-time-and-blueprints" title="Permalink to this headline">¶</a></h3>
 <p>Just like most actors, you can now get the time variable directly and adjust it however you see fit. Just use Set/Get Time from a trueSKYSequenceActor to adjust anything you need.</p>
@@ -238,8 +237,8 @@
 <p>Using Unreal’s Cinematic Sequencer is easy, as we have made most of our variables interpolatable (You can add a keyframe to the sequence). You can’t adjust the cloud settings, but you can adjust the time - and all the clouds settings are automatically interpolated between using our own Sky Sequencer. So all you need to do is setup the scene in trueSKY’s Sky Sequencer, e.g. have the cloudiness at 11:00 be 0.9 and then another cloud keyframe at 14:00 with a cloudiness of 0. Then, using Unreal’s Sequencer, you can adjust your cinematic to adjust between these two times, and trueSKY will automatically adjust the cloud settings between the time intervals.</p>
 <hr class="docutils" />
 <p>TrueSKY supports three different modes of update - Game Time, Fixed Time and Real Time.</p>
-<img alt="../_images/updateoptions.png" src="../_images/updateoptions.png" />
-<p>In all cases, the number of Subdivisions controls how finely the interpolation is performed. It?s the number of intermediate steps between keyframes (for Fixed Intervals), or in the Game Time or Real Time period specified.</p>
+<img alt="../../Help/images/unreal/updateoptions.png" src="../../Help/images/unreal/updateoptions.png" />
+<p>The number of Subdivisions controls how finely the interpolation is performed. It is the number of intermediate steps between keyframes (for Fixed Intervals), or in the Game Time or Real Time period specified.</p>
 </div>
 </div>
 <div class="section" id="update-modes">
@@ -247,15 +246,15 @@
 <p>There are different ways in which we allow you to interpolate, each with it’s own advantages and disadvantages</p>
 <div class="section" id="game-time">
 <h3>Game Time<a class="headerlink" href="#game-time" title="Permalink to this headline">¶</a></h3>
-<p>In Game-Time, it takes a specified amount of time in game hours, and split that into a given amount of intervals. The weather won?t change if game time does not. This is helpful go the weather does continue when paused, or can go slower based on the speed of the game.</p>
+<p>In Game-Time, it takes a specified amount of time in game hours, and split that into a given amount of intervals. The weather won’t change if game time does not. This is helpful go the weather does continue when paused, or can go slower based on the speed of the game.</p>
 </div>
 <div class="section" id="fixed-time">
 <h3>Fixed Time<a class="headerlink" href="#fixed-time" title="Permalink to this headline">¶</a></h3>
-<p>Fixed Intervals mode is similar to Game time, only there?s a specified number of interpolated intervals between any two keyframes. You can use this mode to create more detailed transitions around sunrise/sunset for example.</p>
+<p>Fixed Intervals mode is similar to Game time, only there’s a specified number of interpolated intervals between any two keyframes. You can use this mode to create more detailed transitions around sunrise/sunset for example.</p>
 </div>
 <div class="section" id="real-time">
 <h3>Real Time<a class="headerlink" href="#real-time" title="Permalink to this headline">¶</a></h3>
-<p>If you?re using real-time transition, you can adjust the Interval (in seconds) to determine how quickly the change takes place.</p>
+<p>If you’re using real-time transition, you can adjust the Interval (in seconds) to determine how quickly the change takes place.</p>
 </div>
 </div>
 </div>
@@ -266,7 +265,7 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="../unrealindex.html" class="btn btn-neutral float-right" title="trueSKY for Unreal Engine 4" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../unreal.html" class="btn btn-neutral float-right" title="trueSKY for Unreal Engine 4" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="Water/watervariables.html" class="btn btn-neutral float-left" title="Variables" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 

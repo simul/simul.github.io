@@ -9,13 +9,13 @@ trueSKY Object
 
 To modify trueSKY object via scripting, a reference to the active object in the scene must first be obtained (there should only be one). This can be done upon initialisation; the code to do so is as follows:
 
-.. code-block::
+.. code-block:: cpp
 
 	simul.trueSKY trueSky=simul.trueSKY.GetTrueSky();
 
 All editor properties of the trueSKY object are publicly accessible, so once a reference to the trueSKY object has been obtained, they can also be accessed and modified via scripting. For example, to disable depth blending:
 
-.. code-block::
+.. code-block:: cpp
 
 	private simul.trueSKY tS;  
  
@@ -67,7 +67,7 @@ To set or get keyframe values, you need to use:
 
 For example, to increase the cloudiness of a cloud keyframe, you would use:
 
-.. code-block::
+.. code-block:: cpp
 
 	public simul.trueSKY trueSky=null;
 
