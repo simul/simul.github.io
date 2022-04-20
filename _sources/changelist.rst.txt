@@ -1,5 +1,7 @@
 Changelist 
 ========= 
+| **Tue 19 Apr** : Additional Fix to previous renaming of windSpeedMS to WindSpeedMS
+| **Tue 19 Apr** : Changed totalSteps from int to uint to fix vulkan shader compile error
 | **Mon 18 Apr** : Fix all image paths in rst sources.
 | **Mon 18 Apr** : Sphinx image paths relative to documentation root.
 | **Sun 17 Apr** : Merge branch '4.4' of github.com:simul/Simul into 4.4
@@ -98,5 +100,3 @@ Changelist
 | **Tue 07 Dec** : WIP: Changes to shadow matrix from ObliqueToCartesian to a 'transform and scale'. Unnecessary #include "cloud_shadow.sl" removed from shaders. PS_CloudShadow() PS_Main() in terrain.sfx updated. GetSimpleIlluminationAt() updated to use a 'clamp' sampler. BaseTerrainRenderer.cpp minor clean ups.
 | **Tue 07 Dec** : Docs CMakeLists.txt
 | **Mon 06 Dec** : Platform Pointer
-| **Thu 02 Dec** : Build Fix
-| **Thu 02 Dec** : Build fix
