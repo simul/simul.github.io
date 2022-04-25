@@ -96,7 +96,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../skysequencer.html">Sky Sequencer</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../programming.html">Programming with the trueSKY SDK</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="nativesdk.html">Native Development with the trueSKY SDK</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">The TrueSkyPluginRender Library</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">The TrueSkyPluginRender Library</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#deployment">Deployment</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="rendering.html">Rendering Techniques in trueSKY</a></li>
 <li class="toctree-l2"><a class="reference internal" href="profiling.html">Performance</a></li>
 <li class="toctree-l2"><a class="reference internal" href="debugging.html">Debugging</a></li>
@@ -236,6 +239,28 @@
 </pre></div>
 </div>
 <p>A reference to the relevant functions can be found <a class="reference internal" href="../Reference/plugin.html"><span class="doc">here.</span></a></p>
+<div class="section" id="deployment">
+<h2>Deployment<a class="headerlink" href="#deployment" title="Permalink to this headline">¶</a></h2>
+<p>Building TrueSkyPluginRenderer has a post-build script called CopyToTargetDir. Based on the built platform and config, this tries to deploy both the built dll and shaders to where they need to go.
+This is specified by the file truesky_setup.json, which goes in the current user’s home folder. For example:</p>
+<dl>
+<dt>{</dt><dd><dl class="simple">
+<dt>“unreal_branches”:[</dt><dd><p>{“ue4_dir”:”D:/UnrealEngine/4.25”,”simul”:[“C:/Simul/5.0/Simul”,”C:/Simul/4.3/Simul”,”C:/Simul/4.2a/Simul”,”C:/Simul/4.1b/Simul”],”projects”:[“Test425”,”SimulTest”]}</p>
+</dd>
+</dl>
+<p>]
+,”unity_branches”:[{“unity_dir”:”C:/Simul/Unity/2019”,”simul”:[“C:/Simul/4.4/Simul”,”C:/Simul/4.3/Simul”,”C:/Simul/4.1b/Simul”],”unity_version”:”2019”,”ps4_projects”:[“C:/Simul/Unity/2019/PS4”]}]
+,”simul_branches”:[{“simul”:”C:/Simul/4.1b/Simul”,”platforms”:[{“platform”:”Spectrum”,”dll_destination”:”E:\Code\Exo One\Exo_MasterPlayer_DebugsOn_XSXa\Loose\Data\Plugins”,”shader_destination”:”E:/Code/Exo One/Exo_MasterPlayer_DebugsOn_XSXa/Loose/D3D12”}]}]
+,”target_ps4”:”O:/192.168.3.5”
+,”target_ps5”:”O:/192.168.3.36”
+,”target_xboxone”:”\\192.168.3.13”
+,”xboxone_ue4”:{“Test420”:”Test420_1.0.0.0_neutral__a78hwt03br9rj”}</p>
+</dd>
+</dl>
+<p>}</p>
+<p>The members “unreal_branches”, and “unity_branches” are specifically to deploy to an Unreal or Unity engine setup.
+The member “simul_branches” is more generic, and will deploy to the specified dll and shader destination for each platform.</p>
+</div>
 </div>
 
 

@@ -204,38 +204,26 @@
 <li><p>Rendering the sun, using RenderSun(void *context,float exposure)</p></li>
 </ul>
 </p>
-<p>See WeatherRenderer::Render and RenderMixedResolution.</p>
-<p>The rendering of the sky is no longer handled by <a class="reference internal" href="#classsimul_1_1sky_1_1_base_sky_renderer"><span class="std std-ref">BaseSkyRenderer</span></a> or its derived classes because the <a class="reference internal" href="baseatmosphericsrenderer.html#classsimul_1_1sky_1_1_base_atmospherics_renderer"><span class="std std-ref">atmospherics renderer</span></a> now does this in a single pass including both sky and atmospherics.</p>
+<p>See <a class="reference internal" href="../Clouds/baseweatherrenderer.html#classsimul_1_1clouds_1_1_base_weather_renderer_1a2583d90e1542b984b8c9c6f53ab6f0b2"><span class="std std-ref">BaseWeatherRenderer::Render</span></a> and <a class="reference internal" href="../Clouds/baseweatherrenderer.html#classsimul_1_1clouds_1_1_base_weather_renderer_1aa69969a16c97f54345079b868164396f"><span class="std std-ref">RenderMixedResolution</span></a>.</p>
+<p>The rendering of the sky is no longer handled by <a class="reference internal" href="#classsimul_1_1sky_1_1_base_sky_renderer"><span class="std std-ref">BaseSkyRenderer</span></a> because the <a class="reference internal" href="baseatmosphericsrenderer.html#classsimul_1_1sky_1_1_base_atmospherics_renderer"><span class="std std-ref">atmospherics renderer</span></a> now does this in a single pass including both sky and atmospherics.</p>
 <p>It is the job of the Sky Renderer to update the atmospherics textures to be used by the other render classes, and render celestial objects.</p>
 <p>The fade tables are stored as 3D textures - an axis for distance, one for elevation, one for altitude. The table size is given by NumElevations, NumDistances and SetNumAltitudes() of <a class="reference internal" href="skykeyframer.html#classsimul_1_1sky_1_1_sky_keyframer"><span class="std std-ref">SkyKeyframer</span></a>. Try to minimize the number of altitudes required, in order to maximize performance, and use SetAltitudeRangeKm on initialization to the range you will use.</p>
-<p>WeatherRenderer::PreRenderUpdate first calls <a class="reference internal" href="#classsimul_1_1sky_1_1_base_sky_renderer_1aa2d1e8d553595f6bf693e0af1134fe30"><span class="std std-ref">EnsureTexturesAreUpToDate</span></a>, which fills in the fade textures with loss and inscatter values.</p>
+<p><a class="reference internal" href="../Clouds/baseweatherrenderer.html#classsimul_1_1clouds_1_1_base_weather_renderer_1af173cee9d209dc23c30d92dc6a66e06d"><span class="std std-ref">BaseWeatherRenderer::PreRenderUpdate</span></a> first calls <a class="reference internal" href="#classsimul_1_1sky_1_1_base_sky_renderer_1aa2d1e8d553595f6bf693e0af1134fe30"><span class="std std-ref">EnsureTexturesAreUpToDate</span></a>, which fills in the fade textures with loss and inscatter values.</p>
 <p>Then, the sky and atmospheric scattering (atmospherics, or distance-fades) are drawn together as an overlay after the depth-buffer has been filled by any solids in the scene (see ). There are two main elements to realistic atmospherics: Loss, and Inscatter.  </p>
-<p><img alt="../../_images/FadeLogic.png" src="../../_images/FadeLogic.png" /></p>
-<p>So, for any point in screen space, we can transform it to world space using the depth value, and obtain its distance, and elevation relative to the horizon. This gives us the lookup co-ordinates into the loss and inscatter textures. The loss value determines how much of the red,green, and blue values of that pixel are retained as light passes through the atmosphere from the distant object to the viewer. The inscatter determines how much sunlight (or moonlight etc) is scattered in towards the viewer due to the intervening atmosphere. Generally in Earth’s nitrogen-oxygen atmosphere, more blue light than red or green is scattered. So distance white objects appear yellow, as the blue component has been scattered away. But distance black objects appear blue, because the blue part of the sunlight shining on the intervening air has been scattered as well, and some of that blue light goes towards the viewer. This process is Rayleigh scattering. Other important effects that TrueSky simulates are Mie scattering due to haze, Ozone absorption, and radiation due to air temperature. Each sky renderer maintains nine fade textures. If the most recent keyframe in the sky keyframer is X, we have:  </p>
-<p><table class="colwidths-auto docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Keyframe X   </p></th>
-<th class="head"><p>Keyframe X+1   </p></th>
-<th class="head"><p>Keyframe X+2    </p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>loss 0   </p></td>
-<td><p>loss 1   </p></td>
-<td><p>loss 2    </p></td>
-</tr>
-<tr class="row-odd"><td><p>inscatter 0   </p></td>
-<td><p>inscatter 1   </p></td>
-<td><p>inscatter 2    </p></td>
-</tr>
-<tr class="row-even"><td><p>skylight 0   </p></td>
-<td><p>skylight 1   </p></td>
-<td><p>skylight 2   </p></td>
-</tr>
-</tbody>
-</table>
-</p>
-<p>Each texture contains data for the atmospherics as seen from a complete range of altitudes.We use textures 0 and 1 to render the scene. Texture 2 is gradually filled in over multiple frames, so that when we reach keyframe X+1, it will be complete and can be swapped in. All this is handled automatically by the SkyKeyframer, which in turn can use a  simul::sky::BaseGpuSkyGenerator GpuSkyGenerator. If using CPU-generated textures, the Sky Renderer asks the keyframer what new data to fill into the textures each frame. If using its own GpuSkyGenerator, the Sky Renderer has access to these textures without the need to query the keyframer.</p>
+<p>Keyframe X   </p>
+<p>Keyframe X+1   </p>
+<p>Keyframe X+2    </p>
+<p>loss 0   </p>
+<p>loss 1   </p>
+<p>loss 2    </p>
+<p>inscatter 0   </p>
+<p>inscatter 1   </p>
+<p>inscatter 2    </p>
+<p>skylight 0   </p>
+<p>skylight 1   </p>
+<p>skylight 2   </p>
+<p>Each texture contains data for the atmospherics as seen from a complete range of altitudes.</p>
+<p>We use textures 0 and 1 to render the scene. Texture 2 is gradually filled in over multiple frames, so that when we reach keyframe X+1, it will be complete and can be swapped in. All this is handled automatically by the <a class="reference internal" href="skykeyframer.html#classsimul_1_1sky_1_1_sky_keyframer"><span class="std std-ref">SkyKeyframer</span></a>, which in turn can use a <a class="reference internal" href="basegpuskygenerator.html#classsimul_1_1sky_1_1_base_gpu_sky_generator"><span class="std std-ref">GpuSkyGenerator</span></a>. If using CPU-generated textures, the Sky Renderer asks the keyframer what new data to fill into the textures each frame. If using its own GpuSkyGenerator, the Sky Renderer has access to these textures without the need to query the keyframer.</p>
 <p><img alt="../../_images/FadeTable.png" src="../../_images/FadeTable.png" /></p>
 <p>The fade textures are 3D, with co-ordinates representing x=altitude/max altitude, y=1+sine(elevation))/2, z=distance/max distance. Each frame, these three pairs of 3D textures (Keyframe X and X+1) are combined into three individual 2D textures, with x=distance/max distance, y=1+sine(elevation))/2, representing the fade colours as seen at the present time, from the current viewing altitude.</p>
 <p>The last texel in the x direction is considered to represent infinity, irrespective of the specified MaxDistanceKm parameter, so a distance texture coordinate of 1.0 in the inscatter and skylight textures represents the sky, with values less than one used for atmospheric scattering over solid objects. </p>
@@ -297,8 +285,8 @@
 </dd></dl>
 
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky15BaseSkyRenderer22RenderCelestialDisplayERN13crossplatform21GraphicsDeviceContextE">
-<span id="_CPPv3N5simul3sky15BaseSkyRenderer22RenderCelestialDisplayERN13crossplatform21GraphicsDeviceContextE"></span><span id="_CPPv2N5simul3sky15BaseSkyRenderer22RenderCelestialDisplayERN13crossplatform21GraphicsDeviceContextE"></span><span id="simul::sky::BaseSkyRenderer::RenderCelestialDisplay__crossplatform::GraphicsDeviceContextR"></span><span class="target" id="classsimul_1_1sky_1_1_base_sky_renderer_1aa79088823cdb635bb6bb9324abc73bf8"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RenderCelestialDisplay</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">GraphicsDeviceContext</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">context</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul3sky15BaseSkyRenderer22RenderCelestialDisplayERN13crossplatform21GraphicsDeviceContextE" title="Permalink to this definition">¶</a><br /></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky15BaseSkyRenderer22RenderCelestialDisplayERN13crossplatform21GraphicsDeviceContextEf">
+<span id="_CPPv3N5simul3sky15BaseSkyRenderer22RenderCelestialDisplayERN13crossplatform21GraphicsDeviceContextEf"></span><span id="_CPPv2N5simul3sky15BaseSkyRenderer22RenderCelestialDisplayERN13crossplatform21GraphicsDeviceContextEf"></span><span id="simul::sky::BaseSkyRenderer::RenderCelestialDisplay__crossplatform::GraphicsDeviceContextR.float"></span><span class="target" id="classsimul_1_1sky_1_1_base_sky_renderer_1a758f54368d779bbda8f4a2bd4259ff4c"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RenderCelestialDisplay</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">GraphicsDeviceContext</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">context</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">y_heading</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.0f</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul3sky15BaseSkyRenderer22RenderCelestialDisplayERN13crossplatform21GraphicsDeviceContextEf" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Draw sidereal and geographic information to screen. </p>
 </dd></dl>
 
@@ -340,7 +328,7 @@
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N5simul3sky15BaseSkyRenderer14GetLightColourEf">
-<span id="_CPPv3N5simul3sky15BaseSkyRenderer14GetLightColourEf"></span><span id="_CPPv2N5simul3sky15BaseSkyRenderer14GetLightColourEf"></span><span id="simul::sky::BaseSkyRenderer::GetLightColour__float"></span><span class="target" id="classsimul_1_1sky_1_1_base_sky_renderer_1a42b3faf9c30e0a617b0ec71313530fcc"></span><span class="n"><span class="pre">vec4</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetLightColour</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">alt_km</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul3sky15BaseSkyRenderer14GetLightColourEf" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv3N5simul3sky15BaseSkyRenderer14GetLightColourEf"></span><span id="_CPPv2N5simul3sky15BaseSkyRenderer14GetLightColourEf"></span><span id="simul::sky::BaseSkyRenderer::GetLightColour__float"></span><span class="target" id="classsimul_1_1sky_1_1_base_sky_renderer_1a09fbadef13364d647f2c863c5d531c9e"></span><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">float4</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetLightColour</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">alt_km</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul3sky15BaseSkyRenderer14GetLightColourEf" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Returns the current directional light colour as a float4 (x=red, y=green, z=blue, w unused), i.e. sunlight or moonlight. This is a high-dynamic range value. </p>
 </dd></dl>
 
@@ -425,7 +413,7 @@
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N5simul3sky15BaseSkyRenderer24RenderIlluminationBufferERN13crossplatform21GraphicsDeviceContextE">
 <span id="_CPPv3N5simul3sky15BaseSkyRenderer24RenderIlluminationBufferERN13crossplatform21GraphicsDeviceContextE"></span><span id="_CPPv2N5simul3sky15BaseSkyRenderer24RenderIlluminationBufferERN13crossplatform21GraphicsDeviceContextE"></span><span id="simul::sky::BaseSkyRenderer::RenderIlluminationBuffer__crossplatform::GraphicsDeviceContextR"></span><span class="target" id="classsimul_1_1sky_1_1_base_sky_renderer_1a911f20f3a49a91a0666692ec587f16bf"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RenderIlluminationBuffer</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">GraphicsDeviceContext</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">deviceContext</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul3sky15BaseSkyRenderer24RenderIlluminationBufferERN13crossplatform21GraphicsDeviceContextE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Perform any necessary updates to the renderer’s textures - particularly the loss, inscatter and skylight textures - at the start of a frame. This is called from simul::clouds::WeatherRenderer::PreRenderUpdate(). </p>
+<dd><p>Perform any necessary updates to the renderer’s textures - particularly the loss, inscatter and skylight textures - at the start of a frame. This is called from <a class="reference internal" href="../Clouds/baseweatherrenderer.html#classsimul_1_1clouds_1_1_base_weather_renderer_1af173cee9d209dc23c30d92dc6a66e06d"><span class="std std-ref">simul::clouds::BaseWeatherRenderer::PreRenderUpdate()</span></a>. </p>
 </dd></dl>
 
 <dl class="cpp function">

@@ -1,54 +1,65 @@
 Changelist 
 ========= 
-| **Mon 25 Apr** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Mon 25 Apr** : Remove inaccurate "derived classes" refs in docs.
+| **Mon 25 Apr** : Merge branch 'nick_shadow' into 4.3
+| **Mon 25 Apr** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Mon 25 Apr** : Add safe_asin. depth.texturePtr null check in RenderingPlugin.cpp. Add profiling to GL Sample. Add GetShadowTexcoords shader function. Add planetRadiusKm to compositing_constants.
+| **Mon 25 Apr** : Add Docs to 4.3
+| **Mon 25 Apr** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Mon 25 Apr** : SIMUL_PLUGIN_DEPLOY Python check in CMake files.
-| **Tue 19 Apr** : Additional Fix to previous renaming of windSpeedMS to WindSpeedMS
-| **Tue 19 Apr** : Changed totalSteps from int to uint to fix vulkan shader compile error
-| **Mon 18 Apr** : Fix all image paths in rst sources.
-| **Mon 18 Apr** : Sphinx image paths relative to documentation root.
-| **Sun 17 Apr** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Sun 17 Apr** : Documentation: better initial description of plugin renderer.
-| **Thu 14 Apr** : Updated structs for HighDetail Variables
-| **Wed 13 Apr** : update 4.4 with improvements from 4.3
-| **Wed 06 Apr** : Possible fix for PfnDliHook compile error.
-| **Wed 06 Apr** : Fix compilation errors.
-| **Wed 06 Apr** : Platform ptr.
-| **Wed 06 Apr** : Remove Scene for now. Platform ptr.
-| **Tue 05 Apr** : Fix some SkyKeyframer interpolation crashes due to null pointers.
-| **Tue 05 Apr** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Tue 05 Apr** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Tue 05 Apr** : Renaming "Base" rendering classes. Removing sky::float4 in favour of vec4 from crossplatform.
-| **Tue 05 Apr** : Add planet.sfx
-| **Thu 31 Mar** : Compilation fixes for TrueSkyPluginRender and Platform ptr.
-| **Wed 30 Mar** : Fix sampler compile errors.
-| **Wed 30 Mar** : Fixed member initialiser lists for Qt.
+| **Fri 22 Apr** : Platform Ptr.
+| **Fri 22 Apr** : Disable Build shaders in CMake if shaders are not present
+| **Thu 21 Apr** : Update automatic screenshot functionality, additional .nsi fix for smarter access to .glfw
+| **Thu 21 Apr** : Platform Ptr
+| **Thu 21 Apr** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Thu 21 Apr** : Further .nsi updates to keep Setup and sequencer similar.
+| **Thu 21 Apr** : Update NSI/Setup.nsi to fix build issue.
+| **Wed 20 Apr** : Update .nsi files, platform ptr,
+| **Wed 20 Apr** : fix issue where dynamic dx11 sample could not find dlls
+| **Wed 20 Apr** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Tue 19 Apr** : Update Icons and Logos, fix simul_commit variable within SkySequencer.nsi
+| **Tue 19 Apr** : Further update to SkySequencer.nsi
+| **Tue 19 Apr** : add addition path for .qss style sheet. Update SkySequencer.nsi
+| **Tue 19 Apr** : Merge branch '4.3' of github.com:simul/Simul into nick_shadow
+| **Tue 19 Apr** : Changed multipliedSteps from int to uint to fix vulkan shader compile error
+| **Thu 14 Apr** : Updated structs for highDetail Variables
+| **Wed 13 Apr** : Merge branch '4.3' of github.com:simul/Simul into nick_shadow
+| **Wed 13 Apr** : Add highDetailMultipler and highDetailRangeKm variables for adjustable fidelity and performance.
+| **Thu 07 Apr** : Add reset function, remove unnecessary setUAV - no longer causing warnings and are causing DX12 crash.
+| **Wed 30 Mar** : Cleaned up Unity.cpp. Removed Xbox header as they are now handled internally.
+| **Wed 30 Mar** : Rename Spot to pointLight
+| **Wed 30 Mar** : UnityPluginInterface.h renamed to TrueSkyPluginRenderInterface.h and RenderingPlugin.cpp renamed to TrueSkyPluginRenderInterface.cpp. TRUESKYRENDERINTERFACE_EXPORT renamed to TRUESKY_PLUGINRENDER_EXPORT. TrueSkyPluginRender.h removed in favour of Export.h. Clean up of TrueSkyPluginRenderInterface.h/.cpp
+| **Wed 30 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Wed 30 Mar** : Fix compile error for Vulkan in terrain.sfx
-| **Wed 30 Mar** : Platform ptr.
-| **Wed 30 Mar** : Platform ptr to dev branch.
-| **Tue 29 Mar** : Merge remote-tracking branch 'remotes/origin/4.3' into 4.4
+| **Tue 29 Mar** : Precip inprovements, revert transitionDistanceKm back to 100km
+| **Tue 29 Mar** : Merge branch 'nick_shadow' of github.com:simul/Simul into nick_shadow
+| **Tue 29 Mar** : Cloud shadow constant and multiplier for finer shadow control.
+| **Tue 29 Mar** : Cloud shadow constant and multiplier for better control of shadow texture.
+| **Tue 29 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Tue 29 Mar** : Platform ptr.
+| **Mon 28 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Mon 28 Mar** : Set precip viewStore Last_Frame_number correctly, removed unused params from cloud_constants.sl
 | **Mon 28 Mar** : In clouds_experimental.sl, we use double grid density for lookups in the grid-rendered zone.
 | **Mon 28 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Mon 28 Mar** : Cloud shadows use light texture, not cloud density!
 | **Mon 28 Mar** : Platform ptr.
 | **Mon 28 Mar** : RenderFrame(), GetColourTexture cleaned up. Added GetDepthTexture(). PluginTrueSkyRenderer::RenderFrame() cleaned up. Removed old comments. Fix spaces and tabs.
+| **Mon 28 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Fri 25 Mar** : terrain.sfx: dot() in PS_Main() for parameters of the same type. Platform ptr.
+| **Thu 24 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Thu 24 Mar** : Fix black virga artifacts at ground level.
+| **Thu 24 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Thu 24 Mar** : Calculate distant cloud rendering uniform step for clouds_experimental.sl using approximate grid step size. This way, the steps should be approximately equivalent.
 | **Thu 24 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Thu 24 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Thu 24 Mar** : Variable grid transitions to regular steps past 100km. Fix incorrect cloud light lookup - visible esp. at sunrise/sunset. Fix terrain curvature.
-| **Wed 23 Mar** : Merge remote-tracking branch 'remotes/origin/4.3' into 4.4
+| **Wed 23 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Wed 23 Mar** : GetHorizonDistance + spotlight UI
 | **Wed 23 Mar** : Platform ptr. RenderStyle clean up.
-| **Tue 22 Mar** : Updated cloud volumes documentation. First pass.
 | **Tue 22 Mar** : Platform ptr.
-| **Tue 22 Mar** : Platform ptr.
-| **Tue 22 Mar** : Merge remote-tracking branch 'remotes/origin/4.3' into 4.4
 | **Tue 22 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Tue 22 Mar** : Cloud Volume Culling. CloudVolume updated with new enum classes. CloudKeyframer::SetVolume() parameters updated. CloudVolume_densityspace updated and values set correctly. Update to CloudLayerEditWidget UI with drop downs and update button; SkyTimelineWidget::NewCloudVolume() updated too. PluginTrueSkyRenderer::Set() for cloudvolume updated. GetVolumeMultiplier() supports culling volumes. Other minor clean up.
-| **Mon 21 Mar** : Merge from 4.3 fixes.
 | **Fri 18 Mar** : Shader fix for Vulkan.
-| **Thu 17 Mar** : Merge remote-tracking branch 'remotes/origin/4.3' into 4.4
-| **Thu 17 Mar** : Rename BaseWeatherRenderer to WeatherRenderer. Update to use improved Platform dev branch: framenumber is a renderplatform property, not deviceContext.
 | **Thu 17 Mar** : Improved curved-Earth variable grid cloud rendering. Clouds fade out close to max distance.
 | **Thu 17 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Thu 17 Mar** : Horizon distance on camera widget.
@@ -68,10 +79,8 @@ Changelist
 | **Fri 04 Mar** : Correctly use skykeyframer planet radius in cloud rendering. planetRadiusKm now in cloud_constants.sl Mostly fixed curved Earth cloud rendering in clouds_experimental.sl Corrected atmospheric inscattering altitude lookup in variable grid (clouds_experimental.sl) render, for true altitude rather than z offset.
 | **Thu 03 Mar** : Increase UI variable max values
 | **Wed 02 Mar** : Compile fix
-| **Tue 01 Mar** : Merge branch '4.4' of github.com:simul/Simul into 4.4
 | **Tue 01 Mar** : Merge pull request #14 from simul/nicksimultec
 | **Tue 01 Mar** : warning fix
-| **Tue 01 Mar** : Rename RainEffect to Virga, added VirgaNearThresholdKm, update ExternalRenderValues.
 | **Tue 01 Mar** : small additions to previous commit.
 | **Mon 28 Feb** : Rename RainEffect to Virga, added VirgaNearThresholdKm, update ExternalRenderValues.
 | **Sun 27 Feb** : Cleaned the code from experimental snippets and added DirectLight, IndirectLight and Extinction to be set by SetFloat
@@ -84,19 +93,10 @@ Changelist
 | **Mon 10 Jan** : Moved, cleaned up and renamed CloudShadowStruct to CloudShadowData in CloudShadow.h. Variant has vec4Val in its union. Removed old sampler and textures from BaseCloudRenderer, etc. CloudRenderingOptions::ShadowTextureSize removed as this is defined by the shadow range. Removed shadowTextureSize from UI, "CloudShadowTextureSize" and CLOUD_SHADOW_TEXTURE_SIZE from plugin. Update plugin enums; ExternalRenderValues is version 9. CLOUD_WINDOW_ORIGIN references quaternion. Recommit old changes to cloud_shadow.sl
 | **Fri 07 Jan** : Renamed MakeCloudShadowTexture() to InitialiseCloudShadowStruct() and removed SetCloudShadowPerViewConstants(). terrainConstants.shadowRange renamed to terrainConstants.shadowRangeKm. Cloud shadows can wrap if shadow scale matches cloud scale. shadowspaceToCloudspaceMatrix is just a scale matrix. Added cloudOffsetKm to GetSimpleIlluminationAt().
 | **Wed 05 Jan** : Fix for cloud shadow plus winds in SkySequencer.
-| **Tue 04 Jan** : Merge branch '4.4' of github.com:simul/Simul into 4.4
 | **Tue 04 Jan** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Tue 04 Jan** : CloudShadowStruct::shadowSampleHeightKm added. shadowTextureSize has been removed from UI as this set by the shadow range. GetSimpleIlluminationAt() in cloud_shadow.sl update to sync the movement of shadows with the sun's position. Shadows fade out at low sun elevations.
 | **Thu 30 Dec** : In CopyToTargetDir.py, change ue4 references to simply ue.
-| **Tue 28 Dec** : Re-enabled the code which was disabled despite being marked "DO NOT DISABLE THIS CODE."
 | **Tue 21 Dec** : Fix cloudScale build error.
 | **Tue 21 Dec** : Fix GetSimpleIllumination shader bug.
 | **Fri 17 Dec** : Upadte for Eblit clouds shadow. Still WIP.
 | **Thu 16 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Thu 16 Dec** : GetCloudBase call
-| **Thu 16 Dec** : Added check for pre-existing QT installation.
-| **Wed 08 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Wed 08 Dec** : Setup.py - Added warning to ask user to check Vulkan version or add vulkan version path.
-| **Wed 08 Dec** : Platform ptr.
-| **Tue 07 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Tue 07 Dec** : WIP: Changes to shadow matrix from ObliqueToCartesian to a 'transform and scale'. Unnecessary #include "cloud_shadow.sl" removed from shaders. PS_CloudShadow() PS_Main() in terrain.sfx updated. GetSimpleIlluminationAt() updated to use a 'clamp' sampler. BaseTerrainRenderer.cpp minor clean ups.

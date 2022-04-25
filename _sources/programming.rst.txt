@@ -19,7 +19,6 @@ On other platforms, the default runtime and linkage is used.
 *  :doc:`Performance Profiling <Programming/profiling>` - How to monitor and improve the performance of trueSKY in your application.
 *  :doc:`Debugging <Programming/debugging>` - How to use the debugging tools to fix issues.
 *  :doc:`Deployment <Programming/deployment>` - How to use the debugging tools to fix issues.
-*  :doc:`Plugin Rendering Interface <Programming/interface>` - Alternative way to connect trueSKY to a game or simulation.
 *  :doc:`Documented Code Base <Reference/referenceindex>` - Reference for the API and source code.
 
 .. _support form: https://simul.co/contact-us/
@@ -34,5 +33,4 @@ On other platforms, the default runtime and linkage is used.
    Programming/profiling.rst
    Programming/debugging.rst
    Programming/deployment.rst
-   Programming/interface.rst
 
