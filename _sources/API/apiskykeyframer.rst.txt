@@ -1,5 +1,4 @@
-Sky Keyframer
-======================================
+The Sky Keyframer
+=================
 
-.. doxygenclass:: simul::sky::SkyKeyframer
-   :members: InsertKeyframe, GetKeyframe, DeleteKeyframe, GetDirectionToSun, GetDirectionToMoon, GetLocalSunIrradiance, GetLocalMoonIrradiance
+The :ref:`sky keyframer <skykeyframer>` is accessed from the :ref:`environment <environment>` instance, and controls the sky and atmospheric state via :ref:`skykeyframe`.

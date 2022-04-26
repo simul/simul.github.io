@@ -1,5 +1,7 @@
+.. _skykeyframe:
+
 Sky Keyframe
-======================================
+============
 
 .. doxygenstruct:: simul::sky::SkyKeyframe
    :members:

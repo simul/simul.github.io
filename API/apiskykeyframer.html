@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Sky Keyframer &mdash; Simul  documentation</title>
+  <title>The Sky Keyframer &mdash; Simul  documentation</title>
   
 
   
@@ -106,7 +106,7 @@
 <li class="toctree-l2"><a class="reference internal" href="apicloudrenderer.html">Cloud Renderer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="apicloudkeyframer.html">Cloud Keyframer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="apicloudkeyframe.html">Cloud Keyframe</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Sky Keyframer</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">The Sky Keyframer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="apiskykeyframe.html">Sky Keyframe</a></li>
 <li class="toctree-l2"><a class="reference internal" href="apiskylight.html">Skylight</a></li>
 </ul>
@@ -163,7 +163,7 @@
         
           <li><a href="apiindex.html">API</a> &raquo;</li>
         
-      <li>Sky Keyframer</li>
+      <li>The Sky Keyframer</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -182,78 +182,9 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="sky-keyframer">
-<h1>Sky Keyframer<a class="headerlink" href="#sky-keyframer" title="Permalink to this headline">¶</a></h1>
-<dl class="cpp class">
-<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky12SkyKeyframerE">
-<span id="_CPPv3N5simul3sky12SkyKeyframerE"></span><span id="_CPPv2N5simul3sky12SkyKeyframerE"></span><span id="simul::sky::SkyKeyframer"></span><span class="target" id="classsimul_1_1sky_1_1_sky_keyframer"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">SkyKeyframer</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">BaseKeyframer</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../Reference/Sky/skyinterface.html#_CPPv4N5simul3sky16BaseSkyInterfaceE" title="simul::sky::BaseSkyInterface"><span class="n"><span class="pre">BaseSkyInterface</span></span></a><a class="headerlink" href="#_CPPv4N5simul3sky12SkyKeyframerE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>A class that maintains sky properties and interpolates them based on keyframe values.</p>
-<p>An instance of the <a class="reference internal" href="../Reference/Sky/skykeyframer.html#classsimul_1_1sky_1_1_sky_keyframer"><span class="std std-ref">SkyKeyframer</span></a> is kept as a member of the Environment instance. The <a class="reference internal" href="../Reference/Sky/skykeyframer.html#classsimul_1_1sky_1_1_sky_keyframer"><span class="std std-ref">SkyKeyframer</span></a> interpolates the sky values, and passes the keyframe and interpolation data to external renderers, e.g. <a class="reference internal" href="../Reference/Sky/baseskyrenderer.html#classsimul_1_1sky_1_1_base_sky_renderer"><span class="std std-ref">BaseSkyRenderer</span></a> and <a class="reference internal" href="../Reference/Sky/baseatmosphericsrenderer.html#classsimul_1_1sky_1_1_base_atmospherics_renderer"><span class="std std-ref">BaseAtmosphericsRenderer</span></a>. The generated tables are calculated for multiple altitudes - specified with SetNumAltitudes. The SunIrradiance value determines the colour and strength of sunlight, and is expressed in physical units. The apparent size of the sun is set using SetSunRadiusArcMinutes. </p>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky12SkyKeyframer17GetDirectionToSunEv">
-<span id="_CPPv3NK5simul3sky12SkyKeyframer17GetDirectionToSunEv"></span><span id="_CPPv2NK5simul3sky12SkyKeyframer17GetDirectionToSunEv"></span><span id="simul::sky::SkyKeyframer::GetDirectionToSunC"></span><span class="target" id="classsimul_1_1sky_1_1_sky_keyframer_1a441e97776381df1fd0a553c1ddc91b28"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetDirectionToSun</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky12SkyKeyframer17GetDirectionToSunEv" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Get the current direction to the sun. </p>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky12SkyKeyframer17GetDirectionToSunEd">
-<span id="_CPPv3NK5simul3sky12SkyKeyframer17GetDirectionToSunEd"></span><span id="_CPPv2NK5simul3sky12SkyKeyframer17GetDirectionToSunEd"></span><span id="simul::sky::SkyKeyframer::GetDirectionToSun__doubleC"></span><span class="target" id="classsimul_1_1sky_1_1_sky_keyframer_1afbb8760017488a53ba3cc0d0e0e14559"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetDirectionToSun</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">time</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky12SkyKeyframer17GetDirectionToSunEd" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Get the direction to the Sun at the given time. </p>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky12SkyKeyframer18GetDirectionToMoonE3uid">
-<span id="_CPPv3NK5simul3sky12SkyKeyframer18GetDirectionToMoonE3uid"></span><span id="_CPPv2NK5simul3sky12SkyKeyframer18GetDirectionToMoonE3uid"></span><span id="simul::sky::SkyKeyframer::GetDirectionToMoon__uidC"></span><span class="target" id="classsimul_1_1sky_1_1_sky_keyframer_1ace96944fa496430c1b61b356dcb31b70"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetDirectionToMoon</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uid</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">u</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky12SkyKeyframer18GetDirectionToMoonE3uid" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Get the current direction to the <a class="reference internal" href="../Reference/Sky/skyinterface.html#structsimul_1_1sky_1_1_moon"><span class="std std-ref">Moon</span></a>. </p>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky12SkyKeyframer18GetDirectionToMoonE3uidd">
-<span id="_CPPv3NK5simul3sky12SkyKeyframer18GetDirectionToMoonE3uidd"></span><span id="_CPPv2NK5simul3sky12SkyKeyframer18GetDirectionToMoonE3uidd"></span><span id="simul::sky::SkyKeyframer::GetDirectionToMoon__uid.doubleC"></span><span class="target" id="classsimul_1_1sky_1_1_sky_keyframer_1a6301e8c634c114d612517a1c5f3075e0"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetDirectionToMoon</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uid</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">u</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">time</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky12SkyKeyframer18GetDirectionToMoonE3uidd" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Get the direction to the <a class="reference internal" href="../Reference/Sky/skyinterface.html#structsimul_1_1sky_1_1_moon"><span class="std std-ref">Moon</span></a> at the given time. </p>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky12SkyKeyframer17GetDirectionToSunEi">
-<span id="_CPPv3NK5simul3sky12SkyKeyframer17GetDirectionToSunEi"></span><span id="_CPPv2NK5simul3sky12SkyKeyframer17GetDirectionToSunEi"></span><span id="simul::sky::SkyKeyframer::GetDirectionToSun__iC"></span><span class="target" id="classsimul_1_1sky_1_1_sky_keyframer_1a0c29ea2b43c23645330912434d773d9b"></span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetDirectionToSun</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">keyframe</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky12SkyKeyframer17GetDirectionToSunEi" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Get the direction the sun represented as a vector. </p>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky12SkyKeyframer21GetLocalSunIrradianceEdf">
-<span id="_CPPv3NK5simul3sky12SkyKeyframer21GetLocalSunIrradianceEdf"></span><span id="_CPPv2NK5simul3sky12SkyKeyframer21GetLocalSunIrradianceEdf"></span><span id="simul::sky::SkyKeyframer::GetLocalSunIrradiance__double.floatC"></span><span class="target" id="classsimul_1_1sky_1_1_sky_keyframer_1a63f42b7b5247d50a57995f7613c8b2cd"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetLocalSunIrradiance</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">t</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">altitude_km</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky12SkyKeyframer21GetLocalSunIrradianceEdf" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Get the sunlight that reaches the altitude <em>altitude_km</em>. </p>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky12SkyKeyframer14InsertKeyframeEf">
-<span id="_CPPv3N5simul3sky12SkyKeyframer14InsertKeyframeEf"></span><span id="_CPPv2N5simul3sky12SkyKeyframer14InsertKeyframeEf"></span><span id="simul::sky::SkyKeyframer::InsertKeyframe__float"></span><span class="target" id="classsimul_1_1sky_1_1_sky_keyframer_1a2259faae5f328c60810a8b4383b764bb"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">BaseKeyframe</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">InsertKeyframe</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">t</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5simul3sky12SkyKeyframer14InsertKeyframeEf" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Insert a keyframe at the given time and return a pointer to it. </p>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky12SkyKeyframer14DeleteKeyframeEi">
-<span id="_CPPv3N5simul3sky12SkyKeyframer14DeleteKeyframeEi"></span><span id="_CPPv2N5simul3sky12SkyKeyframer14DeleteKeyframeEi"></span><span id="simul::sky::SkyKeyframer::DeleteKeyframe__i"></span><span class="target" id="classsimul_1_1sky_1_1_sky_keyframer_1a821be46e512f7b4f48c83c939d1fde1f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DeleteKeyframe</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">i</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul3sky12SkyKeyframer14DeleteKeyframeEi" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Delete a skykeyframe with the given ID. </p>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky12SkyKeyframer11GetKeyframeEi">
-<span id="_CPPv3N5simul3sky12SkyKeyframer11GetKeyframeEi"></span><span id="_CPPv2N5simul3sky12SkyKeyframer11GetKeyframeEi"></span><span id="simul::sky::SkyKeyframer::GetKeyframe__i"></span><span class="target" id="classsimul_1_1sky_1_1_sky_keyframer_1ae52d73c27488d54db2255fb9e4a3d190"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">BaseKeyframe</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">GetKeyframe</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5simul3sky12SkyKeyframer11GetKeyframeEi" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Get a pointer to the i’th keyframe. </p>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky12SkyKeyframer11GetKeyframeEi">
-<span id="_CPPv3NK5simul3sky12SkyKeyframer11GetKeyframeEi"></span><span id="_CPPv2NK5simul3sky12SkyKeyframer11GetKeyframeEi"></span><span id="simul::sky::SkyKeyframer::GetKeyframe__iC"></span><span class="target" id="classsimul_1_1sky_1_1_sky_keyframer_1a01d1054c238e0e49d81c7f10761245fd"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">BaseKeyframe</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">GetKeyframe</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">i</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky12SkyKeyframer11GetKeyframeEi" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Get a pointer to the i’th keyframe. </p>
-</dd></dl>
-
-</div>
-</dd></dl>
-
+  <div class="section" id="the-sky-keyframer">
+<h1>The Sky Keyframer<a class="headerlink" href="#the-sky-keyframer" title="Permalink to this headline">¶</a></h1>
+<p>The <a class="reference internal" href="../Reference/Sky/skykeyframer.html#skykeyframer"><span class="std std-ref">sky keyframer</span></a> is accessed from the <a class="reference internal" href="../Reference/Clouds/environment.html#environment"><span class="std std-ref">environment</span></a> instance, and controls the sky and atmospheric state via <a class="reference internal" href="../Reference/Sky/skykeyframe.html#skykeyframe"><span class="std std-ref">Sky Keyframe</span></a>.</p>
 </div>
 
 
