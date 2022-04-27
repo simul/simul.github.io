@@ -1,6 +1,9 @@
 Changelist 
 ========= 
 | **Tue 26 Apr** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Tue 26 Apr** : Update Platform ptr.
+| **Tue 26 Apr** : Force unused resource to nullptr to workaround platform bug
+| **Tue 26 Apr** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Tue 26 Apr** : Update SkyKeyframer docs.
 | **Mon 25 Apr** : Compile Fix
 | **Mon 25 Apr** : Remove inaccurate "derived classes" refs in docs.
@@ -97,6 +100,3 @@ Changelist
 | **Fri 07 Jan** : Renamed MakeCloudShadowTexture() to InitialiseCloudShadowStruct() and removed SetCloudShadowPerViewConstants(). terrainConstants.shadowRange renamed to terrainConstants.shadowRangeKm. Cloud shadows can wrap if shadow scale matches cloud scale. shadowspaceToCloudspaceMatrix is just a scale matrix. Added cloudOffsetKm to GetSimpleIlluminationAt().
 | **Wed 05 Jan** : Fix for cloud shadow plus winds in SkySequencer.
 | **Tue 04 Jan** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Tue 04 Jan** : CloudShadowStruct::shadowSampleHeightKm added. shadowTextureSize has been removed from UI as this set by the shadow range. GetSimpleIlluminationAt() in cloud_shadow.sl update to sync the movement of shadows with the sun's position. Shadows fade out at low sun elevations.
-| **Thu 30 Dec** : In CopyToTargetDir.py, change ue4 references to simply ue.
-| **Tue 21 Dec** : Fix cloudScale build error.
