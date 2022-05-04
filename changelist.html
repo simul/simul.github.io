@@ -172,6 +172,10 @@
   <div class="section" id="changelist">
 <h1>Changelist<a class="headerlink" href="#changelist" title="Permalink to this headline">¶</a></h1>
 <div class="line-block">
+<div class="line"><strong>Tue 03 May</strong> : Merge branch ‘4.3’ of github.com:simul/Simul into 4.3</div>
+<div class="line"><strong>Tue 03 May</strong> : Minor corrections.</div>
+<div class="line"><strong>Tue 03 May</strong> : Compile fix for Xbox One.</div>
+<div class="line"><strong>Tue 03 May</strong> : Fix for CloudWindow.cpp safe_asin() for non C++17 compilers.</div>
 <div class="line"><strong>Tue 26 Apr</strong> : Merge branch ‘4.3’ of github.com:simul/Simul into 4.3</div>
 <div class="line"><strong>Tue 26 Apr</strong> : Update Platform ptr.</div>
 <div class="line"><strong>Tue 26 Apr</strong> : Force unused resource to nullptr to workaround platform bug</div>
@@ -268,10 +272,6 @@
 <div class="line"><strong>Fri 21 Jan</strong> : platform pointer</div>
 <div class="line"><strong>Fri 14 Jan</strong> : Minor clean up. CopyToTargetDir.py works for both UE4 and UE5. Update “cloudshadowheight” get/set functions in plugin. ExternalRenderValues reverted. PS_AltCloudShadow() WIP.</div>
 <div class="line"><strong>Mon 10 Jan</strong> : Fix for terrain.sfx GetSimpleIlluminationAt().</div>
-<div class="line"><strong>Mon 10 Jan</strong> : Moved, cleaned up and renamed CloudShadowStruct to CloudShadowData in CloudShadow.h. Variant has vec4Val in its union. Removed old sampler and textures from BaseCloudRenderer, etc. CloudRenderingOptions::ShadowTextureSize removed as this is defined by the shadow range. Removed shadowTextureSize from UI, “CloudShadowTextureSize” and CLOUD_SHADOW_TEXTURE_SIZE from plugin. Update plugin enums; ExternalRenderValues is version 9. CLOUD_WINDOW_ORIGIN references quaternion. Recommit old changes to cloud_shadow.sl</div>
-<div class="line"><strong>Fri 07 Jan</strong> : Renamed MakeCloudShadowTexture() to InitialiseCloudShadowStruct() and removed SetCloudShadowPerViewConstants(). terrainConstants.shadowRange renamed to terrainConstants.shadowRangeKm. Cloud shadows can wrap if shadow scale matches cloud scale. shadowspaceToCloudspaceMatrix is just a scale matrix. Added cloudOffsetKm to GetSimpleIlluminationAt().</div>
-<div class="line"><strong>Wed 05 Jan</strong> : Fix for cloud shadow plus winds in SkySequencer.</div>
-<div class="line"><strong>Tue 04 Jan</strong> : Merge branch ‘4.3’ of github.com:simul/Simul into 4.3</div>
 </div>
 </div>
 

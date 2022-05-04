@@ -1,5 +1,9 @@
 Changelist 
 ========= 
+| **Tue 03 May** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Tue 03 May** : Minor corrections.
+| **Tue 03 May** : Compile fix for Xbox One.
+| **Tue 03 May** : Fix for CloudWindow.cpp safe_asin() for non C++17 compilers.
 | **Tue 26 Apr** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Tue 26 Apr** : Update Platform ptr.
 | **Tue 26 Apr** : Force unused resource to nullptr to workaround platform bug
@@ -96,7 +100,3 @@ Changelist
 | **Fri 21 Jan** : platform pointer
 | **Fri 14 Jan** : Minor clean up. CopyToTargetDir.py works for both UE4 and UE5. Update "cloudshadowheight" get/set functions in plugin. ExternalRenderValues reverted. PS_AltCloudShadow() WIP.
 | **Mon 10 Jan** : Fix for terrain.sfx GetSimpleIlluminationAt().
-| **Mon 10 Jan** : Moved, cleaned up and renamed CloudShadowStruct to CloudShadowData in CloudShadow.h. Variant has vec4Val in its union. Removed old sampler and textures from BaseCloudRenderer, etc. CloudRenderingOptions::ShadowTextureSize removed as this is defined by the shadow range. Removed shadowTextureSize from UI, "CloudShadowTextureSize" and CLOUD_SHADOW_TEXTURE_SIZE from plugin. Update plugin enums; ExternalRenderValues is version 9. CLOUD_WINDOW_ORIGIN references quaternion. Recommit old changes to cloud_shadow.sl
-| **Fri 07 Jan** : Renamed MakeCloudShadowTexture() to InitialiseCloudShadowStruct() and removed SetCloudShadowPerViewConstants(). terrainConstants.shadowRange renamed to terrainConstants.shadowRangeKm. Cloud shadows can wrap if shadow scale matches cloud scale. shadowspaceToCloudspaceMatrix is just a scale matrix. Added cloudOffsetKm to GetSimpleIlluminationAt().
-| **Wed 05 Jan** : Fix for cloud shadow plus winds in SkySequencer.
-| **Tue 04 Jan** : Merge branch '4.3' of github.com:simul/Simul into 4.3
