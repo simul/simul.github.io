@@ -1,5 +1,6 @@
 Changelist 
 ========= 
+| **Wed 18 May** : Implement "force update" checksum and button for CloudWindow.
 | **Tue 03 May** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Tue 03 May** : Minor corrections.
 | **Tue 03 May** : Compile fix for Xbox One.
@@ -99,4 +100,3 @@ Changelist
 | **Fri 28 Jan** : Organised SiderealSky class.
 | **Fri 21 Jan** : platform pointer
 | **Fri 14 Jan** : Minor clean up. CopyToTargetDir.py works for both UE4 and UE5. Update "cloudshadowheight" get/set functions in plugin. ExternalRenderValues reverted. PS_AltCloudShadow() WIP.
-| **Mon 10 Jan** : Fix for terrain.sfx GetSimpleIlluminationAt().
