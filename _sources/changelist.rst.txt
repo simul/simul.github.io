@@ -1,5 +1,6 @@
 Changelist 
 ========= 
+| **Mon 23 May** : Update TrueSkyPluginRenderInterface.cpp
 | **Fri 20 May** : Platform ptr. StructuredBuffer type compile fixes.
 | **Wed 18 May** : Implement "force update" checksum and button for CloudWindow.
 | **Tue 03 May** : Merge branch '4.3' of github.com:simul/Simul into 4.3
@@ -99,4 +100,3 @@ Changelist
 | **Thu 03 Feb** : Set minimum worleyEdgeAmplitude 0.01
 | **Thu 03 Feb** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Fri 28 Jan** : Organised SiderealSky class.
-| **Fri 21 Jan** : platform pointer
