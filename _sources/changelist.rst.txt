@@ -1,5 +1,7 @@
 Changelist 
 ========= 
+| **Sun 29 May** : Fix CloudShadow scale assignment.
+| **Fri 27 May** : Fix-up dll interface: cloud range is now read-only.
 | **Fri 27 May** : Added StaticGetExternalRenderValues to dll interface.
 | **Mon 23 May** : Update TrueSkyPluginRenderInterface.cpp
 | **Fri 20 May** : Platform ptr. StructuredBuffer type compile fixes.
@@ -98,5 +100,3 @@ Changelist
 | **Tue 01 Mar** : small additions to previous commit.
 | **Mon 28 Feb** : Rename RainEffect to Virga, added VirgaNearThresholdKm, update ExternalRenderValues.
 | **Sun 27 Feb** : Cleaned the code from experimental snippets and added DirectLight, IndirectLight and Extinction to be set by SetFloat
-| **Thu 03 Feb** : Set minimum worleyEdgeAmplitude 0.01
-| **Thu 03 Feb** : Merge branch '4.3' of github.com:simul/Simul into 4.3
