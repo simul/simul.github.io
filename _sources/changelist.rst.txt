@@ -1,5 +1,7 @@
 Changelist 
 ========= 
+| **Thu 02 Jun** : RenderFrameStruct adds TrueSkyRenderMode. If left as DEFAULT, the older behaviour will be used.
+| **Thu 02 Jun** : RenderFrameStruct adds TrueSkyRenderMode.
 | **Sun 29 May** : Fix CloudShadow scale assignment.
 | **Fri 27 May** : Fix-up dll interface: cloud range is now read-only.
 | **Fri 27 May** : Added StaticGetExternalRenderValues to dll interface.
@@ -98,5 +100,3 @@ Changelist
 | **Tue 01 Mar** : Merge pull request #14 from simul/nicksimultec
 | **Tue 01 Mar** : warning fix
 | **Tue 01 Mar** : small additions to previous commit.
-| **Mon 28 Feb** : Rename RainEffect to Virga, added VirgaNearThresholdKm, update ExternalRenderValues.
-| **Sun 27 Feb** : Cleaned the code from experimental snippets and added DirectLight, IndirectLight and Extinction to be set by SetFloat
