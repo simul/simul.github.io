@@ -1,5 +1,9 @@
 Changelist 
 ========= 
+| **Fri 03 Jun** : Fix implementation of DRAW_CLOUDS.
+| **Fri 03 Jun** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Fri 03 Jun** : Implement TrueSkyRenderMode::DRAW_CLOUDS.
+| **Fri 03 Jun** : Remove unused globalWindControl checkbox. Add StaticGetExternalDynamicValues.
 | **Thu 02 Jun** : RenderFrameStruct adds TrueSkyRenderMode. If left as DEFAULT, the older behaviour will be used.
 | **Thu 02 Jun** : RenderFrameStruct adds TrueSkyRenderMode.
 | **Sun 29 May** : Fix CloudShadow scale assignment.
@@ -96,7 +100,3 @@ Changelist
 | **Fri 04 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Fri 04 Mar** : Correctly use skykeyframer planet radius in cloud rendering. planetRadiusKm now in cloud_constants.sl Mostly fixed curved Earth cloud rendering in clouds_experimental.sl Corrected atmospheric inscattering altitude lookup in variable grid (clouds_experimental.sl) render, for true altitude rather than z offset.
 | **Thu 03 Mar** : Increase UI variable max values
-| **Wed 02 Mar** : Compile fix
-| **Tue 01 Mar** : Merge pull request #14 from simul/nicksimultec
-| **Tue 01 Mar** : warning fix
-| **Tue 01 Mar** : small additions to previous commit.
