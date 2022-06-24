@@ -1,5 +1,6 @@
 Changelist 
 ========= 
+| **Thu 23 Jun** : Cirrus fixes and cloud update code.
 | **Fri 17 Jun** : Add Atmospheric Amortization to Sequencer, Fix amortization bug,
 | **Fri 17 Jun** : Re-Added StaticSetTexture for backwards compatibility with 4.1b
 | **Wed 15 Jun** : Add Shadow information to alpha channel. Update to get/set automatic sun pos.
@@ -99,4 +100,3 @@ Changelist
 | **Wed 09 Mar** : Fix precipitationVolume amortization offset.
 | **Tue 08 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Tue 08 Mar** : Rain streak/ virga improvements: virga should not appear above clouds.
-| **Mon 07 Mar** : removed unused variables, performance checks.
