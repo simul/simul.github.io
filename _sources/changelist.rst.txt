@@ -1,5 +1,12 @@
 Changelist 
 ========= 
+| **Fri 24 Jun** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Fri 24 Jun** : Cloud shadow offset due to light direction reinstated.
+| **Fri 24 Jun** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Fri 24 Jun** : Fix amortization bug, structure RenderMode Enum to allow for improved checks.
+| **Fri 24 Jun** : Working relocatable cloud shadow origin. Use GetEnum("cloudshadoworigin") and StaticSet(variant) with vec4 float.
+| **Fri 24 Jun** : Shadow generation now correct.
+| **Fri 24 Jun** : Prototype of movable shadow map.
 | **Thu 23 Jun** : Cirrus fixes and cloud update code.
 | **Fri 17 Jun** : Add Atmospheric Amortization to Sequencer, Fix amortization bug,
 | **Fri 17 Jun** : Re-Added StaticSetTexture for backwards compatibility with 4.1b
@@ -93,10 +100,3 @@ Changelist
 | **Wed 16 Mar** : Ground fog fixed for height bound rendering. lerp function with cloud depth to scale fogLoss.
 | **Tue 15 Mar** : Platform ptr. GetSimpleIlluminationAt() take model space positions not world space. Model space positions are passed through from VS to PS in terrain.sfx.
 | **Thu 10 Mar** : Reduce distant noise in clouds_experimental.sl
-| **Thu 10 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Thu 10 Mar** : Fill max_tex_z into green channel of precipitation volume.
-| **Wed 09 Mar** : name compare fix.
-| **Wed 09 Mar** : Terrain curvature now mostly correct.
-| **Wed 09 Mar** : Fix precipitationVolume amortization offset.
-| **Tue 08 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Tue 08 Mar** : Rain streak/ virga improvements: virga should not appear above clouds.
