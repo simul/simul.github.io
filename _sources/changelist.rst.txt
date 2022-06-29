@@ -1,5 +1,8 @@
 Changelist 
 ========= 
+| **Mon 27 Jun** : Platform Ptr.
+| **Mon 27 Jun** : Fix cloud shadow light dir offset.
+| **Mon 27 Jun** : Sun direction offset when rendering cloud shadows.
 | **Fri 24 Jun** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Fri 24 Jun** : Cloud shadow offset due to light direction reinstated.
 | **Fri 24 Jun** : Merge branch '4.3' of github.com:simul/Simul into 4.3
@@ -97,6 +100,3 @@ Changelist
 | **Thu 17 Mar** : Improved curved-Earth variable grid cloud rendering. Clouds fade out close to max distance.
 | **Thu 17 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Thu 17 Mar** : Horizon distance on camera widget.
-| **Wed 16 Mar** : Ground fog fixed for height bound rendering. lerp function with cloud depth to scale fogLoss.
-| **Tue 15 Mar** : Platform ptr. GetSimpleIlluminationAt() take model space positions not world space. Model space positions are passed through from VS to PS in terrain.sfx.
-| **Thu 10 Mar** : Reduce distant noise in clouds_experimental.sl
