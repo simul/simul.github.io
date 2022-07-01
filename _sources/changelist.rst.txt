@@ -1,5 +1,6 @@
 Changelist 
 ========= 
+| **Thu 30 Jun** : Alternate method for fix for individual render modes
 | **Mon 27 Jun** : Platform Ptr.
 | **Mon 27 Jun** : Fix cloud shadow light dir offset.
 | **Mon 27 Jun** : Sun direction offset when rendering cloud shadows.
@@ -99,4 +100,3 @@ Changelist
 | **Fri 18 Mar** : Shader fix for Vulkan.
 | **Thu 17 Mar** : Improved curved-Earth variable grid cloud rendering. Clouds fade out close to max distance.
 | **Thu 17 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Thu 17 Mar** : Horizon distance on camera widget.
