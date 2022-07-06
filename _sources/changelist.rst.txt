@@ -1,5 +1,7 @@
 Changelist 
 ========= 
+| **Tue 05 Jul** : Update .nsi for SDK executable
+| **Mon 04 Jul** : Unity Render Fixes
 | **Thu 30 Jun** : Alternate method for fix for individual render modes
 | **Mon 27 Jun** : Platform Ptr.
 | **Mon 27 Jun** : Fix cloud shadow light dir offset.
@@ -98,5 +100,3 @@ Changelist
 | **Tue 22 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Tue 22 Mar** : Cloud Volume Culling. CloudVolume updated with new enum classes. CloudKeyframer::SetVolume() parameters updated. CloudVolume_densityspace updated and values set correctly. Update to CloudLayerEditWidget UI with drop downs and update button; SkyTimelineWidget::NewCloudVolume() updated too. PluginTrueSkyRenderer::Set() for cloudvolume updated. GetVolumeMultiplier() supports culling volumes. Other minor clean up.
 | **Fri 18 Mar** : Shader fix for Vulkan.
-| **Thu 17 Mar** : Improved curved-Earth variable grid cloud rendering. Clouds fade out close to max distance.
-| **Thu 17 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
