@@ -1,5 +1,7 @@
 Changelist 
 ========= 
+| **Thu 14 Jul** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Thu 14 Jul** : Cleaned up namespaces and whitespaces in TrueSkyPluginRenderInterface.
 | **Thu 07 Jul** : Platfrom Ptr.
 | **Thu 07 Jul** : Update to match Platform changes.
 | **Wed 06 Jul** : Disable Cloud Shadow Texture in Cloud window
@@ -98,5 +100,3 @@ Changelist
 | **Thu 24 Mar** : Variable grid transitions to regular steps past 100km. Fix incorrect cloud light lookup - visible esp. at sunrise/sunset. Fix terrain curvature.
 | **Wed 23 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Wed 23 Mar** : GetHorizonDistance + spotlight UI
-| **Wed 23 Mar** : Platform ptr. RenderStyle clean up.
-| **Tue 22 Mar** : Platform ptr.
