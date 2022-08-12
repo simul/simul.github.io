@@ -1,5 +1,6 @@
 Changelist 
 ========= 
+| **Fri 12 Aug** : PrecipitationLayerInfo::azimuth removed as it's unused. Added GetGloblalXYAngularOffsetFromOriginRAD lambda to unify code in CloudRenderer::RenderPrecipitationVolumeTexture().
 | **Wed 10 Aug** : Removed face index offset from Skylight::Update() as this is redundant. Platform ptr.
 | **Thu 04 Aug** : Updated CloudRenderer::RenderPrecipitationVolumeTexture() to use EffectPass and ShaderResource over strings. Platform ptr.
 | **Tue 02 Aug** : Updated StaticRemoveView()'s loop for std::map::erase().
@@ -99,4 +100,3 @@ Changelist
 | **Thu 24 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Thu 24 Mar** : Fix black virga artifacts at ground level.
 | **Thu 24 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Thu 24 Mar** : Calculate distant cloud rendering uniform step for clouds_experimental.sl using approximate grid step size. This way, the steps should be approximately equivalent.
