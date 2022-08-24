@@ -1,5 +1,7 @@
 Changelist 
 ========= 
+| **Mon 22 Aug** : Removed commented out code for precipitation in CloudRenderer::SetCloudConstants.
+| **Mon 22 Aug** : Re-added azimuth to PrecipitationLayerInfo and updated clouds.sfx PrecipitationVolume() shader.
 | **Tue 16 Aug** : Fix C4244 type conversion warning in CloudRenderer.cpp.
 | **Fri 12 Aug** : PrecipitationLayerInfo::azimuth removed as it's unused. Added GetGloblalXYAngularOffsetFromOriginRAD lambda to unify code in CloudRenderer::RenderPrecipitationVolumeTexture().
 | **Wed 10 Aug** : Removed face index offset from Skylight::Update() as this is redundant. Platform ptr.
@@ -98,5 +100,3 @@ Changelist
 | **Mon 28 Mar** : RenderFrame(), GetColourTexture cleaned up. Added GetDepthTexture(). PluginTrueSkyRenderer::RenderFrame() cleaned up. Removed old comments. Fix spaces and tabs.
 | **Mon 28 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Fri 25 Mar** : terrain.sfx: dot() in PS_Main() for parameters of the same type. Platform ptr.
-| **Thu 24 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Thu 24 Mar** : Fix black virga artifacts at ground level.
