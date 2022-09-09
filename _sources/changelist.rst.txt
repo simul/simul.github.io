@@ -1,5 +1,7 @@
 Changelist 
 ========= 
+| **Thu 08 Sep** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Thu 08 Sep** : Fix for "cloudshadoworiginkm" cloudshadoworigin"  conflict
 | **Thu 25 Aug** : Improved SM utilisation in CS_InterpLightTable() by increasing the number of threads in the group.
 | **Mon 22 Aug** : Removed commented out code for precipitation in CloudRenderer::SetCloudConstants.
 | **Mon 22 Aug** : Re-added azimuth to PrecipitationLayerInfo and updated clouds.sfx PrecipitationVolume() shader.
@@ -98,5 +100,3 @@ Changelist
 | **Mon 28 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Mon 28 Mar** : Cloud shadows use light texture, not cloud density!
 | **Mon 28 Mar** : Platform ptr.
-| **Mon 28 Mar** : RenderFrame(), GetColourTexture cleaned up. Added GetDepthTexture(). PluginTrueSkyRenderer::RenderFrame() cleaned up. Removed old comments. Fix spaces and tabs.
-| **Mon 28 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
