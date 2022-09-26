@@ -1,5 +1,9 @@
 Changelist 
 ========= 
+| **Mon 26 Sep** : re-enable precipitation amortization
+| **Mon 26 Sep** : UI QOL improvements
+| **Wed 14 Sep** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Wed 14 Sep** : Improved implementation of PlanetRadius
 | **Thu 08 Sep** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Thu 08 Sep** : Fix for "cloudshadoworiginkm" cloudshadoworigin"  conflict
 | **Thu 25 Aug** : Improved SM utilisation in CS_InterpLightTable() by increasing the number of threads in the group.
@@ -96,7 +100,3 @@ Changelist
 | **Tue 29 Mar** : Platform ptr.
 | **Mon 28 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Mon 28 Mar** : Set precip viewStore Last_Frame_number correctly, removed unused params from cloud_constants.sl
-| **Mon 28 Mar** : In clouds_experimental.sl, we use double grid density for lookups in the grid-rendered zone.
-| **Mon 28 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Mon 28 Mar** : Cloud shadows use light texture, not cloud density!
-| **Mon 28 Mar** : Platform ptr.
