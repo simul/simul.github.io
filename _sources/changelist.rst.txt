@@ -1,7 +1,12 @@
 Changelist 
 ========= 
+| **Fri 30 Sep** : Precipitation Region Fix, update drawing camera position and view distance, externalDynamic value correctly utilises origin variables
+| **Thu 29 Sep** : Fixes for sequencer UIDs.
+| **Thu 29 Sep** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Mon 26 Sep** : re-enable precipitation amortization
 | **Mon 26 Sep** : UI QOL improvements
+| **Thu 22 Sep** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Thu 22 Sep** : m_ShowAuroralOvalInCloudWindow to false by default
 | **Wed 14 Sep** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Wed 14 Sep** : Improved implementation of PlanetRadius
 | **Thu 08 Sep** : Merge branch '4.3' of github.com:simul/Simul into 4.3
@@ -95,8 +100,3 @@ Changelist
 | **Tue 29 Mar** : Precip inprovements, revert transitionDistanceKm back to 100km
 | **Tue 29 Mar** : Merge branch 'nick_shadow' of github.com:simul/Simul into nick_shadow
 | **Tue 29 Mar** : Cloud shadow constant and multiplier for finer shadow control.
-| **Tue 29 Mar** : Cloud shadow constant and multiplier for better control of shadow texture.
-| **Tue 29 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Tue 29 Mar** : Platform ptr.
-| **Mon 28 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Mon 28 Mar** : Set precip viewStore Last_Frame_number correctly, removed unused params from cloud_constants.sl
