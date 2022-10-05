@@ -1,5 +1,6 @@
 Changelist 
 ========= 
+| **Tue 04 Oct** : Fix some cloud update bugs, more clarity in overlays.
 | **Fri 30 Sep** : Precipitation Region Fix, update drawing camera position and view distance, externalDynamic value correctly utilises origin variables
 | **Thu 29 Sep** : Fixes for sequencer UIDs.
 | **Thu 29 Sep** : Merge branch '4.3' of github.com:simul/Simul into 4.3
@@ -99,4 +100,3 @@ Changelist
 | **Wed 30 Mar** : Fix compile error for Vulkan in terrain.sfx
 | **Tue 29 Mar** : Precip inprovements, revert transitionDistanceKm back to 100km
 | **Tue 29 Mar** : Merge branch 'nick_shadow' of github.com:simul/Simul into nick_shadow
-| **Tue 29 Mar** : Cloud shadow constant and multiplier for finer shadow control.
