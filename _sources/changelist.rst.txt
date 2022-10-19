@@ -1,5 +1,9 @@
 Changelist 
 ========= 
+| **Mon 17 Oct** : Platform Pointer
+| **Thu 13 Oct** : Remove unused variable to fix 6.000 PS5 SDK.
+| **Fri 07 Oct** : Remove OverrideWind variable, update to cloudRendering.
+| **Thu 06 Oct** : Ensure Keyframes don't have the same UID.
 | **Tue 04 Oct** : Fix some cloud update bugs, more clarity in overlays.
 | **Fri 30 Sep** : Precipitation Region Fix, update drawing camera position and view distance, externalDynamic value correctly utilises origin variables
 | **Thu 29 Sep** : Fixes for sequencer UIDs.
@@ -96,7 +100,3 @@ Changelist
 | **Wed 30 Mar** : Cleaned up Unity.cpp. Removed Xbox header as they are now handled internally.
 | **Wed 30 Mar** : Rename Spot to pointLight
 | **Wed 30 Mar** : UnityPluginInterface.h renamed to TrueSkyPluginRenderInterface.h and RenderingPlugin.cpp renamed to TrueSkyPluginRenderInterface.cpp. TRUESKYRENDERINTERFACE_EXPORT renamed to TRUESKY_PLUGINRENDER_EXPORT. TrueSkyPluginRender.h removed in favour of Export.h. Clean up of TrueSkyPluginRenderInterface.h/.cpp
-| **Wed 30 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Wed 30 Mar** : Fix compile error for Vulkan in terrain.sfx
-| **Tue 29 Mar** : Precip inprovements, revert transitionDistanceKm back to 100km
-| **Tue 29 Mar** : Merge branch 'nick_shadow' of github.com:simul/Simul into nick_shadow
