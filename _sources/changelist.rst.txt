@@ -1,5 +1,7 @@
 Changelist 
 ========= 
+| **Thu 20 Oct** : Revert accidental change to WindowUpdate.
+| **Wed 19 Oct** : Platform Pointer.
 | **Mon 17 Oct** : Platform Pointer
 | **Thu 13 Oct** : Remove unused variable to fix 6.000 PS5 SDK.
 | **Fri 07 Oct** : Remove OverrideWind variable, update to cloudRendering.
@@ -98,5 +100,3 @@ Changelist
 | **Wed 13 Apr** : Add highDetailMultipler and highDetailRangeKm variables for adjustable fidelity and performance.
 | **Thu 07 Apr** : Add reset function, remove unnecessary setUAV - no longer causing warnings and are causing DX12 crash.
 | **Wed 30 Mar** : Cleaned up Unity.cpp. Removed Xbox header as they are now handled internally.
-| **Wed 30 Mar** : Rename Spot to pointLight
-| **Wed 30 Mar** : UnityPluginInterface.h renamed to TrueSkyPluginRenderInterface.h and RenderingPlugin.cpp renamed to TrueSkyPluginRenderInterface.cpp. TRUESKYRENDERINTERFACE_EXPORT renamed to TRUESKY_PLUGINRENDER_EXPORT. TrueSkyPluginRender.h removed in favour of Export.h. Clean up of TrueSkyPluginRenderInterface.h/.cpp
