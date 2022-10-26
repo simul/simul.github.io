@@ -1,5 +1,7 @@
 Changelist 
 ========= 
+| **Tue 25 Oct** : Additional parameters within UIRenderingInterface
+| **Mon 24 Oct** : Fixes for shadows and Wind Movement
 | **Thu 20 Oct** : Revert accidental change to WindowUpdate.
 | **Wed 19 Oct** : Platform Pointer.
 | **Mon 17 Oct** : Platform Pointer
@@ -98,5 +100,3 @@ Changelist
 | **Thu 14 Apr** : Updated structs for highDetail Variables
 | **Wed 13 Apr** : Merge branch '4.3' of github.com:simul/Simul into nick_shadow
 | **Wed 13 Apr** : Add highDetailMultipler and highDetailRangeKm variables for adjustable fidelity and performance.
-| **Thu 07 Apr** : Add reset function, remove unnecessary setUAV - no longer causing warnings and are causing DX12 crash.
-| **Wed 30 Mar** : Cleaned up Unity.cpp. Removed Xbox header as they are now handled internally.
