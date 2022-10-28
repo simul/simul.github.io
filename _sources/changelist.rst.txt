@@ -1,5 +1,8 @@
 Changelist 
 ========= 
+| **Thu 27 Oct** : Fix for TrueSkyRenderModes
+| **Wed 26 Oct** : Init cloud Texture
+| **Wed 26 Oct** : Revert removal of OverrideWind
 | **Tue 25 Oct** : Additional parameters within UIRenderingInterface
 | **Mon 24 Oct** : Fixes for shadows and Wind Movement
 | **Thu 20 Oct** : Revert accidental change to WindowUpdate.
@@ -97,6 +100,3 @@ Changelist
 | **Tue 19 Apr** : add addition path for .qss style sheet. Update SkySequencer.nsi
 | **Tue 19 Apr** : Merge branch '4.3' of github.com:simul/Simul into nick_shadow
 | **Tue 19 Apr** : Changed multipliedSteps from int to uint to fix vulkan shader compile error
-| **Thu 14 Apr** : Updated structs for highDetail Variables
-| **Wed 13 Apr** : Merge branch '4.3' of github.com:simul/Simul into nick_shadow
-| **Wed 13 Apr** : Add highDetailMultipler and highDetailRangeKm variables for adjustable fidelity and performance.
