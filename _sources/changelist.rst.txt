@@ -1,5 +1,7 @@
 Changelist 
 ========= 
+| **Thu 03 Nov** : Update to D3D11+12 samples, remove unused source files.
+| **Thu 03 Nov** : Add main_pass to Skylight rendermode enum
 | **Thu 27 Oct** : Fix for TrueSkyRenderModes
 | **Wed 26 Oct** : Init cloud Texture
 | **Wed 26 Oct** : Revert removal of OverrideWind
@@ -98,5 +100,3 @@ Changelist
 | **Tue 19 Apr** : Update Icons and Logos, fix simul_commit variable within SkySequencer.nsi
 | **Tue 19 Apr** : Further update to SkySequencer.nsi
 | **Tue 19 Apr** : add addition path for .qss style sheet. Update SkySequencer.nsi
-| **Tue 19 Apr** : Merge branch '4.3' of github.com:simul/Simul into nick_shadow
-| **Tue 19 Apr** : Changed multipliedSteps from int to uint to fix vulkan shader compile error
