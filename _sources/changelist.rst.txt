@@ -1,5 +1,7 @@
 Changelist 
 ========= 
+| **Fri 25 Nov** : Platform ptr.
+| **Wed 23 Nov** : Moved some fns to noise.sl/
 | **Tue 22 Nov** : Platform ptr.
 | **Fri 11 Nov** : Fix to CloudWindow Crash. Reduce chance of invalid lightning strikes. Remove celestial objects from low res cubemap.
 | **Thu 03 Nov** : Update to D3D11+12 samples, remove unused source files.
@@ -98,5 +100,3 @@ Changelist
 | **Thu 21 Apr** : Update NSI/Setup.nsi to fix build issue.
 | **Wed 20 Apr** : Update .nsi files, platform ptr,
 | **Wed 20 Apr** : fix issue where dynamic dx11 sample could not find dlls
-| **Wed 20 Apr** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Tue 19 Apr** : Update Icons and Logos, fix simul_commit variable within SkySequencer.nsi
