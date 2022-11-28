@@ -1,5 +1,6 @@
 Changelist 
 ========= 
+| **Fri 25 Nov** : Fixed PrecipitationRenderer for msaa screen size depth textures.
 | **Fri 25 Nov** : Platform ptr.
 | **Wed 23 Nov** : Moved some fns to noise.sl/
 | **Tue 22 Nov** : Platform ptr.
@@ -99,4 +100,3 @@ Changelist
 | **Thu 21 Apr** : Further .nsi updates to keep Setup and sequencer similar.
 | **Thu 21 Apr** : Update NSI/Setup.nsi to fix build issue.
 | **Wed 20 Apr** : Update .nsi files, platform ptr,
-| **Wed 20 Apr** : fix issue where dynamic dx11 sample could not find dlls
