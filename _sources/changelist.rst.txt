@@ -1,7 +1,25 @@
 Changelist 
 ========= 
+| **Wed 30 Nov** : Platform ptr.
+| **Tue 29 Nov** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Tue 29 Nov** : Changed the compute shader group sizes to (16, 16, 1) to improve in GPU timings for the CS_Raytrace shaders. Platform ptr.
+| **Tue 29 Nov** : Merge of sync branch: allows cross-hardware pseudorandom function consistency with IntegerPseudorandomNoise in CloudRenderingOptions.
+| **Tue 29 Nov** : Merge branch '4.3_sync' into 4.3
+| **Tue 29 Nov** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Tue 29 Nov** : Merge branch '4.3_sync' of github.com:simul/Simul into 4.3_sync
+| **Tue 29 Nov** : Overlay order.
+| **Tue 29 Nov** : Sample title.
+| **Tue 29 Nov** : Sample tweaks.
+| **Tue 29 Nov** : Platform ptr.
+| **Tue 29 Nov** : Platform ptr.
+| **Tue 29 Nov** : Platform ptr for magic_enum submodule.
+| **Mon 28 Nov** : Using cloudRenderingOptions.IntegerPseudorandomNoise to select randomness model in shaders.
+| **Mon 28 Nov** : Merge branch '4.3' of github.com:simul/Simul into 4.3_sync
 | **Fri 25 Nov** : Fixed PrecipitationRenderer for msaa screen size depth textures.
 | **Fri 25 Nov** : Platform ptr.
+| **Wed 23 Nov** : Using CombinedTauswortheSphericalRandom in RestrictedWorley. Fix cloud generation hardware mismatch.
+| **Wed 23 Nov** : Using TauswortheVirtualNoiseLookup for reproduceable cloud generation.
+| **Wed 23 Nov** : Debugging cloud generation synchronization.
 | **Wed 23 Nov** : Moved some fns to noise.sl/
 | **Tue 22 Nov** : Platform ptr.
 | **Fri 11 Nov** : Fix to CloudWindow Crash. Reduce chance of invalid lightning strikes. Remove celestial objects from low res cubemap.
@@ -82,21 +100,3 @@ Changelist
 | **Tue 26 Apr** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Tue 26 Apr** : Update Platform ptr.
 | **Tue 26 Apr** : Force unused resource to nullptr to workaround platform bug
-| **Tue 26 Apr** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Tue 26 Apr** : Update SkyKeyframer docs.
-| **Mon 25 Apr** : Compile Fix
-| **Mon 25 Apr** : Remove inaccurate "derived classes" refs in docs.
-| **Mon 25 Apr** : Merge branch 'nick_shadow' into 4.3
-| **Mon 25 Apr** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Mon 25 Apr** : Add safe_asin. depth.texturePtr null check in RenderingPlugin.cpp. Add profiling to GL Sample. Add GetShadowTexcoords shader function. Add planetRadiusKm to compositing_constants.
-| **Mon 25 Apr** : Add Docs to 4.3
-| **Mon 25 Apr** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Mon 25 Apr** : SIMUL_PLUGIN_DEPLOY Python check in CMake files.
-| **Fri 22 Apr** : Platform Ptr.
-| **Fri 22 Apr** : Disable Build shaders in CMake if shaders are not present
-| **Thu 21 Apr** : Update automatic screenshot functionality, additional .nsi fix for smarter access to .glfw
-| **Thu 21 Apr** : Platform Ptr
-| **Thu 21 Apr** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Thu 21 Apr** : Further .nsi updates to keep Setup and sequencer similar.
-| **Thu 21 Apr** : Update NSI/Setup.nsi to fix build issue.
-| **Wed 20 Apr** : Update .nsi files, platform ptr,
