@@ -1,5 +1,10 @@
 Changelist 
 ========= 
+| **Thu 08 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Thu 08 Dec** : Updated compositing shaders to fix lightpass texture incorrect rendering.
+| **Wed 07 Dec** : Improve Worley noise seeding.
+| **Wed 07 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Wed 07 Dec** : Correct an integer noise cloud generation error due to incorrect seeding.
 | **Fri 02 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Fri 02 Dec** : Updated comment in RenderFrameStruct.
 | **Wed 30 Nov** : Platform ptr.
@@ -95,8 +100,3 @@ Changelist
 | **Mon 23 May** : Update TrueSkyPluginRenderInterface.cpp
 | **Fri 20 May** : Platform ptr. StructuredBuffer type compile fixes.
 | **Wed 18 May** : Implement "force update" checksum and button for CloudWindow.
-| **Tue 03 May** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Tue 03 May** : Minor corrections.
-| **Tue 03 May** : Compile fix for Xbox One.
-| **Tue 03 May** : Fix for CloudWindow.cpp safe_asin() for non C++17 compilers.
-| **Tue 26 Apr** : Merge branch '4.3' of github.com:simul/Simul into 4.3
