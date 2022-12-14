@@ -1,5 +1,9 @@
 Changelist 
 ========= 
+| **Tue 13 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Tue 13 Dec** : Platform ptr.
+| **Mon 12 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Mon 12 Dec** : Change Platform submodule to relative path.
 | **Thu 08 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Thu 08 Dec** : Updated compositing shaders to fix lightpass texture incorrect rendering.
 | **Wed 07 Dec** : Improve Worley noise seeding.
@@ -96,7 +100,3 @@ Changelist
 | **Thu 02 Jun** : RenderFrameStruct adds TrueSkyRenderMode.
 | **Sun 29 May** : Fix CloudShadow scale assignment.
 | **Fri 27 May** : Fix-up dll interface: cloud range is now read-only.
-| **Fri 27 May** : Added StaticGetExternalRenderValues to dll interface.
-| **Mon 23 May** : Update TrueSkyPluginRenderInterface.cpp
-| **Fri 20 May** : Platform ptr. StructuredBuffer type compile fixes.
-| **Wed 18 May** : Implement "force update" checksum and button for CloudWindow.
