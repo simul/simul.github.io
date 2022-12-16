@@ -1,5 +1,11 @@
 Changelist 
 ========= 
+| **Fri 16 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Fri 16 Dec** : Fix for RenderPlatform finding shaders path when device is changed
+| **Fri 16 Dec** : Added counterpart to SetExternalDynamicValues to the Getter for CloudWindow origin
+| **Thu 15 Dec** : Updated shader raytrace names.
+| **Thu 15 Dec** : Renamed cloud raytrace shader include files and updated technique/passes/functions names in clouds.sfx and CloudRenderer.
+| **Thu 15 Dec** : Comment regarding depth value associations for compositing the lightpass texture.
 | **Tue 13 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Tue 13 Dec** : Platform ptr.
 | **Mon 12 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
@@ -94,9 +100,3 @@ Changelist
 | **Wed 08 Jun** : When DRAW_ATMOSPHERE is disabled, the atmosphere/aerial perspective is not added, but clouds are still drawn.
 | **Fri 03 Jun** : Fix implementation of DRAW_CLOUDS.
 | **Fri 03 Jun** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Fri 03 Jun** : Implement TrueSkyRenderMode::DRAW_CLOUDS.
-| **Fri 03 Jun** : Remove unused globalWindControl checkbox. Add StaticGetExternalDynamicValues.
-| **Thu 02 Jun** : RenderFrameStruct adds TrueSkyRenderMode. If left as DEFAULT, the older behaviour will be used.
-| **Thu 02 Jun** : RenderFrameStruct adds TrueSkyRenderMode.
-| **Sun 29 May** : Fix CloudShadow scale assignment.
-| **Fri 27 May** : Fix-up dll interface: cloud range is now read-only.
