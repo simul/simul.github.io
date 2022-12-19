@@ -1,6 +1,8 @@
 Changelist 
 ========= 
 | **Fri 16 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Fri 16 Dec** : Fix for rendering error in RaytraceCloudsVariable() when highDetailMultiplier is at max.
+| **Fri 16 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Fri 16 Dec** : Fix for RenderPlatform finding shaders path when device is changed
 | **Fri 16 Dec** : Added counterpart to SetExternalDynamicValues to the Getter for CloudWindow origin
 | **Thu 15 Dec** : Updated shader raytrace names.
@@ -98,5 +100,3 @@ Changelist
 | **Fri 17 Jun** : Re-Added StaticSetTexture for backwards compatibility with 4.1b
 | **Wed 15 Jun** : Add Shadow information to alpha channel. Update to get/set automatic sun pos.
 | **Wed 08 Jun** : When DRAW_ATMOSPHERE is disabled, the atmosphere/aerial perspective is not added, but clouds are still drawn.
-| **Fri 03 Jun** : Fix implementation of DRAW_CLOUDS.
-| **Fri 03 Jun** : Merge branch '4.3' of github.com:simul/Simul into 4.3
