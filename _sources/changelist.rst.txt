@@ -1,5 +1,7 @@
 Changelist 
 ========= 
+| **Wed 21 Dec** : fix for 4.3 lighting
+| **Wed 21 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Fri 16 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Fri 16 Dec** : Fix for rendering error in RaytraceCloudsVariable() when highDetailMultiplier is at max.
 | **Fri 16 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
@@ -17,8 +19,10 @@ Changelist
 | **Wed 07 Dec** : Improve Worley noise seeding.
 | **Wed 07 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Wed 07 Dec** : Correct an integer noise cloud generation error due to incorrect seeding.
+| **Tue 06 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Fri 02 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Fri 02 Dec** : Updated comment in RenderFrameStruct.
+| **Wed 30 Nov** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Wed 30 Nov** : Platform ptr.
 | **Tue 29 Nov** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Tue 29 Nov** : Changed the compute shader group sizes to (16, 16, 1) to improve in GPU timings for the CS_Raytrace shaders. Platform ptr.
@@ -29,10 +33,12 @@ Changelist
 | **Tue 29 Nov** : Overlay order.
 | **Tue 29 Nov** : Sample title.
 | **Tue 29 Nov** : Sample tweaks.
+| **Tue 29 Nov** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Tue 29 Nov** : Platform ptr.
 | **Tue 29 Nov** : Platform ptr.
 | **Tue 29 Nov** : Platform ptr for magic_enum submodule.
 | **Mon 28 Nov** : Using cloudRenderingOptions.IntegerPseudorandomNoise to select randomness model in shaders.
+| **Mon 28 Nov** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Mon 28 Nov** : Merge branch '4.3' of github.com:simul/Simul into 4.3_sync
 | **Fri 25 Nov** : Fixed PrecipitationRenderer for msaa screen size depth textures.
 | **Fri 25 Nov** : Platform ptr.
@@ -41,6 +47,7 @@ Changelist
 | **Wed 23 Nov** : Debugging cloud generation synchronization.
 | **Wed 23 Nov** : Moved some fns to noise.sl/
 | **Tue 22 Nov** : Platform ptr.
+| **Tue 15 Nov** : Update Skykeyframer Lat/Lon
 | **Fri 11 Nov** : Fix to CloudWindow Crash. Reduce chance of invalid lightning strikes. Remove celestial objects from low res cubemap.
 | **Thu 03 Nov** : Update to D3D11+12 samples, remove unused source files.
 | **Thu 03 Nov** : Add main_pass to Skylight rendermode enum
@@ -93,10 +100,3 @@ Changelist
 | **Fri 24 Jun** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Fri 24 Jun** : Fix amortization bug, structure RenderMode Enum to allow for improved checks.
 | **Fri 24 Jun** : Working relocatable cloud shadow origin. Use GetEnum("cloudshadoworigin") and StaticSet(variant) with vec4 float.
-| **Fri 24 Jun** : Shadow generation now correct.
-| **Fri 24 Jun** : Prototype of movable shadow map.
-| **Thu 23 Jun** : Cirrus fixes and cloud update code.
-| **Fri 17 Jun** : Add Atmospheric Amortization to Sequencer, Fix amortization bug,
-| **Fri 17 Jun** : Re-Added StaticSetTexture for backwards compatibility with 4.1b
-| **Wed 15 Jun** : Add Shadow information to alpha channel. Update to get/set automatic sun pos.
-| **Wed 08 Jun** : When DRAW_ATMOSPHERE is disabled, the atmosphere/aerial perspective is not added, but clouds are still drawn.
