@@ -1,5 +1,8 @@
 Changelist 
 ========= 
+| **Tue 03 Jan** : Changed SkyKeyframer::HeadingOffsetRadians to be a double.
+| **Tue 03 Jan** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Tue 03 Jan** : Removed VK_LAYER_LUNARG_api_dump from TrueSkyPluginRender debug environment variables.
 | **Wed 21 Dec** : fix for 4.3 lighting
 | **Wed 21 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Fri 16 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
@@ -97,6 +100,3 @@ Changelist
 | **Mon 27 Jun** : Sun direction offset when rendering cloud shadows.
 | **Fri 24 Jun** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Fri 24 Jun** : Cloud shadow offset due to light direction reinstated.
-| **Fri 24 Jun** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Fri 24 Jun** : Fix amortization bug, structure RenderMode Enum to allow for improved checks.
-| **Fri 24 Jun** : Working relocatable cloud shadow origin. Use GetEnum("cloudshadoworigin") and StaticSet(variant) with vec4 float.
