@@ -1,5 +1,9 @@
 Changelist 
 ========= 
+| **Fri 06 Jan** : Variable Grid: distanceKm is now calculated with windOffsetKm. Fixes cloud stepping and disappearing clouds when global winds are used.
+| **Fri 06 Jan** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Fri 06 Jan** : Disabled overlays in TrueSkySample.cpp
+| **Thu 05 Jan** : Fixes for shadow movement
 | **Tue 03 Jan** : Changed SkyKeyframer::HeadingOffsetRadians to be a double.
 | **Tue 03 Jan** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Tue 03 Jan** : Removed VK_LAYER_LUNARG_api_dump from TrueSkyPluginRender debug environment variables.
@@ -96,7 +100,3 @@ Changelist
 | **Mon 04 Jul** : Unity Render Fixes
 | **Thu 30 Jun** : Alternate method for fix for individual render modes
 | **Mon 27 Jun** : Platform Ptr.
-| **Mon 27 Jun** : Fix cloud shadow light dir offset.
-| **Mon 27 Jun** : Sun direction offset when rendering cloud shadows.
-| **Fri 24 Jun** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Fri 24 Jun** : Cloud shadow offset due to light direction reinstated.
