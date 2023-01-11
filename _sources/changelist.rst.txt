@@ -1,5 +1,8 @@
 Changelist 
 ========= 
+| **Fri 06 Jan** : Remove hard coded planetRadius values.
+| **Fri 06 Jan** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Fri 06 Jan** : Ensure UsingIntegerPseudorandomNoise is set
 | **Fri 06 Jan** : Variable Grid: distanceKm is now calculated with windOffsetKm. Fixes cloud stepping and disappearing clouds when global winds are used.
 | **Fri 06 Jan** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Fri 06 Jan** : Disabled overlays in TrueSkySample.cpp
@@ -97,6 +100,3 @@ Changelist
 | **Thu 07 Jul** : Update to match Platform changes.
 | **Wed 06 Jul** : Disable Cloud Shadow Texture in Cloud window
 | **Tue 05 Jul** : Update .nsi for SDK executable
-| **Mon 04 Jul** : Unity Render Fixes
-| **Thu 30 Jun** : Alternate method for fix for individual render modes
-| **Mon 27 Jun** : Platform Ptr.
