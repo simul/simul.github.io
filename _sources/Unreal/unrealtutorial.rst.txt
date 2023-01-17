@@ -1,10 +1,10 @@
-﻿Unreal Engine 4 Tutorial
+﻿Unreal Tutorial
 =========================
 
 Initial Configuration
 -------------------------
 
-Please be aware trueSKY for Unreal Engine 4 does not support OSX and OpenGL. For Vulkan please use UE4 4.22 or greater.
+Please be aware trueSKY for Unreal does not support OSX and OpenGL. For Vulkan please use UE4 4.22 or greater.
 
 This page shows you how to install the binary version of trueSKY onto your existing binary UE installation. For other versions, or if you have a version of Unreal Engine built from source, you will need to build the plugin. Check the :doc:`Unreal Source page <unrealsourcecode>` for information on GitHub/Engine Source Integration.
 

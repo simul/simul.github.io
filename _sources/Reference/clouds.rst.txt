@@ -3,7 +3,7 @@ Clouds
 
 .. toctree::
    :maxdepth: 2
-   :caption: Classes:
+   :caption: Classes: Structs:
 
    Clouds/trueskyrenderer.rst
    Clouds/cloudrenderer.rst

@@ -3,3 +3,4 @@ Cloud Keyframer
 
 .. doxygenclass:: simul::clouds::CloudKeyframer
    :members: InsertKeyframe, GetKeyframe, DeleteKeyframe
+   :undoc-members:

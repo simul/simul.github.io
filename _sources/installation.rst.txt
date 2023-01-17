@@ -28,9 +28,9 @@ Your account is now created and you should now be ready to download your preferr
 Selecting your Engine
 ---------------------
 
-Unreal Engine 4
+Unreal
 ```````````````
-The trueSKY Unreal Engine 4 plugin comes as either a branch of the UE4 engine on GitHub, or as a separate installer for the binary distribution of UE4. For further instructions, head over to our page :doc:`trueSKY for Unreal Engine 4 <unrealindex>`.
+The trueSKY Unreal plugin comes as either a branch of the Unreal engine on GitHub, or as a separate installer for the binary distribution. For further instructions, head over to our page :doc:`trueSKY for Unreal <unrealindex>`.
 
 Unity
 `````
@@ -38,7 +38,7 @@ The trueSKY Unity plugin comes as a Unity package; select the appropriate Unity 
 
 Custom Engine (trueSKY SDK)
 ```````````````````````````
-The trueSKY SDK can be integrated into any game or simulation software in two different ways. The first option is to dynamically link with the TrueSkyPluginRender library and API just as we do for Unity and Unreal Engine 4. The second option is to link the trueSKY libraries directly and gain access the lower-level classes. To learn more about the trueSKY SDK, please head over to our page :doc:`trueSKY SDK <programming>`.
+The trueSKY SDK can be integrated into any game or simulation software in two different ways. The first option is to dynamically link with the TrueSkyPluginRender library and API just as we do for Unity and Unreal. The second option is to link the trueSKY libraries directly and gain access the lower-level classes. To learn more about the trueSKY SDK, please head over to our page :doc:`trueSKY SDK <programming>`.
 
 Tools and Tutorials
 -------------------

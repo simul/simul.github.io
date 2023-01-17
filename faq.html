@@ -91,7 +91,7 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation and Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorialsindex.html">Tutorials</a></li>
-<li class="toctree-l1"><a class="reference internal" href="unreal.html">trueSKY for Unreal Engine 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unreal.html">trueSKY for Unreal Engine</a></li>
 <li class="toctree-l1"><a class="reference internal" href="unity.html">trueSKY for Unity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skysequencer.html">Sky Sequencer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="programming.html">Programming with the trueSKY SDK</a></li>
@@ -106,7 +106,6 @@
 <li class="toctree-l3"><a class="reference internal" href="#i-can-t-edit-the-values-in-the-sequencer">I can’t edit the values in the sequencer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#the-camera-view-is-upside-down">The camera view is upside down</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#my-truesky-folder-in-the-content-browser-is-empty">My trueSKY folder in the content browser is empty</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#i-can-t-enable-water">I Can’t Enable Water!</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#failed-to-load-trueskyui-md-dll-for-truesky-ui">Failed to load TrueSkyUI_MD.dll for truesky ui</a></li>
 </ul>
 </li>
@@ -140,7 +139,6 @@
 <li class="toctree-l2"><a class="reference internal" href="#cloud-appearance">Cloud Appearance</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#how-do-i-make-my-clouds-the-same-each-time-i-launch-my-program">How do I make my clouds the same each time I launch my program?</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#my-clouds-have-an-obvious-pattern-in-them-how-do-i-make-it-go-away">My Clouds have an obvious pattern in them, how do I make it go away?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id1">How do I make the clouds appear less pixelated?</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#my-clouds-change-with-only-one-keyframe">My Clouds change with only one keyframe</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#how-do-i-make-the-clouds-move-independently-of-time-of-day">How do I make the clouds move independently of time-of-day?</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#on-ps4-there-is-an-apparent-trail-in-the-sky-as-the-camera-moves">On PS4, there is an apparent “trail” in the sky as the camera moves</a></li>
@@ -148,6 +146,9 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#other-issues">Other Issues</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#plugin-conflicts">Plugin Conflicts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#houdini"><strong>Houdini</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ceto"><strong>CETO</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#popcorn-fx"><strong>Popcorn FX</strong></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#my-question-is-not-in-the-documentation-what-can-i-do">My Question is not in the documentation, what can I do?</a></li>
@@ -244,11 +245,11 @@
 <h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="could-not-find-or-load-the-qt-platform-window">
 <h3>Could not find or load the QT platform “window”<a class="headerlink" href="#could-not-find-or-load-the-qt-platform-window" title="Permalink to this headline">¶</a></h3>
-<p>Some Plugins use an incompatible version of the Qt widget system, please deactivate these Plugins to enable trueSKY. Currently known Plugins that have conflict issues can be found <a class="reference internal" href="#pluginconflicts"><span class="std std-ref">here.</span></a></p>
+<p>Some Plugins use an incompatible version of the Qt widget system, please deactivate these Plugins to enable trueSKY. Currently known Plugins that have conflict issues can be found <span class="xref std std-ref">here.</span></p>
 </div>
 <div class="section" id="createfile2-not-found-in-kernel32-dll">
 <h3>“createfile2 not found in kernel32.dll”<a class="headerlink" href="#createfile2-not-found-in-kernel32-dll" title="Permalink to this headline">¶</a></h3>
-<p>This will be due to Windows 7. Unforunately, we do not support Windows 7 anymore. You will need to upgrade your OS to be able to use trueSKY.</p>
+<p>This will be due to Windows 7. Unforunately, we do not support Windows 7 anymore. If you wish for Windows 7 Support please contact us directly.</p>
 </div>
 <div class="section" id="getting-dllnotfoundexception">
 <h3>Getting “DllNotFoundException”<a class="headerlink" href="#getting-dllnotfoundexception" title="Permalink to this headline">¶</a></h3>
@@ -260,7 +261,7 @@
 </div>
 <div class="section" id="when-packaging-the-game-i-get-errors-and-or-the-sky-is-black">
 <h3>When packaging the game, I get errors and/or the sky is black.<a class="headerlink" href="#when-packaging-the-game-i-get-errors-and-or-the-sky-is-black" title="Permalink to this headline">¶</a></h3>
-<p>If you are using the binary installer, then you will need to follow some additional steps to be able to package your game with trueSKY. You can read about these <a class="reference internal" href="Programming/deployment.html"><span class="doc">here</span></a>. If these steps have been taken, there may be a conflict with another plugin. Currently known Plugins that have conflict issues can be found <a class="reference internal" href="#pluginconflicts"><span class="std std-ref">here.</span></a></p>
+<p>If you are using the binary installer, then you will need to follow some additional steps to be able to package your game with trueSKY. You can read about these <a class="reference internal" href="Programming/deployment.html"><span class="doc">here</span></a>. If these steps have been taken, there may be a conflict with another plugin. Currently known Plugins that have conflict issues can be found <span class="xref std std-ref">here.</span></p>
 </div>
 <div class="section" id="i-can-t-edit-the-values-in-the-sequencer">
 <h3>I can’t edit the values in the sequencer<a class="headerlink" href="#i-can-t-edit-the-values-in-the-sequencer" title="Permalink to this headline">¶</a></h3>
@@ -273,10 +274,6 @@
 <div class="section" id="my-truesky-folder-in-the-content-browser-is-empty">
 <h3>My trueSKY folder in the content browser is empty<a class="headerlink" href="#my-truesky-folder-in-the-content-browser-is-empty" title="Permalink to this headline">¶</a></h3>
 <p>You can find the contents by going to “UE4Engine/Engine/Plugins/TrueSkyPlugin/Content”. We don’t copy the files in to save you having the files in every project. If you want to copy them over that is fine, but you will need to adjust the trueSKY actor’s and our material function references if you use them from a different location.</p>
-</div>
-<div class="section" id="i-can-t-enable-water">
-<h3>I Can’t Enable Water!<a class="headerlink" href="#i-can-t-enable-water" title="Permalink to this headline">¶</a></h3>
-<p>This will be because you are using our legacy versions (4.1a), which does not support our Water. Please update to trueSKY 4.2 or greater.</p>
 </div>
 <div class="section" id="failed-to-load-trueskyui-md-dll-for-truesky-ui">
 <h3>Failed to load TrueSkyUI_MD.dll for truesky ui<a class="headerlink" href="#failed-to-load-trueskyui-md-dll-for-truesky-ui" title="Permalink to this headline">¶</a></h3>
@@ -365,10 +362,6 @@
 <h3>My Clouds have an obvious pattern in them, how do I make it go away?<a class="headerlink" href="#my-clouds-have-an-obvious-pattern-in-them-how-do-i-make-it-go-away" title="Permalink to this headline">¶</a></h3>
 <p>Noise is used to hide repetition, have a look at our <a class="reference internal" href="Tutorials/clouds.html"><span class="doc">Noise Settings</span></a> to learn how to hide patterns effectively. If it is still an obvious grid, consider changing the size of the grid. This is done in the trueSKY actor within the world under “Render Grid X” and “Render Grid Y”. Reducing both these values will make the grid sections smaller, resulting in higher quality clouds. This may however affect performance. Multiple cloud layers can also be used to help remove the appearance of repetition by making them intersect. Finally, make sure there is breaks within the clouds, as a sheet of clouds will always look the most repetitive.</p>
 </div>
-<div class="section" id="id1">
-<h3>How do I make the clouds appear less pixelated?<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<p>Try increasing the clouds resolution in the trueSKY Object.</p>
-</div>
 <div class="section" id="my-clouds-change-with-only-one-keyframe">
 <h3>My Clouds change with only one keyframe<a class="headerlink" href="#my-clouds-change-with-only-one-keyframe" title="Permalink to this headline">¶</a></h3>
 <p>Setting the ‘Noise Period’ value in the cloud layer in the sky sequencer to the minimum possible will stop the clouds from changing shape over time.</p>
@@ -386,13 +379,19 @@
 <h2>Other Issues<a class="headerlink" href="#other-issues" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="plugin-conflicts">
 <h3>Plugin Conflicts<a class="headerlink" href="#plugin-conflicts" title="Permalink to this headline">¶</a></h3>
-<p><strong>Houdini</strong></p>
+</div>
+<div class="section" id="houdini">
+<h3><strong>Houdini</strong><a class="headerlink" href="#houdini" title="Permalink to this headline">¶</a></h3>
 <p>Unconfirmed issues with Houdini.</p>
-<p><strong>CETO</strong></p>
+</div>
+<div class="section" id="ceto">
+<h3><strong>CETO</strong><a class="headerlink" href="#ceto" title="Permalink to this headline">¶</a></h3>
 <p>Any transparent shaders in use will need to be modified, otherwise the water may render above the clouds. In the OceanTopSide_Transparent shader, find the “Queue” tag and change it from “Transparent-1” to “Transparent-500”. Find the same tag in the “OceanUnderSide_Transparent” shader and change this from “Transparent-2” to “Transparent-501”.</p>
 <p>This will make it so that trueSKY won’t be visible when underwater, so if underwater views are needed, it is advisable to write a script that changes these queue values back to their defaults when the camera is underwater.</p>
 <p>Reloading or switching Unity scenes with both trueSKY and CETO active is not currently supported. This conflict is caused by CETO’s OnDestroy() function, which removes the Unity camera and the associated Unity RenderBuffers; trueSKY relies on these RenderBuffers for its rendering.</p>
-<p><strong>Popcorn FX</strong></p>
+</div>
+<div class="section" id="popcorn-fx">
+<h3><strong>Popcorn FX</strong><a class="headerlink" href="#popcorn-fx" title="Permalink to this headline">¶</a></h3>
 <p>If you are using the PopcornFX plugin, you will need to set native rendering to “Before Image Effect” for it to work alongside trueSKY.</p>
 </div>
 </div>

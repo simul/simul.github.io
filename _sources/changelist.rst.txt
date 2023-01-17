@@ -1,5 +1,6 @@
 Changelist 
 ========= 
+| **Mon 16 Jan** : Fix missing images, update to docs for tables, missing variables.
 | **Fri 06 Jan** : Remove hard coded planetRadius values.
 | **Fri 06 Jan** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Fri 06 Jan** : Ensure UsingIntegerPseudorandomNoise is set
@@ -99,4 +100,3 @@ Changelist
 | **Thu 07 Jul** : Platfrom Ptr.
 | **Thu 07 Jul** : Update to match Platform changes.
 | **Wed 06 Jul** : Disable Cloud Shadow Texture in Cloud window
-| **Tue 05 Jul** : Update .nsi for SDK executable

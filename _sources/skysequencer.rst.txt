@@ -1,7 +1,7 @@
 Sky Sequencer
 =============
 
-The Sky Sequencer is used to generate .sq files for use within projects that have integrated trueSKY. It features all settings and variables found within the Unreal Engine 4 and Unity sequencers.
+The Sky Sequencer is used to generate .sq files for use within projects that have integrated trueSKY. It features all settings and variables found within the Unreal and Unity sequencers.
 
 
 Downloading, Installing and Launching the Sky Sequencer
@@ -45,7 +45,7 @@ You can re-arrange the Sky Sequencer's docked windows to fit your work style wit
 
 You can navigate easily through each of the docked windows as you desire and their functionality is outlined later on this page.
 
-There are a lot of similarities between the Sky Sequencer and the Sequencers supplied with our Unreal Engine 4 and Unity plugins. All of the information for these plugins is directly transferable to the Sky Sequencer, however certain properties might be in slightly different locations. This is most notable with properties found on the trueSKY actor/object; they would most likely be within the Sky Sequencer's global properties - See below.
+There are a lot of similarities between the Sky Sequencer and the Sequencers supplied with our Unreal and Unity plugins. All of the information for these plugins is directly transferable to the Sky Sequencer, however certain properties might be in slightly different locations. This is most notable with properties found on the trueSKY actor/object; they would most likely be within the Sky Sequencer's global properties - See below.
 
 
 Windows and their functionality

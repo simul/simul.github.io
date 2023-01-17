@@ -2,4 +2,4 @@ Cloud Keyframe
 ======================================
 
 .. doxygenstruct:: simul::clouds::CloudKeyframe
-   :members: cloudiness, distribution_base_layer, distribution_transition, upper_density, cloud_base_km, cloud_height_km, cloud_width_km, scale_km, octaves, persistence, fractal_amplitude, edge_sharpness, churn, precipitation, rain_to_snow, precipitation_base_km, diffusivity, max_density_gm3, base_noise_factor, offsetKm, octaves_f, simulation, worley_noise, worley_scale, edge_worley_noise
+   :members:

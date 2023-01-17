@@ -91,7 +91,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation and Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorialsindex.html">Tutorials</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../unreal.html">trueSKY for Unreal Engine 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../unreal.html">trueSKY for Unreal Engine</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../unity.html">trueSKY for Unity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../skysequencer.html">Sky Sequencer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../programming.html">Programming with the trueSKY SDK</a></li>
@@ -211,13 +211,24 @@
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11CloudWindowE">
 <span id="_CPPv3N5simul6clouds11CloudWindowE"></span><span id="_CPPv2N5simul6clouds11CloudWindowE"></span><span id="simul::clouds::CloudWindow"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">clouds</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">CloudWindow</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds11CloudWindowE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><div class="breathe-sectiondef docutils container">
+<dd><p>Cloud Window Struct. </p>
+<div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11CloudWindow11CloudWindowEv">
+<span id="_CPPv3N5simul6clouds11CloudWindow11CloudWindowEv"></span><span id="_CPPv2N5simul6clouds11CloudWindow11CloudWindowEv"></span><span id="simul::clouds::CloudWindow::CloudWindow"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window_1a4572b9255b72765fed5e928605b01535"></span><span class="sig-name descname"><span class="n"><span class="pre">CloudWindow</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds11CloudWindow11CloudWindowEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11CloudWindowaSERK11CloudWindow">
 <span id="_CPPv3N5simul6clouds11CloudWindowaSERK11CloudWindow"></span><span id="_CPPv2N5simul6clouds11CloudWindowaSERK11CloudWindow"></span><span id="simul::clouds::CloudWindow::assign-operator__CloudWindowCR"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window_1a0670a38fccc2720fc590e4a24874bc7b"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5simul6clouds11CloudWindowE" title="simul::clouds::CloudWindow"><span class="n"><span class="pre">CloudWindow</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5simul6clouds11CloudWindowE" title="simul::clouds::CloudWindow"><span class="n"><span class="pre">CloudWindow</span></span></a><span class="p"><span class="pre">&amp;</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds11CloudWindowaSERK11CloudWindow" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>assignment operator only copies properties, not state. </p>
 </dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11CloudWindow6UpdateE4vec3f">
+<span id="_CPPv3N5simul6clouds11CloudWindow6UpdateE4vec3f"></span><span id="_CPPv2N5simul6clouds11CloudWindow6UpdateE4vec3f"></span><span id="simul::clouds::CloudWindow::Update__vec3.float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window_1a9abd0044b980ef92ed75e884154725f7"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Update</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">wind_spd_ms</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds11CloudWindow6UpdateE4vec3f" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11CloudWindow5ResetEv">
@@ -251,6 +262,11 @@
 </dd></dl>
 
 <dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11CloudWindow17SetTrueWindOffsetEv">
+<span id="_CPPv3N5simul6clouds11CloudWindow17SetTrueWindOffsetEv"></span><span id="_CPPv2N5simul6clouds11CloudWindow17SetTrueWindOffsetEv"></span><span id="simul::clouds::CloudWindow::SetTrueWindOffset"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window_1a7a15156acf1445685dd2bddbbaa84ff9"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetTrueWindOffset</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds11CloudWindow17SetTrueWindOffsetEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds11CloudWindow27GetLatitudeLongitudeHeadingE4vec3RdRdRd">
 <span id="_CPPv3NK5simul6clouds11CloudWindow27GetLatitudeLongitudeHeadingE4vec3RdRdRd"></span><span id="_CPPv2NK5simul6clouds11CloudWindow27GetLatitudeLongitudeHeadingE4vec3RdRdRd"></span><span id="simul::clouds::CloudWindow::GetLatitudeLongitudeHeading__vec3.doubleR.doubleR.doubleRC"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window_1a666ce870fd3cd94a823d465fe12e592c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetLatitudeLongitudeHeading</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">pos</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">lat</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">lon</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">head</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds11CloudWindow27GetLatitudeLongitudeHeadingE4vec3RdRdRd" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Get the latitude/longitude referred to by the specified position value. </p>
@@ -274,13 +290,155 @@
 <dd><p>Get the longitude referred to by the origin quaternion. </p>
 </dd></dl>
 
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds11CloudWindow23GetOriginHeadingDegreesEv">
+<span id="_CPPv3NK5simul6clouds11CloudWindow23GetOriginHeadingDegreesEv"></span><span id="_CPPv2NK5simul6clouds11CloudWindow23GetOriginHeadingDegreesEv"></span><span id="simul::clouds::CloudWindow::GetOriginHeadingDegreesC"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window_1a42705743815f605f73665764a0d758f8"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetOriginHeadingDegrees</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds11CloudWindow23GetOriginHeadingDegreesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds11CloudWindow31GlobalQuaternionToLocalOffsetKmEN13crossplatform11QuaterniondE">
+<span id="_CPPv3NK5simul6clouds11CloudWindow31GlobalQuaternionToLocalOffsetKmEN13crossplatform11QuaterniondE"></span><span id="_CPPv2NK5simul6clouds11CloudWindow31GlobalQuaternionToLocalOffsetKmEN13crossplatform11QuaterniondE"></span><span id="simul::clouds::CloudWindow::GlobalQuaternionToLocalOffsetKm__crossplatform::QuaterniondC"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window_1aa13e899c021688b369c9790566bf293d"></span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GlobalQuaternionToLocalOffsetKm</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Quaterniond</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">global_quat</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds11CloudWindow31GlobalQuaternionToLocalOffsetKmEN13crossplatform11QuaterniondE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds11CloudWindow20WGS84PositionToLocalE5vec3d">
+<span id="_CPPv3NK5simul6clouds11CloudWindow20WGS84PositionToLocalE5vec3d"></span><span id="_CPPv2NK5simul6clouds11CloudWindow20WGS84PositionToLocalE5vec3d"></span><span id="simul::clouds::CloudWindow::WGS84PositionToLocal__vec3dC"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window_1a99334310138d19fd027d2acbdcf4be4b"></span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">WGS84PositionToLocal</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vec3d</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">pos_km</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds11CloudWindow20WGS84PositionToLocalE5vec3d" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds11CloudWindow21WGS84DirectionToLocalE5vec3d">
+<span id="_CPPv3NK5simul6clouds11CloudWindow21WGS84DirectionToLocalE5vec3d"></span><span id="_CPPv2NK5simul6clouds11CloudWindow21WGS84DirectionToLocalE5vec3d"></span><span id="simul::clouds::CloudWindow::WGS84DirectionToLocal__vec3dC"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window_1ad91058797ca78a284f32edcc713fe2c4"></span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">WGS84DirectionToLocal</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vec3d</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">dir</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds11CloudWindow21WGS84DirectionToLocalE5vec3d" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds11CloudWindow20LocalPositionToWGS84E5vec3d">
+<span id="_CPPv3NK5simul6clouds11CloudWindow20LocalPositionToWGS84E5vec3d"></span><span id="_CPPv2NK5simul6clouds11CloudWindow20LocalPositionToWGS84E5vec3d"></span><span id="simul::clouds::CloudWindow::LocalPositionToWGS84__vec3dC"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window_1afd12873a11d3b705dba784d3aaadfe99"></span><span class="n"><span class="pre">vec3d</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LocalPositionToWGS84</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vec3d</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">pos</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds11CloudWindow20LocalPositionToWGS84E5vec3d" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds11CloudWindow21LocalDirectionToWGS84E5vec3d">
+<span id="_CPPv3NK5simul6clouds11CloudWindow21LocalDirectionToWGS84E5vec3d"></span><span id="_CPPv2NK5simul6clouds11CloudWindow21LocalDirectionToWGS84E5vec3d"></span><span id="simul::clouds::CloudWindow::LocalDirectionToWGS84__vec3dC"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window_1a8d37190dbe0851a4c20b223f94a7eeaf"></span><span class="n"><span class="pre">vec3d</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LocalDirectionToWGS84</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vec3d</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">dir</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds11CloudWindow21LocalDirectionToWGS84E5vec3d" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds11CloudWindow13GetGridOffsetE4int2">
+<span id="_CPPv3NK5simul6clouds11CloudWindow13GetGridOffsetE4int2"></span><span id="_CPPv2NK5simul6clouds11CloudWindow13GetGridOffsetE4int2"></span><span id="simul::clouds::CloudWindow::GetGridOffset__int2C"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window_1add0601bf2d59c494ac9f136c016c3ebf"></span><span class="n"><span class="pre">int2</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetGridOffset</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">int2</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">old_ctr</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds11CloudWindow13GetGridOffsetE4int2" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11CloudWindow15MinimumHeightKmE">
+<span id="_CPPv3N5simul6clouds11CloudWindow15MinimumHeightKmE"></span><span id="_CPPv2N5simul6clouds11CloudWindow15MinimumHeightKmE"></span><span id="simul::clouds::CloudWindow::MinimumHeightKm__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window_1a29ef043f44ba25bd9815004b91e78d40"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">MinimumHeightKm</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds11CloudWindow15MinimumHeightKmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11CloudWindow17VolumeTextureGridE">
+<span id="_CPPv3N5simul6clouds11CloudWindow17VolumeTextureGridE"></span><span id="_CPPv2N5simul6clouds11CloudWindow17VolumeTextureGridE"></span><span id="simul::clouds::CloudWindow::VolumeTextureGrid__int3"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window_1a289319908a38017f610e25b172bf16c1"></span><span class="n"><span class="pre">int3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">VolumeTextureGrid</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds11CloudWindow17VolumeTextureGridE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11CloudWindow12windOffsetKmE">
+<span id="_CPPv3N5simul6clouds11CloudWindow12windOffsetKmE"></span><span id="_CPPv2N5simul6clouds11CloudWindow12windOffsetKmE"></span><span id="simul::clouds::CloudWindow::windOffsetKm__vec3"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window_1a2b69e1c4630a342861e33b184e1ae8d7"></span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">windOffsetKm</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds11CloudWindow12windOffsetKmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11CloudWindow23accumulatedWindOffsetKmE">
+<span id="_CPPv3N5simul6clouds11CloudWindow23accumulatedWindOffsetKmE"></span><span id="_CPPv2N5simul6clouds11CloudWindow23accumulatedWindOffsetKmE"></span><span id="simul::clouds::CloudWindow::accumulatedWindOffsetKm__vec3"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window_1a2f2d01984008b9bb2400624e5a476221"></span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">accumulatedWindOffsetKm</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds11CloudWindow23accumulatedWindOffsetKmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11CloudWindow6originE">
+<span id="_CPPv3N5simul6clouds11CloudWindow6originE"></span><span id="_CPPv2N5simul6clouds11CloudWindow6originE"></span><span id="simul::clouds::CloudWindow::origin__crossplatform::Quaterniond"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window_1afe1323a127c6986b711de2ab56fc6e9a"></span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Quaterniond</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">origin</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds11CloudWindow6originE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11CloudWindow11WindowGridXE">
+<span id="_CPPv3N5simul6clouds11CloudWindow11WindowGridXE"></span><span id="_CPPv2N5simul6clouds11CloudWindow11WindowGridXE"></span><span id="simul::clouds::CloudWindow::WindowGridX__i"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window_1a3a83bb5feabc2de6b054a5f49fcf17bb"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">WindowGridX</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds11CloudWindow11WindowGridXE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11CloudWindow11WindowGridZE">
+<span id="_CPPv3N5simul6clouds11CloudWindow11WindowGridZE"></span><span id="_CPPv2N5simul6clouds11CloudWindow11WindowGridZE"></span><span id="simul::clouds::CloudWindow::WindowGridZ__i"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window_1a59204eca5da7ec7a98d4138faa0d41c8"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">WindowGridZ</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds11CloudWindow11WindowGridZE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11CloudWindow25PrecipitationGridDivisorXE">
+<span id="_CPPv3N5simul6clouds11CloudWindow25PrecipitationGridDivisorXE"></span><span id="_CPPv2N5simul6clouds11CloudWindow25PrecipitationGridDivisorXE"></span><span id="simul::clouds::CloudWindow::PrecipitationGridDivisorX__i"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window_1ac9442c0c4cbe2a8b5f36332fbcf13496"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PrecipitationGridDivisorX</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds11CloudWindow25PrecipitationGridDivisorXE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11CloudWindow25PrecipitationGridDivisorZE">
+<span id="_CPPv3N5simul6clouds11CloudWindow25PrecipitationGridDivisorZE"></span><span id="_CPPv2N5simul6clouds11CloudWindow25PrecipitationGridDivisorZE"></span><span id="simul::clouds::CloudWindow::PrecipitationGridDivisorZ__i"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window_1a2eabb56f81f905f5bdb75deb79be9171"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PrecipitationGridDivisorZ</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds11CloudWindow25PrecipitationGridDivisorZE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11CloudWindow13WindowScaleKmE">
+<span id="_CPPv3N5simul6clouds11CloudWindow13WindowScaleKmE"></span><span id="_CPPv2N5simul6clouds11CloudWindow13WindowScaleKmE"></span><span id="simul::clouds::CloudWindow::WindowScaleKm__vec3"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window_1a1b28cca0333bf4e808cceed832f6751c"></span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">WindowScaleKm</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds11CloudWindow13WindowScaleKmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11CloudWindow21WindowGridCentreTexelE">
+<span id="_CPPv3N5simul6clouds11CloudWindow21WindowGridCentreTexelE"></span><span id="_CPPv2N5simul6clouds11CloudWindow21WindowGridCentreTexelE"></span><span id="simul::clouds::CloudWindow::WindowGridCentreTexel__int2"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window_1a117f46344acf2655de3ed41038378879"></span><span class="n"><span class="pre">int2</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">WindowGridCentreTexel</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds11CloudWindow21WindowGridCentreTexelE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11CloudWindow15window_checksumE">
+<span id="_CPPv3N5simul6clouds11CloudWindow15window_checksumE"></span><span id="_CPPv2N5simul6clouds11CloudWindow15window_checksumE"></span><span id="simul::clouds::CloudWindow::window_checksum__unsigned"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window_1a337a0a94390ca640bdbaa089811a5f3e"></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">window_checksum</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds11CloudWindow15window_checksumE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11CloudWindow11last_originE">
+<span id="_CPPv3N5simul6clouds11CloudWindow11last_originE"></span><span id="_CPPv2N5simul6clouds11CloudWindow11last_originE"></span><span id="simul::clouds::CloudWindow::last_origin__crossplatform::Quaterniond"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window_1a0931ba3c31ae54d7acf9d5b63c50b286"></span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Quaterniond</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">last_origin</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds11CloudWindow11last_originE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11CloudWindow17EdgeNoiseOffsetKmE">
+<span id="_CPPv3N5simul6clouds11CloudWindow17EdgeNoiseOffsetKmE"></span><span id="_CPPv2N5simul6clouds11CloudWindow17EdgeNoiseOffsetKmE"></span><span id="simul::clouds::CloudWindow::EdgeNoiseOffsetKm__vec3"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window_1a599704422a51f56fb99dff7a4696b435"></span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EdgeNoiseOffsetKm</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds11CloudWindow17EdgeNoiseOffsetKmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11CloudWindow14WorleyOffsetKmE">
+<span id="_CPPv3N5simul6clouds11CloudWindow14WorleyOffsetKmE"></span><span id="_CPPv2N5simul6clouds11CloudWindow14WorleyOffsetKmE"></span><span id="simul::clouds::CloudWindow::WorleyOffsetKm__vec3"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window_1a3e6dcaac5423b595043a2e5f0622780b"></span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">WorleyOffsetKm</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds11CloudWindow14WorleyOffsetKmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11CloudWindow12GridOriginKmE">
+<span id="_CPPv3N5simul6clouds11CloudWindow12GridOriginKmE"></span><span id="_CPPv2N5simul6clouds11CloudWindow12GridOriginKmE"></span><span id="simul::clouds::CloudWindow::GridOriginKm__vec3"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window_1a588ba7ec5b6189289f6fed45e81b1dbe"></span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GridOriginKm</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds11CloudWindow12GridOriginKmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11CloudWindow14planetRadiusKmE">
+<span id="_CPPv3N5simul6clouds11CloudWindow14planetRadiusKmE"></span><span id="_CPPv2N5simul6clouds11CloudWindow14planetRadiusKmE"></span><span id="simul::clouds::CloudWindow::planetRadiusKm__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window_1a71e8eb2af7a6fefe69eb9ec9f56dceaa"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">planetRadiusKm</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds11CloudWindow14planetRadiusKmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-functions">Public Static Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11CloudWindow34GetLatitudeLongitudeHeadingDegreesEN13crossplatform11QuaterniondE4vec3fRdRdRd">
+<span id="_CPPv3N5simul6clouds11CloudWindow34GetLatitudeLongitudeHeadingDegreesEN13crossplatform11QuaterniondE4vec3fRdRdRd"></span><span id="_CPPv2N5simul6clouds11CloudWindow34GetLatitudeLongitudeHeadingDegreesEN13crossplatform11QuaterniondE4vec3fRdRdRd"></span><span id="simul::clouds::CloudWindow::GetLatitudeLongitudeHeadingDegrees__crossplatform::Quaterniond.vec3.float.doubleR.doubleR.doubleR"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window_1a24f89957a48d10379140c9cf11df41c0"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetLatitudeLongitudeHeadingDegrees</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Quaterniond</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">new_origin</span></span>, <span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">pos</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">planetRadiusKm</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">lat</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">lon</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">head</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds11CloudWindow34GetLatitudeLongitudeHeadingDegreesEN13crossplatform11QuaterniondE4vec3fRdRdRd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11CloudWindow33LatLongHeadingDegreesToQuaternionEddd">
+<span id="_CPPv3N5simul6clouds11CloudWindow33LatLongHeadingDegreesToQuaternionEddd"></span><span id="_CPPv2N5simul6clouds11CloudWindow33LatLongHeadingDegreesToQuaternionEddd"></span><span id="simul::clouds::CloudWindow::LatLongHeadingDegreesToQuaternion__double.double.double"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window_1aed6d0ca50b36ab9616c2bf778fb9c704"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Quaterniond</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LatLongHeadingDegreesToQuaternion</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">lat_deg</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">long_deg</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">heading_deg</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds11CloudWindow33LatLongHeadingDegreesToQuaternionEddd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11CloudWindow26LatLongHeadingToQuaternionEddd">
+<span id="_CPPv3N5simul6clouds11CloudWindow26LatLongHeadingToQuaternionEddd"></span><span id="_CPPv2N5simul6clouds11CloudWindow26LatLongHeadingToQuaternionEddd"></span><span id="simul::clouds::CloudWindow::LatLongHeadingToQuaternion__double.double.double"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window_1a87b960a1dd5112dca9d9a5725ace21bc"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Quaterniond</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LatLongHeadingToQuaternion</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">lat_radians</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">long_radians</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">heading_radians</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds11CloudWindow26LatLongHeadingToQuaternionEddd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11CloudWindow15XYZToQuaternionE5vec3d">
+<span id="_CPPv3N5simul6clouds11CloudWindow15XYZToQuaternionE5vec3d"></span><span id="_CPPv2N5simul6clouds11CloudWindow15XYZToQuaternionE5vec3d"></span><span id="simul::clouds::CloudWindow::XYZToQuaternion__vec3d"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window_1a40cb7ef43e62dbc351cdb0c29e80c776"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Quaterniond</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">XYZToQuaternion</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vec3d</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">pos</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds11CloudWindow15XYZToQuaternionE5vec3d" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
 </div>
 </dd></dl>
 
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenstruct: Cannot find class “simul::clouds::GeodeticPlanet” in doxygen xml output for project “Simul” from directory: D:/Jarvis/Documentation/build/Docs/doxygen/xml</p>
-</div>
 </div>
 
 

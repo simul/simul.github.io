@@ -41,7 +41,7 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="The Sky Keyframer" href="apiskykeyframer.html" />
+    <link rel="next" title="Sky Keyframer" href="apiskykeyframer.html" />
     <link rel="prev" title="Cloud Keyframer" href="apicloudkeyframer.html" /> 
 </head>
 
@@ -91,7 +91,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation and Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorialsindex.html">Tutorials</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unreal.html">trueSKY for Unreal Engine 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unreal.html">trueSKY for Unreal Engine</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../unity.html">trueSKY for Unity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../skysequencer.html">Sky Sequencer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../programming.html">Programming with the trueSKY SDK</a></li>
@@ -106,7 +106,7 @@
 <li class="toctree-l2"><a class="reference internal" href="apicloudrenderer.html">Cloud Renderer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="apicloudkeyframer.html">Cloud Keyframer</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Cloud Keyframe</a></li>
-<li class="toctree-l2"><a class="reference internal" href="apiskykeyframer.html">The Sky Keyframer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apiskykeyframer.html">Sky Keyframer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="apiskykeyframe.html">Sky Keyframe</a></li>
 <li class="toctree-l2"><a class="reference internal" href="apiskylight.html">Skylight</a></li>
 </ul>
@@ -188,6 +188,123 @@
 <dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudKeyframeE">
 <span id="_CPPv3N5simul6clouds13CloudKeyframeE"></span><span id="_CPPv2N5simul6clouds13CloudKeyframeE"></span><span id="simul::clouds::CloudKeyframe"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">clouds</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">CloudKeyframe</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">BaseKeyframe</span></span><a class="headerlink" href="#_CPPv4N5simul6clouds13CloudKeyframeE" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>The keyframe structure for clouds, used by <a class="reference internal" href="../Reference/Clouds/cloudkeyframer.html#classsimul_1_1clouds_1_1_cloud_keyframer"><span class="std std-ref">simul::clouds::CloudKeyframer</span></a>. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds13CloudKeyframe4SaveERN5simul3sky6OutputE">
+<span id="_CPPv3NK5simul6clouds13CloudKeyframe4SaveERN5simul3sky6OutputE"></span><span id="_CPPv2NK5simul6clouds13CloudKeyframe4SaveERN5simul3sky6OutputE"></span><span id="simul::clouds::CloudKeyframe::Save__simul::sky::OutputRC"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1ab97da8fb4751a5d9f64220d062bdab44"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Save</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Output</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">os</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Save this keyframe’s values to the stream. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudKeyframe4LoadERN5simul3sky5InputEPN5simul4base15MemoryInterfaceE">
+<span id="_CPPv3N5simul6clouds13CloudKeyframe4LoadERN5simul3sky5InputEPN5simul4base15MemoryInterfaceE"></span><span id="_CPPv2N5simul6clouds13CloudKeyframe4LoadERN5simul3sky5InputEPN5simul4base15MemoryInterfaceE"></span><span id="simul::clouds::CloudKeyframe::Load__simul::sky::InputR.simul::base::MemoryInterfaceP"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1ae01e496b6a75abc71be6bde913ad75d0"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Load</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Input</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">is</span></span>, <span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">base</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">MemoryInterface</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">memoryInterface</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Load this keyframe’s values from the stream. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds13CloudKeyframe8HasFloatEPKc">
+<span id="_CPPv3NK5simul6clouds13CloudKeyframe8HasFloatEPKc"></span><span id="_CPPv2NK5simul6clouds13CloudKeyframe8HasFloatEPKc"></span><span id="simul::clouds::CloudKeyframe::HasFloat__cCPC"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1a1c1c1fe877dc063c3d944401b79698e9"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">HasFloat</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Return true if the keyframe has a float value with the given, case-insensitive, name; return false otherwise.</p>
+<p>The properties are:<ul class="simple">
+<li><p>cloudiness</p></li>
+<li><p>distributionBaseLayer</p></li>
+<li><p>distributionTransition</p></li>
+<li><p>upperDensity</p></li>
+<li><p>localDensity</p></li>
+<li><p>persistence</p></li>
+<li><p>cloudBase</p></li>
+<li><p>cloudHeight</p></li>
+<li><p>cloudWidth</p></li>
+<li><p>cloudWidthKm</p></li>
+<li><p>cloudWidthMetres</p></li>
+<li><p>directLight</p></li>
+<li><p>indirectLight</p></li>
+<li><p>ambientLight</p></li>
+<li><p>lightAsymmetry</p></li>
+<li><p>precipitation</p></li>
+<li><p>fractalAmplitude</p></li>
+<li><p>edgeSharpness</p></li>
+<li><p>churn</p></li>
+<li><p>extinction</p></li>
+<li><p>rainToSnow</p></li>
+<li><p>precipitationBaseKm</p></li>
+<li><p>precipitationWindEffect</p></li>
+<li><p>precipitationWaver</p></li>
+<li><p>diffusivity</p></li>
+<li><p>cache_built</p></li>
+<li><p>lightning</p></li>
+<li><p>maxDensityGm3</p></li>
+<li><p>baseNoiseFactor</p></li>
+<li><p>offsetx</p></li>
+<li><p>offsety</p></li>
+<li><p>rainCentreXKm</p></li>
+<li><p>rainCentreYKm</p></li>
+<li><p>rainRadiusKm</p></li>
+<li><p>rainEdge</p></li>
+<li><p>virgaStrength</p></li>
+<li><p>simulation</p></li>
+<li><p>WorleyNoise</p></li>
+<li><p>WorleyScale</p></li>
+<li><p>EdgeWorleyNoise</p></li>
+<li><p>scalekm</p></li>
+<li><p>scalekm.x</p></li>
+<li><p>scalekm.y</p></li>
+<li><p>scalekm.z</p></li>
+<li><p>EdgeWorleyScale </p></li>
+</ul>
+</p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds13CloudKeyframe8GetFloatEPKc">
+<span id="_CPPv3NK5simul6clouds13CloudKeyframe8GetFloatEPKc"></span><span id="_CPPv2NK5simul6clouds13CloudKeyframe8GetFloatEPKc"></span><span id="simul::clouds::CloudKeyframe::GetFloat__cCPC"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1a3174967c2cf27a2cea85db8f2a253eef"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetFloat</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Get a float with the given, case-insensitive, name. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudKeyframe8SetFloatEPKcf">
+<span id="_CPPv3N5simul6clouds13CloudKeyframe8SetFloatEPKcf"></span><span id="_CPPv2N5simul6clouds13CloudKeyframe8SetFloatEPKcf"></span><span id="simul::clouds::CloudKeyframe::SetFloat__cCP.float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1a5bbf8eb6acb22d6a0b772f40548cf1a0"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetFloat</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">val</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Set a float with the given, case-insensitive, name. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds13CloudKeyframe6HasIntEPKc">
+<span id="_CPPv3NK5simul6clouds13CloudKeyframe6HasIntEPKc"></span><span id="_CPPv2NK5simul6clouds13CloudKeyframe6HasIntEPKc"></span><span id="simul::clouds::CloudKeyframe::HasInt__cCPC"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1ac298959401909d0603017945f0f8d75c"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">HasInt</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Return true if the keyframe has an integer or true/false value with the given, case-insensitive, name; return false otherwise.</p>
+<p><ul class="simple">
+<li><p>Octaves</p></li>
+<li><p>RegionalPrecipitation</p></li>
+<li><p>LockRainToClouds </p></li>
+</ul>
+</p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds13CloudKeyframe6GetIntEPKc">
+<span id="_CPPv3NK5simul6clouds13CloudKeyframe6GetIntEPKc"></span><span id="_CPPv2NK5simul6clouds13CloudKeyframe6GetIntEPKc"></span><span id="simul::clouds::CloudKeyframe::GetInt__cCPC"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1ac6a93a1abe5166582538aab86e64d126"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetInt</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Get an int with the given, case-insensitive, name. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudKeyframe6SetIntEPKci">
+<span id="_CPPv3N5simul6clouds13CloudKeyframe6SetIntEPKci"></span><span id="_CPPv2N5simul6clouds13CloudKeyframe6SetIntEPKci"></span><span id="simul::clouds::CloudKeyframe::SetInt__cCP.i"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1ac569cb9a62242e43aebfad9940ae4cbb"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetInt</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">val</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Set an int with the given, case-insensitive, name. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds13CloudKeyframe21GetPropertiesChecksumEv">
+<span id="_CPPv3NK5simul6clouds13CloudKeyframe21GetPropertiesChecksumEv"></span><span id="_CPPv2NK5simul6clouds13CloudKeyframe21GetPropertiesChecksumEv"></span><span id="simul::clouds::CloudKeyframe::GetPropertiesChecksumC"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1a5381d31d74fe681c683ef503946525a1"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetPropertiesChecksum</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Check for properties that, if altered in the keyframe, would require regeneration of the cloud volume: </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds13CloudKeyframe22GetAbsoluteOrientationERKN13crossplatform11QuaterniondE">
+<span id="_CPPv3NK5simul6clouds13CloudKeyframe22GetAbsoluteOrientationERKN13crossplatform11QuaterniondE"></span><span id="_CPPv2NK5simul6clouds13CloudKeyframe22GetAbsoluteOrientationERKN13crossplatform11QuaterniondE"></span><span id="simul::clouds::CloudKeyframe::GetAbsoluteOrientation__crossplatform::QuaterniondCRC"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1a765e0dcfcbaa9e2206539bfda0d2191b"></span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Quaterniond</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetAbsoluteOrientation</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Quaterniond</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">rel</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>From a relative orientation, get the absolute orientation. </p>
+</dd></dl>
+
+</div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="cpp var">
@@ -340,6 +457,24 @@
 <dd><p>The strength of the fractal worley edge noise. </p>
 </dd></dl>
 
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudKeyframe6originE">
+<span id="_CPPv3N5simul6clouds13CloudKeyframe6originE"></span><span id="_CPPv2N5simul6clouds13CloudKeyframe6originE"></span><span id="simul::clouds::CloudKeyframe::origin__crossplatform::Quaterniond"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1a64d75a4ff92c1cc29bb9ff485414b6ab"></span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Quaterniond</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">origin</span></span></span><br /></dt>
+<dd><p>Origin on the globe for this layer. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudKeyframe19precipitationRegionE">
+<span id="_CPPv3N5simul6clouds13CloudKeyframe19precipitationRegionE"></span><span id="_CPPv2N5simul6clouds13CloudKeyframe19precipitationRegionE"></span><span id="simul::clouds::CloudKeyframe::precipitationRegion__PrecipitationRegion"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1ad681f9058fee7c75a3d7fbc96cf32f38"></span><a class="reference internal" href="../Reference/Clouds/cloudkeyframe.html#_CPPv4N5simul6clouds19PrecipitationRegionE" title="simul::clouds::PrecipitationRegion"><span class="n"><span class="pre">PrecipitationRegion</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">precipitationRegion</span></span></span><br /></dt>
+<dd><p>Where rain/snow is found. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudKeyframe17cloudVolumeStatesE">
+<span id="_CPPv3N5simul6clouds13CloudKeyframe17cloudVolumeStatesE"></span><span id="_CPPv2N5simul6clouds13CloudKeyframe17cloudVolumeStatesE"></span><span id="simul::clouds::CloudKeyframe::cloudVolumeStates__std::map:sky::uid.CloudVolumeState:"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1a1d748da042c1cefed0ae7e280cbce185"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">map</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">uid</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">CloudVolumeState</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">cloudVolumeStates</span></span></span><br /></dt>
+<dd><p>States for cloud volumes listed in the keyframer. </p>
+</dd></dl>
+
 </div>
 </dd></dl>
 
@@ -351,7 +486,7 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="apiskykeyframer.html" class="btn btn-neutral float-right" title="The Sky Keyframer" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="apiskykeyframer.html" class="btn btn-neutral float-right" title="Sky Keyframer" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="apicloudkeyframer.html" class="btn btn-neutral float-left" title="Cloud Keyframer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 

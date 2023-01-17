@@ -3,6 +3,4 @@ Cloud Window
 
 .. doxygenstruct:: simul::clouds::CloudWindow
    :members:
-
-.. doxygenstruct:: simul::clouds::GeodeticPlanet
-   :members:
+   :undoc-members:

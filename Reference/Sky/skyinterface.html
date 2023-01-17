@@ -91,7 +91,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation and Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorialsindex.html">Tutorials</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../unreal.html">trueSKY for Unreal Engine 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../unreal.html">trueSKY for Unreal Engine</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../unity.html">trueSKY for Unity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../skysequencer.html">Sky Sequencer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../programming.html">Programming with the trueSKY SDK</a></li>
@@ -207,6 +207,26 @@
 <dd><p>Get a 4x4 transformation matrix to transform sidereal coordinates into azimuth and elevation. </p>
 </dd></dl>
 
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky20SiderealSkyInterface14GetSunPositionERfRfdff">
+<span id="_CPPv3NK5simul3sky20SiderealSkyInterface14GetSunPositionERfRfdff"></span><span id="_CPPv2NK5simul3sky20SiderealSkyInterface14GetSunPositionERfRfdff"></span><span id="simul::sky::SiderealSkyInterface::GetSunPosition__floatR.floatR.double.float.floatC"></span><span class="target" id="classsimul_1_1sky_1_1_sidereal_sky_interface_1ae165aebcae0e7d0921e0cbff3c94d35d"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetSunPosition</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">azimuth</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">elevation</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">epoch_time</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">latitude</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">longitude</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky20SiderealSkyInterface14GetSunPositionERfRfdff" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky20SiderealSkyInterface15GetMoonPositionERfRfdffRK5Orbit">
+<span id="_CPPv3NK5simul3sky20SiderealSkyInterface15GetMoonPositionERfRfdffRK5Orbit"></span><span id="_CPPv2NK5simul3sky20SiderealSkyInterface15GetMoonPositionERfRfdffRK5Orbit"></span><span id="simul::sky::SiderealSkyInterface::GetMoonPosition__floatR.floatR.double.float.float.OrbitCRC"></span><span class="target" id="classsimul_1_1sky_1_1_sidereal_sky_interface_1a344369d0d4c7008af0f2858a82c4557d"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetMoonPosition</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">azimuth</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">elevation</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">epoch_time</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">latitude</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">longitude</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5simul3sky5OrbitE" title="simul::sky::Orbit"><span class="n"><span class="pre">Orbit</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">orbit</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky20SiderealSkyInterface15GetMoonPositionERfRfdffRK5Orbit" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky20SiderealSkyInterface7GetDawnEdff">
+<span id="_CPPv3NK5simul3sky20SiderealSkyInterface7GetDawnEdff"></span><span id="_CPPv2NK5simul3sky20SiderealSkyInterface7GetDawnEdff"></span><span id="simul::sky::SiderealSkyInterface::GetDawn__double.float.floatC"></span><span class="target" id="classsimul_1_1sky_1_1_sidereal_sky_interface_1a09c94d45cf55f5dac7c81f2d130d5dd0"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetDawn</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">epoch_time</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">latitude</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">longitude</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky20SiderealSkyInterface7GetDawnEdff" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky20SiderealSkyInterface9GetSunsetEdff">
+<span id="_CPPv3NK5simul3sky20SiderealSkyInterface9GetSunsetEdff"></span><span id="_CPPv2NK5simul3sky20SiderealSkyInterface9GetSunsetEdff"></span><span id="simul::sky::SiderealSkyInterface::GetSunset__double.float.floatC"></span><span class="target" id="classsimul_1_1sky_1_1_sidereal_sky_interface_1ad13ca83eccda08211e5ee260aa8e82f4"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetSunset</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">epoch_time</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">latitude</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">longitude</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky20SiderealSkyInterface9GetSunsetEdff" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
 </div>
 </dd></dl>
 
@@ -217,6 +237,11 @@
 <p>Subclassed by simul::sky::Sky</p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky22OpticalLengthInterface16GetOpticalLengthEfff">
+<span id="_CPPv3NK5simul3sky22OpticalLengthInterface16GetOpticalLengthEfff"></span><span id="_CPPv2NK5simul3sky22OpticalLengthInterface16GetOpticalLengthEfff"></span><span id="simul::sky::OpticalLengthInterface::GetOpticalLength__float.float.floatC"></span><span class="target" id="classsimul_1_1sky_1_1_optical_length_interface_1ac5923029b11079cef75c300324f9b73a"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetOpticalLength</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">Elevation</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">h_km</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">distance_to_edge</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky22OpticalLengthInterface16GetOpticalLengthEfff" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky22OpticalLengthInterface16GetOpticalLengthEff">
 <span id="_CPPv3NK5simul3sky22OpticalLengthInterface16GetOpticalLengthEff"></span><span id="_CPPv2NK5simul3sky22OpticalLengthInterface16GetOpticalLengthEff"></span><span id="simul::sky::OpticalLengthInterface::GetOpticalLength__float.floatC"></span><span class="target" id="classsimul_1_1sky_1_1_optical_length_interface_1a6ef2700de607f8597b732d45c33a0a92"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetOpticalLength</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">Elevation</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">h_km</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky22OpticalLengthInterface16GetOpticalLengthEff" title="Permalink to this definition">¶</a><br /></dt>
@@ -240,9 +265,120 @@
 
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv4N5simul3sky16BaseSkyInterfaceE">
-<span id="_CPPv3N5simul3sky16BaseSkyInterfaceE"></span><span id="_CPPv2N5simul3sky16BaseSkyInterfaceE"></span><span id="simul::sky::BaseSkyInterface"></span><span class="target" id="classsimul_1_1sky_1_1_base_sky_interface"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BaseSkyInterface</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky16BaseSkyInterfaceE" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv3N5simul3sky16BaseSkyInterfaceE"></span><span id="_CPPv2N5simul3sky16BaseSkyInterfaceE"></span><span id="simul::sky::BaseSkyInterface"></span><span class="target" id="classsimul_1_1sky_1_1_base_sky_interface"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">BaseSkyInterface</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky16BaseSkyInterfaceE" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>An abstract interface class for skies. </p>
 <p>Subclassed by <a class="reference internal" href="skykeyframer.html#classsimul_1_1sky_1_1_sky_keyframer"><span class="std std-ref">simul::sky::SkyKeyframer</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-functions">Private Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky16BaseSkyInterface19GetDirectionToLightEdf">
+<span id="_CPPv3NK5simul3sky16BaseSkyInterface19GetDirectionToLightEdf"></span><span id="_CPPv2NK5simul3sky16BaseSkyInterface19GetDirectionToLightEdf"></span><span id="simul::sky::BaseSkyInterface::GetDirectionToLight__double.floatC"></span><span class="target" id="classsimul_1_1sky_1_1_base_sky_interface_1a7ef69d3c46ac27adbf91ce8b332b0ec7"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetDirectionToLight</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">t</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">altitude_km</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky16BaseSkyInterface19GetDirectionToLightEdf" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the direction to the current strongest light source - could be the sun or the moon. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky16BaseSkyInterface19GetDirectionToLightEf">
+<span id="_CPPv3NK5simul3sky16BaseSkyInterface19GetDirectionToLightEf"></span><span id="_CPPv2NK5simul3sky16BaseSkyInterface19GetDirectionToLightEf"></span><span id="simul::sky::BaseSkyInterface::GetDirectionToLight__floatC"></span><span class="target" id="classsimul_1_1sky_1_1_base_sky_interface_1ad68d5bd21cfe12e8df5e4a9cd47e71f1"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetDirectionToLight</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">altitude_km</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky16BaseSkyInterface19GetDirectionToLightEf" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the direction to the current strongest light source - could be the sun or the moon. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky16BaseSkyInterface17GetDirectionToSunEv">
+<span id="_CPPv3NK5simul3sky16BaseSkyInterface17GetDirectionToSunEv"></span><span id="_CPPv2NK5simul3sky16BaseSkyInterface17GetDirectionToSunEv"></span><span id="simul::sky::BaseSkyInterface::GetDirectionToSunC"></span><span class="target" id="classsimul_1_1sky_1_1_base_sky_interface_1af158d3bdd27cc7762afa318d553e6ea0"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetDirectionToSun</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky16BaseSkyInterface17GetDirectionToSunEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the current direction to the sun. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky16BaseSkyInterface17GetDirectionToSunEd">
+<span id="_CPPv3NK5simul3sky16BaseSkyInterface17GetDirectionToSunEd"></span><span id="_CPPv2NK5simul3sky16BaseSkyInterface17GetDirectionToSunEd"></span><span id="simul::sky::BaseSkyInterface::GetDirectionToSun__doubleC"></span><span class="target" id="classsimul_1_1sky_1_1_base_sky_interface_1a9b8065b112731a6b709a0abd7b82bd31"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetDirectionToSun</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">t</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky16BaseSkyInterface17GetDirectionToSunEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the direction to the Sun at the given time. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky16BaseSkyInterface18GetDirectionToMoonEN3sky3uidE">
+<span id="_CPPv3NK5simul3sky16BaseSkyInterface18GetDirectionToMoonEN3sky3uidE"></span><span id="_CPPv2NK5simul3sky16BaseSkyInterface18GetDirectionToMoonEN3sky3uidE"></span><span id="simul::sky::BaseSkyInterface::GetDirectionToMoon__sky::uidC"></span><span class="target" id="classsimul_1_1sky_1_1_base_sky_interface_1a1933c4038b4e0694fd116f42c8d13691"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetDirectionToMoon</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">uid</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky16BaseSkyInterface18GetDirectionToMoonEN3sky3uidE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the current direction to the <a class="reference internal" href="#structsimul_1_1sky_1_1_moon"><span class="std std-ref">Moon</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky16BaseSkyInterface18GetDirectionToMoonEN3sky3uidEd">
+<span id="_CPPv3NK5simul3sky16BaseSkyInterface18GetDirectionToMoonEN3sky3uidEd"></span><span id="_CPPv2NK5simul3sky16BaseSkyInterface18GetDirectionToMoonEN3sky3uidEd"></span><span id="simul::sky::BaseSkyInterface::GetDirectionToMoon__sky::uid.doubleC"></span><span class="target" id="classsimul_1_1sky_1_1_base_sky_interface_1a59a2e13553657ee1a3c4a2272f29ac19"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetDirectionToMoon</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">uid</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">t</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky16BaseSkyInterface18GetDirectionToMoonEN3sky3uidEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the direction to the <a class="reference internal" href="#structsimul_1_1sky_1_1_moon"><span class="std std-ref">Moon</span></a> at the given time. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky16BaseSkyInterface21GetLocalSunIrradianceEdf">
+<span id="_CPPv3NK5simul3sky16BaseSkyInterface21GetLocalSunIrradianceEdf"></span><span id="_CPPv2NK5simul3sky16BaseSkyInterface21GetLocalSunIrradianceEdf"></span><span id="simul::sky::BaseSkyInterface::GetLocalSunIrradiance__double.floatC"></span><span class="target" id="classsimul_1_1sky_1_1_base_sky_interface_1a6b4a4e6c78e297055defe0d6b1415c40"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetLocalSunIrradiance</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">t</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">altitude_km</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky16BaseSkyInterface21GetLocalSunIrradianceEdf" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the sunlight that reaches the altitude <em>altitude_km</em>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky16BaseSkyInterface18GetLocalIrradianceEf">
+<span id="_CPPv3NK5simul3sky16BaseSkyInterface18GetLocalIrradianceEf"></span><span id="_CPPv2NK5simul3sky16BaseSkyInterface18GetLocalIrradianceEf"></span><span id="simul::sky::BaseSkyInterface::GetLocalIrradiance__floatC"></span><span class="target" id="classsimul_1_1sky_1_1_base_sky_interface_1ada170b82f78215409d75f557fb9baffc"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">float4</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetLocalIrradiance</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">altitude_km</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky16BaseSkyInterface18GetLocalIrradianceEf" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the sunlight that reaches the altitude <em>altitude_km</em>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky16BaseSkyInterface19GetMieRayleighRatioEv">
+<span id="_CPPv3NK5simul3sky16BaseSkyInterface19GetMieRayleighRatioEv"></span><span id="_CPPv2NK5simul3sky16BaseSkyInterface19GetMieRayleighRatioEv"></span><span id="simul::sky::BaseSkyInterface::GetMieRayleighRatioC"></span><span class="target" id="classsimul_1_1sky_1_1_base_sky_interface_1a5232ff9e27fd879ca0ec4abfe523404c"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">float4</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetMieRayleighRatio</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky16BaseSkyInterface19GetMieRayleighRatioEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the ratio of Mie to Rayleigh scattering at unit air and haze density. A useful helper function as some shaders use this ratio. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky16BaseSkyInterface27GetSunlightTableTransformKmEv">
+<span id="_CPPv3NK5simul3sky16BaseSkyInterface27GetSunlightTableTransformKmEv"></span><span id="_CPPv2NK5simul3sky16BaseSkyInterface27GetSunlightTableTransformKmEv"></span><span id="simul::sky::BaseSkyInterface::GetSunlightTableTransformKmC"></span><span class="target" id="classsimul_1_1sky_1_1_base_sky_interface_1a6b4f7fdefaaeb66709247a13d4c7cc2b"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetSunlightTableTransformKm</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky16BaseSkyInterface27GetSunlightTableTransformKmEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the transform vector to convert an altitude in km into a 1D texture coordinate for the sunlight table. x = multiplier, y=offset, so texcoord u=t.x*zkm+t.y;. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky16BaseSkyInterface19GetHorizonElevationEf">
+<span id="_CPPv3NK5simul3sky16BaseSkyInterface19GetHorizonElevationEf"></span><span id="_CPPv2NK5simul3sky16BaseSkyInterface19GetHorizonElevationEf"></span><span id="simul::sky::BaseSkyInterface::GetHorizonElevation__floatC"></span><span class="target" id="classsimul_1_1sky_1_1_base_sky_interface_1ad8377850a2e1d38911ee715519e96d3c"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetHorizonElevation</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">h_km</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky16BaseSkyInterface19GetHorizonElevationEf" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the horizon elevation from a given altitude. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky16BaseSkyInterface14GetEarthShadowEfRK4vec3">
+<span id="_CPPv3NK5simul3sky16BaseSkyInterface14GetEarthShadowEfRK4vec3"></span><span id="_CPPv2NK5simul3sky16BaseSkyInterface14GetEarthShadowEfRK4vec3"></span><span id="simul::sky::BaseSkyInterface::GetEarthShadow__float.vec3CRC"></span><span class="target" id="classsimul_1_1sky_1_1_base_sky_interface_1ac132e9480e56cb5c2a2a2714c92f3bf6"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5simul3sky11EarthShadowE" title="simul::sky::EarthShadow"><span class="n"><span class="pre">EarthShadow</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetEarthShadow</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">h_km</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">lightDir</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky16BaseSkyInterface14GetEarthShadowEfRK4vec3" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The Earth’s shadow, as seen from the given altitude. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky16BaseSkyInterface29GetInscatterAngularMultiplierEfff">
+<span id="_CPPv3NK5simul3sky16BaseSkyInterface29GetInscatterAngularMultiplierEfff"></span><span id="_CPPv2NK5simul3sky16BaseSkyInterface29GetInscatterAngularMultiplierEfff"></span><span id="simul::sky::BaseSkyInterface::GetInscatterAngularMultiplier__float.float.floatC"></span><span class="target" id="classsimul_1_1sky_1_1_base_sky_interface_1ac37ccf765551db10f856555853a63ba0"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">float4</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetInscatterAngularMultiplier</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">cosine</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">mie_factor</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">alt_km</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky16BaseSkyInterface29GetInscatterAngularMultiplierEfff" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the multiplier for an inscatter factor that gives the total inscatter, where <em>cosine</em> is the cosine between the angle to the sun and the ray direction, <em>mie_factor</em> is the proportional haze factor (stored int the w element of the inscatter factor) and <em>alt_km</em> is the viewing altitude in km. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky16BaseSkyInterface21GetVisibilityDistanceEf">
+<span id="_CPPv3N5simul3sky16BaseSkyInterface21GetVisibilityDistanceEf"></span><span id="_CPPv2N5simul3sky16BaseSkyInterface21GetVisibilityDistanceEf"></span><span id="simul::sky::BaseSkyInterface::GetVisibilityDistance__float"></span><span class="target" id="classsimul_1_1sky_1_1_base_sky_interface_1aab0f456d22670474cc713ec63f493210"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetVisibilityDistance</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">view_alt_km</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N5simul3sky16BaseSkyInterface21GetVisibilityDistanceEf" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>From the altitude specified, the distance in km to 10% visibility (mainly a factor of fog/haze). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky16BaseSkyInterface28GetHazeForVisibilityDistanceEff">
+<span id="_CPPv3N5simul3sky16BaseSkyInterface28GetHazeForVisibilityDistanceEff"></span><span id="_CPPv2N5simul3sky16BaseSkyInterface28GetHazeForVisibilityDistanceEff"></span><span id="simul::sky::BaseSkyInterface::GetHazeForVisibilityDistance__float.float"></span><span class="target" id="classsimul_1_1sky_1_1_base_sky_interface_1a06e2d42c156bbd83e962fbc73c915b1c"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetHazeForVisibilityDistance</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">view_alt_km</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">horiz_dist_km</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N5simul3sky16BaseSkyInterface28GetHazeForVisibilityDistanceEff" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the haze that will produce the required visibility distance in the horizontal direction. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky16BaseSkyInterface16GetLightingStateEv">
+<span id="_CPPv3NK5simul3sky16BaseSkyInterface16GetLightingStateEv"></span><span id="_CPPv2NK5simul3sky16BaseSkyInterface16GetLightingStateEv"></span><span id="simul::sky::BaseSkyInterface::GetLightingStateC"></span><span class="target" id="classsimul_1_1sky_1_1_base_sky_interface_1a2b52d46907c41d8a5fb2afb334288fde"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5simul3sky13LightingStateE" title="simul::sky::LightingState"><span class="n"><span class="pre">LightingState</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">GetLightingState</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky16BaseSkyInterface16GetLightingStateEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the current Lighting State, which holds the current direction to the Sun and Moon(s). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky16BaseSkyInterface21GetTemperatureKelvinsEf">
+<span id="_CPPv3NK5simul3sky16BaseSkyInterface21GetTemperatureKelvinsEf"></span><span id="_CPPv2NK5simul3sky16BaseSkyInterface21GetTemperatureKelvinsEf"></span><span id="simul::sky::BaseSkyInterface::GetTemperatureKelvins__floatC"></span><span class="target" id="classsimul_1_1sky_1_1_base_sky_interface_1a93c1e775bc14e7c181f0d124047745a6"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetTemperatureKelvins</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">h_km</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky16BaseSkyInterface21GetTemperatureKelvinsEf" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Return the temperature at the stated altitude in kelvins (subtract 273.15 to get celsius). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky16BaseSkyInterface22GetSubdivisionChecksumEv">
+<span id="_CPPv3NK5simul3sky16BaseSkyInterface22GetSubdivisionChecksumEv"></span><span id="_CPPv2NK5simul3sky16BaseSkyInterface22GetSubdivisionChecksumEv"></span><span id="simul::sky::BaseSkyInterface::GetSubdivisionChecksumC"></span><span class="target" id="classsimul_1_1sky_1_1_base_sky_interface_1ad368dc7cac3393029c29023e75531f37"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetSubdivisionChecksum</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky16BaseSkyInterface22GetSubdivisionChecksumEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>When this checksum changes, the atmosphere has been modified sufficiently to warrant regeneration of tables. </p>
+</dd></dl>
+
+</div>
 </dd></dl>
 
 <dl class="cpp class">
@@ -251,7 +387,13 @@
 <dd><p>An abstract interface class for skies. </p>
 <p>Subclassed by simul::sky::Sky</p>
 <div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-general---&lt;br&gt;">General   &lt;br&gt;</p>
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky30AtmosphericScatteringInterface17GetDirectionToSunEdff">
+<span id="_CPPv3NK5simul3sky30AtmosphericScatteringInterface17GetDirectionToSunEdff"></span><span id="_CPPv2NK5simul3sky30AtmosphericScatteringInterface17GetDirectionToSunEdff"></span><span id="simul::sky::AtmosphericScatteringInterface::GetDirectionToSun__double.float.floatC"></span><span class="target" id="classsimul_1_1sky_1_1_atmospheric_scattering_interface_1a264a2df3b39d64e121bfe7d2037b45aa"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetDirectionToSun</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">epoch_time</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">latitude</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">longitude</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky30AtmosphericScatteringInterface17GetDirectionToSunEdff" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the direction to the sun. </p>
+</dd></dl>
+
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky30AtmosphericScatteringInterface23GetMoonIrradianceFactorERK4MoonRK4vec3RK4vec3">
 <span id="_CPPv3NK5simul3sky30AtmosphericScatteringInterface23GetMoonIrradianceFactorERK4MoonRK4vec3RK4vec3"></span><span id="_CPPv2NK5simul3sky30AtmosphericScatteringInterface23GetMoonIrradianceFactorERK4MoonRK4vec3RK4vec3"></span><span id="simul::sky::AtmosphericScatteringInterface::GetMoonIrradianceFactor__MoonCR.vec3CR.vec3CRC"></span><span class="target" id="classsimul_1_1sky_1_1_atmospheric_scattering_interface_1aebf9e53797d63b939b4642bf73cd95c4"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetMoonIrradianceFactor</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5simul3sky4MoonE" title="simul::sky::Moon"><span class="n"><span class="pre">Moon</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">m</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">dir_to_moon</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">dir_to_sun</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky30AtmosphericScatteringInterface23GetMoonIrradianceFactorERK4MoonRK4vec3RK4vec3" title="Permalink to this definition">¶</a><br /></dt>
@@ -269,6 +411,16 @@
 <span id="_CPPv3NK5simul3sky30AtmosphericScatteringInterface21GetLocalSunIrradianceEfRK4vec3RK4vec310HazeStruct"></span><span id="_CPPv2NK5simul3sky30AtmosphericScatteringInterface21GetLocalSunIrradianceEfRK4vec3RK4vec310HazeStruct"></span><span id="simul::sky::AtmosphericScatteringInterface::GetLocalSunIrradiance__float.vec3CR.vec3CR.HazeStructC"></span><span class="target" id="classsimul_1_1sky_1_1_atmospheric_scattering_interface_1af19fa563354b360bcb870d2323a3c460"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetLocalSunIrradiance</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">altitude_km</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">sun_irradiance</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">dir_to_sun</span></span>, <a class="reference internal" href="#_CPPv4N5simul3sky10HazeStructE" title="simul::sky::HazeStruct"><span class="n"><span class="pre">HazeStruct</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">hazeStruct</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky30AtmosphericScatteringInterface21GetLocalSunIrradianceEfRK4vec3RK4vec310HazeStruct" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Get the sunlight that reaches the altitude <em>altitude_km</em>. </p>
 </dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky30AtmosphericScatteringInterface32GetAtmosphericPropertiesChecksumEv">
+<span id="_CPPv3NK5simul3sky30AtmosphericScatteringInterface32GetAtmosphericPropertiesChecksumEv"></span><span id="_CPPv2NK5simul3sky30AtmosphericScatteringInterface32GetAtmosphericPropertiesChecksumEv"></span><span id="simul::sky::AtmosphericScatteringInterface::GetAtmosphericPropertiesChecksumC"></span><span class="target" id="classsimul_1_1sky_1_1_atmospheric_scattering_interface_1a25a1a01227c49700673a4313d0d9be89"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetAtmosphericPropertiesChecksum</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky30AtmosphericScatteringInterface32GetAtmosphericPropertiesChecksumEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky30AtmosphericScatteringInterface27GetAtmosphericStateChecksumEv">
+<span id="_CPPv3NK5simul3sky30AtmosphericScatteringInterface27GetAtmosphericStateChecksumEv"></span><span id="_CPPv2NK5simul3sky30AtmosphericScatteringInterface27GetAtmosphericStateChecksumEv"></span><span id="simul::sky::AtmosphericScatteringInterface::GetAtmosphericStateChecksumC"></span><span class="target" id="classsimul_1_1sky_1_1_atmospheric_scattering_interface_1a870454a5fc64102fc376f1392b14f4f7"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetAtmosphericStateChecksum</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky30AtmosphericScatteringInterface27GetAtmosphericStateChecksumEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky30AtmosphericScatteringInterface19GetColourLossFactorERK4vec3RK4vec310HazeStructbi">
@@ -362,32 +514,141 @@
 </dd></dl>
 
 </div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky10HazeStructE">
+<span id="_CPPv3N5simul3sky10HazeStructE"></span><span id="_CPPv2N5simul3sky10HazeStructE"></span><span id="simul::sky::HazeStruct"></span><span class="target" id="structsimul_1_1sky_1_1_haze_struct"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">HazeStruct</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky10HazeStructE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A data structure to contain haze properties in the atmosphere at any given moment. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
 <dl class="cpp function">
-<dt class="sig sig-object cpp">
-<span class="target" id="classsimul_1_1sky_1_1_atmospheric_scattering_interface_1a7a46e3b5c6e6eee2e617accf3b3a2c54"></span><span class="sig-name descname"><span class="pre">VIRTUAL_GetAndSet</span> <span class="pre">(float,</span> <span class="pre">PlanetRadius,&quot;Radius</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">planet,</span> <span class="pre">default</span> <span class="pre">6378</span> <span class="pre">km</span> <span class="pre">(Earth)&quot;)</span> <span class="pre">VIRTUAL_GetAndSet(float</span></span></dt>
-<dd><p>Calculate Rayleigh coefficients for air using colour wavelengths ColourWavelengthsNm. </p>
-</dd></dl>
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky10HazeStruct10HazeStructEv">
+<span id="_CPPv3N5simul3sky10HazeStruct10HazeStructEv"></span><span id="_CPPv2N5simul3sky10HazeStruct10HazeStructEv"></span><span id="simul::sky::HazeStruct::HazeStruct"></span><span class="target" id="structsimul_1_1sky_1_1_haze_struct_1a4582e202f4a3ce0c8dc94c1e05c27bb0"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">HazeStruct</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul3sky10HazeStruct10HazeStructEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky10HazeStruct10HazeStructEffffRK6float4RK6float4RK6float4ff">
+<span id="_CPPv3N5simul3sky10HazeStruct10HazeStructEffffRK6float4RK6float4RK6float4ff"></span><span id="_CPPv2N5simul3sky10HazeStruct10HazeStructEffffRK6float4RK6float4RK6float4ff"></span><span id="simul::sky::HazeStruct::HazeStruct__float.float.float.float.float4CR.float4CR.float4CR.float.float"></span><span class="target" id="structsimul_1_1sky_1_1_haze_struct_1affbe8f94c2fc0e17f98bdf0feacd497c"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">HazeStruct</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">h</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">b</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">s</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">e</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">float4</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">m</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">float4</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">r</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">float4</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">o</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">oz</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">t_k</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul3sky10HazeStruct10HazeStructEffffRK6float4RK6float4RK6float4ff" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky10HazeStruct4hazeE">
+<span id="_CPPv3N5simul3sky10HazeStruct4hazeE"></span><span id="_CPPv2N5simul3sky10HazeStruct4hazeE"></span><span id="simul::sky::HazeStruct::haze__float"></span><span class="target" id="structsimul_1_1sky_1_1_haze_struct_1a88447e9d98e02b507096c8e845967a97"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">haze</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky10HazeStruct4hazeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky10HazeStruct19haze_base_height_kmE">
+<span id="_CPPv3N5simul3sky10HazeStruct19haze_base_height_kmE"></span><span id="_CPPv2N5simul3sky10HazeStruct19haze_base_height_kmE"></span><span id="simul::sky::HazeStruct::haze_base_height_km__float"></span><span class="target" id="structsimul_1_1sky_1_1_haze_struct_1aad22469ec1a542f2d9a190a15ee31ce5"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">haze_base_height_km</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky10HazeStruct19haze_base_height_kmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky10HazeStruct20haze_scale_height_kmE">
+<span id="_CPPv3N5simul3sky10HazeStruct20haze_scale_height_kmE"></span><span id="_CPPv2N5simul3sky10HazeStruct20haze_scale_height_kmE"></span><span id="simul::sky::HazeStruct::haze_scale_height_km__float"></span><span class="target" id="structsimul_1_1sky_1_1_haze_struct_1a61bdeb7c8e4d417f95f7046fddaf64b3"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">haze_scale_height_km</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky10HazeStruct20haze_scale_height_kmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky10HazeStruct12eccentricityE">
+<span id="_CPPv3N5simul3sky10HazeStruct12eccentricityE"></span><span id="_CPPv2N5simul3sky10HazeStruct12eccentricityE"></span><span id="simul::sky::HazeStruct::eccentricity__float"></span><span class="target" id="structsimul_1_1sky_1_1_haze_struct_1a6b25fdb4ef0323b82a18835fb2997ff0"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">eccentricity</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky10HazeStruct12eccentricityE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky10HazeStruct3mieE">
+<span id="_CPPv3N5simul3sky10HazeStruct3mieE"></span><span id="_CPPv2N5simul3sky10HazeStruct3mieE"></span><span id="simul::sky::HazeStruct::mie__float4"></span><span class="target" id="structsimul_1_1sky_1_1_haze_struct_1a7aa761cabcb12e9cc3f2dcc7eb8f73e6"></span><span class="n"><span class="pre">float4</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">mie</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky10HazeStruct3mieE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky10HazeStruct8rayleighE">
+<span id="_CPPv3N5simul3sky10HazeStruct8rayleighE"></span><span id="_CPPv2N5simul3sky10HazeStruct8rayleighE"></span><span id="simul::sky::HazeStruct::rayleigh__float4"></span><span class="target" id="structsimul_1_1sky_1_1_haze_struct_1a808ddb6bcf04fd7caf412f98cb58bd38"></span><span class="n"><span class="pre">float4</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">rayleigh</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky10HazeStruct8rayleighE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky10HazeStruct9BaseOzoneE">
+<span id="_CPPv3N5simul3sky10HazeStruct9BaseOzoneE"></span><span id="_CPPv2N5simul3sky10HazeStruct9BaseOzoneE"></span><span id="simul::sky::HazeStruct::BaseOzone__float4"></span><span class="target" id="structsimul_1_1sky_1_1_haze_struct_1a290e8b0a9c6261ffd10f3290b0ead7a4"></span><span class="n"><span class="pre">float4</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BaseOzone</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky10HazeStruct9BaseOzoneE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky10HazeStruct13OzoneStrengthE">
+<span id="_CPPv3N5simul3sky10HazeStruct13OzoneStrengthE"></span><span id="_CPPv2N5simul3sky10HazeStruct13OzoneStrengthE"></span><span id="simul::sky::HazeStruct::OzoneStrength__float"></span><span class="target" id="structsimul_1_1sky_1_1_haze_struct_1a8176af7f96fb7bba0e766756ad78402b"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">OzoneStrength</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky10HazeStruct13OzoneStrengthE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky10HazeStruct20SeaLevelTemperatureKE">
+<span id="_CPPv3N5simul3sky10HazeStruct20SeaLevelTemperatureKE"></span><span id="_CPPv2N5simul3sky10HazeStruct20SeaLevelTemperatureKE"></span><span id="simul::sky::HazeStruct::SeaLevelTemperatureK__float"></span><span class="target" id="structsimul_1_1sky_1_1_haze_struct_1a823bc1573b904ce75462c47707473cc2"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SeaLevelTemperatureK</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky10HazeStruct20SeaLevelTemperatureKE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
 
 </div>
 </dd></dl>
 
 <dl class="cpp struct">
-<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky10HazeStructE">
-<span id="_CPPv3N5simul3sky10HazeStructE"></span><span id="_CPPv2N5simul3sky10HazeStructE"></span><span id="simul::sky::HazeStruct"></span><span class="target" id="structsimul_1_1sky_1_1_haze_struct"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">HazeStruct</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky10HazeStructE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>A data structure to contain haze properties in the atmosphere at any given moment. </p>
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky14OvercastStructE">
+<span id="_CPPv3N5simul3sky14OvercastStructE"></span><span id="_CPPv2N5simul3sky14OvercastStructE"></span><span id="simul::sky::OvercastStruct"></span><span class="target" id="structsimul_1_1sky_1_1_overcast_struct"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">OvercastStruct</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky14OvercastStructE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky14OvercastStruct14OvercastStructEv">
+<span id="_CPPv3N5simul3sky14OvercastStruct14OvercastStructEv"></span><span id="_CPPv2N5simul3sky14OvercastStruct14OvercastStructEv"></span><span id="simul::sky::OvercastStruct::OvercastStruct"></span><span class="target" id="structsimul_1_1sky_1_1_overcast_struct_1a18d88275af10b58a0c4f8884b6e3d53e"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">OvercastStruct</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul3sky14OvercastStruct14OvercastStructEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky14OvercastStruct14OvercastStructEfff">
+<span id="_CPPv3N5simul3sky14OvercastStruct14OvercastStructEfff"></span><span id="_CPPv2N5simul3sky14OvercastStruct14OvercastStructEfff"></span><span id="simul::sky::OvercastStruct::OvercastStruct__float.float.float"></span><span class="target" id="structsimul_1_1sky_1_1_overcast_struct_1a98a5819debab9e6104befa2663e60839"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">OvercastStruct</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">o</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">ob</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">os</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul3sky14OvercastStruct14OvercastStructEfff" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky14OvercastStruct8overcastE">
+<span id="_CPPv3N5simul3sky14OvercastStruct8overcastE"></span><span id="_CPPv2N5simul3sky14OvercastStruct8overcastE"></span><span id="simul::sky::OvercastStruct::overcast__float"></span><span class="target" id="structsimul_1_1sky_1_1_overcast_struct_1a2b1b16a25d75c6bdc51808d5d8de91ca"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">overcast</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky14OvercastStruct8overcastE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky14OvercastStruct16overcast_base_kmE">
+<span id="_CPPv3N5simul3sky14OvercastStruct16overcast_base_kmE"></span><span id="_CPPv2N5simul3sky14OvercastStruct16overcast_base_kmE"></span><span id="simul::sky::OvercastStruct::overcast_base_km__float"></span><span class="target" id="structsimul_1_1sky_1_1_overcast_struct_1a3e5770424d612094e92703d6d4b2f523"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">overcast_base_km</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky14OvercastStruct16overcast_base_kmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky14OvercastStruct17overcast_scale_kmE">
+<span id="_CPPv3N5simul3sky14OvercastStruct17overcast_scale_kmE"></span><span id="_CPPv2N5simul3sky14OvercastStruct17overcast_scale_kmE"></span><span id="simul::sky::OvercastStruct::overcast_scale_km__float"></span><span class="target" id="structsimul_1_1sky_1_1_overcast_struct_1ae132b5e1b37f4126bfbc6e8fd5094f6b"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">overcast_scale_km</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky14OvercastStruct17overcast_scale_kmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
 </dd></dl>
 
 <dl class="cpp struct">
-<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky14OvercastStructE">
-<span id="_CPPv3N5simul3sky14OvercastStructE"></span><span id="_CPPv2N5simul3sky14OvercastStructE"></span><span id="simul::sky::OvercastStruct"></span><span class="target" id="structsimul_1_1sky_1_1_overcast_struct"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">OvercastStruct</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky14OvercastStructE" title="Permalink to this definition">¶</a><br /></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky13LightingStateE">
+<span id="_CPPv3N5simul3sky13LightingStateE"></span><span id="_CPPv2N5simul3sky13LightingStateE"></span><span id="simul::sky::LightingState"></span><span class="target" id="structsimul_1_1sky_1_1_lighting_state"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">LightingState</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky13LightingStateE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky13LightingState13LightingStateEv">
+<span id="_CPPv3N5simul3sky13LightingState13LightingStateEv"></span><span id="_CPPv2N5simul3sky13LightingState13LightingStateEv"></span><span id="simul::sky::LightingState::LightingState"></span><span class="target" id="structsimul_1_1sky_1_1_lighting_state_1a35ded52dcbb24c79c53c6d2c7cfe6f4b"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LightingState</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul3sky13LightingState13LightingStateEv" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="cpp struct">
-<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky13LightingStateE">
-<span id="_CPPv3N5simul3sky13LightingStateE"></span><span id="_CPPv2N5simul3sky13LightingStateE"></span><span id="simul::sky::LightingState"></span><span class="target" id="structsimul_1_1sky_1_1_lighting_state"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LightingState</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky13LightingStateE" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky13LightingState5ResetEv">
+<span id="_CPPv3N5simul3sky13LightingState5ResetEv"></span><span id="_CPPv2N5simul3sky13LightingState5ResetEv"></span><span id="simul::sky::LightingState::Reset"></span><span class="target" id="structsimul_1_1sky_1_1_lighting_state_1a75131c2d99a6fb0edb2357e517f7b727"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Reset</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul3sky13LightingState5ResetEv" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky13LightingState14DirectionToSunE">
+<span id="_CPPv3N5simul3sky13LightingState14DirectionToSunE"></span><span id="_CPPv2N5simul3sky13LightingState14DirectionToSunE"></span><span id="simul::sky::LightingState::DirectionToSun__vec3"></span><span class="target" id="structsimul_1_1sky_1_1_lighting_state_1a3b437cc6214ad0cddf1027dc4f5876cb"></span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DirectionToSun</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky13LightingState14DirectionToSunE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky13LightingState14MoonDirectionsE">
+<span id="_CPPv3N5simul3sky13LightingState14MoonDirectionsE"></span><span id="_CPPv2N5simul3sky13LightingState14MoonDirectionsE"></span><span id="simul::sky::LightingState::MoonDirections__std::map:uid.vec3:"></span><span class="target" id="structsimul_1_1sky_1_1_lighting_state_1a03c57203c67c26e79c9c77d00de67db0"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">map</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">uid</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">vec3</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">MoonDirections</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky13LightingState14MoonDirectionsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
 
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4N5simul3sky11EarthShadowE">
@@ -436,13 +697,105 @@
 
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4N5simul3sky5OrbitE">
-<span id="_CPPv3N5simul3sky5OrbitE"></span><span id="_CPPv2N5simul3sky5OrbitE"></span><span id="simul::sky::Orbit"></span><span class="target" id="structsimul_1_1sky_1_1_orbit"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Orbit</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky5OrbitE" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<span id="_CPPv3N5simul3sky5OrbitE"></span><span id="_CPPv2N5simul3sky5OrbitE"></span><span id="simul::sky::Orbit"></span><span class="target" id="structsimul_1_1sky_1_1_orbit"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">Orbit</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky5OrbitE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Variables to adjust the orbit of a <a class="reference internal" href="#structsimul_1_1sky_1_1_moon"><span class="std std-ref">Moon</span></a>. Values here are default values for Earth’s <a class="reference internal" href="#structsimul_1_1sky_1_1_moon"><span class="std std-ref">Moon</span></a>. See <a class="reference external" href="https://docs.simul.co/Tutorials/Sky/skymoons.html">Moon Docs</a> for more information. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky5Orbit24LongitudeOfAscendingNodeE">
+<span id="_CPPv3N5simul3sky5Orbit24LongitudeOfAscendingNodeE"></span><span id="_CPPv2N5simul3sky5Orbit24LongitudeOfAscendingNodeE"></span><span id="simul::sky::Orbit::LongitudeOfAscendingNode__double"></span><span class="target" id="structsimul_1_1sky_1_1_orbit_1adb98bad9b2559490db65f7f786cec532"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LongitudeOfAscendingNode</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">125.1228</span></span><a class="headerlink" href="#_CPPv4N5simul3sky5Orbit24LongitudeOfAscendingNodeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The points in which the moon crosses the plane of the equator. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky5Orbit28LongitudeOfAscendingNodeRateE">
+<span id="_CPPv3N5simul3sky5Orbit28LongitudeOfAscendingNodeRateE"></span><span id="_CPPv2N5simul3sky5Orbit28LongitudeOfAscendingNodeRateE"></span><span id="simul::sky::Orbit::LongitudeOfAscendingNodeRate__double"></span><span class="target" id="structsimul_1_1sky_1_1_orbit_1a27b60557fabf693fcb08250baebf1294"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LongitudeOfAscendingNodeRate</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="o"><span class="pre">-</span></span><span class="m"><span class="pre">0.0529538083</span></span><a class="headerlink" href="#_CPPv4N5simul3sky5Orbit28LongitudeOfAscendingNodeRateE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The amount the ascending node increases each day. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky5Orbit11InclinationE">
+<span id="_CPPv3N5simul3sky5Orbit11InclinationE"></span><span id="_CPPv2N5simul3sky5Orbit11InclinationE"></span><span id="simul::sky::Orbit::Inclination__double"></span><span class="target" id="structsimul_1_1sky_1_1_orbit_1a57ba6c855bd692d994c8d97d79b2ed2f"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Inclination</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">5.1454</span></span><a class="headerlink" href="#_CPPv4N5simul3sky5Orbit11InclinationE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>This controls the tilt angle of the orbit. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky5Orbit20ArgumentOfPericentreE">
+<span id="_CPPv3N5simul3sky5Orbit20ArgumentOfPericentreE"></span><span id="_CPPv2N5simul3sky5Orbit20ArgumentOfPericentreE"></span><span id="simul::sky::Orbit::ArgumentOfPericentre__double"></span><span class="target" id="structsimul_1_1sky_1_1_orbit_1a1266c7ee8ea2d8fec73aa603b59c8835"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ArgumentOfPericentre</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">318.0634</span></span><a class="headerlink" href="#_CPPv4N5simul3sky5Orbit20ArgumentOfPericentreE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>This is the closest point of the moon to the Earths surface. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky5Orbit24ArgumentOfPericentreRateE">
+<span id="_CPPv3N5simul3sky5Orbit24ArgumentOfPericentreRateE"></span><span id="_CPPv2N5simul3sky5Orbit24ArgumentOfPericentreRateE"></span><span id="simul::sky::Orbit::ArgumentOfPericentreRate__double"></span><span class="target" id="structsimul_1_1sky_1_1_orbit_1aadc229da9a4238e3ac22f155b6df4221"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ArgumentOfPericentreRate</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.1643573223</span></span><a class="headerlink" href="#_CPPv4N5simul3sky5Orbit24ArgumentOfPericentreRateE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The amount the argument of pericentre increases each day. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky5Orbit12MeanDistanceE">
+<span id="_CPPv3N5simul3sky5Orbit12MeanDistanceE"></span><span id="_CPPv2N5simul3sky5Orbit12MeanDistanceE"></span><span id="simul::sky::Orbit::MeanDistance__double"></span><span class="target" id="structsimul_1_1sky_1_1_orbit_1ada8e4f5cc92886a1fc0387e149e3e7d5"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">MeanDistance</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">60.2666</span></span><a class="headerlink" href="#_CPPv4N5simul3sky5Orbit12MeanDistanceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The average distance the moon is from the centre of the earth. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky5Orbit12EccentricityE">
+<span id="_CPPv3N5simul3sky5Orbit12EccentricityE"></span><span id="_CPPv2N5simul3sky5Orbit12EccentricityE"></span><span id="simul::sky::Orbit::Eccentricity__double"></span><span class="target" id="structsimul_1_1sky_1_1_orbit_1a5999f23546feb901294accb889671994"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Eccentricity</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.054900</span></span><a class="headerlink" href="#_CPPv4N5simul3sky5Orbit12EccentricityE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>This controls how elliptical the orbit of the moon will be around the earth. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky5Orbit11MeanAnomalyE">
+<span id="_CPPv3N5simul3sky5Orbit11MeanAnomalyE"></span><span id="_CPPv2N5simul3sky5Orbit11MeanAnomalyE"></span><span id="simul::sky::Orbit::MeanAnomaly__double"></span><span class="target" id="structsimul_1_1sky_1_1_orbit_1a42f6477402fd20c581890a1d95efbdef"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">MeanAnomaly</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">115.3654</span></span><a class="headerlink" href="#_CPPv4N5simul3sky5Orbit11MeanAnomalyE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>This controls the position that the moon will be around its orbit at midnight of each day. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky5Orbit15MeanAnomalyRateE">
+<span id="_CPPv3N5simul3sky5Orbit15MeanAnomalyRateE"></span><span id="_CPPv2N5simul3sky5Orbit15MeanAnomalyRateE"></span><span id="simul::sky::Orbit::MeanAnomalyRate__double"></span><span class="target" id="structsimul_1_1sky_1_1_orbit_1a3b1c34aa49a879c39e13647ee2cf363e"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">MeanAnomalyRate</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">13.0649929509</span></span><a class="headerlink" href="#_CPPv4N5simul3sky5Orbit15MeanAnomalyRateE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>This controls how much the mean anomaly changes each day. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
 
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4N5simul3sky4MoonE">
-<span id="_CPPv3N5simul3sky4MoonE"></span><span id="_CPPv2N5simul3sky4MoonE"></span><span id="simul::sky::Moon"></span><span class="target" id="structsimul_1_1sky_1_1_moon"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Moon</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky4MoonE" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<span id="_CPPv3N5simul3sky4MoonE"></span><span id="_CPPv2N5simul3sky4MoonE"></span><span id="simul::sky::Moon"></span><span class="target" id="structsimul_1_1sky_1_1_moon"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">Moon</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky4MoonE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>trueSKY supports multiple moons, each with their own orbit, size and texture. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky4Moon5orbitE">
+<span id="_CPPv3N5simul3sky4Moon5orbitE"></span><span id="_CPPv2N5simul3sky4Moon5orbitE"></span><span id="simul::sky::Moon::orbit__Orbit"></span><span class="target" id="structsimul_1_1sky_1_1_moon_1aed11fb1f15bd1793f403be7cc367826d"></span><a class="reference internal" href="#_CPPv4N5simul3sky5OrbitE" title="simul::sky::Orbit"><span class="n"><span class="pre">Orbit</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">orbit</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky4Moon5orbitE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="#structsimul_1_1sky_1_1_orbit"><span class="std std-ref">Orbit</span></a> of the <a class="reference internal" href="#structsimul_1_1sky_1_1_moon"><span class="std std-ref">Moon</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky4Moon16radiusArcMinutesE">
+<span id="_CPPv3N5simul3sky4Moon16radiusArcMinutesE"></span><span id="_CPPv2N5simul3sky4Moon16radiusArcMinutesE"></span><span id="simul::sky::Moon::radiusArcMinutes__float"></span><span class="target" id="structsimul_1_1sky_1_1_moon_1a634eade5234531484c1837a7d7fd52a3"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">radiusArcMinutes</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">16.f</span></span><a class="headerlink" href="#_CPPv4N5simul3sky4Moon16radiusArcMinutesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Radius of the moon in arc minutes. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky4Moon15textureFilenameE">
+<span id="_CPPv3N5simul3sky4Moon15textureFilenameE"></span><span id="_CPPv2N5simul3sky4Moon15textureFilenameE"></span><span id="simul::sky::Moon::textureFilename__ss"></span><span class="target" id="structsimul_1_1sky_1_1_moon_1a0f0793e138d283304bfa7f785de152a0"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">textureFilename</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky4Moon15textureFilenameE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Filename of moon texture, including file extension. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky4Moon6colourE">
+<span id="_CPPv3N5simul3sky4Moon6colourE"></span><span id="_CPPv2N5simul3sky4Moon6colourE"></span><span id="simul::sky::Moon::colour__vec3"></span><span class="target" id="structsimul_1_1sky_1_1_moon_1a25a9c086def5f18762ec67c79b3c90bc"></span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">colour</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="p"><span class="pre">{</span></span><span class="m"><span class="pre">0.136f</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">0.136f</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">0.136f</span></span><span class="p"><span class="pre">}</span></span><a class="headerlink" href="#_CPPv4N5simul3sky4Moon6colourE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Colour of moon and produced lighting. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky4Moon6albedoE">
+<span id="_CPPv3N5simul3sky4Moon6albedoE"></span><span id="_CPPv2N5simul3sky4Moon6albedoE"></span><span id="simul::sky::Moon::albedo__float"></span><span class="target" id="structsimul_1_1sky_1_1_moon_1a8ecbe7300f544e84145489374f103654"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">albedo</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.136f</span></span><a class="headerlink" href="#_CPPv4N5simul3sky4Moon6albedoE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Amount of light reflected by the moon. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
 
 </div>
 

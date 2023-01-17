@@ -18,11 +18,11 @@ Setup
 
 Could not find or load the QT platform "window"
 `````````````````````````````````````````````````
-Some Plugins use an incompatible version of the Qt widget system, please deactivate these Plugins to enable trueSKY. Currently known Plugins that have conflict issues can be found :ref:`here. <pluginconflicts>`
+Some Plugins use an incompatible version of the Qt widget system, please deactivate these Plugins to enable trueSKY. Currently known Plugins that have conflict issues can be found :ref:`here. <plugin-conflicts>`
 
 "createfile2 not found in kernel32.dll"
 `````````````````````````````````````````````````
-This will be due to Windows 7. Unforunately, we do not support Windows 7 anymore. You will need to upgrade your OS to be able to use trueSKY.
+This will be due to Windows 7. Unforunately, we do not support Windows 7 anymore. If you wish for Windows 7 Support please contact us directly.
 
 
 Getting "DllNotFoundException"
@@ -31,13 +31,13 @@ Windows User Account Control can give false positives when loading trueSKY, and 
 
 
 The trueSKY binary plugin is not working correctly
-`````````````````````````````````````````````````
+````````````````````````````````````````````````````
 Try deleting the plugin folder Engine/Plugins/TrueSkyPlugin/Content and the plugin binaries Engine/Binaries/ThirdParty/Simul. Then re-install the latest version of the plugin.
 
 
 When packaging the game, I get errors and/or the sky is black.
-`````````````````````````````````````````````````
-If you are using the binary installer, then you will need to follow some additional steps to be able to package your game with trueSKY. You can read about these :doc:`here </Programming/deployment>`. If these steps have been taken, there may be a conflict with another plugin. Currently known Plugins that have conflict issues can be found :ref:`here. <pluginconflicts>`
+``````````````````````````````````````````````````````````````````
+If you are using the binary installer, then you will need to follow some additional steps to be able to package your game with trueSKY. You can read about these :doc:`here </Programming/deployment>`. If these steps have been taken, there may be a conflict with another plugin. Currently known Plugins that have conflict issues can be found :ref:`here. <plugin-conflicts>`
 
 
 I can't edit the values in the sequencer
@@ -51,12 +51,8 @@ Try checking/unchecking the "Flipped View" option in the TrueSkyCamera component
 
 
 My trueSKY folder in the content browser is empty
-`````````````````````````````````````````````````
+``````````````````````````````````````````````````
 You can find the contents by going to "UE4Engine/Engine/Plugins/TrueSkyPlugin/Content". We don't copy the files in to save you having the files in every project. If you want to copy them over that is fine, but you will need to adjust the trueSKY actor's and our material function references if you use them from a different location. 
-
-I Can't Enable Water!
-`````````````````````````````````````````````````
-This will be because you are using our legacy versions (4.1a), which does not support our Water. Please update to trueSKY 4.2 or greater.
 
 Failed to load TrueSkyUI_MD.dll for truesky ui
 `````````````````````````````````````````````````
@@ -70,7 +66,7 @@ My Sky is Black in editor
 Make sure your trueSKY Actor has an active sequence selected. 
 
 The Sky updates with black spots!
-`````````````````````````````````````````````````
+````````````````````````````````````````````````
 Decrease the Atmospheric Amortization setting on the trueSKY actor. This will cause the Sky to update more frequently.
 
 Performance
@@ -92,7 +88,7 @@ I don't see any rain
 Make sure there are enough clouds above to produce rain!
 
 I don't see any rain, but rain streaks are working
-`````````````````````````````````````````````````
+```````````````````````````````````````````````````
 For rain and lightning to render in UE4, you need to have added trueSKY translucent as a post process material. As of September 2019, this has been made automatic, and added as part of initialization. Firstly, add a post process Volume to your scene, and make sure it is global by enabling "Unbound". Then go to the Rendering Features within the Post process Settings. Add a new element to the post process materials, and choose asset reference when prompted. Finally, add the trueSKY translucent material. If you do not have this material, you need locate the trueSKY assets.
 
 
@@ -106,7 +102,7 @@ Try increasing the Snowflake size on the trueSKY Actor.
 
 
 The rain moves too quickly when I move the camera
-`````````````````````````````````````````````````
+``````````````````````````````````````````````````
 This can happen when the camera is moving quite quickly. If you do not want to lower the speed of the camera's movement, then try lowering the metres per unit setting of the trueSKY object.
 
 
@@ -131,7 +127,7 @@ Everything is Grey at night
 Deleting UE4's Atmospheric Fog should fix this issue. We do not recommend using UE4's atmospheric fog, as trueSKY produces it's own fog. You can create fog from a Sky Keyframe.
 
 Objects are light too brightly, especially at night
-`````````````````````````````````````````````````
+```````````````````````````````````````````````````
 Try disabling Global Illumination, or set Indirect Lighting Intensity to a small vale (e.g. 0.001) on a PostProcessVolume. Adjust your true Sky Light in the scene. Also check if you are creating any light through Cubemaps or alternate lighting methods. 
 
 The sun is flickering
@@ -143,43 +139,38 @@ Cloud Appearance
 --------------------
 
 How do I make my clouds the same each time I launch my program?
-`````````````````````````````````````````````````
+````````````````````````````````````````````````````````````````````````
 Make sure the sequencer starts at the same time at each launch and the clouds should stay in the same formation.
 
 My Clouds have an obvious pattern in them, how do I make it go away?
-`````````````````````````````````````````````````
+````````````````````````````````````````````````````````````````````````
 Noise is used to hide repetition, have a look at our :doc:`Noise Settings <Tutorials/clouds>` to learn how to hide patterns effectively. If it is still an obvious grid, consider changing the size of the grid. This is done in the trueSKY actor within the world under "Render Grid X" and "Render Grid Y". Reducing both these values will make the grid sections smaller, resulting in higher quality clouds. This may however affect performance. Multiple cloud layers can also be used to help remove the appearance of repetition by making them intersect. Finally, make sure there is breaks within the clouds, as a sheet of clouds will always look the most repetitive.
-
-
-How do I make the clouds appear less pixelated?
-`````````````````````````````````````````````````
-Try increasing the clouds resolution in the trueSKY Object.
 
 My Clouds change with only one keyframe
 `````````````````````````````````````````````````
 Setting the 'Noise Period' value in the cloud layer in the sky sequencer to the minimum possible will stop the clouds from changing shape over time.
 
 How do I make the clouds move independently of time-of-day?
-`````````````````````````````````````````````````
+````````````````````````````````````````````````````````````````````````
 Make sure to set the value "Override Wind" to true. It can be found in the cloud layer settings. You can then move the layers individually using the World Grid, and the clouds will move based on layer positions.
 
 On PS4, there is an apparent "trail" in the sky as the camera moves
-`````````````````````````````````````````````````
+````````````````````````````````````````````````````````````````````````
 The Unreal Engine screen clear is faulty in some versions: the Hardware Clear option does not work. To fix this, go to Project Settings -> Rendering -> Optimization and change "Clear Scene" to "Clear at Far Plane".
 
 
 Other Issues
 ------------
-.. _pluginconflicts:
+
 Plugin Conflicts
 `````````````````````````````````````````````````
 
 **Houdini**
-
+````````````````
 Unconfirmed issues with Houdini. 
 
 **CETO**
-
+```````````````````
 Any transparent shaders in use will need to be modified, otherwise the water may render above the clouds. In the OceanTopSide_Transparent shader, find the "Queue" tag and change it from "Transparent-1" to "Transparent-500". Find the same tag in the "OceanUnderSide_Transparent" shader and change this from "Transparent-2" to "Transparent-501".   
 
 This will make it so that trueSKY won't be visible when underwater, so if underwater views are needed, it is advisable to write a script that changes these queue values back to their defaults when the camera is underwater. 
@@ -187,12 +178,12 @@ This will make it so that trueSKY won't be visible when underwater, so if underw
 Reloading or switching Unity scenes with both trueSKY and CETO active is not currently supported. This conflict is caused by CETO's OnDestroy() function, which removes the Unity camera and the associated Unity RenderBuffers; trueSKY relies on these RenderBuffers for its rendering.
 
 **Popcorn FX**
-
+```````````````````
 If you are using the PopcornFX plugin, you will need to set native rendering to "Before Image Effect" for it to work alongside trueSKY.
 
 
 My Question is not in the documentation, what can I do?
---------------------------
+---------------------------------------------------------
 
 If our documentation hasn't covered your issue let us know via the `Q+A Forum`_. Your question may have already been asked by a member of the community, and if not a member of the team will get back to you with a solution or for more information!
 
