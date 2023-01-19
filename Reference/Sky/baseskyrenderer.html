@@ -209,19 +209,38 @@
 <p>It is the job of the Sky Renderer to update the atmospherics textures to be used by the other render classes, and render celestial objects.</p>
 <p>The fade tables are stored as 3D textures - an axis for distance, one for elevation, one for altitude. The table size is given by NumElevations, NumDistances and SetNumAltitudes() of <a class="reference internal" href="skykeyframer.html#classsimul_1_1sky_1_1_sky_keyframer"><span class="std std-ref">SkyKeyframer</span></a>. Try to minimize the number of altitudes required, in order to maximize performance, and use SetAltitudeRangeKm on initialization to the range you will use.</p>
 <p><a class="reference internal" href="../Clouds/baseweatherrenderer.html#classsimul_1_1clouds_1_1_base_weather_renderer_1af173cee9d209dc23c30d92dc6a66e06d"><span class="std std-ref">BaseWeatherRenderer::PreRenderUpdate</span></a> first calls <a class="reference internal" href="#classsimul_1_1sky_1_1_base_sky_renderer_1aa2d1e8d553595f6bf693e0af1134fe30"><span class="std std-ref">EnsureTexturesAreUpToDate</span></a>, which fills in the fade textures with loss and inscatter values.</p>
-<p>Then, the sky and atmospheric scattering (atmospherics, or distance-fades) are drawn together as an overlay after the depth-buffer has been filled by any solids in the scene (see ). There are two main elements to realistic atmospherics: Loss, and Inscatter.  </p>
-<p>Keyframe X   </p>
-<p>Keyframe X+1   </p>
-<p>Keyframe X+2    </p>
-<p>loss 0   </p>
-<p>loss 1   </p>
-<p>loss 2    </p>
-<p>inscatter 0   </p>
-<p>inscatter 1   </p>
-<p>inscatter 2    </p>
-<p>skylight 0   </p>
-<p>skylight 1   </p>
-<p>skylight 2   </p>
+<p>Then, the sky and atmospheric scattering (atmospherics, or distance-fades) are drawn together as an overlay after the depth-buffer has been filled by any solids in the scene - see <a class="reference internal" href="../Clouds/baseweatherrenderer.html#classsimul_1_1clouds_1_1_base_weather_renderer_1aa69969a16c97f54345079b868164396f"><span class="std std-ref">RenderMixedResolution</span></a>. There are two main elements to realistic atmospherics: Loss, and Inscatter.</p>
+<p><img alt="../../_images/FadeLogic.png" src="../../_images/FadeLogic.png" /></p>
+<p>So, for any point in screen space, we can transform it to world space using the depth value, and obtain its distance, and elevation relative to the horizon. This gives us the lookup co-ordinates into the loss and inscatter textures. The loss value determines how much of the red,green, and blue values of that pixel are retained as light passes through the atmosphere from the distant object to the viewer. The inscatter determines how much sunlight (or moonlight etc) is scattered in towards the viewer due to the intervening atmosphere.</p>
+<p>Generally in Earth’s nitrogen-oxygen atmosphere, more blue light than red or green is scattered. So distance white objects appear yellow, as the blue component has been scattered away. But distance black objects appear blue, because the blue part of the sunlight shining on the intervening air has been scattered as well, and some of that blue light goes towards the viewer. This process is Rayleigh scattering. Other important effects that TrueSky simulates are Mie scattering due to haze, Ozone absorption, and radiation due to air temperature.</p>
+<p>Each sky renderer maintains nine fade textures. If the most recent keyframe in the sky keyframer is X, we have:</p>
+<p><p><table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Keyframe X</p></td>
+<td><p>Keyframe X+1</p></td>
+<td><p>Keyframe X+2</p></td>
+</tr>
+<tr class="row-even"><td><p>loss 0</p></td>
+<td><p>loss 1</p></td>
+<td><p>loss 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>inscatter 0</p></td>
+<td><p>inscatter 1</p></td>
+<td><p>inscatter 2</p></td>
+</tr>
+<tr class="row-even"><td><p>skylight 0</p></td>
+<td><p>skylight 1</p></td>
+<td><p>skylight 2</p></td>
+</tr>
+</tbody>
+</table>
+</p>
+</p>
 <p>Each texture contains data for the atmospherics as seen from a complete range of altitudes.</p>
 <p>We use textures 0 and 1 to render the scene. Texture 2 is gradually filled in over multiple frames, so that when we reach keyframe X+1, it will be complete and can be swapped in. All this is handled automatically by the <a class="reference internal" href="skykeyframer.html#classsimul_1_1sky_1_1_sky_keyframer"><span class="std std-ref">SkyKeyframer</span></a>, which in turn can use a <a class="reference internal" href="basegpuskygenerator.html#classsimul_1_1sky_1_1_base_gpu_sky_generator"><span class="std std-ref">GpuSkyGenerator</span></a>. If using CPU-generated textures, the Sky Renderer asks the keyframer what new data to fill into the textures each frame. If using its own GpuSkyGenerator, the Sky Renderer has access to these textures without the need to query the keyframer.</p>
 <p><img alt="../../_images/FadeTable.png" src="../../_images/FadeTable.png" /></p>

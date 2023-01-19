@@ -3,19 +3,26 @@ Base GPU Sky Generator
 
 .. doxygenclass:: simul::sky::BaseGpuSkyGenerator
    :members:
-
+   :undoc-members:
 .. doxygenstruct:: simul::sky::GpuTexGenStats
+   :undoc-members:
    :members:
 .. doxygenstruct:: simul::sky::GpuMoon
+   :undoc-members:
    :members:
 .. doxygenstruct:: simul::sky::GpuPhysicalSkyParameters
+   :undoc-members:
    :members:
 .. doxygenstruct:: simul::sky::GpuColourTextureSpec
+   :undoc-members:
    :members:
 .. doxygenstruct:: simul::sky::GpuSkyParameters
+   :undoc-members:
    :members:
 .. doxygenstruct:: simul::sky::GpuSkyAtmosphereParameters
+   :undoc-members:
    :members:
 .. doxygenstruct:: simul::sky::GpuSkyInfraredParameters
+   :undoc-members:
    :members:
 
