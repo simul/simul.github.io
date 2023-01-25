@@ -1,5 +1,8 @@
 Changelist 
 ========= 
+| **Tue 24 Jan** : Platform Ptr.
+| **Tue 24 Jan** : Improvements to save/load options
+| **Mon 23 Jan** : add save/load rendering options
 | **Thu 19 Jan** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Thu 19 Jan** : Updated parameter names in GetShadowTexcoords() and GetSimpleIlluminationAt()
 | **Wed 18 Jan** : Fix for missing documentation
@@ -97,6 +100,3 @@ Changelist
 | **Wed 10 Aug** : Removed face index offset from Skylight::Update() as this is redundant. Platform ptr.
 | **Thu 04 Aug** : Updated CloudRenderer::RenderPrecipitationVolumeTexture() to use EffectPass and ShaderResource over strings. Platform ptr.
 | **Tue 02 Aug** : Updated StaticRemoveView()'s loop for std::map::erase().
-| **Mon 01 Aug** : PS4 Unity: Save render target and colour texture for later use. GetColourTexture() copies the Cmask and Fmask to the Platform's orbis::Texture. Platform ptr.  4.1b
-| **Mon 18 Jul** : Removed unused texture from atmospherics.sfx and BaseAtmosphericsRenderer.cpp. Platform ptr.
-| **Thu 14 Jul** : Merge branch '4.3' of github.com:simul/Simul into 4.3
