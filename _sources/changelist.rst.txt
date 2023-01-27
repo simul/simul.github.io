@@ -1,10 +1,19 @@
 Changelist 
 ========= 
+| **Thu 26 Jan** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Thu 26 Jan** : Platform Ptr.
+| **Thu 26 Jan** : Whitespace corrections in terrain.sfx.
+| **Thu 26 Jan** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Thu 26 Jan** : Simplified shadow texture lookups in terrain.sfx.
+| **Wed 25 Jan** : Remove GET_FROM_FILE_CUSTOM where no longer needed
+| **Wed 25 Jan** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Tue 24 Jan** : Platform Ptr.
 | **Tue 24 Jan** : Improvements to save/load options
 | **Mon 23 Jan** : add save/load rendering options
+| **Mon 23 Jan** : documentation updates
 | **Thu 19 Jan** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Thu 19 Jan** : Updated parameter names in GetShadowTexcoords() and GetSimpleIlluminationAt()
+| **Wed 18 Jan** : Rename of cloud textures in update shader. Add Int format textures.
 | **Wed 18 Jan** : Fix for missing documentation
 | **Wed 18 Jan** : Add comments to Cloud Rendering Variables
 | **Mon 16 Jan** : Fix missing images, update to docs for tables, missing variables.
@@ -91,12 +100,3 @@ Changelist
 | **Wed 14 Sep** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Wed 14 Sep** : Improved implementation of PlanetRadius
 | **Thu 08 Sep** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Thu 08 Sep** : Fix for "cloudshadoworiginkm" cloudshadoworigin"  conflict
-| **Thu 25 Aug** : Improved SM utilisation in CS_InterpLightTable() by increasing the number of threads in the group.
-| **Mon 22 Aug** : Removed commented out code for precipitation in CloudRenderer::SetCloudConstants.
-| **Mon 22 Aug** : Re-added azimuth to PrecipitationLayerInfo and updated clouds.sfx PrecipitationVolume() shader.
-| **Tue 16 Aug** : Fix C4244 type conversion warning in CloudRenderer.cpp.
-| **Fri 12 Aug** : PrecipitationLayerInfo::azimuth removed as it's unused. Added GetGloblalXYAngularOffsetFromOriginRAD lambda to unify code in CloudRenderer::RenderPrecipitationVolumeTexture().
-| **Wed 10 Aug** : Removed face index offset from Skylight::Update() as this is redundant. Platform ptr.
-| **Thu 04 Aug** : Updated CloudRenderer::RenderPrecipitationVolumeTexture() to use EffectPass and ShaderResource over strings. Platform ptr.
-| **Tue 02 Aug** : Updated StaticRemoveView()'s loop for std::map::erase().
