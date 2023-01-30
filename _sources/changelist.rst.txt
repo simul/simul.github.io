@@ -1,5 +1,10 @@
 Changelist 
 ========= 
+| **Mon 30 Jan** : Platform ptr.
+| **Mon 30 Jan** : Added altitude to diagnostics overlay.
+| **Mon 30 Jan** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Mon 30 Jan** : Updated CloudRenderer::SaveRenderingOptionsToFile() and CloudRenderer::LoadRenderingOptionsFromFile(). Platform ptr.
+| **Fri 27 Jan** : Platform Ptr
 | **Thu 26 Jan** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Thu 26 Jan** : Platform Ptr.
 | **Thu 26 Jan** : Whitespace corrections in terrain.sfx.
@@ -95,8 +100,3 @@ Changelist
 | **Thu 29 Sep** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Mon 26 Sep** : re-enable precipitation amortization
 | **Mon 26 Sep** : UI QOL improvements
-| **Thu 22 Sep** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Thu 22 Sep** : m_ShowAuroralOvalInCloudWindow to false by default
-| **Wed 14 Sep** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Wed 14 Sep** : Improved implementation of PlanetRadius
-| **Thu 08 Sep** : Merge branch '4.3' of github.com:simul/Simul into 4.3
