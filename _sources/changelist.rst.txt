@@ -1,5 +1,8 @@
 Changelist 
 ========= 
+| **Tue 31 Jan** : Move Save/Load CloudRenderingOptions from CloudRenderer.cpp to CloudRenderingOptions.cpp
+| **Tue 31 Jan** : Set Minimum density value for cloud_update
+| **Tue 31 Jan** : Update RenderFrameStruct for 4.4 compatibility.
 | **Mon 30 Jan** : Platform ptr.
 | **Mon 30 Jan** : Added altitude to diagnostics overlay.
 | **Mon 30 Jan** : Merge branch '4.3' of github.com:simul/Simul into 4.3
@@ -97,6 +100,3 @@ Changelist
 | **Tue 04 Oct** : Fix some cloud update bugs, more clarity in overlays.
 | **Fri 30 Sep** : Precipitation Region Fix, update drawing camera position and view distance, externalDynamic value correctly utilises origin variables
 | **Thu 29 Sep** : Fixes for sequencer UIDs.
-| **Thu 29 Sep** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Mon 26 Sep** : re-enable precipitation amortization
-| **Mon 26 Sep** : UI QOL improvements
