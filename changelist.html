@@ -172,6 +172,12 @@
   <div class="section" id="changelist">
 <h1>Changelist<a class="headerlink" href="#changelist" title="Permalink to this headline">¶</a></h1>
 <div class="line-block">
+<div class="line"><strong>Tue 07 Mar</strong> : Platform ptr.</div>
+<div class="line"><strong>Tue 07 Mar</strong> : Platform ptr.</div>
+<div class="line"><strong>Tue 07 Mar</strong> : Fix PS4 compilation errors due to temporaries being assigned to non-const reference in constructors.</div>
+<div class="line"><strong>Fri 03 Mar</strong> : Moved CloudShadow.h to /Sky and changed namespace to simul::sky. PrecipitationRenderer::SetPrecipitationVolume() renamed to PrecipitationRenderer::SetCloudShadowData(). Removed old proxy structs. BaseTerrainRenderer and BaseAtmosphericsRenderer use CloudShadowData&amp;.</div>
+<div class="line"><strong>Thu 02 Mar</strong> : Updated BaseTerrainRenderer to remove references to CloudShadowData.</div>
+<div class="line"><strong>Thu 02 Mar</strong> : Removed Clouds/CloudWindow.h from class BaseAtmosphericsRenderer; added struct LightScatteringData instead.</div>
 <div class="line"><strong>Tue 28 Feb</strong> : In-cloud fog: extinction-based fog in compositor, depends on cloud density/lighting query and NearCloudExtinctionPerKm.</div>
 <div class="line"><strong>Tue 31 Jan</strong> : Move Save/Load CloudRenderingOptions from CloudRenderer.cpp to CloudRenderingOptions.cpp</div>
 <div class="line"><strong>Tue 31 Jan</strong> : Set Minimum density value for cloud_update</div>
@@ -266,12 +272,6 @@
 <div class="line"><strong>Mon 24 Oct</strong> : Fixes for shadows and Wind Movement</div>
 <div class="line"><strong>Thu 20 Oct</strong> : Revert accidental change to WindowUpdate.</div>
 <div class="line"><strong>Wed 19 Oct</strong> : Platform Pointer.</div>
-<div class="line"><strong>Mon 17 Oct</strong> : Platform Pointer</div>
-<div class="line"><strong>Thu 13 Oct</strong> : Remove unused variable to fix 6.000 PS5 SDK.</div>
-<div class="line"><strong>Fri 07 Oct</strong> : Remove OverrideWind variable, update to cloudRendering.</div>
-<div class="line"><strong>Thu 06 Oct</strong> : Ensure Keyframes don’t have the same UID.</div>
-<div class="line"><strong>Tue 04 Oct</strong> : Fix some cloud update bugs, more clarity in overlays.</div>
-<div class="line"><strong>Fri 30 Sep</strong> : Precipitation Region Fix, update drawing camera position and view distance, externalDynamic value correctly utilises origin variables</div>
 </div>
 </div>
 
