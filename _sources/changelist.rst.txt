@@ -1,5 +1,8 @@
 Changelist 
 ========= 
+| **Thu 16 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Thu 16 Mar** : RaytraceCloudsVariable() outputs meanFadeDistance and moisture values. Platform ptr.
+| **Thu 16 Mar** : Update CopyToTargetDir.py for Project plugins. Added CopyToTargetDirUE4 for back-compatibility.
 | **Mon 13 Mar** : Doc Update for UE version
 | **Tue 07 Mar** : Platform ptr.
 | **Tue 07 Mar** : Platform ptr.
@@ -97,6 +100,3 @@ Changelist
 | **Thu 27 Oct** : Fix for TrueSkyRenderModes
 | **Wed 26 Oct** : Init cloud Texture
 | **Wed 26 Oct** : Revert removal of OverrideWind
-| **Tue 25 Oct** : Additional parameters within UIRenderingInterface
-| **Mon 24 Oct** : Fixes for shadows and Wind Movement
-| **Thu 20 Oct** : Revert accidental change to WindowUpdate.
