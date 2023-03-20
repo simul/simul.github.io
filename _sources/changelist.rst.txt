@@ -1,5 +1,8 @@
 Changelist 
 ========= 
+| **Fri 17 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Fri 17 Mar** : Platform Ptr.
+| **Fri 17 Mar** : Platform ptr.
 | **Thu 16 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Thu 16 Mar** : RaytraceCloudsVariable() outputs meanFadeDistance and moisture values. Platform ptr.
 | **Thu 16 Mar** : Update CopyToTargetDir.py for Project plugins. Added CopyToTargetDirUE4 for back-compatibility.
@@ -97,6 +100,3 @@ Changelist
 | **Fri 11 Nov** : Fix to CloudWindow Crash. Reduce chance of invalid lightning strikes. Remove celestial objects from low res cubemap.
 | **Thu 03 Nov** : Update to D3D11+12 samples, remove unused source files.
 | **Thu 03 Nov** : Add main_pass to Skylight rendermode enum
-| **Thu 27 Oct** : Fix for TrueSkyRenderModes
-| **Wed 26 Oct** : Init cloud Texture
-| **Wed 26 Oct** : Revert removal of OverrideWind
