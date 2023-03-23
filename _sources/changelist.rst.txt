@@ -1,5 +1,9 @@
 Changelist 
 ========= 
+| **Thu 23 Mar** : Update docs with packaging question, override wind is false by default.
+| **Thu 23 Mar** : Minor shader fix.
+| **Thu 23 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Thu 23 Mar** : Commented code in terrain.sfx to 'boost' shadows. Platform ptr.
 | **Fri 17 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Fri 17 Mar** : Platform Ptr.
 | **Fri 17 Mar** : Platform ptr.
@@ -96,7 +100,3 @@ Changelist
 | **Wed 23 Nov** : Debugging cloud generation synchronization.
 | **Wed 23 Nov** : Moved some fns to noise.sl/
 | **Tue 22 Nov** : Platform ptr.
-| **Tue 15 Nov** : Update Skykeyframer Lat/Lon
-| **Fri 11 Nov** : Fix to CloudWindow Crash. Reduce chance of invalid lightning strikes. Remove celestial objects from low res cubemap.
-| **Thu 03 Nov** : Update to D3D11+12 samples, remove unused source files.
-| **Thu 03 Nov** : Add main_pass to Skylight rendermode enum
