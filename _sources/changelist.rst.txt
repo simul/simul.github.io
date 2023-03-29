@@ -1,5 +1,7 @@
 Changelist 
 ========= 
+| **Tue 28 Mar** : Update ExternalDynamicValues structs.
+| **Mon 27 Mar** : Platform ptr.
 | **Fri 24 Mar** : Update CopySkylightStruct to include ExternalTexture
 | **Thu 23 Mar** : Update docs with packaging question, override wind is false by default.
 | **Thu 23 Mar** : Minor shader fix.
@@ -98,5 +100,3 @@ Changelist
 | **Fri 25 Nov** : Platform ptr.
 | **Wed 23 Nov** : Using CombinedTauswortheSphericalRandom in RestrictedWorley. Fix cloud generation hardware mismatch.
 | **Wed 23 Nov** : Using TauswortheVirtualNoiseLookup for reproduceable cloud generation.
-| **Wed 23 Nov** : Debugging cloud generation synchronization.
-| **Wed 23 Nov** : Moved some fns to noise.sl/
