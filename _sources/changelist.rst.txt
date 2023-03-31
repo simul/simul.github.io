@@ -1,5 +1,6 @@
 Changelist 
 ========= 
+| **Wed 29 Mar** : SetExternaDynamicValues Update
 | **Tue 28 Mar** : Update ExternalDynamicValues structs.
 | **Mon 27 Mar** : Platform ptr.
 | **Fri 24 Mar** : Update CopySkylightStruct to include ExternalTexture
@@ -99,4 +100,3 @@ Changelist
 | **Fri 25 Nov** : Fixed PrecipitationRenderer for msaa screen size depth textures.
 | **Fri 25 Nov** : Platform ptr.
 | **Wed 23 Nov** : Using CombinedTauswortheSphericalRandom in RestrictedWorley. Fix cloud generation hardware mismatch.
-| **Wed 23 Nov** : Using TauswortheVirtualNoiseLookup for reproduceable cloud generation.
