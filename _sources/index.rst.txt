@@ -26,9 +26,12 @@ Getting Started
 Useful External Links
 ======================================
 
-* `Check out our YouTube Channel <https://www.youtube.com/user/simulsoftware>`_ - You can find tutorials and showcases here 
+* `Check out our YouTube Channel <https://www.youtube.com/user/simulsoftware>`_ - You can find tutorials and showcases here.
+
+* `Join our Discord Channel <https://discord.gg/W2DNZ6fDfy>`_ - Speak to like-minded developers and learn about the latest trueSKY news. 
 
 * `Contact Us <mailto:contact@simul.co>`_ - Let us know if you're having a particular issue or think we could improve a certain aspects.   
+
 
 .. toctree::
    :maxdepth: 2
@@ -47,6 +50,7 @@ Useful External Links
 .. toctree::
    :maxdepth: 2
    :caption: Reference:
+   :name: Reference
    :titlesonly:
 
    API/apiindex.rst

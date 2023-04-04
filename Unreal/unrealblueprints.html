@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+  <meta charset="utf-8" ><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   <title>Unreal Blueprints with trueSKY &mdash; Simul  documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" >
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" >
+    <link rel="shortcut icon" href="../_static/favicon.ico">
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -15,10 +16,10 @@
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/js/theme.js"></script>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Unreal Materials with trueSKY" href="unrealmaterials.html" />
-    <link rel="prev" title="Unreal Tutorial" href="unrealtutorial.html" /> 
+    <link rel="index" title="Index" href="../genindex.html" >
+    <link rel="search" title="Search" href="../search.html" >
+    <link rel="next" title="Unreal Materials with trueSKY" href="unrealmaterials.html" >
+    <link rel="prev" title="Unreal Tutorial" href="unrealtutorial.html" > 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -39,9 +40,9 @@
 <div role="search">
     <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
         <label class="search-label" for="q">Search the documentation</label>
-        <input type="text" name="q" id="q" placeholder="Search..." aria-label="Search docs" />
-        <input type="hidden" name="check_keywords" value="yes" />
-        <input type="hidden" name="area" value="default" />
+        <input type="text" name="q" id="q" placeholder="Search..." aria-label="Search docs" >
+        <input type="hidden" name="check_keywords" value="yes" >
+        <input type="hidden" name="area" value="default" >
     </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
@@ -54,16 +55,15 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Unreal Blueprints with trueSKY</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#getting-values-from-truesky-actor">Getting Values from trueSKY Actor</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#getting-keyframe-values">Getting Keyframe Values</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#uid">UID</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#unique-id-uid">Unique ID (UID)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#get-set-keyframe-layer-values">Get/Set Keyframe + Layer Values</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#get-set-values-on-the-trueskyactor">Get/Set Values on the trueSKYActor</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#getting-layer-values">Getting Layer Values</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#tools">Tools</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#queries">Queries</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#managing-sequences">Managing Sequences</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#measuring-performance">Measuring Performance</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#adding-and-removing-cloud-keyframes">Adding and removing Cloud Keyframes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#adding-and-removing-cloudlayers">Adding and removing Cloudlayers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#adding-and-removing-cloud-layers">Adding and Removing Cloud Layers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#adding-map-textures-via-blueprints">Adding map textures via blueprints</a></li>
 </ul>
 </li>
@@ -106,7 +106,7 @@
             <a href="../_sources/Unreal/unrealblueprints.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
-  <hr/>
+  <hr>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
@@ -118,25 +118,25 @@
 <section id="getting-values-from-truesky-actor">
 <h2>Getting Values from trueSKY Actor<a class="headerlink" href="#getting-values-from-truesky-actor" title="Permalink to this heading">¶</a></h2>
 <p>You can edit any of the variables present in the keyframes, layers or attached to the trueSKY Actor. To access these nodes, we have split our variables based on their location. For example, if you want to edit a value on a cloud keyframe, you would use the SetCloudKeyframeValue blueprint node. There is also a correlating GetCloudKeyframeValue for retrieving data</p>
-<img alt="../_images/getsetblueprint.png" src="../_images/getsetblueprint.png" />
-<p>From the image above, Property is the value that you want to change, which is selected using the dropdown. For the keyframe nodes, a Keyframe Unique Identifier (UID) is needed to access the correct keyframe. You can get this by manually going to your keyframe and looking for the UID at the top of the details panel, or there are multiple blueprint nodes available to help you select the correct keyframe.</p>
+<img alt="Image showing the Blueprint steps required to increase the cloudiness of a specified keyframe. The Event BeginPlay node (1) is connected to a node &quot;get cloudkeyframe uid by index&quot; (2). The return value of this node is connected to the &quot;UID&quot; inputs of nodes &quot;Get Cloud Keyframe Value&quot; (3) and &quot;Set Cloud Keyframe Value&quot; (4), which are connected in sequence from node (2). The return value of (3) goes through a multiplication node (5), which multiplies the value by 1.5, and sends the value to node (4)'s &quot;Float Value&quot; input." src="../_images/getsetblueprint.png" />
+<p>From the image above, Property is the value that you want to change, which is selected using the drop-down. For the keyframe nodes, a Keyframe Unique Identifier (UID) is needed to access the correct keyframe. You can get this by manually going to your keyframe and looking for the UID at the top of the details panel, or there are multiple blueprint nodes available to help you select the correct keyframe.</p>
 <p>There are nodes for keyframes and layers. To access the trueSKY actor values, reference it within the blueprints.</p>
 </section>
 <section id="getting-keyframe-values">
 <h2>Getting Keyframe Values<a class="headerlink" href="#getting-keyframe-values" title="Permalink to this heading">¶</a></h2>
 </section>
-<section id="uid">
-<h2>UID<a class="headerlink" href="#uid" title="Permalink to this heading">¶</a></h2>
-<p>To get a keyframe’s properties, you will first need its Unique ID (UID) to identify it. UIDs can be retrieved using a variety of provided Blueprint functions. At this time, the UID displayed on the keyframe and the UIDs returned are not the same. Only use the value returned while this is fixed.</p>
-<p>There is a Cloud Keyframe version of all these functions, just replace sky with cloud in the function name. For Cloud Keyframes, you must specify the layer. Layers values are the number displayed on the layer.</p>
+<section id="unique-id-uid">
+<h2>Unique ID (UID)<a class="headerlink" href="#unique-id-uid" title="Permalink to this heading">¶</a></h2>
+<p>To get a keyframe’s properties, you will first need its Unique ID (UID) to identify it. UIDs can be retrieved using a variety of provided Blueprint functions.</p>
+<p>There are functions to get Cloud and Sky Keyframes, usually found by replacing sky with cloud in the function name. For Cloud Keyframes, you must specify the layer. Layers also have a UID, but typically it is easier to get the layers by index value, in order of creation.</p>
 <ul class="simple">
-<li><p><strong>GetSkyKeyframebyIndex:</strong> Returns a keyframe’s Uid, given an index (this is zero-indexed; the first sky keyframe in a sequence is 0, the second is 1 and so on).</p></li>
-<li><p><strong>GetPreviousSkyKeyframeBeforeTime:</strong> Given a time, returns the Uid of the last sky keyframe before the given time.</p></li>
-<li><p><strong>GetNextSkyKeyframeAfterTime:</strong> Given a time, returns the Uid of the next keyframe after the given time.</p></li>
-<li><p><strong>GetNextModifiableSkyKeyframe:</strong> Returns the Uid of the next keyframe that can be modified without requiring any recalculation (this will be the next sky keyframe + 1).</p></li>
-<li><p><strong>GetInterpolatedSkyKeyframe:</strong> Returns the current interpolated keyframe’s Uid (Note: this cannot be used to set any values; it is read-only).</p></li>
+<li><p><strong>GetSkyKeyframebyIndex:</strong> Returns a keyframe’s UID, given an index (this is zero-indexed; the first sky keyframe in a sequence is 0, the second is 1 and so on).</p></li>
+<li><p><strong>GetPreviousSkyKeyframeBeforeTime:</strong> Given a time, returns the UID of the last sky keyframe before the given time.</p></li>
+<li><p><strong>GetNextSkyKeyframeAfterTime:</strong> Given a time, returns the UID of the next keyframe after the given time.</p></li>
+<li><p><strong>GetNextModifiableSkyKeyframe:</strong> Returns the UID of the next keyframe that can be modified without requiring any recalculation (this will be the next sky keyframe + 1).</p></li>
+<li><p><strong>GetInterpolatedSkyKeyframe:</strong> Returns the current interpolated keyframe’s UID (Note: this cannot be used to set any values; it is read-only).</p></li>
 </ul>
-<p>Once you have a keyframe’s Uid, you can Get and Set its properties. Select a Property from the Dropdown, input a keyframe UID and can you get or set the value.</p>
+<p>Once you have a keyframe’s UID, you can Get and Set its properties. Select a Property from the drop-down, input a keyframe UID and can you get or set the value.</p>
 </section>
 <section id="get-set-keyframe-layer-values">
 <h2>Get/Set Keyframe + Layer Values<a class="headerlink" href="#get-set-keyframe-layer-values" title="Permalink to this heading">¶</a></h2>
@@ -151,57 +151,50 @@
 <li><p><strong>SetCloudLayerValue:</strong></p></li>
 </ul>
 <p>For example, to adjust the cloudiness of a scene via blueprints, you would use the blueprints in the image below.</p>
-<img alt="../_images/exampleincreasecloudiness.png" src="../_images/exampleincreasecloudiness.png" />
-<p>Of course, this relies on you have a layer and keyframe already. You can also create Cloud layers and Keyframes via blueprints.</p>
-<img alt="../_images/examplecreatelayerandkeyframe.png" src="../_images/examplecreatelayerandkeyframe.png" />
-<p>Every sequence has 1 Sky layer that cannot be removed, so you do not need to create or get a reference to a Sky layer. Editing a Sky Keyframe is almost identical to editing a cloud keyframe, and has the same blueprints to get access to the UID of the keyframe.</p>
-<img alt="../_images/exampleskyfog.png" src="../_images/exampleskyfog.png" />
+<img alt="Image showing blueprint steps to set the cloudiness of a specified cloud keyframe when a button is pressed. The &quot;On key pressed&quot; node (1) is connected to the node &quot;Get Cloud Layer UID by Index&quot; (2), which has the default value of 0 passed into the index. The return value is connected to Layer value of the node &quot;Get Cloud Keyframe UID by Index&quot; (3), which has the default value of 0 for the index field. The return value of (3) is then passed into the UID field of &quot;Set Cloud Keyframe Value&quot; (4). The values on node (4) have been set so the property field is &quot;Cloudiness&quot; and the float value is 0.8." src="../_images/exampleincreasecloudiness.png" />
+<p>Of course, this relies on you have a layer and keyframe already. You can also create Cloud layers and Keyframes at runtime via blueprints.</p>
+<img alt="Image showing blueprint steps to create a cloud keyframe with a specified cloudiness when a button is pressed. The &quot;On key pressed&quot; node (1) is connected to the node &quot;Create Cloud Layer&quot; (2), and the name &quot;Layer 1&quot; is given in the name input field. The return value is connected to Layer UID value of the node &quot;Create Cloud Keyframe&quot; (3), which has a value of 0.5 for the time field. The return value of (3) is then passed into the UID field of &quot;Set Cloud Keyframe Value&quot; (4). The values on node (4) have been set so the property field is &quot;Cloudiness&quot; and the float value is 0.8." src="../_images/examplecreatelayerandkeyframe.png" />
+<p>Be aware that when creating keyframes, you must pass your keyframe time values in ‘trueSKY Time’. trueSKY manages each day in the range of 0-1. For example, mid-day of the first day would be 0.5, and mid-day of the second would be 1.5. We also have helper functions, timeToTrueSKYTime and trueSKYTimeToTime.</p>
+<p>Every sequence starts with a Sky layer that cannot be removed, and no more sky layers can be added, so you do not need to create or get a reference to a Sky layer. Editing a Sky Keyframe is almost identical to editing a cloud keyframe, and has the same blueprints to get access to the UID of the keyframe.</p>
+<img alt="Image showing the different blueprint nodes available to get the Sky Keyframe UID. The nodes shown are - Get Sky Keyframe UID By Index (1), Get Next Sky keyframe UID After Set Time (2), Get Previous Sky Keyframe UId before Set Time (3),Get Next Modifiable Sky Keyframe UID (4), Create Sky Keyframe (5). In the example, node (1) is passing the returned UID to the Set Sky Keyframe Value node (6), which is setting the Haze variable to 100." src="../_images/exampleskyfog.png" />
 </section>
 <section id="get-set-values-on-the-trueskyactor">
 <h2>Get/Set Values on the trueSKYActor<a class="headerlink" href="#get-set-values-on-the-trueskyactor" title="Permalink to this heading">¶</a></h2>
-<p>To Get/Set these values, just create a reference of the trueSKYSequenceActor, and all the variables have been made public.</p>
-<img alt="../_images/createactorreference.png" src="../_images/createactorreference.png" />
-<p>To make a reference, make sure the actor is selected in the world view, and context sensitive is ticked.</p>
-<img alt="../_images/actorvariables.png" src="../_images/actorvariables.png" />
-<p>As you can see there is a list of all the editable variables, organised the same was as they are on the actor.</p>
-<img alt="../_images/exampleprecipitation.png" src="../_images/exampleprecipitation.png" />
+<p>To Get/Set these values, just create a reference of the trueSky Actor, as all the variables have been made public. To make a reference, make sure the actor is selected in the world view, and context sensitive option is ticked.</p>
+<img alt="Image showing how to create a reference to the trueSky Actor. An option to &quot;Create a Reference to TrueSkyActor&quot; will be available in the actions menu." src="../_images/createactorreference.png" />
+<p>As shown below, you can see there is a list of all the editable variables, organised the same was as they are on the actor.</p>
+<img alt="Image showing the drop-down menu of all context sensitive options from the trueSky Actor. The Noise options have been highlighted as an example." src="../_images/actorvariables.png" />
 <p>These setting can be used alongside the Sequencer values, to specify exactly what is required for your project</p>
-</section>
-<section id="getting-layer-values">
-<h2>Getting Layer Values<a class="headerlink" href="#getting-layer-values" title="Permalink to this heading">¶</a></h2>
-<p>The Layer UID is the number displayed on the Sequencer. Sky Layers do not need a UID, as there can only ever be one.</p>
-<p>The number of the layer you are on is shown in the layer’s name, as you can see the image below has a layer 44.</p>
-<img alt="../_images/cloudlayernumber.png" src="../_images/cloudlayernumber.png" />
+<img alt="Image showing how to set different variables. Node (1) &quot;Set Cloud Keyframe Value&quot; is setting the precipitation Strength to 1.0. The trueSKY actor node (2) is being used as a target for two other nodes, (3) is a &quot;set&quot; node for &quot;precipitation threshold km&quot;, (4) is a &quot;set&quot; node for the max precipitation particles." src="../_images/exampleprecipitation.png" />
 </section>
 <section id="tools">
 <h2>Tools<a class="headerlink" href="#tools" title="Permalink to this heading">¶</a></h2>
-<p>There are Blueprint functions provided to test a scene for lightning and for rain. For lightning, the “Get Lightning” function will provide the start position, end position, colour and magnitude of any lightning present. A magnitude of 0 means there is no lightning present. Additionally, the “Get Precipitation Strength at Position” function will take a given position and return a float between 0.0 and 1.0, indicating the strength of the rain (or snow) at this position.</p>
-<img alt="../_images/LightningRainTest.png" src="../_images/LightningRainTest.png" />
-<p>Example of testing the weather conditions in blueprint.</p>
+<p>There are Blueprint functions provided to test a scene for lightning and for rain. For lightning, the “Get Lightning” function will provide the start position, end position, colour and magnitude of any lightning present. A magnitude of 0 means there is no lightning present. Additionally, the “Get Precipitation Strength at Position” function will take a given position and return a float between 0.0 and 1.0, indicating the strength of the rain (or snow) at this position. Below is an example of testing the weather conditions in blueprint.</p>
+<img alt="Image showing an Unreal blueprint setup to test if there is rain,lighting or both present at a specific location. The &quot;Event Tick&quot; node (1) calls the &quot;Get Lightning&quot; (2) node. (2) checks to see if there is lightning present on this game tick. This check is compared with the node &quot;Get Rain At Position&quot; (3), which takes in a floor object's position. Depending on the results of nodes (2) and (3), a different string is outputted with the &quot;Print String&quot; (4) node. For example, if only lightning is present, the string &quot;there is lightning&quot; will be outputted." src="../_images/LightningRainTest.png" />
 </section>
 <section id="queries">
 <h2>Queries<a class="headerlink" href="#queries" title="Permalink to this heading">¶</a></h2>
 <p>To test how much cloud (from 0 to 1) is at a specified point, use the function CloudPointTest. <strong>Note</strong>: The Query Id can be set to any integer value, but should differ from any Query Ids used in separate queries (or else they will be overwritten).</p>
-<img alt="../_images/CloudPointTest.png" src="../_images/CloudPointTest.png" />
+<img alt="Image showing the example usage of the Cloud Point Test Node. &quot;GetActorLocation&quot; Node is passing its value to the &quot;Cloud Point Test&quot; node. The Query ID in the example is 0." src="../_images/CloudPointTest.png" />
 <p><em>Sample usage of the Cloud Point Test functionality</em></p>
 <p>To test if there is cloud between two points, use CloudLineTest:</p>
-<img alt="../_images/CloudLineTest.png" src="../_images/CloudLineTest.png" />
+<img alt="Image showing an example for the Cloud Line Test Node. &quot;GetPlayerPawn&quot;node is used to get the actors location and rotation. The initial location is passed to the Start Position of the &quot;Cloud Line Test&quot; Node. The Rotation is used to get the foward vector, then multiply the vector by 35000. This is then added to the location value and passed in to the end position input of the &quot;Cloud Line Test&quot; node." src="../_images/CloudLineTest.png" />
 <p><em>Sample usage of the Cloud Line Test functionality</em></p>
 </section>
 <section id="managing-sequences">
 <h2>Managing Sequences<a class="headerlink" href="#managing-sequences" title="Permalink to this heading">¶</a></h2>
 <p>Though you can only set the active sequence in the editor, it is possible to change the sequence in use mid-game using Blueprint. To do this, create a reference to your TrueSkySequenceActor in Blueprint, then drag the output pin onto the canvas. In the Action List, search for and select “Set Active Sequence”. Repeat for as many sequences as you wish and connect them to relevant events.</p>
-<img alt="../_images/SetActiveSequence.png" src="../_images/SetActiveSequence.png" />
+<img alt="Image showing example unreal blueprints set up to change the active sequence depending on what button is pressed. The Node &quot;On 1 Pressed&quot; will set the active sequence to a clear day preset, &quot;On 2 Pressed&quot; will adjust the day to use a Snowy preset while &quot;On 3 Pressed&quot; will set the day to use a storm sequence preset." src="../_images/SetActiveSequence.png" />
 <p><em>Example of how to change the active trueSKY sequence at runtime in blueprint</em></p>
 <p>You can also get the active sequence in Blueprint. Similarly, just drag the output pin of your TrueSkySequence actor onto the canvas and search for and select “Get Active Sequence”. This will return the Sequence Asset in use.</p>
-<img alt="../_images/GetActiveSequence.png" src="../_images/GetActiveSequence.png" />
+<img alt="Image showing how to query the active trueSKY Sequence. From the trueSKYActor node, get the active sequence variable. This can then be compared to other sequences to see if the condition is true." src="../_images/GetActiveSequence.png" />
 <p><em>Example of how to query the active trueSKY sequence at runtime in blueprint</em></p>
 </section>
 <section id="measuring-performance">
 <h2>Measuring Performance<a class="headerlink" href="#measuring-performance" title="Permalink to this heading">¶</a></h2>
-<p>trueSKY has a built-in profiler for GPU and CPU performance. Use “Get Profiling Text” to obtain the values, with the inputs “cpu_level” and “gpu_level” to determine how far down the call tree to display.</p>
+<p>trueSKY has a built-in profiler for GPU and CPU performance. Use “Get Profiling Text” to obtain the values, with the inputs “cpu_level” and “gpu_level” to determine how far down the call tree to display. There is also a Get Simple Profiling Text, which will just return the overall CPU and GPU timings.</p>
 <p>The outputs are in milliseconds.</p>
-<img alt="../_images/GetProfilingText.png" src="../_images/GetProfilingText.png" />
+<img alt="An image showing how to get the profiling results from trueSKY in blueprint. Node &quot;Get Profiling Text&quot; should be triggered from an event node. The CPU and GPU levels are both 7. The return value is passed into a &quot;Print String&quot; node, for the engine to display." src="../_images/GetProfilingText.png" />
 <p><em>How to retrieve profiling text</em></p>
 </section>
 <section id="adding-and-removing-cloud-keyframes">
@@ -211,21 +204,21 @@
 <p>The blueprints require a cloud layer ID, which allows for keyframes to be created on any cloud layer within the given sequence. The Cloud Layer ID is passed in as an integer.</p>
 <p>We also allow for the input of a time variable (as a float) - allowing for creation of cloud keyframes at either a set time within the timeline or, via use adding a float to the current time value, create keyframes a set amount of time from the current time.
 The return value the blueprint node outputs is simply the newly created cloud keyframe Unique ID - allowing for easy referencing to the keyframe for altering the values via other blueprint setups (also at runtime).</p>
-<img alt="../_images/create_cloud_keyframe.png" src="../_images/create_cloud_keyframe.png" />
+<img alt="Image showing the &quot;Create Cloud Keyframe&quot; node recieving the variable &quot;Cloud Layer UID&quot; as an input for the &quot;Layer UID&quot; field. The time input is set to 0.5." src="../_images/create_cloud_keyframe.png" />
 <p><strong>Delete Cloud Keyframe</strong></p>
 <p>This node is rather simple, and allows you at runtime to delete any given keyframe. The only required information to delete the keyframe is its Unique ID. This can either be stored within a variable, or obtained via use of our other blueprints (see Get cloud layer ID -&gt; Get Cloud keyframe ID / Get next Editable Keyframe ID).</p>
 <p>This can be used to help control your scene further, and also help alleviate potential issues caused by the create cloud keyframe - as if two keyframes would be created too close to each other they may have a very fast interpolation , so setting up a “get next editable keyframe UID” - Deleting said keyframe via its UID and the Creating the new keyframe at your desired time would help alleviate the issue and get tighter control over the scene overall.</p>
-<img alt="../_images/Delete_Cloud_Keyframe.png" src="../_images/Delete_Cloud_Keyframe.png" />
+<img alt="Image showing the &quot;Delete Keyframe&quot; node being given a keyframe UID as an input." src="../_images/Delete_Cloud_Keyframe.png" />
 </section>
-<section id="adding-and-removing-cloudlayers">
-<h2>Adding and removing Cloudlayers<a class="headerlink" href="#adding-and-removing-cloudlayers" title="Permalink to this heading">¶</a></h2>
+<section id="adding-and-removing-cloud-layers">
+<h2>Adding and Removing Cloud Layers<a class="headerlink" href="#adding-and-removing-cloud-layers" title="Permalink to this heading">¶</a></h2>
 <p>This feature is a 4.3 specific feature. The blueprints will show up while using the 4.2a and 4.1b legacy versions, however are not supported (unlike the simpler adding cloud keyframe values)</p>
 <p><strong>Creating Cloud Layers</strong></p>
 <p>Creating a Cloud Layer works similarly as creating a cloud keyframe. The blueprint is also fairly simple, just pass through a “create cloud layer” node, and add a name by typing it into the “name” slot - alternatively feed in any kind of string to have that assigned as a name.</p>
 <p>The node outputs a Cloud Layer UID - which will allow for referencing of the layer for other blueprint functions, such as the create cloud keyframe node. Allowing you to create entirely new layers, and add in a new set of keyframes easily.</p>
 <p><strong>Deleting Cloud Layers</strong></p>
 <p>Deleting a cloud keyframe also mirrors the functionality of the delete cloud keyframe node - just requiring the Cloud layers Unique ID to be input - which will delete that layer in its entirety (including any keyframes that were featured within that cloud layer)</p>
-<img alt="../_images/Delete_Cloud_Layer.png" src="../_images/Delete_Cloud_Layer.png" />
+<img alt="Image showing the &quot;Delete Cloud Layer&quot; node being given a cloud layer UID as an input." src="../_images/Delete_Cloud_Layer.png" />
 </section>
 <section id="adding-map-textures-via-blueprints">
 <h2>Adding map textures via blueprints<a class="headerlink" href="#adding-map-textures-via-blueprints" title="Permalink to this heading">¶</a></h2>
@@ -243,7 +236,7 @@ The return value the blueprint node outputs is simply the newly created cloud ke
 <p><strong>Changing Map textures at runtime</strong></p>
 <p>The new node “Set Cloud Layer Map Texture by File Name” allows for adding a map texture to a cloud layer at runtime. It will require a cloud layer’s unique ID in order to function - which can be obtained by any of the “get cloud layer UID” blueprints, or alternatively by using the “Create new cloud layer” blueprint if using 4.3 or later versions of the plugin.</p>
 <p>You must then input the png file’s name which is located within the Content -&gt; trueSKY folder within your unreal engine project. Ensure that you are referencing the correct file with your string, however it is not case sensitive.</p>
-<img alt="../_images/CloudLayerMapTexture.png" src="../_images/CloudLayerMapTexture.png" />
+<img alt="Image showing how to specify a map texture for a cloud layer. The node &quot;Get Cloud Layer UID By Index&quot; (1) is taking in an index value of 0 and passing its result to the &quot;Set Cloud Layer Map Texture By File Name&quot; node (2). The PNGName specified in node (2) is &quot;image&quot;. File extensions are not needed." src="../_images/CloudLayerMapTexture.png" />
 </section>
 </section>
 
@@ -255,7 +248,7 @@ The return value the blueprint node outputs is simply the newly created cloud ke
         <a href="unrealmaterials.html" class="btn btn-neutral float-right" title="Unreal Materials with trueSKY" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
-  <hr/>
+  <hr>
 
   <div role="contentinfo">
     <p>&#169; Copyright 2007-2021, Simul Software Ltd.</p>

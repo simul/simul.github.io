@@ -3,7 +3,7 @@
 
 1: Access to Repository
 ----------------
-1. Make sure you have created a Simul account. If not, head over `here to register`_. 
+1. Make sure you have created a Simul account. If not, `click here to register`_. 
 
 2. On your `Account Page`_, there is a GitHub Username section. Input your GitHub Username and select Request Access. **This needs to be the same username connected to your Unreal Engine account at** https://www.unrealengine.com/account/connected 
 
@@ -11,7 +11,7 @@
 
 4. You should now have access to our Unreal Repo at https://github.com/simul/UnrealEngine.
 
-5. Fork or clone our Unreal Repository. If you are not sure how to do this, GitHub has helpful information `here`_. Alternatively, if you are using a different UE4 codebase, pull changes from the Simul fork, and merge.
+5. Fork or clone our Unreal Repository. If you are not sure how to do this, `GitHub has helpful information`_. Alternatively, if you are using a different UE4 codebase, pull changes from the Simul fork, and merge.
 
 2: Setup
 ----------
@@ -58,8 +58,8 @@ The following files in the UE source have been modified in the Simul fork of the
 * `Engine/Source/Programs/AutomationTool/PS4/PS4Platform.Automation.cs`
 * `Engine/Source/Programs/UnrealBuildTool/PS4/UEDeployPS4.cs`
 
-.. _here to register: https://simul.co/register/
-.. _here: https://help.github.com/en/articles/fork-a-repo
+.. _click here to register: https://simul.co/register/
+.. _GitHub has helpful information: https://help.github.com/en/articles/fork-a-repo
 .. _our downloads page: https://simul.co/downloads
 .. _Account Page: https://simul.co/account/edit-account/
 .. _Beyond Compare: https://www.scootersoftware.com
