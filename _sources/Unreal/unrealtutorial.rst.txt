@@ -20,12 +20,12 @@ Installing the Plugin
 2: Download the latest trueSKY plugin installer from https://simul.co/downloads. If you require a different engine version, scroll down to our archive of downloads. We always recommend the latest version of trueSKY. 
 
 .. image:: /../Help/images/unreal/download.png
-   :alt: Image showing the web page simul.co/downloads, with two buttons to download the latest trueSKY plugin for Unreal Engine and unity respectively.
+   :alt: The webpage has two buttons to download the latest trueSKY plugin for Unity or Unreal
 
 3: Run the trueSKY plugin installer, ensuring that you select your Unreal project directory as the installation location. After the installation process is complete, the plugin should be installed into your project. For Unreal version before 5.0, you must instead specify the Unreal engine directory. If you make an error with the directory, the wizard will show a warning.
 
 .. image:: /../Help/images/unreal/wizard.png
-   :alt: Image showing the trueSKY Installation Wizard requiring a specified Unreal project directory to install the plugin into. The example directory used is C:\Unreal\Projects\Test5_1.
+   :alt: The trueSKY Installation Wizard requiring a specified Unreal project directory to install the plugin into.
 
 
 Running the binary plugin
@@ -33,15 +33,15 @@ Running the binary plugin
 
 1: Launch the Unreal project you installed the plugin into.
 
-2: Click 'Edit -> Plugins' from the dropdown menu at the top of the window.
+2: Click 'Edit -> Plugins' from the drop-down menu at the top of the window.
 
 .. image:: /../Help/images/unreal/pluginwindow.png
-   :alt: Image showing the Edit drop-down menu in Unreal Engine, showing the button to launch the Plugins window.
+   :alt: Unreal Engine's edit menu with the Plugin option highlighted
 
 3: A new 'Plugins' window will appear. Use the search box to find 'trueSKY'.
 
 .. image:: /../Help/images/unreal/pluginwindow2.png
-   :alt: Image showing the plugin window, which is a list of installed plugins in the project. trueSKY should be visible and tick box labelled enabled should be ticked.
+   :alt: trueSKY should be visible and enabled in the plugin window.
 
 4: Make sure trueSKY is enabled with the small tick box. If it is not, enable it. This will require you to restart Unreal.
 
@@ -54,12 +54,12 @@ Adding trueSKY to the level
 1: Click 'Tools -> initialize trueSKY' from the bottom of the drop-down menu. For Unreal versions prior to 5.0, this is located in the 'Windows' drop-down menu. 
 
 .. image:: /../Help/images/unreal/windowdropdown.png
-   :alt: Image showing the Tool drop-down menu in Unreal Engine, with the 'initialize trueSKY...' option highlighted.
+   :alt: Tool drop-down menu in Unreal Engine with 'initialize trueSKY' option highlighted.
 
 2: A pop-up window will appear. Please review the options and then select 'Next' when you are ready. You can then either click initialize to allow trueSKY to set itself up with the recommended defaults, or you can click next to customise the initialization. If you clicked initialize, you can jump to step 4.
 
 .. image:: /../Help/images/unreal/enginewizard.png
-   :alt: Image showing trueSKY's in-engine setup wizard. There are 5 options, (1) Delete Height Fog Actors, (2) Delete Unreal's Sky effects that can hide trueSKY,  (3) Modify Post Process in Scene. If not found or unticked, one will be created, (4) Create a trueSKYLIGht and delete other Skylights, (5) Create a new directional light that applies to moonlight. Only tick box 5 is disabled by default. 
+   :alt: The first page of trueSKY's in-engine setup wizard.
 
 3: Select an initial sequence asset. This can be changed at any time. There will be a list of many different presets, our recommended default preset is the 'Cumulus' sequence asset.
 
@@ -76,14 +76,14 @@ Creating a new Sequence
 2: Click on "Miscellaneous -> trueSKY Sequence Asset" to create a new sequence. It can be renamed/saved/moved/deleted to your preference.
 
 .. image:: /../Help/images/unreal/addsequence.png
-   :alt: Image showing the 'new' menu in Unreal's Content window. To add a trueSKY Sequence Actor, you must select the 'Miscellaneous' Advanced Asset Section, then scroll to the bottom.
+   :alt: To add a trueSKY Sequence,select 'Miscellaneous' from the Advanced Asset Section.
 
 3: To make this new sequence the active sequence in the world, select trueSkySequenceActor in the outliner, then in the details section, search for 'Active Sequence'
 
 4: You can either manually select your sequence from the drop-down next to active sequence, or you can drag and drop your preferred sequence from the content browser to the active sequence box. You can also make a new trueSKY Sequence from this menu.
 
 .. image:: /../Help/images/unreal/activesequence.png
-   :alt: Image showing how to adjust the current sequence by selecting the 'Active Sequence' drop-down menu on the true Sky Actor. 
+   :alt: Adjust the current sequence by selecting the 'Active Sequence' option on the trueSKY Actor. 
 
 
 Now you are almost ready to start creating amazing environments with trueSKY, you just need to activate your license within the sequencer. Head over :doc:`here to learn how <../Tutorials/Sequencer/sequenceroverview>`.

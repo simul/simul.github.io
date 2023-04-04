@@ -10,7 +10,7 @@ Getting Values from trueSKY Actor
 You can edit any of the variables present in the keyframes, layers or attached to the trueSKY Actor. To access these nodes, we have split our variables based on their location. For example, if you want to edit a value on a cloud keyframe, you would use the SetCloudKeyframeValue blueprint node. There is also a correlating GetCloudKeyframeValue for retrieving data
 
 .. image:: /../Help/images/unreal/getsetblueprint.png
-   :alt: Image showing the Blueprint steps required to increase the cloudiness of a specified keyframe. The Event BeginPlay node (1) is connected to a node "get cloudkeyframe uid by index" (2). The return value of this node is connected to the "UID" inputs of nodes "Get Cloud Keyframe Value" (3) and "Set Cloud Keyframe Value" (4), which are connected in sequence from node (2). The return value of (3) goes through a multiplication node (5), which multiplies the value by 1.5, and sends the value to node (4)'s "Float Value" input.
+   :alt: Blueprint setup to increase the cloudiness of a specified keyframe.
 
 From the image above, Property is the value that you want to change, which is selected using the drop-down. For the keyframe nodes, a Keyframe Unique Identifier (UID) is needed to access the correct keyframe. You can get this by manually going to your keyframe and looking for the UID at the top of the details panel, or there are multiple blueprint nodes available to help you select the correct keyframe.
 
@@ -60,19 +60,19 @@ The Nodes have been streamlined to output the correct of data type. Make sure yo
 For example, to adjust the cloudiness of a scene via blueprints, you would use the blueprints in the image below.
 
 .. image:: /../Help/images/unreal/exampleincreasecloudiness.png
-  :alt: Image showing blueprint steps to set the cloudiness of a specified cloud keyframe when a button is pressed. The "On key pressed" node (1) is connected to the node "Get Cloud Layer UID by Index" (2), which has the default value of 0 passed into the index. The return value is connected to Layer value of the node "Get Cloud Keyframe UID by Index" (3), which has the default value of 0 for the index field. The return value of (3) is then passed into the UID field of "Set Cloud Keyframe Value" (4). The values on node (4) have been set so the property field is "Cloudiness" and the float value is 0.8.
+  :alt: Blueprint setup to set the cloudiness of a specified cloud keyframe when a button is pressed.
 
 Of course, this relies on you have a layer and keyframe already. You can also create Cloud layers and Keyframes at runtime via blueprints.
 
 .. image:: /../Help/images/unreal/examplecreatelayerandkeyframe.png
-   :alt: Image showing blueprint steps to create a cloud keyframe with a specified cloudiness when a button is pressed. The "On key pressed" node (1) is connected to the node "Create Cloud Layer" (2), and the name "Layer 1" is given in the name input field. The return value is connected to Layer UID value of the node "Create Cloud Keyframe" (3), which has a value of 0.5 for the time field. The return value of (3) is then passed into the UID field of "Set Cloud Keyframe Value" (4). The values on node (4) have been set so the property field is "Cloudiness" and the float value is 0.8.
+   :alt: Blueprint setup to create a cloud keyframe with a specified cloudiness when a button is pressed.
 
 Be aware that when creating keyframes, you must pass your keyframe time values in 'trueSKY Time'. trueSKY manages each day in the range of 0-1. For example, mid-day of the first day would be 0.5, and mid-day of the second would be 1.5. We also have helper functions, timeToTrueSKYTime and trueSKYTimeToTime. 
 
 Every sequence starts with a Sky layer that cannot be removed, and no more sky layers can be added, so you do not need to create or get a reference to a Sky layer. Editing a Sky Keyframe is almost identical to editing a cloud keyframe, and has the same blueprints to get access to the UID of the keyframe.
 
 .. image:: /../Help/images/unreal/exampleskyfog.png
-   :alt: Image showing the different blueprint nodes available to get the Sky Keyframe UID. The nodes shown are - Get Sky Keyframe UID By Index (1), Get Next Sky keyframe UID After Set Time (2), Get Previous Sky Keyframe UId before Set Time (3),Get Next Modifiable Sky Keyframe UID (4), Create Sky Keyframe (5). In the example, node (1) is passing the returned UID to the Set Sky Keyframe Value node (6), which is setting the Haze variable to 100. 
+   :alt: The different blueprint nodes available to get the Sky Keyframe UID.
 
 
 Get/Set Values on the trueSKYActor
@@ -80,17 +80,17 @@ Get/Set Values on the trueSKYActor
 To Get/Set these values, just create a reference of the trueSky Actor, as all the variables have been made public. To make a reference, make sure the actor is selected in the world view, and context sensitive option is ticked.
 
 .. image:: /../Help/images/unreal/createactorreference.png
-   :alt: Image showing how to create a reference to the trueSky Actor. An option to "Create a Reference to TrueSkyActor" will be available in the actions menu. 
+   :alt: An option to "Create a Reference to TrueSkyActor" will be available in the actions menu.
 
 As shown below, you can see there is a list of all the editable variables, organised the same was as they are on the actor.
 
 .. image:: /../Help/images/unreal/actorvariables.png
-   :alt: Image showing the drop-down menu of all context sensitive options from the trueSky Actor. The Noise options have been highlighted as an example.
+   :alt: Drop-down menu of all context sensitive options from the trueSky Actor.
 
 These setting can be used alongside the Sequencer values, to specify exactly what is required for your project
 
 .. image:: /../Help/images/unreal/exampleprecipitation.png
-   :alt: Image showing how to set different variables. Node (1) "Set Cloud Keyframe Value" is setting the precipitation Strength to 1.0. The trueSKY actor node (2) is being used as a target for two other nodes, (3) is a "set" node for "precipitation threshold km", (4) is a "set" node for the max precipitation particles.
+   :alt: Keyframe and Layer variables need to use their respective nodes to get/set. 
 
 Tools
 --------
@@ -98,7 +98,7 @@ Tools
 There are Blueprint functions provided to test a scene for lightning and for rain. For lightning, the "Get Lightning" function will provide the start position, end position, colour and magnitude of any lightning present. A magnitude of 0 means there is no lightning present. Additionally, the "Get Precipitation Strength at Position" function will take a given position and return a float between 0.0 and 1.0, indicating the strength of the rain (or snow) at this position. Below is an example of testing the weather conditions in blueprint.
 
 .. image:: /../Help/images/unreal/LightningRainTest.png
-   :alt: Image showing an Unreal blueprint setup to test if there is rain,lighting or both present at a specific location. The "Event Tick" node (1) calls the "Get Lightning" (2) node. (2) checks to see if there is lightning present on this game tick. This check is compared with the node "Get Rain At Position" (3), which takes in a floor object's position. Depending on the results of nodes (2) and (3), a different string is outputted with the "Print String" (4) node. For example, if only lightning is present, the string "there is lightning" will be outputted.
+   :alt: Unreal blueprint setup to test if rain, lighting or both are present at a specific location.
 
 
 Queries
@@ -107,14 +107,14 @@ Queries
 To test how much cloud (from 0 to 1) is at a specified point, use the function CloudPointTest. **Note**: The Query Id can be set to any integer value, but should differ from any Query Ids used in separate queries (or else they will be overwritten).
 
 .. image:: /../Help/images/unreal/CloudPointTest.png
-   :alt: Image showing the example usage of the Cloud Point Test Node. "GetActorLocation" Node is passing its value to the "Cloud Point Test" node. The Query ID in the example is 0.
+   :alt: Example usage of the Cloud Point Test Node.
 
 *Sample usage of the Cloud Point Test functionality*
 
 To test if there is cloud between two points, use CloudLineTest:
 
 .. image:: /../Help/images/unreal/CloudLineTest.png
-   :alt: Image showing an example for the Cloud Line Test Node. "GetPlayerPawn"node is used to get the actors location and rotation. The initial location is passed to the Start Position of the "Cloud Line Test" Node. The Rotation is used to get the foward vector, then multiply the vector by 35000. This is then added to the location value and passed in to the end position input of the "Cloud Line Test" node.
+   :alt: Example usage of the Cloud Line Test Node.
 
 *Sample usage of the Cloud Line Test functionality*
 
@@ -125,26 +125,26 @@ Managing Sequences
 Though you can only set the active sequence in the editor, it is possible to change the sequence in use mid-game using Blueprint. To do this, create a reference to your TrueSkySequenceActor in Blueprint, then drag the output pin onto the canvas. In the Action List, search for and select "Set Active Sequence". Repeat for as many sequences as you wish and connect them to relevant events. 
 
 .. image:: /../Help/images/unreal/SetActiveSequence.png
-   :alt: Image showing example unreal blueprints set up to change the active sequence depending on what button is pressed. The Node "On 1 Pressed" will set the active sequence to a clear day preset, "On 2 Pressed" will adjust the day to use a Snowy preset while "On 3 Pressed" will set the day to use a storm sequence preset.
+   :alt: Example unreal blueprints set up to change the active sequence depending on what button is pressed.
 
 *Example of how to change the active trueSKY sequence at runtime in blueprint*
 
 You can also get the active sequence in Blueprint. Similarly, just drag the output pin of your TrueSkySequence actor onto the canvas and search for and select "Get Active Sequence". This will return the Sequence Asset in use. 
 
 .. image:: /../Help/images/unreal/GetActiveSequence.png
-   :alt: Image showing how to query the active trueSKY Sequence. From the trueSKYActor node, get the active sequence variable. This can then be compared to other sequences to see if the condition is true. 
+   :alt: How to query the active trueSKY Sequence using blueprints.
 
 *Example of how to query the active trueSKY sequence at runtime in blueprint*
 
 Measuring Performance
 ----------------------
 
-trueSKY has a built-in profiler for GPU and CPU performance. Use "Get Profiling Text" to obtain the values, with the inputs "cpu_level" and "gpu_level" to determine how far down the call tree to display. There is also a Get Simple Profiling Text, which will just return the overall CPU and GPU timings.
+trueSKY has a built-in profiler for GPU and CPU performance. Use "Get Profiling Text" to obtain the values, with the inputs "cpu_level" and "gpu_level" to determine how far down the call tree to display. There is also a Get Simple Profiling Text, which will return the overall CPU and GPU timings instead of splitting up the timings.
 
 The outputs are in milliseconds.
 
 .. image:: /../Help/images/unreal/GetProfilingText.png
-   :alt: An image showing how to get the profiling results from trueSKY in blueprint. Node "Get Profiling Text" should be triggered from an event node. The CPU and GPU levels are both 7. The return value is passed into a "Print String" node, for the engine to display.
+   :alt: Example of how to use the profiling blueprint node.
 
 *How to retrieve profiling text*
 
@@ -164,7 +164,7 @@ We also allow for the input of a time variable (as a float) - allowing for creat
 The return value the blueprint node outputs is simply the newly created cloud keyframe Unique ID - allowing for easy referencing to the keyframe for altering the values via other blueprint setups (also at runtime).
 
 .. image:: /../Help/images/create_cloud_keyframe.png
-   :alt: Image showing the "Create Cloud Keyframe" node recieving the variable "Cloud Layer UID" as an input for the "Layer UID" field. The time input is set to 0.5.
+   :alt: Example blueprint for creating a new cloud keyframe
 
 
 **Delete Cloud Keyframe**
@@ -174,7 +174,7 @@ This node is rather simple, and allows you at runtime to delete any given keyfra
 This can be used to help control your scene further, and also help alleviate potential issues caused by the create cloud keyframe - as if two keyframes would be created too close to each other they may have a very fast interpolation , so setting up a "get next editable keyframe UID" - Deleting said keyframe via its UID and the Creating the new keyframe at your desired time would help alleviate the issue and get tighter control over the scene overall.
 
 .. image:: /../Help/images/Delete_Cloud_Keyframe.png
-   :alt: Image showing the "Delete Keyframe" node being given a keyframe UID as an input.
+   :alt: Example blueprint for the "Delete Keyframe" node.
 
 
 Adding and Removing Cloud Layers
@@ -199,7 +199,7 @@ Deleting a cloud keyframe also mirrors the functionality of the delete cloud key
 
 
 .. image:: /../Help/images/Delete_Cloud_Layer.png
-   :alt: Image showing the "Delete Cloud Layer" node being given a cloud layer UID as an input.
+   :alt: "Delete Cloud Layer" node being given a cloud layer UID as an input.
 
 Adding map textures via blueprints
 -----------------------------------
@@ -224,7 +224,7 @@ You must then input the png file's name which is located within the Content -> t
 
 
 .. image:: /../Help/images/CloudLayerMapTexture.png
-   :alt: Image showing how to specify a map texture for a cloud layer. The node "Get Cloud Layer UID By Index" (1) is taking in an index value of 0 and passing its result to the "Set Cloud Layer Map Texture By File Name" node (2). The PNGName specified in node (2) is "image". File extensions are not needed. 
+   :alt: How to specify a map texture for a cloud layer.
 
 
 .. _Unreal: https://docs.unrealengine.com/en-US/Engine/Blueprints/index.html

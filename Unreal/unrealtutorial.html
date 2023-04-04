@@ -123,26 +123,26 @@
 <h2>Installing the Plugin<a class="headerlink" href="#installing-the-plugin" title="Permalink to this heading">¶</a></h2>
 <p>1: Login to your account at <a class="reference external" href="https://simul.co/account">https://simul.co/account</a>. If you have not created an account yet, head over to <a class="reference internal" href="../installation.html"><span class="doc">installation home page</span></a> to get setup, as you cannot download trueSKY without an account.</p>
 <p>2: Download the latest trueSKY plugin installer from <a class="reference external" href="https://simul.co/downloads">https://simul.co/downloads</a>. If you require a different engine version, scroll down to our archive of downloads. We always recommend the latest version of trueSKY.</p>
-<img alt="Image showing the web page simul.co/downloads, with two buttons to download the latest trueSKY plugin for Unreal Engine and unity respectively." src="../_images/download.png" />
+<img alt="The webpage has two buttons to download the latest trueSKY plugin for Unity or Unreal" src="../_images/download.png" />
 <p>3: Run the trueSKY plugin installer, ensuring that you select your Unreal project directory as the installation location. After the installation process is complete, the plugin should be installed into your project. For Unreal version before 5.0, you must instead specify the Unreal engine directory. If you make an error with the directory, the wizard will show a warning.</p>
-<img alt="Image showing the trueSKY Installation Wizard requiring a specified Unreal project directory to install the plugin into. The example directory used is C:\Unreal\Projects\Test5_1." src="../_images/wizard.png" />
+<img alt="The trueSKY Installation Wizard requiring a specified Unreal project directory to install the plugin into." src="../_images/wizard.png" />
 </section>
 <section id="running-the-binary-plugin">
 <h2>Running the binary plugin<a class="headerlink" href="#running-the-binary-plugin" title="Permalink to this heading">¶</a></h2>
 <p>1: Launch the Unreal project you installed the plugin into.</p>
-<p>2: Click ‘Edit -&gt; Plugins’ from the dropdown menu at the top of the window.</p>
-<img alt="Image showing the Edit drop-down menu in Unreal Engine, showing the button to launch the Plugins window." src="../_images/pluginwindow.png" />
+<p>2: Click ‘Edit -&gt; Plugins’ from the drop-down menu at the top of the window.</p>
+<img alt="Unreal Engine's edit menu with the Plugin option highlighted" src="../_images/pluginwindow.png" />
 <p>3: A new ‘Plugins’ window will appear. Use the search box to find ‘trueSKY’.</p>
-<img alt="Image showing the plugin window, which is a list of installed plugins in the project. trueSKY should be visible and tick box labelled enabled should be ticked." src="../_images/pluginwindow2.png" />
+<img alt="trueSKY should be visible and enabled in the plugin window." src="../_images/pluginwindow2.png" />
 <p>4: Make sure trueSKY is enabled with the small tick box. If it is not, enable it. This will require you to restart Unreal.</p>
 <p>5: Once the plugin has been enabled, trueSKY is now ready to be used within the scene.</p>
 </section>
 <section id="adding-truesky-to-the-level">
 <h2>Adding trueSKY to the level<a class="headerlink" href="#adding-truesky-to-the-level" title="Permalink to this heading">¶</a></h2>
 <p>1: Click ‘Tools -&gt; initialize trueSKY’ from the bottom of the drop-down menu. For Unreal versions prior to 5.0, this is located in the ‘Windows’ drop-down menu.</p>
-<img alt="Image showing the Tool drop-down menu in Unreal Engine, with the 'initialize trueSKY...' option highlighted." src="../_images/windowdropdown.png" />
+<img alt="Tool drop-down menu in Unreal Engine with 'initialize trueSKY' option highlighted." src="../_images/windowdropdown.png" />
 <p>2: A pop-up window will appear. Please review the options and then select ‘Next’ when you are ready. You can then either click initialize to allow trueSKY to set itself up with the recommended defaults, or you can click next to customise the initialization. If you clicked initialize, you can jump to step 4.</p>
-<img alt="Image showing trueSKY's in-engine setup wizard. There are 5 options, (1) Delete Height Fog Actors, (2) Delete Unreal's Sky effects that can hide trueSKY,  (3) Modify Post Process in Scene. If not found or unticked, one will be created, (4) Create a trueSKYLIGht and delete other Skylights, (5) Create a new directional light that applies to moonlight. Only tick box 5 is disabled by default." src="../_images/enginewizard.png" />
+<img alt="The first page of trueSKY's in-engine setup wizard." src="../_images/enginewizard.png" />
 <p>3: Select an initial sequence asset. This can be changed at any time. There will be a list of many different presets, our recommended default preset is the ‘Cumulus’ sequence asset.</p>
 <p>4: Select a direction light which trueSKY will control, if you do not select one then a new directional light will be created.</p>
 <p>Once initialize is selected, you should see trueSKY appear in the scene! trueSKY is now initialized in your level, for large environments we recommend trueSKY should be within the persistent level.</p>
@@ -151,10 +151,10 @@
 <h2>Creating a new Sequence<a class="headerlink" href="#creating-a-new-sequence" title="Permalink to this heading">¶</a></h2>
 <p>1: Either select Add New at the top left of the content browser, or right click within the content window.</p>
 <p>2: Click on “Miscellaneous -&gt; trueSKY Sequence Asset” to create a new sequence. It can be renamed/saved/moved/deleted to your preference.</p>
-<img alt="Image showing the 'new' menu in Unreal's Content window. To add a trueSKY Sequence Actor, you must select the 'Miscellaneous' Advanced Asset Section, then scroll to the bottom." src="../_images/addsequence1.png" />
+<img alt="To add a trueSKY Sequence,select 'Miscellaneous' from the Advanced Asset Section." src="../_images/addsequence1.png" />
 <p>3: To make this new sequence the active sequence in the world, select trueSkySequenceActor in the outliner, then in the details section, search for ‘Active Sequence’</p>
 <p>4: You can either manually select your sequence from the drop-down next to active sequence, or you can drag and drop your preferred sequence from the content browser to the active sequence box. You can also make a new trueSKY Sequence from this menu.</p>
-<img alt="Image showing how to adjust the current sequence by selecting the 'Active Sequence' drop-down menu on the true Sky Actor." src="../_images/activesequence.png" />
+<img alt="Adjust the current sequence by selecting the 'Active Sequence' option on the trueSKY Actor." src="../_images/activesequence.png" />
 <p>Now you are almost ready to start creating amazing environments with trueSKY, you just need to activate your license within the sequencer. Head over <a class="reference internal" href="../Tutorials/Sequencer/sequenceroverview.html"><span class="doc">here to learn how</span></a>.</p>
 </section>
 </section>

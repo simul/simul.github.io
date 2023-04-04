@@ -109,7 +109,7 @@
   <section id="unreal-materials-with-truesky">
 <h1>Unreal Materials with trueSKY<a class="headerlink" href="#unreal-materials-with-truesky" title="Permalink to this heading">¶</a></h1>
 <p>Truesky provides several material functions that can be integrated with existing or new materials, to better integrate them within the present atmospherics systems.</p>
-<p>If you need a better understand of Unreals material system, there are a large number of <a href="#id1"><span class="problematic" id="id2">`tutorials available made by the Unreal Team`_</span></a>.</p>
+<p>If you need a better understand of Unreals material system, there are a large number of <a class="reference external" href="https://docs.unrealengine.com/4.27/en-US/RenderingAndGraphics/Materials/">tutorials available made by the Unreal Team</a>.</p>
 <section id="truesky-transparency">
 <h2>TrueSKY Transparency<a class="headerlink" href="#truesky-transparency" title="Permalink to this heading">¶</a></h2>
 <p>As ordering rendering between translucent objects and our translucent clouds can be difficult, the trueSKYTransparency material function is avaiblable, which can modify and calculate atmospheric effects on the material, as well as allow it to be occulded by clouds.</p>
@@ -129,8 +129,8 @@
 <section id="example">
 <h3>Example<a class="headerlink" href="#example" title="Permalink to this heading">¶</a></h3>
 <p>Here is a basic example of a translucent material within a scene. It will be occluded by clouds, and will be affected by both loss and inscatter the further away from the object the viewpoint will get.</p>
-<img alt="Image showing the blueprint setup required for a translucent material to interact with trueSKY. the &quot;trueSkyTransparency&quot; outputs a Loss, inscatter and opacity value. loss is miltiplied with the base colour of the material. Inscatter is applied as the emissive colour of the material. Opacity is multiplied by 0.95 and applied to the material's opacity." src="../_images/Transparency.png" />
-<img alt="Image showing a red translucent sphere surrounded by clouds, being affected by loss and isncatter." src="../_images/TransparencyObject.png" />
+<img alt="Blueprint setup required for a translucent material to interact with trueSKY." src="../_images/Transparency.png" />
+<img alt="A translucent sphere surrounded by clouds, being affected by loss and isncatter." src="../_images/TransparencyObject.png" />
 </section>
 </section>
 </section>

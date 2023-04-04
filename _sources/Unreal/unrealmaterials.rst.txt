@@ -29,9 +29,9 @@ Example
 Here is a basic example of a translucent material within a scene. It will be occluded by clouds, and will be affected by both loss and inscatter the further away from the object the viewpoint will get.
 
 .. image:: /../Help/images/unreal/Transparency.png
-	:alt: Image showing the blueprint setup required for a translucent material to interact with trueSKY. the "trueSkyTransparency" outputs a Loss, inscatter and opacity value. loss is miltiplied with the base colour of the material. Inscatter is applied as the emissive colour of the material. Opacity is multiplied by 0.95 and applied to the material's opacity.
+	:alt: Blueprint setup required for a translucent material to interact with trueSKY.
 
 .. image:: /../Help/images/unreal/TransparencyObject.png
-	:alt: Image showing a red translucent sphere surrounded by clouds, being affected by loss and isncatter.  
+	:alt: A translucent sphere surrounded by clouds, being affected by loss and isncatter.
 
-.. _here: https://docs.unrealengine.com/4.27/en-US/RenderingAndGraphics/Materials/
+.. _tutorials available made by the Unreal Team: https://docs.unrealengine.com/4.27/en-US/RenderingAndGraphics/Materials/

@@ -3,7 +3,7 @@
 
 1: Access to Repository
 ----------------
-1. Make sure you have created a Simul account. If not, `click here to register`_. 
+1. Make sure you have created a Simul account. If not, `register an account now`_. 
 
 2. On your `Account Page`_, there is a GitHub Username section. Input your GitHub Username and select Request Access. **This needs to be the same username connected to your Unreal Engine account at** https://www.unrealengine.com/account/connected 
 
@@ -58,7 +58,7 @@ The following files in the UE source have been modified in the Simul fork of the
 * `Engine/Source/Programs/AutomationTool/PS4/PS4Platform.Automation.cs`
 * `Engine/Source/Programs/UnrealBuildTool/PS4/UEDeployPS4.cs`
 
-.. _click here to register: https://simul.co/register/
+.. _register an account now: https://simul.co/register/
 .. _GitHub has helpful information: https://help.github.com/en/articles/fork-a-repo
 .. _our downloads page: https://simul.co/downloads
 .. _Account Page: https://simul.co/account/edit-account/
