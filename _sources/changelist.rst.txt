@@ -1,5 +1,7 @@
 Changelist 
 ========= 
+| **Mon 03 Apr** : Platform ptr includes docs theme.
+| **Mon 03 Apr** : Using platform_sphinx_theme for docs now.
 | **Wed 29 Mar** : SetExternaDynamicValues Update
 | **Tue 28 Mar** : Update ExternalDynamicValues structs.
 | **Mon 27 Mar** : Platform ptr.
@@ -98,5 +100,3 @@ Changelist
 | **Mon 28 Nov** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Mon 28 Nov** : Merge branch '4.3' of github.com:simul/Simul into 4.3_sync
 | **Fri 25 Nov** : Fixed PrecipitationRenderer for msaa screen size depth textures.
-| **Fri 25 Nov** : Platform ptr.
-| **Wed 23 Nov** : Using CombinedTauswortheSphericalRandom in RestrictedWorley. Fix cloud generation hardware mismatch.

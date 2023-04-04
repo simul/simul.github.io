@@ -7,14 +7,12 @@ Clouds
 
    Clouds/trueskyrenderer.rst
    Clouds/cloudrenderer.rst
-   Clouds/cloudlighting.rst
    Clouds/baseweatherrenderer.rst
    Clouds/baselightningrenderer.rst
    Clouds/basegpucloudgenerator.rst
    Clouds/precipitationrenderer.rst
    Clouds/environment.rst
    Clouds/skylight.rst
-   Clouds/globalweatherrenderer.rst
    Clouds/mixedresolutioncompositor.rst
    Clouds/tworesframebuffer.rst
 
@@ -31,4 +29,3 @@ Clouds
    Clouds/cloudkeyframer.rst
 
    Clouds/storm.rst
-   Clouds/lightningrenderinterfacestructs

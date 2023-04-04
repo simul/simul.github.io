@@ -3,3 +3,4 @@ Precipitation Renderer
 
 .. doxygenclass:: simul::clouds::PrecipitationRenderer
    :members:
+   :undoc-members:

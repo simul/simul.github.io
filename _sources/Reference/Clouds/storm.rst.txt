@@ -3,3 +3,16 @@ Storm
 
 .. doxygenstruct:: simul::clouds::Storm
    :members:
+   :undoc-members:
+.. doxygenstruct:: simul::clouds::LightningProperties
+   :members:
+   :undoc-members:
+.. doxygenstruct:: simul::clouds::Strike
+   :members:
+   :undoc-members:
+.. doxygenstruct:: simul::clouds::StrikeState
+   :members:
+   :undoc-members:
+.. doxygenstruct:: simul::clouds::ExportLightningStrike
+   :members:
+   :undoc-members:

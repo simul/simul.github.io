@@ -1,92 +1,50 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Base GPU Cloud Generator &mdash; Simul  documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
-    
-    <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
-    
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Precipitation Renderer" href="precipitationrenderer.html" />
     <link rel="prev" title="Base Lightning Renderer" href="baselightningrenderer.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
           
-            <a href="../../index.html" class="icon icon-home"> Simul
           
-
-          
-          </a>
-
-          
-            
-            
-          
-
-          
+			<a href="../../index.html"  class="" >
+				
+					<span class="sidebartitle">
+						Simul
+					</span>
+				
+			</a>
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
+    <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+        <label class="search-label" for="q">Search the documentation</label>
+        <input type="text" name="q" id="q" placeholder="Search..." aria-label="Search docs" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation and Setup</a></li>
@@ -106,14 +64,12 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../clouds.html">Clouds</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="trueskyrenderer.html">True Sky Renderer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cloudrenderer.html">Cloud Renderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cloudlighting.html">Cloud Lighting</a></li>
 <li class="toctree-l3"><a class="reference internal" href="baseweatherrenderer.html">Base Weather Renderer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="baselightningrenderer.html">Base Lightning Renderer</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Base GPU Cloud Generator</a></li>
 <li class="toctree-l3"><a class="reference internal" href="precipitationrenderer.html">Precipitation Renderer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="environment.html">Environment</a></li>
 <li class="toctree-l3"><a class="reference internal" href="skylight.html">Skylight</a></li>
-<li class="toctree-l3"><a class="reference internal" href="globalweatherrenderer.html">Global Weather Renderer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mixedresolutioncompositor.html">Mixed Resolution Compositor</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tworesframebuffer.html">Two Res Frambuffer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cellularcloudgrid.html">Cellular Cloud Grid</a></li>
@@ -126,7 +82,6 @@
 <li class="toctree-l3"><a class="reference internal" href="cloudkeyframe.html">Cloud Keyframe</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cloudkeyframer.html">Cloud Keyframer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="storm.html">Storm</a></li>
-<li class="toctree-l3"><a class="reference internal" href="lightningrenderinterfacestructs.html">Lightning Render Interface Structs</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../sky.html">Sky</a></li>
@@ -137,88 +92,101 @@
 <li class="toctree-l1"><a class="reference internal" href="../../changelist.html">Changelist</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+		<h2 class="wy-nav-top">Navigation</h2><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">Simul</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-        
-          <li><a href="../referenceindex.html">Reference</a> &raquo;</li>
-        
-          <li><a href="../clouds.html">Clouds</a> &raquo;</li>
-        
-      <li>Base GPU Cloud Generator</li>
-    
-    
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../referenceindex.html">Reference</a></li>
+          <li class="breadcrumb-item"><a href="../clouds.html">Clouds</a></li>
+      <li class="breadcrumb-item active">Base GPU Cloud Generator</li>
       <li class="wy-breadcrumbs-aside">
-        
-          
             <a href="../../_sources/Reference/Clouds/basegpucloudgenerator.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="base-gpu-cloud-generator">
-<h1>Base GPU Cloud Generator<a class="headerlink" href="#base-gpu-cloud-generator" title="Permalink to this headline">¶</a></h1>
+             
+  <section id="base-gpu-cloud-generator">
+<h1>Base GPU Cloud Generator<a class="headerlink" href="#base-gpu-cloud-generator" title="Permalink to this heading">¶</a></h1>
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21BaseGpuCloudGeneratorE">
-<span id="_CPPv3N5simul6clouds21BaseGpuCloudGeneratorE"></span><span id="_CPPv2N5simul6clouds21BaseGpuCloudGeneratorE"></span><span id="simul::clouds::BaseGpuCloudGenerator"></span><span class="target" id="classsimul_1_1clouds_1_1_base_gpu_cloud_generator"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">clouds</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">BaseGpuCloudGenerator</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21BaseGpuCloudGeneratorE" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv3N5simul6clouds21BaseGpuCloudGeneratorE"></span><span id="_CPPv2N5simul6clouds21BaseGpuCloudGeneratorE"></span><span id="simul::clouds::BaseGpuCloudGenerator"></span><span class="target" id="classsimul_1_1clouds_1_1_base_gpu_cloud_generator"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BaseGpuCloudGenerator</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21BaseGpuCloudGeneratorE" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Base class for generating cloud volumes on the GPU. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21BaseGpuCloudGenerator21BaseGpuCloudGeneratorEv">
+<span id="_CPPv3N5simul6clouds21BaseGpuCloudGenerator21BaseGpuCloudGeneratorEv"></span><span id="_CPPv2N5simul6clouds21BaseGpuCloudGenerator21BaseGpuCloudGeneratorEv"></span><span id="simul::clouds::BaseGpuCloudGenerator::BaseGpuCloudGenerator"></span><span class="target" id="classsimul_1_1clouds_1_1_base_gpu_cloud_generator_1ac50c008058699e4c3322e54f8d465284"></span><span class="sig-name descname"><span class="n"><span class="pre">BaseGpuCloudGenerator</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds21BaseGpuCloudGenerator21BaseGpuCloudGeneratorEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21BaseGpuCloudGeneratorD0Ev">
+<span id="_CPPv3N5simul6clouds21BaseGpuCloudGeneratorD0Ev"></span><span id="_CPPv2N5simul6clouds21BaseGpuCloudGeneratorD0Ev"></span><span id="simul::clouds::BaseGpuCloudGenerator::~BaseGpuCloudGenerator"></span><span class="target" id="classsimul_1_1clouds_1_1_base_gpu_cloud_generator_1afaf651efdb44a7b9b6275fa2070dd4ef"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~BaseGpuCloudGenerator</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds21BaseGpuCloudGeneratorD0Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21BaseGpuCloudGenerator17SetLightingMethodE14LightingMethod">
+<span id="_CPPv3N5simul6clouds21BaseGpuCloudGenerator17SetLightingMethodE14LightingMethod"></span><span id="_CPPv2N5simul6clouds21BaseGpuCloudGenerator17SetLightingMethodE14LightingMethod"></span><span id="simul::clouds::BaseGpuCloudGenerator::SetLightingMethod__LightingMethod"></span><span class="target" id="classsimul_1_1clouds_1_1_base_gpu_cloud_generator_1a0c3186249fe6f96fc8157d23c921ddac"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetLightingMethod</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">LightingMethod</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">h</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds21BaseGpuCloudGenerator17SetLightingMethodE14LightingMethod" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21BaseGpuCloudGenerator27SetIntegerPseudorandomNoiseEb">
+<span id="_CPPv3N5simul6clouds21BaseGpuCloudGenerator27SetIntegerPseudorandomNoiseEb"></span><span id="_CPPv2N5simul6clouds21BaseGpuCloudGenerator27SetIntegerPseudorandomNoiseEb"></span><span id="simul::clouds::BaseGpuCloudGenerator::SetIntegerPseudorandomNoise__b"></span><span class="target" id="classsimul_1_1clouds_1_1_base_gpu_cloud_generator_1a7a1fb9224770e58587b2716d1c1762fc"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetIntegerPseudorandomNoise</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">b</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds21BaseGpuCloudGenerator27SetIntegerPseudorandomNoiseEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="classsimul_1_1clouds_1_1_base_gpu_cloud_generator_1abc40358d9e3b47750cd90944e333ba20"></span><span class="sig-name descname"><span class="pre">META_BeginProperties</span> <span class="pre">META_Property</span> <span class="pre">(bool,</span> <span class="pre">Enabled,&quot;Whether</span> <span class="pre">this</span> <span class="pre">GPU</span> <span class="pre">cloud</span> <span class="pre">generator</span> <span class="pre">should</span> <span class="pre">be</span> <span class="pre">used</span> <span class="pre">to</span> <span class="pre">calculate</span> <span class="pre">the</span> <span class="pre">clouds.&quot;)</span> <span class="pre">META_EndProperties</span> <span class="pre">void</span> <span class="pre">ResetChecksums()</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21BaseGpuCloudGenerator24SetCloudPlacementTextureEiPN13crossplatform7TextureE4vec24vec2">
+<span id="_CPPv3N5simul6clouds21BaseGpuCloudGenerator24SetCloudPlacementTextureEiPN13crossplatform7TextureE4vec24vec2"></span><span id="_CPPv2N5simul6clouds21BaseGpuCloudGenerator24SetCloudPlacementTextureEiPN13crossplatform7TextureE4vec24vec2"></span><span id="simul::clouds::BaseGpuCloudGenerator::SetCloudPlacementTexture__i.crossplatform::TextureP.vec2.vec2"></span><span class="target" id="classsimul_1_1clouds_1_1_base_gpu_cloud_generator_1a9dfca7eeccf4a3f4e5205741a10426e1"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetCloudPlacementTexture</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span>, <span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Texture</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">t</span></span>, <span class="n"><span class="pre">vec2</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">pos_km</span></span>, <span class="n"><span class="pre">vec2</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">ext_km</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds21BaseGpuCloudGenerator24SetCloudPlacementTextureEiPN13crossplatform7TextureE4vec24vec2" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21BaseGpuCloudGenerator15SetTextureCycleEi">
+<span id="_CPPv3N5simul6clouds21BaseGpuCloudGenerator15SetTextureCycleEi"></span><span id="_CPPv2N5simul6clouds21BaseGpuCloudGenerator15SetTextureCycleEi"></span><span id="simul::clouds::BaseGpuCloudGenerator::SetTextureCycle__i"></span><span class="target" id="classsimul_1_1clouds_1_1_base_gpu_cloud_generator_1a414bb3aad7d1e10a7b1cc33c8dfda4aa"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetTextureCycle</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">c</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds21BaseGpuCloudGenerator15SetTextureCycleEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21BaseGpuCloudGenerator20RestoreDeviceObjectsEPN13crossplatform14RenderPlatformE">
+<span id="_CPPv3N5simul6clouds21BaseGpuCloudGenerator20RestoreDeviceObjectsEPN13crossplatform14RenderPlatformE"></span><span id="_CPPv2N5simul6clouds21BaseGpuCloudGenerator20RestoreDeviceObjectsEPN13crossplatform14RenderPlatformE"></span><span id="simul::clouds::BaseGpuCloudGenerator::RestoreDeviceObjects__crossplatform::RenderPlatformP"></span><span class="target" id="classsimul_1_1clouds_1_1_base_gpu_cloud_generator_1a60c4d2fd785c78b5e8cf453e441baed1"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RestoreDeviceObjects</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">RenderPlatform</span></span><span class="p"><span class="pre">*</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds21BaseGpuCloudGenerator20RestoreDeviceObjectsEPN13crossplatform14RenderPlatformE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21BaseGpuCloudGenerator23InvalidateDeviceObjectsEv">
+<span id="_CPPv3N5simul6clouds21BaseGpuCloudGenerator23InvalidateDeviceObjectsEv"></span><span id="_CPPv2N5simul6clouds21BaseGpuCloudGenerator23InvalidateDeviceObjectsEv"></span><span id="simul::clouds::BaseGpuCloudGenerator::InvalidateDeviceObjects"></span><span class="target" id="classsimul_1_1clouds_1_1_base_gpu_cloud_generator_1ac701b3697d50c17901acb59e1a5ae538"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">InvalidateDeviceObjects</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds21BaseGpuCloudGenerator23InvalidateDeviceObjectsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21BaseGpuCloudGenerator16RecompileShadersEv">
+<span id="_CPPv3N5simul6clouds21BaseGpuCloudGenerator16RecompileShadersEv"></span><span id="_CPPv2N5simul6clouds21BaseGpuCloudGenerator16RecompileShadersEv"></span><span id="simul::clouds::BaseGpuCloudGenerator::RecompileShaders"></span><span class="target" id="classsimul_1_1clouds_1_1_base_gpu_cloud_generator_1aca2be67d5eafffc57c9501f9fadf74bf"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RecompileShaders</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds21BaseGpuCloudGenerator16RecompileShadersEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds21BaseGpuCloudGenerator21CanPerformGPULightingEv">
 <span id="_CPPv3NK5simul6clouds21BaseGpuCloudGenerator21CanPerformGPULightingEv"></span><span id="_CPPv2NK5simul6clouds21BaseGpuCloudGenerator21CanPerformGPULightingEv"></span><span id="simul::clouds::BaseGpuCloudGenerator::CanPerformGPULightingC"></span><span class="target" id="classsimul_1_1clouds_1_1_base_gpu_cloud_generator_1ada6f9f0a6ca9abda788e19c2ae5a374c"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CanPerformGPULighting</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds21BaseGpuCloudGenerator21CanPerformGPULightingEv" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Return true if the derived class can relight clouds using the GPU. </p>
 </dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21BaseGpuCloudGenerator6UpdateERN13crossplatform13DeviceContextEiRKN6clouds19GpuCloudsParametersEAL3E_PN13crossplatform7TextureEAL3E_9FillState10CloudClass">
+<span id="_CPPv3N5simul6clouds21BaseGpuCloudGenerator6UpdateERN13crossplatform13DeviceContextEiRKN6clouds19GpuCloudsParametersEAL3E_PN13crossplatform7TextureEAL3E_9FillState10CloudClass"></span><span id="_CPPv2N5simul6clouds21BaseGpuCloudGenerator6UpdateERN13crossplatform13DeviceContextEiRKN6clouds19GpuCloudsParametersEA3_PN13crossplatform7TextureEA3_9FillState10CloudClass"></span><span id="simul::clouds::BaseGpuCloudGenerator::Update__crossplatform::DeviceContextR.i.clouds::GpuCloudsParametersCR.crossplatform::TexturePA.FillStateA.CloudClass"></span><span class="target" id="classsimul_1_1clouds_1_1_base_gpu_cloud_generator_1ad093fa4a08fa294f0396bcc2b967ad62"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Update</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">DeviceContext</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">deviceContext</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">cycled_index</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">clouds</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N5simul6clouds19GpuCloudsParametersE" title="simul::clouds::GpuCloudsParameters"><span class="n"><span class="pre">GpuCloudsParameters</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">params</span></span>, <span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Texture</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">finalTexture</span></span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">3</span></span><span class="p"><span class="pre">]</span></span>, <span class="n"><span class="pre">FillState</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">fillStates</span></span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">3</span></span><span class="p"><span class="pre">]</span></span>, <span class="n"><span class="pre">CloudClass</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">cloudClass</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds21BaseGpuCloudGenerator6UpdateERN13crossplatform13DeviceContextEiRKN6clouds19GpuCloudsParametersEAL3E_PN13crossplatform7TextureEAL3E_9FillState10CloudClass" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21BaseGpuCloudGenerator18GetDensityGridsizeEPKi">
@@ -244,62 +212,203 @@
 <dd><p>For onscreen debug. </p>
 </dd></dl>
 
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21BaseGpuCloudGenerator20GetOpticalPathLengthEiPKfPKfPKf">
+<span id="_CPPv3N5simul6clouds21BaseGpuCloudGenerator20GetOpticalPathLengthEiPKfPKfPKf"></span><span id="_CPPv2N5simul6clouds21BaseGpuCloudGenerator20GetOpticalPathLengthEiPKfPKfPKf"></span><span id="simul::clouds::BaseGpuCloudGenerator::GetOpticalPathLength__i.floatCP.floatCP.floatCP"></span><span class="target" id="classsimul_1_1clouds_1_1_base_gpu_cloud_generator_1ad67b109d6b46855e1adc10c203695dbf"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetOpticalPathLength</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="p"><span class="pre">*</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="p"><span class="pre">*</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="p"><span class="pre">*</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds21BaseGpuCloudGenerator20GetOpticalPathLengthEiPKfPKfPKf" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21BaseGpuCloudGenerator16SetWorleyTextureEPN13crossplatform7TextureE">
+<span id="_CPPv3N5simul6clouds21BaseGpuCloudGenerator16SetWorleyTextureEPN13crossplatform7TextureE"></span><span id="_CPPv2N5simul6clouds21BaseGpuCloudGenerator16SetWorleyTextureEPN13crossplatform7TextureE"></span><span id="simul::clouds::BaseGpuCloudGenerator::SetWorleyTexture__crossplatform::TextureP"></span><span class="target" id="classsimul_1_1clouds_1_1_base_gpu_cloud_generator_1a1cfff65f481893b6c541d3297e8197b7"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetWorleyTexture</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Texture</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">t</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds21BaseGpuCloudGenerator16SetWorleyTextureEPN13crossplatform7TextureE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
 </div>
 </dd></dl>
 
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19GpuCloudsParametersE">
 <span id="_CPPv3N5simul6clouds19GpuCloudsParametersE"></span><span id="_CPPv2N5simul6clouds19GpuCloudsParametersE"></span><span id="simul::clouds::GpuCloudsParameters"></span><span class="target" id="structsimul_1_1clouds_1_1_gpu_clouds_parameters"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GpuCloudsParameters</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19GpuCloudsParametersE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19GpuCloudsParameters12density_gridE">
+<span id="_CPPv3N5simul6clouds19GpuCloudsParameters12density_gridE"></span><span id="_CPPv2N5simul6clouds19GpuCloudsParameters12density_gridE"></span><span id="simul::clouds::GpuCloudsParameters::density_grid__int3"></span><span class="target" id="structsimul_1_1clouds_1_1_gpu_clouds_parameters_1a65c531af01b690f5f598dd87ba5c8497"></span><span class="n"><span class="pre">int3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">density_grid</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19GpuCloudsParameters12density_gridE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19GpuCloudsParameters10light_gridE">
+<span id="_CPPv3N5simul6clouds19GpuCloudsParameters10light_gridE"></span><span id="_CPPv2N5simul6clouds19GpuCloudsParameters10light_gridE"></span><span id="simul::clouds::GpuCloudsParameters::light_grid__int3"></span><span class="target" id="structsimul_1_1clouds_1_1_gpu_clouds_parameters_1a903014a8d544ccd4a9e55724956d8a7f"></span><span class="n"><span class="pre">int3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">light_grid</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19GpuCloudsParameters10light_gridE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19GpuCloudsParameters8humidityE">
+<span id="_CPPv3N5simul6clouds19GpuCloudsParameters8humidityE"></span><span id="_CPPv2N5simul6clouds19GpuCloudsParameters8humidityE"></span><span id="simul::clouds::GpuCloudsParameters::humidity__float"></span><span class="target" id="structsimul_1_1clouds_1_1_gpu_clouds_parameters_1a285882e962c12977dce417e32b58d374"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">humidity</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19GpuCloudsParameters8humidityE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19GpuCloudsParameters9baseLayerE">
+<span id="_CPPv3N5simul6clouds19GpuCloudsParameters9baseLayerE"></span><span id="_CPPv2N5simul6clouds19GpuCloudsParameters9baseLayerE"></span><span id="simul::clouds::GpuCloudsParameters::baseLayer__float"></span><span class="target" id="structsimul_1_1clouds_1_1_gpu_clouds_parameters_1ad198a348aede452029cde7e66a749676"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">baseLayer</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19GpuCloudsParameters9baseLayerE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19GpuCloudsParameters10transitionE">
+<span id="_CPPv3N5simul6clouds19GpuCloudsParameters10transitionE"></span><span id="_CPPv2N5simul6clouds19GpuCloudsParameters10transitionE"></span><span id="simul::clouds::GpuCloudsParameters::transition__float"></span><span class="target" id="structsimul_1_1clouds_1_1_gpu_clouds_parameters_1a4a77be5ec9bb8e474de6a133d55ecba3"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">transition</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19GpuCloudsParameters10transitionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19GpuCloudsParameters12upperDensityE">
+<span id="_CPPv3N5simul6clouds19GpuCloudsParameters12upperDensityE"></span><span id="_CPPv2N5simul6clouds19GpuCloudsParameters12upperDensityE"></span><span id="simul::clouds::GpuCloudsParameters::upperDensity__float"></span><span class="target" id="structsimul_1_1clouds_1_1_gpu_clouds_parameters_1aff6ce64186c9b31b2849c972915ef101"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">upperDensity</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19GpuCloudsParameters12upperDensityE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19GpuCloudsParameters11diffusivityE">
+<span id="_CPPv3N5simul6clouds19GpuCloudsParameters11diffusivityE"></span><span id="_CPPv2N5simul6clouds19GpuCloudsParameters11diffusivityE"></span><span id="simul::clouds::GpuCloudsParameters::diffusivity__float"></span><span class="target" id="structsimul_1_1clouds_1_1_gpu_clouds_parameters_1a3abcc6ff3f9ac54b566909b4f9e470cf"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">diffusivity</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19GpuCloudsParameters11diffusivityE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19GpuCloudsParameters4timeE">
+<span id="_CPPv3N5simul6clouds19GpuCloudsParameters4timeE"></span><span id="_CPPv2N5simul6clouds19GpuCloudsParameters4timeE"></span><span id="simul::clouds::GpuCloudsParameters::time__float"></span><span class="target" id="structsimul_1_1clouds_1_1_gpu_clouds_parameters_1a7206c58bd395b37fb236b745f7252f19"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">time</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19GpuCloudsParameters4timeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19GpuCloudsParameters7octavesE">
+<span id="_CPPv3N5simul6clouds19GpuCloudsParameters7octavesE"></span><span id="_CPPv2N5simul6clouds19GpuCloudsParameters7octavesE"></span><span id="simul::clouds::GpuCloudsParameters::octaves__i"></span><span class="target" id="structsimul_1_1clouds_1_1_gpu_clouds_parameters_1a71408e2f77aa0ae49abc05b19afcc01e"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">octaves</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19GpuCloudsParameters7octavesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19GpuCloudsParameters11persistenceE">
+<span id="_CPPv3N5simul6clouds19GpuCloudsParameters11persistenceE"></span><span id="_CPPv2N5simul6clouds19GpuCloudsParameters11persistenceE"></span><span id="simul::clouds::GpuCloudsParameters::persistence__float"></span><span class="target" id="structsimul_1_1clouds_1_1_gpu_clouds_parameters_1ac08c89118b81dfaa84098ae4cda7455e"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">persistence</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19GpuCloudsParameters11persistenceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19GpuCloudsParameters9noiseSizeE">
+<span id="_CPPv3N5simul6clouds19GpuCloudsParameters9noiseSizeE"></span><span id="_CPPv2N5simul6clouds19GpuCloudsParameters9noiseSizeE"></span><span id="simul::clouds::GpuCloudsParameters::noiseSize__i"></span><span class="target" id="structsimul_1_1clouds_1_1_gpu_clouds_parameters_1ae34b370c310b6b268052ab689e05fc6c"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">noiseSize</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19GpuCloudsParameters9noiseSizeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19GpuCloudsParameters32Matrix4x4LightToDensityTexcoordsE">
+<span id="_CPPv3N5simul6clouds19GpuCloudsParameters32Matrix4x4LightToDensityTexcoordsE"></span><span id="_CPPv2N5simul6clouds19GpuCloudsParameters32Matrix4x4LightToDensityTexcoordsE"></span><span id="simul::clouds::GpuCloudsParameters::Matrix4x4LightToDensityTexcoords__mat4"></span><span class="target" id="structsimul_1_1clouds_1_1_gpu_clouds_parameters_1a86d4f684e64e20c9778ad9342681222b"></span><span class="n"><span class="pre">mat4</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Matrix4x4LightToDensityTexcoords</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19GpuCloudsParameters32Matrix4x4LightToDensityTexcoordsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19GpuCloudsParameters34Matrix4x4AmbientToDensityTexcoordsE">
+<span id="_CPPv3N5simul6clouds19GpuCloudsParameters34Matrix4x4AmbientToDensityTexcoordsE"></span><span id="_CPPv2N5simul6clouds19GpuCloudsParameters34Matrix4x4AmbientToDensityTexcoordsE"></span><span id="simul::clouds::GpuCloudsParameters::Matrix4x4AmbientToDensityTexcoords__mat4"></span><span class="target" id="structsimul_1_1clouds_1_1_gpu_clouds_parameters_1a578c60471f537b47ec312bc44da0d445"></span><span class="n"><span class="pre">mat4</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Matrix4x4AmbientToDensityTexcoords</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19GpuCloudsParameters34Matrix4x4AmbientToDensityTexcoordsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19GpuCloudsParameters32Matrix4x4DensityToLightTransformE">
+<span id="_CPPv3N5simul6clouds19GpuCloudsParameters32Matrix4x4DensityToLightTransformE"></span><span id="_CPPv2N5simul6clouds19GpuCloudsParameters32Matrix4x4DensityToLightTransformE"></span><span id="simul::clouds::GpuCloudsParameters::Matrix4x4DensityToLightTransform__mat4"></span><span class="target" id="structsimul_1_1clouds_1_1_gpu_clouds_parameters_1a92ae4b6cfce34b81c4e6be0b7b7abe53"></span><span class="n"><span class="pre">mat4</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Matrix4x4DensityToLightTransform</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19GpuCloudsParameters32Matrix4x4DensityToLightTransformE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19GpuCloudsParameters7cornerME">
+<span id="_CPPv3N5simul6clouds19GpuCloudsParameters7cornerME"></span><span id="_CPPv2N5simul6clouds19GpuCloudsParameters7cornerME"></span><span id="simul::clouds::GpuCloudsParameters::cornerM__vec3"></span><span class="target" id="structsimul_1_1clouds_1_1_gpu_clouds_parameters_1a6026787cabe33c53475f5ea35471b412"></span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">cornerM</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19GpuCloudsParameters7cornerME" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19GpuCloudsParameters20densityVolumeScalesME">
+<span id="_CPPv3N5simul6clouds19GpuCloudsParameters20densityVolumeScalesME"></span><span id="_CPPv2N5simul6clouds19GpuCloudsParameters20densityVolumeScalesME"></span><span id="simul::clouds::GpuCloudsParameters::densityVolumeScalesM__vec3"></span><span class="target" id="structsimul_1_1clouds_1_1_gpu_clouds_parameters_1aefe1a408b2c3f0948249408cfed0b725"></span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">densityVolumeScalesM</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19GpuCloudsParameters20densityVolumeScalesME" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19GpuCloudsParameters22lightspace_extinctionsE">
+<span id="_CPPv3N5simul6clouds19GpuCloudsParameters22lightspace_extinctionsE"></span><span id="_CPPv2N5simul6clouds19GpuCloudsParameters22lightspace_extinctionsE"></span><span id="simul::clouds::GpuCloudsParameters::lightspace_extinctions__vec4"></span><span class="target" id="structsimul_1_1clouds_1_1_gpu_clouds_parameters_1a267893bbcf711ace7117c4329026c345"></span><span class="n"><span class="pre">vec4</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">lightspace_extinctions</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19GpuCloudsParameters22lightspace_extinctionsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19GpuCloudsParameters14wrap_light_texE">
+<span id="_CPPv3N5simul6clouds19GpuCloudsParameters14wrap_light_texE"></span><span id="_CPPv2N5simul6clouds19GpuCloudsParameters14wrap_light_texE"></span><span id="simul::clouds::GpuCloudsParameters::wrap_light_tex__bA"></span><span class="target" id="structsimul_1_1clouds_1_1_gpu_clouds_parameters_1abfb96aeb43aa38274e023c52349411e4"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">wrap_light_tex</span></span></span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">2</span></span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19GpuCloudsParameters14wrap_light_texE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19GpuCloudsParameters12cloudVolumesE">
+<span id="_CPPv3N5simul6clouds19GpuCloudsParameters12cloudVolumesE"></span><span id="_CPPv2N5simul6clouds19GpuCloudsParameters12cloudVolumesE"></span><span id="simul::clouds::GpuCloudsParameters::cloudVolumes__simul::clouds::VolumeMapCP"></span><span class="target" id="structsimul_1_1clouds_1_1_gpu_clouds_parameters_1a1e2c7401b9ae94392867b00c7bf220bf"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">clouds</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">VolumeMap</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">cloudVolumes</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19GpuCloudsParameters12cloudVolumesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19GpuCloudsParameters13noise_src_ptrE">
+<span id="_CPPv3N5simul6clouds19GpuCloudsParameters13noise_src_ptrE"></span><span id="_CPPv2N5simul6clouds19GpuCloudsParameters13noise_src_ptrE"></span><span id="simul::clouds::GpuCloudsParameters::noise_src_ptr__floatCP"></span><span class="target" id="structsimul_1_1clouds_1_1_gpu_clouds_parameters_1ac4d00e3b622a9ab644a5933e06cbb101"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">noise_src_ptr</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19GpuCloudsParameters13noise_src_ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19GpuCloudsParameters23noise_generation_numberE">
+<span id="_CPPv3N5simul6clouds19GpuCloudsParameters23noise_generation_numberE"></span><span id="_CPPv2N5simul6clouds19GpuCloudsParameters23noise_generation_numberE"></span><span id="simul::clouds::GpuCloudsParameters::noise_generation_number__i"></span><span class="target" id="structsimul_1_1clouds_1_1_gpu_clouds_parameters_1a0b93782eb0f20f2d668ec8935db6084f"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">noise_generation_number</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19GpuCloudsParameters23noise_generation_numberE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19GpuCloudsParameters21texture_fill_progressE">
+<span id="_CPPv3N5simul6clouds19GpuCloudsParameters21texture_fill_progressE"></span><span id="_CPPv2N5simul6clouds19GpuCloudsParameters21texture_fill_progressE"></span><span id="simul::clouds::GpuCloudsParameters::texture_fill_progress__float"></span><span class="target" id="structsimul_1_1clouds_1_1_gpu_clouds_parameters_1ac17ffb9cc53f08a09e76a12e4b910b2b"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">texture_fill_progress</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19GpuCloudsParameters21texture_fill_progressE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19GpuCloudsParameters17wrap_horizontallyE">
+<span id="_CPPv3N5simul6clouds19GpuCloudsParameters17wrap_horizontallyE"></span><span id="_CPPv2N5simul6clouds19GpuCloudsParameters17wrap_horizontallyE"></span><span id="simul::clouds::GpuCloudsParameters::wrap_horizontally__b"></span><span class="target" id="structsimul_1_1clouds_1_1_gpu_clouds_parameters_1a9b0836956b840f7de90e14f842fcbc45"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">wrap_horizontally</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19GpuCloudsParameters17wrap_horizontallyE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19GpuCloudsParameters8checksumE">
+<span id="_CPPv3N5simul6clouds19GpuCloudsParameters8checksumE"></span><span id="_CPPv2N5simul6clouds19GpuCloudsParameters8checksumE"></span><span id="simul::clouds::GpuCloudsParameters::checksum__unsigned"></span><span class="target" id="structsimul_1_1clouds_1_1_gpu_clouds_parameters_1a2b1a7e337dba4fde8fe8aee0c394d6d8"></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">checksum</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19GpuCloudsParameters8checksumE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19GpuCloudsParameters16directionToLightE">
+<span id="_CPPv3N5simul6clouds19GpuCloudsParameters16directionToLightE"></span><span id="_CPPv2N5simul6clouds19GpuCloudsParameters16directionToLightE"></span><span id="simul::clouds::GpuCloudsParameters::directionToLight__vec3"></span><span class="target" id="structsimul_1_1clouds_1_1_gpu_clouds_parameters_1ae4e6bfc9048b8db51959023263957fb0"></span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">directionToLight</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19GpuCloudsParameters16directionToLightE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19GpuCloudsParameters20seaLevelTemperatureKE">
+<span id="_CPPv3N5simul6clouds19GpuCloudsParameters20seaLevelTemperatureKE"></span><span id="_CPPv2N5simul6clouds19GpuCloudsParameters20seaLevelTemperatureKE"></span><span id="simul::clouds::GpuCloudsParameters::seaLevelTemperatureK__float"></span><span class="target" id="structsimul_1_1clouds_1_1_gpu_clouds_parameters_1ac5b0271a42fa858e551e652f99c781f8"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">seaLevelTemperatureK</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19GpuCloudsParameters20seaLevelTemperatureKE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19GpuCloudsParameters16numWorleyOctavesE">
+<span id="_CPPv3N5simul6clouds19GpuCloudsParameters16numWorleyOctavesE"></span><span id="_CPPv2N5simul6clouds19GpuCloudsParameters16numWorleyOctavesE"></span><span id="simul::clouds::GpuCloudsParameters::numWorleyOctaves__float"></span><span class="target" id="structsimul_1_1clouds_1_1_gpu_clouds_parameters_1ade5a3ad0e06b4ea9565d7a9349b4016f"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">numWorleyOctaves</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19GpuCloudsParameters16numWorleyOctavesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19GpuCloudsParameters19worleyNoiseStrengthE">
+<span id="_CPPv3N5simul6clouds19GpuCloudsParameters19worleyNoiseStrengthE"></span><span id="_CPPv2N5simul6clouds19GpuCloudsParameters19worleyNoiseStrengthE"></span><span id="simul::clouds::GpuCloudsParameters::worleyNoiseStrength__float"></span><span class="target" id="structsimul_1_1clouds_1_1_gpu_clouds_parameters_1a96a3c69117790b99a2414e5503e746bf"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">worleyNoiseStrength</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19GpuCloudsParameters19worleyNoiseStrengthE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19GpuCloudsParameters16worleyNoiseScaleE">
+<span id="_CPPv3N5simul6clouds19GpuCloudsParameters16worleyNoiseScaleE"></span><span id="_CPPv2N5simul6clouds19GpuCloudsParameters16worleyNoiseScaleE"></span><span id="simul::clouds::GpuCloudsParameters::worleyNoiseScale__float"></span><span class="target" id="structsimul_1_1clouds_1_1_gpu_clouds_parameters_1a2f28c7bf9542b90ab49496fe9ed68875"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">worleyNoiseScale</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19GpuCloudsParameters16worleyNoiseScaleE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19GpuCloudsParameters4mipsE">
+<span id="_CPPv3N5simul6clouds19GpuCloudsParameters4mipsE"></span><span id="_CPPv2N5simul6clouds19GpuCloudsParameters4mipsE"></span><span id="simul::clouds::GpuCloudsParameters::mips__i"></span><span class="target" id="structsimul_1_1clouds_1_1_gpu_clouds_parameters_1a829e64090c508b5d7fa22979b1f3872d"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">mips</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19GpuCloudsParameters4mipsE" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </div>
+</dd></dl>
+
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="precipitationrenderer.html" class="btn btn-neutral float-right" title="Precipitation Renderer" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="baselightningrenderer.html" class="btn btn-neutral float-left" title="Base Lightning Renderer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="baselightningrenderer.html" class="btn btn-neutral float-left" title="Base Lightning Renderer" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="precipitationrenderer.html" class="btn btn-neutral float-right" title="Precipitation Renderer" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright 2007-2021, Simul Software Ltd.
-
-    </p>
-  </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    <p>&#169; Copyright 2007-2021, Simul Software Ltd.</p>
+  </div> 
 
 </footer>
         </div>
       </div>
-
-    </section>
-
+    </div>
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

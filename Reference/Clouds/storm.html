@@ -1,92 +1,50 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Storm &mdash; Simul  documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
-    
-    <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
-    
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Lightning Render Interface Structs" href="lightningrenderinterfacestructs.html" />
+    <link rel="next" title="Sky" href="../sky.html" />
     <link rel="prev" title="Cloud Keyframer" href="cloudkeyframer.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
           
-            <a href="../../index.html" class="icon icon-home"> Simul
           
-
-          
-          </a>
-
-          
-            
-            
-          
-
-          
+			<a href="../../index.html"  class="" >
+				
+					<span class="sidebartitle">
+						Simul
+					</span>
+				
+			</a>
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
+    <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+        <label class="search-label" for="q">Search the documentation</label>
+        <input type="text" name="q" id="q" placeholder="Search..." aria-label="Search docs" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation and Setup</a></li>
@@ -106,14 +64,12 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../clouds.html">Clouds</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="trueskyrenderer.html">True Sky Renderer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cloudrenderer.html">Cloud Renderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cloudlighting.html">Cloud Lighting</a></li>
 <li class="toctree-l3"><a class="reference internal" href="baseweatherrenderer.html">Base Weather Renderer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="baselightningrenderer.html">Base Lightning Renderer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="basegpucloudgenerator.html">Base GPU Cloud Generator</a></li>
 <li class="toctree-l3"><a class="reference internal" href="precipitationrenderer.html">Precipitation Renderer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="environment.html">Environment</a></li>
 <li class="toctree-l3"><a class="reference internal" href="skylight.html">Skylight</a></li>
-<li class="toctree-l3"><a class="reference internal" href="globalweatherrenderer.html">Global Weather Renderer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mixedresolutioncompositor.html">Mixed Resolution Compositor</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tworesframebuffer.html">Two Res Frambuffer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cellularcloudgrid.html">Cellular Cloud Grid</a></li>
@@ -126,7 +82,6 @@
 <li class="toctree-l3"><a class="reference internal" href="cloudkeyframe.html">Cloud Keyframe</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cloudkeyframer.html">Cloud Keyframer</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Storm</a></li>
-<li class="toctree-l3"><a class="reference internal" href="lightningrenderinterfacestructs.html">Lightning Render Interface Structs</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../sky.html">Sky</a></li>
@@ -137,86 +92,59 @@
 <li class="toctree-l1"><a class="reference internal" href="../../changelist.html">Changelist</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+		<h2 class="wy-nav-top">Navigation</h2><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">Simul</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-        
-          <li><a href="../referenceindex.html">Reference</a> &raquo;</li>
-        
-          <li><a href="../clouds.html">Clouds</a> &raquo;</li>
-        
-      <li>Storm</li>
-    
-    
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../referenceindex.html">Reference</a></li>
+          <li class="breadcrumb-item"><a href="../clouds.html">Clouds</a></li>
+      <li class="breadcrumb-item active">Storm</li>
       <li class="wy-breadcrumbs-aside">
-        
-          
             <a href="../../_sources/Reference/Clouds/storm.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="storm">
-<h1>Storm<a class="headerlink" href="#storm" title="Permalink to this headline">¶</a></h1>
+             
+  <section id="storm">
+<h1>Storm<a class="headerlink" href="#storm" title="Permalink to this heading">¶</a></h1>
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5StormE">
-<span id="_CPPv3N5simul6clouds5StormE"></span><span id="_CPPv2N5simul6clouds5StormE"></span><span id="simul::clouds::Storm"></span><span class="target" id="structsimul_1_1clouds_1_1_storm"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">clouds</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">Storm</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds5StormE" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv3N5simul6clouds5StormE"></span><span id="_CPPv2N5simul6clouds5StormE"></span><span id="simul::clouds::Storm"></span><span class="target" id="structsimul_1_1clouds_1_1_storm"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Storm</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds5StormE" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>A structure representing a thunderstorm. See <a class="reference internal" href="cloudkeyframer.html#classsimul_1_1clouds_1_1_cloud_keyframer_1aa923d784775c183176c4ad624ad9ca45"><span class="std std-ref">CloudKeyframer::AddStorm</span></a>. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
 <dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm5StormEPN4math21RandomNumberGeneratorE">
+<span id="_CPPv3N5simul6clouds5Storm5StormEPN4math21RandomNumberGeneratorE"></span><span id="_CPPv2N5simul6clouds5Storm5StormEPN4math21RandomNumberGeneratorE"></span><span id="simul::clouds::Storm::Storm__math::RandomNumberGeneratorP"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1ae234f50981c676711fdacb274845b8fa"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Storm</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">math</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">RandomNumberGenerator</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">r</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm5StormEPN4math21RandomNumberGeneratorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds5Storm10SaveToTextERN13crossplatform10TextOutputE">
+<span id="_CPPv3NK5simul6clouds5Storm10SaveToTextERN13crossplatform10TextOutputE"></span><span id="_CPPv2NK5simul6clouds5Storm10SaveToTextERN13crossplatform10TextOutputE"></span><span id="simul::clouds::Storm::SaveToText__crossplatform::TextOutputRC"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1a27b065237be9ba86412bb62880f83688"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SaveToText</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">TextOutput</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">output</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds5Storm10SaveToTextERN13crossplatform10TextOutputE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm12LoadFromTextERN13crossplatform9TextInputE">
+<span id="_CPPv3N5simul6clouds5Storm12LoadFromTextERN13crossplatform9TextInputE"></span><span id="_CPPv2N5simul6clouds5Storm12LoadFromTextERN13crossplatform9TextInputE"></span><span id="simul::clouds::Storm::LoadFromText__crossplatform::TextInputR"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1abff50c67553237332278e5e83408ad63"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LoadFromText</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">TextInput</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">input</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm12LoadFromTextERN13crossplatform9TextInputE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds5Storm9GetStrikeEi">
-<span id="_CPPv3NK5simul6clouds5Storm9GetStrikeEi"></span><span id="_CPPv2NK5simul6clouds5Storm9GetStrikeEi"></span><span id="simul::clouds::Storm::GetStrike__iC"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1ad1f3420fd855871b32d1b7fcb8052989"></span><a class="reference internal" href="lightningrenderinterfacestructs.html#_CPPv4N5simul6clouds6StrikeE" title="simul::clouds::Strike"><span class="n"><span class="pre">Strike</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetStrike</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">i</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds5Storm9GetStrikeEi" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv3NK5simul6clouds5Storm9GetStrikeEi"></span><span id="_CPPv2NK5simul6clouds5Storm9GetStrikeEi"></span><span id="simul::clouds::Storm::GetStrike__iC"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1ad1f3420fd855871b32d1b7fcb8052989"></span><a class="reference internal" href="#_CPPv4N5simul6clouds6StrikeE" title="simul::clouds::Strike"><span class="n"><span class="pre">Strike</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetStrike</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">i</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds5Storm9GetStrikeEi" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Return the currently active strike, or return a default strike. </p>
 </dd></dl>
 
@@ -228,15 +156,30 @@
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds5Storm22GetLightningPropertiesEfffPK11CloudWindow">
-<span id="_CPPv3NK5simul6clouds5Storm22GetLightningPropertiesEfffPK11CloudWindow"></span><span id="_CPPv2NK5simul6clouds5Storm22GetLightningPropertiesEfffPK11CloudWindow"></span><span id="simul::clouds::Storm::GetLightningProperties__float.float.float.CloudWindowCPC"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1ada68ad7ab153af64707fd885ccb6168b"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="lightningrenderinterfacestructs.html#_CPPv4N5simul6clouds19LightningPropertiesE" title="simul::clouds::LightningProperties"><span class="n"><span class="pre">LightningProperties</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">GetLightningProperties</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">game_time</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">real_time</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">base_km</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="cloudwindow.html#_CPPv4N5simul6clouds11CloudWindowE" title="simul::clouds::CloudWindow"><span class="n"><span class="pre">CloudWindow</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">w</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds5Storm22GetLightningPropertiesEfffPK11CloudWindow" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv3NK5simul6clouds5Storm22GetLightningPropertiesEfffPK11CloudWindow"></span><span id="_CPPv2NK5simul6clouds5Storm22GetLightningPropertiesEfffPK11CloudWindow"></span><span id="simul::clouds::Storm::GetLightningProperties__float.float.float.CloudWindowCPC"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1ada68ad7ab153af64707fd885ccb6168b"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5simul6clouds19LightningPropertiesE" title="simul::clouds::LightningProperties"><span class="n"><span class="pre">LightningProperties</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">GetLightningProperties</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">game_time</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">real_time</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">base_km</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="cloudwindow.html#_CPPv4N5simul6clouds11CloudWindowE" title="simul::clouds::CloudWindow"><span class="n"><span class="pre">CloudWindow</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">w</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds5Storm22GetLightningPropertiesEfffPK11CloudWindow" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Get the properties of the currently active lightning strike. </p>
 </dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds5Storm18GetLastStrikeIndexEff">
+<span id="_CPPv3NK5simul6clouds5Storm18GetLastStrikeIndexEff"></span><span id="_CPPv2NK5simul6clouds5Storm18GetLastStrikeIndexEff"></span><span id="simul::clouds::Storm::GetLastStrikeIndex__float.floatC"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1a45c2aa0399468fc2484f6fe15c916f13"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetLastStrikeIndex</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">game_time</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">real_time</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds5Storm18GetLastStrikeIndexEff" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds5Storm18GetTotalNumStrikesEv">
 <span id="_CPPv3NK5simul6clouds5Storm18GetTotalNumStrikesEv"></span><span id="_CPPv2NK5simul6clouds5Storm18GetTotalNumStrikesEv"></span><span id="simul::clouds::Storm::GetTotalNumStrikesC"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1a1353ddb1544ebae4c1796c4efeb2b254"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetTotalNumStrikes</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds5Storm18GetTotalNumStrikesEv" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Get the approximate number of strikes that are generated over a day with the current settings. </p>
 </dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds5Storm13GetStrikeTimeEi">
+<span id="_CPPv3NK5simul6clouds5Storm13GetStrikeTimeEi"></span><span id="_CPPv2NK5simul6clouds5Storm13GetStrikeTimeEi"></span><span id="simul::clouds::Storm::GetStrikeTime__iC"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1a5f4e69a6002d6a70c6a51e8ab8f3eb32"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetStrikeTime</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds5Storm13GetStrikeTimeEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds5Storm13GetStrikeTimeEff">
+<span id="_CPPv3NK5simul6clouds5Storm13GetStrikeTimeEff"></span><span id="_CPPv2NK5simul6clouds5Storm13GetStrikeTimeEff"></span><span id="simul::clouds::Storm::GetStrikeTime__float.floatC"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1a2dc959a431e0e3713cf3c7717dcc0bc0"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetStrikeTime</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">game_time</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">real_time</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds5Storm13GetStrikeTimeEff" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds5Storm8HasFloatEPKc">
@@ -301,6 +244,11 @@
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm6randomE">
+<span id="_CPPv3N5simul6clouds5Storm6randomE"></span><span id="_CPPv2N5simul6clouds5Storm6randomE"></span><span id="simul::clouds::Storm::random__math::RandomNumberGeneratorP"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1a64b6d04d7c3f5bcec312b1a37b966996"></span><span class="n"><span class="pre">math</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">RandomNumberGenerator</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">random</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm6randomE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm6originE">
 <span id="_CPPv3N5simul6clouds5Storm6originE"></span><span id="_CPPv2N5simul6clouds5Storm6originE"></span><span id="simul::clouds::Storm::origin__crossplatform::Quaterniond"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1a9916760ad913a5355ee202b177043bab"></span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Quaterniond</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">origin</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm6originE" title="Permalink to this definition">¶</a><br /></dt>
@@ -416,68 +364,275 @@
 </dd></dl>
 
 <dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm15last_strike_uidE">
+<span id="_CPPv3N5simul6clouds5Storm15last_strike_uidE"></span><span id="_CPPv2N5simul6clouds5Storm15last_strike_uidE"></span><span id="simul::clouds::Storm::last_strike_uid__unsigned"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1ad1760937af1eafcaad7b23506a40f9e0"></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">last_strike_uid</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm15last_strike_uidE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm7strikesE">
-<span id="_CPPv3N5simul6clouds5Storm7strikesE"></span><span id="_CPPv2N5simul6clouds5Storm7strikesE"></span><span id="simul::clouds::Storm::strikes__std::map:i.Strike:"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1ae943970f8e0f742d4cea2bbe76590a02"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">map</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="lightningrenderinterfacestructs.html#_CPPv4N5simul6clouds6StrikeE" title="simul::clouds::Strike"><span class="n"><span class="pre">Strike</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">strikes</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm7strikesE" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv3N5simul6clouds5Storm7strikesE"></span><span id="_CPPv2N5simul6clouds5Storm7strikesE"></span><span id="simul::clouds::Storm::strikes__std::map:i.Strike:"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1ae943970f8e0f742d4cea2bbe76590a02"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">map</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5simul6clouds6StrikeE" title="simul::clouds::Strike"><span class="n"><span class="pre">Strike</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">strikes</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm7strikesE" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>We can store a stack of non-random strikes. These take precedence over pseudo-randomly generated strikes. </p>
 </dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm19lightningPropertiesE">
-<span id="_CPPv3N5simul6clouds5Storm19lightningPropertiesE"></span><span id="_CPPv2N5simul6clouds5Storm19lightningPropertiesE"></span><span id="simul::clouds::Storm::lightningProperties__LightningProperties"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1af6857b0fb15e282130bb6c4df105985e"></span><span class="k"><span class="pre">mutable</span></span><span class="w"> </span><a class="reference internal" href="lightningrenderinterfacestructs.html#_CPPv4N5simul6clouds19LightningPropertiesE" title="simul::clouds::LightningProperties"><span class="n"><span class="pre">LightningProperties</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">lightningProperties</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm19lightningPropertiesE" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv3N5simul6clouds5Storm19lightningPropertiesE"></span><span id="_CPPv2N5simul6clouds5Storm19lightningPropertiesE"></span><span id="simul::clouds::Storm::lightningProperties__LightningProperties"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1af6857b0fb15e282130bb6c4df105985e"></span><span class="k"><span class="pre">mutable</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5simul6clouds19LightningPropertiesE" title="simul::clouds::LightningProperties"><span class="n"><span class="pre">LightningProperties</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">lightningProperties</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm19lightningPropertiesE" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Current cached lightning. </p>
 </dd></dl>
 
 </div>
-</dd></dl>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-attributes">Public Static Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm13kStormQueryIdE">
+<span id="_CPPv3N5simul6clouds5Storm13kStormQueryIdE"></span><span id="_CPPv2N5simul6clouds5Storm13kStormQueryIdE"></span><span id="simul::clouds::Storm::kStormQueryId__iC"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1a73f1185b464e7994cddcbd4dc17b551a"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">kStormQueryId</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">827613</span></span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm13kStormQueryIdE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds5Storm26defaultLightningPropertiesE">
+<span id="_CPPv3N5simul6clouds5Storm26defaultLightningPropertiesE"></span><span id="_CPPv2N5simul6clouds5Storm26defaultLightningPropertiesE"></span><span id="simul::clouds::Storm::defaultLightningProperties__LightningProperties"></span><span class="target" id="structsimul_1_1clouds_1_1_storm_1aee57a920f0487c010de6736d1fe21a68"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5simul6clouds19LightningPropertiesE" title="simul::clouds::LightningProperties"><span class="n"><span class="pre">LightningProperties</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">defaultLightningProperties</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds5Storm26defaultLightningPropertiesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
 
 </div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19LightningPropertiesE">
+<span id="_CPPv3N5simul6clouds19LightningPropertiesE"></span><span id="_CPPv2N5simul6clouds19LightningPropertiesE"></span><span id="simul::clouds::LightningProperties"></span><span class="target" id="structsimul_1_1clouds_1_1_lightning_properties"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LightningProperties</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19LightningPropertiesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19LightningProperties6strikeE">
+<span id="_CPPv3N5simul6clouds19LightningProperties6strikeE"></span><span id="_CPPv2N5simul6clouds19LightningProperties6strikeE"></span><span id="simul::clouds::LightningProperties::strike__Strike"></span><span class="target" id="structsimul_1_1clouds_1_1_lightning_properties_1a6c1302e0eac0f3feb6e11de3072e3310"></span><a class="reference internal" href="#_CPPv4N5simul6clouds6StrikeE" title="simul::clouds::Strike"><span class="n"><span class="pre">Strike</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">strike</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19LightningProperties6strikeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19LightningProperties11strikeStateE">
+<span id="_CPPv3N5simul6clouds19LightningProperties11strikeStateE"></span><span id="_CPPv2N5simul6clouds19LightningProperties11strikeStateE"></span><span id="simul::clouds::LightningProperties::strikeState__StrikeState"></span><span class="target" id="structsimul_1_1clouds_1_1_lightning_properties_1a639654ff26a15508a7f49efde293d7ab"></span><a class="reference internal" href="#_CPPv4N5simul6clouds11StrikeStateE" title="simul::clouds::StrikeState"><span class="n"><span class="pre">StrikeState</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">strikeState</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19LightningProperties11strikeStateE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19LightningProperties4seedE">
+<span id="_CPPv3N5simul6clouds19LightningProperties4seedE"></span><span id="_CPPv2N5simul6clouds19LightningProperties4seedE"></span><span id="simul::clouds::LightningProperties::seed__i"></span><span class="target" id="structsimul_1_1clouds_1_1_lightning_properties_1a4d9ac29986a36c78318ecdf51e75744f"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">seed</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19LightningProperties4seedE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19LightningProperties20branch_angle_radiansE">
+<span id="_CPPv3N5simul6clouds19LightningProperties20branch_angle_radiansE"></span><span id="_CPPv2N5simul6clouds19LightningProperties20branch_angle_radiansE"></span><span id="simul::clouds::LightningProperties::branch_angle_radians__float"></span><span class="target" id="structsimul_1_1clouds_1_1_lightning_properties_1a94da405559e5ed6bc51f902ff1412fbf"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">branch_angle_radians</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19LightningProperties20branch_angle_radiansE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19LightningProperties13branch_cosineE">
+<span id="_CPPv3N5simul6clouds19LightningProperties13branch_cosineE"></span><span id="_CPPv2N5simul6clouds19LightningProperties13branch_cosineE"></span><span id="simul::clouds::LightningProperties::branch_cosine__float"></span><span class="target" id="structsimul_1_1clouds_1_1_lightning_properties_1aafe300f8ee3ba2e3aca23b038dc6d51c"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">branch_cosine</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19LightningProperties13branch_cosineE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19LightningProperties11branch_sineE">
+<span id="_CPPv3N5simul6clouds19LightningProperties11branch_sineE"></span><span id="_CPPv2N5simul6clouds19LightningProperties11branch_sineE"></span><span id="simul::clouds::LightningProperties::branch_sine__float"></span><span class="target" id="structsimul_1_1clouds_1_1_lightning_properties_1ac558b5cbf3ce8f2c9ffe8cbe0b07dfd1"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">branch_sine</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19LightningProperties11branch_sineE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19LightningProperties21strikeThicknessMetresE">
+<span id="_CPPv3N5simul6clouds19LightningProperties21strikeThicknessMetresE"></span><span id="_CPPv2N5simul6clouds19LightningProperties21strikeThicknessMetresE"></span><span id="simul::clouds::LightningProperties::strikeThicknessMetres__float"></span><span class="target" id="structsimul_1_1clouds_1_1_lightning_properties_1af0bd41c9267b8b411a2ebfbccff16096"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">strikeThicknessMetres</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19LightningProperties21strikeThicknessMetresE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19LightningProperties9roughnessE">
+<span id="_CPPv3N5simul6clouds19LightningProperties9roughnessE"></span><span id="_CPPv2N5simul6clouds19LightningProperties9roughnessE"></span><span id="simul::clouds::LightningProperties::roughness__float"></span><span class="target" id="structsimul_1_1clouds_1_1_lightning_properties_1ad2a4f32bcc62342d38d68a216dc3e316"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">roughness</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19LightningProperties9roughnessE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19LightningProperties6motionE">
+<span id="_CPPv3N5simul6clouds19LightningProperties6motionE"></span><span id="_CPPv2N5simul6clouds19LightningProperties6motionE"></span><span id="simul::clouds::LightningProperties::motion__float"></span><span class="target" id="structsimul_1_1clouds_1_1_lightning_properties_1a16af66f89ac28748f1999e7f51bdff33"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">motion</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19LightningProperties6motionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19LightningProperties9numLevelsE">
+<span id="_CPPv3N5simul6clouds19LightningProperties9numLevelsE"></span><span id="_CPPv2N5simul6clouds19LightningProperties9numLevelsE"></span><span id="simul::clouds::LightningProperties::numLevels__i"></span><span class="target" id="structsimul_1_1clouds_1_1_lightning_properties_1aefbc0b708f0326b67cd6d05cde590ba5"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">numLevels</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19LightningProperties9numLevelsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19LightningProperties11numBranchesE">
+<span id="_CPPv3N5simul6clouds19LightningProperties11numBranchesE"></span><span id="_CPPv2N5simul6clouds19LightningProperties11numBranchesE"></span><span id="simul::clouds::LightningProperties::numBranches__i"></span><span class="target" id="structsimul_1_1clouds_1_1_lightning_properties_1a4dd9013b4e4587213f4a456b4613eccf"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">numBranches</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19LightningProperties11numBranchesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19LightningProperties4maskE">
+<span id="_CPPv3N5simul6clouds19LightningProperties4maskE"></span><span id="_CPPv2N5simul6clouds19LightningProperties4maskE"></span><span id="simul::clouds::LightningProperties::mask__i"></span><span class="target" id="structsimul_1_1clouds_1_1_lightning_properties_1a2f445ca697404fbe074ea20fae9e0d9b"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">mask</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19LightningProperties4maskE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19LightningProperties9mask_bitsE">
+<span id="_CPPv3N5simul6clouds19LightningProperties9mask_bitsE"></span><span id="_CPPv2N5simul6clouds19LightningProperties9mask_bitsE"></span><span id="simul::clouds::LightningProperties::mask_bits__i"></span><span class="target" id="structsimul_1_1clouds_1_1_lightning_properties_1a0ab2703d128b4067a53f17a842e79008"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">mask_bits</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19LightningProperties9mask_bitsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19LightningProperties6colourE">
+<span id="_CPPv3N5simul6clouds19LightningProperties6colourE"></span><span id="_CPPv2N5simul6clouds19LightningProperties6colourE"></span><span id="simul::clouds::LightningProperties::colour__vec3"></span><span class="target" id="structsimul_1_1clouds_1_1_lightning_properties_1a7caa377859b7307621e5e9004e8c1d66"></span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">colour</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19LightningProperties6colourE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19LightningProperties11maxRadianceE">
+<span id="_CPPv3N5simul6clouds19LightningProperties11maxRadianceE"></span><span id="_CPPv2N5simul6clouds19LightningProperties11maxRadianceE"></span><span id="simul::clouds::LightningProperties::maxRadiance__float"></span><span class="target" id="structsimul_1_1clouds_1_1_lightning_properties_1a9827e034d87a985a4b539316b12ccfbc"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">maxRadiance</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19LightningProperties11maxRadianceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19LightningProperties13minPixelWidthE">
+<span id="_CPPv3N5simul6clouds19LightningProperties13minPixelWidthE"></span><span id="_CPPv2N5simul6clouds19LightningProperties13minPixelWidthE"></span><span id="simul::clouds::LightningProperties::minPixelWidth__float"></span><span class="target" id="structsimul_1_1clouds_1_1_lightning_properties_1a3cfa206c3fcc2c6b1a21f7828ab78bc2"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">minPixelWidth</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19LightningProperties13minPixelWidthE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19LightningProperties11strikeIndexE">
+<span id="_CPPv3N5simul6clouds19LightningProperties11strikeIndexE"></span><span id="_CPPv2N5simul6clouds19LightningProperties11strikeIndexE"></span><span id="simul::clouds::LightningProperties::strikeIndex__i"></span><span class="target" id="structsimul_1_1clouds_1_1_lightning_properties_1af4aa30e2b4851867b3ced7b55783d18b"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">strikeIndex</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19LightningProperties11strikeIndexE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds19LightningProperties5stormE">
+<span id="_CPPv3N5simul6clouds19LightningProperties5stormE"></span><span id="_CPPv2N5simul6clouds19LightningProperties5stormE"></span><span id="simul::clouds::LightningProperties::storm__StormCP"></span><span class="target" id="structsimul_1_1clouds_1_1_lightning_properties_1aa8e8c7296693f51cd398aefeddb6bb6c"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5simul6clouds5StormE" title="simul::clouds::Storm"><span class="n"><span class="pre">Storm</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">storm</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds19LightningProperties5stormE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds6StrikeE">
+<span id="_CPPv3N5simul6clouds6StrikeE"></span><span id="_CPPv2N5simul6clouds6StrikeE"></span><span id="simul::clouds::Strike"></span><span class="target" id="structsimul_1_1clouds_1_1_strike"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Strike</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds6StrikeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds6Strike4seedE">
+<span id="_CPPv3N5simul6clouds6Strike4seedE"></span><span id="_CPPv2N5simul6clouds6Strike4seedE"></span><span id="simul::clouds::Strike::seed__i"></span><span class="target" id="structsimul_1_1clouds_1_1_strike_1aabf951ad94fc54e79897346866c8e39e"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">seed</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds6Strike4seedE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds6Strike6startXE">
+<span id="_CPPv3N5simul6clouds6Strike6startXE"></span><span id="_CPPv2N5simul6clouds6Strike6startXE"></span><span id="simul::clouds::Strike::startX__vec3"></span><span class="target" id="structsimul_1_1clouds_1_1_strike_1a645b269f1e162e7e243ec9ec9cea86ad"></span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">startX</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds6Strike6startXE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="#structsimul_1_1clouds_1_1_strike"><span class="std std-ref">Strike</span></a> start position in metres. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds6Strike4endXE">
+<span id="_CPPv3N5simul6clouds6Strike4endXE"></span><span id="_CPPv2N5simul6clouds6Strike4endXE"></span><span id="simul::clouds::Strike::endX__vec3"></span><span class="target" id="structsimul_1_1clouds_1_1_strike_1a603bf0942b4cb6af3011f4b83d3d5a94"></span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">endX</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds6Strike4endXE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="#structsimul_1_1clouds_1_1_strike"><span class="std std-ref">Strike</span></a> end position in metres. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds6Strike15strikeStartTimeE">
+<span id="_CPPv3N5simul6clouds6Strike15strikeStartTimeE"></span><span id="_CPPv2N5simul6clouds6Strike15strikeStartTimeE"></span><span id="simul::clouds::Strike::strikeStartTime__float"></span><span class="target" id="structsimul_1_1clouds_1_1_strike_1ae2f67aeabd9bb7124bdfc58a7a8846ea"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">strikeStartTime</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds6Strike15strikeStartTimeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds6Strike14strikeDurationE">
+<span id="_CPPv3N5simul6clouds6Strike14strikeDurationE"></span><span id="_CPPv2N5simul6clouds6Strike14strikeDurationE"></span><span id="simul::clouds::Strike::strikeDuration__float"></span><span class="target" id="structsimul_1_1clouds_1_1_strike_1ac6d8bc59d9bb1199d409c015f3a57e15"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">strikeDuration</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds6Strike14strikeDurationE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds6Strike14leaderDurationE">
+<span id="_CPPv3N5simul6clouds6Strike14leaderDurationE"></span><span id="_CPPv2N5simul6clouds6Strike14leaderDurationE"></span><span id="simul::clouds::Strike::leaderDuration__float"></span><span class="target" id="structsimul_1_1clouds_1_1_strike_1a291a9e59beca93d7dc98bcf77d2a0741"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">leaderDuration</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds6Strike14leaderDurationE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds6Strike5sheetE">
+<span id="_CPPv3N5simul6clouds6Strike5sheetE"></span><span id="_CPPv2N5simul6clouds6Strike5sheetE"></span><span id="simul::clouds::Strike::sheet__b"></span><span class="target" id="structsimul_1_1clouds_1_1_strike_1a2c8148f91ff70ad13d7838386e314566"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sheet</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds6Strike5sheetE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>If true we will get an in-cloud strike, otherwise, cloud to ground (alt=0m) strike. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds6Strike9magnitudeE">
+<span id="_CPPv3N5simul6clouds6Strike9magnitudeE"></span><span id="_CPPv2N5simul6clouds6Strike9magnitudeE"></span><span id="simul::clouds::Strike::magnitude__float"></span><span class="target" id="structsimul_1_1clouds_1_1_strike_1a4a3d5776859c77a75b1c4e132595c279"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">magnitude</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds6Strike9magnitudeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds6Strike6colourE">
+<span id="_CPPv3N5simul6clouds6Strike6colourE"></span><span id="_CPPv2N5simul6clouds6Strike6colourE"></span><span id="simul::clouds::Strike::colour__vec3"></span><span class="target" id="structsimul_1_1clouds_1_1_strike_1a96ac2389587dd7d9e62f714ba68a5406"></span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">colour</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds6Strike6colourE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11StrikeStateE">
+<span id="_CPPv3N5simul6clouds11StrikeStateE"></span><span id="_CPPv2N5simul6clouds11StrikeStateE"></span><span id="simul::clouds::StrikeState"></span><span class="target" id="structsimul_1_1clouds_1_1_strike_state"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">StrikeState</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds11StrikeStateE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11StrikeState8progressE">
+<span id="_CPPv3N5simul6clouds11StrikeState8progressE"></span><span id="_CPPv2N5simul6clouds11StrikeState8progressE"></span><span id="simul::clouds::StrikeState::progress__float"></span><span class="target" id="structsimul_1_1clouds_1_1_strike_state_1ac9b40615c2e663bcb6e9a39cbde128a4"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">progress</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds11StrikeState8progressE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11StrikeState10brightnessE">
+<span id="_CPPv3N5simul6clouds11StrikeState10brightnessE"></span><span id="_CPPv2N5simul6clouds11StrikeState10brightnessE"></span><span id="simul::clouds::StrikeState::brightness__float"></span><span class="target" id="structsimul_1_1clouds_1_1_strike_state_1a1f4360bd0bcbb4be33f052a828fcada9"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">brightness</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds11StrikeState10brightnessE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21ExportLightningStrikeE">
+<span id="_CPPv3N5simul6clouds21ExportLightningStrikeE"></span><span id="_CPPv2N5simul6clouds21ExportLightningStrikeE"></span><span id="simul::clouds::ExportLightningStrike"></span><span class="target" id="structsimul_1_1clouds_1_1_export_lightning_strike"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ExportLightningStrike</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21ExportLightningStrikeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A struct for passing lighting strike properties between trueSKY and an external engine. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21ExportLightningStrike2idE">
+<span id="_CPPv3N5simul6clouds21ExportLightningStrike2idE"></span><span id="_CPPv2N5simul6clouds21ExportLightningStrike2idE"></span><span id="simul::clouds::ExportLightningStrike::id__i"></span><span class="target" id="structsimul_1_1clouds_1_1_export_lightning_strike_1abf07a30d588855a432f14c5c6208247e"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">id</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21ExportLightningStrike2idE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21ExportLightningStrike3posE">
+<span id="_CPPv3N5simul6clouds21ExportLightningStrike3posE"></span><span id="_CPPv2N5simul6clouds21ExportLightningStrike3posE"></span><span id="simul::clouds::ExportLightningStrike::pos__vec3"></span><span class="target" id="structsimul_1_1clouds_1_1_export_lightning_strike_1a59a43e6da35154c9cfa623bf7c3d4995"></span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pos</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21ExportLightningStrike3posE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21ExportLightningStrike6endposE">
+<span id="_CPPv3N5simul6clouds21ExportLightningStrike6endposE"></span><span id="_CPPv2N5simul6clouds21ExportLightningStrike6endposE"></span><span id="simul::clouds::ExportLightningStrike::endpos__vec3"></span><span class="target" id="structsimul_1_1clouds_1_1_export_lightning_strike_1ad1b9b470248a8098183ce2ee9ab267f9"></span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">endpos</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21ExportLightningStrike6endposE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21ExportLightningStrike10brightnessE">
+<span id="_CPPv3N5simul6clouds21ExportLightningStrike10brightnessE"></span><span id="_CPPv2N5simul6clouds21ExportLightningStrike10brightnessE"></span><span id="simul::clouds::ExportLightningStrike::brightness__float"></span><span class="target" id="structsimul_1_1clouds_1_1_export_lightning_strike_1a0c7bb7a0e618fb0b0f4272be37c9e9e0"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">brightness</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21ExportLightningStrike10brightnessE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21ExportLightningStrike6colourE">
+<span id="_CPPv3N5simul6clouds21ExportLightningStrike6colourE"></span><span id="_CPPv2N5simul6clouds21ExportLightningStrike6colourE"></span><span id="simul::clouds::ExportLightningStrike::colour__vec3"></span><span class="target" id="structsimul_1_1clouds_1_1_export_lightning_strike_1ab90b8a84883da4a7d2c7405bbf3a6718"></span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">colour</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21ExportLightningStrike6colourE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21ExportLightningStrike3ageE">
+<span id="_CPPv3N5simul6clouds21ExportLightningStrike3ageE"></span><span id="_CPPv2N5simul6clouds21ExportLightningStrike3ageE"></span><span id="simul::clouds::ExportLightningStrike::age__i"></span><span class="target" id="structsimul_1_1clouds_1_1_export_lightning_strike_1a618718704a39d8092c8e39921adbe67e"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">age</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21ExportLightningStrike3ageE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="lightningrenderinterfacestructs.html" class="btn btn-neutral float-right" title="Lightning Render Interface Structs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="cloudkeyframer.html" class="btn btn-neutral float-left" title="Cloud Keyframer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="cloudkeyframer.html" class="btn btn-neutral float-left" title="Cloud Keyframer" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../sky.html" class="btn btn-neutral float-right" title="Sky" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright 2007-2021, Simul Software Ltd.
-
-    </p>
-  </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    <p>&#169; Copyright 2007-2021, Simul Software Ltd.</p>
+  </div> 
 
 </footer>
         </div>
       </div>
-
-    </section>
-
+    </div>
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

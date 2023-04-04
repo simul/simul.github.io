@@ -1,5 +1,3 @@
-.. _skykeyframer:
-
 Sky Keyframer
 =============
 

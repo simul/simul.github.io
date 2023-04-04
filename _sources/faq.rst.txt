@@ -162,6 +162,10 @@ The Unreal Engine screen clear is faulty in some versions: the Hardware Clear op
 Other Issues
 ------------
 
+Unreal - Plugin 'TrueSkyPlugin' failed to load ecause module 'TrueSkyPlugin' could not be found
+``````````````````````````````````````````````````````````````````````````````````````
+If you are getting this error when packaging, you will need to convert your project from a blueprint project to a C++ project. This will not change your project in anyway, and you can continue to use blueprints. To do this, go to Tools->New C++ Class. Add any parent class to your project, and after this has finished you can package again, and the plugin will be loaded.
+
 Plugin Conflicts
 `````````````````````````````````````````````````
 

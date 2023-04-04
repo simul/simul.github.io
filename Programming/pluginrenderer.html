@@ -1,97 +1,55 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>The TrueSkyPluginRender Library &mdash; Simul  documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Rendering Techniques in trueSKY" href="rendering.html" />
     <link rel="prev" title="Native Development with the trueSKY SDK" href="nativesdk.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
           
-            <a href="../index.html" class="icon icon-home"> Simul
           
-
-          
-          </a>
-
-          
-            
-            
-          
-
-          
+			<a href="../index.html"  class="" >
+				
+					<span class="sidebartitle">
+						Simul
+					</span>
+				
+			</a>
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
+    <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+        <label class="search-label" for="q">Search the documentation</label>
+        <input type="text" name="q" id="q" placeholder="Search..." aria-label="Search docs" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation and Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorialsindex.html">Tutorials</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unreal.html">trueSKY for Unreal Engine 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unreal.html">trueSKY for Unreal Engine</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../unity.html">trueSKY for Unity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../skysequencer.html">Sky Sequencer</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../programming.html">Programming with the trueSKY SDK</a><ul class="current">
@@ -116,75 +74,34 @@
 <li class="toctree-l1"><a class="reference internal" href="../changelist.html">Changelist</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+		<h2 class="wy-nav-top">Navigation</h2><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">Simul</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-        
-          <li><a href="../programming.html">Programming with the trueSKY SDK</a> &raquo;</li>
-        
-      <li>The TrueSkyPluginRender Library</li>
-    
-    
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../programming.html">Programming with the trueSKY SDK</a></li>
+      <li class="breadcrumb-item active">The TrueSkyPluginRender Library</li>
       <li class="wy-breadcrumbs-aside">
-        
-          
             <a href="../_sources/Programming/pluginrenderer.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="the-trueskypluginrender-library">
-<h1>The TrueSkyPluginRender Library<a class="headerlink" href="#the-trueskypluginrender-library" title="Permalink to this headline">¶</a></h1>
+             
+  <section id="the-trueskypluginrender-library">
+<h1>The TrueSkyPluginRender Library<a class="headerlink" href="#the-trueskypluginrender-library" title="Permalink to this heading">¶</a></h1>
 <p>The library TrueSkyPlugRender provides a dynamically-bound dll interface to integrate trueSKY into an external renderer.</p>
 <p>Usage is as follows:</p>
 <ul class="simple">
@@ -194,53 +111,53 @@
 </ul>
 <p>Then, for each rendered view, for each frame that is rendered, insert trueSKY in the pipeline, after the depth buffer has been generated, but before any translucent rendering.</p>
 <p>For example, in a Win32 environment, you might load the dll with:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">HMODULE</span><span class="w"> </span><span class="n">dllHandle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LoadLibrary</span><span class="p">(</span><span class="sa">L</span><span class="s">&quot;TrueSkyPluginRender_MT.dll&quot;</span><span class="p">);</span><span class="w"></span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">HMODULE</span><span class="w"> </span><span class="n">dllHandle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LoadLibrary</span><span class="p">(</span><span class="sa">L</span><span class="s">&quot;TrueSkyPluginRender_MT.dll&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>Then, the interface functions are initialized, e.g.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">//! Graphics API list</span>
-<span class="k">enum</span> <span class="nc">GraphicsDeviceType</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="n">GraphicsDeviceUnknown</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="mi">-1</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="n">GraphicsDeviceD3D11</span><span class="w">             </span><span class="o">=</span><span class="w">  </span><span class="mi">2</span><span class="w"></span>
-<span class="p">};</span><span class="w"></span>
+<span class="k">enum</span><span class="w"> </span><span class="nc">GraphicsDeviceType</span>
+<span class="p">{</span>
+<span class="w">        </span><span class="n">GraphicsDeviceUnknown</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="mi">-1</span><span class="p">,</span>
+<span class="w">        </span><span class="n">GraphicsDeviceD3D11</span><span class="w">             </span><span class="o">=</span><span class="w">  </span><span class="mi">2</span>
+<span class="p">};</span>
 
 <span class="c1">//! Event types</span>
-<span class="k">enum</span> <span class="nc">GraphicsEventType</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="n">GraphicsEventInitialize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="n">GraphicsEventShutdown</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="n">GraphicsEventBeforeReset</span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="n">GraphicsEventAfterReset</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="w"></span>
-<span class="p">};</span><span class="w"></span>
-<span class="k">typedef</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="n">FStaticInitInterface</span><span class="p">)(</span><span class="w">  </span><span class="p">);</span><span class="w"></span>
-<span class="k">typedef</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="n">FStaticSetGraphicsDevice</span><span class="p">)</span><span class="w"></span>
-<span class="w">        </span><span class="p">(</span><span class="kt">void</span><span class="o">*</span><span class="w"> </span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">GraphicsDeviceType</span><span class="w"> </span><span class="n">deviceType</span><span class="p">,</span><span class="n">GraphicsEventType</span><span class="w"> </span><span class="n">eventType</span><span class="p">);</span><span class="w"></span>
-<span class="k">typedef</span><span class="w"> </span><span class="kt">int</span><span class="p">(</span><span class="o">*</span><span class="n">FStaticRenderFrame2</span><span class="p">)(</span><span class="n">RenderFrameStruct</span><span class="o">*</span><span class="w"> </span><span class="n">frameStruct</span><span class="p">);</span><span class="w"></span>
+<span class="k">enum</span><span class="w"> </span><span class="nc">GraphicsEventType</span>
+<span class="p">{</span>
+<span class="w">        </span><span class="n">GraphicsEventInitialize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">        </span><span class="n">GraphicsEventShutdown</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">        </span><span class="n">GraphicsEventBeforeReset</span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">        </span><span class="n">GraphicsEventAfterReset</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span>
+<span class="p">};</span>
+<span class="k">typedef</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="n">FStaticInitInterface</span><span class="p">)(</span><span class="w">  </span><span class="p">);</span>
+<span class="k">typedef</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="n">FStaticSetGraphicsDevice</span><span class="p">)</span>
+<span class="w">        </span><span class="p">(</span><span class="kt">void</span><span class="o">*</span><span class="w"> </span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">GraphicsDeviceType</span><span class="w"> </span><span class="n">deviceType</span><span class="p">,</span><span class="n">GraphicsEventType</span><span class="w"> </span><span class="n">eventType</span><span class="p">);</span>
+<span class="k">typedef</span><span class="w"> </span><span class="kt">int</span><span class="p">(</span><span class="o">*</span><span class="n">FStaticRenderFrame2</span><span class="p">)(</span><span class="n">RenderFrameStruct</span><span class="o">*</span><span class="w"> </span><span class="n">frameStruct</span><span class="p">);</span>
 
-<span class="n">FStaticInitInterface</span><span class="w">                            </span><span class="n">StaticInitInterface</span><span class="o">=</span><span class="k">nullptr</span><span class="p">;</span><span class="w"></span>
-<span class="n">FStaticSetGraphicsDevice</span><span class="w">                        </span><span class="n">StaticSetGraphicsDevice</span><span class="o">=</span><span class="k">nullptr</span><span class="p">;</span><span class="w"></span>
-<span class="n">FStaticRenderFrame2</span><span class="w">                                     </span><span class="n">StaticRenderFrame2</span><span class="o">=</span><span class="k">nullptr</span><span class="p">;</span><span class="w"></span>
+<span class="n">FStaticInitInterface</span><span class="w">                            </span><span class="n">StaticInitInterface</span><span class="o">=</span><span class="k">nullptr</span><span class="p">;</span>
+<span class="n">FStaticSetGraphicsDevice</span><span class="w">                        </span><span class="n">StaticSetGraphicsDevice</span><span class="o">=</span><span class="k">nullptr</span><span class="p">;</span>
+<span class="n">FStaticRenderFrame2</span><span class="w">                                     </span><span class="n">StaticRenderFrame2</span><span class="o">=</span><span class="k">nullptr</span><span class="p">;</span>
 
-<span class="n">StaticInitInterface</span><span class="w">     </span><span class="o">=</span><span class="p">(</span><span class="n">FStaticInitInterface</span><span class="p">)</span><span class="n">GetProcAddress</span><span class="p">(</span><span class="n">dllHandle</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;StaticInitInterface&quot;</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
-<span class="n">StaticSetGraphicsDevice</span><span class="w"> </span><span class="o">=</span><span class="p">(</span><span class="n">FStaticSetGraphicsDevice</span><span class="p">)</span><span class="n">GetProcAddress</span><span class="p">(</span><span class="n">dllHandle</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;StaticSetGraphicsDevice&quot;</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="n">StaticInitInterface</span><span class="w">     </span><span class="o">=</span><span class="p">(</span><span class="n">FStaticInitInterface</span><span class="p">)</span><span class="n">GetProcAddress</span><span class="p">(</span><span class="n">dllHandle</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;StaticInitInterface&quot;</span><span class="w"> </span><span class="p">);</span>
+<span class="n">StaticSetGraphicsDevice</span><span class="w"> </span><span class="o">=</span><span class="p">(</span><span class="n">FStaticSetGraphicsDevice</span><span class="p">)</span><span class="n">GetProcAddress</span><span class="p">(</span><span class="n">dllHandle</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;StaticSetGraphicsDevice&quot;</span><span class="w"> </span><span class="p">);</span>
 </pre></div>
 </div>
 <p>It’s advisable to check that the function pointers obtained are non-zero. If all the required pointers are present, the dll can be used. We start by calling</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="o">*</span><span class="w"> </span><span class="n">currentDevice</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">current</span><span class="w"> </span><span class="n">D3D11</span><span class="w"> </span><span class="n">device</span><span class="w"> </span><span class="n">pointer</span><span class="p">);</span><span class="w"></span>
-<span class="n">StaticSetGraphicsDevice</span><span class="p">(</span><span class="n">currentDevice</span><span class="p">,</span><span class="w"> </span><span class="n">CurrentApiType</span><span class="p">,</span><span class="w"> </span><span class="n">GraphicsEventInitialize</span><span class="p">);</span><span class="w"></span>
-<span class="n">StaticInitInterface</span><span class="p">();</span><span class="w"></span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="o">*</span><span class="w"> </span><span class="n">currentDevice</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">current</span><span class="w"> </span><span class="n">D3D11</span><span class="w"> </span><span class="n">device</span><span class="w"> </span><span class="n">pointer</span><span class="p">);</span>
+<span class="n">StaticSetGraphicsDevice</span><span class="p">(</span><span class="n">currentDevice</span><span class="p">,</span><span class="w"> </span><span class="n">CurrentApiType</span><span class="p">,</span><span class="w"> </span><span class="n">GraphicsEventInitialize</span><span class="p">);</span>
+<span class="n">StaticInitInterface</span><span class="p">();</span>
 </pre></div>
 </div>
 <p>Now trueSKY is ready to render.</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">FrameStruct</span><span class="w"> </span><span class="n">frameStruct</span><span class="p">;</span><span class="w"></span>
-<span class="p">(</span><span class="n">initialize</span><span class="w"> </span><span class="n">frameStruct</span><span class="p">...)</span><span class="w"></span>
-<span class="n">StaticRenderFrame2</span><span class="p">(</span><span class="o">&amp;</span><span class="n">frameStruct</span><span class="p">);</span><span class="w"></span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">FrameStruct</span><span class="w"> </span><span class="n">frameStruct</span><span class="p">;</span>
+<span class="p">(</span><span class="n">initialize</span><span class="w"> </span><span class="n">frameStruct</span><span class="p">...)</span>
+<span class="n">StaticRenderFrame2</span><span class="p">(</span><span class="o">&amp;</span><span class="n">frameStruct</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>A reference to the relevant functions can be found <a class="reference internal" href="../Reference/plugin.html"><span class="doc">here.</span></a></p>
-<div class="section" id="deployment">
-<h2>Deployment<a class="headerlink" href="#deployment" title="Permalink to this headline">¶</a></h2>
+<section id="deployment">
+<h2>Deployment<a class="headerlink" href="#deployment" title="Permalink to this heading">¶</a></h2>
 <p>Building TrueSkyPluginRenderer has a post-build script called CopyToTargetDir. Based on the built platform and config, this tries to deploy both the built dll and shaders to where they need to go.
 This is specified by the file truesky_setup.json, which goes in the current user’s home folder. For example:</p>
 <dl>
@@ -260,55 +177,33 @@ This is specified by the file truesky_setup.json, which goes in the current user
 <p>}</p>
 <p>The members “unreal_branches”, and “unity_branches” are specifically to deploy to an Unreal or Unity engine setup.
 The member “simul_branches” is more generic, and will deploy to the specified dll and shader destination for each platform.</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="rendering.html" class="btn btn-neutral float-right" title="Rendering Techniques in trueSKY" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="nativesdk.html" class="btn btn-neutral float-left" title="Native Development with the trueSKY SDK" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="nativesdk.html" class="btn btn-neutral float-left" title="Native Development with the trueSKY SDK" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="rendering.html" class="btn btn-neutral float-right" title="Rendering Techniques in trueSKY" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright 2007-2021, Simul Software Ltd.
-
-    </p>
-  </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    <p>&#169; Copyright 2007-2021, Simul Software Ltd.</p>
+  </div> 
 
 </footer>
         </div>
       </div>
-
-    </section>
-
+    </div>
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

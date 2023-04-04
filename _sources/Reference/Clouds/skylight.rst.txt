@@ -3,3 +3,4 @@ Skylight
 
 .. doxygenclass:: simul::clouds::Skylight
    :members:
+   :undoc-members:
