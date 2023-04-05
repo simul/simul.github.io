@@ -7,7 +7,7 @@ Rainbows can be fully customised, from position to strength and colour of the ra
 ======================================  ==========================================================================================================================  =============
 Variable 								Definition																													Value
 ======================================  ==========================================================================================================================  =============
-Automatic Rainbow Position				Whether the rainbow follows the antisolar/antilunar point, or is manually set.												Bool
+Automatic Rainbow Position				Whether the rainbow follows the anti-solar/anti-lunar point, or is manually set.												Bool
 Elevation								If the automatic positioning is disabled, this sets the elevation of the rainbow.		 									0.0 to -90.0
 Azimuth									If the automatic positioning is disabled, this sets the azimuth of the rainbow.												0.0 to 360.0
 Intensity								Controls the overall brightness of the rainbow.																				0.0 to 10.0
@@ -20,7 +20,7 @@ Allow Lunar Rainbows					Whether trueSKY should generate rainbows using the moon
 Variable 								Definition																													Value
 ======================================  ==========================================================================================================================  =============
 Rain Speed (m/s)			Speed at which raindrops will fall, which adjusts any 'flutter' seen in the Rain Streaks, which are used for the rainbow.	0.0 to 120.0
-Raindrop Size (mm)			At sizes less than 1.0mm, trueSKY will use a Submillimetric Light Scattering Approximation to adjust the spectual output.	0.001 to 100.0
+Raindrop Size (mm)			At sizes less than 1.0mm, trueSKY will use a Submillimetric Light Scattering Approximation to adjust the spectral output.	0.001 to 100.0
 ======================================  ==========================================================================================================================  =============
 
 ======================================  ==========================================================================================================================  =============
@@ -30,4 +30,4 @@ Strength								Adjusts the strength the rainbow.																							0.0 to 1
 Rain Streaks							Adjusts the strength the rainbow.																							0.0 to 1.0
 ======================================  ==========================================================================================================================  =============
 
-Note: Both Rain Strength and Rain Streaks must be greated than 0 for rainbows to be generated.
+Note: Both Rain Strength and Rain Streaks must be greater than 0 for rainbows to be generated.

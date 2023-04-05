@@ -12,6 +12,8 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
@@ -56,14 +58,10 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../programming.html">Programming with the trueSKY SDK</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Native Development with the trueSKY SDK</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#using-the-samples">Using the Samples</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#integrating-the-sdk">Integrating the SDK</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#platform">Platform</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#implementing">Implementing</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#platform-considerations">Platform considerations</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="#integrating-the-sdk">Integrating the SDK</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#platform">Platform</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#implementing">Implementing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#platform-considerations">Platform considerations</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#directx-12">DirectX 12</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#directx-11">DirectX 11</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#opengl">OpenGL</a></li>
@@ -121,12 +119,12 @@
 </section>
 <section id="integrating-the-sdk">
 <h2>Integrating the SDK<a class="headerlink" href="#integrating-the-sdk" title="Permalink to this heading">¶</a></h2>
-<img alt="../_images/SimulOverview.png" src="../_images/SimulOverview.png" />
+<img alt="Overview of the Simul trueSKY system" src="../_images/SimulOverview.png" />
 <p>The main elements needed to implement trueSKY in a project are: an Environment object, which will encapsulate sky and cloud data; a WeatherRenderer; and a RenderPlatform.</p>
-<section id="platform">
-<h3>Platform<a class="headerlink" href="#platform" title="Permalink to this heading">¶</a></h3>
-<p>For all rendering, trueSKY uses <a class="reference external" href="https://platformdocumentation.readthedocs.io/en/latest/index.html">Platform</a>, an open source cross-platform rendering API and library which works as a wrapper around low-level graphics API’s. Platform is developed by Simul, and released under the MIT licence.</p>
 </section>
+<section id="platform">
+<h2>Platform<a class="headerlink" href="#platform" title="Permalink to this heading">¶</a></h2>
+<p>For all rendering, trueSKY uses <a class="reference external" href="https://platformdocumentation.readthedocs.io/en/latest/index.html">Platform</a>, an open source cross-platform rendering API and library which works as a wrapper around low-level graphics API’s. Platform is developed by Simul, and released under the MIT licence.</p>
 </section>
 <section id="implementing">
 <h2>Implementing<a class="headerlink" href="#implementing" title="Permalink to this heading">¶</a></h2>
@@ -217,9 +215,9 @@ but the chosen number depends on how bright you want the sky to be relative to y
 <p>The depth texture is used to ensure correct atmospherics and cloud rendering.
 The <em>depthViewport</em> specifies what area of the texture is being used for the current view (some engines store a larger texture and use a portion of it): pass nullptr here to use the entire texture.
 See also <a class="reference internal" href="rendering.html"><span class="doc">Mixed Resolution Rendering</span></a>.</p>
-<section id="platform-considerations">
-<h3>Platform considerations<a class="headerlink" href="#platform-considerations" title="Permalink to this heading">¶</a></h3>
 </section>
+<section id="platform-considerations">
+<h2>Platform considerations<a class="headerlink" href="#platform-considerations" title="Permalink to this heading">¶</a></h2>
 </section>
 <section id="directx-12">
 <h2>DirectX 12<a class="headerlink" href="#directx-12" title="Permalink to this heading">¶</a></h2>

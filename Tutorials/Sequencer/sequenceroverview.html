@@ -12,6 +12,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
@@ -53,7 +55,7 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../sequencer.html">Sky Sequencer</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Sky Sequencer Overview</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#registration">Registration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#details">Details</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#properties">Properties</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloud-window">Cloud Window</a></li>
 </ul>
 </li>
@@ -130,7 +132,7 @@
 <td><p>Here you can login to your account using your username and licence key, this is needed to edit the sequencer</p></td>
 </tr>
 <tr class="row-odd"><td><p>2</p></td>
-<td><p><a class="reference internal" href="#details">Details</a></p></td>
+<td><p><a class="reference internal" href="#properties">Properties</a></p></td>
 <td><p>If you select an option with editable variables, they will appear here.</p></td>
 </tr>
 <tr class="row-even"><td><p>3</p></td>
@@ -154,11 +156,11 @@
 <p>5: In the sky sequencer, enter your username and licence key under ‘registration’. If your details are correct, you will see the text ‘OK’ displayed under the licence key fields.</p>
 <p>trueSKY can now be customised within your scene.</p>
 </section>
-<section id="details">
-<h2>Details<a class="headerlink" href="#details" title="Permalink to this heading">¶</a></h2>
-<p>The details panel contains information about the currently selected keyframe or layer. This can all be edited, with changed taking place in real time. This panel will only show up if you have selected a keyframe.</p>
-<p>To edit a keyframe, first select it with left click. This will bring up all the keyframes variables in the details column.</p>
-<img alt="The details panel of a selected Cloud Keyframe" src="../../_images/details.png" />
+<section id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this heading">¶</a></h2>
+<p>The Properties panel contains information about the currently selected keyframe or layer. This can all be edited, with changed taking place in real time. This panel will only show up if you have selected a keyframe.</p>
+<p>To edit a keyframe, first select it with left click. This will bring up all the keyframes variables in the properties column.</p>
+<img alt="The properties panel of a selected Cloud Keyframe" src="../../_images/details.png" />
 <p>Now you can see all the variables that can be altered within the Sequencer. You can either drag the bar to alter the value, or edit the values by typing. All of the values are clamped to certain ranges. Plus, each value can be returned to its default position with the yellow arrow to the right of the value. This arrow will only appear of the value has been changed from it’s default state.</p>
 <p>Layers also have their own settings which will change the values of all the keyframes in that layer. An example of this is within the Sky layer, you can change the diameter of the sun. This effect will take place for all the Sky Keyframes. To select a layer, just click on its name in the column to the left of the timeline. To see what each of the settings do, head over to our <a class="reference internal" href="../Clouds/cloudsvariables.html"><span class="doc">Cloud</span></a>, <a class="reference internal" href="../Sky/skyvariables.html"><span class="doc">Sky</span></a>, or <a class="reference internal" href="../Storms/stormsvariables.html"><span class="doc">Storm</span></a> pages.</p>
 <section id="unreal">
@@ -176,9 +178,9 @@
 <p>The Red Arc is your current view in the project. This can be helpful for figuring out what direction you are looking in, in relation to trueSKY.</p>
 <p>Double clicking will enter Volume Edit mode, where you can individually move and edit <span class="xref std std-doc">volumes</span>. You cannot enter Volume edit mode if there are no volumes on the cloud layer.</p>
 <p>If you select a keyframe, the layer width is represented by a blue box, whereas a blue circle represents the precipitation radius. To find out more about how to use the Cloud Window to control precipitation, please view this <a class="reference internal" href="../Precipitation/precipitationtutorial.html"><span class="doc">tutorial</span></a>.</p>
-<img alt="The trueSKY cloud window, with a centred origin, a precipitation region and an offset cloud keyframe." src="../../_images/WorldGrid.png" />
+<img alt="A close up look of the trueSKY cloud window." src="../../_images/WorldGrid.png" />
 <p><em>You can see the cloud formations from the grey box, the current cloud layers origin and width from the blue box, and finally the precipitation radius with the blue circle.</em></p>
-<p>A sequence is a collection of Layers and keyframes, that can be saved and used in any scene that incorporates trueSKY. There can only be one sequence active at a time, although you can switch between them at run-time. You can use sequences to save specific weather formations for set times of the day.</p>
+<p>A sequence is a collection of layers and keyframes, that can be saved and used in any scene that incorporates trueSKY. There can only be one sequence active at a time, although you can switch between them at run-time. You can use sequences to save specific weather formations for set times of the day.</p>
 </section>
 </section>
 

@@ -7,7 +7,8 @@ You need to be within the Auroral Oval with the generated aurorae within the vie
 Aurorae can be customised, from global position to strength and auroral colours.
 
 
-Auroral Oval Settings:
+Auroral Oval Settings
+''''''''''''''''''''''''
 
 ======================================  ==============================================================================================================================================  =============
 Variable 								Definition																																		Value
@@ -22,7 +23,8 @@ Show Auroral Oval in Cloud Window		Whether trueSKY should draw the Auroral Oval 
 ======================================  ==============================================================================================================================================  =============
 
 
-Aurora Intensity Settings:
+Aurora Intensity Settings
+''''''''''''''''''''''''''''''''
 
 ======================================  ==============================================================================================================================================  =============
 Variable 								Definition																																		Value
@@ -33,7 +35,8 @@ Auroral Layers Intensity				A simple output multiplier for general brightness co
 ======================================  ==============================================================================================================================================  =============
 
 
-Auroral Layer Settings:
+Auroral Layer Settings
+''''''''''''''''''''''''''''''''
 
 ======================================  ==============================================================================================================================================  =============
 Variable 								Definition																																		Value
@@ -44,7 +47,8 @@ Emitted Wavelength (nm)					Wavelength of the emitted light in nm.														
 Strength (kR)							Strength of the Emitted Light in kR (KiloRayleigh). Example values: `Aurorae Spectral Intensity Graph`_											1.0 to 100.0
 ======================================  ==============================================================================================================================================  =============
 
-Field Aligned Currents Controls:
+Field Aligned Currents Controls
+''''''''''''''''''''''''''''''''
 
 ======================================  ==============================================================================================================================================  =============
 Variable 								Definition																																		Value
@@ -59,7 +63,8 @@ Origin Longitude						A longitude offset from the geomagnetic north pole for the
 
 There are four regions; two per Dawn and Dusk side of the planet.
 
-Other Settings:
+Other Settings
+''''''''''''''''
 
 ======================================  ==============================================================================================================================================  =============
 Variable 								Definition																																		Value

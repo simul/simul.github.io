@@ -12,6 +12,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
@@ -118,7 +120,7 @@
 <h2>Aurorae Map Generation and Compositing<a class="headerlink" href="#aurorae-map-generation-and-compositing" title="Permalink to this heading">¶</a></h2>
 <p>Based on the settings passed from Field Aligned Current Controls, trueSKY will create a Field Aligned Current Map, which encodes the strength and direction of the global electric fields about the geomagnetic north pole (up to 30 degrees from that poles). It calculates the Pederson and Hall currents along with the positive and negative electric potentials. Next, trueSKY will draw the Intensity Map, which traces out the auroral lines following the Hall currents and calculates the amount of electron deposition at each point about the geomagnetic north pole. The last texture to draw is the Electron Deposition Table, which encodes the colour of the aurora between the input energies of 0 to 32 keV and altitudes ranging from 0 - 500km. Using the generated maps, the position of the viewer and the position of the geomagnetic north pole, trueSKY will composite the aurorae to the screen through a simple raytracer.</p>
 <p>Debug overlay:</p>
-<img alt="../../_images/auroraeDebugOverlay.png" src="../../_images/auroraeDebugOverlay.png" />
+<img alt="Aurora debug overlay shows intensity field aligned current maps." src="../../_images/auroraeDebugOverlay.png" />
 </section>
 <section id="performance">
 <h2>Performance<a class="headerlink" href="#performance" title="Permalink to this heading">¶</a></h2>

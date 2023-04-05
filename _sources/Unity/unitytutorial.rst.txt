@@ -16,9 +16,10 @@ Obtaining the trueSKY Unity Package
 1: Login to your account at https://simul.co/account. If you have not created an account yet, head over to :doc:`Getting Started <../installation>` to get setup.
 
 
-2: Download trueSKY Unity Package from https://simul.co/downloads. Make sure to select the correct engine version you desire, and we always recommend the most up to date version of trueSKY. Be aware Unity has issues importing packages from the downloads folder, so we recommend saving the file in a different directory related to Unity.
+2: Download trueSKY Unity Package from https://simul.co/downloads. Make sure to select the correct engine version you desire, and we always recommend the most up to date version of trueSKY. The top of the download page has the option to download the latest version of trueSKY with the latest version of Unity. Be aware Unity has issues importing packages from the downloads folder, so we recommend saving the file in a different directory related to Unity.
 
 .. image:: /../Help/images/unity/downloadpage.png
+   :alt: There are different versions of trueSKY available for each Unity version.
 
 
 Installing the Plugin
@@ -29,17 +30,20 @@ Installing the Plugin
 2: Click on 'Assets -> Import Package -> Custom Package'.
 
 .. image:: /../Help/images/unity/importpackage.png
+   :alt: Import package is in the asset drop-down menu
 
 
 3: Locate and select the trueSKY package you just downloaded.
 
-4: Unity will now decompress the package for your scene. This may take up to 10 minutes, depending on your machine.
+4: Unity will now decompress the package for your scene. This may take up to 5 minutes, depending on your machine.
 
 .. image:: /../Help/images/unity/preparingpackage.png
+   :alt: Preparing package can take some time.
 
 5: Unity will ask you which files to import, make sure they are all selected.
 
 .. image:: /../Help/images/unity/importpackagefinished.png
+   :alt: The imported package should import everything available.
 
 
 Adding trueSKY to the scene
@@ -49,6 +53,7 @@ Adding trueSKY to the scene
 2: Click on 'GameObject -> Initialize trueSKY in scene' from the dropdown menus at the top of the window.
 
 .. image:: /../Help/images/unity/initializetruesky.png
+   :alt: Initialize trueSKY is in the GameObject drop-down menu.
 
 3: Make sure you have the scene open that you want to initialize trueSKY into, then click next. Otherwise, load up a different scene before starting the initialization.
 
@@ -73,6 +78,7 @@ Creating New Sky Sequences
 1: Right click within the Asset Window and click 'Create -> New trueSky Sequence', which will appear at the bottom of the options.
 
 .. image:: /../Help/images/unity/addsequence.png
+   :alt: Create Sequence is within the Create menu of the asset window.
 
 2: The new sequence will be created within the asset window.
 
@@ -80,6 +86,7 @@ Creating New Sky Sequences
 3: To make this new sequence the active sequence in the world, select the trueSky object from the hierarchy. Then in the inspector, find "Sequence Asset" in the trueSKY script.
 
 .. image:: /../Help/images/unity/setsequence.png
+   :alt: Set the active trueSKY Sequence though the asset inspector.
 
 4: You can either manually select your sequence from within the Inspector, or you can drag and drop your preferred sequence from the asset browser to the active sequence box.
 

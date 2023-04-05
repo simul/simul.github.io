@@ -3,15 +3,16 @@ Native Development with the trueSKY SDK
 =======================================
 
 Using the Samples
-`````````````````
+-------------------
 
 To build the samples, use CMake to configure and generate the project files, then open the 'Simul.sln' located in the root of the CMake output directory.
 
 
 Integrating the SDK
-```````````````````
+-------------------
 
 .. image:: /../Help/images/SimulOverview.png
+	:alt: Overview of the Simul trueSKY system
 
 The main elements needed to implement trueSKY in a project are: an Environment object, which will encapsulate sky and cloud data; a WeatherRenderer; and a RenderPlatform.
 
@@ -20,7 +21,7 @@ Platform
 For all rendering, trueSKY uses `Platform <https://platformdocumentation.readthedocs.io/en/latest/index.html>`_, an open source cross-platform rendering API and library which works as a wrapper around low-level graphics API's. Platform is developed by Simul, and released under the MIT licence.
 
 Implementing
-````````````
+-------------------
 
 *Include paths*: add the parent of the "Simul" source directory, and the parent of "Platform" as include paths.
 
@@ -150,7 +151,7 @@ Platform considerations
 ---------------------------
 
 DirectX 12
-``````````
+-------------------
 To add True Sky to a DirectX 12 project, you need to link with the Simul core libraries, with the Platform Direct3D 12 library, e.g. SimulDirectX12_MT, and with DirectXTex, a Microsoft library for loading textures.
 
 * In the project properties, select Configuration:All, then under "Configuration Properties, C++, General" add the following to "Additional Include Directories":
@@ -167,7 +168,7 @@ To add True Sky to a DirectX 12 project, you need to link with the Simul core li
 	$(Simul build path)\build\lib\$(Configuration)
 
 DirectX 11
-``````````
+-------------------
 
 To add True Sky to a DirectX 11 project, you need to link with the Simul core libraries, with the Platform Direct3D 11 library, e.g. SimulDirectX11_MD, and with DirectXTex.
 
@@ -187,7 +188,7 @@ The $(Platform path) folder is by default located in the Simul folder.
 	$(Simul build path)\lib\$(Configuration)
 
 OpenGL
-``````
+-------------------
 
 In order to build the OpenGL sample you will need GLFW, and GLEW (both included in $(Platform path)/External).
 
@@ -210,7 +211,7 @@ To add True Sky to an OpenGL project:
 
 
 Vulkan
-``````
+-------------------
 
 In order to build the Vulkan sample, you will also require GLUT and GLEW, which are both included in Simul/External.
 

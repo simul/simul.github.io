@@ -10,7 +10,7 @@ The sequencer is made up of 4 distinct parts
 Number		Section Name 							Definition
 ============  ======================================  =====================================================================================================================
 1		`Registration`_					Here you can login to your account using your username and licence key, this is needed to edit the sequencer
-2		`Details`_						If you select an option with editable variables, they will appear here.
+2		`Properties`_						If you select an option with editable variables, they will appear here.
 3		`Cloud Window`_					Top down view of the cloud coverage of the world.
 4		:doc:`Timeline <sequencertimeline>` 					A sequential timeline of all the trueSKY effects that will take place in this sequence
 ============  ======================================  =====================================================================================================================
@@ -37,15 +37,15 @@ Before you can edit anything on the Sequencer, you need to have entered your use
 trueSKY can now be customised within your scene.
 
 
-Details
+Properties
 --------------
 
-The details panel contains information about the currently selected keyframe or layer. This can all be edited, with changed taking place in real time. This panel will only show up if you have selected a keyframe.
+The Properties panel contains information about the currently selected keyframe or layer. This can all be edited, with changed taking place in real time. This panel will only show up if you have selected a keyframe.
 
-To edit a keyframe, first select it with left click. This will bring up all the keyframes variables in the details column. 
+To edit a keyframe, first select it with left click. This will bring up all the keyframes variables in the properties column. 
 
 .. image:: ../../../Help/images/unreal/details.png
-	:alt: The details panel of a selected Cloud Keyframe
+	:alt: The properties panel of a selected Cloud Keyframe
 
 Now you can see all the variables that can be altered within the Sequencer. You can either drag the bar to alter the value, or edit the values by typing. All of the values are clamped to certain ranges. Plus, each value can be returned to its default position with the yellow arrow to the right of the value. This arrow will only appear of the value has been changed from it's default state.
 
@@ -72,11 +72,11 @@ Double clicking will enter Volume Edit mode, where you can individually move and
 If you select a keyframe, the layer width is represented by a blue box, whereas a blue circle represents the precipitation radius. To find out more about how to use the Cloud Window to control precipitation, please view this :doc:`tutorial <../Precipitation/precipitationtutorial>`.
 
 .. image:: ../../../Help/images/unreal/WorldGrid.png
-	:alt: The trueSKY cloud window, with a centred origin, a precipitation region and an offset cloud keyframe.
+	:alt: A close up look of the trueSKY cloud window.
 
 *You can see the cloud formations from the grey box, the current cloud layers origin and width from the blue box, and finally the precipitation radius with the blue circle.*
 
 
 Sequence
 ``````````
-A sequence is a collection of Layers and keyframes, that can be saved and used in any scene that incorporates trueSKY. There can only be one sequence active at a time, although you can switch between them at run-time. You can use sequences to save specific weather formations for set times of the day.
+A sequence is a collection of layers and keyframes, that can be saved and used in any scene that incorporates trueSKY. There can only be one sequence active at a time, although you can switch between them at run-time. You can use sequences to save specific weather formations for set times of the day.

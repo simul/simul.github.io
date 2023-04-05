@@ -34,7 +34,7 @@ Threshold (km)										Thickness of cloud needed for rainfall. No threshold whe
 ==================================================  ==============================================================================================================  =============
 
 
-UE4 only
+Unreal only
 --------
 ==================================================  ==============================================================================================================  =============
 Variable 											Definition																										Value
@@ -43,7 +43,7 @@ Rain Cubemap										Cubemap to be used to light the Rain 																			Cu
 Velocity Streaks									If the raindrop shape is altered by their velocity. 								 							Bool
 Simulation Time										If time progression should be taken into account for rain fall. 												Bool
 Rain Near Threshold									Draw no rain closer than this distance. 																		0.01 to 0.5
-Rain Mask Scene Capture 2D				2D Screen capture to limit rain below surfaces. Lean more about this :doc:`here <precipitationtutorial>`.		Scene Capture 2D
+Rain Mask Scene Capture 2D							2D Screen capture to limit rain below surfaces. :doc:`Scene capture tutorial <precipitationtutorial>`.		Scene Capture 2D
 Rain Mask Width										Width of the Rain Mask																							100 to 50000
 Rain Mask Depth Extent								Height of the Rain Mask																						100 to 100000
 Translucent RT										The render texture used to render Precipitation effects.														Render Texture

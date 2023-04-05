@@ -12,6 +12,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
@@ -61,7 +63,6 @@
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Storms Tutorial</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#editing-storms-in-the-sequencer">Editing Storms in the Sequencer</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#unity">Unity</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ue4">UE4</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="stormsvariables.html">Variables</a></li>
@@ -116,9 +117,8 @@
 <h1>Storms Tutorial<a class="headerlink" href="#storms-tutorial" title="Permalink to this heading">¶</a></h1>
 <section id="editing-storms-in-the-sequencer">
 <h2>Editing Storms in the Sequencer<a class="headerlink" href="#editing-storms-in-the-sequencer" title="Permalink to this heading">¶</a></h2>
-<p>To create a storm in the sequencer, simply right click on the 3D cloud layer and select “Add storm”. Clicking on the keyframe will show a selection of storm properties that can be changed. To set the storm’s start time, end time and duration, simply drag out its edges horizontally to encompass what part of the timeline is required. Make sure there are enough clouds to produce lightning while the storm is active.</p>
-<img alt="../../_images/stormsequencer.png" src="../../_images/stormsequencer.png" />
-<p>You cannot drag the storm keyframe to move it, you must move it by extending and shrinking the keyframe. This is because, unlike keyframes which effect lasts until the next keyframe, Storms must have a set, determined size.</p>
+<p>To create a storm in the sequencer, simply right click on the 3D cloud layer and select “Add storm”. Clicking on the keyframe will show a selection of storm properties that can be changed. To set the storm’s start time, end time and duration, simply drag out its edges horizontally to encompass what part of the timeline is required. Make sure there are enough clouds to produce lightning while the storm is active. You can also drag the storm keyframe by clicking the centre.</p>
+<img alt="../Help/images/unity/stormsequencer.png:" src="../Help/images/unity/stormsequencer.png:" />
 </section>
 <section id="unity">
 <h2>Unity<a class="headerlink" href="#unity" title="Permalink to this heading">¶</a></h2>
@@ -127,13 +127,6 @@
 <p>As with cloud and sky keyframes, to get/set properties of a storm keyframe, you will first need to get its uid. To do this, use GetStormUidByIndex(int index) or GetStormUidAtTime(float time).</p>
 <p>Once you have the storm keyframe’s uid, you can get and set its float and int properties using GetStormFloat(uint uid, string name), SetStormFloat(uint uid, string name, float value), GetStormInt(uint uid, string name) and SetStormInt(uint uid, string name, int value).</p>
 <p>For information on these functions, see <a class="reference internal" href="../../Unity/unityscripting.html"><span class="doc">Scripting</span></a>. The tables below show the storm properties (named as they appear in the sequencer), along with the matching name string to use for scripting. <strong>Note:</strong> Parameters that are Bools in the Sequencer are treated as Ints in scripting, where 0 = false and 1 = true.</p>
-</section>
-</section>
-<section id="ue4">
-<h2>UE4<a class="headerlink" href="#ue4" title="Permalink to this heading">¶</a></h2>
-<section id="editing-storm-through-blueprints">
-<h3>Editing Storm through Blueprints<a class="headerlink" href="#editing-storm-through-blueprints" title="Permalink to this heading">¶</a></h3>
-<p>Coming Soon</p>
 </section>
 </section>
 </section>

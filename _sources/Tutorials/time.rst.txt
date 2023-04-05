@@ -49,6 +49,7 @@ TrueSKY supports three different modes of update - Game Time, Fixed Time and Rea
 
 
 .. image:: /../Help/images/unreal/updateoptions.png
+	:alt: Different methods of interpolating time
 
 The number of Subdivisions controls how finely the interpolation is performed. It is the number of intermediate steps between keyframes (for Fixed Intervals), or in the Game Time or Real Time period specified.
 

@@ -12,6 +12,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
@@ -120,8 +122,8 @@
 <h1>Precipitation Tutorial<a class="headerlink" href="#precipitation-tutorial" title="Permalink to this heading">¶</a></h1>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
-<p>Precipitation is controlled by cloud keyframes under the Weather Effects section in the Properties window of the selected cloud keyframe. Precipitation is bounded in trueSKY, and there are two main categories: cloud window and regional. This is controlled by the ‘Regional’ checkbox. A cloud window bounding means that the precipitation will fall across the scene. The  regional bounding limits the range and position of the precipitation; these are called precipitation that is regions. A Cloud Map Texture, which are explained later, also act to bound the precipitation by defining the shape of the cloud (see section on Cloud Map Texture).</p>
-<p>Precipitation regions are associated with their keyframe and their parameters, such as Radius, Strength and Rain - Snow, along with their position on the globe are interpolated over time. Precipitation regions can be position through the Cloud Window.</p>
+<p>Precipitation is controlled by cloud keyframes under the Precipitation section in the Properties window. By default, precipitation is unbound. This means as long as you are underneath clouds of a specified thickness:doc:<cite>(Threshold Km)&lt;/precipitationvariables&gt;</cite>, precipitation will be visible. Alternatively, in the properties panel of a cloud keyframe we have an checkbox for Regional precipitation. The regional bounding limits the range and position of the precipitation; also called precipitation regions. These regions can be positioned and moved at runtime. A Cloud Map Texture, which are explained later, also act to bound the precipitation by defining the shape of the clouds (see section on Cloud Map Texture).</p>
+<p>Precipitation regions are associated with their keyframe and as such their parameters, such as Radius, Strength and Rain - Snow, along with their position on the globe, are interpolated over time.</p>
 <div class="video-wrapper">
 	<div class="video-container">
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/pmyUjm__UkI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -136,12 +138,12 @@
 <p>After selecting a cloud keyframe from the timeline you wish to modify, you see a light blue box with a light blue shaded circle appear. This represents the static cloud keyframe - precipitation region pair; there will be one of these ‘static’ pairs per selected cloud keyframe from the timeline.</p>
 <p>To move a precipitation region, click on the cloud window to select the window focus. Then use Shift + Left Click to drag the precipitation region. Remember that the precipitation region’s position is relative to the position of its cloud keyframe, such that moving the cloud keyframe (with Left Click) will also cause the precipitation region move. The size of precipitation regions is modified by the Radius parameter in the Properties page, and these size changes are reflected in the Cloud Window.</p>
 <p>To learn more about the Cloud Window, please view this <a class="reference internal" href="../Sequencer/sequenceroverview.html"><span class="doc">tutorial</span></a>.</p>
-<img alt="../../_images/CloudWindowPrecipitationRegions.png" src="../../_images/CloudWindowPrecipitationRegions.png" />
+<img alt="The Cloud window with a precipitation regions are shown in blue." src="../../_images/CloudWindowPrecipitationRegions.png" />
 </section>
 <section id="cloud-map-texture">
 <h2>Cloud Map Texture<a class="headerlink" href="#cloud-map-texture" title="Permalink to this heading">¶</a></h2>
 <p>A cloud map texture can be added to a cloud layer via its Properties window. This acts as a mask for both the cloud and precipitation generation. In terms of precipitation, this mask restricts the area in which precipitation can fall. This mask works in conjunction with the precipitation region to refine further shape of the precipitation volumes.</p>
-<img alt="../../_images/RainOverlayWithCloudMasks.png" src="../../_images/RainOverlayWithCloudMasks.png" />
+<img alt="Debug overlays showing the precipitation volumes being affected by the cloud mask." src="../../_images/RainOverlayWithCloudMasks.png" />
 </section>
 <section id="wind-speed-affecting-rain">
 <h2>Wind Speed Affecting Rain<a class="headerlink" href="#wind-speed-affecting-rain" title="Permalink to this heading">¶</a></h2>
@@ -149,17 +151,13 @@
 </section>
 <section id="precipitation-under-cover">
 <h2>Precipitation under cover?<a class="headerlink" href="#precipitation-under-cover" title="Permalink to this heading">¶</a></h2>
-<section id="ue4">
-<h3>UE4<a class="headerlink" href="#ue4" title="Permalink to this heading">¶</a></h3>
-<ul class="simple">
-<li><p>To prevent precipitation from falling in covered areas, create a SceneCapture2D actor and give it a texture target that contains only a red channel; e.g. RainDepthRT from the trueSKY content. Make the Capture Source “SceneDepth in R”. You don’t need to enable “Capture Every Frame” unless you expect the geometry to change.</p></li>
-</ul>
-<img alt="../../_images/scenecapture2dProperties.png" src="../../_images/scenecapture2dProperties.png" />
-<ul class="simple">
-<li><p>Rotate the SceneCapture2D actor to face downwards.</p></li>
-<li><p>On the trueSKY Sequence Actor, assign the SceneCapture2D actor to the Rain Mask SceneCapture property. Now precipitation will only appear where there is no cover above the SceneCapture actor.</p></li>
-</ul>
-<img alt="../../_images/precipitationProperties.png" src="../../_images/precipitationProperties.png" />
+<section id="unreal">
+<h3>Unreal<a class="headerlink" href="#unreal" title="Permalink to this heading">¶</a></h3>
+<p>To prevent precipitation from falling in covered areas, create a SceneCapture2D actor and give it a texture target that contains only a red channel; e.g. RainDepthRT from the trueSKY content. Make the Capture Source “SceneDepth in R”. You don’t need to enable “Capture Every Frame” unless you expect the geometry to change.</p>
+<img alt="The SceneCapture2D actor has a RainDepthRT assigned as it's target." src="../../_images/scenecapture2dProperties.png" />
+<p>Rotate the SceneCapture2D actor to face downwards.</p>
+<p>On the trueSKY Sequence Actor, assign the SceneCapture2D actor to the Rain Mask SceneCapture property. Now precipitation will only appear where there is no cover above the SceneCapture actor.</p>
+<img alt="The SceneCapture2D assigned on the trueSKY actor as the rain mask." src="../../_images/precipitationProperties.png" />
 </section>
 </section>
 </section>

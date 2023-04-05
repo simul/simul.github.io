@@ -12,6 +12,8 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
@@ -155,7 +157,7 @@
 <p>Using Unreal’s Cinematic Sequencer is easy, as we have made most of our variables interpolatable (You can add a keyframe to the sequence). You can’t adjust the cloud settings, but you can adjust the time - and all the clouds settings are automatically interpolated between using our own Sky Sequencer. So all you need to do is setup the scene in trueSKY’s Sky Sequencer, e.g. have the cloudiness at 11:00 be 0.9 and then another cloud keyframe at 14:00 with a cloudiness of 0. Then, using Unreal’s Sequencer, you can adjust your cinematic to adjust between these two times, and trueSKY will automatically adjust the cloud settings between the time intervals.</p>
 <hr class="docutils" />
 <p>TrueSKY supports three different modes of update - Game Time, Fixed Time and Real Time.</p>
-<img alt="../_images/updateoptions.png" src="../_images/updateoptions.png" />
+<img alt="Different methods of interpolating time" src="../_images/updateoptions.png" />
 <p>The number of Subdivisions controls how finely the interpolation is performed. It is the number of intermediate steps between keyframes (for Fixed Intervals), or in the Game Time or Real Time period specified.</p>
 </section>
 </section>

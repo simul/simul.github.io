@@ -8,6 +8,7 @@ Based on the settings passed from Field Aligned Current Controls, trueSKY will c
 Debug overlay:
 
 .. image:: ../../../Help/images/aurorae/auroraeDebugOverlay.png
+	:alt: Aurora debug overlay shows intensity field aligned current maps.
 
 Performance
 ----------

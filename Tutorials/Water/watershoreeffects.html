@@ -12,6 +12,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
@@ -113,11 +115,11 @@
              
   <section id="shore-effects">
 <h1>Shore Effects<a class="headerlink" href="#shore-effects" title="Permalink to this heading">¶</a></h1>
-<img alt="../../_images/shoreeffects.png" src="../../_images/shoreeffects.png" />
+<img alt="Comparison between shore effects being enabled and disabled" src="../../_images/shoreeffects.png" />
 <p>To apply Shore effects to a boundless ocean, add a 2D Scene depth camera into your project, with only Scene depth in R enabled.</p>
-<img alt="../../_images/scenedepthR.png" src="../../_images/scenedepthR.png" />
+<img alt="Scene Depth in R should be enabled" src="../../_images/scenedepthR.png" />
 <p>Next, create a RenderTexture, setting it to capture only the Red channel</p>
-<img alt="../../_images/RenderTargetFormat.png" src="../../_images/RenderTargetFormat.png" />
+<img alt="Render Target Format of RTF R16f" src="../../_images/RenderTargetFormat.png" />
 <p>Now, attach the RenderTexture to the 2DSceneCapture, and attach the Camera to the correct water instance.</p>
 <p>You can now place the camera above where you want to apply the effect (pointing downwards), and adjust the Shore Depth Width and Extents to your liking.</p>
 </section>

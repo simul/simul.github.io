@@ -7,18 +7,21 @@ Point Lights
 Point lights can be used to illuminate the clouds. Because of the relative scale of clouds compared to the scene, the intensity of the light must be very large in order to have a visible effect.
 
 .. image:: ../../../Help/images/unreal/pointlight.png
+	:alt: A blue point light affecting the surrounding clouds
 
 
-UE4 useage
+Unreal
 -------------
 
 This can be done with the SetPointLight Blueprint node. Attach one of your point lights in the scene to our Set Point Light function, allowing trueSKY to take the properties and apply it to the clouds.
 
 .. image:: ../../../Help/images/unreal/setpointlightblueprint.png
+	:alt: Blueprint setup to tell trueSKY to use an unreal point light.
 
 If you do not have a PointLight actor, you can use SetPointLightSource to create a new point light and individually apply the position, colour and intensity of a light to the clouds.
 
 .. image:: ../../../Help/images/unreal/setpointlightsource.png
+	:alt: Blueprint node to create a point light for trueSKY
 
 Brightness Power
 ````````````````````````````````````
@@ -39,18 +42,23 @@ trueSKY is a physically-based renderer, which means that the light and colour va
 
 You can use this value to calibrate the other lights in your scene. Say you have a point light representing an electric bulb. The brightness of this light would in reality be constant. But because trueSKY adjusts the physical value of a pixel as time passes, you must compensate for this by scaling the intensity of the bulb by the inverse of the reference radiance.
 
-.. image:: ../../../Help/images/unreal/ReferenceSpectralRadiance.png 
+.. image:: ../../../Help/images/unreal/ReferenceSpectralRadiance.png
+	:alt: How to use spectral radiance to modulate the intensity of scene lights.
+
 *Using the spectral radiance value to modulate the intensity of lights in the scene.*
 
 So the light appears to get brighter as day turns to night. You can get the same effect using Unreal's Eye Adaptation (Auto Exposure). But because this is a post-process effect, it cannot cope with very dark scenes - you may see banding in the sky colours due to the low numerical accuracy of very small numbers.
 
 .. image:: ../../../Help/images/unreal/DayLightRadiance.png
+	:alt: Unreal scene in the morning
 *Spectral radiance example: Day*
 
 .. image:: ../../../Help/images/unreal/SunsetLightRadiance.png
+	:alt: Unreal scene at sunset
 *Spectral radiance example: Sunset*
 
 .. image:: ../../../Help/images/unreal/NightLightRadiance.png
+	:alt: Unreal scene at night, point light is more visible in this scene.
 *Spectral radiance example: Night*
 
 Light Units
@@ -65,6 +73,7 @@ Transparency
 In a material that uses transparency, insert the trueSKYTransparencyModifier function between the inputs and the final output node:
 
 .. image:: ../../../Help/images/unreal/Transparency.png
+	:alt: Blueprint setup required for a translucent material to interact with trueSKY.
 *Using the trueSKYTransparencyModifier material function to modulate the material output values*
 
 Unity Usage

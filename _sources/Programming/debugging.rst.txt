@@ -7,12 +7,15 @@ Unreal Debug Overlays
 To show the trueSKY debugging overlays, assign the Render Target Texture TrueSkyOverlayRT (under TrueSkyPlugin/Overlay content) to the Overlay RT slot in the trueSKY Sequence Actor. The RT texture is then used with the PostProcessVolume: under Rendering Features, add a Post Process Material, and set it to the TrueSkyOverlay material reference.
 
 .. image:: /../Help/images/unreal/postprocessmaterial.png
+	:alt: The Rendering Features options on an Unreal post process volume.
 
 .. image:: /../Help/images/unreal/overlayrt.png
+	:alt: trueSKYOverlayRT must also be assigned in the TrueSkyTextures section of the trueSKYActor.
 
 The overlays can then be set in Windows->Overlays and then select the overlays you want to show.
 
 .. image:: /../Help/images/unreal/DebugWindows.png
+	:alt: The overlays drop-down can be found within the window menu of Unreal.
 
 
 Celestial Display
@@ -20,8 +23,9 @@ Celestial Display
 Shows the current position and path of the Sun and Moon. The circles indicate the positions between the current and next keyframe.
 
 .. image:: /../Help/images/CelestialDisplay.png
-.. note:
-	This image shows an example of a default celestial display and an example where the Sun's position has been altered
+	:alt: A default celestial movement and an unnatural movement shown with debug tools.
+
+*This image shows an example of a default celestial display and an example where the Sun's position has been altered*
 
 Profiling
 -------------------

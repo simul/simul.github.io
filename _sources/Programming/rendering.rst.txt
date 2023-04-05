@@ -31,14 +31,13 @@ It uses a plate-carree projection, aligned with the galactic horizon. Given the 
 i.e. the x coordinate is proportional to the azimuth, and the y coordinate is proportional to the sine of the elevation.
 
 .. image:: /../Help/images/MilkyWay.png
+   :alt: A texture showing the Milky Way Galaxy.
 
 You may see some stretching at the top and bottom of the image due to degeneracy of the projection, so it is preferable to have the texture fade to black at the top and bottom edges.
 
 Sun and Stars
 -------------
-
-Stars are drawn as point sprites, and turn around the axis of the Earth's rotation, in the same direction as the sun. Stars are usually drawn to the highest-resolution buffer (i.e. the main or final frame buffer or render target). See
-:doc:`StarBrightness and MaxStarMagnitude <../Reference/Sky/skykeyframer>`.
+Stars are drawn as point sprites, and turn around the axis of the Earth's rotation, in the same direction as the sun. Stars are usually drawn to the highest-resolution buffer (i.e. the main or final frame buffer or render target). See :doc:`Star Brightness and Max Star Magnitude <../Tutorials/Sky/skyvariables>`.
 
 The sun is drawn after the stars, also to the main buffer.
 
@@ -76,6 +75,7 @@ Each cloud keyframe has a :doc:`PrecipitationRegion <../Reference/Clouds/cloudke
 if it is not global for the keyframe. The amount of particles used for precipitation can be altered with the :doc:`MaxParticles <../Reference/Clouds/precipitationrenderer>` property.
 
 .. image:: /../Help/images/Lightning-RainStreaks.jpg
+   :alt: Distant rain streaks (virga) with a lightning strike through the centre.
 
 Classes derived from simul::clouds::BasePrecipitationRenderer are used to draw the rain or snow particles, while the \link simul::clouds::PrecipitationRegion rain streak effect\endlink is drawn by the cloud renderer. This class has a property "UseSimulationTime" which determines whether rain and snow speed is based on the simulated time-of-day, or real time in seconds.
 
@@ -97,5 +97,6 @@ TrueSKY's cloud rendering is usually performed at below the full resolution of t
 Clouds and other volumetric effects can be blended with the full-resolution scene, optionally taking into account MSAA anti-aliasing. To do this, trueSKY uses a mixed-resolution compositor.
 
 .. image:: /../Help/images/Compositing.png
+   :alt: Debug views showing trueSKY's mixed-resolution compositor.
 
 The depth values passed to the weather renderer in your depth texture are processed to obtain the needed information for the compositing. This processing uses the projection matrix passed in in your DeviceContext object. The most efficient projection is usually the depth-reversed style, for which the far plane is at z=0.

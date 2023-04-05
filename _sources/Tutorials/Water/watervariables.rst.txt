@@ -14,7 +14,7 @@ Reflection Resolution							Resolution of the Water Reflections.											Half 
 Reflection Steps								How many steps that reflection rays will take									Int
 Reflection Pixel Step						The maximum pixels in screen space that reflection rays can move				Int
 Reflection Distance							The furthest distance that reflection rays will travel							Int
-Water Cubemap								Use a custom cubemap for non-dynamic water refletions							Cubemap
+Water Cubemap								Use a custom cubemap for non-dynamic water reflections							Cubemap
 ==============================================  ==================================================================================  =============
 
 trueSKY Water Object settings
@@ -54,7 +54,7 @@ Foam Strength							Strength of the foam effect. 														0 to 0.5
 
 Shore Effects
 ---------------
-Shore Effects can be used to reduce the waves splashing unevenly over the water's edge. For a more in depth example, go :doc:`here <watershoreeffects>`
+:doc:`Shore Effects <watershoreeffects>`can be used to reduce the waves splashing unevenly over the water's edge.
 
 ==============================================  ==================================================================================  =============
 Variable 										Definition																			Value

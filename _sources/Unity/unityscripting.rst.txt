@@ -1,7 +1,7 @@
 Scripting
 ==========
 
-Alongside the Sequencer tool, trueSKY can be driven and configured via Unity scripting. Similarly to using the sequencer, the settings and properties in trueSKY for Unity are split between `Keyframes`_ properties (temporal values for clouds and sky), `Layers`_ properites (values for clouds and sky that persist throughout a sequence) and the properties of the `trueSKY object`_ itself (configuration settings).
+Alongside the Sequencer tool, trueSKY can be driven and configured via Unity scripting. Similarly to using the sequencer, the settings and properties in trueSKY for Unity are split between the `Keyframes`_ properties (temporal values for clouds and sky), `Layers`_ properties (values for clouds and sky that persist throughout a sequence) and the properties of the `trueSKY object`_ itself (global configuration settings).
 
 
 trueSKY Object
@@ -26,7 +26,7 @@ All editor properties of the trueSKY object are publicly accessible, so once a r
 	}
 
 
-Layers / Keyframers
+Layers
 --------
 Layer (Also called Keyframers) properties are those accessible in the sequencer by clicking on the layer name on the left of the timeline. These affect the entire sequence and the values will remain until the user changes them manually. This differs in nature from keyframe properties, which are active only between specified times and will be automatically modified via interpolation (for example if two adjacent keyframes have cloudiness set to 0.4 and 0.6 respectively, trueSKY will interpolate these values for times in between, increasing gradually from 0.4 to 0.6). The functions needed to Get and Set layer properties are as follows:
 
@@ -43,7 +43,7 @@ You can create and delete cloud layers at runtime. There is only one sky layer f
 
 Keyframes
 --------
-Keyframes in trueSKY can be accessed, counted, modified, created and deleted via scripting. To delete a keyframe or change its properties, the Unique Identifier (Uid) will need to be known. These can be retrieved either by index (the keyframes in the sequencer, which are zero-indexed) or by retrieving the current/interpolated keyframe (not viewable in the sequencer, as they are interpolated). Uids are unique and persistent for the session, but not across saves or restarts, so they should not be stored. **Note**: For any functions with a layer parameter, the layer indexes are as follows: **0** for the sky, **1** for the first cloud layer, **2** for the second cloud layer and so on. This is not the same as UID, which can vary for layers. 
+Keyframes in trueSKY can be accessed, counted, modified, created and deleted via scripting. To delete a keyframe or change its properties, the Unique Identifier (UID) will need to be known. These can be retrieved either by index (the keyframes in the sequencer, which are zero-indexed) or by retrieving the current/interpolated keyframe (not viewable in the sequencer, as they are interpolated). UIDs are unique and persistent for the session, but not across saves or restarts, so they should not be stored. **Note**: For any functions with a layer parameter, the layer indexes are as follows: **0** for the sky, **1** for the first cloud layer, **2** for the second cloud layer and so on. This is not the same as UID, which can vary for layers. 
 
 **Sky**:
 
@@ -123,7 +123,7 @@ The contents of the structs are as follows:
 
 
 **Storms**
-Just like keyframes, storm UID's are accessible thorugh their index or by querying the time/
+Just like keyframes, storm UID's are accessible through their index or by querying the time.
 
 * **GetStormUidByIndex(uid index)**
 * **GetStormUidAtTime(float time)**

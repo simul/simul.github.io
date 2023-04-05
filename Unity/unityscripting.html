@@ -12,6 +12,8 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
@@ -55,7 +57,7 @@
 <li class="toctree-l2"><a class="reference internal" href="unitytutorial.html">Unity Tutorial</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Scripting</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#truesky-object">trueSKY Object</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#layers-keyframers">Layers / Keyframers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#layers">Layers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#keyframes">Keyframes</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#other-functions">Other Functions</a></li>
 </ul>
@@ -102,7 +104,7 @@
              
   <section id="scripting">
 <h1>Scripting<a class="headerlink" href="#scripting" title="Permalink to this heading">¶</a></h1>
-<p>Alongside the Sequencer tool, trueSKY can be driven and configured via Unity scripting. Similarly to using the sequencer, the settings and properties in trueSKY for Unity are split between <a class="reference internal" href="#keyframes">Keyframes</a> properties (temporal values for clouds and sky), <a href="#id1"><span class="problematic" id="id2">`Layers`_</span></a> properites (values for clouds and sky that persist throughout a sequence) and the properties of the <a class="reference internal" href="#truesky-object">trueSKY object</a> itself (configuration settings).</p>
+<p>Alongside the Sequencer tool, trueSKY can be driven and configured via Unity scripting. Similarly to using the sequencer, the settings and properties in trueSKY for Unity are split between the <a class="reference internal" href="#keyframes">Keyframes</a> properties (temporal values for clouds and sky), <a class="reference internal" href="#layers">Layers</a> properties (values for clouds and sky that persist throughout a sequence) and the properties of the <a class="reference internal" href="#truesky-object">trueSKY object</a> itself (global configuration settings).</p>
 <section id="truesky-object">
 <h2>trueSKY Object<a class="headerlink" href="#truesky-object" title="Permalink to this heading">¶</a></h2>
 <p>To modify trueSKY object via scripting, a reference to the active object in the scene must first be obtained (there should only be one). This can be done upon initialisation; the code to do so is as follows:</p>
@@ -120,8 +122,8 @@
 </pre></div>
 </div>
 </section>
-<section id="layers-keyframers">
-<h2>Layers / Keyframers<a class="headerlink" href="#layers-keyframers" title="Permalink to this heading">¶</a></h2>
+<section id="layers">
+<h2>Layers<a class="headerlink" href="#layers" title="Permalink to this heading">¶</a></h2>
 <p>Layer (Also called Keyframers) properties are those accessible in the sequencer by clicking on the layer name on the left of the timeline. These affect the entire sequence and the values will remain until the user changes them manually. This differs in nature from keyframe properties, which are active only between specified times and will be automatically modified via interpolation (for example if two adjacent keyframes have cloudiness set to 0.4 and 0.6 respectively, trueSKY will interpolate these values for times in between, increasing gradually from 0.4 to 0.6). The functions needed to Get and Set layer properties are as follows:</p>
 <ul class="simple">
 <li><p><strong>GetKeyframerValue&lt;Type&gt;(uint uid, string name)</strong>: Set a layer value specified by the name string.</p></li>
@@ -136,7 +138,7 @@
 </section>
 <section id="keyframes">
 <h2>Keyframes<a class="headerlink" href="#keyframes" title="Permalink to this heading">¶</a></h2>
-<p>Keyframes in trueSKY can be accessed, counted, modified, created and deleted via scripting. To delete a keyframe or change its properties, the Unique Identifier (Uid) will need to be known. These can be retrieved either by index (the keyframes in the sequencer, which are zero-indexed) or by retrieving the current/interpolated keyframe (not viewable in the sequencer, as they are interpolated). Uids are unique and persistent for the session, but not across saves or restarts, so they should not be stored. <strong>Note</strong>: For any functions with a layer parameter, the layer indexes are as follows: <strong>0</strong> for the sky, <strong>1</strong> for the first cloud layer, <strong>2</strong> for the second cloud layer and so on. This is not the same as UID, which can vary for layers.</p>
+<p>Keyframes in trueSKY can be accessed, counted, modified, created and deleted via scripting. To delete a keyframe or change its properties, the Unique Identifier (UID) will need to be known. These can be retrieved either by index (the keyframes in the sequencer, which are zero-indexed) or by retrieving the current/interpolated keyframe (not viewable in the sequencer, as they are interpolated). UIDs are unique and persistent for the session, but not across saves or restarts, so they should not be stored. <strong>Note</strong>: For any functions with a layer parameter, the layer indexes are as follows: <strong>0</strong> for the sky, <strong>1</strong> for the first cloud layer, <strong>2</strong> for the second cloud layer and so on. This is not the same as UID, which can vary for layers.</p>
 <p><strong>Sky</strong>:</p>
 <ul class="simple">
 <li><p><strong>GetSkyKeyframeByIndex (int index)</strong>: Get the sky keyframe with specified index.</p></li>
@@ -206,7 +208,7 @@
 <li><p>float first_contact_metres: The distance to the nearest cloud, in metres.</p></li>
 </ul>
 <p><strong>Storms</strong>
-Just like keyframes, storm UID’s are accessible thorugh their index or by querying the time/</p>
+Just like keyframes, storm UID’s are accessible through their index or by querying the time.</p>
 <ul class="simple">
 <li><p><strong>GetStormUidByIndex(uid index)</strong></p></li>
 <li><p><strong>GetStormUidAtTime(float time)</strong></p></li>

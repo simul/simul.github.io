@@ -10,5 +10,7 @@ Each layer of the precipitation volume can only 'see' clouds above itself. This 
 When two precipitation region intersect or overlap each other, the intersecting volume regions mix together. No other set up is required to use multi-layered precipitation, however as this is a recent improvement to trueSKY, we advise using the Rain Texture Overlay for debugging your scene.
 
 .. image:: ../../../Help/images/precipitation/RainOverlay.png
+	:alt: trueSKY precipitation Overlays
 
 .. image:: ../../../Help/images/precipitation/PrecipitationVolumeDiagram.png
+	:alt: Diagram showing how trueSKY precipitation regions intersect

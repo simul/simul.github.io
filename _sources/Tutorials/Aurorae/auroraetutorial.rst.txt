@@ -9,7 +9,7 @@ To view aurorae, the view position will need to be within the Auroral Oval; a re
 CloudWindow with Auroral Oval displayed:
 
 .. image:: ../../../Help/images/aurorae/auroraeCloudWindowView.png
-
+	:alt: trueSKY cloud window with auooral ovals displayed 
 
 UI and Controls
 -----------------
@@ -19,12 +19,15 @@ Aurorae have distinct layers to them, which are dependent on the atmospheric gas
 Aurora Layers - Earth:
 
 .. image:: ../../../Help/images/aurorae/auroraeLayerEarth.png
+	:alt: Earth-like auroroas in the sky
 
 Aurora Layers - Alien with layer details:
 
 .. image:: ../../../Help/images/aurorae/auroraeLayerAlien.png
+	:alt: Auroras that are blue and are unnatural to earth
 
 .. image:: ../../../Help/images/aurorae/auroraeLayerAlienDetails.png
+	:alt: Aurora settings required for blue auroras.
 
 
 The shape of aurorae is defined by the interactions of electrons and other charged particles from the solar wind with the planet's electromagnetic field in the upper atmosphere. To adjust the generation of aurorae, you can modify the four FAC (Field Aligned Currents) controls. These adjust the arc length, radius and global position for each of the four field aligned currents. View the :doc:`How it works <auroraehowitworks>` section for a more full description of how trueSKY generates aurorae.
@@ -32,15 +35,17 @@ The shape of aurorae is defined by the interactions of electrons and other charg
 Aurorae UI and controls - SkySequencer:
 
 .. image:: ../../../Help/images/aurorae/auroraeSkyUI.png
+	:alt: aurora settings on the standalone Sky Sequencer.
 
-UE4
-'''
-Aurorae UI and controls - Unreal Engine 4:
+Unreal
+''''''''
+Aurorae UI and controls - Unreal Engine:
 
 .. image:: ../../../Help/images/aurorae/auroraeSkyUI_UE4.png
-
+	:alt: Aurora settings in Unreal
 Unity
-'''''
+''''''
 Aurorae UI and controls - Unity:
 
 .. image:: ../../../Help/images/aurorae/auroraeSkyUI_Unity.png
+	:alt: Aurora settings in Unity

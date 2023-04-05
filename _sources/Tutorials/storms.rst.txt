@@ -15,7 +15,7 @@ Storm keyframes are added to the cloud layer, to create structures representing 
    Storms/stormstutorial.rst
    Storms/stormsvariables.rst
 
-We have a youtube overview documenting these settings and how to use them here:
+We have a video overview documenting these settings and how to use them here:
 
 .. raw:: html
    :file: Storms/stormsvideo1.html

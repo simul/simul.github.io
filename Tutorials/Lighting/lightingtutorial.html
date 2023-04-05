@@ -12,6 +12,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
@@ -56,7 +58,7 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../lighting.html">Lighting</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Lighting Tutorial</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#point-lights">Point Lights</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ue4-useage">UE4 useage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#unreal">Unreal</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#unity-usage">Unity Usage</a></li>
 </ul>
 </li>
@@ -117,14 +119,14 @@
 <section id="point-lights">
 <h2>Point Lights<a class="headerlink" href="#point-lights" title="Permalink to this heading">¶</a></h2>
 <p>Point lights can be used to illuminate the clouds. Because of the relative scale of clouds compared to the scene, the intensity of the light must be very large in order to have a visible effect.</p>
-<img alt="../../_images/pointlight.png" src="../../_images/pointlight.png" />
+<img alt="A blue point light affecting the surrounding clouds" src="../../_images/pointlight.png" />
 </section>
-<section id="ue4-useage">
-<h2>UE4 useage<a class="headerlink" href="#ue4-useage" title="Permalink to this heading">¶</a></h2>
+<section id="unreal">
+<h2>Unreal<a class="headerlink" href="#unreal" title="Permalink to this heading">¶</a></h2>
 <p>This can be done with the SetPointLight Blueprint node. Attach one of your point lights in the scene to our Set Point Light function, allowing trueSKY to take the properties and apply it to the clouds.</p>
-<img alt="../../_images/setpointlightblueprint.png" src="../../_images/setpointlightblueprint.png" />
+<img alt="Blueprint setup to tell trueSKY to use an unreal point light." src="../../_images/setpointlightblueprint.png" />
 <p>If you do not have a PointLight actor, you can use SetPointLightSource to create a new point light and individually apply the position, colour and intensity of a light to the clouds.</p>
-<img alt="../../_images/setpointlightsource.png" src="../../_images/setpointlightsource.png" />
+<img alt="Blueprint node to create a point light for trueSKY" src="../../_images/setpointlightsource.png" />
 <section id="brightness-power">
 <h3>Brightness Power<a class="headerlink" href="#brightness-power" title="Permalink to this heading">¶</a></h3>
 <p>The sky at sunrise can be less than one quarter as bright as at noon. Moonlight is hundreds of times dimmer than sunlight. Starlight is much dimmer still. The human eye adjusts to a very wide range of light conditions, but for rendering we usually apply a brightness, or exposure level, to make dark scenes visible and bright scenes clear.</p>
@@ -138,14 +140,14 @@
 <div><p>spectral radiance (watts/square metre/steradian/nm) = pixel value * reference spectral radiance</p>
 </div></blockquote>
 <p>You can use this value to calibrate the other lights in your scene. Say you have a point light representing an electric bulb. The brightness of this light would in reality be constant. But because trueSKY adjusts the physical value of a pixel as time passes, you must compensate for this by scaling the intensity of the bulb by the inverse of the reference radiance.</p>
-<img alt="../../_images/ReferenceSpectralRadiance.png" src="../../_images/ReferenceSpectralRadiance.png" />
+<img alt="How to use spectral radiance to modulate the intensity of scene lights." src="../../_images/ReferenceSpectralRadiance.png" />
 <p><em>Using the spectral radiance value to modulate the intensity of lights in the scene.</em></p>
 <p>So the light appears to get brighter as day turns to night. You can get the same effect using Unreal’s Eye Adaptation (Auto Exposure). But because this is a post-process effect, it cannot cope with very dark scenes - you may see banding in the sky colours due to the low numerical accuracy of very small numbers.</p>
-<img alt="../../_images/DayLightRadiance.png" src="../../_images/DayLightRadiance.png" />
+<img alt="Unreal scene in the morning" src="../../_images/DayLightRadiance.png" />
 <p><em>Spectral radiance example: Day</em></p>
-<img alt="../../_images/SunsetLightRadiance.png" src="../../_images/SunsetLightRadiance.png" />
+<img alt="Unreal scene at sunset" src="../../_images/SunsetLightRadiance.png" />
 <p><em>Spectral radiance example: Sunset</em></p>
-<img alt="../../_images/NightLightRadiance.png" src="../../_images/NightLightRadiance.png" />
+<img alt="Unreal scene at night, point light is more visible in this scene." src="../../_images/NightLightRadiance.png" />
 <p><em>Spectral radiance example: Night</em></p>
 </section>
 <section id="light-units">
@@ -155,7 +157,7 @@
 <section id="transparency">
 <h3>Transparency<a class="headerlink" href="#transparency" title="Permalink to this heading">¶</a></h3>
 <p>In a material that uses transparency, insert the trueSKYTransparencyModifier function between the inputs and the final output node:</p>
-<img alt="../../_images/Transparency.png" src="../../_images/Transparency.png" />
+<img alt="Blueprint setup required for a translucent material to interact with trueSKY." src="../../_images/Transparency.png" />
 <p><em>Using the trueSKYTransparencyModifier material function to modulate the material output values</em></p>
 </section>
 </section>
