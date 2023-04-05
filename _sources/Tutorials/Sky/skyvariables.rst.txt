@@ -6,7 +6,7 @@ Variable 										Definition																															Value
 ==============================================  ==================================================================================================================================  =============
 Sea Level Deg. C								For infra-red rendering. 																											-273.0 to 1000
 Zenith											Colour of the Zenith (Sky above you). See :doc:`Sky Colours <skytutorial>`															RGB 
-Horizon											Colour of the Horizon (Sky around you). See :doc:`Sky Colours <skytutorial>`														RGB 
+Horizon											Colour of the Horizon (Sky around you).														RGB 
 ==============================================  ==================================================================================================================================  =============
 
 ==============================================  ==================================================================================================================================  =============
@@ -57,7 +57,7 @@ Variable 										Definition																															Value
 ==============================================  ==================================================================================================================================  =============
 Light Wavelength (R,G,B)						Wavelength of the light from the sun.																								0 to 1000
 Irradiance										Irradiance of the Sun, in Watts/m2/nm. XYZ=RGB.																						0 to 50
-Diameter										Size of sun’s radius in degrees.																									0.0 to 3600.0
+Diameter										Size of sun's radius in degrees.																									0.0 to 3600.0
 Link Keyframe time and daytime					See :doc:`Link Keyframe Time <skytutorial>`																							Bool
 Time Zone										Time Zone based on Greenwich Mean Time (GMT). 																						Between -12.0 and 12.0
 Start Date						For calculating position of sun/moon. Where 01/01/2000 = 0 , -1 = 31/12/1999, 01/01/2016 = 5844(format DD:MM:YYYY).					-100000 to 100000
@@ -97,9 +97,9 @@ Moon texture									Texture to use for the Moon. trueSKY has a moon texture by 
 Moon Multiplier									Brightness multiplier for the Moon. 																								0.0 to 10.0
 ==============================================  ==================================================================================================================================  =============
 
-Moon (Multi Moon - 4.2a)
+Moon (Multi Moon - 4.2a+)
 -------------------------
-This system is found in unreal 4.2a versions and allows for multiple moons and extensive customisation of both the moons and the orbital paths. Find more information and indepth descriptions go :doc:`here <skymoons>`
+This system is found in the latest versions of trueSKY and allows for multiple moons and extensive customisation of both the moons and their orbital paths. :doc:`Documentation on Moons is available here <skymoons>`
 
 ==============================================  ==================================================================================================================================  =============
 Variable 										Definition																															Value

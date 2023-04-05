@@ -1,13 +1,13 @@
 ﻿trueSKY for Unreal Engine
 ======================================
 
-trueSKY is fully compatible with these versions of Unreal Engine
+trueSKY is fully compatible with most versions of Unreal Engine
 
-=============  =============  =============  =============
-5.1		5.0		4.27		4.26 or earlier	
-=============  =============  =============  ============= 
-✓		✓		✓			On Request		
-=============  =============  =============  ============= 
+=============	=============  =============  =============  =============  
+5.2		5.1		5.0		4.27		Earlier Versions
+=============	=============  =============  =============  =============  
+✓		✓		✓		✓		On Request
+=============	=============  =============  =============  =============  
 
 For earlier versions, some features might not be available.
 
@@ -15,7 +15,7 @@ Follow one of the links below for more information about trueSKY with Unreal Eng
 
    *  :doc:`Tutorial <Unreal/unrealtutorial>` - Start here to learn how to set trueSKY up in Unreal Engine
    *  :doc:`Blueprints <Unreal/unrealblueprints>` - How to edit trueSKY with blueprints
-   *  :doc:`UE4 Source Code <Unreal/unrealsourcecode>` - Launching trueSKY using the UE4 source code
+   *  :doc:`UE Source Code <Unreal/unrealsourcecode>` - Launching trueSKY using the Unreal source code
    *  :doc:`Debugging, Diagnosing and Profiling <Unreal/unrealdebugging>` - Resolving issues and improving performance
 
 .. toctree::

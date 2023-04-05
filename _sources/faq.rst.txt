@@ -37,7 +37,7 @@ Try deleting the plugin folder Engine/Plugins/TrueSkyPlugin/Content and the plug
 
 When packaging the game, I get errors and/or the sky is black.
 ``````````````````````````````````````````````````````````````````
-If you are using the binary installer, then you will need to follow some additional steps to be able to package your game with trueSKY. You can read about these :doc:`here </Programming/deployment>`. If these steps have been taken, there may be a conflict with another plugin. Currently known Plugins that have conflict issues can be found :ref:`here. <plugin-conflicts>`
+If you are using the binary installer, then you will need to follow some additional steps to be able to package your game with trueSKY. You can read about these :doc:`on our deployment page </Programming/deployment>`. If these steps have been taken, there may be a conflict with another plugin. Currently known Plugins that have conflict issues can be found below. Otherwise, get in touch and can help.
 
 
 I can't edit the values in the sequencer
@@ -52,7 +52,9 @@ Try checking/unchecking the "Flipped View" option in the TrueSkyCamera component
 
 My trueSKY folder in the content browser is empty
 ``````````````````````````````````````````````````
-You can find the contents by going to "UE4Engine/Engine/Plugins/TrueSkyPlugin/Content". We don't copy the files in to save you having the files in every project. If you want to copy them over that is fine, but you will need to adjust the trueSKY actor's and our material function references if you use them from a different location. 
+For UE5 and later: The content is stored in your project directory. "yourProject/Plugins/TrueSkyPlugin/Content"
+
+For 4.27 and earlier: You can find the contents by going to "Engine/Plugins/TrueSkyPlugin/Content". We don't copy the files in to save you having the files in every project. If you want to copy them over that is fine, but you will need to adjust the trueSKY actor's and our material function references if you use them from a different location. 
 
 Failed to load TrueSkyUI_MD.dll for truesky ui
 `````````````````````````````````````````````````
@@ -89,7 +91,7 @@ Make sure there are enough clouds above to produce rain!
 
 I don't see any rain, but rain streaks are working
 ```````````````````````````````````````````````````
-For rain and lightning to render in UE4, you need to have added trueSKY translucent as a post process material. As of September 2019, this has been made automatic, and added as part of initialization. Firstly, add a post process Volume to your scene, and make sure it is global by enabling "Unbound". Then go to the Rendering Features within the Post process Settings. Add a new element to the post process materials, and choose asset reference when prompted. Finally, add the trueSKY translucent material. If you do not have this material, you need locate the trueSKY assets.
+For rain and lightning to render in UE, you need to have added trueSKY translucent as a post process material. As of September 2019, this has been made automatic, and added as part of initialization. Firstly, add a post process Volume to your scene, and make sure it is global by enabling "Unbound". Then go to the Rendering Features within the Post process Settings. Add a new element to the post process materials, and choose asset reference when prompted. Finally, add the trueSKY translucent material. If you do not have this material, you need locate the trueSKY assets.
 
 
 Rain drops are large and blocky
@@ -124,7 +126,7 @@ Try lowering the brightness power setting in the sky layer.
 
 Everything is Grey at night
 `````````````````````````````````````````````````
-Deleting UE4's Atmospheric Fog should fix this issue. We do not recommend using UE4's atmospheric fog, as trueSKY produces it's own fog. You can create fog from a Sky Keyframe.
+Deleting Unreal's Atmospheric Fog should fix this issue. We do not recommend using UE4's atmospheric fog, as trueSKY produces it's own fog. You can create fog from a Sky Keyframe.
 
 Objects are light too brightly, especially at night
 ```````````````````````````````````````````````````

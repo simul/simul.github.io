@@ -4,7 +4,7 @@
 Initial Configuration
 -------------------------
 
-Please be aware trueSKY for Unreal does not support OSX and OpenGL. For Vulkan please use UE4 4.22 or greater.
+Please be aware trueSKY for Unreal does not support OSX and OpenGL. For Vulkan please use UE 4.22 or greater.
 
 This page shows you how to install the binary version of trueSKY onto your existing binary UE installation. For other versions, or if you have a version of Unreal Engine built from source, you will need to build the plugin. Check the :doc:`Unreal Source page <unrealsourcecode>` for information on GitHub/Engine Source Integration.
 
@@ -25,7 +25,7 @@ Installing the Plugin
 3: Run the trueSKY plugin installer, ensuring that you select your Unreal project directory as the installation location. After the installation process is complete, the plugin should be installed into your project. For Unreal version before 5.0, you must instead specify the Unreal engine directory. If you make an error with the directory, the wizard will show a warning.
 
 .. image:: /../Help/images/unreal/wizard.png
-   :alt: The trueSKY Installation Wizard requiring a specified Unreal project directory to install the plugin into.
+   :alt: The trueSKY plugin should be installed into a project directory.
 
 
 Running the binary plugin

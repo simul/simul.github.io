@@ -59,7 +59,7 @@
 <li class="toctree-l2"><a class="reference internal" href="rendering.html">Rendering Techniques in trueSKY</a></li>
 <li class="toctree-l2"><a class="reference internal" href="profiling.html">Performance</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Debugging</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#ue4-debug-overlays">UE4 Debug Overlays</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#unreal-debug-overlays">Unreal Debug Overlays</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#celestial-display">Celestial Display</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#profiling">Profiling</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#atmospheric-tables">Atmospheric Tables</a></li>
@@ -114,8 +114,8 @@
   <section id="debugging">
 <h1>Debugging<a class="headerlink" href="#debugging" title="Permalink to this heading">¶</a></h1>
 <p>Our goal is to have as much data publicly available to see as possible. If something is not working, you should know what isn’t and why.</p>
-<section id="ue4-debug-overlays">
-<h2>UE4 Debug Overlays<a class="headerlink" href="#ue4-debug-overlays" title="Permalink to this heading">¶</a></h2>
+<section id="unreal-debug-overlays">
+<h2>Unreal Debug Overlays<a class="headerlink" href="#unreal-debug-overlays" title="Permalink to this heading">¶</a></h2>
 <p>To show the trueSKY debugging overlays, assign the Render Target Texture TrueSkyOverlayRT (under TrueSkyPlugin/Overlay content) to the Overlay RT slot in the trueSKY Sequence Actor. The RT texture is then used with the PostProcessVolume: under Rendering Features, add a Post Process Material, and set it to the TrueSkyOverlay material reference.</p>
 <img alt="../_images/postprocessmaterial.png" src="../_images/postprocessmaterial.png" />
 <img alt="../_images/overlayrt.png" src="../_images/overlayrt.png" />

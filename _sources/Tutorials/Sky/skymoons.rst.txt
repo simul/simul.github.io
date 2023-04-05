@@ -40,7 +40,8 @@ Each of the settings functions as follows:
 
 
 .. image:: ../../../Help/images/MoonOrbitExplanation.png
-*Image found from " https://en.wikipedia.org/wiki/Orbital_elements "*
+	:alt: Explanation of orbital movements.
+*Image from " https://en.wikipedia.org/wiki/Orbital_elements "*
 
 
 

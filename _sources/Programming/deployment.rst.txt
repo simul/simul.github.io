@@ -29,7 +29,7 @@ The trueSKY DLL's are  located in [UE4]/Engine/Binaries/ThirdParty/Simul. When y
 	SC.StageFiles(StagedFileType.NonUFS, DirectoryReference.Combine(SC.LocalRoot, "Engine/Plugins/TrueSkyPlugin/shaderbin", SC.PlatformDir), "*.fxo", StageFilesSearch.TopDirectoryOnly);
 
 
-To rebuild the tools, build the UE4 solution in the "Development" configuration. This will recreate the executables located in the [UE4]/Engine/Binaries/DotNET directory.
+To rebuild the tools, build the Unreal solution in the "Development" configuration. This will recreate the executables located in the [UE4]/Engine/Binaries/DotNET directory.
 
 If you're using the binary distribution of UE with the trueSKY plugin binary installer, you won't have this file: you'll need to copy the resources manually. After packaging, find the "Engine" directory in your game, and copy:
 

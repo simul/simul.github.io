@@ -18,7 +18,7 @@ along with some recommended values. If you would rather watch a tutorial video, 
    Clouds/cloudsvariables.rst
 
 Clouds are the leading feature of trueSKY, allowing for real time volumetric clouds to be added seamlessly into any level. This tutorial is about editing the clouds through the use of the Sky Sequencer. 
-A tutorial on the Sky Sequencer can be found :doc:`here <sequencer>`. Alternatively, see :doc:`Editing with Unity Scripting <../Unity/unityscripting>` or :doc:`Using UE4 Blueprints <../Unreal/unrealblueprints>` for engine specific editing.
+A :doc:`tutorial on the Sky Sequencer <sequencer>` is available. Alternatively, see :doc:`Editing with Unity Scripting <../Unity/unityscripting>` or :doc:`Using Unreal Blueprints <../Unreal/unrealblueprints>` for engine specific editing.
 
 
 .. _our Youtube channel: https://www.youtube.com/user/simulsoftware

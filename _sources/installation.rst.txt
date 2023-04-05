@@ -10,13 +10,15 @@ If you already have an account with us, you can skip this section and select an 
 
 1. Navigate to `simul.co`_
 
-.. image:: ../Help/images/websiteHomepage.png 
+.. image:: ../Help/images/websiteHomepage.png
+	:alt: The Simul website homepage.
 
 2. Click *Try FREE for 30 days*
 
 3. Fill in the forum with your information
 
 .. image:: ../Help/images/signupForum.png
+	:alt: The login or register form on the Simul website.
 
 4. Confirm you are not a robot by completing the Captcha
 

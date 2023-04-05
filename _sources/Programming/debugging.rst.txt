@@ -2,7 +2,7 @@ Debugging
 =========
 Our goal is to have as much data publicly available to see as possible. If something is not working, you should know what isn't and why.
 
-UE4 Debug Overlays
+Unreal Debug Overlays
 ------------------
 To show the trueSKY debugging overlays, assign the Render Target Texture TrueSkyOverlayRT (under TrueSkyPlugin/Overlay content) to the Overlay RT slot in the trueSKY Sequence Actor. The RT texture is then used with the PostProcessVolume: under Rendering Features, add a Post Process Material, and set it to the TrueSkyOverlay material reference.
 

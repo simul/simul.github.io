@@ -115,17 +115,16 @@
   <section id="timeline">
 <h1>Timeline<a class="headerlink" href="#timeline" title="Permalink to this heading">¶</a></h1>
 <p>The Timeline is the where all your keyframes are stored. It is used to adjust which features appear at what time.</p>
-<img alt="../../_images/timeline.png" src="../../_images/timeline.png" />
+<img alt="Timeline from 5am to 5pm with two cloud layers and multiple cloud keyframes." src="../../_images/timeline.png" />
 <p>The numbers along the bottom represent the time. Within the timeline, trueSKY shows the time in hours and minutes. Zooming in and out with the mouse wheel will adjust the range of visible time. To change the current time, drag the red vertical line (the time marker) by its handle underneath. To change the visible time-window, drag the timeline at the bottom. To adjust the range of visible time, use the mouse wheel to zoom in and out. To adjust the current time in the timeline, you can drag horizontally by holding right click.</p>
-<img alt="../../_images/timelineZoom.png" src="../../_images/timelineZoom.png" />
-<p><em>I have zoomed in enough to see individual minutes on the timeline</em></p>
+<img alt="The timeline shows minutes if you zoom in enough." src="../../_images/timelineZoom.png" />
 <p>You can select multiple keyframes at once by either shift clicking them individually, or you can double click within the desired layer to select all keyframes in that layer. You can then alter all their properties at once. Keyframes can be dragged and moved along the timeline with left click or copied and pasted in multiple places.</p>
 <p>If there is only one cloud keyframe present in a layer, then the clouds will not change over time, only move (if there is wind in the scene). If another keyframe is added to the layer, then the clouds will interpolate between the different keyframes based on the current time in the world. Interpolation is applied by layer, so clouds in layer 2 will not change based on clouds in layer 1. While interpolating, a special keyframe is created that stores the information. You can obtain a reference to this using link simul::clouds::CloudKeyframer#GetInterpolatedKeyframe endlink.</p>
 <p>To learn more about progressing time within the world, along with the multiple ways to do so, head to <a class="reference internal" href="../time.html"><span class="doc">Progressing Time</span></a>.</p>
 <section id="keyframes">
 <h2>Keyframes<a class="headerlink" href="#keyframes" title="Permalink to this heading">¶</a></h2>
 <p>Keyframes are what store the information about different cloud formations or skylines. There are 3 types of keyframes: Sky, cloud and storm. Each keyframe holds information on their respective effect, and can be customised in real time. You can edit the details for each individual Keyframe.</p>
-<img alt="../../_images/keyframes.png" src="../../_images/keyframes.png" />
+<img alt="An image of the timeline with important features highlighted." src="../../_images/keyframes.png" />
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Number</p></th>
@@ -140,7 +139,7 @@
 <td><p>This is a Cloud Keyframe, these are white. You can see it is the currently selected keyframe because of the translucent box around it.</p></td>
 </tr>
 <tr class="row-even"><td><p>3</p></td>
-<td><p>This is a Storm Keyframe, these are Grey and their size depicts their duration. Storms produce lighting at set intervals for the duration of the keyframe.</p></td>
+<td><p>This is a Storm Keyframe, these are Grey and their size depicts their duration. Storms produce lightning at set intervals for the duration of the keyframe.</p></td>
 </tr>
 <tr class="row-odd"><td><p>4</p></td>
 <td><p>This is a currently unselected cloud keyframe. Cloud keyframes determine the properties of the clouds at the given time.</p></td>
@@ -151,14 +150,11 @@
 <section id="layers">
 <h2>Layers<a class="headerlink" href="#layers" title="Permalink to this heading">¶</a></h2>
 <p>There are two types of layers in trueSKY: Sky and clouds. Layers store their respective keyframes, and each layer has settings that affect all the keyframes within.</p>
-<img alt="../../_images/layers.png" src="../../_images/layers.png" />
-<p><em>Image of a Sky layer and a cloud layer (Sky and cloud 1)</em></p>
+<img alt="A Sky layer and a cloud layer on a timeline" src="../../_images/layers.png" />
 <p>Although there are only 2 types of layers, you can have numerous clouds layers. There can only be one Sky layer, as there can only be one Sky. Allowing for multiple cloud layers allows different cloud formations to appear at the same time. <strong>To add a cloud layer</strong>, right click anywhere in the timeline, and select “Add cloud layer”. You can add as many cloud layers as needed, but the recommended limit is 5. Performance cost per layer is minimal.</p>
-<img alt="../../_images/manylayers.png" src="../../_images/manylayers.png" />
-<p><em>5 layers is probably the most you will ever need, but there is no limit</em></p>
+<img alt="a timeline with 5 cloud layers." src="../../_images/manylayers.png" />
 <p>Layers do <em>not</em> have any effect on the height of the clouds. Layer 1 can be lower than layer 2, or layer 5 could be in the middle. Height settings are adjusted within the individual keyframes. To add a keyframe to a layer, simply right click within the layer you want the keyframe for (click in the sky layer for a sky keyframe, cloud layer for cloud keyframe), then select the “Add Cloud Keyframe” option.</p>
-<img alt="../../_images/AddCloudKF.png" src="../../_images/AddCloudKF.png" />
-<p><em>The keyframe will be created at the position your mouse is at</em></p>
+<img alt="Right click the timeline to show the context menu at the mouse position." src="../../_images/AddCloudKF.png" />
 <p>You can click on the layer name to access layer specific settings.</p>
 </section>
 </section>

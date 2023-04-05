@@ -76,7 +76,7 @@ Octaves										Number of noise octaves to generate clouds.																				
 
 Wind
 ------------
-Using Wind to create a dynamic sky and moving shadows is an effective way to make an environment feel alive. There are different ways to shift the clouds, however for clouds to move the time must be progressing. Learn how to control time :doc:`here <../time>`
+Using Wind to create a dynamic sky and moving shadows is an effective way to make an environment feel alive. There are different ways to shift the clouds, however for clouds to move the time must be progressing. :doc:`Learn how to control time here.<../time>`
 
 To control the movement of the clouds you should use the :doc:`Cloud Window <../Sequencer/sequenceroverview>`.
 

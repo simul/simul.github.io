@@ -6,7 +6,7 @@ We have worked hard to make sure trueSKY will run on many different architecture
 Use the Blueprint function GetProfilingText to get GPU and CPU timing numbers for trueSKY as a tree. trueSKY performance is highly dependent on your choice of settings. Once you have good settings for a given target hardware setup, performance will be consistent - i.e. there won’t be spikes or hitches. For PC, you may want to make some of these settings controllable for the end user. For console hardware, it is usually best to choose the settings based on your target GPU time for skies, then lock them down.
 
 
-UE4 Specific Profiling
+Unreal Specific Profiling
 ---------------
 
 trueSKY for Unreal has a built-in GPU and CPU profiler that shows detailed performance information. To enable it, use the console command
@@ -79,7 +79,7 @@ If you have noticed your water "shimmering", it may be because you need to incre
 Low performance
 ----------------
 
-Create a SkyDome with trueSKY (UE4)
+Create a SkyDome with trueSKY (Unreal)
 ````````````````````````````````````
 With trueSKY, you can create an Cubemap of the sky. While you will lose some visual fidelity and the ability to move through the clouds, this is a great way to incorporate high quality, customised clouds with a minimal performance hit.
 

@@ -4,6 +4,7 @@ Sky Sequencer Overview
 The sequencer is made up of 4 distinct parts
 
 .. image:: ../../../Help/images/unreal/skysequencer.png
+	:alt: The Sky sequencer with sections hightlighted with yellow borders.
 
 ============  ======================================  =====================================================================================================================
 Number		Section Name 							Definition
@@ -18,15 +19,17 @@ Registration
 --------------
 Before you can edit anything on the Sequencer, you need to have entered your username and valid licence key.  This is entered in the registration fields, shown in the picture above. These can be found in your account dashboard at https://simul.co/account. If you do not have an account, sign up now at https://simul.co/register/. We offer a 30 day free trial of trueSKY, but after the trial period you will need to purchase a licence. You can find more information about licensing :doc:`here. <../../legalindex>`
 
-1: Login to your account at simul.co and click my account. 
+1: Login to your account at Simul.co and click my account. 
 
 .. image:: ../../../Help/images/myaccount.png
+	:alt: Simul website homepage with the My Account button highlighted.
 
 2: Your username and licence key are in the account dashboard. Your username is at the top left, underneath your name. Your licence key is on the right in the licence section.
 
 .. image:: ../../../Help/images/accountdashboard.png
+	:alt: A Simul account page with the username and licence key highlighted
 
-4: Launch the active sequence asset using the instructions :doc:`here <../sequencer>`
+4: Launch the active sequence asset. If you are unsure how to do this, :doc:`go to the Sequencer page. <../sequencer>`
 
 5: In the sky sequencer, enter your username and licence key under 'registration'. If your details are correct, you will see the text 'OK' displayed under the licence key fields.
 
@@ -42,19 +45,19 @@ The details panel contains information about the currently selected keyframe or 
 To edit a keyframe, first select it with left click. This will bring up all the keyframes variables in the details column. 
 
 .. image:: ../../../Help/images/unreal/details.png
-*This is the details panel of a selected Cloud Keyframe*
+	:alt: The details panel of a selected Cloud Keyframe
 
 Now you can see all the variables that can be altered within the Sequencer. You can either drag the bar to alter the value, or edit the values by typing. All of the values are clamped to certain ranges. Plus, each value can be returned to its default position with the yellow arrow to the right of the value. This arrow will only appear of the value has been changed from it's default state.
 
 Layers also have their own settings which will change the values of all the keyframes in that layer. An example of this is within the Sky layer, you can change the diameter of the sun. This effect will take place for all the Sky Keyframes. To select a layer, just click on its name in the column to the left of the timeline. To see what each of the settings do, head over to our :doc:`Cloud <../Clouds/cloudsvariables>`, :doc:`Sky <../Sky/skyvariables>`, or :doc:`Storm <../Storms/stormsvariables>` pages.
 
-UE4
-'''
-You can also use blueprints to edit the trueSKY environment. Head :doc:`here <../../Unreal/unrealblueprints>` to learn how.
+Unreal
+'''''''''
+You can also use blueprints to edit the trueSKY environment. :doc:`Visit our blueprint documentation page <../../Unreal/unrealblueprints>` to learn how.
 
 Unity
-'''''
-You can also edit the trueSKY environment through scripting. Head :doc:`here <../../Unity/unityscripting>` to learn how.
+''''''''
+You can also edit the trueSKY environment through scripting.:doc:`Visit our Unity scipting page <../../Unity/unityscripting>` to learn how.
 
 
 Cloud Window
@@ -69,6 +72,8 @@ Double clicking will enter Volume Edit mode, where you can individually move and
 If you select a keyframe, the layer width is represented by a blue box, whereas a blue circle represents the precipitation radius. To find out more about how to use the Cloud Window to control precipitation, please view this :doc:`tutorial <../Precipitation/precipitationtutorial>`.
 
 .. image:: ../../../Help/images/unreal/WorldGrid.png
+	:alt: The trueSKY cloud window, with a centred origin, a precipitation region and an offset cloud keyframe.
+
 *You can see the cloud formations from the grey box, the current cloud layers origin and width from the blue box, and finally the precipitation radius with the blue circle.*
 
 

@@ -72,7 +72,7 @@ Be aware that when creating keyframes, you must pass your keyframe time values i
 Every sequence starts with a Sky layer that cannot be removed, and no more sky layers can be added, so you do not need to create or get a reference to a Sky layer. Editing a Sky Keyframe is almost identical to editing a cloud keyframe, and has the same blueprints to get access to the UID of the keyframe.
 
 .. image:: /../Help/images/unreal/exampleskyfog.png
-   :alt: The different blueprint nodes available to get the Sky Keyframe UID.
+   :alt: The different blueprint nodes available to get a Sky Keyframe UID.
 
 
 Get/Set Values on the trueSKYActor
@@ -98,7 +98,7 @@ Tools
 There are Blueprint functions provided to test a scene for lightning and for rain. For lightning, the "Get Lightning" function will provide the start position, end position, colour and magnitude of any lightning present. A magnitude of 0 means there is no lightning present. Additionally, the "Get Precipitation Strength at Position" function will take a given position and return a float between 0.0 and 1.0, indicating the strength of the rain (or snow) at this position. Below is an example of testing the weather conditions in blueprint.
 
 .. image:: /../Help/images/unreal/LightningRainTest.png
-   :alt: Unreal blueprint setup to test if rain, lighting or both are present at a specific location.
+   :alt: Unreal blueprint setup to test if rain, lightning or both are present at a specific location.
 
 
 Queries
@@ -206,7 +206,7 @@ Adding map textures via blueprints
 
 This feature works across both 4.2a and 4.3 versions and allows for users to add map textures dynamically. 
 
-Previously this has only be possible to do within the editor, requiring the png being referenced to be located in a specific location within the simul folder structure in the engine. This has now been simplified, allowing you to reference any .png within the editor, however saving images into the "Media -> Resouces" folder will still work.
+Previously this has only be possible to do within the editor, requiring the png being referenced to be located in a specific location within the Simul folder structure in the engine. This has now been simplified, allowing you to reference any .png within the editor, however saving images into the "Media -> Resources" folder will still work.
 
 
 **Manual Sequence solution:**

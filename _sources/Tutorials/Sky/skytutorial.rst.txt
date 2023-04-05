@@ -6,6 +6,7 @@ Geographically Accurate Sun Positioning
 Our Sun's Position is realistically located in relation to the world based off longitude, latitude along with date and time. The date settings are available in the Sky Layer of the Sequencer, while the Longitude, latitude and heading values are located in the Update section on the trueSKYSequenceActor. 
 
 .. image:: ../../../Help/images/longlat.png
+	:alt: the Origin settings on the trueSKY actor.
 
 
 Sky Colours
@@ -72,7 +73,7 @@ Once this is done you can use the slider below the checkbox to assign the height
 Moon Texture (Legacy)
 ---------------
 
-You can apply a png to the moon to make it whatever object you like, and will go through phases based on the sun's position. This is a legacy setting - and only functions within the 4.1a. Documentation for 4.2a's multimoon setup can be found :doc:`here <skymoons>`.
+You can apply a png to the moon to make it whatever object you like, and will go through phases based on the sun's position. This is a legacy setting - and only functions within the 4.1a. Documentation for 4.2a's :doc:`multimoon setup is available here<skymoons>`.
 
 .. raw:: html
    :file: skyvideo3.html

@@ -8,8 +8,10 @@ How to create a Volume
 To create a volume, simply right click within the cloud layer and select "Add new Volume"
 
 .. image:: ../../../Help/images/addNewVolume.png
+	:alt: Context menu shows the New volume option highlighted
 
 .. image:: ../../../Help/images/volumeWorldGrid.png
+	:alt: A volume visible in the cloud window.
 
 This will turn this layer into a volume layer, meaning this layer will only use volumes, not a repeating skyline. If you still want a repeating sky as well, simply create another layer.
 
@@ -18,6 +20,7 @@ How to modify the Volume type and fill properties
 After creating a volume, you can modify its properties from the Properties window, when that cloud layer is selected. Under the Volumes section, you can add a volume with **New Volume**, delete selected volumes with **Delete Volume** and update selected volumes with **Update Volume**, based on the type and fill properties specified by the **Type** and **Fill Type** drop-down menus. Finally, there is a list of UIDs that relate to the volumes present in the layer, which you can select and modify.
 
 .. image:: ../../../Help/images/cloudLayerVolumeProperties.png
+	:alt: A list of all the volumes present in a layer.
 
 Volume fill properties
 ----------------------
@@ -28,6 +31,7 @@ Editing Volumes
 There are two modes of editing in the Cloud Window - Keyframe and Volume. **Double click** to switch between the editing modes. In Keyframe mode, you can drag the whole layer around, along with any volumes in that layer. The positions you move volumes to in keyframe mode are relative to the keyframe you have selected.
 
 .. image:: ../../../Help/images/volumeEditing.png
+	:alt: The cloud window in Volume Editing mode. Volumes gain handles that can adjust their size.
 
 In volume edit mode, you can move volumes individually and adjust their radius.
 
@@ -45,7 +49,10 @@ Examples
 The new cloud volume system can be used to create small, specifically shaped clouds, or large formations of clouds that are bounded to an area. You can even mix them together! Here are just a few examples of what can now be done! Email us with your examples if you would like to be featured!
 
 .. image:: ../../../Help/images/volume1.png
+	:alt: A small cloud volume over a mountain.
 
 .. image:: ../../../Help/images/volume2.png
+	:alt: A triangular cloud volume.
 
 .. image:: ../../../Help/images/volume3.png
+	:alt: A lone cloud volume. 

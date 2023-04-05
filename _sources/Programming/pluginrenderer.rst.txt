@@ -75,7 +75,7 @@ This is specified by the file truesky_setup.json, which goes in the current user
 
 {
 	"unreal_branches":[
-		{"ue4_dir":"D:/UnrealEngine/4.25","simul":["C:/Simul/5.0/Simul","C:/Simul/4.3/Simul","C:/Simul/4.2a/Simul","C:/Simul/4.1b/Simul"],"projects":["Test425","SimulTest"]}
+		{"ue_dir":"D:/UnrealEngine/4.25","simul":["C:/Simul/5.0/Simul","C:/Simul/4.3/Simul","C:/Simul/4.2a/Simul","C:/Simul/4.1b/Simul"],"projects":["Test425","SimulTest"]}
 	]
 	,"unity_branches":[{"unity_dir":"C:/Simul/Unity/2019","simul":["C:/Simul/4.4/Simul","C:/Simul/4.3/Simul","C:/Simul/4.1b/Simul"],"unity_version":"2019","ps4_projects":["C:/Simul/Unity/2019/PS4"]}]
 	,"simul_branches":[{"simul":"C:/Simul/4.1b/Simul","platforms":[{"platform":"Spectrum","dll_destination":"E:\\Code\\Exo One\\Exo_MasterPlayer_DebugsOn_XSXa\\Loose\\Data\\Plugins","shader_destination":"E:/Code/Exo One/Exo_MasterPlayer_DebugsOn_XSXa/Loose/D3D12"}]}]
