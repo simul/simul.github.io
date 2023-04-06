@@ -7,6 +7,7 @@ Our Sun's Position is realistically located in relation to the world based off l
 
 .. image:: ../../../Help/images/longlat.png
 	:alt: the Origin settings on the trueSKY actor.
+	:class: zoomable
 
 
 Sky Colours
@@ -23,7 +24,7 @@ Make sure to apply the colour to all your keyframes if you want it to be through
 
 
 Unlinked Time and Daytime
--------------------------
+---------------------------
 
 We can unlink time and daytime, causing the keyframe's \link simul::sky::BaseKeyframe::time time\endlink
 value is arbitrary - it could represent the real time in seconds, or some other scale. 
@@ -58,7 +59,7 @@ This works just as well with linked as with unlinked times.
 
 
 Manual Sun and Moon Position
--------------------------
+-----------------------------
 
 You can manually set the sun and moon's position at a given time, to get the exact angle of lighting you are after. To do this, you need to access your sky keyframe within the sequencer, then under the "sun and moon" header, untick the Automatic Sun Position checkbox (or the Automatic Moon Position checkbox).
 
@@ -71,7 +72,7 @@ Once this is done you can use the slider below the checkbox to assign the height
 
 
 Moon Texture (Legacy)
----------------
+-----------------------
 
 You can apply a png to the moon to make it whatever object you like, and will go through phases based on the sun's position. This is a legacy setting - and only functions within the 4.1a. Documentation for 4.2a's :doc:`multimoon setup is available here<skymoons>`.
 

@@ -116,46 +116,46 @@
 <section id="unreal-debug-overlays">
 <h2>Unreal Debug Overlays<a class="headerlink" href="#unreal-debug-overlays" title="Permalink to this heading">¶</a></h2>
 <p>To show the trueSKY debugging overlays, assign the Render Target Texture TrueSkyOverlayRT (under TrueSkyPlugin/Overlay content) to the Overlay RT slot in the trueSKY Sequence Actor. The RT texture is then used with the PostProcessVolume: under Rendering Features, add a Post Process Material, and set it to the TrueSkyOverlay material reference.</p>
-<img alt="The Rendering Features options on an Unreal post process volume." src="../_images/postprocessmaterial.png" />
-<img alt="trueSKYOverlayRT must also be assigned in the TrueSkyTextures section of the trueSKYActor." src="../_images/overlayrt.png" />
+<img alt="The Rendering Features options on an Unreal post process volume." class="zoomable" src="../_images/postprocessmaterial.png" />
+<img alt="trueSKYOverlayRT must also be assigned in the TrueSkyTextures section of the trueSKYActor." class="zoomable" src="../_images/overlayrt.png" />
 <p>The overlays can then be set in Windows-&gt;Overlays and then select the overlays you want to show.</p>
-<img alt="The overlays drop-down can be found within the window menu of Unreal." src="../_images/DebugWindows.png" />
+<img alt="The overlays drop-down can be found within the window menu of Unreal." class="zoomable" src="../_images/DebugWindows.png" />
 </section>
 <section id="celestial-display">
 <h2>Celestial Display<a class="headerlink" href="#celestial-display" title="Permalink to this heading">¶</a></h2>
 <p>Shows the current position and path of the Sun and Moon. The circles indicate the positions between the current and next keyframe.</p>
-<img alt="A default celestial movement and an unnatural movement shown with debug tools." src="../_images/CelestialDisplay.png" />
+<img alt="A default celestial movement and an unnatural movement shown with debug tools." class="zoomable" src="../_images/CelestialDisplay.png" />
 <p><em>This image shows an example of a default celestial display and an example where the Sun’s position has been altered</em></p>
 </section>
 <section id="profiling">
 <h2>Profiling<a class="headerlink" href="#profiling" title="Permalink to this heading">¶</a></h2>
-<p>Use profiling to aid performance measuring. This is a good way to determine what aspects of trueSKY are the most performance heavy.</p>
-<img alt="../_images/Profiling.png" src="../_images/Profiling.png" />
+<p>Use profiling to determine which aspects of trueSKY are having the greatest performance cost. Adjust the CPU and GPU levels to alter the adjust the amount of information provided.</p>
+<img alt="trueSKY profiler" class="zoomable" src="../_images/Profiling.png" />
 </section>
 <section id="atmospheric-tables">
 <h2>Atmospheric Tables<a class="headerlink" href="#atmospheric-tables" title="Permalink to this heading">¶</a></h2>
 <p>Detailed numbers on lighting values as well as colours. Issues with lighting can be looked at here.</p>
-<img alt="../_images/AtmosphericTables.png" src="../_images/AtmosphericTables.png" />
+<img alt="Atmospheric tables and light query results" class="zoomable" src="../_images/AtmosphericTables.png" />
 </section>
 <section id="cube-maps">
 <h2>Cube Maps<a class="headerlink" href="#cube-maps" title="Permalink to this heading">¶</a></h2>
-<p>Helpful to see what your clouds are doing. Will cycle through the different Mips.</p>
-<img alt="Cubemaps of different mip levels." src="../_images/CubeMaps.png" />
+<p>Shows the current cubemap which will cycle through the different Mips.</p>
+<img alt="Cubemaps of different mip levels." class="zoomable" src="../_images/CubeMaps.png" />
 </section>
 <section id="composition">
 <h2>Composition<a class="headerlink" href="#composition" title="Permalink to this heading">¶</a></h2>
-<p>Here is an overview of many of the systems use, helpful for depth tests and general debugging.</p>
-<img alt="Debug view showing the stages of compositor." src="../_images/composition.png" />
+<p>Here is an overview of many of the systems used, helpful for depth tests and general debugging.</p>
+<img alt="Debug view showing the stages of compositor." class="zoomable" src="../_images/composition.png" />
 </section>
 <section id="rain-overlay">
 <h2>Rain Overlay<a class="headerlink" href="#rain-overlay" title="Permalink to this heading">¶</a></h2>
 <p>Here is an overlay of the rain map texture. If the precipitation volume is blank, then the rain does not know where to fall. Rain will only fall under clouds, unless specifically asked not to.</p>
-<img alt="trueSKY precipitation Overlays" src="../_images/RainOverlay.png" />
+<img alt="trueSKY precipitation Overlays" class="zoomable" src="../_images/RainOverlay.png" />
 </section>
 <section id="d-cloud-textures">
 <h2>3D cloud Textures<a class="headerlink" href="#d-cloud-textures" title="Permalink to this heading">¶</a></h2>
-<p>3D clouds textures including the shadow map texture. Helpful to see how much your Worley setting are affecting the clouds, as well as how large the Shadow Map is.</p>
-<img alt="Debug cloud noise and shadow textures." src="../_images/cloudtextures.png" />
+<p>3D clouds textures including the shadow map texture. Helpful to see how much your Worley setting are affecting the clouds, as well as how large the shadow map is.</p>
+<img alt="Debug cloud noise and shadow textures." class="zoomable" src="../_images/cloudtextures.png" />
 </section>
 </section>
 
@@ -183,6 +183,8 @@
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script> 
-
+<div class="overlay" style="display: none;">
+    <img class="fullsize">
+</div>
 </body>
 </html>

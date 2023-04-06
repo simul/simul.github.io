@@ -54,7 +54,7 @@ Foam Strength							Strength of the foam effect. 														0 to 0.5
 
 Shore Effects
 ---------------
-:doc:`Shore Effects <watershoreeffects>`can be used to reduce the waves splashing unevenly over the water's edge.
+Shore Effects can be used to reduce the waves splashing unevenly over the water's edge.
 
 ==============================================  ==================================================================================  =============
 Variable 										Definition																			Value

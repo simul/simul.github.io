@@ -5,7 +5,6 @@ Sky
    :maxdepth: 2
    :caption: Classes:
 
-   Sky/skyclass.rst
    Sky/baseskyrenderer.rst
    Sky/baseatmosphericsrenderer.rst
    Sky/basegpuskygenerator.rst

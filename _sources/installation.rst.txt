@@ -12,6 +12,7 @@ If you already have an account with us, you can skip this section and select an 
 
 .. image:: ../Help/images/websiteHomepage.png
 	:alt: The Simul website homepage.
+	:class: zoomable
 
 2. Click *Try FREE for 30 days*
 
@@ -19,6 +20,7 @@ If you already have an account with us, you can skip this section and select an 
 
 .. image:: ../Help/images/signupForum.png
 	:alt: The login or register form on the Simul website.
+	:class: zoomable
 
 4. Confirm you are not a robot by completing the Captcha
 

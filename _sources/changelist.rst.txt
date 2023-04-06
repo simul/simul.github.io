@@ -1,5 +1,6 @@
 Changelist 
 ========= 
+| **Thu 06 Apr** : Doc updates.
 | **Wed 05 Apr** : Further doc updates.
 | **Wed 05 Apr** : Further documentation updates.
 | **Tue 04 Apr** : Further Documentation Updates.
@@ -99,4 +100,3 @@ Changelist
 | **Tue 29 Nov** : Merge of sync branch: allows cross-hardware pseudorandom function consistency with IntegerPseudorandomNoise in CloudRenderingOptions.
 | **Tue 29 Nov** : Merge branch '4.3_sync' into 4.3
 | **Tue 29 Nov** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Tue 29 Nov** : Merge branch '4.3_sync' of github.com:simul/Simul into 4.3_sync
