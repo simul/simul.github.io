@@ -36,6 +36,7 @@ Use profiling to aid performance measuring. This is a good way to determine what
 Atmospheric Tables 
 ------------------------
 Detailed numbers on lighting values as well as colours. Issues with lighting can be looked at here.
+
 .. image:: /../Help/images/AtmosphericTables.png
 
 Cube Maps
@@ -43,32 +44,25 @@ Cube Maps
 Helpful to see what your clouds are doing. Will cycle through the different Mips.
 
 .. image:: /../Help/images/CubeMaps.png
-
-Water Texture
-----------------------
-Here you can view the water Texture to see any issues that may be caused due to overlapping terrain or unusual behaviour.
-
-Flow Rays
--------------
-
-Lighting 	
---------------------
-
+	:alt: Cubemaps of different mip levels.
 
 Composition
 -----------------------
 Here is an overview of many of the systems use, helpful for depth tests and general debugging.
 
 .. image:: /../Help/images/composition.png
+	:alt: Debug view showing the stages of compositor.
 
 Rain Overlay
 ------------------------
 Here is an overlay of the rain map texture. If the precipitation volume is blank, then the rain does not know where to fall. Rain will only fall under clouds, unless specifically asked not to.
 
 .. image:: /../Help/images/precipitation/RainOverlay.png
+	:alt: trueSKY precipitation Overlays
 
 3D cloud Textures
 ------------------------------
 3D clouds textures including the shadow map texture. Helpful to see how much your Worley setting are affecting the clouds, as well as how large the Shadow Map is.
 
 .. image:: /../Help/images/cloudtextures.png
+	:alt: Debug cloud noise and shadow textures.

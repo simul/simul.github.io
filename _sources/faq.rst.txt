@@ -126,7 +126,7 @@ Try lowering the brightness power setting in the sky layer.
 
 Everything is Grey at night
 `````````````````````````````````````````````````
-Deleting Unreal's Atmospheric Fog should fix this issue. We do not recommend using UE4's atmospheric fog, as trueSKY produces it's own fog. You can create fog from a Sky Keyframe.
+Deleting Unreal's Atmospheric Fog should fix this issue. We do not recommend using Unreal's atmospheric fog, as trueSKY produces it's own fog. You can create fog from a Sky Keyframe.
 
 Objects are light too brightly, especially at night
 ```````````````````````````````````````````````````
