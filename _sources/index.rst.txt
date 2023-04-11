@@ -11,7 +11,7 @@ trueSKY is a software development kit that allows realistic skies, clouds and at
 In this documentation you will find everything you need to start producing high quality skies.
 
 Getting Started
-======================================
+-----------------
 
 *  :doc:`Installation <installation>` - If this is your first time with trueSKY, we recommend starting here
 
@@ -24,7 +24,7 @@ Getting Started
 *  :doc:`Code base <Reference/referenceindex>` - Our fully documented source code
 
 Useful External Links
-======================================
+-----------------------
 
 * `Check out our YouTube Channel <https://www.youtube.com/user/simulsoftware>`_ - You can find tutorials and showcases here.
 
@@ -61,7 +61,7 @@ Useful External Links
 
 
 Indices and tables
-==================
+---------------------
 
 * :ref:`genindex`
 * :ref:`search`
