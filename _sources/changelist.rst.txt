@@ -1,5 +1,8 @@
 Changelist 
 ========= 
+| **Thu 13 Apr** : General Improvements and checks.
+| **Wed 12 Apr** : Ensure Loss&inscatter are CPUWritable
+| **Wed 12 Apr** : Add internal delay for attaching
 | **Tue 11 Apr** : Update video titles
 | **Sun 09 Apr** : Update obsolete frameborder attr. Platform ptr.
 | **Thu 06 Apr** : Doc updates.
@@ -97,6 +100,3 @@ Changelist
 | **Fri 02 Dec** : Updated comment in RenderFrameStruct.
 | **Wed 30 Nov** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Wed 30 Nov** : Platform ptr.
-| **Tue 29 Nov** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Tue 29 Nov** : Changed the compute shader group sizes to (16, 16, 1) to improve in GPU timings for the CS_Raytrace shaders. Platform ptr.
-| **Tue 29 Nov** : Merge of sync branch: allows cross-hardware pseudorandom function consistency with IntegerPseudorandomNoise in CloudRenderingOptions.
