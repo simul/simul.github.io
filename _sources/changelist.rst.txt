@@ -1,5 +1,8 @@
 Changelist 
 ========= 
+| **Mon 17 Apr** : Fix for GetExternalDynamicValues
+| **Fri 14 Apr** : Platform Ptr.
+| **Fri 14 Apr** : Store/Restore Skylight Texture State.
 | **Thu 13 Apr** : General Improvements and checks.
 | **Wed 12 Apr** : Ensure Loss&inscatter are CPUWritable
 | **Wed 12 Apr** : Add internal delay for attaching
@@ -97,6 +100,3 @@ Changelist
 | **Wed 07 Dec** : Correct an integer noise cloud generation error due to incorrect seeding.
 | **Tue 06 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Fri 02 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Fri 02 Dec** : Updated comment in RenderFrameStruct.
-| **Wed 30 Nov** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Wed 30 Nov** : Platform ptr.
