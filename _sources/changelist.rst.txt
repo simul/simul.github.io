@@ -1,5 +1,13 @@
 Changelist 
 ========= 
+| **Fri 05 May** : Update default validation layer.
+| **Fri 05 May** : Platform ptr.
+| **Fri 05 May** : Fixes for TextureViews in Clouds/MixedResolutionCompositor.cpp. Platform ptr.
+| **Fri 05 May** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Fri 05 May** : Fixes for TextureView changes. Platform ptr.
+| **Fri 05 May** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Fri 05 May** : Update for Platform's new TextureView system.Platform ptr.
+| **Fri 05 May** : Fix texture assignments where a slot is shared. Updates for Vulkan Sample.
 | **Mon 17 Apr** : Fix for GetExternalDynamicValues
 | **Fri 14 Apr** : Platform Ptr.
 | **Fri 14 Apr** : Store/Restore Skylight Texture State.
@@ -92,11 +100,3 @@ Changelist
 | **Tue 13 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Tue 13 Dec** : Platform ptr.
 | **Mon 12 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Mon 12 Dec** : Change Platform submodule to relative path.
-| **Thu 08 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Thu 08 Dec** : Updated compositing shaders to fix lightpass texture incorrect rendering.
-| **Wed 07 Dec** : Improve Worley noise seeding.
-| **Wed 07 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Wed 07 Dec** : Correct an integer noise cloud generation error due to incorrect seeding.
-| **Tue 06 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Fri 02 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
