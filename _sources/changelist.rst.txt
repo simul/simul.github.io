@@ -1,5 +1,7 @@
 Changelist 
 ========= 
+| **Tue 09 May** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Tue 09 May** : Fix for InitFromExternalTexture2D() in PluginTrueSkyRenderer::SetCloudPlacementTexture().
 | **Fri 05 May** : Update default validation layer.
 | **Fri 05 May** : Platform ptr.
 | **Fri 05 May** : Fixes for TextureViews in Clouds/MixedResolutionCompositor.cpp. Platform ptr.
@@ -98,5 +100,3 @@ Changelist
 | **Thu 15 Dec** : Renamed cloud raytrace shader include files and updated technique/passes/functions names in clouds.sfx and CloudRenderer.
 | **Thu 15 Dec** : Comment regarding depth value associations for compositing the lightpass texture.
 | **Tue 13 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Tue 13 Dec** : Platform ptr.
-| **Mon 12 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
