@@ -1,5 +1,11 @@
 Changelist 
 ========= 
+| **Thu 11 May** : Remove old deployment page.
+| **Thu 11 May** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Thu 11 May** : Add GroundFogColour for manual control of ground fog colour.
+| **Thu 11 May** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Thu 11 May** : Fix for In Cloud Fog flickering.
+| **Thu 11 May** : Platform ptr.
 | **Tue 09 May** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Tue 09 May** : Fix for InitFromExternalTexture2D() in PluginTrueSkyRenderer::SetCloudPlacementTexture().
 | **Fri 05 May** : Update default validation layer.
@@ -94,9 +100,3 @@ Changelist
 | **Fri 16 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Fri 16 Dec** : Fix for rendering error in RaytraceCloudsVariable() when highDetailMultiplier is at max.
 | **Fri 16 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Fri 16 Dec** : Fix for RenderPlatform finding shaders path when device is changed
-| **Fri 16 Dec** : Added counterpart to SetExternalDynamicValues to the Getter for CloudWindow origin
-| **Thu 15 Dec** : Updated shader raytrace names.
-| **Thu 15 Dec** : Renamed cloud raytrace shader include files and updated technique/passes/functions names in clouds.sfx and CloudRenderer.
-| **Thu 15 Dec** : Comment regarding depth value associations for compositing the lightpass texture.
-| **Tue 13 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
