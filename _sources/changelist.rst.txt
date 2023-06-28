@@ -1,5 +1,44 @@
 Changelist 
 ========= 
+| **Wed 28 Jun** : Platform Ptr.
+| **Tue 27 Jun** : Platform Ptr.
+| **Tue 27 Jun** : Platform Ptr.
+| **Mon 26 Jun** : Sample Updates to support tests. Platform Ptr.
+| **Fri 16 Jun** : Platform Ptr.
+| **Fri 16 Jun** : IntegerPseudorandomNoise false by default for 4.3
+| **Fri 16 Jun** : Rename OverrideWind to FollowWind
+| **Wed 14 Jun** : Fix Unity Deploy.
+| **Tue 06 Jun** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Tue 06 Jun** : Revert to Tausworthe noise for cloud-gen.
+| **Mon 05 Jun** : SetExternalTexture - improved checks for renderTargets.
+| **Thu 01 Jun** : Revert example.sq, add TwoLayer.sq as another example
+| **Thu 01 Jun** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Thu 01 Jun** : Improve example.sq
+| **Thu 01 Jun** : Platform ptr.
+| **Thu 01 Jun** : Platform Ptr.
+| **Thu 01 Jun** : Update default sequence.
+| **Thu 01 Jun** : Fix for Opengl sample
+| **Thu 01 Jun** : Restore sample settings, add example.sq to generic sample dir.
+| **Wed 31 May** : Updated clouds in samples.
+| **Wed 31 May** : OpenGL sample fixes
+| **Wed 31 May** : Use VARIABLE_STEP_GRID in sample.
+| **Wed 31 May** : Restored lost settings from Vulkan sample.
+| **Wed 31 May** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Wed 31 May** : Fixed flicker bug which was due to skylight internal DeviceContext stamping on GPU state from parent context.
+| **Wed 31 May** : Consolidate all samples to use the same .cpp
+| **Wed 31 May** : Ensure example.sq is loaded by default in VS project Vulkan sample.
+| **Sun 28 May** : Tweaks to Vulkan example sequence. Using PCG hash for integer noise instead of Tausworthe. Fixed overbright terrain lighting.
+| **Fri 26 May** : Fix up settings for Vulkan sample in particular.
+| **Wed 24 May** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Wed 24 May** : Platform ptr.
+| **Wed 24 May** : Platform Ptr.
+| **Wed 24 May** : Vulkan shader fixed for clouds.sfx
+| **Fri 19 May** : Reduced light_table_2d and lightspaceGodraysTexture to use a FP16 format. Added profiling to Vulkan sample. Better handling for rendering the PrecipitationVolumeTexture.
+| **Thu 18 May** : Updated VulkanSample/Main.cpp to be based on the DirectX sample. Platform ptr.
+| **Wed 17 May** : Add profiling to VulkanSample, improve default clouds
+| **Wed 17 May** : Fix for Terrain rendering to match 4.4. Platform ptr.
+| **Tue 16 May** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Tue 16 May** : Updated composite shaders to better handle depth/opacity compositing of ground fog.
 | **Thu 11 May** : Remove old deployment page.
 | **Thu 11 May** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Thu 11 May** : Add GroundFogColour for manual control of ground fog colour.
@@ -61,42 +100,3 @@ Changelist
 | **Thu 02 Mar** : Removed Clouds/CloudWindow.h from class BaseAtmosphericsRenderer; added struct LightScatteringData instead.
 | **Tue 28 Feb** : In-cloud fog: extinction-based fog in compositor, depends on cloud density/lighting query and NearCloudExtinctionPerKm.
 | **Tue 31 Jan** : Move Save/Load CloudRenderingOptions from CloudRenderer.cpp to CloudRenderingOptions.cpp
-| **Tue 31 Jan** : Set Minimum density value for cloud_update
-| **Tue 31 Jan** : Update RenderFrameStruct for 4.4 compatibility.
-| **Mon 30 Jan** : Platform ptr.
-| **Mon 30 Jan** : Added altitude to diagnostics overlay.
-| **Mon 30 Jan** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Mon 30 Jan** : Updated CloudRenderer::SaveRenderingOptionsToFile() and CloudRenderer::LoadRenderingOptionsFromFile(). Platform ptr.
-| **Fri 27 Jan** : Platform Ptr
-| **Thu 26 Jan** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Thu 26 Jan** : Platform Ptr.
-| **Thu 26 Jan** : Whitespace corrections in terrain.sfx.
-| **Thu 26 Jan** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Thu 26 Jan** : Simplified shadow texture lookups in terrain.sfx.
-| **Wed 25 Jan** : Remove GET_FROM_FILE_CUSTOM where no longer needed
-| **Wed 25 Jan** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Tue 24 Jan** : Platform Ptr.
-| **Tue 24 Jan** : Improvements to save/load options
-| **Mon 23 Jan** : add save/load rendering options
-| **Mon 23 Jan** : documentation updates
-| **Thu 19 Jan** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Thu 19 Jan** : Updated parameter names in GetShadowTexcoords() and GetSimpleIlluminationAt()
-| **Wed 18 Jan** : Rename of cloud textures in update shader. Add Int format textures.
-| **Wed 18 Jan** : Fix for missing documentation
-| **Wed 18 Jan** : Add comments to Cloud Rendering Variables
-| **Mon 16 Jan** : Fix missing images, update to docs for tables, missing variables.
-| **Fri 06 Jan** : Remove hard coded planetRadius values.
-| **Fri 06 Jan** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Fri 06 Jan** : Ensure UsingIntegerPseudorandomNoise is set
-| **Fri 06 Jan** : Variable Grid: distanceKm is now calculated with windOffsetKm. Fixes cloud stepping and disappearing clouds when global winds are used.
-| **Fri 06 Jan** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Fri 06 Jan** : Disabled overlays in TrueSkySample.cpp
-| **Thu 05 Jan** : Fixes for shadow movement
-| **Tue 03 Jan** : Changed SkyKeyframer::HeadingOffsetRadians to be a double.
-| **Tue 03 Jan** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Tue 03 Jan** : Removed VK_LAYER_LUNARG_api_dump from TrueSkyPluginRender debug environment variables.
-| **Wed 21 Dec** : fix for 4.3 lighting
-| **Wed 21 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Fri 16 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Fri 16 Dec** : Fix for rendering error in RaytraceCloudsVariable() when highDetailMultiplier is at max.
-| **Fri 16 Dec** : Merge branch '4.3' of github.com:simul/Simul into 4.3
