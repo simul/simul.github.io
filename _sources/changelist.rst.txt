@@ -1,5 +1,8 @@
 Changelist 
 ========= 
+| **Fri 30 Jun** : Only quit early if specified.
+| **Fri 30 Jun** : Add API name to screenshots.
+| **Fri 30 Jun** : Update OpenGL sample for screenshots. Platform Ptr.
 | **Wed 28 Jun** : Platform Ptr.
 | **Tue 27 Jun** : Platform Ptr.
 | **Tue 27 Jun** : Platform Ptr.
@@ -97,6 +100,3 @@ Changelist
 | **Tue 07 Mar** : Fix PS4 compilation errors due to temporaries being assigned to non-const reference in constructors.
 | **Fri 03 Mar** : Moved CloudShadow.h to /Sky and changed namespace to simul::sky. PrecipitationRenderer::SetPrecipitationVolume() renamed to PrecipitationRenderer::SetCloudShadowData(). Removed old proxy structs. BaseTerrainRenderer and BaseAtmosphericsRenderer use CloudShadowData&.
 | **Thu 02 Mar** : Updated BaseTerrainRenderer to remove references to CloudShadowData.
-| **Thu 02 Mar** : Removed Clouds/CloudWindow.h from class BaseAtmosphericsRenderer; added struct LightScatteringData instead.
-| **Tue 28 Feb** : In-cloud fog: extinction-based fog in compositor, depends on cloud density/lighting query and NearCloudExtinctionPerKm.
-| **Tue 31 Jan** : Move Save/Load CloudRenderingOptions from CloudRenderer.cpp to CloudRenderingOptions.cpp
