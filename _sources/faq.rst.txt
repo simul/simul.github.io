@@ -137,7 +137,7 @@ The sun is flickering
 This may be caused by how post-processors deal with large brightnesses, along with the small pixel size of the sun. To get around this, we've introduced MaxSunRadiance as a property of the trueSKySequence Object. When sun radiance goes past this value, the size of the drawn sun is increased, and the radiance decreased, so that the overall energy is kept constant, but the output brightness reduced. Additionally, if you haven't already, try deleting the default Atmospheric Fog and Sky Sphere actors.
 
 
-Cloud Appearance 
+Clouds
 --------------------
 
 How do I make my clouds the same each time I launch my program?
@@ -148,13 +148,17 @@ My Clouds have an obvious pattern in them, how do I make it go away?
 ````````````````````````````````````````````````````````````````````````
 Noise is used to hide repetition, have a look at our :doc:`Noise Settings <Tutorials/clouds>` to learn how to hide patterns effectively. If it is still an obvious grid, consider changing the size of the grid. This is done in the trueSKY actor within the world under "Render Grid X" and "Render Grid Y". Reducing both these values will make the grid sections smaller, resulting in higher quality clouds. This may however affect performance. Multiple cloud layers can also be used to help remove the appearance of repetition by making them intersect. Finally, make sure there is breaks within the clouds, as a sheet of clouds will always look the most repetitive.
 
+My Clouds are not moving correctly with the wind
+````````````````````````````````````````````````````````````````````````
+For non-repeating layers, such as volumes and map textures, movement via wind is not supported. You must manually position your clouds per keyframe.
+
 My Clouds change with only one keyframe
 `````````````````````````````````````````````````
 Setting the 'Noise Period' value in the cloud layer in the sky sequencer to the minimum possible will stop the clouds from changing shape over time.
 
 How do I make the clouds move independently of time-of-day?
 ````````````````````````````````````````````````````````````````````````
-Make sure to set the value "Override Wind" to true. It can be found in the cloud layer settings. You can then move the layers individually using the World Grid, and the clouds will move based on layer positions.
+You can either manually position your keyframes by positioning them on the cloud window, or you can use wind speed with real-time weather effects.
 
 On PS4, there is an apparent "trail" in the sky as the camera moves
 ````````````````````````````````````````````````````````````````````````
