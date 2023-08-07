@@ -1,5 +1,6 @@
 Changelist 
 ========= 
+| **Thu 03 Aug** : Add BlendRatio for backwards compatibility.
 | **Mon 17 Jul** : Remove Follow Wind. Support for Manual Positioning and wind offset.
 | **Fri 30 Jun** : Only quit early if specified.
 | **Fri 30 Jun** : Add API name to screenshots.
@@ -99,4 +100,3 @@ Changelist
 | **Tue 07 Mar** : Platform ptr.
 | **Tue 07 Mar** : Platform ptr.
 | **Tue 07 Mar** : Fix PS4 compilation errors due to temporaries being assigned to non-const reference in constructors.
-| **Fri 03 Mar** : Moved CloudShadow.h to /Sky and changed namespace to simul::sky. PrecipitationRenderer::SetPrecipitationVolume() renamed to PrecipitationRenderer::SetCloudShadowData(). Removed old proxy structs. BaseTerrainRenderer and BaseAtmosphericsRenderer use CloudShadowData&.
