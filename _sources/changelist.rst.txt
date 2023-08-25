@@ -1,5 +1,8 @@
 Changelist 
 ========= 
+| **Tue 22 Aug** : Improved initial cloud layer state.
+| **Tue 22 Aug** : Fix for cloud movement
+| **Tue 22 Aug** : wind_texc to window_texc
 | **Thu 03 Aug** : Add BlendRatio for backwards compatibility.
 | **Mon 17 Jul** : Remove Follow Wind. Support for Manual Positioning and wind offset.
 | **Fri 30 Jun** : Only quit early if specified.
@@ -97,6 +100,3 @@ Changelist
 | **Thu 16 Mar** : RaytraceCloudsVariable() outputs meanFadeDistance and moisture values. Platform ptr.
 | **Thu 16 Mar** : Update CopyToTargetDir.py for Project plugins. Added CopyToTargetDirUE4 for back-compatibility.
 | **Mon 13 Mar** : Doc Update for UE version
-| **Tue 07 Mar** : Platform ptr.
-| **Tue 07 Mar** : Platform ptr.
-| **Tue 07 Mar** : Fix PS4 compilation errors due to temporaries being assigned to non-const reference in constructors.
