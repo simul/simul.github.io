@@ -1,5 +1,6 @@
 Changelist 
 ========= 
+| **Thu 21 Sep** : Checksum Fix.
 | **Tue 12 Sep** : Platform ptr.
 | **Wed 06 Sep** : Ensure cloud layers are initialised correctly.
 | **Tue 22 Aug** : Improved initial cloud layer state.
@@ -99,4 +100,3 @@ Changelist
 | **Fri 17 Mar** : Platform Ptr.
 | **Fri 17 Mar** : Platform ptr.
 | **Thu 16 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Thu 16 Mar** : RaytraceCloudsVariable() outputs meanFadeDistance and moisture values. Platform ptr.
