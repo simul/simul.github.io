@@ -1,5 +1,7 @@
 Changelist 
 ========= 
+| **Wed 29 Nov** : Merge branch '4.3' of github.com:Simul/Simul into 4.3
+| **Wed 29 Nov** : Platform ptr.
 | **Tue 28 Nov** : Platform ptr.
 | **Thu 21 Sep** : Checksum Fix.
 | **Tue 12 Sep** : Platform ptr.
@@ -98,5 +100,3 @@ Changelist
 | **Thu 23 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Thu 23 Mar** : Commented code in terrain.sfx to 'boost' shadows. Platform ptr.
 | **Fri 17 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Fri 17 Mar** : Platform Ptr.
-| **Fri 17 Mar** : Platform ptr.
