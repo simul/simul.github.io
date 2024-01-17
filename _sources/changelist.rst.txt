@@ -1,5 +1,9 @@
 Changelist 
 ========= 
+| **Mon 15 Jan** : Platform Ptr.
+| **Mon 15 Jan** : Remove TrueSkyPluginSample
+| **Mon 15 Jan** : Add Plugin Sample
+| **Fri 05 Jan** : Add SetAccumulatedWindOffsetKm, set wind to a vec2 to avoid confusion.
 | **Wed 29 Nov** : Merge branch '4.3' of github.com:Simul/Simul into 4.3
 | **Wed 29 Nov** : Platform ptr.
 | **Tue 28 Nov** : Platform ptr.
@@ -96,7 +100,3 @@ Changelist
 | **Mon 27 Mar** : Platform ptr.
 | **Fri 24 Mar** : Update CopySkylightStruct to include ExternalTexture
 | **Thu 23 Mar** : Update docs with packaging question, override wind is false by default.
-| **Thu 23 Mar** : Minor shader fix.
-| **Thu 23 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Thu 23 Mar** : Commented code in terrain.sfx to 'boost' shadows. Platform ptr.
-| **Fri 17 Mar** : Merge branch '4.3' of github.com:simul/Simul into 4.3
