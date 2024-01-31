@@ -1,5 +1,7 @@
 Changelist 
 ========= 
+| **Wed 31 Jan** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Wed 31 Jan** : Fixed tabs, comment and  FIX_BROKEN in BaseWeatherRenderer.cpp. Better technique selection in CompositeCloudsToScreen(). Platform ptr.
 | **Mon 15 Jan** : Platform Ptr.
 | **Mon 15 Jan** : Remove TrueSkyPluginSample
 | **Mon 15 Jan** : Add Plugin Sample
@@ -98,5 +100,3 @@ Changelist
 | **Wed 29 Mar** : SetExternaDynamicValues Update
 | **Tue 28 Mar** : Update ExternalDynamicValues structs.
 | **Mon 27 Mar** : Platform ptr.
-| **Fri 24 Mar** : Update CopySkylightStruct to include ExternalTexture
-| **Thu 23 Mar** : Update docs with packaging question, override wind is false by default.
