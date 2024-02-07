@@ -1,5 +1,6 @@
 Changelist 
 ========= 
+| **Tue 06 Feb** : Platform ptr.
 | **Wed 31 Jan** : Updated terrain rendering to support forward depth.
 | **Wed 31 Jan** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Wed 31 Jan** : Fixed tabs, comment and  FIX_BROKEN in BaseWeatherRenderer.cpp. Better technique selection in CompositeCloudsToScreen(). Platform ptr.
@@ -99,4 +100,3 @@ Changelist
 | **Mon 03 Apr** : Platform ptr includes docs theme.
 | **Mon 03 Apr** : Using platform_sphinx_theme for docs now.
 | **Wed 29 Mar** : SetExternaDynamicValues Update
-| **Tue 28 Mar** : Update ExternalDynamicValues structs.
