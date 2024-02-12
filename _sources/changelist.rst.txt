@@ -1,5 +1,6 @@
 Changelist 
 ========= 
+| **Fri 09 Feb** : Fixes for recentering and wind offsets. Removed 20km cap to height.
 | **Wed 07 Feb** : Platform ptr.
 | **Tue 06 Feb** : Platform ptr.
 | **Wed 31 Jan** : Updated terrain rendering to support forward depth.
@@ -99,4 +100,3 @@ Changelist
 | **Tue 04 Apr** : Platform ptr.
 | **Tue 04 Apr** : Added favicon.ico for docs.
 | **Mon 03 Apr** : Platform ptr includes docs theme.
-| **Mon 03 Apr** : Using platform_sphinx_theme for docs now.

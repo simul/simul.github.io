@@ -110,7 +110,7 @@
 <dd><p>Class for real-time volumetric cloud rendering.</p>
 <p>There should exist a “trueSKY space”, where the origin(0,0,0 Cartesian) is at global mean sea level, and an arbitrary point on the Earth’s surface. The Z axis points up, the X and Y axes are arbitrary (for reasons described below). To avoid singularities, this point, and the orientation of its axes should be represented by a double-precision quaternion, which represents the rotation from (say) latitude and longitude zero with X pointing East and Y pointing North.</p>
 <p>The Volume Window is a deformed cuboid, its upper and lower surfaces matching the Earth’s curvature. On the GPU, it is a 3D texture.</p>
-<p>This trueSKY space moves in steps equivalent to one horizontal texel. The function CloudRenderer::MoveCloudWindow(x,y) does this. This should be done when the chosen viewpoint (this is up to you) moves more than a texel in any horizontal direction. This way, we need only update the edges as the window moves. </p>
+<p>This trueSKY space moves in steps equivalent to one horizontal texel. The function CloudRenderer::MoveCloudWindowGridCentreTexel(x,y) does this. This should be done when the chosen viewpoint (this is up to you) moves more than a texel in any horizontal direction. This way, we need only update the edges as the window moves. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Public Functions</p>
 <dl class="cpp function">
