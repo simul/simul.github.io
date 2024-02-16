@@ -1,5 +1,6 @@
 Changelist 
 ========= 
+| **Wed 14 Feb** : Fix for Resource binding error
 | **Fri 09 Feb** : Fixes for recentering and wind offsets. Removed 20km cap to height.
 | **Wed 07 Feb** : Platform ptr.
 | **Tue 06 Feb** : Platform ptr.
@@ -99,4 +100,3 @@ Changelist
 | **Tue 04 Apr** : Unreal Documentation Updates.
 | **Tue 04 Apr** : Platform ptr.
 | **Tue 04 Apr** : Added favicon.ico for docs.
-| **Mon 03 Apr** : Platform ptr includes docs theme.
