@@ -1,5 +1,7 @@
 Changelist 
 ========= 
+| **Mon 19 Feb** : Platform ptr.
+| **Fri 16 Feb** : Revert WindSpeed to vec3.
 | **Wed 14 Feb** : Fix for Resource binding error
 | **Fri 09 Feb** : Fixes for recentering and wind offsets. Removed 20km cap to height.
 | **Wed 07 Feb** : Platform ptr.
@@ -98,5 +100,3 @@ Changelist
 | **Tue 04 Apr** : Simplify image Alt texts.
 | **Tue 04 Apr** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Tue 04 Apr** : Unreal Documentation Updates.
-| **Tue 04 Apr** : Platform ptr.
-| **Tue 04 Apr** : Added favicon.ico for docs.
