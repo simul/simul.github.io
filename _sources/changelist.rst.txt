@@ -1,5 +1,7 @@
 Changelist 
 ========= 
+| **Mon 19 Feb** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Mon 19 Feb** : Platform ptr.
 | **Mon 19 Feb** : Platform ptr.
 | **Fri 16 Feb** : Revert WindSpeed to vec3.
 | **Wed 14 Feb** : Fix for Resource binding error
@@ -98,5 +100,3 @@ Changelist
 | **Tue 04 Apr** : Change Documentation references of UE4 to Unreal.
 | **Tue 04 Apr** : Small Doc improvements.
 | **Tue 04 Apr** : Simplify image Alt texts.
-| **Tue 04 Apr** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Tue 04 Apr** : Unreal Documentation Updates.
