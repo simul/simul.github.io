@@ -1,5 +1,8 @@
 Changelist 
 ========= 
+| **Thu 22 Feb** : Improved debug overlay rendering
+| **Wed 21 Feb** : Merge branch '4.3' of github.com:Simul/Simul into 4.3
+| **Wed 21 Feb** : WindowUpdater fix.
 | **Mon 19 Feb** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Mon 19 Feb** : Platform ptr.
 | **Mon 19 Feb** : Platform ptr.
@@ -97,6 +100,3 @@ Changelist
 | **Wed 05 Apr** : Further documentation updates.
 | **Tue 04 Apr** : Further Documentation Updates.
 | **Tue 04 Apr** : Further Doc Updates.
-| **Tue 04 Apr** : Change Documentation references of UE4 to Unreal.
-| **Tue 04 Apr** : Small Doc improvements.
-| **Tue 04 Apr** : Simplify image Alt texts.
