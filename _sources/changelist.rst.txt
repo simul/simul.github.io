@@ -1,5 +1,6 @@
 Changelist 
 ========= 
+| **Thu 14 Mar** : Updated CloudWindow: CloudWindowEditor::mouseMove() is updates position via lat/lon. Platform ptr.
 | **Tue 27 Feb** : Fix for default values in rendercrosssection renderdelegate
 | **Thu 22 Feb** : Improved debug overlay rendering
 | **Wed 21 Feb** : Merge branch '4.3' of github.com:Simul/Simul into 4.3
@@ -99,4 +100,3 @@ Changelist
 | **Thu 06 Apr** : Doc updates.
 | **Wed 05 Apr** : Further doc updates.
 | **Wed 05 Apr** : Further documentation updates.
-| **Tue 04 Apr** : Further Documentation Updates.
