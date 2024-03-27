@@ -1,5 +1,7 @@
 Changelist 
 ========= 
+| **Tue 26 Mar** : CloudRenderer::GetLineQuery(int) is now const.
+| **Tue 26 Mar** : Cleaned, refined and made stable all query types. Added Get<Type>Query(int id), which will only read the cached results; the other overload will updated the query. Platform ptr.
 | **Thu 14 Mar** : Updated CloudWindow: CloudWindowEditor::mouseMove() is updates position via lat/lon. Platform ptr.
 | **Tue 27 Feb** : Fix for default values in rendercrosssection renderdelegate
 | **Thu 22 Feb** : Improved debug overlay rendering
@@ -98,5 +100,3 @@ Changelist
 | **Tue 11 Apr** : Update video titles
 | **Sun 09 Apr** : Update obsolete frameborder attr. Platform ptr.
 | **Thu 06 Apr** : Doc updates.
-| **Wed 05 Apr** : Further doc updates.
-| **Wed 05 Apr** : Further documentation updates.
