@@ -1,5 +1,6 @@
 Changelist 
 ========= 
+| **Thu 18 Apr** : Added Mesh Rendering to Sample. Fixed whitespaces and commented code. Platform ptr.
 | **Tue 26 Mar** : CloudRenderer::GetLineQuery(int) is now const.
 | **Tue 26 Mar** : Cleaned, refined and made stable all query types. Added Get<Type>Query(int id), which will only read the cached results; the other overload will updated the query. Platform ptr.
 | **Thu 14 Mar** : Updated CloudWindow: CloudWindowEditor::mouseMove() is updates position via lat/lon. Platform ptr.
@@ -99,4 +100,3 @@ Changelist
 | **Wed 12 Apr** : Add internal delay for attaching
 | **Tue 11 Apr** : Update video titles
 | **Sun 09 Apr** : Update obsolete frameborder attr. Platform ptr.
-| **Thu 06 Apr** : Doc updates.
