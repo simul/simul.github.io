@@ -108,50 +108,10 @@
              
   <section id="water-particle-simulator">
 <h1>Water Particle Simulator<a class="headerlink" href="#water-particle-simulator" title="Permalink to this heading">¶</a></h1>
-<dl class="cpp class">
-<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain22WaterParticleSimulatorE">
-<span id="_CPPv3N5simul7terrain22WaterParticleSimulatorE"></span><span id="_CPPv2N5simul7terrain22WaterParticleSimulatorE"></span><span id="simul::terrain::WaterParticleSimulator"></span><span class="target" id="classsimul_1_1terrain_1_1_water_particle_simulator"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">WaterParticleSimulator</span></span></span><a class="headerlink" href="#_CPPv4N5simul7terrain22WaterParticleSimulatorE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric">Public Functions</p>
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain22WaterParticleSimulator20RestoreDeviceObjectsEPN13crossplatform14RenderPlatformE">
-<span id="_CPPv3N5simul7terrain22WaterParticleSimulator20RestoreDeviceObjectsEPN13crossplatform14RenderPlatformE"></span><span id="_CPPv2N5simul7terrain22WaterParticleSimulator20RestoreDeviceObjectsEPN13crossplatform14RenderPlatformE"></span><span id="simul::terrain::WaterParticleSimulator::RestoreDeviceObjects__crossplatform::RenderPlatformP"></span><span class="target" id="classsimul_1_1terrain_1_1_water_particle_simulator_1af939ca08bfd45a07160363972f3daa37"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RestoreDeviceObjects</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">RenderPlatform</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">renderPlatform</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain22WaterParticleSimulator20RestoreDeviceObjectsEPN13crossplatform14RenderPlatformE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Platform-dependent function called when initializing the wavelets simulator. </p>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain22WaterParticleSimulator23InvalidateDeviceObjectsEv">
-<span id="_CPPv3N5simul7terrain22WaterParticleSimulator23InvalidateDeviceObjectsEv"></span><span id="_CPPv2N5simul7terrain22WaterParticleSimulator23InvalidateDeviceObjectsEv"></span><span id="simul::terrain::WaterParticleSimulator::InvalidateDeviceObjects"></span><span class="target" id="classsimul_1_1terrain_1_1_water_particle_simulator_1add0c3db9f6441d1f0ee2a1f0aef7751a"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">InvalidateDeviceObjects</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain22WaterParticleSimulator23InvalidateDeviceObjectsEv" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Platform-dependent function called when uninitializing the wavelets simulator. </p>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain22WaterParticleSimulator16RecompileShadersEv">
-<span id="_CPPv3N5simul7terrain22WaterParticleSimulator16RecompileShadersEv"></span><span id="_CPPv2N5simul7terrain22WaterParticleSimulator16RecompileShadersEv"></span><span id="simul::terrain::WaterParticleSimulator::RecompileShaders"></span><span class="target" id="classsimul_1_1terrain_1_1_water_particle_simulator_1a3a85db9ad19af318347d25f2b611c20e"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RecompileShaders</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain22WaterParticleSimulator16RecompileShadersEv" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Platform-dependent function to reload the shaders - only use this for debug purposes. </p>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain22WaterParticleSimulator25AddWaterParticleGeneratorEPK23particleGeneratorValuesK21particleGeneratorTypePN13crossplatform7TextureE">
-<span id="_CPPv3N5simul7terrain22WaterParticleSimulator25AddWaterParticleGeneratorEPK23particleGeneratorValuesK21particleGeneratorTypePN13crossplatform7TextureE"></span><span id="_CPPv2N5simul7terrain22WaterParticleSimulator25AddWaterParticleGeneratorEPK23particleGeneratorValuesK21particleGeneratorTypePN13crossplatform7TextureE"></span><span id="simul::terrain::WaterParticleSimulator::AddWaterParticleGenerator__particleGeneratorValuesCP.particleGeneratorTypeC.crossplatform::TextureP"></span><span class="target" id="classsimul_1_1terrain_1_1_water_particle_simulator_1a945761c079874857fab03a0c0eb32c69"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">AddWaterParticleGenerator</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">particleGeneratorValues</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">newGenerator</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">particleGeneratorType</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">newGeneratorType</span></span>, <span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Texture</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">customPlaneTexture</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain22WaterParticleSimulator25AddWaterParticleGeneratorEPK23particleGeneratorValuesK21particleGeneratorTypePN13crossplatform7TextureE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Create a particle generator. </p>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain22WaterParticleSimulator34UpdateWaterParticleGeneratorValuesEPK23particleGeneratorValuesK21particleGeneratorTypePN13crossplatform7TextureE">
-<span id="_CPPv3N5simul7terrain22WaterParticleSimulator34UpdateWaterParticleGeneratorValuesEPK23particleGeneratorValuesK21particleGeneratorTypePN13crossplatform7TextureE"></span><span id="_CPPv2N5simul7terrain22WaterParticleSimulator34UpdateWaterParticleGeneratorValuesEPK23particleGeneratorValuesK21particleGeneratorTypePN13crossplatform7TextureE"></span><span id="simul::terrain::WaterParticleSimulator::UpdateWaterParticleGeneratorValues__particleGeneratorValuesCP.particleGeneratorTypeC.crossplatform::TextureP"></span><span class="target" id="classsimul_1_1terrain_1_1_water_particle_simulator_1afe5a118da29a353c59f95bebf5958ab5"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">UpdateWaterParticleGeneratorValues</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">particleGeneratorValues</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">generator</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">particleGeneratorType</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">generatorType</span></span>, <span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Texture</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">customPlaneTexture</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain22WaterParticleSimulator34UpdateWaterParticleGeneratorValuesEPK23particleGeneratorValuesK21particleGeneratorTypePN13crossplatform7TextureE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Update the values of a specific water particle generator. </p>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain22WaterParticleSimulator28RemoveWaterParticleGeneratorEi">
-<span id="_CPPv3N5simul7terrain22WaterParticleSimulator28RemoveWaterParticleGeneratorEi"></span><span id="_CPPv2N5simul7terrain22WaterParticleSimulator28RemoveWaterParticleGeneratorEi"></span><span id="simul::terrain::WaterParticleSimulator::RemoveWaterParticleGenerator__i"></span><span class="target" id="classsimul_1_1terrain_1_1_water_particle_simulator_1a0c28120de45eaa7b9cb4357bb9b3bfb0"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RemoveWaterParticleGenerator</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">ID</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain22WaterParticleSimulator28RemoveWaterParticleGeneratorEi" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Remove a particle generator. </p>
-</dd></dl>
-
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>doxygenclass: Cannot find class “simul::terrain::WaterParticleSimulator” in doxygen xml output for project “Simul” from directory: D:/Jarvis/Documentation/simulVersion/4.3/build/Docs/doxygen/xml</p>
 </div>
-</dd></dl>
-
 </section>
 
 

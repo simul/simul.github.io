@@ -1,0 +1,5 @@
+True Sky Renderer
+======================================
+
+.. doxygenclass:: simul::clouds::TrueSkyRenderer
+   :members:

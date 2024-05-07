@@ -1,0 +1,32 @@
+﻿trueSKY for Unreal Engine
+======================================
+
+trueSKY is fully compatible with these versions of Unreal Engine
+
+=============  =============  =============  =============
+5.0		4.27		4.26		4.25 or earlier	
+=============  =============  =============  ============= 
+✓		✓		✓			On Request		
+=============  =============  =============  ============= 
+
+For earlier versions, some features might not be available.
+
+Follow one of the links below for more information about trueSKY with Unreal Engine:
+
+   *  :doc:`Tutorial <Unreal/unrealtutorial>` - Start here to learn how to set trueSKY up in Unreal Engine
+   *  :doc:`Georeferencing <Unreal/unrealgeoreferencing>` - Georeferencing in Unreal Engine
+   *  :doc:`Blueprints <Unreal/unrealblueprints>` - How to edit trueSKY with blueprints
+   *  :doc:`UE Source Code <Unreal/unrealsourcecode>` - Launching trueSKY using the UE source code
+   *  :doc:`Debugging, Diagnosing and Profiling <Unreal/unrealdebugging>` - Resolving issues and improving performance
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :titlesonly:
+
+   Unreal/unrealtutorial.rst
+   Unreal/unrealgeoreferencing.rst
+   Unreal/unrealblueprints.rst
+   Unreal/unrealmaterials.rst
+   Unreal/unrealsourcecode.rst
+   Unreal/unrealdebugging.rst

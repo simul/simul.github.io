@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Variables &mdash; Simul  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Storms" href="../storms.html" />
+    <link rel="prev" title="How it works" href="rainbowshowitworks.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Simul
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation and Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../concepts.html">Concepts</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../tutorialsindex.html">Tutorials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../sequencer.html">Sky Sequencer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../clouds.html">Clouds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sky.html">Sky</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lighting.html">Lighting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../aurorae.html">Aurorae</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../precipitation.html">Precipitation</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../rainbows.html">Rainbows</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="rainbowstutorial.html">Rainbows Tutorial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rainbowshowitworks.html">How it works</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rainbows.html#no-rainbows">No Rainbows?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rainbows.html#rainbows-with-an-elevation-greater-than-zero">Rainbows with an Elevation greater than zero?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rainbows.html#full-circle-rainbows">Full Circle Rainbows?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rainbows.html#disable-all-rainbows">Disable All Rainbows?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rainbows.html#performance">Performance?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rainbows.html#limitation-of-truesky-s-rainbow-system">Limitation of trueSKY’s Rainbow System</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../storms.html">Storms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../water.html">Water</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../time.html">Progressing Time</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../unreal.html">trueSKY for Unreal Engine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../unity.html">trueSKY for Unity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../skysequencer.html">Sky Sequencer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../programming.html">Programming with the trueSKY SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../legalindex.html">trueSKY Licences</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../API/apiindex.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Reference/referenceindex.html">Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changelist.html">Changelist</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Simul</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../tutorialsindex.html">Tutorials</a></li>
+          <li class="breadcrumb-item"><a href="../rainbows.html">Rainbows</a></li>
+      <li class="breadcrumb-item active">Variables</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/Tutorials/Rainbows/rainbowsvariables.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="variables">
+<h1>Variables<a class="headerlink" href="#variables" title="Permalink to this heading"></a></h1>
+<p>Rainbows are automatically generated by trueSKY providing that a number of conditions are met.</p>
+<p>Rainbows can be fully customised, from position to strength and colour of the rainbow.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Variable</p></th>
+<th class="head"><p>Definition</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Automatic Rainbow Position</p></td>
+<td><p>Whether the rainbow follows the antisolar/antilunar point, or is manually set.</p></td>
+<td><p>Bool</p></td>
+</tr>
+<tr class="row-odd"><td><p>Elevation</p></td>
+<td><p>If the automatic positioning is disabled, this sets the elevation of the rainbow.</p></td>
+<td><p>0.0 to -90.0</p></td>
+</tr>
+<tr class="row-even"><td><p>Azimuth</p></td>
+<td><p>If the automatic positioning is disabled, this sets the azimuth of the rainbow.</p></td>
+<td><p>0.0 to 360.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>Intensity</p></td>
+<td><p>Controls the overall brightness of the rainbow.</p></td>
+<td><p>0.0 to 10.0</p></td>
+</tr>
+<tr class="row-even"><td><p>Depth Position</p></td>
+<td><p>The point at which the rainbow intersects the terrain. (Dependent a forward/reverse depth)</p></td>
+<td><p>0.0 to 1.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>Allow Occluded Rainbows</p></td>
+<td><p>Whether trueSKY should generate rainbows regardless of light occlusion.</p></td>
+<td><p>Bool</p></td>
+</tr>
+<tr class="row-even"><td><p>Allow Lunar Rainbows</p></td>
+<td><p>Whether trueSKY should generate rainbows using the moon’s light.</p></td>
+<td><p>Bool</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Variable</p></th>
+<th class="head"><p>Definition</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Rain Speed (m/s)</p></td>
+<td><p>Speed at which raindrops will fall, which adjusts any ‘flutter’ seen in the Rain Streaks, which are used for the rainbow.</p></td>
+<td><p>0.0 to 120.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>Raindrop Size (mm)</p></td>
+<td><p>At sizes less than 1.0mm, trueSKY will use a Submillimetric Light Scattering Approximation to adjust the spectual output.</p></td>
+<td><p>0.001 to 100.0</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Variable</p></th>
+<th class="head"><p>Definition</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Strength</p></td>
+<td><p>Adjusts the strength the rainbow.</p></td>
+<td><p>0.0 to 1.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>Rain Streaks</p></td>
+<td><p>Adjusts the strength the rainbow.</p></td>
+<td><p>0.0 to 1.0</p></td>
+</tr>
+</tbody>
+</table>
+<p>Note: Both Rain Strength and Rain Streaks must be greated than 0 for rainbows to be generated.</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="rainbowshowitworks.html" class="btn btn-neutral float-left" title="How it works" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../storms.html" class="btn btn-neutral float-right" title="Storms" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2007-2023, Simul Software Ltd.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

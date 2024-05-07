@@ -1,0 +1,6 @@
+IniFile
+======================================
+
+.. doxygenclass:: simul::base::IniFile
+   :members:
+

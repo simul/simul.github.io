@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Native Development with the trueSKY SDK &mdash; Simul  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="The TrueSkyPluginRender Library" href="pluginrenderer.html" />
+    <link rel="prev" title="Programming with the trueSKY SDK" href="../programming.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Simul
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation and Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../concepts.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorialsindex.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unreal.html">trueSKY for Unreal Engine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unity.html">trueSKY for Unity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../skysequencer.html">Sky Sequencer</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../programming.html">Programming with the trueSKY SDK</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Native Development with the trueSKY SDK</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#using-the-samples">Using the Samples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#integrating-the-sdk">Integrating the SDK</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#platform">Platform</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#implementing">Implementing</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#platform-considerations">Platform considerations</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#directx-12">DirectX 12</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#directx-11">DirectX 11</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#opengl">OpenGL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vulkan">Vulkan</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pluginrenderer.html">The TrueSkyPluginRender Library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rendering.html">Rendering Techniques in trueSKY</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiling.html">Performance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="debugging.html">Debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deployment.html">trueSKY Deployment</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../legalindex.html">trueSKY Licences</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../API/apiindex.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Reference/referenceindex.html">Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelist.html">Changelist</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Simul</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../programming.html">Programming with the trueSKY SDK</a></li>
+      <li class="breadcrumb-item active">Native Development with the trueSKY SDK</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/Programming/nativesdk.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="native-development-with-the-truesky-sdk">
+<h1>Native Development with the trueSKY SDK<a class="headerlink" href="#native-development-with-the-truesky-sdk" title="Permalink to this heading"></a></h1>
+<section id="using-the-samples">
+<h2>Using the Samples<a class="headerlink" href="#using-the-samples" title="Permalink to this heading"></a></h2>
+<p>To build the samples, use CMake to configure and generate the project files, then open the ‘Simul.sln’ located in the root of the CMake output directory.</p>
+</section>
+<section id="integrating-the-sdk">
+<h2>Integrating the SDK<a class="headerlink" href="#integrating-the-sdk" title="Permalink to this heading"></a></h2>
+<img alt="../_images/SimulOverview.png" src="../_images/SimulOverview.png" />
+<p>The main elements needed to implement trueSKY in a project are: an Environment object, which will encapsulate sky and cloud data; a WeatherRenderer; and a RenderPlatform.</p>
+<section id="platform">
+<h3>Platform<a class="headerlink" href="#platform" title="Permalink to this heading"></a></h3>
+<p>For all rendering, trueSKY uses <a class="reference external" href="https://platformdocumentation.readthedocs.io/en/latest/index.html">Platform</a>, an open source cross-platform rendering API and library which works as a wrapper around low-level graphics API’s. Platform is developed by Simul, and released under the MIT licence.</p>
+</section>
+</section>
+<section id="implementing">
+<h2>Implementing<a class="headerlink" href="#implementing" title="Permalink to this heading"></a></h2>
+<p><em>Include paths</em>: add the parent of the “Simul” source directory, and the parent of “Platform” as include paths.</p>
+<p>Create a persistent instance of <a class="reference internal" href="../Reference/Clouds/environment.html"><span class="doc">Environment</span></a>.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;Simul/Clouds/Environment.h&quot;</span>
+<span class="n">simul</span><span class="o">::</span><span class="n">clouds</span><span class="o">::</span><span class="n">Environment</span><span class="o">*</span><span class="w"> </span><span class="n">environment</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span>
+<span class="p">...</span>
+<span class="n">environment</span><span class="o">=</span><span class="k">new</span><span class="w"> </span><span class="n">simul</span><span class="o">::</span><span class="n">clouds</span><span class="o">::</span><span class="n">Environment</span><span class="p">();</span>
+</pre></div>
+</div>
+<p>The Environment instance calculates and updates environment data: cloud layers, sky properties and time-of-day. Create a persistent RenderPlatform, whose class depends on the graphics API. For example, for Direct3D 11, use:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;Platform/DirectX11/RenderPlatform.h&quot;</span>
+<span class="n">platform</span><span class="o">::</span><span class="n">dx11</span><span class="o">::</span><span class="n">RenderPlatform</span><span class="w"> </span><span class="n">renderPlatformD3D11</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">platform</span><span class="o">::</span><span class="n">dx11</span><span class="o">::</span><span class="n">RenderPlatform</span><span class="p">();</span>
+</pre></div>
+</div>
+<p>Note: earlier versions of <em>Platform</em> used “simul” as the root namespace. From v1.0, it uses “platform”.</p>
+<p>Set up shader and texture file paths:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">renderPlatform</span><span class="o">-&gt;</span><span class="n">PushShaderPath</span><span class="p">(</span><span class="s">&quot;my_shader_path&quot;</span><span class="p">);</span>
+<span class="n">renderPlatform</span><span class="o">-&gt;</span><span class="n">PushTexturePath</span><span class="p">(</span><span class="s">&quot;my_texture_path&quot;</span><span class="p">);</span>
+<span class="n">renderPlatform</span><span class="o">-&gt;</span><span class="n">PushShaderBinaryPath</span><span class="p">(</span><span class="s">&quot;my_binary_path&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>These paths operate as stacks, multiple paths can be pushed to each stack.</p>
+<p>Create a weather renderer:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">simul</span><span class="o">::</span><span class="n">clouds</span><span class="o">::</span><span class="n">BaseWeatherRenderer</span><span class="w"> </span><span class="o">*</span><span class="n">weatherRenderer</span><span class="o">=</span><span class="k">new</span><span class="w"> </span><span class="n">simul</span><span class="o">::</span><span class="n">clouds</span><span class="o">::</span><span class="n">BaseWeatherRenderer</span><span class="p">(</span><span class="n">environment</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Initialize the RenderPlatform instance. In the case of Direct3D 11, pass the ID3D11Device pointer:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">ID3D11Device</span><span class="o">*</span><span class="w"> </span><span class="n">pd3dDevice</span><span class="p">;</span>
+<span class="p">...</span>
+<span class="n">renderPlatformDx11</span><span class="p">.</span><span class="n">RestoreDeviceObjects</span><span class="p">(</span><span class="n">pd3dDevice</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Now the WeatherRenderer can be initialized:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">weatherRenderer</span><span class="o">-&gt;</span><span class="n">RestoreDeviceObjects</span><span class="p">(</span><span class="n">renderPlatformDx11</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>When the application is running, update the environment usually once per frame:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">environment</span><span class="o">-&gt;</span><span class="n">update</span><span class="p">();</span>
+</pre></div>
+</div>
+<p>Then to render:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">Render</span><span class="p">(</span><span class="n">ID3D11DeviceContext</span><span class="o">*</span><span class="w"> </span><span class="n">pContext</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">        </span><span class="n">simul</span><span class="o">::</span><span class="n">crossplatform</span><span class="o">::</span><span class="n">GraphicsDeviceContext</span><span class="w">      </span><span class="n">deviceContext</span><span class="p">;</span>
+<span class="w">        </span><span class="n">deviceContext</span><span class="p">.</span><span class="n">platform_context</span><span class="w">          </span><span class="o">=</span><span class="n">pContext</span><span class="p">;</span>
+<span class="w">        </span><span class="n">deviceContext</span><span class="p">.</span><span class="n">renderPlatform</span><span class="w">    </span><span class="o">=&amp;</span><span class="n">renderPlatformDx11</span><span class="p">;</span>
+<span class="w">        </span><span class="n">deviceContext</span><span class="p">.</span><span class="n">viewStruct</span><span class="p">.</span><span class="n">view_id</span><span class="w">        </span><span class="o">=</span><span class="n">view_id</span><span class="p">;</span>
+<span class="w">        </span><span class="n">deviceContext</span><span class="p">.</span><span class="n">viewStruct</span><span class="p">.</span><span class="n">depthTextureStyle</span><span class="w">      </span><span class="o">=</span><span class="n">crossplatform</span><span class="o">::</span><span class="n">PROJECTION</span><span class="p">;</span>
+<span class="w">        </span><span class="n">deviceContext</span><span class="p">.</span><span class="n">viewStruct</span><span class="p">.</span><span class="n">view</span><span class="w">           </span><span class="o">=</span><span class="n">viewMatrix</span><span class="p">;</span>
+<span class="w">        </span><span class="n">deviceContext</span><span class="p">.</span><span class="n">viewStruct</span><span class="p">.</span><span class="n">proj</span><span class="w">           </span><span class="o">=</span><span class="n">projectionMatrix</span><span class="p">;</span>
+<span class="w">        </span><span class="p">...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>A devicecontext object is initialized once per frame, and encapsulates the platform-specific context - in this case an ID3D11DeviceContext pointer - and view-specific information: the view and projection matrices for example.</p>
+<p>There are different types of projection matrix, and some are better than others. The classic projection transforms a viewspace position into a clip position and depth value, where depth=0 is the near plane and depth=1 is the far. But this forward projection has a very inefficient distribution of depth values with respect to distance, and causes a loss of precision. Superior to this is the reverse projection, where depth=0 represents the far plane, and depth=1 the near. It’s strongly recommended to use reverse projection to get the best visual results from trueSKY. The projection matrix sent to trueSKY should be the same one that was used to create the depth buffer.</p>
+<p>Each view that is drawn simultaneously per frame should have a unique view_id.</p>
+<p>The depth texture style is given so that trueSKY knows how to interpret the depth information you pass to it. The matrices simul::math::matrix4x4 are row-major view and projection matrices stored as a simple block of 16 floats - you can cast from most standard matrix classes directly.</p>
+<p>Once per frame, before rendering, call PreRenderUpdate. This function ignores view-specific data, and updates the shared resources of the WeatherRenderer.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">weatherRenderer</span><span class="o">-&gt;</span><span class="n">PreRenderUpdate</span><span class="p">(</span><span class="n">deviceContext</span><span class="p">,</span><span class="n">real_time_s</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>The parameter <em>real_time_s</em> is real time in seconds - as distinct from simulation time, which might be greatly accelerated, or change instantly, real time is used mainly for effects like rain that might not need to appear accelerated.</p>
+<p>In order to advance the time of day within a scene, the time of the SkyKeyframer needs to be set.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">environment</span><span class="o">-&gt;</span><span class="n">skyKeyframer</span><span class="o">-&gt;</span><span class="n">SetTime</span><span class="p">(</span><span class="n">t</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>For each view, we render the sky, passing an appropriate device context.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">weatherRenderer</span><span class="o">-&gt;</span><span class="n">Render</span><span class="p">(</span><span class="n">deviceContext</span>
+<span class="w">        </span><span class="p">,</span><span class="n">deviceContext</span><span class="p">.</span><span class="n">viewStruct</span>
+<span class="w">        </span><span class="p">,</span><span class="n">renderMode</span>
+<span class="w">        </span><span class="p">,</span><span class="n">exposure</span>
+<span class="w">        </span><span class="p">,</span><span class="n">gamma</span>
+<span class="w">        </span><span class="p">,</span><span class="n">mainDepthTexture</span>
+<span class="w">        </span><span class="p">,</span><span class="n">cubemapTexture</span>
+<span class="w">        </span><span class="p">,</span><span class="o">&amp;</span><span class="n">depthViewport</span>
+<span class="w">        </span><span class="p">,</span><span class="n">viewports</span>
+<span class="w">        </span><span class="p">,</span><span class="n">cubemap_ground_colour</span>
+<span class="w">        </span><span class="p">,</span><span class="n">amortization</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>The <em>viewstruct</em> can be taken directly from the deviceContext for simplicity.</p>
+<p>The <em>exposure</em> is a brightness multiplier - 1.0 is a good value,
+but the chosen number depends on how bright you want the sky to be relative to your scene. There is also <em>gamma</em> correction.</p>
+<p>The <em>cubemapTexture</em> can be used by the precipitation as a way of simulating refraction in individual rain droplets, as well as helping to generate ambient lighting. This can be generated using the simul::clouds::Skylight class.</p>
+<p>The depth texture is used to ensure correct atmospherics and cloud rendering.
+The <em>depthViewport</em> specifies what area of the texture is being used for the current view (some engines store a larger texture and use a portion of it): pass nullptr here to use the entire texture.
+See also <a class="reference internal" href="rendering.html"><span class="doc">Mixed Resolution Rendering</span></a>.</p>
+<section id="platform-considerations">
+<h3>Platform considerations<a class="headerlink" href="#platform-considerations" title="Permalink to this heading"></a></h3>
+</section>
+</section>
+<section id="directx-12">
+<h2>DirectX 12<a class="headerlink" href="#directx-12" title="Permalink to this heading"></a></h2>
+<p>To add True Sky to a DirectX 12 project, you need to link with the Simul core libraries, with the Platform Direct3D 12 library, e.g. SimulDirectX12_MT, and with DirectXTex, a Microsoft library for loading textures.</p>
+<ul class="simple">
+<li><p>In the project properties, select Configuration:All, then under “Configuration Properties, C++, General” add the following to “Additional Include Directories”:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$(SIMUL)\Platform\DirectX12
+$(SIMUL)\External\DirectX\DirectXTex\DirectXTex
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Under “Configuration Properties, Linker, General” set “Additional Library Directories” to:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$(Simul build path)\build\lib\$(Configuration)
+</pre></div>
+</div>
+</section>
+<section id="directx-11">
+<h2>DirectX 11<a class="headerlink" href="#directx-11" title="Permalink to this heading"></a></h2>
+<p>To add True Sky to a DirectX 11 project, you need to link with the Simul core libraries, with the Platform Direct3D 11 library, e.g. SimulDirectX11_MD, and with DirectXTex.</p>
+<ul class="simple">
+<li><p>In the project properties, select Configuration:All, then under “Configuration Properties, C++, General” add the following to “Additional Include Directories”:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$(Platform path)\DirectX11
+$(Platform path)\Windows
+</pre></div>
+</div>
+<p>The $(Platform path) folder is by default located in the Simul folder.</p>
+<ul class="simple">
+<li><p>Under “Configuration Properties, Linker, General” set “Additional Library Directories” to:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$(Simul build path)\lib\$(Configuration)
+</pre></div>
+</div>
+</section>
+<section id="opengl">
+<h2>OpenGL<a class="headerlink" href="#opengl" title="Permalink to this heading"></a></h2>
+<p>In order to build the OpenGL sample you will need GLFW, and GLEW (both included in $(Platform path)/External).</p>
+<p>To add True Sky to an OpenGL project:</p>
+<ul class="simple">
+<li><p>In the project properties, select Configuration:All, then under “Configuration Properties, C++, General” add the following “Additional Include Directories”:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$(SIMUL)\External\stb
+$(SIMUL)\Platform\External\glfw\include
+$(SIMUL)\Platform\OpenGL
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Under “Configuration Properties, Linker, General” set “Additional Library Directories” to:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&quot;$(Simul build path)/lib/$(Configuration)&quot;;&quot;$(Platform path)/External/FreeImage/Dist&quot;
+$(Platform path)/External/glfw/build_mt/lib;$(Platform path)/External/glfw/build_mt/lib/$(Configuration);
+</pre></div>
+</div>
+</section>
+<section id="vulkan">
+<h2>Vulkan<a class="headerlink" href="#vulkan" title="Permalink to this heading"></a></h2>
+<p>In order to build the Vulkan sample, you will also require GLUT and GLEW, which are both included in Simul/External.</p>
+<p>To add True Sky to a Vulkan project:</p>
+<ul class="simple">
+<li><p>In the project properties, select Configuration:All, then under “Configuration Properties, C++, General” add the following “Additional Include Directories”:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$(SIMUL)\Platform\Windows
+$(SIMUL)\External\stb
+$(SIMUL)\Platform\External\glfw\include
+$(SIMUL)\Platform\Vulkan
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Under “Configuration Properties, Linker, General” set “Additional Library Directories” to:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$(SIMUL)/Platform/External/glfw/build_mt/lib;$(SIMUL)/Platform/External/glfw/build_mt/lib/$(Configuration);
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../programming.html" class="btn btn-neutral float-left" title="Programming with the trueSKY SDK" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="pluginrenderer.html" class="btn btn-neutral float-right" title="The TrueSkyPluginRender Library" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2007-2023, Simul Software Ltd.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

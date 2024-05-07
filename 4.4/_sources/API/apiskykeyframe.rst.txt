@@ -1,0 +1,5 @@
+Sky Keyframe
+======================================
+
+.. doxygenstruct:: simul::sky::SkyKeyframe
+   :members: daytime, Mie, Haze, HazeBaseKm, HazeScaleKm, HazeEccentricity, GroundFog, FogCeilingKm, SeaLevelTemperatureK, StoreAsColours, AutoMie, automaticSunPosition

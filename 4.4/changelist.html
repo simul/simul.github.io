@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Changelist &mdash; Simul  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Plugin" href="Reference/plugin.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Simul
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation and Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="concepts.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorialsindex.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unreal.html">trueSKY for Unreal Engine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unity.html">trueSKY for Unity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skysequencer.html">Sky Sequencer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="programming.html">Programming with the trueSKY SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legalindex.html">trueSKY Licences</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="API/apiindex.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Reference/referenceindex.html">Reference</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Changelist</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Simul</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Changelist</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/changelist.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="changelist">
+<h1>Changelist<a class="headerlink" href="#changelist" title="Permalink to this heading"></a></h1>
+<div class="line-block">
+<div class="line"><strong>Tue 07 May</strong> : UI changes to simplify rectangular cloud regions.</div>
+<div class="line"><strong>Tue 07 May</strong> : GlobalView_X() functions return bool.</div>
+<div class="line"><strong>Tue 07 May</strong> : Updated LatLonHdgRadEdit() to convert correctly the default value from rad to deg. CloudRegion’s default origin is the keyframes origin.</div>
+<div class="line"><strong>Tue 07 May</strong> : Reworked CloudRenderer::RenderCloudRegions() for different region types. Renamed VolumePartIdentifier to CloudRegionPartIdentifier. std::map safety checks in CloudKeyframeProperties.cpp</div>
+<div class="line"><strong>Fri 03 May</strong> : Cleaned out old comment. Better handling of exceptions.</div>
+<div class="line"><strong>Fri 03 May</strong> : Updated column widths in CloudKeyframeProperties().</div>
+<div class="line"><strong>Fri 03 May</strong> : Updated GetCloudRegionMultiplier() to support spheroids.</div>
+<div class="line"><strong>Thu 02 May</strong> : Reorganised CloudKeyframer.cpp</div>
+<div class="line"><strong>Thu 02 May</strong> : Added support for rectangular cloud regions. SaveToText() and LoadFromText() added to CloudRegion and CloudRegionState.</div>
+<div class="line"><strong>Tue 30 Apr</strong> : Fixed UI and UFT-8 characters.</div>
+<div class="line"><strong>Tue 30 Apr</strong> : Removed Aurora::m_ShowAuroralOvalInGlobalView. This is now handle by the GlobalView.</div>
+<div class="line"><strong>Tue 30 Apr</strong> : Rename CloudVolumes to CloudRegions.</div>
+<div class="line"><strong>Mon 29 Apr</strong> : Updated EngineOriginWGS84 functions. Better display of Engine Origin info in GlobalView. CloudVolumeState new constructor.</div>
+<div class="line"><strong>Mon 29 Apr</strong> : CloudVolumeState() has a specified default constructor. Added for CloudKeyframe, FormatVolumeVariableName() and GetVolumeCentre() and implemented GetVolumeFloat() and SetVolumeFloat(). Support for controlling any CloudVolume with strings. Changed ui::Enum() to use uint64_t and long with subsequent change to affected code.</div>
+<div class="line"><strong>Fri 26 Apr</strong> : Merge branch ‘4.4’ of github.com:simul/Simul into 4.4</div>
+<div class="line"><strong>Fri 26 Apr</strong> : CS_CloudDensitySDF() supports generating wrapped filtered SDF for  cloud volumes. Fixed shader recompiling in WindowUpdater and removed crossplatform::Effect* parameter in many functions. CloudRaytraceLighting does not own the cloud_update Effect. It is passed in from WindowUpdater. Platform ptr.</div>
+<div class="line"><strong>Fri 26 Apr</strong> : Fixed crash in debug, where CloudKeyframer::InterpolateKeyframe() was mixing up cloudVolumes iterators. Clean up CloudVolumes in CloudLayerProperties.</div>
+<div class="line"><strong>Wed 24 Apr</strong> : Update Editor.nsi</div>
+<div class="line"><strong>Wed 24 Apr</strong> : externalOpaqueRendererDelagate fix. Update cube.fbx example.</div>
+<div class="line"><strong>Wed 24 Apr</strong> : Merge branch ‘4.4’ of github.com:simul/Simul into 4.4</div>
+<div class="line"><strong>Wed 24 Apr</strong> : More accurate sizes for the sub solar and sub lunar points.</div>
+<div class="line"><strong>Tue 23 Apr</strong> : Merge branch ‘4.4’ of github.com:Simul/Simul into 4.4</div>
+<div class="line"><strong>Tue 23 Apr</strong> : Add ImGUI styles in Unreal</div>
+<div class="line"><strong>Tue 23 Apr</strong> : Updated Editor to better support test mesh rendering. Added cube.fbx. Platform ptr.</div>
+<div class="line"><strong>Tue 23 Apr</strong> : Updated Setup.nsi script to ship assimp.</div>
+<div class="line"><strong>Tue 23 Apr</strong> : Added assimp to samples. Platform ptr.</div>
+<div class="line"><strong>Tue 23 Apr</strong> : Removed length() from SkyRenderer.cpp</div>
+<div class="line"><strong>Fri 19 Apr</strong> : GlobalView updated to draw position of the Sun, Moon and Eclipse point.</div>
+<div class="line"><strong>Fri 19 Apr</strong> : Added to class SkyKeyframer GetAstronomicalUnitKm(), GetDistanceToMoon() and GetDistanceToSun()</div>
+<div class="line"><strong>Fri 19 Apr</strong> : Added Sky::GetAstronomicalUnitKm(), removed old saturate functions and clean up in Sky.cpp</div>
+<div class="line"><strong>Fri 19 Apr</strong> : Improved positioning of sun and moon. Added SiderealSky::GetDistanceToSun() and SiderealSky::GetDistanceToMoon() Platform ptr.</div>
+<div class="line"><strong>Wed 17 Apr</strong> : Merge branch ‘4.4’ of github.com:simul/Simul into 4.4</div>
+<div class="line"><strong>Wed 17 Apr</strong> : Added SIMUL_DLL_SDK_LIBRARY and TrueSkyPluginSDK for dynamic linking. Editor updated to support static and dynamic linking. Reorganised main CMake file. Using AddDLLCompileDefinitions and GLFW_LIBRARY_TYPE - SHARED when SIMUL_DLL_SDK_LIBRARY is true. UI_MT now doesn’t link ImGui_MT. Platform ptr.</div>
+<div class="line"><strong>Wed 17 Apr</strong> : Added SIMUL_NO_PRAGMA_LINK to disable Export header linking libraries outside of CMake. Improved DLL interface for multiple class.</div>
+<div class="line"><strong>Wed 17 Apr</strong> : Added DLL interface for UI.</div>
+<div class="line"><strong>Tue 16 Apr</strong> : Add StaticSaveActiveSequence</div>
+<div class="line"><strong>Mon 08 Apr</strong> : Better checks for cloudVolumesStates in CloudKeyframe. GlobalViewPanel() shows Global View Controls now</div>
+<div class="line"><strong>Mon 08 Apr</strong> : Fixed Cloud shadows and added cloudShadowStrength to control a smoothstep() in the texture generation. Removed incorrect colour multiplier in terrain.sfx - PS_Main().</div>
+<div class="line"><strong>Mon 08 Apr</strong> : Fixed TerrainRenderer::RecompileShaders().</div>
+<div class="line"><strong>Fri 05 Apr</strong> : Added and using GetTopocentricDirectionToMoon() for greater accuracy position (especially at eclipse). SiderealSky::GeocentricToTopocentric() updated to do conversion in equatorial space.</div>
+<div class="line"><strong>Fri 05 Apr</strong> : Reordered SiderealSky and added GeocentricToTopocentric().</div>
+<div class="line"><strong>Thu 04 Apr</strong> : Merge branch ‘4.4’ of github.com:simul/Simul into 4.4</div>
+<div class="line"><strong>Thu 04 Apr</strong> : Updated LatLonHdgDegEdit() and LatLonHdgRadEdit(). GlobalViewPanel now uses these functions. Moved Origin controls in CloudKeyframeProperties to bottom. QuaternionToLatitudeLongitudeHeading() updated to return positive only Hdg values.</div>
+<div class="line"><strong>Thu 04 Apr</strong> : Update to sample, final fix for .nsi</div>
+<div class="line"><strong>Thu 04 Apr</strong> : Merge branch ‘4.4’ of github.com:Simul/Simul into 4.4</div>
+<div class="line"><strong>Thu 04 Apr</strong> : Save Camera speed. Platform ptr.</div>
+<div class="line"><strong>Thu 04 Apr</strong> : Platform ptr.</div>
+<div class="line"><strong>Thu 04 Apr</strong> : Merge branch ‘4.4’ of github.com:simul/Simul into 4.4</div>
+<div class="line"><strong>Thu 04 Apr</strong> : Added ResourceGroupLayout to TrueSkyPluginRenderInterface.cpp.</div>
+<div class="line"><strong>Thu 04 Apr</strong> : Fixed VMA leak in ui::Widget.</div>
+<div class="line"><strong>Thu 04 Apr</strong> : Platform Ptr</div>
+<div class="line"><strong>Thu 04 Apr</strong> : Merge branch ‘4.4’ of github.com:Simul/Simul into 4.4</div>
+<div class="line"><strong>Thu 04 Apr</strong> : SDK fixes. Platform Ptr.</div>
+<div class="line"><strong>Thu 04 Apr</strong> : Merge branch ‘4.4’ of github.com:simul/Simul into 4.4</div>
+<div class="line"><strong>Thu 04 Apr</strong> : Added options to GlobalView for engine origin, aurora, tropics and polar and the day/night terminator. Added origin controls to CloudKeyframeProperties.cpp. Added CloudRenderer::GetSiderealTransform() and updated it for new Quaternion origin. CloudRenderer.cpp reorganised.</div>
+<div class="line"><strong>Thu 04 Apr</strong> : Reoriented Default WGS84Engine origin, CloudWindow origin and CloudKeyframe origin to (0.5, 0.5, 0.5, 0.5). GlobalView::UpdateOrigin() uses LatitudeLongitudeHeadingToQuaternion() now and mouse dragging is fixed. Minor update to Sky/SkyRenderer.cpp.</div>
+<div class="line"><strong>Thu 04 Apr</strong> : Updated class Planet. Added AscensionDeclinationToEquatorialDirection() and EquatorialDirectionToAscensionDeclination(). SkyKeyframer::GetEquatorialDirectionToMoon()/Sun() use updated calculations. SiderealSky.cpp whitespaces.</div>
+<div class="line"><strong>Thu 04 Apr</strong> : Added GlobalView_Vec3FloatSlider(), GlobalView_Vec4FloatSlider(), LatLonHdgDegEdit() and LatLonHdgRadEdit().</div>
+<div class="line"><strong>Wed 03 Apr</strong> : Add example sequences</div>
+<div class="line"><strong>Wed 03 Apr</strong> : nsi directory fix</div>
+<div class="line"><strong>Wed 03 Apr</strong> : Update shortcut StartIn Directory</div>
+<div class="line"><strong>Wed 03 Apr</strong> : Further .nsi fixes.</div>
+<div class="line"><strong>Wed 03 Apr</strong> : Fix Simul Logo</div>
+<div class="line"><strong>Wed 03 Apr</strong> : Merge branch ‘4.4’ of github.com:simul/Simul into 4.4</div>
+<div class="line"><strong>Wed 03 Apr</strong> : Split off TrueSkySample.cpp into TrueSkySampleConsole.cpp.</div>
+<div class="line"><strong>Tue 02 Apr</strong> : .nsi fixes</div>
+<div class="line"><strong>Tue 02 Apr</strong> : Merge branch ‘4.4’ of github.com:Simul/Simul into 4.4</div>
+<div class="line"><strong>Tue 02 Apr</strong> : Undo/Redo for plugins. Add Fonts to Editor.nsi.</div>
+<div class="line"><strong>Wed 27 Mar</strong> : Merge branch ‘4.4’ of github.com:simul/Simul into 4.4</div>
+<div class="line"><strong>Wed 27 Mar</strong> : Fixed SkyProperties() and re-added fade texture debug rendering. DebugTextures() better handle of tabs and Sky Fades. SkyRenderer::RenderFades() now take a alt_km parameters. Fixed the layout of AtmosphericsRenderer::RenderDebug() in AtmosphericScattering::RenderDebug(). AtmosphericScattering minor clean ups. Platform ptr.</div>
+<div class="line"><strong>Wed 27 Mar</strong> : Merge branch ‘4.4’ of github.com:simul/Simul into 4.4</div>
+<div class="line"><strong>Wed 27 Mar</strong> : Removed frac from CloudRenderer.cpp.</div>
+<div class="line"><strong>Wed 27 Mar</strong> : Merge branch ‘4.4’ of github.com:simul/Simul into 4.4</div>
+<div class="line"><strong>Wed 27 Mar</strong> : Platform ptr.</div>
+<div class="line"><strong>Tue 26 Mar</strong> : Cleaned, refined and made stable all query types. Added Get&lt;Type&gt;Query(int id), which will only read the cached results; the other overload will updated the query. Added Lighting Queries to DebugTexturesPanel. Platform ptr.</div>
+<div class="line"><strong>Mon 25 Mar</strong> : Platform ptr.</div>
+<div class="line"><strong>Fri 22 Mar</strong> : Shadow texture is reverted to RGBA_8_UNORM.</div>
+<div class="line"><strong>Fri 22 Mar</strong> : Fixed compilation error from Platform changes. Platform ptr.</div>
+<div class="line"><strong>Fri 22 Mar</strong> : Change CloudShadowConstant CloudShadowMultiplier to floats. Other fixes from CppSl.sl changes. Platform ptr.</div>
+<div class="line"><strong>Fri 22 Mar</strong> : Reorganised class SkyKeyframer and separated SkyKeyframe into its own files.</div>
+<div class="line"><strong>Thu 21 Mar</strong> : Readded licence check and fix externalEngineControls in TrueSkyPluginRenderInterface.cpp.</div>
+<div class="line"><strong>Thu 21 Mar</strong> : Fixed text rendering in CloudRenderer::RenderCrossSections().</div>
+<div class="line"><strong>Tue 19 Mar</strong> : Fixed virga rendering error - now ensuring that all cloudVolumeTextures have the precipitation volume texture.</div>
+<div class="line"><strong>Tue 19 Mar</strong> : Updated externalEngineControls message in UI.</div>
+<div class="line"><strong>Tue 19 Mar</strong> : Re-added cloud wind offset readout to simul::ui::GlobalViewPanel(). Platform ptr.</div>
+<div class="line"><strong>Tue 19 Mar</strong> : Merge branch ‘4.4’ of github.com:simul/Simul into 4.4</div>
+<div class="line"><strong>Tue 19 Mar</strong> : Removed SIMUL_PLUGIN_UI_EXTERNAL_ENGINE in favour of runtime boolean check - WIP.</div>
+<div class="line"><strong>Tue 19 Mar</strong> : Fixed SDF grid artifacting by adjusting forward step and grid realignment.</div>
+<div class="line"><strong>Tue 19 Mar</strong> : Merge branch ‘4.4’ of github.com:Simul/Simul into 4.4</div>
+<div class="line"><strong>Tue 19 Mar</strong> : Minor updated to clouds_raytrace_sdf.sl</div>
+<div class="line"><strong>Tue 19 Mar</strong> : Added SIMUL_PLUGIN_UI_EXTERNAL_ENGINE definition for engine that implement certain part of our UI and drive trueSKY. Platform ptr.</div>
+<div class="line"><strong>Mon 18 Mar</strong> : Merge branch ‘4.4’ of github.com:Simul/Simul into 4.4</div>
+<div class="line"><strong>Mon 18 Mar</strong> : Update CrossSection options, increase step count. Remove licence warning message. Update sample.</div>
+<div class="line"><strong>Mon 18 Mar</strong> : Sample AtmosphericScattering is no longer part of the CMake build. Platform ptr.</div>
+<div class="line"><strong>Mon 18 Mar</strong> : Minor change to TrueSkySample.cpp. Platform ptr.</div>
+<div class="line"><strong>Fri 15 Mar</strong> : Platform ptr.</div>
+<div class="line"><strong>Fri 15 Mar</strong> : Minor fix and Platform ptr.</div>
+<div class="line"><strong>Fri 15 Mar</strong> : Platform ptr.</div>
+<div class="line"><strong>Thu 14 Mar</strong> : Added Greenwich Meridian, Equator, Topics and Polar circles to the GlobalView.</div>
+<div class="line"><strong>Tue 12 Mar</strong> : Minor code clean ups. Platform ptr.</div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Reference/plugin.html" class="btn btn-neutral float-left" title="Plugin" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2007-2023, Simul Software Ltd.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

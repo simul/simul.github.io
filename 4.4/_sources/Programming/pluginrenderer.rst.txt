@@ -1,0 +1,90 @@
+The TrueSkyPluginRender Library
+===============================
+
+The library TrueSkyPlugRender provides a dynamically-bound dll interface to integrate trueSKY into an external renderer.
+
+Usage is as follows:
+
+* Initialize by dynamically loading the appropriate TrueSkyPluginRender dll for the platform.
+* Bind the exported interface functions.
+* Initialize trueSKY.
+
+Then, for each rendered view, for each frame that is rendered, insert trueSKY in the pipeline, after the depth buffer has been generated, but before any translucent rendering.
+
+For example, in a Win32 environment, you might load the dll with:
+
+.. code-block:: cpp
+
+	HMODULE dllHandle = LoadLibrary(L"TrueSkyPluginRender_MT.dll");
+
+Then, the interface functions are initialized, e.g.
+
+.. code-block:: cpp
+
+	//! Graphics API list
+	enum GraphicsDeviceType
+	{
+		GraphicsDeviceUnknown	= -1,
+		GraphicsDeviceD3D11		=  2
+	};
+
+	//! Event types
+	enum GraphicsEventType
+	{
+		GraphicsEventInitialize = 0,
+		GraphicsEventShutdown	= 1,
+		GraphicsEventBeforeReset= 2,
+		GraphicsEventAfterReset	= 3
+	};
+	typedef int (*FStaticInitInterface)(  );
+	typedef void (*FStaticSetGraphicsDevice)
+		(void* device, GraphicsDeviceType deviceType,GraphicsEventType eventType);
+	typedef int(*FStaticRenderFrame2)(RenderFrameStruct* frameStruct);
+
+	FStaticInitInterface				StaticInitInterface=nullptr;
+	FStaticSetGraphicsDevice			StaticSetGraphicsDevice=nullptr;
+	FStaticRenderFrame2					StaticRenderFrame2=nullptr;
+
+	StaticInitInterface	=(FStaticInitInterface)GetProcAddress(dllHandle, "StaticInitInterface" );
+	StaticSetGraphicsDevice	=(FStaticSetGraphicsDevice)GetProcAddress(dllHandle, "StaticSetGraphicsDevice" );
+
+It's advisable to check that the function pointers obtained are non-zero. If all the required pointers are present, the dll can be used. We start by calling
+
+.. code-block:: cpp
+
+	void* currentDevice = (current D3D11 device pointer);
+	StaticSetGraphicsDevice(currentDevice, CurrentApiType, GraphicsEventInitialize);
+	StaticInitInterface();
+
+
+Now trueSKY is ready to render.
+
+.. code-block:: cpp
+
+		FrameStruct frameStruct;
+		(initialize frameStruct...)
+		StaticRenderFrame2(&frameStruct);
+
+		
+A reference to the relevant functions can be found :doc:`here. <../Reference/plugin>`
+
+Deployment
+----------
+Building TrueSkyPluginRenderer has a post-build script called CopyToTargetDir. Based on the built platform and config, this tries to deploy both the built dll and shaders to where they need to go.
+This is specified by the file truesky_setup.json, which goes in the current user's home folder. For example:
+
+{
+	"unreal_branches":[
+		{"ue4_dir":"D:/UnrealEngine/4.25","simul":["C:/Simul/5.0/Simul","C:/Simul/4.3/Simul","C:/Simul/4.2a/Simul","C:/Simul/4.1b/Simul"],"projects":["Test425","SimulTest"]}
+	]
+	,"unity_branches":[{"unity_dir":"C:/Simul/Unity/2019","simul":["C:/Simul/4.4/Simul","C:/Simul/4.3/Simul","C:/Simul/4.1b/Simul"],"unity_version":"2019","ps4_projects":["C:/Simul/Unity/2019/PS4"]}]
+	,"simul_branches":[{"simul":"C:/Simul/4.1b/Simul","platforms":[{"platform":"Spectrum","dll_destination":"E:\\Code\\Exo One\\Exo_MasterPlayer_DebugsOn_XSXa\\Loose\\Data\\Plugins","shader_destination":"E:/Code/Exo One/Exo_MasterPlayer_DebugsOn_XSXa/Loose/D3D12"}]}]
+	,"target_ps4":"O:/192.168.3.5"
+	,"target_ps5":"O:/192.168.3.36"
+	,"target_xboxone":"\\\\192.168.3.13"
+	,"xboxone_ue4":{"Test420":"Test420_1.0.0.0_neutral__a78hwt03br9rj"}
+}
+
+The members "unreal_branches", and "unity_branches" are specifically to deploy to an Unreal or Unity engine setup.
+The member "simul_branches" is more generic, and will deploy to the specified dll and shader destination for each platform.
+

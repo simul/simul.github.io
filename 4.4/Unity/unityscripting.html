@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scripting &mdash; Simul  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Sky Sequencer" href="../skysequencer.html" />
+    <link rel="prev" title="Unity Tutorial" href="unitytutorial.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Simul
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation and Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../concepts.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorialsindex.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unreal.html">trueSKY for Unreal Engine</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../unity.html">trueSKY for Unity</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="unitytutorial.html">Unity Tutorial</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Scripting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#truesky-object">trueSKY Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#layers-keyframers">Layers / Keyframers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#keyframes">Keyframes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#other-functions">Other Functions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../skysequencer.html">Sky Sequencer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programming.html">Programming with the trueSKY SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../legalindex.html">trueSKY Licences</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../API/apiindex.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Reference/referenceindex.html">Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelist.html">Changelist</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Simul</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../unity.html">trueSKY for Unity</a></li>
+      <li class="breadcrumb-item active">Scripting</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/Unity/unityscripting.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="scripting">
+<h1>Scripting<a class="headerlink" href="#scripting" title="Permalink to this heading"></a></h1>
+<p>Alongside the Sequencer tool, trueSKY can be driven and configured via Unity scripting. Similarly to using the sequencer, the settings and properties in trueSKY for Unity are split between <a class="reference internal" href="#keyframes">Keyframes</a> properties (temporal values for clouds and sky), <a href="#id1"><span class="problematic" id="id2">`Layers`_</span></a> properites (values for clouds and sky that persist throughout a sequence) and the properties of the <a class="reference internal" href="#truesky-object">trueSKY object</a> itself (configuration settings).</p>
+<section id="truesky-object">
+<h2>trueSKY Object<a class="headerlink" href="#truesky-object" title="Permalink to this heading"></a></h2>
+<p>To modify trueSKY object via scripting, a reference to the active object in the scene must first be obtained (there should only be one). This can be done upon initialisation; the code to do so is as follows:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">simul</span><span class="p">.</span><span class="n">trueSKY</span><span class="w"> </span><span class="n">trueSky</span><span class="o">=</span><span class="n">simul</span><span class="p">.</span><span class="n">trueSKY</span><span class="p">.</span><span class="n">GetTrueSky</span><span class="p">();</span>
+</pre></div>
+</div>
+<p>All editor properties of the trueSKY object are publicly accessible, so once a reference to the trueSKY object has been obtained, they can also be accessed and modified via scripting. For example, to disable depth blending:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">private</span><span class="w"> </span><span class="n">simul</span><span class="p">.</span><span class="n">trueSKY</span><span class="w"> </span><span class="n">tS</span><span class="p">;</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">Start</span><span class="w"> </span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">        </span><span class="n">tS</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">simul</span><span class="p">.</span><span class="n">trueSKY</span><span class="p">.</span><span class="n">GetTrueSky</span><span class="w"> </span><span class="p">();</span>
+<span class="w">        </span><span class="n">tS</span><span class="p">.</span><span class="n">DepthBlending</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="layers-keyframers">
+<h2>Layers / Keyframers<a class="headerlink" href="#layers-keyframers" title="Permalink to this heading"></a></h2>
+<p>Layer (Also called Keyframers) properties are those accessible in the sequencer by clicking on the layer name on the left of the timeline. These affect the entire sequence and the values will remain until the user changes them manually. This differs in nature from keyframe properties, which are active only between specified times and will be automatically modified via interpolation (for example if two adjacent keyframes have cloudiness set to 0.4 and 0.6 respectively, trueSKY will interpolate these values for times in between, increasing gradually from 0.4 to 0.6). The functions needed to Get and Set layer properties are as follows:</p>
+<ul class="simple">
+<li><p><strong>GetKeyframerValue&lt;Type&gt;(uint uid, string name)</strong>: Set a layer value specified by the name string.</p></li>
+<li><p><strong>SetKeyframerValue(uint uid, string name, object value)</strong>: Gets the layer value specified by the name string.</p></li>
+</ul>
+<p><strong>Creating and Deleting Layers via Scripting</strong></p>
+<p>You can create and delete cloud layers at runtime. There is only one sky layer for each sequence, so you cannot edit sky layers.</p>
+<ul class="simple">
+<li><p><strong>CreateCloudKeyframer(string name)</strong>: Creates a new Cloud layer with the given name, returns the UID</p></li>
+<li><p><strong>DeleteCloudKeyframer(uint uid)</strong>: Deletes the Cloud layer with the given UID</p></li>
+</ul>
+</section>
+<section id="keyframes">
+<h2>Keyframes<a class="headerlink" href="#keyframes" title="Permalink to this heading"></a></h2>
+<p>Keyframes in trueSKY can be accessed, counted, modified, created and deleted via scripting. To delete a keyframe or change its properties, the Unique Identifier (Uid) will need to be known. These can be retrieved either by index (the keyframes in the sequencer, which are zero-indexed) or by retrieving the current/interpolated keyframe (not viewable in the sequencer, as they are interpolated). Uids are unique and persistent for the session, but not across saves or restarts, so they should not be stored. <strong>Note</strong>: For any functions with a layer parameter, the layer indexes are as follows: <strong>0</strong> for the sky, <strong>1</strong> for the first cloud layer, <strong>2</strong> for the second cloud layer and so on. This is not the same as UID, which can vary for layers.</p>
+<p><strong>Sky</strong>:</p>
+<ul class="simple">
+<li><p><strong>GetSkyKeyframeByIndex (int index)</strong>: Get the sky keyframe with specified index.</p></li>
+<li><p><strong>GetInterpolatedSkyKeyframe ()</strong>: Retrieve the interpolated (current) sky keyframe.</p></li>
+<li><p><strong>InsertSkyKeyframe (float t)</strong>: Insert a sky keyframe at specified time t.</p></li>
+<li><p><strong>GetNumSkyKeyframes ()</strong>: Returns the total number of sky keyframes.</p></li>
+</ul>
+<p><strong>Clouds</strong>:</p>
+<ul class="simple">
+<li><p><strong>GetCloudKeyframeByIndex (int index, int layer)</strong>: Get the cloud keyframe with specified index.</p></li>
+<li><p><strong>GetInterpolatedCloudKeyframe (int layer = 1)</strong>: Retrieve the interpolated (current) cloud keyframe.</p></li>
+<li><p><strong>InsertCloudKeyframe (float t)</strong>: Insert a cloud keyframe at specified time t.</p></li>
+<li><p><strong>GetNumCloudKeyframes ()</strong>: Returns the total number ofcloud keyframes.</p></li>
+</ul>
+<p>To set or get keyframe values, you need to use:</p>
+<ul class="simple">
+<li><p><strong>GetKeyframeValue&lt;Type&gt;(keyframeUID, “VariableName”)</strong></p></li>
+<li><p><strong>SetKeyframeValue(keyframeUID, “VariableName”, value)</strong></p></li>
+</ul>
+<p>For example, to increase the cloudiness of a cloud keyframe, you would use:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span><span class="w"> </span><span class="n">simul</span><span class="p">.</span><span class="n">trueSKY</span><span class="w"> </span><span class="n">trueSky</span><span class="o">=</span><span class="n">null</span><span class="p">;</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">Update</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">        </span><span class="n">tS</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">simul</span><span class="p">.</span><span class="n">trueSKY</span><span class="p">.</span><span class="n">GetTrueSkypublic</span><span class="w"> </span><span class="n">simul</span><span class="p">.</span><span class="n">trueSKY</span><span class="w"> </span><span class="n">trueSky</span><span class="o">=</span><span class="n">null</span><span class="p">;();</span>
+
+<span class="w">        </span><span class="c1">//this will get the first cloud keyframe on the first cloud layer.</span>
+<span class="w">        </span><span class="n">uint</span><span class="w"> </span><span class="n">ckUid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ts</span><span class="p">.</span><span class="n">GetCloudKeyframeByIndex</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
+
+<span class="w">        </span><span class="kt">float</span><span class="w"> </span><span class="n">_cloudiness</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ts</span><span class="p">.</span><span class="n">GetKeyframeValue</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;</span><span class="p">(</span><span class="n">ckUid</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;cloudiness&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">ts</span><span class="p">.</span><span class="n">SetKeyframeValue</span><span class="p">(</span><span class="n">ckUid</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;cloudiness&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">_cloudiness</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">0.2</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>For a list of variable names, see the variable pages such as <a class="reference internal" href="../Tutorials/Clouds/cloudsvariables.html"><span class="doc">Cloud Variables</span></a> or <a class="reference internal" href="../Tutorials/Sky/skyvariables.html"><span class="doc">Sky Variables</span></a>. Be sure to use the correct variable type when passing the value.</p>
+</section>
+<section id="other-functions">
+<h2>Other Functions<a class="headerlink" href="#other-functions" title="Permalink to this heading"></a></h2>
+<p><strong>Queries</strong></p>
+<p>TrueSKY for Unity also provides some built in functions to carry out queries at given positions. It is possible to carry out cloud queries at a given position, and cloud line queries across two positions. These will return a VolumeQueryResult and a LineQueryResult respectively. Additionally there are more simplified functions for when you want just one value, for example, the amount of rain at a given position. Where applicable, id parameters should be given any unique integer (calling another query with the same id will overwrite the former). The functions are as follows:</p>
+<ul class="simple">
+<li><p><strong>GetCloudQuery (int id, Vector3 pos)</strong>: Given an id and a position, returns a VolumeQueryResult struct.</p></li>
+<li><p><strong>CloudLineQuery (int id, Vector3 startpos, Vector3 endpos)</strong>: Given an id, a start position and an end position, returns a LineQueryResult struct.</p></li>
+<li><p><strong>GetCloudAtPosition (Vector3 pos)</strong>: Returns the amount of cloud at the given position, as a float value 0.0 to 1.0.</p></li>
+<li><p><strong>GetCloudShadowAtPosition (Vector3 pos)</strong>: Returns the amount of cloud shadow at the given position, as a float value 0.0 to 1.0.</p></li>
+<li><p><strong>GetPrecipitationAtPosition (Vector3 pos)</strong>: Returns the amount of rain/snow at the given position, as a float value 0.0 to 1.0.</p></li>
+</ul>
+<p>The contents of the structs are as follows:</p>
+<p><strong>VolumeQueryResult</strong>:</p>
+<ul class="simple">
+<li><p>vec3 pos_m: The position used for the query (this may be modified from the original position, and projected elsewhere to avoid testing areas we know to not have cloud).</p></li>
+<li><p>int valid: Whether the query is valid (1) or not (0). Returns 0 for the first 3 frames.</p></li>
+<li><p>float density: The cloud density (0.0 to 1.0).</p></li>
+<li><p>float direct_light: The amount of direct light (0.0 to 4.0).</p></li>
+<li><p>float indirect_light: The amount of indirect light (0.0 to 4.0).</p></li>
+<li><p>float ambient_light: The amount of ambient light (0.0 to 4.0).</p></li>
+<li><p>float precipitation: The amount of rain/snow (0.0 to 1.0).</p></li>
+</ul>
+<p><strong>LineQueryResult</strong>:</p>
+<ul class="simple">
+<li><p>vec3 pos1_m: The start position used for the query (this may be modified from the original position, and projected elsewhere to avoid testing areas we know to not have cloud).</p></li>
+<li><p>vec3 pos2_m: The end position used for the query (this may be modified from the original position, and projected elsewhere to avoid testing areas we know to not have cloud).</p></li>
+<li><p>int valid: Whether the query is valid (1) or not (0). Returns 0 for the first 3 frames.</p></li>
+<li><p>float density: The cloud density (0.0 to 1.0).</p></li>
+<li><p>float visibility: The visibility distance, in km (between 0.1 and 10000.0).</p></li>
+<li><p>float optical_thickness_metres: The amount of cloud filling the distance between the start and end positions. If completely cloudy  = distance in metres, if none = 0.</p></li>
+<li><p>float first_contact_metres: The distance to the nearest cloud, in metres.</p></li>
+</ul>
+<p><strong>Storms</strong>
+Just like keyframes, storm UID’s are accessible thorugh their index or by querying the time/</p>
+<ul class="simple">
+<li><p><strong>GetStormUidByIndex(uid index)</strong></p></li>
+<li><p><strong>GetStormUidAtTime(float time)</strong></p></li>
+</ul>
+<p>For setting values for a storm, you again have similar functions to keyframes.</p>
+<ul class="simple">
+<li><p><strong>GetStormValue&lt;T&gt;(uint uid, string name)</strong></p></li>
+<li><p><strong>SetStormValue(uint uid, string name, object value)</strong></p></li>
+</ul>
+<p>The centre of a storm can be set via the SetStormCentre (float x, float y) function. This is equivalent to setting the storm centre via the map window in the sequencer (hence only two axes).</p>
+<p><strong>Unity &lt;-&gt; trueSKY Coordinate Conversions</strong></p>
+<p>As Unity and trueSKY treat coordinates differently (which axis is considered “up”), these functions are provided to convert between them when needed:</p>
+<ul class="simple">
+<li><p><strong>Vector3 TrueSkyToUnityPosition(Vector3 ts_pos)</strong>: Takes a trueSKY position and returns the converted Unity position.</p></li>
+<li><p><strong>Vector3 TrueSkyToUnityDirection(Vector3 ts_dir)</strong>: Takes a trueSKY direction and returns the converted Unity direction.</p></li>
+<li><p><strong>Vector3 UnityToTrueSkyPosition(Vector3 upos)</strong>: Takes a Unity position and returns the converted trueSKY position.</p></li>
+<li><p><strong>Vector3 UnityToTrueSkyDirection(Vector3 u_dir)</strong>: Takes a Unity direction and returns the converted trueSKY direction.</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="unitytutorial.html" class="btn btn-neutral float-left" title="Unity Tutorial" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../skysequencer.html" class="btn btn-neutral float-right" title="Sky Sequencer" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2007-2023, Simul Software Ltd.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
