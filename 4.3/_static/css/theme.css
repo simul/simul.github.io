@@ -7537,18 +7537,3 @@ span[id*=MathJax-Span]
     max-width: 90%;
     max-height: 90%;
 }
-
-.large-version-button{
-    width: 150px;
-    height: 50px;
-    font-size: 400%;
-    margin-right: 10px;
-    border: 2px solid #000; 
-    border-radius: 8px; 
-    background-color: #1960a9;
-    color:#f0f0f0 ;
-}
-
-.large-version-button:visited{
-  color:#f0f0f0;
-}
