@@ -1,5 +1,6 @@
 Changelist 
 ========= 
+| **Wed 08 May** : Added better controls from Spherical CloudRegions. Fixed member order in CloudRegionState and CloudKeyframer::SetCloudRegion() and InterpolateKeyframe(). Updated UI and Plugin.
 | **Tue 07 May** : UI changes to simplify rectangular cloud regions.
 | **Tue 07 May** : GlobalView_X() functions return bool.
 | **Tue 07 May** : Updated LatLonHdgRadEdit() to convert correctly the default value from rad to deg. CloudRegion's default origin is the keyframes origin.
@@ -99,4 +100,3 @@ Changelist
 | **Fri 15 Mar** : Minor fix and Platform ptr.
 | **Fri 15 Mar** : Platform ptr.
 | **Thu 14 Mar** : Added Greenwich Meridian, Equator, Topics and Polar circles to the GlobalView.
-| **Tue 12 Mar** : Minor code clean ups. Platform ptr.
