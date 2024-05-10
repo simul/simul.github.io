@@ -1,5 +1,6 @@
 Changelist 
 ========= 
+| **Fri 10 May** : Use theme in platform, update platform ptr.
 | **Fri 10 May** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
 | **Fri 10 May** : fix for get/set ExternalDynamicValues
 | **Fri 10 May** : SkyKeyframeProperties categories updated. Fixed StyleColours_ControlsStyleColours_Controls().
@@ -99,4 +100,3 @@ Changelist
 | **Thu 21 Mar** : Fixed text rendering in CloudRenderer::RenderCrossSections().
 | **Tue 19 Mar** : Fixed virga rendering error - now ensuring that all cloudVolumeTextures have the precipitation volume texture.
 | **Tue 19 Mar** : Updated externalEngineControls message in UI.
-| **Tue 19 Mar** : Re-added cloud wind offset readout to simul::ui::GlobalViewPanel(). Platform ptr.

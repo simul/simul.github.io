@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+  <meta charset="utf-8" ><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   <title>Scripting &mdash; Simul  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
-
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" >
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" >
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -19,10 +17,10 @@
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/js/theme.js"></script>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Sky Sequencer" href="../skysequencer.html" />
-    <link rel="prev" title="Unity Tutorial" href="unitytutorial.html" /> 
+    <link rel="index" title="Index" href="../genindex.html" >
+    <link rel="search" title="Search" href="../search.html" >
+    <link rel="next" title="Sky Sequencer" href="../skysequencer.html" >
+    <link rel="prev" title="Unity Tutorial" href="unitytutorial.html" > 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -33,15 +31,20 @@
 
           
           
-          <a href="../index.html" class="icon icon-home">
-            Simul
-          </a>
+			<a href="../index.html"  class="" >
+				
+					<span class="sidebartitle">
+						Simul
+					</span>
+				
+			</a>
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
+    <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+        <label class="search-label" for="q">Search the documentation</label>
+        <input type="text" name="q" id="q" placeholder="Search..." aria-label="Search docs" >
+        <input type="hidden" name="check_keywords" value="yes" >
+        <input type="hidden" name="area" value="default" >
+    </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
@@ -77,7 +80,8 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+		<h2 class="wy-nav-top">Navigation</h2><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">Simul</a>
       </nav>
@@ -90,19 +94,50 @@
           <li class="breadcrumb-item"><a href="../unity.html">trueSKY for Unity</a></li>
       <li class="breadcrumb-item active">Scripting</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/Unity/unityscripting.rst.txt" rel="nofollow"> View page source</a>
+        ﻿
+<div class="truesky-version-switch">
+    <button id="version-switch-button">Switch Version</button>
+</div>
+
+<script>
+    const switchButton = document.getElementById('version-switch-button');
+
+    // current URL
+    const currentURL = window.location.href;
+
+
+    const isVersion4_3 = currentURL.includes('/4.3');
+    const isVersion4_4 = currentURL.includes('/4.4');
+
+    if (isVersion4_3) {
+        switchButton.textContent = 'Switch to 4.4';
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.4';
+        });
+    } else if (isVersion4_4) {
+        switchButton.textContent = 'Switch to 4.3';
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.3';
+        });
+    } else {
+        switchButton.textContent = 'Switch to 4.3'; 
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.3';
+        });
+    }
+</script>
       </li>
   </ul>
-  <hr/>
+  <hr>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
   <section id="scripting">
-<h1>Scripting<a class="headerlink" href="#scripting" title="Permalink to this heading"></a></h1>
+<h1>Scripting<a class="headerlink" href="#scripting" title="Permalink to this heading">¶</a></h1>
 <p>Alongside the Sequencer tool, trueSKY can be driven and configured via Unity scripting. Similarly to using the sequencer, the settings and properties in trueSKY for Unity are split between <a class="reference internal" href="#keyframes">Keyframes</a> properties (temporal values for clouds and sky), <a href="#id1"><span class="problematic" id="id2">`Layers`_</span></a> properites (values for clouds and sky that persist throughout a sequence) and the properties of the <a class="reference internal" href="#truesky-object">trueSKY object</a> itself (configuration settings).</p>
 <section id="truesky-object">
-<h2>trueSKY Object<a class="headerlink" href="#truesky-object" title="Permalink to this heading"></a></h2>
+<h2>trueSKY Object<a class="headerlink" href="#truesky-object" title="Permalink to this heading">¶</a></h2>
 <p>To modify trueSKY object via scripting, a reference to the active object in the scene must first be obtained (there should only be one). This can be done upon initialisation; the code to do so is as follows:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">simul</span><span class="p">.</span><span class="n">trueSKY</span><span class="w"> </span><span class="n">trueSky</span><span class="o">=</span><span class="n">simul</span><span class="p">.</span><span class="n">trueSKY</span><span class="p">.</span><span class="n">GetTrueSky</span><span class="p">();</span>
 </pre></div>
@@ -119,7 +154,7 @@
 </div>
 </section>
 <section id="layers-keyframers">
-<h2>Layers / Keyframers<a class="headerlink" href="#layers-keyframers" title="Permalink to this heading"></a></h2>
+<h2>Layers / Keyframers<a class="headerlink" href="#layers-keyframers" title="Permalink to this heading">¶</a></h2>
 <p>Layer (Also called Keyframers) properties are those accessible in the sequencer by clicking on the layer name on the left of the timeline. These affect the entire sequence and the values will remain until the user changes them manually. This differs in nature from keyframe properties, which are active only between specified times and will be automatically modified via interpolation (for example if two adjacent keyframes have cloudiness set to 0.4 and 0.6 respectively, trueSKY will interpolate these values for times in between, increasing gradually from 0.4 to 0.6). The functions needed to Get and Set layer properties are as follows:</p>
 <ul class="simple">
 <li><p><strong>GetKeyframerValue&lt;Type&gt;(uint uid, string name)</strong>: Set a layer value specified by the name string.</p></li>
@@ -133,7 +168,7 @@
 </ul>
 </section>
 <section id="keyframes">
-<h2>Keyframes<a class="headerlink" href="#keyframes" title="Permalink to this heading"></a></h2>
+<h2>Keyframes<a class="headerlink" href="#keyframes" title="Permalink to this heading">¶</a></h2>
 <p>Keyframes in trueSKY can be accessed, counted, modified, created and deleted via scripting. To delete a keyframe or change its properties, the Unique Identifier (Uid) will need to be known. These can be retrieved either by index (the keyframes in the sequencer, which are zero-indexed) or by retrieving the current/interpolated keyframe (not viewable in the sequencer, as they are interpolated). Uids are unique and persistent for the session, but not across saves or restarts, so they should not be stored. <strong>Note</strong>: For any functions with a layer parameter, the layer indexes are as follows: <strong>0</strong> for the sky, <strong>1</strong> for the first cloud layer, <strong>2</strong> for the second cloud layer and so on. This is not the same as UID, which can vary for layers.</p>
 <p><strong>Sky</strong>:</p>
 <ul class="simple">
@@ -172,7 +207,7 @@
 <p>For a list of variable names, see the variable pages such as <a class="reference internal" href="../Tutorials/Clouds/cloudsvariables.html"><span class="doc">Cloud Variables</span></a> or <a class="reference internal" href="../Tutorials/Sky/skyvariables.html"><span class="doc">Sky Variables</span></a>. Be sure to use the correct variable type when passing the value.</p>
 </section>
 <section id="other-functions">
-<h2>Other Functions<a class="headerlink" href="#other-functions" title="Permalink to this heading"></a></h2>
+<h2>Other Functions<a class="headerlink" href="#other-functions" title="Permalink to this heading">¶</a></h2>
 <p><strong>Queries</strong></p>
 <p>TrueSKY for Unity also provides some built in functions to carry out queries at given positions. It is possible to carry out cloud queries at a given position, and cloud line queries across two positions. These will return a VolumeQueryResult and a LineQueryResult respectively. Additionally there are more simplified functions for when you want just one value, for example, the amount of rain at a given position. Where applicable, id parameters should be given any unique integer (calling another query with the same id will overwrite the former). The functions are as follows:</p>
 <ul class="simple">
@@ -230,31 +265,28 @@ Just like keyframes, storm UID’s are accessible thorugh their index or by quer
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="unitytutorial.html" class="btn btn-neutral float-left" title="Unity Tutorial" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../skysequencer.html" class="btn btn-neutral float-right" title="Sky Sequencer" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="unitytutorial.html" class="btn btn-neutral float-left" title="Unity Tutorial" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../skysequencer.html" class="btn btn-neutral float-right" title="Sky Sequencer" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
-  <hr/>
+  <hr>
 
   <div role="contentinfo">
     <p>&#169; Copyright 2007-2023, Simul Software Ltd.</p>
-  </div>
-
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
+  </div> 
 
 </footer>
         </div>
       </div>
-    </section>
+    </div>
   </div>
   <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script> 
-
+<div class="overlay" style="display: none;">
+    <img class="fullsize" alt="fullscreen image overlay" src="data:,">
+</div>
 </body>
 </html>

@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+  <meta charset="utf-8" ><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   <title>Cloud Volumes &mdash; Simul  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
-
-  
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" >
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" >
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -19,10 +17,10 @@
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Variables" href="cloudsvariables.html" />
-    <link rel="prev" title="Clouds Tutorial" href="cloudstutorial.html" /> 
+    <link rel="index" title="Index" href="../../genindex.html" >
+    <link rel="search" title="Search" href="../../search.html" >
+    <link rel="next" title="Variables" href="cloudsvariables.html" >
+    <link rel="prev" title="Clouds Tutorial" href="cloudstutorial.html" > 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -33,15 +31,20 @@
 
           
           
-          <a href="../../index.html" class="icon icon-home">
-            Simul
-          </a>
+			<a href="../../index.html"  class="" >
+				
+					<span class="sidebartitle">
+						Simul
+					</span>
+				
+			</a>
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
+    <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+        <label class="search-label" for="q">Search the documentation</label>
+        <input type="text" name="q" id="q" placeholder="Search..." aria-label="Search docs" >
+        <input type="hidden" name="check_keywords" value="yes" >
+        <input type="hidden" name="area" value="default" >
+    </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
@@ -91,7 +94,8 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+		<h2 class="wy-nav-top">Navigation</h2><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">Simul</a>
       </nav>
@@ -105,35 +109,66 @@
           <li class="breadcrumb-item"><a href="../clouds.html">Clouds</a></li>
       <li class="breadcrumb-item active">Cloud Volumes</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/Tutorials/Clouds/cloudsvolumes.rst.txt" rel="nofollow"> View page source</a>
+        ﻿
+<div class="truesky-version-switch">
+    <button id="version-switch-button">Switch Version</button>
+</div>
+
+<script>
+    const switchButton = document.getElementById('version-switch-button');
+
+    // current URL
+    const currentURL = window.location.href;
+
+
+    const isVersion4_3 = currentURL.includes('/4.3');
+    const isVersion4_4 = currentURL.includes('/4.4');
+
+    if (isVersion4_3) {
+        switchButton.textContent = 'Switch to 4.4';
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.4';
+        });
+    } else if (isVersion4_4) {
+        switchButton.textContent = 'Switch to 4.3';
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.3';
+        });
+    } else {
+        switchButton.textContent = 'Switch to 4.3'; 
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.3';
+        });
+    }
+</script>
       </li>
   </ul>
-  <hr/>
+  <hr>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
   <section id="cloud-volumes">
-<h1>Cloud Volumes<a class="headerlink" href="#cloud-volumes" title="Permalink to this heading"></a></h1>
+<h1>Cloud Volumes<a class="headerlink" href="#cloud-volumes" title="Permalink to this heading">¶</a></h1>
 <p>Cloud volumes allow you to place specific formations of clouds in the sky. These volumes can be customised just like any other clouds, and multiple can be created, allowing you to create your own skylines!</p>
 <section id="how-to-create-a-volume">
-<h2>How to create a Volume<a class="headerlink" href="#how-to-create-a-volume" title="Permalink to this heading"></a></h2>
+<h2>How to create a Volume<a class="headerlink" href="#how-to-create-a-volume" title="Permalink to this heading">¶</a></h2>
 <p>To create a volume, simply right click within the cloud layer and select “Add new Volume”</p>
 <img alt="../../_images/addNewVolume.png" src="../../_images/addNewVolume.png" />
 <img alt="../../_images/volumeWorldGrid.png" src="../../_images/volumeWorldGrid.png" />
 <p>This will turn this layer into a volume layer, meaning this layer will only use volumes, not a repeating skyline. If you still want a repeating sky as well, simply create another layer.</p>
 </section>
 <section id="how-to-modify-the-volume-type-and-fill-properties">
-<h2>How to modify the Volume type and fill properties<a class="headerlink" href="#how-to-modify-the-volume-type-and-fill-properties" title="Permalink to this heading"></a></h2>
+<h2>How to modify the Volume type and fill properties<a class="headerlink" href="#how-to-modify-the-volume-type-and-fill-properties" title="Permalink to this heading">¶</a></h2>
 <p>After creating a volume, you can modify its properties from the Properties window, when that cloud layer is selected. Under the Volumes section, you can add a volume with <strong>New Volume</strong>, delete selected volumes with <strong>Delete Volume</strong> and update selected volumes with <strong>Update Volume</strong>, based on the type and fill properties specified by the <strong>Type</strong> and <strong>Fill Type</strong> drop-down menus. Finally, there is a list of UIDs that relate to the volumes present in the layer, which you can select and modify.</p>
 <img alt="../../_images/cloudLayerVolumeProperties.png" src="../../_images/cloudLayerVolumeProperties.png" />
 </section>
 <section id="volume-fill-properties">
-<h2>Volume fill properties<a class="headerlink" href="#volume-fill-properties" title="Permalink to this heading"></a></h2>
+<h2>Volume fill properties<a class="headerlink" href="#volume-fill-properties" title="Permalink to this heading">¶</a></h2>
 <p>Volumes have a property that dictates whether the volume <em>fill</em> - ‘add-in’ or <em>cull</em> - ‘remove’ cloud from the cloud layer. This feature could be used to create the ‘eye of the storm’ for example. The filling and culling operations are applied in the order the volumes are listed from top to bottom.</p>
 </section>
 <section id="editing-volumes">
-<h2>Editing Volumes<a class="headerlink" href="#editing-volumes" title="Permalink to this heading"></a></h2>
+<h2>Editing Volumes<a class="headerlink" href="#editing-volumes" title="Permalink to this heading">¶</a></h2>
 <p>There are two modes of editing in the Cloud Window - Keyframe and Volume. <strong>Double click</strong> to switch between the editing modes. In Keyframe mode, you can drag the whole layer around, along with any volumes in that layer. The positions you move volumes to in keyframe mode are relative to the keyframe you have selected.</p>
 <img alt="../../_images/volumeEditing.png" src="../../_images/volumeEditing.png" />
 <p>In volume edit mode, you can move volumes individually and adjust their radius.</p>
@@ -143,7 +178,7 @@
 <p>If you want to adjust the base height of the volume, use the Cloudbase in the Cloud keyframe settings. This means all clouds in one layer start at the same height. Add volumes multiple layers if you want alternate heights.</p>
 </section>
 <section id="examples">
-<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this heading"></a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h2>
 <p>The new cloud volume system can be used to create small, specifically shaped clouds, or large formations of clouds that are bounded to an area. You can even mix them together! Here are just a few examples of what can now be done! Email us with your examples if you would like to be featured!</p>
 <img alt="../../_images/volume1.png" src="../../_images/volume1.png" />
 <img alt="../../_images/volume2.png" src="../../_images/volume2.png" />
@@ -155,31 +190,28 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="cloudstutorial.html" class="btn btn-neutral float-left" title="Clouds Tutorial" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="cloudsvariables.html" class="btn btn-neutral float-right" title="Variables" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="cloudstutorial.html" class="btn btn-neutral float-left" title="Clouds Tutorial" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="cloudsvariables.html" class="btn btn-neutral float-right" title="Variables" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
-  <hr/>
+  <hr>
 
   <div role="contentinfo">
     <p>&#169; Copyright 2007-2023, Simul Software Ltd.</p>
-  </div>
-
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
+  </div> 
 
 </footer>
         </div>
       </div>
-    </section>
+    </div>
   </div>
   <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script> 
-
+<div class="overlay" style="display: none;">
+    <img class="fullsize" alt="fullscreen image overlay" src="data:,">
+</div>
 </body>
 </html>

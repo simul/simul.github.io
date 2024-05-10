@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+  <meta charset="utf-8" ><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   <title>Sky Sequencer Overview &mdash; Simul  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
-
-  
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" >
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" >
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -19,10 +17,10 @@
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Timeline" href="sequencertimeline.html" />
-    <link rel="prev" title="Sky Sequencer" href="../sequencer.html" /> 
+    <link rel="index" title="Index" href="../../genindex.html" >
+    <link rel="search" title="Search" href="../../search.html" >
+    <link rel="next" title="Timeline" href="sequencertimeline.html" >
+    <link rel="prev" title="Sky Sequencer" href="../sequencer.html" > 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -33,15 +31,20 @@
 
           
           
-          <a href="../../index.html" class="icon icon-home">
-            Simul
-          </a>
+			<a href="../../index.html"  class="" >
+				
+					<span class="sidebartitle">
+						Simul
+					</span>
+				
+			</a>
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
+    <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+        <label class="search-label" for="q">Search the documentation</label>
+        <input type="text" name="q" id="q" placeholder="Search..." aria-label="Search docs" >
+        <input type="hidden" name="check_keywords" value="yes" >
+        <input type="hidden" name="area" value="default" >
+    </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
@@ -89,7 +92,8 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+		<h2 class="wy-nav-top">Navigation</h2><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">Simul</a>
       </nav>
@@ -103,16 +107,47 @@
           <li class="breadcrumb-item"><a href="../sequencer.html">Sky Sequencer</a></li>
       <li class="breadcrumb-item active">Sky Sequencer Overview</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/Tutorials/Sequencer/sequenceroverview.rst.txt" rel="nofollow"> View page source</a>
+        ﻿
+<div class="truesky-version-switch">
+    <button id="version-switch-button">Switch Version</button>
+</div>
+
+<script>
+    const switchButton = document.getElementById('version-switch-button');
+
+    // current URL
+    const currentURL = window.location.href;
+
+
+    const isVersion4_3 = currentURL.includes('/4.3');
+    const isVersion4_4 = currentURL.includes('/4.4');
+
+    if (isVersion4_3) {
+        switchButton.textContent = 'Switch to 4.4';
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.4';
+        });
+    } else if (isVersion4_4) {
+        switchButton.textContent = 'Switch to 4.3';
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.3';
+        });
+    } else {
+        switchButton.textContent = 'Switch to 4.3'; 
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.3';
+        });
+    }
+</script>
       </li>
   </ul>
-  <hr/>
+  <hr>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
   <section id="sky-sequencer-overview">
-<h1>Sky Sequencer Overview<a class="headerlink" href="#sky-sequencer-overview" title="Permalink to this heading"></a></h1>
+<h1>Sky Sequencer Overview<a class="headerlink" href="#sky-sequencer-overview" title="Permalink to this heading">¶</a></h1>
 <p>The sequencer is made up of 4 distinct parts</p>
 <img alt="../../_images/skysequencer.png" src="../../_images/skysequencer.png" />
 <table class="docutils align-default">
@@ -142,7 +177,7 @@
 </tbody>
 </table>
 <section id="registration">
-<h2>Registration<a class="headerlink" href="#registration" title="Permalink to this heading"></a></h2>
+<h2>Registration<a class="headerlink" href="#registration" title="Permalink to this heading">¶</a></h2>
 <p>Before you can edit anything on the Sequencer, you need to have entered your username and valid licence key.  This is entered in the registration fields, shown in the picture above. These can be found in your account dashboard at <a class="reference external" href="https://simul.co/account">https://simul.co/account</a>. If you do not have an account, sign up now at <a class="reference external" href="https://simul.co/register/">https://simul.co/register/</a>. We offer a 30 day free trial of trueSKY, but after the trial period you will need to purchase a licence. You can find more information about licensing <a class="reference internal" href="../../legalindex.html"><span class="doc">here.</span></a></p>
 <p>1: Login to your account at simul.co and click my account.</p>
 <img alt="../../_images/myaccount.png" src="../../_images/myaccount.png" />
@@ -153,7 +188,7 @@
 <p>trueSKY can now be customised within your scene.</p>
 </section>
 <section id="details">
-<h2>Details<a class="headerlink" href="#details" title="Permalink to this heading"></a></h2>
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this heading">¶</a></h2>
 <p>The details panel contains information about the currently selected keyframe or layer. This can all be edited, with changed taking place in real time. This panel will only show up if you have selected a keyframe.</p>
 <p>To edit a keyframe, first select it with left click. This will bring up all the keyframes variables in the details column.</p>
 <img alt="../../_images/details.png" src="../../_images/details.png" />
@@ -161,16 +196,16 @@
 <p>Now you can see all the variables that can be altered within the Sequencer. You can either drag the bar to alter the value, or edit the values by typing. All of the values are clamped to certain ranges. Plus, each value can be returned to its default position with the yellow arrow to the right of the value. This arrow will only appear of the value has been changed from it’s default state.</p>
 <p>Layers also have their own settings which will change the values of all the keyframes in that layer. An example of this is within the Sky layer, you can change the diameter of the sun. This effect will take place for all the Sky Keyframes. To select a layer, just click on its name in the column to the left of the timeline. To see what each of the settings do, head over to our <a class="reference internal" href="../Clouds/cloudsvariables.html"><span class="doc">Cloud</span></a>, <a class="reference internal" href="../Sky/skyvariables.html"><span class="doc">Sky</span></a>, or <a class="reference internal" href="../Storms/stormsvariables.html"><span class="doc">Storm</span></a> pages.</p>
 <section id="ue4">
-<h3>UE4<a class="headerlink" href="#ue4" title="Permalink to this heading"></a></h3>
+<h3>UE4<a class="headerlink" href="#ue4" title="Permalink to this heading">¶</a></h3>
 <p>You can also use blueprints to edit the trueSKY environment. Head <a class="reference internal" href="../../Unreal/unrealblueprints.html"><span class="doc">here</span></a> to learn how.</p>
 </section>
 <section id="unity">
-<h3>Unity<a class="headerlink" href="#unity" title="Permalink to this heading"></a></h3>
+<h3>Unity<a class="headerlink" href="#unity" title="Permalink to this heading">¶</a></h3>
 <p>You can also edit the trueSKY environment through scripting. Head <a class="reference internal" href="../../Unity/unityscripting.html"><span class="doc">here</span></a> to learn how.</p>
 </section>
 </section>
 <section id="cloud-window">
-<h2>Cloud Window<a class="headerlink" href="#cloud-window" title="Permalink to this heading"></a></h2>
+<h2>Cloud Window<a class="headerlink" href="#cloud-window" title="Permalink to this heading">¶</a></h2>
 <p>The Cloud Window is a top down view of the world, where you can see the current cloud formations, layers and <a class="reference internal" href="../Clouds/cloudsvolumes.html"><span class="doc">volumes</span></a>. You can zoom in and out with the mouse wheel, and drag the world around by holding right click and dragging in a direction. Clicking on a keyframe will allow you to drag the keyframes center, which is represented as a square within the cloud window, and will move all volumes in relation to the keyframes origin.</p>
 <p>The Red Arc is your current view in the project. This can be helpful for figuring out what direction you are looking in, in relation to trueSKY.</p>
 <p>Double clicking will enter Volume Edit mode, where you can individually move and edit <span class="xref std std-doc">volumes</span>. You cannot enter Volume edit mode if there are no volumes on the cloud layer.</p>
@@ -185,31 +220,28 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../sequencer.html" class="btn btn-neutral float-left" title="Sky Sequencer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="sequencertimeline.html" class="btn btn-neutral float-right" title="Timeline" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../sequencer.html" class="btn btn-neutral float-left" title="Sky Sequencer" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="sequencertimeline.html" class="btn btn-neutral float-right" title="Timeline" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
-  <hr/>
+  <hr>
 
   <div role="contentinfo">
     <p>&#169; Copyright 2007-2023, Simul Software Ltd.</p>
-  </div>
-
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
+  </div> 
 
 </footer>
         </div>
       </div>
-    </section>
+    </div>
   </div>
   <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script> 
-
+<div class="overlay" style="display: none;">
+    <img class="fullsize" alt="fullscreen image overlay" src="data:,">
+</div>
 </body>
 </html>

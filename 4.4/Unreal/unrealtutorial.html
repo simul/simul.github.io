@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+  <meta charset="utf-8" ><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   <title>Unreal Tutorial &mdash; Simul  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
-
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" >
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" >
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -19,10 +17,10 @@
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/js/theme.js"></script>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Unreal Engine Georeferencing" href="unrealgeoreferencing.html" />
-    <link rel="prev" title="trueSKY for Unreal Engine" href="../unreal.html" /> 
+    <link rel="index" title="Index" href="../genindex.html" >
+    <link rel="search" title="Search" href="../search.html" >
+    <link rel="next" title="Unreal Engine Georeferencing" href="unrealgeoreferencing.html" >
+    <link rel="prev" title="trueSKY for Unreal Engine" href="../unreal.html" > 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -33,15 +31,20 @@
 
           
           
-          <a href="../index.html" class="icon icon-home">
-            Simul
-          </a>
+			<a href="../index.html"  class="" >
+				
+					<span class="sidebartitle">
+						Simul
+					</span>
+				
+			</a>
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
+    <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+        <label class="search-label" for="q">Search the documentation</label>
+        <input type="text" name="q" id="q" placeholder="Search..." aria-label="Search docs" >
+        <input type="hidden" name="check_keywords" value="yes" >
+        <input type="hidden" name="area" value="default" >
+    </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
@@ -82,7 +85,8 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+		<h2 class="wy-nav-top">Navigation</h2><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">Simul</a>
       </nav>
@@ -95,18 +99,49 @@
           <li class="breadcrumb-item"><a href="../unreal.html">trueSKY for Unreal Engine</a></li>
       <li class="breadcrumb-item active">Unreal Tutorial</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/Unreal/unrealtutorial.rst.txt" rel="nofollow"> View page source</a>
+        ﻿
+<div class="truesky-version-switch">
+    <button id="version-switch-button">Switch Version</button>
+</div>
+
+<script>
+    const switchButton = document.getElementById('version-switch-button');
+
+    // current URL
+    const currentURL = window.location.href;
+
+
+    const isVersion4_3 = currentURL.includes('/4.3');
+    const isVersion4_4 = currentURL.includes('/4.4');
+
+    if (isVersion4_3) {
+        switchButton.textContent = 'Switch to 4.4';
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.4';
+        });
+    } else if (isVersion4_4) {
+        switchButton.textContent = 'Switch to 4.3';
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.3';
+        });
+    } else {
+        switchButton.textContent = 'Switch to 4.3'; 
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.3';
+        });
+    }
+</script>
       </li>
   </ul>
-  <hr/>
+  <hr>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
   <section id="unreal-tutorial">
-<h1>Unreal Tutorial<a class="headerlink" href="#unreal-tutorial" title="Permalink to this heading"></a></h1>
+<h1>Unreal Tutorial<a class="headerlink" href="#unreal-tutorial" title="Permalink to this heading">¶</a></h1>
 <section id="initial-configuration">
-<h2>Initial Configuration<a class="headerlink" href="#initial-configuration" title="Permalink to this heading"></a></h2>
+<h2>Initial Configuration<a class="headerlink" href="#initial-configuration" title="Permalink to this heading">¶</a></h2>
 <p>Please be aware trueSKY for Unreal does not support OSX and OpenGL. For Vulkan please use UE4 4.22 or greater.</p>
 <p>This page shows you how to install the binary version of trueSKY onto your existing binary UE installation. For other versions, or if you have a version of Unreal Engine built from source, you will need to build the plugin. Check the <a class="reference internal" href="unrealsourcecode.html"><span class="doc">Unreal Source page</span></a> for information on GitHub/Engine Source Integration.</p>
 <div class="video-wrapper">
@@ -119,7 +154,7 @@
 </div>
 </section>
 <section id="installing-the-plugin">
-<h2>Installing the Plugin<a class="headerlink" href="#installing-the-plugin" title="Permalink to this heading"></a></h2>
+<h2>Installing the Plugin<a class="headerlink" href="#installing-the-plugin" title="Permalink to this heading">¶</a></h2>
 <p>1: Login to your account at <a class="reference external" href="https://simul.co/account">https://simul.co/account</a>. If you have not created an account yet, head over to <a class="reference internal" href="../installation.html"><span class="doc">installation home page</span></a> to get setup.</p>
 <p>2: Download trueSKY binary installer from <a class="reference external" href="https://simul.co/downloads">https://simul.co/downloads</a>. Make sure to select the correct engine version you desire, and we always recommend the most up to date version of trueSKY.</p>
 <img alt="../_images/download.png" src="../_images/download.png" />
@@ -128,7 +163,7 @@
 <p><em>Make sure you select the correct directory</em></p>
 </section>
 <section id="running-the-binary-plugin">
-<h2>Running the binary plugin<a class="headerlink" href="#running-the-binary-plugin" title="Permalink to this heading"></a></h2>
+<h2>Running the binary plugin<a class="headerlink" href="#running-the-binary-plugin" title="Permalink to this heading">¶</a></h2>
 <p>1: Launch an Unreal project using the engine version in which the trueSKY plugin is installed.</p>
 <p>2: Click ‘Edit -&gt; Plugins’ from the dropdown menu at the top of the window.</p>
 <img alt="../_images/pluginwindow.png" src="../_images/pluginwindow.png" />
@@ -138,7 +173,7 @@
 <p>5: Once the plugin has been enabled, trueSKY is now ready to be used within the scene.</p>
 </section>
 <section id="adding-truesky-to-the-level">
-<h2>Adding trueSKY to the level<a class="headerlink" href="#adding-truesky-to-the-level" title="Permalink to this heading"></a></h2>
+<h2>Adding trueSKY to the level<a class="headerlink" href="#adding-truesky-to-the-level" title="Permalink to this heading">¶</a></h2>
 <p>1: Click ‘Window -&gt; initialize trueSKY’ from the dropdown at the top of the window.</p>
 <img alt="../_images/windowdropdown.png" src="../_images/windowdropdown.png" />
 <p>2: A pop-up window will appear. You can either click initialize to allow trueSKY to set itself up, or you can click next to customise initialization. If you clicked initialize, you can jump to 4.</p>
@@ -148,7 +183,7 @@
 <p>Once initialize is selected, you should see trueSKY appear in the scene, although there may not be any clouds.</p>
 </section>
 <section id="creating-a-new-sequence">
-<h2>Creating a new Sequence<a class="headerlink" href="#creating-a-new-sequence" title="Permalink to this heading"></a></h2>
+<h2>Creating a new Sequence<a class="headerlink" href="#creating-a-new-sequence" title="Permalink to this heading">¶</a></h2>
 <p>1: Either select Add New at the top left of the content browser, or right click within the content window.</p>
 <p>2: Click on “Miscellaneous -&gt; trueSKY Sequence Asset” to create a new sequence. It can be renamed/saved/moved/deleted to your preference.</p>
 <img alt="../_images/addsequence1.png" src="../_images/addsequence1.png" />
@@ -163,31 +198,28 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../unreal.html" class="btn btn-neutral float-left" title="trueSKY for Unreal Engine" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="unrealgeoreferencing.html" class="btn btn-neutral float-right" title="Unreal Engine Georeferencing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../unreal.html" class="btn btn-neutral float-left" title="trueSKY for Unreal Engine" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="unrealgeoreferencing.html" class="btn btn-neutral float-right" title="Unreal Engine Georeferencing" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
-  <hr/>
+  <hr>
 
   <div role="contentinfo">
     <p>&#169; Copyright 2007-2023, Simul Software Ltd.</p>
-  </div>
-
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
+  </div> 
 
 </footer>
         </div>
       </div>
-    </section>
+    </div>
   </div>
   <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script> 
-
+<div class="overlay" style="display: none;">
+    <img class="fullsize" alt="fullscreen image overlay" src="data:,">
+</div>
 </body>
 </html>

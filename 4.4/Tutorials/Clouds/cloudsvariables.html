@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+  <meta charset="utf-8" ><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   <title>Variables &mdash; Simul  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
-
-  
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" >
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" >
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -19,10 +17,10 @@
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Sky" href="../sky.html" />
-    <link rel="prev" title="Cloud Volumes" href="cloudsvolumes.html" /> 
+    <link rel="index" title="Index" href="../../genindex.html" >
+    <link rel="search" title="Search" href="../../search.html" >
+    <link rel="next" title="Sky" href="../sky.html" >
+    <link rel="prev" title="Cloud Volumes" href="cloudsvolumes.html" > 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -33,15 +31,20 @@
 
           
           
-          <a href="../../index.html" class="icon icon-home">
-            Simul
-          </a>
+			<a href="../../index.html"  class="" >
+				
+					<span class="sidebartitle">
+						Simul
+					</span>
+				
+			</a>
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
+    <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+        <label class="search-label" for="q">Search the documentation</label>
+        <input type="text" name="q" id="q" placeholder="Search..." aria-label="Search docs" >
+        <input type="hidden" name="check_keywords" value="yes" >
+        <input type="hidden" name="area" value="default" >
+    </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
@@ -92,7 +95,8 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+		<h2 class="wy-nav-top">Navigation</h2><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">Simul</a>
       </nav>
@@ -106,19 +110,50 @@
           <li class="breadcrumb-item"><a href="../clouds.html">Clouds</a></li>
       <li class="breadcrumb-item active">Variables</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/Tutorials/Clouds/cloudsvariables.rst.txt" rel="nofollow"> View page source</a>
+        ﻿
+<div class="truesky-version-switch">
+    <button id="version-switch-button">Switch Version</button>
+</div>
+
+<script>
+    const switchButton = document.getElementById('version-switch-button');
+
+    // current URL
+    const currentURL = window.location.href;
+
+
+    const isVersion4_3 = currentURL.includes('/4.3');
+    const isVersion4_4 = currentURL.includes('/4.4');
+
+    if (isVersion4_3) {
+        switchButton.textContent = 'Switch to 4.4';
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.4';
+        });
+    } else if (isVersion4_4) {
+        switchButton.textContent = 'Switch to 4.3';
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.3';
+        });
+    } else {
+        switchButton.textContent = 'Switch to 4.3'; 
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.3';
+        });
+    }
+</script>
       </li>
   </ul>
-  <hr/>
+  <hr>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
   <section id="variables">
-<h1>Variables<a class="headerlink" href="#variables" title="Permalink to this heading"></a></h1>
+<h1>Variables<a class="headerlink" href="#variables" title="Permalink to this heading">¶</a></h1>
 <p>This list of variables is grouped by how they affect the clouds, along with where they are located. Variables in the Red tables are located on the Keyframe, Green are in the Layer and Blue variables are on the trueSKYSequenceActor.</p>
 <section id="main">
-<h2>Main<a class="headerlink" href="#main" title="Permalink to this heading"></a></h2>
+<h2>Main<a class="headerlink" href="#main" title="Permalink to this heading">¶</a></h2>
 <p>These will alter settings about how and in what way are the clouds are generated, as there are variables such as the ray-tracing methods used, the area which they are created within and the resolution at which they are rendered.</p>
 <table class="docutils align-default">
 <thead>
@@ -240,7 +275,7 @@
 </table>
 </section>
 <section id="shape">
-<h2>Shape<a class="headerlink" href="#shape" title="Permalink to this heading"></a></h2>
+<h2>Shape<a class="headerlink" href="#shape" title="Permalink to this heading">¶</a></h2>
 <p>Shape values alter the general look of the clouds, such as how transparent the cloud is. If you have unusual looking clouds or incorrect artefacts, these are the setting to investigate.</p>
 <p>The clouds are made up of a base layer, a transition area and the upper layer.</p>
 <p>Clouds are thicker on the bottom, so the base layer is almost always the largest, and the transition area is where the base and upper layers meet.</p>
@@ -299,14 +334,14 @@
 </table>
 </section>
 <section id="wind">
-<h2>Wind<a class="headerlink" href="#wind" title="Permalink to this heading"></a></h2>
+<h2>Wind<a class="headerlink" href="#wind" title="Permalink to this heading">¶</a></h2>
 <p>Using Wind to create a dynamic sky and moving shadows is an effective way to make an environment feel alive. There are different ways to shift the clouds, however for clouds to move the time must be progressing. Learn how to control time <a class="reference internal" href="../time.html"><span class="doc">here</span></a></p>
 <p>To control the movement of the clouds you should use the <a class="reference internal" href="../Sequencer/sequenceroverview.html"><span class="doc">Cloud Window</span></a>.</p>
 <p>For one keyframe you should select the position of the clouds, then create a new keyframe and select the new position. Then the clouds will move between the positions.</p>
 <p>With the 4.3 update you can now choose which method to control your cloud movement via wind. To do this navigate to your cloud layer - and un-check the “manually position keyframe” check-box. This will allow for wind direction (set within the trueSKY actor within the scene) to control and move the clouds location.</p>
 </section>
 <section id="noise">
-<h2>Noise<a class="headerlink" href="#noise" title="Permalink to this heading"></a></h2>
+<h2>Noise<a class="headerlink" href="#noise" title="Permalink to this heading">¶</a></h2>
 <p>Noise is the best way to make sure your clouds don’t look too flat or repetitive. Values in noise are very sensitive and can produce unusual results if you’re not careful.</p>
 <table class="docutils align-default">
 <thead>
@@ -400,7 +435,7 @@
 </table>
 </section>
 <section id="cloud-shadows">
-<h2>Cloud Shadows<a class="headerlink" href="#cloud-shadows" title="Permalink to this heading"></a></h2>
+<h2>Cloud Shadows<a class="headerlink" href="#cloud-shadows" title="Permalink to this heading">¶</a></h2>
 <p>Clouds Shadows will affect the ground below the clouds, as well as other cloud layers. Shadows are automatic and require no extra setup.</p>
 <table class="docutils align-default">
 <thead>
@@ -430,7 +465,7 @@
 </table>
 </section>
 <section id="god-rays">
-<h2>God Rays<a class="headerlink" href="#god-rays" title="Permalink to this heading"></a></h2>
+<h2>God Rays<a class="headerlink" href="#god-rays" title="Permalink to this heading">¶</a></h2>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Variable</p></th>
@@ -456,31 +491,28 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="cloudsvolumes.html" class="btn btn-neutral float-left" title="Cloud Volumes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../sky.html" class="btn btn-neutral float-right" title="Sky" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="cloudsvolumes.html" class="btn btn-neutral float-left" title="Cloud Volumes" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../sky.html" class="btn btn-neutral float-right" title="Sky" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
-  <hr/>
+  <hr>
 
   <div role="contentinfo">
     <p>&#169; Copyright 2007-2023, Simul Software Ltd.</p>
-  </div>
-
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
+  </div> 
 
 </footer>
         </div>
       </div>
-    </section>
+    </div>
   </div>
   <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script> 
-
+<div class="overlay" style="display: none;">
+    <img class="fullsize" alt="fullscreen image overlay" src="data:,">
+</div>
 </body>
 </html>

@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+  <meta charset="utf-8" ><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   <title>Unity Tutorial &mdash; Simul  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
-
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" >
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" >
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -19,10 +17,10 @@
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/js/theme.js"></script>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Scripting" href="unityscripting.html" />
-    <link rel="prev" title="trueSKY for Unity" href="../unity.html" /> 
+    <link rel="index" title="Index" href="../genindex.html" >
+    <link rel="search" title="Search" href="../search.html" >
+    <link rel="next" title="Scripting" href="unityscripting.html" >
+    <link rel="prev" title="trueSKY for Unity" href="../unity.html" > 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -33,15 +31,20 @@
 
           
           
-          <a href="../index.html" class="icon icon-home">
-            Simul
-          </a>
+			<a href="../index.html"  class="" >
+				
+					<span class="sidebartitle">
+						Simul
+					</span>
+				
+			</a>
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
+    <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+        <label class="search-label" for="q">Search the documentation</label>
+        <input type="text" name="q" id="q" placeholder="Search..." aria-label="Search docs" >
+        <input type="hidden" name="check_keywords" value="yes" >
+        <input type="hidden" name="area" value="default" >
+    </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
@@ -78,7 +81,8 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+		<h2 class="wy-nav-top">Navigation</h2><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">Simul</a>
       </nav>
@@ -91,18 +95,49 @@
           <li class="breadcrumb-item"><a href="../unity.html">trueSKY for Unity</a></li>
       <li class="breadcrumb-item active">Unity Tutorial</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/Unity/unitytutorial.rst.txt" rel="nofollow"> View page source</a>
+        ﻿
+<div class="truesky-version-switch">
+    <button id="version-switch-button">Switch Version</button>
+</div>
+
+<script>
+    const switchButton = document.getElementById('version-switch-button');
+
+    // current URL
+    const currentURL = window.location.href;
+
+
+    const isVersion4_3 = currentURL.includes('/4.3');
+    const isVersion4_4 = currentURL.includes('/4.4');
+
+    if (isVersion4_3) {
+        switchButton.textContent = 'Switch to 4.4';
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.4';
+        });
+    } else if (isVersion4_4) {
+        switchButton.textContent = 'Switch to 4.3';
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.3';
+        });
+    } else {
+        switchButton.textContent = 'Switch to 4.3'; 
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.3';
+        });
+    }
+</script>
       </li>
   </ul>
-  <hr/>
+  <hr>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
   <section id="unity-tutorial">
-<h1>Unity Tutorial<a class="headerlink" href="#unity-tutorial" title="Permalink to this heading"></a></h1>
+<h1>Unity Tutorial<a class="headerlink" href="#unity-tutorial" title="Permalink to this heading">¶</a></h1>
 <section id="initial-configuration">
-<h2>Initial Configuration<a class="headerlink" href="#initial-configuration" title="Permalink to this heading"></a></h2>
+<h2>Initial Configuration<a class="headerlink" href="#initial-configuration" title="Permalink to this heading">¶</a></h2>
 <p>This page shows you how to install the trueSKY plugin for Unity. Head back to <a class="reference internal" href="../installation.html"><span class="doc">Installation</span></a> if you do not need the Unity Package.</p>
 <div class="video-wrapper">
 	<div class="video-container">
@@ -111,13 +146,13 @@
 </div>
 </section>
 <section id="obtaining-the-truesky-unity-package">
-<h2>Obtaining the trueSKY Unity Package<a class="headerlink" href="#obtaining-the-truesky-unity-package" title="Permalink to this heading"></a></h2>
+<h2>Obtaining the trueSKY Unity Package<a class="headerlink" href="#obtaining-the-truesky-unity-package" title="Permalink to this heading">¶</a></h2>
 <p>1: Login to your account at <a class="reference external" href="https://simul.co/account">https://simul.co/account</a>. If you have not created an account yet, head over to <a class="reference internal" href="../installation.html"><span class="doc">Getting Started</span></a> to get setup.</p>
 <p>2: Download trueSKY Unity Package from <a class="reference external" href="https://simul.co/downloads">https://simul.co/downloads</a>. Make sure to select the correct engine version you desire, and we always recommend the most up to date version of trueSKY. Be aware Unity has issues importing packages from the downloads folder, so we recommend saving the file in a different directory related to Unity.</p>
 <img alt="../_images/downloadpage.png" src="../_images/downloadpage.png" />
 </section>
 <section id="installing-the-plugin">
-<h2>Installing the Plugin<a class="headerlink" href="#installing-the-plugin" title="Permalink to this heading"></a></h2>
+<h2>Installing the Plugin<a class="headerlink" href="#installing-the-plugin" title="Permalink to this heading">¶</a></h2>
 <p>1: Launch the Unity project that you want to add trueSKY to, or create a new project.</p>
 <p>2: Click on ‘Assets -&gt; Import Package -&gt; Custom Package’.</p>
 <img alt="../_images/importpackage.png" src="../_images/importpackage.png" />
@@ -128,7 +163,7 @@
 <img alt="../_images/importpackagefinished.png" src="../_images/importpackagefinished.png" />
 </section>
 <section id="adding-truesky-to-the-scene">
-<h2>Adding trueSKY to the scene<a class="headerlink" href="#adding-truesky-to-the-scene" title="Permalink to this heading"></a></h2>
+<h2>Adding trueSKY to the scene<a class="headerlink" href="#adding-truesky-to-the-scene" title="Permalink to this heading">¶</a></h2>
 <p>1: Open up a project, this can either be a new project or use the provided sample project located at AssetsSimulSimulTest.</p>
 <p>2: Click on ‘GameObject -&gt; Initialize trueSKY in scene’ from the dropdown menus at the top of the window.</p>
 <img alt="../_images/initializetruesky.png" src="../_images/initializetruesky.png" />
@@ -140,7 +175,7 @@
 <p>8: The final step will initialize trueSKY in the scene, while also removing any conflicting assets such as the default skybox and distance fog - trueSKY handles this for you. Click the finish button for trueSKY to appear in your scene with your selected sequence.</p>
 </section>
 <section id="creating-new-sky-sequences">
-<h2>Creating New Sky Sequences<a class="headerlink" href="#creating-new-sky-sequences" title="Permalink to this heading"></a></h2>
+<h2>Creating New Sky Sequences<a class="headerlink" href="#creating-new-sky-sequences" title="Permalink to this heading">¶</a></h2>
 <p>1: Right click within the Asset Window and click ‘Create -&gt; New trueSky Sequence’, which will appear at the bottom of the options.</p>
 <img alt="../_images/addsequence.png" src="../_images/addsequence.png" />
 <p>2: The new sequence will be created within the asset window.</p>
@@ -155,31 +190,28 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../unity.html" class="btn btn-neutral float-left" title="trueSKY for Unity" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="unityscripting.html" class="btn btn-neutral float-right" title="Scripting" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../unity.html" class="btn btn-neutral float-left" title="trueSKY for Unity" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="unityscripting.html" class="btn btn-neutral float-right" title="Scripting" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
-  <hr/>
+  <hr>
 
   <div role="contentinfo">
     <p>&#169; Copyright 2007-2023, Simul Software Ltd.</p>
-  </div>
-
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
+  </div> 
 
 </footer>
         </div>
       </div>
-    </section>
+    </div>
   </div>
   <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script> 
-
+<div class="overlay" style="display: none;">
+    <img class="fullsize" alt="fullscreen image overlay" src="data:,">
+</div>
 </body>
 </html>

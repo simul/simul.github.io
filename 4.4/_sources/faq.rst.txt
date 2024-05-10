@@ -37,7 +37,7 @@ Try deleting the plugin folder Engine/Plugins/TrueSkyPlugin/Content and the plug
 
 When packaging the game, I get errors and/or the sky is black.
 ``````````````````````````````````````````````````````````````````
-If you are using the binary installer, then you will need to follow some additional steps to be able to package your game with trueSKY. You can read about these :doc:`here </Programming/deployment>`. If these steps have been taken, there may be a conflict with another plugin. Currently known Plugins that have conflict issues can be found :ref:`here. <plugin-conflicts>`
+If you are using the binary installer, then you will need to follow some additional steps to be able to package your game with trueSKY. You can read about these :doc:`on our deployment page </Programming/deployment>`. If these steps have been taken, there may be a conflict with another plugin. Currently known Plugins that have conflict issues can be found below. Otherwise, get in touch and can help.
 
 
 I can't edit the values in the sequencer
@@ -52,7 +52,9 @@ Try checking/unchecking the "Flipped View" option in the TrueSkyCamera component
 
 My trueSKY folder in the content browser is empty
 ``````````````````````````````````````````````````
-You can find the contents by going to "UE4Engine/Engine/Plugins/TrueSkyPlugin/Content". We don't copy the files in to save you having the files in every project. If you want to copy them over that is fine, but you will need to adjust the trueSKY actor's and our material function references if you use them from a different location. 
+For UE5 and later: The content is stored in your project directory. "yourProject/Plugins/TrueSkyPlugin/Content"
+
+For 4.27 and earlier: You can find the contents by going to "Engine/Plugins/TrueSkyPlugin/Content". We don't copy the files in to save you having the files in every project. If you want to copy them over that is fine, but you will need to adjust the trueSKY actor's and our material function references if you use them from a different location. 
 
 Failed to load TrueSkyUI_MD.dll for truesky ui
 `````````````````````````````````````````````````
@@ -89,7 +91,7 @@ Make sure there are enough clouds above to produce rain!
 
 I don't see any rain, but rain streaks are working
 ```````````````````````````````````````````````````
-For rain and lightning to render in UE4, you need to have added trueSKY translucent as a post process material. As of September 2019, this has been made automatic, and added as part of initialization. Firstly, add a post process Volume to your scene, and make sure it is global by enabling "Unbound". Then go to the Rendering Features within the Post process Settings. Add a new element to the post process materials, and choose asset reference when prompted. Finally, add the trueSKY translucent material. If you do not have this material, you need locate the trueSKY assets.
+For rain and lightning to render in UE, you need to have added trueSKY translucent as a post process material. As of September 2019, this has been made automatic, and added as part of initialization. Firstly, add a post process Volume to your scene, and make sure it is global by enabling "Unbound". Then go to the Rendering Features within the Post process Settings. Add a new element to the post process materials, and choose asset reference when prompted. Finally, add the trueSKY translucent material. If you do not have this material, you need locate the trueSKY assets.
 
 
 Rain drops are large and blocky
@@ -124,7 +126,7 @@ Try lowering the brightness power setting in the sky layer.
 
 Everything is Grey at night
 `````````````````````````````````````````````````
-Deleting UE4's Atmospheric Fog should fix this issue. We do not recommend using UE4's atmospheric fog, as trueSKY produces it's own fog. You can create fog from a Sky Keyframe.
+Deleting Unreal's Atmospheric Fog should fix this issue. We do not recommend using Unreal's atmospheric fog, as trueSKY produces it's own fog. You can create fog from a Sky Keyframe.
 
 Objects are light too brightly, especially at night
 ```````````````````````````````````````````````````
@@ -135,7 +137,7 @@ The sun is flickering
 This may be caused by how post-processors deal with large brightnesses, along with the small pixel size of the sun. To get around this, we've introduced MaxSunRadiance as a property of the trueSKySequence Object. When sun radiance goes past this value, the size of the drawn sun is increased, and the radiance decreased, so that the overall energy is kept constant, but the output brightness reduced. Additionally, if you haven't already, try deleting the default Atmospheric Fog and Sky Sphere actors.
 
 
-Cloud Appearance 
+Clouds
 --------------------
 
 How do I make my clouds the same each time I launch my program?
@@ -146,13 +148,17 @@ My Clouds have an obvious pattern in them, how do I make it go away?
 ````````````````````````````````````````````````````````````````````````
 Noise is used to hide repetition, have a look at our :doc:`Noise Settings <Tutorials/clouds>` to learn how to hide patterns effectively. If it is still an obvious grid, consider changing the size of the grid. This is done in the trueSKY actor within the world under "Render Grid X" and "Render Grid Y". Reducing both these values will make the grid sections smaller, resulting in higher quality clouds. This may however affect performance. Multiple cloud layers can also be used to help remove the appearance of repetition by making them intersect. Finally, make sure there is breaks within the clouds, as a sheet of clouds will always look the most repetitive.
 
+My Clouds are not moving correctly with the wind
+````````````````````````````````````````````````````````````````````````
+For non-repeating layers, such as volumes and map textures, movement via wind is not supported. You must manually position your clouds per keyframe.
+
 My Clouds change with only one keyframe
 `````````````````````````````````````````````````
 Setting the 'Noise Period' value in the cloud layer in the sky sequencer to the minimum possible will stop the clouds from changing shape over time.
 
 How do I make the clouds move independently of time-of-day?
 ````````````````````````````````````````````````````````````````````````
-Make sure to set the value "Override Wind" to true. It can be found in the cloud layer settings. You can then move the layers individually using the World Grid, and the clouds will move based on layer positions.
+You can either manually position your keyframes by positioning them on the cloud window, or you can use wind speed with real-time weather effects.
 
 On PS4, there is an apparent "trail" in the sky as the camera moves
 ````````````````````````````````````````````````````````````````````````
@@ -161,6 +167,10 @@ The Unreal Engine screen clear is faulty in some versions: the Hardware Clear op
 
 Other Issues
 ------------
+
+Unreal - Plugin 'TrueSkyPlugin' failed to load ecause module 'TrueSkyPlugin' could not be found
+``````````````````````````````````````````````````````````````````````````````````````
+If you are getting this error when packaging, you will need to convert your project from a blueprint project to a C++ project. This will not change your project in anyway, and you can continue to use blueprints. To do this, go to Tools->New C++ Class. Add any parent class to your project, and after this has finished you can package again, and the plugin will be loaded.
 
 Plugin Conflicts
 `````````````````````````````````````````````````

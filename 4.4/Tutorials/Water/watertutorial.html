@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+  <meta charset="utf-8" ><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   <title>Water Tutorial &mdash; Simul  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
-
-  
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" >
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" >
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -19,10 +17,10 @@
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Shore Effects" href="watershoreeffects.html" />
-    <link rel="prev" title="Water" href="../water.html" /> 
+    <link rel="index" title="Index" href="../../genindex.html" >
+    <link rel="search" title="Search" href="../../search.html" >
+    <link rel="next" title="Shore Effects" href="watershoreeffects.html" >
+    <link rel="prev" title="Water" href="../water.html" > 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -33,15 +31,20 @@
 
           
           
-          <a href="../../index.html" class="icon icon-home">
-            Simul
-          </a>
+			<a href="../../index.html"  class="" >
+				
+					<span class="sidebartitle">
+						Simul
+					</span>
+				
+			</a>
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
+    <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+        <label class="search-label" for="q">Search the documentation</label>
+        <input type="text" name="q" id="q" placeholder="Search..." aria-label="Search docs" >
+        <input type="hidden" name="check_keywords" value="yes" >
+        <input type="hidden" name="area" value="default" >
+    </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
@@ -93,7 +96,8 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+		<h2 class="wy-nav-top">Navigation</h2><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">Simul</a>
       </nav>
@@ -107,16 +111,47 @@
           <li class="breadcrumb-item"><a href="../water.html">Water</a></li>
       <li class="breadcrumb-item active">Water Tutorial</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/Tutorials/Water/watertutorial.rst.txt" rel="nofollow"> View page source</a>
+        ﻿
+<div class="truesky-version-switch">
+    <button id="version-switch-button">Switch Version</button>
+</div>
+
+<script>
+    const switchButton = document.getElementById('version-switch-button');
+
+    // current URL
+    const currentURL = window.location.href;
+
+
+    const isVersion4_3 = currentURL.includes('/4.3');
+    const isVersion4_4 = currentURL.includes('/4.4');
+
+    if (isVersion4_3) {
+        switchButton.textContent = 'Switch to 4.4';
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.4';
+        });
+    } else if (isVersion4_4) {
+        switchButton.textContent = 'Switch to 4.3';
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.3';
+        });
+    } else {
+        switchButton.textContent = 'Switch to 4.3'; 
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.3';
+        });
+    }
+</script>
       </li>
   </ul>
-  <hr/>
+  <hr>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
   <section id="water-tutorial">
-<h1>Water Tutorial<a class="headerlink" href="#water-tutorial" title="Permalink to this heading"></a></h1>
+<h1>Water Tutorial<a class="headerlink" href="#water-tutorial" title="Permalink to this heading">¶</a></h1>
 <div class="video-wrapper">
 	<div class="video-container">
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/uwZZTEqaUbo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -126,31 +161,31 @@
 <div class="line"><br /></div>
 </div>
 <section id="adding-water-your-scene">
-<h2>Adding water your scene<a class="headerlink" href="#adding-water-your-scene" title="Permalink to this heading"></a></h2>
+<h2>Adding water your scene<a class="headerlink" href="#adding-water-your-scene" title="Permalink to this heading">¶</a></h2>
 <p>Implementing volumetric water into your scene is quick and easy thanks to trueSKY! The first thing you need to do is make sure you have initialized trueSKY in your scene, so you have a trueSKY Actor/Object in your scene. Then, enable “Render Water” on your trueSKY Object. This option decides if we should render any water at all, while each water instance has their own render option.</p>
 <p>Next, we need to add a trueSKY water instance.</p>
 <section id="unity">
-<h3>Unity<a class="headerlink" href="#unity" title="Permalink to this heading"></a></h3>
+<h3>Unity<a class="headerlink" href="#unity" title="Permalink to this heading">¶</a></h3>
 <p>Go to Gameobject-&gt;createOther-&gt;create trueSKY water Object</p>
 </section>
 <section id="ue4">
-<h3>UE4<a class="headerlink" href="#ue4" title="Permalink to this heading"></a></h3>
+<h3>UE4<a class="headerlink" href="#ue4" title="Permalink to this heading">¶</a></h3>
 <p>Search for True Sky Water, and then drag it into your scene.</p>
 </section>
 </section>
 <section id="boundless-ocean">
-<h2>Boundless Ocean<a class="headerlink" href="#boundless-ocean" title="Permalink to this heading"></a></h2>
+<h2>Boundless Ocean<a class="headerlink" href="#boundless-ocean" title="Permalink to this heading">¶</a></h2>
 <p>If you are planning to create a large body of water / an ocean, you can check the “Boundless Ocean” checkbox within the trueSKYWater assets properties section, which will extend the surface of the water to the horizon. This is can also be used in scenes where there is a constant water level throughout, or for a very basic way of filling out river beds.</p>
 <img alt="../../_images/BoundlessExample.png" src="../../_images/BoundlessExample.png" />
 </section>
 <section id="bounded-water-volume">
-<h2>Bounded Water Volume<a class="headerlink" href="#bounded-water-volume" title="Permalink to this heading"></a></h2>
+<h2>Bounded Water Volume<a class="headerlink" href="#bounded-water-volume" title="Permalink to this heading">¶</a></h2>
 <p>Used for filling in ponds, lakes, fountains and other small water features, these come as cubes of water that can be scaled and rotated within your scene to your specifications.</p>
 <img alt="../../_images/BoundedExample.png" src="../../_images/BoundedExample.png" />
 <p>Please note that the default bounded objects are designed for quite small bodies of water, if they are made too large they may cause performance issues.</p>
 </section>
 <section id="bounded-water-volume-custom-meshes">
-<h2>Bounded Water Volume - Custom meshes<a class="headerlink" href="#bounded-water-volume-custom-meshes" title="Permalink to this heading"></a></h2>
+<h2>Bounded Water Volume - Custom meshes<a class="headerlink" href="#bounded-water-volume-custom-meshes" title="Permalink to this heading">¶</a></h2>
 <p><strong>Coming soon with trueSKY 4.3!</strong></p>
 <p>You can also use your own static meshes for the water surface for performance, or to fit the water within very specific bounds in your scene. This is available as an extra field within the water object’s values, and can be set to any given static mesh.</p>
 <img alt="../../_images/BoundedExampleMesh.png" src="../../_images/BoundedExampleMesh.png" />
@@ -164,31 +199,28 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../water.html" class="btn btn-neutral float-left" title="Water" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="watershoreeffects.html" class="btn btn-neutral float-right" title="Shore Effects" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../water.html" class="btn btn-neutral float-left" title="Water" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="watershoreeffects.html" class="btn btn-neutral float-right" title="Shore Effects" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
-  <hr/>
+  <hr>
 
   <div role="contentinfo">
     <p>&#169; Copyright 2007-2023, Simul Software Ltd.</p>
-  </div>
-
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
+  </div> 
 
 </footer>
         </div>
       </div>
-    </section>
+    </div>
   </div>
   <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script> 
-
+<div class="overlay" style="display: none;">
+    <img class="fullsize" alt="fullscreen image overlay" src="data:,">
+</div>
 </body>
 </html>

@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+  <meta charset="utf-8" ><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   <title>Unreal Blueprints with trueSKY &mdash; Simul  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
-
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" >
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" >
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -19,10 +17,10 @@
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/js/theme.js"></script>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Unreal Materials with trueSKY" href="unrealmaterials.html" />
-    <link rel="prev" title="Unreal Engine Georeferencing" href="unrealgeoreferencing.html" /> 
+    <link rel="index" title="Index" href="../genindex.html" >
+    <link rel="search" title="Search" href="../search.html" >
+    <link rel="next" title="Unreal Materials with trueSKY" href="unrealmaterials.html" >
+    <link rel="prev" title="Unreal Engine Georeferencing" href="unrealgeoreferencing.html" > 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -33,15 +31,20 @@
 
           
           
-          <a href="../index.html" class="icon icon-home">
-            Simul
-          </a>
+			<a href="../index.html"  class="" >
+				
+					<span class="sidebartitle">
+						Simul
+					</span>
+				
+			</a>
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
+    <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+        <label class="search-label" for="q">Search the documentation</label>
+        <input type="text" name="q" id="q" placeholder="Search..." aria-label="Search docs" >
+        <input type="hidden" name="check_keywords" value="yes" >
+        <input type="hidden" name="area" value="default" >
+    </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
@@ -90,7 +93,8 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+		<h2 class="wy-nav-top">Navigation</h2><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">Simul</a>
       </nav>
@@ -103,30 +107,61 @@
           <li class="breadcrumb-item"><a href="../unreal.html">trueSKY for Unreal Engine</a></li>
       <li class="breadcrumb-item active">Unreal Blueprints with trueSKY</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/Unreal/unrealblueprints.rst.txt" rel="nofollow"> View page source</a>
+        ﻿
+<div class="truesky-version-switch">
+    <button id="version-switch-button">Switch Version</button>
+</div>
+
+<script>
+    const switchButton = document.getElementById('version-switch-button');
+
+    // current URL
+    const currentURL = window.location.href;
+
+
+    const isVersion4_3 = currentURL.includes('/4.3');
+    const isVersion4_4 = currentURL.includes('/4.4');
+
+    if (isVersion4_3) {
+        switchButton.textContent = 'Switch to 4.4';
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.4';
+        });
+    } else if (isVersion4_4) {
+        switchButton.textContent = 'Switch to 4.3';
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.3';
+        });
+    } else {
+        switchButton.textContent = 'Switch to 4.3'; 
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.3';
+        });
+    }
+</script>
       </li>
   </ul>
-  <hr/>
+  <hr>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
   <section id="unreal-blueprints-with-truesky">
-<h1>Unreal Blueprints with trueSKY<a class="headerlink" href="#unreal-blueprints-with-truesky" title="Permalink to this heading"></a></h1>
+<h1>Unreal Blueprints with trueSKY<a class="headerlink" href="#unreal-blueprints-with-truesky" title="Permalink to this heading">¶</a></h1>
 <p>The trueSKY Blueprints provide a wide array of functionality while your game is playing or simulating. We have aimed to make sure our blueprints are as accessible as possible, while still being able to alter all of our different variables.</p>
 <p>If you have never used blueprints before, <a class="reference external" href="https://docs.unrealengine.com/en-US/Engine/Blueprints/index.html">Unreal</a> have a large number of tutorials on understanding and using blueprints.</p>
 <section id="getting-values-from-truesky-actor">
-<h2>Getting Values from trueSKY Actor<a class="headerlink" href="#getting-values-from-truesky-actor" title="Permalink to this heading"></a></h2>
+<h2>Getting Values from trueSKY Actor<a class="headerlink" href="#getting-values-from-truesky-actor" title="Permalink to this heading">¶</a></h2>
 <p>You can edit any of the variables present in the keyframes, layers or attached to the trueSKY Actor. To access these nodes, we have split our variables based on their location. For example, if you want to edit a value on a cloud keyframe, you would use the SetCloudKeyframeValue blueprint node. There is also a correlating GetCloudKeyframeValue for retrieving data</p>
 <img alt="../_images/getsetblueprint.png" src="../_images/getsetblueprint.png" />
 <p>From the image above, Property is the value that you want to change, which is selected using the dropdown. For the keyframe nodes, a Keyframe Unique Identifier (UID) is needed to access the correct keyframe. You can get this by manually going to your keyframe and looking for the UID at the top of the details panel, or there are multiple blueprint nodes available to help you select the correct keyframe.</p>
 <p>There are nodes for keyframes and layers. To access the trueSKY actor values, reference it within the blueprints.</p>
 </section>
 <section id="getting-keyframe-values">
-<h2>Getting Keyframe Values<a class="headerlink" href="#getting-keyframe-values" title="Permalink to this heading"></a></h2>
+<h2>Getting Keyframe Values<a class="headerlink" href="#getting-keyframe-values" title="Permalink to this heading">¶</a></h2>
 </section>
 <section id="uid">
-<h2>UID<a class="headerlink" href="#uid" title="Permalink to this heading"></a></h2>
+<h2>UID<a class="headerlink" href="#uid" title="Permalink to this heading">¶</a></h2>
 <p>To get a keyframe’s properties, you will first need its Unique ID (UID) to identify it. UIDs can be retrieved using a variety of provided Blueprint functions. At this time, the UID displayed on the keyframe and the UIDs returned are not the same. Only use the value returned while this is fixed.</p>
 <p>There is a Cloud Keyframe version of all these functions, just replace sky with cloud in the function name. For Cloud Keyframes, you must specify the layer. Layers values are the number displayed on the layer.</p>
 <ul class="simple">
@@ -139,7 +174,7 @@
 <p>Once you have a keyframe’s Uid, you can Get and Set its properties. Select a Property from the Dropdown, input a keyframe UID and can you get or set the value.</p>
 </section>
 <section id="get-set-keyframe-layer-values">
-<h2>Get/Set Keyframe + Layer Values<a class="headerlink" href="#get-set-keyframe-layer-values" title="Permalink to this heading"></a></h2>
+<h2>Get/Set Keyframe + Layer Values<a class="headerlink" href="#get-set-keyframe-layer-values" title="Permalink to this heading">¶</a></h2>
 <p>We have get and set nodes for both Cloud and Sky Keyframes. Make sure you are inputting the correct UID.</p>
 <p>The Nodes have been streamlined to output the correct of data type. Make sure you take from the correct node if your data is a float.</p>
 <ul class="simple">
@@ -158,7 +193,7 @@
 <img alt="../_images/exampleskyfog.png" src="../_images/exampleskyfog.png" />
 </section>
 <section id="get-set-values-on-the-trueskyactor">
-<h2>Get/Set Values on the trueSKYActor<a class="headerlink" href="#get-set-values-on-the-trueskyactor" title="Permalink to this heading"></a></h2>
+<h2>Get/Set Values on the trueSKYActor<a class="headerlink" href="#get-set-values-on-the-trueskyactor" title="Permalink to this heading">¶</a></h2>
 <p>To Get/Set these values, just create a reference of the trueSKYSequenceActor, and all the variables have been made public.</p>
 <img alt="../_images/createactorreference.png" src="../_images/createactorreference.png" />
 <p>To make a reference, make sure the actor is selected in the world view, and context sensitive is ticked.</p>
@@ -168,19 +203,19 @@
 <p>These setting can be used alongside the Sequencer values, to specify exactly what is required for your project</p>
 </section>
 <section id="getting-layer-values">
-<h2>Getting Layer Values<a class="headerlink" href="#getting-layer-values" title="Permalink to this heading"></a></h2>
+<h2>Getting Layer Values<a class="headerlink" href="#getting-layer-values" title="Permalink to this heading">¶</a></h2>
 <p>The Layer UID is the number displayed on the Sequencer. Sky Layers do not need a UID, as there can only ever be one.</p>
 <p>The number of the layer you are on is shown in the layer’s name, as you can see the image below has a layer 44.</p>
 <img alt="../_images/cloudlayernumber.png" src="../_images/cloudlayernumber.png" />
 </section>
 <section id="tools">
-<h2>Tools<a class="headerlink" href="#tools" title="Permalink to this heading"></a></h2>
+<h2>Tools<a class="headerlink" href="#tools" title="Permalink to this heading">¶</a></h2>
 <p>There are Blueprint functions provided to test a scene for lightning and for rain. For lightning, the “Get Lightning” function will provide the start position, end position, colour and magnitude of any lightning present. A magnitude of 0 means there is no lightning present. Additionally, the “Get Precipitation Strength at Position” function will take a given position and return a float between 0.0 and 1.0, indicating the strength of the rain (or snow) at this position.</p>
 <img alt="../_images/LightningRainTest.png" src="../_images/LightningRainTest.png" />
 <p>Example of testing the weather conditions in blueprint.</p>
 </section>
 <section id="queries">
-<h2>Queries<a class="headerlink" href="#queries" title="Permalink to this heading"></a></h2>
+<h2>Queries<a class="headerlink" href="#queries" title="Permalink to this heading">¶</a></h2>
 <p>To test how much cloud (from 0 to 1) is at a specified point, use the function CloudPointTest. <strong>Note</strong>: The Query Id can be set to any integer value, but should differ from any Query Ids used in separate queries (or else they will be overwritten).</p>
 <img alt="../_images/CloudPointTest.png" src="../_images/CloudPointTest.png" />
 <p><em>Sample usage of the Cloud Point Test functionality</em></p>
@@ -189,7 +224,7 @@
 <p><em>Sample usage of the Cloud Line Test functionality</em></p>
 </section>
 <section id="managing-sequences">
-<h2>Managing Sequences<a class="headerlink" href="#managing-sequences" title="Permalink to this heading"></a></h2>
+<h2>Managing Sequences<a class="headerlink" href="#managing-sequences" title="Permalink to this heading">¶</a></h2>
 <p>Though you can only set the active sequence in the editor, it is possible to change the sequence in use mid-game using Blueprint. To do this, create a reference to your TrueSkySequenceActor in Blueprint, then drag the output pin onto the canvas. In the Action List, search for and select “Set Active Sequence”. Repeat for as many sequences as you wish and connect them to relevant events.</p>
 <img alt="../_images/SetActiveSequence.png" src="../_images/SetActiveSequence.png" />
 <p><em>Example of how to change the active trueSKY sequence at runtime in blueprint</em></p>
@@ -198,14 +233,14 @@
 <p><em>Example of how to query the active trueSKY sequence at runtime in blueprint</em></p>
 </section>
 <section id="measuring-performance">
-<h2>Measuring Performance<a class="headerlink" href="#measuring-performance" title="Permalink to this heading"></a></h2>
+<h2>Measuring Performance<a class="headerlink" href="#measuring-performance" title="Permalink to this heading">¶</a></h2>
 <p>trueSKY has a built-in profiler for GPU and CPU performance. Use “Get Profiling Text” to obtain the values, with the inputs “cpu_level” and “gpu_level” to determine how far down the call tree to display.</p>
 <p>The outputs are in milliseconds.</p>
 <img alt="../_images/GetProfilingText.png" src="../_images/GetProfilingText.png" />
 <p><em>How to retrieve profiling text</em></p>
 </section>
 <section id="adding-and-removing-cloud-keyframes">
-<h2>Adding and removing Cloud Keyframes<a class="headerlink" href="#adding-and-removing-cloud-keyframes" title="Permalink to this heading"></a></h2>
+<h2>Adding and removing Cloud Keyframes<a class="headerlink" href="#adding-and-removing-cloud-keyframes" title="Permalink to this heading">¶</a></h2>
 <p>The ability to add and remove cloud keyframes during runtime is a powerful tool, which can be used to help build truly dynamic scenes and worlds, as well as add event driven dynamic events at any point during runtime.</p>
 <p><strong>Create Cloud Keyframe</strong></p>
 <p>The blueprints require a cloud layer ID, which allows for keyframes to be created on any cloud layer within the given sequence. The Cloud Layer ID is passed in as an integer.</p>
@@ -218,7 +253,7 @@ The return value the blueprint node outputs is simply the newly created cloud ke
 <img alt="../_images/Delete_Cloud_Keyframe.png" src="../_images/Delete_Cloud_Keyframe.png" />
 </section>
 <section id="adding-and-removing-cloudlayers">
-<h2>Adding and removing Cloudlayers<a class="headerlink" href="#adding-and-removing-cloudlayers" title="Permalink to this heading"></a></h2>
+<h2>Adding and removing Cloudlayers<a class="headerlink" href="#adding-and-removing-cloudlayers" title="Permalink to this heading">¶</a></h2>
 <p>This feature is a 4.3 specific feature. The blueprints will show up while using the 4.2a and 4.1b legacy versions, however are not supported (unlike the simpler adding cloud keyframe values)</p>
 <p><strong>Creating Cloud Layers</strong></p>
 <p>Creating a Cloud Layer works similarly as creating a cloud keyframe. The blueprint is also fairly simple, just pass through a “create cloud layer” node, and add a name by typing it into the “name” slot - alternatively feed in any kind of string to have that assigned as a name.</p>
@@ -228,7 +263,7 @@ The return value the blueprint node outputs is simply the newly created cloud ke
 <img alt="../_images/Delete_Cloud_Layer.png" src="../_images/Delete_Cloud_Layer.png" />
 </section>
 <section id="adding-map-textures-via-blueprints">
-<h2>Adding map textures via blueprints<a class="headerlink" href="#adding-map-textures-via-blueprints" title="Permalink to this heading"></a></h2>
+<h2>Adding map textures via blueprints<a class="headerlink" href="#adding-map-textures-via-blueprints" title="Permalink to this heading">¶</a></h2>
 <p>This feature works across both 4.2a and 4.3 versions and allows for users to add map textures dynamically.</p>
 <p>Previously this has only be possible to do within the editor, requiring the png being referenced to be located in a specific location within the simul folder structure in the engine. This has now been simplified, allowing you to reference any .png within the editor, however saving images into the “Media -&gt; Resouces” folder will still work.</p>
 <p><strong>Manual Sequence solution:</strong></p>
@@ -251,31 +286,28 @@ The return value the blueprint node outputs is simply the newly created cloud ke
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="unrealgeoreferencing.html" class="btn btn-neutral float-left" title="Unreal Engine Georeferencing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="unrealmaterials.html" class="btn btn-neutral float-right" title="Unreal Materials with trueSKY" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="unrealgeoreferencing.html" class="btn btn-neutral float-left" title="Unreal Engine Georeferencing" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="unrealmaterials.html" class="btn btn-neutral float-right" title="Unreal Materials with trueSKY" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
-  <hr/>
+  <hr>
 
   <div role="contentinfo">
     <p>&#169; Copyright 2007-2023, Simul Software Ltd.</p>
-  </div>
-
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
+  </div> 
 
 </footer>
         </div>
       </div>
-    </section>
+    </div>
   </div>
   <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script> 
-
+<div class="overlay" style="display: none;">
+    <img class="fullsize" alt="fullscreen image overlay" src="data:,">
+</div>
 </body>
 </html>
