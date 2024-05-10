@@ -1,5 +1,18 @@
 Changelist 
 ========= 
+| **Fri 10 May** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
+| **Fri 10 May** : fix for get/set ExternalDynamicValues
+| **Fri 10 May** : SkyKeyframeProperties categories updated. Fixed StyleColours_ControlsStyleColours_Controls().
+| **Fri 10 May** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Fri 10 May** : CloudRenderer::RenderCloudRegions() updated to better display regions and drag point. Camera view on GlobalView scaled by distance to the horizon. GlobalViewPanel clean ups and added cloud region button to show region edit mode. Updated CloudKeyframe::GetPrecipitationCentre() and GetStormCentre(). Platform ptr.
+| **Thu 09 May** : Add CustomColour and HeightFog colour to Sky Keyframes
+| **Thu 09 May** : CustomColour, Add StaticGetExternalRenderValues and StaticGetExternalDynamicValues
+| **Thu 09 May** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
+| **Thu 09 May** : Minor fix for namespaces in CloudRenderer.cpp. Platform ptr.
+| **Thu 09 May** : Fixed CloudRegion interpolation issue and other minor fix ups.
+| **Thu 09 May** : Fixed wind affecting cloud region position.
+| **Thu 09 May** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
+| **Wed 08 May** : Updated PluginTrueSkyRenderer::Set() to support new CloudRegion struct.
 | **Wed 08 May** : Added better controls from Spherical CloudRegions. Fixed member order in CloudRegionState and CloudKeyframer::SetCloudRegion() and InterpolateKeyframe(). Updated UI and Plugin.
 | **Tue 07 May** : UI changes to simplify rectangular cloud regions.
 | **Tue 07 May** : GlobalView_X() functions return bool.
@@ -18,6 +31,7 @@ Changelist
 | **Fri 26 Apr** : Merge branch '4.4' of github.com:simul/Simul into 4.4
 | **Fri 26 Apr** : CS_CloudDensitySDF() supports generating wrapped filtered SDF for  cloud volumes. Fixed shader recompiling in WindowUpdater and removed crossplatform::Effect* parameter in many functions. CloudRaytraceLighting does not own the cloud_update Effect. It is passed in from WindowUpdater. Platform ptr.
 | **Fri 26 Apr** : Fixed crash in debug, where CloudKeyframer::InterpolateKeyframe() was mixing up cloudVolumes iterators. Clean up CloudVolumes in CloudLayerProperties.
+| **Thu 25 Apr** : fix for precip base value
 | **Wed 24 Apr** : Update Editor.nsi
 | **Wed 24 Apr** : externalOpaqueRendererDelagate fix. Update cube.fbx example.
 | **Wed 24 Apr** : Merge branch '4.4' of github.com:simul/Simul into 4.4
@@ -86,17 +100,3 @@ Changelist
 | **Tue 19 Mar** : Fixed virga rendering error - now ensuring that all cloudVolumeTextures have the precipitation volume texture.
 | **Tue 19 Mar** : Updated externalEngineControls message in UI.
 | **Tue 19 Mar** : Re-added cloud wind offset readout to simul::ui::GlobalViewPanel(). Platform ptr.
-| **Tue 19 Mar** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Tue 19 Mar** : Removed SIMUL_PLUGIN_UI_EXTERNAL_ENGINE in favour of runtime boolean check - WIP.
-| **Tue 19 Mar** : Fixed SDF grid artifacting by adjusting forward step and grid realignment.
-| **Tue 19 Mar** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
-| **Tue 19 Mar** : Minor updated to clouds_raytrace_sdf.sl
-| **Tue 19 Mar** : Added SIMUL_PLUGIN_UI_EXTERNAL_ENGINE definition for engine that implement certain part of our UI and drive trueSKY. Platform ptr.
-| **Mon 18 Mar** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
-| **Mon 18 Mar** : Update CrossSection options, increase step count. Remove licence warning message. Update sample.
-| **Mon 18 Mar** : Sample AtmosphericScattering is no longer part of the CMake build. Platform ptr.
-| **Mon 18 Mar** : Minor change to TrueSkySample.cpp. Platform ptr.
-| **Fri 15 Mar** : Platform ptr.
-| **Fri 15 Mar** : Minor fix and Platform ptr.
-| **Fri 15 Mar** : Platform ptr.
-| **Thu 14 Mar** : Added Greenwich Meridian, Equator, Topics and Polar circles to the GlobalView.
