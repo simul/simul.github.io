@@ -1,5 +1,6 @@
 Changelist 
 ========= 
+| **Fri 10 May** : Platform Ptr.
 | **Tue 23 Apr** : Platform ptr.
 | **Tue 23 Apr** : Platform ptr.
 | **Mon 22 Apr** : Updated Setup.nsi script to ship assimp.
@@ -99,4 +100,3 @@ Changelist
 | **Fri 05 May** : Fix texture assignments where a slot is shared. Updates for Vulkan Sample.
 | **Mon 17 Apr** : Fix for GetExternalDynamicValues
 | **Fri 14 Apr** : Platform Ptr.
-| **Fri 14 Apr** : Store/Restore Skylight Texture State.

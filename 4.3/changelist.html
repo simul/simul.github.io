@@ -82,7 +82,38 @@
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
       <li class="breadcrumb-item active">Changelist</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="_sources/changelist.rst.txt" rel="nofollow"> View page source</a>
+        ﻿
+<div class="truesky-version-switch">
+    <button id="version-switch-button">Switch Version</button>
+</div>
+
+<script>
+    const switchButton = document.getElementById('version-switch-button');
+
+    // current URL
+    const currentURL = window.location.href;
+
+
+    const isVersion4_3 = currentURL.includes('/4.3');
+    const isVersion4_4 = currentURL.includes('/4.4');
+
+    if (isVersion4_3) {
+        switchButton.textContent = 'Switch to 4.4';
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.4';
+        });
+    } else if (isVersion4_4) {
+        switchButton.textContent = 'Switch to 4.3';
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.3';
+        });
+    } else {
+        switchButton.textContent = 'Switch to 4.3'; 
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.3';
+        });
+    }
+</script>
       </li>
   </ul>
   <hr>
@@ -93,6 +124,7 @@
   <section id="changelist">
 <h1>Changelist<a class="headerlink" href="#changelist" title="Permalink to this heading">¶</a></h1>
 <div class="line-block">
+<div class="line"><strong>Fri 10 May</strong> : Platform Ptr.</div>
 <div class="line"><strong>Tue 23 Apr</strong> : Platform ptr.</div>
 <div class="line"><strong>Tue 23 Apr</strong> : Platform ptr.</div>
 <div class="line"><strong>Mon 22 Apr</strong> : Updated Setup.nsi script to ship assimp.</div>
@@ -192,7 +224,6 @@
 <div class="line"><strong>Fri 05 May</strong> : Fix texture assignments where a slot is shared. Updates for Vulkan Sample.</div>
 <div class="line"><strong>Mon 17 Apr</strong> : Fix for GetExternalDynamicValues</div>
 <div class="line"><strong>Fri 14 Apr</strong> : Platform Ptr.</div>
-<div class="line"><strong>Fri 14 Apr</strong> : Store/Restore Skylight Texture State.</div>
 </div>
 </section>
 
