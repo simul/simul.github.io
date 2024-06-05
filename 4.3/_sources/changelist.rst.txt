@@ -1,5 +1,22 @@
 Changelist 
 ========= 
+| **Mon 03 Jun** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Mon 03 Jun** : Platform ptr.
+| **Thu 30 May** : Merge branch '4.3' of github.com:Simul/Simul into 4.3
+| **Thu 30 May** : disable assimp on linux.
+| **Wed 22 May** : Platform ptr.
+| **Tue 21 May** : Fixed SAMPLE_RENDER_MESH preprocessor statement for transparent render in sample.
+| **Tue 21 May** : Fixed Solid and Transparent rendering in sample.
+| **Mon 20 May** : Platform ptr.
+| **Fri 17 May** : CMake PLATFORM_WINGDK does not enable PLATFORM_BUILD_ASSIMP.
+| **Fri 17 May** : Disable ChunkInputOutput for Switch. TrueSkyPluginRender CMake and CopyToTargetDir.py updated to support Switch. Fix in RelativeFilePath.cpp
+| **Fri 17 May** : Updated to fix and support building Switch shaders. Platform ptr.
+| **Thu 16 May** : Updated .gitignore to exclude lfs, hook and all build folders.
+| **Thu 16 May** : Platform ptr.
+| **Thu 16 May** : Platform ptr.
+| **Thu 16 May** : Fixed CMake configuration error from variable PLATFORM_BUILD_ASSIMP for consoles.
+| **Tue 14 May** : Merge branch '4.3' of github.com:simul/Simul into 4.3
+| **Tue 14 May** : Added PLATFORM_BUILD_ASSIMP, which true for source builds. Platform ptr.
 | **Fri 10 May** : Platform Ptr.
 | **Tue 23 Apr** : Platform ptr.
 | **Tue 23 Apr** : Platform ptr.
@@ -83,20 +100,3 @@ Changelist
 | **Tue 16 May** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Tue 16 May** : Updated composite shaders to better handle depth/opacity compositing of ground fog.
 | **Thu 11 May** : Remove old deployment page.
-| **Thu 11 May** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Thu 11 May** : Add GroundFogColour for manual control of ground fog colour.
-| **Thu 11 May** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Thu 11 May** : Fix for In Cloud Fog flickering.
-| **Thu 11 May** : Platform ptr.
-| **Tue 09 May** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Tue 09 May** : Fix for InitFromExternalTexture2D() in PluginTrueSkyRenderer::SetCloudPlacementTexture().
-| **Fri 05 May** : Update default validation layer.
-| **Fri 05 May** : Platform ptr.
-| **Fri 05 May** : Fixes for TextureViews in Clouds/MixedResolutionCompositor.cpp. Platform ptr.
-| **Fri 05 May** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Fri 05 May** : Fixes for TextureView changes. Platform ptr.
-| **Fri 05 May** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Fri 05 May** : Update for Platform's new TextureView system.Platform ptr.
-| **Fri 05 May** : Fix texture assignments where a slot is shared. Updates for Vulkan Sample.
-| **Mon 17 Apr** : Fix for GetExternalDynamicValues
-| **Fri 14 Apr** : Platform Ptr.
