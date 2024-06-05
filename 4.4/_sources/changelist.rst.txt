@@ -1,5 +1,8 @@
 Changelist 
 ========= 
+| **Wed 05 Jun** : Platform Ptr.
+| **Wed 05 Jun** : Fix for Cloud Region editor UI
+| **Wed 05 Jun** : Add AtmosphericsAmortization to renderingOptions
 | **Mon 03 Jun** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
 | **Mon 03 Jun** : Disable unused variables
 | **Mon 03 Jun** : Platform ptr.
@@ -97,6 +100,3 @@ Changelist
 | **Thu 04 Apr** : Added ResourceGroupLayout to TrueSkyPluginRenderInterface.cpp.
 | **Thu 04 Apr** : Fixed VMA leak in ui::Widget.
 | **Thu 04 Apr** : Platform Ptr
-| **Thu 04 Apr** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
-| **Thu 04 Apr** : SDK fixes. Platform Ptr.
-| **Thu 04 Apr** : Merge branch '4.4' of github.com:simul/Simul into 4.4
