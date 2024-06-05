@@ -1,5 +1,7 @@
 Changelist 
 ========= 
+| **Wed 05 Jun** : Merge branch '4.3' of github.com:Simul/Simul into 4.3
+| **Wed 05 Jun** : Platform Ptr
 | **Mon 03 Jun** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Mon 03 Jun** : Platform ptr.
 | **Thu 30 May** : Merge branch '4.3' of github.com:Simul/Simul into 4.3
@@ -98,5 +100,3 @@ Changelist
 | **Wed 17 May** : Add profiling to VulkanSample, improve default clouds
 | **Wed 17 May** : Fix for Terrain rendering to match 4.4. Platform ptr.
 | **Tue 16 May** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Tue 16 May** : Updated composite shaders to better handle depth/opacity compositing of ground fog.
-| **Thu 11 May** : Remove old deployment page.
