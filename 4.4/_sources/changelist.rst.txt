@@ -1,5 +1,35 @@
 Changelist 
 ========= 
+| **Mon 03 Jun** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
+| **Mon 03 Jun** : Disable unused variables
+| **Mon 03 Jun** : Platform ptr.
+| **Fri 31 May** : Switch support for 4.4. ChunkInputOutput is disabled. CMAKE_BINARY_DIR added to add_multiplatform_sfx_shader_project. Better preprocessor statements for Switch. Undo/Redo for PluginTrueSkyRenderer is wrapped behind SIMUL_PLUGIN_UI. CopyToTargetDir.py updated to support copying Switch binaries, shaders and textures. Platform ptr.
+| **Thu 30 May** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Thu 30 May** : Initial support for Switch in TrueSkyPluginRender. Platform ptr.
+| **Wed 29 May** : Disable assimp for linux
+| **Tue 28 May** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
+| **Tue 28 May** : Platform ptr
+| **Tue 21 May** : Platform ptr.
+| **Tue 21 May** : In CloudLayer UI, changed Cloud Region "Layers" to "Regions".
+| **Tue 21 May** : Added externalTransparentRendererDelagate. Updated Editor to support transparent mesh rendering.
+| **Fri 17 May** : CMake PLATFORM_WINGDK does not enable PLATFORM_BUILD_ASSIMP.
+| **Thu 16 May** : Platform ptr.
+| **Thu 16 May** : clang compile fixes
+| **Thu 16 May** : Updated .gitignore to exclude lfs, hook and all build folders.
+| **Thu 16 May** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Thu 16 May** : Platform ptr.
+| **Thu 16 May** : Fixed CMake configuration error from variable PLATFORM_BUILD_ASSIMP for consoles.
+| **Wed 15 May** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
+| **Wed 15 May** : Fix for linux build support
+| **Wed 15 May** : Updated CloudRegionPartIdentifier and GetNearestCloudRegionPartIdentifier() to support the new region types and multiple grab points. Added ActiveKeyframerWithCloudRegion() and mouseMoveCloudRegionPartIdentifier() to clean up GlobalView.cpp. Updated CloudRenderer::RenderCloudRegions() to correctly draw all of the grab points. CloudRenderer::EditorRenderGlobalView() draws mouse position along with highlight text for Cloud Regions. Platform ptr.
+| **Wed 15 May** : simul::ui::GlobalViewPanel() updated to correctly set the pos out parameter.
+| **Wed 15 May** : Resorted commented out line in Editor.cpp
+| **Wed 15 May** : Renamed cloudWindowView to globalViewView and some related clean ups.
+| **Tue 14 May** : Fixed typo.
+| **Tue 14 May** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Tue 14 May** : Added PLATFORM_BUILD_ASSIMP, which true for source builds. Platform ptr.
+| **Fri 10 May** : fix to correctly set default region
+| **Fri 10 May** : Default region to Cylinder
 | **Fri 10 May** : Use theme in platform, update platform ptr.
 | **Fri 10 May** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
 | **Fri 10 May** : fix for get/set ExternalDynamicValues
@@ -70,33 +100,3 @@ Changelist
 | **Thu 04 Apr** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
 | **Thu 04 Apr** : SDK fixes. Platform Ptr.
 | **Thu 04 Apr** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Thu 04 Apr** : Added options to GlobalView for engine origin, aurora, tropics and polar and the day/night terminator. Added origin controls to CloudKeyframeProperties.cpp. Added CloudRenderer::GetSiderealTransform() and updated it for new Quaternion origin. CloudRenderer.cpp reorganised.
-| **Thu 04 Apr** : Reoriented Default WGS84Engine origin, CloudWindow origin and CloudKeyframe origin to (0.5, 0.5, 0.5, 0.5). GlobalView::UpdateOrigin() uses LatitudeLongitudeHeadingToQuaternion() now and mouse dragging is fixed. Minor update to Sky/SkyRenderer.cpp.
-| **Thu 04 Apr** : Updated class Planet. Added AscensionDeclinationToEquatorialDirection() and EquatorialDirectionToAscensionDeclination(). SkyKeyframer::GetEquatorialDirectionToMoon()/Sun() use updated calculations. SiderealSky.cpp whitespaces.
-| **Thu 04 Apr** : Added GlobalView_Vec3FloatSlider(), GlobalView_Vec4FloatSlider(), LatLonHdgDegEdit() and LatLonHdgRadEdit().
-| **Wed 03 Apr** : Add example sequences
-| **Wed 03 Apr** : nsi directory fix
-| **Wed 03 Apr** : Update shortcut StartIn Directory
-| **Wed 03 Apr** : Further .nsi fixes.
-| **Wed 03 Apr** : Fix Simul Logo
-| **Wed 03 Apr** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Wed 03 Apr** : Split off TrueSkySample.cpp into TrueSkySampleConsole.cpp.
-| **Tue 02 Apr** : .nsi fixes
-| **Tue 02 Apr** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
-| **Tue 02 Apr** : Undo/Redo for plugins. Add Fonts to Editor.nsi.
-| **Wed 27 Mar** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Wed 27 Mar** : Fixed SkyProperties() and re-added fade texture debug rendering. DebugTextures() better handle of tabs and Sky Fades. SkyRenderer::RenderFades() now take a alt_km parameters. Fixed the layout of AtmosphericsRenderer::RenderDebug() in AtmosphericScattering::RenderDebug(). AtmosphericScattering minor clean ups. Platform ptr.
-| **Wed 27 Mar** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Wed 27 Mar** : Removed frac from CloudRenderer.cpp.
-| **Wed 27 Mar** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Wed 27 Mar** : Platform ptr.
-| **Tue 26 Mar** : Cleaned, refined and made stable all query types. Added Get<Type>Query(int id), which will only read the cached results; the other overload will updated the query. Added Lighting Queries to DebugTexturesPanel. Platform ptr.
-| **Mon 25 Mar** : Platform ptr.
-| **Fri 22 Mar** : Shadow texture is reverted to RGBA_8_UNORM.
-| **Fri 22 Mar** : Fixed compilation error from Platform changes. Platform ptr.
-| **Fri 22 Mar** : Change CloudShadowConstant CloudShadowMultiplier to floats. Other fixes from CppSl.sl changes. Platform ptr.
-| **Fri 22 Mar** : Reorganised class SkyKeyframer and separated SkyKeyframe into its own files.
-| **Thu 21 Mar** : Readded licence check and fix externalEngineControls in TrueSkyPluginRenderInterface.cpp.
-| **Thu 21 Mar** : Fixed text rendering in CloudRenderer::RenderCrossSections().
-| **Tue 19 Mar** : Fixed virga rendering error - now ensuring that all cloudVolumeTextures have the precipitation volume texture.
-| **Tue 19 Mar** : Updated externalEngineControls message in UI.
