@@ -1,5 +1,0 @@
-Base Lightning Renderer
-======================================
-
-.. doxygenclass:: simul::clouds::BaseLightningRenderer
-   :members:

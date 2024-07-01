@@ -1,5 +1,0 @@
-Window Updater
-======================================
-
-.. doxygenclass:: simul::clouds::WindowUpdater
-   :members:

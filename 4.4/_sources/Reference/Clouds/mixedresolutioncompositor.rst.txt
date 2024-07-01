@@ -1,5 +1,0 @@
-Mixed Resolution Compositor
-======================================
-
-.. doxygenclass:: simul::clouds::MixedResolutionCompositor
-   :members:

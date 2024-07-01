@@ -1,5 +1,7 @@
 Changelist 
 ========= 
+| **Tue 18 Jun** : Small Fix
+| **Thu 13 Jun** : Fix for accumulatedWind
 | **Wed 05 Jun** : Merge branch '4.3' of github.com:Simul/Simul into 4.3
 | **Wed 05 Jun** : Platform Ptr
 | **Mon 03 Jun** : Merge branch '4.3' of github.com:simul/Simul into 4.3
@@ -98,5 +100,3 @@ Changelist
 | **Fri 19 May** : Reduced light_table_2d and lightspaceGodraysTexture to use a FP16 format. Added profiling to Vulkan sample. Better handling for rendering the PrecipitationVolumeTexture.
 | **Thu 18 May** : Updated VulkanSample/Main.cpp to be based on the DirectX sample. Platform ptr.
 | **Wed 17 May** : Add profiling to VulkanSample, improve default clouds
-| **Wed 17 May** : Fix for Terrain rendering to match 4.4. Platform ptr.
-| **Tue 16 May** : Merge branch '4.3' of github.com:simul/Simul into 4.3

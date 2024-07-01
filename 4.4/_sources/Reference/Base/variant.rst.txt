@@ -1,7 +1,0 @@
-Variant
-======================================
-
-.. doxygenstruct:: simul::base::Variant
-   :undoc-members:
-.. doxygenstruct:: simul::base::Variant32
-   :undoc-members:

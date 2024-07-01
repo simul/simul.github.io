@@ -1,5 +1,0 @@
-Sidereal Sky
-======================================
-
-.. doxygenclass:: simul::sky::SiderealSky
-   :members:

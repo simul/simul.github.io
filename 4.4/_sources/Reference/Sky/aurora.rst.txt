@@ -1,8 +1,0 @@
-Aurora
-======================================
-
-.. doxygenclass:: simul::sky::Aurora
-   :members:
-
-.. doxygenstruct:: simul::sky::AuroralGlobalCoverage
-   :members:

@@ -1,5 +1,0 @@
-Stars
-======================================
-
-.. doxygenclass:: simul::sky::Stars
-   :members:

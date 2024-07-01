@@ -1,5 +1,0 @@
-Cloud Window Editor
-======================================
-
-.. doxygenclass:: simul::clouds::CloudWindowEditor
-   :members:

@@ -1,8 +1,0 @@
-Cloud Keyframe
-======================================
-
-.. doxygenstruct:: simul::clouds::CloudKeyframe
-   :members:
-
-.. doxygenstruct:: simul::clouds::PrecipitationRegion
-   :members:

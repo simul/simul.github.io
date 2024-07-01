@@ -1,5 +1,0 @@
-Two Res Frambuffer
-======================================
-
-.. doxygenclass:: simul::clouds::TwoResFramebuffer
-   :members:

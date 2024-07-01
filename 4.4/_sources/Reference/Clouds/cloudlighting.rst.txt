@@ -1,5 +1,0 @@
-Cloud Lighting
-======================================
-
-.. doxygenclass:: simul::clouds::CloudLighting
-   :members:

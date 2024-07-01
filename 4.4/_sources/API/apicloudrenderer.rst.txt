@@ -1,9 +1,0 @@
-Cloud Renderer
-======================================
-
-.. doxygenclass:: simul::clouds::CloudRenderer
-   :members: GetCloudRenderingOptions, SetCloudRenderingOptions
-
-.. doxygenstruct:: simul::clouds::CloudRenderingOptions
-   :members:
-   :undoc-members:
