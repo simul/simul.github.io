@@ -1,0 +1,102 @@
+Changelist 
+========= 
+| **Mon 01 Jul** : Documentation updates and fixes.
+| **Mon 01 Jul** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
+| **Sun 30 Jun** : Fix x-ref in apiskykeyframer.rst
+| **Sun 30 Jun** : Fixed doxygen - no headers were being correctly read and all API docs were broken. Warnings as errors in Sphinx now.
+| **Thu 27 Jun** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
+| **Wed 26 Jun** : Revert debug test in shader.
+| **Wed 26 Jun** : Whitespace fixes for new atmopsherics files.
+| **Wed 26 Jun** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
+| **Tue 25 Jun** : Editor save/load window grid settings. Small doc changes.
+| **Tue 25 Jun** : Minor clean up in PluginTrueSkyRender.
+| **Tue 25 Jun** : Fixed WindowUpdater::GenerateCloudDensitySignedDistanceField() to handle correctly negative sdfProgress values.
+| **Tue 25 Jun** : Platform ptr.
+| **Mon 24 Jun** : Fixed warnings in SkyRenderer.
+| **Fri 21 Jun** : Updated PluginTrueSkyRenderer::Set("CloudRegion", ...) to support the new cumulonimbus cloud region type.
+| **Fri 21 Jun** : Fixed std::map::find() crashes for moon. struct Moon has changed so that colour refers to the hue of the light and albedo the amount reflected. Other minor improvements.
+| **Fri 21 Jun** : Updated the ifd::FileDialog::Instance().CreateTexture functions to create textures correctly for both the Editor and the plugin.
+| **Thu 20 Jun** : UI updated to use new ui::OpenTexture function in CloudLayerProperties.cpp and SkyProperties.cpp. Added overload to SkyRenderer::SetPlanetImage().
+| **Thu 20 Jun** : CloudKeyframer switched from file's Lerp() to use our standard lerp().
+| **Thu 20 Jun** : Updated texture sets for cloudRegionMapTexture and cloudRegionGradientTexture. CloudKeyframer saves and loads those textures's filepaths and CloudLayer holds the texture ptrs.
+| **Thu 20 Jun** : Added ui::OpenTexture() for better UI texture loads.
+| **Wed 19 Jun** : Minor update to SkyKeyframer.cpp
+| **Wed 19 Jun** : SkyKeyframer::GetLocalDirectionToMoon() corrects the direction of the moon for rotated CloudWindow orientations.
+| **Wed 19 Jun** : Added SkyKeyframer::GetTopocentricDirectionToAntiSolarPoint() to fix SkyRenderer::RenderCelestialDisplay() for the lunar eclipse area.
+| **Wed 19 Jun** : Fixed orientation of the moon texture.
+| **Mon 17 Jun** : Small fix to set debug ConstantBuffer
+| **Mon 17 Jun** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
+| **Mon 17 Jun** : Region fade for Cylinder and Spherical
+| **Mon 17 Jun** : Added UI controls for cloud regions cumulonimbus.
+| **Mon 17 Jun** : Update to accumulatedWindOffset
+| **Fri 14 Jun** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
+| **Fri 14 Jun** : Initial Support for Cumulonumbis Cloud Regions. Updated members for CloudRegionState. Added Cloud Region texture to CloudLayer. Updated WindowUpdater too. Added modified textrures from UE. Updated UI too.
+| **Fri 14 Jun** : Allow for forced update with SetRecalculate()
+| **Thu 13 Jun** : Fixed conversion warning in CloudRenderer.cpp
+| **Thu 13 Jun** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
+| **Thu 13 Jun** : shader updates
+| **Thu 13 Jun** : Add edgeFadeBegin to regions, set scales_upper_km and lower to float.
+| **Thu 13 Jun** : Added Lunar Eclipse calculations in GlobalView and CelestialDisplay and SkyKeyframer::GetUmbra().
+| **Wed 12 Jun** : Added Umbra and EclipseTotalityInfo structs, updated GetEclipseTotalityInfo() and removed Sky::GetEclipseFactor(). More overloads for GetTopocentricDirectionToMoon(). Added Obscuration and Magnitude debug info for GlobalView and CelestialDisplay.
+| **Wed 12 Jun** : SkyKeyframe::daytime is now a double for better precision. Updated SkyRenderer::RenderCelestialDisplay() text for sun and moon, and SkyKeyframer re-organisation. CloudWindow extra debug info commented out.
+| **Mon 10 Jun** : Updated Volume Queries debug text.
+| **Mon 10 Jun** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Mon 10 Jun** : Updated GlobalView eclipse point to show total vs annular eclipses. Added to class SkyKeyframer GetTopocentricDistanceToMoon(), GetApparentSunRadiusArcMinutes(), GetApparentMoonRadiusArcMinutes() and GetEclipseFactor(). Updated SkyRenderer::RenderSun() and SkyRenderer::RenderPlanet() to support the corona and diamond ring textures.
+| **Mon 10 Jun** : Added GetTopocentricDistanceToMoon() to SiderealSky. Updated Sky with new sun and moon radii and function signature change.
+| **Mon 10 Jun** : Updated sky.sfx and sky_constants.sl to rendered the sun corona and diamond ring. Moon geometry is now double the size to support the whole texture.
+| **Mon 10 Jun** : Added sun corona and sun diamond ring texture. Rotated Moon texture.
+| **Wed 05 Jun** : Platform Ptr.
+| **Wed 05 Jun** : Fix for Cloud Region editor UI
+| **Wed 05 Jun** : Add AtmosphericsAmortization to renderingOptions
+| **Mon 03 Jun** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
+| **Mon 03 Jun** : Disable unused variables
+| **Mon 03 Jun** : Platform ptr.
+| **Fri 31 May** : Switch support for 4.4. ChunkInputOutput is disabled. CMAKE_BINARY_DIR added to add_multiplatform_sfx_shader_project. Better preprocessor statements for Switch. Undo/Redo for PluginTrueSkyRenderer is wrapped behind SIMUL_PLUGIN_UI. CopyToTargetDir.py updated to support copying Switch binaries, shaders and textures. Platform ptr.
+| **Thu 30 May** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Thu 30 May** : Initial support for Switch in TrueSkyPluginRender. Platform ptr.
+| **Wed 29 May** : Disable assimp for linux
+| **Tue 28 May** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
+| **Tue 28 May** : Platform ptr
+| **Tue 21 May** : Platform ptr.
+| **Tue 21 May** : In CloudLayer UI, changed Cloud Region "Layers" to "Regions".
+| **Tue 21 May** : Added externalTransparentRendererDelagate. Updated Editor to support transparent mesh rendering.
+| **Fri 17 May** : CMake PLATFORM_WINGDK does not enable PLATFORM_BUILD_ASSIMP.
+| **Thu 16 May** : Platform ptr.
+| **Thu 16 May** : clang compile fixes
+| **Thu 16 May** : Updated .gitignore to exclude lfs, hook and all build folders.
+| **Thu 16 May** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Thu 16 May** : Platform ptr.
+| **Thu 16 May** : Fixed CMake configuration error from variable PLATFORM_BUILD_ASSIMP for consoles.
+| **Wed 15 May** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
+| **Wed 15 May** : Fix for linux build support
+| **Wed 15 May** : Updated CloudRegionPartIdentifier and GetNearestCloudRegionPartIdentifier() to support the new region types and multiple grab points. Added ActiveKeyframerWithCloudRegion() and mouseMoveCloudRegionPartIdentifier() to clean up GlobalView.cpp. Updated CloudRenderer::RenderCloudRegions() to correctly draw all of the grab points. CloudRenderer::EditorRenderGlobalView() draws mouse position along with highlight text for Cloud Regions. Platform ptr.
+| **Wed 15 May** : simul::ui::GlobalViewPanel() updated to correctly set the pos out parameter.
+| **Wed 15 May** : Resorted commented out line in Editor.cpp
+| **Wed 15 May** : Renamed cloudWindowView to globalViewView and some related clean ups.
+| **Tue 14 May** : Fixed typo.
+| **Tue 14 May** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Tue 14 May** : Added PLATFORM_BUILD_ASSIMP, which true for source builds. Platform ptr.
+| **Fri 10 May** : fix to correctly set default region
+| **Fri 10 May** : Default region to Cylinder
+| **Fri 10 May** : Use theme in platform, update platform ptr.
+| **Fri 10 May** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
+| **Fri 10 May** : fix for get/set ExternalDynamicValues
+| **Fri 10 May** : SkyKeyframeProperties categories updated. Fixed StyleColours_ControlsStyleColours_Controls().
+| **Fri 10 May** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Fri 10 May** : CloudRenderer::RenderCloudRegions() updated to better display regions and drag point. Camera view on GlobalView scaled by distance to the horizon. GlobalViewPanel clean ups and added cloud region button to show region edit mode. Updated CloudKeyframe::GetPrecipitationCentre() and GetStormCentre(). Platform ptr.
+| **Thu 09 May** : Add CustomColour and HeightFog colour to Sky Keyframes
+| **Thu 09 May** : CustomColour, Add StaticGetExternalRenderValues and StaticGetExternalDynamicValues
+| **Thu 09 May** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
+| **Thu 09 May** : Minor fix for namespaces in CloudRenderer.cpp. Platform ptr.
+| **Thu 09 May** : Fixed CloudRegion interpolation issue and other minor fix ups.
+| **Thu 09 May** : Fixed wind affecting cloud region position.
+| **Thu 09 May** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
+| **Wed 08 May** : Updated PluginTrueSkyRenderer::Set() to support new CloudRegion struct.
+| **Wed 08 May** : Added better controls from Spherical CloudRegions. Fixed member order in CloudRegionState and CloudKeyframer::SetCloudRegion() and InterpolateKeyframe(). Updated UI and Plugin.
+| **Tue 07 May** : UI changes to simplify rectangular cloud regions.
+| **Tue 07 May** : GlobalView_X() functions return bool.
+| **Tue 07 May** : Updated LatLonHdgRadEdit() to convert correctly the default value from rad to deg. CloudRegion's default origin is the keyframes origin.
+| **Tue 07 May** : Reworked CloudRenderer::RenderCloudRegions() for different region types. Renamed VolumePartIdentifier to CloudRegionPartIdentifier. std::map safety checks in CloudKeyframeProperties.cpp
+| **Fri 03 May** : Cleaned out old comment. Better handling of exceptions.
+| **Fri 03 May** : Updated column widths in CloudKeyframeProperties().
+| **Fri 03 May** : Updated GetCloudRegionMultiplier() to support spheroids.

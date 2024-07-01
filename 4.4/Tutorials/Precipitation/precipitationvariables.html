@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" ><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Variables &mdash; Simul  documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" >
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" >
+    <link rel="shortcut icon" href="../../_static/favicon.ico">
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" >
+    <link rel="search" title="Search" href="../../search.html" >
+    <link rel="next" title="Rainbows" href="../rainbows.html" >
+    <link rel="prev" title="How it works" href="precipitationhowitworks.html" > 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+			<a href="../../index.html"  class="" >
+				
+					<span class="sidebartitle">
+						trueSKY 4.4
+					</span>
+				
+			</a>
+<div role="search">
+    <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+        <label class="search-label" for="q">Search the documentation</label>
+        <input type="text" name="q" id="q" placeholder="Search..." aria-label="Search docs" >
+        <input type="hidden" name="check_keywords" value="yes" >
+        <input type="hidden" name="area" value="default" >
+    </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation and Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../concepts.html">Concepts</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../tutorialsindex.html">Tutorials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../sequencer.html">Sky Sequencer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../clouds.html">Clouds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sky.html">Sky</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lighting.html">Lighting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../aurorae.html">Aurorae</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../precipitation.html">Precipitation</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="precipitationtutorial.html">Precipitation Tutorial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="precipitationhowitworks.html">How it works</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Variables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ue4-only">UE4 only</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../precipitation.html#no-precipitation">No Precipitation?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../rainbows.html">Rainbows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../storms.html">Storms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../water.html">Water</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../time.html">Progressing Time</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../unreal.html">trueSKY for Unreal Engine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../skysequencer.html">Sky Sequencer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../programming.html">Programming with the trueSKY SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../legalindex.html">trueSKY Licences</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../API/apiindex.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Reference/referenceindex.html">Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changelist.html">Changelist</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+		<h2 class="wy-nav-top">Navigation</h2><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Simul</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../tutorialsindex.html">Tutorials</a></li>
+          <li class="breadcrumb-item"><a href="../precipitation.html">Precipitation</a></li>
+      <li class="breadcrumb-item active">Variables</li>
+      <li class="wy-breadcrumbs-aside">
+        ﻿
+<div class="truesky-version-switch">
+    <button id="version-switch-button">Switch Version</button>
+</div>
+
+<script>
+    const switchButton = document.getElementById('version-switch-button');
+
+    // current URL
+    const currentURL = window.location.href;
+
+
+    const isVersion4_3 = currentURL.includes('/4.3');
+    const isVersion4_4 = currentURL.includes('/4.4');
+
+    if (isVersion4_3) {
+        switchButton.textContent = 'Switch to 4.4';
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.4';
+        });
+    } else if (isVersion4_4) {
+        switchButton.textContent = 'Switch to 4.3';
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.3';
+        });
+    } else {
+        switchButton.textContent = 'Switch to 4.3'; 
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.3';
+        });
+    }
+</script>
+      </li>
+  </ul>
+  <hr>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="variables">
+<h1>Variables<a class="headerlink" href="#variables" title="Permalink to this heading">¶</a></h1>
+<p>Precipitation can be attached to any cloud keyframe and will produce rain or snow based on cloud position and thickness.</p>
+<p>Rain and snow can be fully customised, from rain speed to snowflake size.</p>
+<p>For transparent effects, such as precipitation and lightning to work in Unreal, trueSKYtransluscent needs to be added as a post process material. This should be done automatically. Learn about this <span class="xref std std-doc">here</span></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Variable</p></th>
+<th class="head"><p>Definition</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Regional</p></td>
+<td><p>Whether rain/snow falls only in specified region, or globally.</p></td>
+<td><p>Bool.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Wind affects position</p></td>
+<td><p>If the wind should affect the regional area.</p></td>
+<td><p>Bool.</p></td>
+</tr>
+<tr class="row-even"><td><p>Radius (km)</p></td>
+<td><p>Radius of precipitation region.</p></td>
+<td><p>Between 0.1 and 1000</p></td>
+</tr>
+<tr class="row-odd"><td><p>Rain - Snow</p></td>
+<td><p>How the Precipitation will act. 0 = rain, 1 = snow, values in between will share characteristics.</p></td>
+<td><p>0.0 to 1.0</p></td>
+</tr>
+<tr class="row-even"><td><p>Strength</p></td>
+<td><p>Amount of rain/snow.</p></td>
+<td><p>0.0 to 1.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>Rain Streaks</p></td>
+<td><p>Visual strength of rain streak effect.</p></td>
+<td><p>0.0 to 1.0</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Variable</p></th>
+<th class="head"><p>Definition</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Max Particles</p></td>
+<td><p>The maximum number of rain particles to render.</p></td>
+<td><p>0 to 1000000</p></td>
+</tr>
+<tr class="row-odd"><td><p>Radius (metres)</p></td>
+<td><p>Size of particle zone.  Higher values allow you to render precipitation at greater distances</p></td>
+<td><p>0.0 to 100.0</p></td>
+</tr>
+<tr class="row-even"><td><p>Rain Speed (m/s)</p></td>
+<td><p>Speed at which raindrops will fall.</p></td>
+<td><p>0.0 to 120.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>Snow Speed (m/s)</p></td>
+<td><p>Speed at which Snow Flakes will fall.</p></td>
+<td><p>0.0 to 120.0</p></td>
+</tr>
+<tr class="row-even"><td><p>Raindrop Size (mm)</p></td>
+<td><p>Size of each individual Raindrop.</p></td>
+<td><p>0.001 to 100.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>Snowflake Size (mm)</p></td>
+<td><p>Size of each individual Snow Flake.  Recommended to increase for testing purposes.</p></td>
+<td><p>0.001 to 100.0</p></td>
+</tr>
+<tr class="row-even"><td><p>Waver</p></td>
+<td><p>How much precipitation wavers.  Waver is how much the rain or snow will sway while falling</p></td>
+<td><p>0.0 to 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Waver Time (s)</p></td>
+<td><p>Intervals between waver. In seconds between</p></td>
+<td><p>0 to 100</p></td>
+</tr>
+<tr class="row-even"><td><p>Threshold (km)</p></td>
+<td><p>Thickness of cloud needed for rainfall. No threshold when set to 0.</p></td>
+<td><p>0.0 to 10.0</p></td>
+</tr>
+</tbody>
+</table>
+<section id="ue4-only">
+<h2>UE4 only<a class="headerlink" href="#ue4-only" title="Permalink to this heading">¶</a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Variable</p></th>
+<th class="head"><p>Definition</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Rain Cubemap</p></td>
+<td><p>Cubemap to be used to light the Rain</p></td>
+<td><p>Cubemap</p></td>
+</tr>
+<tr class="row-odd"><td><p>Velocity Streaks</p></td>
+<td><p>If the raindrop shape is altered by their velocity.</p></td>
+<td><p>Bool</p></td>
+</tr>
+<tr class="row-even"><td><p>Simulation Time</p></td>
+<td><p>If time progression should be taken into account for rain fall.</p></td>
+<td><p>Bool</p></td>
+</tr>
+<tr class="row-odd"><td><p>Rain Near Threshold</p></td>
+<td><p>Draw no rain closer than this distance.</p></td>
+<td><p>0.01 to 0.5</p></td>
+</tr>
+<tr class="row-even"><td><p>Rain Mask Scene Capture 2D</p></td>
+<td><p>2D Screen capture to limit rain below surfaces. Lean more about this <a class="reference internal" href="precipitationtutorial.html"><span class="doc">here</span></a>.</p></td>
+<td><p>Scene Capture 2D</p></td>
+</tr>
+<tr class="row-odd"><td><p>Rain Mask Width</p></td>
+<td><p>Width of the Rain Mask</p></td>
+<td><p>100 to 50000</p></td>
+</tr>
+<tr class="row-even"><td><p>Rain Mask Depth Extent</p></td>
+<td><p>Height of the Rain Mask</p></td>
+<td><p>100 to 100000</p></td>
+</tr>
+<tr class="row-odd"><td><p>Translucent RT</p></td>
+<td><p>The render texture used to render Precipitation effects.</p></td>
+<td><p>Render Texture</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="precipitationhowitworks.html" class="btn btn-neutral float-left" title="How it works" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../rainbows.html" class="btn btn-neutral float-right" title="Rainbows" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2007-2023, Simul Software Ltd.</p>
+  </div> 
+
+</footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+<div class="overlay" style="display: none;">
+    <img class="fullsize" alt="fullscreen image overlay" src="data:,">
+</div>
+</body>
+</html>

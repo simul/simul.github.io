@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" ><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Skylight &mdash; Simul  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" >
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" >
+    <link rel="shortcut icon" href="../_static/favicon.ico">
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" >
+    <link rel="search" title="Search" href="../search.html" >
+    <link rel="next" title="Reference" href="../Reference/referenceindex.html" >
+    <link rel="prev" title="Sky Keyframe" href="apiskykeyframe.html" > 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+			<a href="../index.html"  class="" >
+				
+					<span class="sidebartitle">
+						trueSKY 4.4
+					</span>
+				
+			</a>
+<div role="search">
+    <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+        <label class="search-label" for="q">Search the documentation</label>
+        <input type="text" name="q" id="q" placeholder="Search..." aria-label="Search docs" >
+        <input type="hidden" name="check_keywords" value="yes" >
+        <input type="hidden" name="area" value="default" >
+    </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation and Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../concepts.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorialsindex.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unreal.html">trueSKY for Unreal Engine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../skysequencer.html">Sky Sequencer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programming.html">Programming with the trueSKY SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../legalindex.html">trueSKY Licences</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="apiindex.html">API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="apiweatherrenderer.html">Base Weather Renderer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apienvironment.html">Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apicloudrenderer.html">Cloud Renderer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apicloudkeyframer.html">Cloud Keyframer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apicloudkeyframe.html">Cloud Keyframe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apiskykeyframer.html">Sky Keyframer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apiskykeyframe.html">Sky Keyframe</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Skylight</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Reference/referenceindex.html">Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelist.html">Changelist</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+		<h2 class="wy-nav-top">Navigation</h2><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Simul</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="apiindex.html">API</a></li>
+      <li class="breadcrumb-item active">Skylight</li>
+      <li class="wy-breadcrumbs-aside">
+        ﻿
+<div class="truesky-version-switch">
+    <button id="version-switch-button">Switch Version</button>
+</div>
+
+<script>
+    const switchButton = document.getElementById('version-switch-button');
+
+    // current URL
+    const currentURL = window.location.href;
+
+
+    const isVersion4_3 = currentURL.includes('/4.3');
+    const isVersion4_4 = currentURL.includes('/4.4');
+
+    if (isVersion4_3) {
+        switchButton.textContent = 'Switch to 4.4';
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.4';
+        });
+    } else if (isVersion4_4) {
+        switchButton.textContent = 'Switch to 4.3';
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.3';
+        });
+    } else {
+        switchButton.textContent = 'Switch to 4.3'; 
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.3';
+        });
+    }
+</script>
+      </li>
+  </ul>
+  <hr>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="skylight">
+<h1>Skylight<a class="headerlink" href="#skylight" title="Permalink to this heading">¶</a></h1>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds8SkylightE">
+<span id="_CPPv3N5simul6clouds8SkylightE"></span><span id="_CPPv2N5simul6clouds8SkylightE"></span><span id="simul::clouds::Skylight"></span><span class="target" id="classsimul_1_1clouds_1_1_skylight"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Skylight</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds8SkylightE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A class to capture light from the sky in real time for diffuse and specular lighting. You can access the cubemap by calling frameBuffer-&gt;GetTexture() </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="classsimul_1_1clouds_1_1_skylight_1a9501e5f105d16cd03e24361f4e7b29b2"></span><span class="sig-name descname"><span class="pre">void</span> <span class="pre">SIMUL_CLOUDS_EXPORT</span> <span class="pre">Update</span> <span class="pre">(platform::crossplatform::GraphicsDeviceContext</span> <span class="pre">&amp;deviceContext,</span> <span class="pre">WeatherRenderer</span> <span class="pre">*weatherRenderer)</span></span></dt>
+<dd><p>Update the skylight per-frame. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="classsimul_1_1clouds_1_1_skylight_1ae7ab79497f16942387cad3f8f006fc05"></span><span class="sig-name descname"><span class="pre">void</span> <span class="pre">SIMUL_CLOUDS_EXPORT</span> <span class="pre">RestoreDeviceObjects</span> <span class="pre">(platform::crossplatform::RenderPlatform</span> <span class="pre">*r)</span></span></dt>
+<dd><p>Initialize GPU objects. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="classsimul_1_1clouds_1_1_skylight_1abac8e496c5fb34e8d5e5882a1050a320"></span><span class="sig-name descname"><span class="pre">void</span> <span class="pre">SIMUL_CLOUDS_EXPORT</span> <span class="pre">InvalidateDeviceObjects</span> <span class="pre">()</span></span></dt>
+<dd><p>Free the GPU objects. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="apiskykeyframe.html" class="btn btn-neutral float-left" title="Sky Keyframe" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Reference/referenceindex.html" class="btn btn-neutral float-right" title="Reference" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2007-2023, Simul Software Ltd.</p>
+  </div> 
+
+</footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+<div class="overlay" style="display: none;">
+    <img class="fullsize" alt="fullscreen image overlay" src="data:,">
+</div>
+</body>
+</html>

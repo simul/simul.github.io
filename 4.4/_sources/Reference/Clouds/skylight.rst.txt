@@ -1,0 +1,5 @@
+Skylight
+======================================
+
+.. doxygenclass:: simul::clouds::Skylight
+   :members:

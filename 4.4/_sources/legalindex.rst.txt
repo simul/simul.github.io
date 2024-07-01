@@ -1,0 +1,42 @@
+﻿trueSKY Licences
+================
+
+Trial
+-----
+Simul offers a free 30 day trial licence, including all trueSKY features. This licence cannot be used Commercially.
+
+
+Indie
+-----
+The Indie licence is for projects with less than £100,000 budget, and is available to individuals and to companies and organizations with fewer than twenty members (i.e. full-time employees or staff). This licence provides lifetime access to all trueSKY 4 Plugins, products and tool sets. This licence requires either a one time payment of £100, or 10 monthly payments of £15 (totalling £150). Either payment option will give you immediate access to trueSKY and all of its features. You can purchase an Indie Licence `here <https://simul.co/pricing/>`_.
+
+See our :doc:`Indie Licence Agreement <Legal/indielicence>`.
+
+Licences issued prior to March 2020 are governed by the :doc:`Legacy Indie Licence Agreement <Legal/indielicenceold>`.
+
+IG
+--
+The IG licence is for image-generation applications. With this licence, you will have yearly access to all trueSKY Plugins, products and tool sets. This licence is priced per seat, per year. You can purchase a IG Licences `here <https://simul.co/pricing/>`_.
+
+See our :doc:`IG Licence Agreement <Legal/iglicence>`.
+
+Pro
+---------------
+The trueSKY Pro licence is for large projects with budgets over £100,000. This provides access to all of trueSKY's Plugins and tools, and optionally trueSKY source code. You can obtain a quote `here <https://simul.co/truesky-pro/pricing/>`_. If you already have an account, you should add your company details onto your profile page `here <https://simul.co/account/company>`_, then request a quote through your account dashboard.
+
+
+Educational
+-------------------
+We offer free educational licences. These licences cannot be used commercially, and are only availabe for PC. For more information, please email us at `contact@simul.co`_, using your academic email.
+
+.. _contact@simul.co: mailto:contact@simul.co
+
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :titlesonly:
+
+   Legal/iglicence.rst
+   Legal/indielicence.rst
+   Legal/indielicenceold.rst

@@ -1,0 +1,5 @@
+Base Weather Renderer
+======================================
+
+.. doxygenclass:: simul::clouds::BaseWeatherRenderer
+   :members: BaseWeatherRenderer, RestoreDeviceObjects, InvalidateDeviceObjects, RecompileShaders, PrerenderUpdate, GetCloudRenderer, GetBaseSkyRenderer, GetSkyKeyframer, Render

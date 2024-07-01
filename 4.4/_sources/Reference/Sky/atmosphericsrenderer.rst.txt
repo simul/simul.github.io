@@ -1,0 +1,8 @@
+Atmospherics Renderer
+======================================
+
+.. doxygenclass:: simul::sky::AtmosphericsRenderer
+   :members:
+
+.. doxygenstruct:: simul::sky::ScatteringVolume
+   :members:

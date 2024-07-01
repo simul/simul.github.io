@@ -1,0 +1,52 @@
+
+Clouds Tutorial
+===========
+Clouds in trueSKY are easy to create, hard to master. For a quick solution, use one of our presets!
+
+.. raw:: html
+   :file: cloudsvideo1.html
+
+|
+
+Cloud Movement
+--------------------
+Use the keyframes to set specific positions for the clouds at set times. Then watch as your clouds will move between. For fast clouds make a shorter gap, or reduce the time between. 
+
+.. raw:: html
+   :file: cloudsvideo2.html
+
+|
+
+Using a Map Texture
+---------------------
+
+When creating or finding a map texture ensure that the map is black and white. You can gain a slight gradient on your clouds using greys to blend between values.
+
+Ensure you are saving your map texture files into the correct location.
+
+For Unreal:
+```````````
+Unreal Build folder -> Engine -> Plugins -> TrueSkyPlugin -> Resources -> Media -> Insert .png
+
+
+For Unity:
+``````````
+Unity -> Locate your unity project folder -> Insert .png
+
+
+Within the sequencer, select your cloud layer and open the file browser under the "map texture" heading.
+
+Locate the correct file path as shown above, and select your .png map file.
+
+Once the map is applied, alter a value within the sequencer to update your scene and edit settings as through the keyframes were a 
+regular cloudkeyframe (all regular functionality still apllies)
+
+Be aware of artifacting if your map texture has very thin parts. A good solution is to reduce the Cloud Height, along with adding some more Diffusivity.
+
+.. raw:: html
+   :file: cloudsvideo3.html
+
+
+For more tutorials, head to `our Youtube channel`_, where we upload tutorials and showcases of trueSKY
+
+.. _our Youtube channel: https://www.youtube.com/user/simulsoftware

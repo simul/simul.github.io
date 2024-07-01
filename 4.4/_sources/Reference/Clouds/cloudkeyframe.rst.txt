@@ -1,0 +1,5 @@
+Cloud Keyframe
+==============
+
+.. doxygenstruct:: simul::clouds::PrecipitationRegion
+   :members:

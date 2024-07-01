@@ -1,0 +1,6 @@
+Cloud Renderer
+======================================
+
+.. doxygenclass:: simul::clouds::CloudRenderer
+   :members:
+   :undoc-members:

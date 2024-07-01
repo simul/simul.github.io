@@ -1,0 +1,8 @@
+Bounded Water Object
+======================================
+
+.. doxygenclass:: simul::terrain::BoundedWaterObject
+   :members:
+
+.. doxygenstruct:: simul::terrain::WaterMeshObjectValues
+   :members:

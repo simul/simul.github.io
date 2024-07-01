@@ -1,0 +1,19 @@
+Sky
+======================================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Classes:
+
+   Sky/skyrenderer.rst
+   Sky/atmosphericsrenderer.rst
+   Sky/gpuskygenerator.rst
+   Sky/siderealsky.rst
+   Sky/stars.rst
+
+   Sky/aurora.rst
+
+   Sky/skykeyframer.rst
+   Sky/skykeyframe.rst
+
+   Sky/skyinterface.rst

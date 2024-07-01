@@ -1,0 +1,84 @@
+trueSKY Deployment
+==================
+
+For Unreal
+------------
+
+My Sky is black when I Package!
+```````````````````````````````
+
+Previous versions of trueSKY had issues when packaging the game with both trueSKY and Niagara particles. We have now fixed our conflicts with the Niagara systems and as such if you encounter any issue please inform us via the Q+A page so we can investigate the issue further.
+
+The previous solution was to disable the Niagara plugin or if you are using UE Source to change the two relevant files which can be obtained via a pull request here - https://github.com/EpicGames/UnrealEngine/pull/6414 - however this should no longer be required.
+
+If you encounter a new case of your sky appearing black within a packaged game please enter a new bug ticket or question within the Q+A Board.
+
+
+Running Cooked Games
+````````````````````
+
+The trueSKY DLL's are  located in [UE4]/Engine/Binaries/ThirdParty/Simul. When you package, cook, or launch a build, UE4 does not yet provide the capability to automatically deploy files to a build. Therefore on the Simul branch of UE4, this code has been inserted into [UE4]/Engine/Source/Programs/AutomationTool/Win/WinPlatform.Automation.cs (see line 43):
+
+.. code-block:: cpp
+
+	SC.StageFiles(StagedFileType.NonUFS, DirectoryReference.Combine(SC.LocalRoot, "Engine/Binaries/ThirdParty/Simul", SC.PlatformDir), "TrueSkyPluginRender_MT.dll", StageFilesSearch.TopDirectoryOnly);        
+	if (!SC.StageTargetConfigurations.Contains(UnrealTargetConfiguration.Shipping))
+ 		SC.StageFiles(StagedFileType.NonUFS, DirectoryReference.Combine(SC.LocalRoot, "Engine/Binaries/ThirdParty/Simul", SC.PlatformDir), "TrueSkyPluginRender_MT.pdb", StageFilesSearch.TopDirectoryOnly);
+	SC.StageFiles(StagedFileType.NonUFS, DirectoryReference.Combine(SC.LocalRoot, "Engine/Plugins/TrueSkyPlugin/Resources"), "*.*", StageFilesSearch.TopDirectoryOnly);
+	SC.StageFiles(StagedFileType.NonUFS, DirectoryReference.Combine(SC.LocalRoot, "Engine/Plugins/TrueSkyPlugin/Content"), "*.*", StageFilesSearch.TopDirectoryOnly);
+	SC.StageFiles(StagedFileType.NonUFS, DirectoryReference.Combine(SC.LocalRoot, "Engine/Plugins/TrueSkyPlugin/shaderbin", SC.PlatformDir), "*.fxo", StageFilesSearch.TopDirectoryOnly);
+
+
+To rebuild the tools, build the UE4 solution in the "Development" configuration. This will recreate the executables located in the [UE4]/Engine/Binaries/DotNET directory.
+
+If you're using the binary distribution of UE with the trueSKY plugin binary installer, you won't have this file: you'll need to copy the resources manually. After packaging, find the "Engine" directory in your game, and copy:
+
+* (UE)/Engine/Binaries/ThirdParty/Simul to (GAME)/Engine/Binaries/ThirdParty/Simul
+* (UE)/Engine/Plugins/TrueSkyPlugin/Resources to (GAME)/Engine/Plugins/TrueSkyPlugin/Resources
+* (UE)/Engine/Plugins/TrueSkyPlugin/Content to (GAME)/Engine/Plugins/TrueSkyPlugin/Content
+* (UE)/Engine/Plugins/TrueSkyPlugin/shaderbin to (GAME)/Engine/Plugins/TrueSkyPlugin/shaderbin
+
+Now you are ready to run your game with trueSKY.
+
+
+Console Deployment
+````````````````````
+
+As the console automation files are not in the Git repository, it is not possible to distribute the necessary changes. So you must modify by hand the console Platform.Automation.cs files, in the function GetFilesToDeployOrStage(), add:
+
+**4.18 and above (XBoxOne):**
+
+.. code-block:: cpp
+
+	/// BEGIN trueSKY Additional code
+	SC.StageFiles(StagedFileType.NonUFS, DirectoryReference.Combine(SC.LocalRoot, "Engine/Binaries/ThirdParty/Simul", SC.PlatformDir), "TrueSkyPluginRender_MD.dll", StageFilesSearch.TopDirectoryOnly);
+	if(!SC.StageTargetConfigurations.Contains(UnrealTargetConfiguration.Shipping))
+		SC.StageFiles(StagedFileType.NonUFS, DirectoryReference.Combine(SC.LocalRoot, "Engine/Binaries/ThirdParty/Simul", SC.PlatformDir), "TrueSkyPluginRender_MD.pdb", StageFilesSearch.TopDirectoryOnly);
+	SC.StageFiles(StagedFileType.NonUFS, DirectoryReference.Combine(SC.LocalRoot, "Engine/Plugins/TrueSkyPlugin/Resources"), "*.*", StageFilesSearch.AllDirectories);
+	SC.StageFiles(StagedFileType.NonUFS, DirectoryReference.Combine(SC.LocalRoot, "Engine/Plugins/TrueSkyPlugin/Content"), "*.*", StageFilesSearch.AllDirectories);
+	SC.StageFiles(StagedFileType.NonUFS, DirectoryReference.Combine(SC.LocalRoot, "Engine/Plugins/TrueSkyPlugin/shaderbin",SC.PlatformDir), "*.*", StageFilesSearch.AllDirectories);
+	/// END trueSKY Additional code		
+
+
+**4.18 and above (PS4):**
+
+.. code-block:: cpp
+
+	/// BEGIN trueSKY Additional code
+	SC.StageFiles(StagedFileType.NonUFS, DirectoryReference.Combine(SC.LocalRoot, "Engine/Binaries/ThirdParty/Simul", SC.PlatformDir), "trueskypluginrender.prx", StageFilesSearch.TopDirectoryOnly);
+	SC.StageFiles(StagedFileType.NonUFS, DirectoryReference.Combine(SC.LocalRoot, "Engine/Plugins/TrueSkyPlugin/Resources"), "*.*", StageFilesSearch.AllDirectories);
+	SC.StageFiles(StagedFileType.NonUFS, DirectoryReference.Combine(SC.LocalRoot, "Engine/Plugins/TrueSkyPlugin/textures"), "*.*", StageFilesSearch.AllDirectories);
+	SC.StageFiles(StagedFileType.NonUFS, DirectoryReference.Combine(SC.LocalRoot, "Engine/Plugins/TrueSkyPlugin/Content"), "*.*", StageFilesSearch.AllDirectories);
+	SC.StageFiles(StagedFileType.NonUFS, DirectoryReference.Combine(SC.LocalRoot, "Engine/Plugins/TrueSkyPlugin/shaderbin", SC.PlatformDir), "*.*", StageFilesSearch.AllDirectories);
+	/// END trueSKY Additional code
+
+
+
+Unity
+-----
+
+When deploying a Unity package simply navigate through to File -> Build Settings and ensure that the architecture is set to x86_64 otherwise trueSKY will render as black due to trueSKY not support 32 bit architecture.
+
+From here everything should work as expected when using Unitys default build settings.
+
+HDRP coming Soon

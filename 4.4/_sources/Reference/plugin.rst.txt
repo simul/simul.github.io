@@ -1,0 +1,8 @@
+Plugin
+======================================
+
+.. doxygenclass:: simul::plugin::PluginTrueSkyRenderer
+   :members:
+
+.. doxygenstruct:: simul::plugin::Query
+   :members:

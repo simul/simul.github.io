@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" ><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Rendering Techniques in trueSKY &mdash; Simul  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" >
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" >
+    <link rel="shortcut icon" href="../_static/favicon.ico">
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" >
+    <link rel="search" title="Search" href="../search.html" >
+    <link rel="next" title="Performance" href="profiling.html" >
+    <link rel="prev" title="The TrueSkyPluginRender Library" href="pluginrenderer.html" > 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+			<a href="../index.html"  class="" >
+				
+					<span class="sidebartitle">
+						trueSKY 4.4
+					</span>
+				
+			</a>
+<div role="search">
+    <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+        <label class="search-label" for="q">Search the documentation</label>
+        <input type="text" name="q" id="q" placeholder="Search..." aria-label="Search docs" >
+        <input type="hidden" name="check_keywords" value="yes" >
+        <input type="hidden" name="area" value="default" >
+    </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation and Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../concepts.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorialsindex.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unreal.html">trueSKY for Unreal Engine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../skysequencer.html">Sky Sequencer</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../programming.html">Programming with the trueSKY SDK</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="nativesdk.html">Native Development with the trueSKY SDK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pluginrenderer.html">The TrueSkyPluginRender Library</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Rendering Techniques in trueSKY</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#clouds">Clouds</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cosmic-background">Cosmic Background</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sun-and-stars">Sun and Stars</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#planets">Planets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sky-and-atmospherics">Sky and Atmospherics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#compositing">Compositing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#performance">Performance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rain-and-snow">Rain and Snow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#shaders">Shaders</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mixed-resolution-rendering">Mixed Resolution Rendering</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="profiling.html">Performance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="debugging.html">Debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deployment.html">trueSKY Deployment</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../legalindex.html">trueSKY Licences</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../API/apiindex.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Reference/referenceindex.html">Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelist.html">Changelist</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+		<h2 class="wy-nav-top">Navigation</h2><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Simul</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../programming.html">Programming with the trueSKY SDK</a></li>
+      <li class="breadcrumb-item active">Rendering Techniques in trueSKY</li>
+      <li class="wy-breadcrumbs-aside">
+        ﻿
+<div class="truesky-version-switch">
+    <button id="version-switch-button">Switch Version</button>
+</div>
+
+<script>
+    const switchButton = document.getElementById('version-switch-button');
+
+    // current URL
+    const currentURL = window.location.href;
+
+
+    const isVersion4_3 = currentURL.includes('/4.3');
+    const isVersion4_4 = currentURL.includes('/4.4');
+
+    if (isVersion4_3) {
+        switchButton.textContent = 'Switch to 4.4';
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.4';
+        });
+    } else if (isVersion4_4) {
+        switchButton.textContent = 'Switch to 4.3';
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.3';
+        });
+    } else {
+        switchButton.textContent = 'Switch to 4.3'; 
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.3';
+        });
+    }
+</script>
+      </li>
+  </ul>
+  <hr>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="rendering-techniques-in-truesky">
+<h1>Rendering Techniques in trueSKY<a class="headerlink" href="#rendering-techniques-in-truesky" title="Permalink to this heading">¶</a></h1>
+<p>All Simul’s default renderers use a right-handed co-ordinate system with x and y on the horizontal plane, and z up. All units of distance, if not specified as km, are in metres. Angular units are radians, unless specified as degrees. Temperature is in kelvins, unless specified as degrees Celsius.</p>
+<p>Weather Rendering is handled by <a class="reference internal" href="../Reference/Clouds/weatherrenderer.html"><span class="doc">WeatherRenderer</span></a>.
+The Weather Renderer owns and manages renderers for sky, clouds, atmospherics and other effects.
+The Weather Renderer is the main interface between an application and trueSKY.</p>
+<section id="clouds">
+<h2>Clouds<a class="headerlink" href="#clouds" title="Permalink to this heading">¶</a></h2>
+<p>The cloud keyframer is updated from <a class="reference internal" href="../Reference/Clouds/environment.html"><span class="doc">Environment</span></a>.</p>
+<p>Some <a class="reference internal" href="../Reference/Clouds/cloudkeyframe.html"><span class="doc">CloudKeyframe</span></a> properties are used as per-keyframe values to generated the cloud textures.
+These textures are then interpolated for rendering:</p>
+<p>Clouds are usually drawn to a lower-resolution buffer.
+The <a class="reference internal" href="../Reference/Clouds/cloudrenderer.html"><span class="doc">CloudRenderer</span></a> keeps the cloud volume textures up to date, and draws the clouds volumetrically.</p>
+</section>
+<section id="cosmic-background">
+<h2>Cosmic Background<a class="headerlink" href="#cosmic-background" title="Permalink to this heading">¶</a></h2>
+<p>The cosmic background texture is drawn first, at an orientation that corresponds to the plane of the Milky Way galaxy - see <a class="reference internal" href="../Reference/Sky/skykeyframer.html"><span class="doc">SetBackgroundBrightness</span></a>.</p>
+<p>It uses a plate-carree projection, aligned with the galactic horizon. Given the vector “view”, which is the direction in galactic co-ordinates, the calculation is:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">float</span><span class="w"> </span><span class="n">azimuth</span><span class="w">        </span><span class="o">=</span><span class="n">atan2</span><span class="p">(</span><span class="n">view</span><span class="p">.</span><span class="n">y</span><span class="p">,</span><span class="o">-</span><span class="n">view</span><span class="p">.</span><span class="n">x</span><span class="p">);</span>
+<span class="n">vec2</span><span class="w"> </span><span class="n">texcoord</span><span class="w">        </span><span class="o">=</span><span class="n">vec2</span><span class="p">((</span><span class="n">azimuth</span><span class="o">/</span><span class="p">(</span><span class="n">pi</span><span class="o">*</span><span class="mf">2.0</span><span class="p">)),</span><span class="mf">0.5</span><span class="o">-</span><span class="n">asin</span><span class="p">(</span><span class="n">view</span><span class="p">.</span><span class="n">z</span><span class="p">)</span><span class="o">/</span><span class="n">pi</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>i.e. the x coordinate is proportional to the azimuth, and the y coordinate is proportional to the sine of the elevation.</p>
+<img alt="../_images/MilkyWay.png" src="../_images/MilkyWay.png" />
+<p>You may see some stretching at the top and bottom of the image due to degeneracy of the projection, so it is preferable to have the texture fade to black at the top and bottom edges.</p>
+</section>
+<section id="sun-and-stars">
+<h2>Sun and Stars<a class="headerlink" href="#sun-and-stars" title="Permalink to this heading">¶</a></h2>
+<p>Stars are drawn as point sprites, and turn around the axis of the Earth’s rotation, in the same direction as the sun. Stars are usually drawn to the highest-resolution buffer (i.e. the main or final frame buffer or render target). See
+<a class="reference internal" href="../Reference/Sky/skykeyframer.html"><span class="doc">StarBrightness and MaxStarMagnitude</span></a>.</p>
+<p>The sun is drawn after the stars, also to the main buffer.</p>
+</section>
+<section id="planets">
+<h2>Planets<a class="headerlink" href="#planets" title="Permalink to this heading">¶</a></h2>
+<p>Planets (e.g. the Moon) are drawn by SkyRenderer.
+A planet texture map can be supplied, and the shader takes sun direction as a parameter -
+this is used to light the planet (e.g. phases of the moon). Like stars, planets are usually drawn to the main buffer.</p>
+</section>
+<section id="sky-and-atmospherics">
+<h2>Sky and Atmospherics<a class="headerlink" href="#sky-and-atmospherics" title="Permalink to this heading">¶</a></h2>
+<p>The sky and atmospherics are drawn to a volumetric texture for which the x and y axes are screen coordinates, and the z axis is distance.</p>
+</section>
+<section id="compositing">
+<h2>Compositing<a class="headerlink" href="#compositing" title="Permalink to this heading">¶</a></h2>
+<p>The final compositing step puts the sky, atmospherics and clouds to the current rendertarget.</p>
+</section>
+<section id="performance">
+<h2>Performance<a class="headerlink" href="#performance" title="Permalink to this heading">¶</a></h2>
+<p>Rendering performance is mostly dependent on the number of pixels drawn, and the level of cloud detail.
+Calculation performance - mainly cloud lighting - depends strongly on the grid size - the larger the grid, the more time will be taken to light a cloud subdivision.</p>
+<p>It is usual to downsample the cloud part of the sky rendering, controlled by MaximumCubemapResolution in the <a class="reference internal" href="../Reference/Clouds/cloudrenderingoptions.html"><span class="doc">CloudRenderingOptions</span></a>.</p>
+<p>Go to the <a class="reference internal" href="profiling.html"><span class="doc">performance page</span></a> to learn more about how to monitor trueSKY’s performance, along with ways to improve it.</p>
+</section>
+<section id="rain-and-snow">
+<h2>Rain and Snow<a class="headerlink" href="#rain-and-snow" title="Permalink to this heading">¶</a></h2>
+<p>The precipitation is used to control the amount of rain or snowfall at a given time, whilst the PrecipitationThresholdKm property is used to set the thickness of cloud required for rain to fall (setting this to 0 will allow even the smallest of clouds to produce rain). To switch between snow and rain use rain_to_snow (where 0 is rain, 1 is snow).</p>
+<p>Each cloud keyframe has a <a class="reference internal" href="../Reference/Clouds/cloudkeyframe.html"><span class="doc">PrecipitationRegion</span></a>, which defines the local area of precipitation,
+if it is not global for the keyframe. The amount of particles used for precipitation can be altered with the <a class="reference internal" href="../Reference/Clouds/precipitationrenderer.html"><span class="doc">MaxParticles</span></a> property.</p>
+<img alt="../_images/Lightning-RainStreaks.jpg" src="../_images/Lightning-RainStreaks.jpg" />
+<p>Classes derived from simul::clouds::PrecipitationRenderer are used to draw the rain or snow particles, while the link simul::clouds::PrecipitationRegion rain streak effectendlink is drawn by the cloud renderer. This class has a property “UseSimulationTime” which determines whether rain and snow speed is based on the simulated time-of-day, or real time in seconds.</p>
+</section>
+<section id="shaders">
+<h2>Shaders<a class="headerlink" href="#shaders" title="Permalink to this heading">¶</a></h2>
+<p>trueSKY uses <em>effects</em> for rendering. An effect is a collection of shaders - vertex shaders, pixel shaders and so on, along with information on how to combine them, how to set render state when they are used, and what inputs they take.</p>
+<p>Platform-specific derived classes of link simul::crossplatform::Effect Effectendlink are created with link simul::crossplatform::RenderPlatform::CreateEffect RenderPlatform::CreateEffectendlink,
+usually with an extensionless filename passed to the function.</p>
+<p>The RenderPlatform looks for a platform-specific shader binary file. Optionally, if a shader binary is not found, or is out of date, the RenderPlatform looks for the shader source and rebuilds it. This is typical in development, but not in releases.</p>
+</section>
+<section id="mixed-resolution-rendering">
+<h2>Mixed Resolution Rendering<a class="headerlink" href="#mixed-resolution-rendering" title="Permalink to this heading">¶</a></h2>
+<p>TrueSKY’s cloud rendering is usually performed at below the full resolution of the screen. This is because, as a raytracing system, its performance is highly dependent on the number of pixels drawn.</p>
+<p>Clouds and other volumetric effects can be blended with the full-resolution scene, optionally taking into account MSAA anti-aliasing. To do this, trueSKY uses a mixed-resolution compositor.</p>
+<img alt="../_images/Compositing.png" src="../_images/Compositing.png" />
+<p>The depth values passed to the weather renderer in your depth texture are processed to obtain the needed information for the compositing. This processing uses the projection matrix passed in in your DeviceContext object. The most efficient projection is usually the depth-reversed style, for which the far plane is at z=0.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="pluginrenderer.html" class="btn btn-neutral float-left" title="The TrueSkyPluginRender Library" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="profiling.html" class="btn btn-neutral float-right" title="Performance" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2007-2023, Simul Software Ltd.</p>
+  </div> 
+
+</footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+<div class="overlay" style="display: none;">
+    <img class="fullsize" alt="fullscreen image overlay" src="data:,">
+</div>
+</body>
+</html>

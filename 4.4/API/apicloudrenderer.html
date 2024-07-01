@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" ><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Cloud Renderer &mdash; Simul  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" >
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" >
+    <link rel="shortcut icon" href="../_static/favicon.ico">
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" >
+    <link rel="search" title="Search" href="../search.html" >
+    <link rel="next" title="Cloud Keyframer" href="apicloudkeyframer.html" >
+    <link rel="prev" title="Environment" href="apienvironment.html" > 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+			<a href="../index.html"  class="" >
+				
+					<span class="sidebartitle">
+						trueSKY 4.4
+					</span>
+				
+			</a>
+<div role="search">
+    <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+        <label class="search-label" for="q">Search the documentation</label>
+        <input type="text" name="q" id="q" placeholder="Search..." aria-label="Search docs" >
+        <input type="hidden" name="check_keywords" value="yes" >
+        <input type="hidden" name="area" value="default" >
+    </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation and Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../concepts.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorialsindex.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unreal.html">trueSKY for Unreal Engine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../skysequencer.html">Sky Sequencer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programming.html">Programming with the trueSKY SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../legalindex.html">trueSKY Licences</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="apiindex.html">API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="apiweatherrenderer.html">Base Weather Renderer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apienvironment.html">Environment</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Cloud Renderer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apicloudkeyframer.html">Cloud Keyframer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apicloudkeyframe.html">Cloud Keyframe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apiskykeyframer.html">Sky Keyframer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apiskykeyframe.html">Sky Keyframe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apiskylight.html">Skylight</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Reference/referenceindex.html">Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelist.html">Changelist</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+		<h2 class="wy-nav-top">Navigation</h2><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Simul</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="apiindex.html">API</a></li>
+      <li class="breadcrumb-item active">Cloud Renderer</li>
+      <li class="wy-breadcrumbs-aside">
+        ﻿
+<div class="truesky-version-switch">
+    <button id="version-switch-button">Switch Version</button>
+</div>
+
+<script>
+    const switchButton = document.getElementById('version-switch-button');
+
+    // current URL
+    const currentURL = window.location.href;
+
+
+    const isVersion4_3 = currentURL.includes('/4.3');
+    const isVersion4_4 = currentURL.includes('/4.4');
+
+    if (isVersion4_3) {
+        switchButton.textContent = 'Switch to 4.4';
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.4';
+        });
+    } else if (isVersion4_4) {
+        switchButton.textContent = 'Switch to 4.3';
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.3';
+        });
+    } else {
+        switchButton.textContent = 'Switch to 4.3'; 
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.3';
+        });
+    }
+</script>
+      </li>
+  </ul>
+  <hr>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="cloud-renderer">
+<h1>Cloud Renderer<a class="headerlink" href="#cloud-renderer" title="Permalink to this heading">¶</a></h1>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudRendererE">
+<span id="_CPPv3N5simul6clouds13CloudRendererE"></span><span id="_CPPv2N5simul6clouds13CloudRendererE"></span><span id="simul::clouds::CloudRenderer"></span><span class="target" id="classsimul_1_1clouds_1_1_cloud_renderer"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CloudRenderer</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds13CloudRendererE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Class for real-time volumetric cloud rendering.</p>
+<p>There should exist a “trueSKY space”, where the origin(0,0,0 Cartesian) is at global mean sea level, and an arbitrary point on the Earth’s surface. The Z axis points up, the X and Y axes are arbitrary (for reasons described below). To avoid singularities, this point, and the orientation of its axes should be represented by a double-precision quaternion, which represents the rotation from (say) latitude and longitude zero with X pointing East and Y pointing North.</p>
+<p>The Volume Window is a deformed cuboid, its upper and lower surfaces matching the Earth’s curvature. On the GPU, it is a 3D texture.</p>
+<p>This trueSKY space moves in steps equivalent to one horizontal texel. The function CloudRenderer::MoveCloudWindowCentreTexel(x,y) does this. This should be done when the chosen viewpoint (this is up to you) moves more than a texel in any horizontal direction. This way, we need only update the edges as the window moves. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudRenderer24GetCloudRenderingOptionsEv">
+<span id="_CPPv3N5simul6clouds13CloudRenderer24GetCloudRenderingOptionsEv"></span><span id="_CPPv2N5simul6clouds13CloudRenderer24GetCloudRenderingOptionsEv"></span><span id="simul::clouds::CloudRenderer::GetCloudRenderingOptions"></span><span class="target" id="classsimul_1_1clouds_1_1_cloud_renderer_1a07d2acea6a12d46e8779144e134bf474"></span><a class="reference internal" href="#_CPPv4N5simul6clouds21CloudRenderingOptionsE" title="simul::clouds::CloudRenderingOptions"><span class="n"><span class="pre">CloudRenderingOptions</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">GetCloudRenderingOptions</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds13CloudRenderer24GetCloudRenderingOptionsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get a pointer to the current cloud rendering options. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudRenderer24SetCloudRenderingOptionsERK21CloudRenderingOptions">
+<span id="_CPPv3N5simul6clouds13CloudRenderer24SetCloudRenderingOptionsERK21CloudRenderingOptions"></span><span id="_CPPv2N5simul6clouds13CloudRenderer24SetCloudRenderingOptionsERK21CloudRenderingOptions"></span><span id="simul::clouds::CloudRenderer::SetCloudRenderingOptions__CloudRenderingOptionsCR"></span><span class="target" id="classsimul_1_1clouds_1_1_cloud_renderer_1a17bb5f64e2bf92e0c3a3cea9563e6f0a"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetCloudRenderingOptions</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5simul6clouds21CloudRenderingOptionsE" title="simul::clouds::CloudRenderingOptions"><span class="n"><span class="pre">CloudRenderingOptions</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">c</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds13CloudRenderer24SetCloudRenderingOptionsERK21CloudRenderingOptions" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set new cloud rendering options. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptionsE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptionsE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptionsE"></span><span id="simul::clouds::CloudRenderingOptions"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CloudRenderingOptions</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptionsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>These values control the rendering of clouds.</p>
+<p>The table below includes the variables which can have the greatest effect in regards to visual fidelity, which will usually cause an increase in performance.</p>
+<p><table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head" colspan="2"><p>Performance Impact of Cloud Rendering Variables</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>MaximumCubemapResolution</p></td>
+<td><p>Very High</p></td>
+</tr>
+<tr class="row-odd"><td><p>HighDetailMultiplier</p></td>
+<td><p>Very High</p></td>
+</tr>
+<tr class="row-even"><td><p>HighDetailRangeKm</p></td>
+<td><p>Very High</p></td>
+</tr>
+<tr class="row-odd"><td><p>WindowScaleKm</p></td>
+<td><p>Very High</p></td>
+</tr>
+<tr class="row-even"><td><p>RaytraceMode</p></td>
+<td><p>Very High</p></td>
+</tr>
+<tr class="row-odd"><td><p>MaxCloudDistanceKm</p></td>
+<td><p>Very High</p></td>
+</tr>
+<tr class="row-even"><td><p>lightingMode</p></td>
+<td><p>High</p></td>
+</tr>
+<tr class="row-odd"><td><p>RenderGridX + Y</p></td>
+<td><p>High</p></td>
+</tr>
+<tr class="row-even"><td><p>DefaultAmortization</p></td>
+<td><p>High</p></td>
+</tr>
+<tr class="row-odd"><td><p>EdgeNoiseTextureSize</p></td>
+<td><p>High</p></td>
+</tr>
+<tr class="row-even"><td><p>WindowGrid</p></td>
+<td><p>High</p></td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions21CloudRenderingOptionsEv">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions21CloudRenderingOptionsEv"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions21CloudRenderingOptionsEv"></span><span id="simul::clouds::CloudRenderingOptions::CloudRenderingOptions"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1ae75befae94209239da6ee61c0de43594"></span><span class="sig-name descname"><span class="n"><span class="pre">CloudRenderingOptions</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions21CloudRenderingOptionsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds21CloudRenderingOptions15GetDefaultValueE8uint64_t">
+<span id="_CPPv3NK5simul6clouds21CloudRenderingOptions15GetDefaultValueE8uint64_t"></span><span id="_CPPv2NK5simul6clouds21CloudRenderingOptions15GetDefaultValueE8uint64_t"></span><span id="simul::clouds::CloudRenderingOptions::GetDefaultValue__uint64_tC"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a3217c1d38b2896f7f1998f2ff57b430b"></span><span class="n"><span class="pre">base</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../Reference/Base/variant.html#_CPPv4N5simul4base7VariantE" title="simul::base::Variant"><span class="n"><span class="pre">Variant</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetDefaultValue</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">Enum</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds21CloudRenderingOptions15GetDefaultValueE8uint64_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds21CloudRenderingOptions13GetValueRangeE8uint64_t">
+<span id="_CPPv3NK5simul6clouds21CloudRenderingOptions13GetValueRangeE8uint64_t"></span><span id="_CPPv2NK5simul6clouds21CloudRenderingOptions13GetValueRangeE8uint64_t"></span><span id="simul::clouds::CloudRenderingOptions::GetValueRange__uint64_tC"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a0721c4eb248d5ec386c124bd79d9264b"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">pair</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">base</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../Reference/Base/variant.html#_CPPv4N5simul4base7VariantE" title="simul::base::Variant"><span class="n"><span class="pre">Variant</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">base</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../Reference/Base/variant.html#_CPPv4N5simul4base7VariantE" title="simul::base::Variant"><span class="n"><span class="pre">Variant</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetValueRange</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">Enum</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds21CloudRenderingOptions13GetValueRangeE8uint64_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds21CloudRenderingOptions8GetValueE8uint64_t">
+<span id="_CPPv3NK5simul6clouds21CloudRenderingOptions8GetValueE8uint64_t"></span><span id="_CPPv2NK5simul6clouds21CloudRenderingOptions8GetValueE8uint64_t"></span><span id="simul::clouds::CloudRenderingOptions::GetValue__uint64_tC"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a9170409a3cdbc4e85584e9a1dc5163e7"></span><span class="n"><span class="pre">base</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../Reference/Base/variant.html#_CPPv4N5simul4base7VariantE" title="simul::base::Variant"><span class="n"><span class="pre">Variant</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetValue</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">Enum</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds21CloudRenderingOptions8GetValueE8uint64_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions8SetValueE8uint64_tN4base7VariantE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions8SetValueE8uint64_tN4base7VariantE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions8SetValueE8uint64_tN4base7VariantE"></span><span id="simul::clouds::CloudRenderingOptions::SetValue__uint64_t.base::Variant"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a8cbc9edab7e2b4939503ee29063eabae"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetValue</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">Enum</span></span>, <span class="n"><span class="pre">base</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../Reference/Base/variant.html#_CPPv4N5simul4base7VariantE" title="simul::base::Variant"><span class="n"><span class="pre">Variant</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">value</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions8SetValueE8uint64_tN4base7VariantE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions13WriteSettingsERN8platform4core8SettingsE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions13WriteSettingsERN8platform4core8SettingsE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions13WriteSettingsERN8platform4core8SettingsE"></span><span id="simul::clouds::CloudRenderingOptions::WriteSettings__platform::core::SettingsR"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a7a8ec2901e11125f0190688777cd3632"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">WriteSettings</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">core</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Settings</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">settings</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions13WriteSettingsERN8platform4core8SettingsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions12ReadSettingsERN8platform4core8SettingsE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions12ReadSettingsERN8platform4core8SettingsE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions12ReadSettingsERN8platform4core8SettingsE"></span><span id="simul::clouds::CloudRenderingOptions::ReadSettings__platform::core::SettingsR"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1ac97ab4806f0f4caf1493d763491f6170"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ReadSettings</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">core</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Settings</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">settings</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions12ReadSettingsERN8platform4core8SettingsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions10SaveToFileERKNSt6stringE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions10SaveToFileERKNSt6stringE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions10SaveToFileERKNSt6stringE"></span><span id="simul::clouds::CloudRenderingOptions::SaveToFile__ssCR"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a9184117fe2699d19dc40701425bbe05d"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SaveToFile</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">fn</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions10SaveToFileERKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions12LoadFromFileERKNSt6stringE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions12LoadFromFileERKNSt6stringE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions12LoadFromFileERKNSt6stringE"></span><span id="simul::clouds::CloudRenderingOptions::LoadFromFile__ssCR"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a5e47cca6220e6e7dab248827ad15bb9f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LoadFromFile</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">fn</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions12LoadFromFileERKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions10SaveToTextERN8platform13crossplatform10TextOutputE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions10SaveToTextERN8platform13crossplatform10TextOutputE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions10SaveToTextERN8platform13crossplatform10TextOutputE"></span><span id="simul::clouds::CloudRenderingOptions::SaveToText__platform::crossplatform::TextOutputR"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1aa72463c426fe071da4e84aa38132a54d"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SaveToText</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">TextOutput</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">ofs</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions10SaveToTextERN8platform13crossplatform10TextOutputE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions12LoadFromTextERN8platform13crossplatform9TextInputE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions12LoadFromTextERN8platform13crossplatform9TextInputE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions12LoadFromTextERN8platform13crossplatform9TextInputE"></span><span id="simul::clouds::CloudRenderingOptions::LoadFromText__platform::crossplatform::TextInputR"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1abb156dbf9e3a8283461c5a488835606c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LoadFromText</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">TextInput</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">input</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions12LoadFromTextERN8platform13crossplatform9TextInputE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions24MaximumCubemapResolutionE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions24MaximumCubemapResolutionE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions24MaximumCubemapResolutionE"></span><span id="simul::clouds::CloudRenderingOptions::MaximumCubemapResolution__i"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1ab98a0d1b441e2c483e12a36272572082"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">MaximumCubemapResolution</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions24MaximumCubemapResolutionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Resolution to draw full-detail cloud buffer. Value should be a power of 2, typically 1/4 of screen width. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions22CrepuscularRayStrengthE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions22CrepuscularRayStrengthE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions22CrepuscularRayStrengthE"></span><span id="simul::clouds::CloudRenderingOptions::CrepuscularRayStrength__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1ad98d5729415afa192c3cd5b56e44810f"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CrepuscularRayStrength</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions22CrepuscularRayStrengthE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Strength of crepuscular rays(godrays) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions11GodraysGridE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions11GodraysGridE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions11GodraysGridE"></span><span id="simul::clouds::CloudRenderingOptions::GodraysGrid__uint3"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a4c4262a07cbff2d8d5fdea1c2d07dbba"></span><span class="n"><span class="pre">uint3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GodraysGrid</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions11GodraysGridE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Grid size for the crepuscular(godrays) grid. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions25MaxPrecipitationParticlesE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions25MaxPrecipitationParticlesE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions25MaxPrecipitationParticlesE"></span><span id="simul::clouds::CloudRenderingOptions::MaxPrecipitationParticles__i"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1ab6c87960ad8e438798104b3d5fe0ff7e"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">MaxPrecipitationParticles</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions25MaxPrecipitationParticlesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Maximum number of particles to render for precipitation. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions25PrecipitationRadiusMetresE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions25PrecipitationRadiusMetresE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions25PrecipitationRadiusMetresE"></span><span id="simul::clouds::CloudRenderingOptions::PrecipitationRadiusMetres__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1ac1518ebecb1a953ace2b44fd02916799"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PrecipitationRadiusMetres</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions25PrecipitationRadiusMetresE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Radius over which to draw precipitation particles. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions15RainFallSpeedMSE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions15RainFallSpeedMSE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions15RainFallSpeedMSE"></span><span id="simul::clouds::CloudRenderingOptions::RainFallSpeedMS__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a5158e8ea7a232ac020f657ab6375660d"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RainFallSpeedMS</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions15RainFallSpeedMSE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Speed of raindrops in m/s. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions14RainDropSizeMmE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions14RainDropSizeMmE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions14RainDropSizeMmE"></span><span id="simul::clouds::CloudRenderingOptions::RainDropSizeMm__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1aa72c9dc6a69d53b25f8a406571321563"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RainDropSizeMm</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions14RainDropSizeMmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Size of raindrops in mm. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions15SnowFallSpeedMSE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions15SnowFallSpeedMSE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions15SnowFallSpeedMSE"></span><span id="simul::clouds::CloudRenderingOptions::SnowFallSpeedMS__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a653d0e46c74f5144b2321d2dec22465e"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SnowFallSpeedMS</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions15SnowFallSpeedMSE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Speed of snowflakes in m/s. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions15SnowFlakeSizeMmE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions15SnowFlakeSizeMmE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions15SnowFlakeSizeMmE"></span><span id="simul::clouds::CloudRenderingOptions::SnowFlakeSizeMm__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1ae3ecfaa34eb4e590d55ebfd4d7c61271"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SnowFlakeSizeMm</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions15SnowFlakeSizeMmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Size of snowflakes in mm. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions23PrecipitationWindEffectE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions23PrecipitationWindEffectE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions23PrecipitationWindEffectE"></span><span id="simul::clouds::CloudRenderingOptions::PrecipitationWindEffect__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a828583373d004ee1cafe34aa68af9781"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PrecipitationWindEffect</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions23PrecipitationWindEffectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Strength of wind effect on rain/snow. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions18PrecipitationWaverE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions18PrecipitationWaverE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions18PrecipitationWaverE"></span><span id="simul::clouds::CloudRenderingOptions::PrecipitationWaver__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1abe3f0b3d5e76a21fcd730d00727a4195"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PrecipitationWaver</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions18PrecipitationWaverE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Strength of waver/sway of precipitation. Less noticeable for rain. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions28PrecipitationWaverTimescaleSE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions28PrecipitationWaverTimescaleSE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions28PrecipitationWaverTimescaleSE"></span><span id="simul::clouds::CloudRenderingOptions::PrecipitationWaverTimescaleS__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a262e6f82b71e0b068aeff9420b6884f6"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PrecipitationWaverTimescaleS</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions28PrecipitationWaverTimescaleSE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Timescale in seconds of waver of precipitation. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions24PrecipitationThresholdKmE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions24PrecipitationThresholdKmE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions24PrecipitationThresholdKmE"></span><span id="simul::clouds::CloudRenderingOptions::PrecipitationThresholdKm__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1ae18c1db193dea45377aad25703f99a3f"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PrecipitationThresholdKm</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions24PrecipitationThresholdKmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Thickness of cloud required in to produce precipitation in Km. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions24AutomaticRainbowPositionE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions24AutomaticRainbowPositionE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions24AutomaticRainbowPositionE"></span><span id="simul::clouds::CloudRenderingOptions::AutomaticRainbowPosition__b"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1ad3e62b4e4cecf004a393cdfb7830b370"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">AutomaticRainbowPosition</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions24AutomaticRainbowPositionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the rainbow follows the antisolar/antilunar point, or is manually set. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions16RainbowElevationE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions16RainbowElevationE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions16RainbowElevationE"></span><span id="simul::clouds::CloudRenderingOptions::RainbowElevation__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1aefa8afe9bbfcf0c32d82a96abed1b819"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RainbowElevation</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions16RainbowElevationE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>If the automatic positioning is disabled, this sets the elevation of the rainbow. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions14RainbowAzimuthE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions14RainbowAzimuthE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions14RainbowAzimuthE"></span><span id="simul::clouds::CloudRenderingOptions::RainbowAzimuth__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1afb8548a1efa9b071fdcd7dd8e9712504"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RainbowAzimuth</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions14RainbowAzimuthE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>If the automatic positioning is disabled, this sets the azimuth of the rainbow. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions16RainbowIntensityE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions16RainbowIntensityE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions16RainbowIntensityE"></span><span id="simul::clouds::CloudRenderingOptions::RainbowIntensity__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1ab070c3b214548dd3fd39af9b16007462"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RainbowIntensity</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions16RainbowIntensityE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Controls the overall brightness of the rainbow. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions17RainbowDepthPointE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions17RainbowDepthPointE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions17RainbowDepthPointE"></span><span id="simul::clouds::CloudRenderingOptions::RainbowDepthPoint__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1ae4c317a03578e41a72b459d4a84749d5"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RainbowDepthPoint</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions17RainbowDepthPointE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The point at which the rainbow intersects the terrain. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions20AllowOccludedRainbowE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions20AllowOccludedRainbowE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions20AllowOccludedRainbowE"></span><span id="simul::clouds::CloudRenderingOptions::AllowOccludedRainbow__b"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a810d915134c12ef73af8b2cc8d26f151"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">AllowOccludedRainbow</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions20AllowOccludedRainbowE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether trueSKY should generate rainbows regardless of light occlusion. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions17AllowLunarRainbowE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions17AllowLunarRainbowE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions17AllowLunarRainbowE"></span><span id="simul::clouds::CloudRenderingOptions::AllowLunarRainbow__b"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1adba538706426e473ea2ee27fb3b0b0db"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">AllowLunarRainbow</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions17AllowLunarRainbowE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether trueSKY should generate rainbows using the moon’s light. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions20EdgeNoisePersistenceE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions20EdgeNoisePersistenceE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions20EdgeNoisePersistenceE"></span><span id="simul::clouds::CloudRenderingOptions::EdgeNoisePersistence__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a423f7226be02f6d4236256fcae8fe6e5"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EdgeNoisePersistence</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions20EdgeNoisePersistenceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Persistence of edge noise texture. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions18EdgeNoiseFrequencyE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions18EdgeNoiseFrequencyE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions18EdgeNoiseFrequencyE"></span><span id="simul::clouds::CloudRenderingOptions::EdgeNoiseFrequency__i"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a3a2eecd32fd17836e615908cf25448e9"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EdgeNoiseFrequency</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions18EdgeNoiseFrequencyE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Frequency of edge noise texture. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions20EdgeNoiseTextureSizeE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions20EdgeNoiseTextureSizeE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions20EdgeNoiseTextureSizeE"></span><span id="simul::clouds::CloudRenderingOptions::EdgeNoiseTextureSize__i"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a42f8d051deb5427f758af034b5898be7"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EdgeNoiseTextureSize</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions20EdgeNoiseTextureSizeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Size of edge noise texture. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions21EdgeNoiseWavelengthKmE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions21EdgeNoiseWavelengthKmE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions21EdgeNoiseWavelengthKmE"></span><span id="simul::clouds::CloudRenderingOptions::EdgeNoiseWavelengthKm__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a754456867933a634eade74b24579ec7c"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EdgeNoiseWavelengthKm</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions21EdgeNoiseWavelengthKmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Wavelength of edge noise effect. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions17WorleyTextureSizeE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions17WorleyTextureSizeE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions17WorleyTextureSizeE"></span><span id="simul::clouds::CloudRenderingOptions::WorleyTextureSize__i"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a4a5aba9abe429b60ec9b0560a27c40a1"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">WorleyTextureSize</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions17WorleyTextureSizeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Size of the 3D cell-noise texture used to generate clouds. Larger values use more GPU memory. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions21CellNoiseWavelengthKmE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions21CellNoiseWavelengthKmE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions21CellNoiseWavelengthKmE"></span><span id="simul::clouds::CloudRenderingOptions::CellNoiseWavelengthKm__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1aa7f6b02c15e12501490b403e8f7e3e60"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CellNoiseWavelengthKm</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions21CellNoiseWavelengthKmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Wavelength of cell noise effect. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions21MaxFractalAmplitudeKmE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions21MaxFractalAmplitudeKmE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions21MaxFractalAmplitudeKmE"></span><span id="simul::clouds::CloudRenderingOptions::MaxFractalAmplitudeKm__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1af9a6af6342ae57225144cbc16356e795"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">MaxFractalAmplitudeKm</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions21MaxFractalAmplitudeKmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Strength of edge noise effect. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions18MaxCloudDistanceKmE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions18MaxCloudDistanceKmE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions18MaxCloudDistanceKmE"></span><span id="simul::clouds::CloudRenderingOptions::MaxCloudDistanceKm__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1aec0da30d5544706c846549683b666c38"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">MaxCloudDistanceKm</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions18MaxCloudDistanceKmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Maximum distance to render clouds. Maximum value should be half of WindowScaleKm. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions13RenderGridXKmE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions13RenderGridXKmE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions13RenderGridXKmE"></span><span id="simul::clouds::CloudRenderingOptions::RenderGridXKm__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a943ab60958b677457243f80873d31c15"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RenderGridXKm</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions13RenderGridXKmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Minimum grid width for raytracing. Only in STANDARD_RENDERING RenderingMode. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions13RenderGridZKmE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions13RenderGridZKmE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions13RenderGridZKmE"></span><span id="simul::clouds::CloudRenderingOptions::RenderGridZKm__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a40d2712636891c83d0ebfb68c6647eb5"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RenderGridZKm</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions13RenderGridZKmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Minimum grid height for raytracing. Only in STANDARD_RENDERING RenderingMode. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions12RaytraceModeE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions12RaytraceModeE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions12RaytraceModeE"></span><span id="simul::clouds::CloudRenderingOptions::RaytraceMode__RenderingMode"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a64a0d1717f977c6245d31da6ccf6a702"></span><a class="reference internal" href="../Reference/Clouds/cloudrenderingoptions.html#_CPPv4N5simul6clouds13RenderingModeE" title="simul::clouds::RenderingMode"><span class="n"><span class="pre">RenderingMode</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RaytraceMode</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions12RaytraceModeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Method that the renderer will use to raytrace these clouds. Default option is DISTANCE_FIELD_STEP. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions12lightingModeE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions12lightingModeE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions12lightingModeE"></span><span id="simul::clouds::CloudRenderingOptions::lightingMode__LightingMode"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1add6ab31a702add8ade7dcd594d4e11b6"></span><a class="reference internal" href="../Reference/Clouds/cloudrenderingoptions.html#_CPPv4N5simul6clouds12LightingModeE" title="simul::clouds::LightingMode"><span class="n"><span class="pre">LightingMode</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">lightingMode</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions12lightingModeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Method that the renderer will use for clouds lighting. Default is STANDARD_LIGHTING </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions16DefaultNumSlicesE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions16DefaultNumSlicesE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions16DefaultNumSlicesE"></span><span id="simul::clouds::CloudRenderingOptions::DefaultNumSlices__i"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1ae0b0cd5a902e48d25b7801ab998e1e59"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DefaultNumSlices</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions16DefaultNumSlicesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Deprecated from 4.3 onwards. The number of raytracing steps to take when rendering clouds, larger values are slower to render. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions19DefaultAmortizationE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions19DefaultAmortizationE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions19DefaultAmortizationE"></span><span id="simul::clouds::CloudRenderingOptions::DefaultAmortization__i"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a952a45841a5bb9c386ef2cf786eff0f7"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DefaultAmortization</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions19DefaultAmortizationE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>If the cost of rendering is spread over frames. For 1, all pixels are drawn every frame, for amortization 2, it’s 2x2, etc. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions24AtmosphericsAmortizationE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions24AtmosphericsAmortizationE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions24AtmosphericsAmortizationE"></span><span id="simul::clouds::CloudRenderingOptions::AtmosphericsAmortization__i"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a75412a3043e344acf54f74c5538cd2a7"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">AtmosphericsAmortization</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions24AtmosphericsAmortizationE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Same as DefaultAmortization but for atmospheric effects. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions11WindSpeedMSE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions11WindSpeedMSE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions11WindSpeedMSE"></span><span id="simul::clouds::CloudRenderingOptions::WindSpeedMS__vec3"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1ab5a4e76b3fa996621725e91c338348ee"></span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">WindSpeedMS</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions11WindSpeedMSE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Global wind speed in metres per second. Affects the movement and churn of the clouds. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions12RealTimeWindE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions12RealTimeWindE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions12RealTimeWindE"></span><span id="simul::clouds::CloudRenderingOptions::RealTimeWind__b"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1ae7dcdabb34e94f82021e8669910ffac7"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RealTimeWind</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions12RealTimeWindE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Determines if Wind should use game time or real time for calculations. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions24CloudThresholdDistanceKmE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions24CloudThresholdDistanceKmE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions24CloudThresholdDistanceKmE"></span><span id="simul::clouds::CloudRenderingOptions::CloudThresholdDistanceKm__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1aa5625280c42f780cf9d7ff8275d5f117"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CloudThresholdDistanceKm</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions24CloudThresholdDistanceKmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A heuristic distance to discard near depths from depth interpolation, improving accuracy of upscaling. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions23CloudDepthTemporalAlphaE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions23CloudDepthTemporalAlphaE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions23CloudDepthTemporalAlphaE"></span><span id="simul::clouds::CloudRenderingOptions::CloudDepthTemporalAlpha__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1ae60d864b1d1660a39150d649c2a0b3c9"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CloudDepthTemporalAlpha</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions23CloudDepthTemporalAlphaE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The alpha for temporal blending of the solid depth buffer into the buffer used for cloud rendering. If 1.0, update is instant. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions11DirectLightE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions11DirectLightE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions11DirectLightE"></span><span id="simul::clouds::CloudRenderingOptions::DirectLight__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1ad8009987d609c921a1eacf9420f2070c"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DirectLight</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions11DirectLightE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The amount of direct light to be used for rendering. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions13IndirectLightE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions13IndirectLightE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions13IndirectLightE"></span><span id="simul::clouds::CloudRenderingOptions::IndirectLight__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1af85f280de0b85213eaca654f36ded2fc"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IndirectLight</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions13IndirectLightE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The amount of indirect or secondary light to be used for rendering. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions12AmbientLightE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions12AmbientLightE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions12AmbientLightE"></span><span id="simul::clouds::CloudRenderingOptions::AmbientLight__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a27449a55e77dd4d48015d05635140bfa"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">AmbientLight</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions12AmbientLightE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The amount of ambient light to be used for rendering. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions10ExtinctionE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions10ExtinctionE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions10ExtinctionE"></span><span id="simul::clouds::CloudRenderingOptions::Extinction__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a31a75419e31769e53623fe334a38f5b7"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Extinction</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions10ExtinctionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The amount of light scattered per metre - larger values produce darker clouds, default 0.05. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions12MieAsymmetryE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions12MieAsymmetryE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions12MieAsymmetryE"></span><span id="simul::clouds::CloudRenderingOptions::MieAsymmetry__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a12ff5302786e1bfc04ced4b1cb1c5143"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">MieAsymmetry</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions12MieAsymmetryE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Mie scattering eccentricity. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions20MinimumStarPixelSizeE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions20MinimumStarPixelSizeE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions20MinimumStarPixelSizeE"></span><span id="simul::clouds::CloudRenderingOptions::MinimumStarPixelSize__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a7a0f61db969cc60e087d394a404f2b2a"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">MinimumStarPixelSize</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions20MinimumStarPixelSizeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Smallest pixel width to use drawing stars. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions14StarBrightnessE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions14StarBrightnessE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions14StarBrightnessE"></span><span id="simul::clouds::CloudRenderingOptions::StarBrightness__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1aeb4e0d71042038927bb10691ed7df508"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">StarBrightness</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions14StarBrightnessE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Brightness multiplier for stars. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions26CosmicBackgroundBrightnessE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions26CosmicBackgroundBrightnessE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions26CosmicBackgroundBrightnessE"></span><span id="simul::clouds::CloudRenderingOptions::CosmicBackgroundBrightness__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a24741a69e4d1e43144c727bb929100d7"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CosmicBackgroundBrightness</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions26CosmicBackgroundBrightnessE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Brightness multiplier for cosmic background. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions20MaximumStarMagnitudeE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions20MaximumStarMagnitudeE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions20MaximumStarMagnitudeE"></span><span id="simul::clouds::CloudRenderingOptions::MaximumStarMagnitude__i"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a23b7923e5b8b351a573a2adc47cf16c2"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">MaximumStarMagnitude</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions20MaximumStarMagnitudeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Largest magnitude of star to draw. Larger magnitudes are dimmer. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions20VirgaNearThresholdKmE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions20VirgaNearThresholdKmE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions20VirgaNearThresholdKmE"></span><span id="simul::clouds::CloudRenderingOptions::VirgaNearThresholdKm__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1ab9c49ed14fdca03fe4d1d196824a686b"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">VirgaNearThresholdKm</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions20VirgaNearThresholdKmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Minimum distance from the camera to draw virga (rain streaks) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions9CloudTintE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions9CloudTintE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions9CloudTintE"></span><span id="simul::clouds::CloudRenderingOptions::CloudTint__vec3"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a592b44ada5a57279b87142ffd7c07036"></span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CloudTint</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions9CloudTintE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Colour tint for all clouds. Only in VARIABLE_STEP_GRID. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions13WindowScaleKmE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions13WindowScaleKmE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions13WindowScaleKmE"></span><span id="simul::clouds::CloudRenderingOptions::WindowScaleKm__vec2"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a663f6a81c62e78e9045c150abdc1613f"></span><span class="n"><span class="pre">vec2</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">WindowScaleKm</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions13WindowScaleKmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Scale of the cloud window in Km. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions10WindowGridE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions10WindowGridE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions10WindowGridE"></span><span id="simul::clouds::CloudRenderingOptions::WindowGrid__int2"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1abf4601ff8543ca7bedd854bd62bc19d6"></span><span class="n"><span class="pre">int2</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">WindowGrid</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions10WindowGridE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Size of the cloud window grid (number of steps) TODO: Does this need to be here? Or just have it in <a class="reference internal" href="../Reference/Clouds/cloudwindow.html#structsimul_1_1clouds_1_1_cloud_window"><span class="std std-ref">CloudWindow</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions24PrecipitationGridDivisorE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions24PrecipitationGridDivisorE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions24PrecipitationGridDivisorE"></span><span id="simul::clouds::CloudRenderingOptions::PrecipitationGridDivisor__int2"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a7b861ebfe7e71554700ad7586cd3590a"></span><span class="n"><span class="pre">int2</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PrecipitationGridDivisor</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions24PrecipitationGridDivisorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Divisor for the precipitation grid. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions20HighDetailMultiplierE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions20HighDetailMultiplierE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions20HighDetailMultiplierE"></span><span id="simul::clouds::CloudRenderingOptions::HighDetailMultiplier__uint"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1aeea498cf159c13cb12517e3aa17503e0"></span><span class="n"><span class="pre">uint</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">HighDetailMultiplier</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions20HighDetailMultiplierE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Multiplier for grid density. Only in VARIABLE_STEP_GRID. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions17HighDetailRangeKmE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions17HighDetailRangeKmE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions17HighDetailRangeKmE"></span><span id="simul::clouds::CloudRenderingOptions::HighDetailRangeKm__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a39cea46aa1214e2e67010295c7d73bd7"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">HighDetailRangeKm</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions17HighDetailRangeKmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Range at which to apply increased grid steps. Only in VARIABLE_STEP_GRID. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions19CloudShadowConstantE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions19CloudShadowConstantE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions19CloudShadowConstantE"></span><span id="simul::clouds::CloudRenderingOptions::CloudShadowConstant__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a970651e2f9973459fffc6239fa99918e"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CloudShadowConstant</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions19CloudShadowConstantE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions21CloudShadowMultiplierE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions21CloudShadowMultiplierE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions21CloudShadowMultiplierE"></span><span id="simul::clouds::CloudRenderingOptions::CloudShadowMultiplier__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1aa71b97512dffda8572d2447be6509955"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CloudShadowMultiplier</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions21CloudShadowMultiplierE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions19CloudShadowStrengthE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions19CloudShadowStrengthE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions19CloudShadowStrengthE"></span><span id="simul::clouds::CloudRenderingOptions::CloudShadowStrength__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a0178c7d5b8cb72256d3b582658f39603"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CloudShadowStrength</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions19CloudShadowStrengthE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Strength of cloud shadow from 0-1. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions16volumeUpdateModeE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions16volumeUpdateModeE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions16volumeUpdateModeE"></span><span id="simul::clouds::CloudRenderingOptions::volumeUpdateMode__VolumeUpdateMode"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a5e8e234b675013546db721134511cea1"></span><a class="reference internal" href="../Reference/Clouds/cloudrenderingoptions.html#_CPPv4N5simul6clouds16VolumeUpdateModeE" title="simul::clouds::VolumeUpdateMode"><span class="n"><span class="pre">VolumeUpdateMode</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">volumeUpdateMode</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions16volumeUpdateModeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions24IntegerPseudorandomNoiseE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions24IntegerPseudorandomNoiseE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions24IntegerPseudorandomNoiseE"></span><span id="simul::clouds::CloudRenderingOptions::IntegerPseudorandomNoise__b"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a914bf364be1d5a18e828788a267aad59"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IntegerPseudorandomNoise</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions24IntegerPseudorandomNoiseE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions23DoCloudRaytraceLightingE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions23DoCloudRaytraceLightingE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions23DoCloudRaytraceLightingE"></span><span id="simul::clouds::CloudRenderingOptions::DoCloudRaytraceLighting__b"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a2493776471014a600f9ba170389c1860"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DoCloudRaytraceLighting</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions23DoCloudRaytraceLightingE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions12RaysPerVoxelE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions12RaysPerVoxelE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions12RaysPerVoxelE"></span><span id="simul::clouds::CloudRenderingOptions::RaysPerVoxel__i"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a0be3a3794139014b1bb8002138c05dc1"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RaysPerVoxel</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions12RaysPerVoxelE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions20MaxRayRecursionDepthE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions20MaxRayRecursionDepthE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions20MaxRayRecursionDepthE"></span><span id="simul::clouds::CloudRenderingOptions::MaxRayRecursionDepth__i"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a2538b83e036fbbc764e10d71cb62aa81"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">MaxRayRecursionDepth</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions20MaxRayRecursionDepthE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions24NearCloudExtinctionPerKmE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions24NearCloudExtinctionPerKmE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions24NearCloudExtinctionPerKmE"></span><span id="simul::clouds::CloudRenderingOptions::NearCloudExtinctionPerKm__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a3d73f07223da53db8fdf024ac0eedccd"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">NearCloudExtinctionPerKm</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">4.0f</span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions24NearCloudExtinctionPerKmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions26SignedDistanceFieldDivisorE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions26SignedDistanceFieldDivisorE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions26SignedDistanceFieldDivisorE"></span><span id="simul::clouds::CloudRenderingOptions::SignedDistanceFieldDivisor__int2"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1ad669ae579023ae804ae010e5fd30cba5"></span><span class="n"><span class="pre">int2</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SignedDistanceFieldDivisor</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions26SignedDistanceFieldDivisorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Divisor for the precipitation grid. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions8checksumE">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions8checksumE"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions8checksumE"></span><span id="simul::clouds::CloudRenderingOptions::checksum__uint64_t"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a4327650d674287eefeb3f707939be4d7"></span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">checksum</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions8checksumE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds21CloudRenderingOptions7GetEnumEPKc">
+<span id="_CPPv3N5simul6clouds21CloudRenderingOptions7GetEnumEPKc"></span><span id="_CPPv2N5simul6clouds21CloudRenderingOptions7GetEnumEPKc"></span><span id="simul::clouds::CloudRenderingOptions::GetEnum__cCP"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_rendering_options_1a6402d300ddc9e39de2a10186e739f666"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetEnum</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">txt_utf8</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds21CloudRenderingOptions7GetEnumEPKc" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="apienvironment.html" class="btn btn-neutral float-left" title="Environment" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="apicloudkeyframer.html" class="btn btn-neutral float-right" title="Cloud Keyframer" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2007-2023, Simul Software Ltd.</p>
+  </div> 
+
+</footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+<div class="overlay" style="display: none;">
+    <img class="fullsize" alt="fullscreen image overlay" src="data:,">
+</div>
+</body>
+</html>

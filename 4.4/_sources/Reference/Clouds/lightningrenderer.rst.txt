@@ -1,0 +1,5 @@
+Lightning Renderer
+======================================
+
+.. doxygenclass:: simul::clouds::LightningRenderer
+   :members:

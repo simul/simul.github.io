@@ -1,0 +1,16 @@
+Water Renderer
+======================================
+
+.. doxygenclass:: simul::terrain::WaterRenderer
+   :members:
+
+.. doxygenstruct:: simul::terrain::beaufortConstants
+   :members:
+.. doxygenstruct:: simul::terrain::WaterProbeValues
+   :members:
+.. doxygenstruct:: simul::terrain::waterProbe
+   :members:
+.. doxygenstruct:: simul::terrain::waterBuoyancyObject
+   :members:
+.. doxygenstruct:: simul::terrain::waterMaskingObject
+   :members:

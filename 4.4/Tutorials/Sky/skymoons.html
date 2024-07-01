@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" ><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Moons &mdash; Simul  documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" >
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" >
+    <link rel="shortcut icon" href="../../_static/favicon.ico">
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" >
+    <link rel="search" title="Search" href="../../search.html" >
+    <link rel="next" title="Variables" href="skyvariables.html" >
+    <link rel="prev" title="Sky Tutorial" href="skytutorial.html" > 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+			<a href="../../index.html"  class="" >
+				
+					<span class="sidebartitle">
+						trueSKY 4.4
+					</span>
+				
+			</a>
+<div role="search">
+    <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+        <label class="search-label" for="q">Search the documentation</label>
+        <input type="text" name="q" id="q" placeholder="Search..." aria-label="Search docs" >
+        <input type="hidden" name="check_keywords" value="yes" >
+        <input type="hidden" name="area" value="default" >
+    </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation and Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../concepts.html">Concepts</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../tutorialsindex.html">Tutorials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../sequencer.html">Sky Sequencer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../clouds.html">Clouds</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../sky.html">Sky</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="skytutorial.html">Sky Tutorial</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Moons</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#each-of-the-settings-functions-as-follows">Each of the settings functions as follows:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="skyvariables.html">Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../lighting.html">Lighting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../aurorae.html">Aurorae</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../precipitation.html">Precipitation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../rainbows.html">Rainbows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../storms.html">Storms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../water.html">Water</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../time.html">Progressing Time</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../unreal.html">trueSKY for Unreal Engine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../skysequencer.html">Sky Sequencer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../programming.html">Programming with the trueSKY SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../legalindex.html">trueSKY Licences</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../API/apiindex.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Reference/referenceindex.html">Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changelist.html">Changelist</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+		<h2 class="wy-nav-top">Navigation</h2><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Simul</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../tutorialsindex.html">Tutorials</a></li>
+          <li class="breadcrumb-item"><a href="../sky.html">Sky</a></li>
+      <li class="breadcrumb-item active">Moons</li>
+      <li class="wy-breadcrumbs-aside">
+        ﻿
+<div class="truesky-version-switch">
+    <button id="version-switch-button">Switch Version</button>
+</div>
+
+<script>
+    const switchButton = document.getElementById('version-switch-button');
+
+    // current URL
+    const currentURL = window.location.href;
+
+
+    const isVersion4_3 = currentURL.includes('/4.3');
+    const isVersion4_4 = currentURL.includes('/4.4');
+
+    if (isVersion4_3) {
+        switchButton.textContent = 'Switch to 4.4';
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.4';
+        });
+    } else if (isVersion4_4) {
+        switchButton.textContent = 'Switch to 4.3';
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.3';
+        });
+    } else {
+        switchButton.textContent = 'Switch to 4.3'; 
+        switchButton.addEventListener('click', () => {
+            window.location.href = '/4.3';
+        });
+    }
+</script>
+      </li>
+  </ul>
+  <hr>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="moons">
+<h1>Moons<a class="headerlink" href="#moons" title="Permalink to this heading">¶</a></h1>
+<section id="each-of-the-settings-functions-as-follows">
+<h2>Each of the settings functions as follows:<a class="headerlink" href="#each-of-the-settings-functions-as-follows" title="Permalink to this heading">¶</a></h2>
+<p><strong>Name -</strong> This allows for assigning a name for each moon within the scene. Names are important to help you differentiate between moons. This is also used within some of the trueSKY functionality, and as such users should ensure not to name moons the same thing as this may cause conflicts and undesired results. We have blueprints to get a moon by name.</p>
+<p><strong>Texture -</strong> This allows for assigning of a 2d texture to represent the moon it is assigned to. It follows the same setup as the legacy iteration of moon texture implementation. This means that the texture will show accurate moon phases Dependant on the date and positioning in relation to the sun.</p>
+<p><strong>Colour -</strong> The colour will affect not only the texture of the moon, but the light that is reflected off of it. A blend of colours of all the moons currently above the horizon will be applied to the directional light.</p>
+<p><strong>Use Presets -</strong> This check box allows you to use one of the preset moon templates we have made. Checking this will cause all your currently setting to be overridden by the preset, so ensure to take care before pressing it.</p>
+<p><strong>Moon Preset -</strong> This drop down only becomes available for use when the above “use presets” setting is checked, and changes all of the settings within the moon array element to a series of preassigned values. Helpful to revert settings back to default.</p>
+<p><strong>Albeido -</strong> Controls the proportion of light that is reflected by the moon.</p>
+<p><strong>Longitude of Ascending Node -</strong> This determines the points in which the moon crosses the plane of the equator (due to the moon having a tilted orbit around the earth). Put in slightly simpler terms, this determines the “x” axis is located for the tilted orbit, from the equator. This is referenced in the diagram below for a more visual representation.</p>
+<p><strong>Longitude of Ascending Node Rate -</strong> The amount the ascending node increases each day (the angle is different at different times of the year, and how much it changes per day will be determined via this setting)</p>
+<p><strong>Inclination -</strong> This controls the tilt angle of the orbit. 0 will represent the moon rotating directly around the Earth’s equator, adding values to this will alter the angle of the orbital plane.</p>
+<p><strong>Argument of Pericentre -</strong> This is the closest point of that the moon is to the Earth’s surface. The moons orbit is naturally an ellipses and not a perfect circle. So changing this changes the location in which the two planetary bodies are at their closest.</p>
+<p><strong>Argument of Pericentre Rate -</strong> This refers to how much the argument of the pericentre changes per day.</p>
+<p><strong>Mean Distance -</strong> The mean (average) distance the Moon is from the center of the Earth.</p>
+<p><strong>Eccentricity -</strong> This controls how elliptical the orbit of the moon will be around the earth. 0 will allow for a perfectly circular orbit, 0.5 will be a slight oval.</p>
+<p><strong>Mean Anomaly -</strong> Controls the position that the moon will be around its orbit at midnight of each day.</p>
+<p><strong>Mean Anomaly Rate -</strong> This controls how much the mean anomaly changes each day, ie. how far around the orbit the moon will start from each day compared to the day before.</p>
+<p><strong>Radius Arc Minutes -</strong> Controls the apparent size of the moon when visualized from the surface of the earth. By default this is correct for the earth and its moon, increasing it can add more visibility as well as more dramatic results.</p>
+<img alt="../../_images/MoonOrbitExplanation.png" src="../../_images/MoonOrbitExplanation.png" />
+<p><em>Image found from “ https://en.wikipedia.org/wiki/Orbital_elements “</em></p>
+<p>In addition these settings are all tied to the moons lighting and how it will affect the scene, so ensure to be careful when editing settings as these are using a physically correct model. So making the moon extremely large will in return cause the lighting from said moon to be a lot brighter compared to a realistically sized moon.</p>
+<p>The moons lighting is controlled in the same was as the sun position. Meaning that it is simply possessing the engines native direction light. This means however that multiple moons in a scene are unable to have separate directional lights. Therefore we take the direction of the brightest moon within the scene. And take an average of all of the moon colors to determine the light color from all the moons to attempt to simulate all of the moons having an influence on the outcome.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="skytutorial.html" class="btn btn-neutral float-left" title="Sky Tutorial" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="skyvariables.html" class="btn btn-neutral float-right" title="Variables" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2007-2023, Simul Software Ltd.</p>
+  </div> 
+
+</footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+<div class="overlay" style="display: none;">
+    <img class="fullsize" alt="fullscreen image overlay" src="data:,">
+</div>
+</body>
+</html>
