@@ -144,14 +144,175 @@
              
   <section id="sky-keyframe">
 <h1>Sky Keyframe<a class="headerlink" href="#sky-keyframe" title="Permalink to this heading">¶</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenstruct: Cannot find class “simul::sky::SkyKeyframe” in doxygen xml output for project “Simul” from directory: D:/Jarvis/Documentation/simulVersion/4.3/build/Docs/doxygen/xml</p>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky11SkyKeyframeE">
+<span id="_CPPv3N5simul3sky11SkyKeyframeE"></span><span id="_CPPv2N5simul3sky11SkyKeyframeE"></span><span id="simul::sky::SkyKeyframe"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SkyKeyframe</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">BaseKeyframe</span></span><br /></dt>
+<dd><p>The keyframe structure for <a class="reference internal" href="skykeyframer.html#classsimul_1_1sky_1_1_sky_keyframer"><span class="std std-ref">simul::sky::SkyKeyframer</span></a>. </p>
+<p>The properties of any sky keyframe can be changed at any time. However, only HazeEccentricity can be changed for an in-use keyframe without triggering a recalculation of the colour tables. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky11SkyKeyframe4SaveER6Output">
+<span id="_CPPv3NK5simul3sky11SkyKeyframe4SaveER6Output"></span><span id="_CPPv2NK5simul3sky11SkyKeyframe4SaveER6Output"></span><span id="simul::sky::SkyKeyframe::Save__OutputRC"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1a6f08c4d2624031d24f031becb53832a5"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Save</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">Output</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">os</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky11SkyKeyframe4SaveER6Output" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Save this keyframe’s values to the stream. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky11SkyKeyframe4LoadER5InputPN5simul4base15MemoryInterfaceE">
+<span id="_CPPv3N5simul3sky11SkyKeyframe4LoadER5InputPN5simul4base15MemoryInterfaceE"></span><span id="_CPPv2N5simul3sky11SkyKeyframe4LoadER5InputPN5simul4base15MemoryInterfaceE"></span><span id="simul::sky::SkyKeyframe::Load__InputR.simul::base::MemoryInterfaceP"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1a0bb84f40962187af9274fd4caa29b31a"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Load</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">Input</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">is</span></span>, <span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">base</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">MemoryInterface</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">memoryInterface</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul3sky11SkyKeyframe4LoadER5InputPN5simul4base15MemoryInterfaceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Load this keyframe’s values from the stream. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky11SkyKeyframe10SaveToTextERN13crossplatform10TextOutputE">
+<span id="_CPPv3NK5simul3sky11SkyKeyframe10SaveToTextERN13crossplatform10TextOutputE"></span><span id="_CPPv2NK5simul3sky11SkyKeyframe10SaveToTextERN13crossplatform10TextOutputE"></span><span id="simul::sky::SkyKeyframe::SaveToText__crossplatform::TextOutputRC"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1a992e206b168ec60c9bc74c9d8de10079"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SaveToText</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">TextOutput</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">os</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky11SkyKeyframe10SaveToTextERN13crossplatform10TextOutputE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Save this keyframe’s values to textual output. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky11SkyKeyframe12LoadFromTextERN13crossplatform9TextInputE">
+<span id="_CPPv3N5simul3sky11SkyKeyframe12LoadFromTextERN13crossplatform9TextInputE"></span><span id="_CPPv2N5simul3sky11SkyKeyframe12LoadFromTextERN13crossplatform9TextInputE"></span><span id="simul::sky::SkyKeyframe::LoadFromText__crossplatform::TextInputR"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1ac75fcf86a7bd4643037ebde44c22dc2f"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LoadFromText</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">TextInput</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">is</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul3sky11SkyKeyframe12LoadFromTextERN13crossplatform9TextInputE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Load from a textual input. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky11SkyKeyframe8HasFloatEPKc">
+<span id="_CPPv3NK5simul3sky11SkyKeyframe8HasFloatEPKc"></span><span id="_CPPv2NK5simul3sky11SkyKeyframe8HasFloatEPKc"></span><span id="simul::sky::SkyKeyframe::HasFloat__cCPC"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1a5b7586defbb301f2e007d177eb15c028"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">HasFloat</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky11SkyKeyframe8HasFloatEPKc" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Return true if the keyframe has a float value with the given, case-insensitive, name; return false otherwise. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky11SkyKeyframe8GetFloatEPKc">
+<span id="_CPPv3NK5simul3sky11SkyKeyframe8GetFloatEPKc"></span><span id="_CPPv2NK5simul3sky11SkyKeyframe8GetFloatEPKc"></span><span id="simul::sky::SkyKeyframe::GetFloat__cCPC"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1a043375a632cd9048c04187a6009da647"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetFloat</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky11SkyKeyframe8GetFloatEPKc" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Return the float value with the given, case-insensitive, name. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky11SkyKeyframe8SetFloatEPKcf">
+<span id="_CPPv3N5simul3sky11SkyKeyframe8SetFloatEPKcf"></span><span id="_CPPv2N5simul3sky11SkyKeyframe8SetFloatEPKcf"></span><span id="simul::sky::SkyKeyframe::SetFloat__cCP.float"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1a5442073fb1c5c510c9ae7c827428f6f5"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetFloat</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">val</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul3sky11SkyKeyframe8SetFloatEPKcf" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set the float value with the given, case-insensitive, name. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky11SkyKeyframe6HasIntEPKc">
+<span id="_CPPv3NK5simul3sky11SkyKeyframe6HasIntEPKc"></span><span id="_CPPv2NK5simul3sky11SkyKeyframe6HasIntEPKc"></span><span id="simul::sky::SkyKeyframe::HasInt__cCPC"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1a2d020930b6abada93b2c64ab7845c70b"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">HasInt</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky11SkyKeyframe6HasIntEPKc" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Return true if the keyframe has an int value with the given, case-insensitive, name; return false otherwise. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky11SkyKeyframe6GetIntEPKc">
+<span id="_CPPv3NK5simul3sky11SkyKeyframe6GetIntEPKc"></span><span id="_CPPv2NK5simul3sky11SkyKeyframe6GetIntEPKc"></span><span id="simul::sky::SkyKeyframe::GetInt__cCPC"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1aee945850a261a9c035c09bc94aa9e206"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetInt</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky11SkyKeyframe6GetIntEPKc" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Return the integer value with the given, case-insensitive, name. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky11SkyKeyframe6SetIntEPKci">
+<span id="_CPPv3N5simul3sky11SkyKeyframe6SetIntEPKci"></span><span id="_CPPv2N5simul3sky11SkyKeyframe6SetIntEPKci"></span><span id="simul::sky::SkyKeyframe::SetInt__cCP.i"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1a6386f39b2c4ece2255fe456d8cad9129"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetInt</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">val</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul3sky11SkyKeyframe6SetIntEPKci" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set the integer value with the given, case-insensitive, name. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky11SkyKeyframe20GetTransientChecksumEv">
+<span id="_CPPv3NK5simul3sky11SkyKeyframe20GetTransientChecksumEv"></span><span id="_CPPv2NK5simul3sky11SkyKeyframe20GetTransientChecksumEv"></span><span id="simul::sky::SkyKeyframe::GetTransientChecksumC"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1ae73c0a6f3ac36e74bf51bf4c7907fb03"></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetTransientChecksum</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky11SkyKeyframe20GetTransientChecksumEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Checksum including values not needed for GPU recalculation. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky11SkyKeyframe9GetColourEPKc">
+<span id="_CPPv3NK5simul3sky11SkyKeyframe9GetColourEPKc"></span><span id="_CPPv2NK5simul3sky11SkyKeyframe9GetColourEPKc"></span><span id="simul::sky::SkyKeyframe::GetColour__cCPC"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1a172419d0059676fdcaf13ef084bf2c1c"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">float4</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetColour</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky11SkyKeyframe9GetColourEPKc" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Return the colour value with the given, case-insensitive, name. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky11SkyKeyframe9SetColourEPKc6float4">
+<span id="_CPPv3N5simul3sky11SkyKeyframe9SetColourEPKc6float4"></span><span id="_CPPv2N5simul3sky11SkyKeyframe9SetColourEPKc6float4"></span><span id="simul::sky::SkyKeyframe::SetColour__cCP.float4"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1ad79da2159d64b0120b1bde9133a7fe7f"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetColour</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span>, <span class="n"><span class="pre">float4</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">val</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul3sky11SkyKeyframe9SetColourEPKc6float4" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set the colour value with the given, case-insensitive, name. </p>
+</dd></dl>
+
 </div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenstruct: Cannot find class “simul::sky::KeyframeInUseState” in doxygen xml output for project “Simul” from directory: D:/Jarvis/Documentation/simulVersion/4.3/build/Docs/doxygen/xml</p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky11SkyKeyframe7daytimeE">
+<span id="_CPPv3N5simul3sky11SkyKeyframe7daytimeE"></span><span id="_CPPv2N5simul3sky11SkyKeyframe7daytimeE"></span><span id="simul::sky::SkyKeyframe::daytime__float"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1aa2e71e97bce93e87dbe95180c23abe46"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">daytime</span></span></span><br /></dt>
+<dd><p>The time this keyframe represents, in a floating-point number of days from the starting midnight of the sequence. If simul::sky::SkyKeyframer::SetLinkKeyframeTimeAndDaytime is true, this is not used. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky11SkyKeyframe3MieE">
+<span id="_CPPv3N5simul3sky11SkyKeyframe3MieE"></span><span id="_CPPv2N5simul3sky11SkyKeyframe3MieE"></span><span id="simul::sky::SkyKeyframe::Mie__float4"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1a4aea4d3416012349f0358ba4799a51d4"></span><span class="k"><span class="pre">mutable</span></span><span class="w"> </span><span class="n"><span class="pre">float4</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Mie</span></span></span><br /></dt>
+<dd><p>The Mie scattering coefficients (x=red,y=green,z=blue). Mutable because of AutoMie. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky11SkyKeyframe4HazeE">
+<span id="_CPPv3N5simul3sky11SkyKeyframe4HazeE"></span><span id="_CPPv2N5simul3sky11SkyKeyframe4HazeE"></span><span id="simul::sky::SkyKeyframe::Haze__float"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1a419234a7ced35b650c4d141a53e0063f"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Haze</span></span></span><br /></dt>
+<dd><p>The amount of haze, mist or fog. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky11SkyKeyframe10HazeBaseKmE">
+<span id="_CPPv3N5simul3sky11SkyKeyframe10HazeBaseKmE"></span><span id="_CPPv2N5simul3sky11SkyKeyframe10HazeBaseKmE"></span><span id="simul::sky::SkyKeyframe::HazeBaseKm__float"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1aa88b3f13c9ab9cd2cce0feaa6024be1a"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">HazeBaseKm</span></span></span><br /></dt>
+<dd><p>The base altitude, above which haze starts to decrease in density. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky11SkyKeyframe11HazeScaleKmE">
+<span id="_CPPv3N5simul3sky11SkyKeyframe11HazeScaleKmE"></span><span id="_CPPv2N5simul3sky11SkyKeyframe11HazeScaleKmE"></span><span id="simul::sky::SkyKeyframe::HazeScaleKm__float"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1a0fe6944ca955e386b04fca4c258e392d"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">HazeScaleKm</span></span></span><br /></dt>
+<dd><p>The vertical scale over which haze reduces with altitude. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky11SkyKeyframe16HazeEccentricityE">
+<span id="_CPPv3N5simul3sky11SkyKeyframe16HazeEccentricityE"></span><span id="_CPPv2N5simul3sky11SkyKeyframe16HazeEccentricityE"></span><span id="simul::sky::SkyKeyframe::HazeEccentricity__float"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1ad38f511128b7c2de3304ade39cb5b6be"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">HazeEccentricity</span></span></span><br /></dt>
+<dd><p>The anisotropy of Mie scattering. Can be changed without recalculating tables. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky11SkyKeyframe9GroundFogE">
+<span id="_CPPv3N5simul3sky11SkyKeyframe9GroundFogE"></span><span id="_CPPv2N5simul3sky11SkyKeyframe9GroundFogE"></span><span id="simul::sky::SkyKeyframe::GroundFog__float"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1a897d0ecbc478572ff6c30070abcae75b"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GroundFog</span></span></span><br /></dt>
+<dd><p>Thick ground fog. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky11SkyKeyframe12FogCeilingKmE">
+<span id="_CPPv3N5simul3sky11SkyKeyframe12FogCeilingKmE"></span><span id="_CPPv2N5simul3sky11SkyKeyframe12FogCeilingKmE"></span><span id="simul::sky::SkyKeyframe::FogCeilingKm__float"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1a51e1d14766062cd968f10b23c65025b4"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">FogCeilingKm</span></span></span><br /></dt>
+<dd><p>Upper limit of ground fog. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky11SkyKeyframe20SeaLevelTemperatureKE">
+<span id="_CPPv3N5simul3sky11SkyKeyframe20SeaLevelTemperatureKE"></span><span id="_CPPv2N5simul3sky11SkyKeyframe20SeaLevelTemperatureKE"></span><span id="simul::sky::SkyKeyframe::SeaLevelTemperatureK__float"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1add48aae5d32ba2f52a7c0be072cb1eac"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SeaLevelTemperatureK</span></span></span><br /></dt>
+<dd><p>Temperature at sealevel, in kelvins - mainly relevant to infra-red. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky11SkyKeyframe14StoreAsColoursE">
+<span id="_CPPv3N5simul3sky11SkyKeyframe14StoreAsColoursE"></span><span id="_CPPv2N5simul3sky11SkyKeyframe14StoreAsColoursE"></span><span id="simul::sky::SkyKeyframe::StoreAsColours__float"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1a4390fc48442fa98529b7cd0ec7367b72"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">StoreAsColours</span></span></span><br /></dt>
+<dd><p>If true, the keyframe is stored as a colour table, rather than generating its colours from its properties. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky11SkyKeyframe7AutoMieE">
+<span id="_CPPv3N5simul3sky11SkyKeyframe7AutoMieE"></span><span id="_CPPv2N5simul3sky11SkyKeyframe7AutoMieE"></span><span id="simul::sky::SkyKeyframe::AutoMie__b"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1aa9b008521ddd014a04a11f68e573f728"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">AutoMie</span></span></span><br /></dt>
+<dd><p>Whether to recalculate the Mie coefficients based on the haze at this keyframe. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky11SkyKeyframe20automaticSunPositionE">
+<span id="_CPPv3N5simul3sky11SkyKeyframe20automaticSunPositionE"></span><span id="_CPPv2N5simul3sky11SkyKeyframe20automaticSunPositionE"></span><span id="simul::sky::SkyKeyframe::automaticSunPosition__b"></span><span class="target" id="structsimul_1_1sky_1_1_sky_keyframe_1a43c06a2a0139666abae0a6a595535345"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">automaticSunPosition</span></span></span><br /></dt>
+<dd><p>Whether to calculate the sun position from the date and time. </p>
+</dd></dl>
+
 </div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky18KeyframeInUseStateE">
+<span id="_CPPv3N5simul3sky18KeyframeInUseStateE"></span><span id="_CPPv2N5simul3sky18KeyframeInUseStateE"></span><span id="simul::sky::KeyframeInUseState"></span><span class="target" id="structsimul_1_1sky_1_1_keyframe_in_use_state"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">KeyframeInUseState</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky18KeyframeInUseStateE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>There are three keyframes in use. Two are complete, one is in construction. The keyframe values are interpolated from the true, control keyframes. </p>
+</dd></dl>
+
 </section>
 
 

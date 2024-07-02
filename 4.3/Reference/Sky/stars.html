@@ -144,10 +144,51 @@
              
   <section id="stars">
 <h1>Stars<a class="headerlink" href="#stars" title="Permalink to this heading">¶</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find class “simul::sky::Stars” in doxygen xml output for project “Simul” from directory: D:/Jarvis/Documentation/simulVersion/4.3/build/Docs/doxygen/xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky5StarsE">
+<span id="_CPPv3N5simul3sky5StarsE"></span><span id="_CPPv2N5simul3sky5StarsE"></span><span id="simul::sky::Stars"></span><span class="target" id="classsimul_1_1sky_1_1_stars"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Stars</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky5StarsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A class that stores star positions by declination, ascension and magnitude. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky5Stars12UseUrsaMajorEf">
+<span id="_CPPv3N5simul3sky5Stars12UseUrsaMajorEf"></span><span id="_CPPv2N5simul3sky5Stars12UseUrsaMajorEf"></span><span id="simul::sky::Stars::UseUrsaMajor__float"></span><span class="target" id="classsimul_1_1sky_1_1_stars_1abf0147c28edbbb448b95fa970e0277be"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">UseUrsaMajor</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">max_magnitude</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul3sky5Stars12UseUrsaMajorEf" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Initialize the stars with only Ursa Major as seen from Earth. Useful for testing ephemerides. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky5Stars15UseDefaultStarsEv">
+<span id="_CPPv3N5simul3sky5Stars15UseDefaultStarsEv"></span><span id="_CPPv2N5simul3sky5Stars15UseDefaultStarsEv"></span><span id="simul::sky::Stars::UseDefaultStars"></span><span class="target" id="classsimul_1_1sky_1_1_stars_1ad70899c071956b7207e29a7d8db7c8eb"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">UseDefaultStars</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul3sky5Stars15UseDefaultStarsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Initialize the stars with the default stars - the stars seen from Earth. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky5Stars11GetNumStarsEv">
+<span id="_CPPv3NK5simul3sky5Stars11GetNumStarsEv"></span><span id="_CPPv2NK5simul3sky5Stars11GetNumStarsEv"></span><span id="simul::sky::Stars::GetNumStarsC"></span><span class="target" id="classsimul_1_1sky_1_1_stars_1a56896d31a2100bff5a953ec2b735d3fb"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetNumStars</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky5Stars11GetNumStarsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the total number of stars. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky5Stars14GetVisibleStarEi">
+<span id="_CPPv3NK5simul3sky5Stars14GetVisibleStarEi"></span><span id="_CPPv2NK5simul3sky5Stars14GetVisibleStarEi"></span><span id="simul::sky::Stars::GetVisibleStar__iC"></span><span class="target" id="classsimul_1_1sky_1_1_stars_1a72db4078cf809c70b694248ab20b7e1c"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Star</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">GetVisibleStar</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">i</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky5Stars14GetVisibleStarEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get a star from the currently visible list. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky5Stars18GetNumVisibleStarsEv">
+<span id="_CPPv3NK5simul3sky5Stars18GetNumVisibleStarsEv"></span><span id="_CPPv2NK5simul3sky5Stars18GetNumVisibleStarsEv"></span><span id="simul::sky::Stars::GetNumVisibleStarsC"></span><span class="target" id="classsimul_1_1sky_1_1_stars_1a1ea1c58e8a21012815be5a5baba072e9"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetNumVisibleStars</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky5Stars18GetNumVisibleStarsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the total number of visible stars. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky5Stars7GetStarEi">
+<span id="_CPPv3NK5simul3sky5Stars7GetStarEi"></span><span id="_CPPv2NK5simul3sky5Stars7GetStarEi"></span><span id="simul::sky::Stars::GetStar__iC"></span><span class="target" id="classsimul_1_1sky_1_1_stars_1a90c9e1017197d578e415bbdc8672b6f4"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Star</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">GetStar</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">i</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky5Stars7GetStarEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get a star from the complete list. </p>
+</dd></dl>
+
 </div>
+</dd></dl>
+
 </section>
 
 

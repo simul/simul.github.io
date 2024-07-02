@@ -144,10 +144,85 @@
              
   <section id="base-atmospherics-renderer">
 <h1>Base Atmospherics Renderer<a class="headerlink" href="#base-atmospherics-renderer" title="Permalink to this heading">¶</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find class “simul::sky::BaseAtmosphericsRenderer” in doxygen xml output for project “Simul” from directory: D:/Jarvis/Documentation/simulVersion/4.3/build/Docs/doxygen/xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky24BaseAtmosphericsRendererE">
+<span id="_CPPv3N5simul3sky24BaseAtmosphericsRendererE"></span><span id="_CPPv2N5simul3sky24BaseAtmosphericsRendererE"></span><span id="simul::sky::BaseAtmosphericsRenderer"></span><span class="target" id="classsimul_1_1sky_1_1_base_atmospherics_renderer"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BaseAtmosphericsRenderer</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky24BaseAtmosphericsRendererE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The graphics API-independent base class for atmospherics renderers, which draw distance fades, aerial perspective, fog and so on. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="classsimul_1_1sky_1_1_base_atmospherics_renderer_1a8baf6a0c1061776a3a3d4198dee5f274"></span><span class="sig-name descname"><span class="pre">virtual</span> <span class="pre">META_BeginProperties</span> <span class="pre">Whether</span> <span class="pre">to</span> <span class="pre">use</span> <span class="pre">infrared</span> <span class="pre">rendering</span> <span class="pre">Scattering</span> <span class="pre">and</span> <span class="pre">distance</span> <span class="pre">grid</span> <span class="pre">size</span> <span class="pre">virtual</span> <span class="pre">META_RangeProperty(int,</span> <span class="pre">MaxAmortization,</span> <span class="pre">4,</span> <span class="pre">1,</span> <span class="pre">8,&quot;Maximum</span> <span class="pre">amortization</span> <span class="pre">of</span> <span class="pre">scattering</span> <span class="pre">volume</span> <span class="pre">generation.&quot;)</span> <span class="pre">META_EndProperties</span> <span class="pre">virtual</span> <span class="pre">void</span> <span class="pre">RestoreDeviceObjects(crossplatform</span> <span class="pre">void</span> <span class="pre">InvalidateDeviceObjects</span> <span class="pre">()</span></span></dt>
+<dd><p>Platform-dependent function called when initializing the atmospherics renderer. </p>
+<p>Platform-dependent function called when uninitializing the atmospherics renderer. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky24BaseAtmosphericsRenderer15PreRenderUpdateERN13crossplatform21GraphicsDeviceContextE">
+<span id="_CPPv3N5simul3sky24BaseAtmosphericsRenderer15PreRenderUpdateERN13crossplatform21GraphicsDeviceContextE"></span><span id="_CPPv2N5simul3sky24BaseAtmosphericsRenderer15PreRenderUpdateERN13crossplatform21GraphicsDeviceContextE"></span><span id="simul::sky::BaseAtmosphericsRenderer::PreRenderUpdate__crossplatform::GraphicsDeviceContextR"></span><span class="target" id="classsimul_1_1sky_1_1_base_atmospherics_renderer_1a822934ddee1be9a8a4834d73de1168e0"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PreRenderUpdate</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">GraphicsDeviceContext</span></span><span class="p"><span class="pre">&amp;</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul3sky24BaseAtmosphericsRenderer15PreRenderUpdateERN13crossplatform21GraphicsDeviceContextE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Once per-frame update. Do this before any rendering each frame. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky24BaseAtmosphericsRenderer22SetIlluminationTextureEPN13crossplatform7TextureE">
+<span id="_CPPv3N5simul3sky24BaseAtmosphericsRenderer22SetIlluminationTextureEPN13crossplatform7TextureE"></span><span id="_CPPv2N5simul3sky24BaseAtmosphericsRenderer22SetIlluminationTextureEPN13crossplatform7TextureE"></span><span id="simul::sky::BaseAtmosphericsRenderer::SetIlluminationTexture__crossplatform::TextureP"></span><span class="target" id="classsimul_1_1sky_1_1_base_atmospherics_renderer_1aedf6fb9e1d4da8c3e483db1de222f4b7"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetIlluminationTexture</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Texture</span></span><span class="p"><span class="pre">*</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul3sky24BaseAtmosphericsRenderer22SetIlluminationTextureEPN13crossplatform7TextureE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set the texture defining the extent of illuminated inscatter. R=near, G=far, B and A unused. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky24BaseAtmosphericsRenderer19GetScatteringVolumeEi">
+<span id="_CPPv3N5simul3sky24BaseAtmosphericsRenderer19GetScatteringVolumeEi"></span><span id="_CPPv2N5simul3sky24BaseAtmosphericsRenderer19GetScatteringVolumeEi"></span><span id="simul::sky::BaseAtmosphericsRenderer::GetScatteringVolume__i"></span><span class="target" id="classsimul_1_1sky_1_1_base_atmospherics_renderer_1ae95274ae9bd9f04642ab0f4142a3427b"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5simul3sky16ScatteringVolumeE" title="simul::sky::ScatteringVolume"><span class="n"><span class="pre">ScatteringVolume</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">GetScatteringVolume</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">view_id</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul3sky24BaseAtmosphericsRenderer19GetScatteringVolumeEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the per-frame 3D volume scattering texture for the given view id. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky24BaseAtmosphericsRenderer18SetCloudShadowDataERK15CloudShadowData">
+<span id="_CPPv3N5simul3sky24BaseAtmosphericsRenderer18SetCloudShadowDataERK15CloudShadowData"></span><span id="_CPPv2N5simul3sky24BaseAtmosphericsRenderer18SetCloudShadowDataERK15CloudShadowData"></span><span id="simul::sky::BaseAtmosphericsRenderer::SetCloudShadowData__CloudShadowDataCR"></span><span class="target" id="classsimul_1_1sky_1_1_base_atmospherics_renderer_1ae42c72efa5e36304840df7c4ee40b8aa"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetCloudShadowData</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">CloudShadowData</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">cloudShadowData_</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul3sky24BaseAtmosphericsRenderer18SetCloudShadowDataERK15CloudShadowData" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set the data to be used for light scattering. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky24BaseAtmosphericsRenderer16RecompileShadersEv">
+<span id="_CPPv3N5simul3sky24BaseAtmosphericsRenderer16RecompileShadersEv"></span><span id="_CPPv2N5simul3sky24BaseAtmosphericsRenderer16RecompileShadersEv"></span><span id="simul::sky::BaseAtmosphericsRenderer::RecompileShaders"></span><span class="target" id="classsimul_1_1sky_1_1_base_atmospherics_renderer_1a04b61ee1d0395ce6e50323780647d587"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RecompileShaders</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul3sky24BaseAtmosphericsRenderer16RecompileShadersEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Platform-dependent function to reload the shaders - only use this for debug purposes. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky24BaseAtmosphericsRenderer17SetCameraPositionEPKf">
+<span id="_CPPv3N5simul3sky24BaseAtmosphericsRenderer17SetCameraPositionEPKf"></span><span id="_CPPv2N5simul3sky24BaseAtmosphericsRenderer17SetCameraPositionEPKf"></span><span id="simul::sky::BaseAtmosphericsRenderer::SetCameraPosition__floatCP"></span><span class="target" id="classsimul_1_1sky_1_1_base_atmospherics_renderer_1ac65708d6af154e38d92580b3321c69be"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetCameraPosition</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">pos</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul3sky24BaseAtmosphericsRenderer17SetCameraPositionEPKf" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the current location of the camera. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky24BaseAtmosphericsRenderer15SetSkyInterfaceEPN5simul3sky12SkyKeyframerE">
+<span id="_CPPv3N5simul3sky24BaseAtmosphericsRenderer15SetSkyInterfaceEPN5simul3sky12SkyKeyframerE"></span><span id="_CPPv2N5simul3sky24BaseAtmosphericsRenderer15SetSkyInterfaceEPN5simul3sky12SkyKeyframerE"></span><span id="simul::sky::BaseAtmosphericsRenderer::SetSkyInterface__simul::sky::SkyKeyframerP"></span><span class="target" id="classsimul_1_1sky_1_1_base_atmospherics_renderer_1a9d89c15cec1a36001374156157592617"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetSkyInterface</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="skykeyframer.html#_CPPv4N5simul3sky12SkyKeyframerE" title="simul::sky::SkyKeyframer"><span class="n"><span class="pre">SkyKeyframer</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">si</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul3sky24BaseAtmosphericsRenderer15SetSkyInterfaceEPN5simul3sky12SkyKeyframerE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set the sky and atmospherics interface to allow the renderer to use the correct lighting values. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky24BaseAtmosphericsRenderer14SetFogHeightKmEf">
+<span id="_CPPv3N5simul3sky24BaseAtmosphericsRenderer14SetFogHeightKmEf"></span><span id="_CPPv2N5simul3sky24BaseAtmosphericsRenderer14SetFogHeightKmEf"></span><span id="simul::sky::BaseAtmosphericsRenderer::SetFogHeightKm__float"></span><span class="target" id="classsimul_1_1sky_1_1_base_atmospherics_renderer_1a9d869dfb58ba30f3aaa4b0d574d4b829"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetFogHeightKm</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">h_km</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul3sky24BaseAtmosphericsRenderer14SetFogHeightKmEf" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set the height of the fog. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky24BaseAtmosphericsRenderer13SetFogDensityEf">
+<span id="_CPPv3N5simul3sky24BaseAtmosphericsRenderer13SetFogDensityEf"></span><span id="_CPPv2N5simul3sky24BaseAtmosphericsRenderer13SetFogDensityEf"></span><span id="simul::sky::BaseAtmosphericsRenderer::SetFogDensity__float"></span><span class="target" id="classsimul_1_1sky_1_1_base_atmospherics_renderer_1af391f27aac143d30b7d2e27a27710480"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetFogDensity</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">d</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul3sky24BaseAtmosphericsRenderer13SetFogDensityEf" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set the density of the fog. </p>
+</dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky24BaseAtmosphericsRenderer21EnsureEffectsAreBuiltEPN13crossplatform14RenderPlatformE">
+<span id="_CPPv3N5simul3sky24BaseAtmosphericsRenderer21EnsureEffectsAreBuiltEPN13crossplatform14RenderPlatformE"></span><span id="_CPPv2N5simul3sky24BaseAtmosphericsRenderer21EnsureEffectsAreBuiltEPN13crossplatform14RenderPlatformE"></span><span id="simul::sky::BaseAtmosphericsRenderer::EnsureEffectsAreBuilt__crossplatform::RenderPlatformP"></span><span class="target" id="classsimul_1_1sky_1_1_base_atmospherics_renderer_1af73b6769cedb44d2c3bea418d8d70e0e"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EnsureEffectsAreBuilt</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">RenderPlatform</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">r</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul3sky24BaseAtmosphericsRenderer21EnsureEffectsAreBuiltEPN13crossplatform14RenderPlatformE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Check that all shaders have been correctly compiled. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4N5simul3sky16ScatteringVolumeE">
 <span id="_CPPv3N5simul3sky16ScatteringVolumeE"></span><span id="_CPPv2N5simul3sky16ScatteringVolumeE"></span><span id="simul::sky::ScatteringVolume"></span><span class="target" id="structsimul_1_1sky_1_1_scattering_volume"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ScatteringVolume</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky16ScatteringVolumeE" title="Permalink to this definition">¶</a><br /></dt>
