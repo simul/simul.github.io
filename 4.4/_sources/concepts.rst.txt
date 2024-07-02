@@ -11,7 +11,7 @@ trueSKY creates and updates a "Cloud Window", a 3D volume of cloud data which oc
 
 There are three frames of reference to understand.
 The *WGS84 (ECEF) Frame* (also sometimes called EPSG:4326) is a standard frame of reference for geographic applications
-(see `en.wikipedia.org/wiki/World_Geodetic_System#WGS_84<https://en.wikipedia.org/wiki/World_Geodetic_System#WGS_84>`_
+(see `en.wikipedia.org/wiki/World_Geodetic_System#WGS_84 <https://en.wikipedia.org/wiki/World_Geodetic_System#WGS_84>`_
 or en.wikipedia.org/wiki/Geographic_coordinate_conversion <https://en.wikipedia.org/wiki/Geographic_coordinate_conversion>`_ ).
 
 In this frame:

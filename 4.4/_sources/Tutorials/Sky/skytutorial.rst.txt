@@ -57,7 +57,7 @@ This works just as well with linked as with unlinked times.
 
 
 Manual Sun and Moon Position
--------------------------
+------------------------------
 
 You can manually set the sun and moon's position at a given time, to get the exact angle of lighting you are after. To do this, you need to access your sky keyframe within the sequencer, then under the "sun and moon" header, untick the Automatic Sun Position checkbox (or the Automatic Moon Position checkbox).
 
@@ -70,7 +70,7 @@ Once this is done you can use the slider below the checkbox to assign the height
 
 
 Moon Texture (Legacy)
----------------
+-------------------------
 
 You can apply a png to the moon to make it whatever object you like, and will go through phases based on the sun's position. This is a legacy setting - and only functions within the 4.1a. Documentation for 4.2a's multimoon setup can be found :doc:`here <skymoons>`.
 

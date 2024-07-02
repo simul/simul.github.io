@@ -57,7 +57,7 @@ Variable 										Definition																															Value
 ==============================================  ==================================================================================================================================  =============
 Light Wavelength (R,G,B)						Wavelength of the light from the sun.																								0 to 1000
 Irradiance										Irradiance of the Sun, in Watts/m2/nm. XYZ=RGB.																						0 to 50
-Diameter										Size of sun’s radius in degrees.																									0.0 to 3600.0
+Diameter										Size of sun`s radius in degrees.																									0.0 to 3600.0
 Link Keyframe time and daytime					See :doc:`Link Keyframe Time <skytutorial>`																							Bool
 Time Zone										Time Zone based on Greenwich Mean Time (GMT). 																						Between -12.0 and 12.0
 Start Date						For calculating position of sun/moon. Where 01/01/2000 = 0 , -1 = 31/12/1999, 01/01/2016 = 5844(format DD:MM:YYYY).					-100000 to 100000

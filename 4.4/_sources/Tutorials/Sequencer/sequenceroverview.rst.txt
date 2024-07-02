@@ -42,6 +42,7 @@ The details panel contains information about the currently selected keyframe or 
 To edit a keyframe, first select it with left click. This will bring up all the keyframes variables in the details column. 
 
 .. image:: ../../../Help/images/unreal/details.png
+
 *This is the details panel of a selected Cloud Keyframe*
 
 Now you can see all the variables that can be altered within the Sequencer. You can either drag the bar to alter the value, or edit the values by typing. All of the values are clamped to certain ranges. Plus, each value can be returned to its default position with the yellow arrow to the right of the value. This arrow will only appear of the value has been changed from it's default state.
@@ -69,6 +70,7 @@ Double clicking will enter Volume Edit mode, where you can individually move and
 If you select a keyframe, the layer width is represented by a blue box, whereas a blue circle represents the precipitation radius. To find out more about how to use the Cloud Window to control precipitation, please view this :doc:`tutorial <../Precipitation/precipitationtutorial>`.
 
 .. image:: ../../../Help/images/unreal/WorldGrid.png
+
 *You can see the cloud formations from the grey box, the current cloud layers origin and width from the blue box, and finally the precipitation radius with the blue circle.*
 
 

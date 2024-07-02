@@ -7,7 +7,7 @@ Water Tutorial
 |
 
 Adding water your scene
------------------
+---------------------------
 Implementing volumetric water into your scene is quick and easy thanks to trueSKY! The first thing you need to do is make sure you have initialized trueSKY in your scene, so you have a trueSKY Actor/Object in your scene. Then, enable "Render Water" on your trueSKY Object. This option decides if we should render any water at all, while each water instance has their own render option.
 
 Next, we need to add a trueSKY water instance. 
@@ -28,7 +28,7 @@ If you are planning to create a large body of water / an ocean, you can check th
 
 
 Bounded Water Volume
------------------
+----------------------
 Used for filling in ponds, lakes, fountains and other small water features, these come as cubes of water that can be scaled and rotated within your scene to your specifications.
 
 .. image:: ../../../Help/images/BoundedExample.png
@@ -37,7 +37,7 @@ Please note that the default bounded objects are designed for quite small bodies
 
 
 Bounded Water Volume - Custom meshes
------------------
+-------------------------------------
 
 **Coming soon with trueSKY 4.3!**
 

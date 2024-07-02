@@ -19,9 +19,7 @@
         <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" >
-    <link rel="search" title="Search" href="../../search.html" >
-    <link rel="next" title="Cloud Rendering Options" href="cloudrenderingoptions.html" >
-    <link rel="prev" title="Cellular Cloud Node" href="cellularcloudnode.html" > 
+    <link rel="search" title="Search" href="../../search.html" > 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -60,41 +58,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../../legalindex.html">trueSKY Licences</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Reference:</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../../API/apiindex.html">API</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../referenceindex.html">Reference</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../base.html">Base</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="../clouds.html">Clouds</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="trueskyrenderer.html">True Sky Renderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cloudrenderer.html">Cloud Renderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cloudlighting.html">Cloud Lighting</a></li>
-<li class="toctree-l3"><a class="reference internal" href="weatherrenderer.html">Weather Renderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="lightningrenderer.html">Lightning Renderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="gpucloudgenerator.html">Base GPU Cloud Generator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="precipitationrenderer.html">Precipitation Renderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="environment.html">Environment</a></li>
-<li class="toctree-l3"><a class="reference internal" href="skylight.html">Skylight</a></li>
-<li class="toctree-l3"><a class="reference internal" href="globalweatherrenderer.html">Global Weather Renderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="mixedresolutioncompositor.html">Mixed Resolution Compositor</a></li>
-<li class="toctree-l3"><a class="reference internal" href="tworesframebuffer.html">Two Res Frambuffer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cellularcloudgrid.html">Cellular Cloud Grid</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cellularcloudnode.html">Cellular Cloud Node</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Cloud Interface Classes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cloudrenderingoptions.html">Cloud Rendering Options</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cloudwindow.html">Cloud Window</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cloudwindoweditor.html">Cloud Window Editor</a></li>
-<li class="toctree-l3"><a class="reference internal" href="windowupdater.html">Window Updater</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cloudkeyframe.html">Cloud Keyframe</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cloudkeyframer.html">Cloud Keyframer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="storm.html">Storm</a></li>
-<li class="toctree-l3"><a class="reference internal" href="lightningrenderinterfacestructs.html">Lightning Render Interface Structs</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../sky.html">Sky</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../terrain.html">Terrain</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../plugin.html">Plugin</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../referenceindex.html">Reference</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../changelist.html">Changelist</a></li>
 </ul>
 
@@ -113,8 +79,6 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../referenceindex.html">Reference</a></li>
-          <li class="breadcrumb-item"><a href="../clouds.html">Clouds</a></li>
       <li class="breadcrumb-item active">Cloud Interface Classes</li>
       <li class="wy-breadcrumbs-aside">
         ﻿
@@ -158,27 +122,85 @@
              
   <section id="cloud-interface-classes">
 <h1>Cloud Interface Classes<a class="headerlink" href="#cloud-interface-classes" title="Permalink to this heading">¶</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find class “simul::clouds::CloudProperties” in doxygen xml output for project “Simul” from directory: D:/Jarvis/Documentation/simulVersion/4.4/build/Docs/doxygen/xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds15CloudPropertiesE">
+<span id="_CPPv3N5simul6clouds15CloudPropertiesE"></span><span id="_CPPv2N5simul6clouds15CloudPropertiesE"></span><span id="simul::clouds::CloudProperties"></span><span class="target" id="classsimul_1_1clouds_1_1_cloud_properties"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CloudProperties</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds15CloudPropertiesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A virtual interface that returns the keyframe-independent cloud properties. </p>
+<p>Subclassed by <a class="reference internal" href="cellularcloudgrid.html#classsimul_1_1clouds_1_1_cellular_cloud_grid"><span class="std std-ref">simul::clouds::CellularCloudGrid</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds15CloudProperties9GetOriginEN8platform4math7Vector3Eff">
+<span id="_CPPv3NK5simul6clouds15CloudProperties9GetOriginEN8platform4math7Vector3Eff"></span><span id="_CPPv2NK5simul6clouds15CloudProperties9GetOriginEN8platform4math7Vector3Eff"></span><span id="simul::clouds::CloudProperties::GetOrigin__platform::math::Vector3.float.floatC"></span><span class="target" id="classsimul_1_1clouds_1_1_cloud_properties_1a159a33fcd54ea9d8ab59c7203bb7925b"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">math</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetOrigin</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">math</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector3</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">cloud_base_z</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">w</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds15CloudProperties9GetOriginEN8platform4math7Vector3Eff" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>get the effective origin in world co-ordinates, including wind offsets: </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds15CloudProperties19GetGenerationNumberEv">
+<span id="_CPPv3NK5simul6clouds15CloudProperties19GetGenerationNumberEv"></span><span id="_CPPv2NK5simul6clouds15CloudProperties19GetGenerationNumberEv"></span><span id="simul::clouds::CloudProperties::GetGenerationNumberC"></span><span class="target" id="classsimul_1_1clouds_1_1_cloud_properties_1adf6a99b26212d2165e607c29545f2ad6"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetGenerationNumber</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds15CloudProperties19GetGenerationNumberEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A number that is changed every time the clouds are regenerated. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds15CloudProperties10GetExtentsERN8platform4math7Vector3ERN8platform4math7Vector3Efff">
+<span id="_CPPv3NK5simul6clouds15CloudProperties10GetExtentsERN8platform4math7Vector3ERN8platform4math7Vector3Efff"></span><span id="_CPPv2NK5simul6clouds15CloudProperties10GetExtentsERN8platform4math7Vector3ERN8platform4math7Vector3Efff"></span><span id="simul::clouds::CloudProperties::GetExtents__platform::math::Vector3R.platform::math::Vector3R.float.float.floatC"></span><span class="target" id="classsimul_1_1clouds_1_1_cloud_properties_1a7181312333f4b80bd9b138f911cf175b"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetExtents</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">math</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector3</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">X1</span></span>, <span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">math</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector3</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">X2</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">cloud_base_z</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">w</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">h</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds15CloudProperties10GetExtentsERN8platform4math7Vector3ERN8platform4math7Vector3Efff" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the physical extents of the cloud volume in the x, y and z directions. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds15CloudProperties30GetTransformToLightspaceMatrixEjRKN8platform4math7Vector3ERKN8platform4math7Vector3ERKN8platform4math7Vector3E">
+<span id="_CPPv3NK5simul6clouds15CloudProperties30GetTransformToLightspaceMatrixEjRKN8platform4math7Vector3ERKN8platform4math7Vector3ERKN8platform4math7Vector3E"></span><span id="_CPPv2NK5simul6clouds15CloudProperties30GetTransformToLightspaceMatrixEjRKN8platform4math7Vector3ERKN8platform4math7Vector3ERKN8platform4math7Vector3E"></span><span id="simul::clouds::CloudProperties::GetTransformToLightspaceMatrix__unsigned.platform::math::Vector3CR.platform::math::Vector3CR.platform::math::Vector3CRC"></span><span class="target" id="classsimul_1_1clouds_1_1_cloud_properties_1af23ae37c1d6651c6c138bc0603701c5d"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">GetTransformToLightspaceMatrix</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">axis</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">math</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector3</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">dir</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">math</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector3</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">orig</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">math</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector3</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">scales</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds15CloudProperties30GetTransformToLightspaceMatrixEjRKN8platform4math7Vector3ERKN8platform4math7Vector3ERKN8platform4math7Vector3E" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get a 4x4 matrix to transform from real space to lightspace. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds15CloudProperties40GetTransformLightspaceToCloudspaceMatrixEjRKN8platform4math7Vector3ERKN8platform4math7Vector3ERKN8platform4math7Vector3Efff">
+<span id="_CPPv3NK5simul6clouds15CloudProperties40GetTransformLightspaceToCloudspaceMatrixEjRKN8platform4math7Vector3ERKN8platform4math7Vector3ERKN8platform4math7Vector3Efff"></span><span id="_CPPv2NK5simul6clouds15CloudProperties40GetTransformLightspaceToCloudspaceMatrixEjRKN8platform4math7Vector3ERKN8platform4math7Vector3ERKN8platform4math7Vector3Efff"></span><span id="simul::clouds::CloudProperties::GetTransformLightspaceToCloudspaceMatrix__unsigned.platform::math::Vector3CR.platform::math::Vector3CR.platform::math::Vector3CR.float.float.floatC"></span><span class="target" id="classsimul_1_1clouds_1_1_cloud_properties_1a5a78b56b6c5074ef09ddaad0572ef07a"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">GetTransformLightspaceToCloudspaceMatrix</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">axis</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">math</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector3</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">dir</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">math</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector3</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">orig</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">math</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector3</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">scales</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">cloud_base_z</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">w</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">h</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds15CloudProperties40GetTransformLightspaceToCloudspaceMatrixEjRKN8platform4math7Vector3ERKN8platform4math7Vector3ERKN8platform4math7Vector3Efff" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get a 4x4 matrix to transform from lightspace to cloudspace. </p>
+</dd></dl>
+
 </div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find class “simul::clouds::CloudInterface” in doxygen xml output for project “Simul” from directory: D:/Jarvis/Documentation/simulVersion/4.4/build/Docs/doxygen/xml</p>
+</dd></dl>
+
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds14CloudInterfaceE">
+<span id="_CPPv3N5simul6clouds14CloudInterfaceE"></span><span id="_CPPv2N5simul6clouds14CloudInterfaceE"></span><span id="simul::clouds::CloudInterface"></span><span class="target" id="classsimul_1_1clouds_1_1_cloud_interface"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CloudInterface</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds14CloudInterfaceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The virtual interface for controlling and reading cloud data. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds14CloudInterface20GetOpticalPathLengthEfffRKN8platform4math7Vector3ERKN8platform4math7Vector3Effff">
+<span id="_CPPv3NK5simul6clouds14CloudInterface20GetOpticalPathLengthEfffRKN8platform4math7Vector3ERKN8platform4math7Vector3Effff"></span><span id="_CPPv2NK5simul6clouds14CloudInterface20GetOpticalPathLengthEfffRKN8platform4math7Vector3ERKN8platform4math7Vector3Effff"></span><span id="simul::clouds::CloudInterface::GetOpticalPathLength__float.float.float.platform::math::Vector3CR.platform::math::Vector3CR.float.float.float.floatC"></span><span class="target" id="classsimul_1_1clouds_1_1_cloud_interface_1a86dc3b43effaad195ab8ebc22bde84e7"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetOpticalPathLength</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">cloud_base_z</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">w</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">h</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">math</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector3</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">X</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">math</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector3</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">dir</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">time</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">cloudiness</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">extinction</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">diffusivity</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds14CloudInterface20GetOpticalPathLengthEfffRKN8platform4math7Vector3ERKN8platform4math7Vector3Effff" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>At the 3D Position <em>X</em>, find the optical density of cloud in the direction <em>dir</em>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds14CloudInterface15GetCloudDensityEfffRKN8platform4math7Vector3Effff">
+<span id="_CPPv3NK5simul6clouds14CloudInterface15GetCloudDensityEfffRKN8platform4math7Vector3Effff"></span><span id="_CPPv2NK5simul6clouds14CloudInterface15GetCloudDensityEfffRKN8platform4math7Vector3Effff"></span><span id="simul::clouds::CloudInterface::GetCloudDensity__float.float.float.platform::math::Vector3CR.float.float.float.floatC"></span><span class="target" id="classsimul_1_1clouds_1_1_cloud_interface_1a609b1086c76aa7269ca01187339f3ca1"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetCloudDensity</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">cloud_base_z</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">width</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">height</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">math</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector3</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">X</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">time</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">cloudiness</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">extinction</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">diffusivity</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds14CloudInterface15GetCloudDensityEfffRKN8platform4math7Vector3Effff" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the normalized cloud density at real-world position X. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds14CloudInterface17GetNoiseInterfaceEv">
+<span id="_CPPv3N5simul6clouds14CloudInterface17GetNoiseInterfaceEv"></span><span id="_CPPv2N5simul6clouds14CloudInterface17GetNoiseInterfaceEv"></span><span id="simul::clouds::CloudInterface::GetNoiseInterface"></span><span class="target" id="classsimul_1_1clouds_1_1_cloud_interface_1a0c848535f158c7cf795e64389493142c"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">math</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">NoiseInterface</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">GetNoiseInterface</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N5simul6clouds14CloudInterface17GetNoiseInterfaceEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the noise object. </p>
+</dd></dl>
+
 </div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find class “simul::clouds::CloudGridInterface” in doxygen xml output for project “Simul” from directory: D:/Jarvis/Documentation/simulVersion/4.4/build/Docs/doxygen/xml</p>
-</div>
+</dd></dl>
+
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds18CloudGridInterfaceE">
+<span id="_CPPv3N5simul6clouds18CloudGridInterfaceE"></span><span id="_CPPv2N5simul6clouds18CloudGridInterfaceE"></span><span id="simul::clouds::CloudGridInterface"></span><span class="target" id="classsimul_1_1clouds_1_1_cloud_grid_interface"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CloudGridInterface</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds18CloudGridInterfaceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The virtual interface for controlling and reading a grid of cloud data. </p>
+</dd></dl>
+
 </section>
 
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="cellularcloudnode.html" class="btn btn-neutral float-left" title="Cellular Cloud Node" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="cloudrenderingoptions.html" class="btn btn-neutral float-right" title="Cloud Rendering Options" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
+          <footer>
 
   <hr>
 

@@ -21,7 +21,7 @@
     <link rel="index" title="Index" href="../genindex.html" >
     <link rel="search" title="Search" href="../search.html" >
     <link rel="next" title="Cloud Renderer" href="apicloudrenderer.html" >
-    <link rel="prev" title="Base Weather Renderer" href="apiweatherrenderer.html" > 
+    <link rel="prev" title="Weather Renderer" href="apiweatherrenderer.html" > 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -62,7 +62,7 @@
 <p class="caption" role="heading"><span class="caption-text">Reference:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="apiindex.html">API</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="apiweatherrenderer.html">Base Weather Renderer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apiweatherrenderer.html">Weather Renderer</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Environment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="apicloudrenderer.html">Cloud Renderer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="apicloudkeyframer.html">Cloud Keyframer</a></li>
@@ -135,17 +135,54 @@
              
   <section id="environment">
 <h1>Environment<a class="headerlink" href="#environment" title="Permalink to this heading">¶</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find class “simul::clouds::Environment” in doxygen xml output for project “Simul” from directory: D:/Jarvis/Documentation/simulVersion/4.4/build/Docs/doxygen/xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11EnvironmentE">
+<span id="_CPPv3N5simul6clouds11EnvironmentE"></span><span id="_CPPv2N5simul6clouds11EnvironmentE"></span><span id="simul::clouds::Environment"></span><span class="target" id="classsimul_1_1clouds_1_1_environment"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Environment</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds11EnvironmentE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The main class that manages environment data. Usually, you will create a single instance of <a class="reference internal" href="../Reference/Clouds/environment.html#classsimul_1_1clouds_1_1_environment"><span class="std std-ref">Environment</span></a>, which will persist while your 3D game or simulation world is active.</p>
+<p>If you use environment directly and not via <a class="reference internal" href="../Reference/Clouds/trueskyrenderer.html#classsimul_1_1clouds_1_1_true_sky_renderer"><span class="std std-ref">TrueSkyRenderer</span></a>, you must call the following each frame:</p>
+<p>SetRealTime(time_seconds); skyKeyframer-&gt;TimeStep(step_days); <a class="reference internal" href="../Reference/Clouds/environment.html#classsimul_1_1clouds_1_1_environment_1a567ea9b5643f97a2c1ff35346e91efc7"><span class="std std-ref">Update()</span></a>; </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11Environment11SetRealTimeEd">
+<span id="_CPPv3N5simul6clouds11Environment11SetRealTimeEd"></span><span id="_CPPv2N5simul6clouds11Environment11SetRealTimeEd"></span><span id="simul::clouds::Environment::SetRealTime__double"></span><span class="target" id="classsimul_1_1clouds_1_1_environment_1a053be1d40e87f254abef9cf3af583052"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetRealTime</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">rt_sec</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds11Environment11SetRealTimeEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Call this once per frame before <a class="reference internal" href="../Reference/Clouds/environment.html#classsimul_1_1clouds_1_1_environment_1a567ea9b5643f97a2c1ff35346e91efc7"><span class="std std-ref">Update()</span></a> if you use real-time updates for clouds, rain, lightning, sky keyframes etc. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11Environment6UpdateEddd">
+<span id="_CPPv3N5simul6clouds11Environment6UpdateEddd"></span><span id="_CPPv2N5simul6clouds11Environment6UpdateEddd"></span><span id="simul::clouds::Environment::Update__double.double.double"></span><span class="target" id="classsimul_1_1clouds_1_1_environment_1a567ea9b5643f97a2c1ff35346e91efc7"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Update</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">latitudeRadians</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">longitudeRadians</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">headingRadians</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds11Environment6UpdateEddd" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Call this once per-frame. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11Environment17GetCloudKeyframerEN3sky3uidE">
+<span id="_CPPv3N5simul6clouds11Environment17GetCloudKeyframerEN3sky3uidE"></span><span id="_CPPv2N5simul6clouds11Environment17GetCloudKeyframerEN3sky3uidE"></span><span id="simul::clouds::Environment::GetCloudKeyframer__sky::uid"></span><span class="target" id="classsimul_1_1clouds_1_1_environment_1a169d411a622accde0df9595c6cd6e28c"></span><a class="reference internal" href="apicloudkeyframer.html#_CPPv4N5simul6clouds14CloudKeyframerE" title="simul::clouds::CloudKeyframer"><span class="n"><span class="pre">CloudKeyframer</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">GetCloudKeyframer</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">uid</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">uid</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds11Environment17GetCloudKeyframerEN3sky3uidE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the cloud keyframer with the specified uid. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11Environment20DeleteCloudKeyframerEN3sky3uidE">
+<span id="_CPPv3N5simul6clouds11Environment20DeleteCloudKeyframerEN3sky3uidE"></span><span id="_CPPv2N5simul6clouds11Environment20DeleteCloudKeyframerEN3sky3uidE"></span><span id="simul::clouds::Environment::DeleteCloudKeyframer__sky::uid"></span><span class="target" id="classsimul_1_1clouds_1_1_environment_1a98542820574af5929d74b4099c8647ec"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DeleteCloudKeyframer</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">uid</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">uid</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds11Environment20DeleteCloudKeyframerEN3sky3uidE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Delete the specified cloud layer. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11Environment20CreateCloudKeyframerEPN8platform4core15MemoryInterfaceEN3sky3uidE">
+<span id="_CPPv3N5simul6clouds11Environment20CreateCloudKeyframerEPN8platform4core15MemoryInterfaceEN3sky3uidE"></span><span id="_CPPv2N5simul6clouds11Environment20CreateCloudKeyframerEPN8platform4core15MemoryInterfaceEN3sky3uidE"></span><span id="simul::clouds::Environment::CreateCloudKeyframer__platform::core::MemoryInterfaceP.sky::uid"></span><span class="target" id="classsimul_1_1clouds_1_1_environment_1aa41f1f354a6b83104594b780886d90ad"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">clouds</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="apicloudkeyframer.html#_CPPv4N5simul6clouds14CloudKeyframerE" title="simul::clouds::CloudKeyframer"><span class="n"><span class="pre">CloudKeyframer</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">CreateCloudKeyframer</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">core</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">MemoryInterface</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">m</span></span>, <span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">uid</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">uid</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds11Environment20CreateCloudKeyframerEPN8platform4core15MemoryInterfaceEN3sky3uidE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Override this to create a custom derived keyframer. Valid id’s are anything greater than zero. </p>
+</dd></dl>
+
 </div>
+</dd></dl>
+
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="apiweatherrenderer.html" class="btn btn-neutral float-left" title="Base Weather Renderer" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="apiweatherrenderer.html" class="btn btn-neutral float-left" title="Weather Renderer" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="apicloudrenderer.html" class="btn btn-neutral float-right" title="Cloud Renderer" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

@@ -1,5 +1,6 @@
 Changelist 
-========= 
+================ 
+| **Tue 02 Jul** : Remove doc warnings
 | **Mon 01 Jul** : Documentation updates and fixes.
 | **Mon 01 Jul** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
 | **Sun 30 Jun** : Fix x-ref in apiskykeyframer.rst
@@ -99,4 +100,3 @@ Changelist
 | **Tue 07 May** : Reworked CloudRenderer::RenderCloudRegions() for different region types. Renamed VolumePartIdentifier to CloudRegionPartIdentifier. std::map safety checks in CloudKeyframeProperties.cpp
 | **Fri 03 May** : Cleaned out old comment. Better handling of exceptions.
 | **Fri 03 May** : Updated column widths in CloudKeyframeProperties().
-| **Fri 03 May** : Updated GetCloudRegionMultiplier() to support spheroids.

@@ -62,7 +62,7 @@
 <p class="caption" role="heading"><span class="caption-text">Reference:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="apiindex.html">API</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="apiweatherrenderer.html">Base Weather Renderer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apiweatherrenderer.html">Weather Renderer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="apienvironment.html">Environment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="apicloudrenderer.html">Cloud Renderer</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Cloud Keyframer</a></li>
@@ -135,10 +135,40 @@
              
   <section id="cloud-keyframer">
 <h1>Cloud Keyframer<a class="headerlink" href="#cloud-keyframer" title="Permalink to this heading">¶</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find class “simul::clouds::CloudKeyframer” in doxygen xml output for project “Simul” from directory: D:/Jarvis/Documentation/simulVersion/4.4/build/Docs/doxygen/xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds14CloudKeyframerE">
+<span id="_CPPv3N5simul6clouds14CloudKeyframerE"></span><span id="_CPPv2N5simul6clouds14CloudKeyframerE"></span><span id="simul::clouds::CloudKeyframer"></span><span class="target" id="classsimul_1_1clouds_1_1_cloud_keyframer"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CloudKeyframer</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">OvercastCallback</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">BaseKeyframer</span></span><a class="headerlink" href="#_CPPv4N5simul6clouds14CloudKeyframerE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A class to manage interpolation between cloud states over time. Typically, a <a class="reference internal" href="../Reference/Clouds/cloudkeyframer.html#classsimul_1_1clouds_1_1_cloud_keyframer"><span class="std std-ref">CloudKeyframer</span></a> is created and updated by its <a class="reference internal" href="../Reference/Clouds/environment.html#classsimul_1_1clouds_1_1_environment"><span class="std std-ref">Environment</span></a>.</p>
+<p>If time and daytime are linked in the SkyKeyframer, time is in days, otherwise the timescale is in arbitrary units. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds14CloudKeyframer14InsertKeyframeEfb">
+<span id="_CPPv3N5simul6clouds14CloudKeyframer14InsertKeyframeEfb"></span><span id="_CPPv2N5simul6clouds14CloudKeyframer14InsertKeyframeEfb"></span><span id="simul::clouds::CloudKeyframer::InsertKeyframe__float.b"></span><span class="target" id="classsimul_1_1clouds_1_1_cloud_keyframer_1ad0384620d47a40e1cabe592af95a4698"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><a class="reference internal" href="apicloudkeyframe.html#_CPPv4N5simul6clouds13CloudKeyframeE" title="simul::clouds::CloudKeyframe"><span class="n"><span class="pre">CloudKeyframe</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">InsertKeyframe</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">t</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">insertFromFile</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5simul6clouds14CloudKeyframer14InsertKeyframeEfb" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Insert a new keyframe at time t, sorting in between the existing keyframes if needed, and return a pointer to it. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds14CloudKeyframer14DeleteKeyframeEi">
+<span id="_CPPv3N5simul6clouds14CloudKeyframer14DeleteKeyframeEi"></span><span id="_CPPv2N5simul6clouds14CloudKeyframer14DeleteKeyframeEi"></span><span id="simul::clouds::CloudKeyframer::DeleteKeyframe__i"></span><span class="target" id="classsimul_1_1clouds_1_1_cloud_keyframer_1a81dd843e2be94cc714d218351d80c987"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DeleteKeyframe</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">i</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds14CloudKeyframer14DeleteKeyframeEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Remove a keyframe. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds14CloudKeyframer11GetKeyframeEi">
+<span id="_CPPv3N5simul6clouds14CloudKeyframer11GetKeyframeEi"></span><span id="_CPPv2N5simul6clouds14CloudKeyframer11GetKeyframeEi"></span><span id="simul::clouds::CloudKeyframer::GetKeyframe__i"></span><span class="target" id="classsimul_1_1clouds_1_1_cloud_keyframer_1aad58e41602134ac9f9e6735bf5e3fdf8"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">BaseKeyframe</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">GetKeyframe</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">i</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5simul6clouds14CloudKeyframer11GetKeyframeEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get a pointer to the keyframe with the given ID. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds14CloudKeyframer11GetKeyframeEi">
+<span id="_CPPv3NK5simul6clouds14CloudKeyframer11GetKeyframeEi"></span><span id="_CPPv2NK5simul6clouds14CloudKeyframer11GetKeyframeEi"></span><span id="simul::clouds::CloudKeyframer::GetKeyframe__iC"></span><span class="target" id="classsimul_1_1clouds_1_1_cloud_keyframer_1a9695f9ddeec5a9e54014378486a45ec6"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">BaseKeyframe</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">GetKeyframe</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">i</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds14CloudKeyframer11GetKeyframeEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get a pointer to the i’th keyframe. </p>
+</dd></dl>
+
 </div>
+</dd></dl>
+
 </section>
 
 

@@ -172,7 +172,7 @@
 </div></blockquote>
 <p>You can use this value to calibrate the other lights in your scene. Say you have a point light representing an electric bulb. The brightness of this light would in reality be constant. But because trueSKY adjusts the physical value of a pixel as time passes, you must compensate for this by scaling the intensity of the bulb by the inverse of the reference radiance.</p>
 <img alt="../../_images/ReferenceSpectralRadiance.png" src="../../_images/ReferenceSpectralRadiance.png" />
-<p><em>Using the spectral radiance value to modulate the intensity of lights in the scene.</em></p>
+<p>Using the spectral radiance value to modulate the intensity of lights in the scene.</p>
 <p>So the light appears to get brighter as day turns to night. You can get the same effect using Unreal’s Eye Adaptation (Auto Exposure). But because this is a post-process effect, it cannot cope with very dark scenes - you may see banding in the sky colours due to the low numerical accuracy of very small numbers.</p>
 <img alt="../../_images/DayLightRadiance.png" src="../../_images/DayLightRadiance.png" />
 <p><em>Spectral radiance example: Day</em></p>

@@ -1,8 +1,8 @@
 ﻿Working with trueSKY from GitHub
-==============================
+==================================
 
 1: Access to Repository
-----------------
+--------------------------
 1. Make sure you have created a Simul account. If not, head over `here to register`_. 
 
 2. On your `Account Page`_, there is a GitHub Username section. Input your GitHub Username and select Request Access. **This needs to be the same username connected to your Unreal Engine account at** https://www.unrealengine.com/account/connected 
@@ -31,7 +31,7 @@
 
 
 Full Integration with Custom Unreal Source Code
--------------------------------------
+-----------------------------------------------------
 
 The following files in the UE source have been modified in the Simul fork of the UE4 repository. If you are merging trueSKY into a custom fork, you must ensure that the trueSKY modifications are carried over. In general, a good way to go about merging these changes is by using `Beyond Compare`_ or `Perforce Merge`_ to easily do a diff across repos or, even simpler, between separate folders on your local machine.
 

@@ -20,8 +20,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" >
     <link rel="search" title="Search" href="../../search.html" >
-    <link rel="next" title="Global Weather Renderer" href="globalweatherrenderer.html" >
-    <link rel="prev" title="Environment" href="environment.html" > 
+    <link rel="next" title="Storm" href="storm.html" >
+    <link rel="prev" title="Precipitation Renderer" href="precipitationrenderer.html" > 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -65,29 +65,25 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../referenceindex.html">Reference</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../base.html">Base</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../clouds.html">Clouds</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="trueskyrenderer.html">True Sky Renderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cloudrenderer.html">Cloud Renderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cloudlighting.html">Cloud Lighting</a></li>
-<li class="toctree-l3"><a class="reference internal" href="weatherrenderer.html">Weather Renderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="lightningrenderer.html">Lightning Renderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="gpucloudgenerator.html">Base GPU Cloud Generator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="precipitationrenderer.html">Precipitation Renderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="environment.html">Environment</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Skylight</a></li>
-<li class="toctree-l3"><a class="reference internal" href="globalweatherrenderer.html">Global Weather Renderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="mixedresolutioncompositor.html">Mixed Resolution Compositor</a></li>
-<li class="toctree-l3"><a class="reference internal" href="tworesframebuffer.html">Two Res Frambuffer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cellularcloudgrid.html">Cellular Cloud Grid</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cellularcloudnode.html">Cellular Cloud Node</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cloudinterface.html">Cloud Interface Classes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cloudrenderingoptions.html">Cloud Rendering Options</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cloudwindow.html">Cloud Window</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cloudwindoweditor.html">Cloud Window Editor</a></li>
-<li class="toctree-l3"><a class="reference internal" href="windowupdater.html">Window Updater</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cloudkeyframe.html">Cloud Keyframe</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cloudkeyframer.html">Cloud Keyframer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cloudlighting.html">Cloud Lighting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cloudrenderer.html">Cloud Renderer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cloudrenderingoptions.html">Cloud Rendering Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cloudwindow.html">Cloud Window</a></li>
+<li class="toctree-l3"><a class="reference internal" href="environment.html">Environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gpucloudgenerator.html">Base GPU Cloud Generator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lightningrenderer.html">Lightning Renderer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mixedresolutioncompositor.html">Mixed Resolution Compositor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="precipitationrenderer.html">Precipitation Renderer</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Skylight</a></li>
 <li class="toctree-l3"><a class="reference internal" href="storm.html">Storm</a></li>
-<li class="toctree-l3"><a class="reference internal" href="lightningrenderinterfacestructs.html">Lightning Render Interface Structs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="trueskyrenderer.html">True Sky Renderer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tworesframebuffer.html">Two Res Frambuffer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="weatherrenderer.html">Weather Renderer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="windowupdater.html">Window Updater</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../sky.html">Sky</a></li>
@@ -165,38 +161,38 @@
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Public Functions</p>
 <dl class="cpp function">
-<dt class="sig sig-object cpp">
-<span class="target" id="classsimul_1_1clouds_1_1_skylight_1a76646c17c4fec72db62d5570256e324c"></span><span class="sig-name descname"><span class="pre">void</span> <span class="pre">SIMUL_CLOUDS_EXPORT</span> <span class="pre">Render</span> <span class="pre">(platform::crossplatform::GraphicsDeviceContext</span> <span class="pre">&amp;parentDeviceContext,</span> <span class="pre">WeatherRenderer</span> <span class="pre">*baseWeatherRenderer,</span> <span class="pre">int</span> <span class="pre">cube_id,</span> <span class="pre">platform::crossplatform::Framebuffer</span> <span class="pre">*fb,</span> <span class="pre">int</span> <span class="pre">faceIndex,</span> <span class="pre">const</span> <span class="pre">mat4</span> <span class="pre">&amp;engineToSimulMatrix4x4,</span> <span class="pre">float</span> <span class="pre">blend,</span> <span class="pre">float</span> <span class="pre">exposure=1.0f,</span> <span class="pre">float</span> <span class="pre">gamma=1.0f)</span></span></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds8Skylight6RenderERN8platform13crossplatform21GraphicsDeviceContextEP15WeatherRendereriPN8platform13crossplatform11FramebufferEiRK4mat4fff">
+<span id="_CPPv3N5simul6clouds8Skylight6RenderERN8platform13crossplatform21GraphicsDeviceContextEP15WeatherRendereriPN8platform13crossplatform11FramebufferEiRK4mat4fff"></span><span id="_CPPv2N5simul6clouds8Skylight6RenderERN8platform13crossplatform21GraphicsDeviceContextEP15WeatherRendereriPN8platform13crossplatform11FramebufferEiRK4mat4fff"></span><span id="simul::clouds::Skylight::Render__platform::crossplatform::GraphicsDeviceContextR.WeatherRendererP.i.platform::crossplatform::FramebufferP.i.mat4CR.float.float.float"></span><span class="target" id="classsimul_1_1clouds_1_1_skylight_1a536183ee0e91c8864b2b64d32e3bc7e0"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Render</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">GraphicsDeviceContext</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">parentDeviceContext</span></span>, <a class="reference internal" href="../../API/apiweatherrenderer.html#_CPPv4N5simul6clouds15WeatherRendererE" title="simul::clouds::WeatherRenderer"><span class="n"><span class="pre">WeatherRenderer</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">baseWeatherRenderer</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">cube_id</span></span>, <span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Framebuffer</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">fb</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">faceIndex</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">mat4</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">engineToSimulMatrix4x4</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">blend</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">exposure</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1.0f</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">gamma</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1.0f</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds8Skylight6RenderERN8platform13crossplatform21GraphicsDeviceContextEP15WeatherRendereriPN8platform13crossplatform11FramebufferEiRK4mat4fff" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Fill in the texture. </p>
 </dd></dl>
 
 <dl class="cpp function">
-<dt class="sig sig-object cpp">
-<span class="target" id="classsimul_1_1clouds_1_1_skylight_1a9501e5f105d16cd03e24361f4e7b29b2"></span><span class="sig-name descname"><span class="pre">void</span> <span class="pre">SIMUL_CLOUDS_EXPORT</span> <span class="pre">Update</span> <span class="pre">(platform::crossplatform::GraphicsDeviceContext</span> <span class="pre">&amp;deviceContext,</span> <span class="pre">WeatherRenderer</span> <span class="pre">*weatherRenderer)</span></span></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds8Skylight6UpdateERN8platform13crossplatform21GraphicsDeviceContextEP15WeatherRenderer">
+<span id="_CPPv3N5simul6clouds8Skylight6UpdateERN8platform13crossplatform21GraphicsDeviceContextEP15WeatherRenderer"></span><span id="_CPPv2N5simul6clouds8Skylight6UpdateERN8platform13crossplatform21GraphicsDeviceContextEP15WeatherRenderer"></span><span id="simul::clouds::Skylight::Update__platform::crossplatform::GraphicsDeviceContextR.WeatherRendererP"></span><span class="target" id="classsimul_1_1clouds_1_1_skylight_1a6a85a6295d6219a110521784ad848b2b"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Update</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">GraphicsDeviceContext</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">deviceContext</span></span>, <a class="reference internal" href="../../API/apiweatherrenderer.html#_CPPv4N5simul6clouds15WeatherRendererE" title="simul::clouds::WeatherRenderer"><span class="n"><span class="pre">WeatherRenderer</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">weatherRenderer</span></span><span class="sig-paren">)</span><br /></dt>
 <dd><p>Update the skylight per-frame. </p>
 </dd></dl>
 
 <dl class="cpp function">
-<dt class="sig sig-object cpp">
-<span class="target" id="classsimul_1_1clouds_1_1_skylight_1ae7ab79497f16942387cad3f8f006fc05"></span><span class="sig-name descname"><span class="pre">void</span> <span class="pre">SIMUL_CLOUDS_EXPORT</span> <span class="pre">RestoreDeviceObjects</span> <span class="pre">(platform::crossplatform::RenderPlatform</span> <span class="pre">*r)</span></span></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds8Skylight20RestoreDeviceObjectsEPN8platform13crossplatform14RenderPlatformE">
+<span id="_CPPv3N5simul6clouds8Skylight20RestoreDeviceObjectsEPN8platform13crossplatform14RenderPlatformE"></span><span id="_CPPv2N5simul6clouds8Skylight20RestoreDeviceObjectsEPN8platform13crossplatform14RenderPlatformE"></span><span id="simul::clouds::Skylight::RestoreDeviceObjects__platform::crossplatform::RenderPlatformP"></span><span class="target" id="classsimul_1_1clouds_1_1_skylight_1a7797fb9893b98cc07b0573d471b6a7fa"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RestoreDeviceObjects</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">RenderPlatform</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">r</span></span><span class="sig-paren">)</span><br /></dt>
 <dd><p>Initialize GPU objects. </p>
 </dd></dl>
 
 <dl class="cpp function">
-<dt class="sig sig-object cpp">
-<span class="target" id="classsimul_1_1clouds_1_1_skylight_1abac8e496c5fb34e8d5e5882a1050a320"></span><span class="sig-name descname"><span class="pre">void</span> <span class="pre">SIMUL_CLOUDS_EXPORT</span> <span class="pre">InvalidateDeviceObjects</span> <span class="pre">()</span></span></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds8Skylight23InvalidateDeviceObjectsEv">
+<span id="_CPPv3N5simul6clouds8Skylight23InvalidateDeviceObjectsEv"></span><span id="_CPPv2N5simul6clouds8Skylight23InvalidateDeviceObjectsEv"></span><span id="simul::clouds::Skylight::InvalidateDeviceObjects"></span><span class="target" id="classsimul_1_1clouds_1_1_skylight_1a04f47a5d2177c2492450a77f3ae62900"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">InvalidateDeviceObjects</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
 <dd><p>Free the GPU objects. </p>
 </dd></dl>
 
 <dl class="cpp function">
-<dt class="sig sig-object cpp">
-<span class="target" id="classsimul_1_1clouds_1_1_skylight_1a064471d69b22590c0ddc604f866fad2a"></span><span class="sig-name descname"><span class="pre">void</span> <span class="pre">SIMUL_CLOUDS_EXPORT</span> <span class="pre">LoadShaders</span> <span class="pre">()</span></span></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds8Skylight11LoadShadersEv">
+<span id="_CPPv3N5simul6clouds8Skylight11LoadShadersEv"></span><span id="_CPPv2N5simul6clouds8Skylight11LoadShadersEv"></span><span id="simul::clouds::Skylight::LoadShaders"></span><span class="target" id="classsimul_1_1clouds_1_1_skylight_1aca31d05b5b1bd7429870ddb5b4f8ef8b"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LoadShaders</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds8Skylight11LoadShadersEv" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Recompile the shaders for this class. </p>
 </dd></dl>
 
 <dl class="cpp function">
-<dt class="sig sig-object cpp">
-<span class="target" id="classsimul_1_1clouds_1_1_skylight_1a457a6c17cfa627fa41a161bf731c2502"></span><span class="sig-name descname"><span class="pre">void</span> <span class="pre">SIMUL_CLOUDS_EXPORT</span> <span class="pre">ShowDebug</span> <span class="pre">(platform::crossplatform::GraphicsDeviceContext</span> <span class="pre">&amp;deviceContext,</span> <span class="pre">int</span> <span class="pre">X,</span> <span class="pre">int</span> <span class="pre">Y,</span> <span class="pre">int</span> <span class="pre">w)</span></span></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds8Skylight9ShowDebugERN8platform13crossplatform21GraphicsDeviceContextEiii">
+<span id="_CPPv3N5simul6clouds8Skylight9ShowDebugERN8platform13crossplatform21GraphicsDeviceContextEiii"></span><span id="_CPPv2N5simul6clouds8Skylight9ShowDebugERN8platform13crossplatform21GraphicsDeviceContextEiii"></span><span id="simul::clouds::Skylight::ShowDebug__platform::crossplatform::GraphicsDeviceContextR.i.i.i"></span><span class="target" id="classsimul_1_1clouds_1_1_skylight_1ae65fcf4004df50200530569b5f1417c8"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ShowDebug</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">GraphicsDeviceContext</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">deviceContext</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">X</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">Y</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">w</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds8Skylight9ShowDebugERN8platform13crossplatform21GraphicsDeviceContextEiii" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Show debug displays onscreen. </p>
 </dd></dl>
 
@@ -209,8 +205,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="environment.html" class="btn btn-neutral float-left" title="Environment" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="globalweatherrenderer.html" class="btn btn-neutral float-right" title="Global Weather Renderer" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="precipitationrenderer.html" class="btn btn-neutral float-left" title="Precipitation Renderer" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="storm.html" class="btn btn-neutral float-right" title="Storm" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr>

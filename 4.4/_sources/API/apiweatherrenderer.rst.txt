@@ -1,4 +1,4 @@
-Base Weather Renderer
+Weather Renderer
 ======================================
 
 .. doxygenclass:: simul::clouds::WeatherRenderer

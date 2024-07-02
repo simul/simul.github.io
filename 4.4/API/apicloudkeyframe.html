@@ -62,7 +62,7 @@
 <p class="caption" role="heading"><span class="caption-text">Reference:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="apiindex.html">API</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="apiweatherrenderer.html">Base Weather Renderer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apiweatherrenderer.html">Weather Renderer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="apienvironment.html">Environment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="apicloudrenderer.html">Cloud Renderer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="apicloudkeyframer.html">Cloud Keyframer</a></li>
@@ -135,10 +135,165 @@
              
   <section id="cloud-keyframe">
 <h1>Cloud Keyframe<a class="headerlink" href="#cloud-keyframe" title="Permalink to this heading">¶</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenstruct: Cannot find class “simul::clouds::CloudKeyframe” in doxygen xml output for project “Simul” from directory: D:/Jarvis/Documentation/simulVersion/4.4/build/Docs/doxygen/xml</p>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudKeyframeE">
+<span id="_CPPv3N5simul6clouds13CloudKeyframeE"></span><span id="_CPPv2N5simul6clouds13CloudKeyframeE"></span><span id="simul::clouds::CloudKeyframe"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CloudKeyframe</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">BaseKeyframe</span></span><a class="headerlink" href="#_CPPv4N5simul6clouds13CloudKeyframeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The keyframe structure for clouds, used by <a class="reference internal" href="../Reference/Clouds/cloudkeyframer.html#classsimul_1_1clouds_1_1_cloud_keyframer"><span class="std std-ref">simul::clouds::CloudKeyframer</span></a>. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudKeyframe10cloudinessE">
+<span id="_CPPv3N5simul6clouds13CloudKeyframe10cloudinessE"></span><span id="_CPPv2N5simul6clouds13CloudKeyframe10cloudinessE"></span><span id="simul::clouds::CloudKeyframe::cloudiness__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1a4df254708b4c0aa3869c2bf323bc74c7"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">cloudiness</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds13CloudKeyframe10cloudinessE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The density of the cloud layer at this time. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudKeyframe23distribution_base_layerE">
+<span id="_CPPv3N5simul6clouds13CloudKeyframe23distribution_base_layerE"></span><span id="_CPPv2N5simul6clouds13CloudKeyframe23distribution_base_layerE"></span><span id="simul::clouds::CloudKeyframe::distribution_base_layer__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1aff10283b744d16ec87e3c1a137283a67"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">distribution_base_layer</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds13CloudKeyframe23distribution_base_layerE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Start of the transition from the cloud base to the upper cloud (0 to 1) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudKeyframe23distribution_transitionE">
+<span id="_CPPv3N5simul6clouds13CloudKeyframe23distribution_transitionE"></span><span id="_CPPv2N5simul6clouds13CloudKeyframe23distribution_transitionE"></span><span id="simul::clouds::CloudKeyframe::distribution_transition__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1af2872a879cac2ccf1baf3a6e34336e8d"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">distribution_transition</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds13CloudKeyframe23distribution_transitionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The transition from the cloud base to the upper cloud (0 to 1) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudKeyframe13upper_densityE">
+<span id="_CPPv3N5simul6clouds13CloudKeyframe13upper_densityE"></span><span id="_CPPv2N5simul6clouds13CloudKeyframe13upper_densityE"></span><span id="simul::clouds::CloudKeyframe::upper_density__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1ac6778b17919f5f63e4e7b48280b10504"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">upper_density</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds13CloudKeyframe13upper_densityE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The proportion of cloud density retained in the upper layer, above the distribution_transition. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudKeyframe13cloud_base_kmE">
+<span id="_CPPv3N5simul6clouds13CloudKeyframe13cloud_base_kmE"></span><span id="_CPPv2N5simul6clouds13CloudKeyframe13cloud_base_kmE"></span><span id="simul::clouds::CloudKeyframe::cloud_base_km__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1a9ae7e03ef688045a8c33288c11a1b5b7"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">cloud_base_km</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds13CloudKeyframe13cloud_base_kmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The base altitude of this cloud layer. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudKeyframe15cloud_height_kmE">
+<span id="_CPPv3N5simul6clouds13CloudKeyframe15cloud_height_kmE"></span><span id="_CPPv2N5simul6clouds13CloudKeyframe15cloud_height_kmE"></span><span id="simul::clouds::CloudKeyframe::cloud_height_km__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1a7301a6b71419ff9caf24c06d42bb8839"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">cloud_height_km</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds13CloudKeyframe15cloud_height_kmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The height of the cloud layer, above its base altitude. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudKeyframe14cloud_width_kmE">
+<span id="_CPPv3N5simul6clouds13CloudKeyframe14cloud_width_kmE"></span><span id="_CPPv2N5simul6clouds13CloudKeyframe14cloud_width_kmE"></span><span id="simul::clouds::CloudKeyframe::cloud_width_km__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1a205550eccce33a7a0d777407ed0bf13c"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">cloud_width_km</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds13CloudKeyframe14cloud_width_kmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The width of the cloud layer in km, or the repeat-length. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudKeyframe8scale_kmE">
+<span id="_CPPv3N5simul6clouds13CloudKeyframe8scale_kmE"></span><span id="_CPPv2N5simul6clouds13CloudKeyframe8scale_kmE"></span><span id="simul::clouds::CloudKeyframe::scale_km__vec3"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1afae7f3dcdb9bc3057a064ead17d1d727"></span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">scale_km</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds13CloudKeyframe8scale_kmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>For non-repeating clouds, the shape scale. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudKeyframe7octavesE">
+<span id="_CPPv3N5simul6clouds13CloudKeyframe7octavesE"></span><span id="_CPPv2N5simul6clouds13CloudKeyframe7octavesE"></span><span id="simul::clouds::CloudKeyframe::octaves__i"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1ab278f5c9c7330f80ce764ff5615e4cb7"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">octaves</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds13CloudKeyframe7octavesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The number of noise octaves used to generate the clouds; default 3. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudKeyframe11persistenceE">
+<span id="_CPPv3N5simul6clouds13CloudKeyframe11persistenceE"></span><span id="_CPPv2N5simul6clouds13CloudKeyframe11persistenceE"></span><span id="simul::clouds::CloudKeyframe::persistence__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1a13fbecdf8a54daee77970a7860d9dd6e"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">persistence</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.1f</span></span><a class="headerlink" href="#_CPPv4N5simul6clouds13CloudKeyframe11persistenceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The fractal persistence for generating the clouds, default 0.45. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudKeyframe17fractal_amplitudeE">
+<span id="_CPPv3N5simul6clouds13CloudKeyframe17fractal_amplitudeE"></span><span id="_CPPv2N5simul6clouds13CloudKeyframe17fractal_amplitudeE"></span><span id="simul::clouds::CloudKeyframe::fractal_amplitude__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1a9c115961ade45f1a5e73370cb34a118a"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fractal_amplitude</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">2.0f</span></span><a class="headerlink" href="#_CPPv4N5simul6clouds13CloudKeyframe17fractal_amplitudeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The strength of the fractal edge effect. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudKeyframe14edge_sharpnessE">
+<span id="_CPPv3N5simul6clouds13CloudKeyframe14edge_sharpnessE"></span><span id="_CPPv2N5simul6clouds13CloudKeyframe14edge_sharpnessE"></span><span id="simul::clouds::CloudKeyframe::edge_sharpness__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1a14ee9b901ecdcc84a17582c1eb916376"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">edge_sharpness</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.06f</span></span><a class="headerlink" href="#_CPPv4N5simul6clouds13CloudKeyframe14edge_sharpnessE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The sharpness to be applied in rendering a the boundary. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudKeyframe5churnE">
+<span id="_CPPv3N5simul6clouds13CloudKeyframe5churnE"></span><span id="_CPPv2N5simul6clouds13CloudKeyframe5churnE"></span><span id="simul::clouds::CloudKeyframe::churn__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1ae406e8d0ad06914d38f2320734cc70d8"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">churn</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1.0f</span></span><a class="headerlink" href="#_CPPv4N5simul6clouds13CloudKeyframe5churnE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The strength of the cloud edge churning effect - larger values for more turbulent clouds. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudKeyframe13precipitationE">
+<span id="_CPPv3N5simul6clouds13CloudKeyframe13precipitationE"></span><span id="_CPPv2N5simul6clouds13CloudKeyframe13precipitationE"></span><span id="simul::clouds::CloudKeyframe::precipitation__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1a0a5a9c5304551568bc287477cacceedc"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">precipitation</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.0f</span></span><a class="headerlink" href="#_CPPv4N5simul6clouds13CloudKeyframe13precipitationE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The amount of rain/snow etc. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudKeyframe12rain_to_snowE">
+<span id="_CPPv3N5simul6clouds13CloudKeyframe12rain_to_snowE"></span><span id="_CPPv2N5simul6clouds13CloudKeyframe12rain_to_snowE"></span><span id="simul::clouds::CloudKeyframe::rain_to_snow__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1ac141d40dd98c57ba064b7b55857ce464"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">rain_to_snow</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.0f</span></span><a class="headerlink" href="#_CPPv4N5simul6clouds13CloudKeyframe12rain_to_snowE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>If zero, precipitation is interpreted as rain. If one, it is snow. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudKeyframe21precipitation_base_kmE">
+<span id="_CPPv3N5simul6clouds13CloudKeyframe21precipitation_base_kmE"></span><span id="_CPPv2N5simul6clouds13CloudKeyframe21precipitation_base_kmE"></span><span id="simul::clouds::CloudKeyframe::precipitation_base_km__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1a027c25b63cbbf2ca2c908ba0281b8008"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">precipitation_base_km</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds13CloudKeyframe21precipitation_base_kmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The lowest altitude that the precipitation can occur; the highest altitude is dictated by cloud_base_km. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudKeyframe11diffusivityE">
+<span id="_CPPv3N5simul6clouds13CloudKeyframe11diffusivityE"></span><span id="_CPPv2N5simul6clouds13CloudKeyframe11diffusivityE"></span><span id="simul::clouds::CloudKeyframe::diffusivity__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1abfcdf8601f3eb2f8b59a696434db274e"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">diffusivity</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds13CloudKeyframe11diffusivityE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>How much the edges of clouds should be diffused. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudKeyframe15max_density_gm3E">
+<span id="_CPPv3N5simul6clouds13CloudKeyframe15max_density_gm3E"></span><span id="_CPPv2N5simul6clouds13CloudKeyframe15max_density_gm3E"></span><span id="simul::clouds::CloudKeyframe::max_density_gm3__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1a87af17edf1df1b70dcfa631a8d66ed7a"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">max_density_gm3</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds13CloudKeyframe15max_density_gm3E" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Grams per cubic metre. Default is 0.5. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudKeyframe17base_noise_factorE">
+<span id="_CPPv3N5simul6clouds13CloudKeyframe17base_noise_factorE"></span><span id="_CPPv2N5simul6clouds13CloudKeyframe17base_noise_factorE"></span><span id="simul::clouds::CloudKeyframe::base_noise_factor__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1a1a07e774dc85cb53856256503fcdd3a0"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">base_noise_factor</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds13CloudKeyframe17base_noise_factorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>What proportion of noise is applied at the cloudbase, between 0 and 1.0. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudKeyframe8offsetKmE">
+<span id="_CPPv3N5simul6clouds13CloudKeyframe8offsetKmE"></span><span id="_CPPv2N5simul6clouds13CloudKeyframe8offsetKmE"></span><span id="simul::clouds::CloudKeyframe::offsetKm__vec2"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1ab614e27ba80cff8fea981957e10595eb"></span><span class="n"><span class="pre">vec2</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">offsetKm</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds13CloudKeyframe8offsetKmE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The calculated position offset of this keyframe due to the accumulation of wind motion. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudKeyframe9octaves_fE">
+<span id="_CPPv3N5simul6clouds13CloudKeyframe9octaves_fE"></span><span id="_CPPv2N5simul6clouds13CloudKeyframe9octaves_fE"></span><span id="simul::clouds::CloudKeyframe::octaves_f__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1ab072e48c8eb66dd8f07dfe3dd603293d"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">octaves_f</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds13CloudKeyframe9octaves_fE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Only used for interpolation - changes will be ignored. See <a class="reference internal" href="#structsimul_1_1clouds_1_1_cloud_keyframe_1ab278f5c9c7330f80ce764ff5615e4cb7"><span class="std std-ref">octaves</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudKeyframe10simulationE">
+<span id="_CPPv3N5simul6clouds13CloudKeyframe10simulationE"></span><span id="_CPPv2N5simul6clouds13CloudKeyframe10simulationE"></span><span id="simul::clouds::CloudKeyframe::simulation__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1aa10849329dcd4d8fd46598e4dbac82c5"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">simulation</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds13CloudKeyframe10simulationE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>If 1.0, cloud volume is simulated. If 0.0, it is generated by fractal. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudKeyframe12worley_noiseE">
+<span id="_CPPv3N5simul6clouds13CloudKeyframe12worley_noiseE"></span><span id="_CPPv2N5simul6clouds13CloudKeyframe12worley_noiseE"></span><span id="simul::clouds::CloudKeyframe::worley_noise__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1a19ad8a3486907d4df94f25e98ccae1e6"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">worley_noise</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds13CloudKeyframe12worley_noiseE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>How much Worley (cell) noise to apply in cloud generation. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudKeyframe12worley_scaleE">
+<span id="_CPPv3N5simul6clouds13CloudKeyframe12worley_scaleE"></span><span id="_CPPv2N5simul6clouds13CloudKeyframe12worley_scaleE"></span><span id="simul::clouds::CloudKeyframe::worley_scale__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1a459ea5823f2382b99eaa629482cf41f1"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">worley_scale</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds13CloudKeyframe12worley_scaleE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Scale of the Worley noise. Will be locked to an integer if clouds are wrapping. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds13CloudKeyframe17edge_worley_noiseE">
+<span id="_CPPv3N5simul6clouds13CloudKeyframe17edge_worley_noiseE"></span><span id="_CPPv2N5simul6clouds13CloudKeyframe17edge_worley_noiseE"></span><span id="simul::clouds::CloudKeyframe::edge_worley_noise__float"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_keyframe_1a3b0d3dec9e413edf894af2b6bf7590fd"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">edge_worley_noise</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds13CloudKeyframe17edge_worley_noiseE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The strength of the fractal worley edge noise. </p>
+</dd></dl>
+
 </div>
+</dd></dl>
+
 </section>
 
 

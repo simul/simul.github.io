@@ -139,10 +139,171 @@
              
   <section id="bounded-water-object">
 <h1>Bounded Water Object<a class="headerlink" href="#bounded-water-object" title="Permalink to this heading">¶</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find class “simul::terrain::BoundedWaterObject” in doxygen xml output for project “Simul” from directory: D:/Jarvis/Documentation/simulVersion/4.4/build/Docs/doxygen/xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain18BoundedWaterObjectE">
+<span id="_CPPv3N5simul7terrain18BoundedWaterObjectE"></span><span id="_CPPv2N5simul7terrain18BoundedWaterObjectE"></span><span id="simul::terrain::BoundedWaterObject"></span><span class="target" id="classsimul_1_1terrain_1_1_bounded_water_object"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BoundedWaterObject</span></span></span><a class="headerlink" href="#_CPPv4N5simul7terrain18BoundedWaterObjectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Object used for defining a bound 3D area of water within a scene. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain18BoundedWaterObject20RestoreDeviceObjectsEPN8platform13crossplatform14RenderPlatformE">
+<span id="_CPPv3N5simul7terrain18BoundedWaterObject20RestoreDeviceObjectsEPN8platform13crossplatform14RenderPlatformE"></span><span id="_CPPv2N5simul7terrain18BoundedWaterObject20RestoreDeviceObjectsEPN8platform13crossplatform14RenderPlatformE"></span><span id="simul::terrain::BoundedWaterObject::RestoreDeviceObjects__platform::crossplatform::RenderPlatformP"></span><span class="target" id="classsimul_1_1terrain_1_1_bounded_water_object_1ac98d8869c5aff0fcc1ef51769a88a9fc"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RestoreDeviceObjects</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">RenderPlatform</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">r</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain18BoundedWaterObject20RestoreDeviceObjectsEPN8platform13crossplatform14RenderPlatformE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Platform-dependent function called when initializing the water object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain18BoundedWaterObject23InvalidateDeviceObjectsEv">
+<span id="_CPPv3N5simul7terrain18BoundedWaterObject23InvalidateDeviceObjectsEv"></span><span id="_CPPv2N5simul7terrain18BoundedWaterObject23InvalidateDeviceObjectsEv"></span><span id="simul::terrain::BoundedWaterObject::InvalidateDeviceObjects"></span><span class="target" id="classsimul_1_1terrain_1_1_bounded_water_object_1a42bc4bd3d3b788fa1d01d7742f9059cf"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">InvalidateDeviceObjects</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain18BoundedWaterObject23InvalidateDeviceObjectsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Platform-dependent function called when uinitializing the water object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain18BoundedWaterObject15PreRenderUpdateERN8platform13crossplatform21GraphicsDeviceContextEf">
+<span id="_CPPv3N5simul7terrain18BoundedWaterObject15PreRenderUpdateERN8platform13crossplatform21GraphicsDeviceContextEf"></span><span id="_CPPv2N5simul7terrain18BoundedWaterObject15PreRenderUpdateERN8platform13crossplatform21GraphicsDeviceContextEf"></span><span id="simul::terrain::BoundedWaterObject::PreRenderUpdate__platform::crossplatform::GraphicsDeviceContextR.float"></span><span class="target" id="classsimul_1_1terrain_1_1_bounded_water_object_1a6a34ad7e171568abda64701e356f53c8"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PreRenderUpdate</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">GraphicsDeviceContext</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">deviceContext</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">real_time_seconds</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain18BoundedWaterObject15PreRenderUpdateERN8platform13crossplatform21GraphicsDeviceContextEf" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Once per-frame update. Do this before any rendering each frame. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain18BoundedWaterObject20getWaterProbeOutputsEv">
+<span id="_CPPv3N5simul7terrain18BoundedWaterObject20getWaterProbeOutputsEv"></span><span id="_CPPv2N5simul7terrain18BoundedWaterObject20getWaterProbeOutputsEv"></span><span id="simul::terrain::BoundedWaterObject::getWaterProbeOutputs"></span><span class="target" id="classsimul_1_1terrain_1_1_bounded_water_object_1a30c83473972523833b74e9492566fdd5"></span><span class="n"><span class="pre">vec4</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">getWaterProbeOutputs</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain18BoundedWaterObject20getWaterProbeOutputsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the Array of results from the water probes associated with this water object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain18BoundedWaterObject20setWaterProbeOutputsEP4vec4">
+<span id="_CPPv3N5simul7terrain18BoundedWaterObject20setWaterProbeOutputsEP4vec4"></span><span id="_CPPv2N5simul7terrain18BoundedWaterObject20setWaterProbeOutputsEP4vec4"></span><span id="simul::terrain::BoundedWaterObject::setWaterProbeOutputs__vec4P"></span><span class="target" id="classsimul_1_1terrain_1_1_bounded_water_object_1a5a667fe44a05fa0923370e6d21e55495"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setWaterProbeOutputs</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vec4</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">outputs</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain18BoundedWaterObject20setWaterProbeOutputsEP4vec4" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set the Array of results from the water probes associated with this water object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain18BoundedWaterObject22getWaterProbePositionsEv">
+<span id="_CPPv3N5simul7terrain18BoundedWaterObject22getWaterProbePositionsEv"></span><span id="_CPPv2N5simul7terrain18BoundedWaterObject22getWaterProbePositionsEv"></span><span id="simul::terrain::BoundedWaterObject::getWaterProbePositions"></span><span class="target" id="classsimul_1_1terrain_1_1_bounded_water_object_1a5ebaa39b1a9877832895680c3d48dc52"></span><span class="n"><span class="pre">vec4</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">getWaterProbePositions</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain18BoundedWaterObject22getWaterProbePositionsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the Array of positions of the water probes associated with this water object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain18BoundedWaterObject21setWaterProbePositionEi4vec3">
+<span id="_CPPv3N5simul7terrain18BoundedWaterObject21setWaterProbePositionEi4vec3"></span><span id="_CPPv2N5simul7terrain18BoundedWaterObject21setWaterProbePositionEi4vec3"></span><span id="simul::terrain::BoundedWaterObject::setWaterProbePosition__i.vec3"></span><span class="target" id="classsimul_1_1terrain_1_1_bounded_water_object_1a5a81178869886533d1e4ebfbcf0786f6"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setWaterProbePosition</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">ID</span></span>, <span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">pos</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain18BoundedWaterObject21setWaterProbePositionEi4vec3" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set the Array of positions of the water probes associated with this water object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain18BoundedWaterObject26getWaterProbeOutputsBufferEv">
+<span id="_CPPv3N5simul7terrain18BoundedWaterObject26getWaterProbeOutputsBufferEv"></span><span id="_CPPv2N5simul7terrain18BoundedWaterObject26getWaterProbeOutputsBufferEv"></span><span id="simul::terrain::BoundedWaterObject::getWaterProbeOutputsBuffer"></span><span class="target" id="classsimul_1_1terrain_1_1_bounded_water_object_1ab8a984ee94725e553856e16cfc860f97"></span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">StructuredBuffer</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vec4</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">getWaterProbeOutputsBuffer</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain18BoundedWaterObject26getWaterProbeOutputsBufferEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get a pointer to the probe outputs buffer. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain18BoundedWaterObject25setWaterWaveletsSimulatorEPN5simul7terrain22WaterWaveletsSimulatorE">
+<span id="_CPPv3N5simul7terrain18BoundedWaterObject25setWaterWaveletsSimulatorEPN5simul7terrain22WaterWaveletsSimulatorE"></span><span id="_CPPv2N5simul7terrain18BoundedWaterObject25setWaterWaveletsSimulatorEPN5simul7terrain22WaterWaveletsSimulatorE"></span><span id="simul::terrain::BoundedWaterObject::setWaterWaveletsSimulator__simul::terrain::WaterWaveletsSimulatorP"></span><span class="target" id="classsimul_1_1terrain_1_1_bounded_water_object_1ae0e73901be5aa7679e675441985326bd"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setWaterWaveletsSimulator</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">terrain</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="waterwaveletssimulator.html#_CPPv4N5simul7terrain22WaterWaveletsSimulatorE" title="simul::terrain::WaterWaveletsSimulator"><span class="n"><span class="pre">WaterWaveletsSimulator</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">o</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain18BoundedWaterObject25setWaterWaveletsSimulatorEPN5simul7terrain22WaterWaveletsSimulatorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set the water wavelets simulator that this water object will use to generate its surface. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain18BoundedWaterObject15setWaterGlobalsEPN5simul7terrain17globalWaterValuesE">
+<span id="_CPPv3N5simul7terrain18BoundedWaterObject15setWaterGlobalsEPN5simul7terrain17globalWaterValuesE"></span><span id="_CPPv2N5simul7terrain18BoundedWaterObject15setWaterGlobalsEPN5simul7terrain17globalWaterValuesE"></span><span id="simul::terrain::BoundedWaterObject::setWaterGlobals__simul::terrain::globalWaterValuesP"></span><span class="target" id="classsimul_1_1terrain_1_1_bounded_water_object_1a4e9d1d6e687fdddc76dd92417090b9f5"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setWaterGlobals</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">terrain</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="waterwaveletssimulator.html#_CPPv4N5simul7terrain17globalWaterValuesE" title="simul::terrain::globalWaterValues"><span class="n"><span class="pre">globalWaterValues</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">newWaterGlobals</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain18BoundedWaterObject15setWaterGlobalsEPN5simul7terrain17globalWaterValuesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set the global water values. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain18BoundedWaterObject14getWaterValuesEv">
+<span id="_CPPv3N5simul7terrain18BoundedWaterObject14getWaterValuesEv"></span><span id="_CPPv2N5simul7terrain18BoundedWaterObject14getWaterValuesEv"></span><span id="simul::terrain::BoundedWaterObject::getWaterValues"></span><span class="target" id="classsimul_1_1terrain_1_1_bounded_water_object_1a4c57a3e5533b3b597d7328705168dc3b"></span><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">terrain</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="waterwaveletssimulator.html#_CPPv4N5simul7terrain16localWaterValuesE" title="simul::terrain::localWaterValues"><span class="n"><span class="pre">localWaterValues</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">getWaterValues</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain18BoundedWaterObject14getWaterValuesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get a pointer the water values of this water object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain18BoundedWaterObject11getWaveGridEv">
+<span id="_CPPv3N5simul7terrain18BoundedWaterObject11getWaveGridEv"></span><span id="_CPPv2N5simul7terrain18BoundedWaterObject11getWaveGridEv"></span><span id="simul::terrain::BoundedWaterObject::getWaveGrid"></span><span class="target" id="classsimul_1_1terrain_1_1_bounded_water_object_1a8a3c80277cc63eacdb297cc94b0c5254"></span><a class="reference internal" href="waterwaveletssimulator.html#_CPPv4N5simul7terrain8WaveGridE" title="simul::terrain::WaveGrid"><span class="n"><span class="pre">WaveGrid</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">getWaveGrid</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain18BoundedWaterObject11getWaveGridEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the wave grid that the water object is using to generate its surface. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain18BoundedWaterObject18setCustomWaterMeshEPK21WaterMeshObjectValues">
+<span id="_CPPv3N5simul7terrain18BoundedWaterObject18setCustomWaterMeshEPK21WaterMeshObjectValues"></span><span id="_CPPv2N5simul7terrain18BoundedWaterObject18setCustomWaterMeshEPK21WaterMeshObjectValues"></span><span id="simul::terrain::BoundedWaterObject::setCustomWaterMesh__WaterMeshObjectValuesCP"></span><span class="target" id="classsimul_1_1terrain_1_1_bounded_water_object_1a1620e6ed567a5c9016e983f14b98b10c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setCustomWaterMesh</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5simul7terrain21WaterMeshObjectValuesE" title="simul::terrain::WaterMeshObjectValues"><span class="n"><span class="pre">WaterMeshObjectValues</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">newObject</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain18BoundedWaterObject18setCustomWaterMeshEPK21WaterMeshObjectValues" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set a given mesh object as the shape of the water object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain18BoundedWaterObject21updateCustomWaterMeshEPK21WaterMeshObjectValues">
+<span id="_CPPv3N5simul7terrain18BoundedWaterObject21updateCustomWaterMeshEPK21WaterMeshObjectValues"></span><span id="_CPPv2N5simul7terrain18BoundedWaterObject21updateCustomWaterMeshEPK21WaterMeshObjectValues"></span><span id="simul::terrain::BoundedWaterObject::updateCustomWaterMesh__WaterMeshObjectValuesCP"></span><span class="target" id="classsimul_1_1terrain_1_1_bounded_water_object_1a800e704c75ee466d6401963deacdbcb4"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">updateCustomWaterMesh</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5simul7terrain21WaterMeshObjectValuesE" title="simul::terrain::WaterMeshObjectValues"><span class="n"><span class="pre">WaterMeshObjectValues</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">Object</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain18BoundedWaterObject21updateCustomWaterMeshEPK21WaterMeshObjectValues" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Update a given mesh object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain18BoundedWaterObject18getCustomWaterMeshEv">
+<span id="_CPPv3N5simul7terrain18BoundedWaterObject18getCustomWaterMeshEv"></span><span id="_CPPv2N5simul7terrain18BoundedWaterObject18getCustomWaterMeshEv"></span><span id="simul::terrain::BoundedWaterObject::getCustomWaterMesh"></span><span class="target" id="classsimul_1_1terrain_1_1_bounded_water_object_1aa134739dc03c9858c48acc2431f4a5a8"></span><a class="reference internal" href="#_CPPv4N5simul7terrain21WaterMeshObjectValuesE" title="simul::terrain::WaterMeshObjectValues"><span class="n"><span class="pre">WaterMeshObjectValues</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">getCustomWaterMesh</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain18BoundedWaterObject18getCustomWaterMeshEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the current mesh object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain18BoundedWaterObject21removeCustomWaterMeshEv">
+<span id="_CPPv3N5simul7terrain18BoundedWaterObject21removeCustomWaterMeshEv"></span><span id="_CPPv2N5simul7terrain18BoundedWaterObject21removeCustomWaterMeshEv"></span><span id="simul::terrain::BoundedWaterObject::removeCustomWaterMesh"></span><span class="target" id="classsimul_1_1terrain_1_1_bounded_water_object_1a7306de988cc9d83a44453c044a52c228"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">removeCustomWaterMesh</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain18BoundedWaterObject21removeCustomWaterMeshEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Remove the water mesh. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain18BoundedWaterObject10updateLODsEv">
+<span id="_CPPv3N5simul7terrain18BoundedWaterObject10updateLODsEv"></span><span id="_CPPv2N5simul7terrain18BoundedWaterObject10updateLODsEv"></span><span id="simul::terrain::BoundedWaterObject::updateLODs"></span><span class="target" id="classsimul_1_1terrain_1_1_bounded_water_object_1af7d1dd21861d9f5bb907372e0122eaae"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">updateLODs</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain18BoundedWaterObject10updateLODsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Update the LOD values depending on the size of the object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain18BoundedWaterObject17updateQuadDensityE4vec3">
+<span id="_CPPv3N5simul7terrain18BoundedWaterObject17updateQuadDensityE4vec3"></span><span id="_CPPv2N5simul7terrain18BoundedWaterObject17updateQuadDensityE4vec3"></span><span id="simul::terrain::BoundedWaterObject::updateQuadDensity__vec3"></span><span class="target" id="classsimul_1_1terrain_1_1_bounded_water_object_1a55c3b673885a14c94b133ab6d54c67a1"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">updateQuadDensity</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">camPos</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain18BoundedWaterObject17updateQuadDensityE4vec3" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Update the level of detail of the surface of the water object depending on how far away the camera is. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain18BoundedWaterObject11setLocationE4vec3">
+<span id="_CPPv3N5simul7terrain18BoundedWaterObject11setLocationE4vec3"></span><span id="_CPPv2N5simul7terrain18BoundedWaterObject11setLocationE4vec3"></span><span id="simul::terrain::BoundedWaterObject::setLocation__vec3"></span><span class="target" id="classsimul_1_1terrain_1_1_bounded_water_object_1aa1e1c7af176081a030c57c9555c62d2e"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setLocation</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">newLocation</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain18BoundedWaterObject11setLocationE4vec3" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set the location of the center of the water object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain18BoundedWaterObject11getLocationEv">
+<span id="_CPPv3N5simul7terrain18BoundedWaterObject11getLocationEv"></span><span id="_CPPv2N5simul7terrain18BoundedWaterObject11getLocationEv"></span><span id="simul::terrain::BoundedWaterObject::getLocation"></span><span class="target" id="classsimul_1_1terrain_1_1_bounded_water_object_1a3c744fbfb3cc24e692bbdd1773ed281a"></span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getLocation</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain18BoundedWaterObject11getLocationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the location of the center of the water object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain18BoundedWaterObject12setDimensionE4vec3">
+<span id="_CPPv3N5simul7terrain18BoundedWaterObject12setDimensionE4vec3"></span><span id="_CPPv2N5simul7terrain18BoundedWaterObject12setDimensionE4vec3"></span><span id="simul::terrain::BoundedWaterObject::setDimension__vec3"></span><span class="target" id="classsimul_1_1terrain_1_1_bounded_water_object_1a18aa533ed81a955ef70f46d954df3cc2"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setDimension</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">newDimension</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain18BoundedWaterObject12setDimensionE4vec3" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set the dimension of the center of the water object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain18BoundedWaterObject12getDimensionEv">
+<span id="_CPPv3N5simul7terrain18BoundedWaterObject12getDimensionEv"></span><span id="_CPPv2N5simul7terrain18BoundedWaterObject12getDimensionEv"></span><span id="simul::terrain::BoundedWaterObject::getDimension"></span><span class="target" id="classsimul_1_1terrain_1_1_bounded_water_object_1ae05dcd6bfc0443695eb03e52adb2ad27"></span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getDimension</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain18BoundedWaterObject12getDimensionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the dimension of the center of the water object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain18BoundedWaterObject11setRotationEf">
+<span id="_CPPv3N5simul7terrain18BoundedWaterObject11setRotationEf"></span><span id="_CPPv2N5simul7terrain18BoundedWaterObject11setRotationEf"></span><span id="simul::terrain::BoundedWaterObject::setRotation__float"></span><span class="target" id="classsimul_1_1terrain_1_1_bounded_water_object_1a53f31803d682d8fc8cea05ea89a13279"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setRotation</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">newRotation</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain18BoundedWaterObject11setRotationEf" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set the rotation of the center of the water object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain18BoundedWaterObject11getRotationEv">
+<span id="_CPPv3N5simul7terrain18BoundedWaterObject11getRotationEv"></span><span id="_CPPv2N5simul7terrain18BoundedWaterObject11getRotationEv"></span><span id="simul::terrain::BoundedWaterObject::getRotation"></span><span class="target" id="classsimul_1_1terrain_1_1_bounded_water_object_1a84cb64c01757fe30add9bb41ec02d495"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getRotation</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain18BoundedWaterObject11getRotationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the rotation of the center of the water object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain18BoundedWaterObject14getQuadDensityEv">
+<span id="_CPPv3N5simul7terrain18BoundedWaterObject14getQuadDensityEv"></span><span id="_CPPv2N5simul7terrain18BoundedWaterObject14getQuadDensityEv"></span><span id="simul::terrain::BoundedWaterObject::getQuadDensity"></span><span class="target" id="classsimul_1_1terrain_1_1_bounded_water_object_1a4d661966b57431f18775b0d1bf329ad5"></span><span class="n"><span class="pre">int2</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getQuadDensity</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain18BoundedWaterObject14getQuadDensityEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the dimensions of how many quads the surface of the water object is using. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain18BoundedWaterObject16getTotalVerticesEv">
+<span id="_CPPv3N5simul7terrain18BoundedWaterObject16getTotalVerticesEv"></span><span id="_CPPv2N5simul7terrain18BoundedWaterObject16getTotalVerticesEv"></span><span id="simul::terrain::BoundedWaterObject::getTotalVertices"></span><span class="target" id="classsimul_1_1terrain_1_1_bounded_water_object_1a57879f07b11fa3b3e111bdcd1d70d6a6"></span><span class="n"><span class="pre">uint</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getTotalVertices</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul7terrain18BoundedWaterObject16getTotalVerticesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the total verticies used to render the water object. </p>
+</dd></dl>
+
 </div>
+</dd></dl>
+
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4N5simul7terrain21WaterMeshObjectValuesE">
 <span id="_CPPv3N5simul7terrain21WaterMeshObjectValuesE"></span><span id="_CPPv2N5simul7terrain21WaterMeshObjectValuesE"></span><span id="simul::terrain::WaterMeshObjectValues"></span><span class="target" id="structsimul_1_1terrain_1_1_water_mesh_object_values"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">WaterMeshObjectValues</span></span></span><a class="headerlink" href="#_CPPv4N5simul7terrain21WaterMeshObjectValuesE" title="Permalink to this definition">¶</a><br /></dt>

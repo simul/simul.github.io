@@ -144,38 +144,80 @@
              
   <section id="base-gpu-sky-generator">
 <h1>Base GPU Sky Generator<a class="headerlink" href="#base-gpu-sky-generator" title="Permalink to this heading">¶</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find class “simul::sky::BaseGpuSkyGenerator” in doxygen xml output for project “Simul” from directory: D:/Jarvis/Documentation/simulVersion/4.4/build/Docs/doxygen/xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky19BaseGpuSkyGeneratorE">
+<span id="_CPPv3N5simul3sky19BaseGpuSkyGeneratorE"></span><span id="_CPPv2N5simul3sky19BaseGpuSkyGeneratorE"></span><span id="simul::sky::BaseGpuSkyGenerator"></span><span class="target" id="classsimul_1_1sky_1_1_base_gpu_sky_generator"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BaseGpuSkyGenerator</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky19BaseGpuSkyGeneratorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky19BaseGpuSkyGenerator10GetEnabledEv">
+<span id="_CPPv3NK5simul3sky19BaseGpuSkyGenerator10GetEnabledEv"></span><span id="_CPPv2NK5simul3sky19BaseGpuSkyGenerator10GetEnabledEv"></span><span id="simul::sky::BaseGpuSkyGenerator::GetEnabledC"></span><span class="target" id="classsimul_1_1sky_1_1_base_gpu_sky_generator_1a88e9d285a0191ed8caf8e77a94125e06"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetEnabled</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky19BaseGpuSkyGenerator10GetEnabledEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether this GPU sky generator should be used to calculate the sky. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky19BaseGpuSkyGenerator20RestoreDeviceObjectsEPN8platform13crossplatform14RenderPlatformE">
+<span id="_CPPv3N5simul3sky19BaseGpuSkyGenerator20RestoreDeviceObjectsEPN8platform13crossplatform14RenderPlatformE"></span><span id="_CPPv2N5simul3sky19BaseGpuSkyGenerator20RestoreDeviceObjectsEPN8platform13crossplatform14RenderPlatformE"></span><span id="simul::sky::BaseGpuSkyGenerator::RestoreDeviceObjects__platform::crossplatform::RenderPlatformP"></span><span class="target" id="classsimul_1_1sky_1_1_base_gpu_sky_generator_1a31253c67307fd48f1c0e2ad85c401ce0"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RestoreDeviceObjects</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">RenderPlatform</span></span><span class="p"><span class="pre">*</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul3sky19BaseGpuSkyGenerator20RestoreDeviceObjectsEPN8platform13crossplatform14RenderPlatformE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Platform-dependent function called when initializing the Sky Generator. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky19BaseGpuSkyGenerator23InvalidateDeviceObjectsEv">
+<span id="_CPPv3N5simul3sky19BaseGpuSkyGenerator23InvalidateDeviceObjectsEv"></span><span id="_CPPv2N5simul3sky19BaseGpuSkyGenerator23InvalidateDeviceObjectsEv"></span><span id="simul::sky::BaseGpuSkyGenerator::InvalidateDeviceObjects"></span><span class="target" id="classsimul_1_1sky_1_1_base_gpu_sky_generator_1a9ee51aa438d295939b3314d406f5074d"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">InvalidateDeviceObjects</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul3sky19BaseGpuSkyGenerator23InvalidateDeviceObjectsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Platform-dependent function called when uninitializing the Sky Generator. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky19BaseGpuSkyGenerator11LoadShadersEv">
+<span id="_CPPv3N5simul3sky19BaseGpuSkyGenerator11LoadShadersEv"></span><span id="_CPPv2N5simul3sky19BaseGpuSkyGenerator11LoadShadersEv"></span><span id="simul::sky::BaseGpuSkyGenerator::LoadShaders"></span><span class="target" id="classsimul_1_1sky_1_1_base_gpu_sky_generator_1a8b5b8857fdeed0bd7eaf3797f0bf888e"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LoadShaders</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul3sky19BaseGpuSkyGenerator11LoadShadersEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Platform-dependent function to reload the shaders - only use this for debug purposes. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul3sky19BaseGpuSkyGenerator23CanPerformGPUGenerationEv">
+<span id="_CPPv3NK5simul3sky19BaseGpuSkyGenerator23CanPerformGPUGenerationEv"></span><span id="_CPPv2NK5simul3sky19BaseGpuSkyGenerator23CanPerformGPUGenerationEv"></span><span id="simul::sky::BaseGpuSkyGenerator::CanPerformGPUGenerationC"></span><span class="target" id="classsimul_1_1sky_1_1_base_gpu_sky_generator_1a1b3f9e5280cf569ab12fd1173a9ebfdc"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CanPerformGPUGeneration</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul3sky19BaseGpuSkyGenerator23CanPerformGPUGenerationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Return true if the derived class can make sky tables using the GPU. </p>
+</dd></dl>
+
 </div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenstruct: Cannot find class “simul::sky::GpuTexGenStats” in doxygen xml output for project “Simul” from directory: D:/Jarvis/Documentation/simulVersion/4.4/build/Docs/doxygen/xml</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenstruct: Cannot find class “simul::sky::GpuMoon” in doxygen xml output for project “Simul” from directory: D:/Jarvis/Documentation/simulVersion/4.4/build/Docs/doxygen/xml</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenstruct: Cannot find class “simul::sky::GpuPhysicalSkyParameters” in doxygen xml output for project “Simul” from directory: D:/Jarvis/Documentation/simulVersion/4.4/build/Docs/doxygen/xml</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenstruct: Cannot find class “simul::sky::GpuColourTextureSpec” in doxygen xml output for project “Simul” from directory: D:/Jarvis/Documentation/simulVersion/4.4/build/Docs/doxygen/xml</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenstruct: Cannot find class “simul::sky::GpuSkyParameters” in doxygen xml output for project “Simul” from directory: D:/Jarvis/Documentation/simulVersion/4.4/build/Docs/doxygen/xml</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenstruct: Cannot find class “simul::sky::GpuSkyAtmosphereParameters” in doxygen xml output for project “Simul” from directory: D:/Jarvis/Documentation/simulVersion/4.4/build/Docs/doxygen/xml</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenstruct: Cannot find class “simul::sky::GpuSkyInfraredParameters” in doxygen xml output for project “Simul” from directory: D:/Jarvis/Documentation/simulVersion/4.4/build/Docs/doxygen/xml</p>
-</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky14GpuTexGenStatsE">
+<span id="_CPPv3N5simul3sky14GpuTexGenStatsE"></span><span id="_CPPv2N5simul3sky14GpuTexGenStatsE"></span><span id="simul::sky::GpuTexGenStats"></span><span class="target" id="structsimul_1_1sky_1_1_gpu_tex_gen_stats"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GpuTexGenStats</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky14GpuTexGenStatsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Subclassed by <a class="reference internal" href="#structsimul_1_1sky_1_1_gpu_sky_parameters"><span class="std std-ref">simul::sky::GpuSkyParameters</span></a></p>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky7GpuMoonE">
+<span id="_CPPv3N5simul3sky7GpuMoonE"></span><span id="_CPPv2N5simul3sky7GpuMoonE"></span><span id="simul::sky::GpuMoon"></span><span class="target" id="structsimul_1_1sky_1_1_gpu_moon"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GpuMoon</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky7GpuMoonE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky24GpuPhysicalSkyParametersE">
+<span id="_CPPv3N5simul3sky24GpuPhysicalSkyParametersE"></span><span id="_CPPv2N5simul3sky24GpuPhysicalSkyParametersE"></span><span id="simul::sky::GpuPhysicalSkyParameters"></span><span class="target" id="structsimul_1_1sky_1_1_gpu_physical_sky_parameters"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GpuPhysicalSkyParameters</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky24GpuPhysicalSkyParametersE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky20GpuColourTextureSpecE">
+<span id="_CPPv3N5simul3sky20GpuColourTextureSpecE"></span><span id="_CPPv2N5simul3sky20GpuColourTextureSpecE"></span><span id="simul::sky::GpuColourTextureSpec"></span><span class="target" id="structsimul_1_1sky_1_1_gpu_colour_texture_spec"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GpuColourTextureSpec</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky20GpuColourTextureSpecE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky16GpuSkyParametersE">
+<span id="_CPPv3N5simul3sky16GpuSkyParametersE"></span><span id="_CPPv2N5simul3sky16GpuSkyParametersE"></span><span id="simul::sky::GpuSkyParameters"></span><span class="target" id="structsimul_1_1sky_1_1_gpu_sky_parameters"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GpuSkyParameters</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N5simul3sky14GpuTexGenStatsE" title="simul::sky::GpuTexGenStats"><span class="n"><span class="pre">GpuTexGenStats</span></span></a><a class="headerlink" href="#_CPPv4N5simul3sky16GpuSkyParametersE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky26GpuSkyAtmosphereParametersE">
+<span id="_CPPv3N5simul3sky26GpuSkyAtmosphereParametersE"></span><span id="_CPPv2N5simul3sky26GpuSkyAtmosphereParametersE"></span><span id="simul::sky::GpuSkyAtmosphereParameters"></span><span class="target" id="structsimul_1_1sky_1_1_gpu_sky_atmosphere_parameters"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GpuSkyAtmosphereParameters</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky26GpuSkyAtmosphereParametersE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul3sky24GpuSkyInfraredParametersE">
+<span id="_CPPv3N5simul3sky24GpuSkyInfraredParametersE"></span><span id="_CPPv2N5simul3sky24GpuSkyInfraredParametersE"></span><span id="simul::sky::GpuSkyInfraredParameters"></span><span class="target" id="structsimul_1_1sky_1_1_gpu_sky_infrared_parameters"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GpuSkyInfraredParameters</span></span></span><a class="headerlink" href="#_CPPv4N5simul3sky24GpuSkyInfraredParametersE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
 </section>
 
 

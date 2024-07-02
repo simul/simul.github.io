@@ -20,8 +20,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" >
     <link rel="search" title="Search" href="../../search.html" >
-    <link rel="next" title="Base GPU Cloud Generator" href="gpucloudgenerator.html" >
-    <link rel="prev" title="Weather Renderer" href="weatherrenderer.html" > 
+    <link rel="next" title="Mixed Resolution Compositor" href="mixedresolutioncompositor.html" >
+    <link rel="prev" title="Base GPU Cloud Generator" href="gpucloudgenerator.html" > 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -65,29 +65,25 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../referenceindex.html">Reference</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../base.html">Base</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../clouds.html">Clouds</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="trueskyrenderer.html">True Sky Renderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cloudrenderer.html">Cloud Renderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cloudlighting.html">Cloud Lighting</a></li>
-<li class="toctree-l3"><a class="reference internal" href="weatherrenderer.html">Weather Renderer</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Lightning Renderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="gpucloudgenerator.html">Base GPU Cloud Generator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="precipitationrenderer.html">Precipitation Renderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="environment.html">Environment</a></li>
-<li class="toctree-l3"><a class="reference internal" href="skylight.html">Skylight</a></li>
-<li class="toctree-l3"><a class="reference internal" href="globalweatherrenderer.html">Global Weather Renderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="mixedresolutioncompositor.html">Mixed Resolution Compositor</a></li>
-<li class="toctree-l3"><a class="reference internal" href="tworesframebuffer.html">Two Res Frambuffer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cellularcloudgrid.html">Cellular Cloud Grid</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cellularcloudnode.html">Cellular Cloud Node</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cloudinterface.html">Cloud Interface Classes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cloudrenderingoptions.html">Cloud Rendering Options</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cloudwindow.html">Cloud Window</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cloudwindoweditor.html">Cloud Window Editor</a></li>
-<li class="toctree-l3"><a class="reference internal" href="windowupdater.html">Window Updater</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cloudkeyframe.html">Cloud Keyframe</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cloudkeyframer.html">Cloud Keyframer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cloudlighting.html">Cloud Lighting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cloudrenderer.html">Cloud Renderer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cloudrenderingoptions.html">Cloud Rendering Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cloudwindow.html">Cloud Window</a></li>
+<li class="toctree-l3"><a class="reference internal" href="environment.html">Environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gpucloudgenerator.html">Base GPU Cloud Generator</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Lightning Renderer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mixedresolutioncompositor.html">Mixed Resolution Compositor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="precipitationrenderer.html">Precipitation Renderer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skylight.html">Skylight</a></li>
 <li class="toctree-l3"><a class="reference internal" href="storm.html">Storm</a></li>
-<li class="toctree-l3"><a class="reference internal" href="lightningrenderinterfacestructs.html">Lightning Render Interface Structs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="trueskyrenderer.html">True Sky Renderer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tworesframebuffer.html">Two Res Frambuffer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="weatherrenderer.html">Weather Renderer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="windowupdater.html">Window Updater</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../sky.html">Sky</a></li>
@@ -158,18 +154,71 @@
              
   <section id="lightning-renderer">
 <h1>Lightning Renderer<a class="headerlink" href="#lightning-renderer" title="Permalink to this heading">¶</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find class “simul::clouds::LightningRenderer” in doxygen xml output for project “Simul” from directory: D:/Jarvis/Documentation/simulVersion/4.4/build/Docs/doxygen/xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds17LightningRendererE">
+<span id="_CPPv3N5simul6clouds17LightningRendererE"></span><span id="_CPPv2N5simul6clouds17LightningRendererE"></span><span id="simul::clouds::LightningRenderer"></span><span class="target" id="classsimul_1_1clouds_1_1_lightning_renderer"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LightningRenderer</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds17LightningRendererE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The renderer for lightning. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds17LightningRenderer17LightningRendererEPN5simul3sky16BaseSkyInterfaceE">
+<span id="_CPPv3N5simul6clouds17LightningRenderer17LightningRendererEPN5simul3sky16BaseSkyInterfaceE"></span><span id="_CPPv2N5simul6clouds17LightningRenderer17LightningRendererEPN5simul3sky16BaseSkyInterfaceE"></span><span id="simul::clouds::LightningRenderer::LightningRenderer__simul::sky::BaseSkyInterfaceP"></span><span class="target" id="classsimul_1_1clouds_1_1_lightning_renderer_1a265f9f5a56d3448d2f1586e24420e536"></span><span class="sig-name descname"><span class="n"><span class="pre">LightningRenderer</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../Sky/skyinterface.html#_CPPv4N5simul3sky16BaseSkyInterfaceE" title="simul::sky::BaseSkyInterface"><span class="n"><span class="pre">BaseSkyInterface</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">sk</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds17LightningRenderer17LightningRendererEPN5simul3sky16BaseSkyInterfaceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Constructor. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds17LightningRendererD0Ev">
+<span id="_CPPv3N5simul6clouds17LightningRendererD0Ev"></span><span id="_CPPv2N5simul6clouds17LightningRendererD0Ev"></span><span id="simul::clouds::LightningRenderer::~LightningRenderer"></span><span class="target" id="classsimul_1_1clouds_1_1_lightning_renderer_1a2121d9035113c2b8c18d7cf797a3684a"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~LightningRenderer</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds17LightningRendererD0Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Destructor. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds17LightningRenderer20RestoreDeviceObjectsEPN8platform13crossplatform14RenderPlatformE">
+<span id="_CPPv3N5simul6clouds17LightningRenderer20RestoreDeviceObjectsEPN8platform13crossplatform14RenderPlatformE"></span><span id="_CPPv2N5simul6clouds17LightningRenderer20RestoreDeviceObjectsEPN8platform13crossplatform14RenderPlatformE"></span><span id="simul::clouds::LightningRenderer::RestoreDeviceObjects__platform::crossplatform::RenderPlatformP"></span><span class="target" id="classsimul_1_1clouds_1_1_lightning_renderer_1a7895b1a72e3325d525c576591b01a654"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RestoreDeviceObjects</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">RenderPlatform</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">r</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds17LightningRenderer20RestoreDeviceObjectsEPN8platform13crossplatform14RenderPlatformE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Platform-dependent function called when initializing the lightning renderer. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds17LightningRenderer23InvalidateDeviceObjectsEv">
+<span id="_CPPv3N5simul6clouds17LightningRenderer23InvalidateDeviceObjectsEv"></span><span id="_CPPv2N5simul6clouds17LightningRenderer23InvalidateDeviceObjectsEv"></span><span id="simul::clouds::LightningRenderer::InvalidateDeviceObjects"></span><span class="target" id="classsimul_1_1clouds_1_1_lightning_renderer_1ab0af35061737ce9994fd96d4681ae139"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">InvalidateDeviceObjects</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds17LightningRenderer23InvalidateDeviceObjectsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Platform-dependent function called when uninitializing the lightning renderer. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds17LightningRenderer15PreRenderUpdateERN8platform13crossplatform21GraphicsDeviceContextEf">
+<span id="_CPPv3N5simul6clouds17LightningRenderer15PreRenderUpdateERN8platform13crossplatform21GraphicsDeviceContextEf"></span><span id="_CPPv2N5simul6clouds17LightningRenderer15PreRenderUpdateERN8platform13crossplatform21GraphicsDeviceContextEf"></span><span id="simul::clouds::LightningRenderer::PreRenderUpdate__platform::crossplatform::GraphicsDeviceContextR.float"></span><span class="target" id="classsimul_1_1clouds_1_1_lightning_renderer_1a47c5a6a452a8c5f88d2d69633072c98a"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PreRenderUpdate</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">GraphicsDeviceContext</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">deviceContext</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">real_time</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds17LightningRenderer15PreRenderUpdateERN8platform13crossplatform21GraphicsDeviceContextEf" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Once per-frame update. Do this before any rendering each frame. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds17LightningRenderer6RenderERN8platform13crossplatform21GraphicsDeviceContextEP14CloudKeyframerPN8platform13crossplatform7TextureE4vec4RKN6clouds24TransparencyAtmosphericsEfPN6clouds15WeatherRendererE">
+<span id="_CPPv3N5simul6clouds17LightningRenderer6RenderERN8platform13crossplatform21GraphicsDeviceContextEP14CloudKeyframerPN8platform13crossplatform7TextureE4vec4RKN6clouds24TransparencyAtmosphericsEfPN6clouds15WeatherRendererE"></span><span id="_CPPv2N5simul6clouds17LightningRenderer6RenderERN8platform13crossplatform21GraphicsDeviceContextEP14CloudKeyframerPN8platform13crossplatform7TextureE4vec4RKN6clouds24TransparencyAtmosphericsEfPN6clouds15WeatherRendererE"></span><span id="simul::clouds::LightningRenderer::Render__platform::crossplatform::GraphicsDeviceContextR.CloudKeyframerP.platform::crossplatform::TextureP.vec4.clouds::TransparencyAtmosphericsCR.float.clouds::WeatherRendererP"></span><span class="target" id="classsimul_1_1clouds_1_1_lightning_renderer_1a13034a7d069055273e721ef3d0b9b128"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Render</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">GraphicsDeviceContext</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">deviceContext</span></span>, <a class="reference internal" href="../../API/apicloudkeyframer.html#_CPPv4N5simul6clouds14CloudKeyframerE" title="simul::clouds::CloudKeyframer"><span class="n"><span class="pre">CloudKeyframer</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">cloudKeyframer</span></span>, <span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Texture</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">depth_tex</span></span>, <span class="n"><span class="pre">vec4</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">depthViewportXYWH</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">clouds</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">TransparencyAtmospherics</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">t</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">brightnessToUnity</span></span>, <span class="n"><span class="pre">clouds</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../../API/apiweatherrenderer.html#_CPPv4N5simul6clouds15WeatherRendererE" title="simul::clouds::WeatherRenderer"><span class="n"><span class="pre">WeatherRenderer</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">weatherRenderer</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds17LightningRenderer6RenderERN8platform13crossplatform21GraphicsDeviceContextEP14CloudKeyframerPN8platform13crossplatform7TextureE4vec4RKN6clouds24TransparencyAtmosphericsEfPN6clouds15WeatherRendererE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Main render call. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds17LightningRenderer13RenderOverlayERN8platform13crossplatform21GraphicsDeviceContextEP5Storm">
+<span id="_CPPv3N5simul6clouds17LightningRenderer13RenderOverlayERN8platform13crossplatform21GraphicsDeviceContextEP5Storm"></span><span id="_CPPv2N5simul6clouds17LightningRenderer13RenderOverlayERN8platform13crossplatform21GraphicsDeviceContextEP5Storm"></span><span id="simul::clouds::LightningRenderer::RenderOverlay__platform::crossplatform::GraphicsDeviceContextR.StormP"></span><span class="target" id="classsimul_1_1clouds_1_1_lightning_renderer_1ab55c0aa785665fb33f3bd92d922232de"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RenderOverlay</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">GraphicsDeviceContext</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">deviceContext</span></span>, <a class="reference internal" href="storm.html#_CPPv4N5simul6clouds5StormE" title="simul::clouds::Storm"><span class="n"><span class="pre">Storm</span></span></a><span class="p"><span class="pre">*</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds17LightningRenderer13RenderOverlayERN8platform13crossplatform21GraphicsDeviceContextEP5Storm" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Render debug information. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds17LightningRenderer16RecompileShadersEv">
+<span id="_CPPv3N5simul6clouds17LightningRenderer16RecompileShadersEv"></span><span id="_CPPv2N5simul6clouds17LightningRenderer16RecompileShadersEv"></span><span id="simul::clouds::LightningRenderer::RecompileShaders"></span><span class="target" id="classsimul_1_1clouds_1_1_lightning_renderer_1ac0cd254773786be6a9094e2f8e73afa3"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RecompileShaders</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds17LightningRenderer16RecompileShadersEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Platform-dependent function to reload the shaders - only use this for debug purposes. </p>
+</dd></dl>
+
 </div>
+</dd></dl>
+
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="weatherrenderer.html" class="btn btn-neutral float-left" title="Weather Renderer" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="gpucloudgenerator.html" class="btn btn-neutral float-right" title="Base GPU Cloud Generator" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="gpucloudgenerator.html" class="btn btn-neutral float-left" title="Base GPU Cloud Generator" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="mixedresolutioncompositor.html" class="btn btn-neutral float-right" title="Mixed Resolution Compositor" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr>

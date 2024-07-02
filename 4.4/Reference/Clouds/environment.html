@@ -20,8 +20,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" >
     <link rel="search" title="Search" href="../../search.html" >
-    <link rel="next" title="Skylight" href="skylight.html" >
-    <link rel="prev" title="Precipitation Renderer" href="precipitationrenderer.html" > 
+    <link rel="next" title="Base GPU Cloud Generator" href="gpucloudgenerator.html" >
+    <link rel="prev" title="Cloud Window" href="cloudwindow.html" > 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -65,29 +65,25 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../referenceindex.html">Reference</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../base.html">Base</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../clouds.html">Clouds</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="trueskyrenderer.html">True Sky Renderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cloudrenderer.html">Cloud Renderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cloudlighting.html">Cloud Lighting</a></li>
-<li class="toctree-l3"><a class="reference internal" href="weatherrenderer.html">Weather Renderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="lightningrenderer.html">Lightning Renderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="gpucloudgenerator.html">Base GPU Cloud Generator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="precipitationrenderer.html">Precipitation Renderer</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Environment</a></li>
-<li class="toctree-l3"><a class="reference internal" href="skylight.html">Skylight</a></li>
-<li class="toctree-l3"><a class="reference internal" href="globalweatherrenderer.html">Global Weather Renderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="mixedresolutioncompositor.html">Mixed Resolution Compositor</a></li>
-<li class="toctree-l3"><a class="reference internal" href="tworesframebuffer.html">Two Res Frambuffer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cellularcloudgrid.html">Cellular Cloud Grid</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cellularcloudnode.html">Cellular Cloud Node</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cloudinterface.html">Cloud Interface Classes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cloudrenderingoptions.html">Cloud Rendering Options</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cloudwindow.html">Cloud Window</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cloudwindoweditor.html">Cloud Window Editor</a></li>
-<li class="toctree-l3"><a class="reference internal" href="windowupdater.html">Window Updater</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cloudkeyframe.html">Cloud Keyframe</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cloudkeyframer.html">Cloud Keyframer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cloudlighting.html">Cloud Lighting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cloudrenderer.html">Cloud Renderer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cloudrenderingoptions.html">Cloud Rendering Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cloudwindow.html">Cloud Window</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gpucloudgenerator.html">Base GPU Cloud Generator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lightningrenderer.html">Lightning Renderer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mixedresolutioncompositor.html">Mixed Resolution Compositor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="precipitationrenderer.html">Precipitation Renderer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skylight.html">Skylight</a></li>
 <li class="toctree-l3"><a class="reference internal" href="storm.html">Storm</a></li>
-<li class="toctree-l3"><a class="reference internal" href="lightningrenderinterfacestructs.html">Lightning Render Interface Structs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="trueskyrenderer.html">True Sky Renderer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tworesframebuffer.html">Two Res Frambuffer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="weatherrenderer.html">Weather Renderer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="windowupdater.html">Window Updater</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../sky.html">Sky</a></li>
@@ -158,18 +154,151 @@
              
   <section id="environment">
 <h1>Environment<a class="headerlink" href="#environment" title="Permalink to this heading">¶</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find class “simul::clouds::Environment” in doxygen xml output for project “Simul” from directory: D:/Jarvis/Documentation/simulVersion/4.4/build/Docs/doxygen/xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11EnvironmentE">
+<span id="_CPPv3N5simul6clouds11EnvironmentE"></span><span id="_CPPv2N5simul6clouds11EnvironmentE"></span><span id="simul::clouds::Environment"></span><span class="target" id="classsimul_1_1clouds_1_1_environment"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Environment</span></span></span><br /></dt>
+<dd><p>The main class that manages environment data. Usually, you will create a single instance of <a class="reference internal" href="#classsimul_1_1clouds_1_1_environment"><span class="std std-ref">Environment</span></a>, which will persist while your 3D game or simulation world is active.</p>
+<p>If you use environment directly and not via <a class="reference internal" href="trueskyrenderer.html#classsimul_1_1clouds_1_1_true_sky_renderer"><span class="std std-ref">TrueSkyRenderer</span></a>, you must call the following each frame:</p>
+<p>SetRealTime(time_seconds); skyKeyframer-&gt;TimeStep(step_days); <a class="reference internal" href="#classsimul_1_1clouds_1_1_environment_1a567ea9b5643f97a2c1ff35346e91efc7"><span class="std std-ref">Update()</span></a>; </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11Environment11EnvironmentEPN8platform4core15MemoryInterfaceE">
+<span id="_CPPv3N5simul6clouds11Environment11EnvironmentEPN8platform4core15MemoryInterfaceE"></span><span id="_CPPv2N5simul6clouds11Environment11EnvironmentEPN8platform4core15MemoryInterfaceE"></span><span id="simul::clouds::Environment::Environment__platform::core::MemoryInterfaceP"></span><span class="target" id="classsimul_1_1clouds_1_1_environment_1a1d368f0e2d873f0dbab3e6868961c726"></span><span class="sig-name descname"><span class="n"><span class="pre">Environment</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">core</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">MemoryInterface</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">mem</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">NULL</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds11Environment11EnvironmentEPN8platform4core15MemoryInterfaceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Constructor - initialize with an optional memory allocator. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11EnvironmentD0Ev">
+<span id="_CPPv3N5simul6clouds11EnvironmentD0Ev"></span><span id="_CPPv2N5simul6clouds11EnvironmentD0Ev"></span><span id="simul::clouds::Environment::~Environment"></span><span class="target" id="classsimul_1_1clouds_1_1_environment_1a9614c355d201614367392f9efd123e30"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~Environment</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds11EnvironmentD0Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Destructor. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11Environment16CreateSubObjectsEv">
+<span id="_CPPv3N5simul6clouds11Environment16CreateSubObjectsEv"></span><span id="_CPPv2N5simul6clouds11Environment16CreateSubObjectsEv"></span><span id="simul::clouds::Environment::CreateSubObjects"></span><span class="target" id="classsimul_1_1clouds_1_1_environment_1abfe5bcbcb3265161d51b64e6d7cc5f03"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CreateSubObjects</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds11Environment16CreateSubObjectsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Call this to create the keyframer sub-objects. If not called before the first <a class="reference internal" href="#classsimul_1_1clouds_1_1_environment_1a567ea9b5643f97a2c1ff35346e91efc7"><span class="std std-ref">Update()</span></a>, it will be called from there. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11Environment11SetRealTimeEd">
+<span id="_CPPv3N5simul6clouds11Environment11SetRealTimeEd"></span><span id="_CPPv2N5simul6clouds11Environment11SetRealTimeEd"></span><span id="simul::clouds::Environment::SetRealTime__double"></span><span class="target" id="classsimul_1_1clouds_1_1_environment_1a053be1d40e87f254abef9cf3af583052"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetRealTime</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">rt_sec</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Call this once per frame before <a class="reference internal" href="#classsimul_1_1clouds_1_1_environment_1a567ea9b5643f97a2c1ff35346e91efc7"><span class="std std-ref">Update()</span></a> if you use real-time updates for clouds, rain, lightning, sky keyframes etc. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11Environment6UpdateEddd">
+<span id="_CPPv3N5simul6clouds11Environment6UpdateEddd"></span><span id="_CPPv2N5simul6clouds11Environment6UpdateEddd"></span><span id="simul::clouds::Environment::Update__double.double.double"></span><span class="target" id="classsimul_1_1clouds_1_1_environment_1a567ea9b5643f97a2c1ff35346e91efc7"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Update</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">latitudeRadians</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">longitudeRadians</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">headingRadians</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Call this once per-frame. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds11Environment4SaveERN5simul3sky6OutputE">
+<span id="_CPPv3NK5simul6clouds11Environment4SaveERN5simul3sky6OutputE"></span><span id="_CPPv2NK5simul6clouds11Environment4SaveERN5simul3sky6OutputE"></span><span id="simul::clouds::Environment::Save__simul::sky::OutputRC"></span><span class="target" id="classsimul_1_1clouds_1_1_environment_1ac5c6ad8b00d709b46a97dd291f3e2518"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Save</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Output</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">os</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds11Environment4SaveERN5simul3sky6OutputE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Save a sky sequence as binary (the .seq file format); this is a low-overhead method of storing and retrieving sequences, but is subject to format changes, so sequences should generally be stored as text (see <a class="reference internal" href="#classsimul_1_1clouds_1_1_environment_1a52d140d08a7683cd7afc86d1c2fe7882"><span class="std std-ref">SaveToText</span></a>). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11Environment4LoadERN5simul3sky5InputE">
+<span id="_CPPv3N5simul6clouds11Environment4LoadERN5simul3sky5InputE"></span><span id="_CPPv2N5simul6clouds11Environment4LoadERN5simul3sky5InputE"></span><span id="simul::clouds::Environment::Load__simul::sky::InputR"></span><span class="target" id="classsimul_1_1clouds_1_1_environment_1ac34b326428158e0ac0721b57ca31929f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Load</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Input</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">is</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds11Environment4LoadERN5simul3sky5InputE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Load a sequence from the binary .seq format. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds11Environment10SaveToTextERN8platform13crossplatform10TextOutputE">
+<span id="_CPPv3NK5simul6clouds11Environment10SaveToTextERN8platform13crossplatform10TextOutputE"></span><span id="_CPPv2NK5simul6clouds11Environment10SaveToTextERN8platform13crossplatform10TextOutputE"></span><span id="simul::clouds::Environment::SaveToText__platform::crossplatform::TextOutputRC"></span><span class="target" id="classsimul_1_1clouds_1_1_environment_1a52d140d08a7683cd7afc86d1c2fe7882"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SaveToText</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">TextOutput</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">output</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds11Environment10SaveToTextERN8platform13crossplatform10TextOutputE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Save a sky sequence as text (the .sq file format). This is the standard means of storing sequences. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11Environment12LoadFromTextERN8platform13crossplatform9TextInputE">
+<span id="_CPPv3N5simul6clouds11Environment12LoadFromTextERN8platform13crossplatform9TextInputE"></span><span id="_CPPv2N5simul6clouds11Environment12LoadFromTextERN8platform13crossplatform9TextInputE"></span><span id="simul::clouds::Environment::LoadFromText__platform::crossplatform::TextInputR"></span><span class="target" id="classsimul_1_1clouds_1_1_environment_1a6fa41a262e62565e199fe6451b95a71a"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LoadFromText</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">crossplatform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">TextInput</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">input</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds11Environment12LoadFromTextERN8platform13crossplatform9TextInputE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Load a sequence from the text .sq format. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11Environment3NewEv">
+<span id="_CPPv3N5simul6clouds11Environment3NewEv"></span><span id="_CPPv2N5simul6clouds11Environment3NewEv"></span><span id="simul::clouds::Environment::New"></span><span class="target" id="classsimul_1_1clouds_1_1_environment_1a3eda3dd6cda770c2d61c81513e51e62b"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">New</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds11Environment3NewEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Clear the sequence. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11Environment5ResetEv">
+<span id="_CPPv3N5simul6clouds11Environment5ResetEv"></span><span id="_CPPv2N5simul6clouds11Environment5ResetEv"></span><span id="simul::clouds::Environment::Reset"></span><span class="target" id="classsimul_1_1clouds_1_1_environment_1a46c2b63a335e368b085bd57f6dbcce9e"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Reset</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds11Environment5ResetEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Force recalculation of any cached values. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11Environment17GetCloudKeyframerEN3sky3uidE">
+<span id="_CPPv3N5simul6clouds11Environment17GetCloudKeyframerEN3sky3uidE"></span><span id="_CPPv2N5simul6clouds11Environment17GetCloudKeyframerEN3sky3uidE"></span><span id="simul::clouds::Environment::GetCloudKeyframer__sky::uid"></span><span class="target" id="classsimul_1_1clouds_1_1_environment_1a169d411a622accde0df9595c6cd6e28c"></span><a class="reference internal" href="../../API/apicloudkeyframer.html#_CPPv4N5simul6clouds14CloudKeyframerE" title="simul::clouds::CloudKeyframer"><span class="n"><span class="pre">CloudKeyframer</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">GetCloudKeyframer</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">uid</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">uid</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Get the cloud keyframer with the specified uid. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11Environment20DeleteCloudKeyframerEN3sky3uidE">
+<span id="_CPPv3N5simul6clouds11Environment20DeleteCloudKeyframerEN3sky3uidE"></span><span id="_CPPv2N5simul6clouds11Environment20DeleteCloudKeyframerEN3sky3uidE"></span><span id="simul::clouds::Environment::DeleteCloudKeyframer__sky::uid"></span><span class="target" id="classsimul_1_1clouds_1_1_environment_1a98542820574af5929d74b4099c8647ec"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DeleteCloudKeyframer</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">uid</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">uid</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Delete the specified cloud layer. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11Environment19DeleteCloudKeyframeEN3sky3uidE">
+<span id="_CPPv3N5simul6clouds11Environment19DeleteCloudKeyframeEN3sky3uidE"></span><span id="_CPPv2N5simul6clouds11Environment19DeleteCloudKeyframeEN3sky3uidE"></span><span id="simul::clouds::Environment::DeleteCloudKeyframe__sky::uid"></span><span class="target" id="classsimul_1_1clouds_1_1_environment_1a306171d6984f5776ba68c30f1cd17e74"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DeleteCloudKeyframe</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">uid</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">uid</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds11Environment19DeleteCloudKeyframeEN3sky3uidE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Delete the specified cloud keyframe. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds11Environment21GetKeyframersChecksumEv">
+<span id="_CPPv3NK5simul6clouds11Environment21GetKeyframersChecksumEv"></span><span id="_CPPv2NK5simul6clouds11Environment21GetKeyframersChecksumEv"></span><span id="simul::clouds::Environment::GetKeyframersChecksumC"></span><span class="target" id="classsimul_1_1clouds_1_1_environment_1a1ab5a3a4a28f02023cf05bce269cfaa1"></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetKeyframersChecksum</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds11Environment21GetKeyframersChecksumEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A checksum for the keyframer setup. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11Environment20CreateCloudKeyframerEPN8platform4core15MemoryInterfaceEN3sky3uidE">
+<span id="_CPPv3N5simul6clouds11Environment20CreateCloudKeyframerEPN8platform4core15MemoryInterfaceEN3sky3uidE"></span><span id="_CPPv2N5simul6clouds11Environment20CreateCloudKeyframerEPN8platform4core15MemoryInterfaceEN3sky3uidE"></span><span id="simul::clouds::Environment::CreateCloudKeyframer__platform::core::MemoryInterfaceP.sky::uid"></span><span class="target" id="classsimul_1_1clouds_1_1_environment_1aa41f1f354a6b83104594b780886d90ad"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">clouds</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../../API/apicloudkeyframer.html#_CPPv4N5simul6clouds14CloudKeyframerE" title="simul::clouds::CloudKeyframer"><span class="n"><span class="pre">CloudKeyframer</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">CreateCloudKeyframer</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">core</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">MemoryInterface</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">m</span></span>, <span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">uid</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">uid</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Override this to create a custom derived keyframer. Valid id’s are anything greater than zero. </p>
+</dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11Environment15cloudKeyframersE">
+<span id="_CPPv3N5simul6clouds11Environment15cloudKeyframersE"></span><span id="_CPPv2N5simul6clouds11Environment15cloudKeyframersE"></span><span id="simul::clouds::Environment::cloudKeyframers__std::map:sky::uid.simul::clouds::CloudKeyframerP:"></span><span class="target" id="classsimul_1_1clouds_1_1_environment_1a30b68a51ad3b46be048274a297a0472f"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">map</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">uid</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">clouds</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../../API/apicloudkeyframer.html#_CPPv4N5simul6clouds14CloudKeyframerE" title="simul::clouds::CloudKeyframer"><span class="n"><span class="pre">CloudKeyframer</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">cloudKeyframers</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds11Environment15cloudKeyframersE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Map of 3D Cloud Layers. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11Environment12skyKeyframerE">
+<span id="_CPPv3N5simul6clouds11Environment12skyKeyframerE"></span><span id="_CPPv2N5simul6clouds11Environment12skyKeyframerE"></span><span id="simul::clouds::Environment::skyKeyframer__simul::sky::SkyKeyframerP"></span><span class="target" id="classsimul_1_1clouds_1_1_environment_1a05daca15edd8341baed29240db6277a2"></span><span class="n"><span class="pre">simul</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">sky</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../../API/apiskykeyframer.html#_CPPv4N5simul3sky12SkyKeyframerE" title="simul::sky::SkyKeyframer"><span class="n"><span class="pre">SkyKeyframer</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">skyKeyframer</span></span></span><a class="headerlink" href="#_CPPv4N5simul6clouds11Environment12skyKeyframerE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The atmosphere/sky keyframer. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11Environment6CreateEPN8platform4core15MemoryInterfaceE">
+<span id="_CPPv3N5simul6clouds11Environment6CreateEPN8platform4core15MemoryInterfaceE"></span><span id="_CPPv2N5simul6clouds11Environment6CreateEPN8platform4core15MemoryInterfaceE"></span><span id="simul::clouds::Environment::Create__platform::core::MemoryInterfaceP"></span><span class="target" id="classsimul_1_1clouds_1_1_environment_1a9c657ca3ea97d6185e830580f05848be"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><a class="reference internal" href="../../API/apienvironment.html#_CPPv4N5simul6clouds11EnvironmentE" title="simul::clouds::Environment"><span class="n"><span class="pre">Environment</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">Create</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">platform</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">core</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">MemoryInterface</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">m</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds11Environment6CreateEPN8platform4core15MemoryInterfaceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Create an <a class="reference internal" href="#classsimul_1_1clouds_1_1_environment"><span class="std std-ref">Environment</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5simul6clouds11Environment7DestroyEP11Environment">
+<span id="_CPPv3N5simul6clouds11Environment7DestroyEP11Environment"></span><span id="_CPPv2N5simul6clouds11Environment7DestroyEP11Environment"></span><span id="simul::clouds::Environment::Destroy__EnvironmentP"></span><span class="target" id="classsimul_1_1clouds_1_1_environment_1ad7f70b4efa990d2bd615b11afc05fe21"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Destroy</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../../API/apienvironment.html#_CPPv4N5simul6clouds11EnvironmentE" title="simul::clouds::Environment"><span class="n"><span class="pre">Environment</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">env</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5simul6clouds11Environment7DestroyEP11Environment" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Destroy an <a class="reference internal" href="#classsimul_1_1clouds_1_1_environment"><span class="std std-ref">Environment</span></a> . </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="precipitationrenderer.html" class="btn btn-neutral float-left" title="Precipitation Renderer" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="skylight.html" class="btn btn-neutral float-right" title="Skylight" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="cloudwindow.html" class="btn btn-neutral float-left" title="Cloud Window" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="gpucloudgenerator.html" class="btn btn-neutral float-right" title="Base GPU Cloud Generator" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr>

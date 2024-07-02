@@ -5,30 +5,29 @@ Clouds
    :maxdepth: 2
    :caption: Classes: Structs:
 
-   Clouds/trueskyrenderer.rst
-   Clouds/cloudrenderer.rst
-   Clouds/cloudlighting.rst
-   Clouds/weatherrenderer.rst
-   Clouds/lightningrenderer.rst
-   Clouds/gpucloudgenerator.rst
-   Clouds/precipitationrenderer.rst
-   Clouds/environment.rst
-   Clouds/skylight.rst
-   Clouds/globalweatherrenderer.rst
-   Clouds/mixedresolutioncompositor.rst
-   Clouds/tworesframebuffer.rst
-
    Clouds/cellularcloudgrid.rst
    Clouds/cellularcloudnode.rst
-
-   Clouds/cloudinterface.rst
-   Clouds/cloudrenderingoptions.rst
-   Clouds/cloudwindow.rst
-   Clouds/cloudwindoweditor.rst
-   Clouds/windowupdater.rst
-
+   Clouds/CloudInterface.rst
    Clouds/cloudkeyframe.rst
    Clouds/cloudkeyframer.rst
+   Clouds/cloudlighting.rst
+   Clouds/CloudRaytraceLighting.rst
+   Clouds/cloudrenderer.rst
+   Clouds/cloudrenderingoptions.rst
+   Clouds/cloudwindow.rst
+   Clouds/environment.rst
+   Clouds/globalview.rst
 
+   Clouds/gpucloudgenerator.rst
+   Clouds/lightningrenderer.rst
+   Clouds/mixedresolutioncompositor.rst
+   Clouds/precipitationrenderer.rst
+   Clouds/skylight.rst
    Clouds/storm.rst
-   Clouds/lightningrenderinterfacestructs
+   Clouds/trueskyrenderer.rst
+   Clouds/tworesframebuffer.rst
+   Clouds/weatherrenderer.rst
+   Clouds/windowupdater.rst
+
+   Clouds/GlobalWeatherRenderer.rst
+   Clouds/LightningRenderInterfaceStructs.rst
