@@ -5,7 +5,7 @@ Precipitation can be attached to any cloud keyframe and will produce rain or sno
 
 Rain and snow can be fully customised, from rain speed to snowflake size.
 
-For transparent effects, such as precipitation and lightning to work in Unreal, trueSKYtransluscent needs to be added as a post process material. This should be done automatically. Learn about this :doc:`here <../../faq)>`
+For transparent effects, such as precipitation and lightning to work in Unreal, trueSKYtransluscent needs to be added as a post process material. This should be done automatically. Learn about this :doc:`here <../../Unreal/unrealblueprints>`
 
 ==================================================  ==============================================================================================================  =============
 Variable 											Definition																										Value

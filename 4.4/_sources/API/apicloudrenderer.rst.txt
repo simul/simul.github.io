@@ -7,3 +7,6 @@ Cloud Renderer
 .. doxygenstruct:: simul::clouds::CloudRenderingOptions
    :members:
    :undoc-members:
+
+.. doxygenclass:: simul::clouds::GlobalView
+   :members:

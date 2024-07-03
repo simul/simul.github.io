@@ -49,13 +49,9 @@ Now you can see all the variables that can be altered within the Sequencer. You 
 
 Layers also have their own settings which will change the values of all the keyframes in that layer. An example of this is within the Sky layer, you can change the diameter of the sun. This effect will take place for all the Sky Keyframes. To select a layer, just click on its name in the column to the left of the timeline. To see what each of the settings do, head over to our :doc:`Cloud <../Clouds/cloudsvariables>`, :doc:`Sky <../Sky/skyvariables>`, or :doc:`Storm <../Storms/stormsvariables>` pages.
 
-UE4
+Unreal
 '''
 You can also use blueprints to edit the trueSKY environment. Head :doc:`here <../../Unreal/unrealblueprints>` to learn how.
-
-Unity
-'''''
-You can also edit the trueSKY environment through scripting. Head :doc:`here <../../Unity/unityscripting>` to learn how.
 
 
 Cloud Window
@@ -65,7 +61,7 @@ The Cloud Window is a top down view of the world, where you can see the current 
 
 The Red Arc is your current view in the project. This can be helpful for figuring out what direction you are looking in, in relation to trueSKY.
 
-Double clicking will enter Volume Edit mode, where you can individually move and edit :doc:`volumes <../Clouds/cloudvolumes>`. You cannot enter Volume edit mode if there are no volumes on the cloud layer.
+Double clicking will enter Volume Edit mode, where you can individually move and edit :doc:`volumes <../Clouds/cloudsvolumes>`. You cannot enter Volume edit mode if there are no volumes on the cloud layer.
 
 If you select a keyframe, the layer width is represented by a blue box, whereas a blue circle represents the precipitation radius. To find out more about how to use the Cloud Window to control precipitation, please view this :doc:`tutorial <../Precipitation/precipitationtutorial>`.
 
@@ -75,5 +71,6 @@ If you select a keyframe, the layer width is represented by a blue box, whereas 
 
 
 Sequence
-``````````
+--------------
+
 A sequence is a collection of Layers and keyframes, that can be saved and used in any scene that incorporates trueSKY. There can only be one sequence active at a time, although you can switch between them at run-time. You can use sequences to save specific weather formations for set times of the day.

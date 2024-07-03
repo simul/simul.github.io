@@ -69,6 +69,7 @@ Transparency
 In a material that uses transparency, insert the trueSKYTransparencyModifier function between the inputs and the final output node:
 
 .. image:: ../../../Help/images/unreal/Transparency.png
+
 *Using the trueSKYTransparencyModifier material function to modulate the material output values*
 
 Unity Usage

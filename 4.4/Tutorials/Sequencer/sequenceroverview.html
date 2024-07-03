@@ -58,6 +58,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#registration">Registration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#details">Details</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloud-window">Cloud Window</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sequence">Sequence</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="sequencertimeline.html">Timeline</a></li>
@@ -195,23 +196,21 @@
 <p><em>This is the details panel of a selected Cloud Keyframe</em></p>
 <p>Now you can see all the variables that can be altered within the Sequencer. You can either drag the bar to alter the value, or edit the values by typing. All of the values are clamped to certain ranges. Plus, each value can be returned to its default position with the yellow arrow to the right of the value. This arrow will only appear of the value has been changed from it’s default state.</p>
 <p>Layers also have their own settings which will change the values of all the keyframes in that layer. An example of this is within the Sky layer, you can change the diameter of the sun. This effect will take place for all the Sky Keyframes. To select a layer, just click on its name in the column to the left of the timeline. To see what each of the settings do, head over to our <a class="reference internal" href="../Clouds/cloudsvariables.html"><span class="doc">Cloud</span></a>, <a class="reference internal" href="../Sky/skyvariables.html"><span class="doc">Sky</span></a>, or <a class="reference internal" href="../Storms/stormsvariables.html"><span class="doc">Storm</span></a> pages.</p>
-<section id="ue4">
-<h3>UE4<a class="headerlink" href="#ue4" title="Permalink to this heading">¶</a></h3>
-<p>You can also use blueprints to edit the trueSKY environment. Head <a class="reference internal" href="../../Unreal/unrealblueprints.html"><span class="doc">here</span></a> to learn how.</p>
-</section>
-<section id="unity">
-<h3>Unity<a class="headerlink" href="#unity" title="Permalink to this heading">¶</a></h3>
-<p>You can also edit the trueSKY environment through scripting. Head <span class="xref std std-doc">here</span> to learn how.</p>
-</section>
+<p>Unreal
+‘’’
+You can also use blueprints to edit the trueSKY environment. Head <a class="reference internal" href="../../Unreal/unrealblueprints.html"><span class="doc">here</span></a> to learn how.</p>
 </section>
 <section id="cloud-window">
 <h2>Cloud Window<a class="headerlink" href="#cloud-window" title="Permalink to this heading">¶</a></h2>
 <p>The Cloud Window is a top down view of the world, where you can see the current cloud formations, layers and <a class="reference internal" href="../Clouds/cloudsvolumes.html"><span class="doc">volumes</span></a>. You can zoom in and out with the mouse wheel, and drag the world around by holding right click and dragging in a direction. Clicking on a keyframe will allow you to drag the keyframes center, which is represented as a square within the cloud window, and will move all volumes in relation to the keyframes origin.</p>
 <p>The Red Arc is your current view in the project. This can be helpful for figuring out what direction you are looking in, in relation to trueSKY.</p>
-<p>Double clicking will enter Volume Edit mode, where you can individually move and edit <span class="xref std std-doc">volumes</span>. You cannot enter Volume edit mode if there are no volumes on the cloud layer.</p>
+<p>Double clicking will enter Volume Edit mode, where you can individually move and edit <a class="reference internal" href="../Clouds/cloudsvolumes.html"><span class="doc">volumes</span></a>. You cannot enter Volume edit mode if there are no volumes on the cloud layer.</p>
 <p>If you select a keyframe, the layer width is represented by a blue box, whereas a blue circle represents the precipitation radius. To find out more about how to use the Cloud Window to control precipitation, please view this <a class="reference internal" href="../Precipitation/precipitationtutorial.html"><span class="doc">tutorial</span></a>.</p>
 <img alt="../../_images/WorldGrid.png" src="../../_images/WorldGrid.png" />
 <p><em>You can see the cloud formations from the grey box, the current cloud layers origin and width from the blue box, and finally the precipitation radius with the blue circle.</em></p>
+</section>
+<section id="sequence">
+<h2>Sequence<a class="headerlink" href="#sequence" title="Permalink to this heading">¶</a></h2>
 <p>A sequence is a collection of Layers and keyframes, that can be saved and used in any scene that incorporates trueSKY. There can only be one sequence active at a time, although you can switch between them at run-time. You can use sequences to save specific weather formations for set times of the day.</p>
 </section>
 </section>

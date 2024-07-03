@@ -2,21 +2,20 @@ Clouds
 ======================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Classes: Structs:
 
    Clouds/cellularcloudgrid.rst
    Clouds/cellularcloudnode.rst
-   Clouds/CloudInterface.rst
    Clouds/cloudkeyframe.rst
    Clouds/cloudkeyframer.rst
    Clouds/cloudlighting.rst
-   Clouds/CloudRaytraceLighting.rst
+
    Clouds/cloudrenderer.rst
    Clouds/cloudrenderingoptions.rst
    Clouds/cloudwindow.rst
+   Clouds/cloudwindoweditor.rst
    Clouds/environment.rst
-   Clouds/globalview.rst
 
    Clouds/gpucloudgenerator.rst
    Clouds/lightningrenderer.rst
@@ -29,5 +28,6 @@ Clouds
    Clouds/weatherrenderer.rst
    Clouds/windowupdater.rst
 
-   Clouds/GlobalWeatherRenderer.rst
-   Clouds/LightningRenderInterfaceStructs.rst
+   Clouds/globalweatherrenderer.rst
+   Clouds/lightningrenderinterfacestructs.rst
+   Clouds/cloudinterface.rst
