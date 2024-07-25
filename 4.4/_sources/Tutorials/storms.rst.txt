@@ -2,7 +2,7 @@ Storms
 ====================
 Storms can be a useful tool when creating atmospheric environments, when you want lighting to illuminate your scene.
 
-Storm keyframes are added to the cloud layer, to create structures representing thunderstorms. Just like with cloud keyframes, you can get and set their properties via scripting or blueprints as well as in the sequencer. Don't forget, to produce a storm, you need clouds!
+Storm keyframes are a part of the cloud keyframes, and their settings can be found within the Cloud Layer and Keyframes. Just like with cloud keyframes, you can get and set their properties via scripting or blueprints as well as in the sequencer. Don't forget, to produce a storm, you need clouds!
 
    *  :doc:`Tutorial <Storms/stormstutorial>` - Learn how to control the different sky settings
    *  :doc:`Variables <Storms/stormsvariables>` - Details of all the different variables for the sky

@@ -52,8 +52,9 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation and Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../concepts.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../skysequencer.html">trueSKY Editor</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../tutorialsindex.html">Tutorials</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../sequencer.html">Sky Sequencer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sequencer.html">trueSKY Editor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../clouds.html">Clouds</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../sky.html">Sky</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../lighting.html">Lighting</a><ul class="current">
@@ -70,12 +71,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../precipitation.html">Precipitation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../rainbows.html">Rainbows</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../storms.html">Storms</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../water.html">Water</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../time.html">Progressing Time</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../unreal.html">trueSKY for Unreal Engine</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../skysequencer.html">Sky Sequencer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../programming.html">Programming with the trueSKY SDK</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../faq.html">Frequently Asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../legalindex.html">trueSKY Licences</a></li>
@@ -164,8 +163,8 @@
 <p>The Brightness Power value for a sky sequence adjusts the light levels to compensate for this large variation by introducing a power function.</p>
 <p>If the Power is 1.0, there is no adjustment. If it is 0.5, it will be a square-root dependence, e.g. a light 4 times dimmer than daylight would appear only half as dim, and so on.</p>
 </section>
-<section id="physical-units-truesky-4-1-onward">
-<h3>Physical Units (trueSKY 4.1 onward)<a class="headerlink" href="#physical-units-truesky-4-1-onward" title="Permalink to this heading">¶</a></h3>
+<section id="physical-units">
+<h3>Physical Units<a class="headerlink" href="#physical-units" title="Permalink to this heading">¶</a></h3>
 <p>trueSKY is a physically-based renderer, which means that the light and colour values generated correspond to true physical properties. The pixel colours rendered to a view are spectral radiance values. However, to keep the numbers from getting too high or low, a global adjustment is applied. This is because numerical accuracy would be lost, particularly for very dark night-time scenes, if we kept the same scale at all times. The Sky property “Brightness Power” controls this adjustment - if equal to one, there is no adjustment. Values smaller than one reduce the range of outputs - brightening dark skies and dimming very bright skies. To obtain the current value of the multiplier, use the Blueprint function “GetReferenceSpectralRadiance”. Then you can use the calculation:</p>
 <blockquote>
 <div><p>spectral radiance (watts/square metre/steradian/nm) = pixel value * reference spectral radiance</p>

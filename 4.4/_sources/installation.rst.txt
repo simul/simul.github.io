@@ -40,9 +40,9 @@ The trueSKY SDK can be integrated into any game or simulation software in two di
 Tools and Tutorials
 -------------------
 
-Sky Sequencer
-`````````````
-We also have our Sky Sequencer. It is a standalone application, which can be used to create sequences that can be imported into trueSKY in any engine. To learn more about the Sky Sequencer, please head over to our page :doc:`Sky Sequencer <skysequencer>`.
+trueSKY Editor
+`````````````````
+We also have our trueSKY Editor. It is a standalone application, which can be used to create sequences that can be imported into trueSKY in any engine. To learn more about the trueSKY Editor, please head over to our page :doc:`trueSKY Editor <skysequencer>`.
 
 Tutorials
 `````````

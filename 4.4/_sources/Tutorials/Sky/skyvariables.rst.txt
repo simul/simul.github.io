@@ -71,35 +71,9 @@ Max Sun Radiance								Maximum Sun radiance produced. 																									
 Adjust Sun Radiance					If enabled, adjusting the Sun radiance will cause the sun to automatically scale to keep spectral irradiance the same.				Bool
 ==============================================  ==================================================================================================================================  =============
 
-
-Moon (Legacy 4.1 System)
+Moon
 -------------------------
-The moon has a customisable texture, so you can use it to make some interesting effects! This is a legacy system found in 4.1a and 4.2 versions of the plugin)
-
-==============================================  ==================================================================================================================================  =============
-Variable 										Definition																															Value
-==============================================  ==================================================================================================================================  =============
-Automatic Moon Position							Whether to calculate moon position from date and time. 																				Bool
-==============================================  ==================================================================================================================================  =============
-
-==============================================  ==================================================================================================================================  =============
-Variable 										Definition																															Value
-==============================================  ==================================================================================================================================  =============
-Albedo											The proportion of the incident light that is reflected by a surface.													 			0.0 to 1.0	
-Diameter										Size of moon's radius in degrees																									0.0 to 3600.0
-Colour											Colour of the moon. Uses a colour wheel, can also input HTML Colour Code.															RGB 						
-==============================================  ==================================================================================================================================  =============
-
-==============================================  ==================================================================================================================================  =============
-Variable 										Definition																															Value
-==============================================  ==================================================================================================================================  =============
-Moon texture									Texture to use for the Moon. trueSKY has a moon texture by default. 																.png
-Moon Multiplier									Brightness multiplier for the Moon. 																								0.0 to 10.0
-==============================================  ==================================================================================================================================  =============
-
-Moon (Multi Moon - 4.2a)
--------------------------
-This system is found in unreal 4.2a versions and allows for multiple moons and extensive customisation of both the moons and the orbital paths. Find more information and indepth descriptions go :doc:`here <skymoons>`
+trueSKY allows for multiple moons and extensive customisation of both the moons and their orbital paths. Find more information and indepth descriptions go :doc:`here <skymoons>`
 
 ==============================================  ==================================================================================================================================  =============
 Variable 										Definition																															Value

@@ -41,9 +41,9 @@ Useful External Links
 
    installation.rst
    concepts.rst
+   skysequencer.rst
    tutorialsindex.rst
    unreal.rst
-   skysequencer.rst
    programming.rst
    faq.rst
    legalindex.rst

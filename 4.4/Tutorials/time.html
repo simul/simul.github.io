@@ -21,7 +21,7 @@
     <link rel="index" title="Index" href="../genindex.html" >
     <link rel="search" title="Search" href="../search.html" >
     <link rel="next" title="trueSKY for Unreal Engine" href="../unreal.html" >
-    <link rel="prev" title="Variables" href="Water/watervariables.html" > 
+    <link rel="prev" title="Variables" href="Storms/stormsvariables.html" > 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -52,8 +52,9 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation and Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../concepts.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../skysequencer.html">trueSKY Editor</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../tutorialsindex.html">Tutorials</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="sequencer.html">Sky Sequencer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sequencer.html">trueSKY Editor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="clouds.html">Clouds</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sky.html">Sky</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lighting.html">Lighting</a></li>
@@ -61,10 +62,9 @@
 <li class="toctree-l2"><a class="reference internal" href="precipitation.html">Precipitation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="rainbows.html">Rainbows</a></li>
 <li class="toctree-l2"><a class="reference internal" href="storms.html">Storms</a></li>
-<li class="toctree-l2"><a class="reference internal" href="water.html">Water</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Progressing Time</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#examples">Examples</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id1">Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#time-progression-speed">Time progression speed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#time-units">Time Units</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#unreal">Unreal</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#truesky-time-and-blueprints">trueSKY Time and Blueprints</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#using-truesky-with-the-cinematic-sequencer">Using trueSKY with the Cinematic Sequencer</a></li>
@@ -81,7 +81,6 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../unreal.html">trueSKY for Unreal Engine</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../skysequencer.html">Sky Sequencer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../programming.html">Programming with the trueSKY SDK</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../legalindex.html">trueSKY Licences</a></li>
@@ -154,23 +153,23 @@
 <h1>Progressing Time<a class="headerlink" href="#progressing-time" title="Permalink to this heading">¶</a></h1>
 <p>Progressing time in trueSKY had been made to be as easy as possible. On the trueSKY Actor there is a section called Time - and these are all you will need to progress time for trueSKY.</p>
 <p>To get time moving quickly, simply increase the Progression Scale to 60. 60 mean every real second trueSKY will progress by 1 minute. If you wanted real time you could set it to 1, but you’re unlikely to see much change unless you’ve adjusted a few values.</p>
-<section id="examples">
-<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h2>
+<section id="time-progression-speed">
+<h2>Time progression speed<a class="headerlink" href="#time-progression-speed" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
-<div class="line">1 = Real Time</div>
+<div class="line">1 = 1 second per second, normal progression of time.</div>
 <div class="line">60 = 1 minute per second</div>
 <div class="line">3600 = 1 hour per second</div>
 </div>
 <p>We also have Time Units. This is usually for projects already using a specific scale for their timings. The Scale represents how to divide a day when calculating time. Set to 1, a day is defined as the values between 0 and 1 (so 0.5 would be midday). If set to 24 (Default Value), then a day is split up from 0-24.</p>
 <p>trueSKY supports yearly cycles, so day 2 would be represented as 24-48, day 3 = 48-72 etc. (if you had the scale as 24).</p>
 </section>
-<section id="id1">
-<h2>Examples<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
+<section id="time-units">
+<h2>Time Units<a class="headerlink" href="#time-units" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
-<div class="line">1 = A Day is represented as 0-1</div>
+<div class="line">1 = A Day is represented as 0-1. This is trueSKY’s default.</div>
 <div class="line">24 = A Day is represented as 0-24 (Hours)</div>
 <div class="line">1440 = A Day represented in Minutes</div>
-<div class="line">86,4000 = A Day is represented in Seconds</div>
+<div class="line">86,400 = A Day is represented in Seconds</div>
 </div>
 <p>This can give you precise values that are easy to understand, and can be configured to work with any previous system. The Progression Scale above will work the same regardless of the Units of Time you are using, so a progression value of 1 is always real time.</p>
 </section>
@@ -214,7 +213,7 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Water/watervariables.html" class="btn btn-neutral float-left" title="Variables" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Storms/stormsvariables.html" class="btn btn-neutral float-left" title="Variables" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="../unreal.html" class="btn btn-neutral float-right" title="trueSKY for Unreal Engine" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

@@ -52,26 +52,23 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation and Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../concepts.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../skysequencer.html">trueSKY Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorialsindex.html">Tutorials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../unreal.html">trueSKY for Unreal Engine</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../skysequencer.html">Sky Sequencer</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../programming.html">Programming with the trueSKY SDK</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="nativesdk.html">Native Development with the trueSKY SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pluginrenderer.html">The TrueSkyPluginRender Library</a></li>
 <li class="toctree-l2"><a class="reference internal" href="rendering.html">Rendering Techniques in trueSKY</a></li>
 <li class="toctree-l2"><a class="reference internal" href="profiling.html">Performance</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Debugging</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#ue4-debug-overlays">UE4 Debug Overlays</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#compositing">Compositing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#celestial-display">Celestial Display</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#profiling">Profiling</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#atmospheric-tables">Atmospheric Tables</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#cube-maps">Cube Maps</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#water-texture">Water Texture</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#flow-rays">Flow Rays</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#lighting">Lighting</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#composition">Composition</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#rain-overlay">Rain Overlay</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#d-cloud-textures">3D cloud Textures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#atmospherics">Atmospherics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cloud-cross-section">Cloud Cross Section</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#precipitation">Precipitation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#auxillary-textures">Auxillary Textures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#queries">Queries</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="deployment.html">trueSKY Deployment</a></li>
@@ -147,58 +144,50 @@
   <section id="debugging">
 <h1>Debugging<a class="headerlink" href="#debugging" title="Permalink to this heading">¶</a></h1>
 <p>Our goal is to have as much data publicly available to see as possible. If something is not working, you should know what isn’t and why.</p>
-<section id="ue4-debug-overlays">
-<h2>UE4 Debug Overlays<a class="headerlink" href="#ue4-debug-overlays" title="Permalink to this heading">¶</a></h2>
-<p>To show the trueSKY debugging overlays, assign the Render Target Texture TrueSkyOverlayRT (under TrueSkyPlugin/Overlay content) to the Overlay RT slot in the trueSKY Sequence Actor. The RT texture is then used with the PostProcessVolume: under Rendering Features, add a Post Process Material, and set it to the TrueSkyOverlay material reference.</p>
-<img alt="../_images/postprocessmaterial.png" src="../_images/postprocessmaterial.png" />
-<img alt="../_images/overlayrt.png" src="../_images/overlayrt.png" />
-<p>The overlays can then be set in Windows-&gt;Overlays and then select the overlays you want to show.</p>
-<img alt="../_images/DebugWindows.png" src="../_images/DebugWindows.png" />
+<p>We display all the information within the Debug Textures tab, which is split up into different pages.</p>
+<section id="compositing">
+<h2>Compositing<a class="headerlink" href="#compositing" title="Permalink to this heading">¶</a></h2>
+<p>Here is an overview of many of the systems use, helpful for depth tests and general debugging.</p>
+<img alt="../_images/compositing.png" src="../_images/compositing.png" />
 </section>
 <section id="celestial-display">
 <h2>Celestial Display<a class="headerlink" href="#celestial-display" title="Permalink to this heading">¶</a></h2>
-<p>Shows the current position and path of the Sun and Moon. The circles indicate the positions between the current and next keyframe.</p>
+<p>Shows the current position and path of the Sun and Moon, along with information about their position.</p>
 <img alt="../_images/CelestialDisplay.png" src="../_images/CelestialDisplay.png" />
 </section>
 <section id="profiling">
 <h2>Profiling<a class="headerlink" href="#profiling" title="Permalink to this heading">¶</a></h2>
-<p>Use profiling to aid performance measuring. This is a good way to determine what aspects of trueSKY are the most performance heavy.</p>
+<p>Use profiling to aid performance measuring. This is a good way to determine what aspects of trueSKY are the most performance heavy. This has been moved into its own performance tab and is not located in the debug textures window.</p>
 <img alt="../_images/Profiling.png" src="../_images/Profiling.png" />
 </section>
-<section id="atmospheric-tables">
-<h2>Atmospheric Tables<a class="headerlink" href="#atmospheric-tables" title="Permalink to this heading">¶</a></h2>
-<p>Detailed numbers on lighting values as well as colours. Issues with lighting can be looked at here.
-.. image:: /../Help/images/AtmosphericTables.png</p>
+<section id="atmospherics">
+<h2>Atmospherics<a class="headerlink" href="#atmospherics" title="Permalink to this heading">¶</a></h2>
+<p>Detailed numbers on lighting values as well as colours. Issues with lighting can be looked at here.</p>
+<img alt="../_images/AtmosphericTables.png" src="../_images/AtmosphericTables.png" />
 </section>
-<section id="cube-maps">
-<h2>Cube Maps<a class="headerlink" href="#cube-maps" title="Permalink to this heading">¶</a></h2>
-<p>Helpful to see what your clouds are doing. Will cycle through the different Mips.</p>
-<img alt="../_images/CubeMaps.png" src="../_images/CubeMaps.png" />
+<section id="cloud-cross-section">
+<h2>Cloud Cross Section<a class="headerlink" href="#cloud-cross-section" title="Permalink to this heading">¶</a></h2>
+<p>An overview of the cloud textures while they are generated. You can also see the Signed Distance Field that 4.4 takes advantage of to improve performance.</p>
+<img alt="../_images/CloudCrossSections.png" src="../_images/CloudCrossSections.png" />
 </section>
-<section id="water-texture">
-<h2>Water Texture<a class="headerlink" href="#water-texture" title="Permalink to this heading">¶</a></h2>
-<p>Here you can view the water Texture to see any issues that may be caused due to overlapping terrain or unusual behaviour.</p>
+<section id="precipitation">
+<h2>Precipitation<a class="headerlink" href="#precipitation" title="Permalink to this heading">¶</a></h2>
+<p>Here is an overlay of the rain map texture. If the precipitation volume is blank, then there will be no precipitation in your scene. Precipitation will only fall under a specified thickness of clouds, and precipitation regions will be specific to their point on the globe.</p>
+<img alt="../_images/PrecipitationDebug.png" src="../_images/PrecipitationDebug.png" />
+<p>Here is an example of full cloud coverage with an area of regional precipitation.</p>
+<img alt="../_images/RegionalPrecipitation.png" src="../_images/RegionalPrecipitation.png" />
 </section>
-<section id="flow-rays">
-<h2>Flow Rays<a class="headerlink" href="#flow-rays" title="Permalink to this heading">¶</a></h2>
-</section>
-<section id="lighting">
-<h2>Lighting<a class="headerlink" href="#lighting" title="Permalink to this heading">¶</a></h2>
-</section>
-<section id="composition">
-<h2>Composition<a class="headerlink" href="#composition" title="Permalink to this heading">¶</a></h2>
-<p>Here is an overview of many of the systems use, helpful for depth tests and general debugging.</p>
-<img alt="../_images/composition.png" src="../_images/composition.png" />
-</section>
-<section id="rain-overlay">
-<h2>Rain Overlay<a class="headerlink" href="#rain-overlay" title="Permalink to this heading">¶</a></h2>
-<p>Here is an overlay of the rain map texture. If the precipitation volume is blank, then the rain does not know where to fall. Rain will only fall under clouds, unless specifically asked not to.</p>
-<img alt="../_images/RainOverlay.png" src="../_images/RainOverlay.png" />
-</section>
-<section id="d-cloud-textures">
-<h2>3D cloud Textures<a class="headerlink" href="#d-cloud-textures" title="Permalink to this heading">¶</a></h2>
+<section id="auxillary-textures">
+<h2>Auxillary Textures<a class="headerlink" href="#auxillary-textures" title="Permalink to this heading">¶</a></h2>
 <p>3D clouds textures including the shadow map texture. Helpful to see how much your Worley setting are affecting the clouds, as well as how large the Shadow Map is.</p>
 <img alt="../_images/cloudtextures.png" src="../_images/cloudtextures.png" />
+</section>
+<section id="queries">
+<h2>Queries<a class="headerlink" href="#queries" title="Permalink to this heading">¶</a></h2>
+<p>Within our debug textures tab, we also have information about our queries.</p>
+<p>Queries such as a point query can be used to determine the parameters at a specified point, for example you could determine the density of clouds at a certain point, and this could be used to limit visibility in your engine. Or you could query the rainfall over a certain area, and adjust how wet your objects appear in a scene.</p>
+<p>We have point queries for specified points and line queries, which recieve the data from between two specified points. These all update in real time and can be very beneficial if used correctly. We have functions to specify your own queries within our SDK and in our plugins.</p>
+<img alt="../_images/cloudqueries.png" src="../_images/cloudqueries.png" />
 </section>
 </section>
 

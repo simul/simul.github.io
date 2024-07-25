@@ -4,7 +4,7 @@
   <meta charset="utf-8" ><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-  <title>Sky Sequencer &mdash; Simul  documentation</title>
+  <title>trueSKY Editor &mdash; Simul  documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" >
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" >
     <link rel="shortcut icon" href="_static/favicon.ico">
@@ -20,8 +20,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" >
     <link rel="search" title="Search" href="search.html" >
-    <link rel="next" title="Programming with the trueSKY SDK" href="programming.html" >
-    <link rel="prev" title="Debugging, Diagnosing and Profiling" href="Unreal/unrealdebugging.html" > 
+    <link rel="next" title="Tutorials" href="tutorialsindex.html" >
+    <link rel="prev" title="Concepts" href="concepts.html" > 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -52,28 +52,23 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation and Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="concepts.html">Concepts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorialsindex.html">Tutorials</a></li>
-<li class="toctree-l1"><a class="reference internal" href="unreal.html">trueSKY for Unreal Engine</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Sky Sequencer</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#downloading-installing-and-launching-the-sky-sequencer">Downloading, Installing and Launching the Sky Sequencer</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">trueSKY Editor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#downloading-installing-and-launching-the-truesky-editor">Downloading, Installing and Launching the trueSKY Editor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#presets">Presets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#navigation">Navigation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#windows-and-their-functionality">Windows and their functionality</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#keyframer">Keyframer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#timeline">Timeline</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#properties">Properties</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#global-view">Global View</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#performance">Performance</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#screenshot">Screenshot</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#clouds">Clouds</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#cloud-window">Cloud Window</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#scene">Scene</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#simulation">Simulation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#viewport">Viewport</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#memory">Memory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#debug-textures">Debug Textures</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#saving-and-loading-sequencer-files">Saving and Loading Sequencer Files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#common-questions">Common Questions</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="tutorialsindex.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unreal.html">trueSKY for Unreal Engine</a></li>
 <li class="toctree-l1"><a class="reference internal" href="programming.html">Programming with the trueSKY SDK</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="legalindex.html">trueSKY Licences</a></li>
@@ -100,7 +95,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Sky Sequencer</li>
+      <li class="breadcrumb-item active">trueSKY Editor</li>
       <li class="wy-breadcrumbs-aside">
         ﻿
 <div class="truesky-version-switch">
@@ -141,19 +136,19 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="sky-sequencer">
-<h1>Sky Sequencer<a class="headerlink" href="#sky-sequencer" title="Permalink to this heading">¶</a></h1>
-<p>The Sky Sequencer is used to generate .sq files for use within projects that have integrated trueSKY. It features all settings and variables found within the Unreal and Unity sequencers.</p>
-<section id="downloading-installing-and-launching-the-sky-sequencer">
-<h2>Downloading, Installing and Launching the Sky Sequencer<a class="headerlink" href="#downloading-installing-and-launching-the-sky-sequencer" title="Permalink to this heading">¶</a></h2>
-<p>The Sky Sequencer can be downloaded from the <a class="reference external" href="https://simul.co/downloads/#skysequencer">downloads section of the website</a>.</p>
-<p>Once downloaded, please follow the steps in the installer and install into your desired location. The installer will prompt you to launch the Sky Sequencer upon completion.</p>
-<p>The location of the Sky Sequencer executable is: [YourInstallLocation]/build/bin/Release/SkySequencer_MD.exe</p>
+  <section id="truesky-editor">
+<h1>trueSKY Editor<a class="headerlink" href="#truesky-editor" title="Permalink to this heading">¶</a></h1>
+<p>The trueSKY Editor is a great place to test, debug or experiment with trueSKY. You can also transfer any sequences you make used to generate .sq files for use within projects that have integrated trueSKY. It features all settings and variables available to trueSKY and</p>
+<section id="downloading-installing-and-launching-the-truesky-editor">
+<h2>Downloading, Installing and Launching the trueSKY Editor<a class="headerlink" href="#downloading-installing-and-launching-the-truesky-editor" title="Permalink to this heading">¶</a></h2>
+<p>The trueSKY Editor can be downloaded from the downloads section of the website at <a class="reference external" href="https:://www.simul.co/downloads">https:://www.simul.co/downloads</a>.</p>
+<p>Once downloaded, please follow the steps in the installer and install into your desired location. The installer will prompt you to launch the editor upon completion.</p>
+<p>The location of the trueSKY Editor executable is: [YourInstallLocation]/build/bin/Release/SkySequencer_MD.exe , but there is a shortcut to launch the editor in the base directory.</p>
 </section>
 <section id="presets">
 <h2>Presets<a class="headerlink" href="#presets" title="Permalink to this heading">¶</a></h2>
-<p>There are a selection of presets available with the Sky Sequencer. To load these presets navigate to <em>File/Load</em> from Menu Bar, search for the below path and open one of the provided .sq files.
-The preset files are found in: [YourInstallLocation]/Applications/SkySequencer/Presets</p>
+<p>There are a selection of presets available with the trueSKY Editor. To load these presets navigate to <em>File/Open</em> from the Menu Bar, search for the below path and open one of the provided .sq files.
+The preset files are found in: [YourInstallLocation]/trueSKYEditor/Presets</p>
 <p>Current presets available are:</p>
 <ul class="simple">
 <li><p>Cirrocumulus</p></li>
@@ -165,80 +160,56 @@ The preset files are found in: [YourInstallLocation]/Applications/SkySequencer/P
 <li><p>Stratus</p></li>
 </ul>
 </section>
-<section id="navigation">
-<h2>Navigation<a class="headerlink" href="#navigation" title="Permalink to this heading">¶</a></h2>
-<p>By default the Sky Sequencer’s layout will look like this: See video below.</p>
-<p>You can re-arrange the Sky Sequencer’s docked windows to fit your work style with ease. Here is a short video on how to re-arrange the Sky Sequencer’s layout along with a basic overview of the controls.</p>
-<div class="video-wrapper">
-	<div class="video-container">
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/Hq7Z20VUhHI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	</div>
-</div>
-<p>You can navigate easily through each of the docked windows as you desire and their functionality is outlined later on this page.</p>
-<p>There are a lot of similarities between the Sky Sequencer and the Sequencers supplied with our Unreal and Unity plugins. All of the information for these plugins is directly transferable to the Sky Sequencer, however certain properties might be in slightly different locations. This is most notable with properties found on the trueSKY actor/object; they would most likely be within the Sky Sequencer’s global properties - See below.</p>
-</section>
 <section id="windows-and-their-functionality">
 <h2>Windows and their functionality<a class="headerlink" href="#windows-and-their-functionality" title="Permalink to this heading">¶</a></h2>
-<p>All windows are movable and dockable to anywhere within the Sky Sequencer and they can be closed if not in use. They can be re-opened simply by navigating to <em>Window</em> from Menu Bar and selecting the window you wish to re-open.</p>
-<section id="keyframer">
-<h3>Keyframer<a class="headerlink" href="#keyframer" title="Permalink to this heading">¶</a></h3>
-<p>This is where you can add keyframes to the timeline, as well as access the sky and cloud layers. It has time controls such as the time multiplier and the time scrubber.</p>
+<p>By default the editor layout will look like this:</p>
+<img alt="_images/defaultLayout.png" src="_images/defaultLayout.png" />
+<p>All windows are movable and dockable, and they can be closed if not in use. They can be re-opened simply by navigating to the <em>Window</em> tab from the Menu Bar and selecting the window you wish to re-open.</p>
+<section id="timeline">
+<h3>Timeline<a class="headerlink" href="#timeline" title="Permalink to this heading">¶</a></h3>
+<p>The timeline is one of the most important windows in the editor. Here is where you can create, delete and control the clouds in your scene. Cloud Layers and Keyframes on the timeline are used to control when clouds are created, with their properties controlling the individual parameters.</p>
+<img alt="_images/timeline.png" src="_images/timeline.png" />
+<p>This <a class="reference internal" href="Tutorials/Sequencer/sequencertimeline.html"><span class="doc">page</span></a> explains in more detail trueSKY’s timeline, keyframes and layers.</p>
 </section>
 <section id="properties">
 <h3>Properties<a class="headerlink" href="#properties" title="Permalink to this heading">¶</a></h3>
-<p>This shows the properties of the selected keyframe or layer. When no keyframe or layer is selected, it will show the global properties as well as API options and other global settings. See further explanation below.</p>
-<p>There are three distinct properties sections that are found with the Sky Sequencer:</p>
+<p>This shows the properties of the selected keyframe or layer. When no keyframe or layer is selected, it will show the global properties as well as API options and other global settings.</p>
+<img alt="_images/properties.png" src="_images/properties.png" />
+<p>There are three distinct properties sections that are found with the trueSKY Editor:</p>
 <ol class="arabic simple">
-<li><p>Keyframe properties, which are accessed by clicking on either a cloud or sky keyframe within the Keyframer.</p></li>
-<li><p>Layer properties, which are accessed by clicking on a cloud or sky layer in the Keyframer.</p></li>
-<li><p>Global properties, which are accessed by clicking on any empty space within the Keyframer or the Time button under the sky/cloud layers.</p></li>
+<li><p>Keyframe properties, which are accessed by clicking on either a cloud or sky keyframe within the timeline.</p></li>
+<li><p>Layer properties, which are accessed by clicking on a cloud or sky layer settings button.</p></li>
+<li><p>Global properties, which are accessed by clicking the Global Properties button.</p></li>
 </ol>
-<p>This <a class="reference internal" href="Tutorials/Sequencer/sequencertimeline.html"><span class="doc">page</span></a> explains in more detail trueSKY’s time, keyframes and layers information, if you are unfamiliar with them.</p>
+<p>Certain properties will only be accessible depending on the type of keyframe/layer being used. For example, to see Cloud Region specific settings, your layer will need be a cloud layer region as opposed to a global layer.</p>
+</section>
+<section id="global-view">
+<h3>Global View<a class="headerlink" href="#global-view" title="Permalink to this heading">¶</a></h3>
+<p>Here you can see a view of the whole globe and how your trueSKY sequences are affecting it.</p>
+<img alt="_images/GlobalView.png" src="_images/GlobalView.png" />
+<p>You can select the different view modes at the top of the window to toggle cloud, precipitation, storm and region views.</p>
 </section>
 <section id="performance">
 <h3>Performance<a class="headerlink" href="#performance" title="Permalink to this heading">¶</a></h3>
-<p>This shows a variety of performance metrics and their breakdowns for both the CPU and GPU. This information can compliment information gained from the use of onscreen displays found under <em>View/Onscreen displays</em>.</p>
+<p>This shows a breakdown of timings for trueSKY split into GPU and CPU. You can adjust the depth of the breakdown and look through individual function costs. Be aware when adjusting depths that rounding may adjust the total timings.</p>
+<img alt="_images/Profiling.png" src="_images/Profiling.png" />
 </section>
 <section id="screenshot">
 <h3>Screenshot<a class="headerlink" href="#screenshot" title="Permalink to this heading">¶</a></h3>
-<p>This allows you to set of the resolution of screenshot and then save an image of your scene.</p>
+<p>This allows you to take a screenshot of your current scene. You can adjust the resolution, along with the gamma and exposore of the image.</p>
 </section>
-<section id="clouds">
-<h3>Clouds<a class="headerlink" href="#clouds" title="Permalink to this heading">¶</a></h3>
-<p>This gives an overview of the textures used to generate the clouds for trueSKY as well as an overview of some select varaibles of the CloudConstants structure.</p>
+<section id="memory">
+<h3>Memory<a class="headerlink" href="#memory" title="Permalink to this heading">¶</a></h3>
+<p>This gives an overview of all the memory being used by trueSKY, and can be sorted by size. This will automatically update when adjusting parameters, so it is a good way to determine what settings will impact your memory usage.</p>
 </section>
-<section id="cloud-window">
-<h3>Cloud Window<a class="headerlink" href="#cloud-window" title="Permalink to this heading">¶</a></h3>
-<p>This allows you to control of the Latitude and Longitude of the scene, as well as shows the location of keyframes on the globe. A summary view of the current clouds in the scene from a top down view is also displayed on the globe.</p>
+<section id="debug-textures">
+<h3>Debug Textures<a class="headerlink" href="#debug-textures" title="Permalink to this heading">¶</a></h3>
+<p>This tab will show all the textures being used to generate your scene, split into multiple sections. This can be really helpful when trying to understand how trueSKY works, and can help debug any issues encountered.
+There is also a tab for our queries, which will show information about the scene based on specified positions or directions. For example, the lighting queries will display the Sunlight, Moonlight and Ambient light at a given position.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="Programming/debugging.html"><span class="doc">Click here</span></a> for more information on our debug textures.</p></li>
+</ul>
 </section>
-<section id="scene">
-<h3>Scene<a class="headerlink" href="#scene" title="Permalink to this heading">¶</a></h3>
-<p>Not used in trueSKY 4.3+.</p>
-</section>
-<section id="simulation">
-<h3>Simulation<a class="headerlink" href="#simulation" title="Permalink to this heading">¶</a></h3>
-<p>Not used in trueSKY 4.3+.</p>
-</section>
-<section id="viewport">
-<h3>Viewport<a class="headerlink" href="#viewport" title="Permalink to this heading">¶</a></h3>
-<p>This shows the current view of the scene. The mouse scroll wheel will increase or decrease the field of view of the camera, holding right click and moving the mouse will pan the camera, holding alt + right click and moving the mouse will roll the camera and holding middle click and moving the mouse will change the altitude of the camera. You can use the WASD keys to move around the scene. The camera speed can be altered within the global properties.</p>
-</section>
-</section>
-<section id="saving-and-loading-sequencer-files">
-<h2>Saving and Loading Sequencer Files<a class="headerlink" href="#saving-and-loading-sequencer-files" title="Permalink to this heading">¶</a></h2>
-<p>If you want to save a .sq file for use within your scene, navigate to <em>File/Save as</em> and then save the .sq file into the desired location.</p>
-<p>If your project requires .seq files instead, navigate to <em>File/Export as Binary</em> and then save the .seq file into the desired location.</p>
-<p>To load a .sq file, navigate to <em>File/Load</em> and locate the desired .sq file. Presets can be accessed via this menu option as stated above.</p>
-<p>To load a .seq file, navigate to <em>File/Load binary sequence</em> and locate the desired .seq file.</p>
-<p>Note: When saving a .sq file only the camera, layer and keyframe data is saved to the file, this means that any global properties will need to be manually set within your code so as to fully match the results being shown in the Sky Sequencer’s viewport.</p>
-</section>
-<section id="common-questions">
-<h2>Common Questions<a class="headerlink" href="#common-questions" title="Permalink to this heading">¶</a></h2>
-<p><strong>My clouds appear too bright:</strong>
-There are a few different solutions to this. To control the brightness of the clouds, you can adjust the camera exposure properties within the global properties, or adjust the lighting properties of the directional light and indirect lighting to the clouds.</p>
-<p><strong>My clouds are too low resolution:</strong>
-Within the global properties, you can adjust the overall cloud resolution. In most use-cases 512 or 1024 should suffice. Alternatively, you could adjust the edge noise wavelength and size to increase the fidelity of the clouds, which can be found in the global settings.
-Remember that global properties are not saved in the .sq files and would need to be manually set each time for your scene.</p>
 </section>
 </section>
 
@@ -246,8 +217,8 @@ Remember that global properties are not saved in the .sq files and would need to
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Unreal/unrealdebugging.html" class="btn btn-neutral float-left" title="Debugging, Diagnosing and Profiling" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="programming.html" class="btn btn-neutral float-right" title="Programming with the trueSKY SDK" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="concepts.html" class="btn btn-neutral float-left" title="Concepts" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tutorialsindex.html" class="btn btn-neutral float-right" title="Tutorials" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr>

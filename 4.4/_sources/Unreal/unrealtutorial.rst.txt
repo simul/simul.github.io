@@ -21,19 +21,19 @@ Installing the Plugin
 
 .. image:: /../Help/images/unreal/download.png
 
-3: Run the trueSKY installer, ensuring that you select your UE4 directory as the installation location. (You should already have a version of UE4 installed, if not head over to https://www.unrealengine.com/ to download one). After the installation process is complete, the plugin should be installed into your UE4 directory.
+3: Run the trueSKY installer, ensuring that you select your Unreal Project directory as the installation location. After the installation process is complete, the plugin should be installed into YourProjectDirectory/Plugins/trueSKYPlugin
 
 .. image:: /../Help/images/unreal/wizard.png
 
-*Make sure you select the correct directory*
+*Make sure you select the correct project*
 
 
-Running the binary plugin
+Running the plugin
 -------------------------------
 
-1: Launch an Unreal project using the engine version in which the trueSKY plugin is installed.
+1: Launch the project you installed trueSKY into.
 
-2: Click 'Edit -> Plugins' from the dropdown menu at the top of the window.
+2: Click 'Window -> Plugins' from the dropdown menu at the top of the window.
 
 .. image:: /../Help/images/unreal/pluginwindow.png
 

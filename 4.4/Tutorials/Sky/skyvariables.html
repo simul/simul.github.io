@@ -52,8 +52,9 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation and Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../concepts.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../skysequencer.html">trueSKY Editor</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../tutorialsindex.html">Tutorials</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../sequencer.html">Sky Sequencer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sequencer.html">trueSKY Editor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../clouds.html">Clouds</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../sky.html">Sky</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="skytutorial.html">Sky Tutorial</a></li>
@@ -61,8 +62,7 @@
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Variables</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#atmosphere">Atmosphere</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#sun">Sun</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#moon-legacy-4-1-system">Moon (Legacy 4.1 System)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#moon-multi-moon-4-2a">Moon (Multi Moon - 4.2a)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#moon">Moon</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#stars">Stars</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#fog">Fog</a></li>
 </ul>
@@ -74,12 +74,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../precipitation.html">Precipitation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../rainbows.html">Rainbows</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../storms.html">Storms</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../water.html">Water</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../time.html">Progressing Time</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../unreal.html">trueSKY for Unreal Engine</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../skysequencer.html">Sky Sequencer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../programming.html">Programming with the trueSKY SDK</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../faq.html">Frequently Asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../legalindex.html">trueSKY Licences</a></li>
@@ -321,67 +319,9 @@
 </tbody>
 </table>
 </section>
-<section id="moon-legacy-4-1-system">
-<h2>Moon (Legacy 4.1 System)<a class="headerlink" href="#moon-legacy-4-1-system" title="Permalink to this heading">¶</a></h2>
-<p>The moon has a customisable texture, so you can use it to make some interesting effects! This is a legacy system found in 4.1a and 4.2 versions of the plugin)</p>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Variable</p></th>
-<th class="head"><p>Definition</p></th>
-<th class="head"><p>Value</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Automatic Moon Position</p></td>
-<td><p>Whether to calculate moon position from date and time.</p></td>
-<td><p>Bool</p></td>
-</tr>
-</tbody>
-</table>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Variable</p></th>
-<th class="head"><p>Definition</p></th>
-<th class="head"><p>Value</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Albedo</p></td>
-<td><p>The proportion of the incident light that is reflected by a surface.</p></td>
-<td><p>0.0 to 1.0</p></td>
-</tr>
-<tr class="row-odd"><td><p>Diameter</p></td>
-<td><p>Size of moon’s radius in degrees</p></td>
-<td><p>0.0 to 3600.0</p></td>
-</tr>
-<tr class="row-even"><td><p>Colour</p></td>
-<td><p>Colour of the moon. Uses a colour wheel, can also input HTML Colour Code.</p></td>
-<td><p>RGB</p></td>
-</tr>
-</tbody>
-</table>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Variable</p></th>
-<th class="head"><p>Definition</p></th>
-<th class="head"><p>Value</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Moon texture</p></td>
-<td><p>Texture to use for the Moon. trueSKY has a moon texture by default.</p></td>
-<td><p>.png</p></td>
-</tr>
-<tr class="row-odd"><td><p>Moon Multiplier</p></td>
-<td><p>Brightness multiplier for the Moon.</p></td>
-<td><p>0.0 to 10.0</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="moon-multi-moon-4-2a">
-<h2>Moon (Multi Moon - 4.2a)<a class="headerlink" href="#moon-multi-moon-4-2a" title="Permalink to this heading">¶</a></h2>
-<p>This system is found in unreal 4.2a versions and allows for multiple moons and extensive customisation of both the moons and the orbital paths. Find more information and indepth descriptions go <a class="reference internal" href="skymoons.html"><span class="doc">here</span></a></p>
+<section id="moon">
+<h2>Moon<a class="headerlink" href="#moon" title="Permalink to this heading">¶</a></h2>
+<p>trueSKY allows for multiple moons and extensive customisation of both the moons and their orbital paths. Find more information and indepth descriptions go <a class="reference internal" href="skymoons.html"><span class="doc">here</span></a></p>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Variable</p></th>

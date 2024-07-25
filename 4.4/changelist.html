@@ -51,9 +51,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation and Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="concepts.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skysequencer.html">trueSKY Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorialsindex.html">Tutorials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="unreal.html">trueSKY for Unreal Engine</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skysequencer.html">Sky Sequencer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="programming.html">Programming with the trueSKY SDK</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="legalindex.html">trueSKY Licences</a></li>
@@ -124,6 +124,28 @@
   <section id="changelist">
 <h1>Changelist<a class="headerlink" href="#changelist" title="Permalink to this heading">¶</a></h1>
 <div class="line-block">
+<div class="line"><strong>Thu 25 Jul</strong> : Removed ApplyResourceGroup() from PlanetRenderer as it’s unneeded. Added missing samplers 2 and 5.</div>
+<div class="line"><strong>Thu 25 Jul</strong> : Merge branch ‘4.4’ of github.com:simul/Simul into 4.4</div>
+<div class="line"><strong>Thu 25 Jul</strong> : Fixed whitespaces, namings and comments. BaseGpuSkyGenerator can recompile shaders now. Added SkyBrightness to SkyProperties UI.</div>
+<div class="line"><strong>Thu 25 Jul</strong> : Merge branch ‘4.4’ of github.com:simul/Simul into 4.4</div>
+<div class="line"><strong>Thu 25 Jul</strong> : Samplers in resource group 0.</div>
+<div class="line"><strong>Wed 24 Jul</strong> : Update to 4.4 documentation</div>
+<div class="line"><strong>Wed 24 Jul</strong> : Better checks in glfw_get_window_monitor() when calling glfwGetVideoMode().</div>
+<div class="line"><strong>Fri 19 Jul</strong> : Merge branch ‘4.4’ of github.com:simul/Simul into 4.4</div>
+<div class="line"><strong>Fri 19 Jul</strong> : Documentation</div>
+<div class="line"><strong>Fri 19 Jul</strong> : Platform ptr.</div>
+<div class="line"><strong>Fri 19 Jul</strong> : Merge branch ‘4.4’ of github.com:simul/Simul into 4.4</div>
+<div class="line"><strong>Fri 19 Jul</strong> : Removed unused constant buffer in composite.sfx affecting Vulkan. Other minor clean ups. Platform ptr.</div>
+<div class="line"><strong>Fri 19 Jul</strong> : Small fixes and allow import of sequence</div>
+<div class="line"><strong>Wed 17 Jul</strong> : Merge branch ‘4.4’ of github.com:simul/Simul into 4.4</div>
+<div class="line"><strong>Wed 17 Jul</strong> : Fix for  SkyKeyframer::GetSiderealTimeDegrees() and other minor clean ups. Platform ptr.</div>
+<div class="line"><strong>Tue 16 Jul</strong> : Fixed: Fails to compile Editor if D3D12 is not enabled.</div>
+<div class="line"><strong>Wed 10 Jul</strong> : Fixes for setting textures in WindowUpdater.cpp for Vulkan Validation Layers. Platform ptr.</div>
+<div class="line"><strong>Mon 08 Jul</strong> : Removed rake from CloudRegionState.</div>
+<div class="line"><strong>Mon 08 Jul</strong> : Implemented CloudRegion rotation for cloud volume density.</div>
+<div class="line"><strong>Mon 08 Jul</strong> : Fixed CloudRegion Cumulonimbus scaling issue and CloudRegion UID selection in UI. Platform ptr.</div>
+<div class="line"><strong>Thu 04 Jul</strong> : Merge branch ‘4.4’ of github.com:Simul/Simul into 4.4</div>
+<div class="line"><strong>Thu 04 Jul</strong> : Linux fixes</div>
 <div class="line"><strong>Wed 03 Jul</strong> : Doc Warnings removed</div>
 <div class="line"><strong>Wed 03 Jul</strong> : Doc updates</div>
 <div class="line"><strong>Tue 02 Jul</strong> : Remove doc warnings</div>
@@ -202,28 +224,6 @@
 <div class="line"><strong>Wed 15 May</strong> : Renamed cloudWindowView to globalViewView and some related clean ups.</div>
 <div class="line"><strong>Tue 14 May</strong> : Fixed typo.</div>
 <div class="line"><strong>Tue 14 May</strong> : Merge branch ‘4.4’ of github.com:simul/Simul into 4.4</div>
-<div class="line"><strong>Tue 14 May</strong> : Added PLATFORM_BUILD_ASSIMP, which true for source builds. Platform ptr.</div>
-<div class="line"><strong>Fri 10 May</strong> : fix to correctly set default region</div>
-<div class="line"><strong>Fri 10 May</strong> : Default region to Cylinder</div>
-<div class="line"><strong>Fri 10 May</strong> : Use theme in platform, update platform ptr.</div>
-<div class="line"><strong>Fri 10 May</strong> : Merge branch ‘4.4’ of github.com:Simul/Simul into 4.4</div>
-<div class="line"><strong>Fri 10 May</strong> : fix for get/set ExternalDynamicValues</div>
-<div class="line"><strong>Fri 10 May</strong> : SkyKeyframeProperties categories updated. Fixed StyleColours_ControlsStyleColours_Controls().</div>
-<div class="line"><strong>Fri 10 May</strong> : Merge branch ‘4.4’ of github.com:simul/Simul into 4.4</div>
-<div class="line"><strong>Fri 10 May</strong> : CloudRenderer::RenderCloudRegions() updated to better display regions and drag point. Camera view on GlobalView scaled by distance to the horizon. GlobalViewPanel clean ups and added cloud region button to show region edit mode. Updated CloudKeyframe::GetPrecipitationCentre() and GetStormCentre(). Platform ptr.</div>
-<div class="line"><strong>Thu 09 May</strong> : Add CustomColour and HeightFog colour to Sky Keyframes</div>
-<div class="line"><strong>Thu 09 May</strong> : CustomColour, Add StaticGetExternalRenderValues and StaticGetExternalDynamicValues</div>
-<div class="line"><strong>Thu 09 May</strong> : Merge branch ‘4.4’ of github.com:Simul/Simul into 4.4</div>
-<div class="line"><strong>Thu 09 May</strong> : Minor fix for namespaces in CloudRenderer.cpp. Platform ptr.</div>
-<div class="line"><strong>Thu 09 May</strong> : Fixed CloudRegion interpolation issue and other minor fix ups.</div>
-<div class="line"><strong>Thu 09 May</strong> : Fixed wind affecting cloud region position.</div>
-<div class="line"><strong>Thu 09 May</strong> : Merge branch ‘4.4’ of github.com:Simul/Simul into 4.4</div>
-<div class="line"><strong>Wed 08 May</strong> : Updated PluginTrueSkyRenderer::Set() to support new CloudRegion struct.</div>
-<div class="line"><strong>Wed 08 May</strong> : Added better controls from Spherical CloudRegions. Fixed member order in CloudRegionState and CloudKeyframer::SetCloudRegion() and InterpolateKeyframe(). Updated UI and Plugin.</div>
-<div class="line"><strong>Tue 07 May</strong> : UI changes to simplify rectangular cloud regions.</div>
-<div class="line"><strong>Tue 07 May</strong> : GlobalView_X() functions return bool.</div>
-<div class="line"><strong>Tue 07 May</strong> : Updated LatLonHdgRadEdit() to convert correctly the default value from rad to deg. CloudRegion’s default origin is the keyframes origin.</div>
-<div class="line"><strong>Tue 07 May</strong> : Reworked CloudRenderer::RenderCloudRegions() for different region types. Renamed VolumePartIdentifier to CloudRegionPartIdentifier. std::map safety checks in CloudKeyframeProperties.cpp</div>
 </div>
 </section>
 

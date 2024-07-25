@@ -181,10 +181,6 @@ This can be used to help control your scene further, and also help alleviate pot
 Adding and removing Cloudlayers
 --------------------------------
 
-
-This feature is a 4.3 specific feature. The blueprints will show up while using the 4.2a and 4.1b legacy versions, however are not supported (unlike the simpler adding cloud keyframe values)
-
-
 **Creating Cloud Layers**
 
 
@@ -204,8 +200,6 @@ Deleting a cloud keyframe also mirrors the functionality of the delete cloud key
 
 Adding map textures via blueprints
 -----------------------------------
-
-This feature works across both 4.2a and 4.3 versions and allows for users to add map textures dynamically. 
 
 Previously this has only be possible to do within the editor, requiring the png being referenced to be located in a specific location within the simul folder structure in the engine. This has now been simplified, allowing you to reference any .png within the editor, however saving images into the "Media -> Resouces" folder will still work.
 

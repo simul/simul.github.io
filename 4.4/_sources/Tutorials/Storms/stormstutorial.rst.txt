@@ -1,20 +1,18 @@
 Storms Tutorial
 ====================
 
-Editing Storms in the Sequencer
----------------------------------
+Storms are now a part of the Cloud Keyframes, allowing for easier controls as well as the option for storms per layer. To create a storm, add or select a cloud keyframe and look for the Storms section in the properties.
 
-To create a storm in the sequencer, simply right click on the 3D cloud layer and select "Add storm". Clicking on the keyframe will show a selection of storm properties that can be changed. To set the storm's start time, end time and duration, simply drag out its edges horizontally to encompass what part of the timeline is required. Make sure there are enough clouds to produce lightning while the storm is active.
-
-.. image:: ../../../Help/images/unity/stormsequencer.png
-
-You cannot drag the storm keyframe to move it, you must move it by extending and shrinking the keyframe. This is because, unlike keyframes which effect lasts until the next keyframe, Storms must have a set, determined size.
+.. image:: ../../../Help/images/StormSettings.png
 
 
-UE4
----
+For parameters on the visual of lightning strikes, these are now stored within the Cloud Layer Settings. 
+
+
+.. image:: ../../../Help/images/StormLayerSettings.png
+
 
 Editing Storm through Blueprints
-'''''''''''''''''''''''''''''''''''
+------------------------------------
 
-Storms have now been added to the cloud keyframe, so there is now need to unique functions, all of the storm functionality can be controlled within a Cloud Keyframe. Simply Select your cloud Keyframe, enable a storm within the storm section and adjust the parameters. To edit this with blueprints, you would do the same as if you were editing any other parameter on the keyframe.
+Now that storms have now been added to the cloud keyframe, so there is no need to unique functions, all of the storm functionality can be controlled within a Cloud Keyframe. Simply Select your cloud Keyframe, enable a storm within the storm section and adjust the parameters. To edit this with blueprints, you would do the same as if you were editing any other parameter on the keyframe.

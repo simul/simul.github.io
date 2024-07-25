@@ -52,15 +52,15 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation and Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../concepts.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../skysequencer.html">trueSKY Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorialsindex.html">Tutorials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../unreal.html">trueSKY for Unreal Engine</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../skysequencer.html">Sky Sequencer</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../programming.html">Programming with the trueSKY SDK</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="nativesdk.html">Native Development with the trueSKY SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pluginrenderer.html">The TrueSkyPluginRender Library</a></li>
 <li class="toctree-l2"><a class="reference internal" href="rendering.html">Rendering Techniques in trueSKY</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Performance</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#ue4-specific-profiling">UE4 Specific Profiling</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#unreal-specific-profiling">Unreal Specific Profiling</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#high-cost-settings">High Cost Settings</a></li>
 </ul>
 </li>
@@ -76,14 +76,8 @@
 <li class="toctree-l4"><a class="reference internal" href="#id1">Amortization</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#water">Water</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#resolution">Resolution</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#screen-space-reflections">Screen Space Reflections</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#profile-buffer-resolution">Profile Buffer Resolution</a></li>
-</ul>
-</li>
 <li class="toctree-l3"><a class="reference internal" href="#low-performance">Low performance</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#create-a-skydome-with-truesky-ue4">Create a SkyDome with trueSKY (UE4)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#create-a-skydome-with-truesky-unreal">Create a SkyDome with trueSKY (Unreal)</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#known-performance-issues">Known Performance Issues</a></li>
@@ -164,8 +158,8 @@
 <h1>Performance<a class="headerlink" href="#performance" title="Permalink to this heading">¶</a></h1>
 <p>We have worked hard to make sure trueSKY will run on many different architectures, and we know each of these have different capabilities. That is why trueSKY’s setting can be adjusted to make it run as efficiently as possible, talking up only a few ms in processing time.</p>
 <p>Use the Blueprint function GetProfilingText to get GPU and CPU timing numbers for trueSKY as a tree. trueSKY performance is highly dependent on your choice of settings. Once you have good settings for a given target hardware setup, performance will be consistent - i.e. there won’t be spikes or hitches. For PC, you may want to make some of these settings controllable for the end user. For console hardware, it is usually best to choose the settings based on your target GPU time for skies, then lock them down.</p>
-<section id="ue4-specific-profiling">
-<h2>UE4 Specific Profiling<a class="headerlink" href="#ue4-specific-profiling" title="Permalink to this heading">¶</a></h2>
+<section id="unreal-specific-profiling">
+<h2>Unreal Specific Profiling<a class="headerlink" href="#unreal-specific-profiling" title="Permalink to this heading">¶</a></h2>
 <p>trueSKY for Unreal has a built-in GPU and CPU profiler that shows detailed performance information. To enable it, use the console command</p>
 <blockquote>
 <div><p><strong>r.truesky.profiling 1</strong></p>
@@ -215,25 +209,10 @@
 <p>Just like the cloud Amortization, spreading rendering costs for the atmosphere will always help improve performance, but is not recommend for fast moving scenes.</p>
 </section>
 </section>
-<section id="water">
-<h2>Water<a class="headerlink" href="#water" title="Permalink to this heading">¶</a></h2>
-<section id="resolution">
-<h3>Resolution<a class="headerlink" href="#resolution" title="Permalink to this heading">¶</a></h3>
-<p>The resolution of the water (Found in the trueSKY Actor Settings) is again an obvious value. (In some versions, Half-Resolution has an view issue that is currently being resolved)</p>
-</section>
-<section id="screen-space-reflections">
-<h3>Screen Space Reflections<a class="headerlink" href="#screen-space-reflections" title="Permalink to this heading">¶</a></h3>
-<p>Screen-space Reflections on a boundless ocean can produce a large performance hit.</p>
-</section>
-<section id="profile-buffer-resolution">
-<h3>Profile Buffer Resolution<a class="headerlink" href="#profile-buffer-resolution" title="Permalink to this heading">¶</a></h3>
-<p>If you have noticed your water “shimmering”, it may be because you need to increase your buffer resolution. A low minimum and high maximum waves mean you will need to increase the resolution for the water to stay looking great.</p>
-</section>
-</section>
 <section id="low-performance">
 <h2>Low performance<a class="headerlink" href="#low-performance" title="Permalink to this heading">¶</a></h2>
-<section id="create-a-skydome-with-truesky-ue4">
-<h3>Create a SkyDome with trueSKY (UE4)<a class="headerlink" href="#create-a-skydome-with-truesky-ue4" title="Permalink to this heading">¶</a></h3>
+<section id="create-a-skydome-with-truesky-unreal">
+<h3>Create a SkyDome with trueSKY (Unreal)<a class="headerlink" href="#create-a-skydome-with-truesky-unreal" title="Permalink to this heading">¶</a></h3>
 <p>With trueSKY, you can create an Cubemap of the sky. While you will lose some visual fidelity and the ability to move through the clouds, this is a great way to incorporate high quality, customised clouds with a minimal performance hit.</p>
 <p>This is currently done through a blueprint, RendertoCubeMap. Select your cubemap resolution, and the cubemap you want to draw to.</p>
 </section>

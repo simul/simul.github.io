@@ -52,9 +52,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation and Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../concepts.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../skysequencer.html">trueSKY Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorialsindex.html">Tutorials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../unreal.html">trueSKY for Unreal Engine</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../skysequencer.html">Sky Sequencer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../programming.html">Programming with the trueSKY SDK</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../faq.html">Frequently Asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../legalindex.html">trueSKY Licences</a></li>
@@ -326,7 +326,7 @@
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4NK5simul6clouds11CloudWindow32ConvertEngineToTrueSKYViewMatrixERK5mat4d">
 <span id="_CPPv3NK5simul6clouds11CloudWindow32ConvertEngineToTrueSKYViewMatrixERK5mat4d"></span><span id="_CPPv2NK5simul6clouds11CloudWindow32ConvertEngineToTrueSKYViewMatrixERK5mat4d"></span><span id="simul::clouds::CloudWindow::ConvertEngineToTrueSKYViewMatrix__mat4dCRC"></span><span class="target" id="structsimul_1_1clouds_1_1_cloud_window_1a17f6be6668d5d2440de39c11b1e89d63"></span><span class="n"><span class="pre">mat4</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ConvertEngineToTrueSKYViewMatrix</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">mat4d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">engine_matrix</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5simul6clouds11CloudWindow32ConvertEngineToTrueSKYViewMatrixERK5mat4d" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Convert an engine-space matrix to a trueSKY-space matrix via the WGS84 engine origin and the trueSKY Cloud Window origin. </p>
+<dd><p>Convert an engine-space matrix to a trueSKY-space matrix via the WGS84 engine origin and the trueSKY Cloud Window origin. The input is the actual view matrix that your engine uses for rendering. Position is expected to be in metres. </p>
 </dd></dl>
 
 <dl class="cpp function">

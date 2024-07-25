@@ -110,7 +110,7 @@ Post process effects can cause issues with trueSKY. Try lowering the intensity o
 
 The sun/moon is too big/small
 `````````````````````````````````````````````````
-Try altering the sun and/or moon diameter setting in the sky layer, or if you have "Adjust Sun Radius" ticked on the trueSKY object, then adjusting the radiance of the sun will change it's radius. In 4.2a versions, altering the Radius Arc Minutes will change the size of the Moon as visualised from the Earths surface, and can be found in the sequence actor.
+Try altering the sun and/or moon diameter setting in the sky layer, or if you have "Adjust Sun Radius" ticked on the trueSKY object, then adjusting the radiance of the sun will change it's radius.
 
 Lighting
 ---------------
@@ -137,7 +137,7 @@ Clouds
 
 How do I make my clouds the same each time I launch my program?
 ````````````````````````````````````````````````````````````````````````
-Make sure the sequencer starts at the same time at each launch and the clouds should stay in the same formation.
+Make sure the editor starts at the same time at each launch and the clouds should stay in the same formation.
 
 My Clouds have an obvious pattern in them, how do I make it go away?
 ````````````````````````````````````````````````````````````````````````
@@ -145,7 +145,7 @@ Noise is used to hide repetition, have a look at our :doc:`Noise Settings <Tutor
 
 My Clouds change with only one keyframe
 `````````````````````````````````````````````````
-Setting the 'Noise Period' value in the cloud layer in the sky sequencer to the minimum possible will stop the clouds from changing shape over time.
+Setting the 'Noise Period' value in the cloud layer to the minimum possible will stop the clouds from changing shape over time.
 
 How do I make the clouds move independently of time-of-day?
 ````````````````````````````````````````````````````````````````````````

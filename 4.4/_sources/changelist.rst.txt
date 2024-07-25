@@ -1,5 +1,27 @@
 Changelist 
 ================ 
+| **Thu 25 Jul** : Removed ApplyResourceGroup() from PlanetRenderer as it's unneeded. Added missing samplers 2 and 5.
+| **Thu 25 Jul** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Thu 25 Jul** : Fixed whitespaces, namings and comments. BaseGpuSkyGenerator can recompile shaders now. Added SkyBrightness to SkyProperties UI.
+| **Thu 25 Jul** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Thu 25 Jul** : Samplers in resource group 0.
+| **Wed 24 Jul** : Update to 4.4 documentation
+| **Wed 24 Jul** : Better checks in glfw_get_window_monitor() when calling glfwGetVideoMode().
+| **Fri 19 Jul** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Fri 19 Jul** : Documentation
+| **Fri 19 Jul** : Platform ptr.
+| **Fri 19 Jul** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Fri 19 Jul** : Removed unused constant buffer in composite.sfx affecting Vulkan. Other minor clean ups. Platform ptr.
+| **Fri 19 Jul** : Small fixes and allow import of sequence
+| **Wed 17 Jul** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Wed 17 Jul** : Fix for  SkyKeyframer::GetSiderealTimeDegrees() and other minor clean ups. Platform ptr.
+| **Tue 16 Jul** : Fixed: Fails to compile Editor if D3D12 is not enabled.
+| **Wed 10 Jul** : Fixes for setting textures in WindowUpdater.cpp for Vulkan Validation Layers. Platform ptr.
+| **Mon 08 Jul** : Removed rake from CloudRegionState.
+| **Mon 08 Jul** : Implemented CloudRegion rotation for cloud volume density.
+| **Mon 08 Jul** : Fixed CloudRegion Cumulonimbus scaling issue and CloudRegion UID selection in UI. Platform ptr.
+| **Thu 04 Jul** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
+| **Thu 04 Jul** : Linux fixes
 | **Wed 03 Jul** : Doc Warnings removed
 | **Wed 03 Jul** : Doc updates
 | **Tue 02 Jul** : Remove doc warnings
@@ -78,25 +100,3 @@ Changelist
 | **Wed 15 May** : Renamed cloudWindowView to globalViewView and some related clean ups.
 | **Tue 14 May** : Fixed typo.
 | **Tue 14 May** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Tue 14 May** : Added PLATFORM_BUILD_ASSIMP, which true for source builds. Platform ptr.
-| **Fri 10 May** : fix to correctly set default region
-| **Fri 10 May** : Default region to Cylinder
-| **Fri 10 May** : Use theme in platform, update platform ptr.
-| **Fri 10 May** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
-| **Fri 10 May** : fix for get/set ExternalDynamicValues
-| **Fri 10 May** : SkyKeyframeProperties categories updated. Fixed StyleColours_ControlsStyleColours_Controls().
-| **Fri 10 May** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Fri 10 May** : CloudRenderer::RenderCloudRegions() updated to better display regions and drag point. Camera view on GlobalView scaled by distance to the horizon. GlobalViewPanel clean ups and added cloud region button to show region edit mode. Updated CloudKeyframe::GetPrecipitationCentre() and GetStormCentre(). Platform ptr.
-| **Thu 09 May** : Add CustomColour and HeightFog colour to Sky Keyframes
-| **Thu 09 May** : CustomColour, Add StaticGetExternalRenderValues and StaticGetExternalDynamicValues
-| **Thu 09 May** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
-| **Thu 09 May** : Minor fix for namespaces in CloudRenderer.cpp. Platform ptr.
-| **Thu 09 May** : Fixed CloudRegion interpolation issue and other minor fix ups.
-| **Thu 09 May** : Fixed wind affecting cloud region position.
-| **Thu 09 May** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
-| **Wed 08 May** : Updated PluginTrueSkyRenderer::Set() to support new CloudRegion struct.
-| **Wed 08 May** : Added better controls from Spherical CloudRegions. Fixed member order in CloudRegionState and CloudKeyframer::SetCloudRegion() and InterpolateKeyframe(). Updated UI and Plugin.
-| **Tue 07 May** : UI changes to simplify rectangular cloud regions.
-| **Tue 07 May** : GlobalView_X() functions return bool.
-| **Tue 07 May** : Updated LatLonHdgRadEdit() to convert correctly the default value from rad to deg. CloudRegion's default origin is the keyframes origin.
-| **Tue 07 May** : Reworked CloudRenderer::RenderCloudRegions() for different region types. Renamed VolumePartIdentifier to CloudRegionPartIdentifier. std::map safety checks in CloudKeyframeProperties.cpp

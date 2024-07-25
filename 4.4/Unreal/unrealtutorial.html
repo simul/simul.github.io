@@ -52,12 +52,13 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation and Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../concepts.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../skysequencer.html">trueSKY Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorialsindex.html">Tutorials</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../unreal.html">trueSKY for Unreal Engine</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Unreal Tutorial</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#initial-configuration">Initial Configuration</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#installing-the-plugin">Installing the Plugin</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#running-the-binary-plugin">Running the binary plugin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#running-the-plugin">Running the plugin</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#adding-truesky-to-the-level">Adding trueSKY to the level</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#creating-a-new-sequence">Creating a new Sequence</a></li>
 </ul>
@@ -69,7 +70,6 @@
 <li class="toctree-l2"><a class="reference internal" href="unrealdebugging.html">Debugging, Diagnosing and Profiling</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../skysequencer.html">Sky Sequencer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../programming.html">Programming with the trueSKY SDK</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../legalindex.html">trueSKY Licences</a></li>
@@ -158,14 +158,14 @@
 <p>1: Login to your account at <a class="reference external" href="https://simul.co/account">https://simul.co/account</a>. If you have not created an account yet, head over to <a class="reference internal" href="../installation.html"><span class="doc">installation home page</span></a> to get setup.</p>
 <p>2: Download trueSKY binary installer from <a class="reference external" href="https://simul.co/downloads">https://simul.co/downloads</a>. Make sure to select the correct engine version you desire, and we always recommend the most up to date version of trueSKY.</p>
 <img alt="../_images/download.png" src="../_images/download.png" />
-<p>3: Run the trueSKY installer, ensuring that you select your UE4 directory as the installation location. (You should already have a version of UE4 installed, if not head over to <a class="reference external" href="https://www.unrealengine.com/">https://www.unrealengine.com/</a> to download one). After the installation process is complete, the plugin should be installed into your UE4 directory.</p>
+<p>3: Run the trueSKY installer, ensuring that you select your Unreal Project directory as the installation location. After the installation process is complete, the plugin should be installed into YourProjectDirectory/Plugins/trueSKYPlugin</p>
 <img alt="../_images/wizard.png" src="../_images/wizard.png" />
-<p><em>Make sure you select the correct directory</em></p>
+<p><em>Make sure you select the correct project</em></p>
 </section>
-<section id="running-the-binary-plugin">
-<h2>Running the binary plugin<a class="headerlink" href="#running-the-binary-plugin" title="Permalink to this heading">¶</a></h2>
-<p>1: Launch an Unreal project using the engine version in which the trueSKY plugin is installed.</p>
-<p>2: Click ‘Edit -&gt; Plugins’ from the dropdown menu at the top of the window.</p>
+<section id="running-the-plugin">
+<h2>Running the plugin<a class="headerlink" href="#running-the-plugin" title="Permalink to this heading">¶</a></h2>
+<p>1: Launch the project you installed trueSKY into.</p>
+<p>2: Click ‘Window -&gt; Plugins’ from the dropdown menu at the top of the window.</p>
 <img alt="../_images/pluginwindow.png" src="../_images/pluginwindow.png" />
 <p>3: A new ‘Plugins’ window will appear. Use the search box to find ‘trueSKY’.</p>
 <img alt="../_images/pluginwindow2.png" src="../_images/pluginwindow2.png" />

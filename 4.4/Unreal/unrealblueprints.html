@@ -52,6 +52,7 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation and Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../concepts.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../skysequencer.html">trueSKY Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorialsindex.html">Tutorials</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../unreal.html">trueSKY for Unreal Engine</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="unrealtutorial.html">Unreal Tutorial</a></li>
@@ -77,7 +78,6 @@
 <li class="toctree-l2"><a class="reference internal" href="unrealdebugging.html">Debugging, Diagnosing and Profiling</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../skysequencer.html">Sky Sequencer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../programming.html">Programming with the trueSKY SDK</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../legalindex.html">trueSKY Licences</a></li>
@@ -254,7 +254,6 @@ The return value the blueprint node outputs is simply the newly created cloud ke
 </section>
 <section id="adding-and-removing-cloudlayers">
 <h2>Adding and removing Cloudlayers<a class="headerlink" href="#adding-and-removing-cloudlayers" title="Permalink to this heading">¶</a></h2>
-<p>This feature is a 4.3 specific feature. The blueprints will show up while using the 4.2a and 4.1b legacy versions, however are not supported (unlike the simpler adding cloud keyframe values)</p>
 <p><strong>Creating Cloud Layers</strong></p>
 <p>Creating a Cloud Layer works similarly as creating a cloud keyframe. The blueprint is also fairly simple, just pass through a “create cloud layer” node, and add a name by typing it into the “name” slot - alternatively feed in any kind of string to have that assigned as a name.</p>
 <p>The node outputs a Cloud Layer UID - which will allow for referencing of the layer for other blueprint functions, such as the create cloud keyframe node. Allowing you to create entirely new layers, and add in a new set of keyframes easily.</p>
@@ -264,7 +263,6 @@ The return value the blueprint node outputs is simply the newly created cloud ke
 </section>
 <section id="adding-map-textures-via-blueprints">
 <h2>Adding map textures via blueprints<a class="headerlink" href="#adding-map-textures-via-blueprints" title="Permalink to this heading">¶</a></h2>
-<p>This feature works across both 4.2a and 4.3 versions and allows for users to add map textures dynamically.</p>
 <p>Previously this has only be possible to do within the editor, requiring the png being referenced to be located in a specific location within the simul folder structure in the engine. This has now been simplified, allowing you to reference any .png within the editor, however saving images into the “Media -&gt; Resouces” folder will still work.</p>
 <p><strong>Manual Sequence solution:</strong></p>
 <div class="video-wrapper">

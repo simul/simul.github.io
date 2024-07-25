@@ -2,69 +2,63 @@ Debugging
 =========
 Our goal is to have as much data publicly available to see as possible. If something is not working, you should know what isn't and why.
 
-UE4 Debug Overlays
-------------------
-To show the trueSKY debugging overlays, assign the Render Target Texture TrueSkyOverlayRT (under TrueSkyPlugin/Overlay content) to the Overlay RT slot in the trueSKY Sequence Actor. The RT texture is then used with the PostProcessVolume: under Rendering Features, add a Post Process Material, and set it to the TrueSkyOverlay material reference.
+We display all the information within the Debug Textures tab, which is split up into different pages.
 
-.. image:: /../Help/images/unreal/postprocessmaterial.png
-
-.. image:: /../Help/images/unreal/overlayrt.png
-
-The overlays can then be set in Windows->Overlays and then select the overlays you want to show.
-
-.. image:: /../Help/images/unreal/DebugWindows.png
-
-
-Celestial Display
----------------------
-Shows the current position and path of the Sun and Moon. The circles indicate the positions between the current and next keyframe.
-
-.. image:: /../Help/images/CelestialDisplay.png
-.. note:
-	This image shows an example of a default celestial display and an example where the Sun's position has been altered
-
-Profiling
--------------------
-Use profiling to aid performance measuring. This is a good way to determine what aspects of trueSKY are the most performance heavy.
-
-.. image:: /../Help/images/Profiling.png
-
-Atmospheric Tables 
-------------------------
-Detailed numbers on lighting values as well as colours. Issues with lighting can be looked at here.
-.. image:: /../Help/images/AtmosphericTables.png
-
-Cube Maps
---------------------------
-Helpful to see what your clouds are doing. Will cycle through the different Mips.
-
-.. image:: /../Help/images/CubeMaps.png
-
-Water Texture
-----------------------
-Here you can view the water Texture to see any issues that may be caused due to overlapping terrain or unusual behaviour.
-
-Flow Rays
--------------
-
-Lighting 	
---------------------
-
-
-Composition
+Compositing
 -----------------------
 Here is an overview of many of the systems use, helpful for depth tests and general debugging.
 
-.. image:: /../Help/images/composition.png
+.. image:: /../Help/images/compositing.png
 
-Rain Overlay
+Celestial Display
+---------------------
+Shows the current position and path of the Sun and Moon, along with information about their position.
+
+.. image:: /../Help/images/CelestialDisplay.png
+
+Profiling
+-------------------
+Use profiling to aid performance measuring. This is a good way to determine what aspects of trueSKY are the most performance heavy. This has been moved into its own performance tab and is not located in the debug textures window.
+
+.. image:: /../Help/images/Profiling.png
+
+Atmospherics
 ------------------------
-Here is an overlay of the rain map texture. If the precipitation volume is blank, then the rain does not know where to fall. Rain will only fall under clouds, unless specifically asked not to.
+Detailed numbers on lighting values as well as colours. Issues with lighting can be looked at here.
 
-.. image:: /../Help/images/precipitation/RainOverlay.png
+.. image:: /../Help/images/AtmosphericTables.png
 
-3D cloud Textures
+Cloud Cross Section
+--------------------------
+An overview of the cloud textures while they are generated. You can also see the Signed Distance Field that 4.4 takes advantage of to improve performance.
+
+.. image:: /../Help/images/CloudCrossSections.png
+
+
+Precipitation
+------------------------
+Here is an overlay of the rain map texture. If the precipitation volume is blank, then there will be no precipitation in your scene. Precipitation will only fall under a specified thickness of clouds, and precipitation regions will be specific to their point on the globe.
+
+.. image:: /../Help/images/precipitation/PrecipitationDebug.png
+
+Here is an example of full cloud coverage with an area of regional precipitation.
+
+.. image:: /../Help/images/precipitation/RegionalPrecipitation.png
+
+Auxillary Textures
 ------------------------------
 3D clouds textures including the shadow map texture. Helpful to see how much your Worley setting are affecting the clouds, as well as how large the Shadow Map is.
 
 .. image:: /../Help/images/cloudtextures.png
+
+
+Queries
+-------------
+Within our debug textures tab, we also have information about our queries. 
+
+Queries such as a point query can be used to determine the parameters at a specified point, for example you could determine the density of clouds at a certain point, and this could be used to limit visibility in your engine. Or you could query the rainfall over a certain area, and adjust how wet your objects appear in a scene.
+
+We have point queries for specified points and line queries, which recieve the data from between two specified points. These all update in real time and can be very beneficial if used correctly. We have functions to specify your own queries within our SDK and in our plugins.
+
+.. image:: /../Help/images/cloudqueries.png
+
