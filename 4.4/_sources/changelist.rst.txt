@@ -1,5 +1,17 @@
 Changelist 
 ================ 
+| **Wed 31 Jul** : Revert camera speed in Editor.
+| **Wed 31 Jul** : Updated Documentation for UE Geo Referencing.
+| **Wed 31 Jul** : Editor::OverlayViewMenu() updated units and precision. Moved comment for GeodeticPlanet::GetLocalRadiusKm.
+| **Tue 30 Jul** : PopupMenu() in GlobalViewPanel.cpp disables Set Engine Origin for external engines.
+| **Tue 30 Jul** : Added old missing textures.
+| **Tue 30 Jul** : Added comment to GeoReferencingMode.
+| **Tue 30 Jul** : Updated CopyToTargetDir.py to support copying textures.
+| **Mon 29 Jul** : Fixed Planet rendering for Vulkan.
+| **Mon 29 Jul** : Minor fixes from reviewing and merging code.
+| **Mon 29 Jul** : Platform ptr. Updated for consoles
+| **Fri 26 Jul** : Platform ptr.
+| **Fri 26 Jul** : Editor and samples updated to use Effect::LoadDefaultSamplers(). Platform ptr.
 | **Thu 25 Jul** : Removed ApplyResourceGroup() from PlanetRenderer as it's unneeded. Added missing samplers 2 and 5.
 | **Thu 25 Jul** : Merge branch '4.4' of github.com:simul/Simul into 4.4
 | **Thu 25 Jul** : Fixed whitespaces, namings and comments. BaseGpuSkyGenerator can recompile shaders now. Added SkyBrightness to SkyProperties UI.
@@ -88,15 +100,3 @@ Changelist
 | **Fri 17 May** : CMake PLATFORM_WINGDK does not enable PLATFORM_BUILD_ASSIMP.
 | **Thu 16 May** : Platform ptr.
 | **Thu 16 May** : clang compile fixes
-| **Thu 16 May** : Updated .gitignore to exclude lfs, hook and all build folders.
-| **Thu 16 May** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Thu 16 May** : Platform ptr.
-| **Thu 16 May** : Fixed CMake configuration error from variable PLATFORM_BUILD_ASSIMP for consoles.
-| **Wed 15 May** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
-| **Wed 15 May** : Fix for linux build support
-| **Wed 15 May** : Updated CloudRegionPartIdentifier and GetNearestCloudRegionPartIdentifier() to support the new region types and multiple grab points. Added ActiveKeyframerWithCloudRegion() and mouseMoveCloudRegionPartIdentifier() to clean up GlobalView.cpp. Updated CloudRenderer::RenderCloudRegions() to correctly draw all of the grab points. CloudRenderer::EditorRenderGlobalView() draws mouse position along with highlight text for Cloud Regions. Platform ptr.
-| **Wed 15 May** : simul::ui::GlobalViewPanel() updated to correctly set the pos out parameter.
-| **Wed 15 May** : Resorted commented out line in Editor.cpp
-| **Wed 15 May** : Renamed cloudWindowView to globalViewView and some related clean ups.
-| **Tue 14 May** : Fixed typo.
-| **Tue 14 May** : Merge branch '4.4' of github.com:simul/Simul into 4.4

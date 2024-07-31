@@ -4,7 +4,7 @@
   <meta charset="utf-8" ><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-  <title>Unreal Engine Georeferencing &mdash; Simul  documentation</title>
+  <title>Unreal Engine Geo Referencing &mdash; Simul  documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" >
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" >
     <link rel="shortcut icon" href="../_static/favicon.ico">
@@ -52,17 +52,17 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation and Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../concepts.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../skysequencer.html">trueSKY Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorialsindex.html">Tutorials</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../unreal.html">trueSKY for Unreal Engine</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="unrealtutorial.html">Unreal Tutorial</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Unreal Engine Georeferencing</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Unreal Engine Geo Referencing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="unrealblueprints.html">Unreal Blueprints with trueSKY</a></li>
 <li class="toctree-l2"><a class="reference internal" href="unrealmaterials.html">Unreal Materials with trueSKY</a></li>
 <li class="toctree-l2"><a class="reference internal" href="unrealsourcecode.html">Working with trueSKY from GitHub</a></li>
 <li class="toctree-l2"><a class="reference internal" href="unrealdebugging.html">Debugging, Diagnosing and Profiling</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../skysequencer.html">Sky Sequencer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../programming.html">Programming with the trueSKY SDK</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../legalindex.html">trueSKY Licences</a></li>
@@ -90,7 +90,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../unreal.html">trueSKY for Unreal Engine</a></li>
-      <li class="breadcrumb-item active">Unreal Engine Georeferencing</li>
+      <li class="breadcrumb-item active">Unreal Engine Geo Referencing</li>
       <li class="wy-breadcrumbs-aside">
         ﻿
 <div class="truesky-version-switch">
@@ -131,18 +131,22 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="unreal-engine-georeferencing">
-<h1>Unreal Engine Georeferencing<a class="headerlink" href="#unreal-engine-georeferencing" title="Permalink to this heading">¶</a></h1>
-<p>To control the position and updating of the Cloud Window in Unreal Engine, open the GeoReferencing section in the trueSKY Actor.</p>
-<img alt="../_images/UnrealGeoreferencing.png" src="../_images/UnrealGeoreferencing.png" />
-<p>Under “GeoReferencing Mode”, you can activate GEOREFERENCING. If not checked, the trueSKY Cloud Window frame will be equivalent to the Engine Frame.
-If GEOREFERENCING is checked, the Cloud Window frame will be updated according to the value of the Desired Centre and the position in WGS84 of the Engine Frame.
-The Desired Centre can be updated manually, via C++ or Blueprint, or by selecting “AUTO FOLLOW ACTORS”, and setting a list of actors to use.</p>
-<p>The “Engine to ECEF TRansform Matrix” will need to be set either in C++ or via Blueprints. The required matrix can be obtained from the function
-“Get Engine To ECEF Matrix” in the TrueSkyGeoReferencing Blueprint function library.</p>
+  <section id="unreal-engine-geo-referencing">
+<h1>Unreal Engine Geo Referencing<a class="headerlink" href="#unreal-engine-geo-referencing" title="Permalink to this heading">¶</a></h1>
+<p>To control the position and updating of the Cloud Window in Unreal Engine, open the Geo Referencing section in the trueSKY Actor.</p>
+<img alt="../_images/UnrealGeoreferencing2.png" src="../_images/UnrealGeoreferencing2.png" />
+<p>Under <cite>Geo Referencing Mode</cite>, there are four modes:</p>
+<ul class="simple">
+<li><p><cite>None</cite>: The Cloud Window centre is same as the WGS84 Engine centre and is continually updated.</p></li>
+<li><p><cite>GeoReferenced</cite>: The Cloud Window centre will be updated by trueSKY based on the <cite>Desired Centre</cite> and the position of the WGS84 Engine Centre, both of which can be set manually or programmatically via C++ or Blueprint.</p></li>
+<li><p><cite>AutoFollowActors</cite>: Similar to <cite>GeoReferenced</cite>, but <cite>Desired Centre</cite> is set to be the average position of multiple actors, which are set in the <cite>Followed Actors</cite> array.</p></li>
+<li><p><cite>AutoFollowView</cite>: Similar to <cite>GeoReferenced</cite>, but <cite>Desired Centre</cite> is set to be position of the view that is passed to trueSKY.</p></li>
+</ul>
+<p>The <cite>Engine to ECEF Transform Matrix</cite> will need to be set either in C++ or via Blueprints. The required matrix can be obtained from the function
+<cite>Get Engine To ECEF Matrix</cite> in the TrueSkyGeoReferencing Blueprint function library.</p>
 <img alt="../_images/GeoRefBlueprint.png" src="../_images/GeoRefBlueprint.png" />
-<p>In the Window menu, select “trueSKY World View” to activate a panel that shows the positions of the Engine Frame and Cloud Window on a map of the Earth.</p>
-<img alt="../_images/UnrealWorldView.png" src="../_images/UnrealWorldView.png" />
+<p>In the Window menu, select “trueSKY Global View” to activate a panel that shows the positions of the Engine centre and Cloud Window on a map of the Earth.</p>
+<img alt="../_images/UnrealGlobalView.png" src="../_images/UnrealGlobalView.png" />
 </section>
 
 
