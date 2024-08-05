@@ -8,48 +8,48 @@ Compositing
 -----------------------
 Here is an overview of many of the systems use, helpful for depth tests and general debugging.
 
-.. image:: /../Help/images/compositing.png
+.. image:: ../images/compositing.png
 
 Celestial Display
 ---------------------
 Shows the current position and path of the Sun and Moon, along with information about their position.
 
-.. image:: /../Help/images/CelestialDisplay.png
+.. image:: ../images/CelestialDisplay.png
 
 Profiling
 -------------------
 Use profiling to aid performance measuring. This is a good way to determine what aspects of trueSKY are the most performance heavy. This has been moved into its own performance tab and is not located in the debug textures window.
 
-.. image:: /../Help/images/Profiling.png
+.. image:: ../images/Profiling.png
 
 Atmospherics
 ------------------------
 Detailed numbers on lighting values as well as colours. Issues with lighting can be looked at here.
 
-.. image:: /../Help/images/AtmosphericTables.png
+.. image:: ../images/SkyFades.png
 
 Cloud Cross Section
 --------------------------
 An overview of the cloud textures while they are generated. You can also see the Signed Distance Field that 4.4 takes advantage of to improve performance.
 
-.. image:: /../Help/images/CloudCrossSections.png
+.. image:: ../images/CloudCrossSections.png
 
 
 Precipitation
 ------------------------
 Here is an overlay of the rain map texture. If the precipitation volume is blank, then there will be no precipitation in your scene. Precipitation will only fall under a specified thickness of clouds, and precipitation regions will be specific to their point on the globe.
 
-.. image:: /../Help/images/precipitation/PrecipitationDebug.png
+.. image:: ../images/precipitation/PrecipitationDebug.png
 
 Here is an example of full cloud coverage with an area of regional precipitation.
 
-.. image:: /../Help/images/precipitation/RegionalPrecipitation.png
+.. image:: ../images/precipitation/RegionalPrecipitation.png
 
 Auxillary Textures
 ------------------------------
 3D clouds textures including the shadow map texture. Helpful to see how much your Worley setting are affecting the clouds, as well as how large the Shadow Map is.
 
-.. image:: /../Help/images/cloudtextures.png
+.. image:: ../images/cloudtextures.png
 
 
 Queries
@@ -60,5 +60,5 @@ Queries such as a point query can be used to determine the parameters at a speci
 
 We have point queries for specified points and line queries, which recieve the data from between two specified points. These all update in real time and can be very beneficial if used correctly. We have functions to specify your own queries within our SDK and in our plugins.
 
-.. image:: /../Help/images/cloudqueries.png
+.. image:: ../images/cloudqueries.png
 

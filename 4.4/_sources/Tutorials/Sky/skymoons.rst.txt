@@ -39,7 +39,7 @@ Each of the settings functions as follows:
 
 
 
-.. image:: ../../../Help/images/MoonOrbitExplanation.png
+.. image:: ../../images/MoonOrbitExplanation.png
 
 *Image found from " https://en.wikipedia.org/wiki/Orbital_elements "*
 

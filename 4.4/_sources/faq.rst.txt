@@ -20,24 +20,9 @@ Setup
 `````````````````````````````````````````````````
 This will be due to Windows 7. Unforunately, we do not support Windows 7 anymore. If you wish for Windows 7 Support please contact us directly.
 
-Getting "DllNotFoundException"
-`````````````````````````````````````````````````
-Windows User Account Control can give false positives when loading trueSKY, and stop it from being loaded. Lowering the notification level can help with this problem.
-
-
-The trueSKY binary plugin is not working correctly
-````````````````````````````````````````````````````
-Try deleting the plugin folder Engine/Plugins/TrueSkyPlugin/Content and the plugin binaries Engine/Binaries/ThirdParty/Simul. Then re-install the latest version of the plugin.
-
-
-When packaging the game, I get errors and/or the sky is black.
-``````````````````````````````````````````````````````````````````
-If you are using the binary installer, then you will need to follow some additional steps to be able to package your game with trueSKY. You can read about these :doc:`on our deployment page </Programming/deployment>`. If these steps have been taken, there may be a conflict with another plugin. Currently known Plugins that have conflict issues can be found below. Otherwise, get in touch and can help.
-
-
-I can't edit the values in the sequencer
-`````````````````````````````````````````````````
-Ensure your license key has been entered at the top of the sequencer, and that it is valid.
+I can't edit the values in the sequencer / Sequencer is blank
+````````````````````````````````````````````````````````````````````````
+Ensure your licence is valid by selecting Windows->trueSKY Licence.
 
 
 The camera view is upside down
@@ -46,14 +31,8 @@ Try checking/unchecking the "Flipped View" option in the TrueSkyCamera component
 
 
 My trueSKY folder in the content browser is empty
-``````````````````````````````````````````````````
-For UE5 and later: The content is stored in your project directory. "yourProject/Plugins/TrueSkyPlugin/Content"
-
-For 4.27 and earlier: You can find the contents by going to "Engine/Plugins/TrueSkyPlugin/Content". We don't copy the files in to save you having the files in every project. If you want to copy them over that is fine, but you will need to adjust the trueSKY actor's and our material function references if you use them from a different location. 
-
-Failed to load TrueSkyUI_MD.dll for truesky ui
-`````````````````````````````````````````````````
-Check your log for - Missing import: VCRUNTIME140_1.dll. If this is the case, you need to install the latest Visual Studio Redistributable. You can download this from https://support.microsoft.com/en-gb/help/2977003/the-latest-supported-visual-c-downloads. Otherwise a re-install of the plugin to ensure all files are present is recommended.
+````````````````````````````````````````````````````
+For UE5 and later: The content is stored in your project directory. "yourProject/Plugins/TrueSkyPlugin/Content". If the files are not here, try re-installing the plugin.
 
 Sky
 ----
@@ -67,11 +46,11 @@ The Sky updates with black spots!
 Decrease the Atmospheric Amortization setting on the trueSKY actor. This will cause the Sky to update more frequently.
 
 Performance
------------
+------------
 
 trueSKY is taking too many milliseconds to render a frame. How can I reduce this value?
 ``````````````````````````````````````````````````````````````````````````````````````````````````
-With default settings, the cost of trueSKY should be between 2 and 4 ms per frame. If this is not being achieved or in the use case, speed is a higher priority than visual performance, then this can be improved by altering the Amortization, Atmospherics Amortization and/or Downscale Factor settings in the details panel of the trueSKYSequenceActor. To aid the measurement of performance, trueSKY also provides profiling information (Windows -> Overlays -> Profiling or use the GetProfilingText function in blueprint).
+With default settings, the cost of trueSKY should be between 2 and 4 ms per frame. If this is not being achieved, there are many settings that can be adjusted to give you the correct balance of visuals and performance. 
 
 How do I make the clouds appear less pixelated?
 `````````````````````````````````````````````````
@@ -86,7 +65,7 @@ Make sure there are enough clouds above to produce rain!
 
 I don't see any rain, but rain streaks are working
 ```````````````````````````````````````````````````
-For rain and lightning to render in UE, you need to have added trueSKY translucent as a post process material. As of September 2019, this has been made automatic, and added as part of initialization. Firstly, add a post process Volume to your scene, and make sure it is global by enabling "Unbound". Then go to the Rendering Features within the Post process Settings. Add a new element to the post process materials, and choose asset reference when prompted. Finally, add the trueSKY translucent material. If you do not have this material, you need locate the trueSKY assets.
+For rain and lightning to render in UE, you need to have added trueSKY translucent as a post process material. This should be automatic, and is added as part of initialization. Firstly, add a post process Volume to your scene, and make sure it is global by enabling "Unbound". Then go to the Rendering Features within the Post process Settings. Add a new element to the post process materials, and choose asset reference when prompted. Finally, add the trueSKY translucent material. If you do not have this material, you need locate the trueSKY assets.
 
 
 Rain drops are large and blocky
@@ -159,7 +138,7 @@ The Unreal Engine screen clear is faulty in some versions: the Hardware Clear op
 Other Issues
 -------------
 
-Unreal - Plugin 'TrueSkyPlugin' failed to load ecause module 'TrueSkyPlugin' could not be found
+Unreal - Plugin 'TrueSkyPlugin' failed to load because module 'TrueSkyPlugin' could not be found
 `````````````````````````````````````````````````````````````````````````````````````````````````
 If you are getting this error when packaging, you will need to convert your project from a blueprint project to a C++ project. This will not change your project in anyway, and you can continue to use blueprints. To do this, go to Tools->New C++ Class. Add any parent class to your project, and after this has finished you can package again, and the plugin will be loaded.
 

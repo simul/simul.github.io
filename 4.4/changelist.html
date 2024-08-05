@@ -124,9 +124,31 @@
   <section id="changelist">
 <h1>Changelist<a class="headerlink" href="#changelist" title="Permalink to this heading">¶</a></h1>
 <div class="line-block">
+<div class="line"><strong>Mon 05 Aug</strong> : Documentation Updates.</div>
+<div class="line"><strong>Mon 05 Aug</strong> : Regenerate Noise on cloud class change.</div>
+<div class="line"><strong>Mon 05 Aug</strong> : Small fixes, dont call into godrays if intensity is 0.</div>
+<div class="line"><strong>Mon 05 Aug</strong> : Merge branch ‘4.4’ of github.com:Simul/Simul into 4.4</div>
+<div class="line"><strong>Fri 02 Aug</strong> : Platform ptr.</div>
+<div class="line"><strong>Fri 02 Aug</strong> : Merge branch ‘4.4’ of github.com:Simul/Simul into 4.4</div>
+<div class="line"><strong>Fri 02 Aug</strong> : Fixed editor rendering errors in Vulkan. Platform ptr.</div>
+<div class="line"><strong>Fri 02 Aug</strong> : Merge branch ‘4.4’ of github.com:Simul/Simul into 4.4</div>
+<div class="line"><strong>Fri 02 Aug</strong> : Better checks for setting sdfSizePx.</div>
+<div class="line"><strong>Fri 02 Aug</strong> : ExternalRenderValues updated to 11</div>
+<div class="line"><strong>Fri 02 Aug</strong> : Editor OverlayViewMenu calculates the flight level.</div>
+<div class="line"><strong>Fri 02 Aug</strong> : Added sdfLimitKm to the sdf compute raytrace shader with UI controls</div>
+<div class="line"><strong>Fri 02 Aug</strong> : Added SignedDistanceFieldIntersectLimitKm to CloudRenderingOptions.</div>
+<div class="line"><strong>Fri 02 Aug</strong> : Clamp dimensions of the sdf texture to a minimum of 1 to stop crashes.</div>
+<div class="line"><strong>Fri 02 Aug</strong> : Merge branch ‘4.4’ of github.com:Simul/Simul into 4.4</div>
+<div class="line"><strong>Thu 01 Aug</strong> : Platform ptr.</div>
+<div class="line"><strong>Thu 01 Aug</strong> : Remove old, invalid /help documentation and moved images into newer /docs dir</div>
+<div class="line"><strong>Thu 01 Aug</strong> : Force CloudRenderingOptions::RaytraceMode to be RenderingMode::DISTANCE_FIELD_STEP</div>
+<div class="line"><strong>Thu 01 Aug</strong> : Editor supports CloudRenderingOptions files.</div>
+<div class="line"><strong>Thu 01 Aug</strong> : Add COMPATIBILITY_43 Cloud Class. Improve 4.4 Layer randomness from Worley texture. Allow for GpuCloud shader recompile.</div>
+<div class="line"><strong>Wed 31 Jul</strong> : Merge branch ‘4.4’ of github.com:Simul/Simul into 4.4</div>
 <div class="line"><strong>Wed 31 Jul</strong> : Revert camera speed in Editor.</div>
 <div class="line"><strong>Wed 31 Jul</strong> : Updated Documentation for UE Geo Referencing.</div>
 <div class="line"><strong>Wed 31 Jul</strong> : Editor::OverlayViewMenu() updated units and precision. Moved comment for GeodeticPlanet::GetLocalRadiusKm.</div>
+<div class="line"><strong>Wed 31 Jul</strong> : Documentation Updates</div>
 <div class="line"><strong>Tue 30 Jul</strong> : PopupMenu() in GlobalViewPanel.cpp disables Set Engine Origin for external engines.</div>
 <div class="line"><strong>Tue 30 Jul</strong> : Added old missing textures.</div>
 <div class="line"><strong>Tue 30 Jul</strong> : Added comment to GeoReferencingMode.</div>
@@ -202,28 +224,6 @@
 <div class="line"><strong>Wed 12 Jun</strong> : SkyKeyframe::daytime is now a double for better precision. Updated SkyRenderer::RenderCelestialDisplay() text for sun and moon, and SkyKeyframer re-organisation. CloudWindow extra debug info commented out.</div>
 <div class="line"><strong>Mon 10 Jun</strong> : Updated Volume Queries debug text.</div>
 <div class="line"><strong>Mon 10 Jun</strong> : Merge branch ‘4.4’ of github.com:simul/Simul into 4.4</div>
-<div class="line"><strong>Mon 10 Jun</strong> : Updated GlobalView eclipse point to show total vs annular eclipses. Added to class SkyKeyframer GetTopocentricDistanceToMoon(), GetApparentSunRadiusArcMinutes(), GetApparentMoonRadiusArcMinutes() and GetEclipseFactor(). Updated SkyRenderer::RenderSun() and SkyRenderer::RenderPlanet() to support the corona and diamond ring textures.</div>
-<div class="line"><strong>Mon 10 Jun</strong> : Added GetTopocentricDistanceToMoon() to SiderealSky. Updated Sky with new sun and moon radii and function signature change.</div>
-<div class="line"><strong>Mon 10 Jun</strong> : Updated sky.sfx and sky_constants.sl to rendered the sun corona and diamond ring. Moon geometry is now double the size to support the whole texture.</div>
-<div class="line"><strong>Mon 10 Jun</strong> : Added sun corona and sun diamond ring texture. Rotated Moon texture.</div>
-<div class="line"><strong>Wed 05 Jun</strong> : Platform Ptr.</div>
-<div class="line"><strong>Wed 05 Jun</strong> : Fix for Cloud Region editor UI</div>
-<div class="line"><strong>Wed 05 Jun</strong> : Add AtmosphericsAmortization to renderingOptions</div>
-<div class="line"><strong>Mon 03 Jun</strong> : Merge branch ‘4.4’ of github.com:Simul/Simul into 4.4</div>
-<div class="line"><strong>Mon 03 Jun</strong> : Disable unused variables</div>
-<div class="line"><strong>Mon 03 Jun</strong> : Platform ptr.</div>
-<div class="line"><strong>Fri 31 May</strong> : Switch support for 4.4. ChunkInputOutput is disabled. CMAKE_BINARY_DIR added to add_multiplatform_sfx_shader_project. Better preprocessor statements for Switch. Undo/Redo for PluginTrueSkyRenderer is wrapped behind SIMUL_PLUGIN_UI. CopyToTargetDir.py updated to support copying Switch binaries, shaders and textures. Platform ptr.</div>
-<div class="line"><strong>Thu 30 May</strong> : Merge branch ‘4.4’ of github.com:simul/Simul into 4.4</div>
-<div class="line"><strong>Thu 30 May</strong> : Initial support for Switch in TrueSkyPluginRender. Platform ptr.</div>
-<div class="line"><strong>Wed 29 May</strong> : Disable assimp for linux</div>
-<div class="line"><strong>Tue 28 May</strong> : Merge branch ‘4.4’ of github.com:Simul/Simul into 4.4</div>
-<div class="line"><strong>Tue 28 May</strong> : Platform ptr</div>
-<div class="line"><strong>Tue 21 May</strong> : Platform ptr.</div>
-<div class="line"><strong>Tue 21 May</strong> : In CloudLayer UI, changed Cloud Region “Layers” to “Regions”.</div>
-<div class="line"><strong>Tue 21 May</strong> : Added externalTransparentRendererDelagate. Updated Editor to support transparent mesh rendering.</div>
-<div class="line"><strong>Fri 17 May</strong> : CMake PLATFORM_WINGDK does not enable PLATFORM_BUILD_ASSIMP.</div>
-<div class="line"><strong>Thu 16 May</strong> : Platform ptr.</div>
-<div class="line"><strong>Thu 16 May</strong> : clang compile fixes</div>
 </div>
 </section>
 

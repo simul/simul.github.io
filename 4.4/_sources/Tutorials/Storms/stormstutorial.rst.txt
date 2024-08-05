@@ -3,13 +3,13 @@ Storms Tutorial
 
 Storms are now a part of the Cloud Keyframes, allowing for easier controls as well as the option for storms per layer. To create a storm, add or select a cloud keyframe and look for the Storms section in the properties.
 
-.. image:: ../../../Help/images/StormSettings.png
+.. image:: ../../images/StormSettings.png
 
 
 For parameters on the visual of lightning strikes, these are now stored within the Cloud Layer Settings. 
 
 
-.. image:: ../../../Help/images/StormLayerSettings.png
+.. image:: ../../images/StormLayerSettings.png
 
 
 Editing Storm through Blueprints

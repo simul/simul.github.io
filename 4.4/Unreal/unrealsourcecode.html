@@ -52,22 +52,22 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation and Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../concepts.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../skysequencer.html">trueSKY Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorialsindex.html">Tutorials</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../unreal.html">trueSKY for Unreal Engine</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="unrealtutorial.html">Unreal Tutorial</a></li>
-<li class="toctree-l2"><a class="reference internal" href="unrealgeoreferencing.html">Unreal Engine Georeferencing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unrealgeoreferencing.html">Unreal Engine Geo Referencing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="unrealblueprints.html">Unreal Blueprints with trueSKY</a></li>
 <li class="toctree-l2"><a class="reference internal" href="unrealmaterials.html">Unreal Materials with trueSKY</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Working with trueSKY from GitHub</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#full-integration-with-custom-unreal-source-code">Full Integration with Custom Unreal Source Code</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#access-to-repository">1: Access to Repository</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#setup">2: Setup</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#full-integration-with-custom-unreal-source-code">Full Integration with Custom Unreal Source Code</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="unrealdebugging.html">Debugging, Diagnosing and Profiling</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../skysequencer.html">Sky Sequencer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../programming.html">Programming with the trueSKY SDK</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../legalindex.html">trueSKY Licences</a></li>
@@ -138,23 +138,28 @@
              
   <section id="working-with-truesky-from-github">
 <h1>Working with trueSKY from GitHub<a class="headerlink" href="#working-with-truesky-from-github" title="Permalink to this heading">¶</a></h1>
+<section id="full-integration-with-custom-unreal-source-code">
+<h2>Full Integration with Custom Unreal Source Code<a class="headerlink" href="#full-integration-with-custom-unreal-source-code" title="Permalink to this heading">¶</a></h2>
+<p>Our unreal plugin is now per-project for trueSKY 4.4, and as such requires no changes to the Unreal Source Code. You can install this to your custom Unreal source versions and build against it without issue. If an issue does occur please get in touch.</p>
+<p>Most of the information below is not revelent anymore but has been left for compatibility purposes.</p>
+</section>
 <section id="access-to-repository">
 <h2>1: Access to Repository<a class="headerlink" href="#access-to-repository" title="Permalink to this heading">¶</a></h2>
 <ol class="arabic simple">
-<li><p>Make sure you have created a Simul account. If not, head over <a class="reference external" href="https://simul.co/register/">here to register</a>.</p></li>
+<li><p>Make sure you have created a Simul account. If not, <a class="reference external" href="https://simul.co/register/">register an account now</a>.</p></li>
 <li><p>On your <a class="reference external" href="https://simul.co/account/edit-account/">Account Page</a>, there is a GitHub Username section. Input your GitHub Username and select Request Access. <strong>This needs to be the same username connected to your Unreal Engine account at</strong> <a class="reference external" href="https://www.unrealengine.com/account/connected">https://www.unrealengine.com/account/connected</a></p></li>
 <li><p>You will receive an email from github.com with an invitation to join the Simul UnrealEngine group. Click the link in the email and accept the invitation.</p></li>
 <li><p>You should now have access to our Unreal Repo at <a class="reference external" href="https://github.com/simul/UnrealEngine">https://github.com/simul/UnrealEngine</a>.</p></li>
-<li><p>Fork or clone our Unreal Repository. If you are not sure how to do this, GitHub has helpful information <a class="reference external" href="https://help.github.com/en/articles/fork-a-repo">here</a>. Alternatively, if you are using a different UE4 codebase, pull changes from the Simul fork, and merge.</p></li>
+<li><p>Fork or clone our Unreal Repository. If you are not sure how to do this, <a class="reference external" href="https://help.github.com/en/articles/fork-a-repo">GitHub has helpful information</a>. Alternatively, if you are using a different Unreal codebase, pull changes from the Simul fork, and merge.</p></li>
 </ol>
 </section>
 <section id="setup">
 <h2>2: Setup<a class="headerlink" href="#setup" title="Permalink to this heading">¶</a></h2>
 <ol class="arabic simple">
 <li><dl class="simple">
-<dt>Follow the UE4 ReadME (in the root UnrealEngine directory), making sure you:</dt><dd><ul class="simple">
-<li><p>Run <cite>Setup.bat</cite> to download all complementary UE4 dependencies.</p></li>
-<li><p>Run <cite>GenerateProjectFiles.bat</cite> from the UE4 root directory; this will generate projects and the solution file (<cite>UE4.sln</cite>).</p></li>
+<dt>Follow the Unreal ReadME (in the root UnrealEngine directory), making sure you:</dt><dd><ul class="simple">
+<li><p>Run <cite>Setup.bat</cite> to download all complementary Unreal dependencies.</p></li>
+<li><p>Run <cite>GenerateProjectFiles.bat</cite> from the Unreal root directory; this will generate projects and the solution file (<cite>Unreal.sln</cite>).</p></li>
 </ul>
 </dd>
 </dl>
@@ -162,42 +167,15 @@
 <li><dl class="simple">
 <dt>The trueSKY binary libraries are <em>not</em> kept in the repository. This is because multiple trueSKY versions can work with the same Unreal version. So, to get the binary libraries, you can either:</dt><dd><ul class="simple">
 <li><p>Run the batch file located in <cite>Engine/Plugins/TrueSkyPlugin/GetBinaries.bat</cite>, passing in the required trueSKY version as a parameter, for example as: <cite>GetBinaries.bat 4.2</cite>.</p></li>
-<li><p>Or, go to <a class="reference external" href="https://simul.co/downloads">our downloads page</a> and get the appropriate TrueSkyUE4Binaries installer. Make sure to choose the correct Unreal Engine install directory.</p></li>
+<li><p>Or, go to <a class="reference external" href="https://simul.co/downloads">our downloads page</a> and get the appropriate TrueSkyUnrealBinaries installer. Make sure to choose the correct Unreal Engine install directory.</p></li>
 </ul>
 </dd>
 </dl>
 </li>
-<li><p>In both cases this will auto-extract (upon your permission) trueSKY binaries (DLLs/LIBs) into <cite>[UE4]/Engine/Binaries/ThirdParty/Simul</cite>. Binaries are then put into their platform-respective paths, while the trueSKY shader files will go into your TrueSkyPlugin directory under the <cite>shaderbin</cite> subfolder (these are also separated based on platform).</p></li>
-<li><p>Use UE4.sln to open the project in Visual Studio.The UE4 project contains the “TrueSkyPlugin” folder in Engine/UE4/Plugins (whether you installed via the installer or downloaded the source from GitHub). There are two trueSKY modules in the UE4 project – <strong>TrueSkyPlugin</strong> and <strong>TrueSkyEditorPlugin</strong>. TrueSkyEditorPlugin is only built alongside an editor build of UE4.</p></li>
-<li><p>Build the UE4 project in the “Development Editor” configuration. Once this has compiled trueSKY will be present in your UE4 build.</p></li>
+<li><p>In both cases this will auto-extract (upon your permission) trueSKY binaries (DLLs/LIBs) into <cite>[Unreal]/Engine/Binaries/ThirdParty/Simul</cite>. Binaries are then put into their platform-respective paths, while the trueSKY shader files will go into your TrueSkyPlugin directory under the <cite>shaderbin</cite> subfolder (these are also separated based on platform).</p></li>
+<li><p>Use Unreal.sln to open the project in Visual Studio.The UE4 project contains the “TrueSkyPlugin” folder in Engine/Unreal/Plugins (whether you installed via the installer or downloaded the source from GitHub). There are two trueSKY modules in the Unreal project – <strong>TrueSkyPlugin</strong> and <strong>TrueSkyEditorPlugin</strong>. TrueSkyEditorPlugin is only built alongside an editor build of UE4.</p></li>
+<li><p>Build the Unreal project in the “Development Editor” configuration. Once this has compiled trueSKY will be present in your Unreal build.</p></li>
 </ol>
-</section>
-<section id="full-integration-with-custom-unreal-source-code">
-<h2>Full Integration with Custom Unreal Source Code<a class="headerlink" href="#full-integration-with-custom-unreal-source-code" title="Permalink to this heading">¶</a></h2>
-<p>The following files in the UE source have been modified in the Simul fork of the UE4 repository. If you are merging trueSKY into a custom fork, you must ensure that the trueSKY modifications are carried over. In general, a good way to go about merging these changes is by using <a class="reference external" href="https://www.scootersoftware.com">Beyond Compare</a> or <a class="reference external" href="https://www.perforce.com/product/components/perforce-visual-merge-and-diff-tools">Perforce Merge</a> to easily do a diff across repos or, even simpler, between separate folders on your local machine.</p>
-<p><strong>Core Engine Files:</strong></p>
-<ul class="simple">
-<li><p><cite>Engine/Source/Runtime/Renderer/Private/DeferredShadingRenderer.cpp</cite></p></li>
-<li><p><cite>Engine/Source/Runtime/Renderer/Public/RendererInterface.h or Engine/Source/Runtime/RenderCore/Public/RendererInterface.h</cite></p></li>
-<li><p><cite>Engine/Source/Runtime/Renderer/Private/RendererModule.h</cite></p></li>
-<li><p><cite>Engine/Source/Runtime/Renderer/Private/SceneRendering.cpp</cite></p></li>
-<li><p><cite>Engine/Source/Runtime/Renderer/Private/RendererScene.cpp</cite></p></li>
-<li><p><cite>Engine/Source/Runtime/Renderer/Private/TranslucentRendering.cpp</cite></p></li>
-</ul>
-<p><strong>Deployment File (Windows):</strong></p>
-<ul class="simple">
-<li><p><cite>Engine/Source/Programs/AutomationTool/Win/WinPlatform.Automation.cs</cite></p></li>
-</ul>
-<p><strong>Deployment Files (XBox One):</strong></p>
-<ul class="simple">
-<li><p><cite>Engine/Source/Programs/UnrealBuildTool/XboxOne/XboxOneDeploy.cs</cite></p></li>
-<li><p><cite>Engine/Source/Programs/AutomationTool/XboxOne/XboxOnePlatform.Automation.cs</cite></p></li>
-</ul>
-<p><strong>Deployment Files (Playstation 4):</strong></p>
-<ul class="simple">
-<li><p><cite>Engine/Source/Programs/AutomationTool/PS4/PS4Platform.Automation.cs</cite></p></li>
-<li><p><cite>Engine/Source/Programs/UnrealBuildTool/PS4/UEDeployPS4.cs</cite></p></li>
-</ul>
 </section>
 </section>
 

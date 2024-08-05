@@ -60,13 +60,9 @@
 <li class="toctree-l2"><a class="reference internal" href="#sections">Sections</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#setup">Setup</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#createfile2-not-found-in-kernel32-dll">“createfile2 not found in kernel32.dll”</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#getting-dllnotfoundexception">Getting “DllNotFoundException”</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#the-truesky-binary-plugin-is-not-working-correctly">The trueSKY binary plugin is not working correctly</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#when-packaging-the-game-i-get-errors-and-or-the-sky-is-black">When packaging the game, I get errors and/or the sky is black.</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#i-can-t-edit-the-values-in-the-sequencer">I can’t edit the values in the sequencer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#i-can-t-edit-the-values-in-the-sequencer-sequencer-is-blank">I can’t edit the values in the sequencer / Sequencer is blank</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#the-camera-view-is-upside-down">The camera view is upside down</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#my-truesky-folder-in-the-content-browser-is-empty">My trueSKY folder in the content browser is empty</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#failed-to-load-trueskyui-md-dll-for-truesky-ui">Failed to load TrueSkyUI_MD.dll for truesky ui</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#sky">Sky</a><ul>
@@ -105,7 +101,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#other-issues">Other Issues</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#unreal-plugin-trueskyplugin-failed-to-load-ecause-module-trueskyplugin-could-not-be-found">Unreal - Plugin ‘TrueSkyPlugin’ failed to load ecause module ‘TrueSkyPlugin’ could not be found</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#unreal-plugin-trueskyplugin-failed-to-load-because-module-trueskyplugin-could-not-be-found">Unreal - Plugin ‘TrueSkyPlugin’ failed to load because module ‘TrueSkyPlugin’ could not be found</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#my-question-is-not-in-the-documentation-what-can-i-do">My Question is not in the documentation, what can I do?</a></li>
@@ -195,21 +191,9 @@
 <h3>“createfile2 not found in kernel32.dll”<a class="headerlink" href="#createfile2-not-found-in-kernel32-dll" title="Permalink to this heading">¶</a></h3>
 <p>This will be due to Windows 7. Unforunately, we do not support Windows 7 anymore. If you wish for Windows 7 Support please contact us directly.</p>
 </section>
-<section id="getting-dllnotfoundexception">
-<h3>Getting “DllNotFoundException”<a class="headerlink" href="#getting-dllnotfoundexception" title="Permalink to this heading">¶</a></h3>
-<p>Windows User Account Control can give false positives when loading trueSKY, and stop it from being loaded. Lowering the notification level can help with this problem.</p>
-</section>
-<section id="the-truesky-binary-plugin-is-not-working-correctly">
-<h3>The trueSKY binary plugin is not working correctly<a class="headerlink" href="#the-truesky-binary-plugin-is-not-working-correctly" title="Permalink to this heading">¶</a></h3>
-<p>Try deleting the plugin folder Engine/Plugins/TrueSkyPlugin/Content and the plugin binaries Engine/Binaries/ThirdParty/Simul. Then re-install the latest version of the plugin.</p>
-</section>
-<section id="when-packaging-the-game-i-get-errors-and-or-the-sky-is-black">
-<h3>When packaging the game, I get errors and/or the sky is black.<a class="headerlink" href="#when-packaging-the-game-i-get-errors-and-or-the-sky-is-black" title="Permalink to this heading">¶</a></h3>
-<p>If you are using the binary installer, then you will need to follow some additional steps to be able to package your game with trueSKY. You can read about these <a class="reference internal" href="Programming/deployment.html"><span class="doc">on our deployment page</span></a>. If these steps have been taken, there may be a conflict with another plugin. Currently known Plugins that have conflict issues can be found below. Otherwise, get in touch and can help.</p>
-</section>
-<section id="i-can-t-edit-the-values-in-the-sequencer">
-<h3>I can’t edit the values in the sequencer<a class="headerlink" href="#i-can-t-edit-the-values-in-the-sequencer" title="Permalink to this heading">¶</a></h3>
-<p>Ensure your license key has been entered at the top of the sequencer, and that it is valid.</p>
+<section id="i-can-t-edit-the-values-in-the-sequencer-sequencer-is-blank">
+<h3>I can’t edit the values in the sequencer / Sequencer is blank<a class="headerlink" href="#i-can-t-edit-the-values-in-the-sequencer-sequencer-is-blank" title="Permalink to this heading">¶</a></h3>
+<p>Ensure your licence is valid by selecting Windows-&gt;trueSKY Licence.</p>
 </section>
 <section id="the-camera-view-is-upside-down">
 <h3>The camera view is upside down<a class="headerlink" href="#the-camera-view-is-upside-down" title="Permalink to this heading">¶</a></h3>
@@ -217,12 +201,7 @@
 </section>
 <section id="my-truesky-folder-in-the-content-browser-is-empty">
 <h3>My trueSKY folder in the content browser is empty<a class="headerlink" href="#my-truesky-folder-in-the-content-browser-is-empty" title="Permalink to this heading">¶</a></h3>
-<p>For UE5 and later: The content is stored in your project directory. “yourProject/Plugins/TrueSkyPlugin/Content”</p>
-<p>For 4.27 and earlier: You can find the contents by going to “Engine/Plugins/TrueSkyPlugin/Content”. We don’t copy the files in to save you having the files in every project. If you want to copy them over that is fine, but you will need to adjust the trueSKY actor’s and our material function references if you use them from a different location.</p>
-</section>
-<section id="failed-to-load-trueskyui-md-dll-for-truesky-ui">
-<h3>Failed to load TrueSkyUI_MD.dll for truesky ui<a class="headerlink" href="#failed-to-load-trueskyui-md-dll-for-truesky-ui" title="Permalink to this heading">¶</a></h3>
-<p>Check your log for - Missing import: VCRUNTIME140_1.dll. If this is the case, you need to install the latest Visual Studio Redistributable. You can download this from <a class="reference external" href="https://support.microsoft.com/en-gb/help/2977003/the-latest-supported-visual-c-downloads">https://support.microsoft.com/en-gb/help/2977003/the-latest-supported-visual-c-downloads</a>. Otherwise a re-install of the plugin to ensure all files are present is recommended.</p>
+<p>For UE5 and later: The content is stored in your project directory. “yourProject/Plugins/TrueSkyPlugin/Content”. If the files are not here, try re-installing the plugin.</p>
 </section>
 </section>
 <section id="sky">
@@ -240,7 +219,7 @@
 <h2>Performance<a class="headerlink" href="#performance" title="Permalink to this heading">¶</a></h2>
 <section id="truesky-is-taking-too-many-milliseconds-to-render-a-frame-how-can-i-reduce-this-value">
 <h3>trueSKY is taking too many milliseconds to render a frame. How can I reduce this value?<a class="headerlink" href="#truesky-is-taking-too-many-milliseconds-to-render-a-frame-how-can-i-reduce-this-value" title="Permalink to this heading">¶</a></h3>
-<p>With default settings, the cost of trueSKY should be between 2 and 4 ms per frame. If this is not being achieved or in the use case, speed is a higher priority than visual performance, then this can be improved by altering the Amortization, Atmospherics Amortization and/or Downscale Factor settings in the details panel of the trueSKYSequenceActor. To aid the measurement of performance, trueSKY also provides profiling information (Windows -&gt; Overlays -&gt; Profiling or use the GetProfilingText function in blueprint).</p>
+<p>With default settings, the cost of trueSKY should be between 2 and 4 ms per frame. If this is not being achieved, there are many settings that can be adjusted to give you the correct balance of visuals and performance.</p>
 </section>
 <section id="how-do-i-make-the-clouds-appear-less-pixelated">
 <h3>How do I make the clouds appear less pixelated?<a class="headerlink" href="#how-do-i-make-the-clouds-appear-less-pixelated" title="Permalink to this heading">¶</a></h3>
@@ -255,7 +234,7 @@
 </section>
 <section id="i-don-t-see-any-rain-but-rain-streaks-are-working">
 <h3>I don’t see any rain, but rain streaks are working<a class="headerlink" href="#i-don-t-see-any-rain-but-rain-streaks-are-working" title="Permalink to this heading">¶</a></h3>
-<p>For rain and lightning to render in UE, you need to have added trueSKY translucent as a post process material. As of September 2019, this has been made automatic, and added as part of initialization. Firstly, add a post process Volume to your scene, and make sure it is global by enabling “Unbound”. Then go to the Rendering Features within the Post process Settings. Add a new element to the post process materials, and choose asset reference when prompted. Finally, add the trueSKY translucent material. If you do not have this material, you need locate the trueSKY assets.</p>
+<p>For rain and lightning to render in UE, you need to have added trueSKY translucent as a post process material. This should be automatic, and is added as part of initialization. Firstly, add a post process Volume to your scene, and make sure it is global by enabling “Unbound”. Then go to the Rendering Features within the Post process Settings. Add a new element to the post process materials, and choose asset reference when prompted. Finally, add the trueSKY translucent material. If you do not have this material, you need locate the trueSKY assets.</p>
 </section>
 <section id="rain-drops-are-large-and-blocky">
 <h3>Rain drops are large and blocky<a class="headerlink" href="#rain-drops-are-large-and-blocky" title="Permalink to this heading">¶</a></h3>
@@ -322,8 +301,8 @@
 </section>
 <section id="other-issues">
 <h2>Other Issues<a class="headerlink" href="#other-issues" title="Permalink to this heading">¶</a></h2>
-<section id="unreal-plugin-trueskyplugin-failed-to-load-ecause-module-trueskyplugin-could-not-be-found">
-<h3>Unreal - Plugin ‘TrueSkyPlugin’ failed to load ecause module ‘TrueSkyPlugin’ could not be found<a class="headerlink" href="#unreal-plugin-trueskyplugin-failed-to-load-ecause-module-trueskyplugin-could-not-be-found" title="Permalink to this heading">¶</a></h3>
+<section id="unreal-plugin-trueskyplugin-failed-to-load-because-module-trueskyplugin-could-not-be-found">
+<h3>Unreal - Plugin ‘TrueSkyPlugin’ failed to load because module ‘TrueSkyPlugin’ could not be found<a class="headerlink" href="#unreal-plugin-trueskyplugin-failed-to-load-because-module-trueskyplugin-could-not-be-found" title="Permalink to this heading">¶</a></h3>
 <p>If you are getting this error when packaging, you will need to convert your project from a blueprint project to a C++ project. This will not change your project in anyway, and you can continue to use blueprints. To do this, go to Tools-&gt;New C++ Class. Add any parent class to your project, and after this has finished you can package again, and the plugin will be loaded.</p>
 </section>
 </section>

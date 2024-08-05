@@ -20,7 +20,7 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" >
     <link rel="search" title="Search" href="../../search.html" >
-    <link rel="next" title="Cloud Volumes" href="cloudsvolumes.html" >
+    <link rel="next" title="Cloud Regions" href="cloudsvolumes.html" >
     <link rel="prev" title="Clouds" href="../clouds.html" > 
 </head>
 
@@ -52,15 +52,16 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation and Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../concepts.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../skysequencer.html">trueSKY Editor</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../tutorialsindex.html">Tutorials</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../sequencer.html">Sky Sequencer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sequencer.html">trueSKY Editor</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../clouds.html">Clouds</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Clouds Tutorial</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#cloud-movement">Cloud Movement</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#using-a-map-texture">Using a Map Texture</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="cloudsvolumes.html">Cloud Volumes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cloudsvolumes.html">Cloud Regions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cloudsvariables.html">Variables</a></li>
 </ul>
 </li>
@@ -70,12 +71,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../precipitation.html">Precipitation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../rainbows.html">Rainbows</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../storms.html">Storms</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../water.html">Water</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../time.html">Progressing Time</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../unreal.html">trueSKY for Unreal Engine</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../skysequencer.html">Sky Sequencer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../programming.html">Programming with the trueSKY SDK</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../faq.html">Frequently Asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../legalindex.html">trueSKY Licences</a></li>
@@ -147,7 +146,7 @@
              
   <section id="clouds-tutorial">
 <h1>Clouds Tutorial<a class="headerlink" href="#clouds-tutorial" title="Permalink to this heading">¶</a></h1>
-<p>Clouds in trueSKY are easy to create, hard to master. For a quick solution, use one of our presets!</p>
+<p>It’s easy to create amazing cloudscapes with trueSKY. For a quick start, use one of our presets!</p>
 <div class="video-wrapper">
 	<div class="video-container">
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/pkt3eqa9YB8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -174,16 +173,16 @@
 <p>Ensure you are saving your map texture files into the correct location.</p>
 <section id="for-unreal">
 <h3>For Unreal:<a class="headerlink" href="#for-unreal" title="Permalink to this heading">¶</a></h3>
-<p>Unreal Build folder -&gt; Engine -&gt; Plugins -&gt; TrueSkyPlugin -&gt; Resources -&gt; Media -&gt; Insert .png</p>
+<p>Unreal Project -&gt; Plugins -&gt; TrueSkyPlugin -&gt; Resources -&gt; Media -&gt; Insert .png</p>
 </section>
 <section id="for-unity">
 <h3>For Unity:<a class="headerlink" href="#for-unity" title="Permalink to this heading">¶</a></h3>
 <p>Unity -&gt; Locate your unity project folder -&gt; Insert .png</p>
-<p>Within the sequencer, select your cloud layer and open the file browser under the “map texture” heading.</p>
+<p>Within the editor, select your cloud layer and open the file browser under the “map texture” heading.</p>
 <p>Locate the correct file path as shown above, and select your .png map file.</p>
 <p>Once the map is applied, alter a value within the sequencer to update your scene and edit settings as through the keyframes were a
 regular cloudkeyframe (all regular functionality still apllies)</p>
-<p>Be aware of artifacting if your map texture has very thin parts. A good solution is to reduce the Cloud Height, along with adding some more Diffusivity.</p>
+<p>Be aware of artifacting if your map texture has very thin parts. A good solution is to adjust the Cloud Height, along with adding some more diffusivity.</p>
 <div class="video-wrapper">
 	<div class="video-container">
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/ffMJyoNKWZc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -199,7 +198,7 @@ regular cloudkeyframe (all regular functionality still apllies)</p>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../clouds.html" class="btn btn-neutral float-left" title="Clouds" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="cloudsvolumes.html" class="btn btn-neutral float-right" title="Cloud Volumes" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="cloudsvolumes.html" class="btn btn-neutral float-right" title="Cloud Regions" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr>

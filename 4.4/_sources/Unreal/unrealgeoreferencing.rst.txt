@@ -3,7 +3,7 @@
 
 To control the position and updating of the Cloud Window in Unreal Engine, open the Geo Referencing section in the trueSKY Actor.
 
-.. image:: UnrealGeoreferencing2.png
+.. image:: ../images/unreal/UnrealGeoreferencing2.png
 
 Under `Geo Referencing Mode`, there are four modes:
 
@@ -18,8 +18,8 @@ Under `Geo Referencing Mode`, there are four modes:
 The `Engine to ECEF Transform Matrix` will need to be set either in C++ or via Blueprints. The required matrix can be obtained from the function
 `Get Engine To ECEF Matrix` in the TrueSkyGeoReferencing Blueprint function library.
 
-.. image:: GeoRefBlueprint.png
+.. image::../images/unreal/GeoRefBlueprint.png
 
 In the Window menu, select "trueSKY Global View" to activate a panel that shows the positions of the Engine centre and Cloud Window on a map of the Earth.
 
-.. image:: UnrealGlobalView.png
+.. image:: ../images/unreal/UnrealGlobalView.png

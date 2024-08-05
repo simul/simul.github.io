@@ -5,7 +5,7 @@ Geographically Accurate Sun Positioning
 ----------------------------------------
 Our Sun's Position is realistically located in relation to the world based off longitude, latitude along with date and time. The date settings are available in the Sky Layer of the Sequencer, while the Longitude, latitude and heading values are located in the Update section on the trueSKYSequenceActor. 
 
-.. image:: ../../../Help/images/longlat.png
+.. image::../../images/longlat.png
 
 
 Sky Colours

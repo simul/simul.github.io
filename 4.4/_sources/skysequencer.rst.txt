@@ -36,7 +36,7 @@ Windows and their functionality
 
 By default the editor layout will look like this:
 
-.. image:: ../Help/images/defaultLayout.png 
+.. image:: images/defaultLayout.png 
 
 All windows are movable and dockable, and they can be closed if not in use. They can be re-opened simply by navigating to the *Window* tab from the Menu Bar and selecting the window you wish to re-open.
 
@@ -44,7 +44,7 @@ Timeline
 `````````
 The timeline is one of the most important windows in the editor. Here is where you can create, delete and control the clouds in your scene. Cloud Layers and Keyframes on the timeline are used to control when clouds are created, with their properties controlling the individual parameters. 
 
-.. image:: ../Help/images/timeline.png 
+.. image:: images/timeline.png 
 
 This :doc:`page <Tutorials/Sequencer/sequencertimeline>` explains in more detail trueSKY's timeline, keyframes and layers.
 
@@ -53,7 +53,7 @@ Properties
 ``````````
 This shows the properties of the selected keyframe or layer. When no keyframe or layer is selected, it will show the global properties as well as API options and other global settings.
 
-.. image:: ../Help/images/properties.png 
+.. image:: images/properties.png 
 
 There are three distinct properties sections that are found with the trueSKY Editor:
 
@@ -67,7 +67,7 @@ Global View
 ``````````````
 Here you can see a view of the whole globe and how your trueSKY sequences are affecting it. 
 
-.. image:: ../Help/images/GlobalView.png 
+.. image:: images/GlobalView.png 
 
 You can select the different view modes at the top of the window to toggle cloud, precipitation, storm and region views.
 
@@ -75,7 +75,7 @@ Performance
 ``````````````
 This shows a breakdown of timings for trueSKY split into GPU and CPU. You can adjust the depth of the breakdown and look through individual function costs. Be aware when adjusting depths that rounding may adjust the total timings. 
 
-.. image:: ../Help/images/Profiling.png 
+.. image:: images/Profiling.png 
 
 
 Screenshot

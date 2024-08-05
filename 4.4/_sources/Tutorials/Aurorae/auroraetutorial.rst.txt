@@ -1,5 +1,5 @@
 Aurorae Tutorial
-======================================
+=====================================
 
 Overview
 -----------------
@@ -8,7 +8,7 @@ To view aurorae, the view position will need to be within the Auroral Oval; a re
 
 CloudWindow with Auroral Oval displayed:
 
-.. image:: ../../../Help/images/aurorae/auroraeCloudWindowView.png
+.. image:: ../../images/aurorae/auroraeCloudWindowView.png
 
 
 UI and Controls
@@ -18,29 +18,32 @@ Aurorae have distinct layers to them, which are dependent on the atmospheric gas
 
 Aurora Layers - Earth:
 
-.. image:: ../../../Help/images/aurorae/auroraeLayerEarth.png
+.. image:: ../../images/aurorae/auroraeLayerEarth.png
 
 Aurora Layers - Alien with layer details:
 
-.. image:: ../../../Help/images/aurorae/auroraeLayerAlien.png
+.. image:: ../../images/aurorae/auroraeLayerAlien.png
 
-.. image:: ../../../Help/images/aurorae/auroraeLayerAlienDetails.png
+.. image:: ../../images/aurorae/auroraeLayerAlienDetails.png
 
 
 The shape of aurorae is defined by the interactions of electrons and other charged particles from the solar wind with the planet's electromagnetic field in the upper atmosphere. To adjust the generation of aurorae, you can modify the four FAC (Field Aligned Currents) controls. These adjust the arc length, radius and global position for each of the four field aligned currents. View the :doc:`How it works <auroraehowitworks>` section for a more full description of how trueSKY generates aurorae.
 
-Aurorae UI and controls - SkySequencer:
 
-.. image:: ../../../Help/images/aurorae/auroraeSkyUI.png
+These settings are found within the Sky Layer.
 
-UE4
+Aurorae UI and controls - Editor:
+
+.. image:: ../../images/aurorae/auroraeSkyUI.png
+
+Unreal
 '''
 Aurorae UI and controls - Unreal Engine 4:
 
-.. image:: ../../../Help/images/aurorae/auroraeSkyUI_UE4.png
+.. image:: ../../images/aurorae/auroraeSkyUI_UE4.png
 
 Unity
 '''''
 Aurorae UI and controls - Unity:
 
-.. image:: ../../../Help/images/aurorae/auroraeSkyUI_Unity.png
+.. image:: ../../images/aurorae/auroraeSkyUI_Unity.png

@@ -1,5 +1,5 @@
 How it works
-======================================
+=====================================
 
 Aurorae Map Generation and Compositing
 -----------------------------------------------
@@ -7,8 +7,8 @@ Based on the settings passed from Field Aligned Current Controls, trueSKY will c
 
 Debug overlay:
 
-.. image:: ../../../Help/images/aurorae/auroraeDebugOverlay.png
+.. image:: ../../images/aurorae/auroraeDebugOverlay.png
 
 Performance
----------------
+--------------
 Three textures are drawn to Field Aligned Current Map, Intensity Map and Electron Deposition Table along with compositing the aurorae to the screen. The Field Aligned Current Map and the Intensity Map are only redrawn when changes are made to the Field Aligned Current Controls; this is done due to the complexity of the shaders and to minimise GPU usage. The Electron Deposition Table along with compositing aurorae to the screen is done each frame.

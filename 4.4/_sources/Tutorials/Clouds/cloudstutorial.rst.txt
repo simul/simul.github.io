@@ -1,7 +1,7 @@
 
 Clouds Tutorial
 ================
-Clouds in trueSKY are easy to create, hard to master. For a quick solution, use one of our presets!
+It's easy to create amazing cloudscapes with trueSKY. For a quick start, use one of our presets!
 
 .. raw:: html
    :file: cloudsvideo1.html
@@ -26,7 +26,7 @@ Ensure you are saving your map texture files into the correct location.
 
 For Unreal:
 ```````````
-Unreal Build folder -> Engine -> Plugins -> TrueSkyPlugin -> Resources -> Media -> Insert .png
+Unreal Project -> Plugins -> TrueSkyPlugin -> Resources -> Media -> Insert .png
 
 
 For Unity:
@@ -34,14 +34,14 @@ For Unity:
 Unity -> Locate your unity project folder -> Insert .png
 
 
-Within the sequencer, select your cloud layer and open the file browser under the "map texture" heading.
+Within the editor, select your cloud layer and open the file browser under the "map texture" heading.
 
 Locate the correct file path as shown above, and select your .png map file.
 
 Once the map is applied, alter a value within the sequencer to update your scene and edit settings as through the keyframes were a 
 regular cloudkeyframe (all regular functionality still apllies)
 
-Be aware of artifacting if your map texture has very thin parts. A good solution is to reduce the Cloud Height, along with adding some more Diffusivity.
+Be aware of artifacting if your map texture has very thin parts. A good solution is to adjust the Cloud Height, along with adding some more diffusivity.
 
 .. raw:: html
    :file: cloudsvideo3.html

@@ -20,7 +20,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" >
     <link rel="search" title="Search" href="../search.html" >
-    <link rel="next" title="Unreal Engine Georeferencing" href="unrealgeoreferencing.html" >
+    <link rel="next" title="Unreal Engine Geo Referencing" href="unrealgeoreferencing.html" >
     <link rel="prev" title="trueSKY for Unreal Engine" href="../unreal.html" > 
 </head>
 
@@ -63,7 +63,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#creating-a-new-sequence">Creating a new Sequence</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="unrealgeoreferencing.html">Unreal Engine Georeferencing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unrealgeoreferencing.html">Unreal Engine Geo Referencing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="unrealblueprints.html">Unreal Blueprints with trueSKY</a></li>
 <li class="toctree-l2"><a class="reference internal" href="unrealmaterials.html">Unreal Materials with trueSKY</a></li>
 <li class="toctree-l2"><a class="reference internal" href="unrealsourcecode.html">Working with trueSKY from GitHub</a></li>
@@ -142,7 +142,7 @@
 <h1>Unreal Tutorial<a class="headerlink" href="#unreal-tutorial" title="Permalink to this heading">¶</a></h1>
 <section id="initial-configuration">
 <h2>Initial Configuration<a class="headerlink" href="#initial-configuration" title="Permalink to this heading">¶</a></h2>
-<p>Please be aware trueSKY for Unreal does not support OSX and OpenGL. For Vulkan please use UE4 4.22 or greater.</p>
+<p>Please be aware trueSKY for Unreal does not support OSX and OpenGL. For Vulkan please use Unreal 4.22 or greater.</p>
 <p>This page shows you how to install the binary version of trueSKY onto your existing binary UE installation. For other versions, or if you have a version of Unreal Engine built from source, you will need to build the plugin. Check the <a class="reference internal" href="unrealsourcecode.html"><span class="doc">Unreal Source page</span></a> for information on GitHub/Engine Source Integration.</p>
 <div class="video-wrapper">
 	<div class="video-container">
@@ -156,9 +156,10 @@
 <section id="installing-the-plugin">
 <h2>Installing the Plugin<a class="headerlink" href="#installing-the-plugin" title="Permalink to this heading">¶</a></h2>
 <p>1: Login to your account at <a class="reference external" href="https://simul.co/account">https://simul.co/account</a>. If you have not created an account yet, head over to <a class="reference internal" href="../installation.html"><span class="doc">installation home page</span></a> to get setup.</p>
-<p>2: Download trueSKY binary installer from <a class="reference external" href="https://simul.co/downloads">https://simul.co/downloads</a>. Make sure to select the correct engine version you desire, and we always recommend the most up to date version of trueSKY.</p>
+<p>2: Download trueSKY binary installer from <a class="reference external" href="https://simul.co/downloads">https://simul.co/downloads</a>. You can click the larger buttons at the top to get the latest trueSKY download for the latest Unreal version, or you can scroll down for specific version downloads. Make sure to select the correct engine version you desire, and we always recommend the most up to date version of trueSKY.</p>
 <img alt="../_images/download.png" src="../_images/download.png" />
-<p>3: Run the trueSKY installer, ensuring that you select your Unreal Project directory as the installation location. After the installation process is complete, the plugin should be installed into YourProjectDirectory/Plugins/trueSKYPlugin</p>
+<img alt="../_images/versiondownloads.png" src="../_images/versiondownloads.png" />
+<p>3: After downloading, Run the trueSKY installer, ensuring that you select your Unreal Project directory as the installation location. After the installation process is complete, the plugin should be installed into YourProjectDirectory/Plugins/trueSKYPlugin</p>
 <img alt="../_images/wizard.png" src="../_images/wizard.png" />
 <p><em>Make sure you select the correct project</em></p>
 </section>
@@ -175,11 +176,14 @@
 <section id="adding-truesky-to-the-level">
 <h2>Adding trueSKY to the level<a class="headerlink" href="#adding-truesky-to-the-level" title="Permalink to this heading">¶</a></h2>
 <p>1: Click ‘Window -&gt; initialize trueSKY’ from the dropdown at the top of the window.</p>
-<img alt="../_images/windowdropdown.png" src="../_images/windowdropdown.png" />
-<p>2: A pop-up window will appear. You can either click initialize to allow trueSKY to set itself up, or you can click next to customise initialization. If you clicked initialize, you can jump to 4.</p>
-<img alt="../_images/enginewizard.png" src="../_images/enginewizard.png" />
-<p>3: Select an initial sequence asset. This can be changed at any time. There will be two options, TrueSkySequnceCumulus, and TrueSkySequenceStratus. You can also tick the ‘Show all sequences’ box if you already have some sequences available in the project contents. Select a sequence, then press next.</p>
-<p>4: We recommend you create a TrueSkyLight, for more accurate lighting. You can also select which direction light trueSKY will control, if you do not select one then a new directional light will be created.</p>
+<p>2: If you have not verified your licence, a pop-up window will appear asking for your licence information. Please input your username and licence key from your Simul Account.</p>
+<img alt="../_images/licenceWindow.png" src="../_images/licenceWindow.png" />
+<p>3: Initialize again, and now you will open the wizard. For the first page, ensure you are happy with your settings and click next.</p>
+<img alt="../_images/initWizardPage1.png" src="../_images/initWizardPage1.png" />
+<p>4: Page 2 will show you the latest message, and you can either click initialize to allow trueSKY to set itself up, or you can click next to customise initialization. If you clicked initialize, you can skip the the next section, creating a sequence.</p>
+<img alt="../_images/initWizardPage2.png" src="../_images/initWizardPage2.png" />
+<p>5: Select an initial sequence asset. This can be changed at any time. There will be two options, TrueSkySequnceCumulus, and TrueSkySequenceStratus. You can also tick the ‘Show all sequences’ box if you already have some sequences available in the project contents. Select a sequence, then press next.</p>
+<p>6: We recommend you create a TrueSkyLight, for more accurate lighting. You can also select which direction light trueSKY will control, if you do not select one then a new directional light will be created.</p>
 <p>Once initialize is selected, you should see trueSKY appear in the scene, although there may not be any clouds.</p>
 </section>
 <section id="creating-a-new-sequence">
@@ -199,7 +203,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../unreal.html" class="btn btn-neutral float-left" title="trueSKY for Unreal Engine" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="unrealgeoreferencing.html" class="btn btn-neutral float-right" title="Unreal Engine Georeferencing" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="unrealgeoreferencing.html" class="btn btn-neutral float-right" title="Unreal Engine Geo Referencing" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr>
