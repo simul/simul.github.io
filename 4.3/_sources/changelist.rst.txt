@@ -1,5 +1,13 @@
 Changelist 
 ================ 
+| **Thu 19 Sep** : RunOnWildcard_GNF() and RunOnWildcard_XTX() replace old functions and are improved. MainDllName() fixed for Switch. Texture processing and copying fixed in Copy() and CopyToProject().
+| **Fri 13 Sep** : Platform ptr.
+| **Fri 13 Sep** : Platform ptr.
+| **Fri 13 Sep** : Changed PLATFORM_SUPPORT_NVN to PLATFORM_SWITCH. Added Unity Nvn files.
+| **Fri 13 Sep** : Better bounds checks in Stars::UseDefaultStars()
+| **Thu 12 Sep** : Fixed TRUESKY_PLUGINRENDER_EXPORT for Switch.
+| **Thu 05 Sep** : Added better support to CopyToTargetDirUE4.py for Switch.
+| **Fri 30 Aug** : Platform ptr.
 | **Fri 19 Jul** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Fri 19 Jul** : Platform ptr.
 | **Tue 18 Jun** : Small Fix
@@ -92,11 +100,3 @@ Changelist
 | **Wed 31 May** : Merge branch '4.3' of github.com:simul/Simul into 4.3
 | **Wed 31 May** : Fixed flicker bug which was due to skylight internal DeviceContext stamping on GPU state from parent context.
 | **Wed 31 May** : Consolidate all samples to use the same .cpp
-| **Wed 31 May** : Ensure example.sq is loaded by default in VS project Vulkan sample.
-| **Sun 28 May** : Tweaks to Vulkan example sequence. Using PCG hash for integer noise instead of Tausworthe. Fixed overbright terrain lighting.
-| **Fri 26 May** : Fix up settings for Vulkan sample in particular.
-| **Wed 24 May** : Merge branch '4.3' of github.com:simul/Simul into 4.3
-| **Wed 24 May** : Platform ptr.
-| **Wed 24 May** : Platform Ptr.
-| **Wed 24 May** : Vulkan shader fixed for clouds.sfx
-| **Fri 19 May** : Reduced light_table_2d and lightspaceGodraysTexture to use a FP16 format. Added profiling to Vulkan sample. Better handling for rendering the PrecipitationVolumeTexture.
