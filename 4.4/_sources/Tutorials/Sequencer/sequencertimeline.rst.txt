@@ -47,9 +47,9 @@ Although there are only 2 types of layers, you can have numerous clouds layers. 
 
 .. image:: ../../images/unreal/manylayers.png
 
-*5 layers is probably the most you will ever need, but there is no limit*
+*5 layers is probably the most you will ever need, but there is no limit!*
 
-Layers do *not* have any effect on the height of the clouds. Layer 1 can be lower than layer 2, or layer 5 could be in the middle. Height settings are adjusted within the individual keyframes. To add a keyframe to a layer, simply right click within the layer you want the keyframe for (click in the sky layer for a sky keyframe, cloud layer for cloud keyframe), then select the "Add Cloud Keyframe" option.
+Layers do *not* have any effect on the height of the clouds. Layer 1 can be lower than layer 2, or layer 5 could be in the middle of layers 1 and 2. Height settings are adjusted within the individual keyframes. To add a keyframe to a layer, simply right click within the layer you want the keyframe for (click in the sky layer for a sky keyframe, cloud layer for cloud keyframe), then select the "Add Cloud Keyframe" option.
 
 .. image:: ../../images/unreal/AddCloudKF.png
 
@@ -58,5 +58,8 @@ Layers do *not* have any effect on the height of the clouds. Layer 1 can be lowe
 You can click on the layer name to access layer specific settings.
 
 
+Interpolation
+--------------
 
+There are 3 different interpolation methods that trueSKY supports. These are Real time, Game time and fixed number interpolation. Deciding which to use, and the related parameters, is dependent on your project and it's requirements.  For more information see :doc:` information on time  <../time>`
 

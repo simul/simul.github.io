@@ -44,7 +44,6 @@ Using trueSKY with the Cinematic Sequencer
 `````````````````````````````````````````````
 Using Unreal's Cinematic Sequencer is easy, as we have made most of our variables interpolatable (You can add a keyframe to the sequence). You can't adjust the cloud settings, but you can adjust the time - and all the clouds settings are automatically interpolated between using our own Sky Sequencer. So all you need to do is setup the scene in trueSKY's Sky Sequencer, e.g. have the cloudiness at 11:00 be 0.9 and then another cloud keyframe at 14:00 with a cloudiness of 0. Then, using Unreal's Sequencer, you can adjust your cinematic to adjust between these two times, and trueSKY will automatically adjust the cloud settings between the time intervals.
 
-----------
 
 TrueSKY supports three different modes of update - Game Time, Fixed Time and Real Time.
 
@@ -56,11 +55,11 @@ The number of Subdivisions controls how finely the interpolation is performed. I
 
 Update Modes
 -------------
-There are different ways in which we allow you to interpolate, each with it's own advantages and disadvantages
+There are different ways in which we allow you to interpolate the clouds over time, each with it's own advantages and disadvantages
 
 Game Time
 `````````````
-In Game-Time, it takes a specified amount of time in game hours, and split that into a given amount of intervals. The weather won't change if game time does not. This is helpful go the weather does continue when paused, or can go slower based on the speed of the game. 
+In Game-Time, it takes a specified amount of time in game hours, and split that into a given amount of intervals. The weather won't change if game time does not. An example of using this could be ensuring the weather doesn't continue to change while paused, or can react to the speed of the game with effects such as slow motion. 
 
 
 Fixed Time
@@ -70,4 +69,33 @@ Fixed Intervals mode is similar to Game time, only there's a specified number of
 
 Real Time
 `````````````
+Using real time means you should adjust the time interval with SetSubdivisionRealTimeInterval
+
 If you're using real-time transition, you can adjust the Interval (in seconds) to determine how quickly the change takes place.
+
+Interpolation is an important aspect to understand, as it can have large impacts on realism, visuals and performance. For example, a slow interpolation for a static scene will likely result in improved performance with minimal change, as there are no changes that need to be interpolated between.
+However, for a scene where you are manually positioning your keyframes, you will want to ensure this movement is smooth and jumps in cloud generation are minimal by updating the cloud positions frequently.  
+
+
+
+.. list-table::
+   :header-rows: 1
+
+   * - Variable
+     - Definition
+     - Value
+   * - SubdivisionMethod
+     - The method used to subdivision interpolation.
+     - Real time, Game time or fixed intervals.
+   * - NumSubdivisions
+     - How keyframe intervals are divided up for interpolation.
+     - 1 to 128
+   * - SubdivisionTimeInterval
+     - Subdivisions to be spaced by a given fraction of a day. This is used in Game Time
+     - 0.0001 to 10	
+   * - SubdivisionRealTimeInterval
+     - Subdivisions to be spaced by a given number of seconds. This is used in Real Time
+     - 0.01 to 100
+   * - Blend Rate
+     - The ratio in which interpolation states are blended between. A value of 1 would result in no blending, so upon reaching the next subdivision, the new cloud texture would be
+     - 0.01 to 1

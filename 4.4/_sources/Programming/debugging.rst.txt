@@ -8,13 +8,19 @@ Compositing
 -----------------------
 Here is an overview of many of the systems use, helpful for depth tests and general debugging.
 
-.. image:: ../images/compositing.png
+.. image:: ../images/Compositing.png
 
 Celestial Display
 ---------------------
 Shows the current position and path of the Sun and Moon, along with information about their position.
 
 .. image:: ../images/CelestialDisplay.png
+
+There is additional data displayed for both solar and lunar eclipses.
+
+.. image:: ../images/SolarEclipse.png
+
+.. image:: ../images/LunarEclipse.png
 
 Profiling
 -------------------

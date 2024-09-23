@@ -2,50 +2,40 @@ Variables
 =============
 This list of variables is grouped by how they affect the clouds, along with where they are located.
 
+Keyframe Settings
+-----------------------
+These will alter settings about how and in what way are the clouds are generated, from the noise patterns of the cloudscape to the maximum cloud height.
+
+Settings are split into Main, Shape, Noise, Region and Origin.
+
 Main
-------------
-These will alter settings about how and in what way are the clouds are generated, as there are variables such as the ray-tracing methods used, the area which they are created within and the resolution at which they are rendered.
+~~~~~~~~~
 
-==========================================  ==================================================================================================================  =============
-Variable 									Definition																											Value
-==========================================  ==================================================================================================================  =============
-Cloudiness									How much cloud in the cloud layer. 																					 0.0 to 1.0
-Cloudbase									Base altitude of cloud layer, in km. 																				-1.0 to 20.0
-Layer Height								Height of cloud layer, in km. 																						-1.0 to 20.0
-Volume Width								Width of cloud layer, in km																							-1.0 to 20.0
-==========================================  ==================================================================================================================  =============
+These settings control the basic parameters of the clouds: Cloud Coverage, Starting altitude, width and height.
 
-==========================================  ======================================================================================================================  ===============================
-Variable 									Definition																												Value						
-==========================================  ======================================================================================================================  ===============================
-Class									How the renderer should raytrace Clouds. 																				Standard = 0, Cirrus = 1	
-Default Slices							Number of slices in main view.																							Between 80 and 255
-Grid Width					The Grid clouds are rendered on when using the Grid Integration Scheme. Lower values produce better Quality.						Powers of 2 between 16 and 512
-Grid Height 							Height of the Cloud Grid																								Powers of 2 between 1 and 64
-Precipitation Grid Divisor X 			A Divisor againt Grid Width to specify the size of the precipitation volume.											Powers of 2 between 1 and 1024
-Precipitation Grid Divisor Z 			A Divisor againt Grid Height to specify the size of the precipitation volume.											Powers of 2 between 1 and 128
-==========================================  ======================================================================================================================  ===============================
+.. list-table::
+   :header-rows: 1
 
-==========================================  ==================================================================================================================================  ===============
-Variable 									Definition																															 Value
-==========================================  ==================================================================================================================================  ===============
-Max Cloud Resolution						Resolution of clouds, ideally in powers of 2. Recommended values of 512 or 1024	 													 128 to 4096
-Max Cloud distance							Distance of furthest cloud layer. 																									 100.0 to 500.0
-Render Grid X								Detail size of grid used to render clouds. Smaller grid means higher quality clouds. 												 0.01 to 10km
-Render Grid Y								Detail size of grid used to render clouds. Smaller grid means higher quality clouds. 												 0.01 to 10km
-Default Num Steps							Approximate number of raytrace steps. 																								 40 to 300
-Amortization					How rendering clouds is spread over frames. For 1, all pixels are drawn every frame, for 2, its 2x1, 3 for 3x2 etc.								 1 to 8
-Cloud Threshold Distance					A heuristic distance to discard near depths from depth interpolation, improving accuracy of upscaling. 								 0.0 to 10.0
-Depth Sampling Pixel Range					The size of the sampling area, in pixels, in the full-resolution depth buffer. Used to find near/far depths. 						 0.0 to 4.0
-Depth Temporal Alpha						The alpha for temporal blending of the solid depth buffer used for cloud rendering. 1.0 is instant. 								 0.01 to 1.0
-Integration Scheme				Which method to use for grid rendering. Fixed is good for static, fluffy clouds. Not recommened for flying through								 Grid or Fixed
-Depth Blending								If trueSKY should blend clouds with scenery, or draw them in front/behind depending on altitude.									 Bool
-Share Buffers for VR						Share Buffer for VR. 																												 Bool
-==========================================  ==================================================================================================================================  ===============
+   * - Variable
+     - Definition
+     - Value
+   * - Cloudiness
+     - How much cloud in the cloud layer. Total cloudiness is dependant on other parameters such as the Cloud Width or noise settings such as Worley noise and Worley scale. This means
+       a value of 0.8 may not give 80% coverage.
+     - 0.0 to 1.0
+   * - Cloud Base
+     - Base altitude of cloud layer, in km.
+     - -1.0 to 20.0
+   * - Layer Height
+     - Maximum possible height of Cloud layer, from the Cloud base, in km.
+     - -1.0 to 20.0
+   * - Cloud Width
+     - Width of the repeating pattern, in km. A large value could produce one non-repeating pattern, but clouds can be very wide.
+     - -1.0 to 40.0
 
+Shape
+~~~~~~~~~
 
-Shape 	
-------------
 Shape values alter the general look of the clouds, such as how transparent the cloud is. If you have unusual looking clouds or incorrect artefacts, these are the setting to investigate.
 
 The clouds are made up of a base layer, a transition area and the upper layer. 
@@ -56,91 +46,441 @@ The upper density is a multiplier for the amount of clouds in the upper layer. A
 
 There are individual settings to help customise each of the different layers, allowing you to create unique but realistic clouds.
 
-By default, the cloud volume repeats at the edges, and the volume width is controlled by the keyframe value **Cloud Width**. You can change the size of this volume freely, but to increase the size while retaining the same level of detail, you will also need to modify the size of the volumetric grid. For example, to double the size of the volume, select all the 3D cloud keyframes, and double the size of **Cloud Width**. Select the cloud layer, and increase both the **Cloud Grid Width**, and the **Generation Noise Resolution**, by a factor of two.
+By default, the cloud volume repeats at the edges, and the cloud width is controlled by the keyframe value **Cloud Width**. You can change the size of this volume freely, but to increase the size while retaining the same level of detail, you will also need to modify the size of the volumetric grid. For example, to double the size of the volume, select all the 3D cloud keyframes, and double the size of **Cloud Width**. Select the cloud layer, and increase both the **Cloud Grid Width**, and the **Generation Noise Resolution**, by a factor of two.
 
-==========================================  ==========================================================================================================================================  ===============
-Variable 									Definition																																	Value
-==========================================  ==========================================================================================================================================  ===============
-Max Density									Maximum density of the cloud layer.																											0.0 to 1.0
-Local Density								Current density of the clouds.	Not Editable, calculated from other densities.																0.0 to 1.0 
-Base layer									Density of clouds in the lower layer.																										0.0 to 2.0
-Transition									Density of middle layer of clouds - the transition from cloudbase to upper cloud.															0.0 to 1.0
-Upper Density								Density of clouds in the upper layer.																										0.0 to 1.0
-Worley Noise								How much Worley noise to apply.																												0.0 to 1.0
-Worley Scale								Scale of Worley noise. 																														0.0 to 12.0 
-Diffusivity									How much cloud edges should be diffused.																									0.0 to 1.0
-Persistence									Fractal persistence for generating clouds.																									0.0 to 1.0
-Octaves										Number of noise octaves to generate clouds.																									1 to 5
-==========================================  ==========================================================================================================================================  ===============
+.. list-table::
+   :header-rows: 1
+
+   * - Variable
+     - Definition
+     - Value
+   * - Max Density
+     - Maximum density of the cloud layer.
+     - 0.0 to 1.0
+   * - Local Density
+     - Current density of the clouds. Not Editable, calculated from other densities.
+     - 0.0 to 1.0
+   * - Base layer
+     - Density of clouds in the lower layer.
+     - 0.0 to 2.0
+   * - Transition
+     - Density of middle layer of clouds - the transition from cloudbase to upper cloud.
+     - 0.0 to 1.0
+   * - Upper Density
+     - Density of clouds in the upper layer.
+     - 0.0 to 1.0
+   * - Worley Noise
+     - How much Worley noise to apply.
+     - 0.0 to 1.0
+   * - Worley Scale
+     - Scale of Worley noise.
+     - 0.0 to 12.0
+   * - Diffusivity
+     - How much cloud edges should be diffused.
+     - 0.0 to 1.0
+   * - Persistence
+     - Fractal persistence for generating clouds.
+     - 0.0 to 1.0
+   * - Octaves
+     - Number of noise octaves to generate clouds.
+     - 1 to 5
+
+
+Noise   
+~~~~~~~~~
+Noise is the best way to make sure your clouds don't look too flat or repetitive. Noise values are very sensitive and can produce unusual results if you're not careful.
+
+.. list-table::
+   :header-rows: 1
+
+   * - Variable
+     - Definition
+     - Value
+   * - Base Factor
+     - Proportion of noise applied at cloudbase.
+     - 0.0 to 1.0
+   * - Amplitude
+     - Strength of fractal edge effect.
+     - 0.01 to 100.0
+   * - Worley Amplitude
+     - Wavelength of fractal Worley noise.
+     - 0.1 to 10000.0
+   * - Sharpness
+     - Sharpness applied at boundary.
+     - 0.0 to 1.0
+   * - Churn
+     - Strength of cloud edge churning effect.
+     - 0.001 to 10.0
+
+Origin 
+~~~~~~~~~
+This is the origin of the keyframe in the world.
+
+.. list-table::
+   :header-rows: 1
+
+   * - Variable
+     - Definition
+     - Value
+   * - Latitude
+     - Geographic coordinate that specifies the north–south position of a point on the Earth's surface. 
+     - -90.0 to 90.0
+   * - Longitude
+     - Geographic coordinate that specifies the east-west position of a point on the Earth's surface.
+     - -180.0 to 180.0
+   * - Heading
+     - The direction in which an object is pointed or facing, measured in degrees from true north.
+     - 0 to 360
+
+
+
+There are other keyframe settings that you can find on their related pages:
+
+:doc:`Storms<../Storms/stormsvariables>`
+
+:doc:`Precipitation<../Precipitation/precipitationvariables>`
+
+
+
+
+Cloud Layer Settings
+-----------------------
+The cloud layer (also called cloud keyframer) holds additional settings that affect all keyframes on that layer. 
+
+
+Main
+~~~~~~~~~
+
+.. list-table::
+   :header-rows: 1
+
+   * - Variable
+     - Definition
+     - Value
+   * - Layer Name
+     - The name of the cloud layer.
+     - String
+   * - Layer UID
+     - Unique identifier for the cloud layer. This cannot be edited.
+     - Int
+   * - Cloud Type
+     - Different cloud types determine the functions used for blending and generating the noise for the clouds. Variables such as Cloudiness may need to be adjusted when changing the cloud type.
+     - Enum
+   * - Enabled
+     - Toggle to enable or disable this layer.
+     - Bool
+   * - Colour
+     - The color used to identify the layer in the Global View
+     - RGB
+
+
+Subdivisions
+~~~~~~~~~~~~~~
+
+.. list-table::
+   :header-rows: 1
+
+   * - Variable
+     - Definition
+     - Value
+   * - Subdivision Amount
+     - Number of subdivisions between keyframes
+     - Integer
+   * - Method
+     - How keyframe intervals are divided up for interpolation.
+     - Fixed, Game or Real time.
+   * - Time Interval
+     - How Subdivisions are spaced between keyframes. Game time is based on a fraction of a day, while Real time is a given number of seconds. 
+     - Time format
+
+Cloud Regions
+~~~~~~~~~~~~~~~~~
+
+.. list-table::
+   :header-rows: 1
+
+   * - Variable
+     - Definition
+     - Value
+   * - Type
+     - Shape of the cloud region
+     - Spherical, Cylinder, Rectangular, Cumulonimbus
+   * - Fill Type
+     - Whether the cloud region is filled with cloud or removes cloud
+     - Fill or Cull
+   * - Regions
+     - Add or delete The specified regions for filling or culling clouds.
+     - Defined regions
+   * - Map Texture
+     - Texture used for defining the cloud region. Cumulonimbus Only
+     - PNG File
+   * - Gradient Texture
+     - A texture defining thegradient transition. Cumulonimbus Only
+     - PNG File
+
+
+Noise
+~~~~~~~~~
+
+
+.. list-table::
+   :header-rows: 1
+
+   * - Variable
+     - Definition
+     - Value
+   * - Grid Width
+     - The width of the grid used for noise generation
+     - Powers of 2 (e.g., 16 to 512)
+   * - Grid Height
+     - The height of the grid used for noise generation
+     - Powers of 2 (e.g., 1 to 64)
+   * - Noise Period
+     - The period (in daytime units, one day = one unit) over which noise changes.
+     - 0.01 to 1000
+   * - Noise Phase
+     - An offset (in daytime units, one day = one unit) to the start of the noise function.
+     - 0 to 2 π
+
+
+
+Cloud Rendering Options
+===========================
+
+These are global settings that affect the whole scene. These settings can have large performance impacts, and are not adjusted by interpolation.
+
+Main
+-----------
+
+.. list-table::
+   :header-rows: 1
+
+   * - Variable
+     - Definition
+     - Value
+   * - Cubemap Resolution
+     - The resolution of the cubemap. We recommend 1/4 of the screen resolution. 
+     - 128 to 2048 px
+   * - Max Cloud Distance
+     - The maximum distance for rendering clouds, in km. Maximum value should be half of the Cloud Window Scale.
+     - 100 to 500.000
+   * - High Detail Multiplier
+     - Multiplier for enhancing cloud detail.
+     - 1 to 4
+   * - Colour Tint
+     - Colour to tint the clouds
+     - RGB
+   * - Distance Field Intersect Limit
+     - The greatest distance in km from a cloud that is considered to be an intersect in the raytrace.
+     - 0 to 10
+   * - Cloud Amortization
+     - Amortization factor for cloud rendering.
+     - 1 to 4
+   * - Atmospheric Amortization
+     - Amortization factor for atmospheric rendering.
+     - 1 to 4
+   * - Cloud Threshold Distance
+     - Threshold distance to discard near clouds.
+     - 0 to 10
+   * - Depth Temporal Alpha
+     - Alpha value for temporal depth blending.
+     - 0.000
+   * - Near Cloud Extinction
+     - Extinction factor for near clouds, in km
+     - 0 to 100
+
+
+Cloud Window
+---------------
+
+The cloud window is the area clouds are rendered to, centred around your origin. These settings have a strong effect on visual quality and memory usage.
+
+.. list-table::
+   :header-rows: 1
+
+   * - Variable
+     - Definition
+     - Value
+   * - Scale Width/Height
+     - Width and height scale for cloud rendering, in km
+     - 200 - 2000, 10 to 200
+   * - Grid Width/Height
+     - Width and height of the grid used for cloud rendering.
+     - 64 to 1024, 32 to 512
+   * - Precipitation Grid Divisor X/Z
+     - Divisor for precipitation volume grid along X and Z axes. Smaller values can produce artifacts but reduce memory usage.
+     - 1 to 8
+   * - Distance Field Divisor X/Z
+     - Divisor for distance fields along X and Z axes. Smaller values can produce artifacts but reduce memory usage.
+     - 1 to 8
+
+
+
+Noise
+-------------
+These global noise settings affects all clouds, and are good for breaking repetition.
+
+Edge Noise
+~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+   :header-rows: 1
+
+   * - Variable
+     - Definition
+     - Value
+   * - Persistence
+     - Persistence of edge noise texture
+     - 0 to 1
+   * - Frequency
+     - Frequency of the noise.
+     - 1 to 16
+   * - Texture Size
+     - Size of the texture for noise generation.
+     - 4 to 64
+   * - Wavelength
+     - Wavelength of edge noise effect, in km
+     - 0.1  to 100
+   * - Max Fractal Amplitude
+     - Maximum strength of edge noise effect, in km
+     - 0.100 to 10
+
+Cell Noise
+~~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+   :header-rows: 1
+
+   * - Variable
+     - Definition
+     - Value
+   * - Texture Size
+     - The size of the texture used for noise generation.
+     - 16 to 256px
+   * - Wavelength
+     - The wavelength of the noise function.
+     - 0.1 to 100km
 
 
 Wind
-------------
-Using Wind to create a dynamic sky and moving shadows is an effective way to make an environment feel alive. There are different ways to shift the clouds, however for clouds to move the time must be progressing. Learn how to control time :doc:`here <../time>`
+----------
+Using Wind to create a dynamic sky and moving shadows is an effective way to make an environment feel alive. There are different ways to shift the clouds. Learn how to control time :doc:`here <../time>`
 
-To control the movement of the clouds you should use the :doc:`Cloud Window <../Sequencer/sequenceroverview>`.
-
-For one keyframe you should select the position of the clouds, then create a new keyframe and select the new position. Then the clouds will move between the positions. 
-
-With the 4.3 update you can now choose which method to control your cloud movement via wind. To do this navigate to your cloud layer - and un-check the "manually position keyframe" check-box. This will allow for wind direction (set within the trueSKY actor within the scene) to control and move the clouds location.
+For one keyframe you should select the position of the clouds, then create a new keyframe and select the new position. Then the clouds will move between the positions. Or, you can simply add wind to the scene and this will scroll the whole cloud window.
 
 
-Noise 	
-------------
-Noise is the best way to make sure your clouds don't look too flat or repetitive. Values in noise are very sensitive and can produce unusual results if you're not careful.
+.. list-table::
+   :header-rows: 1
+
+   * - Variable
+     - Definition
+     - Value
+   * - Wind Speed
+     - The speed of the wind in meters per second.
+     - 0 to 10000 m/s
+   * - Wind Heading
+     - The direction of the wind in degrees.
+     - -180 to 180 °
+   * - Downdraft Speed
+     - The speed of downdraft wind in meters per second.
+     - 0 to 100 m/s
+   * - Real Time Weather
+     - Indicates whether weather effects should run via game or real time. 
+     - Bool
 
 
-==========================================  ======================================================================================================  ===============
-Variable 									Definition																								Value
-==========================================  ======================================================================================================  ===============
-Base Factor									Proportion of noise applied at cloudbase.																0.0 to 1.0
-Amplitude									Strength of fractal edge effect.																		0.01 to 100.0
-Worley Amplitude							Wavelength of fractal Worley noise.																		0.1 to 10000.0
-Sharpness									Sharpness applied at boundary.																			0.0 to 1.0
-Churn										Strength of cloud edge churning effect.											 						0.001 to 1000.0
-==========================================  ======================================================================================================  ===============
-
-==========================================  ======================================================================================================  ===============
-Variable 									Definition																								Value
-==========================================  ======================================================================================================  ===============
-Noise Period								Fractal noise period, in days.																			0.001 to 1000.0
-Noise Phase									Phase of the cloud-generation noise texture 															0 to 2pi
-Noise Resolution							3D Perlin noise resolution, for cloud generation. 														Powers of 2 between 4 and 64
-==========================================  ======================================================================================================  ===============
-
-==========================================  ======================================================================================================  ===============
-Variable 									Definition																								Value
-==========================================  ======================================================================================================  ===============
-Edge Noise Persistence						Persistence for edge noise texture.																		0.0 to 1.0
-Edge Noise Frequency						Frequency of edge noise. 																				Powers of 2 between 1 and 16
-Edge Noise Texture Size						Size of edge noise texture. 																			Powers of 2 between 4 and 64
-Edge Noise Wavelength						Wavelength of the edge noise. (Great for hiding Grid Patterns)											0.1 to 100
-Cell Noise Wavelength						Wavelength of Cell Noise.																				0.1 to 100
-Cell Noise Texture Size						Size of cell noise texture. 																			Powers of 2 from 16 to 256
-Max Fractal Amplitude						Strength of edge noise effect.																			0.1 to 10
-==========================================  ======================================================================================================  ===============
-
-
-
-Cloud Shadows
+Cloud Lighting
 ----------------
-Clouds Shadows will affect the ground below the clouds, as well as other cloud layers. Shadows are automatic and require no extra setup.
 
-==========================================  ======================================================================================================  ===============
-Variable 									Definition																								Value
-==========================================  ======================================================================================================  ===============
-Shadow Range								Range of cloud shadow texture, in km.  																	0.5 to 200.0.
-Shadow Texture Size							Size of cloud shadow texture. 																			Powers of 2 between 32 and 2048.
-Shadow Strength								Amount of shadow produced.																				0.0 to 1.0
-Cloud Shadow RT								Render texture that is used to draw cloud shadow texture at runtime 									Render Texture
-==========================================  ======================================================================================================  ===============
+.. list-table::
+   :header-rows: 1
+
+   * - Variable
+     - Definition
+     - Value
+   * - Lighting Mode
+     - How to update the cloud lighting
+     - Standard, incremental
+   * - Direct
+     - The amount of direct light to be used for rendering.
+     - 0 to 4
+   * - Indirect
+     - The amount of indirect or secondary light to be used for rendering.
+     - 0 to 4
+   * - Ambient
+     - Ambient light intensity.
+     - 0 to 4
+   * - Extinction
+     - The amount of light scattered per metre - larger values produce darker clouds.
+     - 0 to 100
+   * - Mie Asymmetry
+     - Mie scattering eccentricity.
+     - 0 to 1
+
+
+Shadows
+----------------
+Shadows are automatically generated from the cloud layers.
+
+.. list-table::
+   :header-rows: 1
+
+   * - Variable
+     - Definition
+     - Value
+   * - Constant
+     - The constant value applied to the shadow texture.
+     - 0 to 1
+   * - Strength
+     - The strength of the cloud shadow effect.
+     - 0 to 1
+
 
 God Rays
 -------------
+God rays are automatically generated through gaps in the clouds.
+ 
+.. list-table::
+   :header-rows: 1
 
-==========================================  ======================================  ===============
-Variable 							Definition								Value
-==========================================  ======================================  ===============
-Crepuscular Ray (God-Rays) Strength		Strength of god-ray effect.				0.0 to 1.0 
-Crepuscular Grid				Grid size for God-rays. X, Y, Z.		8 to 256
-==========================================  ======================================  ===============
+   * - Variable
+     - Definition
+     - Value
+   * - Strength
+     - The intensity of the godrays effect.
+     - 0 to 1
+   * - Crepuscular Grid 
+     - Grid size for God-rays
+     - X, Y, Z. 8 to 256
+
+Precipitation
+----------------
+
+See our :doc:`Precipitation page for more information <../Precipitation/precipitationvariables>` 
+
+Rainbow
+----------
+
+See our :doc:`Rainbow page for more information <../Rainbows/rainbowsvariables>` 
+
+Stars
+---------
+
+.. list-table::
+   :header-rows: 1
+
+   * - Variable
+     - Definition
+     - Value
+   * - Minimum Pixel Size
+     - Smallest pixel width to use drawing stars.
+     - 0 to 100 px
+   * - Star Brightness
+     - Brightness multiplier for stars.
+     - 0 to 1000
+   * - Cosmic Background Brightness
+     - Brightness multiplier for cosmic background.
+     - 0 to 10
+   * - Maximum Star Magnitude
+     - Largest magnitude of star to draw. Larger magnitudes are dimmer.
+     - 0 to 9

@@ -71,6 +71,12 @@ Here you can see a view of the whole globe and how your trueSKY sequences are af
 
 You can select the different view modes at the top of the window to toggle cloud, precipitation, storm and region views.
 
+There is additional data displayed for both solar and lunar eclipses when the Day/Night Terminator is checked.
+
+.. image:: images/SolarEclipse.png
+
+.. image:: images/LunarEclipse.png
+
 Performance
 ``````````````
 This shows a breakdown of timings for trueSKY split into GPU and CPU. You can adjust the depth of the breakdown and look through individual function costs. Be aware when adjusting depths that rounding may adjust the total timings. 

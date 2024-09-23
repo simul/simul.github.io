@@ -185,7 +185,6 @@
 <section id="using-truesky-with-the-cinematic-sequencer">
 <h3>Using trueSKY with the Cinematic Sequencer<a class="headerlink" href="#using-truesky-with-the-cinematic-sequencer" title="Permalink to this heading">¶</a></h3>
 <p>Using Unreal’s Cinematic Sequencer is easy, as we have made most of our variables interpolatable (You can add a keyframe to the sequence). You can’t adjust the cloud settings, but you can adjust the time - and all the clouds settings are automatically interpolated between using our own Sky Sequencer. So all you need to do is setup the scene in trueSKY’s Sky Sequencer, e.g. have the cloudiness at 11:00 be 0.9 and then another cloud keyframe at 14:00 with a cloudiness of 0. Then, using Unreal’s Sequencer, you can adjust your cinematic to adjust between these two times, and trueSKY will automatically adjust the cloud settings between the time intervals.</p>
-<hr class="docutils" />
 <p>TrueSKY supports three different modes of update - Game Time, Fixed Time and Real Time.</p>
 <img alt="../_images/updateoptions.png" src="../_images/updateoptions.png" />
 <p>The number of Subdivisions controls how finely the interpolation is performed. It is the number of intermediate steps between keyframes (for Fixed Intervals), or in the Game Time or Real Time period specified.</p>
@@ -193,10 +192,10 @@
 </section>
 <section id="update-modes">
 <h2>Update Modes<a class="headerlink" href="#update-modes" title="Permalink to this heading">¶</a></h2>
-<p>There are different ways in which we allow you to interpolate, each with it’s own advantages and disadvantages</p>
+<p>There are different ways in which we allow you to interpolate the clouds over time, each with it’s own advantages and disadvantages</p>
 <section id="game-time">
 <h3>Game Time<a class="headerlink" href="#game-time" title="Permalink to this heading">¶</a></h3>
-<p>In Game-Time, it takes a specified amount of time in game hours, and split that into a given amount of intervals. The weather won’t change if game time does not. This is helpful go the weather does continue when paused, or can go slower based on the speed of the game.</p>
+<p>In Game-Time, it takes a specified amount of time in game hours, and split that into a given amount of intervals. The weather won’t change if game time does not. An example of using this could be ensuring the weather doesn’t continue to change while paused, or can react to the speed of the game with effects such as slow motion.</p>
 </section>
 <section id="fixed-time">
 <h3>Fixed Time<a class="headerlink" href="#fixed-time" title="Permalink to this heading">¶</a></h3>
@@ -204,7 +203,40 @@
 </section>
 <section id="real-time">
 <h3>Real Time<a class="headerlink" href="#real-time" title="Permalink to this heading">¶</a></h3>
+<p>Using real time means you should adjust the time interval with SetSubdivisionRealTimeInterval</p>
 <p>If you’re using real-time transition, you can adjust the Interval (in seconds) to determine how quickly the change takes place.</p>
+<p>Interpolation is an important aspect to understand, as it can have large impacts on realism, visuals and performance. For example, a slow interpolation for a static scene will likely result in improved performance with minimal change, as there are no changes that need to be interpolated between.
+However, for a scene where you are manually positioning your keyframes, you will want to ensure this movement is smooth and jumps in cloud generation are minimal by updating the cloud positions frequently.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Variable</p></th>
+<th class="head"><p>Definition</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>SubdivisionMethod</p></td>
+<td><p>The method used to subdivision interpolation.</p></td>
+<td><p>Real time, Game time or fixed intervals.</p></td>
+</tr>
+<tr class="row-odd"><td><p>NumSubdivisions</p></td>
+<td><p>How keyframe intervals are divided up for interpolation.</p></td>
+<td><p>1 to 128</p></td>
+</tr>
+<tr class="row-even"><td><p>SubdivisionTimeInterval</p></td>
+<td><p>Subdivisions to be spaced by a given fraction of a day. This is used in Game Time</p></td>
+<td><p>0.0001 to 10</p></td>
+</tr>
+<tr class="row-odd"><td><p>SubdivisionRealTimeInterval</p></td>
+<td><p>Subdivisions to be spaced by a given number of seconds. This is used in Real Time</p></td>
+<td><p>0.01 to 100</p></td>
+</tr>
+<tr class="row-even"><td><p>Blend Rate</p></td>
+<td><p>The ratio in which interpolation states are blended between. A value of 1 would result in no blending, so upon reaching the next subdivision, the new cloud texture would be</p></td>
+<td><p>0.01 to 1</p></td>
+</tr>
+</tbody>
+</table>
 </section>
 </section>
 </section>

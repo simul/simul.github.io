@@ -33,6 +33,13 @@ Select the Region icon to start region editing mode. In Keyframe mode, you can d
 In Region edit mode, you can move volumes individually and adjust their radius. You must have a region present to enter Volume Edit mode. To move them, click and drag from the region centre. You should see the change in your scene as you move it.
 
 
+Region Parameters
+--------------------
+Once you have added a region to a layer, you can edit that region via keyframes. Certain parameters are shown/hidden depending on the type of region you are using.
+
+
+
+
 Examples
 --------
 The new cloud region system can be used to create small, specifically shaped clouds, or large formations of clouds that are bounded to an area. You can even mix them together! Here are just a few examples of what can now be done!

@@ -3,6 +3,10 @@ Variables
 
 Keyframe
 ------------
+
+These settings are set via keyframes and the values can be interpolated between them.
+
+ 
 ======================================== ===================== ===================
 Variable                                 Definition             Value
 ======================================== ===================== ===================

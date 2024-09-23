@@ -1,5 +1,82 @@
 Changelist 
 ================ 
+| **Mon 23 Sep** : Fixed paths in Docs\skysequencer.rst.
+| **Mon 23 Sep** : Fix text for interpolation information
+| **Mon 23 Sep** : Fixed white space error in Docs\Tutorials\time.rst.
+| **Mon 23 Sep** : Fixed circle rendering in RenderCelestialDisplay.
+| **Mon 23 Sep** : Updated docs with solar and lunar eclipse images.
+| **Mon 23 Sep** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
+| **Mon 23 Sep** : Small Doc updates, create new keyframes at cloudwindow center.
+| **Mon 23 Sep** : Added lunar eclipse rendering.
+| **Fri 20 Sep** : Fixed CPU profiling in TrueSkyRenderer.cpp. Platform ptr.
+| **Fri 20 Sep** : Organised Main View rendering code.
+| **Fri 20 Sep** : Fixed usage of SIMUL_COMBINED_PROFILE. Platform ptr.
+| **Fri 13 Sep** : Minor code change. Platform ptr.
+| **Fri 13 Sep** : Better bounds checks in Stars::UseDefaultStars()
+| **Tue 10 Sep** : Platform ptr.
+| **Tue 10 Sep** : Fixed for new parameter in Apply and ApplyAsUnorderedAccessView for StructuredBuffers. Platform ptr.
+| **Tue 10 Sep** : Revert missing if statement in GenerateCloudDensitySignedDistanceField().
+| **Tue 10 Sep** : GenerateCloudDensitySignedDistanceField() uses a StructuredBuffer. Platform ptr.
+| **Tue 10 Sep** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Tue 10 Sep** : Added EffectPass members to WindowUpdater to stop string compares.
+| **Mon 09 Sep** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
+| **Mon 09 Sep** : Unity Fixes
+| **Mon 09 Sep** : Platform ptr.
+| **Fri 06 Sep** : Updated Editor to get not create the solid effect. Platform ptr.
+| **Thu 05 Sep** : Save/Load subdivision parameters onBasekeyframer
+| **Tue 03 Sep** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
+| **Tue 03 Sep** : Add BlendRate, reduce MINIMUM_DENSITY_CUTOFF.
+| **Tue 03 Sep** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Tue 03 Sep** : Fixed incorrect maths in CalculateCloudRegionFade().
+| **Tue 03 Sep** : GetUserPath() in TrueSkyPluginRenderInterface.cpp ensures the directory. SetLicenceDataInSettings() key value updated.
+| **Tue 03 Sep** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
+| **Tue 03 Sep** : Introduce cloud blendRate, should be adjustable via UI.
+| **Tue 03 Sep** : PluginTrueSkyRenderer::Set() updated to correctly set the cloud region edge fade parameters.
+| **Tue 03 Sep** : Fixed first default option for CloudRegion::FillType in UI.
+| **Tue 03 Sep** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
+| **Tue 03 Sep** : Fixed compilation error in PluginTrueSkyRenderer.cpp
+| **Mon 02 Sep** : Added support extra fade controls and texture for CloudRegions. WIP.
+| **Mon 02 Sep** : Added PLATFORM_BUILD_ASSIMP_OVERRIDE. Platform ptr.
+| **Fri 30 Aug** : Improvement to profiling
+| **Wed 28 Aug** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Wed 28 Aug** : CloudRegion::FillType updated to support disabling the region.
+| **Wed 28 Aug** : Reset ImGUI ActiveID on Window Focus Switch.
+| **Wed 28 Aug** : Fix for CloudRenderingOptions LoadFromFile
+| **Fri 23 Aug** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Fri 23 Aug** : CloudRenderer::RenderCrossSections() renders the density and lighting textures.
+| **Thu 22 Aug** : Fix load sequence in sample
+| **Thu 22 Aug** : Update LoadText and LoadFile Functions. Platform Ptr.
+| **Thu 22 Aug** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
+| **Thu 22 Aug** : Documentation Update
+| **Thu 22 Aug** : Added Show Terrain control to Editor.
+| **Thu 22 Aug** : Editor has some support for camera movement on a sphere. Platform ptr.
+| **Mon 19 Aug** : generate cloud shadow texture from additional sample.
+| **Wed 14 Aug** : Cloud Shadow Improvement.
+| **Tue 13 Aug** : Update GlobalView selection, fix amortization in editor, copy SliderScalarN from ImGui to fix slider range bug
+| **Mon 12 Aug** : Fix for shadows with wind by applying windoffset, shader warning fix and position of button within global view.
+| **Sun 11 Aug** : Fix for cloud instability/jumping.
+| **Sat 10 Aug** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Sat 10 Aug** : Rectangular CloudRegion Fade control.
+| **Fri 09 Aug** : Simplified cloud shadow coordinates, experimental.
+| **Fri 09 Aug** : Better calculations of rz for Earth's curvature.
+| **Fri 09 Aug** : Added smoothstep roll off to direct light response.
+| **Fri 09 Aug** : Added WindowGridCentreTexel readout to GlobalViewPanel.
+| **Fri 09 Aug** : Minor clean to CloudShadowData.
+| **Thu 08 Aug** : Composite shaders updated.
+| **Thu 08 Aug** : Updated naming of edge_fade_begin. Minor name updates in cloud_update.sfx.
+| **Thu 08 Aug** : Platform ptr.
+| **Wed 07 Aug** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Wed 07 Aug** : Restored ApplyResourceGroup tin PlanetRenderer::Render()
+| **Wed 07 Aug** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
+| **Wed 07 Aug** : Fix for unintended cloud Churn adjustment.
+| **Wed 07 Aug** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Wed 07 Aug** : Better checks in InitDevice() in TrueSkyPluginRenderInterface.cpp for shader source paths. Platform ptr.
+| **Wed 07 Aug** : Use SphericalRandom for Worley Noise
+| **Tue 06 Aug** : Fix 4.4 cell noise to be spherically distributed.
+| **Tue 06 Aug** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Tue 06 Aug** : Fixed some whitespace in PluginTrueSkyRenderer.cpp
+| **Tue 06 Aug** : Merge branch '4.4' of github.com:simul/Simul into 4.4
+| **Tue 06 Aug** : Minor clean up in Skylight.cpp
 | **Mon 05 Aug** : Documentation Updates.
 | **Mon 05 Aug** : Regenerate Noise on cloud class change.
 | **Mon 05 Aug** : Small fixes, dont call into godrays if intensity is 0.
@@ -23,80 +100,3 @@ Changelist
 | **Wed 31 Jul** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
 | **Wed 31 Jul** : Revert camera speed in Editor.
 | **Wed 31 Jul** : Updated Documentation for UE Geo Referencing.
-| **Wed 31 Jul** : Editor::OverlayViewMenu() updated units and precision. Moved comment for GeodeticPlanet::GetLocalRadiusKm.
-| **Wed 31 Jul** : Documentation Updates
-| **Tue 30 Jul** : PopupMenu() in GlobalViewPanel.cpp disables Set Engine Origin for external engines.
-| **Tue 30 Jul** : Added old missing textures.
-| **Tue 30 Jul** : Added comment to GeoReferencingMode.
-| **Tue 30 Jul** : Updated CopyToTargetDir.py to support copying textures.
-| **Mon 29 Jul** : Fixed Planet rendering for Vulkan.
-| **Mon 29 Jul** : Minor fixes from reviewing and merging code.
-| **Mon 29 Jul** : Platform ptr. Updated for consoles
-| **Fri 26 Jul** : Platform ptr.
-| **Fri 26 Jul** : Editor and samples updated to use Effect::LoadDefaultSamplers(). Platform ptr.
-| **Thu 25 Jul** : Removed ApplyResourceGroup() from PlanetRenderer as it's unneeded. Added missing samplers 2 and 5.
-| **Thu 25 Jul** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Thu 25 Jul** : Fixed whitespaces, namings and comments. BaseGpuSkyGenerator can recompile shaders now. Added SkyBrightness to SkyProperties UI.
-| **Thu 25 Jul** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Thu 25 Jul** : Samplers in resource group 0.
-| **Wed 24 Jul** : Update to 4.4 documentation
-| **Wed 24 Jul** : Better checks in glfw_get_window_monitor() when calling glfwGetVideoMode().
-| **Fri 19 Jul** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Fri 19 Jul** : Documentation
-| **Fri 19 Jul** : Platform ptr.
-| **Fri 19 Jul** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Fri 19 Jul** : Removed unused constant buffer in composite.sfx affecting Vulkan. Other minor clean ups. Platform ptr.
-| **Fri 19 Jul** : Small fixes and allow import of sequence
-| **Wed 17 Jul** : Merge branch '4.4' of github.com:simul/Simul into 4.4
-| **Wed 17 Jul** : Fix for  SkyKeyframer::GetSiderealTimeDegrees() and other minor clean ups. Platform ptr.
-| **Tue 16 Jul** : Fixed: Fails to compile Editor if D3D12 is not enabled.
-| **Wed 10 Jul** : Fixes for setting textures in WindowUpdater.cpp for Vulkan Validation Layers. Platform ptr.
-| **Mon 08 Jul** : Removed rake from CloudRegionState.
-| **Mon 08 Jul** : Implemented CloudRegion rotation for cloud volume density.
-| **Mon 08 Jul** : Fixed CloudRegion Cumulonimbus scaling issue and CloudRegion UID selection in UI. Platform ptr.
-| **Thu 04 Jul** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
-| **Thu 04 Jul** : Linux fixes
-| **Wed 03 Jul** : Doc Warnings removed
-| **Wed 03 Jul** : Doc updates
-| **Tue 02 Jul** : Remove doc warnings
-| **Mon 01 Jul** : Documentation updates and fixes.
-| **Mon 01 Jul** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
-| **Sun 30 Jun** : Fix x-ref in apiskykeyframer.rst
-| **Sun 30 Jun** : Fixed doxygen - no headers were being correctly read and all API docs were broken. Warnings as errors in Sphinx now.
-| **Thu 27 Jun** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
-| **Wed 26 Jun** : Revert debug test in shader.
-| **Wed 26 Jun** : Whitespace fixes for new atmopsherics files.
-| **Wed 26 Jun** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
-| **Tue 25 Jun** : Editor save/load window grid settings. Small doc changes.
-| **Tue 25 Jun** : Minor clean up in PluginTrueSkyRender.
-| **Tue 25 Jun** : Fixed WindowUpdater::GenerateCloudDensitySignedDistanceField() to handle correctly negative sdfProgress values.
-| **Tue 25 Jun** : Platform ptr.
-| **Mon 24 Jun** : Fixed warnings in SkyRenderer.
-| **Fri 21 Jun** : Updated PluginTrueSkyRenderer::Set("CloudRegion", ...) to support the new cumulonimbus cloud region type.
-| **Fri 21 Jun** : Fixed std::map::find() crashes for moon. struct Moon has changed so that colour refers to the hue of the light and albedo the amount reflected. Other minor improvements.
-| **Fri 21 Jun** : Updated the ifd::FileDialog::Instance().CreateTexture functions to create textures correctly for both the Editor and the plugin.
-| **Thu 20 Jun** : UI updated to use new ui::OpenTexture function in CloudLayerProperties.cpp and SkyProperties.cpp. Added overload to SkyRenderer::SetPlanetImage().
-| **Thu 20 Jun** : CloudKeyframer switched from file's Lerp() to use our standard lerp().
-| **Thu 20 Jun** : Updated texture sets for cloudRegionMapTexture and cloudRegionGradientTexture. CloudKeyframer saves and loads those textures's filepaths and CloudLayer holds the texture ptrs.
-| **Thu 20 Jun** : Added ui::OpenTexture() for better UI texture loads.
-| **Wed 19 Jun** : Minor update to SkyKeyframer.cpp
-| **Wed 19 Jun** : SkyKeyframer::GetLocalDirectionToMoon() corrects the direction of the moon for rotated CloudWindow orientations.
-| **Wed 19 Jun** : Added SkyKeyframer::GetTopocentricDirectionToAntiSolarPoint() to fix SkyRenderer::RenderCelestialDisplay() for the lunar eclipse area.
-| **Wed 19 Jun** : Fixed orientation of the moon texture.
-| **Mon 17 Jun** : Small fix to set debug ConstantBuffer
-| **Mon 17 Jun** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
-| **Mon 17 Jun** : Region fade for Cylinder and Spherical
-| **Mon 17 Jun** : Added UI controls for cloud regions cumulonimbus.
-| **Mon 17 Jun** : Update to accumulatedWindOffset
-| **Fri 14 Jun** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
-| **Fri 14 Jun** : Initial Support for Cumulonumbis Cloud Regions. Updated members for CloudRegionState. Added Cloud Region texture to CloudLayer. Updated WindowUpdater too. Added modified textrures from UE. Updated UI too.
-| **Fri 14 Jun** : Allow for forced update with SetRecalculate()
-| **Thu 13 Jun** : Fixed conversion warning in CloudRenderer.cpp
-| **Thu 13 Jun** : Merge branch '4.4' of github.com:Simul/Simul into 4.4
-| **Thu 13 Jun** : shader updates
-| **Thu 13 Jun** : Add edgeFadeBegin to regions, set scales_upper_km and lower to float.
-| **Thu 13 Jun** : Added Lunar Eclipse calculations in GlobalView and CelestialDisplay and SkyKeyframer::GetUmbra().
-| **Wed 12 Jun** : Added Umbra and EclipseTotalityInfo structs, updated GetEclipseTotalityInfo() and removed Sky::GetEclipseFactor(). More overloads for GetTopocentricDirectionToMoon(). Added Obscuration and Magnitude debug info for GlobalView and CelestialDisplay.
-| **Wed 12 Jun** : SkyKeyframe::daytime is now a double for better precision. Updated SkyRenderer::RenderCelestialDisplay() text for sun and moon, and SkyKeyframer re-organisation. CloudWindow extra debug info commented out.
-| **Mon 10 Jun** : Updated Volume Queries debug text.
-| **Mon 10 Jun** : Merge branch '4.4' of github.com:simul/Simul into 4.4
